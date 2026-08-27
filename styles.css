@@ -1,0 +1,893 @@
+/* ═══════════════════════════════════════════════════════════════
+   CristalWeb — hoja de estilos
+   ═══════════════════════════════════════════════════════════════
+
+   IDENTIDAD — dirección "PRISMA"
+   ------------------------------------------------------------------
+   Azul-noche con cian de refracción y un violeta de dispersión en los
+   cantos. Dos decisiones que van contra el registro de identidades y
+   por eso quedan justificadas por escrito:
+
+   1) ES EL QUINTO AZUL del registro, que ya estaba cerrado. La excusa
+      que ninguno de los otros cuatro tenía: este NO es un sitio de
+      cliente, es la marca propia. El negocio se llama CristalWeb — el
+      color es literalmente el nombre. Y como no es de cliente, no hay
+      forma de que dos clientes reciban la misma cara, que es el
+      problema que el registro existe para evitar.
+      Deslinde con los otros cuatro azules: dental-patagonia (#0B6E93)
+      y escuela-avanza (#1B4FA8) son azules sobre fondo CLARO; ekla
+      (#06182E) es marino con acento naranja de faena. Este es el único
+      cian brillante sobre fondo oscuro y el único con dispersión
+      violeta.
+
+   2) ES FONDO OSCURO, y el registro exige un argumento de USO, no de
+      estética (el estándar lo fijó gruas-del-sur). Acá lo hay: la
+      refracción no existe sobre blanco. Un prisma sobre papel no
+      descompone nada visible — la pieza firma de la portada solo se
+      lee contra un fondo oscuro. Además tiene que distinguirse del
+      portafolio personal de Yordy, que también es oscuro pero CÁLIDO
+      (void + ámbar #FFA724). Mismo tipo de fondo, temperatura opuesta:
+      puestos uno al lado del otro se leen como dos marcas distintas,
+      que es justo lo que hace falta porque van a verse juntos.
+
+   TRÍO TIPOGRÁFICO — las tres nuevas en el registro
+   ------------------------------------------------------------------
+   · Display: Funnel Display. Geométrica de terminaciones rectas y
+     contadores angulosos; a tamaño grande con tracking negativo se lee
+     como algo cortado, no moldeado. Evita chocar con Instrument Serif
+     (portafolio propio y the-temple), que era el reflejo fácil.
+   · Cuerpo: Host Grotesk. Grotesca neutra de altura de x generosa,
+     legible a 16 px en pantalla de celular con sol de frente.
+   · Dato: Fira Code. Las monos del registro se agotaron formalmente el
+     26-08-2026 y esta es la salida razonada: es la mono del oficio
+     —la que usa un programador para escribir— y acá el oficio ES el
+     producto. Deslinde: su prima Fira Mono está en el-hallullazo (70,
+     panadería) y clinica-auralafken (78, dental), rubros y ciudades
+     sin ningún cruce posible con un estudio de desarrollo.
+
+   CONSTRUCCIÓN
+   ------------------------------------------------------------------
+   Cero librerías. Ni GSAP, ni Lenis, ni una línea de CDN. Todo el
+   movimiento es @keyframes + IntersectionObserver, y el cristal de la
+   portada es SVG dibujado a mano. No es purismo: el sitio vende
+   "código que podemos explicar" y cargar 70 KB de librería para hacer
+   tres fundidos contradiría la sección de valores dos pantallas más
+   abajo.
+   ═══════════════════════════════════════════════════════════════ */
+
+/* ── Tokens ─────────────────────────────────────────────────── */
+:root {
+  /* Paleta */
+  --fondo:        #060D16;
+  --fondo-alto:   #0A1421;
+  --vidrio:       rgba(20, 40, 60, .38);
+  --vidrio-borde: rgba(126, 205, 227, .18);
+
+  --hueso:        #E8F1F6;
+  --tenue:        #9FB6C7;
+  --tenue-mas:    #7D93A5;
+
+  --cian:         #57D9E8;
+  --cian-claro:   #9FEDF7;
+  --cian-hondo:   #12384A;
+  --prisma:       #B49BF5;
+
+  /* Tipografía */
+  --display: "Funnel Display", "Trebuchet MS", sans-serif;
+  --cuerpo:  "Host Grotesk", "Segoe UI", system-ui, sans-serif;
+  --mono:    "Fira Code", "Consolas", ui-monospace, monospace;
+
+  /* Escala fluida (clamp: 360 px → 1400 px) */
+  --paso--1: clamp(.78rem, .75rem + .12vw, .85rem);
+  --paso-0:  clamp(1rem, .96rem + .2vw, 1.12rem);
+  --paso-1:  clamp(1.2rem, 1.12rem + .35vw, 1.45rem);
+  --paso-2:  clamp(1.45rem, 1.3rem + .7vw, 1.95rem);
+  --paso-3:  clamp(1.85rem, 1.55rem + 1.3vw, 2.75rem);
+  --paso-4:  clamp(2.3rem, 1.7rem + 2.6vw, 4rem);
+  --paso-5:  clamp(2.8rem, 1.75rem + 4.5vw, 5.5rem);
+
+  /* Ritmo */
+  --aire:    clamp(3.5rem, 2.2rem + 5.5vw, 7.5rem);
+  --ancho:   min(100% - 2.5rem, 1180px);
+
+  /* Movimiento — la salida manda */
+  --salida:  cubic-bezier(.16, 1, .3, 1);
+  --rapido:  .18s ease-out;
+}
+
+/* ── Base ───────────────────────────────────────────────────── */
+*, *::before, *::after { box-sizing: border-box; }
+
+[hidden] { display: none !important; }
+
+html {
+  scroll-behavior: smooth;
+  /* Para que el ancla no quede tapada por la cabecera fija */
+  scroll-padding-top: 5.5rem;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+  background: var(--fondo);
+  color: var(--hueso);
+  font-family: var(--cuerpo);
+  font-size: var(--paso-0);
+  line-height: 1.65;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+
+img, svg { max-width: 100%; }
+img { height: auto; display: block; }
+
+h1, h2, h3 {
+  font-family: var(--display);
+  font-weight: 600;
+  line-height: 1.06;
+  letter-spacing: -.028em;
+  margin: 0;
+  text-wrap: balance;
+}
+
+p { margin: 0 0 1rem; }
+p:last-child { margin-bottom: 0; }
+
+ul { list-style: none; margin: 0; padding: 0; }
+
+a { color: inherit; }
+
+:focus-visible {
+  outline: 2px solid var(--cian);
+  outline-offset: 3px;
+  border-radius: 3px;
+}
+
+.contenedor { width: var(--ancho); margin-inline: auto; }
+
+.saltar {
+  position: absolute;
+  left: 1rem;
+  top: -100px;
+  z-index: 100;
+  padding: .7rem 1.2rem;
+  background: var(--cian);
+  color: #04121A;
+  font-weight: 600;
+  border-radius: 8px;
+  transition: top var(--rapido);
+}
+.saltar:focus { top: 1rem; }
+
+/* ── Piezas de texto compartidas ────────────────────────────── */
+.etiqueta {
+  font-family: var(--mono);
+  font-size: var(--paso--1);
+  letter-spacing: .14em;
+  text-transform: uppercase;
+  color: var(--cian);
+  margin: 0 0 1rem;
+  display: flex;
+  align-items: center;
+  gap: .7rem;
+}
+.etiqueta::before {
+  content: "";
+  width: 1.6rem;
+  height: 1px;
+  background: linear-gradient(90deg, var(--cian), transparent);
+  flex: none;
+}
+
+.titulo {
+  font-size: var(--paso-3);
+  max-width: 22ch;
+  margin-bottom: 1.2rem;
+}
+
+.entradilla {
+  color: var(--tenue);
+  max-width: 62ch;
+  font-size: var(--paso-1);
+  line-height: 1.55;
+  margin-bottom: 2.5rem;
+}
+
+.seccion { padding-block: var(--aire); position: relative; }
+
+.seccion--alterna {
+  background: var(--fondo-alto);
+  border-block: 1px solid rgba(126, 205, 227, .09);
+}
+
+/* ── Botones ────────────────────────────────────────────────────
+   El borde es un gradiente real (dos fondos: uno recortado a
+   padding-box y otro a border-box). El brillo que lo cruza al pasar el
+   cursor es un pseudo-elemento que se traslada; se anima solo
+   transform, nunca la posición.                                     */
+.boton {
+  --relleno: linear-gradient(180deg, #12303F, #0B1E2B);
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: .5rem;
+  min-height: 48px;
+  padding: .85rem 1.6rem;
+  border: 1px solid transparent;
+  border-radius: 10px;
+  background-image: var(--relleno), linear-gradient(125deg, var(--cian), var(--prisma) 55%, var(--cian-hondo));
+  background-origin: border-box;
+  background-clip: padding-box, border-box;
+  color: var(--hueso);
+  font-family: var(--cuerpo);
+  font-size: var(--paso-0);
+  font-weight: 600;
+  text-decoration: none;
+  cursor: pointer;
+  box-shadow: 0 1px 0 rgba(255, 255, 255, .09) inset,
+              0 10px 26px -14px rgba(87, 217, 232, .75);
+  transition: transform var(--rapido), box-shadow var(--rapido);
+}
+
+.boton::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background: linear-gradient(105deg, transparent 38%, rgba(200, 245, 255, .34) 50%, transparent 62%);
+  transform: translateX(-130%);
+  transition: transform .75s var(--salida);
+}
+
+.boton:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 1px 0 rgba(255, 255, 255, .14) inset,
+              0 16px 34px -14px rgba(87, 217, 232, .95);
+}
+.boton:hover::after { transform: translateX(130%); }
+
+/* El pressed tiene que sentirse: baja, se aplasta y pierde la sombra */
+.boton:active {
+  transform: translateY(1px) scale(.988);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, .5) inset;
+  transition-duration: .06s;
+}
+
+.boton--linea { --relleno: linear-gradient(180deg, rgba(18, 48, 63, .35), rgba(11, 30, 43, .2)); }
+.boton--chico { min-height: 40px; padding: .5rem 1.1rem; font-size: var(--paso--1); }
+
+/* ── Cabecera ───────────────────────────────────────────────── */
+.cabecera {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  background: rgba(6, 13, 22, .72);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border-bottom: 1px solid transparent;
+  transition: border-color .3s ease, background .3s ease;
+}
+.cabecera.bajado {
+  border-bottom-color: rgba(126, 205, 227, .16);
+  background: rgba(6, 13, 22, .92);
+}
+
+.cabecera__fila {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  min-height: 4.5rem;
+}
+
+.marca {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+  gap: .6rem;
+  text-decoration: none;
+  font-family: var(--display);
+  font-size: 1.3rem;
+  font-weight: 600;
+  letter-spacing: -.02em;
+}
+.marca__gema { width: 22px; height: 27px; color: var(--cian); flex: none; }
+.marca__web { color: var(--cian); }
+
+.menu__lista {
+  display: flex;
+  align-items: center;
+  gap: clamp(1rem, 2.2vw, 2rem);
+}
+.menu__lista a {
+  text-decoration: none;
+  font-size: var(--paso--1);
+  color: var(--tenue);
+  transition: color var(--rapido);
+  position: relative;
+}
+.menu__lista a:not(.boton):hover { color: var(--hueso); }
+.menu__lista a:not(.boton)::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  width: 100%;
+  height: 1px;
+  background: var(--cian);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform .3s var(--salida);
+}
+.menu__lista a:not(.boton):hover::after { transform: scaleX(1); }
+.menu__lista .boton { color: var(--hueso); }
+
+.menu-boton {
+  display: none;
+  align-items: center;
+  gap: .5rem;
+  min-height: 44px;
+  padding: .5rem .9rem;
+  background: transparent;
+  border: 1px solid var(--vidrio-borde);
+  border-radius: 9px;
+  color: var(--hueso);
+  font-family: var(--cuerpo);
+  font-size: var(--paso--1);
+  cursor: pointer;
+}
+.menu-boton__barras { display: grid; gap: 4px; }
+.menu-boton__barras i {
+  display: block;
+  width: 17px;
+  height: 1.5px;
+  background: var(--cian);
+  transition: transform .3s var(--salida);
+}
+.menu-boton[aria-expanded="true"] .menu-boton__barras i:first-child { transform: translateY(2.75px) rotate(45deg); }
+.menu-boton[aria-expanded="true"] .menu-boton__barras i:last-child  { transform: translateY(-2.75px) rotate(-45deg); }
+
+@media (max-width: 860px) {
+  .menu-boton { display: inline-flex; }
+  .menu {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 100%;
+    background: rgba(8, 17, 28, .98);
+    backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px);
+    border-bottom: 1px solid var(--vidrio-borde);
+    display: none;
+  }
+  .menu.abierto { display: block; }
+  .menu__lista {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0;
+    padding: .5rem 1.25rem 1.5rem;
+  }
+  .menu__lista li { border-top: 1px solid rgba(126, 205, 227, .1); }
+  .menu__lista a:not(.boton) {
+    display: block;
+    padding: 1rem .25rem;
+    font-size: var(--paso-0);
+  }
+  .menu__lista li:last-child { border-top: 0; padding-top: 1rem; }
+  .menu__lista .boton { width: 100%; }
+}
+
+/* ── Portada ────────────────────────────────────────────────── */
+.portada {
+  position: relative;
+  padding-block: clamp(3rem, 1rem + 8vw, 7rem) var(--aire);
+  overflow: hidden;
+}
+
+.portada__fondo { position: absolute; inset: 0; pointer-events: none; }
+
+.portada__halo {
+  position: absolute;
+  top: -18%;
+  right: -8%;
+  width: min(760px, 105vw);
+  aspect-ratio: 1;
+  border-radius: 50%;
+  background: radial-gradient(circle,
+    rgba(87, 217, 232, .17) 0%,
+    rgba(180, 155, 245, .09) 42%,
+    transparent 68%);
+  animation: respirar 11s ease-in-out infinite alternate;
+}
+
+.portada__reja {
+  position: absolute;
+  inset: 0;
+  background-image:
+    linear-gradient(rgba(126, 205, 227, .05) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(126, 205, 227, .05) 1px, transparent 1px);
+  background-size: 74px 74px;
+  mask-image: radial-gradient(ellipse 85% 65% at 50% 30%, #000 20%, transparent 78%);
+  -webkit-mask-image: radial-gradient(ellipse 85% 65% at 50% 30%, #000 20%, transparent 78%);
+}
+
+.portada__grilla {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1.15fr .85fr;
+  gap: clamp(2rem, 4vw, 4rem);
+  align-items: center;
+}
+
+.portada__titulo {
+  font-size: var(--paso-5);
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  max-width: 15ch;
+}
+
+.portada__bajada {
+  color: var(--tenue);
+  font-size: var(--paso-1);
+  line-height: 1.55;
+  max-width: 48ch;
+  margin-bottom: 2rem;
+}
+
+.portada__acciones {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .9rem;
+  margin-bottom: 3rem;
+}
+
+.portada__datos {
+  display: flex;
+  flex-wrap: wrap;
+  gap: clamp(1.5rem, 4vw, 3.2rem);
+  padding-top: 1.8rem;
+  border-top: 1px solid rgba(126, 205, 227, .14);
+}
+.portada__datos li { display: grid; gap: .15rem; }
+.portada__datos b {
+  font-family: var(--mono);
+  font-size: var(--paso-2);
+  font-weight: 500;
+  color: var(--cian);
+  font-variant-numeric: tabular-nums;
+  line-height: 1;
+}
+.portada__datos span {
+  font-size: var(--paso--1);
+  color: var(--tenue-mas);
+}
+
+/* El cristal ─────────────────────────────────────────────────── */
+.portada__cristal {
+  display: grid;
+  place-items: center;
+  animation: flotar 7s ease-in-out infinite alternate;
+}
+
+.cristal {
+  width: min(100%, 340px);
+  height: auto;
+  overflow: visible;
+  filter: drop-shadow(0 26px 60px rgba(87, 217, 232, .28));
+}
+
+.cristal__giro {
+  transform-origin: 200px 270px;
+  animation: balancear 13s ease-in-out infinite alternate;
+}
+
+.faceta {
+  animation: latir 6.5s ease-in-out infinite;
+  animation-delay: var(--t, 0s);
+  transform-origin: 200px 270px;
+}
+
+.cristal__barrido { animation: barrer 6s ease-in-out infinite; }
+
+.chispa {
+  opacity: 0;
+  animation: chispear 4.5s ease-in-out infinite;
+  animation-delay: var(--t, 0s);
+  transform-origin: center;
+}
+
+@keyframes balancear {
+  from { transform: rotate(-3.5deg); }
+  to   { transform: rotate(3.5deg); }
+}
+@keyframes flotar {
+  from { transform: translateY(-12px); }
+  to   { transform: translateY(12px); }
+}
+@keyframes latir {
+  0%, 100% { opacity: .82; }
+  50%      { opacity: 1; }
+}
+@keyframes barrer {
+  0%        { transform: translateX(0); }
+  55%, 100% { transform: translateX(700px); }
+}
+@keyframes chispear {
+  0%, 100%  { opacity: 0; transform: scale(.4); }
+  12%, 26%  { opacity: 1; transform: scale(1.15); }
+  45%       { opacity: 0; transform: scale(.5); }
+}
+@keyframes respirar {
+  from { opacity: .55; transform: scale(.94); }
+  to   { opacity: 1;   transform: scale(1.06); }
+}
+
+/* Entrada de la portada: @keyframes, no IntersectionObserver.
+   Ver el comentario del HTML — rAF y IO no corren en pestaña de fondo. */
+.js .portada__texto > * { animation: entrar .95s var(--salida) both; }
+.js .portada__texto > :nth-child(1) { animation-delay: .05s; }
+.js .portada__texto > :nth-child(2) { animation-delay: .14s; }
+.js .portada__texto > :nth-child(3) { animation-delay: .23s; }
+.js .portada__texto > :nth-child(4) { animation-delay: .32s; }
+.js .portada__texto > :nth-child(5) { animation-delay: .41s; }
+.js .portada__cristal { animation: entrar-cristal 1.3s var(--salida) both, flotar 7s ease-in-out 1.3s infinite alternate; }
+
+@keyframes entrar {
+  from { opacity: 0; transform: translateY(22px); }
+  to   { opacity: 1; transform: none; }
+}
+@keyframes entrar-cristal {
+  from { opacity: 0; transform: translateY(40px) scale(.9); }
+  to   { opacity: 1; transform: none; }
+}
+
+@media (max-width: 900px) {
+  .portada__grilla { grid-template-columns: 1fr; }
+  .portada__cristal { grid-row: 1; }
+  .cristal { width: min(62%, 250px); }
+  .portada__titulo { max-width: 100%; }
+}
+
+/* ── Quiénes somos ──────────────────────────────────────────── */
+.nosotros {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: clamp(2rem, 4vw, 3.5rem);
+  align-items: start;
+  margin-top: 3rem;
+}
+
+.retrato { margin: 0; }
+
+/* El tilt vive en el marco, no en la figura: así el pie de foto no rota
+   y el texto no se desenfoca al inclinarse. */
+.retrato__marco {
+  position: relative;
+  aspect-ratio: 3 / 2;
+  border-radius: 16px;
+  overflow: hidden;
+  border: 1px solid var(--vidrio-borde);
+  background:
+    linear-gradient(145deg, rgba(87, 217, 232, .1), rgba(180, 155, 245, .06) 55%, transparent),
+    var(--fondo-alto);
+  box-shadow: 0 30px 60px -30px rgba(0, 0, 0, .85);
+  transition: transform .35s var(--salida), box-shadow .35s var(--salida);
+  transform-style: preserve-3d;
+}
+
+/* Destello fijo que cruza la esquina, como el reflejo en un vidrio */
+.retrato__marco::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(115deg, transparent 42%, rgba(200, 245, 255, .16) 50%, transparent 58%);
+  pointer-events: none;
+}
+
+.retrato__marco img { width: 100%; height: 100%; object-fit: cover; }
+
+.retrato__marcador {
+  position: absolute;
+  inset: 0;
+  display: grid;
+  place-content: center;
+  justify-items: center;
+  gap: .9rem;
+  padding: 1.5rem;
+  text-align: center;
+  color: var(--tenue-mas);
+}
+.retrato__marcador svg { width: clamp(110px, 34%, 170px); color: rgba(87, 217, 232, .5); }
+.retrato__marcador p { font-size: var(--paso--1); line-height: 1.5; margin: 0; }
+.retrato__marcador span { font-family: var(--mono); color: var(--cian); }
+
+.retrato__pie {
+  margin-top: .9rem;
+  font-family: var(--mono);
+  font-size: var(--paso--1);
+  color: var(--tenue-mas);
+}
+
+.socios { display: grid; gap: 2rem; }
+
+.socio {
+  position: relative;
+  padding-left: 1.4rem;
+  color: var(--tenue);
+}
+.socio::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: .35rem;
+  bottom: .35rem;
+  width: 2px;
+  border-radius: 2px;
+  background: linear-gradient(180deg, var(--cian), var(--prisma));
+}
+.socio__nombre { font-size: var(--paso-2); color: var(--hueso); }
+.socio__rol {
+  font-family: var(--mono);
+  font-size: var(--paso--1);
+  color: var(--cian);
+  margin: .35rem 0 .9rem;
+}
+
+@media (max-width: 820px) {
+  .nosotros { grid-template-columns: 1fr; }
+}
+
+/* ── Proyectos ──────────────────────────────────────────────── */
+.proyectos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 280px), 1fr));
+  gap: 1.25rem;
+}
+
+.proyecto {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  gap: .4rem;
+  padding: 1.6rem;
+  border: 1px solid var(--vidrio-borde);
+  border-radius: 14px;
+  background: var(--vidrio);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+  transition: transform .35s var(--salida), border-color .35s ease, box-shadow .35s ease;
+}
+
+/* Brillo diagonal que recorre la ficha al pasar el cursor */
+.proyecto::before {
+  content: "";
+  position: absolute;
+  inset: -1px;
+  z-index: -1;
+  background: linear-gradient(115deg, transparent 40%, rgba(87, 217, 232, .16) 50%, transparent 60%);
+  transform: translateX(-120%);
+  transition: transform .8s var(--salida);
+}
+.proyecto:hover {
+  transform: translateY(-5px);
+  border-color: rgba(87, 217, 232, .48);
+  box-shadow: 0 22px 44px -26px rgba(87, 217, 232, .6);
+}
+.proyecto:hover::before { transform: translateX(120%); }
+
+.proyecto__rubro {
+  font-family: var(--mono);
+  font-size: var(--paso--1);
+  color: var(--cian);
+  margin: 0;
+}
+.proyecto__nombre { font-size: var(--paso-1); margin: .1rem 0 .3rem; }
+.proyecto__nota {
+  color: var(--tenue);
+  font-size: var(--paso--1);
+  line-height: 1.55;
+  flex: 1;
+  margin-bottom: 1rem;
+}
+.proyecto__enlaces { display: flex; flex-wrap: wrap; gap: 1.2rem; margin: 0; }
+
+.enlace {
+  position: relative;
+  font-size: var(--paso--1);
+  font-weight: 600;
+  color: var(--cian);
+  text-decoration: none;
+  padding-bottom: 2px;
+}
+/* El texto mide 23 px de alto, bajo el mínimo de 44 px para tocar con el
+   dedo. Este pseudo-elemento agranda el área sensible sin tocar el
+   layout ni separar visualmente los dos enlaces. */
+.enlace::before {
+  content: "";
+  position: absolute;
+  inset: -11px -6px;
+}
+.enlace::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 1px;
+  background: currentColor;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform .35s var(--salida);
+}
+.enlace:hover::after { transform: scaleX(1); transform-origin: left; }
+.enlace--tenue { color: var(--tenue); font-weight: 400; }
+
+.proyectos__pie {
+  margin-top: 2.5rem;
+  color: var(--tenue);
+  font-size: var(--paso--1);
+}
+
+/* ── El sitio es tuyo ───────────────────────────────────────── */
+.entrega {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 240px), 1fr));
+  gap: 1px;
+  background: rgba(126, 205, 227, .16);
+  border: 1px solid rgba(126, 205, 227, .16);
+  border-radius: 14px;
+  overflow: hidden;
+}
+
+.entrega__item {
+  background: var(--fondo);
+  padding: 2rem 1.6rem;
+  transition: background .35s ease;
+}
+.entrega__item:hover { background: var(--fondo-alto); }
+
+.entrega__num {
+  font-family: var(--mono);
+  font-size: var(--paso--1);
+  color: var(--prisma);
+  letter-spacing: .1em;
+}
+.entrega__item h3 { font-size: var(--paso-1); margin: .8rem 0 .6rem; }
+.entrega__item p { color: var(--tenue); font-size: var(--paso--1); line-height: 1.6; }
+
+/* ── Valores ────────────────────────────────────────────────── */
+.valores {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 1fr));
+  gap: clamp(1.5rem, 3vw, 2.5rem);
+  margin-top: 3rem;
+}
+
+.valor {
+  padding-top: 1.5rem;
+  border-top: 1px solid rgba(126, 205, 227, .2);
+}
+.valor h3 {
+  font-size: var(--paso-2);
+  margin-bottom: .8rem;
+  max-width: 18ch;
+}
+.valor p { color: var(--tenue); line-height: 1.65; }
+
+/* ── Contacto ───────────────────────────────────────────────── */
+.contacto { position: relative; }
+
+.contacto__caja {
+  position: relative;
+  padding: clamp(2rem, 4vw, 3.5rem);
+  border: 1px solid var(--vidrio-borde);
+  border-radius: 20px;
+  overflow: hidden;
+  background:
+    radial-gradient(ellipse 120% 100% at 12% 0%, rgba(87, 217, 232, .13), transparent 62%),
+    radial-gradient(ellipse 90% 90% at 100% 100%, rgba(180, 155, 245, .1), transparent 60%),
+    var(--fondo-alto);
+}
+
+.contacto__vias {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 230px), 1fr));
+  gap: 1rem;
+  margin-top: 2.5rem;
+}
+
+.via {
+  display: grid;
+  gap: .3rem;
+  padding: 1.4rem;
+  border: 1px solid var(--vidrio-borde);
+  border-radius: 12px;
+  background: rgba(6, 13, 22, .5);
+  text-decoration: none;
+  transition: transform var(--rapido), border-color var(--rapido), background var(--rapido);
+}
+.via svg { width: 24px; height: 24px; color: var(--cian); margin-bottom: .5rem; }
+.via__que {
+  font-family: var(--mono);
+  font-size: var(--paso--1);
+  color: var(--tenue-mas);
+  letter-spacing: .06em;
+  text-transform: uppercase;
+}
+.via__dato {
+  font-size: var(--paso-0);
+  color: var(--hueso);
+  font-weight: 500;
+  word-break: break-word;
+}
+a.via:hover {
+  transform: translateY(-3px);
+  border-color: rgba(87, 217, 232, .45);
+  background: rgba(12, 27, 42, .8);
+}
+.via--quieta { opacity: .85; }
+
+/* ── Pie ────────────────────────────────────────────────────── */
+.pie {
+  padding-block: 3rem;
+  border-top: 1px solid rgba(126, 205, 227, .12);
+  background: var(--fondo-alto);
+}
+.pie__fila { display: grid; gap: .4rem; }
+.pie__marca {
+  font-family: var(--display);
+  font-size: var(--paso-1);
+  font-weight: 600;
+  margin: 0;
+}
+.pie__nota { color: var(--tenue); font-size: var(--paso--1); margin: 0; }
+.pie__nota--tenue { color: var(--tenue-mas); max-width: 58ch; margin-top: .6rem; }
+
+/* ── Reveals ────────────────────────────────────────────────────
+   Solo se ocultan si la clase .js está puesta. Si el script nunca
+   arranca, el temporizador de rescate la quita y todo el contenido
+   queda visible: la página no depende del JavaScript para leerse.   */
+.js .reveal {
+  opacity: 0;
+  transform: translateY(20px);
+}
+.js .reveal.visible {
+  opacity: 1;
+  transform: none;
+  transition: opacity .8s var(--salida), transform .8s var(--salida);
+}
+
+/* ── Movimiento reducido ────────────────────────────────────────
+   Se apaga lo intrusivo: los bucles infinitos del cristal, el halo y
+   el flotar. Se conservan hovers y fundidos — en Windows esta
+   preferencia viene activada de fábrica muy seguido y un sitio sin
+   ningún movimiento se ve muerto, no accesible.                     */
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+
+  .cristal__giro,
+  .faceta,
+  .cristal__barrido,
+  .chispa,
+  .portada__halo,
+  .portada__cristal {
+    animation: none !important;
+  }
+  .chispa { opacity: .9; }
+
+  .js .portada__texto > *,
+  .js .portada__cristal {
+    animation: aparecer .5s ease both;
+  }
+  @keyframes aparecer { from { opacity: 0; } to { opacity: 1; } }
+
+  .js .reveal { transform: none; }
+  .js .reveal.visible { transition: opacity .45s ease; }
+
+  .boton:hover, .proyecto:hover, a.via:hover, .retrato__marco { transform: none !important; }
+}
