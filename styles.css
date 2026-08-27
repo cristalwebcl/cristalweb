@@ -411,7 +411,7 @@ a { color: inherit; }
   width: 100%;
   height: 100%;
   object-fit: cover;
-  opacity: .16;
+  opacity: .24;
   filter: saturate(1.4);
   mask-image: radial-gradient(ellipse 90% 70% at 60% 35%, #000 10%, transparent 75%);
   -webkit-mask-image: radial-gradient(ellipse 90% 70% at 60% 35%, #000 10%, transparent 75%);
@@ -653,52 +653,51 @@ a { color: inherit; }
 
 .socio {
   position: relative;
-  overflow: hidden;
+  padding: 1.6rem;
   border: 1px solid var(--vidrio-borde);
-  border-radius: 18px;
+  border-radius: 16px;
   background:
     linear-gradient(160deg, rgba(87, 217, 232, .07), transparent 55%),
     var(--fondo-alto);
-  box-shadow: 0 30px 60px -34px rgba(0, 0, 0, .9);
-  transition: transform .35s var(--salida), box-shadow .35s var(--salida), border-color .35s ease;
+  transition: border-color .35s ease;
+}
+.socio:hover { border-color: rgba(87, 217, 232, .34); }
+/* Son las únicas dos piezas con tilt en toda la página: el efecto pierde
+   fuerza y se vuelve ruido si se le pone a todas las tarjetas. */
+.socio[data-tilt] {
   transform-style: preserve-3d;
   will-change: transform;
+  transition: transform .35s var(--salida), border-color .35s ease;
 }
-.socio:hover { border-color: rgba(87, 217, 232, .38); }
 
+/* El retrato va chico y al lado del nombre, igual que en el portafolio
+   personal. La foto se compuso contra este mismo azul, así que la
+   silueta se recorta sola contra la tarjeta y no necesita sombra. */
+.socio__cabeza {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1.2rem;
+}
 .socio__foto {
-  position: relative;
-  aspect-ratio: 4 / 3;
-  overflow: hidden;
-  background: var(--fondo-alto);
-}
-.socio__foto img {
-  width: 100%;
-  height: 100%;
+  width: 92px;
+  height: 122px;
+  flex: none;
   object-fit: cover;
-  object-position: center 18%;
-  transition: transform .6s var(--salida);
-}
-.socio:hover .socio__foto img { transform: scale(1.04); }
-
-/* Funde la base de la foto con la tarjeta, para que el retrato parezca
-   salir de la oscuridad en vez de estar pegado dentro de un recuadro. */
-.socio__foto::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: linear-gradient(180deg, transparent 45%, var(--fondo-alto) 96%);
+  object-position: 50% 26%;   /* encuadra la cara, no el torso */
+  border-radius: 4px;
+  border: 1px solid var(--vidrio-borde);
 }
 
-.socio__texto { padding: 1.6rem; color: var(--tenue); position: relative; }
-.socio__nombre { font-size: var(--paso-2); color: var(--hueso); }
+.socio__texto { color: var(--tenue); }
+.socio__nombre { font-size: var(--paso-1); color: var(--hueso); }
 .socio__rol {
   font-family: var(--mono);
   font-size: var(--paso--1);
   color: var(--cian);
-  margin: .35rem 0 .9rem;
+  margin: .35rem 0 0;
 }
-.socio__texto p:not(.socio__rol) { font-size: var(--paso--1); line-height: 1.6; }
+.socio__texto p { font-size: var(--paso--1); line-height: 1.6; }
 
 /* ── Proyectos ──────────────────────────────────────────────── */
 .proyectos {
@@ -811,7 +810,7 @@ a { color: inherit; }
   width: 100%;
   height: 100%;
   object-fit: cover;
-  opacity: .1;
+  opacity: .2;
   filter: saturate(1.6);
   mask-image: linear-gradient(180deg, transparent, #000 40%, transparent);
   -webkit-mask-image: linear-gradient(180deg, transparent, #000 40%, transparent);
@@ -842,7 +841,7 @@ a { color: inherit; }
   width: 100%;
   height: 100%;
   object-fit: cover;
-  opacity: .08;
+  opacity: .16;
   mask-image: radial-gradient(ellipse 70% 60% at 80% 50%, #000, transparent 70%);
   -webkit-mask-image: radial-gradient(ellipse 70% 60% at 80% 50%, #000, transparent 70%);
 }
@@ -876,7 +875,7 @@ a { color: inherit; }
   width: 100%;
   height: 100%;
   object-fit: cover;
-  opacity: .14;
+  opacity: .22;
   filter: saturate(1.5);
 }
 .contacto__contenido { position: relative; }

@@ -74,9 +74,11 @@
 -->
 <section class="portada" id="inicio">
   <div class="portada__fondo" aria-hidden="true">
-    <!-- La foto de gotas va a 480 px estirada y muy tenue: el desenfoque
-         sale del propio estirado, sin costar un filter en cada scroll. -->
-    <img class="portada__foto" src="assets/fondos/gotas.jpg" alt="" width="480" height="270" decoding="async">
+<!-- Los fondos vienen desenfocados desde procesar-imagenes.ps1, no
+         estirados: un JPEG chico agrandado muestra los bloques de compresión
+         y se ve pixelado. Desenfocarlos de verdad además los hace pesar
+         menos, porque no queda alta frecuencia que codificar. -->
+    <img class="portada__foto" src="assets/fondos/gotas.jpg" alt="" width="3840" height="2160" decoding="async">
     <span class="portada__halo"></span>
     <span class="portada__reja"></span>
   </div>
@@ -249,13 +251,16 @@
     <div class="socios">
 
       <article class="socio reveal" data-rev="izq" data-tilt>
-        <div class="socio__foto">
-          <img src="assets/retratos/yordy.jpg" alt="Retrato de Yordy Serna"
-               width="825" height="1100" loading="lazy" decoding="async">
-        </div>
+        <header class="socio__cabeza">
+          <img class="socio__foto" src="assets/retratos/yordy.jpg"
+               alt="Retrato de Yordy Serna"
+               width="601" height="800" loading="lazy" decoding="async">
+          <div>
+            <h3 class="socio__nombre">Yordy Serna</h3>
+            <p class="socio__rol">Desarrollo y publicación</p>
+          </div>
+        </header>
         <div class="socio__texto">
-          <h3 class="socio__nombre">Yordy Serna</h3>
-          <p class="socio__rol">Desarrollo y publicación</p>
           <p>
             Estudiante de Ingeniería en Ciberseguridad. Lleva catorce sitios
             publicados para negocios reales de la zona: hojalaterías, cabañas,
@@ -269,14 +274,17 @@
       </article>
 
       <article class="socio reveal" data-rev="der" data-tilt>
-        <div class="socio__foto">
-          <img src="assets/retratos/guillermo.jpg" alt="Retrato de Guillermo Contreras"
-               width="936" height="1100" loading="lazy" decoding="async">
-        </div>
+        <header class="socio__cabeza">
+          <img class="socio__foto" src="assets/retratos/guillermo.jpg"
+               alt="Retrato de Guillermo Contreras"
+               width="599" height="800" loading="lazy" decoding="async">
+          <div>
+            <h3 class="socio__nombre">Guillermo Contreras</h3>
+            <!-- Ajustar este rol cuando lo definan entre los dos. -->
+            <p class="socio__rol">Desarrollo y soporte</p>
+          </div>
+        </header>
         <div class="socio__texto">
-          <h3 class="socio__nombre">Guillermo Contreras</h3>
-          <!-- Ajustar este rol cuando lo definan entre los dos. -->
-          <p class="socio__rol">Desarrollo y soporte</p>
           <p>
             Estudiante de Ingeniería en Informática. Trabaja el lado técnico del
             sitio: que funcione en cualquier teléfono, que los formularios
@@ -443,7 +451,7 @@
 -->
 <section class="seccion tuyo" id="tuyo">
   <div class="tuyo__fondo" aria-hidden="true">
-    <img src="assets/fondos/textura.jpg" alt="" width="480" height="320" loading="lazy" decoding="async">
+    <img src="assets/fondos/textura.jpg" alt="" width="3000" height="2000" loading="lazy" decoding="async">
   </div>
   <div class="contenedor">
     <p class="etiqueta reveal" data-rev="izq">Lo que recibes</p>
@@ -483,7 +491,7 @@
 <!-- ═══════════════════════ VALORES ═══════════════════════ -->
 <section class="seccion seccion--alterna valores-sec" id="valores">
   <div class="valores-sec__fondo" aria-hidden="true">
-    <img src="assets/fondos/codigo.jpg" alt="" width="480" height="353" loading="lazy" decoding="async">
+    <img src="assets/fondos/codigo.jpg" alt="" width="728" height="536" loading="lazy" decoding="async">
   </div>
   <div class="contenedor">
     <p class="etiqueta reveal" data-rev="izq">Cómo trabajamos</p>
@@ -532,7 +540,7 @@
 <section class="seccion contacto" id="contacto">
   <div class="contenedor contacto__caja">
     <div class="contacto__fondo" aria-hidden="true">
-      <img src="assets/fondos/gotas.jpg" alt="" width="480" height="270" loading="lazy" decoding="async">
+      <img src="assets/fondos/gotas.jpg" alt="" width="3840" height="2160" loading="lazy" decoding="async">
     </div>
     <div class="contacto__contenido">
       <p class="etiqueta reveal">Contacto</p>

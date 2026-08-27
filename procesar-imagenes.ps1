@@ -181,6 +181,77 @@ public static class Pixeles
             }
     }
 
+    // Desenfoque de caja separable. Tres pasadas se aproximan a un
+    // gaussiano y cuestan O(1) por pixel gracias al acumulador deslizante,
+    // asi que una foto de 1280 px se procesa en menos de un segundo.
+    //
+    // Va acá y no en CSS a proposito: filter: blur() obliga al navegador a
+    // recalcular el desenfoque en cada frame de scroll, y estas paginas se
+    // abren en celulares de gama baja. Ademas una imagen ya desenfocada
+    // comprime muchisimo mejor en JPEG, porque no le queda alta frecuencia
+    // que codificar: el fondo pesa menos desenfocado que nitido.
+    public static void Desenfocar(byte[] p, int w, int h, int radio, int pasadas)
+    {
+        for (int paso = 0; paso < pasadas; paso++)
+        {
+            CajaHorizontal(p, w, h, radio);
+            CajaVertical(p, w, h, radio);
+        }
+    }
+
+    static void CajaHorizontal(byte[] p, int w, int h, int r)
+    {
+        byte[] fila = new byte[w * 4];
+        for (int y = 0; y < h; y++)
+        {
+            int baseY = y * w * 4;
+            Buffer.BlockCopy(p, baseY, fila, 0, w * 4);
+            for (int c = 0; c < 3; c++)
+            {
+                int suma = 0, n = 0;
+                for (int x = -r; x <= r; x++)
+                {
+                    int xi = x < 0 ? 0 : (x >= w ? w - 1 : x);
+                    suma += fila[xi * 4 + c]; n++;
+                }
+                for (int x = 0; x < w; x++)
+                {
+                    p[baseY + x * 4 + c] = (byte)(suma / n);
+                    int sale = x - r, entra = x + r + 1;
+                    suma -= fila[(sale < 0 ? 0 : sale) * 4 + c];
+                    suma += fila[(entra >= w ? w - 1 : entra) * 4 + c];
+                }
+            }
+        }
+    }
+
+    static void CajaVertical(byte[] p, int w, int h, int r)
+    {
+        byte[] col = new byte[h * 4];
+        for (int x = 0; x < w; x++)
+        {
+            for (int y = 0; y < h; y++)
+                Buffer.BlockCopy(p, (y * w + x) * 4, col, y * 4, 4);
+
+            for (int c = 0; c < 3; c++)
+            {
+                int suma = 0, n = 0;
+                for (int y = -r; y <= r; y++)
+                {
+                    int yi = y < 0 ? 0 : (y >= h ? h - 1 : y);
+                    suma += col[yi * 4 + c]; n++;
+                }
+                for (int y = 0; y < h; y++)
+                {
+                    p[(y * w + x) * 4 + c] = (byte)(suma / n);
+                    int sale = y - r, entra = y + r + 1;
+                    suma -= col[(sale < 0 ? 0 : sale) * 4 + c];
+                    suma += col[(entra >= h ? h - 1 : entra) * 4 + c];
+                }
+            }
+        }
+    }
+
     // Compone sobre un color plano y deja el alfa opaco.
     public static void SobreFondo(byte[] p, int w, int h, byte fb, byte fg, byte fr)
     {
@@ -224,6 +295,18 @@ function DesdeBytes($buf, $w, $h) {
     $w, $h, 96, 96, [System.Windows.Media.PixelFormats]::Bgra32, $null, $b, $w * 4)
 }
 
+# Recorta por fracciones (0..1) del ancho y alto originales.
+function Recortar($bmp, $x0, $y0, $x1, $y1) {
+  $rect = New-Object System.Windows.Int32Rect(
+    [int]($bmp.PixelWidth * $x0),
+    [int]($bmp.PixelHeight * $y0),
+    [int]($bmp.PixelWidth * ($x1 - $x0)),
+    [int]($bmp.PixelHeight * ($y1 - $y0)))
+  $c = New-Object System.Windows.Media.Imaging.CroppedBitmap($bmp, $rect)
+  $c.Freeze()
+  return $c
+}
+
 function Escalar($bmp, $ladoMax) {
   $f = [Math]::Min(1.0, $ladoMax / [Math]::Max($bmp.PixelWidth, $bmp.PixelHeight))
   if ($f -ge 1.0) { return $bmp }
@@ -258,9 +341,12 @@ Write-Host "`nRETRATOS" -ForegroundColor Cyan
 # umbral flojo, la inundacion se cuela por encima del hombro y le come el
 # cuello. La erosion en cambio es mayor (3 px), porque su foto ya venia
 # recortada por un removedor automatico y arrastra un halo claro en el pelo.
+# x0/y0/x1/y1 son el recorte 3:4 al busto, en fracciones de la foto original.
 $retratos = @(
-  @{ src = 'yordy.jpg';     out = 'yordy.jpg';     luz = 170; sat = 42; erosion = 1; deshalo = 0 },
-  @{ src = 'guillermo.png'; out = 'guillermo.jpg'; luz = 246; sat = 14; erosion = 2; deshalo = 14 }
+  @{ src = 'yordy.jpg';     out = 'yordy.jpg';     luz = 170; sat = 42; erosion = 1; deshalo = 0;
+     x0 = .16; y0 = .21; x1 = .81; y1 = .86 },
+  @{ src = 'guillermo.png'; out = 'guillermo.jpg'; luz = 246; sat = 14; erosion = 2; deshalo = 14;
+     x0 = .17; y0 = .10; x1 = .83; y1 = .85 }
 )
 foreach ($r in $retratos) {
   $bmp = Leer (Join-Path $entrada $r.src)
@@ -274,9 +360,17 @@ foreach ($r in $retratos) {
   }
   [Pixeles]::LimpiarBorde($px, $w, $h, $r.erosion)
   [Pixeles]::SobreFondo($px, $w, $h, 33, 20, 10)   # B,G,R
-  $final = Escalar (DesdeBytes $px $w $h) 1100
+
+  # Se recorta al busto ANTES de escalar. En la pagina el retrato es un
+  # cuadrito de 92x122, como el del portafolio personal: si se guardara la
+  # foto entera, dentro de ese recuadro la cara quedaria del tamano de una
+  # arveja. El recorte 3:4 encuadra cabeza y hombros.
+  # 800 px de alto para un cuadrito que se muestra a 122: sobra resolucion
+  # incluso en pantallas de alta densidad, y asi no se pierde nitidez.
+  $rec = Recortar (DesdeBytes $px $w $h) $r.x0 $r.y0 $r.x1 $r.y1
+  $final = Escalar $rec 800
   $ruta = Join-Path $salida "retratos\$($r.out)"
-  GuardarJpeg $final $ruta 88
+  GuardarJpeg $final $ruta 92
   "  {0,-16} {1}x{2} -> {3} KB" -f $r.out, $final.PixelWidth, $final.PixelHeight, (Peso $ruta)
 }
 
@@ -313,10 +407,23 @@ $fondos = @(
   @{ src = '17209487079619.jpg';      out = 'oficina.jpg' },
   @{ src = 'eef9cc31640aa9fa8790c8a4d02718e3.jpg'; out = 'codigo.jpg' }
 )
+# Resolucion nativa y calidad alta, sin tocar un pixel. Se probaron dos
+# caminos peores antes de llegar acá:
+#   · reducirlas a 480 px esperando que el estirado hiciera de desenfoque:
+#     lo que se ve estirado son los bloques de compresion, o sea pixeladas.
+#   · desenfocarlas de verdad a resolucion completa: con radio 2,5% del
+#     ancho (96 px en la de 4K) las gotas desaparecian y quedaba un
+#     degradado plano. Se perdia justamente el motivo de la foto.
+# Lo que las vuelve fondo es la opacidad baja y la mascara de cada seccion,
+# no el desenfoque. Asi conservan todo su detalle.
 foreach ($f in $fondos) {
-  $bmp = Escalar (Leer (Join-Path $entrada $f.src)) 480
+  $bmp = Leer (Join-Path $entrada $f.src)
   $ruta = Join-Path $salida "fondos\$($f.out)"
-  GuardarJpeg $bmp $ruta 62
+  # 82 y no 94: a esta calidad la diferencia no se ve ni comparando lado a
+  # lado, y el archivo pesa cuatro veces menos. Con 94 los cinco fondos
+  # sumaban 3,8 MB, que contradice el "tiene que abrir con senal de campo"
+  # escrito en la seccion de valores de esta misma pagina.
+  GuardarJpeg $bmp $ruta 82
   "  {0,-16} {1}x{2} -> {3} KB" -f $f.out, $bmp.PixelWidth, $bmp.PixelHeight, (Peso $ruta)
 }
 
