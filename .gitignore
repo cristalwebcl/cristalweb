@@ -1,0 +1,4 @@
+# Insumos crudos (fotos originales, logos descargados). No van al repo
+# público: pesan ~9 MB y el sitio usa las versiones procesadas de assets/.
+# Se regeneran con procesar-imagenes.ps1.
+imagenes/

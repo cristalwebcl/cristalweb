@@ -25,15 +25,28 @@ puros. Un modelo 3D real habría costado ~1 MB para verse igual.
 La justificación de la paleta y del trío tipográfico está escrita en la
 cabecera de `styles.css` — leerla antes de cambiar colores.
 
+## Las imágenes
+
+Los originales viven en `imagenes/` (fuera del repo, ver `.gitignore`) y las
+versiones que usa el sitio salen de `procesar-imagenes.ps1`:
+
+- **Retratos**: se les quitó el fondo (inundación desde los bordes + limpieza
+  de halo) y se compusieron sobre el azul-noche del sitio, a JPEG de ~100 KB.
+- **Logos**: recortados por umbral y unificados a PNG de 190 px; en la página
+  van teñidos de blanco por CSS y recuperan su color al pasar el cursor.
+- **Fondos**: bajados a 480 px con calidad 62 — se muestran estirados y muy
+  tenues, así que el desenfoque sale gratis del propio estirado.
+- **Capturas de proyectos**: copiadas de `../portafolio/assets/capturas/`.
+
+Si llega una imagen nueva, se deja en `imagenes/`, se agrega a la lista del
+script y se corre de nuevo.
+
 ## Lo que falta
 
-1. **La foto de los dos socios.** Va en `assets/socios.jpg`, proporción 3:2
-   horizontal, ideal 1800 × 1200 px. Las instrucciones para sacarla están en
-   un comentario dentro de `index.html`, justo encima del marcador.
-2. **El WhatsApp de la sociedad.** El bloque está escrito y comentado en la
+1. **El WhatsApp de la sociedad.** El bloque está escrito y comentado en la
    sección de contacto de `index.html`; solo hay que poner el número en
    formato internacional y descomentarlo. No se puso uno inventado.
-3. **Revisar el rol de Guillermo.** Quedó como "Desarrollo y soporte", que es
+2. **Revisar el rol de Guillermo.** Quedó como "Desarrollo y soporte", que es
    un supuesto; ajustarlo cuando lo definan entre los dos.
 
 ## Publicación
