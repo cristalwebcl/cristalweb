@@ -1066,3 +1066,67 @@ a.proyecto__vista { display: block; }
   color: var(--hueso);
   line-height: 1.65;
 }
+
+/* ══ Llamada al catálogo de propuestas (en el índice) ══════════════
+   Reemplaza un enlace suelto dentro de un párrafo, que pasaba
+   desapercibido justo donde el visitante acaba de mirar los ocho
+   proyectos y quiere ver más. Las cuatro portadas van a tamaño real y
+   sin velo: son el argumento, no decoración de fondo. */
+.propuestas-cta {
+  margin-top: clamp(3rem, 6vw, 4.5rem);
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1.1fr);
+  gap: clamp(1.5rem, 4vw, 3rem);
+  align-items: center;
+  padding: clamp(1.4rem, 3.5vw, 2.4rem);
+  border: 1px solid var(--vidrio-borde);
+  border-radius: 16px;
+  background: var(--vidrio);
+}
+
+.propuestas-cta__tira {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 5px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.propuestas-cta__tira img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+}
+
+.propuestas-cta__numero {
+  font-family: var(--mono);
+  font-size: var(--paso--1);
+  letter-spacing: .09em;
+  text-transform: uppercase;
+  color: var(--cian);
+  margin: 0 0 .5rem;
+}
+.propuestas-cta__numero b { font-weight: 700; }
+
+.propuestas-cta__titulo {
+  font-family: var(--display);
+  font-size: var(--paso-2);
+  line-height: 1.2;
+  margin: 0 0 .7rem;
+  color: var(--hueso);
+}
+
+.propuestas-cta__linea {
+  margin: 0 0 1.5rem;
+  color: var(--tenue);
+  line-height: 1.65;
+  max-width: 46ch;
+}
+
+.propuestas-cta__accion { margin: 0; }
+
+/* En teléfono la tira va arriba: la foto es lo que detiene el pulgar,
+   el texto convence después. */
+@media (max-width: 760px) {
+  .propuestas-cta { grid-template-columns: 1fr; }
+}
