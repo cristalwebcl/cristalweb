@@ -91,6 +91,11 @@ html {
   scroll-behavior: smooth;
   scroll-padding-top: 5.5rem;
   -webkit-text-size-adjust: 100%;
+  /* El overflow-x va tambien aca y no solo en body: el carrusel de
+     herramientas se sale unos pixeles mientras anima, y con el hidden
+     solo en body algunos navegadores moviles igual dejan arrastrar la
+     pagina de lado. */
+  overflow-x: hidden;
 }
 
 body {
