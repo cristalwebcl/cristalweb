@@ -1,0 +1,34 @@
+FONDOS GENERICOS DE RUBRO — Clinica Estacion Mascotas
+=====================================================
+
+NO son fotos de este negocio. Son imagenes de peluqueria canina y
+de veterinaria, de uso libre, usadas como fondo y como tira. Las
+fotos del local —consulta-01 y 02, con el logo en la pared— si son
+suyas y van nitidas en la galeria, con su pie.
+
+Todas de Pexels (licencia Pexels: uso libre, sin credito obligatorio),
+bajadas en su resolucion original y reescaladas segun su uso:
+
+  port-01.jpg   portada    2560px cal.88   <- cocker en la mesa
+  media-01.jpg  mitades    2200px cal.86   <- peluquera con tijera
+  cita-01.jpg   cita       2200px cal.86   <- veterinario y perro
+  tira-01.jpg   tira       1100px cal.84   <- tijera en las patas
+  tira-02.jpg   tira       1100px cal.84   <- corte de unas
+  tirab-01.jpg  tira       1100px cal.84   <- vacunacion
+  aura-01.jpg   aura        900px cal.70   <- husky cepillado
+
+El aura va a 900 px A PROPOSITO: lleva 64 px de desenfoque, o sea que
+deja de leerse como foto y queda solo el color. Mas resolucion ahi no
+cambiaria nada y pesaria de mas. Es la unica imagen de la pagina que
+se desenfoca, y el desenfoque es el efecto, no un parche.
+
+URL de origen:
+001.jpg | 7360x4912 | Dog Grooming Photos, Download The BEST Free Dog Grooming Stock Photos ... | https://images.pexels.com/photos/19145860/pexels-photo-19145860.jpeg?cs=srgb&dl=pexels-goochie-poochie-19145860.jpg&fm=jpg
+002.jpg | 7360x4912 | Dog Grooming Blades Explained for Perfect Pet Coats | https://images.pexels.com/photos/19145885/pexels-photo-19145885.jpeg
+003.jpg | 6720x4480 | Pet Grooming Photos, Download The BEST Free Pet Grooming Stock Photos ... | https://images.pexels.com/photos/9632122/pexels-photo-9632122.jpeg?cs=srgb&dl=pexels-yaroslav-shuraev-9632122.jpg&fm=jpg
+004.jpg | 6720x3776 | Dog Grooming Photos, Download The BEST Free Dog Grooming Stock Photos ... | https://images.pexels.com/photos/19145880/pexels-photo-19145880.jpeg?cs=srgb&dl=pexels-goochie-poochie-19145880.jpg&fm=jpg
+005.jpg | 6720x3776 | The Complete Guide to Dog Grooming Small Breeds | https://images.pexels.com/photos/19145872/pexels-photo-19145872.jpeg
+001.jpg | 6000x4000 | Download | https://images.pexels.com/photos/33394316/pexels-photo-33394316.jpeg?cs=srgb&dl=pexels-tahir-x-lf-2153788153-33394316.jpg&fm=jpg
+002.jpg | 5659x3773 | Vet Photos, Download The BEST Free Vet Stock Photos & HD Images | https://images.pexels.com/photos/6235242/pexels-photo-6235242.jpeg?cs=srgb&dl=pexels-tima-miroshnichenko-6235242.jpg&fm=jpg
+003.jpg | 5296x3531 | Veterinary Clinic Photos, Download The BEST Free Veterinary Clinic ... | https://images.pexels.com/photos/6234618/pexels-photo-6234618.jpeg?cs=srgb&dl=pexels-tima-miroshnichenko-6234618.jpg&fm=jpg
+004.jpg | 5184x3456 | Vet Vaccinating Adult Tan Pit Bull Terrier · Free Stock Photo | https://images.pexels.com/photos/1350591/pexels-photo-1350591.jpeg?cs=srgb&dl=pexels-pranidchakan-boonrom-1350591.jpg&fm=jpg

@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="es-CL" class="no-js">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Veterinaria Central — Loncoche</title>
+<meta name="description" content="Veterinaria en Loncoche. La salida al campo se pide por teléfono: qué hay que tener listo cuando llega el veterinario.">
+
+<!-- Política de seguridad de contenido: el navegador sólo puede cargar
+     archivos de este mismo sitio. Sin CDN, sin librerías, sin rastreadores.
+     Ver skills/web-blindada/references/csp-en-pages.md -->
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self'; img-src 'self' data:; font-src 'self'; connect-src 'self'; media-src 'self'; form-action 'self'; base-uri 'none'; frame-src 'none'; object-src 'none'">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+
+<!-- Rescate de la clase .js (regla 2 de la casa). En archivo, sin defer:
+     inline lo bloquearía la CSP. -->
+<script src="js/rescate.js"></script>
+
+<!-- Fuentes propias: cero peticiones a terceros. -->
+<link rel="preload" href="assets/fuentes/bowlbyone-400-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="assets/fuentes.css">
+<link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+
+<div class="propuesta">
+  <p class="propuesta__que">Propuesta de sitio web — preparada para <b>Veterinaria Central</b> por CristalWeb</p>
+  <p class="propuesta__gancho">Loncoche es mitad pueblo y mitad campo, y ninguna veterinaria de la zona dice por escrito si sale a ver un ternero enfermo o un caballo cojo. La primera que lo diga se queda con todo el campo. Esta página está construida para eso: el número es la página.</p>
+</div>
+
+<header class="cab" id="cab">
+  <a class="cab__marca" href="#portada">
+    <span class="mancha" aria-hidden="true"></span>
+    <span class="cab__nombre">Central</span>
+  </a>
+  <nav class="cab__nav" aria-label="Secciones">
+    <a href="#campo">La salida al campo</a>
+    <a href="#botiquin">El botiquín</a>
+  </nav>
+  <a class="cab__tel" href="tel:+56961294464">
+    <span class="cab__tel-rot">Loncoche</span>
+    <span class="cab__tel-num">9 6129 4464</span>
+  </a>
+</header>
+
+<main>
+
+<!-- ========= PORTADA — ESTRUCTURA H: EL TELÉFONO ES LA PÁGINA ========= -->
+<section class="portada portada--foto" id="portada" aria-labelledby="t-portada">
+  <!-- FONDO DE PORTADA: 2560 px, nitido. Se disuelve hacia el titular
+       con un gradiente lateral, no con desenfoque. -->
+  <div class="portada__foto" aria-hidden="true">
+    <img src="imagenes/port-01.jpg" width="2560" height="1707"
+         decoding="async" fetchpriority="high" alt="">
+  </div>
+
+  <div class="potrero" aria-hidden="true">
+    <span class="horizonte"></span>
+    <span class="pasta pasta--1"></span>
+    <span class="pasta pasta--2"></span>
+  </div>
+
+  <div class="portada__texto">
+    <p class="rotulo">Campo</p>
+    <h1 id="t-portada">
+      <a class="tel-heroe" href="tel:+56961294464">9 6129 4464</a>
+    </h1>
+    <p class="bajada">La salida a terreno no se agenda por formulario ni por Instagram: se
+      pide por teléfono, y el que llama casi siempre tiene el animal echado al lado. Por
+      eso el número está arriba, grande y solo — como el aviso clavado en el poste del
+      cruce.</p>
+    <dl class="specs">
+      <div class="spec"><dt>nota en Google</dt><dd>4,6</dd></div>
+      <div class="spec"><dt>reseñas</dt><dd>58</dd></div>
+      <div class="spec"><dt>sitio propio</dt><dd class="dd--no">no tienen</dd></div>
+    </dl>
+  </div>
+</section>
+
+<!-- ========= LA PIEZA FIRMA ========= -->
+<section class="campo con-telon" id="campo" aria-labelledby="t-campo">
+  <div class="telon" aria-hidden="true">
+    <img src="imagenes/telon-01.jpg" width="1200" height="800" decoding="async" alt="">
+  </div>
+
+  <!-- AURA DE COLOR: la foto de rubro reventada a desenfoque. No se lee
+       como imagen: aporta color y luz detras de una seccion que si no
+       seria fondo plano. Aca el desenfoque SI es el efecto, no un parche,
+       y por eso el archivo va chico: a 64 px de blur, mas resolucion no
+       cambia nada. Sin loading=lazy porque el elemento va en absoluto con
+       z-index negativo y el navegador nunca lo considera visible. -->
+  <div class="aura" aria-hidden="true">
+    <img src="imagenes/aura-01.jpg" width="900" height="600" decoding="async" alt="">
+  </div>
+
+  <div class="campo__cabecera">
+    <p class="antetitulo">La pregunta del teléfono rural</p>
+    <h2 id="t-campo">¿Salen al campo?</h2>
+
+    <!-- El aviso va ARRIBA de todo y no al final: esta sección
+         entera es estructura, no información confirmada. -->
+    <div class="aviso">
+      <p><b>Esta sección está vacía a propósito.</b> No consta en ninguna parte si esta
+        veterinaria atiende animales mayores —vacuno, equino, ovino—, hasta qué sectores
+        sale ni qué cobra por la salida. Escribirlo por mi cuenta sería inventar, así que
+        lo que está abajo es <b>la estructura</b>: los cuatro bloques que hay que llenar,
+        con la única parte que sí es general del oficio ya escrita.</p>
+      <p class="aviso__falta">falta, y es lo primero que hay que preguntar: ¿atienden
+        animales mayores?</p>
+    </div>
+  </div>
+
+  <div class="bloques">
+    <article class="bl bl--vacio">
+      <p class="bl__num">01</p>
+      <h3>Qué animales</h3>
+      <p>Vacuno, equino, ovino, porcino, aves. La lista de lo que sí y de lo que no, dicha
+        de frente, es lo que hace que el campesino levante el teléfono sin dudar.</p>
+      <p class="falta">falta: la lista real</p>
+    </article>
+
+    <article class="bl bl--vacio">
+      <p class="bl__num">02</p>
+      <h3>Hasta dónde</h3>
+      <p>Los sectores a los que salen, con nombre: los caminos que sí, los que dependen del
+        estado del camino, y hasta qué distancia. En el campo la pregunta no es la comuna,
+        es el kilómetro.</p>
+      <p class="falta">falta: los sectores y la distancia máxima</p>
+    </article>
+
+    <article class="bl bl--vacio">
+      <p class="bl__num">03</p>
+      <h3>Cómo se cobra la salida</h3>
+      <p>Que exista un costo de traslado no ofende a nadie: lo que molesta es enterarse
+        cuando el veterinario ya está en el patio. Basta con decir si se cobra aparte y
+        cómo se calcula.</p>
+      <p class="falta">falta: cómo lo cobran ustedes — acá no va ningún precio inventado</p>
+    </article>
+
+    <article class="bl bl--lleno">
+      <p class="bl__num">04</p>
+      <h3>Qué hay que tener listo</h3>
+      <p class="bl__marca">Esto sí es general del oficio y se puede escribir hoy — igual va
+        firmado por quien atiende.</p>
+      <ul class="listo">
+        <li><b>El animal encerrado y accesible.</b> Buscarlo en el potrero cuando el
+          veterinario ya llegó es la mitad del tiempo de la visita.</li>
+        <li><b>Alguien que pueda sujetar.</b> Una persona más, con manos libres, y de ser
+          posible la que el animal conoce.</li>
+        <li><b>Agua limpia y luz.</b> Si es de tarde o el galpón es oscuro, una linterna o
+          una extensión.</li>
+        <li><b>La historia contada completa.</b> Cuándo empezó, qué come, si comió hoy, si
+          hay otros animales igual y qué se le dio antes de llamar. Esto último es lo que
+          más se olvida y lo que más cambia el diagnóstico.</li>
+        <li><b>El camino explicado.</b> La referencia del cruce, el color del portón, si hay
+          vado o si el camino se pone malo con lluvia.</li>
+      </ul>
+    </article>
+  </div>
+
+  <p class="firma">Con las tres primeras respuestas contestadas, esta página es lo único en
+    la zona que le dice a un campesino si puede contar con ustedes. Nadie más lo tiene
+    escrito.</p>
+</section>
+
+<!-- ========= EL BOTIQUÍN ========= -->
+<!-- ========= MEDIA PANTALLA ========= -->
+<section class="mitades" aria-labelledby="t-mitades">
+  <div class="mitades__foto">
+    <img src="imagenes/media-01.jpg" width="2200" height="1467"
+         loading="lazy" decoding="async" alt="">
+  </div>
+  <div class="mitades__texto">
+    <p class="mitades__ante">Por qué la salida a terreno se pide por teléfono</p>
+    <h2 id="t-mitades">Al animal echado no se le pide hora por formulario</h2>
+    <p>Cuando hay un animal caído en el potrero, nadie llena un formulario y espera respuesta: se llama, se cuenta qué pasa y se pregunta a qué hora puede llegar alguien. Por eso en esta página el número va arriba, grande y solo — como el aviso clavado en el poste del cruce, que es donde la gente del campo lo busca.</p>
+  </div>
+</section>
+
+<section class="botiquin" id="botiquin" aria-labelledby="t-boti">
+  <div class="botiquin__cabecera">
+    <p class="antetitulo antetitulo--claro">Para la parcela con animales</p>
+    <h2 id="t-boti">El botiquín del campo</h2>
+    <p class="entrada">No es un botiquín para tratar: es un botiquín para <b>aguantar bien
+      hasta que llegue el veterinario</b>. Por eso acá no hay ni un remedio ni una sola
+      dosis — eso lo indica quien atiende, con el animal a la vista.</p>
+    <p class="marca-ejemplo marca-ejemplo--claro" data-ejemplo="Lista general — sin fármacos y sin dosis, por regla"></p>
+  </div>
+
+  <ul class="cosas">
+    <li><span class="cosa__q">Guantes</span> desechables, una caja. Es lo primero que falta
+      siempre.</li>
+    <li><span class="cosa__q">Suero fisiológico</span> para lavar una herida o un ojo.</li>
+    <li><span class="cosa__q">Gasas y vendas</span> limpias, en su envase cerrado.</li>
+    <li><span class="cosa__q">Tijera y pinza</span> que se usen sólo para esto.</li>
+    <li><span class="cosa__q">Termómetro</span>. La temperatura es el dato que el
+      veterinario va a preguntar por teléfono antes de subirse a la camioneta.</li>
+    <li><span class="cosa__q">Desinfectante</span> de uso externo.</li>
+    <li><span class="cosa__q">Linterna</span> con pilas buenas, y una cuerda o cabestro.</li>
+    <li><span class="cosa__q">El teléfono del veterinario</span> escrito en la puerta del
+      galpón, no sólo en el celular. El celular se queda sin batería justo ese día.</li>
+  </ul>
+
+  <p class="descargo">Esta lista es general y no reemplaza ninguna indicación profesional.
+    <b>No incluye medicamentos a propósito:</b> ningún fármaco, ninguna dosis y ninguna
+    vía de administración deberían salir de una página web. Los remedios los indica el
+    veterinario que ve al animal. Este texto lo escribió quien hizo el sitio y lo revisa y
+    lo firma la clínica antes de publicarse.</p>
+</section>
+
+<!-- ========= EL CIERRE — T1 FUNDIDO CON LA ESTRUCTURA ========= -->
+<!-- ========= LA CITA A SANGRE ========= -->
+<section class="cita" aria-labelledby="t-cita">
+  <div class="cita__foto" aria-hidden="true">
+    <img src="imagenes/cita-01.jpg" width="2200" height="1467"
+         loading="lazy" decoding="async" alt="">
+  </div>
+  <blockquote class="cita__texto">
+    <p id="t-cita">Mitad pueblo, mitad campo<br>
+      <span class="cita__eco">Y ninguna veterinaria de la zona lo dice por escrito</span></p>
+  </blockquote>
+</section>
+
+
+
+<!-- ========= TAJO — FRANJA A SANGRE ========= -->
+<div class="tajo" aria-hidden="true">
+  <img src="imagenes/banda-01.jpg" width="1100" height="619"
+       loading="lazy" decoding="async" alt="">
+</div>
+<section class="cierre" id="llamar" aria-labelledby="t-cierre">
+  <p class="cierre__rot">Para pedir una salida</p>
+  <h2 id="t-cierre" class="cierre__tel">
+    <a href="tel:+56961294464">9 6129 4464</a>
+  </h2>
+  <p class="cierre__pie">Es el número publicado en su ficha de Google. En el campo, el
+    teléfono es la página entera: todo lo demás son ganas de leer.</p>
+</section>
+
+<!-- ========= LA TIRA ========= -->
+<section class="tira" aria-label="Tres imágenes del oficio">
+  <figure class="tira__pieza">
+    <img src="imagenes/tira-01.jpg" width="1100" height="733" loading="lazy" decoding="async" alt="Ganado pastando en un potrero con cerros al fondo.">
+  </figure>
+  <figure class="tira__pieza">
+    <img src="imagenes/tira-02.jpg" width="1100" height="619" loading="lazy" decoding="async" alt="Casa de campo con sacos apilados junto al camino de ripio.">
+  </figure>
+  <figure class="tira__pieza">
+    <img src="imagenes/tira-03.jpg" width="1100" height="733" loading="lazy" decoding="async" alt="Vacas comiendo junto a un cerco de madera.">
+  </figure>
+</section>
+
+</main>
+
+
+
+<!-- ========= MOSAICO ========= -->
+<section class="mos" aria-labelledby="t-mos">
+  <h2 id="t-mos" class="mos__titulo">La misma serie, más de cerca</h2>
+  <p class="mos__nota">Estas seis ya aparecen más arriba en la página. Vuelven acá en otro tamaño porque una sola pasada de imágenes deja el scroll vacío, y porque de cerca se ven cosas que en grande se pierden. La procedencia de cada una está en imagenes/FUENTES.txt.</p>
+  <div class="mos__grilla">
+    <figure class="mos__p">
+      <img src="imagenes/mos-01.jpg" width="780" height="520"
+           loading="lazy" decoding="async" alt="">
+    </figure>
+    <figure class="mos__p">
+      <img src="imagenes/mos-02.jpg" width="780" height="520"
+           loading="lazy" decoding="async" alt="">
+    </figure>
+    <figure class="mos__p">
+      <img src="imagenes/mos-03.jpg" width="780" height="439"
+           loading="lazy" decoding="async" alt="">
+    </figure>
+    <figure class="mos__p">
+      <img src="imagenes/mos-04.jpg" width="780" height="520"
+           loading="lazy" decoding="async" alt="">
+    </figure>
+    <figure class="mos__p">
+      <img src="imagenes/mos-05.jpg" width="780" height="520"
+           loading="lazy" decoding="async" alt="">
+    </figure>
+    <figure class="mos__p">
+      <img src="imagenes/local-01.jpg" width="533" height="500"
+           loading="lazy" decoding="async" alt="">
+    </figure>
+  </div>
+</section>
+<section class="dueno" aria-labelledby="t-dueno">
+  <h2 id="t-dueno">Para la veterinaria</h2>
+  <div class="dueno__cols">
+    <div>
+      <h3>Lo que está verificado</h3>
+      <p>El 4,6 con 58 reseñas de su ficha de Google y el teléfono 9 6129 4464. No tienen
+        sitio propio: sólo redes.</p>
+    </div>
+    <div>
+      <h3>Lo que es general</h3>
+      <p>El bloque 04 —lo que hay que tener listo— y el botiquín. Son del oficio, no de
+        ustedes, y van sin firma hasta que los revisen.</p>
+    </div>
+    <div>
+      <h3>Lo que falta</h3>
+      <p>Tres respuestas, y son las tres que valen: si atienden animales mayores, hasta qué
+        sectores salen y cómo cobran la salida. Los bloques 01, 02 y 03 están armados y
+        vacíos esperándolas. Con eso publicado, son la única veterinaria de la zona que
+        contesta la pregunta del campo.</p>
+    </div>
+  </div>
+  <p class="dueno__cierre">
+    <a class="flecha" href="https://wa.me/56968650001" rel="noopener">Escribirme por WhatsApp <span aria-hidden="true">→</span></a>
+    <a class="flecha" href="../../" rel="noopener">Ver otros trabajos <span aria-hidden="true">→</span></a>
+  </p>
+</section>
+
+<footer class="pie">
+  <p>Sitio de demostración preparado por CristalWeb. El negocio no lo ha encargado ni ha
+    revisado su contenido. No se afirma que esta veterinaria atienda animales mayores ni
+    que salga a terreno: los bloques que lo describirían están deliberadamente vacíos. No
+    hay precios, no hay medicamentos, no hay dosis y nada de lo escrito constituye
+    indicación veterinaria.</p>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>

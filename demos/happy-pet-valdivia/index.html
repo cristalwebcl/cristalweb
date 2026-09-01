@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="es-CL" class="no-js">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Clínica Veterinaria Happy Pet — Valdivia</title>
+<meta name="description" content="Hospital veterinario en Valdivia. Qué pasa cuando un animal queda hospitalizado y cómo es la noche.">
+
+<!-- Política de seguridad de contenido: el navegador sólo puede cargar
+     archivos de este mismo sitio. Sin CDN, sin librerías, sin rastreadores.
+     Ver skills/web-blindada/references/csp-en-pages.md -->
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self'; img-src 'self' data:; font-src 'self'; connect-src 'self'; media-src 'self'; form-action 'self'; base-uri 'none'; frame-src 'none'; object-src 'none'">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+
+<!-- Rescate de la clase .js (regla 2 de la casa). En archivo, sin defer:
+     inline lo bloquearía la CSP. -->
+<script src="js/rescate.js"></script>
+
+<!-- Fuentes propias: cero peticiones a terceros. El preload va SOLO
+     para la display, que es la del titular de la portada. -->
+<link rel="preload" href="assets/fuentes/andika-700-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="assets/fuentes.css">
+<link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+
+<div class="propuesta">
+  <p class="propuesta__que">Propuesta de sitio web — preparada para <b>Clínica Veterinaria Happy Pet</b> por CristalWeb</p>
+  <p class="propuesta__gancho">186 reseñas con 4,7: el hospital veterinario grande de Valdivia, donde los animales quedan internados. Y no hay ninguna página que cuente lo único que el dueño quiere saber.</p>
+</div>
+
+<header class="cab" id="cab">
+  <a class="cab__marca" href="#portada">
+    <span class="piloto" aria-hidden="true"></span>
+    <span class="cab__nombre">Happy Pet</span>
+  </a>
+  <nav class="cab__nav" aria-label="Secciones">
+    <a href="#noche">La noche</a>
+    <a href="#alta">El alta</a>
+  </nav>
+  <a class="cab__tel" href="tel:+56632298388">
+    <span class="cab__tel-rot">Valdivia</span>
+    <span class="cab__tel-num">(63) 229 8388</span>
+  </a>
+</header>
+
+<main>
+
+<!-- ══════ ESTRUCTURA G — el reloj fijo, la noche fluyendo ══════ -->
+<div class="split">
+
+  <!-- LADO FIJO: el reloj de la noche -->
+  <aside class="reloj reloj--foto" id="portada" aria-labelledby="t-portada">
+    <!-- FONDO DEL PANEL: 2560 px, nitido. El panel es alto y angosto,
+         asi que la foto se disuelve hacia ARRIBA, donde va el titular, y
+         queda entera abajo. Ni blur ni calidad baja: lo que sostiene el
+         contraste es el gradiente. -->
+    <div class="reloj__foto" aria-hidden="true">
+      <img src="imagenes/port-01.jpg" width="2560" height="1707"
+           decoding="async" fetchpriority="high" alt="">
+    </div>
+    <div class="respira" aria-hidden="true"></div>
+
+    <div class="reloj__caja">
+      <p class="sitio">Hospital veterinario · Valdivia</p>
+      <h1 id="t-portada">La noche<br>que uno no ve</h1>
+      <p class="reloj__bajada">Cuando un animal queda internado, el dueño se va a la
+        casa con una sola pregunta dando vueltas. Esta columna es esa noche, hora por
+        hora.</p>
+
+      <ol class="horas" aria-label="Las horas de la noche">
+        <li><a href="#h22">22:00</a></li>
+        <li><a href="#h00">00:00</a></li>
+        <li><a href="#h03">03:00</a></li>
+        <li><a href="#h06">06:00</a></li>
+        <li><a href="#h08">08:00</a></li>
+      </ol>
+
+      <p class="reloj__nota"><span class="falta">falta: confirmar el turno real</span>
+        — las horas son la estructura de la sección, no un horario publicado.</p>
+    </div>
+  </aside>
+
+  <!-- LADO QUE FLUYE -->
+  <div class="flujo">
+
+    <!-- ══════ LA PIEZA FIRMA ══════ -->
+    <section class="noche con-telon" id="noche" aria-labelledby="t-noche">
+  <div class="telon" aria-hidden="true">
+    <img src="imagenes/telon-01.jpg" width="1200" height="800" decoding="async" alt="">
+  </div>
+
+      <!-- AURA DE COLOR: la foto reventada a desenfoque. Deja de leerse
+           como imagen y queda el calor del pelaje detras de una seccion
+           que si no seria papel liso. Sin lazy: va en absoluto con
+           z-index negativo y el navegador nunca la considera visible. -->
+      <div class="aura" aria-hidden="true">
+        <img src="imagenes/aura-01.jpg" width="900" height="676" decoding="async" alt="">
+      </div>
+      <p class="antetitulo">La pregunta que quita el sueño</p>
+      <h2 id="t-noche">¿Mi perro pasa<br>la noche solo?</h2>
+      <p class="entrada">No hay ninguna respuesta escrita en internet, y por eso el
+        dueño se imagina la peor. Sea cual sea la respuesta real —hay turno, no hay
+        turno, hay cámara, se revisa a tal hora—, escribirla vale más que cualquier
+        otra cosa que pueda decir esta página.</p>
+
+      <div class="aviso-fuerte">
+        <p><b>Todo lo que sigue está vacío a propósito.</b> No sé cómo funciona la
+          noche en este hospital y no lo voy a suponer: en un tema así, una suposición
+          escrita en internet es una promesa que alguien va a cobrar. La estructura
+          está lista; las respuestas son de la clínica.</p>
+      </div>
+
+      <ol class="tramos">
+        <li class="tramo" id="h22">
+          <p class="tramo__h">22:00</p>
+          <div class="tramo__cuerpo">
+            <h3>Cierra la consulta</h3>
+            <p>El momento en que el dueño se va. Lo que se le dice acá —cuándo
+              volver a llamar, quién queda— es lo que se va a repetir toda la noche
+              en la cabeza.</p>
+            <dl class="campos">
+              <div><dt>Quién queda en el edificio</dt><dd><span class="falta">falta: confirmar</span></dd></div>
+              <div><dt>A qué hora se puede llamar</dt><dd><span class="falta">falta</span></dd></div>
+              <div><dt>Qué se le deja al animal</dt><dd><span class="falta">falta: si aceptan una manta propia</span></dd></div>
+            </dl>
+          </div>
+        </li>
+
+        <li class="tramo" id="h00">
+          <p class="tramo__h">00:00</p>
+          <div class="tramo__cuerpo">
+            <h3>La primera parte de la noche</h3>
+            <p>Es cuando la mayoría de los animales se acomodan o no se acomodan.
+              Saber si alguien pasa a mirar, y cada cuánto, es exactamente lo que
+              tranquiliza a un dueño.</p>
+            <dl class="campos">
+              <div><dt>Si hay rondas y cada cuánto</dt><dd><span class="falta">falta</span></dd></div>
+              <div><dt>Cómo se maneja el dolor de noche</dt><dd><span class="falta">falta: lo define la clínica</span></dd></div>
+            </dl>
+          </div>
+        </li>
+
+        <li class="tramo" id="h03">
+          <p class="tramo__h">03:00</p>
+          <div class="tramo__cuerpo">
+            <h3>Si algo cambia</h3>
+            <p>La pregunta más difícil y la que más se agradece contestada: en qué
+              casos se llama al dueño a esa hora, y en cuáles se espera a la mañana.
+              Que exista un criterio —cualquiera— y esté dicho, evita el terror del
+              teléfono que suena.</p>
+            <dl class="campos">
+              <div><dt>Cuándo se llama de madrugada</dt><dd><span class="falta">falta: el criterio de la clínica</span></dd></div>
+              <div><dt>A qué número llaman</dt><dd><span class="falta">falta</span></dd></div>
+            </dl>
+          </div>
+        </li>
+
+        <li class="tramo" id="h06">
+          <p class="tramo__h">06:00</p>
+          <div class="tramo__cuerpo">
+            <h3>Antes del cambio de turno</h3>
+            <p>La hora en que se junta la información de la noche para pasarla al
+              equipo de la mañana. Es lo que después le van a contar al dueño.</p>
+            <dl class="campos">
+              <div><dt>Qué se registra de la noche</dt><dd><span class="falta">falta</span></dd></div>
+            </dl>
+          </div>
+        </li>
+
+        <li class="tramo" id="h08">
+          <p class="tramo__h">08:00</p>
+          <div class="tramo__cuerpo">
+            <h3>La llamada de la mañana</h3>
+            <p>El momento más esperado de todo el proceso. A qué hora se informa, y
+              si el dueño llama o lo llaman, es un dato de dos palabras que evita
+              cinco llamadas nerviosas antes de las siete.</p>
+            <dl class="campos">
+              <div><dt>A qué hora se informa</dt><dd><span class="falta">falta</span></dd></div>
+              <div><dt>Si se puede visitar y en qué horario</dt><dd><span class="falta">falta</span></dd></div>
+            </dl>
+          </div>
+        </li>
+      </ol>
+
+      <p class="firma">Once respuestas cortas. Ninguna necesita diseño, ninguna cuesta
+        plata, y juntas son la sección que ningún hospital veterinario del sur tiene
+        escrita — en el momento en que el cliente está más asustado y más
+        agradecido.</p>
+    </section>
+
+    <!-- ══════ EL ALTA ══════ -->
+    <!-- ========= MEDIA PANTALLA ========= -->
+    <section class="mitades" aria-labelledby="t-mitades">
+      <div class="mitades__foto">
+        <img src="imagenes/media-01.jpg" width="2200" height="1467"
+             loading="lazy" decoding="async" alt="">
+      </div>
+      <div class="mitades__texto">
+        <p class="mitades__ante">Lo que se lleva a la casa</p>
+        <h2 id="t-mitades">El alta no es «ya está bien»</h2>
+        <p>Es una lista: qué remedio, a qué hora, qué señal obliga a volver y
+          cuándo es el control. Dicha en el mesón se olvida a la cuadra;
+          escrita, se pega en el refrigerador. Y es la diferencia entre una
+          recuperación tranquila y tres llamadas de madrugada.</p>
+      </div>
+    </section>
+
+    <section class="alta" id="alta" aria-labelledby="t-alta">
+      <p class="antetitulo antetitulo--claro">Volver a la casa</p>
+      <h2 id="t-alta">El alta</h2>
+      <p class="entrada">La otra mitad de una hospitalización es lo que pasa después,
+        cuando el dueño se lleva un animal que todavía no está bien del todo y tiene
+        que cuidarlo solo.</p>
+
+      <dl class="huecos">
+        <div class="hueco">
+          <dt>Las indicaciones, por escrito</dt>
+          <dd><span class="falta">falta: confirmar si se entregan</span>
+            <span class="hueco__pq">Nadie retiene una indicación hablada después de
+              dos días sin dormir. Un papel —o un mensaje— con qué darle, cuándo y
+              hasta cuándo, es lo que hace que el tratamiento se cumpla.</span></dd>
+        </div>
+        <div class="hueco">
+          <dt>Qué señales obligan a volver</dt>
+          <dd><span class="falta">falta: lo define la clínica</span>
+            <span class="hueco__pq">Tres o cuatro señales concretas. Sin esa lista
+              el dueño vuelve por nada o —peor— no vuelve cuando debía.</span></dd>
+        </div>
+        <div class="hueco">
+          <dt>La llamada de control</dt>
+          <dd><span class="falta">falta: confirmar si la hacen</span>
+            <span class="hueco__pq">Si llaman a los dos días para preguntar cómo
+              sigue, eso es lo que hace que alguien escriba una reseña de cinco
+              estrellas. Y si lo hacen, tiene que estar escrito.</span></dd>
+        </div>
+        <div class="hueco">
+          <dt>Cómo se resuelve una duda después</dt>
+          <dd><span class="falta">falta</span>
+            <span class="hueco__pq">Por teléfono, por mensaje, o volviendo. Saberlo
+              antes de salir por la puerta cambia toda la semana siguiente.</span></dd>
+        </div>
+      </dl>
+    </section>
+
+    <!-- ══════ EL CIERRE — T1 ══════ -->
+    <!-- ========= LA CITA A SANGRE ========= -->
+    <section class="cita" aria-labelledby="t-cita">
+      <div class="cita__foto" aria-hidden="true">
+        <img src="imagenes/cita-01.jpg" width="2200" height="3301"
+             loading="lazy" decoding="async" alt="">
+      </div>
+      <blockquote class="cita__texto">
+        <p id="t-cita">«¿Cómo pasó la noche?»<br>
+          <span class="cita__eco">La primera pregunta de la mañana, todas las veces</span></p>
+      </blockquote>
+    </section>
+
+    
+
+<!-- ========= TAJO — FRANJA A SANGRE ========= -->
+<div class="tajo" aria-hidden="true">
+  <img src="imagenes/banda-01.jpg" width="1500" height="1000"
+       loading="lazy" decoding="async" alt="">
+</div>
+<section class="cierre" id="llamar" aria-labelledby="t-cierre">
+      <p class="cierre__rot">Para preguntar por un paciente internado</p>
+      <h2 id="t-cierre" class="cierre__tel">
+        <a href="tel:+56632298388">(63) 229 8388</a>
+      </h2>
+      <p class="cierre__pie">Es el número publicado en su ficha de Google.</p>
+    </section>
+
+    <!-- ========= LA TIRA ========= -->
+    <section class="tira" aria-label="Tres imágenes del oficio">
+      <figure class="tira__pieza">
+        <img src="imagenes/tira-01.jpg" width="1100" height="734" loading="lazy" decoding="async"
+             alt="Dos perros jugando con un peluche en el pasto.">
+      </figure>
+      <figure class="tira__pieza">
+        <img src="imagenes/tirab-01.jpg" width="1100" height="826" loading="lazy" decoding="async"
+             alt="Perro durmiendo enroscado sobre una manta.">
+      </figure>
+      <figure class="tira__pieza">
+        <img src="imagenes/tira-02.jpg" width="1100" height="734" loading="lazy" decoding="async"
+             alt="Perro mirando a la cámara con la boca abierta.">
+      </figure>
+    </section>
+
+  </div>
+</div>
+
+</main>
+
+
+
+<!-- ========= MOSAICO ========= -->
+<section class="mos" aria-labelledby="t-mos">
+  <h2 id="t-mos" class="mos__titulo">La misma serie, más de cerca</h2>
+  <p class="mos__nota">Estas seis ya aparecen más arriba en la página. Vuelven acá en otro tamaño porque una sola pasada de imágenes deja el scroll vacío, y porque de cerca se ven cosas que en grande se pierden. La procedencia de cada una está en imagenes/FUENTES.txt.</p>
+  <div class="mos__grilla">
+    <figure class="mos__p">
+      <img src="imagenes/mos-01.jpg" width="780" height="520"
+           loading="lazy" decoding="async" alt="">
+    </figure>
+    <figure class="mos__p">
+      <img src="imagenes/mos-02.jpg" width="780" height="586"
+           loading="lazy" decoding="async" alt="">
+    </figure>
+    <figure class="mos__p">
+      <img src="imagenes/mos-03.jpg" width="780" height="520"
+           loading="lazy" decoding="async" alt="">
+    </figure>
+    <figure class="mos__p">
+      <img src="imagenes/mos-04.jpg" width="780" height="520"
+           loading="lazy" decoding="async" alt="">
+    </figure>
+    <figure class="mos__p">
+      <img src="imagenes/mos-05.jpg" width="780" height="520"
+           loading="lazy" decoding="async" alt="">
+    </figure>
+    <figure class="mos__p">
+      <img src="imagenes/mos-06.jpg" width="780" height="1170"
+           loading="lazy" decoding="async" alt="">
+    </figure>
+  </div>
+</section>
+<section class="dueno" aria-labelledby="t-dueno">
+  <h2 id="t-dueno">Para la clínica</h2>
+  <div class="dueno__cols">
+    <div>
+      <h3>Lo que está verificado</h3>
+      <p>El 4,7 con 186 reseñas de su ficha de Google y el teléfono (63) 229 8388.
+        No hay página propia.</p>
+    </div>
+    <div>
+      <h3>Por qué está todo vacío</h3>
+      <p>Porque es el tema más delicado de todos los que trabajé en esta serie. No
+        sé si hay turno de noche, ni cada cuánto se revisa, ni cuándo llaman. Y en
+        una hospitalización, una suposición publicada es una promesa que alguien va a
+        cobrar en el peor momento.</p>
+    </div>
+    <div>
+      <h3>Lo que falta</h3>
+      <p>Once respuestas cortas sobre la noche y cuatro sobre el alta. Sean cuales
+        sean —incluso si la respuesta es «no hay nadie de noche»—, escritas valen
+        más que el silencio.</p>
+    </div>
+  </div>
+  <p class="dueno__cierre">
+    <a class="flecha" href="https://wa.me/56968650001" rel="noopener">Escribirme por WhatsApp <span aria-hidden="true">→</span></a>
+    <a class="flecha" href="../../" rel="noopener">Ver otros trabajos <span aria-hidden="true">→</span></a>
+  </p>
+</section>
+
+<footer class="pie">
+  <p><b>Esta página no entrega orientación veterinaria ni describe el funcionamiento
+    real de esta clínica.</b> Todos los campos sobre la atención nocturna, las rondas,
+    la medicación y el alta están vacíos a propósito: son datos que sólo puede
+    completar el hospital. No se afirma que exista turno de noche ni ningún
+    procedimiento en particular.</p>
+  <p class="pie__demo">Sitio de demostración preparado por CristalWeb. El negocio no
+    lo ha encargado ni ha revisado su contenido.</p>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>

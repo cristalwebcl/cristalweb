@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="es-CL" class="no-js">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Clínica Veterinaria Temuco</title>
+<meta name="description" content="Clínica veterinaria en Temuco. Qué es urgencia, qué es para hoy y qué puede esperar a un control.">
+
+<!-- Política de seguridad de contenido: el navegador sólo puede cargar
+     archivos de este mismo sitio. Sin CDN, sin librerías, sin rastreadores.
+     Ver skills/web-blindada/references/csp-en-pages.md -->
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self'; img-src 'self' data:; font-src 'self'; connect-src 'self'; media-src 'self'; form-action 'self'; base-uri 'none'; frame-src 'none'; object-src 'none'">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+
+<!-- Rescate de la clase .js (regla 2 de la casa). En archivo, sin defer:
+     inline lo bloquearía la CSP. -->
+<script src="js/rescate.js"></script>
+
+<!-- Fuentes propias: cero peticiones a terceros. El preload va SOLO
+     para la display, que es la del titular de la portada. -->
+<link rel="preload" href="assets/fuentes/notosansdisplay-var-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="assets/fuentes.css">
+<link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+
+<div class="propuesta">
+  <p class="propuesta__que">Propuesta de sitio web — preparada para <b>Clínica Veterinaria Temuco</b> por CristalWeb</p>
+  <p class="propuesta__gancho">Se llaman igual que la ciudad. El que busca «veterinaria Temuco» debería encontrarlos primero, y no aparecen en ninguna parte.</p>
+</div>
+
+<header class="cab" id="cab">
+  <a class="cab__marca" href="#portada">
+    <span class="guante" aria-hidden="true"></span>
+    <span class="cab__nombre">Clínica Veterinaria Temuco</span>
+  </a>
+  <nav class="cab__nav" aria-label="Secciones">
+    <a href="#triage">¿Es urgencia?</a>
+    <a href="#nombre">El nombre obliga</a>
+  </nav>
+  <a class="cab__tel" href="tel:+56452240505">
+    <span class="cab__tel-rot">Temuco</span>
+    <span class="cab__tel-num">(45) 224 0505</span>
+  </a>
+</header>
+
+<main>
+
+<!-- ========= PORTADA ========= -->
+<section class="portada portada--foto" id="portada" aria-labelledby="t-portada">
+  <!-- FONDO DE PORTADA: 2560 px, nitido. Se disuelve hacia el titular
+       con un gradiente lateral, no con desenfoque. -->
+  <div class="portada__foto" aria-hidden="true">
+    <img src="imagenes/port-01.jpg" width="2560" height="1707"
+         decoding="async" fetchpriority="high" alt="">
+  </div>
+
+  <div class="cialitica" aria-hidden="true"></div>
+
+  <div class="portada__texto">
+    <p class="sitio">Clínica veterinaria · Temuco</p>
+    <h1 id="t-portada">¿Es urgencia<br>o puede esperar?</h1>
+    <p class="bajada">Es la pregunta que se hace todo dueño mirando a su animal a las
+      nueve de la noche, y la que decide entre una consulta tranquila mañana y una
+      urgencia cara esta noche. Nadie la contesta por escrito.</p>
+    <dl class="specs">
+      <div class="spec"><dt>nota en Google</dt><dd>4,6</dd></div>
+      <div class="spec"><dt>reseñas</dt><dd>177</dd></div>
+      <div class="spec"><dt>teléfono</dt><dd class="dd--tel"><a href="tel:+56452240505">(45) 224 0505</a></dd></div>
+    </dl>
+  </div>
+</section>
+
+<!-- ========= LA PIEZA FIRMA — LA TABLA DE TRIAGE ========= -->
+<section class="triage con-telon" id="triage" aria-labelledby="t-triage">
+  <div class="telon" aria-hidden="true">
+    <img src="imagenes/telon-01.jpg" width="1200" height="800" decoding="async" alt="">
+  </div>
+
+  <!-- AURA DE COLOR: la foto de rubro reventada a desenfoque. No se lee
+       como imagen: aporta color y luz detras de una seccion que si no
+       seria fondo plano. Aca el desenfoque SI es el efecto, no un parche,
+       y por eso el archivo va chico: a 64 px de blur, mas resolucion no
+       cambia nada. Sin loading=lazy porque el elemento va en absoluto con
+       z-index negativo y el navegador nunca lo considera visible. -->
+  <div class="aura" aria-hidden="true">
+    <img src="imagenes/aura-01.jpg" width="900" height="601" decoding="async" alt="">
+  </div>
+
+  <div class="triage__cabecera">
+    <p class="antetitulo">La tabla que evita el viaje en vano</p>
+    <h2 id="t-triage">Es urgencia,<br>es para hoy,<br>o es un control</h2>
+    <p class="entrada">Tres tiempos y lo que suele ir en cada uno. No sirve para
+      saber qué tiene el animal — sirve para saber <em>cuándo</em> llevarlo, que es
+      una pregunta distinta y mucho más fácil de contestar.</p>
+
+    <div class="alerta">
+      <p><b>Ante la duda, se llama. Preguntar es gratis.</b> Esta tabla es una
+        referencia general y no reemplaza a nadie. Si un animal está mal y no aparece
+        en ninguna fila, eso también es motivo para llamar.
+        <span class="falta">falta: que la clínica revise y firme la tabla</span></p>
+    </div>
+  </div>
+
+  <div class="tabla-envoltura">
+    <table class="tabla">
+      <caption class="visually">Referencia general de cuándo llevar al animal según lo que se observa</caption>
+      <thead>
+        <tr>
+          <th scope="col">Lo que se ve</th>
+          <th scope="col">Cuándo</th>
+          <th scope="col">Por qué</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row" class="sint">Le cuesta respirar, respira raro o con la boca abierta</th>
+          <td class="cuando cuando--ahora">Ahora</td>
+          <td class="pq">Es la que menos espera de todas. Un animal que no ventila
+            bien se deteriora en minutos, no en horas.</td>
+        </tr>
+        <tr>
+          <th scope="row" class="sint">Convulsión, temblor generalizado o pérdida de conciencia</th>
+          <td class="cuando cuando--ahora">Ahora</td>
+          <td class="pq">Aunque se le pase sola: lo que importa es por qué pasó, y
+            eso se averigua el mismo día.</td>
+        </tr>
+        <tr>
+          <th scope="row" class="sint">Comió o pudo haber comido algo tóxico</th>
+          <td class="cuando cuando--ahora">Ahora</td>
+          <td class="pq">Y con el envase en la mano. No se espera a ver si le hace
+            algo, y no se le provoca el vómito por cuenta propia.</td>
+        </tr>
+        <tr>
+          <th scope="row" class="sint">Sangrado que no se detiene, golpe fuerte o atropello</th>
+          <td class="cuando cuando--ahora">Ahora</td>
+          <td class="pq">Un animal atropellado puede verse bien y tener algo grave
+            adentro. Se traslada moviéndolo lo mínimo.</td>
+        </tr>
+        <tr>
+          <th scope="row" class="sint">No puede orinar o lo intenta sin resultado</th>
+          <td class="cuando cuando--ahora">Ahora</td>
+          <td class="pq">Es más frecuente y más grave de lo que la gente cree,
+            especialmente en gatos machos.</td>
+        </tr>
+        <tr>
+          <th scope="row" class="sint">Vientre hinchado y duro, con arcadas sin vomitar</th>
+          <td class="cuando cuando--ahora">Ahora</td>
+          <td class="pq">Sobre todo en perros grandes y después de comer. No es
+            algo que convenga observar en la casa.</td>
+        </tr>
+
+        <tr>
+          <th scope="row" class="sint">No come nada desde ayer</th>
+          <td class="cuando cuando--hoy">Hoy</td>
+          <td class="pq">Un día sin comer en un adulto es una señal; en un cachorro
+            o un gato, es menos tiempo todavía.</td>
+        </tr>
+        <tr>
+          <th scope="row" class="sint">Vómito o diarrea que se repite</th>
+          <td class="cuando cuando--hoy">Hoy</td>
+          <td class="pq">Una vez le pasa a cualquiera. Repetido, y con el animal
+            decaído o sin tomar agua, no.</td>
+        </tr>
+        <tr>
+          <th scope="row" class="sint">Cojera que apareció de golpe</th>
+          <td class="cuando cuando--hoy">Hoy</td>
+          <td class="pq">Y sobre todo si no apoya la pata. Esperar a ver si se le
+            pasa suele terminar en algo más largo de tratar.</td>
+        </tr>
+        <tr>
+          <th scope="row" class="sint">Un ojo cerrado, enrojecido o con mucho lagrimeo</th>
+          <td class="cuando cuando--hoy">Hoy</td>
+          <td class="pq">Los ojos avanzan rápido. Lo que hoy se resuelve simple, en
+            tres días puede no resolverse.</td>
+        </tr>
+        <tr>
+          <th scope="row" class="sint">Está apagado, escondido, no quiere que lo toquen</th>
+          <td class="cuando cuando--hoy">Hoy</td>
+          <td class="pq">El cambio de conducta es de las primeras cosas que el dueño
+            nota y de las últimas que reporta. Cuenta.</td>
+        </tr>
+
+        <tr>
+          <th scope="row" class="sint">Se rasca seguido o se muerde una zona</th>
+          <td class="cuando cuando--control">Control</td>
+          <td class="pq">Salvo que ya esté con la piel abierta o que empeore rápido,
+            en cuyo caso pasa a ser de hoy.</td>
+        </tr>
+        <tr>
+          <th scope="row" class="sint">Pelo opaco, caída de pelo, caspa</th>
+          <td class="cuando cuando--control">Control</td>
+          <td class="pq">Suele venir de algo que se ve mejor con calma y con el
+            animal completo, no en una urgencia.</td>
+        </tr>
+        <tr>
+          <th scope="row" class="sint">Mal aliento, sarro, encías rojas</th>
+          <td class="cuando cuando--control">Control</td>
+          <td class="pq">Es de lo que más se posterga y de lo que más problemas trae
+            a la larga.</td>
+        </tr>
+        <tr>
+          <th scope="row" class="sint">Un bulto que lleva tiempo y no cambia</th>
+          <td class="cuando cuando--control">Control</td>
+          <td class="pq">Control, sí — pero control de verdad, no dentro de un año.
+            Si crece o cambia, pasa a ser de hoy.</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <p class="firma">La tabla no nombra ninguna enfermedad, ningún medicamento ni
+    ninguna causa. Sólo ordena el tiempo. Todo lo demás lo dice la clínica con el
+    animal adelante.</p>
+</section>
+
+<!-- ========= EL NOMBRE OBLIGA ========= -->
+<!-- ========= MEDIA PANTALLA ========= -->
+<section class="mitades" aria-labelledby="t-mitades">
+  <div class="mitades__foto">
+    <img src="imagenes/media-01.jpg" width="2200" height="1467"
+         loading="lazy" decoding="async" alt="">
+  </div>
+  <div class="mitades__texto">
+    <p class="mitades__ante">Lo que pasa antes de subir al auto</p>
+    <h2 id="t-mitades">La mitad de las urgencias no son urgencias</h2>
+    <p>Y la otra mitad no puede esperar. Distinguirlas por teléfono, a las once de la noche y con el animal en brazos, es lo más difícil que hace una veterinaria — y lo que nadie deja por escrito. Una lista de señales, dicha sin dramatismo, ahorra el viaje a la mitad de la gente y se lo apura a la otra mitad.</p>
+  </div>
+</section>
+
+<section class="nombre" id="nombre" aria-labelledby="t-nombre">
+  <div class="nombre__cuerpo">
+    <p class="antetitulo antetitulo--claro">Escrito para la clínica</p>
+    <h2 id="t-nombre">El nombre<br>obliga</h2>
+    <p class="entrada">Llamarse como la ciudad es la mejor posición de partida que
+      puede tener un negocio, y también la más fácil de desperdiciar. Quien busca
+      «veterinaria Temuco» está buscando literalmente su nombre — y hoy encuentra a
+      otros.</p>
+
+    <ol class="argumentos">
+      <li class="arg">
+        <p class="arg__n">01</p>
+        <div>
+          <h3>La búsqueda ya existe</h3>
+          <p>No hay que crear demanda ni convencer a nadie: todos los días hay gente
+            en Temuco escribiendo esas dos palabras. La única pregunta es qué
+            encuentran.</p>
+        </div>
+      </li>
+      <li class="arg">
+        <p class="arg__n">02</p>
+        <div>
+          <h3>Sin página, no hay nada que encontrar</h3>
+          <p>Una ficha de Google es un punto en un mapa. Una página es contenido: es
+            lo que permite que alguien llegue buscando «mi perro no come» y termine
+            en la clínica que lo puede atender.</p>
+        </div>
+      </li>
+      <li class="arg">
+        <p class="arg__n">03</p>
+        <div>
+          <h3>Lo que sirve es responder preguntas</h3>
+          <p>La tabla de arriba no está ahí sólo para ayudar al dueño: está ahí
+            porque es exactamente lo que la gente busca escrito, y lo que hace que
+            una página aparezca. No hay truco: hay contenido útil.</p>
+        </div>
+      </li>
+    </ol>
+
+    <p class="nota-honesta"><b>Lo que no voy a prometer:</b> ninguna posición, ningún
+      puesto en Google, ningún plazo. Eso no lo controla nadie y quien lo promete
+      está vendiendo humo. Lo que sí se puede afirmar es lo evidente: hoy no hay
+      página, y sin página no hay ninguna posibilidad.</p>
+
+    <div class="ojo">
+      <p><b>Un detalle que conviene revisar.</b> Buscándolos aparecen dos fichas del
+        mismo lugar con el mismo teléfono. Si son dos, conviene unificarlas: dos
+        fichas se reparten las reseñas y ninguna de las dos termina de posicionarse.
+        <span class="falta">falta: confirmar si son dos fichas o una</span></p>
+    </div>
+  </div>
+</section>
+
+<!-- ========= EL CIERRE — T1 ========= -->
+<!-- ========= LA CITA A SANGRE ========= -->
+<section class="cita" aria-labelledby="t-cita">
+  <div class="cita__foto" aria-hidden="true">
+    <img src="imagenes/cita-01.jpg" width="2200" height="1467"
+         loading="lazy" decoding="async" alt="">
+  </div>
+  <blockquote class="cita__texto">
+    <p id="t-cita">Se llaman igual que la ciudad<br>
+      <span class="cita__eco">Y el que busca «veterinaria Temuco» no los encuentra</span></p>
+  </blockquote>
+</section>
+
+
+
+<!-- ========= TAJO — FRANJA A SANGRE ========= -->
+<div class="tajo" aria-hidden="true">
+  <img src="imagenes/banda-01.jpg" width="1100" height="733"
+       loading="lazy" decoding="async" alt="">
+</div>
+<section class="cierre" id="llamar" aria-labelledby="t-cierre">
+  <p class="cierre__rot">Ante la duda, preguntar es gratis</p>
+  <h2 id="t-cierre" class="cierre__tel">
+    <a href="tel:+56452240505">(45) 224 0505</a>
+  </h2>
+  <p class="cierre__pie">Es el número publicado en su ficha de Google.</p>
+</section>
+
+<!-- ========= LA TIRA ========= -->
+<section class="tira" aria-label="Tres imágenes del oficio">
+  <figure class="tira__pieza">
+    <img src="imagenes/tira-01.jpg" width="1100" height="733" loading="lazy" decoding="async" alt="Vía puesta en la pata de un perro durante la atención.">
+  </figure>
+  <figure class="tira__pieza">
+    <img src="imagenes/tirab-01.jpg" width="1100" height="733" loading="lazy" decoding="async" alt="Gatito siendo atendido sobre la camilla de consulta.">
+  </figure>
+  <figure class="tira__pieza">
+    <img src="imagenes/tirac-01.jpg" width="1100" height="734" loading="lazy" decoding="async" alt="Dos perros jugando en el pasto.">
+  </figure>
+</section>
+
+</main>
+
+
+
+<!-- ========= MOSAICO ========= -->
+<section class="mos" aria-labelledby="t-mos">
+  <h2 id="t-mos" class="mos__titulo">La misma serie, más de cerca</h2>
+  <p class="mos__nota">Estas seis ya aparecen más arriba en la página. Vuelven acá en otro tamaño porque una sola pasada de imágenes deja el scroll vacío, y porque de cerca se ven cosas que en grande se pierden. La procedencia de cada una está en imagenes/FUENTES.txt.</p>
+  <div class="mos__grilla">
+    <figure class="mos__p">
+      <img src="imagenes/mos-01.jpg" width="780" height="520"
+           loading="lazy" decoding="async" alt="">
+    </figure>
+    <figure class="mos__p">
+      <img src="imagenes/mos-02.jpg" width="780" height="520"
+           loading="lazy" decoding="async" alt="">
+    </figure>
+    <figure class="mos__p">
+      <img src="imagenes/mos-03.jpg" width="780" height="520"
+           loading="lazy" decoding="async" alt="">
+    </figure>
+    <figure class="mos__p">
+      <img src="imagenes/mos-04.jpg" width="780" height="520"
+           loading="lazy" decoding="async" alt="">
+    </figure>
+    <figure class="mos__p">
+      <img src="imagenes/mos-05.jpg" width="780" height="520"
+           loading="lazy" decoding="async" alt="">
+    </figure>
+    <figure class="mos__p">
+      <img src="imagenes/mos-06.jpg" width="780" height="520"
+           loading="lazy" decoding="async" alt="">
+    </figure>
+  </div>
+</section>
+<section class="dueno" aria-labelledby="t-dueno">
+  <h2 id="t-dueno">Para la clínica</h2>
+  <div class="dueno__cols">
+    <div>
+      <h3>Lo que está verificado</h3>
+      <p>El 4,6 con 177 reseñas de su ficha de Google y el teléfono (45) 224 0505.
+        No hay página propia.</p>
+    </div>
+    <div>
+      <h3>Cómo está hecha la tabla</h3>
+      <p>Sin colores de semáforo a propósito. La urgencia se distingue por el peso
+        de la letra, no por rojo-amarillo-verde: un color en salud se lee como
+        diagnóstico, y esta tabla no diagnostica nada.</p>
+    </div>
+    <div>
+      <h3>Lo que falta</h3>
+      <p>Revisar y firmar la tabla, el horario, la dirección y si hay atención de
+        urgencia. Y unificar las fichas, si son dos.</p>
+    </div>
+  </div>
+  <p class="dueno__cierre">
+    <a class="flecha" href="https://wa.me/56968650001" rel="noopener">Escribirme por WhatsApp <span aria-hidden="true">→</span></a>
+    <a class="flecha" href="../../" rel="noopener">Ver otros trabajos <span aria-hidden="true">→</span></a>
+  </p>
+</section>
+
+<footer class="pie">
+  <p><b>Esta página no entrega orientación veterinaria ni sirve para diagnosticar.</b>
+    La tabla es una referencia general de cuándo consultar, no de qué tiene el
+    animal, no cubre todos los casos y no reemplaza la evaluación de un profesional.
+    No se nombran enfermedades, medicamentos ni cantidades.
+    <b>Ante cualquier duda, llame.</b></p>
+  <p class="pie__demo">Sitio de demostración preparado por CristalWeb. El negocio no
+    lo ha encargado ni ha revisado su contenido.</p>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>

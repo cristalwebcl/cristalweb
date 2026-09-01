@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="es-CL" class="no-js">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Clínica Veterinaria Küyen — Loncoche</title>
+<meta name="description" content="Veterinaria en Loncoche. Qué se resuelve acá mismo y qué se deriva a Temuco, dicho por escrito y sin rodeos.">
+
+<!-- Política de seguridad de contenido: el navegador sólo puede cargar
+     archivos de este mismo sitio. Sin CDN, sin librerías, sin rastreadores.
+     Ver skills/web-blindada/references/csp-en-pages.md -->
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self'; img-src 'self' data:; font-src 'self'; connect-src 'self'; media-src 'self'; form-action 'self'; base-uri 'none'; frame-src 'none'; object-src 'none'">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+
+<!-- Rescate de la clase .js (regla 2 de la casa). En archivo, sin defer:
+     inline lo bloquearía la CSP. -->
+<script src="js/rescate.js"></script>
+
+<!-- Fuentes propias: cero peticiones a terceros. -->
+<link rel="preload" href="assets/fuentes/marcellus-400-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="assets/fuentes.css">
+<link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+
+<div class="propuesta">
+  <p class="propuesta__que">Propuesta de sitio web — preparada para <b>Clínica Veterinaria Küyen</b> por CristalWeb</p>
+  <p class="propuesta__gancho">Es la veterinaria del pueblo y hoy el vecino no sabe ni qué horario tiene: termina manejando a Temuco por cosas que se resuelven a tres cuadras. Esta página contesta una sola pregunta —qué se resuelve acá y qué no— y ésa es toda su gracia.</p>
+</div>
+
+<header class="cab" id="cab">
+  <a class="cab__marca" href="#portada">
+    <span class="farol" aria-hidden="true"><i class="farol__luz"></i></span>
+    <span class="cab__nombre">Küyen</span>
+  </a>
+  <nav class="cab__nav" aria-label="Secciones">
+    <a href="#alcance">Qué se resuelve acá</a>
+    <a href="#derivar">Si hay que derivar</a>
+  </nav>
+  <a class="cab__tel" href="tel:+56955143213">
+    <span class="cab__tel-rot">Loncoche</span>
+    <span class="cab__tel-num">9 5514 3213</span>
+  </a>
+</header>
+
+<main>
+
+<!-- ========= PORTADA ========= -->
+<section class="portada portada--foto" id="portada" aria-labelledby="t-portada">
+  <!-- FONDO DE PORTADA: 2560 px, nitido. Se disuelve hacia el titular
+       con un gradiente lateral, no con desenfoque. -->
+  <div class="portada__foto" aria-hidden="true">
+    <img src="imagenes/port-01.jpg" width="2560" height="1707"
+         decoding="async" fetchpriority="high" alt="">
+  </div>
+
+  <!-- Los techos del pueblo y la luz que los recorre. Adorno puro. -->
+  <div class="pueblo" aria-hidden="true">
+    <span class="pueblo__techos"></span>
+    <span class="pueblo__luz"></span>
+  </div>
+
+  <div class="portada__texto">
+    <p class="sitio">Veterinaria · Loncoche</p>
+    <h1 id="t-portada">¿O tengo que ir<br>a Temuco igual?</h1>
+    <p class="bajada">Es la pregunta que se hace el vecino antes de llamar, y la que
+      decide si sale de la casa o si toma la carretera. Una veterinaria de pueblo que
+      contesta eso por escrito —lo que hace acá y lo que no— gana más confianza que una
+      que promete de todo.</p>
+    <dl class="specs">
+      <div class="spec"><dt>nota en Google</dt><dd>4,6</dd></div>
+      <div class="spec"><dt>reseñas</dt><dd>46</dd></div>
+      <div class="spec"><dt>teléfono</dt><dd class="dd--tel"><a href="tel:+56955143213">9 5514 3213</a></dd></div>
+    </dl>
+  </div>
+</section>
+
+<!-- ========= LA PIEZA FIRMA — EL COMPARADOR ACÁ / SE DERIVA ========= -->
+<section class="alcance con-telon" id="alcance" aria-labelledby="t-alcance">
+  <div class="telon" aria-hidden="true">
+    <img src="imagenes/telon-01.jpg" width="1200" height="800" decoding="async" alt="">
+  </div>
+
+  <!-- AURA DE COLOR: la foto de rubro reventada a desenfoque. No se lee
+       como imagen: aporta color y luz detras de una seccion que si no
+       seria fondo plano. Aca el desenfoque SI es el efecto, no un parche,
+       y por eso el archivo va chico: a 64 px de blur, mas resolucion no
+       cambia nada. Sin loading=lazy porque el elemento va en absoluto con
+       z-index negativo y el navegador nunca lo considera visible. -->
+  <div class="aura" aria-hidden="true">
+    <img src="imagenes/aura-01.jpg" width="900" height="600" decoding="async" alt="">
+  </div>
+
+  <div class="alcance__cabecera">
+    <p class="antetitulo">El alcance, dicho de frente</p>
+    <h2 id="t-alcance">Lo que se resuelve en el pueblo</h2>
+    <p class="entrada">Ninguna clínica chica hace de todo, y decirlo no resta: ordena. El
+      dueño que sabe de antemano qué se hace acá deja de perder una mañana averiguándolo,
+      y el que necesita otra cosa llega derecho donde corresponde.</p>
+    <p class="marca-ejemplo" data-ejemplo="ESTRUCTURA DE EJEMPLO — las dos listas las llena y las firma la clínica"></p>
+  </div>
+
+  <!-- Las dos columnas del comparador. La derecha es de OTRO: va más
+       tenue a propósito. -->
+  <div class="comp">
+    <div class="col col--aca">
+      <p class="col__rot">En Loncoche</p>
+      <p class="col__tit">Acá</p>
+      <p class="col__sub">Sin salir del pueblo</p>
+      <ul class="lista">
+        <li>La consulta de siempre: el animal que come mal, que cojea, que se rasca.</li>
+        <li>Vacunas y desparasitación, con su calendario.</li>
+        <li>Las urgencias menores — una herida, una otitis, algo que se comió.</li>
+        <li>Controles, curaciones y seguimiento de un tratamiento ya empezado.</li>
+        <li>Lo de peluquería o baño, si es que lo hacen.</li>
+      </ul>
+      <p class="falta">falta: la lista real de esta clínica — ésta es la de una
+        veterinaria de pueblo cualquiera, no la de ustedes</p>
+    </div>
+
+    <div class="col col--alla">
+      <p class="col__rot">A 90 kilómetros</p>
+      <p class="col__tit">Se deriva</p>
+      <p class="col__sub">Lo que necesita otra pieza o otro equipo</p>
+      <ul class="lista">
+        <li>Cirugía mayor, la que pide pabellón y anestesista.</li>
+        <li>Imagenología: radiografía, ecografía, scanner.</li>
+        <li>Especialidades — traumatología, oftalmología, oncología.</li>
+        <li>Hospitalización de varios días con monitoreo.</li>
+      </ul>
+      <p class="falta">falta: qué deriva esta clínica y a dónde</p>
+    </div>
+  </div>
+
+  <p class="firma">Esta sección es la más incómoda de escribir y la que más vende. Una vet
+    que publica lo que NO hace está diciendo, sin decirlo, que lo que sí hace lo hace en
+    serio.</p>
+</section>
+
+<!-- ========= LA DERIVACIÓN ACOMPAÑADA ========= -->
+<!-- ========= MEDIA PANTALLA ========= -->
+<section class="mitades" aria-labelledby="t-mitades">
+  <div class="mitades__foto">
+    <img src="imagenes/media-01.jpg" width="2200" height="1467"
+         loading="lazy" decoding="async" alt="">
+  </div>
+  <div class="mitades__texto">
+    <p class="mitades__ante">Lo que decide el vecino antes de llamar</p>
+    <h2 id="t-mitades">Si sale de la casa o toma la carretera</h2>
+    <p>Entre Loncoche y Temuco hay una hora de camino, y esa hora se decide antes de marcar el teléfono. Una veterinaria de pueblo que dice por escrito qué resuelve acá y qué deriva gana más confianza que una que promete de todo: nadie se enoja porque lo manden a Temuco, se enojan cuando lo descubren después de manejar.</p>
+  </div>
+</section>
+
+<section class="derivar" id="derivar" aria-labelledby="t-derivar">
+  <div class="derivar__cabecera">
+    <p class="antetitulo antetitulo--claro">Cuando toca ir a Temuco</p>
+    <h2 id="t-derivar">La derivación acompañada</h2>
+    <p class="entrada">Derivar mal es entregar un papel y decir «vaya para allá». Derivar
+      bien es que el dueño llegue a Temuco con todo resuelto menos manejar. Es la
+      diferencia entre perder a un cliente y ganarlo para siempre.</p>
+    <p class="marca-ejemplo" data-ejemplo="Descripción general — cómo lo hacen ustedes está por confirmar"></p>
+  </div>
+
+  <ol class="pasos">
+    <li class="p">
+      <p class="p__rot">Antes de que salga</p>
+      <h3>El papel completo</h3>
+      <p>La ficha de lo que se hizo acá: qué se encontró, qué se le puso, qué exámenes
+        tiene. Sin eso, en Temuco parten de cero y el dueño paga dos veces la misma
+        consulta.
+        <span class="falta">falta: si entregan la derivación por escrito o por correo</span></p>
+    </li>
+    <li class="p">
+      <p class="p__rot">La llamada</p>
+      <h3>Avisar que va en camino</h3>
+      <p>Un teléfono antes de que el auto salga de Loncoche cambia la llegada: el otro
+        equipo sabe qué viene y por qué.
+        <span class="falta">falta: con qué clínicas de Temuco trabajan</span></p>
+    </li>
+    <li class="p">
+      <p class="p__rot">El viaje</p>
+      <h3>Cómo se traslada</h3>
+      <p>Un animal que va derivado casi nunca va bien: hay que decir cómo acomodarlo, si
+        puede comer antes, qué mirar en el camino y cuándo detenerse.</p>
+    </li>
+    <li class="p">
+      <p class="p__rot">A la vuelta</p>
+      <h3>El control queda acá</h3>
+      <p>Lo que sigue después —curaciones, puntos, controles— vuelve al pueblo. Es la parte
+        que el dueño agradece: no tener que manejar noventa kilómetros para que le miren
+        una herida.
+        <span class="falta">falta: confirmar que reciben el post operatorio de vuelta</span></p>
+    </li>
+  </ol>
+
+  <p class="descargo">Nada de lo escrito acá es indicación veterinaria ni una lista oficial
+    de prestaciones: es la estructura de una página, con el contenido de ejemplo puesto
+    para que se vea cómo queda. La lista definitiva la escribe y la firma la clínica.</p>
+</section>
+
+<!-- ========= EL CIERRE — T1 ========= -->
+<!-- ========= LA CITA A SANGRE ========= -->
+<section class="cita" aria-labelledby="t-cita">
+  <div class="cita__foto" aria-hidden="true">
+    <img src="imagenes/cita-01.jpg" width="2200" height="1467"
+         loading="lazy" decoding="async" alt="">
+  </div>
+  <blockquote class="cita__texto">
+    <p id="t-cita">«¿O tengo que ir a Temuco igual?»<br>
+      <span class="cita__eco">La pregunta que se hace el vecino antes de llamar</span></p>
+  </blockquote>
+</section>
+
+
+
+<!-- ========= TAJO — FRANJA A SANGRE ========= -->
+<div class="tajo" aria-hidden="true">
+  <img src="imagenes/banda-01.jpg" width="1100" height="733"
+       loading="lazy" decoding="async" alt="">
+</div>
+<section class="cierre" id="llamar" aria-labelledby="t-cierre">
+  <p class="cierre__rot">Para consultar o pedir hora</p>
+  <h2 id="t-cierre" class="cierre__tel">
+    <a href="tel:+56955143213">9 5514 3213</a>
+  </h2>
+  <p class="cierre__pie">Es el número publicado en su ficha de Google.</p>
+</section>
+
+<!-- ========= LA TIRA ========= -->
+<section class="tira" aria-label="Tres imágenes del oficio">
+  <figure class="tira__pieza">
+    <img src="imagenes/tira-01.jpg" width="1100" height="733" loading="lazy" decoding="async" alt="Atención veterinaria a un perro pequeño sobre la mesa de consulta.">
+  </figure>
+  <figure class="tira__pieza">
+    <img src="imagenes/tira-02.jpg" width="1100" height="733" loading="lazy" decoding="async" alt="Vía puesta en la pata delantera de un perro, con guantes.">
+  </figure>
+  <figure class="tira__pieza">
+    <img src="imagenes/tirab-01.jpg" width="1100" height="733" loading="lazy" decoding="async" alt="Vacunación en la pata de un perro durante la consulta.">
+  </figure>
+</section>
+
+<!-- ========= LAS FOTOS ========= -->
+<section class="galeria" aria-labelledby="t-galeria">
+  <h2 id="t-galeria" class="galeria__titulo">El mesón</h2>
+  <p class="galeria__nota">Foto publicada por la propia clínica en su Facebook. Es lo que hay: el mostrador con los medios de pago a la vista y el producto en la vitrina.</p>
+  <div class="galeria__grilla">
+    <figure class="gal gal--abajo">
+      <img src="imagenes/meson-01.jpg" width="1400" height="1050" loading="lazy" decoding="async"
+           alt="Mostrador de la clínica con los medios de pago aceptados y productos veterinarios en la vitrina.">
+      <figcaption>El mostrador. Los medios de pago van a la vista.</figcaption>
+    </figure>
+  </div>
+  <p class="galeria__falta">falta: la fachada, el box y una foto del equipo. Hoy en internet sólo hay afiches de horario — ni una sola imagen del lugar por dentro.</p>
+</section>
+
+</main>
+
+
+
+<!-- ========= MOSAICO ========= -->
+<section class="mos" aria-labelledby="t-mos">
+  <h2 id="t-mos" class="mos__titulo">La misma serie, más de cerca</h2>
+  <p class="mos__nota">Estas seis ya aparecen más arriba en la página. Vuelven acá en otro tamaño porque una sola pasada de imágenes deja el scroll vacío, y porque de cerca se ven cosas que en grande se pierden. La procedencia de cada una está en imagenes/FUENTES.txt.</p>
+  <div class="mos__grilla">
+    <figure class="mos__p">
+      <img src="imagenes/mos-01.jpg" width="780" height="520"
+           loading="lazy" decoding="async" alt="">
+    </figure>
+    <figure class="mos__p">
+      <img src="imagenes/mos-02.jpg" width="780" height="520"
+           loading="lazy" decoding="async" alt="">
+    </figure>
+    <figure class="mos__p">
+      <img src="imagenes/mos-03.jpg" width="780" height="520"
+           loading="lazy" decoding="async" alt="">
+    </figure>
+    <figure class="mos__p">
+      <img src="imagenes/mos-04.jpg" width="780" height="520"
+           loading="lazy" decoding="async" alt="">
+    </figure>
+    <figure class="mos__p">
+      <img src="imagenes/mos-05.jpg" width="780" height="520"
+           loading="lazy" decoding="async" alt="">
+    </figure>
+    <figure class="mos__p">
+      <img src="imagenes/mos-06.jpg" width="780" height="520"
+           loading="lazy" decoding="async" alt="">
+    </figure>
+  </div>
+</section>
+<section class="dueno" aria-labelledby="t-dueno">
+  <h2 id="t-dueno">Para la clínica</h2>
+  <div class="dueno__cols">
+    <div>
+      <h3>Lo que está verificado</h3>
+      <p>El 4,6 con 46 reseñas de su ficha de Google y el teléfono 9 5514 3213. No tienen
+        sitio propio: sólo redes.</p>
+    </div>
+    <div>
+      <h3>Lo que es de ejemplo</h3>
+      <p>Las dos listas del comparador completas y los cuatro pasos de la derivación. Son
+        la estructura, no el contenido: describen una veterinaria de pueblo cualquiera.</p>
+    </div>
+    <div>
+      <h3>Lo que falta</h3>
+      <p>Las dos listas reales —lo que hacen y lo que derivan—, con qué clínicas de Temuco
+        trabajan, y si el post operatorio vuelve acá. Son seis respuestas y con ellas la
+        página queda lista para publicar.</p>
+    </div>
+  </div>
+  <p class="dueno__cierre">
+    <a class="flecha" href="https://wa.me/56968650001" rel="noopener">Escribirme por WhatsApp <span aria-hidden="true">→</span></a>
+    <a class="flecha" href="../../" rel="noopener">Ver otros trabajos <span aria-hidden="true">→</span></a>
+  </p>
+</section>
+
+<footer class="pie">
+  <p>Sitio de demostración preparado por CristalWeb. El negocio no lo ha encargado ni ha
+    revisado su contenido. Las listas de prestaciones son de ejemplo y están marcadas como
+    tales: no representan lo que esta clínica atiende ni deriva, no hay precios y nada de
+    lo escrito constituye indicación veterinaria.</p>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="es-CL" class="no-js">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>¡Qué Monada! — Pitrufquén</title>
+<meta name="description" content="Veterinaria y peluquería canina en Pitrufquén. Baño y control en el mismo viaje, y cómo se maneja el perro al que no le gusta el agua.">
+
+<!-- Política de seguridad de contenido: el navegador sólo puede cargar
+     archivos de este mismo sitio. Sin CDN, sin librerías, sin rastreadores.
+     Ver skills/web-blindada/references/csp-en-pages.md -->
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self'; img-src 'self' data:; font-src 'self'; connect-src 'self'; media-src 'self'; form-action 'self'; base-uri 'none'; frame-src 'none'; object-src 'none'">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+
+<!-- Rescate de la clase .js (regla 2 de la casa). En archivo, sin defer:
+     inline lo bloquearía la CSP. -->
+<script src="js/rescate.js"></script>
+
+<!-- Fuentes propias: cero peticiones a terceros. -->
+<link rel="preload" href="assets/fuentes/rammettoone-400-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="assets/fuentes.css">
+<link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+
+<div class="propuesta">
+  <p class="propuesta__que">Propuesta de sitio web — preparada para <b>¡Qué Monada!</b> por CristalWeb</p>
+  <p class="propuesta__gancho">Revisado el 31-08-2026: quemonada.cl está pagado y en línea, pero lo que se ve al entrar no es la veterinaria — es la página de fábrica del hosting, con el instructivo para el administrador («Inicie sesión en el panel de control», «Click Creador Web Pro», «Publish»). Cualquier cliente que busque el nombre llega a eso.</p>
+</div>
+
+<header class="cab" id="cab">
+  <a class="cab__marca" href="#portada">
+    <span class="pompa-doble" aria-hidden="true"><i class="pd pd--g"></i><i class="pd pd--c"></i></span>
+    <span class="cab__nombre">¡Qué Monada!</span>
+  </a>
+  <nav class="cab__nav" aria-label="Secciones">
+    <a href="#combo">El mismo viaje</a>
+    <a href="#agua">El baño sin drama</a>
+  </nav>
+  <a class="cab__tel" href="tel:+56982303142">
+    <span class="cab__tel-rot">Pitrufquén</span>
+    <span class="cab__tel-num">9 8230 3142</span>
+  </a>
+</header>
+
+<main>
+
+<!-- ========= PORTADA ========= -->
+<section class="portada portada--foto" id="portada" aria-labelledby="t-portada">
+  <!-- FONDO DE PORTADA: 2560 px, nitido. Se disuelve hacia el titular
+       con un gradiente lateral, no con desenfoque. -->
+  <div class="portada__foto" aria-hidden="true">
+    <img src="imagenes/port-01.jpg" width="2560" height="1707"
+         decoding="async" fetchpriority="high" alt="">
+  </div>
+
+  <div class="pompas" aria-hidden="true">
+    <span class="pompa pompa--1"></span>
+    <span class="pompa pompa--2"></span>
+    <span class="pompa pompa--3"></span>
+    <span class="revienta"></span>
+  </div>
+
+  <div class="portada__texto">
+    <p class="sitio">Veterinaria y peluquería · Pitrufquén</p>
+    <h1 id="t-portada">Un viaje,<br>dos cosas<br>resueltas</h1>
+    <p class="bajada">En un pueblo, subir al perro al auto y bajarlo en el centro es media
+      mañana. La gracia de tener veterinaria y peluquería bajo el mismo techo es
+      exactamente esa: se deja para el baño y, en la misma pasada, queda hecho el control.
+      Nadie lo tiene escrito, y es lo primero que un dueño quiere saber.</p>
+    <dl class="specs">
+      <div class="spec"><dt>nota en Google</dt><dd>4,6</dd></div>
+      <div class="spec"><dt>reseñas</dt><dd>40</dd></div>
+      <div class="spec"><dt>teléfono</dt><dd class="dd--tel"><a href="tel:+56982303142">9 8230 3142</a></dd></div>
+    </dl>
+  </div>
+</section>
+
+<!-- ========= LA PIEZA FIRMA — SPLIT STICKY (estructura G) ========= -->
+<section class="combo con-telon" id="combo" aria-labelledby="t-combo">
+  <div class="telon" aria-hidden="true">
+    <img src="imagenes/telon-01.jpg" width="1200" height="800" decoding="async" alt="">
+  </div>
+
+  <!-- AURA DE COLOR: la foto de rubro reventada a desenfoque. No se lee
+       como imagen: aporta color y luz detras de una seccion que si no
+       seria fondo plano. Aca el desenfoque SI es el efecto, no un parche,
+       y por eso el archivo va chico: a 64 px de blur, mas resolucion no
+       cambia nada. Sin loading=lazy porque el elemento va en absoluto con
+       z-index negativo y el navegador nunca lo considera visible. -->
+  <div class="aura" aria-hidden="true">
+    <img src="imagenes/aura-01.jpg" width="900" height="506" decoding="async" alt="">
+  </div>
+
+
+  <!-- El lado fijo: LA TINA. Dibujada en CSS, cero bytes de imagen. -->
+  <div class="combo__fijo">
+    <div class="tina" aria-hidden="true">
+      <span class="tina__espuma">
+        <i></i><i></i><i></i><i></i><i></i>
+      </span>
+      <span class="tina__cuerpo"></span>
+      <span class="tina__pata tina__pata--i"></span>
+      <span class="tina__pata tina__pata--d"></span>
+    </div>
+    <p class="tina__pie">La tina no se mueve.<br>Lo que cambia es lo que pasa
+      alrededor de ella.</p>
+  </div>
+
+  <div class="combo__fluye">
+    <p class="antetitulo">Baño y control</p>
+    <h2 id="t-combo">El mismo viaje</h2>
+    <p class="entrada">Ésta es la ventaja real de la casa y no está escrita en ninguna
+      parte. Lo de abajo es cómo funciona un combo así en general; lo que hacen ustedes
+      exactamente, lo confirman y se escribe con su nombre.</p>
+    <p class="marca-ejemplo" data-ejemplo="Cómo funciona en general — el detalle lo confirma la clínica"></p>
+
+    <ol class="viaje">
+      <li class="v">
+        <p class="v__rot">Al dejar</p>
+        <h3>Se entrega para el baño</h3>
+        <p>El animal queda en peluquería con la hora acordada. Es el momento en que el
+          dueño dice si hay algo que le preocupa —una picazón, una uña, una oreja— y ese
+          aviso es lo que hace posible todo lo demás.</p>
+      </li>
+      <li class="v">
+        <p class="v__rot">Mientras está adentro</p>
+        <h3>El control queda hecho</h3>
+        <p>Con el animal ya en la casa y mojado hasta la piel, es cuando mejor se ve lo que
+          en seco no se nota: la piel, las orejas, las uñas, un bulto. Si hay veterinario en
+          el mismo local, revisar no cuesta un segundo viaje.
+          <span class="falta">falta: confirmar si ustedes coordinan baño y control así</span></p>
+      </li>
+      <li class="v">
+        <p class="v__rot">Al retirar</p>
+        <h3>Una sola conversación</h3>
+        <p>El dueño escucha una vez lo del baño y lo del control juntos, en vez de dos
+          veces en dos lugares distintos. Si hay algo que tratar, se agenda ahí mismo.
+          <span class="falta">falta: si entregan algo escrito al retirar</span></p>
+      </li>
+      <li class="v">
+        <p class="v__rot">Lo que hay que decir de frente</p>
+        <h3>Lo que NO es</h3>
+        <p>No es una consulta veterinaria completa disfrazada de baño, y conviene decirlo
+          así. Es una revisión de lo que se ve. Si aparece algo, se conversa y se agenda
+          como corresponde: nadie diagnostica a un perro entre el shampoo y el secador.</p>
+      </li>
+    </ol>
+
+    <p class="firma">La sección existe porque en Pitrufquén el viaje cuenta. Un dueño que
+      vive a diez kilómetros no está comparando precios: está calculando cuántas veces
+      tiene que sacar el auto.</p>
+  </div>
+</section>
+
+<!-- ========= EL BAÑO SIN DRAMA ========= -->
+<!-- ========= MEDIA PANTALLA ========= -->
+<section class="mitades" aria-labelledby="t-mitades">
+  <div class="mitades__foto">
+    <img src="imagenes/media-01.jpg" width="2200" height="1468"
+         loading="lazy" decoding="async" alt="">
+  </div>
+  <div class="mitades__texto">
+    <p class="mitades__ante">La mitad que nadie explica</p>
+    <h2 id="t-mitades">El baño se ve. La tusa se nota un mes.</h2>
+    <p>Un baño mal secado se paga con hongos, y una tusa mal hecha se paga con un mes de perro raro. Por eso el orden importa: primero se revisa el pelaje, después se decide si se peina o se corta, y recién ahí se moja. Contarlo antes evita la conversación incómoda de después.</p>
+  </div>
+</section>
+
+<section class="agua" id="agua" aria-labelledby="t-agua">
+  <div class="agua__cabecera">
+    <p class="antetitulo antetitulo--claro">El perro al que no le gusta el agua</p>
+    <h2 id="t-agua">El baño sin drama</h2>
+    <p class="entrada">Casi todas las casas tienen uno: el que ve la manguera y se
+      esconde. No hay truco mágico y nadie debería prometerlo — hay oficio, que es otra
+      cosa, y se puede explicar.</p>
+    <p class="marca-ejemplo marca-ejemplo--claro" data-ejemplo="Manejo general del oficio — sin promesas, pendiente de firma"></p>
+  </div>
+
+  <div class="cartas">
+    <article class="carta">
+      <h3>El agua tibia y de a poco</h3>
+      <p>Se moja desde las patas hacia arriba y se deja la cabeza para el final. El chorro
+        directo en la cara es lo que convierte un baño incómodo en un baño peleado, y esa
+        pelea el perro se la acuerda para la próxima vez.</p>
+    </article>
+    <article class="carta">
+      <h3>El piso que no resbala</h3>
+      <p>Buena parte del miedo no es al agua: es a patinar. Una alfombra de goma en la tina
+        cambia el comportamiento de un perro nervioso más que cualquier otra cosa.</p>
+    </article>
+    <article class="carta">
+      <h3>El ruido del secador</h3>
+      <p>Para muchos es peor que el agua. Se puede secar con toalla y aire tibio a
+        distancia, y tarda más — pero tarda menos que forzar a un animal que ya entró en
+        pánico.</p>
+    </article>
+    <article class="carta">
+      <h3>Cuándo se para</h3>
+      <p>Si el animal pasa de incómodo a asustado de verdad, se para. Se termina lo mínimo,
+        se seca y se conversa con el dueño qué hacer para la próxima. Un baño no vale un
+        animal traumatizado.
+        <span class="falta">falta: cómo lo manejan ustedes y qué le avisan al dueño</span></p>
+    </article>
+  </div>
+
+  <p class="descargo">Esto es manejo de peluquería, no indicación veterinaria: no promete
+    que ningún perro deje de tenerle miedo al agua y no reemplaza ninguna consulta. Lo
+    escribió quien hizo el sitio y lo revisa y lo firma la clínica antes de publicarse.</p>
+</section>
+
+<!-- ========= EL CIERRE — T1 ========= -->
+<!-- ========= LA CITA A SANGRE ========= -->
+<section class="cita" aria-labelledby="t-cita">
+  <div class="cita__foto" aria-hidden="true">
+    <img src="imagenes/cita-01.jpg" width="2200" height="1468"
+         loading="lazy" decoding="async" alt="">
+  </div>
+  <blockquote class="cita__texto">
+    <p id="t-cita">Un viaje, dos cosas resueltas<br>
+      <span class="cita__eco">Veterinaria y peluquería bajo el mismo techo</span></p>
+  </blockquote>
+</section>
+
+
+
+<!-- ========= TAJO — FRANJA A SANGRE ========= -->
+<div class="tajo" aria-hidden="true">
+  <img src="imagenes/banda-01.jpg" width="1100" height="618"
+       loading="lazy" decoding="async" alt="">
+</div>
+<section class="cierre" id="llamar" aria-labelledby="t-cierre">
+  <p class="cierre__rot">Para pedir hora</p>
+  <h2 id="t-cierre" class="cierre__tel">
+    <a href="tel:+56982303142">9 8230 3142</a>
+  </h2>
+  <p class="cierre__pie">Es el número publicado en su ficha de Google.</p>
+</section>
+
+<!-- ========= LA TIRA ========= -->
+<section class="tira" aria-label="Tres imágenes del oficio">
+  <figure class="tira__pieza">
+    <img src="imagenes/tira-01.jpg" width="1100" height="618" loading="lazy" decoding="async" alt="Tijera despejando el pelo de las patas de un perro sobre la mesa.">
+  </figure>
+  <figure class="tira__pieza">
+    <img src="imagenes/tira-02.jpg" width="1100" height="618" loading="lazy" decoding="async" alt="Corte de uñas a un perro, sujetando la pata con las dos manos.">
+  </figure>
+  <figure class="tira__pieza">
+    <img src="imagenes/tirab-01.jpg" width="1100" height="733" loading="lazy" decoding="async" alt="Perro pequeño sobre la mesa de consulta veterinaria.">
+  </figure>
+</section>
+
+<!-- ========= LAS FOTOS ========= -->
+<section class="galeria" aria-labelledby="t-galeria">
+  <h2 id="t-galeria" class="galeria__titulo">Los que salieron de la peluquería</h2>
+  <p class="galeria__nota">Fotos publicadas por la propia veterinaria: llevan su logo estampado en la esquina. No son de banco de imágenes — son perros que atendieron ellos.</p>
+  <div class="galeria__grilla">
+    <figure class="gal gal--izq">
+      <img src="imagenes/monada-01.jpg" width="649" height="432" loading="lazy" decoding="async"
+           alt="Dos poodles blancos recién tusados, con pañoleta puesta, mirando a la cámara.">
+      <figcaption>Dos del mismo día. La tusa y la pañoleta van incluidas.</figcaption>
+    </figure>
+    <figure class="gal gal--der">
+      <img src="imagenes/monada-02.jpg" width="648" height="486" loading="lazy" decoding="async"
+           alt="Fachada del local, revestida en zinc gris, con el letrero del logo sobre la puerta.">
+      <figcaption>Así se ve desde la calle: el letrero con el logo sobre la puerta.</figcaption>
+    </figure>
+    <figure class="gal gal--abajo">
+      <img src="imagenes/monada-03.jpg" width="649" height="432" loading="lazy" decoding="async"
+           alt="Poodle blanco con pañoleta azul de lunares, recién peluqueado.">
+      <figcaption>La misma de la portada. Pañoleta azul de lunares.</figcaption>
+    </figure>
+  </div>
+  <p class="galeria__falta">falta: el antes y el después del mismo perro, y una del box de atención. Con eso la página deja de mostrar el resultado y pasa a mostrar el trabajo.</p>
+</section>
+
+</main>
+
+
+
+<!-- ========= MOSAICO ========= -->
+<section class="mos" aria-labelledby="t-mos">
+  <h2 id="t-mos" class="mos__titulo">La misma serie, más de cerca</h2>
+  <p class="mos__nota">Estas seis ya aparecen más arriba en la página. Vuelven acá en otro tamaño porque una sola pasada de imágenes deja el scroll vacío, y porque de cerca se ven cosas que en grande se pierden. La procedencia de cada una está en imagenes/FUENTES.txt.</p>
+  <div class="mos__grilla">
+    <figure class="mos__p">
+      <img src="imagenes/mos-01.jpg" width="780" height="520"
+           loading="lazy" decoding="async" alt="">
+    </figure>
+    <figure class="mos__p">
+      <img src="imagenes/mos-02.jpg" width="780" height="520"
+           loading="lazy" decoding="async" alt="">
+    </figure>
+    <figure class="mos__p">
+      <img src="imagenes/mos-03.jpg" width="780" height="438"
+           loading="lazy" decoding="async" alt="">
+    </figure>
+    <figure class="mos__p">
+      <img src="imagenes/mos-04.jpg" width="780" height="438"
+           loading="lazy" decoding="async" alt="">
+    </figure>
+    <figure class="mos__p">
+      <img src="imagenes/mos-05.jpg" width="780" height="520"
+           loading="lazy" decoding="async" alt="">
+    </figure>
+    <figure class="mos__p">
+      <img src="imagenes/mos-06.jpg" width="780" height="520"
+           loading="lazy" decoding="async" alt="">
+    </figure>
+  </div>
+</section>
+<section class="dueno" aria-labelledby="t-dueno">
+  <h2 id="t-dueno">Para ¡Qué Monada!</h2>
+  <div class="dueno__cols">
+    <div>
+      <h3>Lo que está verificado</h3>
+      <p>El 4,6 con 40 reseñas de su ficha de Google, el teléfono 9 8230 3142, y que
+        quemonada.cl está pagado pero muestra la página de fábrica del hosting. Eso último
+        se revisó el 31-08-2026 y se puede comprobar abriendo el dominio.</p>
+    </div>
+    <div>
+      <h3>Lo que es general</h3>
+      <p>Los cuatro pasos del viaje y las cuatro cartas del baño. Describen cómo funciona
+        el oficio, no cómo funcionan ustedes: por eso van marcados y sin firma.</p>
+    </div>
+    <div>
+      <h3>Lo que falta</h3>
+      <p>Si de verdad coordinan baño y control en la misma visita, si entregan algo escrito
+        al retirar, y cómo manejan al perro que se asusta. Con esas tres respuestas esta
+        página deja de describir el rubro y pasa a describirlos a ustedes.</p>
+    </div>
+  </div>
+  <p class="dueno__cierre">
+    <a class="flecha" href="https://wa.me/56968650001" rel="noopener">Escribirme por WhatsApp <span aria-hidden="true">→</span></a>
+    <a class="flecha" href="../../" rel="noopener">Ver otros trabajos <span aria-hidden="true">→</span></a>
+  </p>
+</section>
+
+<footer class="pie">
+  <p>Sitio de demostración preparado por CristalWeb. El negocio no lo ha encargado ni ha
+    revisado su contenido. No hay precios, no hay horarios y nada de lo escrito constituye
+    indicación veterinaria: los procedimientos descritos son generales del oficio y están
+    marcados como tales, a la espera de la firma de la clínica.</p>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="es-CL" class="no-js">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Clínica Veterinaria Pehuen — Osorno</title>
+<meta name="description" content="Hospital veterinario en Osorno. Cómo se atiende a un perro grande: la mesa, la dosis, el tiempo y las manos que hacen falta.">
+
+<!-- Política de seguridad de contenido: el navegador sólo puede cargar
+     archivos de este mismo sitio. Sin CDN, sin librerías, sin rastreadores.
+     Ver skills/web-blindada/references/csp-en-pages.md -->
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self'; img-src 'self' data:; font-src 'self'; connect-src 'self'; media-src 'self'; form-action 'self'; base-uri 'none'; frame-src 'none'; object-src 'none'">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+
+<!-- Rescate de la clase .js (regla 2 de la casa). En archivo, sin defer:
+     inline lo bloquearía la CSP. -->
+<script src="js/rescate.js"></script>
+
+<!-- Fuentes propias: cero peticiones a terceros. El preload va SOLO
+     para la display, que es la que sostiene la palabra GRANDE. -->
+<link rel="preload" href="assets/fuentes/passionone-700-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="assets/fuentes.css">
+<link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+
+<div class="propuesta">
+  <p class="propuesta__que">Propuesta de sitio web — preparada para <b>Clínica Veterinaria Pehuen</b> por CristalWeb</p>
+  <p class="propuesta__gancho">299 reseñas: el segundo volumen más alto de esta tanda, y ninguna página propia donde apoyarlo. Esta demo toma la pregunta que en Osorno nadie contesta por escrito: si pueden con el perro grande.</p>
+</div>
+
+<header class="cab" id="cab">
+  <a class="cab__marca" href="#portada">
+    <span class="correas" aria-hidden="true"><i class="correa correa--gruesa"></i><i class="correa correa--fina"></i></span>
+    <span class="cab__nombre">Pehuen</span>
+  </a>
+  <nav class="cab__nav" aria-label="Secciones">
+    <a href="#peso">Peso pesado</a>
+    <a href="#dentro">Grande por dentro</a>
+  </nav>
+  <a class="cab__tel" href="tel:+56642236591">
+    <span class="cab__tel-rot">Osorno</span>
+    <span class="cab__tel-num">(64) 223 6591</span>
+  </a>
+</header>
+
+<main>
+
+<!-- ========= PORTADA ========= -->
+<section class="portada portada--foto" id="portada" aria-labelledby="t-portada">
+  <!-- FONDO DE PORTADA: 2560 px, nitido. Se disuelve hacia el titular
+       con un gradiente lateral, no con desenfoque. -->
+  <div class="portada__foto" aria-hidden="true">
+    <img src="imagenes/port-01.jpg" width="2560" height="1707"
+         decoding="async" fetchpriority="high" alt="">
+  </div>
+
+  <div class="sombras" aria-hidden="true">
+    <span class="sombra sombra--grande"></span>
+    <span class="sombra sombra--chica"></span>
+  </div>
+
+  <div class="portada__texto">
+    <p class="sitio">Hospital veterinario · Osorno</p>
+    <h1 id="t-portada">
+      <span class="h1__chico">¿Pueden con</span>
+      <span class="h1__grande">él</span>
+    </h1>
+    <p class="bajada">El dueño de un mastín de sesenta kilos hace siempre la misma
+      llamada, y no es por el precio: es para saber si la mesa lo aguanta, si van a
+      poder subirlo y cuántas personas se necesitan. Es una pregunta de logística, y
+      se contesta una sola vez, por escrito.</p>
+    <dl class="specs">
+      <div class="spec"><dt>reseñas en Google</dt><dd>299</dd></div>
+      <div class="spec"><dt>sitio propio</dt><dd class="dd--no">no tienen</dd></div>
+      <div class="spec"><dt>teléfono</dt><dd class="dd--tel"><a href="tel:+56642236591">(64) 223 6591</a></dd></div>
+    </dl>
+  </div>
+</section>
+
+<!-- ========= LA PIEZA FIRMA — EL COMPARADOR DESIGUAL ========= -->
+<section class="peso con-telon" id="peso" aria-labelledby="t-peso">
+  <div class="telon" aria-hidden="true">
+    <img src="imagenes/telon-01.jpg" width="1200" height="800" decoding="async" alt="">
+  </div>
+
+  <!-- AURA DE COLOR: la foto de rubro reventada a desenfoque. No se lee
+       como imagen: aporta color y luz detras de una seccion que si no
+       seria fondo plano. Aca el desenfoque SI es el efecto, no un parche,
+       y por eso el archivo va chico: a 64 px de blur, mas resolucion no
+       cambia nada. Sin loading=lazy porque el elemento va en absoluto con
+       z-index negativo y el navegador nunca lo considera visible. -->
+  <div class="aura" aria-hidden="true">
+    <img src="imagenes/aura-01.jpg" width="900" height="596" decoding="async" alt="">
+  </div>
+
+  <div class="peso__cabecera">
+    <p class="antetitulo">Lo que cambia cuando el paciente pesa</p>
+    <h2 id="t-peso">Peso pesado</h2>
+    <p class="entrada">Un perro de sesenta kilos no es un perro de seis con el volumen
+      subido: cambia cómo entra, cómo se sube, cuánto dura la consulta y cuántas manos
+      hacen falta. Nada de esto es secreto del oficio — es lo que cualquier hospital
+      veterinario resuelve todos los días y casi nadie escribe.</p>
+    <p class="marca-ejemplo" data-ejemplo="Descripción general del oficio — la clínica confirma cómo lo hace ella"></p>
+  </div>
+
+  <!-- Las dos columnas son desiguales a propósito: la de GRANDE ocupa
+       casi el doble. El layout hace el chiste en serio. -->
+  <div class="comp">
+    <div class="col col--grande">
+      <p class="col__rot">El paciente</p>
+      <p class="col__tam">Grande</p>
+      <p class="col__peso">sobre 30 kg</p>
+
+      <dl class="items">
+        <div class="item">
+          <dt>Cómo sube a la mesa</dt>
+          <dd>No se alza en brazos. O la mesa baja hasta el suelo y sube con él encima,
+            o se atiende en el piso sobre una colchoneta. Las dos son formas correctas;
+            lo que no corresponde es levantar a pulso a un animal que pesa como una
+            persona.
+            <span class="falta">falta: si la mesa de esta clínica es hidráulica</span></dd>
+        </div>
+        <div class="item">
+          <dt>Cuántas manos</dt>
+          <dd>Dos personas como mínimo para la sujeción, a veces tres. Una sostiene, otra
+            examina, y en un animal nervioso la tercera es la que evita el accidente.</dd>
+        </div>
+        <div class="item">
+          <dt>La dosis</dt>
+          <dd>Casi todo lo que se administra se calcula por kilo de peso, así que en un
+            perro grande la misma indicación significa diez veces más producto que en uno
+            chico. Por eso lo que se aplica a un mastín no cuesta lo mismo que lo que se
+            aplica a un poodle: no es la consulta, es el frasco.
+            <span class="falta">falta: cómo lo explican ellos en el mesón</span></dd>
+        </div>
+        <div class="item">
+          <dt>El tiempo</dt>
+          <dd>Más largo, y casi siempre por la parte que no es médica: acomodarlo, calmarlo
+            y volver a bajarlo. Pedir una hora con holgura evita atenderlo apurado.</dd>
+        </div>
+        <div class="item">
+          <dt>Cómo conviene llegar</dt>
+          <dd>Con correa corta y collar firme —no con arnés suelto—, y si el animal se
+            pone difícil con otros perros, avisando por teléfono antes de entrar a la sala
+            de espera.</dd>
+        </div>
+      </dl>
+    </div>
+
+    <div class="col col--chico">
+      <p class="col__rot">El paciente</p>
+      <p class="col__tam">Chico</p>
+      <p class="col__peso">hasta 10 kg</p>
+
+      <dl class="items items--chicas">
+        <div class="item">
+          <dt>Cómo sube</dt>
+          <dd>En brazos, en una maniobra.</dd>
+        </div>
+        <div class="item">
+          <dt>Cuántas manos</dt>
+          <dd>Una persona sujeta y otra atiende.</dd>
+        </div>
+        <div class="item">
+          <dt>La dosis</dt>
+          <dd>Por kilo, igual que el grande: la misma fórmula da un número mucho más
+            chico.</dd>
+        </div>
+        <div class="item">
+          <dt>El tiempo</dt>
+          <dd>El de la consulta y poco más.</dd>
+        </div>
+        <div class="item">
+          <dt>Cómo conviene llegar</dt>
+          <dd>En canil o en brazos, y sin bajarlo al suelo de la sala.</dd>
+        </div>
+      </dl>
+    </div>
+  </div>
+
+  <p class="firma">Ésta es la sección que ningún competidor de Osorno tiene escrita, y es
+    la que contesta la llamada antes de que la hagan. Las cinco filas son generales del
+    oficio: las firma quien atiende.</p>
+</section>
+
+<!-- ========= GRANDE POR DENTRO ========= -->
+<!-- ========= MEDIA PANTALLA ========= -->
+<section class="mitades" aria-labelledby="t-mitades">
+  <div class="mitades__foto">
+    <img src="imagenes/media-01.jpg" width="2200" height="1467"
+         loading="lazy" decoding="async" alt="">
+  </div>
+  <div class="mitades__texto">
+    <p class="mitades__ante">Antes de subirlo a la mesa</p>
+    <h2 id="t-mitades">Sesenta kilos no se levantan solos</h2>
+    <p>La logística de un perro grande empieza en la puerta: si entra en la sala, si la mesa lo aguanta, cuántas personas hacen falta para subirlo y si conviene sedarlo antes de moverlo. Son cuatro respuestas que se dan una vez y sirven para siempre — y hoy hay que ir a buscarlas por teléfono, animal en brazos.</p>
+  </div>
+</section>
+
+<section class="dentro" id="dentro" aria-labelledby="t-dentro">
+  <div class="dentro__cabecera">
+    <p class="antetitulo antetitulo--claro">Lo que trae el tamaño</p>
+    <h2 id="t-dentro">Grande por dentro</h2>
+    <p class="entrada">Las razas grandes cargan su propio peso toda la vida, y eso se nota
+      en dos lugares. Escrito con calma, sin asustar: la idea no es que el dueño llegue
+      alarmado, es que sepa qué mirar.</p>
+    <p class="marca-ejemplo marca-ejemplo--fuerte" data-ejemplo="INFORMACIÓN GENERAL — no reemplaza la consulta ni firma diagnóstico alguno"></p>
+  </div>
+
+  <div class="tarjetas">
+    <article class="tarjeta">
+      <p class="tarjeta__rot">Lo de todos los días</p>
+      <h3>Las articulaciones</h3>
+      <p>Caderas y codos sostienen mucho más kilo en un perro grande, y el desgaste
+        aparece antes. Las señales son de las lentas: le cuesta pararse después de estar
+        echado, se sienta raro, salta menos que antes, se queda atrás en el paseo.</p>
+      <p>Nada de eso es una emergencia: es motivo de consulta tranquila. El sobrepeso es
+        lo único que el dueño controla directamente, y es también lo que más pesa
+        —literal— sobre esas articulaciones.
+        <span class="falta">falta: si hacen control de peso o planes de manejo</span></p>
+    </article>
+
+    <article class="tarjeta tarjeta--urg">
+      <p class="tarjeta__rot tarjeta__rot--urg">Lo que no espera a mañana</p>
+      <h3>La torsión gástrica</h3>
+      <p>Es la razón por la que esta sección existe. Le pasa sobre todo a perros grandes
+        y de pecho hondo, y va rápido: el animal intenta vomitar y no sale nada, se le
+        infla el abdomen, camina inquieto sin poder echarse, respira agitado.</p>
+      <p class="tarjeta__accion">Con ese cuadro no se espera y no se prueba nada en la
+        casa: se llama y se va. Es de las poquísimas urgencias donde las horas cambian el
+        desenlace.</p>
+      <p><span class="falta">falta: confirmar si atienden urgencias fuera de horario y en
+        qué teléfono, para escribirlo aquí</span></p>
+    </article>
+  </div>
+
+  <p class="descargo">Esta página la escribió quien hizo el sitio, no un médico veterinario.
+    Lo de arriba es información general para saber cuándo consultar — no es diagnóstico, no
+    reemplaza una consulta y ninguna decisión sobre un animal debería tomarse leyendo una
+    web. Antes de publicarse, este texto lo revisa y lo firma la clínica.</p>
+</section>
+
+<!-- ========= EL CIERRE — T1 ========= -->
+<!-- ========= LA CITA A SANGRE ========= -->
+<section class="cita" aria-labelledby="t-cita">
+  <div class="cita__foto" aria-hidden="true">
+    <img src="imagenes/cita-01.jpg" width="2200" height="1650"
+         loading="lazy" decoding="async" alt="">
+  </div>
+  <blockquote class="cita__texto">
+    <p id="t-cita">«¿Pueden con él?»<br>
+      <span class="cita__eco">La pregunta que en Osorno nadie contesta por escrito</span></p>
+  </blockquote>
+</section>
+
+
+
+<!-- ========= TAJO — FRANJA A SANGRE ========= -->
+<div class="tajo" aria-hidden="true">
+  <img src="imagenes/banda-01.jpg" width="1100" height="729"
+       loading="lazy" decoding="async" alt="">
+</div>
+<section class="cierre" id="llamar" aria-labelledby="t-cierre">
+  <p class="cierre__rot">Para consultar o pedir hora</p>
+  <h2 id="t-cierre" class="cierre__tel">
+    <a href="tel:+56642236591">(64) 223 6591</a>
+  </h2>
+  <p class="cierre__pie">Es el número publicado en su ficha de Google.</p>
+</section>
+
+<!-- ========= LA TIRA ========= -->
+<section class="tira" aria-label="Tres imágenes del oficio">
+  <figure class="tira__pieza">
+    <img src="imagenes/tira-01.jpg" width="1100" height="729" loading="lazy" decoding="async" alt="Golden retriever adulto mirando a la cámara.">
+  </figure>
+  <figure class="tira__pieza">
+    <img src="imagenes/tira-02.jpg" width="1100" height="733" loading="lazy" decoding="async" alt="Perro grande de pelaje claro caminando sobre el pasto.">
+  </figure>
+  <figure class="tira__pieza">
+    <img src="imagenes/tira-03.jpg" width="1100" height="1650" loading="lazy" decoding="async" alt="Perro de raza grande sentado, de perfil, sobre fondo oscuro.">
+  </figure>
+</section>
+
+<!-- ========= LAS FOTOS ========= -->
+<section class="galeria" aria-labelledby="t-galeria">
+  <h2 id="t-galeria" class="galeria__titulo">Lo que ya publican</h2>
+  <p class="galeria__nota">Fotos de su ficha y de su Instagram. La del cartel anuncia una atención cardiológica con día y hora: eso es exactamente lo que esta página pone por escrito y hoy vive sólo en una historia que caduca.</p>
+  <div class="galeria__grilla">
+    <figure class="gal gal--abajo">
+      <img src="imagenes/clinica-02.jpg" width="640" height="640" loading="lazy" decoding="async"
+           alt="Perro pequeño junto al aviso de atención cardiológica con el día de la visita.">
+      <figcaption>El aviso del cardiólogo, publicado por ellos. Con día y hora.</figcaption>
+    </figure>
+  </div>
+  <p class="galeria__falta">falta: una del pabellón y otra de la sala de espera. Y la lista de especialistas que rotan, con sus días — es el dato que hace volver a la gente.</p>
+</section>
+
+</main>
+
+
+
+<!-- ========= MOSAICO ========= -->
+<section class="mos" aria-labelledby="t-mos">
+  <h2 id="t-mos" class="mos__titulo">La misma serie, más de cerca</h2>
+  <p class="mos__nota">Estas seis ya aparecen más arriba en la página. Vuelven acá en otro tamaño porque una sola pasada de imágenes deja el scroll vacío, y porque de cerca se ven cosas que en grande se pierden. La procedencia de cada una está en imagenes/FUENTES.txt.</p>
+  <div class="mos__grilla">
+    <figure class="mos__p">
+      <img src="imagenes/mos-01.jpg" width="780" height="520"
+           loading="lazy" decoding="async" alt="">
+    </figure>
+    <figure class="mos__p">
+      <img src="imagenes/mos-02.jpg" width="780" height="1170"
+           loading="lazy" decoding="async" alt="">
+    </figure>
+    <figure class="mos__p">
+      <img src="imagenes/mos-03.jpg" width="780" height="520"
+           loading="lazy" decoding="async" alt="">
+    </figure>
+    <figure class="mos__p">
+      <img src="imagenes/mos-04.jpg" width="780" height="517"
+           loading="lazy" decoding="async" alt="">
+    </figure>
+    <figure class="mos__p">
+      <img src="imagenes/mos-05.jpg" width="780" height="520"
+           loading="lazy" decoding="async" alt="">
+    </figure>
+    <figure class="mos__p">
+      <img src="imagenes/clinica-01.jpg" width="648" height="432"
+           loading="lazy" decoding="async" alt="">
+    </figure>
+  </div>
+</section>
+<section class="dueno" aria-labelledby="t-dueno">
+  <h2 id="t-dueno">Para la clínica</h2>
+  <div class="dueno__cols">
+    <div>
+      <h3>Lo que está verificado</h3>
+      <p>Las 299 reseñas de su ficha de Google y el teléfono (64) 223 6591. No tienen
+        sitio propio: sólo redes.</p>
+    </div>
+    <div>
+      <h3>Lo que es general</h3>
+      <p>Las cinco filas del comparador y las dos tarjetas. Son del oficio, no de esta
+        clínica: describen cómo se atiende a un perro grande en cualquier parte, y por eso
+        van marcadas.</p>
+    </div>
+    <div>
+      <h3>Lo que falta</h3>
+      <p>Si la mesa es hidráulica, si atienden urgencias fuera de horario y en qué
+        teléfono, y cómo explican ustedes el tema de la dosis por kilo. Con esas tres
+        respuestas la sección deja de ser general y pasa a ser suya.</p>
+    </div>
+  </div>
+  <p class="dueno__cierre">
+    <a class="flecha" href="https://wa.me/56968650001" rel="noopener">Escribirme por WhatsApp <span aria-hidden="true">→</span></a>
+    <a class="flecha" href="../../" rel="noopener">Ver otros trabajos <span aria-hidden="true">→</span></a>
+  </p>
+</section>
+
+<footer class="pie">
+  <p>Sitio de demostración preparado por CristalWeb. El negocio no lo ha encargado ni ha
+    revisado su contenido. Los pesos, los tiempos y las descripciones clínicas son
+    generales del oficio: ninguna cifra corresponde a datos de esta clínica, no hay precios
+    y nada de lo escrito constituye indicación médica veterinaria.</p>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
