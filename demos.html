@@ -1,0 +1,842 @@
+<!DOCTYPE html>
+<html lang="es-CL">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Propuestas — CristalWeb</title>
+<meta name="description" content="Páginas que hicimos por nuestra cuenta para negocios del sur de Chile. Ninguna fue encargada: son propuestas para mostrar cómo se vería el sitio.">
+<meta name="theme-color" content="#060D16">
+
+<!-- Estas páginas llevan nombres de negocios reales que no las encargaron.
+     No tienen por qué salir en Google compitiendo con el negocio mismo:
+     el catálogo entero va sin indexar, igual que cada propuesta adentro. -->
+<meta name="robots" content="noindex, nofollow">
+
+<link rel="preload" href="assets/fuentes/funneldisplay-var-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="assets/fuentes.css">
+<link rel="stylesheet" href="styles.css">
+
+<script>
+  document.documentElement.classList.add('js');
+  window.__rescate = setTimeout(function () {
+    document.documentElement.classList.remove('js');
+  }, 4000);
+</script>
+</head>
+
+<body>
+
+<a class="saltar" href="#contenido">Saltar al contenido</a>
+
+<header class="cabecera" id="cabecera">
+  <div class="contenedor cabecera__fila">
+    <a class="marca" href="index.html" aria-label="CristalWeb, ir al inicio">
+      <img class="marca__gema" src="assets/logos/cw-marca.png" alt="" width="162" height="160" decoding="async">
+      <span class="marca__texto">Cristal<span class="marca__web">Web</span></span>
+    </a>
+
+    <button class="menu-boton" id="menu-boton" type="button" aria-expanded="false" aria-controls="menu">
+      <span class="menu-boton__barras" aria-hidden="true"><i></i><i></i></span>
+      <span class="menu-boton__texto">Menú</span>
+    </button>
+
+    <nav class="menu" id="menu" aria-label="Principal">
+      <ul class="menu__lista">
+        <li><a href="index.html#nosotros">Quiénes somos</a></li>
+        <li><a href="index.html#proyectos">Proyectos</a></li>
+        <li><a href="index.html#tuyo">El sitio es tuyo</a></li>
+        <li><a class="boton boton--chico" href="index.html#contacto"><span>Conversemos</span></a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main id="contenido">
+
+<section class="seccion">
+  <div class="contenedor">
+    <p class="etiqueta reveal" data-rev="izq">Propuestas</p>
+    <h2 class="titulo reveal" data-rev="izq">Cincuenta y dos páginas que nadie nos encargó.</h2>
+    <p class="entradilla reveal" data-rev="izq">
+      Las hicimos por nuestra cuenta, para negocios reales del sur, con lo que
+      cada uno tiene publicado. Ninguna está pagada ni acordada: son propuestas.
+      Si tu negocio aparece acá, entrá a mirarla — es tuya para verla, y si no
+      te sirve la bajamos y no pasa nada.
+    </p>
+
+    <p class="aviso reveal" data-rev="izq">
+      <strong>No son clientes nuestros.</strong> Los sitios que sí encargaron y
+      pagaron están en <a class="enlace" href="index.html#proyectos">la página de
+      proyectos</a>. Estas propuestas no salen en Google y cada una lo dice adentro.
+    </p>
+    <div class="filtros" id="filtros" hidden>
+      <button class="filtro filtro--activo" type="button" data-filtro="todas">Todas <span class="filtro__n">52</span></button>
+      <button class="filtro" type="button" data-filtro="vet">Veterinarias <span class="filtro__n">15</span></button>
+      <button class="filtro" type="button" data-filtro="comida">Restaurantes <span class="filtro__n">10</span></button>
+      <button class="filtro" type="button" data-filtro="turismo">Cabañas y camping <span class="filtro__n">8</span></button>
+      <button class="filtro" type="button" data-filtro="dental">Dentales <span class="filtro__n">4</span></button>
+      <button class="filtro" type="button" data-filtro="taller">Taller y automotriz <span class="filtro__n">3</span></button>
+      <button class="filtro" type="button" data-filtro="obra">Transporte y construcción <span class="filtro__n">3</span></button>
+      <button class="filtro" type="button" data-filtro="kine">Kinesiología <span class="filtro__n">3</span></button>
+      <button class="filtro" type="button" data-filtro="imagen">Barbería y gimnasio <span class="filtro__n">3</span></button>
+      <button class="filtro" type="button" data-filtro="comercio">Comercio <span class="filtro__n">3</span></button>
+    </div>
+    <p class="filtros__vacio" id="filtros-vacio" hidden>No hay propuestas en ese rubro.</p>
+
+    <ul class="proyectos" id="rejilla" data-rev-hijos>
+
+      <li class="proyecto reveal" data-rev="escala" data-rubro="taller">
+        <a class="proyecto__vista" href="demos/automotriz-coba-pucon/" target="_blank" rel="noopener" tabindex="-1" aria-hidden="true">
+          <img src="assets/demos/automotriz-coba-pucon.jpg" alt="" width="800" height="563" loading="lazy" decoding="async">
+        </a>
+        <div class="proyecto__cuerpo">
+          <p class="proyecto__rubro">Taller y automotriz · Pucón</p>
+          <h3 class="proyecto__nombre">Automotriz COBA</h3>
+          <p class="proyecto__nota">Qué se hace en cada casa y cómo se atiende al auto que anda de viaje.</p>
+          <p class="proyecto__enlaces">
+            <a class="enlace" href="demos/automotriz-coba-pucon/" target="_blank" rel="noopener">Ver la propuesta<span class="vo"> de Automotriz COBA</span></a>
+          </p>
+        </div>
+      </li>
+
+      <li class="proyecto reveal" data-rev="escala" data-rubro="taller">
+        <a class="proyecto__vista" href="demos/lubricentro-sr-pitrufquen/" target="_blank" rel="noopener" tabindex="-1" aria-hidden="true">
+          <img src="assets/demos/lubricentro-sr-pitrufquen.jpg" alt="" width="800" height="563" loading="lazy" decoding="async">
+        </a>
+        <div class="proyecto__cuerpo">
+          <p class="proyecto__rubro">Taller y automotriz · Pitrufquén</p>
+          <h3 class="proyecto__nombre">Lubricentro SR</h3>
+          <p class="proyecto__nota">Qué se revisa en cada cambio de aceite y qué significa el sticker del parabrisas.</p>
+          <p class="proyecto__enlaces">
+            <a class="enlace" href="demos/lubricentro-sr-pitrufquen/" target="_blank" rel="noopener">Ver la propuesta<span class="vo"> de Lubricentro SR</span></a>
+          </p>
+        </div>
+      </li>
+
+      <li class="proyecto reveal" data-rev="escala" data-rubro="kine">
+        <a class="proyecto__vista" href="demos/xpertkine-temuco/" target="_blank" rel="noopener" tabindex="-1" aria-hidden="true">
+          <img src="assets/demos/xpertkine-temuco.jpg" alt="" width="800" height="563" loading="lazy" decoding="async">
+        </a>
+        <div class="proyecto__cuerpo">
+          <p class="proyecto__rubro">Kinesiología · Temuco</p>
+          <h3 class="proyecto__nombre">XpertKine</h3>
+          <p class="proyecto__nota">Cuántas sesiones toma cada lesión frecuente y por qué importan los ejercicios en casa.</p>
+          <p class="proyecto__enlaces">
+            <a class="enlace" href="demos/xpertkine-temuco/" target="_blank" rel="noopener">Ver la propuesta<span class="vo"> de XpertKine</span></a>
+          </p>
+        </div>
+      </li>
+
+      <li class="proyecto reveal" data-rev="escala" data-rubro="comida">
+        <a class="proyecto__vista" href="demos/cocina-de-maria-villarrica/" target="_blank" rel="noopener" tabindex="-1" aria-hidden="true">
+          <img src="assets/demos/cocina-de-maria-villarrica.jpg" alt="" width="800" height="563" loading="lazy" decoding="async">
+        </a>
+        <div class="proyecto__cuerpo">
+          <p class="proyecto__rubro">Restaurantes · Villarrica</p>
+          <h3 class="proyecto__nombre">Cocina de María</h3>
+          <p class="proyecto__nota">El menú del día escrito, y la carta de siempre.</p>
+          <p class="proyecto__enlaces">
+            <a class="enlace" href="demos/cocina-de-maria-villarrica/" target="_blank" rel="noopener">Ver la propuesta<span class="vo"> de Cocina de María</span></a>
+          </p>
+        </div>
+      </li>
+
+      <li class="proyecto reveal" data-rev="escala" data-rubro="comida">
+        <a class="proyecto__vista" href="demos/los-troncos-villarrica/" target="_blank" rel="noopener" tabindex="-1" aria-hidden="true">
+          <img src="assets/demos/los-troncos-villarrica.jpg" alt="" width="800" height="563" loading="lazy" decoding="async">
+        </a>
+        <div class="proyecto__cuerpo">
+          <p class="proyecto__rubro">Restaurantes · Villarrica</p>
+          <h3 class="proyecto__nombre">Los Troncos</h3>
+          <p class="proyecto__nota">Los puntos de la carne explicados y qué parrillada pedir según cuántos son.</p>
+          <p class="proyecto__enlaces">
+            <a class="enlace" href="demos/los-troncos-villarrica/" target="_blank" rel="noopener">Ver la propuesta<span class="vo"> de Los Troncos</span></a>
+          </p>
+        </div>
+      </li>
+
+      <li class="proyecto reveal" data-rev="escala" data-rubro="comida">
+        <a class="proyecto__vista" href="demos/sentiero-villarrica/" target="_blank" rel="noopener" tabindex="-1" aria-hidden="true">
+          <img src="assets/demos/sentiero-villarrica.jpg" alt="" width="800" height="563" loading="lazy" decoding="async">
+        </a>
+        <div class="proyecto__cuerpo">
+          <p class="proyecto__rubro">Restaurantes · Villarrica</p>
+          <h3 class="proyecto__nombre">Sentiero</h3>
+          <p class="proyecto__nota">Reservar por mensaje y qué se puede pedir para una celebración.</p>
+          <p class="proyecto__enlaces">
+            <a class="enlace" href="demos/sentiero-villarrica/" target="_blank" rel="noopener">Ver la propuesta<span class="vo"> de Sentiero</span></a>
+          </p>
+        </div>
+      </li>
+
+      <li class="proyecto reveal" data-rev="escala" data-rubro="comida">
+        <a class="proyecto__vista" href="demos/mis-raices-los-molinos/" target="_blank" rel="noopener" tabindex="-1" aria-hidden="true">
+          <img src="assets/demos/mis-raices-los-molinos.jpg" alt="" width="800" height="563" loading="lazy" decoding="async">
+        </a>
+        <div class="proyecto__cuerpo">
+          <p class="proyecto__rubro">Restaurantes · Los Molinos, Valdivia</p>
+          <h3 class="proyecto__nombre">Mis Raíces</h3>
+          <p class="proyecto__nota">Qué marisco hay según la época y cómo llegar.</p>
+          <p class="proyecto__enlaces">
+            <a class="enlace" href="demos/mis-raices-los-molinos/" target="_blank" rel="noopener">Ver la propuesta<span class="vo"> de Mis Raíces</span></a>
+          </p>
+        </div>
+      </li>
+
+      <li class="proyecto reveal" data-rev="escala" data-rubro="comida">
+        <a class="proyecto__vista" href="demos/indio-pije-niebla/" target="_blank" rel="noopener" tabindex="-1" aria-hidden="true">
+          <img src="assets/demos/indio-pije-niebla.jpg" alt="" width="800" height="563" loading="lazy" decoding="async">
+        </a>
+        <div class="proyecto__cuerpo">
+          <p class="proyecto__rubro">Restaurantes · Niebla, Valdivia</p>
+          <h3 class="proyecto__nombre">Indio Pije Restaurant</h3>
+          <p class="proyecto__nota">Qué pescado se está friendo, de dónde llega y cómo reconocer una fritura bien hecha.</p>
+          <p class="proyecto__enlaces">
+            <a class="enlace" href="demos/indio-pije-niebla/" target="_blank" rel="noopener">Ver la propuesta<span class="vo"> de Indio Pije Restaurant</span></a>
+          </p>
+        </div>
+      </li>
+
+      <li class="proyecto reveal" data-rev="escala" data-rubro="comida">
+        <a class="proyecto__vista" href="demos/muna-kume-iyael-curarrehue/" target="_blank" rel="noopener" tabindex="-1" aria-hidden="true">
+          <img src="assets/demos/muna-kume-iyael-curarrehue.jpg" alt="" width="800" height="563" loading="lazy" decoding="async">
+        </a>
+        <div class="proyecto__cuerpo">
+          <p class="proyecto__rubro">Restaurantes · Curarrehue</p>
+          <h3 class="proyecto__nombre">Muna Kume Iyael</h3>
+          <p class="proyecto__nota">Qué es cada ingrediente de la carta, a qué sabe y en qué época del año se puede probar.</p>
+          <p class="proyecto__enlaces">
+            <a class="enlace" href="demos/muna-kume-iyael-curarrehue/" target="_blank" rel="noopener">Ver la propuesta<span class="vo"> de Muna Kume Iyael</span></a>
+          </p>
+        </div>
+      </li>
+
+      <li class="proyecto reveal" data-rev="escala" data-rubro="comida">
+        <a class="proyecto__vista" href="demos/fortin-mapuche-pucura/" target="_blank" rel="noopener" tabindex="-1" aria-hidden="true">
+          <img src="assets/demos/fortin-mapuche-pucura.jpg" alt="" width="800" height="563" loading="lazy" decoding="async">
+        </a>
+        <div class="proyecto__cuerpo">
+          <p class="proyecto__rubro">Restaurantes · Pucura</p>
+          <h3 class="proyecto__nombre">Fortín Mapuche</h3>
+          <p class="proyecto__nota">Comer en grupo grande y cómo encontrarlos en la vuelta al lago.</p>
+          <p class="proyecto__enlaces">
+            <a class="enlace" href="demos/fortin-mapuche-pucura/" target="_blank" rel="noopener">Ver la propuesta<span class="vo"> de Fortín Mapuche</span></a>
+          </p>
+        </div>
+      </li>
+
+      <li class="proyecto reveal" data-rev="escala" data-rubro="comida">
+        <a class="proyecto__vista" href="demos/cupal-curarrehue/" target="_blank" rel="noopener" tabindex="-1" aria-hidden="true">
+          <img src="assets/demos/cupal-curarrehue.jpg" alt="" width="800" height="563" loading="lazy" decoding="async">
+        </a>
+        <div class="proyecto__cuerpo">
+          <p class="proyecto__rubro">Restaurantes · Curarrehue</p>
+          <h3 class="proyecto__nombre">Cupal Restaurant</h3>
+          <p class="proyecto__nota">Hasta qué hora cocina la cocina y qué se puede llevar al hospedaje.</p>
+          <p class="proyecto__enlaces">
+            <a class="enlace" href="demos/cupal-curarrehue/" target="_blank" rel="noopener">Ver la propuesta<span class="vo"> de Cupal Restaurant</span></a>
+          </p>
+        </div>
+      </li>
+
+      <li class="proyecto reveal" data-rev="escala" data-rubro="comida">
+        <a class="proyecto__vista" href="demos/suelo-nativo-curarrehue/" target="_blank" rel="noopener" tabindex="-1" aria-hidden="true">
+          <img src="assets/demos/suelo-nativo-curarrehue.jpg" alt="" width="800" height="563" loading="lazy" decoding="async">
+        </a>
+        <div class="proyecto__cuerpo">
+          <p class="proyecto__rubro">Restaurantes · Curarrehue</p>
+          <h3 class="proyecto__nombre">Suelo Nativo</h3>
+          <p class="proyecto__nota">Qué sale del huerto propio y por qué la carta cambia con las estaciones.</p>
+          <p class="proyecto__enlaces">
+            <a class="enlace" href="demos/suelo-nativo-curarrehue/" target="_blank" rel="noopener">Ver la propuesta<span class="vo"> de Suelo Nativo</span></a>
+          </p>
+        </div>
+      </li>
+
+      <li class="proyecto reveal" data-rev="escala" data-rubro="comida">
+        <a class="proyecto__vista" href="demos/el-renoval-curarrehue/" target="_blank" rel="noopener" tabindex="-1" aria-hidden="true">
+          <img src="assets/demos/el-renoval-curarrehue.jpg" alt="" width="800" height="563" loading="lazy" decoding="async">
+        </a>
+        <div class="proyecto__cuerpo">
+          <p class="proyecto__rubro">Restaurantes · Curarrehue</p>
+          <h3 class="proyecto__nombre">El Renoval</h3>
+          <p class="proyecto__nota">La carta de café explicada y la parada del viaje a las termas.</p>
+          <p class="proyecto__enlaces">
+            <a class="enlace" href="demos/el-renoval-curarrehue/" target="_blank" rel="noopener">Ver la propuesta<span class="vo"> de El Renoval</span></a>
+          </p>
+        </div>
+      </li>
+
+      <li class="proyecto reveal" data-rev="escala" data-rubro="turismo">
+        <a class="proyecto__vista" href="demos/cabanas-carolina-lican-ray/" target="_blank" rel="noopener" tabindex="-1" aria-hidden="true">
+          <img src="assets/demos/cabanas-carolina-lican-ray.jpg" alt="" width="800" height="563" loading="lazy" decoding="async">
+        </a>
+        <div class="proyecto__cuerpo">
+          <p class="proyecto__rubro">Cabañas y camping · Licán Ray</p>
+          <h3 class="proyecto__nombre">Cabañas Carolina</h3>
+          <p class="proyecto__nota">Qué cabaña es cuál, para cuántos, y qué incluye cada una.</p>
+          <p class="proyecto__enlaces">
+            <a class="enlace" href="demos/cabanas-carolina-lican-ray/" target="_blank" rel="noopener">Ver la propuesta<span class="vo"> de Cabañas Carolina</span></a>
+          </p>
+        </div>
+      </li>
+
+      <li class="proyecto reveal" data-rev="escala" data-rubro="turismo">
+        <a class="proyecto__vista" href="demos/cabanas-el-vecino-conaripe/" target="_blank" rel="noopener" tabindex="-1" aria-hidden="true">
+          <img src="assets/demos/cabanas-el-vecino-conaripe.jpg" alt="" width="800" height="563" loading="lazy" decoding="async">
+        </a>
+        <div class="proyecto__cuerpo">
+          <p class="proyecto__rubro">Cabañas y camping · Coñaripe</p>
+          <h3 class="proyecto__nombre">Cabañas El Vecino</h3>
+          <p class="proyecto__nota">Cómo es la llegada y los datos del pueblo que sólo sabe alguien de acá.</p>
+          <p class="proyecto__enlaces">
+            <a class="enlace" href="demos/cabanas-el-vecino-conaripe/" target="_blank" rel="noopener">Ver la propuesta<span class="vo"> de Cabañas El Vecino</span></a>
+          </p>
+        </div>
+      </li>
+
+      <li class="proyecto reveal" data-rev="escala" data-rubro="turismo">
+        <a class="proyecto__vista" href="demos/camping-mane-conaripe/" target="_blank" rel="noopener" tabindex="-1" aria-hidden="true">
+          <img src="assets/demos/camping-mane-conaripe.jpg" alt="" width="800" height="563" loading="lazy" decoding="async">
+        </a>
+        <div class="proyecto__cuerpo">
+          <p class="proyecto__rubro">Cabañas y camping · Coñaripe</p>
+          <h3 class="proyecto__nombre">Camping Mane</h3>
+          <p class="proyecto__nota">Reservar un sitio con número, no «un sitio», y las reglas de convivencia escritas.</p>
+          <p class="proyecto__enlaces">
+            <a class="enlace" href="demos/camping-mane-conaripe/" target="_blank" rel="noopener">Ver la propuesta<span class="vo"> de Camping Mane</span></a>
+          </p>
+        </div>
+      </li>
+
+      <li class="proyecto reveal" data-rev="escala" data-rubro="turismo">
+        <a class="proyecto__vista" href="demos/flor-de-piedra-lican-ray/" target="_blank" rel="noopener" tabindex="-1" aria-hidden="true">
+          <img src="assets/demos/flor-de-piedra-lican-ray.jpg" alt="" width="800" height="563" loading="lazy" decoding="async">
+        </a>
+        <div class="proyecto__cuerpo">
+          <p class="proyecto__rubro">Cabañas y camping · Licán Ray</p>
+          <h3 class="proyecto__nombre">Cabañas Flor de Piedra</h3>
+          <p class="proyecto__nota">La misma cabaña en verano y en invierno, y por qué la temporada baja vale la pena.</p>
+          <p class="proyecto__enlaces">
+            <a class="enlace" href="demos/flor-de-piedra-lican-ray/" target="_blank" rel="noopener">Ver la propuesta<span class="vo"> de Cabañas Flor de Piedra</span></a>
+          </p>
+        </div>
+      </li>
+
+      <li class="proyecto reveal" data-rev="escala" data-rubro="turismo">
+        <a class="proyecto__vista" href="demos/antu-kuyen-villarrica/" target="_blank" rel="noopener" tabindex="-1" aria-hidden="true">
+          <img src="assets/demos/antu-kuyen-villarrica.jpg" alt="" width="800" height="563" loading="lazy" decoding="async">
+        </a>
+        <div class="proyecto__cuerpo">
+          <p class="proyecto__rubro">Cabañas y camping · Villarrica</p>
+          <h3 class="proyecto__nombre">Cabañas Antu Kuyen</h3>
+          <p class="proyecto__nota">Quedarse una semana y trabajar desde acá, y cómo se usa la cabaña de la mañana a la noche.</p>
+          <p class="proyecto__enlaces">
+            <a class="enlace" href="demos/antu-kuyen-villarrica/" target="_blank" rel="noopener">Ver la propuesta<span class="vo"> de Cabañas Antu Kuyen</span></a>
+          </p>
+        </div>
+      </li>
+
+      <li class="proyecto reveal" data-rev="escala" data-rubro="turismo">
+        <a class="proyecto__vista" href="demos/mi-refugio-lican-ray/" target="_blank" rel="noopener" tabindex="-1" aria-hidden="true">
+          <img src="assets/demos/mi-refugio-lican-ray.jpg" alt="" width="800" height="563" loading="lazy" decoding="async">
+        </a>
+        <div class="proyecto__cuerpo">
+          <p class="proyecto__rubro">Cabañas y camping · Licán Ray</p>
+          <h3 class="proyecto__nombre">Cabañas Mi Refugio</h3>
+          <p class="proyecto__nota">El arriendo de invierno: la estufa, la leña y dónde se seca la ropa mojada.</p>
+          <p class="proyecto__enlaces">
+            <a class="enlace" href="demos/mi-refugio-lican-ray/" target="_blank" rel="noopener">Ver la propuesta<span class="vo"> de Cabañas Mi Refugio</span></a>
+          </p>
+        </div>
+      </li>
+
+      <li class="proyecto reveal" data-rev="escala" data-rubro="turismo">
+        <a class="proyecto__vista" href="demos/los-boldos-conaripe/" target="_blank" rel="noopener" tabindex="-1" aria-hidden="true">
+          <img src="assets/demos/los-boldos-conaripe.jpg" alt="" width="800" height="563" loading="lazy" decoding="async">
+        </a>
+        <div class="proyecto__cuerpo">
+          <p class="proyecto__rubro">Cabañas y camping · Coñaripe</p>
+          <h3 class="proyecto__nombre">Cabañas Los Boldos</h3>
+          <p class="proyecto__nota">Cómo funciona la tinaja de verdad: cuánto tarda, con cuánto aviso y para cuántos.</p>
+          <p class="proyecto__enlaces">
+            <a class="enlace" href="demos/los-boldos-conaripe/" target="_blank" rel="noopener">Ver la propuesta<span class="vo"> de Cabañas Los Boldos</span></a>
+          </p>
+        </div>
+      </li>
+
+      <li class="proyecto reveal" data-rev="escala" data-rubro="turismo">
+        <a class="proyecto__vista" href="demos/silvia-obando-conaripe/" target="_blank" rel="noopener" tabindex="-1" aria-hidden="true">
+          <img src="assets/demos/silvia-obando-conaripe.jpg" alt="" width="800" height="563" loading="lazy" decoding="async">
+        </a>
+        <div class="proyecto__cuerpo">
+          <p class="proyecto__rubro">Cabañas y camping · Coñaripe</p>
+          <h3 class="proyecto__nombre">Cabañas Coñaripe</h3>
+          <p class="proyecto__nota">Qué significa en la práctica que reciba una persona y no una recepción.</p>
+          <p class="proyecto__enlaces">
+            <a class="enlace" href="demos/silvia-obando-conaripe/" target="_blank" rel="noopener">Ver la propuesta<span class="vo"> de Cabañas Coñaripe</span></a>
+          </p>
+        </div>
+      </li>
+
+      <li class="proyecto reveal" data-rev="escala" data-rubro="vet">
+        <a class="proyecto__vista" href="demos/veterinaria-sokimu-villarrica/" target="_blank" rel="noopener" tabindex="-1" aria-hidden="true">
+          <img src="assets/demos/veterinaria-sokimu-villarrica.jpg" alt="" width="800" height="563" loading="lazy" decoding="async">
+        </a>
+        <div class="proyecto__cuerpo">
+          <p class="proyecto__rubro">Veterinarias · Villarrica</p>
+          <h3 class="proyecto__nombre">Veterinaria Sokimu</h3>
+          <p class="proyecto__nota">Qué se compra directo y qué necesita receta o consulta previa.</p>
+          <p class="proyecto__enlaces">
+            <a class="enlace" href="demos/veterinaria-sokimu-villarrica/" target="_blank" rel="noopener">Ver la propuesta<span class="vo"> de Veterinaria Sokimu</span></a>
+          </p>
+        </div>
+      </li>
+
+      <li class="proyecto reveal" data-rev="escala" data-rubro="vet">
+        <a class="proyecto__vista" href="demos/veterinaria-lacustre-villarrica/" target="_blank" rel="noopener" tabindex="-1" aria-hidden="true">
+          <img src="assets/demos/veterinaria-lacustre-villarrica.jpg" alt="" width="800" height="563" loading="lazy" decoding="async">
+        </a>
+        <div class="proyecto__cuerpo">
+          <p class="proyecto__rubro">Veterinarias · Villarrica</p>
+          <h3 class="proyecto__nombre">Veterinaria Lacustre</h3>
+          <p class="proyecto__nota">Qué hacer en los primeros cinco minutos mientras llama y viaja.</p>
+          <p class="proyecto__enlaces">
+            <a class="enlace" href="demos/veterinaria-lacustre-villarrica/" target="_blank" rel="noopener">Ver la propuesta<span class="vo"> de Veterinaria Lacustre</span></a>
+          </p>
+        </div>
+      </li>
+
+      <li class="proyecto reveal" data-rev="escala" data-rubro="vet">
+        <a class="proyecto__vista" href="demos/veterinaria-piuvet-villarrica/" target="_blank" rel="noopener" tabindex="-1" aria-hidden="true">
+          <img src="assets/demos/veterinaria-piuvet-villarrica.jpg" alt="" width="800" height="563" loading="lazy" decoding="async">
+        </a>
+        <div class="proyecto__cuerpo">
+          <p class="proyecto__rubro">Veterinarias · Villarrica</p>
+          <h3 class="proyecto__nombre">Veterinaria Piuvet</h3>
+          <p class="proyecto__nota">El primer año de un cachorro mes a mes y qué es conducta normal.</p>
+          <p class="proyecto__enlaces">
+            <a class="enlace" href="demos/veterinaria-piuvet-villarrica/" target="_blank" rel="noopener">Ver la propuesta<span class="vo"> de Veterinaria Piuvet</span></a>
+          </p>
+        </div>
+      </li>
+
+      <li class="proyecto reveal" data-rev="escala" data-rubro="vet">
+        <a class="proyecto__vista" href="demos/veterinaria-alto-pucon/" target="_blank" rel="noopener" tabindex="-1" aria-hidden="true">
+          <img src="assets/demos/veterinaria-alto-pucon.jpg" alt="" width="800" height="563" loading="lazy" decoding="async">
+        </a>
+        <div class="proyecto__cuerpo">
+          <p class="proyecto__rubro">Veterinarias · Pucón</p>
+          <h3 class="proyecto__nombre">Veterinaria Alto Pucón</h3>
+          <p class="proyecto__nota">La revisión del perro que sale a la montaña y qué mirar al volver del paseo.</p>
+          <p class="proyecto__enlaces">
+            <a class="enlace" href="demos/veterinaria-alto-pucon/" target="_blank" rel="noopener">Ver la propuesta<span class="vo"> de Veterinaria Alto Pucón</span></a>
+          </p>
+        </div>
+      </li>
+
+      <li class="proyecto reveal" data-rev="escala" data-rubro="vet">
+        <a class="proyecto__vista" href="demos/clinica-veterinaria-temuco/" target="_blank" rel="noopener" tabindex="-1" aria-hidden="true">
+          <img src="assets/demos/clinica-veterinaria-temuco.jpg" alt="" width="800" height="563" loading="lazy" decoding="async">
+        </a>
+        <div class="proyecto__cuerpo">
+          <p class="proyecto__rubro">Veterinarias · Temuco</p>
+          <h3 class="proyecto__nombre">Clínica Veterinaria Temuco</h3>
+          <p class="proyecto__nota">Qué es urgencia, qué es para hoy y qué puede esperar a un control.</p>
+          <p class="proyecto__enlaces">
+            <a class="enlace" href="demos/clinica-veterinaria-temuco/" target="_blank" rel="noopener">Ver la propuesta<span class="vo"> de Clínica Veterinaria Temuco</span></a>
+          </p>
+        </div>
+      </li>
+
+      <li class="proyecto reveal" data-rev="escala" data-rubro="vet">
+        <a class="proyecto__vista" href="demos/happy-pet-valdivia/" target="_blank" rel="noopener" tabindex="-1" aria-hidden="true">
+          <img src="assets/demos/happy-pet-valdivia.jpg" alt="" width="800" height="563" loading="lazy" decoding="async">
+        </a>
+        <div class="proyecto__cuerpo">
+          <p class="proyecto__rubro">Veterinarias · Valdivia</p>
+          <h3 class="proyecto__nombre">Clínica Veterinaria Happy Pet</h3>
+          <p class="proyecto__nota">Qué pasa cuando un animal queda hospitalizado y cómo es la noche.</p>
+          <p class="proyecto__enlaces">
+            <a class="enlace" href="demos/happy-pet-valdivia/" target="_blank" rel="noopener">Ver la propuesta<span class="vo"> de Clínica Veterinaria Happy Pet</span></a>
+          </p>
+        </div>
+      </li>
+
+      <li class="proyecto reveal" data-rev="escala" data-rubro="vet">
+        <a class="proyecto__vista" href="demos/vetval-valdivia/" target="_blank" rel="noopener" tabindex="-1" aria-hidden="true">
+          <img src="assets/demos/vetval-valdivia.jpg" alt="" width="800" height="563" loading="lazy" decoding="async">
+        </a>
+        <div class="proyecto__cuerpo">
+          <p class="proyecto__rubro">Veterinarias · Valdivia</p>
+          <h3 class="proyecto__nombre">Veterinaria Vetval</h3>
+          <p class="proyecto__nota">Cuánto cuesta, dicho antes: qué se puede saber de antemano y qué se cotiza después de examinar.</p>
+          <p class="proyecto__enlaces">
+            <a class="enlace" href="demos/vetval-valdivia/" target="_blank" rel="noopener">Ver la propuesta<span class="vo"> de Veterinaria Vetval</span></a>
+          </p>
+        </div>
+      </li>
+
+      <li class="proyecto reveal" data-rev="escala" data-rubro="vet">
+        <a class="proyecto__vista" href="demos/vet-de-los-rios-valdivia/" target="_blank" rel="noopener" tabindex="-1" aria-hidden="true">
+          <img src="assets/demos/vet-de-los-rios-valdivia.jpg" alt="" width="800" height="563" loading="lazy" decoding="async">
+        </a>
+        <div class="proyecto__cuerpo">
+          <p class="proyecto__rubro">Veterinarias · Valdivia</p>
+          <h3 class="proyecto__nombre">Clínica Veterinaria de Los Ríos</h3>
+          <p class="proyecto__nota">Pedir una segunda opinión es normal: cómo se hace y qué llevar.</p>
+          <p class="proyecto__enlaces">
+            <a class="enlace" href="demos/vet-de-los-rios-valdivia/" target="_blank" rel="noopener">Ver la propuesta<span class="vo"> de Clínica Veterinaria de Los Ríos</span></a>
+          </p>
+        </div>
+      </li>
+
+      <li class="proyecto reveal" data-rev="escala" data-rubro="vet">
+        <a class="proyecto__vista" href="demos/el-bosque-valdivia/" target="_blank" rel="noopener" tabindex="-1" aria-hidden="true">
+          <img src="assets/demos/el-bosque-valdivia.jpg" alt="" width="800" height="563" loading="lazy" decoding="async">
+        </a>
+        <div class="proyecto__cuerpo">
+          <p class="proyecto__rubro">Veterinarias · Valdivia</p>
+          <h3 class="proyecto__nombre">Clínica Veterinaria El Bosque</h3>
+          <p class="proyecto__nota">Cómo llevar al gato a la consulta sin que sea una guerra.</p>
+          <p class="proyecto__enlaces">
+            <a class="enlace" href="demos/el-bosque-valdivia/" target="_blank" rel="noopener">Ver la propuesta<span class="vo"> de Clínica Veterinaria El Bosque</span></a>
+          </p>
+        </div>
+      </li>
+
+      <li class="proyecto reveal" data-rev="escala" data-rubro="vet">
+        <a class="proyecto__vista" href="demos/estacion-mascotas-valdivia/" target="_blank" rel="noopener" tabindex="-1" aria-hidden="true">
+          <img src="assets/demos/estacion-mascotas-valdivia.jpg" alt="" width="800" height="563" loading="lazy" decoding="async">
+        </a>
+        <div class="proyecto__cuerpo">
+          <p class="proyecto__rubro">Veterinarias · Valdivia</p>
+          <h3 class="proyecto__nombre">Clínica Estación Mascotas</h3>
+          <p class="proyecto__nota">Cuánto toma cada tamaño y a qué hora se pasa a buscar.</p>
+          <p class="proyecto__enlaces">
+            <a class="enlace" href="demos/estacion-mascotas-valdivia/" target="_blank" rel="noopener">Ver la propuesta<span class="vo"> de Clínica Estación Mascotas</span></a>
+          </p>
+        </div>
+      </li>
+
+      <li class="proyecto reveal" data-rev="escala" data-rubro="vet">
+        <a class="proyecto__vista" href="demos/pehuen-osorno/" target="_blank" rel="noopener" tabindex="-1" aria-hidden="true">
+          <img src="assets/demos/pehuen-osorno.jpg" alt="" width="800" height="563" loading="lazy" decoding="async">
+        </a>
+        <div class="proyecto__cuerpo">
+          <p class="proyecto__rubro">Veterinarias · Osorno</p>
+          <h3 class="proyecto__nombre">Clínica Veterinaria Pehuen</h3>
+          <p class="proyecto__nota">Cómo se atiende a un perro grande: la mesa, la dosis, el tiempo y las manos que hacen falta.</p>
+          <p class="proyecto__enlaces">
+            <a class="enlace" href="demos/pehuen-osorno/" target="_blank" rel="noopener">Ver la propuesta<span class="vo"> de Clínica Veterinaria Pehuen</span></a>
+          </p>
+        </div>
+      </li>
+
+      <li class="proyecto reveal" data-rev="escala" data-rubro="vet">
+        <a class="proyecto__vista" href="demos/veterinaria-pitrufquen/" target="_blank" rel="noopener" tabindex="-1" aria-hidden="true">
+          <img src="assets/demos/veterinaria-pitrufquen.jpg" alt="" width="800" height="563" loading="lazy" decoding="async">
+        </a>
+        <div class="proyecto__cuerpo">
+          <p class="proyecto__rubro">Veterinarias · Pitrufquén</p>
+          <h3 class="proyecto__nombre">Veterinaria Pitrufquén</h3>
+          <p class="proyecto__nota">Esterilizar: las preguntas de verdad, el día de la cirugía y la recuperación en casa.</p>
+          <p class="proyecto__enlaces">
+            <a class="enlace" href="demos/veterinaria-pitrufquen/" target="_blank" rel="noopener">Ver la propuesta<span class="vo"> de Veterinaria Pitrufquén</span></a>
+          </p>
+        </div>
+      </li>
+
+      <li class="proyecto reveal" data-rev="escala" data-rubro="vet">
+        <a class="proyecto__vista" href="demos/que-monada-pitrufquen/" target="_blank" rel="noopener" tabindex="-1" aria-hidden="true">
+          <img src="assets/demos/que-monada-pitrufquen.jpg" alt="" width="800" height="563" loading="lazy" decoding="async">
+        </a>
+        <div class="proyecto__cuerpo">
+          <p class="proyecto__rubro">Veterinarias · Pitrufquén</p>
+          <h3 class="proyecto__nombre">¡Qué Monada!</h3>
+          <p class="proyecto__nota">Baño y control en el mismo viaje, y cómo se maneja el perro al que no le gusta el agua.</p>
+          <p class="proyecto__enlaces">
+            <a class="enlace" href="demos/que-monada-pitrufquen/" target="_blank" rel="noopener">Ver la propuesta<span class="vo"> de ¡Qué Monada!</span></a>
+          </p>
+        </div>
+      </li>
+
+      <li class="proyecto reveal" data-rev="escala" data-rubro="vet">
+        <a class="proyecto__vista" href="demos/veterinaria-kuyen-loncoche/" target="_blank" rel="noopener" tabindex="-1" aria-hidden="true">
+          <img src="assets/demos/veterinaria-kuyen-loncoche.jpg" alt="" width="800" height="563" loading="lazy" decoding="async">
+        </a>
+        <div class="proyecto__cuerpo">
+          <p class="proyecto__rubro">Veterinarias · Loncoche</p>
+          <h3 class="proyecto__nombre">Clínica Veterinaria Küyen</h3>
+          <p class="proyecto__nota">Qué se resuelve acá mismo y qué se deriva a Temuco, dicho por escrito y sin rodeos.</p>
+          <p class="proyecto__enlaces">
+            <a class="enlace" href="demos/veterinaria-kuyen-loncoche/" target="_blank" rel="noopener">Ver la propuesta<span class="vo"> de Clínica Veterinaria Küyen</span></a>
+          </p>
+        </div>
+      </li>
+
+      <li class="proyecto reveal" data-rev="escala" data-rubro="vet">
+        <a class="proyecto__vista" href="demos/veterinaria-central-loncoche/" target="_blank" rel="noopener" tabindex="-1" aria-hidden="true">
+          <img src="assets/demos/veterinaria-central-loncoche.jpg" alt="" width="800" height="563" loading="lazy" decoding="async">
+        </a>
+        <div class="proyecto__cuerpo">
+          <p class="proyecto__rubro">Veterinarias · Loncoche</p>
+          <h3 class="proyecto__nombre">Veterinaria Central</h3>
+          <p class="proyecto__nota">La salida al campo se pide por teléfono: qué hay que tener listo cuando llega el veterinario.</p>
+          <p class="proyecto__enlaces">
+            <a class="enlace" href="demos/veterinaria-central-loncoche/" target="_blank" rel="noopener">Ver la propuesta<span class="vo"> de Veterinaria Central</span></a>
+          </p>
+        </div>
+      </li>
+
+      <li class="proyecto reveal" data-rev="escala" data-rubro="dental">
+        <a class="proyecto__vista" href="demos/geosalud-dental-pitrufquen/" target="_blank" rel="noopener" tabindex="-1" aria-hidden="true">
+          <img src="assets/demos/geosalud-dental-pitrufquen.jpg" alt="" width="800" height="563" loading="lazy" decoding="async">
+        </a>
+        <div class="proyecto__cuerpo">
+          <p class="proyecto__rubro">Dentales · Pitrufquén</p>
+          <h3 class="proyecto__nombre">Geosalud Dental</h3>
+          <p class="proyecto__nota">Qué es una urgencia dental de verdad y qué hacer mientras se consigue hora.</p>
+          <p class="proyecto__enlaces">
+            <a class="enlace" href="demos/geosalud-dental-pitrufquen/" target="_blank" rel="noopener">Ver la propuesta<span class="vo"> de Geosalud Dental</span></a>
+          </p>
+        </div>
+      </li>
+
+      <li class="proyecto reveal" data-rev="escala" data-rubro="dental">
+        <a class="proyecto__vista" href="demos/dental-araucaria-villarrica/" target="_blank" rel="noopener" tabindex="-1" aria-hidden="true">
+          <img src="assets/demos/dental-araucaria-villarrica.jpg" alt="" width="800" height="563" loading="lazy" decoding="async">
+        </a>
+        <div class="proyecto__cuerpo">
+          <p class="proyecto__rubro">Dentales · Villarrica</p>
+          <h3 class="proyecto__nombre">Clínica Dental Araucaria</h3>
+          <p class="proyecto__nota">Ortodoncia contada de punta a punta: cuánto dura de verdad, los controles y la contención que viene después.</p>
+          <p class="proyecto__enlaces">
+            <a class="enlace" href="demos/dental-araucaria-villarrica/" target="_blank" rel="noopener">Ver la propuesta<span class="vo"> de Clínica Dental Araucaria</span></a>
+          </p>
+        </div>
+      </li>
+
+      <li class="proyecto reveal" data-rev="escala" data-rubro="dental">
+        <a class="proyecto__vista" href="demos/integrasur-loncoche/" target="_blank" rel="noopener" tabindex="-1" aria-hidden="true">
+          <img src="assets/demos/integrasur-loncoche.jpg" alt="" width="800" height="563" loading="lazy" decoding="async">
+        </a>
+        <div class="proyecto__cuerpo">
+          <p class="proyecto__rubro">Dentales · Loncoche</p>
+          <h3 class="proyecto__nombre">Clínica Dental IntegraSur</h3>
+          <p class="proyecto__nota">La limpieza dental explicada: qué es, cada cuánto conviene y qué se siente de verdad.</p>
+          <p class="proyecto__enlaces">
+            <a class="enlace" href="demos/integrasur-loncoche/" target="_blank" rel="noopener">Ver la propuesta<span class="vo"> de Clínica Dental IntegraSur</span></a>
+          </p>
+        </div>
+      </li>
+
+      <li class="proyecto reveal" data-rev="escala" data-rubro="dental">
+        <a class="proyecto__vista" href="demos/dental-frontera-loncoche/" target="_blank" rel="noopener" tabindex="-1" aria-hidden="true">
+          <img src="assets/demos/dental-frontera-loncoche.jpg" alt="" width="800" height="563" loading="lazy" decoding="async">
+        </a>
+        <div class="proyecto__cuerpo">
+          <p class="proyecto__rubro">Dentales · Loncoche</p>
+          <h3 class="proyecto__nombre">Clínica Dental Frontera</h3>
+          <p class="proyecto__nota">La prótesis dental contada completa: cuántas citas son, qué pasa en cada una y cómo es la primera semana.</p>
+          <p class="proyecto__enlaces">
+            <a class="enlace" href="demos/dental-frontera-loncoche/" target="_blank" rel="noopener">Ver la propuesta<span class="vo"> de Clínica Dental Frontera</span></a>
+          </p>
+        </div>
+      </li>
+
+      <li class="proyecto reveal" data-rev="escala" data-rubro="kine">
+        <a class="proyecto__vista" href="demos/kine-felipe-garrido-villarrica/" target="_blank" rel="noopener" tabindex="-1" aria-hidden="true">
+          <img src="assets/demos/kine-felipe-garrido-villarrica.jpg" alt="" width="800" height="563" loading="lazy" decoding="async">
+        </a>
+        <div class="proyecto__cuerpo">
+          <p class="proyecto__rubro">Kinesiología · Villarrica</p>
+          <h3 class="proyecto__nombre">Felipe Garrido</h3>
+          <p class="proyecto__nota">Cómo es una sesión en la casa y qué hay que tener listo.</p>
+          <p class="proyecto__enlaces">
+            <a class="enlace" href="demos/kine-felipe-garrido-villarrica/" target="_blank" rel="noopener">Ver la propuesta<span class="vo"> de Felipe Garrido</span></a>
+          </p>
+        </div>
+      </li>
+
+      <li class="proyecto reveal" data-rev="escala" data-rubro="kine">
+        <a class="proyecto__vista" href="demos/kdt-kinesiologia-pucon/" target="_blank" rel="noopener" tabindex="-1" aria-hidden="true">
+          <img src="assets/demos/kdt-kinesiologia-pucon.jpg" alt="" width="800" height="563" loading="lazy" decoding="async">
+        </a>
+        <div class="proyecto__cuerpo">
+          <p class="proyecto__rubro">Kinesiología · Pucón</p>
+          <h3 class="proyecto__nombre">KDT Kinesiología</h3>
+          <p class="proyecto__nota">Los criterios objetivos para volver a correr, y qué hacer si se lesionó de visita.</p>
+          <p class="proyecto__enlaces">
+            <a class="enlace" href="demos/kdt-kinesiologia-pucon/" target="_blank" rel="noopener">Ver la propuesta<span class="vo"> de KDT Kinesiología</span></a>
+          </p>
+        </div>
+      </li>
+
+      <li class="proyecto reveal" data-rev="escala" data-rubro="imagen">
+        <a class="proyecto__vista" href="demos/king-of-kings-temuco/" target="_blank" rel="noopener" tabindex="-1" aria-hidden="true">
+          <img src="assets/demos/king-of-kings-temuco.jpg" alt="" width="800" height="563" loading="lazy" decoding="async">
+        </a>
+        <div class="proyecto__cuerpo">
+          <p class="proyecto__rubro">Barbería y gimnasio · Temuco</p>
+          <h3 class="proyecto__nombre">Barbería King of King's</h3>
+          <p class="proyecto__nota">Agendar con un barbero, no con un local: el perfil de cada uno y qué pasa si el suyo no está.</p>
+          <p class="proyecto__enlaces">
+            <a class="enlace" href="demos/king-of-kings-temuco/" target="_blank" rel="noopener">Ver la propuesta<span class="vo"> de Barbería King of King's</span></a>
+          </p>
+        </div>
+      </li>
+
+      <li class="proyecto reveal" data-rev="escala" data-rubro="imagen">
+        <a class="proyecto__vista" href="demos/house-salon-temuco/" target="_blank" rel="noopener" tabindex="-1" aria-hidden="true">
+          <img src="assets/demos/house-salon-temuco.jpg" alt="" width="800" height="563" loading="lazy" decoding="async">
+        </a>
+        <div class="proyecto__cuerpo">
+          <p class="proyecto__rubro">Barbería y gimnasio · Temuco</p>
+          <h3 class="proyecto__nombre">House Salón Barbería</h3>
+          <p class="proyecto__nota">Los dos servicios y la posibilidad de ir juntos y salir juntos.</p>
+          <p class="proyecto__enlaces">
+            <a class="enlace" href="demos/house-salon-temuco/" target="_blank" rel="noopener">Ver la propuesta<span class="vo"> de House Salón Barbería</span></a>
+          </p>
+        </div>
+      </li>
+
+      <li class="proyecto reveal" data-rev="escala" data-rubro="imagen">
+        <a class="proyecto__vista" href="demos/yakuzas-gym-loncoche/" target="_blank" rel="noopener" tabindex="-1" aria-hidden="true">
+          <img src="assets/demos/yakuzas-gym-loncoche.jpg" alt="" width="800" height="563" loading="lazy" decoding="async">
+        </a>
+        <div class="proyecto__cuerpo">
+          <p class="proyecto__rubro">Barbería y gimnasio · Loncoche</p>
+          <h3 class="proyecto__nombre">Yakuza's Gym</h3>
+          <p class="proyecto__nota">Qué máquinas hay, zona por zona, y a qué hora está lleno.</p>
+          <p class="proyecto__enlaces">
+            <a class="enlace" href="demos/yakuzas-gym-loncoche/" target="_blank" rel="noopener">Ver la propuesta<span class="vo"> de Yakuza's Gym</span></a>
+          </p>
+        </div>
+      </li>
+
+      <li class="proyecto reveal" data-rev="escala" data-rubro="taller">
+        <a class="proyecto__vista" href="demos/schuster-mecanica-temuco/" target="_blank" rel="noopener" tabindex="-1" aria-hidden="true">
+          <img src="assets/demos/schuster-mecanica-temuco.jpg" alt="" width="800" height="563" loading="lazy" decoding="async">
+        </a>
+        <div class="proyecto__cuerpo">
+          <p class="proyecto__rubro">Taller y automotriz · Temuco</p>
+          <h3 class="proyecto__nombre">Schuster Mecánica Automotriz</h3>
+          <p class="proyecto__nota">Qué mira la planta de revisión técnica, por qué rechaza y qué conviene revisar antes de ir.</p>
+          <p class="proyecto__enlaces">
+            <a class="enlace" href="demos/schuster-mecanica-temuco/" target="_blank" rel="noopener">Ver la propuesta<span class="vo"> de Schuster Mecánica Automotriz</span></a>
+          </p>
+        </div>
+      </li>
+
+      <li class="proyecto reveal" data-rev="escala" data-rubro="obra">
+        <a class="proyecto__vista" href="demos/transportes-rojas-villarrica/" target="_blank" rel="noopener" tabindex="-1" aria-hidden="true">
+          <img src="assets/demos/transportes-rojas-villarrica.jpg" alt="" width="800" height="563" loading="lazy" decoding="async">
+        </a>
+        <div class="proyecto__cuerpo">
+          <p class="proyecto__rubro">Transporte y construcción · Villarrica</p>
+          <h3 class="proyecto__nombre">Transportes Rojas</h3>
+          <p class="proyecto__nota">Qué se lleva, qué no, y los cuatro datos que necesita el chofer para cotizar un flete.</p>
+          <p class="proyecto__enlaces">
+            <a class="enlace" href="demos/transportes-rojas-villarrica/" target="_blank" rel="noopener">Ver la propuesta<span class="vo"> de Transportes Rojas</span></a>
+          </p>
+        </div>
+      </li>
+
+      <li class="proyecto reveal" data-rev="escala" data-rubro="obra">
+        <a class="proyecto__vista" href="demos/constructora-pozas-freire/" target="_blank" rel="noopener" tabindex="-1" aria-hidden="true">
+          <img src="assets/demos/constructora-pozas-freire.jpg" alt="" width="800" height="563" loading="lazy" decoding="async">
+        </a>
+        <div class="proyecto__cuerpo">
+          <p class="proyecto__rubro">Transporte y construcción · Freire</p>
+          <h3 class="proyecto__nombre">Constructora Pozas</h3>
+          <p class="proyecto__nota">Qué incluye de verdad una casa llave en mano, ítem por ítem, y qué necesita el terreno antes de partir.</p>
+          <p class="proyecto__enlaces">
+            <a class="enlace" href="demos/constructora-pozas-freire/" target="_blank" rel="noopener">Ver la propuesta<span class="vo"> de Constructora Pozas</span></a>
+          </p>
+        </div>
+      </li>
+
+      <li class="proyecto reveal" data-rev="escala" data-rubro="obra">
+        <a class="proyecto__vista" href="demos/dyr-construcciones-loncoche/" target="_blank" rel="noopener" tabindex="-1" aria-hidden="true">
+          <img src="assets/demos/dyr-construcciones-loncoche.jpg" alt="" width="800" height="563" loading="lazy" decoding="async">
+        </a>
+        <div class="proyecto__cuerpo">
+          <p class="proyecto__rubro">Transporte y construcción · Loncoche</p>
+          <h3 class="proyecto__nombre">D y R Construcciones</h3>
+          <p class="proyecto__nota">Cómo se hace una ampliación bien hecha: los cinco pasos, quién hace cada uno y por qué el papel importa.</p>
+          <p class="proyecto__enlaces">
+            <a class="enlace" href="demos/dyr-construcciones-loncoche/" target="_blank" rel="noopener">Ver la propuesta<span class="vo"> de D y R Construcciones</span></a>
+          </p>
+        </div>
+      </li>
+
+      <li class="proyecto reveal" data-rev="escala" data-rubro="comercio">
+        <a class="proyecto__vista" href="demos/motosierras-loncoche/" target="_blank" rel="noopener" tabindex="-1" aria-hidden="true">
+          <img src="assets/demos/motosierras-loncoche.jpg" alt="" width="800" height="563" loading="lazy" decoding="async">
+        </a>
+        <div class="proyecto__cuerpo">
+          <p class="proyecto__rubro">Comercio · Loncoche</p>
+          <h3 class="proyecto__nombre">Motosierras Loncoche</h3>
+          <p class="proyecto__nota">Cómo avisa una cadena mala y cuándo se afila o se cambia.</p>
+          <p class="proyecto__enlaces">
+            <a class="enlace" href="demos/motosierras-loncoche/" target="_blank" rel="noopener">Ver la propuesta<span class="vo"> de Motosierras Loncoche</span></a>
+          </p>
+        </div>
+      </li>
+
+      <li class="proyecto reveal" data-rev="escala" data-rubro="comercio">
+        <a class="proyecto__vista" href="demos/matekila-loncoche/" target="_blank" rel="noopener" tabindex="-1" aria-hidden="true">
+          <img src="assets/demos/matekila-loncoche.jpg" alt="" width="800" height="563" loading="lazy" decoding="async">
+        </a>
+        <div class="proyecto__cuerpo">
+          <p class="proyecto__rubro">Comercio · Loncoche</p>
+          <h3 class="proyecto__nombre">Matekila</h3>
+          <p class="proyecto__nota">Cómo compra un almacén al por mayor y cómo funciona el envase retornable.</p>
+          <p class="proyecto__enlaces">
+            <a class="enlace" href="demos/matekila-loncoche/" target="_blank" rel="noopener">Ver la propuesta<span class="vo"> de Matekila</span></a>
+          </p>
+        </div>
+      </li>
+
+      <li class="proyecto reveal" data-rev="escala" data-rubro="comercio">
+        <a class="proyecto__vista" href="demos/blas-reyes-loncoche/" target="_blank" rel="noopener" tabindex="-1" aria-hidden="true">
+          <img src="assets/demos/blas-reyes-loncoche.jpg" alt="" width="800" height="563" loading="lazy" decoding="async">
+        </a>
+        <div class="proyecto__cuerpo">
+          <p class="proyecto__rubro">Comercio · Loncoche</p>
+          <h3 class="proyecto__nombre">Supermercado y Panadería Blas Reyes</h3>
+          <p class="proyecto__nota">Colaciones por encargo para cuadrillas y el día completo del local.</p>
+          <p class="proyecto__enlaces">
+            <a class="enlace" href="demos/blas-reyes-loncoche/" target="_blank" rel="noopener">Ver la propuesta<span class="vo"> de Supermercado y Panadería Blas Reyes</span></a>
+          </p>
+        </div>
+      </li>
+
+    </ul>
+
+    <p class="proyectos__pie reveal">
+      ¿Falta tu rubro? Es lo mismo de siempre: se arma con las fotos y los
+      datos del negocio. <a class="enlace" href="index.html#contacto">Escribinos</a>.
+    </p>
+  </div>
+</section>
+
+</main>
+
+<footer class="pie">
+  <div class="contenedor pie__fila">
+    <p class="pie__marca">CristalWeb</p>
+    <p class="pie__nota">Yordy Serna y Guillermo Contreras · Loncoche, Chile</p>
+    <p class="pie__nota pie__nota--tenue">
+      Las propuestas de esta página son ejercicios propios, no trabajos
+      encargados. Las fotos y las fuentes de cada una están declaradas en su
+      propio archivo <code>FUENTES.txt</code>.
+    </p>
+  </div>
+</footer>
+
+<script src="main.js" defer></script>
+<script src="filtro-demos.js" defer></script>
+</body>
+</html>

@@ -992,3 +992,77 @@ a.via:hover {
 @media (max-width: 760px) {
   .contacto__logo { display: none; }
 }
+
+/* ══ Catálogo de propuestas (demos.html) ═══════════════════════════
+   El aviso de que estas páginas no son encargos va con borde lateral
+   y no con fondo de color: tiene que leerse como una aclaración
+   honesta, no como una alerta de error.                             */
+.aviso {
+  max-width: 62ch;
+  margin: 1.6rem 0 0;
+  padding: .9rem 0 .9rem 1.2rem;
+  border-left: 2px solid var(--cian);
+  color: var(--tenue);
+  font-size: var(--paso--1);
+  line-height: 1.6;
+}
+.aviso strong { color: var(--hueso); }
+
+.filtros {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .5rem;
+  margin: 2.4rem 0 1.8rem;
+}
+
+.filtro {
+  font-family: var(--mono);
+  font-size: var(--paso--1);
+  color: var(--tenue);
+  background: transparent;
+  border: 1px solid rgba(232, 241, 246, .16);
+  border-radius: 999px;
+  padding: .42rem .95rem;
+  cursor: pointer;
+  transition: color .2s, border-color .2s, background-color .2s;
+}
+.filtro:hover { color: var(--hueso); border-color: rgba(232, 241, 246, .38); }
+.filtro:focus-visible { outline: 2px solid var(--cian); outline-offset: 2px; }
+
+/* El chip activo se marca con el cian de la marca sobre fondo propio:
+   el color solo no alcanza cuando hay nueve chips en dos filas. */
+.filtro--activo {
+  color: var(--fondo);
+  background: var(--cian);
+  border-color: var(--cian);
+}
+.filtro__n { opacity: .6; margin-left: .35rem; }
+.filtro--activo .filtro__n { opacity: .75; }
+
+.filtros__vacio { color: var(--tenue); margin: 2rem 0; }
+
+/* La miniatura es un enlace, pero el nombre de al lado lleva al mismo
+   sitio: se saca del orden de tabulación para no repetir la parada. */
+a.proyecto__vista { display: block; }
+
+/* Texto solo para lectores de pantalla: "Ver la propuesta" repetido 52
+   veces no le dice a nadie cuál es cuál fuera de contexto. */
+.vo {
+  position: absolute;
+  width: 1px; height: 1px;
+  padding: 0; margin: -1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+/* El enlace al catálogo de propuestas va más arriba y más legible que
+   el pie de la sección: es una invitación a seguir mirando, no una
+   nota al pie. */
+.proyectos__cta {
+  margin-top: 2.6rem;
+  max-width: 60ch;
+  color: var(--hueso);
+  line-height: 1.65;
+}
