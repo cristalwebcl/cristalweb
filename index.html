@@ -40,10 +40,9 @@
 <header class="cabecera" id="cabecera">
   <div class="contenedor cabecera__fila">
     <a class="marca" href="#inicio" aria-label="CristalWeb, ir al inicio">
-      <svg class="marca__gema" viewBox="0 0 24 30" aria-hidden="true" focusable="false">
-        <path d="M12 1 3 9v12l9 8 9-8V9Z" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"/>
-        <path d="M3 9h18M12 1v28M3 21l9-8 9 8" fill="none" stroke="currentColor" stroke-width="1" stroke-linejoin="round" opacity=".55"/>
-      </svg>
+      <!-- El emblema oficial (la C octogonal con la W), procesado por
+           procesar-logo.ps1 desde el original de imagenes/. -->
+      <img class="marca__gema" src="assets/logos/cw-marca.png" alt="" width="162" height="160" decoding="async">
       <span class="marca__texto">Cristal<span class="marca__web">Web</span></span>
     </a>
 
@@ -74,11 +73,9 @@
 -->
 <section class="portada" id="inicio">
   <div class="portada__fondo" aria-hidden="true">
-<!-- Los fondos vienen desenfocados desde procesar-imagenes.ps1, no
-         estirados: un JPEG chico agrandado muestra los bloques de compresión
-         y se ve pixelado. Desenfocarlos de verdad además los hace pesar
-         menos, porque no queda alta frecuencia que codificar. -->
-    <img class="portada__foto" src="assets/fondos/gotas.jpg" alt="" width="3840" height="2160" decoding="async">
+    <!-- Sin foto de fondo: la portada se sostiene con el halo, la reja y
+         el cristal SVG. La textura de gotas que hubo aca se saco a pedido
+         de Yordy — competia con el cristal y se veia sucia. -->
     <span class="portada__halo"></span>
     <span class="portada__reja"></span>
   </div>
@@ -539,8 +536,8 @@
 <!-- ═══════════════════════ CONTACTO ═══════════════════════ -->
 <section class="seccion contacto" id="contacto">
   <div class="contenedor contacto__caja">
-    <div class="contacto__fondo" aria-hidden="true">
-      <img src="assets/fondos/gotas.jpg" alt="" width="3840" height="2160" loading="lazy" decoding="async">
+    <div class="contacto__logo reveal" aria-hidden="true">
+      <img src="assets/logos/cw-lockup.png" alt="" width="721" height="777" loading="lazy" decoding="async">
     </div>
     <div class="contacto__contenido">
       <p class="etiqueta reveal">Contacto</p>

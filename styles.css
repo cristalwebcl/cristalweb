@@ -323,7 +323,7 @@ a { color: inherit; }
   font-weight: 600;
   letter-spacing: -.02em;
 }
-.marca__gema { width: 22px; height: 27px; color: var(--cian); flex: none; }
+.marca__gema { width: 26px; height: 26px; object-fit: contain; flex: none; }
 .marca__web { color: var(--cian); }
 
 .menu__lista { display: flex; align-items: center; gap: clamp(1rem, 2.2vw, 2rem); }
@@ -410,17 +410,8 @@ a { color: inherit; }
 
 .portada__fondo { position: absolute; inset: 0; pointer-events: none; overflow: hidden; }
 
-.portada__foto {
-  position: absolute;
-  inset: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  opacity: .24;
-  filter: saturate(1.4);
-  mask-image: radial-gradient(ellipse 90% 70% at 60% 35%, #000 10%, transparent 75%);
-  -webkit-mask-image: radial-gradient(ellipse 90% 70% at 60% 35%, #000 10%, transparent 75%);
-}
+/* .portada__foto ya no existe: la textura de gotas se saco a pedido de
+   Yordy. La portada se sostiene con el halo, la reja y el cristal. */
 
 .portada__halo {
   position: absolute;
@@ -875,14 +866,6 @@ a { color: inherit; }
     radial-gradient(ellipse 90% 90% at 100% 100%, rgba(180, 155, 245, .1), transparent 60%),
     var(--fondo-alto);
 }
-.contacto__fondo { position: absolute; inset: 0; pointer-events: none; overflow: hidden; }
-.contacto__fondo img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  opacity: .22;
-  filter: saturate(1.5);
-}
 .contacto__contenido { position: relative; }
 
 .contacto__vias {
@@ -956,7 +939,7 @@ a.via:hover {
    principal. Va dentro de @supports como mejora: donde no exista
    (Firefox, por ahora), el fondo simplemente queda quieto. */
 @supports (animation-timeline: view()) {
-  .portada__foto, .tuyo__fondo img, .valores-sec__fondo img, .contacto__fondo img {
+  .tuyo__fondo img, .valores-sec__fondo img {
     animation: deriva linear both;
     animation-timeline: view();
     animation-range: entry 0% exit 100%;
@@ -974,7 +957,7 @@ a.via:hover {
 
   .cristal__giro, .faceta, .cristal__barrido, .destello, .chispa,
   .portada__halo, .portada__cristal, .carrusel__cinta,
-  .portada__foto, .tuyo__fondo img, .valores-sec__fondo img, .contacto__fondo img {
+  .tuyo__fondo img, .valores-sec__fondo img {
     animation: none !important;
   }
   .chispa { opacity: .9; }
@@ -990,4 +973,22 @@ a.via:hover {
   .js .reveal.visible { transition: opacity .45s ease; }
 
   .boton:hover, .proyecto:hover, a.via:hover, .marca-h:hover, .socio { transform: none !important; }
+}
+
+/* ── EL LOGO EN EL CONTACTO ──
+   El lockup oficial (emblema + nombre), procesado por procesar-logo.ps1.
+   Va como marca de agua grande al costado derecho de la caja: llena el
+   espacio que dejo el fondo de gotas sin competir con el texto. En
+   angosto desaparece, porque ahi taparia las vias de contacto. */
+.contacto__caja { display: grid; grid-template-columns: 1fr; }
+.contacto__logo {
+  position: absolute; right: clamp(1rem, 4vw, 3rem); top: 50%;
+  transform: translateY(-50%);
+  width: min(30%, 300px);
+  opacity: .16;
+  pointer-events: none;
+}
+.contacto__logo img { width: 100%; height: auto; }
+@media (max-width: 760px) {
+  .contacto__logo { display: none; }
 }
