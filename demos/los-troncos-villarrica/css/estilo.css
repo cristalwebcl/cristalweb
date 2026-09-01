@@ -1,0 +1,740 @@
+/* ══════════════════════════════════════════════════════════════════
+   LOS TRONCOS — parrilla · Villarrica
+   Demo 138 · tanda P4
+
+   IDENTIDAD — «TABLA Y PUNTO»
+   Carbón mate de fondo, madera clara de tabla de cortar donde hay que
+   leer, y el ROSADO DE LA CARNE como único color — pero usado como
+   INFORMACIÓN, no como decoración: los cuatro tonos de la escala son
+   literalmente cómo se ve el corte por dentro en cada punto. Es la
+   primera paleta del registro donde el acento ES el dato.
+
+   DESLINDE DEL ROSADO: el rosa té de la 119 es calma dental,
+   empolvado y frío; el coral de la 156 es accesorio de mascota, vivo
+   y sintético; el palo rosa de la 178 es tapicería antigua. Éste es
+   CÁRNICO: cálido, jugoso, con la saturación bajando a medida que la
+   carne se cocina — cuatro tonos que cuentan una secuencia.
+
+   DESLINDE DEL CARBÓN: el caucho de la 133 es negro industrial mate
+   de neumático, neutro; el negro hormiga de la 126 es cálido con
+   ladrillo; el petróleo de la 132 brilla con tornasol. Éste es carbón
+   DE FUEGO: en la portada lleva un fondo apenas rojizo debajo, como
+   brasa vista a través de la ceniza.
+
+   TRÍO TIPOGRÁFICO
+   · Display: Chango — nueva en el registro. Slab grasa de rótulo
+     pintado: la letra de la carnicería y del asado, sin ironía.
+   · Cuerpo: Sarala — 4 usos, humanista tranquila que aguanta el
+     fondo oscuro.
+   · Dato: Space Mono — 6 usos, para los minutos y los rótulos.
+
+   CABECERA 104ª DEL OFICIO: LA REJILLA — cuatro barras horizontales
+   con dos patas en V. Ninguna otra cabecera del registro es una
+   parrilla de fuego.
+
+   FONDO NUEVO: EL HUMO DE LA REJILLA — tres hilos finos que nacen de
+   una línea baja y suben ondulando, cada uno a su ritmo. DESLINDE
+   OBLIGATORIO (tres humos en la tanda): el de la 101 es de FOGÓN,
+   ancho y ceremonial; el de la 159 es UN hilo lejano de cráter; éste
+   son HILOS MÚLTIPLES finos que nacen de una línea — la rejilla — y
+   suben juntos. Con reduced-motion se esconden: humo congelado
+   parece mancha.
+
+   ESTRUCTURA: C (la tabla es la página). DESLINDE con la 89, 96, 114,
+   121, 145, 158, 160, 180 y 184, que también son C: acá cada fila
+   lleva una MUESTRA DE COLOR — la tabla no describe el punto, lo
+   enseña. Es la única C del registro cuya columna central es un color.
+   ══════════════════════════════════════════════════════════════════ */
+
+:root {
+  --carbon:     #191512;  /* carbón mate cálido: la base              */
+  --carbon-h:   #0F0C0A;
+  --tabla:      #E8DCC8;  /* madera clara de tabla de cortar          */
+  --tabla-b:    #F4EDE0;
+  --claro:      #EDE5DA;  /* texto sobre carbón                       */
+  --claro-s:    #A89C90;  /* 6,8:1 sobre carbón                       */
+  --tinta:      #241D18;  /* 13,4:1 sobre tabla                       */
+  --tinta-s:    #5E5248;  /* 5,6:1 sobre tabla                        */
+  --rosa:       #E8A398;  /* 8,7:1 sobre carbón — texto en oscuro     */
+  --rosa-h:     #8E3A34;  /* 5,5:1 sobre tabla  — texto en claro      */
+  --linea:      #332B25;
+
+  /* La escala de puntos: NO son decoración, son el dato. Van de rojo
+     crudo a pardo cocido, que es lo que se ve al abrir el corte. */
+  --p1: #B03A38;  /* inglesa      */
+  --p2: #C4685E;  /* a punto      */
+  --p3: #C6968A;  /* tres cuartos */
+  --p4: #A08878;  /* cocida       */
+
+  --display: 'Chango', Impact, sans-serif;
+  --cuerpo:  'Sarala', system-ui, sans-serif;
+  --mono:    'Space Mono', ui-monospace, monospace;
+
+  --ancho: 1080px;
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+[hidden] { display: none !important; }
+
+html { scroll-behavior: smooth; }
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+
+body {
+  margin: 0;
+  background: var(--carbon);
+  color: var(--claro);
+  font-family: var(--cuerpo);
+  font-size: clamp(1rem, .95rem + .3vw, 1.08rem);
+  line-height: 1.62;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2 { font-family: var(--display); font-weight: 400; line-height: 1.04; margin: 0; }
+h3 { font-family: var(--display); font-weight: 400; margin: 0; line-height: 1.2; }
+p { margin: 0 0 1.05em; }
+a { color: inherit; }
+
+/* ── Banda de propuesta ───────────────────────────────────────── */
+.propuesta {
+  background: var(--rosa-h); color: #FFF0EC;
+  padding: 1.1rem clamp(1.1rem, 5vw, 3rem);
+}
+.propuesta__que { font-size: .84rem; margin: 0 0 .25rem; }
+.propuesta .propuesta__gancho { font-size: .84rem; margin: 0; max-width: 66ch; color: #F2D2CD; }
+.propuesta b { font-weight: 700; }
+
+/* ── Cabecera fantasma ────────────────────────────────────────── */
+.cab {
+  position: sticky; top: 0; z-index: 40;
+  display: flex; align-items: center; gap: clamp(1rem, 4vw, 2.5rem);
+  padding: .75rem clamp(1.1rem, 5vw, 3rem);
+  background: var(--carbon-h);
+  border-bottom: 1px solid var(--linea);
+  transition: background .35s ease, border-color .35s ease, transform .35s ease;
+}
+/* Por defecto sólida: si el JS no corre, la cabecera se lee igual. */
+.cab.cab--ghost  { background: transparent; border-color: transparent; }
+.cab.cab--oculta { transform: translateY(-110%); }
+
+.cab__marca { display: flex; align-items: center; gap: .7rem; text-decoration: none; }
+.cab__nombre { font-family: var(--display); font-size: 1.05rem; }
+
+/* LA REJILLA — cabecera 104ª. Cuatro barras y dos patas en V: la
+   parrilla vista de frente, que es como se ve al llegar a la mesa. */
+.rejilla { position: relative; flex: none; width: 28px; height: 20px; }
+.rejilla::before {  /* las cuatro barras */
+  content: ''; position: absolute; left: 0; top: 0;
+  width: 28px; height: 12px;
+  background:
+    repeating-linear-gradient(to bottom,
+      var(--claro) 0 2px, transparent 2px 4px);
+}
+.rejilla::after {   /* las dos patas en V */
+  content: ''; position: absolute; left: 5px; bottom: 0;
+  width: 18px; height: 8px;
+  border-left: 2px solid var(--claro);
+  border-right: 2px solid var(--claro);
+  transform: perspective(20px) rotateX(-18deg);
+}
+
+.cab__nav { display: none; gap: 1.5rem; margin-left: auto; font-size: .9rem; }
+.cab__nav a { text-decoration: none; color: var(--claro-s); }
+.cab__nav a:hover, .cab__nav a:focus-visible { color: var(--rosa); }
+@media (min-width: 880px) { .cab__nav { display: flex; } }
+
+.cab__wsp { margin-left: auto; text-align: right; text-decoration: none; line-height: 1.15; }
+@media (min-width: 880px) { .cab__wsp { margin-left: 0; } }
+.cab__wsp-rot {
+  display: block; font-family: var(--mono); font-size: .64rem;
+  letter-spacing: .16em; text-transform: uppercase; color: var(--rosa);
+}
+.cab__wsp-num { display: block; font-weight: 700; font-size: .95rem; }
+
+/* ══════════════ PORTADA ══════════════ */
+.portada {
+  position: relative; overflow: hidden;
+  min-height: 88svh;
+  display: flex; align-items: flex-end;
+  padding: clamp(3rem, 9vw, 6rem) clamp(1.1rem, 5vw, 3rem) clamp(3rem, 8vw, 5rem);
+  /* la brasa bajo la ceniza: el rojizo que separa este carbón del
+     negro industrial de la 133 */
+  background:
+    radial-gradient(90% 55% at 50% 118%, rgba(176,58,56,.30), transparent 70%),
+    var(--carbon);
+}
+
+/* FONDO — EL HUMO DE LA REJILLA. Tres hilos que nacen de la línea de
+   la parrilla y suben ondulando, cada uno con su ritmo. */
+.humo { position: absolute; left: 0; right: 0; bottom: 0; height: 62%; pointer-events: none; overflow: hidden; }
+.humo::before {  /* la línea de la rejilla de donde nace el humo */
+  content: ''; position: absolute; left: 12%; right: 12%; bottom: 0;
+  height: 1px; background: rgba(237,229,218,.10);
+}
+.humo span {
+  position: absolute; bottom: 0;
+  width: 2px; height: 45%;
+  background: linear-gradient(to top, rgba(237,229,218,.16), rgba(237,229,218,0));
+  filter: blur(1.5px);
+  transform-origin: bottom center;
+}
+.humo .h1 { left: 26%; animation: sube 11s ease-in-out infinite; }
+.humo .h2 { left: 47%; animation: sube 14s ease-in-out infinite 2.5s; }
+.humo .h3 { left: 68%; animation: sube 12.5s ease-in-out infinite 5s; }
+@keyframes sube {
+  0%       { transform: translateY(20%) scaleY(.7) skewX(0deg);   opacity: 0; }
+  20%      { opacity: 1; }
+  50%      { transform: translateY(-30%) scaleY(1.1) skewX(6deg); opacity: .9; }
+  80%      { opacity: .5; }
+  100%     { transform: translateY(-90%) scaleY(1.4) skewX(-4deg); opacity: 0; }
+}
+/* Humo congelado parece mancha: se esconde. */
+@media (prefers-reduced-motion: reduce) { .humo { display: none; } }
+
+.portada__texto { position: relative; max-width: min(92vw, 42rem); }
+.sitio {
+  font-family: var(--mono); font-size: .72rem;
+  letter-spacing: .18em; text-transform: uppercase;
+  color: var(--rosa); margin-bottom: 1.1rem;
+}
+.portada h1 { font-size: clamp(2.2rem, 6.5vw, 4.4rem); margin-bottom: 1.2rem; }
+.portada .bajada { max-width: 46ch; color: var(--claro-s); }
+
+.specs { display: flex; flex-wrap: wrap; gap: 2.4rem; margin: 2rem 0 0; }
+.spec dt {
+  font-family: var(--mono); font-size: .64rem;
+  letter-spacing: .14em; text-transform: uppercase;
+  color: var(--claro-s); margin-bottom: .2rem;
+}
+.spec dd {
+  margin: 0; font-family: var(--display);
+  font-size: clamp(2rem, 5.5vw, 3rem); line-height: 1;
+  color: var(--rosa); font-variant-numeric: tabular-nums;
+}
+
+/* ══════════════ LA ESCALA DE PUNTOS ══════════════ */
+.puntos {
+  background: var(--tabla); color: var(--tinta);
+  padding: clamp(3.5rem, 10vw, 6.5rem) clamp(1.1rem, 5vw, 3rem);
+}
+.puntos__cabecera { max-width: var(--ancho); margin: 0 auto 2.6rem; }
+.antetitulo {
+  font-family: var(--mono); font-size: .7rem;
+  letter-spacing: .18em; text-transform: uppercase;
+  color: var(--rosa-h); margin-bottom: .8rem;
+}
+.antetitulo--claro { color: var(--rosa); }
+.puntos h2 { font-size: clamp(2rem, 6vw, 3.6rem); margin-bottom: 1.1rem; }
+.puntos__cabecera > p { max-width: 58ch; color: var(--tinta-s); }
+
+.marca-ejemplo::before {
+  content: attr(data-ejemplo);
+  display: inline-block;
+  font-family: var(--mono); font-size: .68rem;
+  letter-spacing: .06em; text-transform: uppercase;
+  color: var(--rosa-h);
+  border-left: 2px solid var(--rosa-h);
+  padding-left: .6rem;
+}
+.marca-ejemplo--claro::before { color: var(--rosa); border-left-color: var(--rosa); }
+
+/* La fila: nombre · MUESTRA DE COLOR · descripción · minutos.
+   La muestra es el dato, por eso ocupa una columna propia. */
+.escala { list-style: none; margin: 0 auto; padding: 0; max-width: var(--ancho); }
+.punto {
+  display: grid; grid-template-columns: 1fr; gap: .5rem 1.6rem;
+  padding: 1.4rem 0; border-top: 1px solid rgba(36,29,24,.18);
+  align-items: center;
+}
+@media (min-width: 820px) {
+  /* 9rem partia «A punto» en dos lineas: Chango es ancha. */
+  .punto { grid-template-columns: 11rem 5.5rem minmax(0,1fr) 7rem; }
+}
+.punto:last-child { border-bottom: 1px solid rgba(36,29,24,.18); }
+.punto__n {
+  margin: 0; font-family: var(--display);
+  font-size: clamp(1.3rem, 3.2vw, 1.8rem); line-height: 1.1;
+}
+/* La muestra: un rectángulo con el borde tostado y el centro del
+   color del punto — el corte visto de canto. */
+.punto__muestra {
+  height: 44px; border-radius: 3px;
+  border: 3px solid #5A4032;
+  box-shadow: inset 0 0 0 2px rgba(90,64,50,.5);
+}
+.punto__muestra--1 { background: var(--p1); }
+.punto__muestra--2 { background: var(--p2); }
+.punto__muestra--3 { background: var(--p3); }
+.punto__muestra--4 { background: var(--p4); }
+.punto__txt p { margin: 0; color: var(--tinta-s); max-width: 52ch; font-size: .97rem; }
+.punto__t {
+  margin: 0; font-family: var(--mono); font-size: .82rem;
+  color: var(--rosa-h);
+}
+@media (min-width: 820px) { .punto__t { text-align: right; } }
+
+.ojo {
+  max-width: min(var(--ancho), 66ch); margin: 2.2rem auto 0;
+  border-left: 4px solid var(--rosa-h); padding-left: 1.2rem;
+}
+.ojo p { margin: 0; color: var(--tinta-s); }
+.ojo b { color: var(--tinta); font-weight: 700; }
+
+.falta {
+  font-family: var(--mono); font-size: .78rem;
+  color: var(--rosa-h); border-bottom: 1px dashed var(--rosa-h);
+}
+/* El acento tiene dos caras y el FONDO decide cuál. */
+.cuantos .falta { color: var(--rosa); border-bottom-color: var(--rosa); }
+
+/* ══════════════ PARA CUÁNTOS ══════════════ */
+.cuantos {
+  background: var(--carbon);
+  padding: clamp(3.5rem, 10vw, 6.5rem) clamp(1.1rem, 5vw, 3rem);
+}
+.cuantos__cuerpo { max-width: var(--ancho); margin: 0 auto; }
+.cuantos h2 { font-size: clamp(2rem, 6vw, 3.6rem); margin-bottom: 1.1rem; }
+.cuantos .entrada { max-width: 56ch; color: var(--claro-s); }
+
+.tablas { display: grid; gap: 1.3rem; margin: 2.2rem 0 1.6rem; }
+@media (min-width: 820px) { .tablas { grid-template-columns: repeat(3, 1fr); gap: 1.8rem; } }
+.tabla-item {
+  background: var(--carbon-h);
+  border-top: 3px solid var(--rosa);
+  padding: 1.3rem 1.4rem;
+}
+.tabla-item__n { font-family: var(--display); font-size: 1.4rem; margin-bottom: .8rem; }
+.tabla-item ul { list-style: none; margin: 0 0 1rem; padding: 0; }
+.tabla-item li {
+  padding: .45rem 0; border-bottom: 1px solid var(--linea);
+  font-size: .95rem; color: var(--claro-s);
+}
+.tabla-item__p { margin: 0; }
+
+.cuantos .firma { font-size: .9rem; color: var(--claro-s); max-width: 60ch; }
+
+.reservar { border-top: 1px solid var(--linea); margin-top: 2.4rem; padding-top: 2.2rem; }
+.reservar h3 { font-size: clamp(1.4rem, 4vw, 2rem); margin-bottom: .7rem; }
+.reservar > p { color: var(--claro-s); max-width: 48ch; }
+.form { max-width: 560px; margin-top: 1.4rem; }
+.campo { margin-bottom: 1.1rem; }
+.campo label {
+  display: block; font-family: var(--mono); font-size: .66rem;
+  letter-spacing: .14em; text-transform: uppercase;
+  color: var(--claro-s); margin-bottom: .4rem;
+}
+.campo input {
+  width: 100%; padding: .75rem .85rem;
+  background: var(--tabla-b); color: var(--tinta);
+  border: 1px solid var(--linea); border-radius: 0;
+  font-family: var(--cuerpo); font-size: 1rem;
+}
+.campo input:focus-visible { outline: 2px solid var(--rosa); outline-offset: 1px; }
+
+.resumen {
+  font-family: var(--mono); font-size: .82rem; line-height: 1.55;
+  color: var(--claro-s);
+  border-left: 2px solid var(--rosa);
+  padding: .55rem 0 .55rem .9rem;
+  margin: 1.3rem 0;
+  white-space: pre-wrap;
+}
+.fantasma {
+  display: inline-block; text-decoration: none;
+  font-family: var(--display); font-size: 1rem;
+  padding: .8rem 1.7rem;
+  border: 1px solid var(--rosa); color: var(--rosa);
+  transition: background .25s ease, color .25s ease;
+}
+.fantasma:hover, .fantasma:focus-visible { background: var(--rosa); color: #2A100C; }
+.reservar .reservar__nota { font-size: .88rem; color: var(--claro-s); margin-top: 1.2rem; max-width: 54ch; }
+
+/* ══════════════ PARA EL DUEÑO ══════════════ */
+.dueno {
+  background: var(--tabla); color: var(--tinta);
+  padding: clamp(3rem, 8vw, 5rem) clamp(1.1rem, 5vw, 3rem);
+}
+.dueno h2 { font-size: clamp(1.5rem, 4vw, 2rem); margin: 0 auto 2rem; max-width: var(--ancho); }
+.dueno__cols { max-width: var(--ancho); margin: 0 auto; display: grid; gap: 1.8rem; }
+@media (min-width: 820px) { .dueno__cols { grid-template-columns: repeat(3, 1fr); gap: 2.4rem; } }
+.dueno__cols h3 {
+  font-family: var(--mono); font-size: .7rem;
+  letter-spacing: .16em; text-transform: uppercase;
+  color: var(--rosa-h); margin-bottom: .6rem;
+}
+.dueno__cols p { font-size: .94rem; color: var(--tinta-s); margin: 0; }
+.dueno__cierre { max-width: var(--ancho); margin: 2.5rem auto 0; display: flex; flex-wrap: wrap; gap: 1.6rem; }
+.flecha {
+  font-weight: 700; font-size: .96rem;
+  color: var(--rosa-h); text-decoration: none;
+  border-bottom: 1px solid currentColor; padding-bottom: .12rem;
+}
+.flecha:hover, .flecha:focus-visible { color: var(--tinta); }
+
+.pie {
+  background: var(--carbon-h);
+  padding: 2rem clamp(1.1rem, 5vw, 3rem);
+}
+.pie p { max-width: 62ch; margin: 0 auto; font-size: .82rem; color: var(--claro-s); }
+
+/* ══════════════ REVEALS ══════════════ */
+.js .rev { opacity: 0; transform: translateY(18px); }
+.js .rev.on { opacity: 1; transform: none; transition: opacity .7s ease, transform .7s ease; }
+@media (prefers-reduced-motion: reduce) { .js .rev { opacity: 1; transform: none; } }
+
+/* ══════════════════════════════════════════════════════════════════
+   LAS IMÁGENES DE RUBRO — seis tratamientos
+   ══════════════════════════════════════════════════════════════════
+   La página no puede ser texto sobre fondo plano de arriba abajo. Van
+   seis apariciones distintas, para que el ojo no vea siempre lo mismo:
+   portada disuelta, aura de color, media pantalla, cita a sangre, tira
+   de tres, y la galería con las fotos propias del negocio.
+
+   LA REGLA: la foto no se ensucia para poder leer encima. Lo que
+   sostiene el contraste es un gradiente por zona. La ÚNICA excepción es
+   el aura, donde el desenfoque no es un parche sino el efecto entero.
+
+   Procedencia de cada archivo: imagenes/FUENTES.txt
+   ══════════════════════════════════════════════════════════════════ */
+
+/* ── 1 · PORTADA ── */
+/* position/isolation acá y no heredadas: hay demos cuya .portada no es
+   posicionada, y entonces el .portada__foto absoluto se cuelga del body
+   y tapa el titular entero. El z-index del texto va por lo mismo. */
+.portada--foto { position: relative; isolation: isolate; overflow: hidden; padding-top: clamp(1.5rem, 3.5vh, 3.5rem); }
+.portada--foto .portada__texto { position: relative; z-index: 2; max-width: 40rem; }
+.portada__foto { position: absolute; z-index: 0; inset: 0; overflow: hidden; pointer-events: none; }
+.portada__foto img {
+  display: block; width: 100%; height: 100%;
+  object-fit: cover; object-position: 50% 54%;
+  -webkit-mask-image: linear-gradient(90deg, transparent 0%, transparent 20%,
+              rgba(0,0,0,.32) 34%, rgba(0,0,0,.78) 50%, #000 62%, #000 100%);
+          mask-image: linear-gradient(90deg, transparent 0%, transparent 20%,
+              rgba(0,0,0,.32) 34%, rgba(0,0,0,.78) 50%, #000 62%, #000 100%);
+}
+/* El velo se escribe ENTERO en rgba y termina en alfa 0. Con var() en
+   los primeros stops habia demos donde el gradiente tapaba la foto de
+   punta a punta —paso tres veces— y costaba una captura cada vez
+   entenderlo. En rgba puro el degradado es el mismo y no falla. */
+.portada__foto::after {
+  content: ""; position: absolute; inset: 0;
+  background: linear-gradient(90deg, rgba(25,21,18,1) 0%, rgba(25,21,18,1) 26%,
+              rgba(25,21,18,.70) 42%, rgba(25,21,18,.28) 62%, rgba(25,21,18,.08) 80%,
+              rgba(25,21,18,0) 94%);
+}
+@media (prefers-reduced-motion: no-preference) {
+  .portada__foto img { animation: respira 46s ease-in-out infinite alternate; }
+}
+@keyframes respira {
+  from { transform: scale(1.04) translate3d(0, 0, 0); }
+  to   { transform: scale(1.11) translate3d(-1.8%, -1.2%, 0); }
+}
+.js .portada--foto .portada__foto { opacity: 0; }
+.js .portada--foto.ok .portada__foto { opacity: 1; transition: opacity 1.1s ease; }
+.js .portada.rev,
+.js .portada.rev.ok { opacity: 1; transform: none; transition: none; }
+@media (max-width: 860px) {
+  .portada--foto { padding-top: 36svh; }
+  .portada__foto img {
+    object-position: 50% 44%;
+    -webkit-mask-image: linear-gradient(180deg, #000 0%, #000 30%, rgba(0,0,0,.34) 58%, transparent 78%);
+            mask-image: linear-gradient(180deg, #000 0%, #000 30%, rgba(0,0,0,.34) 58%, transparent 78%);
+  }
+  .portada__foto::after {
+    background: linear-gradient(180deg, rgba(25,21,18,0) 0%, rgba(25,21,18,.30) 42%, var(--carbon) 70%);
+  }
+}
+
+/* ── 2 · AURA DE COLOR ── */
+#puntos { position: relative; isolation: isolate; overflow: hidden; }
+.aura { position: absolute; z-index: -1; inset: -12% -8% auto -8%; height: 78%; pointer-events: none; }
+.aura img {
+  display: block; width: 100%; height: 100%; object-fit: cover;
+  /* Acá el desenfoque ES el efecto: la foto deja de leerse y queda la luz. */
+  filter: blur(64px) saturate(1.45);
+  opacity: .38;
+  transform: scale(1.25);
+  /* Y se apaga EN LA IMAGEN, no con un velo encima. Un ::after que pinta
+     el fondo apaga solo DENTRO del div: en el borde de abajo queda un
+     corte recto a media seccion. Con la mascara la imagen misma se
+     desvanece y no hay borde que cortar. */
+  -webkit-mask-image: radial-gradient(ellipse 74% 58% at 50% 34%,
+              #000 0%, #000 26%, rgba(0,0,0,.55) 52%, transparent 82%);
+          mask-image: radial-gradient(ellipse 74% 58% at 50% 34%,
+              #000 0%, #000 26%, rgba(0,0,0,.55) 52%, transparent 82%);
+}
+@media (prefers-reduced-motion: no-preference) {
+  .aura img { animation: deriva-aura 68s ease-in-out infinite alternate; }
+}
+@keyframes deriva-aura {
+  from { transform: scale(1.25) translate3d(-3%, 0, 0); }
+  to   { transform: scale(1.38) translate3d(3%, -2%, 0); }
+}
+
+/* ── 3 · MEDIA PANTALLA ── */
+.mitades {
+  display: grid; grid-template-columns: 1fr 1fr; align-items: stretch;
+  background: var(--carbon-h);
+  /* overflow hidden porque las entradas son laterales: mientras el texto
+     se desliza y la foto entra a escala, ambos se salen unos píxeles y
+     aparece scroll horizontal por un segundo. */
+  overflow: hidden;
+}
+.mitades__foto { position: relative; min-height: 62svh; overflow: hidden; }
+.mitades__foto img { display: block; width: 100%; height: 100%; object-fit: cover; object-position: 52% 50%; }
+.mitades__texto {
+  padding: clamp(2.5rem, 6vw, 5rem) clamp(1.4rem, 4vw, 3.5rem);
+  display: flex; flex-direction: column; justify-content: center;
+  color: var(--claro);
+}
+.mitades__ante {
+  font-family: var(--dato); font-size: .72rem; letter-spacing: .16em;
+  text-transform: uppercase; color: var(--claro-s); margin: 0 0 .9rem;
+}
+.mitades h2 {
+  font-family: var(--display); font-weight: 500;
+  font-size: clamp(1.7rem, 3.6vw, 2.8rem); line-height: 1.08;
+  margin: 0 0 1rem; color: var(--claro);
+}
+.mitades__texto p:last-child {
+  margin: 0; font-size: 1rem; line-height: 1.65; color: var(--claro); max-width: 34rem;
+}
+.js .mitades__texto.rev { opacity: 0; transform: translateX(1.6rem); }
+.js .mitades__foto.rev  { opacity: 0; transform: scale(1.04); }
+.js .mitades__texto.rev.ok,
+.js .mitades__foto.rev.ok {
+  opacity: 1; transform: none;
+  transition: opacity .9s ease, transform 1.1s cubic-bezier(.2,.7,.2,1);
+}
+@media (max-width: 780px) {
+  .mitades { grid-template-columns: 1fr; }
+  .mitades__foto { min-height: 44svh; }
+}
+
+/* ── 4 · LA CITA A SANGRE ── */
+.cita {
+  position: relative; isolation: isolate; min-height: 70svh;
+  display: flex; align-items: center; justify-content: center;
+  padding: clamp(3rem, 9vw, 7rem) clamp(1.2rem, 5vw, 4rem);
+  background: var(--carbon); overflow: hidden;
+}
+.cita__foto { position: absolute; inset: 0; z-index: -1; overflow: hidden; }
+.cita__foto img { display: block; width: 100%; height: 100%; object-fit: cover; object-position: 50% 44%; }
+/* Velo parejo y fuerte: el texto va centrado y grande, encima de la foto
+   entera. Calculado sobre el peor caso —imagen del color contrario
+   detrás— para que el ratio aguante sin ensuciar la imagen. */
+.cita__foto::after {
+  content: ""; position: absolute; inset: 0;
+  background: linear-gradient(180deg, rgba(25,21,18,.62) 0%,
+              rgba(25,21,18,.80) 45%, rgba(25,21,18,.88) 100%);
+}
+.cita__texto { margin: 0; max-width: 42rem; text-align: center; color: var(--claro); }
+.cita__texto p {
+  font-family: var(--display); font-weight: 500;
+  font-size: clamp(1.8rem, 4.6vw, 3.2rem); line-height: 1.16;
+  margin: 0; color: var(--claro);
+}
+.cita__eco {
+  display: block; margin-top: 1.1rem;
+  font-family: var(--dato); font-size: .82rem; letter-spacing: .1em;
+  text-transform: uppercase; color: var(--rosa);
+}
+.js .cita__texto.rev { opacity: 0; transform: translateY(16px); }
+.js .cita__texto.rev.ok {
+  opacity: 1; transform: none;
+  transition: opacity 1s ease, transform 1s cubic-bezier(.2,.7,.2,1);
+}
+@media (prefers-reduced-motion: no-preference) {
+  .cita__foto img { animation: respira-cita 58s ease-in-out infinite alternate; }
+}
+@keyframes respira-cita {
+  from { transform: scale(1.06) translate3d(0, 0, 0); }
+  to   { transform: scale(1.13) translate3d(1.4%, -1%, 0); }
+}
+
+/* ── 5 · LA TIRA ── */
+.tira { display: grid; grid-template-columns: repeat(3, 1fr); gap: 2px; background: var(--linea); }
+.tira__pieza { margin: 0; overflow: hidden; height: 34svh; min-height: 220px; }
+.tira__pieza img {
+  display: block; width: 100%; height: 100%; object-fit: cover;
+  transition: transform 1.1s cubic-bezier(.2,.7,.2,1);
+}
+@media (hover: hover) and (pointer: fine) {
+  .tira__pieza:hover img { transform: scale(1.05); }
+}
+.js .tira__pieza.rev { opacity: 0; transform: translateY(1.4rem); }
+.js .tira__pieza.rev.ok {
+  opacity: 1; transform: none;
+  transition: opacity .8s ease, transform .9s cubic-bezier(.2,.7,.2,1);
+}
+.js .tira__pieza.rev.ok:nth-child(2) { transition-delay: .1s; }
+.js .tira__pieza.rev.ok:nth-child(3) { transition-delay: .2s; }
+@media (max-width: 700px) {
+  .tira { grid-template-columns: 1fr 1fr; }
+  .tira__pieza:last-child { grid-column: 1 / -1; height: 28svh; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .js .portada--foto .portada__foto,
+  .js .mitades__texto.rev, .js .mitades__foto.rev,
+  .js .cita__texto.rev, .js .tira__pieza.rev { opacity: 1; transform: none; }
+}
+
+/* ══════ LAS FOTOS ══════
+   Grilla dura, igual que el resto de la pagina: dos arriba y una ancha
+   abajo. Cada figura llega desde un lado distinto — izquierda, derecha,
+   abajo — con un retardo escalonado, para que se lean como tres cosas
+   puestas sobre la mesa y no como un bloque que se enciende. */
+.galeria {
+  padding: clamp(3rem, 8vw, 6rem) clamp(1.2rem, 5vw, 4rem);
+  max-width: 78rem; margin: 0 auto;
+}
+.galeria__titulo {
+  font-family: var(--display); font-weight: 500;
+  font-size: clamp(1.9rem, 4.4vw, 3.1rem); line-height: 1.05;
+  margin: 0 0 .6rem; color: var(--claro);
+}
+.galeria__nota {
+  max-width: 40rem; margin: 0 0 2.2rem;
+  color: var(--claro-s); font-size: .96rem; line-height: 1.6;
+}
+.galeria__grilla { display: grid; gap: clamp(.9rem, 2vw, 1.6rem); grid-template-columns: 1fr 1fr; }
+.gal { margin: 0; background: var(--carbon-h); border: 1px solid var(--linea); padding: .6rem; }
+.gal--abajo { grid-column: 1 / -1; }
+.gal img {
+  display: block; width: 100%; height: 100%;
+  aspect-ratio: 3 / 2; object-fit: cover;
+  border-bottom: 3px solid var(--rosa);
+}
+.gal--abajo img { aspect-ratio: 16 / 7; }
+.gal figcaption {
+  font-family: var(--dato); font-size: .74rem; line-height: 1.5;
+  color: var(--claro-s); padding: .65rem .2rem 0;
+}
+.galeria__falta {
+  font-family: var(--dato); font-size: .74rem; color: var(--claro-s);
+  margin: 1.4rem 0 0; padding-left: 1.1rem; position: relative;
+}
+.galeria__falta::before { content: '·'; position: absolute; left: .3rem; }
+
+.js .gal.rev { opacity: 0; }
+.js .gal--izq.rev   { transform: translateX(-2.4rem); }
+.js .gal--der.rev   { transform: translateX(2.4rem); }
+.js .gal--abajo.rev { transform: translateY(2.4rem) scale(.98); }
+.js .gal.rev.ok {
+  opacity: 1; transform: none;
+  transition: opacity .8s ease, transform 1s cubic-bezier(.2,.7,.2,1);
+}
+.js .gal--der.rev.ok   { transition-delay: .12s; }
+.js .gal--abajo.rev.ok { transition-delay: .22s; }
+
+@media (max-width: 700px) {
+  .galeria__grilla { grid-template-columns: 1fr; }
+  .gal--abajo img { aspect-ratio: 3 / 2; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .js .gal.rev { opacity: 1; transform: none; }
+}
+
+/* ── TAJO: LA FRANJA A SANGRE ──
+   Una franja de foto entre dos secciones. No lleva texto encima, asi
+   que no lleva velo: se ve la foto y punto. Es la aparicion que mas
+   llena la pagina por el peso que cuesta. */
+/* La clase es .tajo y no .banda ni .franja: hay demos que ya usan esos
+   dos nombres para secciones propias, y chocaban. */
+.tajo {
+  position: relative; overflow: hidden;
+  height: clamp(180px, 30svh, 340px);
+  background: var(--carbon-h);
+}
+.tajo img {
+  display: block; width: 100%; height: 100%;
+  object-fit: cover; object-position: 50% 50%;
+}
+@media (prefers-reduced-motion: no-preference) {
+  .tajo img { animation: deriva-tajo 54s ease-in-out infinite alternate; }
+}
+@keyframes deriva-tajo {
+  from { transform: scale(1.06) translate3d(-1.2%, 0, 0); }
+  to   { transform: scale(1.12) translate3d(1.2%, -1.4%, 0); }
+}
+.js .tajo { opacity: 0; }
+.js .tajo.ok { opacity: 1; transition: opacity 1s ease; }
+@media (prefers-reduced-motion: reduce) {
+  .js .tajo { opacity: 1; }
+}
+
+/* ── TELON: la foto detras de una seccion entera ──
+   No es el aura. El aura va reventada a 64 px y se lee como mancha de
+   color; el telon va NITIDO y bajo de opacidad, y se lee como foto.
+   El texto encima se sostiene porque la foto esta al .15, no porque
+   este sucia — que es la regla de siempre. */
+.con-telon { position: relative; isolation: isolate; overflow: hidden; }
+.telon { position: absolute; inset: 0; z-index: -1; pointer-events: none; }
+.telon img {
+  display: block; width: 100%; height: 100%;
+  object-fit: cover; object-position: 50% 44%;
+  opacity: .15;
+  -webkit-mask-image: linear-gradient(180deg, transparent 0%, #000 18%, #000 72%, transparent 100%);
+          mask-image: linear-gradient(180deg, transparent 0%, #000 18%, #000 72%, transparent 100%);
+}
+@media (prefers-reduced-motion: no-preference) {
+  .telon img { animation: deriva-telon 76s ease-in-out infinite alternate; }
+}
+@keyframes deriva-telon {
+  from { transform: scale(1.04) translate3d(0, 0, 0); }
+  to   { transform: scale(1.10) translate3d(-1.6%, -1%, 0); }
+}
+
+/* ── MOSAICO ──
+   Seis piezas en grilla. Es la unica parte de la pagina donde una
+   imagen puede repetirse con otro recorte: a este tamano no se lee
+   como repeticion sino como serie. */
+/* El mosaico trae su propio fondo: sus colores salen del bloque de
+   .mitades y hay demos donde ese fondo es el contrario al del body —
+   el titulo quedaba a 1,00:1, invisible. Con fondo propio el contraste
+   esta garantizado siempre, y va a sangre con el contenido centrado. */
+.mos {
+  background: var(--carbon-h);
+  padding: clamp(2.6rem, 7vw, 5rem) clamp(1.2rem, 5vw, 4rem);
+}
+.mos__titulo {
+  max-width: 82rem; margin-left: auto; margin-right: auto;
+  font-family: var(--display); font-weight: 500;
+  font-size: clamp(1.5rem, 3.4vw, 2.4rem); line-height: 1.08;
+  margin: 0 0 .5rem; color: var(--claro);
+}
+.mos__nota {
+  max-width: 82rem; margin: 0 auto 1.8rem;
+  color: var(); font-size: .94rem; line-height: 1.6;
+}
+.mos__grilla {
+  display: grid; gap: 4px;
+  grid-template-columns: repeat(3, 1fr);
+  max-width: 82rem; margin: 0 auto;
+}
+.mos__p { margin: 0; overflow: hidden; height: clamp(140px, 20svh, 220px); background: var(--carbon-h); }
+.mos__p img {
+  display: block; width: 100%; height: 100%; object-fit: cover;
+  transition: transform 1.1s cubic-bezier(.2,.7,.2,1), filter .6s ease;
+}
+.mos__p:nth-child(1), .mos__p:nth-child(6) { grid-column: span 2; }
+@media (hover: hover) and (pointer: fine) {
+  .mos__p:hover img { transform: scale(1.06); }
+}
+.js .mos__p { opacity: 0; transform: translateY(1.2rem); }
+.js .mos__p.ok {
+  opacity: 1; transform: none;
+  transition: opacity .8s ease, transform .9s cubic-bezier(.2,.7,.2,1);
+}
+.js .mos__p.ok:nth-child(2) { transition-delay: .06s; }
+.js .mos__p.ok:nth-child(3) { transition-delay: .12s; }
+.js .mos__p.ok:nth-child(4) { transition-delay: .18s; }
+.js .mos__p.ok:nth-child(5) { transition-delay: .24s; }
+.js .mos__p.ok:nth-child(6) { transition-delay: .30s; }
+@media (max-width: 760px) {
+  .mos__grilla { grid-template-columns: 1fr 1fr; }
+  .mos__p:nth-child(1), .mos__p:nth-child(6) { grid-column: 1 / -1; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .js .mos__p { opacity: 1; transform: none; }
+}

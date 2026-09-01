@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="es-CL" class="no-js">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Indio Pije Restaurant — Niebla, Valdivia</title>
+<meta name="description" content="Restaurante en Niebla. Qué pescado se está friendo, de dónde llega y cómo reconocer una fritura bien hecha.">
+
+<!-- Política de seguridad de contenido: el navegador sólo puede cargar
+     archivos de este mismo sitio. Sin CDN, sin librerías, sin rastreadores.
+     Ver skills/web-blindada/references/csp-en-pages.md -->
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self'; img-src 'self' data:; font-src 'self'; connect-src 'self'; media-src 'self'; form-action 'self'; base-uri 'none'; frame-src 'none'; object-src 'none'">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+
+<!-- Rescate de la clase .js (regla 2 de la casa). En archivo, sin defer:
+     inline lo bloquearía la CSP. -->
+<script src="js/rescate.js"></script>
+
+<!-- Fuentes propias: cero peticiones a terceros. El preload va SOLO
+     para la display: en esta página la display ES la portada. -->
+<link rel="preload" href="assets/fuentes/leaguegothic-400-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="assets/fuentes.css">
+<link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+
+<div class="propuesta">
+  <p class="propuesta__que">Propuesta de sitio web — preparada para <b>Indio Pije Restaurant</b> por CristalWeb</p>
+  <p class="propuesta__gancho">138 reseñas en el paseo obligado de Niebla, y el turista que googlea parado en el fuerte no los encuentra.</p>
+</div>
+
+<header class="cab" id="cab">
+  <a class="cab__marca" href="#portada">
+    <span class="raspa" aria-hidden="true"><i></i></span>
+    <span class="cab__nombre">Indio Pije</span>
+  </a>
+  <nav class="cab__nav" aria-label="Secciones">
+    <a href="#pescado">Qué pescado</a>
+    <a href="#fuerte">Antes o después</a>
+  </nav>
+  <a class="cab__res" href="#reservar">
+    <span class="cab__res-rot">Niebla</span>
+    <span class="cab__res-num">Reservar</span>
+  </a>
+</header>
+
+<main>
+
+<!-- ========= ESTRUCTURA L — LA PORTADA ES UN PÓSTER =========
+     Una sola palabra. El contenido empieza al scrollear. -->
+<section class="poster portada--foto" id="portada" aria-labelledby="t-portada">
+  <!-- FONDO DE PORTADA: 2560 px, nitido. Se disuelve hacia el titular
+       con un gradiente lateral, no con desenfoque. -->
+  <div class="portada__foto" aria-hidden="true">
+    <img src="imagenes/port-01.jpg" width="2560" height="1707"
+         decoding="async" fetchpriority="high" alt="">
+  </div>
+
+
+  <div class="cielo" aria-hidden="true">
+    <span class="gaviota g1"></span>
+    <span class="gaviota g2"></span>
+    <span class="gaviota g3"></span>
+  </div>
+
+  <div class="poster__marco">
+    <p class="poster__rot">Hoy se está friendo</p>
+    <h1 id="t-portada" class="poster__palabra">Merluza</h1>
+    <p class="poster__pie">
+      <span class="poster__fecha">viernes · 11:30</span>
+      <span class="poster__sep" aria-hidden="true">/</span>
+      <span class="marca-ejemplo" data-ejemplo="Pescado de ejemplo — el del día lo pone la cocina"></span>
+    </p>
+  </div>
+
+  <p class="poster__baja">Restaurante · Niebla, Valdivia · 138 reseñas</p>
+</section>
+
+<!-- ========= LA PIEZA FIRMA ========= -->
+<section class="pescado con-telon" id="pescado" aria-labelledby="t-pescado">
+  <div class="telon" aria-hidden="true">
+    <img src="imagenes/telon-01.jpg" width="1200" height="800" decoding="async" alt="">
+  </div>
+
+  <!-- AURA DE COLOR: la foto de rubro reventada a desenfoque. No se lee
+       como imagen: aporta color y luz detras de una seccion que si no
+       seria fondo plano. Aca el desenfoque SI es el efecto, no un parche,
+       y por eso el archivo va chico: a 64 px de blur, mas resolucion no
+       cambia nada. Sin loading=lazy porque el elemento va en absoluto con
+       z-index negativo y el navegador nunca lo considera visible. -->
+  <div class="aura" aria-hidden="true">
+    <img src="imagenes/aura-01.jpg" width="900" height="600" decoding="async" alt="">
+  </div>
+
+  <div class="pescado__cabecera">
+    <p class="antetitulo">Lo que la carta no dice</p>
+    <h2 id="t-pescado">Qué pescado<br>me están friendo</h2>
+    <p class="entrada">En casi todas las cartas de la costa dice «pescado frito» y se
+      acabó. Pero no es lo mismo una merluza que un congrio, ni un pescado de la
+      caleta de al lado que uno congelado. El que sabe pregunta. El que no sabe,
+      elige por precio.</p>
+  </div>
+
+  <!-- las especies -->
+  <ol class="especies">
+    <li class="esp">
+      <p class="esp__n">Merluza</p>
+      <p class="esp__d">Carne blanca y suelta, de sabor suave. Es la que casi siempre
+        se sirve cuando la carta dice «pescado frito» y nadie lo aclara.</p>
+    </li>
+    <li class="esp">
+      <p class="esp__n">Congrio</p>
+      <p class="esp__d">Firme, más graso, aguanta mejor la fritura sin secarse. Cuesta
+        más y se nota en el plato: por eso conviene que esté escrito.</p>
+    </li>
+    <li class="esp">
+      <p class="esp__n">Sierra</p>
+      <p class="esp__d">Sabor fuerte, carne oscura. Al que le gusta lo busca; al que
+        no lo esperaba, no. Un nombre en la carta evita la decepción.</p>
+    </li>
+    <li class="esp">
+      <p class="esp__n">Róbalo o corvina</p>
+      <p class="esp__d">Los de mesa fina. Si algún día llegan, decirlo ese día vende
+        más que cualquier promoción.</p>
+    </li>
+  </ol>
+
+  <p class="firma">Los cuatro son los que se ven habitualmente en la costa valdiviana.
+    <span class="falta">falta: confirmar cuáles trabajan ustedes</span> — y ese
+    listado, escrito, ya es más de lo que tiene cualquier local del paseo.</p>
+
+  <!-- de dónde llega -->
+  <div class="origen">
+    <h3>De dónde llega</h3>
+    <p>Es la pregunta que separa una picada de un local que da lo mismo. Si el
+      pescado viene de una caleta de acá, tiene nombre y se puede decir. Si en
+      temporada baja hay que comprar en otro lado, también se puede decir: la gente
+      perdona todo menos que le mientan.</p>
+    <dl class="origen__datos">
+      <div><dt>Caleta o proveedor</dt><dd><span class="falta">falta</span></dd></div>
+      <div><dt>Cada cuánto se compra</dt><dd><span class="falta">falta</span></dd></div>
+      <div><dt>Qué pasa en temporada baja</dt><dd><span class="falta">falta</span></dd></div>
+    </dl>
+  </div>
+
+  <!-- cómo reconocer la fritura honesta -->
+  <div class="fritura">
+    <h3>Cómo se reconoce una fritura bien hecha</h3>
+    <p class="fritura__intro">Esto no es secreto de nadie: es el oficio. Un local que
+      lo publica está diciendo que lo cumple, y el cliente que lo lee llega sabiendo
+      qué mirar.</p>
+
+    <ul class="reglas">
+      <li>
+        <p class="regla__t">La masa suena, no acolcha</p>
+        <p class="regla__d">Una capa fina y crocante que se quiebra. Si la masa es
+          gruesa como coraza, generalmente está tapando algo.</p>
+      </li>
+      <li>
+        <p class="regla__t">El aceite limpio no deja gusto</p>
+        <p class="regla__d">El aceite viejo se siente al segundo bocado y se queda
+          después. Es el detalle que más reseñas malas produce y el más barato de
+          cuidar.</p>
+      </li>
+      <li>
+        <p class="regla__t">Seco por fuera, jugoso por dentro</p>
+        <p class="regla__d">Si al apoyarlo el papel se empapa de aceite, el aceite
+          estaba frío cuando entró el pescado.</p>
+      </li>
+      <li>
+        <p class="regla__t">Sale y se come</p>
+        <p class="regla__d">La fritura no espera. Diez minutos bajo una lámpara y ya
+          no es lo mismo, por buena que haya sido.</p>
+      </li>
+    </ul>
+
+    <p class="firma">Escrito así, es la cocina firmando lo que hace.
+      <span class="falta">falta: que la cocina lo revise</span> antes de publicarlo
+      — es su palabra, no la mía.</p>
+  </div>
+</section>
+
+<!-- ========= ANTES O DESPUÉS DEL FUERTE ========= -->
+<!-- ========= MEDIA PANTALLA ========= -->
+<section class="mitades" aria-labelledby="t-mitades">
+  <div class="mitades__foto">
+    <img src="imagenes/media-01.jpg" width="1500" height="1125"
+         loading="lazy" decoding="async" alt="">
+  </div>
+  <div class="mitades__texto">
+    <p class="mitades__ante">La foto que decide el verano entero</p>
+    <h2 id="t-mitades">La terraza existe, y en Niebla eso lo cambia todo</h2>
+    <p>Enero en Niebla es un pueblo entero buscando dónde sentarse afuera. Este local tiene pérgola, mesas de colores y sombra, y esa foto no está en su ficha de Google: el que pasa manejando por el camino al fuerte no tiene cómo saber que acá se come al aire libre. Es la diferencia entre que entren y que sigan de largo, y se arregla subiendo una foto.</p>
+  </div>
+</section>
+
+
+
+<!-- ========= TAJO — FRANJA A SANGRE ========= -->
+<div class="tajo" aria-hidden="true">
+  <img src="imagenes/banda-01.jpg" width="1300" height="648"
+       loading="lazy" decoding="async" alt="">
+</div>
+<section class="fuerte" id="fuerte" aria-labelledby="t-fuerte">
+  <div class="fuerte__cuerpo">
+    <p class="antetitulo antetitulo--claro">El recorrido de quien visita Niebla</p>
+    <h2 id="t-fuerte">Antes o después<br>del fuerte</h2>
+    <p class="entrada">Casi nadie viene a Niebla sólo a comer: viene al fuerte, al
+      mirador, a la feria. La comida entra en el medio, y el que decide dónde parar
+      lo hace con el teléfono en la mano, de pie, en cinco minutos.</p>
+
+    <div class="momentos">
+      <article class="momento">
+        <p class="momento__n">Antes</p>
+        <p>Con hambre no se aprecia la historia. Comer primero y recorrer después es
+          el orden que más recomienda cualquiera que haya hecho el paseo con niños.</p>
+      </article>
+      <article class="momento">
+        <p class="momento__n">Después</p>
+        <p>Se recorre con energía y se come sin apuro. Conviene si el grupo llegó
+          temprano o si el día está para quedarse sentado mirando el agua.</p>
+      </article>
+    </div>
+
+    <p class="nota-honesta">Lo que esta página <b>no</b> dice: a qué hora abre o
+      cierra el fuerte, ni cuántos minutos hay de caminata. Son datos de terceros que
+      cambian, y publicarlos mal manda a un cliente a una puerta cerrada.</p>
+
+    <h3 class="sub">Lo que sí hace falta escribir</h3>
+    <dl class="huecos">
+      <div class="hueco">
+        <dt>Dirección exacta</dt>
+        <dd><span class="falta">falta</span>
+          <span class="hueco__pq">El punto en el mapa, no «en Niebla». El que
+            googlea está parado a cien metros y no los ve.</span></dd>
+      </div>
+      <div class="hueco">
+        <dt>Días y horario</dt>
+        <dd><span class="falta">falta</span>
+          <span class="hueco__pq">Sobre todo el horario de invierno, que es cuando
+            la gente asume que está cerrado y ni pregunta.</span></dd>
+      </div>
+      <div class="hueco">
+        <dt>Si hay estacionamiento cerca</dt>
+        <dd><span class="falta">falta</span>
+          <span class="hueco__pq">En verano, en Niebla, esto decide dónde para el
+            auto y por lo tanto dónde se come.</span></dd>
+      </div>
+      <div class="hueco">
+        <dt>Si se puede llegar con niños o con perro</dt>
+        <dd><span class="falta">falta</span>
+          <span class="hueco__pq">Dos preguntas cortas que hoy se contestan por
+            teléfono una por una.</span></dd>
+      </div>
+    </dl>
+
+    <div class="reservar" id="reservar">
+      <h3 class="sub">Avisar que vamos</h3>
+      <p class="reservar__intro">Diga cuándo y cuántos son: el mensaje se arma solo.</p>
+
+      <form class="form" id="form-mesa">
+        <div class="campo">
+          <label for="f-cuando">Qué día y a qué hora</label>
+          <input id="f-cuando" name="cuando" type="text" placeholder="Sábado al mediodía" autocomplete="off">
+        </div>
+        <div class="campo">
+          <label for="f-personas">Cuántos son</label>
+          <input id="f-personas" name="personas" type="text" inputmode="numeric" placeholder="5" autocomplete="off">
+        </div>
+        <div class="campo campo--ancho">
+          <label for="f-nota">Algo que avisar <span class="opcional">(opcional)</span></label>
+          <input id="f-nota" name="nota" type="text" placeholder="Vamos con dos niños" autocomplete="off">
+        </div>
+
+        <p class="resumen" id="resumen" aria-live="polite">El mensaje se arma acá abajo a medida que escribe.</p>
+        <a class="boton" id="enviar" href="#reservar">Enviar por WhatsApp</a>
+        <p class="reservar__nota"><span class="falta">falta: el número</span> — la ficha
+          de Google no publica ninguno, así que el botón todavía no lleva a ninguna parte.</p>
+      </form>
+    </div>
+  </div>
+</section>
+
+</main>
+
+
+
+<!-- ========= MOSAICO ========= -->
+
+<!-- ========= LA CITA A SANGRE ========= -->
+<section class="cita" aria-labelledby="t-cita">
+  <div class="cita__foto" aria-hidden="true">
+    <img src="imagenes/cita-01.jpg" width="2560" height="1920"
+         loading="lazy" decoding="async" alt="">
+  </div>
+  <blockquote class="cita__texto">
+    <p id="t-cita">A cuatro cuadras del fuerte<br>
+      <span class="cita__eco">Y a menos del mar, que es lo que se viene a ver</span></p>
+  </blockquote>
+</section>
+
+<!-- ========= LA TIRA ========= -->
+<section class="tira" aria-label="Tres imágenes del oficio">
+  <figure class="tira__pieza">
+    <img src="imagenes/tira-01.jpg" width="1000" height="638" loading="lazy" decoding="async" alt="Una cazuela servida en pilón de greda, con choclo y zapallo.">
+  </figure>
+  <figure class="tira__pieza">
+    <img src="imagenes/tira-02.jpg" width="1000" height="526" loading="lazy" decoding="async" alt="Escalopa apanada con puré, en el plato.">
+  </figure>
+  <figure class="tira__pieza">
+    <img src="imagenes/tira-03.jpg" width="1000" height="1000" loading="lazy" decoding="async" alt="Papas fritas con dos huevos fritos encima.">
+  </figure>
+</section>
+
+
+<!-- ========= LAS FOTOS ========= -->
+<section class="galeria" aria-labelledby="t-galeria">
+  <h2 id="t-galeria" class="galeria__titulo">Lo suyo: el local y los platos</h2>
+  <p class="galeria__nota">Seis fotos de esta página son suyas: la terraza, el salón y los tres platos. Sólo el mar de la portada, el aura y la cita son de banco libre, y están declarados en imagenes/FUENTES.txt.</p>
+  <div class="galeria__grilla">
+    <figure class="gal gal--izq">
+      <img src="imagenes/gal-02.jpg" width="1300" height="975" loading="lazy" decoding="async"
+           alt="La terraza con la pérgola de policarbonato, las bancas de colores y los banderines colgados.">
+      <figcaption>La terraza otra vez, desde el otro lado. Bancas de colores, sombra y banderines: eso es una foto de portada esperando que la suban.</figcaption>
+    </figure>
+    <figure class="gal gal--der">
+      <img src="imagenes/gal-01.jpg" width="1300" height="648" loading="lazy" decoding="async"
+           alt="El salón por dentro, con las mesas de manteles rojos y los ventanales al fondo.">
+      <figcaption>El salón, para los días en que Niebla hace honor a su nombre.</figcaption>
+    </figure>
+  </div>
+  <p class="galeria__falta">falta: la fachada desde el camino al fuerte, y la carta con precios</p>
+</section>
+
+<section class="mos" aria-labelledby="t-mos">
+  <h2 id="t-mos" class="mos__titulo">La misma serie, más de cerca</h2>
+  <p class="mos__nota">Estas seis ya aparecen más arriba en la página. Vuelven acá en otro tamaño porque una sola pasada de imágenes deja el scroll vacío, y porque de cerca se ven cosas que en grande se pierden. La procedencia de cada una está en imagenes/FUENTES.txt.</p>
+  <div class="mos__grilla">
+    <figure class="mos__p">
+      <img src="imagenes/mos-01.jpg" width="780" height="585"
+           loading="lazy" decoding="async" alt="">
+    </figure>
+    <figure class="mos__p">
+      <img src="imagenes/mos-02.jpg" width="780" height="389"
+           loading="lazy" decoding="async" alt="">
+    </figure>
+    <figure class="mos__p">
+      <img src="imagenes/mos-03.jpg" width="780" height="585"
+           loading="lazy" decoding="async" alt="">
+    </figure>
+    <figure class="mos__p">
+      <img src="imagenes/mos-04.jpg" width="780" height="780"
+           loading="lazy" decoding="async" alt="">
+    </figure>
+    <figure class="mos__p">
+      <img src="imagenes/mos-05.jpg" width="780" height="410"
+           loading="lazy" decoding="async" alt="">
+    </figure>
+    <figure class="mos__p">
+      <img src="imagenes/mos-06.jpg" width="780" height="498"
+           loading="lazy" decoding="async" alt="">
+    </figure>
+  </div>
+</section>
+<section class="dueno" aria-labelledby="t-dueno">
+  <h2 id="t-dueno">Para el dueño</h2>
+  <div class="dueno__cols">
+    <div>
+      <h3>Lo que está verificado</h3>
+      <p>El 4,6 con 138 reseñas de su ficha de Google y que no tienen página ni
+        teléfono publicado.</p>
+    </div>
+    <div>
+      <h3>Lo que es de ejemplo</h3>
+      <p>La palabra de la portada. «Merluza» está puesta para mostrar cómo se ve el
+        pescado del día en grande: la escribe la cocina cada mañana, y cambiarla es
+        editar una línea.</p>
+    </div>
+    <div>
+      <h3>Lo que falta</h3>
+      <p>El número, la dirección, el horario y de dónde llega el pescado. Ese último
+        es el que más vende y el único que no puede escribir nadie más que ustedes.</p>
+    </div>
+  </div>
+  <p class="dueno__cierre">
+    <a class="flecha" href="https://wa.me/56968650001" rel="noopener">Escribirme por WhatsApp <span aria-hidden="true">→</span></a>
+    <a class="flecha" href="../../" rel="noopener">Ver otros trabajos <span aria-hidden="true">→</span></a>
+  </p>
+</section>
+
+<footer class="pie">
+  <p>Sitio de demostración preparado por CristalWeb. El negocio no lo ha encargado
+    ni ha revisado su contenido. Las especies nombradas son las habituales del
+    litoral; lo que se sirve cada día lo define el local.</p>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>

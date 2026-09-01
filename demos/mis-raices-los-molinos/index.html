@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="es-CL" class="no-js">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Mis Raíces — restaurante, Los Molinos</title>
+<meta name="description" content="Restaurante en Los Molinos, costa de Valdivia. Qué marisco hay según la época y cómo llegar.">
+
+<!-- Política de seguridad de contenido: el navegador sólo puede cargar
+     archivos de este mismo sitio. Sin CDN, sin librerías, sin rastreadores.
+     Ver skills/web-blindada/references/csp-en-pages.md -->
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self'; img-src 'self' data:; font-src 'self'; connect-src 'self'; media-src 'self'; form-action 'self'; base-uri 'none'; frame-src 'none'; object-src 'none'">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+
+<!-- Rescate de la clase .js (regla 2 de la casa). En archivo, sin defer:
+     inline lo bloquearía la CSP. -->
+<script src="js/rescate.js"></script>
+
+<!-- Fuentes propias: cero peticiones a terceros. El preload va SOLO
+     para la display, que es la del titular de la portada. -->
+<link rel="preload" href="assets/fuentes/lustria-400-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="assets/fuentes.css">
+<link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+
+<div class="propuesta">
+  <p class="propuesta__que">Propuesta de sitio web — preparada para <b>Mis Raíces</b> por CristalWeb</p>
+  <p class="propuesta__gancho">219 reseñas en la costa valdiviana, a pasos del mar, y desde el teléfono no se puede saber si hoy hay mariscal.</p>
+</div>
+
+<header class="cab" id="cab">
+  <a class="cab__marca" href="#portada">
+    <span class="concha" aria-hidden="true"></span>
+    <span class="cab__nombre">Mis Raíces</span>
+  </a>
+  <nav class="cab__nav" aria-label="Secciones">
+    <a href="#mar">Qué hay del mar</a>
+    <a href="#vista">La mesa con vista</a>
+  </nav>
+  <a class="cab__res" href="#reservar">
+    <span class="cab__res-rot">Los Molinos</span>
+    <span class="cab__res-num">Reservar</span>
+  </a>
+</header>
+
+<main>
+
+<!-- ========= PORTADA — roca arriba, espuma abajo ========= -->
+<section class="portada portada--foto" id="portada" aria-labelledby="t-portada">
+  <!-- FONDO DE PORTADA: 2560 px, nitido. Se disuelve hacia el titular
+       con un gradiente lateral, no con desenfoque. -->
+  <div class="portada__foto" aria-hidden="true">
+    <img src="imagenes/port-01.jpg" width="2560" height="1707"
+         decoding="async" fetchpriority="high" alt="">
+  </div>
+
+
+  <!-- La orilla: la espuma entra en diagonal y se recoge -->
+  <div class="orilla" aria-hidden="true">
+    <span class="orilla__lengua"></span>
+    <span class="orilla__brillo"></span>
+  </div>
+
+  <div class="portada__texto">
+    <p class="sitio">Restaurante · Los Molinos, costa de Valdivia</p>
+    <h1 id="t-portada">El mar no<br>tiene carta<br>fija</h1>
+    <p class="bajada">Lo que hay depende de la época, de la veda y de si salió el
+      bote. Nadie lo dice por escrito, así que la gente llama para preguntar —o no
+      viene. Acá está el calendario.</p>
+    <dl class="specs">
+      <div class="spec"><dt>reseñas en Google</dt><dd>219</dd></div>
+      <div class="spec"><dt>página propia</dt><dd><span class="falta">por confirmar</span></dd></div>
+    </dl>
+  </div>
+</section>
+
+<!-- ========= LA PIEZA FIRMA — ESTRUCTURA K ========= -->
+<section class="mar con-telon" id="mar" aria-labelledby="t-mar">
+  <div class="telon" aria-hidden="true">
+    <img src="imagenes/telon-01.jpg" width="1200" height="800" decoding="async" alt="">
+  </div>
+
+  <!-- AURA DE COLOR: la foto de rubro reventada a desenfoque. No se lee
+       como imagen: aporta color y luz detras de una seccion que si no
+       seria fondo plano. Aca el desenfoque SI es el efecto, no un parche,
+       y por eso el archivo va chico: a 64 px de blur, mas resolucion no
+       cambia nada. Sin loading=lazy porque el elemento va en absoluto con
+       z-index negativo y el navegador nunca lo considera visible. -->
+  <div class="aura" aria-hidden="true">
+    <img src="imagenes/aura-01.jpg" width="900" height="600" decoding="async" alt="">
+  </div>
+
+  <div class="mar__cabecera">
+    <p class="antetitulo">La pregunta de todos los días</p>
+    <h2 id="t-mar">¿Qué hay<br>del mar hoy?</h2>
+    <p class="entrada">Una fila por producto. Lo que se ve cerrado es su calendario:
+      doce letras, un mes cada una. Se abre la fila para leer el detalle.</p>
+
+    <ul class="leyenda">
+      <li><span class="m m--si" aria-hidden="true"></span> es su temporada</li>
+      <li><span class="m m--hay" aria-hidden="true"></span> hay, pero no es su mejor época</li>
+      <li><span class="m m--veda" aria-hidden="true"></span> manda la veda</li>
+      <li><span class="m m--falta" aria-hidden="true"></span> falta confirmar</li>
+    </ul>
+  </div>
+
+  <ol class="filas">
+
+    <!-- ── chorito ── -->
+    <li>
+      <details class="fila">
+        <summary>
+          <span class="fila__nombre">Chorito</span>
+          <span class="calendario" role="img" aria-label="Hay todo el año">
+            <span class="m m--hay">E</span><span class="m m--hay">F</span><span class="m m--hay">M</span><span class="m m--hay">A</span><span class="m m--hay">M</span><span class="m m--hay">J</span><span class="m m--hay">J</span><span class="m m--hay">A</span><span class="m m--hay">S</span><span class="m m--hay">O</span><span class="m m--hay">N</span><span class="m m--hay">D</span>
+          </span>
+          <span class="fila__resumen">todo el año</span>
+        </summary>
+        <div class="fila__cuerpo">
+          <p>Es de cultivo, así que no depende de la suerte del día: hay todo el año.
+            Lo que sí cambia es cuánto rinde la carne según la época —después del
+            desove el chorito queda más flaco y se nota en el plato.</p>
+          <p class="fila__falta"><span class="falta">falta: en qué meses lo prefieren
+            ustedes</span> — el que compra sabe cuándo viene mejor, y decirlo es
+            exactamente el tipo de dato que hace volver a un cliente.</p>
+        </div>
+      </details>
+    </li>
+
+    <!-- ── cochayuyo y luche ── -->
+    <li>
+      <details class="fila">
+        <summary>
+          <span class="fila__nombre">Cochayuyo y luche</span>
+          <span class="calendario" role="img" aria-label="Temporada de enero a marzo y de noviembre a diciembre">
+            <span class="m m--si">E</span><span class="m m--si">F</span><span class="m m--si">M</span><span class="m m--hay">A</span><span class="m m--falta">M</span><span class="m m--falta">J</span><span class="m m--falta">J</span><span class="m m--falta">A</span><span class="m m--falta">S</span><span class="m m--hay">O</span><span class="m m--si">N</span><span class="m m--si">D</span>
+          </span>
+          <span class="fila__resumen">verano</span>
+        </summary>
+        <div class="fila__cuerpo">
+          <p>Las algas se sacan a mano en las bajamares grandes del verano, cuando la
+            roca queda al descubierto. Por eso la temporada es de noviembre a marzo:
+            no es una decisión de la cocina, es cuándo se puede llegar a la piedra.</p>
+          <p class="fila__falta"><span class="falta">falta: si trabajan con
+            recolector de la zona</span> — si el alga es de acá y tiene nombre y
+            apellido, eso se dice y vale más que cualquier foto.</p>
+        </div>
+      </details>
+    </li>
+
+    <!-- ── loco ── -->
+    <li>
+      <details class="fila">
+        <summary>
+          <span class="fila__nombre">Loco</span>
+          <span class="calendario" role="img" aria-label="Sujeto a veda todo el año">
+            <span class="m m--veda">E</span><span class="m m--veda">F</span><span class="m m--veda">M</span><span class="m m--veda">A</span><span class="m m--veda">M</span><span class="m m--veda">J</span><span class="m m--veda">J</span><span class="m m--veda">A</span><span class="m m--veda">S</span><span class="m m--veda">O</span><span class="m m--veda">N</span><span class="m m--veda">D</span>
+          </span>
+          <span class="fila__resumen">manda la veda</span>
+        </summary>
+        <div class="fila__cuerpo">
+          <p>El loco no se rige por temporada sino por veda: sale cuando hay apertura
+            autorizada en un área de manejo, y el resto del tiempo no hay. Así de
+            simple y así hay que decirlo.</p>
+          <p class="fila__falta"><span class="falta">falta: si este año les llega
+            y desde cuándo</span> — las fechas de apertura las fija la autoridad y
+            cambian, por eso esta página no publica ninguna. <b>En veda se respeta
+            la veda.</b></p>
+        </div>
+      </details>
+    </li>
+
+    <!-- ── macha ── -->
+    <li>
+      <details class="fila">
+        <summary>
+          <span class="fila__nombre">Macha</span>
+          <span class="calendario" role="img" aria-label="Sujeto a veda">
+            <span class="m m--veda">E</span><span class="m m--veda">F</span><span class="m m--veda">M</span><span class="m m--veda">A</span><span class="m m--veda">M</span><span class="m m--veda">J</span><span class="m m--veda">J</span><span class="m m--veda">A</span><span class="m m--veda">S</span><span class="m m--veda">O</span><span class="m m--veda">N</span><span class="m m--veda">D</span>
+          </span>
+          <span class="fila__resumen">manda la veda</span>
+        </summary>
+        <div class="fila__cuerpo">
+          <p>Igual que el loco: hay veda y cambia según la zona y el año. Un
+            restaurante que dice de frente «hoy no hay porque está en veda» gana más
+            confianza que uno que sirve sin explicar de dónde salió.</p>
+          <p class="fila__falta"><span class="falta">falta: confirmar los meses que
+            corresponden a esta zona</span> — no se inventan.</p>
+        </div>
+      </details>
+    </li>
+
+    <!-- ── erizo ── -->
+    <li>
+      <details class="fila">
+        <summary>
+          <span class="fila__nombre">Erizo</span>
+          <span class="calendario" role="img" aria-label="Falta confirmar la temporada">
+            <span class="m m--falta">E</span><span class="m m--falta">F</span><span class="m m--falta">M</span><span class="m m--falta">A</span><span class="m m--falta">M</span><span class="m m--falta">J</span><span class="m m--falta">J</span><span class="m m--falta">A</span><span class="m m--falta">S</span><span class="m m--falta">O</span><span class="m m--falta">N</span><span class="m m--falta">D</span>
+          </span>
+          <span class="fila__resumen"><span class="falta">falta</span></span>
+        </summary>
+        <div class="fila__cuerpo">
+          <p>Tiene veda reproductiva y las fechas cambian según la región. Esta
+            página deja el calendario en blanco a propósito: publicar meses
+            equivocados sería peor que no publicar nada.</p>
+          <p class="fila__falta"><span class="falta">falta: cuándo lo tienen
+            ustedes</span> — con eso la fila se llena en un minuto.</p>
+        </div>
+      </details>
+    </li>
+
+    <!-- ── el pescado del día ── -->
+    <li>
+      <details class="fila">
+        <summary>
+          <span class="fila__nombre">El pescado del día</span>
+          <span class="calendario" role="img" aria-label="Depende de si salió el bote">
+            <span class="m m--hay">E</span><span class="m m--hay">F</span><span class="m m--hay">M</span><span class="m m--hay">A</span><span class="m m--hay">M</span><span class="m m--hay">J</span><span class="m m--hay">J</span><span class="m m--hay">A</span><span class="m m--hay">S</span><span class="m m--hay">O</span><span class="m m--hay">N</span><span class="m m--hay">D</span>
+          </span>
+          <span class="fila__resumen">según el bote</span>
+        </summary>
+        <div class="fila__cuerpo">
+          <p>No depende del mes: depende de si el mar dejó salir esa mañana. Hay días
+            de invierno con mejor pescado que en pleno enero, y semanas de temporal
+            en que sencillamente no hay.</p>
+          <p class="fila__falta">Ésta es la fila que conviene actualizar: una línea
+            escrita en la mañana —«hoy hay congrio»— vale más que toda la carta.
+            <span class="falta">falta: definir quién la escribe</span></p>
+        </div>
+      </details>
+    </li>
+
+  </ol>
+
+  <div class="ojo">
+    <p><b>Por qué esta página no publica fechas de veda.</b> Las vedas las fija la
+      autoridad, cambian de año en año y de zona en zona. Una página con fechas
+      viejas hace que el cliente llegue a pedir algo que no puede haber. Por eso acá
+      se dice lo único que no caduca: <b>en veda se respeta la veda</b>, y lo que hay
+      hoy lo confirma el local.</p>
+  </div>
+</section>
+
+<!-- ========= LA MESA CON VISTA ========= -->
+<!-- ========= MEDIA PANTALLA ========= -->
+<section class="mitades" aria-labelledby="t-mitades">
+  <div class="mitades__foto">
+    <img src="imagenes/media-01.jpg" width="959" height="1600"
+         loading="lazy" decoding="async" alt="">
+  </div>
+  <div class="mitades__texto">
+    <p class="mitades__ante">La foto que ya tienen y explica el lugar</p>
+    <h2 id="t-mitades">La terraza da a la calle, y la calle da al mar</h2>
+    <p>Los Molinos es un camino angosto entre el cerro y el agua, y quien maneja por ahí decide en dos segundos dónde parar. Esta terraza con quitasol es lo que se ve desde el auto, y no está en su ficha de Google. Subirla es gratis. Lo otro que falta —y vale más— es la foto de lo que se ve DESDE la terraza: eso no lo puede poner ninguna imagen prestada.</p>
+  </div>
+</section>
+
+
+
+<!-- ========= TAJO — FRANJA A SANGRE ========= -->
+<div class="tajo" aria-hidden="true">
+  <img src="imagenes/banda-01.jpg" width="1500" height="1000"
+       loading="lazy" decoding="async" alt="">
+</div>
+<section class="vista" id="vista" aria-labelledby="t-vista">
+  <div class="vista__cuerpo">
+    <p class="antetitulo antetitulo--claro">Lo segundo que preguntan</p>
+    <h2 id="t-vista">La mesa<br>con vista</h2>
+    <p class="entrada">Alguien que maneja hasta la costa no viene sólo a comer: viene
+      a comer <em>mirando</em>. Y eso, que es la mitad del argumento, hoy no está
+      escrito en ninguna parte.</p>
+
+    <dl class="huecos">
+      <div class="hueco">
+        <dt>Qué se ve desde la mesa</dt>
+        <dd><span class="falta">falta: describirlo en una línea</span>
+          <span class="hueco__pq">No hace falta adornarlo. «Se ve el mar y la
+            bahía» ya es más de lo que hay hoy. Lo que no se puede es inventarlo:
+            si la vista es parcial, se dice parcial.</span></dd>
+      </div>
+      <div class="hueco">
+        <dt>Cuántas mesas tienen vista</dt>
+        <dd><span class="falta">falta</span>
+          <span class="hueco__pq">Si son pocas, decirlo hace que la gente reserve
+            en vez de llegar y encontrarlas ocupadas.</span></dd>
+      </div>
+      <div class="hueco">
+        <dt>Si hay terraza y si sirve con viento</dt>
+        <dd><span class="falta">falta</span>
+          <span class="hueco__pq">En la costa el viento decide. Una línea honesta
+            —«la terraza se usa cuando el día acompaña»— evita una reseña mala.</span></dd>
+      </div>
+    </dl>
+
+    <h3 class="sub">Cómo llegar</h3>
+    <dl class="huecos">
+      <div class="hueco">
+        <dt>Dirección exacta</dt>
+        <dd><span class="falta">falta</span>
+          <span class="hueco__pq">Los Molinos es chico, pero el que viene de afuera
+            necesita el punto en el mapa, no el nombre del pueblo.</span></dd>
+      </div>
+      <div class="hueco">
+        <dt>Cuánto se demora desde Valdivia</dt>
+        <dd><span class="falta">falta</span>
+          <span class="hueco__pq">Este dato no lo pongo yo. Un tiempo de viaje
+            inventado es la clase de error que se paga con un cliente enojado
+            llegando tarde a su reserva.</span></dd>
+      </div>
+      <div class="hueco">
+        <dt>Dónde estacionar</dt>
+        <dd><span class="falta">falta</span>
+          <span class="hueco__pq">En verano, en la costa, es una pregunta real.</span></dd>
+      </div>
+    </dl>
+
+    <div class="reservar" id="reservar">
+      <h3 class="sub">Reservar</h3>
+      <p class="reservar__intro">Diga cuándo y cuántos son: el mensaje se arma solo.</p>
+
+      <form class="form" id="form-mesa">
+        <div class="campo">
+          <label for="f-cuando">Qué día y a qué hora</label>
+          <input id="f-cuando" name="cuando" type="text" placeholder="Domingo al mediodía" autocomplete="off">
+        </div>
+        <div class="campo">
+          <label for="f-personas">Cuántos son</label>
+          <input id="f-personas" name="personas" type="text" inputmode="numeric" placeholder="4" autocomplete="off">
+        </div>
+        <div class="campo campo--ancho">
+          <label for="f-vista">Prefieren mesa con vista <span class="opcional">(opcional)</span></label>
+          <input id="f-vista" name="vista" type="text" placeholder="Sí, si hay" autocomplete="off">
+        </div>
+
+        <p class="resumen" id="resumen" aria-live="polite">El mensaje se arma acá abajo a medida que escribe.</p>
+        <a class="boton" id="enviar" href="#reservar">Enviar por WhatsApp</a>
+        <p class="reservar__nota"><span class="falta">falta: el número</span> — la ficha
+          de Google no publica ninguno, así que el botón todavía no lleva a ninguna parte.</p>
+      </form>
+    </div>
+  </div>
+</section>
+
+</main>
+
+
+
+<!-- ========= MOSAICO ========= -->
+
+<!-- ========= LA CITA A SANGRE ========= -->
+<section class="cita" aria-labelledby="t-cita">
+  <div class="cita__foto" aria-hidden="true">
+    <img src="imagenes/cita-01.jpg" width="2560" height="1707"
+         loading="lazy" decoding="async" alt="">
+  </div>
+  <blockquote class="cita__texto">
+    <p id="t-cita">Lo que hay hoy salió hoy<br>
+      <span class="cita__eco">Y si no salió el bote, se dice y punto</span></p>
+  </blockquote>
+</section>
+
+<!-- ========= LA TIRA ========= -->
+<section class="tira" aria-label="Tres imágenes del oficio">
+  <figure class="tira__pieza">
+    <img src="imagenes/tira-01.jpg" width="1000" height="1014" loading="lazy" decoding="async" alt="La fachada del restaurante con el letrero Mis Raíces.">
+  </figure>
+  <figure class="tira__pieza">
+    <img src="imagenes/tira-02.jpg" width="1000" height="750" loading="lazy" decoding="async" alt="El local por fuera, con la terraza y los quitasoles.">
+  </figure>
+  <figure class="tira__pieza">
+    <img src="imagenes/tirb-01.jpg" width="1000" height="667" loading="lazy" decoding="async" alt="Jaibas frescas amontonadas.">
+  </figure>
+</section>
+
+<section class="mos" aria-labelledby="t-mos">
+  <h2 id="t-mos" class="mos__titulo">La misma serie, más de cerca</h2>
+  <p class="mos__nota">Estas seis ya aparecen más arriba en la página. Vuelven acá en otro tamaño porque una sola pasada de imágenes deja el scroll vacío, y porque de cerca se ven cosas que en grande se pierden. La procedencia de cada una está en imagenes/FUENTES.txt.</p>
+  <div class="mos__grilla">
+    <figure class="mos__p">
+      <img src="imagenes/mos-01.jpg" width="780" height="585"
+           loading="lazy" decoding="async" alt="">
+    </figure>
+    <figure class="mos__p">
+      <img src="imagenes/mos-02.jpg" width="780" height="520"
+           loading="lazy" decoding="async" alt="">
+    </figure>
+    <figure class="mos__p">
+      <img src="imagenes/mos-03.jpg" width="780" height="791"
+           loading="lazy" decoding="async" alt="">
+    </figure>
+    <figure class="mos__p">
+      <img src="imagenes/mos-04.jpg" width="780" height="1301"
+           loading="lazy" decoding="async" alt="">
+    </figure>
+    <figure class="mos__p">
+      <img src="imagenes/mos-05.jpg" width="780" height="520"
+           loading="lazy" decoding="async" alt="">
+    </figure>
+    <figure class="mos__p">
+      <img src="imagenes/mos-06.jpg" width="780" height="520"
+           loading="lazy" decoding="async" alt="">
+    </figure>
+  </div>
+</section>
+<section class="dueno" aria-labelledby="t-dueno">
+  <h2 id="t-dueno">Para el dueño</h2>
+  <div class="dueno__cols">
+    <div>
+      <h3>Lo que está verificado</h3>
+      <p>Las 219 reseñas de su ficha de Google y que no tienen teléfono publicado.
+        La página propia figura como «por confirmar».</p>
+    </div>
+    <div>
+      <h3>Lo que no inventé</h3>
+      <p>Ninguna fecha de veda, ningún tiempo de viaje y ninguna vista. Los tres son
+        datos que cambian o que sólo ustedes pueden confirmar, y equivocarlos en
+        internet cuesta clientes.</p>
+    </div>
+    <div>
+      <h3>Lo que falta</h3>
+      <p>El número, la dirección y el calendario de mariscos completo. Con eso la
+        sección principal deja de tener huecos y pasa a ser lo que ningún
+        restaurante de la costa tiene escrito.</p>
+    </div>
+  </div>
+  <p class="dueno__cierre">
+    <a class="flecha" href="https://wa.me/56968650001" rel="noopener">Escribirme por WhatsApp <span aria-hidden="true">→</span></a>
+    <a class="flecha" href="../../" rel="noopener">Ver otros trabajos <span aria-hidden="true">→</span></a>
+  </p>
+</section>
+
+<footer class="pie">
+  <p>Sitio de demostración preparado por CristalWeb. El negocio no lo ha encargado
+    ni ha revisado su contenido. Los calendarios son referencia general del litoral;
+    las vedas vigentes las fija la autoridad pesquera.</p>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>

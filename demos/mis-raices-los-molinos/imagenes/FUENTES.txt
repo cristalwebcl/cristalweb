@@ -1,0 +1,55 @@
+PROCEDENCIA DE LAS IMÁGENES — Mis Raíces, restaurante, Los Molinos
+════════════════════════════════════════════════════════════════
+
+DEL NEGOCIO — tres fotos, de su ficha de Google.
+
+media-01.jpg   959x1600  la terraza con el quitasol y el letrero
+tira-01.jpg   1000x1014  la fachada con el letrero
+tira-02.jpg   1000x750   el local por fuera, con los quitasoles
+
+Es todo lo que existe. Con 219 reseñas, eso es exactamente lo que hay
+que decirle en la llamada.
+
+**Cinco homónimos descartados**, y no son poca cosa: hay un «Mis
+Raíces» de cocina mexicana, otro de cocina caribeña y salvadoreña en
+Texas, un «Mis Raíces Propiedades», un centro de equinoterapia y un
+show en Santo Domingo. El buscador los mezcla todos.
+
+────────────────────────────────────────────────────────────────
+GENÉRICAS — cuatro, de banco libre, sólo de fondo.
+
+Son MARISCOS VIVOS, no platos: choritos pegados a la roca, un ostión
+abierto, jaibas de caleta, almejas. La diferencia importa — un plato
+servido de banco de imágenes en la web de un restaurante se descubre al
+primer servicio; un chorito en la roca es el mar de Los Molinos y no
+promete ninguna preparación.
+
+port-01.jpg  2560x1707  choritos pegados a la roca
+aura-01.jpg   900x600   almejas amontonadas (va a 64 px de desenfoque:
+                        sólo aporta el gris nácar de la paleta)
+cita-01.jpg  2560x1707  un ostión abierto entre las conchas
+tirb-01.jpg  1000x667   jaibas frescas
+  las cuatro de pxhere · dominio público (CC0), consulta
+  «fresh mussels clams shellfish market»
+
+Se buscaron aparte de las de la demo vecina de Niebla (142), que es de
+la misma costa y el mismo rubro: si Yordy las muestra juntas, no pueden
+compartir imágenes.
+
+────────────────────────────────────────────────────────────────
+LO QUE FALTA
+
+1. **La vista DESDE la terraza.** Es el activo del lugar y ninguna
+   imagen prestada lo puede reemplazar.
+2. **El calendario real del mar**: qué hay este mes, qué está en veda.
+   La página lo estructura y sólo falta que el dueño lo llene — es un
+   dato que sabe de memoria y que ningún competidor publica.
+3. Dos platos suyos, fotografiados.
+
+────────────────────────────────────────────────────────────────
+NOTA TÉCNICA
+
+El velo de la portada va escrito entero en rgba y termina en alfa 0.
+Escrito con `var(--roca)` en los primeros stops tapaba la foto de punta
+a punta y la portada salía plana. Está corregido también en
+fotoradar/seis-tratamientos.sh, así que no vuelve a pasar.

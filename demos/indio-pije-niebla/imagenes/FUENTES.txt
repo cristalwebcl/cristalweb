@@ -1,0 +1,67 @@
+PROCEDENCIA DE LAS IMÁGENES — Indio Pije Restaurant, Niebla
+════════════════════════════════════════════════════════════════
+
+DEL NEGOCIO — seis fotos, de su ficha de Google.
+
+media-01.jpg  1500x1125  la terraza con la pérgola y las bancas
+gal-02.jpg    1300x975   la terraza desde el otro lado
+gal-01.jpg    1300x648   el salón, con los manteles rojos
+tira-01.jpg   1000x638   la cazuela en pilón de greda
+tira-02.jpg   1000x526   escalopa con puré
+tira-03.jpg   1000x1000  papas fritas con huevos
+
+**Los tres platos de la tira son suyos.** Ninguno es de banco de
+imágenes, y esa es la decisión que más importa en la página de un
+restaurante: un plato prestado se descubre al primer servicio.
+
+────────────────────────────────────────────────────────────────
+TRES DESCARTES, Y EL ÚLTIMO ES DE CRITERIO
+
+1. **Una mesa larga con quince personas identificables.** No se usa sin
+   permiso de cada una.
+2. **Una foto de batidos sobre fondo blanco.** Es de banco de imágenes,
+   no del local: alguien la subió a la ficha creyendo que ayudaba. Vale
+   la pena mencionárselo — le está poniendo una foto ajena a su propio
+   negocio, y hoy tiene tres platos propios bastante mejores.
+3. **La caricatura de la marca.** El local tiene pintado un personaje
+   —un hombre mapuche caricaturizado con vincha y plumas— que da nombre
+   al restaurante y está en dos de sus fotos. No se usó en esta página.
+   No es una corrección al cliente ni un juicio: es que una demo que
+   Yordy va a mostrar durante meses no se sostiene sobre una imagen que
+   puede envejecer mal, y el local tiene material mucho más fuerte —la
+   terraza y los platos— para vender lo mismo. Si el dueño la quiere,
+   es su marca y se pone; la conversación se tiene con él, no por él.
+
+────────────────────────────────────────────────────────────────
+GENÉRICAS — tres, de banco libre, sólo de fondo. Las tres son el mar
+de la costa rocosa: es lo que hay a cuatro cuadras y lo que la gente
+viene a ver. Ninguna promete una vista que el local no tenga —el
+restaurante no da al mar y la página no dice que dé.
+
+port-01.jpg  2560x1707  una ola reventando contra los roqueríos
+aura-01.jpg   900x600   espuma sobre las rocas (va a 64 px de
+                        desenfoque: sólo aporta el azul del mar)
+cita-01.jpg  2560x1920  la costa rocosa con la espuma entrando
+  las tres de pxhere · dominio público (CC0), consulta
+  «rocky pacific coast waves grey sky»
+
+────────────────────────────────────────────────────────────────
+LO QUE FALTA
+
+1. **La fachada desde el camino al fuerte.** Es como la gente lo ubica.
+2. **La carta con precios**, que en Niebla en enero es la pregunta
+   número uno.
+3. La terraza llena una tarde de enero. Con permiso de quien salga, o
+   de espaldas.
+
+────────────────────────────────────────────────────────────────
+NOTA TÉCNICA — la portada es un póster
+
+El titular ocupa el ancho entero, así que no hay lado libre donde
+disolver la foto: en vez del gradiente lateral de siempre, la foto va
+completa con un velo PAREJO.
+
+Se calibró midiendo el píxel más claro de la imagen bajo el titular
+—la espuma de la ola, 225 de 255— y componiendo el velo sobre él: con
+.60 de --mar el titular queda en 4,34:1, holgado sobre el mínimo de 3:1
+que pide el texto grande. Medido sobre la página viva, no estimado.
