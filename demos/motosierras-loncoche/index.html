@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="es-CL" class="no-js">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Motosierras Loncoche</title>
+<meta name="description" content="Venta y servicio técnico de motosierras en Loncoche. Cómo avisa una cadena mala y cuándo se afila o se cambia.">
+
+<!-- Política de seguridad de contenido: el navegador sólo puede cargar
+     archivos de este mismo sitio. Sin CDN, sin librerías, sin rastreadores.
+     Ver skills/web-blindada/references/csp-en-pages.md -->
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self'; img-src 'self' data:; font-src 'self'; connect-src 'self'; media-src 'self'; form-action 'self'; base-uri 'none'; frame-src 'none'; object-src 'none'">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+
+<!-- Rescate de la clase .js (regla 2 de la casa). En archivo, sin defer:
+     inline lo bloquearía la CSP. -->
+<script src="js/rescate.js"></script>
+
+<!-- Fuentes propias: cero peticiones a terceros. -->
+<link rel="preload" href="assets/fuentes/antonsc-400-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="assets/fuentes.css">
+<link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+
+<div class="propuesta">
+  <p class="propuesta__que">Propuesta de sitio web — preparada para <b>Motosierras Loncoche</b> por CristalWeb</p>
+  <p class="propuesta__gancho">En la comuna donde media población hace su propia leña, el servicio técnico de motosierras no aparece en internet. La motosierra acá no es herramienta de especialista: es herramienta de casa, y la casa no sabe cuándo llevarla.</p>
+</div>
+
+<header class="cab" id="cab">
+  <a class="cab__marca" href="#portada">
+    <span class="eslabon" aria-hidden="true"></span>
+    <span class="cab__nombre">Motosierras Loncoche</span>
+  </a>
+  <nav class="cab__nav" aria-label="Secciones">
+    <a href="#cadena">La cadena avisa</a>
+    <a href="#invierno">Antes del invierno</a>
+  </nav>
+  <a class="cab__tel" href="tel:+56973961882">
+    <span class="cab__tel-rot">Loncoche</span>
+    <span class="cab__tel-num">9 7396 1882</span>
+  </a>
+</header>
+
+<main>
+
+<!-- ========= PORTADA ========= -->
+<section class="portada portada--foto" id="portada" aria-labelledby="t-portada">
+  <!-- FONDO DE PORTADA: 2560 px, nitido. Se disuelve hacia el titular
+       con un gradiente lateral, no con desenfoque. -->
+  <div class="portada__foto" aria-hidden="true">
+    <img src="imagenes/port-01.jpg" width="2560" height="1707"
+         decoding="async" fetchpriority="high" alt="">
+  </div>
+
+  <div class="aserrin" aria-hidden="true">
+    <i class="p p1"></i><i class="p p2"></i><i class="p p3"></i><i class="p p4"></i>
+    <i class="p p5"></i><i class="p p6"></i><i class="p p7"></i><i class="p p8"></i>
+  </div>
+
+  <div class="portada__texto">
+    <p class="sitio">Venta y servicio técnico · Loncoche</p>
+    <h1 id="t-portada">La cadena avisa<br>antes de fallar</h1>
+    <p class="bajada">Una motosierra no se echa a perder de un día para otro: avisa, y avisa
+      en cosas que se ven. El aserrín cambia, la sierra tira para un lado, hay que empujar
+      para que corte. Saber leer eso es la diferencia entre una afilada y una cadena nueva.</p>
+    <dl class="specs">
+      <div class="spec"><dt>servicio técnico</dt><dd class="dd--si">sí, acá</dd></div>
+      <div class="spec"><dt>teléfono</dt><dd class="dd--tel"><a href="tel:+56973961882">9 7396 1882</a></dd></div>
+    </dl>
+    <p class="aviso-corto">Los servicios exactos y los plazos los confirma el taller.
+      <span class="falta">falta: qué servicios prestan y en cuánto los entregan</span></p>
+  </div>
+</section>
+
+<!-- ========= LA PIEZA FIRMA — LA TABLA (C) ========= -->
+<section class="cadena con-telon" id="cadena" aria-labelledby="t-cad">
+  <div class="telon" aria-hidden="true">
+    <img src="imagenes/telon-01.jpg" width="1200" height="800" decoding="async" alt="">
+  </div>
+
+  <!-- AURA DE COLOR: la foto de rubro reventada a desenfoque. No se lee
+       como imagen: aporta color y luz detras de una seccion que si no
+       seria fondo plano. Aca el desenfoque SI es el efecto, no un parche,
+       y por eso el archivo va chico: a 64 px de blur, mas resolucion no
+       cambia nada. Sin loading=lazy porque el elemento va en absoluto con
+       z-index negativo y el navegador nunca lo considera visible. -->
+  <div class="aura" aria-hidden="true">
+    <img src="imagenes/aura-01.jpg" width="900" height="600" decoding="async" alt="">
+  </div>
+
+  <div class="cadena__cabecera">
+    <p class="antetitulo">Diagnóstico de máquina</p>
+    <h2 id="t-cad">Qué le pasa a la cadena</h2>
+    <p class="entrada">Cinco síntomas que cualquiera puede reconocer sin desarmar nada, qué
+      significa cada uno y qué corresponde hacer. Es información de mantención: <b>acá no hay
+      ni un consejo de corte ni de tala</b> — eso es capacitación, no una página web.</p>
+    <p class="marca-ejemplo" data-ejemplo="Síntomas generales del oficio — el diagnóstico de cada máquina lo hace el taller"></p>
+  </div>
+
+  <div class="tabla-envoltura">
+    <table class="tabla">
+      <caption class="visually">Síntomas de la cadena, qué significan y qué corresponde hacer</caption>
+      <thead>
+        <tr>
+          <th scope="col">El síntoma</th>
+          <th scope="col">Qué es</th>
+          <th scope="col">Qué se hace</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">El aserrín sale fino, como polvo</th>
+          <td>La señal más clara de todas. Una cadena sana saca <b>viruta</b>: tiras
+            gruesas y parejas. Cuando sale polvillo, los dientes ya no cortan — raspan.</td>
+          <td class="acc"><span class="tag">Afilar</span></td>
+        </tr>
+        <tr>
+          <th scope="row">La sierra tira hacia un lado</th>
+          <td>El corte se va en curva y hay que corregir con el brazo. Casi siempre es
+            afilado disparejo: un lado de los dientes quedó más corto que el otro.</td>
+          <td class="acc"><span class="tag">Afilar parejo</span></td>
+        </tr>
+        <tr>
+          <th scope="row">Hay que apretar para que corte</th>
+          <td>Una cadena en buen estado entra sola con el peso de la máquina. Si hay que
+            empujarla, está roma o mal tensada — y forzar es como se rompen las cosas.</td>
+          <td class="acc"><span class="tag">Afilar</span> <span class="tag">Tensar</span></td>
+        </tr>
+        <tr>
+          <th scope="row">Sale humo con madera seca</th>
+          <td>Roce donde no debería haberlo: tensión mal puesta o falta de lubricación en
+            la espada. Con madera húmeda pasa desapercibido; con seca se nota al tiro.</td>
+          <td class="acc"><span class="tag">Revisar tensión</span> <span class="tag">Lubricación</span></td>
+        </tr>
+        <tr>
+          <th scope="row">Los dientes llegaron a la marca</th>
+          <td>Cada diente trae una línea que indica hasta dónde se puede afilar. Pasada esa
+            marca no queda material y la cadena deja de ser segura.</td>
+          <td class="acc"><span class="tag tag--cambio">Cambiar</span></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="veredicto">
+    <h3>Afilar o cambiar: el veredicto honesto</h3>
+    <p>Una cadena se afila muchas veces antes de terminar su vida, y afilarla a tiempo sale
+      barato. Pero llega un punto en que ya no hay diente que afilar, y ahí insistir no es
+      ahorro: es trabajar con una herramienta que no corta y que exige forzarla.</p>
+    <p><b>Un taller que le dice a un cliente «esta cadena ya no da» y le cobra una afilada
+      igual, pierde ese cliente.</b> El que se lo dice a tiempo lo tiene toda la vida — y en
+      un pueblo, eso vale más que cualquier publicidad.</p>
+  </div>
+</section>
+
+<!-- ========= ANTES DEL INVIERNO ========= -->
+<!-- ========= MEDIA PANTALLA ========= -->
+<section class="mitades" aria-labelledby="t-mitades">
+  <div class="mitades__foto">
+    <img src="imagenes/media-01.jpg" width="2200" height="1467"
+         loading="lazy" decoding="async" alt="">
+  </div>
+  <div class="mitades__texto">
+    <p class="mitades__ante">Lo que se rompe y por qué</p>
+    <h2 id="t-mitades">Casi ninguna motosierra llega rota. Llega descuidada.</h2>
+    <p>La cadena sin filo obliga a forzar, forzar recalienta, y el calor termina en el embrague o en el pistón. La mayoría de las reparaciones caras empiezan como un mantenimiento barato que se fue postergando. Por eso conviene saber qué revisar antes de la temporada — y qué señales avisan que algo va a fallar.</p>
+  </div>
+</section>
+
+<section class="invierno" id="invierno" aria-labelledby="t-inv">
+  <div class="invierno__cabecera">
+    <p class="antetitulo antetitulo--claro">La mantención de temporada</p>
+    <h2 id="t-inv">Antes del invierno, no en junio</h2>
+    <p class="entrada">Todos se acuerdan de la motosierra el mismo día: cuando empieza a
+      hacer frío y hay que hacer la leña. Ese día el taller tiene cola, y la máquina que
+      llegó en marzo ya está lista.</p>
+    <p class="marca-ejemplo marca-ejemplo--claro" data-ejemplo="Recomendación general de temporada — los plazos de este taller están por confirmar"></p>
+  </div>
+
+  <div class="meses">
+    <article class="me">
+      <p class="me__t">Marzo · abril</p>
+      <h3>El momento correcto</h3>
+      <p>La máquina lleva el verano guardada y el taller está sin cola. Se revisa entera,
+        se afila, se cambia lo que haya que cambiar, y queda esperando.</p>
+    </article>
+    <article class="me">
+      <p class="me__t">Mayo</p>
+      <h3>Todavía se alcanza</h3>
+      <p>Empieza a llegar gente. Un trabajo simple sale rápido; si hay que pedir un
+        repuesto, ahí se empieza a estirar.</p>
+    </article>
+    <article class="me me--tarde">
+      <p class="me__t">Junio en adelante</p>
+      <h3>La cola de todos</h3>
+      <p>Con las primeras heladas llega el pueblo entero el mismo día. No es que el taller
+        se demore más: es que hay veinte máquinas antes que la suya.</p>
+      <p class="falta">falta: los plazos reales del taller en temporada alta y baja</p>
+    </article>
+  </div>
+
+  <div class="guardar">
+    <h3>Cómo se guarda entre temporadas</h3>
+    <ul>
+      <li>Limpia por fuera y sin aserrín acumulado en la tapa.</li>
+      <li>Sin combustible viejo estancado adentro.</li>
+      <li>En un lugar seco, no directamente sobre el suelo.</li>
+      <li>Con la funda de la espada puesta.</li>
+    </ul>
+    <p class="guardar__nota">Esto es lo general del cuidado de una máquina. Lo específico de
+      cada modelo lo dice el manual y lo confirma el taller.
+      <span class="falta">falta: revisar esta lista con ellos</span></p>
+  </div>
+
+  <p class="descargo">Esta página trata de mantención de la herramienta y nada más.
+    <b>No incluye instrucciones de corte, de volteo ni de uso de la motosierra</b>, y no debe
+    tomarse como capacitación: usar una motosierra es un trabajo con riesgo y eso se aprende
+    con alguien al lado, no leyendo. Los síntomas descritos son generales del oficio y el
+    diagnóstico de cada máquina lo hace el taller.</p>
+</section>
+
+<!-- ========= EL CIERRE — T1 ========= -->
+<!-- ========= LA CITA A SANGRE ========= -->
+<section class="cita" aria-labelledby="t-cita">
+  <div class="cita__foto" aria-hidden="true">
+    <img src="imagenes/cita-01.jpg" width="2200" height="1467"
+         loading="lazy" decoding="async" alt="">
+  </div>
+  <blockquote class="cita__texto">
+    <p id="t-cita">Antes de que llegue el invierno<br>
+      <span class="cita__eco">La leña se corta en verano, y la máquina se prepara antes</span></p>
+  </blockquote>
+</section>
+
+
+
+<!-- ========= TAJO — FRANJA A SANGRE ========= -->
+<div class="tajo" aria-hidden="true">
+  <img src="imagenes/banda-01.jpg" width="1100" height="733"
+       loading="lazy" decoding="async" alt="">
+</div>
+<section class="cierre" id="llamar" aria-labelledby="t-cierre">
+  <p class="cierre__rot">Para consultar por una máquina</p>
+  <h2 id="t-cierre" class="cierre__tel">
+    <a href="tel:+56973961882">9 7396 1882</a>
+  </h2>
+  <p class="cierre__pie">Es el número publicado en su ficha de Google.</p>
+</section>
+
+<!-- ========= LA TIRA ========= -->
+<section class="tira" aria-label="Tres imágenes del oficio">
+  <figure class="tira__pieza">
+    <img src="imagenes/tira-01.jpg" width="1100" height="733" loading="lazy" decoding="async" alt="Motosierra cortando un tronco, con el aserrín saltando.">
+  </figure>
+  <figure class="tira__pieza">
+    <img src="imagenes/tira-02.jpg" width="1100" height="733" loading="lazy" decoding="async" alt="Corte de madera con sierra sobre el banco de trabajo.">
+  </figure>
+  <figure class="tira__pieza">
+    <img src="imagenes/tira-03.jpg" width="1100" height="733" loading="lazy" decoding="async" alt="Motosierra en marcha sobre un tronco, sujeta con las dos manos.">
+  </figure>
+</section>
+
+</main>
+
+
+
+<!-- ========= MOSAICO ========= -->
+<section class="mos" aria-labelledby="t-mos">
+  <h2 id="t-mos" class="mos__titulo">La misma serie, más de cerca</h2>
+  <p class="mos__nota">Estas seis ya aparecen más arriba en la página. Vuelven acá en otro tamaño porque una sola pasada de imágenes deja el scroll vacío, y porque de cerca se ven cosas que en grande se pierden. La procedencia de cada una está en imagenes/FUENTES.txt.</p>
+  <div class="mos__grilla">
+    <figure class="mos__p">
+      <img src="imagenes/mos-01.jpg" width="780" height="520"
+           loading="lazy" decoding="async" alt="">
+    </figure>
+    <figure class="mos__p">
+      <img src="imagenes/mos-02.jpg" width="780" height="520"
+           loading="lazy" decoding="async" alt="">
+    </figure>
+    <figure class="mos__p">
+      <img src="imagenes/mos-03.jpg" width="780" height="520"
+           loading="lazy" decoding="async" alt="">
+    </figure>
+    <figure class="mos__p">
+      <img src="imagenes/mos-04.jpg" width="780" height="520"
+           loading="lazy" decoding="async" alt="">
+    </figure>
+    <figure class="mos__p">
+      <img src="imagenes/mos-05.jpg" width="780" height="520"
+           loading="lazy" decoding="async" alt="">
+    </figure>
+    <figure class="mos__p">
+      <img src="imagenes/mos-06.jpg" width="780" height="520"
+           loading="lazy" decoding="async" alt="">
+    </figure>
+  </div>
+</section>
+<section class="dueno" aria-labelledby="t-dueno">
+  <h2 id="t-dueno">Para el taller</h2>
+  <div class="dueno__cols">
+    <div>
+      <h3>Lo que está verificado</h3>
+      <p>El teléfono 9 7396 1882 y que están en Loncoche, con venta y servicio. No tienen
+        sitio propio: sólo redes.</p>
+    </div>
+    <div>
+      <h3>Lo que es general</h3>
+      <p>Los cinco síntomas, el criterio de afilar o cambiar y el cuidado de temporada. Son
+        del oficio, no de este taller, y por eso van marcados.</p>
+    </div>
+    <div>
+      <h3>Lo que falta</h3>
+      <p>Tres cosas: qué servicios prestan exactamente, en cuánto los entregan en temporada
+        alta y baja, y si venden cadenas y espadas o sólo reparan. Con eso la página deja de
+        explicar el rubro y pasa a resolver la llamada.</p>
+    </div>
+  </div>
+  <p class="dueno__cierre">
+    <a class="flecha" href="https://wa.me/56968650001" rel="noopener">Escribirme por WhatsApp <span aria-hidden="true">→</span></a>
+    <a class="flecha" href="../../" rel="noopener">Ver otros trabajos <span aria-hidden="true">→</span></a>
+  </p>
+</section>
+
+<footer class="pie">
+  <p>Sitio de demostración preparado por CristalWeb. El negocio no lo ha encargado ni ha
+    revisado su contenido. La página describe mantención de herramienta en general: no
+    contiene instrucciones de corte ni de tala, no reemplaza ninguna capacitación y no
+    afirma qué servicios presta este taller. No hay precios ni plazos.</p>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>

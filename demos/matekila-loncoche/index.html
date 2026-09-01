@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="es-CL" class="no-js">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Matekila — Distribuidora y botillería, Loncoche</title>
+<meta name="description" content="Distribuidora de bebidas y botillería en Loncoche. Cómo compra un almacén al por mayor y cómo funciona el envase retornable.">
+
+<!-- Política de seguridad de contenido: el navegador sólo puede cargar
+     archivos de este mismo sitio. Sin CDN, sin librerías, sin rastreadores.
+     Ver skills/web-blindada/references/csp-en-pages.md -->
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self'; img-src 'self' data:; font-src 'self'; connect-src 'self'; media-src 'self'; form-action 'self'; base-uri 'none'; frame-src 'none'; object-src 'none'">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+
+<!-- Rescate de la clase .js (regla 2 de la casa). En archivo, sin defer:
+     inline lo bloquearía la CSP. -->
+<script src="js/rescate.js"></script>
+
+<!-- Fuentes propias: cero peticiones a terceros. -->
+<link rel="preload" href="assets/fuentes/bungee-400-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="assets/fuentes.css">
+<link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+
+<div class="propuesta">
+  <p class="propuesta__que">Propuesta de sitio web — preparada para <b>Matekila</b> por CristalWeb</p>
+  <p class="propuesta__gancho">Revisado el 31-08-2026: matekila.cl está en línea y hasta tiene carrito, pero <b>el título de la página es «Inicio»</b> — así aparece en Google, sin el nombre del negocio — y en el menú (Inicio · Productos · Nuestra historia · Contacto) no hay nada del lado mayorista. La mitad del negocio no está contada.</p>
+</div>
+
+<header class="cab" id="cab">
+  <a class="cab__marca" href="#portada">
+    <span class="jaba" aria-hidden="true"></span>
+    <span class="cab__nombre">Matekila</span>
+  </a>
+  <nav class="cab__nav" aria-label="Secciones">
+    <a href="#mostradores">Los dos mostradores</a>
+    <a href="#envase">El envase vuelve</a>
+  </nav>
+  <a class="cab__tel" href="tel:+56452471463">
+    <span class="cab__tel-rot">Loncoche</span>
+    <span class="cab__tel-num">(45) 247 1463</span>
+  </a>
+</header>
+
+<main>
+
+<!-- ========= PORTADA ========= -->
+<section class="portada portada--foto" id="portada" aria-labelledby="t-portada">
+  <!-- FONDO DE PORTADA: 2560 px, nitido. Se disuelve hacia el titular
+       con un gradiente lateral, no con desenfoque. -->
+  <div class="portada__foto" aria-hidden="true">
+    <img src="imagenes/port-01.jpg" width="2200" height="1467"
+         decoding="async" fetchpriority="high" alt="">
+  </div>
+
+  <div class="pila" aria-hidden="true">
+    <i class="j j1"></i><i class="j j2"></i><i class="j j3"></i><i class="j j4"></i>
+  </div>
+
+  <div class="portada__texto">
+    <p class="sitio">Distribuidora y botillería · Loncoche</p>
+    <h1 id="t-portada">Dos negocios<br>en un local</h1>
+    <p class="bajada">Por un lado, el almacén del sector que compra por jaba y necesita que
+      le dejen el pedido. Por el otro, el vecino que viene por una cosa. Es el mismo mesón y
+      son dos clientes distintos — y hoy no hay dónde leer cómo funciona ninguno de los
+      dos.</p>
+    <dl class="specs">
+      <div class="spec"><dt>reseñas en Google</dt><dd>36</dd></div>
+      <div class="spec"><dt>teléfono</dt><dd class="dd--tel"><a href="tel:+56452471463">(45) 247 1463</a></dd></div>
+    </dl>
+  </div>
+</section>
+
+<!-- ========= LA PIEZA FIRMA — EL COMPARADOR (M) ========= -->
+<section class="mostradores con-telon" id="mostradores" aria-labelledby="t-most">
+  <div class="telon" aria-hidden="true">
+    <img src="imagenes/telon-01.jpg" width="1200" height="800" decoding="async" alt="">
+  </div>
+
+  <!-- AURA DE COLOR: la foto de rubro reventada a desenfoque. No se lee
+       como imagen: aporta color y luz detras de una seccion que si no
+       seria fondo plano. Aca el desenfoque SI es el efecto, no un parche,
+       y por eso el archivo va chico: a 64 px de blur, mas resolucion no
+       cambia nada. Sin loading=lazy porque el elemento va en absoluto con
+       z-index negativo y el navegador nunca lo considera visible. -->
+  <div class="aura" aria-hidden="true">
+    <img src="imagenes/aura-01.jpg" width="900" height="600" decoding="async" alt="">
+  </div>
+
+  <div class="mostradores__cabecera">
+    <p class="antetitulo">Al por mayor y al detalle</p>
+    <h2 id="t-most">Los dos mostradores</h2>
+    <p class="entrada">Lo de abajo es cómo funciona una distribuidora con botillería en
+      general. <b>Los mínimos, el reparto y los días de pedido son justamente lo que hay que
+      confirmar</b>, y van marcados: en logística, publicar una condición que después no se
+      cumple es peor que no publicar nada.</p>
+    <p class="marca-ejemplo" data-ejemplo="Descripción general del rubro — mínimos, reparto y días los define la distribuidora"></p>
+  </div>
+
+  <div class="comp">
+    <!-- La columna del mayorista lleva la retícula de jaba: el B2B es
+         el protagonista de esta página. -->
+    <div class="col col--mayor">
+      <p class="col__rot">Mostrador uno</p>
+      <h3>Al por mayor</h3>
+      <p class="col__quien">Para el almacén del sector, el negocio de barrio, la parcela
+        que atiende, el local de comida.</p>
+
+      <dl class="col__datos">
+        <div><dt>Cómo se compra</dt><dd>Por jaba y por caja, no por unidad.</dd></div>
+        <div><dt>Compra mínima</dt><dd class="pend">falta: si hay mínimo y de cuánto</dd></div>
+        <div><dt>Reparto</dt><dd class="pend">falta: si dejan el pedido en el local y hasta qué sectores</dd></div>
+        <div><dt>Día tope de pedido</dt><dd class="pend">falta: hasta cuándo se pide para recibir en la semana</dd></div>
+        <div><dt>Día de entrega</dt><dd class="pend">falta: qué días reparten</dd></div>
+        <div><dt>Precio por jaba</dt><dd class="pend">falta: lista para negocios</dd></div>
+      </dl>
+
+      <p class="col__nota">Estas seis respuestas son la página entera para un almacenero.
+        Con ellas escritas, el pedido llega por mensaje y no por tres llamadas.</p>
+    </div>
+
+    <div class="col col--detalle">
+      <p class="col__rot">Mostrador dos</p>
+      <h3>Al detalle</h3>
+      <p class="col__quien">Para el vecino que viene al local.</p>
+
+      <dl class="col__datos">
+        <div><dt>Cómo se compra</dt><dd>Por unidad, en el mesón.</dd></div>
+        <div><dt>Horario</dt><dd class="pend">falta: días y horas de atención</dd></div>
+        <div><dt>Ubicación</dt><dd class="pend">falta: dirección exacta y referencia</dd></div>
+      </dl>
+
+      <p class="col__nota">Acá el trabajo de la página es más simple: que el horario y la
+        dirección estén escritos y actualizados. Es lo que la gente busca en el teléfono
+        antes de salir de la casa.</p>
+    </div>
+  </div>
+
+  <p class="firma">La gracia de esta demo es el lado mayorista. Un almacén no elige
+    proveedor por precio solamente: elige por el que cumple el día de entrega — y ése es un
+    dato que se puede publicar.</p>
+</section>
+
+<!-- ========= EL ENVASE VUELVE ========= -->
+<!-- ========= MEDIA PANTALLA ========= -->
+<section class="mitades" aria-labelledby="t-mitades">
+  <div class="mitades__foto">
+    <img src="imagenes/media-01.jpg" width="1700" height="2266"
+         loading="lazy" decoding="async" alt="">
+  </div>
+  <div class="mitades__texto">
+    <p class="mitades__ante">Lo que separa al almacenero del vecino</p>
+    <h2 id="t-mitades">Uno compra por jaba. El otro, por botella.</h2>
+    <p>Son dos negocios distintos en el mismo local, y hoy la página no distingue ninguno: el almacenero necesita precio por jaba, día de reparto y condiciones de envase; el vecino necesita saber hasta qué hora abren. Poner los dos mostradores por separado no complica el sitio — es lo único que lo hace servir para las dos personas.</p>
+  </div>
+</section>
+
+<section class="envase" id="envase" aria-labelledby="t-env">
+  <div class="envase__cabecera">
+    <p class="antetitulo antetitulo--claro">El sistema que todo el sur conoce</p>
+    <h2 id="t-env">El envase vuelve</h2>
+    <p class="entrada">El retornable y la jaba prestada funcionan por costumbre y casi nunca
+      están escritos. Es la fuente número uno de malentendidos entre una distribuidora y un
+      negocio nuevo.</p>
+    <p class="marca-ejemplo marca-ejemplo--claro" data-ejemplo="Lógica general del retornable — las condiciones de esta casa están por confirmar"></p>
+  </div>
+
+  <div class="pasos">
+    <article class="pa">
+      <p class="pa__n">01</p>
+      <h3>El envase tiene valor</h3>
+      <p>La botella retornable no se regala con el contenido: se presta contra un valor. Por
+        eso al comprar sin devolver, el precio sube — no es un recargo, es el envase.</p>
+    </article>
+    <article class="pa">
+      <p class="pa__n">02</p>
+      <h3>La jaba también</h3>
+      <p>La jaba plástica es del distribuidor y va y vuelve con el pedido. Un negocio que
+        acumula jabas termina con un problema en la cuenta, y casi siempre sin saberlo.</p>
+    </article>
+    <article class="pa">
+      <p class="pa__n">03</p>
+      <h3>Se devuelve en el mismo estado</h3>
+      <p>Envases completos, en su jaba, sin botellas trizadas ni de otra marca mezcladas.
+        Suena obvio y es exactamente lo que genera discusiones en la entrega.</p>
+    </article>
+    <article class="pa">
+      <p class="pa__n">04</p>
+      <h3>La cuenta se lleva</h3>
+      <p>Cuántas jabas salieron y cuántas volvieron. Cuando eso está anotado por las dos
+        partes, no hay discusión posible.</p>
+      <p class="falta">falta: cómo lo llevan ustedes — libreta, planilla, boleta</p>
+    </article>
+  </div>
+
+  <p class="descargo">Esta página trata del funcionamiento del negocio: reparto, jabas,
+    pedidos y envase retornable. <b>No promociona el consumo de alcohol, no publica precios
+    de bebidas alcohólicas ni ofertas, y no está dirigida a menores de edad.</b> La venta de
+    alcohol tiene reglas de horario y de edad que fija la ley y que aplica el local; nada de
+    lo escrito acá las reemplaza ni las interpreta.</p>
+</section>
+
+<!-- ========= EL CIERRE — T1 ========= -->
+<!-- ========= LA CITA A SANGRE ========= -->
+<section class="cita" aria-labelledby="t-cita">
+  <div class="cita__foto" aria-hidden="true">
+    <img src="imagenes/cita-01.jpg" width="2200" height="1457"
+         loading="lazy" decoding="async" alt="">
+  </div>
+  <blockquote class="cita__texto">
+    <p id="t-cita">La jaba que vuelve<br>
+      <span class="cita__eco">El envase retornable, explicado antes de la primera compra</span></p>
+  </blockquote>
+</section>
+
+
+
+<!-- ========= TAJO — FRANJA A SANGRE ========= -->
+<div class="tajo" aria-hidden="true">
+  <img src="imagenes/banda-01.jpg" width="1100" height="713"
+       loading="lazy" decoding="async" alt="">
+</div>
+<section class="cierre" id="llamar" aria-labelledby="t-cierre">
+  <p class="cierre__rot">Para pedidos y consultas</p>
+  <h2 id="t-cierre" class="cierre__tel">
+    <a href="tel:+56452471463">(45) 247 1463</a>
+  </h2>
+  <p class="cierre__pie">Es el número publicado en su ficha de Google.</p>
+</section>
+
+<!-- ========= LA TIRA ========= -->
+<section class="tira" aria-label="Tres imágenes del oficio">
+  <figure class="tira__pieza">
+    <img src="imagenes/tira-01.jpg" width="1100" height="734" loading="lazy" decoding="async" alt="Estantería de almacén con productos ordenados.">
+  </figure>
+  <figure class="tira__pieza">
+    <img src="imagenes/tira-02.jpg" width="1100" height="733" loading="lazy" decoding="async" alt="Pasillo de bebidas en una sala de ventas.">
+  </figure>
+  <figure class="tira__pieza">
+    <img src="imagenes/tira-03.jpg" width="1100" height="713" loading="lazy" decoding="async" alt="Cajas de fruta y verdura ordenadas en el mesón.">
+  </figure>
+</section>
+
+</main>
+
+
+
+<!-- ========= MOSAICO ========= -->
+<section class="mos" aria-labelledby="t-mos">
+  <h2 id="t-mos" class="mos__titulo">La misma serie, más de cerca</h2>
+  <p class="mos__nota">Estas seis ya aparecen más arriba en la página. Vuelven acá en otro tamaño porque una sola pasada de imágenes deja el scroll vacío, y porque de cerca se ven cosas que en grande se pierden. La procedencia de cada una está en imagenes/FUENTES.txt.</p>
+  <div class="mos__grilla">
+    <figure class="mos__p">
+      <img src="imagenes/mos-01.jpg" width="780" height="1040"
+           loading="lazy" decoding="async" alt="">
+    </figure>
+    <figure class="mos__p">
+      <img src="imagenes/mos-02.jpg" width="780" height="506"
+           loading="lazy" decoding="async" alt="">
+    </figure>
+    <figure class="mos__p">
+      <img src="imagenes/mos-03.jpg" width="780" height="520"
+           loading="lazy" decoding="async" alt="">
+    </figure>
+    <figure class="mos__p">
+      <img src="imagenes/mos-04.jpg" width="780" height="520"
+           loading="lazy" decoding="async" alt="">
+    </figure>
+    <figure class="mos__p">
+      <img src="imagenes/mos-05.jpg" width="780" height="520"
+           loading="lazy" decoding="async" alt="">
+    </figure>
+    <figure class="mos__p">
+      <img src="imagenes/mos-06.jpg" width="780" height="517"
+           loading="lazy" decoding="async" alt="">
+    </figure>
+  </div>
+</section>
+<section class="dueno" aria-labelledby="t-dueno">
+  <h2 id="t-dueno">Para Matekila</h2>
+  <div class="dueno__cols">
+    <div>
+      <h3>Lo que está verificado</h3>
+      <p>Las 36 reseñas de su ficha de Google, el teléfono (45) 247 1463, y que matekila.cl
+        funciona pero se titula «Inicio» y no menciona el lado mayorista. Revisado el
+        31-08-2026.</p>
+    </div>
+    <div>
+      <h3>Lo que es general</h3>
+      <p>Los dos mostradores y los cuatro pasos del envase. Describen cómo funciona el
+        rubro, no cómo funcionan ustedes.</p>
+    </div>
+    <div>
+      <h3>Lo que falta</h3>
+      <p>Seis respuestas del lado mayorista —mínimo, reparto, sectores, día tope, día de
+        entrega y si hay lista para negocios— más el horario y la dirección. Las seis
+        primeras son las que hacen que un almacén cambie de proveedor.</p>
+    </div>
+  </div>
+  <p class="dueno__cierre">
+    <a class="flecha" href="https://wa.me/56968650001" rel="noopener">Escribirme por WhatsApp <span aria-hidden="true">→</span></a>
+    <a class="flecha" href="../../" rel="noopener">Ver otros trabajos <span aria-hidden="true">→</span></a>
+  </p>
+</section>
+
+<footer class="pie">
+  <p>Sitio de demostración preparado por CristalWeb. El negocio no lo ha encargado ni ha
+    revisado su contenido. No hay precios, mínimos ni condiciones de reparto: todos están
+    marcados como pendientes. La página no promociona el consumo de alcohol, no contiene
+    ofertas de bebidas alcohólicas y no está dirigida a menores de edad.</p>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>

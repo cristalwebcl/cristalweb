@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="es-CL" class="no-js">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Barbería King of King's — Temuco</title>
+<meta name="description" content="Barbería en Temuco. Agendar con un barbero, no con un local: el perfil de cada uno y qué pasa si el suyo no está.">
+
+<!-- Política de seguridad de contenido: el navegador sólo puede cargar
+     archivos de este mismo sitio. Sin CDN, sin librerías, sin rastreadores.
+     Ver skills/web-blindada/references/csp-en-pages.md -->
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self'; img-src 'self' data:; font-src 'self'; connect-src 'self'; media-src 'self'; form-action 'self'; base-uri 'none'; frame-src 'none'; object-src 'none'">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+
+<!-- Rescate de la clase .js (regla 2 de la casa). En archivo, sin defer:
+     inline lo bloquearía la CSP. -->
+<script src="js/rescate.js"></script>
+
+<!-- Fuentes propias: cero peticiones a terceros. -->
+<link rel="preload" href="assets/fuentes/bodonimoda-var-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="assets/fuentes.css">
+<link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+
+<div class="propuesta">
+  <p class="propuesta__que">Propuesta de sitio web — preparada para <b>Barbería King of King's</b> por CristalWeb</p>
+  <p class="propuesta__gancho">4,8 con 116 reseñas, y buena parte de esas reseñas nombran a un barbero en particular. En una barbería nadie agenda un local: agenda a una persona. Ningún sitio de la zona deja elegirla por escrito.</p>
+</div>
+
+<header class="cab" id="cab">
+  <a class="cab__marca" href="#portada">
+    <span class="corona" aria-hidden="true"></span>
+    <span class="cab__nombre">King of King's</span>
+  </a>
+  <nav class="cab__nav" aria-label="Secciones">
+    <a href="#barberos">Los barberos</a>
+    <a href="#noesta">Si el suyo no está</a>
+  </nav>
+  <a class="cab__tel" href="tel:+56985938053">
+    <span class="cab__tel-rot">Temuco</span>
+    <span class="cab__tel-num">+56 9 8593 8053</span>
+  </a>
+</header>
+
+<main>
+
+<!-- ========= PORTADA ========= -->
+<section class="portada portada--foto" id="portada" aria-labelledby="t-portada">
+  <!-- FONDO DE PORTADA: 2560 px, nitido. Se disuelve hacia el titular
+       con un gradiente lateral, no con desenfoque. -->
+  <div class="portada__foto" aria-hidden="true">
+    <img src="imagenes/port-01.jpg" width="2560" height="1707"
+         decoding="async" fetchpriority="high" alt="">
+  </div>
+
+  <div class="damero" aria-hidden="true">
+    <i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i>
+    <i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i>
+    <i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i>
+  </div>
+
+  <div class="portada__texto">
+    <p class="sitio">Barbería · Temuco</p>
+    <h1 id="t-portada">Agende al barbero,<br>no a la barbería</h1>
+    <p class="bajada">Quien encontró al que le hace bien el degradado no cambia por nada, y
+      quien va por primera vez quiere saber a quién le va a tocar. Las dos cosas se
+      resuelven igual: mostrando quién trabaja acá y qué hace mejor cada uno.</p>
+    <dl class="specs">
+      <div class="spec"><dt>nota en Google</dt><dd>4,8</dd></div>
+      <div class="spec"><dt>reseñas</dt><dd>116</dd></div>
+      <div class="spec"><dt>teléfono</dt><dd class="dd--tel"><a href="tel:+56985938053">+56 9 8593 8053</a></dd></div>
+    </dl>
+  </div>
+</section>
+
+<!-- ========= LA PIEZA FIRMA — ÍNDICE DE PERSONAS (B) ========= -->
+<section class="barberos con-telon" id="barberos" aria-labelledby="t-barberos">
+  <div class="telon" aria-hidden="true">
+    <img src="imagenes/telon-01.jpg" width="1200" height="800" decoding="async" alt="">
+  </div>
+
+  <!-- AURA DE COLOR: la foto de rubro reventada a desenfoque. No se lee
+       como imagen: aporta color y luz detras de una seccion que si no
+       seria fondo plano. Aca el desenfoque SI es el efecto, no un parche,
+       y por eso el archivo va chico: a 64 px de blur, mas resolucion no
+       cambia nada. Sin loading=lazy porque el elemento va en absoluto con
+       z-index negativo y el navegador nunca lo considera visible. -->
+  <div class="aura" aria-hidden="true">
+    <img src="imagenes/aura-01.jpg" width="900" height="601" decoding="async" alt="">
+  </div>
+
+  <div class="barberos__cabecera">
+    <p class="antetitulo">La sección que decide la reserva</p>
+    <h2 id="t-barberos">Quién le corta el pelo</h2>
+    <p class="entrada">Acá van los barberos de la casa, uno por uno. <b>Los tres perfiles de
+      abajo están vacíos a propósito: no invento personas.</b> La estructura está lista y lo
+      único que falta son los nombres reales, sus especialidades y sus días.</p>
+    <p class="marca-ejemplo marca-ejemplo--fuerte" data-ejemplo="PERFILES DE EJEMPLO — ningún nombre, especialidad ni horario de esta página es real"></p>
+  </div>
+
+  <div class="indice-y-perfiles">
+    <!-- El índice: son personas, no secciones -->
+    <nav class="indice" aria-label="Los barberos">
+      <a href="#b1"><span class="indice__n">01</span> Barbero 01</a>
+      <a href="#b2"><span class="indice__n">02</span> Barbero 02</a>
+      <a href="#b3"><span class="indice__n">03</span> Barbero 03</a>
+    </nav>
+
+    <div class="perfiles">
+      <article class="perfil" id="b1">
+        <p class="perfil__n">01</p>
+        <h3>Barbero 01 <span class="perfil__falta">falta: su nombre</span></h3>
+        <dl class="perfil__datos">
+          <div><dt>Lo que hace mejor</dt><dd class="pend">falta: su especialidad — degradado, barba, clásico, diseño</dd></div>
+          <div><dt>Su estilo</dt><dd class="pend">falta: dos líneas escritas por él mismo, no por mí</dd></div>
+          <div><dt>Qué días está</dt><dd class="pend">falta: sus días y su horario</dd></div>
+          <div><dt>Desde cuándo</dt><dd class="pend">falta: hace cuánto trabaja acá</dd></div>
+        </dl>
+      </article>
+
+      <article class="perfil" id="b2">
+        <p class="perfil__n">02</p>
+        <h3>Barbero 02 <span class="perfil__falta">falta: su nombre</span></h3>
+        <dl class="perfil__datos">
+          <div><dt>Lo que hace mejor</dt><dd class="pend">falta: su especialidad</dd></div>
+          <div><dt>Su estilo</dt><dd class="pend">falta: dos líneas suyas</dd></div>
+          <div><dt>Qué días está</dt><dd class="pend">falta: sus días y su horario</dd></div>
+          <div><dt>Desde cuándo</dt><dd class="pend">falta: hace cuánto trabaja acá</dd></div>
+        </dl>
+      </article>
+
+      <article class="perfil" id="b3">
+        <p class="perfil__n">03</p>
+        <h3>Barbero 03 <span class="perfil__falta">falta: su nombre</span></h3>
+        <dl class="perfil__datos">
+          <div><dt>Lo que hace mejor</dt><dd class="pend">falta: su especialidad</dd></div>
+          <div><dt>Su estilo</dt><dd class="pend">falta: dos líneas suyas</dd></div>
+          <div><dt>Qué días está</dt><dd class="pend">falta: sus días y su horario</dd></div>
+          <div><dt>Desde cuándo</dt><dd class="pend">falta: hace cuánto trabaja acá</dd></div>
+        </dl>
+      </article>
+    </div>
+  </div>
+
+  <div class="porque">
+    <h3>Por qué esta sección vende más que cualquier galería</h3>
+    <p>Una barbería con buenas reseñas ya tiene el problema resuelto en la práctica: la
+      gente vuelve donde el mismo. Lo que falta es que eso se pueda ver antes de llamar.
+      Un cliente nuevo que lee «éste hace degradados» reserva con confianza, y uno antiguo
+      que ve los días de su barbero deja de preguntar por WhatsApp cada semana.</p>
+    <p>Además ordena la agenda: la mitad de los mensajes de una barbería son «¿está fulano
+      hoy?».</p>
+  </div>
+</section>
+
+<!-- ========= SI SU BARBERO NO ESTÁ ========= -->
+<!-- ========= MEDIA PANTALLA ========= -->
+<section class="mitades" aria-labelledby="t-mitades">
+  <div class="mitades__foto">
+    <img src="imagenes/media-01.jpg" width="2200" height="1467"
+         loading="lazy" decoding="async" alt="">
+  </div>
+  <div class="mitades__texto">
+    <p class="mitades__ante">Por qué el nombre importa</p>
+    <h2 id="t-mitades">El degradado no lo hace la barbería. Lo hace una mano.</h2>
+    <p>Dos barberos del mismo local, con la misma máquina, no entregan el mismo corte. Eso no es un defecto: es el oficio. Y es exactamente la razón por la que un cliente vuelve a preguntar por alguien en particular en vez de pedir hora a secas — el problema es que hoy esa pregunta hay que hacerla por teléfono y con suerte.</p>
+  </div>
+</section>
+
+<section class="noesta" id="noesta" aria-labelledby="t-noesta">
+  <div class="noesta__cabecera">
+    <p class="antetitulo antetitulo--claro">La pregunta incómoda</p>
+    <h2 id="t-noesta">Si su barbero no está</h2>
+    <p class="entrada">Pasa: vacaciones, un imprevisto, un día libre. Lo que decide si el
+      cliente vuelve o no es qué se hace en ese momento — y que lo sepa de antemano.</p>
+    <p class="marca-ejemplo marca-ejemplo--claro" data-ejemplo="ESTRUCTURA — la política real la define la barbería"></p>
+  </div>
+
+  <div class="opciones">
+    <article class="op">
+      <p class="op__rot">Opción A</p>
+      <h3>Otro toma el corte</h3>
+      <p>Se avisa antes de que llegue, no cuando ya está sentado. Funciona bien cuando el
+        equipo trabaja parecido y el cliente lo sabe de antemano.</p>
+    </article>
+    <article class="op">
+      <p class="op__rot">Opción B</p>
+      <h3>Se reagenda con el suyo</h3>
+      <p>Se ofrece la hora más cercana en que vuelve. Es lo que prefiere el cliente fiel, y
+        es también lo que protege el trabajo de cada barbero.</p>
+    </article>
+    <article class="op op--elegir">
+      <p class="op__rot">Lo que hay que decidir</p>
+      <h3>Una de las dos, escrita</h3>
+      <p>Da lo mismo cuál: lo que no funciona es no tenerla. Escrita en la página, el
+        cliente elige informado y nadie se enoja en el mesón.</p>
+      <p class="falta">falta: cuál de las dos es la política de la casa</p>
+    </article>
+  </div>
+</section>
+
+<!-- ========= EL CIERRE — T1 ========= -->
+<!-- ========= LA CITA A SANGRE ========= -->
+<section class="cita" aria-labelledby="t-cita">
+  <div class="cita__foto" aria-hidden="true">
+    <img src="imagenes/cita-01.jpg" width="2200" height="1467"
+         loading="lazy" decoding="async" alt="">
+  </div>
+  <blockquote class="cita__texto">
+    <p id="t-cita">«Pregunta por…»<br>
+      <span class="cita__eco">Así empiezan las mejores de sus 116 reseñas</span></p>
+  </blockquote>
+</section>
+
+
+
+<!-- ========= TAJO — FRANJA A SANGRE ========= -->
+<div class="tajo" aria-hidden="true">
+  <img src="imagenes/banda-01.jpg" width="1100" height="733"
+       loading="lazy" decoding="async" alt="">
+</div>
+<section class="cierre" id="llamar" aria-labelledby="t-cierre">
+  <p class="cierre__rot">Para reservar hora</p>
+  <h2 id="t-cierre" class="cierre__tel">
+    <a href="tel:+56985938053">+56 9 8593 8053</a>
+  </h2>
+  <p class="cierre__pie">Es el número publicado en su ficha de Google.</p>
+</section>
+
+<!-- ========= LA TIRA ========= -->
+<section class="tira" aria-label="Tres imágenes del oficio">
+  <figure class="tira__pieza">
+    <img src="imagenes/tira-01.jpg" width="1100" height="734" loading="lazy" decoding="async" alt="Máquinas y cepillos ordenados sobre la mesa de trabajo.">
+  </figure>
+  <figure class="tira__pieza">
+    <img src="imagenes/tira-02.jpg" width="1100" height="733" loading="lazy" decoding="async" alt="Afeitado con navaja durante el arreglo de barba.">
+  </figure>
+  <figure class="tira__pieza">
+    <img src="imagenes/tira-03.jpg" width="1100" height="733" loading="lazy" decoding="async" alt="Tijeras, peines y productos sobre el mesón de la barbería.">
+  </figure>
+</section>
+
+<!-- ========= LAS FOTOS ========= -->
+<section class="galeria" aria-labelledby="t-galeria">
+  <h2 id="t-galeria" class="galeria__titulo">El local y un corte</h2>
+  <p class="galeria__nota">Fotos publicadas por la propia barbería en su Facebook de Temuco. La del salón muestra la fila de sillones completa; la otra, un corte terminado ahí mismo.</p>
+  <div class="galeria__grilla">
+    <figure class="gal gal--abajo">
+      <img src="imagenes/local-01.jpg" width="1400" height="1400" loading="lazy" decoding="async"
+           alt="Cliente en el sillón con el corte recién terminado, con el salón de fondo.">
+      <figcaption>Un corte terminado, en el sillón.</figcaption>
+    </figure>
+  </div>
+  <p class="galeria__falta">falta: una foto de cada barbero en su puesto. Es lo que esta página necesita para que el cliente pueda elegir por nombre — y es lo único que no se saca de internet.</p>
+</section>
+
+</main>
+
+
+
+<!-- ========= MOSAICO ========= -->
+<section class="mos" aria-labelledby="t-mos">
+  <h2 id="t-mos" class="mos__titulo">La misma serie, más de cerca</h2>
+  <p class="mos__nota">Estas seis ya aparecen más arriba en la página. Vuelven acá en otro tamaño porque una sola pasada de imágenes deja el scroll vacío, y porque de cerca se ven cosas que en grande se pierden. La procedencia de cada una está en imagenes/FUENTES.txt.</p>
+  <div class="mos__grilla">
+    <figure class="mos__p">
+      <img src="imagenes/mos-01.jpg" width="780" height="520"
+           loading="lazy" decoding="async" alt="">
+    </figure>
+    <figure class="mos__p">
+      <img src="imagenes/mos-02.jpg" width="780" height="520"
+           loading="lazy" decoding="async" alt="">
+    </figure>
+    <figure class="mos__p">
+      <img src="imagenes/mos-03.jpg" width="780" height="520"
+           loading="lazy" decoding="async" alt="">
+    </figure>
+    <figure class="mos__p">
+      <img src="imagenes/mos-04.jpg" width="780" height="520"
+           loading="lazy" decoding="async" alt="">
+    </figure>
+    <figure class="mos__p">
+      <img src="imagenes/mos-05.jpg" width="780" height="520"
+           loading="lazy" decoding="async" alt="">
+    </figure>
+    <figure class="mos__p">
+      <img src="imagenes/local-02.jpg" width="1400" height="1400"
+           loading="lazy" decoding="async" alt="">
+    </figure>
+  </div>
+</section>
+<section class="dueno" aria-labelledby="t-dueno">
+  <h2 id="t-dueno">Para la barbería</h2>
+  <div class="dueno__cols">
+    <div>
+      <h3>Lo que está verificado</h3>
+      <p>El 4,8 con 116 reseñas de su ficha de Google y el teléfono +56 9 8593 8053. No
+        tienen sitio propio: sólo redes.</p>
+    </div>
+    <div>
+      <h3>Lo que está vacío</h3>
+      <p>Los tres perfiles completos. <b>No inventé ni un nombre ni una especialidad</b>: en
+        una página que trata justamente de las personas del equipo, poner nombres falsos
+        sería lo peor que se puede hacer.</p>
+    </div>
+    <div>
+      <h3>Lo que falta</h3>
+      <p>Cuántos barberos son y, de cada uno: nombre, qué hace mejor, dos líneas escritas
+        por él, sus días y desde cuándo trabaja acá. Más la política de cuando alguien no
+        está. Es una conversación de veinte minutos con el equipo.</p>
+    </div>
+  </div>
+  <p class="dueno__cierre">
+    <a class="flecha" href="https://wa.me/56968650001" rel="noopener">Escribirme por WhatsApp <span aria-hidden="true">→</span></a>
+    <a class="flecha" href="../../" rel="noopener">Ver otros trabajos <span aria-hidden="true">→</span></a>
+  </p>
+</section>
+
+<footer class="pie">
+  <p>Sitio de demostración preparado por CristalWeb. El negocio no lo ha encargado ni ha
+    revisado su contenido. Los tres perfiles de barbero son plantillas vacías: ningún
+    nombre, especialidad, horario ni antigüedad de esta página corresponde a una persona
+    real. No hay precios.</p>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>

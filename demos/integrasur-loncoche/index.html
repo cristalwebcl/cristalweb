@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="es-CL" class="no-js">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Clínica Dental IntegraSur — Loncoche</title>
+<meta name="description" content="Clínica dental en Loncoche. La limpieza dental explicada: qué es, cada cuánto conviene y qué se siente de verdad.">
+
+<!-- Política de seguridad de contenido: el navegador sólo puede cargar
+     archivos de este mismo sitio. Sin CDN, sin librerías, sin rastreadores.
+     Ver skills/web-blindada/references/csp-en-pages.md -->
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self'; img-src 'self' data:; font-src 'self'; connect-src 'self'; media-src 'self'; form-action 'self'; base-uri 'none'; frame-src 'none'; object-src 'none'">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+
+<!-- Rescate de la clase .js (regla 2 de la casa). En archivo, sin defer:
+     inline lo bloquearía la CSP. -->
+<script src="js/rescate.js"></script>
+
+<!-- Fuentes propias: cero peticiones a terceros. -->
+<link rel="preload" href="assets/fuentes/mitr-500-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="assets/fuentes.css">
+<link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+
+<div class="propuesta">
+  <p class="propuesta__que">Propuesta de sitio web — preparada para <b>Clínica Dental IntegraSur</b> por CristalWeb</p>
+  <p class="propuesta__gancho">En Loncoche la limpieza dental se posterga hasta que duele. Y la clínica del pueblo no tiene dónde escribir la única cosa que cambiaría eso: que prevenir cuesta una fracción de lo que cuesta reparar.</p>
+</div>
+
+<header class="cab" id="cab">
+  <a class="cab__marca" href="#portada">
+    <span class="pasta" aria-hidden="true"><i class="pasta__onda"></i></span>
+    <span class="cab__nombre">IntegraSur</span>
+  </a>
+  <nav class="cab__nav" aria-label="Secciones">
+    <a href="#limpieza">La limpieza</a>
+    <a href="#sillon">Preguntas del sillón</a>
+  </nav>
+  <a class="cab__tel" href="tel:+56935606970">
+    <span class="cab__tel-rot">Loncoche</span>
+    <span class="cab__tel-num">9 3560 6970</span>
+  </a>
+</header>
+
+<main>
+
+<!-- ========= PORTADA ========= -->
+<section class="portada portada--foto" id="portada" aria-labelledby="t-portada">
+  <!-- FONDO DE PORTADA: 2560 px, nitido. Se disuelve hacia el titular
+       con un gradiente lateral, no con desenfoque. -->
+  <div class="portada__foto" aria-hidden="true">
+    <img src="imagenes/port-01.jpg" width="2560" height="1707"
+         decoding="async" fetchpriority="high" alt="">
+  </div>
+
+  <div class="raya-fondo" aria-hidden="true"><span class="raya-fondo__franja"></span></div>
+
+  <div class="portada__texto">
+    <p class="sitio">Clínica dental · Loncoche</p>
+    <h1 id="t-portada">Lo barato<br>es prevenir</h1>
+    <p class="bajada">Casi nadie pide hora para una limpieza: se pide cuando ya duele, y
+      para entonces lo que había que hacer se convirtió en otra cosa más larga y más cara.
+      Esta página explica la limpieza dental como corresponde — qué es, cada cuánto y qué
+      se siente de verdad.</p>
+    <p class="dd--tel"><a href="tel:+56935606970">9 3560 6970</a></p>
+  </div>
+</section>
+
+<!-- ========= LA PIEZA FIRMA ========= -->
+<section class="limpieza con-telon" id="limpieza" aria-labelledby="t-limp">
+  <div class="telon" aria-hidden="true">
+    <img src="imagenes/telon-01.jpg" width="1200" height="800" decoding="async" alt="">
+  </div>
+
+  <!-- AURA DE COLOR: la foto de rubro reventada a desenfoque. No se lee
+       como imagen: aporta color y luz detras de una seccion que si no
+       seria fondo plano. Aca el desenfoque SI es el efecto, no un parche,
+       y por eso el archivo va chico: a 64 px de blur, mas resolucion no
+       cambia nada. Sin loading=lazy porque el elemento va en absoluto con
+       z-index negativo y el navegador nunca lo considera visible. -->
+  <div class="aura" aria-hidden="true">
+    <img src="imagenes/aura-01.jpg" width="900" height="600" decoding="async" alt="">
+  </div>
+
+  <div class="limpieza__cabecera">
+    <p class="antetitulo">Destartraje, dicho en simple</p>
+    <h2 id="t-limp">La limpieza que evita todo</h2>
+    <p class="entrada">El sarro es placa que se endureció, y una vez dura no sale
+      cepillando por más ganas que se le ponga: hay que sacarla con instrumento. Eso es la
+      limpieza dental, y es el procedimiento más barato de toda la odontología.</p>
+    <p class="marca-ejemplo" data-ejemplo="Descripción general del procedimiento — la firma quien atiende"></p>
+  </div>
+
+  <div class="fichas">
+    <article class="fi">
+      <p class="fi__rot">Qué es</p>
+      <h3>Sacar lo que el cepillo ya no saca</h3>
+      <p>La placa blanda se cepilla; la que lleva días pegada se endurece contra el diente
+        y se transforma en sarro. Desde ahí el cepillo pasa por encima sin tocarla, y
+        debajo la encía se inflama. Sacarlo es un trabajo mecánico, no una limpieza
+        profunda de las que se compran en frasco.</p>
+    </article>
+    <article class="fi">
+      <p class="fi__rot">Cada cuánto</p>
+      <h3>Suele ser una o dos veces al año</h3>
+      <p>La referencia general del oficio son seis a doce meses, pero no es igual para
+        todos: quien fuma, quien usa aparatos o quien tiene las encías delicadas acumula
+        más rápido. El intervalo de cada persona sale de su evaluación, no de una tabla.
+        <span class="falta">falta: cada cuánto lo indican ustedes según el caso</span></p>
+    </article>
+    <article class="fi">
+      <p class="fi__rot">Qué se siente</p>
+      <h3>Molesta un poco. No es el torno.</h3>
+      <p>Hay vibración, agua fría y un poco de ruido. Donde la encía está inflamada puede
+        molestar más, y ahí es donde a veces sangra — que no es una señal de que lo están
+        haciendo mal, sino de que esa encía estaba inflamada antes de empezar. Nadie sale
+        de una limpieza como sale de una tapadura.</p>
+    </article>
+    <article class="fi fi--cuenta">
+      <p class="fi__rot">La cuenta simple</p>
+      <h3>Una limpieza al año contra lo que viene después</h3>
+      <p>Sin caries, la limpieza es el único gasto dental del año. Con una caries que
+        avanzó, el mismo diente puede terminar necesitando una tapadura, después un
+        tratamiento de conducto y después una corona — tres procedimientos, tres sesiones
+        y una cuenta que no se parece en nada a la primera.</p>
+      <p class="fi__nota">Acá no van precios: los montos los pone la clínica y cambian
+        entre una y otra. Lo que no cambia es el orden de magnitud.
+        <span class="falta">falta: si quieren publicar valores, éste es el lugar</span></p>
+    </article>
+  </div>
+
+  <p class="firma">Es la sección más aburrida de escribir y la que más cambia una agenda.
+    Nadie pide hora por miedo a una caries que no le duele; sí la pide cuando entiende la
+    cuenta.</p>
+</section>
+
+<!-- ========= LAS PREGUNTAS DEL SILLÓN — ESTRUCTURA K ========= -->
+<!-- ========= MEDIA PANTALLA ========= -->
+<section class="mitades" aria-labelledby="t-mitades">
+  <div class="mitades__foto">
+    <img src="imagenes/media-01.jpg" width="2200" height="1467"
+         loading="lazy" decoding="async" alt="">
+  </div>
+  <div class="mitades__texto">
+    <p class="mitades__ante">La escalera del costo</p>
+    <h2 id="t-mitades">Cada mes que se posterga, sube un peldaño</h2>
+    <p>Una limpieza al año cuesta menos que cualquier tapadura. Una tapadura a tiempo cuesta una fracción de lo que cuesta el tratamiento de conducto que viene después. Y ese tratamiento cuesta menos que reponer la pieza cuando ya no hay nada que salvar. La escalera es siempre la misma y siempre sube en la misma dirección.</p>
+  </div>
+</section>
+
+<section class="sillon" id="sillon" aria-labelledby="t-sillon">
+  <div class="sillon__cabecera">
+    <p class="antetitulo antetitulo--claro">Lo que se pregunta en voz baja</p>
+    <h2 id="t-sillon">Las preguntas del sillón</h2>
+    <p class="entrada">Cada una con su respuesta corta a la vista. El que quiere el detalle
+      lo abre; el que sólo quería saber si dolía, ya lo sabe y cierra la página tranquilo.</p>
+    <p class="marca-ejemplo marca-ejemplo--claro" data-ejemplo="Respuestas generales del oficio — pendientes de firma profesional"></p>
+  </div>
+
+  <div class="filas">
+    <details class="fila">
+      <summary>
+        <span class="fila__q">¿Duele?</span>
+        <span class="fila__corta">Molesta, no duele</span>
+      </summary>
+      <div class="fila__cuerpo">
+        <p>La limpieza no entra en el diente: trabaja en la superficie y en el borde de la
+          encía. Lo que se siente es vibración, frío y presión. Si hay encías muy
+          inflamadas o raíces expuestas puede molestar más, y en esos casos se conversa
+          antes de empezar qué se puede hacer para que sea llevadero.</p>
+      </div>
+    </details>
+
+    <details class="fila">
+      <summary>
+        <span class="fila__q">¿Sangra?</span>
+        <span class="fila__corta">Si estaba inflamada, sí</span>
+      </summary>
+      <div class="fila__cuerpo">
+        <p>Una encía sana no sangra cuando la tocan. Si sangra durante la limpieza es
+          porque ya estaba inflamada, casi siempre por el mismo sarro que se está sacando.
+          El sangrado de ese día no es el problema: es la señal de que había uno.</p>
+      </div>
+    </details>
+
+    <details class="fila">
+      <summary>
+        <span class="fila__q">¿Queda sensible?</span>
+        <span class="fila__corta">Unos días, y pasa</span>
+      </summary>
+      <div class="fila__cuerpo">
+        <p>Es frecuente sentir los dientes más sensibles al frío durante los primeros días,
+          sobre todo si había mucho sarro tapando el cuello del diente. Se pasa solo. Si no
+          se pasa o va empeorando, hay que volver y decirlo — no es algo que corresponda
+          aguantar.</p>
+      </div>
+    </details>
+
+    <details class="fila">
+      <summary>
+        <span class="fila__q">¿Desgasta el esmalte?</span>
+        <span class="fila__corta">No es lo que hace</span>
+      </summary>
+      <div class="fila__cuerpo">
+        <p>Es el mito más repetido del tema. El instrumento trabaja sobre el sarro, no sobre
+          el esmalte. Lo que sí ocurre es que, al sacar una capa dura que llevaba años, el
+          diente queda expuesto como estaba antes — y esa sensación de «me lo gastaron» es
+          en realidad el diente sin la costra encima.</p>
+      </div>
+    </details>
+
+    <details class="fila">
+      <summary>
+        <span class="fila__q">¿Cuánto demora?</span>
+        <span class="fila__corta">Una sesión, no dos</span>
+      </summary>
+      <div class="fila__cuerpo">
+        <p>En general se resuelve en una sesión. Cuando hay mucho sarro acumulado o las
+          encías están muy inflamadas, a veces se divide en dos para no dejar la boca
+          adolorida de una vez.
+          <span class="falta">falta: cuánto dura una sesión en esta clínica</span></p>
+      </div>
+    </details>
+  </div>
+
+  <p class="descargo">Todo lo de esta página es información general sobre un procedimiento
+    dental: no es diagnóstico, no reemplaza una consulta y no describe protocolos de esta
+    clínica en particular. No hay precios ni se nombra ningún medicamento. Lo escribió quien
+    hizo el sitio y lo revisa y lo firma la clínica antes de publicarse.</p>
+</section>
+
+<!-- ========= EL CIERRE — T1 ========= -->
+<!-- ========= LA CITA A SANGRE ========= -->
+<section class="cita" aria-labelledby="t-cita">
+  <div class="cita__foto" aria-hidden="true">
+    <img src="imagenes/cita-01.jpg" width="2200" height="1467"
+         loading="lazy" decoding="async" alt="">
+  </div>
+  <blockquote class="cita__texto">
+    <p id="t-cita">Lo barato es prevenir<br>
+      <span class="cita__eco">Nadie pide hora hasta que duele, y ahí ya subió el peldaño</span></p>
+  </blockquote>
+</section>
+
+
+
+<!-- ========= TAJO — FRANJA A SANGRE ========= -->
+<div class="tajo" aria-hidden="true">
+  <img src="imagenes/banda-01.jpg" width="1400" height="779"
+       loading="lazy" decoding="async" alt="">
+</div>
+<section class="cierre" id="llamar" aria-labelledby="t-cierre">
+  <p class="cierre__rot">Para pedir hora de limpieza</p>
+  <h2 id="t-cierre" class="cierre__tel">
+    <a href="tel:+56935606970">9 3560 6970</a>
+  </h2>
+  <p class="cierre__pie">Es el número publicado en su ficha de Google.</p>
+</section>
+
+<!-- ========= LA TIRA ========= -->
+<section class="tira" aria-label="Tres imágenes del oficio">
+  <figure class="tira__pieza">
+    <img src="imagenes/tira-01.jpg" width="1100" height="733" loading="lazy" decoding="async" alt="Atención odontológica en el sillón de un box dental.">
+  </figure>
+  <figure class="tira__pieza">
+    <img src="imagenes/tira-02.jpg" width="1100" height="733" loading="lazy" decoding="async" alt="Instrumental dental ordenado en la bandeja.">
+  </figure>
+  <figure class="tira__pieza">
+    <img src="imagenes/tira-03.jpg" width="1100" height="733" loading="lazy" decoding="async" alt="Box dental con el sillón y el equipamiento a la vista.">
+  </figure>
+</section>
+
+<!-- ========= LAS FOTOS ========= -->
+<section class="galeria" aria-labelledby="t-galeria">
+  <h2 id="t-galeria" class="galeria__titulo">El edificio y el box</h2>
+  <p class="galeria__nota">Fotos publicadas por la propia clínica en su Facebook. En la del box se lee el logo en la pared: es su sillón, no una foto de catálogo.</p>
+  <div class="galeria__grilla">
+    <figure class="gal gal--izq">
+      <img src="imagenes/clinica-01.jpg" width="1400" height="779" loading="lazy" decoding="async"
+           alt="El edificio de la clínica visto desde la calle, revestido en madera y piedra.">
+      <figcaption>El edificio desde la calle. Foto suya, de su Facebook.</figcaption>
+    </figure>
+    <figure class="gal gal--der">
+      <img src="imagenes/clinica-02.jpg" width="788" height="1400" loading="lazy" decoding="async"
+           alt="Box de atención con el sillón dental y el logo de la clínica pintado en la pared.">
+      <figcaption>El box, con el logo en la pared.</figcaption>
+    </figure>
+  </div>
+  <p class="galeria__falta">falta: la sala de espera y el box de rayos. Y una del equipo con nombre y especialidad — es lo que un paciente quiere saber antes de entrar.</p>
+</section>
+
+</main>
+
+
+
+<!-- ========= MOSAICO ========= -->
+<section class="mos" aria-labelledby="t-mos">
+  <h2 id="t-mos" class="mos__titulo">La misma serie, más de cerca</h2>
+  <p class="mos__nota">Estas seis ya aparecen más arriba en la página. Vuelven acá en otro tamaño porque una sola pasada de imágenes deja el scroll vacío, y porque de cerca se ven cosas que en grande se pierden. La procedencia de cada una está en imagenes/FUENTES.txt.</p>
+  <div class="mos__grilla">
+    <figure class="mos__p">
+      <img src="imagenes/mos-01.jpg" width="780" height="520"
+           loading="lazy" decoding="async" alt="">
+    </figure>
+    <figure class="mos__p">
+      <img src="imagenes/mos-02.jpg" width="780" height="520"
+           loading="lazy" decoding="async" alt="">
+    </figure>
+    <figure class="mos__p">
+      <img src="imagenes/mos-03.jpg" width="780" height="520"
+           loading="lazy" decoding="async" alt="">
+    </figure>
+    <figure class="mos__p">
+      <img src="imagenes/mos-04.jpg" width="780" height="520"
+           loading="lazy" decoding="async" alt="">
+    </figure>
+    <figure class="mos__p">
+      <img src="imagenes/mos-05.jpg" width="780" height="520"
+           loading="lazy" decoding="async" alt="">
+    </figure>
+    <figure class="mos__p">
+      <img src="imagenes/mos-06.jpg" width="780" height="520"
+           loading="lazy" decoding="async" alt="">
+    </figure>
+  </div>
+</section>
+<section class="dueno" aria-labelledby="t-dueno">
+  <h2 id="t-dueno">Para la clínica</h2>
+  <div class="dueno__cols">
+    <div>
+      <h3>Lo que está verificado</h3>
+      <p>El teléfono 9 3560 6970 y que están en Loncoche. No tienen sitio propio.</p>
+    </div>
+    <div>
+      <h3>Lo que es general</h3>
+      <p>Las cuatro fichas y las cinco preguntas. Describen el procedimiento tal como se
+        hace en cualquier clínica, y por eso van marcadas y sin firma.</p>
+    </div>
+    <div>
+      <h3>Lo que falta</h3>
+      <p>Tres cosas: cada cuánto indican la limpieza según el caso, cuánto dura una sesión
+        acá, y si quieren publicar valores. Lo último es opcional — pero la sección de la
+        cuenta simple es mucho más fuerte con números que sin ellos.</p>
+    </div>
+  </div>
+  <p class="dueno__cierre">
+    <a class="flecha" href="https://wa.me/56968650001" rel="noopener">Escribirme por WhatsApp <span aria-hidden="true">→</span></a>
+    <a class="flecha" href="../../" rel="noopener">Ver otros trabajos <span aria-hidden="true">→</span></a>
+  </p>
+</section>
+
+<footer class="pie">
+  <p>Sitio de demostración preparado por CristalWeb. El negocio no lo ha encargado ni ha
+    revisado su contenido. No hay precios, no se nombra ningún medicamento y nada de lo
+    escrito constituye diagnóstico ni indicación de tratamiento: es información general
+    sobre un procedimiento, marcada como tal y a la espera de la firma profesional.</p>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>

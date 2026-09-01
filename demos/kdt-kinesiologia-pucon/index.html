@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="es-CL" class="no-js">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>KDT Kinesiología — Pucón</title>
+<meta name="description" content="Kinesiología deportiva y traumatológica en Pucón. Los criterios objetivos para volver a correr, y qué hacer si se lesionó de visita.">
+
+<!-- Política de seguridad de contenido: el navegador sólo puede cargar
+     archivos de este mismo sitio. Sin CDN, sin librerías, sin rastreadores.
+     Ver skills/web-blindada/references/csp-en-pages.md -->
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self'; img-src 'self' data:; font-src 'self'; connect-src 'self'; media-src 'self'; form-action 'self'; base-uri 'none'; frame-src 'none'; object-src 'none'">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+
+<!-- Rescate de la clase .js (regla 2 de la casa). En archivo, sin defer:
+     inline lo bloquearía la CSP. -->
+<script src="js/rescate.js"></script>
+
+<!-- Fuentes propias: cero peticiones a terceros. -->
+<link rel="preload" href="assets/fuentes/bigshoulders-var-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="assets/fuentes.css">
+<link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+
+<div class="propuesta">
+  <p class="propuesta__que">Propuesta de sitio web — preparada para <b>KDT Kinesiología Deportiva y Traumatológica</b> por CristalWeb</p>
+  <p class="propuesta__gancho">Pucón es la capital deportiva del sur y la ciudad del Ironman. Su kinesiología deportiva tiene 5,0 con 60 reseñas — y no aparece por ninguna parte cuando un corredor lesionado busca desde el hotel a las nueve de la noche.</p>
+</div>
+
+<header class="cab" id="cab">
+  <a class="cab__marca" href="#portada">
+    <span class="crono" aria-hidden="true"><i class="crono__aguja"></i></span>
+    <span class="cab__nombre">KDT</span>
+  </a>
+  <nav class="cab__nav" aria-label="Secciones">
+    <a href="#volver">Volver a correr</a>
+    <a href="#visita">Lesión de visita</a>
+  </nav>
+  <a class="cab__tel" href="tel:+56981597981">
+    <span class="cab__tel-rot">Pucón</span>
+    <span class="cab__tel-num">9 8159 7981</span>
+  </a>
+</header>
+
+<main>
+
+<!-- ========= PORTADA ========= -->
+<section class="portada portada--foto" id="portada" aria-labelledby="t-portada">
+  <!-- FONDO DE PORTADA: 2560 px, nitido. Se disuelve hacia el titular
+       con un gradiente lateral, no con desenfoque. -->
+  <div class="portada__foto" aria-hidden="true">
+    <img src="imagenes/port-01.jpg" width="2560" height="1707"
+         decoding="async" fetchpriority="high" alt="">
+  </div>
+
+  <!-- EL SEGUNDERO REAL: una vuelta = 60 segundos exactos. -->
+  <div class="dial" aria-hidden="true">
+    <span class="dial__marca"></span>
+    <span class="dial__aguja"></span>
+  </div>
+
+  <div class="portada__texto">
+    <p class="sitio">Kinesiología deportiva y traumatológica · Pucón</p>
+    <h1 id="t-portada">No es cuándo.<br>Es si ya puede.</h1>
+    <p class="bajada">Todo lesionado pregunta la fecha, y la fecha es la respuesta menos
+      útil que existe. Volver al deporte no se decide en el calendario: se decide con
+      pruebas que se pasan o no se pasan. Esta página las pone por escrito.</p>
+    <dl class="specs">
+      <div class="spec"><dt>nota en Google</dt><dd>5,0</dd></div>
+      <div class="spec"><dt>reseñas</dt><dd>60</dd></div>
+      <div class="spec"><dt>teléfono</dt><dd class="dd--tel"><a href="tel:+56981597981">9 8159 7981</a></dd></div>
+    </dl>
+  </div>
+</section>
+
+<!-- ========= LA PIEZA FIRMA — FICHA TÉCNICA (J) ========= -->
+<section class="volver con-telon" id="volver" aria-labelledby="t-volver">
+  <div class="telon" aria-hidden="true">
+    <img src="imagenes/telon-01.jpg" width="1200" height="800" decoding="async" alt="">
+  </div>
+
+  <!-- AURA DE COLOR: la foto de rubro reventada a desenfoque. No se lee
+       como imagen: aporta color y luz detras de una seccion que si no
+       seria fondo plano. Aca el desenfoque SI es el efecto, no un parche,
+       y por eso el archivo va chico: a 64 px de blur, mas resolucion no
+       cambia nada. Sin loading=lazy porque el elemento va en absoluto con
+       z-index negativo y el navegador nunca lo considera visible. -->
+  <div class="aura" aria-hidden="true">
+    <img src="imagenes/aura-01.jpg" width="900" height="600" decoding="async" alt="">
+  </div>
+
+  <div class="volver__cabecera">
+    <p class="antetitulo">Criterios, no fechas</p>
+    <h2 id="t-volver">Volver a correr</h2>
+    <p class="entrada">Estas cinco pruebas son las que se usan, en general, para decidir si
+      alguien está listo para volver. No son un test que se pueda aplicar solo en la casa:
+      son la forma en que se piensa la decisión, y sirven para entender por qué el
+      kinesiólogo dice «todavía no» cuando uno se siente bien.</p>
+    <p class="marca-ejemplo" data-ejemplo="Criterios generales del oficio — los de cada caso los define su kinesiólogo"></p>
+  </div>
+
+  <div class="specs-tabla">
+    <div class="sp">
+      <p class="sp__n">01</p>
+      <h3 class="sp__prueba">Trote continuo</h3>
+      <p class="sp__estandar">10 min · sin dolor · sin cojear</p>
+      <p class="sp__porque">Si a los diez minutos aparece dolor o el paso se descompensa,
+        la estructura todavía no tolera carga repetida. Correr una hora empieza por
+        aguantar diez minutos parejo.</p>
+    </div>
+
+    <div class="sp">
+      <p class="sp__n">02</p>
+      <h3 class="sp__prueba">Salto en un pie</h3>
+      <p class="sp__estandar">apoyo controlado · sin molestia</p>
+      <p class="sp__porque">Saltar es fácil; aterrizar es lo difícil. Lo que se mira no es
+        la distancia sino si la rodilla se va hacia adentro al caer — ahí está la recaída
+        que viene.</p>
+    </div>
+
+    <div class="sp">
+      <p class="sp__n">03</p>
+      <h3 class="sp__prueba">Fuerza lado a lado</h3>
+      <p class="sp__estandar">la lesionada alcanza a la sana</p>
+      <p class="sp__porque">Es el criterio más objetivo de los cinco y el que más se salta.
+        Una pierna que quedó más débil compensa con la otra, y la que se lesiona después
+        suele ser la sana.</p>
+    </div>
+
+    <div class="sp">
+      <p class="sp__n">04</p>
+      <h3 class="sp__prueba">El día siguiente</h3>
+      <p class="sp__estandar">sin hinchazón · sin dolor nuevo</p>
+      <p class="sp__porque">La prueba de verdad no es cómo quedó al terminar, es cómo
+        amaneció. Una articulación que se hincha después de entrenar está avisando que la
+        carga fue más de la que tolera.</p>
+    </div>
+
+    <div class="sp">
+      <p class="sp__n">05</p>
+      <h3 class="sp__prueba">El gesto del deporte</h3>
+      <p class="sp__estandar">cambiar de dirección y frenar sin dudar</p>
+      <p class="sp__porque">Correr derecho no es jugar. Frenar, girar y salir otra vez es
+        donde se rompen las cosas, y hay que poder hacerlo <b>sin pensarlo</b>: dudar en el
+        movimiento es un dato clínico, no una falta de carácter.</p>
+    </div>
+  </div>
+
+  <div class="dura">
+    <h3>La parte incómoda</h3>
+    <p>Volver antes de tiempo no adelanta nada: es la forma más común de perder una
+      temporada completa. La lesión que se repite casi nunca es mala suerte — es la
+      primera, que no había terminado de sanar.</p>
+    <p>Por eso los criterios se escriben antes de empezar, no el día que uno quiere volver.
+      Puestos por delante son una meta; puestos al final suenan a excusa.</p>
+  </div>
+
+  <p class="descargo">Estos criterios son generales y sirven para entender la lógica de la
+    decisión: no son una pauta para autoevaluarse ni reemplazan la evaluación de un
+    profesional, y los de cada persona dependen de su lesión, su deporte y su etapa. Este
+    texto lo escribió quien hizo el sitio y lo revisa y lo firma el kinesiólogo antes de
+    publicarse.</p>
+</section>
+
+<!-- ========= LA LESIÓN DEL VISITANTE ========= -->
+<!-- ========= MEDIA PANTALLA ========= -->
+<section class="mitades" aria-labelledby="t-mitades">
+  <div class="mitades__foto">
+    <img src="imagenes/media-01.jpg" width="2200" height="1467"
+         loading="lazy" decoding="async" alt="">
+  </div>
+  <div class="mitades__texto">
+    <p class="mitades__ante">Lo que se corrige, no lo que se apura</p>
+    <h2 id="t-mitades">Volver antes no es volver mejor</h2>
+    <p>El apuro por competir es el que trae la segunda lesión. Una vuelta bien hecha no acorta el plazo: corrige lo que hizo necesaria la pausa, y por eso el alta se da cuando las pruebas se pasan y no cuando el calendario lo permite. Esa diferencia se explica una vez y evita media temporada perdida.</p>
+  </div>
+</section>
+
+<section class="visita" id="visita" aria-labelledby="t-visita">
+  <div class="visita__cabecera">
+    <p class="antetitulo antetitulo--claro">Se lesionó de paso</p>
+    <h2 id="t-visita">La lesión del visitante</h2>
+    <p class="entrada">Pucón se llena de gente que corre, pedalea, sube el volcán y se
+      lesiona lejos de su kinesiólogo. Nadie le habla por escrito a ese lesionado, que
+      además tiene fecha de vuelta y está mirando el teléfono desde el hotel.</p>
+    <p class="marca-ejemplo marca-ejemplo--claro" data-ejemplo="Descripción general — lo que se ofrece acá está por confirmar"></p>
+  </div>
+
+  <div class="dos-col">
+    <div class="cl">
+      <p class="cl__rot">En los días que le quedan</p>
+      <h3>Qué sí se puede hacer</h3>
+      <ul>
+        <li>Evaluar de qué se trata y descartar lo que necesita otra cosa —una radiografía,
+          un médico— antes de que se suba al auto.</li>
+        <li>Bajar el dolor y la inflamación para que el viaje de vuelta sea llevadero.</li>
+        <li>Enseñar qué hacer y qué no en los días siguientes, que es donde la mayoría
+          empeora una lesión menor.</li>
+        <li>Dejar por escrito qué se encontró y qué se hizo, para que su kinesiólogo de
+          allá no parta de cero.</li>
+      </ul>
+    </div>
+    <div class="cl cl--no">
+      <p class="cl__rot">Con honestidad</p>
+      <h3>Qué no se resuelve en una semana</h3>
+      <ul>
+        <li>Una recuperación completa: eso son semanas o meses y sigue en su ciudad.</li>
+        <li>El retorno al deporte — los cinco criterios de arriba no se cumplen en cinco
+          días.</li>
+        <li>Lo que necesita imágenes o especialista, si acá no está disponible.</li>
+      </ul>
+      <p class="cl__cierre">Decirlo de entrada es lo que hace que el visitante confíe en lo
+        que sí se le ofrece.</p>
+    </div>
+  </div>
+
+  <div class="informe">
+    <h3>El informe con el que se va</h3>
+    <p>Es lo que convierte una atención suelta en parte de un tratamiento: qué se evaluó,
+      qué se encontró, qué se hizo y qué se recomienda seguir. Con eso el kinesiólogo de su
+      ciudad continúa en vez de empezar de nuevo.</p>
+    <p class="falta">falta: confirmar si entregan informe escrito y en qué formato</p>
+  </div>
+</section>
+
+<!-- ========= EL CIERRE — T1 ========= -->
+<!-- ========= LA CITA A SANGRE ========= -->
+<section class="cita" aria-labelledby="t-cita">
+  <div class="cita__foto" aria-hidden="true">
+    <img src="imagenes/cita-01.jpg" width="2200" height="1467"
+         loading="lazy" decoding="async" alt="">
+  </div>
+  <blockquote class="cita__texto">
+    <p id="t-cita">No es cuándo. Es si ya puede.<br>
+      <span class="cita__eco">Cinco pruebas que se pasan o no se pasan</span></p>
+  </blockquote>
+</section>
+
+
+
+<!-- ========= TAJO — FRANJA A SANGRE ========= -->
+<div class="tajo" aria-hidden="true">
+  <img src="imagenes/banda-01.jpg" width="1400" height="776"
+       loading="lazy" decoding="async" alt="">
+</div>
+<section class="cierre" id="llamar" aria-labelledby="t-cierre">
+  <p class="cierre__rot">Para evaluación u hora</p>
+  <h2 id="t-cierre" class="cierre__tel">
+    <a href="tel:+56981597981">9 8159 7981</a>
+  </h2>
+  <p class="cierre__pie">Es el número publicado en su ficha de Google.</p>
+</section>
+
+<!-- ========= LA TIRA ========= -->
+<section class="tira" aria-label="Tres imágenes del oficio">
+  <figure class="tira__pieza">
+    <img src="imagenes/tira-01.jpg" width="1100" height="733" loading="lazy" decoding="async" alt="Ejercicio de hombro guiado con banda elástica.">
+  </figure>
+  <figure class="tira__pieza">
+    <img src="imagenes/tira-02.jpg" width="1100" height="733" loading="lazy" decoding="async" alt="Trabajo de fuerza asistido en sesión de rehabilitación.">
+  </figure>
+  <figure class="tira__pieza">
+    <img src="imagenes/tira-03.jpg" width="1100" height="733" loading="lazy" decoding="async" alt="Movilización manual del hombro durante una sesión.">
+  </figure>
+</section>
+
+<!-- ========= LAS FOTOS ========= -->
+<section class="galeria" aria-labelledby="t-galeria">
+  <h2 id="t-galeria" class="galeria__titulo">El box y las pruebas</h2>
+  <p class="galeria__nota">Fotos publicadas por el propio centro. El logo va pintado en la pared del box: es su sala, no una foto de catálogo. La del bosu es una de las pruebas que esta página explica.</p>
+  <div class="galeria__grilla">
+    <figure class="gal gal--izq">
+      <img src="imagenes/box-03.jpg" width="1400" height="1400" loading="lazy" decoding="async"
+           alt="Paciente sobre un bosu con banda elástica, trabajando equilibrio, con el logo del centro en la pared.">
+      <figcaption>Equilibrio sobre bosu. Una de las pruebas, en su sala.</figcaption>
+    </figure>
+    <figure class="gal gal--der">
+      <img src="imagenes/box-02.jpg" width="1120" height="1400" loading="lazy" decoding="async"
+           alt="Kinesiólogo aplicando una pistola de percusión sobre la pierna de un paciente.">
+      <figcaption>La pistola de percusión, en la camilla.</figcaption>
+    </figure>
+  </div>
+  <p class="galeria__falta">falta: el salto en un pie, que es LA foto: muestra la prueba 02 en un segundo y explica de qué está hecha esta página.</p>
+</section>
+
+</main>
+
+
+
+<!-- ========= MOSAICO ========= -->
+<section class="mos" aria-labelledby="t-mos">
+  <h2 id="t-mos" class="mos__titulo">La misma serie, más de cerca</h2>
+  <p class="mos__nota">Estas seis ya aparecen más arriba en la página. Vuelven acá en otro tamaño porque una sola pasada de imágenes deja el scroll vacío, y porque de cerca se ven cosas que en grande se pierden. La procedencia de cada una está en imagenes/FUENTES.txt.</p>
+  <div class="mos__grilla">
+    <figure class="mos__p">
+      <img src="imagenes/mos-01.jpg" width="780" height="520"
+           loading="lazy" decoding="async" alt="">
+    </figure>
+    <figure class="mos__p">
+      <img src="imagenes/mos-02.jpg" width="780" height="520"
+           loading="lazy" decoding="async" alt="">
+    </figure>
+    <figure class="mos__p">
+      <img src="imagenes/mos-03.jpg" width="780" height="520"
+           loading="lazy" decoding="async" alt="">
+    </figure>
+    <figure class="mos__p">
+      <img src="imagenes/mos-04.jpg" width="780" height="520"
+           loading="lazy" decoding="async" alt="">
+    </figure>
+    <figure class="mos__p">
+      <img src="imagenes/mos-05.jpg" width="780" height="520"
+           loading="lazy" decoding="async" alt="">
+    </figure>
+    <figure class="mos__p">
+      <img src="imagenes/box-01.jpg" width="1400" height="776"
+           loading="lazy" decoding="async" alt="">
+    </figure>
+  </div>
+</section>
+<section class="dueno" aria-labelledby="t-dueno">
+  <h2 id="t-dueno">Para KDT</h2>
+  <div class="dueno__cols">
+    <div>
+      <h3>Lo que está verificado</h3>
+      <p>El 5,0 con 60 reseñas de su ficha de Google y el teléfono 9 8159 7981. No tienen
+        sitio propio.</p>
+    </div>
+    <div>
+      <h3>Lo que es general</h3>
+      <p>Los cinco criterios y las dos listas del visitante. Describen cómo se piensa el
+        retorno al deporte en general, no el protocolo de esta consulta.</p>
+    </div>
+    <div>
+      <h3>Lo que falta</h3>
+      <p>Lo principal: si entregan informe escrito al visitante que se va, y en qué
+        formato. Eso solo convierte la segunda sección en un servicio que nadie más en
+        Pucón ofrece por escrito. También convendría publicar el registro profesional
+        visible.</p>
+    </div>
+  </div>
+  <p class="dueno__cierre">
+    <a class="flecha" href="https://wa.me/56968650001" rel="noopener">Escribirme por WhatsApp <span aria-hidden="true">→</span></a>
+    <a class="flecha" href="../../" rel="noopener">Ver otros trabajos <span aria-hidden="true">→</span></a>
+  </p>
+</section>
+
+<footer class="pie">
+  <p>Sitio de demostración preparado por CristalWeb. El negocio no lo ha encargado ni ha
+    revisado su contenido. Los criterios de retorno deportivo son información general del
+    oficio, están marcados como tales y no constituyen una pauta de autoevaluación ni
+    reemplazan la evaluación de un profesional. No hay precios ni plazos prometidos.</p>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="es-CL" class="no-js">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Yakuza's Gym — Loncoche</title>
+<meta name="description" content="Gimnasio en Loncoche. Qué máquinas hay, zona por zona, y a qué hora está lleno.">
+
+<!-- Política de seguridad de contenido: el navegador sólo puede cargar
+     archivos de este mismo sitio. Sin CDN, sin librerías, sin rastreadores.
+     Ver skills/web-blindada/references/csp-en-pages.md -->
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self'; img-src 'self' data:; font-src 'self'; connect-src 'self'; media-src 'self'; form-action 'self'; base-uri 'none'; frame-src 'none'; object-src 'none'">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+
+<!-- Rescate de la clase .js (regla 2 de la casa). En archivo, sin defer:
+     inline lo bloquearía la CSP. -->
+<script src="js/rescate.js"></script>
+
+<!-- Fuentes propias: cero peticiones a terceros. -->
+<link rel="preload" href="assets/fuentes/russoone-400-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="assets/fuentes.css">
+<link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+
+<div class="propuesta">
+  <p class="propuesta__que">Propuesta de sitio web — preparada para <b>Yakuza's Gym</b> por CristalWeb</p>
+  <p class="propuesta__gancho">4,9 con 28 reseñas, y nadie del pueblo puede ver desde el teléfono qué máquinas hay ni a qué hora está lleno. Las dos preguntas que se hacen antes de inscribirse, y ninguna tiene respuesta pública.</p>
+</div>
+
+<header class="cab" id="cab">
+  <a class="cab__marca" href="#portada">
+    <span class="disco" aria-hidden="true"><i class="disco__cifra">25</i></span>
+    <span class="cab__nombre">Yakuza's Gym</span>
+  </a>
+  <nav class="cab__nav" aria-label="Secciones">
+    <a href="#maquinas">Máquina por máquina</a>
+    <a href="#horario">El horario</a>
+  </nav>
+  <a class="cab__tel" href="tel:+56957506241">
+    <span class="cab__tel-rot">Loncoche</span>
+    <span class="cab__tel-num">9 5750 6241</span>
+  </a>
+</header>
+
+<main>
+
+<!-- ========= PORTADA ========= -->
+<section class="portada portada--foto" id="portada" aria-labelledby="t-portada">
+  <!-- FONDO DE PORTADA: 2560 px, nitido. Se disuelve hacia el titular
+       con un gradiente lateral, no con desenfoque. -->
+  <div class="portada__foto" aria-hidden="true">
+    <img src="imagenes/port-01.jpg" width="2560" height="1707"
+         decoding="async" fetchpriority="high" alt="">
+  </div>
+
+  <div class="eco" aria-hidden="true">
+    <span class="onda o1"></span><span class="onda o2"></span><span class="onda o3"></span>
+  </div>
+
+  <div class="portada__texto">
+    <p class="sitio">Gimnasio · Loncoche</p>
+    <h1 id="t-portada">¿Qué máquinas<br>hay adentro?</h1>
+    <p class="bajada">Es lo primero que pregunta cualquiera antes de inscribirse en un
+      gimnasio que no conoce, y lo segundo es a qué hora está lleno. Las dos se contestan
+      con una lista y un horario — y ninguna de las dos está escrita en ninguna parte.</p>
+    <dl class="specs">
+      <div class="spec"><dt>nota en Google</dt><dd>4,9</dd></div>
+      <div class="spec"><dt>reseñas</dt><dd>28</dd></div>
+      <div class="spec"><dt>teléfono</dt><dd class="dd--tel"><a href="tel:+56957506241">9 5750 6241</a></dd></div>
+    </dl>
+  </div>
+</section>
+
+<!-- ========= LA PIEZA FIRMA — LA FICHA (J) ========= -->
+<section class="maquinas con-telon" id="maquinas" aria-labelledby="t-maq">
+  <div class="telon" aria-hidden="true">
+    <img src="imagenes/telon-01.jpg" width="1200" height="800" decoding="async" alt="">
+  </div>
+
+  <!-- AURA DE COLOR: la foto de rubro reventada a desenfoque. No se lee
+       como imagen: aporta color y luz detras de una seccion que si no
+       seria fondo plano. Aca el desenfoque SI es el efecto, no un parche,
+       y por eso el archivo va chico: a 64 px de blur, mas resolucion no
+       cambia nada. Sin loading=lazy porque el elemento va en absoluto con
+       z-index negativo y el navegador nunca lo considera visible. -->
+  <div class="aura" aria-hidden="true">
+    <img src="imagenes/aura-01.jpg" width="900" height="600" decoding="async" alt="">
+  </div>
+
+  <div class="maquinas__cabecera">
+    <p class="antetitulo">El inventario, por zonas</p>
+    <h2 id="t-maq">Máquina por máquina</h2>
+    <p class="entrada">Ésta es la forma de la sección; el contenido lo pone el gimnasio.
+      <b>No hay ni una máquina inventada acá:</b> las cuatro zonas están armadas y vacías,
+      porque decir que existe una prensa que no está es la manera más rápida de perder a
+      alguien que llegó manejando.</p>
+    <p class="marca-ejemplo marca-ejemplo--fuerte" data-ejemplo="ESTRUCTURA VACÍA — ningún equipamiento de esta página está confirmado"></p>
+  </div>
+
+  <div class="zonas">
+    <article class="zo">
+      <p class="zo__rot">Zona 01</p>
+      <h3>Peso libre</h3>
+      <p class="zo__para">Barras, discos, mancuernas, racks y bancos. Es la zona que
+        pregunta el que ya entrena: quiere saber si hay barra olímpica y hasta cuántos kilos
+        llegan los discos.</p>
+      <p class="pend">falta: qué hay en esta zona y hasta qué peso</p>
+    </article>
+
+    <article class="zo">
+      <p class="zo__rot">Zona 02</p>
+      <h3>Máquinas de fuerza</h3>
+      <p class="zo__para">Prensa, poleas, jalón, extensiones. Es lo que busca quien está
+        empezando o vuelve después de años: máquinas guiadas donde no hay que saber técnica
+        el primer día.</p>
+      <p class="pend">falta: qué máquinas hay</p>
+    </article>
+
+    <article class="zo">
+      <p class="zo__rot">Zona 03</p>
+      <h3>Cardio</h3>
+      <p class="zo__para">Trotadoras, elípticas, bicicletas, escaladores. Acá lo que importa
+        no es sólo qué hay, sino <b>cuántas</b>: en hora punta, tres trotadoras para veinte
+        personas es un dato.</p>
+      <p class="pend">falta: qué hay y cuántas unidades</p>
+    </article>
+
+    <article class="zo">
+      <p class="zo__rot">Zona 04</p>
+      <h3>El espacio y lo demás</h3>
+      <p class="zo__para">Colchonetas, zona funcional, camarines, duchas, casilleros,
+        estacionamiento. Lo que no es máquina y decide igual.</p>
+      <p class="pend">falta: qué hay disponible</p>
+    </article>
+  </div>
+
+  <div class="porque">
+    <h3>Por qué esta lista vende sola</h3>
+    <p>Un gimnasio de pueblo compite con la casa y con la caminata gratis, no con otro
+      gimnasio. Lo que hace que alguien pague un mes es ver que adentro hay algo que en la
+      casa no tiene — y eso se ve en una lista, no en una foto de la fachada.</p>
+    <p>Además ahorra la conversación de siempre: llega uno preguntando por la prensa, y la
+      respuesta ya estaba escrita antes de que tomara el teléfono.</p>
+  </div>
+</section>
+
+<!-- ========= EL HORARIO ========= -->
+<!-- ========= MEDIA PANTALLA ========= -->
+<section class="mitades" aria-labelledby="t-mitades">
+  <div class="mitades__foto">
+    <img src="imagenes/media-01.jpg" width="2200" height="1467"
+         loading="lazy" decoding="async" alt="">
+  </div>
+  <div class="mitades__texto">
+    <p class="mitades__ante">Lo que se pregunta antes de inscribirse</p>
+    <h2 id="t-mitades">A las siete de la tarde, ¿hay dónde entrenar?</h2>
+    <p>Un gimnasio chico se llena a la misma hora todos los días, y quien sale del trabajo a las seis quiere saber si va a esperar turno por la banca. Publicar cuántos puestos hay de cada cosa —y a qué hora está más vacío— es más útil que cualquier promoción, y es un dato que el dueño sabe de memoria.</p>
+  </div>
+</section>
+
+<section class="horario" id="horario" aria-labelledby="t-hor">
+  <div class="horario__cabecera">
+    <p class="antetitulo antetitulo--claro">Lo segundo que se pregunta</p>
+    <h2 id="t-hor">El horario que se cumple</h2>
+    <p class="entrada">Un horario publicado y cumplido vale más que cualquier promoción. Y
+      el dato que nadie publica —a qué hora está lleno— es justamente el que decide si
+      alguien viene a las siete o a las once.</p>
+    <p class="marca-ejemplo marca-ejemplo--claro" data-ejemplo="ESTRUCTURA — los horarios y las horas punta los pone el gimnasio"></p>
+  </div>
+
+  <div class="ho-fichas">
+    <article class="hf">
+      <p class="hf__rot">Días y horas</p>
+      <h3>Cuándo abre</h3>
+      <dl class="hf__datos">
+        <div><dt>Lunes a viernes</dt><dd class="pend">falta</dd></div>
+        <div><dt>Sábado</dt><dd class="pend">falta</dd></div>
+        <div><dt>Domingo y festivos</dt><dd class="pend">falta</dd></div>
+      </dl>
+    </article>
+
+    <article class="hf">
+      <p class="hf__rot">El dato que nadie publica</p>
+      <h3>Las horas punta</h3>
+      <p>La mayoría de los gimnasios se llenan a la misma hora: temprano antes del trabajo y
+        entre las siete y las nueve de la tarde. Decir cuáles son las horas tranquilas es un
+        favor al socio y descongestiona la sala solo.</p>
+      <p class="pend">falta: cuáles son las horas llenas y cuáles las tranquilas</p>
+    </article>
+
+    <article class="hf">
+      <p class="hf__rot">Lo práctico</p>
+      <h3>Antes de venir</h3>
+      <dl class="hf__datos">
+        <div><dt>¿Hay día de prueba?</dt><dd class="pend">falta</dd></div>
+        <div><dt>¿Se puede pagar por día?</dt><dd class="pend">falta</dd></div>
+        <div><dt>¿Hay que traer algo?</dt><dd class="pend">falta — toalla, candado</dd></div>
+      </dl>
+    </article>
+  </div>
+
+  <p class="descargo">Esta página no entrega planes de entrenamiento, rutinas ni consejos de
+    ejercicio, y no promete ningún resultado: es información práctica sobre un local —qué
+    equipamiento hay y a qué hora abre—. Entrenar con carga se aprende con alguien al lado.
+    Todo el equipamiento y los horarios están declarados como pendientes porque no me
+    constan.</p>
+</section>
+
+<!-- ========= EL CIERRE — T1 ========= -->
+<!-- ========= LA CITA A SANGRE ========= -->
+<section class="cita" aria-labelledby="t-cita">
+  <div class="cita__foto" aria-hidden="true">
+    <img src="imagenes/cita-01.jpg" width="2200" height="1467"
+         loading="lazy" decoding="async" alt="">
+  </div>
+  <blockquote class="cita__texto">
+    <p id="t-cita">Lo que hay, dicho por escrito<br>
+      <span class="cita__eco">Máquinas, horarios y planes — sin letra chica</span></p>
+  </blockquote>
+</section>
+
+
+
+<!-- ========= TAJO — FRANJA A SANGRE ========= -->
+<div class="tajo" aria-hidden="true">
+  <img src="imagenes/banda-01.jpg" width="1100" height="733"
+       loading="lazy" decoding="async" alt="">
+</div>
+<section class="cierre" id="llamar" aria-labelledby="t-cierre">
+  <p class="cierre__rot">Para consultar o inscribirse</p>
+  <h2 id="t-cierre" class="cierre__tel">
+    <a href="tel:+56957506241">9 5750 6241</a>
+  </h2>
+  <p class="cierre__pie">Es el número publicado en su ficha de Google.</p>
+</section>
+
+<!-- ========= LA TIRA ========= -->
+<section class="tira" aria-label="Tres imágenes del oficio">
+  <figure class="tira__pieza">
+    <img src="imagenes/tira-01.jpg" width="1100" height="733" loading="lazy" decoding="async" alt="Trabajo con mancuerna en la sala de pesas.">
+  </figure>
+  <figure class="tira__pieza">
+    <img src="imagenes/tira-02.jpg" width="1100" height="734" loading="lazy" decoding="async" alt="Sentadilla con barra durante un entrenamiento.">
+  </figure>
+  <figure class="tira__pieza">
+    <img src="imagenes/tira-03.jpg" width="1100" height="733" loading="lazy" decoding="async" alt="Sala de pesas con mancuernas ordenadas en el rack.">
+  </figure>
+</section>
+
+</main>
+
+
+
+<!-- ========= MOSAICO ========= -->
+<section class="mos" aria-labelledby="t-mos">
+  <h2 id="t-mos" class="mos__titulo">La misma serie, más de cerca</h2>
+  <p class="mos__nota">Estas seis ya aparecen más arriba en la página. Vuelven acá en otro tamaño porque una sola pasada de imágenes deja el scroll vacío, y porque de cerca se ven cosas que en grande se pierden. La procedencia de cada una está en imagenes/FUENTES.txt.</p>
+  <div class="mos__grilla">
+    <figure class="mos__p">
+      <img src="imagenes/mos-01.jpg" width="780" height="520"
+           loading="lazy" decoding="async" alt="">
+    </figure>
+    <figure class="mos__p">
+      <img src="imagenes/mos-02.jpg" width="780" height="520"
+           loading="lazy" decoding="async" alt="">
+    </figure>
+    <figure class="mos__p">
+      <img src="imagenes/mos-03.jpg" width="780" height="520"
+           loading="lazy" decoding="async" alt="">
+    </figure>
+    <figure class="mos__p">
+      <img src="imagenes/mos-04.jpg" width="780" height="520"
+           loading="lazy" decoding="async" alt="">
+    </figure>
+    <figure class="mos__p">
+      <img src="imagenes/mos-05.jpg" width="780" height="520"
+           loading="lazy" decoding="async" alt="">
+    </figure>
+    <figure class="mos__p">
+      <img src="imagenes/mos-06.jpg" width="780" height="520"
+           loading="lazy" decoding="async" alt="">
+    </figure>
+  </div>
+</section>
+<section class="dueno" aria-labelledby="t-dueno">
+  <h2 id="t-dueno">Para el gimnasio</h2>
+  <div class="dueno__cols">
+    <div>
+      <h3>Lo que está verificado</h3>
+      <p>El 4,9 con 28 reseñas de su ficha de Google y el teléfono 9 5750 6241. No tienen
+        sitio propio.</p>
+    </div>
+    <div>
+      <h3>Lo que está vacío</h3>
+      <p>Las cuatro zonas y los horarios completos. <b>No inventé ni una máquina:</b> en un
+        gimnasio, prometer equipamiento que no está se descubre el primer día y no hay
+        vuelta.</p>
+    </div>
+    <div>
+      <h3>Lo que falta</h3>
+      <p>El inventario de las cuatro zonas —con cantidades en cardio—, el horario de los
+        tres bloques, las horas punta y las tres respuestas prácticas. Es una vuelta por la
+        sala con el teléfono en la mano.</p>
+    </div>
+  </div>
+  <p class="dueno__cierre">
+    <a class="flecha" href="https://wa.me/56968650001" rel="noopener">Escribirme por WhatsApp <span aria-hidden="true">→</span></a>
+    <a class="flecha" href="../../" rel="noopener">Ver otros trabajos <span aria-hidden="true">→</span></a>
+  </p>
+</section>
+
+<footer class="pie">
+  <p>Sitio de demostración preparado por CristalWeb. El negocio no lo ha encargado ni ha
+    revisado su contenido. No se afirma que este gimnasio tenga ningún equipamiento ni
+    horario: todos los campos están marcados como pendientes. No hay precios, no hay planes
+    de entrenamiento y no se promete ningún resultado.</p>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>

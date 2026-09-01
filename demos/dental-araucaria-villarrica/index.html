@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="es-CL" class="no-js">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Clínica Dental Araucaria — Villarrica</title>
+<meta name="description" content="Clínica dental en Villarrica. Ortodoncia contada de punta a punta: cuánto dura de verdad, los controles y la contención que viene después.">
+
+<!-- Política de seguridad de contenido: el navegador sólo puede cargar
+     archivos de este mismo sitio. Sin CDN, sin librerías, sin rastreadores.
+     Ver skills/web-blindada/references/csp-en-pages.md -->
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self'; img-src 'self' data:; font-src 'self'; connect-src 'self'; media-src 'self'; form-action 'self'; base-uri 'none'; frame-src 'none'; object-src 'none'">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+
+<!-- Rescate de la clase .js (regla 2 de la casa). En archivo, sin defer:
+     inline lo bloquearía la CSP. -->
+<script src="js/rescate.js"></script>
+
+<!-- Fuentes propias: cero peticiones a terceros. -->
+<link rel="preload" href="assets/fuentes/instrumentserif-400-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="assets/fuentes.css">
+<link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+
+<div class="propuesta">
+  <p class="propuesta__que">Propuesta de sitio web — preparada para <b>Clínica Dental Araucaria</b> por CristalWeb</p>
+  <p class="propuesta__gancho">5,0 con 46 reseñas, y la pregunta más cara de la adolescencia sin respuesta pública en ninguna parte: cuánto dura de verdad un tratamiento de frenillos. Esta página la contesta con rango honesto y cuenta lo que nadie cuenta — que después viene la contención.</p>
+</div>
+
+<header class="cab" id="cab">
+  <a class="cab__marca" href="#portada">
+    <span class="bracket" aria-hidden="true"><i class="bracket__ranura"></i></span>
+    <span class="cab__nombre">Dental Araucaria</span>
+  </a>
+  <nav class="cab__nav" aria-label="Secciones">
+    <a href="#mapa">El mapa completo</a>
+    <a href="#control">El control de cada mes</a>
+  </nav>
+  <a class="cab__tel" href="tel:+56971086433">
+    <span class="cab__tel-rot">Villarrica</span>
+    <span class="cab__tel-num">9 7108 6433</span>
+  </a>
+</header>
+
+<main>
+
+<!-- ========= PORTADA ========= -->
+<section class="portada portada--foto" id="portada" aria-labelledby="t-portada">
+  <!-- FONDO DE PORTADA: 2560 px, nitido. Se disuelve hacia el titular
+       con un gradiente lateral, no con desenfoque. -->
+  <div class="portada__foto" aria-hidden="true">
+    <img src="imagenes/port-01.jpg" width="2560" height="1707"
+         decoding="async" fetchpriority="high" alt="">
+  </div>
+
+  <!-- EL ALAMBRE QUE SE ENDEREZA. Adorno: aria-hidden. -->
+  <div class="alambre" aria-hidden="true"><span class="alambre__linea"></span></div>
+
+  <div class="portada__texto">
+    <p class="sitio">Ortodoncia · Villarrica</p>
+    <h1 id="t-portada">¿Cuánto dura<br>de verdad?</h1>
+    <p class="bajada">Es la pregunta que hace el apoderado antes que el precio, y la que
+      más se contesta con un «depende» que no ayuda a nadie. Depende, sí — pero el rango
+      se puede decir, los controles se pueden contar y lo que viene después también.</p>
+    <dl class="specs">
+      <div class="spec"><dt>nota en Google</dt><dd>5,0</dd></div>
+      <div class="spec"><dt>reseñas</dt><dd>46</dd></div>
+      <div class="spec"><dt>teléfono</dt><dd class="dd--tel"><a href="tel:+56971086433">9 7108 6433</a></dd></div>
+    </dl>
+  </div>
+</section>
+
+<!-- ========= LA PIEZA FIRMA — LA LÍNEA QUE SE ENDEREZA ========= -->
+<section class="mapa con-telon" id="mapa" aria-labelledby="t-mapa">
+  <div class="telon" aria-hidden="true">
+    <img src="imagenes/telon-01.jpg" width="1200" height="1800" decoding="async" alt="">
+  </div>
+
+  <!-- AURA DE COLOR: la foto de rubro reventada a desenfoque. No se lee
+       como imagen: aporta color y luz detras de una seccion que si no
+       seria fondo plano. Aca el desenfoque SI es el efecto, no un parche,
+       y por eso el archivo va chico: a 64 px de blur, mas resolucion no
+       cambia nada. Sin loading=lazy porque el elemento va en absoluto con
+       z-index negativo y el navegador nunca lo considera visible. -->
+  <div class="aura" aria-hidden="true">
+    <img src="imagenes/aura-01.jpg" width="900" height="1359" decoding="async" alt="">
+  </div>
+
+  <div class="mapa__cabecera">
+    <p class="antetitulo">De punta a punta</p>
+    <h2 id="t-mapa">Ortodoncia: el mapa completo</h2>
+    <p class="entrada">Un tratamiento de ortodoncia no es una compra: es una relación de
+      dos años con una clínica. Contarlo entero antes de empezar —incluida la parte
+      aburrida del final— es lo que separa a la clínica en la que se confía de la que
+      sólo cotiza.</p>
+    <p class="marca-ejemplo" data-ejemplo="Rangos y plazos generales del oficio — el caso de cada paciente lo define la evaluación"></p>
+  </div>
+
+  <!-- Estructura I: la línea del tratamiento. Cada etapa está más
+       derecha que la anterior — la línea misma es el tratamiento. -->
+  <ol class="linea">
+    <li class="et et--1">
+      <p class="et__mes">Mes 0</p>
+      <h3>La evaluación</h3>
+      <p>Radiografías, fotos y modelos. De ahí sale el plan y, con el plan, el plazo
+        estimado — que es una estimación de verdad y no un número de folleto.</p>
+      <p class="et__dato">Sin esto, cualquier duración que alguien prometa es inventada.</p>
+    </li>
+    <li class="et et--2">
+      <p class="et__mes">Mes 1</p>
+      <h3>La instalación</h3>
+      <p>Se pegan los brackets y se pone el primer alambre, que es el más fino y el más
+        flexible de todos. Los primeros días molesta al morder y se come blando: eso pasa
+        solo.</p>
+      <p class="et__dato">La liga de color se elige acá, y se cambia en cada control.</p>
+    </li>
+    <li class="et et--3">
+      <p class="et__mes">Meses 2 a 12</p>
+      <h3>El movimiento</h3>
+      <p>La parte larga. Cada control cambia el alambre por uno un poco más grueso y menos
+        flexible, y así el diente se va acomodando de a poco. Es lento porque el hueso
+        tiene que acompañar: apurarlo no es una opción técnica, es un daño.</p>
+      <p class="et__dato">Acá es donde se nota si el paciente llegó a sus controles.</p>
+    </li>
+    <li class="et et--4">
+      <p class="et__mes">Mes 12 a 30</p>
+      <h3>El detalle y el retiro</h3>
+      <p>Los últimos milímetros son los que más se demoran y los que se ven. Cuando el
+        resultado está, se retiran los brackets y se limpia el esmalte.</p>
+      <p class="et__dato"><b>El rango honesto es de 12 a 30 meses</b> y depende del caso:
+        no es lo mismo alinear un poco que corregir una mordida.</p>
+    </li>
+    <li class="et et--5">
+      <p class="et__mes">Después</p>
+      <h3>La contención</h3>
+      <p>Esto es lo que casi nadie cuenta antes de empezar, y es la razón por la que
+        existe esta sección: <b>después de los frenillos viene la placa</b>. Los dientes
+        tienden a volver a donde estaban, y la contención —una placa removible, un alambre
+        fijo por detrás, o las dos— es lo que sostiene el resultado.</p>
+      <p class="et__dato">Se usa por años, no por semanas. Quien no lo dice al principio,
+        lo tiene que explicar el día del retiro, y ahí ya suena a letra chica.
+        <span class="falta">falta: qué contención usan ustedes y por cuánto tiempo</span></p>
+    </li>
+  </ol>
+
+  <p class="firma">Ninguna clínica de la zona tiene esto escrito. Y es, palabra por palabra,
+    lo que el apoderado pregunta en la primera consulta mientras mira el presupuesto.</p>
+</section>
+
+<!-- ========= EL CONTROL DE CADA MES ========= -->
+<!-- ========= MEDIA PANTALLA ========= -->
+<section class="mitades" aria-labelledby="t-mitades">
+  <div class="mitades__foto">
+    <img src="imagenes/media-01.jpg" width="2200" height="3300"
+         loading="lazy" decoding="async" alt="">
+  </div>
+  <div class="mitades__texto">
+    <p class="mitades__ante">Lo que nadie cuenta del final</p>
+    <h2 id="t-mitades">Cuando se sacan los brackets no se acabó</h2>
+    <p>Terminado el tratamiento viene la contención, y esa etapa también tiene reglas: cuántas horas al día, por cuánto tiempo, qué pasa si se deja de usar. Es la parte que decide si los dientes se quedan donde los pusieron o si en dos años vuelven a moverse — y casi nadie la explica antes de empezar.</p>
+  </div>
+</section>
+
+<section class="control" id="control" aria-labelledby="t-control">
+  <div class="control__cabecera">
+    <p class="antetitulo antetitulo--claro">Quince minutos, una vez al mes</p>
+    <h2 id="t-control">El control de cada mes</h2>
+    <p class="entrada">Desde afuera parece que sólo cambian una gomita. Escrito, se entiende
+      que en esos quince minutos pasa el tratamiento entero — y el apoderado deja de
+      preguntarse por qué se paga todos los meses.</p>
+    <p class="marca-ejemplo marca-ejemplo--claro" data-ejemplo="Descripción general del control — la firma quien atiende"></p>
+  </div>
+
+  <div class="tarjetas">
+    <article class="tj">
+      <p class="tj__n">01</p>
+      <h3>Se mira lo que se movió</h3>
+      <p>Se compara con el control anterior. Si un diente no acompañó, el plan cambia ahí
+        mismo: por eso el control no se puede saltar sin costo.</p>
+    </article>
+    <article class="tj">
+      <p class="tj__n">02</p>
+      <h3>Se cambia el alambre o se ajusta</h3>
+      <p>Alambre más grueso, un doblez, un resorte, una goma que tira en una dirección.
+        Es el ajuste que produce el movimiento del mes siguiente.</p>
+    </article>
+    <article class="tj">
+      <p class="tj__n">03</p>
+      <h3>Se revisa la boca completa</h3>
+      <p>Encías, higiene y si algún bracket se soltó. Con aparatos, la limpieza cuesta más
+        y es cuando más fácil aparece una caries.</p>
+    </article>
+    <article class="tj">
+      <p class="tj__n">04</p>
+      <h3>Se cambian las ligas</h3>
+      <p>La parte que el paciente espera: el color nuevo del mes. Dura quince segundos y
+        es, para muchos adolescentes, la razón por la que llegan contentos al control.</p>
+    </article>
+  </div>
+
+  <div class="saltar">
+    <h3>¿Y si se salta un control?</h3>
+    <p>El tratamiento no se detiene: se alarga. El alambre sigue trabajando con la fuerza
+      del mes pasado, que ya no es la que corresponde, y el mes siguiente hay que recuperar
+      lo perdido. Dos o tres controles saltados a lo largo del año se traducen en meses
+      extra al final — y ésa es la razón honesta por la que dos tratamientos iguales duran
+      distinto.</p>
+    <p class="falta">falta: cómo manejan ustedes las inasistencias y con cuánta anticipación
+      prefieren que se avise</p>
+  </div>
+
+  <p class="descargo">Todo lo escrito acá es información general sobre cómo funciona un
+    tratamiento de ortodoncia: no es un diagnóstico, no es un presupuesto y no promete
+    ningún plazo para ningún paciente. El rango de 12 a 30 meses es el que se usa para
+    hablar del tema en general; el plazo de una persona sale de su evaluación. Este texto
+    lo escribió quien hizo el sitio y lo revisa y lo firma la clínica antes de publicarse.</p>
+</section>
+
+<!-- ========= EL CIERRE — T1 ========= -->
+<!-- ========= LA CITA A SANGRE ========= -->
+<section class="cita" aria-labelledby="t-cita">
+  <div class="cita__foto" aria-hidden="true">
+    <img src="imagenes/cita-01.jpg" width="2200" height="3300"
+         loading="lazy" decoding="async" alt="">
+  </div>
+  <blockquote class="cita__texto">
+    <p id="t-cita">«¿Cuánto dura de verdad?»<br>
+      <span class="cita__eco">Se puede decir un rango. «Depende» no ayuda a nadie</span></p>
+  </blockquote>
+</section>
+
+
+
+<!-- ========= TAJO — FRANJA A SANGRE ========= -->
+<div class="tajo" aria-hidden="true">
+  <img src="imagenes/banda-01.jpg" width="1500" height="1000"
+       loading="lazy" decoding="async" alt="">
+</div>
+<section class="cierre" id="llamar" aria-labelledby="t-cierre">
+  <p class="cierre__rot">Para evaluación u hora</p>
+  <h2 id="t-cierre" class="cierre__tel">
+    <a href="tel:+56971086433">9 7108 6433</a>
+  </h2>
+  <p class="cierre__pie">Es el número publicado en su ficha de Google.</p>
+
+  <!-- CÓMO LLEGAR. Las dos fotos salen de la ficha de Google de la
+       propia clínica. La primera se eligió por una razón concreta: el
+       pendón muestra el teléfono +569 7108 6433, el mismo que está
+       verificado en esta página — es la prueba de que la foto es de
+       este local y no de otra «clínica dental» de Villarrica. -->
+  <div class="llegar">
+    <p class="llegar__rot">Cómo se ve al llegar</p>
+    <div class="llegar__par">
+      <figure>
+        <img src="imagenes/llegar-01.jpg" width="408" height="306"
+             loading="lazy" decoding="async"
+             alt="Entrada de la clínica desde la vereda, con el letrero «Clínica Dental» y un pendón con los servicios.">
+        <figcaption>La entrada desde la vereda.</figcaption>
+      </figure>
+      <figure>
+        <img src="imagenes/llegar-02.jpg" width="485" height="500"
+             loading="lazy" decoding="async"
+             alt="Puerta de vidrio esmerilado con «Clínica Dental» impreso en vertical y el horario de atención.">
+        <figcaption>La puerta, con el horario impreso.</figcaption>
+      </figure>
+    </div>
+    <p class="llegar__falta"><span class="falta">falta: la dirección exacta,
+      y fotos propias en mejor resolución — éstas son las de su ficha de
+      Google</span></p>
+  </div>
+</section>
+
+<!-- ========= LA TIRA ========= -->
+<section class="tira" aria-label="Tres imágenes del oficio">
+  <figure class="tira__pieza">
+    <img src="imagenes/tira-01.jpg" width="1100" height="1650" loading="lazy" decoding="async" alt="Alineador transparente sostenido en la mano.">
+  </figure>
+  <figure class="tira__pieza">
+    <img src="imagenes/tira-02.jpg" width="1100" height="1650" loading="lazy" decoding="async" alt="Persona mostrando sus brackets con el dedo.">
+  </figure>
+  <figure class="tira__pieza">
+    <img src="imagenes/tira-03.jpg" width="1100" height="1661" loading="lazy" decoding="async" alt="Sonrisa al aire libre después del tratamiento.">
+  </figure>
+</section>
+
+</main>
+
+
+
+<!-- ========= MOSAICO ========= -->
+<section class="mos" aria-labelledby="t-mos">
+  <h2 id="t-mos" class="mos__titulo">La misma serie, más de cerca</h2>
+  <p class="mos__nota">Estas seis ya aparecen más arriba en la página. Vuelven acá en otro tamaño porque una sola pasada de imágenes deja el scroll vacío, y porque de cerca se ven cosas que en grande se pierden. La procedencia de cada una está en imagenes/FUENTES.txt.</p>
+  <div class="mos__grilla">
+    <figure class="mos__p">
+      <img src="imagenes/mos-01.jpg" width="780" height="1170"
+           loading="lazy" decoding="async" alt="">
+    </figure>
+    <figure class="mos__p">
+      <img src="imagenes/mos-02.jpg" width="780" height="1178"
+           loading="lazy" decoding="async" alt="">
+    </figure>
+    <figure class="mos__p">
+      <img src="imagenes/mos-03.jpg" width="780" height="1170"
+           loading="lazy" decoding="async" alt="">
+    </figure>
+    <figure class="mos__p">
+      <img src="imagenes/mos-04.jpg" width="780" height="1170"
+           loading="lazy" decoding="async" alt="">
+    </figure>
+    <figure class="mos__p">
+      <img src="imagenes/mos-05.jpg" width="780" height="520"
+           loading="lazy" decoding="async" alt="">
+    </figure>
+    <figure class="mos__p">
+      <img src="imagenes/mos-06.jpg" width="780" height="1170"
+           loading="lazy" decoding="async" alt="">
+    </figure>
+  </div>
+</section>
+<section class="dueno" aria-labelledby="t-dueno">
+  <h2 id="t-dueno">Para la clínica</h2>
+  <div class="dueno__cols">
+    <div>
+      <h3>Lo que está verificado</h3>
+      <p>El 5,0 con 46 reseñas de su ficha de Google y el teléfono 9 7108 6433. No tienen
+        sitio propio: sólo redes.</p>
+    </div>
+    <div>
+      <h3>Lo que es general</h3>
+      <p>Las cinco etapas, los cuatro puntos del control y el rango de 12 a 30 meses.
+        Describen cómo funciona la ortodoncia, no cómo la hacen ustedes, y van marcados y
+        sin firma.</p>
+    </div>
+    <div>
+      <h3>Lo que falta</h3>
+      <p>Dos respuestas: qué contención usan y por cuánto tiempo, y cómo manejan las
+        inasistencias. Con eso, la etapa de la contención deja de ser general y pasa a ser
+        el argumento más fuerte de la página.</p>
+    </div>
+  </div>
+  <p class="dueno__cierre">
+    <a class="flecha" href="https://wa.me/56968650001" rel="noopener">Escribirme por WhatsApp <span aria-hidden="true">→</span></a>
+    <a class="flecha" href="../../" rel="noopener">Ver otros trabajos <span aria-hidden="true">→</span></a>
+  </p>
+</section>
+
+<footer class="pie">
+  <p>Sitio de demostración preparado por CristalWeb. El negocio no lo ha encargado ni ha
+    revisado su contenido. No hay precios ni presupuestos, no se promete ningún plazo y
+    nada de lo escrito constituye diagnóstico ni indicación de tratamiento: los rangos son
+    generales del oficio y están marcados como tales, a la espera de la firma profesional.</p>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>

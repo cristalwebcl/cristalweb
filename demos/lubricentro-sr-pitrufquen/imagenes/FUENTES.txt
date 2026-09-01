@@ -1,0 +1,57 @@
+PROCEDENCIA DE LAS IMÁGENES — Lubricentro SR, Pitrufquén
+════════════════════════════════════════════════════════════════
+
+NINGUNA ES DEL NEGOCIO. Se buscó y de «Lubricentro SR Pitrufquén» no
+hay una sola foto propia: lo que devuelve el buscador son otros
+lubricentros —World, MAYU, RP, San Martín— y notas de prensa de
+petroleras. Con 5,0 de nota y 81 reseñas, este local es el mejor
+evaluado del rubro en la zona y no tiene una imagen suya en internet.
+
+────────────────────────────────────────────────────────────────
+GENÉRICAS — siete, de banco libre. Herramientas y motor, sin una sola
+marca legible. Ni un envase de aceite, y eso es deliberado: la página
+entera argumenta que se muestra el envase que se abre, y una foto de
+un envase que no es el que ellos usan rompería justo ese argumento.
+
+port-01.jpg  2560x1920  llaves de boca apiladas, metal brillante
+tirc-01.jpg  1000x1500  llaves sobre fondo oscuro, con sombra dura
+tira-01.jpg  1000x750   un martillo y una llave ajustable
+tira-02.jpg  1000x750   dos llaves de boca
+  las cuatro de pxhere y Pexels (uso libre), consulta
+  «wrench tools workbench metal dark»
+  La de portada se eligió por el brillo del metal, y fue el segundo
+  intento: la primera era de llaves sobre fondo oscuro y desaparecía —
+  este fondo es negro petróleo y una foto apagada ahí no existe. La
+  regla, ya probada en varias demos: fondo oscuro pide foto con luz
+  propia; fondo claro pide foto con masa oscura.
+
+aura-01.jpg   900x1350  el motor de un auto con el capot abierto
+media-01.jpg 1500x2250  el mismo, a media pantalla
+cita-01.jpg  2560x1707  otro compartimiento de motor
+tirb-01.jpg  1000x667   el mismo, recortado
+  Unsplash · licencia Unsplash (uso libre), consulta
+  «car engine bay under hood mechanic»
+
+DESCARTADA: una foto de motor con marca de agua de Unsplash+ — es de
+pago y no corresponde usarla.
+
+────────────────────────────────────────────────────────────────
+LO QUE FALTA — y en este rubro las fotos SON el argumento
+
+1. **El envase abierto, con la etiqueta legible.** Es LA foto: la
+   página promete que se muestra lo que entra al motor, y hoy eso lo
+   tiene que sostener una imagen de herramientas prestada.
+2. **El sticker de cambio pegado en el parabrisas**, con el kilometraje
+   escrito. La sección está armada alrededor de eso.
+3. El local por fuera y el foso o elevador, para ubicar y dimensionar.
+
+NOTA DE ARMADO: la portada no lleva foto. El fondo de esta portada es
+el «tornasol» —dos manchas de color casi invisibles sobre el negro, que
+es como se ve una película de aceite— y cualquier foto encima o queda
+tapada o compite con el dibujo. Se probaron tres. La imagen que iba a
+ir arriba está igual en la página, en una franja a sangre donde se ve
+entera.
+
+Es la misma decisión que en el Emporio Artesanal y en el Supermercado
+Any: cuando la demo ya tiene un dibujo CSS fuerte en la portada, la
+foto va mejor en otra parte.
