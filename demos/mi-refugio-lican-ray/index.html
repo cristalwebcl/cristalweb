@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="es-CL" class="no-js">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Cabañas Mi Refugio — Licán Ray</title>
+<meta name="description" content="Cabañas en Licán Ray. El arriendo de invierno: la estufa, la leña y dónde se seca la ropa mojada.">
+
+<!-- Política de seguridad de contenido: el navegador sólo puede cargar
+     archivos de este mismo sitio. Sin CDN, sin librerías, sin rastreadores.
+     Ver skills/web-blindada/references/csp-en-pages.md -->
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self'; img-src 'self' data:; font-src 'self'; connect-src 'self'; media-src 'self'; form-action 'self'; base-uri 'none'; frame-src 'none'; object-src 'none'">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+
+<!-- Rescate de la clase .js (regla 2 de la casa). En archivo, sin defer:
+     inline lo bloquearía la CSP. -->
+<script src="js/rescate.js"></script>
+
+<!-- Fuentes propias: cero peticiones a terceros. El preload va SOLO
+     para la display, que es la del titular de la portada. -->
+<link rel="preload" href="assets/fuentes/trocchi-400-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="assets/fuentes.css">
+<link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+
+<div class="propuesta">
+  <p class="propuesta__que">Propuesta de sitio web — preparada para <b>Cabañas Mi Refugio</b> por CristalWeb</p>
+  <p class="propuesta__gancho">72 reseñas con 4,7 y hasta el nombre está confuso en internet: aparecen dos. Cero páginas. El que ordena eso se queda con el cliente.</p>
+</div>
+
+<header class="cab" id="cab">
+  <a class="cab__marca" href="#portada">
+    <span class="estufa" aria-hidden="true"><i></i></span>
+    <span class="cab__nombre">Mi Refugio</span>
+  </a>
+  <nav class="cab__nav" aria-label="Secciones">
+    <a href="#invierno">El invierno</a>
+    <a href="#nombre">Un solo nombre</a>
+  </nav>
+  <a class="cab__tel" href="tel:+56998216215">
+    <span class="cab__tel-rot">Licán Ray</span>
+    <span class="cab__tel-num">+56 9 9821 6215</span>
+  </a>
+</header>
+
+<main>
+
+<!-- ══════ ESTRUCTURA G — la estufa fija, el invierno fluyendo ══════ -->
+<div class="split">
+
+  <!-- LADO FIJO: la estufa -->
+  <aside class="hogar portada--foto" id="portada" aria-labelledby="t-portada">
+  <!-- FONDO DE PORTADA: 2560 px, nitido. Se disuelve hacia el titular
+       con un gradiente lateral, no con desenfoque. -->
+  <div class="portada__foto" aria-hidden="true">
+    <img src="imagenes/port-01.jpg" width="1900" height="1267"
+         decoding="async" fetchpriority="high" alt="">
+  </div>
+
+    <div class="ondas" aria-hidden="true">
+      <span></span><span></span><span></span>
+    </div>
+
+    <div class="hogar__caja">
+      <p class="sitio">Cabañas · Licán Ray</p>
+      <h1 id="t-portada">Mi Refugio</h1>
+
+      <!-- LA ESTUFA, dibujada grande. Es el objeto de la página. -->
+      <div class="estufona" aria-hidden="true">
+        <span class="estufona__canon"></span>
+        <span class="estufona__cuerpo">
+          <span class="estufona__vidrio"></span>
+          <span class="estufona__manilla"></span>
+        </span>
+        <span class="estufona__patas"></span>
+      </div>
+
+      <dl class="datos">
+        <div class="datos__par"><dt>Nota en Google</dt><dd>4,7</dd></div>
+        <div class="datos__par"><dt>Reseñas</dt><dd>72</dd></div>
+        <div class="datos__par"><dt>¿Abren en invierno?</dt><dd><span class="falta">falta</span></dd></div>
+        <div class="datos__par"><dt>Teléfono</dt><dd><a class="tel" href="tel:+56998216215">+56 9 9821 6215</a></dd></div>
+      </dl>
+    </div>
+  </aside>
+
+  <!-- LADO QUE FLUYE -->
+  <div class="flujo">
+
+    <!-- ══════ LA PIEZA FIRMA ══════ -->
+    <section class="invierno con-telon" id="invierno" aria-labelledby="t-invierno">
+  <div class="telon" aria-hidden="true">
+    <img src="imagenes/telon-01.jpg" width="1200" height="800" decoding="async" alt="">
+  </div>
+
+  <!-- AURA DE COLOR: la foto de rubro reventada a desenfoque. No se lee
+       como imagen: aporta color y luz detras de una seccion que si no
+       seria fondo plano. Aca el desenfoque SI es el efecto, no un parche,
+       y por eso el archivo va chico: a 64 px de blur, mas resolucion no
+       cambia nada. Sin loading=lazy porque el elemento va en absoluto con
+       z-index negativo y el navegador nunca lo considera visible. -->
+  <div class="aura" aria-hidden="true">
+    <img src="imagenes/aura-01.jpg" width="900" height="675" decoding="async" alt="">
+  </div>
+
+      <p class="antetitulo">Lo que casi nadie arrienda</p>
+      <h2 id="t-invierno">El refugio<br>de invierno</h2>
+      <p class="entrada">La pregunta que hace todo el que arrienda en junio es una
+        sola y nadie la escribe: <em>¿la cabaña es helada?</em> Detrás de esa
+        pregunta hay cuatro o cinco detalles chicos que, contestados, convierten un
+        arriendo barato de temporada baja en el mejor fin de semana del año.</p>
+      <p class="marca-ejemplo" data-ejemplo="Los detalles son los reales del rubro — las respuestas las pone el local"></p>
+
+      <ol class="detalles">
+        <li class="det">
+          <p class="det__q">La estufa: cuál es y cuánto calienta</p>
+          <p class="det__a"><span class="falta">falta: a leña, a pellet o eléctrica</span></p>
+          <p class="det__pq">No es lo mismo una salamandra que un calefactor
+            eléctrico que sube la cuenta de la luz. Y si la estufa calienta la
+            cabaña entera o sólo el living, eso también se dice: el que duerme en
+            la pieza del fondo lo va a notar.</p>
+        </li>
+        <li class="det">
+          <p class="det__q">La leña: cuánta viene y qué pasa cuando se acaba</p>
+          <p class="det__a"><span class="falta">falta: cuánta y si se repone</span></p>
+          <p class="det__pq">«Leña incluida» sin cantidad es una promesa que se
+            rompe la segunda noche. Un saco, dos, o «la que se ocupe» son tres
+            respuestas distintas y las tres sirven — escritas.</p>
+        </li>
+        <li class="det">
+          <p class="det__q">Dónde se seca la ropa mojada</p>
+          <p class="det__a"><span class="falta">falta: confirmar</span></p>
+          <p class="det__pq">En Licán Ray en invierno llueve, y una familia vuelve
+            de la calle con seis pares de zapatillas empapados. Un tendedero cerca
+            de la estufa es el detalle más agradecido y el que menos aparece
+            publicado.</p>
+        </li>
+        <li class="det">
+          <p class="det__q">Cómo se prende, explicado sin hacer sentir tonto a nadie</p>
+          <p class="det__a"><span class="falta">falta: si dejan instrucciones</span></p>
+          <p class="det__pq">Media clientela viene de ciudad y nunca ha prendido una
+            estufa a leña. Una hoja plastificada al lado, con tres pasos y un
+            dibujo, evita la llamada de las once de la noche y una mala noche.</p>
+        </li>
+        <li class="det">
+          <p class="det__q">Si la cabaña llega tibia</p>
+          <p class="det__a"><span class="falta">falta: confirmar</span></p>
+          <p class="det__pq">Encender la estufa una hora antes de que llegue el
+            huésped no cuesta nada y es el gesto por el que se escriben las reseñas
+            de cinco estrellas. Si ya lo hacen, es lo primero que hay que poner en
+            la página.</p>
+        </li>
+        <li class="det">
+          <p class="det__q">El agua caliente</p>
+          <p class="det__a"><span class="falta">falta: califont a gas o eléctrico</span></p>
+          <p class="det__pq">En invierno esto se convierte en el reclamo número uno.
+            Decir cuánto aguanta y si alcanza para cuatro duchas seguidas es más
+            valioso que cualquier foto.</p>
+        </li>
+      </ol>
+
+      <p class="firma">Seis detalles. Ninguno cuesta plata y ninguno aparece en las
+        páginas de la competencia, porque todas están escritas pensando en enero.</p>
+    </section>
+
+    <!-- ══════ UN SOLO NOMBRE ══════ -->
+    <!-- ========= MEDIA PANTALLA ========= -->
+<section class="mitades" aria-labelledby="t-mitades">
+  <div class="mitades__foto">
+    <img src="imagenes/media-01.jpg" width="1500" height="1000"
+         loading="lazy" decoding="async" alt="">
+  </div>
+  <div class="mitades__texto">
+    <p class="mitades__ante">La pregunta que no se hace por vergüenza</p>
+    <h2 id="t-mitades">¿Cuánta leña viene, y qué pasa cuando se acaba?</h2>
+    <p>«Leña incluida» sin decir cuánta es la promesa que se rompe la segunda noche: se saca la cuenta, se ve que no alcanza, y hay que salir a las once a buscar. Un número —tantos kilos, o tantas cargas— y una frase que diga si se repone y a qué precio, resuelven la duda antes de que exista. Es un dato que el dueño sabe de memoria y que ninguna cabaña de la zona publica.</p>
+  </div>
+</section>
+
+<section class="nombre" id="nombre" aria-labelledby="t-nombre">
+      <p class="antetitulo antetitulo--claro">Escrito para el dueño, a la vista</p>
+      <h2 id="t-nombre">Un solo<br>nombre</h2>
+      <p class="entrada">Buscándolos en internet aparecen <b>dos nombres distintos</b>
+        para lo que parece ser el mismo negocio. Puede ser un cambio de nombre que
+        quedó a medias, dos fichas creadas en momentos distintos, o dos cosas
+        separadas. No lo sé, y no lo voy a suponer.</p>
+
+      <div class="dos">
+        <div class="dos__caja">
+          <p class="dos__rot">Nombre A</p>
+          <p class="dos__n">Mi Refugio</p>
+          <p class="dos__d">Es el que usa esta demo, por ser el que aparece primero
+            en la ficha con reseñas.</p>
+        </div>
+        <div class="dos__caja">
+          <p class="dos__rot">Nombre B</p>
+          <p class="dos__n">Cabañas Licán</p>
+          <p class="dos__d">Aparece asociado al mismo lugar.
+            <span class="falta">falta: confirmar la relación entre los dos</span></p>
+        </div>
+      </div>
+
+      <h3 class="sub">Por qué esto importa más de lo que parece</h3>
+      <ul class="porques">
+        <li><b>Las reseñas se reparten.</b> Si hay dos fichas, cada cliente califica
+          en una de las dos y ninguna llega a tener el número que el negocio se
+          ganó. Setenta y dos reseñas en una ficha pesan mucho más que treinta y
+          seis en cada una.</li>
+        <li><b>El que los recomienda se confunde.</b> «Arrendé en Mi Refugio» y
+          «arrendé en Cabañas Licán» suenan a dos lugares distintos, y el boca a
+          boca —que en un pueblo es la mitad del negocio— se parte por la mitad.</li>
+        <li><b>Google no sabe cuál mostrar.</b> Cuando hay dos fichas del mismo
+          lugar, ninguna de las dos se posiciona bien. Ordenarlo es gratis y es lo
+          primero que habría que hacer, antes que cualquier página.</li>
+      </ul>
+
+      <p class="nota-honesta">Esta sección está escrita a la vista a propósito.
+        <b>Si el dueño confirma cuál es el nombre vigente, la página se cambia en
+        dos minutos y esta sección desaparece.</b> Mientras tanto, es más honesto
+        decir que hay una duda que elegir uno y actuar como si fuera obvio.</p>
+    </section>
+
+    <!-- ══════ EL CIERRE — T1 ══════ -->
+    <!-- ========= LA CITA A SANGRE ========= -->
+<section class="cita" aria-labelledby="t-cita">
+  <div class="cita__foto" aria-hidden="true">
+    <img src="imagenes/cita-01.jpg" width="2560" height="1707"
+         loading="lazy" decoding="async" alt="">
+  </div>
+  <blockquote class="cita__texto">
+    <p id="t-cita">La estufa se prende antes de que usted llegue<br>
+      <span class="cita__eco">No cuando llega — son dos horas de diferencia</span></p>
+  </blockquote>
+</section>
+
+
+
+<!-- ========= TAJO — FRANJA A SANGRE ========= -->
+<div class="tajo" aria-hidden="true">
+  <img src="imagenes/banda-01.jpg" width="1000" height="665"
+       loading="lazy" decoding="async" alt="">
+</div>
+<section class="cierre" id="llamar" aria-labelledby="t-cierre">
+      <p class="cierre__rot">Para reservar, hoy se llama</p>
+      <h2 id="t-cierre" class="cierre__tel">
+        <a href="tel:+56998216215">+56 9 9821 6215</a>
+      </h2>
+      <p class="cierre__pie">Es el número publicado en su ficha de Google.</p>
+    </section>
+
+<!-- ========= LA TIRA ========= -->
+<section class="tira" aria-label="Tres imágenes del oficio">
+  <figure class="tira__pieza">
+    <img src="imagenes/tira-01.jpg" width="1000" height="665" loading="lazy" decoding="async" alt="Troncos apilados vistos de punta, uno junto a otro.">
+  </figure>
+  <figure class="tira__pieza">
+    <img src="imagenes/tira-02.jpg" width="1000" height="667" loading="lazy" decoding="async" alt="Montón de leña bajo un cobertizo de madera.">
+  </figure>
+  <figure class="tira__pieza">
+    <img src="imagenes/tirq-01.jpg" width="1000" height="667" loading="lazy" decoding="async" alt="Nubarrones de lluvia sobre el lago y el bosque de la orilla.">
+  </figure>
+</section>
+
+  </div>
+</div>
+
+</main>
+
+
+
+<!-- ========= MOSAICO ========= -->
+<section class="mos" aria-labelledby="t-mos">
+  <h2 id="t-mos" class="mos__titulo">La misma serie, más de cerca</h2>
+  <p class="mos__nota">Estas seis ya aparecen más arriba en la página. Vuelven acá en otro tamaño porque una sola pasada de imágenes deja el scroll vacío, y porque de cerca se ven cosas que en grande se pierden. La procedencia de cada una está en imagenes/FUENTES.txt.</p>
+  <div class="mos__grilla">
+    <figure class="mos__p">
+      <img src="imagenes/mos-01.jpg" width="780" height="520"
+           loading="lazy" decoding="async" alt="">
+    </figure>
+    <figure class="mos__p">
+      <img src="imagenes/mos-02.jpg" width="780" height="520"
+           loading="lazy" decoding="async" alt="">
+    </figure>
+    <figure class="mos__p">
+      <img src="imagenes/mos-03.jpg" width="780" height="520"
+           loading="lazy" decoding="async" alt="">
+    </figure>
+    <figure class="mos__p">
+      <img src="imagenes/mos-04.jpg" width="780" height="519"
+           loading="lazy" decoding="async" alt="">
+    </figure>
+    <figure class="mos__p">
+      <img src="imagenes/mos-05.jpg" width="780" height="520"
+           loading="lazy" decoding="async" alt="">
+    </figure>
+    <figure class="mos__p">
+      <img src="imagenes/mos-06.jpg" width="780" height="520"
+           loading="lazy" decoding="async" alt="">
+    </figure>
+  </div>
+</section>
+<section class="dueno" aria-labelledby="t-dueno">
+  <h2 id="t-dueno">Para el dueño</h2>
+  <div class="dueno__cols">
+    <div>
+      <h3>Lo que está verificado</h3>
+      <p>El 4,7 con 72 reseñas de su ficha de Google, el teléfono
+        +56 9 9821 6215, y que no tienen página propia.</p>
+    </div>
+    <div>
+      <h3>Lo que no resolví</h3>
+      <p>Cuál de los dos nombres es el vigente. Está escrito en una sección de la
+        página en vez de escondido, porque es lo primero que hay que arreglar y no
+        me corresponde decidirlo a mí.</p>
+    </div>
+    <div>
+      <h3>Lo que falta</h3>
+      <p>Los seis detalles del invierno y la dirección. Con esos seis, ustedes son
+        la única cabaña de Licán Ray que le habla al que arrienda en junio.</p>
+    </div>
+  </div>
+  <p class="dueno__cierre">
+    <a class="flecha" href="https://wa.me/56968650001" rel="noopener">Escribirme por WhatsApp <span aria-hidden="true">→</span></a>
+    <a class="flecha" href="../../" rel="noopener">Ver otros trabajos <span aria-hidden="true">→</span></a>
+  </p>
+</section>
+
+<footer class="pie">
+  <p>Sitio de demostración preparado por CristalWeb. El negocio no lo ha encargado
+    ni ha revisado su contenido. Los dos nombres aparecen así en las fichas
+    públicas; la relación entre ellos está sin confirmar.</p>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>

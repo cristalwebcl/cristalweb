@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="es-CL" class="no-js">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Cabañas Coñaripe — Silvia Obando</title>
+<meta name="description" content="Cabañas en Coñaripe atendidas por su dueña. Qué significa en la práctica que reciba una persona y no una recepción.">
+
+<!-- Política de seguridad de contenido: el navegador sólo puede cargar
+     archivos de este mismo sitio. Sin CDN, sin librerías, sin rastreadores.
+     Ver skills/web-blindada/references/csp-en-pages.md -->
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self'; img-src 'self' data:; font-src 'self'; connect-src 'self'; media-src 'self'; form-action 'self'; base-uri 'none'; frame-src 'none'; object-src 'none'">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+
+<!-- Rescate de la clase .js (regla 2 de la casa). En archivo, sin defer:
+     inline lo bloquearía la CSP. -->
+<script src="js/rescate.js"></script>
+
+<!-- Fuentes propias: cero peticiones a terceros. El preload va SOLO
+     para la display, que es la del titular de la portada. -->
+<link rel="preload" href="assets/fuentes/amethysta-400-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="assets/fuentes.css">
+<link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+
+<div class="propuesta">
+  <p class="propuesta__que">Propuesta de sitio web — preparada para <b>Cabañas Coñaripe · Silvia Obando</b> por CristalWeb</p>
+  <p class="propuesta__gancho">El negocio se llama como su dueña y tiene 4,9. La gente no le arrienda a una empresa: le arrienda a Silvia. Eso ningún portal lo puede contar.</p>
+</div>
+
+<header class="cab" id="cab">
+  <a class="cab__marca" href="#portada">
+    <span class="hortensia" aria-hidden="true"></span>
+    <span class="cab__nombre">Cabañas Coñaripe</span>
+  </a>
+  <nav class="cab__nav" aria-label="Secciones">
+    <a href="#donde">Donde Silvia</a>
+    <a href="#terreno">El terreno</a>
+  </nav>
+  <a class="cab__tel" href="tel:+56995116965">
+    <span class="cab__tel-rot">Hablar con Silvia</span>
+    <span class="cab__tel-num">+56 9 9511 6965</span>
+  </a>
+</header>
+
+<main>
+
+<!-- ════════ PORTADA — ESTRUCTURA A: las cifras de la confianza ════════ -->
+<section class="portada portada--foto" id="portada" aria-labelledby="t-portada">
+  <!-- FONDO DE PORTADA: 2560 px, nitido. Se disuelve hacia el titular
+       con un gradiente lateral, no con desenfoque. -->
+  <div class="portada__foto" aria-hidden="true">
+    <img src="imagenes/port-01.jpg" width="2560" height="1707"
+         decoding="async" fetchpriority="high" alt="">
+  </div>
+
+  <div class="petalos" aria-hidden="true">
+    <span class="pet pet--1"></span>
+    <span class="pet pet--2"></span>
+    <span class="pet pet--3"></span>
+  </div>
+
+  <div class="portada__texto">
+    <p class="sitio">Cabañas · Coñaripe</p>
+    <h1 id="t-portada">Le arriendan<br>a Silvia</h1>
+
+    <dl class="stats">
+      <div class="stat stat--grande">
+        <dd>4,9</dd>
+        <dt>en Google</dt>
+      </div>
+      <div class="stat">
+        <dd>42</dd>
+        <dt>reseñas</dt>
+      </div>
+      <div class="stat stat--hueco">
+        <dd>—</dd>
+        <dt>años recibiendo gente <span class="falta">falta</span></dt>
+      </div>
+    </dl>
+
+    <p class="bajada">Un 4,9 con cuarenta y dos reseñas en un pueblo chico no se
+      consigue con sábanas limpias: se consigue con alguien que está. Esa persona es
+      el negocio, y hoy no aparece por ninguna parte.</p>
+  </div>
+</section>
+
+<!-- ════════ LA PIEZA FIRMA — DONDE SILVIA ════════ -->
+<section class="donde con-telon" id="donde" aria-labelledby="t-donde">
+  <div class="telon" aria-hidden="true">
+    <img src="imagenes/telon-01.jpg" width="1200" height="800" decoding="async" alt="">
+  </div>
+
+  <!-- AURA DE COLOR: la foto de rubro reventada a desenfoque. No se lee
+       como imagen: aporta color y luz detras de una seccion que si no
+       seria fondo plano. Aca el desenfoque SI es el efecto, no un parche,
+       y por eso el archivo va chico: a 64 px de blur, mas resolucion no
+       cambia nada. Sin loading=lazy porque el elemento va en absoluto con
+       z-index negativo y el navegador nunca lo considera visible. -->
+  <div class="aura" aria-hidden="true">
+    <img src="imagenes/aura-01.jpg" width="900" height="675" decoding="async" alt="">
+  </div>
+
+  <div class="donde__cuerpo">
+    <p class="antetitulo">Qué significa en la práctica</p>
+    <h2 id="t-donde">Donde Silvia</h2>
+    <p class="entrada">«Atendido por su dueña» está escrito en media internet y casi
+      nunca significa nada. Acá sí significa cosas concretas, y son las que hay que
+      poner por escrito — porque son exactamente lo que un portal de reservas no
+      puede ofrecer aunque quiera.</p>
+    <p class="marca-ejemplo" data-ejemplo="Estructura de la sección — lo que va en cada línea se conversa con Silvia"></p>
+
+    <ol class="practica">
+      <li class="pr">
+        <p class="pr__q">Quién recibe cuando uno llega</p>
+        <p class="pr__a"><span class="falta">falta: conversarlo con Silvia</span></p>
+        <p class="pr__pq">Si recibe ella misma, eso se dice con esas palabras. Es la
+          diferencia entre una llave en una caja con código y alguien que abre la
+          puerta y explica dónde está todo.</p>
+      </li>
+      <li class="pr">
+        <p class="pr__q">A quién se le avisa si algo falla</p>
+        <p class="pr__a"><span class="falta">falta: conversarlo con Silvia</span></p>
+        <p class="pr__pq">A las once de la noche, con el agua caliente cortada, la
+          única pregunta que importa es si hay alguien que conteste. Que exista un
+          número directo —y que esté escrito— vale más que cualquier foto.</p>
+      </li>
+      <li class="pr">
+        <p class="pr__q">Cómo se reserva de verdad</p>
+        <p class="pr__a"><span class="falta">falta: conversarlo con Silvia</span></p>
+        <p class="pr__pq">Sin formularios ni sistemas: se habla, se acuerda y listo.
+          Decirlo así ordena la expectativa y saca de encima al que busca reservar a
+          las tres de la mañana sin hablar con nadie.</p>
+      </li>
+      <li class="pr">
+        <p class="pr__q">Qué se puede pedir y qué no</p>
+        <p class="pr__a"><span class="falta">falta: conversarlo con Silvia</span></p>
+        <p class="pr__pq">Llegar tarde, dejar el auto adentro, una cuna, quedarse una
+          hora más el domingo. En un negocio atendido por su dueña muchas de esas
+          cosas se pueden — y nadie pregunta porque asume que no.</p>
+      </li>
+    </ol>
+
+    <div class="ojo">
+      <p><b>Lo que esta sección no hace.</b> No cuenta la historia de Silvia, no dice
+        hace cuántos años empezó ni por qué. No la conozco, y escribir la biografía
+        de una persona real sin haber hablado con ella sería exactamente el tipo de
+        cosa que hace que una página se sienta falsa. La estructura está lista; las
+        palabras son suyas.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ════════ EL TERRENO ════════ -->
+<!-- ========= MEDIA PANTALLA ========= -->
+<section class="mitades" aria-labelledby="t-mitades">
+  <div class="mitades__foto">
+    <img src="imagenes/media-01.jpg" width="2200" height="1513"
+         loading="lazy" decoding="async" alt="">
+  </div>
+  <div class="mitades__texto">
+    <p class="mitades__ante">Lo que un portal no puede poner</p>
+    <h2 id="t-mitades">Acá no se arrienda a una empresa: se le arrienda a Silvia</h2>
+    <p>En un portal de reservas todas las cabañas se ven iguales: fotos parejas, precio y un botón. Lo que no cabe ahí es que alguien conteste el teléfono a las nueve de la noche, que sepa qué hacer si llegan más tarde de lo previsto, y que el lugar tenga dueña con nombre. Eso vale, y por eso el negocio se llama como ella.</p>
+  </div>
+</section>
+
+<section class="terreno" id="terreno" aria-labelledby="t-terreno">
+  <div class="terreno__cuerpo">
+    <p class="antetitulo antetitulo--claro">Lo que se ve al llegar</p>
+    <h2 id="t-terreno">El terreno</h2>
+    <p class="entrada">Lo segundo que decide un arriendo, después de la persona, es
+      el lugar: cuánto espacio hay afuera, si los niños pueden andar sueltos y qué
+      separa una cabaña de la otra. Nada de eso está publicado.</p>
+
+    <dl class="huecos">
+      <div class="hueco">
+        <dt>Cuántas cabañas hay y cómo están repartidas</dt>
+        <dd><span class="falta">falta</span>
+          <span class="hueco__pq">Dos cabañas pegadas y dos separadas por el
+            terreno son experiencias distintas. La segunda se cobra más y casi
+            nadie la sabe explicar.</span></dd>
+      </div>
+      <div class="hueco">
+        <dt>Qué hay afuera</dt>
+        <dd><span class="falta">falta: describirlo en una línea</span>
+          <span class="hueco__pq">Pasto, árboles, jardín, quincho, un espacio para
+            el auto. Lo que sea que haya, dicho tal cual. No lo describo yo porque
+            no lo he visto.</span></dd>
+      </div>
+      <div class="hueco">
+        <dt>Si los niños pueden andar sueltos</dt>
+        <dd><span class="falta">falta</span>
+          <span class="hueco__pq">Es la pregunta que decide la reserva de una
+            familia con niños chicos, y la respuesta —si el terreno es cerrado y no
+            pasan autos— es un argumento de venta enorme.</span></dd>
+      </div>
+      <div class="hueco">
+        <dt>Si se puede llegar con perro</dt>
+        <dd><span class="falta">falta</span>
+          <span class="hueco__pq">Con terreno propio esto suele ser un sí, y un sí
+            escrito trae clientes que hoy ni preguntan.</span></dd>
+      </div>
+      <div class="hueco">
+        <dt>Dónde queda respecto del pueblo</dt>
+        <dd><span class="falta">falta: la dirección</span>
+          <span class="hueco__pq">Sin kilómetros inventados: basta con «a tantas
+            cuadras de la plaza» o el punto en el mapa.</span></dd>
+      </div>
+    </dl>
+
+    <p class="nota-honesta">El color de esta página es el azul de las hortensias, que
+      es la flor del sur y de casi todos los jardines de Coñaripe. <b>Es una decisión
+      de diseño, no una afirmación:</b> no sé si hay hortensias en el terreno. Si las
+      hay, hay que fotografiarlas; si no, el color se sostiene igual y no se dice
+      nada.</p>
+  </div>
+</section>
+
+<!-- ════════ EL CIERRE — T1 con nombre ════════ -->
+<!-- ========= LA CITA A SANGRE ========= -->
+<section class="cita" aria-labelledby="t-cita">
+  <div class="cita__foto" aria-hidden="true">
+    <img src="imagenes/cita-01.jpg" width="2560" height="1707"
+         loading="lazy" decoding="async" alt="">
+  </div>
+  <blockquote class="cita__texto">
+    <p id="t-cita">4,9 con nombre propio<br>
+      <span class="cita__eco">Y ningún portal puede contar por qué</span></p>
+  </blockquote>
+</section>
+
+
+
+<!-- ========= TAJO — FRANJA A SANGRE ========= -->
+<div class="tajo" aria-hidden="true">
+  <img src="imagenes/banda-01.jpg" width="1100" height="733"
+       loading="lazy" decoding="async" alt="">
+</div>
+<section class="cierre" id="llamar" aria-labelledby="t-cierre">
+  <p class="cierre__rot">Para reservar, se habla con ella</p>
+  <h2 id="t-cierre" class="cierre__tel">
+    <a href="tel:+56995116965">+56 9 9511 6965</a>
+  </h2>
+  <p class="cierre__pie">Es el número publicado en su ficha de Google. En esta página
+    no hay formulario a propósito: si el negocio es que contesta una persona,
+    ponerle un formulario en el medio sería quitarle justo lo que lo hace bueno.</p>
+</section>
+
+<!-- ========= LA TIRA ========= -->
+<section class="tira" aria-label="Tres imágenes del oficio">
+  <figure class="tira__pieza">
+    <img src="imagenes/tira-01.jpg" width="1100" height="733" loading="lazy" decoding="async" alt="Atardecer sobre el lago visto entre los juncos.">
+  </figure>
+  <figure class="tira__pieza">
+    <img src="imagenes/tira-02.jpg" width="1100" height="733" loading="lazy" decoding="async" alt="Puesta de sol reflejada en el agua quieta.">
+  </figure>
+  <figure class="tira__pieza">
+    <img src="imagenes/tirac-01.jpg" width="1100" height="734" loading="lazy" decoding="async" alt="Cabaña de troncos entre los árboles, con las luces encendidas.">
+  </figure>
+</section>
+
+</main>
+
+
+
+<!-- ========= MOSAICO ========= -->
+<section class="mos" aria-labelledby="t-mos">
+  <h2 id="t-mos" class="mos__titulo">La misma serie, más de cerca</h2>
+  <p class="mos__nota">Estas seis ya aparecen más arriba en la página. Vuelven acá en otro tamaño porque una sola pasada de imágenes deja el scroll vacío, y porque de cerca se ven cosas que en grande se pierden. La procedencia de cada una está en imagenes/FUENTES.txt.</p>
+  <div class="mos__grilla">
+    <figure class="mos__p">
+      <img src="imagenes/mos-01.jpg" width="780" height="536"
+           loading="lazy" decoding="async" alt="">
+    </figure>
+    <figure class="mos__p">
+      <img src="imagenes/mos-02.jpg" width="780" height="520"
+           loading="lazy" decoding="async" alt="">
+    </figure>
+    <figure class="mos__p">
+      <img src="imagenes/mos-03.jpg" width="780" height="520"
+           loading="lazy" decoding="async" alt="">
+    </figure>
+    <figure class="mos__p">
+      <img src="imagenes/mos-04.jpg" width="780" height="520"
+           loading="lazy" decoding="async" alt="">
+    </figure>
+    <figure class="mos__p">
+      <img src="imagenes/mos-05.jpg" width="780" height="520"
+           loading="lazy" decoding="async" alt="">
+    </figure>
+    <figure class="mos__p">
+      <img src="imagenes/mos-06.jpg" width="780" height="520"
+           loading="lazy" decoding="async" alt="">
+    </figure>
+  </div>
+</section>
+<section class="dueno" aria-labelledby="t-dueno">
+  <h2 id="t-dueno">Para Silvia</h2>
+  <div class="dueno__cols">
+    <div>
+      <h3>Lo que está verificado</h3>
+      <p>El 4,9 con 42 reseñas de su ficha de Google y el teléfono
+        +56 9 9511 6965. No hay página propia.</p>
+    </div>
+    <div>
+      <h3>Lo que no escribí</h3>
+      <p>Nada sobre usted. Ni años, ni historia, ni cómo empezó. Esa parte es la que
+        más vale de toda la página y es la única que no se puede escribir sin
+        conversar antes.</p>
+    </div>
+    <div>
+      <h3>Lo que falta</h3>
+      <p>Las cuatro respuestas de «Donde Silvia», la dirección y cuántas cabañas
+        son. Y una foto suya, si quiere: en un negocio que lleva su nombre, es la
+        foto que más convence.</p>
+    </div>
+  </div>
+  <p class="dueno__cierre">
+    <a class="flecha" href="https://wa.me/56968650001" rel="noopener">Escribirme por WhatsApp <span aria-hidden="true">→</span></a>
+    <a class="flecha" href="../../" rel="noopener">Ver otros trabajos <span aria-hidden="true">→</span></a>
+  </p>
+</section>
+
+<footer class="pie">
+  <p>Sitio de demostración preparado por CristalWeb. El negocio no lo ha encargado
+    ni ha revisado su contenido. No se atribuye a la dueña ninguna declaración: todo
+    lo que la involucra está marcado como pendiente de conversar.</p>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>

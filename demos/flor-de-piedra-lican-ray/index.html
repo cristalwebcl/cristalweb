@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="es-CL" class="no-js">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Cabañas Flor de Piedra — Licán Ray</title>
+<meta name="description" content="Cabañas en Licán Ray. La misma cabaña en verano y en invierno, y por qué la temporada baja vale la pena.">
+
+<!-- Política de seguridad de contenido: el navegador sólo puede cargar
+     archivos de este mismo sitio. Sin CDN, sin librerías, sin rastreadores.
+     Ver skills/web-blindada/references/csp-en-pages.md -->
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self'; img-src 'self' data:; font-src 'self'; connect-src 'self'; media-src 'self'; form-action 'self'; base-uri 'none'; frame-src 'none'; object-src 'none'">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+
+<!-- Rescate de la clase .js (regla 2 de la casa). En archivo, sin defer:
+     inline lo bloquearía la CSP. -->
+<script src="js/rescate.js"></script>
+
+<!-- Fuentes propias: cero peticiones a terceros. El preload va SOLO
+     para la display, que es la del titular de la portada. -->
+<link rel="preload" href="assets/fuentes/italiana-400-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="assets/fuentes.css">
+<link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+
+<div class="propuesta">
+  <p class="propuesta__que">Propuesta de sitio web — preparada para <b>Cabañas Flor de Piedra</b> por CristalWeb</p>
+  <p class="propuesta__gancho">116 reseñas y un negocio que se llena en verano, con una página de 2012 rota a la vista. Trece años sin tocar.</p>
+</div>
+
+<header class="cab" id="cab">
+  <a class="cab__marca" href="#portada">
+    <span class="piedra" aria-hidden="true"></span>
+    <span class="cab__nombre">Flor de Piedra</span>
+  </a>
+  <nav class="cab__nav" aria-label="Secciones">
+    <a href="#temporadas">Las dos temporadas</a>
+    <a href="#trece">Trece años</a>
+  </nav>
+  <a class="cab__tel" href="tel:+56996395043">
+    <span class="cab__tel-rot">Licán Ray</span>
+    <span class="cab__tel-num">+56 9 9639 5043</span>
+  </a>
+</header>
+
+<main>
+
+<!-- ========= PORTADA ========= -->
+<section class="portada portada--foto" id="portada" aria-labelledby="t-portada">
+  <!-- FONDO DE PORTADA: 2560 px, nitido. Se disuelve hacia el titular
+       con un gradiente lateral, no con desenfoque. -->
+  <div class="portada__foto" aria-hidden="true">
+    <img src="imagenes/port-01.jpg" width="2560" height="1707"
+         decoding="async" fetchpriority="high" alt="">
+  </div>
+
+  <div class="niebla" aria-hidden="true"></div>
+
+  <div class="portada__texto">
+    <p class="sitio">Cabañas · Licán Ray</p>
+    <h1 id="t-portada">El lago<br>también existe<br>en julio</h1>
+    <p class="bajada">En enero Licán Ray está lleno y todas las cabañas se arriendan
+      solas. El resto del año hay que salir a buscar al cliente — y para eso hace
+      falta contarle algo que hoy nadie le cuenta.</p>
+    <dl class="specs">
+      <div class="spec"><dt>reseñas en Google</dt><dd>116</dd></div>
+      <div class="spec"><dt>¿abren en invierno?</dt><dd class="dd--falta"><span class="falta">falta: confirmar</span></dd></div>
+      <div class="spec"><dt>teléfono</dt><dd class="dd--tel"><a href="tel:+56996395043">+56 9 9639 5043</a></dd></div>
+    </dl>
+  </div>
+</section>
+
+<!-- ========= LA PIEZA FIRMA — ESTRUCTURA M TEMPORAL ========= -->
+<section class="temporadas con-telon" id="temporadas" aria-labelledby="t-temp">
+  <div class="telon" aria-hidden="true">
+    <img src="imagenes/telon-01.jpg" width="1200" height="800" decoding="async" alt="">
+  </div>
+
+  <!-- AURA DE COLOR: la foto de rubro reventada a desenfoque. No se lee
+       como imagen: aporta color y luz detras de una seccion que si no
+       seria fondo plano. Aca el desenfoque SI es el efecto, no un parche,
+       y por eso el archivo va chico: a 64 px de blur, mas resolucion no
+       cambia nada. Sin loading=lazy porque el elemento va en absoluto con
+       z-index negativo y el navegador nunca lo considera visible. -->
+  <div class="aura" aria-hidden="true">
+    <img src="imagenes/aura-01.jpg" width="900" height="675" decoding="async" alt="">
+  </div>
+
+  <div class="temporadas__cabecera">
+    <p class="antetitulo">La misma cabaña, dos veces</p>
+    <h2 id="t-temp">La temporada baja<br>vale oro</h2>
+    <p class="entrada">Casi todas las páginas de cabañas muestran el verano y esconden
+      el invierno, como si el negocio durara dos meses. Es al revés: el verano se
+      vende solo. Lo que hay que contar es el resto del año, y contarlo bien es lo
+      único que llena una cabaña en julio.</p>
+    <p class="marca-ejemplo" data-ejemplo="La comparación es real — los precios y los horarios los pone el local"></p>
+  </div>
+
+  <div class="comparador">
+    <!-- columna verano -->
+    <div class="col col--verano">
+      <div class="col__cab">
+        <p class="col__t">Enero</p>
+        <p class="col__s">temporada alta</p>
+      </div>
+      <dl class="col__filas">
+        <div class="cf"><dt>El lago</dt><dd>Lleno. La playa se comparte y hay que llegar temprano para agarrar sombra.</dd></div>
+        <div class="cf"><dt>La cabaña</dt><dd>Se usa para dormir: el día entero se pasa afuera.</dd></div>
+        <div class="cf"><dt>Precio</dt><dd><span class="falta">falta: tarifa de alta</span></dd></div>
+        <div class="cf"><dt>Con cuánto se reserva</dt><dd><span class="falta">falta: meses de anticipación</span></dd></div>
+        <div class="cf"><dt>Lo que se hace</dt><dd>Playa, lago, feria, todo abierto.</dd></div>
+        <div class="cf"><dt>Lo honesto</dt><dd>Hay ruido, hay gente y hay que compartir el pueblo. No es un defecto: es enero.</dd></div>
+      </dl>
+    </div>
+
+    <!-- columna invierno -->
+    <div class="col col--invierno">
+      <div class="col__cab">
+        <p class="col__t">Julio</p>
+        <p class="col__s">temporada baja</p>
+      </div>
+      <dl class="col__filas">
+        <div class="cf"><dt>El lago</dt><dd>Vacío. Se camina por la orilla sin cruzarse con nadie, y esa foto no la tiene ninguna cabaña publicada.</dd></div>
+        <div class="cf"><dt>La cabaña</dt><dd>Se usa entera. La estufa prendida y la ventana con el lago adentro <em>es</em> el panorama.</dd></div>
+        <div class="cf"><dt>Precio</dt><dd><span class="falta">falta: tarifa de baja</span></dd></div>
+        <div class="cf"><dt>Con cuánto se reserva</dt><dd><span class="falta">falta</span></dd></div>
+        <div class="cf"><dt>Lo que se hace</dt><dd>Termas cerca, lago solo, comer y no hacer nada. <span class="falta">falta: qué está abierto en invierno</span></dd></div>
+        <div class="cf"><dt>Lo honesto</dt><dd>Llueve, hay días que no se sale, y varios locales del pueblo cierran. Decirlo antes es lo que hace que el que igual viene, vuelva.</dd></div>
+      </dl>
+    </div>
+  </div>
+
+  <div class="ojo">
+    <p><b>Por qué esta comparación vende y una galería de fotos de verano no.</b> El
+      que busca cabaña en enero ya decidió venir: sólo compara precios. El que la
+      busca en julio todavía no sabe si vale la pena el viaje — y a ése hay que
+      convencerlo con palabras, no con una foto de la playa llena. Es el único
+      cliente que se gana escribiendo.</p>
+  </div>
+
+  <p class="firma">Las dos columnas cuentan lo mismo: la misma cabaña, el mismo
+    lago, seis meses de diferencia. La de la derecha es la que hoy no existe en
+    ninguna parte de internet.</p>
+</section>
+
+<!-- ========= TRECE AÑOS DESPUÉS ========= -->
+<!-- ========= MEDIA PANTALLA ========= -->
+<section class="mitades" aria-labelledby="t-mitades">
+  <div class="mitades__foto">
+    <img src="imagenes/media-01.jpg" width="1500" height="550"
+         loading="lazy" decoding="async" alt="">
+  </div>
+  <div class="mitades__texto">
+    <p class="mitades__ante">La única pregunta que importa</p>
+    <h2 id="t-mitades">Esto es lo que se ve desde la baranda</h2>
+    <p>Todas las cabañas de Licán Ray dicen «vista al lago». Muy pocas publican la vista. Ésta es la de acá, sin recorte y sin filtro: el Calafquén entero y los cerros del frente. El que reserva sin verla está apostando; el que la ve ya decidió. Publicar la foto de la vista es la diferencia entre competir por precio y competir por lo que se tiene.</p>
+  </div>
+</section>
+
+<section class="trece" id="trece" aria-labelledby="t-trece">
+  <div class="trece__cuerpo">
+    <p class="antetitulo antetitulo--claro">Lo que hay hoy en internet</p>
+    <h2 id="t-trece">Trece años<br>después</h2>
+    <p class="entrada">Su página es de 2012 y se nota. No voy a describir lo que dice,
+      porque lo que dice no es el problema: el problema es el estado en que está y lo
+      que ese estado le comunica a alguien que la abre por primera vez.</p>
+
+    <ul class="estado">
+      <li>
+        <p class="estado__t">Está rota a la vista</p>
+        <p class="estado__d">No hay que ser diseñador para notarlo: se abre y algo no
+          calza. Y el visitante no piensa «esta página está vieja», piensa «este
+          lugar debe estar igual».</p>
+      </li>
+      <li>
+        <p class="estado__t">Fue hecha antes de que existiera el teléfono como se usa hoy</p>
+        <p class="estado__d">En 2012 casi nadie buscaba cabañas desde el celular.
+          Hoy es prácticamente lo único. Una página de esa época no está mal hecha:
+          está hecha para otro mundo.</p>
+      </li>
+      <li>
+        <p class="estado__t">Trece años es mucho tiempo de reseñas ganadas</p>
+        <p class="estado__d">116 reseñas no se juntan sin atender bien. Todo ese
+          trabajo está compitiendo contra una página que da la impresión
+          contraria.</p>
+      </li>
+    </ul>
+
+    <div class="antes-despues">
+      <div class="ad">
+        <p class="ad__rot">Lo que hay</p>
+        <p class="ad__t">Una página de 2012</p>
+        <p class="ad__d">Con la que nadie del local puede hacer nada solo, y que
+          probablemente ni siquiera se puede editar ya.</p>
+      </div>
+      <div class="ad ad--nueva">
+        <p class="ad__rot">Lo que puede haber</p>
+        <p class="ad__t">Una página que se explica sola</p>
+        <p class="ad__d">Un archivo, sin sistemas ni contraseñas de terceros, que se
+          cambia editando texto. Los precios de la próxima temporada los pueden
+          actualizar ustedes.</p>
+      </div>
+    </div>
+
+    <p class="nota-honesta">Antes de la llamada conviene abrir su página en el
+      teléfono y guardar una captura. <b>Esa captura es el argumento entero: no hay
+      que explicar nada, se muestra.</b></p>
+  </div>
+</section>
+
+<!-- ========= EL CIERRE — T1 ========= -->
+<!-- ========= LA CITA A SANGRE ========= -->
+<section class="cita" aria-labelledby="t-cita">
+  <div class="cita__foto" aria-hidden="true">
+    <img src="imagenes/cita-01.jpg" width="2560" height="1920"
+         loading="lazy" decoding="async" alt="">
+  </div>
+  <blockquote class="cita__texto">
+    <p id="t-cita">Flor de piedra<br>
+      <span class="cita__eco">El nombre viene de la orilla, y la orilla está a pasos</span></p>
+  </blockquote>
+</section>
+
+
+
+<!-- ========= TAJO — FRANJA A SANGRE ========= -->
+<div class="tajo" aria-hidden="true">
+  <img src="imagenes/banda-01.jpg" width="1500" height="550"
+       loading="lazy" decoding="async" alt="">
+</div>
+<section class="cierre" id="llamar" aria-labelledby="t-cierre">
+  <p class="cierre__rot">Para reservar, hoy se llama</p>
+  <h2 id="t-cierre" class="cierre__tel">
+    <a href="tel:+56996395043">+56 9 9639 5043</a>
+  </h2>
+  <p class="cierre__pie">Es el número publicado en su ficha de Google. Es lo único de
+    su presencia en internet que sigue funcionando igual que hace trece años.</p>
+</section>
+
+<!-- ========= LAS FOTOS ========= -->
+<section class="galeria" aria-labelledby="t-galeria">
+  <h2 id="t-galeria" class="galeria__titulo">Todo esto es de ellos</h2>
+  <p class="galeria__nota">Las seis fotos con pie son suyas. Sólo tres imágenes de la página no lo son —el fondo de piedras de la portada, el aura y la cita— y están declaradas en imagenes/FUENTES.txt.</p>
+  <div class="galeria__grilla">
+    <figure class="gal gal--izq">
+      <img src="imagenes/gal-01.jpg" width="1300" height="501" loading="lazy" decoding="async"
+           alt="El lago Calafquén visto desde la baranda de madera, con los cerros al frente.">
+      <figcaption>La vista, sin recorte. Es el activo del negocio y hoy no está en ninguna parte.</figcaption>
+    </figure>
+    <figure class="gal gal--der">
+      <img src="imagenes/gal-03.jpg" width="1300" height="722" loading="lazy" decoding="async"
+           alt="La piscina con el quitasol y, detrás, el lago y los cerros.">
+      <figcaption>La piscina da al lago. Eso no lo tiene ninguna cabaña del centro.</figcaption>
+    </figure>
+    <figure class="gal gal--abajo">
+      <img src="imagenes/gal-02.jpg" width="1300" height="975" loading="lazy" decoding="async"
+           alt="Dormitorio con paredes de madera, dos camas y una mesa de noche.">
+      <figcaption>Un dormitorio. Simple y limpio, que es exactamente lo que se busca.</figcaption>
+    </figure>
+  </div>
+  <p class="galeria__falta">falta: la vista del lago al atardecer, y una cabaña por dentro con luz de tarde</p>
+</section>
+
+<!-- ========= LA TIRA ========= -->
+<section class="tira" aria-label="Tres imágenes del oficio">
+  <figure class="tira__pieza">
+    <img src="imagenes/tira-01.jpg" width="1000" height="750" loading="lazy" decoding="async" alt="Las cabañas de madera vistas desde el camino interior.">
+  </figure>
+  <figure class="tira__pieza">
+    <img src="imagenes/tira-02.jpg" width="1000" height="750" loading="lazy" decoding="async" alt="El pórtico de entrada al conjunto, entre las cabañas.">
+  </figure>
+  <figure class="tira__pieza">
+    <img src="imagenes/tira-03.jpg" width="1000" height="600" loading="lazy" decoding="async" alt="El conjunto visto desde el empedrado, con las cordylines.">
+  </figure>
+</section>
+
+</main>
+
+
+
+<!-- ========= MOSAICO ========= -->
+<section class="mos" aria-labelledby="t-mos">
+  <h2 id="t-mos" class="mos__titulo">La misma serie, más de cerca</h2>
+  <p class="mos__nota">Estas seis ya aparecen más arriba en la página. Vuelven acá en otro tamaño porque una sola pasada de imágenes deja el scroll vacío, y porque de cerca se ven cosas que en grande se pierden. La procedencia de cada una está en imagenes/FUENTES.txt.</p>
+  <div class="mos__grilla">
+    <figure class="mos__p">
+      <img src="imagenes/mos-01.jpg" width="780" height="286"
+           loading="lazy" decoding="async" alt="">
+    </figure>
+    <figure class="mos__p">
+      <img src="imagenes/mos-02.jpg" width="780" height="301"
+           loading="lazy" decoding="async" alt="">
+    </figure>
+    <figure class="mos__p">
+      <img src="imagenes/mos-03.jpg" width="780" height="433"
+           loading="lazy" decoding="async" alt="">
+    </figure>
+    <figure class="mos__p">
+      <img src="imagenes/mos-04.jpg" width="780" height="585"
+           loading="lazy" decoding="async" alt="">
+    </figure>
+    <figure class="mos__p">
+      <img src="imagenes/mos-05.jpg" width="780" height="468"
+           loading="lazy" decoding="async" alt="">
+    </figure>
+    <figure class="mos__p">
+      <img src="imagenes/mos-06.jpg" width="780" height="585"
+           loading="lazy" decoding="async" alt="">
+    </figure>
+  </div>
+</section>
+<section class="dueno" aria-labelledby="t-dueno">
+  <h2 id="t-dueno">Para el dueño</h2>
+  <div class="dueno__cols">
+    <div>
+      <h3>Lo que está verificado</h3>
+      <p>Las 116 reseñas de su ficha de Google, el teléfono +56 9 9639 5043, y que
+        tienen una página web de 2012 que se ve rota.</p>
+    </div>
+    <div>
+      <h3>Lo que no inventé</h3>
+      <p>Ni una tarifa. Los precios de alta y de baja son suyos y son el dato más
+        delicado de todos: uno equivocado publicado en internet genera una
+        discusión que no se gana nunca.</p>
+    </div>
+    <div>
+      <h3>Lo que falta</h3>
+      <p>Si abren en invierno —que está en la portada a propósito, porque es la
+        primera pregunta—, las dos tarifas, y una foto del lago en julio. Esa foto
+        sola vale la temporada baja completa.</p>
+    </div>
+  </div>
+  <p class="dueno__cierre">
+    <a class="flecha" href="https://wa.me/56968650001" rel="noopener">Escribirme por WhatsApp <span aria-hidden="true">→</span></a>
+    <a class="flecha" href="../../" rel="noopener">Ver otros trabajos <span aria-hidden="true">→</span></a>
+  </p>
+</section>
+
+<footer class="pie">
+  <p>Sitio de demostración preparado por CristalWeb. El negocio no lo ha encargado
+    ni ha revisado su contenido.</p>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>

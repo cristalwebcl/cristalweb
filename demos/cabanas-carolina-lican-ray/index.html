@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="es-CL" class="no-js">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Cabañas Carolina — Licán Ray</title>
+<meta name="description" content="Cabañas en Licán Ray. Qué cabaña es cuál, para cuántos, y qué incluye cada una.">
+
+<!-- Política de seguridad de contenido: el navegador sólo puede cargar
+     archivos de este mismo sitio. Sin CDN, sin librerías, sin rastreadores.
+     Ver skills/web-blindada/references/csp-en-pages.md -->
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self'; img-src 'self' data:; font-src 'self'; connect-src 'self'; media-src 'self'; form-action 'self'; base-uri 'none'; frame-src 'none'; object-src 'none'">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+
+<!-- Rescate de la clase .js (regla 2 de la casa). En archivo, sin defer:
+     inline lo bloquearía la CSP. -->
+<script src="js/rescate.js"></script>
+
+<!-- Fuentes propias: cero peticiones a terceros. El preload va SOLO
+     para la display, que es la del titular de la portada. -->
+<link rel="preload" href="assets/fuentes/fredoka-var-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="assets/fuentes.css">
+<link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+
+<div class="propuesta">
+  <p class="propuesta__que">Propuesta de sitio web — preparada para <b>Cabañas Carolina</b> por CristalWeb</p>
+  <p class="propuesta__gancho">169 reseñas y una web antigua que hoy compite en contra: el que la abre en el teléfono se va a otra cabaña.</p>
+</div>
+
+<header class="cab" id="cab">
+  <a class="cab__marca" href="#portada">
+    <span class="toldo" aria-hidden="true"></span>
+    <span class="cab__nombre">Cabañas Carolina</span>
+  </a>
+  <nav class="cab__nav" aria-label="Secciones">
+    <a href="#unidades">La cabaña exacta</a>
+    <a href="#incluye">Qué incluye</a>
+  </nav>
+  <a class="cab__tel" href="tel:+56968459934">
+    <span class="cab__tel-rot">Licán Ray</span>
+    <span class="cab__tel-num">+56 9 6845 9934</span>
+  </a>
+</header>
+
+<main>
+
+<!-- ========= PORTADA ========= -->
+<section class="portada portada--foto" id="portada" aria-labelledby="t-portada">
+  <!-- FONDO DE PORTADA: 2560 px, nitido. Se disuelve hacia el titular
+       con un gradiente lateral, no con desenfoque. -->
+  <div class="portada__foto" aria-hidden="true">
+    <img src="imagenes/port-01.jpg" width="2560" height="1707"
+         decoding="async" fetchpriority="high" alt="">
+  </div>
+
+  <div class="sombra" aria-hidden="true"></div>
+
+  <div class="portada__texto">
+    <p class="sitio">Cabañas · Licán Ray</p>
+    <h1 id="t-portada">¿La del anuncio<br>es la que me dan?</h1>
+    <p class="bajada">Es la desconfianza de fondo de todo el rubro, y la razón por la
+      que alguien reserva en otro lado aunque le guste más la foto. Se cura con una
+      cosa: que cada cabaña tenga su propia ficha.</p>
+    <dl class="specs">
+      <div class="spec"><dt>reseñas en Google</dt><dd>169</dd></div>
+      <div class="spec"><dt>teléfono</dt><dd class="dd--tel"><a href="tel:+56968459934">+56 9 6845 9934</a></dd></div>
+    </dl>
+  </div>
+</section>
+
+<!-- ========= LA WEB ANTIGUA ========= -->
+<section class="vieja" aria-labelledby="t-vieja">
+  <div class="aura" aria-hidden="true">
+    <img src="imagenes/aura-01.jpg" width="900" height="596" decoding="async" alt="">
+  </div>
+
+  <div class="vieja__cuerpo">
+    <p class="antetitulo">El problema que ya está pagado</p>
+    <h2 id="t-vieja">Tienen web,<br>y ése es el problema</h2>
+    <p class="entrada">No tener página es un vacío. Tener una antigua es peor: el
+      cliente la abre, la ve vieja, y decide en tres segundos que el lugar también lo
+      es. Con 169 reseñas ganadas atendiendo bien, eso es plata que se pierde en la
+      puerta.</p>
+
+    <ul class="fallas">
+      <li>
+        <p class="falla__t">Se abre mal en el teléfono</p>
+        <p class="falla__d">Ocho de cada diez personas van a mirarla desde el
+          celular, casi siempre acostadas, casi siempre de noche. Si hay que hacer
+          zoom para leer un precio, no se lee.</p>
+        <p class="falla__v"><span class="falta">falta: comprobar cómo se ve hoy</span></p>
+      </li>
+      <li>
+        <p class="falla__t">Las fotos tienen años</p>
+        <p class="falla__d">Y eso es literalmente el argumento contrario al que
+          necesitan: si la foto es vieja, el cliente asume que la cabaña que le van
+          a dar no es la de la foto.</p>
+        <p class="falla__v"><span class="falta">falta: comprobar de cuándo son</span></p>
+      </li>
+      <li>
+        <p class="falla__t">Nadie puede actualizarla solo</p>
+        <p class="falla__d">Es el problema de fondo. Una página que hay que pedirle
+          a alguien que cambie termina quedándose con los precios del año pasado.</p>
+        <p class="falla__v"><span class="falta">falta: confirmar quién la maneja</span></p>
+      </li>
+    </ul>
+
+    <p class="nota-honesta">Antes de la llamada conviene abrir su página en el
+      teléfono y anotar exactamente qué falla. <b>Esta lista está armada; los tres
+      renglones vacíos se llenan mirándola dos minutos.</b></p>
+  </div>
+</section>
+
+<!-- ========= LA PIEZA FIRMA — LA CABAÑA EXACTA ========= -->
+<!-- ========= MEDIA PANTALLA ========= -->
+<section class="mitades" aria-labelledby="t-mitades">
+  <div class="mitades__foto">
+    <img src="imagenes/media-01.jpg" width="1200" height="1595"
+         loading="lazy" decoding="async" alt="">
+  </div>
+  <div class="mitades__texto">
+    <p class="mitades__ante">La única foto suya que hay en internet</p>
+    <h2 id="t-mitades">El terreno es esto: pasto, árboles y las cabañas atrás</h2>
+    <p>Es la única imagen de Cabañas Carolina que no lleva la marca de agua de un portal de terceros. Dice lo esencial —terreno grande, cabañas separadas, sombra— y con eso ya compite. Cuatro fotos más, sacadas con el teléfono en una tarde, y esta página deja de depender de imágenes prestadas para contar algo que ellos tienen y se ve bien.</p>
+  </div>
+</section>
+
+<section class="unidades con-telon" id="unidades" aria-labelledby="t-unidades">
+  <div class="telon" aria-hidden="true">
+    <img src="imagenes/telon-01.jpg" width="1200" height="800" decoding="async" alt="">
+  </div>
+
+  <div class="unidades__cabecera">
+    <p class="antetitulo">Una ficha por cabaña</p>
+    <h2 id="t-unidades">La cabaña<br>exacta</h2>
+    <p class="entrada">Cuando todas las cabañas se muestran juntas, el cliente asume
+      lo peor: que le van a dar la más chica. Cuando cada una tiene su ficha —con su
+      número, su capacidad y sus fotos—, el que reserva sabe qué le van a entregar y
+      deja de regatear.</p>
+    <p class="marca-ejemplo" data-ejemplo="Fichas de estructura — cuántas unidades son y qué tiene cada una lo pone el local"></p>
+  </div>
+
+  <div class="fichas">
+    <article class="ficha">
+      <div class="ficha__cab">
+        <p class="ficha__n">Cabaña 1</p>
+        <p class="ficha__cap"><span class="falta">falta: para cuántos</span></p>
+      </div>
+      <dl class="ficha__specs">
+        <div class="sp"><dt>Camas</dt><dd><span class="falta">falta</span></dd></div>
+        <div class="sp"><dt>Baños</dt><dd><span class="falta">falta</span></dd></div>
+        <div class="sp"><dt>Cocina</dt><dd><span class="falta">falta: equipada o básica</span></dd></div>
+        <div class="sp"><dt>Calefacción</dt><dd><span class="falta">falta: leña o eléctrica</span></dd></div>
+        <div class="sp"><dt>Terraza</dt><dd><span class="falta">falta</span></dd></div>
+        <div class="sp"><dt>Lo que NO tiene</dt><dd><span class="falta">falta</span></dd></div>
+      </dl>
+      <p class="ficha__pie">Esta última línea es la que más confianza da y la que
+        nunca escribe nadie.</p>
+    </article>
+
+    <article class="ficha">
+      <div class="ficha__cab">
+        <p class="ficha__n">Cabaña 2</p>
+        <p class="ficha__cap"><span class="falta">falta: para cuántos</span></p>
+      </div>
+      <dl class="ficha__specs">
+        <div class="sp"><dt>Camas</dt><dd><span class="falta">falta</span></dd></div>
+        <div class="sp"><dt>Baños</dt><dd><span class="falta">falta</span></dd></div>
+        <div class="sp"><dt>Cocina</dt><dd><span class="falta">falta</span></dd></div>
+        <div class="sp"><dt>Calefacción</dt><dd><span class="falta">falta</span></dd></div>
+        <div class="sp"><dt>Terraza</dt><dd><span class="falta">falta</span></dd></div>
+        <div class="sp"><dt>Lo que NO tiene</dt><dd><span class="falta">falta</span></dd></div>
+      </dl>
+      <p class="ficha__pie">Si dos cabañas son idénticas, se dice: «la 2 es igual a
+        la 1». También es un dato.</p>
+    </article>
+
+    <article class="ficha ficha--vacia">
+      <p class="ficha__mas">+</p>
+      <p class="ficha__mast">Las demás unidades</p>
+      <p class="ficha__masd"><span class="falta">falta: confirmar cuántas cabañas
+        son</span> — no las invento. Cada una lleva su ficha igual a las de al
+        lado, y la página crece copiando el bloque.</p>
+    </article>
+  </div>
+
+  <div class="ojo">
+    <p><b>Por qué una foto por cabaña y no un álbum general.</b> Un álbum bonito
+      genera la duda; seis fotos etiquetadas «Cabaña 3» la eliminan. El cliente no
+      pide la mejor cabaña: pide la que vio. Y si la que vio es la que recibe, no
+      hay reclamo posible.</p>
+  </div>
+</section>
+
+<!-- ========= LO QUE INCLUYE Y LO QUE NO ========= -->
+<section class="incluye" id="incluye" aria-labelledby="t-incluye">
+  <div class="incluye__cuerpo">
+    <p class="antetitulo antetitulo--claro">La otra mitad de la desconfianza</p>
+    <h2 id="t-incluye">Lo que incluye<br>y lo que no</h2>
+    <p class="entrada">Llegar y descubrir que la leña se paga aparte arruina la
+      llegada, por poco que cueste. No es el monto: es la sorpresa. Escrito antes,
+      nadie reclama.</p>
+
+    <dl class="huecos">
+      <div class="hueco">
+        <dt>Ropa de cama y toallas</dt>
+        <dd><span class="falta">falta: incluidas o se llevan</span>
+          <span class="hueco__pq">La primera pregunta de toda familia que arma el
+            auto.</span></dd>
+      </div>
+      <div class="hueco">
+        <dt>Leña</dt>
+        <dd><span class="falta">falta: incluida, se vende o se lleva</span>
+          <span class="hueco__pq">En la zona esto se pregunta siempre y casi nunca
+            está publicado.</span></dd>
+      </div>
+      <div class="hueco">
+        <dt>Estacionamiento</dt>
+        <dd><span class="falta">falta: cuántos autos por cabaña</span>
+          <span class="hueco__pq">En verano en Licán Ray, esto decide.</span></dd>
+      </div>
+      <div class="hueco">
+        <dt>Cocina: qué hay de verdad</dt>
+        <dd><span class="falta">falta</span>
+          <span class="hueco__pq">Ollas, horno, hervidor, refrigerador. Una lista
+            corta evita que alguien llegue con la compra hecha y no pueda
+            cocinarla.</span></dd>
+      </div>
+      <div class="hueco">
+        <dt>Mascotas</dt>
+        <dd><span class="falta">falta: sí / no / con aviso</span>
+          <span class="hueco__pq">Un sí escrito trae clientes que hoy ni preguntan.
+            Un no escrito evita una discusión en la puerta.</span></dd>
+      </div>
+      <div class="hueco">
+        <dt>Horarios de llegada y salida</dt>
+        <dd><span class="falta">falta</span>
+          <span class="hueco__pq">Y si se puede llegar de noche, que en un pueblo
+            de lago no es obvio.</span></dd>
+      </div>
+    </dl>
+
+    <p class="nota-honesta">Ninguna de estas seis respuestas cuesta plata. Las seis
+      juntas son la diferencia entre una reserva que se cierra por WhatsApp en dos
+      mensajes y una que se pierde en el tercero.</p>
+  </div>
+</section>
+
+<!-- ========= EL CIERRE — T1 ========= -->
+<!-- ========= LA CITA A SANGRE ========= -->
+<section class="cita" aria-labelledby="t-cita">
+  <div class="cita__foto" aria-hidden="true">
+    <img src="imagenes/cita-01.jpg" width="2560" height="1714"
+         loading="lazy" decoding="async" alt="">
+  </div>
+  <blockquote class="cita__texto">
+    <p id="t-cita">Sombra en enero, que es cuando hace falta<br>
+      <span class="cita__eco">Los árboles no se plantan en temporada</span></p>
+  </blockquote>
+</section>
+
+
+
+<!-- ========= TAJO — FRANJA A SANGRE ========= -->
+<div class="tajo" aria-hidden="true">
+  <img src="imagenes/banda-01.jpg" width="950" height="570"
+       loading="lazy" decoding="async" alt="">
+</div>
+<section class="cierre" id="llamar" aria-labelledby="t-cierre">
+  <p class="cierre__rot">Para reservar, hoy hay que llamar</p>
+  <h2 id="t-cierre" class="cierre__tel">
+    <a href="tel:+56968459934">+56 9 6845 9934</a>
+  </h2>
+  <p class="cierre__pie">Es el número publicado en su ficha de Google. Esta página
+    existe para que la mitad de esas llamadas dejen de ser preguntas que ya podrían
+    estar contestadas.</p>
+</section>
+
+<!-- ========= LA TIRA ========= -->
+<section class="tira" aria-label="Tres imágenes del oficio">
+  <figure class="tira__pieza">
+    <img src="imagenes/tira-01.jpg" width="950" height="570" loading="lazy" decoding="async" alt="Un cerco de campo entre la neblina, al amanecer.">
+  </figure>
+  <figure class="tira__pieza">
+    <img src="imagenes/tira-02.jpg" width="950" height="633" loading="lazy" decoding="async" alt="Una pradera con árboles y el cielo nublado encima.">
+  </figure>
+  <figure class="tira__pieza">
+    <img src="imagenes/tirb-01.jpg" width="1000" height="750" loading="lazy" decoding="async" alt="Un lago con el bosque reflejado en el agua.">
+  </figure>
+</section>
+
+</main>
+
+
+
+<!-- ========= MOSAICO ========= -->
+<section class="mos" aria-labelledby="t-mos">
+  <h2 id="t-mos" class="mos__titulo">La misma serie, más de cerca</h2>
+  <p class="mos__nota">Estas seis ya aparecen más arriba en la página. Vuelven acá en otro tamaño porque una sola pasada de imágenes deja el scroll vacío, y porque de cerca se ven cosas que en grande se pierden. La procedencia de cada una está en imagenes/FUENTES.txt.</p>
+  <div class="mos__grilla">
+    <figure class="mos__p">
+      <img src="imagenes/mos-01.jpg" width="780" height="1037"
+           loading="lazy" decoding="async" alt="">
+    </figure>
+    <figure class="mos__p">
+      <img src="imagenes/mos-02.jpg" width="780" height="585"
+           loading="lazy" decoding="async" alt="">
+    </figure>
+    <figure class="mos__p">
+      <img src="imagenes/mos-03.jpg" width="780" height="468"
+           loading="lazy" decoding="async" alt="">
+    </figure>
+    <figure class="mos__p">
+      <img src="imagenes/mos-04.jpg" width="780" height="520"
+           loading="lazy" decoding="async" alt="">
+    </figure>
+    <figure class="mos__p">
+      <img src="imagenes/mos-05.jpg" width="780" height="520"
+           loading="lazy" decoding="async" alt="">
+    </figure>
+    <figure class="mos__p">
+      <img src="imagenes/mos-06.jpg" width="780" height="522"
+           loading="lazy" decoding="async" alt="">
+    </figure>
+  </div>
+</section>
+<section class="dueno" aria-labelledby="t-dueno">
+  <h2 id="t-dueno">Para el dueño</h2>
+  <div class="dueno__cols">
+    <div>
+      <h3>Lo que está verificado</h3>
+      <p>Las 169 reseñas de su ficha de Google, el teléfono +56 9 6845 9934, y que
+        tienen una página web antigua.</p>
+    </div>
+    <div>
+      <h3>Lo que no inventé</h3>
+      <p>Cuántas cabañas son. Las dos fichas están puestas para mostrar la forma; la
+        tercera caja dice a propósito que faltan las demás. Poner un número
+        equivocado en internet es peor que no poner ninguno.</p>
+    </div>
+    <div>
+      <h3>Lo que falta</h3>
+      <p>Las unidades con su capacidad, qué incluye cada una, y una foto por cabaña
+        etiquetada con su número. Eso último es lo que contesta la pregunta del
+        titular.</p>
+    </div>
+  </div>
+  <p class="dueno__cierre">
+    <a class="flecha" href="https://wa.me/56968650001" rel="noopener">Escribirme por WhatsApp <span aria-hidden="true">→</span></a>
+    <a class="flecha" href="../../" rel="noopener">Ver otros trabajos <span aria-hidden="true">→</span></a>
+  </p>
+</section>
+
+<footer class="pie">
+  <p>Sitio de demostración preparado por CristalWeb. El negocio no lo ha encargado
+    ni ha revisado su contenido.</p>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>

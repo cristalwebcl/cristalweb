@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="es-CL" class="no-js">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Cabañas El Vecino — Coñaripe</title>
+<meta name="description" content="Cabañas en Coñaripe. Cómo es la llegada y los datos del pueblo que sólo sabe alguien de acá.">
+
+<!-- Política de seguridad de contenido: el navegador sólo puede cargar
+     archivos de este mismo sitio. Sin CDN, sin librerías, sin rastreadores.
+     Ver skills/web-blindada/references/csp-en-pages.md -->
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self'; img-src 'self' data:; font-src 'self'; connect-src 'self'; media-src 'self'; form-action 'self'; base-uri 'none'; frame-src 'none'; object-src 'none'">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+
+<!-- Rescate de la clase .js (regla 2 de la casa). En archivo, sin defer:
+     inline lo bloquearía la CSP. -->
+<script src="js/rescate.js"></script>
+
+<!-- Fuentes propias: cero peticiones a terceros. El preload va SOLO
+     para la display, que es la del titular de la portada. -->
+<link rel="preload" href="assets/fuentes/grandstander-var-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="assets/fuentes.css">
+<link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+
+<div class="propuesta">
+  <p class="propuesta__que">Propuesta de sitio web — preparada para <b>Cabañas El Vecino</b> por CristalWeb</p>
+  <p class="propuesta__gancho">Se llaman El Vecino y con 124 reseñas y 4,8 se nota que es literal. Pero en internet son tan desconocidos como cualquiera.</p>
+</div>
+
+<header class="cab" id="cab">
+  <a class="cab__marca" href="#portada">
+    <span class="ventana" aria-hidden="true"></span>
+    <span class="cab__nombre">El Vecino</span>
+  </a>
+  <nav class="cab__nav" aria-label="Secciones">
+    <a href="#llegada">La llegada</a>
+    <a href="#dato">El dato del lugar</a>
+  </nav>
+  <a class="cab__tel" href="tel:+56994032480">
+    <span class="cab__tel-rot">Coñaripe</span>
+    <span class="cab__tel-num">+56 9 9403 2480</span>
+  </a>
+</header>
+
+<main>
+
+<!-- ══════ ESTRUCTURA E — la llegada, lámina por lámina ══════ -->
+
+<!-- ── LÁMINA 0 · la portada ── -->
+<section class="lam lam--portada portada--foto" id="portada" aria-labelledby="t-portada">
+  <!-- FONDO DE PORTADA: 2560 px, nitido. Se disuelve hacia el titular
+       con un gradiente lateral, no con desenfoque. -->
+  <div class="portada__foto" aria-hidden="true">
+    <img src="imagenes/port-01.jpg" width="2560" height="1707"
+         decoding="async" fetchpriority="high" alt="">
+  </div>
+
+  <div class="pueblo" aria-hidden="true">
+    <span class="luz luz--1"></span>
+    <span class="luz luz--2"></span>
+    <span class="luz luz--3"></span>
+  </div>
+
+  <div class="lam__texto">
+    <p class="sitio">Cabañas · Coñaripe</p>
+    <h1 id="t-portada">Llegar donde<br>alguien te<br>está esperando</h1>
+    <p class="bajada">Un portal de reservas le entrega una llave y un código. Un
+      vecino le dice dónde comprar pan a las ocho. Esa diferencia es todo el negocio,
+      y hoy no está escrita en ninguna parte.</p>
+    <dl class="specs">
+      <div class="spec"><dt>nota en Google</dt><dd>4,8</dd></div>
+      <div class="spec"><dt>reseñas</dt><dd>124</dd></div>
+      <div class="spec"><dt>teléfono</dt><dd class="dd--tel"><a href="tel:+56994032480">+56 9 9403 2480</a></dd></div>
+    </dl>
+  </div>
+</section>
+
+<!-- ── LÁMINA 1 · llegar ── -->
+<section class="lam lam--01 con-telon" id="llegada" aria-labelledby="t-llegar">
+  <div class="telon" aria-hidden="true">
+    <img src="imagenes/telon-01.jpg" width="1200" height="800" decoding="async" alt="">
+  </div>
+
+  <!-- AURA DE COLOR: la foto de rubro reventada a desenfoque. No se lee
+       como imagen: aporta color y luz detras de una seccion que si no
+       seria fondo plano. Aca el desenfoque SI es el efecto, no un parche,
+       y por eso el archivo va chico: a 64 px de blur, mas resolucion no
+       cambia nada. Sin loading=lazy porque el elemento va en absoluto con
+       z-index negativo y el navegador nunca lo considera visible. -->
+  <div class="aura" aria-hidden="true">
+    <img src="imagenes/aura-01.jpg" width="900" height="1350" decoding="async" alt="">
+  </div>
+
+  <div class="lam__texto">
+    <p class="paso">Paso 01</p>
+    <h2 id="t-llegar">Llegar</h2>
+    <p class="entrada">La llegada es la única parte del arriendo que el cliente
+      recuerda entera. Si sale bien, la estadía ya empezó bien; si sale mal, no hay
+      cabaña que lo arregle.</p>
+
+    <dl class="huecos">
+      <div class="hueco">
+        <dt>Hasta qué hora se puede llegar</dt>
+        <dd><span class="falta">falta</span>
+          <span class="hueco__pq">La familia que sale de Santiago a las once de la
+            mañana llega de noche. Saber que igual los reciben decide la
+            reserva.</span></dd>
+      </div>
+      <div class="hueco">
+        <dt>Qué hay que avisar antes</dt>
+        <dd><span class="falta">falta</span>
+          <span class="hueco__pq">La hora aproximada, cuántos son, si vienen con
+            perro. Tres cosas dichas antes evitan diez mensajes.</span></dd>
+      </div>
+      <div class="hueco">
+        <dt>Dónde se estaciona</dt>
+        <dd><span class="falta">falta</span>
+          <span class="hueco__pq">Y si el auto queda al lado de la cabaña, que es
+            un dato que la gente valora más de lo que parece.</span></dd>
+      </div>
+    </dl>
+  </div>
+</section>
+
+<!-- ── LÁMINA 2 · la llave ── -->
+<section class="lam lam--02" aria-labelledby="t-llave">
+  <div class="lam__texto">
+    <p class="paso">Paso 02</p>
+    <h2 id="t-llave">La llave</h2>
+    <p class="entrada">Acá está la diferencia entre un arriendo y un vecino: quién
+      entrega la llave y qué pasa en ese momento. Un recorrido de dos minutos por la
+      cabaña vale más que cualquier manual pegado en la pared.</p>
+
+    <dl class="huecos">
+      <div class="hueco">
+        <dt>Quién recibe</dt>
+        <dd><span class="falta">falta: confirmar</span>
+          <span class="hueco__pq">Si recibe el dueño en persona, eso ES el
+            argumento de venta y tiene que estar escrito con esas palabras.</span></dd>
+      </div>
+      <div class="hueco">
+        <dt>El recorrido de dos minutos</dt>
+        <dd><span class="falta">falta: confirmar si lo hacen</span>
+          <span class="hueco__pq">Dónde está el tablero, cómo se prende el agua
+            caliente, cuál llave abre qué. Dos minutos que ahorran una llamada a
+            medianoche.</span></dd>
+      </div>
+      <div class="hueco">
+        <dt>Un teléfono para cualquier cosa</dt>
+        <dd>+56 9 9403 2480
+          <span class="hueco__pq">Éste sí está. Que exista un número que contesta
+            es la mitad de lo que un portal no puede ofrecer.</span></dd>
+      </div>
+    </dl>
+  </div>
+</section>
+
+<!-- ── LÁMINA 3 · la leña ── -->
+<section class="lam lam--03" aria-labelledby="t-lena">
+  <div class="lam__texto">
+    <p class="paso">Paso 03</p>
+    <h2 id="t-lena">La leña</h2>
+    <p class="entrada">En la zona esto se pregunta siempre y casi nunca está
+      publicado. No es el costo: es no saber si hay que salir a buscarla a las nueve
+      de la noche, con los niños ya cansados.</p>
+
+    <dl class="huecos">
+      <div class="hueco">
+        <dt>Si viene incluida</dt>
+        <dd><span class="falta">falta: incluida, se vende o se lleva</span>
+          <span class="hueco__pq">Las tres respuestas son buenas. La mala es
+            ninguna.</span></dd>
+      </div>
+      <div class="hueco">
+        <dt>Si la estufa queda prendida</dt>
+        <dd><span class="falta">falta</span>
+          <span class="hueco__pq">Llegar a una cabaña ya tibia en julio es el tipo
+            de detalle por el que la gente escribe una reseña de cinco
+            estrellas.</span></dd>
+      </div>
+      <div class="hueco">
+        <dt>Cómo se prende</dt>
+        <dd><span class="falta">falta</span>
+          <span class="hueco__pq">Media clientela viene de ciudad y nunca ha
+            prendido una salamandra. Explicarlo sin hacerlo sentir tonto es parte
+            del trato de vecino.</span></dd>
+      </div>
+    </dl>
+  </div>
+</section>
+
+<!-- ── LÁMINA 4 · LA PIEZA FIRMA ── -->
+<!-- ========= MEDIA PANTALLA ========= -->
+<section class="mitades" aria-labelledby="t-mitades">
+  <div class="mitades__foto">
+    <img src="imagenes/media-01.jpg" width="1500" height="1125"
+         loading="lazy" decoding="async" alt="">
+  </div>
+  <div class="mitades__texto">
+    <p class="mitades__ante">La foto que ya tienen y no usan</p>
+    <h2 id="t-mitades">El atardecer desde el pasto, a pasos de la cabaña</h2>
+    <p>Esta foto está en su Facebook y no está en su ficha de Google, que es donde la gente busca. Es el Calafquén al atardecer desde el pasto de ellos: no una postal comprada, no un render. Quien duda entre dos cabañas de precio parecido elige la que le muestra dónde va a estar a las nueve de la tarde. Mover esta foto de un lado al otro no cuesta nada y es lo primero que hay que hacer.</p>
+  </div>
+</section>
+
+<section class="lam lam--firma" id="dato" aria-labelledby="t-dato">
+  <div class="lam__texto lam__texto--ancho">
+    <p class="paso">Paso 04</p>
+    <h2 id="t-dato">El dato<br>del lugar</h2>
+    <p class="entrada">Esto es lo que un portal de reservas no puede escribir nunca,
+      porque no vive acá. Son las seis cosas que el dueño le cuenta a todo el que
+      llega, y que hoy se pierden si el cliente no pregunta.</p>
+    <p class="marca-ejemplo" data-ejemplo="Las preguntas son las reales — las respuestas las pone el dueño, que es el único que las sabe"></p>
+
+    <ol class="datos">
+      <li class="dato">
+        <p class="dato__q">Dónde se compra pan temprano</p>
+        <p class="dato__a"><span class="falta">falta: confirmar con el dueño</span></p>
+        <p class="dato__pq">La primera mañana, alguien sale a buscar pan y no sabe
+          adónde ir. Es el dato más pedido de todos los arriendos del sur.</p>
+      </li>
+      <li class="dato">
+        <p class="dato__q">A quién pedirle leña si falta</p>
+        <p class="dato__a"><span class="falta">falta: confirmar con el dueño</span></p>
+        <p class="dato__pq">Un nombre y un teléfono. Con eso el huésped resuelve
+          solo y no llama a las once de la noche.</p>
+      </li>
+      <li class="dato">
+        <p class="dato__q">Qué días hay feria y cuáles no</p>
+        <p class="dato__a"><span class="falta">falta: confirmar con el dueño</span></p>
+        <p class="dato__pq">Ir a la feria el día que no hay es la clase de paseo
+          perdido que arruina una tarde.</p>
+      </li>
+      <li class="dato">
+        <p class="dato__q">Dónde hay cajero y si conviene traer efectivo</p>
+        <p class="dato__a"><span class="falta">falta: confirmar con el dueño</span></p>
+        <p class="dato__pq">En pueblos chicos esto es una pregunta real y nadie la
+          contesta antes de que el cliente esté acá.</p>
+      </li>
+      <li class="dato">
+        <p class="dato__q">Qué hacer si llueve tres días seguidos</p>
+        <p class="dato__a"><span class="falta">falta: confirmar con el dueño</span></p>
+        <p class="dato__pq">La pregunta de todo el que arrienda en invierno. Dos o
+          tres panoramas bajo techo, dichos por alguien de acá, valen una reserva
+          entera.</p>
+      </li>
+      <li class="dato">
+        <p class="dato__q">El lugar que no sale en ninguna guía</p>
+        <p class="dato__a"><span class="falta">falta: confirmar con el dueño</span></p>
+        <p class="dato__pq">Todo pueblo tiene uno. Contarlo es lo que hace que un
+          huésped vuelva y traiga gente.</p>
+      </li>
+    </ol>
+
+    <p class="firma">Ninguna de estas seis respuestas la puedo escribir yo, y
+      justamente por eso es la mejor sección de la página: es la única que ningún
+      competidor ni ningún portal puede copiar, porque hay que vivir acá para
+      contestarla.</p>
+  </div>
+</section>
+
+<!-- ── EL CIERRE — T1 ── -->
+<!-- ========= LA CITA A SANGRE ========= -->
+<section class="cita" aria-labelledby="t-cita">
+  <div class="cita__foto" aria-hidden="true">
+    <img src="imagenes/cita-01.jpg" width="2000" height="3000"
+         loading="lazy" decoding="async" alt="">
+  </div>
+  <blockquote class="cita__texto">
+    <p id="t-cita">La luz encendida cuando llega<br>
+      <span class="cita__eco">Alguien pasó antes a prenderla</span></p>
+  </blockquote>
+</section>
+
+
+
+<!-- ========= TAJO — FRANJA A SANGRE ========= -->
+<div class="tajo" aria-hidden="true">
+  <img src="imagenes/banda-01.jpg" width="1300" height="731"
+       loading="lazy" decoding="async" alt="">
+</div>
+<section class="cierre" id="llamar" aria-labelledby="t-cierre">
+  <p class="cierre__rot">Para reservar, hoy se llama</p>
+  <h2 id="t-cierre" class="cierre__tel">
+    <a href="tel:+56994032480">+56 9 9403 2480</a>
+  </h2>
+  <p class="cierre__pie">Es el número publicado en su ficha de Google. Que conteste
+    una persona y no un formulario es la parte buena; que sea la única forma de
+    saber algo es la que esta página viene a arreglar.</p>
+</section>
+
+<!-- ========= LAS FOTOS ========= -->
+<section class="galeria" aria-labelledby="t-galeria">
+  <h2 id="t-galeria" class="galeria__titulo">Lo suyo, empezando por el logo</h2>
+  <p class="galeria__nota">Las tres con pie son suyas, de su Facebook. Sólo el fondo de la portada, el aura y la cita son de banco libre, y están declarados en imagenes/FUENTES.txt.</p>
+  <div class="galeria__grilla">
+    <figure class="gal gal--izq">
+      <img src="imagenes/gal-03.jpg" width="1300" height="1300" loading="lazy" decoding="async"
+           alt="Logo del negocio: una casa y una montaña dibujadas a una línea blanca, sobre ondas de agua, con el bosque en niebla de fondo.">
+      <figcaption>El logo. Casa, montaña y lago en cuatro trazos: ya está hecho y no aparece en su ficha de Google.</figcaption>
+    </figure>
+    <figure class="gal gal--der">
+      <img src="imagenes/gal-02.jpg" width="1300" height="1300" loading="lazy" decoding="async"
+           alt="La cabaña roja con su puerta de madera y la antena en el techo.">
+      <figcaption>La cabaña por fuera. Roja, de madera, sin pretensiones: exactamente lo que dice la página.</figcaption>
+    </figure>
+    <figure class="gal gal--abajo">
+      <img src="imagenes/gal-01.jpg" width="1300" height="731" loading="lazy" decoding="async"
+           alt="Coñaripe visto desde arriba, con el pueblo entre los árboles y el lago al fondo.">
+      <figcaption>Coñaripe entero. El pueblo cabe en una foto, y ellos están adentro.</figcaption>
+    </figure>
+  </div>
+  <p class="galeria__falta">falta: la cabaña por fuera de noche, con la luz encendida — es la foto que la página promete</p>
+</section>
+
+<!-- ========= LA TIRA ========= -->
+<section class="tira" aria-label="Tres imágenes del oficio">
+  <figure class="tira__pieza">
+    <img src="imagenes/tira-01.jpg" width="1000" height="1000" loading="lazy" decoding="async" alt="Dormitorio con camarote y paredes de madera.">
+  </figure>
+  <figure class="tira__pieza">
+    <img src="imagenes/tira-02.jpg" width="1000" height="1000" loading="lazy" decoding="async" alt="El living, con sus sofás y la mesa de centro.">
+  </figure>
+  <figure class="tira__pieza">
+    <img src="imagenes/tira-03.jpg" width="1000" height="1000" loading="lazy" decoding="async" alt="El segundo piso abuhardillado, con las camas bajo el techo inclinado.">
+  </figure>
+</section>
+
+</main>
+
+
+
+<!-- ========= MOSAICO ========= -->
+<section class="mos" aria-labelledby="t-mos">
+  <h2 id="t-mos" class="mos__titulo">La misma serie, más de cerca</h2>
+  <p class="mos__nota">Estas seis ya aparecen más arriba en la página. Vuelven acá en otro tamaño porque una sola pasada de imágenes deja el scroll vacío, y porque de cerca se ven cosas que en grande se pierden. La procedencia de cada una está en imagenes/FUENTES.txt.</p>
+  <div class="mos__grilla">
+    <figure class="mos__p">
+      <img src="imagenes/mos-01.jpg" width="780" height="585"
+           loading="lazy" decoding="async" alt="">
+    </figure>
+    <figure class="mos__p">
+      <img src="imagenes/mos-02.jpg" width="780" height="439"
+           loading="lazy" decoding="async" alt="">
+    </figure>
+    <figure class="mos__p">
+      <img src="imagenes/mos-03.jpg" width="780" height="780"
+           loading="lazy" decoding="async" alt="">
+    </figure>
+    <figure class="mos__p">
+      <img src="imagenes/mos-04.jpg" width="780" height="780"
+           loading="lazy" decoding="async" alt="">
+    </figure>
+    <figure class="mos__p">
+      <img src="imagenes/mos-05.jpg" width="780" height="780"
+           loading="lazy" decoding="async" alt="">
+    </figure>
+    <figure class="mos__p">
+      <img src="imagenes/mos-06.jpg" width="780" height="780"
+           loading="lazy" decoding="async" alt="">
+    </figure>
+  </div>
+</section>
+<section class="dueno" aria-labelledby="t-dueno">
+  <h2 id="t-dueno">Para el dueño</h2>
+  <div class="dueno__cols">
+    <div>
+      <h3>Lo que está verificado</h3>
+      <p>El 4,8 con 124 reseñas de su ficha de Google y el teléfono
+        +56 9 9403 2480. No tienen página propia.</p>
+    </div>
+    <div>
+      <h3>Lo que no inventé</h3>
+      <p>Ni un solo dato del pueblo. No sé dónde venden pan temprano ni qué día hay
+        feria, y ponerlo mal sería mandar a un huésped a una puerta cerrada. Las
+        seis preguntas están armadas; las respuestas son suyas.</p>
+    </div>
+    <div>
+      <h3>Lo que falta</h3>
+      <p>La dirección, cuántas cabañas son, y esas seis respuestas. La sección del
+        dato local es la que convierte el nombre del negocio en el argumento.</p>
+    </div>
+  </div>
+  <p class="dueno__cierre">
+    <a class="flecha" href="https://wa.me/56968650001" rel="noopener">Escribirme por WhatsApp <span aria-hidden="true">→</span></a>
+    <a class="flecha" href="../../" rel="noopener">Ver otros trabajos <span aria-hidden="true">→</span></a>
+  </p>
+</section>
+
+<footer class="pie">
+  <p>Sitio de demostración preparado por CristalWeb. El negocio no lo ha encargado
+    ni ha revisado su contenido.</p>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>

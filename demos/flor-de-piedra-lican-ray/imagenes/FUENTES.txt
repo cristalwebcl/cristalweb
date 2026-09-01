@@ -1,0 +1,55 @@
+PROCEDENCIA DE LAS IMÁGENES — Cabañas Flor de Piedra, Licán Ray
+════════════════════════════════════════════════════════════════
+
+Ésta es, de lejos, la demo con más material propio del lote: **seis de
+las diez imágenes son del negocio**, y entre ellas está la que vale
+por toda la página — la vista del lago desde la baranda.
+
+DEL NEGOCIO — seis fotos, de su ficha y su Facebook.
+
+media-01.jpg  1500x550   LA VISTA del Calafquén desde la baranda
+tira-01.jpg   1000x750   las cabañas desde el camino interior
+tira-02.jpg   1000x750   el pórtico de entrada
+tira-03.jpg   1000x600   el conjunto desde el empedrado
+gal-01.jpg    1300x501   la vista del lago, apaisada
+gal-02.jpg    1300x975   un dormitorio
+gal-03.jpg    1300x722   la piscina con el lago detrás
+
+Bajadas desde la copia cacheada del buscador, así que el techo son
+1600 px: por eso ninguna ocupa pantalla completa. Van a media pantalla,
+a la tira y a la galería, donde ese tamaño sobra y se ven nítidas.
+
+DESCARTADA: una foto de la piscina con gente, entre ella lo que parece
+un niño con salvavidas. No se usa aunque la haya publicado el propio
+negocio — es la única regla que no se levanta nunca.
+
+────────────────────────────────────────────────────────────────
+GENÉRICAS — tres, de banco libre, sólo de fondo.
+
+Las tres son PIEDRA, y eso es a propósito: el negocio se llama Flor de
+Piedra y la orilla del Calafquén es de canto rodado. No prometen
+ninguna instalación, sólo repiten el nombre.
+
+port-01.jpg  2560x1707  canto rodado oscuro en la orilla
+  pxhere · dominio público (CC0)
+  https://get.pxhere.com/photo/sea-coast-water-rock-ocean-horizon-cloud-shore-wave-stone-underwater-reflection-pebble-bay-coral-reef-reef-shallow-aerial-photography-marine-biology-99119.jpg
+  original 5472x3648
+
+aura-01.jpg  900x675  roca cubierta de musgo y liquen
+  pxhere · dominio público (CC0)
+  https://get.pxhere.com/photo/tree-rock-plant-texture-leaf-stone-moss-green-autumn-soil-terrain-material-ridge-lichen-geology-vegetation-woodland-ecosystem-tundra-bedrock-bright-yellow-greenish-fouling-green-yellow-crust-lichen-olive-green-rock-lichen-landkartenflechte-rhizocarpon-geographicum-bare-rock-thallus-thallophyt-lagerpflanze-lichen-thallus-1347712.jpg
+  original 4000x3000 — a 64 px de desenfoque: sólo aporta el verde
+  liquen, que es el acento de la paleta
+
+cita-01.jpg  2560x1920  piedras de colores bajo el agua clara
+  pxhere · dominio público (CC0)
+  https://get.pxhere.com/photo/sea-rock-shore-pond-stream-pebble-colorful-material-body-of-water-stones-cala-stream-bed-tide-pool-851647.jpg
+  original 3072x2304
+
+────────────────────────────────────────────────────────────────
+LO QUE FALTA
+
+Poco, y por eso esta demo se puede mostrar tal cual. Sumarían dos:
+la vista del lago al atardecer —la misma baranda, otra hora— y una
+cabaña por dentro con luz de tarde. Con esas dos, la página no tendría
+una sola imagen prestada.

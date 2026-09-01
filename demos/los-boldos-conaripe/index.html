@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="es-CL" class="no-js">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Cabañas Los Boldos — Coñaripe</title>
+<meta name="description" content="Cabañas con tinaja en Coñaripe. Cómo funciona la tinaja de verdad: cuánto tarda, con cuánto aviso y para cuántos.">
+
+<!-- Política de seguridad de contenido: el navegador sólo puede cargar
+     archivos de este mismo sitio. Sin CDN, sin librerías, sin rastreadores.
+     Ver skills/web-blindada/references/csp-en-pages.md -->
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self'; img-src 'self' data:; font-src 'self'; connect-src 'self'; media-src 'self'; form-action 'self'; base-uri 'none'; frame-src 'none'; object-src 'none'">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+
+<!-- Rescate de la clase .js (regla 2 de la casa). En archivo, sin defer:
+     inline lo bloquearía la CSP. -->
+<script src="js/rescate.js"></script>
+
+<!-- Fuentes propias: cero peticiones a terceros. El preload va SOLO
+     para la display, que es la del titular de la portada. -->
+<link rel="preload" href="assets/fuentes/josefinsans-var-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="assets/fuentes.css">
+<link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+
+<div class="propuesta">
+  <p class="propuesta__que">Propuesta de sitio web — preparada para <b>Cabañas Los Boldos</b> por CristalWeb</p>
+  <p class="propuesta__gancho">5,0 con 49 reseñas y tienen lo que todo el mundo busca en Coñaripe —tinaja caliente— pero desde Google no se puede saber que existe.</p>
+</div>
+
+<header class="cab" id="cab">
+  <a class="cab__marca" href="#portada">
+    <span class="tinaja" aria-hidden="true"></span>
+    <span class="cab__nombre">Los Boldos</span>
+  </a>
+  <nav class="cab__nav" aria-label="Secciones">
+    <a href="#p1">La tinaja</a>
+    <a href="#despues">Después del agua</a>
+  </nav>
+  <a class="cab__tel" href="tel:+56965527353">
+    <span class="cab__tel-rot">Coordinar tinaja</span>
+    <span class="cab__tel-num">+56 9 6552 7353</span>
+  </a>
+</header>
+
+<!-- ══════ EL TERMÓMETRO — estructura I ══════
+     Es adorno: marca de frío a listo mientras se baja. Sin JS queda
+     en su marca final y no estorba. -->
+<div class="term" id="term" aria-hidden="true">
+  <span class="term__tubo"><span class="term__liquido" id="termLiq"></span></span>
+  <span class="term__bulbo"></span>
+  <span class="term__rot term__rot--alto">listo</span>
+  <span class="term__rot term__rot--bajo">fría</span>
+</div>
+
+<main>
+
+<!-- ========= PORTADA ========= -->
+<section class="portada portada--foto" id="portada" aria-labelledby="t-portada">
+  <!-- FONDO DE PORTADA: 2560 px, nitido. Se disuelve hacia el titular
+       con un gradiente lateral, no con desenfoque. -->
+  <div class="portada__foto" aria-hidden="true">
+    <img src="imagenes/port-01.jpg" width="2560" height="1707"
+         decoding="async" fetchpriority="high" alt="">
+  </div>
+
+  <div class="vapores" aria-hidden="true">
+    <span class="vap vap--1"></span>
+    <span class="vap vap--2"></span>
+  </div>
+
+  <div class="portada__texto">
+    <p class="sitio">Cabañas con tinaja · Coñaripe</p>
+    <h1 id="t-portada">¿A qué hora<br>la tengo lista?</h1>
+    <p class="bajada">Es la pregunta de todo el que arrienda una cabaña con tinaja,
+      y la que decide si la noche sale bien o si termina esperando en pijama a que
+      el agua se caliente. La respuesta no es difícil: es que nadie la escribe.</p>
+    <dl class="specs">
+      <div class="spec"><dt>nota en Google</dt><dd>5,0</dd></div>
+      <div class="spec"><dt>reseñas</dt><dd>49</dd></div>
+      <div class="spec"><dt>teléfono</dt><dd class="dd--tel"><a href="tel:+56965527353">+56 9 6552 7353</a></dd></div>
+    </dl>
+  </div>
+</section>
+
+<!-- ══════ PASO 1 · ENCENDER ══════ -->
+<section class="paso con-telon" id="p1" aria-labelledby="t-p1">
+  <div class="telon" aria-hidden="true">
+    <img src="imagenes/telon-01.jpg" width="1200" height="900" decoding="async" alt="">
+  </div>
+
+  <div class="paso__cuerpo">
+    <p class="paso__n">Paso 01</p>
+    <h2 id="t-p1">Encender</h2>
+    <p class="entrada">La tinaja se calienta a leña. Eso significa que no es un
+      interruptor: alguien tiene que prender el fuego y el agua tiene que subir de
+      temperatura sola, a su ritmo. Todo lo que sigue de esta página existe porque
+      ese ritmo hay que coordinarlo.</p>
+    <p class="marca-ejemplo" data-ejemplo="Las preguntas son las reales del rubro — los tiempos los pone el local"></p>
+
+    <dl class="huecos">
+      <div class="hueco">
+        <dt>Cuántas horas tarda en estar lista</dt>
+        <dd><span class="falta">falta: las horas reales</span>
+          <span class="hueco__pq">Es el dato central de toda la página y el que
+            <b>no voy a inventar por ningún motivo</b>: depende del tamaño de la
+            tinaja, de la leña y del día. Un número equivocado acá arruina la
+            noche que se vino a comprar.</span></dd>
+      </div>
+      <div class="hueco">
+        <dt>Con cuánta anticipación hay que avisar</dt>
+        <dd><span class="falta">falta: el plazo</span>
+          <span class="hueco__pq">«Avisando en la mañana» o «al reservar» son dos
+            respuestas distintas y las dos sirven. Lo que no funciona es que el
+            huésped lo pida al llegar y se entere ahí de que no alcanza.</span></dd>
+      </div>
+      <div class="hueco">
+        <dt>Quién la prende</dt>
+        <dd><span class="falta">falta: confirmar</span>
+          <span class="hueco__pq">Si la prenden ustedes, eso es servicio y hay que
+            decirlo. Si la prende el huésped, hay que explicarle cómo.</span></dd>
+      </div>
+      <div class="hueco">
+        <dt>Si la leña de la tinaja está incluida</dt>
+        <dd><span class="falta">falta</span>
+          <span class="hueco__pq">Es distinta de la leña de la estufa y se consume
+            mucho más rápido. Conviene aclararlo por separado.</span></dd>
+      </div>
+    </dl>
+  </div>
+</section>
+
+<!-- ══════ PASO 2 · TEMPERAR ══════ -->
+<section class="paso paso--medio" id="p2" aria-labelledby="t-p2">
+  <!-- AURA DE COLOR: la foto de rubro reventada a desenfoque. No se lee
+       como imagen: aporta color y luz detras de una seccion que si no
+       seria fondo plano. Aca el desenfoque SI es el efecto, no un parche,
+       y por eso el archivo va chico: a 64 px de blur, mas resolucion no
+       cambia nada. Sin loading=lazy porque el elemento va en absoluto con
+       z-index negativo y el navegador nunca lo considera visible. -->
+  <div class="aura" aria-hidden="true">
+    <img src="imagenes/aura-01.jpg" width="900" height="600" decoding="async" alt="">
+  </div>
+
+  <div class="paso__cuerpo">
+    <p class="paso__n">Paso 02</p>
+    <h2 id="t-p2">Temperar</h2>
+    <p class="entrada">Mientras el agua sube, hay decisiones que ya deberían estar
+      tomadas: cuántos van a entrar, si se puede usar dos veces en el mismo día, y
+      qué pasa si el grupo es más grande de lo que la tinaja aguanta.</p>
+
+    <dl class="huecos">
+      <div class="hueco">
+        <dt>Cuánta gente entra cómoda</dt>
+        <dd><span class="falta">falta: la capacidad</span>
+          <span class="hueco__pq">«Entran seis» y «entran seis cómodos» son cosas
+            distintas. El número honesto evita que una familia de cinco reserve
+            pensando que van a caber todos a la vez.</span></dd>
+      </div>
+      <div class="hueco">
+        <dt>Qué incluye el arriendo de la tinaja</dt>
+        <dd><span class="falta">falta: si va aparte o incluida</span>
+          <span class="hueco__pq">Y si va aparte, cuánto cuesta. Es la pregunta que
+            más se hace por teléfono y la que más incomoda preguntar.</span></dd>
+      </div>
+      <div class="hueco">
+        <dt>Cuánto rato se mantiene caliente</dt>
+        <dd><span class="falta">falta</span>
+          <span class="hueco__pq">Saber que se puede estar dos horas o que hay que
+            aprovechar la primera cambia cómo se organiza la noche.</span></dd>
+      </div>
+      <div class="hueco">
+        <dt>Si hay toallas y dónde cambiarse</dt>
+        <dd><span class="falta">falta</span>
+          <span class="hueco__pq">Salir mojado al frío de Coñaripe en julio con la
+            toalla en la cabaña de al lado es un detalle que se recuerda.</span></dd>
+      </div>
+    </dl>
+  </div>
+</section>
+
+<!-- ══════ PASO 3 · ENTRAR ══════ -->
+<section class="paso paso--listo" id="p3" aria-labelledby="t-p3">
+  <div class="paso__cuerpo">
+    <p class="paso__n">Paso 03</p>
+    <h2 id="t-p3">Entrar</h2>
+    <p class="entrada">Cuando el agua está, está. Lo único que queda por decir es a
+      qué hora conviene entrar y qué reglas hay — que en una tinaja a leña no son
+      capricho: son seguridad, porque hay fuego encendido al lado del agua.</p>
+
+    <dl class="huecos">
+      <div class="hueco">
+        <dt>A qué hora suele quedar lista</dt>
+        <dd><span class="falta">falta</span>
+          <span class="hueco__pq">Con el horario y las horas de calentado, el
+            huésped calcula solo y deja de preguntar.</span></dd>
+      </div>
+      <div class="hueco">
+        <dt>Reglas de uso</dt>
+        <dd><span class="falta">falta: las que ustedes aplican</span>
+          <span class="hueco__pq">Hasta qué hora se puede usar, si se permite
+            bebida adentro, qué no se puede hacer cerca del fuego. Escritas antes,
+            nadie las discute.</span></dd>
+      </div>
+      <div class="hueco">
+        <dt>Si hay que avisar cuando se termina</dt>
+        <dd><span class="falta">falta</span>
+          <span class="hueco__pq">Para apagar el fuego y para que el agua se
+            maneje bien.</span></dd>
+      </div>
+    </dl>
+
+    <div class="ojo">
+      <p><b>Lo que esta página no dice, a propósito.</b> No hay ni una palabra sobre
+        beneficios para la salud, propiedades del agua ni efectos terapéuticos. Una
+        tinaja es descanso, no un tratamiento, y prometer otra cosa en internet es
+        meterse donde no corresponde. Lo que se vende acá es una noche buena, que ya
+        es bastante.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ══════ DESPUÉS DEL AGUA ══════ -->
+<!-- ========= MEDIA PANTALLA ========= -->
+<section class="mitades" aria-labelledby="t-mitades">
+  <div class="mitades__foto">
+    <img src="imagenes/media-01.jpg" width="1300" height="1300"
+         loading="lazy" decoding="async" alt="">
+  </div>
+  <div class="mitades__texto">
+    <p class="mitades__ante">La foto que casi ningún competidor tiene</p>
+    <h2 id="t-mitades">Ésta es la tinaja. La de verdad, no una de catálogo</h2>
+    <p>Hay páginas de cabañas con tinaja que muestran una tinaja de banco de imágenes: se nota, y el que llega se siente estafado antes de entrar. Ésta es la de Los Boldos, con su pérgola, su escalerita y el pasto de al lado. Se calienta a leña y por eso tarda: hay que avisar el día anterior. Eso también está escrito más arriba, porque es la pregunta que llega por WhatsApp todas las semanas.</p>
+  </div>
+</section>
+
+<section class="despues" id="despues" aria-labelledby="t-despues">
+  <div class="despues__cuerpo">
+    <p class="antetitulo antetitulo--claro">La otra mitad de la noche</p>
+    <h2 id="t-despues">Después<br>del agua</h2>
+    <p class="entrada">Salir de la tinaja en julio y encontrarse una cabaña fría
+      arruina todo lo anterior. La secuencia completa —agua, estufa, cama— es el
+      producto de verdad, y contarla así es lo que separa esto de «cabaña con
+      tinaja».</p>
+
+    <ol class="secuencia">
+      <li class="sec">
+        <p class="sec__n">01</p>
+        <div>
+          <h3>El agua</h3>
+          <p>Lo que se vino a hacer. Con el fuego al lado y el frío afuera.</p>
+        </div>
+      </li>
+      <li class="sec">
+        <p class="sec__n">02</p>
+        <div>
+          <h3>La estufa</h3>
+          <p>Que la cabaña esté tibia cuando se sale del agua no es un detalle: es
+            la mitad de la experiencia. <span class="falta">falta: confirmar si la
+            dejan prendida</span></p>
+        </div>
+      </li>
+      <li class="sec">
+        <p class="sec__n">03</p>
+        <div>
+          <h3>La cama</h3>
+          <p>Y dormir. Es todo. Nadie que arrienda una cabaña con tinaja en invierno
+            está buscando otra cosa.</p>
+        </div>
+      </li>
+    </ol>
+
+    <p class="firma">Tres pasos escritos en cinco líneas. Es más argumento de venta
+      que cualquier galería de fotos, y hoy no está en ninguna parte.</p>
+  </div>
+</section>
+
+<!-- ══════ EL CIERRE — T1 ══════ -->
+<!-- ========= LA CITA A SANGRE ========= -->
+<section class="cita" aria-labelledby="t-cita">
+  <div class="cita__foto" aria-hidden="true">
+    <img src="imagenes/cita-01.jpg" width="2560" height="1920"
+         loading="lazy" decoding="async" alt="">
+  </div>
+  <blockquote class="cita__texto">
+    <p id="t-cita">Descanso, no tratamiento<br>
+      <span class="cita__eco">Una tinaja es agua caliente y silencio</span></p>
+  </blockquote>
+</section>
+
+
+
+<!-- ========= TAJO — FRANJA A SANGRE ========= -->
+<div class="tajo" aria-hidden="true">
+  <img src="imagenes/banda-01.jpg" width="1500" height="1000"
+       loading="lazy" decoding="async" alt="">
+</div>
+<section class="cierre" id="llamar" aria-labelledby="t-cierre">
+  <p class="cierre__rot">Para coordinar la tinaja</p>
+  <h2 id="t-cierre" class="cierre__tel">
+    <a href="tel:+56965527353">+56 9 6552 7353</a>
+  </h2>
+  <p class="cierre__pie">Es el número publicado en su ficha de Google. La tinaja se
+    coordina, y eso no es un problema de la página: es cómo funciona una tinaja a
+    leña. Lo que sí puede hacer la página es que se coordine <em>antes</em> y no en
+    la puerta.</p>
+</section>
+
+<!-- ========= LAS FOTOS ========= -->
+<section class="galeria" aria-labelledby="t-galeria">
+  <h2 id="t-galeria" class="galeria__titulo">Lo que sí es de ellos</h2>
+  <p class="galeria__nota">Las fotos de arriba son suyas, sacadas de su propio Facebook. Los fondos de bosque en niebla no lo son y están declarados en imagenes/FUENTES.txt: se pusieron ahí porque una tinaja de banco de imágenes se nota de lejos, y esa sí que no se puso.</p>
+  <div class="galeria__grilla">
+    <figure class="gal gal--izq">
+      <img src="imagenes/gal-02.jpg" width="1150" height="1148" loading="lazy" decoding="async"
+           alt="Letrero de madera al borde del camino: Cabañas Los Boldos con tinajas, y el número de teléfono.">
+      <figcaption>El letrero del camino. Dice «con tinajas» y el teléfono: la mitad del argumento ya está ahí.</figcaption>
+    </figure>
+    <figure class="gal gal--der">
+      <img src="imagenes/gal-01.jpg" width="1150" height="1533" loading="lazy" decoding="async"
+           alt="Domo geodésico oscuro sobre el pasto, con troncos cortados alrededor a modo de asientos.">
+      <figcaption>El domo, con los troncos de asiento alrededor. No aparece en ninguna otra cabaña de la zona.</figcaption>
+    </figure>
+  </div>
+  <p class="galeria__falta">falta: la tinaja llena y humeando, de noche — es la foto que vende la página entera</p>
+</section>
+
+<!-- ========= LA TIRA ========= -->
+<section class="tira" aria-label="Tres imágenes del oficio">
+  <figure class="tira__pieza">
+    <img src="imagenes/tira-01.jpg" width="950" height="1267" loading="lazy" decoding="async" alt="Cabaña de dos pisos pintada de rojo, con jardín al frente.">
+  </figure>
+  <figure class="tira__pieza">
+    <img src="imagenes/tira-02.jpg" width="950" height="950" loading="lazy" decoding="async" alt="Cabaña con revestimiento gris y arbustos florecidos en el pasto.">
+  </figure>
+  <figure class="tira__pieza">
+    <img src="imagenes/tira-03.jpg" width="950" height="950" loading="lazy" decoding="async" alt="Las cabañas vistas desde el camino interior, con los juegos al costado.">
+  </figure>
+</section>
+
+</main>
+
+
+
+<!-- ========= MOSAICO ========= -->
+<section class="mos" aria-labelledby="t-mos">
+  <h2 id="t-mos" class="mos__titulo">La misma serie, más de cerca</h2>
+  <p class="mos__nota">Estas seis ya aparecen más arriba en la página. Vuelven acá en otro tamaño porque una sola pasada de imágenes deja el scroll vacío, y porque de cerca se ven cosas que en grande se pierden. La procedencia de cada una está en imagenes/FUENTES.txt.</p>
+  <div class="mos__grilla">
+    <figure class="mos__p">
+      <img src="imagenes/mos-01.jpg" width="780" height="780"
+           loading="lazy" decoding="async" alt="">
+    </figure>
+    <figure class="mos__p">
+      <img src="imagenes/mos-02.jpg" width="780" height="1040"
+           loading="lazy" decoding="async" alt="">
+    </figure>
+    <figure class="mos__p">
+      <img src="imagenes/mos-03.jpg" width="780" height="779"
+           loading="lazy" decoding="async" alt="">
+    </figure>
+    <figure class="mos__p">
+      <img src="imagenes/mos-04.jpg" width="780" height="780"
+           loading="lazy" decoding="async" alt="">
+    </figure>
+    <figure class="mos__p">
+      <img src="imagenes/mos-05.jpg" width="780" height="780"
+           loading="lazy" decoding="async" alt="">
+    </figure>
+    <figure class="mos__p">
+      <img src="imagenes/mos-06.jpg" width="780" height="1040"
+           loading="lazy" decoding="async" alt="">
+    </figure>
+  </div>
+</section>
+<section class="dueno" aria-labelledby="t-dueno">
+  <h2 id="t-dueno">Para el dueño</h2>
+  <div class="dueno__cols">
+    <div>
+      <h3>Lo que está verificado</h3>
+      <p>El 5,0 con 49 reseñas de su ficha de Google y el teléfono
+        +56 9 6552 7353. No tienen página propia.</p>
+    </div>
+    <div>
+      <h3>Lo que no inventé</h3>
+      <p>Ninguna hora, ninguna capacidad y ninguna temperatura. Y ninguna promesa
+        de salud: una tinaja es descanso, no un tratamiento, y esa línea no se
+        cruza aunque venda.</p>
+    </div>
+    <div>
+      <h3>Lo que falta</h3>
+      <p>Cuánto tarda, con cuánto aviso y para cuántos. Esos tres datos convierten
+        «tenemos tinaja» —que dicen todos— en «la tinaja está lista a las siete si
+        avisa en la mañana», que no lo dice nadie.</p>
+    </div>
+  </div>
+  <p class="dueno__cierre">
+    <a class="flecha" href="https://wa.me/56968650001" rel="noopener">Escribirme por WhatsApp <span aria-hidden="true">→</span></a>
+    <a class="flecha" href="../../" rel="noopener">Ver otros trabajos <span aria-hidden="true">→</span></a>
+  </p>
+</section>
+
+<footer class="pie">
+  <p>Sitio de demostración preparado por CristalWeb. El negocio no lo ha encargado
+    ni ha revisado su contenido. Esta página no atribuye ningún efecto terapéutico
+    ni beneficio para la salud al uso de la tinaja.</p>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
