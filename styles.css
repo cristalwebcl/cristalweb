@@ -1130,3 +1130,26 @@ a.proyecto__vista { display: block; }
 @media (max-width: 760px) {
   .propuestas-cta { grid-template-columns: 1fr; }
 }
+
+/* ── La escena de portada, en las tarjetas de Los Lagos ────────────
+   Sólo la tanda de septiembre de 2026 la tiene, así que la línea vive
+   aparte de .proyecto__nota en vez de meterse dentro: la nota dice qué
+   RESUELVE la página y ésta dice qué se MUEVE, y son dos cosas. */
+.proyecto__escena {
+  margin: 0 0 1rem;
+  font-size: var(--paso--1);
+  line-height: 1.5;
+  color: var(--tenue-mas);
+}
+.proyecto__escena span {
+  display: block;
+  font-family: var(--mono);
+  font-size: .68rem;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+  color: var(--prisma);
+  margin-bottom: .15rem;
+}
+/* La nota deja de estirarse cuando hay escena: si no, empuja la línea
+   de la escena contra los enlaces y las tarjetas quedan disparejas. */
+.proyecto__nota:has(+ .proyecto__escena) { flex: none; margin-bottom: .7rem; }
