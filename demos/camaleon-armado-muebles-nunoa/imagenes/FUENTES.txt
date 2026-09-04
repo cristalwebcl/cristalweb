@@ -1,0 +1,14 @@
+﻿FUENTES DE LAS IMAGENES - camaleon-armado-muebles-nunoa
+Todas de bancos libres (CC0 / licencia libre del banco). Procesadas con preparar-lote.ps1 (JPEG, ancho y calidad por tratamiento).
+
+port-01.jpg  <=  portada/px-3260.jpg | 6594x4401 | https://pxhere.com/en/photo/3260 | https://get.pxhere.com/photo/desk-table-wood-chair-floor-home-property-living-room-furniture-room-work-space-office-space-meeting-room-interior-design-design-hardwood-dining-room-flooring-wood-flooring-laminate-flooring-3260.jpg
+mit-01.jpg  <=  mit2/cm-185945346.jpg | 1836x3264 | CC0 | OboeBlanket | https://commons.wikimedia.org/wiki/File:Messy_office_(boxes).jpg
+cita-01.jpg  <=  cita/px-953769.jpg | 1920x1518 | https://pxhere.com/en/photo/953769 | https://get.pxhere.com/photo/house-floor-interior-home-ceiling-cottage-property-living-room-residential-furniture-room-lifestyle-bedroom-interior-design-living-design-hardwood-farmhouse-estate-contemporary-architectural-real-estate-window-covering-953769.jpg
+tajo-01.jpg  <=  tajo2/cm-147439785.jpg | 3648x2736 | Public domain | abbeyprivate | https://commons.wikimedia.org/wiki/File:Living_Room_-_Day_Trip_to_New_Orleans_April_2024.jpg
+telon-01.jpg  <=  mit/px-1258433.jpg | 3230x2164 | https://pxhere.com/en/photo/1258433 | https://get.pxhere.com/photo/sand-abstract-wood-vintage-texture-floor-pattern-brown-tile-grunge-yellow-paper-page-material-blank-sheet-textile-background-beige-wallpaper-stationery-poster-cardboard-backdrop-recycled-seamless-flooring-wood-flooring-grass-family-laminate-flooring-1258433.jpg
+mos1-01.jpg  <=  mos1b/cm-177204775.jpg | 3840x2160 | CC0 | Ocdp | https://commons.wikimedia.org/wiki/File:Hex_keys_001.jpg
+mos2-01.jpg  <=  mos6b/cm-178294916.jpg | 2334x3797 | CC0 | Historio19 | https://commons.wikimedia.org/wiki/File:Massey_University_Archives_storerooms.jpg
+mos3-01.jpg  <=  mos3/px-1260741.jpg | 3648x2736 | https://pxhere.com/en/photo/1260741 | https://get.pxhere.com/photo/work-tool-construction-hammer-nut-object-nail-screw-drill-tools-build-nails-kit-job-builder-spanner-bicycle-part-1260741.jpg
+mos4-01.jpg  <=  mos5/px-33.jpg | 3670x2462 | https://pxhere.com/en/photo/33 | https://get.pxhere.com/photo/laptop-desk-book-pencil-creative-advertising-brand-product-design-graphic-design-33.jpg
+mos5-01.jpg  <=  portada/px-140.jpg | 5184x3456 | https://pxhere.com/en/photo/140 | https://get.pxhere.com/photo/laptop-work-table-wood-glass-mouse-shelf-furniture-glasses-rectangle-shape-140.jpg
+mos6-01.jpg  <=  mos6/px-495484.jpg | 4429x2542 | https://pxhere.com/en/photo/495484 | https://get.pxhere.com/photo/book-read-wood-old-reading-collection-bookshelf-bookcase-pages-art-literature-library-books-bound-cover-historically-stories-know-used-books-old-books-leather-covers-man-made-object-495484.jpg

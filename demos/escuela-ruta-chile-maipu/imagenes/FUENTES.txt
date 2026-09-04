@@ -1,0 +1,14 @@
+﻿FUENTES DE LAS IMAGENES - escuela-ruta-chile-maipu
+Todas de bancos libres (CC0 / licencia libre del banco). Procesadas con preparar-lote.ps1 (JPEG, ancho y calidad por tratamiento).
+
+port-01.jpg  <=  portada/px-2492.jpg | 4240x2832 | https://pxhere.com/en/photo/2492 | https://get.pxhere.com/photo/sun-road-run-cloud-sky-horizon-atmospheric-phenomenon-coast-morning-dawn-sunrise-highway-mountain-sunset-dusk-road-trip-hill-evening-sea-sunlight-landscape-infrastructure-driving-2492.jpg
+mit-01.jpg  <=  mit/cm-62114497.jpg | 3840x2560 | CC0 | Daniela Cuevas danielacuevas | https://commons.wikimedia.org/wiki/File:Woman_hand_steering_wheel_(Unsplash).jpg
+cita-01.jpg  <=  cita/px-657518.jpg | 3802x1965 | https://pxhere.com/en/photo/657518 | https://get.pxhere.com/photo/landscape-nature-grass-horizon-mountain-cloud-sky-road-meadow-countryside-sunlight-morning-hill-highway-mountain-range-country-road-blue-sky-road-trip-roadway-alps-infrastructure-plateau-clouds-sky-rural-area-beautiful-landscape-mountain-pass-meteorological-phenomenon-rainbow-background-atmospheric-phenomenon-mountainous-landforms-657518.jpg
+tajo-01.jpg  <=  cita/px-4342.jpg | 3069x2048 | https://pxhere.com/en/photo/4342 | https://get.pxhere.com/photo/tree-forest-road-trail-sunlight-morning-asphalt-scenic-autumn-soil-lane-infrastructure-way-woodland-habitat-natural-environment-atmospheric-phenomenon-woody-plant-4342.jpg
+telon-01.jpg  <=  mos2/px-920.jpg | 2164x1440 | https://pxhere.com/en/photo/920 | https://get.pxhere.com/photo/light-blur-skyline-traffic-night-city-urban-cityscape-evening-darkness-lighting-920.jpg
+mos1-01.jpg  <=  mos1/cm-61792052.jpg | 3840x2560 | CC0 | Kalle K kallek | https://commons.wikimedia.org/wiki/File:Rear_view_mirror_Sn%C3%A6fellsj%C3%B6kull_(Unsplash).jpg
+mos2-01.jpg  <=  mos2/px-232.jpg | 3264x2176 | https://pxhere.com/en/photo/232 | https://get.pxhere.com/photo/snow-light-sunset-road-traffic-night-sunlight-highway-freeway-dusk-evening-line-reflection-weather-darkness-infrastructure-atmosphere-of-earth-232.jpg
+mos3-01.jpg  <=  mos3/cm-91322012.jpg | 2250x1500 | CC0 | @kaboompics | https://commons.wikimedia.org/wiki/File:Someone_handing_a_key_over.jpg
+mos4-01.jpg  <=  mos4/cm-175440023.jpg | 2401x3600 | CC0 | Retired electrician | https://commons.wikimedia.org/wiki/File:Moscow,_pedestrian-cycling_traffic_signals_Sept_2025_01.jpg
+mos5-01.jpg  <=  mos5/px-7630.jpg | 5472x3648 | https://pxhere.com/en/photo/7630 | https://get.pxhere.com/photo/notebook-writing-coffee-wood-diary-cup-pattern-material-brand-7630.jpg
+mos6-01.jpg  <=  mos6/px-815647.jpg | 4912x3264 | https://pxhere.com/en/photo/815647 | https://get.pxhere.com/photo/car-wheel-automobile-vehicle-drive-gauge-steering-wheel-speed-speedometer-tachometer-sports-car-supercar-design-new-bmw-fast-car-driving-land-vehicle-automobile-make-luxury-vehicle-family-car-815647.jpg

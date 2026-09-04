@@ -1153,3 +1153,63 @@ a.proyecto__vista { display: block; }
 /* La nota deja de estirarse cuando hay escena: si no, empuja la línea
    de la escena contra los enlaces y las tarjetas quedan disparejas. */
 .proyecto__nota:has(+ .proyecto__escena) { flex: none; margin-bottom: .7rem; }
+
+/* ── Principales (Santiago, septiembre 2026) ───────────────────────
+   Las cinco propuestas premium van ANTES de los proyectos pagados. La
+   primera tarjeta es ancha y se abre en dos columnas (foto | texto)
+   desde 860 px; las otras cuatro son tarjetas normales. Cada una lleva
+   dos líneas más que el resto del catálogo: la pieza firma (qué
+   contesta la página) y la escena (qué se mueve). El sello sobre la
+   foto es un rótulo mono, no un botón.                               */
+.principales-sec { position: relative; }
+.principales-sec::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background: radial-gradient(ellipse at 18% 12%, rgba(87, 217, 232, .10), transparent 55%);
+  pointer-events: none;
+}
+.principales { grid-template-columns: repeat(auto-fit, minmax(min(100%, 320px), 1fr)); }
+.proyecto--ancho { grid-column: 1 / -1; }
+@media (min-width: 860px) {
+  .proyecto--ancho { flex-direction: row; }
+  .proyecto--ancho .proyecto__vista {
+    flex: 0 0 56%;
+    aspect-ratio: auto;
+    border-bottom: 0;
+    border-right: 1px solid var(--vidrio-borde);
+  }
+  .proyecto--ancho .proyecto__cuerpo { justify-content: center; padding: clamp(1.6rem, 3vw, 2.6rem); }
+  .proyecto--ancho .proyecto__nombre { font-size: var(--paso-2); }
+}
+.proyecto__sello {
+  position: absolute;
+  top: .8rem;
+  left: .8rem;
+  z-index: 1;
+  padding: .3rem .6rem;
+  border-radius: 999px;
+  font-family: var(--mono);
+  font-size: .64rem;
+  letter-spacing: .14em;
+  text-transform: uppercase;
+  color: var(--fondo);
+  background: var(--cian);
+}
+.proyecto__firma {
+  margin: .2rem 0 .6rem;
+  font-size: var(--paso--1);
+  line-height: 1.5;
+  color: var(--hueso);
+}
+.proyecto__firma span {
+  display: block;
+  font-family: var(--mono);
+  font-size: .68rem;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+  color: var(--cian);
+  margin-bottom: .15rem;
+}
+.principales .proyecto__escena { margin-bottom: .8rem; }

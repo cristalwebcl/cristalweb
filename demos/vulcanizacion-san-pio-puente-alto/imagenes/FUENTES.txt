@@ -1,0 +1,14 @@
+﻿FUENTES DE LAS IMAGENES - vulcanizacion-san-pio-puente-alto
+Todas de bancos libres (CC0 / licencia libre del banco). Procesadas con preparar-lote.ps1 (JPEG, ancho y calidad por tratamiento).
+
+port-01.jpg  <=  telon/cm-170813248.jpg | 3840x5752 | CC0 | PheobeLongneck | https://commons.wikimedia.org/wiki/File:Stack_of_tires_in_the_sun.jpg | recorte 3:2
+mit-01.jpg  <=  cita/cm-190256846.jpg | 3840x2880 | CC0 | Godstar23 | https://commons.wikimedia.org/wiki/File:Flat_Tire.jpg
+cita-01.jpg  <=  portada/px-820634.jpg | 4608x3456 | https://pxhere.com/en/photo/820634 | https://get.pxhere.com/photo/sand-wood-track-sunlight-texture-leaf-wall-pattern-line-autumn-soil-yellow-material-close-up-tracks-in-the-sand-site-traces-macro-photography-tilt-shift-miniature-effect-tire-tracks-flooring-reprint-road-surface-ancient-history-caterpillar-tracks-820634.jpg
+tajo-01.jpg  <=  mos3/cm-103680374.jpg | 3840x2880 | CC0 | JFVelasquez Floro | https://commons.wikimedia.org/wiki/File:9823Plaridel_during_enhanced_community_quarantine_in_the_Philippines_19.jpg
+telon-01.jpg  <=  telon/px-99030.jpg | 1920x1280 | https://pxhere.com/en/photo/99030 | https://get.pxhere.com/photo/texture-floor-wall-stone-wall-brick-material-mortar-brickwork-masonry-flooring-99030.jpg
+mos1-01.jpg  <=  mos1/px-992917.jpg | 4064x2704 | https://pxhere.com/en/photo/992917 | https://get.pxhere.com/photo/car-wheel-part-spoke-tire-automotive-bumper-race-performance-rim-alloy-wheel-auto-part-bicycle-wheel-automotive-exterior-automotive-design-automotive-tire-wheel-rim-rim-of-wheel-992917.jpg
+mos2-01.jpg  <=  mos3/cm-103680387.jpg | 3840x2880 | CC0 | JFVelasquez Floro | https://commons.wikimedia.org/wiki/File:9823Plaridel_during_enhanced_community_quarantine_in_the_Philippines_18.jpg
+mos3-01.jpg  <=  mos3/px-745884.jpg | 2508x1672 | https://pxhere.com/en/photo/745884 | https://get.pxhere.com/photo/light-night-reflection-instrument-industrial-darkness-measure-gauge-black-lighting-measurement-close-up-mechanical-control-pressure-maintenance-macro-photography-measuring-745884.jpg
+mos4-01.jpg  <=  mos3/cm-23129760.jpg | 2080x956 | CC0 | Simon Speed | https://commons.wikimedia.org/wiki/File:CycleTyrePressureGauge.JPG
+mos5-01.jpg  <=  mos5/cm-156762654.jpg | 2524x1739 | CC0 | Simiprof | https://commons.wikimedia.org/wiki/File:Scissor_car_jack_with_3_DOFs.jpg
+mos6-01.jpg  <=  mos6/cm-149210498.jpg | 1920x1080 | CC0 | Andrew Pertsev | https://commons.wikimedia.org/wiki/File:Tire_Valve_Stem.jpg

@@ -1,0 +1,14 @@
+﻿FUENTES DE LAS IMAGENES - estetica-jacqueline-maipu
+Todas de bancos libres (CC0 / licencia libre del banco). Procesadas con preparar-lote.ps1 (JPEG, ancho y calidad por tratamiento).
+
+port-01.jpg  <=  mos4/cm-60277031.jpg | 3840x2880 | CC0 |  | https://commons.wikimedia.org/wiki/File:MET_DP-759-001.jpg
+mit-01.jpg  <=  mos4/cm-60277042.jpg | 3840x2880 | CC0 |  | https://commons.wikimedia.org/wiki/File:MET_DP-759-002.jpg
+cita-01.jpg  <=  mos3/003.jpg | FotoRadar, banco libre (consulta: hairdresser washing hair salon sink pexels), URL no registrada
+tajo-01.jpg  <=  telon/cm-152759009.jpg | 3840x2160 | CC0 | Daderot | https://commons.wikimedia.org/wiki/File:Hair_salon_-_Arlington,_MA.jpg
+telon-01.jpg  <=  mit/003.jpg | FotoRadar, banco libre (consulta: hair stylist cutting hair salon pexels), URL no registrada
+mos1-01.jpg  <=  mos1/cm-116674935.jpg | 3840x2559 | CC0 | Mostafameraji | https://commons.wikimedia.org/wiki/File:Hair_coloring,_Barbershop_From_Iran_10.jpg
+mos2-01.jpg  <=  mos2/px-1159487.jpg | 4752x3168 | https://pxhere.com/en/photo/1159487 | https://get.pxhere.com/photo/people-woman-female-young-sight-macro-brown-lip-eyebrow-mouth-eyelash-close-up-human-body-face-nose-eyes-cheek-iris-eye-head-look-skin-eyebrows-beautiful-organ-cosmetics-eyelashes-forehead-vision-care-eyelash-extensions-1159487.jpg
+mos3-01.jpg  <=  mos4/cm-60277042.jpg | 3840x2880 | CC0 |  | https://commons.wikimedia.org/wiki/File:MET_DP-759-002.jpg
+mos4-01.jpg  <=  mos6/px-706629.jpg | 3322x2215 | https://pxhere.com/en/photo/706629 | https://get.pxhere.com/photo/color-paint-care-manicure-glass-bottle-product-nail-polish-eye-fingernails-beauty-nails-cosmetics-polish-pedicure-nail-varnish-toe-nails-nail-care-kosmetikstudio-706629.jpg
+mos5-01.jpg  <=  mos5/cm-145783454.jpg | 3791x1906 | CC0 | Pittigrilli | https://commons.wikimedia.org/wiki/File:Various_professional_haircutting_scissors_from_different_companies,_some_hand-forged_like_a_Samurai_sword_and_costing_up_to_about_2.000_USD.jpg
+mos6-01.jpg  <=  mos6/px-1166839.jpg | 3872x2592 | https://pxhere.com/en/photo/1166839 | https://get.pxhere.com/photo/hand-plant-woman-flower-petal-feet-female-leg-foot-pink-close-up-human-body-relaxation-spa-salon-toe-floristry-pedicure-treatment-wellness-flowering-plant-land-plant-1166839.jpg
