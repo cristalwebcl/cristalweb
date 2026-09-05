@@ -12,3 +12,7 @@ mos3-01.jpg  <=  mos3/px-1260741.jpg | 3648x2736 | https://pxhere.com/en/photo/1
 mos4-01.jpg  <=  mos5/px-33.jpg | 3670x2462 | https://pxhere.com/en/photo/33 | https://get.pxhere.com/photo/laptop-desk-book-pencil-creative-advertising-brand-product-design-graphic-design-33.jpg
 mos5-01.jpg  <=  portada/px-140.jpg | 5184x3456 | https://pxhere.com/en/photo/140 | https://get.pxhere.com/photo/laptop-work-table-wood-glass-mouse-shelf-furniture-glasses-rectangle-shape-140.jpg
 mos6-01.jpg  <=  mos6/px-495484.jpg | 4429x2542 | https://pxhere.com/en/photo/495484 | https://get.pxhere.com/photo/book-read-wood-old-reading-collection-bookshelf-bookcase-pages-art-literature-library-books-bound-cover-historically-stories-know-used-books-old-books-leather-covers-man-made-object-495484.jpg
+
+VIDEO DE FONDO (Mixkit; Free = uso comercial sin atribucion, Restricted = igual pero sin redistribuir como stock; transcodificado a MP4 H.264 720p sin audio con Windows.Media.Transcoding)
+video/port.mp4  <=  mixkit | Mixkit Stock Video Free License | mixkit 44356 | https://mixkit.co/free-stock-video/ | https://assets.mixkit.co/videos/44356/44356-720.mp4 | 10 s
+video/cita.mp4  <=  mixkit | Mixkit Stock Video Free License | mixkit 3091 | https://mixkit.co/free-stock-video/ | https://assets.mixkit.co/videos/3091/3091-720.mp4 | 8 s

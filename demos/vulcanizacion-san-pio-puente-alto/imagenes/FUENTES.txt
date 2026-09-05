@@ -12,3 +12,7 @@ mos3-01.jpg  <=  mos3/px-745884.jpg | 2508x1672 | https://pxhere.com/en/photo/74
 mos4-01.jpg  <=  mos3/cm-23129760.jpg | 2080x956 | CC0 | Simon Speed | https://commons.wikimedia.org/wiki/File:CycleTyrePressureGauge.JPG
 mos5-01.jpg  <=  mos5/cm-156762654.jpg | 2524x1739 | CC0 | Simiprof | https://commons.wikimedia.org/wiki/File:Scissor_car_jack_with_3_DOFs.jpg
 mos6-01.jpg  <=  mos6/cm-149210498.jpg | 1920x1080 | CC0 | Andrew Pertsev | https://commons.wikimedia.org/wiki/File:Tire_Valve_Stem.jpg
+
+VIDEO DE FONDO (Mixkit; Free = uso comercial sin atribucion, Restricted = igual pero sin redistribuir como stock; transcodificado a MP4 H.264 720p sin audio con Windows.Media.Transcoding)
+video/port.mp4  <=  mixkit | Mixkit Stock Video Free License | mixkit 47836 | https://mixkit.co/free-stock-video/ | https://assets.mixkit.co/videos/47836/47836-720.mp4 | 10 s
+video/cita.mp4  <=  mixkit | Mixkit Stock Video Free License | mixkit 41936 | https://mixkit.co/free-stock-video/ | https://assets.mixkit.co/videos/41936/41936-720.mp4 | 8 s

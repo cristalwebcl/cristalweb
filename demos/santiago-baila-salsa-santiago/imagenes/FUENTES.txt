@@ -1,0 +1,12 @@
+﻿FUENTES DE LAS IMAGENES - santiago-baila-salsa-santiago Bancos libres; procesadas con preparar-lote.ps1 (JPEG, ancho y calidad por tratamiento). 
+mit-01.jpg  <=  mixkit | Mixkit Stock Video Free License | Mixkit |  | https://assets.mixkit.co/videos/40928/40928-1080.mp4
+cita-01.jpg  <=  mixkit | Mixkit Stock Video Free License | Mixkit |  | https://assets.mixkit.co/videos/446/446-1080.mp4
+tajo-01.jpg  <=  mixkit | Mixkit Stock Video Free License | Mixkit |  | https://assets.mixkit.co/videos/33903/33903-1080.mp4
+telon-01.jpg  <=  mixkit | Mixkit Stock Video Free License | Mixkit |  | https://assets.mixkit.co/videos/42030/42030-1080.mp4
+mos1-01.jpg  <=  mixkit | Mixkit Stock Video Free License | Mixkit |  | https://assets.mixkit.co/videos/13267/13267-1080.mp4
+mos2-01.jpg  <=  mixkit | Mixkit Stock Video Free License | Mixkit |  | https://assets.mixkit.co/videos/36603/36603-1080.mp4
+mos3-01.jpg  <=  mixkit | Mixkit Stock Video Free License | Mixkit |  | https://assets.mixkit.co/videos/35690/35690-1080.mp4
+mos4-01.jpg  <=  mixkit | Mixkit Stock Video Free License | Mixkit |  | https://assets.mixkit.co/videos/351/351-1080.mp4
+mos5-01.jpg  <=  mixkit | Mixkit Stock Video Free License | Mixkit |  | https://assets.mixkit.co/videos/461/461-1080.mp4
+mos6-01.jpg  <=  mixkit | Mixkit Stock Video Free License | Mixkit |  | https://assets.mixkit.co/videos/3645/3645-1080.mp4 | recorte 3:2
+port-01.jpg  <=  commons | CC0 | Wikimedia Commons | https://commons.wikimedia.org/wiki/File:Mirrored_Disco_Ball_with_Light_and_Motor.jpg | https://upload.wikimedia.org/wikipedia/commons/d/db/Mirrored_Disco_Ball_with_Light_and_Motor.jpg

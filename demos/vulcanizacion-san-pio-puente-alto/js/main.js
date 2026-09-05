@@ -17,6 +17,49 @@
   var reduce = window.matchMedia &&
                window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
+  /* ── Video de fondo ──────────────────────────────────────────────
+     La foto es la base; el video va encima. Sólo se carga si el
+     visitante no pidió menos movimiento ni ahorra datos, se pide
+     recién cuando la sección se acerca (240 px antes) y se pausa
+     fuera de vista para no gastar batería. Si el navegador bloquea
+     el autoplay, se queda la foto y no se nota nada. ── */
+  var vids = document.querySelectorAll('video[data-src]');
+  if (vids.length) {
+    var con = navigator.connection || navigator.mozConnection || navigator.webkitConnection;
+    var ahorra = con && (con.saveData === true || /2g/.test(con.effectiveType || ''));
+    if (!reduce && !ahorra) {
+      var activar = function (v) {
+        if (v.getAttribute('src')) { return; }
+        v.muted = true; v.loop = true; v.setAttribute('muted', '');
+        v.addEventListener('canplay', function () {
+          var p = v.play();
+          if (p && p.then) { p.then(function () { v.classList.add('video--ver'); }).catch(function () {}); }
+          else { v.classList.add('video--ver'); }
+        }, { once: true });
+        v.src = v.getAttribute('data-src');
+        v.load();
+      };
+      if ('IntersectionObserver' in window) {
+        var ov = new IntersectionObserver(function (es) {
+          es.forEach(function (e) {
+            var v = e.target;
+            if (e.isIntersecting) { v.enVista = true; activar(v); if (v.paused && v.classList.contains('video--ver')) { v.play().catch(function () {}); } }
+            else { v.enVista = false; if (!v.paused) { v.pause(); } }
+          });
+        }, { rootMargin: '240px 0px', threshold: 0.01 });
+        Array.prototype.forEach.call(vids, function (v) { ov.observe(v); });
+      } else { Array.prototype.forEach.call(vids, activar); }
+      /* Al volver a la pestaña el navegador deja el clip en pausa:
+         se reanuda sólo el que estaba a la vista. */
+      document.addEventListener('visibilitychange', function () {
+        if (document.visibilityState !== 'visible') { return; }
+        Array.prototype.forEach.call(vids, function (v) {
+          if (v.enVista !== false && v.paused && v.classList.contains('video--ver')) { v.play().catch(function () {}); }
+        });
+      });
+    }
+  }
+
   /* ── 1 · Cabecera ── */
   var cab = document.getElementById('cab');
   if (cab) {

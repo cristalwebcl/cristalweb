@@ -12,3 +12,7 @@ mos3-01.jpg  <=  mos3/cm-91322012.jpg | 2250x1500 | CC0 | @kaboompics | https://
 mos4-01.jpg  <=  mos4/cm-175440023.jpg | 2401x3600 | CC0 | Retired electrician | https://commons.wikimedia.org/wiki/File:Moscow,_pedestrian-cycling_traffic_signals_Sept_2025_01.jpg
 mos5-01.jpg  <=  mos5/px-7630.jpg | 5472x3648 | https://pxhere.com/en/photo/7630 | https://get.pxhere.com/photo/notebook-writing-coffee-wood-diary-cup-pattern-material-brand-7630.jpg
 mos6-01.jpg  <=  mos6/px-815647.jpg | 4912x3264 | https://pxhere.com/en/photo/815647 | https://get.pxhere.com/photo/car-wheel-automobile-vehicle-drive-gauge-steering-wheel-speed-speedometer-tachometer-sports-car-supercar-design-new-bmw-fast-car-driving-land-vehicle-automobile-make-luxury-vehicle-family-car-815647.jpg
+
+VIDEO DE FONDO (Mixkit; Free = uso comercial sin atribucion, Restricted = igual pero sin redistribuir como stock; transcodificado a MP4 H.264 720p sin audio con Windows.Media.Transcoding)
+video/port.mp4  <=  mixkit | Mixkit Stock Video Free License | mixkit 45312 | https://mixkit.co/free-stock-video/ | https://assets.mixkit.co/videos/45312/45312-720.mp4 | 10 s
+video/cita.mp4  <=  mixkit | Mixkit Stock Video Free License | mixkit 13076 | https://mixkit.co/free-stock-video/ | https://assets.mixkit.co/videos/13076/13076-720.mp4 | 8 s

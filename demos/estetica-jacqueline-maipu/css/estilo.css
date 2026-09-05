@@ -127,7 +127,7 @@ p.ej { padding: .35rem .6rem .35rem; margin-top: .7rem; }
 /* ── Portada ───────────────────────────────────────────────────── */
 .portada { position: relative; isolation: isolate; min-height: min(86vh, 740px); display: flex; flex-direction: column; justify-content: center; padding: var(--aire) 0; overflow: hidden; }
 .portada__foto { position: absolute; inset: 0; z-index: -2; }
-.portada__foto img {
+.portada__foto img, .portada__video {
   display: block; width: 100%; height: 100%;
   object-fit: cover; object-position: 70% 45%;
   -webkit-mask-image: linear-gradient(90deg, transparent 0%, transparent 24%, rgba(0,0,0,.2) 40%, rgba(0,0,0,.72) 58%, #000 74%, #000 100%);
@@ -143,7 +143,7 @@ p.ej { padding: .35rem .6rem .35rem; margin-top: .7rem; }
       rgba(246,241,234,.08) 82%, rgba(246,241,234,0) 96%);
 }
 @media (max-width: 760px) {
-  .portada__foto img { object-position: 60% 40%;
+  .portada__foto img, .portada__video { object-position: 60% 40%;
     -webkit-mask-image: linear-gradient(180deg, #000 0%, #000 38%, transparent 76%);
             mask-image: linear-gradient(180deg, #000 0%, #000 38%, transparent 76%); }
   .portada__foto::after { background: linear-gradient(180deg, rgba(246,241,234,0) 0%, rgba(246,241,234,.3) 40%, rgba(246,241,234,1) 68%); }
@@ -254,7 +254,7 @@ p.ej { padding: .35rem .6rem .35rem; margin-top: .7rem; }
 .equipo { padding: var(--aire) 0; background: var(--lino-2); }
 .con-telon { position: relative; isolation: isolate; overflow: hidden; }
 .telon { position: absolute; inset: 0; z-index: -1; pointer-events: none; }
-.telon img {
+.telon img, .telon__video {
   display: block; width: 100%; height: 100%; object-fit: cover; object-position: 50% 44%; opacity: .14;
   -webkit-mask-image: linear-gradient(180deg, transparent 0%, #000 20%, #000 74%, transparent 100%);
           mask-image: linear-gradient(180deg, transparent 0%, #000 20%, #000 74%, transparent 100%);
@@ -304,7 +304,7 @@ p.ej { padding: .35rem .6rem .35rem; margin-top: .7rem; }
 
 /* ── Cita ──────────────────────────────────────────────────────── */
 .cita { position: relative; margin: 0; isolation: isolate; min-height: min(50vh, 400px); display: grid; place-items: center; overflow: hidden; }
-.cita img { position: absolute; inset: 0; z-index: -1; width: 100%; height: 100%; object-fit: cover; object-position: 50% 44%; }
+.cita img, .cita__video { position: absolute; inset: 0; z-index: -1; width: 100%; height: 100%; object-fit: cover; object-position: 50% 44%; }
 .cita::after { content: ""; position: absolute; inset: 0; z-index: -1; background: rgba(31,29,26,.78); }
 .cita__txt { margin: 0; width: var(--ancho); padding: 3rem 0; }
 .cita__txt p { font-family: var(--display); font-size: var(--p-3); color: var(--lino); max-width: 26ch; margin: 0 auto; text-align: center; line-height: 1.28; }
@@ -386,3 +386,36 @@ p.ej { padding: .35rem .6rem .35rem; margin-top: .7rem; }
   .js .rev, .js .fam.rev > *, .js .fichas.rev > *, .js .mos__grilla.rev > *, .js .cifras__lista.rev > *, .js .planner__grupo.rev > .serv { opacity: 1; transform: none; }
   .boton:hover, .red:hover { transform: none; }
 }
+
+/* ══ Video de fondo (05-09-2026) ══════════════════════════════════
+   La foto de portada sigue siendo la base: se carga siempre y es lo
+   que ve quien pidió menos movimiento, quien ahorra datos o quien no
+   tiene JS. El video va ENCIMA, con la misma máscara y el mismo
+   encuadre (comparte el selector de la foto), y sólo aparece cuando
+   ya puede reproducirse: la foto cobra vida en un fundido de 1,4 s.
+   Presupuesto de la casa: portada ≤ 1,8 MB, banda ≤ 1,2 MB, 720p H.264
+   sin audio, dos clips por página. Origen y licencia en imagenes/FUENTES.txt. */
+.portada__video, .cita__video, .telon__video { position: absolute; inset: 0; opacity: 0; transition: opacity 1.4s ease; pointer-events: none; }
+.portada__video.video--ver, .cita__video.video--ver { opacity: 1; }
+.telon__video.video--ver { opacity: .14; }
+
+/* Difuminado al hacer scroll (scroll-driven animations, Baseline 2026):
+   la portada se desenfoca a medida que se deja atrás y la cita entra
+   desenfocada y se enfoca al llegar a la vista. Sin JS. Sólo en
+   escritorio y sin reduced-motion; donde el navegador no lo soporte,
+   no pasa nada: @supports lo deja fuera entero. */
+@supports (animation-timeline: scroll()) {
+  @media (prefers-reduced-motion: no-preference) and (min-width: 761px) {
+    .portada__foto { animation: portada-se-va linear both; animation-timeline: scroll(root block); animation-range: 0 90vh; }
+    .cita { animation: cita-enfoca linear both; animation-timeline: view(block); animation-range: entry 0% entry 95%; }
+  }
+}
+@keyframes portada-se-va { to { filter: blur(14px) brightness(.8); transform: scale(1.06); } }
+@keyframes cita-enfoca { from { filter: blur(16px); } to { filter: blur(0); } }
+
+/* ══ Mejoras 05-09-2026 (Baseline 2026, sin cambiar el diseño) ══
+   text-wrap: pretty evita las viudas en los párrafos; --muelle es una
+   curva linear() con rebote corto para las entradas de la portada. */
+p { text-wrap: pretty; }
+:root { --muelle: linear(0, .32 14%, .68 26%, .92 38%, 1.04 50%, 1.01 64%, .99 78%, 1); }
+.js .portada__texto > * { animation-timing-function: var(--muelle); }

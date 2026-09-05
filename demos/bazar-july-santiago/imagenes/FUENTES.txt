@@ -12,3 +12,7 @@ mos3-01.jpg  <=  mos6/px-971634.jpg | 5616x3744 | https://pxhere.com/en/photo/97
 mos4-01.jpg  <=  cita/px-99171.jpg | 1909x1262 | https://pxhere.com/en/photo/99171 | https://get.pxhere.com/photo/writing-hand-money-paper-map-close-up-cash-art-location-shape-search-99171.jpg
 mos5-01.jpg  <=  mos5/cm-14613025.jpg | 1800x1800 | CC0 | Qxtn1423 | https://commons.wikimedia.org/wiki/File:Wood_Guillotine_Trimmer.JPG
 mos6-01.jpg  <=  mit/px-674238.jpg | 3969x2977 | https://pxhere.com/en/photo/674238 | https://get.pxhere.com/photo/watch-table-book-read-open-wood-vintage-antique-retro-clock-time-hour-old-wall-print-macro-stack-closeup-paper-page-minute-dial-bookshelf-education-research-textbook-close-up-brand-bookcase-science-bookstore-literature-study-library-text-glasses-university-wooden-school-information-cover-countdown-wisdom-knowledge-literary-674238.jpg
+
+VIDEO DE FONDO (Mixkit; Free = uso comercial sin atribucion, Restricted = igual pero sin redistribuir como stock; transcodificado a MP4 H.264 720p sin audio con Windows.Media.Transcoding)
+video/port.mp4  <=  mixkit | Mixkit Stock Video Free License | mixkit 25260 | https://mixkit.co/free-stock-video/ | https://assets.mixkit.co/videos/25260/25260-720.mp4 | 10 s
+video/telon.mp4  <=  mixkit | Mixkit Stock Video Free License | mixkit 470 | https://mixkit.co/free-stock-video/ | https://assets.mixkit.co/videos/470/470-720.mp4 | 8 s

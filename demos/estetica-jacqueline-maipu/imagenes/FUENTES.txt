@@ -12,3 +12,7 @@ mos3-01.jpg  <=  mos4/cm-60277042.jpg | 3840x2880 | CC0 |  | https://commons.wik
 mos4-01.jpg  <=  mos6/px-706629.jpg | 3322x2215 | https://pxhere.com/en/photo/706629 | https://get.pxhere.com/photo/color-paint-care-manicure-glass-bottle-product-nail-polish-eye-fingernails-beauty-nails-cosmetics-polish-pedicure-nail-varnish-toe-nails-nail-care-kosmetikstudio-706629.jpg
 mos5-01.jpg  <=  mos5/cm-145783454.jpg | 3791x1906 | CC0 | Pittigrilli | https://commons.wikimedia.org/wiki/File:Various_professional_haircutting_scissors_from_different_companies,_some_hand-forged_like_a_Samurai_sword_and_costing_up_to_about_2.000_USD.jpg
 mos6-01.jpg  <=  mos6/px-1166839.jpg | 3872x2592 | https://pxhere.com/en/photo/1166839 | https://get.pxhere.com/photo/hand-plant-woman-flower-petal-feet-female-leg-foot-pink-close-up-human-body-relaxation-spa-salon-toe-floristry-pedicure-treatment-wellness-flowering-plant-land-plant-1166839.jpg
+
+VIDEO DE FONDO (Mixkit; Free = uso comercial sin atribucion, Restricted = igual pero sin redistribuir como stock; transcodificado a MP4 H.264 720p sin audio con Windows.Media.Transcoding)
+video/port.mp4  <=  mixkit | Mixkit Stock Video Free License | mixkit 45893 | https://mixkit.co/free-stock-video/ | https://assets.mixkit.co/videos/45893/45893-720.mp4 | 10 s
+video/cita.mp4  <=  mixkit | Mixkit Stock Video Free License | mixkit 13084 | https://mixkit.co/free-stock-video/ | https://assets.mixkit.co/videos/13084/13084-720.mp4 | 8 s
