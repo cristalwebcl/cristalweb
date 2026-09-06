@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="es-CL" class="no-js">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Más Lavanderías — lavandería con retiro a domicilio en Ñuñoa</title>
+<meta name="description" content="Lavandería en Ñuñoa con más de quinientas reseñas en Google. Qué se puede mandar, cuándo vuelve, cómo se pide el retiro a domicilio y por dónde escribir.">
+
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self'; img-src 'self' data:; font-src 'self'; connect-src 'self'; media-src 'self'; form-action 'self'; base-uri 'none'; frame-src 'none'; object-src 'none'">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+
+<script src="js/rescate.js"></script>
+
+<link rel="preload" href="assets/fuentes/varelaround-400-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="assets/fuentes.css">
+<link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+
+<div class="propuesta">
+  <p class="propuesta__que">Propuesta de sitio web — preparada para <b>Más Lavanderías</b> por CristalWeb</p>
+  <p class="propuesta__gancho">559 reseñas, retiro a domicilio, y maslavanderias.cl devuelve un error: el 06-09-2026 la portada respondía 404. Toda la publicidad manda a una página que no existe. Ésta es la que debería estar ahí.</p>
+</div>
+
+<header class="cab" id="cab">
+  <a class="cab__marca" href="#portada">
+    <span class="cab__sello" aria-hidden="true">
+      <svg viewBox="0 0 40 40"><circle cx="20" cy="20" r="17"/><circle cx="20" cy="20" r="9"/></svg>
+    </span>
+    <span class="cab__nombre">Más Lavanderías<span class="cab__sub">Lavandería · Ñuñoa</span></span>
+  </a>
+  <nav class="cab__nav" aria-label="Secciones">
+    <a href="#entra">Qué entra</a>
+    <a href="#retiro">Retiro a domicilio</a>
+    <a href="#local">El local</a>
+    <a href="#contacto">Escribir</a>
+  </nav>
+  <a class="cab__cta boton boton--chico" href="https://wa.me/56995931443" target="_blank" rel="noopener noreferrer">WhatsApp</a>
+</header>
+
+<main>
+
+<!-- ═══════════ PORTADA ═══════════
+     La foto es la base y el video va encima cuando puede reproducirse
+     (js/main.js). A la derecha, la escena: la puerta de la lavadora se
+     cierra y el tambor gira, lento y continuo. Un tambor girando es lo
+     único que gira por naturaleza en este rubro, así que el bucle está
+     permitido: es el reposo de la pantalla. -->
+<section class="portada" id="portada" aria-labelledby="t-portada">
+  <div class="portada__foto" aria-hidden="true">
+    <img src="imagenes/port-01.jpg" width="1920" height="1080" decoding="async" fetchpriority="high" alt="">
+    <video class="portada__video" data-src="video/port.mp4" muted playsinline loop preload="none" aria-hidden="true"></video>
+  </div>
+
+  <div class="portada__cols">
+    <div class="portada__texto">
+      <p class="sobre">Lavandería con retiro a domicilio · Ñuñoa</p>
+      <h1 class="portada__titulo" id="t-portada">
+        <span>Deje la ropa</span>
+        <span>y siga con</span>
+        <span>su día.</span>
+      </h1>
+      <p class="portada__bajada">Lavado por kilo, planchado, plumones y ropa delicada.
+        <b>Más de quinientas reseñas</b> en Google y retiro a domicilio: usted no
+        tiene que venir hasta acá.</p>
+      <p class="portada__botones">
+        <a class="boton" href="#entra">Qué puedo mandar</a>
+        <a class="boton boton--linea" href="#retiro">Pedir el retiro</a>
+      </p>
+    </div>
+
+    <!-- Escena · reposa: el tambor gira. -->
+    <div class="escena escena--tambor" aria-hidden="true">
+      <svg class="tambor__svg" viewBox="0 0 300 300" xmlns="http://www.w3.org/2000/svg">
+        <circle class="tambor__marco" cx="150" cy="150" r="120"/>
+        <circle class="tambor__vidrio" cx="150" cy="150" r="103"/>
+        <g class="tambor__gira">
+          <circle class="tambor__hoyo" cx="150" cy="150" r="92"/>
+          <path class="tambor__ropa tambor__ropa--1" d="M150 82c26 6 44 20 48 40-14 16-38 22-62 14-18-6-28-20-26-34 4-14 20-22 40-20z"/>
+          <path class="tambor__ropa tambor__ropa--2" d="M96 176c22-14 46-12 62 6-4 22-22 38-46 40-18 2-32-8-36-24-2-10 6-16 20-22z"/>
+          <path class="tambor__ropa tambor__ropa--3" d="M196 178c16 4 26 16 24 32-4 16-20 26-38 22-14-4-22-16-20-30 4-16 18-26 34-24z"/>
+          <g class="tambor__aletas">
+            <rect x="146" y="60" width="8" height="26" rx="4"/>
+            <rect x="146" y="60" width="8" height="26" rx="4" transform="rotate(120 150 150)"/>
+            <rect x="146" y="60" width="8" height="26" rx="4" transform="rotate(240 150 150)"/>
+          </g>
+        </g>
+        <path class="tambor__puerta" d="M150 30a120 120 0 0 1 0 240"/>
+      </svg>
+      <p class="escena__pie">el tambor no para · 9 s por vuelta</p>
+    </div>
+  </div>
+</section>
+
+
+<!-- ═══════════ CIFRAS ═══════════ -->
+<section class="cifras" aria-label="En números">
+  <ul class="cifras__lista ancho">
+    <li><b data-cuenta="559">559</b><span>reseñas en Google</span></li>
+    <li><b>5</b><span>tipos de servicio</span></li>
+    <li><b>0</b><span>viajes que tiene que hacer</span></li>
+    <li><b>404</b><span>lo que devuelve hoy su web</span></li>
+  </ul>
+</section>
+
+
+<!-- ═══════════ PIEZA FIRMA · QUÉ ENTRA Y CUÁNDO VUELVE ═══════════
+     La pregunta que ninguna lavandería contesta por escrito. La tabla
+     entera es ejemplo hasta que el dueño confirme los plazos. -->
+<section class="entra" id="entra" aria-labelledby="t-entra">
+  <div class="ancho">
+    <p class="sobre">La pregunta de siempre</p>
+    <h2 id="t-entra">Qué puedo mandar,<br>y cuándo lo tengo de vuelta.</h2>
+    <p class="entradilla">Nadie lo escribe en ninguna parte, así que hay que llamar
+      para preguntarlo. Acá está, con el plazo al lado y si pasan a buscarlo.</p>
+
+    <table class="tabla tabla-entra ej" data-ejemplo>
+      <caption>Plazos y retiro por tipo de prenda. Ejemplo hasta que la lavandería confirme los suyos.</caption>
+      <thead>
+        <tr><th scope="col">Qué manda</th><th scope="col">Cómo se cobra</th><th scope="col">Vuelve en</th><th scope="col">Retiro</th></tr>
+      </thead>
+      <tbody>
+        <tr><th scope="row">Ropa de casa por kilo</th><td>por kilo</td><td><span class="dato">24 h</span></td><td>Sí</td></tr>
+        <tr><th scope="row">Planchado</th><td>por prenda</td><td><span class="dato">48 h</span></td><td>Sí</td></tr>
+        <tr><th scope="row">Plumones y frazadas</th><td>por pieza</td><td><span class="dato">72 h</span></td><td>Sí</td></tr>
+        <tr><th scope="row">Ropa delicada y de vestir</th><td>por prenda</td><td><span class="dato">72 h</span></td><td>Sí</td></tr>
+        <tr><th scope="row">Ropa de trabajo</th><td>por kilo</td><td><span class="dato">48 h</span></td><td>Conversado</td></tr>
+      </tbody>
+    </table>
+    <p class="nota">Los plazos son de ejemplo y cuentan desde que la ropa entra al
+      local, no desde que la pasan a buscar. Sin precios: los pone la lavandería.</p>
+
+    <h3 class="sub">Lo que conviene decir al mandar</h3>
+    <ul class="lista-marca">
+      <li><b>Si hay una mancha</b>, de qué es y hace cuánto. No es lo mismo vino de
+        anoche que aceite de hace un mes.</li>
+      <li><b>Si una prenda no puede ir a secadora.</b> Se separa antes, no después.</li>
+      <li><b>Si necesita algo para una fecha.</b> Se ordena la carga distinto.</li>
+    </ul>
+  </div>
+</section>
+
+
+<!-- ═══════════ TAJO ═══════════ -->
+<section class="tajo" aria-label="La plancha">
+  <img src="imagenes/tajo-01.jpg" width="2000" height="1333" loading="lazy" decoding="async" alt="Una plancha sobre una prenda extendida.">
+  <div class="tajo__txt">
+    <p>Lo que se plancha se cuelga, no se dobla. Vuelve en percha y con funda.
+      <span class="ej" data-ejemplo>Ejemplo</span></p>
+  </div>
+</section>
+
+
+<!-- ═══════════ RETIRO A DOMICILIO ═══════════ -->
+<section class="retiro" id="retiro" aria-labelledby="t-retiro">
+  <div class="ancho">
+    <p class="sobre">Sin salir de la casa</p>
+    <h2 id="t-retiro">Cómo se pide el retiro.</h2>
+    <p class="entradilla">Tres pasos, un solo mensaje. Escriba lo que manda, dónde
+      está y cuándo puede recibir: con eso se coordina.</p>
+
+    <ol class="pasos">
+      <li>
+        <span class="pasos__n" aria-hidden="true">1</span>
+        <h3>Diga qué manda</h3>
+        <p>«Dos bolsas de ropa de casa y un plumón de dos plazas». No hace falta
+          pesar nada: se pesa acá.</p>
+      </li>
+      <li>
+        <span class="pasos__n" aria-hidden="true">2</span>
+        <h3>Diga dónde y cuándo</h3>
+        <p>Dirección en Ñuñoa y un rango de horas en que hay alguien. Si es
+          edificio, el nombre de conserjería sirve.</p>
+      </li>
+      <li>
+        <span class="pasos__n" aria-hidden="true">3</span>
+        <h3>Le confirman la vuelta</h3>
+        <p>Le dicen el día en que vuelve la ropa antes de llevársela, no después.
+          <span class="ej" data-ejemplo>Ejemplo</span></p>
+      </li>
+    </ol>
+
+    <form class="pedir" id="pedir-form" autocomplete="off">
+      <h3 class="sub">Arme el mensaje acá</h3>
+      <p class="pedir__ayuda">No se envía nada desde esta página: se abre WhatsApp
+        con el mensaje escrito para que usted lo revise antes de mandarlo.</p>
+      <div class="pedir__campos">
+        <p class="campo">
+          <label for="p-que">Qué manda</label>
+          <input type="text" id="p-que" name="que" placeholder="dos bolsas de ropa de casa" maxlength="80">
+        </p>
+        <p class="campo">
+          <label for="p-tipo">Servicio</label>
+          <select id="p-tipo" name="tipo">
+            <option>Lavado por kilo</option>
+            <option>Planchado</option>
+            <option>Plumones y frazadas</option>
+            <option>Ropa delicada</option>
+            <option>Ropa de trabajo</option>
+          </select>
+        </p>
+        <p class="campo">
+          <label for="p-donde">Dónde lo pasan a buscar</label>
+          <input type="text" id="p-donde" name="donde" placeholder="calle y número, Ñuñoa" maxlength="80">
+        </p>
+        <p class="campo">
+          <label for="p-cuando">Cuándo hay alguien</label>
+          <select id="p-cuando" name="cuando">
+            <option>Hoy en la tarde</option>
+            <option>Mañana en la mañana</option>
+            <option>Mañana en la tarde</option>
+            <option>Este fin de semana</option>
+          </select>
+        </p>
+      </div>
+      <p class="pedir__salida"><span class="pedir__rotulo">Mensaje:</span> <span id="p-salida">Hola, quiero pedir un retiro a domicilio.</span></p>
+      <p class="pedir__ir">
+        <a class="boton" id="p-wsp" href="https://wa.me/56995931443" target="_blank" rel="noopener noreferrer">Abrir WhatsApp con esto</a>
+      </p>
+    </form>
+  </div>
+</section>
+
+
+<!-- ═══════════ MITADES ═══════════ -->
+<section class="mit" aria-label="Cómo vuelve la ropa">
+  <div class="mit__foto">
+    <img src="imagenes/mit-01.jpg" width="2000" height="3000" loading="lazy" decoding="async" alt="Toallas blancas dobladas en una pila pareja.">
+  </div>
+  <div class="mit__txt">
+    <h2>Vuelve doblada, no vuelve en bolsa.</h2>
+    <p>La ropa de casa vuelve doblada y separada por tipo, y lo que se plancha
+      vuelve colgado. Es la diferencia entre una lavandería y una máquina.</p>
+    <p class="nota">Cómo se entrega exactamente lo confirma la lavandería.
+      <span class="ej" data-ejemplo>Ejemplo</span></p>
+  </div>
+</section>
+
+
+<!-- ═══════════ CITA (con video) ═══════════ -->
+<section class="cita" aria-label="El planchado">
+  <img src="imagenes/cita-01.jpg" width="1280" height="720" loading="lazy" decoding="async" alt="Un pantalón en la prensa de planchado a vapor.">
+  <video class="cita__video" data-src="video/cita.mp4" muted playsinline loop preload="none" aria-hidden="true"></video>
+  <blockquote class="cita__txt">
+    <p>El vapor hace lo que la plancha de la casa no: deja la prenda lisa sin
+      brillo y sin marcas.</p>
+  </blockquote>
+</section>
+
+
+<!-- ═══════════ EL LOCAL ═══════════ -->
+<section class="local con-telon" id="local" aria-labelledby="t-local">
+  <div class="telon" aria-hidden="true">
+    <img src="imagenes/telon-01.jpg" width="1280" height="720" loading="lazy" decoding="async" alt="">
+  </div>
+  <div class="ancho">
+    <p class="sobre">El local</p>
+    <h2 id="t-local">Máquinas grandes, no las de la casa.</h2>
+    <p class="entradilla">Una lavadora doméstica hace cuatro kilos y se demora tres
+      horas. Acá la carga entra completa y sale el mismo día.</p>
+
+    <ul class="fichas">
+      <li class="ficha">
+        <h3>Lavado por kilo</h3>
+        <p>La ropa de casa se pesa, se separa por color y se lava junta.</p>
+        <p class="ficha__dato ej" data-ejemplo>Carga mínima: 3 kg</p>
+      </li>
+      <li class="ficha">
+        <h3>Plumones y frazadas</h3>
+        <p>Lo que no cabe en una lavadora de casa. Se seca completo, no a medias.</p>
+        <p class="ficha__dato ej" data-ejemplo>Hasta 2 plazas</p>
+      </li>
+      <li class="ficha">
+        <h3>Planchado a vapor</h3>
+        <p>Camisas, pantalones de vestir y uniformes. Vuelven colgados.</p>
+        <p class="ficha__dato ej" data-ejemplo>Por prenda</p>
+      </li>
+      <li class="ficha">
+        <h3>Ropa delicada</h3>
+        <p>Lana, seda y prendas con etiqueta de lavado en seco se ven aparte.</p>
+        <p class="ficha__dato ej" data-ejemplo>Se revisa antes</p>
+      </li>
+    </ul>
+  </div>
+</section>
+
+
+<!-- ═══════════ MOSAICO ═══════════ -->
+<section class="mos" aria-labelledby="t-mos">
+  <div class="ancho">
+    <h2 id="t-mos">Cómo se ve el trabajo terminado.</h2>
+    <p class="entradilla">Fotos del rubro, no del local: cuando la lavandería nos
+      pase las suyas, se cambian todas.</p>
+  </div>
+  <ul class="mos__grilla">
+    <li><img src="imagenes/mos1-01.jpg" width="1200" height="800" loading="lazy" decoding="async" alt="Pila de ropa doblada sobre una cama."></li>
+    <li><img src="imagenes/mos2-01.jpg" width="1200" height="800" loading="lazy" decoding="async" alt="Prendas de punto dobladas una sobre otra."></li>
+    <li><img src="imagenes/mos3-01.jpg" width="1200" height="800" loading="lazy" decoding="async" alt="Ropa blanca y beige apilada."></li>
+    <li><img src="imagenes/mos4-01.jpg" width="1200" height="800" loading="lazy" decoding="async" alt="Manos sosteniendo un canasto con ropa limpia."></li>
+    <li><img src="imagenes/mos5-01.jpg" width="1200" height="800" loading="lazy" decoding="async" alt="Un canasto de mimbre con ropa recién lavada."></li>
+    <li><img src="imagenes/mos6-01.jpg" width="1200" height="800" loading="lazy" decoding="async" alt="Una plancha pasando sobre una tela."></li>
+  </ul>
+</section>
+
+
+<!-- ═══════════ CONTACTO ═══════════ -->
+<section class="contacto" id="contacto" aria-labelledby="t-contacto">
+  <div class="ancho contacto__cols">
+    <div>
+      <p class="sobre">Escribir</p>
+      <h2 id="t-contacto">Ñuñoa, y le pasan a buscar.</h2>
+      <p>Lo más rápido es WhatsApp con las tres cosas del formulario de arriba.
+        Si prefiere hablar, el mismo número contesta llamadas.</p>
+      <p class="contacto__ir">
+        <a class="boton" href="https://wa.me/56995931443" target="_blank" rel="noopener noreferrer">Escribir por WhatsApp</a>
+        <a class="boton boton--linea" href="tel:+56995931443">Llamar</a>
+      </p>
+    </div>
+    <dl class="datos">
+      <div><dt>WhatsApp y teléfono</dt><dd><a href="tel:+56995931443">9 9593 1443</a></dd></div>
+      <div><dt>Comuna</dt><dd>Ñuñoa, Santiago</dd></div>
+      <div><dt>Dirección</dt><dd class="ej" data-ejemplo>Falta: la confirma la lavandería</dd></div>
+      <div><dt>Horario</dt><dd class="ej" data-ejemplo>Lunes a sábado, 9:00 a 20:00</dd></div>
+      <div><dt>Cobertura del retiro</dt><dd class="ej" data-ejemplo>Ñuñoa y comunas vecinas</dd></div>
+      <div><dt>En Google</dt><dd>559 reseñas (27-08-2026)</dd></div>
+    </dl>
+  </div>
+</section>
+
+
+<!-- ═══════════ PARA EL DUEÑO ═══════════ -->
+<section class="dueno" aria-labelledby="t-dueno">
+  <div class="ancho">
+    <p class="sobre sobre--claro">Para el dueño</p>
+    <h2 id="t-dueno">Qué es esto y qué no.</h2>
+    <div class="dueno__cols">
+      <div>
+        <h3>Qué es</h3>
+        <p>Una propuesta de sitio web hecha por nuestra cuenta. La lavandería no
+          la encargó ni la ha revisado. Dimos por cierto sólo lo público: las 559
+          reseñas en Google (27-08-2026), el número de contacto y el retiro a
+          domicilio que anuncian.</p>
+      </div>
+      <div>
+        <h3>Qué es ejemplo</h3>
+        <p>Los plazos, los tipos de servicio, la carga mínima, la cobertura del
+          retiro, el horario y la dirección. Todo va marcado con línea punteada.
+          No hay precios a propósito: los pone usted.</p>
+      </div>
+      <div>
+        <h3>El dominio que ya tienen</h3>
+        <p><b>maslavanderias.cl</b> existe, pero el 06-09-2026 la portada devolvía
+          un error 404 de dominio sin conectar. Quien lo busca llega a nada. Esta
+          página no carga nada de terceros y puede quedar ahí en un día.</p>
+      </div>
+    </div>
+    <p class="dueno__cierre">
+      <a class="flecha flecha--claro" href="mailto:cristalwebcl@gmail.com?subject=Sitio%20web%20para%20M%C3%A1s%20Lavander%C3%ADas">Escribirnos por correo <span aria-hidden="true">→</span></a>
+      <a class="flecha flecha--claro" href="https://cristalwebcl.github.io/cristalweb/" rel="noopener">Ver otros trabajos <span aria-hidden="true">→</span></a>
+    </p>
+  </div>
+</section>
+
+</main>
+
+<footer class="pie">
+  <p>Sitio de demostración preparado por CristalWeb. La lavandería no lo ha
+     encargado ni ha revisado su contenido. Los plazos, servicios, horario,
+     cobertura y dirección son ejemplos marcados como tales. Las fotos y los
+     videos de fondo son de bancos libres y no muestran el local.</p>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>

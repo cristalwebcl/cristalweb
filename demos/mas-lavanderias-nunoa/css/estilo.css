@@ -1,0 +1,396 @@
+/* ══════════════════════════════════════════════════════════════════
+   MÁS LAVANDERÍAS · Ñuñoa — CristalWeb
+   Demo sin encargo. Construida el 06-09-2026.
+
+   DIRECCIÓN — «ROPA LIMPIA»
+   La ropa recién lavada: blanco, el agua clara del enjuague y el gris de
+   la tela mojada. Fondo claro, mucho aire y una sola idea por pantalla,
+   porque el argumento del negocio es que usted no tiene que pensar en
+   esto. Nada de celeste de detergente ni de espuma dibujada.
+
+   DESLINDE DE PALETA — el agua es CIAN, no azul
+   El registro tiene once azules y TODOS caen entre 205° y 220° de tono:
+   azul de lago `#1B5878`, azul enlozado `#1E5470`, glaciar `#166B8F`,
+   de jaba `#1B5FA8`, de señal `#154C86`, de loza `#1D4E89`, vial
+   `#1B4FA8`. El de acá es `#0A6B7D`, tono 190°: verde-agua, el color del
+   agua limpia en un tambor, no el del acero ni el de la noche. Contra la
+   15 (Ruta Chile) no hay choque: esa terminó verde de aprobado.
+   Es además la primera paleta CLARA-FRÍA de la tanda Santiago (las seis
+   anteriores son oscuras o cálidas).
+
+   TRÍO
+   · Display: Varela Round — 0 usos en el registro. Redonda y limpia,
+     sin una sola esquina: es la forma de una prenda doblada y la del
+     ojo de buey. Un solo peso (400), así que las fuentes pesan 62 KB.
+   · Cuerpo: Outfit ×1 (86-adkantu, rubro y ciudad lejanos). Geométrica
+     de terminales rectas: se distingue de la display en párrafo.
+   · Dato: Kode Mono ×4 (taller, veterinaria, ferretería y restaurante,
+     todas del sur). Las monos se acabaron el 26-08-2026 y repetir es lo
+     normal; ésta es la primera vez en Santiago y en lavandería.
+
+   ESCENA: el tambor gira — la puerta se cierra y el tambor da una vuelta
+   cada 9 s. Es el único bucle de la página y es reposo, no entrada.
+   ══════════════════════════════════════════════════════════════════ */
+
+:root {
+  --blanco:   #FBFCFC;   /* fondo */
+  --blanco-2: #F0F5F6;   /* paneles y tablas */
+  --tela:     #DCE6E7;   /* líneas, textura de tejido */
+  --tinta:    #142127;   /* texto  16,1:1 sobre blanco */
+  --medio:    #4F6068;   /* secundario  6,4:1 sobre blanco-2 */
+  --agua:     #0A6B7D;   /* texto de acento  5,6:1 sobre blanco */
+  --agua-o:   #0E93AB;   /* objetos y filetes, nunca texto chico */
+  --agua-cl:  #CDE9EE;   /* rellenos; encima va SIEMPRE --tinta */
+  --agua-t:   #063946;   /* paneles oscuros  blanco 13,4:1 */
+
+  --display: "Varela Round", "Trebuchet MS", sans-serif;
+  --cuerpo:  "Outfit", "Segoe UI", system-ui, sans-serif;
+  --mono:    "Kode Mono", "Consolas", monospace;
+
+  --p--1: clamp(.78rem, .74rem + .2vw, .86rem);
+  --p-0:  clamp(1rem, .96rem + .2vw, 1.08rem);
+  --p-1:  clamp(1.18rem, 1.08rem + .5vw, 1.4rem);
+  --p-2:  clamp(1.5rem, 1.3rem + 1vw, 2.1rem);
+  --p-3:  clamp(2rem, 1.6rem + 2vw, 3.1rem);
+  --p-4:  clamp(2.6rem, 1.9rem + 3.4vw, 4.6rem);
+
+  --ancho: min(1180px, 92vw);
+  --aire:  clamp(3rem, 2rem + 5vw, 6rem);
+  /* Curva con rebote corto (linear() de 2026): entra, pasa un pelo y
+     vuelve. Donde no exista, el navegador usa la de respaldo. */
+  --muelle: linear(0, .32 14%, .68 26%, .92 38%, 1.04 50%, 1.01 64%, .99 78%, 1);
+  --sale: cubic-bezier(.22, .61, .36, 1);
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+[hidden] { display: none !important; }
+
+html { scroll-behavior: auto; }
+body {
+  margin: 0; background: var(--blanco); color: var(--tinta);
+  font-family: var(--cuerpo); font-size: var(--p-0); line-height: 1.62;
+  -webkit-font-smoothing: antialiased;
+}
+img, svg, video { max-width: 100%; }
+p { text-wrap: pretty; }
+
+h1, h2, h3 { font-family: var(--display); font-weight: 400; line-height: 1.12; margin: 0 0 .6rem; letter-spacing: -.01em; }
+h2 { font-size: var(--p-3); }
+h3 { font-size: var(--p-1); }
+.ancho { width: var(--ancho); margin-inline: auto; }
+
+a { color: var(--agua); }
+a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible {
+  outline: 3px solid var(--agua-o); outline-offset: 3px; border-radius: 4px;
+}
+
+.sobre {
+  font-family: var(--mono); font-size: var(--p--1); letter-spacing: .14em;
+  text-transform: uppercase; color: var(--agua); margin: 0 0 .8rem;
+}
+.sobre--claro { color: var(--agua-cl); }
+.entradilla { font-size: var(--p-1); color: var(--medio); max-width: 62ch; margin: 0 0 1.6rem; }
+.nota { font-size: var(--p--1); color: var(--medio); }
+.sub { margin-top: 2.4rem; }
+
+/* Dato de ejemplo: línea punteada, y el rótulo lo pone el ::after sólo
+   cuando el elemento es un bloque corto. */
+.ej { border-bottom: 2px dotted var(--agua-o); }
+span.ej[data-ejemplo] {
+  border: 0; font-family: var(--mono); font-size: .72em; letter-spacing: .1em;
+  text-transform: uppercase; color: var(--agua); background: var(--agua-cl);
+  padding: .12em .5em; border-radius: 4px; white-space: nowrap;
+}
+
+.boton {
+  display: inline-flex; align-items: center; justify-content: center;
+  min-height: 48px; padding: .7rem 1.5rem; border-radius: 999px;
+  background: var(--agua); color: #FFFFFF; text-decoration: none;
+  font-weight: 500; border: 2px solid var(--agua);
+  transition: transform .25s var(--sale), background-color .25s ease;
+}
+.boton:hover { background: var(--agua-t); border-color: var(--agua-t); transform: translateY(-2px); }
+.boton--linea { background: transparent; color: var(--agua); }
+.boton--linea:hover { background: var(--agua-cl); border-color: var(--agua-t); color: var(--agua-t); }
+.boton--chico { min-height: 44px; padding: .5rem 1.1rem; font-size: var(--p--1); }
+
+.flecha { display: inline-flex; gap: .4rem; align-items: center; min-height: 44px; text-decoration: none; font-weight: 500; }
+.flecha:hover span { transform: translateX(4px); }
+.flecha span { transition: transform .25s var(--sale); }
+.flecha--claro { color: var(--agua-cl); }
+
+/* ── Banda de propuesta ─────────────────────────────────────────── */
+.propuesta { background: var(--agua-t); color: #EAF6F8; padding: .9rem 0; }
+.propuesta p { width: var(--ancho); margin: 0 auto; }
+.propuesta__que { font-family: var(--mono); font-size: var(--p--1); letter-spacing: .04em; }
+.propuesta__que b { color: var(--agua-cl); font-weight: 400; }
+.propuesta__gancho { margin-top: .3rem; font-size: var(--p--1); color: #C9E4E9; }
+
+/* ── Cabecera ───────────────────────────────────────────────────── */
+.cab {
+  position: sticky; top: 0; z-index: 20;
+  display: flex; align-items: center; gap: 1.2rem;
+  width: 100%; padding: .7rem max(4vw, calc((100vw - var(--ancho)) / 2));
+  background: rgba(251,252,252,.86); backdrop-filter: blur(8px);
+  border-bottom: 1px solid transparent; transition: border-color .3s ease, box-shadow .3s ease;
+}
+.cab--flota { border-bottom-color: var(--tela); box-shadow: 0 6px 24px rgba(20,33,39,.06); }
+.cab__marca { display: flex; align-items: center; gap: .6rem; min-height: 44px; text-decoration: none; color: var(--tinta); margin-right: auto; }
+.cab__sello svg { display: block; width: 30px; height: 30px; fill: none; stroke: var(--agua-o); stroke-width: 3; }
+.cab__nombre { font-family: var(--display); font-size: var(--p-1); line-height: 1.05; }
+.cab__sub { display: block; font-family: var(--mono); font-size: .62rem; letter-spacing: .12em; text-transform: uppercase; color: var(--medio); }
+.cab__nav { display: flex; gap: 1.4rem; }
+.cab__nav a { color: var(--medio); text-decoration: none; font-size: var(--p--1); min-height: 44px; display: inline-flex; align-items: center; }
+.cab__nav a:hover { color: var(--agua); }
+@media (max-width: 900px) { .cab__nav { display: none; } }
+
+/* ── Portada ────────────────────────────────────────────────────── */
+.portada {
+  position: relative; isolation: isolate; overflow: hidden;
+  min-height: min(86vh, 760px); display: flex; flex-direction: column;
+  justify-content: center; padding: var(--aire) 0;
+}
+.portada__foto { position: absolute; inset: 0; z-index: -2; }
+.portada__foto img, .portada__video {
+  display: block; width: 100%; height: 100%;
+  object-fit: cover; object-position: 50% 46%;
+  -webkit-mask-image: linear-gradient(90deg, transparent 0%, transparent 14%, rgba(0,0,0,.28) 38%, rgba(0,0,0,.8) 60%, #000 76%, #000 100%);
+          mask-image: linear-gradient(90deg, transparent 0%, transparent 14%, rgba(0,0,0,.28) 38%, rgba(0,0,0,.8) 60%, #000 76%, #000 100%);
+}
+/* Velo del color DE la portada (blanco), en rgba y terminando en 0.
+   El titular queda sobre blanco casi puro: 16:1 aunque la foto que haya
+   debajo sea la más clara posible. */
+.portada__foto::after {
+  content: ""; position: absolute; inset: 0;
+  background: linear-gradient(90deg,
+      rgba(251,252,252,1) 0%, rgba(251,252,252,1) 30%,
+      rgba(251,252,252,.82) 48%, rgba(251,252,252,.46) 66%,
+      rgba(251,252,252,.16) 84%, rgba(251,252,252,0) 97%);
+}
+.portada__cols {
+  width: var(--ancho); margin-inline: auto; position: relative; z-index: 2;
+  display: grid; grid-template-columns: minmax(0, 1.15fr) minmax(0, .85fr);
+  gap: clamp(1.5rem, 4vw, 4rem); align-items: center;
+}
+.portada__titulo { font-size: var(--p-4); max-width: 11ch; }
+.portada__titulo span { display: block; }
+.portada__titulo span:last-child { color: var(--agua); }
+.portada__bajada { font-size: var(--p-1); color: var(--medio); max-width: 46ch; }
+.portada__bajada b { color: var(--tinta); font-weight: 500; }
+.portada__botones { display: flex; flex-wrap: wrap; gap: .8rem; margin-top: 1.8rem; }
+
+/* Entradas de la portada, con el muelle */
+.js .portada__texto > * { opacity: 0; transform: translateY(14px); }
+.portada__texto.ok > * { animation: entra .6s var(--muelle) forwards; }
+.portada__texto.ok > *:nth-child(2) { animation-delay: .07s; }
+.portada__texto.ok > *:nth-child(3) { animation-delay: .14s; }
+.portada__texto.ok > *:nth-child(4) { animation-delay: .21s; }
+@keyframes entra { to { opacity: 1; transform: none; } }
+
+/* ── Escena · el tambor gira ────────────────────────────────────── */
+.escena--tambor { justify-self: end; width: min(100%, 320px); text-align: center; }
+.tambor__svg { display: block; width: 100%; height: auto; }
+.tambor__marco { fill: none; stroke: var(--agua-o); stroke-width: 3; opacity: .55; }
+.tambor__vidrio { fill: rgba(205,233,238,.5); stroke: var(--agua-o); stroke-width: 2; opacity: .8; }
+.tambor__hoyo { fill: none; stroke: var(--agua-t); stroke-width: 1.5; stroke-dasharray: 3 11; opacity: .45; }
+.tambor__ropa { fill: var(--agua-o); opacity: .35; }
+.tambor__ropa--2 { fill: var(--agua-t); opacity: .22; }
+.tambor__ropa--3 { fill: var(--agua); opacity: .28; }
+.tambor__aletas rect { fill: var(--agua-t); opacity: .5; }
+.tambor__gira { transform-origin: 150px 150px; animation: gira 9s linear infinite; }
+@keyframes gira { to { transform: rotate(360deg); } }
+/* La puerta se cierra: el arco se dibuja una vez y se queda. */
+.tambor__puerta { fill: none; stroke: var(--agua); stroke-width: 5; stroke-linecap: round; stroke-dasharray: 380; stroke-dashoffset: 0; }
+.js .tambor__puerta { stroke-dashoffset: 380; }
+.escena--tambor.ok .tambor__puerta { animation: cierra .5s var(--sale) forwards; }
+@keyframes cierra { to { stroke-dashoffset: 0; } }
+.escena__pie { margin: .5rem 0 0; font-family: var(--mono); font-size: var(--p--1); letter-spacing: .1em; text-transform: uppercase; color: var(--medio); }
+
+@media (prefers-reduced-motion: reduce) {
+  .tambor__gira { animation: none; }
+  .js .tambor__puerta { stroke-dashoffset: 0; }
+}
+
+@media (max-width: 760px) {
+  .portada { min-height: 0; padding-top: 2rem; }
+  .portada__cols { grid-template-columns: 1fr; }
+  .portada__foto img, .portada__video { object-position: 50% 50%;
+    -webkit-mask-image: linear-gradient(180deg, transparent 0%, rgba(0,0,0,.5) 34%, #000 64%);
+            mask-image: linear-gradient(180deg, transparent 0%, rgba(0,0,0,.5) 34%, #000 64%); }
+  .portada__foto::after { background: linear-gradient(180deg, rgba(251,252,252,1) 0%, rgba(251,252,252,.9) 38%, rgba(251,252,252,.5) 72%, rgba(251,252,252,.1) 100%); }
+  .escena--tambor { justify-self: start; width: min(58%, 230px); margin-top: 1.4rem; }
+}
+
+/* ── Cifras ─────────────────────────────────────────────────────── */
+.cifras { background: var(--agua-t); color: #EAF6F8; padding: clamp(2rem, 4vw, 3rem) 0; }
+.cifras__lista { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(4, 1fr); gap: 1.4rem; }
+.cifras__lista li { text-align: center; }
+.cifras__lista b { display: block; font-family: var(--display); font-size: var(--p-3); line-height: 1; color: #FFFFFF; }
+.cifras__lista span { display: block; margin-top: .4rem; font-size: var(--p--1); color: #B9DBE1; }
+@media (max-width: 700px) { .cifras__lista { grid-template-columns: repeat(2, 1fr); } }
+
+/* ── Pieza firma · qué entra ────────────────────────────────────── */
+.entra { padding: var(--aire) 0; }
+.tabla { width: 100%; border-collapse: collapse; margin: 1.6rem 0 .8rem; font-size: var(--p--1); }
+.tabla caption { text-align: left; color: var(--medio); font-size: var(--p--1); margin-bottom: .6rem; }
+.tabla th, .tabla td { text-align: left; padding: .85rem .9rem; border-bottom: 1px solid var(--tela); }
+.tabla thead th { font-family: var(--mono); font-size: .72rem; letter-spacing: .1em; text-transform: uppercase; color: var(--agua); border-bottom-color: var(--agua-o); }
+.tabla tbody th { font-weight: 500; color: var(--tinta); }
+.tabla td { color: var(--medio); }
+.tabla .dato { font-family: var(--mono); color: var(--tinta); background: var(--agua-cl); padding: .1rem .45rem; border-radius: 4px; }
+.tabla-entra tbody tr:hover { background: var(--blanco-2); }
+@media (max-width: 620px) {
+  .tabla thead { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); }
+  .tabla tbody tr { display: block; padding: .9rem 0; border-bottom: 1px solid var(--tela); }
+  .tabla tbody th, .tabla td { display: block; border: 0; padding: .15rem 0; }
+  .tabla tbody th { font-size: var(--p-0); }
+}
+
+.lista-marca { list-style: none; margin: 1rem 0 0; padding: 0; display: grid; gap: .9rem; max-width: 62ch; }
+.lista-marca li { padding-left: 1.4rem; position: relative; color: var(--medio); }
+.lista-marca li::before { content: ""; position: absolute; left: 0; top: .62em; width: 8px; height: 8px; border-radius: 50%; background: var(--agua-o); }
+.lista-marca b { color: var(--tinta); font-weight: 500; }
+
+/* ── Tajo ───────────────────────────────────────────────────────── */
+.tajo { position: relative; isolation: isolate; }
+.tajo img { display: block; width: 100%; height: clamp(240px, 42vw, 420px); object-fit: cover; object-position: 50% 55%; }
+.tajo__txt {
+  position: absolute; inset: auto 0 0 0; padding: var(--aire) 0 1.6rem;
+  background: linear-gradient(180deg, rgba(6,57,70,0) 0%, rgba(6,57,70,.82) 62%, rgba(6,57,70,.94) 100%);
+}
+.tajo__txt p { width: var(--ancho); margin: 0 auto; color: #FFFFFF; font-family: var(--display); font-size: var(--p-2); max-width: 22ch; }
+
+/* ── Retiro ─────────────────────────────────────────────────────── */
+.retiro { padding: var(--aire) 0; background: var(--blanco-2); }
+.pasos { list-style: none; margin: 2rem 0 0; padding: 0; display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.6rem; }
+.pasos li { background: var(--blanco); border: 1px solid var(--tela); border-radius: 14px; padding: 1.4rem; }
+.pasos__n { display: block; font-family: var(--display); font-size: var(--p-3); line-height: 1; color: var(--agua-o); margin-bottom: .4rem; }
+.pasos p { margin: 0; color: var(--medio); }
+@media (max-width: 760px) { .pasos { grid-template-columns: 1fr; } }
+
+.pedir { margin-top: 2.6rem; background: var(--blanco); border: 1px solid var(--tela); border-radius: 16px; padding: clamp(1.2rem, 3vw, 2rem); }
+.pedir__ayuda { color: var(--medio); font-size: var(--p--1); margin-top: 0; }
+.pedir__campos { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1rem 1.4rem; }
+@media (max-width: 620px) { .pedir__campos { grid-template-columns: 1fr; } }
+.campo { margin: 0; display: grid; gap: .3rem; }
+.campo label { font-family: var(--mono); font-size: .72rem; letter-spacing: .08em; text-transform: uppercase; color: var(--medio); }
+.campo input, .campo select {
+  font: inherit; font-size: var(--p--1); color: var(--tinta);
+  background: var(--blanco-2); border: 1px solid var(--tela); border-radius: 8px;
+  padding: .7rem .8rem; min-height: 46px; width: 100%;
+}
+.campo input::placeholder { color: #7C8C93; }
+.pedir__salida {
+  margin: 1.4rem 0 0; padding: .9rem 1rem; background: var(--agua-cl);
+  border-radius: 10px; font-family: var(--mono); font-size: var(--p--1);
+  color: var(--tinta); word-break: break-word;
+}
+.pedir__rotulo { color: var(--agua); text-transform: uppercase; letter-spacing: .1em; font-size: .72rem; }
+.pedir__ir { margin: 1.2rem 0 0; }
+
+/* ── Mitades ────────────────────────────────────────────────────── */
+.mit { display: grid; grid-template-columns: 1fr 1fr; align-items: center; gap: 0; }
+.mit__foto img { display: block; width: 100%; height: 100%; min-height: 320px; max-height: 620px; object-fit: cover; }
+.mit__txt { padding: var(--aire) clamp(1.5rem, 5vw, 4rem); }
+.mit__txt p { color: var(--medio); max-width: 46ch; }
+@media (max-width: 800px) { .mit { grid-template-columns: 1fr; } }
+
+/* ── Cita (con video) ───────────────────────────────────────────── */
+.cita { position: relative; isolation: isolate; overflow: hidden; }
+.cita img, .cita__video { display: block; width: 100%; height: clamp(300px, 52vw, 520px); object-fit: cover; object-position: 50% 45%; }
+.cita::after { content: ""; position: absolute; inset: 0; background: linear-gradient(90deg, rgba(6,57,70,.92) 0%, rgba(6,57,70,.7) 44%, rgba(6,57,70,.25) 78%, rgba(6,57,70,.1) 100%); }
+.cita__txt { position: absolute; inset: 0; z-index: 2; display: flex; align-items: center; margin: 0; }
+.cita__txt p {
+  width: var(--ancho); margin-inline: auto; color: #FFFFFF;
+  font-family: var(--display); font-size: var(--p-2); max-width: 24ch;
+}
+
+/* ── El local, con telón ────────────────────────────────────────── */
+.local { position: relative; isolation: isolate; padding: var(--aire) 0; color: #EAF6F8; background: var(--agua-t); overflow: hidden; }
+.telon { position: absolute; inset: 0; z-index: -1; }
+.telon img, .telon__video { display: block; width: 100%; height: 100%; object-fit: cover; opacity: .3; }
+.telon::after { content: ""; position: absolute; inset: 0; background: linear-gradient(180deg, rgba(6,57,70,.86) 0%, rgba(6,57,70,.94) 100%); }
+.local h2 { color: #FFFFFF; }
+.local .sobre { color: var(--agua-cl); }
+.local .entradilla { color: #C4E2E8; }
+.fichas { list-style: none; margin: 2rem 0 0; padding: 0; display: grid; grid-template-columns: repeat(4, 1fr); gap: 1.2rem; }
+.ficha { background: rgba(251,252,252,.07); border: 1px solid rgba(205,233,238,.28); border-radius: 14px; padding: 1.2rem; }
+.ficha h3 { color: #FFFFFF; }
+.ficha p { margin: 0 0 .6rem; color: #BEDDE4; font-size: var(--p--1); }
+.ficha__dato { font-family: var(--mono); font-size: var(--p--1); color: var(--agua-cl); }
+@media (max-width: 900px) { .fichas { grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 560px) { .fichas { grid-template-columns: 1fr; } }
+
+/* ── Mosaico ────────────────────────────────────────────────────── */
+.mos { padding: var(--aire) 0; }
+.mos__grilla { list-style: none; margin: 2rem 0 0; padding: 0 max(4vw, calc((100vw - var(--ancho)) / 2)); display: grid; grid-template-columns: repeat(3, 1fr); gap: .8rem; }
+.mos__grilla img { display: block; width: 100%; height: clamp(150px, 20vw, 240px); object-fit: cover; border-radius: 10px; }
+@media (max-width: 760px) { .mos__grilla { grid-template-columns: repeat(2, 1fr); } }
+
+/* ── Contacto ───────────────────────────────────────────────────── */
+.contacto { padding: var(--aire) 0; background: var(--blanco-2); }
+.contacto__cols { display: grid; grid-template-columns: 1fr 1fr; gap: clamp(1.6rem, 4vw, 3.4rem); align-items: start; }
+.contacto p { color: var(--medio); max-width: 46ch; }
+.contacto__ir { display: flex; flex-wrap: wrap; gap: .8rem; margin-top: 1.4rem; }
+.datos { margin: 0; display: grid; gap: .9rem; }
+.datos > div { display: grid; grid-template-columns: 12rem 1fr; gap: .6rem; padding-bottom: .8rem; border-bottom: 1px solid var(--tela); }
+.datos dt { font-family: var(--mono); font-size: var(--p--1); letter-spacing: .06em; text-transform: uppercase; color: var(--medio); }
+.datos dd { margin: 0; color: var(--tinta); }
+.datos dd a { min-height: 44px; display: inline-flex; align-items: center; }
+@media (max-width: 800px) { .contacto__cols { grid-template-columns: 1fr; } .datos > div { grid-template-columns: 1fr; gap: .1rem; } }
+
+/* ── Para el dueño ──────────────────────────────────────────────── */
+.dueno { padding: var(--aire) 0; background: var(--agua-t); color: #EAF6F8; }
+.dueno h2 { color: #FFFFFF; }
+.dueno__cols { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.8rem; margin-top: 1.6rem; }
+.dueno h3 { color: var(--agua-cl); font-size: var(--p-0); font-family: var(--mono); letter-spacing: .08em; text-transform: uppercase; }
+.dueno p { color: #C4E2E8; font-size: var(--p--1); }
+.dueno b { color: #FFFFFF; }
+.dueno__cierre { display: flex; flex-wrap: wrap; gap: 1.6rem; margin-top: 2rem; }
+@media (max-width: 800px) { .dueno__cols { grid-template-columns: 1fr; } }
+
+/* ── Pie ────────────────────────────────────────────────────────── */
+.pie { background: #0A2B35; color: #9FC6CE; padding: 2rem 0; }
+.pie p { width: var(--ancho); margin: 0 auto; font-size: var(--p--1); max-width: 80ch; }
+
+/* ── Apariciones ────────────────────────────────────────────────── */
+.js .rev { opacity: 0; transform: translateY(16px); }
+.rev.ok { opacity: 1; transform: none; transition: opacity .3s ease, transform .6s var(--sale); }
+
+/* ══════════════════════════════════════════════════════════════════
+   VIDEO DE FONDO
+   La foto sigue siendo la base y el video se funde encima cuando puede
+   reproducirse. Si el visitante pidió menos movimiento o ahorra datos,
+   main.js no lo pide y no se descarga ni un byte.
+   ══════════════════════════════════════════════════════════════════ */
+.portada__video, .cita__video {
+  position: absolute; inset: 0; opacity: 0;
+  transition: opacity 1.4s ease; pointer-events: none;
+}
+.portada__video.video--ver, .cita__video.video--ver { opacity: 1; }
+
+/* Difuminado al scroll (Baseline 2026). Sólo escritorio y sólo si el
+   visitante no pidió menos movimiento: la portada se desenfoca al
+   quedar atrás y la cita entra desenfocada y se enfoca. El blur va en
+   el CONTENEDOR, con un scale de 1,06 para que no se vea el borde. */
+@supports (animation-timeline: scroll()) {
+  @media (prefers-reduced-motion: no-preference) and (min-width: 761px) {
+    .portada__foto {
+      animation: portada-se-va linear both;
+      animation-timeline: scroll(root block);
+      animation-range: 0 90vh;
+    }
+    @keyframes portada-se-va {
+      to { filter: blur(7px); transform: scale(1.06); opacity: .55; }
+    }
+    .cita {
+      animation: cita-enfoca linear both;
+      animation-timeline: view(block);
+      animation-range: entry 0% entry 95%;
+    }
+    @keyframes cita-enfoca {
+      from { filter: blur(9px); }
+      to   { filter: blur(0); }
+    }
+  }
+}
