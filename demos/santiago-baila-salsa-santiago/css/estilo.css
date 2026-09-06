@@ -155,11 +155,16 @@ p.ej { padding: .5rem .7rem .4rem; margin-top: .8rem; }
       rgba(23,17,15,.14) 82%, rgba(23,17,15,0) 96%);
 }
 @media (max-width: 760px) {
-  .portada__foto img, .portada__video { object-position: 55% 45%;
-    -webkit-mask-image: linear-gradient(180deg, #000 0%, #000 34%, transparent 72%);
-            mask-image: linear-gradient(180deg, #000 0%, #000 34%, transparent 72%); }
-  .portada__foto::after { background: linear-gradient(180deg, rgba(23,17,15,.12) 0%, rgba(23,17,15,.45) 40%, rgba(23,17,15,1) 66%); }
-  .portada { justify-content: flex-end; min-height: 0; padding-top: 44vh; }
+  /* En el teléfono el clip va ABAJO y el texto arriba: los zapatos están en el
+     borde inferior del cuadro (clip de Pexels 19851286) y con el texto abajo
+     quedaban tapados por el velo. El cuadro ocupa el 64 % inferior para que la
+     rebanada vertical muestre un tercio del ancho del clip y no un detalle. */
+  .portada__foto { inset: auto 0 0 0; height: 64%; }
+  .portada__foto img, .portada__video { object-position: 35% 100%;
+    -webkit-mask-image: linear-gradient(180deg, transparent 0%, rgba(0,0,0,.55) 30%, #000 52%);
+            mask-image: linear-gradient(180deg, transparent 0%, rgba(0,0,0,.55) 30%, #000 52%); }
+  .portada__foto::after { background: linear-gradient(180deg, rgba(23,17,15,1) 0%, rgba(23,17,15,.7) 26%, rgba(23,17,15,.22) 56%, rgba(23,17,15,0) 100%); }
+  .portada { justify-content: flex-start; min-height: 0; padding-top: 1.6rem; padding-bottom: 40vh; }
 }
 .portada__cols { width: var(--ancho); margin-inline: auto; position: relative; z-index: 2; display: grid; grid-template-columns: minmax(0, 1.2fr) minmax(0, .8fr); gap: clamp(1.5rem, 4vw, 4rem); align-items: center; }
 .portada__titulo { font-size: var(--p-4); max-width: 12ch; line-height: 1.02; }
@@ -173,7 +178,10 @@ p.ej { padding: .5rem .7rem .4rem; margin-top: .8rem; }
    huella se enciende en su cuenta: 1-2-3, pausa, 5-6-7, pausa; el ciclo
    dura 4 s como un compás lento de salsa. Sólo opacity y scale. Con
    reduced-motion, las seis encendidas y quietas. */
-.compas { justify-self: end; width: min(100%, 300px); text-align: center; }
+.compas { justify-self: end; width: min(100%, 300px); text-align: center; position: relative; }
+/* Respaldo del color DE la portada detrás de las huellas: el clip trae pantalones
+   blancos justo en esa columna y el ámbar se perdía encima. */
+.compas::before { content: ""; position: absolute; inset: -14% -22%; z-index: -1; background: radial-gradient(closest-side, rgba(23,17,15,.7), rgba(23,17,15,0)); }
 .compas__svg { display: block; width: 100%; height: auto; overflow: visible; }
 .compas__pie { margin: .4rem 0 0; font-family: var(--mono); font-size: var(--p--1); letter-spacing: .12em; text-transform: uppercase; color: var(--medio); }
 .huella ellipse { fill: var(--huella); }
