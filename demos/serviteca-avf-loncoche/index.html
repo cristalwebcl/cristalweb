@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="es-CL" class="no-js">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Serviteca AVF — Loncoche</title>
+<meta name="description" content="Serviteca en Loncoche. Cuándo un neumático se repara y cuándo no, y la presión antes de salir a la ruta.">
+
+<!-- ═══════════════════════════════════════════════════════════════
+     RESCATE DE LA CLASE .js — regla 2 de la casa.
+     El script inline (sin defer) marca .js para que el CSS pueda
+     esconder lo que va a animarse. El temporizador de 4 s la quita
+     si main.js nunca llega: sin él, un error de red dejaría media
+     página invisible para siempre.
+     ═══════════════════════════════════════════════════════════════ -->
+<script>
+  (function () {
+    var d = document.documentElement;
+    d.classList.remove('no-js');
+    d.classList.add('js');
+    window.__rescate = setTimeout(function () { d.classList.remove('js'); }, 4000);
+  })();
+</script>
+
+<!-- Fuentes propias: cero peticiones a terceros. El preload va SOLO
+     para la display, que es la del titular de la portada. -->
+<link rel="preload" href="assets/fuentes/aldrich-400-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="assets/fuentes.css">
+<link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+
+<div class="propuesta">
+  <p class="propuesta__que">Propuesta de sitio web — preparada para <b>Serviteca AVF</b> por CristalWeb</p>
+  <p class="propuesta__gancho">Ya se armaron una página gratis por su cuenta: la intención está. Esto es lo mismo, pero con casa propia y hecho para el teléfono del que va manejando.</p>
+</div>
+
+<header class="cab" id="cab">
+  <a class="cab__marca" href="#portada">
+    <span class="valvula" aria-hidden="true"></span>
+    <span class="cab__nombre">Serviteca AVF</span>
+  </a>
+  <nav class="cab__nav" aria-label="Secciones">
+    <a href="#casos">¿Se repara?</a>
+    <a href="#presion">La presión del viaje</a>
+  </nav>
+  <a class="cab__wsp" href="https://wa.me/56945106437" rel="noopener">
+    <span class="cab__wsp-rot">Loncoche</span>
+    <span class="cab__wsp-num">9 4510 6437</span>
+  </a>
+</header>
+
+<main>
+
+<!-- ═════════ PORTADA ═════════ -->
+<section class="portada portada--foto" id="portada" aria-labelledby="t-portada">
+  <!-- FONDO DE PORTADA: 2560 px, nitido. Se disuelve hacia el titular
+       con un gradiente lateral, no con desenfoque. -->
+  <div class="portada__foto" aria-hidden="true">
+    <img src="imagenes/port-01.jpg" width="839" height="1600"
+         decoding="async" fetchpriority="high" alt="">
+  </div>
+
+  <div class="manometro" aria-hidden="true">
+    <span class="manometro__dial"></span>
+    <span class="manometro__aguja"></span>
+  </div>
+  <div class="portada__texto">
+    <p class="sitio">Serviteca · Loncoche</p>
+    <h1 id="t-portada">¿Se repara<br>o no se repara?</h1>
+    <p class="bajada">Con el neumático en la mano, esa es la única pregunta. Acá está
+      la respuesta escrita, caso por caso, antes de que le vendan uno nuevo.</p>
+  </div>
+</section>
+
+<!-- ═════════ LA PIEZA FIRMA — LOS CASOS (K) ═════════ -->
+<section class="casos con-telon" id="casos" aria-labelledby="t-casos">
+  <div class="telon" aria-hidden="true">
+    <img src="imagenes/telon-01.jpg" width="1200" height="797" decoding="async" alt="">
+  </div>
+
+  <!-- AURA DE COLOR: la foto de rubro reventada a desenfoque. No se lee
+       como imagen: aporta color y luz detras de una seccion que si no
+       seria fondo plano. Aca el desenfoque SI es el efecto, no un parche,
+       y por eso el archivo va chico: a 64 px de blur, mas resolucion no
+       cambia nada. Sin loading=lazy porque el elemento va en absoluto con
+       z-index negativo y el navegador nunca lo considera visible. -->
+  <div class="aura" aria-hidden="true">
+    <img src="imagenes/aura-01.jpg" width="900" height="506" decoding="async" alt="">
+  </div>
+
+  <div class="casos__cabecera">
+    <p class="antetitulo">Cuatro casos</p>
+    <h2 id="t-casos">Parche, bacheo<br>o neumático nuevo</h2>
+    <p>La diferencia no es el tamaño del daño: es dónde está. Un neumático se repara
+      en la banda de rodadura y no se repara en el flanco, y eso no lo decide el
+      precio.</p>
+    <p class="marca-ejemplo" data-ejemplo="Criterios generales del oficio — su caso lo evalúa la serviteca con el neumático a la vista"></p>
+  </div>
+
+  <div class="filas">
+    <details class="fila">
+      <summary>
+        <span class="fila__tit">Pinchazo en la banda, chico</span>
+        <span class="fila__ver fila__ver--si">Se repara</span>
+      </summary>
+      <div class="fila__cuerpo">
+        <p>Es el caso normal: un clavo o un tornillo en la zona que pisa el suelo, y
+          de un diámetro chico. Se desmonta, se limpia por dentro y se repara desde
+          adentro hacia afuera, no con un tapón puesto por fuera a la rápida.</p>
+        <p>La reparación por dentro sella el aire y además tapa el paso de humedad al
+          alambre. La de afuera aguanta unos días y vuelve a filtrar.</p>
+      </div>
+    </details>
+
+    <details class="fila">
+      <summary>
+        <span class="fila__tit">Corte o burbuja en el flanco</span>
+        <span class="fila__ver fila__ver--no">No se repara</span>
+      </summary>
+      <div class="fila__cuerpo">
+        <p>El flanco es la pared lateral y es la parte que se dobla con cada vuelta.
+          Ahí no hay estructura para sostener un parche: cualquier reparación se
+          despega andando, y si revienta, revienta a velocidad.</p>
+        <p>La burbuja o «huevo» es peor todavía: significa que el alambre de adentro
+          ya está cortado, aunque por fuera no se vea nada roto.</p>
+      </div>
+    </details>
+
+    <details class="fila">
+      <summary>
+        <span class="fila__tit">Clavo puesto, sin pérdida de aire</span>
+        <span class="fila__ver fila__ver--si">Se revisa igual</span>
+      </summary>
+      <div class="fila__cuerpo">
+        <p>El clavo que quedó clavado y no baja el aire hay que sacarlo y reparar
+          igual: mientras está puesto, va rozando la estructura interna en cada
+          vuelta y entra humedad por el borde.</p>
+        <p>Lo que no hay que hacer es sacarlo uno mismo en la casa y seguir andando:
+          ahí sí queda el agujero abierto.</p>
+      </div>
+    </details>
+
+    <details class="fila">
+      <summary>
+        <span class="fila__tit">Dibujo gastado o gomas viejas</span>
+        <span class="fila__ver fila__ver--no">Toca cambiar</span>
+      </summary>
+      <div class="fila__cuerpo">
+        <p>Cuando el dibujo llegó al testigo de desgaste —esos resaltes que trae el
+          propio neumático entre las ranuras— ya no frena en mojado, aunque se vea
+          entero.</p>
+        <p>La goma también envejece parada: se pone dura y se agrieta con los años,
+          aunque el auto no ande. Un neumático viejo con dibujo puede ser tan
+          peligroso como uno gastado.</p>
+      </div>
+    </details>
+  </div>
+
+  <p class="firma">Criterios generales del oficio. La decisión final se toma con el
+    neumático desmontado y a la vista.</p>
+</section>
+
+<!-- ═════════ LA PRESIÓN DEL VIAJE ═════════ -->
+<!-- ========= MEDIA PANTALLA ========= -->
+<section class="mitades" aria-labelledby="t-mitades">
+  <div class="mitades__foto">
+    <img src="imagenes/media-01.jpg" width="1600" height="1067"
+         loading="lazy" decoding="async" alt="">
+  </div>
+  <div class="mitades__texto">
+    <p class="mitades__ante">El patio de una serviteca</p>
+    <h2 id="t-mitades">Se guarda el usado hasta ver si sirve</h2>
+    <p>Una tienda de neumáticos vende y se acabó. Una serviteca mira el que trae puesto, decide si aguanta una temporada más y lo guarda si sirve de repuesto. Ese patio de neumáticos usados —que en la foto de arriba es el galpón real de ellos— es la diferencia entre las dos cosas, y es lo que esta página escribe caso por caso antes de que nadie venda nada.</p>
+  </div>
+</section>
+
+
+
+<!-- ========= TAJO — FRANJA A SANGRE ========= -->
+<div class="tajo" aria-hidden="true">
+  <img src="imagenes/banda-01.jpg" width="1000" height="423"
+       loading="lazy" decoding="async" alt="">
+</div>
+<section class="presion" id="presion" aria-labelledby="t-presion">
+  <div class="presion__cuerpo">
+    <p class="antetitulo antetitulo--claro">Antes de tomar la ruta</p>
+    <h2 id="t-presion">La presión<br>del viaje</h2>
+    <p class="entrada">Loncoche es cruce: el que sale a la costa o toma la Cinco pasa
+      por acá. Y casi nadie mira la presión antes de cargar el auto con la familia,
+      las maletas y la carpa.</p>
+
+    <dl class="claves">
+      <div class="clave">
+        <dt>La presión correcta está en el auto, no en el neumático</dt>
+        <dd>Va en una etiqueta en el marco de la puerta del conductor o en el manual.
+          El número que trae grabado el neumático es el máximo que aguanta, no el que
+          hay que ponerle.</dd>
+      </div>
+      <div class="clave">
+        <dt>Cargado se sube, y viene indicado</dt>
+        <dd>La misma etiqueta suele traer dos valores: normal y con carga. Con el auto
+          lleno hay que usar el segundo, sobre todo atrás.</dd>
+      </div>
+      <div class="clave">
+        <dt>Se mide en frío</dt>
+        <dd>Después de andar, el aire se calienta y marca más. Medir recién llegado de
+          la carretera da un número que no sirve.</dd>
+      </div>
+      <div class="clave">
+        <dt>Baja sola, y no es fuga</dt>
+        <dd>Todo neumático pierde algo de aire con el tiempo, y más cuando cambia el
+          clima. Revisarlos una vez al mes es lo normal.</dd>
+      </div>
+    </dl>
+
+    <p class="firma firma--claro">Orientación general. Las presiones de su vehículo
+      están en la etiqueta del fabricante.</p>
+
+    <div class="cierre">
+      <p class="cierre__rot">Antes de salir, pase a que le revisen las cuatro</p>
+      <a class="telefono" href="https://wa.me/56945106437" rel="noopener">9 4510 6437</a>
+      <p class="cierre__nota"><span class="falta">falta: dirección exacta, horario y si atienden urgencias fuera de hora</span></p>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ========= LA CITA A SANGRE ========= -->
+<section class="cita" aria-labelledby="t-cita">
+  <div class="cita__foto" aria-hidden="true">
+    <img src="imagenes/cita-01.jpg" width="2560" height="1440"
+         loading="lazy" decoding="async" alt="">
+  </div>
+  <blockquote class="cita__texto">
+    <p id="t-cita">Antes de vender uno nuevo, se mira si se repara<br>
+      <span class="cita__eco">Y eso, escrito, es lo que distingue a una serviteca de una tienda</span></p>
+  </blockquote>
+</section>
+
+
+
+
+<!-- ========= LA TIRA ========= -->
+<section class="tira" aria-label="Tres imágenes del oficio">
+  <figure class="tira__pieza">
+    <img src="imagenes/tira-01.jpg" width="1000" height="423" loading="lazy" decoding="async" alt="Aviso del taller con la lista de servicios y el teléfono.">
+  </figure>
+  <figure class="tira__pieza">
+    <img src="imagenes/tira-02.jpg" width="1000" height="1251" loading="lazy" decoding="async" alt="Un disco de freno desmontado, sobre el gato.">
+  </figure>
+  <figure class="tira__pieza">
+    <img src="imagenes/tirb-01.jpg" width="1000" height="563" loading="lazy" decoding="async" alt="Una rueda con su llanta, vista de cerca.">
+  </figure>
+</section>
+
+
+<!-- ========= LAS FOTOS ========= -->
+<section class="galeria" aria-labelledby="t-galeria">
+  <h2 id="t-galeria" class="galeria__titulo">Lo suyo, empezando por el logo</h2>
+  <p class="galeria__nota">Cuatro imágenes de esta página son suyas: el logo, el afiche de servicios, el disco de freno y el taller por dentro. Los neumáticos de fondo son de banco libre y están declarados en imagenes/FUENTES.txt.</p>
+  <div class="galeria__grilla">
+    <figure class="gal gal--izq">
+      <img src="imagenes/gal-01.jpg" width="1300" height="1300" loading="lazy" decoding="async"
+           alt="Logo del taller: un engranaje con el nombre AVF Serviteca y la leyenda Taller Mecánico.">
+      <figcaption>El logo. Está bien hecho, es de ellos, y no aparece en su ficha de Google.</figcaption>
+    </figure>
+    <figure class="gal gal--der">
+      <img src="imagenes/gal-02.jpg" width="1131" height="1600" loading="lazy" decoding="async"
+           alt="Afiche con la lista de servicios del taller, la dirección en Martínez de Rozas 354 y el teléfono.">
+      <figcaption>El afiche con todo escrito: servicios, dirección y teléfono. Esta página es eso mismo, pero donde la gente lo busca.</figcaption>
+    </figure>
+  </div>
+  <p class="galeria__falta">falta: el mesón, la máquina de balanceo y el frente desde la calle</p>
+</section>
+
+
+<!-- ========= MOSAICO ========= -->
+<section class="mos" aria-labelledby="t-mos">
+  <h2 id="t-mos" class="mos__titulo">La misma serie, más de cerca</h2>
+  <p class="mos__nota">Estas seis ya aparecen más arriba en la página. Vuelven acá en otro tamaño porque una sola pasada de imágenes deja el scroll vacío. La procedencia de cada una está en imagenes/FUENTES.txt.</p>
+  <div class="mos__grilla">
+    <figure class="mos__p">
+      <img src="imagenes/mos-01.jpg" width="780" height="780"
+           loading="lazy" decoding="async" alt="">
+    </figure>
+    <figure class="mos__p">
+      <img src="imagenes/mos-02.jpg" width="780" height="1103"
+           loading="lazy" decoding="async" alt="">
+    </figure>
+    <figure class="mos__p">
+      <img src="imagenes/mos-03.jpg" width="780" height="976"
+           loading="lazy" decoding="async" alt="">
+    </figure>
+    <figure class="mos__p">
+      <img src="imagenes/mos-04.jpg" width="780" height="330"
+           loading="lazy" decoding="async" alt="">
+    </figure>
+    <figure class="mos__p">
+      <img src="imagenes/mos-05.jpg" width="780" height="549"
+           loading="lazy" decoding="async" alt="">
+    </figure>
+    <figure class="mos__p">
+      <img src="imagenes/mos-06.jpg" width="780" height="1487"
+           loading="lazy" decoding="async" alt="">
+    </figure>
+  </div>
+</section>
+<section class="dueno" aria-labelledby="t-dueno">
+  <h2 id="t-dueno">Para el dueño</h2>
+  <div class="dueno__cols">
+    <div>
+      <h3>Lo que está verificado</h3>
+      <p>El WhatsApp +56 9 4510 6437, que aparece en su propia ficha, y que hoy su
+        página es un sitio gratis armado a mano.</p>
+    </div>
+    <div>
+      <h3>Lo que es de ejemplo</h3>
+      <p>Los cuatro casos del neumático y lo de la presión: criterios generales del
+        oficio, los mismos que ustedes explican en el mesón todos los días.</p>
+    </div>
+    <div>
+      <h3>Lo que falta</h3>
+      <p>La dirección exacta, el horario, qué marcas manejan y si hacen alineación y
+        balanceo. Y si atienden fuera de hora a alguien parado en la ruta.</p>
+    </div>
+  </div>
+  <p class="dueno__cierre">
+    <a class="flecha" href="https://wa.me/56968650001" rel="noopener">Escribirme por WhatsApp <span aria-hidden="true">→</span></a>
+    <a class="flecha" href="../../" rel="noopener">Ver otros trabajos <span aria-hidden="true">→</span></a>
+  </p>
+</section>
+
+<footer class="pie">
+  <p>Sitio de demostración preparado por CristalWeb. El negocio no lo ha encargado ni
+    ha revisado su contenido. La información técnica es general del oficio y no
+    reemplaza la revisión presencial ni el manual del fabricante.</p>
+</footer>
+
+<!-- Barra fija sólo en móvil (T2) -->
+<div class="barra-movil">
+  <a href="https://wa.me/56945106437" rel="noopener">Escribir por WhatsApp</a>
+</div>
+
+<script src="js/main.js"></script>
+</body>
+</html>

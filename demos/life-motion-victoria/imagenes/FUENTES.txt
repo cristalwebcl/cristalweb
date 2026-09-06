@@ -1,0 +1,49 @@
+FUENTES DE LAS IMÁGENES — 208 · Gimnasio Life Motion (Victoria)
+===============================================================
+NINGUNA de estas fotos es de la sala ni del equipamiento de este
+gimnasio. Son de bancos de uso libre (pxhere), bajadas con FotoRadar y
+reescaladas con preparar-lote.ps1.
+
+fondo-01.jpg  · 2400px · portada — fila de mancuernas, oscura
+banda-01.jpg  · 1800px · cita — discos en el suelo
+tajo-01.jpg   · 2000px · tajo — barra cargada en la sala
+telon-01.jpg  · 1200px · telón del contacto — barra con disco sobre el piso de goma
+media-01.jpg  · 1700px · mitades — dos personas DE ESPALDAS en las trotadoras,
+                junto a la ventana. Es la única foto de la demo donde
+                se ve gente entera, y están de espaldas a propósito.
+mos-01.jpg    · 1200px · rack de mancuernas
+mos-02.jpg    · 1200px · pesa rusa sobre el piso
+mos-03.jpg    · 1200px · trotadoras en fila
+mos-04.jpg    · 1200px · manos y pies levantando la barra
+mos-05.jpg    · 1200px · cuerdas de entrenamiento
+mos-06.jpg    · 1200px · interior de la sala
+
+Consultas usadas: «dumbbells rack weights gym pxhere», «barbell plates
+floor gym pxhere», «treadmill cardio machines row pxhere», «kettlebell
+rope mat training pxhere». Las URL completas quedaron en
+`devs\material\busquedas\208-gimnasio\<carpeta>\FUENTES.txt`.
+
+
+CRITERIO: NINGUNA CARA
+----------------------
+En un gimnasio casi todas las fotos de banco tienen personas, y **las
+personas identificables no van**: no dieron permiso para aparecer en la
+página comercial de un negocio chileno que no conocen.
+
+Así que la regla acá fue estricta: **de espaldas, de lejos o sólo las
+manos**. Las cuatro fotos con gente que quedaron muestran espaldas,
+piernas o una silueta a contraluz. Todo lo demás es equipamiento.
+
+Y hay una razón que no es sólo legal: **una página de gimnasio llena de
+cuerpos de banco de imágenes se ve exactamente igual a las otras mil**,
+y además promete un cuerpo. Esta página no promete ninguno — habla de
+horarios y condiciones.
+
+DESCARTADAS
+-----------
+· Tres fotos de hombres levantando pesas con **la cara perfectamente
+  visible**. Personas identificables.
+· Un primer plano de mancuernas donde la marca del equipo se lee
+  entera en verde sobre el mango.
+· Una foto de mancuernas con una etiqueta de precio pegada encima.
+  Un precio ajeno en una demo no va.

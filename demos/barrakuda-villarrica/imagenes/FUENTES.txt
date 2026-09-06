@@ -1,0 +1,62 @@
+PROCEDENCIA DE LAS IMÁGENES — BarraKuda, restobar, Villarrica
+════════════════════════════════════════════════════════════════
+
+DEL NEGOCIO — cinco fotos, de su ficha de Google.
+
+media-01.jpg  1500x1200  el salón, con las mesas de madera
+gal-01.jpg    1300x748   la fachada con el letrero y el antejardín
+tira-01.jpg   1000x732   mariscos, pebre y pan para picotear
+tira-02.jpg   1000x1114  una parrillada en brasero de fierro
+tira-03.jpg    907x1600  un rincón con mesa redonda y sillones
+
+TRES DESCARTES, Y UNO VALE LA CONVERSACIÓN:
+
+1. **El salón lleno de noche**, con quince personas identificables.
+2. **Un afiche de promoción con precio** ($18.990). Un precio dentro de
+   una imagen envejece solo y no se puede corregir sin rehacerla.
+3. **Dos fotos de comida que NO son suyas**: una copa de ceviche y un
+   costillar, ambas de banco de imágenes profesional, subidas a su
+   propia ficha. Se ven bien y por eso el problema: el cliente llega
+   esperando eso. Vale la pena decírselo — tiene tres platos propios
+   mejores y ya están en esta página.
+
+También hay un homónimo curioso: media búsqueda devuelve artículos
+alemanes sobre el pez barracuda.
+
+────────────────────────────────────────────────────────────────
+GENÉRICAS — tres, de banco libre, sólo de fondo. Son barra y neón:
+ambiente, no comida. Todo lo que se come en esta página es de ellos.
+
+port-01.jpg  1900x2850  botellas retroiluminadas en el estante
+cita-01.jpg  2560x3840  una barra oscura con ampolletas colgantes
+  las dos de Pexels · licencia Pexels (uso libre), consulta
+  «bar counter bottles backlit dark»
+
+aura-01.jpg   900x600   un letrero de neón que dice BAR
+  pxhere · dominio público (CC0), consulta
+  «neon sign bar night blue glow»
+  Va a 64 px de desenfoque: no se lee la palabra, sólo queda el cian,
+  que es el color con el que está escrito el nombre de la página.
+
+Se descartaron dos neones más porque decían «Radio City» y eran de
+Times Square: marca y lugar ajenos.
+
+────────────────────────────────────────────────────────────────
+NOTA TÉCNICA
+
+La portada es un panel fijo, alto y angosto, con el nombre en neón
+dibujado en CSS. El gradiente va en VERTICAL —uno horizontal en 300 px
+no alcanza a disolver nada— y la foto entra desde abajo, muriendo antes
+del nombre.
+
+────────────────────────────────────────────────────────────────
+LO QUE FALTA
+
+1. **El salón de noche con la barra funcionando**, sin gente o de
+   espaldas. Es lo que la página promete y hoy lo pone una foto ajena.
+2. Las horas reales: hasta qué hora cocina y hasta qué hora la barra.
+   Están puestas y vacías en la página, a la espera.
+
+Nota: el primer armado tenía la barra oscura en la portada y no se
+veía — negro sobre un panel que ya es casi negro. Se cambiaron de
+lugar: arriba van las botellas retroiluminadas, que tienen luz propia.

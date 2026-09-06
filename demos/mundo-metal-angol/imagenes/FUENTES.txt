@@ -1,0 +1,44 @@
+FUENTES DE LAS IMÁGENES — 209 · Mundo Metal (Angol)
+===================================================
+NINGUNA de estas fotos es del local ni de las máquinas de este negocio.
+Son de bancos de uso libre (pxhere), bajadas con FotoRadar y
+reescaladas con preparar-lote.ps1.
+
+fondo-01.jpg  · 2400px · portada — soldadura en un galpón (de espaldas)
+banda-01.jpg  · 1800px · cita — hormigonera en la obra
+tajo-01.jpg   · 2000px · tajo — grúa torre contra el cielo
+telon-01.jpg  · 1200px · telón del contacto — disco metálico, textura
+media-01.jpg  · 1700px · mitades — mixer con el tambor pintado a franjas
+  Es la foto que justifica la identidad: **las rayas diagonales de
+  advertencia pintadas en todo lo que gira**.
+mos-01.jpg    · 1200px · panel de control de una máquina
+mos-02.jpg    · 1200px · chispas de soldadura
+mos-03.jpg    · 1200px · repuestos ordenados sobre el banco
+  La foto de la pieza firma: **el repuesto decide**.
+mos-04.jpg    · 1200px · soldadura en el taller
+mos-05.jpg    · 1200px · detalle de una máquina
+mos-06.jpg    · 1200px · portabrocas de una herramienta
+
+Consultas usadas: «concrete mixer machine new pxhere», «generator
+machine engine yellow pxhere», «construction tools equipment store
+pxhere», «welding machine industrial equipment pxhere». Las URL
+completas quedaron en
+`devs\material\busquedas\209-mundometal\<carpeta>\FUENTES.txt`.
+
+
+CAMBIO DE PORTADA A MITAD DE CAMINO
+------------------------------------
+La primera portada era una planta industrial dentro de un galpón, muy
+buena de composición y **equivocada de rubro**: mirándola a tamaño
+completo resultó ser **una tostaduría de café**, con sacos que decían
+«RWANDA» legible. Una foto que se ve industrial no es lo mismo que una
+foto del rubro, y el texto legible en un saco ajeno tampoco va.
+Se reemplazó por la soldadura.
+
+DESCARTADAS
+-----------
+· La tostaduría de café (ver arriba).
+· Un soldador con **la cara visible**: persona identificable.
+· El capacho de hormigón colgando de la grúa: ya se usó en la demo 199
+  de esta misma tanda, y repetir una foto entre dos demos del mismo
+  lote se nota.

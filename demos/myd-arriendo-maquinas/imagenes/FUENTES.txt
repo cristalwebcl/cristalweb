@@ -1,0 +1,50 @@
+FUENTES DE LAS IMÁGENES — 199 · M y D Arriendo de Máquinas (Loncoche)
+=====================================================================
+NINGUNA de estas fotos es del negocio. Son de bancos de uso libre
+(pxhere), bajadas con FotoRadar y reescaladas con preparar-lote.ps1.
+Están para mostrar el diseño, no el inventario de M y D. El pie de la
+página lo dice, y también la sección «para el dueño».
+
+fondo-01.jpg  · 2400px · portada — llaves colgadas en la pared de un taller
+  https://get.pxhere.com/photo/blur-street-field-alley-color-key-garage-blue-tools-urban-area-685410.jpg
+
+banda-01.jpg  · 1800px · cita — hormigonera sobre ripio
+  https://get.pxhere.com/photo/work-lawn-wheel-tool-orange-red-vehicle-machine-craft-concrete-cement-diy-site-construction-work-construction-machinery-concrete-mixer-man-made-object-small-construction-sites-drum-mixer-653528.jpg
+
+tajo-01.jpg   · 2200px · tajo — faena con excavadora
+  https://get.pxhere.com/photo/landscape-sand-tractor-construction-soil-geology-digger-build-site-excavator-construct-loader-heavy-machinery-1267665.jpg
+
+telon-01.jpg  · 1200px · telón del contacto — estructura metálica
+  https://get.pxhere.com/photo/warehouse-shelf-factory-iron-industry-architecture-metal-beam-steel-building-construction-engineering-scaffolding-1609874.jpg
+
+media-01.jpg  · 1800px · mitades — EL TABLERO PERFORADO con herramientas
+  https://get.pxhere.com/photo/workshop-hammer-mast-product-tools-wrench-777028.jpg
+  Es la foto que sostiene la identidad entera de la demo: el panel
+  perforado donde cada herramienta tiene su lugar.
+
+mos-01.jpg    · 1200px · esmeril angular
+  https://get.pxhere.com/photo/repair-machine-power-grinder-tools-automotive-exterior-822179.jpg
+mos-02.jpg    · 1200px · hormigonera bajo techo
+  https://get.pxhere.com/photo/machine-industry-concrete-mill-diy-site-construction-work-concrete-mixer-small-construction-sites-drum-mixer-pumping-station-1133344.jpg
+mos-03.jpg    · 1200px · bodega con estanterías
+  https://get.pxhere.com/photo/multiethnic-workers-team-tracking-inventory-bar-code-systems-delivery-crates-order-shipment-factory-workspace-product-storage-transportation-logistics-scanner-scanning-tablet-stock-warehouse-industry-cargo-distribution-industrial-business-shipping-goods-management-supply-packages-import-export-system-retail-supply-chain-worker-depot-products-storehouse-orders-shelves-boxes-employee-diverse-group-african-american-quality-control-racks-small-business-mass-production-staff-operations-technology-inventory-management-logistics-center-shelving-workwear-engineering-shipping-box-packaging-and-labeling-package-delivery-shelf-Cardboard-Packaging-box-cardboard-cleanliness-collection-blue-collar-worker-1705176.jpg
+mos-04.jpg    · 1200px · portaherramientas de máquina
+  https://get.pxhere.com/photo/spiral-tool-workshop-machine-toy-drill-chuck-drilling-machining-auger-machine-tool-1354412.jpg
+mos-05.jpg    · 1200px · capacho de hormigón suspendido
+  https://get.pxhere.com/photo/rope-chain-vehicle-tower-mast-street-light-lighting-last-light-fixture-hub-crane-construction-work-load-lifter-cargo-transport-concrete-mixer-man-made-object-concrete-buckets-1131595.jpg
+mos-06.jpg    · 1200px · retroexcavadora en faena
+  https://get.pxhere.com/photo/field-train-asphalt-transport-vehicle-soil-agriculture-bulldozer-site-excavators-construction-machine-construction-equipment-gripper-land-vehicle-rail-vehicle-two-way-excavator-railway-construction-1049789.jpg
+
+
+DESCARTADAS Y POR QUÉ
+---------------------
+· Un taladro inalámbrico sobre banco de madera: la marca se leía
+  entera en la carcasa y en la caja de tornillos que había al lado.
+  En una página de arriendo eso es peor que en otros rubros — parece
+  que el negocio arrienda ESA marca, y no se sabe.
+· Un compresor con motor a bencina: el motor tenía el logotipo rojo
+  de la marca visible en la tapa.
+· Una excavadora abandonada entre maleza: técnicamente linda, pero un
+  arriendo de maquinaria NO puede mostrar fierro oxidado. El mensaje
+  del rubro es exactamente el contrario: la máquina llega funcionando.
+· Texturas de fierro oxidado, por lo mismo.

@@ -29,7 +29,7 @@ pieza es un inventario que está vacío. **Las fotos son el inventario.**
 
 **1. El conflicto.** The Temple Fitness Club es cliente activo y es
 gimnasio en la misma comuna. Esta demo se construyó por decisión
-expresa de Yordy, con la regla de no parecerse en nada: paleta gris
+expresa, con la regla de no parecerse en nada: paleta gris
 concreto y rojo de goma —diurna—, y trío Russo One / Hanken Grotesk /
 Azeret Mono. **En ninguna parte de la página se nombra, se compara ni
 se alude al otro gimnasio**, y esa regla se mantiene también en la

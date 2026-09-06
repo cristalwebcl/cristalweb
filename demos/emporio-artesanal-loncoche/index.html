@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="es-CL" class="no-js">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Emporio Artesanal — Loncoche</title>
+<meta name="description" content="Emporio de productos locales en Loncoche: quién hizo cada cosa que está en la repisa.">
+
+<!-- ═══════════════════════════════════════════════════════════════
+     RESCATE DE LA CLASE .js — regla 2 de la casa.
+     El script inline (sin defer) marca .js para que el CSS pueda
+     esconder lo que va a animarse. El temporizador de 4 s la quita
+     si main.js nunca llega: sin él, un error de red dejaría media
+     página invisible para siempre.
+     ═══════════════════════════════════════════════════════════════ -->
+<script>
+  (function () {
+    var d = document.documentElement;
+    d.classList.remove('no-js');
+    d.classList.add('js');
+    window.__rescate = setTimeout(function () { d.classList.remove('js'); }, 4000);
+  })();
+</script>
+
+<!-- Fuentes propias: cero peticiones a terceros. El preload va SOLO
+     para la display, que es la del titular de la portada. -->
+<link rel="preload" href="assets/fuentes/cantataone-400-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="assets/fuentes.css">
+<link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+
+<div class="propuesta">
+  <p class="propuesta__que">Propuesta de sitio web — preparada para <b>Emporio Artesanal</b> por CristalWeb</p>
+  <p class="propuesta__gancho">77 reseñas y adentro está lo que hacen las manos de la zona. Ni el pueblo entero sabe qué hay en esas repisas.</p>
+</div>
+
+<header class="cab" id="cab">
+  <a class="cab__marca" href="#portada">
+    <span class="canasta" aria-hidden="true"></span>
+    <span class="cab__nombre">Emporio Artesanal</span>
+  </a>
+  <nav class="cab__nav" aria-label="Secciones">
+    <a href="#repisas">Quién hizo qué</a>
+    <a href="#estandar">De la parcela al frasco</a>
+  </nav>
+  <a class="cab__wsp" href="#visitar">
+    <span class="cab__wsp-rot">Loncoche</span>
+    <span class="cab__wsp-num">Cómo llegar</span>
+  </a>
+</header>
+
+<main>
+
+<!-- ═════════ PORTADA ═════════ -->
+<section class="portada" id="portada" aria-labelledby="t-portada">
+
+  <div class="repisa-fondo" aria-hidden="true">
+    <span class="f1"></span><span class="f2"></span><span class="f3"></span>
+    <span class="f4"></span><span class="f5"></span>
+  </div>
+  <div class="portada__texto">
+    <p class="sitio">Emporio de productos locales · Loncoche</p>
+    <h1 id="t-portada">Todo esto<br>lo hizo alguien</h1>
+    <p class="bajada">Cada frasco de esta repisa tiene un nombre detrás y un sector de
+      donde viene. Eso es lo que un supermercado no puede escribir en su etiqueta.</p>
+    <dl class="specs">
+      <div class="spec"><dt>reseñas en Google</dt><dd>77</dd></div>
+      <div class="spec"><dt>repisas</dt><dd>4</dd></div>
+    </dl>
+  </div>
+</section>
+
+<!-- ═════════ LA PIEZA FIRMA — LAS REPISAS (B) ═════════ -->
+<section class="repisas con-telon" id="repisas" aria-labelledby="t-repisas">
+  <div class="telon" aria-hidden="true">
+    <img src="imagenes/telon-01.jpg" width="1200" height="900" decoding="async" alt="">
+  </div>
+
+  <!-- AURA DE COLOR: la foto de rubro reventada a desenfoque. No se lee
+       como imagen: aporta color y luz detras de una seccion que si no
+       seria fondo plano. Aca el desenfoque SI es el efecto, no un parche,
+       y por eso el archivo va chico: a 64 px de blur, mas resolucion no
+       cambia nada. Sin loading=lazy porque el elemento va en absoluto con
+       z-index negativo y el navegador nunca lo considera visible. -->
+  <div class="aura" aria-hidden="true">
+    <img src="imagenes/aura-01.jpg" width="900" height="601" decoding="async" alt="">
+  </div>
+
+  <div class="repisas__cabecera">
+    <p class="antetitulo">La trazabilidad del mesón</p>
+    <h2 id="t-repisas">Quién hizo qué</h2>
+    <p>La estructura está lista; los nombres se completan preguntando en el mesón. Un
+      producto con el nombre de quien lo hace vale distinto, y este es el único lugar
+      donde eso se puede escribir.</p>
+    <p class="marca-ejemplo" data-ejemplo="Estructura de ejemplo — cada nombre se confirma con el emporio y con el productor"></p>
+  </div>
+
+  <div class="repisas__grilla">
+    <nav class="indice" aria-label="Repisas">
+      <ol>
+        <li><a href="#r1"><span class="indice__n">01</span> Mieles</a></li>
+        <li><a href="#r2"><span class="indice__n">02</span> Conservas</a></li>
+        <li><a href="#r3"><span class="indice__n">03</span> Cocina</a></li>
+        <li><a href="#r4"><span class="indice__n">04</span> Tejidos</a></li>
+      </ol>
+    </nav>
+
+    <div class="repisas__cuerpo">
+      <article class="repisa" id="r1">
+        <p class="repisa__n" aria-hidden="true">01</p>
+        <h3>Mieles</h3>
+        <p>La miel cambia entera según de dónde viene: la de ulmo no sabe ni se ve
+          como la de mil flores, y la del secano no es la de la precordillera.</p>
+        <ul class="fichas">
+          <li>
+            <p class="ficha__q">Miel de ulmo</p>
+            <p class="ficha__d"><span class="falta">falta: nombre del apicultor y sector</span></p>
+          </li>
+          <li>
+            <p class="ficha__q">Miel multifloral</p>
+            <p class="ficha__d"><span class="falta">falta: nombre del apicultor y sector</span></p>
+          </li>
+          <li>
+            <p class="ficha__q">Propóleo</p>
+            <p class="ficha__d"><span class="falta">falta: confirmar si se vende</span></p>
+          </li>
+        </ul>
+      </article>
+
+      <article class="repisa" id="r2">
+        <p class="repisa__n" aria-hidden="true">02</p>
+        <h3>Conservas</h3>
+        <p>Lo que se guarda en verano para el invierno. Acá el dato que importa es la
+          fecha de envasado y quién la hizo, no la marca.</p>
+        <ul class="fichas">
+          <li>
+            <p class="ficha__q">Mermeladas de temporada</p>
+            <p class="ficha__d"><span class="falta">falta: quién las hace y qué frutas</span></p>
+          </li>
+          <li>
+            <p class="ficha__q">Conservas en frasco</p>
+            <p class="ficha__d"><span class="falta">falta: nombre y sector</span></p>
+          </li>
+          <li>
+            <p class="ficha__q">Encurtidos</p>
+            <p class="ficha__d"><span class="falta">falta: confirmar</span></p>
+          </li>
+        </ul>
+      </article>
+
+      <article class="repisa" id="r3">
+        <p class="repisa__n" aria-hidden="true">03</p>
+        <h3>Cocina</h3>
+        <p>Lo que se usa todos los días y en la ciudad se vende molido y sin nombre.
+          Acá tiene procedencia.</p>
+        <ul class="fichas">
+          <li>
+            <p class="ficha__q">Merkén</p>
+            <p class="ficha__d"><span class="falta">falta: quién lo prepara y en qué sector</span></p>
+          </li>
+          <li>
+            <p class="ficha__q">Harina tostada</p>
+            <p class="ficha__d"><span class="falta">falta: nombre del molino o de quien la hace</span></p>
+          </li>
+          <li>
+            <p class="ficha__q">Hierbas y aliños</p>
+            <p class="ficha__d"><span class="falta">falta: confirmar cuáles hay</span></p>
+          </li>
+        </ul>
+      </article>
+
+      <article class="repisa" id="r4">
+        <p class="repisa__n" aria-hidden="true">04</p>
+        <h3>Tejidos y madera</h3>
+        <p>Lo que se hace con las manos y toma semanas. Es también lo que más se
+          regala y lo que más pregunta el que viene de afuera.</p>
+        <ul class="fichas">
+          <li>
+            <p class="ficha__q">Lana hilada y tejidos</p>
+            <p class="ficha__d"><span class="falta">falta: nombre de la tejedora y sector</span></p>
+          </li>
+          <li>
+            <p class="ficha__q">Utensilios de madera</p>
+            <p class="ficha__d"><span class="falta">falta: nombre del artesano</span></p>
+          </li>
+          <li>
+            <p class="ficha__q">Canastos de mimbre</p>
+            <p class="ficha__d"><span class="falta">falta: confirmar si hay</span></p>
+          </li>
+        </ul>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ═════════ EL ESTÁNDAR ═════════ -->
+<!-- ========= MEDIA PANTALLA ========= -->
+<section class="mitades" aria-labelledby="t-mitades">
+  <div class="mitades__foto">
+    <img src="imagenes/media-01.jpg" width="1600" height="1067"
+         loading="lazy" decoding="async" alt="">
+  </div>
+  <div class="mitades__texto">
+    <p class="mitades__ante">Lo que hay que fotografiar primero</p>
+    <h2 id="t-mitades">Un frasco con la etiqueta legible vale más que diez de ambiente</h2>
+    <p>El producto artesanal se compra por dos cosas: cómo se ve y quién lo hizo. La segunda ya está escrita en esta página —cada repisa con el nombre del productor y el sector— pero la primera necesita fotos de verdad, y no cualquiera: un frasco de cerca, con la etiqueta que se pueda leer. Cuatro fotos así, una por repisa, y la página deja de depender de imágenes prestadas.</p>
+  </div>
+</section>
+
+
+
+<!-- ========= TAJO — FRANJA A SANGRE ========= -->
+<div class="tajo" aria-hidden="true">
+  <img src="imagenes/banda-01.jpg" width="1500" height="1000"
+       loading="lazy" decoding="async" alt="">
+</div>
+
+<!-- ========= TAJO — segunda franja ========= -->
+<div class="tajo" aria-hidden="true">
+  <img src="imagenes/port-01.jpg" width="2560" height="1920"
+       loading="lazy" decoding="async" alt="">
+</div>
+<section class="estandar" id="estandar" aria-labelledby="t-estandar">
+  <div class="estandar__cuerpo">
+    <p class="antetitulo antetitulo--claro">Lo que se pide para entrar a la repisa</p>
+    <h2 id="t-estandar">De la parcela<br>al frasco</h2>
+    <p class="entrada">Un emporio no es una feria: lo que se pone en la repisa lleva la
+      firma del local. Escribir qué se exige protege a los tres — al que produce, al
+      emporio y al que compra.</p>
+
+    <ol class="reglas">
+      <li>
+        <p class="reglas__n" aria-hidden="true">01</p>
+        <div>
+          <h3>Nombre y sector visibles</h3>
+          <p>Cada producto llega con quién lo hizo y de dónde. Es el argumento de
+            venta entero, y no cuesta nada.</p>
+        </div>
+      </li>
+      <li>
+        <p class="reglas__n" aria-hidden="true">02</p>
+        <div>
+          <h3>Envase limpio y cerrado como corresponde</h3>
+          <p>Frasco sano, tapa nueva y sellado. Un frasco reutilizado con tapa vieja
+            no entra, por mucho que el contenido sea bueno.</p>
+        </div>
+      </li>
+      <li>
+        <p class="reglas__n" aria-hidden="true">03</p>
+        <div>
+          <h3>Fecha de envasado</h3>
+          <p>Escrita en la etiqueta, no de memoria. Es lo primero que mira el que
+            compra conserva.</p>
+        </div>
+      </li>
+      <li>
+        <p class="reglas__n" aria-hidden="true">04</p>
+        <div>
+          <h3>Cantidad sostenible</h3>
+          <p>Mejor poco y siempre que mucho una vez. La repisa que se vacía y no se
+            repone pierde al cliente que volvió por eso.</p>
+        </div>
+      </li>
+    </ol>
+
+    <p class="firma">Estándar propuesto. <span class="falta">falta: confirmar cuál es el que aplica el emporio de verdad</span> — y si hay requisitos sanitarios que exigen, se escriben tal cual.</p>
+
+    <div class="visitar" id="visitar">
+      <p class="visitar__rot">Para preguntar por un producto o por un puesto en la repisa</p>
+      <a class="fantasma" href="#visitar">Escribir por WhatsApp</a>
+      <p class="visitar__nota"><span class="falta">falta: el número, la dirección y el horario</span> — el botón queda sin destino hasta tenerlos. Se resuelve en una visita: el local está a dos cuadras.</p>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ========= LA CITA A SANGRE ========= -->
+<section class="cita" aria-labelledby="t-cita">
+  <div class="cita__foto" aria-hidden="true">
+    <img src="imagenes/cita-01.jpg" width="2200" height="3300"
+         loading="lazy" decoding="async" alt="">
+  </div>
+  <blockquote class="cita__texto">
+    <p id="t-cita">Todo esto lo hizo alguien<br>
+      <span class="cita__eco">Y ese alguien tiene nombre y sector</span></p>
+  </blockquote>
+</section>
+
+
+
+<!-- ========= LA TIRA ========= -->
+<section class="tira" aria-label="Tres imágenes del oficio">
+  <figure class="tira__pieza">
+    <img src="imagenes/tira-01.jpg" width="1000" height="668" loading="lazy" decoding="async" alt="Ovillos de lana de colores en una canasta.">
+  </figure>
+  <figure class="tira__pieza">
+    <img src="imagenes/tira-02.jpg" width="1000" height="1500" loading="lazy" decoding="async" alt="Madejas de lana ordenadas por color.">
+  </figure>
+  <figure class="tira__pieza">
+    <img src="imagenes/tirb-01.jpg" width="1000" height="667" loading="lazy" decoding="async" alt="Frascos de conserva en una repisa de madera.">
+  </figure>
+  <figure class="tira__pieza">
+    <img src="imagenes/tirc-01.jpg" width="1000" height="750" loading="lazy" decoding="async" alt="Repisas llenas de frascos, vistas en fila.">
+  </figure>
+</section>
+
+
+
+<!-- ========= MOSAICO ========= -->
+<section class="mos" aria-labelledby="t-mos">
+  <h2 id="t-mos" class="mos__titulo">La misma serie, más de cerca</h2>
+  <p class="mos__nota">Estas seis ya aparecen más arriba en la página. Vuelven acá en otro tamaño porque una sola pasada de imágenes deja el scroll vacío. Ninguna es del negocio y todas están declaradas en imagenes/FUENTES.txt.</p>
+  <div class="mos__grilla">
+    <figure class="mos__p">
+      <img src="imagenes/mos-01.jpg" width="780" height="520"
+           loading="lazy" decoding="async" alt="">
+    </figure>
+    <figure class="mos__p">
+      <img src="imagenes/mos-02.jpg" width="780" height="520"
+           loading="lazy" decoding="async" alt="">
+    </figure>
+    <figure class="mos__p">
+      <img src="imagenes/mos-03.jpg" width="780" height="530"
+           loading="lazy" decoding="async" alt="">
+    </figure>
+    <figure class="mos__p">
+      <img src="imagenes/mos-04.jpg" width="780" height="520"
+           loading="lazy" decoding="async" alt="">
+    </figure>
+    <figure class="mos__p">
+      <img src="imagenes/mos-05.jpg" width="780" height="585"
+           loading="lazy" decoding="async" alt="">
+    </figure>
+    <figure class="mos__p">
+      <img src="imagenes/mos-06.jpg" width="780" height="1170"
+           loading="lazy" decoding="async" alt="">
+    </figure>
+  </div>
+</section>
+<section class="dueno" aria-labelledby="t-dueno">
+  <h2 id="t-dueno">Para el dueño</h2>
+  <div class="dueno__cols">
+    <div>
+      <h3>Lo que está verificado</h3>
+      <p>Las 77 reseñas de su ficha y que no tiene página ni teléfono publicado.</p>
+    </div>
+    <div>
+      <h3>Lo que es de ejemplo</h3>
+      <p>Las cuatro repisas y el estándar. Ningún nombre de productor aparece
+        inventado: van todos como «falta» hasta que ustedes los confirmen, y cada
+        productor tiene que estar de acuerdo con aparecer.</p>
+    </div>
+    <div>
+      <h3>Lo que falta</h3>
+      <p>El número, la dirección, el horario y —lo más valioso— los nombres y sectores
+        de quienes hacen cada cosa. Eso es lo que ninguna cadena puede copiar.</p>
+    </div>
+  </div>
+  <p class="dueno__cierre">
+    <a class="flecha" href="https://wa.me/56968650001" rel="noopener">Escribirme por WhatsApp <span aria-hidden="true">→</span></a>
+    <a class="flecha" href="../../" rel="noopener">Ver otros trabajos <span aria-hidden="true">→</span></a>
+  </p>
+</section>
+
+<footer class="pie">
+  <p>Sitio de demostración preparado por CristalWeb. El negocio no lo ha encargado ni
+    ha revisado su contenido. Los nombres de productores sólo se publican con su
+    autorización.</p>
+</footer>
+
+<!-- Barra fija sólo en móvil (T2) -->
+<div class="barra-movil">
+  <a href="#visitar">Preguntar por un producto</a>
+</div>
+
+<script src="js/main.js"></script>
+</body>
+</html>

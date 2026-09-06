@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="es-CL" class="no-js">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Studio_handmade — Pucón</title>
+<meta name="description" content="Estudio de manicure en Pucón. Qué se alcanza a hacer en una hora y cuánto dura cada combinación.">
+
+<!-- ═══════════════════════════════════════════════════════════════
+     RESCATE DE LA CLASE .js — regla 2 de la casa.
+     El script inline (sin defer) marca .js para que el CSS pueda
+     esconder lo que va a animarse. El temporizador de 4 s la quita
+     si main.js nunca llega: sin él, un error de red dejaría media
+     página invisible para siempre.
+     ═══════════════════════════════════════════════════════════════ -->
+<script>
+  (function () {
+    var d = document.documentElement;
+    d.classList.remove('no-js');
+    d.classList.add('js');
+    window.__rescate = setTimeout(function () { d.classList.remove('js'); }, 4000);
+  })();
+</script>
+
+<!-- Fuentes propias: cero peticiones a terceros. El preload va SOLO
+     para la display, que es la del titular de la portada. -->
+<link rel="preload" href="assets/fuentes/amaranth-700-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="assets/fuentes.css">
+<link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+
+<div class="propuesta">
+  <p class="propuesta__que">Propuesta de sitio web — preparada para <b>Studio_handmade</b> por CristalWeb</p>
+  <p class="propuesta__gancho">5,0 con 109 reseñas, y el número de reservas está escrito en el campo «dirección» de Google porque no hay dónde más ponerlo. Esta página es ese dónde.</p>
+</div>
+
+<header class="cab" id="cab">
+  <a class="cab__marca" href="#portada">
+    <span class="etiqueta" aria-hidden="true"></span>
+    <span class="cab__nombre">Studio_handmade</span>
+  </a>
+  <nav class="cab__nav" aria-label="Secciones">
+    <a href="#combos">Tres servicios, una hora</a>
+    <a href="#mano">Hecho a mano</a>
+  </nav>
+  <a class="cab__wsp" href="https://wa.me/56985528907" rel="noopener">
+    <span class="cab__wsp-rot">Reservas</span>
+    <span class="cab__wsp-num">9 8552 8907</span>
+  </a>
+</header>
+
+<main>
+
+<!-- ═════════ PORTADA ═════════ -->
+<section class="portada" id="portada" aria-labelledby="t-portada">
+
+  <div class="hilvan" aria-hidden="true"><span></span></div>
+  <div class="portada__texto">
+    <p class="sitio">Estudio de uñas · Pucón</p>
+    <h1 id="t-portada">¿Alcanzo<br>en una hora?</h1>
+    <p class="bajada">La pregunta de la que tiene hora de almuerzo y no un día libre.
+      Acá está qué se puede hacer junto y cuánto se demora cada combinación.</p>
+    <dl class="specs">
+      <div class="spec"><dt>nota en Google</dt><dd>5,0</dd></div>
+      <div class="spec"><dt>reseñas</dt><dd>109</dd></div>
+    </dl>
+  </div>
+</section>
+
+<!-- ═════════ LA PIEZA FIRMA — LA CARTA DE COMBOS (D) ═════════ -->
+
+<!-- ========= TAJO — franja a sangre ========= -->
+<div class="tajo" aria-hidden="true">
+  <img src="imagenes/port-01.jpg" width="2200" height="1467"
+       loading="lazy" decoding="async" alt="">
+</div>
+<section class="combos con-telon" id="combos" aria-labelledby="t-combos">
+  <div class="telon" aria-hidden="true">
+    <img src="imagenes/telon-01.jpg" width="1200" height="798" decoding="async" alt="">
+  </div>
+
+  <!-- AURA DE COLOR: la foto de rubro reventada a desenfoque. No se lee
+       como imagen: aporta color y luz detras de una seccion que si no
+       seria fondo plano. Aca el desenfoque SI es el efecto, no un parche,
+       y por eso el archivo va chico: a 64 px de blur, mas resolucion no
+       cambia nada. Sin loading=lazy porque el elemento va en absoluto con
+       z-index negativo y el navegador nunca lo considera visible. -->
+  <div class="aura" aria-hidden="true">
+    <img src="imagenes/aura-01.jpg" width="900" height="600" decoding="async" alt="">
+  </div>
+
+  <div class="combos__cabecera">
+    <p class="antetitulo">La carta</p>
+    <h2 id="t-combos">Tres servicios,<br>una hora</h2>
+    <p>No todo se puede hacer junto: algunas cosas necesitan que la anterior seque, y
+      otras se hacen mientras. Esto es lo que sí calza en una sesión.</p>
+    <p class="marca-ejemplo" data-ejemplo="Duraciones de referencia — las confirma el estudio"></p>
+  </div>
+
+  <div class="cartas">
+    <article class="tarjeta">
+      <p class="tarjeta__t">45 min</p>
+      <h3>Manicure simple</h3>
+      <p>Limado, cutícula y esmaltado tradicional. Lo justo para salir con las manos
+        ordenadas.</p>
+      <p class="tarjeta__ojo">Cabe entero en una hora de colación.</p>
+    </article>
+
+    <article class="tarjeta">
+      <p class="tarjeta__t">75 min</p>
+      <h3>Retiro y esmaltado permanente</h3>
+      <p>Sacar el permanente anterior sin dañar la uña toma su tiempo, y ese tiempo no
+        se puede apurar: es la parte que decide cómo queda la uña abajo.</p>
+      <p class="tarjeta__ojo">No cabe en una hora. Conviene tarde o sábado.</p>
+    </article>
+
+    <article class="tarjeta">
+      <p class="tarjeta__t">90 min</p>
+      <h3>Manicure y pedicure juntos</h3>
+      <p>Se hacen entrelazados: mientras una cosa seca, se avanza la otra. Por eso
+        juntos duran menos que sumados por separado.</p>
+      <p class="tarjeta__ojo">El combo que más ahorra tiempo.</p>
+    </article>
+
+    <article class="tarjeta">
+      <p class="tarjeta__t">30 min</p>
+      <h3>Mantención</h3>
+      <p>El relleno o el retoque a las tres semanas. Corto, y es lo que hace que el
+        trabajo dure el doble.</p>
+      <p class="tarjeta__ojo"><span class="falta">falta: confirmar cada cuánto la recomiendan</span></p>
+    </article>
+  </div>
+
+  <p class="firma">Duraciones de referencia del oficio. Lo que se alcanza a hacer en su
+    caso depende del estado de la uña y lo dice el estudio al reservar.</p>
+</section>
+
+<!-- ═════════ HECHO A MANO ═════════ -->
+<!-- ========= MEDIA PANTALLA ========= -->
+<section class="mitades" aria-labelledby="t-mitades">
+  <div class="mitades__foto">
+    <img src="imagenes/media-01.jpg" width="1200" height="1600"
+         loading="lazy" decoding="async" alt="">
+  </div>
+  <div class="mitades__texto">
+    <p class="mitades__ante">La única foto de trabajo que tienen</p>
+    <h2 id="t-mitades">Un largo, liso y parejo, fotografiado de espaldas</h2>
+    <p>Es la foto correcta y por dos motivos: muestra el resultado —que es lo que se compra— y no muestra la cara de nadie, así que no hace falta pedir permiso para publicarla. Un salón necesita seis fotos como ésta, una por servicio, y con eso la página deja de explicar con palabras lo que se explica mejor mirando.</p>
+  </div>
+</section>
+
+
+
+<!-- ========= TAJO — FRANJA A SANGRE ========= -->
+<div class="tajo" aria-hidden="true">
+  <img src="imagenes/banda-01.jpg" width="1000" height="563"
+       loading="lazy" decoding="async" alt="">
+</div>
+<section class="mano" id="mano" aria-labelledby="t-mano">
+  <div class="mano__cuerpo">
+    <p class="antetitulo antetitulo--claro">El nombre no es adorno</p>
+    <h2 id="t-mano">Hecho a mano<br>se nota</h2>
+    <p class="entrada">Una uña hecha a mano no se parece a una calcomanía, y no por
+      capricho: se nota en tres cosas concretas que se pueden mirar de cerca.</p>
+
+    <dl class="notas">
+      <div class="nota">
+        <dt>El borde sigue su dedo</dt>
+        <dd>Cada uña tiene una forma distinta, incluso en la misma mano. El trabajo a
+          mano acompaña esa forma; el prefabricado la tapa.</dd>
+      </div>
+      <div class="nota">
+        <dt>El grosor está donde tiene que estar</dt>
+        <dd>Más cuerpo en el centro, más delgado en el borde. Eso es lo que hace que
+          no se despegue a los cuatro días.</dd>
+      </div>
+      <div class="nota">
+        <dt>El diseño no se repite</dt>
+        <dd>Dos manos nunca salen idénticas, y esa es la gracia. Lo que sí se repite
+          es la prolijidad.</dd>
+      </div>
+      <div class="nota">
+        <dt>La cutícula se cuida, no se corta a la mala</dt>
+        <dd>Es la parte que protege de las infecciones. Se trabaja con calma o no se
+          trabaja.</dd>
+      </div>
+    </dl>
+
+    <p class="firma firma--claro">Descripción general del oficio. Lo que corresponda
+      para sus uñas lo evalúa el estudio.</p>
+
+    <div class="reservar">
+      <p class="reservar__rot">Reservas por WhatsApp</p>
+      <a class="telefono" href="https://wa.me/56985528907" rel="noopener">9 8552 8907</a>
+      <p class="reservar__nota">El mismo número que hoy está escondido en el campo
+        «dirección» de su ficha de Google. <span class="falta">falta: dirección real, horario y precios</span></p>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ========= LA CITA A SANGRE ========= -->
+<section class="cita" aria-labelledby="t-cita">
+  <div class="cita__foto" aria-hidden="true">
+    <img src="imagenes/cita-01.jpg" width="2560" height="1703"
+         loading="lazy" decoding="async" alt="">
+  </div>
+  <blockquote class="cita__texto">
+    <p id="t-cita">Salón y barbería en la misma puerta<br>
+      <span class="cita__eco">Y eso, en un pueblo, es media clientela más</span></p>
+  </blockquote>
+</section>
+
+
+
+
+<!-- ========= LA TIRA ========= -->
+<section class="tira" aria-label="Tres imágenes del oficio">
+  <figure class="tira__pieza">
+    <img src="imagenes/tira-01.jpg" width="1000" height="667" loading="lazy" decoding="async" alt="El mesón del barbero, con peines, tijeras y máquina.">
+  </figure>
+  <figure class="tira__pieza">
+    <img src="imagenes/tirb-01.jpg" width="1000" height="662" loading="lazy" decoding="async" alt="El interior de un salón, con los sillones frente a los espejos.">
+  </figure>
+  <figure class="tira__pieza">
+    <img src="imagenes/tirb-02.jpg" width="1000" height="563" loading="lazy" decoding="async" alt="Un salón iluminado, con las sillas alineadas.">
+  </figure>
+</section>
+
+
+<!-- ========= LAS FOTOS ========= -->
+<section class="galeria" aria-labelledby="t-galeria">
+  <h2 id="t-galeria" class="galeria__titulo">El logo, que ya está hecho</h2>
+  <p class="galeria__nota">Dos imágenes de esta página son suyas: este logo y el largo liso de más arriba. Los fondos de tijeras y salón son de banco libre y están declarados en imagenes/FUENTES.txt.</p>
+  <div class="galeria__grilla">
+    <figure class="gal gal--abajo">
+      <img src="imagenes/gal-01.jpg" width="1300" height="1300" loading="lazy" decoding="async"
+           alt="Logo del salón: un rombo con la silueta de un cabello, el nombre Handmade y la leyenda salón de belleza y barbershop.">
+      <figcaption>El logo. Dice las dos cosas que el negocio es —salón y barbería— en una sola pieza, y está bien hecho. No aparece en su ficha de Google.</figcaption>
+    </figure>
+  </div>
+  <p class="galeria__falta">falta: seis fotos de trabajo, una por servicio, todas de espaldas o de detalle</p>
+</section>
+
+
+<!-- ========= MOSAICO ========= -->
+<section class="mos" aria-labelledby="t-mos">
+  <h2 id="t-mos" class="mos__titulo">La misma serie, más de cerca</h2>
+  <p class="mos__nota">Estas seis ya aparecen más arriba en la página. Vuelven acá en otro tamaño porque una sola pasada de imágenes deja el scroll vacío. La procedencia de cada una está en imagenes/FUENTES.txt.</p>
+  <div class="mos__grilla">
+    <figure class="mos__p">
+      <img src="imagenes/mos-01.jpg" width="780" height="780"
+           loading="lazy" decoding="async" alt="">
+    </figure>
+    <figure class="mos__p">
+      <img src="imagenes/mos-02.jpg" width="780" height="1040"
+           loading="lazy" decoding="async" alt="">
+    </figure>
+    <figure class="mos__p">
+      <img src="imagenes/mos-03.jpg" width="780" height="439"
+           loading="lazy" decoding="async" alt="">
+    </figure>
+    <figure class="mos__p">
+      <img src="imagenes/mos-04.jpg" width="780" height="516"
+           loading="lazy" decoding="async" alt="">
+    </figure>
+    <figure class="mos__p">
+      <img src="imagenes/mos-05.jpg" width="780" height="520"
+           loading="lazy" decoding="async" alt="">
+    </figure>
+    <figure class="mos__p">
+      <img src="imagenes/mos-06.jpg" width="780" height="519"
+           loading="lazy" decoding="async" alt="">
+    </figure>
+  </div>
+</section>
+<section class="dueno" aria-labelledby="t-dueno">
+  <h2 id="t-dueno">Para la dueña</h2>
+  <div class="dueno__cols">
+    <div>
+      <h3>Lo que está verificado</h3>
+      <p>El 5,0 con 109 reseñas y el número +56 9 8552 8907, que aparece en su propia
+        ficha — escrito en el campo de la dirección.</p>
+    </div>
+    <div>
+      <h3>Lo que es de ejemplo</h3>
+      <p>Las cuatro combinaciones y sus duraciones: referencia general del rubro. Se
+        reemplazan con las suyas en una conversación.</p>
+    </div>
+    <div>
+      <h3>Lo que falta</h3>
+      <p>La dirección de verdad, el horario y los precios. Y fotos de trabajos suyos:
+        en este rubro la foto es el catálogo.</p>
+    </div>
+  </div>
+  <p class="dueno__cierre">
+    <a class="flecha" href="https://wa.me/56968650001" rel="noopener">Escribirme por WhatsApp <span aria-hidden="true">→</span></a>
+    <a class="flecha" href="../../" rel="noopener">Ver otros trabajos <span aria-hidden="true">→</span></a>
+  </p>
+</section>
+
+<footer class="pie">
+  <p>Sitio de demostración preparado por CristalWeb. El negocio no lo ha encargado ni
+    ha revisado su contenido.</p>
+</footer>
+
+<!-- Barra fija sólo en móvil (T2) -->
+<div class="barra-movil">
+  <a href="https://wa.me/56985528907" rel="noopener">Reservar por WhatsApp</a>
+</div>
+
+<script src="js/main.js"></script>
+</body>
+</html>

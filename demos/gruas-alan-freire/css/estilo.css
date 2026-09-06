@@ -1,0 +1,418 @@
+/* ═══════════════════════════════════════════════════════════════════
+   188 · Grúas Alan Freire IX — servicio de grúa 24 h · Freire
+   Demo comercial sin encargo. Construida el 02-09-2026.
+
+   DIRECCIÓN — «KILÓMETRO Y RUTA 5»
+   El activo del negocio no es el camión: es estar parado sobre la
+   carretera más transitada de Chile. La página es asfalto mojado y
+   señalética vial, y el gesto central es el POSTE KILOMÉTRICO —el dato
+   que hace que la grúa llegue rápido y que nadie le explica al cliente.
+
+   PALETA — DESLINDE OBLIGADO con la 49-gruas-del-sur (Gorbea, el otro
+   servicio de grúa 24 h del registro, y de la comuna vecina):
+   · La 49 es «Baliza en la ruta»: noche `#0E0F10` NEGRA con ámbar
+     `#FFB000`. Su objeto es LA BALIZA — la luz de emergencia.
+   · Ésta es EL CARTEL DE RUTA: fondo ASFALTO `#22282B` (gris con verde,
+     nunca negro) y verde de señalética caminera `#5FCB8E`. El objeto no
+     es la emergencia sino LA UBICACIÓN: el verde de los carteles que
+     dicen dónde está usted.
+   · Ninguna de las 187 usa el verde de señalética vial. Los verdes del
+     registro son de bosque, de quirófano, de bici y de faena.
+   El ámbar queda PROHIBIDO en esta demo justamente por la 49.
+
+   TRÍO — verificado contra identidades.md el 02-09-2026:
+   · Display QUANTICO (0 usos). Cuadrada, técnica, con el aire de las
+     señales de tránsito. Se usa en 700 y en mayúsculas cortas.
+   · Cuerpo ASAP (3 usos). Grotesca de esquinas suaves: legible en el
+     texto de emergencia sin sonar militar.
+   · Mono LEKTON (3 usos, el menos usado que calza). Fue dibujada para
+     documentación técnica de Olivetti; es la que mejor lee un
+     kilómetro y un teléfono.
+
+   ESTRUCTURA H · EL TELÉFONO ES EL HÉROE — la portada es el número.
+   AMBIENTE: lluvia (movimiento-web). En el sur la pana es con agua.
+   ═══════════════════════════════════════════════════════════════════ */
+
+:root {
+  --asfalto: #22282B;
+  --panel:   #2B3336;
+  --panel-2: #333C40;
+  --niebla:  #EEF1EF;   /* texto sobre asfalto: 13,6:1 */
+  --medio:   #9DA9A6;   /* 6,9:1 sobre asfalto; 5,9:1 sobre --panel,
+                           que es el peor fondo — calibrado contra ése */
+  --senal:   #5FCB8E;   /* verde de cartel de ruta. Calibrado contra el PEOR
+                           fondo (--panel-2 #333C40): 5,7:1 ahí, 7,5:1 sobre
+                           asfalto. El #3FB273 inicial daba 4,2:1 en los h3 de
+                           la sección del dueño — medido, no supuesto. */
+  --senal-2: #8FE0B4;   /* sobre --panel y para texto chico */
+  --linea:   #3E4A4D;
+  --alerta:  #FF8A80;   /* SÓLO el 133. Mismo caso: el #E5544B daba 3,5:1
+                           sobre --panel. Éste da 5,6:1 sobre --panel y
+                           6,4:1 sobre asfalto. */
+
+  --sale:   cubic-bezier(.16, 1, .3, 1);
+  --sale-2: cubic-bezier(.2, 0, 0, 1);
+
+  --ancho: min(92vw, 1180px);
+  --p--1: clamp(.78rem, .74rem + .18vw, .88rem);
+  --p-0:  clamp(1rem, .95rem + .25vw, 1.12rem);
+  --p-1:  clamp(1.2rem, 1.1rem + .5vw, 1.45rem);
+  --p-2:  clamp(1.6rem, 1.35rem + 1.2vw, 2.4rem);
+  --p-3:  clamp(2.1rem, 1.6rem + 2.4vw, 3.8rem);
+  --p-4:  clamp(2.8rem, 1.7rem + 5vw, 6.2rem);
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+[hidden] { display: none !important; }
+html { scroll-behavior: smooth; }
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+
+body {
+  margin: 0; background: var(--asfalto); color: var(--niebla);
+  font-family: Asap, "Segoe UI", system-ui, sans-serif;
+  font-size: var(--p-0); line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+img { max-width: 100%; }
+a { color: inherit; }
+.ancho { width: var(--ancho); margin-inline: auto; }
+
+.rotulo {
+  font-family: Lekton, ui-monospace, monospace;
+  font-size: var(--p--1); letter-spacing: .18em; text-transform: uppercase;
+  color: var(--senal); margin: 0 0 1.4rem;
+}
+.h2 {
+  font-family: Quantico, "Segoe UI", sans-serif; font-weight: 700;
+  font-size: var(--p-3); line-height: 1.05; letter-spacing: -.01em;
+  margin: 0 0 1.6rem;
+}
+.h2--chico { font-size: var(--p-2); }
+.mini { font-size: var(--p--1); color: var(--medio); max-width: 62ch; }
+.falta { color: var(--medio); font-style: italic; }
+
+/* ── BANDA ──────────────────────────────────────────────────────── */
+.propuesta { background: var(--senal); color: #10201A; }
+.propuesta__in { padding: .9rem 0; }
+.propuesta__q {
+  font-family: Lekton, ui-monospace, monospace;
+  font-size: var(--p--1); letter-spacing: .04em; margin: 0 0 .2rem;
+}
+.propuesta__d { margin: 0; font-size: var(--p--1); line-height: 1.45; }
+
+/* ── CABECERA ───────────────────────────────────────────────────── */
+.cab {
+  position: sticky; top: 0; z-index: 50;
+  background: var(--asfalto); border-bottom: 1px solid var(--linea);
+  transition: transform .3s var(--sale-2), background-color .3s ease, border-color .3s ease;
+}
+.cab__in { display: flex; align-items: center; justify-content: space-between; gap: 1.2rem; padding: .55rem 0; }
+.cab__marca { display: inline-flex; align-items: center; gap: .7rem; text-decoration: none; min-height: 44px; }
+.cab__txt {
+  font-family: Quantico, sans-serif; font-weight: 700;
+  font-size: var(--p-1); line-height: 1; display: flex; flex-direction: column; gap: .15rem;
+}
+.cab__sub {
+  font-family: Lekton, ui-monospace, monospace; font-weight: 400;
+  font-size: .6em; letter-spacing: .12em; color: var(--medio); text-transform: uppercase;
+}
+.cab__nav { display: flex; align-items: center; gap: 1.5rem; }
+.cab__nav a {
+  font-size: var(--p--1); text-decoration: none; color: var(--medio);
+  min-height: 44px; display: inline-flex; align-items: center; transition: color .2s ease;
+}
+.cab__nav a:hover, .cab__nav a:focus-visible { color: var(--niebla); }
+.cab__tel {
+  color: var(--senal) !important; font-family: Lekton, ui-monospace, monospace;
+  letter-spacing: .04em;
+}
+
+/* Cabecera 154ª — EL POSTE KILOMÉTRICO */
+.mojon { position: relative; width: 14px; height: 30px; flex: 0 0 auto; }
+.mojon__cuerpo {
+  position: absolute; inset: 0;
+  background: var(--niebla); border-radius: 7px 7px 1px 1px;
+}
+.mojon__franja {
+  position: absolute; left: 0; right: 0; top: 7px; height: 8px;
+  background: var(--senal);
+}
+
+.js .cab--top { background: transparent; border-bottom-color: transparent; }
+.js .cab--oculta { transform: translateY(-100%); }
+@media (prefers-reduced-motion: reduce) { .cab { transition-duration: 1ms; } }
+
+/* ── PORTADA ────────────────────────────────────────────────────── */
+.portada {
+  position: relative; isolation: isolate; overflow: hidden;
+  min-height: 90svh; display: flex; align-items: center; padding: 5rem 0 4rem;
+}
+.portada__foto { position: absolute; inset: 0; z-index: -2; }
+.portada__foto img {
+  display: block; width: 100%; height: 100%; object-fit: cover; object-position: 50% 58%;
+  -webkit-mask-image: linear-gradient(90deg, transparent 0%, transparent 20%, rgba(0,0,0,.28) 40%, rgba(0,0,0,.75) 62%, #000 80%, #000 100%);
+          mask-image: linear-gradient(90deg, transparent 0%, transparent 20%, rgba(0,0,0,.28) 40%, rgba(0,0,0,.75) 62%, #000 80%, #000 100%);
+}
+/* Velo entero en rgba y terminando en alfa 0. */
+.portada__foto::after {
+  content: ""; position: absolute; inset: 0;
+  background: linear-gradient(90deg,
+    rgba(34,40,43,1) 0%, rgba(34,40,43,1) 28%, rgba(34,40,43,.82) 46%,
+    rgba(34,40,43,.4) 64%, rgba(34,40,43,.1) 84%, rgba(34,40,43,0) 97%);
+}
+.portada__in { position: relative; z-index: 1; }
+.portada__h1 {
+  font-family: Quantico, sans-serif; font-weight: 700;
+  font-size: var(--p-4); line-height: .95; letter-spacing: -.02em; margin: 0 0 1.2rem;
+  text-transform: uppercase;
+}
+.portada__bajada { max-width: 40ch; color: var(--medio); font-size: var(--p-1); margin: 0 0 2.4rem; }
+
+/* El teléfono ES la portada (estructura H) */
+.heroe { margin: 0 0 2.6rem; display: flex; flex-direction: column; gap: .3rem; }
+.heroe__r {
+  font-family: Lekton, ui-monospace, monospace;
+  font-size: var(--p--1); letter-spacing: .2em; text-transform: uppercase; color: var(--senal);
+}
+.heroe__n {
+  font-family: Quantico, sans-serif; font-weight: 700;
+  font-size: clamp(2rem, 1.1rem + 4.4vw, 4.4rem);
+  line-height: 1; letter-spacing: -.01em; color: var(--niebla);
+  text-decoration: none; display: inline-flex; align-items: center; min-height: 44px;
+  border-bottom: 3px solid var(--senal); width: fit-content;
+  transition: color .2s ease;
+}
+.heroe__n:hover, .heroe__n:focus-visible { color: var(--senal); }
+
+.specs { display: flex; flex-wrap: wrap; gap: 2rem 3.2rem; margin: 0; }
+.specs__par { margin: 0; }
+.specs dt {
+  font-family: Lekton, ui-monospace, monospace;
+  font-size: var(--p--1); letter-spacing: .1em; text-transform: uppercase;
+  color: var(--medio); margin-bottom: .25rem;
+}
+.specs dd {
+  margin: 0; font-family: Quantico, sans-serif; font-weight: 700;
+  font-size: clamp(1.8rem, 1.4rem + 1.6vw, 2.6rem); line-height: 1; color: var(--senal);
+}
+
+/* ── AMBIENTE: LLUVIA ───────────────────────────────────────────── */
+/* Variante de caída del motor de movimiento-web: 18 hilos finos, muy
+   verticales y rápidos. Determinista (--i por nth-child; la CSP
+   bloquea style=""). Sólo transform y opacity. */
+.amb { position: absolute; inset: 0; z-index: -1; overflow: hidden; pointer-events: none; }
+.amb__p {
+  position: absolute; top: -12vh;
+  left: calc(var(--i) * 5.6%);
+  width: 1.5px; height: var(--largo, 42px);
+  border-radius: 1px;
+  background: linear-gradient(180deg, rgba(238,241,239,0), rgba(238,241,239,.5));
+  opacity: 0;
+  animation: amb-lluvia var(--dur, 1.5s) linear infinite;
+  animation-delay: calc(var(--i) * -.17s);
+  will-change: transform, opacity;
+}
+.amb--lluvia .amb__p:nth-child(3n+1) { --largo: 38px; --dur: 1.3s; }
+.amb--lluvia .amb__p:nth-child(3n+2) { --largo: 52px; --dur: 1.7s; }
+.amb--lluvia .amb__p:nth-child(3n+3) { --largo: 44px; --dur: 1.5s; }
+.amb__p:nth-child(1){--i:0}   .amb__p:nth-child(2){--i:1}
+.amb__p:nth-child(3){--i:2}   .amb__p:nth-child(4){--i:3}
+.amb__p:nth-child(5){--i:4}   .amb__p:nth-child(6){--i:5}
+.amb__p:nth-child(7){--i:6}   .amb__p:nth-child(8){--i:7}
+.amb__p:nth-child(9){--i:8}   .amb__p:nth-child(10){--i:9}
+.amb__p:nth-child(11){--i:10} .amb__p:nth-child(12){--i:11}
+.amb__p:nth-child(13){--i:12} .amb__p:nth-child(14){--i:13}
+.amb__p:nth-child(15){--i:14} .amb__p:nth-child(16){--i:15}
+.amb__p:nth-child(17){--i:16} .amb__p:nth-child(18){--i:17}
+
+@keyframes amb-lluvia {
+  0%   { transform: translate3d(0, 0, 0); opacity: 0; }
+  10%  { opacity: .5; }
+  90%  { opacity: .5; }
+  100% { transform: translate3d(-3vw, 118vh, 0); opacity: 0; }
+}
+@media (prefers-reduced-motion: reduce) { .amb { display: none; } }
+@media (max-width: 760px) { .amb__p:nth-child(n+10) { display: none; } }
+
+/* ── PIEZA FIRMA: LOS PRIMEROS MINUTOS ──────────────────────────── */
+.minutos { padding: 7rem 0; background: var(--panel); }
+.minutos .intro { max-width: 60ch; color: var(--medio); font-size: var(--p-1); margin: 0 0 3.5rem; }
+.pasos { list-style: none; margin: 0; padding: 0; }
+.paso {
+  display: grid; grid-template-columns: 8rem minmax(0, 1fr);
+  gap: .5rem 2.5rem; padding: 2rem 0; border-top: 1px solid var(--linea);
+}
+.paso__t {
+  font-family: Lekton, ui-monospace, monospace;
+  font-size: var(--p--1); letter-spacing: .1em; text-transform: uppercase;
+  color: var(--senal-2); margin: .3rem 0 0; grid-row: 1 / span 3;
+}
+.paso__h {
+  font-family: Quantico, sans-serif; font-weight: 700;
+  font-size: var(--p-1); margin: 0 0 .5rem; line-height: 1.2;
+}
+.paso__d { margin: 0; color: var(--medio); max-width: 62ch; }
+.paso__x {
+  margin: .7rem 0 0; font-family: Lekton, ui-monospace, monospace;
+  font-size: var(--p--1); color: var(--senal-2); max-width: 62ch;
+}
+/* El paso del kilómetro es el que vende la sección: se destaca por
+   filete y fondo, no por un segundo color de acento. */
+.paso--clave {
+  background: var(--panel-2); margin-inline: -1.5rem; padding-inline: 1.5rem;
+  border-left: 3px solid var(--senal); border-top-color: transparent;
+}
+.paso--fin { border-bottom: 1px solid var(--linea); }
+.pasos > :last-child { border-bottom: 1px solid var(--linea); }
+
+.nota {
+  margin: 3rem 0 0; padding-top: 1.5rem; border-top: 1px solid var(--linea);
+  font-size: var(--p--1); color: var(--medio); max-width: 70ch;
+}
+.nota b { color: var(--alerta); font-family: Lekton, ui-monospace, monospace; font-size: 1.15em; }
+
+/* ── CITA ───────────────────────────────────────────────────────── */
+.cita { position: relative; isolation: isolate; overflow: hidden; min-height: min(52vh, 400px); display: grid; align-items: center; }
+.cita img { position: absolute; inset: 0; z-index: -2; width: 100%; height: 100%; object-fit: cover; object-position: 50% 55%; }
+/* Peor caso medido a mano: los reflejos rojos claros del pavimento bajo
+   el velo .78 sobre asfalto → texto niebla en 6,4:1 a tamaño grande. */
+.cita::after { content: ""; position: absolute; inset: 0; z-index: -1; background: rgba(34,40,43,.78); }
+.cita__txt p {
+  font-family: Quantico, sans-serif; font-weight: 700; text-transform: uppercase;
+  font-size: var(--p-3); line-height: 1.08; max-width: 18ch; margin: 0;
+}
+
+/* ── FICHA DE SERVICIOS ─────────────────────────────────────────── */
+.ficha { padding: 7rem 0; }
+.ficha__grid { border-top: 1px solid var(--linea); margin-bottom: 2rem; }
+.fila { display: grid; grid-template-columns: 4.5rem minmax(0, 1fr); gap: 1.5rem; padding: 2rem 0; border-bottom: 1px solid var(--linea); }
+.fila__n { font-family: Lekton, ui-monospace, monospace; font-size: var(--p--1); color: var(--senal); margin: .35rem 0 0; }
+.fila__c h3 { font-family: Quantico, sans-serif; font-weight: 700; font-size: var(--p-1); margin: 0 0 .5rem; line-height: 1.2; }
+.fila__c p { margin: 0; color: var(--medio); max-width: 62ch; }
+
+/* ── TAJO ───────────────────────────────────────────────────────── */
+.tajo { position: relative; isolation: isolate; overflow: hidden; margin: 0; min-height: min(56vh, 440px); display: flex; align-items: flex-end; }
+.tajo img { position: absolute; inset: 0; z-index: -2; width: 100%; height: 100%; object-fit: cover; object-position: 50% 50%; }
+.tajo::after {
+  content: ""; position: absolute; inset: 0; z-index: -1;
+  background: linear-gradient(0deg, rgba(34,40,43,.95) 0%, rgba(34,40,43,.8) 32%, rgba(34,40,43,.34) 62%, rgba(34,40,43,0) 92%);
+}
+.tajo__txt { padding: 2.8rem 0; }
+.tajo__f { font-family: Quantico, sans-serif; font-weight: 700; font-size: var(--p-2); margin: 0; line-height: 1.15; max-width: 22ch; }
+
+/* ── MITADES ────────────────────────────────────────────────────── */
+.mitades { display: grid; grid-template-columns: 1fr 1fr; }
+.mitades__foto img { display: block; width: 100%; height: 100%; object-fit: cover; }
+.mitades__txt { padding: 5.5rem clamp(1.5rem, 4vw, 4rem); display: flex; flex-direction: column; justify-content: center; }
+.mitades__txt > p { color: var(--medio); max-width: 46ch; }
+.lista { margin: 1.4rem 0; padding: 0; list-style: none; }
+.lista li { padding: .55rem 0 .55rem 1.5rem; position: relative; border-bottom: 1px solid var(--linea); font-size: var(--p--1); }
+.lista li::before { content: ""; position: absolute; left: 0; top: 1.05em; width: 8px; height: 1px; background: var(--senal); }
+.lista--marca li { border-bottom: none; padding-bottom: .3rem; }
+
+/* ── MOSAICO ────────────────────────────────────────────────────── */
+.mos { padding: 7rem 0 0; background: var(--panel); }
+.mos__grilla { display: grid; gap: 4px; grid-template-columns: repeat(3, 1fr); margin-top: 3rem; }
+.mos__p { margin: 0; overflow: hidden; }
+.mos__p:nth-child(1), .mos__p:nth-child(6) { grid-column: span 2; }
+.mos__p img { display: block; width: 100%; height: 100%; aspect-ratio: 3 / 2; object-fit: cover; transition: transform .5s var(--sale); }
+.mos__p:hover img { transform: scale(1.05); }
+@media (prefers-reduced-motion: reduce) { .mos__p:hover img { transform: none; } }
+
+/* ── CONTACTO ───────────────────────────────────────────────────── */
+.con-telon { position: relative; isolation: isolate; overflow: hidden; }
+.telon { position: absolute; inset: 0; z-index: -1; pointer-events: none; }
+.telon img {
+  display: block; width: 100%; height: 100%; object-fit: cover; opacity: .15;
+  -webkit-mask-image: linear-gradient(180deg, transparent 0%, #000 22%, #000 74%, transparent 100%);
+          mask-image: linear-gradient(180deg, transparent 0%, #000 22%, #000 74%, transparent 100%);
+}
+.contacto { padding: 7rem 0; }
+.contacto__num { margin: 0 0 3rem; }
+.contacto__num a {
+  font-family: Quantico, sans-serif; font-weight: 700;
+  font-size: clamp(2rem, 1.1rem + 4.4vw, 4.6rem); line-height: 1;
+  color: var(--senal); text-decoration: none;
+  display: inline-flex; align-items: center; min-height: 44px;
+  border-bottom: 3px solid transparent; transition: border-color .25s ease;
+}
+.contacto__num a:hover, .contacto__num a:focus-visible { border-bottom-color: var(--senal); }
+.datos { margin: 0 0 2rem; max-width: 46rem; }
+.datos > div { display: flex; justify-content: space-between; gap: 1.5rem; padding: .8rem 0; border-bottom: 1px solid var(--linea); }
+.datos dt { font-family: Lekton, ui-monospace, monospace; font-size: var(--p--1); color: var(--medio); letter-spacing: .08em; text-transform: uppercase; }
+.datos dd { margin: 0; text-align: right; font-size: var(--p--1); }
+.contacto .mini b { color: var(--alerta); font-family: Lekton, ui-monospace, monospace; font-size: 1.15em; }
+
+/* ── FLECHA (T3 en el cierre) ───────────────────────────────────── */
+.flecha {
+  display: inline-flex; align-items: center; gap: .5rem; min-height: 44px;
+  font-family: Lekton, ui-monospace, monospace; font-size: var(--p--1); letter-spacing: .06em;
+  color: var(--senal); text-decoration: none; border-bottom: 1px solid currentColor;
+  transition: border-bottom-width .2s ease;
+}
+.flecha:hover, .flecha:focus-visible { border-bottom-width: 3px; }
+.flecha--fuerte { color: var(--niebla); }
+
+/* ── PARA EL DUEÑO ──────────────────────────────────────────────── */
+.dueno { padding: 7rem 0; border-top: 1px solid var(--linea); background: var(--panel-2); }
+.dueno__cols { display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; margin-bottom: 3rem; }
+.dueno h3 {
+  font-family: Lekton, ui-monospace, monospace; font-weight: 700;
+  font-size: var(--p--1); letter-spacing: .12em; text-transform: uppercase;
+  color: var(--senal); margin: 2rem 0 1rem;
+}
+.dueno p { color: var(--medio); max-width: 60ch; }
+.dueno .lista li { color: var(--medio); }
+.dueno__cierre { display: flex; flex-wrap: wrap; gap: 2rem; margin-top: 3rem; }
+
+.pie { padding: 3rem 0; border-top: 1px solid var(--linea); }
+.pie__in p { font-size: var(--p--1); color: var(--medio); margin: 0 0 .8rem; }
+.pie__leg { opacity: .8; }
+
+/* ── REVEALS ────────────────────────────────────────────────────── */
+.js [data-rev-grupo] > * { opacity: 0; transform: translateY(24px); }
+.js [data-rev-grupo].ok > * {
+  opacity: 1; transform: none;
+  transition: opacity .3s ease-out, transform .58s var(--sale);
+  transition-delay: calc(var(--r, 0) * 60ms);
+}
+[data-rev-grupo] > :nth-child(1){--r:0} [data-rev-grupo] > :nth-child(2){--r:1}
+[data-rev-grupo] > :nth-child(3){--r:2} [data-rev-grupo] > :nth-child(4){--r:3}
+[data-rev-grupo] > :nth-child(5){--r:4} [data-rev-grupo] > :nth-child(6){--r:5}
+[data-rev-grupo] > :nth-child(7){--r:6}
+@media (prefers-reduced-motion: reduce) {
+  .js [data-rev-grupo] > * { opacity: 1; transform: none; transition: none; }
+}
+:focus-visible { outline: 2px solid var(--senal); outline-offset: 3px; }
+
+/* ── MÓVIL ──────────────────────────────────────────────────────── */
+@media (max-width: 980px) {
+  .mitades { grid-template-columns: 1fr; }
+  .mitades__foto img { aspect-ratio: 16 / 10; height: auto; }
+  .dueno__cols { grid-template-columns: 1fr; gap: 1rem; }
+}
+@media (max-width: 760px) {
+  .cab__nav a:not(.cab__tel) { display: none; }
+  .portada { min-height: auto; padding: 3.5rem 0 3rem; }
+  /* En teléfono el texto cae sobre la foto: velo de arriba abajo. */
+  .portada__foto img {
+    object-position: 50% 60%;
+    -webkit-mask-image: linear-gradient(180deg, #000 0%, #000 60%, transparent 100%);
+            mask-image: linear-gradient(180deg, #000 0%, #000 60%, transparent 100%);
+  }
+  .portada__foto::after {
+    background: linear-gradient(180deg,
+      rgba(34,40,43,.88) 0%, rgba(34,40,43,.8) 34%, rgba(34,40,43,.88) 64%, rgba(34,40,43,1) 100%);
+  }
+  .paso { grid-template-columns: 1fr; gap: .3rem; }
+  .paso__t { grid-row: auto; margin-bottom: .3rem; }
+  .paso--clave { margin-inline: -1rem; padding-inline: 1rem; }
+  .ficha, .minutos, .contacto, .dueno { padding: 4.5rem 0; }
+  .mos { padding-top: 4.5rem; }
+  .mos__grilla { grid-template-columns: repeat(2, 1fr); }
+  .mos__p:nth-child(1), .mos__p:nth-child(6) { grid-column: span 2; }
+}
+@media (max-width: 460px) {
+  .datos > div { flex-direction: column; gap: .2rem; }
+  .datos dd { text-align: left; }
+}

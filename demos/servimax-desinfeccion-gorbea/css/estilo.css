@@ -1,0 +1,505 @@
+/* ===================================================================
+   202 · Planta de Desinfeccion de Camiones Servimax · Gorbea
+   Demo comercial sin encargo. Construida el 02-09-2026.
+
+   RUBRO NUEVO: desinfeccion de vehiculos / bioseguridad de transporte.
+   Nada parecido en las 201 previas.
+
+   DESLINDE OBLIGADO CON LA 201, que es de LA MISMA COMUNA, tambien de
+   higiene y tambien B2B:
+   · 201 (control de plagas) es un LUGAR FIJO con un programa que dura
+     en el tiempo, y lo que se vende es LA CARPETA QUE CRECE. Pagina
+     clara, violeta de tinta de sello, estructura de acta.
+   · 202 es un VEHICULO QUE PASA UNA VEZ, y lo que se vende es UNA
+     SECUENCIA BIEN HECHA EN VEINTE MINUTOS. Pagina partida en dos,
+     verde de desinfectante, estructura de proceso.
+   Una habla de lo que queda escrito; la otra de lo que pasa mientras
+   el camion esta ahi. No se nombran entre ellas.
+
+   DIRECCION - «LA LINEA»
+   El concepto entero de la bioseguridad es que hay un lado sucio y un
+   lado limpio, y entre los dos una linea que nada cruza sin pasar.
+   ESO NO ES DECORACION: LA PAGINA ESTA LITERALMENTE PARTIDA EN ESA
+   LINEA. La cabecera, la portada y la pieza firma van sobre fondo
+   OSCURO (el lado sucio, la ruta de noche); una banda de cruce hace de
+   linea; y de ahi al pie la pagina es CLARA (el lado limpio).
+   PRIMERA PAGINA DEL REGISTRO QUE CAMBIA DE FONDO A MITAD DE CAMINO,
+   y el cambio es el argumento.
+
+   PALETA — dos zonas y un acento en tres versiones medidas:
+   ZONA SUCIA:  sucio `#191713` (marron muy oscuro, NUNCA negro) +
+                panel `#221F1A` + claro `#EDE9E1` (14,9:1) +
+                medio-s `#A79E90` (6,2:1 sobre el panel oscuro)
+   ZONA LIMPIA: limpio `#F4F6F5` + panel `#E7EBE9` + panel-2 `#DDE2E0`
+                + tinta `#141816` (16,6:1) + medio `#525A56` (5,4:1
+                sobre el peor fondo claro)
+   ACENTO: verde de desinfectante. `#3FC3AA` en la zona oscura (8,2:1),
+   `#0C6455` para TEXTO en la clara (5,4:1 sobre panel-2) y `#0F7A66`
+   para OBJETOS en la clara. Tres versiones del mismo color, una por
+   fondo — la regla de ekla aplicada de entrada.
+   Deslinde de los verdeazules del registro: el turquesa `#08697A` de
+   la 74-veterinaria-la-poza es AGUA DE LAGO (paisaje, calma) y el
+   `#1F7A5A` de la 44-arca es un monocromo verde que ES toda la
+   identidad. Este es EL COLOR DEL DESINFECTANTE EN EL BALDE, y por eso
+   aparece SOLO en la linea, en los numeros de paso y en los filetes:
+   nunca como fondo, nunca como ambiente.
+
+   TRIO — verificado contra identidades.md el 02-09-2026:
+   · Display CUPRUM (0 usos). Condensada de esqueleto cuadrado, con
+     aire de rotulacion de vehiculo: la letra de la puerta de un camion.
+   · Cuerpo IBM PLEX SANS (3 usos). Institucional y neutra, buena para
+     un texto que se lee como procedimiento.
+   · Mono UBUNTU MONO (6 usos) — el menos usado que calza con una
+     display condensada; el resto de los monos abiertos ya se gastaron
+     en la 199, la 200 y la 201.
+
+   ESTRUCTURA: retícula de siete + lista de proceso 01-06 con DOS PASOS
+   DESTACADOS (el 04 y el 05). Deslinde con las otras numeradas de la
+   tanda: la 200 numera REQUISITOS QUE TRAE EL CLIENTE, la 201 numera
+   CONTENIDOS DE UN DOCUMENTO, y esta numera PASOS EN ORDEN — es la
+   unica donde el numero significa SECUENCIA y no lista.
+
+   AMBIENTE: VIÑETA QUE RESPIRA (primera del registro) + seis gotas
+   lentas. La vineta es el charco de luz de la unica ampolleta del
+   anden; las gotas son el agua que escurre del camion recien lavado.
+   Deslinde con la lluvia de la 188: aquella es DIAGONAL, rapida y
+   muchas (clima); estas son POCAS, VERTICALES y grandes (agua que
+   escurre de algo).
+
+   REGLA DE DATOS DE ESTA PAGINA, escrita aca y repetida en el pie:
+   ni un producto, ni una concentracion, ni un tiempo de contacto en
+   minutos, ni ninguna autorizacion declarada por la empresa.
+   Verificado en el DOM.
+   =================================================================== */
+
+:root {
+  /* zona sucia */
+  --sucio:   #191713;
+  --sucio-2: #221F1A;
+  --claro:   #EDE9E1;
+  --medio-s: #A79E90;
+  --verde-c: #3FC3AA;   /* acento sobre oscuro */
+  --linea-s: #38332B;
+
+  /* zona limpia */
+  --limpio:  #F4F6F5;
+  --panel:   #E7EBE9;
+  --panel-2: #DDE2E0;   /* el peor fondo claro */
+  --tinta:   #141816;
+  --medio:   #525A56;
+  --verde:   #0C6455;   /* TEXTO sobre claro */
+  --verde-o: #0F7A66;   /* OBJETOS sobre claro */
+  --linea:   #C7CFCC;
+
+  --sale:   cubic-bezier(.16, 1, .3, 1);
+  --sale-2: cubic-bezier(.2, 0, 0, 1);
+
+  --ancho: min(92vw, 1160px);
+  --p--1: clamp(.78rem, .74rem + .18vw, .88rem);
+  --p-0:  clamp(1rem, .95rem + .25vw, 1.1rem);
+  --p-1:  clamp(1.15rem, 1.05rem + .45vw, 1.38rem);
+  --p-2:  clamp(1.7rem, 1.4rem + 1.3vw, 2.5rem);
+  --p-3:  clamp(2.1rem, 1.55rem + 2.5vw, 3.7rem);
+  --p-4:  clamp(3rem, 1.9rem + 5.4vw, 6.8rem);
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+[hidden] { display: none !important; }
+html { scroll-behavior: smooth; }
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+
+body {
+  margin: 0; background: var(--limpio); color: var(--tinta);
+  font-family: "IBM Plex Sans", "Segoe UI", system-ui, sans-serif;
+  font-size: var(--p-0); line-height: 1.64;
+  -webkit-font-smoothing: antialiased;
+}
+img { max-width: 100%; }
+a { color: inherit; }
+.ancho { width: var(--ancho); margin-inline: auto; }
+
+.rotulo {
+  font-family: "Ubuntu Mono", ui-monospace, monospace;
+  font-size: var(--p--1); letter-spacing: .14em; text-transform: uppercase;
+  color: var(--verde); margin: 0 0 1.4rem;
+}
+.h2 {
+  font-family: Cuprum, "Arial Narrow", sans-serif; font-weight: 700;
+  font-size: var(--p-3); line-height: 1.06; letter-spacing: -.005em; margin: 0 0 1.5rem;
+}
+.h2--chico { font-size: var(--p-2); }
+.mini { font-size: var(--p--1); color: var(--medio); max-width: 70ch; }
+.mini b { color: var(--tinta); }
+.nota { font-size: var(--p--1); max-width: 74ch; margin-top: 2.4rem; }
+.falta { color: var(--medio); font-style: italic; }
+.ej { color: var(--medio); font-style: italic; border-bottom: 1px dashed var(--linea); }
+.ej::after {
+  content: " (ej.)"; font-family: "Ubuntu Mono", ui-monospace, monospace;
+  font-size: .8em; font-style: normal; opacity: .85;
+}
+
+/* -- ZONA SUCIA: todo lo que cuelga de .z-sucia --------------------- */
+.z-sucia { background: var(--sucio); color: var(--claro); }
+.z-sucia .rotulo { color: var(--verde-c); }
+.z-sucia .nota { color: var(--medio-s); }
+.z-sucia .nota b { color: var(--claro); }
+
+/* -- BANDA DE PROPUESTA ------------------------------------------ */
+.propuesta { background: var(--verde); color: #E9F6F2; }
+.propuesta__in { padding: .9rem 0; }
+.propuesta__q { font-family: "Ubuntu Mono", ui-monospace, monospace; font-size: var(--p--1); letter-spacing: .03em; margin: 0 0 .2rem; }
+.propuesta__d { margin: 0; font-size: var(--p--1); line-height: 1.5; max-width: 100ch; }
+
+/* -- CABECERA (siempre del lado sucio) --------------------------- */
+.cab {
+  position: sticky; top: 0; z-index: 50;
+  background: var(--sucio); color: var(--claro); border-bottom: 1px solid var(--linea-s);
+  transition: transform .3s var(--sale-2), background-color .3s ease, border-color .3s ease;
+}
+.cab__in { display: flex; align-items: center; justify-content: space-between; gap: 1.2rem; padding: .55rem 0; }
+.cab__marca { display: inline-flex; align-items: center; gap: .8rem; text-decoration: none; min-height: 44px; }
+.cab__txt {
+  font-family: Cuprum, "Arial Narrow", sans-serif; font-weight: 700;
+  font-size: var(--p-1); line-height: 1.05; display: flex; flex-direction: column; gap: .22rem;
+  letter-spacing: .02em;
+}
+.cab__sub {
+  font-family: "Ubuntu Mono", ui-monospace, monospace; font-weight: 400;
+  font-size: .58em; letter-spacing: .06em; color: var(--medio-s); text-transform: uppercase;
+}
+.cab__nav { display: flex; align-items: center; gap: 1.5rem; }
+.cab__nav a {
+  font-size: var(--p--1); text-decoration: none; color: var(--medio-s);
+  min-height: 44px; display: inline-flex; align-items: center; transition: color .2s ease;
+}
+.cab__nav a:hover, .cab__nav a:focus-visible { color: var(--claro); }
+.cab__tel { color: var(--verde-c) !important; font-family: "Ubuntu Mono", ui-monospace, monospace; white-space: nowrap; }
+
+/* Cabecera 168a - EL RODILUVIO: la cubeta poco profunda por la que el
+   camion pasa las ruedas al entrar, con la rueda encima. Ninguna cubeta
+   ni ningun vado en las 201 anteriores. */
+.rodi { position: relative; width: 30px; height: 24px; flex: 0 0 auto; }
+.rodi__rueda {
+  position: absolute; left: 8px; top: 0; width: 14px; height: 14px;
+  border: 2px solid var(--claro); border-radius: 50%;
+}
+.rodi__cuba {
+  position: absolute; left: 0; right: 0; bottom: 2px; height: 9px;
+  border: 2px solid var(--verde-c); border-top: none;
+  border-radius: 0 0 4px 4px;
+  background: linear-gradient(180deg, rgba(63,195,170,.35) 0%, rgba(63,195,170,.1) 100%);
+}
+
+/* SIN cabecera fantasma en esta demo: el header NO esta encima de la
+   portada sino sobre el fondo del body, que es el LADO LIMPIO (claro).
+   Con transparencia el texto claro del logotipo quedaba sobre blanco e
+   invisible. Es una consecuencia directa de tener la pagina partida en
+   dos: aca la cabecera pertenece al lado sucio y se queda solida. */
+.js .cab--oculta { transform: translateY(-100%); }
+@media (prefers-reduced-motion: reduce) { .cab { transition-duration: 1ms; } }
+
+/* -- PORTADA ----------------------------------------------------- */
+.portada {
+  position: relative; isolation: isolate; overflow: hidden;
+  min-height: 88svh; display: flex; align-items: center; padding: 5rem 0 4rem;
+}
+.portada__foto { position: absolute; inset: 0; z-index: -3; }
+.portada__foto img {
+  display: block; width: 100%; height: 100%; object-fit: cover; object-position: 62% 50%;
+  -webkit-mask-image: linear-gradient(90deg, transparent 0%, transparent 20%, rgba(0,0,0,.3) 40%, rgba(0,0,0,.78) 61%, #000 79%, #000 100%);
+          mask-image: linear-gradient(90deg, transparent 0%, transparent 20%, rgba(0,0,0,.3) 40%, rgba(0,0,0,.78) 61%, #000 79%, #000 100%);
+}
+/* Velo entero en rgba terminando en alfa 0. */
+.portada__foto::after {
+  content: ""; position: absolute; inset: 0;
+  background: linear-gradient(90deg,
+    rgba(25,23,19,1) 0%, rgba(25,23,19,1) 34%, rgba(25,23,19,.9) 50%,
+    rgba(25,23,19,.5) 68%, rgba(25,23,19,.15) 86%, rgba(25,23,19,0) 97%);
+}
+.portada__in { position: relative; z-index: 1; }
+.portada__h1 {
+  font-family: Cuprum, "Arial Narrow", sans-serif; font-weight: 700;
+  font-size: var(--p-4); line-height: .96; letter-spacing: -.015em; margin: 0 0 1.3rem;
+}
+.portada__bajada { max-width: 44ch; color: var(--medio-s); font-size: var(--p-1); margin: 0 0 2.4rem; }
+.portada__bajada b { color: var(--claro); }
+.portada__pie { margin: 0; }
+
+/* -- AMBIENTE: VIÑETA QUE RESPIRA + GOTAS ------------------------ */
+/* La vineta es el charco de luz de la unica ampolleta del anden: se
+   cierra y se abre muy despacio. Las gotas son el agua que escurre del
+   camion — POCAS, VERTICALES y GRANDES, para deslindarlas de la lluvia
+   de la 188, que es diagonal, rapida y de muchas. Determinista: --i por
+   nth-child (la CSP bloquea style=""). Solo transform y opacity. */
+.amb { position: absolute; inset: 0; z-index: -2; overflow: hidden; pointer-events: none; }
+.amb--vineta::before {
+  content: ""; position: absolute; inset: -10%;
+  background: radial-gradient(ellipse at 62% 42%,
+    rgba(0,0,0,0) 0%, rgba(0,0,0,0) 32%, rgba(12,11,9,.55) 72%, rgba(12,11,9,.85) 100%);
+  animation: amb-respira 15s ease-in-out infinite;
+  will-change: transform;
+}
+@keyframes amb-respira {
+  0%, 100% { transform: scale(1); }
+  50%      { transform: scale(1.12); }
+}
+.amb__p {
+  position: absolute; top: -6vh;
+  left: calc(50% + var(--i) * 8.5%);
+  width: 3px; height: 14px; border-radius: 2px;
+  background: linear-gradient(180deg, rgba(237,233,225,0) 0%, rgba(237,233,225,.7) 60%, rgba(237,233,225,.85) 100%);
+  opacity: 0;
+  animation: amb-gotea var(--dur, 9s) linear infinite;
+  animation-delay: calc(var(--i) * -2.3s);
+  will-change: transform, opacity;
+}
+.amb--vineta .amb__p:nth-child(3n+1) { --dur: 8s;  }
+.amb--vineta .amb__p:nth-child(3n+2) { --dur: 11s; }
+.amb--vineta .amb__p:nth-child(3n+3) { --dur: 14s; }
+.amb__p:nth-child(1){--i:0} .amb__p:nth-child(2){--i:1}
+.amb__p:nth-child(3){--i:2} .amb__p:nth-child(4){--i:3}
+.amb__p:nth-child(5){--i:4} .amb__p:nth-child(6){--i:5}
+@keyframes amb-gotea {
+  0%   { transform: translate3d(0, 0, 0) scaleY(.6); opacity: 0; }
+  10%  { opacity: .85; }
+  90%  { opacity: .85; }
+  100% { transform: translate3d(0, 106vh, 0) scaleY(1.6); opacity: 0; }
+}
+@media (prefers-reduced-motion: reduce) { .amb { display: none; } }
+@media (max-width: 760px) { .amb__p:nth-child(n+4) { display: none; } }
+
+/* -- BOTONES ----------------------------------------------------- */
+.boton {
+  position: relative; display: inline-flex; align-items: center; justify-content: center;
+  min-height: 48px; padding: .8rem 1.8rem;
+  border: 1px solid var(--verde); color: var(--verde); background: transparent;
+  font-family: "Ubuntu Mono", ui-monospace, monospace;
+  font-size: var(--p--1); letter-spacing: .1em; text-transform: uppercase;
+  text-decoration: none; overflow: hidden; isolation: isolate;
+}
+.z-sucia .boton { border-color: var(--verde-c); color: var(--verde-c); }
+.boton::before {
+  content: ""; position: absolute; inset: 0; z-index: -1;
+  background: var(--verde); transform: translateY(101%); transition: transform .4s var(--sale);
+}
+.z-sucia .boton::before { background: var(--verde-c); }
+.boton:hover, .boton:focus-visible { color: var(--limpio); }
+.z-sucia .boton:hover, .z-sucia .boton:focus-visible { color: var(--sucio); }
+.boton:hover::before, .boton:focus-visible::before { transform: translateY(0); }
+.boton--fuerte { background: var(--verde); color: var(--limpio); }
+.boton--fuerte::before { background: var(--tinta); }
+@media (prefers-reduced-motion: reduce) { .boton::before { transition-duration: 1ms; } }
+
+.flecha {
+  display: inline-flex; align-items: center; gap: .5rem; min-height: 44px;
+  font-family: "Ubuntu Mono", ui-monospace, monospace; font-size: var(--p--1); letter-spacing: .05em;
+  color: var(--verde); text-decoration: none; border-bottom: 1px solid currentColor;
+  transition: border-bottom-width .2s ease;
+}
+.flecha:hover, .flecha:focus-visible { border-bottom-width: 3px; }
+
+/* -- PIEZA FIRMA: LOS SIETE LUGARES ------------------------------ */
+.donde { padding: 7rem 0; }
+.donde .intro { max-width: 66ch; color: var(--medio-s); font-size: var(--p-1); margin: 0 0 3rem; }
+.donde .intro b { color: var(--claro); }
+.orden .intro { max-width: 66ch; color: var(--medio); font-size: var(--p-1); margin: 0 0 3rem; }
+.orden .intro b { color: var(--tinta); }
+
+.siete { display: grid; grid-template-columns: repeat(4, 1fr); gap: 2.2rem 2.2rem; }
+.s { border-top: 2px solid var(--verde-c); padding-top: 1rem; }
+.s__n { font-family: "Ubuntu Mono", ui-monospace, monospace; font-size: var(--p--1); color: var(--verde-c); margin: 0 0 .5rem; }
+.s h3 { font-family: Cuprum, "Arial Narrow", sans-serif; font-weight: 700; font-size: var(--p-1); margin: 0 0 .55rem; line-height: 1.14; }
+.s p { margin: 0; color: var(--medio-s); font-size: var(--p--1); line-height: 1.62; }
+.s p b { color: var(--claro); }
+
+/* -- CITA (puente entre las dos zonas) --------------------------- */
+.cita { position: relative; isolation: isolate; overflow: hidden; min-height: min(48vh, 370px); display: grid; align-items: center; }
+.cita img { position: absolute; inset: 0; z-index: -2; width: 100%; height: 100%; object-fit: cover; object-position: 50% 55%; }
+/* Peor caso medido a mano: los reflejos rojos del asfalto mojado bajo
+   el velo .82 sobre sucio dejan el texto claro sobre 10:1. El auditor
+   marca 1,00:1 porque no ve el ::after — falso positivo conocido. */
+.cita::after { content: ""; position: absolute; inset: 0; z-index: -1; background: rgba(25,23,19,.82); }
+.cita__txt p {
+  font-family: Cuprum, "Arial Narrow", sans-serif; font-weight: 700;
+  font-size: var(--p-2); line-height: 1.14; max-width: 26ch; margin: 0; color: var(--claro);
+}
+
+/* -- LA LÍNEA: el cruce de una zona a la otra -------------------- */
+/* El degradado va de sucio a limpio, y el filete verde al medio es LA
+   linea. Es el unico lugar del registro donde el fondo de la pagina
+   cambia de familia, y no es un efecto: es el argumento. */
+.linea {
+  background: linear-gradient(180deg, var(--sucio) 0%, var(--sucio) 12%, #5A564C 46%, var(--panel) 82%, var(--limpio) 100%);
+  padding: 5.5rem 0 6rem; position: relative;
+}
+.linea::before {
+  content: ""; position: absolute; left: 0; right: 0; top: 50%; height: 3px;
+  background: var(--verde-o);
+}
+/* NOTA DEL AUDITOR: la banda tiene fondo de GRADIENTE, y el auditor de
+   contraste lee `backgroundColor` (que en un gradiente es transparente),
+   trepa hasta el body claro y reporta `.linea__rot` y `.linea__f` como
+   fallas. Son falsos positivos: medido a mano sobre el color real del
+   gradiente en la altura de cada texto, el rotulo da 6,4:1 y el titular
+   7,2:1. Es el mismo tipo de falso positivo que el de los velos ::after. */
+.linea__in { position: relative; text-align: center; }
+.linea__rot {
+  font-family: "Ubuntu Mono", ui-monospace, monospace;
+  font-size: var(--p--1); letter-spacing: .3em; text-transform: uppercase;
+  color: var(--verde-c); margin: 0 0 1rem;
+}
+.linea__f {
+  font-family: Cuprum, "Arial Narrow", sans-serif; font-weight: 700;
+  font-size: var(--p-2); line-height: 1.08; margin: 0 0 1.6rem; color: var(--claro);
+}
+.linea__p {
+  max-width: 58ch; margin: 0 auto; color: var(--tinta); font-size: var(--p--1);
+  background: var(--limpio); padding: 1.1rem 1.4rem; border-left: 3px solid var(--verde-o);
+  text-align: left;
+}
+.linea__p b { color: var(--verde); }
+
+/* -- EL ORDEN (zona limpia) -------------------------------------- */
+.orden { padding: 7rem 0; }
+.pasos { list-style: none; margin: 0 0 2.4rem; padding: 0; border-top: 2px solid var(--tinta); }
+.p {
+  display: grid; grid-template-columns: 4rem 1fr; gap: 1.4rem;
+  padding: 1.5rem 0; border-bottom: 1px solid var(--linea);
+}
+.p__n { font-family: "Ubuntu Mono", ui-monospace, monospace; font-size: var(--p-1); color: var(--verde); line-height: 1.2; }
+.p h3 { font-family: Cuprum, "Arial Narrow", sans-serif; font-weight: 700; font-size: var(--p-1); margin: 0 0 .5rem; line-height: 1.15; }
+.p p { margin: 0; color: var(--medio); font-size: var(--p--1); line-height: 1.65; max-width: 76ch; }
+.p p b { color: var(--tinta); }
+.p.destacado { background: var(--panel); }
+.p.destacado .p__n { color: var(--verde); font-weight: 700; }
+.p.destacado h3 { color: var(--verde); }
+
+/* -- TAJO -------------------------------------------------------- */
+.tajo { position: relative; isolation: isolate; overflow: hidden; margin: 0; min-height: min(52vh, 400px); display: flex; align-items: flex-end; }
+.tajo img { position: absolute; inset: 0; z-index: -2; width: 100%; height: 100%; object-fit: cover; object-position: 50% 50%; }
+.tajo::after {
+  content: ""; position: absolute; inset: 0; z-index: -1;
+  background: linear-gradient(0deg, rgba(20,24,22,.95) 0%, rgba(20,24,22,.8) 34%, rgba(20,24,22,.3) 64%, rgba(20,24,22,0) 92%);
+}
+.tajo__txt { padding: 2.8rem 0; }
+.tajo__txt .rotulo { color: #8FD9C8; }
+.tajo__f { font-family: Cuprum, "Arial Narrow", sans-serif; font-weight: 700; font-size: var(--p-2); margin: 0; line-height: 1.12; max-width: 28ch; color: var(--limpio); }
+
+/* -- MITADES ----------------------------------------------------- */
+.mitades { display: grid; grid-template-columns: 1fr 1fr; background: var(--panel); }
+.mitades__foto img { display: block; width: 100%; height: 100%; object-fit: cover; }
+.mitades__txt { padding: 5.5rem clamp(1.5rem, 4vw, 4rem); display: flex; flex-direction: column; justify-content: center; }
+.mitades__txt p { color: var(--medio); }
+.mitades__txt p b { color: var(--tinta); }
+.lista { margin: 1.3rem 0; padding: 0; list-style: none; }
+.lista li { padding: .6rem 0 .6rem 1.5rem; position: relative; border-bottom: 1px solid var(--linea); font-size: var(--p--1); color: var(--medio); }
+.lista li b { color: var(--tinta); }
+.lista li::before { content: ""; position: absolute; left: 0; top: 1.1em; width: 8px; height: 1px; background: var(--verde-o); }
+.lista--marca li { border-bottom: none; padding-bottom: .3rem; }
+
+/* -- MOSAICO ----------------------------------------------------- */
+.mos { padding: 7rem 0 0; background: var(--panel-2); }
+.mos__grilla { display: grid; gap: 4px; grid-template-columns: repeat(3, 1fr); margin-top: 3rem; }
+.mos__p { margin: 0; overflow: hidden; }
+.mos__p:nth-child(1), .mos__p:nth-child(6) { grid-column: span 2; }
+.mos__p img { display: block; width: 100%; height: 100%; aspect-ratio: 3 / 2; object-fit: cover; transition: transform .5s var(--sale); }
+.mos__p:hover img { transform: scale(1.05); }
+@media (prefers-reduced-motion: reduce) { .mos__p:hover img { transform: none; } }
+
+/* -- CONTACTO ---------------------------------------------------- */
+.con-telon { position: relative; isolation: isolate; overflow: hidden; }
+.telon { position: absolute; inset: 0; z-index: -1; pointer-events: none; }
+.telon img {
+  display: block; width: 100%; height: 100%; object-fit: cover; opacity: .12;
+  -webkit-mask-image: linear-gradient(180deg, transparent 0%, #000 22%, #000 74%, transparent 100%);
+          mask-image: linear-gradient(180deg, transparent 0%, #000 22%, #000 74%, transparent 100%);
+}
+.contacto { padding: 7rem 0; }
+.contacto__num { margin: 0 0 1rem; }
+.contacto__num a {
+  font-family: Cuprum, "Arial Narrow", sans-serif; font-weight: 700;
+  font-size: clamp(1.9rem, 1.2rem + 3.6vw, 4rem); line-height: 1; color: var(--verde);
+  text-decoration: none; display: inline-flex; align-items: center; min-height: 44px;
+  border-bottom: 3px solid transparent; transition: border-color .25s ease;
+}
+.contacto__num a:hover, .contacto__num a:focus-visible { border-bottom-color: var(--verde); }
+.contacto__nota { color: var(--medio); font-size: var(--p--1); margin: 0 0 2.4rem; max-width: 56ch; }
+
+.datos { margin: 0 0 2rem; max-width: 48rem; }
+.datos > div { display: flex; justify-content: space-between; gap: 1.5rem; padding: .8rem 0; border-bottom: 1px solid var(--linea); }
+.datos dt { font-family: "Ubuntu Mono", ui-monospace, monospace; font-size: var(--p--1); color: var(--medio); letter-spacing: .05em; text-transform: uppercase; }
+.datos dd { margin: 0; text-align: right; font-size: var(--p--1); }
+
+/* -- PARA EL DUENO ----------------------------------------------- */
+.dueno { padding: 7rem 0; border-top: 1px solid var(--linea); background: var(--panel-2); }
+.dueno__cols { display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; margin-bottom: 3rem; }
+.dueno h3 {
+  font-family: "Ubuntu Mono", ui-monospace, monospace;
+  font-size: var(--p--1); letter-spacing: .08em; text-transform: uppercase;
+  color: var(--verde); margin: 2rem 0 1rem;
+}
+.dueno p { color: var(--medio); max-width: 62ch; }
+.dueno p b { color: var(--tinta); }
+.dueno__cierre { display: flex; flex-wrap: wrap; gap: 2rem; align-items: center; margin-top: 3rem; }
+
+.pie { padding: 3rem 0; border-top: 1px solid var(--linea); }
+.pie__in p { font-size: var(--p--1); color: var(--medio); margin: 0 0 .8rem; }
+.pie__in p b { color: var(--tinta); }
+.pie__leg { opacity: .95; }
+
+/* -- REVEALS ----------------------------------------------------- */
+.js [data-rev-grupo] > * { opacity: 0; transform: translateY(22px); }
+.js [data-rev-grupo].ok > * {
+  opacity: 1; transform: none;
+  transition: opacity .3s ease-out, transform .55s var(--sale);
+  transition-delay: calc(var(--r, 0) * 55ms);
+}
+[data-rev-grupo] > :nth-child(1){--r:0} [data-rev-grupo] > :nth-child(2){--r:1}
+[data-rev-grupo] > :nth-child(3){--r:2} [data-rev-grupo] > :nth-child(4){--r:3}
+[data-rev-grupo] > :nth-child(5){--r:4} [data-rev-grupo] > :nth-child(6){--r:5}
+[data-rev-grupo] > :nth-child(7){--r:6}
+@media (prefers-reduced-motion: reduce) {
+  .js [data-rev-grupo] > * { opacity: 1; transform: none; transition: none; }
+}
+:focus-visible { outline: 2px solid var(--verde-o); outline-offset: 3px; }
+
+/* -- MOVIL ------------------------------------------------------- */
+@media (max-width: 1180px) {
+  .siete { grid-template-columns: repeat(3, 1fr); }
+}
+@media (max-width: 980px) {
+  .siete { grid-template-columns: repeat(2, 1fr); }
+  .mitades { grid-template-columns: 1fr; }
+  .mitades__foto img { aspect-ratio: 16 / 10; height: auto; }
+  .dueno__cols { grid-template-columns: 1fr; gap: 1rem; }
+}
+@media (max-width: 760px) {
+  .cab__nav a:not(.cab__tel) { display: none; }
+  .portada { min-height: auto; padding: 3.5rem 0 3rem; }
+  /* En telefono el texto cae ENCIMA de la foto: la mascara lateral no
+     sirve a 375 px, asi que el velo se da vuelta y baja. */
+  .portada__foto img {
+    object-position: 58% 50%;
+    -webkit-mask-image: linear-gradient(180deg, #000 0%, #000 58%, transparent 100%);
+            mask-image: linear-gradient(180deg, #000 0%, #000 58%, transparent 100%);
+  }
+  .portada__foto::after {
+    background: linear-gradient(180deg,
+      rgba(25,23,19,.86) 0%, rgba(25,23,19,.8) 34%, rgba(25,23,19,.92) 64%, rgba(25,23,19,1) 100%);
+  }
+  .siete { grid-template-columns: 1fr; gap: 1.8rem; }
+  .p { grid-template-columns: 2.8rem 1fr; gap: 1rem; }
+  .p.destacado { padding-inline: .9rem; }
+  .donde, .orden, .contacto, .dueno { padding: 4.5rem 0; }
+  .linea { padding: 4rem 0 4.5rem; }
+  .mos { padding-top: 4.5rem; }
+  .mos__grilla { grid-template-columns: repeat(2, 1fr); }
+  .mos__p:nth-child(1), .mos__p:nth-child(6) { grid-column: span 2; }
+}
+@media (max-width: 480px) {
+  .cab__sub { font-size: .5em; }
+}
+@media (max-width: 460px) {
+  .datos > div { flex-direction: column; gap: .2rem; }
+  .datos dd { text-align: left; }
+}

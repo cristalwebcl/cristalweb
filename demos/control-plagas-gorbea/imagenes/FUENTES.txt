@@ -1,0 +1,55 @@
+FUENTES DE LAS IMÁGENES — 201 · Control de Plagas y Servicios (Gorbea)
+======================================================================
+NINGUNA de estas fotos es de la empresa ni de sus clientes. Son de
+bancos de uso libre (pxhere, pexels), bajadas con FotoRadar y
+reescaladas con preparar-lote.ps1. Están para mostrar el diseño. El
+pie de la página lo dice, y también la sección «para el dueño».
+
+fondo-01.jpg  · 2400px · portada — cocina de restaurante en servicio
+banda-01.jpg  · 1900px · cita — sacos apilados en galpón de acopio
+tajo-01.jpg   · 2000px · tajo — silos con cielo cargado
+telon-01.jpg  · 1200px · telón del contacto — pallets apilados
+media-01.jpg  · 1800px · mitades — bodega con racks
+mos-01.jpg    · 1200px · cocina industrial limpia y vacía
+mos-02.jpg    · 1200px · estantería de panadería
+mos-03.jpg    · 1200px · bodega de productos en estantes
+mos-04.jpg    · 1200px · pallets apilados, de canto
+mos-05.jpg    · 1200px · muro agrietado
+mos-06.jpg    · 1200px · cocina de restaurante en servicio
+
+Las URL completas de cada archivo quedaron en los FUENTES.txt que
+escribió fondos-4k.ps1 en
+`devs\material\busquedas\201-plagas\<carpeta>\FUENTES.txt`.
+Consultas usadas: «restaurant kitchen stainless steel clean pxhere»,
+«food warehouse pallets storage pxhere», «grain silo barn interior
+pxhere», «bakery kitchen counter bread shop pxhere», «wooden pallet
+warehouse corner floor pxhere», «old barn wood wall gap pxhere».
+
+
+EL PROBLEMA DE FOTOS DE ESTE RUBRO, Y CÓMO SE RESOLVIÓ
+------------------------------------------------------
+Es el único rubro de la tanda donde **la página no puede mostrar lo
+que vende**:
+
+· Una plaga en pantalla espanta al visitante y no vende nada.
+· Alguien fumigando con máscara y traje asusta en vez de tranquilizar,
+  y además insinúa un producto y un procedimiento que esta demo no
+  puede afirmar que la empresa use.
+· Un envase de plaguicida está descartado de plano: la página no
+  nombra productos ni dosis, y una foto los nombraría igual.
+
+Así que todas las fotos son **del otro lado**: los lugares donde no se
+puede fallar. Cocinas, bodegas, panaderías, silos. Es el mismo criterio
+de la 188 (grúas), donde se fotografía el ESCENARIO y no el vehículo.
+
+La única foto que alude al problema es `mos-05`, **el muro agrietado**:
+la grieta por donde entran. Es una textura, no un bicho.
+
+DESCARTADAS
+-----------
+· Dos ilustraciones vectoriales de checklist. Son clipart, no fotos, y
+  en una página que se vende por seriedad documental habrían hecho el
+  daño exacto contrario.
+· Un galpón de madera muy fotogénico pero en ruinas: en este rubro una
+  construcción abandonada dice «acá no se hace control», no «acá se
+  trabaja».

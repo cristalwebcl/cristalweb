@@ -1,0 +1,407 @@
+/* ===================================================================
+   196 · Hielos Queulat · Freire
+   Demo comercial sin encargo. Construida el 02-09-2026.
+
+   DIRECCION - «ANTES DE QUE ABRA»
+   RUBRO NUEVO: proveedor de hielo B2B. No hay nada parecido en las 195
+   demos previas, y el cliente tampoco se parece a ninguno: no es una
+   persona, es UN LOCAL. Un restaurante, una botilleria o quien organiza
+   un matrimonio compara proveedores por escrito y necesita algo que
+   mostrarle al socio.
+
+   Por eso la pagina no vende «frio bonito» sino LOGISTICA: que formato
+   pedir, que decir al encargar, y sobre todo A QUE HORA. Un local que
+   abre sin hielo tiene un problema que ya no se arregla.
+
+   PALETA — DESLINDE de los dos frios que ya existen en el registro:
+   · 64 «Hielo patagonico» (nieve `#F6F9FA` + hielo `#0A2A3D` + glaciar
+     `#0B6E93`) es PAISAJE: agua quieta de ventisquero.
+   · 187-fertyvet de esta misma tanda es «Menos 196 grados»: acero
+     OSCURO con cian de GAS, el vapor del nitrogeno.
+   · Esta es HIELO EN BLOQUE: fondo casi blanco `#F4F7F8` (el hielo es
+     translucido, no azul) con azul de arista `#0E5A70` — el azul que
+     se ve en el canto de un bloque grueso, y en ningun otro lado. Una
+     es paisaje, otra es gas, esta es SOLIDO.
+   El acento `#B4451E` aparece SOLO en la hora de entrega, que es el
+   dato que la pagina entera defiende.
+
+   TRIO — verificado contra identidades.md el 02-09-2026:
+   · Display PROCIONO (0 usos). Humanista de trazo abierto, sin frialdad
+     tecnologica: el negocio es de pueblo, no una multinacional.
+   · Cuerpo MULISH (8 usos, se admite repetir el cuerpo).
+   · Mono COUSINE (6 usos, el menos usado que calza).
+
+   CONTACTO T4 · boton fantasma.
+   AMBIENTE: escarcha que cae (variante del motor de caida).
+   =================================================================== */
+
+:root {
+  --hielo:   #F4F7F8;
+  --panel:   #E6EDEF;
+  --panel-2: #DAE4E7;
+  --tinta:   #14191B;
+  --medio:   #4F585B;   /* 7,3:1 sobre hielo; 6,4:1 sobre el peor panel */
+  --arista:  #0E5A70;   /* 7,1:1 sobre hielo; 6,2:1 sobre panel-2 */
+  --hora:    #B4451E;   /* 5,3:1 sobre hielo; 4,7:1 sobre panel-2 */
+  --linea:   #C3D0D4;
+
+  --sale:   cubic-bezier(.16, 1, .3, 1);
+  --sale-2: cubic-bezier(.2, 0, 0, 1);
+
+  --ancho: min(92vw, 1140px);
+  --p--1: clamp(.78rem, .74rem + .18vw, .88rem);
+  --p-0:  clamp(1rem, .95rem + .25vw, 1.12rem);
+  --p-1:  clamp(1.15rem, 1.05rem + .45vw, 1.38rem);
+  --p-2:  clamp(1.6rem, 1.35rem + 1.2vw, 2.3rem);
+  --p-3:  clamp(2rem, 1.5rem + 2.3vw, 3.5rem);
+  --p-4:  clamp(3rem, 1.9rem + 5.2vw, 6.6rem);
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+[hidden] { display: none !important; }
+html { scroll-behavior: smooth; }
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+
+body {
+  margin: 0; background: var(--hielo); color: var(--tinta);
+  font-family: Mulish, "Segoe UI", system-ui, sans-serif;
+  font-size: var(--p-0); line-height: 1.62;
+  -webkit-font-smoothing: antialiased;
+}
+img { max-width: 100%; }
+a { color: inherit; }
+.ancho { width: var(--ancho); margin-inline: auto; }
+
+.rotulo {
+  font-family: Cousine, ui-monospace, monospace;
+  font-size: var(--p--1); letter-spacing: .13em; text-transform: uppercase;
+  color: var(--arista); margin: 0 0 1.4rem;
+}
+.h2 {
+  font-family: Prociono, Georgia, serif; font-weight: 400;
+  font-size: var(--p-3); line-height: 1.1; letter-spacing: -.01em; margin: 0 0 1.5rem;
+}
+.h2--chico { font-size: var(--p-2); }
+.mini { font-size: var(--p--1); color: var(--medio); max-width: 66ch; }
+.falta { color: var(--medio); font-style: italic; }
+.ej { color: var(--medio); font-style: italic; border-bottom: 1px dashed var(--linea); }
+.ej::after {
+  content: " (ej.)"; font-family: Cousine, ui-monospace, monospace;
+  font-size: .78em; font-style: normal; opacity: .8;
+}
+
+/* -- BANDA ------------------------------------------------------- */
+.propuesta { background: var(--arista); color: #EAF4F6; }
+.propuesta__in { padding: .9rem 0; }
+.propuesta__q { font-family: Cousine, ui-monospace, monospace; font-size: var(--p--1); letter-spacing: .03em; margin: 0 0 .2rem; }
+.propuesta__d { margin: 0; font-size: var(--p--1); line-height: 1.5; max-width: 100ch; }
+
+/* -- CABECERA ---------------------------------------------------- */
+.cab {
+  position: sticky; top: 0; z-index: 50;
+  background: var(--hielo); border-bottom: 1px solid var(--linea);
+  transition: transform .3s var(--sale-2), background-color .3s ease, border-color .3s ease;
+}
+.cab__in { display: flex; align-items: center; justify-content: space-between; gap: 1.2rem; padding: .55rem 0; }
+.cab__marca { display: inline-flex; align-items: center; gap: .7rem; text-decoration: none; min-height: 44px; }
+.cab__txt {
+  font-family: Prociono, Georgia, serif; font-size: var(--p-1);
+  line-height: 1.05; display: flex; flex-direction: column; gap: .2rem;
+}
+.cab__sub {
+  font-family: Cousine, ui-monospace, monospace;
+  font-size: .55em; letter-spacing: .09em; color: var(--medio); text-transform: uppercase;
+}
+.cab__nav { display: flex; align-items: center; gap: 1.5rem; }
+.cab__nav a {
+  font-size: var(--p--1); text-decoration: none; color: var(--medio);
+  min-height: 44px; display: inline-flex; align-items: center; transition: color .2s ease;
+}
+.cab__nav a:hover, .cab__nav a:focus-visible { color: var(--tinta); }
+.cab__tel { color: var(--arista) !important; font-family: Cousine, ui-monospace, monospace; }
+
+/* Cabecera 162a - EL CUBO CON LA ARISTA VIVA */
+.cubo { position: relative; width: 22px; height: 24px; flex: 0 0 auto; }
+.cubo__cara {
+  position: absolute; left: 0; right: 0; bottom: 0; height: 17px;
+  border: 1.5px solid var(--arista); border-radius: 2px;
+  background: rgba(14, 90, 112, .1);
+}
+.cubo__tapa {
+  position: absolute; left: 3px; right: 3px; top: 0; height: 9px;
+  border: 1.5px solid var(--arista); border-bottom: none;
+  border-radius: 2px 2px 0 0; transform: skewX(-14deg);
+}
+
+.js .cab--top { background: transparent; border-bottom-color: transparent; }
+.js .cab--oculta { transform: translateY(-100%); }
+@media (prefers-reduced-motion: reduce) { .cab { transition-duration: 1ms; } }
+
+/* -- PORTADA ----------------------------------------------------- */
+.portada {
+  position: relative; isolation: isolate; overflow: hidden;
+  min-height: 88svh; display: flex; align-items: center; padding: 5rem 0 4rem;
+}
+.portada__foto { position: absolute; inset: 0; z-index: -2; }
+.portada__foto img {
+  display: block; width: 100%; height: 100%; object-fit: cover; object-position: 62% 50%;
+  -webkit-mask-image: linear-gradient(90deg, transparent 0%, transparent 22%, rgba(0,0,0,.26) 42%, rgba(0,0,0,.74) 62%, #000 80%, #000 100%);
+          mask-image: linear-gradient(90deg, transparent 0%, transparent 22%, rgba(0,0,0,.26) 42%, rgba(0,0,0,.74) 62%, #000 80%, #000 100%);
+}
+/* Velo entero en rgba terminando en alfa 0. */
+.portada__foto::after {
+  content: ""; position: absolute; inset: 0;
+  background: linear-gradient(90deg,
+    rgba(244,247,248,1) 0%, rgba(244,247,248,1) 30%, rgba(244,247,248,.84) 47%,
+    rgba(244,247,248,.42) 65%, rgba(244,247,248,.12) 84%, rgba(244,247,248,0) 97%);
+}
+.portada__in { position: relative; z-index: 1; }
+.portada__h1 {
+  font-family: Prociono, Georgia, serif; font-weight: 400;
+  font-size: var(--p-4); line-height: .98; letter-spacing: -.03em; margin: 0 0 1.3rem;
+}
+.portada__bajada { max-width: 44ch; color: var(--medio); font-size: var(--p-1); margin: 0 0 2.4rem; }
+.portada__pie { margin: 0; }
+
+/* -- AMBIENTE: ESCARCHA QUE CAE ---------------------------------- */
+/* Variante del motor de caida: particulas chicas, irregulares y muy
+   lentas. Determinista: --i por nth-child (la CSP bloquea style="").
+   Solo transform y opacity. */
+.amb { position: absolute; inset: 0; z-index: -1; overflow: hidden; pointer-events: none; }
+.amb__p {
+  position: absolute; top: -8vh; left: calc(var(--i) * 8.3%);
+  width: var(--tam, 4px); height: var(--tam, 4px);
+  border-radius: 40% 60% 55% 45%;
+  background: rgba(255, 255, 255, .75);
+  opacity: 0;
+  animation: amb-cae var(--dur, 16s) linear infinite;
+  animation-delay: calc(var(--i) * -1.6s);
+  will-change: transform, opacity;
+}
+.amb--escarcha .amb__p:nth-child(3n+1) { --tam: 4px; --dur: 15s; }
+.amb--escarcha .amb__p:nth-child(3n+2) { --tam: 3px; --dur: 19s; }
+.amb--escarcha .amb__p:nth-child(3n+3) { --tam: 5px; --dur: 23s; }
+.amb__p:nth-child(1){--i:0}  .amb__p:nth-child(2){--i:1}
+.amb__p:nth-child(3){--i:2}  .amb__p:nth-child(4){--i:3}
+.amb__p:nth-child(5){--i:4}  .amb__p:nth-child(6){--i:5}
+.amb__p:nth-child(7){--i:6}  .amb__p:nth-child(8){--i:7}
+.amb__p:nth-child(9){--i:8}  .amb__p:nth-child(10){--i:9}
+.amb__p:nth-child(11){--i:10} .amb__p:nth-child(12){--i:11}
+@keyframes amb-cae {
+  0%   { transform: translate3d(0, 0, 0) rotate(0deg); opacity: 0; }
+  12%  { opacity: .8; }
+  88%  { opacity: .8; }
+  100% { transform: translate3d(5vw, 112vh, 0) rotate(220deg); opacity: 0; }
+}
+@media (prefers-reduced-motion: reduce) { .amb { display: none; } }
+@media (max-width: 760px) { .amb__p:nth-child(n+7) { display: none; } }
+
+/* -- BOTONES ----------------------------------------------------- */
+.boton {
+  position: relative; display: inline-flex; align-items: center; justify-content: center;
+  min-height: 48px; padding: .8rem 1.8rem;
+  border: 1px solid var(--arista); color: var(--arista); background: transparent;
+  font-family: Cousine, ui-monospace, monospace;
+  font-size: var(--p--1); letter-spacing: .1em; text-transform: uppercase;
+  text-decoration: none; overflow: hidden; isolation: isolate;
+}
+.boton::before {
+  content: ""; position: absolute; inset: 0; z-index: -1;
+  background: var(--arista); transform: translateY(101%); transition: transform .4s var(--sale);
+}
+.boton:hover, .boton:focus-visible { color: var(--hielo); }
+.boton:hover::before, .boton:focus-visible::before { transform: translateY(0); }
+.boton--fuerte { background: var(--arista); color: var(--hielo); }
+.boton--fuerte::before { background: var(--tinta); }
+@media (prefers-reduced-motion: reduce) { .boton::before { transition-duration: 1ms; } }
+
+.flecha {
+  display: inline-flex; align-items: center; gap: .5rem; min-height: 44px;
+  font-family: Cousine, ui-monospace, monospace; font-size: var(--p--1); letter-spacing: .05em;
+  color: var(--arista); text-decoration: none; border-bottom: 1px solid currentColor;
+  transition: border-bottom-width .2s ease;
+}
+.flecha:hover, .flecha:focus-visible { border-bottom-width: 3px; }
+
+/* -- PIEZA FIRMA: LOS CUATRO FORMATOS ---------------------------- */
+.tipos { padding: 7rem 0; background: var(--panel); }
+.tipos .intro { max-width: 64ch; color: var(--medio); font-size: var(--p-1); margin: 0 0 3rem; }
+.tipos .intro b { color: var(--tinta); }
+
+.tarjetas { display: grid; grid-template-columns: repeat(2, 1fr); gap: 2rem 2.5rem; }
+.tipo { border-top: 3px solid var(--arista); padding-top: 1.2rem; }
+/* Cada formato dibujado en CSS puro: la forma ES la explicacion. */
+.tipo__f { display: block; width: 54px; height: 34px; margin-bottom: 1rem; }
+.tipo__f--cubo {
+  border: 2px solid var(--arista); border-radius: 3px; width: 30px; height: 30px;
+  background: rgba(14,90,112,.12);
+}
+.tipo__f--escama {
+  background:
+    linear-gradient(90deg, var(--arista) 0 14px, transparent 14px 20px),
+    linear-gradient(90deg, transparent 0 7px, var(--arista) 7px 21px, transparent 21px 27px);
+  background-size: 20px 5px, 27px 5px;
+  background-position: 0 6px, 0 16px;
+  background-repeat: repeat-x;
+  height: 26px;
+}
+.tipo__f--molido {
+  background:
+    radial-gradient(circle 3px at 6px 8px, var(--arista) 98%, transparent),
+    radial-gradient(circle 2px at 16px 5px, var(--arista) 98%, transparent),
+    radial-gradient(circle 3px at 26px 11px, var(--arista) 98%, transparent),
+    radial-gradient(circle 2px at 12px 16px, var(--arista) 98%, transparent),
+    radial-gradient(circle 3px at 34px 6px, var(--arista) 98%, transparent),
+    radial-gradient(circle 2px at 30px 18px, var(--arista) 98%, transparent);
+  height: 26px;
+}
+.tipo__f--barra {
+  border: 2px solid var(--arista); border-radius: 2px; width: 52px; height: 24px;
+  background: linear-gradient(180deg, rgba(14,90,112,.2), rgba(14,90,112,.05));
+}
+.tipo__t { font-family: Prociono, Georgia, serif; font-weight: 400; font-size: var(--p-2); margin: 0 0 .3rem; line-height: 1.1; }
+.tipo__p {
+  font-family: Cousine, ui-monospace, monospace; font-size: var(--p--1);
+  letter-spacing: .06em; color: var(--hora); margin: 0 0 .7rem; text-transform: uppercase;
+}
+.tipo__d { margin: 0; color: var(--medio); }
+
+.nota {
+  margin: 2.5rem 0 0; padding-top: 1.5rem; border-top: 1px solid var(--linea);
+  font-size: var(--p--1); color: var(--medio); max-width: 74ch;
+}
+.nota b { color: var(--tinta); }
+
+/* -- CITA -------------------------------------------------------- */
+.cita { position: relative; isolation: isolate; overflow: hidden; min-height: min(50vh, 390px); display: grid; align-items: center; }
+.cita img { position: absolute; inset: 0; z-index: -2; width: 100%; height: 100%; object-fit: cover; object-position: 50% 50%; }
+/* Peor caso medido a mano: las luces calidas de la barra bajo el velo
+   .8 sobre tinta dan texto hielo en 7,2:1 a tamano grande. El auditor
+   marca 1,00:1 porque no ve el ::after — falso positivo conocido. */
+.cita::after { content: ""; position: absolute; inset: 0; z-index: -1; background: rgba(20,25,27,.8); }
+.cita__txt p {
+  font-family: Prociono, Georgia, serif; font-size: var(--p-2);
+  line-height: 1.2; max-width: 26ch; margin: 0; color: var(--hielo);
+}
+
+/* -- CÓMO ENCARGAR ----------------------------------------------- */
+.pedido { padding: 7rem 0; }
+.pasos { display: grid; grid-template-columns: repeat(2, 1fr); gap: 2rem 2.5rem; margin-bottom: 2rem; }
+.paso { border-top: 2px solid var(--tinta); padding-top: 1rem; }
+.paso__n { font-family: Cousine, ui-monospace, monospace; font-size: var(--p--1); color: var(--arista); margin: 0 0 .5rem; }
+.paso h3 { font-family: Prociono, Georgia, serif; font-weight: 400; font-size: var(--p-1); margin: 0 0 .6rem; line-height: 1.2; }
+.paso p { margin: 0; color: var(--medio); }
+.paso p b { color: var(--hora); }
+
+/* -- TAJO -------------------------------------------------------- */
+.tajo { position: relative; isolation: isolate; overflow: hidden; margin: 0; min-height: min(52vh, 410px); display: flex; align-items: flex-end; }
+.tajo img { position: absolute; inset: 0; z-index: -2; width: 100%; height: 100%; object-fit: cover; object-position: 50% 55%; }
+.tajo::after {
+  content: ""; position: absolute; inset: 0; z-index: -1;
+  background: linear-gradient(0deg, rgba(20,25,27,.95) 0%, rgba(20,25,27,.8) 34%, rgba(20,25,27,.3) 64%, rgba(20,25,27,0) 92%);
+}
+.tajo__txt { padding: 2.8rem 0; }
+.tajo__txt .rotulo { color: #9CC8D3; }
+.tajo__f { font-family: Prociono, Georgia, serif; font-size: var(--p-2); margin: 0; line-height: 1.2; max-width: 24ch; color: var(--hielo); }
+
+/* -- MITADES ----------------------------------------------------- */
+.mitades { display: grid; grid-template-columns: 1fr 1fr; background: var(--panel); }
+.mitades__foto img { display: block; width: 100%; height: 100%; object-fit: cover; }
+.mitades__txt { padding: 5.5rem clamp(1.5rem, 4vw, 4rem); display: flex; flex-direction: column; justify-content: center; }
+.lista { margin: 1.3rem 0; padding: 0; list-style: none; }
+.lista li { padding: .6rem 0 .6rem 1.5rem; position: relative; border-bottom: 1px solid var(--linea); font-size: var(--p--1); color: var(--medio); }
+.lista li b { color: var(--tinta); }
+.lista li::before { content: ""; position: absolute; left: 0; top: 1.1em; width: 8px; height: 1px; background: var(--arista); }
+.lista--marca li { border-bottom: none; padding-bottom: .3rem; }
+
+/* -- MOSAICO ----------------------------------------------------- */
+.mos { padding: 7rem 0 0; background: var(--panel-2); }
+.mos__grilla { display: grid; gap: 4px; grid-template-columns: repeat(3, 1fr); margin-top: 3rem; }
+.mos__p { margin: 0; overflow: hidden; }
+.mos__p:nth-child(1), .mos__p:nth-child(6) { grid-column: span 2; }
+.mos__p img { display: block; width: 100%; height: 100%; aspect-ratio: 3 / 2; object-fit: cover; transition: transform .5s var(--sale); }
+.mos__p:hover img { transform: scale(1.05); }
+@media (prefers-reduced-motion: reduce) { .mos__p:hover img { transform: none; } }
+
+/* -- CONTACTO ---------------------------------------------------- */
+.con-telon { position: relative; isolation: isolate; overflow: hidden; }
+.telon { position: absolute; inset: 0; z-index: -1; pointer-events: none; }
+.telon img {
+  display: block; width: 100%; height: 100%; object-fit: cover; opacity: .15;
+  -webkit-mask-image: linear-gradient(180deg, transparent 0%, #000 22%, #000 74%, transparent 100%);
+          mask-image: linear-gradient(180deg, transparent 0%, #000 22%, #000 74%, transparent 100%);
+}
+.contacto { padding: 7rem 0; }
+.contacto__num { margin: 0 0 2.6rem; }
+.contacto__num a {
+  font-family: Prociono, Georgia, serif;
+  font-size: clamp(1.9rem, 1.2rem + 3.6vw, 4rem); line-height: 1; color: var(--arista);
+  text-decoration: none; display: inline-flex; align-items: center; min-height: 44px;
+  border-bottom: 3px solid transparent; transition: border-color .25s ease;
+}
+.contacto__num a:hover, .contacto__num a:focus-visible { border-bottom-color: var(--arista); }
+.datos { margin: 0 0 2rem; max-width: 48rem; }
+.datos > div { display: flex; justify-content: space-between; gap: 1.5rem; padding: .8rem 0; border-bottom: 1px solid var(--linea); }
+.datos dt { font-family: Cousine, ui-monospace, monospace; font-size: var(--p--1); color: var(--medio); letter-spacing: .06em; text-transform: uppercase; }
+.datos dd { margin: 0; text-align: right; font-size: var(--p--1); }
+
+/* -- PARA EL DUENO ----------------------------------------------- */
+.dueno { padding: 7rem 0; border-top: 1px solid var(--linea); background: var(--panel-2); }
+.dueno__cols { display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; margin-bottom: 3rem; }
+.dueno h3 {
+  font-family: Cousine, ui-monospace, monospace;
+  font-size: var(--p--1); letter-spacing: .1em; text-transform: uppercase;
+  color: var(--arista); margin: 2rem 0 1rem;
+}
+.dueno p { color: var(--medio); max-width: 62ch; }
+.dueno p b { color: var(--tinta); }
+.dueno__cierre { display: flex; flex-wrap: wrap; gap: 2rem; align-items: center; margin-top: 3rem; }
+
+.pie { padding: 3rem 0; border-top: 1px solid var(--linea); }
+.pie__in p { font-size: var(--p--1); color: var(--medio); margin: 0 0 .8rem; }
+.pie__leg { opacity: .9; }
+
+/* -- REVEALS ----------------------------------------------------- */
+.js [data-rev-grupo] > * { opacity: 0; transform: translateY(22px); }
+.js [data-rev-grupo].ok > * {
+  opacity: 1; transform: none;
+  transition: opacity .3s ease-out, transform .55s var(--sale);
+  transition-delay: calc(var(--r, 0) * 60ms);
+}
+[data-rev-grupo] > :nth-child(1){--r:0} [data-rev-grupo] > :nth-child(2){--r:1}
+[data-rev-grupo] > :nth-child(3){--r:2} [data-rev-grupo] > :nth-child(4){--r:3}
+[data-rev-grupo] > :nth-child(5){--r:4} [data-rev-grupo] > :nth-child(6){--r:5}
+@media (prefers-reduced-motion: reduce) {
+  .js [data-rev-grupo] > * { opacity: 1; transform: none; transition: none; }
+}
+:focus-visible { outline: 2px solid var(--arista); outline-offset: 3px; }
+
+/* -- MOVIL ------------------------------------------------------- */
+@media (max-width: 980px) {
+  .tarjetas, .pasos { grid-template-columns: 1fr; gap: 1.8rem; }
+  .mitades { grid-template-columns: 1fr; }
+  .mitades__foto img { aspect-ratio: 16 / 10; height: auto; }
+  .dueno__cols { grid-template-columns: 1fr; gap: 1rem; }
+}
+@media (max-width: 760px) {
+  .cab__nav a:not(.cab__tel) { display: none; }
+  .portada { min-height: auto; padding: 3.5rem 0 3rem; }
+  /* En telefono el texto cae sobre la foto: velo de arriba abajo. */
+  .portada__foto img {
+    object-position: 58% 50%;
+    -webkit-mask-image: linear-gradient(180deg, #000 0%, #000 60%, transparent 100%);
+            mask-image: linear-gradient(180deg, #000 0%, #000 60%, transparent 100%);
+  }
+  .portada__foto::after {
+    background: linear-gradient(180deg,
+      rgba(244,247,248,.9) 0%, rgba(244,247,248,.84) 34%, rgba(244,247,248,.9) 64%, rgba(244,247,248,1) 100%);
+  }
+  .tipos, .pedido, .contacto, .dueno { padding: 4.5rem 0; }
+  .mos { padding-top: 4.5rem; }
+  .mos__grilla { grid-template-columns: repeat(2, 1fr); }
+  .mos__p:nth-child(1), .mos__p:nth-child(6) { grid-column: span 2; }
+}
+@media (max-width: 460px) {
+  .datos > div { flex-direction: column; gap: .2rem; }
+  .datos dd { text-align: left; }
+}
