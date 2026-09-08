@@ -202,6 +202,28 @@ a { color: inherit; }
   -webkit-mask-image: linear-gradient(90deg, transparent 0%, transparent 22%, rgba(0,0,0,.25) 40%, rgba(0,0,0,.72) 60%, #000 78%, #000 100%);
           mask-image: linear-gradient(90deg, transparent 0%, transparent 22%, rgba(0,0,0,.25) 40%, rgba(0,0,0,.72) 60%, #000 78%, #000 100%);
 }
+/* ── VIDEO DE FONDO DE LA PORTADA ───────────────────────────────────
+   Va encima de la foto, dentro del mismo .portada__foto, y por eso
+   hereda el velo (::after) que protege el contraste del titular. La
+   MASCARA se repite igual que en la foto: sin ella el video pinta un
+   rectangulo con borde recto justo donde la foto ya se disolvia.
+   Arranca en opacidad 0 y sube cuando el JS confirma que el clip
+   esta reproduciendo; si el navegador bloquea el autoplay, queda la
+   foto y no se nota nada. */
+.portada__video {
+  position: absolute; inset: 0;
+  width: 100%; height: 100%;
+  object-fit: cover; object-position: 62% 45%;
+  opacity: 0;
+  transition: opacity 1.4s ease;
+  -webkit-mask-image: linear-gradient(90deg, transparent 0%, transparent 22%, rgba(0,0,0,.25) 40%, rgba(0,0,0,.72) 60%, #000 78%, #000 100%);
+          mask-image: linear-gradient(90deg, transparent 0%, transparent 22%, rgba(0,0,0,.25) 40%, rgba(0,0,0,.72) 60%, #000 78%, #000 100%);
+}
+.portada__video.video--ver { opacity: 1; }
+@media (prefers-reduced-motion: reduce) {
+  .portada__video { display: none; }
+}
+
 /* Velo ENTERO en rgba y terminando en alfa 0: un var() dentro del
    gradiente no tiene alfa y pinta la foto de punta a punta. */
 .portada__foto::after {
@@ -495,7 +517,12 @@ a { color: inherit; }
 @media (max-width: 980px) {
   .fila, .paso { grid-template-columns: 3rem minmax(0, 1fr); }
   .fila__t { grid-column: 2; text-align: left; margin-top: .6rem; }
-  .paso__specs { grid-column: 2; margin-top: .8rem; }
+  /* En dos columnas las specs NO pueden heredar el `grid-row: 1 / span 2`
+     del escritorio: ahi ocupaban la misma celda que el titulo y la
+     descripcion, y los textos se dibujaban uno encima del otro. Van a su
+     propia fila, debajo de todo. */
+  .paso__specs { grid-column: 2; grid-row: 3; margin-top: .8rem; }
+  .paso { grid-template-rows: auto auto auto; }
   .mitades { grid-template-columns: 1fr; }
   .mitades__foto img { aspect-ratio: 16 / 10; height: auto; }
   .dueno__cols { grid-template-columns: 1fr; gap: 1rem; }
@@ -507,6 +534,12 @@ a { color: inherit; }
      sirve y el velo tiene que proteger de arriba abajo, no al reves.
      La foto queda como textura, no como imagen a plena vista. */
   .portada__foto img {
+    object-position: 58% 46%;
+    -webkit-mask-image: linear-gradient(180deg, #000 0%, #000 62%, transparent 100%);
+            mask-image: linear-gradient(180deg, #000 0%, #000 62%, transparent 100%);
+  }
+  /* el video sigue a la foto: en movil la mascara es vertical */
+  .portada__video {
     object-position: 58% 46%;
     -webkit-mask-image: linear-gradient(180deg, #000 0%, #000 62%, transparent 100%);
             mask-image: linear-gradient(180deg, #000 0%, #000 62%, transparent 100%);
@@ -524,4 +557,55 @@ a { color: inherit; }
 @media (max-width: 460px) {
   .datos > div { flex-direction: column; gap: .2rem; }
   .datos dd { text-align: left; }
+}
+
+/* ── WHATSAPP FLOTANTE ──────────────────────────────────────────────
+   Botón fijo abajo a la derecha. 56 px de alto: por encima de los 44
+   del mínimo táctil. Verde de WhatsApp a propósito — se reconoce sin
+   leerlo, y eso es lo que hace que se toque.
+
+   La dirección del truco importa: el botón se ve SIEMPRE por defecto y
+   el JS sólo lo esconde mientras el visitante está en la portada, para
+   no tapar el titular. Si el script no arranca, o si rescate.js quita
+   la clase .js, el botón queda visible, que es el estado que vende.
+   Al revés (oculto por defecto, revelado por JS) un fallo del script
+   se lleva el CTA principal. */
+.wapp {
+  position: fixed;
+  right: max(1rem, env(safe-area-inset-right, 0px));
+  bottom: max(1rem, env(safe-area-inset-bottom, 0px));
+  z-index: 60;
+  display: inline-flex;
+  align-items: center;
+  gap: .55rem;
+  height: 56px;
+  padding: 0 1.15rem 0 1rem;
+  border-radius: 999px;
+  background: #25D366;
+  color: #07310F;
+  text-decoration: none;
+  font-family: "Bricolage Grotesque", "Segoe UI", system-ui, sans-serif;
+  font-size: .95rem;
+  font-weight: 700;
+  line-height: 1;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, .3), 0 2px 6px rgba(0, 0, 0, .2);
+  transition: opacity .28s ease, transform .28s ease, box-shadow .18s ease;
+}
+.wapp__i { width: 26px; height: 26px; fill: currentColor; flex: none; }
+.wapp:hover,
+.wapp:focus-visible { transform: translateY(-2px); box-shadow: 0 10px 26px rgba(0, 0, 0, .34); }
+/* mientras se está arriba del todo, el botón se aparta */
+.js .wapp--arriba { opacity: 0; transform: translateY(14px) scale(.94); pointer-events: none; }
+/* que el pie no quede tapado por el botón */
+.pie__in { padding-bottom: 4.5rem; }
+
+@media (max-width: 520px) {
+  .wapp { width: 56px; padding: 0; justify-content: center; }
+  /* el rótulo se va, el icono queda: en un teléfono el círculo verde ya dice qué es */
+  .wapp__t { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .wapp { transition: opacity .28s ease; }
+  .wapp:hover, .wapp:focus-visible { transform: none; }
+  .js .wapp--arriba { transform: none; }
 }

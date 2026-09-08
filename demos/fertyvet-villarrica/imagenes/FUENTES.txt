@@ -41,3 +41,23 @@ DESCARTADAS Y POR QUÉ
 FILTROS APLICADOS: sin marcas legibles, sin menores, sin precios en la
 foto, sin plus.unsplash, y ningún paisaje que prometa un lugar que no es
 la Araucanía (los fardos y praderas son genéricos de campo templado).
+
+────────────────────────────────────────────────────────────────
+VIDEO DE FONDO — agregado el 08-09-2026
+
+  video/port.mp4        1280x720 · 9 s · 1,45 MB · sin audio
+  video/port-poster.jpg 1280x720 · fotograma del mismo clip
+
+  Caballos en una caballeriza. Origen:
+  https://www.pexels.com/video/horses-in-stable-12182534/
+  Licencia Pexels (uso libre, sin crédito obligatorio).
+
+  NO es la caballeriza de FertyVet: es ambiente de rubro, igual que
+  las fotos genéricas de arriba. Va detrás del titular, con la misma
+  máscara y el mismo velo que la foto, así que el contraste medido no
+  cambia. Se carga sólo al acercarse y se apaga con
+  prefers-reduced-motion.
+
+  Hay una persona al fondo, de espaldas y en sombra: no se le ve la
+  cara y el velo la oscurece más todavía. Comprobado ampliando el
+  fotograma 3x.
