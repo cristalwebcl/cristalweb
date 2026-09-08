@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="es-CL" class="no-js">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Felipe Garrido — Kinesiología a domicilio, Villarrica</title>
+<meta name="description" content="Kinesiología en Villarrica, con atención a domicilio. Cómo es una sesión en la casa y qué hay que tener listo.">
+
+<!-- Política de seguridad de contenido: el navegador sólo puede cargar
+     archivos de este mismo sitio. Sin CDN, sin librerías, sin rastreadores.
+     Ver skills/web-blindada/references/csp-en-pages.md -->
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self'; img-src 'self' data:; font-src 'self'; connect-src 'self'; media-src 'self'; form-action 'self'; base-uri 'none'; frame-src 'none'; object-src 'none'">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+
+<!-- Rescate de la clase .js (regla 2 de la casa). En archivo, sin defer:
+     inline lo bloquearía la CSP. -->
+<script src="js/rescate.js"></script>
+
+<!-- Fuentes propias: cero peticiones a terceros. -->
+<link rel="preload" href="assets/fuentes/newsreader-var-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="assets/fuentes.css">
+<link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+
+<div class="propuesta">
+  <p class="propuesta__que">Propuesta de sitio web — preparada para <b>Felipe Garrido Carreño</b> por CristalWeb</p>
+  <p class="propuesta__gancho">5,0 con 63 reseñas siendo una sola persona: el kine al que se llega por el dato de un conocido. Esta página es ese dato, puesto por escrito — y contesta la pregunta que la familia hace en voz baja: si puede ir a la casa.</p>
+</div>
+
+<header class="cab" id="cab">
+  <a class="cab__marca" href="#portada">
+    <span class="bolso" aria-hidden="true"><i class="bolso__asa"></i></span>
+    <span class="cab__nombre">Felipe Garrido</span>
+  </a>
+  <nav class="cab__nav" aria-label="Secciones">
+    <a href="#casa">La visita a domicilio</a>
+    <a href="#persona">Una persona</a>
+  </nav>
+  <a class="cab__tel" href="tel:+56975728286">
+    <span class="cab__tel-rot">Villarrica</span>
+    <span class="cab__tel-num">9 7572 8286</span>
+  </a>
+</header>
+
+<main>
+
+<!-- ========= PORTADA ========= -->
+<section class="portada portada--foto" id="portada" aria-labelledby="t-portada">
+  <!-- FONDO DE PORTADA: 2560 px, nitido. Se disuelve hacia el titular
+       con un gradiente lateral, no con desenfoque. -->
+  <div class="portada__foto" aria-hidden="true">
+    <img src="imagenes/port-01.jpg" width="2560" height="1707"
+         decoding="async" fetchpriority="high" alt="">
+  </div>
+
+  <div class="camino" aria-hidden="true">
+    <span class="casita casita--a"></span>
+    <span class="pt p1"></span><span class="pt p2"></span><span class="pt p3"></span>
+    <span class="pt p4"></span><span class="pt p5"></span><span class="pt p6"></span>
+    <span class="casita casita--b"></span>
+  </div>
+
+  <div class="portada__texto">
+    <p class="sitio">Kinesiología · Villarrica</p>
+    <h1 id="t-portada">¿Puede venir<br>a la casa?</h1>
+    <p class="bajada">Es la pregunta que hace una familia cuando el operado no puede bajar
+      la escalera, cuando el abuelo ya no sale, o cuando cargar a alguien hasta el auto es
+      la parte más difícil del día. Se contesta una vez, por escrito, y deja de ser una
+      conversación incómoda por teléfono.</p>
+    <p class="tel-nombre"><a href="tel:+56975728286">Hablar con Felipe — 9 7572 8286</a></p>
+  </div>
+</section>
+
+<!-- ========= LA PIEZA FIRMA — SPLIT STICKY (G) ========= -->
+<section class="casa con-telon" id="casa" aria-labelledby="t-casa">
+  <div class="telon" aria-hidden="true">
+    <img src="imagenes/telon-01.jpg" width="1200" height="800" decoding="async" alt="">
+  </div>
+
+  <!-- AURA DE COLOR: la foto de rubro reventada a desenfoque. No se lee
+       como imagen: aporta color y luz detras de una seccion que si no
+       seria fondo plano. Aca el desenfoque SI es el efecto, no un parche,
+       y por eso el archivo va chico: a 64 px de blur, mas resolucion no
+       cambia nada. Sin loading=lazy porque el elemento va en absoluto con
+       z-index negativo y el navegador nunca lo considera visible. -->
+  <div class="aura" aria-hidden="true">
+    <img src="imagenes/aura-01.jpg" width="900" height="600" decoding="async" alt="">
+  </div>
+
+
+  <!-- El lado fijo: LA FICHA DE LA PERSONA. Casi toda por confirmar,
+       y se dice así. -->
+  <div class="casa__fijo">
+    <div class="ficha">
+      <div class="bolso bolso--grande" aria-hidden="true"><i class="bolso__asa"></i></div>
+      <h2 class="ficha__nombre">Felipe Garrido Carreño</h2>
+      <p class="ficha__rubro">Kinesiología · Villarrica</p>
+      <dl class="ficha__datos">
+        <div><dt>Registro profesional</dt><dd class="pend">falta: número de registro,
+          para publicarlo visible</dd></div>
+        <div><dt>Formación y especialidad</dt><dd class="pend">falta: dónde estudió y en
+          qué trabaja hoy</dd></div>
+        <div><dt>Sectores a los que va</dt><dd class="pend">falta: hasta dónde llega la
+          visita</dd></div>
+        <div><dt>Horario</dt><dd class="pend">falta: días y horas de atención</dd></div>
+        <div><dt>Teléfono</dt><dd><a href="tel:+56975728286">9 7572 8286</a></dd></div>
+      </dl>
+      <p class="ficha__nota">Esta ficha está casi vacía a propósito. <b>En salud, el
+        registro profesional no es un adorno: es lo primero que una página debería poder
+        mostrar</b>, y no se inventa ni se supone.</p>
+    </div>
+  </div>
+
+  <div class="casa__fluye">
+    <p class="antetitulo">Lo que nadie explica por escrito</p>
+    <h2 id="t-casa">El kine que va a la casa</h2>
+    <p class="entrada">Atender en la casa no es la versión reducida de atender en consulta:
+      es otro trabajo. Sin máquinas, con lo que hay, y con la familia mirando. Lo de abajo
+      es cómo funciona en general — lo que hace Felipe lo confirma él y se escribe con su
+      nombre.</p>
+    <p class="marca-ejemplo" data-ejemplo="Descripción general del oficio — pendiente de confirmar y firmar"></p>
+
+    <h3 class="sub">Para quién es</h3>
+    <ul class="quienes">
+      <li><b>El recién operado.</b> Cadera, rodilla, columna: las primeras semanas la
+        escalera y el auto son el problema, no el ejercicio.</li>
+      <li><b>El adulto mayor que ya no sale solo.</b> Llevarlo a consulta cuesta dos
+        personas y media mañana; recibirlo en la casa cuesta abrir la puerta.</li>
+      <li><b>La persona postrada o con movilidad muy reducida</b>, donde además hay que
+        enseñarle a quien cuida — que suele ser un familiar sin ninguna preparación.</li>
+      <li><b>El que va bien pero no puede faltar.</b> Alguien en tratamiento que se
+        complica con los horarios y abandona a mitad de camino.</li>
+    </ul>
+
+    <h3 class="sub">Cómo es una sesión en la casa</h3>
+    <ol class="sesion">
+      <li>
+        <p class="sesion__rot">Lo que lleva el kine</p>
+        <p>Lo suyo: camilla portátil si hace falta, bandas, colchoneta y lo necesario para
+          evaluar. No hay que comprar nada antes de la primera visita.</p>
+      </li>
+      <li>
+        <p class="sesion__rot">Lo que tiene que tener la casa</p>
+        <p>Una superficie firme —una cama que no se hunda o el suelo con colchoneta—,
+          espacio para moverse alrededor, y una silla estable. Nada más. Conviene despejar
+          el paso antes de que llegue.</p>
+      </li>
+      <li>
+        <p class="sesion__rot">Quién más está</p>
+        <p>Si hay alguien que cuida, conviene que esté presente al menos en la primera
+          sesión: buena parte del trabajo en domicilio es enseñar cómo mover, cómo sentar y
+          cómo levantar sin lesionar a nadie —ni al paciente ni al que ayuda.</p>
+      </li>
+      <li>
+        <p class="sesion__rot">Qué queda después</p>
+        <p>Ejercicios para hacer entre sesiones, explicados de manera que se puedan hacer
+          sin supervisión. Ahí está la mitad del resultado.
+          <span class="falta">falta: si entrega la pauta por escrito o por mensaje</span></p>
+      </li>
+    </ol>
+
+    <p class="firma">Esta sección es nueva en todo lo que he construido: hay páginas de
+      kinesiología que hablan de elongación y de cuántas sesiones toma un tratamiento, pero
+      ninguna del kinesiólogo que va a la casa. Y es la pregunta que más se hace en voz
+      baja.</p>
+  </div>
+</section>
+
+<!-- ========= UNA PERSONA, NO UNA SUCURSAL ========= -->
+<!-- ========= MEDIA PANTALLA ========= -->
+<section class="mitades" aria-labelledby="t-mitades">
+  <div class="mitades__foto">
+    <img src="imagenes/media-01.jpg" width="2200" height="1467"
+         loading="lazy" decoding="async" alt="">
+  </div>
+  <div class="mitades__texto">
+    <p class="mitades__ante">Lo que cambia cuando la sesión es en la casa</p>
+    <h2 id="t-mitades">La escalera de su casa es el mejor gimnasio</h2>
+    <p>Rehabilitar en el box es cómodo para el kinesiólogo. Rehabilitar en la casa es útil para el paciente: la escalera que sube todos los días, la cama de la que le cuesta levantarse, el baño donde se apoya. Los ejercicios se arman con lo que hay ahí, y por eso se siguen haciendo cuando el kinesiólogo se va.</p>
+  </div>
+</section>
+
+<section class="persona" id="persona" aria-labelledby="t-persona">
+  <div class="persona__cabecera">
+    <p class="antetitulo antetitulo--claro">La continuidad como argumento</p>
+    <h2 id="t-persona">Una persona, no una sucursal</h2>
+    <p class="entrada">En un centro grande, el tratamiento lo continúa quien esté ese día.
+      Acá atiende siempre el mismo, y eso no es una frase bonita: cambia el resultado.</p>
+    <p class="marca-ejemplo marca-ejemplo--claro" data-ejemplo="Descripción del formato de trabajo — pendiente de confirmar"></p>
+  </div>
+
+  <div class="razones">
+    <article class="rz">
+      <h3>No hay que contar la historia de nuevo</h3>
+      <p>El que atiende la sesión ocho vio la sesión uno. Sabe qué dolía al principio, qué
+        se probó y qué no funcionó, y no hay que explicárselo otra vez desde el accidente.</p>
+    </article>
+    <article class="rz">
+      <h3>Se nota el avance chico</h3>
+      <p>Los cambios de una semana a otra son mínimos y quien no estuvo antes no los ve.
+        La misma persona sí, y ajusta a tiempo en vez de esperar el control siguiente.</p>
+    </article>
+    <article class="rz">
+      <h3>La confianza pesa en el resultado</h3>
+      <p>Una parte importante del trabajo es dolorosa o incómoda, y se hace mejor con
+        alguien conocido. En domicilio todavía más: entrar a una casa es entrar a la vida
+        de alguien.</p>
+    </article>
+    <article class="rz">
+      <h3>El teléfono lo contesta el mismo</h3>
+      <p>La consulta corta entre sesiones —«¿esto es normal?»— la responde quien atiende, no
+        una recepción. Eso evita más de una consulta de urgencia.</p>
+    </article>
+  </div>
+
+  <p class="descargo">Esta página no describe formación, especialidad ni registro
+    profesional de nadie, porque no me consta ninguno de esos datos y en salud no se
+    suponen: los espacios están marcados como pendientes. Lo escrito sobre la sesión a
+    domicilio es general del oficio, no reemplaza una evaluación y lo revisa y lo firma el
+    profesional antes de publicarse.</p>
+</section>
+
+<!-- ========= EL CIERRE — T1 CON NOMBRE ========= -->
+<!-- ========= LA CITA A SANGRE ========= -->
+<section class="cita" aria-labelledby="t-cita">
+  <div class="cita__foto" aria-hidden="true">
+    <img src="imagenes/cita-01.jpg" width="2200" height="1467"
+         loading="lazy" decoding="async" alt="">
+  </div>
+  <blockquote class="cita__texto">
+    <p id="t-cita">Contesta Felipe<br>
+      <span class="cita__eco">No un call center, no un formulario: la misma persona que atiende</span></p>
+  </blockquote>
+</section>
+
+
+
+<!-- ========= TAJO — FRANJA A SANGRE ========= -->
+<div class="tajo" aria-hidden="true">
+  <img src="imagenes/banda-01.jpg" width="1100" height="733"
+       loading="lazy" decoding="async" alt="">
+</div>
+<section class="cierre" id="llamar" aria-labelledby="t-cierre">
+  <p class="cierre__rot">Para consultar o coordinar una visita</p>
+  <h2 id="t-cierre" class="cierre__tel">
+    <a href="tel:+56975728286">9 7572 8286</a>
+  </h2>
+  <p class="cierre__pie">Contesta Felipe. Es el número publicado en su ficha de Google.</p>
+</section>
+
+<!-- ========= LA TIRA ========= -->
+<section class="tira" aria-label="Tres imágenes del oficio">
+  <figure class="tira__pieza">
+    <img src="imagenes/tira-01.jpg" width="1100" height="733" loading="lazy" decoding="async" alt="Ejercicio con banda elástica guiado por el kinesiólogo.">
+  </figure>
+  <figure class="tira__pieza">
+    <img src="imagenes/tira-02.jpg" width="1100" height="733" loading="lazy" decoding="async" alt="Trabajo de hombro con banda elástica en sesión de rehabilitación.">
+  </figure>
+  <figure class="tira__pieza">
+    <img src="imagenes/tira-03.jpg" width="1100" height="733" loading="lazy" decoding="async" alt="Movilización manual del hombro durante una sesión.">
+  </figure>
+</section>
+
+</main>
+
+
+
+<!-- ========= MOSAICO ========= -->
+<section class="mos" aria-labelledby="t-mos">
+  <h2 id="t-mos" class="mos__titulo">La misma serie, más de cerca</h2>
+  <p class="mos__nota">Estas seis ya aparecen más arriba en la página. Vuelven acá en otro tamaño porque una sola pasada de imágenes deja el scroll vacío, y porque de cerca se ven cosas que en grande se pierden. La procedencia de cada una está en imagenes/FUENTES.txt.</p>
+  <div class="mos__grilla">
+    <figure class="mos__p">
+      <img src="imagenes/mos-01.jpg" width="780" height="520"
+           loading="lazy" decoding="async" alt="">
+    </figure>
+    <figure class="mos__p">
+      <img src="imagenes/mos-02.jpg" width="780" height="520"
+           loading="lazy" decoding="async" alt="">
+    </figure>
+    <figure class="mos__p">
+      <img src="imagenes/mos-03.jpg" width="780" height="520"
+           loading="lazy" decoding="async" alt="">
+    </figure>
+    <figure class="mos__p">
+      <img src="imagenes/mos-04.jpg" width="780" height="520"
+           loading="lazy" decoding="async" alt="">
+    </figure>
+    <figure class="mos__p">
+      <img src="imagenes/mos-05.jpg" width="780" height="520"
+           loading="lazy" decoding="async" alt="">
+    </figure>
+    <figure class="mos__p">
+      <img src="imagenes/mos-06.jpg" width="780" height="520"
+           loading="lazy" decoding="async" alt="">
+    </figure>
+  </div>
+</section>
+<section class="dueno" aria-labelledby="t-dueno">
+  <h2 id="t-dueno">Para Felipe</h2>
+  <div class="dueno__cols">
+    <div>
+      <h3>Lo que está verificado</h3>
+      <p>El 5,0 con 63 reseñas de su ficha de Google y el teléfono 9 7572 8286. No tiene
+        sitio propio.</p>
+    </div>
+    <div>
+      <h3>Lo que es general</h3>
+      <p>Todo lo de la sesión en la casa y las cuatro razones de la continuidad. Describen
+        el oficio, no su forma de trabajar, y por eso van marcados.</p>
+    </div>
+    <div>
+      <h3>Lo que falta</h3>
+      <p>Cinco datos suyos, y el primero es el más importante: el número de registro
+        profesional, que debería estar visible en la página. Después: formación,
+        especialidad, sectores a los que llega y horario. Con eso la ficha de la izquierda
+        deja de estar vacía y la página queda lista.</p>
+    </div>
+  </div>
+  <p class="dueno__cierre">
+    <a class="flecha" href="https://wa.me/56968650001" rel="noopener">Escribirme por WhatsApp <span aria-hidden="true">→</span></a>
+    <a class="flecha" href="../../" rel="noopener">Ver otros trabajos <span aria-hidden="true">→</span></a>
+  </p>
+</section>
+
+<footer class="pie">
+  <p>Sitio de demostración preparado por CristalWeb. El profesional no lo ha encargado ni
+    ha revisado su contenido. No se atribuye a nadie ninguna formación, especialidad ni
+    registro: esos campos están declarados como pendientes. No hay precios y nada de lo
+    escrito constituye indicación kinesiológica ni reemplaza una evaluación.</p>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>

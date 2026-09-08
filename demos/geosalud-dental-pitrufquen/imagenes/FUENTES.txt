@@ -1,0 +1,27 @@
+FONDOS GENERICOS DE RUBRO — Clinica Dental Geo Salud
+====================================================
+
+NO son fotos de este negocio. Son imagenes de box dental de uso
+libre. Las dos propias —clinica-01, su edificio de Francisco Bilbao
+de noche, y clinica-02, un antes/despues que publicaron ellos— van
+nitidas en la galeria con su pie.
+
+El edificio propio quedo en la galeria y no en la portada porque mide
+1400 px: por debajo de los 2560 que pide el estandar para ocupar una
+pantalla completa. Estirarlo se veria blando.
+
+Todas de Pexels (uso libre, sin credito obligatorio):
+
+  port-01.jpg   portada   2560px cal.88   <- paciente en el sillon, box completo
+  media-01.jpg  mitades   2200px cal.86   <- la lampara sobre el sillon
+  cita-01.jpg   cita      2200px cal.86   <- instrumental en la bandeja
+  tira-01/02/03 tira      1100px cal.84
+  aura-01.jpg   aura       900px cal.70
+
+URL de origen:
+001.jpg | 7680x5120 | Dental Clinic · Free Stock Photo | https://images.pexels.com/photos/3881216/pexels-photo-3881216.jpeg?cs=srgb&dl=pexels-olly-3881216.jpg&fm=jpg
+002.jpg | 7680x5120 | Serious young female dentist in medical mask working with patient in ... | https://images.pexels.com/photos/3881459/pexels-photo-3881459.jpeg?cs=srgb&dl=pexels-andrea-piacquadio-3881459.jpg&fm=jpg
+003.jpg | 7680x5120 | Smiling young ethnic female patient in dental chair in modern clinic ... | https://images.pexels.com/photos/3881145/pexels-photo-3881145.jpeg?cs=srgb&dl=pexels-andrea-piacquadio-3881145.jpg&fm=jpg
+004.jpg | 7680x5120 | Crop unrecognizable dentist preparing medical equipment in clinic ... | https://images.pexels.com/photos/3881237/pexels-photo-3881237.jpeg?cs=srgb&dl=pexels-andrea-piacquadio-3881237.jpg&fm=jpg
+005.jpg | 7680x5120 | Surprised young ethnic female patient in dental chair in modern clinic ... | https://images.pexels.com/photos/3881155/pexels-photo-3881155.jpeg?cs=srgb&dl=pexels-andrea-piacquadio-3881155.jpg&fm=jpg
+006.jpg | 7680x5120 | Unrecognizable dentists using medical equipment during teeth treatment ... | https://images.pexels.com/photos/3881315/pexels-photo-3881315.jpeg?cs=srgb&dl=pexels-andrea-piacquadio-3881315.jpg&fm=jpg

@@ -1,0 +1,397 @@
+/* ===================================================================
+   195 · AITUE Centro de Rehabilitacion · Villarrica
+   Demo comercial sin encargo. Construida el 02-09-2026.
+
+   DIRECCION - «LA CURVA»
+   La sexta kinesiologia del registro, asi que la identidad no sale del
+   rubro: sale del problema comercial real. Con 5,0 en 37 resenas el
+   centro no necesita pacientes nuevos — necesita que los pacientes NO
+   ABANDONEN en la meseta. La pagina entera es esa curva.
+
+   DESLINDE OBLIGADO con la 175-kine-felipe-garrido, kinesiologia en LA
+   MISMA CIUDAD: aquella es «Mezclilla de visita», crudo con azul
+   mezclilla, y **el negocio es UNA PERSONA que va a la casa**. Esta es
+   un CENTRO al que se va: por eso el color no es de ropa de calle sino
+   de tela clinica, y la pagina argumenta justamente lo que un domicilio
+   no puede tener (equipamiento fijo, metros, equipo).
+   Deslinde con la pmv-06 (ciruela, la pieza es Fonasa/particular) y con
+   la 136 y la 50: ninguna usa salvia ni habla de la curva.
+
+   PALETA · hueso `#F1F0EC` + panel `#E5E4DE` + tinta `#1B1E1C` (15,3:1)
+   + medio `#555A56` (6,9:1 sobre hueso, 6,1:1 sobre el peor panel)
+   + salvia `#3F5A4B` (7,2:1) — verde grisaceo de tela clinica antigua,
+   apagado. Deslinde de los verdes del registro: no es bosque
+   (saturado), ni quirofano (turquesa), ni botella de la 189 (mas
+   oscuro y con amarillo), ni senaletica de la 188 (brillante).
+   `--aviso #7A4E22` marca SOLO la etapa de la meseta, que es donde la
+   pagina quiere que el lector se detenga.
+
+   TRIO — verificado contra identidades.md el 02-09-2026:
+   · Display YANTRAMANAV (0 usos). Grotesca de formas abiertas y firmes.
+   · Cuerpo CABIN (3 usos). Redondeada apenas: calida sin ser blanda.
+   · Mono NANUM GOTHIC CODING (5 usos, el menos usado que calza).
+
+   ESTRUCTURA — la curva dibujada en CSS manda, y las cuatro etapas
+   cuelgan de ella. CONTACTO T4 · boton fantasma.
+   AMBIENTE: ondas lentas (movimiento-web). En una consulta no hay nada
+   en el aire: el ambiente es conceptual.
+   =================================================================== */
+
+:root {
+  --hueso:   #F1F0EC;
+  --panel:   #E5E4DE;
+  --panel-2: #DBDAD3;
+  --tinta:   #1B1E1C;
+  --medio:   #555A56;
+  --salvia:  #3F5A4B;
+  --aviso:   #7A4E22;   /* 5,1:1 sobre --panel-2, que es el fondo de la
+                           etapa destacada. El #8A5A2B inicial daba 4,19:1
+                           ahi — medido sobre el DOM, no supuesto. */
+  --linea:   #CAC8C0;
+
+  --sale:   cubic-bezier(.16, 1, .3, 1);
+  --sale-2: cubic-bezier(.2, 0, 0, 1);
+
+  --ancho: min(92vw, 1140px);
+  --p--1: clamp(.78rem, .74rem + .18vw, .88rem);
+  --p-0:  clamp(1rem, .95rem + .25vw, 1.12rem);
+  --p-1:  clamp(1.15rem, 1.05rem + .45vw, 1.38rem);
+  --p-2:  clamp(1.6rem, 1.35rem + 1.2vw, 2.3rem);
+  --p-3:  clamp(2rem, 1.5rem + 2.3vw, 3.5rem);
+  --p-4:  clamp(2.6rem, 1.7rem + 4.4vw, 5.4rem);
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+[hidden] { display: none !important; }
+html { scroll-behavior: smooth; }
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+
+body {
+  margin: 0; background: var(--hueso); color: var(--tinta);
+  font-family: Cabin, "Segoe UI", system-ui, sans-serif;
+  font-size: var(--p-0); line-height: 1.64;
+  -webkit-font-smoothing: antialiased;
+}
+img { max-width: 100%; }
+a { color: inherit; }
+.ancho { width: var(--ancho); margin-inline: auto; }
+
+.rotulo {
+  font-family: "Nanum Gothic Coding", ui-monospace, monospace;
+  font-size: var(--p--1); letter-spacing: .13em; text-transform: uppercase;
+  color: var(--salvia); margin: 0 0 1.4rem;
+}
+.h2 {
+  font-family: Yantramanav, "Segoe UI", sans-serif; font-weight: 500;
+  font-size: var(--p-3); line-height: 1.08; letter-spacing: -.02em; margin: 0 0 1.5rem;
+}
+.h2--chico { font-size: var(--p-2); }
+.mini { font-size: var(--p--1); color: var(--medio); max-width: 66ch; }
+.mini b { color: var(--tinta); }
+.falta { color: var(--medio); font-style: italic; }
+.ej { color: var(--medio); font-style: italic; border-bottom: 1px dashed var(--linea); }
+.ej::after {
+  content: " (ej.)"; font-family: "Nanum Gothic Coding", ui-monospace, monospace;
+  font-size: .78em; font-style: normal; opacity: .8;
+}
+
+/* -- BANDA ------------------------------------------------------- */
+.propuesta { background: var(--salvia); color: #EEF3EF; }
+.propuesta__in { padding: .9rem 0; }
+.propuesta__q { font-family: "Nanum Gothic Coding", ui-monospace, monospace; font-size: var(--p--1); letter-spacing: .03em; margin: 0 0 .2rem; }
+.propuesta__d { margin: 0; font-size: var(--p--1); line-height: 1.5; max-width: 100ch; }
+
+/* -- CABECERA ---------------------------------------------------- */
+.cab {
+  position: sticky; top: 0; z-index: 50;
+  background: var(--hueso); border-bottom: 1px solid var(--linea);
+  transition: transform .3s var(--sale-2), background-color .3s ease, border-color .3s ease;
+}
+.cab__in { display: flex; align-items: center; justify-content: space-between; gap: 1.2rem; padding: .55rem 0; }
+.cab__marca { display: inline-flex; align-items: center; gap: .7rem; text-decoration: none; min-height: 44px; }
+.cab__txt {
+  font-family: Yantramanav, sans-serif; font-weight: 500; font-size: var(--p-1);
+  line-height: 1; display: flex; flex-direction: column; gap: .2rem; letter-spacing: .04em;
+}
+.cab__sub {
+  font-family: "Nanum Gothic Coding", ui-monospace, monospace; font-weight: 400;
+  font-size: .55em; letter-spacing: .08em; color: var(--medio); text-transform: uppercase;
+}
+.cab__nav { display: flex; align-items: center; gap: 1.5rem; }
+.cab__nav a {
+  font-size: var(--p--1); text-decoration: none; color: var(--medio);
+  min-height: 44px; display: inline-flex; align-items: center; transition: color .2s ease;
+}
+.cab__nav a:hover, .cab__nav a:focus-visible { color: var(--tinta); }
+.cab__tel { color: var(--salvia) !important; font-family: "Nanum Gothic Coding", ui-monospace, monospace; }
+
+/* Cabecera 161a - LA CURVA QUE SUBE CON MESETA */
+.curva { position: relative; width: 26px; height: 22px; flex: 0 0 auto; }
+.curva__t1, .curva__t2, .curva__t3 { position: absolute; height: 2.5px; background: var(--salvia); border-radius: 2px; }
+.curva__t1 { left: 0;  bottom: 2px;  width: 9px; transform: rotate(-38deg); transform-origin: left center; }
+.curva__t2 { left: 8px; bottom: 9px; width: 9px; }
+.curva__t3 { left: 16px; bottom: 9px; width: 11px; transform: rotate(-38deg); transform-origin: left center; }
+
+.js .cab--top { background: transparent; border-bottom-color: transparent; }
+.js .cab--oculta { transform: translateY(-100%); }
+@media (prefers-reduced-motion: reduce) { .cab { transition-duration: 1ms; } }
+
+/* -- PORTADA ----------------------------------------------------- */
+.portada {
+  position: relative; isolation: isolate; overflow: hidden;
+  min-height: 86svh; display: flex; align-items: center; padding: 5rem 0 4rem;
+}
+.portada__foto { position: absolute; inset: 0; z-index: -2; }
+.portada__foto img {
+  display: block; width: 100%; height: 100%; object-fit: cover; object-position: 70% 42%;
+  -webkit-mask-image: linear-gradient(90deg, transparent 0%, transparent 22%, rgba(0,0,0,.26) 42%, rgba(0,0,0,.74) 62%, #000 80%, #000 100%);
+          mask-image: linear-gradient(90deg, transparent 0%, transparent 22%, rgba(0,0,0,.26) 42%, rgba(0,0,0,.74) 62%, #000 80%, #000 100%);
+}
+/* Velo entero en rgba terminando en alfa 0. La foto es clara, asi que
+   el velo va mas alto que en las demos de foto oscura. */
+.portada__foto::after {
+  content: ""; position: absolute; inset: 0;
+  background: linear-gradient(90deg,
+    rgba(241,240,236,1) 0%, rgba(241,240,236,1) 32%, rgba(241,240,236,.88) 48%,
+    rgba(241,240,236,.5) 66%, rgba(241,240,236,.16) 85%, rgba(241,240,236,0) 97%);
+}
+.portada__in { position: relative; z-index: 1; }
+.portada__h1 {
+  font-family: Yantramanav, sans-serif; font-weight: 500;
+  font-size: var(--p-4); line-height: 1.0; letter-spacing: -.03em; margin: 0 0 1.3rem;
+}
+.portada__bajada { max-width: 44ch; color: var(--medio); font-size: var(--p-1); margin: 0 0 2.4rem; }
+.portada__pie { margin: 0; }
+
+/* -- AMBIENTE: ONDAS --------------------------------------------- */
+/* Solo cuatro, con retardos negativos para que salgan parejas. Emanan
+   del punto donde esta la mano del kinesiologo en la foto. */
+.amb { position: absolute; inset: 0; z-index: -1; overflow: hidden; pointer-events: none; }
+.amb__p {
+  position: absolute; left: 72%; top: 46%;
+  width: 30px; height: 30px; border-radius: 50%;
+  border: 1.5px solid rgba(63, 90, 75, .3);
+  animation: amb-onda 8s ease-out infinite;
+  will-change: transform, opacity;
+}
+.amb__p:nth-child(1) { animation-delay: 0s; }
+.amb__p:nth-child(2) { animation-delay: -2s; }
+.amb__p:nth-child(3) { animation-delay: -4s; }
+.amb__p:nth-child(4) { animation-delay: -6s; }
+@keyframes amb-onda {
+  0%   { transform: translate(-50%,-50%) scale(.2); opacity: .5; }
+  100% { transform: translate(-50%,-50%) scale(12); opacity: 0; }
+}
+@media (prefers-reduced-motion: reduce) { .amb { display: none; } }
+@media (max-width: 760px) { .amb__p:nth-child(n+3) { display: none; } }
+
+/* -- BOTONES ----------------------------------------------------- */
+.boton {
+  position: relative; display: inline-flex; align-items: center; justify-content: center;
+  min-height: 48px; padding: .8rem 1.8rem;
+  border: 1px solid var(--salvia); color: var(--salvia); background: transparent;
+  font-family: "Nanum Gothic Coding", ui-monospace, monospace;
+  font-size: var(--p--1); letter-spacing: .1em; text-transform: uppercase;
+  text-decoration: none; overflow: hidden; isolation: isolate;
+}
+.boton::before {
+  content: ""; position: absolute; inset: 0; z-index: -1;
+  background: var(--salvia); transform: translateY(101%); transition: transform .4s var(--sale);
+}
+.boton:hover, .boton:focus-visible { color: var(--hueso); }
+.boton:hover::before, .boton:focus-visible::before { transform: translateY(0); }
+.boton--fuerte { background: var(--salvia); color: var(--hueso); }
+.boton--fuerte::before { background: var(--tinta); }
+@media (prefers-reduced-motion: reduce) { .boton::before { transition-duration: 1ms; } }
+
+.flecha {
+  display: inline-flex; align-items: center; gap: .5rem; min-height: 44px;
+  font-family: "Nanum Gothic Coding", ui-monospace, monospace; font-size: var(--p--1); letter-spacing: .05em;
+  color: var(--salvia); text-decoration: none; border-bottom: 1px solid currentColor;
+  transition: border-bottom-width .2s ease;
+}
+.flecha:hover, .flecha:focus-visible { border-bottom-width: 3px; }
+
+/* -- PIEZA FIRMA: LA CURVA --------------------------------------- */
+.curva-sec { padding: 7rem 0; background: var(--panel); }
+.curva-sec .intro { max-width: 64ch; color: var(--medio); font-size: var(--p-1); margin: 0 0 2.5rem; }
+.curva-sec .intro b { color: var(--tinta); }
+
+/* El grafico: cuatro columnas de alturas distintas que dibujan la
+   curva real —sube, se aplana, baja, sube—. Alturas por CLASE, nunca
+   por atributo style: la CSP con style-src 'self' lo bloquea. */
+.grafico {
+  position: relative; display: grid; grid-template-columns: repeat(4, 1fr);
+  gap: 3px; height: 130px; max-width: 560px; margin: 0 0 3.5rem; align-items: end;
+}
+.grafico__base { position: absolute; left: 0; right: 0; bottom: 0; height: 1px; background: var(--linea); }
+.grafico__p { background: var(--salvia); border-radius: 3px 3px 0 0; opacity: .85; }
+.grafico__p--1 { height: 55%; }
+.grafico__p--2 { height: 60%; background: var(--aviso); }  /* la meseta */
+.grafico__p--3 { height: 48%; background: var(--aviso); opacity: .6; }
+.grafico__p--4 { height: 100%; }
+
+.etapas { list-style: none; margin: 0; padding: 0; }
+.etapa { border-top: 2px solid var(--linea); padding: 1.8rem 0; }
+.etapa:last-child { border-bottom: 2px solid var(--linea); }
+.etapa__n {
+  font-family: "Nanum Gothic Coding", ui-monospace, monospace;
+  font-size: var(--p--1); letter-spacing: .12em; text-transform: uppercase;
+  color: var(--medio); margin: 0 0 .35rem;
+}
+.etapa__t { font-family: Yantramanav, sans-serif; font-weight: 500; font-size: var(--p-2); margin: 0 0 .7rem; line-height: 1.15; }
+.etapa__d { margin: 0; color: var(--medio); max-width: 70ch; }
+.etapa__d b { color: var(--tinta); }
+.etapa__x {
+  margin: .8rem 0 0; font-size: var(--p--1); color: var(--medio); max-width: 70ch;
+  border-left: 2px solid var(--linea); padding-left: .9rem;
+}
+/* La meseta se destaca por filete y fondo, no por un color mas: es
+   donde la pagina quiere que el lector se detenga. */
+.etapa--clave {
+  background: var(--panel-2); margin-inline: -1.5rem; padding-inline: 1.5rem;
+  border-top-color: var(--aviso); border-left: 3px solid var(--aviso);
+}
+.etapa--clave .etapa__n { color: var(--aviso); }
+.etapa--clave .etapa__x { border-left-color: var(--aviso); }
+
+.nota {
+  margin: 2.5rem 0 0; padding-top: 1.5rem; border-top: 1px solid var(--linea);
+  font-size: var(--p--1); color: var(--medio); max-width: 74ch;
+}
+.nota b { color: var(--tinta); }
+
+/* -- CITA -------------------------------------------------------- */
+.cita { position: relative; isolation: isolate; overflow: hidden; min-height: min(50vh, 390px); display: grid; align-items: center; }
+.cita img { position: absolute; inset: 0; z-index: -2; width: 100%; height: 100%; object-fit: cover; object-position: 50% 45%; }
+/* Peor caso medido a mano: la pared clara de la foto bajo el velo .8
+   sobre tinta da texto hueso en 7,3:1 a tamano grande. El auditor la
+   marca 1,00:1 porque no ve el ::after — falso positivo conocido. */
+.cita::after { content: ""; position: absolute; inset: 0; z-index: -1; background: rgba(27,30,28,.8); }
+.cita__txt p {
+  font-family: Yantramanav, sans-serif; font-weight: 500; font-size: var(--p-2);
+  line-height: 1.2; max-width: 24ch; margin: 0; color: var(--hueso);
+}
+
+/* -- TRES COSAS -------------------------------------------------- */
+.ficha-serv { padding: 7rem 0; }
+.tres { display: grid; grid-template-columns: repeat(3, 1fr); gap: 2.5rem; margin-bottom: 2rem; }
+.cosa { border-top: 2px solid var(--salvia); padding-top: 1rem; }
+.cosa__n { font-family: "Nanum Gothic Coding", ui-monospace, monospace; font-size: var(--p--1); color: var(--salvia); margin: 0 0 .5rem; }
+.cosa h3 { font-family: Yantramanav, sans-serif; font-weight: 500; font-size: var(--p-1); margin: 0 0 .6rem; line-height: 1.2; }
+.cosa p { margin: 0; color: var(--medio); }
+
+/* -- TAJO -------------------------------------------------------- */
+.tajo { position: relative; isolation: isolate; overflow: hidden; margin: 0; min-height: min(52vh, 410px); display: flex; align-items: flex-end; }
+.tajo img { position: absolute; inset: 0; z-index: -2; width: 100%; height: 100%; object-fit: cover; object-position: 50% 40%; }
+.tajo::after {
+  content: ""; position: absolute; inset: 0; z-index: -1;
+  background: linear-gradient(0deg, rgba(27,30,28,.95) 0%, rgba(27,30,28,.8) 34%, rgba(27,30,28,.3) 64%, rgba(27,30,28,0) 92%);
+}
+.tajo__txt { padding: 2.8rem 0; }
+.tajo__txt .rotulo { color: #A9C6B5; }
+.tajo__f { font-family: Yantramanav, sans-serif; font-weight: 500; font-size: var(--p-2); margin: 0; line-height: 1.2; max-width: 26ch; color: var(--hueso); }
+
+/* -- MITADES ----------------------------------------------------- */
+.mitades { display: grid; grid-template-columns: 1fr 1fr; background: var(--panel); }
+.mitades__foto img { display: block; width: 100%; height: 100%; object-fit: cover; }
+.mitades__txt { padding: 5.5rem clamp(1.5rem, 4vw, 4rem); display: flex; flex-direction: column; justify-content: center; }
+.lista { margin: 1.3rem 0; padding: 0; list-style: none; }
+.lista li { padding: .6rem 0 .6rem 1.5rem; position: relative; border-bottom: 1px solid var(--linea); font-size: var(--p--1); color: var(--medio); }
+.lista li b { color: var(--tinta); }
+.lista li::before { content: ""; position: absolute; left: 0; top: 1.1em; width: 8px; height: 1px; background: var(--salvia); }
+.lista--marca li { border-bottom: none; padding-bottom: .3rem; }
+
+/* -- MOSAICO ----------------------------------------------------- */
+.mos { padding: 7rem 0 0; background: var(--panel-2); }
+.mos__grilla { display: grid; gap: 4px; grid-template-columns: repeat(3, 1fr); margin-top: 3rem; }
+.mos__p { margin: 0; overflow: hidden; }
+.mos__p:nth-child(1), .mos__p:nth-child(6) { grid-column: span 2; }
+.mos__p img { display: block; width: 100%; height: 100%; aspect-ratio: 3 / 2; object-fit: cover; transition: transform .5s var(--sale); }
+.mos__p:hover img { transform: scale(1.05); }
+@media (prefers-reduced-motion: reduce) { .mos__p:hover img { transform: none; } }
+
+/* -- CONTACTO ---------------------------------------------------- */
+.con-telon { position: relative; isolation: isolate; overflow: hidden; }
+.telon { position: absolute; inset: 0; z-index: -1; pointer-events: none; }
+.telon img {
+  display: block; width: 100%; height: 100%; object-fit: cover; opacity: .15;
+  -webkit-mask-image: linear-gradient(180deg, transparent 0%, #000 22%, #000 74%, transparent 100%);
+          mask-image: linear-gradient(180deg, transparent 0%, #000 22%, #000 74%, transparent 100%);
+}
+.contacto { padding: 7rem 0; }
+.contacto__num { margin: 0 0 2.6rem; }
+.contacto__num a {
+  font-family: Yantramanav, sans-serif; font-weight: 500;
+  font-size: clamp(1.9rem, 1.2rem + 3.6vw, 4rem); line-height: 1; color: var(--salvia);
+  text-decoration: none; display: inline-flex; align-items: center; min-height: 44px;
+  border-bottom: 3px solid transparent; transition: border-color .25s ease;
+}
+.contacto__num a:hover, .contacto__num a:focus-visible { border-bottom-color: var(--salvia); }
+.datos { margin: 0; max-width: 48rem; }
+.datos > div { display: flex; justify-content: space-between; gap: 1.5rem; padding: .8rem 0; border-bottom: 1px solid var(--linea); }
+.datos dt { font-family: "Nanum Gothic Coding", ui-monospace, monospace; font-size: var(--p--1); color: var(--medio); letter-spacing: .06em; text-transform: uppercase; }
+.datos dd { margin: 0; text-align: right; font-size: var(--p--1); }
+
+/* -- PARA EL DUENO ----------------------------------------------- */
+.dueno { padding: 7rem 0; border-top: 1px solid var(--linea); background: var(--panel-2); }
+.dueno__cols { display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; margin-bottom: 3rem; }
+.dueno h3 {
+  font-family: "Nanum Gothic Coding", ui-monospace, monospace;
+  font-size: var(--p--1); letter-spacing: .1em; text-transform: uppercase;
+  color: var(--salvia); margin: 2rem 0 1rem;
+}
+.dueno p { color: var(--medio); max-width: 62ch; }
+.dueno p b { color: var(--tinta); }
+.dueno__cierre { display: flex; flex-wrap: wrap; gap: 2rem; align-items: center; margin-top: 3rem; }
+
+.pie { padding: 3rem 0; border-top: 1px solid var(--linea); }
+.pie__in p { font-size: var(--p--1); color: var(--medio); margin: 0 0 .8rem; }
+.pie__leg { opacity: .9; }
+
+/* -- REVEALS ----------------------------------------------------- */
+.js [data-rev-grupo] > * { opacity: 0; transform: translateY(22px); }
+.js [data-rev-grupo].ok > * {
+  opacity: 1; transform: none;
+  transition: opacity .3s ease-out, transform .55s var(--sale);
+  transition-delay: calc(var(--r, 0) * 60ms);
+}
+[data-rev-grupo] > :nth-child(1){--r:0} [data-rev-grupo] > :nth-child(2){--r:1}
+[data-rev-grupo] > :nth-child(3){--r:2} [data-rev-grupo] > :nth-child(4){--r:3}
+[data-rev-grupo] > :nth-child(5){--r:4} [data-rev-grupo] > :nth-child(6){--r:5}
+@media (prefers-reduced-motion: reduce) {
+  .js [data-rev-grupo] > * { opacity: 1; transform: none; transition: none; }
+}
+:focus-visible { outline: 2px solid var(--salvia); outline-offset: 3px; }
+
+/* -- MOVIL ------------------------------------------------------- */
+@media (max-width: 980px) {
+  .tres { grid-template-columns: 1fr; gap: 1.8rem; }
+  .mitades { grid-template-columns: 1fr; }
+  .mitades__foto img { aspect-ratio: 16 / 10; height: auto; }
+  .dueno__cols { grid-template-columns: 1fr; gap: 1rem; }
+}
+@media (max-width: 760px) {
+  .cab__nav a:not(.cab__tel) { display: none; }
+  .portada { min-height: auto; padding: 3.5rem 0 3rem; }
+  /* En telefono el texto cae sobre la foto: velo de arriba abajo. */
+  .portada__foto img {
+    object-position: 64% 42%;
+    -webkit-mask-image: linear-gradient(180deg, #000 0%, #000 58%, transparent 100%);
+            mask-image: linear-gradient(180deg, #000 0%, #000 58%, transparent 100%);
+  }
+  .portada__foto::after {
+    background: linear-gradient(180deg,
+      rgba(241,240,236,.92) 0%, rgba(241,240,236,.86) 34%, rgba(241,240,236,.92) 64%, rgba(241,240,236,1) 100%);
+  }
+  .grafico { height: 100px; }
+  .etapa--clave { margin-inline: -1rem; padding-inline: 1rem; }
+  .curva-sec, .ficha-serv, .contacto, .dueno { padding: 4.5rem 0; }
+  .mos { padding-top: 4.5rem; }
+  .mos__grilla { grid-template-columns: repeat(2, 1fr); }
+  .mos__p:nth-child(1), .mos__p:nth-child(6) { grid-column: span 2; }
+}
+@media (max-width: 460px) {
+  .datos > div { flex-direction: column; gap: .2rem; }
+  .datos dd { text-align: left; }
+}

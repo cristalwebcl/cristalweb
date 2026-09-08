@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="es-CL" class="no-js">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Clínica Estación Mascotas — Valdivia</title>
+<meta name="description" content="Peluquería y baño en Valdivia con hora de retiro. Cuánto toma cada tamaño y a qué hora se pasa a buscar.">
+
+<!-- Política de seguridad de contenido: el navegador sólo puede cargar
+     archivos de este mismo sitio. Sin CDN, sin librerías, sin rastreadores.
+     Ver skills/web-blindada/references/csp-en-pages.md -->
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self'; img-src 'self' data:; font-src 'self'; connect-src 'self'; media-src 'self'; form-action 'self'; base-uri 'none'; frame-src 'none'; object-src 'none'">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+
+<!-- Rescate de la clase .js (regla 2 de la casa). En archivo, sin defer:
+     inline lo bloquearía la CSP. -->
+<script src="js/rescate.js"></script>
+
+<!-- Fuentes propias: cero peticiones a terceros. El preload va SOLO
+     para la display, que es la letra del tablero. -->
+<link rel="preload" href="assets/fuentes/bakbakone-400-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="assets/fuentes.css">
+<link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+
+<div class="propuesta">
+  <p class="propuesta__que">Propuesta de sitio web — preparada para <b>Clínica Estación Mascotas</b> por CristalWeb</p>
+  <p class="propuesta__gancho">4,7 con 106 reseñas. Se llaman Estación, y la gracia de una estación es que los horarios se cumplen: esta página convierte el nombre en promesa.</p>
+</div>
+
+<header class="cab" id="cab">
+  <a class="cab__marca" href="#portada">
+    <span class="reloj" aria-hidden="true"><i></i></span>
+    <span class="cab__nombre">Estación</span>
+  </a>
+  <nav class="cab__nav" aria-label="Secciones">
+    <a href="#horas">Cuánto toma</a>
+    <a href="#tablero">El tablero</a>
+  </nav>
+  <a class="cab__tel" href="tel:+56632213223">
+    <span class="cab__tel-rot">Valdivia</span>
+    <span class="cab__tel-num">(63) 221 3223</span>
+  </a>
+</header>
+
+<main>
+
+<!-- ========= PORTADA ========= -->
+<section class="portada portada--foto" id="portada" aria-labelledby="t-portada">
+  <!-- FONDO DE PORTADA: 2560 px, nitido. Se disuelve hacia el titular
+       con un gradiente lateral, no con desenfoque. -->
+  <div class="portada__foto" aria-hidden="true">
+    <img src="imagenes/port-01.jpg" width="2560" height="1709"
+         decoding="async" fetchpriority="high" alt="">
+  </div>
+
+  <div class="flap" aria-hidden="true">
+    <span class="flap__tira">A<br>N<br>D<br>É<br>N<br>A</span>
+  </div>
+
+  <div class="portada__texto">
+    <p class="sitio">Peluquería y baño · Valdivia</p>
+    <h1 id="t-portada">¿A qué hora<br>lo paso a buscar?</h1>
+    <p class="bajada">Es la llamada que una peluquería recibe veinte veces al día, y
+      la que más tiempo le quita a quien está trabajando con las manos mojadas. La
+      respuesta se puede escribir una vez y dejar de contestarla para siempre.</p>
+    <dl class="specs">
+      <div class="spec"><dt>nota en Google</dt><dd>4,7</dd></div>
+      <div class="spec"><dt>reseñas</dt><dd>106</dd></div>
+      <div class="spec"><dt>teléfono</dt><dd class="dd--tel"><a href="tel:+56632213223">(63) 221 3223</a></dd></div>
+    </dl>
+  </div>
+</section>
+
+<!-- ========= LA PIEZA FIRMA — EL TABLERO DE DURACIONES ========= -->
+<section class="horas con-telon" id="horas" aria-labelledby="t-horas">
+  <div class="telon" aria-hidden="true">
+    <img src="imagenes/telon-01.jpg" width="1200" height="801" decoding="async" alt="">
+  </div>
+
+  <!-- AURA DE COLOR: la misma foto de rubro, desenfocada a fondo y a
+       escala. No se lee como imagen: aporta el calor de la luz y del
+       pelaje detras de una seccion que si no seria negro plano. Aca el
+       desenfoque SI es el efecto, no un parche — por eso el archivo va
+       a 900 px: a 60 px de blur, mas resolucion no cambia nada y solo
+       pesaria de mas. -->
+  <!-- Sin loading="lazy" a proposito: el aura va en posicion absoluta,
+       con z-index negativo y desbordando su caja. Chrome nunca la
+       considera "a punto de verse" y con lazy no la carga jamas. Son
+       42 KB. -->
+  <div class="aura" aria-hidden="true">
+    <img src="imagenes/aura-01.jpg" width="900" height="600"
+         decoding="async" alt="">
+  </div>
+
+  <div class="horas__cabecera">
+    <p class="antetitulo">Dejar y retirar a la hora</p>
+    <h2 id="t-horas">Cuánto toma</h2>
+    <p class="entrada">Un baño con secado no dura lo mismo en un perro de cinco kilos
+      que en uno de treinta, y con nudos puede durar el doble. Dicho antes, el dueño
+      organiza su día — y deja de llamar cada media hora.</p>
+    <p class="marca-ejemplo" data-ejemplo="Duraciones de ejemplo — las reales las pone la peluquería"></p>
+  </div>
+
+  <div class="tabla-envoltura">
+    <table class="tabla">
+      <caption class="visually">Duraciones de referencia por tamaño y hora de retiro</caption>
+      <thead>
+        <tr>
+          <th scope="col">Tamaño</th>
+          <th scope="col">Dura</th>
+          <th scope="col">Si se deja a las 10:00, se retira</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row" class="tam">Chico<span class="tam__d">hasta unos 8 kg</span></th>
+          <td class="dura">1:30</td>
+          <td class="retira">11:30 <span class="ej">ej.</span></td>
+        </tr>
+        <tr>
+          <th scope="row" class="tam">Mediano<span class="tam__d">hasta unos 20 kg</span></th>
+          <td class="dura">2:00</td>
+          <td class="retira">12:00 <span class="ej">ej.</span></td>
+        </tr>
+        <tr>
+          <th scope="row" class="tam">Grande<span class="tam__d">sobre 20 kg</span></th>
+          <td class="dura">2:45</td>
+          <td class="retira">12:45 <span class="ej">ej.</span></td>
+        </tr>
+        <tr>
+          <th scope="row" class="tam">Con nudos<span class="tam__d">cualquier tamaño</span></th>
+          <td class="dura">+1:00</td>
+          <td class="retira">se avisa <span class="ej">ej.</span></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="ojo">
+    <p><b>Por qué los nudos se cobran y se demoran aparte.</b> Un pelaje muy
+      enredado no se peina: hay que desarmarlo mechón por mechón, y si está muy
+      apretado contra la piel, muchas veces la única salida sin lastimar al animal es
+      cortar. Explicarlo antes evita la escena de un dueño que llega y encuentra a su
+      perro rapado sin haberlo esperado.
+      <span class="falta">falta: confirmar cómo lo manejan y qué avisan</span></p>
+  </div>
+
+  <p class="firma">Cuatro filas. Es la sección que convierte «llámenos» en «déjelo a
+    las diez y pásela a buscar a las doce», que es lo que la gente necesita para
+    poder venir.</p>
+</section>
+
+<!-- ========= EL TABLERO DE HOY ========= -->
+<!-- ========= MEDIA PANTALLA ========= -->
+<section class="mitades" aria-labelledby="t-mitades">
+  <div class="mitades__foto">
+    <img src="imagenes/media-01.jpg" width="2200" height="1468"
+         loading="lazy" decoding="async" alt="">
+  </div>
+  <div class="mitades__texto">
+    <p class="mitades__ante">Por qué se demora lo que se demora</p>
+    <h2 id="t-mitades">El baño es rápido. Secar, no.</h2>
+    <p>Un perro de pelo largo tarda más en el secador que en la tina, y ese
+      es el tramo que nadie calcula cuando pregunta a qué hora lo pasa a
+      buscar. Por eso el tiempo se cuenta por tipo de pelo y no por tamaño:
+      un cocker chico puede llevar más que un labrador grande.</p>
+  </div>
+</section>
+
+<section class="tablero" id="tablero" aria-labelledby="t-tablero">
+  <div class="tablero__cabecera">
+    <p class="antetitulo antetitulo--claro">La idea grande</p>
+    <h2 id="t-tablero">El tablero de hoy</h2>
+    <p class="entrada">Si el nombre es Estación, esto es lo que va con el nombre: un
+      panel donde el dueño ve en qué va su perro sin llamar a nadie. No hace falta
+      ningún sistema — basta con que alguien cambie una palabra cuatro veces al
+      día.</p>
+    <p class="marca-ejemplo marca-ejemplo--fuerte" data-ejemplo="TABLERO DE EJEMPLO COMPLETO — ninguno de estos datos es real"></p>
+  </div>
+
+  <div class="panel-envoltura">
+    <table class="panel">
+      <caption class="visually">Ejemplo de tablero del día con el estado de cada mascota</caption>
+      <thead>
+        <tr>
+          <th scope="col">Hora</th>
+          <th scope="col">Nombre</th>
+          <th scope="col">Servicio</th>
+          <th scope="col">Estado</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="p-hora">09:30</td>
+          <td class="p-nom">Nube</td>
+          <td class="p-serv">Baño y secado</td>
+          <td class="p-est p-est--listo">Listo</td>
+        </tr>
+        <tr>
+          <td class="p-hora">10:00</td>
+          <td class="p-nom">Rocco</td>
+          <td class="p-serv">Baño y corte</td>
+          <td class="p-est">Secándose</td>
+        </tr>
+        <tr>
+          <td class="p-hora">10:30</td>
+          <td class="p-nom">Kira</td>
+          <td class="p-serv">Baño</td>
+          <td class="p-est">En baño</td>
+        </tr>
+        <tr>
+          <td class="p-hora">11:00</td>
+          <td class="p-nom">Simón</td>
+          <td class="p-serv">Corte con nudos</td>
+          <td class="p-est">Recibido</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="ojo ojo--claro">
+    <p><b>Cómo funcionaría de verdad.</b> Cuatro estados y una persona que los
+      cambia: recibido · en baño · secándose · listo. Se puede hacer en la misma
+      página, en una pizarra fotografiada, o en un mensaje al grupo. Lo que vale no
+      es la tecnología: es que el dueño sepa, sin llamar, que puede salir de la casa.
+      <span class="falta">falta: decidir si quieren esto y quién lo actualizaría</span></p>
+  </div>
+</section>
+
+<!-- ========= EL CIERRE — T1 ========= -->
+<!-- ========= LA CITA A SANGRE ========= -->
+<section class="cita" aria-labelledby="t-cita">
+  <div class="cita__foto" aria-hidden="true">
+    <img src="imagenes/cita-01.jpg" width="2200" height="1467"
+         loading="lazy" decoding="async" alt="">
+  </div>
+  <blockquote class="cita__texto">
+    <p id="t-cita">«¿A qué hora lo paso a buscar?»<br>
+      <span class="cita__eco">Veinte veces al día, siempre la misma.</span></p>
+  </blockquote>
+</section>
+
+
+
+<!-- ========= TAJO — FRANJA A SANGRE ========= -->
+<div class="tajo" aria-hidden="true">
+  <img src="imagenes/banda-01.jpg" width="1100" height="618"
+       loading="lazy" decoding="async" alt="">
+</div>
+<section class="cierre" id="llamar" aria-labelledby="t-cierre">
+  <p class="cierre__rot">Para reservar hora</p>
+  <h2 id="t-cierre" class="cierre__tel">
+    <a href="tel:+56632213223">(63) 221 3223</a>
+  </h2>
+  <p class="cierre__pie">Es el número publicado en su ficha de Google.</p>
+</section>
+
+<!-- ========= LA TIRA ========= -->
+<section class="tira" aria-label="Tres momentos de una peluquería canina">
+  <figure class="tira__pieza">
+    <img src="imagenes/tira-01.jpg" width="1100" height="618" loading="lazy" decoding="async"
+         alt="Tijera despejando el pelo de las patas de un perro sobre la mesa de trabajo.">
+  </figure>
+  <figure class="tira__pieza">
+    <img src="imagenes/tira-02.jpg" width="1100" height="618" loading="lazy" decoding="async"
+         alt="Corte de uñas a un perro, sujetando la pata con las dos manos.">
+  </figure>
+  <figure class="tira__pieza">
+    <img src="imagenes/tirab-01.jpg" width="1100" height="733" loading="lazy" decoding="async"
+         alt="Vacunación en la pata delantera de un perro, con guantes.">
+  </figure>
+</section>
+
+<!-- ========= LAS FOTOS ========= -->
+<section class="galeria" aria-labelledby="t-galeria">
+  <h2 id="t-galeria" class="galeria__titulo">En la camilla</h2>
+  <p class="galeria__nota">Fotos publicadas por la propia clínica. En las dos se ve el logo pegado en la pared del box: es su sala, no una foto prestada.</p>
+  <div class="galeria__grilla">
+    <figure class="gal gal--abajo">
+      <img src="imagenes/consulta-02.jpg" width="1050" height="1400" loading="lazy" decoding="async"
+           alt="Gato con chaleco sobre la camilla de consulta, con el logo de la clínica en la pared.">
+      <figcaption>Un paciente esperando su turno, con chaleco puesto.</figcaption>
+    </figure>
+  </div>
+  <p class="galeria__falta">falta: la fachada con el letrero y una del mesón de recepción. Y la foto de la balanza con el peso a la vista — es el dato que el dueño quiere anotar.</p>
+</section>
+
+</main>
+
+
+
+<!-- ========= MOSAICO ========= -->
+<section class="mos" aria-labelledby="t-mos">
+  <h2 id="t-mos" class="mos__titulo">La misma serie, más de cerca</h2>
+  <p class="mos__nota">Estas seis ya aparecen más arriba en la página. Vuelven acá en otro tamaño porque una sola pasada de imágenes deja el scroll vacío, y porque de cerca se ven cosas que en grande se pierden. La procedencia de cada una está en imagenes/FUENTES.txt.</p>
+  <div class="mos__grilla">
+    <figure class="mos__p">
+      <img src="imagenes/mos-01.jpg" width="780" height="520"
+           loading="lazy" decoding="async" alt="">
+    </figure>
+    <figure class="mos__p">
+      <img src="imagenes/mos-02.jpg" width="780" height="520"
+           loading="lazy" decoding="async" alt="">
+    </figure>
+    <figure class="mos__p">
+      <img src="imagenes/mos-03.jpg" width="780" height="438"
+           loading="lazy" decoding="async" alt="">
+    </figure>
+    <figure class="mos__p">
+      <img src="imagenes/mos-04.jpg" width="780" height="438"
+           loading="lazy" decoding="async" alt="">
+    </figure>
+    <figure class="mos__p">
+      <img src="imagenes/mos-05.jpg" width="780" height="521"
+           loading="lazy" decoding="async" alt="">
+    </figure>
+    <figure class="mos__p">
+      <img src="imagenes/consulta-01.jpg" width="1120" height="1400"
+           loading="lazy" decoding="async" alt="">
+    </figure>
+  </div>
+</section>
+<section class="dueno" aria-labelledby="t-dueno">
+  <h2 id="t-dueno">Para la clínica</h2>
+  <div class="dueno__cols">
+    <div>
+      <h3>Lo que está verificado</h3>
+      <p>El 4,7 con 106 reseñas de su ficha de Google y el teléfono (63) 221 3223.
+        No tienen página propia.</p>
+    </div>
+    <div>
+      <h3>Lo que es de ejemplo</h3>
+      <p>Las cuatro duraciones y el tablero completo. Las duraciones son referencias
+        generales del oficio y el tablero es una idea: ninguno de esos nombres ni
+        esas horas existe.</p>
+    </div>
+    <div>
+      <h3>Lo que falta</h3>
+      <p>Las duraciones reales de cada tamaño y cómo manejan los nudos. Con eso solo,
+        dejan de recibir la llamada de «¿a qué hora lo paso a buscar?» — que según
+        cualquier peluquería es la mitad de las llamadas del día.</p>
+    </div>
+  </div>
+  <p class="dueno__cierre">
+    <a class="flecha" href="https://wa.me/56968650001" rel="noopener">Escribirme por WhatsApp <span aria-hidden="true">→</span></a>
+    <a class="flecha" href="../../" rel="noopener">Ver otros trabajos <span aria-hidden="true">→</span></a>
+  </p>
+</section>
+
+<footer class="pie">
+  <p>Sitio de demostración preparado por CristalWeb. El negocio no lo ha encargado
+    ni ha revisado su contenido. Las duraciones y el tablero son ejemplos: ninguna
+    hora, nombre o estado corresponde a datos reales. Esta página no atribuye ningún
+    efecto clínico a los servicios de baño y peluquería.</p>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>

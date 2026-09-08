@@ -1,0 +1,14 @@
+﻿FUENTES DE LAS IMAGENES - ferreteria-el-penon-puente-alto Bancos libres; procesadas con preparar-lote.ps1 (JPEG, ancho y calidad por tratamiento). 
+port-01.jpg  <=  mixkit | Mixkit Stock Video Free License | Mixkit | https://mixkit.co/free-stock-video/ | https://assets.mixkit.co/videos/34741/34741-720.mp4
+mit-01.jpg  <=  pexels | Pexels License | cottonbro studio | https://www.pexels.com/es-es/foto/herramientas-llave-inglesa-dispositivo-materiales-7019373/ | https://images.pexels.com/photos/7019373/pexels-photo-7019373.jpeg
+cita-01.jpg  <=  mixkit | Mixkit Stock Video Free License | Mixkit | https://mixkit.co/free-stock-video/ | https://assets.mixkit.co/videos/32822/32822-720.mp4
+tajo-01.jpg  <=  pexels | Pexels License | Moussa Idrissi | https://www.pexels.com/es-es/foto/herramientas-martillo-tornillo-atornillar-15360461/ | https://images.pexels.com/photos/15360461/pexels-photo-15360461.jpeg
+telon-01.jpg  <=  pexels | Pexels License | Miguel Á. Padriñán | https://www.pexels.com/es-es/foto/blanco-y-negro-pared-muro-herramientas-16679581/ | https://images.pexels.com/photos/16679581/pexels-photo-16679581.jpeg
+mos1-01.jpg  <=  pexels | Pexels License | Miguel Á. Padriñán | https://www.pexels.com/es-es/foto/blanco-y-negro-oscuro-fila-hilera-16679582/ | https://images.pexels.com/photos/16679582/pexels-photo-16679582.jpeg | recorte 3:2
+mos2-01.jpg  <=  pexels | Pexels License | cottonbro studio | https://www.pexels.com/es-es/foto/herramientas-martillo-conjunto-objetos-7019367/ | https://images.pexels.com/photos/7019367/pexels-photo-7019367.jpeg | recorte 3:2
+mos3-01.jpg  <=  pexels | Pexels License | Joaquin Reyes Ramos | https://www.pexels.com/es-es/foto/variedad-de-sujetadores-en-cajas-de-almacenamiento-38575500/ | https://images.pexels.com/photos/38575500/pexels-photo-38575500.jpeg | recorte 3:2
+mos4-01.jpg  <=  pexels | Pexels License | Jorge Urosa | https://www.pexels.com/es-es/foto/tornillos-tornillos-de-rosca-vueltas-vista-superior-9131071/ | https://images.pexels.com/photos/9131071/pexels-photo-9131071.jpeg | recorte 3:2
+mos5-01.jpg  <=  pexels | Pexels License | Miguel Á. Padriñán | https://www.pexels.com/es-es/foto/blanco-y-negro-herramientas-colgando-taller-16679590/ | https://images.pexels.com/photos/16679590/pexels-photo-16679590.jpeg | recorte 3:2
+mos6-01.jpg  <=  pexels | Pexels License | Miguel Á. Padriñán | https://www.pexels.com/es-es/foto/blanco-y-negro-herramientas-escama-balanza-16679589/ | https://images.pexels.com/photos/16679589/pexels-photo-16679589.jpeg | recorte 3:2
+video/port.mp4  <=  mixkit | Mixkit Stock Video Free License | mixkit 34741 | https://mixkit.co/free-stock-video/ | https://assets.mixkit.co/videos/34741/34741-720.mp4 | 1,0-10,0 s, 720p sin audio
+video/cita.mp4  <=  mixkit | Mixkit Stock Video Free License | mixkit 32822 | https://mixkit.co/free-stock-video/ | https://assets.mixkit.co/videos/32822/32822-720.mp4 | 0,5-8,5 s, 576p sin audio

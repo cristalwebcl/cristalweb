@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="es-CL" class="no-js">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Veterinaria Sokimu — Villarrica</title>
+<meta name="description" content="Veterinaria con farmacia en Villarrica. Qué se compra directo y qué necesita receta o consulta previa.">
+
+<!-- Política de seguridad de contenido: el navegador sólo puede cargar
+     archivos de este mismo sitio. Sin CDN, sin librerías, sin rastreadores.
+     Ver skills/web-blindada/references/csp-en-pages.md -->
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self'; img-src 'self' data:; font-src 'self'; connect-src 'self'; media-src 'self'; form-action 'self'; base-uri 'none'; frame-src 'none'; object-src 'none'">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+
+<!-- Rescate de la clase .js (regla 2 de la casa). En archivo, sin defer:
+     inline lo bloquearía la CSP. -->
+<script src="js/rescate.js"></script>
+
+<!-- Fuentes propias: cero peticiones a terceros. El preload va SOLO
+     para la display, que es la del titular de la portada. -->
+<link rel="preload" href="assets/fuentes/marhey-var-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="assets/fuentes.css">
+<link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+
+<div class="propuesta">
+  <p class="propuesta__que">Propuesta de sitio web — preparada para <b>Veterinaria Sokimu</b> por CristalWeb</p>
+  <p class="propuesta__gancho">150 reseñas con 4,7 y tienen farmacia veterinaria. Nadie sabe qué se puede comprar ahí sin pasar antes por una consulta.</p>
+</div>
+
+<header class="cab" id="cab">
+  <a class="cab__marca" href="#portada">
+    <span class="collar" aria-hidden="true"><i></i></span>
+    <span class="cab__nombre">Sokimu</span>
+  </a>
+  <nav class="cab__nav" aria-label="Secciones">
+    <a href="#farmacia">La farmacia</a>
+    <a href="#dosis">La dosis</a>
+  </nav>
+  <a class="cab__tel" href="tel:+56992191529">
+    <span class="cab__tel-rot">Villarrica</span>
+    <span class="cab__tel-num">9 9219 1529</span>
+  </a>
+</header>
+
+<main>
+
+<!-- ========= PORTADA ========= -->
+<section class="portada portada--foto" id="portada" aria-labelledby="t-portada">
+  <!-- FONDO DE PORTADA: 2560 px, nitido. Se disuelve hacia el titular
+       con un gradiente lateral, no con desenfoque. -->
+  <div class="portada__foto" aria-hidden="true">
+    <img src="imagenes/port-01.jpg" width="2560" height="1707"
+         decoding="async" fetchpriority="high" alt="">
+  </div>
+
+  <div class="portada__texto">
+    <p class="sitio">Veterinaria y farmacia · Villarrica</p>
+    <h1 id="t-portada">¿Tengo que pedir<br>hora o me lo<br>venden y listo?</h1>
+    <p class="bajada">Es la duda de todo el que necesita algo para su animal un
+      sábado a mediodía. Tener farmacia veterinaria es una ventaja enorme sobre
+      cualquier otra veterinaria de Villarrica — y hoy nadie sabe qué se puede
+      comprar directo.</p>
+    <dl class="specs">
+      <div class="spec"><dt>nota en Google</dt><dd>4,7</dd></div>
+      <div class="spec"><dt>reseñas</dt><dd>150</dd></div>
+      <div class="spec"><dt>teléfono</dt><dd class="dd--tel"><a href="tel:+56992191529">9 9219 1529</a></dd></div>
+    </dl>
+  </div>
+</section>
+
+<!-- ========= LA PIEZA FIRMA — ESTRUCTURA K ========= -->
+<section class="farmacia con-telon" id="farmacia" aria-labelledby="t-farmacia">
+  <div class="telon" aria-hidden="true">
+    <img src="imagenes/telon-01.jpg" width="1200" height="800" decoding="async" alt="">
+  </div>
+
+  <!-- AURA DE COLOR: la foto de rubro reventada a desenfoque. No se lee
+       como imagen: aporta color y luz detras de una seccion que si no
+       seria fondo plano. Aca el desenfoque SI es el efecto, no un parche,
+       y por eso el archivo va chico: a 64 px de blur, mas resolucion no
+       cambia nada. Sin loading=lazy porque el elemento va en absoluto con
+       z-index negativo y el navegador nunca lo considera visible. -->
+  <div class="aura" aria-hidden="true">
+    <img src="imagenes/aura-01.jpg" width="900" height="600" decoding="async" alt="">
+  </div>
+
+  <div class="farmacia__cabecera">
+    <p class="antetitulo">Antes de venir</p>
+    <h2 id="t-farmacia">Con receta<br>o sin receta</h2>
+    <p class="entrada">Una fila por categoría. La chapita de la derecha dice si eso
+      se lleva directo o si requiere que el animal pase por consulta. Se abre la fila
+      para leer por qué.</p>
+
+    <div class="aviso-fuerte">
+      <p><b>Clasificación de ejemplo.</b> Las categorías son las generales del rubro
+        y están puestas para mostrar la forma de la sección. <b>Cuál va en cada
+        columna lo define la veterinaria</b>, que es quien conoce la normativa
+        vigente y responde por ella. Esta página no reemplaza esa firma.</p>
+    </div>
+
+    <ul class="leyenda">
+      <li><span class="chapita chapita--directa" aria-hidden="true"></span> se lleva directo</li>
+      <li><span class="chapita chapita--receta" aria-hidden="true"></span> requiere receta o consulta</li>
+    </ul>
+  </div>
+
+  <ol class="filas">
+
+    <li>
+      <details class="fila">
+        <summary>
+          <span class="fila__n">Antiparasitarios externos</span>
+          <span class="fila__e chapita chapita--directa">venta directa</span>
+        </summary>
+        <div class="fila__cuerpo">
+          <p>Lo que se usa para pulgas y garrapatas. Suele llevarse directo, pero el
+            producto correcto depende del peso del animal y de su edad — que es
+            exactamente por lo que conviene preguntar en el mesón aunque no haga
+            falta consulta.</p>
+          <p class="fila__falta"><span class="falta">falta: confirmar el criterio de
+            la veterinaria</span></p>
+        </div>
+      </details>
+    </li>
+
+    <li>
+      <details class="fila">
+        <summary>
+          <span class="fila__n">Desparasitantes internos</span>
+          <span class="fila__e chapita chapita--directa">venta directa</span>
+        </summary>
+        <div class="fila__cuerpo">
+          <p>Los de uso habitual, para la desparasitación de rutina. Acá el peso
+            manda más que en ninguna otra categoría: el mismo producto sirve para un
+            gato y para un perro grande en cantidades muy distintas.</p>
+          <p class="fila__falta"><span class="falta">falta: confirmar</span></p>
+        </div>
+      </details>
+    </li>
+
+    <li>
+      <details class="fila">
+        <summary>
+          <span class="fila__n">Alimento y dietas veterinarias</span>
+          <span class="fila__e chapita chapita--receta">receta o consulta</span>
+        </summary>
+        <div class="fila__cuerpo">
+          <p>Los alimentos formulados para una condición específica —renal,
+            digestiva, control de peso— no son comida premium: son parte de un
+            tratamiento. Por eso normalmente los indica el veterinario después de
+            revisar al animal.</p>
+          <p class="fila__falta"><span class="falta">falta: confirmar cuáles
+            trabajan y bajo qué condición</span></p>
+        </div>
+      </details>
+    </li>
+
+    <li>
+      <details class="fila">
+        <summary>
+          <span class="fila__n">Antibióticos</span>
+          <span class="fila__e chapita chapita--receta">receta o consulta</span>
+        </summary>
+        <div class="fila__cuerpo">
+          <p>No se venden sin indicación profesional, y no es burocracia: un
+            antibiótico mal elegido o mal terminado deja al animal peor y contribuye
+            a que después ninguno funcione. Es la categoría donde la respuesta «hay
+            que verlo primero» es la correcta.</p>
+          <p class="fila__falta"><span class="falta">falta: confirmar</span></p>
+        </div>
+      </details>
+    </li>
+
+    <li>
+      <details class="fila">
+        <summary>
+          <span class="fila__n">Antiinflamatorios y analgésicos</span>
+          <span class="fila__e chapita chapita--receta">receta o consulta</span>
+        </summary>
+        <div class="fila__cuerpo">
+          <p>Es donde más daño hace la automedicación: varios de los que hay en
+            cualquier botiquín de casa son tóxicos para perros y gatos, y algunos lo
+            son gravemente. Nunca se le da a un animal algo del botiquín humano sin
+            preguntar.</p>
+          <p class="fila__falta"><span class="falta">falta: confirmar</span></p>
+        </div>
+      </details>
+    </li>
+
+    <li>
+      <details class="fila">
+        <summary>
+          <span class="fila__n">Vacunas</span>
+          <span class="fila__e chapita chapita--receta">se aplican en consulta</span>
+        </summary>
+        <div class="fila__cuerpo">
+          <p>No se llevan para poner en la casa: se aplican en el local, con el
+            animal revisado antes y su registro anotado. Ese registro es lo que
+            después sirve para viajar, para una residencia o para una peluquería.</p>
+          <p class="fila__falta"><span class="falta">falta: confirmar cuáles ponen y
+            si hay que pedir hora</span></p>
+        </div>
+      </details>
+    </li>
+
+    <li>
+      <details class="fila">
+        <summary>
+          <span class="fila__n">Accesorios, higiene y suplementos</span>
+          <span class="fila__e chapita chapita--directa">venta directa</span>
+        </summary>
+        <div class="fila__cuerpo">
+          <p>Collares, correas, shampoo común, arena, juguetes, vitaminas de uso
+            general. Es lo que más se busca un sábado y lo que menos aparece
+            publicado. Decir que existe ya cambia el flujo de gente que entra.</p>
+          <p class="fila__falta"><span class="falta">falta: confirmar qué manejan</span></p>
+        </div>
+      </details>
+    </li>
+
+  </ol>
+
+  <p class="firma">Ninguna fila nombra un producto, una marca ni un principio activo,
+    y ninguna dice una cantidad. Eso no es un hueco de la página: es que esa
+    información la da un profesional mirando al animal, y ponerla en internet sería
+    exactamente lo contrario de ayudar.</p>
+</section>
+
+<!-- ========= LA DOSIS NO SE ADIVINA ========= -->
+<!-- ========= MEDIA PANTALLA ========= -->
+<section class="mitades" aria-labelledby="t-mitades">
+  <div class="mitades__foto">
+    <img src="imagenes/media-01.jpg" width="2200" height="1467"
+         loading="lazy" decoding="async" alt="">
+  </div>
+  <div class="mitades__texto">
+    <p class="mitades__ante">Por qué se pregunta el peso</p>
+    <h2 id="t-mitades">La dosis no se calcula por tamaño: se calcula por kilo</h2>
+    <p>Dos perros que parecen iguales pueden pesar ocho kilos de diferencia, y en un antiparasitario eso es media pastilla de más o de menos. Por eso lo primero que pregunta el mesón no es la raza sino el peso — y por eso conviene llegar sabiéndolo, o pesarlo ahí antes de comprar nada.</p>
+  </div>
+</section>
+
+<section class="dosis" id="dosis" aria-labelledby="t-dosis">
+  <div class="dosis__cuerpo">
+    <p class="antetitulo antetitulo--claro">Lo que más consultas evita</p>
+    <h2 id="t-dosis">La dosis<br>no se adivina</h2>
+    <p class="entrada">Casi todo lo que se le da a un animal se calcula por su peso.
+      No por su tamaño aparente, no por su raza y no por lo que le sirvió al perro
+      del vecino: por sus kilos, medidos.</p>
+
+    <ul class="razones">
+      <li>
+        <p class="razon__t">Dos animales del mismo porte pueden pesar muy distinto</p>
+        <p class="razon__d">Y la diferencia entre lo que necesita uno y otro no es un
+          detalle. Por eso lo primero que hace cualquier veterinaria es subir al
+          animal a la pesa.</p>
+      </li>
+      <li>
+        <p class="razon__t">Los cachorros cambian de peso todo el tiempo</p>
+        <p class="razon__d">Lo que correspondía hace dos meses ya no corresponde. Es
+          la causa más común de que una desparasitación no funcione.</p>
+      </li>
+      <li>
+        <p class="razon__t">Los gatos no son perros chicos</p>
+        <p class="razon__d">Metabolizan distinto, y hay cosas perfectamente seguras
+          para un perro que a un gato le hacen daño. Es el error casero más
+          frecuente y el más grave.</p>
+      </li>
+      <li>
+        <p class="razon__t">El botiquín de la casa no sirve</p>
+        <p class="razon__d">Varios medicamentos humanos de uso común son tóxicos para
+          perros y gatos. Ante cualquier duda, la respuesta es preguntar antes, no
+          después.</p>
+      </li>
+    </ul>
+
+    <div class="ojo">
+      <p><b>Esta página no da ninguna indicación de tratamiento.</b> No hay una sola
+        cantidad, un solo intervalo ni un solo nombre de producto escrito acá, y no
+        los va a haber. Lo que hay es la razón por la que conviene preguntar — y un
+        teléfono para hacerlo.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ========= EL CIERRE — T1 ========= -->
+<!-- ========= LA CITA A SANGRE ========= -->
+<section class="cita" aria-labelledby="t-cita">
+  <div class="cita__foto" aria-hidden="true">
+    <img src="imagenes/cita-01.jpg" width="2200" height="1467"
+         loading="lazy" decoding="async" alt="">
+  </div>
+  <blockquote class="cita__texto">
+    <p id="t-cita">Tienen farmacia, y nadie lo sabe<br>
+      <span class="cita__eco">Qué se compra sin receta y qué necesita consulta</span></p>
+  </blockquote>
+</section>
+
+
+
+<!-- ========= TAJO — FRANJA A SANGRE ========= -->
+<div class="tajo" aria-hidden="true">
+  <img src="imagenes/banda-01.jpg" width="1100" height="733"
+       loading="lazy" decoding="async" alt="">
+</div>
+<section class="cierre" id="llamar" aria-labelledby="t-cierre">
+  <p class="cierre__rot">Para preguntar antes de venir</p>
+  <h2 id="t-cierre" class="cierre__tel">
+    <a href="tel:+56992191529">9 9219 1529</a>
+  </h2>
+  <p class="cierre__pie">Es el número publicado en su ficha de Google. Una llamada
+    de dos minutos antes de venir evita el viaje en vano — y es la única forma de
+    saber si lo que necesita se lleva directo.</p>
+</section>
+
+<!-- ========= LA TIRA ========= -->
+<section class="tira" aria-label="Tres imágenes del oficio">
+  <figure class="tira__pieza">
+    <img src="imagenes/tira-01.jpg" width="1100" height="733" loading="lazy" decoding="async" alt="Blísters de comprimidos ordenados.">
+  </figure>
+  <figure class="tira__pieza">
+    <img src="imagenes/tira-02.jpg" width="1100" height="733" loading="lazy" decoding="async" alt="Comprimidos sueltos sobre una superficie lisa.">
+  </figure>
+  <figure class="tira__pieza">
+    <img src="imagenes/tirab-01.jpg" width="1100" height="1467" loading="lazy" decoding="async" alt="Profesional atendiendo tras el mesón de una farmacia.">
+  </figure>
+</section>
+
+</main>
+
+
+
+<!-- ========= MOSAICO ========= -->
+<section class="mos" aria-labelledby="t-mos">
+  <h2 id="t-mos" class="mos__titulo">La misma serie, más de cerca</h2>
+  <p class="mos__nota">Estas seis ya aparecen más arriba en la página. Vuelven acá en otro tamaño porque una sola pasada de imágenes deja el scroll vacío, y porque de cerca se ven cosas que en grande se pierden. La procedencia de cada una está en imagenes/FUENTES.txt.</p>
+  <div class="mos__grilla">
+    <figure class="mos__p">
+      <img src="imagenes/mos-01.jpg" width="780" height="520"
+           loading="lazy" decoding="async" alt="">
+    </figure>
+    <figure class="mos__p">
+      <img src="imagenes/mos-02.jpg" width="780" height="1040"
+           loading="lazy" decoding="async" alt="">
+    </figure>
+    <figure class="mos__p">
+      <img src="imagenes/mos-03.jpg" width="780" height="520"
+           loading="lazy" decoding="async" alt="">
+    </figure>
+    <figure class="mos__p">
+      <img src="imagenes/mos-04.jpg" width="780" height="520"
+           loading="lazy" decoding="async" alt="">
+    </figure>
+    <figure class="mos__p">
+      <img src="imagenes/mos-05.jpg" width="780" height="520"
+           loading="lazy" decoding="async" alt="">
+    </figure>
+    <figure class="mos__p">
+      <img src="imagenes/mos-06.jpg" width="780" height="520"
+           loading="lazy" decoding="async" alt="">
+    </figure>
+  </div>
+</section>
+<section class="dueno" aria-labelledby="t-dueno">
+  <h2 id="t-dueno">Para la veterinaria</h2>
+  <div class="dueno__cols">
+    <div>
+      <h3>Lo que está verificado</h3>
+      <p>El 4,7 con 150 reseñas de su ficha de Google, el teléfono 9 9219 1529, y
+        que tienen farmacia veterinaria. No hay página propia.</p>
+    </div>
+    <div>
+      <h3>Lo que no escribí</h3>
+      <p>Ninguna marca, ningún principio activo y ninguna dosis. Tampoco afirmo qué
+        exige receta según la normativa vigente: eso lo firma ustedes. La página está
+        armada para que esa clasificación se pueda poner y cambiar en un minuto.</p>
+    </div>
+    <div>
+      <h3>Lo que falta</h3>
+      <p>La clasificación revisada, el horario y la dirección. Con la clasificación
+        sola, dejan de recibir gente que viene por algo que no pueden venderle y
+        empiezan a recibir a la que hoy no sabe que sí.</p>
+    </div>
+  </div>
+  <p class="dueno__cierre">
+    <a class="flecha" href="https://wa.me/56968650001" rel="noopener">Escribirme por WhatsApp <span aria-hidden="true">→</span></a>
+    <a class="flecha" href="../../" rel="noopener">Ver otros trabajos <span aria-hidden="true">→</span></a>
+  </p>
+</section>
+
+<footer class="pie">
+  <p><b>Esta página no entrega orientación veterinaria.</b> Las categorías son
+    generales del rubro y no reemplazan la evaluación de un profesional. No se
+    nombran productos, principios activos ni cantidades, y la clasificación entre
+    venta directa y receta la define la veterinaria según la normativa vigente. Ante
+    cualquier síntoma, consulte.</p>
+  <p class="pie__demo">Sitio de demostración preparado por CristalWeb. El negocio no
+    lo ha encargado ni ha revisado su contenido.</p>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>

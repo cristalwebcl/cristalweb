@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="es-CL" class="no-js">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Cabañas Antu Kuyen — Villarrica</title>
+<meta name="description" content="Cabañas en Villarrica. Quedarse una semana y trabajar desde acá, y cómo se usa la cabaña de la mañana a la noche.">
+
+<!-- Política de seguridad de contenido: el navegador sólo puede cargar
+     archivos de este mismo sitio. Sin CDN, sin librerías, sin rastreadores.
+     Ver skills/web-blindada/references/csp-en-pages.md -->
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self'; img-src 'self' data:; font-src 'self'; connect-src 'self'; media-src 'self'; form-action 'self'; base-uri 'none'; frame-src 'none'; object-src 'none'">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+
+<!-- Rescate de la clase .js (regla 2 de la casa). En archivo, sin defer:
+     inline lo bloquearía la CSP. -->
+<script src="js/rescate.js"></script>
+
+<!-- Fuentes propias: cero peticiones a terceros. El preload va SOLO
+     para la display, que es la del titular de la portada. -->
+<link rel="preload" href="assets/fuentes/poiretone-400-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="assets/fuentes.css">
+<link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+
+<div class="propuesta">
+  <p class="propuesta__que">Propuesta de sitio web — preparada para <b>Cabañas Antu Kuyen</b> por CristalWeb</p>
+  <p class="propuesta__gancho">77 reseñas en Villarrica, que es donde más se arrienda por internet en toda la zona. La competencia con página nueva se lleva la reserva.</p>
+</div>
+
+<header class="cab" id="cab">
+  <a class="cab__marca" href="#portada">
+    <span class="interruptor" aria-hidden="true"></span>
+    <span class="cab__nombre">Antu Kuyen</span>
+  </a>
+  <nav class="cab__nav" aria-label="Secciones">
+    <a href="#trabajar">Trabajar acá</a>
+    <a href="#dia">El día completo</a>
+  </nav>
+  <a class="cab__tel" href="tel:+56452415345">
+    <span class="cab__tel-rot">Villarrica</span>
+    <span class="cab__tel-num">+56 45 241 5345</span>
+  </a>
+</header>
+
+<main>
+
+<!-- ══════ ESCALÓN 1 · la mañana ══════ -->
+<section class="e1 portada portada--foto" id="portada" aria-labelledby="t-portada">
+  <!-- FONDO DE PORTADA: 2560 px, nitido. Se disuelve hacia el titular
+       con un gradiente lateral, no con desenfoque. -->
+  <div class="portada__foto" aria-hidden="true">
+    <img src="imagenes/port-01.jpg" width="2560" height="1707"
+         decoding="async" fetchpriority="high" alt="">
+  </div>
+
+  <div class="portada__texto">
+    <p class="sitio">Cabañas · Villarrica</p>
+    <h1 id="t-portada">Quedarse<br>toda la semana</h1>
+    <p class="bajada">Casi todas las cabañas se venden para el fin de semana largo.
+      Hay otro cliente, que paga mejor y molesta menos: el que se queda siete días
+      seguidos porque puede trabajar desde acá. A ése nadie le habla.</p>
+    <dl class="specs">
+      <div class="spec"><dt>reseñas en Google</dt><dd>77</dd></div>
+      <div class="spec"><dt>teléfono</dt><dd class="dd--tel"><a href="tel:+56452415345">+56 45 241 5345</a></dd></div>
+    </dl>
+    <p class="aviso-luz">Esta página va oscureciendo a medida que se baja: empieza a
+      las ocho de la mañana y termina a las once de la noche.</p>
+  </div>
+</section>
+
+<!-- ══════ ESCALÓN 2 · LA PIEZA FIRMA ══════ -->
+<section class="e2 trabajar con-telon" id="trabajar" aria-labelledby="t-trabajar">
+  <div class="telon" aria-hidden="true">
+    <img src="imagenes/telon-01.jpg" width="1200" height="800" decoding="async" alt="">
+  </div>
+
+  <!-- AURA DE COLOR: la foto de rubro reventada a desenfoque. No se lee
+       como imagen: aporta color y luz detras de una seccion que si no
+       seria fondo plano. Aca el desenfoque SI es el efecto, no un parche,
+       y por eso el archivo va chico: a 64 px de blur, mas resolucion no
+       cambia nada. Sin loading=lazy porque el elemento va en absoluto con
+       z-index negativo y el navegador nunca lo considera visible. -->
+  <div class="aura" aria-hidden="true">
+    <img src="imagenes/aura-01.jpg" width="900" height="600" decoding="async" alt="">
+  </div>
+
+  <div class="bloque">
+    <p class="antetitulo">El huésped del que nadie habla</p>
+    <h2 id="t-trabajar">Una semana<br>trabajando desde acá</h2>
+    <p class="entrada">La pregunta es corta y no la contesta ninguna cabaña de la
+      zona: <em>¿puedo quedarme la semana y trabajar?</em> Quien la hace ya decidió
+      venir; sólo necesita saber si va a poder cumplir. Y si nadie le responde,
+      arrienda en otra parte.</p>
+    <p class="marca-ejemplo" data-ejemplo="Las preguntas son las reales — las respuestas las pone el local"></p>
+
+    <ol class="chk">
+      <li class="ck">
+        <p class="ck__q">¿Hay una mesa de verdad?</p>
+        <p class="ck__a"><span class="falta">falta: confirmar</span></p>
+        <p class="ck__pq">No la mesa de comer con el mantel puesto: una superficie
+          donde quepa un notebook y un cuaderno y que se pueda dejar armada toda la
+          semana. Es la primera pregunta y la que más veces se contesta mal.</p>
+      </li>
+      <li class="ck">
+        <p class="ck__q">¿La silla aguanta ocho horas?</p>
+        <p class="ck__a"><span class="falta">falta: confirmar</span></p>
+        <p class="ck__pq">Una silla de terraza está bien para almorzar y es un
+          suplicio para trabajar. Si hay una silla con respaldo firme, eso se dice —
+          y si no la hay, también.</p>
+      </li>
+      <li class="ck">
+        <p class="ck__q">¿Hay enchufes cerca de esa mesa?</p>
+        <p class="ck__a"><span class="falta">falta: cuántos y dónde</span></p>
+        <p class="ck__pq">Dos enchufes al lado de la mesa valen más que diez
+          repartidos por la cabaña. Es un detalle de un minuto que decide una
+          reserva de siete noches.</p>
+      </li>
+      <li class="ck">
+        <p class="ck__q">¿Cómo es la señal y el internet?</p>
+        <p class="ck__a"><span class="falta">falta: y no lo voy a inventar</span></p>
+        <p class="ck__pq"><b>Este dato no lo puedo poner yo por ninguna razón.</b>
+          Publicar una velocidad que no es termina en una discusión el primer día y
+          en una reseña de una estrella el último. Lo que sí conviene: medirlo una
+          vez, escribir el número real, y decir además qué compañía tiene señal acá.</p>
+      </li>
+      <li class="ck">
+        <p class="ck__q">¿Se puede hacer una videollamada sin ruido?</p>
+        <p class="ck__a"><span class="falta">falta: confirmar</span></p>
+        <p class="ck__pq">Si las cabañas están pegadas o pasa gente por fuera, hay
+          que decirlo. Y si hay un rincón tranquilo, decirlo vale doble.</p>
+      </li>
+      <li class="ck">
+        <p class="ck__q">¿Hay tarifa por semana o por mes?</p>
+        <p class="ck__a"><span class="falta">falta: la tarifa</span></p>
+        <p class="ck__pq">Siete noches seguidas fuera de temporada valen más que dos
+          fines de semana, y el que se queda un mes es el mejor cliente que puede
+          tener una cabaña. Una tarifa escrita para esa estadía atrae exactamente a
+          ese huésped.</p>
+      </li>
+    </ol>
+
+    <p class="firma">Seis respuestas cortas. Ninguna cuesta plata y las seis juntas
+      abren un mercado —el que trabaja a distancia— que en Villarrica todavía no
+      atiende nadie por escrito.</p>
+  </div>
+</section>
+
+<!-- ══════ ESCALÓN 2 · CAPÍTULO 08 ══════ -->
+<!-- ========= MEDIA PANTALLA ========= -->
+<section class="mitades" aria-labelledby="t-mitades">
+  <div class="mitades__foto">
+    <img src="imagenes/media-01.jpg" width="1500" height="1500"
+         loading="lazy" decoding="async" alt="">
+  </div>
+  <div class="mitades__texto">
+    <p class="mitades__ante">La foto que contesta antes de la pregunta</p>
+    <h2 id="t-mitades">La terraza cubierta: mesa, enchufe y techo</h2>
+    <p>Quien se queda una semana no trabaja en la cama: trabaja en una mesa, con luz y con dónde enchufar. Esta terraza tiene las tres cosas y además techo, que en Villarrica no es un detalle. Publicar esta foto con esas palabras hace más que cualquier promoción: contesta la pregunta que el que arrienda largo se hace y no se atreve a escribir por WhatsApp.</p>
+  </div>
+</section>
+
+<section class="e2 cap" id="dia" aria-labelledby="t-08">
+  <p class="cap__h" aria-hidden="true">08</p>
+  <div class="cap__cuerpo">
+    <p class="antetitulo">El día completo, hora por hora</p>
+    <h2 id="t-08">La mañana</h2>
+    <p>A las ocho la cabaña recibe la primera luz y ésa es la hora en que se decide
+      cómo va a ser el día: si hay dónde tomar desayuno mirando afuera, o si hay que
+      resolverlo de pie en la cocina.</p>
+    <dl class="huecos">
+      <div class="hueco"><dt>Por dónde entra el sol en la mañana</dt><dd><span class="falta">falta</span></dd></div>
+      <div class="hueco"><dt>Si hay dónde desayunar mirando afuera</dt><dd><span class="falta">falta</span></dd></div>
+      <div class="hueco"><dt>Dónde se compra pan temprano</dt><dd><span class="falta">falta</span></dd></div>
+    </dl>
+  </div>
+</section>
+
+<!-- ══════ ESCALÓN 3 · CAPÍTULO 13 ══════ -->
+<section class="e3 cap" aria-labelledby="t-13">
+  <p class="cap__h" aria-hidden="true">13</p>
+  <div class="cap__cuerpo">
+    <h2 id="t-13">El mediodía</h2>
+    <p>La hora que separa una cabaña que sirve para quedarse de una que sirve para
+      dormir. Si se puede cocinar bien, la semana completa es viable; si no, son siete
+      almuerzos afuera y la cuenta cambia.</p>
+    <dl class="huecos">
+      <div class="hueco"><dt>Qué hay en la cocina de verdad</dt><dd><span class="falta">falta: la lista corta</span></dd></div>
+      <div class="hueco"><dt>Dónde se hace la compra grande</dt><dd><span class="falta">falta</span></dd></div>
+      <div class="hueco"><dt>Si hay parrilla y si se puede usar</dt><dd><span class="falta">falta</span></dd></div>
+    </dl>
+  </div>
+</section>
+
+<!-- ══════ ESCALÓN 4 · CAPÍTULO 18 ══════ -->
+<section class="e4 cap" aria-labelledby="t-18">
+  <p class="cap__h" aria-hidden="true">18</p>
+  <div class="cap__cuerpo">
+    <h2 id="t-18">La tarde</h2>
+    <p>Se cierra el computador y empieza la parte por la que uno viene. En invierno a
+      esta hora ya está oscureciendo, y lo que decide la tarde es si la cabaña es un
+      lugar donde da gusto quedarse.</p>
+    <dl class="huecos">
+      <div class="hueco"><dt>Cómo se calienta la cabaña</dt><dd><span class="falta">falta: estufa a leña o eléctrica</span></dd></div>
+      <div class="hueco"><dt>Si hay terraza y hasta qué mes se usa</dt><dd><span class="falta">falta</span></dd></div>
+      <div class="hueco"><dt>Qué queda cerca para caminar</dt><dd><span class="falta">falta</span></dd></div>
+    </dl>
+  </div>
+</section>
+
+<!-- ══════ ESCALÓN 5 · CAPÍTULO 23 ══════ -->
+<section class="e5 cap" aria-labelledby="t-23">
+  <p class="cap__h" aria-hidden="true">23</p>
+  <div class="cap__cuerpo">
+    <h2 id="t-23">La noche</h2>
+    <p>Lo que nadie publica y todos evalúan: qué tan silencioso es de verdad. Un
+      huésped que trabaja y se queda una semana necesita dormir bien las siete
+      noches, no cinco.</p>
+    <dl class="huecos">
+      <div class="hueco"><dt>Qué se escucha de noche</dt><dd><span class="falta">falta: decirlo honestamente</span></dd></div>
+      <div class="hueco"><dt>Si las cabañas están pegadas</dt><dd><span class="falta">falta</span></dd></div>
+      <div class="hueco"><dt>Si hay luz afuera para llegar</dt><dd><span class="falta">falta</span></dd></div>
+    </dl>
+    <p class="firma firma--noche">Cuatro horas del día, doce datos. Ninguna cabaña de
+      Villarrica tiene esto escrito, y es lo único que un huésped de siete noches lee
+      completo antes de reservar.</p>
+  </div>
+</section>
+
+<!-- ══════ EL CIERRE — T1 ══════ -->
+<!-- ========= LA CITA A SANGRE ========= -->
+<section class="cita" aria-labelledby="t-cita">
+  <div class="cita__foto" aria-hidden="true">
+    <img src="imagenes/cita-01.jpg" width="2560" height="1704"
+         loading="lazy" decoding="async" alt="">
+  </div>
+  <blockquote class="cita__texto">
+    <p id="t-cita">A las once de la noche el lago sigue ahí<br>
+      <span class="cita__eco">Y usted ya no está manejando de vuelta</span></p>
+  </blockquote>
+</section>
+
+
+
+<!-- ========= TAJO — FRANJA A SANGRE ========= -->
+<div class="tajo" aria-hidden="true">
+  <img src="imagenes/banda-01.jpg" width="1000" height="556"
+       loading="lazy" decoding="async" alt="">
+</div>
+<section class="e5 cierre" id="llamar" aria-labelledby="t-cierre">
+  <p class="cierre__rot">Para reservar, hoy se llama</p>
+  <h2 id="t-cierre" class="cierre__tel">
+    <a href="tel:+56452415345">+56 45 241 5345</a>
+  </h2>
+  <p class="cierre__pie">Es el número publicado en su ficha de Google.</p>
+</section>
+
+<!-- ========= LAS FOTOS ========= -->
+<section class="galeria" aria-labelledby="t-galeria">
+  <h2 id="t-galeria" class="galeria__titulo">Lo que sí es de ellos</h2>
+  <p class="galeria__nota">Las fotos con pie son suyas, de su propia ficha y su Facebook. Los fondos de lago con niebla no lo son y están declarados en imagenes/FUENTES.txt.</p>
+  <div class="galeria__grilla">
+    <figure class="gal gal--izq">
+      <img src="imagenes/gal-02.jpg" width="1200" height="1200" loading="lazy" decoding="async"
+           alt="Letrero de madera tallada con el nombre Antü·Küyen, y detrás el edificio de troncos con sus balcones.">
+      <figcaption>El letrero tallado, con el nombre escrito como se escribe: Antü·Küyen.</figcaption>
+    </figure>
+    <figure class="gal gal--der">
+      <img src="imagenes/gal-01.jpg" width="1200" height="1600" loading="lazy" decoding="async"
+           alt="Dormitorio con revestimiento de madera, cama hecha y un macramé colgado en la pared.">
+      <figcaption>Un dormitorio. La madera y el macramé son suyos: eso no lo tiene el departamento de al lado.</figcaption>
+    </figure>
+  </div>
+  <p class="galeria__falta">falta: la misma cabaña a las 08, las 13, las 18 y las 23 — cuatro fotos desde el mismo punto, en un solo día</p>
+</section>
+
+<!-- ========= LA TIRA ========= -->
+<section class="tira" aria-label="Tres imágenes del oficio">
+  <figure class="tira__pieza">
+    <img src="imagenes/tira-01.jpg" width="1000" height="667" loading="lazy" decoding="async" alt="El jardín con la piscina y las tumbonas bajo el quitasol.">
+  </figure>
+  <figure class="tira__pieza">
+    <img src="imagenes/tira-02.jpg" width="1000" height="556" loading="lazy" decoding="async" alt="El edificio de troncos con sus balcones, visto desde el camino.">
+  </figure>
+  <figure class="tira__pieza">
+    <img src="imagenes/tira-03.jpg" width="1000" height="667" loading="lazy" decoding="async" alt="El living de una cabaña, con la estufa y el ventanal al jardín.">
+  </figure>
+</section>
+
+</main>
+
+
+
+<!-- ========= MOSAICO ========= -->
+<section class="mos" aria-labelledby="t-mos">
+  <h2 id="t-mos" class="mos__titulo">La misma serie, más de cerca</h2>
+  <p class="mos__nota">Estas seis ya aparecen más arriba en la página. Vuelven acá en otro tamaño porque una sola pasada de imágenes deja el scroll vacío, y porque de cerca se ven cosas que en grande se pierden. La procedencia de cada una está en imagenes/FUENTES.txt.</p>
+  <div class="mos__grilla">
+    <figure class="mos__p">
+      <img src="imagenes/mos-01.jpg" width="780" height="780"
+           loading="lazy" decoding="async" alt="">
+    </figure>
+    <figure class="mos__p">
+      <img src="imagenes/mos-02.jpg" width="780" height="1040"
+           loading="lazy" decoding="async" alt="">
+    </figure>
+    <figure class="mos__p">
+      <img src="imagenes/mos-03.jpg" width="780" height="780"
+           loading="lazy" decoding="async" alt="">
+    </figure>
+    <figure class="mos__p">
+      <img src="imagenes/mos-04.jpg" width="780" height="520"
+           loading="lazy" decoding="async" alt="">
+    </figure>
+    <figure class="mos__p">
+      <img src="imagenes/mos-05.jpg" width="780" height="434"
+           loading="lazy" decoding="async" alt="">
+    </figure>
+    <figure class="mos__p">
+      <img src="imagenes/mos-06.jpg" width="780" height="520"
+           loading="lazy" decoding="async" alt="">
+    </figure>
+  </div>
+</section>
+<section class="dueno" aria-labelledby="t-dueno">
+  <h2 id="t-dueno">Para el dueño</h2>
+  <div class="dueno__cols">
+    <div>
+      <h3>Lo que está verificado</h3>
+      <p>Las 77 reseñas de su ficha de Google, el teléfono +56 45 241 5345 y que
+        tienen una página web antigua.</p>
+    </div>
+    <div>
+      <h3>Lo que decidí no poner</h3>
+      <p>La velocidad del internet, por ninguna razón. Y tampoco ilustré el nombre
+        del negocio con ningún dibujo: es un nombre en mapudungun y lo que significa
+        lo explican ustedes si quieren, no una página web.
+        <span class="falta">falta: confirmar si quieren explicarlo</span></p>
+    </div>
+    <div>
+      <h3>Lo que falta</h3>
+      <p>Las seis respuestas del teletrabajo y la tarifa por semana. Con eso solo,
+        pasan a ser la única cabaña de Villarrica que le habla al que se queda siete
+        noches.</p>
+    </div>
+  </div>
+  <p class="dueno__cierre">
+    <a class="flecha" href="https://wa.me/56968650001" rel="noopener">Escribirme por WhatsApp <span aria-hidden="true">→</span></a>
+    <a class="flecha" href="../../" rel="noopener">Ver otros trabajos <span aria-hidden="true">→</span></a>
+  </p>
+</section>
+
+<footer class="pie">
+  <p>Sitio de demostración preparado por CristalWeb. El negocio no lo ha encargado
+    ni ha revisado su contenido.</p>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>

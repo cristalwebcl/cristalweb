@@ -1,0 +1,50 @@
+FUENTES DE LAS IMÁGENES — 205 · Frenos Salazar (Pucón)
+======================================================
+NINGUNA de estas fotos es del taller. Son de bancos de uso libre
+(pxhere, y una de Unsplash gratuito), bajadas con FotoRadar y
+reescaladas con preparar-lote.ps1. El pie de la página lo dice, y
+también la sección «para el dueño».
+
+fondo-01.jpg  · 2400px · portada — curva cerrada con la línea amarilla del eje
+  La foto y la paleta son la misma cosa: el acento de la demo ES esa
+  línea pintada, y el ambiente la continúa hacia abajo.
+banda-01.jpg  · 1800px · cita — camino entre roca, con una moto de escala
+tajo-01.jpg   · 2000px · tajo — volcán con bosque (el paisaje de Pucón)
+telon-01.jpg  · 1200px · telón del contacto — camino en bosque de otoño
+media-01.jpg  · 1700px · mitades — trabajo en el buje, con la rueda desmontada
+mos-01.jpg    · 1200px · dos discos de freno, uno gastado
+mos-02.jpg    · 1200px · pastillas de freno
+mos-03.jpg    · 1200px · camino sinuoso visto desde arriba
+mos-04.jpg    · 1200px · camino costero al atardecer
+mos-05.jpg    · 1200px · volcán tras el agua
+mos-06.jpg    · 1200px · curva en un bosque de otoño  (images.unsplash.com,
+                gratuito — NO es `plus.unsplash`, que es de pago y está
+                vetado en `fondos-4k.ps1`)
+
+Consultas usadas: «mountain road descent curves pxhere», «volcano lake
+landscape chile pxhere», «car wheel hub disc brake pxhere», «brake pads
+car parts pxhere», «winding road forest autumn pxhere». Las URL
+completas quedaron en
+`devs\material\busquedas\205-frenos\<carpeta>\FUENTES.txt`.
+
+
+CRITERIO: OCHO DE ONCE SON CAMINO
+---------------------------------
+Deliberado. **La identidad de esta demo no sale del rubro sino del
+lugar**: en Pucón el freno trabaja distinto porque acá se baja mucho
+más de lo que se sube. Si las fotos fueran todas de repuestos, la
+página sería la de cualquier taller de frenos del país; con el camino
+y el volcán es la de éste.
+
+Las tres de piezas están donde hacen falta: el disco gastado al lado
+del sano, las pastillas, y el buje con la rueda fuera.
+
+DESCARTADAS
+-----------
+· Un disco de freno de BICICLETA. Es una foto de freno, sí, y de otro
+  vehículo: en una página de taller automotriz confunde.
+· Un disco de EMBRAGUE en blanco y negro, precioso y de otra pieza.
+· Tres primeros planos de llantas de autos modernos donde el logotipo
+  de la marca es legible en el centro de la rueda.
+· Un deportivo de marca reconocible: además de la marca, es el auto
+  equivocado para el cliente de esta comuna.

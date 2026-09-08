@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="es-CL" class="no-js">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Schuster Mecánica Automotriz — Temuco</title>
+<meta name="description" content="Taller mecánico en Temuco. Qué mira la planta de revisión técnica, por qué rechaza y qué conviene revisar antes de ir.">
+
+<!-- Política de seguridad de contenido: el navegador sólo puede cargar
+     archivos de este mismo sitio. Sin CDN, sin librerías, sin rastreadores.
+     Ver skills/web-blindada/references/csp-en-pages.md -->
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self'; img-src 'self' data:; font-src 'self'; connect-src 'self'; media-src 'self'; form-action 'self'; base-uri 'none'; frame-src 'none'; object-src 'none'">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+
+<!-- Rescate de la clase .js (regla 2 de la casa). En archivo, sin defer:
+     inline lo bloquearía la CSP. -->
+<script src="js/rescate.js"></script>
+
+<!-- Fuentes propias: cero peticiones a terceros. -->
+<link rel="preload" href="assets/fuentes/barlowcondensed-600-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="assets/fuentes.css">
+<link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+
+<div class="propuesta">
+  <p class="propuesta__que">Propuesta de sitio web — preparada para <b>Schuster Mecánica Automotriz</b> por CristalWeb</p>
+  <p class="propuesta__gancho">4,9 en el rubro con más desconfianza del país. Y el auto que tiene revisión técnica el mes que viene no sabe que acá se la pueden preparar — porque no hay dónde leerlo.</p>
+</div>
+
+<header class="cab" id="cab">
+  <a class="cab__marca" href="#portada">
+    <span class="llave" aria-hidden="true"><i class="llave__boca"></i></span>
+    <span class="cab__nombre">Schuster</span>
+  </a>
+  <nav class="cab__nav" aria-label="Secciones">
+    <a href="#revision">La revisión técnica</a>
+    <a href="#apellido">El apellido</a>
+  </nav>
+  <a class="cab__tel" href="tel:+56954827893">
+    <span class="cab__tel-rot">Temuco</span>
+    <span class="cab__tel-num">9 5482 7893</span>
+  </a>
+</header>
+
+<main>
+
+<!-- ========= PORTADA ========= -->
+<section class="portada portada--foto" id="portada" aria-labelledby="t-portada">
+  <!-- FONDO DE PORTADA: 2560 px, nitido. Se disuelve hacia el titular
+       con un gradiente lateral, no con desenfoque. -->
+  <div class="portada__foto" aria-hidden="true">
+    <img src="imagenes/port-01.jpg" width="2560" height="1707"
+         decoding="async" fetchpriority="high" alt="">
+  </div>
+
+  <div class="tuerca-fondo" aria-hidden="true"><span class="tuerca"></span></div>
+
+  <div class="portada__texto">
+    <p class="sitio">Mecánica automotriz · Temuco</p>
+    <h1 id="t-portada">¿Pasará la<br>revisión técnica?</h1>
+    <p class="bajada">Es la pregunta que aparece cuando queda un mes en el parabrisas, y la
+      que casi nadie contesta por escrito. Lo que la planta mira es siempre lo mismo, se
+      sabe de antemano, y revisarlo antes es la diferencia entre pasar de una o perder la
+      mañana y pagar de nuevo.</p>
+    <dl class="specs">
+      <div class="spec"><dt>nota en Google</dt><dd>4,9</dd></div>
+      <div class="spec"><dt>reseñas</dt><dd>80</dd></div>
+      <div class="spec"><dt>teléfono</dt><dd class="dd--tel"><a href="tel:+56954827893">9 5482 7893</a></dd></div>
+    </dl>
+  </div>
+</section>
+
+<!-- ========= LA PIEZA FIRMA — LA TABLA (C) ========= -->
+<section class="revision con-telon" id="revision" aria-labelledby="t-rev">
+  <div class="telon" aria-hidden="true">
+    <img src="imagenes/telon-01.jpg" width="1200" height="800" decoding="async" alt="">
+  </div>
+
+  <!-- AURA DE COLOR: la foto de rubro reventada a desenfoque. No se lee
+       como imagen: aporta color y luz detras de una seccion que si no
+       seria fondo plano. Aca el desenfoque SI es el efecto, no un parche,
+       y por eso el archivo va chico: a 64 px de blur, mas resolucion no
+       cambia nada. Sin loading=lazy porque el elemento va en absoluto con
+       z-index negativo y el navegador nunca lo considera visible. -->
+  <div class="aura" aria-hidden="true">
+    <img src="imagenes/aura-01.jpg" width="900" height="600" decoding="async" alt="">
+  </div>
+
+  <div class="revision__cabecera">
+    <p class="antetitulo">Lo que se sabe y nadie escribe</p>
+    <h2 id="t-rev">Qué mira la planta</h2>
+    <p class="entrada">Esto es lo general del oficio: los puntos que se revisan en toda
+      planta y los motivos de rechazo más comunes. No hay ninguna norma citada por número
+      —eso lo dice la planta, no un taller— y la lista de lo que se prepara acá la confirma
+      el taller.</p>
+    <p class="marca-ejemplo" data-ejemplo="Descripción general del proceso — la columna «se prepara acá» la confirma el taller"></p>
+  </div>
+
+  <div class="tabla-envoltura">
+    <table class="tabla">
+      <caption class="visually">Qué mira la planta de revisión técnica, por qué rechaza y qué se prepara en el taller</caption>
+      <thead>
+        <tr>
+          <th scope="col">Qué miran</th>
+          <th scope="col">Por qué rechaza</th>
+          <th scope="col">Se prepara acá</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">Luces</th>
+          <td>Una ampolleta quemada, un foco opaco o las luces desalineadas. Es el rechazo
+            más común y el más barato de evitar.</td>
+          <td class="sp"><span class="falta">falta</span></td>
+        </tr>
+        <tr>
+          <th scope="row">Frenos</th>
+          <td>Que frene desparejo entre un lado y el otro, o que no alcance la fuerza de
+            frenado en el banco. También el freno de mano.</td>
+          <td class="sp"><span class="falta">falta</span></td>
+        </tr>
+        <tr>
+          <th scope="row">Neumáticos</th>
+          <td>Dibujo bajo el mínimo, cortes, deformaciones o una rueda distinta a las
+            otras del mismo eje.</td>
+          <td class="sp"><span class="falta">falta</span></td>
+        </tr>
+        <tr>
+          <th scope="row">Emisiones</th>
+          <td>Que el gas se pase de lo permitido. Suele venir de una mantención atrasada,
+            de un filtro sucio o de algo del sistema que ya venía fallando.</td>
+          <td class="sp"><span class="falta">falta</span></td>
+        </tr>
+        <tr>
+          <th scope="row">La luz del motor encendida</th>
+          <td>Va encendida en el tablero y eso solo puede rechazar. No se apaga con un
+            escáner: hay que ver por qué se prendió.</td>
+          <td class="sp"><span class="falta">falta</span></td>
+        </tr>
+        <tr>
+          <th scope="row">Dirección y suspensión</th>
+          <td>Juego en la dirección, amortiguadores vencidos, ruidos. Se nota en el banco
+            de suspensión aunque el auto se sienta bien al manejar.</td>
+          <td class="sp"><span class="falta">falta</span></td>
+        </tr>
+        <tr>
+          <th scope="row">Parabrisas y limpiaparabrisas</th>
+          <td>Trizaduras en el campo de visión del conductor y plumillas que no barren.</td>
+          <td class="sp"><span class="falta">falta</span></td>
+        </tr>
+        <tr>
+          <th scope="row">Cinturones y bocina</th>
+          <td>Cinturón que no traba o está cortado, bocina que no suena. Chicos, y
+            rechazan igual.</td>
+          <td class="sp"><span class="falta">falta</span></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="antes">
+    <h3>Qué conviene hacer antes de ir</h3>
+    <ol>
+      <li>Revisar las luces con alguien afuera del auto: cinco minutos y se descarta el
+        motivo de rechazo más frecuente.</li>
+      <li>Mirar el dibujo de los cuatro neumáticos y la presión.</li>
+      <li>Si hay una luz encendida en el tablero, resolverla antes. Ir «a ver si pasa» con
+        el testigo prendido es perder el turno.</li>
+      <li>Llevar los documentos al día: la planta no revisa sólo el auto.</li>
+    </ol>
+    <p class="antes__nota">Una revisión previa en taller cuesta una fracción de lo que
+      cuesta volver a la planta, y sobre todo evita el segundo día perdido.
+      <span class="falta">falta: si ofrecen una revisión previa y qué incluye</span></p>
+  </div>
+
+  <p class="firma">Ningún taller de la zona tiene esta tabla publicada, y es exactamente lo
+    que la gente busca el mes antes. Una vez escrita, sirve todos los años y para todos los
+    autos.</p>
+</section>
+
+<!-- ========= EL APELLIDO RESPONDE ========= -->
+<!-- ========= MEDIA PANTALLA ========= -->
+<section class="mitades" aria-labelledby="t-mitades">
+  <div class="mitades__foto">
+    <img src="imagenes/media-01.jpg" width="2200" height="1467"
+         loading="lazy" decoding="async" alt="">
+  </div>
+  <div class="mitades__texto">
+    <p class="mitades__ante">Lo que pasa antes de la planta</p>
+    <h2 id="t-mitades">Revisar antes cuesta una mañana. Reprobar cuesta dos.</h2>
+    <p>La planta mira siempre lo mismo, y todo eso se puede comprobar antes en el taller: luces, frenos, gases, holguras, neumáticos. Quien llega con la revisión preparada pasa de una; quien llega a probar suerte pierde la mañana, paga de nuevo y vuelve igual. La cuenta se hace sola.</p>
+  </div>
+</section>
+
+<section class="apellido" id="apellido" aria-labelledby="t-ape">
+  <div class="apellido__cabecera">
+    <p class="antetitulo antetitulo--claro">Un taller con apellido</p>
+    <h2 id="t-ape">El apellido responde</h2>
+    <p class="entrada">Cuando un taller lleva el apellido de alguien, ese alguien responde
+      por lo que sale del portón. Es una diferencia real frente a una cadena, y es lo único
+      que un cliente nuevo quiere saber antes de dejar su auto.</p>
+    <p class="marca-ejemplo marca-ejemplo--claro" data-ejemplo="ESTRUCTURA — acá no hay ni un dato de la persona: lo pone el taller"></p>
+  </div>
+
+  <div class="fichas">
+    <article class="fi">
+      <p class="fi__rot">Quién</p>
+      <h3>Quién es Schuster</h3>
+      <p class="pend">falta: nombre completo, desde cuándo trabaja en esto y desde cuándo
+        existe el taller. No lo invento.</p>
+    </article>
+    <article class="fi">
+      <p class="fi__rot">Quién atiende</p>
+      <h3>Con quién habla el cliente</h3>
+      <p class="pend">falta: si atiende él o hay mesón, y quién explica el presupuesto</p>
+    </article>
+    <article class="fi">
+      <p class="fi__rot">Qué se hace acá</p>
+      <h3>Especialidad del taller</h3>
+      <p class="pend">falta: qué trabajos hacen y cuáles derivan</p>
+    </article>
+    <article class="fi">
+      <p class="fi__rot">La palabra</p>
+      <h3>Qué pasa si algo queda malo</h3>
+      <p class="pend">falta: cómo lo resuelven — es la pregunta que nadie hace en voz alta
+        y todos piensan</p>
+    </article>
+  </div>
+
+  <p class="descargo">Los cuatro recuadros están vacíos porque no me consta ninguno de esos
+    datos, y en un taller que lleva el apellido de una persona inventarlos sería una falta
+    grave. La tabla de la revisión es información general del proceso: no cita ninguna
+    norma por número y no reemplaza lo que diga la planta.</p>
+</section>
+
+<!-- ========= EL CIERRE — T1 ========= -->
+<!-- ========= LA CITA A SANGRE ========= -->
+<section class="cita" aria-labelledby="t-cita">
+  <div class="cita__foto" aria-hidden="true">
+    <img src="imagenes/cita-01.jpg" width="2200" height="1467"
+         loading="lazy" decoding="async" alt="">
+  </div>
+  <blockquote class="cita__texto">
+    <p id="t-cita">¿Pasará la revisión técnica?<br>
+      <span class="cita__eco">Se sabe de antemano. Ése es todo el punto</span></p>
+  </blockquote>
+</section>
+
+
+
+<!-- ========= TAJO — FRANJA A SANGRE ========= -->
+<div class="tajo" aria-hidden="true">
+  <img src="imagenes/banda-01.jpg" width="1100" height="619"
+       loading="lazy" decoding="async" alt="">
+</div>
+<section class="cierre" id="llamar" aria-labelledby="t-cierre">
+  <p class="cierre__rot">Para consultar o dejar el auto</p>
+  <h2 id="t-cierre" class="cierre__tel">
+    <a href="tel:+56954827893">9 5482 7893</a>
+  </h2>
+  <p class="cierre__pie">Es el número publicado en su ficha de Google.</p>
+</section>
+
+<!-- ========= LA TIRA ========= -->
+<section class="tira" aria-label="Tres imágenes del oficio">
+  <figure class="tira__pieza">
+    <img src="imagenes/tirag-01.jpg" width="1100" height="733" loading="lazy" decoding="async" alt="Manos trabajando con herramienta sobre el motor.">
+  </figure>
+  <figure class="tira__pieza">
+    <img src="imagenes/tirag-02.jpg" width="1100" height="733" loading="lazy" decoding="async" alt="Revisión bajo el capó, con el motor a la vista.">
+  </figure>
+  <figure class="tira__pieza">
+    <img src="imagenes/tirag-03.jpg" width="1100" height="619" loading="lazy" decoding="async" alt="Mecánico junto a un auto con el capó abierto en el taller.">
+  </figure>
+</section>
+
+<!-- ========= LAS FOTOS ========= -->
+<section class="galeria" aria-labelledby="t-galeria">
+  <h2 id="t-galeria" class="galeria__titulo">El taller</h2>
+  <p class="galeria__nota">Fotos publicadas por el propio taller en su Facebook. No hay galpón de vidrio ni mecánicos de catálogo: es el piso de tierra, el techo de zinc y los autos que están adentro hoy.</p>
+  <div class="galeria__grilla">
+    <figure class="gal gal--izq">
+      <img src="imagenes/taller-01.jpg" width="1050" height="1400" loading="lazy" decoding="async"
+           alt="Camioneta con el capó abierto y un mecánico trabajando en el motor.">
+      <figcaption>Con el capó abierto. Así empieza toda revisión.</figcaption>
+    </figure>
+    <figure class="gal gal--der">
+      <img src="imagenes/taller-03.jpg" width="1050" height="1400" loading="lazy" decoding="async"
+           alt="Interior del taller con varios autos y una caja de cambios desmontada en el suelo.">
+      <figcaption>Una caja afuera, en el suelo. El trabajo de verdad.</figcaption>
+    </figure>
+  </div>
+  <p class="galeria__falta">falta: una foto del auto entregado, limpio y en la calle. El antes está; falta el después, que es la mitad que vende.</p>
+</section>
+
+</main>
+
+
+
+<!-- ========= MOSAICO ========= -->
+<section class="mos" aria-labelledby="t-mos">
+  <h2 id="t-mos" class="mos__titulo">La misma serie, más de cerca</h2>
+  <p class="mos__nota">Estas seis ya aparecen más arriba en la página. Vuelven acá en otro tamaño porque una sola pasada de imágenes deja el scroll vacío, y porque de cerca se ven cosas que en grande se pierden. La procedencia de cada una está en imagenes/FUENTES.txt.</p>
+  <div class="mos__grilla">
+    <figure class="mos__p">
+      <img src="imagenes/mos-01.jpg" width="780" height="520"
+           loading="lazy" decoding="async" alt="">
+    </figure>
+    <figure class="mos__p">
+      <img src="imagenes/mos-02.jpg" width="780" height="439"
+           loading="lazy" decoding="async" alt="">
+    </figure>
+    <figure class="mos__p">
+      <img src="imagenes/mos-03.jpg" width="780" height="520"
+           loading="lazy" decoding="async" alt="">
+    </figure>
+    <figure class="mos__p">
+      <img src="imagenes/mos-04.jpg" width="780" height="520"
+           loading="lazy" decoding="async" alt="">
+    </figure>
+    <figure class="mos__p">
+      <img src="imagenes/mos-05.jpg" width="780" height="520"
+           loading="lazy" decoding="async" alt="">
+    </figure>
+    <figure class="mos__p">
+      <img src="imagenes/taller-02.jpg" width="1400" height="1050"
+           loading="lazy" decoding="async" alt="">
+    </figure>
+  </div>
+</section>
+<section class="dueno" aria-labelledby="t-dueno">
+  <h2 id="t-dueno">Para el taller</h2>
+  <div class="dueno__cols">
+    <div>
+      <h3>Lo que está verificado</h3>
+      <p>El 4,9 con 80 reseñas de su ficha de Google y el teléfono 9 5482 7893. La ficha
+        aparece dos veces en el listado con el mismo número: es un solo taller.</p>
+    </div>
+    <div>
+      <h3>Lo que es general</h3>
+      <p>La tabla completa. Son los puntos que revisa cualquier planta y los motivos de
+        rechazo más conocidos del oficio, sin ninguna norma citada.</p>
+    </div>
+    <div>
+      <h3>Lo que falta</h3>
+      <p>Dos cosas: marcar en la tabla qué preparan ustedes —esa columna sola es la que
+        convierte la página en un servicio— y los cuatro datos del apellido. Ninguno lo
+        inventé.</p>
+    </div>
+  </div>
+  <p class="dueno__cierre">
+    <a class="flecha" href="https://wa.me/56968650001" rel="noopener">Escribirme por WhatsApp <span aria-hidden="true">→</span></a>
+    <a class="flecha" href="../../" rel="noopener">Ver otros trabajos <span aria-hidden="true">→</span></a>
+  </p>
+</section>
+
+<footer class="pie">
+  <p>Sitio de demostración preparado por CristalWeb. El negocio no lo ha encargado ni ha
+    revisado su contenido. La tabla describe el proceso de revisión técnica de manera
+    general, no cita normativa y no garantiza ningún resultado ante una planta. No se
+    afirma que este taller prepare ninguno de esos puntos: esa columna está declarada como
+    pendiente. No hay precios ni datos de personas.</p>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>

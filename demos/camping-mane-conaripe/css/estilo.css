@@ -1,0 +1,875 @@
+/* ══════════════════════════════════════════════════════════════════
+   CAMPING MANE · Coñaripe
+   Demo 150. Identidad: «LONA DE CARPA».
+
+   LA DIRECCION EN UNA FRASE
+   Azul de lona sobre papel de mapa: transmite «acá saben exactamente
+   donde va cada carpa», que es lo unico que separa a un camping
+   ordenado de un potrero con gente.
+
+   LA PALETA
+   --lona   #35566F  azul de carpa: MEDIO, textil, MATE (6,4:1 sobre papel)
+   --papel  #EFE9DC  papel de mapa
+   --tinta  #23282C
+
+   DESLINDE DE AZULES — el pizarra de la 120 es base de señaletica
+   oscura; el toldo de la 148 son rayas CLARAS de verano; el Klein de
+   la 129 es un azul interactivo saturado. Este es azul CARPA: mate,
+   medio, y lleva una trama de tejido muy sutil encima (la lona no es
+   una superficie lisa). Nunca brilla ni satura.
+
+   EL TRIO
+   · display · Genos — sans variable de trazo tecnico, nueva en el
+     registro. Se eligio por el plano: es la letra de una carta
+     nautica, no de un afiche de camping.
+   · cuerpo  · Schibsted Grotesk — neutra.
+   · dato    · Fragment Mono — para numeros de sitio y rotulos.
+
+   LA CABECERA (116ª del oficio) — LA CARPA
+   El triangulo con la puerta en V invertida recortada en la base.
+   Increiblemente no existia: las cabeceras de camping del registro
+   fueron estaca (58), placa (59), mosqueton (60), luna (62), gota
+   (64) y quitasol (66). Ninguna era la carpa.
+
+   EL FONDO — LUCIERNAGAS
+   Cuatro puntos calidos que DERIVAN lento y respiran.
+   DESLINDE: las estrellas de la 109 titilan FIJAS en su sitio; las
+   chispas de la 92 SUBEN desde una fogata (trayectoria dirigida); los
+   destellos de la 129 son cruces de metal. Las luciernagas derivan
+   erratico —van y vuelven sin destino— y su parpadeo es lento, no un
+   titileo.
+   DESLINDE ADELANTADO con los petalos de la 155: aquellos BAJAN, de
+   dia, con gravedad. Estas FLOTAN, de noche, sin gravedad.
+   Reduced-motion: se esconden (cuatro puntos amarillos quietos sobre
+   un fondo oscuro no son luciernagas, son polvo en la pantalla).
+
+   LA ESTRUCTURA — N (objeto protagonista)
+   EL PLANO al centro, en SVG, y el contenido orbitando: cada zona del
+   dibujo es un enlace a su ficha.
+   DESLINDE con la 95 (galpon con volumen) y la 99 (domo geodesico):
+   aquellos eran objetos con VOLUMEN, dibujados en perspectiva. Este
+   es un PLANO CENITAL 2D — la primera N plana del registro.
+
+   HONESTIDAD DEL PLANO: la distribucion real del camping no se
+   conoce, asi que el esquema esta marcado como ejemplo en TRES sitios
+   distintos —la marca de arriba, el pie de figura y la seccion del
+   dueño— y ademas en la <desc> del SVG, que es lo que lee un lector
+   de pantalla. Un plano inventado que se tome por real manda a una
+   familia a un sitio que no existe.
+   ══════════════════════════════════════════════════════════════════ */
+
+:root {
+  --lona:      #35566F;   /* 6,4:1 sobre papel */
+  --lona-2:    #2B475D;
+  --lona-3:    #4A7093;
+  --lona-cl:   #A9C4DA;   /* sobre lona oscura */
+  --papel:     #EFE9DC;
+  --papel-2:   #E2DACA;
+  --papel-3:   #F7F3EA;
+  --tinta:     #23282C;
+  --tinta-2:   #56606A;   /* 6,0:1 sobre papel */
+  --luciernaga:#F2D273;
+  --linea:     #D6CDB9;
+  --linea-osc: #3E5D77;
+
+  --display: 'Genos', system-ui, sans-serif;
+  --cuerpo:  'Schibsted Grotesk', system-ui, -apple-system, 'Segoe UI', sans-serif;
+  --dato:    'Fragment Mono', ui-monospace, 'Consolas', monospace;
+
+  /* La trama de la lona: una superficie textil no es lisa. Va MUY
+     tenue, solo para que el azul no se lea como plástico. */
+  --tejido:
+    repeating-linear-gradient(90deg, rgba(255,255,255,.035) 0 1px, transparent 1px 3px),
+    repeating-linear-gradient(0deg,  rgba(0,0,0,.035) 0 1px, transparent 1px 3px);
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+[hidden] { display: none !important; }
+
+html { -webkit-text-size-adjust: 100%; scroll-behavior: smooth; }
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+
+body {
+  margin: 0;
+  background: var(--papel);
+  color: var(--tinta);
+  font-family: var(--cuerpo);
+  font-size: 1.0625rem;
+  line-height: 1.65;
+  overflow-x: hidden;
+}
+
+h1, h2, h3 { font-family: var(--display); font-weight: 500; margin: 0; }
+p { margin: 0 0 1rem; }
+img, svg { max-width: 100%; }
+
+::selection { background: var(--lona); color: var(--papel); }
+a { color: var(--lona); }
+:focus-visible { outline: 2px solid var(--lona); outline-offset: 3px; }
+
+/* ─────────── franja de propuesta ─────────── */
+.propuesta {
+  background: var(--lona-2);
+  color: var(--lona-cl);
+  padding: .8rem clamp(1rem, 5vw, 4rem);
+  font-size: .82rem;
+  line-height: 1.5;
+}
+.propuesta p { margin: 0; }
+.propuesta__que { color: #fff; }
+.propuesta__que b { font-weight: 700; }
+.propuesta__gancho { margin-top: .25rem !important; max-width: 62ch; }
+
+/* ─────────── cabecera fantasma ─────────── */
+.cab {
+  position: sticky; top: 0; z-index: 40;
+  display: flex; align-items: center; gap: 1rem;
+  padding: .7rem clamp(1rem, 5vw, 4rem);
+  background: var(--papel-3);
+  border-bottom: 1px solid var(--linea);
+  color: var(--tinta);
+}
+.js .cab { transition: background .3s ease; }
+.cab--flota {
+  background: rgba(247, 243, 234, .9);
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+}
+.cab__marca {
+  display: flex; align-items: center; gap: .65rem;
+  text-decoration: none; color: inherit; margin-right: auto;
+}
+.cab__nombre { font-family: var(--display); font-size: 1.35rem; line-height: 1.1; }
+
+/* ── LA CARPA — triangulo con la puerta en V invertida ── */
+.carpa {
+  width: 25px; height: 19px;
+  flex: 0 0 auto;
+  background: var(--lona);
+  clip-path: polygon(50% 0, 100% 100%, 63% 100%, 50% 44%, 37% 100%, 0 100%);
+}
+
+.cab__nav { display: flex; gap: 1.4rem; flex: 0 0 auto; }
+.cab__nav a {
+  font-family: var(--dato);
+  font-size: .74rem;
+  text-transform: uppercase;
+  letter-spacing: .06em;
+  color: var(--tinta-2);
+  text-decoration: none;
+  padding-bottom: 2px;
+  border-bottom: 1px solid transparent;
+  white-space: nowrap;
+}
+.cab__nav a:hover { color: var(--lona); border-bottom-color: var(--lona); }
+@media (max-width: 50rem) { .cab__nav { display: none; } }
+
+/* T1 — el telefono verificado */
+.cab__tel {
+  text-align: right; text-decoration: none; line-height: 1.15;
+  padding-left: 1.1rem; border-left: 1px solid var(--linea);
+  flex: 0 0 auto;
+}
+.cab__tel-rot {
+  display: block; font-family: var(--dato);
+  font-size: .54rem; letter-spacing: .16em;
+  text-transform: uppercase; color: var(--tinta-2);
+}
+.cab__tel-num {
+  display: block; font-family: var(--dato);
+  font-size: clamp(.74rem, 2vw, .92rem);
+  color: var(--lona);
+  white-space: nowrap;
+}
+.cab__tel:hover .cab__tel-num { text-decoration: underline; }
+
+/* ═══════════ PORTADA ═══════════ */
+.portada {
+  position: relative;
+  min-height: 88svh;
+  display: flex; align-items: center;
+  padding: clamp(3rem, 9vh, 7rem) clamp(1.25rem, 5vw, 4rem);
+  background: var(--lona-2);
+  background-image: var(--tejido);
+  color: var(--papel);
+  overflow: hidden;
+}
+.portada__texto { position: relative; z-index: 2; max-width: min(92vw, 42rem); }
+
+.sitio {
+  font-family: var(--dato);
+  font-size: .74rem; letter-spacing: .18em;
+  text-transform: uppercase; color: var(--lona-cl);
+  margin-bottom: 1.3rem;
+}
+.portada h1 {
+  font-size: clamp(2.3rem, 7vw, 5rem);
+  line-height: 1.02;
+  margin-bottom: 1.4rem;
+}
+.bajada {
+  font-size: clamp(1rem, 1.9vw, 1.16rem);
+  color: var(--lona-cl);
+  max-width: min(92vw, 34rem);
+  margin-bottom: 2.2rem;
+}
+.specs { display: flex; flex-wrap: wrap; gap: 1.4rem 2.4rem; margin: 0; }
+.spec dt {
+  font-family: var(--dato);
+  font-size: .62rem; letter-spacing: .14em;
+  text-transform: uppercase; color: var(--lona-cl);
+  margin-bottom: .25rem;
+}
+.spec dd { margin: 0; font-family: var(--display); font-size: 1.7rem; line-height: 1; }
+.dd--tel { font-family: var(--dato) !important; font-size: 1.05rem !important; }
+.dd--tel a { color: var(--lona-cl); text-decoration: none; }
+.dd--tel a:hover { text-decoration: underline; }
+
+/* ── LAS LUCIERNAGAS ── */
+.noche { position: absolute; inset: 0; z-index: 1; pointer-events: none; }
+.luci {
+  position: absolute;
+  width: 5px; height: 5px;
+  border-radius: 50%;
+  background: var(--luciernaga);
+  box-shadow: 0 0 10px 2px rgba(242, 210, 115, .5);
+  opacity: 0;
+}
+.luci--1 { right: 14%; top: 24%; }
+.luci--2 { right: 26%; top: 52%; }
+.luci--3 { right:  8%; top: 68%; }
+.luci--4 { right: 34%; top: 34%; }
+
+.js .luci--1 { animation: deriva1 17s ease-in-out infinite,        respira 4.2s ease-in-out infinite; }
+.js .luci--2 { animation: deriva2 21s ease-in-out infinite 1.5s,   respira 5.6s ease-in-out infinite 0.7s; }
+.js .luci--3 { animation: deriva1 24s ease-in-out infinite 4s,     respira 3.8s ease-in-out infinite 2.1s; }
+.js .luci--4 { animation: deriva2 19s ease-in-out infinite 2.8s,   respira 4.9s ease-in-out infinite 1.4s; }
+
+/* Erratico: van y vuelven sin llegar a ninguna parte. Dos trayectorias
+   distintas para que cuatro bichos no vuelen en formacion. */
+@keyframes deriva1 {
+  0%,100% { transform: translate(0, 0);        }
+  22%     { transform: translate(-34px, 18px); }
+  41%     { transform: translate(12px, 42px);  }
+  63%     { transform: translate(-52px, 26px); }
+  84%     { transform: translate(-18px, -14px);}
+}
+@keyframes deriva2 {
+  0%,100% { transform: translate(0, 0);        }
+  18%     { transform: translate(28px, -22px); }
+  44%     { transform: translate(-16px, -46px);}
+  69%     { transform: translate(38px, -12px); }
+  88%     { transform: translate(8px, 20px);   }
+}
+/* El parpadeo es RESPIRACION, no titileo: sube y baja despacio. */
+@keyframes respira {
+  0%,100% { opacity: .25; }
+  50%     { opacity: 1;   }
+}
+
+/* ═══════════ LA PIEZA FIRMA — EL PLANO ═══════════ */
+.plano {
+  padding: clamp(3.5rem, 10vh, 7rem) clamp(1.25rem, 5vw, 4rem);
+  background: var(--papel);
+}
+.plano__cabecera { max-width: min(100%, 44rem); margin-bottom: 2rem; }
+
+.antetitulo {
+  font-family: var(--dato);
+  font-size: .7rem; letter-spacing: .16em;
+  text-transform: uppercase; color: var(--tinta-2);
+  margin-bottom: .8rem;
+}
+.antetitulo--claro { color: var(--lona-cl); }
+
+.plano h2, .reglas h2 {
+  font-size: clamp(2.1rem, 5.6vw, 3.6rem);
+  line-height: 1.04;
+  margin-bottom: 1.1rem;
+}
+.entrada {
+  font-size: 1.05rem;
+  color: var(--tinta-2);
+  max-width: min(100%, 37rem);
+  margin-bottom: 1.4rem;
+}
+.entrada em { font-style: italic; color: var(--tinta); }
+
+.marca-ejemplo { margin: 0; }
+.marca-ejemplo::before {
+  content: attr(data-ejemplo);
+  display: inline-block;
+  font-family: var(--dato);
+  font-size: .68rem; letter-spacing: .06em;
+  text-transform: uppercase;
+  color: var(--lona);
+  border-left: 2px solid var(--lona);
+  padding-left: .6rem;
+}
+/* Esta marca es mas fuerte que las otras del registro a proposito: el
+   plano es un dibujo inventado y no puede confundirse con el real. */
+.marca-ejemplo--fuerte::before {
+  background: var(--papel-2);
+  border-left-width: 4px;
+  padding: .5rem .8rem;
+  line-height: 1.5;
+}
+
+/* ── EL MAPA ── */
+.mapa { margin: 0 0 2.2rem; }
+.mapa__svg {
+  display: block;
+  width: 100%;
+  height: auto;
+  background: var(--papel-3);
+  border: 1px solid var(--linea);
+}
+.m-rio    { fill: var(--lona-3); opacity: .55; }
+.m-zona   { fill: none; stroke: var(--linea); stroke-width: 1.5; }
+.m-arbol  { fill: #6E8F5E; opacity: .28; }
+.m-s      { fill: var(--lona); }
+.m-n      { fill: var(--papel-3); font-family: var(--dato); font-size: 12px; text-anchor: middle; }
+.m-zt     { fill: var(--tinta-2); font-family: var(--dato); font-size: 11px; letter-spacing: .08em; }
+.m-rot    { fill: var(--tinta-2); font-family: var(--dato); font-size: 10px; letter-spacing: .12em; }
+.m-serv   { fill: var(--papel-2); stroke: var(--linea); stroke-width: 1.5; }
+.m-st     { fill: var(--tinta-2); font-family: var(--dato); font-size: 10px; text-anchor: middle; letter-spacing: .08em; }
+.m-flecha { fill: var(--lona); }
+
+/* Cada zona del plano es un enlace a su ficha. */
+.mapa__svg a { cursor: pointer; }
+.mapa__svg a:hover .m-zona { stroke: var(--lona); stroke-width: 2.5; }
+.mapa__svg a:hover .m-s    { fill: var(--lona-3); }
+.mapa__svg a:focus-visible .m-zona { stroke: var(--lona); stroke-width: 3; }
+
+.mapa__pie {
+  font-family: var(--dato);
+  font-size: .8rem;
+  line-height: 1.6;
+  color: var(--tinta-2);
+  margin: .8rem 0 0;
+  max-width: min(100%, 50rem);
+}
+
+/* ── las fichas de zona ── */
+.zonas { display: grid; gap: 1.2rem; margin-bottom: 1.8rem; }
+.zona {
+  display: grid;
+  grid-template-columns: 3.4rem minmax(0, 1fr);
+  gap: 1rem 1.2rem;
+  padding: 1.4rem 0;
+  border-top: 1px solid var(--linea);
+  scroll-margin-top: 5rem;
+}
+.zona:last-child { border-bottom: 1px solid var(--linea); }
+.zona__l {
+  font-family: var(--display);
+  font-size: 2.6rem;
+  line-height: .9;
+  color: var(--lona);
+  margin: 0;
+}
+.zona__cuerpo { max-width: min(100%, 44rem); }
+.zona__cuerpo h3 { font-size: 1.5rem; margin-bottom: .5rem; }
+.zona__cuerpo p { color: var(--tinta-2); font-size: .97rem; }
+.zona__specs { margin: 1rem 0 0; }
+.zs {
+  display: grid;
+  grid-template-columns: minmax(0, 13rem) minmax(0, 1fr);
+  gap: .2rem 1.2rem;
+  padding: .5rem 0;
+  border-top: 1px solid var(--linea);
+}
+.zs dt { font-family: var(--dato); font-size: .74rem; color: var(--tinta-2); }
+.zs dd { margin: 0; font-size: .95rem; }
+@media (max-width: 34rem) {
+  .zona { grid-template-columns: 1fr; }
+  .zs { grid-template-columns: 1fr; }
+}
+
+.falta {
+  font-family: var(--dato);
+  font-size: .86em;
+  color: var(--lona);
+  border-bottom: 1px dashed var(--lona);
+}
+/* El fondo decide el tono. */
+.reglas .falta, .portada .falta { color: var(--lona-cl); border-bottom-color: var(--lona-cl); }
+
+.ojo {
+  background: var(--papel-2);
+  border-left: 3px solid var(--lona);
+  padding: 1.2rem 1.4rem;
+  max-width: min(100%, 46rem);
+}
+.ojo p { margin: 0; font-size: .96rem; color: var(--tinta-2); }
+.ojo b { color: var(--tinta); }
+
+/* ═══════════ LAS REGLAS ═══════════ */
+.reglas {
+  background: var(--lona-2);
+  background-image: var(--tejido);
+  color: var(--papel);
+  padding: clamp(3.5rem, 10vh, 7rem) clamp(1.25rem, 5vw, 4rem);
+}
+.reglas__cuerpo { max-width: min(100%, 46rem); }
+.reglas .entrada { color: var(--lona-cl); }
+
+.huecos { margin: 0 0 1.6rem; }
+.hueco {
+  display: grid;
+  grid-template-columns: minmax(0, 15rem) minmax(0, 1fr);
+  gap: .3rem 1.8rem;
+  padding: 1rem 0;
+  border-top: 1px solid var(--linea-osc);
+}
+.hueco:last-child { border-bottom: 1px solid var(--linea-osc); }
+.huecos dt {
+  font-family: var(--dato);
+  font-size: .74rem;
+  color: var(--lona-cl);
+  align-self: start;
+  padding-top: .2rem;
+}
+.huecos dd { margin: 0; }
+.hueco__pq { display: block; font-size: .92rem; color: var(--lona-cl); margin-top: .3rem; }
+@media (max-width: 40rem) { .hueco { grid-template-columns: 1fr; } }
+
+.nota-honesta {
+  font-size: .95rem;
+  color: var(--lona-cl);
+  border-left: 3px solid var(--lona-cl);
+  padding: .2rem 0 .2rem 1.1rem;
+  margin: 0;
+}
+.nota-honesta b { color: var(--papel); }
+
+/* ═══════════ EL CIERRE — T1 ═══════════ */
+.cierre {
+  background: var(--tinta);
+  padding: clamp(3.5rem, 10vh, 6.5rem) clamp(1.25rem, 5vw, 4rem);
+  text-align: center;
+}
+.cierre__rot {
+  font-family: var(--dato);
+  font-size: .72rem; letter-spacing: .18em;
+  text-transform: uppercase; color: var(--lona-cl);
+  margin-bottom: 1rem;
+}
+.cierre__tel { margin: 0 0 1.2rem; }
+.cierre__tel a {
+  font-family: var(--dato);
+  font-size: clamp(1.5rem, 6.4vw, 3.6rem);
+  line-height: 1;
+  letter-spacing: -.02em;
+  color: var(--lona-cl);
+  text-decoration: none;
+  white-space: nowrap;
+}
+.cierre__tel a:hover { color: var(--papel); }
+.cierre__pie {
+  font-size: .95rem;
+  color: #BCC4CC;
+  max-width: 44rem;
+  margin: 0 auto;
+}
+
+/* ═══════════ PARA EL DUEÑO ═══════════ */
+.dueno {
+  background: var(--papel-2);
+  color: var(--tinta);
+  padding: clamp(3rem, 8vh, 5.5rem) clamp(1.25rem, 5vw, 4rem);
+}
+.dueno h2 { font-size: clamp(1.9rem, 4vw, 2.8rem); margin-bottom: 2rem; }
+.dueno__cols {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+  gap: 2rem;
+  margin-bottom: 2.5rem;
+}
+.dueno h3 {
+  font-family: var(--dato);
+  font-size: .7rem; letter-spacing: .12em;
+  text-transform: uppercase; color: var(--lona);
+  font-weight: 400;
+  margin-bottom: .5rem;
+}
+.dueno p { color: var(--tinta-2); font-size: .96rem; margin: 0; }
+.dueno__cierre { display: flex; flex-wrap: wrap; gap: 1.5rem 2.5rem; margin: 0; }
+.flecha {
+  font-weight: 600;
+  color: var(--lona);
+  text-decoration: none;
+  border-bottom: 1px solid var(--lona);
+  padding-bottom: 2px;
+}
+.flecha:hover { color: var(--tinta); border-bottom-color: var(--tinta); }
+
+.pie {
+  background: var(--tinta);
+  color: #BCC4CC;
+  padding: 2rem clamp(1.25rem, 5vw, 4rem) 2.5rem;
+  font-size: .8rem;
+}
+.pie p { margin: 0; max-width: 68ch; }
+
+/* ═══════════ APARICIONES ═══════════ */
+.js .rev { opacity: 0; transform: translateY(16px); }
+.js .rev.ok { opacity: 1; transform: none; transition: opacity .7s ease, transform .7s ease; }
+
+@media (prefers-reduced-motion: reduce) {
+  /* Las luciernagas SE ESCONDEN: cuatro puntos amarillos quietos sobre
+     fondo oscuro no son bichos, son polvo en la pantalla. */
+  .noche { display: none; }
+}
+
+/* ══════════════════════════════════════════════════════════════════
+   LAS IMÁGENES DE RUBRO — seis tratamientos
+   ══════════════════════════════════════════════════════════════════
+   La página no puede ser texto sobre fondo plano de arriba abajo. Van
+   seis apariciones distintas, para que el ojo no vea siempre lo mismo:
+   portada disuelta, aura de color, media pantalla, cita a sangre, tira
+   de tres, y la galería con las fotos propias del negocio.
+
+   LA REGLA: la foto no se ensucia para poder leer encima. Lo que
+   sostiene el contraste es un gradiente por zona. La ÚNICA excepción es
+   el aura, donde el desenfoque no es un parche sino el efecto entero.
+
+   Procedencia de cada archivo: imagenes/FUENTES.txt
+   ══════════════════════════════════════════════════════════════════ */
+
+/* ── 1 · PORTADA ── */
+/* position/isolation acá y no heredadas: hay demos cuya .portada no es
+   posicionada, y entonces el .portada__foto absoluto se cuelga del body
+   y tapa el titular entero. El z-index del texto va por lo mismo. */
+.portada--foto { position: relative; isolation: isolate; overflow: hidden; padding-top: clamp(1.5rem, 3.5vh, 3.5rem); }
+.portada--foto .portada__texto { position: relative; z-index: 2; max-width: 40rem; }
+.portada__foto { position: absolute; z-index: 0; inset: 0; overflow: hidden; pointer-events: none; }
+.portada__foto img {
+  display: block; width: 100%; height: 100%;
+  object-fit: cover; object-position: 52% 44%;
+  -webkit-mask-image: linear-gradient(90deg, transparent 0%, transparent 42%,
+              rgba(0,0,0,.16) 54%, rgba(0,0,0,.58) 68%, #000 80%, #000 100%);
+          mask-image: linear-gradient(90deg, transparent 0%, transparent 42%,
+              rgba(0,0,0,.16) 54%, rgba(0,0,0,.58) 68%, #000 80%, #000 100%);
+}
+/* Sin velo ::after: acá el fondo de la portada es lona con trama, y el
+   velo del mismo color tapaba la foto entera en vez de degradarla. La
+   mascara de la imagen ya hace el trabajo — la foto no existe donde va
+   el titular y aparece entera del 72% hacia la derecha. */
+@media (prefers-reduced-motion: no-preference) {
+  .portada__foto img { animation: respira 46s ease-in-out infinite alternate; }
+}
+@keyframes respira {
+  from { transform: scale(1.04) translate3d(0, 0, 0); }
+  to   { transform: scale(1.11) translate3d(-1.8%, -1.2%, 0); }
+}
+.js .portada--foto .portada__foto { opacity: 0; }
+.js .portada--foto.ok .portada__foto { opacity: 1; transition: opacity 1.1s ease; }
+.js .portada.rev,
+.js .portada.rev.ok { opacity: 1; transform: none; transition: none; }
+@media (max-width: 860px) {
+  .portada--foto { padding-top: 36svh; }
+  .portada__foto img {
+    object-position: 50% 44%;
+    -webkit-mask-image: linear-gradient(180deg, #000 0%, #000 30%, rgba(0,0,0,.34) 58%, transparent 78%);
+            mask-image: linear-gradient(180deg, #000 0%, #000 30%, rgba(0,0,0,.34) 58%, transparent 78%);
+  }
+  .portada__foto::after {
+    background: linear-gradient(180deg, rgba(43,71,93,0) 0%, rgba(43,71,93,.30) 42%, var(--lona-2) 70%);
+  }
+}
+
+/* ── 2 · AURA DE COLOR ── */
+#plano { position: relative; isolation: isolate; overflow: hidden; }
+.aura { position: absolute; z-index: -1; inset: -12% -8% auto -8%; height: 78%; pointer-events: none; }
+.aura img {
+  display: block; width: 100%; height: 100%; object-fit: cover;
+  /* Acá el desenfoque ES el efecto: la foto deja de leerse y queda la luz. */
+  filter: blur(64px) saturate(1.45);
+  opacity: .38;
+  transform: scale(1.25);
+  /* Y se apaga EN LA IMAGEN, no con un velo encima. Un ::after que pinta
+     el fondo apaga solo DENTRO del div: en el borde de abajo queda un
+     corte recto a media seccion. Con la mascara la imagen misma se
+     desvanece y no hay borde que cortar. */
+  -webkit-mask-image: radial-gradient(ellipse 74% 58% at 50% 34%,
+              #000 0%, #000 26%, rgba(0,0,0,.55) 52%, transparent 82%);
+          mask-image: radial-gradient(ellipse 74% 58% at 50% 34%,
+              #000 0%, #000 26%, rgba(0,0,0,.55) 52%, transparent 82%);
+}
+@media (prefers-reduced-motion: no-preference) {
+  .aura img { animation: deriva-aura 68s ease-in-out infinite alternate; }
+}
+@keyframes deriva-aura {
+  from { transform: scale(1.25) translate3d(-3%, 0, 0); }
+  to   { transform: scale(1.38) translate3d(3%, -2%, 0); }
+}
+
+/* ── 3 · MEDIA PANTALLA ── */
+.mitades {
+  display: grid; grid-template-columns: 1fr 1fr; align-items: stretch;
+  background: var(--lona);
+  /* overflow hidden porque las entradas son laterales: mientras el texto
+     se desliza y la foto entra a escala, ambos se salen unos píxeles y
+     aparece scroll horizontal por un segundo. */
+  overflow: hidden;
+}
+.mitades__foto { position: relative; min-height: 62svh; overflow: hidden; }
+.mitades__foto img { display: block; width: 100%; height: 100%; object-fit: cover; object-position: 52% 50%; }
+.mitades__texto {
+  padding: clamp(2.5rem, 6vw, 5rem) clamp(1.4rem, 4vw, 3.5rem);
+  display: flex; flex-direction: column; justify-content: center;
+  color: var(--papel);
+}
+.mitades__ante {
+  font-family: var(--dato); font-size: .72rem; letter-spacing: .16em;
+  text-transform: uppercase; color: var(--luciernaga); margin: 0 0 .9rem;
+}
+.mitades h2 {
+  font-family: var(--display); font-weight: 500;
+  font-size: clamp(1.7rem, 3.6vw, 2.8rem); line-height: 1.08;
+  margin: 0 0 1rem; color: var(--papel);
+}
+.mitades__texto p:last-child {
+  margin: 0; font-size: 1rem; line-height: 1.65; color: var(--papel); max-width: 34rem;
+}
+.js .mitades__texto.rev { opacity: 0; transform: translateX(1.6rem); }
+.js .mitades__foto.rev  { opacity: 0; transform: scale(1.04); }
+.js .mitades__texto.rev.ok,
+.js .mitades__foto.rev.ok {
+  opacity: 1; transform: none;
+  transition: opacity .9s ease, transform 1.1s cubic-bezier(.2,.7,.2,1);
+}
+@media (max-width: 780px) {
+  .mitades { grid-template-columns: 1fr; }
+  .mitades__foto { min-height: 44svh; }
+}
+
+/* ── 4 · LA CITA A SANGRE ── */
+.cita {
+  position: relative; isolation: isolate; min-height: 70svh;
+  display: flex; align-items: center; justify-content: center;
+  padding: clamp(3rem, 9vw, 7rem) clamp(1.2rem, 5vw, 4rem);
+  background: var(--lona-2); overflow: hidden;
+}
+.cita__foto { position: absolute; inset: 0; z-index: -1; overflow: hidden; }
+.cita__foto img { display: block; width: 100%; height: 100%; object-fit: cover; object-position: 50% 44%; }
+/* Velo parejo y fuerte: el texto va centrado y grande, encima de la foto
+   entera. Calculado sobre el peor caso —imagen del color contrario
+   detrás— para que el ratio aguante sin ensuciar la imagen. */
+.cita__foto::after {
+  content: ""; position: absolute; inset: 0;
+  background: linear-gradient(180deg, rgba(43,71,93,.62) 0%,
+              rgba(43,71,93,.80) 45%, rgba(43,71,93,.88) 100%);
+}
+.cita__texto { margin: 0; max-width: 42rem; text-align: center; color: var(--papel); }
+.cita__texto p {
+  font-family: var(--display); font-weight: 500;
+  font-size: clamp(1.8rem, 4.6vw, 3.2rem); line-height: 1.16;
+  margin: 0; color: var(--papel);
+}
+.cita__eco {
+  display: block; margin-top: 1.1rem;
+  font-family: var(--dato); font-size: .82rem; letter-spacing: .1em;
+  text-transform: uppercase; color: var(--luciernaga);
+}
+.js .cita__texto.rev { opacity: 0; transform: translateY(16px); }
+.js .cita__texto.rev.ok {
+  opacity: 1; transform: none;
+  transition: opacity 1s ease, transform 1s cubic-bezier(.2,.7,.2,1);
+}
+@media (prefers-reduced-motion: no-preference) {
+  .cita__foto img { animation: respira-cita 58s ease-in-out infinite alternate; }
+}
+@keyframes respira-cita {
+  from { transform: scale(1.06) translate3d(0, 0, 0); }
+  to   { transform: scale(1.13) translate3d(1.4%, -1%, 0); }
+}
+
+/* ── 5 · LA TIRA ── */
+.tira { display: grid; grid-template-columns: repeat(3, 1fr); gap: 2px; background: var(--linea-osc); }
+.tira__pieza { margin: 0; overflow: hidden; height: 34svh; min-height: 220px; }
+.tira__pieza img {
+  display: block; width: 100%; height: 100%; object-fit: cover;
+  transition: transform 1.1s cubic-bezier(.2,.7,.2,1);
+}
+@media (hover: hover) and (pointer: fine) {
+  .tira__pieza:hover img { transform: scale(1.05); }
+}
+.js .tira__pieza.rev { opacity: 0; transform: translateY(1.4rem); }
+.js .tira__pieza.rev.ok {
+  opacity: 1; transform: none;
+  transition: opacity .8s ease, transform .9s cubic-bezier(.2,.7,.2,1);
+}
+.js .tira__pieza.rev.ok:nth-child(2) { transition-delay: .1s; }
+.js .tira__pieza.rev.ok:nth-child(3) { transition-delay: .2s; }
+@media (max-width: 700px) {
+  .tira { grid-template-columns: 1fr 1fr; }
+  .tira__pieza:last-child { grid-column: 1 / -1; height: 28svh; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .js .portada--foto .portada__foto,
+  .js .mitades__texto.rev, .js .mitades__foto.rev,
+  .js .cita__texto.rev, .js .tira__pieza.rev { opacity: 1; transform: none; }
+}
+
+/* ══════ LAS FOTOS ══════
+   Grilla dura, igual que el resto de la pagina: dos arriba y una ancha
+   abajo. Cada figura llega desde un lado distinto — izquierda, derecha,
+   abajo — con un retardo escalonado, para que se lean como tres cosas
+   puestas sobre la mesa y no como un bloque que se enciende. */
+.galeria {
+  padding: clamp(3rem, 8vw, 6rem) clamp(1.2rem, 5vw, 4rem);
+  max-width: 78rem; margin: 0 auto;
+}
+.galeria__titulo {
+  font-family: var(--display); font-weight: 500;
+  font-size: clamp(1.9rem, 4.4vw, 3.1rem); line-height: 1.05;
+  margin: 0 0 .6rem; color: var(--tinta);
+}
+.galeria__nota {
+  max-width: 40rem; margin: 0 0 2.2rem;
+  color: var(--tinta-2); font-size: .96rem; line-height: 1.6;
+}
+.galeria__grilla { display: grid; gap: clamp(.9rem, 2vw, 1.6rem); grid-template-columns: 1fr 1fr; }
+.gal { margin: 0; background: var(--papel-2); border: 1px solid var(--linea); padding: .6rem; }
+.gal--abajo { grid-column: 1 / -1; }
+.gal img {
+  display: block; width: 100%; height: 100%;
+  aspect-ratio: 3 / 2; object-fit: cover;
+  border-bottom: 3px solid var(--lona);
+}
+.gal--abajo img { aspect-ratio: 16 / 7; }
+.gal figcaption {
+  font-family: var(--dato); font-size: .74rem; line-height: 1.5;
+  color: var(--tinta-2); padding: .65rem .2rem 0;
+}
+.galeria__falta {
+  font-family: var(--dato); font-size: .74rem; color: var(--tinta-2);
+  margin: 1.4rem 0 0; padding-left: 1.1rem; position: relative;
+}
+.galeria__falta::before { content: '·'; position: absolute; left: .3rem; }
+
+.js .gal.rev { opacity: 0; }
+.js .gal--izq.rev   { transform: translateX(-2.4rem); }
+.js .gal--der.rev   { transform: translateX(2.4rem); }
+.js .gal--abajo.rev { transform: translateY(2.4rem) scale(.98); }
+.js .gal.rev.ok {
+  opacity: 1; transform: none;
+  transition: opacity .8s ease, transform 1s cubic-bezier(.2,.7,.2,1);
+}
+.js .gal--der.rev.ok   { transition-delay: .12s; }
+.js .gal--abajo.rev.ok { transition-delay: .22s; }
+
+@media (max-width: 700px) {
+  .galeria__grilla { grid-template-columns: 1fr; }
+  .gal--abajo img { aspect-ratio: 3 / 2; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .js .gal.rev { opacity: 1; transform: none; }
+}
+
+/* ── TAJO: LA FRANJA A SANGRE ──
+   Una franja de foto entre dos secciones. No lleva texto encima, asi
+   que no lleva velo: se ve la foto y punto. Es la aparicion que mas
+   llena la pagina por el peso que cuesta. */
+/* La clase es .tajo y no .banda ni .franja: hay demos que ya usan esos
+   dos nombres para secciones propias, y chocaban. */
+.tajo {
+  position: relative; overflow: hidden;
+  height: clamp(180px, 30svh, 340px);
+  background: var(--lona);
+}
+.tajo img {
+  display: block; width: 100%; height: 100%;
+  object-fit: cover; object-position: 50% 50%;
+}
+@media (prefers-reduced-motion: no-preference) {
+  .tajo img { animation: deriva-tajo 54s ease-in-out infinite alternate; }
+}
+@keyframes deriva-tajo {
+  from { transform: scale(1.06) translate3d(-1.2%, 0, 0); }
+  to   { transform: scale(1.12) translate3d(1.2%, -1.4%, 0); }
+}
+.js .tajo { opacity: 0; }
+.js .tajo.ok { opacity: 1; transition: opacity 1s ease; }
+@media (prefers-reduced-motion: reduce) {
+  .js .tajo { opacity: 1; }
+}
+
+/* ── TELON: la foto detras de una seccion entera ──
+   No es el aura. El aura va reventada a 64 px y se lee como mancha de
+   color; el telon va NITIDO y bajo de opacidad, y se lee como foto.
+   El texto encima se sostiene porque la foto esta al .15, no porque
+   este sucia — que es la regla de siempre. */
+.con-telon { position: relative; isolation: isolate; overflow: hidden; }
+.telon { position: absolute; inset: 0; z-index: -1; pointer-events: none; }
+.telon img {
+  display: block; width: 100%; height: 100%;
+  object-fit: cover; object-position: 50% 44%;
+  opacity: .15;
+  -webkit-mask-image: linear-gradient(180deg, transparent 0%, #000 18%, #000 72%, transparent 100%);
+          mask-image: linear-gradient(180deg, transparent 0%, #000 18%, #000 72%, transparent 100%);
+}
+@media (prefers-reduced-motion: no-preference) {
+  .telon img { animation: deriva-telon 76s ease-in-out infinite alternate; }
+}
+@keyframes deriva-telon {
+  from { transform: scale(1.04) translate3d(0, 0, 0); }
+  to   { transform: scale(1.10) translate3d(-1.6%, -1%, 0); }
+}
+
+/* ── MOSAICO ──
+   Seis piezas en grilla. Es la unica parte de la pagina donde una
+   imagen puede repetirse con otro recorte: a este tamano no se lee
+   como repeticion sino como serie. */
+/* El mosaico trae su propio fondo: sus colores salen del bloque de
+   .mitades y hay demos donde ese fondo es el contrario al del body —
+   el titulo quedaba a 1,00:1, invisible. Con fondo propio el contraste
+   esta garantizado en todas. */
+.mos {
+  background: var(--lona);
+  padding: clamp(2.6rem, 7vw, 5rem) clamp(1.2rem, 5vw, 4rem);
+}
+.mos__titulo {
+  max-width: 82rem; margin-left: auto; margin-right: auto;
+  font-family: var(--display); font-weight: 500;
+  font-size: clamp(1.5rem, 3.4vw, 2.4rem); line-height: 1.08;
+  margin: 0 0 .5rem; color: var(--papel);
+}
+.mos__nota {
+  max-width: 82rem; margin: 0 auto 1.8rem;
+  color: var(--luciernaga); font-size: .94rem; line-height: 1.6;
+}
+.mos__grilla {
+  display: grid; gap: 4px;
+  grid-template-columns: repeat(3, 1fr);
+  max-width: 82rem; margin: 0 auto;
+}
+.mos__p { margin: 0; overflow: hidden; height: clamp(140px, 20svh, 220px); background: var(--lona); }
+.mos__p img {
+  display: block; width: 100%; height: 100%; object-fit: cover;
+  transition: transform 1.1s cubic-bezier(.2,.7,.2,1), filter .6s ease;
+}
+.mos__p:nth-child(1), .mos__p:nth-child(6) { grid-column: span 2; }
+@media (hover: hover) and (pointer: fine) {
+  .mos__p:hover img { transform: scale(1.06); }
+}
+.js .mos__p { opacity: 0; transform: translateY(1.2rem); }
+.js .mos__p.ok {
+  opacity: 1; transform: none;
+  transition: opacity .8s ease, transform .9s cubic-bezier(.2,.7,.2,1);
+}
+.js .mos__p.ok:nth-child(2) { transition-delay: .06s; }
+.js .mos__p.ok:nth-child(3) { transition-delay: .12s; }
+.js .mos__p.ok:nth-child(4) { transition-delay: .18s; }
+.js .mos__p.ok:nth-child(5) { transition-delay: .24s; }
+.js .mos__p.ok:nth-child(6) { transition-delay: .30s; }
+@media (max-width: 760px) {
+  .mos__grilla { grid-template-columns: 1fr 1fr; }
+  .mos__p:nth-child(1), .mos__p:nth-child(6) { grid-column: 1 / -1; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .js .mos__p { opacity: 1; transform: none; }
+}

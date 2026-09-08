@@ -1,0 +1,416 @@
+/* ═══════════════════════════════════════════════════════════════════
+   189 · Farmacia Francia — farmacia independiente · Loncoche
+   Demo comercial sin encargo. Construida el 02-09-2026.
+
+   DIRECCIÓN — «SIN LETRERO DE OFERTA»
+   Una farmacia de pueblo no le gana a la cadena por precio ni por
+   surtido: le gana porque alguien contesta. Las cadenas son ruidosas
+   —verde chillón, amarillo, rojo, ofertas por todas partes—, así que
+   esta página hace exactamente lo contrario: madera, orden y silencio.
+
+   PALETA — PRIMERA FARMACIA del registro (la única cercana es la
+   156-veterinaria-sokimu, que es veterinaria CON farmacia y va en otra
+   dirección). Deslindes de los verdes ya usados:
+   · El verde de esta página es VIDRIO DE BOTICA `#1F4D3D`: oscuro,
+     apagado, de frasco. NO es el verde-cruz brillante de cadena, que
+     es justamente lo que la página se niega a ser.
+   · Los verdes del registro son de bosque, de quirófano, de bici y de
+     faena; ninguno es vidrio de frasco sobre papel de etiqueta.
+   El acento se usa RACIONADO: rótulos, filetes y el frasco. Los
+   colores de cadena (verde brillante, amarillo, rojo de oferta) están
+   prohibidos en esta demo por definición de la dirección.
+
+   TRÍO — verificado contra identidades.md el 02-09-2026:
+   · Display BRYGADA 1918 (0 usos). Serif de documento, con historia;
+     es la letra de una etiqueta de frasco, no de un afiche.
+   · Cuerpo RUBIK (3 usos). Esquinas apenas redondeadas: moderna sin
+     ser fría, que es el tono de un mesón de barrio.
+   · Mono OXYGEN MONO (4 usos, el menos usado que calza). Para los
+     rótulos y las direcciones.
+
+   ESTRUCTURA D · PÁGINA-CARTA — la pieza firma se compone como una
+   carta de menú: pregunta a la izquierda, respuesta a la derecha,
+   unidas por una línea de puntos.
+   CONTACTO T4 · botón fantasma (borde 1px, relleno que sube al hover).
+   AMBIENTE: polvo en el rayo de luz, variante para fondo claro.
+   ═══════════════════════════════════════════════════════════════════ */
+
+:root {
+  --papel:   #F4F0E6;
+  --panel:   #EAE4D6;
+  --panel-2: #E1DACA;
+  --tinta:   #23201B;   /* 14,9:1 sobre papel */
+  --medio:   #635D51;   /* 6,4:1 sobre papel; 5,7:1 sobre --panel-2,
+                           que es el peor fondo — calibrado contra ése */
+  --botella: #1F4D3D;   /* vidrio de botica: 8,9:1 sobre papel */
+  --madera:  #8A5A34;   /* OBJETOS, no texto: sobre papel da 4,9:1 y no
+                           se usa nunca bajo 18px */
+  --linea:   #CFC6B2;
+
+  --sale:   cubic-bezier(.16, 1, .3, 1);
+  --sale-2: cubic-bezier(.2, 0, 0, 1);
+
+  --ancho: min(92vw, 1120px);
+  --p--1: clamp(.78rem, .74rem + .18vw, .88rem);
+  --p-0:  clamp(1rem, .95rem + .25vw, 1.12rem);
+  --p-1:  clamp(1.15rem, 1.05rem + .45vw, 1.38rem);
+  --p-2:  clamp(1.6rem, 1.35rem + 1.2vw, 2.3rem);
+  --p-3:  clamp(2rem, 1.5rem + 2.3vw, 3.6rem);
+  --p-4:  clamp(2.6rem, 1.6rem + 4.6vw, 5.6rem);
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+[hidden] { display: none !important; }
+html { scroll-behavior: smooth; }
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+
+body {
+  margin: 0; background: var(--papel); color: var(--tinta);
+  font-family: Rubik, "Segoe UI", system-ui, sans-serif;
+  font-size: var(--p-0); line-height: 1.62;
+  -webkit-font-smoothing: antialiased;
+}
+img { max-width: 100%; }
+a { color: inherit; }
+.ancho { width: var(--ancho); margin-inline: auto; }
+
+.rotulo {
+  font-family: "Oxygen Mono", ui-monospace, monospace;
+  font-size: var(--p--1); letter-spacing: .14em; text-transform: uppercase;
+  color: var(--botella); margin: 0 0 1.4rem;
+}
+.h2 {
+  font-family: "Brygada 1918", Georgia, serif; font-weight: 400;
+  font-size: var(--p-3); line-height: 1.1; letter-spacing: -.01em; margin: 0 0 1.5rem;
+}
+.h2--chico { font-size: var(--p-2); }
+.mini { font-size: var(--p--1); color: var(--medio); max-width: 62ch; }
+.falta { color: var(--medio); font-style: italic; }
+.ej {
+  color: var(--medio); font-style: italic; border-bottom: 1px dashed var(--linea);
+}
+.ej::after {
+  content: " (ej.)"; font-family: "Oxygen Mono", ui-monospace, monospace;
+  font-size: .78em; font-style: normal; opacity: .8;
+}
+
+/* ── BANDA ──────────────────────────────────────────────────────── */
+.propuesta { background: var(--botella); color: #EFF3F0; }
+.propuesta__in { padding: .9rem 0; }
+.propuesta__q {
+  font-family: "Oxygen Mono", ui-monospace, monospace;
+  font-size: var(--p--1); letter-spacing: .04em; margin: 0 0 .2rem;
+}
+.propuesta__d { margin: 0; font-size: var(--p--1); line-height: 1.45; }
+
+/* ── CABECERA ───────────────────────────────────────────────────── */
+.cab {
+  position: sticky; top: 0; z-index: 50;
+  background: var(--papel); border-bottom: 1px solid var(--linea);
+  transition: transform .3s var(--sale-2), background-color .3s ease, border-color .3s ease;
+}
+.cab__in { display: flex; align-items: center; justify-content: space-between; gap: 1.2rem; padding: .55rem 0; }
+.cab__marca { display: inline-flex; align-items: center; gap: .7rem; text-decoration: none; min-height: 44px; }
+.cab__txt {
+  font-family: "Brygada 1918", Georgia, serif;
+  font-size: var(--p-1); line-height: 1; display: flex; flex-direction: column; gap: .18rem;
+}
+.cab__sub {
+  font-family: "Oxygen Mono", ui-monospace, monospace;
+  font-size: .55em; letter-spacing: .1em; color: var(--medio); text-transform: uppercase;
+}
+.cab__nav { display: flex; align-items: center; gap: 1.5rem; }
+.cab__nav a {
+  font-size: var(--p--1); text-decoration: none; color: var(--medio);
+  min-height: 44px; display: inline-flex; align-items: center; transition: color .2s ease;
+}
+.cab__nav a:hover, .cab__nav a:focus-visible { color: var(--tinta); }
+.cab__tel {
+  color: var(--botella) !important;
+  font-family: "Oxygen Mono", ui-monospace, monospace; letter-spacing: .04em;
+}
+
+/* Cabecera 155ª — EL FRASCO DE BOTICA */
+.frasco { position: relative; width: 18px; height: 30px; flex: 0 0 auto; }
+.frasco__tapon {
+  position: absolute; left: 4px; right: 4px; top: 0; height: 5px;
+  background: var(--botella); border-radius: 2px 2px 0 0;
+}
+.frasco__cuerpo {
+  position: absolute; left: 0; right: 0; top: 6px; bottom: 0;
+  border: 1.5px solid var(--botella); border-radius: 4px 4px 3px 3px;
+}
+.frasco__etiqueta {
+  position: absolute; left: 3px; right: 3px; top: 14px; height: 9px;
+  background: var(--papel); border-top: 1.5px solid var(--botella); border-bottom: 1.5px solid var(--botella);
+}
+
+.js .cab--top { background: transparent; border-bottom-color: transparent; }
+.js .cab--oculta { transform: translateY(-100%); }
+@media (prefers-reduced-motion: reduce) { .cab { transition-duration: 1ms; } }
+
+/* ── PORTADA ────────────────────────────────────────────────────── */
+.portada {
+  position: relative; isolation: isolate; overflow: hidden;
+  min-height: 86svh; display: flex; align-items: center; padding: 5rem 0 4rem;
+}
+.portada__foto { position: absolute; inset: 0; z-index: -2; }
+.portada__foto img {
+  display: block; width: 100%; height: 100%; object-fit: cover; object-position: 64% 50%;
+  -webkit-mask-image: linear-gradient(90deg, transparent 0%, transparent 24%, rgba(0,0,0,.24) 42%, rgba(0,0,0,.72) 62%, #000 80%, #000 100%);
+          mask-image: linear-gradient(90deg, transparent 0%, transparent 24%, rgba(0,0,0,.24) 42%, rgba(0,0,0,.72) 62%, #000 80%, #000 100%);
+}
+/* Velo entero en rgba terminando en alfa 0 — un var() no tiene alfa y
+   pintaría la foto de punta a punta. */
+.portada__foto::after {
+  content: ""; position: absolute; inset: 0;
+  background: linear-gradient(90deg,
+    rgba(244,240,230,1) 0%, rgba(244,240,230,1) 30%, rgba(244,240,230,.82) 47%,
+    rgba(244,240,230,.4) 65%, rgba(244,240,230,.1) 84%, rgba(244,240,230,0) 97%);
+}
+.portada__in { position: relative; z-index: 1; }
+.portada__h1 {
+  font-family: "Brygada 1918", Georgia, serif; font-weight: 400;
+  font-size: var(--p-4); line-height: 1.0; letter-spacing: -.02em; margin: 0 0 1.3rem;
+}
+.portada__bajada { max-width: 44ch; color: var(--medio); font-size: var(--p-1); margin: 0 0 2.4rem; }
+.portada__pie { margin: 0; }
+
+/* ── AMBIENTE: polvo, variante para FONDO CLARO ─────────────────── */
+/* Sobre papel el polvo claro desaparece: el catálogo manda oscurecer el
+   color y subir el alfa. Motor de movimiento-web, --i por nth-child
+   (la CSP bloquea style=""), sólo transform y opacity. */
+.amb { position: absolute; inset: 0; z-index: -1; overflow: hidden; pointer-events: none; }
+.amb__p {
+  position: absolute; top: 100%; left: calc(var(--i) * 8.3%);
+  width: var(--tam, 3px); height: var(--tam, 3px); border-radius: 50%;
+  background: rgba(138, 106, 52, .5);
+  opacity: 0;
+  animation: amb-polvo var(--dur, 18s) linear infinite;
+  animation-delay: calc(var(--i) * -1.9s);
+  will-change: transform, opacity;
+}
+.amb--polvo .amb__p:nth-child(3n+1) { --tam: 3px; --dur: 16s; }
+.amb--polvo .amb__p:nth-child(3n+2) { --tam: 2px; --dur: 21s; }
+.amb--polvo .amb__p:nth-child(3n+3) { --tam: 4px; --dur: 25s; }
+.amb__p:nth-child(1){--i:0}  .amb__p:nth-child(2){--i:1}
+.amb__p:nth-child(3){--i:2}  .amb__p:nth-child(4){--i:3}
+.amb__p:nth-child(5){--i:4}  .amb__p:nth-child(6){--i:5}
+.amb__p:nth-child(7){--i:6}  .amb__p:nth-child(8){--i:7}
+.amb__p:nth-child(9){--i:8}  .amb__p:nth-child(10){--i:9}
+.amb__p:nth-child(11){--i:10} .amb__p:nth-child(12){--i:11}
+@keyframes amb-polvo {
+  0%   { transform: translate3d(0, 0, 0) scale(.5); opacity: 0; }
+  14%  { opacity: .55; }
+  100% { transform: translate3d(22vw, -102vh, 0) scale(1); opacity: 0; }
+}
+@media (prefers-reduced-motion: reduce) { .amb { display: none; } }
+@media (max-width: 760px) { .amb__p:nth-child(n+7) { display: none; } }
+
+/* ── BOTÓN FANTASMA (T4) ────────────────────────────────────────── */
+/* Máximo uno por pantalla. Esquinas rectas, relleno que sube. */
+.boton {
+  position: relative; display: inline-flex; align-items: center; justify-content: center;
+  min-height: 48px; padding: .8rem 1.8rem;
+  border: 1px solid var(--botella); color: var(--botella);
+  font-family: "Oxygen Mono", ui-monospace, monospace;
+  font-size: var(--p--1); letter-spacing: .12em; text-transform: uppercase;
+  text-decoration: none; overflow: hidden; isolation: isolate;
+}
+.boton::before {
+  content: ""; position: absolute; inset: 0; z-index: -1;
+  background: var(--botella); transform: translateY(101%);
+  transition: transform .4s var(--sale);
+}
+.boton:hover, .boton:focus-visible { color: var(--papel); }
+.boton:hover::before, .boton:focus-visible::before { transform: translateY(0); }
+.boton--fuerte { background: var(--botella); color: var(--papel); }
+.boton--fuerte::before { background: var(--tinta); }
+@media (prefers-reduced-motion: reduce) { .boton::before { transition-duration: 1ms; } }
+
+.flecha {
+  display: inline-flex; align-items: center; gap: .5rem; min-height: 44px;
+  font-family: "Oxygen Mono", ui-monospace, monospace; font-size: var(--p--1); letter-spacing: .06em;
+  color: var(--botella); text-decoration: none; border-bottom: 1px solid currentColor;
+  transition: border-bottom-width .2s ease;
+}
+.flecha:hover, .flecha:focus-visible { border-bottom-width: 3px; }
+
+/* ── PIEZA FIRMA: LA CARTA ──────────────────────────────────────── */
+.meson { padding: 7rem 0; background: var(--panel); }
+.meson .intro { max-width: 60ch; color: var(--medio); font-size: var(--p-1); margin: 0 0 3.2rem; }
+.carta { margin: 0; }
+.carta__it { padding: 1.8rem 0; border-top: 1px solid var(--linea); }
+.carta__it:last-child { border-bottom: 1px solid var(--linea); }
+.carta__q {
+  font-family: "Brygada 1918", Georgia, serif;
+  font-size: var(--p-1); line-height: 1.25; margin: 0 0 .6rem;
+  /* La línea de puntos de una carta de menú: el gesto de la estructura D */
+  display: flex; align-items: baseline; gap: .8rem;
+}
+.carta__q::after {
+  content: ""; flex: 1 1 auto; height: 0;
+  border-bottom: 1px dotted var(--linea); transform: translateY(-.25em);
+}
+.carta__a { margin: 0; color: var(--medio); max-width: 68ch; }
+.carta__a .ej { color: var(--madera); }
+
+.nota {
+  margin: 3rem 0 0; padding-top: 1.5rem; border-top: 1px solid var(--linea);
+  font-size: var(--p--1); color: var(--medio); max-width: 70ch;
+}
+.nota b { color: var(--tinta); }
+
+/* ── CITA ───────────────────────────────────────────────────────── */
+.cita { position: relative; isolation: isolate; overflow: hidden; min-height: min(54vh, 420px); display: grid; align-items: center; }
+.cita img { position: absolute; inset: 0; z-index: -2; width: 100%; height: 100%; object-fit: cover; object-position: 50% 40%; }
+/* Peor caso medido a mano: los delantales blancos de la foto bajo el
+   velo .8 sobre tinta → texto papel en 7,1:1 a tamaño grande. */
+.cita::after { content: ""; position: absolute; inset: 0; z-index: -1; background: rgba(35,32,27,.8); }
+.cita__txt p {
+  font-family: "Brygada 1918", Georgia, serif;
+  font-size: var(--p-2); line-height: 1.25; max-width: 26ch; margin: 0; color: var(--papel);
+}
+
+/* ── LOCALES ────────────────────────────────────────────────────── */
+.locales { padding: 7rem 0; }
+.dos { display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; margin-bottom: 2rem; }
+.local { border-top: 2px solid var(--botella); padding-top: 1.2rem; }
+.local__n {
+  font-family: "Oxygen Mono", ui-monospace, monospace;
+  font-size: var(--p--1); letter-spacing: .14em; text-transform: uppercase;
+  color: var(--medio); margin: 0 0 .4rem;
+}
+.local__d { font-family: "Brygada 1918", Georgia, serif; font-weight: 400; font-size: var(--p-2); margin: 0 0 1.2rem; line-height: 1.15; }
+.local__specs { margin: 0; }
+.local__specs > div { display: flex; justify-content: space-between; gap: 1rem; padding: .6rem 0; border-bottom: 1px solid var(--linea); }
+.local__specs dt { font-family: "Oxygen Mono", ui-monospace, monospace; font-size: var(--p--1); color: var(--medio); }
+.local__specs dd { margin: 0; font-size: var(--p--1); text-align: right; }
+.local__specs dd a { display: inline-flex; align-items: center; min-height: 44px; }
+
+/* ── TAJO ───────────────────────────────────────────────────────── */
+.tajo { position: relative; isolation: isolate; overflow: hidden; margin: 0; min-height: min(54vh, 430px); display: flex; align-items: flex-end; }
+.tajo img { position: absolute; inset: 0; z-index: -2; width: 100%; height: 100%; object-fit: cover; object-position: 50% 45%; }
+.tajo::after {
+  content: ""; position: absolute; inset: 0; z-index: -1;
+  background: linear-gradient(0deg, rgba(35,32,27,.95) 0%, rgba(35,32,27,.8) 34%, rgba(35,32,27,.3) 64%, rgba(35,32,27,0) 92%);
+}
+.tajo__txt { padding: 2.8rem 0; }
+.tajo__txt .rotulo { color: #C9E0D4; }
+/* El auditor de contraste marca este rotulo y las dos frases claras del
+   tajo y la cita como 1,00:1: sube por el DOM buscando un fondo opaco y
+   encuentra el body, porque el velo es un ::after y no lo ve. Calculado
+   a mano en el PEOR caso (foto totalmente blanca bajo el velo):
+   · .cita__txt p y .tajo__f, papel sobre velo .8 -> 7,3:1
+   · .tajo__txt .rotulo, sobre velo .95 -> 10,2:1
+   Los tres pasan sobrados. Falso positivo conocido del auditor. */
+.tajo__f { font-family: "Brygada 1918", Georgia, serif; font-size: var(--p-2); margin: 0; line-height: 1.2; max-width: 24ch; color: var(--papel); font-style: italic; }
+
+/* ── MITADES ────────────────────────────────────────────────────── */
+.mitades { display: grid; grid-template-columns: 1fr 1fr; background: var(--panel); }
+.mitades__foto img { display: block; width: 100%; height: 100%; object-fit: cover; }
+.mitades__txt { padding: 5.5rem clamp(1.5rem, 4vw, 4rem); display: flex; flex-direction: column; justify-content: center; }
+.mitades__txt > p { color: var(--medio); max-width: 46ch; }
+.lista { margin: 1.4rem 0; padding: 0; list-style: none; }
+.lista li { padding: .55rem 0 .55rem 1.5rem; position: relative; border-bottom: 1px solid var(--linea); font-size: var(--p--1); }
+.lista li::before { content: ""; position: absolute; left: 0; top: 1.05em; width: 8px; height: 1px; background: var(--botella); }
+.lista--marca li { border-bottom: none; padding-bottom: .3rem; }
+
+/* ── MOSAICO ────────────────────────────────────────────────────── */
+/* Sobre su propio fondo, para que el título contraste aunque la página
+   mezcle secciones claras: fue un 1,00:1 real en la demo 151. */
+.mos { padding: 7rem 0 0; background: var(--panel-2); }
+.mos__grilla { display: grid; gap: 4px; grid-template-columns: repeat(3, 1fr); margin-top: 3rem; }
+.mos__p { margin: 0; overflow: hidden; }
+.mos__p:nth-child(1), .mos__p:nth-child(6) { grid-column: span 2; }
+.mos__p img { display: block; width: 100%; height: 100%; aspect-ratio: 3 / 2; object-fit: cover; transition: transform .5s var(--sale); }
+.mos__p:hover img { transform: scale(1.05); }
+@media (prefers-reduced-motion: reduce) { .mos__p:hover img { transform: none; } }
+
+/* ── CONTACTO ───────────────────────────────────────────────────── */
+.con-telon { position: relative; isolation: isolate; overflow: hidden; }
+.telon { position: absolute; inset: 0; z-index: -1; pointer-events: none; }
+.telon img {
+  display: block; width: 100%; height: 100%; object-fit: cover; opacity: .15;
+  -webkit-mask-image: linear-gradient(180deg, transparent 0%, #000 22%, #000 74%, transparent 100%);
+          mask-image: linear-gradient(180deg, transparent 0%, #000 22%, #000 74%, transparent 100%);
+}
+.contacto { padding: 7rem 0; }
+.contacto__num { margin: 0 0 2.6rem; }
+.contacto__num a {
+  font-family: "Brygada 1918", Georgia, serif;
+  font-size: clamp(2rem, 1.2rem + 3.8vw, 4.2rem); line-height: 1;
+  color: var(--botella); text-decoration: none;
+  display: inline-flex; align-items: center; min-height: 44px;
+  border-bottom: 2px solid transparent; transition: border-color .25s ease;
+}
+.contacto__num a:hover, .contacto__num a:focus-visible { border-bottom-color: var(--botella); }
+.datos { margin: 0 0 2rem; max-width: 46rem; }
+.datos > div { display: flex; justify-content: space-between; gap: 1.5rem; padding: .8rem 0; border-bottom: 1px solid var(--linea); }
+.datos dt { font-family: "Oxygen Mono", ui-monospace, monospace; font-size: var(--p--1); color: var(--medio); letter-spacing: .06em; text-transform: uppercase; }
+.datos dd { margin: 0; text-align: right; font-size: var(--p--1); }
+
+/* ── PARA EL DUEÑO ──────────────────────────────────────────────── */
+.dueno { padding: 7rem 0; border-top: 1px solid var(--linea); background: var(--panel-2); }
+.dueno__cols { display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; margin-bottom: 3rem; }
+.dueno h3 {
+  font-family: "Oxygen Mono", ui-monospace, monospace; font-weight: 400;
+  font-size: var(--p--1); letter-spacing: .12em; text-transform: uppercase;
+  color: var(--botella); margin: 2rem 0 1rem;
+}
+.dueno p { color: var(--medio); max-width: 60ch; }
+.dueno .lista li { color: var(--medio); }
+.dueno .lista li b { color: var(--tinta); }
+.dueno__cierre { display: flex; flex-wrap: wrap; gap: 2rem; align-items: center; margin-top: 3rem; }
+
+.pie { padding: 3rem 0; border-top: 1px solid var(--linea); }
+.pie__in p { font-size: var(--p--1); color: var(--medio); margin: 0 0 .8rem; }
+.pie__leg { opacity: .85; }
+
+/* ── REVEALS ────────────────────────────────────────────────────── */
+.js [data-rev-grupo] > * { opacity: 0; transform: translateY(24px); }
+.js [data-rev-grupo].ok > * {
+  opacity: 1; transform: none;
+  transition: opacity .3s ease-out, transform .58s var(--sale);
+  transition-delay: calc(var(--r, 0) * 60ms);
+}
+[data-rev-grupo] > :nth-child(1){--r:0} [data-rev-grupo] > :nth-child(2){--r:1}
+[data-rev-grupo] > :nth-child(3){--r:2} [data-rev-grupo] > :nth-child(4){--r:3}
+[data-rev-grupo] > :nth-child(5){--r:4} [data-rev-grupo] > :nth-child(6){--r:5}
+@media (prefers-reduced-motion: reduce) {
+  .js [data-rev-grupo] > * { opacity: 1; transform: none; transition: none; }
+}
+:focus-visible { outline: 2px solid var(--botella); outline-offset: 3px; }
+
+/* ── MÓVIL ──────────────────────────────────────────────────────── */
+@media (max-width: 980px) {
+  .dos { grid-template-columns: 1fr; gap: 2rem; }
+  .mitades { grid-template-columns: 1fr; }
+  .mitades__foto img { aspect-ratio: 16 / 10; height: auto; }
+  .dueno__cols { grid-template-columns: 1fr; gap: 1rem; }
+}
+@media (max-width: 760px) {
+  .cab__nav a:not(.cab__tel) { display: none; }
+  .portada { min-height: auto; padding: 3.5rem 0 3rem; }
+  /* En teléfono el texto cae sobre la foto: velo de arriba abajo. */
+  .portada__foto img {
+    object-position: 60% 50%;
+    -webkit-mask-image: linear-gradient(180deg, #000 0%, #000 60%, transparent 100%);
+            mask-image: linear-gradient(180deg, #000 0%, #000 60%, transparent 100%);
+  }
+  .portada__foto::after {
+    background: linear-gradient(180deg,
+      rgba(244,240,230,.9) 0%, rgba(244,240,230,.84) 34%, rgba(244,240,230,.9) 64%, rgba(244,240,230,1) 100%);
+  }
+  /* La línea de puntos no cabe junto a una pregunta de dos líneas */
+  .carta__q { display: block; }
+  .carta__q::after { display: none; }
+  .meson, .locales, .contacto, .dueno { padding: 4.5rem 0; }
+  .mos { padding-top: 4.5rem; }
+  .mos__grilla { grid-template-columns: repeat(2, 1fr); }
+  .mos__p:nth-child(1), .mos__p:nth-child(6) { grid-column: span 2; }
+}
+@media (max-width: 460px) {
+  .datos > div, .local__specs > div { flex-direction: column; gap: .2rem; }
+  .datos dd, .local__specs dd { text-align: left; }
+}

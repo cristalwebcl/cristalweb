@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="es-CL" class="no-js">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Suelo Nativo — restaurante, Curarrehue</title>
+<meta name="description" content="Restaurante en Curarrehue. Qué sale del huerto propio y por qué la carta cambia con las estaciones.">
+
+<!-- Política de seguridad de contenido: el navegador sólo puede cargar
+     archivos de este mismo sitio. Sin CDN, sin librerías, sin rastreadores.
+     Ver skills/web-blindada/references/csp-en-pages.md -->
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self'; img-src 'self' data:; font-src 'self'; connect-src 'self'; media-src 'self'; form-action 'self'; base-uri 'none'; frame-src 'none'; object-src 'none'">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+
+<!-- Rescate de la clase .js (regla 2 de la casa). En archivo, sin defer:
+     inline lo bloquearía la CSP. -->
+<script src="js/rescate.js"></script>
+
+<!-- Fuentes propias: cero peticiones a terceros. El preload va SOLO
+     para la display, que es la del titular de la portada. -->
+<link rel="preload" href="assets/fuentes/quattrocento-400-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="assets/fuentes.css">
+<link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+
+<div class="propuesta">
+  <p class="propuesta__que">Propuesta de sitio web — preparada para <b>Suelo Nativo</b> por CristalWeb</p>
+  <p class="propuesta__gancho">Ya pagaron por una página. Al 21 de agosto de 2026 devolvía error 503: el cliente que los busca encuentra un sitio roto, que es peor que no tener ninguno.</p>
+</div>
+
+<header class="cab" id="cab">
+  <a class="cab__marca" href="#portada">
+    <span class="brote" aria-hidden="true"><i></i></span>
+    <span class="cab__nombre">Suelo Nativo</span>
+  </a>
+  <nav class="cab__nav" aria-label="Secciones">
+    <a href="#huerto">Del huerto</a>
+    <a href="#anio">El año</a>
+  </nav>
+  <a class="cab__res" href="#reservar">
+    <span class="cab__res-rot">Curarrehue</span>
+    <span class="cab__res-num">Reservar</span>
+  </a>
+</header>
+
+<main>
+
+<!-- ========= PORTADA ========= -->
+<section class="portada portada--foto" id="portada" aria-labelledby="t-portada">
+  <!-- FONDO DE PORTADA: 2560 px, nitido. Se disuelve hacia el titular
+       con un gradiente lateral, no con desenfoque. -->
+  <div class="portada__foto" aria-hidden="true">
+    <img src="imagenes/port-01.jpg" width="2200" height="1467"
+         decoding="async" fetchpriority="high" alt="">
+  </div>
+
+  <div class="lluvia" aria-hidden="true"></div>
+
+  <div class="portada__texto">
+    <p class="sitio">Restaurante · Curarrehue</p>
+    <h1 id="t-portada">El nombre<br>ya promete<br>algo</h1>
+    <p class="bajada">«Suelo Nativo» dice de dónde viene la comida. Esa promesa es el
+      argumento entero del restaurante y hoy no está escrita en ninguna parte que
+      funcione.</p>
+    <dl class="specs">
+      <div class="spec"><dt>nota en Google</dt><dd>4,8</dd></div>
+      <div class="spec"><dt>reseñas</dt><dd>101</dd></div>
+      <div class="spec"><dt>su sitio actual</dt><dd class="dd--rojo">error 503</dd></div>
+    </dl>
+  </div>
+</section>
+
+<!-- ========= EL 503 — la evidencia ========= -->
+<section class="error" aria-labelledby="t-error">
+  <div class="error__cuerpo">
+    <p class="antetitulo">Lo primero que hay que arreglar</p>
+    <h2 id="t-error">Su página<br>devuelve un error</h2>
+    <p class="entrada">Un sitio caído no es lo mismo que no tener sitio. Google
+      todavía lo muestra en los resultados, la gente hace clic, y lo que reciben es
+      esto:</p>
+
+    <div class="pantalla">
+      <p class="pantalla__url">suelonativo · su dominio actual</p>
+      <p class="pantalla__cod">503</p>
+      <p class="pantalla__msg">Service Unavailable</p>
+      <p class="pantalla__fecha">comprobado el 21-08-2026</p>
+    </div>
+
+    <p class="nota-honesta"><b>Conviene volver a comprobarlo antes de decidir nada.</b>
+      Un 503 puede ser una caída pasajera del servidor, no necesariamente el fin del
+      sitio. Lo que sí es seguro es que ese día estaba caído, y que nadie del local
+      se enteró — que es el problema de fondo de pagar por algo que no se puede
+      revisar solo.</p>
+  </div>
+</section>
+
+<!-- ========= LA PIEZA FIRMA — DEL HUERTO A LA MESA ========= -->
+<section class="huerto con-telon" id="huerto" aria-labelledby="t-huerto">
+  <div class="telon" aria-hidden="true">
+    <img src="imagenes/telon-01.jpg" width="1200" height="800" decoding="async" alt="">
+  </div>
+
+  <!-- AURA DE COLOR: la foto de rubro reventada a desenfoque. No se lee
+       como imagen: aporta color y luz detras de una seccion que si no
+       seria fondo plano. Aca el desenfoque SI es el efecto, no un parche,
+       y por eso el archivo va chico: a 64 px de blur, mas resolucion no
+       cambia nada. Sin loading=lazy porque el elemento va en absoluto con
+       z-index negativo y el navegador nunca lo considera visible. -->
+  <div class="aura" aria-hidden="true">
+    <img src="imagenes/aura-01.jpg" width="900" height="600" decoding="async" alt="">
+  </div>
+
+  <div class="huerto__cabecera">
+    <p class="antetitulo">La promesa del nombre, por escrito</p>
+    <h2 id="t-huerto">Del huerto<br>a la mesa</h2>
+    <p class="entrada">La pregunta no es si la comida es buena —101 reseñas con 4,8
+      ya la contestaron—. Es <em>de dónde sale</em>. Un restaurante que puede decir
+      «esto lo sacamos nosotros» tiene algo que no se copia con precio.</p>
+    <p class="marca-ejemplo" data-ejemplo="La estructura es la propuesta — qué es de huerto propio lo dice el local"></p>
+  </div>
+
+  <div class="grupos">
+    <article class="grupo">
+      <h3 class="grupo__n">Del huerto propio</h3>
+      <p class="grupo__d">Lo que se siembra, se riega y se corta acá mismo. Es la
+        parte que justifica el nombre y la única que ningún competidor puede
+        imitar.</p>
+      <p class="grupo__a"><span class="falta">falta: confirmar qué se cultiva</span></p>
+      <p class="grupo__pq">Con nombrar tres o cuatro —una hortaliza, una hierba, algo
+        de fruta— basta. No hace falta la lista completa.</p>
+    </article>
+
+    <article class="grupo">
+      <h3 class="grupo__n">Del pueblo</h3>
+      <p class="grupo__d">Lo que se compra a vecinos y productores de Curarrehue.
+        Sigue siendo local, y decirlo con nombre y apellido vale tanto como lo
+        propio.</p>
+      <p class="grupo__a"><span class="falta">falta: confirmar a quiénes compran</span></p>
+      <p class="grupo__pq">Si hay una panadería, una quesería o alguien que trae
+        huevos, nombrarlos convierte una compra en una historia.</p>
+    </article>
+
+    <article class="grupo">
+      <h3 class="grupo__n">De más lejos</h3>
+      <p class="grupo__d">Lo que no se da en la zona y hay que traer. Decirlo es lo
+        que hace creíble todo lo demás.</p>
+      <p class="grupo__a"><span class="falta">falta: confirmar</span></p>
+      <p class="grupo__pq">Un restaurante que admite lo que compra afuera gana más
+        confianza que uno que jura que todo es de la huerta.</p>
+    </article>
+  </div>
+
+  <p class="firma">Tres grupos, tres respuestas cortas. Es la sección que convierte el
+    nombre del local en un argumento verificable — y la que hoy no existe ni en la
+    página caída.</p>
+</section>
+
+<!-- ═════════ ESTRUCTURA F — EL AÑO DEL HUERTO ═════════
+     Cuatro capítulos, uno por estación. El orden arranca en la
+     estación en que se construyó la página: invierno. -->
+<!-- ========= MEDIA PANTALLA ========= -->
+<section class="mitades" aria-labelledby="t-mitades">
+  <div class="mitades__foto">
+    <img src="imagenes/media-01.jpg" width="1500" height="833"
+         loading="lazy" decoding="async" alt="">
+  </div>
+  <div class="mitades__texto">
+    <p class="mitades__ante">La única foto suya que hay</p>
+    <h2 id="t-mitades">La esquina, que es como todos lo ubican</h2>
+    <p>En Curarrehue nadie busca la dirección: busca la esquina. Esta foto es la única imagen del local que existe en internet y ya hace la mitad del trabajo — se ve el edificio, se ven los letreros y se entiende dónde queda. Con cuatro fotos más, sacadas con el teléfono, la página deja de depender de fondos prestados para mostrar un restaurante que existe hace años.</p>
+  </div>
+</section>
+
+
+
+<!-- ========= TAJO — FRANJA A SANGRE ========= -->
+<div class="tajo" aria-hidden="true">
+  <img src="imagenes/banda-01.jpg" width="1500" height="833"
+       loading="lazy" decoding="async" alt="">
+</div>
+<section class="anio" id="anio" aria-labelledby="t-anio">
+  <div class="anio__cabecera">
+    <p class="antetitulo antetitulo--claro">Por qué la carta de enero no es la de julio</p>
+    <h2 id="t-anio">El año<br>del huerto</h2>
+    <p class="entrada">Una huerta no produce lo mismo todo el año, y un restaurante
+      que cocina con ella tampoco puede. Lo que en la ciudad sería un problema, acá
+      es la razón para volver en otra época.</p>
+  </div>
+
+  <ol class="estaciones">
+    <li class="est">
+      <p class="est__i" aria-hidden="true">I</p>
+      <div class="est__cuerpo">
+        <h3>Invierno</h3>
+        <p class="est__hoy">Es la estación en que se hizo esta página.</p>
+        <p>La huerta está quieta y lo que hay es lo que aguanta el frío o lo que se
+          guardó: raíces, coles, conservas, lo que se congeló o se secó en marzo.
+          La cocina se vuelve de olla larga.</p>
+        <p class="est__falta"><span class="falta">falta: qué platos hacen en invierno</span></p>
+      </div>
+    </li>
+
+    <li class="est">
+      <p class="est__i" aria-hidden="true">P</p>
+      <div class="est__cuerpo">
+        <h3>Primavera</h3>
+        <p>Empieza a brotar todo junto y en poca cantidad: las primeras hojas, las
+          hierbas frescas, lo tierno. Es la estación de las ensaladas verdaderas y
+          la más corta de todas.</p>
+        <p class="est__falta"><span class="falta">falta: qué aparece primero en su huerta</span></p>
+      </div>
+    </li>
+
+    <li class="est">
+      <p class="est__i" aria-hidden="true">V</p>
+      <div class="est__cuerpo">
+        <h3>Verano</h3>
+        <p>La huerta da más de lo que se puede usar. Es cuando el restaurante puede
+          cocinar prácticamente todo de acá — y también cuando llega la mayor
+          cantidad de gente, así que es la temporada que hay que aprovechar por
+          escrito.</p>
+        <p class="est__falta"><span class="falta">falta: el plato del verano</span></p>
+      </div>
+    </li>
+
+    <li class="est">
+      <p class="est__i" aria-hidden="true">O</p>
+      <div class="est__cuerpo">
+        <h3>Otoño</h3>
+        <p>Se cierra el ciclo: lo último que queda en la tierra y lo que se guarda
+          para el invierno. Es la estación de las conservas, y contar cómo se
+          guarda es de las cosas que más interesan a quien viene de la ciudad.</p>
+        <p class="est__falta"><span class="falta">falta: qué guardan y cómo</span></p>
+      </div>
+    </li>
+  </ol>
+
+  <p class="firma firma--claro">Los ciclos son los generales de una huerta del sur.
+    Lo que da <em>esta</em> huerta lo saben ustedes, y es lo que convierte cuatro
+    párrafos correctos en cuatro párrafos que sólo puede escribir este
+    restaurante.</p>
+
+  <div class="reservar" id="reservar">
+    <h3 class="sub">Reservar</h3>
+    <p class="reservar__intro">Diga cuándo y cuántos son: el mensaje se arma solo.</p>
+
+    <form class="form" id="form-mesa">
+      <div class="campo">
+        <label for="f-cuando">Qué día y a qué hora</label>
+        <input id="f-cuando" name="cuando" type="text" placeholder="Sábado al mediodía" autocomplete="off">
+      </div>
+      <div class="campo">
+        <label for="f-personas">Cuántos son</label>
+        <input id="f-personas" name="personas" type="text" inputmode="numeric" placeholder="4" autocomplete="off">
+      </div>
+      <div class="campo campo--ancho">
+        <label for="f-nota">Algo que quiera preguntar <span class="opcional">(opcional)</span></label>
+        <input id="f-nota" name="nota" type="text" placeholder="¿Hay opción sin carne?" autocomplete="off">
+      </div>
+
+      <p class="resumen" id="resumen" aria-live="polite">El mensaje se arma acá abajo a medida que escribe.</p>
+      <a class="boton" id="enviar" href="#reservar">Enviar por WhatsApp</a>
+      <p class="reservar__nota"><span class="falta">falta: el número</span> — la ficha
+        de Google no publica ninguno, así que el botón todavía no lleva a ninguna parte.</p>
+    </form>
+  </div>
+</section>
+
+</main>
+
+
+
+<!-- ========= MOSAICO ========= -->
+
+<!-- ========= LA CITA A SANGRE ========= -->
+<section class="cita" aria-labelledby="t-cita">
+  <div class="cita__foto" aria-hidden="true">
+    <img src="imagenes/cita-01.jpg" width="2200" height="1650"
+         loading="lazy" decoding="async" alt="">
+  </div>
+  <blockquote class="cita__texto">
+    <p id="t-cita">Lo que se cosecha define la carta<br>
+      <span class="cita__eco">No al revés, que es como funciona en la ciudad</span></p>
+  </blockquote>
+</section>
+
+<!-- ========= LA TIRA ========= -->
+<section class="tira" aria-label="Tres imágenes del oficio">
+  <figure class="tira__pieza">
+    <img src="imagenes/tira-01.jpg" width="950" height="632" loading="lazy" decoding="async" alt="Sotobosque de helechos bajo los árboles.">
+  </figure>
+  <figure class="tira__pieza">
+    <img src="imagenes/tira-02.jpg" width="950" height="631" loading="lazy" decoding="async" alt="Helechos en primer plano, verde oscuro.">
+  </figure>
+  <figure class="tira__pieza">
+    <img src="imagenes/tirb-01.jpg" width="950" height="713" loading="lazy" decoding="async" alt="Un maizal con el cielo despejado detrás.">
+  </figure>
+</section>
+
+<section class="mos" aria-labelledby="t-mos">
+  <h2 id="t-mos" class="mos__titulo">La misma serie, más de cerca</h2>
+  <p class="mos__nota">Estas seis ya aparecen más arriba en la página. Vuelven acá en otro tamaño porque una sola pasada de imágenes deja el scroll vacío, y porque de cerca se ven cosas que en grande se pierden. La procedencia de cada una está en imagenes/FUENTES.txt.</p>
+  <div class="mos__grilla">
+    <figure class="mos__p">
+      <img src="imagenes/mos-01.jpg" width="780" height="433"
+           loading="lazy" decoding="async" alt="">
+    </figure>
+    <figure class="mos__p">
+      <img src="imagenes/mos-02.jpg" width="780" height="585"
+           loading="lazy" decoding="async" alt="">
+    </figure>
+    <figure class="mos__p">
+      <img src="imagenes/mos-03.jpg" width="780" height="518"
+           loading="lazy" decoding="async" alt="">
+    </figure>
+    <figure class="mos__p">
+      <img src="imagenes/mos-04.jpg" width="780" height="519"
+           loading="lazy" decoding="async" alt="">
+    </figure>
+    <figure class="mos__p">
+      <img src="imagenes/mos-05.jpg" width="780" height="520"
+           loading="lazy" decoding="async" alt="">
+    </figure>
+    <figure class="mos__p">
+      <img src="imagenes/mos-06.jpg" width="780" height="585"
+           loading="lazy" decoding="async" alt="">
+    </figure>
+  </div>
+</section>
+<section class="dueno" aria-labelledby="t-dueno">
+  <h2 id="t-dueno">Para el dueño</h2>
+  <div class="dueno__cols">
+    <div>
+      <h3>Lo que está verificado</h3>
+      <p>El 4,8 con 101 reseñas de su ficha de Google, que no tienen teléfono
+        publicado, y que al 21-08-2026 su sitio devolvía error 503.</p>
+    </div>
+    <div>
+      <h3>Lo que hay que revisar antes de nada</h3>
+      <p>Si el sitio sigue caído. Un 503 puede ser pasajero. Lo que no es pasajero
+        es no tener forma de enterarse cuando se cae.</p>
+    </div>
+    <div>
+      <h3>Lo que falta</h3>
+      <p>El número, el horario y —lo que vale más— qué sale del huerto propio. Sin
+        eso el nombre del restaurante es una promesa que nadie puede comprobar.</p>
+    </div>
+  </div>
+  <p class="dueno__cierre">
+    <a class="flecha" href="https://wa.me/56968650001" rel="noopener">Escribirme por WhatsApp <span aria-hidden="true">→</span></a>
+    <a class="flecha" href="../../" rel="noopener">Ver otros trabajos <span aria-hidden="true">→</span></a>
+  </p>
+</section>
+
+<footer class="pie">
+  <p>Sitio de demostración preparado por CristalWeb. El negocio no lo ha encargado
+    ni ha revisado su contenido. Los ciclos de huerta son referencia general del sur
+    de Chile.</p>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>

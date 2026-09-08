@@ -1,0 +1,415 @@
+/* ===================================================================
+   206 · Muebles Rio Tolten · Pitrufquen
+   Demo comercial sin encargo. Construida el 02-09-2026.
+
+   DESLINDE OBLIGADO CON LA 82-home-terra, que tambien vende muebles:
+   aquella es una COMBINACION (muebleria + electro + materiales) en
+   Gorbea, su direccion es «Casa nueva» —arena con salvia— y su tema es
+   equipar una casa entera de una vez. Esta es una MUEBLERIA a secas,
+   y su tema no es la casa: es EL HUECO donde va cada mueble.
+
+   DIRECCION - «MIDA EL HUECO ANTES DE ENAMORARSE DEL MUEBLE»
+   El problema mas caro del rubro no es el precio ni el color: es un
+   sofa que no pasa por la puerta. Pasa todas las semanas, en todas las
+   mueblerias del pais, y se evita con cinco medidas.
+
+   PALETA — **PRIMERA PAGINA CALIDA SIN NINGUN ACENTO CROMATICO DEL
+   REGISTRO**, y la razon es comercial, no estetica: en una tienda de
+   muebles la pagina NO PUEDE tener color propio porque compite con el
+   producto. Todo el color de esta demo lo ponen las fotos.
+   Deslinde de las otras sin acento: la 48-vivesmile son NUEVE GRISES
+   FRIOS en una clinica dental; la 192 es una ESCALA DE SIETE GRISES
+   porque una ecografia es en escala de grises; la pmv-08 es duotono
+   hueso y tinta, plano. Ninguna es CALIDA. Esta se construye sobre
+   cuatro neutros de lino y nogal:
+   lino `#F3EFE7` + panel `#E8E2D6` + panel-2 `#DED7C8` +
+   nogal `#2A2119` (13,7:1 sobre lino) + realce `#3E3527` (8,5:1 sobre
+   el peor fondo, para rotulos y filetes) + medio `#5A5040` (5,5:1
+   sobre el peor fondo, calibrado de entrada: `#6A5F4E` daba 4,38:1).
+
+   TRIO — verificado contra identidades.md el 02-09-2026:
+   · Display ADAMINA (0 usos). Serif calida de un solo peso, con mucha
+     altura de x: cara de catalogo impreso, no de aviso.
+   · Cuerpo URBANIST (3 usos). Geometrica limpia; el contraste entre la
+     serif calida y una sans geometrica es exactamente el contraste
+     entre el mueble y la pieza vacia.
+   · Mono ANONYMOUS PRO (7 usos) — de maquina de escribir, para las
+     medidas y los rotulos.
+
+   ESTRUCTURA: lista numerada 01-05 con UN PASO DESTACADO (la puerta
+   mas angosta, la unica medida que no tiene arreglo) + comparador de
+   dos columnas. **Deslinde de los comparadores del registro: el de la
+   197 son DOS MATERIALES que el negocio hace por igual; el de la 200
+   es HACER O COMPRAR y una columna dice que no contrate; este es DOS
+   MANERAS DE COMPRAR LO MISMO, y las dos las vende el negocio.**
+
+   AMBIENTE: LA LUZ DE LA VENTANA QUE SE CORRE (primera del registro).
+   Dos panos de luz separados por el travesano, que cruzan la portada
+   en 46 s y VUELVEN (`alternate`). Deslinde con EL BARRIDO de la 199:
+   aquel es un haz unico, rapido (17 s) y en bucle en una sola
+   direccion; este va y viene, es mas ancho, mas tibio y tiene la forma
+   de una ventana — es el sol de una tarde entrando a una pieza, que es
+   literalmente donde va a terminar el mueble.
+
+   REGLA DE DATOS: ni un precio, ni un plazo, ni una medida de mueble.
+   En muebleria los precios cambian por material y por temporada, y
+   publicar uno viejo espanta mas de lo que atrae.
+   =================================================================== */
+
+:root {
+  --lino:    #F3EFE7;
+  --panel:   #E8E2D6;
+  --panel-2: #DED7C8;   /* el peor fondo: todo se calibra contra este */
+  --nogal:   #2A2119;
+  --realce:  #3E3527;
+  --medio:   #5A5040;
+  --borde:   #C9C0AD;
+
+  --sale:   cubic-bezier(.16, 1, .3, 1);
+  --sale-2: cubic-bezier(.2, 0, 0, 1);
+
+  --ancho: min(92vw, 1150px);
+  --p--1: clamp(.78rem, .74rem + .18vw, .88rem);
+  --p-0:  clamp(1rem, .95rem + .25vw, 1.1rem);
+  --p-1:  clamp(1.14rem, 1.04rem + .45vw, 1.34rem);
+  --p-2:  clamp(1.5rem, 1.25rem + 1.15vw, 2.1rem);
+  --p-3:  clamp(1.9rem, 1.45rem + 2.1vw, 3rem);
+  --p-4:  clamp(2.2rem, 1.6rem + 2.9vw, 4rem);
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+[hidden] { display: none !important; }
+html { scroll-behavior: smooth; }
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+
+body {
+  margin: 0; background: var(--lino); color: var(--nogal);
+  font-family: Urbanist, "Segoe UI", system-ui, sans-serif;
+  font-size: var(--p-0); line-height: 1.68;
+  -webkit-font-smoothing: antialiased;
+}
+img { max-width: 100%; }
+a { color: inherit; }
+.ancho { width: var(--ancho); margin-inline: auto; }
+
+.rotulo {
+  font-family: "Anonymous Pro", ui-monospace, monospace;
+  font-size: var(--p--1); letter-spacing: .16em; text-transform: uppercase;
+  color: var(--realce); margin: 0 0 1.4rem;
+}
+.h2 {
+  font-family: Adamina, Georgia, serif; font-weight: 400;
+  font-size: var(--p-3); line-height: 1.14; letter-spacing: -.015em; margin: 0 0 1.5rem;
+}
+.h2--chico { font-size: var(--p-2); }
+.mini { font-size: var(--p--1); color: var(--medio); max-width: 70ch; }
+.mini b { color: var(--nogal); }
+.nota { font-size: var(--p--1); color: var(--medio); max-width: 74ch; margin-top: 2.4rem; }
+.nota b { color: var(--nogal); }
+.falta { color: var(--medio); font-style: italic; }
+.ej { color: var(--medio); font-style: italic; border-bottom: 1px dashed var(--borde); }
+.ej::after {
+  content: " (ej.)"; font-family: "Anonymous Pro", ui-monospace, monospace;
+  font-size: .8em; font-style: normal; opacity: .85;
+}
+
+/* -- BANDA DE PROPUESTA ------------------------------------------ */
+/* Sin acento: la banda usa el nogal, que es la tinta de la pagina. */
+.propuesta { background: var(--nogal); color: var(--lino); }
+.propuesta__in { padding: .9rem 0; }
+.propuesta__q { font-family: "Anonymous Pro", ui-monospace, monospace; font-size: var(--p--1); letter-spacing: .03em; margin: 0 0 .2rem; }
+.propuesta__d { margin: 0; font-size: var(--p--1); line-height: 1.5; max-width: 100ch; }
+
+/* -- CABECERA ---------------------------------------------------- */
+.cab {
+  position: sticky; top: 0; z-index: 50;
+  background: var(--lino); border-bottom: 1px solid var(--borde);
+  transition: transform .3s var(--sale-2), background-color .3s ease, border-color .3s ease;
+}
+.cab__in { display: flex; align-items: center; justify-content: space-between; gap: 1.2rem; padding: .55rem 0; }
+.cab__marca { display: inline-flex; align-items: center; gap: .8rem; text-decoration: none; min-height: 44px; }
+.cab__txt {
+  font-family: Adamina, Georgia, serif;
+  font-size: var(--p-1); line-height: 1.1; display: flex; flex-direction: column; gap: .24rem;
+}
+.cab__sub {
+  font-family: "Anonymous Pro", ui-monospace, monospace;
+  font-size: .55em; letter-spacing: .06em; color: var(--medio); text-transform: uppercase;
+}
+.cab__nav { display: flex; align-items: center; gap: 1.5rem; }
+.cab__nav a {
+  font-size: var(--p--1); text-decoration: none; color: var(--medio);
+  min-height: 44px; display: inline-flex; align-items: center; transition: color .2s ease;
+}
+.cab__nav a:hover, .cab__nav a:focus-visible { color: var(--nogal); }
+.cab__tel { color: var(--nogal) !important; font-family: "Anonymous Pro", ui-monospace, monospace; white-space: nowrap; }
+
+/* Cabecera 172a - EL VANO CON SU COTA: las dos jambas y el dintel de
+   una puerta, y la flecha de medida cruzandola. Ningun vano ni ninguna
+   cota suelta en las 205 anteriores (la cota de ekla es de plano azul,
+   un lenguaje entero; esta es UNA puerta). */
+.vano { position: relative; width: 26px; height: 26px; flex: 0 0 auto; }
+.vano__marco {
+  position: absolute; left: 2px; right: 2px; top: 0; bottom: 0;
+  border: 2px solid var(--nogal); border-bottom: none;
+}
+.vano__cota {
+  position: absolute; left: 0; right: 0; top: 15px; height: 2px;
+  background: var(--realce);
+}
+.vano__cota::before, .vano__cota::after {
+  content: ""; position: absolute; top: -3px; width: 2px; height: 8px; background: var(--realce);
+}
+.vano__cota::before { left: 0; }
+.vano__cota::after  { right: 0; }
+
+.js .cab--top { background: transparent; border-bottom-color: transparent; }
+.js .cab--oculta { transform: translateY(-100%); }
+@media (prefers-reduced-motion: reduce) { .cab { transition-duration: 1ms; } }
+
+/* -- PORTADA ----------------------------------------------------- */
+.portada {
+  position: relative; isolation: isolate; overflow: hidden;
+  min-height: 88svh; display: flex; align-items: center; padding: 5rem 0 4rem;
+}
+.portada__foto { position: absolute; inset: 0; z-index: -3; }
+.portada__foto img {
+  display: block; width: 100%; height: 100%; object-fit: cover; object-position: 70% 50%;
+  -webkit-mask-image: linear-gradient(90deg, transparent 0%, transparent 20%, rgba(0,0,0,.28) 41%, rgba(0,0,0,.76) 62%, #000 80%, #000 100%);
+          mask-image: linear-gradient(90deg, transparent 0%, transparent 20%, rgba(0,0,0,.28) 41%, rgba(0,0,0,.76) 62%, #000 80%, #000 100%);
+}
+/* Velo entero en rgba terminando en alfa 0. */
+.portada__foto::after {
+  content: ""; position: absolute; inset: 0;
+  background: linear-gradient(90deg,
+    rgba(243,239,231,1) 0%, rgba(243,239,231,1) 38%, rgba(243,239,231,.92) 53%,
+    rgba(243,239,231,.52) 70%, rgba(243,239,231,.16) 87%, rgba(243,239,231,0) 97%);
+}
+.portada__in { position: relative; z-index: 1; }
+.portada__h1 {
+  font-family: Adamina, Georgia, serif;
+  font-size: var(--p-4); line-height: 1.14; letter-spacing: -.025em; margin: 0 0 1.3rem;
+}
+.portada__bajada { max-width: 44ch; color: var(--medio); font-size: var(--p-1); margin: 0 0 2.4rem; }
+.portada__bajada b { color: var(--nogal); }
+.portada__pie { margin: 0; }
+
+/* -- AMBIENTE: LA LUZ DE LA VENTANA QUE SE CORRE ----------------- */
+/* Dos panos separados por el travesano, que cruzan en 46 s y VUELVEN.
+   Deslinde con EL BARRIDO de la 199: aquel es un haz unico, rapido y
+   en bucle en una direccion; este va y viene, es mas ancho y mas tibio
+   y tiene forma de ventana. Solo transform. */
+.amb { position: absolute; inset: 0; z-index: -2; overflow: hidden; pointer-events: none; }
+.amb--ventana::before, .amb--ventana::after {
+  content: ""; position: absolute; top: -14%; bottom: -14%;
+  background: linear-gradient(100deg,
+    rgba(255, 249, 235, 0) 0%, rgba(255, 249, 235, .3) 30%,
+    rgba(255, 249, 235, .3) 70%, rgba(255, 249, 235, 0) 100%);
+  transform: translate3d(0, 0, 0) skewX(-9deg);
+  animation: amb-tarde 46s ease-in-out infinite alternate;
+  will-change: transform;
+}
+.amb--ventana::before { left: -34%; width: 15%; }
+.amb--ventana::after  { left: -17%; width: 11%; }
+@keyframes amb-tarde {
+  0%   { transform: translate3d(0, 0, 0) skewX(-9deg); }
+  100% { transform: translate3d(700%, 0, 0) skewX(-9deg); }
+}
+@media (prefers-reduced-motion: reduce) { .amb { display: none; } }
+
+/* -- BOTONES ----------------------------------------------------- */
+.boton {
+  position: relative; display: inline-flex; align-items: center; justify-content: center;
+  min-height: 48px; padding: .8rem 1.8rem;
+  border: 1px solid var(--nogal); color: var(--nogal); background: transparent;
+  font-family: "Anonymous Pro", ui-monospace, monospace;
+  font-size: var(--p--1); letter-spacing: .1em; text-transform: uppercase;
+  text-decoration: none; overflow: hidden; isolation: isolate;
+}
+.boton::before {
+  content: ""; position: absolute; inset: 0; z-index: -1;
+  background: var(--nogal); transform: translateY(101%); transition: transform .4s var(--sale);
+}
+.boton:hover, .boton:focus-visible { color: var(--lino); }
+.boton:hover::before, .boton:focus-visible::before { transform: translateY(0); }
+.boton--fuerte { background: var(--nogal); color: var(--lino); }
+.boton--fuerte::before { background: var(--realce); }
+@media (prefers-reduced-motion: reduce) { .boton::before { transition-duration: 1ms; } }
+
+.flecha {
+  display: inline-flex; align-items: center; gap: .5rem; min-height: 44px;
+  font-family: "Anonymous Pro", ui-monospace, monospace; font-size: var(--p--1); letter-spacing: .05em;
+  color: var(--nogal); text-decoration: none; border-bottom: 1px solid currentColor;
+  transition: border-bottom-width .2s ease;
+}
+.flecha:hover, .flecha:focus-visible { border-bottom-width: 3px; }
+
+/* -- PIEZA FIRMA: LAS CINCO MEDIDAS ------------------------------ */
+.medidas { padding: 7rem 0; background: var(--panel); }
+.medidas .intro, .amedida .intro { max-width: 66ch; color: var(--medio); font-size: var(--p-1); margin: 0 0 3rem; }
+.medidas .intro b, .amedida .intro b { color: var(--nogal); }
+
+.med { list-style: none; margin: 0; padding: 0; border-top: 2px solid var(--nogal); }
+.m {
+  display: grid; grid-template-columns: 4rem 1fr; gap: 1.4rem;
+  padding: 1.5rem 0; border-bottom: 1px solid var(--borde);
+}
+.m__n { font-family: "Anonymous Pro", ui-monospace, monospace; font-size: var(--p-1); color: var(--realce); line-height: 1.3; margin: 0; }
+.m h3 { font-family: Adamina, Georgia, serif; font-weight: 400; font-size: var(--p-1); margin: 0 0 .5rem; line-height: 1.25; }
+.m p { margin: 0; color: var(--medio); font-size: var(--p--1); line-height: 1.7; max-width: 78ch; }
+.m p b { color: var(--nogal); }
+/* La unica medida que no tiene arreglo va marcada. */
+.m.destacado { background: var(--lino); padding-inline: 1.2rem; border-left: 4px solid var(--nogal); }
+
+/* -- CITA -------------------------------------------------------- */
+.cita { position: relative; isolation: isolate; overflow: hidden; min-height: min(48vh, 370px); display: grid; align-items: center; }
+.cita img { position: absolute; inset: 0; z-index: -2; width: 100%; height: 100%; object-fit: cover; object-position: 50% 55%; }
+/* Peor caso medido a mano: la madera clara del taller bajo el velo .84
+   sobre nogal deja el texto lino en 10:1. El auditor marca 1,00:1
+   porque no ve el ::after y trepa al body — falso positivo conocido. */
+.cita::after { content: ""; position: absolute; inset: 0; z-index: -1; background: rgba(42,33,25,.84); }
+.cita__txt p {
+  font-family: Adamina, Georgia, serif;
+  font-size: var(--p-2); line-height: 1.3; max-width: 28ch; margin: 0; color: var(--lino);
+}
+
+/* -- TAJO -------------------------------------------------------- */
+.tajo { position: relative; isolation: isolate; overflow: hidden; margin: 0; min-height: min(52vh, 400px); display: flex; align-items: flex-end; }
+.tajo img { position: absolute; inset: 0; z-index: -2; width: 100%; height: 100%; object-fit: cover; object-position: 50% 60%; }
+.tajo::after {
+  content: ""; position: absolute; inset: 0; z-index: -1;
+  background: linear-gradient(0deg, rgba(42,33,25,.95) 0%, rgba(42,33,25,.8) 34%, rgba(42,33,25,.3) 64%, rgba(42,33,25,0) 92%);
+}
+.tajo__txt { padding: 2.8rem 0; }
+.tajo__txt .rotulo { color: #D8CDB8; }
+.tajo__f { font-family: Adamina, Georgia, serif; font-size: var(--p-2); margin: 0; line-height: 1.24; max-width: 24ch; color: var(--lino); }
+
+/* -- A MEDIDA O DE LÍNEA ----------------------------------------- */
+.amedida { padding: 7rem 0; }
+.dos { display: grid; grid-template-columns: 1fr 1fr; gap: 2.5rem; }
+.col { padding: 1.7rem 1.8rem 2rem; background: var(--panel); border-top: 3px solid var(--borde); }
+.col--medida { background: var(--panel-2); border-top-color: var(--nogal); }
+.col__t {
+  font-family: Adamina, Georgia, serif; font-weight: 400;
+  font-size: var(--p-1); margin: 0 0 1.2rem; line-height: 1.2;
+}
+.col__l { margin: 0; padding: 0; list-style: none; }
+.col__l li {
+  padding: .85rem 0; border-bottom: 1px solid var(--borde);
+  font-size: var(--p--1); color: var(--medio); line-height: 1.66;
+}
+.col__l li:last-child { border-bottom: none; }
+.col__l li b { color: var(--nogal); }
+
+/* -- MITADES ----------------------------------------------------- */
+.mitades { display: grid; grid-template-columns: 1fr 1fr; background: var(--panel); }
+.mitades__foto img { display: block; width: 100%; height: 100%; object-fit: cover; }
+.mitades__txt { padding: 5.5rem clamp(1.5rem, 4vw, 4rem); display: flex; flex-direction: column; justify-content: center; }
+.mitades__txt p { color: var(--medio); }
+.mitades__txt p b { color: var(--nogal); }
+.lista { margin: 1.3rem 0; padding: 0; list-style: none; }
+.lista li { padding: .6rem 0 .6rem 1.5rem; position: relative; border-bottom: 1px solid var(--borde); font-size: var(--p--1); color: var(--medio); }
+.lista li b { color: var(--nogal); }
+.lista li::before { content: ""; position: absolute; left: 0; top: 1.1em; width: 8px; height: 1px; background: var(--realce); }
+.lista--marca li { border-bottom: none; padding-bottom: .3rem; }
+
+/* -- MOSAICO ----------------------------------------------------- */
+.mos { padding: 7rem 0 0; background: var(--panel-2); }
+.mos__grilla { display: grid; gap: 4px; grid-template-columns: repeat(3, 1fr); margin-top: 3rem; }
+.mos__p { margin: 0; overflow: hidden; }
+.mos__p:nth-child(1), .mos__p:nth-child(6) { grid-column: span 2; }
+.mos__p img { display: block; width: 100%; height: 100%; aspect-ratio: 3 / 2; object-fit: cover; transition: transform .5s var(--sale); }
+.mos__p:hover img { transform: scale(1.05); }
+@media (prefers-reduced-motion: reduce) { .mos__p:hover img { transform: none; } }
+
+/* -- CONTACTO ---------------------------------------------------- */
+.con-telon { position: relative; isolation: isolate; overflow: hidden; }
+.telon { position: absolute; inset: 0; z-index: -1; pointer-events: none; }
+.telon img {
+  display: block; width: 100%; height: 100%; object-fit: cover; opacity: .16;
+  -webkit-mask-image: linear-gradient(180deg, transparent 0%, #000 22%, #000 74%, transparent 100%);
+          mask-image: linear-gradient(180deg, transparent 0%, #000 22%, #000 74%, transparent 100%);
+}
+.contacto { padding: 7rem 0; }
+.contacto__num { margin: 0 0 1rem; }
+.contacto__num a {
+  font-family: Adamina, Georgia, serif;
+  font-size: clamp(1.6rem, 1.1rem + 3vw, 3.4rem); line-height: 1.1; color: var(--nogal);
+  text-decoration: none; display: inline-flex; align-items: center; min-height: 44px;
+  border-bottom: 3px solid transparent; transition: border-color .25s ease;
+}
+.contacto__num a:hover, .contacto__num a:focus-visible { border-bottom-color: var(--nogal); }
+.contacto__nota { color: var(--medio); font-size: var(--p--1); margin: 0 0 2.4rem; max-width: 58ch; }
+
+.datos { margin: 0 0 2rem; max-width: 48rem; }
+.datos > div { display: flex; justify-content: space-between; gap: 1.5rem; padding: .8rem 0; border-bottom: 1px solid var(--borde); }
+.datos dt { font-family: "Anonymous Pro", ui-monospace, monospace; font-size: var(--p--1); color: var(--medio); letter-spacing: .05em; text-transform: uppercase; }
+.datos dd { margin: 0; text-align: right; font-size: var(--p--1); }
+
+/* -- PARA EL DUENO ----------------------------------------------- */
+.dueno { padding: 7rem 0; border-top: 1px solid var(--borde); background: var(--panel-2); }
+.dueno__cols { display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; margin-bottom: 3rem; }
+.dueno h3 {
+  font-family: "Anonymous Pro", ui-monospace, monospace;
+  font-size: var(--p--1); letter-spacing: .09em; text-transform: uppercase;
+  color: var(--realce); margin: 2rem 0 1rem;
+}
+.dueno p { color: var(--medio); max-width: 62ch; }
+.dueno p b { color: var(--nogal); }
+.dueno__cierre { display: flex; flex-wrap: wrap; gap: 2rem; align-items: center; margin-top: 3rem; }
+
+.pie { padding: 3rem 0; border-top: 1px solid var(--borde); }
+.pie__in p { font-size: var(--p--1); color: var(--medio); margin: 0 0 .8rem; }
+.pie__in p b { color: var(--nogal); }
+.pie__leg { opacity: .95; }
+
+/* -- REVEALS ----------------------------------------------------- */
+.js [data-rev-grupo] > * { opacity: 0; transform: translateY(22px); }
+.js [data-rev-grupo].ok > * {
+  opacity: 1; transform: none;
+  transition: opacity .3s ease-out, transform .55s var(--sale);
+  transition-delay: calc(var(--r, 0) * 55ms);
+}
+[data-rev-grupo] > :nth-child(1){--r:0} [data-rev-grupo] > :nth-child(2){--r:1}
+[data-rev-grupo] > :nth-child(3){--r:2} [data-rev-grupo] > :nth-child(4){--r:3}
+[data-rev-grupo] > :nth-child(5){--r:4} [data-rev-grupo] > :nth-child(6){--r:5}
+@media (prefers-reduced-motion: reduce) {
+  .js [data-rev-grupo] > * { opacity: 1; transform: none; transition: none; }
+}
+:focus-visible { outline: 2px solid var(--nogal); outline-offset: 3px; }
+
+/* -- MOVIL ------------------------------------------------------- */
+@media (max-width: 980px) {
+  .mitades { grid-template-columns: 1fr; }
+  .mitades__foto img { aspect-ratio: 16 / 10; height: auto; }
+  .dueno__cols { grid-template-columns: 1fr; gap: 1rem; }
+  .dos { grid-template-columns: 1fr; }
+}
+@media (max-width: 760px) {
+  .cab__nav a:not(.cab__tel) { display: none; }
+  .portada { min-height: auto; padding: 3.5rem 0 3rem; }
+  /* En telefono el texto cae ENCIMA de la foto: la mascara lateral no
+     sirve a 375 px, asi que el velo se da vuelta y baja. */
+  .portada__foto img {
+    object-position: 62% 50%;
+    -webkit-mask-image: linear-gradient(180deg, #000 0%, #000 58%, transparent 100%);
+            mask-image: linear-gradient(180deg, #000 0%, #000 58%, transparent 100%);
+  }
+  .portada__foto::after {
+    background: linear-gradient(180deg,
+      rgba(243,239,231,.9) 0%, rgba(243,239,231,.84) 34%, rgba(243,239,231,.92) 64%, rgba(243,239,231,1) 100%);
+  }
+  .m { grid-template-columns: 2.8rem 1fr; gap: 1rem; }
+  .m.destacado { padding-inline: .9rem; }
+  .medidas, .amedida, .contacto, .dueno { padding: 4.5rem 0; }
+  .mos { padding-top: 4.5rem; }
+  .mos__grilla { grid-template-columns: repeat(2, 1fr); }
+  .mos__p:nth-child(1), .mos__p:nth-child(6) { grid-column: span 2; }
+}
+@media (max-width: 480px) {
+  .cab__sub { font-size: .48em; }
+}
+@media (max-width: 460px) {
+  .datos > div { flex-direction: column; gap: .2rem; }
+  .datos dd { text-align: left; }
+}

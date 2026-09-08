@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="es-CL" class="no-js">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Veterinaria Piuvet — Villarrica</title>
+<meta name="description" content="Veterinaria en Villarrica. El primer año de un cachorro mes a mes y qué es conducta normal.">
+
+<!-- Política de seguridad de contenido: el navegador sólo puede cargar
+     archivos de este mismo sitio. Sin CDN, sin librerías, sin rastreadores.
+     Ver skills/web-blindada/references/csp-en-pages.md -->
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self'; img-src 'self' data:; font-src 'self'; connect-src 'self'; media-src 'self'; form-action 'self'; base-uri 'none'; frame-src 'none'; object-src 'none'">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+
+<!-- Rescate de la clase .js (regla 2 de la casa). En archivo, sin defer:
+     inline lo bloquearía la CSP. -->
+<script src="js/rescate.js"></script>
+
+<!-- Fuentes propias: cero peticiones a terceros. El preload va SOLO
+     para la display, que es la del titular de la portada. -->
+<link rel="preload" href="assets/fuentes/baloo2-var-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="assets/fuentes.css">
+<link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+
+<div class="propuesta">
+  <p class="propuesta__que">Propuesta de sitio web — preparada para <b>Veterinaria Piuvet</b> por CristalWeb</p>
+  <p class="propuesta__gancho">5,0 perfecto con 46 reseñas: la veterinaria chica y querida de Villarrica. Y el que acaba de adoptar un cachorro no la encuentra.</p>
+</div>
+
+<header class="cab" id="cab">
+  <a class="cab__marca" href="#portada">
+    <span class="hueso" aria-hidden="true"></span>
+    <span class="cab__nombre">Piuvet</span>
+  </a>
+  <nav class="cab__nav" aria-label="Secciones">
+    <a href="#anio">El primer año</a>
+    <a href="#destroza">Lo que destroza</a>
+  </nav>
+  <a class="cab__tel" href="tel:+56979088096">
+    <span class="cab__tel-rot">Villarrica</span>
+    <span class="cab__tel-num">9 7908 8096</span>
+  </a>
+</header>
+
+<main>
+
+<!-- ========= PORTADA ========= -->
+<section class="portada portada--foto" id="portada" aria-labelledby="t-portada">
+  <!-- FONDO DE PORTADA: 2560 px, nitido. Se disuelve hacia el titular
+       con un gradiente lateral, no con desenfoque. -->
+  <div class="portada__foto" aria-hidden="true">
+    <img src="imagenes/port-01.jpg" width="2560" height="1707"
+         decoding="async" fetchpriority="high" alt="">
+  </div>
+
+  <div class="cancha" aria-hidden="true"><span class="pelota"></span></div>
+
+  <div class="portada__texto">
+    <p class="sitio">Veterinaria · Villarrica</p>
+    <h1 id="t-portada">Llegó el cachorro<br>¿y ahora qué?</h1>
+    <p class="bajada">Nadie que adopta su primer perro sabe cuándo van las vacunas,
+      cuándo se desparasita ni cuándo se conversa la esterilización. Se aprende
+      preguntando, y la mayoría no pregunta por vergüenza. Acá está el año completo,
+      escrito.</p>
+    <dl class="specs">
+      <div class="spec"><dt>nota en Google</dt><dd>5,0</dd></div>
+      <div class="spec"><dt>reseñas</dt><dd>46</dd></div>
+      <div class="spec"><dt>teléfono</dt><dd class="dd--tel"><a href="tel:+56979088096">9 7908 8096</a></dd></div>
+    </dl>
+  </div>
+</section>
+
+<!-- ========= LA PIEZA FIRMA — ESTRUCTURA C: LA TABLA DEL AÑO ========= -->
+<section class="anio con-telon" id="anio" aria-labelledby="t-anio">
+  <div class="telon" aria-hidden="true">
+    <img src="imagenes/telon-01.jpg" width="1200" height="800" decoding="async" alt="">
+  </div>
+
+  <!-- AURA DE COLOR: la foto de rubro reventada a desenfoque. No se lee
+       como imagen: aporta color y luz detras de una seccion que si no
+       seria fondo plano. Aca el desenfoque SI es el efecto, no un parche,
+       y por eso el archivo va chico: a 64 px de blur, mas resolucion no
+       cambia nada. Sin loading=lazy porque el elemento va en absoluto con
+       z-index negativo y el navegador nunca lo considera visible. -->
+  <div class="aura" aria-hidden="true">
+    <img src="imagenes/aura-01.jpg" width="900" height="600" decoding="async" alt="">
+  </div>
+
+  <div class="anio__cabecera">
+    <p class="antetitulo">El calendario que nadie explica</p>
+    <h2 id="t-anio">El primer año<br>del cachorro</h2>
+    <p class="entrada">Cuatro momentos del primer año, con lo que suele tocar en cada
+      uno y por qué. Sirve para llegar sabiendo qué preguntar — no para reemplazar la
+      consulta.</p>
+
+    <div class="aviso-fuerte">
+      <p><b>Las edades son una referencia general, no un calendario fijo.</b> Cuándo
+        va cada cosa lo decide el veterinario mirando a <em>ese</em> cachorro: su
+        peso, su raza, de dónde viene y qué vacunas ya trae. Un cachorro rescatado y
+        uno de criadero no siguen el mismo camino.
+        <span class="falta">falta: que la veterinaria revise y firme esta tabla</span></p>
+    </div>
+  </div>
+
+  <div class="tabla-envoltura">
+    <table class="tabla">
+      <caption class="visually">Referencia general del primer año de un cachorro por edad</caption>
+      <thead>
+        <tr>
+          <th scope="col">Edad</th>
+          <th scope="col">Qué suele tocar</th>
+          <th scope="col">Por qué</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row" class="edad"><span class="edad__n">2</span><span class="edad__u">meses</span></th>
+          <td>
+            <p class="que">Primera consulta y primeras vacunas de la serie del
+              cachorro. Desparasitación.</p>
+            <p class="que__f"><span class="falta">falta: confirmar el esquema que usan</span></p>
+          </td>
+          <td class="pq">Antes de completar la serie, el cachorro todavía no está
+            protegido: no debería andar por la calle ni juntarse con perros
+            desconocidos. Es el dato que más se salta la gente y el que más caro
+            sale.</td>
+        </tr>
+        <tr>
+          <th scope="row" class="edad"><span class="edad__n">4</span><span class="edad__u">meses</span></th>
+          <td>
+            <p class="que">Refuerzos de la serie y, según la edad, la antirrábica.
+              Segunda desparasitación.</p>
+            <p class="que__f"><span class="falta">falta: confirmar</span></p>
+          </td>
+          <td class="pq">Recién cuando la serie está completa el cachorro puede
+            hacer vida normal. Hasta entonces, los paseos son en brazos.</td>
+        </tr>
+        <tr>
+          <th scope="row" class="edad"><span class="edad__n">6</span><span class="edad__u">meses</span></th>
+          <td>
+            <p class="que">Cambio de dientes, conversación sobre esterilización y
+              —si el pelaje lo pide— la primera peluquería.</p>
+            <p class="que__f"><span class="falta">falta: confirmar si hacen peluquería</span></p>
+          </td>
+          <td class="pq">La primera peluquería a esta edad es corta y suave a
+            propósito: la idea es que el perro aprenda que no pasa nada, no que
+            quede perfecto.</td>
+        </tr>
+        <tr>
+          <th scope="row" class="edad"><span class="edad__n">1</span><span class="edad__u">año</span></th>
+          <td>
+            <p class="que">Control anual, refuerzos que correspondan y cambio de
+              alimento de cachorro a adulto.</p>
+            <p class="que__f"><span class="falta">falta: confirmar</span></p>
+          </td>
+          <td class="pq">El cambio de alimento no es un detalle de marca: la comida
+            de cachorro tiene otra composición y a un adulto le sobra. Se hace de a
+            poco, mezclando.</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <p class="firma">Ninguna fila dice una dosis, una marca ni una fecha exacta, y no
+    las va a decir. Lo que hace esta tabla es que alguien llegue a la consulta
+    sabiendo qué va a pasar — que es exactamente lo que un dueño primerizo necesita
+    para no llegar asustado.</p>
+</section>
+
+<!-- ========= LO QUE EL CACHORRO DESTROZA ========= -->
+<!-- ========= MEDIA PANTALLA ========= -->
+<section class="mitades" aria-labelledby="t-mitades">
+  <div class="mitades__foto">
+    <img src="imagenes/media-01.jpg" width="2200" height="1467"
+         loading="lazy" decoding="async" alt="">
+  </div>
+  <div class="mitades__texto">
+    <p class="mitades__ante">Lo que nadie avisa al entregarlo</p>
+    <h2 id="t-mitades">Los primeros seis meses se muerde todo</h2>
+    <p>No es maldad ni falta de educación: es que le están saliendo los dientes y el mundo se explora con la boca. Saber qué es normal y qué no —qué puede tragarse, cuándo hay que preocuparse, qué se puede dejar a su alcance— evita la mitad de las urgencias del primer año. Y es información que se da una vez, no cada vez que alguien llama asustado.</p>
+  </div>
+</section>
+
+<section class="destroza" id="destroza" aria-labelledby="t-destroza">
+  <div class="destroza__cuerpo">
+    <p class="antetitulo antetitulo--claro">La conversación honesta</p>
+    <h2 id="t-destroza">Lo que el<br>cachorro destroza</h2>
+    <p class="entrada">Nadie avisa que los primeros meses son un desastre. Saber qué
+      es normal —y qué no— evita que alguien devuelva un perro por algo que se le
+      iba a pasar solo.</p>
+
+    <div class="dos-cols">
+      <div class="cc cc--normal">
+        <h3>Es normal, se pasa</h3>
+        <ul>
+          <li>Morder <b>todo</b> lo que encuentra. Está cambiando los dientes y le
+            duelen las encías.</li>
+          <li>Llorar la primera semana de noche. Acaba de dejar a su camada.</li>
+          <li>Hacer sus cosas en cualquier parte al principio: el control se
+            aprende y toma semanas.</li>
+          <li>Perseguirlo a uno por la casa sin soltarlo un segundo.</li>
+          <li>Dormir muchísimo. Un cachorro duerme más de lo que la gente espera.</li>
+        </ul>
+      </div>
+      <div class="cc cc--consulta">
+        <h3>Conviene consultar</h3>
+        <ul>
+          <li>Diarrea o vómito que dura más de un día, sobre todo si no quiere
+            tomar agua.</li>
+          <li>No querer comer nada, decaimiento, quedarse quieto en un rincón.</li>
+          <li>Toser, estornudar seguido o costarle respirar.</li>
+          <li>Cojear, o quejarse cuando lo tocan en un lugar específico.</li>
+          <li>Rascarse hasta pelarse, o perder pelo en zonas.</li>
+        </ul>
+        <p class="cc__nota"><b>Ante la duda, se llama.</b> En un cachorro las cosas
+          avanzan más rápido que en un perro adulto, y una consulta a tiempo cuesta
+          mucho menos que una urgencia.</p>
+      </div>
+    </div>
+
+    <p class="nota-honesta">Esta lista es general y no sirve para descartar nada.
+      <span class="falta">falta: que la veterinaria la revise</span> — con su firma,
+      es la sección que más se va a guardar y a compartir de toda la página.</p>
+  </div>
+</section>
+
+<!-- ========= EL CIERRE — T1 ========= -->
+<!-- ========= LA CITA A SANGRE ========= -->
+<section class="cita" aria-labelledby="t-cita">
+  <div class="cita__foto" aria-hidden="true">
+    <img src="imagenes/cita-01.jpg" width="2200" height="1467"
+         loading="lazy" decoding="async" alt="">
+  </div>
+  <blockquote class="cita__texto">
+    <p id="t-cita">El que acaba de adoptar no los encuentra<br>
+      <span class="cita__eco">5,0 con 46 reseñas, y ninguna página propia</span></p>
+  </blockquote>
+</section>
+
+
+
+<!-- ========= TAJO — FRANJA A SANGRE ========= -->
+<div class="tajo" aria-hidden="true">
+  <img src="imagenes/banda-01.jpg" width="1100" height="733"
+       loading="lazy" decoding="async" alt="">
+</div>
+<section class="cierre" id="llamar" aria-labelledby="t-cierre">
+  <p class="cierre__rot">Para preguntar sin vergüenza</p>
+  <h2 id="t-cierre" class="cierre__tel">
+    <a href="tel:+56979088096">9 7908 8096</a>
+  </h2>
+  <p class="cierre__pie">Es el número publicado en su ficha de Google. Un 5,0 con 46
+    reseñas dice que acá se puede preguntar cualquier cosa sin sentirse tonto — que
+    es justo lo que necesita alguien con su primer cachorro.</p>
+</section>
+
+<!-- ========= LA TIRA ========= -->
+<section class="tira" aria-label="Tres imágenes del oficio">
+  <figure class="tira__pieza">
+    <img src="imagenes/tira-01.jpg" width="1100" height="734" loading="lazy" decoding="async" alt="Perro adulto jugando con un cachorro en el pasto.">
+  </figure>
+  <figure class="tira__pieza">
+    <img src="imagenes/tira-02.jpg" width="1100" height="733" loading="lazy" decoding="async" alt="Tres cachorros jugando juntos.">
+  </figure>
+  <figure class="tira__pieza">
+    <img src="imagenes/tira-03.jpg" width="1100" height="733" loading="lazy" decoding="async" alt="Cachorro de pelaje claro, retrato a contraluz.">
+  </figure>
+</section>
+
+</main>
+
+
+
+<!-- ========= MOSAICO ========= -->
+<section class="mos" aria-labelledby="t-mos">
+  <h2 id="t-mos" class="mos__titulo">La misma serie, más de cerca</h2>
+  <p class="mos__nota">Estas seis ya aparecen más arriba en la página. Vuelven acá en otro tamaño porque una sola pasada de imágenes deja el scroll vacío, y porque de cerca se ven cosas que en grande se pierden. La procedencia de cada una está en imagenes/FUENTES.txt.</p>
+  <div class="mos__grilla">
+    <figure class="mos__p">
+      <img src="imagenes/mos-01.jpg" width="780" height="520"
+           loading="lazy" decoding="async" alt="">
+    </figure>
+    <figure class="mos__p">
+      <img src="imagenes/mos-02.jpg" width="780" height="520"
+           loading="lazy" decoding="async" alt="">
+    </figure>
+    <figure class="mos__p">
+      <img src="imagenes/mos-03.jpg" width="780" height="520"
+           loading="lazy" decoding="async" alt="">
+    </figure>
+    <figure class="mos__p">
+      <img src="imagenes/mos-04.jpg" width="780" height="520"
+           loading="lazy" decoding="async" alt="">
+    </figure>
+    <figure class="mos__p">
+      <img src="imagenes/mos-05.jpg" width="780" height="520"
+           loading="lazy" decoding="async" alt="">
+    </figure>
+    <figure class="mos__p">
+      <img src="imagenes/mos-06.jpg" width="780" height="520"
+           loading="lazy" decoding="async" alt="">
+    </figure>
+  </div>
+</section>
+<section class="dueno" aria-labelledby="t-dueno">
+  <h2 id="t-dueno">Para la veterinaria</h2>
+  <div class="dueno__cols">
+    <div>
+      <h3>Lo que está verificado</h3>
+      <p>El 5,0 con 46 reseñas de su ficha de Google y el teléfono 9 7908 8096. No
+        hay página propia.</p>
+    </div>
+    <div>
+      <h3>Lo que no escribí</h3>
+      <p>Ninguna dosis, ninguna marca y ninguna fecha exacta. Las edades son
+        referencias generales y la tabla lo dice arriba: el calendario real lo define
+        ustedes mirando al cachorro.</p>
+    </div>
+    <div>
+      <h3>Lo que falta</h3>
+      <p>Revisar y firmar las dos secciones, el horario y la dirección. Una tabla
+        del primer año con el nombre de la veterinaria al pie es lo que la gente
+        manda por WhatsApp a la amiga que acaba de adoptar.</p>
+    </div>
+  </div>
+  <p class="dueno__cierre">
+    <a class="flecha" href="https://wa.me/56968650001" rel="noopener">Escribirme por WhatsApp <span aria-hidden="true">→</span></a>
+    <a class="flecha" href="../../" rel="noopener">Ver otros trabajos <span aria-hidden="true">→</span></a>
+  </p>
+</section>
+
+<footer class="pie">
+  <p><b>Esta página no entrega orientación veterinaria.</b> El calendario y las
+    listas son referencias generales, no reemplazan la evaluación de un profesional y
+    no sirven para descartar ninguna condición. No se nombran medicamentos, marcas ni
+    cantidades. <b>Ante cualquier síntoma, consulte.</b></p>
+  <p class="pie__demo">Sitio de demostración preparado por CristalWeb. El negocio no
+    lo ha encargado ni ha revisado su contenido.</p>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>

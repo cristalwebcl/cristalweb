@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="es-CL" class="no-js">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self'; img-src 'self' data:; font-src 'self'; connect-src 'self'; media-src 'self'; form-action 'self'; base-uri 'none'; frame-src 'none'; object-src 'none'">
+<meta name="robots" content="noindex, nofollow">
+<title>M y D Arriendo de Máquinas — Loncoche</title>
+<meta name="description" content="Arriendo de maquinaria y herramientas en Loncoche. Qué máquina pide cada trabajo.">
+<link rel="preload" href="assets/fuentes/stardosstencil-700-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="assets/fuentes.css">
+<link rel="stylesheet" href="css/estilo.css">
+<script src="js/rescate.js"></script>
+</head>
+<body>
+
+<aside class="propuesta" aria-label="Aviso de propuesta">
+  <div class="ancho propuesta__in">
+    <p class="propuesta__q">Propuesta de sitio web — preparada para <b>M y D Arriendo de Máquinas</b> por CristalWeb</p>
+    <p class="propuesta__d">En Google Maps <b>no aparece otro arriendo de maquinaria en Loncoche</b>. Toda la comuna que necesita una máquina prestada llega a la misma ficha, y esa ficha no dice qué máquinas hay.</p>
+  </div>
+</aside>
+
+<header class="cab" id="cab">
+  <div class="ancho cab__in">
+    <a class="cab__marca" href="#inicio" aria-label="M y D Arriendo de Máquinas, inicio">
+      <!-- Cabecera 165a — EL TABLERO CON LA SILUETA VACIA: el panel
+           perforado del galpón, con el contorno punteado de la
+           herramienta que hoy no está porque anda trabajando. Ningún
+           tablero, panel ni silueta en las 198 anteriores. -->
+      <span class="tabl" aria-hidden="true"><span class="tabl__sil"></span></span>
+      <span class="cab__txt">M y D<span class="cab__sub">Arriendo de máquinas · Loncoche</span></span>
+    </a>
+    <nav class="cab__nav" aria-label="Secciones">
+      <a href="#trabajos">Qué máquina necesito</a>
+      <a href="#antes">Antes de buscarla</a>
+      <a class="cab__tel" href="tel:+56990723068">9 9072 3068</a>
+    </nav>
+  </div>
+</header>
+
+<main id="inicio">
+
+<!-- ══ PORTADA ════════════════════════════════════════════════════ -->
+<section class="portada" aria-labelledby="t-portada">
+  <div class="portada__foto" aria-hidden="true">
+    <img src="imagenes/fondo-01.jpg" alt="" width="2400" height="1589" fetchpriority="high" decoding="async">
+  </div>
+  <!-- Ambiente: EL BARRIDO. Un solo haz de luz que cruza la portada muy
+       lento, como cuando se levanta la cortina del galpón en la mañana.
+       CSS puro, sin JS: sigue funcionando aunque main.js no cargue. -->
+  <div class="amb amb--barrido" aria-hidden="true"></div>
+  <div class="ancho portada__in">
+    <p class="rotulo">Loncoche · Región de La Araucanía</p>
+    <h1 id="t-portada" class="portada__h1">Usted no necesita<br>una máquina.</h1>
+    <p class="portada__bajada">Necesita hacer un trabajo. Esta página parte por ahí: qué va a hacer, y recién después qué máquina lo hace. Es al revés de como se ordena cualquier catálogo de arriendo, y es como piensa el que llama.</p>
+    <p class="portada__pie">
+      <a class="boton" href="#trabajos">Ver qué máquina pide cada trabajo</a>
+    </p>
+  </div>
+</section>
+
+<!-- ══ PIEZA FIRMA — QUÉ MÁQUINA PIDE CADA TRABAJO ═══════════════ -->
+<section class="trab" id="trabajos" aria-labelledby="t-trab">
+  <div class="ancho">
+    <p class="rotulo">01 — La pieza de esta página</p>
+    <h2 id="t-trab" class="h2">Qué máquina<br>pide cada trabajo.</h2>
+    <p class="intro">Un catálogo de arriendo lista máquinas. Pero nadie llama diciendo «necesito una placa compactadora»: llama diciendo «voy a hacer un radier». <b>La traducción entre las dos cosas es lo que sale caro cuando se equivoca</b>, porque el día de arriendo se paga igual.</p>
+
+    <div class="tabla-caja">
+      <table class="tabla">
+        <caption class="vis-oculto">Trabajos y la máquina que cada uno necesita</caption>
+        <thead>
+          <tr><th scope="col">Lo que va a hacer</th><th scope="col">La máquina</th><th scope="col">Lo que casi nadie le dice</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">Hacer un radier o una losa chica</th>
+            <td class="maq">Hormigonera <span class="mas">+ vibrador de inmersión</span></td>
+            <td>Sin vibrador el hormigón queda con nidos de piedra por dentro. No se ve el día que se vacía: se ve el año que se descascara.</td>
+          </tr>
+          <tr>
+            <th scope="row">Romper un piso de concreto o abrir un muro</th>
+            <td class="maq">Martillo demoledor</td>
+            <td>Pregunte por el <b>peso</b>, no por la marca. Uno de treinta kilos rompe el doble de rápido y también lo deja sin espalda en dos horas. A veces conviene el chico y más tiempo.</td>
+          </tr>
+          <tr>
+            <th scope="row">Perforar hormigón para pasar una cañería</th>
+            <td class="maq">Rotomartillo <span class="mas">con broca SDS</span></td>
+            <td>La broca casi nunca va incluida, y es justo lo que más se rompe. Confirme si la pone usted antes de salir.</td>
+          </tr>
+          <tr>
+            <th scope="row">Cortar cerámica, porcelanato o pastelones</th>
+            <td class="maq">Cortadora de mesa <span class="mas">con disco de agua</span></td>
+            <td>El disco se gasta con el uso y en muchas casas se cobra aparte. Pregúntelo por teléfono: es la sorpresa más común al devolver.</td>
+          </tr>
+          <tr>
+            <th scope="row">Compactar el relleno antes de pavimentar</th>
+            <td class="maq">Placa compactadora <span class="mas">o rana, si es zanja angosta</span></td>
+            <td>No son intercambiables. La placa compacta superficie ancha; en una zanja no entra y deja el fondo suelto. Ahí va la rana, y no al revés.</td>
+          </tr>
+          <tr>
+            <th scope="row">Alisar un radier recién vaciado</th>
+            <td class="maq">Alisadora de hélice <span class="mas">(«avión»)</span></td>
+            <td>Es la única de esta lista que <b>no se puede arrendar después</b>: el hormigón tiene su hora y no espera. Se reserva el mismo día que se pide el mixer.</td>
+          </tr>
+          <tr>
+            <th scope="row">Cortar fierro, perfiles o candados</th>
+            <td class="maq">Esmeril angular <span class="mas">o tronzadora, si son varios cortes</span></td>
+            <td>Con esmeril el corte sale torcido y gasta el triple de discos. La tronzadora corta a escuadra y sale más barata en discos que lo que cuesta arrendarla.</td>
+          </tr>
+          <tr>
+            <th scope="row">Trabajar donde todavía no hay luz</th>
+            <td class="maq">Generador</td>
+            <td>El dato que importa es cuántos watts consume <b>su</b> herramienta, no el porte del generador. Anótelo de la etiqueta antes de ir: un generador chico con una máquina grande no parte y se echa a perder.</td>
+          </tr>
+          <tr>
+            <th scope="row">Llegar a un techo o pintar una fachada</th>
+            <td class="maq">Andamio modular</td>
+            <td>Se arrienda por cuerpos, y los cuerpos son enteros: no hay medio. Mida la altura antes de encargarlo.</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="nota">Esta tabla es <b>conocimiento general del rubro, escrito por mí</b>, y sirve igual para cualquier casa de arriendo del país. <b>No promete que M y D tenga las nueve máquinas</b>: qué hay de verdad, en qué tamaños y a qué precio lo completa el negocio antes de publicar.</p>
+  </div>
+</section>
+
+<!-- ══ CITA ═══════════════════════════════════════════════════════ -->
+<section class="cita" aria-label="Lo que se arrienda de verdad">
+  <img src="imagenes/banda-01.jpg" alt="" width="1800" height="1440" loading="lazy" decoding="async">
+  <div class="ancho cita__txt">
+    <p>Nadie arrienda una hormigonera.<br>Arrienda un día sin atrasos.</p>
+  </div>
+</section>
+
+<!-- ══ ANTES DE VENIR A BUSCARLA ══════════════════════════════════ -->
+<section class="antes" id="antes" aria-labelledby="t-antes">
+  <div class="ancho">
+    <p class="rotulo">02 — Las cinco preguntas del mesón</p>
+    <h2 id="t-antes" class="h2">Antes de venir<br>a buscarla.</h2>
+    <p class="intro">Ninguna de estas cinco cosas es un secreto. Lo único que pasa es que <b>se preguntan en el mostrador, con la camioneta afuera y el día ya empezado</b>, y ahí es tarde para cambiar de idea.</p>
+    <div class="pasos" data-rev-grupo>
+      <article class="paso">
+        <p class="paso__n">01</p>
+        <h3>Diga el trabajo, no la máquina</h3>
+        <p>«Voy a romper un radier de diez centímetros» sirve más que «necesito un martillo». Con lo primero le pasan la máquina correcta; con lo segundo le pasan la que pidió, y si era la equivocada el día se paga igual.</p>
+      </article>
+      <article class="paso">
+        <p class="paso__n">02</p>
+        <h3>Cómo se cuenta el día</h3>
+        <p><b>La pregunta que más discusiones evita.</b> Un «día» de arriendo no siempre son veinticuatro horas: en muchas casas es una jornada, y devolver a las nueve de la mañana siguiente puede contar como dos. Pregúntelo por teléfono, antes.</p>
+      </article>
+      <article class="paso">
+        <p class="paso__n">03</p>
+        <h3>Qué se deja en garantía</h3>
+        <p>Toda casa de arriendo pide documento y algún respaldo. <b>Cuánto y de qué forma lo define el negocio</b>, y por eso acá no va ninguna cifra: pregúntelo antes de ir, no en el mesón.</p>
+      </article>
+      <article class="paso">
+        <p class="paso__n">04</p>
+        <h3>Quién pone el consumible</h3>
+        <p>Discos, brocas, combustible y aceite. Lo habitual es que corran por cuenta de quien arrienda, pero se pregunta igual: es lo que hace que un arriendo barato termine caro.</p>
+      </article>
+      <article class="paso">
+        <p class="paso__n">05</p>
+        <h3>Si algo falla, se avisa al tiro</h3>
+        <p>No al devolver. Una máquina que siguió trabajando fallada se rompe entera, y ahí la conversación deja de ser por un día de arriendo. Un llamado de treinta segundos cambia todo el asunto.</p>
+      </article>
+    </div>
+    <p class="mini">Las respuestas concretas —plazos, garantía, si hay traslado y hasta dónde— <b>las pone M y D</b>. Esta sección dice qué preguntar, no qué contestan.</p>
+  </div>
+</section>
+
+<!-- ══ TAJO ═══════════════════════════════════════════════════════ -->
+<figure class="tajo">
+  <img src="imagenes/tajo-01.jpg" alt="" width="2200" height="1237" loading="lazy" decoding="async">
+  <figcaption class="ancho tajo__txt">
+    <p class="rotulo">Verificado en Google Maps el 02-09-2026</p>
+    <p class="tajo__f">No aparece otro arriendo de maquinaria en la comuna.</p>
+  </figcaption>
+</figure>
+
+<!-- ══ EL TABLERO ═════════════════════════════════════════════════ -->
+<section class="mitades" aria-labelledby="t-tablero">
+  <div class="mitades__foto">
+    <img src="imagenes/media-01.jpg" alt="Panel perforado de taller con herramientas colgadas" width="1800" height="1197" loading="lazy" decoding="async">
+  </div>
+  <div class="mitades__txt">
+    <p class="rotulo">03 — Lo que la página hace y el tablero no</p>
+    <h2 id="t-tablero" class="h2 h2--chico">Saber si está,<br>antes de venir.</h2>
+    <p>En un galpón de arriendo el tablero lo dice todo: cada herramienta tiene su lugar marcado, y <b>cuando la silueta está vacía es porque la máquina anda trabajando</b>. El problema es que el tablero está adentro y el cliente está a diez cuadras.</p>
+    <p>Una página con las máquinas listadas hace lo mismo desde afuera, y de paso contesta a las once de la noche, que es cuando alguien decide que el sábado hace el radier.</p>
+    <ul class="lista">
+      <li><b>Hormigoneras y vibradores</b></li>
+      <li><b>Demolición y perforación</b></li>
+      <li><b>Corte</b> — cerámica, fierro, hormigón</li>
+      <li><b>Compactación</b></li>
+      <li><b>Andamios y escalas</b></li>
+      <li><b>Generación y soldadura</b></li>
+    </ul>
+    <p class="mini"><span class="ej" data-ejemplo>Lista de ejemplo</span> con las familias que suele tener un arriendo de maquinaria. <b>Qué tiene M y D de verdad no lo sé y no se inventa</b>: esta lista está armada y vacía a propósito, para que la complete el negocio.</p>
+  </div>
+</section>
+
+<!-- ══ MOSAICO ════════════════════════════════════════════════════ -->
+<section class="mos" aria-labelledby="t-mos">
+  <div class="ancho">
+    <p class="rotulo">04 — El oficio</p>
+    <h2 id="t-mos" class="h2 h2--chico">Fierro que sale<br>y tiene que volver.</h2>
+  </div>
+  <div class="mos__grilla" data-rev-grupo>
+    <figure class="mos__p"><img src="imagenes/mos-01.jpg" alt="Esmeril angular" width="1200" height="800" loading="lazy" decoding="async"></figure>
+    <figure class="mos__p"><img src="imagenes/mos-02.jpg" alt="Hormigonera bajo techo" width="1200" height="1600" loading="lazy" decoding="async"></figure>
+    <figure class="mos__p"><img src="imagenes/mos-03.jpg" alt="Bodega con estanterías" width="1200" height="1800" loading="lazy" decoding="async"></figure>
+    <figure class="mos__p"><img src="imagenes/mos-04.jpg" alt="Portaherramientas de máquina" width="1200" height="900" loading="lazy" decoding="async"></figure>
+    <figure class="mos__p"><img src="imagenes/mos-05.jpg" alt="Capacho de hormigón suspendido" width="1200" height="1600" loading="lazy" decoding="async"></figure>
+    <figure class="mos__p"><img src="imagenes/mos-06.jpg" alt="Retroexcavadora en faena" width="1200" height="894" loading="lazy" decoding="async"></figure>
+  </div>
+</section>
+
+<!-- ══ CONTACTO ═══════════════════════════════════════════════════ -->
+<section class="contacto con-telon" id="contacto" aria-labelledby="t-contacto">
+  <div class="telon" aria-hidden="true">
+    <img src="imagenes/telon-01.jpg" alt="" width="1200" height="900" loading="lazy" decoding="async">
+  </div>
+  <div class="ancho">
+    <p class="rotulo">05 — Contacto</p>
+    <h2 id="t-contacto" class="h2">Arrendar.</h2>
+    <p class="contacto__num"><a href="tel:+56990723068">+56 9 9072 3068</a></p>
+
+    <div class="guion">
+      <p class="guion__t">Qué decir al llamar, en tres líneas</p>
+      <ol class="guion__l">
+        <li>Qué va a hacer y de qué tamaño. <span>«Un radier de tres por cuatro.»</span></li>
+        <li>Qué día y por cuánto tiempo. <span>«El sábado, un día.»</span></li>
+        <li>Si tiene cómo llevarla. <span>«Ando en camioneta chica.»</span></li>
+      </ol>
+    </div>
+
+    <dl class="datos">
+      <div><dt>Comuna</dt><dd>Loncoche, Región de La Araucanía</dd></div>
+      <div><dt>Dirección exacta</dt><dd class="falta">falta — no está publicada</dd></div>
+      <div><dt>Horario</dt><dd class="falta">falta — hay que confirmarlo</dd></div>
+      <div><dt>Cómo se cuenta el día</dt><dd class="falta">falta — lo define el negocio</dd></div>
+      <div><dt>Garantía que se pide</dt><dd class="falta">falta — lo define el negocio</dd></div>
+      <div><dt>¿Hay traslado?</dt><dd class="falta">falta — y hasta dónde</dd></div>
+    </dl>
+    <p class="mini">Las cinco líneas en cursiva son las que hay que llenar antes de publicar. Mientras estén así, la página muestra honestamente lo que todavía no se sabe.</p>
+  </div>
+</section>
+
+</main>
+
+<section class="dueno" aria-labelledby="t-dueno">
+  <div class="ancho">
+    <p class="rotulo">Para el dueño de M y D</p>
+    <h2 id="t-dueno" class="h2 h2--chico">Por qué le preparé esto.</h2>
+    <div class="dueno__cols">
+      <div>
+        <h3>Lo que encontré, verificado el 02-09-2026</h3>
+        <ul class="lista lista--marca">
+          <li>Ficha de Google <b>sin sitio web</b>.</li>
+          <li><b>Es el único arriendo de maquinaria que aparece en Maps en Loncoche.</b></li>
+          <li>Teléfono publicado en la ficha. Sin reseñas todavía.</li>
+        </ul>
+      </div>
+      <div>
+        <h3>Ser el único tiene una trampa</h3>
+        <p>Si alguien en Loncoche busca «arriendo de maquinaria», le sale usted y nadie más. Esa es una posición que casi nadie tiene. <b>Pero la ficha no dice qué máquinas hay</b>, y el que no ve lo que busca no llama: maneja a Villarrica o a Temuco, donde sí hay páginas con el listado.</p>
+        <p>La página no está para que lo encuentren —ya lo encuentran—. Está para que el que lo encontró <b>se quede</b>.</p>
+      </div>
+    </div>
+
+    <h3>Qué es de verdad y qué es ejemplo en esta demo</h3>
+    <ul class="lista">
+      <li><b>De verdad:</b> el teléfono, la comuna y que es el único del rubro en Maps. Todo de su ficha de Google, verificado el 02-09-2026.</li>
+      <li><b>Conocimiento general del rubro, escrito por mí:</b> la tabla de trabajos y las cinco preguntas del mesón. Sirven para cualquier casa de arriendo, <b>y no describen su catálogo</b>.</li>
+      <li><b>Ejemplo:</b> la lista de familias de máquinas. Está armada y vacía para que la complete usted.</li>
+      <li><b>No hay ni un precio, ni un plazo, ni un monto de garantía</b> en toda la página, y no es descuido: son datos que hacen tomar una decisión con la billetera y no se inventan.</li>
+      <li><b>Sin reseñas todavía:</b> por eso la página no habla de calificaciones. Cuando lleguen, se agregan.</li>
+      <li><b>Falta:</b> fotos suyas —del galpón, de las máquinas y del tablero—. Ninguna imagen de esta página es de su negocio.</li>
+    </ul>
+
+    <p class="dueno__cierre">
+      <a class="boton boton--fuerte" href="https://wa.me/56968650001">Escríbame por WhatsApp</a>
+      <a class="flecha" href="../../">Ver otros trabajos <span aria-hidden="true">→</span></a>
+    </p>
+  </div>
+</section>
+
+<footer class="pie">
+  <div class="ancho pie__in">
+    <p>Demostración sin encargo, preparada por <b>CristalWeb</b> — desarrollo web en Loncoche.<br>Las fotografías son de bancos de uso libre y no corresponden al galpón ni a las máquinas de M y D.</p>
+    <p class="pie__leg">Página con fines comerciales. La información sobre qué máquina pide cada trabajo es general del rubro y no reemplaza la recomendación de quien entrega la máquina. Ningún precio, plazo ni monto de garantía aparece en esta página porque los define el negocio.</p>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>

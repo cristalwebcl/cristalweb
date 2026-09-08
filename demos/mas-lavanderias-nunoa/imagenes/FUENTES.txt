@@ -1,0 +1,14 @@
+﻿FUENTES DE LAS IMAGENES - mas-lavanderias-nunoa Bancos libres; procesadas con preparar-lote.ps1 (JPEG, ancho y calidad por tratamiento). 
+port-01.jpg  <=  mixkit | Mixkit Stock Video Free License | Mixkit | https://mixkit.co/free-stock-video/ | https://assets.mixkit.co/videos/22179/22179-720.mp4
+cita-01.jpg  <=  mixkit | Mixkit Stock Video Free License | Mixkit | https://mixkit.co/free-stock-video/ | https://assets.mixkit.co/videos/14967/14967-720.mp4
+telon-01.jpg  <=  mixkit | Mixkit Stock Video Free License | Mixkit | https://mixkit.co/free-stock-video/ | https://assets.mixkit.co/videos/22179/22179-720.mp4
+mos1-01.jpg  <=  pexels | Pexels License | Nati | https://www.pexels.com/es-es/foto/apilados-amontonados-ropa-pila-14642654/ | https://images.pexels.com/photos/14642654/pexels-photo-14642654.jpeg | recorte 3:2
+mos2-01.jpg  <=  pexels | Pexels License | Nati | https://www.pexels.com/es-es/foto/apilados-amontonados-ropa-pila-14641436/ | https://images.pexels.com/photos/14641436/pexels-photo-14641436.jpeg | recorte 3:2
+mos3-01.jpg  <=  pexels | Pexels License | Nati | https://www.pexels.com/es-es/foto/apilados-amontonados-ropa-pila-14641424/ | https://images.pexels.com/photos/14641424/pexels-photo-14641424.jpeg | recorte 3:2
+mos4-01.jpg  <=  pexels | Pexels License | https://kaboompics.com/ | https://www.pexels.com/es-es/foto/mujer-en-pie-de-pie-tareas-del-hogar-4959879/ | https://images.pexels.com/photos/4959879/pexels-photo-4959879.jpeg | recorte 3:2
+mos5-01.jpg  <=  pexels | Pexels License | Svetlana Afonina | https://www.pexels.com/es-es/foto/primer-plano-de-una-persona-sosteniendo-una-canasta-tejida-8603622/ | https://images.pexels.com/photos/8603622/pexels-photo-8603622.jpeg | recorte 3:2
+mos6-01.jpg  <=  pexels | Pexels License | Liliana Drew | https://www.pexels.com/es-es/foto/ropa-hierro-plancha-planchado-9462682/ | https://images.pexels.com/photos/9462682/pexels-photo-9462682.jpeg | recorte 3:2
+mit-01.jpg  <=  pexels | Pexels License | ROMAN ODINTSOV | https://www.pexels.com/es-es/foto/textura-blanco-limpiar-limpio-7691101/ | https://images.pexels.com/photos/7691101/pexels-photo-7691101.jpeg
+tajo-01.jpg  <=  pexels | Pexels License | cottonbro studio | https://www.pexels.com/es-es/foto/casa-apartamento-hogar-limpiar-4107220/ | https://images.pexels.com/photos/4107220/pexels-photo-4107220.jpeg
+video/port.mp4  <=  mixkit | Mixkit Stock Video Free License | mixkit 22179 | https://mixkit.co/free-stock-video/ | https://assets.mixkit.co/videos/22179/22179-720.mp4 | 1,0-10,0 s, 720p sin audio
+video/cita.mp4  <=  mixkit | Mixkit Stock Video Free License | mixkit 14967 | https://mixkit.co/free-stock-video/ | https://assets.mixkit.co/videos/14967/14967-720.mp4 | 1,0-9,0 s, 576p sin audio

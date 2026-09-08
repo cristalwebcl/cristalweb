@@ -1,0 +1,445 @@
+/* ===================================================================
+   207 · Aridos Arimix · Villarrica
+   Demo comercial sin encargo. Construida el 02-09-2026.
+
+   DESLINDE OBLIGADO CON LA 53-aridos-las-camelias (Valdivia), que es el
+   otro arido del registro: aquella es «Cantera y camelia» —gris arido
+   calido con camelia rosa—, su tema es CUANTO MATERIAL SE NECESITA y su
+   pieza es una calculadora. Esta es al reves: el tema no es la
+   cantidad, es **EL FLETE Y EL ACCESO**, y su pieza son las seis cosas
+   que hay que mirar antes de que llegue el camion.
+   Y hay una diferencia de origen que se ve en las fotos: la 53 es
+   CANTERA (piedra partida, angulosa) y Arimix es RIO (piedra
+   redondeada por el agua). No se parecen ni en el material.
+
+   DIRECCION - «EL MATERIAL ES BARATO. MOVERLO, NO.»
+   Las dos preguntas que deciden un pedido de aridos no son el precio
+   del metro: son a que distancia queda y si el camion puede entrar y
+   botar. Ahi se cae la mayoria de los pedidos, y ninguna competencia de
+   la zona lo tiene escrito.
+
+   PALETA — gravilla y rio:
+   gravilla `#ECEDEA` (gris muy claro con algo de verde) + panel
+   `#E0E2DE` + panel-2 `#D6D9D4` + tinta `#191C1A` (15,4:1) + medio
+   `#535853` (5,1:1 sobre el peor fondo).
+   ACENTO: RIO `#175E70` para TEXTO (5,1:1 sobre panel-2, 6,2:1 sobre
+   gravilla) y `#2C93AC` para OBJETOS. **El referente es literal: el
+   arido de Arimix sale de lecho de rio**, y por eso el unico color de
+   la pagina es el del agua de donde sale la piedra.
+   Deslinde de los azules y turquesas del registro: el `#08697A` de la
+   74 es AGUA DE LAGO QUIETA (paisaje, calma, en un hospital
+   veterinario); el `#0E5A70` de la 196 es la ARISTA DE UN BLOQUE DE
+   HIELO; el `#1C5480` de la 199 es ESMALTE DE TABLERO; el `#22415C` de
+   la 62 es PAVONADO; el de ekla es PLANO; el `#1B5FA8` de la 185 es
+   PLASTICO DE JABA. Este es AGUA CORRIENTE DE RIO, y es la unica del
+   registro donde el color explica DE DONDE VIENE EL PRODUCTO.
+
+   TRIO — verificado contra identidades.md el 02-09-2026:
+   · Display BUENARD (0 usos, un solo peso pedido: 700). Serif robusta
+     y algo condensada, de rotulo de faena.
+   · Cuerpo OUTFIT (3 usos). Geometrica limpia, muy legible en tabla.
+   · Mono INCONSOLATA (7 usos) — clara en cifras, y ninguno de los
+     monos menos usados quedaba libre despues de 199-206.
+
+   ESTRUCTURA: tabla de materiales (con su propio scroll, para que
+   ningun ancho empuje el body) + reticula de seis. **La tabla se
+   deslinda de la de la 199, que tambien indexa por trabajo: alla la
+   primera columna es LO QUE VA A HACER y la segunda LA MAQUINA; aca la
+   primera columna es EL MATERIAL y la segunda PARA QUE** — una es
+   prescripcion, la otra es catalogo explicado.
+
+   AMBIENTE: LA DESCARGA (primera del registro). Una sola columna
+   angosta de granos que cae en un punto, como la cinta descargando
+   sobre el acopio. Deslinde: la lluvia de la 188 es DIAGONAL, ancha y
+   de muchas gotas finas; las hojas de la 203 son POCAS, GRANDES y
+   giran; el aserrin de la 184 SALTA en arco. Esta cae RECTA, RAPIDA y
+   SIEMPRE EN EL MISMO SITIO, que es lo que hace una cinta
+   transportadora.
+
+   REGLA DE DATOS: ni una granulometria, ni una medida, ni un precio.
+   Los tamanos se nombran distinto en cada planta y publicar el numero
+   equivocado hace perder pedidos; el precio depende del flete.
+   Verificado en el DOM.
+   =================================================================== */
+
+:root {
+  --gravilla: #ECEDEA;
+  --panel:    #E0E2DE;
+  --panel-2:  #D6D9D4;   /* el peor fondo: todo se calibra contra este */
+  --tinta:    #191C1A;
+  --medio:    #535853;
+  --rio:      #175E70;   /* TEXTO */
+  --rio-o:    #2C93AC;   /* OBJETOS: nunca texto */
+  --borde:    #C2C6C0;
+
+  --sale:   cubic-bezier(.16, 1, .3, 1);
+  --sale-2: cubic-bezier(.2, 0, 0, 1);
+
+  --ancho: min(92vw, 1180px);
+  --p--1: clamp(.78rem, .74rem + .18vw, .88rem);
+  --p-0:  clamp(1rem, .95rem + .25vw, 1.1rem);
+  --p-1:  clamp(1.14rem, 1.04rem + .45vw, 1.34rem);
+  --p-2:  clamp(1.5rem, 1.25rem + 1.15vw, 2.1rem);
+  --p-3:  clamp(1.95rem, 1.45rem + 2.2vw, 3.2rem);
+  --p-4:  clamp(2.6rem, 1.8rem + 4.2vw, 5.4rem);
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+[hidden] { display: none !important; }
+html { scroll-behavior: smooth; }
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+
+body {
+  margin: 0; background: var(--gravilla); color: var(--tinta);
+  font-family: Outfit, "Segoe UI", system-ui, sans-serif;
+  font-size: var(--p-0); line-height: 1.66;
+  -webkit-font-smoothing: antialiased;
+}
+img { max-width: 100%; }
+a { color: inherit; }
+.ancho { width: var(--ancho); margin-inline: auto; }
+.vis-oculto {
+  position: absolute; width: 1px; height: 1px; overflow: hidden;
+  clip-path: inset(50%); white-space: nowrap;
+}
+
+.rotulo {
+  font-family: Inconsolata, ui-monospace, monospace;
+  font-size: var(--p--1); letter-spacing: .15em; text-transform: uppercase;
+  color: var(--rio); margin: 0 0 1.4rem;
+}
+.h2 {
+  font-family: Buenard, Georgia, serif; font-weight: 700;
+  font-size: var(--p-3); line-height: 1.1; letter-spacing: -.01em; margin: 0 0 1.5rem;
+}
+.h2--chico { font-size: var(--p-2); }
+.mini { font-size: var(--p--1); color: var(--medio); max-width: 70ch; }
+.mini b { color: var(--tinta); }
+.nota { font-size: var(--p--1); color: var(--medio); max-width: 76ch; margin-top: 2.2rem; }
+.nota b { color: var(--tinta); }
+.falta { color: var(--medio); font-style: italic; }
+.ej { color: var(--medio); font-style: italic; border-bottom: 1px dashed var(--borde); }
+.ej::after {
+  content: " (ej.)"; font-family: Inconsolata, ui-monospace, monospace;
+  font-size: .82em; font-style: normal; opacity: .85;
+}
+
+/* -- BANDA DE PROPUESTA ------------------------------------------ */
+.propuesta { background: var(--rio); color: #E7F3F6; }
+.propuesta__in { padding: .9rem 0; }
+.propuesta__q { font-family: Inconsolata, ui-monospace, monospace; font-size: var(--p--1); letter-spacing: .03em; margin: 0 0 .2rem; }
+.propuesta__d { margin: 0; font-size: var(--p--1); line-height: 1.5; max-width: 100ch; }
+
+/* -- CABECERA ---------------------------------------------------- */
+.cab {
+  position: sticky; top: 0; z-index: 50;
+  background: var(--gravilla); border-bottom: 1px solid var(--borde);
+  transition: transform .3s var(--sale-2), background-color .3s ease, border-color .3s ease;
+}
+.cab__in { display: flex; align-items: center; justify-content: space-between; gap: 1.2rem; padding: .55rem 0; }
+.cab__marca { display: inline-flex; align-items: center; gap: .8rem; text-decoration: none; min-height: 44px; }
+.cab__txt {
+  font-family: Buenard, Georgia, serif; font-weight: 700;
+  font-size: var(--p-1); line-height: 1.1; display: flex; flex-direction: column; gap: .24rem;
+}
+.cab__sub {
+  font-family: Inconsolata, ui-monospace, monospace;
+  font-size: .58em; letter-spacing: .06em; color: var(--medio); text-transform: uppercase;
+}
+.cab__nav { display: flex; align-items: center; gap: 1.5rem; }
+.cab__nav a {
+  font-size: var(--p--1); text-decoration: none; color: var(--medio);
+  min-height: 44px; display: inline-flex; align-items: center; transition: color .2s ease;
+}
+.cab__nav a:hover, .cab__nav a:focus-visible { color: var(--tinta); }
+.cab__tel { color: var(--rio) !important; font-family: Inconsolata, ui-monospace, monospace; white-space: nowrap; }
+
+/* Cabecera 173a - EL ACOPIO: el cono del material sobre su base.
+   Ningun cono ni monton en las 206 anteriores. */
+.acopio { position: relative; width: 30px; height: 24px; flex: 0 0 auto; }
+.acopio__cono {
+  position: absolute; left: 3px; bottom: 4px;
+  width: 0; height: 0;
+  border-left: 12px solid transparent;
+  border-right: 12px solid transparent;
+  border-bottom: 17px solid var(--tinta);
+}
+.acopio__base {
+  position: absolute; left: 0; right: 0; bottom: 1px; height: 2px;
+  background: var(--rio-o);
+}
+
+.js .cab--top { background: transparent; border-bottom-color: transparent; }
+.js .cab--oculta { transform: translateY(-100%); }
+@media (prefers-reduced-motion: reduce) { .cab { transition-duration: 1ms; } }
+
+/* -- PORTADA ----------------------------------------------------- */
+.portada {
+  position: relative; isolation: isolate; overflow: hidden;
+  min-height: 88svh; display: flex; align-items: center; padding: 5rem 0 4rem;
+}
+.portada__foto { position: absolute; inset: 0; z-index: -3; }
+.portada__foto img {
+  display: block; width: 100%; height: 100%; object-fit: cover; object-position: 68% 50%;
+  -webkit-mask-image: linear-gradient(90deg, transparent 0%, transparent 20%, rgba(0,0,0,.28) 41%, rgba(0,0,0,.76) 62%, #000 80%, #000 100%);
+          mask-image: linear-gradient(90deg, transparent 0%, transparent 20%, rgba(0,0,0,.28) 41%, rgba(0,0,0,.76) 62%, #000 80%, #000 100%);
+}
+/* Velo entero en rgba terminando en alfa 0. */
+.portada__foto::after {
+  content: ""; position: absolute; inset: 0;
+  background: linear-gradient(90deg,
+    rgba(236,237,234,1) 0%, rgba(236,237,234,1) 37%, rgba(236,237,234,.92) 52%,
+    rgba(236,237,234,.52) 69%, rgba(236,237,234,.16) 86%, rgba(236,237,234,0) 97%);
+}
+.portada__in { position: relative; z-index: 1; }
+.portada__h1 {
+  font-family: Buenard, Georgia, serif; font-weight: 700;
+  font-size: var(--p-4); line-height: 1.02; letter-spacing: -.025em; margin: 0 0 1.3rem;
+}
+.portada__bajada { max-width: 44ch; color: var(--medio); font-size: var(--p-1); margin: 0 0 2.4rem; }
+.portada__bajada b { color: var(--tinta); }
+.portada__pie { margin: 0; }
+
+/* -- AMBIENTE: LA DESCARGA --------------------------------------- */
+/* Una sola columna angosta de granos que cae SIEMPRE EN EL MISMO SITIO
+   y se acumula, como la cinta descargando sobre el acopio. Deslinde:
+   la lluvia de la 188 es diagonal y ancha; las hojas de la 203 son
+   pocas, grandes y giran; el aserrin de la 184 salta en arco. Esta cae
+   recta, rapida y en un punto. Determinista: --i por nth-child (la CSP
+   bloquea style=""). Solo transform y opacity. */
+.amb { position: absolute; inset: 0; z-index: -2; overflow: hidden; pointer-events: none; }
+.amb__g {
+  position: absolute; top: -8vh;
+  left: calc(78% + var(--x, 0) * 1px);
+  width: var(--tam, 5px); height: var(--tam, 5px);
+  border-radius: 40% 55% 45% 60%;
+  background: rgba(25, 28, 26, .3);
+  opacity: 0;
+  animation: amb-cae var(--dur, 3.4s) linear infinite;
+  animation-delay: calc(var(--i) * -.42s);
+  will-change: transform, opacity;
+}
+.amb--descarga .amb__g:nth-child(1) { --i:0; --x:-14; --tam:6px; --dur:3.2s; }
+.amb--descarga .amb__g:nth-child(2) { --i:1; --x:4;   --tam:4px; --dur:3.6s; }
+.amb--descarga .amb__g:nth-child(3) { --i:2; --x:-6;  --tam:5px; --dur:3.0s; }
+.amb--descarga .amb__g:nth-child(4) { --i:3; --x:12;  --tam:3px; --dur:3.8s; }
+.amb--descarga .amb__g:nth-child(5) { --i:4; --x:-18; --tam:4px; --dur:3.4s; }
+.amb--descarga .amb__g:nth-child(6) { --i:5; --x:8;   --tam:6px; --dur:3.1s; }
+.amb--descarga .amb__g:nth-child(7) { --i:6; --x:-2;  --tam:3px; --dur:3.7s; }
+.amb--descarga .amb__g:nth-child(8) { --i:7; --x:16;  --tam:5px; --dur:3.3s; }
+@keyframes amb-cae {
+  0%   { transform: translate3d(0, 0, 0); opacity: 0; }
+  8%   { opacity: .8; }
+  88%  { opacity: .8; }
+  100% { transform: translate3d(0, 104vh, 0); opacity: 0; }
+}
+@media (prefers-reduced-motion: reduce) { .amb { display: none; } }
+@media (max-width: 760px) { .amb__g:nth-child(n+5) { display: none; } }
+
+/* -- BOTONES ----------------------------------------------------- */
+.boton {
+  position: relative; display: inline-flex; align-items: center; justify-content: center;
+  min-height: 48px; padding: .8rem 1.8rem;
+  border: 1px solid var(--rio); color: var(--rio); background: transparent;
+  font-family: Inconsolata, ui-monospace, monospace;
+  font-size: var(--p--1); letter-spacing: .1em; text-transform: uppercase;
+  text-decoration: none; overflow: hidden; isolation: isolate;
+}
+.boton::before {
+  content: ""; position: absolute; inset: 0; z-index: -1;
+  background: var(--rio); transform: translateY(101%); transition: transform .4s var(--sale);
+}
+.boton:hover, .boton:focus-visible { color: var(--gravilla); }
+.boton:hover::before, .boton:focus-visible::before { transform: translateY(0); }
+.boton--fuerte { background: var(--rio); color: var(--gravilla); }
+.boton--fuerte::before { background: var(--tinta); }
+@media (prefers-reduced-motion: reduce) { .boton::before { transition-duration: 1ms; } }
+
+.flecha {
+  display: inline-flex; align-items: center; gap: .5rem; min-height: 44px;
+  font-family: Inconsolata, ui-monospace, monospace; font-size: var(--p--1); letter-spacing: .05em;
+  color: var(--rio); text-decoration: none; border-bottom: 1px solid currentColor;
+  transition: border-bottom-width .2s ease;
+}
+.flecha:hover, .flecha:focus-visible { border-bottom-width: 3px; }
+
+/* -- PIEZA FIRMA: LA TABLA DE MATERIALES ------------------------- */
+.material { padding: 7rem 0; background: var(--panel); }
+.material .intro, .acceso .intro { max-width: 66ch; color: var(--medio); font-size: var(--p-1); margin: 0 0 3rem; }
+.material .intro b, .acceso .intro b { color: var(--tinta); }
+
+/* La caja tiene su propio scroll: asi ningun ancho de tabla empuja el
+   body y aparece scroll horizontal en telefono (leccion de la 190). */
+.tabla-caja { overflow-x: auto; -webkit-overflow-scrolling: touch; border-top: 2px solid var(--tinta); }
+.tabla { width: 100%; border-collapse: collapse; min-width: 660px; text-align: left; }
+.tabla thead th {
+  font-family: Inconsolata, ui-monospace, monospace; font-weight: 400;
+  font-size: var(--p--1); letter-spacing: .1em; text-transform: uppercase;
+  color: var(--rio); padding: 1rem .9rem; vertical-align: bottom;
+  border-bottom: 1px solid var(--borde);
+}
+.tabla tbody tr { border-bottom: 1px solid var(--borde); }
+.tabla tbody th, .tabla tbody td { padding: 1.15rem .9rem; vertical-align: top; }
+.tabla tbody th {
+  font-family: Buenard, Georgia, serif; font-weight: 700; font-size: var(--p-1);
+  color: var(--tinta); width: 18%;
+}
+.tabla .uso { width: 26%; color: var(--rio); font-weight: 600; font-size: var(--p--1); }
+.tabla tbody td:last-child { color: var(--medio); font-size: var(--p--1); line-height: 1.62; }
+.tabla tbody td:last-child b { color: var(--tinta); }
+.tabla tbody tr:nth-child(even) { background: rgba(255,255,255,.4); }
+
+/* -- CITA -------------------------------------------------------- */
+.cita { position: relative; isolation: isolate; overflow: hidden; min-height: min(48vh, 370px); display: grid; align-items: center; }
+.cita img { position: absolute; inset: 0; z-index: -2; width: 100%; height: 100%; object-fit: cover; object-position: 50% 50%; }
+/* Peor caso medido a mano: el cielo claro bajo el velo .84 sobre tinta
+   deja el texto gravilla en 10:1. El auditor marca 1,00:1 porque no ve
+   el ::after y trepa al body — falso positivo conocido. */
+.cita::after { content: ""; position: absolute; inset: 0; z-index: -1; background: rgba(25,28,26,.84); }
+.cita__txt p {
+  font-family: Buenard, Georgia, serif; font-weight: 700;
+  font-size: var(--p-2); line-height: 1.24; max-width: 30ch; margin: 0; color: var(--gravilla);
+}
+
+/* -- EL ACCESO --------------------------------------------------- */
+.acceso { padding: 7rem 0; }
+.acc { display: grid; grid-template-columns: repeat(3, 1fr); gap: 2.3rem 2.5rem; margin-bottom: 2.4rem; }
+.ac { border-top: 2px solid var(--rio-o); padding-top: 1rem; }
+.ac__n { font-family: Inconsolata, ui-monospace, monospace; font-size: var(--p--1); color: var(--rio); margin: 0 0 .5rem; }
+.ac h3 { font-family: Buenard, Georgia, serif; font-weight: 700; font-size: var(--p-1); margin: 0 0 .6rem; line-height: 1.2; }
+.ac p { margin: 0; color: var(--medio); font-size: var(--p--1); line-height: 1.66; }
+.ac p b { color: var(--tinta); }
+
+/* -- TAJO -------------------------------------------------------- */
+.tajo { position: relative; isolation: isolate; overflow: hidden; margin: 0; min-height: min(52vh, 400px); display: flex; align-items: flex-end; }
+.tajo img { position: absolute; inset: 0; z-index: -2; width: 100%; height: 100%; object-fit: cover; object-position: 50% 55%; }
+.tajo::after {
+  content: ""; position: absolute; inset: 0; z-index: -1;
+  background: linear-gradient(0deg, rgba(25,28,26,.95) 0%, rgba(25,28,26,.8) 34%, rgba(25,28,26,.3) 64%, rgba(25,28,26,0) 92%);
+}
+.tajo__txt { padding: 2.8rem 0; }
+.tajo__txt .rotulo { color: #93CBD8; }
+.tajo__f { font-family: Buenard, Georgia, serif; font-weight: 700; font-size: var(--p-2); margin: 0; line-height: 1.22; max-width: 28ch; color: var(--gravilla); }
+
+/* -- MITADES ----------------------------------------------------- */
+.mitades { display: grid; grid-template-columns: 1fr 1fr; background: var(--panel); }
+.mitades__foto img { display: block; width: 100%; height: 100%; object-fit: cover; }
+.mitades__txt { padding: 5.5rem clamp(1.5rem, 4vw, 4rem); display: flex; flex-direction: column; justify-content: center; }
+.mitades__txt p { color: var(--medio); }
+.mitades__txt p b { color: var(--tinta); }
+.lista { margin: 1.3rem 0; padding: 0; list-style: none; }
+.lista li { padding: .6rem 0 .6rem 1.5rem; position: relative; border-bottom: 1px solid var(--borde); font-size: var(--p--1); color: var(--medio); }
+.lista li b { color: var(--tinta); }
+.lista li::before { content: ""; position: absolute; left: 0; top: 1.1em; width: 8px; height: 1px; background: var(--rio); }
+.lista--marca li { border-bottom: none; padding-bottom: .3rem; }
+
+/* -- MOSAICO ----------------------------------------------------- */
+.mos { padding: 7rem 0 0; background: var(--panel-2); }
+.mos__grilla { display: grid; gap: 4px; grid-template-columns: repeat(3, 1fr); margin-top: 3rem; }
+.mos__p { margin: 0; overflow: hidden; }
+.mos__p:nth-child(1), .mos__p:nth-child(6) { grid-column: span 2; }
+.mos__p img { display: block; width: 100%; height: 100%; aspect-ratio: 3 / 2; object-fit: cover; transition: transform .5s var(--sale); }
+.mos__p:hover img { transform: scale(1.05); }
+@media (prefers-reduced-motion: reduce) { .mos__p:hover img { transform: none; } }
+
+/* -- CONTACTO ---------------------------------------------------- */
+.con-telon { position: relative; isolation: isolate; overflow: hidden; }
+.telon { position: absolute; inset: 0; z-index: -1; pointer-events: none; }
+.telon img {
+  display: block; width: 100%; height: 100%; object-fit: cover; opacity: .16;
+  -webkit-mask-image: linear-gradient(180deg, transparent 0%, #000 22%, #000 74%, transparent 100%);
+          mask-image: linear-gradient(180deg, transparent 0%, #000 22%, #000 74%, transparent 100%);
+}
+.contacto { padding: 7rem 0; }
+.contacto__num { margin: 0 0 2.4rem; }
+.contacto__num a {
+  font-family: Buenard, Georgia, serif; font-weight: 700;
+  font-size: clamp(1.7rem, 1.15rem + 3.1vw, 3.5rem); line-height: 1.1; color: var(--rio);
+  text-decoration: none; display: inline-flex; align-items: center; min-height: 44px;
+  border-bottom: 3px solid transparent; transition: border-color .25s ease;
+}
+.contacto__num a:hover, .contacto__num a:focus-visible { border-bottom-color: var(--rio); }
+
+.guion { border-left: 3px solid var(--rio); padding: .2rem 0 .2rem 1.4rem; margin: 0 0 2.6rem; max-width: 54rem; }
+.guion__t {
+  font-family: Inconsolata, ui-monospace, monospace; font-size: var(--p--1);
+  letter-spacing: .1em; text-transform: uppercase; color: var(--rio); margin: 0 0 .9rem;
+}
+.guion__l { margin: 0; padding-left: 1.2rem; }
+.guion__l li { margin-bottom: .55rem; font-size: var(--p-0); }
+.guion__l li span { display: block; color: var(--medio); font-size: var(--p--1); }
+.guion__l li span b { color: var(--tinta); }
+
+.datos { margin: 0 0 2rem; max-width: 48rem; }
+.datos > div { display: flex; justify-content: space-between; gap: 1.5rem; padding: .8rem 0; border-bottom: 1px solid var(--borde); }
+.datos dt { font-family: Inconsolata, ui-monospace, monospace; font-size: var(--p--1); color: var(--medio); letter-spacing: .05em; text-transform: uppercase; }
+.datos dd { margin: 0; text-align: right; font-size: var(--p--1); }
+
+/* -- PARA EL DUENO ----------------------------------------------- */
+.dueno { padding: 7rem 0; border-top: 1px solid var(--borde); background: var(--panel-2); }
+.dueno__cols { display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; margin-bottom: 3rem; }
+.dueno h3 {
+  font-family: Inconsolata, ui-monospace, monospace;
+  font-size: var(--p--1); letter-spacing: .1em; text-transform: uppercase;
+  color: var(--rio); margin: 2rem 0 1rem;
+}
+.dueno p { color: var(--medio); max-width: 62ch; }
+.dueno p b { color: var(--tinta); }
+.dueno__cierre { display: flex; flex-wrap: wrap; gap: 2rem; align-items: center; margin-top: 3rem; }
+
+.pie { padding: 3rem 0; border-top: 1px solid var(--borde); }
+.pie__in p { font-size: var(--p--1); color: var(--medio); margin: 0 0 .8rem; }
+.pie__in p b { color: var(--tinta); }
+.pie__leg { opacity: .95; }
+
+/* -- REVEALS ----------------------------------------------------- */
+.js [data-rev-grupo] > * { opacity: 0; transform: translateY(22px); }
+.js [data-rev-grupo].ok > * {
+  opacity: 1; transform: none;
+  transition: opacity .3s ease-out, transform .55s var(--sale);
+  transition-delay: calc(var(--r, 0) * 55ms);
+}
+[data-rev-grupo] > :nth-child(1){--r:0} [data-rev-grupo] > :nth-child(2){--r:1}
+[data-rev-grupo] > :nth-child(3){--r:2} [data-rev-grupo] > :nth-child(4){--r:3}
+[data-rev-grupo] > :nth-child(5){--r:4} [data-rev-grupo] > :nth-child(6){--r:5}
+@media (prefers-reduced-motion: reduce) {
+  .js [data-rev-grupo] > * { opacity: 1; transform: none; transition: none; }
+}
+:focus-visible { outline: 2px solid var(--rio); outline-offset: 3px; }
+
+/* -- MOVIL ------------------------------------------------------- */
+@media (max-width: 1080px) {
+  .acc { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 980px) {
+  .mitades { grid-template-columns: 1fr; }
+  .mitades__foto img { aspect-ratio: 16 / 10; height: auto; }
+  .dueno__cols { grid-template-columns: 1fr; gap: 1rem; }
+}
+@media (max-width: 760px) {
+  .cab__nav a:not(.cab__tel) { display: none; }
+  .portada { min-height: auto; padding: 3.5rem 0 3rem; }
+  /* En telefono el texto cae ENCIMA de la foto: la mascara lateral no
+     sirve a 375 px, asi que el velo se da vuelta y baja. */
+  .portada__foto img {
+    object-position: 60% 50%;
+    -webkit-mask-image: linear-gradient(180deg, #000 0%, #000 58%, transparent 100%);
+            mask-image: linear-gradient(180deg, #000 0%, #000 58%, transparent 100%);
+  }
+  .portada__foto::after {
+    background: linear-gradient(180deg,
+      rgba(236,237,234,.9) 0%, rgba(236,237,234,.84) 34%, rgba(236,237,234,.92) 64%, rgba(236,237,234,1) 100%);
+  }
+  .acc { grid-template-columns: 1fr; gap: 1.8rem; }
+  .material, .acceso, .contacto, .dueno { padding: 4.5rem 0; }
+  .mos { padding-top: 4.5rem; }
+  .mos__grilla { grid-template-columns: repeat(2, 1fr); }
+  .mos__p:nth-child(1), .mos__p:nth-child(6) { grid-column: span 2; }
+}
+@media (max-width: 480px) {
+  .cab__sub { font-size: .5em; }
+}
+@media (max-width: 460px) {
+  .datos > div { flex-direction: column; gap: .2rem; }
+  .datos dd { text-align: left; }
+}

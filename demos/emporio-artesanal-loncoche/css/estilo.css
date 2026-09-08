@@ -1,0 +1,685 @@
+/* ══════════════════════════════════════════════════════════════════
+   EMPORIO ARTESANAL — Loncoche
+   Demo 135 · tanda P3
+
+   IDENTIDAD — «MIMBRE»
+   Un emporio de productos locales no es una tienda gourmet: es una
+   repisa de madera, frascos con etiqueta escrita a mano y un canasto
+   en el mesón. Lino claro de fondo, verde hoja apagado para lo que
+   crece y café mimbre para el tejido.
+
+   DESLINDES:
+   · Verde: es el noveno del registro y el único VEGETAL cálido sobre
+     lino — la cruz plana de farmacia (115) es señalética, la menta
+     (116) es pastel de bata, el polín (122) es madera tratada, el
+     fierro del molino (125) es esmalte, el láser (131) es luz. Éste
+     es hoja, y sólo aparece sobre claro o como fondo hondo.
+   · Café mimbre contra el cuero de la 76: el cuero es piel oscura y
+     brillante; el mimbre es tejido CLARO y mate. Además acá el café
+     casi no lleva texto encima —3,3:1— y va escrito que sirve para
+     gráficos y titulares, no para párrafos.
+
+   REGLA CULTURAL DE LA CASA (aplica acá): de los productos mapuche se
+   nombran los MATERIALES y la COMIDA —merkén, harina tostada, lana,
+   madera— y NUNCA se dibuja simbología ceremonial. Ni un motivo, ni
+   una greca, ni un adorno «inspirado en». Los nombres de productores
+   sólo se publican con su autorización.
+
+   TRÍO TIPOGRÁFICO
+   · Display: Cantata One — nueva en el registro. Serif de un solo
+     peso con algo de trazo de pluma: la letra que uno esperaría en la
+     etiqueta de un frasco escrito a mano.
+   · Cuerpo: Sarala — 3 usos, humanista tranquila.
+   · Dato: Sono — 5 usos. Mono redondeada, cálida: sirve para los
+     números de repisa sin poner cara de terminal.
+
+   CABECERA 101ª DEL OFICIO: LA CANASTA DE MIMBRE — el semicírculo con
+   la trama entrecruzada insinuada por dos gradientes repetidos, y su
+   asa. Primera cabecera del registro hecha de TEJIDO.
+
+   FONDO NUEVO: FRASCOS EN LA REPISA — sobre una línea de repisa van
+   APARECIENDO siluetas de frasco de a una, en fundido, y se quedan;
+   cuando la repisa se llena, el ciclo vuelve a empezar muy lento.
+   TRIPLE DESLINDE de «llegar y quedarse»: los timbres de la 114 se
+   ESTAMPAN con golpe seco; los sacos de la 127 CAEN con peso y
+   rebote; estos frascos APARECEN sin moverse — nadie los vio llegar.
+
+   ESTRUCTURA: B (índice lateral sticky). DESLINDE con la 90, la 102 y
+   la 123, que también son B: acá el índice no es un menú ni una línea
+   de tiempo — es la ESTANTERÍA, y cada entrada lleva su número de
+   repisa en mono, como los carteles colgados de un pasillo.
+   ══════════════════════════════════════════════════════════════════ */
+
+:root {
+  --lino:      #F3EFE6;  /* la base                                   */
+  --lino-b:    #FBF8F2;
+  --tinta:     #2C2A24;  /* 12,4:1 sobre lino                         */
+  --tinta-s:   #5E5A50;  /* 6,0:1 sobre lino                          */
+  --hoja:      #4C6B3F;  /* 5,3:1 sobre lino — SOLO en claro          */
+  --hoja-h:    #2E3D28;  /* fondo hondo                               */
+  --hoja-c:    #B9C4B0;  /* 6,4:1 sobre hoja-h                        */
+  --mimbre:    #A87A4A;  /* 3,3:1 — SOLO gráficos y titulares grandes */
+  --mimbre-c:  #D9B98C;  /* 6,2:1 sobre hoja-h                        */
+  --linea:     #DDD6C7;
+
+  --display: 'Cantata One', Georgia, serif;
+  --cuerpo:  'Sarala', system-ui, sans-serif;
+  --mono:    'Sono', ui-monospace, monospace;
+
+  --ancho: 1120px;
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+[hidden] { display: none !important; }
+
+html { scroll-behavior: smooth; }
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+
+body {
+  margin: 0;
+  background: var(--lino);
+  color: var(--tinta);
+  font-family: var(--cuerpo);
+  font-size: clamp(1rem, .95rem + .3vw, 1.08rem);
+  line-height: 1.66;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2 { font-family: var(--display); font-weight: 400; line-height: 1.12; margin: 0; }
+h3 { font-family: var(--display); font-weight: 400; margin: 0; line-height: 1.25; }
+p { margin: 0 0 1.05em; }
+a { color: inherit; }
+
+/* ── Banda de propuesta ───────────────────────────────────────── */
+.propuesta {
+  background: var(--hoja-h); color: var(--lino);
+  padding: 1.1rem clamp(1.1rem, 5vw, 3rem);
+}
+.propuesta__que { font-size: .84rem; margin: 0 0 .25rem; }
+.propuesta .propuesta__gancho { font-size: .84rem; margin: 0; max-width: 66ch; color: var(--hoja-c); }
+.propuesta b { font-weight: 700; }
+
+/* ── Cabecera fantasma ────────────────────────────────────────── */
+.cab {
+  position: sticky; top: 0; z-index: 40;
+  display: flex; align-items: center; gap: clamp(1rem, 4vw, 2.5rem);
+  padding: .75rem clamp(1.1rem, 5vw, 3rem);
+  background: var(--lino-b);
+  border-bottom: 1px solid var(--linea);
+  transition: background .35s ease, border-color .35s ease, transform .35s ease;
+}
+/* Por defecto sólida: si el JS no corre, la cabecera se lee igual. */
+.cab.cab--ghost  { background: transparent; border-color: transparent; }
+.cab.cab--oculta { transform: translateY(-110%); }
+
+.cab__marca { display: flex; align-items: center; gap: .7rem; text-decoration: none; }
+.cab__nombre { font-family: var(--display); font-size: 1rem; }
+
+/* LA CANASTA DE MIMBRE — cabecera 101ª. El cuerpo es un semicírculo
+   con dos gradientes repetidos cruzados, que a este tamaño leen como
+   trama de tejido; encima, el asa. */
+.canasta { position: relative; flex: none; width: 28px; height: 22px; }
+.canasta::before {  /* el asa */
+  content: ''; position: absolute; left: 6px; top: 0;
+  width: 16px; height: 10px;
+  border: 1.5px solid var(--mimbre);
+  border-bottom: 0;
+  border-radius: 9px 9px 0 0;
+}
+.canasta::after {   /* el cuerpo tejido */
+  content: ''; position: absolute; left: 0; bottom: 0;
+  width: 28px; height: 13px;
+  border-radius: 0 0 12px 12px;
+  border: 1.5px solid var(--mimbre);
+  background:
+    repeating-linear-gradient(58deg,  rgba(168,122,74,.5) 0 1px, transparent 1px 5px),
+    repeating-linear-gradient(-58deg, rgba(168,122,74,.5) 0 1px, transparent 1px 5px);
+}
+
+.cab__nav { display: none; gap: 1.5rem; margin-left: auto; font-size: .9rem; }
+.cab__nav a { text-decoration: none; color: var(--tinta-s); }
+.cab__nav a:hover, .cab__nav a:focus-visible { color: var(--hoja); }
+@media (min-width: 900px) { .cab__nav { display: flex; } }
+
+.cab__wsp { margin-left: auto; text-align: right; text-decoration: none; line-height: 1.15; }
+@media (min-width: 900px) { .cab__wsp { margin-left: 0; } }
+.cab__wsp-rot {
+  display: block; font-family: var(--mono); font-size: .66rem;
+  letter-spacing: .16em; text-transform: uppercase; color: var(--hoja);
+}
+.cab__wsp-num { display: block; font-weight: 700; font-size: .95rem; }
+
+/* ══════════════ PORTADA ══════════════ */
+.portada {
+  position: relative; overflow: hidden;
+  min-height: 88svh;
+  display: flex; align-items: flex-end;
+  padding: clamp(3rem, 9vw, 6rem) clamp(1.1rem, 5vw, 3rem) clamp(3rem, 8vw, 5rem);
+  background: linear-gradient(to bottom, var(--lino-b), var(--lino) 60%);
+}
+
+/* FONDO — FRASCOS EN LA REPISA. Aparecen de a uno, en fundido, y se
+   quedan. Nadie los ve llegar: eso es lo que los separa de los sacos
+   que caen y de los timbres que se estampan. */
+.repisa-fondo {
+  position: absolute; left: 0; right: 0; top: 26%;
+  height: 80px; pointer-events: none;
+}
+.repisa-fondo::after {  /* la tabla de la repisa */
+  content: ''; position: absolute; left: 6%; right: 6%; bottom: 0;
+  height: 2px; background: rgba(168,122,74,.28);
+}
+.repisa-fondo span {
+  position: absolute; bottom: 2px;
+  width: 26px; height: 46px;
+  background: rgba(76,107,63,.16);
+  border-radius: 4px 4px 3px 3px;
+  opacity: 0;
+  animation: aparece 30s ease-in-out infinite;
+}
+.repisa-fondo span::before {  /* la tapa */
+  content: ''; position: absolute; left: 5px; right: 5px; top: -6px;
+  height: 6px; background: rgba(168,122,74,.30); border-radius: 2px 2px 0 0;
+}
+.repisa-fondo .f1 { left: 14%; animation-delay: 0s; }
+.repisa-fondo .f2 { left: 26%; animation-delay: 2.5s; }
+.repisa-fondo .f3 { left: 38%; animation-delay: 5s; }
+.repisa-fondo .f4 { left: 50%; animation-delay: 7.5s; }
+.repisa-fondo .f5 { left: 62%; animation-delay: 10s; }
+@keyframes aparece {
+  0%       { opacity: 0; }
+  8%, 82%  { opacity: 1; }
+  92%,100% { opacity: 0; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .repisa-fondo span { animation: none; opacity: 1; }
+}
+
+.portada__texto { position: relative; max-width: 22ch; }
+.sitio {
+  font-family: var(--mono); font-size: .74rem;
+  letter-spacing: .14em; text-transform: uppercase;
+  color: var(--hoja); margin-bottom: 1.1rem;
+}
+.portada h1 { font-size: clamp(2.6rem, 8.5vw, 5.6rem); margin-bottom: 1.2rem; }
+.portada .bajada { max-width: 46ch; color: var(--tinta-s); }
+
+.specs { display: flex; flex-wrap: wrap; gap: 2.4rem; margin: 2rem 0 0; }
+.spec dt {
+  font-family: var(--mono); font-size: .68rem;
+  letter-spacing: .12em; text-transform: uppercase;
+  color: var(--tinta-s); margin-bottom: .15rem;
+}
+.spec dd {
+  margin: 0; font-family: var(--display);
+  font-size: clamp(2.1rem, 5.5vw, 3.2rem); line-height: 1;
+  color: var(--hoja); font-variant-numeric: tabular-nums;
+}
+
+/* ══════════════ LAS REPISAS (B) ══════════════ */
+.repisas {
+  background: var(--lino-b);
+  border-top: 1px solid var(--linea);
+  padding: clamp(3.5rem, 10vw, 6.5rem) clamp(1.1rem, 5vw, 3rem);
+}
+.repisas__cabecera { max-width: var(--ancho); margin: 0 auto 2.6rem; }
+.repisas .antetitulo, .estandar .antetitulo {
+  font-family: var(--mono); font-size: .7rem;
+  letter-spacing: .16em; text-transform: uppercase;
+  color: var(--hoja); margin-bottom: .8rem;
+}
+.estandar .antetitulo--claro { color: var(--mimbre-c); }
+.repisas h2 { font-size: clamp(2rem, 6vw, 3.6rem); margin-bottom: 1.1rem; }
+.repisas__cabecera > p { max-width: 58ch; color: var(--tinta-s); }
+
+.marca-ejemplo::before {
+  content: attr(data-ejemplo);
+  display: inline-block;
+  font-family: var(--mono); font-size: .68rem;
+  letter-spacing: .06em; text-transform: uppercase;
+  color: var(--hoja);
+  border-left: 2px solid var(--mimbre);
+  padding-left: .6rem;
+}
+
+.repisas__grilla { max-width: var(--ancho); margin: 0 auto; display: grid; gap: 2rem; }
+@media (min-width: 900px) {
+  .repisas__grilla { grid-template-columns: 13rem 1fr; gap: 3.5rem; align-items: start; }
+}
+/* Un hijo de grid trae min-width:auto y se estira al ancho de su
+   contenido: sin esto, el índice en fila empuja la página. */
+.indice, .repisas__cuerpo { min-width: 0; }
+
+.indice ol {
+  list-style: none; margin: 0; padding: 0 0 .6rem;
+  display: flex; gap: 1.2rem; overflow-x: auto;
+  border-bottom: 1px solid var(--linea);
+}
+@media (min-width: 900px) {
+  .indice { position: sticky; top: 6rem; }
+  .indice ol {
+    flex-direction: column; gap: 0; overflow: visible;
+    border-bottom: 0; border-left: 2px solid var(--linea); padding: 0;
+  }
+}
+.indice a {
+  display: block; text-decoration: none; white-space: nowrap;
+  font-size: .95rem; color: var(--tinta-s);
+  padding: .45rem 0;
+  transition: color .3s ease;
+}
+@media (min-width: 900px) {
+  .indice a { padding: .5rem 0 .5rem 1rem; margin-left: -2px; border-left: 2px solid transparent; }
+}
+.indice__n { font-family: var(--mono); font-size: .8rem; color: var(--tinta-s); margin-right: .4rem; }
+/* La repisa que se está mirando. El JS pone .aqui; sin JS ninguna se
+   ilumina y el índice sigue siendo un índice de anclas. */
+.indice a.aqui { color: var(--hoja); font-weight: 700; }
+@media (min-width: 900px) { .indice a.aqui { border-left-color: var(--hoja); } }
+.indice a.aqui .indice__n { color: var(--hoja); }
+
+.repisa { padding-bottom: 2.6rem; margin-bottom: 2.6rem; border-bottom: 1px solid var(--linea); }
+.repisa:last-child { border-bottom: 0; margin-bottom: 0; padding-bottom: 0; }
+.repisa__n {
+  margin: 0 0 .3rem; font-family: var(--mono);
+  font-size: clamp(1.8rem, 4.5vw, 2.6rem); line-height: 1; color: var(--mimbre);
+}
+.repisa h3 { font-size: clamp(1.5rem, 3.5vw, 2.1rem); margin-bottom: .6rem; }
+.repisa > p { max-width: 58ch; color: var(--tinta-s); }
+
+.fichas { list-style: none; margin: 1.4rem 0 0; padding: 0; display: grid; gap: .9rem; }
+@media (min-width: 700px) { .fichas { grid-template-columns: repeat(3, 1fr); gap: 1.2rem; } }
+.fichas li {
+  background: var(--lino);
+  border: 1px solid var(--linea);
+  border-top: 3px solid var(--mimbre);
+  padding: .9rem 1rem;
+}
+.ficha__q { font-family: var(--display); font-size: 1.05rem; margin-bottom: .4rem; }
+.ficha__d { margin: 0; font-size: .9rem; }
+
+.falta {
+  font-family: var(--mono); font-size: .78rem;
+  color: var(--hoja); border-bottom: 1px dashed var(--hoja);
+}
+/* El acento tiene dos caras y el FONDO decide cuál. */
+.estandar .falta { color: var(--mimbre-c); border-bottom-color: var(--mimbre-c); }
+
+/* ══════════════ EL ESTÁNDAR ══════════════ */
+.estandar {
+  background: var(--hoja-h); color: var(--lino);
+  padding: clamp(3.5rem, 10vw, 6.5rem) clamp(1.1rem, 5vw, 3rem);
+}
+.estandar__cuerpo { max-width: var(--ancho); margin: 0 auto; }
+.estandar h2 { font-size: clamp(2rem, 6vw, 3.6rem); margin-bottom: 1.1rem; }
+.estandar .entrada { max-width: 58ch; color: var(--hoja-c); }
+
+.reglas { list-style: none; margin: 2.4rem 0 2rem; padding: 0; display: grid; gap: 1.4rem; }
+@media (min-width: 760px) { .reglas { grid-template-columns: repeat(2, 1fr); gap: 2rem; } }
+.reglas li { display: grid; grid-template-columns: 2.6rem 1fr; gap: .8rem; }
+.reglas__n { margin: 0; font-family: var(--mono); font-size: 1.1rem; color: var(--mimbre-c); }
+.reglas h3 { font-size: 1.15rem; margin-bottom: .35rem; }
+.reglas p { margin: 0; font-size: .95rem; color: var(--hoja-c); max-width: 46ch; }
+
+.estandar .firma { font-size: .9rem; color: var(--hoja-c); max-width: 60ch; }
+
+.visitar { border-top: 1px solid #46543F; margin-top: 2.4rem; padding-top: 2.2rem; }
+.visitar__rot {
+  font-family: var(--mono); font-size: .72rem;
+  letter-spacing: .14em; text-transform: uppercase;
+  color: var(--hoja-c); margin-bottom: .9rem;
+}
+.fantasma {
+  display: inline-block; text-decoration: none;
+  font-family: var(--display); font-size: 1.05rem;
+  padding: .8rem 1.7rem;
+  border: 1px solid var(--mimbre-c); color: var(--mimbre-c);
+  transition: background .25s ease, color .25s ease;
+}
+.fantasma:hover, .fantasma:focus-visible { background: var(--mimbre-c); color: var(--hoja-h); }
+.visitar .visitar__nota { font-size: .88rem; color: var(--hoja-c); margin-top: 1.2rem; max-width: 56ch; }
+
+/* ══════════════ PARA EL DUEÑO ══════════════ */
+.dueno {
+  background: var(--lino); color: var(--tinta);
+  padding: clamp(3rem, 8vw, 5rem) clamp(1.1rem, 5vw, 3rem);
+}
+.dueno h2 { font-size: clamp(1.5rem, 4vw, 2rem); margin: 0 auto 2rem; max-width: var(--ancho); }
+.dueno__cols { max-width: var(--ancho); margin: 0 auto; display: grid; gap: 1.8rem; }
+@media (min-width: 820px) { .dueno__cols { grid-template-columns: repeat(3, 1fr); gap: 2.4rem; } }
+.dueno__cols h3 {
+  font-family: var(--mono); font-size: .7rem;
+  letter-spacing: .14em; text-transform: uppercase;
+  color: var(--hoja); margin-bottom: .6rem;
+}
+.dueno__cols p { font-size: .94rem; color: var(--tinta-s); margin: 0; }
+.dueno__cierre { max-width: var(--ancho); margin: 2.5rem auto 0; display: flex; flex-wrap: wrap; gap: 1.6rem; }
+.flecha {
+  font-weight: 700; font-size: .96rem;
+  color: var(--hoja); text-decoration: none;
+  border-bottom: 1px solid currentColor; padding-bottom: .12rem;
+}
+.flecha:hover, .flecha:focus-visible { color: var(--tinta); }
+
+.pie {
+  background: var(--hoja-h);
+  padding: 2rem clamp(1.1rem, 5vw, 3rem) 5.5rem;
+}
+@media (min-width: 720px) { .pie { padding-bottom: 2rem; } }
+.pie p { max-width: 62ch; margin: 0 auto; font-size: .82rem; color: var(--hoja-c); }
+
+/* ══════════════ BARRA FIJA MÓVIL (T2) ══════════════ */
+.barra-movil {
+  position: fixed; left: 0; right: 0; bottom: 0; z-index: 50;
+  background: var(--hoja);
+  padding: .75rem 1rem;
+  text-align: center;
+}
+.barra-movil a {
+  display: block; text-decoration: none;
+  font-family: var(--display); font-size: 1rem;
+  color: #F3EFE6;
+}
+@media (min-width: 720px) { .barra-movil { display: none; } }
+
+/* ══════════════ REVEALS ══════════════ */
+.js .rev { opacity: 0; transform: translateY(18px); }
+.js .rev.on { opacity: 1; transform: none; transition: opacity .7s ease, transform .7s ease; }
+@media (prefers-reduced-motion: reduce) { .js .rev { opacity: 1; transform: none; } }
+
+/* ══════════════════════════════════════════════════════════════════
+   LAS IMÁGENES DE RUBRO — seis tratamientos
+   ══════════════════════════════════════════════════════════════════
+   La página no puede ser texto sobre fondo plano de arriba abajo. Van
+   seis apariciones distintas, para que el ojo no vea siempre lo mismo:
+   portada disuelta, aura de color, media pantalla, cita a sangre, tira
+   de tres, y la galería con las fotos propias del negocio.
+
+   LA REGLA: la foto no se ensucia para poder leer encima. Lo que
+   sostiene el contraste es un gradiente por zona. La ÚNICA excepción es
+   el aura, donde el desenfoque no es un parche sino el efecto entero.
+
+   Procedencia de cada archivo: imagenes/FUENTES.txt
+   ══════════════════════════════════════════════════════════════════ */
+
+/* ── 1 · PORTADA ── */
+/* position/isolation acá y no heredadas: hay demos cuya .portada no es
+   posicionada, y entonces el .portada__foto absoluto se cuelga del body
+   y tapa el titular entero. El z-index del texto va por lo mismo. */
+.portada--foto { position: relative; isolation: isolate; overflow: hidden; padding-top: clamp(1.5rem, 3.5vh, 3.5rem); }
+.portada--foto .portada__texto { position: relative; z-index: 2; max-width: 40rem; }
+.portada__foto { position: absolute; z-index: 0; inset: 0; overflow: hidden; pointer-events: none; }
+.portada__foto img {
+  display: block; width: 100%; height: 100%;
+  object-fit: cover; object-position: 56% 50%;
+  -webkit-mask-image: linear-gradient(90deg, transparent 0%, transparent 40%,
+              rgba(0,0,0,.20) 50%, rgba(0,0,0,.66) 62%, #000 74%, #000 100%);
+          mask-image: linear-gradient(90deg, transparent 0%, transparent 40%,
+              rgba(0,0,0,.20) 50%, rgba(0,0,0,.66) 62%, #000 74%, #000 100%);
+}
+/* El velo se escribe ENTERO en rgba y termina en alfa 0. Con var() en
+   los primeros stops habia demos donde el gradiente tapaba la foto de
+   punta a punta —paso tres veces— y costaba una captura cada vez
+   entenderlo. En rgba puro el degradado es el mismo y no falla. */
+/* Sin velo ::after: acá el fondo de la portada es un degradado lino y   el velo del mismo color tapaba la foto entera. La mascara sola hace   el trabajo — la foto no existe donde va el titular y entra completa   del 62% hacia la derecha. */
+@media (prefers-reduced-motion: no-preference) {
+  .portada__foto img { animation: respira 46s ease-in-out infinite alternate; }
+}
+@keyframes respira {
+  from { transform: scale(1.04) translate3d(0, 0, 0); }
+  to   { transform: scale(1.11) translate3d(-1.8%, -1.2%, 0); }
+}
+.js .portada--foto .portada__foto { opacity: 0; }
+.js .portada--foto.ok .portada__foto { opacity: 1; transition: opacity 1.1s ease; }
+.js .portada.rev,
+.js .portada.rev.ok { opacity: 1; transform: none; transition: none; }
+@media (max-width: 860px) {
+  .portada--foto { padding-top: 36svh; }
+  .portada__foto img {
+    object-position: 50% 44%;
+    -webkit-mask-image: linear-gradient(180deg, #000 0%, #000 30%, rgba(0,0,0,.34) 58%, transparent 78%);
+            mask-image: linear-gradient(180deg, #000 0%, #000 30%, rgba(0,0,0,.34) 58%, transparent 78%);
+  }
+  .portada__foto::after {
+    background: linear-gradient(180deg, rgba(243,239,230,0) 0%, rgba(243,239,230,.30) 42%, var(--lino) 70%);
+  }
+}
+
+/* ── 2 · AURA DE COLOR ── */
+#repisas { position: relative; isolation: isolate; overflow: hidden; }
+.aura { position: absolute; z-index: -1; inset: -12% -8% auto -8%; height: 78%; pointer-events: none; }
+.aura img {
+  display: block; width: 100%; height: 100%; object-fit: cover;
+  /* Acá el desenfoque ES el efecto: la foto deja de leerse y queda la luz. */
+  filter: blur(64px) saturate(1.45);
+  opacity: .38;
+  transform: scale(1.25);
+  /* Y se apaga EN LA IMAGEN, no con un velo encima. Un ::after que pinta
+     el fondo apaga solo DENTRO del div: en el borde de abajo queda un
+     corte recto a media seccion. Con la mascara la imagen misma se
+     desvanece y no hay borde que cortar. */
+  -webkit-mask-image: radial-gradient(ellipse 74% 58% at 50% 34%,
+              #000 0%, #000 26%, rgba(0,0,0,.55) 52%, transparent 82%);
+          mask-image: radial-gradient(ellipse 74% 58% at 50% 34%,
+              #000 0%, #000 26%, rgba(0,0,0,.55) 52%, transparent 82%);
+}
+@media (prefers-reduced-motion: no-preference) {
+  .aura img { animation: deriva-aura 68s ease-in-out infinite alternate; }
+}
+@keyframes deriva-aura {
+  from { transform: scale(1.25) translate3d(-3%, 0, 0); }
+  to   { transform: scale(1.38) translate3d(3%, -2%, 0); }
+}
+
+/* ── 3 · MEDIA PANTALLA ── */
+.mitades {
+  display: grid; grid-template-columns: 1fr 1fr; align-items: stretch;
+  background: var(--lino-b);
+  /* overflow hidden porque las entradas son laterales: mientras el texto
+     se desliza y la foto entra a escala, ambos se salen unos píxeles y
+     aparece scroll horizontal por un segundo. */
+  overflow: hidden;
+}
+.mitades__foto { position: relative; min-height: 62svh; overflow: hidden; }
+.mitades__foto img { display: block; width: 100%; height: 100%; object-fit: cover; object-position: 52% 50%; }
+.mitades__texto {
+  padding: clamp(2.5rem, 6vw, 5rem) clamp(1.4rem, 4vw, 3.5rem);
+  display: flex; flex-direction: column; justify-content: center;
+  color: var(--tinta);
+}
+.mitades__ante {
+  font-family: var(--dato); font-size: .72rem; letter-spacing: .16em;
+  text-transform: uppercase; color: var(--tinta-s); margin: 0 0 .9rem;
+}
+.mitades h2 {
+  font-family: var(--display); font-weight: 500;
+  font-size: clamp(1.7rem, 3.6vw, 2.8rem); line-height: 1.08;
+  margin: 0 0 1rem; color: var(--tinta);
+}
+.mitades__texto p:last-child {
+  margin: 0; font-size: 1rem; line-height: 1.65; color: var(--tinta); max-width: 34rem;
+}
+.js .mitades__texto.rev { opacity: 0; transform: translateX(1.6rem); }
+.js .mitades__foto.rev  { opacity: 0; transform: scale(1.04); }
+.js .mitades__texto.rev.ok,
+.js .mitades__foto.rev.ok {
+  opacity: 1; transform: none;
+  transition: opacity .9s ease, transform 1.1s cubic-bezier(.2,.7,.2,1);
+}
+@media (max-width: 780px) {
+  .mitades { grid-template-columns: 1fr; }
+  .mitades__foto { min-height: 44svh; }
+}
+
+/* ── 4 · LA CITA A SANGRE ── */
+.cita {
+  position: relative; isolation: isolate; min-height: 70svh;
+  display: flex; align-items: center; justify-content: center;
+  padding: clamp(3rem, 9vw, 7rem) clamp(1.2rem, 5vw, 4rem);
+  background: var(--lino); overflow: hidden;
+}
+.cita__foto { position: absolute; inset: 0; z-index: -1; overflow: hidden; }
+.cita__foto img { display: block; width: 100%; height: 100%; object-fit: cover; object-position: 50% 44%; }
+/* Velo parejo y fuerte: el texto va centrado y grande, encima de la foto
+   entera. Calculado sobre el peor caso —imagen del color contrario
+   detrás— para que el ratio aguante sin ensuciar la imagen. */
+.cita__foto::after {
+  content: ""; position: absolute; inset: 0;
+  background: linear-gradient(180deg, rgba(243,239,230,.72) 0%,
+              rgba(243,239,230,.84) 45%, rgba(243,239,230,.90) 100%);
+}
+.cita__texto { margin: 0; max-width: 42rem; text-align: center; color: var(--tinta); }
+.cita__texto p {
+  font-family: var(--display); font-weight: 500;
+  font-size: clamp(1.8rem, 4.6vw, 3.2rem); line-height: 1.16;
+  margin: 0; color: var(--tinta);
+}
+.cita__eco {
+  display: block; margin-top: 1.1rem;
+  font-family: var(--dato); font-size: .82rem; letter-spacing: .1em;
+  text-transform: uppercase; color: var(--hoja);
+}
+.js .cita__texto.rev { opacity: 0; transform: translateY(16px); }
+.js .cita__texto.rev.ok {
+  opacity: 1; transform: none;
+  transition: opacity 1s ease, transform 1s cubic-bezier(.2,.7,.2,1);
+}
+@media (prefers-reduced-motion: no-preference) {
+  .cita__foto img { animation: respira-cita 58s ease-in-out infinite alternate; }
+}
+@keyframes respira-cita {
+  from { transform: scale(1.06) translate3d(0, 0, 0); }
+  to   { transform: scale(1.13) translate3d(1.4%, -1%, 0); }
+}
+
+/* ── 5 · LA TIRA ── */
+.tira { display: grid; grid-template-columns: repeat(3, 1fr); gap: 2px; background: var(--linea); }
+.tira__pieza { margin: 0; overflow: hidden; height: 34svh; min-height: 220px; }
+.tira__pieza img {
+  display: block; width: 100%; height: 100%; object-fit: cover;
+  transition: transform 1.1s cubic-bezier(.2,.7,.2,1);
+}
+@media (hover: hover) and (pointer: fine) {
+  .tira__pieza:hover img { transform: scale(1.05); }
+}
+.js .tira__pieza.rev { opacity: 0; transform: translateY(1.4rem); }
+.js .tira__pieza.rev.ok {
+  opacity: 1; transform: none;
+  transition: opacity .8s ease, transform .9s cubic-bezier(.2,.7,.2,1);
+}
+.js .tira__pieza.rev.ok:nth-child(2) { transition-delay: .1s; }
+.js .tira__pieza.rev.ok:nth-child(3) { transition-delay: .2s; }
+@media (max-width: 700px) {
+  .tira { grid-template-columns: 1fr 1fr; }
+  .tira__pieza:last-child { grid-column: 1 / -1; height: 28svh; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .js .portada--foto .portada__foto,
+  .js .mitades__texto.rev, .js .mitades__foto.rev,
+  .js .cita__texto.rev, .js .tira__pieza.rev { opacity: 1; transform: none; }
+}
+
+/* ── TAJO: LA FRANJA A SANGRE ──
+   Una franja de foto entre dos secciones. No lleva texto encima, asi
+   que no lleva velo: se ve la foto y punto. Es la aparicion que mas
+   llena la pagina por el peso que cuesta. */
+/* La clase es .tajo y no .banda ni .franja: hay demos que ya usan esos
+   dos nombres para secciones propias, y chocaban. */
+.tajo {
+  position: relative; overflow: hidden;
+  height: clamp(180px, 30svh, 340px);
+  background: var(--lino-b);
+}
+.tajo img {
+  display: block; width: 100%; height: 100%;
+  object-fit: cover; object-position: 50% 50%;
+}
+@media (prefers-reduced-motion: no-preference) {
+  .tajo img { animation: deriva-tajo 54s ease-in-out infinite alternate; }
+}
+@keyframes deriva-tajo {
+  from { transform: scale(1.06) translate3d(-1.2%, 0, 0); }
+  to   { transform: scale(1.12) translate3d(1.2%, -1.4%, 0); }
+}
+.js .tajo { opacity: 0; }
+.js .tajo.ok { opacity: 1; transition: opacity 1s ease; }
+@media (prefers-reduced-motion: reduce) {
+  .js .tajo { opacity: 1; }
+}
+
+/* ── TELON: la foto detras de una seccion entera ──
+   No es el aura. El aura va reventada a 64 px y se lee como mancha de
+   color; el telon va NITIDO y bajo de opacidad, y se lee como foto.
+   El texto encima se sostiene porque la foto esta al .15, no porque
+   este sucia — que es la regla de siempre. */
+.con-telon { position: relative; isolation: isolate; overflow: hidden; }
+.telon { position: absolute; inset: 0; z-index: -1; pointer-events: none; }
+.telon img {
+  display: block; width: 100%; height: 100%;
+  object-fit: cover; object-position: 50% 44%;
+  opacity: .15;
+  -webkit-mask-image: linear-gradient(180deg, transparent 0%, #000 18%, #000 72%, transparent 100%);
+          mask-image: linear-gradient(180deg, transparent 0%, #000 18%, #000 72%, transparent 100%);
+}
+@media (prefers-reduced-motion: no-preference) {
+  .telon img { animation: deriva-telon 76s ease-in-out infinite alternate; }
+}
+@keyframes deriva-telon {
+  from { transform: scale(1.04) translate3d(0, 0, 0); }
+  to   { transform: scale(1.10) translate3d(-1.6%, -1%, 0); }
+}
+
+/* ── MOSAICO ──
+   Seis piezas en grilla. Es la unica parte de la pagina donde una
+   imagen puede repetirse con otro recorte: a este tamano no se lee
+   como repeticion sino como serie. */
+/* El mosaico trae su propio fondo: sus colores salen del bloque de
+   .mitades y hay demos donde ese fondo es el contrario al del body —
+   el titulo quedaba a 1,00:1, invisible. Con fondo propio el contraste
+   esta garantizado siempre, y va a sangre con el contenido centrado. */
+.mos {
+  background: var(--lino-b);
+  padding: clamp(2.6rem, 7vw, 5rem) clamp(1.2rem, 5vw, 4rem);
+}
+.mos__titulo {
+  max-width: 82rem; margin-left: auto; margin-right: auto;
+  font-family: var(--display); font-weight: 500;
+  font-size: clamp(1.5rem, 3.4vw, 2.4rem); line-height: 1.08;
+  margin: 0 0 .5rem; color: var(--tinta);
+}
+.mos__nota {
+  max-width: 82rem; margin: 0 auto 1.8rem;
+  color: var(); font-size: .94rem; line-height: 1.6;
+}
+.mos__grilla {
+  display: grid; gap: 4px;
+  grid-template-columns: repeat(3, 1fr);
+  max-width: 82rem; margin: 0 auto;
+}
+.mos__p { margin: 0; overflow: hidden; height: clamp(140px, 20svh, 220px); background: var(--lino-b); }
+.mos__p img {
+  display: block; width: 100%; height: 100%; object-fit: cover;
+  transition: transform 1.1s cubic-bezier(.2,.7,.2,1), filter .6s ease;
+}
+.mos__p:nth-child(1), .mos__p:nth-child(6) { grid-column: span 2; }
+@media (hover: hover) and (pointer: fine) {
+  .mos__p:hover img { transform: scale(1.06); }
+}
+.js .mos__p { opacity: 0; transform: translateY(1.2rem); }
+.js .mos__p.ok {
+  opacity: 1; transform: none;
+  transition: opacity .8s ease, transform .9s cubic-bezier(.2,.7,.2,1);
+}
+.js .mos__p.ok:nth-child(2) { transition-delay: .06s; }
+.js .mos__p.ok:nth-child(3) { transition-delay: .12s; }
+.js .mos__p.ok:nth-child(4) { transition-delay: .18s; }
+.js .mos__p.ok:nth-child(5) { transition-delay: .24s; }
+.js .mos__p.ok:nth-child(6) { transition-delay: .30s; }
+@media (max-width: 760px) {
+  .mos__grilla { grid-template-columns: 1fr 1fr; }
+  .mos__p:nth-child(1), .mos__p:nth-child(6) { grid-column: 1 / -1; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .js .mos__p { opacity: 1; transform: none; }
+}

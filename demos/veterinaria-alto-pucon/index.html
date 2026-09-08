@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="es-CL" class="no-js">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Veterinaria Alto Pucón — Pucón</title>
+<meta name="description" content="Veterinaria en Pucón. La revisión del perro que sale a la montaña y qué mirar al volver del paseo.">
+
+<!-- Política de seguridad de contenido: el navegador sólo puede cargar
+     archivos de este mismo sitio. Sin CDN, sin librerías, sin rastreadores.
+     Ver skills/web-blindada/references/csp-en-pages.md -->
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self'; img-src 'self' data:; font-src 'self'; connect-src 'self'; media-src 'self'; form-action 'self'; base-uri 'none'; frame-src 'none'; object-src 'none'">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+
+<!-- Rescate de la clase .js (regla 2 de la casa). En archivo, sin defer:
+     inline lo bloquearía la CSP. -->
+<script src="js/rescate.js"></script>
+
+<!-- Fuentes propias: cero peticiones a terceros. El preload va SOLO
+     para la display, que es la del titular de la portada. -->
+<link rel="preload" href="assets/fuentes/k2d-600-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="assets/fuentes.css">
+<link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+
+<div class="propuesta">
+  <p class="propuesta__que">Propuesta de sitio web — preparada para <b>Veterinaria Alto Pucón</b> por CristalWeb</p>
+  <p class="propuesta__gancho">108 reseñas con 4,7 en la ciudad donde el perro sube el cerro con su dueño. Y no hay ninguna página que hable de ese perro.</p>
+</div>
+
+<header class="cab" id="cab">
+  <a class="cab__marca" href="#portada">
+    <span class="huella" aria-hidden="true"></span>
+    <span class="cab__nombre">Alto Pucón</span>
+  </a>
+  <nav class="cab__nav" aria-label="Secciones">
+    <a href="#montana">El perro de montaña</a>
+    <a href="#vuelta">Después del paseo</a>
+  </nav>
+  <a class="cab__tel" href="tel:+56964073261">
+    <span class="cab__tel-rot">Pucón</span>
+    <span class="cab__tel-num">9 6407 3261</span>
+  </a>
+</header>
+
+<main>
+
+<!-- ========= PORTADA ========= -->
+<section class="portada portada--foto" id="portada" aria-labelledby="t-portada">
+  <!-- FONDO DE PORTADA: 2560 px, nitido. Se disuelve hacia el titular
+       con un gradiente lateral, no con desenfoque. -->
+  <div class="portada__foto" aria-hidden="true">
+    <img src="imagenes/port-01.jpg" width="2560" height="1707"
+         decoding="async" fetchpriority="high" alt="">
+  </div>
+
+  <div class="volcan" aria-hidden="true">
+    <span class="volcan__cono"></span>
+    <span class="volcan__humo"></span>
+  </div>
+
+  <div class="portada__texto">
+    <p class="sitio">Veterinaria · Pucón</p>
+    <h1 id="t-portada">¿Lo puedo llevar<br>al cerro?</h1>
+    <p class="bajada">La respuesta honesta es «depende», y lo que sigue es de qué
+      depende. En Pucón media ciudad sale a caminar con su perro, y ninguna página
+      del rubro habla del animal que hace eso todos los fines de semana.</p>
+    <dl class="specs">
+      <div class="spec"><dt>nota en Google</dt><dd>4,7</dd></div>
+      <div class="spec"><dt>reseñas</dt><dd>108</dd></div>
+      <div class="spec"><dt>teléfono</dt><dd class="dd--tel"><a href="tel:+56964073261">9 6407 3261</a></dd></div>
+    </dl>
+  </div>
+</section>
+
+<!-- ========= LA PIEZA FIRMA — ESTRUCTURA B ========= -->
+<section class="montana con-telon" id="montana" aria-labelledby="t-montana">
+  <div class="telon" aria-hidden="true">
+    <img src="imagenes/telon-01.jpg" width="1200" height="800" decoding="async" alt="">
+  </div>
+
+  <!-- AURA DE COLOR: la foto de rubro reventada a desenfoque. No se lee
+       como imagen: aporta color y luz detras de una seccion que si no
+       seria fondo plano. Aca el desenfoque SI es el efecto, no un parche,
+       y por eso el archivo va chico: a 64 px de blur, mas resolucion no
+       cambia nada. Sin loading=lazy porque el elemento va en absoluto con
+       z-index negativo y el navegador nunca lo considera visible. -->
+  <div class="aura" aria-hidden="true">
+    <img src="imagenes/aura-01.jpg" width="900" height="600" decoding="async" alt="">
+  </div>
+
+  <div class="montana__intro">
+    <p class="antetitulo">Lo que se revisa antes de salir</p>
+    <h2 id="t-montana">El perro que sale<br>a la montaña</h2>
+    <p class="entrada">Un perro que camina cinco horas por ripio y nieve no tiene las
+      mismas necesidades que uno que da la vuelta a la manzana. Nada de esto es
+      complicado — pero nadie se lo cuenta al dueño hasta que llega con el animal
+      cojeando.</p>
+    <p class="marca-ejemplo" data-ejemplo="Referencia general — la revisión la hace la veterinaria, con el perro adelante"></p>
+  </div>
+
+  <div class="tramos">
+    <!-- ÍNDICE LATERAL -->
+    <nav class="indice" aria-label="Tramos del paseo">
+      <p class="indice__rot">El paseo</p>
+      <ol>
+        <li><a href="#t-base">Base</a></li>
+        <li><a href="#t-bosque">Bosque</a></li>
+        <li><a href="#t-altura">Altura</a></li>
+        <li><a href="#t-vuelta">Vuelta</a></li>
+      </ol>
+      <p class="indice__nota">Sin metros ni altitudes: son tramos de terreno, no una
+        ruta. <span class="falta">falta: adaptarlo a los cerros que usan acá</span></p>
+    </nav>
+
+    <!-- LOS TRAMOS -->
+    <div class="tramo__lista">
+      <article class="tramo" id="t-base">
+        <p class="tramo__n">Base</p>
+        <h3>Antes de partir</h3>
+        <ul>
+          <li><b>Las almohadillas.</b> Se miran antes, no después: una grieta chica
+            se convierte en una herida abierta después de tres horas de ripio.</li>
+          <li><b>El agua.</b> El perro no avisa que tiene sed y no toma de cualquier
+            parte. Se lleva agua para él, aparte.</li>
+          <li><b>La edad y el estado.</b> Un cachorro en crecimiento y un perro
+            mayor no deberían hacer la misma caminata que uno adulto sano.
+            <span class="falta">falta: que la veterinaria precise</span></li>
+        </ul>
+      </article>
+
+      <article class="tramo" id="t-bosque">
+        <p class="tramo__n">Bosque</p>
+        <h3>Lo que se pega en el camino</h3>
+        <ul>
+          <li><b>Espigas.</b> Las semillas secas del pasto se entierran entre los
+            dedos, en las orejas y en la nariz. Es la consulta más común del verano
+            y la más fácil de evitar mirando al volver.</li>
+          <li><b>Garrapatas y pulgas.</b> El campo en primavera es otra cosa que la
+            ciudad. <span class="falta">falta: qué recomiendan acá</span></li>
+          <li><b>El agua de los esteros.</b> Que el perro tome de cualquier charco
+            es normal y no siempre es inofensivo.</li>
+        </ul>
+      </article>
+
+      <article class="tramo" id="t-altura">
+        <p class="tramo__n">Altura</p>
+        <h3>Cuándo el perro NO debería subir</h3>
+        <ul>
+          <li><b>Con calor fuerte.</b> El perro no transpira como una persona y en
+            la roca sin sombra se acalora mucho más rápido de lo que parece.</li>
+          <li><b>Sobre nieve o ripio suelto</b> si las almohadillas ya vienen
+            gastadas del día anterior.</li>
+          <li><b>Si es muy cachorro, muy viejo, o si venía tosiendo.</b> Un paseo
+            exigente no es el lugar para averiguar si estaba bien.</li>
+          <li><b>Donde no se lo puede bajar en brazos.</b> Es la regla más simple:
+            si el perro no puede seguir, alguien tiene que poder cargarlo.</li>
+        </ul>
+      </article>
+
+      <article class="tramo" id="t-vuelta">
+        <p class="tramo__n">Vuelta</p>
+        <h3>El regreso</h3>
+        <ul>
+          <li><b>Agua y sombra antes que comida.</b></li>
+          <li><b>La revisión completa</b>, que está en la sección siguiente y toma
+            dos minutos.</li>
+          <li><b>Descanso real al día siguiente</b> si la caminata fue larga: el
+            perro va a querer salir igual, y no siempre conviene.</li>
+        </ul>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ========= DESPUÉS DEL PASEO ========= -->
+<!-- ========= MEDIA PANTALLA ========= -->
+<section class="mitades" aria-labelledby="t-mitades">
+  <div class="mitades__foto">
+    <img src="imagenes/media-01.jpg" width="1700" height="1879"
+         loading="lazy" decoding="async" alt="">
+  </div>
+  <div class="mitades__texto">
+    <p class="mitades__ante">Lo que se revisa al bajar</p>
+    <h2 id="t-mitades">El perro no dice que le duele. Lo demuestra dos días después.</h2>
+    <p>Después de una subida larga, las molestias aparecen tarde: la almohadilla partida, la cojera que empieza el jueves, la garrapata que nadie vio. Revisarlo el mismo día que se vuelve —patas, orejas, entre los dedos— es cinco minutos que evitan la consulta del fin de semana, cuando ya no hay hora.</p>
+  </div>
+</section>
+
+<section class="vuelta" id="vuelta" aria-labelledby="t-vuelta2">
+  <div class="vuelta__cuerpo">
+    <p class="antetitulo antetitulo--claro">Dos minutos en la casa</p>
+    <h2 id="t-vuelta2">Después<br>del paseo</h2>
+    <p class="entrada">La revisión al volver es lo que separa una espiga que se saca
+      con la mano de una que termina en pabellón. No es un diagnóstico: es mirar.</p>
+
+    <ol class="chequeo">
+      <li><b>Entre los dedos, uno por uno.</b> Es donde se meten las espigas y donde
+        aparecen las grietas. Con las cuatro patas, sin apuro.</li>
+      <li><b>Las almohadillas.</b> Buscando cortes, desgaste o zonas más rojas que el
+        resto.</li>
+      <li><b>Las orejas por dentro y por fuera</b>, y la nariz.</li>
+      <li><b>El pelaje completo con la mano</b>, contra el pelo: así se encuentran
+        garrapatas que a la vista no se ven.</li>
+      <li><b>Cómo camina al día siguiente.</b> Una cojera que aparece después es más
+        frecuente que una del momento.</li>
+      <li><b>Si toma agua normal y come normal.</b> Los dos primeros cambios que
+        avisan que algo pasa.</li>
+    </ol>
+
+    <div class="ojo">
+      <p><b>Nada de esta lista sirve para descartar algo.</b> Es qué mirar, no qué
+        concluir. Si aparece cualquiera de esas cosas —o si el perro simplemente no
+        está como siempre— eso se consulta.
+        <span class="falta">falta: que la veterinaria revise y firme esta lista</span></p>
+    </div>
+  </div>
+</section>
+
+<!-- ========= EL CIERRE — T1 ========= -->
+<!-- ========= LA CITA A SANGRE ========= -->
+<section class="cita" aria-labelledby="t-cita">
+  <div class="cita__foto" aria-hidden="true">
+    <img src="imagenes/cita-01.jpg" width="1700" height="2550"
+         loading="lazy" decoding="async" alt="">
+  </div>
+  <blockquote class="cita__texto">
+    <p id="t-cita">Acá el perro sube el cerro<br>
+      <span class="cita__eco">Y ninguna página de la zona habla de ese perro</span></p>
+  </blockquote>
+</section>
+
+
+
+<!-- ========= TAJO — FRANJA A SANGRE ========= -->
+<div class="tajo" aria-hidden="true">
+  <img src="imagenes/banda-01.jpg" width="1100" height="733"
+       loading="lazy" decoding="async" alt="">
+</div>
+<section class="cierre" id="llamar" aria-labelledby="t-cierre">
+  <p class="cierre__rot">Para preguntar antes de subir</p>
+  <h2 id="t-cierre" class="cierre__tel">
+    <a href="tel:+56964073261">9 6407 3261</a>
+  </h2>
+  <p class="cierre__pie">Es el número publicado en su ficha de Google. Una consulta
+    antes de una caminata larga cuesta mucho menos que una después.</p>
+</section>
+
+<!-- ========= LA TIRA ========= -->
+<section class="tira" aria-label="Tres imágenes del oficio">
+  <figure class="tira__pieza">
+    <img src="imagenes/tira-01.jpg" width="1100" height="733" loading="lazy" decoding="async" alt="Caminante cruzando una ladera abierta.">
+  </figure>
+  <figure class="tira__pieza">
+    <img src="imagenes/tira-02.jpg" width="1100" height="733" loading="lazy" decoding="async" alt="Cordón de montaña con sendero de altura.">
+  </figure>
+  <figure class="tira__pieza">
+    <img src="imagenes/tira-03.jpg" width="1100" height="1216" loading="lazy" decoding="async" alt="Dos personas bajando un sendero acompañadas de perros.">
+  </figure>
+</section>
+
+</main>
+
+
+
+<!-- ========= MOSAICO ========= -->
+<section class="mos" aria-labelledby="t-mos">
+  <h2 id="t-mos" class="mos__titulo">La misma serie, más de cerca</h2>
+  <p class="mos__nota">Estas seis ya aparecen más arriba en la página. Vuelven acá en otro tamaño porque una sola pasada de imágenes deja el scroll vacío, y porque de cerca se ven cosas que en grande se pierden. La procedencia de cada una está en imagenes/FUENTES.txt.</p>
+  <div class="mos__grilla">
+    <figure class="mos__p">
+      <img src="imagenes/mos-01.jpg" width="780" height="862"
+           loading="lazy" decoding="async" alt="">
+    </figure>
+    <figure class="mos__p">
+      <img src="imagenes/mos-02.jpg" width="780" height="862"
+           loading="lazy" decoding="async" alt="">
+    </figure>
+    <figure class="mos__p">
+      <img src="imagenes/mos-03.jpg" width="780" height="520"
+           loading="lazy" decoding="async" alt="">
+    </figure>
+    <figure class="mos__p">
+      <img src="imagenes/mos-04.jpg" width="780" height="520"
+           loading="lazy" decoding="async" alt="">
+    </figure>
+    <figure class="mos__p">
+      <img src="imagenes/mos-05.jpg" width="780" height="520"
+           loading="lazy" decoding="async" alt="">
+    </figure>
+    <figure class="mos__p">
+      <img src="imagenes/mos-06.jpg" width="780" height="1170"
+           loading="lazy" decoding="async" alt="">
+    </figure>
+  </div>
+</section>
+<section class="dueno" aria-labelledby="t-dueno">
+  <h2 id="t-dueno">Para la veterinaria</h2>
+  <div class="dueno__cols">
+    <div>
+      <h3>Lo que está verificado</h3>
+      <p>El 4,7 con 108 reseñas de su ficha de Google y el teléfono 9 6407 3261. No
+        hay página propia.</p>
+    </div>
+    <div>
+      <h3>Lo que no escribí</h3>
+      <p>Ninguna altitud, ninguna distancia y ningún producto. Los tramos son de
+        terreno y no corresponden a ninguna ruta concreta: si acá se camina siempre
+        por los mismos cerros, eso lo adaptan ustedes.</p>
+    </div>
+    <div>
+      <h3>Lo que falta</h3>
+      <p>Revisar las dos secciones, el horario y la dirección. En Pucón, ser la
+        veterinaria que le habla al perro que sale a la montaña es una posición que
+        no tiene nadie más.</p>
+    </div>
+  </div>
+  <p class="dueno__cierre">
+    <a class="flecha" href="https://wa.me/56968650001" rel="noopener">Escribirme por WhatsApp <span aria-hidden="true">→</span></a>
+    <a class="flecha" href="../../" rel="noopener">Ver otros trabajos <span aria-hidden="true">→</span></a>
+  </p>
+</section>
+
+<footer class="pie">
+  <p><b>Esta página no entrega orientación veterinaria.</b> Las recomendaciones son
+    generales, no reemplazan la evaluación de un profesional y no sirven para
+    descartar ninguna condición. No se nombran medicamentos, productos ni
+    cantidades. <b>Ante cualquier síntoma, consulte.</b></p>
+  <p class="pie__demo">Sitio de demostración preparado por CristalWeb. El negocio no
+    lo ha encargado ni ha revisado su contenido.</p>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>

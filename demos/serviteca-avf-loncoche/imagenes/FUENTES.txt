@@ -1,0 +1,64 @@
+PROCEDENCIA DE LAS IMÁGENES — Serviteca AVF, Loncoche
+════════════════════════════════════════════════════════════════
+
+DEL NEGOCIO — cuatro imágenes, incluido EL LOGO.
+
+gal-01.jpg    1300x1300  EL LOGO — engranaje, «AVF Serviteca · Taller
+                         Mecánico»
+gal-02.jpg    1131x1600  el afiche de servicios, con dirección y teléfono
+port-01.jpg    839x1600  EL TALLER por dentro, con el auto en el elevador
+                         — va en la portada: es la unica foto suya con
+                         luz propia, y sobre un fondo negro caucho eso
+                         es lo que decide
+tira-02.jpg   1000x1250  un disco de freno desmontado, sobre el gato
+tira-01.jpg   1000x423   el aviso con la lista de servicios
+
+**Tienen logo y no lo usan.** Un engranaje con el nombre, bien hecho, y
+no aparece en su ficha de Google. Ponerlo en la cabecera es gratis.
+
+UN DESCARTE QUE VALE LA CONVERSACIÓN: hay una foto en su ficha de un
+taller moderno, con dos mecánicos de uniforme, autos nuevos y piso
+epóxico. **No es su taller** —basta compararla con la del elevador— es
+una foto de banco de imágenes. Se ve mejor y por eso el problema: el
+que llega esperando eso y encuentra un galpón de pueblo se siente
+engañado, aunque el trabajo sea igual de bueno. Vale la pena decírselo:
+la foto de su taller de verdad vende mejor que una prestada, porque es
+la que se puede sostener cuando el auto llega.
+
+────────────────────────────────────────────────────────────────
+GENÉRICAS — cuatro, de banco libre, sólo de fondo. Todas neumáticos.
+
+media-01.jpg 1600x1067  pilas de neumáticos usados en el patio
+cita-01.jpg  2560x1440  neumáticos apilados, monocromo
+tirb-01.jpg  1000x563   los mismos, recortados
+aura-01.jpg   900x506   los mismos, a 64 px de desenfoque
+  las cuatro de pxhere · dominio público (CC0), consulta
+  «car wheel tire stack garage»
+
+DESCARTADAS: DOS con la marca del neumático legible en el flanco —una
+decía Dunlop y la otra Hankook. Este taller es independiente, no
+representa a ninguna marca, y una foto con un logo ajeno le atribuye una
+representación que no tiene. Es el mismo criterio que se aplicó en la
+demo del taller de motosierras, donde se descartaron dos fotos porque se
+leía STIHL en la barra.
+
+Por eso las cuatro genéricas que quedaron son dos fotos repetidas: son
+las únicas del lote sin marca legible, y a distinto tamaño funcionan.
+
+────────────────────────────────────────────────────────────────
+LO QUE FALTA
+
+1. **El mesón y la máquina de balanceo.** Es lo que distingue una
+   serviteca de un taller cualquiera y hoy no se ve.
+2. **Un neumático reparado, de cerca.** La página entera argumenta que
+   antes de vender uno nuevo se mira si se repara: una foto del parche
+   cierra ese argumento.
+3. El frente desde la calle, en Martínez de Rozas 354.
+
+NOTA DE ARMADO: la portada llevaba primero una foto genérica de
+neumáticos y no se veía — este fondo es negro caucho y las pilas de
+neumáticos usados son grises apagadas. Se cambió por la foto REAL del
+taller, que tiene luz de día entrando por el portón. Es de 839 px, por
+debajo del estándar de 2560 para pantalla completa, y aun así es la
+decisión correcta: la foto propia con luz gana a la genérica que no se
+ve.

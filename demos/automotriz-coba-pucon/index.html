@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="es-CL" class="no-js">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Automotriz COBA — Pucón</title>
+<meta name="description" content="Taller automotriz en Pucón: qué se hace en cada casa y cómo se atiende al auto que anda de viaje.">
+
+<!-- ═══════════════════════════════════════════════════════════════
+     RESCATE DE LA CLASE .js — regla 2 de la casa.
+     El script inline (sin defer) marca .js para que el CSS pueda
+     esconder lo que va a animarse. El temporizador de 4 s la quita
+     si main.js nunca llega: sin él, un error de red dejaría media
+     página invisible para siempre.
+     ═══════════════════════════════════════════════════════════════ -->
+<script>
+  (function () {
+    var d = document.documentElement;
+    d.classList.remove('no-js');
+    d.classList.add('js');
+    window.__rescate = setTimeout(function () { d.classList.remove('js'); }, 4000);
+  })();
+</script>
+
+<!-- Fuentes propias: cero peticiones a terceros. El preload va SOLO
+     para la display, que es la del titular de la portada. -->
+<link rel="preload" href="assets/fuentes/michroma-400-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="assets/fuentes.css">
+<link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+
+<div class="propuesta">
+  <p class="propuesta__que">Propuesta de sitio web — preparada para <b>Automotriz COBA</b> por CristalWeb</p>
+  <p class="propuesta__gancho">87 reseñas en Pucón y ninguna página propia. Además, en Google hay dos fichas con el nombre COBA: mientras no se aclare cuál es cuál, el cliente elige a ciegas.</p>
+</div>
+
+<header class="cab" id="cab">
+  <a class="cab__marca" href="#portada">
+    <span class="mira" aria-hidden="true"></span>
+    <span class="cab__nombre">COBA</span>
+  </a>
+  <nav class="cab__nav" aria-label="Secciones">
+    <a href="#casas">¿A cuál llevo el auto?</a>
+    <a href="#turista">El auto de paso</a>
+  </nav>
+  <a class="cab__wsp" href="#pedir">
+    <span class="cab__wsp-rot">Pucón</span>
+    <span class="cab__wsp-num">Pedir hora</span>
+  </a>
+</header>
+
+<main>
+
+<!-- ═════════ PORTADA ═════════ -->
+<section class="portada portada--foto" id="portada" aria-labelledby="t-portada">
+  <!-- FONDO DE PORTADA: 1600 px, nitido. Se disuelve hacia el titular
+       con un gradiente lateral, no con desenfoque. -->
+  <div class="portada__foto" aria-hidden="true">
+    <img src="imagenes/port-01.jpg" width="1600" height="900"
+         decoding="async" fetchpriority="high" alt="">
+  </div>
+
+  <div class="cruz" aria-hidden="true"><span class="cruz__h"></span><span class="cruz__v"></span></div>
+  <div class="portada__texto">
+    <p class="sitio">Taller automotriz · Pucón</p>
+    <h1 id="t-portada">¿A cuál<br>llevo el auto?</h1>
+    <p class="bajada">En Google aparecen dos fichas con el nombre COBA. Acá está qué
+      lleva cada una, para que nadie pierda la mañana estacionado frente a la puerta
+      equivocada.</p>
+    <dl class="specs">
+      <div class="spec"><dt>reseñas en Google</dt><dd>87</dd></div>
+      <div class="spec"><dt>fichas con el nombre</dt><dd>2</dd></div>
+    </dl>
+  </div>
+</section>
+
+<!-- ═════════ LA PIEZA FIRMA — COMPARADOR (M) ═════════ -->
+<section class="casas con-telon" id="casas" aria-labelledby="t-casas">
+  <div class="telon" aria-hidden="true">
+    <img src="imagenes/telon-01.jpg" width="1200" height="675" decoding="async" alt="">
+  </div>
+
+  <!-- AURA DE COLOR: la foto de rubro reventada a desenfoque. No se lee
+       como imagen: aporta color y luz detras de una seccion que si no
+       seria fondo plano. Aca el desenfoque SI es el efecto, no un parche,
+       y por eso el archivo va chico: a 64 px de blur, mas resolucion no
+       cambia nada. Sin loading=lazy porque el elemento va en absoluto con
+       z-index negativo y el navegador nunca lo considera visible. -->
+  <div class="aura" aria-hidden="true">
+    <img src="imagenes/aura-01.jpg" width="900" height="506" decoding="async" alt="">
+  </div>
+
+  <div class="casas__cabecera">
+    <p class="antetitulo">Qué llevar a cuál</p>
+    <h2 id="t-casas">Dos marcas,<br>una casa</h2>
+    <p>El criterio no es cuál es mejor: es qué necesita su auto hoy. Un cambio de
+      aceite y una alineación no se hacen en el mismo box ni con las mismas máquinas.</p>
+    <p class="marca-ejemplo" data-ejemplo="Reparto de ejemplo — el taller confirma qué se hace en cada dirección"></p>
+  </div>
+
+  <div class="cols">
+    <article class="col">
+      <p class="col__rot">Si su auto necesita</p>
+      <h3>Mecánica y mantención</h3>
+      <ul>
+        <li>Cambio de aceite y filtros</li>
+        <li>Frenos: pastillas, discos, líquido</li>
+        <li>Correas y distribución</li>
+        <li>Revisión antes de un viaje largo</li>
+        <li>Diagnóstico de una luz encendida</li>
+      </ul>
+      <dl class="col__datos">
+        <div><dt>Dirección</dt><dd><span class="falta">falta</span></dd></div>
+        <div><dt>Horario</dt><dd><span class="falta">falta</span></dd></div>
+        <div><dt>Con hora o por orden de llegada</dt><dd><span class="falta">falta</span></dd></div>
+      </dl>
+    </article>
+
+    <article class="col">
+      <p class="col__rot">Si su auto necesita</p>
+      <h3>Neumáticos, alineación y balanceo</h3>
+      <ul>
+        <li>Neumáticos nuevos y montaje</li>
+        <li>Alineación de dirección</li>
+        <li>Balanceo de ruedas</li>
+        <li>Pinchazo y parche</li>
+        <li>Revisión de presiones antes de la ruta</li>
+      </ul>
+      <dl class="col__datos">
+        <div><dt>Dirección</dt><dd><span class="falta">falta</span></dd></div>
+        <div><dt>Horario</dt><dd><span class="falta">falta</span></dd></div>
+        <div><dt>Con hora o por orden de llegada</dt><dd><span class="falta">falta</span></dd></div>
+      </dl>
+    </article>
+  </div>
+
+  <div class="aviso">
+    <h3>La verificación que falta hacer</h3>
+    <p>En Google hay dos fichas con el nombre COBA en Pucón, y una de ellas ya tiene
+      sitio. Antes de publicar nada hay que confirmar con ustedes si son la misma casa
+      con dos servicios o dos negocios distintos: la página se arma distinto en cada
+      caso, y esta versión está escrita suponiendo que son la misma.</p>
+  </div>
+</section>
+
+<!-- ═════════ EL AUTO DEL TURISTA ═════════ -->
+<!-- ========= MEDIA PANTALLA ========= -->
+<section class="mitades" aria-labelledby="t-mitades">
+  <div class="mitades__foto">
+    <img src="imagenes/media-01.jpg" width="1500" height="844"
+         loading="lazy" decoding="async" alt="">
+  </div>
+  <div class="mitades__texto">
+    <p class="mitades__ante">El taller, sin arreglar para la foto</p>
+    <h2 id="t-mitades">Tres elevadores y espacio para trabajar</h2>
+    <p>Un turista que se queda en pana en Pucón no busca el taller más bonito: busca el que tenga un elevador libre hoy. Esta foto contesta eso —tres puestos, autos adentro, galpón con altura— y es de ellos. Lo que falta es el dato que la acompaña y que ningún taller de la zona publica: cuántos autos entran al día y hasta qué hora reciben.</p>
+  </div>
+</section>
+
+
+
+<!-- ========= TAJO — FRANJA A SANGRE ========= -->
+<div class="tajo" aria-hidden="true">
+  <img src="imagenes/banda-01.jpg" width="1300" height="392"
+       loading="lazy" decoding="async" alt="">
+</div>
+<section class="turista" id="turista" aria-labelledby="t-turista">
+  <div class="turista__cuerpo">
+    <p class="antetitulo antetitulo--claro">Pucón recibe autos, no sólo gente</p>
+    <h2 id="t-turista">El auto<br>que anda de paso</h2>
+    <p class="entrada">Media ciudad en verano son autos que vienen de lejos: el ruido
+      que apareció en la cuesta, la luz que se encendió en la ruta, el neumático que
+      se cortó en el camino de ripio a la playa. Esa gente no conoce a nadie y busca
+      en el teléfono, parada en la berma.</p>
+
+    <ol class="pasos">
+      <li>
+        <p class="pasos__n" aria-hidden="true">01</p>
+        <div>
+          <h3>Diga qué pasa y dónde está</h3>
+          <p>Con el modelo, el año y qué se siente o se escucha. Con eso se sabe si es
+            cosa de pasar o si hay que llegar en grúa.</p>
+        </div>
+      </li>
+      <li>
+        <p class="pasos__n" aria-hidden="true">02</p>
+        <div>
+          <h3>Primero el diagnóstico, después la plata</h3>
+          <p>Se revisa, se dice qué tiene y cuánto vale antes de tocar nada. Nadie
+            autoriza un trabajo que no entiende, menos lejos de su casa.</p>
+        </div>
+      </li>
+      <li>
+        <p class="pasos__n" aria-hidden="true">03</p>
+        <div>
+          <h3>Lo que se puede hacer hoy y lo que no</h3>
+          <p>A veces el repuesto no está en Pucón. Decirlo de inmediato es lo que le
+            permite al que va de viaje decidir si espera o sigue.</p>
+        </div>
+      </li>
+    </ol>
+
+    <p class="firma">Descripción general de la atención. Los plazos, precios y si se
+      atienden urgencias de ruta los confirma el taller.
+      <span class="falta">falta: confirmar si priorizan al que va de paso</span></p>
+
+    <div class="pedir" id="pedir">
+      <h3>Contar la pana</h3>
+      <p>Escriba qué le pasa al auto: el mensaje se arma solo.</p>
+
+      <form class="form" id="form-pana">
+        <div class="campo">
+          <label for="f-auto">Auto (marca, modelo, año)</label>
+          <input id="f-auto" name="auto" type="text" placeholder="Suzuki Grand Vitara 2015">
+        </div>
+        <div class="campo">
+          <label for="f-pasa">Qué le pasa</label>
+          <textarea id="f-pasa" name="pasa" rows="3" placeholder="Suena adelante al frenar y el volante vibra"></textarea>
+        </div>
+        <p class="resumen" id="resumen" aria-live="polite">El mensaje se arma acá abajo.</p>
+        <a class="fantasma" id="enviar" href="#pedir">Enviar por WhatsApp</a>
+        <p class="pedir__nota"><span class="falta">falta: el número</span> — su ficha
+          no lo publica. En directorios aparece uno, pero no se escribe acá hasta que
+          ustedes lo confirmen.</p>
+      </form>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ========= LA CITA A SANGRE ========= -->
+<section class="cita" aria-labelledby="t-cita">
+  <div class="cita__foto" aria-hidden="true">
+    <img src="imagenes/cita-01.jpg" width="1066" height="1600"
+         loading="lazy" decoding="async" alt="">
+  </div>
+  <blockquote class="cita__texto">
+    <p id="t-cita">En temporada, el que llega sin hora igual pregunta<br>
+      <span class="cita__eco">Y la respuesta debería estar escrita antes de que llame</span></p>
+  </blockquote>
+</section>
+
+
+
+
+<!-- ========= LA TIRA ========= -->
+<section class="tira" aria-label="Tres imágenes del oficio">
+  <figure class="tira__pieza">
+    <img src="imagenes/tira-01.jpg" width="1000" height="1000" loading="lazy" decoding="async" alt="El logo antiguo del taller pintado en la pared.">
+  </figure>
+  <figure class="tira__pieza">
+    <img src="imagenes/tira-02.jpg" width="1000" height="563" loading="lazy" decoding="async" alt="Un auto en el elevador, con la luz entrando por el portón.">
+  </figure>
+  <figure class="tira__pieza">
+    <img src="imagenes/tira-03.jpg" width="1000" height="666" loading="lazy" decoding="async" alt="Dos autos con el capot abierto en el patio del taller.">
+  </figure>
+</section>
+
+
+<!-- ========= LAS FOTOS ========= -->
+<section class="galeria" aria-labelledby="t-galeria">
+  <h2 id="t-galeria" class="galeria__titulo">Dos logos, y ninguno está donde se busca</h2>
+  <p class="galeria__nota">Todas las fotos de esta página son suyas: el taller, los elevadores, el cambio de aceite y los dos logos. No hay una sola imagen de banco, y eso en este rubro es raro — está declarado en imagenes/FUENTES.txt.</p>
+  <div class="galeria__grilla">
+    <figure class="gal gal--izq">
+      <img src="imagenes/gal-01.jpg" width="1300" height="1275" loading="lazy" decoding="async"
+           alt="Logo circular del taller: ZonAutomotriz COBA, con unas barras verdes a la izquierda.">
+      <figcaption>El logo actual. Las barras verdes son casi exactamente el verde con el que está escrita esta página: no hubo que inventar una paleta, ya la tenían.</figcaption>
+    </figure>
+    <figure class="gal gal--der">
+      <img src="imagenes/gal-02.jpg" width="1300" height="392" loading="lazy" decoding="async"
+           alt="Logotipo COBA en verde, con las barras a la izquierda.">
+      <figcaption>La versión horizontal, para la cabecera. Existe, está bien hecha y no aparece en su ficha de Google.</figcaption>
+    </figure>
+  </div>
+  <p class="galeria__falta">falta: cuántos autos entran al día y hasta qué hora reciben en temporada</p>
+</section>
+
+
+<!-- ========= MOSAICO ========= -->
+<section class="mos" aria-labelledby="t-mos">
+  <h2 id="t-mos" class="mos__titulo">El taller, de a pedazos</h2>
+  <p class="mos__nota">Estas seis ya aparecen más arriba en la página. Vuelven acá en otro tamaño porque una sola pasada de imágenes deja el scroll vacío. Todas son suyas — la procedencia está en imagenes/FUENTES.txt.</p>
+  <div class="mos__grilla">
+    <figure class="mos__p">
+      <img src="imagenes/mos-01.jpg" width="780" height="439"
+           loading="lazy" decoding="async" alt="">
+    </figure>
+    <figure class="mos__p">
+      <img src="imagenes/mos-02.jpg" width="780" height="765"
+           loading="lazy" decoding="async" alt="">
+    </figure>
+    <figure class="mos__p">
+      <img src="imagenes/mos-03.jpg" width="780" height="235"
+           loading="lazy" decoding="async" alt="">
+    </figure>
+    <figure class="mos__p">
+      <img src="imagenes/mos-04.jpg" width="780" height="519"
+           loading="lazy" decoding="async" alt="">
+    </figure>
+    <figure class="mos__p">
+      <img src="imagenes/mos-05.jpg" width="780" height="439"
+           loading="lazy" decoding="async" alt="">
+    </figure>
+    <figure class="mos__p">
+      <img src="imagenes/mos-06.jpg" width="780" height="780"
+           loading="lazy" decoding="async" alt="">
+    </figure>
+  </div>
+</section>
+<section class="dueno" aria-labelledby="t-dueno">
+  <h2 id="t-dueno">Para el dueño</h2>
+  <div class="dueno__cols">
+    <div>
+      <h3>Lo que está verificado</h3>
+      <p>Las 87 reseñas de la ficha sin página, y que existe otra ficha con el nombre
+        COBA en Pucón, esa sí con sitio.</p>
+    </div>
+    <div>
+      <h3>Lo que es de ejemplo</h3>
+      <p>El reparto de servicios entre las dos y los tres pasos de la atención al que
+        va de paso: todo se ajusta con una conversación corta.</p>
+    </div>
+    <div>
+      <h3>Lo que falta</h3>
+      <p>Confirmar si las dos fichas son suyas, el número, las direcciones y los
+        horarios. Lo primero es lo más urgente: hoy el cliente elige a ciegas.</p>
+    </div>
+  </div>
+  <p class="dueno__cierre">
+    <a class="flecha" href="https://wa.me/56968650001" rel="noopener">Escribirme por WhatsApp <span aria-hidden="true">→</span></a>
+    <a class="flecha" href="../../" rel="noopener">Ver otros trabajos <span aria-hidden="true">→</span></a>
+  </p>
+</section>
+
+<footer class="pie">
+  <p>Sitio de demostración preparado por CristalWeb. El negocio no lo ha encargado ni
+    ha revisado su contenido. La información técnica es general del oficio y no
+    reemplaza el diagnóstico del taller.</p>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>

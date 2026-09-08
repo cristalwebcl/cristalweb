@@ -1,0 +1,55 @@
+FUENTES DE LAS IMÁGENES — 202 · Servimax, desinfección de camiones (Gorbea)
+===========================================================================
+NINGUNA de estas fotos es de la planta ni de sus clientes. Son de
+bancos de uso libre (pxhere, pexels), bajadas con FotoRadar y
+reescaladas con preparar-lote.ps1. El pie de la página lo dice, y
+también la sección «para el dueño».
+
+LADO SUCIO (la mitad oscura de la página)
+-----------------------------------------
+fondo-01.jpg  · 2250px · portada — camión detenido de noche, con sus luces
+  Cumple la regla de luminancia: fondo de página oscuro y foto CON LUZ
+  PROPIA. Además dice el momento del rubro: el camión que llega de noche.
+banda-01.jpg  · 1900px · cita — asfalto mojado con reflejos, de noche
+
+LA LÍNEA (la banda de cruce) no lleva foto: es puro gradiente.
+
+LADO LIMPIO (la mitad clara)
+----------------------------
+tajo-01.jpg   · 2000px · tajo — camión blanco en la carretera, cielo abierto
+telon-01.jpg  · 1200px · telón del contacto — textura de agua
+media-01.jpg  · 1800px · mitades — establo con animales en el comedero
+mos-01.jpg    · 1200px · ruedas dobles con barro  ← el vector, la foto clave
+mos-02.jpg    · 1200px · fila de camiones estacionados
+mos-03.jpg    · 1200px · galpón avícola
+mos-04.jpg    · 1200px · vaca en el potrero
+mos-05.jpg    · 1200px · piso mojado
+mos-06.jpg    · 1200px · camión en la ruta
+
+Consultas usadas: «truck washing water spray pxhere», «truck fleet
+parked highway night pxhere», «semi truck trailer road transport
+pxhere», «farm dairy cows barn pxhere», «truck wheels mud tires close
+pxhere», «poultry farm shed chickens pxhere», «wet asphalt water
+reflection night pxhere». Las URL completas quedaron en
+`devs\material\busquedas\202-servimax\<carpeta>\FUENTES.txt`.
+
+
+CRITERIO: LAS FOTOS TAMBIÉN ESTÁN PARTIDAS POR LA LÍNEA
+--------------------------------------------------------
+No es casual cuál foto va en cuál mitad. **Arriba de la línea todo es
+de noche, con barro y con luz artificial**; abajo todo es de día,
+limpio y abierto. La página cambia de fondo, y las fotos cambian con
+ella. Si alguien reordena las secciones, tiene que reordenar las fotos.
+
+La foto que sostiene el argumento es `mos-01`: **las ruedas dobles
+cargadas de barro**. Es lo que viaja, y es lo único que la página
+necesita mostrar del problema.
+
+DESCARTADAS
+-----------
+· Tres fotos de lavado de AUTOS (un sedán en un túnel de lavado con
+  espuma). Técnicamente perfectas y completamente equivocadas: esta
+  planta no lava autos, y una foto así hace que el visitante crea que
+  llegó a un autolavado. Es peor que no tener foto.
+· Una foto de gallinas sueltas en un jardín: bonita, pero el cliente
+  del rubro es un plantel, no una casa de campo.

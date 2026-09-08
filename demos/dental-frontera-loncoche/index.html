@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="es-CL" class="no-js">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Clínica Dental Frontera — Loncoche</title>
+<meta name="description" content="Clínica dental en Loncoche. La prótesis dental contada completa: cuántas citas son, qué pasa en cada una y cómo es la primera semana.">
+
+<!-- Política de seguridad de contenido: el navegador sólo puede cargar
+     archivos de este mismo sitio. Sin CDN, sin librerías, sin rastreadores.
+     Ver skills/web-blindada/references/csp-en-pages.md -->
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self'; img-src 'self' data:; font-src 'self'; connect-src 'self'; media-src 'self'; form-action 'self'; base-uri 'none'; frame-src 'none'; object-src 'none'">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+
+<!-- Rescate de la clase .js (regla 2 de la casa). En archivo, sin defer:
+     inline lo bloquearía la CSP. -->
+<script src="js/rescate.js"></script>
+
+<!-- Fuentes propias: cero peticiones a terceros. -->
+<link rel="preload" href="assets/fuentes/charissil-400-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="assets/fuentes.css">
+<link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+
+<div class="propuesta">
+  <p class="propuesta__que">Propuesta de sitio web — preparada para <b>Clínica Dental Frontera</b> por CristalWeb</p>
+  <p class="propuesta__gancho">La prótesis es el tratamiento dental más común del campo chileno y el que menos información pública tiene. Y la hora casi nunca la pide el abuelo: la pide la hija. Esta página está escrita para los dos, con la letra un punto más grande de lo normal.</p>
+</div>
+
+<header class="cab" id="cab">
+  <a class="cab__marca" href="#portada">
+    <span class="taza" aria-hidden="true"><i class="taza__asa"></i></span>
+    <span class="cab__nombre">Dental Frontera</span>
+  </a>
+  <nav class="cab__nav" aria-label="Secciones">
+    <a href="#citas">Las cuatro citas</a>
+    <a href="#semana">La primera semana</a>
+  </nav>
+  <a class="cab__tel" href="tel:+56954783379">
+    <span class="cab__tel-rot">Loncoche</span>
+    <span class="cab__tel-num">9 5478 3379</span>
+  </a>
+</header>
+
+<main>
+
+<!-- ========= PORTADA ========= -->
+<section class="portada portada--foto" id="portada" aria-labelledby="t-portada">
+  <!-- FONDO DE PORTADA: 2560 px, nitido. Se disuelve hacia el titular
+       con un gradiente lateral, no con desenfoque. -->
+  <div class="portada__foto" aria-hidden="true">
+    <img src="imagenes/port-01.jpg" width="2560" height="1707"
+         decoding="async" fetchpriority="high" alt="">
+  </div>
+
+  <div class="reloj" aria-hidden="true">
+    <span class="pendulo"><i class="pendulo__disco"></i></span>
+  </div>
+
+  <div class="portada__texto">
+    <p class="sitio">Prótesis dental · Loncoche</p>
+    <h1 id="t-portada">La prótesis,<br>contada completa</h1>
+    <p class="bajada">Cuántas veces hay que venir, qué pasa en cada visita, cómo se cuida y
+      qué es normal en la primera semana. Nada de esto es un secreto y casi nadie lo tiene
+      escrito, así que la familia llega a la primera hora sin saber a qué viene.</p>
+    <p class="tel-grande"><a href="tel:+56954783379">9 5478 3379</a></p>
+  </div>
+</section>
+
+<!-- ========= LA PIEZA FIRMA — CAPÍTULOS = LAS CITAS ========= -->
+<section class="citas con-telon" id="citas" aria-labelledby="t-citas">
+  <div class="telon" aria-hidden="true">
+    <img src="imagenes/telon-01.jpg" width="1200" height="800" decoding="async" alt="">
+  </div>
+
+  <!-- AURA DE COLOR: la foto de rubro reventada a desenfoque. No se lee
+       como imagen: aporta color y luz detras de una seccion que si no
+       seria fondo plano. Aca el desenfoque SI es el efecto, no un parche,
+       y por eso el archivo va chico: a 64 px de blur, mas resolucion no
+       cambia nada. Sin loading=lazy porque el elemento va en absoluto con
+       z-index negativo y el navegador nunca lo considera visible. -->
+  <div class="aura" aria-hidden="true">
+    <img src="imagenes/aura-01.jpg" width="900" height="600" decoding="async" alt="">
+  </div>
+
+  <div class="citas__cabecera">
+    <p class="antetitulo">El proceso, sin vueltas</p>
+    <h2 id="t-citas">Cuatro visitas, más los ajustes</h2>
+    <p class="entrada">Una prótesis no se entrega el mismo día y no se hace en una sola
+      sesión. En general son cuatro visitas —a veces cinco o seis, según el caso— y después
+      vienen los ajustes, que son parte del trabajo y no un problema.</p>
+    <p class="marca-ejemplo" data-ejemplo="Proceso general del oficio — el número de visitas de cada caso lo define la evaluación"></p>
+  </div>
+
+  <div class="filete" aria-hidden="true"></div>
+
+  <article class="cita">
+    <p class="cita__num">Cita 1 <span>de 4</span></p>
+    <div class="cita__cuerpo">
+      <h3>La evaluación y el molde</h3>
+      <p>Primero se revisa qué hay: qué dientes quedan, cómo están las encías y el hueso, y
+        si hay algo que tratar antes. Recién ahí se decide qué tipo de prótesis
+        corresponde. En la misma visita, o en la siguiente, se toma el molde — una pasta
+        blanda que copia la boca y que es incómoda por dos minutos.</p>
+      <p class="cita__dato">Es la visita más larga y la que decide todo el resto.</p>
+    </div>
+  </article>
+
+  <article class="cita">
+    <p class="cita__num">Cita 2 <span>de 4</span></p>
+    <div class="cita__cuerpo">
+      <h3>La prueba</h3>
+      <p>La prótesis se prueba antes de estar terminada. Se mira cómo muerde, cómo se ve y
+        cómo suena al hablar, y se corrige lo que haga falta mientras todavía se puede
+        corregir fácil. Es el momento de decir «no me gusta cómo se ve»: después es más
+        difícil.</p>
+      <p class="cita__dato">Acá el paciente tiene que opinar. Callarse por educación es el
+        error más caro de todo el proceso.</p>
+    </div>
+  </article>
+
+  <article class="cita">
+    <p class="cita__num">Cita 3 <span>de 4</span></p>
+    <div class="cita__cuerpo">
+      <h3>La entrega</h3>
+      <p>Se instala, se enseña a ponerla y sacarla, y se explica cómo limpiarla. Se sale de
+        la consulta con la prótesis puesta y con la sensación —normal— de tener algo grande
+        en la boca.</p>
+      <p class="cita__dato">Conviene que venga acompañado: las indicaciones son varias y
+        ese día nadie las retiene todas.</p>
+    </div>
+  </article>
+
+  <article class="cita cita--ajuste">
+    <p class="cita__num">Cita 4 <span>de 4</span></p>
+    <div class="cita__cuerpo">
+      <h3>Los ajustes</h3>
+      <p><b>Esto es lo más importante de la página.</b> Casi ninguna prótesis queda perfecta
+        el primer día: al usarla aparecen puntos que rozan, y se desgastan esos puntos en
+        una visita corta. Puede haber uno, dos o tres ajustes.</p>
+      <p><b>Los ajustes no son una falla del trabajo ni una queja del paciente: son parte
+        del proceso</b>, y están contemplados desde el principio. Quien no lo dice al
+        entregar hace que el paciente crea que le quedó mala y no vuelva.</p>
+      <p class="cita__dato">Si lastima, se ajusta. <b>No corresponde acostumbrarse al
+        dolor</b>, ni aguantar una llaga «hasta que se haga el hueco».
+        <span class="falta">falta: cuántos ajustes incluyen y en qué plazo</span></p>
+    </div>
+  </article>
+
+  <div class="filete" aria-hidden="true"></div>
+
+  <div class="cuidado">
+    <h3>Cómo se cuida</h3>
+    <ul>
+      <li><b>Se lava todos los días</b>, fuera de la boca, con cepillo y jabón suave. La
+        pasta de dientes común raya el material, y el agua caliente lo deforma: las dos
+        cosas son irreversibles.</li>
+      <li><b>De noche se saca</b> y se guarda en un vaso con agua, salvo que le indiquen
+        otra cosa. La encía necesita descansar, y guardarla seca la deforma.</li>
+      <li><b>La boca también se limpia</b>, aunque no queden dientes: encías, paladar y
+        lengua con un cepillo blando o una gasa.</li>
+      <li><b>Se revisa una vez al año</b>, aunque no moleste. El hueso cambia con los años
+        y una prótesis que calzaba deja de calzar sola.</li>
+    </ul>
+    <p class="cuidado__falta"><span class="falta">falta: las indicaciones exactas de esta
+      clínica, que son las que valen</span></p>
+  </div>
+</section>
+
+<!-- ========= LA PRIMERA SEMANA ========= -->
+<!-- ========= MEDIA PANTALLA ========= -->
+<section class="mitades" aria-labelledby="t-mitades">
+  <div class="mitades__foto">
+    <img src="imagenes/media-01.jpg" width="2200" height="1467"
+         loading="lazy" decoding="async" alt="">
+  </div>
+  <div class="mitades__texto">
+    <p class="mitades__ante">Lo que decide una urgencia</p>
+    <h2 id="t-mitades">No es el dolor: es si hay hora esta semana</h2>
+    <p>Quien llama con dolor no pregunta cuánto cuesta, pregunta cuándo. Y la respuesta que necesita no es «lo antes posible» sino un día y una hora. Una clínica que publica su semana —qué días atiende urgencias y hasta qué hora— resuelve la mitad de las llamadas antes de que ocurran.</p>
+  </div>
+</section>
+
+<section class="semana" id="semana" aria-labelledby="t-semana">
+  <div class="semana__cabecera">
+    <p class="antetitulo antetitulo--claro">Los primeros siete días</p>
+    <h2 id="t-semana">La primera semana</h2>
+    <p class="entrada">Es la semana en que la mayoría se rinde y deja la prótesis en un
+      cajón. Casi siempre no es porque esté mal hecha: es porque nadie le contó que la
+      primera semana es así.</p>
+    <p class="marca-ejemplo marca-ejemplo--claro" data-ejemplo="Descripción general — la firma quien atiende"></p>
+  </div>
+
+  <div class="dos-col">
+    <div class="col">
+      <h3>Es normal</h3>
+      <ul>
+        <li>Sentirla grande y notarla todo el tiempo.</li>
+        <li>Producir más saliva los primeros días.</li>
+        <li>Hablar distinto y trabarse con algunas palabras. Leer en voz alta un rato al
+          día lo arregla más rápido que cualquier otra cosa.</li>
+        <li>Tener que comer blando y cortado chico al principio, y masticar por los dos
+          lados a la vez.</li>
+        <li>Que un punto moleste y haya que volver a ajustarlo.</li>
+      </ul>
+    </div>
+    <div class="col col--no">
+      <h3>No es normal</h3>
+      <ul>
+        <li>Una llaga que no cierra o que crece.</li>
+        <li>Dolor que en vez de bajar va aumentando día a día.</li>
+        <li>Sangrado.</li>
+        <li>Que se suelte al hablar o al comer de manera que no se pueda usar.</li>
+      </ul>
+      <p class="col__cierre">Cualquiera de estas cuatro es motivo de volver, no de aguantar.
+        Volver no es molestar: es la parte que falta del tratamiento.</p>
+    </div>
+  </div>
+
+  <p class="descargo">Esta página es información general sobre cómo funciona un tratamiento
+    de prótesis dental. No es un diagnóstico, no es un presupuesto y no reemplaza la
+    consulta: lo que corresponde a cada persona lo dice quien la evalúa. La escribió quien
+    hizo el sitio y la revisa y la firma la clínica antes de publicarse.</p>
+</section>
+
+<!-- ========= EL CIERRE — T1 ========= -->
+<!-- ========= LA CITA A SANGRE ========= -->
+<section class="frase" aria-labelledby="t-cita">
+  <div class="frase__foto" aria-hidden="true">
+    <img src="imagenes/frase-01.jpg" width="2200" height="1467"
+         loading="lazy" decoding="async" alt="">
+  </div>
+  <blockquote class="frase__texto">
+    <p id="t-cita">La consulta que se posterga sale más cara<br>
+      <span class="frase__eco">Y la que se atiende a tiempo, casi nunca duele</span></p>
+  </blockquote>
+</section>
+
+
+
+<!-- ========= TAJO — FRANJA A SANGRE ========= -->
+<div class="tajo" aria-hidden="true">
+  <img src="imagenes/banda-01.jpg" width="1100" height="733"
+       loading="lazy" decoding="async" alt="">
+</div>
+<section class="cierre" id="llamar" aria-labelledby="t-cierre">
+  <p class="cierre__rot">Para pedir hora</p>
+  <h2 id="t-cierre" class="cierre__tel">
+    <a href="tel:+56954783379">9 5478 3379</a>
+  </h2>
+  <p class="cierre__pie">Es el número publicado en su ficha de Google. Si llama por un
+    familiar, conviene tener a mano si usa prótesis hoy y desde cuándo.</p>
+</section>
+
+<!-- ========= LA TIRA ========= -->
+<section class="tira" aria-label="Tres imágenes del oficio">
+  <figure class="tira__pieza">
+    <img src="imagenes/tira-01.jpg" width="1100" height="733" loading="lazy" decoding="async" alt="Atención odontológica en el sillón, con instrumental.">
+  </figure>
+  <figure class="tira__pieza">
+    <img src="imagenes/tira-02.jpg" width="1100" height="733" loading="lazy" decoding="async" alt="Odontóloga trabajando junto al equipo dental.">
+  </figure>
+  <figure class="tira__pieza">
+    <img src="imagenes/tira-03.jpg" width="1100" height="733" loading="lazy" decoding="async" alt="Instrumental dental ordenado en la bandeja.">
+  </figure>
+</section>
+
+</main>
+
+
+
+<!-- ========= MOSAICO ========= -->
+<section class="mos" aria-labelledby="t-mos">
+  <h2 id="t-mos" class="mos__titulo">La misma serie, más de cerca</h2>
+  <p class="mos__nota">Estas seis ya aparecen más arriba en la página. Vuelven acá en otro tamaño porque una sola pasada de imágenes deja el scroll vacío, y porque de cerca se ven cosas que en grande se pierden. La procedencia de cada una está en imagenes/FUENTES.txt.</p>
+  <div class="mos__grilla">
+    <figure class="mos__p">
+      <img src="imagenes/mos-01.jpg" width="780" height="520"
+           loading="lazy" decoding="async" alt="">
+    </figure>
+    <figure class="mos__p">
+      <img src="imagenes/mos-02.jpg" width="780" height="520"
+           loading="lazy" decoding="async" alt="">
+    </figure>
+    <figure class="mos__p">
+      <img src="imagenes/mos-03.jpg" width="780" height="520"
+           loading="lazy" decoding="async" alt="">
+    </figure>
+    <figure class="mos__p">
+      <img src="imagenes/mos-04.jpg" width="780" height="520"
+           loading="lazy" decoding="async" alt="">
+    </figure>
+    <figure class="mos__p">
+      <img src="imagenes/mos-05.jpg" width="780" height="520"
+           loading="lazy" decoding="async" alt="">
+    </figure>
+    <figure class="mos__p">
+      <img src="imagenes/mos-06.jpg" width="780" height="520"
+           loading="lazy" decoding="async" alt="">
+    </figure>
+  </div>
+</section>
+<section class="dueno" aria-labelledby="t-dueno">
+  <h2 id="t-dueno">Para la clínica</h2>
+  <div class="dueno__cols">
+    <div>
+      <h3>Lo que está verificado</h3>
+      <p>El teléfono 9 5478 3379 y que están en Loncoche. No tienen sitio propio: sólo
+        redes.</p>
+    </div>
+    <div>
+      <h3>Lo que es general</h3>
+      <p>Las cuatro citas, los cuidados y las dos listas de la primera semana. Describen el
+        tratamiento como se hace en cualquier parte, y van marcados y sin firma.</p>
+    </div>
+    <div>
+      <h3>Lo que falta</h3>
+      <p>Dos respuestas: cuántos ajustes incluyen y en qué plazo, y las indicaciones de
+        cuidado que ustedes entregan. La primera es la que más tranquiliza a una familia
+        antes de decidir.</p>
+    </div>
+  </div>
+  <p class="dueno__cierre">
+    <a class="flecha" href="https://wa.me/56968650001" rel="noopener">Escribirme por WhatsApp <span aria-hidden="true">→</span></a>
+    <a class="flecha" href="../../" rel="noopener">Ver otros trabajos <span aria-hidden="true">→</span></a>
+  </p>
+</section>
+
+<footer class="pie">
+  <p>Sitio de demostración preparado por CristalWeb. El negocio no lo ha encargado ni ha
+    revisado su contenido. No hay precios ni presupuestos, no se promete ningún resultado y
+    nada de lo escrito constituye diagnóstico ni indicación de tratamiento: es información
+    general del oficio, marcada como tal y a la espera de la firma profesional.</p>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>

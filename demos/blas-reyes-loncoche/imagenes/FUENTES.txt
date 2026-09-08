@@ -1,0 +1,37 @@
+FONDOS GENERICOS DE RUBRO — Supermercado y Panaderia Blas Reyes
+===============================================================
+
+NO son fotos de este negocio. Son imagenes de panaderia de uso
+libre, usadas como fondo. Las fotos del local —local-01, 02 y 03—
+si son suyas y van nitidas en la galeria, con su pie.
+
+Las tres vienen de PxHere (dominio publico, CC0: no exigen credito).
+Se bajaron en su resolucion original y se reescalaron a 2560 px de
+ancho con calidad 88. Sin blur y sin recompresion agresiva: lo que
+las hace desaparecer bajo el texto es un gradiente, no un desenfoque.
+
+fondo-01.jpg  portada    <- hornadas en rejilla de madera (5187x3273)
+fondo-02.jpg  cierre     <- panes rusticos en canasto   (5184x3456)
+fondo-03.jpg  banda      <- estanteria de panaderia      (4272x2848)
+
+URL de origen de cada una:
+fondo-01 (era 002).jpg | 5187x3273 | Fotos gratis : comida, estante, horneando, bocadillo, comer, pan de ... | https://get.pxhere.com/photo/food-shelf-baking-snack-eat-bread-bakery-bake-nutrition-baker-crispy-baked-goods-loaf-of-bread-hunger-bake-bread-bread-roll-danish-pastry-whole-grain-viennoiserie-1164424.jpg
+fondo-02 (era 003).jpg | 5184x3456 | Fotos gratis : almacenar, comida, horneando, pan de molde, panadería ... | https://get.pxhere.com/photo/store-food-baking-bread-bakery-loaf-sourdough-baked-goods-grass-family-whole-grain-41384.jpg
+fondo-03 (era 006).jpg | 4272x2848 | Fotos gratis : madera, comida, mueble, pan de molde, panadería, tienda ... | https://get.pxhere.com/photo/wood-food-furniture-bread-bakery-grocery-store-pantry-display-case-home-brought-bake-off-1215637.jpg
+
+AGREGADO EL 01-09-2026 — los tres tratamientos que faltaban
+===========================================================
+
+Esta demo fue la primera del estandar nuevo y llevaba tres
+apariciones de imagen. Se suman aura, media pantalla y tira, para
+que quede al nivel de las otras veintiuna.
+
+  media-01.jpg  mitades   2200px cal.86   <- manos amasando
+  aura-01.jpg   aura       900px cal.70   <- pan reci n salido
+  tira-01/02    tira      1100px cal.84   <- pan y bandeja de bollos
+  tirac-01.jpg  tira      1100px cal.84   <- reescalada de fondo-03
+
+URL de origen de las nuevas:
+001.jpg | 5616x3744 | Human Holding a Bread · Free Stock Photo | https://images.pexels.com/photos/263168/pexels-photo-263168.jpeg?cs=srgb&dl=bread-food-hands-263168.jpg&fm=jpg
+002.jpg | 4160x6240 | Baker Preparing Dough Balls in a Modern Kitchen · Free Stock Photo | https://images.pexels.com/photos/33210360/pexels-photo-33210360.jpeg?cs=srgb&dl=pexels-damla-selen-demir-429137893-33210360.jpg&fm=jpg
+003.jpg | 3840x2025 | Person Kneading a Dough · Free Stock Video | https://images.pexels.com/videos/8180413/arts-and-crafts-at-home-at-table-baker-8180413.jpeg?cs=srgb&dl=pexels-ron-lach-8180413.jpg&fm=jpg

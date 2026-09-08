@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="es-CL" class="no-js">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Cocina de María — Villarrica</title>
+<meta name="description" content="Cocina casera en Villarrica. El menú del día escrito, y la carta de siempre.">
+
+<!-- Política de seguridad de contenido: el navegador sólo puede cargar
+     archivos de este mismo sitio. Sin CDN, sin librerías, sin rastreadores.
+     Ver skills/web-blindada/references/csp-en-pages.md -->
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self'; img-src 'self' data:; font-src 'self'; connect-src 'self'; media-src 'self'; form-action 'self'; base-uri 'none'; frame-src 'none'; object-src 'none'">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+
+<!-- Rescate de la clase .js (regla 2 de la casa). Va en archivo, sin defer:
+     inline lo bloquearía la CSP. El temporizador de 4 s la quita si main.js
+     nunca llega, para que nada quede escondido esperando su animación. -->
+<script src="js/rescate.js"></script>
+
+<!-- Fuentes propias: cero peticiones a terceros. El preload va SOLO
+     para la display, que es la del titular de la portada. -->
+<link rel="preload" href="assets/fuentes/shantellsans-var-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="assets/fuentes.css">
+<link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+
+<div class="propuesta">
+  <p class="propuesta__que">Propuesta de sitio web — preparada para <b>Cocina de María</b> por CristalWeb</p>
+  <p class="propuesta__gancho">516 reseñas: el negocio más reseñado que queda por contactar en todo el registro. Medio Villarrica ha comido acá y en internet no existe.</p>
+</div>
+
+<header class="cab" id="cab">
+  <a class="cab__marca" href="#portada">
+    <span class="plato" aria-hidden="true"></span>
+    <span class="cab__nombre">Cocina de María</span>
+  </a>
+  <nav class="cab__nav" aria-label="Secciones">
+    <a href="#hoy">El menú de hoy</a>
+    <a href="#carta">La carta</a>
+  </nav>
+  <a class="cab__wsp" href="#reservar">
+    <span class="cab__wsp-rot">Villarrica</span>
+    <span class="cab__wsp-num">Reservar mesa</span>
+  </a>
+</header>
+
+<main>
+
+<!-- ═════════ PORTADA ═════════ -->
+<section class="portada portada--foto" id="portada" aria-labelledby="t-portada">
+  <!-- FONDO DE PORTADA: 2560 px, nitido. Se disuelve hacia el titular
+       con un gradiente lateral, no con desenfoque. -->
+  <div class="portada__foto" aria-hidden="true">
+    <img src="imagenes/port-01.jpg" width="2560" height="1920"
+         decoding="async" fetchpriority="high" alt="">
+  </div>
+
+  <div class="tiza-fondo" aria-hidden="true"><span></span></div>
+  <div class="portada__texto">
+    <p class="sitio">Cocina casera · Villarrica</p>
+    <h1 id="t-portada">¿Qué hay<br>hoy de menú?</h1>
+    <p class="bajada">La pregunta que en esta casa contestan veinte veces al día por
+      teléfono. Acá va escrita, y se cambia todas las mañanas en un minuto.</p>
+    <dl class="specs">
+      <div class="spec"><dt>reseñas en Google</dt><dd>516</dd></div>
+    </dl>
+  </div>
+</section>
+
+<!-- ═════════ LA PIEZA FIRMA — LA PIZARRA DE HOY ═════════ -->
+<!--
+  ══════════════════════════════════════════════════════════════════
+  PARA CAMBIAR EL MENÚ DEL DÍA — se edita SÓLO acá abajo.
+
+  1. Cambie la fecha en <p class="pizarra__fecha">.
+  2. Cambie los platos: cada línea es un <li> con el nombre adentro.
+     Si un día hay tres platos en vez de cuatro, se borra un <li>
+     entero (desde <li> hasta </li>) y listo.
+  3. Guarde el archivo y súbalo. No hay que tocar nada más.
+
+  Los precios van dentro de <span class="pizarra__p">. Si un día no
+  quiere mostrar precio, borre ese span y el punteado se acomoda solo.
+  ══════════════════════════════════════════════════════════════════
+-->
+<section class="pizarra con-telon" id="hoy" aria-labelledby="t-hoy">
+  <div class="telon" aria-hidden="true">
+    <img src="imagenes/telon-01.jpg" width="1200" height="900" decoding="async" alt="">
+  </div>
+
+  <!-- AURA DE COLOR: la foto de rubro reventada a desenfoque. No se lee
+       como imagen: aporta color y luz detras de una seccion que si no
+       seria fondo plano. Aca el desenfoque SI es el efecto, no un parche,
+       y por eso el archivo va chico: a 64 px de blur, mas resolucion no
+       cambia nada. Sin loading=lazy porque el elemento va en absoluto con
+       z-index negativo y el navegador nunca lo considera visible. -->
+  <div class="aura" aria-hidden="true">
+    <img src="imagenes/aura-01.jpg" width="900" height="602" decoding="async" alt="">
+  </div>
+
+  <div class="pizarra__marco">
+    <p class="antetitulo">Se cambia cada mañana</p>
+    <h2 id="t-hoy">El menú de hoy</h2>
+    <p class="pizarra__fecha">Lunes 30 de agosto</p>
+    <p class="marca-ejemplo" data-ejemplo="Menú de ejemplo — lo escribe la casa cada día"></p>
+
+    <ul class="platos">
+      <li><span class="platos__n">Cazuela de vacuno</span><span class="pizarra__p">falta</span></li>
+      <li><span class="platos__n">Pollo arvejado con arroz</span><span class="pizarra__p">falta</span></li>
+      <li><span class="platos__n">Charquicán con huevo</span><span class="pizarra__p">falta</span></li>
+      <li><span class="platos__n">Merluza frita con ensalada</span><span class="pizarra__p">falta</span></li>
+    </ul>
+
+    <p class="pizarra__nota">El menú incluye <span class="falta">falta: confirmar si
+      trae entrada, postre o bebida</span>. Se sirve hasta las
+      <span class="falta">falta: hora</span> o hasta que se acabe, que es lo que suele
+      pasar.</p>
+  </div>
+</section>
+
+<!-- ═════════ LA CARTA FIJA ═════════ -->
+<section class="carta" id="carta" aria-labelledby="t-carta">
+  <div class="carta__cabecera">
+    <p class="antetitulo antetitulo--oscuro">Todos los días</p>
+    <h2 id="t-carta">La carta de siempre</h2>
+    <p>Lo que hay aunque el menú del día se haya acabado.</p>
+    <p class="marca-ejemplo marca-ejemplo--oscuro" data-ejemplo="Carta de ejemplo — la confirma la casa"></p>
+  </div>
+
+  <div class="carta__grupos">
+    <section class="grupo" aria-labelledby="g-1">
+      <h3 id="g-1">Para partir</h3>
+      <ul class="lineas">
+        <li><span class="lineas__q">Empanada de pino</span><span class="lineas__p">falta</span></li>
+        <li><span class="lineas__q">Sopaipillas</span><span class="lineas__p">falta</span></li>
+        <li><span class="lineas__q">Ensalada chilena</span><span class="lineas__p">falta</span></li>
+      </ul>
+    </section>
+
+    <section class="grupo" aria-labelledby="g-2">
+      <h3 id="g-2">De fondo</h3>
+      <ul class="lineas">
+        <li><span class="lineas__q">Lomo a lo pobre</span><span class="lineas__p">falta</span></li>
+        <li><span class="lineas__q">Pollo asado con papas</span><span class="lineas__p">falta</span></li>
+        <li><span class="lineas__q">Costillar</span><span class="lineas__p">falta</span></li>
+        <li><span class="lineas__q">Pescado del día</span><span class="lineas__p">falta</span></li>
+      </ul>
+    </section>
+
+    <section class="grupo" aria-labelledby="g-3">
+      <h3 id="g-3">Para terminar</h3>
+      <ul class="lineas">
+        <li><span class="lineas__q">Leche asada</span><span class="lineas__p">falta</span></li>
+        <li><span class="lineas__q">Mote con huesillo</span><span class="lineas__p">falta</span></li>
+      </ul>
+    </section>
+  </div>
+
+  <p class="firma">Los precios van como «falta» a propósito: publicar uno equivocado
+    molesta más que no publicarlo. Se completan en una conversación de cinco minutos.</p>
+</section>
+
+<!-- ═════════ LA CASERA ═════════ -->
+<!-- ========= MEDIA PANTALLA ========= -->
+<section class="mitades" aria-labelledby="t-mitades">
+  <div class="mitades__foto">
+    <img src="imagenes/media-01.jpg" width="1500" height="845"
+         loading="lazy" decoding="async" alt="">
+  </div>
+  <div class="mitades__texto">
+    <p class="mitades__ante">La foto que decide en la vereda</p>
+    <h2 id="t-mitades">La terraza larga, con las mesas de madera</h2>
+    <p>En Villarrica en enero, quien busca dónde almorzar decide caminando y en diez segundos. Esta terraza cubierta, con las mesas puestas y la sombra, contesta las tres preguntas de esos diez segundos: si está abierto, si hay lugar y si es para uno. Es de ellos, está en su ficha, y no aparece en ninguna otra parte.</p>
+  </div>
+</section>
+
+
+
+<!-- ========= TAJO — FRANJA A SANGRE ========= -->
+<div class="tajo" aria-hidden="true">
+  <img src="imagenes/banda-01.jpg" width="1500" height="845"
+       loading="lazy" decoding="async" alt="">
+</div>
+<section class="casera" id="casera" aria-labelledby="t-casera">
+  <div class="casera__cuerpo">
+    <p class="antetitulo">Quién cocina</p>
+    <h2 id="t-casera">La casera</h2>
+    <p class="entrada">Quinientas dieciséis personas se tomaron el trabajo de escribir
+      una reseña. Eso no pasa por la decoración: pasa porque alguien cocina como en la
+      casa y atiende como si uno fuera conocido.</p>
+    <p class="entrada">Esa historia existe y no está escrita en ninguna parte. Es la
+      parte de la página que ninguna cadena puede copiar.</p>
+
+    <dl class="ficha">
+      <div class="ficha__par"><dt>Quién está a cargo</dt><dd><span class="falta">falta: nombre</span></dd></div>
+      <div class="ficha__par"><dt>Desde cuándo</dt><dd><span class="falta">falta: año</span></dd></div>
+      <div class="ficha__par"><dt>Dirección</dt><dd><span class="falta">falta</span></dd></div>
+      <div class="ficha__par"><dt>Horario</dt><dd><span class="falta">falta</span></dd></div>
+    </dl>
+
+    <div class="reservar" id="reservar">
+      <h3>Reservar mesa para hoy</h3>
+      <p>Diga cuántos son y a qué hora: el mensaje se arma solo.</p>
+
+      <form class="form" id="form-mesa">
+        <div class="campo">
+          <label for="f-personas">Cuántos son</label>
+          <input id="f-personas" name="personas" type="text" inputmode="numeric" placeholder="4">
+        </div>
+        <div class="campo">
+          <label for="f-hora">A qué hora</label>
+          <input id="f-hora" name="hora" type="text" placeholder="13:30">
+        </div>
+        <p class="resumen" id="resumen" aria-live="polite">El mensaje se arma acá abajo.</p>
+        <a class="fantasma" id="enviar" href="#reservar">Enviar por WhatsApp</a>
+        <p class="reservar__nota"><span class="falta">falta: el número</span> — su ficha
+          de Google no publica ninguno. Es el dato que convierte esta página en mesas
+          reservadas.</p>
+      </form>
+    </div>
+  </div>
+</section>
+
+</main>
+
+
+<!-- ========= LA CITA A SANGRE ========= -->
+<section class="cita" aria-labelledby="t-cita">
+  <div class="cita__foto" aria-hidden="true">
+    <img src="imagenes/cita-01.jpg" width="2200" height="1423"
+         loading="lazy" decoding="async" alt="">
+  </div>
+  <blockquote class="cita__texto">
+    <p id="t-cita">El menú del día se cambia en un minuto<br>
+      <span class="cita__eco">Y ahorra veinte llamadas antes de las doce</span></p>
+  </blockquote>
+</section>
+
+<!-- ========= LA TIRA ========= -->
+<section class="tira" aria-label="Tres imágenes del oficio">
+  <figure class="tira__pieza">
+    <img src="imagenes/tira-01.jpg" width="1000" height="751" loading="lazy" decoding="async" alt="Una cazuela servida en pilón de greda.">
+  </figure>
+  <figure class="tira__pieza">
+    <img src="imagenes/tira-02.jpg" width="1000" height="750" loading="lazy" decoding="async" alt="Un trozo de carne con puré, en el plato.">
+  </figure>
+  <figure class="tira__pieza">
+    <img src="imagenes/tira-03.jpg" width="1000" height="750" loading="lazy" decoding="async" alt="Guiso con puré, servido en plato hondo.">
+  </figure>
+</section>
+
+
+<!-- ========= LAS FOTOS ========= -->
+<section class="galeria" aria-labelledby="t-galeria">
+  <h2 id="t-galeria" class="galeria__titulo">Todo lo que se come acá es de ellos</h2>
+  <p class="galeria__nota">Siete fotos de esta página son suyas, de su ficha de Google. Sólo la olla de la portada, el aura y la cita son de banco libre — y ninguna es un plato, a propósito. Está todo declarado en imagenes/FUENTES.txt.</p>
+  <div class="galeria__grilla">
+    <figure class="gal gal--izq">
+      <img src="imagenes/gal-01.jpg" width="1300" height="1300" loading="lazy" decoding="async"
+           alt="El salón por dentro, con las mesas de mantel rojo y los ventanales al jardín.">
+      <figcaption>El salón. Manteles rojos, sillas de madera y luz de ventana: cocinería de verdad, no cadena.</figcaption>
+    </figure>
+    <figure class="gal gal--der">
+      <img src="imagenes/gal-02.jpg" width="1300" height="1300" loading="lazy" decoding="async"
+           alt="Dos platos: merluza frita con ensalada surtida, y otro con puré y verduras.">
+      <figcaption>Dos almuerzos completos. Esto es lo que se sirve, fotografiado por ellos.</figcaption>
+    </figure>
+    <figure class="gal gal--abajo">
+      <img src="imagenes/gal-03.jpg" width="1201" height="1600" loading="lazy" decoding="async"
+           alt="Un plato de pescado con arroz, servido en la mesa con el aceite y el pan al lado.">
+      <figcaption>El pescado con arroz. La mesa puesta como llega, sin montaje.</figcaption>
+    </figure>
+  </div>
+  <p class="galeria__falta">falta: el menú de hoy escrito, que es lo único que la página no puede inventar</p>
+</section>
+
+
+
+<!-- ========= MOSAICO ========= -->
+<section class="mos" aria-labelledby="t-mos">
+  <h2 id="t-mos" class="mos__titulo">La misma serie, más de cerca</h2>
+  <p class="mos__nota">Estas seis ya aparecen más arriba en la página. Vuelven acá en otro tamaño porque una sola pasada de imágenes deja el scroll vacío, y porque de cerca se ven cosas que en grande se pierden. La procedencia de cada una está en imagenes/FUENTES.txt.</p>
+  <div class="mos__grilla">
+    <figure class="mos__p">
+      <img src="imagenes/mos-01.jpg" width="780" height="439"
+           loading="lazy" decoding="async" alt="">
+    </figure>
+    <figure class="mos__p">
+      <img src="imagenes/mos-02.jpg" width="780" height="780"
+           loading="lazy" decoding="async" alt="">
+    </figure>
+    <figure class="mos__p">
+      <img src="imagenes/mos-03.jpg" width="780" height="780"
+           loading="lazy" decoding="async" alt="">
+    </figure>
+    <figure class="mos__p">
+      <img src="imagenes/mos-04.jpg" width="780" height="1039"
+           loading="lazy" decoding="async" alt="">
+    </figure>
+    <figure class="mos__p">
+      <img src="imagenes/mos-05.jpg" width="780" height="585"
+           loading="lazy" decoding="async" alt="">
+    </figure>
+    <figure class="mos__p">
+      <img src="imagenes/mos-06.jpg" width="780" height="585"
+           loading="lazy" decoding="async" alt="">
+    </figure>
+  </div>
+</section>
+<section class="dueno" aria-labelledby="t-dueno">
+  <h2 id="t-dueno">Para la dueña</h2>
+  <div class="dueno__cols">
+    <div>
+      <h3>Lo que está verificado</h3>
+      <p>Las 516 reseñas de su ficha de Google y que no tiene página ni teléfono
+        publicado.</p>
+    </div>
+    <div>
+      <h3>Lo que es de ejemplo</h3>
+      <p>El menú del día y la carta: son platos de cocina casera puestos para mostrar
+        la forma. Los reemplaza usted con los suyos.</p>
+    </div>
+    <div>
+      <h3>Lo que falta</h3>
+      <p>El número, la dirección, el horario y los precios. Y su nombre: con esa
+        cantidad de reseñas, la historia de quién cocina vale más que cualquier foto.</p>
+    </div>
+  </div>
+  <p class="dueno__cierre">
+    <a class="flecha" href="https://wa.me/56968650001" rel="noopener">Escribirme por WhatsApp <span aria-hidden="true">→</span></a>
+    <a class="flecha" href="../../" rel="noopener">Ver otros trabajos <span aria-hidden="true">→</span></a>
+  </p>
+</section>
+
+<footer class="pie">
+  <p>Sitio de demostración preparado por CristalWeb. El negocio no lo ha encargado
+    ni ha revisado su contenido.</p>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>

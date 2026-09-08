@@ -1,0 +1,54 @@
+PROCEDENCIA DE LAS IMÁGENES — Studio_handmade, Pucón
+════════════════════════════════════════════════════════════════
+
+DEL NEGOCIO — dos imágenes, y una es el logo.
+
+gal-01.jpg    1300x1300  EL LOGO — rombo con la silueta de un cabello,
+                         «Handmade · salón de belleza · barbershop»
+media-01.jpg  1200x1600  un largo liso, fotografiado de espaldas
+
+**La foto del cabello es la correcta y por dos motivos**: muestra el
+resultado, que es lo que se compra, y no muestra la cara de nadie, así
+que no hace falta permiso para publicarla. Un salón necesita seis fotos
+así, una por servicio.
+
+Buscando el nombre aparecen sobre todo departamentos y muebles de Pucón
+—hay varios «Studio» en la zona— y de este local sólo existen esas dos.
+
+────────────────────────────────────────────────────────────────
+GENÉRICAS — cinco, de banco libre, sólo de fondo.
+
+Son herramientas y salones vacíos. **Ninguna muestra un corte ni un
+peinado**, y eso es deliberado: en un salón, una foto de resultado que
+no es suya se descubre en la primera clienta que llega pidiendo eso.
+
+port-01.jpg  2200x1467  tijeras colgadas sobre madera oscura
+aura-01.jpg   900x600   el mesón del barbero (va a 64 px de desenfoque)
+tira-01.jpg  1000x667   el mismo mesón, recortado
+  pxhere · dominio público (CC0), consulta
+  «barber scissors comb tools dark wood»
+  Las tijeras se eligieron por su masa oscura: el fondo de esta página
+  es lino claro y una foto clara ahí se disuelve.
+
+cita-01.jpg  2560x1704  el interior de un salón, con sillones y espejos
+tirb-01.jpg  1000x662   otro salón
+tirb-02.jpg  1000x563   un salón iluminado, sillas alineadas
+  pxhere y Unsplash (uso libre), consulta
+  «hair salon interior chairs mirrors»
+
+────────────────────────────────────────────────────────────────
+NOTA DE ARMADO
+
+La portada no lleva foto. Tiene su propio degradado y las puntadas
+dibujadas en CSS —la firma de la página— y cualquier foto encima
+compite con eso. La imagen que iba arriba está en una franja a sangre
+unas líneas más abajo.
+
+────────────────────────────────────────────────────────────────
+LO QUE FALTA
+
+1. **Seis fotos de trabajo, una por servicio**, todas de espaldas o de
+   detalle. Es lo único que le falta a esta página para no depender de
+   ninguna imagen prestada, y no necesita permiso de nadie.
+2. El local por dentro.
+3. La lista de precios por servicio — está armada y vacía.

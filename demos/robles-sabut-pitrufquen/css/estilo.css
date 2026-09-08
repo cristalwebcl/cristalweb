@@ -1,0 +1,491 @@
+/* ===================================================================
+   203 · Obras Sanitarias Robles Sabut · Pitrufquen
+   Demo comercial sin encargo. Construida el 02-09-2026.
+
+   RUBRO NUEVO: obras sanitarias con PERFORACION DIRIGIDA (topo
+   tunelera). Nada parecido en las 202 previas. El pariente mas cercano
+   del registro es la 182 (constructora de casas) y no se parece en
+   nada: alla se levanta algo visible, aca el trabajo bien hecho es
+   EXACTAMENTE EL QUE NO SE NOTA.
+
+   DIRECCION - «SIN ROMPER ARRIBA»
+   Todo el argumento comercial cabe en una frase: la caneria cruza por
+   debajo y la calle, la vereda, el acceso o el jardin quedan como
+   estaban. Y hay un dato de mercado que decide la pagina entera: LA
+   MITAD DE LOS CLIENTES NO SABE QUE EL METODO EXISTE. Les presupuestan
+   romper el pavimento y se enteran despues. Asi que la pagina no solo
+   tiene que encontrar al que busca: tiene que EXPLICAR el metodo en
+   dos minutos.
+
+   LA PIEZA ES UN DIBUJO: EL CORTE DEL TERRENO en CSS puro — cuatro
+   estratos apilados, dos camaras y la caneria pasando por abajo sin
+   tocar las capas de arriba. Deslinde con el otro corte del registro,
+   el del neumatico de la 194: aquel es el CORTE DE UN PRODUCTO (banda,
+   hombro, flanco) y este es un CORTE DE TERRENO CON PROFUNDIDAD. Uno
+   explica una pieza, el otro explica un lugar.
+   Las alturas y los colores van en CLASES: la CSP bloquea style="".
+
+   PALETA — estratigrafia. La pagina se construye sobre tonos de tierra
+   porque el tema es literalmente el suelo:
+   superficie `#F1EEE8` + panel `#E6E1D7` + panel-2 `#DED9CF` +
+   tinta `#1E1B16` (15,9:1) + medio `#5B554A` (5,3:1 sobre el peor
+   fondo, calibrado de entrada).
+   ACENTO: GRES `#8A3E1E` para TEXTO (5,4:1 sobre panel-2, 6,5:1 sobre
+   superficie) y `#B85A2E` para OBJETOS. **Es el color de la tuberia de
+   GRES VITRIFICADO, la ceramica esmaltada con que se hizo el
+   alcantarillado antiguo de medio pais** — o sea, el color de lo que
+   esta enterrado. Deslinde de los rojizos del registro: el `#8E2820`
+   de la 46 es ESMALTE de ferreteria (pintura), el `#A83226` de la 194
+   es SENAL DE PELIGRO (un flanco no se repara), el `#9A3D2A` de la 190
+   es TIMBRE DE OFICINA (goma) y los de la 193 son la norma ISO del
+   tablero. Este es CERAMICA COCIDA, y ninguno de los otros lo es.
+   Los cuatro colores de los estratos (`--pav`, `--base`, `--tierra`,
+   `--arcilla`) viven SOLO dentro del dibujo: no pintan texto ni fondo.
+
+   TRIO — verificado contra identidades.md el 02-09-2026:
+   · Display ROBOTO SLAB (0 usos). Slab institucional, de informe de
+     obra: seria sin ser fria, y aguanta un titular de dos lineas.
+   · Cuerpo GOLOS TEXT (4 usos). Grotesca neutra de lectura larga.
+   · Mono M PLUS 1 CODE (3 usos) — el mono menos usado del registro.
+
+   AMBIENTE: HOJAS QUE SE POSAN (primeras del registro). Cuatro caen
+   girando sobre su propio eje con deriva corta, y TRES YA ESTAN
+   POSADAS ABAJO, QUIETAS. Es el unico ambiente del registro que
+   ACUMULA, y no es capricho: la pagina entera dice que la superficie
+   no se toca, asi que el ambiente se queda ENCIMA de ella.
+   Deslinde obligado con los petalos de la 155, que tambien bajan:
+   aquellos PLANEAN en zigzag lateral (son livianos, van y vienen);
+   estas son mas grandes, GIRAN SOBRE SU EJE, caen mas rectas y SE
+   QUEDAN. Ninguna otra del registro termina quieta en el suelo.
+
+   REGLA DE DATOS: ni una medida, ni un precio, ni un plazo. Distancia,
+   diametro y profundidad son datos de maquina. Y no se cita ninguna
+   norma ni ningun permiso por nombre: solo que el permiso existe y que
+   lo define la municipalidad de cada comuna. Verificado en el DOM.
+   =================================================================== */
+
+:root {
+  --superficie: #F1EEE8;
+  --panel:      #E6E1D7;
+  --panel-2:    #DED9CF;   /* el peor fondo: todo se calibra contra este */
+  --tinta:      #1E1B16;
+  --medio:      #5B554A;
+  --gres:       #8A3E1E;   /* TEXTO */
+  --gres-o:     #B85A2E;   /* OBJETOS: nunca texto */
+  --linea:      #C9C2B4;
+
+  /* estratos: viven SOLO dentro del dibujo del corte */
+  --pav:     #8E9490;
+  --base:    #B9AE99;
+  --tierra:  #7B6449;
+  --arcilla: #5E4A34;
+
+  --sale:   cubic-bezier(.16, 1, .3, 1);
+  --sale-2: cubic-bezier(.2, 0, 0, 1);
+
+  --ancho: min(92vw, 1160px);
+  --p--1: clamp(.78rem, .74rem + .18vw, .88rem);
+  --p-0:  clamp(1rem, .95rem + .25vw, 1.1rem);
+  --p-1:  clamp(1.15rem, 1.05rem + .45vw, 1.36rem);
+  --p-2:  clamp(1.55rem, 1.3rem + 1.15vw, 2.2rem);
+  --p-3:  clamp(1.95rem, 1.45rem + 2.2vw, 3.2rem);
+  --p-4:  clamp(2.5rem, 1.7rem + 4vw, 5.2rem);
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+[hidden] { display: none !important; }
+html { scroll-behavior: smooth; }
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+
+body {
+  margin: 0; background: var(--superficie); color: var(--tinta);
+  font-family: "Golos Text", "Segoe UI", system-ui, sans-serif;
+  font-size: var(--p-0); line-height: 1.64;
+  -webkit-font-smoothing: antialiased;
+}
+img { max-width: 100%; }
+a { color: inherit; }
+.ancho { width: var(--ancho); margin-inline: auto; }
+
+.rotulo {
+  font-family: "M PLUS 1 Code", ui-monospace, monospace;
+  font-size: var(--p--1); letter-spacing: .13em; text-transform: uppercase;
+  color: var(--gres); margin: 0 0 1.4rem;
+}
+.h2 {
+  font-family: "Roboto Slab", Georgia, serif; font-weight: 700;
+  font-size: var(--p-3); line-height: 1.1; letter-spacing: -.015em; margin: 0 0 1.5rem;
+}
+.h2--chico { font-size: var(--p-2); }
+.mini { font-size: var(--p--1); color: var(--medio); max-width: 70ch; }
+.mini b { color: var(--tinta); }
+.nota { font-size: var(--p--1); color: var(--medio); max-width: 74ch; margin-top: 2.4rem; }
+.nota b { color: var(--tinta); }
+.falta { color: var(--medio); font-style: italic; }
+.ej { color: var(--medio); font-style: italic; border-bottom: 1px dashed var(--linea); }
+.ej::after {
+  content: " (ej.)"; font-family: "M PLUS 1 Code", ui-monospace, monospace;
+  font-size: .78em; font-style: normal; opacity: .85;
+}
+
+/* -- BANDA DE PROPUESTA ------------------------------------------ */
+.propuesta { background: var(--gres); color: #F7EDE7; }
+.propuesta__in { padding: .9rem 0; }
+.propuesta__q { font-family: "M PLUS 1 Code", ui-monospace, monospace; font-size: var(--p--1); letter-spacing: .03em; margin: 0 0 .2rem; }
+.propuesta__d { margin: 0; font-size: var(--p--1); line-height: 1.5; max-width: 100ch; }
+
+/* -- CABECERA ---------------------------------------------------- */
+.cab {
+  position: sticky; top: 0; z-index: 50;
+  background: var(--superficie); border-bottom: 1px solid var(--linea);
+  transition: transform .3s var(--sale-2), background-color .3s ease, border-color .3s ease;
+}
+.cab__in { display: flex; align-items: center; justify-content: space-between; gap: 1.2rem; padding: .55rem 0; }
+.cab__marca { display: inline-flex; align-items: center; gap: .8rem; text-decoration: none; min-height: 44px; }
+.cab__txt {
+  font-family: "Roboto Slab", Georgia, serif; font-weight: 700;
+  font-size: var(--p-1); line-height: 1.05; display: flex; flex-direction: column; gap: .22rem;
+}
+.cab__sub {
+  font-family: "M PLUS 1 Code", ui-monospace, monospace; font-weight: 400;
+  font-size: .55em; letter-spacing: .07em; color: var(--medio); text-transform: uppercase;
+}
+.cab__nav { display: flex; align-items: center; gap: 1.5rem; }
+.cab__nav a {
+  font-size: var(--p--1); text-decoration: none; color: var(--medio);
+  min-height: 44px; display: inline-flex; align-items: center; transition: color .2s ease;
+}
+.cab__nav a:hover, .cab__nav a:focus-visible { color: var(--tinta); }
+.cab__tel { color: var(--gres) !important; font-family: "M PLUS 1 Code", ui-monospace, monospace; white-space: nowrap; }
+
+/* Cabecera 169a - EL CORTE DEL TERRENO en 30 px: tres franjas y el
+   circulo de la caneria pasando por la de abajo sin tocar las de
+   arriba. Ningun corte de terreno en las 202 anteriores. */
+.corte { position: relative; width: 30px; height: 24px; flex: 0 0 auto; border-radius: 2px; overflow: hidden; }
+.corte__c1 { position: absolute; inset: 0 0 auto 0; height: 5px;  background: var(--pav); }
+.corte__c2 { position: absolute; top: 5px; left: 0; right: 0; height: 5px; background: var(--base); }
+.corte__c3 { position: absolute; top: 10px; left: 0; right: 0; bottom: 0; background: var(--tierra); }
+.corte__tubo {
+  position: absolute; left: 3px; right: 3px; bottom: 5px; height: 4px; border-radius: 2px;
+  background: var(--gres-o);
+}
+
+.js .cab--top { background: transparent; border-bottom-color: transparent; }
+.js .cab--oculta { transform: translateY(-100%); }
+@media (prefers-reduced-motion: reduce) { .cab { transition-duration: 1ms; } }
+
+/* -- PORTADA ----------------------------------------------------- */
+.portada {
+  position: relative; isolation: isolate; overflow: hidden;
+  min-height: 88svh; display: flex; align-items: center; padding: 5rem 0 4rem;
+}
+.portada__foto { position: absolute; inset: 0; z-index: -3; }
+.portada__foto img {
+  display: block; width: 100%; height: 100%; object-fit: cover; object-position: 68% 55%;
+  -webkit-mask-image: linear-gradient(90deg, transparent 0%, transparent 20%, rgba(0,0,0,.28) 41%, rgba(0,0,0,.76) 62%, #000 80%, #000 100%);
+          mask-image: linear-gradient(90deg, transparent 0%, transparent 20%, rgba(0,0,0,.28) 41%, rgba(0,0,0,.76) 62%, #000 80%, #000 100%);
+}
+/* Velo entero en rgba terminando en alfa 0. */
+.portada__foto::after {
+  content: ""; position: absolute; inset: 0;
+  background: linear-gradient(90deg,
+    rgba(241,238,232,1) 0%, rgba(241,238,232,1) 37%, rgba(241,238,232,.92) 52%,
+    rgba(241,238,232,.52) 69%, rgba(241,238,232,.16) 86%, rgba(241,238,232,0) 97%);
+}
+.portada__in { position: relative; z-index: 1; }
+.portada__h1 {
+  font-family: "Roboto Slab", Georgia, serif; font-weight: 700;
+  font-size: var(--p-4); line-height: 1.02; letter-spacing: -.03em; margin: 0 0 1.3rem;
+}
+.portada__bajada { max-width: 43ch; color: var(--medio); font-size: var(--p-1); margin: 0 0 2.4rem; }
+.portada__bajada b { color: var(--tinta); }
+.portada__pie { margin: 0; }
+
+/* -- AMBIENTE: HOJAS QUE SE POSAN -------------------------------- */
+/* Cuatro caen girando sobre su eje; TRES YA ESTAN POSADAS abajo y no
+   se mueven. Es el unico ambiente del registro que ACUMULA. Deslinde
+   con los petalos de la 155: aquellos PLANEAN en zigzag lateral, estos
+   GIRAN SOBRE SU EJE, caen mas rectos y SE QUEDAN. Determinista:
+   --i por nth-child (la CSP bloquea style=""). */
+.amb { position: absolute; inset: 0; z-index: -2; overflow: hidden; pointer-events: none; }
+.amb__p, .amb__q {
+  position: absolute; width: 16px; height: 11px;
+  border-radius: 60% 20% 60% 20%;
+  background: rgba(138, 62, 30, .28);
+}
+.amb__p {
+  top: -6vh; left: calc(38% + var(--i) * 15%);
+  opacity: 0;
+  animation: amb-hoja var(--dur, 19s) linear infinite;
+  animation-delay: calc(var(--i) * -4.4s);
+  will-change: transform, opacity;
+}
+.amb--hojas .amb__p:nth-child(1) { --i: 0; --dur: 17s; }
+.amb--hojas .amb__p:nth-child(2) { --i: 1; --dur: 21s; }
+.amb--hojas .amb__p:nth-child(3) { --i: 2; --dur: 25s; }
+.amb--hojas .amb__p:nth-child(4) { --i: 3; --dur: 19s; }
+/* Las posadas: quietas, mas tenues y giradas distinto cada una. */
+.amb__q { bottom: 4vh; opacity: .55; }
+.amb--hojas .amb__q:nth-child(5) { left: 46%; transform: rotate(24deg); }
+.amb--hojas .amb__q:nth-child(6) { left: 61%; transform: rotate(-38deg) scale(.85); }
+.amb--hojas .amb__q:nth-child(7) { left: 78%; transform: rotate(71deg) scale(1.15); }
+@keyframes amb-hoja {
+  0%   { transform: translate3d(0, 0, 0) rotate(0deg); opacity: 0; }
+  10%  { opacity: .75; }
+  85%  { opacity: .75; }
+  100% { transform: translate3d(-4vw, 104vh, 0) rotate(540deg); opacity: 0; }
+}
+@media (prefers-reduced-motion: reduce) { .amb__p { display: none; } }
+@media (max-width: 760px) { .amb__p:nth-child(n+3) { display: none; } .amb__q:nth-child(7) { display: none; } }
+
+/* -- BOTONES ----------------------------------------------------- */
+.boton {
+  position: relative; display: inline-flex; align-items: center; justify-content: center;
+  min-height: 48px; padding: .8rem 1.8rem;
+  border: 1px solid var(--gres); color: var(--gres); background: transparent;
+  font-family: "M PLUS 1 Code", ui-monospace, monospace;
+  font-size: var(--p--1); letter-spacing: .09em; text-transform: uppercase;
+  text-decoration: none; overflow: hidden; isolation: isolate;
+}
+.boton::before {
+  content: ""; position: absolute; inset: 0; z-index: -1;
+  background: var(--gres); transform: translateY(101%); transition: transform .4s var(--sale);
+}
+.boton:hover, .boton:focus-visible { color: var(--superficie); }
+.boton:hover::before, .boton:focus-visible::before { transform: translateY(0); }
+.boton--fuerte { background: var(--gres); color: var(--superficie); }
+.boton--fuerte::before { background: var(--tinta); }
+@media (prefers-reduced-motion: reduce) { .boton::before { transition-duration: 1ms; } }
+
+.flecha {
+  display: inline-flex; align-items: center; gap: .5rem; min-height: 44px;
+  font-family: "M PLUS 1 Code", ui-monospace, monospace; font-size: var(--p--1); letter-spacing: .05em;
+  color: var(--gres); text-decoration: none; border-bottom: 1px solid currentColor;
+  transition: border-bottom-width .2s ease;
+}
+.flecha:hover, .flecha:focus-visible { border-bottom-width: 3px; }
+
+/* -- PIEZA FIRMA: EL CORTE DEL TERRENO --------------------------- */
+.pordonde { padding: 7rem 0; background: var(--panel); }
+.pordonde .intro, .zanja .intro { max-width: 66ch; color: var(--medio); font-size: var(--p-1); margin: 0 0 3rem; }
+.pordonde .intro b, .zanja .intro b { color: var(--tinta); }
+
+.corte-g { margin: 0 0 3.2rem; }
+.corte-g__dibujo {
+  position: relative; height: 300px; overflow: hidden;
+  border: 1px solid var(--linea); border-radius: 3px;
+}
+.cg { position: absolute; left: 0; right: 0; }
+.cg--pav     { top: 0;     height: 34px;  background: var(--pav); }
+.cg--base    { top: 34px;  height: 40px;  background: var(--base); }
+.cg--tierra  { top: 74px;  height: 120px; background: var(--tierra); }
+.cg--arcilla { top: 194px; bottom: 0;     background: var(--arcilla); }
+/* Las dos camaras: lo unico que se abre. */
+.cg__camara {
+  position: absolute; top: 0; width: 54px; height: 210px;
+  background: var(--superficie); border: 2px solid var(--gres-o);
+  border-top-width: 3px;
+}
+.cg__camara--ent { left: 7%; }
+.cg__camara--sal { right: 7%; }
+/* La caneria: pasa de una camara a la otra por debajo, sin tocar
+   ninguna de las capas superiores. */
+.cg__tubo {
+  position: absolute; top: 196px; left: calc(7% + 54px); right: calc(7% + 54px);
+  height: 14px; border-radius: 7px;
+  background: var(--gres-o); border: 2px solid var(--gres);
+}
+.cg__rot {
+  /* Centrados entre las dos camaras: pegados al borde chocaban con
+     ellas y la palabra quedaba cortada. */
+  position: absolute; left: 50%; transform: translateX(-50%);
+  font-family: "M PLUS 1 Code", ui-monospace, monospace;
+  font-size: .72rem; letter-spacing: .1em; text-transform: uppercase;
+  color: var(--superficie);
+}
+.cg__rot--pav    { top: 9px; color: var(--tinta); }  /* el gris del pavimento es claro: en superficie daba 2,7:1 */
+.cg__rot--base   { top: 47px;  color: var(--tinta); }
+.cg__rot--tierra { top: 124px; }
+
+/* NOTA DEL AUDITOR: los rotulos del corte se apoyan en las franjas de
+   color, que son HERMANAS y no padres, asi que el auditor no las ve y
+   trepa al panel. «TERRENO» se midio a mano: superficie sobre `--tierra`
+   da 4,8:1. «PAVIMENTO» si daba 2,7:1 de verdad y se paso a tinta. */
+.corte-g__pie { font-size: var(--p--1); color: var(--medio); margin: .9rem 0 0; max-width: 68ch; }
+.corte-g__pie b { color: var(--tinta); }
+
+.notas { list-style: none; margin: 0; padding: 0; border-top: 2px solid var(--tinta); }
+.n {
+  display: grid; grid-template-columns: 4rem 1fr; gap: 1.4rem;
+  padding: 1.4rem 0; border-bottom: 1px solid var(--linea);
+}
+.n__n { font-family: "M PLUS 1 Code", ui-monospace, monospace; font-size: var(--p-1); color: var(--gres); line-height: 1.25; }
+.n h3 { font-family: "Roboto Slab", Georgia, serif; font-weight: 700; font-size: var(--p-1); margin: 0 0 .45rem; line-height: 1.2; }
+.n p { margin: 0; color: var(--medio); font-size: var(--p--1); line-height: 1.65; max-width: 76ch; }
+.n p b { color: var(--tinta); }
+
+/* -- CITA -------------------------------------------------------- */
+.cita { position: relative; isolation: isolate; overflow: hidden; min-height: min(48vh, 370px); display: grid; align-items: center; }
+.cita img { position: absolute; inset: 0; z-index: -2; width: 100%; height: 100%; object-fit: cover; object-position: 50% 55%; }
+/* Peor caso medido a mano: la tierra clara bajo el velo .84 sobre
+   tinta deja el texto en superficie a 11:1. El auditor marca 1,00:1
+   porque no ve el ::after y trepa al body — falso positivo conocido. */
+.cita::after { content: ""; position: absolute; inset: 0; z-index: -1; background: rgba(30,27,22,.84); }
+.cita__txt p {
+  font-family: "Roboto Slab", Georgia, serif; font-weight: 700;
+  font-size: var(--p-2); line-height: 1.2; max-width: 28ch; margin: 0; color: var(--superficie);
+}
+
+/* -- LO QUE SE ROMPE --------------------------------------------- */
+.zanja { padding: 7rem 0; }
+.cost { display: grid; grid-template-columns: repeat(3, 1fr); gap: 2.4rem 2.6rem; margin-bottom: 2.4rem; }
+.ct { border-top: 2px solid var(--gres); padding-top: 1rem; }
+.ct h3 { font-family: "Roboto Slab", Georgia, serif; font-weight: 700; font-size: var(--p-1); margin: 0 0 .6rem; line-height: 1.2; }
+.ct p { margin: 0; color: var(--medio); font-size: var(--p--1); line-height: 1.65; }
+.ct p b { color: var(--tinta); }
+
+/* -- TAJO -------------------------------------------------------- */
+.tajo { position: relative; isolation: isolate; overflow: hidden; margin: 0; min-height: min(52vh, 400px); display: flex; align-items: flex-end; }
+.tajo img { position: absolute; inset: 0; z-index: -2; width: 100%; height: 100%; object-fit: cover; object-position: 50% 60%; }
+.tajo::after {
+  content: ""; position: absolute; inset: 0; z-index: -1;
+  background: linear-gradient(0deg, rgba(30,27,22,.95) 0%, rgba(30,27,22,.8) 34%, rgba(30,27,22,.3) 64%, rgba(30,27,22,0) 92%);
+}
+.tajo__txt { padding: 2.8rem 0; }
+.tajo__txt .rotulo { color: #E0A585; }
+.tajo__f { font-family: "Roboto Slab", Georgia, serif; font-weight: 700; font-size: var(--p-2); margin: 0; line-height: 1.16; max-width: 26ch; color: var(--superficie); }
+
+/* -- MITADES ----------------------------------------------------- */
+.mitades { display: grid; grid-template-columns: 1fr 1fr; background: var(--panel); }
+.mitades__foto img { display: block; width: 100%; height: 100%; object-fit: cover; }
+.mitades__txt { padding: 5.5rem clamp(1.5rem, 4vw, 4rem); display: flex; flex-direction: column; justify-content: center; }
+.mitades__txt p { color: var(--medio); }
+.mitades__txt p b { color: var(--tinta); }
+.lista { margin: 1.3rem 0; padding: 0; list-style: none; }
+.lista li { padding: .6rem 0 .6rem 1.5rem; position: relative; border-bottom: 1px solid var(--linea); font-size: var(--p--1); color: var(--medio); }
+.lista li b { color: var(--tinta); }
+.lista li::before { content: ""; position: absolute; left: 0; top: 1.1em; width: 8px; height: 1px; background: var(--gres); }
+.lista--marca li { border-bottom: none; padding-bottom: .3rem; }
+
+/* -- MOSAICO ----------------------------------------------------- */
+.mos { padding: 7rem 0 0; background: var(--panel-2); }
+.mos__grilla { display: grid; gap: 4px; grid-template-columns: repeat(3, 1fr); margin-top: 3rem; }
+.mos__p { margin: 0; overflow: hidden; }
+.mos__p:nth-child(1), .mos__p:nth-child(6) { grid-column: span 2; }
+.mos__p img { display: block; width: 100%; height: 100%; aspect-ratio: 3 / 2; object-fit: cover; transition: transform .5s var(--sale); }
+.mos__p:hover img { transform: scale(1.05); }
+@media (prefers-reduced-motion: reduce) { .mos__p:hover img { transform: none; } }
+
+/* -- CONTACTO ---------------------------------------------------- */
+.con-telon { position: relative; isolation: isolate; overflow: hidden; }
+.telon { position: absolute; inset: 0; z-index: -1; pointer-events: none; }
+.telon img {
+  display: block; width: 100%; height: 100%; object-fit: cover; opacity: .14;
+  -webkit-mask-image: linear-gradient(180deg, transparent 0%, #000 22%, #000 74%, transparent 100%);
+          mask-image: linear-gradient(180deg, transparent 0%, #000 22%, #000 74%, transparent 100%);
+}
+.contacto { padding: 7rem 0; }
+.contacto__num { margin: 0 0 2.4rem; }
+.contacto__num a {
+  font-family: "Roboto Slab", Georgia, serif; font-weight: 700;
+  font-size: clamp(1.7rem, 1.1rem + 3.2vw, 3.6rem); line-height: 1; color: var(--gres);
+  text-decoration: none; display: inline-flex; align-items: center; min-height: 44px;
+  border-bottom: 3px solid transparent; transition: border-color .25s ease;
+}
+.contacto__num a:hover, .contacto__num a:focus-visible { border-bottom-color: var(--gres); }
+
+.guion { border-left: 3px solid var(--gres); padding: .2rem 0 .2rem 1.4rem; margin: 0 0 2.6rem; max-width: 54rem; }
+.guion__t {
+  font-family: "M PLUS 1 Code", ui-monospace, monospace; font-size: var(--p--1);
+  letter-spacing: .07em; text-transform: uppercase; color: var(--gres); margin: 0 0 .9rem;
+}
+.guion__l { margin: 0; padding-left: 1.2rem; }
+.guion__l li { margin-bottom: .55rem; font-size: var(--p-0); }
+.guion__l li span { display: block; color: var(--medio); font-style: italic; font-size: var(--p--1); }
+
+.datos { margin: 0 0 2rem; max-width: 48rem; }
+.datos > div { display: flex; justify-content: space-between; gap: 1.5rem; padding: .8rem 0; border-bottom: 1px solid var(--linea); }
+.datos dt { font-family: "M PLUS 1 Code", ui-monospace, monospace; font-size: var(--p--1); color: var(--medio); letter-spacing: .05em; text-transform: uppercase; }
+.datos dd { margin: 0; text-align: right; font-size: var(--p--1); }
+
+/* -- PARA EL DUENO ----------------------------------------------- */
+.dueno { padding: 7rem 0; border-top: 1px solid var(--linea); background: var(--panel-2); }
+.dueno__cols { display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; margin-bottom: 3rem; }
+.dueno h3 {
+  font-family: "M PLUS 1 Code", ui-monospace, monospace;
+  font-size: var(--p--1); letter-spacing: .08em; text-transform: uppercase;
+  color: var(--gres); margin: 2rem 0 1rem;
+}
+.dueno p { color: var(--medio); max-width: 62ch; }
+.dueno p b { color: var(--tinta); }
+.dueno__cierre { display: flex; flex-wrap: wrap; gap: 2rem; align-items: center; margin-top: 3rem; }
+
+.pie { padding: 3rem 0; border-top: 1px solid var(--linea); }
+.pie__in p { font-size: var(--p--1); color: var(--medio); margin: 0 0 .8rem; }
+.pie__in p b { color: var(--tinta); }
+.pie__leg { opacity: .95; }
+
+/* -- REVEALS ----------------------------------------------------- */
+.js [data-rev-grupo] > * { opacity: 0; transform: translateY(22px); }
+.js [data-rev-grupo].ok > * {
+  opacity: 1; transform: none;
+  transition: opacity .3s ease-out, transform .55s var(--sale);
+  transition-delay: calc(var(--r, 0) * 55ms);
+}
+[data-rev-grupo] > :nth-child(1){--r:0} [data-rev-grupo] > :nth-child(2){--r:1}
+[data-rev-grupo] > :nth-child(3){--r:2} [data-rev-grupo] > :nth-child(4){--r:3}
+[data-rev-grupo] > :nth-child(5){--r:4} [data-rev-grupo] > :nth-child(6){--r:5}
+@media (prefers-reduced-motion: reduce) {
+  .js [data-rev-grupo] > * { opacity: 1; transform: none; transition: none; }
+}
+:focus-visible { outline: 2px solid var(--gres); outline-offset: 3px; }
+
+/* -- MOVIL ------------------------------------------------------- */
+@media (max-width: 1080px) {
+  .cost { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 980px) {
+  .mitades { grid-template-columns: 1fr; }
+  .mitades__foto img { aspect-ratio: 16 / 10; height: auto; }
+  .dueno__cols { grid-template-columns: 1fr; gap: 1rem; }
+}
+@media (max-width: 760px) {
+  .cab__nav a:not(.cab__tel) { display: none; }
+  .portada { min-height: auto; padding: 3.5rem 0 3rem; }
+  /* En telefono el texto cae ENCIMA de la foto: la mascara lateral no
+     sirve a 375 px, asi que el velo se da vuelta y baja. */
+  .portada__foto img {
+    object-position: 60% 55%;
+    -webkit-mask-image: linear-gradient(180deg, #000 0%, #000 58%, transparent 100%);
+            mask-image: linear-gradient(180deg, #000 0%, #000 58%, transparent 100%);
+  }
+  .portada__foto::after {
+    background: linear-gradient(180deg,
+      rgba(241,238,232,.9) 0%, rgba(241,238,232,.84) 34%, rgba(241,238,232,.92) 64%, rgba(241,238,232,1) 100%);
+  }
+  .cost { grid-template-columns: 1fr; gap: 1.8rem; }
+  .n { grid-template-columns: 2.8rem 1fr; gap: 1rem; }
+  .pordonde, .zanja, .contacto, .dueno { padding: 4.5rem 0; }
+  .mos { padding-top: 4.5rem; }
+  .mos__grilla { grid-template-columns: repeat(2, 1fr); }
+  .mos__p:nth-child(1), .mos__p:nth-child(6) { grid-column: span 2; }
+  /* El corte se achica pero mantiene las proporciones de los estratos */
+  .corte-g__dibujo { height: 220px; }
+  .cg--pav     { height: 24px; }
+  .cg--base    { top: 24px; height: 30px; }
+  .cg--tierra  { top: 54px; height: 88px; }
+  .cg--arcilla { top: 142px; }
+  .cg__camara  { width: 38px; height: 152px; }
+  .cg__tubo    { top: 143px; left: calc(7% + 38px); right: calc(7% + 38px); height: 11px; }
+  .cg__rot--pav    { top: 5px; font-size: .62rem; }
+  .cg__rot--base   { top: 32px; font-size: .62rem; }
+  .cg__rot--tierra { top: 92px; font-size: .62rem; }
+}
+@media (max-width: 480px) {
+  .cab__sub { font-size: .48em; }
+  .cg__rot { display: none; }
+}
+@media (max-width: 460px) {
+  .datos > div { flex-direction: column; gap: .2rem; }
+  .datos dd { text-align: left; }
+}

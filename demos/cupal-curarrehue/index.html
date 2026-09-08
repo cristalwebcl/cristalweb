@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="es-CL" class="no-js">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Cupal Restaurant — restobar, Curarrehue</title>
+<meta name="description" content="Restobar en Curarrehue. Hasta qué hora cocina la cocina y qué se puede llevar al hospedaje.">
+
+<!-- Política de seguridad de contenido: el navegador sólo puede cargar
+     archivos de este mismo sitio. Sin CDN, sin librerías, sin rastreadores.
+     Ver skills/web-blindada/references/csp-en-pages.md -->
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self'; img-src 'self' data:; font-src 'self'; connect-src 'self'; media-src 'self'; form-action 'self'; base-uri 'none'; frame-src 'none'; object-src 'none'">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+
+<!-- Rescate de la clase .js (regla 2 de la casa). En archivo, sin defer:
+     inline lo bloquearía la CSP. -->
+<script src="js/rescate.js"></script>
+
+<!-- Fuentes propias: cero peticiones a terceros. El preload va SOLO
+     para la display, que es la del titular de la portada. -->
+<link rel="preload" href="assets/fuentes/grenze-400-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="assets/fuentes.css">
+<link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+
+<div class="propuesta">
+  <p class="propuesta__que">Propuesta de sitio web — preparada para <b>Cupal Restaurant</b> por CristalWeb</p>
+  <p class="propuesta__gancho">4,8 con 123 reseñas en Curarrehue. El pueblo se llenó de gente que sube a las termas y baja con hambre, y el único que podría recibirlos de noche no publica hasta qué hora cocina.</p>
+</div>
+
+<header class="cab" id="cab">
+  <a class="cab__marca" href="#portada">
+    <span class="destapador" aria-hidden="true"></span>
+    <span class="cab__nombre">Cupal</span>
+  </a>
+  <nav class="cab__nav" aria-label="Secciones">
+    <a href="#horas">Hasta qué hora</a>
+    <a href="#llevar">Para llevar</a>
+  </nav>
+  <a class="cab__tel" href="tel:+56953080413">
+    <span class="cab__tel-rot">Curarrehue</span>
+    <span class="cab__tel-num">+56 9 5308 0413</span>
+  </a>
+</header>
+
+<main>
+
+<!-- ========= PORTADA — la barra de noche ========= -->
+<section class="portada portada--foto" id="portada" aria-labelledby="t-portada">
+  <!-- FONDO DE PORTADA: 2560 px, nitido. Se disuelve hacia el titular
+       con un gradiente lateral, no con desenfoque. -->
+  <div class="portada__foto" aria-hidden="true">
+    <img src="imagenes/port-01.jpg" width="2560" height="1920"
+         decoding="async" fetchpriority="high" alt="">
+  </div>
+
+
+  <!-- El vidrio frío: gotitas quietas, y una que resbala -->
+  <div class="vidrio" aria-hidden="true">
+    <span class="gotas"></span>
+    <span class="gota-viva"></span>
+  </div>
+
+  <div class="portada__texto">
+    <p class="sitio">Restobar · Curarrehue</p>
+    <h1 id="t-portada">¿Alcanzo<br>a comer algo<br>caliente?</h1>
+    <p class="bajada">Es la pregunta que se hace todo el que baja de las termas
+      pasadas las ocho, mirando el teléfono en el auto. Hoy no tiene respuesta.
+      Debería tenerla en una línea.</p>
+    <dl class="specs">
+      <div class="spec"><dt>nota en Google</dt><dd>4,8</dd></div>
+      <div class="spec"><dt>reseñas</dt><dd>123</dd></div>
+      <div class="spec"><dt>horario publicado</dt><dd><span class="falta">ninguno</span></dd></div>
+    </dl>
+  </div>
+</section>
+
+<!-- ========= LA PIEZA FIRMA — ESTRUCTURA C: LA TABLA ES LA PÁGINA ========= -->
+<section class="horas con-telon" id="horas" aria-labelledby="t-horas">
+  <div class="telon" aria-hidden="true">
+    <img src="imagenes/telon-01.jpg" width="1200" height="900" decoding="async" alt="">
+  </div>
+
+  <!-- AURA DE COLOR: la foto de rubro reventada a desenfoque. No se lee
+       como imagen: aporta color y luz detras de una seccion que si no
+       seria fondo plano. Aca el desenfoque SI es el efecto, no un parche,
+       y por eso el archivo va chico: a 64 px de blur, mas resolucion no
+       cambia nada. Sin loading=lazy porque el elemento va en absoluto con
+       z-index negativo y el navegador nunca lo considera visible. -->
+  <div class="aura" aria-hidden="true">
+    <img src="imagenes/aura-01.jpg" width="900" height="596" decoding="async" alt="">
+  </div>
+
+  <div class="horas__cabecera">
+    <p class="antetitulo">La única pregunta que importa después de las ocho</p>
+    <h2 id="t-horas">La cocina<br>cierra a las…</h2>
+    <p class="entrada">Tres franjas del día. Qué sirve la cocina en cada una y a qué
+      hora sale el último plato. Escrito así, el que va bajando decide antes de
+      llegar al pueblo — y llega.</p>
+    <p class="marca-ejemplo" data-ejemplo="La tabla es la estructura — las horas las pone el local"></p>
+  </div>
+
+  <div class="tabla-envoltura">
+    <table class="tabla">
+      <caption class="visually">Franjas horarias, qué sirve la cocina y hora del último plato</caption>
+      <thead>
+        <tr>
+          <th scope="col">Franja</th>
+          <th scope="col">Qué sirve la cocina</th>
+          <th scope="col">Último plato</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row" class="franja"><span class="franja__h">12–16</span><span class="franja__n">almuerzo</span></th>
+          <td>
+            <span class="falta">falta: qué se sirve al mediodía</span>
+            <span class="quien">Es la franja del que va subiendo a las termas y para
+              antes. Come rápido y sigue.</span>
+          </td>
+          <td class="ultimo"><span class="falta">falta</span></td>
+        </tr>
+        <tr>
+          <th scope="row" class="franja"><span class="franja__h">16–20</span><span class="franja__n">tarde</span></th>
+          <td>
+            <span class="falta">falta: si la cocina sigue abierta o sólo hay barra</span>
+            <span class="quien">La franja olvidada. El que baja a las cinco no quiere
+              esperar hasta las nueve para comer, y casi ningún local dice qué pasa
+              a esa hora.</span>
+          </td>
+          <td class="ultimo"><span class="falta">falta</span></td>
+        </tr>
+        <tr>
+          <th scope="row" class="franja"><span class="franja__h">20–…</span><span class="franja__n">noche</span></th>
+          <td>
+            <span class="falta">falta: qué se sirve de noche</span>
+            <span class="quien">La franja que vale plata. El que llega tarde, con
+              hambre y sin cocina en la cabaña, va a ir al único lugar que diga por
+              escrito que está abierto.</span>
+          </td>
+          <td class="ultimo"><span class="falta">falta</span></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="ojo">
+    <p><b>Por qué la hora del último plato y no sólo el horario de cierre.</b> No son
+      lo mismo, y el cliente lo sabe: llegar a las 22:45 a un local que cierra a las
+      23:00 termina en «ya cerramos cocina». Publicar la hora del último plato evita
+      esa conversación —que siempre termina mal— y es un dato que la cocina tiene en
+      la cabeza todos los días.</p>
+  </div>
+
+  <p class="firma">La tabla está armada; faltan seis celdas. Se llenan en cinco
+    minutos y quedan escritas para siempre.</p>
+</section>
+
+<!-- ========= PARA LLEVAR AL HOSPEDAJE ========= -->
+<!-- ========= MEDIA PANTALLA ========= -->
+<section class="mitades" aria-labelledby="t-mitades">
+  <div class="mitades__foto">
+    <img src="imagenes/media-01.jpg" width="1500" height="1058"
+         loading="lazy" decoding="async" alt="">
+  </div>
+  <div class="mitades__texto">
+    <p class="mitades__ante">La foto que ya tienen y explica el lugar entero</p>
+    <h2 id="t-mitades">El volcán está pintado en la pared del salón</h2>
+    <p>Es un mural, no una ventana, y por eso funciona: alguien decidió que el volcán entrara igual. Esa foto dice más del ambiente que cualquier adjetivo — mesas largas de madera, luz cálida, y un restobar de pueblo que se tomó el trabajo de pintarse su propio paisaje. Está en internet y no está en la ficha de Google, que es donde el que viene manejando desde Pucón la va a buscar.</p>
+  </div>
+</section>
+
+<section class="llevar" id="llevar" aria-labelledby="t-llevar">
+  <div class="llevar__cuerpo">
+    <p class="antetitulo antetitulo--claro">El cliente del que nadie habla</p>
+    <h2 id="t-llevar">Para llevar<br>al hospedaje</h2>
+    <p class="entrada">Media Curarrehue se arrienda por noche, y buena parte de esas
+      cabañas no tiene cocina o tiene una que nadie quiere usar después de un día de
+      termas. Ese grupo come todas las noches y compra sin mirar el precio: sólo
+      necesita saber que existe la opción.</p>
+
+    <dl class="huecos">
+      <div class="hueco">
+        <dt>Si se puede pedir para llevar</dt>
+        <dd><span class="falta">falta: sí / no</span>
+          <span class="hueco__pq">La pregunta base. Un «sí, para llevar también»
+            escrito en la página cambia el volumen de las noches.</span></dd>
+      </div>
+      <div class="hueco">
+        <dt>Qué viaja bien</dt>
+        <dd><span class="falta">falta: dos o tres platos</span>
+          <span class="hueco__pq">No todo aguanta veinte minutos en una bolsa. Los
+            que sí, dichos por la cocina, evitan que alguien se lleve el plato
+            equivocado y quede con mala impresión.</span></dd>
+      </div>
+      <div class="hueco">
+        <dt>Cuánto se demora</dt>
+        <dd><span class="falta">falta</span>
+          <span class="hueco__pq">«Veinte minutos» es la diferencia entre esperar
+            tranquilo y pensar que se olvidaron del pedido.</span></dd>
+      </div>
+      <div class="hueco">
+        <dt>Hasta qué hora se puede pedir</dt>
+        <dd><span class="falta">falta</span>
+          <span class="hueco__pq">Suele ser antes que el cierre de la cocina. Si es
+            así, decirlo.</span></dd>
+      </div>
+    </dl>
+
+    <p class="nota-honesta">Nada de esto lo puedo escribir yo: no sé qué platos
+      trabajan ni cuánto demoran. Lo que sí sé es que ninguno de sus competidores
+      del pueblo tiene esta sección, y que el que arrienda cabaña sin cocina es el
+      cliente más fiel que existe.</p>
+  </div>
+</section>
+
+<!-- ========= EL CIERRE — T1: EL TELÉFONO ES EL TITULAR ========= -->
+<!-- ========= LA CITA A SANGRE ========= -->
+<section class="cita" aria-labelledby="t-cita">
+  <div class="cita__foto" aria-hidden="true">
+    <img src="imagenes/cita-01.jpg" width="2560" height="1703"
+         loading="lazy" decoding="async" alt="">
+  </div>
+  <blockquote class="cita__texto">
+    <p id="t-cita">Curarrehue no se come de paso<br>
+      <span class="cita__eco">Se para el auto, se entra y se come sentado</span></p>
+  </blockquote>
+</section>
+
+
+
+<!-- ========= TAJO — FRANJA A SANGRE ========= -->
+<div class="tajo" aria-hidden="true">
+  <img src="imagenes/banda-01.jpg" width="1300" height="585"
+       loading="lazy" decoding="async" alt="">
+</div>
+<section class="cierre" id="llamar" aria-labelledby="t-cierre">
+  <p class="cierre__rot">Mientras tanto, se pregunta por teléfono</p>
+  <h2 id="t-cierre" class="cierre__tel">
+    <a href="tel:+56953080413">+56 9 5308 0413</a>
+  </h2>
+  <p class="cierre__pie">Es el número que sí está publicado en su ficha de Google.
+    Toda esta página existe para que deje de ser la única forma de saber si la
+    cocina está abierta.</p>
+</section>
+
+<!-- ========= LAS FOTOS ========= -->
+<section class="galeria" aria-labelledby="t-galeria">
+  <h2 id="t-galeria" class="galeria__titulo">Suyo, empezando por el logo</h2>
+  <p class="galeria__nota">Cinco fotos de esta página son suyas: el salón, los tres platos y la fachada. Sólo el fondo de la portada, el aura y la cita son de banco libre, y están declarados en imagenes/FUENTES.txt.</p>
+  <div class="galeria__grilla">
+    <figure class="gal gal--izq">
+      <img src="imagenes/gal-02.jpg" width="1300" height="917" loading="lazy" decoding="async"
+           alt="Logo del restobar: un disco de madera con el nombre CUPAL, un vaso de cerveza y la leyenda Restobar y Cafetería, Curarrehue - Araucanía.">
+      <figcaption>El logo, tallado en un disco de madera. Dice qué es y dónde está, y no aparece en ninguna parte.</figcaption>
+    </figure>
+    <figure class="gal gal--der">
+      <img src="imagenes/gal-01.jpg" width="1300" height="585" loading="lazy" decoding="async"
+           alt="La fachada de madera del restaurante entre los árboles, con el letrero y la reja de troncos.">
+      <figcaption>La fachada. Está a la orilla del camino y así se reconoce desde el auto.</figcaption>
+    </figure>
+  </div>
+  <p class="galeria__falta">falta: la carta con precios, y el salón de noche con la luz encendida</p>
+</section>
+
+<!-- ========= LA TIRA ========= -->
+<section class="tira" aria-label="Tres imágenes del oficio">
+  <figure class="tira__pieza">
+    <img src="imagenes/tira-01.jpg" width="1000" height="706" loading="lazy" decoding="async" alt="Una hamburguesa con papas fritas en canasta, sobre la tabla.">
+  </figure>
+  <figure class="tira__pieza">
+    <img src="imagenes/tira-02.jpg" width="1000" height="706" loading="lazy" decoding="async" alt="Pizza, empanadas y papas servidas en la mesa.">
+  </figure>
+  <figure class="tira__pieza">
+    <img src="imagenes/tira-03.jpg" width="1000" height="706" loading="lazy" decoding="async" alt="Un postre en bol de madera, con canela encima.">
+  </figure>
+</section>
+
+</main>
+
+
+
+<!-- ========= MOSAICO ========= -->
+<section class="mos" aria-labelledby="t-mos">
+  <h2 id="t-mos" class="mos__titulo">La misma serie, más de cerca</h2>
+  <p class="mos__nota">Estas seis ya aparecen más arriba en la página. Vuelven acá en otro tamaño porque una sola pasada de imágenes deja el scroll vacío, y porque de cerca se ven cosas que en grande se pierden. La procedencia de cada una está en imagenes/FUENTES.txt.</p>
+  <div class="mos__grilla">
+    <figure class="mos__p">
+      <img src="imagenes/mos-01.jpg" width="780" height="550"
+           loading="lazy" decoding="async" alt="">
+    </figure>
+    <figure class="mos__p">
+      <img src="imagenes/mos-02.jpg" width="780" height="351"
+           loading="lazy" decoding="async" alt="">
+    </figure>
+    <figure class="mos__p">
+      <img src="imagenes/mos-03.jpg" width="780" height="550"
+           loading="lazy" decoding="async" alt="">
+    </figure>
+    <figure class="mos__p">
+      <img src="imagenes/mos-04.jpg" width="780" height="551"
+           loading="lazy" decoding="async" alt="">
+    </figure>
+    <figure class="mos__p">
+      <img src="imagenes/mos-05.jpg" width="780" height="551"
+           loading="lazy" decoding="async" alt="">
+    </figure>
+    <figure class="mos__p">
+      <img src="imagenes/mos-06.jpg" width="780" height="551"
+           loading="lazy" decoding="async" alt="">
+    </figure>
+  </div>
+</section>
+<section class="dueno" aria-labelledby="t-dueno">
+  <h2 id="t-dueno">Para el dueño</h2>
+  <div class="dueno__cols">
+    <div>
+      <h3>Lo que está verificado</h3>
+      <p>El 4,8 con 123 reseñas y el teléfono +56 9 5308 0413, ambos de su ficha de
+        Google. No tienen página propia.</p>
+    </div>
+    <div>
+      <h3>Lo que es estructura</h3>
+      <p>La tabla de franjas. Las tres filas y las tres columnas son la propuesta;
+        las seis celdas vacías las llena la cocina, que es la única que sabe a qué
+        hora sale de verdad el último plato.</p>
+    </div>
+    <div>
+      <h3>Lo que falta</h3>
+      <p>Los horarios por franja, si se puede pedir para llevar y la dirección
+        exacta. Con los horarios solos, esta página ya vale lo que cuesta.</p>
+    </div>
+  </div>
+  <p class="dueno__cierre">
+    <a class="flecha" href="https://wa.me/56968650001" rel="noopener">Escribirme por WhatsApp <span aria-hidden="true">→</span></a>
+    <a class="flecha" href="../../" rel="noopener">Ver otros trabajos <span aria-hidden="true">→</span></a>
+  </p>
+</section>
+
+<footer class="pie">
+  <p>Sitio de demostración preparado por CristalWeb. El negocio no lo ha encargado
+    ni ha revisado su contenido.</p>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,444 @@
+/* ===================================================================
+   199 · M y D Arriendo de Maquinas · Loncoche
+   Demo comercial sin encargo. Construida el 02-09-2026.
+
+   RUBRO NUEVO: arriendo de maquinaria y herramientas. En las 198 demos
+   previas no hay ninguno. Lo mas cercano es la 184-motosierras (venta y
+   SERVICIO de maquinaria forestal, tambien en Loncoche) y el deslinde
+   con ella es duro: alla la maquina SE COMPRA y se mantiene; aca la
+   maquina NO ES DEL CLIENTE — vuelve, y ese detalle cambia toda la
+   pagina (el dia, la garantia, el consumible, la devolucion). Ni un
+   consejo de mantencion aparece aca, ni un consejo de uso aparece alla.
+
+   DIRECCION - «LA SILUETA EN EL TABLERO»
+   En un galpon de arriendo cada herramienta tiene su contorno pintado
+   en el panel perforado. Cuando la silueta esta vacia, la maquina anda
+   trabajando. Esa es la identidad y tambien el argumento comercial: una
+   pagina hace lo que hace el tablero, pero desde afuera.
+
+   LA INVERSION QUE DEFINE LA PAGINA: se ordena POR TRABAJO, no por
+   maquina. Nadie llama pidiendo una placa compactadora; llama diciendo
+   que va a hacer un radier. Ningun catalogo de arriendo del pais esta
+   escrito asi.
+
+   PALETA — el azul es ESMALTE SOBRE MADERA PERFORADA (la pintura mate
+   del tablero de un taller), y hay que deslindarlo de los seis azules
+   del registro porque el color ya no distingue solo:
+   · 62-pernos `#22415C` es PAVONADO: acabado del metal, con brillo.
+   · constructora-ekla `#06182E` + cota `#62B4EE` es EL PLANO, papel.
+   · 185-matekila `#1B5FA8` es PLASTICO INYECTADO brillante de jaba.
+   · 180-schuster prusia es CASI NEGRO; 175 es MEZCLILLA GASTADA.
+   · 196-hielos `#0E5A70` es la ARISTA DE UN BLOQUE DE HIELO.
+   Este es PINTURA MATE, ligeramente agrisada, sobre un fondo de
+   masonite `#E9E7E1` — el color de un galpon ordenado, no de un
+   producto ni de un documento. Un solo acento en toda la pagina.
+
+   Contrastes medidos sobre el PEOR fondo (`--panel-2`), no sobre el
+   principal, que es la leccion de la 175 y la 181:
+   · medio   `#4F5249` -> 5,0:1 sobre panel-2 · 6,3:1 sobre tablero
+   · esmalte `#1C5480` -> 5,1:1 sobre panel-2 · 6,4:1 sobre tablero
+   · tinta   `#1A1B18` -> 14,0:1 sobre tablero
+   `--esmalte-o` es MAS CLARO y solo pinta OBJETOS (perforacion del
+   logotipo, filetes): jamas texto.
+
+   TRIO — verificado contra identidades.md el 02-09-2026:
+   · Display STARDOS STENCIL (0 usos). Es una PLANTILLA: la letra que
+     se pinta con esteneil sobre una maquina para numerarla. No es un
+     capricho tipografico, es como se rotula el inventario de verdad.
+   · Cuerpo FIRA SANS (2 usos). Grotesca de lectura, humanista, sin la
+     frialdad de las tecnologicas; aguanta parrafos largos.
+   · Mono M PLUS 1 CODE (2 usos) — el mono MENOS usado del registro que
+     calza con la display.
+
+   ESTRUCTURA C (la tabla es la pagina), pero con un indice nuevo: la
+   primera columna es EL TRABAJO A HACER. En el registro la 158 indexa
+   por EDAD y la 184 por SINTOMA (diagnostico: «si pasa esto, es esto»).
+   Esta indexa por INTENCION — es prescripcion, no diagnostico.
+
+   CONTACTO T1 (telefono + tabla de datos que faltan) con un agregado
+   propio: el GUION DE TRES LINEAS de que decir al llamar, que es la
+   tesis de la pagina llevada al telefono.
+
+   AMBIENTE: EL BARRIDO. Primero del registro. Un solo haz que cruza la
+   portada en 17 s, como la cortina del galpon que se levanta en la
+   manana. No hay particulas: en un galpon limpio no hay nada flotando,
+   y polvo ya se uso en la 187, la 189 y la 193.
+
+   REGLA DE DATOS DE ESTA PAGINA: ni un precio, ni un plazo, ni un monto
+   de garantia. Verificado en el DOM: la pagina no contiene ninguna
+   cifra de dinero ni de tiempo de arriendo.
+   =================================================================== */
+
+:root {
+  --tablero: #E9E7E1;
+  --panel:   #DEDBD3;
+  --panel-2: #D3CFC6;   /* el peor fondo: todo se calibra contra este */
+  --tinta:   #1A1B18;
+  --medio:   #4F5249;
+  --esmalte: #1C5480;   /* TEXTO */
+  --esmalte-o: #2E7CB8; /* OBJETOS: nunca texto */
+  --linea:   #C6C2B8;
+
+  --sale:   cubic-bezier(.16, 1, .3, 1);
+  --sale-2: cubic-bezier(.2, 0, 0, 1);
+
+  --ancho: min(92vw, 1180px);
+  --p--1: clamp(.78rem, .74rem + .18vw, .88rem);
+  --p-0:  clamp(1rem, .95rem + .25vw, 1.12rem);
+  --p-1:  clamp(1.15rem, 1.05rem + .45vw, 1.38rem);
+  --p-2:  clamp(1.6rem, 1.35rem + 1.2vw, 2.3rem);
+  --p-3:  clamp(2rem, 1.5rem + 2.3vw, 3.4rem);
+  --p-4:  clamp(2.7rem, 1.7rem + 4.8vw, 6rem);
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+[hidden] { display: none !important; }
+html { scroll-behavior: smooth; }
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+
+body {
+  margin: 0; background: var(--tablero); color: var(--tinta);
+  font-family: "Fira Sans", "Segoe UI", system-ui, sans-serif;
+  font-size: var(--p-0); line-height: 1.62;
+  -webkit-font-smoothing: antialiased;
+}
+img { max-width: 100%; }
+a { color: inherit; }
+.ancho { width: var(--ancho); margin-inline: auto; }
+.vis-oculto {
+  position: absolute; width: 1px; height: 1px; overflow: hidden;
+  clip-path: inset(50%); white-space: nowrap;
+}
+
+.rotulo {
+  font-family: "M PLUS 1 Code", ui-monospace, monospace;
+  font-size: var(--p--1); letter-spacing: .13em; text-transform: uppercase;
+  color: var(--esmalte); margin: 0 0 1.4rem;
+}
+.h2 {
+  font-family: "Stardos Stencil", Impact, sans-serif; font-weight: 700;
+  font-size: var(--p-3); line-height: 1.06; letter-spacing: -.005em; margin: 0 0 1.5rem;
+}
+.h2--chico { font-size: var(--p-2); }
+.mini { font-size: var(--p--1); color: var(--medio); max-width: 68ch; }
+.mini b { color: var(--tinta); }
+.nota { font-size: var(--p--1); color: var(--medio); max-width: 74ch; margin-top: 2rem; }
+.nota b { color: var(--tinta); }
+.falta { color: var(--medio); font-style: italic; }
+.ej { color: var(--medio); font-style: italic; border-bottom: 1px dashed var(--linea); }
+.ej::after {
+  content: " (ej.)"; font-family: "M PLUS 1 Code", ui-monospace, monospace;
+  font-size: .78em; font-style: normal; opacity: .85;
+}
+
+/* -- BANDA DE PROPUESTA ------------------------------------------ */
+.propuesta { background: var(--esmalte); color: #EAF1F7; }
+.propuesta__in { padding: .9rem 0; }
+.propuesta__q { font-family: "M PLUS 1 Code", ui-monospace, monospace; font-size: var(--p--1); letter-spacing: .03em; margin: 0 0 .2rem; }
+.propuesta__d { margin: 0; font-size: var(--p--1); line-height: 1.5; max-width: 100ch; }
+
+/* -- CABECERA ---------------------------------------------------- */
+.cab {
+  position: sticky; top: 0; z-index: 50;
+  background: var(--tablero); border-bottom: 1px solid var(--linea);
+  transition: transform .3s var(--sale-2), background-color .3s ease, border-color .3s ease;
+}
+.cab__in { display: flex; align-items: center; justify-content: space-between; gap: 1.2rem; padding: .55rem 0; }
+.cab__marca { display: inline-flex; align-items: center; gap: .75rem; text-decoration: none; min-height: 44px; }
+.cab__txt {
+  font-family: "Stardos Stencil", Impact, sans-serif; font-weight: 700;
+  font-size: var(--p-1); line-height: 1.05; display: flex; flex-direction: column; gap: .22rem;
+}
+.cab__sub {
+  font-family: "M PLUS 1 Code", ui-monospace, monospace; font-weight: 400;
+  font-size: .5em; letter-spacing: .08em; color: var(--medio); text-transform: uppercase;
+}
+.cab__nav { display: flex; align-items: center; gap: 1.5rem; }
+.cab__nav a {
+  font-size: var(--p--1); text-decoration: none; color: var(--medio);
+  min-height: 44px; display: inline-flex; align-items: center; transition: color .2s ease;
+}
+.cab__nav a:hover, .cab__nav a:focus-visible { color: var(--tinta); }
+.cab__tel { color: var(--esmalte) !important; font-family: "M PLUS 1 Code", ui-monospace, monospace; }
+
+/* Cabecera 165a - EL TABLERO CON LA SILUETA VACIA.
+   El panel perforado se dibuja con un radial-gradient repetido; la
+   silueta es el contorno punteado del lugar donde deberia colgar la
+   herramienta que hoy anda afuera. */
+.tabl {
+  position: relative; width: 27px; height: 25px; flex: 0 0 auto;
+  border: 1.5px solid var(--esmalte); border-radius: 2px;
+  background-image: radial-gradient(circle at 2px 2px, var(--esmalte-o) 1px, transparent 1.3px);
+  background-size: 5.5px 5.5px; background-position: 2px 2px;
+}
+.tabl__sil {
+  position: absolute; left: 5px; top: 4px; width: 9px; height: 16px;
+  border: 1.5px dashed var(--esmalte); border-radius: 1px;
+  background: var(--tablero);
+}
+
+.js .cab--top { background: transparent; border-bottom-color: transparent; }
+.js .cab--oculta { transform: translateY(-100%); }
+@media (prefers-reduced-motion: reduce) { .cab { transition-duration: 1ms; } }
+
+/* -- PORTADA ----------------------------------------------------- */
+.portada {
+  position: relative; isolation: isolate; overflow: hidden;
+  min-height: 88svh; display: flex; align-items: center; padding: 5rem 0 4rem;
+}
+.portada__foto { position: absolute; inset: 0; z-index: -3; }
+.portada__foto img {
+  display: block; width: 100%; height: 100%; object-fit: cover; object-position: 66% 50%;
+  -webkit-mask-image: linear-gradient(90deg, transparent 0%, transparent 20%, rgba(0,0,0,.28) 40%, rgba(0,0,0,.76) 61%, #000 79%, #000 100%);
+          mask-image: linear-gradient(90deg, transparent 0%, transparent 20%, rgba(0,0,0,.28) 40%, rgba(0,0,0,.76) 61%, #000 79%, #000 100%);
+}
+/* Velo entero en rgba terminando en alfa 0: nunca un color solido que
+   corte con borde recto sobre la foto. */
+.portada__foto::after {
+  content: ""; position: absolute; inset: 0;
+  background: linear-gradient(90deg,
+    rgba(233,231,225,1) 0%, rgba(233,231,225,1) 29%, rgba(233,231,225,.86) 46%,
+    rgba(233,231,225,.44) 64%, rgba(233,231,225,.13) 83%, rgba(233,231,225,0) 97%);
+}
+.portada__in { position: relative; z-index: 1; }
+.portada__h1 {
+  font-family: "Stardos Stencil", Impact, sans-serif; font-weight: 700;
+  font-size: var(--p-4); line-height: .96; letter-spacing: -.015em; margin: 0 0 1.3rem;
+}
+.portada__bajada { max-width: 46ch; color: var(--medio); font-size: var(--p-1); margin: 0 0 2.4rem; }
+.portada__pie { margin: 0; }
+
+/* -- AMBIENTE: EL BARRIDO ---------------------------------------- */
+/* Primer barrido del registro. Un solo haz ancho e inclinado que cruza
+   la portada en 17 s, como la cortina metalica que se levanta y deja
+   entrar la luz de la manana en el galpon. Sin particulas a proposito:
+   el polvo ya se uso tres veces en esta tanda (187, 189, 193) y un
+   galpon ordenado no tiene nada flotando. Determinista, sin JS, solo
+   transform y opacity. */
+.amb { position: absolute; inset: 0; z-index: -2; overflow: hidden; pointer-events: none; }
+.amb--barrido::before {
+  content: ""; position: absolute; top: -25%; bottom: -25%; left: -45%; width: 34%;
+  background: linear-gradient(100deg,
+    rgba(255,255,255,0) 0%, rgba(255,255,255,.30) 42%,
+    rgba(255,255,255,.44) 55%, rgba(255,255,255,0) 100%);
+  transform: translate3d(0, 0, 0) skewX(-13deg);
+  animation: amb-barre 17s linear infinite;
+  will-change: transform, opacity;
+}
+@keyframes amb-barre {
+  0%   { transform: translate3d(0, 0, 0) skewX(-13deg); opacity: 0; }
+  10%  { opacity: 1; }
+  74%  { opacity: 1; }
+  100% { transform: translate3d(330%, 0, 0) skewX(-13deg); opacity: 0; }
+}
+@media (prefers-reduced-motion: reduce) { .amb { display: none; } }
+
+/* -- BOTONES ----------------------------------------------------- */
+.boton {
+  position: relative; display: inline-flex; align-items: center; justify-content: center;
+  min-height: 48px; padding: .8rem 1.8rem;
+  border: 1px solid var(--esmalte); color: var(--esmalte); background: transparent;
+  font-family: "M PLUS 1 Code", ui-monospace, monospace;
+  font-size: var(--p--1); letter-spacing: .09em; text-transform: uppercase;
+  text-decoration: none; overflow: hidden; isolation: isolate;
+}
+.boton::before {
+  content: ""; position: absolute; inset: 0; z-index: -1;
+  background: var(--esmalte); transform: translateY(101%); transition: transform .4s var(--sale);
+}
+.boton:hover, .boton:focus-visible { color: var(--tablero); }
+.boton:hover::before, .boton:focus-visible::before { transform: translateY(0); }
+.boton--fuerte { background: var(--esmalte); color: var(--tablero); }
+.boton--fuerte::before { background: var(--tinta); }
+@media (prefers-reduced-motion: reduce) { .boton::before { transition-duration: 1ms; } }
+
+.flecha {
+  display: inline-flex; align-items: center; gap: .5rem; min-height: 44px;
+  font-family: "M PLUS 1 Code", ui-monospace, monospace; font-size: var(--p--1); letter-spacing: .05em;
+  color: var(--esmalte); text-decoration: none; border-bottom: 1px solid currentColor;
+  transition: border-bottom-width .2s ease;
+}
+.flecha:hover, .flecha:focus-visible { border-bottom-width: 3px; }
+
+/* -- PIEZA FIRMA: LA TABLA POR TRABAJO --------------------------- */
+.trab { padding: 7rem 0; background: var(--panel); }
+.trab .intro, .antes .intro { max-width: 66ch; color: var(--medio); font-size: var(--p-1); margin: 0 0 3rem; }
+.trab .intro b, .antes .intro b { color: var(--tinta); }
+
+/* La caja tiene su propio scroll: asi ningun ancho de tabla empuja el
+   body y aparece scroll horizontal en telefono (leccion de la 190). */
+.tabla-caja { overflow-x: auto; -webkit-overflow-scrolling: touch; border-top: 2px solid var(--tinta); }
+.tabla { width: 100%; border-collapse: collapse; min-width: 660px; text-align: left; }
+.tabla thead th {
+  font-family: "M PLUS 1 Code", ui-monospace, monospace; font-weight: 400;
+  font-size: var(--p--1); letter-spacing: .1em; text-transform: uppercase;
+  color: var(--esmalte); padding: 1rem .9rem; vertical-align: bottom;
+  border-bottom: 1px solid var(--linea);
+}
+.tabla tbody tr { border-bottom: 1px solid var(--linea); }
+.tabla tbody th, .tabla tbody td { padding: 1.15rem .9rem; vertical-align: top; }
+.tabla tbody th {
+  font-family: "Fira Sans", sans-serif; font-weight: 600; font-size: var(--p-0);
+  color: var(--tinta); width: 27%;
+}
+.tabla .maq {
+  width: 24%; color: var(--esmalte); font-weight: 600;
+}
+.tabla .mas {
+  display: block; font-weight: 400; font-size: var(--p--1); color: var(--medio);
+  font-family: "M PLUS 1 Code", ui-monospace, monospace; margin-top: .25rem; line-height: 1.4;
+}
+.tabla tbody td:last-child { color: var(--medio); font-size: var(--p--1); line-height: 1.6; }
+.tabla tbody td:last-child b { color: var(--tinta); }
+.tabla tbody tr:nth-child(even) { background: rgba(255,255,255,.34); }
+
+/* -- CITA -------------------------------------------------------- */
+.cita { position: relative; isolation: isolate; overflow: hidden; min-height: min(50vh, 390px); display: grid; align-items: center; }
+.cita img { position: absolute; inset: 0; z-index: -2; width: 100%; height: 100%; object-fit: cover; object-position: 50% 55%; }
+/* Peor caso medido a mano: el ripio claro bajo el velo .82 sobre tinta
+   deja el texto en 11:1. El auditor de contraste marca 1,00:1 porque
+   no ve el ::after y trepa hasta el body — falso positivo conocido. */
+.cita::after { content: ""; position: absolute; inset: 0; z-index: -1; background: rgba(26,27,24,.82); }
+.cita__txt p {
+  font-family: "Stardos Stencil", Impact, sans-serif; font-weight: 700;
+  font-size: var(--p-2); line-height: 1.16; max-width: 24ch; margin: 0; color: var(--tablero);
+}
+
+/* -- ANTES DE VENIR A BUSCARLA ----------------------------------- */
+.antes { padding: 7rem 0; }
+.pasos { display: grid; grid-template-columns: repeat(3, 1fr); gap: 2.2rem 2.5rem; margin-bottom: 2.2rem; }
+.paso { border-top: 2px solid var(--tinta); padding-top: 1rem; }
+.paso__n { font-family: "M PLUS 1 Code", ui-monospace, monospace; font-size: var(--p--1); color: var(--esmalte); margin: 0 0 .5rem; }
+.paso h3 { font-family: "Stardos Stencil", Impact, sans-serif; font-weight: 400; font-size: var(--p-1); margin: 0 0 .6rem; line-height: 1.16; }
+.paso p { margin: 0; color: var(--medio); font-size: var(--p--1); line-height: 1.62; }
+.paso p b { color: var(--tinta); }
+
+/* -- TAJO -------------------------------------------------------- */
+.tajo { position: relative; isolation: isolate; overflow: hidden; margin: 0; min-height: min(52vh, 410px); display: flex; align-items: flex-end; }
+.tajo img { position: absolute; inset: 0; z-index: -2; width: 100%; height: 100%; object-fit: cover; object-position: 50% 58%; }
+.tajo::after {
+  content: ""; position: absolute; inset: 0; z-index: -1;
+  background: linear-gradient(0deg, rgba(26,27,24,.95) 0%, rgba(26,27,24,.8) 34%, rgba(26,27,24,.3) 64%, rgba(26,27,24,0) 92%);
+}
+.tajo__txt { padding: 2.8rem 0; }
+.tajo__txt .rotulo { color: #9FC5E2; }
+.tajo__f { font-family: "Stardos Stencil", Impact, sans-serif; font-weight: 700; font-size: var(--p-2); margin: 0; line-height: 1.14; max-width: 22ch; color: var(--tablero); }
+
+/* -- MITADES ----------------------------------------------------- */
+.mitades { display: grid; grid-template-columns: 1fr 1fr; background: var(--panel); }
+.mitades__foto img { display: block; width: 100%; height: 100%; object-fit: cover; }
+.mitades__txt { padding: 5.5rem clamp(1.5rem, 4vw, 4rem); display: flex; flex-direction: column; justify-content: center; }
+.mitades__txt p { color: var(--medio); }
+.mitades__txt p b { color: var(--tinta); }
+.lista { margin: 1.3rem 0; padding: 0; list-style: none; }
+.lista li { padding: .6rem 0 .6rem 1.5rem; position: relative; border-bottom: 1px solid var(--linea); font-size: var(--p--1); color: var(--medio); }
+.lista li b { color: var(--tinta); }
+.lista li::before { content: ""; position: absolute; left: 0; top: 1.1em; width: 8px; height: 1px; background: var(--esmalte); }
+.lista--marca li { border-bottom: none; padding-bottom: .3rem; }
+
+/* -- MOSAICO ----------------------------------------------------- */
+.mos { padding: 7rem 0 0; background: var(--panel-2); }
+.mos__grilla { display: grid; gap: 4px; grid-template-columns: repeat(3, 1fr); margin-top: 3rem; }
+.mos__p { margin: 0; overflow: hidden; }
+.mos__p:nth-child(1), .mos__p:nth-child(6) { grid-column: span 2; }
+.mos__p img { display: block; width: 100%; height: 100%; aspect-ratio: 3 / 2; object-fit: cover; transition: transform .5s var(--sale); }
+.mos__p:hover img { transform: scale(1.05); }
+@media (prefers-reduced-motion: reduce) { .mos__p:hover img { transform: none; } }
+
+/* -- CONTACTO ---------------------------------------------------- */
+.con-telon { position: relative; isolation: isolate; overflow: hidden; }
+.telon { position: absolute; inset: 0; z-index: -1; pointer-events: none; }
+.telon img {
+  display: block; width: 100%; height: 100%; object-fit: cover; opacity: .14;
+  -webkit-mask-image: linear-gradient(180deg, transparent 0%, #000 22%, #000 74%, transparent 100%);
+          mask-image: linear-gradient(180deg, transparent 0%, #000 22%, #000 74%, transparent 100%);
+}
+.contacto { padding: 7rem 0; }
+.contacto__num { margin: 0 0 2.6rem; }
+.contacto__num a {
+  font-family: "Stardos Stencil", Impact, sans-serif; font-weight: 700;
+  font-size: clamp(1.8rem, 1.1rem + 3.5vw, 3.8rem); line-height: 1; color: var(--esmalte);
+  text-decoration: none; display: inline-flex; align-items: center; min-height: 44px;
+  border-bottom: 3px solid transparent; transition: border-color .25s ease;
+}
+.contacto__num a:hover, .contacto__num a:focus-visible { border-bottom-color: var(--esmalte); }
+
+/* El guion de tres lineas: la tesis de la pagina llevada al telefono. */
+.guion { border-left: 3px solid var(--esmalte); padding: .2rem 0 .2rem 1.4rem; margin: 0 0 2.6rem; max-width: 52rem; }
+.guion__t {
+  font-family: "M PLUS 1 Code", ui-monospace, monospace; font-size: var(--p--1);
+  letter-spacing: .08em; text-transform: uppercase; color: var(--esmalte); margin: 0 0 .9rem;
+}
+.guion__l { margin: 0; padding-left: 1.2rem; }
+.guion__l li { margin-bottom: .55rem; font-size: var(--p-0); }
+.guion__l li span { display: block; color: var(--medio); font-style: italic; font-size: var(--p--1); }
+
+.datos { margin: 0 0 2rem; max-width: 48rem; }
+.datos > div { display: flex; justify-content: space-between; gap: 1.5rem; padding: .8rem 0; border-bottom: 1px solid var(--linea); }
+.datos dt { font-family: "M PLUS 1 Code", ui-monospace, monospace; font-size: var(--p--1); color: var(--medio); letter-spacing: .05em; text-transform: uppercase; }
+.datos dd { margin: 0; text-align: right; font-size: var(--p--1); }
+
+/* -- PARA EL DUENO ----------------------------------------------- */
+.dueno { padding: 7rem 0; border-top: 1px solid var(--linea); background: var(--panel-2); }
+.dueno__cols { display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; margin-bottom: 3rem; }
+.dueno h3 {
+  font-family: "M PLUS 1 Code", ui-monospace, monospace; font-weight: 400;
+  font-size: var(--p--1); letter-spacing: .09em; text-transform: uppercase;
+  color: var(--esmalte); margin: 2rem 0 1rem;
+}
+.dueno p { color: var(--medio); max-width: 62ch; }
+.dueno p b { color: var(--tinta); }
+.dueno__cierre { display: flex; flex-wrap: wrap; gap: 2rem; align-items: center; margin-top: 3rem; }
+
+.pie { padding: 3rem 0; border-top: 1px solid var(--linea); }
+.pie__in p { font-size: var(--p--1); color: var(--medio); margin: 0 0 .8rem; }
+.pie__leg { opacity: .92; }
+
+/* -- REVEALS ----------------------------------------------------- */
+.js [data-rev-grupo] > * { opacity: 0; transform: translateY(22px); }
+.js [data-rev-grupo].ok > * {
+  opacity: 1; transform: none;
+  transition: opacity .3s ease-out, transform .55s var(--sale);
+  transition-delay: calc(var(--r, 0) * 60ms);
+}
+[data-rev-grupo] > :nth-child(1){--r:0} [data-rev-grupo] > :nth-child(2){--r:1}
+[data-rev-grupo] > :nth-child(3){--r:2} [data-rev-grupo] > :nth-child(4){--r:3}
+[data-rev-grupo] > :nth-child(5){--r:4} [data-rev-grupo] > :nth-child(6){--r:5}
+@media (prefers-reduced-motion: reduce) {
+  .js [data-rev-grupo] > * { opacity: 1; transform: none; transition: none; }
+}
+:focus-visible { outline: 2px solid var(--esmalte); outline-offset: 3px; }
+
+/* -- MOVIL ------------------------------------------------------- */
+@media (max-width: 1080px) {
+  .pasos { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 980px) {
+  .mitades { grid-template-columns: 1fr; }
+  .mitades__foto img { aspect-ratio: 16 / 10; height: auto; }
+  .dueno__cols { grid-template-columns: 1fr; gap: 1rem; }
+}
+@media (max-width: 760px) {
+  .cab__nav a:not(.cab__tel) { display: none; }
+  .portada { min-height: auto; padding: 3.5rem 0 3rem; }
+  /* En telefono el texto cae ENCIMA de la foto: la mascara lateral no
+     sirve para nada a 375 px, asi que el velo se da vuelta y baja. */
+  .portada__foto img {
+    object-position: 60% 50%;
+    -webkit-mask-image: linear-gradient(180deg, #000 0%, #000 58%, transparent 100%);
+            mask-image: linear-gradient(180deg, #000 0%, #000 58%, transparent 100%);
+  }
+  .portada__foto::after {
+    background: linear-gradient(180deg,
+      rgba(233,231,225,.9) 0%, rgba(233,231,225,.85) 34%, rgba(233,231,225,.92) 64%, rgba(233,231,225,1) 100%);
+  }
+  .pasos { grid-template-columns: 1fr; gap: 1.8rem; }
+  .trab, .antes, .contacto, .dueno { padding: 4.5rem 0; }
+  .mos { padding-top: 4.5rem; }
+  .mos__grilla { grid-template-columns: repeat(2, 1fr); }
+  .mos__p:nth-child(1), .mos__p:nth-child(6) { grid-column: span 2; }
+}
+@media (max-width: 460px) {
+  .datos > div { flex-direction: column; gap: .2rem; }
+  .datos dd { text-align: left; }
+}

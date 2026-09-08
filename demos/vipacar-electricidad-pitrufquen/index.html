@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="es-CL" class="no-js">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self'; img-src 'self' data:; font-src 'self'; connect-src 'self'; media-src 'self'; form-action 'self'; base-uri 'none'; frame-src 'none'; object-src 'none'">
+<meta name="robots" content="noindex, nofollow">
+<title>VIPACAR — Electricidad automotriz · Pitrufquén</title>
+<meta name="description" content="Electricidad automotriz en Pitrufquén. El ruido dice si es la batería, el alternador o el motor de arranque.">
+<link rel="preload" href="assets/fuentes/electrolize-400-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="assets/fuentes.css">
+<link rel="stylesheet" href="css/estilo.css">
+<script src="js/rescate.js"></script>
+</head>
+<body>
+
+<aside class="propuesta" aria-label="Aviso de propuesta">
+  <div class="ancho propuesta__in">
+    <p class="propuesta__q">Propuesta de sitio web — preparada para <b>VIPACAR Electricidad Automotriz</b> por CristalWeb</p>
+    <p class="propuesta__d">La electricidad automotriz es <b>un servicio de urgencia</b>: el que busca ya está en problemas y decide en dos minutos. Una ficha de Google no alcanza para ganar esos dos minutos.</p>
+  </div>
+</aside>
+
+<header class="cab" id="cab">
+  <div class="ancho cab__in">
+    <a class="cab__marca" href="#inicio" aria-label="VIPACAR, inicio">
+      <!-- Cabecera 170a — EL CLIC: tres marcas verticales que se van
+           achicando. Es el sonido con el que empieza la pagina, y no
+           hay ningun SONIDO dibujado en las 203 anteriores.
+           NO es una bateria a proposito: taller-electrico-sandoval
+           (Villarrica) es del mismo rubro y ya tiene el borne como
+           objeto. El deslinde completo esta en el CSS. -->
+      <span class="clic" aria-hidden="true">
+        <span></span><span></span><span></span>
+      </span>
+      <span class="cab__txt">VIPACAR<span class="cab__sub">Electricidad automotriz · Pitrufquén</span></span>
+    </a>
+    <nav class="cab__nav" aria-label="Secciones">
+      <a href="#ruido">El ruido que hace</a>
+      <a href="#revisar">Qué puede revisar</a>
+      <a class="cab__tel" href="tel:+56983310378">9 8331 0378</a>
+    </nav>
+  </div>
+</header>
+
+<main id="inicio">
+
+<!-- ══ PORTADA ════════════════════════════════════════════════════ -->
+<section class="portada" aria-labelledby="t-portada">
+  <div class="portada__foto" aria-hidden="true">
+    <img src="imagenes/fondo-01.jpg" alt="" width="2400" height="1800" fetchpriority="high" decoding="async">
+  </div>
+  <!-- Ambiente: LA CORRIENTE. Cuatro lineas horizontales muy tenues y
+       un tramo brillante que las recorre de izquierda a derecha, como
+       la corriente pasando por el arnes. CSS puro, sin JS. -->
+  <div class="amb amb--corriente" aria-hidden="true">
+    <span class="amb__l"></span><span class="amb__l"></span>
+    <span class="amb__l"></span><span class="amb__l"></span>
+  </div>
+  <div class="ancho portada__in">
+    <p class="rotulo">Pitrufquén · Región de La Araucanía</p>
+    <h1 id="t-portada" class="portada__h1">No parte.</h1>
+    <p class="portada__bajada">Y ahí empieza el problema de siempre: <b>casi todo el mundo cambia la batería</b>. A veces era eso. Muchas veces era el alternador, y la batería nueva se descarga igual en dos días. Esta página parte por lo único que se puede saber sin abrir nada: <b>el ruido que hace al girar la llave</b>.</p>
+    <p class="portada__pie">
+      <a class="boton" href="#ruido">Qué ruido hace su auto</a>
+    </p>
+  </div>
+</section>
+
+<!-- ══ PIEZA FIRMA — EL RUIDO ════════════════════════════════════ -->
+<section class="ruido" id="ruido" aria-labelledby="t-ruido">
+  <div class="ancho">
+    <p class="rotulo">01 — La pieza de esta página</p>
+    <h2 id="t-ruido" class="h2">El ruido dice<br>cuál de los tres es.</h2>
+    <p class="intro">Batería, alternador o motor de arranque. Son tres piezas distintas, cuestan distinto y se cambian distinto, <b>y desde afuera se parecen todas: el auto no parte</b>. Pero cada una falla con su propio sonido, y eso se puede escuchar desde el asiento sin herramientas y sin abrir el capó.</p>
+
+    <ol class="son" data-rev-grupo>
+      <li class="so">
+        <p class="so__q">«No hace ningún ruido, ni prende una luz»</p>
+        <p class="so__a">Batería completamente descargada, o un borne suelto o sulfatado. Es el caso más común y también el más barato de los tres, si es sólo el contacto.</p>
+      </li>
+      <li class="so">
+        <p class="so__q">«Las luces prenden, pero al girar la llave se apaga todo»</p>
+        <p class="so__a">La batería tiene carga para las luces y no para el arranque, que es lo que más consume. Batería en las últimas, o un borne que no está haciendo buen contacto.</p>
+      </li>
+      <li class="so">
+        <p class="so__q">«Hace clic-clic-clic rápido y no gira»</p>
+        <p class="so__a">Falta corriente. El relé del arranque intenta pegar y suelta una y otra vez porque no le alcanza. <b>Casi siempre es la batería o el cable</b>, no el arranque.</p>
+      </li>
+      <li class="so">
+        <p class="so__q">«Un solo clic fuerte y después nada»</p>
+        <p class="so__a">Llegó corriente y el motor de arranque no giró. <b>Acá sí apunta al arranque</b> — o a su relé—, y es el caso que más se confunde con batería.</p>
+      </li>
+      <li class="so">
+        <p class="so__q">«Gira lento, como cansado, y al final parte»</p>
+        <p class="so__a">La batería está al final de su vida, o hace tiempo que no se está cargando bien. Anda hoy y un día no anda: es la señal más clara de que conviene revisar antes de quedarse.</p>
+      </li>
+      <li class="so destacado">
+        <p class="so__q">«Parte con ayuda y a los minutos se apaga sola»</p>
+        <p class="so__a"><b>Éste es el alternador.</b> Si además la luz de la batería queda prendida andando, más todavía. El auto está funcionando con lo poco que quedaba en la batería, y cuando se acaba se apaga. <b>Cambiar la batería acá es el gasto más repetido del rubro</b>: la nueva se descarga igual en dos días.</p>
+      </li>
+    </ol>
+    <p class="nota">Esto es <b>conocimiento general del oficio, escrito por mí</b>, y sirve para orientar una llamada — no para diagnosticar. Un mismo síntoma puede tener más de una causa, y hay fallas que se parecen a éstas y son otra cosa. <b>Nada de acá pide desarmar, puentear ni tocar nada</b>: todo se escucha desde el asiento.</p>
+  </div>
+</section>
+
+<!-- ══ CITA ═══════════════════════════════════════════════════════ -->
+<section class="cita" aria-label="Por qué avisa">
+  <img src="imagenes/banda-01.jpg" alt="" width="1800" height="1200" loading="lazy" decoding="async">
+  <div class="ancho cita__txt">
+    <p>La batería casi nunca avisa.<br>El ruido que hace, sí.</p>
+  </div>
+</section>
+
+<!-- ══ QUÉ PUEDE REVISAR ══════════════════════════════════════════ -->
+<section class="revisar" id="revisar" aria-labelledby="t-revisar">
+  <div class="ancho">
+    <p class="rotulo">02 — Sin herramientas y sin riesgo</p>
+    <h2 id="t-revisar" class="h2">Lo que sí puede mirar<br>antes de llamar.</h2>
+    <p class="intro">Cuatro cosas, todas a simple vista, todas con el motor apagado. <b>Con estas cuatro respuestas, media consulta se resuelve por teléfono</b> y la otra media llega con la mitad del trabajo hecho.</p>
+
+    <div class="chk" data-rev-grupo>
+      <article class="ck"><h3>Los bornes</h3><p>Si están cubiertos de un polvo blanco o verde, eso es sulfato y hace de aislante: la corriente no pasa aunque la batería tenga carga. <b>Se ve a simple vista</b> y explica muchísimas «baterías malas» que no lo eran.</p></article>
+      <article class="ck"><h3>Los cables</h3><p>Que estén firmes. Un borne flojo hace exactamente los mismos síntomas que una batería agotada, y es lo primero que revisa cualquier eléctrico.</p></article>
+      <article class="ck"><h3>Las luces al girar la llave</h3><p>Si se atenúan mucho o se apagan del todo, hay caída de tensión. Si quedan iguales y no pasa nada, el problema está más adelante. Es el dato que más orienta.</p></article>
+      <article class="ck"><h3>Si quedó algo prendido</h3><p>Una luz interior, la de la maleta, un cargador. Una noche basta. Antes de comprar nada, vale la pena descartar lo simple.</p></article>
+    </div>
+    <p class="mini"><b>De ahí en adelante, mejor no seguir.</b> El sistema eléctrico de un auto moderno tiene puntos donde una prueba mal hecha cuesta una computadora, y no vale la pena. Esta página no explica cómo puentear nada ni cómo probar nada con el motor andando, a propósito.</p>
+  </div>
+</section>
+
+<!-- ══ TAJO ═══════════════════════════════════════════════════════ -->
+<figure class="tajo">
+  <img src="imagenes/tajo-01.jpg" alt="" width="2000" height="1334" loading="lazy" decoding="async">
+  <figcaption class="ancho tajo__txt">
+    <p class="rotulo">Cuándo pasa siempre</p>
+    <p class="tajo__f">De noche, con frío, y cuando hay que salir temprano.</p>
+  </figcaption>
+</figure>
+
+<!-- ══ QUÉ HACE UN ELÉCTRICO ══════════════════════════════════════ -->
+<section class="mitades" aria-labelledby="t-que">
+  <div class="mitades__foto">
+    <img src="imagenes/media-01.jpg" alt="Banco de trabajo de taller" width="1700" height="1136" loading="lazy" decoding="async">
+  </div>
+  <div class="mitades__txt">
+    <p class="rotulo">03 — Otro oficio, no otro taller</p>
+    <h2 id="t-que" class="h2 h2--chico">Un eléctrico<br>no es un mecánico.</h2>
+    <p>Se parecen desde afuera y son dos trabajos distintos. <b>Un taller general repara lo que se mueve; un eléctrico repara lo que circula</b>, y las dos cosas fallan de manera completamente distinta: una hace ruido, la otra no hace nada.</p>
+    <p>Y hay un tercer trabajo que casi nadie asocia con el rubro y es la mitad del volumen: <b>instalar cosas nuevas sin arruinar la instalación original</b>.</p>
+    <ul class="lista">
+      <li><b>Alternador y motor de arranque</b> — prueba, reparación y cambio</li>
+      <li><b>Diagnóstico de consumo</b> — la batería que se descarga sola</li>
+      <li><b>Arnés y cortocircuitos</b> — fusibles que se queman y nadie sabe por qué</li>
+      <li><b>Luces, tablero y testigos</b></li>
+      <li><b>Cierre centralizado y alarmas</b></li>
+      <li><b>Instalación de accesorios</b> — radio, focos, GPS, cámara</li>
+    </ul>
+    <p class="mini"><span class="ej" data-ejemplo>Lista de ejemplo</span> de lo que suele cubrir una electricidad automotriz. <b>Qué hace VIPACAR de verdad, en qué marcas y si va a terreno, lo completa el negocio</b>: está armada y vacía a propósito.</p>
+  </div>
+</section>
+
+<!-- ══ MOSAICO ════════════════════════════════════════════════════ -->
+<section class="mos" aria-labelledby="t-mos">
+  <div class="ancho">
+    <p class="rotulo">04 — Lo que se revisa</p>
+    <h2 id="t-mos" class="h2 h2--chico">Todo lo que anda<br>y no se ve.</h2>
+  </div>
+  <div class="mos__grilla" data-rev-grupo>
+    <figure class="mos__p"><img src="imagenes/mos-01.jpg" alt="Alternador montado en el motor" width="1200" height="900" loading="lazy" decoding="async"></figure>
+    <figure class="mos__p"><img src="imagenes/mos-02.jpg" alt="Multímetro con sus puntas" width="1200" height="900" loading="lazy" decoding="async"></figure>
+    <figure class="mos__p"><img src="imagenes/mos-03.jpg" alt="Control de clima encendido" width="1200" height="798" loading="lazy" decoding="async"></figure>
+    <figure class="mos__p"><img src="imagenes/mos-04.jpg" alt="Alternador desmontado" width="1200" height="900" loading="lazy" decoding="async"></figure>
+    <figure class="mos__p"><img src="imagenes/mos-05.jpg" alt="Tablero encendido" width="1200" height="800" loading="lazy" decoding="async"></figure>
+    <figure class="mos__p"><img src="imagenes/mos-06.jpg" alt="Batería junto al motor" width="1200" height="800" loading="lazy" decoding="async"></figure>
+  </div>
+</section>
+
+<!-- ══ CONTACTO ═══════════════════════════════════════════════════ -->
+<section class="contacto con-telon" id="contacto" aria-labelledby="t-contacto">
+  <div class="telon" aria-hidden="true">
+    <img src="imagenes/telon-01.jpg" alt="" width="1200" height="800" loading="lazy" decoding="async">
+  </div>
+  <div class="ancho">
+    <p class="rotulo">05 — Contacto</p>
+    <h2 id="t-contacto" class="h2">Llamar.</h2>
+    <p class="contacto__num"><a href="tel:+56983310378">+56 9 8331 0378</a></p>
+
+    <div class="antes">
+      <p class="antes__t">Dos datos y la llamada rinde el doble</p>
+      <p class="antes__l"><span>1</span> ¿Prenden las luces?</p>
+      <p class="antes__l"><span>2</span> ¿Qué ruido hace al girar la llave?</p>
+      <p class="antes__p">Con eso se sabe si es un caso de ir a buscar el auto o de que usted pueda llegar solo hasta el taller.</p>
+    </div>
+
+    <dl class="datos">
+      <div><dt>Base</dt><dd>Pitrufquén, Región de La Araucanía</dd></div>
+      <div><dt>Dirección exacta</dt><dd class="falta">falta — no está publicada</dd></div>
+      <div><dt>Horario</dt><dd class="falta">falta — y es el dato más urgente</dd></div>
+      <div><dt>¿Atiende urgencias?</dt><dd class="falta">falta — hay que confirmarlo</dd></div>
+      <div><dt>¿Va a terreno?</dt><dd class="falta">falta — y hasta dónde</dd></div>
+      <div><dt>Marcas o años</dt><dd class="falta">falta — si hay alguna limitación</dd></div>
+    </dl>
+    <p class="mini">Las cinco líneas en cursiva son las que hay que llenar antes de publicar. <b>El horario es la más importante de toda la página</b>: en un rubro de urgencia, saber hasta qué hora se atiende decide a quién llama la persona que está parada en la calle.</p>
+  </div>
+</section>
+
+</main>
+
+<section class="dueno" aria-labelledby="t-dueno">
+  <div class="ancho">
+    <p class="rotulo">Para el dueño de VIPACAR</p>
+    <h2 id="t-dueno" class="h2 h2--chico">Por qué le preparé esto.</h2>
+    <div class="dueno__cols">
+      <div>
+        <h3>Lo que encontré, verificado el 02-09-2026</h3>
+        <ul class="lista lista--marca">
+          <li>Ficha de Google <b>sin sitio web</b>.</li>
+          <li><b>16 reseñas</b> en Pitrufquén. La nota no aparece en la página: lo que vende acá es el volumen y que lo encuentren rápido.</li>
+          <li>Teléfono publicado en la ficha.</li>
+        </ul>
+      </div>
+      <div>
+        <h3>Su cliente está apurado y asustado</h3>
+        <p>Nadie busca «electricidad automotriz» de paseo. <b>Busca con el auto parado</b>, muchas veces en la calle, y elige en dos minutos entre las tres primeras opciones que le salgan.</p>
+        <p>En esos dos minutos gana el que contesta tres preguntas: dónde está, hasta qué hora atiende y si esto se puede resolver. La página contesta las tres <b>y además le da algo que ningún competidor de la zona le da: una forma de entender qué le pasa</b>. Eso es lo que hace que después lo recomienden.</p>
+      </div>
+    </div>
+
+    <h3>Qué es de verdad y qué es ejemplo en esta demo</h3>
+    <ul class="lista">
+      <li><b>De verdad:</b> el teléfono, la base en Pitrufquén y las 16 reseñas. De su ficha de Google, verificados el 02-09-2026.</li>
+      <li><b>Conocimiento general del oficio, escrito por mí:</b> los seis ruidos y las cuatro cosas que puede mirar el cliente. <b>Orientan una llamada, no diagnostican</b>, y la página lo dice.</li>
+      <li><b>Ejemplo:</b> la lista de servicios. Está armada y vacía para que la complete usted.</li>
+      <li><b>Lo que la página NO explica, a propósito:</b> cómo puentear, cómo probar con el motor andando ni cómo desarmar nada. Todo lo que se propone se hace con el motor apagado y sin herramientas — un error ahí cuesta una computadora, y una demo no puede mandar a nadie a eso.</li>
+      <li><b>No hay ni un precio ni un plazo</b>: dependen del auto y del repuesto.</li>
+      <li><b>Falta, y es urgente:</b> el horario. En un rubro de urgencia es el dato que decide la llamada.</li>
+      <li><b>Falta:</b> fotos suyas — del taller, del banco de pruebas, de un alternador abierto. Ninguna imagen de esta página es de su taller.</li>
+    </ul>
+
+    <p class="dueno__cierre">
+      <a class="boton boton--fuerte" href="https://wa.me/56968650001">Escríbame por WhatsApp</a>
+      <a class="flecha" href="../../">Ver otros trabajos <span aria-hidden="true">→</span></a>
+    </p>
+  </div>
+</section>
+
+<footer class="pie">
+  <div class="ancho pie__in">
+    <p>Demostración sin encargo, preparada por <b>CristalWeb</b> — desarrollo web en Loncoche.<br>Las fotografías son de bancos de uso libre y no corresponden al taller ni a los trabajos de VIPACAR.</p>
+    <p class="pie__leg">Página con fines comerciales. <b>Lo que se explica sobre síntomas eléctricos es orientación general y no reemplaza un diagnóstico</b>: un mismo ruido puede tener más de una causa. Esta página no contiene procedimientos de puenteo, prueba con motor en marcha ni desarme, y todo lo que propone revisar se hace con el motor apagado.</p>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>

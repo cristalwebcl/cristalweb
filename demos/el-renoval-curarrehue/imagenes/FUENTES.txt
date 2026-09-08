@@ -1,0 +1,52 @@
+PROCEDENCIA DE LAS IMÁGENES — El Renoval, café y restaurante, Curarrehue
+════════════════════════════════════════════════════════════════
+
+DEL NEGOCIO — seis fotos Y EL LOGO. De su ficha y su Facebook.
+
+gal-03.jpg    1300x1300  EL LOGO — círculo negro, una montaña y tres
+                         árboles, con el nombre arriba
+media-01.jpg  1500x1058  la fachada de frente, con el toldo levantado
+gal-01.jpg    1200x1600  la fachada con el letrero y los banderines
+gal-02.jpg    1300x917   las mesas en la vereda, con el cerro detrás
+tira-01.jpg   1000x973   chocolate, café y sopaipillas
+tira-02.jpg   1000x706   café y sándwich en la vereda
+tira-03.jpg   1000x706   cheesecake con frutillas
+
+Bajadas desde la copia cacheada del buscador, techo 1600 px: por eso
+ninguna ocupa pantalla completa. Van a media pantalla, tira y galería.
+
+**El logo es el hallazgo.** Está bien hecho —una montaña y tres
+árboles en un círculo— y dice dónde está el café sin escribirlo. No
+aparece en su ficha de Google.
+
+TRES HOMÓNIMOS DESCARTADOS: un «Instituto de Rehabilitación en Salud
+Mental Renoval» y dos de «RÉNOVAL», un fabricante francés de
+verandas. El buscador los mezcla.
+
+────────────────────────────────────────────────────────────────
+GENÉRICAS — dos archivos, tres usos. Ambas de granos de café.
+
+port-01.jpg  2560x1707  granos tostados, luz cálida
+  pxhere · dominio público (CC0)
+  https://get.pxhere.com/photo/cafe-coffee-aroma-food-produce-macro-brown-drink-close-ornament-caffeine-roasting-beans-gastronomy-beverages-flavor-roasted-coffee-beans-good-morning-coffee-roasting-stimulant-633541.jpg
+  original 3888x2592
+
+aura-01.jpg   900x666   granos oscuros (va a 64 px de desenfoque:
+                        sólo aporta el marrón de la paleta)
+cita-01.jpg  2560x1895  los mismos granos, a tamaño de cita
+  pxhere · dominio público (CC0)
+  https://get.pxhere.com/photo/cafe-coffee-black-and-white-dark-food-produce-black-espresso-caffeine-beans-roasted-sunflower-seed-822933.jpg
+  original 3200x2368
+
+Son textura, no inventario: no prometen ninguna carta ni ningún
+producto que el negocio no tenga. Todo lo que se sirve en la página
+—el chocolate, el sándwich, el cheesecake— es de sus propias fotos.
+
+────────────────────────────────────────────────────────────────
+LO QUE FALTA
+
+1. **La carta escrita**, con precios. Es lo que más se busca de un café
+   y lo que menos publican: hoy hay que entrar para saber cuánto sale.
+2. El salón por dentro con luz de tarde.
+3. El horario de invierno y el de verano, por escrito. Curarrehue vive
+   del paso a la frontera y el que va manejando decide si para o no.

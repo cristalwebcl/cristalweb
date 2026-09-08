@@ -1,0 +1,35 @@
+FOTOGRAFÍAS — 193 · INGECAR (Pitrufquén)
+Bajadas con FotoRadar el 02-09-2026. Todas de bancos de uso libre.
+NINGUNA es del taller real, y así se dice en el pie de la página.
+
+fondo-01.jpg  2400x1600  images.pexels.com  Manos con llave sobre un motor.
+                                            PORTADA. Sin caras, el oficio puro,
+                                            y masa oscura sobre página clara —
+                                            la luminancia opuesta que pide la
+                                            regla.
+banda-01.jpg  2200x1467  get.pxhere.com     Mecánico bajo un vehículo, blanco y
+                                            negro. CITA.
+tajo-01.jpg   2200x1467  images.pexels.com  Motor cromado en detalle. TAJO.
+telon-01.jpg  1200x800   images.pexels.com  Revisión bajo el capó. TELÓN 15%.
+media-01.jpg  1800x1200  images.pexels.com  Trabajo en el vano motor. MITADES.
+mos-01.jpg    1200x803   images.pexels.com  Motor a la vista.
+mos-02.jpg    1200x800   images.pexels.com  Llave sobre el motor (portada, otro
+                                            recorte).
+mos-03.jpg    1200x800   images.pexels.com  Detalle mecánico (tajo, otro recorte).
+mos-04.jpg    1200x800   images.pexels.com  Bajo el capó (telón, otro recorte).
+mos-05.jpg    1200x800   get.pxhere.com     Bajo el vehículo (cita, otro recorte).
+mos-06.jpg    1200x800   images.pexels.com  Mantención (mitades, otro recorte).
+
+DESCARTADAS Y POR QUÉ
+· Un taller con carteles y logos de marcas de repuestos perfectamente
+  legibles en la pared: marcas de terceros, y además atribuye a INGECAR
+  una representación que no se sabe si tiene.
+· Un taller de autos antiguos de colección: no calza con un taller que
+  trabaja con scanner.
+· Tres fotos de estelas de luces en carretera de noche. Se descartaron
+  por una razón que no es de contenido sino de tanda: **ese mismo
+  imaginario ya se usó en la demo 188 (Grúas Alan)**, y dos demos de la
+  misma tanda no pueden compartir la misma imagen de carretera nocturna.
+
+FILTROS APLICADOS: sin marcas legibles, sin menores, sin precios, sin
+plus.unsplash, sin patentes legibles.

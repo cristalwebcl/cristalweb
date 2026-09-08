@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="es-CL" class="no-js">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>XpertKine — kinesiología, Temuco</title>
+<meta name="description" content="Kinesiología en Temuco. Cuántas sesiones toma cada lesión frecuente y por qué importan los ejercicios en casa.">
+
+<!-- ═══════════════════════════════════════════════════════════════
+     RESCATE DE LA CLASE .js — regla 2 de la casa.
+     El script inline (sin defer) marca .js para que el CSS pueda
+     esconder lo que va a animarse. El temporizador de 4 s la quita
+     si main.js nunca llega: sin él, un error de red dejaría media
+     página invisible para siempre.
+     ═══════════════════════════════════════════════════════════════ -->
+<script>
+  (function () {
+    var d = document.documentElement;
+    d.classList.remove('no-js');
+    d.classList.add('js');
+    window.__rescate = setTimeout(function () { d.classList.remove('js'); }, 4000);
+  })();
+</script>
+
+<!-- Fuentes propias: cero peticiones a terceros. El preload va SOLO
+     para la display, que es la del titular de la portada. -->
+<link rel="preload" href="assets/fuentes/quando-400-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="assets/fuentes.css">
+<link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+
+<div class="propuesta">
+  <p class="propuesta__que">Propuesta de sitio web — preparada para <b>XpertKine</b> por CristalWeb</p>
+  <p class="propuesta__gancho">La kinesiología se busca en Google con el dolor encima —«kine temuco lumbago»— y XpertKine no aparece en ninguna parte.</p>
+</div>
+
+<header class="cab" id="cab">
+  <a class="cab__marca" href="#portada">
+    <span class="banda" aria-hidden="true"></span>
+    <span class="cab__nombre">XpertKine</span>
+  </a>
+  <nav class="cab__nav" aria-label="Secciones">
+    <a href="#sesiones">¿Cuántas sesiones?</a>
+    <a href="#casa">La tarea para la casa</a>
+  </nav>
+  <a class="cab__wsp" href="#evaluar">
+    <span class="cab__wsp-rot">Temuco</span>
+    <span class="cab__wsp-num">Evaluar su caso</span>
+  </a>
+</header>
+
+<main>
+
+<!-- ═════════ PORTADA ═════════ -->
+<section class="portada portada--foto" id="portada" aria-labelledby="t-portada">
+  <!-- FONDO DE PORTADA: 2560 px, nitido. Se disuelve hacia el titular
+       con un gradiente lateral, no con desenfoque. -->
+  <div class="portada__foto" aria-hidden="true">
+    <img src="imagenes/port-01.jpg" width="2560" height="1707"
+         decoding="async" fetchpriority="high" alt="">
+  </div>
+
+  <div class="elastico" aria-hidden="true"><span></span></div>
+  <div class="portada__texto">
+    <p class="sitio">Kinesiología · Temuco</p>
+    <h1 id="t-portada">¿Cuántas<br>sesiones toma?</h1>
+    <p class="bajada">Es la primera pregunta y casi nadie la contesta antes de la
+      evaluación. Acá están los rangos honestos, con lo que de verdad depende de cada
+      caso dicho de frente.</p>
+  </div>
+</section>
+
+<!-- ═════════ LA PIEZA FIRMA — LA TABLA (C) ═════════ -->
+<section class="tabla con-telon" id="sesiones" aria-labelledby="t-tabla">
+  <div class="telon" aria-hidden="true">
+    <img src="imagenes/telon-01.jpg" width="1200" height="800" decoding="async" alt="">
+  </div>
+
+  <!-- AURA DE COLOR: la foto de rubro reventada a desenfoque. No se lee
+       como imagen: aporta color y luz detras de una seccion que si no
+       seria fondo plano. Aca el desenfoque SI es el efecto, no un parche,
+       y por eso el archivo va chico: a 64 px de blur, mas resolucion no
+       cambia nada. Sin loading=lazy porque el elemento va en absoluto con
+       z-index negativo y el navegador nunca lo considera visible. -->
+  <div class="aura" aria-hidden="true">
+    <img src="imagenes/aura-01.jpg" width="900" height="600" decoding="async" alt="">
+  </div>
+
+  <div class="tabla__cabecera">
+    <p class="antetitulo">Rangos de referencia</p>
+    <h2 id="t-tabla">Lo que toma<br>cada cosa</h2>
+    <p>Rangos generales para lesiones frecuentes. No son una promesa ni un
+      presupuesto: son el orden de magnitud, para que nadie llegue pensando que con
+      una sesión se arregla ni que va a estar seis meses viniendo.</p>
+    <p class="marca-ejemplo" data-ejemplo="Rangos generales del rubro — el plan de su caso lo define la evaluación"></p>
+  </div>
+
+  <ol class="lesiones">
+    <li class="lesion">
+      <div class="lesion__txt">
+        <h3>Esguince de tobillo</h3>
+        <p>Se trabaja primero el dolor y la inflamación, después la movilidad y al
+          final el equilibrio. Esa última parte es la que evita el segundo esguince,
+          y es la que más se salta la gente cuando ya no le duele.</p>
+      </div>
+      <p class="lesion__n"><span>6–10</span> sesiones</p>
+    </li>
+    <li class="lesion">
+      <div class="lesion__txt">
+        <h3>Lumbago</h3>
+        <p>Las primeras sesiones apuntan a bajar el dolor y volver a moverse; el resto
+          es fuerza y hábito. Un lumbago que se trató sólo con reposo suele volver
+          antes del año.</p>
+      </div>
+      <p class="lesion__n"><span>8–12</span> sesiones</p>
+    </li>
+    <li class="lesion">
+      <div class="lesion__txt">
+        <h3>Tendinitis de hombro</h3>
+        <p>Es de las que más paciencia pide: el tendón responde despacio y hay que
+          respetar cargas. Apurarla es la forma más rápida de empezar de nuevo.</p>
+      </div>
+      <p class="lesion__n"><span>10–15</span> sesiones</p>
+    </li>
+    <li class="lesion">
+      <div class="lesion__txt">
+        <h3>Después del yeso</h3>
+        <p>Sale una articulación dura y un músculo dormido. El trabajo es recuperar
+          rango primero y fuerza después, en ese orden y sin saltarse pasos.</p>
+      </div>
+      <p class="lesion__n"><span>8–16</span> sesiones</p>
+    </li>
+    <li class="lesion">
+      <div class="lesion__txt">
+        <h3>Rodilla operada</h3>
+        <p>El plazo lo marca el protocolo del cirujano, no el kinesiólogo. Acá el
+          rango es más ancho que en cualquier otra: depende de la operación.</p>
+      </div>
+      <p class="lesion__n"><span class="falta">según protocolo</span></p>
+    </li>
+  </ol>
+
+  <div class="depende">
+    <h3>De qué depende de verdad</h3>
+    <ul>
+      <li>Cuánto tiempo lleva con la molestia antes de consultar.</li>
+      <li>Si hay una lesión anterior en la misma zona.</li>
+      <li>El trabajo que hace y cuánto puede modificarlo mientras tanto.</li>
+      <li>Y lo más determinante: si hace o no los ejercicios en la casa.</li>
+    </ul>
+  </div>
+
+  <p class="firma">Rangos orientativos de referencia general. El diagnóstico, el plan
+    y la cantidad de sesiones de su caso los determina el kinesiólogo tratante en la
+    evaluación.</p>
+</section>
+
+<!-- ═════════ LA TAREA PARA LA CASA ═════════ -->
+<!-- ========= MEDIA PANTALLA ========= -->
+<section class="mitades" aria-labelledby="t-mitades">
+  <div class="mitades__foto">
+    <img src="imagenes/media-01.jpg" width="1500" height="2250"
+         loading="lazy" decoding="async" alt="">
+  </div>
+  <div class="mitades__texto">
+    <p class="mitades__ante">Dónde ocurre de verdad la rehabilitación</p>
+    <h2 id="t-mitades">La escalera de la casa es el mejor equipamiento</h2>
+    <p>Rehabilitar en el box es cómodo para el kinesiólogo; rehabilitar donde la persona vive es lo que sirve. La escalera que sube todos los días, el sillón del que le cuesta levantarse, el pasillo que camina hasta la cocina: los ejercicios armados con eso se siguen haciendo cuando el kinesiólogo se va. Y eso —no el número de sesiones— es lo que decide si el alta llega o no.</p>
+  </div>
+</section>
+
+
+
+<!-- ========= TAJO — FRANJA A SANGRE ========= -->
+<div class="tajo" aria-hidden="true">
+  <img src="imagenes/banda-01.jpg" width="1500" height="1000"
+       loading="lazy" decoding="async" alt="">
+</div>
+<section class="casa" id="casa" aria-labelledby="t-casa">
+  <div class="casa__cuerpo">
+    <p class="antetitulo antetitulo--claro">Lo que nadie quiere escuchar</p>
+    <h2 id="t-casa">La mitad del resultado<br>pasa en su casa</h2>
+    <p class="entrada">Una sesión son cuarenta minutos a la semana; el resto de la
+      semana son ciento sesenta y ocho horas. Lo que pasa en esas horas decide tanto
+      como lo que pasa en la camilla.</p>
+
+    <dl class="claves">
+      <div class="clave">
+        <dt>Poco y todos los días</dt>
+        <dd>Diez minutos diarios rinden más que una hora el domingo. El tejido
+          responde a la repetición, no al esfuerzo puntual.</dd>
+      </div>
+      <div class="clave">
+        <dt>Si duele distinto, se avisa</dt>
+        <dd>Molestia muscular al día siguiente es normal; dolor agudo en la
+          articulación no. Esa diferencia hay que preguntarla, no adivinarla.</dd>
+      </div>
+      <div class="clave">
+        <dt>Dejar de dolerse no es estar sano</dt>
+        <dd>El dolor se va antes de que la fuerza vuelva. Abandonar ahí es la causa
+          más común de recaída, y la recaída empieza de cero.</dd>
+      </div>
+      <div class="clave">
+        <dt>Los ejercicios se anotan</dt>
+        <dd>Escritos o filmados en el celular, con las repeticiones. Nadie se acuerda
+          de cuatro ejercicios el jueves.</dd>
+      </div>
+    </dl>
+
+    <p class="firma firma--claro">Orientación general de rehabilitación. Los ejercicios
+      que le corresponden a usted se los indica su kinesiólogo.</p>
+
+    <div class="evaluar" id="evaluar">
+      <p class="evaluar__rot">Primero se evalúa, después se dice cuánto</p>
+      <a class="flecha flecha--grande" href="#evaluar">Evalúe su caso <span aria-hidden="true">→</span></a>
+      <p class="evaluar__nota"><span class="falta">falta: el número, la dirección y el horario</span> — su ficha no publica ninguno, así que el enlace no apunta a nada todavía: no se inventa un canal de contacto en una página de salud.</p>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ========= LA CITA A SANGRE ========= -->
+<section class="cita" aria-labelledby="t-cita">
+  <div class="cita__foto" aria-hidden="true">
+    <img src="imagenes/cita-01.jpg" width="2400" height="1600"
+         loading="lazy" decoding="async" alt="">
+  </div>
+  <blockquote class="cita__texto">
+    <p id="t-cita">El rango se dice antes, no después de evaluar<br>
+      <span class="cita__eco">Aunque el número final dependa del caso</span></p>
+  </blockquote>
+</section>
+
+
+
+<!-- ========= LA TIRA ========= -->
+<section class="tira" aria-label="Tres imágenes del oficio">
+  <figure class="tira__pieza">
+    <img src="imagenes/tira-01.jpg" width="1000" height="667" loading="lazy" decoding="async" alt="Un kinesiólogo asistiendo un ejercicio con banda elástica.">
+  </figure>
+  <figure class="tira__pieza">
+    <img src="imagenes/tirb-01.jpg" width="1000" height="1500" loading="lazy" decoding="async" alt="Una escalera de casa con su pasamanos de madera.">
+  </figure>
+  <figure class="tira__pieza">
+    <img src="imagenes/tirc-01.jpg" width="1000" height="667" loading="lazy" decoding="async" alt="El piso de madera de una habitación con la luz de la ventana.">
+  </figure>
+</section>
+
+
+
+<!-- ========= MOSAICO ========= -->
+<section class="mos" aria-labelledby="t-mos">
+  <h2 id="t-mos" class="mos__titulo">La misma serie, más de cerca</h2>
+  <p class="mos__nota">Son tres fotos y vuelven en distintos tamaños. Con material tan escaso —de este negocio no hay una sola imagen propia— es preferible una serie coherente que rellenar con fotos de rubro que no dicen nada. Todo está declarado en imagenes/FUENTES.txt.</p>
+  <div class="mos__grilla">
+    <figure class="mos__p">
+      <img src="imagenes/mos-01.jpg" width="780" height="1170"
+           loading="lazy" decoding="async" alt="">
+    </figure>
+    <figure class="mos__p">
+      <img src="imagenes/mos-02.jpg" width="780" height="520"
+           loading="lazy" decoding="async" alt="">
+    </figure>
+    <figure class="mos__p">
+      <img src="imagenes/mos-03.jpg" width="780" height="1170"
+           loading="lazy" decoding="async" alt="">
+    </figure>
+    <figure class="mos__p">
+      <img src="imagenes/mos-04.jpg" width="780" height="520"
+           loading="lazy" decoding="async" alt="">
+    </figure>
+    <figure class="mos__p">
+      <img src="imagenes/mos-05.jpg" width="780" height="520"
+           loading="lazy" decoding="async" alt="">
+    </figure>
+    <figure class="mos__p">
+      <img src="imagenes/mos-06.jpg" width="780" height="520"
+           loading="lazy" decoding="async" alt="">
+    </figure>
+  </div>
+</section>
+<section class="dueno" aria-labelledby="t-dueno">
+  <h2 id="t-dueno">Para el dueño</h2>
+  <div class="dueno__cols">
+    <div>
+      <h3>Lo que está verificado</h3>
+      <p>Las 74 reseñas de su ficha de Google y que no tiene página ni teléfono
+        publicado.</p>
+    </div>
+    <div>
+      <h3>Lo que es de ejemplo</h3>
+      <p>Los rangos de sesiones: referencia general del rubro, escritos con la
+        leyenda de que dependen de la evaluación. Los ajusta usted antes de publicar.</p>
+    </div>
+    <div>
+      <h3>Lo que falta</h3>
+      <p>El número, la dirección, el horario, si atiende convenios y el nombre y
+        registro del profesional. En salud eso no es opcional.</p>
+    </div>
+  </div>
+  <p class="dueno__cierre">
+    <a class="flecha" href="https://wa.me/56968650001" rel="noopener">Escribirme por WhatsApp <span aria-hidden="true">→</span></a>
+    <a class="flecha" href="../../" rel="noopener">Ver otros trabajos <span aria-hidden="true">→</span></a>
+  </p>
+</section>
+
+<footer class="pie">
+  <p>Sitio de demostración preparado por CristalWeb. El negocio no lo ha encargado ni
+    ha revisado su contenido. La información de esta página es orientación general y no
+    reemplaza la evaluación de un profesional de la salud.</p>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="es-CL" class="no-js">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Muna Kume Iyael — restaurante, Curarrehue</title>
+<meta name="description" content="Restaurante en Curarrehue. Qué es cada ingrediente de la carta, a qué sabe y en qué época del año se puede probar.">
+
+<!-- Política de seguridad de contenido: el navegador sólo puede cargar
+     archivos de este mismo sitio. Sin CDN, sin librerías, sin rastreadores.
+     Ver skills/web-blindada/references/csp-en-pages.md -->
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self'; img-src 'self' data:; font-src 'self'; connect-src 'self'; media-src 'self'; form-action 'self'; base-uri 'none'; frame-src 'none'; object-src 'none'">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+
+<!-- Rescate de la clase .js (regla 2 de la casa). En archivo, sin defer:
+     inline lo bloquearía la CSP. -->
+<script src="js/rescate.js"></script>
+
+<!-- Fuentes propias: cero peticiones a terceros. El preload va SOLO
+     para la display, que es la del titular de la portada. -->
+<link rel="preload" href="assets/fuentes/tienne-400-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="assets/fuentes.css">
+<link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+
+<div class="propuesta">
+  <p class="propuesta__que">Propuesta de sitio web — preparada para <b>Muna Kume Iyael</b> por CristalWeb</p>
+  <p class="propuesta__gancho">4,9 con 189 reseñas en la Aldea Intercultural de Curarrehue, y quien busca dónde comer en el pueblo no los encuentra en Google.</p>
+</div>
+
+<header class="cab" id="cab">
+  <a class="cab__marca" href="#portada">
+    <span class="pinon" aria-hidden="true"></span>
+    <span class="cab__nombre">Muna Kume Iyael</span>
+  </a>
+  <nav class="cab__nav" aria-label="Secciones">
+    <a href="#glosario">Los ingredientes</a>
+    <a href="#temporada">La temporada</a>
+  </nav>
+  <a class="cab__res" href="#reservar">
+    <span class="cab__res-rot">Curarrehue</span>
+    <span class="cab__res-num">Reservar</span>
+  </a>
+</header>
+
+<main>
+
+<!-- ========= PORTADA ========= -->
+<section class="portada portada--foto" id="portada" aria-labelledby="t-portada">
+  <!-- FONDO DE PORTADA: 2560 px, nitido. Se disuelve hacia el titular
+       con un gradiente lateral, no con desenfoque. -->
+  <div class="portada__foto" aria-hidden="true">
+    <img src="imagenes/port-01.jpg" width="2560" height="1920"
+         decoding="async" fetchpriority="high" alt="">
+  </div>
+
+
+  <!-- Dos ramas de araucaria, en sombra. Botánica, nada más. -->
+  <div class="ramas" aria-hidden="true">
+    <span class="rama rama--1"></span>
+    <span class="rama rama--2"></span>
+  </div>
+
+  <div class="portada__texto">
+    <p class="sitio">Restaurante · Curarrehue</p>
+    <h1 id="t-portada">Antes de<br>probarlo,<br>saber qué es</h1>
+    <p class="bajada">Piñón, changle, catuto, digüeñe. Media carta está escrita con
+      palabras que el que viene de afuera no conoce, y preguntar cada plato al
+      mesero corta la comida. Acá está explicado antes de sentarse.</p>
+    <dl class="specs">
+      <div class="spec"><dt>nota en Google</dt><dd>4,9</dd></div>
+      <div class="spec"><dt>reseñas</dt><dd>189</dd></div>
+    </dl>
+  </div>
+</section>
+
+<!-- ========= LA PIEZA FIRMA — ESTRUCTURA J ========= -->
+<section class="glosario con-telon" id="glosario" aria-labelledby="t-glosario">
+  <div class="telon" aria-hidden="true">
+    <img src="imagenes/telon-01.jpg" width="1200" height="900" decoding="async" alt="">
+  </div>
+
+  <!-- AURA DE COLOR: la foto de rubro reventada a desenfoque. No se lee
+       como imagen: aporta color y luz detras de una seccion que si no
+       seria fondo plano. Aca el desenfoque SI es el efecto, no un parche,
+       y por eso el archivo va chico: a 64 px de blur, mas resolucion no
+       cambia nada. Sin loading=lazy porque el elemento va en absoluto con
+       z-index negativo y el navegador nunca lo considera visible. -->
+  <div class="aura" aria-hidden="true">
+    <img src="imagenes/aura-01.jpg" width="900" height="675" decoding="async" alt="">
+  </div>
+
+  <div class="glosario__cabecera">
+    <p class="antetitulo">El glosario comestible</p>
+    <h2 id="t-glosario">El ingrediente<br>que no conoce</h2>
+    <p class="entrada">Cinco fichas. Qué es, a qué sabe, en qué plato aparece y en qué
+      época del año se puede probar. Nada de esto es secreto: es la despensa de la
+      zona, escrita para el que llega de afuera.</p>
+    <p class="marca-ejemplo" data-ejemplo="Referencia general de la cocina de la zona — la carta la define el local"></p>
+  </div>
+
+  <div class="fichas">
+
+    <!-- ── PIÑÓN ── -->
+    <article class="ficha">
+      <h3 class="ficha__n">Piñón</h3>
+      <dl class="ficha__specs">
+        <div class="sp"><dt>Qué es</dt><dd>La semilla de la araucaria. Se recoge del suelo del bosque cuando el árbol la suelta.</dd></div>
+        <div class="sp"><dt>Sabe a</dt><dd>Castaña. Harinoso, dulce suave, sin nada de picante.</dd></div>
+        <div class="sp"><dt>Aparece en</dt><dd>Cocido entero, en guiso, o molido como harina. <span class="falta">falta: confirmar en qué plato lo llevan ustedes</span></dd></div>
+        <div class="sp"><dt>Temporada</dt><dd>
+          <span class="cal" role="img" aria-label="Otoño">
+            <span class="m m--no">E</span><span class="m m--no">F</span><span class="m m--si">M</span><span class="m m--si">A</span><span class="m m--si">M</span><span class="m m--no">J</span><span class="m m--no">J</span><span class="m m--no">A</span><span class="m m--no">S</span><span class="m m--no">O</span><span class="m m--no">N</span><span class="m m--no">D</span>
+          </span>
+          <span class="cal__t">otoño · fresco. Seco o congelado, todo el año</span>
+        </dd></div>
+      </dl>
+    </article>
+
+    <!-- ── MERKÉN ── -->
+    <article class="ficha">
+      <h3 class="ficha__n">Merkén</h3>
+      <dl class="ficha__specs">
+        <div class="sp"><dt>Qué es</dt><dd>Ají cacho de cabra secado, ahumado y molido. A veces con cilantro y sal.</dd></div>
+        <div class="sp"><dt>Sabe a</dt><dd>Ahumado antes que picante. El humo es lo primero; el picor viene después y no quema.</dd></div>
+        <div class="sp"><dt>Aparece en</dt><dd>Casi todo. Es el condimento de la casa. <span class="falta">falta: confirmar si es de elaboración propia</span></dd></div>
+        <div class="sp"><dt>Temporada</dt><dd>
+          <span class="cal" role="img" aria-label="Todo el año">
+            <span class="m m--hay">E</span><span class="m m--hay">F</span><span class="m m--hay">M</span><span class="m m--hay">A</span><span class="m m--hay">M</span><span class="m m--hay">J</span><span class="m m--hay">J</span><span class="m m--hay">A</span><span class="m m--hay">S</span><span class="m m--hay">O</span><span class="m m--hay">N</span><span class="m m--hay">D</span>
+          </span>
+          <span class="cal__t">todo el año — es seco</span>
+        </dd></div>
+      </dl>
+    </article>
+
+    <!-- ── CATUTO ── -->
+    <article class="ficha">
+      <h3 class="ficha__n">Catuto</h3>
+      <dl class="ficha__specs">
+        <div class="sp"><dt>Qué es</dt><dd>Trigo cocido y molido, amasado en forma de rollo alargado. También se le dice multrün.</dd></div>
+        <div class="sp"><dt>Sabe a</dt><dd>Trigo, y a poco más: es la base. Lo que lo define es con qué se acompaña.</dd></div>
+        <div class="sp"><dt>Aparece en</dt><dd>Con miel, con pebre o al lado del plato de fondo. <span class="falta">falta: confirmar cómo lo sirven</span></dd></div>
+        <div class="sp"><dt>Temporada</dt><dd>
+          <span class="cal" role="img" aria-label="Todo el año">
+            <span class="m m--hay">E</span><span class="m m--hay">F</span><span class="m m--hay">M</span><span class="m m--hay">A</span><span class="m m--hay">M</span><span class="m m--hay">J</span><span class="m m--hay">J</span><span class="m m--hay">A</span><span class="m m--hay">S</span><span class="m m--hay">O</span><span class="m m--hay">N</span><span class="m m--hay">D</span>
+          </span>
+          <span class="cal__t">todo el año</span>
+        </dd></div>
+      </dl>
+    </article>
+
+    <!-- ── CHANGLE ── -->
+    <article class="ficha">
+      <h3 class="ficha__n">Changle</h3>
+      <dl class="ficha__specs">
+        <div class="sp"><dt>Qué es</dt><dd>Un hongo del bosque, blanco y ramificado como un coral chico.</dd></div>
+        <div class="sp"><dt>Sabe a</dt><dd>Suave, apenas dulce. La gracia está en la textura: cruje un poco.</dd></div>
+        <div class="sp"><dt>Aparece en</dt><dd>Salteado o en ensalada. <span class="falta">falta: confirmar</span></dd></div>
+        <div class="sp"><dt>Temporada</dt><dd>
+          <span class="cal" role="img" aria-label="Otoño e invierno, con las lluvias">
+            <span class="m m--no">E</span><span class="m m--no">F</span><span class="m m--no">M</span><span class="m m--si">A</span><span class="m m--si">M</span><span class="m m--si">J</span><span class="m m--si">J</span><span class="m m--no">A</span><span class="m m--no">S</span><span class="m m--no">O</span><span class="m m--no">N</span><span class="m m--no">D</span>
+          </span>
+          <span class="cal__t">con las lluvias — otoño e invierno</span>
+        </dd></div>
+      </dl>
+    </article>
+
+    <!-- ── DIGÜEÑE ── -->
+    <article class="ficha">
+      <h3 class="ficha__n">Digüeñe</h3>
+      <dl class="ficha__specs">
+        <div class="sp"><dt>Qué es</dt><dd>Un hongo redondo que crece en el hualle, el roble joven. Se da cuando el árbol brota.</dd></div>
+        <div class="sp"><dt>Sabe a</dt><dd>Muy suave, casi neutro, con una textura gelatinosa que sorprende la primera vez.</dd></div>
+        <div class="sp"><dt>Aparece en</dt><dd>En ensalada, con cebolla y cilantro. <span class="falta">falta: confirmar</span></dd></div>
+        <div class="sp"><dt>Temporada</dt><dd>
+          <span class="cal" role="img" aria-label="Primavera">
+            <span class="m m--no">E</span><span class="m m--no">F</span><span class="m m--no">M</span><span class="m m--no">A</span><span class="m m--no">M</span><span class="m m--no">J</span><span class="m m--no">J</span><span class="m m--no">A</span><span class="m m--si">S</span><span class="m m--si">O</span><span class="m m--si">N</span><span class="m m--no">D</span>
+          </span>
+          <span class="cal__t">primavera, y dura pocas semanas</span>
+        </dd></div>
+      </dl>
+    </article>
+
+  </div>
+
+  <ul class="leyenda">
+    <li><span class="m m--si" aria-hidden="true"></span> su época</li>
+    <li><span class="m m--hay" aria-hidden="true"></span> hay todo el año</li>
+    <li><span class="m m--no" aria-hidden="true"></span> fuera de temporada</li>
+  </ul>
+
+  <p class="firma">Las temporadas son las generales de la zona, no las de esta cocina.
+    <span class="falta">falta: que el local confirme las suyas</span> — con eso las
+    cinco fichas quedan firmadas y dejan de ser información de internet para pasar a
+    ser información de la casa.</p>
+</section>
+
+<!-- ========= LA TEMPORADA MANDA ========= -->
+<!-- ========= MEDIA PANTALLA ========= -->
+<section class="mitades" aria-labelledby="t-mitades">
+  <div class="mitades__foto">
+    <img src="imagenes/media-01.jpg" width="1600" height="901"
+         loading="lazy" decoding="async" alt="">
+  </div>
+  <div class="mitades__texto">
+    <p class="mitades__ante">Por qué el glosario importa más que la carta</p>
+    <h2 id="t-mitades">El changle sale cuando sale, y eso hay que decirlo</h2>
+    <p>Media carta de este restaurante depende de lo que dé el bosque esa semana. El que llega en marzo buscando digüeñes se va con las manos vacías, y no porque el local haya fallado: porque el digüeñe es de primavera. Publicar qué hay ahora y qué vuelve en tres meses convierte una decepción en una razón para volver, y además explica por qué el precio se mueve.</p>
+  </div>
+</section>
+
+
+
+<!-- ========= TAJO — FRANJA A SANGRE ========= -->
+<div class="tajo" aria-hidden="true">
+  <img src="imagenes/banda-01.jpg" width="1000" height="501"
+       loading="lazy" decoding="async" alt="">
+</div>
+<section class="temporada" id="temporada" aria-labelledby="t-temporada">
+  <div class="temporada__cuerpo">
+    <p class="antetitulo antetitulo--claro">Por qué la carta no es siempre la misma</p>
+    <h2 id="t-temporada">La temporada<br>manda</h2>
+    <p class="entrada">En un restaurante de ciudad la carta es un papel fijo. Acá no
+      puede serlo: la mitad de lo que se sirve crece afuera y aparece cuando le toca.
+      Eso, que suena a problema, es exactamente el argumento de venta.</p>
+
+    <div class="razones">
+      <article class="razon">
+        <p class="razon__n">01</p>
+        <h3>Lo que hay hoy no estaba hace dos meses</h3>
+        <p>El digüeñe dura unas semanas de primavera. El changle llega con las
+          lluvias. El piñón es de otoño. Un mismo plato no se puede pedir todo el
+          año, y decirlo antes evita la decepción de llegar buscando algo que no
+          está.</p>
+      </article>
+      <article class="razon">
+        <p class="razon__n">02</p>
+        <h3>Venir en la época correcta es parte del viaje</h3>
+        <p>Si alguien está planeando subir a Curarrehue, saber que en octubre hay
+          digüeñe o que en abril hay piñón fresco puede decidir el fin de semana en
+          que viene. Hoy esa información no existe en ninguna parte.</p>
+      </article>
+      <article class="razon">
+        <p class="razon__n">03</p>
+        <h3>Lo que cambia se puede anunciar</h3>
+        <p>Una línea escrita cuando entra un producto —«ya hay changle»— es la
+          publicación que más se comparte en un pueblo. No necesita diseño, necesita
+          un lugar donde ponerla.</p>
+      </article>
+    </div>
+
+    <p class="nota-honesta">Lo que esta página <b>no</b> hace: poner fechas exactas de
+      inicio y término. La temporada la decide el año, no el calendario, y una fecha
+      dura escrita en internet se convierte en un reclamo el día que el bosque se
+      atrasa dos semanas.</p>
+
+    <h3 class="sub">Lo que falta para completarla</h3>
+    <dl class="huecos">
+      <div class="hueco">
+        <dt>Dirección exacta</dt>
+        <dd><span class="falta">falta</span>
+          <span class="hueco__pq">La Aldea Intercultural es conocida, pero el que
+            viene de Pucón necesita el punto en el mapa.</span></dd>
+      </div>
+      <div class="hueco">
+        <dt>Días y horario</dt>
+        <dd><span class="falta">falta</span>
+          <span class="hueco__pq">Y sobre todo si cambia entre verano e
+            invierno.</span></dd>
+      </div>
+      <div class="hueco">
+        <dt>Si conviene reservar</dt>
+        <dd><span class="falta">falta</span>
+          <span class="hueco__pq">Con 189 reseñas y 4,9, es probable que en
+            temporada se llene. Decirlo es un favor al cliente.</span></dd>
+      </div>
+      <div class="hueco">
+        <dt>Si hay opción sin carne</dt>
+        <dd><span class="falta">falta</span>
+          <span class="hueco__pq">Buena parte de esta despensa ya lo es. Si está,
+            conviene que esté escrito.</span></dd>
+      </div>
+    </dl>
+
+    <div class="reservar" id="reservar">
+      <h3 class="sub">Reservar</h3>
+      <p class="reservar__intro">Diga cuándo y cuántos son: el mensaje se arma solo.</p>
+
+      <form class="form" id="form-mesa">
+        <div class="campo">
+          <label for="f-cuando">Qué día y a qué hora</label>
+          <input id="f-cuando" name="cuando" type="text" placeholder="Sábado al mediodía" autocomplete="off">
+        </div>
+        <div class="campo">
+          <label for="f-personas">Cuántos son</label>
+          <input id="f-personas" name="personas" type="text" inputmode="numeric" placeholder="4" autocomplete="off">
+        </div>
+        <div class="campo campo--ancho">
+          <label for="f-nota">Algo que quiera preguntar <span class="opcional">(opcional)</span></label>
+          <input id="f-nota" name="nota" type="text" placeholder="¿Hay digüeñe esta semana?" autocomplete="off">
+        </div>
+
+        <p class="resumen" id="resumen" aria-live="polite">El mensaje se arma acá abajo a medida que escribe.</p>
+        <a class="boton" id="enviar" href="#reservar">Enviar por WhatsApp</a>
+        <p class="reservar__nota"><span class="falta">falta: el número</span> — la ficha
+          de Google no publica ninguno, así que el botón todavía no lleva a ninguna parte.</p>
+      </form>
+    </div>
+  </div>
+</section>
+
+</main>
+
+
+
+<!-- ========= MOSAICO ========= -->
+
+<!-- ========= LA CITA A SANGRE ========= -->
+<section class="cita" aria-labelledby="t-cita">
+  <div class="cita__foto" aria-hidden="true">
+    <img src="imagenes/cita-01.jpg" width="2560" height="1707"
+         loading="lazy" decoding="async" alt="">
+  </div>
+  <blockquote class="cita__texto">
+    <p id="t-cita">Los nombres no se traducen, se explican<br>
+      <span class="cita__eco">Y explicados, se piden</span></p>
+  </blockquote>
+</section>
+
+<!-- ========= LA TIRA ========= -->
+<section class="tira" aria-label="Tres imágenes del oficio">
+  <figure class="tira__pieza">
+    <img src="imagenes/tira-01.jpg" width="1000" height="667" loading="lazy" decoding="async" alt="Un hongo abierto sobre un tronco cubierto de musgo.">
+  </figure>
+  <figure class="tira__pieza">
+    <img src="imagenes/tirb-01.jpg" width="1000" height="750" loading="lazy" decoding="async" alt="Roca cubierta de musgo y liquen, vista de cerca.">
+  </figure>
+  <figure class="tira__pieza">
+    <img src="imagenes/tirc-01.jpg" width="1000" height="501" loading="lazy" decoding="async" alt="Bosque de coníferas visto desde arriba.">
+  </figure>
+</section>
+
+<section class="mos" aria-labelledby="t-mos">
+  <h2 id="t-mos" class="mos__titulo">La misma serie, más de cerca</h2>
+  <p class="mos__nota">Estas seis ya aparecen más arriba en la página. Vuelven acá en otro tamaño porque una sola pasada de imágenes deja el scroll vacío, y porque de cerca se ven cosas que en grande se pierden. La procedencia de cada una está en imagenes/FUENTES.txt.</p>
+  <div class="mos__grilla">
+    <figure class="mos__p">
+      <img src="imagenes/mos-01.jpg" width="780" height="439"
+           loading="lazy" decoding="async" alt="">
+    </figure>
+    <figure class="mos__p">
+      <img src="imagenes/mos-02.jpg" width="780" height="391"
+           loading="lazy" decoding="async" alt="">
+    </figure>
+    <figure class="mos__p">
+      <img src="imagenes/mos-03.jpg" width="780" height="585"
+           loading="lazy" decoding="async" alt="">
+    </figure>
+    <figure class="mos__p">
+      <img src="imagenes/mos-04.jpg" width="780" height="520"
+           loading="lazy" decoding="async" alt="">
+    </figure>
+    <figure class="mos__p">
+      <img src="imagenes/mos-05.jpg" width="780" height="585"
+           loading="lazy" decoding="async" alt="">
+    </figure>
+    <figure class="mos__p">
+      <img src="imagenes/mos-06.jpg" width="780" height="520"
+           loading="lazy" decoding="async" alt="">
+    </figure>
+  </div>
+</section>
+<section class="dueno" aria-labelledby="t-dueno">
+  <h2 id="t-dueno">Para el dueño</h2>
+  <div class="dueno__cols">
+    <div>
+      <h3>Lo que está verificado</h3>
+      <p>El 4,9 con 189 reseñas de su ficha de Google y que no tienen teléfono
+        publicado. La página propia figura como «por confirmar».</p>
+    </div>
+    <div>
+      <h3>Lo que decidí no poner</h3>
+      <p>Ningún dibujo, ninguna forma ni ningún adorno tomado de la cultura mapuche.
+        La página se hizo con la despensa y con los materiales —la semilla, la rama,
+        el color de la cáscara— y con nada más. Lo que es de la comunidad no lo pongo
+        yo en una página web.</p>
+    </div>
+    <div>
+      <h3>Lo que falta</h3>
+      <p>El número, la dirección, el horario y la confirmación de las cinco fichas.
+        Las temporadas que puse son las generales de la zona: las suyas las saben
+        ustedes y son las que valen.</p>
+    </div>
+  </div>
+  <p class="dueno__cierre">
+    <a class="flecha" href="https://wa.me/56968650001" rel="noopener">Escribirme por WhatsApp <span aria-hidden="true">→</span></a>
+    <a class="flecha" href="../../" rel="noopener">Ver otros trabajos <span aria-hidden="true">→</span></a>
+  </p>
+</section>
+
+<footer class="pie">
+  <p>Sitio de demostración preparado por CristalWeb. El negocio no lo ha encargado
+    ni ha revisado su contenido. Las descripciones de los ingredientes y sus
+    temporadas son referencia general de la zona.</p>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>

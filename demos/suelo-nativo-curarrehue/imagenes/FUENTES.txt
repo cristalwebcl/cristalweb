@@ -1,0 +1,50 @@
+PROCEDENCIA DE LAS IMÁGENES — Suelo Nativo, restaurante, Curarrehue
+════════════════════════════════════════════════════════════════
+
+DEL NEGOCIO — UNA sola foto, y va a media pantalla.
+
+media-01.jpg  1500x834  la esquina, con el edificio y los letreros
+
+De este restaurante hay tres imágenes en internet y dos no sirven:
+
+- **El comedor con gente sentada a la mesa.** Se descartó: es un grupo
+  grande con caras visibles y no hay cómo saber si hay menores. La
+  regla no se levanta ni con la duda.
+- **Un afiche de «Hotel Finca Integral Suelo Nativo»**, que está en
+  Guaduas, Colombia. Homónimo: el buscador los mezcla.
+
+Queda la de la esquina, y sirve: en Curarrehue nadie busca por
+dirección, busca por esquina.
+
+────────────────────────────────────────────────────────────────
+GENÉRICAS — seis, de banco libre, sólo de fondo.
+
+Son bosque nativo y huerta, que es exactamente de lo que habla la
+página. Ninguna promete un plato, una carta ni un salón: lo que se
+sirve no aparece en ninguna imagen prestada, porque eso sí sería
+mentir.
+
+port-01.jpg  2560x1707  sotobosque de helechos
+aura-01.jpg   900x600   un helecho contra el fondo oscuro (va a 64 px
+                        de desenfoque: sólo aporta el verde --brote)
+tira-01.jpg   950x632   helechos bajo los árboles
+tira-02.jpg   950x631   helechos en primer plano
+  las cuatro de pxhere · dominio público (CC0), consulta
+  «native forest ferns undergrowth green»
+
+cita-01.jpg  2560x1920  hileras de repollos en la huerta
+tirb-01.jpg   950x713   un maizal
+  las dos de pxhere · dominio público (CC0), consulta
+  «vegetable garden rows green growing»
+
+────────────────────────────────────────────────────────────────
+LO QUE FALTA, Y CAMBIA LA PÁGINA ENTERA
+
+1. **La huerta de ellos.** La página entera argumenta que la carta sale
+   de lo que se cosecha; hoy esa huerta la tiene que representar una
+   foto ajena.
+2. **Dos o tres platos.** Ninguno está fotografiado en esta página, a
+   propósito: un plato de banco de imágenes en la web de un restaurante
+   es la mentira más fácil de descubrir — llega el cliente y le sirven
+   otra cosa.
+3. El salón por dentro, sin gente o con permiso de quien salga.

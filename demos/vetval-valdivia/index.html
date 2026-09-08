@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="es-CL" class="no-js">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Veterinaria Vetval — Valdivia</title>
+<meta name="description" content="Veterinaria en Valdivia. Cuánto cuesta, dicho antes: qué se puede saber de antemano y qué se cotiza después de examinar.">
+
+<!-- Política de seguridad de contenido: el navegador sólo puede cargar
+     archivos de este mismo sitio. Sin CDN, sin librerías, sin rastreadores.
+     Ver skills/web-blindada/references/csp-en-pages.md -->
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self'; img-src 'self' data:; font-src 'self'; connect-src 'self'; media-src 'self'; form-action 'self'; base-uri 'none'; frame-src 'none'; object-src 'none'">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+
+<!-- Rescate de la clase .js (regla 2 de la casa). En archivo, sin defer:
+     inline lo bloquearía la CSP. -->
+<script src="js/rescate.js"></script>
+
+<!-- Fuentes propias: cero peticiones a terceros. El preload va SOLO
+     para la display, que es la del titular de la portada. -->
+<link rel="preload" href="assets/fuentes/sairasemicondensed-600-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="assets/fuentes.css">
+<link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+
+<div class="propuesta">
+  <p class="propuesta__que">Propuesta de sitio web — preparada para <b>Veterinaria Vetval</b> por CristalWeb</p>
+  <p class="propuesta__gancho">4,8 con 157 reseñas. Y la pregunta que más aleja a la gente de una veterinaria —cuánto va a costar— sin nadie que la enfrente por escrito.</p>
+</div>
+
+<header class="cab" id="cab">
+  <a class="cab__marca" href="#portada">
+    <span class="pinza" aria-hidden="true"><i></i></span>
+    <span class="cab__nombre">Vetval</span>
+  </a>
+  <nav class="cab__nav" aria-label="Secciones">
+    <a href="#cuanto">Cuánto cuesta</a>
+    <a href="#consulta">Qué incluye</a>
+  </nav>
+  <a class="cab__tel" href="tel:+56632226700">
+    <span class="cab__tel-rot">Valdivia</span>
+    <span class="cab__tel-num">(63) 222 6700</span>
+  </a>
+</header>
+
+<main>
+
+<!-- ========= PORTADA ========= -->
+<section class="portada portada--foto" id="portada" aria-labelledby="t-portada">
+  <!-- FONDO DE PORTADA: 2560 px, nitido. Se disuelve hacia el titular
+       con un gradiente lateral, no con desenfoque. -->
+  <div class="portada__foto" aria-hidden="true">
+    <img src="imagenes/port-01.jpg" width="2560" height="1707"
+         decoding="async" fetchpriority="high" alt="">
+  </div>
+
+  <div class="satinado" aria-hidden="true"></div>
+
+  <div class="portada__texto">
+    <p class="sitio">Veterinaria · Valdivia</p>
+    <h1 id="t-portada">¿Me va a salir<br>carísimo?</h1>
+    <p class="bajada">Es la pregunta que nadie hace en voz alta y que todos se hacen
+      antes de pedir hora. La mayoría no la pregunta por vergüenza — y en vez de
+      preguntar, posterga. Así llegan animales más tarde y más caros de tratar.</p>
+    <dl class="specs">
+      <div class="spec"><dt>nota en Google</dt><dd>4,8</dd></div>
+      <div class="spec"><dt>reseñas</dt><dd>157</dd></div>
+      <div class="spec"><dt>teléfono</dt><dd class="dd--tel"><a href="tel:+56632226700">(63) 222 6700</a></dd></div>
+    </dl>
+  </div>
+</section>
+
+<!-- ========= LA PIEZA FIRMA — CUÁNTO CUESTA ========= -->
+<section class="cuanto con-telon" id="cuanto" aria-labelledby="t-cuanto">
+  <div class="telon" aria-hidden="true">
+    <img src="imagenes/telon-01.jpg" width="1200" height="800" decoding="async" alt="">
+  </div>
+
+  <!-- AURA DE COLOR: la foto de rubro reventada a desenfoque. No se lee
+       como imagen: aporta color y luz detras de una seccion que si no
+       seria fondo plano. Aca el desenfoque SI es el efecto, no un parche,
+       y por eso el archivo va chico: a 64 px de blur, mas resolucion no
+       cambia nada. Sin loading=lazy porque el elemento va en absoluto con
+       z-index negativo y el navegador nunca lo considera visible. -->
+  <div class="aura" aria-hidden="true">
+    <img src="imagenes/aura-01.jpg" width="900" height="600" decoding="async" alt="">
+  </div>
+
+  <div class="cuanto__cuerpo">
+    <p class="antetitulo">La conversación incómoda, por escrito</p>
+    <h2 id="t-cuanto">Cuánto cuesta,<br>dicho antes</h2>
+    <p class="entrada">No publicar precios no es esconderlos: en medicina hay cosas
+      que de verdad no se pueden saber antes de examinar. Pero eso hay que
+      <em>explicarlo</em>, porque el que no lo sabe asume lo peor.</p>
+
+    <ol class="puntos">
+      <li class="pt">
+        <p class="pt__n">01</p>
+        <div>
+          <h3>Lo que sí se puede decir antes</h3>
+          <p>La consulta, las vacunas, la desparasitación, un corte de uñas. Son
+            servicios con precio fijo y publicarlos no tiene ningún riesgo: al
+            contrario, es lo que hace que alguien se decida a pedir hora.</p>
+          <dl class="lista-precio">
+            <div><dt>Consulta general</dt><dd><span class="falta">falta: precio</span></dd></div>
+            <div><dt>Vacunas</dt><dd><span class="falta">falta: precio</span></dd></div>
+            <div><dt>Desparasitación</dt><dd><span class="falta">falta: precio</span></dd></div>
+            <div><dt>Corte de uñas</dt><dd><span class="falta">falta: precio</span></dd></div>
+          </dl>
+          <p class="pt__nota">La estructura está lista. <b>Ningún precio de esta
+            página lo pongo yo</b> — publicar una cifra equivocada de un servicio de
+            salud es la peor forma posible de empezar una relación con un
+            cliente.</p>
+        </div>
+      </li>
+
+      <li class="pt">
+        <p class="pt__n">02</p>
+        <div>
+          <h3>Por qué lo grande se cotiza después</h3>
+          <p>Una cirugía, una hospitalización o un estudio no tienen un precio único
+            porque no son un solo procedimiento: dependen del tamaño del animal, de
+            cuánto dure, de qué se encuentre al abrir y de cuántos días se quede.
+            Nadie que sepa lo que hace puede dar ese número por teléfono sin haber
+            visto al animal.</p>
+          <p class="pt__nota">Explicado así, deja de sonar a evasiva. La gente no
+            desconfía del precio: desconfía del silencio.</p>
+        </div>
+      </li>
+
+      <li class="pt">
+        <p class="pt__n">03</p>
+        <div>
+          <h3>El presupuesto, por escrito, antes</h3>
+          <p>Es la parte que convierte todo lo anterior en confianza: el compromiso
+            de que <b>nada se hace sin un presupuesto escrito y aceptado</b>, salvo
+            lo que sea urgente para salvar la vida del animal — y que en ese caso se
+            avisa apenas se pueda.</p>
+          <p class="pt__nota"><span class="falta">falta: confirmar si ésta es su
+            política</span> — si ya lo hacen, hay que escribirlo con estas palabras.
+            Si no lo hacen, es lo primero que yo propondría.</p>
+        </div>
+      </li>
+
+      <li class="pt">
+        <p class="pt__n">04</p>
+        <div>
+          <h3>Y si no alcanza</h3>
+          <p>Es la conversación más difícil del rubro y la que todos evitan. Decir de
+            frente qué opciones hay —cuotas, priorizar lo urgente, un plan por
+            etapas— no ahuyenta clientes: retiene a los que si no, simplemente no
+            vuelven.</p>
+          <p class="pt__nota"><span class="falta">falta: qué alternativas
+            manejan</span></p>
+        </div>
+      </li>
+    </ol>
+
+    <p class="firma">Ninguna de estas cuatro cosas requiere bajar los precios. Las
+      cuatro juntas son la diferencia entre una veterinaria que la gente considera
+      cara y una que la gente considera <em>clara</em>, que no es lo mismo.</p>
+  </div>
+</section>
+
+<!-- ========= QUÉ INCLUYE LA CONSULTA — ESTRUCTURA J ========= -->
+<!-- ========= MEDIA PANTALLA ========= -->
+<section class="mitades" aria-labelledby="t-mitades">
+  <div class="mitades__foto">
+    <img src="imagenes/media-01.jpg" width="2200" height="1467"
+         loading="lazy" decoding="async" alt="">
+  </div>
+  <div class="mitades__texto">
+    <p class="mitades__ante">La conversación que nadie quiere tener</p>
+    <h2 id="t-mitades">Preguntar el precio no es desconfiar</h2>
+    <p>Mucha gente posterga la consulta por no saber cuánto va a costar, y termina llegando cuando ya es caro de verdad. Publicar el valor de lo que se repite —consulta, vacuna, control— no compromete nada: los tratamientos siguen dependiendo de cada caso. Pero permite que alguien decida venir un martes en vez de esperar al viernes.</p>
+  </div>
+</section>
+
+<section class="consulta" id="consulta" aria-labelledby="t-consulta">
+  <div class="consulta__cabecera">
+    <p class="antetitulo antetitulo--claro">Lo que pasa en veinte minutos</p>
+    <h2 id="t-consulta">Qué incluye<br>la consulta</h2>
+    <p class="entrada">Mucha gente cree que pagó por «que lo miraran». Desglosado, se
+      entiende que una consulta general es un examen completo — y de paso queda claro
+      qué está incluido y qué se cotiza aparte.</p>
+    <p class="marca-ejemplo" data-ejemplo="Referencia general del examen — qué incluye su consulta lo define la clínica"></p>
+  </div>
+
+  <div class="specs-envoltura">
+    <dl class="ficha">
+      <div class="sp">
+        <dt>Peso y temperatura</dt>
+        <dd class="sp__v">Incluido</dd>
+        <dd class="sp__d">Todo lo demás se calcula sobre el peso. Es el primer dato y el que ordena la consulta entera.</dd>
+      </div>
+      <div class="sp">
+        <dt>Mucosas, hidratación y linfonodos</dt>
+        <dd class="sp__v">Incluido</dd>
+        <dd class="sp__d">Lo que se mira en los primeros treinta segundos y lo que más información entrega de una.</dd>
+      </div>
+      <div class="sp">
+        <dt>Corazón y pulmones con estetoscopio</dt>
+        <dd class="sp__v">Incluido</dd>
+        <dd class="sp__d">Se escucha aunque la consulta sea por otra cosa: es donde aparecen los hallazgos que el dueño no venía a buscar.</dd>
+      </div>
+      <div class="sp">
+        <dt>Palpación de abdomen</dt>
+        <dd class="sp__v">Incluido</dd>
+        <dd class="sp__d">Con las manos, sin aparatos. Sigue siendo de lo más útil que existe.</dd>
+      </div>
+      <div class="sp">
+        <dt>Boca, dientes y encías</dt>
+        <dd class="sp__v">Incluido</dd>
+        <dd class="sp__d">De lo que más se posterga en casa y más problemas trae a los años.</dd>
+      </div>
+      <div class="sp">
+        <dt>Oídos, ojos y piel</dt>
+        <dd class="sp__v">Incluido</dd>
+        <dd class="sp__d">Las tres consultas más frecuentes del rubro empiezan acá.</dd>
+      </div>
+      <div class="sp">
+        <dt>Exámenes de sangre</dt>
+        <dd class="sp__v sp__v--aparte">Se cotiza aparte</dd>
+        <dd class="sp__d">Se indican cuando el examen físico lo justifica, no de rutina. <span class="falta">falta: precio</span></dd>
+      </div>
+      <div class="sp">
+        <dt>Radiografía o ecografía</dt>
+        <dd class="sp__v sp__v--aparte">Se cotiza aparte</dd>
+        <dd class="sp__d">Y no siempre hacen falta: eso también se dice. <span class="falta">falta: confirmar si los hacen acá</span></dd>
+      </div>
+      <div class="sp">
+        <dt>Medicamentos que se apliquen</dt>
+        <dd class="sp__v sp__v--aparte">Se cotiza aparte</dd>
+        <dd class="sp__d">Lo que se aplique en la consulta se cobra aparte de la consulta misma. Decirlo antes evita la sorpresa en el mesón.</dd>
+      </div>
+    </dl>
+  </div>
+
+  <p class="firma firma--claro">Nueve líneas. Con eso, el que paga entiende qué
+    compró — y el que dudaba en venir deja de pensar que la consulta es «que lo miren
+    un rato».</p>
+</section>
+
+<!-- ========= EL CIERRE — T1 ========= -->
+<!-- ========= LA CITA A SANGRE ========= -->
+<section class="cita" aria-labelledby="t-cita">
+  <div class="cita__foto" aria-hidden="true">
+    <img src="imagenes/cita-01.jpg" width="2200" height="1467"
+         loading="lazy" decoding="async" alt="">
+  </div>
+  <blockquote class="cita__texto">
+    <p id="t-cita">«¿Cuánto me va a salir?»<br>
+      <span class="cita__eco">La pregunta que más aleja a la gente de una veterinaria</span></p>
+  </blockquote>
+</section>
+
+
+
+<!-- ========= TAJO — FRANJA A SANGRE ========= -->
+<div class="tajo" aria-hidden="true">
+  <img src="imagenes/banda-01.jpg" width="1100" height="733"
+       loading="lazy" decoding="async" alt="">
+</div>
+<section class="cierre" id="llamar" aria-labelledby="t-cierre">
+  <p class="cierre__rot">Preguntar el precio no cuesta nada</p>
+  <h2 id="t-cierre" class="cierre__tel">
+    <a href="tel:+56632226700">(63) 222 6700</a>
+  </h2>
+  <p class="cierre__pie">Es el número publicado en su ficha de Google. La mitad de
+    las llamadas a una veterinaria son por precio, y contestarlas bien es la mitad
+    del trabajo comercial.</p>
+</section>
+
+<!-- ========= LA TIRA ========= -->
+<section class="tira" aria-label="Tres imágenes del oficio">
+  <figure class="tira__pieza">
+    <img src="imagenes/tira-01.jpg" width="1100" height="733" loading="lazy" decoding="async" alt="Gato pequeño atendido sobre la mesa de consulta.">
+  </figure>
+  <figure class="tira__pieza">
+    <img src="imagenes/tira-02.jpg" width="1100" height="733" loading="lazy" decoding="async" alt="Vía puesta en la pata de un perro durante la atención.">
+  </figure>
+  <figure class="tira__pieza">
+    <img src="imagenes/tira-03.jpg" width="1100" height="1650" loading="lazy" decoding="async" alt="Veterinario revisando a un perro con equipo de diagnóstico.">
+  </figure>
+</section>
+
+</main>
+
+
+
+<!-- ========= MOSAICO ========= -->
+<section class="mos" aria-labelledby="t-mos">
+  <h2 id="t-mos" class="mos__titulo">La misma serie, más de cerca</h2>
+  <p class="mos__nota">Estas seis ya aparecen más arriba en la página. Vuelven acá en otro tamaño porque una sola pasada de imágenes deja el scroll vacío, y porque de cerca se ven cosas que en grande se pierden. La procedencia de cada una está en imagenes/FUENTES.txt.</p>
+  <div class="mos__grilla">
+    <figure class="mos__p">
+      <img src="imagenes/mos-01.jpg" width="780" height="520"
+           loading="lazy" decoding="async" alt="">
+    </figure>
+    <figure class="mos__p">
+      <img src="imagenes/mos-02.jpg" width="780" height="1170"
+           loading="lazy" decoding="async" alt="">
+    </figure>
+    <figure class="mos__p">
+      <img src="imagenes/mos-03.jpg" width="780" height="520"
+           loading="lazy" decoding="async" alt="">
+    </figure>
+    <figure class="mos__p">
+      <img src="imagenes/mos-04.jpg" width="780" height="520"
+           loading="lazy" decoding="async" alt="">
+    </figure>
+    <figure class="mos__p">
+      <img src="imagenes/mos-05.jpg" width="780" height="520"
+           loading="lazy" decoding="async" alt="">
+    </figure>
+    <figure class="mos__p">
+      <img src="imagenes/mos-06.jpg" width="780" height="520"
+           loading="lazy" decoding="async" alt="">
+    </figure>
+  </div>
+</section>
+<section class="dueno" aria-labelledby="t-dueno">
+  <h2 id="t-dueno">Para la clínica</h2>
+  <div class="dueno__cols">
+    <div>
+      <h3>Lo que está verificado</h3>
+      <p>El 4,8 con 157 reseñas de su ficha de Google y el teléfono (63) 222 6700.
+        No hay página propia.</p>
+    </div>
+    <div>
+      <h3>Lo que no escribí</h3>
+      <p>Ni un solo precio. Ni siquiera un rango. Publicar una cifra equivocada de un
+        servicio de salud es la peor forma de empezar con un cliente, y además los
+        precios los mueven ustedes, no yo.</p>
+    </div>
+    <div>
+      <h3>Lo que falta</h3>
+      <p>Los cuatro precios fijos, confirmar la política de presupuesto escrito y
+        revisar el desglose de la consulta. Con eso, son la única veterinaria de
+        Valdivia que le contesta a la pregunta que todos se hacen.</p>
+    </div>
+  </div>
+  <p class="dueno__cierre">
+    <a class="flecha" href="https://wa.me/56968650001" rel="noopener">Escribirme por WhatsApp <span aria-hidden="true">→</span></a>
+    <a class="flecha" href="../../" rel="noopener">Ver otros trabajos <span aria-hidden="true">→</span></a>
+  </p>
+</section>
+
+<footer class="pie">
+  <p><b>Esta página no entrega orientación veterinaria ni publica precios.</b> El
+    desglose de la consulta es una referencia general del examen clínico, no
+    reemplaza la evaluación de un profesional y no describe necesariamente el
+    protocolo de esta clínica. Ningún valor está publicado y ninguna política de
+    presupuesto está confirmada.</p>
+  <p class="pie__demo">Sitio de demostración preparado por CristalWeb. El negocio no
+    lo ha encargado ni ha revisado su contenido.</p>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>

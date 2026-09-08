@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="es-CL" class="no-js">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>D y R Construcciones — Loncoche</title>
+<meta name="description" content="Constructora en Loncoche. Cómo se hace una ampliación bien hecha: los cinco pasos, quién hace cada uno y por qué el papel importa.">
+
+<!-- Política de seguridad de contenido: el navegador sólo puede cargar
+     archivos de este mismo sitio. Sin CDN, sin librerías, sin rastreadores.
+     Ver skills/web-blindada/references/csp-en-pages.md -->
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self'; img-src 'self' data:; font-src 'self'; connect-src 'self'; media-src 'self'; form-action 'self'; base-uri 'none'; frame-src 'none'; object-src 'none'">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+
+<!-- Rescate de la clase .js (regla 2 de la casa). En archivo, sin defer:
+     inline lo bloquearía la CSP. -->
+<script src="js/rescate.js"></script>
+
+<!-- Fuentes propias: cero peticiones a terceros. -->
+<link rel="preload" href="assets/fuentes/rowdies-700-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="assets/fuentes.css">
+<link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+
+<div class="propuesta">
+  <p class="propuesta__que">Propuesta de sitio web — preparada para <b>D y R Construcciones</b> por CristalWeb</p>
+  <p class="propuesta__gancho">En Loncoche se amplía la casa —una pieza más, el quincho, la leñera— y nadie sabe si eso necesita permiso ni por dónde se parte. El primer constructor que lo explique por escrito se queda con las ampliaciones del pueblo.</p>
+</div>
+
+<header class="cab" id="cab">
+  <a class="cab__marca" href="#portada">
+    <span class="casita" aria-hidden="true"><i class="casita__mod"></i></span>
+    <span class="cab__nombre">D y R Construcciones</span>
+  </a>
+  <nav class="cab__nav" aria-label="Secciones">
+    <a href="#pasos">La ampliación</a>
+    <a href="#obras">Qué hacemos</a>
+  </nav>
+  <a class="cab__tel" href="tel:+56979511486">
+    <span class="cab__tel-rot">Loncoche</span>
+    <span class="cab__tel-num">9 7951 1486</span>
+  </a>
+</header>
+
+<main>
+
+<!-- ========= PORTADA ========= -->
+<section class="portada portada--foto" id="portada" aria-labelledby="t-portada">
+  <!-- FONDO DE PORTADA: 2560 px, nitido. Se disuelve hacia el titular
+       con un gradiente lateral, no con desenfoque. -->
+  <div class="portada__foto" aria-hidden="true">
+    <img src="imagenes/port-01.jpg" width="2560" height="1707"
+         decoding="async" fetchpriority="high" alt="">
+  </div>
+
+  <div class="trazado" aria-hidden="true">
+    <span class="tr t1"></span><span class="tr t2"></span><span class="tr t3"></span>
+    <span class="tr t4"></span><span class="tr t5"></span><span class="tr t6"></span>
+  </div>
+
+  <div class="portada__texto">
+    <p class="sitio">Construcción y ampliaciones · Loncoche</p>
+    <h1 id="t-portada">¿Necesito permiso<br>para esto?</h1>
+    <p class="bajada">Es la primera pregunta de toda ampliación y la que hace que muchas
+      terminen construyéndose sin papel — no por mala fe, sino porque nadie explica el
+      camino. Acá está el camino completo, con quién hace cada parte.</p>
+    <dl class="specs">
+      <div class="spec"><dt>teléfono</dt><dd class="dd--tel"><a href="tel:+56979511486">9 7951 1486</a></dd></div>
+      <div class="spec"><dt>comuna</dt><dd>Loncoche</dd></div>
+    </dl>
+  </div>
+</section>
+
+<!-- ========= LA PIEZA FIRMA — ÍNDICE CON RESPONSABLE (B) ========= -->
+<section class="pasos con-telon" id="pasos" aria-labelledby="t-pasos">
+  <div class="telon" aria-hidden="true">
+    <img src="imagenes/telon-01.jpg" width="1200" height="800" decoding="async" alt="">
+  </div>
+
+  <!-- AURA DE COLOR: la foto de rubro reventada a desenfoque. No se lee
+       como imagen: aporta color y luz detras de una seccion que si no
+       seria fondo plano. Aca el desenfoque SI es el efecto, no un parche,
+       y por eso el archivo va chico: a 64 px de blur, mas resolucion no
+       cambia nada. Sin loading=lazy porque el elemento va en absoluto con
+       z-index negativo y el navegador nunca lo considera visible. -->
+  <div class="aura" aria-hidden="true">
+    <img src="imagenes/aura-01.jpg" width="900" height="600" decoding="async" alt="">
+  </div>
+
+  <div class="pasos__cabecera">
+    <p class="antetitulo">Cinco pasos, tres responsables</p>
+    <h2 id="t-pasos">La ampliación bien hecha</h2>
+    <p class="entrada">Ampliar no es sólo levantar una pieza: es una secuencia, y en cada
+      paso le toca a alguien distinto. Lo que sigue es general —cómo funciona una ampliación
+      en cualquier comuna— y los requisitos exactos los define la Dirección de Obras de la
+      suya.</p>
+    <p class="marca-ejemplo" data-ejemplo="Descripción general del proceso — sin citar leyes ni metrajes: eso se revisa en la DOM de su comuna"></p>
+  </div>
+
+  <div class="indice-y-etapas">
+    <nav class="indice" aria-label="Etapas de la ampliación">
+      <a href="#e1"><span class="indice__n">01</span> <span class="indice__t">La idea</span> <span class="indice__q">usted</span></a>
+      <a href="#e2"><span class="indice__n">02</span> <span class="indice__t">El papel</span> <span class="indice__q">la DOM</span></a>
+      <a href="#e3"><span class="indice__n">03</span> <span class="indice__t">El presupuesto</span> <span class="indice__q">nosotros</span></a>
+      <a href="#e4"><span class="indice__n">04</span> <span class="indice__t">La obra</span> <span class="indice__q">nosotros</span></a>
+      <a href="#e5"><span class="indice__n">05</span> <span class="indice__t">La recepción</span> <span class="indice__q">la DOM</span></a>
+    </nav>
+
+    <div class="etapas">
+      <article class="et" id="e1">
+        <p class="et__n">01 <span class="et__q">lo hace usted</span></p>
+        <h3>La idea</h3>
+        <p>Qué se quiere y para qué: una pieza más, un baño, ampliar la cocina, cerrar un
+          corredor, el quincho. Conviene llegar con la medida aproximada y con una foto de
+          dónde iría.</p>
+        <p class="et__dato">También conviene saber de antemano si se piensa vender la casa
+          algún día. Eso cambia la respuesta del paso siguiente.</p>
+      </article>
+
+      <article class="et" id="e2">
+        <p class="et__n">02 <span class="et__q">lo resuelve la municipalidad</span></p>
+        <h3>El papel</h3>
+        <p><b>Muchas ampliaciones requieren permiso municipal o una regularización</b>, y
+          cuáles exactamente depende del tamaño, del tipo de obra y de la comuna. Eso no lo
+          decide el constructor ni una página web: se consulta en la Dirección de Obras de
+          la municipalidad.</p>
+        <p>Lo que sí se puede decir sin vueltas es <b>qué pasa cuando se construye sin
+          papel</b>: la ampliación no aparece en los planos de la casa, y el día que se
+          quiere vender, hipotecar o dejar en herencia, aparece el problema. Regularizar
+          después cuesta más que hacerlo bien de entrada.</p>
+        <p class="et__dato">Acá no van leyes citadas ni metrajes de norma: cambian, y
+          equivocarse en una página sería peor que no decir nada.
+          <span class="falta">falta: si ustedes acompañan este trámite o el dueño lo hace
+          solo</span></p>
+      </article>
+
+      <article class="et" id="e3">
+        <p class="et__n">03 <span class="et__q">lo hacemos nosotros</span></p>
+        <h3>El presupuesto por escrito</h3>
+        <p>Con la idea clara y el papel encaminado, viene el presupuesto — y por escrito, con
+          los materiales que se van a usar, los plazos y qué queda fuera. Un presupuesto de
+          palabra es la primera causa de pelea en una obra chica.</p>
+        <p class="et__dato">Lo que conviene que diga: qué incluye, qué no, cuánto demora,
+          cómo se paga y qué pasa si aparece algo no previsto al abrir la pared.
+          <span class="falta">falta: cómo lo entregan ustedes</span></p>
+      </article>
+
+      <article class="et" id="e4">
+        <p class="et__n">04 <span class="et__q">lo hacemos nosotros</span></p>
+        <h3>La obra</h3>
+        <p>La parte visible. En una ampliación hay algo que no ocurre en una obra nueva: la
+          familia sigue viviendo ahí. Por eso importa acordar antes por dónde entra el
+          material, qué días se trabaja, cómo se protege lo que ya existe y cómo queda todo
+          cada tarde.</p>
+        <p class="et__dato">Y el punto técnico que define una ampliación bien hecha: <b>cómo
+          se une lo nuevo con lo viejo</b> — la unión de techumbre, el encuentro de piso, la
+          continuidad del revestimiento. Ahí se nota quién sabe.</p>
+      </article>
+
+      <article class="et" id="e5">
+        <p class="et__n">05 <span class="et__q">lo resuelve la municipalidad</span></p>
+        <h3>La recepción</h3>
+        <p>Si la obra iba con permiso, termina con su recepción municipal. Ahí la ampliación
+          queda incorporada a la casa oficialmente, y la propiedad vuelve a estar completa en
+          los papeles.</p>
+        <p class="et__dato">Es el paso que casi nadie cuenta al principio y el único que
+          hace que los otros cuatro sirvan de algo el día de la venta.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ========= LO QUE D Y R HACE ========= -->
+<!-- ========= MEDIA PANTALLA ========= -->
+<section class="mitades" aria-labelledby="t-mitades">
+  <div class="mitades__foto">
+    <img src="imagenes/media-01.jpg" width="2200" height="1368"
+         loading="lazy" decoding="async" alt="">
+  </div>
+  <div class="mitades__texto">
+    <p class="mitades__ante">Lo que separa un presupuesto de una cuenta</p>
+    <h2 id="t-mitades">El precio se cierra cuando se cierra el alcance</h2>
+    <p>Un presupuesto que no dice qué incluye no es un presupuesto: es una cifra. Y la diferencia aparece siempre en el mismo punto —terminaciones, instalaciones, el retiro de escombros— cuando la obra ya está avanzada y cambiar sale caro. Dejarlo por escrito antes de empezar no es desconfianza: es lo que evita la única discusión que arruina un trabajo bien hecho.</p>
+  </div>
+</section>
+
+<section class="obras" id="obras" aria-labelledby="t-obras">
+  <div class="obras__cabecera">
+    <p class="antetitulo antetitulo--claro">Los tipos de obra</p>
+    <h2 id="t-obras">Lo que D y R hace</h2>
+    <p class="entrada">Esta sección está armada y vacía. Son cinco casillas y las llena el
+      constructor: sé que construyen, no sé exactamente qué toman y qué no, y eso no se
+      inventa en la página de nadie.</p>
+    <p class="marca-ejemplo marca-ejemplo--claro" data-ejemplo="ESTRUCTURA VACÍA — ninguno de estos servicios está confirmado"></p>
+  </div>
+
+  <div class="casillas">
+    <article class="ca">
+      <h3>Ampliaciones</h3>
+      <p class="pend">falta: confirmar — y si hay un tamaño máximo o mínimo que toman</p>
+    </article>
+    <article class="ca">
+      <h3>Quinchos y terrazas</h3>
+      <p class="pend">falta: confirmar</p>
+    </article>
+    <article class="ca">
+      <h3>Radier y obra gruesa</h3>
+      <p class="pend">falta: confirmar</p>
+    </article>
+    <article class="ca">
+      <h3>Techumbre</h3>
+      <p class="pend">falta: confirmar — incluido cambio de cubierta en casa habitada</p>
+    </article>
+    <article class="ca">
+      <h3>Hasta dónde salen</h3>
+      <p class="pend">falta: los sectores de la comuna y si van a comunas vecinas</p>
+    </article>
+  </div>
+
+  <p class="descargo">Esta página no cita ninguna ley, ningún metraje reglamentario ni ningún
+    plazo de trámite: los requisitos de permiso y regularización los define la Dirección de
+    Obras de cada comuna y cambian entre una y otra. Lo escrito sobre el proceso es general
+    del oficio y lo revisa y lo firma el constructor antes de publicarse. No hay precios.</p>
+</section>
+
+<!-- ========= EL CIERRE — T1 ========= -->
+<!-- ========= LA CITA A SANGRE ========= -->
+<section class="cita" aria-labelledby="t-cita">
+  <div class="cita__foto" aria-hidden="true">
+    <img src="imagenes/cita-01.jpg" width="2200" height="1467"
+         loading="lazy" decoding="async" alt="">
+  </div>
+  <blockquote class="cita__texto">
+    <p id="t-cita">Cinco pasos, cinco pagos<br>
+      <span class="cita__eco">Cada uno con lo que entrega y lo que se paga al terminarlo</span></p>
+  </blockquote>
+</section>
+
+
+
+<!-- ========= TAJO — FRANJA A SANGRE ========= -->
+<div class="tajo" aria-hidden="true">
+  <img src="imagenes/banda-01.jpg" width="1500" height="933"
+       loading="lazy" decoding="async" alt="">
+</div>
+<section class="cierre" id="llamar" aria-labelledby="t-cierre">
+  <p class="cierre__rot">Para conversar una ampliación</p>
+  <h2 id="t-cierre" class="cierre__tel">
+    <a href="tel:+56979511486">9 7951 1486</a>
+  </h2>
+  <p class="cierre__pie">Es el número publicado en su ficha de Google. Conviene llamar con
+    la medida aproximada y una foto de dónde iría.</p>
+</section>
+
+<!-- ========= LA TIRA ========= -->
+<section class="tira" aria-label="Tres imágenes del oficio">
+  <figure class="tira__pieza">
+    <img src="imagenes/tira-01.jpg" width="1100" height="733" loading="lazy" decoding="async" alt="Obra en construcción con andamios de madera.">
+  </figure>
+  <figure class="tira__pieza">
+    <img src="imagenes/tira-02.jpg" width="1100" height="733" loading="lazy" decoding="async" alt="Faena con enfierradura y moldajes en pleno trabajo.">
+  </figure>
+  <figure class="tira__pieza">
+    <img src="imagenes/tira-03.jpg" width="1100" height="733" loading="lazy" decoding="async" alt="Grúas sobre una obra al atardecer.">
+  </figure>
+</section>
+
+</main>
+
+
+
+<!-- ========= MOSAICO ========= -->
+<section class="mos" aria-labelledby="t-mos">
+  <h2 id="t-mos" class="mos__titulo">La misma serie, más de cerca</h2>
+  <p class="mos__nota">Estas seis ya aparecen más arriba en la página. Vuelven acá en otro tamaño porque una sola pasada de imágenes deja el scroll vacío, y porque de cerca se ven cosas que en grande se pierden. La procedencia de cada una está en imagenes/FUENTES.txt.</p>
+  <div class="mos__grilla">
+    <figure class="mos__p">
+      <img src="imagenes/mos-01.jpg" width="780" height="485"
+           loading="lazy" decoding="async" alt="">
+    </figure>
+    <figure class="mos__p">
+      <img src="imagenes/mos-02.jpg" width="780" height="520"
+           loading="lazy" decoding="async" alt="">
+    </figure>
+    <figure class="mos__p">
+      <img src="imagenes/mos-03.jpg" width="780" height="520"
+           loading="lazy" decoding="async" alt="">
+    </figure>
+    <figure class="mos__p">
+      <img src="imagenes/mos-04.jpg" width="780" height="520"
+           loading="lazy" decoding="async" alt="">
+    </figure>
+    <figure class="mos__p">
+      <img src="imagenes/mos-05.jpg" width="780" height="520"
+           loading="lazy" decoding="async" alt="">
+    </figure>
+    <figure class="mos__p">
+      <img src="imagenes/mos-06.jpg" width="780" height="520"
+           loading="lazy" decoding="async" alt="">
+    </figure>
+  </div>
+</section>
+<section class="dueno" aria-labelledby="t-dueno">
+  <h2 id="t-dueno">Para D y R</h2>
+  <div class="dueno__cols">
+    <div>
+      <h3>Lo que está verificado</h3>
+      <p>El teléfono 9 7951 1486 y que están en Loncoche. No tienen sitio propio.</p>
+    </div>
+    <div>
+      <h3>Lo que es general</h3>
+      <p>Los cinco pasos completos. Describen cómo funciona una ampliación en cualquier
+        comuna, sin citar normativa, y por eso van marcados.</p>
+    </div>
+    <div>
+      <h3>Lo que falta</h3>
+      <p>Los cinco tipos de obra —cuáles toman y cuáles no—, hasta qué sectores salen, si
+        acompañan el trámite municipal y cómo entregan el presupuesto. Con eso la página
+        deja de describir el rubro y pasa a describirlos a ustedes.</p>
+    </div>
+  </div>
+  <p class="dueno__cierre">
+    <a class="flecha" href="https://wa.me/56968650001" rel="noopener">Escribirme por WhatsApp <span aria-hidden="true">→</span></a>
+    <a class="flecha" href="../../" rel="noopener">Ver otros trabajos <span aria-hidden="true">→</span></a>
+  </p>
+</section>
+
+<footer class="pie">
+  <p>Sitio de demostración preparado por CristalWeb. El negocio no lo ha encargado ni ha
+    revisado su contenido. No se afirma que esta empresa preste ninguno de los servicios
+    listados: todos están marcados como por confirmar. No hay precios ni plazos, y no se
+    cita normativa: los requisitos de permiso los define la Dirección de Obras de cada
+    comuna.</p>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>

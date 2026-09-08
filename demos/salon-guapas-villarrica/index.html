@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="es-CL" class="no-js">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self'; img-src 'self' data:; font-src 'self'; connect-src 'self'; media-src 'self'; form-action 'self'; base-uri 'none'; frame-src 'none'; object-src 'none'">
+<meta name="robots" content="noindex, nofollow">
+<title>Salón Guapas — Centro de belleza · Villarrica</title>
+<meta name="description" content="Centro de belleza y peluquería en Villarrica, Vicente Reyes 753.">
+<link rel="preload" href="assets/fuentes/bellefair-400-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="assets/fuentes.css">
+<link rel="stylesheet" href="css/estilo.css">
+<script src="js/rescate.js"></script>
+</head>
+<body>
+
+<aside class="propuesta" aria-label="Aviso de propuesta">
+  <div class="ancho propuesta__in">
+    <p class="propuesta__q">Propuesta de sitio web — preparada para <b>Salón Guapas</b> por CristalWeb</p>
+    <p class="propuesta__d">Ciento cuarenta y seis reseñas, y las contestan todas. Pero la hora se pide por mensaje directo de Instagram, y eso son diez mensajes por clienta que alguien tiene que escribir.</p>
+  </div>
+</aside>
+
+<header class="cab" id="cab">
+  <div class="ancho cab__in">
+    <a class="cab__marca" href="#inicio" aria-label="Salón Guapas, inicio">
+      <!-- Cabecera 157ª — EL BLOQUE DE AGENDA: el rectángulo de una hora
+           reservada en una agenda, con la línea del borde superior más
+           gruesa. No hay ninguna agenda ni bloque horario en las 190
+           anteriores. -->
+      <span class="bloque" aria-hidden="true">
+        <span class="bloque__tapa"></span>
+        <span class="bloque__cuerpo"></span>
+      </span>
+      <span class="cab__txt">Salón Guapas<span class="cab__sub">Villarrica · centro de belleza</span></span>
+    </a>
+    <nav class="cab__nav" aria-label="Secciones">
+      <a href="#hora">Pedir hora</a>
+      <a href="#servicios">Qué hacemos</a>
+      <a class="cab__tel" href="tel:+56989703110">9 8970 3110</a>
+    </nav>
+  </div>
+</header>
+
+<main id="inicio">
+
+<!-- ══ PORTADA ════════════════════════════════════════════════════ -->
+<section class="portada" aria-labelledby="t-portada">
+  <div class="portada__foto" aria-hidden="true">
+    <img src="imagenes/fondo-01.jpg" alt="" width="2250" height="1500" fetchpriority="high" decoding="async">
+  </div>
+  <!-- Ambiente: DESTELLOS. No viajan: nacen, giran un cuarto y se
+       apagan. Seis, muy espaciados — con uno de más se ve a teletienda.
+       CSS puro, sin JS. -->
+  <div class="amb amb--brillo" aria-hidden="true">
+    <span class="amb__p"></span><span class="amb__p"></span><span class="amb__p"></span>
+    <span class="amb__p"></span><span class="amb__p"></span><span class="amb__p"></span>
+  </div>
+
+  <div class="ancho portada__in">
+    <p class="rotulo">Villarrica · Vicente Reyes 753</p>
+    <h1 id="t-portada" class="portada__h1">Su hora,<br>guardada.</h1>
+    <p class="portada__bajada">Centro de belleza y peluquería. Ciento cuarenta y seis personas dejaron su reseña, y acá se contestan todas.</p>
+    <p class="portada__pie">
+      <a class="boton" href="#hora">Pedir hora sin escribir diez mensajes</a>
+    </p>
+  </div>
+</section>
+
+<!-- ══ PIEZA FIRMA — LA FICHA QUE EVITA DIEZ MENSAJES ═════════════ -->
+<section class="hora" id="hora" aria-labelledby="t-hora">
+  <div class="ancho">
+    <p class="rotulo">01 — Pedir hora</p>
+    <h2 id="t-hora" class="h2">La ficha que evita<br>diez mensajes.</h2>
+    <p class="intro">Pedir hora por mensaje siempre termina igual: «hola» — «hola, ¿para qué servicio?» — «color» — «¿cuál es tu largo?» — y así diez veces. Acá se llena una vez, se copia y se manda armado. Nada de esto sale de esta página: se copia a su teléfono y usted decide por dónde enviarlo.</p>
+
+    <form class="ficha" id="ficha-hora" novalidate>
+      <div class="campo">
+        <label for="f-nombre">Su nombre</label>
+        <input type="text" id="f-nombre" name="nombre" autocomplete="name" placeholder="Cómo la saludamos">
+      </div>
+
+      <div class="campo">
+        <label for="f-servicio">Qué quiere hacerse</label>
+        <select id="f-servicio" name="servicio">
+          <option value="Corte">Corte</option>
+          <option value="Color de raíz">Color de raíz</option>
+          <option value="Mechas o iluminación">Mechas o iluminación</option>
+          <option value="Cambio de color completo">Cambio de color completo</option>
+          <option value="Tratamiento o hidratación">Tratamiento o hidratación</option>
+          <option value="Peinado para un evento">Peinado para un evento</option>
+          <option value="Todavía no sé, quiero que me digan">Todavía no sé, quiero que me digan</option>
+        </select>
+      </div>
+
+      <div class="campo">
+        <label for="f-largo">Largo de su pelo</label>
+        <select id="f-largo" name="largo">
+          <option value="Sobre los hombros">Sobre los hombros</option>
+          <option value="A los hombros">A los hombros</option>
+          <option value="Bajo los hombros">Bajo los hombros</option>
+          <option value="Hasta la cintura o más">Hasta la cintura o más</option>
+        </select>
+      </div>
+
+      <div class="campo">
+        <label for="f-previo">¿Tiene color puesto de antes?</label>
+        <select id="f-previo" name="previo">
+          <option value="No, es pelo natural">No, es pelo natural</option>
+          <option value="Sí, tinte">Sí, tinte</option>
+          <option value="Sí, decoloración o mechas">Sí, decoloración o mechas</option>
+          <option value="Sí, pero no sé qué me pusieron">Sí, pero no sé qué me pusieron</option>
+        </select>
+      </div>
+
+      <div class="campo">
+        <label for="f-cuando">Cuándo le acomoda</label>
+        <select id="f-cuando" name="cuando">
+          <option value="Entre semana, en la mañana">Entre semana, en la mañana</option>
+          <option value="Entre semana, en la tarde">Entre semana, en la tarde</option>
+          <option value="Sábado">Sábado</option>
+          <option value="Me acomoda cualquier día">Me acomoda cualquier día</option>
+        </select>
+      </div>
+
+      <div class="campo campo--ancho">
+        <label for="f-extra">Algo más que debamos saber <span class="opc">(opcional)</span></label>
+        <input type="text" id="f-extra" name="extra" placeholder="Una fecha, una alergia, una foto que quiere mostrar…">
+      </div>
+    </form>
+
+    <!-- El resumen se arma en vivo desde main.js. Sin JS queda el texto
+         base, que igual explica qué copiar. -->
+    <div class="resumen" aria-live="polite">
+      <p class="resumen__r">Su mensaje, listo para copiar</p>
+      <p class="resumen__t" id="resumen-txt">Hola, quiero pedir hora. Complete la ficha de arriba y el mensaje se arma solo acá.</p>
+      <p class="resumen__acc">
+        <button type="button" class="boton" id="btn-copiar" data-copiado="Copiado ✓">Copiar el mensaje</button>
+        <a class="flecha" href="https://www.instagram.com/guapas_alta_peluqueria">Abrir su Instagram <span aria-hidden="true">→</span></a>
+        <a class="flecha" href="tel:+56989703110">O llamar <span aria-hidden="true">→</span></a>
+      </p>
+    </div>
+
+    <p class="nota">Esta ficha es una demostración: <b>no envía nada a ninguna parte</b> y no guarda lo que usted escribe. Sólo arma el texto en su propio teléfono para que lo pegue donde quiera. En la versión definitiva puede mandarse directo a WhatsApp, si el salón confirma que ese número lo recibe.</p>
+  </div>
+</section>
+
+<!-- ══ CITA ═══════════════════════════════════════════════════════ -->
+<section class="cita" aria-label="Sobre el salón">
+  <img src="imagenes/banda-01.jpg" alt="" width="2200" height="1467" loading="lazy" decoding="async">
+  <div class="ancho cita__txt">
+    <p>Ciento cuarenta y seis<br>reseñas. Contestadas<br>una por una.</p>
+  </div>
+</section>
+
+<!-- ══ SERVICIOS ══════════════════════════════════════════════════ -->
+<section class="ficha-serv" id="servicios" aria-labelledby="t-serv">
+  <div class="ancho">
+    <p class="rotulo">02 — Qué hacemos</p>
+    <h2 id="t-serv" class="h2">Lo que se pide<br>en el salón.</h2>
+    <div class="tres" data-rev-grupo>
+      <article class="cosa">
+        <p class="cosa__n">01</p>
+        <h3>Corte y peinado</h3>
+        <p>Corte, secado, peinado para un evento.</p>
+      </article>
+      <article class="cosa">
+        <p class="cosa__n">02</p>
+        <h3>Color</h3>
+        <p>Raíz, mechas, iluminación, cambios de tono. Es lo que más tiempo toma y lo que más conviene conversar antes.</p>
+      </article>
+      <article class="cosa">
+        <p class="cosa__n">03</p>
+        <h3>Tratamientos</h3>
+        <p>Hidratación y recuperación, sobre todo después de un proceso de color.</p>
+      </article>
+    </div>
+    <p class="mini"><span class="ej" data-ejemplo>Lista de ejemplo</span>: agrupa lo habitual de un centro de belleza. El detalle real —qué servicios hay, cuáles no, y si se hacen uñas, maquillaje o depilación— lo define el salón. No se puso ninguno que no se pudiera confirmar.</p>
+  </div>
+</section>
+
+<!-- ══ TAJO ═══════════════════════════════════════════════════════ -->
+<figure class="tajo">
+  <img src="imagenes/tajo-01.jpg" alt="" width="2200" height="1323" loading="lazy" decoding="async">
+  <figcaption class="ancho tajo__txt">
+    <p class="rotulo">Lo que toma tiempo</p>
+    <p class="tajo__f">Un color bien hecho<br>no se apura.</p>
+  </figcaption>
+</figure>
+
+<!-- ══ POR QUÉ PREGUNTAMOS ════════════════════════════════════════ -->
+<section class="mitades" aria-labelledby="t-porque">
+  <div class="mitades__foto">
+    <img src="imagenes/media-01.jpg" alt="Atención en el salón" width="1500" height="2250" loading="lazy" decoding="async">
+  </div>
+  <div class="mitades__txt">
+    <p class="rotulo">03 — Por qué esas preguntas</p>
+    <h2 id="t-porque" class="h2 h2--chico">Cada dato de la ficha<br>ahorra un problema.</h2>
+    <ul class="lista">
+      <li><b>El largo</b> decide cuánto producto y cuánto tiempo de silla se reserva.</li>
+      <li><b>El color que ya tiene puesto</b> es lo más importante de todo: sobre un pelo con tinte o decoloración previa, el resultado no es el mismo que sobre pelo natural.</li>
+      <li><b>Si no sabe qué le pusieron</b>, también sirve saberlo: se conversa antes y no en medio del proceso.</li>
+      <li><b>Cuándo le acomoda</b> evita las tres primeras respuestas de cualquier conversación por mensaje.</li>
+    </ul>
+    <p class="mini">Nada de esto reemplaza la conversación con su estilista: es para llegar a ella con la mitad del camino hecho.</p>
+  </div>
+</section>
+
+<!-- ══ MOSAICO ════════════════════════════════════════════════════ -->
+<section class="mos" aria-labelledby="t-mos">
+  <div class="ancho">
+    <p class="rotulo">04 — El salón</p>
+    <h2 id="t-mos" class="h2 h2--chico">Vicente Reyes 753.</h2>
+  </div>
+  <div class="mos__grilla" data-rev-grupo>
+    <figure class="mos__p"><img src="imagenes/mos-01.jpg" alt="Sillas y espejos del salón" width="1200" height="800" loading="lazy" decoding="async"></figure>
+    <figure class="mos__p"><img src="imagenes/mos-02.jpg" alt="Cepillo de madera" width="1200" height="800" loading="lazy" decoding="async"></figure>
+    <figure class="mos__p"><img src="imagenes/mos-03.jpg" alt="Melena al viento" width="1200" height="800" loading="lazy" decoding="async"></figure>
+    <figure class="mos__p"><img src="imagenes/mos-04.jpg" alt="Brochas y paleta" width="1200" height="800" loading="lazy" decoding="async"></figure>
+    <figure class="mos__p"><img src="imagenes/mos-05.jpg" alt="Aplicación de mechas" width="1200" height="800" loading="lazy" decoding="async"></figure>
+    <figure class="mos__p"><img src="imagenes/mos-06.jpg" alt="Textura del cabello" width="1200" height="722" loading="lazy" decoding="async"></figure>
+  </div>
+</section>
+
+<!-- ══ CONTACTO ═══════════════════════════════════════════════════ -->
+<section class="contacto con-telon" id="contacto" aria-labelledby="t-contacto">
+  <div class="telon" aria-hidden="true">
+    <img src="imagenes/telon-01.jpg" alt="" width="1200" height="800" loading="lazy" decoding="async">
+  </div>
+  <div class="ancho">
+    <p class="rotulo">05 — Contacto</p>
+    <h2 id="t-contacto" class="h2">Dónde y cómo.</h2>
+    <p class="contacto__num"><a href="tel:+56989703110">+56 9 8970 3110</a></p>
+    <dl class="datos">
+      <div><dt>Dirección</dt><dd>Vicente Reyes 753, Villarrica</dd></div>
+      <div><dt>Instagram</dt><dd><a href="https://www.instagram.com/guapas_alta_peluqueria">@guapas_alta_peluqueria</a></dd></div>
+      <div><dt>Horario</dt><dd class="falta">falta — no está publicado</dd></div>
+      <div><dt>Formas de pago</dt><dd class="falta">falta — hay que confirmarlas</dd></div>
+    </dl>
+  </div>
+</section>
+
+</main>
+
+<section class="dueno" aria-labelledby="t-dueno">
+  <div class="ancho">
+    <p class="rotulo">Para el equipo de Salón Guapas</p>
+    <h2 id="t-dueno" class="h2 h2--chico">Por qué les preparé esto.</h2>
+    <div class="dueno__cols">
+      <div>
+        <h3>Lo que encontré, verificado el 21-08-2026</h3>
+        <ul class="lista lista--marca">
+          <li>El botón «Sitio web» de la ficha lleva a <b>Instagram</b>, no a una página.</li>
+          <li><b>146 reseñas</b>, y responden las reseñas: eso se nota y es raro.</li>
+          <li>Dirección: <b>Vicente Reyes 753</b>. Teléfono publicado en la ficha.</li>
+        </ul>
+      </div>
+      <div>
+        <h3>El problema no es que falte una web bonita</h3>
+        <p>Es el tiempo. Con ciento cuarenta y seis reseñas contestadas una por una, ya sabemos que acá alguien se sienta a escribir. Si además cada hora se agenda por mensaje directo, esa persona está gastando su día en «hola, ¿para qué servicio?».</p>
+        <p>La ficha de esta página no reemplaza la conversación: la empieza en el punto cinco en vez del punto uno. Esa es toda la propuesta.</p>
+      </div>
+    </div>
+
+    <h3>Qué es de verdad y qué es ejemplo en esta demo</h3>
+    <ul class="lista">
+      <li><b>De verdad:</b> el teléfono, la dirección, el Instagram y las 146 reseñas. Todo de su ficha de Google.</li>
+      <li><b>La nota promedio no aparece en la página</b>, a propósito: es un dato que hoy no les ayuda a vender y prefiero no ponerlo. Lo que sí vende es el volumen y que contestan.</li>
+      <li><b>Escrito por mí:</b> los tres grupos de servicios y las preguntas de la ficha. Son lo habitual del rubro; ustedes definen qué sacar y qué agregar.</li>
+      <li><b>Falta:</b> horarios, formas de pago, y <b>fotos suyas</b> — ninguna imagen de esta página es del salón ni de sus trabajos, y en este rubro las fotos de trabajos propios son la mitad de la venta.</li>
+    </ul>
+
+    <p class="dueno__cierre">
+      <a class="boton boton--fuerte" href="https://wa.me/56968650001">Escríbame por WhatsApp</a>
+      <a class="flecha" href="../../">Ver otros trabajos <span aria-hidden="true">→</span></a>
+    </p>
+  </div>
+</section>
+
+<footer class="pie">
+  <div class="ancho pie__in">
+    <p>Demostración sin encargo, preparada por <b>CristalWeb</b> — desarrollo web en Loncoche.<br>Las fotografías son de bancos de uso libre y no corresponden al salón ni a trabajos de Salón Guapas.</p>
+    <p class="pie__leg">Página con fines comerciales. La ficha para pedir hora es una demostración: no envía ni guarda datos.</p>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>

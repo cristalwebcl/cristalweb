@@ -1,0 +1,428 @@
+/* ===================================================================
+   208 · Gimnasio Life Motion · Victoria
+   Demo comercial sin encargo. Construida el 02-09-2026.
+
+   CUARTO GIMNASIO DEL REGISTRO Y COMUNA NUEVA (Victoria). El deslinde
+   es de cuatro bandas:
+   · the-temple-fitness-club es CLIENTE REAL (Loncoche): negro `#080808`
+     + oro `#C9A227` + terracota.
+   · 179-yakuzas-gym (Loncoche): «Concreto y disco rojo».
+   · gimnasio-new-life (Pucon): «Pulso», grafito `#14161A` + hueso +
+     **FLUOR `#CFF04A`**.
+   · 177-king-of-kings es barberia, pero comparte el dorado viejo.
+   Esta es CLARA y su tema no es el cuerpo: es EL TRATO.
+
+   CORRECCION HECHA DESPUES DE ESCRIBIR LA PAGINA (02-09-2026): la
+   primera version usaba un VERDE FLUOR DEPORTIVO. Al revisar la
+   carpeta de demos construidas aparecio gimnasio-new-life, que ya usa
+   fluor sobre grafito en el mismo rubro. **Mismo referente = choque**,
+   aunque una sea clara y la otra oscura. Se cambio el acento entero.
+   Es la segunda vez en la tanda que pasa (la otra es la 204 con
+   taller-electrico-sandoval): **leer identidades.md no alcanza, hay
+   que mirar tambien la carpeta `proyecto excel`**.
+
+   DIRECCION - «LO QUE HAY QUE PREGUNTAR ANTES DE FIRMAR»
+   Un gimnasio no se elige por las maquinas. Se elige por el horario que
+   uno puede cumplir y por lo que dice el plan cuando algo cambia. Y hay
+   una oportunidad comercial exacta detras: **todos los gimnasios
+   muestran las maquinas y casi ninguno publica sus condiciones**.
+
+   PALETA — sala clara:
+   sala `#F2F3F0` + panel `#E6E8E3` + panel-2 `#DCDDD9` +
+   tinta `#1A1C19` (14,8:1) + medio `#54574F` (5,3:1 sobre el peor
+   fondo, calibrado de entrada).
+   ACENTO: **TINTA DE LAPICERA AZUL** — `#1F3E9E` para TEXTO (6,9:1
+   sobre panel-2), `#3A5FD0` para OBJETOS sobre claro y `#9CB4FF` para
+   TEXTO sobre oscuro (8,4:1, la banda y el tajo). El referente es la
+   lapicera con la que se firma, y no es un adorno: **la pagina entera
+   trata de lo que dice el plan cuando uno firma**. Deslinde de los
+   azules del registro, que son todos de MATERIA: pavonado (62), plano
+   de arquitectura (ekla), plastico de jaba (185), prusia casi negra
+   (180), mezclilla gastada (175), arista de hielo (196), esmalte de
+   tablero (199), agua de rio (207), agua de lago (74) y arco electrico
+   (204). **Este es TINTA, y es el unico que sale de un acto —firmar—
+   y no de un material.**
+
+   TRIO — verificado contra identidades.md el 02-09-2026:
+   · Display ECONOMICA (0 usos). Estrecha y eficiente, de rotulo
+     deportivo, y muy liviana en KB.
+   · Cuerpo LATO (4 usos). Humanista, comoda en parrafo largo.
+   · Mono SOURCE CODE PRO (6 usos).
+
+   ESTRUCTURA: lista numerada 01-07 con DOS DESTACADOS (congelar y la
+   lesion, los dos que mas problemas evitan) + reticula de seis.
+   **La lista se deslinda de las otras numeradas de la tanda: la 200
+   son REQUISITOS que trae el cliente, la 201 CONTENIDOS de un
+   documento, la 202 PASOS EN ORDEN, la 203 PARTES DE UN METODO, la 206
+   MEDIDAS. Estas son PREGUNTAS PARA HACERLE AL NEGOCIO**, y es la
+   unica del registro donde la pieza firma es un cuestionario dirigido
+   AL DUENO DE LA PAGINA.
+
+   AMBIENTE: LA SERIE (primera del registro). Ocho marcas que aparecen
+   una tras otra y se van en el mismo orden — con el acento cambiado a
+   tinta de lapicera se leen como los ticks que alguien va escribiendo
+   en un formulario, que es todavia mas exacto para esta pagina.
+   Dicho de otro modo: como quien cuenta repeticiones. **Es el unico ambiente del registro que CUENTA**: no
+   cae, no sube, no recorre y no late — se acumula y se descuenta.
+
+   REGLA DE SALUD Y DE DATOS, escrita aca y repetida en el pie:
+   **ni un consejo de entrenamiento, ni una rutina, ni nada de
+   alimentacion o suplementos**, y ningun precio ni duracion de plan.
+   Lo que se explica son condiciones comerciales y cosas observables de
+   una sala. Verificado en el DOM.
+   =================================================================== */
+
+:root {
+  --sala:    #F2F3F0;
+  --panel:   #E6E8E3;
+  --panel-2: #DCDDD9;   /* el peor fondo: todo se calibra contra este */
+  --tinta:   #1A1C19;
+  --medio:   #54574F;
+  --tinta-b: #1F3E9E;   /* TEXTO */
+  --tinta-o: #3A5FD0;   /* OBJETOS sobre claro: nunca texto */
+  --tinta-c: #9CB4FF;   /* la misma tinta, para TEXTO sobre oscuro (8,4:1) */
+  --borde:   #C7C9C2;
+
+  --sale:   cubic-bezier(.16, 1, .3, 1);
+  --sale-2: cubic-bezier(.2, 0, 0, 1);
+
+  --ancho: min(92vw, 1150px);
+  --p--1: clamp(.78rem, .74rem + .18vw, .88rem);
+  --p-0:  clamp(1rem, .95rem + .25vw, 1.1rem);
+  --p-1:  clamp(1.18rem, 1.05rem + .5vw, 1.42rem);
+  --p-2:  clamp(1.7rem, 1.4rem + 1.3vw, 2.5rem);
+  --p-3:  clamp(2.2rem, 1.6rem + 2.6vw, 3.7rem);
+  --p-4:  clamp(3rem, 2rem + 5vw, 6.4rem);
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+[hidden] { display: none !important; }
+html { scroll-behavior: smooth; }
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+
+body {
+  margin: 0; background: var(--sala); color: var(--tinta);
+  font-family: Lato, "Segoe UI", system-ui, sans-serif;
+  font-size: var(--p-0); line-height: 1.66;
+  -webkit-font-smoothing: antialiased;
+}
+img { max-width: 100%; }
+a { color: inherit; }
+.ancho { width: var(--ancho); margin-inline: auto; }
+
+.rotulo {
+  font-family: "Source Code Pro", ui-monospace, monospace;
+  font-size: var(--p--1); letter-spacing: .15em; text-transform: uppercase;
+  color: var(--tinta-b); margin: 0 0 1.4rem;
+}
+.h2 {
+  font-family: Economica, "Arial Narrow", sans-serif; font-weight: 700;
+  font-size: var(--p-3); line-height: 1.02; letter-spacing: -.005em; margin: 0 0 1.5rem;
+}
+.h2--chico { font-size: var(--p-2); }
+.mini { font-size: var(--p--1); color: var(--medio); max-width: 70ch; }
+.mini b { color: var(--tinta); }
+.nota { font-size: var(--p--1); color: var(--medio); max-width: 76ch; margin-top: 2.4rem; }
+.nota b { color: var(--tinta); }
+.falta { color: var(--medio); font-style: italic; }
+.ej { color: var(--medio); font-style: italic; border-bottom: 1px dashed var(--borde); }
+.ej::after {
+  content: " (ej.)"; font-family: "Source Code Pro", ui-monospace, monospace;
+  font-size: .8em; font-style: normal; opacity: .85;
+}
+
+/* -- BANDA DE PROPUESTA ------------------------------------------ */
+.propuesta { background: var(--tinta); color: var(--sala); }
+.propuesta__in { padding: .9rem 0; }
+.propuesta__q { font-family: "Source Code Pro", ui-monospace, monospace; font-size: var(--p--1); letter-spacing: .03em; margin: 0 0 .2rem; color: var(--tinta-c); }
+.propuesta__d { margin: 0; font-size: var(--p--1); line-height: 1.5; max-width: 100ch; }
+
+/* -- CABECERA ---------------------------------------------------- */
+.cab {
+  position: sticky; top: 0; z-index: 50;
+  background: var(--sala); border-bottom: 1px solid var(--borde);
+  transition: transform .3s var(--sale-2), background-color .3s ease, border-color .3s ease;
+}
+.cab__in { display: flex; align-items: center; justify-content: space-between; gap: 1.2rem; padding: .55rem 0; }
+.cab__marca { display: inline-flex; align-items: center; gap: .8rem; text-decoration: none; min-height: 44px; }
+.cab__txt {
+  font-family: Economica, "Arial Narrow", sans-serif; font-weight: 700;
+  font-size: var(--p-1); line-height: 1.05; display: flex; flex-direction: column; gap: .2rem;
+  letter-spacing: .01em;
+}
+.cab__sub {
+  font-family: "Source Code Pro", ui-monospace, monospace; font-weight: 400;
+  font-size: .5em; letter-spacing: .07em; color: var(--medio); text-transform: uppercase;
+}
+.cab__nav { display: flex; align-items: center; gap: 1.5rem; }
+.cab__nav a {
+  font-size: var(--p--1); text-decoration: none; color: var(--medio);
+  min-height: 44px; display: inline-flex; align-items: center; transition: color .2s ease;
+}
+.cab__nav a:hover, .cab__nav a:focus-visible { color: var(--tinta); }
+.cab__tel { color: var(--tinta-b) !important; font-family: "Source Code Pro", ui-monospace, monospace; white-space: nowrap; }
+
+/* Cabecera 174a - LA CASILLA MARCADA: seis casillas y UNA pintada.
+   Es la hora a la que uno puede ir, que es lo que decide si va.
+   Ninguna grilla con una casilla marcada en las 207 anteriores. */
+.grilla {
+  display: grid; grid-template-columns: repeat(3, 8px); grid-template-rows: repeat(2, 8px);
+  gap: 3px; flex: 0 0 auto;
+}
+.grilla span { border: 1.5px solid var(--medio); border-radius: 1px; }
+.grilla .on { background: var(--tinta-o); border-color: var(--tinta-b); }
+
+.js .cab--top { background: transparent; border-bottom-color: transparent; }
+.js .cab--oculta { transform: translateY(-100%); }
+@media (prefers-reduced-motion: reduce) { .cab { transition-duration: 1ms; } }
+
+/* -- PORTADA ----------------------------------------------------- */
+.portada {
+  position: relative; isolation: isolate; overflow: hidden;
+  min-height: 88svh; display: flex; align-items: center; padding: 5rem 0 4rem;
+}
+.portada__foto { position: absolute; inset: 0; z-index: -3; }
+.portada__foto img {
+  display: block; width: 100%; height: 100%; object-fit: cover; object-position: 66% 50%;
+  -webkit-mask-image: linear-gradient(90deg, transparent 0%, transparent 20%, rgba(0,0,0,.28) 41%, rgba(0,0,0,.76) 62%, #000 80%, #000 100%);
+          mask-image: linear-gradient(90deg, transparent 0%, transparent 20%, rgba(0,0,0,.28) 41%, rgba(0,0,0,.76) 62%, #000 80%, #000 100%);
+}
+/* Velo entero en rgba terminando en alfa 0. */
+.portada__foto::after {
+  content: ""; position: absolute; inset: 0;
+  background: linear-gradient(90deg,
+    rgba(242,243,240,1) 0%, rgba(242,243,240,1) 37%, rgba(242,243,240,.92) 52%,
+    rgba(242,243,240,.52) 69%, rgba(242,243,240,.16) 86%, rgba(242,243,240,0) 97%);
+}
+.portada__in { position: relative; z-index: 1; }
+.portada__h1 {
+  font-family: Economica, "Arial Narrow", sans-serif; font-weight: 700;
+  font-size: var(--p-4); line-height: .94; letter-spacing: -.015em; margin: 0 0 1.3rem;
+}
+.portada__bajada { max-width: 44ch; color: var(--medio); font-size: var(--p-1); margin: 0 0 2.4rem; }
+.portada__bajada b { color: var(--tinta); }
+.portada__pie { margin: 0; }
+
+/* -- AMBIENTE: LA SERIE ------------------------------------------ */
+/* Ocho marcas que aparecen una tras otra y se van en el mismo orden,
+   como quien cuenta repeticiones. Es el UNICO ambiente del registro
+   que CUENTA: no cae, no sube, no recorre y no late. Determinista:
+   --i por nth-child (la CSP bloquea style=""). Solo opacity. */
+.amb { position: absolute; inset: 0; z-index: -2; overflow: hidden; pointer-events: none; }
+.amb__m {
+  position: absolute; right: 7%;
+  top: calc(26% + var(--i) * 5.4%);
+  width: 46px; height: 5px; border-radius: 3px;
+  background: rgba(58, 95, 208, .55);
+  opacity: 0;
+  animation: amb-serie 12s linear infinite;
+  animation-delay: calc(var(--i) * 1.2s);
+  will-change: opacity;
+}
+.amb--serie .amb__m:nth-child(1) { --i: 0; }
+.amb--serie .amb__m:nth-child(2) { --i: 1; }
+.amb--serie .amb__m:nth-child(3) { --i: 2; }
+.amb--serie .amb__m:nth-child(4) { --i: 3; }
+.amb--serie .amb__m:nth-child(5) { --i: 4; }
+.amb--serie .amb__m:nth-child(6) { --i: 5; }
+.amb--serie .amb__m:nth-child(7) { --i: 6; }
+.amb--serie .amb__m:nth-child(8) { --i: 7; }
+@keyframes amb-serie {
+  0%   { opacity: 0; }
+  3%   { opacity: .9; }
+  62%  { opacity: .9; }
+  68%  { opacity: 0; }
+  100% { opacity: 0; }
+}
+@media (prefers-reduced-motion: reduce) { .amb { display: none; } }
+@media (max-width: 760px) { .amb__m { width: 26px; right: 5%; } .amb__m:nth-child(n+6) { display: none; } }
+
+/* -- BOTONES ----------------------------------------------------- */
+.boton {
+  position: relative; display: inline-flex; align-items: center; justify-content: center;
+  min-height: 48px; padding: .8rem 1.8rem;
+  border: 1px solid var(--tinta-b); color: var(--tinta-b); background: transparent;
+  font-family: "Source Code Pro", ui-monospace, monospace;
+  font-size: var(--p--1); letter-spacing: .1em; text-transform: uppercase;
+  text-decoration: none; overflow: hidden; isolation: isolate;
+}
+.boton::before {
+  content: ""; position: absolute; inset: 0; z-index: -1;
+  background: var(--tinta-b); transform: translateY(101%); transition: transform .4s var(--sale);
+}
+.boton:hover, .boton:focus-visible { color: var(--sala); }
+.boton:hover::before, .boton:focus-visible::before { transform: translateY(0); }
+.boton--fuerte { background: var(--tinta-b); color: var(--sala); }
+.boton--fuerte::before { background: var(--tinta); }
+@media (prefers-reduced-motion: reduce) { .boton::before { transition-duration: 1ms; } }
+
+.flecha {
+  display: inline-flex; align-items: center; gap: .5rem; min-height: 44px;
+  font-family: "Source Code Pro", ui-monospace, monospace; font-size: var(--p--1); letter-spacing: .05em;
+  color: var(--tinta-b); text-decoration: none; border-bottom: 1px solid currentColor;
+  transition: border-bottom-width .2s ease;
+}
+.flecha:hover, .flecha:focus-visible { border-bottom-width: 3px; }
+
+/* -- PIEZA FIRMA: LAS SIETE PREGUNTAS ---------------------------- */
+.firmar { padding: 7rem 0; background: var(--panel); }
+.firmar .intro, .sala .intro { max-width: 66ch; color: var(--medio); font-size: var(--p-1); margin: 0 0 3rem; }
+.firmar .intro b, .sala .intro b { color: var(--tinta); }
+
+.preg { list-style: none; margin: 0; padding: 0; border-top: 3px solid var(--tinta); }
+.p {
+  display: grid; grid-template-columns: 4rem 1fr; gap: 1.4rem;
+  padding: 1.4rem 0; border-bottom: 1px solid var(--borde);
+}
+.p__n { font-family: "Source Code Pro", ui-monospace, monospace; font-size: var(--p-0); color: var(--tinta-b); line-height: 1.5; }
+.p h3 { font-family: Economica, "Arial Narrow", sans-serif; font-weight: 700; font-size: var(--p-1); margin: 0 0 .4rem; line-height: 1.14; }
+.p p { margin: 0; color: var(--medio); font-size: var(--p--1); line-height: 1.68; max-width: 78ch; }
+.p p b { color: var(--tinta); }
+/* Los dos que mas problemas evitan van marcados. */
+.p.destacado { background: var(--sala); padding-inline: 1.2rem; border-left: 4px solid var(--tinta-o); }
+
+/* -- CITA -------------------------------------------------------- */
+.cita { position: relative; isolation: isolate; overflow: hidden; min-height: min(48vh, 370px); display: grid; align-items: center; }
+.cita img { position: absolute; inset: 0; z-index: -2; width: 100%; height: 100%; object-fit: cover; object-position: 50% 55%; }
+/* Peor caso medido a mano: el disco claro bajo el velo .84 sobre tinta
+   deja el texto sala en 11:1. El auditor marca 1,00:1 porque no ve el
+   ::after y trepa al body — falso positivo conocido. */
+.cita::after { content: ""; position: absolute; inset: 0; z-index: -1; background: rgba(26,28,25,.84); }
+.cita__txt p {
+  font-family: Economica, "Arial Narrow", sans-serif; font-weight: 700;
+  font-size: var(--p-2); line-height: 1.1; max-width: 30ch; margin: 0; color: var(--sala);
+}
+
+/* -- QUÉ MIRAR EN LA SALA ---------------------------------------- */
+.sala { padding: 7rem 0; }
+.mirar { display: grid; grid-template-columns: repeat(3, 1fr); gap: 2.3rem 2.5rem; margin-bottom: 2.4rem; }
+.mr { border-top: 3px solid var(--tinta-o); padding-top: 1rem; }
+.mr h3 { font-family: Economica, "Arial Narrow", sans-serif; font-weight: 700; font-size: var(--p-1); margin: 0 0 .5rem; line-height: 1.1; }
+.mr p { margin: 0; color: var(--medio); font-size: var(--p--1); line-height: 1.68; }
+.mr p b { color: var(--tinta); }
+
+/* -- TAJO -------------------------------------------------------- */
+.tajo { position: relative; isolation: isolate; overflow: hidden; margin: 0; min-height: min(52vh, 400px); display: flex; align-items: flex-end; }
+.tajo img { position: absolute; inset: 0; z-index: -2; width: 100%; height: 100%; object-fit: cover; object-position: 50% 55%; }
+.tajo::after {
+  content: ""; position: absolute; inset: 0; z-index: -1;
+  background: linear-gradient(0deg, rgba(26,28,25,.95) 0%, rgba(26,28,25,.8) 34%, rgba(26,28,25,.3) 64%, rgba(26,28,25,0) 92%);
+}
+.tajo__txt { padding: 2.8rem 0; }
+.tajo__txt .rotulo { color: var(--tinta-c); }
+.tajo__f { font-family: Economica, "Arial Narrow", sans-serif; font-weight: 700; font-size: var(--p-2); margin: 0; line-height: 1.1; max-width: 22ch; color: var(--sala); }
+
+/* -- MITADES ----------------------------------------------------- */
+.mitades { display: grid; grid-template-columns: 1fr 1fr; background: var(--panel); }
+.mitades__foto img { display: block; width: 100%; height: 100%; object-fit: cover; }
+.mitades__txt { padding: 5.5rem clamp(1.5rem, 4vw, 4rem); display: flex; flex-direction: column; justify-content: center; }
+.mitades__txt p { color: var(--medio); }
+.mitades__txt p b { color: var(--tinta); }
+.lista { margin: 1.3rem 0; padding: 0; list-style: none; }
+.lista li { padding: .6rem 0 .6rem 1.5rem; position: relative; border-bottom: 1px solid var(--borde); font-size: var(--p--1); color: var(--medio); }
+.lista li b { color: var(--tinta); }
+.lista li::before { content: ""; position: absolute; left: 0; top: 1em; width: 9px; height: 3px; border-radius: 2px; background: var(--tinta-o); }
+.lista--marca li { border-bottom: none; padding-bottom: .3rem; }
+
+/* -- MOSAICO ----------------------------------------------------- */
+.mos { padding: 7rem 0 0; background: var(--panel-2); }
+.mos__grilla { display: grid; gap: 4px; grid-template-columns: repeat(3, 1fr); margin-top: 3rem; }
+.mos__p { margin: 0; overflow: hidden; }
+.mos__p:nth-child(1), .mos__p:nth-child(6) { grid-column: span 2; }
+.mos__p img { display: block; width: 100%; height: 100%; aspect-ratio: 3 / 2; object-fit: cover; transition: transform .5s var(--sale); }
+.mos__p:hover img { transform: scale(1.05); }
+@media (prefers-reduced-motion: reduce) { .mos__p:hover img { transform: none; } }
+
+/* -- CONTACTO ---------------------------------------------------- */
+.con-telon { position: relative; isolation: isolate; overflow: hidden; }
+.telon { position: absolute; inset: 0; z-index: -1; pointer-events: none; }
+.telon img {
+  display: block; width: 100%; height: 100%; object-fit: cover; opacity: .14;
+  -webkit-mask-image: linear-gradient(180deg, transparent 0%, #000 22%, #000 74%, transparent 100%);
+          mask-image: linear-gradient(180deg, transparent 0%, #000 22%, #000 74%, transparent 100%);
+}
+.contacto { padding: 7rem 0; }
+.contacto__num { margin: 0 0 1rem; }
+.contacto__num a {
+  font-family: Economica, "Arial Narrow", sans-serif; font-weight: 700;
+  font-size: clamp(2rem, 1.3rem + 3.8vw, 4.2rem); line-height: 1; color: var(--tinta-b);
+  text-decoration: none; display: inline-flex; align-items: center; min-height: 44px;
+  border-bottom: 3px solid transparent; transition: border-color .25s ease;
+}
+.contacto__num a:hover, .contacto__num a:focus-visible { border-bottom-color: var(--tinta-b); }
+.contacto__nota { color: var(--medio); font-size: var(--p--1); margin: 0 0 2.4rem; max-width: 58ch; }
+.contacto__nota b { color: var(--tinta); }
+
+.datos { margin: 0 0 2rem; max-width: 48rem; }
+.datos > div { display: flex; justify-content: space-between; gap: 1.5rem; padding: .8rem 0; border-bottom: 1px solid var(--borde); }
+.datos dt { font-family: "Source Code Pro", ui-monospace, monospace; font-size: var(--p--1); color: var(--medio); letter-spacing: .05em; text-transform: uppercase; }
+.datos dd { margin: 0; text-align: right; font-size: var(--p--1); }
+
+/* -- PARA EL DUENO ----------------------------------------------- */
+.dueno { padding: 7rem 0; border-top: 1px solid var(--borde); background: var(--panel-2); }
+.dueno__cols { display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; margin-bottom: 3rem; }
+.dueno h3 {
+  font-family: "Source Code Pro", ui-monospace, monospace;
+  font-size: var(--p--1); letter-spacing: .09em; text-transform: uppercase;
+  color: var(--tinta-b); margin: 2rem 0 1rem;
+}
+.dueno p { color: var(--medio); max-width: 62ch; }
+.dueno p b { color: var(--tinta); }
+.dueno__cierre { display: flex; flex-wrap: wrap; gap: 2rem; align-items: center; margin-top: 3rem; }
+
+.pie { padding: 3rem 0; border-top: 1px solid var(--borde); }
+.pie__in p { font-size: var(--p--1); color: var(--medio); margin: 0 0 .8rem; }
+.pie__in p b { color: var(--tinta); }
+.pie__leg { opacity: .95; }
+
+/* -- REVEALS ----------------------------------------------------- */
+.js [data-rev-grupo] > * { opacity: 0; transform: translateY(22px); }
+.js [data-rev-grupo].ok > * {
+  opacity: 1; transform: none;
+  transition: opacity .3s ease-out, transform .55s var(--sale);
+  transition-delay: calc(var(--r, 0) * 50ms);
+}
+[data-rev-grupo] > :nth-child(1){--r:0} [data-rev-grupo] > :nth-child(2){--r:1}
+[data-rev-grupo] > :nth-child(3){--r:2} [data-rev-grupo] > :nth-child(4){--r:3}
+[data-rev-grupo] > :nth-child(5){--r:4} [data-rev-grupo] > :nth-child(6){--r:5}
+[data-rev-grupo] > :nth-child(7){--r:6}
+@media (prefers-reduced-motion: reduce) {
+  .js [data-rev-grupo] > * { opacity: 1; transform: none; transition: none; }
+}
+:focus-visible { outline: 2px solid var(--tinta-b); outline-offset: 3px; }
+
+/* -- MOVIL ------------------------------------------------------- */
+@media (max-width: 1080px) {
+  .mirar { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 980px) {
+  .mitades { grid-template-columns: 1fr; }
+  .mitades__foto img { aspect-ratio: 16 / 10; height: auto; }
+  .dueno__cols { grid-template-columns: 1fr; gap: 1rem; }
+}
+@media (max-width: 760px) {
+  .cab__nav a:not(.cab__tel) { display: none; }
+  .portada { min-height: auto; padding: 3.5rem 0 3rem; }
+  /* En telefono el texto cae ENCIMA de la foto: la mascara lateral no
+     sirve a 375 px, asi que el velo se da vuelta y baja. */
+  .portada__foto img {
+    object-position: 58% 50%;
+    -webkit-mask-image: linear-gradient(180deg, #000 0%, #000 58%, transparent 100%);
+            mask-image: linear-gradient(180deg, #000 0%, #000 58%, transparent 100%);
+  }
+  .portada__foto::after {
+    background: linear-gradient(180deg,
+      rgba(242,243,240,.78) 0%, rgba(242,243,240,.72) 34%, rgba(242,243,240,.88) 64%, rgba(242,243,240,.98) 100%);
+  }
+  .mirar { grid-template-columns: 1fr; gap: 1.8rem; }
+  .p { grid-template-columns: 2.6rem 1fr; gap: 1rem; }
+  .p.destacado { padding-inline: .9rem; }
+  .firmar, .sala, .contacto, .dueno { padding: 4.5rem 0; }
+  .mos { padding-top: 4.5rem; }
+  .mos__grilla { grid-template-columns: repeat(2, 1fr); }
+  .mos__p:nth-child(1), .mos__p:nth-child(6) { grid-column: span 2; }
+}
+@media (max-width: 460px) {
+  .datos > div { flex-direction: column; gap: .2rem; }
+  .datos dd { text-align: left; }
+}

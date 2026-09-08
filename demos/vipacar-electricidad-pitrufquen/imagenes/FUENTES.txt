@@ -1,0 +1,52 @@
+FUENTES DE LAS IMÁGENES — 204 · VIPACAR Electricidad Automotriz (Pitrufquén)
+============================================================================
+NINGUNA de estas fotos es del taller. Son de bancos de uso libre
+(pxhere, pexels), bajadas con FotoRadar y reescaladas con
+preparar-lote.ps1. El pie de la página lo dice, y también la sección
+«para el dueño».
+
+fondo-01.jpg  · 2400px · portada — pinzas rojas conectadas a la batería
+  Cumple la regla de luminancia: página oscura y foto CON LUZ PROPIA —
+  el rojo de las pinzas es lo único que brilla, y es exactamente el
+  acento de la paleta. La foto y el color de la marca son la misma cosa.
+banda-01.jpg  · 1800px · cita — estelas de luz en la ruta al anochecer
+tajo-01.jpg   · 2000px · tajo — estelas rojas en la carretera, de noche
+telon-01.jpg  · 1200px · telón del contacto — haz de cables
+media-01.jpg  · 1700px · mitades — banco de trabajo de taller
+mos-01.jpg    · 1200px · alternador montado en el motor
+mos-02.jpg    · 1200px · multímetro con sus puntas
+mos-03.jpg    · 1200px · control de clima encendido
+mos-04.jpg    · 1200px · alternador desmontado
+mos-05.jpg    · 1200px · tablero encendido
+mos-06.jpg    · 1200px · batería junto al motor
+
+Consultas usadas: «car battery engine bay pxhere», «car headlights
+night road pxhere», «multimeter electronics test bench pxhere», «car
+dashboard instrument cluster pxhere», «electrical cables wires bundle
+pxhere», «car alternator starter motor part pxhere», «mechanic garage
+workshop car lift pxhere». Las URL completas quedaron en
+`devs\material\busquedas\204-vipacar\<carpeta>\FUENTES.txt`.
+
+
+CRITERIO: LA NOCHE Y LA RUTA
+----------------------------
+Tres de las once son de luces en la carretera de noche, y es
+deliberado: **el cliente de una electricidad automotriz casi siempre
+descubre el problema de noche, con frío y cuando tiene que salir**. La
+página lo dice en el tajo y las fotos lo sostienen.
+
+El resto son piezas —alternador, batería, multímetro, tablero—, porque
+el argumento de la demo es que **hay tres piezas distintas que fallan
+igual desde afuera**, y hay que poder verlas separadas.
+
+DESCARTADAS
+-----------
+· Un deportivo de marca reconocible fotografiado de noche. Precioso, y
+  completamente fuera de lugar: ningún cliente de Pitrufquén se
+  identifica con eso, y además es una marca ajena legible.
+· Un mecánico con la cara visible bajo el capó de un auto: persona
+  identificable que no dio permiso.
+· Tableros de conexiones eléctricas industriales y racks de red. Son
+  fotos de electricidad, sí, pero no de ESTA electricidad — un cliente
+  entra buscando su auto y ve una sala de servidores.
+· Un auto antiguo dentro de un taller: bonito y de otro rubro.

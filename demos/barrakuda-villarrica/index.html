@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="es-CL" class="no-js">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>BarraKuda — restobar, Villarrica</title>
+<meta name="description" content="Restobar en Villarrica. Qué picoteo pedir según cuántos son y hasta qué hora sirve la cocina.">
+
+<!-- Política de seguridad de contenido: el navegador sólo puede cargar
+     archivos de este mismo sitio. Sin CDN, sin librerías, sin rastreadores.
+     Ver skills/web-blindada/references/csp-en-pages.md -->
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self'; img-src 'self' data:; font-src 'self'; connect-src 'self'; media-src 'self'; form-action 'self'; base-uri 'none'; frame-src 'none'; object-src 'none'">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+
+<!-- Rescate de la clase .js (regla 2 de la casa). En archivo, sin defer:
+     inline lo bloquearía la CSP. -->
+<script src="js/rescate.js"></script>
+
+<!-- Fuentes propias: cero peticiones a terceros. El preload va SOLO
+     para la display, que es la del letrero. -->
+<link rel="preload" href="assets/fuentes/tiltneon-400-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="assets/fuentes.css">
+<link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+
+<div class="propuesta">
+  <p class="propuesta__que">Propuesta de sitio web — preparada para <b>BarraKuda</b> por CristalWeb</p>
+  <p class="propuesta__gancho">189 reseñas y de noche está lleno. En Google no aparece ni el horario: el grupo que decide dónde ir a las diez no tiene cómo saber si la cocina sigue abierta.</p>
+</div>
+
+<header class="cab" id="cab">
+  <a class="cab__marca" href="#portada">
+    <span class="pez" aria-hidden="true"></span>
+    <span class="cab__nombre">BarraKuda</span>
+  </a>
+  <nav class="cab__nav" aria-label="Secciones">
+    <a href="#picoteo">El picoteo</a>
+    <a href="#barra">Hasta qué hora</a>
+  </nav>
+  <a class="cab__wsp" href="#reservar">
+    <span class="cab__wsp-rot">Villarrica</span>
+    <span class="cab__wsp-num">Reservar</span>
+  </a>
+</header>
+
+<main>
+
+<!-- ═════════ ESTRUCTURA G — el letrero fijo, el contenido fluye ═════════ -->
+<div class="split">
+
+  <!-- LADO FIJO: el letrero de neón y los datos duros -->
+  <aside class="letrero portada--foto" id="portada" aria-labelledby="t-portada">
+  <!-- FONDO DE PORTADA: 1900 px, nitido. Se disuelve hacia el titular
+       con un gradiente lateral, no con desenfoque. -->
+  <div class="portada__foto" aria-hidden="true">
+    <img src="imagenes/port-01.jpg" width="1500" height="2250"
+         decoding="async" fetchpriority="high" alt="">
+  </div>
+
+    <div class="letrero__caja">
+      <p class="sitio">Restobar · Villarrica</p>
+      <h1 id="t-portada" class="neon">BarraKuda</h1>
+      <p class="letrero__bajada">Picoteo, barra y mesa larga.</p>
+
+      <dl class="datos">
+        <div class="datos__par"><dt>Cocina hasta</dt><dd><span class="falta">falta</span></dd></div>
+        <div class="datos__par"><dt>Barra hasta</dt><dd><span class="falta">falta</span></dd></div>
+        <div class="datos__par"><dt>Dirección</dt><dd><span class="falta">falta</span></dd></div>
+        <div class="datos__par"><dt>Reseñas</dt><dd>189</dd></div>
+      </dl>
+    </div>
+  </aside>
+
+  <!-- LADO QUE FLUYE: negro plano, sin glow -->
+  <div class="flujo">
+
+    <!-- ═════════ LA PIEZA FIRMA — EL PICOTEO ═════════ -->
+    <section class="picoteo con-telon" id="picoteo" aria-labelledby="t-picoteo">
+  <div class="telon" aria-hidden="true">
+    <img src="imagenes/telon-01.jpg" width="1600" height="1171" decoding="async" alt="">
+  </div>
+
+  <!-- AURA DE COLOR: la foto de rubro reventada a desenfoque. No se lee
+       como imagen: aporta color y luz detras de una seccion que si no
+       seria fondo plano. Aca el desenfoque SI es el efecto, no un parche,
+       y por eso el archivo va chico: a 64 px de blur, mas resolucion no
+       cambia nada. Sin loading=lazy porque el elemento va en absoluto con
+       z-index negativo y el navegador nunca lo considera visible. -->
+  <div class="aura" aria-hidden="true">
+    <img src="imagenes/aura-01.jpg" width="900" height="600" decoding="async" alt="">
+  </div>
+
+      <p class="antetitulo">La pregunta del grupo</p>
+      <h2 id="t-picoteo">¿Pedimos una<br>o dos?</h2>
+      <p class="entrada">Las tablas se ven todas parecidas en la carta y nadie dice
+        para cuántos alcanzan de verdad. Acá va dimensionado.</p>
+      <p class="marca-ejemplo" data-ejemplo="Armado de ejemplo — lo confirma el local"></p>
+
+      <ol class="tablas">
+        <li class="tabla-item">
+          <p class="tabla-item__n">Para 2</p>
+          <ul>
+            <li>Tabla chica de quesos y fiambres</li>
+            <li>Papas rústicas</li>
+            <li>Dos tragos</li>
+          </ul>
+          <p class="tabla-item__ojo">Alcanza justo para dos como aperitivo. Si es la
+            comida, quedan a medias.</p>
+          <p class="tabla-item__p"><span class="falta">falta: precio</span></p>
+        </li>
+        <li class="tabla-item">
+          <p class="tabla-item__n">Para 4</p>
+          <ul>
+            <li>Tabla surtida</li>
+            <li>Alitas o empanaditas</li>
+            <li>Papas y salsas</li>
+          </ul>
+          <p class="tabla-item__ojo">La más pedida. Con cuatro personas funciona como
+            comida completa.</p>
+          <p class="tabla-item__p"><span class="falta">falta: precio</span></p>
+        </li>
+        <li class="tabla-item">
+          <p class="tabla-item__n">Para la mesa grande</p>
+          <ul>
+            <li>Desde 6 personas</li>
+            <li>Surtido doble</li>
+            <li><span class="falta">falta: confirmar si se arma a pedido</span></li>
+          </ul>
+          <p class="tabla-item__ojo">Conviene avisar antes: una tabla grande no sale
+            en diez minutos.</p>
+          <p class="tabla-item__p"><span class="falta">falta: precio</span></p>
+        </li>
+      </ol>
+
+      <p class="firma">Contenidos de ejemplo para mostrar la forma. Lo que trae cada
+        tabla y cuánto vale lo pone el local.</p>
+    </section>
+
+    <!-- ═════════ LA BARRA DESPUÉS DE LAS DOCE ═════════ -->
+    <!-- ========= MEDIA PANTALLA ========= -->
+<section class="mitades" aria-labelledby="t-mitades">
+  <div class="mitades__foto">
+    <img src="imagenes/media-01.jpg" width="1500" height="1200"
+         loading="lazy" decoding="async" alt="">
+  </div>
+  <div class="mitades__texto">
+    <p class="mitades__ante">La foto que contesta la duda de fondo</p>
+    <h2 id="t-mitades">Mesas de madera, no un bar de pie</h2>
+    <p>«Restobar» no dice nada: puede ser un lugar donde se come sentado o uno donde se toma parado. Esta foto lo resuelve —mesas largas, sillas de respaldo, madera— y con eso el grupo que busca dónde llevar a los papás deja de dudar. Es de ellos y está en su ficha; lo que falta es que aparezca donde se decide, que es en el teléfono y a las siete de la tarde.</p>
+  </div>
+</section>
+
+
+
+<!-- ========= BANDA A SANGRE ========= -->
+<div class="banda" aria-hidden="true">
+  <img src="imagenes/banda-01.jpg" width="1800" height="1293"
+       loading="lazy" decoding="async" alt="">
+</div>
+<section class="barra" id="barra" aria-labelledby="t-barra">
+      <p class="antetitulo">Lo que decide si el grupo va o no</p>
+      <h2 id="t-barra">Después<br>de las doce</h2>
+      <p class="entrada">A las once y media alguien pregunta «¿estarán abiertos?» y el
+        grupo se termina yendo a otro lado por no arriesgar. Ese dato, escrito, es
+        clientes.</p>
+
+      <dl class="horas">
+        <div class="hora">
+          <dt>La cocina</dt>
+          <dd>Hasta qué hora sale un plato caliente. <span class="falta">falta: hora</span></dd>
+        </div>
+        <div class="hora">
+          <dt>La barra</dt>
+          <dd>Suele seguir después de la cocina. <span class="falta">falta: hora</span></dd>
+        </div>
+        <div class="hora">
+          <dt>La última entrada</dt>
+          <dd>Hasta qué hora conviene llegar para alcanzar a pedir.
+            <span class="falta">falta</span></dd>
+        </div>
+        <div class="hora">
+          <dt>Los días</dt>
+          <dd>Qué días abre y cuáles no. <span class="falta">falta</span></dd>
+        </div>
+      </dl>
+
+      <p class="firma">Cuatro datos. Es todo lo que separa a un local lleno los fines
+        de semana de uno que además llena los jueves.</p>
+
+      <div class="reservar" id="reservar">
+        <h3>Avisar que vamos</h3>
+        <p>Diga cuántos son y a qué hora: el mensaje se arma solo.</p>
+
+        <form class="form" id="form-mesa">
+          <div class="campo">
+            <label for="f-personas">Cuántos son</label>
+            <input id="f-personas" name="personas" type="text" inputmode="numeric" placeholder="6">
+          </div>
+          <div class="campo">
+            <label for="f-cuando">Qué día y a qué hora</label>
+            <input id="f-cuando" name="cuando" type="text" placeholder="Viernes a las 22:30">
+          </div>
+          <p class="resumen" id="resumen" aria-live="polite">El mensaje se arma acá abajo.</p>
+          <a class="fantasma" id="enviar" href="#reservar">Enviar por WhatsApp</a>
+          <p class="reservar__nota"><span class="falta">falta: el número</span> — su
+            ficha de Google no publica ninguno.</p>
+        </form>
+      </div>
+    </section>
+
+  </div>
+</div>
+
+</main>
+
+
+
+<!-- ========= MOSAICO ========= -->
+
+<!-- ========= LA CITA A SANGRE ========= -->
+<section class="cita" aria-labelledby="t-cita">
+  <div class="cita__foto" aria-hidden="true">
+    <img src="imagenes/cita-01.jpg" width="1800" height="2700"
+         loading="lazy" decoding="async" alt="">
+  </div>
+  <blockquote class="cita__texto">
+    <p id="t-cita">La barra abre después que la cocina<br>
+      <span class="cita__eco">Y eso, escrito, evita la mitad de los llamados</span></p>
+  </blockquote>
+</section>
+
+<!-- ========= LA TIRA ========= -->
+<section class="tira" aria-label="Tres imágenes del oficio">
+  <figure class="tira__pieza">
+    <img src="imagenes/tira-01.jpg" width="1000" height="732" loading="lazy" decoding="async" alt="Una mesa con mariscos, pebre y pan servidos para picotear.">
+  </figure>
+  <figure class="tira__pieza">
+    <img src="imagenes/tira-02.jpg" width="1000" height="1114" loading="lazy" decoding="async" alt="Una parrillada servida en un brasero de fierro.">
+  </figure>
+  <figure class="tira__pieza">
+    <img src="imagenes/tira-03.jpg" width="907" height="1600" loading="lazy" decoding="async" alt="Un rincón del local con mesa redonda y sillones.">
+  </figure>
+</section>
+
+<section class="mos" aria-labelledby="t-mos">
+  <h2 id="t-mos" class="mos__titulo">El local, de a pedazos</h2>
+  <p class="mos__nota">Cinco de estas seis son suyas, de su propia ficha. La sexta —el neón— es de banco libre y está declarada en imagenes/FUENTES.txt, igual que los demás fondos.</p>
+  <div class="mos__grilla">
+    <figure class="mos__p">
+      <img src="imagenes/mos-03.jpg" width="900" height="720"
+           loading="lazy" decoding="async" alt="El salón con las mesas de madera.">
+    </figure>
+    <figure class="mos__p">
+      <img src="imagenes/mos-02.jpg" width="900" height="659"
+           loading="lazy" decoding="async" alt="Mariscos y pebre servidos para picotear.">
+    </figure>
+    <figure class="mos__p">
+      <img src="imagenes/mos-04.jpg" width="900" height="1003"
+           loading="lazy" decoding="async" alt="Una parrillada en brasero de fierro.">
+    </figure>
+    <figure class="mos__p">
+      <img src="imagenes/mos-05.jpg" width="900" height="1588"
+           loading="lazy" decoding="async" alt="Un rincón con mesa redonda y sillones.">
+    </figure>
+    <figure class="mos__p">
+      <img src="imagenes/mosn-01.jpg" width="900" height="600"
+           loading="lazy" decoding="async" alt="Un letrero de neón encendido.">
+    </figure>
+    <figure class="mos__p">
+      <img src="imagenes/mos-01.jpg" width="900" height="518"
+           loading="lazy" decoding="async" alt="La fachada con el letrero BarraKuda.">
+    </figure>
+  </div>
+</section>
+<section class="dueno" aria-labelledby="t-dueno">
+  <h2 id="t-dueno">Para el dueño</h2>
+  <div class="dueno__cols">
+    <div>
+      <h3>Lo que está verificado</h3>
+      <p>El 4,6 con 189 reseñas de su ficha de Google y que no tiene página ni
+        teléfono publicado.</p>
+    </div>
+    <div>
+      <h3>Lo que es de ejemplo</h3>
+      <p>Los tres armados de picoteo. La estructura es la que sirve; lo que trae cada
+        tabla lo dicen ustedes.</p>
+    </div>
+    <div>
+      <h3>Lo que falta</h3>
+      <p>El número, la dirección y —lo más importante— los horarios: hasta qué hora
+        la cocina, hasta qué hora la barra, y qué días abre.</p>
+    </div>
+  </div>
+  <p class="dueno__cierre">
+    <a class="flecha" href="https://wa.me/56968650001" rel="noopener">Escribirme por WhatsApp <span aria-hidden="true">→</span></a>
+    <a class="flecha" href="../../" rel="noopener">Ver otros trabajos <span aria-hidden="true">→</span></a>
+  </p>
+</section>
+
+<footer class="pie">
+  <p>Sitio de demostración preparado por CristalWeb. El negocio no lo ha encargado
+    ni ha revisado su contenido.</p>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>

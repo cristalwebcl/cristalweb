@@ -1,0 +1,1215 @@
+/* ═══════════════════════════════════════════════════════════════
+   CristalWeb — hoja de estilos
+   ═══════════════════════════════════════════════════════════════
+
+   IDENTIDAD — dirección "PRISMA"
+   ------------------------------------------------------------------
+   Azul-noche con cian de refracción y un violeta de dispersión en los
+   cantos. Dos decisiones que van contra el registro de identidades y
+   por eso quedan justificadas por escrito:
+
+   1) ES EL QUINTO AZUL del registro, que ya estaba cerrado. La excusa
+      que ninguno de los otros cuatro tenía: este NO es un sitio de
+      cliente, es la marca propia. El negocio se llama CristalWeb — el
+      color es literalmente el nombre. Y como no es de cliente, no hay
+      forma de que dos clientes reciban la misma cara, que es el
+      problema que el registro existe para evitar.
+
+   2) ES FONDO OSCURO, y el registro exige un argumento de USO, no de
+      estética (el estándar lo fijó gruas-del-sur). Acá lo hay: la
+      refracción no existe sobre blanco. Un prisma sobre papel no
+      descompone nada visible — la pieza firma de la portada solo se
+      lee contra un fondo oscuro. Además tiene que distinguirse del
+      portafolio personal de Yordy, que también es oscuro pero CÁLIDO
+      (void + ámbar #FFA724). Mismo tipo de fondo, temperatura opuesta.
+
+   TRÍO TIPOGRÁFICO — las tres nuevas en el registro
+   ------------------------------------------------------------------
+   · Display: Funnel Display. Geométrica de terminaciones rectas y
+     contadores angulosos; a tamaño grande con tracking negativo se lee
+     como algo cortado, no moldeado.
+   · Cuerpo: Host Grotesk. Grotesca neutra de altura de x generosa.
+   · Dato: Fira Code. Las monos del registro se agotaron el 26-08-2026
+     y esta es la salida razonada: es la mono del oficio, y acá el
+     oficio ES el producto.
+
+   MOVIMIENTO
+   ------------------------------------------------------------------
+   Cero librerías. Las cifras salen del catálogo de movimiento de
+   ui-ux-pro-max, aplicadas con CSS + IntersectionObserver:
+     · hover de botón: desplazamiento bajo 2 px, 150–200 ms, salida
+       suave. Más que eso deja de leerse como respuesta y se lee como
+       animación.
+     · press: escala 0.95–1.05. Sin eso el botón no se siente apretado.
+     · reveal de sección: 400–600 ms con escalonado de 60–120 ms entre
+       hermanos, y nunca más de ~8 escalonados seguidos.
+     · tilt 3D: la fuerza se limita para que el elemento no salga de su
+       propia caja, y va en 1–2 elementos por pantalla, no en todos.
+   ═══════════════════════════════════════════════════════════════ */
+
+/* ── Tokens ─────────────────────────────────────────────────── */
+:root {
+  --fondo:        #060D16;
+  --fondo-alto:   #0A1421;
+  --vidrio:       rgba(20, 40, 60, .38);
+  --vidrio-borde: rgba(126, 205, 227, .18);
+
+  --hueso:        #E8F1F6;
+  --tenue:        #9FB6C7;
+  --tenue-mas:    #7D93A5;
+
+  --cian:         #57D9E8;
+  --cian-claro:   #9FEDF7;
+  --cian-hondo:   #12384A;
+  --prisma:       #B49BF5;
+
+  --display: "Funnel Display", "Trebuchet MS", sans-serif;
+  --cuerpo:  "Host Grotesk", "Segoe UI", system-ui, sans-serif;
+  --mono:    "Fira Code", "Consolas", ui-monospace, monospace;
+
+  --paso--1: clamp(.78rem, .75rem + .12vw, .85rem);
+  --paso-0:  clamp(1rem, .96rem + .2vw, 1.12rem);
+  --paso-1:  clamp(1.2rem, 1.12rem + .35vw, 1.45rem);
+  --paso-2:  clamp(1.45rem, 1.3rem + .7vw, 1.95rem);
+  --paso-3:  clamp(1.85rem, 1.55rem + 1.3vw, 2.75rem);
+  --paso-4:  clamp(2.3rem, 1.7rem + 2.6vw, 4rem);
+  --paso-5:  clamp(2.8rem, 1.75rem + 4.5vw, 5.5rem);
+
+  --aire:    clamp(3.5rem, 2.2rem + 5.5vw, 7.5rem);
+  --ancho:   min(100% - 2.5rem, 1180px);
+
+  --salida:  cubic-bezier(.16, 1, .3, 1);
+  --rapido:  .18s ease-out;
+}
+
+/* ── Base ───────────────────────────────────────────────────── */
+*, *::before, *::after { box-sizing: border-box; }
+
+[hidden] { display: none !important; }
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 5.5rem;
+  -webkit-text-size-adjust: 100%;
+  /* El overflow-x va tambien aca y no solo en body: el carrusel de
+     herramientas se sale unos pixeles mientras anima, y con el hidden
+     solo en body algunos navegadores moviles igual dejan arrastrar la
+     pagina de lado. */
+  overflow-x: hidden;
+}
+
+body {
+  margin: 0;
+  background: var(--fondo);
+  color: var(--hueso);
+  font-family: var(--cuerpo);
+  font-size: var(--paso-0);
+  line-height: 1.65;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+
+img, svg { max-width: 100%; }
+img { height: auto; display: block; }
+
+h1, h2, h3 {
+  font-family: var(--display);
+  font-weight: 600;
+  line-height: 1.06;
+  letter-spacing: -.028em;
+  margin: 0;
+  text-wrap: balance;
+}
+
+p { margin: 0 0 1rem; }
+p:last-child { margin-bottom: 0; }
+
+ul { list-style: none; margin: 0; padding: 0; }
+
+a { color: inherit; }
+
+:focus-visible {
+  outline: 2px solid var(--cian);
+  outline-offset: 3px;
+  border-radius: 3px;
+}
+
+.contenedor { width: var(--ancho); margin-inline: auto; }
+
+.saltar {
+  position: absolute;
+  left: 1rem;
+  top: -100px;
+  z-index: 100;
+  padding: .7rem 1.2rem;
+  background: var(--cian);
+  color: #04121A;
+  font-weight: 600;
+  border-radius: 8px;
+  transition: top var(--rapido);
+}
+.saltar:focus { top: 1rem; }
+
+/* ── Piezas de texto compartidas ────────────────────────────── */
+.etiqueta {
+  font-family: var(--mono);
+  font-size: var(--paso--1);
+  letter-spacing: .14em;
+  text-transform: uppercase;
+  color: var(--cian);
+  margin: 0 0 1rem;
+  display: flex;
+  align-items: center;
+  gap: .7rem;
+}
+.etiqueta::before {
+  content: "";
+  width: 1.6rem;
+  height: 1px;
+  background: linear-gradient(90deg, var(--cian), transparent);
+  flex: none;
+}
+
+.titulo { font-size: var(--paso-3); max-width: 22ch; margin-bottom: 1.2rem; }
+
+.entradilla {
+  color: var(--tenue);
+  max-width: 62ch;
+  font-size: var(--paso-1);
+  line-height: 1.55;
+  margin-bottom: 2.5rem;
+}
+
+.seccion { padding-block: var(--aire); position: relative; }
+
+.seccion--alterna {
+  background: var(--fondo-alto);
+  border-block: 1px solid rgba(126, 205, 227, .09);
+}
+
+/* ── Fondos fotográficos ────────────────────────────────────────
+   Las fotos se guardaron a 480 px y acá se estiran a pantalla
+   completa: el desenfoque sale del propio estirado, no de un
+   filter: blur() que el navegador tendría que recalcular en cada
+   scroll. Costo total de los cinco fondos: menos de 100 KB.       */
+.fondo-foto {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  pointer-events: none;
+}
+.fondo-foto img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: .13;
+  filter: saturate(1.5);
+}
+
+/* ── Botones ────────────────────────────────────────────────────
+   Dos modelos, no uno:
+   · el primario es HUESO SÓLIDO sobre el azul-noche. Es el mayor
+     contraste posible de esta paleta y el que el ojo encuentra
+     primero; un botón de vidrio sobre fondo oscuro compite con todo
+     lo demás que también es de vidrio.
+   · el secundario sí es de cristal, con el borde de gradiente
+     cian→violeta, y se lee claramente como la opción de menor peso.
+   Los dos comparten el brillo que los cruza y el mismo press.      */
+.boton {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: .5rem;
+  min-height: 48px;
+  padding: .85rem 1.7rem;
+  border: 1px solid transparent;
+  border-radius: 10px;
+  background: linear-gradient(180deg, #FFFFFF 0%, #D8E8F0 100%);
+  color: #071520;
+  font-family: var(--cuerpo);
+  font-size: var(--paso-0);
+  font-weight: 650;
+  text-decoration: none;
+  cursor: pointer;
+  touch-action: manipulation;
+  box-shadow: 0 10px 26px -14px rgba(159, 237, 247, .8),
+              0 1px 0 rgba(255, 255, 255, .6) inset;
+  transition: transform .17s ease-out, box-shadow .17s ease-out;
+}
+
+/* El brillo que lo recorre. Va en un pseudo-elemento y solo se anima
+   su transform, así que no fuerza layout en ningún frame. */
+.boton::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background: linear-gradient(105deg, transparent 38%, rgba(87, 217, 232, .55) 50%, transparent 62%);
+  transform: translateX(-130%);
+  transition: transform .75s var(--salida);
+}
+
+/* Bajo 2 px: a partir de ahí deja de leerse como respuesta al cursor. */
+.boton:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 18px 34px -14px rgba(159, 237, 247, .95),
+              0 1px 0 rgba(255, 255, 255, .75) inset;
+}
+.boton:hover::after { transform: translateX(130%); }
+
+.boton:active {
+  transform: translateY(0) scale(.97);
+  box-shadow: 0 2px 8px -4px rgba(0, 0, 0, .6) inset;
+  transition-duration: .06s;
+}
+
+.boton--cristal {
+  background-image:
+    linear-gradient(180deg, rgba(18, 48, 63, .55), rgba(11, 30, 43, .35)),
+    linear-gradient(125deg, var(--cian), var(--prisma) 55%, var(--cian-hondo));
+  background-origin: border-box;
+  background-clip: padding-box, border-box;
+  color: var(--hueso);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+  box-shadow: 0 10px 26px -16px rgba(87, 217, 232, .7),
+              0 1px 0 rgba(255, 255, 255, .1) inset;
+}
+.boton--cristal::after {
+  background: linear-gradient(105deg, transparent 38%, rgba(200, 245, 255, .3) 50%, transparent 62%);
+}
+.boton--cristal:hover {
+  box-shadow: 0 18px 34px -16px rgba(87, 217, 232, .9),
+              0 1px 0 rgba(255, 255, 255, .16) inset;
+}
+
+.boton--chico { min-height: 40px; padding: .5rem 1.15rem; font-size: var(--paso--1); }
+
+/* ── Cabecera ───────────────────────────────────────────────── */
+.cabecera {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  background: rgba(6, 13, 22, .72);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border-bottom: 1px solid transparent;
+  transition: border-color .3s ease, background .3s ease;
+}
+.cabecera.bajado {
+  border-bottom-color: rgba(126, 205, 227, .16);
+  background: rgba(6, 13, 22, .92);
+}
+
+.cabecera__fila {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  min-height: 4.5rem;
+}
+
+.marca {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+  gap: .6rem;
+  text-decoration: none;
+  font-family: var(--display);
+  font-size: 1.3rem;
+  font-weight: 600;
+  letter-spacing: -.02em;
+}
+.marca__gema { width: 26px; height: 26px; object-fit: contain; flex: none; }
+.marca__web { color: var(--cian); }
+
+.menu__lista { display: flex; align-items: center; gap: clamp(1rem, 2.2vw, 2rem); }
+.menu__lista a {
+  text-decoration: none;
+  font-size: var(--paso--1);
+  color: var(--tenue);
+  transition: color var(--rapido);
+  position: relative;
+}
+.menu__lista a:not(.boton):hover { color: var(--hueso); }
+.menu__lista a:not(.boton)::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  width: 100%;
+  height: 1px;
+  background: var(--cian);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform .3s var(--salida);
+}
+.menu__lista a:not(.boton):hover::after { transform: scaleX(1); }
+
+.menu-boton {
+  display: none;
+  align-items: center;
+  gap: .5rem;
+  min-height: 44px;
+  padding: .5rem .9rem;
+  background: transparent;
+  border: 1px solid var(--vidrio-borde);
+  border-radius: 9px;
+  color: var(--hueso);
+  font-family: var(--cuerpo);
+  font-size: var(--paso--1);
+  cursor: pointer;
+  touch-action: manipulation;
+}
+.menu-boton__barras { display: grid; gap: 4px; }
+.menu-boton__barras i {
+  display: block;
+  width: 17px;
+  height: 1.5px;
+  background: var(--cian);
+  transition: transform .3s var(--salida);
+}
+.menu-boton[aria-expanded="true"] .menu-boton__barras i:first-child { transform: translateY(2.75px) rotate(45deg); }
+.menu-boton[aria-expanded="true"] .menu-boton__barras i:last-child  { transform: translateY(-2.75px) rotate(-45deg); }
+
+@media (max-width: 860px) {
+  .menu-boton { display: inline-flex; }
+  .menu {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 100%;
+    background: rgba(8, 17, 28, .98);
+    backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px);
+    border-bottom: 1px solid var(--vidrio-borde);
+    display: none;
+  }
+  .menu.abierto { display: block; }
+  .menu__lista {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0;
+    padding: .5rem 1.25rem 1.5rem;
+  }
+  .menu__lista li { border-top: 1px solid rgba(126, 205, 227, .1); }
+  .menu__lista a:not(.boton) { display: block; padding: 1rem .25rem; font-size: var(--paso-0); }
+  .menu__lista li:last-child { border-top: 0; padding-top: 1rem; }
+  .menu__lista .boton { width: 100%; }
+}
+
+/* ── Portada ────────────────────────────────────────────────── */
+.portada {
+  position: relative;
+  padding-block: clamp(3rem, 1rem + 8vw, 7rem) var(--aire);
+  overflow: hidden;
+}
+
+.portada__fondo { position: absolute; inset: 0; pointer-events: none; overflow: hidden; }
+
+/* .portada__foto ya no existe: la textura de gotas se saco a pedido de
+   Yordy. La portada se sostiene con el halo, la reja y el cristal. */
+
+.portada__halo {
+  position: absolute;
+  top: -18%;
+  right: -8%;
+  width: min(760px, 105vw);
+  aspect-ratio: 1;
+  border-radius: 50%;
+  background: radial-gradient(circle,
+    rgba(87, 217, 232, .17) 0%,
+    rgba(180, 155, 245, .09) 42%,
+    transparent 68%);
+  animation: respirar 11s ease-in-out infinite alternate;
+}
+
+.portada__reja {
+  position: absolute;
+  inset: 0;
+  background-image:
+    linear-gradient(rgba(126, 205, 227, .05) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(126, 205, 227, .05) 1px, transparent 1px);
+  background-size: 74px 74px;
+  mask-image: radial-gradient(ellipse 85% 65% at 50% 30%, #000 20%, transparent 78%);
+  -webkit-mask-image: radial-gradient(ellipse 85% 65% at 50% 30%, #000 20%, transparent 78%);
+}
+
+.portada__grilla {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1.15fr .85fr;
+  gap: clamp(2rem, 4vw, 4rem);
+  align-items: center;
+}
+
+.portada__titulo { font-size: var(--paso-5); font-weight: 700; margin-bottom: 1.5rem; max-width: 15ch; }
+
+/* Cada línea del titular sube desde detrás de la anterior. El span
+   interior es el que se mueve; el exterior lo recorta. */
+.portada__titulo .linea { display: block; overflow: hidden; }
+.portada__titulo .linea > span { display: block; }
+
+.portada__bajada {
+  color: var(--tenue);
+  font-size: var(--paso-1);
+  line-height: 1.55;
+  max-width: 48ch;
+  margin-bottom: 2rem;
+}
+
+.portada__acciones { display: flex; flex-wrap: wrap; gap: .9rem; margin-bottom: 3rem; }
+
+.portada__datos {
+  display: flex;
+  flex-wrap: wrap;
+  gap: clamp(1.5rem, 4vw, 3.2rem);
+  padding-top: 1.8rem;
+  border-top: 1px solid rgba(126, 205, 227, .14);
+}
+.portada__datos li { display: grid; gap: .15rem; }
+.portada__datos b {
+  font-family: var(--mono);
+  font-size: var(--paso-2);
+  font-weight: 500;
+  color: var(--cian);
+  font-variant-numeric: tabular-nums;
+  line-height: 1;
+}
+.portada__datos span { font-size: var(--paso--1); color: var(--tenue-mas); }
+
+/* El cristal ─────────────────────────────────────────────────── */
+.portada__cristal { display: grid; place-items: center; }
+
+.cristal {
+  width: min(100%, 340px);
+  height: auto;
+  overflow: visible;
+  filter: drop-shadow(0 26px 60px rgba(87, 217, 232, .28));
+}
+
+.cristal__giro { transform-origin: 200px 270px; animation: balancear 13s ease-in-out infinite alternate; }
+
+.faceta {
+  animation: latir 6.5s ease-in-out infinite;
+  animation-delay: var(--t, 0s);
+  transform-origin: 200px 270px;
+}
+
+/* El haz cruza durante el primer 60% del ciclo y descansa el resto.
+   La mitad derecha parte 0.38 s después: ese desfase es lo que dibuja
+   el quiebre en la arista central. Los destellos por faceta van
+   sincronizados a ojo con el paso del haz (--td de cada path). */
+.cristal__barrido { animation: barrer 6s ease-in-out infinite; }
+.cristal__barrido--der { animation-delay: .38s; }
+
+.destello {
+  opacity: 0;
+  animation: destellar 6s ease-in-out infinite;
+  animation-delay: var(--td, 0s);
+}
+@keyframes destellar {
+  0%, 100% { opacity: 0; }
+  7%       { opacity: var(--op, .2); }
+  16%      { opacity: 0; }
+}
+
+.chispa {
+  opacity: 0;
+  animation: chispear 4.5s ease-in-out infinite;
+  animation-delay: var(--t, 0s);
+  transform-origin: center;
+}
+
+@keyframes balancear { from { transform: rotate(-3.5deg); } to { transform: rotate(3.5deg); } }
+@keyframes flotar    { from { transform: translateY(-12px); } to { transform: translateY(12px); } }
+@keyframes latir     { 0%, 100% { opacity: .82; } 50% { opacity: 1; } }
+@keyframes barrer    { 0% { transform: translateX(0); } 60%, 100% { transform: translateX(560px); } }
+@keyframes chispear  {
+  0%, 100% { opacity: 0; transform: scale(.4); }
+  12%, 26% { opacity: 1; transform: scale(1.15); }
+  45%      { opacity: 0; transform: scale(.5); }
+}
+@keyframes respirar  { from { opacity: .55; transform: scale(.94); } to { opacity: 1; transform: scale(1.06); } }
+
+/* Entrada de la portada: @keyframes, no IntersectionObserver.
+   rAF y IO no corren en una pestaña de fondo, y quien abre el enlace
+   en una pestaña nueva vería la portada vacía. */
+.js .portada__titulo .linea > span { animation: subir-linea 1s var(--salida) both; }
+.js .portada__titulo .linea:nth-child(1) > span { animation-delay: .12s; }
+.js .portada__titulo .linea:nth-child(2) > span { animation-delay: .22s; }
+.js .portada__titulo .linea:nth-child(3) > span { animation-delay: .32s; }
+
+.js .portada__texto > :not(.portada__titulo) { animation: entrar .95s var(--salida) both; }
+.js .portada__texto > :nth-child(1) { animation-delay: .05s; }
+.js .portada__texto > :nth-child(3) { animation-delay: .46s; }
+.js .portada__texto > :nth-child(4) { animation-delay: .56s; }
+.js .portada__texto > :nth-child(5) { animation-delay: .66s; }
+
+.js .portada__cristal {
+  animation: entrar-cristal 1.3s var(--salida) both,
+             flotar 7s ease-in-out 1.3s infinite alternate;
+}
+
+@keyframes subir-linea   { from { transform: translateY(105%); } to { transform: translateY(0); } }
+@keyframes entrar        { from { opacity: 0; transform: translateY(22px); } to { opacity: 1; transform: none; } }
+@keyframes entrar-cristal{ from { opacity: 0; transform: translateY(40px) scale(.9); } to { opacity: 1; transform: none; } }
+
+@media (max-width: 900px) {
+  .portada__grilla { grid-template-columns: 1fr; }
+  .portada__cristal { grid-row: 1; }
+  .cristal { width: min(62%, 250px); }
+  .portada__titulo { max-width: 100%; }
+}
+
+/* ── Carrusel de herramientas ───────────────────────────────────
+   Desplazamiento continuo con @keyframes sobre una cinta duplicada.
+   Se detiene al pasar el cursor, al recibir foco de teclado, cuando
+   sale de pantalla y cuando la pestaña queda en segundo plano — una
+   animación infinita corriendo donde nadie la ve solo gasta batería. */
+.herramientas {
+  padding-block: clamp(2.5rem, 5vw, 4rem);
+  border-block: 1px solid rgba(126, 205, 227, .09);
+  background: var(--fondo-alto);
+  overflow: hidden;
+}
+
+.herramientas__titulo {
+  font-family: var(--mono);
+  font-size: var(--paso--1);
+  font-weight: 400;
+  letter-spacing: .16em;
+  text-transform: uppercase;
+  color: var(--tenue-mas);
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.carrusel {
+  position: relative;
+  overflow: hidden;
+  mask-image: linear-gradient(90deg, transparent, #000 8%, #000 92%, transparent);
+  -webkit-mask-image: linear-gradient(90deg, transparent, #000 8%, #000 92%, transparent);
+}
+
+.carrusel__cinta {
+  display: flex;
+  width: max-content;
+  animation: desfilar 42s linear infinite;
+}
+.carrusel.pausa .carrusel__cinta { animation-play-state: paused; }
+
+.carrusel__grupo {
+  display: flex;
+  align-items: center;
+  gap: clamp(2.5rem, 6vw, 5rem);
+  padding-inline: clamp(1.25rem, 3vw, 2.5rem);
+}
+
+@keyframes desfilar { from { transform: translateX(0); } to { transform: translateX(-50%); } }
+
+.marca-h {
+  display: grid;
+  justify-items: center;
+  gap: .7rem;
+  flex: none;
+  opacity: .62;
+  transition: opacity .3s ease, transform .3s var(--salida);
+}
+/* Los logos llegaron en colores y formatos distintos y uno de ellos es
+   negro, invisible sobre este fondo. Teñirlos todos de blanco los pone
+   en el mismo plano; el color vuelve al pasar el cursor. */
+.marca-h img {
+  height: clamp(30px, 5vw, 40px);
+  width: auto;
+  object-fit: contain;
+  filter: brightness(0) invert(1);
+  transition: filter .3s ease;
+}
+.marca-h span {
+  font-family: var(--mono);
+  font-size: .72rem;
+  letter-spacing: .08em;
+  color: var(--tenue-mas);
+  white-space: nowrap;
+}
+.marca-h:hover { opacity: 1; transform: translateY(-3px); }
+.marca-h:hover img { filter: none; }
+
+/* ── Quiénes somos ──────────────────────────────────────────── */
+.socios {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 320px), 1fr));
+  gap: clamp(1.5rem, 3vw, 2.5rem);
+  margin-top: 3rem;
+}
+
+.socio {
+  position: relative;
+  padding: 1.6rem;
+  border: 1px solid var(--vidrio-borde);
+  border-radius: 16px;
+  background:
+    linear-gradient(160deg, rgba(87, 217, 232, .07), transparent 55%),
+    var(--fondo-alto);
+  transition: border-color .35s ease;
+}
+.socio:hover { border-color: rgba(87, 217, 232, .34); }
+/* Son las únicas dos piezas con tilt en toda la página: el efecto pierde
+   fuerza y se vuelve ruido si se le pone a todas las tarjetas. */
+.socio[data-tilt] {
+  transform-style: preserve-3d;
+  will-change: transform;
+  transition: transform .35s var(--salida), border-color .35s ease;
+}
+
+/* El retrato va chico y al lado del nombre, igual que en el portafolio
+   personal. La foto se compuso contra este mismo azul, así que la
+   silueta se recorta sola contra la tarjeta y no necesita sombra. */
+.socio__cabeza {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1.2rem;
+}
+.socio__foto {
+  width: 92px;
+  height: 122px;
+  flex: none;
+  object-fit: cover;
+  object-position: 50% 26%;   /* encuadra la cara, no el torso */
+  border-radius: 4px;
+  border: 1px solid var(--vidrio-borde);
+}
+
+.socio__texto { color: var(--tenue); }
+.socio__nombre { font-size: var(--paso-1); color: var(--hueso); }
+.socio__rol {
+  font-family: var(--mono);
+  font-size: var(--paso--1);
+  color: var(--cian);
+  margin: .35rem 0 0;
+}
+.socio__texto p { font-size: var(--paso--1); line-height: 1.6; }
+
+/* ── Proyectos ──────────────────────────────────────────────── */
+.proyectos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 1fr));
+  gap: 1.25rem;
+}
+
+.proyecto {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid var(--vidrio-borde);
+  border-radius: 14px;
+  background: var(--vidrio);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+  transition: transform .3s var(--salida), border-color .3s ease, box-shadow .3s ease;
+}
+
+.proyecto__vista {
+  position: relative;
+  aspect-ratio: 16 / 10;
+  overflow: hidden;
+  border-bottom: 1px solid var(--vidrio-borde);
+}
+.proyecto__vista img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top center;
+  transition: transform .7s var(--salida);
+}
+/* Tinte frío para que ocho capturas de ocho paletas distintas no peleen
+   entre sí ni con esta. Se despinta al pasar el cursor. */
+.proyecto__vista::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(6, 13, 22, .3), rgba(6, 13, 22, .75));
+  transition: opacity .4s ease;
+}
+.proyecto:hover .proyecto__vista img { transform: scale(1.06); }
+.proyecto:hover .proyecto__vista::after { opacity: .45; }
+
+.proyecto__cuerpo { display: flex; flex-direction: column; gap: .4rem; padding: 1.4rem; flex: 1; }
+
+.proyecto::before {
+  content: "";
+  position: absolute;
+  inset: -1px;
+  z-index: -1;
+  background: linear-gradient(115deg, transparent 40%, rgba(87, 217, 232, .16) 50%, transparent 60%);
+  transform: translateX(-120%);
+  transition: transform .8s var(--salida);
+}
+.proyecto:hover {
+  transform: translateY(-5px);
+  border-color: rgba(87, 217, 232, .48);
+  box-shadow: 0 22px 44px -26px rgba(87, 217, 232, .6);
+}
+.proyecto:hover::before { transform: translateX(120%); }
+
+.proyecto__rubro { font-family: var(--mono); font-size: var(--paso--1); color: var(--cian); margin: 0; }
+.proyecto__nombre { font-size: var(--paso-1); margin: .1rem 0 .3rem; }
+.proyecto__nota {
+  color: var(--tenue);
+  font-size: var(--paso--1);
+  line-height: 1.55;
+  flex: 1;
+  margin-bottom: 1rem;
+}
+.proyecto__enlaces { display: flex; flex-wrap: wrap; gap: 1.2rem; margin: 0; }
+
+.enlace {
+  position: relative;
+  font-size: var(--paso--1);
+  font-weight: 600;
+  color: var(--cian);
+  text-decoration: none;
+  padding-bottom: 2px;
+}
+/* El texto mide 23 px de alto, bajo el mínimo de 44 px para tocar con el
+   dedo. Este pseudo-elemento agranda el área sensible sin tocar el
+   layout ni separar visualmente los dos enlaces. */
+.enlace::before { content: ""; position: absolute; inset: -11px -6px; }
+.enlace::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 1px;
+  background: currentColor;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform .35s var(--salida);
+}
+.enlace:hover::after { transform: scaleX(1); transform-origin: left; }
+.enlace--tenue { color: var(--tenue); font-weight: 400; }
+
+.proyectos__pie { margin-top: 2.5rem; color: var(--tenue); font-size: var(--paso--1); }
+
+/* ── El sitio es tuyo ───────────────────────────────────────── */
+.tuyo { position: relative; overflow: hidden; }
+.tuyo__fondo { position: absolute; inset: 0; pointer-events: none; overflow: hidden; }
+.tuyo__fondo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: .2;
+  filter: saturate(1.6);
+  mask-image: linear-gradient(180deg, transparent, #000 40%, transparent);
+  -webkit-mask-image: linear-gradient(180deg, transparent, #000 40%, transparent);
+}
+.tuyo .contenedor { position: relative; }
+
+.entrega {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 240px), 1fr));
+  gap: 1px;
+  background: rgba(126, 205, 227, .16);
+  border: 1px solid rgba(126, 205, 227, .16);
+  border-radius: 14px;
+  overflow: hidden;
+}
+
+.entrega__item { background: var(--fondo); padding: 2rem 1.6rem; transition: background .35s ease; }
+.entrega__item:hover { background: var(--fondo-alto); }
+
+.entrega__num { font-family: var(--mono); font-size: var(--paso--1); color: var(--prisma); letter-spacing: .1em; }
+.entrega__item h3 { font-size: var(--paso-1); margin: .8rem 0 .6rem; }
+.entrega__item p { color: var(--tenue); font-size: var(--paso--1); line-height: 1.6; }
+
+/* ── Valores ────────────────────────────────────────────────── */
+.valores-sec { position: relative; overflow: hidden; }
+.valores-sec__fondo { position: absolute; inset: 0; pointer-events: none; overflow: hidden; }
+.valores-sec__fondo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: .16;
+  mask-image: radial-gradient(ellipse 70% 60% at 80% 50%, #000, transparent 70%);
+  -webkit-mask-image: radial-gradient(ellipse 70% 60% at 80% 50%, #000, transparent 70%);
+}
+.valores-sec .contenedor { position: relative; }
+
+.valores {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 1fr));
+  gap: clamp(1.5rem, 3vw, 2.5rem);
+  margin-top: 3rem;
+}
+
+.valor { padding-top: 1.5rem; border-top: 1px solid rgba(126, 205, 227, .2); }
+.valor h3 { font-size: var(--paso-2); margin-bottom: .8rem; max-width: 18ch; }
+.valor p { color: var(--tenue); line-height: 1.65; }
+
+/* ── Contacto ───────────────────────────────────────────────── */
+.contacto__caja {
+  position: relative;
+  padding: clamp(2rem, 4vw, 3.5rem);
+  border: 1px solid var(--vidrio-borde);
+  border-radius: 20px;
+  overflow: hidden;
+  background:
+    radial-gradient(ellipse 120% 100% at 12% 0%, rgba(87, 217, 232, .13), transparent 62%),
+    radial-gradient(ellipse 90% 90% at 100% 100%, rgba(180, 155, 245, .1), transparent 60%),
+    var(--fondo-alto);
+}
+.contacto__contenido { position: relative; }
+
+.contacto__vias {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 230px), 1fr));
+  gap: 1rem;
+  margin-top: 2.5rem;
+}
+
+.via {
+  display: grid;
+  gap: .3rem;
+  padding: 1.4rem;
+  border: 1px solid var(--vidrio-borde);
+  border-radius: 12px;
+  background: rgba(6, 13, 22, .6);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  text-decoration: none;
+  transition: transform var(--rapido), border-color var(--rapido), background var(--rapido);
+}
+.via svg { width: 24px; height: 24px; color: var(--cian); margin-bottom: .5rem; }
+.via__que {
+  font-family: var(--mono);
+  font-size: var(--paso--1);
+  color: var(--tenue-mas);
+  letter-spacing: .06em;
+  text-transform: uppercase;
+}
+.via__dato { font-size: var(--paso-0); color: var(--hueso); font-weight: 500; word-break: break-word; }
+a.via:hover {
+  transform: translateY(-3px);
+  border-color: rgba(87, 217, 232, .45);
+  background: rgba(12, 27, 42, .85);
+}
+.via--quieta { opacity: .85; }
+
+/* ── Pie ────────────────────────────────────────────────────── */
+.pie {
+  padding-block: 3rem;
+  border-top: 1px solid rgba(126, 205, 227, .12);
+  background: var(--fondo-alto);
+}
+.pie__fila { display: grid; gap: .4rem; }
+.pie__marca { font-family: var(--display); font-size: var(--paso-1); font-weight: 600; margin: 0; }
+.pie__nota { color: var(--tenue); font-size: var(--paso--1); margin: 0; }
+.pie__nota--tenue { color: var(--tenue-mas); max-width: 58ch; margin-top: .6rem; }
+
+/* ── Reveals al hacer scroll ────────────────────────────────────
+   Direccionales: el texto entra desde el costado, las fichas escalan
+   desde atrás. Solo se ocultan si la clase .js está puesta; si el
+   script nunca arranca, el temporizador de rescate la quita y todo el
+   contenido queda visible. La página no depende del JavaScript.
+   El desplazamiento lateral se mantiene moderado (46 px) porque más
+   que eso obliga a leer persiguiendo el texto.                      */
+.js .reveal { opacity: 0; }
+.js .reveal:not([data-rev])         { transform: translateY(22px); }
+.js .reveal[data-rev="abajo"]       { transform: translateY(30px); }
+.js .reveal[data-rev="izq"]         { transform: translateX(-46px); }
+.js .reveal[data-rev="der"]         { transform: translateX(46px); }
+.js .reveal[data-rev="escala"]      { transform: translateY(24px) scale(.94); }
+
+.js .reveal.visible {
+  opacity: 1;
+  transform: none;
+  transition: opacity .8s var(--salida), transform .8s var(--salida);
+  transition-delay: var(--retraso, 0s);
+}
+
+/* Parallax suave de los fondos, atado al scroll y fuera del hilo
+   principal. Va dentro de @supports como mejora: donde no exista
+   (Firefox, por ahora), el fondo simplemente queda quieto. */
+@supports (animation-timeline: view()) {
+  .tuyo__fondo img, .valores-sec__fondo img {
+    animation: deriva linear both;
+    animation-timeline: view();
+    animation-range: entry 0% exit 100%;
+  }
+  @keyframes deriva { from { transform: translateY(-6%) scale(1.1); } to { transform: translateY(6%) scale(1.1); } }
+}
+
+/* ── Movimiento reducido ────────────────────────────────────────
+   Se apaga lo intrusivo: los bucles infinitos del cristal, el halo, el
+   carrusel y el parallax. Se conservan hovers y fundidos — en Windows
+   esta preferencia viene activada de fábrica muy seguido y un sitio sin
+   ningún movimiento se ve muerto, no accesible.                      */
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+
+  .cristal__giro, .faceta, .cristal__barrido, .destello, .chispa,
+  .portada__halo, .portada__cristal, .carrusel__cinta,
+  .tuyo__fondo img, .valores-sec__fondo img {
+    animation: none !important;
+  }
+  .chispa { opacity: .9; }
+
+  .js .portada__texto > :not(.portada__titulo),
+  .js .portada__titulo .linea > span,
+  .js .portada__cristal {
+    animation: aparecer .5s ease both;
+  }
+  @keyframes aparecer { from { opacity: 0; } to { opacity: 1; } }
+
+  .js .reveal { transform: none !important; }
+  .js .reveal.visible { transition: opacity .45s ease; }
+
+  .boton:hover, .proyecto:hover, a.via:hover, .marca-h:hover, .socio { transform: none !important; }
+}
+
+/* ── EL LOGO EN EL CONTACTO ──
+   El lockup oficial (emblema + nombre), procesado por procesar-logo.ps1.
+   Va como marca de agua grande al costado derecho de la caja: llena el
+   espacio que dejo el fondo de gotas sin competir con el texto. En
+   angosto desaparece, porque ahi taparia las vias de contacto. */
+.contacto__caja { display: grid; grid-template-columns: 1fr; }
+.contacto__logo {
+  position: absolute; right: clamp(1rem, 4vw, 3rem); top: 50%;
+  transform: translateY(-50%);
+  width: min(30%, 300px);
+  opacity: .16;
+  pointer-events: none;
+}
+.contacto__logo img { width: 100%; height: auto; }
+@media (max-width: 760px) {
+  .contacto__logo { display: none; }
+}
+
+/* ══ Catálogo de propuestas (demos.html) ═══════════════════════════
+   El aviso de que estas páginas no son encargos va con borde lateral
+   y no con fondo de color: tiene que leerse como una aclaración
+   honesta, no como una alerta de error.                             */
+.aviso {
+  max-width: 62ch;
+  margin: 1.6rem 0 0;
+  padding: .9rem 0 .9rem 1.2rem;
+  border-left: 2px solid var(--cian);
+  color: var(--tenue);
+  font-size: var(--paso--1);
+  line-height: 1.6;
+}
+.aviso strong { color: var(--hueso); }
+
+.filtros {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .5rem;
+  margin: 2.4rem 0 1.8rem;
+}
+
+.filtro {
+  font-family: var(--mono);
+  font-size: var(--paso--1);
+  color: var(--tenue);
+  background: transparent;
+  border: 1px solid rgba(232, 241, 246, .16);
+  border-radius: 999px;
+  padding: .42rem .95rem;
+  cursor: pointer;
+  transition: color .2s, border-color .2s, background-color .2s;
+}
+.filtro:hover { color: var(--hueso); border-color: rgba(232, 241, 246, .38); }
+.filtro:focus-visible { outline: 2px solid var(--cian); outline-offset: 2px; }
+
+/* El chip activo se marca con el cian de la marca sobre fondo propio:
+   el color solo no alcanza cuando hay nueve chips en dos filas. */
+.filtro--activo {
+  color: var(--fondo);
+  background: var(--cian);
+  border-color: var(--cian);
+}
+.filtro__n { opacity: .6; margin-left: .35rem; }
+.filtro--activo .filtro__n { opacity: .75; }
+
+.filtros__vacio { color: var(--tenue); margin: 2rem 0; }
+
+/* La miniatura es un enlace, pero el nombre de al lado lleva al mismo
+   sitio: se saca del orden de tabulación para no repetir la parada. */
+a.proyecto__vista { display: block; }
+
+/* Texto solo para lectores de pantalla: "Ver la propuesta" repetido 52
+   veces no le dice a nadie cuál es cuál fuera de contexto. */
+.vo {
+  position: absolute;
+  width: 1px; height: 1px;
+  padding: 0; margin: -1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+/* El enlace al catálogo de propuestas va más arriba y más legible que
+   el pie de la sección: es una invitación a seguir mirando, no una
+   nota al pie. */
+.proyectos__cta {
+  margin-top: 2.6rem;
+  max-width: 60ch;
+  color: var(--hueso);
+  line-height: 1.65;
+}
+
+/* ══ Llamada al catálogo de propuestas (en el índice) ══════════════
+   Reemplaza un enlace suelto dentro de un párrafo, que pasaba
+   desapercibido justo donde el visitante acaba de mirar los ocho
+   proyectos y quiere ver más. Las cuatro portadas van a tamaño real y
+   sin velo: son el argumento, no decoración de fondo. */
+.propuestas-cta {
+  margin-top: clamp(3rem, 6vw, 4.5rem);
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1.1fr);
+  gap: clamp(1.5rem, 4vw, 3rem);
+  align-items: center;
+  padding: clamp(1.4rem, 3.5vw, 2.4rem);
+  border: 1px solid var(--vidrio-borde);
+  border-radius: 16px;
+  background: var(--vidrio);
+}
+
+.propuestas-cta__tira {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 5px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.propuestas-cta__tira img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+}
+
+.propuestas-cta__numero {
+  font-family: var(--mono);
+  font-size: var(--paso--1);
+  letter-spacing: .09em;
+  text-transform: uppercase;
+  color: var(--cian);
+  margin: 0 0 .5rem;
+}
+.propuestas-cta__numero b { font-weight: 700; }
+
+.propuestas-cta__titulo {
+  font-family: var(--display);
+  font-size: var(--paso-2);
+  line-height: 1.2;
+  margin: 0 0 .7rem;
+  color: var(--hueso);
+}
+
+.propuestas-cta__linea {
+  margin: 0 0 1.5rem;
+  color: var(--tenue);
+  line-height: 1.65;
+  max-width: 46ch;
+}
+
+.propuestas-cta__accion { margin: 0; }
+
+/* En teléfono la tira va arriba: la foto es lo que detiene el pulgar,
+   el texto convence después. */
+@media (max-width: 760px) {
+  .propuestas-cta { grid-template-columns: 1fr; }
+}
+
+/* ── La escena de portada, en las tarjetas de Los Lagos ────────────
+   Sólo la tanda de septiembre de 2026 la tiene, así que la línea vive
+   aparte de .proyecto__nota en vez de meterse dentro: la nota dice qué
+   RESUELVE la página y ésta dice qué se MUEVE, y son dos cosas. */
+.proyecto__escena {
+  margin: 0 0 1rem;
+  font-size: var(--paso--1);
+  line-height: 1.5;
+  color: var(--tenue-mas);
+}
+.proyecto__escena span {
+  display: block;
+  font-family: var(--mono);
+  font-size: .68rem;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+  color: var(--prisma);
+  margin-bottom: .15rem;
+}
+/* La nota deja de estirarse cuando hay escena: si no, empuja la línea
+   de la escena contra los enlaces y las tarjetas quedan disparejas. */
+.proyecto__nota:has(+ .proyecto__escena) { flex: none; margin-bottom: .7rem; }
+
+/* ── Principales (Santiago, septiembre 2026) ───────────────────────
+   Las cinco propuestas premium van ANTES de los proyectos pagados. La
+   primera tarjeta es ancha y se abre en dos columnas (foto | texto)
+   desde 860 px; las otras cuatro son tarjetas normales. Cada una lleva
+   dos líneas más que el resto del catálogo: la pieza firma (qué
+   contesta la página) y la escena (qué se mueve). El sello sobre la
+   foto es un rótulo mono, no un botón.                               */
+.principales-sec { position: relative; }
+.principales-sec::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background: radial-gradient(ellipse at 18% 12%, rgba(87, 217, 232, .10), transparent 55%);
+  pointer-events: none;
+}
+.principales { grid-template-columns: repeat(auto-fit, minmax(min(100%, 320px), 1fr)); }
+.proyecto--ancho { grid-column: 1 / -1; }
+@media (min-width: 860px) {
+  .proyecto--ancho { flex-direction: row; }
+  .proyecto--ancho .proyecto__vista {
+    flex: 0 0 56%;
+    aspect-ratio: auto;
+    border-bottom: 0;
+    border-right: 1px solid var(--vidrio-borde);
+  }
+  .proyecto--ancho .proyecto__cuerpo { justify-content: center; padding: clamp(1.6rem, 3vw, 2.6rem); }
+  .proyecto--ancho .proyecto__nombre { font-size: var(--paso-2); }
+}
+.proyecto__sello {
+  position: absolute;
+  top: .8rem;
+  left: .8rem;
+  z-index: 1;
+  padding: .3rem .6rem;
+  border-radius: 999px;
+  font-family: var(--mono);
+  font-size: .64rem;
+  letter-spacing: .14em;
+  text-transform: uppercase;
+  color: var(--fondo);
+  background: var(--cian);
+}
+.proyecto__firma {
+  margin: .2rem 0 .6rem;
+  font-size: var(--paso--1);
+  line-height: 1.5;
+  color: var(--hueso);
+}
+.proyecto__firma span {
+  display: block;
+  font-family: var(--mono);
+  font-size: .68rem;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+  color: var(--cian);
+  margin-bottom: .15rem;
+}
+.principales .proyecto__escena { margin-bottom: .8rem; }

@@ -1,0 +1,449 @@
+/* ===================================================================
+   205 · Frenos Salazar · Pucon
+   Demo comercial sin encargo. Construida el 02-09-2026.
+
+   DECIMOSEPTIMO automotriz del registro, pero PRIMERO DE FRENOS: los
+   anteriores son talleres generales, servitecas, lubricentros,
+   vulcanizaciones, desabolladuras, repuestos y electricidad. Ninguno
+   es especialista en frenar.
+
+   DESLINDE OBLIGADO CON LA 47-makma-lubricentro, que es de LA MISMA
+   CIUDAD (Pucon) y tambien automotriz: aquella es «Gris de taller»
+   —gris medio con ambar de aceite— y su tema es EL CAMBIO PROGRAMADO,
+   la mantencion que toca cada tantos kilometros. Esta es EL FRENO: no
+   es rutina, es lo que decide si el auto se detiene. Por eso el gris
+   medio de la 47 queda PROHIBIDO aca y el fondo es claro y frio.
+
+   DIRECCION - «ACA SE BAJA MAS DE LO QUE SE SUBE»
+   La identidad no sale del rubro: sale del LUGAR. En Pucon el freno
+   trabaja distinto que en la ciudad —bajadas largas, curvas seguidas,
+   autos cargados de vacaciones—, y eso no lo dice ningun manual. La
+   pieza firma es la bajada, no el repuesto.
+
+   PALETA — clara y fria, del fierro fundido recien rectificado:
+   asfalto-claro `#EFEFEC` + panel `#E4E4E0` + panel-2 `#DCDCD7` +
+   tinta `#1B1D1E` (14,5:1) + medio `#565A5C` (5,1:1 sobre el peor
+   fondo, calibrado de entrada).
+   ACENTO: LA LINEA DEL EJE. `#6E5000` para TEXTO (5,4:1 sobre panel-2)
+   y `#E9B21C` para OBJETOS, que es el amarillo real de la demarcacion
+   pintada en el pavimento de una cuesta.
+   **Deslinde obligado con la senaletica del registro: la 45 (azul
+   vial), la 188 (verde de senaletica caminera) y la 120 (naranjo de
+   senal sobre pizarra) son SENALES VERTICALES, letreros. Este es
+   PINTURA HORIZONTAL sobre el pavimento** — no informa, delimita. Y de
+   los otros amarillos: la 127 es MAQUINARIA de obra, la 121 es rotulo,
+   la 158 es PASTEL de manta, la 200 es VIRUTA CALIENTE (metal), y el
+   oro de The Temple y la 191 es metal precioso.
+
+   TRIO — verificado contra identidades.md el 02-09-2026:
+   · Display MERRIWEATHER (0 usos, variable). Serif solida y seria: en
+     una pagina que habla de detenerse a tiempo, la cara tiene que ser
+     de cosa comprobada, no de aviso.
+   · Cuerpo MUKTA (4 usos). Sans muy legible en parrafo largo.
+   · Mono LEKTON (6 usos) — de maquina de escribir, que es justo el
+     tono del dato grabado en el canto del disco.
+
+   ESTRUCTURA: lista numerada 01-06 con DOS PASOS DESTACADOS (el olor a
+   quemado y el pedal blando, los dos unicos que son de seguridad) +
+   reticula de seis senales + UN BLOQUE APARTE, «el disco trae escrito
+   cuando se cambia», que es el dato de confianza de toda la demo.
+
+   AMBIENTE: LA LINEA QUE PASA (primera del registro). Cinco trazos de
+   la demarcacion del eje que bajan y se agrandan, como se ve la linea
+   amarilla desde adentro del auto en una bajada. Deslinde con LA
+   CORRIENTE de la 204: alla un brillo RECORRE una linea que esta
+   quieta; aca los trazos SON la linea y son ellos los que se mueven,
+   con escala creciente para dar la perspectiva. Y con la lluvia de la
+   188: aquella es diagonal, rapida y de muchas gotas finas; estos son
+   pocos, gruesos y del color del acento.
+
+   REGLA DE SEGURIDAD Y DE DATOS, escrita aca y repetida en el pie:
+   ni una instruccion de desarme, ni una cifra de espesor minimo —ese
+   numero es distinto en cada disco y viene grabado en el propio
+   disco—, y un aviso explicito de que ante cualquier duda hay que
+   detenerse y hacer revisar, no seguir andando con una explicacion de
+   internet. Verificado en el DOM: la pagina no contiene ninguna cifra.
+   =================================================================== */
+
+:root {
+  --claro:   #EFEFEC;
+  --panel:   #E4E4E0;
+  --panel-2: #DCDCD7;   /* el peor fondo: todo se calibra contra este */
+  --tinta:   #1B1D1E;
+  --medio:   #565A5C;
+  --linea-a: #6E5000;   /* TEXTO */
+  --linea-o: #E9B21C;   /* OBJETOS: nunca texto */
+  --borde:   #C6C6C0;
+
+  --sale:   cubic-bezier(.16, 1, .3, 1);
+  --sale-2: cubic-bezier(.2, 0, 0, 1);
+
+  --ancho: min(92vw, 1150px);
+  --p--1: clamp(.78rem, .74rem + .18vw, .88rem);
+  --p-0:  clamp(1rem, .95rem + .25vw, 1.1rem);
+  --p-1:  clamp(1.12rem, 1.02rem + .45vw, 1.32rem);
+  --p-2:  clamp(1.45rem, 1.2rem + 1.1vw, 2rem);
+  --p-3:  clamp(1.85rem, 1.4rem + 2vw, 2.9rem);
+  --p-4:  clamp(2.2rem, 1.6rem + 3vw, 4.2rem);
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+[hidden] { display: none !important; }
+html { scroll-behavior: smooth; }
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+
+body {
+  margin: 0; background: var(--claro); color: var(--tinta);
+  font-family: Mukta, "Segoe UI", system-ui, sans-serif;
+  font-size: var(--p-0); line-height: 1.66;
+  -webkit-font-smoothing: antialiased;
+}
+img { max-width: 100%; }
+a { color: inherit; }
+.ancho { width: var(--ancho); margin-inline: auto; }
+
+.rotulo {
+  font-family: Lekton, ui-monospace, monospace;
+  font-size: var(--p--1); letter-spacing: .13em; text-transform: uppercase;
+  color: var(--linea-a); margin: 0 0 1.4rem;
+}
+.h2 {
+  font-family: Merriweather, Georgia, serif; font-weight: 700;
+  font-size: var(--p-3); line-height: 1.18; letter-spacing: -.015em; margin: 0 0 1.5rem;
+}
+.h2--chico { font-size: var(--p-2); }
+.mini { font-size: var(--p--1); color: var(--medio); max-width: 70ch; }
+.mini b { color: var(--tinta); }
+.nota { font-size: var(--p--1); color: var(--medio); max-width: 74ch; margin-top: 2.4rem; }
+.nota b { color: var(--tinta); }
+.falta { color: var(--medio); font-style: italic; }
+.ej { color: var(--medio); font-style: italic; border-bottom: 1px dashed var(--borde); }
+.ej::after {
+  content: " (ej.)"; font-family: Lekton, ui-monospace, monospace;
+  font-size: .8em; font-style: normal; opacity: .85;
+}
+
+/* -- BANDA DE PROPUESTA ------------------------------------------ */
+.propuesta { background: var(--tinta); color: #EFEFEC; }
+.propuesta__in { padding: .9rem 0; }
+.propuesta__q { font-family: Lekton, ui-monospace, monospace; font-size: var(--p--1); letter-spacing: .03em; margin: 0 0 .2rem; color: var(--linea-o); }
+.propuesta__d { margin: 0; font-size: var(--p--1); line-height: 1.5; max-width: 100ch; }
+
+/* -- CABECERA ---------------------------------------------------- */
+.cab {
+  position: sticky; top: 0; z-index: 50;
+  background: var(--claro); border-bottom: 1px solid var(--borde);
+  transition: transform .3s var(--sale-2), background-color .3s ease, border-color .3s ease;
+}
+.cab__in { display: flex; align-items: center; justify-content: space-between; gap: 1.2rem; padding: .55rem 0; }
+.cab__marca { display: inline-flex; align-items: center; gap: .8rem; text-decoration: none; min-height: 44px; }
+.cab__txt {
+  font-family: Merriweather, Georgia, serif; font-weight: 700;
+  font-size: var(--p-1); line-height: 1.1; display: flex; flex-direction: column; gap: .24rem;
+}
+.cab__sub {
+  font-family: Lekton, ui-monospace, monospace; font-weight: 400;
+  font-size: .58em; letter-spacing: .06em; color: var(--medio); text-transform: uppercase;
+}
+.cab__nav { display: flex; align-items: center; gap: 1.5rem; }
+.cab__nav a {
+  font-size: var(--p--1); text-decoration: none; color: var(--medio);
+  min-height: 44px; display: inline-flex; align-items: center; transition: color .2s ease;
+}
+.cab__nav a:hover, .cab__nav a:focus-visible { color: var(--tinta); }
+.cab__tel { color: var(--linea-a) !important; font-family: Lekton, ui-monospace, monospace; white-space: nowrap; }
+
+/* Cabecera 171a - LA PASTILLA MORDIENDO EL DISCO: el circulo del disco
+   y el rectangulo redondeado de la pastilla apretandolo por el canto.
+   Ningun disco de freno ni pinza en las 204 anteriores. */
+.frn { position: relative; width: 28px; height: 26px; flex: 0 0 auto; }
+.frn__disco {
+  position: absolute; left: 0; top: 1px; width: 24px; height: 24px;
+  border: 2px solid var(--tinta); border-radius: 50%;
+}
+.frn__disco::after {
+  content: ""; position: absolute; left: 7px; top: 7px; width: 6px; height: 6px;
+  border: 1.5px solid var(--medio); border-radius: 50%;
+}
+.frn__pastilla {
+  position: absolute; right: 0; top: 8px; width: 11px; height: 10px;
+  background: var(--linea-o); border: 1.5px solid var(--tinta); border-radius: 2px;
+}
+
+.js .cab--top { background: transparent; border-bottom-color: transparent; }
+.js .cab--oculta { transform: translateY(-100%); }
+@media (prefers-reduced-motion: reduce) { .cab { transition-duration: 1ms; } }
+
+/* -- PORTADA ----------------------------------------------------- */
+.portada {
+  position: relative; isolation: isolate; overflow: hidden;
+  min-height: 88svh; display: flex; align-items: center; padding: 5rem 0 4rem;
+}
+.portada__foto { position: absolute; inset: 0; z-index: -3; }
+.portada__foto img {
+  display: block; width: 100%; height: 100%; object-fit: cover; object-position: 66% 55%;
+  -webkit-mask-image: linear-gradient(90deg, transparent 0%, transparent 20%, rgba(0,0,0,.28) 41%, rgba(0,0,0,.76) 62%, #000 80%, #000 100%);
+          mask-image: linear-gradient(90deg, transparent 0%, transparent 20%, rgba(0,0,0,.28) 41%, rgba(0,0,0,.76) 62%, #000 80%, #000 100%);
+}
+/* Velo entero en rgba terminando en alfa 0. */
+.portada__foto::after {
+  content: ""; position: absolute; inset: 0;
+  background: linear-gradient(90deg,
+    rgba(239,239,236,1) 0%, rgba(239,239,236,1) 37%, rgba(239,239,236,.92) 52%,
+    rgba(239,239,236,.52) 69%, rgba(239,239,236,.16) 86%, rgba(239,239,236,0) 97%);
+}
+.portada__in { position: relative; z-index: 1; }
+.portada__h1 {
+  font-family: Merriweather, Georgia, serif; font-weight: 700;
+  font-size: var(--p-4); line-height: 1.12; letter-spacing: -.028em; margin: 0 0 1.3rem;
+}
+.portada__bajada { max-width: 44ch; color: var(--medio); font-size: var(--p-1); margin: 0 0 2.4rem; }
+.portada__bajada b { color: var(--tinta); }
+.portada__pie { margin: 0; }
+
+/* -- AMBIENTE: LA LINEA QUE PASA --------------------------------- */
+/* Cinco trazos de la demarcacion del eje que bajan y se agrandan, como
+   se ve la linea amarilla desde adentro del auto en una bajada.
+   Deslinde con LA CORRIENTE de la 204: alla un brillo RECORRE una
+   linea quieta; aca los trazos SON la linea y son ellos los que se
+   mueven. Determinista: --i por nth-child (la CSP bloquea style="").
+   Solo transform y opacity. */
+.amb { position: absolute; inset: 0; z-index: -2; overflow: hidden; pointer-events: none; }
+.amb__t {
+  position: absolute; top: -12vh; left: 76%;
+  width: 10px; height: 68px; border-radius: 3px;
+  background: rgba(233, 178, 28, .5);
+  opacity: 0;
+  animation: amb-pasa var(--dur, 7s) linear infinite;
+  animation-delay: calc(var(--i) * -1.5s);
+  will-change: transform, opacity;
+}
+.amb--linea .amb__t:nth-child(1) { --i: 0; --dur: 7s; }
+.amb--linea .amb__t:nth-child(2) { --i: 1; --dur: 7s; }
+.amb--linea .amb__t:nth-child(3) { --i: 2; --dur: 7s; }
+.amb--linea .amb__t:nth-child(4) { --i: 3; --dur: 7s; }
+.amb--linea .amb__t:nth-child(5) { --i: 4; --dur: 7s; }
+@keyframes amb-pasa {
+  0%   { transform: translate3d(0, 0, 0) scale(.45); opacity: 0; }
+  14%  { opacity: .85; }
+  86%  { opacity: .85; }
+  100% { transform: translate3d(9vw, 118vh, 0) scale(1.9); opacity: 0; }
+}
+@media (prefers-reduced-motion: reduce) { .amb { display: none; } }
+@media (max-width: 760px) {
+  /* A 375 px la linea se corre al borde: a 84% cruzaba la bajada. */
+  .amb__t { left: 91%; background: rgba(233, 178, 28, .38); }
+  .amb__t:nth-child(n+4) { display: none; }
+}
+
+/* -- BOTONES ----------------------------------------------------- */
+.boton {
+  position: relative; display: inline-flex; align-items: center; justify-content: center;
+  min-height: 48px; padding: .8rem 1.8rem;
+  border: 1px solid var(--linea-a); color: var(--linea-a); background: transparent;
+  font-family: Lekton, ui-monospace, monospace;
+  font-size: var(--p--1); letter-spacing: .09em; text-transform: uppercase;
+  text-decoration: none; overflow: hidden; isolation: isolate;
+}
+.boton::before {
+  content: ""; position: absolute; inset: 0; z-index: -1;
+  background: var(--linea-a); transform: translateY(101%); transition: transform .4s var(--sale);
+}
+.boton:hover, .boton:focus-visible { color: var(--claro); }
+.boton:hover::before, .boton:focus-visible::before { transform: translateY(0); }
+.boton--fuerte { background: var(--linea-a); color: var(--claro); }
+.boton--fuerte::before { background: var(--tinta); }
+@media (prefers-reduced-motion: reduce) { .boton::before { transition-duration: 1ms; } }
+
+.flecha {
+  display: inline-flex; align-items: center; gap: .5rem; min-height: 44px;
+  font-family: Lekton, ui-monospace, monospace; font-size: var(--p--1); letter-spacing: .05em;
+  color: var(--linea-a); text-decoration: none; border-bottom: 1px solid currentColor;
+  transition: border-bottom-width .2s ease;
+}
+.flecha:hover, .flecha:focus-visible { border-bottom-width: 3px; }
+
+/* -- PIEZA FIRMA: BAJAR LARGO ------------------------------------ */
+.bajar { padding: 7rem 0; background: var(--panel); }
+.bajar .intro, .senales .intro { max-width: 66ch; color: var(--medio); font-size: var(--p-1); margin: 0 0 3rem; }
+.bajar .intro b, .senales .intro b { color: var(--tinta); }
+
+.baj { list-style: none; margin: 0; padding: 0; border-top: 2px solid var(--tinta); }
+.b {
+  display: grid; grid-template-columns: 4rem 1fr; gap: 1.4rem;
+  padding: 1.5rem 0; border-bottom: 1px solid var(--borde);
+}
+.b__n { font-family: Lekton, ui-monospace, monospace; font-size: var(--p-1); color: var(--linea-a); line-height: 1.3; margin: 0; }
+.b h3 { font-family: Merriweather, Georgia, serif; font-weight: 700; font-size: var(--p-1); margin: 0 0 .5rem; line-height: 1.25; }
+.b p { margin: 0; color: var(--medio); font-size: var(--p--1); line-height: 1.7; max-width: 78ch; }
+.b p b { color: var(--tinta); }
+/* Los dos unicos pasos que son de seguridad van marcados. */
+.b.destacado { background: var(--claro); padding-inline: 1.2rem; border-left: 4px solid var(--linea-o); }
+
+/* -- CITA -------------------------------------------------------- */
+.cita { position: relative; isolation: isolate; overflow: hidden; min-height: min(48vh, 370px); display: grid; align-items: center; }
+.cita img { position: absolute; inset: 0; z-index: -2; width: 100%; height: 100%; object-fit: cover; object-position: 50% 55%; }
+/* Peor caso medido a mano: la roca clara bajo el velo .82 sobre tinta
+   deja el texto claro en 11:1. El auditor marca 1,00:1 porque no ve el
+   ::after y trepa hasta el body — falso positivo conocido. */
+.cita::after { content: ""; position: absolute; inset: 0; z-index: -1; background: rgba(27,29,30,.82); }
+.cita__txt p {
+  font-family: Merriweather, Georgia, serif; font-weight: 700;
+  font-size: var(--p-2); line-height: 1.3; max-width: 26ch; margin: 0; color: var(--claro);
+}
+
+/* -- LAS SEÑALES ------------------------------------------------- */
+.senales { padding: 7rem 0; }
+.sen { display: grid; grid-template-columns: repeat(3, 1fr); gap: 2.3rem 2.5rem; margin-bottom: 3.5rem; }
+.sn { border-top: 2px solid var(--linea-o); padding-top: 1rem; }
+.sn h3 { font-family: Merriweather, Georgia, serif; font-weight: 700; font-size: var(--p-0); margin: 0 0 .6rem; line-height: 1.3; }
+.sn p { margin: 0; color: var(--medio); font-size: var(--p--1); line-height: 1.68; }
+.sn p b { color: var(--tinta); }
+
+/* El bloque del dato de confianza: va aparte porque es LA idea. */
+.grabado {
+  background: var(--tinta); color: var(--claro);
+  padding: clamp(2rem, 4vw, 3.4rem); border-left: 6px solid var(--linea-o);
+}
+.grabado__r {
+  font-family: Lekton, ui-monospace, monospace; font-size: var(--p--1);
+  letter-spacing: .16em; text-transform: uppercase; color: var(--linea-o); margin: 0 0 .9rem;
+}
+.grabado__t {
+  font-family: Merriweather, Georgia, serif; font-weight: 700;
+  font-size: var(--p-2); line-height: 1.24; margin: 0 0 1.4rem;
+}
+.grabado__p { margin: 0 0 1rem; max-width: 72ch; color: #C9CCCD; font-size: var(--p--1); line-height: 1.75; }
+.grabado__p b { color: var(--claro); }
+.grabado__pie {
+  margin: 1.4rem 0 0; padding-top: 1.1rem; border-top: 1px solid #3A3D3E;
+  color: #C9CCCD; font-size: var(--p--1); max-width: 72ch;
+}
+.grabado__pie b { color: var(--linea-o); }
+
+/* -- TAJO -------------------------------------------------------- */
+.tajo { position: relative; isolation: isolate; overflow: hidden; margin: 0; min-height: min(52vh, 400px); display: flex; align-items: flex-end; }
+.tajo img { position: absolute; inset: 0; z-index: -2; width: 100%; height: 100%; object-fit: cover; object-position: 50% 45%; }
+.tajo::after {
+  content: ""; position: absolute; inset: 0; z-index: -1;
+  background: linear-gradient(0deg, rgba(27,29,30,.95) 0%, rgba(27,29,30,.8) 34%, rgba(27,29,30,.3) 64%, rgba(27,29,30,0) 92%);
+}
+.tajo__txt { padding: 2.8rem 0; }
+.tajo__txt .rotulo { color: var(--linea-o); }
+.tajo__f { font-family: Merriweather, Georgia, serif; font-weight: 700; font-size: var(--p-2); margin: 0; line-height: 1.28; max-width: 26ch; color: var(--claro); }
+
+/* -- MITADES ----------------------------------------------------- */
+.mitades { display: grid; grid-template-columns: 1fr 1fr; background: var(--panel); }
+.mitades__foto img { display: block; width: 100%; height: 100%; object-fit: cover; }
+.mitades__txt { padding: 5.5rem clamp(1.5rem, 4vw, 4rem); display: flex; flex-direction: column; justify-content: center; }
+.mitades__txt p { color: var(--medio); }
+.mitades__txt p b { color: var(--tinta); }
+.lista { margin: 1.3rem 0; padding: 0; list-style: none; }
+.lista li { padding: .6rem 0 .6rem 1.5rem; position: relative; border-bottom: 1px solid var(--borde); font-size: var(--p--1); color: var(--medio); }
+.lista li b { color: var(--tinta); }
+.lista li::before { content: ""; position: absolute; left: 0; top: 1.1em; width: 8px; height: 2px; background: var(--linea-o); }
+.lista--marca li { border-bottom: none; padding-bottom: .3rem; }
+
+/* -- MOSAICO ----------------------------------------------------- */
+.mos { padding: 7rem 0 0; background: var(--panel-2); }
+.mos__grilla { display: grid; gap: 4px; grid-template-columns: repeat(3, 1fr); margin-top: 3rem; }
+.mos__p { margin: 0; overflow: hidden; }
+.mos__p:nth-child(1), .mos__p:nth-child(6) { grid-column: span 2; }
+.mos__p img { display: block; width: 100%; height: 100%; aspect-ratio: 3 / 2; object-fit: cover; transition: transform .5s var(--sale); }
+.mos__p:hover img { transform: scale(1.05); }
+@media (prefers-reduced-motion: reduce) { .mos__p:hover img { transform: none; } }
+
+/* -- CONTACTO ---------------------------------------------------- */
+.con-telon { position: relative; isolation: isolate; overflow: hidden; }
+.telon { position: absolute; inset: 0; z-index: -1; pointer-events: none; }
+.telon img {
+  display: block; width: 100%; height: 100%; object-fit: cover; opacity: .14;
+  -webkit-mask-image: linear-gradient(180deg, transparent 0%, #000 22%, #000 74%, transparent 100%);
+          mask-image: linear-gradient(180deg, transparent 0%, #000 22%, #000 74%, transparent 100%);
+}
+.contacto { padding: 7rem 0; }
+.contacto__num { margin: 0 0 1rem; }
+.contacto__num a {
+  font-family: Merriweather, Georgia, serif; font-weight: 700;
+  font-size: clamp(1.5rem, 1rem + 2.9vw, 3.2rem); line-height: 1.1; color: var(--linea-a);
+  text-decoration: none; display: inline-flex; align-items: center; min-height: 44px;
+  border-bottom: 3px solid transparent; transition: border-color .25s ease;
+}
+.contacto__num a:hover, .contacto__num a:focus-visible { border-bottom-color: var(--linea-a); }
+.contacto__nota { color: var(--medio); font-size: var(--p--1); margin: 0 0 2.4rem; max-width: 58ch; }
+
+.datos { margin: 0 0 2rem; max-width: 48rem; }
+.datos > div { display: flex; justify-content: space-between; gap: 1.5rem; padding: .8rem 0; border-bottom: 1px solid var(--borde); }
+.datos dt { font-family: Lekton, ui-monospace, monospace; font-size: var(--p--1); color: var(--medio); letter-spacing: .05em; text-transform: uppercase; }
+.datos dd { margin: 0; text-align: right; font-size: var(--p--1); }
+
+/* -- PARA EL DUENO ----------------------------------------------- */
+.dueno { padding: 7rem 0; border-top: 1px solid var(--borde); background: var(--panel-2); }
+.dueno__cols { display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; margin-bottom: 3rem; }
+.dueno h3 {
+  font-family: Lekton, ui-monospace, monospace;
+  font-size: var(--p--1); letter-spacing: .09em; text-transform: uppercase;
+  color: var(--linea-a); margin: 2rem 0 1rem;
+}
+.dueno p { color: var(--medio); max-width: 62ch; }
+.dueno p b { color: var(--tinta); }
+.dueno__cierre { display: flex; flex-wrap: wrap; gap: 2rem; align-items: center; margin-top: 3rem; }
+
+.pie { padding: 3rem 0; border-top: 1px solid var(--borde); }
+.pie__in p { font-size: var(--p--1); color: var(--medio); margin: 0 0 .8rem; }
+.pie__in p b { color: var(--tinta); }
+.pie__leg { opacity: .95; }
+
+/* -- REVEALS ----------------------------------------------------- */
+.js [data-rev-grupo] > * { opacity: 0; transform: translateY(22px); }
+.js [data-rev-grupo].ok > * {
+  opacity: 1; transform: none;
+  transition: opacity .3s ease-out, transform .55s var(--sale);
+  transition-delay: calc(var(--r, 0) * 55ms);
+}
+[data-rev-grupo] > :nth-child(1){--r:0} [data-rev-grupo] > :nth-child(2){--r:1}
+[data-rev-grupo] > :nth-child(3){--r:2} [data-rev-grupo] > :nth-child(4){--r:3}
+[data-rev-grupo] > :nth-child(5){--r:4} [data-rev-grupo] > :nth-child(6){--r:5}
+@media (prefers-reduced-motion: reduce) {
+  .js [data-rev-grupo] > * { opacity: 1; transform: none; transition: none; }
+}
+:focus-visible { outline: 2px solid var(--linea-a); outline-offset: 3px; }
+
+/* -- MOVIL ------------------------------------------------------- */
+@media (max-width: 1080px) {
+  .sen { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 980px) {
+  .mitades { grid-template-columns: 1fr; }
+  .mitades__foto img { aspect-ratio: 16 / 10; height: auto; }
+  .dueno__cols { grid-template-columns: 1fr; gap: 1rem; }
+}
+@media (max-width: 760px) {
+  .cab__nav a:not(.cab__tel) { display: none; }
+  .portada { min-height: auto; padding: 3.5rem 0 3rem; }
+  /* En telefono el texto cae ENCIMA de la foto: la mascara lateral no
+     sirve a 375 px, asi que el velo se da vuelta y baja. */
+  .portada__foto img {
+    object-position: 58% 55%;
+    -webkit-mask-image: linear-gradient(180deg, #000 0%, #000 58%, transparent 100%);
+            mask-image: linear-gradient(180deg, #000 0%, #000 58%, transparent 100%);
+  }
+  .portada__foto::after {
+    background: linear-gradient(180deg,
+      rgba(239,239,236,.9) 0%, rgba(239,239,236,.84) 34%, rgba(239,239,236,.92) 64%, rgba(239,239,236,1) 100%);
+  }
+  .sen { grid-template-columns: 1fr; gap: 1.8rem; }
+  .b { grid-template-columns: 2.8rem 1fr; gap: 1rem; }
+  .b.destacado { padding-inline: .9rem; }
+  .bajar, .senales, .contacto, .dueno { padding: 4.5rem 0; }
+  .mos { padding-top: 4.5rem; }
+  .mos__grilla { grid-template-columns: repeat(2, 1fr); }
+  .mos__p:nth-child(1), .mos__p:nth-child(6) { grid-column: span 2; }
+}
+@media (max-width: 480px) {
+  .cab__sub { font-size: .5em; }
+}
+@media (max-width: 460px) {
+  .datos > div { flex-direction: column; gap: .2rem; }
+  .datos dd { text-align: left; }
+}

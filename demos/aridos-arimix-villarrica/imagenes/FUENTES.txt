@@ -1,0 +1,46 @@
+FUENTES DE LAS IMÁGENES — 207 · Áridos Arimix (Villarrica)
+==========================================================
+NINGUNA de estas fotos es de la planta ni de los materiales de este
+negocio. Son de bancos de uso libre (pxhere, pexels), bajadas con
+FotoRadar y reescaladas con preparar-lote.ps1.
+
+fondo-01.jpg  · 2200px · portada — frente de material partido
+banda-01.jpg  · 1800px · cita — camión con una carga enorme en la carretera
+  Es la foto de «el flete manda», y va bajo velo oscuro.
+tajo-01.jpg   · 2000px · tajo — **el río con sus piedras**
+  Es la que explica la paleta: el árido de Arimix sale de lecho de río,
+  y el único color de la página es el del agua de donde sale la piedra.
+telon-01.jpg  · 1000px · telón del contacto — gravilla fina
+media-01.jpg  · 1500px · mitades — camión articulado en la faena
+mos-01.jpg    · 1200px · ripio mezclado
+mos-02.jpg    · 1200px · piedras de río redondeadas
+mos-03.jpg    · 1200px · textura de arena
+mos-04.jpg    · 1200px · bolón de río
+mos-05.jpg    · 1200px · el río corriendo sobre las piedras
+mos-06.jpg    · 1200px · piedra en detalle
+
+Consultas usadas: «gravel pile quarry aggregate pxhere», «dump truck
+tipping gravel pxhere», «river stones bed water pxhere», «sand texture
+close macro pxhere», «gravel stones texture crushed pxhere», «truck
+loaded sand road pxhere». Las URL completas quedaron en
+`devs\material\busquedas\207-aridos\<carpeta>\FUENTES.txt`.
+
+
+CRITERIO: PIEDRA REDONDEADA, NO PARTIDA
+----------------------------------------
+Es el detalle que separa esta demo de la **53-aridos-las-camelias**, el
+otro árido del registro: aquélla es **cantera** —piedra partida,
+angulosa, con caras planas— y Arimix es **río** —piedra redondeada por
+el agua—. Cinco de las once fotos son de canto rodado o de agua
+corriendo sobre piedra, a propósito: **no se parecen ni en el
+material**.
+
+DESCARTADAS
+-----------
+· Un corazón dibujado en la arena. Es una foto de arena, técnicamente,
+  y en una página B2B de áridos sería ridícula.
+· Una camioneta roja salpicando barro a toda velocidad: es publicidad
+  de otra cosa, y además la marca del vehículo se reconoce.
+· Una obra cubierta de nieve: la foto es buena y el mensaje es «acá no
+  se está trabajando».
+· Torres de piedras apiladas tipo zen. Bonitas y de otro rubro.

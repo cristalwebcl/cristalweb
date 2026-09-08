@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="es-CL" class="no-js">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Supermercado y Panadería Blas Reyes — Loncoche</title>
+<meta name="description" content="Supermercado con panadería propia en Loncoche. Colaciones por encargo para cuadrillas y el día completo del local.">
+
+<!-- Política de seguridad de contenido: el navegador sólo puede cargar
+     archivos de este mismo sitio. Sin CDN, sin librerías, sin rastreadores.
+     Ver skills/web-blindada/references/csp-en-pages.md -->
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self'; img-src 'self' data:; font-src 'self'; connect-src 'self'; media-src 'self'; form-action 'self'; base-uri 'none'; frame-src 'none'; object-src 'none'">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+
+<!-- Rescate de la clase .js (regla 2 de la casa). En archivo, sin defer:
+     inline lo bloquearía la CSP. -->
+<script src="js/rescate.js"></script>
+
+<!-- Fuentes propias: cero peticiones a terceros. -->
+<link rel="preload" href="assets/fuentes/baloobhaijaan2-var-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="assets/fuentes.css">
+<link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+
+<div class="propuesta">
+  <p class="propuesta__que">Propuesta de sitio web — preparada para <b>Supermercado y Panadería Blas Reyes</b> por CristalWeb</p>
+  <p class="propuesta__gancho">Loncoche es comuna de cuadrillas: forestales, obras, faenas. Todas comen colación todos los días. El súper con panadería propia que puede armar veinte colaciones para mañana a las siete no lo dice en ninguna parte.</p>
+</div>
+
+<header class="cab" id="cab">
+  <a class="cab__marca" href="#portada">
+    <span class="marraqueta" aria-hidden="true"></span>
+    <span class="cab__nombre">Blas Reyes</span>
+  </a>
+  <nav class="cab__nav" aria-label="Secciones">
+    <a href="#colacion">La colación</a>
+    <a href="#dia">El día del local</a>
+  </nav>
+  <a class="cab__tel" href="tel:+56961961492">
+    <span class="cab__tel-rot">Encargar colación</span>
+    <span class="cab__tel-num">9 6196 1492</span>
+  </a>
+</header>
+
+<main>
+
+<!-- ========= PORTADA ========= -->
+<section class="portada portada--foto" id="portada" aria-labelledby="t-portada">
+  <!-- EL FONDO DE PORTADA: 2560 px, nitido, sin blur y sin recomprimir.
+       Lo que lo hace desaparecer bajo el titular es un gradiente lateral
+       (mask-image), no un desenfoque: la mitad derecha se ve a foco
+       completo y sobre la columna del texto la imagen no existe. Asi el
+       contraste medido no cambia y la foto no se ve barata. -->
+  <div class="portada__foto" aria-hidden="true">
+    <img src="imagenes/fondo-01.jpg" width="2200" height="1467"
+         decoding="async" fetchpriority="high" alt="">
+  </div>
+
+  <div class="harina" aria-hidden="true">
+    <i class="h h1"></i><i class="h h2"></i><i class="h h3"></i><i class="h h4"></i>
+    <i class="h h5"></i><i class="h h6"></i><i class="h h7"></i>
+    <span class="harina__linea"></span>
+  </div>
+
+  <div class="portada__texto">
+    <p class="sitio">Supermercado y panadería · Loncoche</p>
+    <h1 id="t-portada">¿Me arman quince<br>para mañana?</h1>
+    <p class="bajada">Es la pregunta del capataz a las seis de la tarde, cuando ya cerró
+      todo. Un local con panadería propia puede contestarla que sí — y eso, escrito, es la
+      diferencia entre vender quince colaciones al día o ninguna.</p>
+    <dl class="specs">
+      <div class="spec"><dt>reseñas en Google</dt><dd>86</dd></div>
+      <div class="spec"><dt>teléfono</dt><dd class="dd--tel"><a href="tel:+56961961492">9 6196 1492</a></dd></div>
+    </dl>
+  </div>
+</section>
+
+<!-- ========= LA PIEZA FIRMA ========= -->
+<section class="colacion con-telon" id="colacion" aria-labelledby="t-col">
+  <div class="telon" aria-hidden="true">
+    <img src="imagenes/telon-01.jpg" width="1200" height="800" decoding="async" alt="">
+  </div>
+
+  <!-- AURA DE COLOR: la foto reventada a desenfoque. Deja de leerse
+       como imagen y queda el calor del pan detrás de una sección que
+       si no sería papel liso. Acá el desenfoque SÍ es el efecto, y por
+       eso el archivo va a 900 px: a 64 px de blur, más resolución no
+       cambia nada. Sin lazy porque va en absoluto con z-index negativo
+       y el navegador nunca lo considera visible. -->
+  <div class="aura" aria-hidden="true">
+    <img src="imagenes/aura-01.jpg" width="900" height="600" decoding="async" alt="">
+  </div>
+  <div class="colacion__cabecera">
+    <p class="antetitulo">El pedido por encargo</p>
+    <h2 id="t-col">La colación de la cuadrilla</h2>
+    <p class="entrada">Diez, quince, veinte colaciones armadas y listas a la hora que sale
+      la camioneta. Es un negocio chico por unidad y grande por volumen, y funciona todos
+      los días del año — pero sólo si el capataz sabe que existe y hasta qué hora puede
+      encargarlo.</p>
+    <p class="marca-ejemplo marca-ejemplo--fuerte" data-ejemplo="CONTENIDO DE EJEMPLO — lo que va en cada colación y su precio los define el local"></p>
+  </div>
+
+  <div class="cajas">
+    <article class="ca">
+      <p class="ca__rot">Ejemplo</p>
+      <h3>Qué puede llevar</h3>
+      <ul>
+        <li>Un sánguche de la panadería propia</li>
+        <li>Algo dulce o una fruta</li>
+        <li>Una bebida o un jugo</li>
+        <li>Servilleta y bolsa, cada colación aparte</li>
+      </ul>
+      <p class="ca__nota">Esto es una armada tipo, no la de ustedes. La combinación real y
+        las variantes las pone el local.
+        <span class="falta">falta: qué lleva cada colación y qué opciones hay</span></p>
+    </article>
+
+    <article class="ca">
+      <p class="ca__rot">Lo que hay que saber</p>
+      <h3>Cómo se encarga</h3>
+      <dl class="ca__datos">
+        <div><dt>Hasta qué hora del día anterior</dt><dd class="pend">falta</dd></div>
+        <div><dt>Mínimo de colaciones</dt><dd class="pend">falta</dd></div>
+        <div><dt>Hora de retiro</dt><dd class="pend">falta</dd></div>
+        <div><dt>¿Se puede dejar en la faena?</dt><dd class="pend">falta</dd></div>
+        <div><dt>Cómo se paga</dt><dd class="pend">falta — al retirar, con factura, mensual</dd></div>
+      </dl>
+      <p class="ca__nota">Estas cinco respuestas son toda la sección. Un capataz que las lee
+        una vez, encarga por meses.</p>
+    </article>
+
+    <article class="ca ca--ancha">
+      <p class="ca__rot">Por qué esto vende</p>
+      <h3>Una cuadrilla no compra una vez</h3>
+      <p>Un pedido de colaciones no es una venta: es una rutina. La misma faena encarga
+        lunes a viernes durante los meses que dure el trabajo, y el que la toma primero la
+        conserva hasta que termina la obra.</p>
+      <p>Y la ventaja de un local con panadería propia es concreta: el pan se hornea acá, así
+        que el sánguche del día se arma con pan del día sin depender de nadie.</p>
+      <p class="ca__nota">Acá no hay precios: los pone el local y cambian con el contenido.
+        <span class="falta">falta: si quieren publicar un valor por colación</span></p>
+    </article>
+  </div>
+</section>
+
+<!-- ========= EL DÍA DEL LOCAL — LÁMINAS (E) ========= -->
+<!-- ========= BANDA A MEDIA PAGINA ========= -->
+<section class="banda banda--horno" aria-labelledby="t-banda">
+  <div class="banda__foto" aria-hidden="true">
+    <img src="imagenes/fondo-03.jpg" width="2560" height="1707"
+         loading="lazy" decoding="async" alt="">
+  </div>
+  <div class="banda__texto">
+    <p class="banda__ante">Lo que se arma de madrugada</p>
+    <h2 id="t-banda">La panadería empieza cuando el pueblo duerme</h2>
+    <p class="banda__parr">Un local con horno propio no vende pan: vende la hora
+      a la que el pan está listo. Esa hora decide si una cuadrilla come caliente
+      a las siete o come frío a las nueve — y es lo único que un supermercado
+      con panadería puede prometer y una cadena no.</p>
+  </div>
+</section>
+
+<!-- ========= MEDIA PANTALLA ========= -->
+<section class="mitades" aria-labelledby="t-mitades">
+  <div class="mitades__foto">
+    <img src="imagenes/media-01.jpg" width="2200" height="1160"
+         loading="lazy" decoding="async" alt="">
+  </div>
+  <div class="mitades__texto">
+    <p class="mitades__ante">La hora que decide todo</p>
+    <h2 id="t-mitades">A las cinco ya hay harina en la mesa</h2>
+    <p>Un local con horno propio no compite por precio: compite por hora.
+      Mientras la cadena espera el camión de las nueve, acá el pan de las
+      siete ya está en el mostrador — y ésa es la única razón por la que
+      una cuadrilla puede comer caliente antes de subir a la faena.</p>
+  </div>
+</section>
+
+<section class="dia" id="dia" aria-labelledby="t-dia">
+  <div class="dia__cabecera">
+    <p class="antetitulo antetitulo--claro">De la madrugada al cierre</p>
+    <h2 id="t-dia">El día del local</h2>
+    <p class="entrada">Un súper con panadería tiene cuatro momentos distintos en el mismo
+      día, y cada uno atiende a alguien diferente. Escribirlo ordena las expectativas del
+      pueblo entero.</p>
+    <p class="marca-ejemplo marca-ejemplo--claro" data-ejemplo="Secuencia general — los horarios exactos los pone el local"></p>
+  </div>
+
+  <div class="laminas">
+    <article class="la">
+      <p class="la__momento">Madrugada</p>
+      <h3>Se hornea</h3>
+      <p>Antes de que abra el local ya está trabajando la panadería. Es la parte del negocio
+        que nadie ve y la que define todo lo demás del día.</p>
+      <p class="la__dato">El pan es propio, y ése es el dato que sostiene la sección de las
+        colaciones.
+        <span class="falta">falta: qué se hornea acá y qué llega de afuera</span></p>
+    </article>
+
+    <article class="la">
+      <p class="la__momento">Temprano</p>
+      <h3>Salen las colaciones</h3>
+      <p>Los pedidos encargados el día anterior salen armados y contados antes de que pasen
+        las camionetas. Es una hora corta y es la más ordenada del día: lo que no está listo
+        a esa hora, no sirve.</p>
+    </article>
+
+    <article class="la">
+      <p class="la__momento">Durante el día</p>
+      <h3>El súper</h3>
+      <p>La compra normal del pueblo: lo del almuerzo, lo que faltó, el encargo de la señora
+        que llama. La parte más conocida del negocio y la que menos hay que explicar.</p>
+    </article>
+
+    <article class="la">
+      <p class="la__momento">Tarde</p>
+      <h3>El pan de la once</h3>
+      <p>La segunda punta del día. Y es también la hora en que conviene dejar encargada la
+        colación de mañana, antes de que cierre.</p>
+      <p class="la__dato"><span class="falta">falta: horario de atención del local</span></p>
+    </article>
+  </div>
+
+  <p class="descargo">Los horarios, el contenido de las colaciones y los precios están
+    declarados como pendientes porque no me constan: nada de lo que aparece acá describe
+    todavía a este local. La secuencia del día es general de un negocio con panadería
+    propia.</p>
+</section>
+
+<!-- ========= EL CIERRE — T1 ========= -->
+
+
+<!-- ========= FRANJA A SANGRE ========= -->
+<div class="tajo" aria-hidden="true">
+  <img src="imagenes/banda-01.jpg" width="1500" height="791"
+       loading="lazy" decoding="async" alt="">
+</div>
+<section class="cierre cierre--foto" id="llamar" aria-labelledby="t-cierre">
+  <div class="cierre__foto" aria-hidden="true">
+    <img src="imagenes/fondo-02.jpg" width="2560" height="1707"
+         loading="lazy" decoding="async" alt="">
+  </div>
+  <p class="cierre__rot">Para encargar colación</p>
+  <h2 id="t-cierre" class="cierre__tel">
+    <a href="tel:+56961961492">9 6196 1492</a>
+  </h2>
+  <p class="cierre__pie">Es el número publicado en su ficha de Google. Conviene llamar con
+    la cantidad y la hora en que se retiran.</p>
+</section>
+
+<!-- ========= LA TIRA ========= -->
+<section class="tira" aria-label="Tres imágenes del oficio">
+  <figure class="tira__pieza">
+    <img src="imagenes/tira-02.jpg" width="1100" height="1650" loading="lazy" decoding="async"
+         alt="Bandeja de bollos recién armados sobre el mesón de la panadería.">
+  </figure>
+  <figure class="tira__pieza">
+    <img src="imagenes/tira-01.jpg" width="1100" height="733" loading="lazy" decoding="async"
+         alt="Pan redondo recién salido del horno, sostenido con un paño.">
+  </figure>
+  <figure class="tira__pieza">
+    <img src="imagenes/tirac-01.jpg" width="1100" height="733" loading="lazy" decoding="async"
+         alt="Estantería de panadería con los cajones llenos.">
+  </figure>
+</section>
+
+<!-- ========= LAS FOTOS ========= -->
+<section class="galeria" aria-labelledby="t-galeria">
+  <h2 id="t-galeria" class="galeria__titulo">El local, por dentro y por fuera</h2>
+  <p class="galeria__nota">Fotos de su propia ficha de Google. La del frente muestra el letrero completo: pasteles y tortas a pedido, empanadas de horno.</p>
+  <div class="galeria__grilla">
+    <figure class="gal gal--izq">
+      <img src="imagenes/local-03.jpg" width="638" height="500" loading="lazy" decoding="async"
+           alt="Pasillo interior del supermercado, con la sección de frutas y verduras en primer plano.">
+      <figcaption>Frutas y verduras a la entrada del pasillo.</figcaption>
+    </figure>
+    <figure class="gal gal--der">
+      <img src="imagenes/local-01.jpg" width="645" height="381" loading="lazy" decoding="async"
+           alt="Mesón de atención del local, con la vitrina de fiambres y clientes esperando su turno.">
+      <figcaption>El mesón. La atención sigue siendo de persona a persona.</figcaption>
+    </figure>
+    <figure class="gal gal--abajo">
+      <img src="imagenes/local-02.jpg" width="648" height="486" loading="lazy" decoding="async"
+           alt="Frente del local con el letrero: pasteles y tortas a pedido, empanadas de horno.">
+      <figcaption>La misma de la portada. El letrero dice todo lo que hacen.</figcaption>
+    </figure>
+  </div>
+  <p class="galeria__falta">falta: una de la marraqueta recién salida y otra del horno trabajando. Son las dos que venden una panadería y ninguna está publicada.</p>
+</section>
+
+</main>
+
+
+
+<!-- ========= MOSAICO ========= -->
+<section class="mos" aria-labelledby="t-mos">
+  <h2 id="t-mos" class="mos__titulo">El local, de a pedazos</h2>
+  <p class="mos__nota">Estas seis ya aparecen más arriba, en otro tamaño. Es la misma serie vista de cerca: la fachada, los pasillos y el mostrador.</p>
+  <div class="mos__grilla">
+    <figure class="mos__p">
+      <img src="imagenes/mos-01.jpg" width="780" height="411"
+           loading="lazy" decoding="async" alt="">
+    </figure>
+    <figure class="mos__p">
+      <img src="imagenes/mos-02.jpg" width="780" height="520"
+           loading="lazy" decoding="async" alt="">
+    </figure>
+    <figure class="mos__p">
+      <img src="imagenes/mos-03.jpg" width="780" height="1170"
+           loading="lazy" decoding="async" alt="">
+    </figure>
+    <figure class="mos__p">
+      <img src="imagenes/mos-04.jpg" width="780" height="520"
+           loading="lazy" decoding="async" alt="">
+    </figure>
+    <figure class="mos__p">
+      <img src="imagenes/mos-05.jpg" width="780" height="520"
+           loading="lazy" decoding="async" alt="">
+    </figure>
+    <figure class="mos__p">
+      <img src="imagenes/mos-06.jpg" width="780" height="520"
+           loading="lazy" decoding="async" alt="">
+    </figure>
+  </div>
+</section>
+<section class="dueno" aria-labelledby="t-dueno">
+  <h2 id="t-dueno">Para el local</h2>
+  <div class="dueno__cols">
+    <div>
+      <h3>Lo que está verificado</h3>
+      <p>Las 86 reseñas de su ficha de Google y el teléfono 9 6196 1492. No tienen sitio
+        propio.</p>
+    </div>
+    <div>
+      <h3>Lo que es de ejemplo</h3>
+      <p>El contenido de la colación y la secuencia del día. Son una armada tipo y un día
+        tipo, no los suyos, y van marcados.</p>
+    </div>
+    <div>
+      <h3>Lo que falta</h3>
+      <p>Cinco respuestas y la sección de colaciones queda lista: hasta qué hora se encarga,
+        mínimo, hora de retiro, si se puede dejar en faena y cómo se paga. Más el horario
+        del local. Es la conversación más corta de todo el lote y la que más plata mueve.</p>
+    </div>
+  </div>
+  <p class="dueno__cierre">
+    <a class="flecha" href="https://wa.me/56968650001" rel="noopener">Escribirme por WhatsApp <span aria-hidden="true">→</span></a>
+    <a class="flecha" href="../../" rel="noopener">Ver otros trabajos <span aria-hidden="true">→</span></a>
+  </p>
+</section>
+
+<footer class="pie">
+  <p>Sitio de demostración preparado por CristalWeb. El negocio no lo ha encargado ni ha
+    revisado su contenido. No hay precios, no hay horarios y el contenido de las colaciones
+    es un ejemplo marcado: nada de eso corresponde a lo que este local ofrece hoy.</p>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>

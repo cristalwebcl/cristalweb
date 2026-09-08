@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="es-CL" class="no-js">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Geosalud Dental — Pitrufquén</title>
+<meta name="description" content="Clínica dental en Pitrufquén. Qué es una urgencia dental de verdad y qué hacer mientras se consigue hora.">
+
+<!-- Política de seguridad de contenido: el navegador sólo puede cargar
+     archivos de este mismo sitio. Sin CDN, sin librerías, sin rastreadores.
+     Ver skills/web-blindada/references/csp-en-pages.md -->
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self'; img-src 'self' data:; font-src 'self'; connect-src 'self'; media-src 'self'; form-action 'self'; base-uri 'none'; frame-src 'none'; object-src 'none'">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+
+<!-- Rescate de la clase .js (regla 2 de la casa). En archivo, sin defer:
+     inline lo bloquearía la CSP. -->
+<script src="js/rescate.js"></script>
+
+<!-- Fuentes propias: cero peticiones a terceros. -->
+<link rel="preload" href="assets/fuentes/intertight-var-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="assets/fuentes.css">
+<link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+
+<div class="propuesta">
+  <p class="propuesta__que">Propuesta de sitio web — preparada para <b>Geosalud Dental</b> por CristalWeb</p>
+  <p class="propuesta__gancho">5,0 con 41 reseñas: no hay nota mejor que ésa. Y el vecino que se parte una muela un domingo no sabe que existen ni qué hacer mientras consigue hora. Esta página resuelve las dos cosas en la misma pantalla.</p>
+</div>
+
+<header class="cab" id="cab">
+  <a class="cab__marca" href="#portada">
+    <span class="muela" aria-hidden="true"></span>
+    <span class="cab__nombre">Geosalud Dental</span>
+  </a>
+  <nav class="cab__nav" aria-label="Secciones">
+    <a href="#urgencia">Qué es urgencia</a>
+    <a href="#hora">Pedir hora</a>
+  </nav>
+  <a class="cab__tel" href="tel:+56975523211">
+    <span class="cab__tel-rot">Pitrufquén</span>
+    <span class="cab__tel-num">9 7552 3211</span>
+  </a>
+</header>
+
+<main>
+
+<!-- ========= PORTADA — ESTRUCTURA H CLÍNICA:
+     el número y el protocolo en la misma pantalla ========= -->
+<section class="portada portada--foto" id="portada" aria-labelledby="t-portada">
+  <!-- FONDO DE PORTADA: 2560 px, nitido. Se disuelve hacia el titular
+       con un gradiente lateral, no con desenfoque. -->
+  <div class="portada__foto" aria-hidden="true">
+    <img src="imagenes/port-01.jpg" width="2560" height="1707"
+         decoding="async" fetchpriority="high" alt="">
+  </div>
+
+  <div class="escarcha" aria-hidden="true">
+    <i class="rama r1"></i><i class="rama r2"></i><i class="rama r3"></i>
+    <i class="rama r4"></i><i class="rama r5"></i><i class="rama r6"></i>
+    <i class="rama r7"></i><i class="rama r8"></i>
+  </div>
+
+  <div class="portada__cols">
+    <div class="portada__texto">
+      <p class="rotulo">Duele ahora</p>
+      <h1 id="t-portada">
+        <a class="tel-heroe" href="tel:+56975523211">9 7552 3211</a>
+      </h1>
+      <p class="bajada">Un dolor de muela no espera a que alguien revise un formulario. El
+        número va primero, y al lado va lo único que sirve mientras tanto.</p>
+      <dl class="specs">
+        <div class="spec"><dt>nota en Google</dt><dd>5,0</dd></div>
+        <div class="spec"><dt>reseñas</dt><dd>41</dd></div>
+      </dl>
+    </div>
+
+    <aside class="mientras" aria-labelledby="t-mientras">
+      <p class="mientras__rot">Mientras consigue hora</p>
+      <h2 id="t-mientras">Tres cosas</h2>
+      <ol class="mientras__pasos">
+        <li>
+          <b>Frío por fuera, nunca calor.</b> Una compresa fría en la mejilla, diez
+          minutos sí y diez no. El calor sobre una infección la empeora.
+        </li>
+        <li>
+          <b>Si el diente se salió entero,</b> se toma de la corona y no de la raíz, no
+          se raspa ni se lava con jabón, y se guarda en leche hasta llegar. El tiempo es
+          lo que más pesa acá.
+        </li>
+        <li>
+          <b>Nada de aspirina sobre la encía.</b> Es el consejo que más circula y es el
+          peor: apoyada en la mucosa la quema, y no calma nada.
+        </li>
+      </ol>
+      <p class="mientras__pie">Son medidas generales de primeros auxilios. No reemplazan
+        la atención: son para aguantar bien el rato que falta.</p>
+    </aside>
+  </div>
+</section>
+
+<!-- ========= LA PIEZA FIRMA ========= -->
+<section class="urgencia con-telon" id="urgencia" aria-labelledby="t-urg">
+  <div class="telon" aria-hidden="true">
+    <img src="imagenes/telon-01.jpg" width="1200" height="800" decoding="async" alt="">
+  </div>
+
+  <!-- AURA DE COLOR: la foto de rubro reventada a desenfoque. No se lee
+       como imagen: aporta color y luz detras de una seccion que si no
+       seria fondo plano. Aca el desenfoque SI es el efecto, no un parche,
+       y por eso el archivo va chico: a 64 px de blur, mas resolucion no
+       cambia nada. Sin loading=lazy porque el elemento va en absoluto con
+       z-index negativo y el navegador nunca lo considera visible. -->
+  <div class="aura" aria-hidden="true">
+    <img src="imagenes/aura-01.jpg" width="900" height="600" decoding="async" alt="">
+  </div>
+
+  <div class="urgencia__cabecera">
+    <p class="antetitulo">Lo que casi nadie explica</p>
+    <h2 id="t-urg">La urgencia dental de verdad</h2>
+    <p class="entrada">No todo dolor de dientes es una urgencia, y no toda urgencia duele.
+      Saber distinguirlas evita dos cosas malas: pasar la noche en vela por algo que
+      aguantaba hasta el lunes, y esperar el lunes por algo que no aguantaba.</p>
+    <p class="marca-ejemplo" data-ejemplo="Criterios generales del oficio — los revisa y los firma la clínica"></p>
+  </div>
+
+  <div class="dos">
+    <div class="caja caja--si">
+      <p class="caja__rot">No espera</p>
+      <h3>Es urgencia</h3>
+      <ul>
+        <li><b>Golpe con diente quebrado o salido.</b> Sobre todo si es un diente
+          definitivo: acá las horas cambian el resultado.</li>
+        <li><b>Hinchazón que crece</b>, sobre todo si sube hacia el ojo o baja al cuello,
+          y más todavía si hay fiebre o cuesta tragar o abrir la boca. Eso ya no es sólo
+          dental: es servicio de urgencia.</li>
+        <li><b>Sangrado que no para</b> después de una extracción, con presión mantenida
+          y sin escupir a cada rato.</li>
+        <li><b>Dolor que no cede</b> con lo que normalmente le sirve a esa persona, o que
+          la despierta de noche.</li>
+      </ul>
+    </div>
+
+    <div class="caja caja--no">
+      <p class="caja__rot">Aguanta hasta la hora</p>
+      <h3>No es urgencia</h3>
+      <ul>
+        <li>Sensibilidad al frío o al dulce que pasa sola en segundos.</li>
+        <li>Una tapadura que se salió y no duele.</li>
+        <li>Un bracket suelto que molesta pero no hiere.</li>
+        <li>Una muela del juicio saliendo, si no hay hinchazón ni fiebre.</li>
+      </ul>
+      <p class="caja__nota">Nada de esto es «no vaya»: es «pida hora tranquilo y no
+        pierda una noche».</p>
+    </div>
+  </div>
+
+  <p class="descargo">Esta página no diagnostica ni indica tratamiento, y no menciona ni un
+    medicamento ni una dosis a propósito: eso lo indica quien atiende, con la boca a la
+    vista. Si hay fiebre alta, dificultad para respirar o tragar, o una hinchazón que
+    avanza rápido, corresponde ir a un servicio de urgencia y no esperar hora dental. El
+    texto lo escribió quien hizo el sitio y lo revisa y lo firma la clínica antes de
+    publicarse.</p>
+</section>
+
+<!-- ========= HORA DE URGENCIA ========= -->
+<!-- ========= MEDIA PANTALLA ========= -->
+<section class="mitades" aria-labelledby="t-mitades">
+  <div class="mitades__foto">
+    <img src="imagenes/media-01.jpg" width="2200" height="1467"
+         loading="lazy" decoding="async" alt="">
+  </div>
+  <div class="mitades__texto">
+    <p class="mitades__ante">Lo que pasa cuando por fin hay hora</p>
+    <h2 id="t-mitades">Primero se calma el dolor. Después se arregla.</h2>
+    <p>Una urgencia dental casi nunca se resuelve en una sola sesión: lo primero es sacar el dolor, y recién con el paciente tranquilo se decide qué hacer con la pieza. Saberlo antes cambia la expectativa — nadie llega esperando salir con todo listo, y nadie se va con la sensación de que quedó a medias.</p>
+  </div>
+</section>
+
+<section class="hora" id="hora" aria-labelledby="t-hora">
+  <div class="hora__cabecera">
+    <p class="antetitulo antetitulo--claro">Cómo se pide</p>
+    <h2 id="t-hora">Hora de urgencia</h2>
+    <p class="entrada">Una clínica chica no puede tener pabellón abierto a toda hora, y
+      nadie se lo pide. Lo que sí se puede tener escrito es qué hacer para conseguir la
+      hora más cercana — y eso, hoy, no está en ninguna parte.</p>
+    <p class="marca-ejemplo marca-ejemplo--claro" data-ejemplo="ESTRUCTURA — las cuatro respuestas las pone la clínica"></p>
+  </div>
+
+  <div class="preguntas">
+    <div class="pr">
+      <h3>¿Guardan cupos de urgencia?</h3>
+      <p>Muchas clínicas dejan uno o dos espacios al día sin agendar justamente para
+        esto. Decirlo cambia la llamada entera.</p>
+      <p class="falta">falta: si los guardan y a qué hora del día</p>
+    </div>
+    <div class="pr">
+      <h3>¿Hasta qué hora contestan?</h3>
+      <p>El horario de atención y el horario en que alguien lee los mensajes casi nunca
+        son el mismo, y eso es lo que el paciente necesita saber a las nueve de la
+        noche.</p>
+      <p class="falta">falta: horario de atención y horario de mensajes</p>
+    </div>
+    <div class="pr">
+      <h3>¿Qué pasa un domingo?</h3>
+      <p>Aunque la respuesta sea «no atendemos», escribirlo sirve: el paciente deja de
+        llamar a ciegas y sabe adónde ir mientras tanto.</p>
+      <p class="falta">falta: qué recomiendan ustedes fuera de horario</p>
+    </div>
+    <div class="pr">
+      <h3>¿Qué conviene decir al llamar?</h3>
+      <p>Desde cuándo duele, si hay hinchazón o fiebre, si hubo un golpe y si ya se tomó
+        algo. Con eso, quien contesta puede priorizar de verdad.</p>
+      <p class="falta">falta: confirmar que así lo prefieren</p>
+    </div>
+  </div>
+</section>
+
+<!-- ========= EL CIERRE — T1 ========= -->
+<!-- ========= LA CITA A SANGRE ========= -->
+<section class="cita" aria-labelledby="t-cita">
+  <div class="cita__foto" aria-hidden="true">
+    <img src="imagenes/cita-01.jpg" width="2200" height="1467"
+         loading="lazy" decoding="async" alt="">
+  </div>
+  <blockquote class="cita__texto">
+    <p id="t-cita">A las tres de la mañana nadie llena un formulario<br>
+      <span class="cita__eco">Por eso el número va primero, grande y solo</span></p>
+  </blockquote>
+</section>
+
+
+
+<!-- ========= TAJO — FRANJA A SANGRE ========= -->
+<div class="tajo" aria-hidden="true">
+  <img src="imagenes/banda-01.jpg" width="1100" height="733"
+       loading="lazy" decoding="async" alt="">
+</div>
+<section class="cierre" id="llamar" aria-labelledby="t-cierre">
+  <p class="cierre__rot">El número, otra vez</p>
+  <h2 id="t-cierre" class="cierre__tel">
+    <a href="tel:+56975523211">9 7552 3211</a>
+  </h2>
+  <p class="cierre__pie">Es el número publicado en su ficha de Google.</p>
+</section>
+
+<!-- ========= LA TIRA ========= -->
+<section class="tira" aria-label="Tres imágenes del oficio">
+  <figure class="tira__pieza">
+    <img src="imagenes/tira-01.jpg" width="1100" height="733" loading="lazy" decoding="async" alt="Atención odontológica en el sillón, con instrumental.">
+  </figure>
+  <figure class="tira__pieza">
+    <img src="imagenes/tira-02.jpg" width="1100" height="733" loading="lazy" decoding="async" alt="Odontóloga ajustando la lámpara sobre el sillón dental.">
+  </figure>
+  <figure class="tira__pieza">
+    <img src="imagenes/tira-03.jpg" width="1100" height="733" loading="lazy" decoding="async" alt="Paciente sentada en el sillón de un box dental.">
+  </figure>
+</section>
+
+<!-- ========= LAS FOTOS ========= -->
+<section class="galeria" aria-labelledby="t-galeria">
+  <h2 id="t-galeria" class="galeria__titulo">Dónde quedan, y qué publican</h2>
+  <p class="galeria__nota">Fotos de su propio Facebook. La de arriba es el edificio de Francisco Bilbao donde atienden, de noche — que es justo la hora en que uno busca. La otra es un trabajo suyo, publicado por ellos.</p>
+  <div class="galeria__grilla">
+    <figure class="gal gal--izq">
+      <img src="imagenes/clinica-01.jpg" width="1400" height="1050" loading="lazy" decoding="async"
+           alt="El edificio de Francisco Bilbao donde atiende la clínica, fotografiado de noche.">
+      <figcaption>El edificio, de noche. Que es la hora en que uno busca una urgencia.</figcaption>
+    </figure>
+    <figure class="gal gal--der">
+      <img src="imagenes/clinica-02.jpg" width="1400" height="988" loading="lazy" decoding="async"
+           alt="Comparación antes y después de un tratamiento dental publicada por la clínica.">
+      <figcaption>Un antes y después que publicaron ellos. No es urgencia: es trabajo hecho.</figcaption>
+    </figure>
+  </div>
+  <p class="galeria__falta">falta: una foto de la sala de espera y otra del box. Y el dato que esta página pide a gritos: hasta qué hora contestan de verdad.</p>
+</section>
+
+
+<!-- ========= CREDITOS DE LAS IMAGENES DE RUBRO ========= -->
+<aside class="creditos" aria-label="Créditos de las imágenes">
+  <p class="creditos__que">Las imágenes de fondo no son de este negocio: son
+    fotografías de libre uso que acompañan el diseño. Las fotos del local,
+    las de más arriba, sí son suyas.</p>
+  <ul class="creditos__lista">
+      <li>Banda: «Dental chair in a dentist clinic», IrfanDP, CC BY-SA 4.0 (Wikimedia Commons)</li>
+  </ul>
+</aside>
+</main>
+
+
+
+<!-- ========= MOSAICO ========= -->
+<section class="mos" aria-labelledby="t-mos">
+  <h2 id="t-mos" class="mos__titulo">La misma serie, más de cerca</h2>
+  <p class="mos__nota">Estas seis ya aparecen más arriba en la página. Vuelven acá en otro tamaño porque una sola pasada de imágenes deja el scroll vacío, y porque de cerca se ven cosas que en grande se pierden. La procedencia de cada una está en imagenes/FUENTES.txt.</p>
+  <div class="mos__grilla">
+    <figure class="mos__p">
+      <img src="imagenes/mos-01.jpg" width="780" height="520"
+           loading="lazy" decoding="async" alt="">
+    </figure>
+    <figure class="mos__p">
+      <img src="imagenes/mos-02.jpg" width="780" height="520"
+           loading="lazy" decoding="async" alt="">
+    </figure>
+    <figure class="mos__p">
+      <img src="imagenes/mos-03.jpg" width="780" height="520"
+           loading="lazy" decoding="async" alt="">
+    </figure>
+    <figure class="mos__p">
+      <img src="imagenes/mos-04.jpg" width="780" height="520"
+           loading="lazy" decoding="async" alt="">
+    </figure>
+    <figure class="mos__p">
+      <img src="imagenes/mos-05.jpg" width="780" height="520"
+           loading="lazy" decoding="async" alt="">
+    </figure>
+    <figure class="mos__p">
+      <img src="imagenes/mos-06.jpg" width="780" height="520"
+           loading="lazy" decoding="async" alt="">
+    </figure>
+  </div>
+</section>
+<section class="dueno" aria-labelledby="t-dueno">
+  <h2 id="t-dueno">Para la clínica</h2>
+  <div class="dueno__cols">
+    <div>
+      <h3>Lo que está verificado</h3>
+      <p>El 5,0 con 41 reseñas de su ficha de Google y el teléfono 9 7552 3211. No tienen
+        sitio propio: sólo redes.</p>
+    </div>
+    <div>
+      <h3>Lo que es general</h3>
+      <p>Los tres pasos de la portada y las dos listas de urgencia. Son criterios
+        conocidos del oficio, no protocolos de esta clínica: por eso van marcados y sin
+        firma.</p>
+    </div>
+    <div>
+      <h3>Lo que falta</h3>
+      <p>Las cuatro respuestas de «hora de urgencia»: si guardan cupos, hasta qué hora
+        contestan, qué pasa el domingo y qué conviene decir al llamar. Es media hora de
+        conversación y con eso la página queda publicable.</p>
+    </div>
+  </div>
+  <p class="dueno__cierre">
+    <a class="flecha" href="https://wa.me/56968650001" rel="noopener">Escribirme por WhatsApp <span aria-hidden="true">→</span></a>
+    <a class="flecha" href="../../" rel="noopener">Ver otros trabajos <span aria-hidden="true">→</span></a>
+  </p>
+</section>
+
+<footer class="pie">
+  <p>Sitio de demostración preparado por CristalWeb. El negocio no lo ha encargado ni ha
+    revisado su contenido. Los criterios de urgencia y los primeros auxilios son
+    información general de salud, están marcados como tales y no reemplazan la atención
+    profesional. No hay precios, no se nombra ningún medicamento y no hay ninguna dosis.</p>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>

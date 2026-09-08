@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="es-CL" class="no-js">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Lubricentro SR — Pitrufquén</title>
+<meta name="description" content="Lubricentro en Pitrufquén. Qué se revisa en cada cambio de aceite y qué significa el sticker del parabrisas.">
+
+<!-- ═══════════════════════════════════════════════════════════════
+     RESCATE DE LA CLASE .js — regla 2 de la casa.
+     El script inline (sin defer) marca .js para que el CSS pueda
+     esconder lo que va a animarse. El temporizador de 4 s la quita
+     si main.js nunca llega: sin él, un error de red dejaría media
+     página invisible para siempre.
+     ═══════════════════════════════════════════════════════════════ -->
+<script>
+  (function () {
+    var d = document.documentElement;
+    d.classList.remove('no-js');
+    d.classList.add('js');
+    window.__rescate = setTimeout(function () { d.classList.remove('js'); }, 4000);
+  })();
+</script>
+
+<!-- Fuentes propias: cero peticiones a terceros. El preload va SOLO
+     para la display, que es la del titular de la portada. -->
+<link rel="preload" href="assets/fuentes/exo2-700-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="assets/fuentes.css">
+<link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+
+<div class="propuesta">
+  <p class="propuesta__que">Propuesta de sitio web — preparada para <b>Lubricentro SR</b> por CristalWeb</p>
+  <p class="propuesta__gancho">5,0 perfecto con 81 reseñas en el oficio donde más desconfianza hay. Esta página convierte esa nota en argumento: acá se muestra todo lo que se hace.</p>
+</div>
+
+<header class="cab" id="cab">
+  <a class="cab__marca" href="#portada">
+    <span class="sticker" aria-hidden="true">80.000</span>
+    <span class="cab__nombre">Lubricentro SR</span>
+  </a>
+  <nav class="cab__nav" aria-label="Secciones">
+    <a href="#cambio">Los 20 minutos</a>
+    <a href="#sticker">El sticker</a>
+  </nav>
+  <a class="cab__wsp" href="#pedir">
+    <span class="cab__wsp-rot">Pitrufquén</span>
+    <span class="cab__wsp-num">Pedir hora</span>
+  </a>
+</header>
+
+<main>
+
+<!-- ═════════ PORTADA ═════════ -->
+<section class="portada" id="portada" aria-labelledby="t-portada">
+  <!-- FONDO DE PORTADA: 1900 px, nitido. Se disuelve hacia el titular
+       con un gradiente lateral, no con desenfoque. -->
+  <div class="portada__foto" aria-hidden="true">
+    <img src="imagenes/port-01.jpg" width="2560" height="1920"
+         decoding="async" fetchpriority="high" alt="">
+  </div>
+
+  <div class="gota" aria-hidden="true"><span class="gota__g"></span><span class="gota__onda"></span></div>
+  <div class="portada__texto">
+    <p class="sitio">Lubricentro · Pitrufquén</p>
+    <h1 id="t-portada">Nada que<br>esconder</h1>
+    <p class="bajada">La duda de siempre es si le echaron el aceite que pagó. Acá está
+      escrito, paso por paso, todo lo que pasa en esos veinte minutos.</p>
+    <dl class="specs">
+      <div class="spec"><dt>nota en Google</dt><dd>5,0</dd></div>
+      <div class="spec"><dt>reseñas</dt><dd>81</dd></div>
+    </dl>
+  </div>
+</section>
+
+<!-- ═════════ LA PIEZA FIRMA — LA VARILLA (I) ═════════ -->
+<section class="cambio con-telon" id="cambio" aria-labelledby="t-cambio">
+  <div class="telon" aria-hidden="true">
+    <img src="imagenes/telon-01.jpg" width="1200" height="900" decoding="async" alt="">
+  </div>
+
+  <!-- AURA DE COLOR: la foto de rubro reventada a desenfoque. No se lee
+       como imagen: aporta color y luz detras de una seccion que si no
+       seria fondo plano. Aca el desenfoque SI es el efecto, no un parche,
+       y por eso el archivo va chico: a 64 px de blur, mas resolucion no
+       cambia nada. Sin loading=lazy porque el elemento va en absoluto con
+       z-index negativo y el navegador nunca lo considera visible. -->
+  <div class="aura" aria-hidden="true">
+    <img src="imagenes/aura-01.jpg" width="900" height="1350" decoding="async" alt="">
+  </div>
+
+  <div class="cambio__cabecera">
+    <p class="antetitulo">El checklist completo</p>
+    <h2 id="t-cambio">El cambio de aceite,<br>minuto a minuto</h2>
+    <p>Un cambio bien hecho es más que sacar y poner aceite. Estos son los seis pasos,
+      con lo que se revisa en cada uno.</p>
+    <p class="marca-ejemplo" data-ejemplo="Checklist general del oficio — el taller confirma su propio protocolo"></p>
+  </div>
+
+  <div class="varilla" id="varilla">
+    <!-- LA VARILLA DE MEDIR: el riel es el objeto del oficio, con sus
+         marcas MIN y MAX. Arranca lleno para que sin animación se
+         entienda igual. -->
+    <div class="varilla__riel" aria-hidden="true">
+      <span class="varilla__nivel"></span>
+      <span class="varilla__marca varilla__marca--max">MAX</span>
+      <span class="varilla__marca varilla__marca--min">MIN</span>
+    </div>
+
+    <ol class="pasos">
+      <li class="paso">
+        <p class="paso__t" aria-hidden="true">0:00</p>
+        <div class="paso__caja">
+          <h3>Se levanta y se revisa abajo</h3>
+          <p>Antes de tocar el tapón se mira si hay filtraciones. Una mancha fresca en
+            el cárter cambia todo el trabajo: no sirve de nada llenar algo que gotea.</p>
+        </div>
+      </li>
+      <li class="paso">
+        <p class="paso__t" aria-hidden="true">0:03</p>
+        <div class="paso__caja">
+          <h3>Se drena en caliente</h3>
+          <p>El aceite tibio sale entero y arrastra lo que hay en suspensión. En frío
+            queda un resto pegado al fondo que ensucia el aceite nuevo desde el día
+            uno.</p>
+        </div>
+      </li>
+      <li class="paso">
+        <p class="paso__t" aria-hidden="true">0:08</p>
+        <div class="paso__caja">
+          <h3>Filtro nuevo, y el sello aceitado</h3>
+          <p>El filtro se cambia siempre, no una vez sí y otra no. La goma del sello
+            se unta con aceite antes de montar: seco, se retuerce y filtra.</p>
+        </div>
+      </li>
+      <li class="paso">
+        <p class="paso__t" aria-hidden="true">0:12</p>
+        <div class="paso__caja">
+          <h3>Se llena con lo que dice el manual</h3>
+          <p>La viscosidad la manda el fabricante del auto, no el gusto del taller.
+            Se llena, se espera y se mide con la varilla — no se calcula de memoria.</p>
+        </div>
+      </li>
+      <li class="paso">
+        <p class="paso__t" aria-hidden="true">0:16</p>
+        <div class="paso__caja">
+          <h3>Los otros niveles y la presión</h3>
+          <p>Refrigerante, líquido de frenos, agua del limpiaparabrisas y presión de
+            los cuatro neumáticos. Son cinco minutos y evitan la mitad de las panas
+            de carretera.</p>
+        </div>
+      </li>
+      <li class="paso">
+        <p class="paso__t" aria-hidden="true">0:20</p>
+        <div class="paso__caja">
+          <h3>Luces, y el sticker</h3>
+          <p>Se prueban luces y se pega el sticker con el kilometraje del próximo
+            cambio. Ahí termina, y el auto sale sabiendo cuándo tiene que volver.</p>
+        </div>
+      </li>
+    </ol>
+  </div>
+
+  <p class="firma">Descripción general del procedimiento. Lo que corresponde a su
+    vehículo lo determina el manual del fabricante y el taller.</p>
+</section>
+
+<!-- ═════════ EL STICKER ═════════ -->
+<!-- ========= MEDIA PANTALLA ========= -->
+<section class="mitades" aria-labelledby="t-mitades">
+  <div class="mitades__foto">
+    <img src="imagenes/media-01.jpg" width="1500" height="2250"
+         loading="lazy" decoding="async" alt="">
+  </div>
+  <div class="mitades__texto">
+    <p class="mitades__ante">Lo que pasa arriba del capot</p>
+    <h2 id="t-mitades">Veinte minutos que nadie mira</h2>
+    <p>El auto entra, se levanta el capot y el cliente se queda afuera tomando café. Esos veinte minutos son toda la desconfianza del rubro: no se sabe qué aceite entró, si cambiaron el filtro o si sólo lo limpiaron. La página los escribe paso por paso, con el número de cada envase que se abre. Eso no lo publica ningún lubricentro y es exactamente lo que un cliente nuevo necesita leer antes de elegir.</p>
+  </div>
+</section>
+
+
+
+<!-- ========= TAJO — FRANJA A SANGRE ========= -->
+<div class="tajo" aria-hidden="true">
+  <img src="imagenes/banda-01.jpg" width="1000" height="667"
+       loading="lazy" decoding="async" alt="">
+</div>
+
+<!-- ========= TAJO 2 — franja a sangre ========= -->
+<div class="tajo" aria-hidden="true">
+  <img src="imagenes/port-01.jpg" width="2560" height="1920"
+       loading="lazy" decoding="async" alt="">
+</div>
+<section class="sticker-sec" id="sticker" aria-labelledby="t-sticker">
+  <div class="sticker__cuerpo">
+    <p class="antetitulo antetitulo--claro">El objeto que todos llevan pegado</p>
+    <h2 id="t-sticker">El sticker<br>del parabrisas</h2>
+    <p class="entrada">Ese numerito pegado arriba a la izquierda lo mira todo el mundo
+      y casi nadie sabe leerlo del todo. Dice una cosa simple: en qué kilómetro
+      corresponde el próximo cambio.</p>
+
+    <dl class="claves">
+      <div class="clave">
+        <dt>El número grande</dt>
+        <dd>Es el kilometraje al que hay que volver, no los kilómetros que lleva el
+          auto. Si dice 80.000, es cuando el odómetro marque eso.</dd>
+      </div>
+      <div class="clave">
+        <dt>La fecha, cuando la trae</dt>
+        <dd>Vale igual que el kilometraje, y manda la que llegue primero. Un auto que
+          anda poco igual necesita el cambio: el aceite se degrada con el tiempo.</dd>
+      </div>
+      <div class="clave">
+        <dt>Por qué a veces es antes</dt>
+        <dd>Camino de ripio, remolque, muchos viajes cortos en frío o mucho ralentí
+          acortan el intervalo. El polvo del ripio es el peor de todos.</dd>
+      </div>
+      <div class="clave">
+        <dt>Si se despegó</dt>
+        <dd>El dato queda en la ficha del taller: basta pasar y preguntar. Nadie
+          debería tener que adivinar cuándo le toca.</dd>
+      </div>
+    </dl>
+
+    <p class="firma firma--claro">Orientación general. El intervalo exacto de su auto
+      está en el manual del fabricante.</p>
+
+    <div class="pedir" id="pedir">
+      <h3>Pedir hora</h3>
+      <p>Diga qué auto es y cuándo puede pasar: el mensaje se arma solo.</p>
+
+      <form class="form" id="form-hora">
+        <div class="campo">
+          <label for="f-auto">Auto (marca, modelo, año)</label>
+          <input id="f-auto" name="auto" type="text" placeholder="Toyota Yaris 2018">
+        </div>
+        <div class="campo">
+          <label for="f-cuando">Cuándo puede pasar</label>
+          <input id="f-cuando" name="cuando" type="text" placeholder="Mañana en la tarde">
+        </div>
+        <p class="resumen" id="resumen" aria-live="polite">El mensaje se arma acá abajo.</p>
+        <a class="fantasma" id="enviar" href="#pedir">Enviar por WhatsApp</a>
+        <p class="pedir__nota"><span class="falta">falta: el número, la dirección y el horario</span> — su ficha no los publica y no se inventan.</p>
+      </form>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ========= LA CITA A SANGRE ========= -->
+<section class="cita" aria-labelledby="t-cita">
+  <div class="cita__foto" aria-hidden="true">
+    <img src="imagenes/cita-01.jpg" width="2560" height="1707"
+         loading="lazy" decoding="async" alt="">
+  </div>
+  <blockquote class="cita__texto">
+    <p id="t-cita">Nada que esconder<br>
+      <span class="cita__eco">El envase se muestra abierto, y la nota queda escrita</span></p>
+  </blockquote>
+</section>
+
+
+
+
+<!-- ========= LA TIRA ========= -->
+<section class="tira" aria-label="Tres imágenes del oficio">
+  <figure class="tira__pieza">
+    <img src="imagenes/tira-01.jpg" width="1000" height="750" loading="lazy" decoding="async" alt="Un martillo y una llave ajustable cruzados.">
+  </figure>
+  <figure class="tira__pieza">
+    <img src="imagenes/tira-02.jpg" width="1000" height="750" loading="lazy" decoding="async" alt="Dos llaves de boca sobre fondo claro.">
+  </figure>
+  <figure class="tira__pieza">
+    <img src="imagenes/tirb-01.jpg" width="1000" height="667" loading="lazy" decoding="async" alt="El compartimiento del motor de un auto, con el capot abierto.">
+  </figure>
+  <figure class="tira__pieza">
+    <img src="imagenes/tirc-01.jpg" width="1000" height="1500" loading="lazy" decoding="async" alt="Llaves sobre un fondo oscuro, con sombra dura.">
+  </figure>
+</section>
+
+
+<!-- ========= MOSAICO ========= -->
+<section class="mos" aria-labelledby="t-mos">
+  <h2 id="t-mos" class="mos__titulo">La misma serie, más de cerca</h2>
+  <p class="mos__nota">Estas seis ya aparecen más arriba en la página. Vuelven acá en otro tamaño porque una sola pasada de imágenes deja el scroll vacío. Ninguna es del negocio y todas están declaradas en imagenes/FUENTES.txt.</p>
+  <div class="mos__grilla">
+    <figure class="mos__p">
+      <img src="imagenes/mos-01.jpg" width="780" height="1170"
+           loading="lazy" decoding="async" alt="">
+    </figure>
+    <figure class="mos__p">
+      <img src="imagenes/mos-02.jpg" width="780" height="520"
+           loading="lazy" decoding="async" alt="">
+    </figure>
+    <figure class="mos__p">
+      <img src="imagenes/mos-03.jpg" width="780" height="585"
+           loading="lazy" decoding="async" alt="">
+    </figure>
+    <figure class="mos__p">
+      <img src="imagenes/mos-04.jpg" width="780" height="585"
+           loading="lazy" decoding="async" alt="">
+    </figure>
+    <figure class="mos__p">
+      <img src="imagenes/mos-05.jpg" width="780" height="585"
+           loading="lazy" decoding="async" alt="">
+    </figure>
+    <figure class="mos__p">
+      <img src="imagenes/mos-06.jpg" width="780" height="1170"
+           loading="lazy" decoding="async" alt="">
+    </figure>
+  </div>
+</section>
+<section class="dueno" aria-labelledby="t-dueno">
+  <h2 id="t-dueno">Para el dueño</h2>
+  <div class="dueno__cols">
+    <div>
+      <h3>Lo que está verificado</h3>
+      <p>El 5,0 con 81 reseñas de su ficha de Google y que no tiene página ni
+        teléfono publicado.</p>
+    </div>
+    <div>
+      <h3>Lo que es de ejemplo</h3>
+      <p>Los seis pasos con sus tiempos: protocolo general del oficio. Si ustedes
+        revisan algo más —y lo más probable es que sí— hay que agregarlo.</p>
+    </div>
+    <div>
+      <h3>Lo que falta</h3>
+      <p>El número, la dirección, el horario y qué marcas de aceite manejan. Con eso
+        la página empieza a traer autos.</p>
+    </div>
+  </div>
+  <p class="dueno__cierre">
+    <a class="flecha" href="https://wa.me/56968650001" rel="noopener">Escribirme por WhatsApp <span aria-hidden="true">→</span></a>
+    <a class="flecha" href="../../" rel="noopener">Ver otros trabajos <span aria-hidden="true">→</span></a>
+  </p>
+</section>
+
+<footer class="pie">
+  <p>Sitio de demostración preparado por CristalWeb. El negocio no lo ha encargado ni
+    ha revisado su contenido. La información técnica es general y no reemplaza el
+    manual del fabricante.</p>
+</footer>
+
+<!-- Barra fija sólo en móvil (T2) -->
+<div class="barra-movil">
+  <a href="#pedir">Pedir hora</a>
+</div>
+
+<script src="js/main.js"></script>
+</body>
+</html>

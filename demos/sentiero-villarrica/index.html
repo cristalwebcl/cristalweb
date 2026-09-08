@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="es-CL" class="no-js">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Sentiero — restaurante, Villarrica</title>
+<meta name="description" content="Restaurante en Villarrica. Reservar por mensaje y qué se puede pedir para una celebración.">
+
+<!-- Política de seguridad de contenido: el navegador sólo puede cargar
+     archivos de este mismo sitio. Sin CDN, sin librerías, sin rastreadores.
+     Ver skills/web-blindada/references/csp-en-pages.md -->
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self'; img-src 'self' data:; font-src 'self'; connect-src 'self'; media-src 'self'; form-action 'self'; base-uri 'none'; frame-src 'none'; object-src 'none'">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+
+<!-- Rescate de la clase .js (regla 2 de la casa). En archivo, sin defer:
+     inline lo bloquearía la CSP. -->
+<script src="js/rescate.js"></script>
+
+<!-- Fuentes propias: cero peticiones a terceros. El preload va SOLO
+     para la display, que es la del titular de la portada. -->
+<link rel="preload" href="assets/fuentes/rosarivo-400-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="assets/fuentes.css">
+<link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+
+<div class="propuesta">
+  <p class="propuesta__que">Propuesta de sitio web — preparada para <b>Sentiero</b> por CristalWeb</p>
+  <p class="propuesta__gancho">4,8 con 90 reseñas y desde Google no se puede saber ni qué tipo de comida sirven, ni si reciben una torta de cumpleaños.</p>
+</div>
+
+<header class="cab" id="cab">
+  <a class="cab__marca" href="#portada">
+    <span class="copa" aria-hidden="true"><i></i></span>
+    <span class="cab__nombre">Sentiero</span>
+  </a>
+  <nav class="cab__nav" aria-label="Capítulos">
+    <a href="#c1">Llegar</a>
+    <a href="#c3">Celebrar</a>
+  </nav>
+  <a class="cab__res" href="#reservar">
+    <span class="cab__res-rot">Villarrica</span>
+    <span class="cab__res-num">Reservar</span>
+  </a>
+</header>
+
+<main>
+
+<!-- ========= PORTADA — el mantel, la copa y la vela ========= -->
+<section class="portada portada--foto" id="portada" aria-labelledby="t-portada">
+  <!-- FONDO DE PORTADA: 2560 px, nitido. Se disuelve hacia el titular
+       con un gradiente lateral, no con desenfoque. -->
+  <div class="portada__foto" aria-hidden="true">
+    <img src="imagenes/port-01.jpg" width="2560" height="1696"
+         decoding="async" fetchpriority="high" alt="">
+  </div>
+
+
+  <!-- La vela: sólo forma y luz, sin significado que leer -->
+  <div class="vela" aria-hidden="true">
+    <span class="vela__halo"></span>
+    <span class="vela__llama"></span>
+    <span class="vela__cuerpo"></span>
+  </div>
+
+  <div class="portada__texto">
+    <p class="sitio">Restaurante · Villarrica</p>
+    <h1 id="t-portada">Una mesa<br>para la noche<br><em>que importa</em></h1>
+    <p class="bajada">Un aniversario, una pedida, el cumpleaños de la mamá. Se llama,
+      se pregunta lo mismo de siempre y se corta sin saber la mitad. Esta página
+      contesta antes.</p>
+    <dl class="specs">
+      <div class="spec"><dt>nota en Google</dt><dd>4,8</dd></div>
+      <div class="spec"><dt>reseñas</dt><dd>90</dd></div>
+      <div class="spec"><dt>página propia</dt><dd>ninguna</dd></div>
+    </dl>
+  </div>
+</section>
+
+<!-- ========= ESTRUCTURA F — los cuatro momentos de una velada ========= -->
+
+<!-- 01 LLEGAR — acá vive el T5: la reserva ES la sección -->
+<section class="cap con-telon" id="c1" aria-labelledby="t-c1">
+  <div class="telon" aria-hidden="true">
+    <img src="imagenes/telon-01.jpg" width="1200" height="795" decoding="async" alt="">
+  </div>
+
+  <!-- AURA DE COLOR: la foto de rubro reventada a desenfoque. No se lee
+       como imagen: aporta color y luz detras de una seccion que si no
+       seria fondo plano. Aca el desenfoque SI es el efecto, no un parche,
+       y por eso el archivo va chico: a 64 px de blur, mas resolucion no
+       cambia nada. Sin loading=lazy porque el elemento va en absoluto con
+       z-index negativo y el navegador nunca lo considera visible. -->
+  <div class="aura" aria-hidden="true">
+    <img src="imagenes/aura-01.jpg" width="900" height="1350" decoding="async" alt="">
+  </div>
+
+  <p class="cap__n" aria-hidden="true">01</p>
+  <div class="cap__cuerpo">
+    <p class="antetitulo">Antes de salir de la casa</p>
+    <h2 id="t-c1">Llegar</h2>
+    <p class="entrada">La mesa se pide por mensaje, sin llamar y sin esperar que
+      alguien conteste en medio del servicio. Se escribe una vez y queda.</p>
+
+    <div class="reservar" id="reservar">
+      <form class="form" id="form-mesa">
+        <div class="campo">
+          <label for="f-cuando">Qué día y a qué hora</label>
+          <input id="f-cuando" name="cuando" type="text" placeholder="Sábado a las 21:00" autocomplete="off">
+        </div>
+        <div class="campo">
+          <label for="f-personas">Cuántos son</label>
+          <input id="f-personas" name="personas" type="text" inputmode="numeric" placeholder="4" autocomplete="off">
+        </div>
+        <div class="campo campo--ancho">
+          <label for="f-ocasion">Es por algo en particular <span class="opcional">(opcional)</span></label>
+          <input id="f-ocasion" name="ocasion" type="text" placeholder="Aniversario" autocomplete="off">
+        </div>
+
+        <p class="resumen" id="resumen" aria-live="polite">El mensaje se arma acá abajo a medida que escribe.</p>
+        <a class="boton" id="enviar" href="#reservar">Enviar por WhatsApp</a>
+        <p class="reservar__nota"><span class="falta">falta: el número</span> — la ficha
+          de Google no publica ninguno, así que el botón todavía no lleva a ninguna parte.</p>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- 02 PEDIR — la honestidad sobre la cocina -->
+<section class="cap cap--tinta" id="c2" aria-labelledby="t-c2">
+  <p class="cap__n cap__n--claro" aria-hidden="true">02</p>
+  <div class="cap__cuerpo">
+    <p class="antetitulo antetitulo--claro">Lo primero que pregunta cualquiera</p>
+    <h2 id="t-c2">Pedir</h2>
+    <p class="entrada">Antes de reservar, la gente quiere saber qué come. Hoy no hay
+      dónde verlo: ni la carta, ni el rango de precios, ni si hay algo para el que
+      no come carne.</p>
+
+    <ul class="huecos">
+      <li>
+        <p class="huecos__q">¿Qué tipo de cocina es?</p>
+        <p class="huecos__a"><span class="falta">falta: confirmarlo</span></p>
+        <p class="huecos__pq">El nombre sugiere algo, pero sugerir no es decir. Escrito
+          en una línea, deja de perderse gente que buscaba justo eso.</p>
+      </li>
+      <li>
+        <p class="huecos__q">¿Cuánto sale comer acá?</p>
+        <p class="huecos__a"><span class="falta">falta: el rango</span></p>
+        <p class="huecos__pq">No hace falta la carta con precios. «Un plato de fondo
+          va entre tanto y tanto» alcanza para que la pareja decida sin llamar.</p>
+      </li>
+      <li>
+        <p class="huecos__q">¿Hay algo sin carne?</p>
+        <p class="huecos__a"><span class="falta">falta: confirmar</span></p>
+        <p class="huecos__pq">Basta que uno del grupo no coma carne para que el grupo
+          entero elija otro lado. Es la pregunta que decide mesas de cuatro.</p>
+      </li>
+      <li>
+        <p class="huecos__q">¿Qué días y hasta qué hora?</p>
+        <p class="huecos__a"><span class="falta">falta: el horario</span></p>
+        <p class="huecos__pq">El dato más pedido de todos y el que más veces falta.</p>
+      </li>
+    </ul>
+
+    <p class="firma firma--claro">Cuatro líneas de texto. Ninguna cuesta plata y las
+      cuatro se contestan hoy por teléfono, una por una, todos los días.</p>
+  </div>
+</section>
+
+<!-- 03 CELEBRAR — LA PIEZA FIRMA -->
+<!-- ========= MEDIA PANTALLA ========= -->
+<section class="mitades" aria-labelledby="t-mitades">
+  <div class="mitades__foto">
+    <img src="imagenes/media-01.jpg" width="1500" height="1125"
+         loading="lazy" decoding="async" alt="">
+  </div>
+  <div class="mitades__texto">
+    <p class="mitades__ante">La foto que decide la reserva</p>
+    <h2 id="t-mitades">La terraza de madera y el pizarrón en la puerta</h2>
+    <p>Quien busca dónde celebrar algo mira tres cosas: si el lugar se ve cuidado, si hay dónde sentarse cómodo y si el menú está a la vista. Esta foto contesta las tres de un vistazo, y es de ellos. Lo que falta —y es lo que cierra la reserva— es una foto del salón de noche, con las mesas puestas y la luz baja: el momento exacto que el cliente está imaginando cuando llama.</p>
+  </div>
+</section>
+
+<section class="cap cap--firma" id="c3" aria-labelledby="t-c3">
+  <p class="cap__n" aria-hidden="true">03</p>
+  <div class="cap__cuerpo">
+    <p class="antetitulo">La llamada de todos los viernes</p>
+    <h2 id="t-c3">Celebrar</h2>
+    <p class="entrada">Cuando alguien reserva por una ocasión, no pregunta por la
+      comida: pregunta estas cinco cosas. Son siempre las mismas y ninguna página
+      de restaurante las tiene escritas.</p>
+    <p class="marca-ejemplo" data-ejemplo="Las preguntas son reales — las respuestas las pone el local"></p>
+
+    <ol class="ocasion">
+      <li class="oc">
+        <p class="oc__q">¿Puedo llevar la torta?</p>
+        <p class="oc__a"><span class="falta">falta: sí / no / con aviso</span></p>
+        <p class="oc__pq">La primera que preguntan y la que más veces hace que el
+          grupo se vaya a otro lado. Si la respuesta es «sí, avisando antes»,
+          conviene que esté escrito con esas mismas palabras.</p>
+      </li>
+      <li class="oc">
+        <p class="oc__q">¿Cobran por servirla o descorche?</p>
+        <p class="oc__a"><span class="falta">falta: monto o «no se cobra»</span></p>
+        <p class="oc__pq">Que aparezca en la cuenta sin haberse avisado es motivo de
+          reseña mala. Dicho antes, no molesta a nadie.</p>
+      </li>
+      <li class="oc">
+        <p class="oc__q">¿Se puede decorar la mesa?</p>
+        <p class="oc__a"><span class="falta">falta: qué sí y qué no</span></p>
+        <p class="oc__pq">Globos, un cartel, unas velas. Lo que se permite y lo que
+          no, en dos líneas: la gente respeta la regla cuando la conoce.</p>
+      </li>
+      <li class="oc">
+        <p class="oc__q">¿Hay una mesa más tranquila?</p>
+        <p class="oc__a"><span class="falta">falta: cuál y si se puede pedir</span></p>
+        <p class="oc__pq">Para una pedida de mano importa más que la carta. Si existe
+          el rincón, decirlo es lo que gana esa reserva.</p>
+      </li>
+      <li class="oc">
+        <p class="oc__q">¿Hasta cuántas personas reciben?</p>
+        <p class="oc__a"><span class="falta">falta: el tope y desde cuándo avisar</span></p>
+        <p class="oc__pq">Una mesa de doce no se improvisa. El número y el plazo
+          evitan la reserva que no se puede cumplir.</p>
+      </li>
+    </ol>
+
+    <p class="firma">Cinco respuestas cortas. Es la sección que ningún restaurante de
+      la zona tiene y la única razón por la que alguien elegiría reservar acá en vez
+      de seguir llamando.</p>
+  </div>
+</section>
+
+<!-- 04 VOLVER — el cierre -->
+<!-- ========= LA CITA A SANGRE ========= -->
+<section class="cita" aria-labelledby="t-cita">
+  <div class="cita__foto" aria-hidden="true">
+    <img src="imagenes/cita-01.jpg" width="2560" height="3413"
+         loading="lazy" decoding="async" alt="">
+  </div>
+  <blockquote class="cita__texto">
+    <p id="t-cita">Una mesa para la noche que importa<br>
+      <span class="cita__eco">Y saber, antes de llamar, que la van a tener</span></p>
+  </blockquote>
+</section>
+
+
+
+<!-- ========= TAJO — FRANJA A SANGRE ========= -->
+<div class="tajo" aria-hidden="true">
+  <img src="imagenes/banda-01.jpg" width="1300" height="683"
+       loading="lazy" decoding="async" alt="">
+</div>
+<section class="cap" id="c4" aria-labelledby="t-c4">
+  <p class="cap__n" aria-hidden="true">04</p>
+  <div class="cap__cuerpo">
+    <p class="antetitulo">Lo que queda después</p>
+    <h2 id="t-c4">Volver</h2>
+    <p class="entrada">Un 4,8 con noventa reseñas se gana atendiendo bien noventa
+      veces. Lo que falta no es la cocina: es que quien todavía no vino pueda
+      encontrarlos.</p>
+
+    <dl class="cierre">
+      <div class="cierre__par">
+        <dt>Dirección</dt>
+        <dd><span class="falta">falta</span></dd>
+      </div>
+      <div class="cierre__par">
+        <dt>Teléfono</dt>
+        <dd><span class="falta">falta</span></dd>
+      </div>
+      <div class="cierre__par">
+        <dt>Días y horario</dt>
+        <dd><span class="falta">falta</span></dd>
+      </div>
+      <div class="cierre__par">
+        <dt>Nota en Google</dt>
+        <dd>4,8 · 90 reseñas</dd>
+      </div>
+    </dl>
+  </div>
+</section>
+
+</main>
+
+
+
+<!-- ========= MOSAICO ========= -->
+
+<!-- ========= LA TIRA ========= -->
+<section class="tira" aria-label="Tres imágenes del oficio">
+  <figure class="tira__pieza">
+    <img src="imagenes/tira-01.jpg" width="1000" height="1333" loading="lazy" decoding="async" alt="La puerta abierta del local, con el interior iluminado al fondo.">
+  </figure>
+  <figure class="tira__pieza">
+    <img src="imagenes/tira-02.jpg" width="1000" height="556" loading="lazy" decoding="async" alt="Una ensalada servida en bowl, con frutillas y hojas verdes.">
+  </figure>
+  <figure class="tira__pieza">
+    <img src="imagenes/tira-03.jpg" width="1000" height="1000" loading="lazy" decoding="async" alt="Pasta, pan tostado y un café servidos en la mesa de madera.">
+  </figure>
+</section>
+
+
+<!-- ========= LAS FOTOS ========= -->
+<section class="galeria" aria-labelledby="t-galeria">
+  <h2 id="t-galeria" class="galeria__titulo">El logo, que ya existe</h2>
+  <p class="galeria__nota">Cinco fotos de esta página son suyas: la entrada, la puerta y tres platos. Los tres fondos —el vino y la vela— son de banco libre y están declarados en imagenes/FUENTES.txt.</p>
+  <div class="galeria__grilla">
+    <figure class="gal gal--abajo">
+      <img src="imagenes/gal-01.jpg" width="1300" height="683" loading="lazy" decoding="async"
+           alt="Logo de Sentiero sobre fondo oscuro, con el nombre en un círculo y la leyenda di casa kitchen.">
+      <figcaption>El logo, tal como lo usan en sus redes. Sobrio y bien hecho: no hace falta inventar una marca, sólo ponerla donde se busca.</figcaption>
+    </figure>
+  </div>
+  <p class="galeria__falta">falta: el salón de noche con las mesas puestas — es la foto que cierra la reserva</p>
+</section>
+
+<section class="mos" aria-labelledby="t-mos">
+  <h2 id="t-mos" class="mos__titulo">La misma serie, más de cerca</h2>
+  <p class="mos__nota">Estas seis ya aparecen más arriba en la página. Vuelven acá en otro tamaño porque una sola pasada de imágenes deja el scroll vacío, y porque de cerca se ven cosas que en grande se pierden. La procedencia de cada una está en imagenes/FUENTES.txt.</p>
+  <div class="mos__grilla">
+    <figure class="mos__p">
+      <img src="imagenes/mos-01.jpg" width="780" height="585"
+           loading="lazy" decoding="async" alt="">
+    </figure>
+    <figure class="mos__p">
+      <img src="imagenes/mos-02.jpg" width="780" height="410"
+           loading="lazy" decoding="async" alt="">
+    </figure>
+    <figure class="mos__p">
+      <img src="imagenes/mos-03.jpg" width="780" height="780"
+           loading="lazy" decoding="async" alt="">
+    </figure>
+    <figure class="mos__p">
+      <img src="imagenes/mos-04.jpg" width="780" height="434"
+           loading="lazy" decoding="async" alt="">
+    </figure>
+    <figure class="mos__p">
+      <img src="imagenes/mos-05.jpg" width="780" height="1040"
+           loading="lazy" decoding="async" alt="">
+    </figure>
+    <figure class="mos__p">
+      <img src="imagenes/mos-06.jpg" width="780" height="517"
+           loading="lazy" decoding="async" alt="">
+    </figure>
+  </div>
+</section>
+<section class="dueno" aria-labelledby="t-dueno">
+  <h2 id="t-dueno">Para el dueño</h2>
+  <div class="dueno__cols">
+    <div>
+      <h3>Lo que está verificado</h3>
+      <p>El 4,8 con 90 reseñas de su ficha de Google y que no tienen página ni
+        teléfono publicado.</p>
+    </div>
+    <div>
+      <h3>Lo que no inventé</h3>
+      <p>El tipo de cocina. El nombre sugiere una cosa, pero en ninguna parte
+        consta, así que la página lo deja anotado como pendiente en vez de poner
+        una carta que no es la suya.</p>
+    </div>
+    <div>
+      <h3>Lo que falta</h3>
+      <p>El número, la dirección, el horario y —sobre todo— las cinco respuestas
+        del capítulo «Celebrar». Se contestan en diez minutos y son la sección
+        que vende la página.</p>
+    </div>
+  </div>
+  <p class="dueno__cierre">
+    <a class="flecha" href="https://wa.me/56968650001" rel="noopener">Escribirme por WhatsApp <span aria-hidden="true">→</span></a>
+    <a class="flecha" href="../../" rel="noopener">Ver otros trabajos <span aria-hidden="true">→</span></a>
+  </p>
+</section>
+
+<footer class="pie">
+  <p>Sitio de demostración preparado por CristalWeb. El negocio no lo ha encargado
+    ni ha revisado su contenido.</p>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>

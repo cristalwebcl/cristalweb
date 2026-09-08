@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="es-CL" class="no-js">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>El Renoval — café y restaurante, Curarrehue</title>
+<meta name="description" content="Café y restaurante en Curarrehue. La carta de café explicada y la parada del viaje a las termas.">
+
+<!-- Política de seguridad de contenido: el navegador sólo puede cargar
+     archivos de este mismo sitio. Sin CDN, sin librerías, sin rastreadores.
+     Ver skills/web-blindada/references/csp-en-pages.md -->
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self'; img-src 'self' data:; font-src 'self'; connect-src 'self'; media-src 'self'; form-action 'self'; base-uri 'none'; frame-src 'none'; object-src 'none'">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+
+<!-- Rescate de la clase .js (regla 2 de la casa). En archivo, sin defer:
+     inline lo bloquearía la CSP. -->
+<script src="js/rescate.js"></script>
+
+<!-- Fuentes propias: cero peticiones a terceros. El preload va SOLO
+     para la display, que es la del titular de la portada. -->
+<link rel="preload" href="assets/fuentes/sanchez-400-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="assets/fuentes.css">
+<link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+
+<div class="propuesta">
+  <p class="propuesta__que">Propuesta de sitio web — preparada para <b>El Renoval</b> por CristalWeb</p>
+  <p class="propuesta__gancho">5,0 perfecto con 72 reseñas: café de verdad en un pueblo de montaña. Y el que viene manejando desde Pucón no tiene cómo saberlo.</p>
+</div>
+
+<header class="cab" id="cab">
+  <a class="cab__marca" href="#portada">
+    <span class="portafiltro" aria-hidden="true"><i></i></span>
+    <span class="cab__nombre">El Renoval</span>
+  </a>
+  <nav class="cab__nav" aria-label="Secciones">
+    <a href="#carta">La carta de café</a>
+    <a href="#pausa">La pausa del viaje</a>
+  </nav>
+  <a class="cab__tel" href="tel:+56961113538">
+    <span class="cab__tel-rot">Curarrehue</span>
+    <span class="cab__tel-num">+56 9 6111 3538</span>
+  </a>
+</header>
+
+<main>
+
+<!-- ========= PORTADA — la crema, arriba ========= -->
+<section class="portada portada--foto" id="portada" aria-labelledby="t-portada">
+  <!-- FONDO DE PORTADA: 2560 px, nitido. Se disuelve hacia el titular
+       con un gradiente lateral, no con desenfoque. -->
+  <div class="portada__foto" aria-hidden="true">
+    <img src="imagenes/port-01.jpg" width="2560" height="1707"
+         decoding="async" fetchpriority="high" alt="">
+  </div>
+
+
+  <!-- El hilo de vapor: uno solo, fino, que se riza arriba -->
+  <div class="vapor" aria-hidden="true">
+    <span class="vapor__hilo"></span>
+    <span class="vapor__rizo"></span>
+  </div>
+
+  <div class="portada__texto">
+    <p class="sitio">Café y restaurante · Curarrehue</p>
+    <h1 id="t-portada">Café de verdad,<br>a 5,0</h1>
+    <p class="bajada">Setenta y dos reseñas y ni una sola por debajo de cinco
+      estrellas. En un pueblo de montaña eso no es suerte: es que alguien sabe hacer
+      café. Falta que se sepa antes de llegar.</p>
+    <dl class="specs">
+      <div class="spec"><dt>nota en Google</dt><dd>5,0</dd></div>
+      <div class="spec"><dt>reseñas</dt><dd>72</dd></div>
+      <div class="spec"><dt>teléfono</dt><dd class="dd--tel"><a href="tel:+56961113538">+56 9 6111 3538</a></dd></div>
+    </dl>
+  </div>
+</section>
+
+<!-- ========= LA PIEZA FIRMA — ESTRUCTURA D: LA CARTA ========= -->
+<section class="carta con-telon" id="carta" aria-labelledby="t-carta">
+  <div class="telon" aria-hidden="true">
+    <img src="imagenes/telon-01.jpg" width="1200" height="888" decoding="async" alt="">
+  </div>
+
+  <!-- AURA DE COLOR: la foto de rubro reventada a desenfoque. No se lee
+       como imagen: aporta color y luz detras de una seccion que si no
+       seria fondo plano. Aca el desenfoque SI es el efecto, no un parche,
+       y por eso el archivo va chico: a 64 px de blur, mas resolucion no
+       cambia nada. Sin loading=lazy porque el elemento va en absoluto con
+       z-index negativo y el navegador nunca lo considera visible. -->
+  <div class="aura" aria-hidden="true">
+    <img src="imagenes/aura-01.jpg" width="900" height="666" decoding="async" alt="">
+  </div>
+
+  <div class="carta__cabecera">
+    <p class="antetitulo">Sin diccionario y sin vergüenza</p>
+    <h2 id="t-carta">Pedir café<br>sin diccionario</h2>
+    <p class="entrada">La carta de un café bueno está llena de palabras que no todo
+      el mundo tiene por qué saber. Nadie debería quedarse con la duda ni pedir
+      siempre lo mismo por no preguntar. Acá está cada uno traducido, con cuánta
+      leche lleva.</p>
+    <p class="marca-ejemplo" data-ejemplo="Referencia general del oficio — la carta la define el local"></p>
+  </div>
+
+  <ul class="cafes">
+    <li class="cafe">
+      <div class="cafe__izq">
+        <p class="cafe__n">Espresso</p>
+        <p class="cafe__t">Café solo, poquito y concentrado.</p>
+      </div>
+      <div class="cafe__der">
+        <span class="prop" role="img" aria-label="Todo café, sin leche">
+          <span class="prop__cafe w-100"></span>
+        </span>
+        <p class="cafe__d">Es la base de todos los demás. Un sorbo o dos. Fuerte de
+          sabor, no de cantidad: tiene menos cafeína de lo que la gente cree.</p>
+      </div>
+    </li>
+
+    <li class="cafe">
+      <div class="cafe__izq">
+        <p class="cafe__n">Cortado</p>
+        <p class="cafe__t">Un espresso con un chorrito de leche.</p>
+      </div>
+      <div class="cafe__der">
+        <span class="prop" role="img" aria-label="Casi todo café, poca leche">
+          <span class="prop__cafe w-72"></span>
+          <span class="prop__leche w-28"></span>
+        </span>
+        <p class="cafe__d">La leche está para bajarle el filo, no para cambiarle el
+          sabor. Sigue sabiendo a café. El más pedido de Chile, y por algo.</p>
+      </div>
+    </li>
+
+    <li class="cafe">
+      <div class="cafe__izq">
+        <p class="cafe__n">Americano</p>
+        <p class="cafe__t">Un espresso al que se le agrega agua caliente.</p>
+      </div>
+      <div class="cafe__der">
+        <span class="prop" role="img" aria-label="Café con agua, sin leche">
+          <span class="prop__cafe w-38"></span>
+          <span class="prop__agua w-62"></span>
+        </span>
+        <p class="cafe__d">Ojo: <b>lo que se agrega es agua, no leche</b>. Queda más
+          largo y más suave, pero es el mismo café. Para el que quiere una taza que
+          dure.</p>
+      </div>
+    </li>
+
+    <li class="cafe">
+      <div class="cafe__izq">
+        <p class="cafe__n">Flat white</p>
+        <p class="cafe__t">Leche cremosa, sin espuma gruesa.</p>
+      </div>
+      <div class="cafe__der">
+        <span class="prop" role="img" aria-label="Más leche que café">
+          <span class="prop__cafe w-40"></span>
+          <span class="prop__leche w-60"></span>
+        </span>
+        <p class="cafe__d">Parecido al latte pero en taza más chica y con la leche
+          más densa. Se sigue notando el café. El favorito del que ya probó todos.</p>
+      </div>
+    </li>
+
+    <li class="cafe">
+      <div class="cafe__izq">
+        <p class="cafe__n">Cappuccino</p>
+        <p class="cafe__t">Leche con una capa gruesa de espuma encima.</p>
+      </div>
+      <div class="cafe__der">
+        <span class="prop" role="img" aria-label="Café, leche y bastante espuma">
+          <span class="prop__cafe w-34"></span>
+          <span class="prop__leche w-38"></span>
+          <span class="prop__espuma w-28"></span>
+        </span>
+        <p class="cafe__d">La espuma es parte del trago, no un adorno: por eso se
+          toma sin revolver. Suave y tibio.</p>
+      </div>
+    </li>
+
+    <li class="cafe">
+      <div class="cafe__izq">
+        <p class="cafe__n">Latte</p>
+        <p class="cafe__t">Harta leche y un fondo de café.</p>
+      </div>
+      <div class="cafe__der">
+        <span class="prop" role="img" aria-label="Sobre todo leche">
+          <span class="prop__cafe w-24"></span>
+          <span class="prop__leche w-66"></span>
+          <span class="prop__espuma w-10"></span>
+        </span>
+        <p class="cafe__d">El más suave de todos y el más grande. Si alguien dice
+          «no me gusta el café pero quiero algo rico», éste es.</p>
+      </div>
+    </li>
+  </ul>
+
+  <div class="atajos">
+    <h3>Dos atajos para no pensar</h3>
+    <div class="atajos__par">
+      <div class="atajo">
+        <p class="atajo__q">«Quiero uno fuerte»</p>
+        <p class="atajo__a">Espresso, o cortado si le parece muy poco líquido.</p>
+      </div>
+      <div class="atajo">
+        <p class="atajo__q">«Uno suave, con harta leche»</p>
+        <p class="atajo__a">Latte. Y si lo quiere un poco más cargado, flat white.</p>
+      </div>
+    </div>
+  </div>
+
+  <p class="firma">Las proporciones son las de referencia del oficio y varían de
+    barra en barra. <span class="falta">falta: confirmar cuáles trabajan y en qué
+    tamaños</span> — con eso la carta queda firmada por la casa.</p>
+</section>
+
+<!-- ========= LA PAUSA DEL VIAJE ========= -->
+<!-- ========= MEDIA PANTALLA ========= -->
+<section class="mitades" aria-labelledby="t-mitades">
+  <div class="mitades__foto">
+    <img src="imagenes/media-01.jpg" width="1500" height="1058"
+         loading="lazy" decoding="async" alt="">
+  </div>
+  <div class="mitades__texto">
+    <p class="mitades__ante">La foto que ya tienen y vale por la carta entera</p>
+    <h2 id="t-mitades">Se ve la cocina desde la vereda</h2>
+    <p>Un café de pueblo compite contra la duda de si estará abierto y de si es para uno. Esta foto contesta las dos: el toldo levantado, las mesas puestas, la pizarra afuera y alguien trabajando adentro. Curarrehue tiene mucho paso de turista que decide en la vereda, en diez segundos, y esos diez segundos se ganan con la foto de la fachada y con el horario escrito.</p>
+  </div>
+</section>
+
+<section class="pausa" id="pausa" aria-labelledby="t-pausa">
+  <div class="pausa__cuerpo">
+    <p class="antetitulo antetitulo--claro">Quién para acá y por qué</p>
+    <h2 id="t-pausa">La pausa<br>del viaje</h2>
+    <p class="entrada">Curarrehue está en el camino a las termas y al paso
+      fronterizo. Casi nadie viene sólo a tomar café: viene pasando, y para si algo
+      lo hace parar. Un 5,0 escrito en la página es exactamente eso.</p>
+
+    <dl class="huecos">
+      <div class="hueco">
+        <dt>Días y horario</dt>
+        <dd><span class="falta">falta</span>
+          <span class="hueco__pq">El que sale temprano de Pucón necesita saber si a
+            las nueve ya hay café. Es el dato que más se busca y el que falta.</span></dd>
+      </div>
+      <div class="hueco">
+        <dt>Si hay enchufes</dt>
+        <dd><span class="falta">falta</span>
+          <span class="hueco__pq">Media clientela de un café de ruta viene con el
+            teléfono en rojo. Decir que hay enchufes es gratis y trae gente.</span></dd>
+      </div>
+      <div class="hueco">
+        <dt>Si hay una mesa tranquila</dt>
+        <dd><span class="falta">falta</span>
+          <span class="hueco__pq">Para el que trabaja un rato o el que viene con un
+            libro. Los dos se quedan más y consumen más.</span></dd>
+      </div>
+      <div class="hueco">
+        <dt>Si se puede pedir para llevar</dt>
+        <dd><span class="falta">falta</span>
+          <span class="hueco__pq">El que va apurado a las termas no se baja si cree
+            que va a perder media hora.</span></dd>
+      </div>
+      <div class="hueco">
+        <dt>Dirección exacta</dt>
+        <dd><span class="falta">falta</span>
+          <span class="hueco__pq">El pueblo es chico, pero el que pasa maneja
+            mirando el camino, no las fachadas.</span></dd>
+      </div>
+    </dl>
+
+    <p class="nota-honesta">Lo que esta página <b>no</b> dice: cuántos kilómetros ni
+      cuántos minutos hay hasta las termas o hasta el paso. No los tengo medidos, y
+      un número equivocado en internet le arruina el día a alguien que está
+      manejando.</p>
+  </div>
+</section>
+
+<!-- ========= EL CIERRE — T1 ========= -->
+<!-- ========= LA CITA A SANGRE ========= -->
+<section class="cita" aria-labelledby="t-cita">
+  <div class="cita__foto" aria-hidden="true">
+    <img src="imagenes/cita-01.jpg" width="2560" height="1894"
+         loading="lazy" decoding="async" alt="">
+  </div>
+  <blockquote class="cita__texto">
+    <p id="t-cita">Café de verdad, a 40 km del paso<br>
+      <span class="cita__eco">Curarrehue es la última parada antes de la frontera</span></p>
+  </blockquote>
+</section>
+
+
+
+<!-- ========= TAJO — FRANJA A SANGRE ========= -->
+<div class="tajo" aria-hidden="true">
+  <img src="imagenes/banda-01.jpg" width="1500" height="1000"
+       loading="lazy" decoding="async" alt="">
+</div>
+<section class="cierre" id="llamar" aria-labelledby="t-cierre">
+  <p class="cierre__rot">Mientras tanto, se pregunta por teléfono</p>
+  <h2 id="t-cierre" class="cierre__tel">
+    <a href="tel:+56961113538">+56 9 6111 3538</a>
+  </h2>
+  <p class="cierre__pie">Es el número publicado en su ficha de Google. Toda esta
+    página existe para que deje de ser la única forma de saber a qué hora abren.</p>
+</section>
+
+<!-- ========= LAS FOTOS ========= -->
+<section class="galeria" aria-labelledby="t-galeria">
+  <h2 id="t-galeria" class="galeria__titulo">Todo esto es de ellos, empezando por el logo</h2>
+  <p class="galeria__nota">Seis fotos de esta página son suyas, sacadas de su propia ficha y su Facebook. Sólo tres imágenes no lo son —el fondo de la portada, el aura y la cita, las tres de granos de café— y están declaradas en imagenes/FUENTES.txt.</p>
+  <div class="galeria__grilla">
+    <figure class="gal gal--izq">
+      <img src="imagenes/gal-03.jpg" width="1300" height="1300" loading="lazy" decoding="async"
+           alt="Logo del café: un círculo negro con una montaña y tres árboles dibujados en blanco, y el nombre El Renoval arriba.">
+      <figcaption>El logo. Montaña y tres árboles: ya dice dónde está el café sin escribirlo.</figcaption>
+    </figure>
+    <figure class="gal gal--der">
+      <img src="imagenes/gal-02.jpg" width="1300" height="917" loading="lazy" decoding="async"
+           alt="Mesas en la vereda con la pizarra del menú, y el cerro verde al fondo del pueblo.">
+      <figcaption>Las mesas afuera, con el cerro detrás. Esto no lo tiene ninguna cafetería de ciudad.</figcaption>
+    </figure>
+    <figure class="gal gal--abajo">
+      <img src="imagenes/gal-01.jpg" width="1200" height="1600" loading="lazy" decoding="async"
+           alt="La fachada de madera con el letrero El Renoval Café y los banderines colgados.">
+      <figcaption>La fachada con el letrero. Es la foto que hay que tener en la ficha de Google y hoy no está.</figcaption>
+    </figure>
+  </div>
+  <p class="galeria__falta">falta: la carta escrita, y una foto del salón por dentro con luz de tarde</p>
+</section>
+
+<!-- ========= LA TIRA ========= -->
+<section class="tira" aria-label="Tres imágenes del oficio">
+  <figure class="tira__pieza">
+    <img src="imagenes/tira-01.jpg" width="1000" height="973" loading="lazy" decoding="async" alt="Chocolate caliente, café y sopaipillas servidos en la mesa de madera.">
+  </figure>
+  <figure class="tira__pieza">
+    <img src="imagenes/tira-02.jpg" width="1000" height="706" loading="lazy" decoding="async" alt="Un café con un sándwich abierto, en la mesa de la vereda.">
+  </figure>
+  <figure class="tira__pieza">
+    <img src="imagenes/tira-03.jpg" width="1000" height="706" loading="lazy" decoding="async" alt="Una porción de cheesecake con frutillas y crema.">
+  </figure>
+</section>
+
+</main>
+
+
+
+<!-- ========= MOSAICO ========= -->
+<section class="mos" aria-labelledby="t-mos">
+  <h2 id="t-mos" class="mos__titulo">La misma serie, más de cerca</h2>
+  <p class="mos__nota">Estas seis ya aparecen más arriba en la página. Vuelven acá en otro tamaño porque una sola pasada de imágenes deja el scroll vacío, y porque de cerca se ven cosas que en grande se pierden. La procedencia de cada una está en imagenes/FUENTES.txt.</p>
+  <div class="mos__grilla">
+    <figure class="mos__p">
+      <img src="imagenes/mos-01.jpg" width="780" height="550"
+           loading="lazy" decoding="async" alt="">
+    </figure>
+    <figure class="mos__p">
+      <img src="imagenes/mos-02.jpg" width="780" height="780"
+           loading="lazy" decoding="async" alt="">
+    </figure>
+    <figure class="mos__p">
+      <img src="imagenes/mos-03.jpg" width="780" height="550"
+           loading="lazy" decoding="async" alt="">
+    </figure>
+    <figure class="mos__p">
+      <img src="imagenes/mos-04.jpg" width="780" height="1040"
+           loading="lazy" decoding="async" alt="">
+    </figure>
+    <figure class="mos__p">
+      <img src="imagenes/mos-05.jpg" width="780" height="551"
+           loading="lazy" decoding="async" alt="">
+    </figure>
+    <figure class="mos__p">
+      <img src="imagenes/mos-06.jpg" width="780" height="551"
+           loading="lazy" decoding="async" alt="">
+    </figure>
+  </div>
+</section>
+<section class="dueno" aria-labelledby="t-dueno">
+  <h2 id="t-dueno">Para el dueño</h2>
+  <div class="dueno__cols">
+    <div>
+      <h3>Lo que está verificado</h3>
+      <p>El 5,0 con 72 reseñas y el teléfono +56 9 6111 3538, ambos de su ficha de
+        Google. No tienen página propia.</p>
+    </div>
+    <div>
+      <h3>Lo que es referencia</h3>
+      <p>Las proporciones de la carta son las generales del oficio, no las de su
+        barra. Están puestas para mostrar la forma: las suyas mandan.</p>
+    </div>
+    <div>
+      <h3>Lo que falta</h3>
+      <p>El horario, la dirección y qué cafés trabajan de verdad. Con el horario
+        solo, el que viene de Pucón deja de adivinar.</p>
+    </div>
+  </div>
+  <p class="dueno__cierre">
+    <a class="flecha" href="https://wa.me/56968650001" rel="noopener">Escribirme por WhatsApp <span aria-hidden="true">→</span></a>
+    <a class="flecha" href="../../" rel="noopener">Ver otros trabajos <span aria-hidden="true">→</span></a>
+  </p>
+</section>
+
+<footer class="pie">
+  <p>Sitio de demostración preparado por CristalWeb. El negocio no lo ha encargado
+    ni ha revisado su contenido. Las proporciones de café son referencia general y
+    varían según la barra.</p>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,76 @@
+PROCEDENCIA DE LAS IMÁGENES — Emporio Artesanal, Loncoche
+════════════════════════════════════════════════════════════════
+
+NINGUNA ES DEL NEGOCIO, y el motivo del descarte importa.
+
+Buscando «Emporio Artesanal Loncoche» aparecen fotos preciosas de
+producto: quesos de campo, arrollado huaso, lomo ahumado, mantequilla.
+**Ninguna se usó.** Son fotos comerciales de proveedores —packaging con
+marca propia y fotografía de estudio— y ponerlas acá le atribuiría a
+este emporio un catálogo que quizá no vende. Un cliente que llega
+buscando ese queso exacto y no lo encuentra se va con razón.
+
+También aparecen un «Empório Artesanal» de Juiz de Fora (Brasil), un
+«Emporio Artesanal USA» y varios homónimos más.
+
+**Y no se usó ninguna foto de personas.** La página pide retratos de los
+productores, con nombre — pero eso necesita la autorización explícita de
+cada uno, y eso lo consigue el dueño, no una búsqueda.
+
+────────────────────────────────────────────────────────────────
+GENÉRICAS — siete, de banco libre. Frascos y lana, sin una sola
+etiqueta legible: eso es lo que las hace usables acá.
+
+media-01.jpg 1600x1067  frascos de conserva en una repisa de madera
+tirb-01.jpg  1000x667   los mismos frascos, recortados
+tirc-01.jpg  1000x750   repisas llenas de frascos, en fila
+  Pexels y pxhere (uso libre), consulta
+  «glass jars preserves pantry shelf homemade»
+
+port-01.jpg  2560x1741  madejas de lana ordenadas por color
+aura-01.jpg   900x601   ovillos de lana verdes (va a 64 px de
+                        desenfoque: aporta el verde de la paleta)
+cita-01.jpg  2200x3300  ovillos blancos y café en una canasta
+tira-01.jpg  1000x667   ovillos de colores
+tira-02.jpg  1000x680   madejas ordenadas por color
+  Pexels y pxhere (uso libre), consulta
+  «wool yarn knitted wooden basket»
+
+────────────────────────────────────────────────────────────────
+LO QUE FALTA — acá las fotos importan más que en ninguna otra demo
+
+El producto artesanal se compra por cómo se ve. En orden:
+
+1. **Cada repisa completa, de frente y con luz de día.** Cuatro fotos,
+   una por sección: mieles, conservas, cocina, tejidos.
+2. **Un frasco de cerca con la etiqueta legible.** Es la foto que
+   convierte: la etiqueta artesanal ES el argumento.
+3. **Los productores, con su autorización explícita y su nombre.** Es LA
+   foto de esta página — la trazabilidad que el texto promete se vuelve
+   visible. Sin permiso firmado no va, y eso lo pide el dueño.
+4. El mesón y la fachada, para ubicar el local.
+
+Nota de armado: la portada era al principio la repisa de frascos, y no
+se veia — es una foto oscura sobre un fondo lino claro, y el velo la
+apagaba del todo. Se cambio por las madejas de color, que tienen con
+que contrastar. Los frascos siguen en la pagina, en media pantalla y en
+la tira, sobre fondos que si los dejan ver.
+
+────────────────────────────────────────────────────────────────
+POR QUÉ LA PORTADA NO LLEVA FOTO
+
+Se probó cinco veces y ninguna funcionó: el fondo de esta portada es un
+degradado lino claro con los frascos DIBUJADOS en CSS —la firma de la
+página—, y encima de eso cualquier foto o queda tapada por el velo o
+compite con el dibujo. Las repisas de frascos son oscuras y el velo
+claro las apaga; las lanas de color, además, traían la etiqueta de
+marca legible.
+
+La foto que iba a ir arriba está igual en la página: se movió a una
+franja a sangre, donde se ve entera y no pelea con nada. La portada
+queda con su dibujo, que era lo que la sostenía desde el principio.
+
+**La regla que sale de acá:** una portada con fondo claro necesita una
+foto con masa oscura, y una con fondo oscuro necesita una foto con luz
+propia. Cuando la demo ya tiene un dibujo CSS fuerte en la portada, la
+foto va mejor en otra parte.

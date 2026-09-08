@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="es-CL" class="no-js">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>House Salón Barbería — Temuco</title>
+<meta name="description" content="Barbería y salón en Temuco, bajo un mismo techo. Los dos servicios y la posibilidad de ir juntos y salir juntos.">
+
+<!-- Política de seguridad de contenido: el navegador sólo puede cargar
+     archivos de este mismo sitio. Sin CDN, sin librerías, sin rastreadores.
+     Ver skills/web-blindada/references/csp-en-pages.md -->
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self'; img-src 'self' data:; font-src 'self'; connect-src 'self'; media-src 'self'; form-action 'self'; base-uri 'none'; frame-src 'none'; object-src 'none'">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+
+<!-- Rescate de la clase .js (regla 2 de la casa). En archivo, sin defer:
+     inline lo bloquearía la CSP. -->
+<script src="js/rescate.js"></script>
+
+<!-- Fuentes propias: cero peticiones a terceros. -->
+<link rel="preload" href="assets/fuentes/cormorant-var-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="assets/fuentes.css">
+<link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+
+<div class="propuesta">
+  <p class="propuesta__que">Propuesta de sitio web — preparada para <b>House Salón Barbería</b> por CristalWeb</p>
+  <p class="propuesta__gancho">El nombre lo dice todo y nadie lo está aprovechando: barbería y salón bajo un mismo techo. La pareja que podría venir junta, a la misma hora, no tiene cómo enterarse de que se puede.</p>
+</div>
+
+<header class="cab" id="cab">
+  <a class="cab__marca" href="#portada">
+    <span class="puerta" aria-hidden="true"><i class="puerta__num"></i></span>
+    <span class="cab__nombre">House Salón</span>
+  </a>
+  <nav class="cab__nav" aria-label="Secciones">
+    <a href="#casa">Los dos salones</a>
+    <a href="#local">La casa</a>
+  </nav>
+  <a class="cab__tel" href="tel:+56926950314">
+    <span class="cab__tel-rot">Agendar los dos</span>
+    <span class="cab__tel-num">+56 9 2695 0314</span>
+  </a>
+</header>
+
+<main>
+
+<!-- ========= PORTADA ========= -->
+<section class="portada portada--foto" id="portada" aria-labelledby="t-portada">
+  <!-- FONDO DE PORTADA: 2560 px, nitido. Se disuelve hacia el titular
+       con un gradiente lateral, no con desenfoque. -->
+  <div class="portada__foto" aria-hidden="true">
+    <img src="imagenes/port-01.jpg" width="2560" height="1707"
+         decoding="async" fetchpriority="high" alt="">
+  </div>
+
+  <div class="mural" aria-hidden="true"><span class="mural__papel"></span></div>
+
+  <div class="portada__texto">
+    <p class="sitio">Barbería y salón · Temuco</p>
+    <h1 id="t-portada">Vengan los dos.<br>Salgan juntos.</h1>
+    <p class="bajada">Una casa con dos salones adentro: el de barbería y el de color y
+      peinado. Se puede venir por uno solo, como siempre — pero también se puede tomar la
+      misma hora para dos y resolver en una salida lo que normalmente son dos tardes
+      distintas.</p>
+    <dl class="specs">
+      <div class="spec"><dt>nota en Google</dt><dd>4,8</dd></div>
+      <div class="spec"><dt>reseñas</dt><dd>89</dd></div>
+      <div class="spec"><dt>teléfono</dt><dd class="dd--tel"><a href="tel:+56926950314">+56 9 2695 0314</a></dd></div>
+    </dl>
+  </div>
+</section>
+
+<!-- ========= LA PIEZA FIRMA — M CON TECHO COMÚN ========= -->
+<section class="casa con-telon" id="casa" aria-labelledby="t-casa">
+  <div class="telon" aria-hidden="true">
+    <img src="imagenes/telon-01.jpg" width="1200" height="800" decoding="async" alt="">
+  </div>
+
+  <!-- AURA DE COLOR: la foto de rubro reventada a desenfoque. No se lee
+       como imagen: aporta color y luz detras de una seccion que si no
+       seria fondo plano. Aca el desenfoque SI es el efecto, no un parche,
+       y por eso el archivo va chico: a 64 px de blur, mas resolucion no
+       cambia nada. Sin loading=lazy porque el elemento va en absoluto con
+       z-index negativo y el navegador nunca lo considera visible. -->
+  <div class="aura" aria-hidden="true">
+    <img src="imagenes/aura-01.jpg" width="900" height="601" decoding="async" alt="">
+  </div>
+
+
+  <!-- El techo: el encabezado que cubre las dos columnas. La grilla
+       dibuja el organigrama del negocio. -->
+  <div class="techo">
+    <p class="antetitulo">Una casa, dos salones</p>
+    <h2 id="t-casa">Lo mismo de siempre, en el mismo lugar</h2>
+    <p class="entrada">Acá abajo van los dos lados de la casa. La página habla de
+      <b>servicios</b> y no de a quién le corresponde cada uno: el que quiera un corte de
+      barbería lo pide, y el que quiera color lo pide, y nadie tiene que explicar nada.</p>
+    <p class="marca-ejemplo" data-ejemplo="Servicios generales del rubro — la lista real la confirma el salón"></p>
+  </div>
+
+  <div class="col col--a">
+    <p class="col__rot">Salón uno</p>
+    <h3>Barbería</h3>
+    <ul>
+      <li>Corte a máquina y a tijera</li>
+      <li>Degradados</li>
+      <li>Arreglo y perfilado de barba</li>
+      <li>Afeitado con navaja</li>
+      <li>Corte de niño</li>
+    </ul>
+    <p class="col__falta"><span class="falta">falta: la lista real y cuánto dura cada
+      uno</span></p>
+  </div>
+
+  <div class="col col--b">
+    <p class="col__rot">Salón dos</p>
+    <h3>Color y peinado</h3>
+    <ul>
+      <li>Corte y secado</li>
+      <li>Color, retoque de raíz y mechas</li>
+      <li>Tratamientos de pelo</li>
+      <li>Peinados y ondas</li>
+      <li>Peinado de evento</li>
+    </ul>
+    <p class="col__falta"><span class="falta">falta: la lista real y cuánto dura cada
+      uno</span></p>
+  </div>
+
+  <!-- El piso: la parte que cierra las dos columnas -->
+  <div class="piso">
+    <h3>La gracia: la misma hora para dos</h3>
+    <p>Es lo único que ningún otro local del centro puede ofrecer igual. Dos personas
+      entran a la misma hora, cada una a su silla, y salen juntas — sin la espera de uno
+      mirando el celular mientras el otro termina.</p>
+    <p><b>Y con esto hay que ser exacto, porque son dos cosas distintas:</b> que exista la
+      posibilidad depende de que haya dos personas disponibles a esa hora, y eso se
+      confirma al agendar. No es «llegar y sentarse»: es pedirlo por teléfono diciendo que
+      son dos.</p>
+    <p class="falta">falta: confirmar si se puede agendar así y con cuánta anticipación
+      conviene pedirlo</p>
+  </div>
+</section>
+
+<!-- ========= LA CASA ========= -->
+<!-- ========= MEDIA PANTALLA ========= -->
+<section class="mitades" aria-labelledby="t-mitades">
+  <div class="mitades__foto">
+    <img src="imagenes/media-01.jpg" width="2200" height="1467"
+         loading="lazy" decoding="async" alt="">
+  </div>
+  <div class="mitades__texto">
+    <p class="mitades__ante">Dos salones, una casa</p>
+    <h2 id="t-mitades">La hora compartida no es un combo: es logística</h2>
+    <p>Que dos personas se atiendan a la misma hora en la misma casa no se resuelve poniendo dos precios juntos. Se resuelve coordinando dos agendas: mientras uno pasa por la silla de barbería, la otra está en color, y ambos terminan cerca. Eso hay que decidirlo al reservar — y por eso hay que poder pedirlo por escrito.</p>
+  </div>
+</section>
+
+<section class="local" id="local" aria-labelledby="t-local">
+  <div class="local__cabecera">
+    <p class="antetitulo antetitulo--claro">Por qué se llama casa</p>
+    <h2 id="t-local">La casa</h2>
+    <p class="entrada">Una peluquería de mall atiende a quince personas a la vez y funciona
+      como una cinta. Un local chico funciona distinto, y esa diferencia es el argumento —
+      no un consuelo.</p>
+    <p class="marca-ejemplo marca-ejemplo--claro" data-ejemplo="Lo físico del local está por confirmar: nada de esto describe todavía este lugar"></p>
+  </div>
+
+  <div class="rasgos">
+    <article class="ra">
+      <h3>La misma persona todas las veces</h3>
+      <p>En un equipo chico uno vuelve donde el mismo y no hay que explicar de nuevo cómo
+        se quiere el corte. En un local grande, quien atiende depende del turno.</p>
+    </article>
+    <article class="ra">
+      <h3>Se conversa</h3>
+      <p>Con música a volumen normal y sin cinco secadores encendidos, se puede decir qué se
+        quiere antes de que empiecen a cortar. La mitad de los cortes que no gustan
+        empezaron sin esa conversación.</p>
+    </article>
+    <article class="ra">
+      <h3>La hora es la hora</h3>
+      <p>Un local que agenda de a poco puede cumplir el horario. Es una promesa chica y es
+        justamente lo que la gente comenta después.
+        <span class="falta">falta: confirmar si trabajan sólo con hora agendada</span></p>
+    </article>
+    <article class="ra">
+      <h3>Se puede llegar con alguien</h3>
+      <p>Con la pareja, con un hijo, con la mamá. En una casa eso no molesta a nadie; en
+        una cinta de producción, sí.</p>
+    </article>
+  </div>
+
+  <p class="descargo">Esta sección describe cómo funciona en general un local chico frente a
+    uno grande: <b>no describe todavía este local</b>, porque no lo conozco por dentro. Lo
+    físico —cuántas sillas, cuántas personas atienden, si hay sala de espera— lo confirma el
+    salón antes de publicar.</p>
+</section>
+
+<!-- ========= EL CIERRE — T1 ========= -->
+<!-- ========= LA CITA A SANGRE ========= -->
+<section class="cita" aria-labelledby="t-cita">
+  <div class="cita__foto" aria-hidden="true">
+    <img src="imagenes/cita-01.jpg" width="2200" height="1466"
+         loading="lazy" decoding="async" alt="">
+  </div>
+  <blockquote class="cita__texto">
+    <p id="t-cita">Vengan los dos. Salgan juntos.<br>
+      <span class="cita__eco">Barbería y salón bajo el mismo techo</span></p>
+  </blockquote>
+</section>
+
+
+
+<!-- ========= TAJO — FRANJA A SANGRE ========= -->
+<div class="tajo" aria-hidden="true">
+  <img src="imagenes/banda-01.jpg" width="1500" height="1000"
+       loading="lazy" decoding="async" alt="">
+</div>
+<section class="cierre" id="llamar" aria-labelledby="t-cierre">
+  <p class="cierre__rot">Para agendar — y si son dos, decirlo al llamar</p>
+  <h2 id="t-cierre" class="cierre__tel">
+    <a href="tel:+56926950314">+56 9 2695 0314</a>
+  </h2>
+  <p class="cierre__pie">Es el número publicado en su ficha de Google.</p>
+</section>
+
+<!-- ========= LA TIRA ========= -->
+<section class="tira" aria-label="Tres imágenes del oficio">
+  <figure class="tira__pieza">
+    <img src="imagenes/tira-01.jpg" width="1100" height="734" loading="lazy" decoding="async" alt="Peinado recogido en proceso durante una sesión de salón.">
+  </figure>
+  <figure class="tira__pieza">
+    <img src="imagenes/tira-02.jpg" width="1100" height="734" loading="lazy" decoding="async" alt="Trabajo de color y rulos en el salón.">
+  </figure>
+  <figure class="tira__pieza">
+    <img src="imagenes/tira-03.jpg" width="1100" height="734" loading="lazy" decoding="async" alt="Secador, cepillo y accesorios de peinado sobre una superficie clara.">
+  </figure>
+</section>
+
+<!-- ========= LAS FOTOS ========= -->
+<section class="galeria" aria-labelledby="t-galeria">
+  <h2 id="t-galeria" class="galeria__titulo">El local</h2>
+  <p class="galeria__nota">Foto publicada por la propia barbería en su Instagram. El logo va pintado en el vidrio: es su local, no una referencia.</p>
+  <div class="galeria__grilla">
+    <figure class="gal gal--abajo">
+      <img src="imagenes/salon-01.jpg" width="361" height="640" loading="lazy" decoding="async"
+           alt="Interior de la barbería con el logo pintado en el vidrio y las luces cálidas encendidas.">
+      <figcaption>El logo en el vidrio y la luz cálida encendida.</figcaption>
+    </figure>
+  </div>
+  <p class="galeria__falta">falta: el sillón desde el frente y una foto del corte terminado. Son las dos que decide un cliente antes de reservar.</p>
+</section>
+
+</main>
+
+
+
+<!-- ========= MOSAICO ========= -->
+<section class="mos" aria-labelledby="t-mos">
+  <h2 id="t-mos" class="mos__titulo">La misma serie, más de cerca</h2>
+  <p class="mos__nota">Estas seis ya aparecen más arriba en la página. Vuelven acá en otro tamaño porque una sola pasada de imágenes deja el scroll vacío, y porque de cerca se ven cosas que en grande se pierden. La procedencia de cada una está en imagenes/FUENTES.txt.</p>
+  <div class="mos__grilla">
+    <figure class="mos__p">
+      <img src="imagenes/mos-01.jpg" width="780" height="520"
+           loading="lazy" decoding="async" alt="">
+    </figure>
+    <figure class="mos__p">
+      <img src="imagenes/mos-02.jpg" width="780" height="520"
+           loading="lazy" decoding="async" alt="">
+    </figure>
+    <figure class="mos__p">
+      <img src="imagenes/mos-03.jpg" width="780" height="520"
+           loading="lazy" decoding="async" alt="">
+    </figure>
+    <figure class="mos__p">
+      <img src="imagenes/mos-04.jpg" width="780" height="520"
+           loading="lazy" decoding="async" alt="">
+    </figure>
+    <figure class="mos__p">
+      <img src="imagenes/mos-05.jpg" width="780" height="520"
+           loading="lazy" decoding="async" alt="">
+    </figure>
+    <figure class="mos__p">
+      <img src="imagenes/salon-02.jpg" width="640" height="640"
+           loading="lazy" decoding="async" alt="">
+    </figure>
+  </div>
+</section>
+<section class="dueno" aria-labelledby="t-dueno">
+  <h2 id="t-dueno">Para el salón</h2>
+  <div class="dueno__cols">
+    <div>
+      <h3>Lo que está verificado</h3>
+      <p>El 4,8 con 89 reseñas de su ficha de Google y el teléfono +56 9 2695 0314. No
+        tienen sitio propio: sólo redes.</p>
+    </div>
+    <div>
+      <h3>Lo que es general</h3>
+      <p>Las dos listas de servicios y los cuatro rasgos de «la casa». Son del rubro, no
+        suyos, y van marcados.</p>
+    </div>
+    <div>
+      <h3>Lo que falta</h3>
+      <p>Lo más importante es una sola respuesta: <b>si se puede agendar dos sillas a la
+        misma hora</b>. Si es que sí, esa frase sola justifica la página entera. Después:
+        las dos listas reales con duraciones, y si trabajan sólo con hora.</p>
+    </div>
+  </div>
+  <p class="dueno__cierre">
+    <a class="flecha" href="https://wa.me/56968650001" rel="noopener">Escribirme por WhatsApp <span aria-hidden="true">→</span></a>
+    <a class="flecha" href="../../" rel="noopener">Ver otros trabajos <span aria-hidden="true">→</span></a>
+  </p>
+</section>
+
+<footer class="pie">
+  <p>Sitio de demostración preparado por CristalWeb. El negocio no lo ha encargado ni ha
+    revisado su contenido. Las listas de servicios son generales del rubro y están marcadas
+    como tales; no se afirma que este local ofrezca ninguno de ellos ni que pueda atender
+    dos sillas a la misma hora — eso está declarado como pendiente. No hay precios ni
+    horarios.</p>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="es-CL" class="no-js">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Fortín Mapuche — restaurante, Pucura</title>
+<meta name="description" content="Restaurante en Pucura, camino Coñaripe–Licán Ray. Comer en grupo grande y cómo encontrarlos en la vuelta al lago.">
+
+<!-- Política de seguridad de contenido: el navegador sólo puede cargar
+     archivos de este mismo sitio. Sin CDN, sin librerías, sin rastreadores.
+     Ver skills/web-blindada/references/csp-en-pages.md -->
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self'; img-src 'self' data:; font-src 'self'; connect-src 'self'; media-src 'self'; form-action 'self'; base-uri 'none'; frame-src 'none'; object-src 'none'">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+
+<!-- Rescate de la clase .js (regla 2 de la casa). En archivo, sin defer:
+     inline lo bloquearía la CSP. -->
+<script src="js/rescate.js"></script>
+
+<!-- Fuentes propias: cero peticiones a terceros. El preload va SOLO
+     para la display, que es la del titular de la portada. -->
+<link rel="preload" href="assets/fuentes/biorhyme-var-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="assets/fuentes.css">
+<link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+
+<div class="propuesta">
+  <p class="propuesta__que">Propuesta de sitio web — preparada para <b>Fortín Mapuche</b> por CristalWeb</p>
+  <p class="propuesta__gancho">Todos los que van a Coñaripe pasan por el frente, y en internet no tienen ni el horario publicado.</p>
+</div>
+
+<header class="cab" id="cab">
+  <a class="cab__marca" href="#portada">
+    <span class="empalizada" aria-hidden="true"><i></i><i></i><i></i></span>
+    <span class="cab__nombre">Fortín Mapuche</span>
+  </a>
+  <nav class="cab__nav" aria-label="Secciones">
+    <a href="#mesa">La mesa larga</a>
+    <a href="#fuego">La cocina</a>
+  </nav>
+  <a class="cab__res" href="#reservar">
+    <span class="cab__res-rot">Pucura</span>
+    <span class="cab__res-num">Avisar</span>
+  </a>
+</header>
+
+<main>
+
+<!-- ══════ ESTRUCTURA O — cadena de láminas a sangre ══════
+     Cuatro láminas de 88svh mínimo. El fondo de cada una es dibujo
+     CSS: no hay una sola imagen en todo el sitio. -->
+
+<!-- ── LÁMINA 0 · la portada: la empalizada y el fuego detrás ── -->
+<section class="lamina lamina--portada portada--foto" id="portada" aria-labelledby="t-portada">
+  <!-- FONDO DE PORTADA: 2560 px, nitido. Se disuelve hacia el titular
+       con un gradiente lateral, no con desenfoque. -->
+  <div class="portada__foto" aria-hidden="true">
+    <img src="imagenes/port-01.jpg" width="2560" height="1707"
+         decoding="async" fetchpriority="high" alt="">
+  </div>
+
+  <div class="fondo fondo--rendijas" aria-hidden="true">
+    <span class="brasa"></span>
+    <span class="tablas"></span>
+  </div>
+  <div class="lamina__texto">
+    <p class="sitio">Restaurante · Pucura, camino a Coñaripe</p>
+    <h1 id="t-portada">La parada<br>de la vuelta<br>al lago</h1>
+    <p class="bajada">El auto lleno, el domingo, la vuelta al Calafquén. Alguien
+      pregunta dónde parar a comer y nadie tiene el dato. Esta página es ese dato.</p>
+    <dl class="specs">
+      <div class="spec"><dt>nota en Google</dt><dd>4,7</dd></div>
+      <div class="spec"><dt>reseñas</dt><dd>131</dd></div>
+      <div class="spec"><dt>horario publicado</dt><dd><span class="falta">ninguno</span></dd></div>
+    </dl>
+  </div>
+</section>
+
+<!-- ── LÁMINA 1 · en la vuelta al lago — texto a la izquierda ── -->
+<section class="lamina lamina--izq con-telon" id="ruta" aria-labelledby="t-ruta">
+  <div class="telon" aria-hidden="true">
+    <img src="imagenes/telon-01.jpg" width="1200" height="800" decoding="async" alt="">
+  </div>
+
+  <!-- AURA DE COLOR: la foto de rubro reventada a desenfoque. No se lee
+       como imagen: aporta color y luz detras de una seccion que si no
+       seria fondo plano. Aca el desenfoque SI es el efecto, no un parche,
+       y por eso el archivo va chico: a 64 px de blur, mas resolucion no
+       cambia nada. Sin loading=lazy porque el elemento va en absoluto con
+       z-index negativo y el navegador nunca lo considera visible. -->
+  <div class="aura" aria-hidden="true">
+    <img src="imagenes/aura-01.jpg" width="900" height="599" decoding="async" alt="">
+  </div>
+
+  <div class="fondo fondo--camino" aria-hidden="true">
+    <span class="calzada"></span>
+    <span class="eje"></span>
+  </div>
+  <div class="lamina__texto">
+    <p class="antetitulo">Dónde queda, de verdad</p>
+    <h2 id="t-ruta">En la vuelta<br>al lago</h2>
+    <p class="entrada">Pucura está en el camino entre Coñaripe y Licán Ray. Casi
+      nadie llega buscándolos: los ven al pasar, o no los ven. Cuatro datos escritos
+      convierten «pasamos por el frente» en «paramos».</p>
+
+    <dl class="huecos">
+      <div class="hueco">
+        <dt>De qué lado del camino</dt>
+        <dd><span class="falta">falta</span>
+          <span class="hueco__pq">Yendo hacia Coñaripe, ¿a la derecha o a la
+            izquierda? Es la diferencia entre frenar y seguir de largo.</span></dd>
+      </div>
+      <div class="hueco">
+        <dt>Qué se ve desde el camino</dt>
+        <dd><span class="falta">falta</span>
+          <span class="hueco__pq">Un letrero, un techo, un color. La referencia
+            visible es lo que hace que el copiloto diga «ahí es».</span></dd>
+      </div>
+      <div class="hueco">
+        <dt>Dónde se estaciona</dt>
+        <dd><span class="falta">falta</span>
+          <span class="hueco__pq">Con un auto lleno, si no se ve dónde parar, no
+            se para.</span></dd>
+      </div>
+      <div class="hueco">
+        <dt>Días y horario</dt>
+        <dd><span class="falta">falta</span>
+          <span class="hueco__pq">El dato que más se busca y el que no está.
+            Sobre todo fuera de temporada.</span></dd>
+      </div>
+    </dl>
+
+    <p class="nota-honesta">Lo que esta página <b>no</b> dice: cuántos kilómetros ni
+      cuántos minutos hay desde Coñaripe o desde Licán Ray. No los tengo medidos, y
+      un número inventado manda a alguien a buscar un local donde no está.</p>
+  </div>
+</section>
+
+<!-- ── LÁMINA 2 · LA PIEZA FIRMA — texto a la derecha ── -->
+<!-- ========= MEDIA PANTALLA ========= -->
+<section class="mitades" aria-labelledby="t-mitades">
+  <div class="mitades__foto">
+    <img src="imagenes/media-01.jpg" width="1600" height="1067"
+         loading="lazy" decoding="async" alt="">
+  </div>
+  <div class="mitades__texto">
+    <p class="mitades__ante">Lo que hay que decir por escrito</p>
+    <h2 id="t-mitades">Cuánto pica, en una palabra</h2>
+    <p>El merkén es lo que distingue una cocina del sur de una cocina cualquiera, y es también lo que hace que alguien no vuelva: nadie avisa cuánto pica. Escribir «suave», «medio» o «picante» al lado de cada plato cuesta una línea y evita el único reclamo que un restaurante de esta zona recibe de verdad. Lo mismo con el ahumado: hay quien lo busca y quien lo evita.</p>
+  </div>
+</section>
+
+<section class="lamina lamina--der" id="mesa" aria-labelledby="t-mesa">
+  <div class="fondo fondo--tablones" aria-hidden="true"></div>
+  <div class="lamina__texto">
+    <p class="antetitulo">La pregunta del auto lleno</p>
+    <h2 id="t-mesa">La mesa<br>larga</h2>
+    <p class="entrada">Llegar de a doce sin avisar es la situación más incómoda de
+      todo el rubro: para el grupo, que se queda parado en la puerta, y para la
+      cocina, que tiene que decir que no. Se arregla escribiendo cuatro cosas.</p>
+    <p class="marca-ejemplo" data-ejemplo="Las preguntas son reales — las respuestas las pone el local"></p>
+
+    <ol class="grupo">
+      <li class="gr">
+        <p class="gr__q">¿Reciben a doce sin aviso?</p>
+        <p class="gr__a"><span class="falta">falta: sí / no / depende del día</span></p>
+        <p class="gr__pq">Un «los domingos no, cualquier otro día sí» es una respuesta
+          perfecta. Lo que no funciona es que haya que llamar para saberlo.</p>
+      </li>
+      <li class="gr">
+        <p class="gr__q">¿Desde cuántas personas conviene avisar?</p>
+        <p class="gr__a"><span class="falta">falta: el número</span></p>
+        <p class="gr__pq">Seis, ocho, diez. Con ese número escrito, el grupo avisa
+          solo y la cocina deja de improvisar.</p>
+      </li>
+      <li class="gr">
+        <p class="gr__q">¿Con cuánta anticipación?</p>
+        <p class="gr__a"><span class="falta">falta: el plazo</span></p>
+        <p class="gr__pq">«El día antes» o «dos horas antes» cambian por completo
+          lo que se puede preparar.</p>
+      </li>
+      <li class="gr">
+        <p class="gr__q">¿Hay un plato que salga para toda la mesa?</p>
+        <p class="gr__a"><span class="falta">falta: cuál y para cuántos</span></p>
+        <p class="gr__pq">Es lo que más ordena una mesa grande: uno solo pide, todos
+          comen lo mismo y la cocina saca una vez. Si existe, es el plato que hay
+          que poner primero en la carta.</p>
+      </li>
+    </ol>
+
+    <p class="firma">Cuatro respuestas. Ningún competidor de la vuelta al lago las
+      tiene escritas, y son exactamente las que decide un grupo mirando el teléfono
+      dentro del auto.</p>
+  </div>
+</section>
+
+<!-- ── LÁMINA 3 · la cocina y el aviso — texto a la izquierda ── -->
+<!-- ========= LA CITA A SANGRE ========= -->
+<section class="cita" aria-labelledby="t-cita">
+  <div class="cita__foto" aria-hidden="true">
+    <img src="imagenes/cita-01.jpg" width="2560" height="1702"
+         loading="lazy" decoding="async" alt="">
+  </div>
+  <blockquote class="cita__texto">
+    <p id="t-cita">La parada de la vuelta al lago<br>
+      <span class="cita__eco">Domingo, seis de la tarde, y alguien pregunta dónde parar</span></p>
+  </blockquote>
+</section>
+
+
+
+<!-- ========= TAJO — FRANJA A SANGRE ========= -->
+<div class="tajo" aria-hidden="true">
+  <img src="imagenes/banda-01.jpg" width="1000" height="662"
+       loading="lazy" decoding="async" alt="">
+</div>
+<section class="lamina lamina--izq" id="fuego" aria-labelledby="t-fuego">
+  <div class="fondo fondo--rendijas fondo--rendijas-2" aria-hidden="true">
+    <span class="brasa"></span>
+    <span class="tablas"></span>
+  </div>
+  <div class="lamina__texto">
+    <p class="antetitulo">Lo que sale de la cocina</p>
+    <h2 id="t-fuego">La cocina</h2>
+    <p class="entrada">Un 4,7 con 131 reseñas se gana en la cocina, no en internet.
+      Lo que falta es que el que todavía no entró sepa qué va a comer.</p>
+
+    <dl class="huecos">
+      <div class="hueco">
+        <dt>Qué se cocina acá</dt>
+        <dd><span class="falta">falta: dos o tres platos de la casa</span>
+          <span class="hueco__pq">No hace falta la carta completa. Los tres que
+            piden siempre, con nombre, alcanzan.</span></dd>
+      </div>
+      <div class="hueco">
+        <dt>Rango de precios</dt>
+        <dd><span class="falta">falta</span>
+          <span class="hueco__pq">«Un fondo va entre tanto y tanto». Un grupo de
+            doce necesita ese número antes de bajarse del auto.</span></dd>
+      </div>
+      <div class="hueco">
+        <dt>Si hay algo sin carne</dt>
+        <dd><span class="falta">falta</span>
+          <span class="hueco__pq">En una mesa de doce siempre hay uno. Y ese uno
+            decide por todos si no encuentra qué comer.</span></dd>
+      </div>
+    </dl>
+
+    <div class="reservar" id="reservar">
+      <h3 class="sub">Avisar que vamos</h3>
+      <p class="reservar__intro">Diga cuándo y cuántos son: el mensaje se arma solo.</p>
+
+      <form class="form" id="form-mesa">
+        <div class="campo">
+          <label for="f-cuando">Qué día y a qué hora</label>
+          <input id="f-cuando" name="cuando" type="text" placeholder="Domingo cerca de las 14:00" autocomplete="off">
+        </div>
+        <div class="campo">
+          <label for="f-personas">Cuántos son</label>
+          <input id="f-personas" name="personas" type="text" inputmode="numeric" placeholder="12" autocomplete="off">
+        </div>
+        <div class="campo campo--ancho">
+          <label for="f-nota">Algo que avisar <span class="opcional">(opcional)</span></label>
+          <input id="f-nota" name="nota" type="text" placeholder="Uno no come carne" autocomplete="off">
+        </div>
+
+        <p class="resumen" id="resumen" aria-live="polite">El mensaje se arma acá abajo a medida que escribe.</p>
+        <a class="boton" id="enviar" href="#reservar">Enviar por WhatsApp</a>
+        <p class="reservar__nota"><span class="falta">falta: el número</span> — la ficha
+          de Google no publica ninguno, así que el botón todavía no lleva a ninguna parte.</p>
+      </form>
+    </div>
+  </div>
+</section>
+
+</main>
+
+
+
+<!-- ========= MOSAICO ========= -->
+
+<!-- ========= LA TIRA ========= -->
+<section class="tira" aria-label="Tres imágenes del oficio">
+  <figure class="tira__pieza">
+    <img src="imagenes/tira-01.jpg" width="1000" height="667" loading="lazy" decoding="async" alt="Llamas sobre la leña encendida.">
+  </figure>
+  <figure class="tira__pieza">
+    <img src="imagenes/tirb-01.jpg" width="1000" height="662" loading="lazy" decoding="async" alt="Tablones de madera gastada, vistos de cerca.">
+  </figure>
+  <figure class="tira__pieza">
+    <img src="imagenes/tirc-01.jpg" width="1000" height="662" loading="lazy" decoding="async" alt="Cuencos de barro con especias molidas y granos.">
+  </figure>
+</section>
+
+<section class="mos" aria-labelledby="t-mos">
+  <h2 id="t-mos" class="mos__titulo">La misma serie, más de cerca</h2>
+  <p class="mos__nota">Estas seis ya aparecen más arriba en la página. Vuelven acá en otro tamaño porque una sola pasada de imágenes deja el scroll vacío, y porque de cerca se ven cosas que en grande se pierden. La procedencia de cada una está en imagenes/FUENTES.txt.</p>
+  <div class="mos__grilla">
+    <figure class="mos__p">
+      <img src="imagenes/mos-01.jpg" width="780" height="520"
+           loading="lazy" decoding="async" alt="">
+    </figure>
+    <figure class="mos__p">
+      <img src="imagenes/mos-02.jpg" width="780" height="516"
+           loading="lazy" decoding="async" alt="">
+    </figure>
+    <figure class="mos__p">
+      <img src="imagenes/mos-03.jpg" width="780" height="516"
+           loading="lazy" decoding="async" alt="">
+    </figure>
+    <figure class="mos__p">
+      <img src="imagenes/mos-04.jpg" width="780" height="520"
+           loading="lazy" decoding="async" alt="">
+    </figure>
+    <figure class="mos__p">
+      <img src="imagenes/mos-05.jpg" width="780" height="520"
+           loading="lazy" decoding="async" alt="">
+    </figure>
+    <figure class="mos__p">
+      <img src="imagenes/mos-06.jpg" width="780" height="519"
+           loading="lazy" decoding="async" alt="">
+    </figure>
+  </div>
+</section>
+<section class="dueno" aria-labelledby="t-dueno">
+  <h2 id="t-dueno">Para el dueño</h2>
+  <div class="dueno__cols">
+    <div>
+      <h3>Lo que está verificado</h3>
+      <p>El 4,7 con 131 reseñas de su ficha de Google y que no tienen página ni
+        teléfono publicado.</p>
+    </div>
+    <div>
+      <h3>Lo que decidí no poner</h3>
+      <p>Ningún dibujo ni forma tomada de la cultura mapuche. La página está hecha
+        con madera, fuego y el color del merkén: materiales y comida. Lo que es de
+        la comunidad no lo pongo yo en una página web.</p>
+    </div>
+    <div>
+      <h3>Lo que falta</h3>
+      <p>El número, el horario, de qué lado del camino quedan y las cuatro
+        respuestas de la mesa larga. Esas cuatro son las que hacen que un auto
+        lleno frene en vez de seguir.</p>
+    </div>
+  </div>
+  <p class="dueno__cierre">
+    <a class="flecha" href="https://wa.me/56968650001" rel="noopener">Escribirme por WhatsApp <span aria-hidden="true">→</span></a>
+    <a class="flecha" href="../../" rel="noopener">Ver otros trabajos <span aria-hidden="true">→</span></a>
+  </p>
+</section>
+
+<footer class="pie">
+  <p>Sitio de demostración preparado por CristalWeb. El negocio no lo ha encargado
+    ni ha revisado su contenido.</p>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>

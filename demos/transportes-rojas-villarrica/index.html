@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="es-CL" class="no-js">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Transportes Rojas — Villarrica</title>
+<meta name="description" content="Transporte de carga en Villarrica. Qué se lleva, qué no, y los cuatro datos que necesita el chofer para cotizar un flete.">
+
+<!-- Política de seguridad de contenido: el navegador sólo puede cargar
+     archivos de este mismo sitio. Sin CDN, sin librerías, sin rastreadores.
+     Ver skills/web-blindada/references/csp-en-pages.md -->
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self'; img-src 'self' data:; font-src 'self'; connect-src 'self'; media-src 'self'; form-action 'self'; base-uri 'none'; frame-src 'none'; object-src 'none'">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+
+<!-- Rescate de la clase .js (regla 2 de la casa). En archivo, sin defer:
+     inline lo bloquearía la CSP. -->
+<script src="js/rescate.js"></script>
+
+<!-- Fuentes propias: cero peticiones a terceros. -->
+<link rel="preload" href="assets/fuentes/robotocondensed-var-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="assets/fuentes.css">
+<link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+
+<div class="propuesta">
+  <p class="propuesta__que">Propuesta de sitio web — preparada para <b>Transportes Rojas</b> por CristalWeb</p>
+  <p class="propuesta__gancho">Revisado el 31-08-2026: <b>rojastransportes.cl ya no existe.</b> No está caído — el dominio no resuelve, salió del registro. Tuvieron sitio, se les soltó, y en un rubro donde el cliente es una empresa que googlea en horario de oficina, eso es dejar de existir. Cualquiera puede tomar ese dominio hoy, incluido un competidor.</p>
+</div>
+
+<header class="cab" id="cab">
+  <a class="cab__marca" href="#portada">
+    <span class="caja" aria-hidden="true"><i class="caja__x"></i></span>
+    <span class="cab__nombre">Transportes Rojas</span>
+  </a>
+  <nav class="cab__nav" aria-label="Secciones">
+    <a href="#llevan">Qué se lleva</a>
+    <a href="#cotiza">Cómo se cotiza</a>
+  </nav>
+  <a class="cab__tel" href="tel:+56985696029">
+    <span class="cab__tel-rot">Cotizar flete</span>
+    <span class="cab__tel-num">9 8569 6029</span>
+  </a>
+</header>
+
+<main>
+
+<!-- ========= PORTADA ========= -->
+<section class="portada portada--foto" id="portada" aria-labelledby="t-portada">
+  <!-- FONDO DE PORTADA: 2560 px, nitido. Se disuelve hacia el titular
+       con un gradiente lateral, no con desenfoque. -->
+  <div class="portada__foto" aria-hidden="true">
+    <img src="imagenes/port-01.jpg" width="2560" height="1707"
+         decoding="async" fetchpriority="high" alt="">
+  </div>
+
+  <div class="cinta-fondo" aria-hidden="true"><span class="cinta"></span></div>
+
+  <div class="portada__texto">
+    <p class="sitio">Transporte de carga · Villarrica</p>
+    <h1 id="t-portada">¿Me lo llevan?</h1>
+    <p class="bajada">Es la primera frase de toda llamada de flete, y la respuesta siempre
+      depende de lo mismo: qué es, cuánto pesa, dónde se carga y dónde se descarga. Esta
+      página deja eso escrito para que la llamada empiece por el precio y no por veinte
+      preguntas.</p>
+    <p class="tel-grande"><a href="tel:+56985696029">Cotizar flete — 9 8569 6029</a></p>
+  </div>
+</section>
+
+<!-- ========= LA PIEZA FIRMA — FICHA TÉCNICA (J) ========= -->
+<section class="llevan con-telon" id="llevan" aria-labelledby="t-llevan">
+  <div class="telon" aria-hidden="true">
+    <img src="imagenes/telon-01.jpg" width="1200" height="800" decoding="async" alt="">
+  </div>
+
+  <!-- AURA DE COLOR: la foto de rubro reventada a desenfoque. No se lee
+       como imagen: aporta color y luz detras de una seccion que si no
+       seria fondo plano. Aca el desenfoque SI es el efecto, no un parche,
+       y por eso el archivo va chico: a 64 px de blur, mas resolucion no
+       cambia nada. Sin loading=lazy porque el elemento va en absoluto con
+       z-index negativo y el navegador nunca lo considera visible. -->
+  <div class="aura" aria-hidden="true">
+    <img src="imagenes/aura-01.jpg" width="900" height="1200" decoding="async" alt="">
+  </div>
+
+  <div class="llevan__cabecera">
+    <p class="antetitulo">La ficha del servicio</p>
+    <h2 id="t-llevan">Qué se lleva y qué no</h2>
+    <p class="entrada">La mitad de esta ficha está por confirmar, y así se entrega: en un
+      servicio de carga, decir «llevamos de todo» y después no poder es peor que no decir
+      nada. Lo que está escrito es general del rubro; las capacidades y la cobertura las
+      pone el transportista.</p>
+    <p class="marca-ejemplo" data-ejemplo="Ficha general del rubro — las capacidades y la cobertura están por confirmar"></p>
+  </div>
+
+  <div class="ficha">
+    <div class="fi">
+      <p class="fi__rot">Qué se lleva</p>
+      <h3>Carga típica de flete</h3>
+      <ul>
+        <li>Mudanzas de casa o de oficina</li>
+        <li>Material de construcción</li>
+        <li>Pallets y bultos</li>
+        <li>Maquinaria chica y herramientas</li>
+        <li>Muebles y electrodomésticos</li>
+      </ul>
+      <p class="falta">falta: qué transportan ustedes de verdad y qué prefieren no tomar</p>
+    </div>
+
+    <div class="fi">
+      <p class="fi__rot">Capacidad</p>
+      <h3>El camión</h3>
+      <dl class="specs-t">
+        <div><dt>Tipo</dt><dd class="pend">falta</dd></div>
+        <div><dt>Largo útil</dt><dd class="pend">falta</dd></div>
+        <div><dt>Ancho y alto</dt><dd class="pend">falta</dd></div>
+        <div><dt>Carga máxima</dt><dd class="pend">falta</dd></div>
+        <div><dt>Rampa o pluma</dt><dd class="pend">falta</dd></div>
+      </dl>
+      <p class="fi__nota">Estas cinco medidas son las que decide todo: si el sofá entra, si
+        hay que desarmar, si se necesita otra persona.</p>
+    </div>
+
+    <div class="fi">
+      <p class="fi__rot">Dónde</p>
+      <h3>Cobertura</h3>
+      <p class="pend">falta: hasta qué ciudades y hasta qué sectores rurales llegan, y si
+        hacen viajes fuera de la región</p>
+      <p class="fi__nota">En transporte, la cobertura escrita es la mitad de la venta: el
+        que necesita llegar a un sector que nadie cubre llama al primero que lo diga.</p>
+    </div>
+
+    <div class="fi fi--no">
+      <p class="fi__rot">Qué no se lleva</p>
+      <h3>Lo que no va en un flete común</h3>
+      <ul>
+        <li>Sustancias peligrosas o inflamables: combustible, gas, químicos. Requieren
+          transporte autorizado y otro tipo de permisos.</li>
+        <li>Animales vivos.</li>
+        <li>Carga sin embalar que se puede dañar sola en el camino.</li>
+        <li>Cualquier cosa cuyo traslado necesite un permiso que el transportista no
+          tenga.</li>
+      </ul>
+      <p class="fi__nota">Esto es general y no cita ninguna norma por número: lo específico
+        lo confirma el transportista.
+        <span class="falta">falta: revisar esta lista con ellos</span></p>
+    </div>
+  </div>
+</section>
+
+<!-- ========= CÓMO SE COTIZA ========= -->
+<!-- ========= MEDIA PANTALLA ========= -->
+<section class="mitades" aria-labelledby="t-mitades">
+  <div class="mitades__foto">
+    <img src="imagenes/media-01.jpg" width="2200" height="1238"
+         loading="lazy" decoding="async" alt="">
+  </div>
+  <div class="mitades__texto">
+    <p class="mitades__ante">Lo que decide el precio</p>
+    <h2 id="t-mitades">No es la distancia: es cuánto ocupa</h2>
+    <p>Un flete se cotiza por volumen y por acceso, no por kilómetros. Diez cajas y un refrigerador caben donde no cabe un living completo, y una casa con escalera angosta toma el doble de tiempo que una con estacionamiento en la puerta. Por eso las cuatro preguntas de esta página son las mismas cuatro que hace el transportista por teléfono.</p>
+  </div>
+</section>
+
+<section class="cotiza" id="cotiza" aria-labelledby="t-cotiza">
+  <div class="cotiza__cabecera">
+    <p class="antetitulo antetitulo--claro">Para que la llamada dure dos minutos</p>
+    <h2 id="t-cotiza">El flete se cotiza así</h2>
+    <p class="entrada">Nadie puede dar un precio sin estos datos, y por eso la primera
+      llamada casi siempre se va en preguntas. Explicado antes, el cliente llama con la
+      información lista y la cotización sale al tiro.</p>
+    <p class="marca-ejemplo marca-ejemplo--claro" data-ejemplo="Explicación general — acá no hay ninguna tarifa, y no la va a haber inventada"></p>
+  </div>
+
+  <div class="factores">
+    <article class="fa">
+      <p class="fa__n">01</p>
+      <h3>La distancia</h3>
+      <p>Kilómetros de ida y de vuelta, y el estado del camino. No es lo mismo cincuenta
+        kilómetros de asfalto que veinte de ripio en invierno.</p>
+    </article>
+    <article class="fa">
+      <p class="fa__n">02</p>
+      <h3>El volumen y el peso</h3>
+      <p>Un camión se llena por volumen antes que por peso casi siempre. Un flete de
+        colchones y uno de cemento ocupan al revés.</p>
+    </article>
+    <article class="fa">
+      <p class="fa__n">03</p>
+      <h3>La carga y la descarga</h3>
+      <p>Es la parte que más se olvida y la que más tiempo toma: si hay escaleras, si hay
+        estacionamiento, si alguien ayuda o el chofer lo hace solo. El tiempo de espera
+        también es tiempo de camión.</p>
+    </article>
+    <article class="fa">
+      <p class="fa__n">04</p>
+      <h3>El día y la hora</h3>
+      <p>Un flete programado con anticipación se acomoda con otros de la misma ruta. Uno de
+        urgencia ocupa el camión entero.</p>
+    </article>
+  </div>
+
+  <div class="formulario">
+    <h3>Los cuatro datos para cotizar</h3>
+    <p>Con estas cuatro cosas en el mensaje, la respuesta llega con precio en vez de con
+      preguntas:</p>
+    <ol class="cuatro">
+      <li><b>Qué es</b> — «un living completo», «treinta sacos de cemento», «dos pallets».</li>
+      <li><b>Cuánto pesa o cuánto ocupa</b>, aunque sea aproximado.</li>
+      <li><b>Dónde se carga</b>, con la dirección y si hay escaleras o acceso complicado.</li>
+      <li><b>Dónde se descarga</b>, lo mismo.</li>
+    </ol>
+    <p class="formulario__pie">Y el día que lo necesita. Eso es todo — el resto lo calcula
+      el transportista.</p>
+  </div>
+
+  <p class="descargo">Esta página no publica tarifas ni promete plazos: el precio de un
+    flete depende de cada caso y lo entrega el transportista. Las capacidades del camión y
+    la cobertura están declaradas como pendientes porque no me constan, y la lista de lo que
+    no se transporta es general y no cita normativa.</p>
+</section>
+
+<!-- ========= EL CIERRE — T1 ========= -->
+<!-- ========= LA CITA A SANGRE ========= -->
+<section class="cita" aria-labelledby="t-cita">
+  <div class="cita__foto" aria-hidden="true">
+    <img src="imagenes/cita-01.jpg" width="2200" height="1467"
+         loading="lazy" decoding="async" alt="">
+  </div>
+  <blockquote class="cita__texto">
+    <p id="t-cita">«¿Me lo llevan?»<br>
+      <span class="cita__eco">La primera frase de toda llamada de flete</span></p>
+  </blockquote>
+</section>
+
+
+
+<!-- ========= TAJO — FRANJA A SANGRE ========= -->
+<div class="tajo" aria-hidden="true">
+  <img src="imagenes/banda-01.jpg" width="1500" height="844"
+       loading="lazy" decoding="async" alt="">
+</div>
+<section class="cierre" id="llamar" aria-labelledby="t-cierre">
+  <p class="cierre__rot">Para cotizar</p>
+  <h2 id="t-cierre" class="cierre__tel">
+    <a href="tel:+56985696029">9 8569 6029</a>
+  </h2>
+  <p class="cierre__pie">Es el número publicado en su ficha de Google. Conviene mandar los
+    cuatro datos de arriba en el primer mensaje.</p>
+</section>
+
+<!-- ========= LA TIRA ========= -->
+<section class="tira" aria-label="Tres imágenes del oficio">
+  <figure class="tira__pieza">
+    <img src="imagenes/tirab-01.jpg" width="1100" height="733" loading="lazy" decoding="async" alt="Cajas de mudanza apiladas y listas para cargar.">
+  </figure>
+  <figure class="tira__pieza">
+    <img src="imagenes/tirab-02.jpg" width="1100" height="733" loading="lazy" decoding="async" alt="Cajas y carro de carga junto a la puerta del camión.">
+  </figure>
+  <figure class="tira__pieza">
+    <img src="imagenes/tirac-01.jpg" width="1100" height="1467" loading="lazy" decoding="async" alt="Contenedores de carga apilados en el patio.">
+  </figure>
+</section>
+
+<!-- ========= LAS FOTOS ========= -->
+<section class="galeria" aria-labelledby="t-galeria">
+  <h2 id="t-galeria" class="galeria__titulo">Un flete de verdad</h2>
+  <p class="galeria__nota">Foto publicada por ellos mismos en su Instagram de Villarrica. Es la parte del trabajo que nadie fotografía: la carga entrando al camión, envuelta y amarrada.</p>
+  <div class="galeria__grilla">
+    <figure class="gal gal--abajo">
+      <img src="imagenes/flete-01.jpg" width="640" height="640" loading="lazy" decoding="async"
+           alt="Interior del camión durante una carga, con un colchón envuelto y el carro de carga apoyado.">
+      <figcaption>Cargando. El colchón envuelto y el carro apoyado.</figcaption>
+    </figure>
+  </div>
+  <p class="galeria__falta">falta: el camión completo con el letrero, y una foto de la carga ya estibada. Con eso el cliente ve el tamaño real de lo que contrata.</p>
+</section>
+
+</main>
+
+
+
+<!-- ========= MOSAICO ========= -->
+<section class="mos" aria-labelledby="t-mos">
+  <h2 id="t-mos" class="mos__titulo">La misma serie, más de cerca</h2>
+  <p class="mos__nota">Estas seis ya aparecen más arriba en la página. Vuelven acá en otro tamaño porque una sola pasada de imágenes deja el scroll vacío, y porque de cerca se ven cosas que en grande se pierden. La procedencia de cada una está en imagenes/FUENTES.txt.</p>
+  <div class="mos__grilla">
+    <figure class="mos__p">
+      <img src="imagenes/mos-01.jpg" width="780" height="439"
+           loading="lazy" decoding="async" alt="">
+    </figure>
+    <figure class="mos__p">
+      <img src="imagenes/mos-02.jpg" width="780" height="1040"
+           loading="lazy" decoding="async" alt="">
+    </figure>
+    <figure class="mos__p">
+      <img src="imagenes/mos-03.jpg" width="780" height="520"
+           loading="lazy" decoding="async" alt="">
+    </figure>
+    <figure class="mos__p">
+      <img src="imagenes/mos-04.jpg" width="780" height="520"
+           loading="lazy" decoding="async" alt="">
+    </figure>
+    <figure class="mos__p">
+      <img src="imagenes/mos-05.jpg" width="780" height="520"
+           loading="lazy" decoding="async" alt="">
+    </figure>
+    <figure class="mos__p">
+      <img src="imagenes/mos-06.jpg" width="780" height="520"
+           loading="lazy" decoding="async" alt="">
+    </figure>
+  </div>
+</section>
+<section class="dueno" aria-labelledby="t-dueno">
+  <h2 id="t-dueno">Para Transportes Rojas</h2>
+  <div class="dueno__cols">
+    <div>
+      <h3>Lo que está verificado</h3>
+      <p>El teléfono 9 8569 6029 de su ficha de Google, y que <b>rojastransportes.cl no
+        resuelve</b>: el dominio salió del registro. Revisado el 31-08-2026 y comprobable
+        en un minuto.</p>
+    </div>
+    <div>
+      <h3>Lo que es general</h3>
+      <p>La carga típica, los cuatro factores del precio y la lista de lo que no se lleva.
+        Son del rubro, no suyos, y van marcados.</p>
+    </div>
+    <div>
+      <h3>Lo que falta</h3>
+      <p>Las medidas del camión —tipo, largo útil, ancho, alto, carga máxima y si tiene
+        rampa— y la cobertura. Son siete datos que ustedes saben de memoria y que hoy nadie
+        puede leer en ninguna parte.</p>
+    </div>
+  </div>
+  <p class="dueno__cierre">
+    <a class="flecha" href="https://wa.me/56968650001" rel="noopener">Escribirme por WhatsApp <span aria-hidden="true">→</span></a>
+    <a class="flecha" href="../../" rel="noopener">Ver otros trabajos <span aria-hidden="true">→</span></a>
+  </p>
+</section>
+
+<footer class="pie">
+  <p>Sitio de demostración preparado por CristalWeb. El negocio no lo ha encargado ni ha
+    revisado su contenido. No hay tarifas, no se promete ningún plazo y no se afirma
+    ninguna capacidad de carga ni cobertura: esos campos están declarados como pendientes.
+    La lista de carga no transportable es general y no cita normativa.</p>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>

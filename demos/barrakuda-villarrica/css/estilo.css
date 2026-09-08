@@ -1,0 +1,706 @@
+/* ══════════════════════════════════════════════════════════════════
+   BARRAKUDA — restobar · Villarrica
+   Demo 139 · tanda P4
+
+   IDENTIDAD — «LETRERO DE NEÓN»
+   PRIMERA IDENTIDAD CON GLOW DEL REGISTRO. Noche azulada profunda,
+   un cian de tubo de neón con halo real (text-shadow en capas) y
+   blanco plano para leer.
+
+   LA REGLA QUE HACE QUE NO SEA UN ADORNO: el glow vive SÓLO en el
+   nombre, los titulares y lo interactivo. **Prohibido bajo 1,5rem**
+   — un halo sobre texto chico lo vuelve ilegible, y en una página de
+   restobar el texto chico es el horario, que es justo lo que la
+   gente vino a leer. El cuerpo va en blanco plano, sin sombra.
+
+   DESLINDE DE LOS CIANES: el de la 111 es frío de laboratorio sobre
+   blanco clínico; el de la 136 es cinta kinesiológica sobre beige
+   piel; el verde-lima de la 131 es láser instrumental — y ninguno de
+   los tres BRILLA. Éste es NEÓN DE VITRINA: tiene halo, tiene tubo,
+   y de noche se ve desde la vereda.
+
+   TRÍO TIPOGRÁFICO
+   · Display: Tilt Neon — nueva en el registro y hecha exactamente
+     para esto: su dibujo es un tubo doblado, así que el halo se le
+     pega natural en vez de parecer un filtro encima.
+   · Cuerpo: Outfit — 2 usos, geométrica limpia que aguanta el fondo
+     oscuro sin competir con el letrero.
+   · Dato: DM Mono — 5 usos, para los horarios y los rótulos.
+
+   CABECERA 105ª DEL OFICIO: EL PEZ DE LETRERO — dos triángulos
+   (cuerpo y cola) con el ojo como punto, dibujado con la línea de un
+   tubo. Deslinde con la raspa de la 108ª (142): aquélla es el
+   esqueleto de lo que ya se comió; éste es el pez entero del letrero
+   de la vitrina.
+
+   FONDO NUEVO: EL NEÓN QUE PARPADEA AL ENCENDER — el letrero falla
+   dos veces y se estabiliza; ciclo de 22 s. DESLINDE: las luces del
+   panal de la 124 encienden de a una y SE APAGAN; las ventanas de la
+   149 se encienden y QUEDAN, sin fallar; ésta FALLA al encender —
+   parpadeo doble, como un tubo viejo — y después se queda. Con
+   reduced-motion queda encendido fijo: un letrero que titila sin
+   parar marea, y además así se sigue leyendo igual.
+
+   ESTRUCTURA: G (split sticky). DESLINDE con la 97, 104, 106, 117,
+   153, 161, 168 y 175, que también son G: acá el contraste ENTRE
+   MITADES es el diseño — el lado fijo es noche azul con glow, el que
+   fluye es negro plano sin una sola sombra. Se ve el letrero por la
+   ventana y adentro el local es oscuro.
+   ══════════════════════════════════════════════════════════════════ */
+
+:root {
+  --noche:     #0A1220;  /* noche azulada: el lado del letrero       */
+  --noche-h:   #060C16;
+  --plano:     #0D0D0F;  /* negro plano: el lado que fluye           */
+  --plano-h:   #131316;
+  --cian:      #35E0F0;  /* 11,7:1 sobre noche — el neón             */
+  --blanco:    #F0F4F8;
+  --suave:     #8FA3B8;  /* 7,2:1 sobre noche                        */
+  --suave-p:   #9AA0A8;  /* 6,9:1 sobre plano                        */
+  --linea:     #1C2534;
+
+  --display: 'Tilt Neon', system-ui, sans-serif;
+  --cuerpo:  'Outfit', system-ui, sans-serif;
+  --mono:    'DM Mono', ui-monospace, monospace;
+
+  --ancho: 1240px;
+
+  /* El halo del tubo: tres capas, de más apretada a más abierta. Es
+     lo que separa un neón de un texto de color celeste. */
+  --halo:
+    0 0 6px rgba(53,224,240,.55),
+    0 0 18px rgba(53,224,240,.35),
+    0 0 42px rgba(53,224,240,.20);
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+[hidden] { display: none !important; }
+
+html { scroll-behavior: smooth; }
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+
+body {
+  margin: 0;
+  background: var(--plano);
+  color: var(--blanco);
+  font-family: var(--cuerpo);
+  font-size: clamp(1rem, .95rem + .3vw, 1.08rem);
+  line-height: 1.62;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2 { font-family: var(--display); font-weight: 400; line-height: 1.06; margin: 0; }
+h3 { font-family: var(--cuerpo); font-weight: 600; margin: 0; line-height: 1.25; }
+p { margin: 0 0 1.05em; }
+a { color: inherit; }
+
+/* ── Banda de propuesta ───────────────────────────────────────── */
+.propuesta {
+  background: var(--cian); color: #04141A;
+  padding: 1.1rem clamp(1.1rem, 5vw, 3rem);
+}
+.propuesta__que { font-size: .84rem; margin: 0 0 .25rem; }
+.propuesta .propuesta__gancho { font-size: .84rem; margin: 0; max-width: 68ch; color: #0A2A33; }
+.propuesta b { font-weight: 600; }
+
+/* ── Cabecera fantasma ────────────────────────────────────────── */
+.cab {
+  position: sticky; top: 0; z-index: 40;
+  display: flex; align-items: center; gap: clamp(1rem, 4vw, 2.5rem);
+  padding: .75rem clamp(1.1rem, 5vw, 3rem);
+  background: var(--noche-h);
+  border-bottom: 1px solid var(--linea);
+  transition: background .35s ease, border-color .35s ease, transform .35s ease;
+}
+/* Por defecto sólida: si el JS no corre, la cabecera se lee igual. */
+.cab.cab--ghost  { background: transparent; border-color: transparent; }
+.cab.cab--oculta { transform: translateY(-110%); }
+
+.cab__marca { display: flex; align-items: center; gap: .7rem; text-decoration: none; }
+/* El nombre lleva halo, asi que sube a 1.5rem: bajo ese tamano el
+   halo emborrona la letra (la regla de arriba). */
+.cab__nombre { font-family: var(--display); font-size: 1.5rem; color: var(--cian); text-shadow: var(--halo); }
+
+/* EL PEZ DE LETRERO — cabecera 105ª. Cuerpo y cola en dos triángulos
+   de tubo, con el ojo como punto. Todo con el halo del neón. */
+.pez { position: relative; flex: none; width: 30px; height: 16px; }
+.pez::before {  /* el cuerpo */
+  content: ''; position: absolute; left: 6px; top: 1px;
+  width: 24px; height: 14px;
+  border: 2px solid var(--cian);
+  border-radius: 50% 60% 50% 60% / 60% 50% 60% 50%;
+  box-shadow: 0 0 6px rgba(53,224,240,.6);
+}
+.pez::after {   /* la cola */
+  content: ''; position: absolute; left: 0; top: 3px;
+  width: 0; height: 0;
+  border-top: 5px solid transparent;
+  border-bottom: 5px solid transparent;
+  border-right: 8px solid var(--cian);
+  filter: drop-shadow(0 0 4px rgba(53,224,240,.6));
+}
+
+.cab__nav { display: none; gap: 1.5rem; margin-left: auto; font-size: .9rem; }
+.cab__nav a { text-decoration: none; color: var(--suave); }
+.cab__nav a:hover, .cab__nav a:focus-visible { color: var(--cian); text-shadow: 0 0 8px rgba(53,224,240,.5); }
+@media (min-width: 900px) { .cab__nav { display: flex; } }
+
+.cab__wsp { margin-left: auto; text-align: right; text-decoration: none; line-height: 1.15; }
+@media (min-width: 900px) { .cab__wsp { margin-left: 0; } }
+.cab__wsp-rot {
+  display: block; font-family: var(--mono); font-size: .64rem;
+  letter-spacing: .16em; text-transform: uppercase; color: var(--cian);
+}
+.cab__wsp-num { display: block; font-weight: 600; font-size: .95rem; }
+
+/* ══════════════ SPLIT (G) ══════════════
+   En escritorio el letrero se queda fijo mientras el contenido pasa.
+   En móvil se apilan: un sticky de media pantalla en un teléfono se
+   come el contenido. */
+.split { display: block; }
+@media (min-width: 940px) {
+  .split { display: grid; grid-template-columns: 42% 1fr; align-items: start; }
+}
+
+/* ── El lado del letrero: noche azul con glow ─────────────────── */
+.letrero {
+  position: relative; overflow: hidden;
+  background:
+    radial-gradient(120% 80% at 30% 20%, rgba(53,224,240,.10), transparent 65%),
+    var(--noche);
+  padding: clamp(3rem, 8vw, 5rem) clamp(1.1rem, 5vw, 3rem);
+  min-height: 60svh;
+  display: flex; align-items: center;
+}
+@media (min-width: 940px) {
+  .letrero { position: sticky; top: 0; min-height: 100svh; }
+}
+.letrero__caja { position: relative; z-index: 1; max-width: 26rem; }
+
+.sitio {
+  font-family: var(--mono); font-size: .72rem;
+  letter-spacing: .18em; text-transform: uppercase;
+  color: var(--suave); margin-bottom: 1rem;
+}
+
+/* EL NOMBRE EN NEÓN — el glow completo va sólo acá y en los h2. */
+.neon {
+  font-size: clamp(2.8rem, 9vw, 5rem);
+  color: var(--cian);
+  text-shadow: var(--halo);
+  margin-bottom: .8rem;
+  animation: enciende 22s ease-in-out infinite;
+}
+/* El tubo viejo: falla dos veces antes de quedarse encendido. */
+@keyframes enciende {
+  0%, 1%   { opacity: .25; text-shadow: none; }
+  2%       { opacity: 1;   text-shadow: var(--halo); }
+  3%       { opacity: .3;  text-shadow: none; }
+  4%       { opacity: 1;   text-shadow: var(--halo); }
+  5%       { opacity: .4;  text-shadow: 0 0 6px rgba(53,224,240,.4); }
+  6%, 100% { opacity: 1;   text-shadow: var(--halo); }
+}
+@media (prefers-reduced-motion: reduce) {
+  .neon { animation: none; }
+}
+
+.letrero__bajada { color: var(--suave); margin-bottom: 2rem; }
+
+.datos { margin: 0; display: grid; gap: .5rem; }
+.datos__par {
+  display: flex; justify-content: space-between; align-items: baseline;
+  gap: 1rem; padding: .7rem 0; border-bottom: 1px solid var(--linea);
+}
+.datos__par dt {
+  font-family: var(--mono); font-size: .68rem;
+  letter-spacing: .14em; text-transform: uppercase; color: var(--suave);
+}
+.datos__par dd { margin: 0; text-align: right; font-family: var(--mono); font-size: .92rem; }
+
+.falta {
+  font-family: var(--mono); font-size: .8rem;
+  color: var(--cian); border-bottom: 1px dashed var(--cian);
+}
+
+/* ── El lado que fluye: negro plano, cero glow ────────────────── */
+.flujo { background: var(--plano); }
+
+.picoteo, .barra {
+  padding: clamp(3.5rem, 8vw, 5.5rem) clamp(1.1rem, 5vw, 3rem);
+}
+.barra { background: var(--plano-h); border-top: 1px solid #1E1E22; }
+
+.antetitulo {
+  font-family: var(--mono); font-size: .7rem;
+  letter-spacing: .18em; text-transform: uppercase;
+  color: var(--cian); margin-bottom: .8rem;
+}
+.flujo h2 { font-size: clamp(1.9rem, 5vw, 3rem); margin-bottom: 1rem; }
+.flujo .entrada { max-width: 52ch; color: var(--suave-p); }
+
+.marca-ejemplo::before {
+  content: attr(data-ejemplo);
+  display: inline-block;
+  font-family: var(--mono); font-size: .68rem;
+  letter-spacing: .06em; text-transform: uppercase;
+  color: var(--cian);
+  border-left: 2px solid var(--cian);
+  padding-left: .6rem;
+}
+
+.tablas { list-style: none; margin: 2rem 0 1.6rem; padding: 0; display: grid; gap: 1.3rem; }
+.tabla-item {
+  background: var(--noche-h);
+  border-left: 2px solid var(--cian);
+  padding: 1.3rem 1.4rem;
+}
+.tabla-item__n { font-family: var(--display); font-size: 1.5rem; color: var(--cian); margin-bottom: .8rem; }
+.tabla-item ul { list-style: none; margin: 0 0 1rem; padding: 0; }
+.tabla-item li {
+  padding: .45rem 0; border-bottom: 1px solid var(--linea);
+  font-size: .95rem; color: var(--suave);
+}
+.tabla-item .tabla-item__ojo {
+  font-family: var(--mono); font-size: .82rem;
+  color: var(--blanco); margin-bottom: .8rem;
+}
+.tabla-item__p { margin: 0; }
+
+.flujo .firma { font-size: .9rem; color: var(--suave-p); max-width: 56ch; }
+
+.horas { display: grid; gap: 1.2rem; margin: 2rem 0 1.6rem; }
+@media (min-width: 700px) { .horas { grid-template-columns: repeat(2, 1fr); gap: 1.6rem; } }
+.hora dt { font-weight: 600; font-size: 1.1rem; color: var(--blanco); margin-bottom: .3rem; }
+.hora dd { margin: 0; color: var(--suave-p); font-size: .95rem; max-width: 44ch; }
+
+.reservar { border-top: 1px solid #1E1E22; margin-top: 2.4rem; padding-top: 2.2rem; }
+.reservar h3 { font-size: clamp(1.3rem, 3.5vw, 1.8rem); margin-bottom: .7rem; }
+.reservar > p { color: var(--suave-p); max-width: 46ch; }
+.form { max-width: 540px; margin-top: 1.4rem; }
+.campo { margin-bottom: 1.1rem; }
+.campo label {
+  display: block; font-family: var(--mono); font-size: .66rem;
+  letter-spacing: .14em; text-transform: uppercase;
+  color: var(--suave-p); margin-bottom: .4rem;
+}
+.campo input {
+  width: 100%; padding: .75rem .85rem;
+  background: #F4F7FA; color: #0D0D0F;
+  border: 1px solid var(--linea); border-radius: 0;
+  font-family: var(--cuerpo); font-size: 1rem;
+}
+.campo input:focus-visible { outline: 2px solid var(--cian); outline-offset: 1px; }
+
+.resumen {
+  font-family: var(--mono); font-size: .82rem; line-height: 1.55;
+  color: var(--suave-p);
+  border-left: 2px solid var(--cian);
+  padding: .55rem 0 .55rem .9rem;
+  margin: 1.3rem 0;
+  white-space: pre-wrap;
+}
+.fantasma {
+  display: inline-block; text-decoration: none;
+  font-family: var(--display); font-size: 1.15rem;
+  padding: .75rem 1.7rem;
+  border: 1px solid var(--cian); color: var(--cian);
+  /* sin halo: a 1,15rem el texto se emborrona. El borde cian ya lo
+     identifica como lo interactivo. */
+  transition: background .25s ease, color .25s ease;
+}
+.fantasma:hover, .fantasma:focus-visible {
+  background: var(--cian); color: #04141A; text-shadow: none;
+}
+.reservar .reservar__nota { font-size: .88rem; color: var(--suave-p); margin-top: 1.2rem; max-width: 52ch; }
+
+/* ══════════════ PARA EL DUEÑO ══════════════ */
+.dueno {
+  background: var(--noche); color: var(--blanco);
+  padding: clamp(3rem, 8vw, 5rem) clamp(1.1rem, 5vw, 3rem);
+  border-top: 1px solid var(--linea);
+}
+.dueno h2 { font-family: var(--display); font-size: clamp(1.5rem, 4vw, 2rem); margin: 0 auto 2rem; max-width: var(--ancho); }
+.dueno__cols { max-width: var(--ancho); margin: 0 auto; display: grid; gap: 1.8rem; }
+@media (min-width: 820px) { .dueno__cols { grid-template-columns: repeat(3, 1fr); gap: 2.4rem; } }
+.dueno__cols h3 {
+  font-family: var(--mono); font-weight: 400; font-size: .7rem;
+  letter-spacing: .16em; text-transform: uppercase;
+  color: var(--cian); margin-bottom: .6rem;
+}
+.dueno__cols p { font-size: .94rem; color: var(--suave); margin: 0; }
+.dueno__cierre { max-width: var(--ancho); margin: 2.5rem auto 0; display: flex; flex-wrap: wrap; gap: 1.6rem; }
+.flecha {
+  font-weight: 600; font-size: .96rem;
+  color: var(--cian); text-decoration: none;
+  border-bottom: 1px solid currentColor; padding-bottom: .12rem;
+}
+.flecha:hover, .flecha:focus-visible { color: var(--blanco); }
+
+.pie {
+  background: var(--noche-h);
+  padding: 2rem clamp(1.1rem, 5vw, 3rem);
+}
+.pie p { max-width: 62ch; margin: 0 auto; font-size: .82rem; color: var(--suave); }
+
+/* ══════════════ REVEALS ══════════════ */
+.js .rev { opacity: 0; transform: translateY(18px); }
+.js .rev.on { opacity: 1; transform: none; transition: opacity .7s ease, transform .7s ease; }
+@media (prefers-reduced-motion: reduce) { .js .rev { opacity: 1; transform: none; } }
+
+/* ══════════════════════════════════════════════════════════════════
+   LAS IMÁGENES DE RUBRO — seis tratamientos
+   ══════════════════════════════════════════════════════════════════
+   La página no puede ser texto sobre fondo plano de arriba abajo. Van
+   seis apariciones distintas, para que el ojo no vea siempre lo mismo:
+   portada disuelta, aura de color, media pantalla, cita a sangre, tira
+   de tres, y la galería con las fotos propias del negocio.
+
+   LA REGLA: la foto no se ensucia para poder leer encima. Lo que
+   sostiene el contraste es un gradiente por zona. La ÚNICA excepción es
+   el aura, donde el desenfoque no es un parche sino el efecto entero.
+
+   Procedencia de cada archivo: imagenes/FUENTES.txt
+   ══════════════════════════════════════════════════════════════════ */
+
+/* ── 1 · PORTADA ── */
+/* position/isolation acá y no heredadas: hay demos cuya .portada no es
+   posicionada, y entonces el .portada__foto absoluto se cuelga del body
+   y tapa el titular entero. El z-index del texto va por lo mismo. */
+.portada--foto { position: relative; isolation: isolate; overflow: hidden; padding-top: clamp(1.5rem, 3.5vh, 3.5rem); }
+.portada--foto .portada__texto { position: relative; z-index: 2; max-width: 40rem; }
+.portada__foto { position: absolute; z-index: 0; inset: 0; overflow: hidden; pointer-events: none; }
+/* PANEL fijo, alto y angosto, con el nombre en neon dibujado en CSS.
+   Acá NO va velo ::after: en este panel tapaba la foto entera aunque
+   el alfa fuera bajo. Lo que sostiene el contraste es la propia
+   opacidad de la imagen (.58) y una mascara vertical: la foto entra
+   bajo el nombre en neon —que tiene halo propio y se lee sobre
+   cualquier cosa— y se apaga antes de la lista de datos, que es texto
+   chico y ahi no puede haber nada detras. */
+.portada__foto img {
+  display: block; width: 100%; height: 100%;
+  object-fit: cover; object-position: 50% 50%;
+  opacity: .58;
+  -webkit-mask-image: linear-gradient(180deg, transparent 0%, rgba(0,0,0,.45) 12%,
+              #000 26%, #000 46%, rgba(0,0,0,.34) 66%, rgba(0,0,0,.10) 82%, transparent 96%);
+          mask-image: linear-gradient(180deg, transparent 0%, rgba(0,0,0,.45) 12%,
+              #000 26%, #000 46%, rgba(0,0,0,.34) 66%, rgba(0,0,0,.10) 82%, transparent 96%);
+}
+@media (prefers-reduced-motion: no-preference) {
+  .portada__foto img { animation: respira 46s ease-in-out infinite alternate; }
+}
+@keyframes respira {
+  from { transform: scale(1.04) translate3d(0, 0, 0); }
+  to   { transform: scale(1.11) translate3d(-1.8%, -1.2%, 0); }
+}
+.js .portada--foto .portada__foto { opacity: 0; }
+.js .portada--foto.ok .portada__foto { opacity: 1; transition: opacity 1.1s ease; }
+.js .portada.rev,
+.js .portada.rev.ok { opacity: 1; transform: none; transition: none; }
+@media (max-width: 860px) {
+  .portada--foto { padding-top: 36svh; }
+  .portada__foto img {
+    object-position: 50% 44%;
+    -webkit-mask-image: linear-gradient(180deg, #000 0%, #000 30%, rgba(0,0,0,.34) 58%, transparent 78%);
+            mask-image: linear-gradient(180deg, #000 0%, #000 30%, rgba(0,0,0,.34) 58%, transparent 78%);
+  }
+  .portada__foto::after {
+    background: linear-gradient(180deg, rgba(13,13,15,0) 0%, rgba(13,13,15,.30) 42%, var(--plano) 70%);
+  }
+}
+
+/* ── 2 · AURA DE COLOR ── */
+#picoteo { position: relative; isolation: isolate; overflow: hidden; }
+.aura { position: absolute; z-index: -1; inset: -12% -8% auto -8%; height: 78%; pointer-events: none; }
+.aura img {
+  display: block; width: 100%; height: 100%; object-fit: cover;
+  /* Acá el desenfoque ES el efecto: la foto deja de leerse y queda la luz. */
+  filter: blur(64px) saturate(1.45);
+  opacity: .38;
+  transform: scale(1.25);
+  /* Y se apaga EN LA IMAGEN, no con un velo encima. Un ::after que pinta
+     el fondo apaga solo DENTRO del div: en el borde de abajo queda un
+     corte recto a media seccion. Con la mascara la imagen misma se
+     desvanece y no hay borde que cortar. */
+  -webkit-mask-image: radial-gradient(ellipse 74% 58% at 50% 34%,
+              #000 0%, #000 26%, rgba(0,0,0,.55) 52%, transparent 82%);
+          mask-image: radial-gradient(ellipse 74% 58% at 50% 34%,
+              #000 0%, #000 26%, rgba(0,0,0,.55) 52%, transparent 82%);
+}
+@media (prefers-reduced-motion: no-preference) {
+  .aura img { animation: deriva-aura 68s ease-in-out infinite alternate; }
+}
+@keyframes deriva-aura {
+  from { transform: scale(1.25) translate3d(-3%, 0, 0); }
+  to   { transform: scale(1.38) translate3d(3%, -2%, 0); }
+}
+
+/* ── 3 · MEDIA PANTALLA ── */
+.mitades {
+  display: grid; grid-template-columns: 1fr 1fr; align-items: stretch;
+  background: var(--noche);
+  /* overflow hidden porque las entradas son laterales: mientras el texto
+     se desliza y la foto entra a escala, ambos se salen unos píxeles y
+     aparece scroll horizontal por un segundo. */
+  overflow: hidden;
+}
+.mitades__foto { position: relative; min-height: 62svh; overflow: hidden; }
+.mitades__foto img { display: block; width: 100%; height: 100%; object-fit: cover; object-position: 52% 50%; }
+.mitades__texto {
+  padding: clamp(2.5rem, 6vw, 5rem) clamp(1.4rem, 4vw, 3.5rem);
+  display: flex; flex-direction: column; justify-content: center;
+  color: var(--blanco);
+}
+.mitades__ante {
+  font-family: var(--dato); font-size: .72rem; letter-spacing: .16em;
+  text-transform: uppercase; color: var(--suave-p); margin: 0 0 .9rem;
+}
+.mitades h2 {
+  font-family: var(--display); font-weight: 500;
+  font-size: clamp(1.7rem, 3.6vw, 2.8rem); line-height: 1.08;
+  margin: 0 0 1rem; color: var(--blanco);
+}
+.mitades__texto p:last-child {
+  margin: 0; font-size: 1rem; line-height: 1.65; color: var(--blanco); max-width: 34rem;
+}
+.js .mitades__texto.rev { opacity: 0; transform: translateX(1.6rem); }
+.js .mitades__foto.rev  { opacity: 0; transform: scale(1.04); }
+.js .mitades__texto.rev.ok,
+.js .mitades__foto.rev.ok {
+  opacity: 1; transform: none;
+  transition: opacity .9s ease, transform 1.1s cubic-bezier(.2,.7,.2,1);
+}
+@media (max-width: 780px) {
+  .mitades { grid-template-columns: 1fr; }
+  .mitades__foto { min-height: 44svh; }
+}
+
+/* ── 4 · LA CITA A SANGRE ── */
+.cita {
+  position: relative; isolation: isolate; min-height: 70svh;
+  display: flex; align-items: center; justify-content: center;
+  padding: clamp(3rem, 9vw, 7rem) clamp(1.2rem, 5vw, 4rem);
+  background: var(--plano); overflow: hidden;
+}
+.cita__foto { position: absolute; inset: 0; z-index: -1; overflow: hidden; }
+.cita__foto img { display: block; width: 100%; height: 100%; object-fit: cover; object-position: 50% 44%; }
+/* Velo parejo y fuerte: el texto va centrado y grande, encima de la foto
+   entera. Calculado sobre el peor caso —imagen del color contrario
+   detrás— para que el ratio aguante sin ensuciar la imagen. */
+.cita__foto::after {
+  content: ""; position: absolute; inset: 0;
+  background: linear-gradient(180deg, rgba(13,13,15,.62) 0%,
+              rgba(13,13,15,.80) 45%, rgba(13,13,15,.88) 100%);
+}
+.cita__texto { margin: 0; max-width: 42rem; text-align: center; color: var(--blanco); }
+.cita__texto p {
+  font-family: var(--display); font-weight: 500;
+  font-size: clamp(1.8rem, 4.6vw, 3.2rem); line-height: 1.16;
+  margin: 0; color: var(--blanco);
+}
+.cita__eco {
+  display: block; margin-top: 1.1rem;
+  font-family: var(--dato); font-size: .82rem; letter-spacing: .1em;
+  text-transform: uppercase; color: var(--cian);
+}
+.js .cita__texto.rev { opacity: 0; transform: translateY(16px); }
+.js .cita__texto.rev.ok {
+  opacity: 1; transform: none;
+  transition: opacity 1s ease, transform 1s cubic-bezier(.2,.7,.2,1);
+}
+@media (prefers-reduced-motion: no-preference) {
+  .cita__foto img { animation: respira-cita 58s ease-in-out infinite alternate; }
+}
+@keyframes respira-cita {
+  from { transform: scale(1.06) translate3d(0, 0, 0); }
+  to   { transform: scale(1.13) translate3d(1.4%, -1%, 0); }
+}
+
+/* ── 5 · LA TIRA ── */
+.tira { display: grid; grid-template-columns: repeat(3, 1fr); gap: 2px; background: var(--linea); }
+.tira__pieza { margin: 0; overflow: hidden; height: 34svh; min-height: 220px; }
+.tira__pieza img {
+  display: block; width: 100%; height: 100%; object-fit: cover;
+  transition: transform 1.1s cubic-bezier(.2,.7,.2,1);
+}
+@media (hover: hover) and (pointer: fine) {
+  .tira__pieza:hover img { transform: scale(1.05); }
+}
+.js .tira__pieza.rev { opacity: 0; transform: translateY(1.4rem); }
+.js .tira__pieza.rev.ok {
+  opacity: 1; transform: none;
+  transition: opacity .8s ease, transform .9s cubic-bezier(.2,.7,.2,1);
+}
+.js .tira__pieza.rev.ok:nth-child(2) { transition-delay: .1s; }
+.js .tira__pieza.rev.ok:nth-child(3) { transition-delay: .2s; }
+@media (max-width: 700px) {
+  .tira { grid-template-columns: 1fr 1fr; }
+  .tira__pieza:last-child { grid-column: 1 / -1; height: 28svh; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .js .portada--foto .portada__foto,
+  .js .mitades__texto.rev, .js .mitades__foto.rev,
+  .js .cita__texto.rev, .js .tira__pieza.rev { opacity: 1; transform: none; }
+}
+
+/* ══════ LAS FOTOS ══════
+   Grilla dura, igual que el resto de la pagina: dos arriba y una ancha
+   abajo. Cada figura llega desde un lado distinto — izquierda, derecha,
+   abajo — con un retardo escalonado, para que se lean como tres cosas
+   puestas sobre la mesa y no como un bloque que se enciende. */
+.galeria {
+  padding: clamp(3rem, 8vw, 6rem) clamp(1.2rem, 5vw, 4rem);
+  max-width: 78rem; margin: 0 auto;
+}
+.galeria__titulo {
+  font-family: var(--display); font-weight: 500;
+  font-size: clamp(1.9rem, 4.4vw, 3.1rem); line-height: 1.05;
+  margin: 0 0 .6rem; color: var(--blanco);
+}
+.galeria__nota {
+  max-width: 40rem; margin: 0 0 2.2rem;
+  color: var(--suave-p); font-size: .96rem; line-height: 1.6;
+}
+.galeria__grilla { display: grid; gap: clamp(.9rem, 2vw, 1.6rem); grid-template-columns: 1fr 1fr; }
+.gal { margin: 0; background: var(--noche); border: 1px solid var(--linea); padding: .6rem; }
+.gal--abajo { grid-column: 1 / -1; }
+.gal img {
+  display: block; width: 100%; height: 100%;
+  aspect-ratio: 3 / 2; object-fit: cover;
+  border-bottom: 3px solid var(--cian);
+}
+.gal--abajo img { aspect-ratio: 16 / 7; }
+.gal figcaption {
+  font-family: var(--dato); font-size: .74rem; line-height: 1.5;
+  color: var(--suave-p); padding: .65rem .2rem 0;
+}
+.galeria__falta {
+  font-family: var(--dato); font-size: .74rem; color: var(--suave-p);
+  margin: 1.4rem 0 0; padding-left: 1.1rem; position: relative;
+}
+.galeria__falta::before { content: '·'; position: absolute; left: .3rem; }
+
+.js .gal.rev { opacity: 0; }
+.js .gal--izq.rev   { transform: translateX(-2.4rem); }
+.js .gal--der.rev   { transform: translateX(2.4rem); }
+.js .gal--abajo.rev { transform: translateY(2.4rem) scale(.98); }
+.js .gal.rev.ok {
+  opacity: 1; transform: none;
+  transition: opacity .8s ease, transform 1s cubic-bezier(.2,.7,.2,1);
+}
+.js .gal--der.rev.ok   { transition-delay: .12s; }
+.js .gal--abajo.rev.ok { transition-delay: .22s; }
+
+@media (max-width: 700px) {
+  .galeria__grilla { grid-template-columns: 1fr; }
+  .gal--abajo img { aspect-ratio: 3 / 2; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .js .gal.rev { opacity: 1; transform: none; }
+}
+
+/* La caja del letrero sube sobre la foto: sin esto el nombre en neon
+   queda debajo del absoluto posicionado. */
+.letrero .letrero__caja { position: relative; z-index: 2; }
+
+/* ── BANDA A SANGRE ──
+   Una franja de foto entre dos secciones. No lleva texto encima, asi
+   que no lleva velo: se ve la foto y punto. Es la aparicion que mas
+   llena la pagina por el peso que cuesta. */
+.banda {
+  position: relative; overflow: hidden;
+  height: clamp(180px, 30svh, 340px);
+  background: var(--noche);
+}
+.banda img {
+  display: block; width: 100%; height: 100%;
+  object-fit: cover; object-position: 50% 50%;
+}
+@media (prefers-reduced-motion: no-preference) {
+  .banda img { animation: deriva-banda 54s ease-in-out infinite alternate; }
+}
+@keyframes deriva-banda {
+  from { transform: scale(1.06) translate3d(-1.2%, 0, 0); }
+  to   { transform: scale(1.12) translate3d(1.2%, -1.4%, 0); }
+}
+.js .banda { opacity: 0; }
+.js .banda.ok { opacity: 1; transition: opacity 1s ease; }
+@media (prefers-reduced-motion: reduce) {
+  .js .banda { opacity: 1; }
+}
+
+/* ── TELON: la foto detras de una seccion entera ──
+   No es el aura. El aura va reventada a 64 px y se lee como mancha de
+   color; el telon va NITIDO y bajo de opacidad, y se lee como foto.
+   El texto encima se sostiene porque la foto esta al .16, no porque
+   este sucia — que es la regla de siempre. */
+.con-telon { position: relative; isolation: isolate; overflow: hidden; }
+.telon { position: absolute; inset: 0; z-index: -1; pointer-events: none; }
+.telon img {
+  display: block; width: 100%; height: 100%;
+  object-fit: cover; object-position: 50% 44%;
+  opacity: .16;
+  -webkit-mask-image: linear-gradient(180deg, transparent 0%, #000 18%, #000 72%, transparent 100%);
+          mask-image: linear-gradient(180deg, transparent 0%, #000 18%, #000 72%, transparent 100%);
+}
+@media (prefers-reduced-motion: no-preference) {
+  .telon img { animation: deriva-telon 76s ease-in-out infinite alternate; }
+}
+@keyframes deriva-telon {
+  from { transform: scale(1.04) translate3d(0, 0, 0); }
+  to   { transform: scale(1.10) translate3d(-1.6%, -1%, 0); }
+}
+
+/* ── MOSAICO ──
+   Seis piezas en grilla. Es la unica parte de la pagina donde una
+   imagen puede repetirse con otro recorte: a este tamano no se lee
+   como repeticion sino como serie. */
+/* El mosaico trae su propio fondo: sus colores salen del bloque de
+   .mitades y hay demos donde ese fondo es el contrario al del body —
+   el titulo quedaba a 1,00:1, invisible. Con fondo propio el contraste
+   esta garantizado en todas. */
+.mos {
+  background: var(--noche);
+  padding: clamp(2.6rem, 7vw, 5rem) clamp(1.2rem, 5vw, 4rem);
+}
+.mos__titulo {
+  max-width: 82rem; margin-left: auto; margin-right: auto;
+  font-family: var(--display); font-weight: 500;
+  font-size: clamp(1.5rem, 3.4vw, 2.4rem); line-height: 1.08;
+  margin: 0 0 .5rem; color: var(--blanco);
+}
+.mos__nota {
+  max-width: 82rem; margin: 0 auto 1.8rem;
+  color: var(--suave-p); font-size: .94rem; line-height: 1.6;
+}
+.mos__grilla {
+  display: grid; gap: 4px;
+  grid-template-columns: repeat(3, 1fr);
+  max-width: 82rem; margin: 0 auto;
+}
+.mos__p { margin: 0; overflow: hidden; height: clamp(140px, 20svh, 220px); background: var(--noche); }
+.mos__p img {
+  display: block; width: 100%; height: 100%; object-fit: cover;
+  transition: transform 1.1s cubic-bezier(.2,.7,.2,1), filter .6s ease;
+}
+.mos__p:nth-child(1), .mos__p:nth-child(6) { grid-column: span 2; }
+@media (hover: hover) and (pointer: fine) {
+  .mos__p:hover img { transform: scale(1.06); }
+}
+.js .mos__p { opacity: 0; transform: translateY(1.2rem); }
+.js .mos__p.ok {
+  opacity: 1; transform: none;
+  transition: opacity .8s ease, transform .9s cubic-bezier(.2,.7,.2,1);
+}
+.js .mos__p.ok:nth-child(2) { transition-delay: .06s; }
+.js .mos__p.ok:nth-child(3) { transition-delay: .12s; }
+.js .mos__p.ok:nth-child(4) { transition-delay: .18s; }
+.js .mos__p.ok:nth-child(5) { transition-delay: .24s; }
+.js .mos__p.ok:nth-child(6) { transition-delay: .30s; }
+@media (max-width: 760px) {
+  .mos__grilla { grid-template-columns: 1fr 1fr; }
+  .mos__p:nth-child(1), .mos__p:nth-child(6) { grid-column: 1 / -1; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .js .mos__p { opacity: 1; transform: none; }
+}

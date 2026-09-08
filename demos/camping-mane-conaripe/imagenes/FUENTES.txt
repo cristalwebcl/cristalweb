@@ -1,0 +1,72 @@
+PROCEDENCIA DE LAS IMÁGENES — Camping Mané, Coñaripe
+════════════════════════════════════════════════════════════════
+
+DEL NEGOCIO — siete fotos y EL LOGO, de su Facebook.
+
+gal-03.jpg    1300x724   EL LOGO — «Mané · Huiño-lafquen · camping
+                         y servicios», con sus dos motivos circulares
+media-01.jpg   900x1600  el sitio 2, con su mesa y su sombra
+tira-01.jpg    950x1267  la playa de arena oscura
+tira-02.jpg    950x534   la orilla del Calafquén desde la arena
+tira-03.jpg    950x499   el lago y los cerros del frente
+gal-01.jpg     900x1600  la orilla con el agua clara
+gal-02.jpg     906x1600  la playa con la cadena de cerros
+
+Bajadas desde la copia cacheada del buscador (Facebook no entrega la
+imagen), techo 1600 px. Por eso ninguna ocupa pantalla completa.
+
+EL LOGO es el hallazgo de esta demo: existe, está bien hecho y no
+aparece en su ficha de Google. Ponerlo en la cabecera de la página no
+cuesta nada y es lo primero que hace que el negocio se vea como un
+negocio y no como un aviso de Marketplace.
+
+────────────────────────────────────────────────────────────────
+UN LOTE ENTERO DESCARTADO
+
+El buscador devuelve, con el mismo nombre, las fotos de «Terrasses de
+Mané», un camping FRANCÉS: mobil homes con jacuzzi en la terraza y una
+familia almorzando. Nada de eso es Coñaripe. Se descartaron todas —y
+una de ellas además tiene una niña identificable, que es la regla que
+no se levanta nunca.
+
+Si en la llamada aparece la duda «¿pero no vi unas fotos con jacuzzi?»,
+la respuesta es ésa: son de otro camping, en Francia, y el buscador los
+mezcla porque comparten nombre.
+
+────────────────────────────────────────────────────────────────
+GENÉRICAS — tres, de banco libre, sólo de fondo.
+
+port-01.jpg  2560x1920  orilla de lago con árboles grandes y sombra
+  pxhere · dominio público (CC0)
+  https://get.pxhere.com/photo/beach-landscape-tree-water-nature-horizon-sky-wood-lake-river-summer-shoreline-pond-reflection-blue-reservoir-terrain-waterway-body-of-water-clouds-wetland-habitat-finnish-nature-photo-the-land-espoo-woody-plant-1064151.jpg
+  original 3264x2448
+
+aura-01.jpg  900x596  la luna sobre la copa de un árbol
+  pxhere · dominio público (CC0)
+  https://get.pxhere.com/photo/nature-forest-cloud-sky-wood-night-star-cosmos-atmosphere-dark-dusk-evening-darkness-moon-aurora-moonlight-trees-full-astronomy-stars-universe-bright-lunar-astrophotography-silhouettes-midnight-sparkles-astronomical-object-moonshine-725739.jpg
+  original 4928x3264 — a 64 px de desenfoque: sólo aporta el azul
+  violáceo que es el color de la lona
+
+cita-01.jpg  2560x1440  la Vía Láctea sobre siluetas de árboles
+  pxhere · dominio público (CC0)
+  https://get.pxhere.com/photo/forest-sky-night-star-milky-way-atmosphere-galaxy-starry-astronomy-stars-midnight-astronomical-object-915280.jpg
+  original 4240x2384
+
+Ninguna promete una instalación: son árboles, orilla y cielo. Lo que
+el camping tiene de verdad —la playa, los sitios— va con sus propias
+fotos y con pie.
+
+────────────────────────────────────────────────────────────────
+LO QUE FALTA
+
+Cada sitio numerado con su foto. Son diez minutos de teléfono y una
+tarde, y contestan la mitad de los mensajes de diciembre: cuál tiene
+sombra, cuál queda cerca del agua, cuál aguanta una carpa grande.
+
+────────────────────────────────────────────────────────────────
+NOTA TÉCNICA
+
+La portada de esta demo no lleva velo sobre la foto. El fondo es lona
+con trama y el velo del mismo color la tapaba entera. La máscara de la
+imagen basta: la foto no existe donde va el titular y entra completa
+desde el 42% hacia la derecha.

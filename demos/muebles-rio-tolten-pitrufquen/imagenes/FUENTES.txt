@@ -1,0 +1,54 @@
+FUENTES DE LAS IMÁGENES — 206 · Muebles Río Toltén (Pitrufquén)
+===============================================================
+NINGUNA de estas fotos es de muebles de este negocio. Son de bancos de
+uso libre (pxhere), bajadas con FotoRadar y reescaladas con
+preparar-lote.ps1.
+
+**En esta demo la advertencia importa más que en cualquier otra de la
+tanda**, y por eso el pie de la página lo dice con todas sus letras:
+en una mueblería el catálogo ES el producto, y una foto de banco puede
+confundirse con un mueble en venta. Antes de publicar hay que
+reemplazarlas TODAS por fotos del local.
+
+fondo-01.jpg  · 2400px · portada — pasillo de casa con puerta de madera y cómoda
+  Es la casa a la que va a llegar el mueble, y trae el vano de la
+  puerta, que es el objeto del logotipo y la medida de la pieza firma.
+banda-01.jpg  · 1800px · cita — taller de carpintería
+tajo-01.jpg   · 2000px · tajo — **UNA PIEZA VACÍA con su ventana**
+  Es la foto que da nombre a la demo: el hueco.
+telon-01.jpg  · 1200px · telón del contacto — veta de la madera
+media-01.jpg  · 1700px · mitades — dormitorio amoblado
+mos-01.jpg    · 1200px · sillas de madera sobre las mesas
+mos-02.jpg    · 1200px · textura de tapiz acanalado
+mos-03.jpg    · 1200px · dormitorio con luz cálida
+mos-04.jpg    · 1200px · veta y nudo de la madera
+mos-05.jpg    · 1200px · mesas y sillas de madera
+mos-06.jpg    · 1200px · living amplio
+
+Consultas usadas: «living room sofa window light pxhere», «carpentry
+workshop wood furniture making pxhere», «empty room wooden floor window
+pxhere», «wooden chair table interior pxhere», «upholstery fabric
+texture close pxhere», «bedroom wooden bed interior pxhere», «wood
+grain plank texture pxhere», «doorway hallway house interior pxhere».
+Las URL completas quedaron en
+`devs\material\busquedas\206-muebles\<carpeta>\FUENTES.txt`.
+
+
+POR QUÉ LA PÁGINA NO TIENE COLOR PROPIO
+----------------------------------------
+Es la primera página cálida del registro **sin ningún acento
+cromático**, y la razón es de esta selección de fotos: **en una tienda
+de muebles la web no puede tener color propio porque compite con el
+producto**. Todo el color de esta demo lo ponen las fotografías. Cuando
+lleguen las del negocio, la página se va a ver mejor sola.
+
+DESCARTADAS
+-----------
+· Una foto de dormitorio con **una persona durmiendo, con la cara
+  visible**. Persona identificable que no dio permiso.
+· Dos talleres de carpintería en ruinas, con las paredes rotas: en una
+  página que vende muebles nuevos, un taller destartalado dice lo
+  contrario de lo que hay que decir.
+· Un living de revista de arquitectura, con TV empotrado y mármol. Es
+  precioso y no es el cliente de Pitrufquén: una foto así hace que la
+  gente suponga precios que no son.

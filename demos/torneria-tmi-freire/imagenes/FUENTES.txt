@@ -1,0 +1,50 @@
+FUENTES DE LAS IMÁGENES — 200 · Tornería y Mantención Industrial TMI (Freire)
+=============================================================================
+NINGUNA de estas fotos es del taller. Son de bancos de uso libre
+(pxhere), bajadas con FotoRadar y reescaladas con preparar-lote.ps1.
+Están para mostrar el diseño, no los trabajos de TMI. El pie de la
+página lo dice, y también la sección «para el dueño».
+
+fondo-01.jpg  · 2400px · portada — torno cortando, con la viruta caliente
+  https://get.pxhere.com/photo/steel-metal-industrial-machine-industry-lathe-turning-metal-lathe-metalworking-machine-tool-1348894.jpg
+  (consulta «metal lathe workshop pxhere»)
+  Es la foto que cumple la regla de luminancia de la demo: fondo de
+  página oscuro y foto CON LUZ PROPIA — el corte brilla solo.
+
+banda-01.jpg  · 1900px · cita — piezas y viruta sobre el banco
+  (consulta «machine shop metal turning pxhere»)
+  https://get.pxhere.com/photo/work-craftsmanship-metal-lathe-machine-industry-turning-metalworking-machine-tool-1348892.jpg
+
+tajo-01.jpg   · 2000px · tajo — planta industrial (el cliente, no el proveedor)
+  (consulta «industrial plant machinery maintenance pxhere»)
+
+telon-01.jpg  · 1200px · telón del contacto — mecanismo en blanco y negro
+  (consulta «steel gears machined parts pxhere»)
+
+media-01.jpg  · 1800px · mitades — torno con la herramienta montada
+  (consulta «metal lathe workshop pxhere»)
+
+mos-01.jpg    · 1200px · fresas y herramientas de corte
+mos-02.jpg    · 1200px · tren de engranajes
+mos-03.jpg    · 1200px · caja de engranajes abierta
+mos-04.jpg    · 1200px · engranajes acoplados
+mos-05.jpg    · 1200px · planta industrial
+mos-06.jpg    · 1200px · portaherramientas con insertos
+
+Las URL completas de cada archivo quedaron en los FUENTES.txt que
+escribió fondos-4k.ps1 dentro de
+`devs\material\busquedas\200-tmi\<carpeta>\FUENTES.txt`.
+
+
+CRITERIO DE SELECCIÓN, Y QUÉ SE DESCARTÓ
+----------------------------------------
+· Se descartó un torno antiguo dentro de un galpón con las ventanas
+  rotas. La foto es preciosa y el mensaje es pésimo: en una página de
+  mantención industrial, un taller que parece abandonado dice justo lo
+  contrario de lo que hay que decir.
+· Se descartó una pieza oxidada de color azul: el óxido es el enemigo
+  del oficio, no su ilustración.
+· La mitad de las fotos son de piezas y engranajes y no del taller, a
+  propósito: **el cliente de una tornería reconoce la pieza antes que
+  el local**. Es el mismo criterio de la 196 (hielo), donde la mitad de
+  las fotos eran de los clientes y no del producto.

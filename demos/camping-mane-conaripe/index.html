@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="es-CL" class="no-js">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Camping Mane — Coñaripe</title>
+<meta name="description" content="Camping en Coñaripe. Reservar un sitio con número, no «un sitio», y las reglas de convivencia escritas.">
+
+<!-- Política de seguridad de contenido: el navegador sólo puede cargar
+     archivos de este mismo sitio. Sin CDN, sin librerías, sin rastreadores.
+     Ver skills/web-blindada/references/csp-en-pages.md -->
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self'; img-src 'self' data:; font-src 'self'; connect-src 'self'; media-src 'self'; form-action 'self'; base-uri 'none'; frame-src 'none'; object-src 'none'">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+
+<!-- Rescate de la clase .js (regla 2 de la casa). En archivo, sin defer:
+     inline lo bloquearía la CSP. -->
+<script src="js/rescate.js"></script>
+
+<!-- Fuentes propias: cero peticiones a terceros. El preload va SOLO
+     para la display, que es la del titular de la portada. -->
+<link rel="preload" href="assets/fuentes/genos-var-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="assets/fuentes.css">
+<link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+
+<div class="propuesta">
+  <p class="propuesta__que">Propuesta de sitio web — preparada para <b>Camping Mane</b> por CristalWeb</p>
+  <p class="propuesta__gancho">125 reseñas en Coñaripe. La pregunta que ningún camping de la zona contesta por escrito: cuál sitio me va a tocar.</p>
+</div>
+
+<header class="cab" id="cab">
+  <a class="cab__marca" href="#portada">
+    <span class="carpa" aria-hidden="true"></span>
+    <span class="cab__nombre">Camping Mane</span>
+  </a>
+  <nav class="cab__nav" aria-label="Secciones">
+    <a href="#plano">El plano</a>
+    <a href="#reglas">Las reglas</a>
+  </nav>
+  <a class="cab__tel" href="tel:+56940903330">
+    <span class="cab__tel-rot">Coñaripe</span>
+    <span class="cab__tel-num">+56 9 4090 3330</span>
+  </a>
+</header>
+
+<main>
+
+<!-- ========= PORTADA ========= -->
+<section class="portada portada--foto" id="portada" aria-labelledby="t-portada">
+  <!-- FONDO DE PORTADA: 2560 px, nitido. Se disuelve hacia el titular
+       con un gradiente lateral, no con desenfoque. -->
+  <div class="portada__foto" aria-hidden="true">
+    <img src="imagenes/port-01.jpg" width="2560" height="1920"
+         decoding="async" fetchpriority="high" alt="">
+  </div>
+
+  <div class="noche" aria-hidden="true">
+    <span class="luci luci--1"></span>
+    <span class="luci luci--2"></span>
+    <span class="luci luci--3"></span>
+    <span class="luci luci--4"></span>
+  </div>
+
+  <div class="portada__texto">
+    <p class="sitio">Camping · Coñaripe</p>
+    <h1 id="t-portada">Reservar un sitio,<br>no «un sitio»</h1>
+    <p class="bajada">Todos los campings dicen «tenemos sitios con sombra». Ninguno
+      dice cuál le toca a usted. Esa incertidumbre es la razón por la que una familia
+      llega tensa y se va con una reseña de tres estrellas.</p>
+    <dl class="specs">
+      <div class="spec"><dt>reseñas en Google</dt><dd>125</dd></div>
+      <div class="spec"><dt>teléfono</dt><dd class="dd--tel"><a href="tel:+56940903330">+56 9 4090 3330</a></dd></div>
+    </dl>
+  </div>
+</section>
+
+<!-- ========= LA PIEZA FIRMA — ESTRUCTURA N: EL PLANO ========= -->
+<section class="plano con-telon" id="plano" aria-labelledby="t-plano">
+  <div class="telon" aria-hidden="true">
+    <img src="imagenes/telon-01.jpg" width="1200" height="900" decoding="async" alt="">
+  </div>
+
+  <!-- AURA DE COLOR: la foto de rubro reventada a desenfoque. No se lee
+       como imagen: aporta color y luz detras de una seccion que si no
+       seria fondo plano. Aca el desenfoque SI es el efecto, no un parche,
+       y por eso el archivo va chico: a 64 px de blur, mas resolucion no
+       cambia nada. Sin loading=lazy porque el elemento va en absoluto con
+       z-index negativo y el navegador nunca lo considera visible. -->
+  <div class="aura" aria-hidden="true">
+    <img src="imagenes/aura-01.jpg" width="900" height="596" decoding="async" alt="">
+  </div>
+
+  <div class="plano__cabecera">
+    <p class="antetitulo">La pregunta que nadie contesta</p>
+    <h2 id="t-plano">El sitio<br>con nombre</h2>
+    <p class="entrada">Un plano con los sitios numerados cambia la conversación
+      entera: se deja de vender «un lugar donde poner la carpa» y se pasa a vender
+      <em>el sitio 7, el de la sombra grande</em>. El que reserva sabe qué recibe y
+      el que atiende deja de improvisar.</p>
+    <p class="marca-ejemplo marca-ejemplo--fuerte" data-ejemplo="ESQUEMA ILUSTRATIVO COMPLETO — la distribución real del camping no la conozco: este plano NO es el suyo"></p>
+  </div>
+
+  <!-- EL OBJETO PROTAGONISTA: el plano cenital, dibujado en SVG -->
+  <figure class="mapa">
+    <svg class="mapa__svg" viewBox="0 0 420 320" role="img"
+         aria-labelledby="mapa-t mapa-d">
+      <title id="mapa-t">Esquema ilustrativo de un camping con sitios numerados</title>
+      <desc id="mapa-d">Dibujo de ejemplo: una franja de río arriba, trece sitios
+        repartidos en tres zonas, los baños al centro y la entrada abajo. No
+        corresponde a la distribución real del camping.</desc>
+
+      <!-- el río -->
+      <path class="m-rio" d="M0,26 C70,10 120,44 190,30 C260,16 320,48 420,30 L420,0 L0,0 Z"/>
+      <text class="m-rot" x="14" y="20">RÍO</text>
+
+      <!-- ZONA A · junto al río -->
+      <a href="#zona-a">
+        <rect class="m-zona" x="14" y="46" width="392" height="72" rx="4"/>
+        <text class="m-zt" x="24" y="64">ZONA A · junto al río</text>
+        <g class="m-sitios">
+          <circle class="m-s" cx="70"  cy="92" r="15"/><text class="m-n" x="70"  y="97">1</text>
+          <circle class="m-s" cx="150" cy="92" r="15"/><text class="m-n" x="150" y="97">2</text>
+          <circle class="m-s" cx="230" cy="92" r="15"/><text class="m-n" x="230" y="97">3</text>
+          <circle class="m-s" cx="310" cy="92" r="15"/><text class="m-n" x="310" y="97">4</text>
+        </g>
+      </a>
+
+      <!-- ZONA B · la sombra -->
+      <a href="#zona-b">
+        <rect class="m-zona" x="14" y="130" width="392" height="86" rx="4"/>
+        <text class="m-zt" x="24" y="148">ZONA B · bajo los árboles</text>
+        <!-- las copas de los árboles -->
+        <circle class="m-arbol" cx="110" cy="186" r="26"/>
+        <circle class="m-arbol" cx="230" cy="180" r="30"/>
+        <circle class="m-arbol" cx="340" cy="188" r="22"/>
+        <g class="m-sitios">
+          <circle class="m-s" cx="60"  cy="186" r="15"/><text class="m-n" x="60"  y="191">5</text>
+          <circle class="m-s" cx="140" cy="186" r="15"/><text class="m-n" x="140" y="191">6</text>
+          <circle class="m-s" cx="220" cy="186" r="15"/><text class="m-n" x="220" y="191">7</text>
+          <circle class="m-s" cx="300" cy="186" r="15"/><text class="m-n" x="300" y="191">8</text>
+          <circle class="m-s" cx="370" cy="186" r="15"/><text class="m-n" x="370" y="191">9</text>
+        </g>
+      </a>
+
+      <!-- ZONA C · cerca de los baños -->
+      <a href="#zona-c">
+        <rect class="m-zona" x="14" y="228" width="392" height="76" rx="4"/>
+        <text class="m-zt" x="24" y="246">ZONA C · cerca de los baños</text>
+        <g class="m-sitios">
+          <circle class="m-s" cx="60"  cy="276" r="15"/><text class="m-n" x="60"  y="281">10</text>
+          <circle class="m-s" cx="130" cy="276" r="15"/><text class="m-n" x="130" y="281">11</text>
+          <circle class="m-s" cx="200" cy="276" r="15"/><text class="m-n" x="200" y="281">12</text>
+          <circle class="m-s" cx="270" cy="276" r="15"/><text class="m-n" x="270" y="281">13</text>
+        </g>
+      </a>
+
+      <!-- los baños y la entrada -->
+      <rect class="m-serv" x="322" y="252" width="72" height="42" rx="3"/>
+      <text class="m-st" x="358" y="277">BAÑOS</text>
+      <path class="m-flecha" d="M210,318 L204,308 L216,308 Z"/>
+      <text class="m-rot" x="226" y="316">ENTRADA</text>
+    </svg>
+    <figcaption class="mapa__pie">
+      Esquema de ejemplo para mostrar cómo se ve el plano. Los números, las zonas y
+      la ubicación de los baños son inventados a propósito para ilustrar la
+      estructura. <span class="falta">falta: el plano real del camping</span>
+    </figcaption>
+  </figure>
+
+  <!-- las fichas de zona -->
+  <div class="zonas">
+    <article class="zona" id="zona-a">
+      <p class="zona__l">A</p>
+      <div class="zona__cuerpo">
+        <h3>Junto al río</h3>
+        <p>La zona que todos piden. También la más fresca de noche y la que más
+          ruido de agua tiene, que a unos les encanta y a otros no los deja
+          dormir.</p>
+        <dl class="zona__specs">
+          <div class="zs"><dt>Cuántos sitios</dt><dd><span class="falta">falta</span></dd></div>
+          <div class="zs"><dt>Sombra</dt><dd><span class="falta">falta</span></dd></div>
+          <div class="zs"><dt>Distancia a los baños</dt><dd><span class="falta">falta</span></dd></div>
+          <div class="zs"><dt>Se puede llegar en auto</dt><dd><span class="falta">falta</span></dd></div>
+        </dl>
+      </div>
+    </article>
+
+    <article class="zona" id="zona-b">
+      <p class="zona__l">B</p>
+      <div class="zona__cuerpo">
+        <h3>Bajo los árboles</h3>
+        <p>La sombra de verdad, que en enero es lo único que importa. Suele ser la
+          zona que se llena primero y la que conviene reservar con nombre y
+          número.</p>
+        <dl class="zona__specs">
+          <div class="zs"><dt>Cuántos sitios</dt><dd><span class="falta">falta</span></dd></div>
+          <div class="zs"><dt>Qué árboles</dt><dd><span class="falta">falta</span></dd></div>
+          <div class="zs"><dt>Distancia a los baños</dt><dd><span class="falta">falta</span></dd></div>
+          <div class="zs"><dt>Se puede llegar en auto</dt><dd><span class="falta">falta</span></dd></div>
+        </dl>
+      </div>
+    </article>
+
+    <article class="zona" id="zona-c">
+      <p class="zona__l">C</p>
+      <div class="zona__cuerpo">
+        <h3>Cerca de los baños</h3>
+        <p>La que nadie pide y la que más conviene a quien viene con niños chicos o
+          con alguien mayor. Decir en voz alta que existe —y por qué sirve— la
+          convierte de sobra en ventaja.</p>
+        <dl class="zona__specs">
+          <div class="zs"><dt>Cuántos sitios</dt><dd><span class="falta">falta</span></dd></div>
+          <div class="zs"><dt>Sombra</dt><dd><span class="falta">falta</span></dd></div>
+          <div class="zs"><dt>Ruido</dt><dd><span class="falta">falta: decirlo honestamente</span></dd></div>
+          <div class="zs"><dt>Se puede llegar en auto</dt><dd><span class="falta">falta</span></dd></div>
+        </dl>
+      </div>
+    </article>
+  </div>
+
+  <div class="ojo">
+    <p><b>Cómo se hace el plano de verdad.</b> No hace falta un topógrafo: una foto
+      desde arriba, un dibujo a mano alzada sobre una hoja, o incluso una captura de
+      satélite con los sitios marcados a mano sirven. Lo que importa es que cada
+      sitio tenga un número y que ese número se pueda pedir por teléfono.</p>
+  </div>
+</section>
+
+<!-- ========= LA REGLA DE LA RADIO ========= -->
+<!-- ========= MEDIA PANTALLA ========= -->
+<section class="mitades" aria-labelledby="t-mitades">
+  <div class="mitades__foto">
+    <img src="imagenes/media-01.jpg" width="900" height="1600"
+         loading="lazy" decoding="async" alt="">
+  </div>
+  <div class="mitades__texto">
+    <p class="mitades__ante">La foto que nadie publica</p>
+    <h2 id="t-mitades">Así se ve el sitio 2, con su mesa y su sombra</h2>
+    <p>Quien reserva un camping no compra «naturaleza»: compra un pedazo de tierra concreto, con su sombra, su mesa y su distancia al baño. Publicar cada sitio numerado con su foto —cuál tiene sombra de tarde, cuál queda más cerca del agua, cuál aguanta una carpa grande— contesta la mitad de los WhatsApp de diciembre y hace que el que llega no discuta el que le tocó.</p>
+  </div>
+</section>
+
+<section class="reglas" id="reglas" aria-labelledby="t-reglas">
+  <div class="reglas__cuerpo">
+    <p class="antetitulo antetitulo--claro">Lo que decide si la familia vuelve</p>
+    <h2 id="t-reglas">La regla<br>de la radio</h2>
+    <p class="entrada">Un camping se arruina de una sola forma: el grupo del sitio de
+      al lado. Y se salva de una sola forma: reglas escritas antes de llegar. No
+      sirven para castigar a nadie — sirven para que el que va a poner música fuerte
+      no reserve acá, y el que quiere dormir sí.</p>
+
+    <dl class="huecos">
+      <div class="hueco">
+        <dt>Desde qué hora hay silencio</dt>
+        <dd><span class="falta">falta: la hora</span>
+          <span class="hueco__pq">La regla más importante de todas y la que hay que
+            poner primero. Una hora escrita se respeta; una hora que hay que ir a
+            pedir, no.</span></dd>
+      </div>
+      <div class="hueco">
+        <dt>Si se permite música</dt>
+        <dd><span class="falta">falta: sí, no, o hasta cierta hora</span>
+          <span class="hueco__pq">Las tres respuestas atraen a un público distinto.
+            Lo que no funciona es no decirlo y decidirlo caso a caso.</span></dd>
+      </div>
+      <div class="hueco">
+        <dt>Perros</dt>
+        <dd><span class="falta">falta: sí / no / con correa</span>
+          <span class="hueco__pq">Un «sí» escrito trae familias enteras que hoy no
+            preguntan. Un «no» escrito evita una discusión en la entrada con el auto
+            ya cargado.</span></dd>
+      </div>
+      <div class="hueco">
+        <dt>Fogatas</dt>
+        <dd><span class="falta">falta: dónde sí y dónde no</span>
+          <span class="hueco__pq">En temporada de incendios esto no es una regla de
+            convivencia, es seguridad. Conviene que esté escrito con la misma
+            claridad que el horario.</span></dd>
+      </div>
+      <div class="hueco">
+        <dt>Cuántas personas por sitio</dt>
+        <dd><span class="falta">falta</span>
+          <span class="hueco__pq">Y cuánto cuesta la persona adicional. Es la
+            discusión más frecuente en la entrada de cualquier camping.</span></dd>
+      </div>
+      <div class="hueco">
+        <dt>Horario de llegada y de salida</dt>
+        <dd><span class="falta">falta</span>
+          <span class="hueco__pq">Sobre todo el de salida: es lo que permite que
+            entre el siguiente sin apurar a nadie.</span></dd>
+      </div>
+    </dl>
+
+    <p class="nota-honesta">Estas reglas no las invento: son las seis que se
+      preguntan siempre. <b>Escritas en la página, dejan de ser una conversación
+      incómoda en la entrada y pasan a ser parte de lo que el cliente ya aceptó al
+      reservar.</b></p>
+  </div>
+</section>
+
+<!-- ========= EL CIERRE — T1 ========= -->
+<!-- ========= LA CITA A SANGRE ========= -->
+<section class="cita" aria-labelledby="t-cita">
+  <div class="cita__foto" aria-hidden="true">
+    <img src="imagenes/cita-01.jpg" width="2560" height="1439"
+         loading="lazy" decoding="async" alt="">
+  </div>
+  <blockquote class="cita__texto">
+    <p id="t-cita">El cielo también es parte del terreno<br>
+      <span class="cita__eco">Y en Coñaripe, en enero, se ve entero</span></p>
+  </blockquote>
+</section>
+
+
+
+<!-- ========= TAJO — FRANJA A SANGRE ========= -->
+<div class="tajo" aria-hidden="true">
+  <img src="imagenes/banda-01.jpg" width="950" height="499"
+       loading="lazy" decoding="async" alt="">
+</div>
+<section class="cierre" id="llamar" aria-labelledby="t-cierre">
+  <p class="cierre__rot">Para reservar sitio, hoy se llama</p>
+  <h2 id="t-cierre" class="cierre__tel">
+    <a href="tel:+56940903330">+56 9 4090 3330</a>
+  </h2>
+  <p class="cierre__pie">Es el número publicado en su ficha de Google. Con el plano
+    en la página, esa llamada pasa de «¿tienen sitio?» a «quiero el 7».</p>
+</section>
+
+<!-- ========= LAS FOTOS ========= -->
+<section class="galeria" aria-labelledby="t-galeria">
+  <h2 id="t-galeria" class="galeria__titulo">Lo suyo, incluido el logo</h2>
+  <p class="galeria__nota">Las cuatro con pie son suyas, de su Facebook. Los fondos de bosque y cielo estrellado no lo son y están declarados en imagenes/FUENTES.txt. El logo se rescató de su propia gráfica de temporada.</p>
+  <div class="galeria__grilla">
+    <figure class="gal gal--izq">
+      <img src="imagenes/gal-03.jpg" width="1300" height="724" loading="lazy" decoding="async"
+           alt="Logo del camping: la palabra Mané entre dos motivos circulares, sobre fondo ocre, con la leyenda Huiño-lafquen, camping y servicios.">
+      <figcaption>El logo, tal como lo usan. Tiene nombre, lugar en mapudungun y oficio: no hace falta inventar nada.</figcaption>
+    </figure>
+    <figure class="gal gal--der">
+      <img src="imagenes/gal-01.jpg" width="900" height="1600" loading="lazy" decoding="async"
+           alt="La orilla del lago con el agua clara y los cerros al fondo.">
+      <figcaption>La orilla, a pasos de los sitios. Esto es lo que se compra.</figcaption>
+    </figure>
+    <figure class="gal gal--abajo">
+      <img src="imagenes/gal-02.jpg" width="906" height="1600" loading="lazy" decoding="async"
+           alt="La playa de arena con el lago y la cadena de cerros al frente.">
+      <figcaption>La playa del camping. Arena oscura, agua limpia y nadie encima.</figcaption>
+    </figure>
+  </div>
+  <p class="galeria__falta">falta: cada sitio numerado con su foto, y la playa al atardecer</p>
+</section>
+
+<!-- ========= LA TIRA ========= -->
+<section class="tira" aria-label="Tres imágenes del oficio">
+  <figure class="tira__pieza">
+    <img src="imagenes/tira-01.jpg" width="950" height="1267" loading="lazy" decoding="async" alt="La playa de arena oscura del camping, con el lago y la península al fondo.">
+  </figure>
+  <figure class="tira__pieza">
+    <img src="imagenes/tira-02.jpg" width="950" height="534" loading="lazy" decoding="async" alt="La orilla del Calafquén desde la arena, con el agua azul.">
+  </figure>
+  <figure class="tira__pieza">
+    <img src="imagenes/tira-03.jpg" width="950" height="499" loading="lazy" decoding="async" alt="El lago y los cerros del frente, vistos desde la playa.">
+  </figure>
+</section>
+
+</main>
+
+
+
+<!-- ========= MOSAICO ========= -->
+<section class="mos" aria-labelledby="t-mos">
+  <h2 id="t-mos" class="mos__titulo">La misma serie, más de cerca</h2>
+  <p class="mos__nota">Estas seis ya aparecen más arriba en la página. Vuelven acá en otro tamaño porque una sola pasada de imágenes deja el scroll vacío, y porque de cerca se ven cosas que en grande se pierden. La procedencia de cada una está en imagenes/FUENTES.txt.</p>
+  <div class="mos__grilla">
+    <figure class="mos__p">
+      <img src="imagenes/mos-01.jpg" width="780" height="434"
+           loading="lazy" decoding="async" alt="">
+    </figure>
+    <figure class="mos__p">
+      <img src="imagenes/mos-02.jpg" width="780" height="1040"
+           loading="lazy" decoding="async" alt="">
+    </figure>
+    <figure class="mos__p">
+      <img src="imagenes/mos-03.jpg" width="780" height="438"
+           loading="lazy" decoding="async" alt="">
+    </figure>
+    <figure class="mos__p">
+      <img src="imagenes/mos-04.jpg" width="780" height="410"
+           loading="lazy" decoding="async" alt="">
+    </figure>
+    <figure class="mos__p">
+      <img src="imagenes/mos-05.jpg" width="780" height="1377"
+           loading="lazy" decoding="async" alt="">
+    </figure>
+    <figure class="mos__p">
+      <img src="imagenes/mos-06.jpg" width="780" height="1387"
+           loading="lazy" decoding="async" alt="">
+    </figure>
+  </div>
+</section>
+<section class="dueno" aria-labelledby="t-dueno">
+  <h2 id="t-dueno">Para el dueño</h2>
+  <div class="dueno__cols">
+    <div>
+      <h3>Lo que está verificado</h3>
+      <p>Las 125 reseñas de su ficha de Google y el teléfono +56 9 4090 3330. No
+        tienen página propia.</p>
+    </div>
+    <div>
+      <h3>Lo que es dibujo de ejemplo</h3>
+      <p>El plano entero. No conozco la distribución real del camping, así que
+        dibujé un esquema para mostrar cómo se ve la idea. Está marcado como
+        ejemplo en tres lugares distintos a propósito.</p>
+    </div>
+    <div>
+      <h3>Lo que falta</h3>
+      <p>El plano real con los sitios numerados y las seis reglas. Con el plano
+        solo, ustedes pasan a ser el único camping de la vuelta al lago donde se
+        puede reservar un sitio con nombre.</p>
+    </div>
+  </div>
+  <p class="dueno__cierre">
+    <a class="flecha" href="https://wa.me/56968650001" rel="noopener">Escribirme por WhatsApp <span aria-hidden="true">→</span></a>
+    <a class="flecha" href="../../" rel="noopener">Ver otros trabajos <span aria-hidden="true">→</span></a>
+  </p>
+</section>
+
+<footer class="pie">
+  <p>Sitio de demostración preparado por CristalWeb. El negocio no lo ha encargado
+    ni ha revisado su contenido. El plano es un esquema ilustrativo y no representa
+    la distribución real del camping.</p>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>

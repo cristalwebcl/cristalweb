@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="es-CL" class="no-js">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Clínica Veterinaria El Bosque — Valdivia</title>
+<meta name="description" content="Veterinaria en Valdivia. Cómo llevar al gato a la consulta sin que sea una guerra.">
+
+<!-- Política de seguridad de contenido: el navegador sólo puede cargar
+     archivos de este mismo sitio. Sin CDN, sin librerías, sin rastreadores.
+     Ver skills/web-blindada/references/csp-en-pages.md -->
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self'; img-src 'self' data:; font-src 'self'; connect-src 'self'; media-src 'self'; form-action 'self'; base-uri 'none'; frame-src 'none'; object-src 'none'">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+
+<!-- Rescate de la clase .js (regla 2 de la casa). En archivo, sin defer:
+     inline lo bloquearía la CSP. -->
+<script src="js/rescate.js"></script>
+
+<!-- Fuentes propias: cero peticiones a terceros. El preload va SOLO
+     para la display, que es la del titular de la portada. -->
+<link rel="preload" href="assets/fuentes/farro-700-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="assets/fuentes.css">
+<link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+
+<div class="propuesta">
+  <p class="propuesta__que">Propuesta de sitio web — preparada para <b>Clínica Veterinaria El Bosque</b> por CristalWeb</p>
+  <p class="propuesta__gancho">199 reseñas. Y la mitad de los gatos de Valdivia sin ir al control, porque meterlos a la caja es una guerra que el dueño ya sabe que va a perder.</p>
+</div>
+
+<header class="cab" id="cab">
+  <a class="cab__marca" href="#portada">
+    <span class="caja" aria-hidden="true"></span>
+    <span class="cab__nombre">El Bosque</span>
+  </a>
+  <nav class="cab__nav" aria-label="Secciones">
+    <a href="#e1">La maniobra</a>
+    <a href="#amiga">Consulta amiga del gato</a>
+  </nav>
+  <a class="cab__tel" href="tel:+56632430902">
+    <span class="cab__tel-rot">Valdivia</span>
+    <span class="cab__tel-num">(63) 243 0902</span>
+  </a>
+</header>
+
+<main>
+
+<!-- ========= PORTADA ========= -->
+<section class="portada portada--foto" id="portada" aria-labelledby="t-portada">
+  <!-- FONDO DE PORTADA: 2560 px, nitido. Se disuelve hacia el titular
+       con un gradiente lateral, no con desenfoque. -->
+  <div class="portada__foto" aria-hidden="true">
+    <img src="imagenes/port-01.jpg" width="2560" height="1617"
+         decoding="async" fetchpriority="high" alt="">
+  </div>
+
+  <div class="escondite" aria-hidden="true">
+    <span class="ojos ojos--1"></span>
+    <span class="ojos ojos--2"></span>
+    <span class="ojos ojos--3"></span>
+  </div>
+
+  <div class="portada__texto">
+    <p class="sitio">Veterinaria · Valdivia</p>
+    <h1 id="t-portada">¿Cómo lo llevo<br>sin que nos<br>odiemos?</h1>
+    <p class="bajada">El gato ve la caja y desaparece. Media hora después hay
+      arañazos, alguien llorando y una hora perdida. Por eso los gatos van menos al
+      veterinario que los perros — y por eso llegan más tarde cuando algo pasa.</p>
+    <dl class="specs">
+      <div class="spec"><dt>reseñas en Google</dt><dd>199</dd></div>
+      <div class="spec"><dt>teléfono</dt><dd class="dd--tel"><a href="tel:+56632430902">(63) 243 0902</a></dd></div>
+    </dl>
+  </div>
+</section>
+
+<!-- ══════ ESTRUCTURA E — la maniobra, escena por escena ══════ -->
+
+<section class="esc esc--1 con-telon" id="e1" aria-labelledby="t-e1">
+  <div class="telon" aria-hidden="true">
+    <img src="imagenes/telon-01.jpg" width="1200" height="758" decoding="async" alt="">
+  </div>
+
+  <!-- AURA DE COLOR: la foto de rubro reventada a desenfoque. No se lee
+       como imagen: aporta color y luz detras de una seccion que si no
+       seria fondo plano. Aca el desenfoque SI es el efecto, no un parche,
+       y por eso el archivo va chico: a 64 px de blur, mas resolucion no
+       cambia nada. Sin loading=lazy porque el elemento va en absoluto con
+       z-index negativo y el navegador nunca lo considera visible. -->
+  <div class="aura" aria-hidden="true">
+    <img src="imagenes/aura-01.jpg" width="900" height="1350" decoding="async" alt="">
+  </div>
+
+  <div class="esc__cuerpo">
+    <p class="esc__n">Escena 01</p>
+    <h2 id="t-e1">Días antes</h2>
+    <p class="entrada">Todo el problema empieza acá: la caja aparece una vez al año y
+      siempre termina en el mismo lugar. El gato hizo la conexión hace tiempo, y es
+      mucho más rápido que uno.</p>
+    <ul class="pasos">
+      <li>Sacar la caja <b>tres o cuatro días antes</b> y dejarla abierta en el
+        living, como un mueble más.</li>
+      <li>Ponerle adentro una manta con olor a casa, y de vez en cuando algo rico.</li>
+      <li>No cerrarla nunca durante esos días. Ni una sola vez: la idea es que deje
+        de significar «viaje».</li>
+    </ul>
+    <p class="esc__pq">Suena exagerado para una consulta de veinte minutos. Es la
+      diferencia entre un gato que entra caminando y uno que hay que sacar de abajo
+      de la cama.</p>
+  </div>
+</section>
+
+<section class="esc esc--2" aria-labelledby="t-e2">
+  <div class="esc__cuerpo">
+    <p class="esc__n">Escena 02</p>
+    <h2 id="t-e2">La toalla</h2>
+    <p class="entrada">Si igual hay que agarrarlo, la toalla es la herramienta. No
+      para envolverlo a la fuerza: para tapar y contener sin apretar.</p>
+    <ul class="pasos">
+      <li>Una toalla grande, mejor si ya tiene olor de la casa.</li>
+      <li>Cubrirlo por encima —la vista tapada baja la mitad del estrés— y levantarlo
+        con el peso repartido, nunca del cogote.</li>
+      <li>Si el gato está muy alterado, <b>parar</b>. Un gato con las orejas atrás y
+        la cola gruesa no se convence: se espera.</li>
+    </ul>
+  </div>
+</section>
+
+<section class="esc esc--3" aria-labelledby="t-e3">
+  <div class="esc__cuerpo">
+    <p class="esc__n">Escena 03</p>
+    <h2 id="t-e3">La entrada</h2>
+    <p class="entrada">Acá está el truco que casi nadie conoce y que cambia todo el
+      asunto.</p>
+    <ul class="pasos">
+      <li><b>De espalda, y hacia abajo.</b> Con una caja que se abre por arriba, se
+        baja al gato de cola primero, sentado — no de frente por la puerta chica.</li>
+      <li>Si la caja sólo se abre de frente, se para de pie sobre la parte de atrás
+        y se baja al gato adentro por gravedad.</li>
+      <li>Una caja que se abre por arriba o que se desarma en dos mitades vale cada
+        peso que cuesta. <span class="falta">falta: si venden o recomiendan
+        alguna</span></li>
+    </ul>
+    <p class="esc__pq">Un gato empujado de frente saca las cuatro patas y se traba en
+      el marco. Bajado de espalda, no tiene de dónde afirmarse — y entra sin pelear.</p>
+  </div>
+</section>
+
+<section class="esc esc--4" aria-labelledby="t-e4">
+  <div class="esc__cuerpo">
+    <p class="esc__n">Escena 04</p>
+    <h2 id="t-e4">El auto</h2>
+    <p class="entrada">El viaje es la parte que más ansiedad genera y la más fácil de
+      arreglar.</p>
+    <ul class="pasos">
+      <li><b>Un paño encima de la caja.</b> Que no vea pasar el mundo por la ventana
+        baja el estrés de forma notoria.</li>
+      <li><b>La caja asegurada</b>, en el suelo del asiento trasero o con el cinturón.
+        Nunca suelta en el asiento y nunca en las rodillas de alguien.</li>
+      <li>Sin radio fuerte y sin abrir la caja en el camino «para calmarlo»: es
+        exactamente cuando se arranca.</li>
+    </ul>
+  </div>
+</section>
+
+<section class="esc esc--5" aria-labelledby="t-e5">
+  <div class="esc__cuerpo">
+    <p class="esc__n">Escena 05</p>
+    <h2 id="t-e5">La llegada</h2>
+    <p class="entrada">Y en la sala de espera, lo último que queda por cuidar.</p>
+    <ul class="pasos">
+      <li>La caja <b>en alto</b>, sobre las piernas o una silla, nunca en el suelo:
+        desde abajo todo es más amenazante.</li>
+      <li>El paño encima hasta que entren a la consulta.</li>
+      <li>Y no abrirla en la sala. Se abre adentro, con la puerta cerrada.</li>
+    </ul>
+    <div class="ojo">
+      <p><b>Nada de esto es un tratamiento ni reemplaza nada.</b> Es la manera de
+        trasladar un gato, que es del oficio y la sabe cualquier veterinario — sólo
+        que nadie la escribe.
+        <span class="falta">falta: que la clínica revise y firme la maniobra</span></p>
+    </div>
+  </div>
+</section>
+
+<!-- ========= LA CONSULTA AMIGA DEL GATO ========= -->
+<!-- ========= MEDIA PANTALLA ========= -->
+<section class="mitades" aria-labelledby="t-mitades">
+  <div class="mitades__foto">
+    <img src="imagenes/media-01.jpg" width="2200" height="3300"
+         loading="lazy" decoding="async" alt="">
+  </div>
+  <div class="mitades__texto">
+    <p class="mitades__ante">Lo que cambia en la sala de espera</p>
+    <h2 id="t-mitades">Un gato no espera igual que un perro</h2>
+    <p>Cinco perros ladrando al lado son media hora de estrés que llega hasta la mesa de consulta. Por eso las clínicas que atienden bien a los gatos separan la espera, bajan la voz y dejan la caja en alto: no es delicadeza, es que un gato asustado no se deja revisar, y una revisión a medias no sirve para nada.</p>
+  </div>
+</section>
+
+<section class="amiga" id="amiga" aria-labelledby="t-amiga">
+  <div class="amiga__cuerpo">
+    <p class="antetitulo antetitulo--claro">La otra mitad del problema</p>
+    <h2 id="t-amiga">La consulta<br>amiga del gato</h2>
+    <p class="entrada">El dueño puede hacer todo bien y perderlo en la sala de
+      espera, con tres perros ladrando a un metro. Lo que la clínica puede ofrecer
+      del otro lado es tan importante como la maniobra de la casa.</p>
+
+    <dl class="huecos">
+      <div class="hueco">
+        <dt>Si hay un rincón o una hora sin perros</dt>
+        <dd><span class="falta">falta: confirmar</span>
+          <span class="hueco__pq">No hace falta una sala aparte: un rincón, un
+            biombo, o simplemente decir «los gatos a primera hora» ya resuelve la
+            mayor parte.</span></dd>
+      </div>
+      <div class="hueco">
+        <dt>Si se puede esperar en el auto y entrar directo</dt>
+        <dd><span class="falta">falta</span>
+          <span class="hueco__pq">Es la solución más simple del mundo y la que más
+            agradecen los dueños de gatos. Sólo hay que avisar que existe.</span></dd>
+      </div>
+      <div class="hueco">
+        <dt>Si se examina dentro de la caja cuando se puede</dt>
+        <dd><span class="falta">falta</span>
+          <span class="hueco__pq">Con la mitad de arriba retirada, muchos gatos se
+            dejan revisar sin salir. Es manejo, no equipamiento.</span></dd>
+      </div>
+      <div class="hueco">
+        <dt>Cuánto dura una consulta de gato</dt>
+        <dd><span class="falta">falta</span>
+          <span class="hueco__pq">Si toma más que la de un perro porque se le da
+            tiempo, decirlo es una ventaja, no una disculpa.</span></dd>
+      </div>
+    </dl>
+
+    <p class="firma">Cuatro respuestas cortas y una maniobra escrita. Con eso, esta
+      clínica pasa a ser <em>la de los gatos</em> en Valdivia — y esa etiqueta, en un
+      pueblo grande, se instala sola.</p>
+  </div>
+</section>
+
+<!-- ========= EL CIERRE — T1 ========= -->
+<!-- ========= LA CITA A SANGRE ========= -->
+<section class="cita" aria-labelledby="t-cita">
+  <div class="cita__foto" aria-hidden="true">
+    <img src="imagenes/cita-01.jpg" width="2200" height="1457"
+         loading="lazy" decoding="async" alt="">
+  </div>
+  <blockquote class="cita__texto">
+    <p id="t-cita">Meterlo a la caja no tiene que ser una guerra<br>
+      <span class="cita__eco">Y si lo es, la consulta empieza perdida</span></p>
+  </blockquote>
+</section>
+
+
+
+<!-- ========= TAJO — FRANJA A SANGRE ========= -->
+<div class="tajo" aria-hidden="true">
+  <img src="imagenes/banda-01.jpg" width="1100" height="619"
+       loading="lazy" decoding="async" alt="">
+</div>
+<section class="cierre" id="llamar" aria-labelledby="t-cierre">
+  <p class="cierre__rot">Para pedir hora para un gato</p>
+  <h2 id="t-cierre" class="cierre__tel">
+    <a href="tel:+56632430902">(63) 243 0902</a>
+  </h2>
+  <p class="cierre__pie">Es el número publicado en su ficha de Google.</p>
+</section>
+
+<!-- ========= LA TIRA ========= -->
+<section class="tira" aria-label="Tres imágenes del oficio">
+  <figure class="tira__pieza">
+    <img src="imagenes/tira-01.jpg" width="1100" height="619" loading="lazy" decoding="async" alt="Gatos echados al sol sobre una escalera de piedra.">
+  </figure>
+  <figure class="tira__pieza">
+    <img src="imagenes/tira-02.jpg" width="1100" height="1650" loading="lazy" decoding="async" alt="Gato mirando hacia arriba, atento.">
+  </figure>
+  <figure class="tira__pieza">
+    <img src="imagenes/tira-03.jpg" width="1100" height="1650" loading="lazy" decoding="async" alt="Gato pequeño siendo levantado con cuidado.">
+  </figure>
+</section>
+
+</main>
+
+
+
+<!-- ========= MOSAICO ========= -->
+<section class="mos" aria-labelledby="t-mos">
+  <h2 id="t-mos" class="mos__titulo">La misma serie, más de cerca</h2>
+  <p class="mos__nota">Estas seis ya aparecen más arriba en la página. Vuelven acá en otro tamaño porque una sola pasada de imágenes deja el scroll vacío, y porque de cerca se ven cosas que en grande se pierden. La procedencia de cada una está en imagenes/FUENTES.txt.</p>
+  <div class="mos__grilla">
+    <figure class="mos__p">
+      <img src="imagenes/mos-01.jpg" width="780" height="1170"
+           loading="lazy" decoding="async" alt="">
+    </figure>
+    <figure class="mos__p">
+      <img src="imagenes/mos-02.jpg" width="780" height="1170"
+           loading="lazy" decoding="async" alt="">
+    </figure>
+    <figure class="mos__p">
+      <img src="imagenes/mos-03.jpg" width="780" height="1170"
+           loading="lazy" decoding="async" alt="">
+    </figure>
+    <figure class="mos__p">
+      <img src="imagenes/mos-04.jpg" width="780" height="439"
+           loading="lazy" decoding="async" alt="">
+    </figure>
+    <figure class="mos__p">
+      <img src="imagenes/mos-05.jpg" width="780" height="493"
+           loading="lazy" decoding="async" alt="">
+    </figure>
+    <figure class="mos__p">
+      <img src="imagenes/mos-06.jpg" width="780" height="517"
+           loading="lazy" decoding="async" alt="">
+    </figure>
+  </div>
+</section>
+<section class="dueno" aria-labelledby="t-dueno">
+  <h2 id="t-dueno">Para la clínica</h2>
+  <div class="dueno__cols">
+    <div>
+      <h3>Lo que está verificado</h3>
+      <p>Las 199 reseñas de su ficha de Google y el teléfono (63) 243 0902. No hay
+        página propia.</p>
+    </div>
+    <div>
+      <h3>Lo que es del oficio</h3>
+      <p>La maniobra completa. No la inventé: es lo que cualquier veterinario le
+        explica a un dueño cuando alcanza el tiempo. Lo único nuevo es que esté
+        escrita.</p>
+    </div>
+    <div>
+      <h3>Lo que falta</h3>
+      <p>Revisar y firmar la maniobra, y las cuatro respuestas sobre cómo reciben a
+        los gatos. La segunda parte no cuesta plata: casi todo es organización.</p>
+    </div>
+  </div>
+  <p class="dueno__cierre">
+    <a class="flecha" href="https://wa.me/56968650001" rel="noopener">Escribirme por WhatsApp <span aria-hidden="true">→</span></a>
+    <a class="flecha" href="../../" rel="noopener">Ver otros trabajos <span aria-hidden="true">→</span></a>
+  </p>
+</section>
+
+<footer class="pie">
+  <p><b>Esta página no entrega orientación veterinaria.</b> La maniobra de traslado
+    es una referencia general del oficio, no reemplaza la evaluación de un
+    profesional y no sirve para manejar a un gato herido o enfermo, que requiere
+    indicaciones específicas. <b>Ante cualquier duda, consulte.</b></p>
+  <p class="pie__demo">Sitio de demostración preparado por CristalWeb. El negocio no
+    lo ha encargado ni ha revisado su contenido.</p>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="es-CL" class="no-js">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Los Troncos — parrilla, Villarrica</title>
+<meta name="description" content="Parrilla en Villarrica. Los puntos de la carne explicados y qué parrillada pedir según cuántos son.">
+
+<!-- Política de seguridad de contenido: el navegador sólo puede cargar
+     archivos de este mismo sitio. Sin CDN, sin librerías, sin rastreadores.
+     Ver skills/web-blindada/references/csp-en-pages.md -->
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self'; img-src 'self' data:; font-src 'self'; connect-src 'self'; media-src 'self'; form-action 'self'; base-uri 'none'; frame-src 'none'; object-src 'none'">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+
+<!-- Rescate de la clase .js (regla 2 de la casa). En archivo, sin defer:
+     inline lo bloquearía la CSP. -->
+<script src="js/rescate.js"></script>
+
+<!-- Fuentes propias: cero peticiones a terceros. El preload va SOLO
+     para la display, que es la del titular de la portada. -->
+<link rel="preload" href="assets/fuentes/chango-400-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="assets/fuentes.css">
+<link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+
+<div class="propuesta">
+  <p class="propuesta__que">Propuesta de sitio web — preparada para <b>Los Troncos</b> por CristalWeb</p>
+  <p class="propuesta__gancho">289 reseñas con 4,8 y su única dirección en internet es una cuenta de redes que Google apenas muestra.</p>
+</div>
+
+<header class="cab" id="cab">
+  <a class="cab__marca" href="#portada">
+    <span class="rejilla" aria-hidden="true"></span>
+    <span class="cab__nombre">Los Troncos</span>
+  </a>
+  <nav class="cab__nav" aria-label="Secciones">
+    <a href="#puntos">El punto de la carne</a>
+    <a href="#cuantos">Para cuántos</a>
+  </nav>
+  <a class="cab__wsp" href="#reservar">
+    <span class="cab__wsp-rot">Villarrica</span>
+    <span class="cab__wsp-num">Reservar</span>
+  </a>
+</header>
+
+<main>
+
+<!-- ═════════ PORTADA ═════════ -->
+<section class="portada portada--foto" id="portada" aria-labelledby="t-portada">
+  <!-- FONDO DE PORTADA: 2560 px, nitido. Se disuelve hacia el titular
+       con un gradiente lateral, no con desenfoque. -->
+  <div class="portada__foto" aria-hidden="true">
+    <img src="imagenes/port-01.jpg" width="2560" height="1707"
+         decoding="async" fetchpriority="high" alt="">
+  </div>
+
+  <div class="humo" aria-hidden="true"><span class="h1"></span><span class="h2"></span><span class="h3"></span></div>
+  <div class="portada__texto">
+    <p class="sitio">Parrilla · Villarrica</p>
+    <h1 id="t-portada">Pedí a punto<br>y llegó cocida</h1>
+    <p class="bajada">Pasa siempre, y casi nunca es culpa de la parrilla: es que cada
+      uno entiende «a punto» distinto. Acá están los cuatro puntos, escritos.</p>
+    <dl class="specs">
+      <div class="spec"><dt>nota en Google</dt><dd>4,8</dd></div>
+      <div class="spec"><dt>reseñas</dt><dd>289</dd></div>
+    </dl>
+  </div>
+</section>
+
+<!-- ═════════ LA PIEZA FIRMA — LA TABLA DE PUNTOS (C) ═════════ -->
+<section class="puntos con-telon" id="puntos" aria-labelledby="t-puntos">
+  <div class="telon" aria-hidden="true">
+    <img src="imagenes/telon-01.jpg" width="1200" height="978" decoding="async" alt="">
+  </div>
+
+  <!-- AURA DE COLOR: la foto de rubro reventada a desenfoque. No se lee
+       como imagen: aporta color y luz detras de una seccion que si no
+       seria fondo plano. Aca el desenfoque SI es el efecto, no un parche,
+       y por eso el archivo va chico: a 64 px de blur, mas resolucion no
+       cambia nada. Sin loading=lazy porque el elemento va en absoluto con
+       z-index negativo y el navegador nunca lo considera visible. -->
+  <div class="aura" aria-hidden="true">
+    <img src="imagenes/aura-01.jpg" width="900" height="733" decoding="async" alt="">
+  </div>
+
+  <div class="puntos__cabecera">
+    <p class="antetitulo">Para pedir sin adivinar</p>
+    <h2 id="t-puntos">El punto<br>de la carne</h2>
+    <p>La franja de color de cada fila es cómo se ve el corte por dentro al abrirlo.
+      Los minutos son sobre el mismo corte: cada punto que sube, más tiempo al fuego.</p>
+    <p class="marca-ejemplo" data-ejemplo="Referencia general del oficio — el punto exacto lo maneja la parrilla"></p>
+  </div>
+
+  <ol class="escala">
+    <li class="punto">
+      <p class="punto__n">Inglesa</p>
+      <div class="punto__muestra punto__muestra--1" aria-hidden="true"></div>
+      <div class="punto__txt">
+        <p>Rojo vivo en todo el centro, jugoso, apenas tibio por dentro. El corte
+          sella por fuera y adentro casi no cambia.</p>
+      </div>
+      <p class="punto__t">el más corto</p>
+    </li>
+    <li class="punto">
+      <p class="punto__n">A punto</p>
+      <div class="punto__muestra punto__muestra--2" aria-hidden="true"></div>
+      <div class="punto__txt">
+        <p>Rosado en el centro, con los bordes ya cocidos. Suelta jugo rosado al
+          cortar, no sangre. Es el que más se pide y el que más se malentiende.</p>
+      </div>
+      <p class="punto__t">+2 a 3 min</p>
+    </li>
+    <li class="punto">
+      <p class="punto__n">Tres cuartos</p>
+      <div class="punto__muestra punto__muestra--3" aria-hidden="true"></div>
+      <div class="punto__txt">
+        <p>Apenas una línea rosada al centro. Firme al tacto, todavía con jugo.
+          Para el que quiere carne cocida pero no seca.</p>
+      </div>
+      <p class="punto__t">+4 a 6 min</p>
+    </li>
+    <li class="punto">
+      <p class="punto__n">Cocida</p>
+      <div class="punto__muestra punto__muestra--4" aria-hidden="true"></div>
+      <div class="punto__txt">
+        <p>Sin rosado, parejo de lado a lado. Pierde jugo, así que conviene pedirla
+          en cortes con grasa: se sostienen mejor.</p>
+      </div>
+      <p class="punto__t">+7 min o más</p>
+    </li>
+  </ol>
+
+  <div class="ojo">
+    <p>Los minutos son referencia: dependen del grosor del corte y de cómo esté la
+      brasa. <b>Si no está seguro, pida a punto y avise que prefiere retirarla antes:
+      siempre se puede devolver al fuego, nunca al revés.</b></p>
+  </div>
+</section>
+
+<!-- ═════════ LA PARRILLA PARA CUÁNTOS ═════════ -->
+<!-- ========= MEDIA PANTALLA ========= -->
+<section class="mitades" aria-labelledby="t-mitades">
+  <div class="mitades__foto">
+    <img src="imagenes/media-01.jpg" width="1500" height="845"
+         loading="lazy" decoding="async" alt="">
+  </div>
+  <div class="mitades__texto">
+    <p class="mitades__ante">La única foto suya que se puede verificar</p>
+    <h2 id="t-mitades">El letrero tallado, que es como se ubica el local</h2>
+    <p>«Los Troncos» es un nombre que se repite en medio Chile y medio Argentina: el buscador devuelve una parrilla en Villa Pehuenia, un almacén, un local en un mall. Ésta es la de acá, con su letrero tallado en un tablón y los postes de madera. Cuatro fotos más —la parrilla trabajando, el salón, dos cortes— y la página deja de depender de imágenes prestadas para hablar de carne.</p>
+  </div>
+</section>
+
+
+
+<!-- ========= TAJO — FRANJA A SANGRE ========= -->
+<div class="tajo" aria-hidden="true">
+  <img src="imagenes/banda-01.jpg" width="1500" height="845"
+       loading="lazy" decoding="async" alt="">
+</div>
+<section class="cuantos" id="cuantos" aria-labelledby="t-cuantos">
+  <div class="cuantos__cuerpo">
+    <p class="antetitulo antetitulo--claro">La cuenta antes de entrar</p>
+    <h2 id="t-cuantos">La parrilla<br>para cuántos</h2>
+    <p class="entrada">La duda del grupo parado en la puerta: si pedimos una para
+      cuatro, ¿alcanza para cinco? Escrito, se decide antes de sentarse.</p>
+    <p class="marca-ejemplo marca-ejemplo--claro" data-ejemplo="Armado de ejemplo — lo confirma la parrilla"></p>
+
+    <div class="tablas">
+      <article class="tabla-item">
+        <p class="tabla-item__n">Para 2</p>
+        <ul>
+          <li>Dos cortes</li>
+          <li>Un embutido</li>
+          <li>Acompañamiento a elección</li>
+        </ul>
+        <p class="tabla-item__p"><span class="falta">falta: precio</span></p>
+      </article>
+      <article class="tabla-item">
+        <p class="tabla-item__n">Para 4</p>
+        <ul>
+          <li>Surtido de cortes</li>
+          <li>Embutidos</li>
+          <li>Dos acompañamientos</li>
+        </ul>
+        <p class="tabla-item__p"><span class="falta">falta: precio</span></p>
+      </article>
+      <article class="tabla-item">
+        <p class="tabla-item__n">Para la mesa larga</p>
+        <ul>
+          <li>Desde 6 personas</li>
+          <li><span class="falta">falta: confirmar si se arma a pedido</span></li>
+        </ul>
+        <p class="tabla-item__p"><span class="falta">falta: precio</span></p>
+      </article>
+    </div>
+
+    <p class="firma">Armados de ejemplo para mostrar la forma. Lo que trae cada uno y
+      cuánto vale lo pone la casa: un precio equivocado en internet molesta más que
+      no publicarlo.</p>
+
+    <div class="reservar" id="reservar">
+      <h3>Reservar mesa</h3>
+      <p>Diga cuántos son y cuándo: el mensaje se arma solo.</p>
+
+      <form class="form" id="form-mesa">
+        <div class="campo">
+          <label for="f-personas">Cuántos son</label>
+          <input id="f-personas" name="personas" type="text" inputmode="numeric" placeholder="6">
+        </div>
+        <div class="campo">
+          <label for="f-cuando">Qué día y a qué hora</label>
+          <input id="f-cuando" name="cuando" type="text" placeholder="Sábado a las 21:00">
+        </div>
+        <p class="resumen" id="resumen" aria-live="polite">El mensaje se arma acá abajo.</p>
+        <a class="fantasma" id="enviar" href="#reservar">Enviar por WhatsApp</a>
+        <p class="reservar__nota"><span class="falta">falta: el número</span> — su ficha
+          de Google no publica ninguno.</p>
+      </form>
+    </div>
+  </div>
+</section>
+
+</main>
+
+
+<!-- ========= LA CITA A SANGRE ========= -->
+<section class="cita" aria-labelledby="t-cita">
+  <div class="cita__foto" aria-hidden="true">
+    <img src="imagenes/cita-01.jpg" width="1700" height="2550"
+         loading="lazy" decoding="async" alt="">
+  </div>
+  <blockquote class="cita__texto">
+    <p id="t-cita">El punto se pide antes, no se reclama después<br>
+      <span class="cita__eco">Y para pedirlo hay que saber cómo se llama</span></p>
+  </blockquote>
+</section>
+
+<!-- ========= LA TIRA ========= -->
+<section class="tira" aria-label="Tres imágenes del oficio">
+  <figure class="tira__pieza">
+    <img src="imagenes/tira-01.jpg" width="1000" height="564" loading="lazy" decoding="async" alt="Leña ardiendo dentro de un horno de fierro.">
+  </figure>
+  <figure class="tira__pieza">
+    <img src="imagenes/tira-02.jpg" width="1000" height="616" loading="lazy" decoding="async" alt="Fogata encendida en un brasero de tres patas.">
+  </figure>
+  <figure class="tira__pieza">
+    <img src="imagenes/tirb-01.jpg" width="1000" height="564" loading="lazy" decoding="async" alt="Mesas de troncos con los platos servidos.">
+  </figure>
+</section>
+
+
+<!-- ========= LAS FOTOS ========= -->
+<section class="galeria" aria-labelledby="t-galeria">
+  <h2 id="t-galeria" class="galeria__titulo">La carta, que ya está escrita</h2>
+  <p class="galeria__nota">Dos fotos de esta página son suyas: el letrero y esta carta. Los fondos de brasas y el corte son de banco libre y están declarados en imagenes/FUENTES.txt.</p>
+  <div class="galeria__grilla">
+    <figure class="gal gal--abajo">
+      <img src="imagenes/gal-01.jpg" width="1200" height="1600" loading="lazy" decoding="async"
+           alt="Carta del restaurante escrita sobre una tabla de madera, con los cortes y sus precios.">
+      <figcaption>La carta está tallada en una tabla y colgada en la puerta. Eso que ya existe en madera es lo que hay que pasar a la página: es el dato que más se busca y el que nadie publica.</figcaption>
+    </figure>
+  </div>
+  <p class="galeria__falta">falta: la parrilla trabajando, el salón, y dos cortes fotografiados de verdad</p>
+</section>
+
+
+
+<!-- ========= MOSAICO ========= -->
+<section class="mos" aria-labelledby="t-mos">
+  <h2 id="t-mos" class="mos__titulo">La misma serie, más de cerca</h2>
+  <p class="mos__nota">Estas seis ya aparecen más arriba en la página. Vuelven acá en otro tamaño porque una sola pasada de imágenes deja el scroll vacío, y porque de cerca se ven cosas que en grande se pierden. La procedencia de cada una está en imagenes/FUENTES.txt.</p>
+  <div class="mos__grilla">
+    <figure class="mos__p">
+      <img src="imagenes/mos-01.jpg" width="780" height="439"
+           loading="lazy" decoding="async" alt="">
+    </figure>
+    <figure class="mos__p">
+      <img src="imagenes/mos-02.jpg" width="780" height="1040"
+           loading="lazy" decoding="async" alt="">
+    </figure>
+    <figure class="mos__p">
+      <img src="imagenes/mos-03.jpg" width="780" height="440"
+           loading="lazy" decoding="async" alt="">
+    </figure>
+    <figure class="mos__p">
+      <img src="imagenes/mos-04.jpg" width="780" height="480"
+           loading="lazy" decoding="async" alt="">
+    </figure>
+    <figure class="mos__p">
+      <img src="imagenes/mos-05.jpg" width="780" height="440"
+           loading="lazy" decoding="async" alt="">
+    </figure>
+    <figure class="mos__p">
+      <img src="imagenes/mos-06.jpg" width="780" height="636"
+           loading="lazy" decoding="async" alt="">
+    </figure>
+  </div>
+</section>
+<section class="dueno" aria-labelledby="t-dueno">
+  <h2 id="t-dueno">Para el dueño</h2>
+  <div class="dueno__cols">
+    <div>
+      <h3>Lo que está verificado</h3>
+      <p>El 4,8 con 289 reseñas de su ficha de Google y que no tiene página ni
+        teléfono publicado.</p>
+    </div>
+    <div>
+      <h3>Lo que es de ejemplo</h3>
+      <p>Los cuatro puntos son referencia general del oficio —la misma que ustedes
+        manejan— y los armados de parrillada están puestos para mostrar la forma.</p>
+    </div>
+    <div>
+      <h3>Lo que falta</h3>
+      <p>El número, la dirección, el horario y los precios. Y una foto de un corte
+        abierto: es lo único que explica el punto mejor que las palabras.</p>
+    </div>
+  </div>
+  <p class="dueno__cierre">
+    <a class="flecha" href="https://wa.me/56968650001" rel="noopener">Escribirme por WhatsApp <span aria-hidden="true">→</span></a>
+    <a class="flecha" href="../../" rel="noopener">Ver otros trabajos <span aria-hidden="true">→</span></a>
+  </p>
+</section>
+
+<footer class="pie">
+  <p>Sitio de demostración preparado por CristalWeb. El negocio no lo ha encargado
+    ni ha revisado su contenido. Los tiempos de cocción son referencia general.</p>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>

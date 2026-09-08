@@ -1,0 +1,43 @@
+FOTOGRAFÍAS — 187 · FertyVet (Villarrica)
+Bajadas con FotoRadar el 02-09-2026. Todas de bancos de uso libre.
+NINGUNA es del recinto real de FertyVet: son del rubro, y así se dice
+en el pie de la página.
+
+fondo-01.jpg   2560x1697  get.pxhere.com   Pasillo central de caballeriza
+                                            con luz cenital. PORTADA.
+                                            Elegida porque la luz que entra
+                                            por el techo justifica el
+                                            ambiente de polvo, y porque el
+                                            caballo asomado por el box cae
+                                            justo en la zona nítida que deja
+                                            la máscara lateral.
+banda-01.jpg   2200x1238  get.pxhere.com   Caballo sobre fondo negro con la
+                                            crin a contraluz. CITA. Su masa
+                                            oscura es lo que permite el velo
+                                            al 76% sin perder la foto.
+tajo-01.jpg    2200x1467  images.pexels.com Yegua con su potrillo. TAJO. Es
+                                            literal el resultado del trabajo
+                                            que describe la página.
+telon-01.jpg   1200x800   get.pxhere.com   Fardo al atardecer. TELÓN al 15%
+                                            detrás del contacto.
+media-01.jpg   1800x1200  get.pxhere.com   Microscopio. MITADES, sección
+                                            clínica.
+mos-01.jpg     1200x674   get.pxhere.com   Hocico en primer plano.
+mos-02.jpg     1200x801   images.pexels.com Potrillo corriendo.
+mos-03.jpg     1200x800   get.pxhere.com   Microscopio, otro encuadre.
+mos-04.jpg     1200x800   images.pexels.com Dos caballos pastando.
+mos-05.jpg     1200x799   get.pxhere.com   Campo con fardos.
+mos-06.jpg     1200x736   get.pxhere.com   Caballos de tiro.
+
+DESCARTADAS Y POR QUÉ
+· Una foto de veterinaria con caballo venía de plus.unsplash.com, que es
+  Unsplash+ DE PAGO. El filtro del script la dejaba pasar porque busca
+  «unsplash» como subcadena. Se descartó y se arregló el script
+  (fondos-4k.ps1 ahora tiene lista de $vetados). 02-09-2026.
+· La búsqueda «veterinarian with horse stable» no devolvió ninguna libre
+  sobre 1800 px: la sección clínica se resolvió con el microscopio, que
+  además es más honesto (no muestra un veterinario que no es de ellos).
+
+FILTROS APLICADOS: sin marcas legibles, sin menores, sin precios en la
+foto, sin plus.unsplash, y ningún paisaje que prometa un lugar que no es
+la Araucanía (los fardos y praderas son genéricos de campo templado).

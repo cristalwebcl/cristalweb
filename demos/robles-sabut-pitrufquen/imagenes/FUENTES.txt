@@ -1,0 +1,50 @@
+FUENTES DE LAS IMÁGENES — 203 · Obras Sanitarias Robles Sabut (Pitrufquén)
+==========================================================================
+NINGUNA de estas fotos es de obras de la empresa. Son de bancos de uso
+libre (pxhere), bajadas con FotoRadar y reescaladas con
+preparar-lote.ps1. El pie de la página lo dice, y también la sección
+«para el dueño».
+
+fondo-01.jpg  · 2200px · portada — casa con jardín y acceso
+  Es lo que NO se rompe. En una página cuyo argumento entero es «arriba
+  queda todo como estaba», la portada tiene que mostrar el arriba.
+banda-01.jpg  · 1700px · cita — excavadora moviendo tierra
+  La alternativa: la zanja. Va bajo velo oscuro, porque es el problema
+  y no la solución.
+tajo-01.jpg   · 1800px · tajo — vereda en perspectiva, intacta
+telon-01.jpg  · 1100px · telón del contacto — textura de hormigón
+media-01.jpg  · 1600px · mitades — tubos de hormigón alineados
+mos-01.jpg    · 1100px · rejilla de sumidero
+mos-02.jpg    · 1100px · tapa de cámara en el adoquinado
+mos-03.jpg    · 1200px · cañerías vistas desde abajo
+mos-04.jpg    · 1100px · adoquinado
+mos-05.jpg    · 1200px · llave de paso goteando
+mos-06.jpg    · 1200px · casa con jardín
+
+Consultas usadas: «sewer pipe concrete drainage pxhere», «asphalt road
+city street repair pxhere», «manhole cover street pxhere», «water pipes
+plumbing industrial pxhere», «construction machinery digging ground
+pxhere», «garden lawn suburban house yard pxhere», «concrete sidewalk
+pavement texture pxhere». Las URL completas quedaron en
+`devs\material\busquedas\203-robles\<carpeta>\FUENTES.txt`.
+
+
+CRITERIO: LA MITAD DE LAS FOTOS SON DE LO QUE **NO** SE TOCA
+-------------------------------------------------------------
+Es un rubro raro de fotografiar porque **el trabajo bien hecho es el
+que no se ve**. Al día siguiente la calle está igual y no hay nada que
+mostrar. Así que la selección hace lo contrario de lo habitual: en vez
+de fotografiar el servicio, fotografía **la superficie intacta** —
+veredas, adoquinados, jardines, tapas de cámara— y deja la excavación
+para la única foto que ilustra el problema, bajo velo oscuro.
+
+DESCARTADAS
+-----------
+· Dos tapas de cámara con el nombre de la fundición legible en el
+  fierro («VALDORIGO», «SANDOVAL»). Son marcas de tercero fundidas en
+  el metal, y aunque no sean competencia, un nombre ajeno legible en
+  una página comercial no va.
+· Una cuadrilla pavimentando con las caras visibles: son personas
+  identificables que no dieron permiso.
+· Fotos de zanjas abiertas con maquinaria en primer plano. En una
+  página que vende NO ABRIR ZANJA, esa imagen contradice el titular.
