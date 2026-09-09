@@ -1,0 +1,106 @@
+FUENTES DE LAS IMAGENES Y LOS VIDEOS — 210-marbesan-panguipulli
+Demo de CristalWeb, armada el 09-09-2026.
+
+NINGUNA de estas imagenes es del local de Marbesan. Todas son de bancos
+libres y estan puestas para mostrar el FORMATO de la pagina. Se buscaron
+primero las fotos del negocio con anclas.ps1 (consulta corta "restaurante
+marbesan panguipulli"): de 136 resultados, 36 venian de origenes anclados
+a una ubicacion — y NINGUNO era de Marbesan. Aparecieron fichas de otros
+restaurantes de Panguipulli (Puerto Fuy, Ruta 243, Brazas Barlovento, La
+Terraza, El Fogon, Los Compadres) y dos homonimos de Marbella, Espana.
+El negocio no tiene fachada en Street View indexada ni fotos suyas en el
+indice de imagenes. Una segunda consulta ("marbesan panguipulli") devolvio
+cero, asi que no se insistio: DDG se bloquea 20 minutos cuando eso pasa.
+=> Todas las fotos de esta demo son GENERICAS DE RUBRO y asi esta dicho
+   tambien en la propia pagina (seccion del mosaico y pie).
+
+Procesadas con preparar-lote.ps1: JPEG, ancho y calidad por tratamiento.
+
+--- PORTADA Y CITA: fotogramas de los propios clips ------------------
+port-01.jpg   1280x720   <=  FOTOGRAMA del clip video/port.mp4 (segundo 0,4)
+              pexels | Pexels License | Kampus Production
+              https://www.pexels.com/video/video-of-food-on-the-table-6305033/
+              https://videos.pexels.com/video-files/6305033/6305033-uhd_3840_2160_25fps.mp4
+              La licencia del clip cubre el fotograma. Va a 1280 px, no a
+              2560, a proposito: siendo el mismo fotograma con el que
+              arranca el video, el cambio de poster a clip no salta un pixel.
+
+cita-01.jpg   1280x720   <=  FOTOGRAMA del clip video/cita.mp4 (segundo 0,4)
+              mixkit | Mixkit Stock Video Free License | Mixkit
+              https://mixkit.co/free-stock-video/melting-cheese-on-a-burger-12016/
+              https://assets.mixkit.co/videos/12016/12016-720.mp4
+
+--- VIDEOS DE FONDO --------------------------------------------------
+video/port.mp4   1280x720, 6,23 s desde el segundo 1, sin audio, 1006 KB
+              pexels | Pexels License (no exige credito) | Kampus Production
+              "Video of food on the table"
+              https://www.pexels.com/video/video-of-food-on-the-table-6305033/
+              https://videos.pexels.com/video-files/6305033/6305033-uhd_3840_2160_25fps.mp4
+              Plano CENITAL de una mesa sirviendose: manos que entran,
+              platos que bajan. Es el angulo de toda la pagina. Sin caras
+              identificables, sin marcas legibles, sin texto.
+
+video/cita.mp4   1280x720, 8 s desde el segundo 0, sin audio, 1105 KB
+              mixkit | Mixkit Stock Video Free License (no exige credito) | Mixkit
+              "Melting cheese on a burger"
+              https://mixkit.co/free-stock-video/melting-cheese-on-a-burger-12016/
+              https://assets.mixkit.co/videos/12016/12016-720.mp4
+              El queso cayendo sobre la hamburguesa: es el plato que los
+              clientes nombran ("hamburguesa con volcan de queso") y el
+              momento de maxima saturacion de la pagina.
+
+--- TRATAMIENTOS DE FOTO ---------------------------------------------
+tajo-01.jpg   2200x1467  <=  pexels | Pexels License | German Suarez
+              https://www.pexels.com/es-es/foto/autentico-asado-uruguayo-a-la-parrilla-con-carnes-37177530/
+              https://images.pexels.com/photos/37177530/pexels-photo-37177530.jpeg
+
+telon-01.jpg  1200x800   <=  pexels | Pexels License | Anna Tarazevich | recorte 3:2
+              https://www.pexels.com/es-es/foto/asar-un-plato-directamente-al-fuego-de-la-estufa-6937461/
+              https://images.pexels.com/photos/6937461/pexels-photo-6937461.jpeg
+              Va detras de la banda de cifras, nitida y al 16 % de opacidad.
+
+telon-02.jpg  1200x800   <=  pexels | Pexels License | Cesar O'neill
+              https://www.pexels.com/es-es/foto/platos-gourmet-de-mariscos-en-una-mesa-de-madera-39035468/
+              https://images.pexels.com/photos/39035468/pexels-photo-39035468.jpeg
+              Va detras de la seccion oscura de "para llevar y vegetariano".
+
+mit-01.jpg    2200x1240  <=  pexels | Pexels License | Pixabay
+              https://www.pexels.com/es-es/foto/fotografia-plana-de-breakfast-foo-262918/
+              https://images.pexels.com/photos/262918/pexels-photo-262918.jpeg
+
+mos1-01.jpg   1200x800   <=  pexels | Pexels License | Cesar O'neill | recorte 3:2
+              https://www.pexels.com/es-es/foto/ceviche-de-camarones-frescos-con-aguacate-y-verduras-39320140/
+              https://images.pexels.com/photos/39320140/pexels-photo-39320140.jpeg
+
+mos2-01.jpg   1200x800   <=  pexels | Pexels License | Engin Akyurt
+              https://www.pexels.com/es-es/foto/bandeja-de-alimentos-cocidos-2282528/
+              https://images.pexels.com/photos/2282528/pexels-photo-2282528.jpeg
+
+mos3-01.jpg   1200x800   <=  pexels | Pexels License | Vladimir Gladkov | recorte 3:2
+              https://www.pexels.com/es-es/foto/comida-filete-bistec-carne-6213710/
+              https://images.pexels.com/photos/6213710/pexels-photo-6213710.jpeg
+
+mos4-01.jpg   1200x800   <=  pexels | Pexels License | kaboompics.com | recorte 3:2
+              https://www.pexels.com/es-es/foto/comida-tenedor-bifurcacion-queso-6659613/
+              https://images.pexels.com/photos/6659613/pexels-photo-6659613.jpeg
+
+mos5-01.jpg   1200x800   <=  pexels | Pexels License | Yuen Tou Zan
+              https://www.pexels.com/es-es/foto/comida-plato-sandwiches-enfoque-selectivo-15362507/
+              https://images.pexels.com/photos/15362507/pexels-photo-15362507.jpeg
+
+mos6-01.jpg   1200x800   <=  pexels | Pexels License | alleksana | recorte 3:2
+              https://www.pexels.com/es-es/foto/bebidas-beber-bebida-vaso-4051215/
+              https://images.pexels.com/photos/4051215/pexels-photo-4051215.jpeg
+
+--- FILTROS APLICADOS ANTES DE ELEGIR --------------------------------
+- Sin plus.unsplash.com (es Unsplash de pago y el filtro lo cuela).
+- Sin marcas de terceros legibles. Se descarto una toma de cocina que
+  tenia un letrero de bar legible en la pared.
+- Sin precios dentro de la foto.
+- Sin menores y sin rostros identificables. Se descarto el segundo
+  fotograma candidato de portada (pexels 6305113) porque tenia una
+  cabeza en primer plano, y el clip elegido solo muestra manos.
+- Sin fondos que prometan otro lugar: nada de terrazas con palmeras ni
+  interiores que no puedan ser Panguipulli. La comida es neutra.
+- Luminancia opuesta: telones y citas con masa oscura o luz propia
+  segun el fondo de su seccion.

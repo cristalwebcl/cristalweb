@@ -1,0 +1,836 @@
+/* ══════════════════════════════════════════════════════════════════
+   MARBESÁN · PANGUIPULLI — CristalWeb
+   Demo sin encargo. Construida el 09-09-2026.
+
+   DIRECCIÓN — «BARRIDO Y PLATO»
+   La página es el papel continuo gris sobre el que un fotógrafo de
+   comida apoya un plato: se aclara arriba, se asienta abajo, y todo
+   se mira CENITAL, como lo ve el cliente desde su silla. El gris está
+   por una razón funcional, no estética: es el único fondo que no le
+   tiñe el color a una foto de hamburguesa, ceviche o lomo — un crema
+   le mete amarillo y un oscuro cálido le mete naranjo. Decisión de
+   diseño y decisión técnica son la misma, y eso se explica en voz
+   alta en treinta segundos.
+   Se descarta a propósito: madera, pizarra, mantel y cualquier textura
+   de local. La comida es el único color de la pantalla.
+
+   DESLINDE DE PALETA — el ACENTO es CEBOLLA MORADA, no violeta de
+   interfaz. Los cuatro violetas del registro: altamira (59) #5B3A7E
+   clínico sobre papel, jcb (71) #54297E de timbre, cuba-salud (52)
+   lavanda médica, alcántara (48) orquídea #93326E magenta. En los
+   cuatro el violeta es el acento de la INTERFAZ; acá la interfaz es
+   tinta maciza y el morado tiene un solo trabajo: marcar lo que
+   todavía no es verdad (medidas por confirmar, teléfono y número de
+   calle en conflicto). Quinta mecánica de acento del registro, y se
+   deslinda de la 165 —allá el ámbar marca lo que el tablero avisa,
+   información REAL y en vivo; acá marca lo que falta. Son opuestos.
+   Sale de un ingrediente de esta carta: la cebolla morada del ceviche.
+   Vecinos de comuna esquivados: 77-chapulín (madera + ciruela
+   #6B2247, mantel a cuadros), 88-arrayán (crema + canela), 89-480
+   (grafito + esmalte verdoso), 90-gardylafquén (crema + rosa de rosal
+   #94445A — el riesgo más cercano: un rosa desaturado sobre crema es
+   primo de un morado; el mío es saturado, azulado y vive sobre gris),
+   63-las-lengas de Neltume (crema + turquesa), 93-pellaifa (crudo +
+   agua verdosa). El gris medio es la casilla menos usada del registro:
+   sólo makma (47) #D4D8D6 y jcp (72) #D3D2CB, los dos grises PLANOS de
+   material industrial. Éste es un BARRIDO con degradado, es luz sobre
+   papel, y es el primero de gastronomía.
+
+   TRÍO
+   · Display: Shrikhand 400 — 0 usos en 248 filas. Fat face de trazo
+     grueso y remates macizos: el apetito de una portada de revista de
+     comida sin los hairlines de una didone. Peso suelto (nunca rango):
+     16 KB. Deslinde delicado con 63-las-lengas (MISMA COMUNA), que usa
+     Abril Fatface: las dos son fat face, pero Abril es didone de
+     contraste extremo y Shrikhand es de contraste bajo.
+   · Cuerpo: Sofia Sans variable 400..700, 40 KB — 1 uso lejano
+     (70-productos-quimey, Villarrica, otro rubro y página invertida).
+     Grotesca compacta: una carta ancha con descripción en un celular
+     gana líneas reales con ella. Ojo: Sofia Sans Extra Condensed es
+     otra familia y no cuenta como uso.
+   · Dato: Atkinson Hyperlegible Mono variable 400..700, 17 KB — 1 uso
+     (167-veterinaria-pitrufquén) y es la mono MENOS usada del
+     registro. Se elige por función: esta página muestra dos teléfonos
+     casi iguales y dos números de calle que se diferencian en un
+     dígito, y la mono del Braille Institute está dibujada justamente
+     para que caracteres parecidos no se confundan. Monos prohibidas
+     por vecindad: Ubuntu (77), Syne (88), Oxygen (89), Fragment (90),
+     Xanh (63), Space (93). Se corrige el dato de la propuesta: B612
+     Mono no tiene tres usos, tiene seis.
+     Trío completo: 73 KB de los 150 del techo.
+
+   ESCENA: LA LUZ DEL SET. Un solo bucle infinito en toda la página,
+   de 18 s, hecho de DOS capas encadenadas por fase: una luz elíptica
+   que cruza la portada de izquierda a derecha, y la sombra del pie
+   que se alarga en CONTRAFASE con ella (misma @keyframes,
+   animation-delay negativo). En el registro ya hay sombras animadas
+   —la 100 barre una franja, la 66 el arco del quitasol, la 148 alarga
+   la del toldo— y en las tres la sombra es el objeto y se mueve sola;
+   acá la sombra no es el objeto, es la CONSECUENCIA de una luz que se
+   desplaza. Sin partículas: con clip de fondo el video es el ambiente.
+   ══════════════════════════════════════════════════════════════════ */
+
+:root {
+  /* ── Cinco superficies y un solo color. El contraste va MEDIDO al
+        lado y con la superficie contra la que se midió. ── */
+  --barrido-a: #D9D7D3;   /* cabeza del barrido: papel iluminado */
+  --barrido-b: #BFBCB6;   /* pie del barrido: el papel se asienta */
+  --claro:     #D2D0CB;   /* fondo plano de página */
+  --claro-2:   #C7C5C0;   /* bandas alternas */
+  --loza:      #FBFBFA;   /* fichas, carta y todo texto largo */
+  --linea:     #B4B1AB;   /* filetes sobre claro */
+
+  --tinta:  #17161A;   /* texto y color interactivo.
+                          11,99:1 sobre --claro · 10,71 sobre --claro-2
+                          17,65 sobre --loza · 9,75 sobre el pie del barrido */
+  --medio:  #514F56;   /* secundario. 4,68:1 medido contra --claro-2,
+                          que es la superficie clara MÁS OSCURA donde se
+                          usa. PROHIBIDO sobre el pie del barrido: ahí da
+                          4,26 y ahí va tinta. */
+  --hondo:  #1B1A1E;   /* bandas oscuras */
+  --crudo:  #EFEDE9;   /* texto sobre --hondo: 15,47:1 */
+  --gris-l: #B0AEA9;   /* secundario sobre --hondo: 8,16:1 */
+
+  --cebolla:   #6B2E7A;  /* 8,78:1 sobre loza · 5,96 sobre claro · 5,33 sobre claro-2 */
+  --cebolla-t: #D6A8E4;  /* su versión sobre oscuro: 9,12:1 sobre --hondo */
+  /* El sistema .ej de la receta pide estos dos nombres. NO son el color
+     de la interfaz: los botones, los enlaces y los focos van en tinta. */
+  --acento:   var(--cebolla);
+  --acento-t: var(--cebolla-t);
+
+  --display: "Shrikhand", Georgia, "Times New Roman", serif;
+  --cuerpo:  "Sofia Sans", "Segoe UI", system-ui, sans-serif;
+  --mono:    "Atkinson Hyperlegible Mono", Consolas, monospace;
+
+  --p--1: clamp(.78rem, .74rem + .2vw, .86rem);
+  --p-0:  clamp(1rem, .96rem + .2vw, 1.08rem);
+  --p-1:  clamp(1.16rem, 1.06rem + .5vw, 1.36rem);
+  --p-2:  clamp(1.44rem, 1.24rem + 1vw, 2rem);
+  --p-3:  clamp(1.9rem, 1.5rem + 1.9vw, 2.9rem);
+  --p-4:  clamp(2.4rem, 1.75rem + 3.2vw, 4.2rem);
+
+  --ancho: min(1180px, 92vw);
+  --aire:  clamp(3rem, 2rem + 5vw, 6rem);
+
+  --muelle: linear(0, .32 14%, .68 26%, .92 38%, 1.04 50%, 1.01 64%, .99 78%, 1);
+  --sale:   cubic-bezier(.22, .61, .36, 1);
+}
+
+/* ══ BASE ═════════════════════════════════════════════════════════ */
+*, *::before, *::after { box-sizing: border-box; }
+[hidden] { display: none !important; }
+
+body {
+  margin: 0; background: var(--claro); color: var(--tinta);
+  font-family: var(--cuerpo); font-size: var(--p-0); line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+img, svg, video { max-width: 100%; }
+p { text-wrap: pretty; }
+
+h1, h2, h3 { font-family: var(--display); line-height: 1.06; margin: 0 0 .6rem; letter-spacing: -.002em; font-weight: 400; }
+h1 { font-size: var(--p-4); }
+h2 { font-size: var(--p-3); }
+h3 { font-size: var(--p-1); }
+/* Shrikhand es una fat face: con interlínea de titular las mayúsculas
+   con tilde se tocan. 1.06 es el mínimo que las deja respirar. */
+
+.ancho { width: var(--ancho); margin-inline: auto; }
+.mono { font-family: var(--mono); font-variant-numeric: tabular-nums; }
+
+a { color: var(--tinta); text-decoration-thickness: 1px; text-underline-offset: 3px; }
+a:focus-visible, button:focus-visible {
+  outline: 3px solid var(--tinta); outline-offset: 3px; border-radius: 4px;
+}
+
+.rotulo {
+  font-family: var(--mono); font-size: var(--p--1); letter-spacing: .14em;
+  text-transform: uppercase; color: var(--medio); margin: 0 0 .8rem;
+}
+.entradilla { font-size: var(--p-1); max-width: 62ch; color: var(--tinta); }
+
+.boton {
+  display: inline-flex; align-items: center; justify-content: center;
+  min-height: 48px; padding: 0 1.4rem; border-radius: 999px;
+  background: var(--tinta); color: var(--loza); text-decoration: none;
+  font-weight: 600; letter-spacing: .01em;
+  box-shadow: 0 10px 30px -14px rgba(23, 22, 26, .9);
+  transition: transform .2s var(--sale), box-shadow .2s ease, background-color .2s ease;
+}
+.boton:hover { transform: translateY(-2px); box-shadow: 0 14px 32px -14px rgba(23, 22, 26, .95); }
+.boton--linea {
+  background: transparent; color: var(--tinta);
+  border: 1.5px solid var(--tinta); box-shadow: none;
+}
+.boton--linea:hover { background: rgba(23, 22, 26, .07); }
+
+.flecha {
+  display: inline-flex; align-items: center; gap: .45rem; min-height: 44px;
+  text-decoration: none; border-bottom: 1px solid currentColor;
+}
+.flecha span { transition: transform .2s var(--sale); }
+.flecha:hover span { transform: translateX(4px); }
+.flecha--fuerte { font-weight: 700; }
+
+/* La viñeta es EL PLATO VISTO DE CANTO: una línea corta y gruesa, no
+   el bullet por defecto. */
+.lista { list-style: none; margin: 0 0 1rem; padding: 0; }
+.lista li { position: relative; padding-left: 1.4rem; margin-bottom: .5rem; }
+.lista li::before {
+  content: ""; position: absolute; left: 0; top: .68em;
+  width: 10px; height: 3px; border-radius: 2px; background: var(--tinta);
+}
+.lista--marca li::before { background: var(--cebolla); }
+.lista--num { counter-reset: n; }
+.lista--num li { padding-left: 2rem; counter-increment: n; }
+.lista--num li::before {
+  content: counter(n, decimal-leading-zero);
+  font-family: var(--mono); font-size: .72rem; letter-spacing: .06em;
+  width: auto; height: auto; background: none; color: var(--cebolla);
+  top: .25em; font-weight: 700;
+}
+
+/* ── Dato de ejemplo ───────────────────────────────────────────────
+   El único color de la página marca lo que TODAVÍA NO ES VERDAD. El
+   texto de la etiqueta viaja en el HTML (data-ejemplo), así dice qué
+   falta y de quién depende. El background tapa la línea punteada donde
+   se cruza, como una etiqueta de plano técnico: por eso cada sección
+   con otro fondo tiene que reescribirlo, y por eso el barrido en
+   degradado NO es el fondo de la página entera —sobre un degradado
+   continuo esa etiqueta se vería como un parche recortado—. ── */
+.ej { position: relative; border: 1px dashed rgba(107, 46, 122, .5); border-radius: 4px; }
+.ej::after {
+  content: attr(data-ejemplo); position: absolute; top: -.62rem; right: .6rem;
+  font-family: var(--mono); font-size: .62rem; letter-spacing: .07em; text-transform: uppercase;
+  color: var(--cebolla); background: var(--claro); padding: 0 .35rem;
+  white-space: nowrap; max-width: 92%; overflow: hidden; text-overflow: ellipsis;
+}
+p.ej, dd.ej { padding: .6rem .8rem .5rem; margin-top: .9rem; }
+/* La variante en línea: subrayado punteado y la etiqueta ARRIBA, nunca
+   dentro del flujo — metida en el flujo empujaba la línea siguiente y
+   dejaba el dato pisado. Se vio en la captura, no en el código. */
+span.ej { border: 0; border-bottom: 2px dotted var(--cebolla); border-radius: 0; padding-bottom: 1px; display: inline-block; margin-top: 1rem; }
+/* max-width: none es OBLIGATORIO acá. El 92 % general se mide contra el
+   ancho del PROPIO elemento, y estos spans son cortos («qué lleva», 70 px):
+   la etiqueta salía recortada como «LO CONFI…» en los tres tragos. Fuera
+   del flujo no empuja nada, y el texto más largo que se le pone mide 145 px
+   contra los 320 de la ficha más angosta (una columna, 375 px). */
+span.ej::after { top: -1rem; right: auto; left: 0; max-width: none; }
+/* Cada fondo distinto reescribe el color plano de la etiqueta. Si te
+   saltas uno, sale con el fondo del color equivocado. */
+.carta .ej::after, .contacto .ej::after { background: var(--claro-2); }
+.plato .ej::after, .ficha .ej::after, .mesa .ej::after { background: var(--loza); }
+.firma > .ancho > .nota-honestidad.ej::after { background: var(--loza); }
+/* El pie de la carta es la MISMA pieza que la nota-honestidad de la firma:
+   una caja de loza sobre una sección que no es loza. Se le escapaba al
+   .carta .ej::after de arriba y salía con la etiqueta gris pegada encima
+   del blanco, como un parche. Va con la superficie sobre la que se apoya. */
+.carta > .ancho > .carta__pie.ej::after { background: var(--loza); }
+.mos .ej::after { background: var(--claro); }
+.llevar .ej::after, .dueno .ej::after { color: var(--cebolla-t); background: var(--hondo); }
+.llevar .ej, .dueno .ej { border-color: rgba(214, 168, 228, .5); }
+
+/* ══ BANDA DE PROPUESTA ═══════════════════════════════════════════ */
+.propuesta { background: var(--hondo); color: var(--crudo); padding: 1rem 0; }
+.propuesta__in { display: grid; gap: .3rem; }
+.propuesta__q { margin: 0; font-family: var(--mono); font-size: var(--p--1); letter-spacing: .06em; color: var(--gris-l); text-transform: uppercase; }
+.propuesta__d { margin: 0; font-size: var(--p-0); max-width: 88ch; color: var(--crudo); }
+.propuesta .dato { color: var(--cebolla-t); font-family: var(--mono); font-weight: 700; }
+
+/* ══ CABECERA ═════════════════════════════════════════════════════ */
+.cab {
+  position: sticky; top: 0; z-index: 20;
+  display: flex; align-items: center;
+  width: 100%; padding: .55rem max(4vw, calc((100vw - var(--ancho)) / 2));
+  background: rgba(217, 215, 211, .9);
+  backdrop-filter: blur(8px); -webkit-backdrop-filter: blur(8px);
+  border-bottom: 1px solid transparent;
+  transition: border-color .3s ease, box-shadow .3s ease;
+}
+.cab__in { display: flex; align-items: center; gap: 1.2rem; width: 100%; }
+.cab--flota { border-bottom-color: var(--linea); box-shadow: 0 6px 24px rgba(23, 22, 26, .07); }
+.cab__marca { display: flex; align-items: center; gap: .6rem; min-height: 44px; text-decoration: none; margin-right: auto; color: var(--tinta); }
+.cab__txt { display: flex; flex-direction: column; font-family: var(--display); font-size: 1.16rem; line-height: 1.1; }
+.cab__sub { font-family: var(--mono); font-size: .58rem; letter-spacing: .12em; text-transform: uppercase; color: var(--medio); margin-top: .2rem; }
+.sello { width: 30px; height: 30px; flex: none; }
+.sello__o, .sello__i { fill: none; stroke: var(--tinta); stroke-width: 1.6; }
+.sello__i { stroke-width: 1.2; }
+.sello__s { fill: rgba(23, 22, 26, .16); }
+.cab__nav { display: flex; gap: 1.1rem; }
+.cab__nav a { min-height: 44px; display: inline-flex; align-items: center; font-size: var(--p--1); text-decoration: none; color: var(--medio); }
+.cab__nav a:hover { color: var(--tinta); }
+.cab__cta {
+  min-height: 44px; display: inline-flex; align-items: center; gap: .4rem;
+  padding: 0 1rem; border-radius: 999px; background: var(--tinta); color: var(--loza);
+  text-decoration: none; font-size: var(--p--1); font-weight: 600;
+}
+
+/* ══ 2 · PORTADA ══════════════════════════════════════════════════ */
+.portada {
+  position: relative; isolation: isolate; overflow: hidden;
+  min-height: min(88vh, 780px);
+  display: flex; flex-direction: column; justify-content: center;
+  padding: var(--aire) 0 3.4rem;
+  /* El barrido: papel iluminado arriba, asentado abajo. Vive SÓLO acá
+     y en la banda de la pieza firma. */
+  background: linear-gradient(178deg, var(--barrido-a) 0%, #D2D0CB 46%, var(--barrido-b) 100%);
+}
+.portada__foto { position: absolute; inset: 0; z-index: -2; }
+/* Regla nº 1 del patrón: el video comparte el selector de la foto —
+   misma máscara, mismo object-fit, mismo object-position, escrito una
+   sola vez. Si se separan, el clip y la foto se descuadran. */
+.portada__foto img, .portada__video {
+  display: block; width: 100%; height: 100%;
+  object-fit: cover; object-position: 68% 46%;
+  -webkit-mask-image: linear-gradient(90deg, transparent 0%, transparent 12%, rgba(0,0,0,.28) 36%, rgba(0,0,0,.82) 58%, #000 76%, #000 100%);
+          mask-image: linear-gradient(90deg, transparent 0%, transparent 12%, rgba(0,0,0,.28) 36%, rgba(0,0,0,.82) 58%, #000 76%, #000 100%);
+}
+/* Velo del color DEL BARRIDO, en rgba literal (nunca var() adentro:
+   sin alfa el degradado tapa la foto de punta a punta) y terminando en
+   alfa 0, para que el borde derecho quede a foco completo. Peor caso
+   calculado con foto BLANCA debajo: en el 0-30 % el velo va a 1, así
+   que el titular queda sobre #D5D3CF puro → 11,6:1 con --tinta PASE LO
+   QUE PASE con la foto que se ponga después. */
+.portada__foto::after {
+  content: ""; position: absolute; inset: 0;
+  background: linear-gradient(90deg,
+      rgba(213,211,207,1)   0%,  rgba(213,211,207,1)   30%,
+      rgba(213,211,207,.86) 47%, rgba(213,211,207,.5)  66%,
+      rgba(213,211,207,.18) 85%, rgba(213,211,207,0)   97%);
+}
+
+/* ── AMBIENTE: la luz del set y su sombra en contrafase ──────────── */
+.luz {
+  position: absolute; inset: -20% -30% auto -30%; height: 90%; z-index: -1;
+  pointer-events: none; will-change: transform;
+  background: radial-gradient(closest-side ellipse at 50% 50%,
+      rgba(255, 253, 247, .58), rgba(255, 253, 247, .18) 58%, rgba(255, 253, 247, 0) 100%);
+  animation: cruza 18s ease-in-out infinite alternate;
+}
+.sombra {
+  position: absolute; inset: auto 0 -6% 0; height: 34%; z-index: -1;
+  pointer-events: none; will-change: transform;
+  background: radial-gradient(closest-side ellipse at 50% 100%,
+      rgba(23, 22, 26, .3), rgba(23, 22, 26, .1) 60%, rgba(23, 22, 26, 0) 100%);
+  transform-origin: 50% 100%;
+  /* La misma @keyframes con delay negativo de media vuelta: la sombra
+     va exactamente en contrafase con la luz. Ese acople es lo que hace
+     que se lea como luz de verdad y no como un halo decorativo. */
+  animation: cruza 18s ease-in-out -9s infinite alternate;
+}
+@keyframes cruza {
+  from { transform: translate3d(-14%, 0, 0) scaleX(.92); }
+  to   { transform: translate3d(14%, 0, 0)  scaleX(1.1); }
+}
+
+.portada__cols { position: relative; z-index: 1; display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, .78fr); gap: 2rem; }
+/* La medida NO puede ir en ch: el ch se mide en la fuente de ESTE
+   elemento (Sofia Sans a 17 px), y adentro va un h1 de Shrikhand a 67 px.
+   Con 34ch la caja quedaba en 341 px dentro de una columna de 645 y el
+   titular se partía en SEIS líneas de una o dos palabras. En rem la
+   caja no depende de la fuente del padre. */
+.portada__texto { max-width: 36rem; }
+.portada__texto h1 { margin: 0 0 1rem; }
+.rotulo--port { color: var(--medio); }
+.portada__bajada { font-size: var(--p-1); max-width: 44ch; margin: 0 0 1.6rem; }
+.portada__ir { display: flex; flex-wrap: wrap; gap: .7rem; margin: 0; }
+.pie-escena {
+  position: absolute; left: max(4vw, calc((100vw - var(--ancho)) / 2)); bottom: 1.1rem;
+  margin: 0; font-size: .64rem; letter-spacing: .16em; text-transform: uppercase;
+  /* Sobre el pie del barrido va TINTA, no --medio: ahí el gris da 4,26
+     y no pasa AA. Con la foto debajo el velo va al 100 % en esta zona,
+     así que el peor caso es #D5D3CF; con la tinta al 78 % eso da 6,85:1
+     MEDIDO, y con .62 daba 4,23 y no pasaba. */
+  color: var(--tinta); opacity: .78;
+}
+
+/* ══ 3 · CIFRAS ═══════════════════════════════════════════════════ */
+.cifras {
+  position: relative; isolation: isolate; overflow: hidden;
+  background: var(--hondo); color: var(--crudo); padding: var(--aire) 0;
+}
+/* El telón va NÍTIDO y bajo de opacidad — no es el aura, no lleva
+   blur. Método ::after teñido porque la banda tiene bordes duros
+   arriba y abajo. Opacidad calibrada mirando: la foto es de cocina
+   contrastada, así que .16 basta. */
+.telon { position: absolute; inset: 0; z-index: -1; pointer-events: none; }
+.telon img { display: block; width: 100%; height: 100%; object-fit: cover; opacity: .16; }
+.telon::after { content: ""; position: absolute; inset: 0; background: linear-gradient(180deg, rgba(27,26,30,.9) 0%, rgba(27,26,30,.94) 100%); }
+
+.cifras__lista { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(4, 1fr); gap: 1.6rem; }
+.cifras__lista li { display: flex; flex-direction: column; gap: .3rem; }
+.cifras__lista b {
+  font-family: var(--display); font-size: clamp(2.4rem, 1.6rem + 3.4vw, 4rem); line-height: .95;
+  color: rgba(27, 26, 30, .1); -webkit-text-stroke: 2px rgba(239, 237, 233, .88);
+}
+/* El destacado rompe el patrón: relleno sólido, sin contorno. Es la
+   herida, y es lo que dirige la vista. El auditor de contraste da un
+   falso positivo con los números huecos porque lee el relleno casi
+   transparente: el contorno claro sobre --hondo es lo que se ve, y el
+   dato viene repetido en la etiqueta de abajo, que va en --crudo. */
+.cifras__lista .cifras__herida { color: var(--cebolla-t); -webkit-text-stroke: 0; }
+.cifras__lista span { font-family: var(--mono); font-size: var(--p--1); line-height: 1.4; color: var(--gris-l); }
+.cifras__pie { margin: 1.6rem 0 0; font-size: .68rem; letter-spacing: .1em; text-transform: uppercase; color: var(--gris-l); }
+
+/* ══ 4 · PIEZA FIRMA ══════════════════════════════════════════════ */
+.firma {
+  padding: var(--aire) 0;
+  background: linear-gradient(178deg, var(--barrido-a) 0%, #D2D0CB 58%, var(--barrido-b) 100%);
+}
+.firma h2 { margin-bottom: 1rem; }
+.firma .entradilla { margin-bottom: 2.4rem; }
+
+.platos { list-style: none; margin: 0 0 2.4rem; padding: 0; display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.2rem; }
+.plato {
+  background: var(--loza); border-radius: 12px; padding: 1.2rem 1.2rem 1.4rem;
+  display: flex; flex-direction: column;
+  box-shadow: 0 12px 34px -22px rgba(23, 22, 26, .8);
+}
+.plato h3 { font-size: var(--p-1); margin: 0 0 .35rem; }
+.plato__d { margin: 0 0 .9rem; color: var(--medio); font-size: var(--p--1); }
+/* Va con `.plato` delante A PROPÓSITO. Este párrafo también es `.ej`, y
+   `p.ej { margin-top: .9rem }` tiene MÁS peso que `.plato__m` a secas:
+   se comía el `margin-top: auto` y las seis medidas quedaban a distinta
+   altura, que es justo lo que esta sección compara. Dos clases ganan. */
+.plato .plato__m { margin: auto 0 0; font-size: .68rem; letter-spacing: .04em; text-transform: uppercase; color: var(--cebolla); padding: .5rem .7rem .4rem; }
+
+/* ── LA ESCALA DE LAS PORCIONES ───────────────────────────────────
+   Los seis discos están a escala VERDADERA entre sí: un ancho común y
+   un factor por ficha. Va en clases y NO en style="--escala:1.15" —
+   la CSP (style-src 'self', sin unsafe-inline) bloquea el atributo
+   style sin un solo error visible, y las seis fichas saldrían del
+   mismo porte, que es exactamente lo contrario de esta sección.
+   Cero KB de imagen: el plato está dibujado. */
+/* La caja es un set de fotografía en miniatura: el mismo barrido gris
+   de la página, para que el plato BLANCO se recorte contra él. Sobre
+   la loza de la ficha el disco desaparecía — se comprobó mirando la
+   página, no el código. */
+.plato__caja {
+  display: flex; align-items: flex-end; justify-content: center;
+  height: 184px; margin-bottom: 1.1rem; padding-bottom: 14px;
+  border-radius: 10px; overflow: hidden;
+  background: linear-gradient(178deg, #E4E2DE 0%, #D3D0CA 62%, #C2BFB8 100%);
+}
+.plato__disco {
+  display: block; position: relative; border-radius: 50%; flex: none;
+  background: radial-gradient(circle at 38% 28%, #FFFFFF 0%, #FCFBF9 52%, #EAE7E1 100%);
+  border: 1px solid rgba(23, 22, 26, .22);
+  box-shadow: 0 12px 20px -10px rgba(23, 22, 26, .55), 0 2px 0 rgba(255, 255, 255, .7) inset;
+}
+.plato__ala { position: absolute; inset: 16%; border-radius: 50%; border: 1px solid rgba(23, 22, 26, .16); display: block; }
+/* LA ESCALA ES EL ARGUMENTO DE ESTA SECCIÓN, así que tiene que ser
+   verdad: 6 px por centímetro, el mismo factor para los cinco. El
+   nombre de la clase es el diámetro en cm para que no se pueda volver
+   a descuadrar sin darse cuenta. (Antes iban 108/121/132/156/169, que
+   son 5,40 · 5,50 · 5,50 · 6,00 · 6,04 px/cm: los dos platos grandes
+   salían un 10 % más grandes de lo que decía su propia ficha.)
+   Tope: la caja mide 184 px con 14 de respiro abajo, así que el mayor
+   no puede pasar de 170. */
+.d-20 { width: 120px; height: 120px; }
+.d-22 { width: 132px; height: 132px; }
+.d-24 { width: 144px; height: 144px; }
+.d-26 { width: 156px; height: 156px; }
+.d-28 { width: 168px; height: 168px; }
+/* Todos los discos apoyan en la misma línea de base, así la escala se
+   compara de un vistazo y las seis fichas no se desalinean. */
+
+.mesa { background: var(--loza); border-radius: 12px; padding: 1.6rem; border-left: 4px solid var(--tinta); }
+.mesa__q { margin: 0 0 .8rem; font-family: var(--mono); font-size: var(--p--1); letter-spacing: .1em; text-transform: uppercase; color: var(--medio); }
+.mesa__bs { display: flex; flex-wrap: wrap; gap: .6rem; margin-bottom: 1.2rem; }
+.mesa__b {
+  min-height: 48px; padding: 0 1.3rem; border-radius: 999px; cursor: pointer;
+  border: 1.5px solid var(--tinta); background: transparent; color: var(--tinta);
+  font-family: var(--cuerpo); font-size: var(--p-0); font-weight: 600;
+  transition: background-color .2s ease, color .2s ease;
+}
+.mesa__b:hover { background: rgba(23, 22, 26, .08); }
+/* El estado se pinta desde aria-pressed, nunca desde una clase .activo:
+   así el estilo y la accesibilidad no se pueden desincronizar. */
+.mesa__b[aria-pressed="true"] { background: var(--tinta); color: var(--loza); }
+.mesa__salida { margin: 0 0 1.2rem; font-size: var(--p-1); white-space: pre-wrap; word-break: break-word; }
+.mesa__rot { display: block; font-size: .66rem; letter-spacing: .12em; text-transform: uppercase; color: var(--medio); margin-bottom: .3rem; }
+.mesa__ir { margin: 0 0 1rem; }
+.mesa__nota { margin: 0; font-size: var(--p--1); color: var(--medio); }
+.nota-honestidad { background: var(--loza); font-size: var(--p--1); color: var(--medio); }
+
+/* ══ 5 · TAJO ═════════════════════════════════════════════════════ */
+.tajo { position: relative; isolation: isolate; overflow: hidden; margin: 0; }
+/* Encuadre bajo: la mitad de arriba de esta parrilla es pared clara y
+   la de abajo es la bandeja oscura. Bajando el encuadre, la frase cae
+   sobre materia oscura y el velo no tiene que trabajar tanto. */
+.tajo img { display: block; width: 100%; height: clamp(240px, 42vw, 430px); object-fit: cover; object-position: 50% 74%; }
+/* Arranca en alfa 0 arriba: los dos tercios de arriba de la foto se
+   ven nítidos y sólo se vela la franja donde va la frase. Peor caso
+   calculado con foto BLANCA debajo, en la altura donde cae el texto
+   (velo .63–.93): 4,9:1 con el blanco de la letra, y la frase va en
+   var(--p-2), o sea texto grande, que pide 3:1. El auditor da falso
+   positivo acá porque lee el fondo de la sección y no el velo. */
+.tajo__txt {
+  position: absolute; inset: auto 0 0 0; margin: 0; padding: var(--aire) 0 1.6rem;
+  background: linear-gradient(180deg, rgba(27,26,30,0) 0%, rgba(27,26,30,.42) 30%, rgba(27,26,30,.9) 62%, rgba(27,26,30,.97) 100%);
+}
+.tajo__txt p { width: var(--ancho); margin: 0 auto; color: #FFFFFF; font-family: var(--display); font-size: var(--p-2); max-width: 22ch; line-height: 1.14; }
+
+/* ══ 6 · LA CARTA ═════════════════════════════════════════════════ */
+.carta { background: var(--claro-2); padding: var(--aire) 0; }
+.carta h2 { margin-bottom: 1rem; }
+.carta .entradilla { margin-bottom: 2.4rem; }
+.fam { list-style: none; margin: 0 0 2rem; padding: 0; display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.2rem; }
+/* Columna flex, no bloque: `.ficha__d` pide `margin-top: auto` para
+   apoyarse abajo, y en un bloque ese auto vale cero. Sin esto la fila
+   estira la tarjeta hasta la altura de la barra y la nota se queda
+   colgada arriba con un hueco blanco debajo. */
+.ficha {
+  background: var(--loza); border-radius: 12px; padding: 1.3rem;
+  border-left: 4px solid var(--tinta);
+  display: flex; flex-direction: column;
+}
+.ficha__n { font-size: .7rem; letter-spacing: .16em; color: var(--cebolla); margin: 0 0 .5rem; font-weight: 700; }
+.ficha h3 { margin: 0 0 .8rem; }
+.ficha .lista { margin-bottom: .9rem; }
+.ficha .lista li { font-weight: 600; }
+.ficha__d { margin: auto 0 0; font-size: var(--p--1); color: var(--medio); }
+.ficha--barra { border-left-color: var(--cebolla); }
+/* Regla de alcohol: cero promociones, cero happy hour, y el trago SIN
+   alcohol con exactamente el mismo peso visual que los otros dos —
+   misma ficha, mismo tamaño, mismo lugar—, nunca al final como
+   consuelo. Acá va en el medio de la lista por eso mismo. */
+.tragos { list-style: none; margin: 0 0 .9rem; padding: 0; display: grid; gap: .8rem; }
+.tragos li { display: grid; gap: .3rem; padding-bottom: .8rem; border-bottom: 1px solid var(--linea); }
+.tragos li:last-child { border-bottom: 0; padding-bottom: 0; }
+.trago__n { font-weight: 700; }
+.chip {
+  justify-self: start; font-size: .6rem; letter-spacing: .1em; text-transform: uppercase;
+  padding: .18rem .5rem; border-radius: 999px; border: 1px solid var(--tinta); color: var(--tinta);
+}
+.chip--sin { border-color: var(--tinta); background: var(--tinta); color: var(--loza); }
+.trago__q { font-size: .66rem; letter-spacing: .06em; text-transform: uppercase; color: var(--cebolla); padding: .45rem .6rem .35rem; justify-self: start; }
+.carta__pie { background: var(--loza); font-size: var(--p--1); color: var(--medio); max-width: 78ch; }
+
+/* ══ 7 · MITADES ══════════════════════════════════════════════════ */
+.mit { display: grid; grid-template-columns: 1fr 1fr; background: var(--claro); }
+.mit__foto img { display: block; width: 100%; height: 100%; min-height: 320px; object-fit: cover; object-position: 50% 50%; }
+.mit__txt { display: flex; align-items: center; padding: var(--aire) max(4vw, 2.4rem); }
+.mit__in { max-width: 46ch; }
+.mit h2 { margin-bottom: 1rem; }
+.mit p { color: var(--tinta); }
+.mit .lista li { color: var(--tinta); }
+
+/* ══ 8 · CITA ═════════════════════════════════════════════════════
+   Texto CENTRADO → velo PLANO. Con un gradiente lateral, un texto
+   centrado queda medio sobre .9 y medio sobre .3 y falla AA en la
+   mitad derecha. .74 es el velo, por encima del mínimo .72 de la casa:
+   peor caso calculado con el fotograma BLANCO entero debajo, 8,33:1 con
+   el blanco de la letra y 6,27:1 con el gris del pie de cita. Con el
+   fotograma real (el queso) sube. El auditor da falso positivo acá. */
+.cita {
+  position: relative; margin: 0; isolation: isolate;
+  min-height: min(56vh, 460px); display: grid; place-items: center; overflow: hidden;
+}
+.cita img, .cita__video {
+  position: absolute; inset: 0; z-index: -1;
+  width: 100%; height: 100%; object-fit: cover; object-position: 50% 50%;
+}
+.cita::after { content: ""; position: absolute; inset: 0; z-index: -1; background: rgba(20, 15, 10, .74); }
+.cita__txt { margin: 0; width: var(--ancho); padding: 3rem 0; }
+.cita__txt p { font-family: var(--display); font-size: var(--p-3); color: #FFFFFF; max-width: 24ch; margin: 0 auto .9rem; text-align: center; line-height: 1.18; }
+.cita__f { display: block; text-align: center; font-size: .68rem; letter-spacing: .12em; text-transform: uppercase; color: #E3DFD8; }
+
+/* ══ 9 · TELÓN — segundo público ══════════════════════════════════ */
+.llevar {
+  position: relative; isolation: isolate; overflow: hidden;
+  background: var(--hondo); color: var(--crudo); padding: var(--aire) 0;
+}
+/* En sección oscura TODOS los grises de la paleta clara se reescriben
+   a mano: var(--medio) sobre --hondo da 1,1:1. */
+.llevar .rotulo { color: var(--gris-l); }
+.llevar__cols { display: grid; grid-template-columns: 1fr 1fr; gap: 2.4rem; align-items: start; }
+.llevar p { color: var(--gris-l); max-width: 48ch; }
+.llevar h2 { color: var(--crudo); }
+.llevar__cajas { display: grid; gap: 1rem; }
+.caja { border: 1px solid rgba(239, 237, 233, .2); border-left: 4px solid var(--cebolla-t); border-radius: 10px; padding: 1.2rem; }
+.caja h3 { color: var(--crudo); margin-bottom: .4rem; }
+.caja p { margin: 0; }
+
+/* ══ 10 · MOSAICO ═════════════════════════════════════════════════ */
+.mos { background: var(--claro); padding: var(--aire) 0 0; }
+.mos h2 { margin-bottom: 1rem; }
+.mos .entradilla { margin-bottom: 2rem; max-width: 66ch; }
+.mos__grilla {
+  list-style: none; margin: 0; padding: 0 max(4vw, calc((100vw - var(--ancho)) / 2)) var(--aire);
+  display: grid; grid-template-columns: repeat(4, 1fr); gap: .7rem;
+}
+/* Celdas 1 y 6 a span 2: rompe la retícula de seis iguales y es gratis. */
+.mos__p { position: relative; margin: 0; overflow: hidden; border-radius: 10px; background: var(--claro-2); }
+.mos__p--ancha { grid-column: span 2; }
+.mos__p img { display: block; width: 100%; height: clamp(160px, 20vw, 230px); object-fit: cover; filter: saturate(.92); transition: transform .5s var(--sale), filter .35s ease; }
+.mos__p:hover img { transform: scale(1.05); filter: saturate(1.05); }
+/* El pie del mosaico: el auditor da un falso positivo acá porque lee el
+   fondo de la celda y no el velo. Peor caso CALCULADO con foto BLANCA
+   debajo, en la altura exacta donde cae el texto (el velo va de .73 a
+   .92 ahí): 7,1:1 con el blanco de la letra. Con .6 al 56 % daba 4,0 y
+   no pasaba: el número se rehizo, no se estimó. Arranca en alfa 0 para
+   no ensuciar la foto. */
+.mos__pie {
+  position: absolute; left: 0; right: 0; bottom: 0; padding: 1.7rem .8rem .55rem;
+  font-family: var(--mono); font-size: .66rem; letter-spacing: .1em; text-transform: uppercase; color: #FFFFFF;
+  background: linear-gradient(180deg, rgba(20,19,22,0) 0%, rgba(20,19,22,.72) 48%, rgba(20,19,22,.92) 100%);
+}
+
+/* ══ 11 · CONTACTO ════════════════════════════════════════════════ */
+.contacto { background: var(--claro-2); padding: var(--aire) 0; }
+.contacto__cols { display: grid; grid-template-columns: 1.05fr .95fr; gap: 2.6rem; align-items: start; }
+.contacto h2 { margin-bottom: 1rem; }
+.contacto__plan { max-width: 52ch; }
+
+.horas { width: 100%; border-collapse: collapse; margin-top: 1.4rem; background: var(--loza); border-radius: 10px; overflow: hidden; }
+.horas caption { text-align: left; font-size: .66rem; letter-spacing: .14em; text-transform: uppercase; color: var(--medio); padding: .6rem .9rem; }
+.horas th, .horas td { text-align: left; padding: .75rem .9rem; border-bottom: 1px solid var(--linea); font-size: var(--p-0); }
+.horas tr:last-child th, .horas tr:last-child td { border-bottom: 0; }
+.horas th { font-weight: 600; }
+.horas td { text-align: right; font-variant-numeric: tabular-nums; }
+
+.datos { margin: 0; }
+.datos > div { display: grid; grid-template-columns: 11rem 1fr; gap: 1rem; padding: .9rem 0; border-bottom: 1px solid var(--linea); }
+.datos dt { font-family: var(--mono); font-size: .68rem; letter-spacing: .12em; text-transform: uppercase; color: var(--medio); padding-top: .2rem; }
+.datos dd { margin: 0; }
+.tel { font-size: var(--p-1); font-weight: 700; letter-spacing: .01em; }
+/* Los dos teléfonos SON enlaces `tel:`, así que son objetivos táctiles y
+   les toca el mínimo de 44 px de la casa: como texto suelto median 24 px
+   de alto. inline-flex con min-height, no padding, para que el subrayado
+   siga pegado al número y los dos sigan comparándose dígito a dígito.
+   El <br> que los separa hace el resto: cada uno en su línea. */
+a.tel { display: inline-flex; align-items: center; min-height: 44px; }
+.dd__n { display: block; margin-top: .5rem; font-size: var(--p--1); color: var(--medio); }
+.contacto__ir { margin-top: 1.6rem; }
+
+/* ══ 12 · SECCIÓN DEL DUEÑO ═══════════════════════════════════════ */
+.dueno { background: var(--hondo); color: var(--crudo); padding: var(--aire) 0; }
+.dueno .rotulo { color: var(--gris-l); }
+.dueno h2 { color: var(--crudo); }
+.dueno h3 { font-family: var(--mono); font-size: var(--p--1); letter-spacing: .1em; text-transform: uppercase; color: var(--cebolla-t); margin: 1.6rem 0 .7rem; }
+.dueno__cols { display: grid; grid-template-columns: repeat(3, 1fr); gap: 2rem; margin: 2.4rem 0 1rem; }
+.dueno__cols h3 { margin-top: 0; }
+.dueno p, .dueno li { color: var(--gris-l); }
+.dueno b { color: var(--crudo); }
+.dueno .lista li::before { background: var(--cebolla-t); }
+.dueno .lista--num li::before { background: none; color: var(--cebolla-t); }
+.dueno__cierre { display: flex; flex-wrap: wrap; gap: 1.6rem; margin-top: 2rem; }
+.dueno__cierre a { color: var(--crudo); }
+
+/* ══ PIE ══════════════════════════════════════════════════════════ */
+.pie { background: #121114; color: var(--gris-l); padding: 2.4rem 0 5.6rem; }
+.pie__in p { margin: 0 0 .7rem; max-width: 80ch; font-size: var(--p--1); }
+.pie b { color: var(--crudo); }
+.pie__leg { color: #9A9893; }
+
+/* ── WHATSAPP FLOTANTE ──────────────────────────────────────────────
+   Botón fijo abajo a la derecha. 56 px de alto: por encima de los 44
+   del mínimo táctil. Verde de WhatsApp a propósito — se reconoce sin
+   leerlo, y es la ÚNICA excepción cromática de la página: es color de
+   sistema, no identidad.
+
+   La dirección del truco importa: el botón se ve SIEMPRE por defecto y
+   el JS sólo lo esconde mientras el visitante está en la portada, para
+   no tapar el titular. Si el script no arranca, o si rescate.js quita
+   la clase .js, el botón queda visible, que es el estado que vende.
+
+   8.1 — EL HREF VA A wa.me, NO A UN ANCLA. Hay dos teléfonos dando
+   vueltas en internet, así que se usa el de la fuente MÁS FUERTE y la
+   que esta misma página ya cita para el puesto y la dirección:
+   Tripadvisor, +56 9 9488 5808. El otro (+56 9 8603 4164) sale en un
+   directorio y sigue escrito en contacto. Un botón verde de WhatsApp
+   que en vez de abrir el chat baja a un párrafo es una promesa rota, y
+   el dueño no puede corregir un número que el botón nunca marca: así
+   toca el botón, ve qué chat se abre y contesta en un segundo. Los dos
+   números siguen marcados como pendientes en contacto y en la sección
+   del dueño. */
+.wapp {
+  position: fixed;
+  right: max(1rem, env(safe-area-inset-right, 0px));
+  bottom: max(1rem, env(safe-area-inset-bottom, 0px));
+  z-index: 60;
+  display: inline-flex; align-items: center; gap: .55rem;
+  height: 56px; padding: 0 1.15rem 0 1rem;
+  border-radius: 999px; background: #25D366; color: #07310F;
+  text-decoration: none;
+  font-family: var(--cuerpo); font-size: .95rem; font-weight: 700; line-height: 1;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, .3), 0 2px 6px rgba(0, 0, 0, .2);
+  transition: opacity .28s ease, transform .28s ease, box-shadow .18s ease;
+}
+.wapp__i { width: 26px; height: 26px; fill: currentColor; flex: none; }
+.wapp:hover, .wapp:focus-visible { transform: translateY(-2px); box-shadow: 0 10px 26px rgba(0, 0, 0, .34); }
+.js .wapp--arriba { opacity: 0; transform: translateY(14px) scale(.94); pointer-events: none; }
+
+/* ── APARICIONES ───────────────────────────────────────────────────
+   Regla atómica: la opacidad salta corto (.3 s) y el transform dura
+   largo (.6 s). Un fundido lento le pelea al movimiento.
+   La clase .rev la pone el JS: si main.js no llega, no hay ninguna
+   clase que esconda nada. ── */
+.js .rev { opacity: 0; transform: translateY(18px); }
+.rev.ok  { opacity: 1; transform: none; transition: opacity .3s ease-out, transform .6s var(--sale); }
+
+/* Cascada de hijos: el CONTENEDOR se neutraliza y animan los hijos. Si
+   no lo neutralizas, contenedor e hijos bajan a la vez y el grupo
+   entero se desplaza 44 px. */
+.js .cascada.rev      { opacity: 1; transform: none; transition: none; }
+.js .cascada.rev > *  { opacity: 0; transform: translateY(26px); }
+.js .cascada.rev.ok > * {
+  opacity: 1; transform: none;
+  transition: opacity .3s ease-out, transform .6s var(--sale);
+  transition-delay: calc(var(--i, 0) * 70ms);
+}
+/* El --i NUNCA en style="--i:3": la CSP lo bloquea sin avisar. */
+.cascada > :nth-child(1) { --i: 0; }
+.cascada > :nth-child(2) { --i: 1; }
+.cascada > :nth-child(3) { --i: 2; }
+.cascada > :nth-child(4) { --i: 3; }
+.cascada > :nth-child(5) { --i: 4; }
+.cascada > :nth-child(6) { --i: 5; }
+.cascada > :nth-child(7) { --i: 6; }
+.cascada > :nth-child(8) { --i: 7; }
+
+/* Entrada de la portada: no espera al scroll, ya está en pantalla.
+   forwards, nunca both. La última pieza arranca a los .21 s.
+   La clase .puesto es el seguro: a los 2,5 s el JS la agrega y el
+   estado escondido deja de existir. Sin ella, un navegador que congela
+   las animaciones (headless, pestaña oculta, captura automática) deja
+   el titular de la portada invisible para siempre. */
+.js .portada__texto:not(.puesto) > * { opacity: 0; transform: translateY(14px); }
+.portada__texto.ok:not(.puesto) > * { animation: entra .6s var(--muelle) forwards; }
+.portada__texto.ok > *:nth-child(2) { animation-delay: .07s; }
+.portada__texto.ok > *:nth-child(3) { animation-delay: .14s; }
+.portada__texto.ok > *:nth-child(4) { animation-delay: .21s; }
+@keyframes entra { to { opacity: 1; transform: none; } }
+
+/* ══════════════════════════════════════════════════════════════════
+   VIDEO DE FONDO
+   La foto sigue siendo la base y el video se funde encima cuando puede
+   reproducirse. Si el visitante pidió menos movimiento o ahorra datos,
+   main.js no lo pide y no se descarga ni un byte.
+   Presupuesto: portada ≤ 1,8 MB, banda ≤ 1,2 MB, 720p sin audio.
+   ══════════════════════════════════════════════════════════════════ */
+.portada__video, .cita__video {
+  position: absolute; inset: 0; opacity: 0;
+  transition: opacity 1.4s ease; pointer-events: none;
+}
+.portada__video.video--ver, .cita__video.video--ver { opacity: 1; }
+
+/* El difuminado al scroll es la única excepción TEMPORAL al no-blur, y
+   la controla el scroll del propio visitante. El filter va en el
+   CONTENEDOR, nunca en el <video>; scale(1.06) lo acompaña para que el
+   desenfoque no muestre el filo transparente de la caja. Fondo claro →
+   blur corto con opacity. */
+@supports (animation-timeline: scroll()) {
+  @media (prefers-reduced-motion: no-preference) and (min-width: 761px) {
+    .portada__foto {
+      animation: portada-se-va linear both;
+      animation-timeline: scroll(root block);
+      animation-range: 0 90vh;
+    }
+    .cita {
+      animation: cita-enfoca linear both;
+      animation-timeline: view(block);
+      animation-range: entry 0% entry 95%;
+    }
+  }
+}
+@keyframes portada-se-va { to { filter: blur(7px); transform: scale(1.06); opacity: .55; } }
+@keyframes cita-enfoca   { from { filter: blur(9px); } to { filter: blur(0); } }
+
+/* ══ RESPONSIVE ═══════════════════════════════════════════════════ */
+@media (max-width: 1080px) {
+  .platos, .fam { grid-template-columns: repeat(2, 1fr); }
+  .dueno__cols { grid-template-columns: 1fr 1fr; }
+}
+@media (max-width: 980px) {
+  .cab__nav { display: none; }
+  .cab__cta { margin-left: auto; }
+  .contacto__cols, .llevar__cols { grid-template-columns: 1fr; }
+  .mit { grid-template-columns: 1fr; }
+  .mit__foto img { height: clamp(240px, 46vw, 380px); min-height: 0; }
+}
+@media (max-width: 760px) {
+  /* La portada en móvil se RECOMPONE entera, no se le rota la máscara:
+     con el texto encima, un velo vertical dejaba la foto tan tapada que
+     no se leía ni un plato — se vio en la captura a 500 px. Acá el
+     texto va arriba sobre el barrido limpio y la foto ocupa la mitad de
+     abajo A FOCO COMPLETO, que es donde vive el sujeto del clip (las
+     manos y los platos, en el centro del cuadro). */
+  .portada { min-height: 0; padding: 1.6rem 0 44vh; }
+  .portada__cols { grid-template-columns: 1fr; }
+  .portada__foto { inset: auto 0 0 0; height: 46vh; }
+  .portada__foto img, .portada__video {
+    object-position: 50% 44%;
+    -webkit-mask-image: linear-gradient(180deg, transparent 0%, rgba(0,0,0,.55) 20%, #000 48%);
+            mask-image: linear-gradient(180deg, transparent 0%, rgba(0,0,0,.55) 20%, #000 48%);
+  }
+  .portada__foto::after { background: linear-gradient(180deg, rgba(213,211,207,1) 0%, rgba(213,211,207,.6) 24%, rgba(213,211,207,.14) 58%, rgba(213,211,207,0) 100%); }
+  .portada__texto { max-width: none; }
+  /* El rótulo de la escena sale del absoluto: ahí abajo caería sobre la
+     zona nítida de la foto y necesitaría placa. */
+  .pie-escena { position: static; margin: 1.4rem 0 0; }
+  .luz { height: 60%; }
+  .sombra { inset: auto 0 40vh 0; height: 18%; }
+  .cifras__lista { grid-template-columns: repeat(2, 1fr); gap: 1.4rem; }
+  .dueno__cols { grid-template-columns: 1fr; }
+  .mos__grilla { grid-template-columns: repeat(2, 1fr); }
+  .mos__p--ancha { grid-column: span 2; }
+  .mos__p img { height: clamp(150px, 40vw, 220px); }
+  .datos > div { grid-template-columns: 1fr; gap: .2rem; }
+}
+@media (max-width: 620px) {
+  .platos, .fam { grid-template-columns: 1fr; }
+  .plato__disco { margin-bottom: .8rem; }
+  .pie-escena { position: static; margin: 1.6rem 0 0; }
+}
+@media (max-width: 520px) {
+  .wapp { width: 56px; padding: 0; justify-content: center; }
+  .wapp__t { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
+  .cab__sub { display: none; }
+}
+
+/* ── prefers-reduced-motion ────────────────────────────────────────
+   Se apaga lo intrusivo (autoplay, bucles, conteos, desplazamientos).
+   Se conserva lo que da vida: hovers de color, :focus-visible y los
+   fundidos. En Windows esa preferencia viene activada de fábrica muy
+   seguido; si se apaga todo, la página se ve muerta en la mitad de las
+   máquinas del cliente. ── */
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+
+  /* 1 · Las dos capas del ambiente se CONGELAN en su posición central,
+         no se ocultan: una sombra que desaparece deja la portada
+         flotando. */
+  .luz, .sombra { animation: none; transform: translate3d(0, 0, 0) scaleX(1); }
+
+  /* 2 · La entrada de portada no se escalona: se muestra puesta. El
+         selector repite el :not(.puesto) a propósito — sin él tiene
+         MENOS especificidad que el estado escondido y no lo pisa. */
+  .js .portada__texto:not(.puesto) > * { animation: none; opacity: 1; transform: none; }
+
+  /* 3 · Los reveals NO se desplazan, pero SÍ siguen fundiendo. Un
+         fundido no es movimiento; un salto de 18 px sí. */
+  .js .rev, .js .cascada.rev > * { transform: none; }
+
+  /* 4 · Del hover se apaga el desplazamiento, no el hover. */
+  .boton:hover { transform: none; }
+  .mos__p:hover img { transform: none; }
+  .flecha:hover span { transform: none; }
+  .wapp { transition: opacity .28s ease; }
+  .wapp:hover, .wapp:focus-visible { transform: none; }
+  .js .wapp--arriba { transform: none; }
+}
+
+/* El botón de WhatsApp apunta a un número que TODAVÍA no está confirmado:
+   hay dos publicados y no coinciden. El anillo punteado lo dice sin texto,
+   y desaparece borrando esta clase del HTML en cuanto el dueño confirme.
+   Es la misma idea que la convención .ej: un dato pendiente se ve. */
+.wapp--dudoso { box-shadow: 0 0 0 3px var(--claro, #D2D0CB), 0 0 0 5px var(--cebolla, #6B2E7A), 0 6px 18px rgba(0, 0, 0, .3); }
+.wapp--dudoso::after {
+  content: "por confirmar";
+  position: absolute; right: 0; bottom: calc(100% + 8px);
+  background: var(--cebolla, #6B2E7A); color: #fff;
+  font-size: 11px; letter-spacing: .04em; line-height: 1;
+  padding: 5px 8px; border-radius: 6px; white-space: nowrap;
+}

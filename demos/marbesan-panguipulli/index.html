@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="es-CL" class="no-js">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Marbesán — restaurante y bar · Panguipulli</title>
+<meta name="description" content="Marbesán, Panguipulli: cocina chilena y de bar, ceviche peruano, hamburguesas y coctelería propia. Esta página contesta de qué porte es el plato antes de pedirlo.">
+
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self'; img-src 'self' data:; font-src 'self'; connect-src 'self'; media-src 'self'; form-action 'self'; base-uri 'none'; frame-src 'none'; object-src 'none'">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+
+<script src="js/rescate.js"></script>
+
+<link rel="preload" href="assets/fuentes/shrikhand-400-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="assets/fuentes.css">
+<link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+
+<!-- ══ BANDA DE PROPUESTA ══════════════════════════════════════════
+     Va arriba de todo, antes del <header>: es lo primero que lee el
+     dueño y lo que impide que esto se lea como un sitio publicado. -->
+<aside class="propuesta" aria-label="Aviso de propuesta">
+  <div class="ancho propuesta__in">
+    <p class="propuesta__q">Propuesta de sitio web — preparada para <b>Marbesán</b> por CristalWeb</p>
+    <p class="propuesta__d">Marbesán es <span class="dato">#6 de 36</span> restaurantes de Panguipulli en Tripadvisor y tiene <span class="dato">4,3 con 45 opiniones</span> en Google. Y (verificado el <span class="dato">09-09-2026</span>) no tiene sitio propio: el que busca dónde comer en Panguipulli no encuentra ni la carta ni el horario. Ésta es la página que debería estar ahí.</p>
+  </div>
+</aside>
+
+<!-- ══ CABECERA ════════════════════════════════════════════════════ -->
+<header class="cab" id="cab">
+  <div class="cab__in">
+    <a class="cab__marca" href="#inicio" aria-label="Marbesán, inicio">
+      <!-- EL PLATO VISTO DESDE ARRIBA. La misma forma se repite tres
+           veces en la página: acá de sello, en las fichas de porción
+           como círculo a escala, y de viñeta en las listas. Identidad
+           a cero KB. -->
+      <svg class="sello" viewBox="0 0 32 32" aria-hidden="true" focusable="false">
+        <ellipse class="sello__s" cx="17.4" cy="17.8" rx="12.6" ry="12.6"></ellipse>
+        <circle class="sello__o" cx="16" cy="16" r="12.4"></circle>
+        <circle class="sello__i" cx="16" cy="16" r="7.6"></circle>
+      </svg>
+      <span class="cab__txt">Marbesán<span class="cab__sub">restaurante y bar · Panguipulli</span></span>
+    </a>
+    <nav class="cab__nav" aria-label="Secciones">
+      <a href="#porciones">¿Alcanza para dos?</a>
+      <a href="#carta">La carta</a>
+      <a href="#mesa">Las fotos</a>
+    </nav>
+    <a class="cab__cta" href="#contacto">Horario y teléfono <span aria-hidden="true">→</span></a>
+  </div>
+</header>
+
+<main id="inicio">
+
+<!-- ══ 2 · PORTADA ═════════════════════════════════════════════════
+     Barrido de estudio: se aclara arriba, se asienta abajo. La foto
+     es el fotograma con el que arranca el clip, así el cambio de
+     póster a video no salta ni un píxel. -->
+<section class="portada" aria-labelledby="t-portada">
+  <div class="portada__foto" aria-hidden="true">
+    <img src="imagenes/port-01.jpg" alt="" width="1280" height="720" fetchpriority="high" decoding="async">
+    <!-- El video comparte el selector de la foto: misma máscara, mismo
+         object-position. Sin atributo poster a propósito — el póster
+         es el <img> hermano, que se queda en el DOM para siempre. -->
+    <video class="portada__video" data-src="video/port.mp4" muted playsinline loop preload="none" aria-hidden="true"></video>
+  </div>
+
+  <!-- Ambiente: LA LUZ DEL SET. Una sola animación de 18 s con dos
+       capas encadenadas por fase — la luz cruza y la sombra responde
+       en contrafase. No hay partículas: con clip de fondo, el video
+       ES el ambiente (receta §4.4). -->
+  <div class="luz" aria-hidden="true"></div>
+  <div class="sombra" aria-hidden="true"></div>
+
+  <div class="ancho portada__cols">
+    <div class="portada__texto">
+      <p class="rotulo rotulo--port">Panguipulli · Martínez de Rozas</p>
+      <h1 id="t-portada">El plato, mirado desde donde usted se sienta.</h1>
+      <p class="portada__bajada">Cocina chilena y de bar: ceviche peruano, hamburguesas, lomo, ñoquis, sándwiches y coctelería con nombre propio. Martes a sábado, de <span class="mono">12:00</span> a <span class="mono">22:00</span>.</p>
+      <p class="portada__ir">
+        <a class="boton" href="#porciones">¿Alcanza para dos?</a>
+        <a class="boton boton--linea" href="#carta">Ver la carta</a>
+      </p>
+    </div>
+  </div>
+
+  <p class="pie-escena mono" aria-hidden="true">la luz cruza el set · 18 s</p>
+</section>
+
+<!-- ══ 3 · CIFRAS ══════════════════════════════════════════════════ -->
+<section class="cifras" aria-label="Marbesán en números">
+  <div class="telon" aria-hidden="true">
+    <img src="imagenes/telon-01.jpg" alt="" width="1200" height="800" loading="lazy" decoding="async">
+  </div>
+  <div class="ancho">
+    <ul class="cifras__lista">
+      <li><b>4,3</b><span>de nota en Google</span></li>
+      <li><b data-cuenta="45">45</b><span>opiniones ya escritas</span></li>
+      <li><b>#6</b><span>de 36 en Tripadvisor</span></li>
+      <li><b class="cifras__herida">0</b><span>páginas donde hoy se lea su carta</span></li>
+    </ul>
+    <p class="cifras__pie mono">Google y Tripadvisor, consultados el 09-09-2026.</p>
+  </div>
+</section>
+
+<!-- ══ 4 · PIEZA FIRMA ═════════════════════════════════════════════
+     «¿Alcanza para dos?» — la pregunta que las 45 opiniones contestan
+     con un adjetivo («porciones generosas») y que ninguno de los 37
+     restaurantes de la comuna pone por escrito. Va en el slot 4:
+     después de las cifras y antes de la primera foto a sangre. -->
+<section class="firma" id="porciones" aria-labelledby="t-firma">
+  <div class="ancho">
+    <p class="rotulo">La pregunta que nadie contesta</p>
+    <h2 id="t-firma">¿Alcanza para dos?<br>Acá está el porte.</h2>
+    <p class="entradilla">Cuarenta y cinco personas escribieron que las porciones son generosas. Ninguna dijo cuánto es eso, y nadie pide un plato que no sabe de qué porte viene. Los seis platos de abajo están dibujados <b>a escala entre sí</b>: la hamburguesa doble ocupa en la pantalla lo que ocupa en la mesa al lado del ceviche.</p>
+
+    <ul class="platos cascada">
+      <li class="plato">
+        <span class="plato__caja" aria-hidden="true"><span class="plato__disco d-22"><span class="plato__ala"></span></span></span>
+        <h3>Ceviche peruano</h3>
+        <p class="plato__d">Pescado, cebolla morada y limón. Fresco y para partir.</p>
+        <p class="plato__m mono ej" data-ejemplo="medida por confirmar">⌀ 22 cm · entrada para 2</p>
+      </li>
+      <li class="plato">
+        <span class="plato__caja" aria-hidden="true"><span class="plato__disco d-26"><span class="plato__ala"></span></span></span>
+        <h3>Hamburguesa doble</h3>
+        <p class="plato__d">Doble carne, con papas fritas al lado.</p>
+        <p class="plato__m mono ej" data-ejemplo="medida por confirmar">⌀ 26 cm · una por persona</p>
+      </li>
+      <li class="plato">
+        <span class="plato__caja" aria-hidden="true"><span class="plato__disco d-26"><span class="plato__ala"></span></span></span>
+        <h3>Hamburguesa con volcán de queso</h3>
+        <p class="plato__d">La que más nombran las opiniones. El queso cae encima.</p>
+        <p class="plato__m mono ej" data-ejemplo="medida por confirmar">⌀ 26 cm · pide dos si vienen con hambre</p>
+      </li>
+      <li class="plato">
+        <span class="plato__caja" aria-hidden="true"><span class="plato__disco d-28"><span class="plato__ala"></span></span></span>
+        <h3>Lomo</h3>
+        <p class="plato__d">Plato de fondo, con acompañamiento.</p>
+        <p class="plato__m mono ej" data-ejemplo="medida por confirmar">⌀ 28 cm · alcanza para 2</p>
+      </li>
+      <li class="plato">
+        <span class="plato__caja" aria-hidden="true"><span class="plato__disco d-24"><span class="plato__ala"></span></span></span>
+        <h3>Ñoquis con salsa de queso azul</h3>
+        <p class="plato__d">Sin carne. La opción vegetariana que la gente ya pide.</p>
+        <p class="plato__m mono ej" data-ejemplo="medida por confirmar">⌀ 24 cm · una por persona</p>
+      </li>
+      <li class="plato">
+        <span class="plato__caja" aria-hidden="true"><span class="plato__disco d-20"><span class="plato__ala"></span></span></span>
+        <h3>Sándwich</h3>
+        <p class="plato__d">De la mano rápida de la carta. Para llevar también.</p>
+        <p class="plato__m mono ej" data-ejemplo="medida por confirmar">⌀ 20 cm · alcanza para 1</p>
+      </li>
+    </ul>
+
+    <!-- El selector arma el pedido leyendo los platos DEL DOM: si
+         mañana cambia la carta en el HTML, el mensaje cambia solo. -->
+    <div class="mesa">
+      <p class="mesa__q" id="mesa-q">¿Cuántos vienen?</p>
+      <div class="mesa__bs" role="group" aria-labelledby="mesa-q">
+        <button type="button" class="mesa__b" data-gente="2" aria-pressed="true">Somos 2</button>
+        <button type="button" class="mesa__b" data-gente="4" aria-pressed="false">Somos 4</button>
+        <button type="button" class="mesa__b" data-gente="6" aria-pressed="false">Somos 6</button>
+      </div>
+      <p class="mesa__salida"><span class="mesa__rot mono">Para que nadie discuta:</span> <span id="mesa-txt">Una porción de ceviche peruano para partir, una de hamburguesa doble y una de ñoquis con salsa de queso azul para el que no come carne. Y una limonada de menta y jengibre para el que maneja.</span></p>
+      <p class="mesa__ir"><a class="boton" href="#contacto">Ver horario y cómo ubicarlos</a></p>
+      <p class="mesa__nota">El mensaje se arma <b>en la pantalla</b> y no se manda solo a ninguna parte: hay dos teléfonos publicados y ninguno confirmado por el dueño, así que el pedido se lee acá y se dicta en la mesa. El botón verde de abajo sí abre WhatsApp, con el número que publica Tripadvisor.</p>
+    </div>
+
+    <p class="nota-honestidad ej" data-ejemplo="lo confirma Marbesán">Carta y medidas de ejemplo hasta que las confirme el dueño. Los seis platos salen de lo que nombraron los clientes en sus opiniones; los diámetros son una referencia para que se entienda la escala, no una medida tomada en la cocina.</p>
+  </div>
+</section>
+
+<!-- ══ 5 · TAJO ════════════════════════════════════════════════════ -->
+<figure class="tajo" aria-label="La cocina de Marbesán">
+  <img src="imagenes/tajo-01.jpg" alt="" width="2200" height="1467" loading="lazy" decoding="async">
+  <figcaption class="tajo__txt">
+    <p>Cocina chilena y de bar, con la mano peruana del ceviche.</p>
+  </figcaption>
+</figure>
+
+<!-- ══ 6 · LA CARTA ════════════════════════════════════════════════
+     Inventario ordenado por quién viene en el auto. Sin precios: los
+     pone el dueño. -->
+<section class="carta" id="carta" aria-labelledby="t-carta">
+  <div class="ancho">
+    <p class="rotulo">La carta, ordenada de otra manera</p>
+    <h2 id="t-carta">El auto se pone de acuerdo<br>antes de bajarse.</h2>
+    <p class="entradilla">Una carta ancha se lee mal en el celular cuando hay cinco personas discutiendo. Ésta está ordenada por quién viene adentro del auto, que es como se decide de verdad dónde parar.</p>
+
+    <ul class="fam cascada">
+      <li class="ficha">
+        <p class="ficha__n mono">01</p>
+        <h3>El que quiere hamburguesa</h3>
+        <ul class="lista">
+          <li>Hamburguesa doble</li>
+          <li>Hamburguesa con volcán de queso</li>
+          <li>Sándwiches</li>
+        </ul>
+        <p class="ficha__d">Los tres nombres salen de opiniones de clientes.</p>
+      </li>
+      <li class="ficha">
+        <p class="ficha__n mono">02</p>
+        <h3>El que no come carne</h3>
+        <ul class="lista">
+          <li>Ñoquis con salsa de queso azul</li>
+          <li>Opciones vegetarianas de la carta</li>
+        </ul>
+        <p class="ficha__d">Que hay opciones vegetarianas está verificado en su ficha; cuáles son exactamente, lo dice el dueño.</p>
+      </li>
+      <li class="ficha">
+        <p class="ficha__n mono">03</p>
+        <h3>El que quiere probar algo</h3>
+        <ul class="lista">
+          <li>Ceviche peruano</li>
+        </ul>
+        <p class="ficha__d">Es lo que separa a Marbesán de una picada: alguien se sentó a pensar esta carta.</p>
+      </li>
+      <li class="ficha">
+        <p class="ficha__n mono">04</p>
+        <h3>El que anda apurado</h3>
+        <ul class="lista">
+          <li>Para llevar</li>
+          <li>Sándwiches</li>
+        </ul>
+        <p class="ficha__d">Servicio en mesa y para llevar: verificado.</p>
+      </li>
+      <li class="ficha">
+        <p class="ficha__n mono">05</p>
+        <h3>El que llegó con hambre de plato de fondo</h3>
+        <ul class="lista">
+          <li>Lomo</li>
+          <li>Ñoquis con salsa de queso azul</li>
+        </ul>
+        <p class="ficha__d">Los dos platos de fondo que nombran las opiniones.</p>
+      </li>
+      <li class="ficha ficha--barra">
+        <p class="ficha__n mono">06</p>
+        <h3>La barra</h3>
+        <ul class="tragos">
+          <li>
+            <span class="trago__n">Corona maracuyá</span>
+            <span class="chip mono">Con alcohol</span>
+            <span class="trago__q mono ej" data-ejemplo="lo confirma Marbesán">qué lleva</span>
+          </li>
+          <li>
+            <span class="trago__n">Coco bongo</span>
+            <span class="chip mono">Con alcohol</span>
+            <span class="trago__q mono ej" data-ejemplo="lo confirma Marbesán">qué lleva</span>
+          </li>
+          <li>
+            <span class="trago__n">Limonada de menta y jengibre</span>
+            <span class="chip mono chip--sin">Sin alcohol</span>
+            <span class="trago__q mono ej" data-ejemplo="lo confirma Marbesán">qué lleva</span>
+          </li>
+        </ul>
+        <p class="ficha__d">Tres nombres propios, dichos por clientes. La receta de la casa no se inventa.</p>
+      </li>
+    </ul>
+
+    <p class="carta__pie ej" data-ejemplo="la carta definitiva la manda el dueño">Esta no es la carta oficial de Marbesán: son los platos que sus propios clientes nombraron al opinar. La carta de verdad —con sus nombres, sus acompañamientos y sus precios— la manda el dueño y se reemplaza entera en un rato.</p>
+  </div>
+</section>
+
+<!-- ══ 7 · MITADES ═════════════════════════════════════════════════ -->
+<section class="mit" aria-labelledby="t-mit">
+  <div class="mit__foto">
+    <img src="imagenes/mit-01.jpg" alt="Mesa vista desde arriba con varios platos servidos al mismo tiempo" width="2200" height="1240" loading="lazy" decoding="async">
+  </div>
+  <div class="mit__txt">
+    <div class="mit__in">
+      <p class="rotulo">Lo que ya está dicho</p>
+      <h2 id="t-mit">Nadie tuvo que pedirles<br>que lo escribieran.</h2>
+      <p>Esto no lo redactó una agencia: son las palabras que se repiten en las 45 opiniones de Google y en las de Tripadvisor, donde Marbesán está <b>#6 de 36</b> con un 4,7.</p>
+      <ul class="lista lista--marca">
+        <li><b>Porciones generosas.</b> Es lo que más se repite, y es lo que esta página convierte en algo que se puede mirar.</li>
+        <li><b>Presentación atractiva.</b> El plato llega armado, no tirado.</li>
+        <li><b>Servicio rápido.</b> Sirve para el que anda con el auto en doble fila.</li>
+        <li><b>Personal amable y buen ambiente.</b> Dicho por varias personas distintas.</li>
+        <li><b>«La mejor comida que he probado en Panguipulli»</b>, escrito por una persona que opinó en inglés.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ══ 8 · CITA ════════════════════════════════════════════════════ -->
+<figure class="cita" aria-label="Lo que dice una opinión">
+  <img src="imagenes/cita-01.jpg" alt="" width="1280" height="720" loading="lazy" decoding="async">
+  <video class="cita__video" data-src="video/cita.mp4" muted playsinline loop preload="none" aria-hidden="true"></video>
+  <blockquote class="cita__txt">
+    <p>«La mejor comida que he probado en Panguipulli.»</p>
+    <footer class="cita__f mono">opinión de un visitante, traducida del inglés</footer>
+  </blockquote>
+</figure>
+
+<!-- ══ 9 · TELÓN — segundo público ═════════════════════════════════ -->
+<section class="llevar con-telon" aria-labelledby="t-llevar">
+  <div class="telon" aria-hidden="true">
+    <img src="imagenes/telon-02.jpg" alt="" width="1200" height="800" loading="lazy" decoding="async">
+  </div>
+  <div class="ancho llevar__cols">
+    <div>
+      <p class="rotulo">Para el que no se sienta</p>
+      <h2 id="t-llevar">Para llevar,<br>y para el que no come carne.</h2>
+      <p>Dos cosas que Marbesán ya hace y que hoy no están escritas en ninguna parte donde alguien las busque. Las dos están verificadas en su ficha, no son un ejemplo de esta demo.</p>
+    </div>
+    <div class="llevar__cajas">
+      <div class="caja">
+        <h3>Para llevar</h3>
+        <p>El mismo plato, en la mano. Sirve para el que va de paso a Coñaripe o a Choshuenco y no quiere perder la tarde sentado.</p>
+      </div>
+      <div class="caja">
+        <h3>Opciones vegetarianas</h3>
+        <p>En un grupo de seis casi siempre hay uno que no come carne, y ese uno decide dónde para el auto. Acá tiene qué pedir.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ 10 · MOSAICO ════════════════════════════════════════════════ -->
+<section class="mos" id="mesa" aria-labelledby="t-mos">
+  <div class="ancho">
+    <p class="rotulo">Los platos que nombran las opiniones</p>
+    <h2 id="t-mos">Así se ve una mesa<br>de las que se piden acá.</h2>
+    <p class="entradilla ej" data-ejemplo="fotos de ejemplo · las propias las manda Marbesán">Estas seis fotos son de bancos libres, no del local: están puestas para mostrar el formato de la página. Las de verdad las saca el dueño con el teléfono en media hora y quedan mejor que éstas, porque son las suyas.</p>
+  </div>
+  <ul class="mos__grilla cascada">
+    <li class="mos__p mos__p--ancha"><img src="imagenes/mos1-01.jpg" alt="Ceviche de camarones con palta y láminas de pepino en un plato de loza" width="1200" height="800" loading="lazy" decoding="async"><span class="mos__pie">Ceviche peruano</span></li>
+    <li class="mos__p"><img src="imagenes/mos2-01.jpg" alt="Hamburguesa con queso y papas fritas servidas en un plato redondo" width="1200" height="800" loading="lazy" decoding="async"><span class="mos__pie">Hamburguesa con papas</span></li>
+    <li class="mos__p"><img src="imagenes/mos3-01.jpg" alt="Corte de carne a la parrilla con verduras asadas en un plato blanco" width="1200" height="800" loading="lazy" decoding="async"><span class="mos__pie">Lomo</span></li>
+    <li class="mos__p"><img src="imagenes/mos4-01.jpg" alt="Ñoquis con queso rallado encima en un plato hondo" width="1200" height="800" loading="lazy" decoding="async"><span class="mos__pie">Ñoquis</span></li>
+    <li class="mos__p"><img src="imagenes/mos5-01.jpg" alt="Sándwich cortado en triángulos servido en un plato blanco" width="1200" height="800" loading="lazy" decoding="async"><span class="mos__pie">Sándwich</span></li>
+    <li class="mos__p mos__p--ancha"><img src="imagenes/mos6-01.jpg" alt="Dos vasos altos con hielo, menta y limón sobre una superficie clara" width="1200" height="800" loading="lazy" decoding="async"><span class="mos__pie">De la barra</span></li>
+  </ul>
+</section>
+
+<!-- ══ 11 · CONTACTO ═══════════════════════════════════════════════ -->
+<section class="contacto" id="contacto" aria-labelledby="t-contacto">
+  <div class="ancho contacto__cols">
+    <div>
+      <p class="rotulo">Cuándo y dónde</p>
+      <h2 id="t-contacto">De martes a sábado,<br>sin cerrar a las cuatro.</h2>
+      <p>El horario publicado es un bloque corrido de diez horas. En un pueblo donde casi toda cocina cierra entre las <span class="mono">15:30</span> y las <span class="mono">19:30</span>, el que baja del auto a las cuatro de la tarde se encuentra todo cerrado —menos acá.</p>
+      <p class="contacto__plan"><b>Y el fin de semana se planifica al revés:</b> domingo y lunes están cerrados. Si el paseo incluye domingo, la mesa es el sábado.</p>
+
+      <table class="horas">
+        <caption class="mono">Horario publicado</caption>
+        <tbody>
+          <tr><th scope="row">Martes a sábado</th><td class="mono">12:00 – 22:00</td></tr>
+          <tr><th scope="row">Domingo</th><td class="mono">Cerrado</td></tr>
+          <tr><th scope="row">Lunes</th><td class="mono">Cerrado</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div>
+      <dl class="datos">
+        <div>
+          <dt>Dirección</dt>
+          <dd class="ej" data-ejemplo="312 o 316 · lo confirma Marbesán">
+            Martínez de Rozas <span class="mono tel">312</span> o <span class="mono tel">316</span>, casi llegando a la Costanera. Panguipulli, Región de Los Ríos.
+            <span class="dd__n">Tripadvisor dice 312 y un directorio dice 316. Un dígito de diferencia, y es la puerta a la que llega el cliente.</span>
+          </dd>
+        </div>
+        <div>
+          <dt>Teléfono</dt>
+          <dd class="ej" data-ejemplo="dos datos en internet · lo confirma Marbesán">
+            <a class="mono tel" href="tel:+56994885808">+56 9 9488 5808</a><br>
+            <a class="mono tel" href="tel:+56986034164">+56 9 8603 4164</a><br>
+            <span class="dd__n">Aparecen los dos en internet y se diferencian desde el cuarto dígito. Los dos se pueden marcar desde el celular: esta página no esconde ninguno. El botón verde de WhatsApp usa el primero, que es el que publica Tripadvisor —la misma ficha de donde salen el puesto y la dirección—, y se cambia en un minuto si el bueno es el otro.</span>
+          </dd>
+        </div>
+        <div>
+          <dt>Instagram</dt>
+          <dd class="ej" data-ejemplo="sin comprobar · no se enlaza todavía"><span class="mono">@marbesan_</span> — figura en un directorio, no se pudo comprobar. Por eso está escrito y no enlazado.</dd>
+        </div>
+        <div>
+          <dt>Servicio</dt>
+          <dd>En mesa y para llevar. Hay opciones vegetarianas.</dd>
+        </div>
+      </dl>
+      <p class="contacto__ir"><a class="boton" href="#carta">Volver a la carta</a></p>
+    </div>
+  </div>
+</section>
+
+<!-- ══ 12 · LA SECCIÓN DEL DUEÑO ═══════════════════════════════════ -->
+<section class="dueno" aria-labelledby="t-dueno">
+  <div class="ancho">
+    <p class="rotulo">Para el dueño de Marbesán</p>
+    <h2 id="t-dueno">Por qué te preparé esto.</h2>
+
+    <div class="dueno__cols">
+      <div>
+        <h3 class="mono">Lo que encontré · 09-09-2026</h3>
+        <ul class="lista lista--marca">
+          <li><b>No hay sitio propio.</b> Lo que aparece de Marbesán son fichas de terceros: Google, Tripadvisor y dos directorios.</li>
+          <li><b>4,3 con 45 opiniones</b> en Google y <b>#6 de 36</b> en Tripadvisor con 4,7. Eso ya lo ganaste.</li>
+          <li><b>La carta no está en ninguna parte.</b> Los platos de esta página los saqué de lo que escribieron tus clientes al opinar.</li>
+          <li><b>Dos teléfonos y dos números de calle</b> circulando: 312 y 316; 9488 5808 y 8603 4164.</li>
+          <li>Se menciona un menú digital en otro servicio, sin enlace que funcione.</li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="mono">Por qué eso importa en tu rubro</h3>
+        <p>El que llega a Panguipulli en auto decide dónde come mirando el teléfono, y decide en dos minutos. Si al buscarte encuentra tres fichas que dicen cosas distintas y ninguna carta, se va a la que sí muestra el plato. Tus cinco vecinos con página se venden todos por <i>ambiente</i>: mesa larga, terraza, pizarra. Ninguno muestra de qué porte viene lo que sirve.</p>
+        <p>Tu ventaja está dicha por 45 personas —«porciones generosas»— y no está escrita en ningún lado. Eso es lo que hace esta página.</p>
+      </div>
+      <div>
+        <h3 class="mono">Lo primero que necesito de ti</h3>
+        <ol class="lista lista--num">
+          <li><b>Cuál de los dos teléfonos es</b>. El botón verde de WhatsApp está apuntando al que publica Tripadvisor, el <span class="mono">+56 9 9488 5808</span>. Tócalo: si se abre tu chat, quedó bueno; si se abre otro, es el <span class="mono">+56 9 8603 4164</span> y lo cambio en un minuto.</li>
+          <li><b>312 o 316.</b></li>
+          <li><b>La carta de verdad</b>, aunque sea una foto de la pizarra.</li>
+          <li><b>¿La cocina de verdad no cierra a las cuatro?</b> Si me lo confirmas, eso pasa a ser el titular de la página: en Panguipulli es un argumento de venta enorme y no lo está usando nadie.</li>
+          <li>Diez fotos tuyas: los platos que ya sabes cuáles son.</li>
+        </ol>
+      </div>
+    </div>
+
+    <h3 class="mono">Qué es de verdad y qué es ejemplo en esta demo</h3>
+    <ul class="lista">
+      <li><b>De verdad:</b> el nombre, la calle, el horario publicado, los días cerrados, la nota de Google con sus 45 opiniones, el puesto en Tripadvisor, que atienden en mesa y para llevar y que hay opciones vegetarianas.</li>
+      <li><b>De verdad, pero dicho por clientes y no por ti:</b> los nueve platos y los tres tragos con nombre propio. Están en las opiniones.</li>
+      <li><b>Ejemplo, marcado con puntitos en la página:</b> los diámetros de los platos, qué lleva cada trago, el número de la calle y el teléfono.</li>
+      <li><b>Fotos:</b> ninguna es del local. Son de bancos libres y están para mostrar el formato.</li>
+    </ul>
+
+    <p class="dueno__cierre">
+      <a class="flecha flecha--fuerte" href="mailto:cristalwebcl@gmail.com?subject=Marbes%C3%A1n%20%E2%80%94%20la%20p%C3%A1gina">Escribirme por correo <span aria-hidden="true">→</span></a>
+      <a class="flecha" href="https://yordyserna.github.io/" target="_blank" rel="noopener">Ver otros trabajos de CristalWeb <span aria-hidden="true">→</span></a>
+    </p>
+  </div>
+</section>
+
+</main>
+
+<footer class="pie">
+  <div class="ancho pie__in">
+    <p>Demostración sin encargo, preparada por <b>CristalWeb</b> — desarrollo web en Loncoche.<br>Las fotografías y los dos clips son de bancos de uso libre y <b>no corresponden al local de Marbesán</b>. La carta que aparece está armada con los platos que los clientes nombraron en sus opiniones públicas.</p>
+    <p class="pie__leg">Esta página no publica precios y no toma pedidos ni reservas. Horario, dirección y teléfono los confirma el negocio: los datos marcados con línea punteada están pendientes de confirmación a la fecha de esta demo.</p>
+  </div>
+</footer>
+
+<!-- ══ WHATSAPP FLOTANTE ═══════════════════════════════════════════
+     Va escrito en el HTML, no lo crea el JS: si el script no arranca,
+     el botón igual está. El JS sólo lo aparta mientras se mira la
+     portada, para no tapar el titular.
+
+     El número es el de Tripadvisor, que es la fuente que esta página ya
+     cita para el puesto y para la dirección. Hay un segundo número en
+     un directorio y sigue escrito en contacto, marcado como pendiente:
+     el botón no lo esconde, sólo elige la fuente más fuerte para poder
+     abrir el chat de verdad. Icono de simple-icons (CC0), incrustado:
+     la CSP no deja pedir nada a un tercero. -->
+<!-- OJO: el numero esta por confirmar. Hay dos publicados y no coinciden (ver
+     imagenes/FUENTES.txt y la seccion de contacto). Va el de Tripadvisor porque
+     es el de la ficha con mas trafico, y la etiqueta lo dice en voz alta para
+     que el dueno lo corrija en la reunion. -->
+<a class="wapp wapp--dudoso" href="https://wa.me/56994885808" aria-label="Escribir por WhatsApp a Marbesán. Atención: el número está por confirmar con el dueño">
+  <svg class="wapp__i" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"/></svg>
+  <span class="wapp__t">WhatsApp</span>
+</a>
+
+<script src="js/main.js"></script>
+</body>
+</html>
