@@ -1,0 +1,18 @@
+﻿FUENTES DE LAS IMAGENES - maritza-salones-spa-nunoa Bancos libres; procesadas con preparar-lote.ps1 (JPEG, ancho y calidad por tratamiento). 
+tajo-01.jpg  <=  pexels | Pexels License | Wilcle Nunes | https://www.pexels.com/es-es/foto/casas-casa-mesa-lujo-27165072/ | https://images.pexels.com/photos/27165072/pexels-photo-27165072.jpeg | recorte 21:9
+mit-01.jpg  <=  pexels | Pexels License | Marine Fougère | https://www.pexels.com/es-es/foto/interior-de-spa-sereno-con-mesa-de-masaje-y-vela-35884502/ | https://images.pexels.com/photos/35884502/pexels-photo-35884502.jpeg | recorte 4:5
+cita-01.jpg  <=  pexels | Pexels License | Wilcle Nunes | https://www.pexels.com/es-es/foto/casas-casa-planta-lujo-27165066/ | https://images.pexels.com/photos/27165066/pexels-photo-27165066.jpeg | recorte 16:9
+telon-01.jpg  <=  pexels | Pexels License | Tima Miroshnichenko | https://www.pexels.com/es-es/foto/blanco-toallas-jarrones-floreros-6186752/ | https://images.pexels.com/photos/6186752/pexels-photo-6186752.jpeg
+mos1-01.jpg  <=  pexels | Pexels License | Wilcle Nunes | https://www.pexels.com/es-es/foto/casas-casa-lujo-plantas-27165067/ | https://images.pexels.com/photos/27165067/pexels-photo-27165067.jpeg | recorte 3:4
+mos2-01.jpg  <=  pexels | Pexels License | Marine Fougère | https://www.pexels.com/es-es/foto/acogedora-mesa-de-masaje-de-spa-con-vela-y-decoracion-35884499/ | https://images.pexels.com/photos/35884499/pexels-photo-35884499.jpeg | recorte 3:4
+mos3-01.jpg  <=  pexels | Pexels License | Tima Miroshnichenko | https://www.pexels.com/es-es/foto/manos-relajacion-centro-termal-balneario-6187305/ | https://images.pexels.com/photos/6187305/pexels-photo-6187305.jpeg | recorte 3:4
+mos4-01.jpg  <=  pexels | Pexels License | Wilcle Nunes | https://www.pexels.com/es-es/foto/casas-casa-lujo-plantas-27165068/ | https://images.pexels.com/photos/27165068/pexels-photo-27165068.jpeg | recorte 3:4
+mos5-01.jpg  <=  pexels | Pexels License | Tima Miroshnichenko | https://www.pexels.com/es-es/foto/blanco-velas-toallas-jarrones-6186740/ | https://images.pexels.com/photos/6186740/pexels-photo-6186740.jpeg | recorte 3:4
+mos6-01.jpg  <=  pexels | Pexels License | Maps Digital Marketing | https://www.pexels.com/es-es/foto/rincon-de-meditacion-interior-tranquilo-con-plantas-38843954/ | https://images.pexels.com/photos/38843954/pexels-photo-38843954.jpeg | recorte 3:4
+
+MAPA DE UBICACION — mapa-01.jpg
+  768 x 768 · zoom 16 · centro -33.4605799, -70.6102929
+  Mosaicos de OpenStreetMap pegados en una sola imagen, con el marcador
+  dibujado encima. Datos (c) OpenStreetMap contributors, licencia ODbL:
+  la atribucion tiene que ir VISIBLE junto al mapa, en el pie de la figura.
+  https://www.openstreetmap.org/copyright

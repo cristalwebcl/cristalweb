@@ -1,0 +1,22 @@
+FUENTES DE LAS IMAGENES - InnovaDent Rehecha el 13-09-2026 (presentacion antes que texto). Fotos de REFERENCIA de bancos libres: ninguna es del local; las verdaderas las tiene que mandar el negocio. 
+port-01.jpg  <-  pozo-p-inn-espejo\003.jpg  |  pexels (Pexels License)  |  autor: Andrii Kushniruk  |  https://www.pexels.com/es-es/foto/medicina-plata-plateado-espejo-15613762/  |  consulta: "dental mirror"
+hund1-01.jpg  <-  pozo-p-inn-espejo\009.jpg  |  pexels (Pexels License)  |  autor: Ivan Babydov  |  https://www.pexels.com/es-es/foto/mano-goma-caucho-limpiar-7787975/  |  consulta: "dental mirror"
+hund2-01.jpg  <-  pozo-p-inn-espejo\005.jpg  |  pexels (Pexels License)  |  autor: Busenur Demirkan  |  https://www.pexels.com/es-es/foto/herramientas-dentales-y-modelos-de-dientes-en-una-clinica-31786502/  |  consulta: "dental mirror"
+hund3-01.jpg  <-  pozo-p-inn-porcelana\010.jpg  |  pexels (Pexels License)  |  autor: DRAKE NICOLLS  |  https://www.pexels.com/es-es/foto/blanco-florero-jarron-naturaleza-muerta-11170803/  |  consulta: "porcelain"
+hund4-01.jpg  <-  pozo-p-inn-rayos\010.jpg  |  pexels (Pexels License)  |  autor: Cedric Fauntleroy  |  https://www.pexels.com/es-es/foto/manos-ipad-dientes-tableta-digital-4270367/  |  consulta: "dental x-ray"
+hund5-01.jpg  <-  pozo-p-inn-espejo\008.jpg  |  pexels (Pexels License)  |  autor: https://kaboompics.com/  |  https://www.pexels.com/es-es/foto/chrome-cromo-medico-equipo-6627671/  |  consulta: "dental mirror"
+hund6-01.jpg  <-  pozo-p-inn-rayos\006.jpg  |  pexels (Pexels License)  |  autor: Nadezhda Moryak  |  https://www.pexels.com/es-es/foto/varano-varanus-vigilante-monitor-7800665/  |  consulta: "dental x-ray"
+banda-01.jpg  <-  pozo-p-inn-orquidea\009.jpg  |  pexels (Pexels License)  |  autor: Dehbia kouadria  |  https://www.pexels.com/es-es/foto/amarillo-petalos-blanco-flor-7580029/  |  consulta: "white orchid"
+cita-01.jpg  <-  pozo-p-inn-edificio\002.jpg  |  pexels (Pexels License)  |  autor: Teté  Gallardo Batista  |  https://www.pexels.com/es-es/foto/ciudad-edificios-arquitectura-ventanas-7488916/  |  consulta: "glass office building"
+mos1-01.jpg  <-  pozo-p-inn-rayos\004.jpg  |  pexels (Pexels License)  |  autor: cottonbro studio  |  https://www.pexels.com/es-es/foto/tecnologia-ordenador-clinica-dispositivo-6501862/  |  consulta: "dental x-ray"
+mos2-01.jpg  <-  pozo-p-inn-orquidea\012.jpg  |  pexels (Pexels License)  |  autor: Petr Ganaj  |  https://www.pexels.com/es-es/foto/planta-fresco-crecimiento-floreciente-4136888/  |  consulta: "white orchid"
+mos3-01.jpg  <-  pozo-p-inn-espejo\006.jpg  |  pexels (Pexels License)  |  autor: Polina Zimmerman  |  https://www.pexels.com/es-es/foto/mesa-limpiar-limpio-herramientas-4687286/  |  consulta: "dental mirror"
+mos4-01.jpg  <-  pozo-p-inn-acero\006.jpg  |  pexels (Pexels License)  |  autor: Jan van der Wolf  |  https://www.pexels.com/es-es/foto/foto-de-primer-plano-de-un-sobre-metalico-minimalista-36272828/  |  consulta: "brushed steel"
+mos5-01.jpg  <-  pozo-p-inn-edificio\012.jpg  |  pexels (Pexels License)  |  autor: Luis G  |  https://www.pexels.com/es-es/foto/ciudad-punto-de-referencia-edificio-arquitectura-20372820/  |  consulta: "glass office building"
+mos6-01.jpg  <-  pozo-p-inn-rayos\008.jpg  |  pexels (Pexels License)  |  autor: cottonbro studio  |  https://www.pexels.com/es-es/foto/clinica-equipo-dental-rayos-x-6501852/  |  consulta: "dental x-ray"
+
+BRUMA (bruma-pag-0N.png y bruma-osc-0N.png, 30x20): las MISMAS fotos, recortadas a 3:2, reducidas y
+recoloreadas con C:\devs\demos\hacer-bruma.ps1 (clara >= 0,68 de luminancia / oscura <= 0,05). No suman fuentes.
+    pagina: port-01.jpg, banda-01.jpg, cita-01.jpg, hund1-01.jpg, hund3-01.jpg, mos2-01.jpg, mos3-01.jpg, mos4-01.jpg   |   oscuras: port-01.jpg, cita-01.jpg, banda-01.jpg
+
+MAPA: iframe de Google Maps (embed publico, sin clave). No hay imagen de mapa.

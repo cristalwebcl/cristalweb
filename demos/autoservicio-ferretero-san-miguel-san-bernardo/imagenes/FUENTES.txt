@@ -1,0 +1,22 @@
+FUENTES DE LAS IMAGENES - Autoservicio Ferretero San Miguel Rehecha el 14-09-2026 (presentacion antes que texto). Fotos de REFERENCIA de bancos libres: ninguna es del local; las verdaderas las tiene que mandar el negocio. 
+port-01.jpg  <-  pozo-p-smg-pasillo\011.jpg  |  pexels (Pexels License)  |  autor: Eduardo Soares  |  https://www.pexels.com/es-es/foto/compras-comprando-supermercado-espacio-para-texto-5498233/  |  consulta: "store aisle shelves blurry"
+hund1-01.jpg  <-  pozo-p-smg-cajon\009.jpg  |  pexels (Pexels License)  |  autor: Ksenia Chernaya  |  https://www.pexels.com/es-es/foto/conjunto-de-varias-herramientas-en-caja-5691650/  |  consulta: "screws drawer organizer"
+hund2-01.jpg  <-  pozo-p-smg-pasillo\003.jpg  |  pexels (Pexels License)  |  autor: Pok Rie  |  https://www.pexels.com/es-es/foto/comida-ligero-oferta-ofrecer-5490225/  |  consulta: "store aisle shelves blurry"
+hund3-01.jpg  <-  pozo-p-smg-copia\001.jpg  |  pexels (Pexels License)  |  autor: Miguel Á. Padriñán  |  https://www.pexels.com/es-es/foto/industria-metal-reflejo-reflexion-16679644/  |  consulta: "key duplicating machine"
+hund4-01.jpg  <-  pozo-p-smg-cajon\011.jpg  |  pexels (Pexels License)  |  autor: Antoni Shkraba  |  https://www.pexels.com/es-es/foto/madera-metal-de-madera-herramientas-5853939/  |  consulta: "screws drawer organizer"
+hund5-01.jpg  <-  pozo-p-smg-bodega\010.jpg  |  pexels (Pexels License)  |  autor: imeenhae  |  https://www.pexels.com/es-es/foto/arquitectura-fabrica-almacen-fila-4277794/  |  consulta: "cardboard boxes warehouse shelves"
+hund6-01.jpg  <-  pozo-p-smg-timbre\010.jpg  |  pexels (Pexels License)  |  autor: Boris Hamer  |  https://www.pexels.com/es-es/foto/vintage-campana-retro-bronce-18929482/  |  consulta: "service bell counter"
+banda-01.jpg  <-  pozo-p-smg-bodega\008.jpg  |  pexels (Pexels License)  |  autor: Stacey Koenitz  |  https://www.pexels.com/es-es/foto/almacen-almacenar-almacenamiento-estanteria-8377802/  |  consulta: "cardboard boxes warehouse shelves"
+cita-01.jpg  <-  pozo-p-smg-timbre\005.jpg  |  pexels (Pexels License)  |  autor: cottonbro studio  |  https://www.pexels.com/es-es/foto/primer-plano-de-una-campana-de-oro-sobre-un-escritorio-5378701/  |  consulta: "service bell counter"
+mos1-01.jpg  <-  pozo-p-smg-flecha\004.jpg  |  pexels (Pexels License)  |  autor: Jan van der Wolf  |  https://www.pexels.com/es-es/foto/senalizacion-vial-conceptual-senal-de-trafico-senal-de-direccion-9972849/  |  consulta: "blue arrow sign"
+mos2-01.jpg  <-  pozo-p-smg-cajon\006.jpg  |  pexels (Pexels License)  |  autor: Ksenia Chernaya  |  https://www.pexels.com/es-es/foto/construccion-metal-mesa-efecto-desenfocado-5691658/  |  consulta: "screws drawer organizer"
+mos3-01.jpg  <-  pozo-p-smg-timbre\004.jpg  |  pexels (Pexels License)  |  autor: Şahin Doğdu  |  https://www.pexels.com/es-es/foto/timbre-clasico-de-hotel-sobre-superficie-de-madera-28744939/  |  consulta: "service bell counter"
+mos4-01.jpg  <-  pozo-p-smg-tinte\012.jpg  |  pexels (Pexels License)  |  autor: Anni Roenkae  |  https://www.pexels.com/es-es/foto/foto-de-ilustracion-multicolor-2832468/  |  consulta: "paint tint mixing"
+mos5-01.jpg  <-  pozo-p-smg-bodega\007.jpg  |  pexels (Pexels License)  |  autor: Ryan Klaus  |  https://www.pexels.com/es-es/foto/construccion-almacen-interior-almacenamiento-27111449/  |  consulta: "cardboard boxes warehouse shelves"
+mos6-01.jpg  <-  pozo-p-smg-flecha\008.jpg  |  pexels (Pexels License)  |  autor: Jan van der Wolf  |  https://www.pexels.com/es-es/foto/senal-de-trafico-rustica-sobre-pared-texturizada-37132433/  |  consulta: "blue arrow sign"
+
+BRUMA (bruma-pag-0N.png y bruma-osc-0N.png, 30x20): las MISMAS fotos, recortadas a 3:2, reducidas y
+recoloreadas con C:\devs\demos\hacer-bruma.ps1 (clara >= 0,68 de luminancia / oscura <= 0,05). No suman fuentes.
+    pagina: port-01.jpg, banda-01.jpg, cita-01.jpg, mos1-01.jpg, hund2-01.jpg   |   oscuras: port-01.jpg, cita-01.jpg, mos1-01.jpg
+
+MAPA: iframe de Google Maps (embed publico, sin clave). No hay imagen de mapa.

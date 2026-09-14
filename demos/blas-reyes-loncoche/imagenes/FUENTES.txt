@@ -35,3 +35,10 @@ URL de origen de las nuevas:
 001.jpg | 5616x3744 | Human Holding a Bread · Free Stock Photo | https://images.pexels.com/photos/263168/pexels-photo-263168.jpeg?cs=srgb&dl=bread-food-hands-263168.jpg&fm=jpg
 002.jpg | 4160x6240 | Baker Preparing Dough Balls in a Modern Kitchen · Free Stock Photo | https://images.pexels.com/photos/33210360/pexels-photo-33210360.jpeg?cs=srgb&dl=pexels-damla-selen-demir-429137893-33210360.jpg&fm=jpg
 003.jpg | 3840x2025 | Person Kneading a Dough · Free Stock Video | https://images.pexels.com/videos/8180413/arts-and-crafts-at-home-at-table-baker-8180413.jpeg?cs=srgb&dl=pexels-ron-lach-8180413.jpg&fm=jpg
+
+MAPA DE UBICACION — mapa-01.jpg
+  768 x 768 · zoom 14 · centro -39.370616, -72.6300704
+  Mosaicos de OpenStreetMap pegados en una sola imagen, con el marcador
+  dibujado encima. Datos (c) OpenStreetMap contributors, licencia ODbL:
+  la atribucion tiene que ir VISIBLE junto al mapa, en el pie de la figura.
+  https://www.openstreetmap.org/copyright

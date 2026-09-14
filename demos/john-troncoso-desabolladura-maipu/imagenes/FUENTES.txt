@@ -1,0 +1,22 @@
+FUENTES DE LAS IMAGENES - John Troncoso Rehecha el 14-09-2026 (presentacion antes que texto). Fotos de REFERENCIA de bancos libres: ninguna es del local; las verdaderas las tiene que mandar el negocio. 
+port-01.jpg  <-  pozo-p-jt-laca\008.jpg  |  pexels (Pexels License)  |  autor: Withanonim  |  https://www.pexels.com/es-es/foto/luces-faro-delantero-luz-delantera-coche-antiguo-11578479/  |  consulta: "car paint glossy reflection"
+hund1-01.jpg  <-  pozo-p-jt-cinta\003.jpg  |  pexels (Pexels License)  |  autor: egeardaphotos  |  https://www.pexels.com/es-es/foto/mazda-323-33348239/  |  consulta: "masking tape car"
+hund2-01.jpg  <-  pozo-p-jt-mezcla\003.jpg  |  pexels (Pexels License)  |  autor: cottonbro studio  |  https://www.pexels.com/es-es/foto/taza-copa-agua-vaso-7493880/  |  consulta: "paint mixing cup"
+hund3-01.jpg  <-  pozo-p-jt-pistola\002.jpg  |  pexels (Pexels License)  |  autor: Tima Miroshnichenko  |  https://www.pexels.com/es-es/foto/blanco-y-negro-naturaleza-muerta-objeto-objetar-6474297/  |  consulta: "spray gun paint"
+hund4-01.jpg  <-  pozo-p-jt-taller\002.jpg  |  pexels (Pexels License)  |  autor: Tomás Asurmendi  |  https://www.pexels.com/es-es/foto/automotores-31420900/  |  consulta: "auto body shop garage"
+hund5-01.jpg  <-  pozo-p-jt-pulido\006.jpg  |  pexels (Pexels License)  |  autor: Khunkorn Laowisit  |  https://www.pexels.com/es-es/foto/persona-manos-trabajando-coche-5233291/  |  consulta: "car polishing buffer"
+hund6-01.jpg  <-  pozo-p-jt-azul\003.jpg  |  pexels (Pexels License)  |  autor: Santiago Manuel De la Colina  |  https://www.pexels.com/es-es/foto/pintura-abstracta-texturizada-en-azul-y-blanco-30414197/  |  consulta: "paint color swatches blue"
+banda-01.jpg  <-  pozo-p-jt-pulido\001.jpg  |  pexels (Pexels License)  |  autor: Orhun Rüzgar  ÖZ  |  https://www.pexels.com/es-es/foto/mano-coche-negro-al-aire-libre-6026083/  |  consulta: "car polishing buffer"
+cita-01.jpg  <-  pozo-p-jt-pulido\010.jpg  |  pexels (Pexels License)  |  autor: Khunkorn Laowisit  |  https://www.pexels.com/es-es/foto/una-persona-puliendo-un-coche-5233261/  |  consulta: "car polishing buffer"
+mos1-01.jpg  <-  pozo-p-jt-laca\004.jpg  |  pexels (Pexels License)  |  autor: Pablo Fernandez  |  https://www.pexels.com/es-es/foto/primer-plano-del-diseno-de-la-ventilacion-del-coche-deportivo-rojo-39408533/  |  consulta: "car paint glossy reflection"
+mos2-01.jpg  <-  pozo-p-jt-azul\005.jpg  |  pexels (Pexels License)  |  autor: David Underland  |  https://www.pexels.com/es-es/foto/azul-modelo-estampado-rayas-6659081/  |  consulta: "paint color swatches blue"
+mos3-01.jpg  <-  pozo-p-jt-azul\007.jpg  |  pexels (Pexels License)  |  autor: Lorena Martínez  |  https://www.pexels.com/es-es/foto/pintura-azul-sobre-superficie-blanca-2351865/  |  consulta: "paint color swatches blue"
+mos4-01.jpg  <-  pozo-p-jt-azul\004.jpg  |  pexels (Pexels License)  |  autor: Marco Alhelm  |  https://www.pexels.com/es-es/foto/la-mansion-del-fundador-en-arequipa-peru-28523491/  |  consulta: "paint color swatches blue"
+mos5-01.jpg  <-  pozo-p-jt-mezcla\012.jpg  |  pexels (Pexels License)  |  autor: cottonbro studio  |  https://www.pexels.com/es-es/foto/arte-taza-copa-trabajando-7493818/  |  consulta: "paint mixing cup"
+mos6-01.jpg  <-  pozo-p-jt-azul\009.jpg  |  pexels (Pexels License)  |  autor: Eva Bronzini  |  https://www.pexels.com/es-es/foto/arte-naturaleza-muerta-vista-superior-espacio-para-texto-6569146/  |  consulta: "paint color swatches blue"
+
+BRUMA (bruma-pag-0N.png y bruma-osc-0N.png, 30x20): las MISMAS fotos, recortadas a 3:2, reducidas y
+recoloreadas con C:\devs\demos\hacer-bruma.ps1 (clara >= 0,68 de luminancia / oscura <= 0,05). No suman fuentes.
+    pagina: cita-01.jpg, hund2-01.jpg, mos2-01.jpg, mos3-01.jpg, hund6-01.jpg   |   oscuras: cita-01.jpg, mos2-01.jpg, mos3-01.jpg
+
+MAPA: iframe de Google Maps (embed publico, sin clave). No hay imagen de mapa.

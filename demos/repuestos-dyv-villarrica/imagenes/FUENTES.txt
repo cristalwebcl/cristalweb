@@ -1,0 +1,21 @@
+FUENTES DE LAS IMAGENES - Repuestos D&amp;V Rehecha el 13-09-2026 (presentacion antes que texto). Fotos de REFERENCIA de bancos libres: ninguna es del local; las verdaderas las tiene que mandar el negocio. 
+port-01.jpg  <-  pozo-p-rep-piezas\004.jpg  |  pexels (Pexels License)  |  autor: Tahamie Farooqui  |  https://www.pexels.com/es-es/foto/oscuro-industria-metal-tecnologia-19499409/  |  consulta: "car parts"
+banda-01.jpg  <-  pozo-p-rep-estante\009.jpg  |  pexels (Pexels License)  |  autor: cottonbro studio  |  https://www.pexels.com/es-es/foto/hombre-trabajando-almacen-adentro-7019213/  |  consulta: "spare parts shelf"
+cita-01.jpg  <-  pozo-p-rep-motor\011.jpg  |  pexels (Pexels License)  |  autor: cottonbro studio  |  https://www.pexels.com/es-es/foto/motor-muelles-partes-cabeza-de-cilindro-7565172/  |  consulta: "engine parts"
+hund1-01.jpg  <-  pozo-p-rep-espejo\006.jpg  |  pexels (Pexels License)  |  autor: Pixabay  |  https://www.pexels.com/es-es/foto/espejo-de-ala-de-coche-negro-461890/  |  consulta: "car mirror"
+hund2-01.jpg  <-  pozo-p-rep-pastillas\005.jpg  |  pexels (Pexels License)  |  autor: agustin olmedo  |  https://www.pexels.com/es-es/foto/mantenimiento-de-frenos-de-automoviles-en-taller-30470930/  |  consulta: "brake pads"
+hund3-01.jpg  <-  pozo-p-rep-motor\002.jpg  |  pexels (Pexels License)  |  autor: Erik Mclean  |  https://www.pexels.com/es-es/foto/industria-metal-coche-vehiculo-5158155/  |  consulta: "engine parts"
+hund4-01.jpg  <-  pozo-p-rep-estante\003.jpg  |  pexels (Pexels License)  |  autor: cottonbro studio  |  https://www.pexels.com/es-es/foto/almacen-almacenamiento-estanteria-estantes-7019311/  |  consulta: "spare parts shelf"
+hund5-01.jpg  <-  pozo-p-rep-pastillas\009.jpg  |  pexels (Pexels License)  |  autor: Erik Mclean  |  https://www.pexels.com/es-es/foto/primer-plano-de-la-pinza-y-el-disco-de-freno-del-automovil-34277926/  |  consulta: "brake pads"
+mos1-01.jpg  <-  pozo-p-rep-estante\012.jpg  |  pexels (Pexels License)  |  autor: Yetkin Ağaç  |  https://www.pexels.com/es-es/foto/estanterias-industriales-con-moldes-de-metal-en-almacen-34718928/  |  consulta: "spare parts shelf"
+mos2-01.jpg  <-  pozo-p-rep-piezas\003.jpg  |  pexels (Pexels License)  |  autor: Tahamie Farooqui  |  https://www.pexels.com/es-es/foto/industria-vehiculo-tecnologia-herramientas-19499386/  |  consulta: "car parts"
+mos3-01.jpg  <-  pozo-p-auto-freno\006.jpg  |  pexels (Pexels License)  |  autor: Jae Park  |  https://www.pexels.com/es-es/foto/metal-roto-coche-vehiculo-4022545/  |  consulta: "brake disc"
+mos4-01.jpg  <-  pozo-p-rep-estante\011.jpg  |  pexels (Pexels License)  |  autor: Tima Miroshnichenko  |  https://www.pexels.com/es-es/foto/coches-industria-deporte-almacen-5640634/  |  consulta: "spare parts shelf"
+mos5-01.jpg  <-  pozo-p-rep-espejo\010.jpg  |  pexels (Pexels License)  |  autor: Danila  Popov  |  https://www.pexels.com/es-es/foto/coche-efecto-desenfocado-ver-vistas-11183218/  |  consulta: "car mirror"
+mos6-01.jpg  <-  pozo-p-rep-motor\010.jpg  |  pexels (Pexels License)  |  autor: Nuno Silva  |  https://www.pexels.com/es-es/foto/blanco-y-negro-metal-plata-plateado-16077292/  |  consulta: "engine parts"
+
+BRUMA (bruma-pag-0N.png y bruma-osc-0N.png, 30x20): las MISMAS fotos, recortadas a 3:2, reducidas y
+recoloreadas con C:\devs\demos\hacer-bruma.ps1 (clara >= 0,68 de luminancia / oscura <= 0,05). No suman fuentes.
+    pagina: port-01.jpg, banda-01.jpg, cita-01.jpg, hund1-01.jpg, hund2-01.jpg, hund4-01.jpg, mos1-01.jpg, mos5-01.jpg   |   oscuras: port-01.jpg, cita-01.jpg, hund5-01.jpg
+
+MAPA: iframe de Google Maps (embed publico, sin clave). No hay imagen de mapa.

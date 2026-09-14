@@ -1,0 +1,22 @@
+FUENTES DE LAS IMAGENES - San NicolÃ¡s Rehecha el 13-09-2026 (presentacion antes que texto). Fotos de REFERENCIA de bancos libres: ninguna es del local; las verdaderas las tiene que mandar el negocio. 
+port-01.jpg  <-  pozo-p-snic-luz\012.jpg  |  pexels (Pexels License)  |  autor: sanket mahind  |  https://www.pexels.com/es-es/foto/habitacion-suelo-interior-sombra-18707513/  |  consulta: "quiet morning light room"
+hund1-01.jpg  <-  pozo-p-snic-calma\003.jpg  |  pexels (Pexels License)  |  autor: Jackie Carpenter  |  https://www.pexels.com/es-es/foto/perro-tranquilo-durmiendo-bajo-la-calida-luz-del-sol-en-el-interior-32133640/  |  consulta: "dog calm resting"
+hund2-01.jpg  <-  pozo-p-snic-espera\005.jpg  |  pexels (Pexels License)  |  autor: Pal Eyes  |  https://www.pexels.com/es-es/foto/ventanas-habitacion-interior-asientos-15493411/  |  consulta: "empty waiting room chairs"
+hund3-01.jpg  <-  pozo-p-snic-espera\007.jpg  |  pexels (Pexels License)  |  autor: rachmat gusti  |  https://www.pexels.com/es-es/foto/banco-ventana-asientos-vacio-11569435/  |  consulta: "empty waiting room chairs"
+hund4-01.jpg  <-  pozo-p-snic-escondido\012.jpg  |  pexels (Pexels License)  |  autor: Mahmoud Yahyaoui  |  https://www.pexels.com/es-es/foto/gato-calico-relajandose-con-un-tapiz-ornamentado-35385809/  |  consulta: "cat hiding blanket"
+hund5-01.jpg  <-  pozo-p-snic-nariz\012.jpg  |  pexels (Pexels License)  |  autor: ROMAN ODINTSOV  |  https://www.pexels.com/es-es/foto/persona-animal-perro-mascota-6342014/  |  consulta: "dog nose close up"
+hund6-01.jpg  <-  pozo-p-snic-ventana\012.jpg  |  pexels (Pexels License)  |  autor: Valentin vorotnikova  |  https://www.pexels.com/es-es/foto/un-acogedor-gato-pelirrojo-duerme-junto-a-la-ventana-37440915/  |  consulta: "cat sleeping window"
+banda-01.jpg  <-  pozo-p-snic-escondido\006.jpg  |  pexels (Pexels License)  |  autor: Amanda Fagan  |  https://www.pexels.com/es-es/foto/animal-mascota-mono-ojos-19383638/  |  consulta: "cat hiding blanket"
+cita-01.jpg  <-  pozo-p-snic-ventana\009.jpg  |  pexels (Pexels License)  |  autor: Sami  Abdullah  |  https://www.pexels.com/es-es/foto/animal-mascota-ventana-gato-7993931/  |  consulta: "cat sleeping window"
+mos1-01.jpg  <-  pozo-p-snic-escondido\008.jpg  |  pexels (Pexels License)  |  autor: ERMAL TAHIRI  |  https://www.pexels.com/es-es/foto/bigotes-fotografia-de-animales-felino-domesticado-8750201/  |  consulta: "cat hiding blanket"
+mos2-01.jpg  <-  pozo-p-snic-ventana\010.jpg  |  pexels (Pexels License)  |  autor: Diana Solianyk  |  https://www.pexels.com/es-es/foto/gato-acogedor-durmiendo-en-el-alfeizar-de-una-ventana-de-madera-34178494/  |  consulta: "cat sleeping window"
+mos3-01.jpg  <-  pozo-p-snic-escondido\010.jpg  |  pexels (Pexels License)  |  autor: Diana ✨  |  https://www.pexels.com/es-es/foto/un-gato-acogedor-asomandose-entre-las-almohadas-33312306/  |  consulta: "cat hiding blanket"
+mos4-01.jpg  <-  pozo-p-snic-luz\006.jpg  |  pexels (Pexels License)  |  autor: Egor Kunovsky  |  https://www.pexels.com/es-es/foto/casa-hogar-sofa-mueble-6738989/  |  consulta: "quiet morning light room"
+mos5-01.jpg  <-  pozo-p-snic-nariz\009.jpg  |  pexels (Pexels License)  |  autor: https://kaboompics.com/  |  https://www.pexels.com/es-es/foto/animal-mascota-pelo-piel-5420744/  |  consulta: "dog nose close up"
+mos6-01.jpg  <-  pozo-p-snic-ventana\003.jpg  |  pexels (Pexels License)  |  autor: Aura  |  https://www.pexels.com/es-es/foto/naturaleza-ventanas-mascotas-ventana-27009354/  |  consulta: "cat sleeping window"
+
+BRUMA (bruma-pag-0N.png y bruma-osc-0N.png, 30x20): las MISMAS fotos, recortadas a 3:2, reducidas y
+recoloreadas con C:\devs\demos\hacer-bruma.ps1 (clara >= 0,68 de luminancia / oscura <= 0,05). No suman fuentes.
+    pagina: port-01.jpg, banda-01.jpg, cita-01.jpg, hund1-01.jpg, mos4-01.jpg   |   oscuras: port-01.jpg, banda-01.jpg, cita-01.jpg
+
+MAPA: iframe de Google Maps (embed publico, sin clave). No hay imagen de mapa.

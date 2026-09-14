@@ -1,0 +1,25 @@
+﻿FUENTES DE LAS IMAGENES - veterinaria-concha-y-toro-puente-alto Bancos libres; procesadas con preparar-lote.ps1 (JPEG, ancho y calidad por tratamiento). 
+tajo-01.jpg  <=  pexels | Pexels License | Ivan Babydov | https://www.pexels.com/es-es/foto/escritorio-cama-sillas-equipo-7789616/ | https://images.pexels.com/photos/7789616/pexels-photo-7789616.jpeg | recorte 21:9
+mit-01.jpg  <=  pexels | Pexels License | Augusto Caserotto | https://www.pexels.com/es-es/foto/elegante-retrato-de-perro-weimaraner-sobre-fondo-beige-32289948/ | https://images.pexels.com/photos/32289948/pexels-photo-32289948.jpeg | recorte 4:5
+cita-01.jpg  <=  pexels | Pexels License | Tara Winstead | https://www.pexels.com/es-es/foto/negro-papel-blanco-vista-superior-7723686/ | https://images.pexels.com/photos/7723686/pexels-photo-7723686.jpeg | recorte 16:9
+telon-01.jpg  <=  pexels | Pexels License | MART  PRODUCTION | https://www.pexels.com/es-es/foto/tecnologia-hospital-medicina-adentro-7089625/ | https://images.pexels.com/photos/7089625/pexels-photo-7089625.jpeg
+mos1-01.jpg  <=  pexels | Pexels License | Eduardo López | https://www.pexels.com/es-es/foto/perro-en-la-mesa-16618532/ | https://images.pexels.com/photos/16618532/pexels-photo-16618532.jpeg | recorte 3:4
+mos2-01.jpg  <=  pexels | Pexels License | German Suarez | https://www.pexels.com/es-es/foto/adorable-perro-mestizo-en-un-entorno-natural-36924252/ | https://images.pexels.com/photos/36924252/pexels-photo-36924252.jpeg | recorte 3:4
+mos3-01.jpg  <=  pexels | Pexels License | Ludovic Delot | https://www.pexels.com/es-es/foto/adorable-gato-jengibre-descansando-en-interiores-31440971/ | https://images.pexels.com/photos/31440971/pexels-photo-31440971.jpeg | recorte 3:4
+mos4-01.jpg  <=  pexels | Pexels License | Mike Art 🎥 Visual Creator | Photography and Video 📸 | https://www.pexels.com/es-es/foto/un-jugueton-jack-russell-terrier-en-la-playa-asturiana-39031868/ | https://images.pexels.com/photos/39031868/pexels-photo-39031868.jpeg | recorte 3:4
+mos5-01.jpg  <=  pexels | Pexels License | Tara Winstead | https://www.pexels.com/es-es/foto/papel-sabana-hoja-estetoscopio-7722917/ | https://images.pexels.com/photos/7722917/pexels-photo-7722917.jpeg | recorte 3:4
+mos6-01.jpg  <=  pexels | Pexels License | Lucero Estrella | https://www.pexels.com/es-es/foto/perro-amigable-de-color-negro-y-marron-con-arnes-rosa-al-aire-libre-37647467/ | https://images.pexels.com/photos/37647467/pexels-photo-37647467.jpeg | recorte 3:4
+
+MAPA DE UBICACION — mapa-01.jpg
+  768 x 768 · zoom 16 · centro -33.5691318, -70.5836051
+  Mosaicos de OpenStreetMap pegados en una sola imagen, con el marcador
+  dibujado encima. Datos (c) OpenStreetMap contributors, licencia ODbL:
+  la atribucion tiene que ir VISIBLE junto al mapa, en el pie de la figura.
+  https://www.openstreetmap.org/copyright
+
+MAPA DE UBICACION — mapa-01.jpg
+  768 x 768 · zoom 16 · centro -33.5691318, -70.5836051
+  Mosaicos de OpenStreetMap pegados en una sola imagen, con el marcador
+  dibujado encima. Datos (c) OpenStreetMap contributors, licencia ODbL:
+  la atribucion tiene que ir VISIBLE junto al mapa, en el pie de la figura.
+  https://www.openstreetmap.org/copyright

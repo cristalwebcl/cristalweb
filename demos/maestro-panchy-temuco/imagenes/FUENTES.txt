@@ -1,0 +1,20 @@
+FUENTES DE LAS IMAGENES - Maestro Panchy Rehecha el 13-09-2026 (presentacion antes que texto). Fotos de REFERENCIA de bancos libres: ninguna es del local; las verdaderas las tiene que mandar el negocio. 
+port-01.jpg  <-  pozo-p-elec-bateria\003.jpg  |  pexels (Pexels License)  |  autor: Ayyeee Ayyeee  |  https://www.pexels.com/es-es/foto/acercamiento-a-la-bateria-del-coche-en-el-compartimento-del-motor-37177070/  |  consulta: "car battery"
+banda-01.jpg  <-  pozo-p-elec-foco\005.jpg  |  pexels (Pexels License)  |  autor: 竟傲 汤  |  https://www.pexels.com/es-es/foto/blanco-y-negro-coche-vehiculo-faros-delanteros-7127593/  |  consulta: "car headlight"
+cita-01.jpg  <-  pozo-p-elec-cables\007.jpg  |  pexels (Pexels License)  |  autor: Nic Wood  |  https://www.pexels.com/es-es/foto/alambre-de-cobre-28286039/  |  consulta: "jumper cables"
+hund1-01.jpg  <-  pozo-p-elec-cables\003.jpg  |  pexels (Pexels License)  |  autor: Daniel @ bestjumpstarterreview.com  |  https://www.pexels.com/es-es/foto/coche-tuberia-cables-arreglando-5572271/  |  consulta: "jumper cables"
+hund2-01.jpg  <-  pozo-p-elec-multimetro\001.jpg  |  pexels (Pexels License)  |  autor: Willquezada  |  https://www.pexels.com/es-es/foto/industria-cable-monitor-mostrar-4398314/  |  consulta: "multimeter"
+hund3-01.jpg  <-  pozo-p-elec-foco\007.jpg  |  pexels (Pexels License)  |  autor: MaLeK DriDi  |  https://www.pexels.com/es-es/foto/faro-del-vehiculo-1428408/  |  consulta: "car headlight"
+hund4-01.jpg  <-  pozo-p-elec-cables\004.jpg  |  pexels (Pexels License)  |  autor: cottonbro studio  |  https://www.pexels.com/es-es/foto/colorido-de-colores-cable-de-conexion-cables-alambres-5658532/  |  consulta: "jumper cables"
+mos1-01.jpg  <-  pozo-p-elec-foco\005.jpg  |  pexels (Pexels License)  |  autor: 竟傲 汤  |  https://www.pexels.com/es-es/foto/blanco-y-negro-coche-vehiculo-faros-delanteros-7127593/  |  consulta: "car headlight"
+mos2-01.jpg  <-  pozo-p-elec-multimetro\003.jpg  |  pexels (Pexels License)  |  autor: Sphinxx69  |  https://www.pexels.com/es-es/foto/primer-plano-del-multimetro-y-las-herramientas-sobre-la-mesa-38292956/  |  consulta: "multimeter"
+mos3-01.jpg  <-  pozo-p-elec-foco\008.jpg  |  pexels (Pexels License)  |  autor: Khanh Nguyen  |  https://www.pexels.com/es-es/foto/primer-plano-del-faro-de-un-coche-en-un-vehiculo-plateado-38030206/  |  consulta: "car headlight"
+mos4-01.jpg  <-  pozo-p-elec-multimetro\012.jpg  |  pexels (Pexels License)  |  autor: Onics Energy  |  https://www.pexels.com/es-es/foto/hombre-industria-tecnologia-poder-14319099/  |  consulta: "multimeter"
+mos5-01.jpg  <-  pozo-p-elec-cables\001.jpg  |  pexels (Pexels License)  |  autor: Daniel @ bestjumpstarterreview.com  |  https://www.pexels.com/es-es/foto/hombre-manos-coche-sujetando-5572265/  |  consulta: "jumper cables"
+mos6-01.jpg  <-  pozo-p-elec-multimetro\007.jpg  |  pexels (Pexels License)  |  autor: Matej  |  https://www.pexels.com/es-es/foto/pinza-amperimetrica-a-2-metros-772444/  |  consulta: "multimeter"
+
+BRUMA (bruma-pag-0N.png y bruma-osc-0N.png, 30x20): las MISMAS fotos, recortadas a 3:2, reducidas y
+recoloreadas con C:\devs\demos\hacer-bruma.ps1 (clara >= 0,68 de luminancia / oscura <= 0,05). No suman fuentes.
+    pagina: port-01.jpg, banda-01.jpg, cita-01.jpg, hund1-01.jpg, hund2-01.jpg, hund3-01.jpg, hund4-01.jpg, mos4-01.jpg   |   oscuras: port-01.jpg, cita-01.jpg, hund3-01.jpg
+
+MAPA: iframe de Google Maps (embed publico, sin clave). No hay imagen de mapa.

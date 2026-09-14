@@ -1,0 +1,22 @@
+FUENTES DE LAS IMAGENES - Ferreteria Manuel Montt Rehecha el 13-09-2026 (presentacion antes que texto). Fotos de REFERENCIA de bancos libres: ninguna es del local; las verdaderas las tiene que mandar el negocio. 
+port-01.jpg  <-  pozo-p-mmontt-bronce\011.jpg  |  pexels (Pexels License)  |  autor: Magda Ehlers  |  https://www.pexels.com/es-es/foto/primer-plano-de-la-manija-de-un-grifo-de-agua-de-laton-envejecido-33585897/  |  consulta: "brass fittings"
+hund1-01.jpg  <-  pozo-p-mmontt-encargo\011.jpg  |  pexels (Pexels License)  |  autor: Ayrat  |  https://www.pexels.com/es-es/foto/apilar-pila-monton-cintas-12354555/  |  consulta: "parcel package shelf"
+hund2-01.jpg  <-  pozo-p-mmontt-bronce\002.jpg  |  pexels (Pexels License)  |  autor: Fish Steak Fries  |  https://www.pexels.com/es-es/foto/tuercas-frutos-secos-oro-dorado-14593018/  |  consulta: "brass fittings"
+hund3-01.jpg  <-  pozo-p-mmontt-tornillos\007.jpg  |  pexels (Pexels License)  |  autor: John Triwinata  |  https://www.pexels.com/es-es/foto/tornillos-de-metal-variados-en-cajas-de-almacenamiento-28867253/  |  consulta: "screws assortment"
+hund4-01.jpg  <-  pozo-p-mmontt-sierra\004.jpg  |  pexels (Pexels License)  |  autor: cottonbro studio  |  https://www.pexels.com/es-es/foto/carpintero-carpinteria-taller-platos-7492884/  |  consulta: "saw blade"
+hund5-01.jpg  <-  pozo-p-mmontt-bisagra\012.jpg  |  pexels (Pexels License)  |  autor: Jhonny Estrada  |  https://www.pexels.com/es-es/foto/puerta-de-madera-desgastada-en-barranquilla-colombia-32353542/  |  consulta: "door hinge"
+hund6-01.jpg  <-  pozo-p-mmontt-cajones\008.jpg  |  pexels (Pexels License)  |  autor: cottonbro studio  |  https://www.pexels.com/es-es/foto/almacen-almacenamiento-estanteria-estantes-7018662/  |  consulta: "small parts bins"
+banda-01.jpg  <-  pozo-p-mmontt-cajones\009.jpg  |  pexels (Pexels License)  |  autor: mali maeder  |  https://www.pexels.com/es-es/foto/envase-con-etiqueta-blanca-71184/  |  consulta: "small parts bins"
+cita-01.jpg  <-  pozo-p-mmontt-bronce\008.jpg  |  pexels (Pexels License)  |  autor: Nic Wood  |  https://www.pexels.com/es-es/foto/modelo-estampado-textura-abstracto-28169586/  |  consulta: "brass fittings"
+mos1-01.jpg  <-  pozo-p-mmontt-sombra\007.jpg  |  pexels (Pexels License)  |  autor: Pexels User  |  https://www.pexels.com/es-es/foto/pared-muro-hojas-sombra-14778293/  |  consulta: "tree leaves shadow wall"
+mos2-01.jpg  <-  pozo-p-mmontt-telefono\009.jpg  |  pexels (Pexels License)  |  autor: Saliha Geçgel  |  https://www.pexels.com/es-es/foto/vintage-clasico-antiguo-retro-16946090/  |  consulta: "old telephone"
+mos3-01.jpg  <-  pozo-p-mmontt-tornillos\012.jpg  |  pexels (Pexels License)  |  autor: Antoni Shkraba  |  https://www.pexels.com/es-es/foto/metal-herramientas-llave-inglesa-taller-5853930/  |  consulta: "screws assortment"
+mos4-01.jpg  <-  pozo-p-mmontt-bronce\010.jpg  |  pexels (Pexels License)  |  autor: Tima Miroshnichenko  |  https://www.pexels.com/es-es/foto/primer-plano-de-la-fabricacion-de-una-pieza-de-laton-en-un-torno-8327959/  |  consulta: "brass fittings"
+mos5-01.jpg  <-  pozo-p-mmontt-sierra\002.jpg  |  pexels (Pexels License)  |  autor: Sawyer Sutton  |  https://www.pexels.com/es-es/foto/construccion-metal-de-madera-carpinteria-20141374/  |  consulta: "saw blade"
+mos6-01.jpg  <-  pozo-p-mmontt-telefono\011.jpg  |  pexels (Pexels License)  |  autor: Petra Ryan  |  https://www.pexels.com/es-es/foto/telefono-vintage-en-blanco-y-negro-34160686/  |  consulta: "old telephone"
+
+BRUMA (bruma-pag-0N.png y bruma-osc-0N.png, 30x20): las MISMAS fotos, recortadas a 3:2, reducidas y
+recoloreadas con C:\devs\demos\hacer-bruma.ps1 (clara >= 0,68 de luminancia / oscura <= 0,05). No suman fuentes.
+    pagina: port-01.jpg, banda-01.jpg, cita-01.jpg, mos4-01.jpg, hund2-01.jpg   |   oscuras: port-01.jpg, banda-01.jpg, cita-01.jpg
+
+MAPA: iframe de Google Maps (embed publico, sin clave). No hay imagen de mapa.

@@ -1,0 +1,22 @@
+FUENTES DE LAS IMAGENES - Ferreteria Chamorro Rehecha el 13-09-2026 (presentacion antes que texto). Fotos de REFERENCIA de bancos libres: ninguna es del local; las verdaderas las tiene que mandar el negocio. 
+port-01.jpg  <-  pozo-p-cham-llaves\008.jpg  |  pexels (Pexels License)  |  autor: George Becker  |  https://www.pexels.com/es-es/foto/llaves-de-color-laton-333838/  |  consulta: "brass keys"
+hund1-01.jpg  <-  pozo-p-cham-manojo\008.jpg  |  pexels (Pexels License)  |  autor: Alena Darmel  |  https://www.pexels.com/es-es/foto/manos-llaves-logro-conceptual-7641904/  |  consulta: "keys hand"
+hund2-01.jpg  <-  pozo-p-cham-cerradura\007.jpg  |  pexels (Pexels License)  |  autor: PIRO4D  |  https://www.pexels.com/es-es/foto/pomo-y-cerrojo-plateados-de-la-puerta-285669/  |  consulta: "door lock keyhole"
+hund3-01.jpg  <-  pozo-p-cham-candado\004.jpg  |  pexels (Pexels License)  |  autor: Артем Зелюткин  |  https://www.pexels.com/es-es/foto/candado-metalico-para-asegurar-el-pestillo-de-una-puerta-37095097/  |  consulta: "padlock key"
+hund4-01.jpg  <-  pozo-p-cham-cerradura\012.jpg  |  pexels (Pexels License)  |  autor: Vladimir Srajber  |  https://www.pexels.com/es-es/foto/candado-cerrado-con-llave-bloquear-acero-13963754/  |  consulta: "door lock keyhole"
+hund5-01.jpg  <-  pozo-p-cham-afilado\008.jpg  |  pexels (Pexels License)  |  autor: Himesh Mehta  |  https://www.pexels.com/es-es/foto/hombre-mano-construccion-industria-4417247/  |  consulta: "sharpening knife stone"
+hund6-01.jpg  <-  pozo-p-cham-banco\007.jpg  |  pexels (Pexels License)  |  autor: Paul Groom Photography Bristol  |  https://www.pexels.com/es-es/foto/tornillo-de-banco-vintage-en-entorno-de-taller-rustico-29404121/  |  consulta: "workbench vise"
+banda-01.jpg  <-  pozo-p-cham-banco\006.jpg  |  pexels (Pexels License)  |  autor: Andrea Piacquadio  |  https://www.pexels.com/es-es/foto/tornillo-de-banco-de-metal-y-herramientas-variadas-en-taller-3844516/  |  consulta: "workbench vise"
+cita-01.jpg  <-  pozo-p-cham-lima\012.jpg  |  pexels (Pexels License)  |  autor: Carel Voorhorst  |  https://www.pexels.com/es-es/foto/herramientas-de-taller-antiguas-sobre-banco-de-madera-34611566/  |  consulta: "metal file tool"
+mos1-01.jpg  <-  pozo-p-cham-llaves\002.jpg  |  pexels (Pexels License)  |  autor: Magda Ehlers  |  https://www.pexels.com/es-es/foto/coleccion-de-llaves-de-laton-vintage-en-exhibicion-33388008/  |  consulta: "brass keys"
+mos2-01.jpg  <-  pozo-p-cham-manojo\010.jpg  |  pexels (Pexels License)  |  autor: Bastian Riccardi  |  https://www.pexels.com/es-es/foto/llaves-flotantes-sobre-una-mano-abierta-en-fondo-negro-29222872/  |  consulta: "keys hand"
+mos3-01.jpg  <-  pozo-p-cham-cerradura\006.jpg  |  pexels (Pexels License)  |  autor: Budget Bizar  |  https://www.pexels.com/es-es/foto/blanco-y-negro-vintage-hecho-a-mano-decorado-16928586/  |  consulta: "door lock keyhole"
+mos4-01.jpg  <-  pozo-p-cham-afilado\006.jpg  |  pexels (Pexels License)  |  autor: Ono  Kosuki  |  https://www.pexels.com/es-es/foto/cincel-de-afilado-artesanal-de-cultivos-en-taller-5973839/  |  consulta: "sharpening knife stone"
+mos5-01.jpg  <-  pozo-p-cham-lima\011.jpg  |  pexels (Pexels License)  |  autor: FFD Restorations  |  https://www.pexels.com/es-es/foto/vintage-herramientas-carpinteria-accesorios-16144865/  |  consulta: "metal file tool"
+mos6-01.jpg  <-  pozo-p-cham-copia\005.jpg  |  pexels (Pexels License)  |  autor: Saad Bin  Hasan  |  https://www.pexels.com/es-es/foto/primer-plano-de-un-cerrajero-trabajando-con-herramientas-35287856/  |  consulta: "key cutting"
+
+BRUMA (bruma-pag-0N.png y bruma-osc-0N.png, 30x20): las MISMAS fotos, recortadas a 3:2, reducidas y
+recoloreadas con C:\devs\demos\hacer-bruma.ps1 (clara >= 0,68 de luminancia / oscura <= 0,05). No suman fuentes.
+    pagina: port-01.jpg, banda-01.jpg, cita-01.jpg, mos1-01.jpg, mos5-01.jpg   |   oscuras: port-01.jpg, banda-01.jpg, cita-01.jpg
+
+MAPA: iframe de Google Maps (embed publico, sin clave). No hay imagen de mapa.

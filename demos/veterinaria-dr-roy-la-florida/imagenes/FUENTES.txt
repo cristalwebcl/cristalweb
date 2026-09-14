@@ -1,0 +1,22 @@
+FUENTES DE LAS IMAGENES - Dr. Roy Rehecha el 13-09-2026 (presentacion antes que texto). Fotos de REFERENCIA de bancos libres: ninguna es del local; las verdaderas las tiene que mandar el negocio. 
+port-01.jpg  <-  pozo-p-roy-carpeta\003.jpg  |  pexels (Pexels License)  |  autor: Anete Lusina  |  https://www.pexels.com/es-es/foto/carpeta-abierta-para-documentos-en-mesa-4792288/  |  consulta: "file folder documents"
+hund1-01.jpg  <-  pozo-p-roy-gato\004.jpg  |  pexels (Pexels License)  |  autor: Gustavo Fring  |  https://www.pexels.com/es-es/foto/animal-mascota-gato-gato-domestico-6816857/  |  consulta: "cat veterinary clinic"
+hund2-01.jpg  <-  pozo-p-roy-vacuna\007.jpg  |  pexels (Pexels License)  |  autor: Jahra Tasfia Reza  |  https://www.pexels.com/es-es/foto/pipeteo-de-laboratorio-con-guantes-azules-38201511/  |  consulta: "vaccine vial syringe"
+hund3-01.jpg  <-  pozo-p-roy-gato\007.jpg  |  pexels (Pexels License)  |  autor: Jasmin Yalcin  |  https://www.pexels.com/es-es/foto/gato-atigrado-marron-2660004/  |  consulta: "cat veterinary clinic"
+hund4-01.jpg  <-  pozo-p-roy-vacuna\009.jpg  |  pexels (Pexels License)  |  autor: FRANK MERIÑO  |  https://www.pexels.com/es-es/foto/medicina-jeringuilla-inyeccion-vacuna-6958378/  |  consulta: "vaccine vial syringe"
+hund5-01.jpg  <-  pozo-p-roy-estetoscopio\006.jpg  |  pexels (Pexels License)  |  autor: Jonathan Valdes  |  https://www.pexels.com/es-es/foto/mujer-mano-perro-mascota-18104201/  |  consulta: "veterinarian stethoscope dog"
+hund6-01.jpg  <-  pozo-p-roy-gato\001.jpg  |  pexels (Pexels License)  |  autor: Nacho Monge  |  https://www.pexels.com/es-es/foto/encantador-gato-domestico-con-ojos-brillantes-al-aire-libre-31587319/  |  consulta: "cat veterinary clinic"
+banda-01.jpg  <-  pozo-p-roy-gato\011.jpg  |  pexels (Pexels License)  |  autor: Dominik Gryzbon  |  https://www.pexels.com/es-es/foto/adorable-gatito-de-pie-sobre-la-mesa-del-veterinario-30577785/  |  consulta: "cat veterinary clinic"
+cita-01.jpg  <-  pozo-p-roy-estetoscopio\009.jpg  |  pexels (Pexels License)  |  autor: Eduardo López  |  https://www.pexels.com/es-es/foto/un-perro-con-corbata-16620448/  |  consulta: "veterinarian stethoscope dog"
+mos1-01.jpg  <-  pozo-p-roy-carpeta\008.jpg  |  pexels (Pexels License)  |  autor: Pixabay  |  https://www.pexels.com/es-es/foto/pila-de-carpetas-357514/  |  consulta: "file folder documents"
+mos2-01.jpg  <-  pozo-p-roy-espera\007.jpg  |  pexels (Pexels License)  |  autor: Cup of  Couple  |  https://www.pexels.com/es-es/foto/perro-mascota-mono-sentado-8473445/  |  consulta: "dog waiting room"
+mos3-01.jpg  <-  pozo-p-roy-pata\010.jpg  |  pexels (Pexels License)  |  autor: Jonathan Valdes  |  https://www.pexels.com/es-es/foto/perro-mascotas-fotografia-de-animales-brazos-18104208/  |  consulta: "dog paw hand"
+mos4-01.jpg  <-  pozo-p-roy-carpeta\010.jpg  |  pexels (Pexels License)  |  autor: Jakub Zerdzicki  |  https://www.pexels.com/es-es/foto/escritorio-oficina-orden-ordenar-17018372/  |  consulta: "file folder documents"
+mos5-01.jpg  <-  pozo-p-roy-pata\009.jpg  |  pexels (Pexels License)  |  autor: Mike Art 🎥 Visual Creator | Photography and Video 📸  |  https://www.pexels.com/es-es/foto/perro-disfrutando-de-la-naturaleza-en-asturias-espana-39384027/  |  consulta: "dog paw hand"
+mos6-01.jpg  <-  pozo-p-roy-carpeta\009.jpg  |  pexels (Pexels License)  |  autor: Sam J  |  https://www.pexels.com/es-es/foto/carpetas-de-papel-blanco-con-corbata-negra-1764956/  |  consulta: "file folder documents"
+
+BRUMA (bruma-pag-0N.png y bruma-osc-0N.png, 30x20): las MISMAS fotos, recortadas a 3:2, reducidas y
+recoloreadas con C:\devs\demos\hacer-bruma.ps1 (clara >= 0,68 de luminancia / oscura <= 0,05). No suman fuentes.
+    pagina: port-01.jpg, banda-01.jpg, cita-01.jpg, hund3-01.jpg, mos2-01.jpg   |   oscuras: port-01.jpg, banda-01.jpg, cita-01.jpg
+
+MAPA: iframe de Google Maps (embed publico, sin clave). No hay imagen de mapa.

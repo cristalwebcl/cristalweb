@@ -1,0 +1,22 @@
+FUENTES DE LAS IMAGENES - Ferreteria Araucaria Rehecha el 13-09-2026 (presentacion antes que texto). Fotos de REFERENCIA de bancos libres: ninguna es del local; las verdaderas las tiene que mandar el negocio. 
+port-01.jpg  <-  pozo-p-arau-sacos\010.jpg  |  pixabay (Pixabay Content License)  |  autor: danielkirsch  |  https://pixabay.com/photos/pallets-euro-pallet-stacked-4328491/  |  consulta: "cement bags pallet"
+hund1-01.jpg  <-  pozo-p-arau-amarra\001.jpg  |  pixabay (Pixabay Content License)  |  autor: Hans  |  https://pixabay.com/photos/turnbuckle-ratchet-tension-belt-58366/  |  consulta: "ratchet strap cargo"
+hund2-01.jpg  <-  pozo-p-arau-patio\012.jpg  |  pixabay (Pixabay Content License)  |  autor: Pexels  |  https://pixabay.com/photos/wooden-floor-backdrop-background-1853409/  |  consulta: "lumber yard"
+hund3-01.jpg  <-  pozo-p-arau-perfiles\010.jpg  |  pixabay (Pixabay Content License)  |  autor: Couleur  |  https://pixabay.com/photos/stole-metal-corten-steel-red-steel-3419985/  |  consulta: "steel profiles"
+hund4-01.jpg  <-  pozo-p-arau-sacos\004.jpg  |  pixabay (Pixabay Content License)  |  autor: youleks  |  https://pixabay.com/photos/coffee-beans-sack-burlap-colombia-1154356/  |  consulta: "cement bags pallet"
+hund5-01.jpg  <-  pozo-p-arau-baldes\010.jpg  |  pixabay (Pixabay Content License)  |  autor: ClickerHappy  |  https://pixabay.com/photos/paintbrush-paint-diy-brush-tool-4577578/  |  consulta: "paint bucket"
+hund6-01.jpg  <-  pozo-p-arau-cuerda\002.jpg  |  pixabay (Pixabay Content License)  |  autor: schuetz-mediendesign  |  https://pixabay.com/photos/ship-traffic-jams-rope-dew-cordage-602169/  |  consulta: "rope knot"
+banda-01.jpg  <-  pozo-p-arau-patio\002.jpg  |  pixabay (Pixabay Content License)  |  autor: LadyG  |  https://pixabay.com/photos/wood-fence-wooden-garden-security-1303162/  |  consulta: "lumber yard"
+cita-01.jpg  <-  pozo-p-arau-cuerda\003.jpg  |  pixabay (Pixabay Content License)  |  autor: corinna-kr  |  https://pixabay.com/photos/rope-cord-woven-leash-knitting-938034/  |  consulta: "rope knot"
+mos1-01.jpg  <-  pozo-p-arau-sacos\007.jpg  |  pixabay (Pixabay Content License)  |  autor: RR151  |  https://pixabay.com/photos/industrial-pallet-pallet-jack-2186802/  |  consulta: "cement bags pallet"
+mos2-01.jpg  <-  pozo-p-arau-cuerda\005.jpg  |  pixabay (Pixabay Content License)  |  autor: neelam279  |  https://pixabay.com/photos/rope-knotted-cordage-braided-9376701/  |  consulta: "rope knot"
+mos3-01.jpg  <-  pozo-p-arau-perfiles\007.jpg  |  pixabay (Pixabay Content License)  |  autor: 652234  |  https://pixabay.com/photos/architecture-bridge-structure-stole-4243795/  |  consulta: "steel profiles"
+mos4-01.jpg  <-  pozo-p-arau-carro\009.jpg  |  pixabay (Pixabay Content License)  |  autor: falco  |  https://pixabay.com/photos/suitcase-cart-hand-truck-bag-1095854/  |  consulta: "hand truck"
+mos5-01.jpg  <-  pozo-p-arau-cuerda\007.jpg  |  pixabay (Pixabay Content License)  |  autor: stephennorris  |  https://pixabay.com/photos/rope-knot-string-strength-cordage-3052477/  |  consulta: "rope knot"
+mos6-01.jpg  <-  pozo-p-arau-patio\001.jpg  |  pixabay (Pixabay Content License)  |  autor: Hans  |  https://pixabay.com/photos/wagon-wheel-farm-yard-agriculture-1117770/  |  consulta: "lumber yard"
+
+BRUMA (bruma-pag-0N.png y bruma-osc-0N.png, 30x20): las MISMAS fotos, recortadas a 3:2, reducidas y
+recoloreadas con C:\devs\demos\hacer-bruma.ps1 (clara >= 0,68 de luminancia / oscura <= 0,05). No suman fuentes.
+    pagina: port-01.jpg, banda-01.jpg, cita-01.jpg, hund4-01.jpg, mos6-01.jpg   |   oscuras: port-01.jpg, banda-01.jpg, cita-01.jpg
+
+MAPA: iframe de Google Maps (embed publico, sin clave). No hay imagen de mapa.

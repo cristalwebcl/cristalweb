@@ -75,6 +75,12 @@
   /* La lona: dos tonos alternados. Es el motivo de toda la pagina. */
   --lona: repeating-linear-gradient(90deg,
     var(--toldo) 0 14px, var(--crudo-3) 14px 28px);
+
+  /* Curvas. --sale es la misma que ya usaban las apariciones de esta
+     demo; se sube a variable para no repetirla en quince reglas.
+     --muelle es la de la casa: sobreimpulso del 4 % a mitad de camino. */
+  --sale:   cubic-bezier(.2, .7, .2, 1);
+  --muelle: linear(0, .32 14%, .68 26%, .92 38%, 1.04 50%, 1.01 64%, .99 78%, 1);
 }
 
 *, *::before, *::after { box-sizing: border-box; }
@@ -197,7 +203,10 @@ a { color: var(--toldo-osc); }
 /* ═══════════ PORTADA ═══════════ */
 .portada {
   position: relative;
-  min-height: 88svh;
+  /* Con tope: sin el, en un monitor de 2600 px de alto la portada mide
+     2288 y el visitante no ve que hay pagina debajo. La regla de la
+     casa es min(vh, techo). */
+  min-height: min(88svh, 760px);
   display: flex; align-items: center;
   padding: clamp(3rem, 9vh, 7rem) clamp(1.25rem, 5vw, 4rem);
   background: var(--crudo);
@@ -575,12 +584,16 @@ a { color: var(--toldo-osc); }
   from { transform: scale(1.04) translate3d(0, 0, 0); }
   to   { transform: scale(1.11) translate3d(-1.8%, -1.2%, 0); }
 }
-.js .portada--foto .portada__foto { opacity: 0; }
-.js .portada--foto.ok .portada__foto { opacity: 1; transition: opacity 1.1s ease; }
+/* El fundido de entrada va en la IMAGEN, no en el contenedor: el
+   contenedor queda libre para la animacion de scroll (blur al bajar),
+   que se declara mas abajo. Dos animaciones de transform en el mismo
+   elemento se pisan; separandolas cada una vive tranquila. */
+.js .portada--foto .portada__foto img { opacity: 0; }
+.js .portada--foto.ok .portada__foto img { opacity: 1; transition: opacity 1.1s ease; }
 .js .portada.rev,
 .js .portada.rev.ok { opacity: 1; transform: none; transition: none; }
 @media (max-width: 860px) {
-  .portada--foto { padding-top: 36svh; }
+  .portada--foto { padding-top: min(36svh, 300px); }
   .portada__foto img {
     object-position: 50% 44%;
     -webkit-mask-image: linear-gradient(180deg, #000 0%, #000 30%, rgba(0,0,0,.34) 58%, transparent 78%);
@@ -626,7 +639,7 @@ a { color: var(--toldo-osc); }
      aparece scroll horizontal por un segundo. */
   overflow: hidden;
 }
-.mitades__foto { position: relative; min-height: 62svh; overflow: hidden; }
+.mitades__foto { position: relative; min-height: min(62svh, 620px); overflow: hidden; }
 .mitades__foto img { display: block; width: 100%; height: 100%; object-fit: cover; object-position: 52% 50%; }
 .mitades__texto {
   padding: clamp(2.5rem, 6vw, 5rem) clamp(1.4rem, 4vw, 3.5rem);
@@ -654,12 +667,12 @@ a { color: var(--toldo-osc); }
 }
 @media (max-width: 780px) {
   .mitades { grid-template-columns: 1fr; }
-  .mitades__foto { min-height: 44svh; }
+  .mitades__foto { min-height: min(44svh, 420px); }
 }
 
 /* ── 4 · LA CITA A SANGRE ── */
 .cita {
-  position: relative; isolation: isolate; min-height: 70svh;
+  position: relative; isolation: isolate; min-height: min(70svh, 540px);
   display: flex; align-items: center; justify-content: center;
   padding: clamp(3rem, 9vw, 7rem) clamp(1.2rem, 5vw, 4rem);
   background: var(--crudo); overflow: hidden;
@@ -700,7 +713,7 @@ a { color: var(--toldo-osc); }
 
 /* ── 5 · LA TIRA ── */
 .tira { display: grid; grid-template-columns: repeat(3, 1fr); gap: 2px; background: var(--linea); }
-.tira__pieza { margin: 0; overflow: hidden; height: 34svh; min-height: 220px; }
+.tira__pieza { margin: 0; overflow: hidden; height: clamp(220px, 34svh, 340px); }
 .tira__pieza img {
   display: block; width: 100%; height: 100%; object-fit: cover;
   transition: transform 1.1s cubic-bezier(.2,.7,.2,1);
@@ -717,7 +730,7 @@ a { color: var(--toldo-osc); }
 .js .tira__pieza.rev.ok:nth-child(3) { transition-delay: .2s; }
 @media (max-width: 700px) {
   .tira { grid-template-columns: 1fr 1fr; }
-  .tira__pieza:last-child { grid-column: 1 / -1; height: 28svh; }
+  .tira__pieza:last-child { grid-column: 1 / -1; height: clamp(180px, 28svh, 280px); }
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -828,4 +841,437 @@ a { color: var(--toldo-osc); }
 }
 @media (prefers-reduced-motion: reduce) {
   .js .mos__p { opacity: 1; transform: none; }
+}
+
+/* ══════════════════════════════════════════════════════════════════
+   SEGUNDA PASADA — 09-09-2026
+   Subida al estandar premium SIN video (decision de Yordy: el clip se
+   reserva para los mejor valorados). Lo que compensa la ausencia del
+   video es densidad de argumento y de tratamientos: banda de cifras,
+   dos tajos con frase, telon de lena en la seccion oscura, cita
+   invertida, ficha de reserva y el boton flotante.
+
+   NADA DE LA IDENTIDAD CAMBIA: los mismos tres colores (crudo, toldo,
+   toldo-oscuro), las mismas tres familias, el mismo toldo festoneado y
+   la misma sombra que se alarga. Lo que cambia es cuanto dice la
+   pagina y cuantas veces cambia de tono mientras se baja.
+   ══════════════════════════════════════════════════════════════════ */
+
+/* ── A · APARICIONES EN CASCADA ─────────────────────────────────────
+   Dos mecanismos, y hacen falta los dos. El observador sigue yendo
+   sobre el CONTENEDOR (regla de la casa: un hijo recortado nunca
+   dispara IntersectionObserver). Para las grillas, el contenedor se
+   NEUTRALIZA y cascadean los hijos: si no se neutraliza, contenedor e
+   hijos bajan a la vez y el grupo entero se desplaza 40 px.
+   El --i va por nth-child en el CSS y NUNCA en un atributo style: la
+   CSP de esta pagina lo prohibe y lo mataria sin un solo error. */
+.js .cascada.rev        { opacity: 1; transform: none; transition: none; }
+.js .cascada.rev > *    { opacity: 0; transform: translateY(24px); }
+.js .cascada.rev.ok > * {
+  opacity: 1; transform: none;
+  transition: opacity .3s ease-out, transform .6s var(--sale);
+  transition-delay: calc(var(--i, 0) * 70ms);
+}
+.cascada > :nth-child(1) { --i: 0; }
+.cascada > :nth-child(2) { --i: 1; }
+.cascada > :nth-child(3) { --i: 2; }
+.cascada > :nth-child(4) { --i: 3; }
+.cascada > :nth-child(5) { --i: 4; }
+.cascada > :nth-child(6) { --i: 5; }
+
+/* ── B · LA ENTRADA DE LA PORTADA ───────────────────────────────────
+   No espera al scroll: la portada ya esta en pantalla. Mismo truco de
+   contenedor neutralizado, con animacion en vez de transicion para
+   poder usar el muelle. `forwards`, nunca `both`. La ultima pieza
+   arranca a los 0,28 s: por debajo del techo de 0,4 s de la casa. */
+.js .portada__texto.rev        { opacity: 1; transform: none; transition: none; }
+.js .portada__texto.rev > *    { opacity: 0; transform: translateY(14px); }
+.js .portada__texto.rev.ok > * { animation: entra .6s var(--muelle) forwards; }
+.js .portada__texto.rev.ok > *:nth-child(2) { animation-delay: .07s; }
+.js .portada__texto.rev.ok > *:nth-child(3) { animation-delay: .14s; }
+.js .portada__texto.rev.ok > *:nth-child(4) { animation-delay: .21s; }
+.js .portada__texto.rev.ok > *:nth-child(5) { animation-delay: .28s; }
+@keyframes entra { to { opacity: 1; transform: none; } }
+
+/* ── C · LOS DOS BOTONES DE LA PORTADA ──────────────────────────────
+   48 px de alto (el minimo tactil de la casa es 44; los principales
+   van a 48). La sombra lleva spread negativo y el color del azul, no
+   negro: se lee como el boton levantandose, no como un rectangulo
+   gris debajo. Medido: crudo #F5F0E6 sobre toldo-osc #1F5077 = 7,5:1. */
+.ctas {
+  display: flex; flex-wrap: wrap; gap: .8rem;
+  margin: 0 0 2.1rem;
+}
+.boton {
+  display: inline-flex; align-items: center; justify-content: center;
+  min-height: 48px; padding: 0 1.5rem;
+  border-radius: 999px;
+  background: var(--toldo-osc); color: var(--crudo);
+  font-family: var(--cuerpo); font-size: .95rem; font-weight: 600;
+  line-height: 1.1; text-decoration: none;
+  border: 2px solid var(--toldo-osc);
+  box-shadow: 0 10px 26px -14px rgba(31, 80, 119, .9);
+  transition: transform .22s var(--sale), background .22s ease, box-shadow .22s ease;
+}
+.boton:hover { transform: translateY(-2px); box-shadow: 0 14px 30px -14px rgba(31, 80, 119, .95); }
+/* El de linea: mismo tamano, sin relleno. Texto toldo-osc sobre crudo = 7,5:1. */
+.boton--linea {
+  background: transparent; color: var(--toldo-osc);
+  box-shadow: none;
+}
+.boton--linea:hover { background: var(--crudo-3); box-shadow: none; }
+.dd--sitio { margin: 0; font-family: var(--display); font-size: 1.6rem; line-height: 1; }
+
+/* ── D · LA BANDA DE CIFRAS ─────────────────────────────────────────
+   Cuatro numeros con la herida adentro de la misma fila. Solo cuenta
+   el 169, que es el unico que costo verificar; los otros tres son
+   aritmetica de la propia pagina, y un contador que sube un 6 se lee
+   como truco. El valor final va escrito dentro del elemento: sin JS, o
+   con reduced-motion, se lee igual.
+   Medido sobre toldo-osc #1F5077: blanco 8,5:1 · claro-2 #C3D3DF 5,6:1.
+   La lona arriba y abajo es lo que la hace de esta pagina y no de otra. */
+.cifras {
+  background: var(--toldo-osc); color: #fff;
+  padding: clamp(2.2rem, 5vw, 3.4rem) clamp(1.25rem, 5vw, 4rem);
+  border-top: 3px solid transparent;
+  border-bottom: 3px solid transparent;
+  border-image: var(--lona) 1;
+}
+.cifras__lista {
+  list-style: none; margin: 0 auto; padding: 0; max-width: 82rem;
+  display: grid; grid-template-columns: repeat(4, 1fr); gap: 1.6rem 1.2rem;
+}
+.cifras__lista li { text-align: center; }
+.cifras__lista b {
+  display: block; font-family: var(--display); font-weight: 500;
+  font-size: clamp(2.2rem, 5.4vw, 3.4rem); line-height: 1; color: #fff;
+  font-variant-numeric: tabular-nums;
+}
+.cifras__lista span {
+  display: block; margin-top: .5rem;
+  font-family: var(--dato); font-size: .7rem; line-height: 1.45;
+  letter-spacing: .04em; color: var(--claro-2);
+}
+/* La herida no se pinta de rojo: se pinta del azul claro de la lona.
+   Ese tono tiene prohibido el texto sobre CRUDO, no sobre este azul.
+   Medido: #9CC6E4 sobre #1F5077 = 6,0:1, y ademas es texto grande. */
+.cifras__lista li:last-child b { color: var(--toldo-cl); }
+@media (max-width: 700px) { .cifras__lista { grid-template-columns: repeat(2, 1fr); } }
+
+/* ── E · EL TAJO, AHORA CON FRASE ───────────────────────────────────
+   La franja a sangre pasa de ser un respiro mudo a llevar una linea de
+   argumento. El velo arranca en alfa 0 arriba: los dos tercios de
+   arriba de la foto quedan a foco completo y la frase se apoya en el
+   tercio de abajo. Escrito en rgba() literal, nunca con var(): sin
+   alfa el degradado tapa la foto de punta a punta.
+   Peor caso medido — fotograma blanco bajo el velo al .95: el blanco
+   de la letra da 7,4:1; al .86, donde empieza la primera linea, 5,9:1.
+   PASE LO QUE PASE con la foto que se ponga debajo. */
+.tajo {
+  margin: 0;
+  height: clamp(240px, 40vw, 420px);
+}
+.tajo__txt {
+  position: absolute; inset: auto 0 0 0; z-index: 2;
+  padding: clamp(3rem, 8vw, 5rem) clamp(1.25rem, 5vw, 4rem) 1.6rem;
+  background: linear-gradient(180deg,
+    rgba(31, 80, 119, 0)   0%,
+    rgba(31, 80, 119, .55) 44%,
+    rgba(31, 80, 119, .86) 74%,
+    rgba(31, 80, 119, .95) 100%);
+}
+.tajo__txt p {
+  margin: 0; max-width: 24ch;
+  color: #fff; font-family: var(--display); font-weight: 500;
+  font-size: clamp(1.25rem, 3.2vw, 2.1rem); line-height: 1.14;
+}
+.tajo--cierre .tajo__txt p { margin-left: auto; text-align: right; }
+
+/* ── F · EL TELON DE LENA ───────────────────────────────────────────
+   La seccion oscura tambien lleva foto: es la regla de ritmo (cada
+   banda oscura es una que lleva imagen). Va MAS baja de opacidad que
+   el telon claro porque la lena tiene mucho contraste propio y a .15
+   competia con el texto. Calibrada mirando, no copiada: .10.
+   Mascara vertical y no un pseudoelemento tenido, porque esta seccion
+   se funde con el tajo de arriba y el pseudoelemento dejaria un corte
+   recto a media banda. */
+.telon--lena img {
+  opacity: .10;
+  object-position: 50% 50%;
+  -webkit-mask-image: linear-gradient(180deg, transparent 0%, #000 26%, #000 64%, transparent 96%);
+          mask-image: linear-gradient(180deg, transparent 0%, #000 26%, #000 64%, transparent 96%);
+}
+.incluye.con-telon { position: relative; isolation: isolate; overflow: hidden; }
+
+/* ── G · LA CITA, INVERTIDA ─────────────────────────────────────────
+   Antes el velo era crudo y la banda quedaba clara: tres pantallas
+   claras seguidas y la unica foto grande de la pagina, lavada. Ahora
+   el velo es el azul de la paleta y la banda es oscura, que es lo que
+   pide el ritmo (banda oscura = banda con foto) y lo que deja la foto
+   con cuerpo en vez de deslavada.
+   Peor caso medido — foto blanca bajo el velo al .82: blanco 5,2:1 y
+   crudo #F5F0E6 4,6:1. Los dos pasan AA con la peor foto imaginable. */
+.cita__foto::after {
+  background: linear-gradient(180deg,
+    rgba(31, 80, 119, .78) 0%,
+    rgba(31, 80, 119, .84) 50%,
+    rgba(31, 80, 119, .88) 100%);
+}
+.cita__texto, .cita__texto p { color: #fff; }
+/* El eco iba en toldo-osc, que sobre este velo daria 1,3:1. Va en
+   crudo: 4,6:1 en el peor caso y sigue siendo un tono de la paleta. */
+.cita__eco { color: var(--crudo); }
+
+/* ── H · RESERVAR — la ficha de contacto que hoy no existe ──────────
+   Tres niveles de claridad, no dos: crudo de fondo, la tarjeta un
+   escalon mas clara (crudo-3) y los filetes en linea. Es lo que la
+   saca de bloque de color. El dl con columna fija se lee como ficha
+   tecnica y no como tabla de contacto. */
+.reserva {
+  background: var(--crudo);
+  padding: clamp(3.5rem, 10vh, 7rem) clamp(1.25rem, 5vw, 4rem);
+}
+.reserva__cols {
+  max-width: 82rem; margin: 0 auto;
+  display: grid; grid-template-columns: minmax(0, 22rem) minmax(0, 1fr);
+  gap: clamp(2rem, 5vw, 4rem);
+  align-items: start;
+}
+.reserva h2 { font-size: clamp(1.9rem, 4.4vw, 2.9rem); line-height: 1.08; margin-bottom: 1.1rem; }
+.reserva .nota-honesta { margin-top: 1.4rem; }
+.datos {
+  margin: 0; background: var(--crudo-3);
+  border: 1px solid var(--linea);
+  border-radius: 12px;
+  padding: .4rem clamp(1rem, 2.6vw, 1.6rem);
+}
+.dato {
+  display: grid; grid-template-columns: minmax(0, 11rem) minmax(0, 1fr);
+  gap: .3rem 1.6rem;
+  padding: 1rem 0;
+  border-bottom: 1px solid var(--linea);
+}
+.dato:last-child { border-bottom: 0; }
+.dato dt {
+  font-family: var(--dato); font-size: .68rem; letter-spacing: .12em;
+  text-transform: uppercase; color: var(--tinta-2); padding-top: .3rem;
+}
+.dato dd { margin: 0; }
+.dato__tel {
+  display: inline-flex; align-items: center; min-height: 44px;
+  font-family: var(--dato); font-size: 1.05rem; color: var(--toldo-osc);
+  text-decoration: none; border-bottom: 1px solid var(--toldo-osc);
+  white-space: nowrap;
+}
+.dato__tel:hover { color: var(--tinta); border-bottom-color: var(--tinta); }
+.dato__no { font-family: var(--dato); font-size: .95rem; color: var(--tinta); }
+.dato__pq { display: block; margin-top: .35rem; font-size: .9rem; color: var(--tinta-2); }
+@media (max-width: 62rem) { .reserva__cols { grid-template-columns: 1fr; } }
+@media (max-width: 34rem) { .dato { grid-template-columns: 1fr; } }
+
+/* ── I · EL MOSAICO, A OCHO ─────────────────────────────────────────
+   Sin clip de fondo, el mosaico sube de seis a ocho piezas: es lo que
+   compensa el peso visual que el video habria puesto. Las celdas 1 y 6
+   ya iban a span 2; se les suma el retardo de las dos nuevas. */
+.js .mos__p.ok:nth-child(7) { transition-delay: .36s; }
+.js .mos__p.ok:nth-child(8) { transition-delay: .42s; }
+.mos__ruta { font-family: var(--dato); font-size: .86em; }
+
+/* ── J · EL PIE ─────────────────────────────────────────────────────
+   padding-bottom para que el boton flotante no se coma la ultima linea. */
+.pie__in { max-width: 82rem; margin: 0 auto; padding-bottom: 4.5rem; }
+.pie__in p { margin: 0 0 .6rem; max-width: 80ch; }
+.pie__leg { margin: 0; color: #A9B4BD; }
+
+/* ── K · WHATSAPP FLOTANTE ──────────────────────────────────────────
+   Boton fijo abajo a la derecha. 56 px de alto: por encima de los 44
+   del minimo tactil. Verde de WhatsApp a proposito — se reconoce sin
+   leerlo, y eso es lo que hace que se toque.
+
+   La direccion del truco importa: el boton se ve SIEMPRE por defecto y
+   el JS solo lo esconde mientras el visitante esta en la portada, para
+   no tapar el titular. Si el script no arranca, o si rescate.js quita
+   la clase .js, el boton queda visible, que es el estado que vende.
+   Al reves (oculto por defecto, revelado por JS) un fallo del script
+   se lleva el CTA principal.
+   El numero es el DEL NEGOCIO, el mismo de los tel:. El de CristalWeb
+   vive solo en la seccion del dueno.
+   Medido: #07310F sobre #25D366 = 8,9:1. */
+.wapp {
+  position: fixed;
+  right: max(1rem, env(safe-area-inset-right, 0px));
+  bottom: max(1rem, env(safe-area-inset-bottom, 0px));
+  z-index: 60;
+  display: inline-flex;
+  align-items: center;
+  gap: .55rem;
+  height: 56px;
+  padding: 0 1.15rem 0 1rem;
+  border-radius: 999px;
+  background: #25D366;
+  color: #07310F;
+  text-decoration: none;
+  font-family: var(--cuerpo);
+  font-size: .95rem;
+  font-weight: 600;
+  line-height: 1;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, .3), 0 2px 6px rgba(0, 0, 0, .2);
+  transition: opacity .28s ease, transform .28s ease, box-shadow .18s ease;
+}
+.wapp__i { width: 26px; height: 26px; fill: currentColor; flex: none; }
+.wapp:hover,
+.wapp:focus-visible { transform: translateY(-2px); box-shadow: 0 10px 26px rgba(0, 0, 0, .34); }
+/* mientras se esta arriba del todo, el boton se aparta */
+.js .wapp--arriba { opacity: 0; transform: translateY(14px) scale(.94); pointer-events: none; }
+@media (max-width: 520px) {
+  .wapp { width: 56px; padding: 0; justify-content: center; }
+  /* el rotulo se va, el icono queda: en un telefono el circulo verde
+     ya dice que es */
+  .wapp__t { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
+}
+
+/* ── L · EL DIFUMINADO AL SCROLL ────────────────────────────────────
+   Lo que una demo corriente consigue con GSAP mas ScrollTrigger, 70 KB
+   de libreria y una peticion a un CDN que esta CSP bloquearia. Aca son
+   doce lineas que corren en el compositor y NO EXISTEN donde el
+   navegador no las soporta.
+   Pagina clara: blur(7px) mas opacity .55, porque la foto se disuelve
+   HACIA el crudo, que es lo que hay debajo. El scale(1.06) acompana
+   siempre: sin el, el desenfoque deja ver el filo de la caja.
+   El filter va en el CONTENEDOR (.portada__foto), nunca en la imagen:
+   ahi vive la deriva de respira, y dos animaciones de transform en el
+   mismo elemento se pisan. */
+@supports (animation-timeline: scroll()) {
+  @media (prefers-reduced-motion: no-preference) and (min-width: 761px) {
+    .portada__foto {
+      animation: portada-se-va linear both;
+      animation-timeline: scroll(root block);
+      animation-range: 0 90vh;
+    }
+    .cita__foto {
+      animation: cita-enfoca linear both;
+      animation-timeline: view(block);
+      animation-range: entry 0% entry 95%;
+    }
+  }
+}
+@keyframes portada-se-va { to { filter: blur(7px) opacity(.55); transform: scale(1.06); } }
+@keyframes cita-enfoca   { from { filter: blur(9px); } to { filter: blur(0); } }
+
+/* ── M · MENOS MOVIMIENTO ───────────────────────────────────────────
+   Se apaga lo intrusivo (bucles, desplazamientos, el conteo). NO se
+   apagan los fundidos ni los hovers de color: en Windows esta
+   preferencia viene puesta de fabrica muy seguido, y apagarlo todo
+   deja la pagina muerta en la mitad de las maquinas del cliente. */
+@media (prefers-reduced-motion: reduce) {
+  .js .portada--foto .portada__foto img { opacity: 1; }
+  .js .portada__texto.rev > *    { opacity: 1; transform: none; }
+  .js .portada__texto.rev.ok > * { animation: none; }
+  /* Los reveals NO se desplazan, pero SI siguen fundiendo: un fundido
+     no es movimiento; un salto de 24 px si. */
+  .js .cascada.rev > * { transform: none; }
+  .boton:hover, .wapp:hover, .wapp:focus-visible { transform: none; }
+  .js .wapp--arriba { transform: none; }
+}
+
+/* ══════════════════════════════════════════════════════════════════
+   AJUSTES MEDIDOS SOBRE LA PAGINA VIVA — 09-09-2026
+   Todo lo de aca abajo salio de mirar la captura y de medir el peor
+   caso, no de suponerlo.
+   ══════════════════════════════════════════════════════════════════ */
+
+/* ── El mosaico de ocho ─────────────────────────────────────────────
+   Con ocho piezas y solo las celdas 1 y 6 a span 2, la ultima quedaba
+   sola en su fila con dos huecos al lado. La octava pasa a ocupar la
+   fila entera y cierra el mosaico como una franja: la reticula se
+   rompe donde tiene que romperse y no queda ni un hueco.
+   Reparto en tres columnas:
+     [1 1 2] [3 4 5] [6 6 7] [8 8 8]
+   El orden de las fotos en el HTML esta puesto para que las que
+   ocupan dos columnas sean las de mas resolucion. */
+.mos__p:nth-child(8) { grid-column: 1 / -1; }
+@media (max-width: 760px) {
+  .mos__p:nth-child(8) { grid-column: 1 / -1; }
+}
+
+/* ── El telon de lena, calibrado midiendo ───────────────────────────
+   A .10 el telon subia la luminancia del fondo lo bastante como para
+   dejar los rotulos en 3,6:1. Baja a .08 y los tonos claros de la
+   paleta se reescriben aca uno por uno, que es lo que separa el
+   trabajo terminado del casi terminado.
+   Peor caso del fondo — 8 % de blanco sobre #1F5077 = rgb(49,93,130):
+     · #FFFFFF ................ 6,9:1  ← el .falta y los titulos
+     · --claro-2 #C3D3DF ...... 4,5:1  ← rotulos, entradilla, porques
+     · --toldo-cl #9CC6E4 ..... 3,9:1  ← NO se usa para texto aca */
+.telon--lena img { opacity: .08; }
+.incluye .antetitulo--claro { color: var(--claro-2); }
+.incluye .falta { color: #FFFFFF; border-bottom-color: var(--toldo-cl); }
+
+/* ── El velo de la cita, subido cuatro puntos ───────────────────────
+   El eco va en crudo y a .78 daba 4,2:1 con una foto blanca debajo.
+   Con .82 arriba el peor caso del eco pasa a 4,6:1 y el titular a
+   5,2:1. Y abajo, donde el eco vive de verdad, 4,9:1. */
+.cita__foto::after {
+  background: linear-gradient(180deg,
+    rgba(31, 80, 119, .82) 0%,
+    rgba(31, 80, 119, .86) 50%,
+    rgba(31, 80, 119, .90) 100%);
+}
+
+/* ── MAPA DE UBICACION ──────────────────────────────────────────────
+   Imagen propia con mosaicos de OpenStreetMap pegados: la CSP prohibe
+   pedir nada a un tercero, asi que un iframe de Google Maps quedaria en
+   blanco SIN dar un solo error. El "Como llegar" si es un enlace, y un
+   enlace no lo bloquea nada.
+   Los colores salen de currentColor a proposito: asi el bloque se adapta
+   a la paleta de cada demo sin conocerla y sin chocar con ella.
+   La atribucion a OpenStreetMap la exige su licencia (ODbL). */
+.mapa-sec { padding: clamp(2.5rem, 6vw, 4.5rem) 0; }
+.mapa { margin: 1.4rem 0 0; border: 1px solid; border-color: color-mix(in srgb, currentColor 22%, transparent); border-radius: 10px; overflow: hidden; }
+@supports not (color: color-mix(in srgb, red 50%, blue)) { .mapa { border-color: rgba(128, 128, 128, .35); } }
+.mapa img { display: block; width: 100%; height: auto; aspect-ratio: 16 / 10; object-fit: cover; }
+.mapa__pie {
+  display: flex; flex-wrap: wrap; align-items: center; gap: .4rem 1rem;
+  padding: .75rem .9rem;
+  font-size: .86em; line-height: 1.45;
+  border-top: 1px solid; border-top-color: color-mix(in srgb, currentColor 22%, transparent);
+}
+@supports not (color: color-mix(in srgb, red 50%, blue)) { .mapa__pie { border-top-color: rgba(128, 128, 128, .35); } }
+.mapa__pie b { font-weight: 700; }
+.mapa__ir { color: inherit; font-weight: 700; text-decoration: underline; min-height: 44px; display: inline-flex; align-items: center; }
+.mapa__cred { width: 100%; font-size: .84em; opacity: .8; }
+.mapa__cred a { color: inherit; }
+/* ── BOTON FLOTANTE DE CONTACTO ─────────────────────────────────────
+   56 px de alto, por encima del minimo tactil de 44. Los colores de
+   marca van a proposito: se reconocen sin leerlos, y eso es lo que hace
+   que se toquen. Se ve SIEMPRE por defecto; el JS solo lo aparta sobre
+   la portada. Al reves, un fallo del script se llevaria el CTA principal. */
+.flota {
+  position: fixed;
+  right: max(1rem, env(safe-area-inset-right, 0px));
+  bottom: max(1rem, env(safe-area-inset-bottom, 0px));
+  z-index: 60;
+  display: inline-flex; align-items: center; gap: .55rem;
+  height: 56px; padding: 0 1.15rem 0 1rem;
+  border-radius: 999px;
+  text-decoration: none;
+  font-family: var(--cuerpo, system-ui, sans-serif);
+  font-size: .95rem; font-weight: 700; line-height: 1;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, .26), 0 2px 6px rgba(0, 0, 0, .16);
+  transition: opacity .28s ease, transform .28s ease, box-shadow .18s ease;
+}
+.flota--wa { background: #25D366; color: #07310F; }
+.flota--ig { background: linear-gradient(120deg, #F9CE34 4%, #EE2A7B 48%, #6228D7 96%); color: #FFFFFF; }
+.flota__i { width: 26px; height: 26px; fill: currentColor; flex: none; }
+.flota:hover, .flota:focus-visible { transform: translateY(-2px); box-shadow: 0 10px 26px rgba(0, 0, 0, .3); }
+.js .flota--arriba { opacity: 0; transform: translateY(14px) scale(.94); pointer-events: none; }
+
+@media (max-width: 520px) {
+  .flota { width: 56px; padding: 0; justify-content: center; }
+  .flota__t { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .flota { transition: opacity .28s ease; }
+  .flota:hover, .flota:focus-visible { transform: none; }
+  .js .flota--arriba { transform: none; }
 }

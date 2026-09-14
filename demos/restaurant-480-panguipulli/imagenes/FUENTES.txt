@@ -1,0 +1,22 @@
+FUENTES DE LAS IMAGENES - Restobar 480 Rehecha el 13-09-2026 (presentacion antes que texto). Fotos de REFERENCIA de bancos libres: ninguna es del local; las verdaderas las tiene que mandar el negocio. 
+port-01.jpg  <-  pozo-p-480-escenario\011.jpg  |  pexels (Pexels License)  |  autor: Brett Sayles  |  https://www.pexels.com/es-es/foto/ligero-creativo-noche-oscuro-8186273/  |  consulta: "microphone stage lights"
+hund1-01.jpg  <-  pozo-p-480-cerveza\002.jpg  |  pexels (Pexels License)  |  autor: Marcelo Verfe  |  https://www.pexels.com/es-es/foto/cervezas-artesanales-refrescantes-en-mesa-de-madera-28575831/  |  consulta: "craft beer glass"
+hund2-01.jpg  <-  pozo-p-480-pizza\009.jpg  |  pexels (Pexels License)  |  autor: pedro furtado  |  https://www.pexels.com/es-es/foto/deliciosa-pizza-de-pepperoni-y-cebolla-sobre-mesa-de-madera-31094832/  |  consulta: "pizza slice"
+hund3-01.jpg  <-  pozo-p-480-rapida\001.jpg  |  pexels (Pexels License)  |  autor: Alan Retano  |  https://www.pexels.com/es-es/foto/amame-soy-una-hamburguesa-14469255/  |  consulta: "burger fries"
+hund4-01.jpg  <-  pozo-p-480-escenario\006.jpg  |  pexels (Pexels License)  |  autor: Brett Sayles  |  https://www.pexels.com/es-es/foto/ligero-creativo-oscuro-festival-8170126/  |  consulta: "microphone stage lights"
+hund5-01.jpg  <-  pozo-p-480-grifo\006.jpg  |  pexels (Pexels License)  |  autor: Ana Iherina  |  https://www.pexels.com/es-es/foto/alcohol-cerveza-bebida-bebida-alcoholica-13229769/  |  consulta: "beer tap bar"
+hund6-01.jpg  <-  pozo-p-arr-lago\004.jpg  |  pexels (Pexels License)  |  autor: Cristian Salinas Cisternas  |  https://www.pexels.com/es-es/foto/naturaleza-barcos-verano-bosque-16174942/  |  consulta: "lake Panguipulli"
+banda-01.jpg  <-  pozo-p-480-grifo\008.jpg  |  pexels (Pexels License)  |  autor: Pavel Danilyuk  |  https://www.pexels.com/es-es/foto/manos-barra-bar-amigos-5858194/  |  consulta: "beer tap bar"
+cita-01.jpg  <-  pozo-p-480-escenario\009.jpg  |  pexels (Pexels License)  |  autor: Amit Batra  |  https://www.pexels.com/es-es/foto/blanco-y-negro-luces-musica-microfono-4658541/  |  consulta: "microphone stage lights"
+mos1-01.jpg  <-  pozo-p-480-lupulo\009.jpg  |  pexels (Pexels License)  |  autor: Donovan Kelly  |  https://www.pexels.com/es-es/foto/planta-ingrediente-naturaleza-muerta-saltos-26836163/  |  consulta: "beer hops"
+mos2-01.jpg  <-  pozo-p-480-negra\010.jpg  |  pexels (Pexels License)  |  autor: Alexandre Lima  |  https://www.pexels.com/es-es/foto/alcohol-barra-bar-vaso-19963544/  |  consulta: "stout beer dark"
+mos3-01.jpg  <-  pozo-p-480-grifo\010.jpg  |  pexels (Pexels License)  |  autor: Snapwire  |  https://www.pexels.com/es-es/foto/adentro-beber-bebida-comida-602200/  |  consulta: "beer tap bar"
+mos4-01.jpg  <-  pozo-p-480-cerveza\009.jpg  |  pexels (Pexels License)  |  autor: Eva Bronzini  |  https://www.pexels.com/es-es/foto/copa-de-vino-transparente-con-vino-tinto-5659399/  |  consulta: "craft beer glass"
+mos5-01.jpg  <-  pozo-p-480-barra\006.jpg  |  pexels (Pexels License)  |  autor: Rodrigo Chablé  |  https://www.pexels.com/es-es/foto/luces-barra-bar-interior-14612752/  |  consulta: "bar counter night"
+mos6-01.jpg  <-  pozo-p-480-rapida\010.jpg  |  pexels (Pexels License)  |  autor: Pablo Rodríguez  |  https://www.pexels.com/es-es/foto/hamburguesa-gourmet-con-pan-negro-y-patatas-fritas-35813495/  |  consulta: "burger fries"
+
+BRUMA (bruma-pag-0N.png y bruma-osc-0N.png, 30x20): las MISMAS fotos, recortadas a 3:2, reducidas y
+recoloreadas con C:\devs\demos\hacer-bruma.ps1 (clara >= 0,68 de luminancia / oscura <= 0,05). No suman fuentes.
+    pagina: port-01.jpg, banda-01.jpg, hund1-01.jpg, hund2-01.jpg, hund4-01.jpg, mos1-01.jpg, mos2-01.jpg, mos5-01.jpg   |   oscuras: cita-01.jpg, hund4-01.jpg, mos4-01.jpg
+
+MAPA: iframe de Google Maps (embed publico, sin clave). No hay imagen de mapa.

@@ -50,3 +50,10 @@ LO QUE FALTA
 2. El salón por dentro con luz de tarde.
 3. El horario de invierno y el de verano, por escrito. Curarrehue vive
    del paso a la frontera y el que va manejando decide si para o no.
+
+MAPA DE UBICACION — mapa-01.jpg
+  768 x 768 · zoom 14 · centro -39.35898, -71.5873592
+  Mosaicos de OpenStreetMap pegados en una sola imagen, con el marcador
+  dibujado encima. Datos (c) OpenStreetMap contributors, licencia ODbL:
+  la atribucion tiene que ir VISIBLE junto al mapa, en el pie de la figura.
+  https://www.openstreetmap.org/copyright

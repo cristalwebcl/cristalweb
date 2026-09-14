@@ -1,0 +1,22 @@
+FUENTES DE LAS IMAGENES - San Fransisco Rehecha el 13-09-2026 (presentacion antes que texto). Fotos de REFERENCIA de bancos libres: ninguna es del local; las verdaderas las tiene que mandar el negocio. 
+port-01.jpg  <-  pozo-p-sfr-vaca\009.jpg  |  pexels (Pexels License)  |  autor: Jing Zhan  |  https://www.pexels.com/es-es/foto/paisaje-naturaleza-prado-animales-23999269/  |  consulta: "cow pasture"
+hund1-01.jpg  <-  pozo-p-sfr-frascos\006.jpg  |  pexels (Pexels License)  |  autor: cottonbro studio  |  https://www.pexels.com/es-es/foto/botellas-naturaleza-muerta-quimica-medicinas-8666434/  |  consulta: "veterinary medicine vials"
+hund2-01.jpg  <-  pozo-p-sfr-atardecer\004.jpg  |  pexels (Pexels License)  |  autor: Jacson David Vinueza Itas  |  https://www.pexels.com/es-es/foto/golden-retriever-mojado-sentado-en-el-pavimento-29178697/  |  consulta: "dog dusk"
+hund3-01.jpg  <-  pozo-p-sfr-jeringa\006.jpg  |  pexels (Pexels License)  |  autor: freestocks.org  |  https://www.pexels.com/es-es/foto/naturaleza-muerta-jeringuilla-vacuna-superficie-gris-4132853/  |  consulta: "syringe vaccine"
+hund4-01.jpg  <-  pozo-p-sfr-gato\010.jpg  |  pexels (Pexels License)  |  autor: Matthew Adam  |  https://www.pexels.com/es-es/foto/animal-mascota-dormido-durmiendo-12407277/  |  consulta: "cat sleeping"
+hund5-01.jpg  <-  pozo-p-mun-laboratorio\009.jpg  |  pexels (Pexels License)  |  autor: Jahra Tasfia Reza  |  https://www.pexels.com/es-es/foto/primer-plano-de-tubos-de-ensayo-pyrex-en-un-entorno-de-laboratorio-36529607/  |  consulta: "laboratory test tubes"
+hund6-01.jpg  <-  pozo-p-sfr-atardecer\009.jpg  |  pexels (Pexels License)  |  autor: Mike Art 🎥 Visual Creator | Photography and Video 📸  |  https://www.pexels.com/es-es/foto/collie-border-mojado-en-entorno-natural-38420666/  |  consulta: "dog dusk"
+banda-01.jpg  <-  pozo-p-sfr-oveja\004.jpg  |  pexels (Pexels License)  |  autor: cottonbro studio  |  https://www.pexels.com/es-es/foto/paisaje-naturaleza-campo-granja-4918158/  |  consulta: "sheep farm"
+cita-01.jpg  <-  pozo-p-sfr-atardecer\011.jpg  |  pexels (Pexels License)  |  autor: Arian Fernandez  |  https://www.pexels.com/es-es/foto/foto-en-blanco-y-negro-de-un-perro-en-el-pradera-35392304/  |  consulta: "dog dusk"
+mos1-01.jpg  <-  pozo-p-sfr-vaca\008.jpg  |  pexels (Pexels License)  |  autor: Julito Elizalde  |  https://www.pexels.com/es-es/foto/toro-en-un-prado-verde-con-flores-amarillas-en-el-fondo-parece-como-si-estuviera-en-una-pintura-28424335/  |  consulta: "cow pasture"
+mos2-01.jpg  <-  pozo-p-sfr-oveja\005.jpg  |  pexels (Pexels License)  |  autor: Mario Amé  |  https://www.pexels.com/es-es/foto/blanco-cabeza-retrato-oveja-18783441/  |  consulta: "sheep farm"
+mos3-01.jpg  <-  pozo-p-sfr-gato\002.png  |  pexels (Pexels License)  |  autor: Ander Reed  |  https://www.pexels.com/es-es/foto/adorable-gato-durmiendo-en-una-caja-de-madera-33696891/  |  consulta: "cat sleeping"
+mos4-01.jpg  <-  pozo-p-sfr-botas\011.jpg  |  pexels (Pexels License)  |  autor: Gustavo Fring  |  https://www.pexels.com/es-es/foto/persona-pies-trabajando-jardin-4894610/  |  consulta: "rubber boots farm"
+mos5-01.jpg  <-  pozo-p-sfr-caballo\003.jpg  |  pexels (Pexels License)  |  autor: Andrea Pamela  |  https://www.pexels.com/es-es/foto/retrato-de-un-caballo-castano-en-un-establo-28469869/  |  consulta: "horse stable"
+mos6-01.jpg  <-  pozo-p-sfr-atardecer\008.jpg  |  pexels (Pexels License)  |  autor: Gerardo Pantoja  |  https://www.pexels.com/es-es/foto/perro-blanco-en-un-campo-soleado-con-cielo-azul-29870330/  |  consulta: "dog dusk"
+
+BRUMA (bruma-pag-0N.png y bruma-osc-0N.png, 30x20): las MISMAS fotos, recortadas a 3:2, reducidas y
+recoloreadas con C:\devs\demos\hacer-bruma.ps1 (clara >= 0,68 de luminancia / oscura <= 0,05). No suman fuentes.
+    pagina: hund1-01.jpg, hund2-01.jpg, hund4-01.jpg, mos3-01.jpg, mos5-01.jpg, mos2-01.jpg   |   oscuras: cita-01.jpg, hund6-01.jpg, hund5-01.jpg
+
+MAPA: iframe de Google Maps (embed publico, sin clave). No hay imagen de mapa.

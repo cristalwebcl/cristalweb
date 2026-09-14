@@ -1,0 +1,22 @@
+FUENTES DE LAS IMAGENES - Ferreteria La Alternativa Rehecha el 14-09-2026 (presentacion antes que texto). Fotos de REFERENCIA de bancos libres: ninguna es del local; las verdaderas las tiene que mandar el negocio. 
+port-01.jpg  <-  pozo-p-alt-pie\009.jpg  |  pexels (Pexels License)  |  autor: Michel AVRIL  |  https://www.pexels.com/es-es/foto/primer-plano-en-blanco-y-negro-de-la-herramienta-de-calibrador-30351214/  |  consulta: "caliper measuring"
+hund1-01.jpg  <-  pozo-p-alt-llave\007.jpg  |  pexels (Pexels License)  |  autor: Antoni Shkraba  |  https://www.pexels.com/es-es/foto/herramientas-hierro-plancha-carpinteria-5853927/  |  consulta: "wrench set"
+hund2-01.jpg  <-  pozo-p-alt-broca\012.jpg  |  pexels (Pexels License)  |  autor: Ksenia Chernaya  |  https://www.pexels.com/es-es/foto/coleccion-de-piezas-de-herramientas-sobre-fondo-blanco-5691656/  |  consulta: "drill bits set"
+hund3-01.jpg  <-  pozo-p-alt-tuerca\007.jpg  |  pexels (Pexels License)  |  autor: Kriss  L  |  https://www.pexels.com/es-es/foto/primer-plano-de-tornillos-y-tuercas-metalicas-variadas-28700640/  |  consulta: "nuts washers close up"
+hund4-01.jpg  <-  pozo-p-alt-pintura\004.jpg  |  pexels (Pexels License)  |  autor: Ivan S  |  https://www.pexels.com/es-es/foto/naranja-pintura-mural-variedad-pinceles-5798971/  |  consulta: "paint brush roller"
+hund5-01.jpg  <-  pozo-p-alt-copia\010.jpg  |  pexels (Pexels License)  |  autor: MuffinLand  |  https://www.pexels.com/es-es/foto/llaves-colgando-de-una-rama-en-un-jardin-de-paris-37696002/  |  consulta: "keys blank hanging"
+hund6-01.jpg  <-  pozo-p-alt-cable\007.jpg  |  pexels (Pexels License)  |  autor: Andrew Durkin  |  https://www.pexels.com/es-es/foto/bobinas-de-cable-industrial-en-el-exterior-del-edificio-29596327/  |  consulta: "electrical wire spool"
+banda-01.jpg  <-  pozo-p-alt-tuerca\011.jpg  |  pexels (Pexels License)  |  autor: Peter Dyllong  |  https://www.pexels.com/es-es/foto/escena-industrial-de-pernos-de-ferrocarril-en-blanco-y-negro-36449514/  |  consulta: "nuts washers close up"
+cita-01.jpg  <-  pozo-p-alt-cafe\006.jpg  |  pexels (Pexels License)  |  autor: chunhsien shih  |  https://www.pexels.com/es-es/foto/maqueta-modelo-replica-mockup-11038428/  |  consulta: "coffee cup counter"
+mos1-01.jpg  <-  pozo-p-alt-tuerca\005.jpg  |  pexels (Pexels License)  |  autor: tbee  |  https://www.pexels.com/es-es/foto/anillo-cuadrado-laton-87257/  |  consulta: "nuts washers close up"
+mos2-01.jpg  <-  pozo-p-alt-cafe\005.jpg  |  pexels (Pexels License)  |  autor: chunhsien shih  |  https://www.pexels.com/es-es/foto/blanco-y-negro-beber-bebida-mesa-11039551/  |  consulta: "coffee cup counter"
+mos3-01.jpg  <-  pozo-p-alt-pintura\009.jpg  |  pexels (Pexels License)  |  autor: Ivan S  |  https://www.pexels.com/es-es/foto/rodillo-rulo-pincel-materiales-de-pintura-5799047/  |  consulta: "paint brush roller"
+mos4-01.jpg  <-  pozo-p-alt-tuerca\012.jpg  |  pexels (Pexels License)  |  autor: Peter Dyllong  |  https://www.pexels.com/es-es/foto/primer-plano-de-hardware-industrial-en-blanco-y-negro-36505569/  |  consulta: "nuts washers close up"
+mos5-01.jpg  <-  pozo-p-alt-cafe\012.jpg  |  pexels (Pexels License)  |  autor: Felicity Tai  |  https://www.pexels.com/es-es/foto/persona-cafe-vaso-desechable-7964153/  |  consulta: "coffee cup counter"
+mos6-01.jpg  <-  pozo-p-alt-broca\008.jpg  |  pexels (Pexels License)  |  autor: Tima Miroshnichenko  |  https://www.pexels.com/es-es/foto/herramientas-carpinteria-equipo-espacio-para-texto-6790051/  |  consulta: "drill bits set"
+
+BRUMA (bruma-pag-0N.png y bruma-osc-0N.png, 30x20): las MISMAS fotos, recortadas a 3:2, reducidas y
+recoloreadas con C:\devs\demos\hacer-bruma.ps1 (clara >= 0,68 de luminancia / oscura <= 0,05). No suman fuentes.
+    pagina: cita-01.jpg, hund4-01.jpg, mos2-01.jpg, banda-01.jpg, hund1-01.jpg   |   oscuras: cita-01.jpg, hund4-01.jpg, hund1-01.jpg
+
+MAPA: iframe de Google Maps (embed publico, sin clave). No hay imagen de mapa.

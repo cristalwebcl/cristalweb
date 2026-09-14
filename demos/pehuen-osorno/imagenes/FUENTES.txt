@@ -26,3 +26,10 @@ URL de origen:
 004.jpg | 4898x3265 | Foto de stock gratuita sobre animal, cabeza, de cerca, fondo negro ... | https://images.pexels.com/photos/17037636/pexels-photo-17037636.jpeg?cs=srgb&dl=pexels-kenny-fotos-cr-17037636.jpg&fm=jpg
 005.jpg | 4608x3456 | 1000+ Great Dogs Photos · Pexels · Free Stock Photos | https://images.pexels.com/photos/733416/pexels-photo-733416.jpeg?cs=srgb&dl=animal-canine-dog-733416.jpg&fm=jpg
 006.jpg | 3648x5472 | Big Dog Breeds Photos, Download The BEST Free Big Dog Breeds Stock ... | https://images.pexels.com/photos/6059477/pexels-photo-6059477.jpeg?cs=srgb&dl=pexels-jonathan-borba-6059477.jpg&fm=jpg
+
+MAPA DE UBICACION — mapa-01.jpg
+  768 x 768 · zoom 14 · centro -40.5736955, -73.1358091
+  Mosaicos de OpenStreetMap pegados en una sola imagen, con el marcador
+  dibujado encima. Datos (c) OpenStreetMap contributors, licencia ODbL:
+  la atribucion tiene que ir VISIBLE junto al mapa, en el pie de la figura.
+  https://www.openstreetmap.org/copyright

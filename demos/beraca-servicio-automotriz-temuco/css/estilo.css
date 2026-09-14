@@ -1,0 +1,630 @@
+/* ═══════════════════════════════════════════════════════════════════
+   BERACA SERVICIO AUTOMOTRIZ · Temuco
+   Demo. HTML + CSS + JS clásico. Sin build, sin librerías.
+
+   ── LA DIRECCIÓN, EN UNA FRASE ────────────────────────────────────
+   «ORDEN DE TRABAJO»: el papel del formulario que se llena en el
+   mesón del taller — hoja clara, tinta grafito y el rojo del folio.
+
+   Quinto taller del registro, y hay que decir de qué se separa: la 47
+   es blanco y negro, la 54 es carbón con fósforo verde (pantalla de
+   scanner), la 65 es monocroma azul (mameluco) y makma es gris de
+   taller con ámbar de aceite. **Ninguna es de PAPEL.** Y ahí está el
+   punto: los otros cuatro miran el auto; éste mira el mostrador, que
+   es donde de verdad se decide si el cliente vuelve.
+
+   El rojo pertenece a una familia poblada. Sobre una hoja de
+   formulario, con un perforado al canto y sin ningún otro color, no
+   se parece a ninguno de los anteriores: **lo que cambia el color es
+   el fondo.**
+
+   ── POR QUÉ ESTE TRÍO ─────────────────────────────────────────────
+   · OXANIUM (display) — variable, de trazo técnico y esquinas
+     recortadas. Tiene aire de instrumento sin caer en lo espacial.
+     La display siempre nueva.
+   · RETHINK SANS (cuerpo) — variable, neutra y de números parejos,
+     que acá importa: media página son kilometrajes.
+   · SONO (dato) — repetida. Estaba en la 43, ferretería en Valdivia:
+     otro rubro y otra ciudad. Variable, un solo archivo.
+     **No se usó Geist Mono, que era la primera candidata, porque está
+     en la 56 y también es de Temuco.** La regla pide lejanía de rubro
+     Y de ciudad.
+
+   ── CONTRASTE ─────────────────────────────────────────────────────
+   El rojo del folio va declarado en sus dos versiones con el fondo de
+   cada una escrito al lado. Las tres urgencias de la sección de
+   ruidos llevan ADEMÁS su palabra escrita: es una tabla que se va a
+   leer en voz alta por teléfono, igual que la de la 67.
+   ═══════════════════════════════════════════════════════════════════ */
+
+:root {
+  --formulario:      #F4F3EF;
+  --formulario-alto: #FBFAF7;
+  --regla:           #D9D7D0;
+  --grafito:         #1C1B1A;
+  --grafito-alto:    #292827;
+
+  --tinta-suave: #4F4E4B;   /* párrafos sobre formulario —  7.86:1  */
+  --form-suave:  #ADACA8;   /* párrafos sobre grafito    —  8.31:1  */
+
+  /* EL ROJO DEL FOLIO, en sus dos versiones. */
+  --folio:       #A3231C;   /* SÓLO sobre formulario —  6.01:1      */
+  --folio-claro: #F09A8E;   /* SÓLO sobre grafito    —  8.52:1      */
+
+  /* Las tres urgencias de la sección de ruidos, medidas sobre
+     grafito-alto. El color acompaña; la palabra escrita informa. */
+  --ya:     #F09A8E;
+  --pronto: #F2C14E;
+  --mes:    #A9C7DE;
+
+  --display: 'Oxanium', Georgia, serif;
+  --cuerpo:  'Rethink Sans', system-ui, -apple-system, sans-serif;
+  --dato:    'Sono', ui-monospace, Consolas, monospace;
+
+  --ancho: 1080px;
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+
+/* El atributo hidden pierde contra cualquier regla con display.
+   Declararlo es obligatorio en esta casa. */
+[hidden] { display: none !important; }
+
+html { scroll-behavior: smooth; }
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+
+body {
+  margin: 0;
+  background: var(--formulario);
+  color: var(--tinta-suave);
+  font-family: var(--cuerpo);
+  font-size: clamp(16px, 1.05vw + 13px, 18.5px);
+  line-height: 1.62;
+  -webkit-font-smoothing: antialiased;
+}
+
+img { max-width: 100%; display: block; }
+
+.ancho { width: min(100% - 2.4rem, var(--ancho)); margin-inline: auto; }
+
+.saltar {
+  position: absolute; left: -9999px; top: 0; z-index: 99;
+  background: var(--grafito); color: var(--formulario);
+  padding: .7rem 1.1rem; font-family: var(--dato); font-size: .9rem;
+}
+.saltar:focus { left: .5rem; top: .5rem; }
+
+:focus-visible { outline: 3px solid var(--folio); outline-offset: 3px; }
+.suena :focus-visible, .cierre :focus-visible { outline-color: var(--folio-claro); }
+
+
+/* ═══════════════════════════════════════════════════════════════════
+   MARCA DE DATO INVENTADO
+   ═══════════════════════════════════════════════════════════════════ */
+[data-ejemplo]::before {
+  content: attr(data-ejemplo);
+  display: block; margin-bottom: .45rem;
+  font-family: var(--dato); font-size: .78rem; font-weight: 700;
+  letter-spacing: .02em; text-transform: uppercase;
+  color: var(--folio);
+}
+/* La nota de la sección oscura necesita la OTRA versión del rojo. En
+   una página que alterna claro y oscuro es el error más fácil de
+   cometer: documentado en la 70, la 71, la 72 y la 73. */
+.suena-nota::before { color: var(--folio-claro); }
+
+.pauta-nota, .suena-nota {
+  margin: 2.4rem 0 0; max-width: 62ch; font-size: .88rem;
+  padding-left: 1rem; border-left: 3px solid var(--folio);
+  color: var(--tinta-suave);
+}
+.suena-nota { border-left-color: var(--folio-claro); color: var(--form-suave); }
+.pauta-nota b { color: var(--grafito); font-weight: 700; }
+.suena-nota b { color: var(--formulario-alto); font-weight: 700; }
+
+
+/* ═══════════════════════════════════════════════════════════════════
+   CABECERA CON BANDA PERFORADA
+   Cuadragésima cabecera del registro: el canto inferior es la tira
+   perforada del papel continuo, la que se arranca del costado de una
+   orden de trabajo impresa. Un degradado radial repetido entre dos
+   reglas.
+   ═══════════════════════════════════════════════════════════════════ */
+.cab {
+  position: sticky; top: 0; z-index: 40;
+  display: flex; align-items: center; gap: 1.4rem;
+  padding: .8rem 1.4rem 1.25rem;
+  background: var(--formulario-alto);
+}
+.cab::after {
+  content: ''; position: absolute; left: 0; right: 0; bottom: 0; height: 13px;
+  border-top: 1px solid var(--regla);
+  border-bottom: 1px solid var(--regla);
+  background: radial-gradient(circle at 50% 50%,
+    var(--formulario) 0 2.5px, var(--regla) 2.5px 3.4px, transparent 3.5px);
+  background-size: 15px 13px; background-repeat: repeat-x;
+}
+.cab-m {
+  margin: 0; font-family: var(--display); line-height: 1.15; color: var(--grafito);
+  display: flex; align-items: baseline; gap: .6rem; flex-wrap: wrap;
+}
+.cab-m b { font-weight: 700; font-size: 1.24rem; letter-spacing: .01em; }
+.cab-s {
+  font-family: var(--dato); font-size: .68rem; font-weight: 700;
+  letter-spacing: .1em; text-transform: uppercase;
+  color: var(--folio);
+}
+.cab-n { margin-left: auto; display: flex; gap: 1.4rem; }
+.cab-n a {
+  font-size: .86rem; color: var(--tinta-suave); text-decoration: none;
+  padding-bottom: 2px; border-bottom: 2px solid transparent;
+}
+.cab-n a:hover, .cab-n a:focus-visible { color: var(--grafito); border-bottom-color: var(--folio); }
+.cab-tel {
+  font-family: var(--dato); font-size: .9rem; font-weight: 700;
+  background: var(--grafito); color: var(--formulario-alto);
+  padding: .45rem .9rem; border-radius: 2px;
+  text-decoration: none; white-space: nowrap;
+}
+/* El relleno NO se aclara al pasar el mouse: en la 39 ese gesto bajó
+   un botón a 3,8:1 y el auditor de contraste no mira los :hover. */
+.cab-tel:hover, .cab-tel:focus-visible { box-shadow: 0 0 0 3px rgba(163, 35, 28, .3); }
+
+
+/* ═══════════════════════════════════════════════════════════════════
+   PORTADA — EL PAPEL CONTINUO QUE AVANZA
+   La hoja entera del formulario —sus rayas y sus dos bandas
+   perforadas— sube muy despacio, como el papel saliendo de una
+   impresora de matriz.
+
+   Es traslación vertical, el movimiento más gastado del catálogo,
+   pero **lo que se dibuja es un mecanismo y no un adorno**: se
+   entiende que algo está avanzando, no que algo flota. Desde la 59 la
+   variedad sale de qué se dibuja.
+
+   La capa mide 200% y recorre exactamente un período de las rayas,
+   así que el ciclo cierra sin salto.
+
+   @keyframes puros, nunca requestAnimationFrame: Chrome congela rAF
+   en pestañas de fondo y la portada volvía a primer plano detenida a
+   mitad de camino.
+   ═══════════════════════════════════════════════════════════════════ */
+.portada {
+  position: relative; overflow: hidden;
+  min-height: min(84vh, 750px);
+  display: flex; align-items: center;
+  padding: 4.5rem 0;
+  background: var(--formulario);
+}
+
+.continuo { position: absolute; inset: 0; pointer-events: none; overflow: hidden; }
+.continuo span {
+  position: absolute; left: 0; right: 0; top: -100%; height: 300%;
+  background-image:
+    /* la banda perforada derecha */
+    radial-gradient(circle at 50% 50%, var(--regla) 0 3px, transparent 3.2px),
+    /* la banda perforada izquierda */
+    radial-gradient(circle at 50% 50%, var(--regla) 0 3px, transparent 3.2px),
+    /* las rayas del formulario */
+    repeating-linear-gradient(180deg, var(--regla) 0 1px, transparent 1px 32px);
+  background-size: 22px 32px, 22px 32px, 100% 32px;
+  background-position: right 14px top, left 14px top, 0 0;
+  background-repeat: repeat-y, repeat-y, repeat;
+  opacity: .55;
+  animation: avanzar 26s linear infinite;
+}
+@keyframes avanzar {
+  from { transform: translate3d(0, 0, 0); }
+  to   { transform: translate3d(0, -32px, 0); }   /* un período */
+}
+
+.portada-cuerpo {
+  position: relative;
+  width: min(100% - 2.4rem, var(--ancho));
+  margin-inline: auto;
+}
+
+.portada-sobre {
+  margin: 0 0 1.5rem;
+  font-family: var(--dato); font-size: .84rem; font-weight: 700;
+  letter-spacing: .1em; text-transform: uppercase;
+  color: var(--folio);
+}
+
+.portada-h1 {
+  margin: 0 0 1.4rem;
+  font-family: var(--display); font-weight: 700;
+  font-size: clamp(2.1rem, 5.2vw, 3.9rem);
+  line-height: 1.1;
+  letter-spacing: -.02em;  /* fijo. Animar letter-spacing dejó el
+                              documento clavado en 443 px en una demo
+                              de la numeración vieja. */
+  color: var(--grafito);
+  max-width: 17ch;
+}
+.portada-h1 .l { display: block; }
+.portada-h1 em { font-style: normal; color: var(--folio); }
+
+.portada-bajada { margin: 0 0 2.2rem; max-width: 52ch; color: var(--tinta-suave); }
+.portada-bajada b { color: var(--grafito); font-weight: 700; }
+.portada-acciones { display: flex; flex-wrap: wrap; gap: .8rem; margin-bottom: 2.4rem; }
+.portada-pie {
+  margin: 0; font-family: var(--dato); font-size: .84rem;
+  color: var(--tinta-suave); line-height: 1.8;
+}
+.portada-pie b { color: var(--grafito); font-weight: 700; }
+
+/* Entrada escalonada. Los estados ocultos cuelgan de .js y el
+   temporizador del <head> los libera si main.js no llega. */
+.js .portada .l { opacity: 0; transform: translate3d(0, 18px, 0);
+                  animation: entrar .9s cubic-bezier(.2,.7,.3,1) forwards; }
+.js .portada .l1 { animation-delay: .10s; }
+.js .portada .l2 { animation-delay: .22s; }
+.js .portada .l3 { animation-delay: .34s; }
+.js .portada .l4 { animation-delay: .50s; }
+.js .portada .l5 { animation-delay: .62s; }
+.js .portada .l6 { animation-delay: .72s; }
+@keyframes entrar { to { opacity: 1; transform: none; } }
+
+
+/* ═══════════════════════════════════════════════════════════════════
+   BOTONES
+   ═══════════════════════════════════════════════════════════════════ */
+.btn {
+  display: inline-block; text-decoration: none;
+  font-family: var(--dato); font-size: .92rem; font-weight: 700;
+  padding: .85rem 1.5rem; border-radius: 2px;
+  transition: box-shadow .18s ease, transform .18s ease;
+}
+.btn-fuerte { background: var(--folio); color: var(--formulario-alto); }
+.btn-fuerte:hover, .btn-fuerte:focus-visible {
+  box-shadow: 0 0 0 3px rgba(163, 35, 28, .28); transform: translateY(-1px);
+}
+.btn-suave { color: var(--grafito); border: 1px solid rgba(28, 27, 26, .3); }
+.btn-suave:hover, .btn-suave:focus-visible { border-color: var(--folio); color: var(--folio); }
+.grande { padding: 1.05rem 2rem; font-size: 1rem; }
+
+.suena .btn-fuerte, .cierre .btn-fuerte { background: var(--folio-claro); color: var(--grafito); }
+
+
+/* ═══════════════════════════════════════════════════════════════════
+   PIEZAS DE TEXTO COMPARTIDAS
+   ═══════════════════════════════════════════════════════════════════ */
+.rotulo {
+  margin: 0 0 .7rem;
+  font-family: var(--dato); font-size: .82rem; font-weight: 700;
+  letter-spacing: .1em; text-transform: uppercase;
+  color: var(--folio);
+}
+.suena .rotulo { color: var(--folio-claro); }
+
+.t2 {
+  margin: 0 0 1.1rem;
+  font-family: var(--display); font-weight: 700;
+  font-size: clamp(1.8rem, 3.8vw, 2.6rem);
+  line-height: 1.2; letter-spacing: -.02em;
+  color: var(--grafito); max-width: 22ch;
+}
+.suena .t2, .t2.claro { color: var(--formulario-alto); }
+
+.entrada { margin: 0 0 2.4rem; max-width: 56ch; color: var(--tinta-suave); }
+.suena .entrada, .entrada.claro { color: var(--form-suave); }
+.entrada b { color: var(--grafito); font-weight: 700; }
+.suena .entrada b, .entrada.claro b { color: var(--formulario-alto); }
+
+
+/* ═══════════════════════════════════════════════════════════════════
+   PIEZA FIRMA 1 — LA PAUTA POR KILOMETRAJE
+   Ordenada por kilometraje y no por pieza: el dueño del auto no sabe
+   qué es un filtro de habitáculo, pero sí sabe cuánto marca su
+   odómetro. La sección tiene que poder leerse mirando el tablero.
+   ═══════════════════════════════════════════════════════════════════ */
+.pauta { background: var(--formulario); padding: 5.5rem 0; }
+
+.km-lista { list-style: none; margin: 0; padding: 0;
+            border-top: 2px solid var(--grafito); }
+.km {
+  display: grid; grid-template-columns: 9.5rem minmax(0, 1fr);
+  gap: 1.6rem; padding: 1.4rem 0;
+  border-bottom: 1px solid var(--regla);
+}
+.km-n {
+  margin: 0; align-self: start;
+  font-family: var(--dato); font-weight: 700;
+  font-size: clamp(1.4rem, 2.8vw, 1.85rem); line-height: 1.1;
+  letter-spacing: -.03em; color: var(--grafito);
+  white-space: nowrap;
+}
+/* El «km» que explica la cifra. Va en el pseudo y no en el HTML
+   porque es rótulo de unidad, no contenido: si el CSS no carga, el
+   número sigue diciendo lo que dice el rótulo de la sección. */
+.km-n::after {
+  content: 'kilómetros';
+  display: block; margin-top: .25rem;
+  font-weight: 400; font-size: .7rem;
+  letter-spacing: .06em; text-transform: uppercase; color: var(--tinta-suave);
+}
+/* «Cada año» no lleva unidad: sería «Cada año kilómetros». */
+.km:last-child .km-n::after { content: ''; display: none; }
+
+.km-c h3 {
+  margin: 0 0 .35rem; font-family: var(--display); font-weight: 700;
+  font-size: 1.18rem; color: var(--grafito); letter-spacing: -.01em;
+}
+.km-c p { margin: 0; font-size: .95rem; max-width: 60ch; }
+.km-c b { color: var(--grafito); font-weight: 700; }
+/* La correa de distribución es la única que no perdona el atraso. */
+.km.destacada { box-shadow: inset 5px 0 0 var(--folio); padding-left: 1.1rem; }
+.km.destacada .km-n { color: var(--folio); }
+
+.clave {
+  margin-top: 2.4rem; padding: 1.8rem;
+  background: var(--formulario-alto);
+  border-left: 6px solid var(--folio);
+  max-width: 68ch;
+}
+.clave-t {
+  margin: 0 0 .8rem; font-family: var(--dato); font-size: .8rem; font-weight: 700;
+  letter-spacing: .1em; text-transform: uppercase;
+  color: var(--folio);
+}
+.clave p { margin: 0 0 .9rem; }
+.clave p:last-child { margin-bottom: 0; }
+.clave p:first-of-type b {
+  font-family: var(--display); font-size: 1.32rem; font-weight: 700;
+  color: var(--grafito); line-height: 1.3; display: block; letter-spacing: -.02em;
+}
+.clave b { color: var(--grafito); font-weight: 700; }
+
+
+/* ═══════════════════════════════════════════════════════════════════
+   PIEZA FIRMA 2 — LOS RUIDOS
+   Ordenado por SÍNTOMA y no por repuesto: nadie llega diciendo
+   «necesito pastillas», llega diciendo «me suena algo al frenar».
+
+   Las tres urgencias llevan su palabra escrita además del color. La
+   regla es de la 67 y acá vale igual: esta tabla se dicta por
+   teléfono.
+   ═══════════════════════════════════════════════════════════════════ */
+.suena { background: var(--grafito); padding: 5.5rem 0; }
+
+.ruidos { list-style: none; margin: 0; padding: 0;
+          display: grid; grid-template-columns: repeat(auto-fit, minmax(19rem, 1fr));
+          gap: 1px; background: rgba(255, 255, 255, .2);
+          border: 1px solid rgba(255, 255, 255, .2); }
+.ruido {
+  background: var(--grafito-alto); padding: 1.5rem 1.5rem 1.6rem;
+  display: flex; flex-direction: column; gap: .55rem;
+}
+.ruido-q {
+  margin: 0; font-family: var(--display); font-weight: 700;
+  font-size: 1.12rem; color: var(--formulario-alto); line-height: 1.3;
+}
+.ruido-r { margin: 0; font-size: .93rem; color: var(--form-suave); }
+.ruido-r b { color: var(--formulario-alto); font-weight: 700; }
+.ruido-e {
+  margin: .2rem 0 0; align-self: start;
+  font-family: var(--dato); font-size: .76rem; font-weight: 700;
+  letter-spacing: .06em; text-transform: uppercase;
+  border: 1px solid currentColor; border-radius: 2px;
+  padding: .3rem .65rem;
+}
+.e-ya     { color: var(--ya); }
+.e-pronto { color: var(--pronto); }
+.e-mes    { color: var(--mes); }
+.ruido.destacado { box-shadow: inset 4px 0 0 var(--ya); }
+
+
+/* ═══════════════════════════════════════════════════════════════════
+   LÁMINA CON FOTO
+   ═══════════════════════════════════════════════════════════════════ */
+.lamina {
+  display: grid; grid-template-columns: .95fr 1.05fr;
+  align-items: stretch; background: var(--formulario-alto);
+}
+.lamina-texto { padding: 4.5rem clamp(1.4rem, 4vw, 3.5rem); align-self: center; }
+.lamina-foto { position: relative; overflow: hidden; min-height: 30rem; }
+/* La capa es un 24% más alta que su marco: le sobra recorrido para
+   desplazarse al scroll sin que nunca se vea el borde. */
+.lamina-capa {
+  position: absolute; inset: -12% 0;
+  background-color: var(--grafito);
+  background-image: linear-gradient(150deg, #45403C, #171615);
+  display: grid; place-items: center;
+  will-change: transform;
+}
+
+.numeraco {
+  margin: 0; font-family: var(--display); font-weight: 700;
+  font-size: clamp(4rem, 11vw, 7.2rem); line-height: .95;
+  letter-spacing: -.04em; color: var(--folio);
+}
+
+.hueco-nota {
+  margin: 0; max-width: 26ch; text-align: center;
+  font-family: var(--dato); font-size: .82rem; line-height: 1.7;
+  color: var(--form-suave);
+  border: 1px dashed rgba(244, 243, 239, .3);
+  padding: 1.1rem 1.2rem; border-radius: 2px;
+}
+.hueco-nota code { color: var(--folio-claro); }
+.tiene-foto .hueco-nota { display: none; }
+
+
+/* ═══════════════════════════════════════════════════════════════════
+   DÓNDE ESTAMOS
+   ═══════════════════════════════════════════════════════════════════ */
+.donde { background: var(--formulario); padding: 5.5rem 0; }
+.donde-grilla {
+  display: grid; grid-template-columns: 1.15fr .85fr;
+  gap: clamp(2rem, 5vw, 4rem); align-items: start;
+}
+.datos {
+  margin: 0 0 2rem; display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(13rem, 1fr));
+  gap: 1.3rem 2rem;
+  border-top: 1px solid var(--regla); padding-top: 1.6rem;
+}
+.datos dt {
+  font-family: var(--dato); font-size: .8rem; font-weight: 700;
+  letter-spacing: .08em; text-transform: uppercase;
+  color: var(--folio); margin-bottom: .25rem;
+}
+.datos dd { margin: 0; color: var(--grafito); font-size: .98rem; }
+.datos dd a { color: var(--grafito); text-decoration-color: var(--folio); }
+/* Lo que no se sabe se dice, no se rellena. La regla es de la 68:
+   inventar un dato verificable es la manera más rápida de que la demo
+   se caiga en la reunión. */
+.datos dd.pendiente {
+  color: var(--folio); font-family: var(--dato); font-size: .84rem; font-weight: 700;
+}
+
+.aviso {
+  margin: 0; padding: 1.2rem 1.3rem;
+  background: var(--formulario-alto);
+  border-left: 4px solid var(--folio);
+  font-size: .95rem; max-width: 58ch;
+}
+.aviso b { color: var(--grafito); font-weight: 700; }
+
+.donde-foto {
+  position: relative; height: 26rem;
+  background-color: var(--grafito);
+  background-image: linear-gradient(160deg, #4E4843, #171615);
+  display: grid; place-items: center; border-radius: 2px; overflow: hidden;
+}
+
+
+/* ═══════════════════════════════════════════════════════════════════
+   CIERRE Y PIE
+   ═══════════════════════════════════════════════════════════════════ */
+.cierre { background: var(--grafito); padding: 5rem 0; text-align: center; }
+.cierre .t2, .cierre .entrada { margin-inline: auto; }
+.cierre .entrada { margin-bottom: 2.2rem; }
+
+.pie { background: var(--grafito-alto); padding: 3.2rem 0 3.6rem;
+       border-top: 1px solid rgba(244, 243, 239, .18); }
+.pie-grilla {
+  display: grid; grid-template-columns: auto auto 1fr;
+  gap: 1.6rem 3rem; align-items: start;
+}
+.pie-m {
+  margin: 0; font-family: var(--display); font-weight: 700;
+  font-size: 1.08rem; color: var(--formulario-alto); line-height: 1.45;
+}
+.pie-m span {
+  font-family: var(--dato); font-weight: 400; font-size: .74rem;
+  letter-spacing: .1em; text-transform: uppercase; color: var(--folio-claro);
+}
+.pie-d { margin: 0; font-family: var(--dato); font-size: .86rem;
+         color: var(--form-suave); line-height: 1.9; }
+.pie-d a { color: var(--folio-claro); }
+.pie-n { margin: 0; font-size: .78rem; color: var(--form-suave); max-width: 56ch; }
+
+
+/* ═══════════════════════════════════════════════════════════════════
+   REVEALS
+   Ocultos sólo bajo .js. main.js tiene dos resguardos: lo visible al
+   cargar se muestra de inmediato, y un barrido a los 6 s revela lo
+   que haya quedado pendiente.
+   ═══════════════════════════════════════════════════════════════════ */
+.js .reveal { opacity: 0; transform: translate3d(0, 20px, 0); }
+.js .reveal.visible {
+  opacity: 1; transform: none;
+  transition: opacity .7s ease, transform .7s cubic-bezier(.2,.7,.3,1);
+}
+
+
+/* ═══════════════════════════════════════════════════════════════════
+   PANTALLAS CHICAS
+   ═══════════════════════════════════════════════════════════════════ */
+@media (max-width: 980px) {
+  .lamina { grid-template-columns: 1fr; }
+  .lamina-texto { order: 1; }
+  .lamina-foto { order: 2; min-height: 22rem; }
+  .donde-grilla { grid-template-columns: 1fr; }
+  /* aspect-ratio junto a min-height deja que el navegador calcule el
+     ancho desde el alto y se sale de la pantalla: alto fijo. */
+  .donde-foto { height: 17rem; }
+  .pie-grilla { grid-template-columns: 1fr; }
+}
+
+@media (max-width: 720px) {
+  .cab-n { display: none; }
+  .cab { gap: .8rem; }
+  .cab-s { display: none; }
+  .cab-tel { margin-left: auto; }
+  .portada { min-height: auto; padding: 2.8rem 0 3.2rem; }
+  .pauta, .suena, .donde, .cierre { padding: 3.8rem 0; }
+  .lamina-texto { padding: 3rem 1.2rem; }
+  .clave { padding: 1.4rem 1.2rem; }
+  /* El kilometraje sube a su propia línea: en 375 px una columna de
+     9,5 rem dejaba el texto en cuatro palabras por renglón. */
+  .km { grid-template-columns: 1fr; gap: .5rem; }
+  .km-n { display: flex; align-items: baseline; gap: .5rem; }
+  .km-n::after { margin-top: 0; }
+  .km.destacada { padding-left: .9rem; }
+}
+
+
+/* ═══════════════════════════════════════════════════════════════════
+   MOVIMIENTO REDUCIDO
+   En Windows esta preferencia viene activada de fábrica muchas veces.
+   El papel se DETIENE y se queda: una hoja de formulario quieta sigue
+   siendo una hoja de formulario — misma regla que el dial (51), el
+   plano (55), el abanico (69), los conos (71), los surcos (72) y la
+   pared (73). Sólo se esconde lo que congelado parece un error: la
+   lluvia, las hojas, el vapor, el goteo, el aliento del horno. Los
+   fundidos se dejan: apagándolo todo la página se ve muerta.
+   ═══════════════════════════════════════════════════════════════════ */
+@media (prefers-reduced-motion: reduce) {
+  .continuo span { animation: none; }
+  .js .portada .l { animation-duration: .01s; animation-delay: 0s; }
+}
+
+
+/* ═══════════════════════════════════════════════════════════════════
+   FOTOS — DESCOMENTAR CUANDO LLEGUEN
+   Dejar los JPEG en imagenes/ con estos nombres y quitar el comentario.
+   La nota del hueco desaparece sola.
+   ═══════════════════════════════════════════════════════════════════ */
+.portada {
+  background:
+    linear-gradient(to right, rgba(244,243,239,.97) 0%, rgba(244,243,239,.9) 54%, rgba(244,243,239,.6) 100%),
+    url('../imagenes/portada.jpg') center / cover no-repeat;
+}
+.lamina-capa { background-image: url('../imagenes/taller.jpg'); background-size: cover; background-position: center; }
+/* FALTA ESTA FOTO, LA TIENE QUE DAR EL CLIENTE: .donde-foto { background-image: url('../imagenes/frente.jpg'); background-size: cover; background-position: center; } */
+
+/* ── MAPA DE UBICACION ──────────────────────────────────────────────
+   Imagen propia con mosaicos de OpenStreetMap pegados: la CSP prohibe
+   pedir nada a un tercero, asi que un iframe de Google Maps quedaria en
+   blanco SIN dar un solo error. El "Como llegar" si es un enlace, y un
+   enlace no lo bloquea nada.
+   Los colores salen de currentColor a proposito: asi el bloque se adapta
+   a la paleta de cada demo sin conocerla y sin chocar con ella.
+   La atribucion a OpenStreetMap la exige su licencia (ODbL). */
+.mapa-sec { padding: clamp(2.5rem, 6vw, 4.5rem) 0; }
+.mapa {
+  /* Casi siempre el mapa queda como hijo DIRECTO de la seccion, fuera del
+     contenedor .ancho: sin este ancho maximo se va de borde a borde y el
+     pie del mapa arranca pegado al filo de la pantalla. Se usa la variable
+     de la demo si existe, y 1100 px si no. */
+  width: min(100% - 2.5rem, var(--ancho, 1100px));
+  margin: 1.4rem auto 0;
+  border: 1px solid; border-color: color-mix(in srgb, currentColor 22%, transparent);
+  border-radius: 10px; overflow: hidden;
+}
+@supports not (color: color-mix(in srgb, red 50%, blue)) { .mapa { border-color: rgba(128, 128, 128, .35); } }
+.mapa img { display: block; width: 100%; height: auto; aspect-ratio: 16 / 10; object-fit: cover; }
+.mapa__pie {
+  display: flex; flex-wrap: wrap; align-items: center; gap: .4rem 1rem;
+  padding: .75rem .9rem;
+  font-size: .86em; line-height: 1.45;
+  border-top: 1px solid; border-top-color: color-mix(in srgb, currentColor 22%, transparent);
+}
+@supports not (color: color-mix(in srgb, red 50%, blue)) { .mapa__pie { border-top-color: rgba(128, 128, 128, .35); } }
+.mapa__pie b { font-weight: 700; }
+.mapa__ir { color: inherit; font-weight: 700; text-decoration: underline; min-height: 44px; display: inline-flex; align-items: center; }
+.mapa__cred { width: 100%; font-size: .84em; opacity: .8; }
+.mapa__cred a { color: inherit; }

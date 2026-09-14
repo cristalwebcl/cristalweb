@@ -1,0 +1,25 @@
+﻿FUENTES DE LAS IMAGENES - salon-imagen-reloaded-nunoa Bancos libres; procesadas con preparar-lote.ps1 (JPEG, ancho y calidad por tratamiento). 
+tajo-01.jpg  <=  pexels | Pexels License | Max Vakhtbovych | https://www.pexels.com/es-es/foto/luces-interior-moderno-brillante-7750128/ | https://images.pexels.com/photos/7750128/pexels-photo-7750128.jpeg | recorte 21:9
+mit-01.jpg  <=  pexels | Pexels License | RDNE Stock project | https://www.pexels.com/es-es/foto/manos-peinado-cabellos-melena-7755225/ | https://images.pexels.com/photos/7755225/pexels-photo-7755225.jpeg | recorte 4:5
+cita-01.jpg  <=  pexels | Pexels License | Max Vakhtbovych | https://www.pexels.com/es-es/foto/blanco-mesas-negro-sillas-7750137/ | https://images.pexels.com/photos/7750137/pexels-photo-7750137.jpeg | recorte 16:9
+telon-01.jpg  <=  pexels | Pexels License | Max Vakhtbovych | https://www.pexels.com/es-es/foto/luces-suelo-sillas-limpiar-7750117/ | https://images.pexels.com/photos/7750117/pexels-photo-7750117.jpeg
+mos1-01.jpg  <=  pexels | Pexels License | Max Vakhtbovych | https://www.pexels.com/es-es/foto/sillas-interior-salon-de-belleza-asientos-7750108/ | https://images.pexels.com/photos/7750108/pexels-photo-7750108.jpeg | recorte 3:4
+mos2-01.jpg  <=  pexels | Pexels License | cottonbro studio | https://www.pexels.com/es-es/foto/manos-mujer-nina-modelo-3993466/ | https://images.pexels.com/photos/3993466/pexels-photo-3993466.jpeg | recorte 3:4
+mos4-01.jpg  <=  pexels | Pexels License | cottonbro studio | https://www.pexels.com/es-es/foto/manos-gente-nina-cabeza-3993453/ | https://images.pexels.com/photos/3993453/pexels-photo-3993453.jpeg | recorte 3:4
+mos5-01.jpg  <=  pexels | Pexels License | Max Vakhtbovych | https://www.pexels.com/es-es/foto/sillas-interior-salon-de-belleza-asientos-7750109/ | https://images.pexels.com/photos/7750109/pexels-photo-7750109.jpeg | recorte 3:4
+mos3-01.jpg  <=  pexels | Pexels License | cottonbro studio | https://www.pexels.com/es-es/foto/manos-gente-mujer-nina-3993447/ | https://images.pexels.com/photos/3993447/pexels-photo-3993447.jpeg | recorte 3:4
+mos6-01.jpg  <=  pexels | Pexels License | Max Vakhtbovych | https://www.pexels.com/es-es/foto/luces-sillas-interior-moderno-7750099/ | https://images.pexels.com/photos/7750099/pexels-photo-7750099.jpeg | recorte 3:4
+
+MAPA DE UBICACION — mapa-01.jpg
+  768 x 768 · zoom 14 · centro -33.4543164, -70.5936358
+  Mosaicos de OpenStreetMap pegados en una sola imagen, con el marcador
+  dibujado encima. Datos (c) OpenStreetMap contributors, licencia ODbL:
+  la atribucion tiene que ir VISIBLE junto al mapa, en el pie de la figura.
+  https://www.openstreetmap.org/copyright
+
+MAPA DE UBICACION — mapa-01.jpg
+  768 x 768 · zoom 14 · centro -33.4543164, -70.5936358
+  Mosaicos de OpenStreetMap pegados en una sola imagen, con el marcador
+  dibujado encima. Datos (c) OpenStreetMap contributors, licencia ODbL:
+  la atribucion tiene que ir VISIBLE junto al mapa, en el pie de la figura.
+  https://www.openstreetmap.org/copyright

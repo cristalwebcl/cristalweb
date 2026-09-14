@@ -1,0 +1,22 @@
+FUENTES DE LAS IMAGENES - Restaurant Arrayan Rehecha el 13-09-2026 (presentacion antes que texto). Fotos de REFERENCIA de bancos libres: ninguna es del local; las verdaderas las tiene que mandar el negocio. 
+port-01.jpg  <-  pozo-p-arr-pizza\003.jpg  |  pexels (Pexels License)  |  autor: Joshua Plattner  |  https://www.pexels.com/es-es/foto/pizza-ardiente-hogar-chimenea-18126715/  |  consulta: "pizza wood oven"
+hund1-01.jpg  <-  pozo-p-arr-pasta\006.jpg  |  pexels (Pexels License)  |  autor: Ron Lach  |  https://www.pexels.com/es-es/foto/comida-cena-tabla-de-cortar-divertido-10049559/  |  consulta: "fresh pasta"
+hund2-01.jpg  <-  pozo-p-arr-pizza\010.jpg  |  pexels (Pexels License)  |  autor: Ariel Santos  |  https://www.pexels.com/es-es/foto/comida-pizza-restaurante-plato-16586524/  |  consulta: "pizza wood oven"
+hund3-01.jpg  <-  pozo-p-arr-ravioli\001.jpg  |  pexels (Pexels License)  |  autor: Ray Suarez  |  https://www.pexels.com/es-es/foto/deliciosos-raviolis-italianos-con-salsa-de-tomate-34565210/  |  consulta: "ravioli"
+hund4-01.jpg  <-  pozo-p-arr-dulce\004.jpg  |  pexels (Pexels License)  |  autor: Valeria Boltneva  |  https://www.pexels.com/es-es/foto/comida-taza-copa-vaso-10120687/  |  consulta: "tiramisu dessert"
+hund5-01.jpg  <-  pozo-p-arr-pizza\007.jpg  |  pexels (Pexels License)  |  autor: Camilo Laverde  |  https://www.pexels.com/es-es/foto/fuego-ardiente-hogar-chimenea-18691362/  |  consulta: "pizza wood oven"
+hund6-01.jpg  <-  pozo-p-arr-lago\002.jpg  |  pexels (Pexels License)  |  autor: Max Parada  |  https://www.pexels.com/es-es/foto/vista-escenica-del-lago-y-montanas-en-panguipulli-chile-35984738/  |  consulta: "lake Panguipulli"
+banda-01.jpg  <-  pozo-p-arr-pasta\007.jpg  |  pexels (Pexels License)  |  autor: Filipp Romanovski  |  https://www.pexels.com/es-es/foto/madera-pasta-rustico-vista-superior-18647860/  |  consulta: "fresh pasta"
+cita-01.jpg  <-  pozo-p-arr-pizza\005.jpg  |  pexels (Pexels License)  |  autor: Víctor C.  |  https://www.pexels.com/es-es/foto/fuego-hoguera-ardiente-calor-19620699/  |  consulta: "pizza wood oven"
+mos1-01.jpg  <-  pozo-p-arr-pizza\009.jpg  |  pexels (Pexels License)  |  autor: ROMAN ODINTSOV  |  https://www.pexels.com/es-es/foto/comida-pizza-mesa-de-madera-delicioso-5903382/  |  consulta: "pizza wood oven"
+mos2-01.jpg  <-  pozo-p-arr-ravioli\010.jpg  |  pexels (Pexels License)  |  autor: Sofia Andrade  |  https://www.pexels.com/es-es/foto/raviolis-gourmet-con-salsa-de-tomate-39061616/  |  consulta: "ravioli"
+mos3-01.jpg  <-  pozo-p-arr-pasta\004.jpg  |  pexels (Pexels License)  |  autor: Carpe Jugulum  |  https://www.pexels.com/es-es/foto/preparacion-de-pasta-casera-con-ingredientes-crudos-36865257/  |  consulta: "fresh pasta"
+mos4-01.jpg  <-  pozo-p-arr-dulce\005.jpg  |  pexels (Pexels License)  |  autor: Sylwester Ficek  |  https://www.pexels.com/es-es/foto/exquisito-postre-de-tiramisu-con-guarnicion-de-cafe-39352091/  |  consulta: "tiramisu dessert"
+mos5-01.jpg  <-  pozo-p-arr-masa\005.jpg  |  pexels (Pexels License)  |  autor: Life Of Pix  |  https://www.pexels.com/es-es/foto/persona-mezclando-masa-9095/  |  consulta: "flour dough hands"
+mos6-01.jpg  <-  pozo-p-arr-salsa\007.jpg  |  pexels (Pexels License)  |  autor: https://kaboompics.com/  |  https://www.pexels.com/es-es/foto/vegetales-verduras-cuchara-tomates-4871236/  |  consulta: "pasta sauce pot"
+
+BRUMA (bruma-pag-0N.png y bruma-osc-0N.png, 30x20): las MISMAS fotos, recortadas a 3:2, reducidas y
+recoloreadas con C:\devs\demos\hacer-bruma.ps1 (clara >= 0,68 de luminancia / oscura <= 0,05). No suman fuentes.
+    pagina: port-01.jpg, banda-01.jpg, cita-01.jpg, hund1-01.jpg, hund3-01.jpg, hund4-01.jpg, mos2-01.jpg, mos4-01.jpg   |   oscuras: cita-01.jpg, hund5-01.jpg, mos4-01.jpg
+
+MAPA: iframe de Google Maps (embed publico, sin clave). No hay imagen de mapa.

@@ -1,0 +1,18 @@
+﻿FUENTES DE LAS IMAGENES - cortinas-deco-hogar-santiago Bancos libres; procesadas con preparar-lote.ps1 (JPEG, ancho y calidad por tratamiento). 
+tajo-01.jpg  <=  pexels | Pexels License | Kübra Arslaner | https://www.pexels.com/es-es/foto/oscuro-pared-muro-ventana-8358607/ | https://images.pexels.com/photos/8358607/pexels-photo-8358607.jpeg | recorte 21:9
+telon-01.jpg  <=  pexels | Pexels License | RinaS | https://www.pexels.com/es-es/foto/casas-casa-arquitectura-ventanas-5860570/ | https://images.pexels.com/photos/5860570/pexels-photo-5860570.jpeg
+mos1-01.jpg  <=  pexels | Pexels License | Polina ⠀ | https://www.pexels.com/es-es/foto/cortina-de-ventana-blanca-y-marron-5644277/ | https://images.pexels.com/photos/5644277/pexels-photo-5644277.jpeg | recorte 3:4
+mos2-01.jpg  <=  pexels | Pexels License | julie aagaard | https://www.pexels.com/es-es/foto/ligero-cielo-creativo-edificio-5044288/ | https://images.pexels.com/photos/5044288/pexels-photo-5044288.jpeg | recorte 3:4
+mos4-01.jpg  <=  pexels | Pexels License | Leandro Bezerra | https://www.pexels.com/es-es/foto/encantador-dormitorio-vintage-iluminado-por-el-sol-con-vista-a-la-ventana-31992740/ | https://images.pexels.com/photos/31992740/pexels-photo-31992740.jpeg | recorte 3:4
+mos5-01.jpg  <=  pexels | Pexels License | Paulina Lazauskaite | https://www.pexels.com/es-es/foto/ventanas-apartamento-casa-hogar-17767778/ | https://images.pexels.com/photos/17767778/pexels-photo-17767778.jpeg | recorte 3:4
+mos6-01.jpg  <=  pexels | Pexels License | Eva Lin | https://www.pexels.com/es-es/foto/dormitorio-acogedor-con-suave-luz-de-manana-38453692/ | https://images.pexels.com/photos/38453692/pexels-photo-38453692.jpeg | recorte 3:4
+cita-01.jpg  <=  pexels | Pexels License | Pixabay | https://www.pexels.com/es-es/foto/foto-de-primer-plano-de-la-paleta-de-colores-de-tela-259756/ | https://images.pexels.com/photos/259756/pexels-photo-259756.jpeg | recorte 16:9
+mos3-01.jpg  <=  pexels | Pexels License | Taryn Elliott | https://www.pexels.com/es-es/foto/rojo-sucio-pared-muro-5835536/ | https://images.pexels.com/photos/5835536/pexels-photo-5835536.jpeg | recorte 3:4
+mit-01.jpg  <=  pexels | Pexels License | Edgar Martínez | https://www.pexels.com/es-es/foto/pila-de-telas-coloridas-con-texturas-39109295/ | https://images.pexels.com/photos/39109295/pexels-photo-39109295.png
+
+MAPA DE UBICACION — mapa-01.jpg
+  768 x 768 · zoom 14 · centro -33.4420638, -70.6456647
+  Mosaicos de OpenStreetMap pegados en una sola imagen, con el marcador
+  dibujado encima. Datos (c) OpenStreetMap contributors, licencia ODbL:
+  la atribucion tiene que ir VISIBLE junto al mapa, en el pie de la figura.
+  https://www.openstreetmap.org/copyright

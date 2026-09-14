@@ -1,0 +1,22 @@
+FUENTES DE LAS IMAGENES - FerreterÃ­a Iribarne Rehecha el 13-09-2026 (presentacion antes que texto). Fotos de REFERENCIA de bancos libres: ninguna es del local; las verdaderas las tiene que mandar el negocio. 
+port-01.jpg  <-  pozo-p-iri-serrucho\012.jpg  |  pexels (Pexels License)  |  autor: Ono  Kosuki  |  https://www.pexels.com/es-es/foto/madera-hombre-sin-rostro-de-madera-5974279/  |  consulta: "hand saw wood"
+hund1-01.jpg  <-  pozo-p-iri-destornillador\008.jpg  |  pexels (Pexels License)  |  autor: Polina Tankilevitch  |  https://www.pexels.com/es-es/foto/reparar-materiales-destornilladores-plano-cenital-5583091/  |  consulta: "screwdriver set"
+hund2-01.jpg  <-  pozo-p-iri-pintura\003.jpg  |  pexels (Pexels License)  |  autor: David Waschbüsch  |  https://www.pexels.com/es-es/foto/cubos-de-pintura-de-varios-colores-1887946/  |  consulta: "paint cans"
+hund3-01.jpg  <-  pozo-p-iri-aserrin\002.jpg  |  pexels (Pexels License)  |  autor: David Correa Franco  |  https://www.pexels.com/es-es/foto/panel-de-cerca-rustica-de-madera-en-medellin-31714549/  |  consulta: "sawdust wood plank"
+hund4-01.jpg  <-  pozo-p-iri-martillo\003.jpg  |  pexels (Pexels License)  |  autor: Pixabay  |  https://www.pexels.com/es-es/foto/martillo-de-garra-negro-sobre-plancha-de-madera-marron-209235/  |  consulta: "hammer nails wood"
+hund5-01.jpg  <-  pozo-p-iri-taladro\012.jpg  |  pexels (Pexels License)  |  autor: Ron Lach  |  https://www.pexels.com/es-es/foto/hombre-herramientas-trabajador-obrero-8832024/  |  consulta: "cordless drill"
+hund6-01.jpg  <-  pozo-p-iri-martillo\005.jpg  |  pexels (Pexels License)  |  autor: https://kaboompics.com/  |  https://www.pexels.com/es-es/foto/persona-manos-trabajando-metal-7285984/  |  consulta: "hammer nails wood"
+banda-01.jpg  <-  pozo-p-iri-banco\006.jpg  |  pexels (Pexels License)  |  autor: Ahimsa -  OM  |  https://www.pexels.com/es-es/foto/taller-organizado-con-herramientas-manuales-y-abrazaderas-34471533/  |  consulta: "hand tools workbench"
+cita-01.jpg  <-  pozo-p-iri-aserrin\007.jpg  |  pexels (Pexels License)  |  autor: Ron Lach  |  https://www.pexels.com/es-es/foto/textura-serrin-de-cerca-8817844/  |  consulta: "sawdust wood plank"
+mos1-01.jpg  <-  pozo-p-iri-serrucho\003.jpg  |  pexels (Pexels License)  |  autor: Ksenia Chernaya  |  https://www.pexels.com/es-es/foto/hombre-construccion-pared-muro-5691605/  |  consulta: "hand saw wood"
+mos2-01.jpg  <-  pozo-p-iri-sierra\011.jpg  |  pexels (Pexels License)  |  autor: Tima Miroshnichenko  |  https://www.pexels.com/es-es/foto/madera-persona-edificio-construccion-6790100/  |  consulta: "circular saw cutting"
+mos3-01.jpg  <-  pozo-p-iri-rodillo\011.jpg  |  pexels (Pexels License)  |  autor: Anastasia  Shuraeva  |  https://www.pexels.com/es-es/foto/aspero-suelo-de-madera-terminado-pared-blanca-5482138/  |  consulta: "paint roller wall"
+mos4-01.jpg  <-  pozo-p-iri-martillo\012.jpg  |  pexels (Pexels License)  |  autor: https://kaboompics.com/  |  https://www.pexels.com/es-es/foto/madera-espacio-de-trabajo-herramientas-carpinteria-7285927/  |  consulta: "hammer nails wood"
+mos5-01.jpg  <-  pozo-p-iri-pintura\010.jpg  |  pexels (Pexels License)  |  autor: Nataliya Vaitkevich  |  https://www.pexels.com/es-es/foto/latas-pinceles-materiales-de-pintura-rodillo-5641684/  |  consulta: "paint cans"
+mos6-01.jpg  <-  pozo-p-iri-aserrin\005.jpg  |  pexels (Pexels License)  |  autor: David Correa Franco  |  https://www.pexels.com/es-es/foto/paneles-de-cerca-de-madera-texturizada-en-medellin-31714558/  |  consulta: "sawdust wood plank"
+
+BRUMA (bruma-pag-0N.png y bruma-osc-0N.png, 30x20): las MISMAS fotos, recortadas a 3:2, reducidas y
+recoloreadas con C:\devs\demos\hacer-bruma.ps1 (clara >= 0,68 de luminancia / oscura <= 0,05). No suman fuentes.
+    pagina: port-01.jpg, hund4-01.jpg, cita-01.jpg, hund3-01.jpg, mos6-01.jpg   |   oscuras: port-01.jpg, banda-01.jpg, cita-01.jpg
+
+MAPA: iframe de Google Maps (embed publico, sin clave). No hay imagen de mapa.

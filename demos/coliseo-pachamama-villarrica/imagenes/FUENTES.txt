@@ -1,0 +1,22 @@
+FUENTES DE LAS IMAGENES - Coliseo Pachamama Rehecha el 13-09-2026 (presentacion antes que texto). Fotos de REFERENCIA de bancos libres: ninguna es del local; las verdaderas las tiene que mandar el negocio. 
+port-01.jpg  <-  pozo-p-pac-escenario\007.jpg  |  pexels (Pexels License)  |  autor: Justice Ejele  |  https://www.pexels.com/es-es/foto/luces-estudio-escenario-guitarra-electrica-6662993/  |  consulta: "live music stage guitar"
+hund1-01.jpg  <-  pozo-p-pac-escenario\012.jpg  |  pexels (Pexels License)  |  autor: Caleb Oquendo  |  https://www.pexels.com/es-es/foto/ligero-arte-creativo-azul-7626337/  |  consulta: "live music stage guitar"
+hund2-01.jpg  <-  pozo-p-pac-microfono\012.jpg  |  pexels (Pexels License)  |  autor: Gigxels com  |  https://www.pexels.com/es-es/foto/primer-plano-de-un-microfono-7564375/  |  consulta: "microphone vintage"
+hund3-01.jpg  <-  pozo-p-pac-tabla\010.jpg  |  pexels (Pexels License)  |  autor: Kalei Winfield  |  https://www.pexels.com/es-es/foto/tabla-de-embutidos-19987329/  |  consulta: "charcuterie board cheese"
+hund4-01.jpg  <-  pozo-p-pac-sandwich\012.jpg  |  pexels (Pexels License)  |  autor: Gonzalo Acuña  |  https://www.pexels.com/es-es/foto/comida-ensalada-restaurante-hombres-12664780/  |  consulta: "sandwich fries beer"
+hund5-01.jpg  <-  pozo-p-pac-tragos\004.jpg  |  pexels (Pexels License)  |  autor: Dennilson Navichoque  |  https://www.pexels.com/es-es/foto/coctel-beber-bebida-limon-16407733/  |  consulta: "cocktail bar drinks"
+hund6-01.jpg  <-  pozo-p-pac-luces\012.jpg  |  pexels (Pexels License)  |  autor: cottonbro studio  |  https://www.pexels.com/es-es/foto/luces-lamparas-amarillo-abstracto-10140707/  |  consulta: "stage lights smoke"
+banda-01.jpg  <-  pozo-p-pac-luces\004.jpg  |  pexels (Pexels License)  |  autor: Filipe Braggio  |  https://www.pexels.com/es-es/foto/oscuro-fumar-humo-focos-12092991/  |  consulta: "stage lights smoke"
+cita-01.jpg  <-  pozo-p-pac-bateria\008.jpg  |  pexels (Pexels License)  |  autor: Hồ Thành  |  https://www.pexels.com/es-es/foto/blanco-y-negro-musica-banda-grupo-11018964/  |  consulta: "drum kit"
+mos1-01.jpg  <-  pozo-p-pac-aguayo\011.jpg  |  pexels (Pexels License)  |  autor: Lucas Ribeiro Machado de Oliveira  |  https://www.pexels.com/es-es/foto/arte-colorido-de-colores-tradicional-17043766/  |  consulta: "andean woven textile"
+mos2-01.jpg  <-  pozo-p-pac-microfono\008.jpg  |  pexels (Pexels License)  |  autor: RDNE Stock project  |  https://www.pexels.com/es-es/foto/microfono-profundidad-de-campo-electronica-tiro-vertical-8198673/  |  consulta: "microphone vintage"
+mos3-01.jpg  <-  pozo-p-pac-tabla\009.jpg  |  pexels (Pexels License)  |  autor: Tom Tran  |  https://www.pexels.com/es-es/foto/comida-delicioso-sabroso-nam-11704887/  |  consulta: "charcuterie board cheese"
+mos4-01.jpg  <-  pozo-p-pac-luces\001.jpg  |  pexels (Pexels License)  |  autor: David Rama  |  https://www.pexels.com/es-es/foto/foto-de-focos-de-colores-2020432/  |  consulta: "stage lights smoke"
+mos5-01.jpg  <-  pozo-p-pac-bateria\010.jpg  |  pexels (Pexels License)  |  autor: Caleb Oquendo  |  https://www.pexels.com/es-es/foto/ligero-arte-creativo-noche-7626336/  |  consulta: "drum kit"
+mos6-01.jpg  <-  pozo-p-pac-aguayo\001.jpg  |  pexels (Pexels License)  |  autor: Tomás Asurmendi  |  https://www.pexels.com/es-es/foto/textil-argentino-colorido-con-diseno-de-llama-33980181/  |  consulta: "andean woven textile"
+
+BRUMA (bruma-pag-0N.png y bruma-osc-0N.png, 30x20): las MISMAS fotos, recortadas a 3:2, reducidas y
+recoloreadas con C:\devs\demos\hacer-bruma.ps1 (clara >= 0,68 de luminancia / oscura <= 0,05). No suman fuentes.
+    pagina: port-01.jpg, hund1-01.jpg, hund3-01.jpg, hund5-01.jpg, mos1-01.jpg, mos4-01.jpg, mos5-01.jpg, mos6-01.jpg   |   oscuras: cita-01.jpg, banda-01.jpg, mos2-01.jpg
+
+MAPA: iframe de Google Maps (embed publico, sin clave). No hay imagen de mapa.

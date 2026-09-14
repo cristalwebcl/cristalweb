@@ -1,0 +1,22 @@
+FUENTES DE LAS IMAGENES - Gardylafquen Rehecha el 13-09-2026 (presentacion antes que texto). Fotos de REFERENCIA de bancos libres: ninguna es del local; las verdaderas las tiene que mandar el negocio. 
+port-01.jpg  <-  pozo-p-gar-cazuela\006.jpg  |  pexels (Pexels License)  |  autor: Roy Sloan  |  https://www.pexels.com/es-es/foto/comida-bol-tazon-cuenco-6166796/  |  consulta: "beef stew soup bowl"
+hund1-01.jpg  <-  pozo-p-gar-cazuela\010.jpg  |  pexels (Pexels License)  |  autor: IARA MELO  |  https://www.pexels.com/es-es/foto/carne-de-panela-con-batata-30635676/  |  consulta: "beef stew soup bowl"
+hund2-01.jpg  <-  pozo-p-gar-cazuela\011.jpg  |  pexels (Pexels License)  |  autor: kirpiklipencere  |  https://www.pexels.com/es-es/foto/goulash-hungaro-tradicional-en-olla-38441087/  |  consulta: "beef stew soup bowl"
+hund3-01.jpg  <-  pozo-p-gar-pasta\012.jpg  |  pexels (Pexels License)  |  autor: Klaus Nielsen  |  https://www.pexels.com/es-es/foto/espaguetis-con-hoja-verde-sobre-plato-de-ceramica-blanca-6287525/  |  consulta: "spaghetti plate"
+hund4-01.jpg  <-  pozo-p-gar-internacional\006.jpg  |  pexels (Pexels License)  |  autor: Cristian Mihaila  |  https://www.pexels.com/es-es/foto/comida-plato-sano-pez-11653557/  |  consulta: "grilled fish plate"
+hund5-01.jpg  <-  pozo-p-gar-salon\001.jpg  |  pexels (Pexels License)  |  autor: Jonathan Borba  |  https://www.pexels.com/es-es/foto/flores-mesa-decoracion-vasos-19894379/  |  consulta: "banquet hall tables"
+hund6-01.jpg  <-  pozo-p-gar-estufa\012.jpg  |  pexels (Pexels License)  |  autor: Stephan Seeber  |  https://www.pexels.com/es-es/foto/hoguera-en-la-noche-1110492/  |  consulta: "pellet stove fire"
+banda-01.jpg  <-  pozo-p-gar-pasta\003.jpg  |  pexels (Pexels License)  |  autor: Klaus Nielsen  |  https://www.pexels.com/es-es/foto/pasta-en-plato-de-ceramica-blanca-6287534/  |  consulta: "spaghetti plate"
+cita-01.jpg  <-  pozo-p-gar-rosas\012.jpg  |  pexels (Pexels License)  |  autor: Natalia Sevruk  |  https://www.pexels.com/es-es/foto/hermoso-jardin-de-rosas-de-verano-en-flor-36120760/  |  consulta: "roses garden"
+mos1-01.jpg  <-  pozo-p-gar-rosas\010.jpg  |  pexels (Pexels License)  |  autor: Tahir Xəlfəquliyev  |  https://www.pexels.com/es-es/foto/rosas-amarillas-y-moradas-vibrantes-floreciendo-al-aire-libre-33344226/  |  consulta: "roses garden"
+mos2-01.jpg  <-  pozo-p-gar-verduras\006.jpg  |  pexels (Pexels License)  |  autor: Kris Møklebust  |  https://www.pexels.com/es-es/foto/escena-de-cosecha-con-calabazas-y-patatas-28561927/  |  consulta: "pumpkin corn potatoes"
+mos3-01.jpg  <-  pozo-p-gar-verduras\002.jpg  |  pexels (Pexels License)  |  autor: Shiebi AL  |  https://www.pexels.com/es-es/foto/calabazas-18680664/  |  consulta: "pumpkin corn potatoes"
+mos4-01.jpg  <-  pozo-p-gar-verduras\012.jpg  |  pexels (Pexels License)  |  autor: RDNE Stock project  |  https://www.pexels.com/es-es/foto/maiz-marron-y-blanco-en-cesta-tejida-marron-5847969/  |  consulta: "pumpkin corn potatoes"
+mos5-01.jpg  <-  pozo-p-gar-rosas\001.jpg  |  pexels (Pexels License)  |  autor: Galina K.  |  https://www.pexels.com/es-es/foto/primer-plano-de-una-rosa-amarilla-en-flor-38642761/  |  consulta: "roses garden"
+mos6-01.jpg  <-  pozo-p-gar-internacional\002.jpg  |  pexels (Pexels License)  |  autor: Luz Mariana Gonzalez  |  https://www.pexels.com/es-es/foto/asado-uruguayo-tradicional-con-brasero-37215460/  |  consulta: "grilled fish plate"
+
+BRUMA (bruma-pag-0N.png y bruma-osc-0N.png, 30x20): las MISMAS fotos, recortadas a 3:2, reducidas y
+recoloreadas con C:\devs\demos\hacer-bruma.ps1 (clara >= 0,68 de luminancia / oscura <= 0,05). No suman fuentes.
+    pagina: port-01.jpg, cita-01.jpg, banda-01.jpg, hund2-01.jpg, hund3-01.jpg, mos1-01.jpg, mos2-01.jpg, mos5-01.jpg   |   oscuras: banda-01.jpg, mos3-01.jpg, mos6-01.jpg
+
+MAPA: iframe de Google Maps (embed publico, sin clave). No hay imagen de mapa.

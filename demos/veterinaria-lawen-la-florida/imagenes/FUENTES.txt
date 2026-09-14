@@ -1,0 +1,22 @@
+FUENTES DE LAS IMAGENES - ClÃ­nica Veterinaria Lawen Rehecha el 13-09-2026 (presentacion antes que texto). Fotos de REFERENCIA de bancos libres: ninguna es del local; las verdaderas las tiene que mandar el negocio. 
+port-01.jpg  <-  pozo-p-lw-caja\004.jpg  |  pexels (Pexels License)  |  autor: MuffinLand  |  https://www.pexels.com/es-es/foto/mascota-gato-caja-gris-26596976/  |  consulta: "cat cardboard box"
+hund1-01.jpg  <-  pozo-p-lw-control\006.jpg  |  pexels (Pexels License)  |  autor: Tara Bellerose  |  https://www.pexels.com/es-es/foto/animal-mamifero-profundidad-de-campo-felino-12174037/  |  consulta: "veterinarian cat"
+hund2-01.jpg  <-  pozo-p-lw-control\009.jpg  |  pexels (Pexels License)  |  autor: Tom Johnny fotografias  |  https://www.pexels.com/es-es/foto/mascota-mono-pelo-piel-19709442/  |  consulta: "veterinarian cat"
+hund3-01.jpg  <-  pozo-p-lw-control\003.jpg  |  pexels (Pexels License)  |  autor: Leah Newhouse  |  https://www.pexels.com/es-es/foto/gato-siames-con-cono-colar-776374/  |  consulta: "veterinarian cat"
+hund4-01.jpg  <-  pozo-p-lw-control\001.jpg  |  pexels (Pexels License)  |  autor: Luis Alberto Barrera Diaz  |  https://www.pexels.com/es-es/foto/mascota-mono-cabeza-gato-20400679/  |  consulta: "veterinarian cat"
+hund5-01.jpg  <-  pozo-p-lw-control\011.jpg  |  pexels (Pexels License)  |  autor: Ludovic Delot  |  https://www.pexels.com/es-es/foto/adorable-gato-pelirrojo-descansando-en-el-interior-31440952/  |  consulta: "veterinarian cat"
+hund6-01.jpg  <-  pozo-p-lw-peluqueria\005.jpg  |  pexels (Pexels License)  |  autor: Santiago Sauceda González  |  https://www.pexels.com/es-es/foto/goffy-32655091/  |  consulta: "dog grooming"
+banda-01.jpg  <-  pozo-p-lw-departamento\010.jpg  |  pexels (Pexels License)  |  autor: Morgan Elise  |  https://www.pexels.com/es-es/foto/gato-en-la-ventana-30110133/  |  consulta: "cat window apartment"
+cita-01.jpg  <-  pozo-p-lw-juego\001.jpg  |  pexels (Pexels License)  |  autor: Rafael Minguet Delgado  |  https://www.pexels.com/es-es/foto/gato-curioso-jugando-con-el-raton-de-la-computadora-33836562/  |  consulta: "cat playing toy"
+mos1-01.jpg  <-  pozo-p-lw-altura\009.jpg  |  pexels (Pexels License)  |  autor: Helena Lopes  |  https://www.pexels.com/es-es/foto/relajacion-pared-muro-animal-7981121/  |  consulta: "cat shelf climbing"
+mos2-01.jpg  <-  pozo-p-lw-rascador\010.jpg  |  pexels (Pexels License)  |  autor: Gundula Vogel  |  https://www.pexels.com/es-es/foto/adorable-gato-scottish-fold-en-un-arbol-para-gatos-29684354/  |  consulta: "cat scratching post"
+mos3-01.jpg  <-  pozo-p-lw-agua\012.jpg  |  pexels (Pexels License)  |  autor: Iqbal farooz  |  https://www.pexels.com/es-es/foto/gato-gris-bebiendo-agua-de-una-taza-verde-al-aire-libre-37096993/  |  consulta: "cat drinking water"
+mos4-01.jpg  <-  pozo-p-lw-sofa\010.jpg  |  pexels (Pexels License)  |  autor: Helena Jankovičová Kováčová  |  https://www.pexels.com/es-es/foto/gato-negro-relaxandose-en-sofa-amarillo-30591550/  |  consulta: "cat sleeping sofa"
+mos5-01.jpg  <-  pozo-p-lw-juego\007.jpg  |  pexels (Pexels License)  |  autor: Arina Krasnikova  |  https://www.pexels.com/es-es/foto/blanco-y-negro-animal-pelo-piel-7725960/  |  consulta: "cat playing toy"
+mos6-01.jpg  <-  pozo-p-lw-caja\006.jpg  |  pexels (Pexels License)  |  autor: Jared Brotman  |  https://www.pexels.com/es-es/foto/gato-curioso-sentado-en-una-caja-de-carton-en-el-interior-35401734/  |  consulta: "cat cardboard box"
+
+BRUMA (bruma-pag-0N.png y bruma-osc-0N.png, 30x20): las MISMAS fotos, recortadas a 3:2, reducidas y
+recoloreadas con C:\devs\demos\hacer-bruma.ps1 (clara >= 0,68 de luminancia / oscura <= 0,05). No suman fuentes.
+    pagina: port-01.jpg, banda-01.jpg, cita-01.jpg, hund1-01.jpg, mos2-01.jpg   |   oscuras: port-01.jpg, banda-01.jpg, cita-01.jpg
+
+MAPA: iframe de Google Maps (embed publico, sin clave). No hay imagen de mapa.

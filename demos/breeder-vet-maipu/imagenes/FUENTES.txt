@@ -1,0 +1,22 @@
+FUENTES DE LAS IMAGENES - Breeder Vet ClÃ­nica Veterinaria Rehecha el 13-09-2026 (presentacion antes que texto). Fotos de REFERENCIA de bancos libres: ninguna es del local; las verdaderas las tiene que mandar el negocio. 
+port-01.jpg  <-  pozo-p-bv-camada\003.jpg  |  pexels (Pexels License)  |  autor: Shiebi AL  |  https://www.pexels.com/es-es/foto/adorables-cachorros-recien-nacidos-durmiendo-pacificamente-31016681/  |  consulta: "mother dog puppies"
+hund1-01.jpg  <-  pozo-p-bv-ecografia\010.jpg  |  pexels (Pexels License)  |  autor: Los Muertos Crew  |  https://www.pexels.com/es-es/foto/ordenador-clinica-salud-hospital-8460231/  |  consulta: "veterinary ultrasound"
+hund2-01.jpg  <-  pozo-p-bv-prenada\004.jpg  |  pexels (Pexels License)  |  autor: Josué Rodríguez  |  https://www.pexels.com/es-es/foto/perro-mascota-cabeza-fondo-de-pantalla-16666292/  |  consulta: "pregnant dog"
+hund3-01.jpg  <-  pozo-p-bv-gatitos\003.jpg  |  pexels (Pexels License)  |  autor: Ludvig Hedenborg  |  https://www.pexels.com/es-es/foto/gatos-fotografia-de-animales-animal-domestico-felino-8037215/  |  consulta: "newborn kittens"
+hund4-01.jpg  <-  pozo-p-bv-camada\004.jpg  |  pexels (Pexels License)  |  autor: Luis  Vargas  |  https://www.pexels.com/es-es/foto/mono-perros-mascotas-domestico-18373095/  |  consulta: "mother dog puppies"
+hund5-01.jpg  <-  pozo-p-bv-ecografia\012.jpg  |  pexels (Pexels License)  |  autor: Tima Miroshnichenko  |  https://www.pexels.com/es-es/foto/mano-cuidado-de-la-salud-sanidad-revision-6234614/  |  consulta: "veterinary ultrasound"
+hund6-01.jpg  <-  pozo-p-bv-camada\010.jpg  |  pexels (Pexels License)  |  autor: Nghia .8pm  |  https://www.pexels.com/es-es/foto/animales-perros-mascotas-perrito-4112776/  |  consulta: "mother dog puppies"
+banda-01.jpg  <-  pozo-p-bv-cachorros\012.jpg  |  pexels (Pexels License)  |  autor: Sudhir Sangwan  |  https://www.pexels.com/es-es/foto/adorables-cachorros-dormilones-acurrucados-al-aire-libre-34762980/  |  consulta: "puppies sleeping"
+cita-01.jpg  <-  pozo-p-bv-gatitos\009.jpg  |  pexels (Pexels License)  |  autor: Rumeysa Yılmaz  |  https://www.pexels.com/es-es/foto/mascotas-gatos-juntos-dormido-16402679/  |  consulta: "newborn kittens"
+mos1-01.jpg  <-  pozo-p-bv-cachorros\009.jpg  |  pexels (Pexels License)  |  autor: Shamrin Rahman  |  https://www.pexels.com/es-es/foto/suelo-molido-perros-mascotas-17573094/  |  consulta: "puppies sleeping"
+mos2-01.jpg  <-  pozo-p-bv-gatitos\002.jpg  |  pexels (Pexels License)  |  autor: Duy Nod  |  https://www.pexels.com/es-es/foto/adorables-gatitos-recien-nacidos-descansando-juntos-29125772/  |  consulta: "newborn kittens"
+mos3-01.jpg  <-  pozo-p-bv-camada\005.jpg  |  pexels (Pexels License)  |  autor: Sudhir Sangwan  |  https://www.pexels.com/es-es/foto/escena-al-aire-libre-de-un-perro-con-cachorros-jugando-34793859/  |  consulta: "mother dog puppies"
+mos4-01.jpg  <-  pozo-p-bv-cachorros\011.jpg  |  pexels (Pexels License)  |  autor: Ryan Scot Mendez  |  https://www.pexels.com/es-es/foto/cachorros-durmiendo-una-siesta-31454984/  |  consulta: "puppies sleeping"
+mos5-01.jpg  <-  pozo-p-bv-gatitos\006.jpg  |  pexels (Pexels License)  |  autor: Duy Nod  |  https://www.pexels.com/es-es/foto/gatitos-recien-nacidos-acurrucados-durmiendo-juntos-29125774/  |  consulta: "newborn kittens"
+mos6-01.jpg  <-  pozo-p-bv-camada\001.jpg  |  pexels (Pexels License)  |  autor: Abner Velázquez  |  https://www.pexels.com/es-es/foto/adorable-cachorro-bostezando-con-amigos-juguetones-34221894/  |  consulta: "mother dog puppies"
+
+BRUMA (bruma-pag-0N.png y bruma-osc-0N.png, 30x20): las MISMAS fotos, recortadas a 3:2, reducidas y
+recoloreadas con C:\devs\demos\hacer-bruma.ps1 (clara >= 0,68 de luminancia / oscura <= 0,05). No suman fuentes.
+    pagina: port-01.jpg, cita-01.jpg, mos2-01.jpg, hund3-01.jpg, mos1-01.jpg   |   oscuras: port-01.jpg, banda-01.jpg, hund1-01.jpg
+
+MAPA: iframe de Google Maps (embed publico, sin clave). No hay imagen de mapa.

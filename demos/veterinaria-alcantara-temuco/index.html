@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="es-CL" class="no-js">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self'; img-src 'self' data:; font-src 'self'; connect-src 'self'; media-src 'self'; form-action 'self'; base-uri 'none'; frame-src 'none'; object-src 'none'">
+<meta name="robots" content="noindex, nofollow">
+<title>Veterinaria Alcántara — Temuco</title>
+<meta name="description" content="Veterinaria en Temuco, Parque Alcántara 03805. Urgencias, vacunas, esterilizaciones y animales exóticos. El calendario del primer año, mes a mes.">
+
+<!-- ═══════════════════════════════════════════════════════════════
+     RESCATE DE LA CLASE .js — ver AGENTS.md, regla 2.
+     El script inline (sin defer) marca .js para que el CSS pueda
+     esconder lo que va a animarse. El temporizador de 4 s la quita
+     si main.js nunca llega: sin él, un error de red dejaría media
+     página invisible para siempre.
+     ═══════════════════════════════════════════════════════════════ -->
+<script src="js/rescate.js"></script>
+
+<!-- Fuentes self-hosted: CERO peticiones externas. El preload va solo
+     para la display, que es la del primer pantallazo. -->
+<link rel="preload" href="assets/fuentes/syne-var-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="assets/fuentes.css">
+<link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+
+<a class="saltar" href="#contenido">Saltar al contenido</a>
+
+<!-- ═══════════════════════════════════════════════════════════════
+     CABECERA EN DOS PISOS QUE SE RELEVAN.
+     Arriba la marca y el teléfono, y NO se pega: se va con el scroll.
+     Abajo la tira de secciones, que sí se pega y queda sola arriba
+     cuando la marca se fue.
+
+     Todo con `position: sticky` puro — cero JavaScript, cero
+     observers, cero listeners. Después de la 47, donde una cabecera
+     que dependía de un observer podía quedarse en el estado
+     equivocado, ésta no puede fallar: es una regla de CSS.
+     ═══════════════════════════════════════════════════════════════ -->
+<div class="marca">
+  <p class="marca-n"><b>Veterinaria Alcántara</b><span>Temuco</span></p>
+  <a class="marca-tel" href="tel:+56953407251">9 5340 7251</a>
+</div>
+
+<nav class="tira" aria-label="Secciones">
+  <div class="tira-cuerpo">
+    <a href="#cartilla">El primer año</a>
+    <a href="#atiende">Qué atendemos</a>
+    <a href="#exoticos">Exóticos</a>
+    <a href="#llegar">Dónde estamos</a>
+    <a class="tira-tel" href="tel:+56953407251">Llamar</a>
+  </div>
+</nav>
+
+<main id="contenido">
+
+<!-- ══════════════════ PORTADA ══════════════════ -->
+<header class="portada" id="portada">
+  <div class="tejido" aria-hidden="true"></div>
+
+  <div class="portada-cuerpo">
+    <p class="portada-sobre">Temuco · Parque Alcántara 03805</p>
+
+    <h1 class="portada-h1">
+      <span class="l l1">El primer año</span>
+      <span class="l l2">de un animal</span>
+      <span class="l l3"><em>decide los otros quince.</em></span>
+    </h1>
+
+    <p class="portada-bajada l l4">
+      Casi todo lo que se hace en los primeros doce meses —vacunas,
+      desparasitación, esterilización— se hace una vez y sirve para
+      siempre. Acá está el calendario completo, escrito, para que no se
+      le pase ninguno.
+    </p>
+
+    <div class="portada-acciones l l5">
+      <a class="btn btn-fuerte" href="#cartilla">Ver el calendario</a>
+      <a class="btn btn-suave" href="tel:+56953407251">Llamar · 9 5340 7251</a>
+    </div>
+
+    <p class="portada-pie l l6">
+      <b>254 reseñas</b> en Google · urgencias, vacunas,
+      esterilizaciones y <b>animales exóticos</b>
+    </p>
+  </div>
+</header>
+
+<!-- ══════════════════ PIEZA FIRMA ══════════════════
+     «El primer año, mes a mes».
+     Es la pregunta que hace todo el que llega con un cachorro o un
+     gatito y que ninguna veterinaria de la zona contesta por escrito:
+     qué toca, cuándo, y por qué. Está pensada para imprimirse y
+     quedar pegada en el refrigerador — con el nombre de la clínica
+     arriba. Por eso hay una hoja de estilos de impresión al final del
+     CSS: sale limpia en blanco y negro, sin menús ni fondos.
+     ══════════════════════════════════════════════ -->
+<section class="cartilla" id="cartilla">
+  <div class="ancho">
+    <p class="rotulo reveal">La cartilla</p>
+    <h2 class="t2 reveal">El primer año, mes a mes</h2>
+    <p class="entrada reveal">
+      Las edades son de referencia y valen tanto para perros como para
+      gatos: el veterinario las ajusta según la especie, el tamaño y
+      cómo llegó el animal. Lo que no cambia es el orden.
+    </p>
+
+    <ol class="hitos">
+
+      <li class="hito reveal">
+        <p class="hito-e">6 a 8<span>semanas</span></p>
+        <div class="hito-c">
+          <h3>La primera visita, antes de la primera vacuna</h3>
+          <p>Pesarlo, revisarlo y desparasitarlo. Un animal con parásitos
+          no responde bien a la vacuna, así que este orden importa: se
+          desparasita primero y se vacuna después.</p>
+        </div>
+      </li>
+
+      <li class="hito reveal">
+        <p class="hito-e">6 a 8<span>semanas</span></p>
+        <div class="hito-c">
+          <h3>Primera dosis de la vacuna múltiple</h3>
+          <p>La que cubre las enfermedades graves de cachorro. <b>Una
+          sola dosis no protege:</b> es un esquema de varias, separadas
+          por semanas, y recién sirve cuando está completo.</p>
+        </div>
+      </li>
+
+      <li class="hito reveal">
+        <p class="hito-e">9 a 12<span>semanas</span></p>
+        <div class="hito-c">
+          <h3>Segunda dosis</h3>
+          <p>Tres o cuatro semanas después de la primera. Hasta acá el
+          animal <b>todavía no puede andar en la calle ni juntarse con
+          otros</b> que no conozca.</p>
+        </div>
+      </li>
+
+      <li class="hito reveal">
+        <p class="hito-e">12 a 16<span>semanas</span></p>
+        <div class="hito-c">
+          <h3>Última dosis y antirrábica</h3>
+          <p>Se cierra el esquema y se pone la antirrábica. Una a dos
+          semanas después de ésta recién se puede salir tranquilo a la
+          calle, a la plaza y a la playa de perros.</p>
+        </div>
+      </li>
+
+      <li class="hito reveal">
+        <p class="hito-e">4<span>meses</span></p>
+        <div class="hito-c">
+          <h3>Control de crecimiento y cambio de alimento</h3>
+          <p>La visita que casi todos se saltan y la más barata de
+          todas. Se revisa el peso, la dentición y cuánto está comiendo;
+          es el momento de corregir la alimentación, no a los dos años.</p>
+        </div>
+      </li>
+
+      <li class="hito reveal">
+        <p class="hito-e">6<span>meses</span></p>
+        <div class="hito-c">
+          <h3>Conversar la esterilización</h3>
+          <p>Conversarla, no hacerla todavía. La edad correcta depende
+          de la especie, del tamaño que va a alcanzar y del sexo, y esa
+          conversación de diez minutos evita la mitad de los problemas
+          de salud de los años siguientes.</p>
+        </div>
+      </li>
+
+      <li class="hito reveal">
+        <p class="hito-e">6 a 12<span>meses</span></p>
+        <div class="hito-c">
+          <h3>Esterilización</h3>
+          <p>Cirugía programada, no de urgencia: se pide hora, llega en
+          ayuno y se va el mismo día. En hembras hecha a tiempo baja
+          fuertemente el riesgo de tumores mamarios más adelante.</p>
+        </div>
+      </li>
+
+      <li class="hito reveal">
+        <p class="hito-e">12<span>meses</span></p>
+        <div class="hito-c">
+          <h3>Refuerzo anual y primer control de adulto</h3>
+          <p>Desde acá es una visita al año: refuerzo de vacunas,
+          desparasitación y una revisión completa. Anótelo el mismo día
+          del cumpleaños y no se olvida nunca más.</p>
+        </div>
+      </li>
+
+    </ol>
+
+    <p class="cartilla-nota" data-ejemplo="Calendario de ejemplo — lo firma el veterinario">
+      Este calendario está escrito con el esquema general que se usa en
+      Chile, pero <b>tiene que revisarlo y aprobarlo el equipo
+      veterinario antes de publicarse</b>: las edades exactas y las
+      vacunas concretas las decide cada clínica según el animal y la
+      zona.
+    </p>
+
+    <p class="imprimir">
+      Esta página está preparada para imprimirse: la cartilla sale
+      limpia, en una hoja, sin menús ni fondos.
+    </p>
+  </div>
+</section>
+
+<!-- ══════════════════ LÁMINA ══════════════════ -->
+<section class="lamina" aria-labelledby="lamina-t">
+  <div class="lamina-foto">
+    <div class="lamina-capa" data-parallax data-foto>
+      <p class="hueco-nota">
+        Falta <code>imagenes/equipo.jpg</code> — el equipo atendiendo,
+        o el box. 1920 × 1280.
+      </p>
+    </div>
+  </div>
+  <div class="lamina-texto">
+    <p class="numeraco">254</p>
+    <h2 class="t2 claro" id="lamina-t">reseñas en Google</h2>
+    <p class="entrada claro">
+      Doscientas cincuenta y cuatro personas de Temuco se dieron el
+      trabajo de escribir. Es de las fichas más comentadas del rubro en
+      la ciudad — y hoy ese peso no lleva a ninguna parte, porque el
+      enlace de su sitio no carga.
+    </p>
+  </div>
+</section>
+
+<!-- ══════════════════ QUÉ ATENDEMOS ══════════════════ -->
+<section class="atiende" id="atiende">
+  <div class="ancho">
+    <p class="rotulo reveal">Qué atendemos</p>
+    <h2 class="t2 reveal">Consulta, pabellón y urgencias</h2>
+    <p class="entrada reveal">
+      Lo de todos los días y lo que no puede esperar, en el mismo lugar.
+    </p>
+
+    <ul class="servicios">
+      <li class="serv reveal">
+        <h3>Medicina general</h3>
+        <p>Consulta, control sano, vacunas y desparasitación. Es la
+        visita que sostiene todo lo demás.</p>
+      </li>
+      <li class="serv reveal">
+        <h3>Esterilizaciones</h3>
+        <p>Programadas, con hora y con indicaciones escritas de qué
+        hacer antes y después.</p>
+      </li>
+      <li class="serv reveal">
+        <h3>Cirugía</h3>
+        <p>Pabellón para tejidos blandos y para lo que aparece de
+        urgencia.</p>
+      </li>
+      <li class="serv reveal">
+        <h3>Urgencias</h3>
+        <p>Llame antes de venir: el equipo prepara lo que haga falta y
+        usted no pierde tiempo en la puerta.</p>
+      </li>
+      <li class="serv reveal">
+        <h3>Vacunas de perros y gatos</h3>
+        <p>Esquema completo de cachorro y refuerzos anuales, con el
+        carnet al día.</p>
+      </li>
+      <li class="serv reveal">
+        <h3>Animales exóticos</h3>
+        <p>Conejos, roedores, aves y reptiles. Es lo que casi ninguna
+        veterinaria de Temuco atiende — y tiene su sección más abajo.</p>
+      </li>
+    </ul>
+
+    <p class="servicios-nota" data-ejemplo="Los detalles de cada servicio son de ejemplo">
+      Los seis servicios salen de lo que la propia ficha de Google de la
+      clínica declara. Lo que está escrito como ejemplo es el detalle de
+      cada uno: hay que reemplazarlo por lo que hacen de verdad.
+    </p>
+  </div>
+</section>
+
+<!-- ══════════════════ EXÓTICOS ══════════════════
+     La sección que ninguna otra veterinaria de la ciudad puede
+     copiar. Va aparte y no dentro de la grilla de servicios porque es
+     lo único de esta página que responde una búsqueda sin competencia
+     en Temuco.
+     ══════════════════════════════════════════════ -->
+<section class="exoticos" id="exoticos">
+  <div class="ancho exoticos-grilla">
+    <div>
+      <p class="rotulo claro reveal">Lo que casi nadie atiende</p>
+      <h2 class="t2 claro reveal">¿Tiene un conejo, un hámster, una tortuga o un loro?</h2>
+      <p class="entrada claro reveal">
+        Quien vive en Temuco con un animal que no es perro ni gato ya
+        pasó por esto: llamar a cinco veterinarias y que las cinco digan
+        que no atienden. Acá sí.
+      </p>
+      <p class="entrada claro reveal">
+        Son animales que <b>esconden la enfermedad hasta que es grave</b>
+        — es instinto de presa, no descuido del dueño. Por eso el consejo
+        cambia: si un conejo deja de comer o un ave se queda quieta en el
+        fondo de la jaula, eso <b>ya es la urgencia</b>, no el aviso de
+        que podría venir.
+      </p>
+      <p class="reveal">
+        <a class="btn btn-fuerte" href="tel:+56953407251">Preguntar por su animal · 9 5340 7251</a>
+      </p>
+    </div>
+    <div class="exoticos-nota reveal" data-ejemplo="Confirmar qué especies atienden">
+      La ficha de Google de la clínica declara «exóticos», pero <b>hay
+      que confirmar con ellos qué especies concretas atienden</b> antes
+      de publicar esta sección. No es lo mismo un conejo que un reptil,
+      y prometer de más en un rubro donde la gente llega desesperada es
+      la peor manera de partir.
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════ CÓMO LLEGAR ══════════════════ -->
+<section class="llegar" id="llegar">
+  <div class="ancho llegar-grilla">
+
+    <div class="llegar-texto">
+      <p class="rotulo reveal">Dónde estamos</p>
+      <h2 class="t2 reveal">Parque Alcántara 03805, Temuco</h2>
+      <p class="entrada reveal">
+        En el sector Alcántara, con estacionamiento en la puerta. Para
+        una urgencia, llame antes de salir: el equipo alcanza a
+        prepararse y usted no espera en el mesón.
+      </p>
+
+      <dl class="datos reveal">
+        <div>
+          <dt>Dirección</dt>
+          <dd>Parque Alcántara 03805, Temuco</dd>
+        </div>
+        <div>
+          <dt>Teléfono</dt>
+          <dd><a href="tel:+56953407251">9 5340 7251</a></dd>
+        </div>
+        <div>
+          <dt>Reseñas</dt>
+          <dd>254 en Google</dd>
+        </div>
+        <div>
+          <dt>Para una urgencia</dt>
+          <dd>Llamar antes de salir</dd>
+        </div>
+      </dl>
+
+      <p class="aviso reveal">
+        <b>Si viene con un animal exótico:</b> tráigalo en su jaula o
+        transportadora, con el sustrato que tiene puesto y sin cambiarle
+        nada. Ese detalle dice más del cuadro que media hora de
+        preguntas.
+      </p>
+    </div>
+
+    <div class="llegar-foto" data-foto>
+      <p class="hueco-nota">
+        Falta <code>imagenes/frente.jpg</code> — el frente de la
+        clínica con el letrero. 900 × 1200.
+      </p>
+    </div>
+
+  </div>
+      <figure class="mapa">
+        <img src="imagenes/mapa-01.jpg" width="768" height="768" loading="lazy" decoding="async"
+             alt="Mapa con la ubicación de Parque Alcántara 03805, Temuco.">
+        <figcaption class="mapa__pie">
+          <span><b>Parque Alcántara 03805, Temuco</b>.</span>
+          <span class="mapa__cred">Mapa: &copy; <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener">OpenStreetMap</a></span>
+        </figcaption>
+      </figure>
+</section>
+
+<!-- ══════════════════ CIERRE ══════════════════ -->
+<section class="cierre">
+  <div class="ancho">
+    <h2 class="t2 reveal">¿Llegó un animal nuevo a la casa?</h2>
+    <p class="entrada reveal">
+      La primera visita es la más barata y la que más cambia lo que
+      viene. Pida hora antes de que haga falta.
+    </p>
+    <p class="reveal">
+      <a class="btn btn-fuerte grande" href="tel:+56953407251">Llamar al 9 5340 7251</a>
+    </p>
+  </div>
+</section>
+
+</main>
+
+<footer class="pie">
+  <div class="ancho pie-grilla">
+    <p class="pie-m"><b>Veterinaria Alcántara</b><br><span>Temuco</span></p>
+    <p class="pie-d">
+      Parque Alcántara 03805<br>
+      <a href="tel:+56953407251">9 5340 7251</a>
+    </p>
+    <p class="pie-n">
+      Página de demostración. El nombre, la dirección, el teléfono y las
+      254 reseñas son reales; el calendario del primer año, el detalle
+      de los servicios y las especies exóticas están escritos como
+      ejemplo y deben ser revisados por el equipo veterinario antes de
+      publicarse.
+    </p>
+  </div>
+</footer>
+
+
+<!-- ══ BOTON FLOTANTE DE CONTACTO ══════════════════════════════════
+     Escrito en el HTML y VISIBLE por defecto: si el script no arranca,
+     el boton igual esta. El JS solo lo aparta mientras se mira la
+     portada, para no tapar el titular. Icono de simple-icons (CC0),
+     incrustado: la CSP no deja pedir nada a un tercero. -->
+<a class="flota flota--wa" href="https://wa.me/56953407251?text=Hola%2C%20vi%20la%20pagina%20y%20quiero%20consultar." target="_blank" rel="noopener" aria-label="Escribir por WhatsApp a Veterinaria Alcántara">
+  <svg class="flota__i" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"/></svg>
+  <span class="flota__t">WhatsApp</span>
+</a>
+<script src="js/main.js"></script>
+</body>
+</html>

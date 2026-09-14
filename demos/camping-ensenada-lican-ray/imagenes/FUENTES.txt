@@ -1,0 +1,22 @@
+FUENTES DE LAS IMAGENES - Camping La Ensenada Rehecha el 13-09-2026 (presentacion antes que texto). Fotos de REFERENCIA de bancos libres: ninguna es del local; las verdaderas las tiene que mandar el negocio. 
+port-01.jpg  <-  pozo-p-ens-ensenada\004.jpg  |  pexels (Pexels License)  |  autor: Allan González  |  https://www.pexels.com/es-es/foto/reflejo-sereno-del-lago-en-los-azufres-mexico-30330292/  |  consulta: "calm lake cove"
+hund1-01.jpg  <-  pozo-p-ens-ensenada\010.jpg  |  pexels (Pexels License)  |  autor: Roger Ce  |  https://www.pexels.com/es-es/foto/agua-arboles-corriente-lago-18257178/  |  consulta: "calm lake cove"
+hund2-01.jpg  <-  pozo-p-ens-orilla\003.jpg  |  pexels (Pexels License)  |  autor: Damir K  |  https://www.pexels.com/es-es/foto/naturaleza-arena-agua-arboles-15949520/  |  consulta: "dark sand lake shore"
+hund3-01.jpg  <-  pozo-p-ens-kayak\006.jpg  |  pexels (Pexels License)  |  autor: Ema Reynares  |  https://www.pexels.com/es-es/foto/paisaje-naturaleza-rojo-nubes-17256313/  |  consulta: "kayak lake"
+hund4-01.jpg  <-  pozo-p-ens-pesca\002.jpg  |  pexels (Pexels License)  |  autor: Eva Bronzini  |  https://www.pexels.com/es-es/foto/pescando-sedal-cana-de-pescar-enfoque-superficial-6420035/  |  consulta: "fishing rod lake"
+hund5-01.jpg  <-  pozo-p-ens-termas\001.jpg  |  pexels (Pexels License)  |  autor: Nicholas Espinosa  |  https://www.pexels.com/es-es/foto/bosque-excursionismo-senderismo-viaje-16836339/  |  consulta: "hot springs forest pool"
+hund6-01.jpg  <-  pozo-p-ens-estrellas\003.jpg  |  pexels (Pexels License)  |  autor: Mengliu Di  |  https://www.pexels.com/es-es/foto/noche-espacio-oscuro-arboles-13732400/  |  consulta: "starry sky tent"
+banda-01.jpg  <-  pozo-p-ens-ensenada\009.jpg  |  pexels (Pexels License)  |  autor: Rudi Chandra  |  https://www.pexels.com/es-es/foto/vista-panoramica-del-lago-toba-en-el-norte-de-sumatra-37871249/  |  consulta: "calm lake cove"
+cita-01.jpg  <-  pozo-p-ens-orilla\012.jpg  |  pexels (Pexels License)  |  autor: ArtHouse Studio  |  https://www.pexels.com/es-es/foto/naturaleza-arena-rocas-suelo-4573108/  |  consulta: "dark sand lake shore"
+mos1-01.jpg  <-  pozo-p-ens-volcan\007.jpg  |  pexels (Pexels License)  |  autor: David Vives  |  https://www.pexels.com/es-es/foto/arboles-verdes-cerca-de-la-montana-bajo-un-cielo-azul-5402839/  |  consulta: "Villarrica volcano"
+mos2-01.jpg  <-  pozo-p-ens-carpa\004.jpg  |  pexels (Pexels License)  |  autor: Mohammed Alouani  |  https://www.pexels.com/es-es/foto/naturaleza-bosque-arboles-profundo-17755006/  |  consulta: "tent under trees"
+mos3-01.jpg  <-  pozo-p-ens-pesca\005.jpg  |  pexels (Pexels License)  |  autor: Vyacheslav Bobin  |  https://www.pexels.com/es-es/foto/oceano-pescador-aficion-hobby-9578479/  |  consulta: "fishing rod lake"
+mos4-01.jpg  <-  pozo-p-ens-estrellas\012.jpg  |  pexels (Pexels License)  |  autor: Liana Tril'  |  https://www.pexels.com/es-es/foto/ligero-cielo-noche-estrellas-18911297/  |  consulta: "starry sky tent"
+mos5-01.jpg  <-  pozo-p-ens-kayak\010.jpg  |  pexels (Pexels License)  |  autor: Mike Art 🎥 Visual Creator | Photography and Video 📸  |  https://www.pexels.com/es-es/foto/kayakista-solitario-en-el-tranquilo-lago-espanol-36911652/  |  consulta: "kayak lake"
+mos6-01.jpg  <-  pozo-p-ens-carpa\010.jpg  |  pexels (Pexels License)  |  autor: Paige Thompson  |  https://www.pexels.com/es-es/foto/bosque-al-aire-libre-campamento-acampada-13923325/  |  consulta: "tent under trees"
+
+BRUMA (bruma-pag-0N.png y bruma-osc-0N.png, 30x20): las MISMAS fotos, recortadas a 3:2, reducidas y
+recoloreadas con C:\devs\demos\hacer-bruma.ps1 (clara >= 0,68 de luminancia / oscura <= 0,05). No suman fuentes.
+    pagina: port-01.jpg, banda-01.jpg, hund1-01.jpg, hund3-01.jpg, hund6-01.jpg, mos1-01.jpg, mos3-01.jpg, mos5-01.jpg   |   oscuras: cita-01.jpg, mos4-01.jpg, hund6-01.jpg
+
+MAPA: iframe de Google Maps (embed publico, sin clave). No hay imagen de mapa.

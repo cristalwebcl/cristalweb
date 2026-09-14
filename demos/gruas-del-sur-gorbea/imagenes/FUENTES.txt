@@ -1,0 +1,22 @@
+FUENTES DE LAS IMAGENES - GrÃºas del Sur Rehecha el 13-09-2026 (presentacion antes que texto). Fotos de REFERENCIA de bancos libres: ninguna es del local; las verdaderas las tiene que mandar el negocio. 
+port-01.jpg  <-  pozo-p-gru-ruta\004.jpg  |  pexels (Pexels License)  |  autor: Adriana Guda  |  https://www.pexels.com/es-es/foto/carretera-luces-noche-larga-exposicion-5177081/  |  consulta: "highway night lights"
+hund1-01.jpg  <-  pozo-p-gru-grua\003.jpg  |  pexels (Pexels License)  |  autor: Parveen Singh  |  https://www.pexels.com/es-es/foto/camion-de-reparto-31780878/  |  consulta: "tow truck"
+hund2-01.jpg  <-  pozo-p-gru-gancho\005.jpg  |  pexels (Pexels License)  |  autor: Joshua Woroniecki  |  https://www.pexels.com/es-es/foto/coche-vehiculo-cadena-colgando-12514366/  |  consulta: "winch hook chain"
+hund3-01.jpg  <-  pozo-p-gru-triangulo\008.jpg  |  pexels (Pexels License)  |  autor: El Jundi  |  https://www.pexels.com/es-es/foto/carretera-hombre-mano-coche-5403208/  |  consulta: "warning triangle road"
+hund4-01.jpg  <-  pozo-p-gru-triangulo\004.jpg  |  pexels (Pexels License)  |  autor: Sergej  *****  |  https://www.pexels.com/es-es/foto/camino-rural-tranquilo-en-coesfeld-alemania-36889906/  |  consulta: "warning triangle road"
+hund5-01.jpg  <-  pozo-p-gru-pinchazo\012.jpg  |  pexels (Pexels License)  |  autor: Artem Balashevsky  |  https://www.pexels.com/es-es/foto/coche-vehiculo-abandonado-rueda-22880409/  |  consulta: "flat tire"
+hund6-01.jpg  <-  pozo-p-gru-triangulo\002.jpg  |  pexels (Pexels License)  |  autor: Sergej  *****  |  https://www.pexels.com/es-es/foto/carretera-rural-panoramica-en-coesfeld-alemania-39237275/  |  consulta: "warning triangle road"
+banda-01.jpg  <-  pozo-p-gru-lluvia\006.jpg  |  pexels (Pexels License)  |  autor: Plato Terentev  |  https://www.pexels.com/es-es/foto/blanco-y-negro-carretera-calle-tiempo-9807330/  |  consulta: "rain road night"
+cita-01.jpg  <-  pozo-p-gru-triangulo\010.jpg  |  pexels (Pexels License)  |  autor: Julieta Camila Tosto  |  https://www.pexels.com/es-es/foto/carretera-paisaje-naturaleza-arboles-17365783/  |  consulta: "warning triangle road"
+mos1-01.jpg  <-  pozo-p-gru-ruta\011.jpg  |  pexels (Pexels License)  |  autor: Svet Svet  |  https://www.pexels.com/es-es/foto/fotografia-de-larga-exposicion-de-una-carretera-de-noche-con-estelas-de-luz-37545329/  |  consulta: "highway night lights"
+mos2-01.jpg  <-  pozo-p-gru-pinchazo\004.jpg  |  pexels (Pexels License)  |  autor: Nikita Nikitin  |  https://www.pexels.com/es-es/foto/fotografia-de-cerca-de-una-rueda-pinchada-9941648/  |  consulta: "flat tire"
+mos3-01.jpg  <-  pozo-p-gru-triangulo\007.jpg  |  pexels (Pexels License)  |  autor: Lucas Pezeta  |  https://www.pexels.com/es-es/foto/carretera-crepusculo-atardecer-coche-5056745/  |  consulta: "warning triangle road"
+mos4-01.jpg  <-  pozo-p-gru-lluvia\009.jpg  |  pexels (Pexels License)  |  autor: Zeeshaan Shabbir  |  https://www.pexels.com/es-es/foto/coches-noche-oscuro-efecto-desenfocado-10833995/  |  consulta: "rain road night"
+mos5-01.jpg  <-  pozo-p-gru-lluvia\005.jpg  |  pexels (Pexels License)  |  autor: Ahmed ؜  |  https://www.pexels.com/es-es/foto/carretera-noche-calle-oscuro-10957638/  |  consulta: "rain road night"
+mos6-01.jpg  <-  pozo-p-gru-pinchazo\006.jpg  |  pexels (Pexels License)  |  autor: Erik Mclean  |  https://www.pexels.com/es-es/foto/coche-vehiculo-llantas-aros-9737279/  |  consulta: "flat tire"
+
+BRUMA (bruma-pag-0N.png y bruma-osc-0N.png, 30x20): las MISMAS fotos, recortadas a 3:2, reducidas y
+recoloreadas con C:\devs\demos\hacer-bruma.ps1 (clara >= 0,68 de luminancia / oscura <= 0,05). No suman fuentes.
+    pagina: port-01.jpg, banda-01.jpg, hund1-01.jpg, hund5-01.jpg, mos1-01.jpg, mos2-01.jpg, mos4-01.jpg, mos6-01.jpg   |   oscuras: port-01.jpg, banda-01.jpg, mos1-01.jpg
+
+MAPA: iframe de Google Maps (embed publico, sin clave). No hay imagen de mapa.

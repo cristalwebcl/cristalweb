@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="es-CL" class="no-js">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>AgroFrut — Loncoche</title>
+<meta name="description" content="Tienda agropecuaria de la Cooperativa Loncofrut, Balmaceda 656, Loncoche. Qué se compra en cada mes del año y qué gana un socio.">
+
+<!-- ═══════════════════════════════════════════════════════════════
+     RESCATE DE LA CLASE .js — ver AGENTS.md, regla 2.
+     El script inline (sin defer) marca .js para que el CSS pueda
+     esconder lo que va a animarse. El temporizador de 4 s la quita
+     si main.js nunca llega: sin él, un error de red dejaría media
+     página invisible para siempre.
+     ═══════════════════════════════════════════════════════════════ -->
+<!-- copia de prueba: sin el script de rescate ni main.js -->
+
+<!-- Fuentes propias: cero peticiones a terceros. El preload va SOLO
+     para la display, que es la del titular. -->
+<link rel="preload" href="assets/fuentes/patuaone-400-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="assets/fuentes.css">
+<link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+
+<a class="saltar" href="#contenido">Saltar al contenido</a>
+
+<!-- ═══════════════════════════════════════════════════════════════
+     CABECERA CON COSTURA DE SACO.
+     Trigésimo octava cabecera del registro: el canto inferior es la
+     costura de un saco — dos hilos rectos y el pespunte entre medio.
+
+     Decimoséptima seguida que sale del oficio. Un degradado repetido
+     y dos líneas: cero imágenes, cero JavaScript.
+     ═══════════════════════════════════════════════════════════════ -->
+<header class="cab">
+  <p class="cab-m">
+    <b>AgroFrut</b><span class="cab-s">Cooperativa Loncofrut · Loncoche</span>
+  </p>
+  <nav class="cab-n" aria-label="Secciones">
+    <a href="#ano">El año, mes por mes</a>
+    <a href="#socio">Ser socio</a>
+    <a href="#donde">Dónde estamos</a>
+  </nav>
+  <a class="cab-tel" href="tel:+56933095225">9 3309 5225</a>
+</header>
+
+<main id="contenido">
+
+<!-- ══════════════════ PORTADA ══════════════════ -->
+<header class="portada" id="portada">
+  <div class="surcos" aria-hidden="true"><span></span></div>
+
+  <div class="portada-cuerpo">
+    <p class="portada-sobre">Loncoche · Balmaceda 656</p>
+
+    <h1 class="portada-h1">
+      <span class="l l1">El campo no espera</span>
+      <span class="l l2">a que uno se acuerde.</span>
+    </h1>
+
+    <p class="portada-bajada l l4">
+      Casi todo lo que se compra acá tiene un mes en que sirve y un mes
+      en que ya es tarde. <b>Acá está el año entero escrito</b>, para
+      que nadie llegue en octubre a buscar algo que había que poner en
+      agosto.
+    </p>
+
+    <div class="portada-acciones l l5">
+      <a class="btn btn-fuerte" href="tel:+56933095225">Llamar · 9 3309 5225</a>
+      <a class="btn btn-suave" href="#ano">Ver el año</a>
+    </div>
+
+    <p class="portada-pie l l6">
+      Tienda agropecuaria de la <b>Cooperativa Loncofrut</b> ·
+      Av. José Manuel Balmaceda 656, Loncoche
+    </p>
+  </div>
+</header>
+
+<!-- ══════════════════ PIEZA FIRMA · 1 ══════════════════
+     «El año, mes por mes».
+
+     Es la conversación del mostrador de cualquier agropecuaria y la
+     que no está escrita en ninguna parte: qué toca ahora. El que
+     tiene diez hectáreas lo sabe de memoria; el que tiene media
+     hectárea y trabaja en otra cosa, no — y ése es el cliente que se
+     pierde una temporada entera por no preguntar a tiempo.
+
+     Va agrupado por ESTACIÓN y no en doce filas: nadie planifica por
+     mes suelto, se planifica por temporada, y en cuatro bloques cabe
+     en una pantalla de teléfono sin scroll infinito.
+     ══════════════════════════════════════════════ -->
+<section class="ano" id="ano">
+  <div class="ancho">
+    <p class="rotulo reveal">Lo que se pregunta en el mostrador</p>
+    <h2 class="t2 reveal">El año, mes por mes</h2>
+    <p class="entrada reveal">
+      Cuatro temporadas, y en cada una lo que hay que tener listo
+      <b>antes</b> de que llegue. La regla del campo es siempre la
+      misma: <b>lo que se compra a tiempo cuesta la mitad de lo que
+      cuesta apurado.</b>
+    </p>
+
+    <div class="temporadas">
+
+      <section class="temp reveal">
+        <p class="temp-m">Sep · Oct · Nov</p>
+        <h3>Primavera</h3>
+        <ul>
+          <li><b>La siembra y la plantación.</b> Semilla, almácigos,
+          plantines. Lo que no se puso antes de noviembre ya va tarde.</li>
+          <li>Primera fertilización, cuando la planta está partiendo.</li>
+          <li><b>Se despierta todo junto:</b> también los bichos. Es
+          cuando se revisa y no cuando ya se comieron la hoja.</li>
+        </ul>
+      </section>
+
+      <section class="temp reveal">
+        <p class="temp-m">Dic · Ene · Feb</p>
+        <h3>Verano</h3>
+        <ul>
+          <li><b>El riego.</b> Mangueras, cintas, conectores — y es
+          justo cuando se acaban en todas partes.</li>
+          <li>Control de malezas y de plagas, que es cuando más
+          aprietan.</li>
+          <li><b>La cosecha, y lo que la cosecha necesita:</b> envases,
+          bandejas, malla, sombra.</li>
+        </ul>
+      </section>
+
+      <section class="temp reveal">
+        <p class="temp-m">Mar · Abr · May</p>
+        <h3>Otoño</h3>
+        <ul>
+          <li><b>El cierre de la temporada</b> y la fertilización de
+          reposición, que es la que decide la del año que viene.</li>
+          <li>Empieza la poda de lo que ya descansó.</li>
+          <li><b>Y lo que nadie compra a tiempo:</b> lo de invernar —
+          techo, alambre, forraje, sal—, que en junio ya está caro.</li>
+        </ul>
+      </section>
+
+      <section class="temp reveal destacada">
+        <p class="temp-m">Jun · Jul · Ago</p>
+        <h3>Invierno</h3>
+        <ul>
+          <li><b>Es la temporada que la gente cree vacía y es la más
+          importante.</b> Poda, curación de invierno y todo lo que se
+          hace con la planta dormida.</li>
+          <li>Cercos, postes y alambre: se arreglan ahora, no en
+          primavera, que es cuando no hay tiempo.</li>
+          <li><b>Y acá se compra la semilla</b> para la primavera, que
+          en septiembre ya está escasa y más cara.</li>
+        </ul>
+      </section>
+
+    </div>
+
+    <div class="clave reveal">
+      <h3 class="clave-t">La regla que resume todo</h3>
+      <p><b>Lo del invierno se compra en invierno.</b></p>
+      <p>
+        La mitad de los apuros de una temporada se arreglan comprando
+        con un mes de anticipación, y la otra mitad, con dos.
+        <b>Preguntar en el mostrador qué se viene el mes que entra no
+        cuesta nada</b> — y es exactamente para lo que sirve tener una
+        agropecuaria en el pueblo y no comprar por internet.
+      </p>
+    </div>
+
+    <p class="ano-nota" data-ejemplo="Calendario general de la zona — hay que ajustarlo con la cooperativa">
+      Es el calendario general del secano y el valle de la Araucanía, y
+      está puesto para mostrar cómo se ve la sección. <b>Las fechas
+      exactas cambian con el cultivo, con la altura y con el año</b>, y
+      quien las sabe de verdad es la gente de la cooperativa. Antes de
+      publicarlo hay que ajustarlo con ellos.
+    </p>
+  </div>
+</section>
+
+<!-- ══════════════════ PIEZA FIRMA · 2 ══════════════════
+     «Ser socio».
+
+     Las cooperativas casi nunca explican por escrito qué son ni qué
+     gana alguien que entra, y es LA pregunta que las frena: la gente
+     no entra a algo que no entiende.
+
+     Las respuestas van marcadas como huecos a propósito. Es la única
+     sección del registro donde el ejemplo NO se inventa: son datos de
+     estatuto, y poner cifras verosímiles acá sería peor que dejarlo
+     en blanco.
+     ══════════════════════════════════════════════ -->
+<section class="socio" id="socio">
+  <div class="ancho">
+    <p class="rotulo reveal">Lo que nadie explica por escrito</p>
+    <h2 class="t2 reveal">Qué es la cooperativa y qué gana un socio</h2>
+    <p class="entrada reveal">
+      Es la pregunta que frena a la gente, y no por desconfianza:
+      <b>nadie entra a algo que no entiende.</b> Cinco respuestas
+      cortas resuelven más que cualquier folleto.
+    </p>
+
+    <dl class="faq">
+      <div class="qa reveal">
+        <dt>¿Qué es una cooperativa, en simple?</dt>
+        <dd>Una empresa que es de los que la usan. <b>Cada socio tiene
+        un voto, valga lo que valga su participación</b> — no es como
+        una sociedad donde manda el que puso más.</dd>
+      </div>
+      <div class="qa reveal">
+        <dt>¿Quién puede ser socio?</dt>
+        <dd class="hueco">Falta: los requisitos reales que pide el
+        estatuto.</dd>
+      </div>
+      <div class="qa reveal">
+        <dt>¿Cuánto cuesta entrar?</dt>
+        <dd class="hueco">Falta: la cuota de incorporación y las
+        cuotas, si las hay.</dd>
+      </div>
+      <div class="qa reveal">
+        <dt>¿Qué gana un socio que no gane cualquiera?</dt>
+        <dd class="hueco">Falta: precios, acopio, asesoría, maquinaria
+        — lo que la cooperativa efectivamente ofrece.</dd>
+      </div>
+      <div class="qa reveal">
+        <dt>¿Hay que ser socio para comprar acá?</dt>
+        <dd><b>No.</b> La tienda atiende a cualquiera. Ser socio es
+        otra cosa, y es voluntario.</dd>
+      </div>
+    </dl>
+
+    <p class="socio-nota" data-ejemplo="Tres respuestas quedaron en blanco A PROPÓSITO">
+      Son datos de estatuto: cuánto vale entrar, quién puede y qué
+      recibe un socio. <b>Poner cifras verosímiles acá sería peor que
+      dejarlo en blanco</b>, porque es exactamente lo que la gente
+      viene a verificar. Las llena la cooperativa y nadie más.
+    </p>
+  </div>
+</section>
+
+<!-- ══════════════════ LÁMINA ══════════════════ -->
+<section class="lamina" aria-labelledby="lamina-t">
+  <div class="lamina-texto">
+    <p class="numeraco">5,0</p>
+    <h2 class="t2" id="lamina-t">en 7 reseñas</h2>
+    <p class="entrada">
+      Son pocas, y eso también dice algo: <b>en Loncoche el boca a boca
+      no pasa por Google.</b> Acá la gente pregunta en la feria, no en
+      internet — y por eso una página no reemplaza nada de lo que ya
+      funciona. <b>Sirve para lo otro:</b> para el que llegó hace poco,
+      para el que compra dos veces al año y no sabe qué toca, y para el
+      que busca «agropecuaria Loncoche» a las once de la noche.
+    </p>
+  </div>
+  <div class="lamina-foto">
+    <div class="lamina-capa" data-parallax data-foto>
+      <p class="hueco-nota">
+        Falta <code>imagenes/tienda.jpg</code> — los sacos apilados o
+        el mesón de atención. 1920 × 1280.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════ DÓNDE ESTAMOS ══════════════════ -->
+<section class="donde" id="donde">
+  <div class="ancho donde-grilla">
+
+    <div class="donde-texto">
+      <p class="rotulo reveal">Dónde estamos</p>
+      <h2 class="t2 reveal">Balmaceda 656, Loncoche</h2>
+      <p class="entrada reveal">
+        <b>Si viene por algo puntual, llame antes.</b> En agropecuaria
+        pasa siempre lo mismo: se viaja media hora al pueblo por un
+        producto que se acabó el martes. Un llamado de un minuto lo
+        evita.
+      </p>
+
+      <dl class="datos reveal">
+        <div>
+          <dt>Dónde</dt>
+          <dd>Av. José Manuel Balmaceda 656, Loncoche</dd>
+        </div>
+        <div>
+          <dt>Teléfono</dt>
+          <dd><a href="tel:+56933095225">9 3309 5225</a></dd>
+        </div>
+        <div>
+          <dt>Horario</dt>
+          <dd class="pendiente">Falta el horario de atención</dd>
+        </div>
+        <div>
+          <dt>Quiénes somos</dt>
+          <dd>Tienda de la Cooperativa Loncofrut</dd>
+        </div>
+      </dl>
+
+      <p class="aviso reveal">
+        <b>Al llamar, tenga a mano tres datos:</b> qué cultivo o qué
+        animal, cuánta superficie o cuántas cabezas, y qué le pasó o qué
+        quiere lograr. <b>Con eso se recomienda bien</b> — sin eso, se
+        recomienda a ciegas y se vende lo que no era.
+      </p>
+    </div>
+
+    <div class="donde-foto" data-foto>
+      <p class="hueco-nota">
+        Falta <code>imagenes/frente.jpg</code> — el frente del local,
+        con el letrero de la cooperativa. 900 × 1200.
+      </p>
+    </div>
+
+  </div>
+</section>
+
+<!-- ══════════════════ CIERRE ══════════════════ -->
+<section class="cierre">
+  <div class="ancho">
+    <h2 class="t2 claro reveal">Pregunte qué se viene</h2>
+    <p class="entrada claro reveal">
+      Un llamado de un minuto ahorra una temporada.
+    </p>
+    <p class="reveal">
+      <a class="btn btn-fuerte grande" href="tel:+56933095225">Llamar al 9 3309 5225</a>
+    </p>
+  </div>
+</section>
+
+</main>
+
+<footer class="pie">
+  <div class="ancho pie-grilla">
+    <p class="pie-m"><b>AgroFrut</b><br><span>Cooperativa Loncofrut</span></p>
+    <p class="pie-d">
+      Av. José Manuel Balmaceda 656, Loncoche<br>
+      <a href="tel:+56933095225">9 3309 5225</a>
+    </p>
+    <p class="pie-n">
+      Página de demostración. El nombre, la dirección, el teléfono y
+      las 7 reseñas con 5,0 son reales; el calendario del año es
+      general de la zona y está puesto como ejemplo, y las respuestas
+      sobre la cooperativa quedaron en blanco a propósito: son datos de
+      estatuto y los llena la cooperativa.
+    </p>
+  </div>
+</footer>
+
+</body>
+</html>

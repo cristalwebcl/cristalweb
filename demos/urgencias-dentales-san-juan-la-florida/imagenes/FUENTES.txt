@@ -1,0 +1,22 @@
+FUENTES DE LAS IMAGENES - Dental Estudio San Juan Rehecha el 13-09-2026 (presentacion antes que texto). Fotos de REFERENCIA de bancos libres: ninguna es del local; las verdaderas las tiene que mandar el negocio. 
+port-01.jpg  <-  pozo-p-ud-telefono\003.jpg  |  pexels (Pexels License)  |  autor: Jaroslav Maléř  |  https://www.pexels.com/es-es/foto/mensajes-de-texto-por-telefono-19949818/  |  consulta: "smartphone dark hand"
+hund1-01.jpg  <-  pozo-p-ud-ascensor\008.jpg  |  pexels (Pexels License)  |  autor: cottonbro studio  |  https://www.pexels.com/es-es/foto/mano-boton-ascensor-prensado-8453040/  |  consulta: "elevator buttons"
+hund2-01.jpg  <-  pozo-p-ud-lampara\001.jpg  |  pexels (Pexels License)  |  autor: Ivan Babydov  |  https://www.pexels.com/es-es/foto/ligero-adentro-equipo-vaso-transparente-7789656/  |  consulta: "dental lamp"
+hund3-01.jpg  <-  pozo-p-vd-radiografia\006.jpg  |  pexels (Pexels License)  |  autor: Nadezhda Moryak  |  https://www.pexels.com/es-es/foto/varano-varanus-vigilante-monitor-7800665/  |  consulta: "dental x-ray"
+hund4-01.jpg  <-  pozo-p-ud-hielo\006.jpg  |  pexels (Pexels License)  |  autor: Ron Lach  |  https://www.pexels.com/es-es/foto/vaso-cristal-vidrio-hielo-8879619/  |  consulta: "ice cubes"
+hund5-01.jpg  <-  pozo-p-ud-lampara\008.jpg  |  pexels (Pexels License)  |  autor: Pavel Danilyuk  |  https://www.pexels.com/es-es/foto/oficina-equipo-dentista-cuidado-de-la-salud-6812463/  |  consulta: "dental lamp"
+hund6-01.jpg  <-  pozo-p-ud-leche\004.jpg  |  pexels (Pexels License)  |  autor: Alexas Fotos  |  https://www.pexels.com/es-es/foto/fotografia-en-escala-de-grises-de-un-vaso-de-leche-2198626/  |  consulta: "glass of milk"
+banda-01.jpg  <-  pozo-p-ud-edificio\011.jpg  |  pexels (Pexels License)  |  autor: Parna Gohil  |  https://www.pexels.com/es-es/foto/ventana-de-vidrio-con-marco-de-metal-negro-3716558/  |  consulta: "office building night"
+cita-01.jpg  <-  pozo-p-ud-hielo\008.jpg  |  pexels (Pexels License)  |  autor: Pixabay  |  https://www.pexels.com/es-es/foto/cubos-de-hielo-434259/  |  consulta: "ice cubes"
+mos1-01.jpg  <-  pozo-p-ud-noche\002.jpg  |  pexels (Pexels License)  |  autor: Pavel Danilyuk  |  https://www.pexels.com/es-es/foto/equipo-instrumentos-dentales-de-cerca-luces-de-quirofano-dentales-6812492/  |  consulta: "dental clinic night"
+mos2-01.jpg  <-  pozo-p-ud-hielo\012.jpg  |  pexels (Pexels License)  |  autor: Irina Iriser  |  https://www.pexels.com/es-es/foto/resfriado-frio-oscuro-hielo-11173523/  |  consulta: "ice cubes"
+mos3-01.jpg  <-  pozo-p-ud-edificio\001.jpg  |  pexels (Pexels License)  |  autor: Edgar Mosqueda Camacho  |  https://www.pexels.com/es-es/foto/ciudad-noche-arboles-estanque-18534212/  |  consulta: "office building night"
+mos4-01.jpg  <-  pozo-p-ud-ascensor\001.jpg  |  pexels (Pexels License)  |  autor: Erik Mclean  |  https://www.pexels.com/es-es/foto/metal-tecnologia-plata-plateado-16026075/  |  consulta: "elevator buttons"
+mos5-01.jpg  <-  pozo-p-ud-leche\011.jpg  |  pexels (Pexels License)  |  autor: Meruyert Gonullu  |  https://www.pexels.com/es-es/foto/vaso-transparente-con-liquido-blanco-6034032/  |  consulta: "glass of milk"
+mos6-01.jpg  <-  pozo-p-ud-lampara\006.jpg  |  pexels (Pexels License)  |  autor: Polina Zimmerman  |  https://www.pexels.com/es-es/foto/naturaleza-muerta-tiro-vertical-equipo-dental-de-cerca-4687149/  |  consulta: "dental lamp"
+
+BRUMA (bruma-pag-0N.png y bruma-osc-0N.png, 30x20): las MISMAS fotos, recortadas a 3:2, reducidas y
+recoloreadas con C:\devs\demos\hacer-bruma.ps1 (clara >= 0,68 de luminancia / oscura <= 0,05). No suman fuentes.
+    pagina: port-01.jpg, banda-01.jpg, mos2-01.jpg, hund1-01.jpg, mos3-01.jpg   |   oscuras: port-01.jpg, cita-01.jpg, banda-01.jpg
+
+MAPA: iframe de Google Maps (embed publico, sin clave). No hay imagen de mapa.

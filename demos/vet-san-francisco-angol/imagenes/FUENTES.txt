@@ -1,0 +1,22 @@
+FUENTES DE LAS IMAGENES - Veterinaria San Francisco de As&iacute;s Rehecha el 13-09-2026 (presentacion antes que texto). Fotos de REFERENCIA de bancos libres: ninguna es del local; las verdaderas las tiene que mandar el negocio. 
+port-01.jpg  <-  pozo-p-gato-ojos\006.jpg  |  pexels (Pexels License)  |  autor: Cesar López  |  https://www.pexels.com/es-es/foto/cabeza-de-gato-22712151/  |  consulta: "cat eyes"
+banda-01.jpg  <-  pozo-p-gato-dormido\002.png  |  pexels (Pexels License)  |  autor: Ander Reed  |  https://www.pexels.com/es-es/foto/adorable-gato-durmiendo-en-una-caja-de-madera-33696891/  |  consulta: "sleeping cat"
+cita-01.jpg  <-  pozo-p-gato-escondido\006.jpg  |  pexels (Pexels License)  |  autor: Alejandro Aznar  |  https://www.pexels.com/es-es/foto/retrato-en-primer-plano-de-un-gato-negro-en-blanco-y-negro-31890595/  |  consulta: "cat hiding"
+hund1-01.jpg  <-  pozo-p-gato-escondido\001.jpg  |  pexels (Pexels License)  |  autor: Ludovic Delot  |  https://www.pexels.com/es-es/foto/adorable-gato-jengibre-descansando-en-interiores-31440971/  |  consulta: "cat hiding"
+hund2-01.jpg  <-  pozo-p-gato-agua\002.jpg  |  pexels (Pexels License)  |  autor: Eduardo López  |  https://www.pexels.com/es-es/foto/gato-con-comida-16618557/  |  consulta: "cat drinking"
+hund3-01.jpg  <-  pozo-p-gato-canil\006.jpg  |  pexels (Pexels License)  |  autor: Huy Phan  |  https://www.pexels.com/es-es/foto/animal-mascota-mono-gato-domestico-10292639/  |  consulta: "cat carrier"
+hund4-01.jpg  <-  pozo-p-gato-ojos\008.jpg  |  pexels (Pexels License)  |  autor: Thirdman  |  https://www.pexels.com/es-es/foto/mono-gato-adorable-peludo-8942612/  |  consulta: "cat eyes"
+hund5-01.jpg  <-  pozo-p-gato-canil\012.jpg  |  pexels (Pexels License)  |  autor: Leah Newhouse  |  https://www.pexels.com/es-es/foto/gato-siames-con-cono-colar-776374/  |  consulta: "cat carrier"
+hund6-01.jpg  <-  pozo-p-gato-agua\009.jpg  |  pexels (Pexels License)  |  autor: Iqbal farooz  |  https://www.pexels.com/es-es/foto/gato-gris-bebiendo-agua-de-una-taza-verde-al-aire-libre-37096993/  |  consulta: "cat drinking"
+mos1-01.jpg  <-  pozo-p-gato-dormido\009.jpg  |  pexels (Pexels License)  |  autor: Shota Photographer  |  https://www.pexels.com/es-es/foto/gato-durmiendo-en-paz-a-la-luz-del-sol-37157080/  |  consulta: "sleeping cat"
+mos2-01.jpg  <-  pozo-p-gato-ojos\007.jpg  |  pexels (Pexels License)  |  autor: Miguel Giménez  |  https://www.pexels.com/es-es/foto/mascota-ojos-gato-bigotes-18868601/  |  consulta: "cat eyes"
+mos3-01.jpg  <-  pozo-p-gato-canil\011.jpg  |  pexels (Pexels License)  |  autor: Natalia Sevruk  |  https://www.pexels.com/es-es/foto/gatito-adorable-acurrucado-en-sueter-beige-33202462/  |  consulta: "cat carrier"
+mos4-01.jpg  <-  pozo-p-gato-escondido\002.jpg  |  pexels (Pexels License)  |  autor: Georgi Kanov  |  https://www.pexels.com/es-es/foto/mascota-suelo-molido-silla-18216256/  |  consulta: "cat hiding"
+mos5-01.jpg  <-  pozo-p-gato-correa\011.jpg  |  pexels (Pexels License)  |  autor: Ludovic Delot  |  https://www.pexels.com/es-es/foto/chihuahua-con-correa-en-un-campo-abierto-con-hierba-al-aire-libre-33471267/  |  consulta: "dog leash"
+mos6-01.jpg  <-  pozo-p-gato-ojos\009.jpg  |  pexels (Pexels License)  |  autor: Juan Manuel Fernandez  |  https://www.pexels.com/es-es/foto/retrato-en-primer-plano-de-un-gato-gris-en-tandil-32224294/  |  consulta: "cat eyes"
+
+BRUMA (bruma-pag-0N.png y bruma-osc-0N.png, 30x20): las MISMAS fotos, recortadas a 3:2, reducidas y
+recoloreadas con C:\devs\demos\hacer-bruma.ps1 (clara >= 0,68 de luminancia / oscura <= 0,05). No suman fuentes.
+    pagina: port-01.jpg, banda-01.jpg, hund1-01.jpg, hund2-01.jpg, hund3-01.jpg, hund6-01.jpg, mos2-01.jpg, mos6-01.jpg   |   oscuras: port-01.jpg, cita-01.jpg, hund1-01.jpg
+
+MAPA: iframe de Google Maps (embed publico, sin clave). No hay imagen de mapa.

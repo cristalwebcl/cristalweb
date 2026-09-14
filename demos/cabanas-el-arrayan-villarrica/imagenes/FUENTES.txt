@@ -1,0 +1,22 @@
+FUENTES DE LAS IMAGENES - Cabanas El Arrayan Rehecha el 13-09-2026 (presentacion antes que texto). Fotos de REFERENCIA de bancos libres: ninguna es del local; las verdaderas las tiene que mandar el negocio. 
+port-01.jpg  <-  pozo-p-arv-cabanas\008.jpg  |  pexels (Pexels License)  |  autor: Doğan Alpaslan  Demir  |  https://www.pexels.com/es-es/foto/casas-campo-casa-granja-24786314/  |  consulta: "wooden cabins garden"
+hund1-01.jpg  <-  pozo-p-arv-costanera\006.jpg  |  pexels (Pexels License)  |  autor: Melany Duran  |  https://www.pexels.com/es-es/foto/escena-de-parque-tranquilo-a-la-orilla-del-rio-con-bancos-38440621/  |  consulta: "lakeside promenade bench"
+hund2-01.jpg  <-  pozo-p-arv-cocina\002.jpg  |  pexels (Pexels License)  |  autor: Alexander Mass  |  https://www.pexels.com/es-es/foto/cocina-rustica-acogedora-con-diseno-interior-de-madera-29887385/  |  consulta: "small kitchenette cabin"
+hund3-01.jpg  <-  pozo-p-arv-auto\008.jpg  |  pexels (Pexels License)  |  autor: Luca Istrate  |  https://www.pexels.com/es-es/foto/casas-edificio-bosque-arboles-15469360/  |  consulta: "car parked cabin gravel"
+hund4-01.jpg  <-  pozo-p-arv-cabanas\006.jpg  |  pexels (Pexels License)  |  autor: Alexander Mass  |  https://www.pexels.com/es-es/foto/cabana-rustica-de-madera-en-un-entorno-forestal-tranquilo-39281190/  |  consulta: "wooden cabins garden"
+hund5-01.jpg  <-  pozo-p-alt-lena\004.jpg  |  pexels (Pexels License)  |  autor: Alexander Mass  |  https://www.pexels.com/es-es/foto/madera-relajante-lena-rustico-27638186/  |  consulta: "firewood stove cabin"
+hund6-01.jpg  <-  pozo-p-ely-lago\001.jpg  |  pexels (Pexels License)  |  autor: David Vives  |  https://www.pexels.com/es-es/foto/arboles-verdes-cerca-de-la-montana-bajo-un-cielo-azul-5402839/  |  consulta: "lake Villarrica"
+banda-01.jpg  <-  pozo-p-arv-playa\008.jpg  |  pexels (Pexels License)  |  autor: Fernando  Vega  |  https://www.pexels.com/es-es/foto/mar-paisaje-montanas-naturaleza-17845822/  |  consulta: "lake beach black sand volcano"
+cita-01.jpg  <-  pozo-p-ely-lago\007.jpg  |  pexels (Pexels License)  |  autor: Mau Torres V  |  https://www.pexels.com/es-es/foto/paisaje-bosque-montana-estados-unidos-17251380/  |  consulta: "lake Villarrica"
+mos1-01.jpg  <-  pozo-p-ely-flor\002.jpg  |  pexels (Pexels License)  |  autor: Sharath G.  |  https://www.pexels.com/es-es/foto/floreciente-flores-blancas-fotografia-de-flores-de-cerca-13061687/  |  consulta: "white myrtle flowers"
+mos2-01.jpg  <-  pozo-p-arv-costanera\012.jpg  |  pexels (Pexels License)  |  autor: Eren Arıcı  |  https://www.pexels.com/es-es/foto/banco-de-parque-tranquilo-junto-a-sauce-en-otono-34766914/  |  consulta: "lakeside promenade bench"
+mos3-01.jpg  <-  pozo-p-arv-cabanas\004.jpg  |  pexels (Pexels License)  |  autor: Natalia Catalina  |  https://www.pexels.com/es-es/foto/un-viejo-cubo-de-ladrillo-cubierto-de-maleza-y-flores-20388363/  |  consulta: "wooden cabins garden"
+mos4-01.jpg  <-  pozo-p-arv-costanera\003.jpg  |  pexels (Pexels License)  |  autor: William Finn  |  https://www.pexels.com/es-es/foto/tranquilo-paseo-junto-al-lago-en-charlotte-park-37005747/  |  consulta: "lakeside promenade bench"
+mos5-01.jpg  <-  pozo-p-ely-lago\009.jpg  |  pexels (Pexels License)  |  autor: ATHENEA CODJAMBASSIS ROSSITTO  |  https://www.pexels.com/es-es/foto/paisaje-punto-de-referencia-arboles-montana-25525990/  |  consulta: "lake Villarrica"
+mos6-01.jpg  <-  pozo-p-arv-cabanas\003.jpg  |  pexels (Pexels License)  |  autor: Ollie Tabooge  |  https://www.pexels.com/es-es/foto/edificio-pared-muro-jardin-11184181/  |  consulta: "wooden cabins garden"
+
+BRUMA (bruma-pag-0N.png y bruma-osc-0N.png, 30x20): las MISMAS fotos, recortadas a 3:2, reducidas y
+recoloreadas con C:\devs\demos\hacer-bruma.ps1 (clara >= 0,68 de luminancia / oscura <= 0,05). No suman fuentes.
+    pagina: port-01.jpg, hund1-01.jpg, hund2-01.jpg, hund6-01.jpg, mos1-01.jpg, mos3-01.jpg, mos5-01.jpg, mos6-01.jpg   |   oscuras: cita-01.jpg, banda-01.jpg, hund5-01.jpg
+
+MAPA: iframe de Google Maps (embed publico, sin clave). No hay imagen de mapa.

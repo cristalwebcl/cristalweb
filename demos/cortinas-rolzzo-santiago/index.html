@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="es-CL" class="no-js">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self'; img-src 'self' data:; font-src 'self'; connect-src 'self'; media-src 'self'; form-action 'self'; base-uri 'none'; frame-src 'none'; object-src 'none'">
+<meta name="robots" content="noindex, nofollow">
+<title>Cortinas Rolzzo — fábrica de cortinas a medida, Santiago Centro</title>
+<meta name="description" content="Fábrica de cortinas en Santiago Centro: roller, blackout, sunscreen y tradicional, hechas a la medida de su ventana.">
+<link rel="preload" href="assets/fuentes/archivo-var-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="assets/fuentes.css">
+<link rel="stylesheet" href="css/estilo.css">
+<script src="js/rescate.js"></script>
+</head>
+<body>
+
+<!-- ═══════════ BANDA DE PROPUESTA ═══════════ -->
+<aside class="propuesta" aria-label="Aviso de propuesta">
+  <div class="ancho propuesta__in">
+    <p class="propuesta__q">Propuesta de sitio web — preparada para <b>Cortinas Rolzzo</b> por CristalWeb</p>
+    <p class="propuesta__d">
+      <span class="dato">939 reseñas</span> con <span class="dato">5,0</span> —una fábrica de cortinas con
+      nota perfecta— y en Google no hay una sola página donde ver un modelo ni entender cómo se mide
+      una ventana. El cliente cotiza mirando; hoy no tiene qué mirar. Ésta es la página que debería estar ahí.
+    </p>
+  </div>
+</aside>
+
+<!-- ═══════════ CABECERA ═══════════ -->
+<header class="cab" id="cab">
+  <div class="ancho cab__in">
+    <a class="cab__marca" href="#portada">
+      <span class="riel" aria-hidden="true">
+        <span class="riel__tubo"></span>
+        <span class="riel__pano"></span>
+      </span>
+      <span class="cab__txt">Cortinas Rolzzo<span class="cab__sub">Fábrica · Santiago Centro</span></span>
+    </a>
+    <nav class="cab__nav" aria-label="Secciones">
+      <a href="#medir">Cómo se mide</a>
+      <a href="#tipos">Los tipos</a>
+      <a href="#fabrica">La fábrica</a>
+      <a class="cab__tel" href="https://wa.me/56999428383" target="_blank" rel="noopener noreferrer">9 9942 8383</a>
+    </nav>
+  </div>
+</header>
+
+<!-- ═══════════ PORTADA ═══════════ -->
+<section class="portada" id="portada" aria-labelledby="t-portada">
+  <div class="portada__foto" aria-hidden="true">
+    <img src="imagenes/port-01.jpg" width="2560" height="1707" fetchpriority="high" decoding="async" alt="">
+  </div>
+
+  <!-- ESCENA: la cortina roller baja. SVG propio, sin librería. El paño crece
+       desde el tubo (scaleY 0→1, origen arriba) y el tirador cae con él; se
+       detiene al 70 % del vano. Sin reposo: pasa una vez y se queda abajo.
+       Con reduced-motion arranca ya bajada. -->
+  <div class="escena" aria-hidden="true">
+    <svg viewBox="0 0 220 300" class="escena__svg" role="presentation" focusable="false">
+      <rect class="escena__vano" x="20" y="18" width="180" height="252" rx="2"/>
+      <rect class="escena__tubo" x="14" y="10" width="192" height="9" rx="4.5"/>
+      <g class="escena__baja">
+        <rect class="escena__pano" x="20" y="19" width="180" height="176"/>
+        <rect class="escena__barra" x="20" y="191" width="180" height="4"/>
+        <line class="escena__tira" x1="110" y1="195" x2="110" y2="214"/>
+        <circle class="escena__tirador" cx="110" cy="217" r="4"/>
+      </g>
+      <g class="escena__cota">
+        <line x1="20" y1="284" x2="200" y2="284"/>
+        <line x1="20" y1="279" x2="20" y2="289"/>
+        <line x1="200" y1="279" x2="200" y2="289"/>
+        <text x="110" y="278" text-anchor="middle">ancho</text>
+      </g>
+    </svg>
+  </div>
+
+  <div class="ancho portada__in">
+    <p class="rotulo">Santiago Centro · fábrica propia</p>
+    <h1 class="portada__h1" id="t-portada">
+      La cortina se hace<br>
+      <span class="portada__h1-b">del ancho de su ventana.</span>
+    </h1>
+    <p class="portada__bajada">
+      Roller, blackout, sunscreen y tradicional. Se miden, se cortan y se cosen acá
+      mismo: no se compra un largo estándar y se recorta.
+    </p>
+    <p class="portada__acc">
+      <a class="boton" href="#medir">Ver cómo se mide</a>
+      <a class="boton boton--linea" href="https://wa.me/56999428383" target="_blank" rel="noopener noreferrer">Mandar la medida</a>
+    </p>
+    <dl class="specs">
+      <div><dt>Reseñas en Google</dt><dd>939</dd></div>
+      <div><dt>Promedio</dt><dd>5,0</dd></div>
+      <div><dt>Páginas propias hoy</dt><dd>0</dd></div>
+    </dl>
+  </div>
+</section>
+
+<!-- ═══════════ CIFRAS ═══════════ -->
+<section class="cifras" aria-label="Las cifras">
+  <div class="ancho cifras__grid">
+    <div class="cifra">
+      <p class="cifra__n" data-cuenta="939">939</p>
+      <p class="cifra__t">reseñas en Google, verificadas el 27-08-2026</p>
+    </div>
+    <div class="cifra">
+      <p class="cifra__n">5,0</p>
+      <p class="cifra__t">de promedio. No 4,8: cinco redondo, con esa cantidad de reseñas</p>
+    </div>
+    <div class="cifra">
+      <p class="cifra__n">4</p>
+      <p class="cifra__t">medidas que hay que mandar para cotizar, y ninguna más</p>
+    </div>
+    <div class="cifra cifra--cero">
+      <p class="cifra__n">0</p>
+      <p class="cifra__t">páginas donde ver un modelo o entender cómo se mide</p>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════ PIEZA FIRMA — A MEDIDA, SIN MISTERIO ═══════════
+     La pregunta que ningún competidor contesta por escrito: ¿cómo mido mi
+     ventana para pedir? Tres pasos dibujados, con la cota que hay que mandar
+     por WhatsApp. Sin precios: los precios no los tenemos y no se inventan. -->
+<section class="medir" id="medir" aria-labelledby="t-medir">
+  <div class="ancho">
+    <p class="rotulo">La pieza que ningún competidor publica</p>
+    <h2 class="titulo" id="t-medir">A medida, sin misterio.</h2>
+    <p class="entradilla">
+      Medir una ventana para una cortina tiene tres decisiones y ninguna es
+      difícil. Lo que sigue es lo que hay que mandar por WhatsApp para que la
+      fábrica cotice sin ir a terreno.
+    </p>
+
+    <ol class="pasos">
+      <li class="paso">
+        <p class="paso__n">01</p>
+        <div class="paso__cuerpo">
+          <h3>El ancho</h3>
+          <p>De borde a borde del vano, o de punta a punta del riel si ya hay uno.
+            Se mide arriba, al medio y abajo: si los tres números no son iguales,
+            manda el mayor.</p>
+        </div>
+        <figure class="paso__dib" aria-hidden="true">
+          <svg viewBox="0 0 180 120" role="presentation" focusable="false">
+            <rect class="dib__vano" x="24" y="18" width="132" height="84" rx="2"/>
+            <g class="dib__cota">
+              <line x1="24" y1="112" x2="156" y2="112"/>
+              <line x1="24" y1="106" x2="24" y2="118"/>
+              <line x1="156" y1="106" x2="156" y2="118"/>
+            </g>
+            <text class="dib__t" x="90" y="103" text-anchor="middle">ancho</text>
+          </svg>
+        </figure>
+      </li>
+
+      <li class="paso">
+        <p class="paso__n">02</p>
+        <div class="paso__cuerpo">
+          <h3>El alto</h3>
+          <p>Desde donde va a quedar el tubo hasta donde quiere que llegue la
+            cortina: al marco, al piso o a media pared. Ese «hasta dónde» lo
+            decide usted, no la ventana.</p>
+        </div>
+        <figure class="paso__dib" aria-hidden="true">
+          <svg viewBox="0 0 180 120" role="presentation" focusable="false">
+            <rect class="dib__vano" x="40" y="14" width="104" height="92" rx="2"/>
+            <g class="dib__cota">
+              <line x1="30" y1="14" x2="30" y2="106"/>
+              <line x1="24" y1="14" x2="36" y2="14"/>
+              <line x1="24" y1="106" x2="36" y2="106"/>
+            </g>
+            <text class="dib__t dib__t--v" x="18" y="60" text-anchor="middle" transform="rotate(-90 18 60)">alto</text>
+          </svg>
+        </figure>
+      </li>
+
+      <li class="paso">
+        <p class="paso__n">03</p>
+        <div class="paso__cuerpo">
+          <h3>Dentro o fuera del vano</h3>
+          <p>Dentro queda a ras y se ve el marco; fuera tapa el marco entero y
+            deja pasar menos luz por los costados. Es la decisión que más cambia
+            cómo se ve, y la que nadie explica.</p>
+        </div>
+        <figure class="paso__dib" aria-hidden="true">
+          <svg viewBox="0 0 180 120" role="presentation" focusable="false">
+            <rect class="dib__vano" x="20" y="22" width="64" height="76" rx="2"/>
+            <rect class="dib__pano dib__pano--dentro" x="24" y="26" width="56" height="68"/>
+            <rect class="dib__vano" x="100" y="22" width="64" height="76" rx="2"/>
+            <rect class="dib__pano dib__pano--fuera" x="94" y="16" width="76" height="88"/>
+            <text class="dib__t" x="52" y="112" text-anchor="middle">dentro</text>
+            <text class="dib__t" x="132" y="112" text-anchor="middle">fuera</text>
+          </svg>
+        </figure>
+      </li>
+    </ol>
+
+    <p class="medir__cierre">
+      Con esos tres datos y una foto de la ventana, la fábrica ya puede cotizar.
+      <b>El mensaje se arma solo</b> con el botón de abajo.
+    </p>
+    <p class="medir__acc">
+      <a class="boton" href="https://wa.me/56999428383?text=Hola%2C%20quiero%20cotizar%20una%20cortina.%20Ancho%3A%20___%20cm.%20Alto%3A%20___%20cm.%20Va%20dentro%20%2F%20fuera%20del%20vano." target="_blank" rel="noopener noreferrer">Mandar la medida por WhatsApp</a>
+    </p>
+  </div>
+</section>
+
+<!-- ═══════════ TAJO ═══════════ -->
+<figure class="tajo" aria-label="Una cortina contra la luz de la tarde">
+  <img src="imagenes/tajo-01.jpg" width="2200" height="3318" loading="lazy" decoding="async"
+       alt="Una cortina de tela recogida en un pliegue, con la luz de la tarde atravesándola.">
+  <figcaption>La tela se elige mirándola contra la luz. Eso es lo que una foto en una página sí puede mostrar.</figcaption>
+</figure>
+
+<!-- ═══════════ LOS TIPOS ═══════════ -->
+<section class="tipos" id="tipos" aria-labelledby="t-tipos">
+  <div class="ancho">
+    <p class="rotulo">Qué resuelve cada una</p>
+    <h2 class="titulo" id="t-tipos">Cuatro tipos, cuatro problemas distintos.</h2>
+    <p class="entradilla">
+      La lista de abajo es la del oficio. <b>Cuáles fabrica Rolzzo y en qué telas
+      lo confirma la fábrica</b>: acá va marcado como ejemplo hasta que lo digan.
+    </p>
+    <div class="tipos__grid">
+      <article class="tipo">
+        <h3>Roller</h3>
+        <p>Un paño que sube y baja enrollado en un tubo. Ocupa nada cuando está
+          arriba y es la más fácil de limpiar.</p>
+        <p class="tipo__para"><span>Para</span> <b class="ej" data-ejemplo="lo confirma la fábrica">ventanas de cocina y oficina</b></p>
+      </article>
+      <article class="tipo">
+        <h3>Blackout</h3>
+        <p>Tela opaca: corta la luz casi entera. La diferencia con una cortina
+          gruesa cualquiera es que el paño no deja pasar el sol por la trama.</p>
+        <p class="tipo__para"><span>Para</span> <b class="ej" data-ejemplo="lo confirma la fábrica">dormitorios y salas de reunión</b></p>
+      </article>
+      <article class="tipo">
+        <h3>Sunscreen</h3>
+        <p>Tela técnica con trama abierta: baja el calor y el brillo pero deja
+          ver hacia afuera. De día no se ve hacia adentro; de noche sí.</p>
+        <p class="tipo__para"><span>Para</span> <b class="ej" data-ejemplo="lo confirma la fábrica">ventanales que dan al poniente</b></p>
+      </article>
+      <article class="tipo">
+        <h3>Tradicional</h3>
+        <p>Cortina de tela con caída, en riel o barra. Es la que abriga y la que
+          se nota: la tela manda más que el mecanismo.</p>
+        <p class="tipo__para"><span>Para</span> <b class="ej" data-ejemplo="lo confirma la fábrica">living y comedor</b></p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════ LA FÁBRICA (mitades) ═══════════ -->
+<section class="mitades" id="fabrica" aria-labelledby="t-fabrica">
+  <figure class="mitades__foto">
+    <img src="imagenes/mit-01.jpg" width="2200" height="3319" loading="lazy" decoding="async"
+         alt="Ventanal de taller con una cortina blanca y luz fría entrando.">
+  </figure>
+  <div class="mitades__texto">
+    <p class="rotulo">Fábrica, no revendedor</p>
+    <h2 class="titulo titulo--chico" id="t-fabrica">Se corta y se cose acá.</h2>
+    <p>
+      La diferencia entre una fábrica y una tienda es quién responde cuando la
+      medida no calza. Acá el paño se corta para esa ventana: si sobra o falta,
+      se arregla en el mismo taller y no hay que devolver nada a un proveedor.
+    </p>
+    <dl class="datos">
+      <div><dt>Dirección</dt><dd class="ej" data-ejemplo="la confirma la fábrica">Santiago Centro</dd></div>
+      <div><dt>Horario</dt><dd class="ej" data-ejemplo="lo confirma la fábrica">Lunes a viernes, mañana y tarde</dd></div>
+      <div><dt>Plazo de fabricación</dt><dd class="ej" data-ejemplo="lo confirma la fábrica">según el tipo y la medida</dd></div>
+      <div><dt>Instalación</dt><dd class="ej" data-ejemplo="lo confirma la fábrica">a convenir</dd></div>
+    </dl>
+    <p class="mini">
+      Los cuatro datos de arriba están marcados como ejemplo a propósito. Son los
+      que la fábrica confirma en una conversación de dos minutos, y son justo los
+      que hoy no están en ninguna parte.
+    </p>
+  </div>
+</section>
+
+<!-- ═══════════ CITA ═══════════ -->
+<figure class="cita" aria-label="Sobre las reseñas">
+  <img src="imagenes/cita-01.jpg" width="2200" height="1652" loading="lazy" decoding="async" alt="">
+  <blockquote class="cita__q">
+    <p>«Novecientas treinta y nueve personas pusieron cinco estrellas.<br>
+      Ninguna de esas opiniones vive en una página de ustedes.»</p>
+  </blockquote>
+</figure>
+
+<!-- ═══════════ CÓMO SE PIDE ═══════════ -->
+<section class="pedir con-telon" id="pedir" aria-labelledby="t-pedir">
+  <div class="telon" aria-hidden="true">
+    <img src="imagenes/telon-01.jpg" width="1200" height="787" loading="lazy" decoding="async" alt="">
+  </div>
+  <div class="ancho">
+    <p class="rotulo rotulo--claro">De la medida a la ventana</p>
+    <h2 class="titulo titulo--claro" id="t-pedir">Cuatro pasos y ninguna visita a ciegas.</h2>
+    <ol class="pedir__pasos">
+      <li><b>Manda la medida.</b> Ancho, alto y si va dentro o fuera del vano, con una foto de la ventana.</li>
+      <li><b>Recibe la cotización.</b> Con el tipo de tela y lo que resuelve cada una, para elegir mirando.</li>
+      <li><b>Se fabrica.</b> El paño se corta a esa medida en el taller de Santiago Centro.</li>
+      <li><b>Se instala o se retira.</b> <span class="ej" data-ejemplo="lo confirma la fábrica">Según lo que acuerden</span>.</li>
+    </ol>
+  </div>
+</section>
+
+<!-- ═══════════ MOSAICO ═══════════ -->
+<section class="mos" aria-label="Cortinas y taller">
+  <div class="mos__grilla">
+    <figure class="mos__p"><img src="imagenes/mos1-01.jpg" width="1200" height="787" loading="lazy" decoding="async" alt="Visillos contra una ventana, con la luz atravesando la tela."></figure>
+    <figure class="mos__p"><img src="imagenes/mos2-01.jpg" width="1200" height="800" loading="lazy" decoding="async" alt="Dormitorio con cortinas grises a los lados de una puerta ventana."></figure>
+    <figure class="mos__p"><img src="imagenes/mos3-01.jpg" width="1200" height="909" loading="lazy" decoding="async" alt="Habitación clara con cortinas blancas y luz de mañana."></figure>
+    <figure class="mos__p"><img src="imagenes/mos4-01.jpg" width="1200" height="801" loading="lazy" decoding="async" alt="Carretes de hilo de colores y una tijera de sastre."></figure>
+    <figure class="mos__p"><img src="imagenes/mos5-01.jpg" width="1200" height="800" loading="lazy" decoding="async" alt="Máquina de coser lista sobre la mesa de trabajo."></figure>
+    <figure class="mos__p"><img src="imagenes/mos6-01.jpg" width="1200" height="800" loading="lazy" decoding="async" alt="Dormitorio con cortinas claras junto a la ventana."></figure>
+  </div>
+  <p class="mos__pie ancho">
+    Estas fotos son de bancos de uso libre y <b>no son del taller de Rolzzo</b>.
+    Están para que se vea de qué habla la página. Las de verdad las tiene la
+    fábrica y son mejores: cada cortina que sale es una foto.
+  </p>
+</section>
+
+<!-- ═══════════ CONTACTO ═══════════ -->
+<section class="contacto" id="contacto" aria-labelledby="t-contacto">
+  <div class="ancho contacto__cols">
+    <div>
+      <p class="rotulo">Escribir</p>
+      <h2 class="titulo" id="t-contacto">Una medida y una foto.</h2>
+      <p class="entradilla">
+        Con eso alcanza para cotizar. El número es el que aparece en su ficha de
+        Google y es celular, así que recibe WhatsApp.
+      </p>
+      <p class="contacto__num"><a href="https://wa.me/56999428383" target="_blank" rel="noopener noreferrer">+56 9 9942 8383</a></p>
+    </div>
+    <dl class="datos">
+      <div><dt>Teléfono</dt><dd><a href="tel:+56999428383">9 9942 8383</a></dd></div>
+      <div><dt>Comuna</dt><dd>Santiago Centro</dd></div>
+      <div><dt>Dirección</dt><dd class="ej" data-ejemplo="la confirma la fábrica">Santiago Centro</dd></div>
+      <div><dt>En Google</dt><dd>939 reseñas · 5,0 (27-08-2026)</dd></div>
+      <div><dt>Sitio propio</dt><dd>no tiene</dd></div>
+    </dl>
+  </div>
+      <figure class="mapa">
+        <img src="imagenes/mapa-01.jpg" width="768" height="768" loading="lazy" decoding="async"
+             alt="Mapa de Santiago Centro.">
+        <figcaption class="mapa__pie">
+          <span><b>Santiago Centro</b>. La dirección exacta la confirma el negocio: cuando la tengamos, el mapa marca la puerta.</span>
+          <span class="mapa__cred">Mapa: &copy; <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener">OpenStreetMap</a></span>
+        </figcaption>
+      </figure>
+</section>
+
+<!-- ═══════════ PARA EL DUEÑO ═══════════ -->
+<section class="dueno" aria-labelledby="t-dueno">
+  <div class="ancho">
+    <p class="rotulo rotulo--claro">Para el dueño</p>
+    <h2 class="titulo titulo--claro" id="t-dueno">Qué es esto y qué no.</h2>
+    <div class="dueno__cols">
+      <div>
+        <h3>Qué es</h3>
+        <p>Una propuesta de sitio web hecha por nuestra cuenta. Cortinas Rolzzo no
+          la encargó ni la ha revisado. Dimos por cierto sólo lo que ya es
+          público: las 939 reseñas con 5,0 de su ficha de Google y el celular.</p>
+      </div>
+      <div>
+        <h3>Qué es ejemplo</h3>
+        <p>La dirección exacta, el horario, los plazos y para qué sirve cada tipo
+          de cortina en su caso. Todo va marcado con línea punteada. <b>No hay
+          precios a propósito</b>: publicar un valor que no nos dieron sería
+          inventarlo.</p>
+      </div>
+      <div>
+        <h3>Qué falta</h3>
+        <p>Fotos del taller y de cortinas instaladas. Las del banco muestran el
+          rubro; las suyas muestran su trabajo, y para una fábrica esa diferencia
+          es toda la venta.</p>
+      </div>
+    </div>
+    <p class="dueno__cierre">
+      <a class="flecha flecha--fuerte" href="https://wa.me/56968650001" rel="noopener">Escribirme por WhatsApp <span aria-hidden="true">→</span></a>
+      <a class="flecha" href="https://cristalwebcl.github.io/cristalweb/" rel="noopener">Ver otros trabajos <span aria-hidden="true">→</span></a>
+    </p>
+  </div>
+</section>
+
+<footer class="pie">
+  <div class="ancho pie__in">
+    <p>Demostración sin encargo, preparada por <b>CristalWeb</b> — desarrollo web desde Loncoche.<br>
+      Las fotografías son de bancos de uso libre y no corresponden al taller de Cortinas Rolzzo.</p>
+    <p class="pie__leg">Esta página tiene fines comerciales. Las medidas y los tipos de cortina son referencia del oficio, no una cotización.</p>
+  </div>
+</footer>
+
+
+<!-- ══ BOTON FLOTANTE DE CONTACTO ══════════════════════════════════
+     Escrito en el HTML y VISIBLE por defecto: si el script no arranca,
+     el boton igual esta. El JS solo lo aparta mientras se mira la
+     portada, para no tapar el titular. Icono de simple-icons (CC0),
+     incrustado: la CSP no deja pedir nada a un tercero. -->
+<a class="flota flota--wa" href="https://wa.me/56999428383?text=Hola%2C%20vi%20la%20pagina%20y%20quiero%20consultar." target="_blank" rel="noopener" aria-label="Escribir por WhatsApp a Cortinas Rolzzo">
+  <svg class="flota__i" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"/></svg>
+  <span class="flota__t">WhatsApp</span>
+</a>
+<script src="js/main.js"></script>
+</body>
+</html>

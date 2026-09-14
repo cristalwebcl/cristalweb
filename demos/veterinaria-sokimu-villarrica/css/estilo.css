@@ -20,7 +20,12 @@
    LA PALETA
    --blanco #FBFAF9
    --coral  #F2664B  el coral vivo — OBJETOS (collar, chapitas)
-   --coral-txt #B83A26  el mismo para TEXTO (5,4:1 sobre blanco)
+   --coral-txt #B83A26  el mismo para TEXTO (5,5:1 sobre blanco)
+   El coral es UNO, con tres calibraciones segun el fondo: #B83A26
+   sobre claro, #8C2A18 sobre foto con velo, #FFA994 sobre grafito, y
+   #9C2E1D dentro de la seccion del aura. No son cuatro colores: es el
+   mismo tono medido contra cuatro fondos distintos, que es la unica
+   forma de que AA se cumpla en los cuatro.
 
    PRIMER CORAL DEL REGISTRO — deslinde: el rosa te de la 119 es calma
    dental, empolvada y palida; la terracota de la 130 es hilo
@@ -58,6 +63,37 @@
    collar— y no de caja rectangular, que es la del veredicto de la
    133. Y su contenido es NORMATIVO, no una opinion: por eso lleva el
    aviso de firma profesional arriba y el descargo en el pie.
+
+   ─────────────────────────────────────────────────────────────────
+   SUBIDA A PREMIUM — 09-09-2026
+   Identidad intacta: mismos tres tipos, misma paleta coral, mismo
+   collar con placa, misma estructura K. Lo que cambio:
+
+   · LAS FOTOS. Todas las anteriores eran de farmacia HUMANA —batas
+     blancas, boticario antiguo, blisters— y la portada mostraba cajas
+     con marcas perfectamente legibles, justo lo que la pagina promete
+     no hacer. El set nuevo es veterinario: mesón con el animal
+     encima, consulta, gatos, perros. Se conservan solo las tomas de
+     comprimidos que no llevan una sola letra (tira, cita, aura),
+     porque son las que sostienen la palabra «farmacia».
+
+   · LA BANDA DE CIFRAS, oscura y con telon de la sala de espera. Solo
+     cuenta el 150 —lo unico que costo verificar—. El 0 es la herida.
+
+   · EL TAJO ahora lleva frase. El velo sube desde abajo y arranca en
+     alfa 0: los dos tercios de arriba de la foto quedan nitidos.
+
+   · LA VISITA, seccion nueva: cuatro cosas que conviene traer. Es
+     preparacion, no clinica — no dice que darle ni cuanto.
+
+   · EL CIERRE paso a banda oscura con telon y con la ficha <dl>. Lo
+     que falta —direccion, horario, WhatsApp— va marcado con .ej y la
+     etiqueta dice de quien depende.
+
+   · SIN VIDEO, por decision de Yordy: se reserva para los negocios
+     mejor valorados. El ambiente de portada lo dan las MOTAS —siete
+     puntos de luz que flotan como el pelo suspendido de un local con
+     animales— y la entrada escalonada del titular.
    ══════════════════════════════════════════════════════════════════ */
 
 :root {
@@ -66,8 +102,9 @@
   --gris:      #E4E1DD;
   --coral:     #F2664B;   /* objetos */
   --coral-2:   #FF8B72;
-  --coral-txt: #B83A26;   /* 5,4:1 sobre blanco */
-  --coral-cl:  #FFA994;   /* sobre el fondo oscuro */
+  --coral-txt: #B83A26;   /* TEXTO sobre claro       5,5:1 sobre --blanco */
+  --coral-foto:#8C2A18;   /* TEXTO chico sobre foto con velo — 5,5:1 en el peor caso */
+  --coral-cl:  #FFA994;   /* TEXTO sobre --grafito   7,3:1 · nunca sobre claro */
   --tinta:     #23252B;
   --tinta-2:   #5A5D66;   /* 6,3:1 sobre blanco */
   --grafito:   #2B2E36;   /* fondo de la seccion oscura */
@@ -99,6 +136,9 @@ body {
 h1, h2, h3 { font-family: var(--display); font-weight: 500; margin: 0; }
 p { margin: 0 0 1rem; }
 img { max-width: 100%; display: block; }
+/* el navegador le pone a <figure> un margin: 1em 40px que metia el tajo
+   40 px hacia adentro y le rompia el sangrado */
+figure { margin: 0; }
 
 ::selection { background: var(--coral-txt); color: var(--blanco); }
 a { color: var(--coral-txt); }
@@ -132,8 +172,11 @@ a { color: var(--coral-txt); }
   -webkit-backdrop-filter: blur(10px);
   backdrop-filter: blur(10px);
 }
+/* min-height 44 en todo lo que se toca: la cabecera es lo primero que
+   busca un pulgar y sin esto la marca medía 28 px y las anclas 24. */
 .cab__marca {
-  display: flex; align-items: flex-start; gap: .7rem;
+  display: flex; align-items: center; gap: .7rem;
+  min-height: 44px;
   text-decoration: none; color: inherit; margin-right: auto;
 }
 .cab__nombre { font-family: var(--display); font-size: 1.35rem; line-height: 1.3; }
@@ -176,22 +219,33 @@ a { color: var(--coral-txt); }
 }
 
 .cab__nav { display: flex; gap: 1.4rem; flex: 0 0 auto; align-self: center; }
+/* el filete del hover va en un ::after y no en el border, para poder
+   estirar el ancla a 44 px sin que el subrayado se despegue del texto */
 .cab__nav a {
+  position: relative;
+  display: inline-flex; align-items: center;
+  min-height: 44px;
   font-family: var(--dato);
   font-size: .78rem;
   text-transform: uppercase;
   letter-spacing: .06em;
   color: var(--tinta-2);
   text-decoration: none;
-  padding-bottom: 2px;
-  border-bottom: 1px solid transparent;
   white-space: nowrap;
 }
-.cab__nav a:hover { color: var(--coral-txt); border-bottom-color: var(--coral-txt); }
+.cab__nav a::after {
+  content: ''; position: absolute;
+  left: 0; right: 0; bottom: calc(50% - .95em);
+  height: 1px; background: transparent;
+}
+.cab__nav a:hover { color: var(--coral-txt); }
+.cab__nav a:hover::after { background: var(--coral-txt); }
 @media (max-width: 52rem) { .cab__nav { display: none; } }
 
 /* T1 — el telefono verificado */
 .cab__tel {
+  display: flex; flex-direction: column; justify-content: center;
+  min-height: 44px;
   text-align: right; text-decoration: none; line-height: 1.15;
   padding-left: 1.1rem; border-left: 1px solid var(--linea);
   flex: 0 0 auto; align-self: center;
@@ -244,13 +298,29 @@ a { color: var(--coral-txt); }
   text-transform: uppercase; color: var(--tinta-2);
   margin-bottom: .25rem;
 }
-.spec dd { margin: 0; font-family: var(--display); font-size: 1.7rem; line-height: 1; }
+/* los tres <dd> comparten min-height 44 para que la fila quede pareja y
+   para que el que es un enlace —el telefono— llegue al minimo tactil */
+.spec dd {
+  margin: 0; font-family: var(--display); font-size: 1.7rem; line-height: 1;
+  display: flex; align-items: center; min-height: 44px;
+}
 .dd--tel { font-family: var(--dato) !important; font-size: 1.05rem !important; }
-.dd--tel a { text-decoration: none; }
+.dd--tel a { display: inline-flex; align-items: center; min-height: 44px; text-decoration: none; }
 .dd--tel a:hover { text-decoration: underline; }
 
 /* ═══════════ LA FARMACIA (estructura K) ═══════════ */
+/* LOS GRISES DE ESTA SECCION SE REESCRIBEN, y no es capricho.
+   Detras hay un aura naranja: el fondo real bajo el texto no es
+   --blanco-2 sino un melocoton de hasta #F2CBAA, y ahi el --tinta-2 de
+   la pagina da 4,36:1 y el --coral-txt 4,03:1 — los dos por debajo de
+   AA. Medido a pixel sobre la captura, no calculado de memoria: el
+   auditor de contraste no lo ve porque el aura es un <img> y no un
+   background-color, asi que lee --blanco-2 y aprueba.
+   Con estos dos: 6,2:1 el gris y 5,2:1 el coral, en el punto mas
+   naranja del aura. Misma familia de color, un escalon mas oscura. */
 .farmacia {
+  --tinta-2:   #474A52;
+  --coral-txt: #9C2E1D;
   padding: clamp(3.5rem, 10vh, 7rem) clamp(1.25rem, 5vw, 4rem);
   background: var(--blanco-2);
 }
@@ -408,33 +478,76 @@ a { color: var(--coral-txt); }
 .ojo p { margin: 0; font-size: .96rem; color: var(--claro-2); }
 .ojo b { color: #fff; }
 
-/* ═══════════ EL CIERRE — T1 ═══════════ */
+/* ═══════════ EL CIERRE — T1 ═══════════
+   Banda oscura con telon de sala de espera. Va oscura a proposito: el
+   mosaico de arriba es claro y el «para la veterinaria» de abajo tambien,
+   asi que sin esta banda habria tres claros seguidos y el scroll se hace
+   plano justo donde se cierra la accion.
+   PEOR CASO del telon: foto BLANCA al .15 sobre #2B2E36 compone #4B4D54;
+   ahi --claro-2 da 5,0:1 y --coral-cl 4,6:1. Los dos pasan AA. */
 .cierre {
-  background: var(--blanco-2);
+  background: var(--grafito);
+  color: var(--claro-2);
   padding: clamp(3.5rem, 10vh, 6.5rem) clamp(1.25rem, 5vw, 4rem);
   text-align: center;
 }
+.cierre__cuerpo { max-width: 52rem; margin: 0 auto; }
 .cierre__rot {
   font-family: var(--dato);
   font-size: .76rem; letter-spacing: .18em;
-  text-transform: uppercase; color: var(--tinta-2);
+  text-transform: uppercase; color: var(--coral-cl);
   margin-bottom: 1rem;
 }
 .cierre__tel { margin: 0 0 1.2rem; }
 .cierre__tel a {
+  display: inline-block;
   font-family: var(--dato);
-  font-size: clamp(1.6rem, 7vw, 3.8rem);
+  font-size: clamp(1.55rem, 6.6vw, 3.6rem);
   line-height: 1.1;
-  color: var(--coral-txt);
+  min-height: 48px;
+  color: #fff;
   text-decoration: none;
   white-space: nowrap;
+  border-bottom: 2px solid var(--coral);
+  padding-bottom: .1rem;
 }
-.cierre__tel a:hover { text-decoration: underline; }
+.js .cierre__tel a { transition: color .25s ease, border-color .25s ease; }
+.cierre__tel a:hover { color: var(--coral-cl); border-bottom-color: var(--coral-cl); }
 .cierre__pie {
   font-size: .95rem;
-  color: var(--tinta-2);
+  color: var(--claro-2);
   max-width: 46rem;
-  margin: 0 auto;
+  margin: 0 auto 2.6rem;
+}
+
+/* ── LA FICHA <dl> ──
+   Columna fija de 11 rem y filete por fila: se lee como ficha tecnica y
+   no como tabla de contacto. Bajo 40 rem se apila, porque a 11 rem de
+   rotulo no le queda ancho al dato. */
+.datos {
+  margin: 0; text-align: left;
+  max-width: 46rem; margin-inline: auto;
+  border-top: 1px solid var(--linea-osc);
+}
+.datos > div {
+  display: grid; grid-template-columns: 11rem 1fr;
+  gap: 0 1.2rem; align-items: baseline;
+  padding: .9rem .2rem;
+  border-bottom: 1px solid var(--linea-osc);
+}
+.datos dt {
+  margin: 0;
+  font-family: var(--dato); font-size: .72rem;
+  letter-spacing: .12em; text-transform: uppercase;
+  color: var(--coral-cl);
+}
+.datos dd { margin: 0; font-size: .95rem; color: var(--claro-2); }
+.datos dd a {
+  display: inline-flex; align-items: center; min-height: 44px;
+  color: #fff; font-family: var(--dato);
+}
+@media (max-width: 40rem) {
+  .datos > div { grid-template-columns: 1fr; gap: .3rem; }
 }
 
 /* ═══════════ PARA LA VETERINARIA ═══════════ */
@@ -460,12 +573,19 @@ a { color: var(--coral-txt); }
 .dueno p { color: var(--tinta-2); font-size: .96rem; margin: 0; }
 .dueno__cierre { display: flex; flex-wrap: wrap; gap: 1.5rem 2.5rem; margin: 0; }
 .flecha {
+  display: inline-flex; align-items: center;
+  min-height: 44px;
   font-weight: 700;
   color: var(--coral-txt);
   text-decoration: none;
   border-bottom: 1px solid var(--coral-txt);
   padding-bottom: 2px;
 }
+/* la flecha se corre 4 px al pasar, y la transicion va en el <span> y no
+   en el enlace: asi el subrayado no se mueve con ella */
+.flecha span { display: inline-block; margin-left: .35rem; }
+.js .flecha span { transition: transform .22s ease; }
+.flecha:hover span { transform: translateX(4px); }
 .flecha:hover { color: var(--tinta); border-bottom-color: var(--tinta); }
 
 /* El descargo de salud va en el pie y con mas peso que el aviso de
@@ -473,7 +593,9 @@ a { color: var(--coral-txt); }
 .pie {
   background: var(--grafito);
   color: var(--claro-2);
-  padding: 2rem clamp(1.25rem, 5vw, 4rem) 2.5rem;
+  /* el padding de abajo deja libre la esquina del boton flotante (56 px
+     + su margen): sin esto el deslinde legal queda debajo del boton */
+  padding: 2rem clamp(1.25rem, 5vw, 4rem) 5.5rem;
   font-size: .84rem;
 }
 .pie p { margin: 0 0 .8rem; max-width: 70ch; }
@@ -486,6 +608,14 @@ a { color: var(--coral-txt); }
 
 @media (prefers-reduced-motion: reduce) {
   .js .collar i::after { animation: none; }
+  /* Regla 3 de la casa: con menos movimiento los reveals NO se
+     desplazan, pero SI siguen fundiendo. Un fundido no es movimiento;
+     un salto de 16 px si. Faltaba el generico y siete secciones
+     —cabecera de farmacia, filas, dosis, visita, nota, cierre y las
+     columnas del dueno— seguian entrando con el desplazamiento.
+     Los desplazamientos propios de mitades, cita, tira y mosaico ya
+     se apagan mas abajo, cada uno con su selector. */
+  .js .rev { transform: none; }
 }
 
 /* ══════════════════════════════════════════════════════════════════
@@ -517,10 +647,18 @@ a { color: var(--coral-txt); }
           mask-image: linear-gradient(90deg, transparent 0%, transparent 28%,
               rgba(0,0,0,.18) 42%, rgba(0,0,0,.66) 58%, #000 72%, #000 100%);
 }
+/* Velo del color DE la portada, escrito entero en rgba() literal y
+   terminando en alfa 0: con var() sin alfa el degradado tapa la foto de
+   punta a punta, y sin el 0 final el borde lejano nunca queda a foco
+   completo. Peor caso medido a mano: bajo el titular el velo va a alfa 1
+   sobre #FBFAF9, asi que el h1 en --tinta (#23252B) da 16,7:1 PASE LO QUE
+   PASE con la foto que se ponga debajo. */
 .portada__foto::after {
   content: ""; position: absolute; inset: 0;
-  background: linear-gradient(90deg, var(--blanco) 0%, var(--blanco) 30%,
-              rgba(251,250,249,.66) 46%, rgba(251,250,249,.22) 68%, rgba(251,250,249,.06) 86%);
+  background: linear-gradient(90deg,
+              rgba(251,250,249,1)   0%,  rgba(251,250,249,1)   30%,
+              rgba(251,250,249,.66) 46%, rgba(251,250,249,.22) 68%,
+              rgba(251,250,249,.06) 86%, rgba(251,250,249,0)   97%);
 }
 @media (prefers-reduced-motion: no-preference) {
   .portada__foto img { animation: respira 46s ease-in-out infinite alternate; }
@@ -535,8 +673,11 @@ a { color: var(--coral-txt); }
 .js .portada.rev.ok { opacity: 1; transform: none; transition: none; }
 @media (max-width: 860px) {
   .portada--foto { padding-top: 36svh; }
+  /* 58 % y no 50 %: en vertical el recorte se come casi tres cuartos del
+     ancho, y centrado dejaba fuera al veterinario y al perro — quedaba
+     una repisa vacia. El sujeto vive en la mitad derecha del cuadro. */
   .portada__foto img {
-    object-position: 50% 44%;
+    object-position: 58% 46%;
     -webkit-mask-image: linear-gradient(180deg, #000 0%, #000 30%, rgba(0,0,0,.34) 58%, transparent 78%);
             mask-image: linear-gradient(180deg, #000 0%, #000 30%, rgba(0,0,0,.34) 58%, transparent 78%);
   }
@@ -552,7 +693,10 @@ a { color: var(--coral-txt); }
   display: block; width: 100%; height: 100%; object-fit: cover;
   /* Acá el desenfoque ES el efecto: la foto deja de leerse y queda la luz. */
   filter: blur(64px) saturate(1.45);
-  opacity: .38;
+  /* .30 y no .38: a .38 el melocoton subia tanto que el texto secundario
+     no llegaba a AA ni con el gris reescrito. Se calibra MIRANDO y
+     midiendo el pixel, no copiando el numero de otra demo. */
+  opacity: .30;
   transform: scale(1.25);
   /* Y se apaga EN LA IMAGEN, no con un velo encima. Un ::after que pinta
      el fondo apaga solo DENTRO del div: en el borde de abajo queda un
@@ -621,12 +765,18 @@ a { color: var(--coral-txt); }
 .cita__foto { position: absolute; inset: 0; z-index: -1; overflow: hidden; }
 .cita__foto img { display: block; width: 100%; height: 100%; object-fit: cover; object-position: 50% 44%; }
 /* Velo parejo y fuerte: el texto va centrado y grande, encima de la foto
-   entera. Calculado sobre el peor caso —imagen del color contrario
-   detrás— para que el ratio aguante sin ensuciar la imagen. */
+   entera, asi que el velo tiene que ser PLANO — con un gradiente lateral
+   un texto centrado queda medio sobre .9 y medio sobre .3 y falla AA en
+   la mitad derecha.
+   PEOR CASO, calculado sobre foto NEGRA debajo (lo contrario de la que
+   hay): a .82 el fondo compuesto queda en #CECECE y el titular en
+   --tinta da 8,5:1. El eco chico va en --coral-foto (#8C2A18), que sobre
+   ese mismo peor caso da 5,5:1 — el --coral-txt de la pagina daria 3,6 y
+   NO pasaria. Por eso hay dos corales y no uno. */
 .cita__foto::after {
   content: ""; position: absolute; inset: 0;
-  background: linear-gradient(180deg, rgba(251,250,249,.72) 0%,
-              rgba(251,250,249,.84) 45%, rgba(251,250,249,.90) 100%);
+  background: linear-gradient(180deg, rgba(251,250,249,.82) 0%,
+              rgba(251,250,249,.86) 45%, rgba(251,250,249,.90) 100%);
 }
 .cita__texto { margin: 0; max-width: 42rem; text-align: center; color: var(--tinta); }
 .cita__texto p {
@@ -637,7 +787,7 @@ a { color: var(--coral-txt); }
 .cita__eco {
   display: block; margin-top: 1.1rem;
   font-family: var(--dato); font-size: .82rem; letter-spacing: .1em;
-  text-transform: uppercase; color: var(--coral-txt);
+  text-transform: uppercase; color: var(--coral-foto);
 }
 .js .cita__texto.rev { opacity: 0; transform: translateY(16px); }
 .js .cita__texto.rev.ok {
@@ -783,3 +933,349 @@ a { color: var(--coral-txt); }
 @media (prefers-reduced-motion: reduce) {
   .js .mos__p { opacity: 1; transform: none; }
 }
+
+/* ══════════════════════════════════════════════════════════════════
+   BLOQUES QUE EL HTML PEDIA Y EL CSS NO TENIA — 09-09-2026
+   La subida a premium reescribio el index.html (cifras, tajo con
+   frase, la visita, el cierre, el boton flotante, las motas de la
+   portada) pero ese trabajo nunca llego a la hoja de estilo: las
+   clases existian en el marcado y no en el CSS, asi que la banda de
+   cifras salia como una lista con vinetas, la frase del tajo quedaba
+   recortada por el overflow, los dos botones de la portada eran dos
+   enlaces subrayados y el boton de WhatsApp aterrizaba al final del
+   documento con el SVG a su tamano por defecto. Esto es esa hoja.
+   ══════════════════════════════════════════════════════════════════ */
+
+/* ── BOTONES ──
+   Pildora de 48 px de alto: por encima del minimo tactil de 44 y con
+   sitio para que el dedo no dude. La sombra va del color del acento y
+   con spread negativo — no se lee como un rectangulo gris debajo sino
+   como el boton levantandose. */
+.portada__botones {
+  display: flex; flex-wrap: wrap; gap: .8rem;
+  margin: 0 0 2.2rem;
+}
+.boton {
+  display: inline-flex; align-items: center; justify-content: center;
+  min-height: 48px; padding: .55rem 1.5rem;
+  border-radius: 999px;
+  border: 1px solid var(--coral-txt);
+  font-family: var(--cuerpo); font-size: .98rem; font-weight: 600;
+  line-height: 1.2;
+  color: var(--coral-txt);
+  text-decoration: none;
+  background: transparent;
+}
+.js .boton { transition: background .25s ease, color .25s ease, transform .25s ease, box-shadow .25s ease; }
+.boton:hover { background: rgba(184, 58, 38, .08); transform: translateY(-2px); }
+.boton--fuerte {
+  background: var(--coral-txt); color: #fff; border-color: var(--coral-txt);
+  box-shadow: 0 10px 30px -14px rgba(184, 58, 38, .85);
+}
+.boton--fuerte:hover { background: #9C2E1D; border-color: #9C2E1D; color: #fff; }
+
+/* ── LAS MOTAS ──
+   El ambiente de la portada. Siete puntos de luz que flotan, como el
+   pelo suspendido en la luz de un local con animales. Van escritos en
+   el HTML (siete <i> vacios) y los coloca el CSS por nth-child: la CSP
+   prohibe el atributo style, asi que ni la posicion ni el retardo
+   pueden viajar en el marcado.
+   No hay video en esta demo por decision de Yordy, asi que esto ES el
+   ambiente — y por eso es lo unico que se mueve en bucle en la portada.
+   Sin JS se ven quietas y puestas; con reduced-motion se apagan
+   enteras, que es lo intrusivo. Van sobre la mitad derecha, que es
+   donde la foto esta a foco completo: sobre el titular no se cruzan. */
+.motas { position: absolute; inset: 0; z-index: 1; pointer-events: none; overflow: hidden; }
+.motas i {
+  position: absolute;
+  width: 7px; height: 7px;
+  border-radius: 50%;
+  background: radial-gradient(circle at 34% 32%, rgba(255,255,255,.95), rgba(242,102,75,.55) 58%, rgba(242,102,75,0) 100%);
+  opacity: .55;
+}
+.motas i:nth-child(1) { left: 61%; top: 74%; width: 9px; height: 9px; }
+.motas i:nth-child(2) { left: 70%; top: 40%; }
+.motas i:nth-child(3) { left: 78%; top: 63%; width: 5px; height: 5px; opacity: .4; }
+.motas i:nth-child(4) { left: 86%; top: 28%; width: 11px; height: 11px; opacity: .36; }
+.motas i:nth-child(5) { left: 66%; top: 18%; width: 6px; height: 6px; }
+.motas i:nth-child(6) { left: 91%; top: 55%; }
+.motas i:nth-child(7) { left: 74%; top: 86%; width: 5px; height: 5px; opacity: .45; }
+@media (prefers-reduced-motion: no-preference) {
+  .motas i { animation: flota 17s ease-in-out infinite alternate; }
+  .motas i:nth-child(2) { animation-duration: 23s; animation-delay: -4s; }
+  .motas i:nth-child(3) { animation-duration: 19s; animation-delay: -9s; }
+  .motas i:nth-child(4) { animation-duration: 27s; animation-delay: -2s; }
+  .motas i:nth-child(5) { animation-duration: 21s; animation-delay: -13s; }
+  .motas i:nth-child(6) { animation-duration: 25s; animation-delay: -7s; }
+  .motas i:nth-child(7) { animation-duration: 15s; animation-delay: -11s; }
+}
+@keyframes flota {
+  from { transform: translate3d(0, 0, 0); }
+  to   { transform: translate3d(-14px, -34px, 0); }
+}
+@media (max-width: 860px) { .motas { display: none; } }
+
+/* ── LA CASCADA ──
+   El contenedor se NEUTRALIZA y animan los hijos. Si no lo neutralizas,
+   contenedor e hijos bajan a la vez y el grupo entero se desplaza el
+   doble. El --i va por nth-child en el CSS: en style="--i:3" la CSP lo
+   bloquea sin un solo error visible. */
+.js .cascada.rev      { opacity: 1; transform: none; transition: none; }
+.js .cascada.rev > *  { opacity: 0; transform: translateY(22px); }
+.js .cascada.rev.ok > * {
+  opacity: 1; transform: none;
+  transition: opacity .3s ease-out, transform .6s cubic-bezier(.22,.61,.36,1);
+  transition-delay: calc(var(--i, 0) * 70ms);
+}
+.cascada > :nth-child(1) { --i: 0; }
+.cascada > :nth-child(2) { --i: 1; }
+.cascada > :nth-child(3) { --i: 2; }
+.cascada > :nth-child(4) { --i: 3; }
+.cascada > :nth-child(5) { --i: 4; }
+.cascada > :nth-child(6) { --i: 5; }
+
+/* ── LA BANDA DE CIFRAS ──
+   Cuatro numeros y la herida entre ellos, en la misma fila y con el
+   mismo formato: el dueno la lee en el segundo diez.
+   El numero va HUECO —relleno del fondo y contorno claro— salvo la
+   herida, que rompe el patron con relleno solido en coral. Ese
+   contraste es lo que dirige la vista al 0.
+   OJO al auditor de contraste: en el numero hueco lee el relleno y no
+   el contorno, y da un falso positivo. El numero se lee por su borde.
+   PEOR CASO del telon: foto BLANCA al .15 sobre #2B2E36 compone
+   #4B4D54; ahi --claro-2 da 5,0:1. */
+.cifras {
+  background: var(--grafito);
+  color: var(--claro-2);
+  padding: clamp(2.6rem, 7vh, 4.5rem) clamp(1.25rem, 5vw, 4rem);
+}
+.cifras__lista {
+  list-style: none; margin: 0 auto; padding: 0;
+  max-width: 76rem;
+  display: grid; gap: 1.8rem 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(11rem, 1fr));
+}
+.cifras__lista li { display: flex; flex-direction: column; gap: .4rem; }
+.cifras__lista b {
+  font-family: var(--display); font-weight: 500;
+  font-size: clamp(2.6rem, 6vw, 4.2rem);
+  line-height: 1;
+  color: var(--grafito);
+  -webkit-text-stroke: 1.5px rgba(196, 200, 208, .8);
+  font-variant-numeric: tabular-nums;
+}
+.cifras__lista .cifra--herida {
+  color: var(--coral-2);
+  -webkit-text-stroke: 0;
+}
+.cifras__lista span {
+  font-family: var(--dato);
+  font-size: .74rem; letter-spacing: .07em;
+  line-height: 1.45;
+  color: var(--claro-2);
+  max-width: 22ch;
+}
+
+/* ── EL TAJO: la frase encima de la franja ──
+   El velo sube desde abajo y ARRANCA EN ALFA 0: los dos tercios de
+   arriba de la foto quedan a foco completo, que es el efecto entero.
+   La rampa llega al .84 en el 38 % de la caja, y el 38 % de la caja es
+   PADDING: la primera linea de letra nunca cae mas arriba de eso, ni en
+   escritorio (donde el relleno es el 46 % de la caja) ni en telefono
+   (donde la frase parte en cuatro lineas y baja al 42 %).
+   PEOR CASO medido a pixel sobre foto BLANCA: fondo compuesto #55575C y
+   el blanco da 7,9:1. Con la rampa anterior —.62 donde caia la letra—
+   el peor caso daba 4,14:1: pasaba en escritorio, donde la frase es
+   texto grande, y NO pasaba en el telefono, donde baja a 18 px. */
+.tajo { height: clamp(230px, 36svh, 400px); }
+.tajo__txt {
+  position: absolute; inset: auto 0 0 0;
+  margin: 0;
+  padding: clamp(3rem, 9vh, 5rem) clamp(1.25rem, 5vw, 4rem) 1.6rem;
+  background: linear-gradient(180deg,
+              rgba(43,46,54,0) 0%, rgba(43,46,54,.34) 18%,
+              rgba(43,46,54,.84) 38%, rgba(43,46,54,.94) 100%);
+}
+.tajo__txt p {
+  margin: 0;
+  max-width: 34ch;
+  font-family: var(--display); font-weight: 500;
+  font-size: clamp(1.15rem, 2.5vw, 1.8rem);
+  line-height: 1.2;
+  color: #fff;
+}
+
+/* ── LA VISITA ──
+   Cuatro momentos numerados. La tarjeta va en BLANCO PURO sobre el
+   crema de la seccion: es el tercer nivel de claridad de la pagina y es
+   lo que la saca de bloque de color plano.
+   El numero hueco repite el de la banda de cifras — misma forma, otro
+   fondo. */
+.visita {
+  background: var(--blanco-2);
+  padding: clamp(3.5rem, 10vh, 7rem) clamp(1.25rem, 5vw, 4rem);
+}
+/* la cabecera se alinea con la GRILLA de tarjetas (76 rem) y es su texto
+   el que se limita a 46: si se centra la cabecera dentro de 46 rem, el
+   titulo arranca 240 px a la derecha de las tarjetas y la seccion se lee
+   descuadrada */
+.visita__cab, .visita__nota { width: min(100%, 76rem); margin-inline: auto; }
+.visita__cab { margin-bottom: 2.2rem; }
+.visita__cab > * { max-width: 46rem; }
+.visita h2 {
+  font-size: clamp(1.9rem, 5vw, 3.1rem);
+  line-height: 1.08;
+  margin-bottom: 1.1rem;
+}
+.pasos {
+  list-style: none; margin: 0 auto 1.8rem; padding: 0;
+  max-width: 76rem;
+  display: grid; gap: 1.2rem;
+  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+}
+.paso {
+  background: #fff;
+  border-left: 4px solid var(--coral);
+  border-radius: 10px;
+  padding: 1.4rem 1.4rem 1.5rem;
+  box-shadow: 0 12px 30px -22px rgba(35, 37, 43, .55);
+}
+/* DOS clases en el selector, y no es adorno: `.paso p` (clase + tipo)
+   gana por especificidad a `.paso__n` (una clase sola) y le pisaba el
+   font-size, el color Y el margen. El numero hueco salia a 15 px, en
+   coral solido —a ese tamano el trazo de 1,5 px se come el glifo
+   entero— y pegado al h3. Es el mismo choque que ya se habia parcheado
+   con !important en .fila__falta.
+   OJO al auditor de contraste: aca lee el RELLENO (blanco sobre la
+   tarjeta blanca) y da un falso 1,00:1. El numero se lee por su
+   contorno: #F2664B sobre #FFFFFF da 3,10:1 y el cuerpo es de 38 px,
+   texto grande, que pide 3. */
+.paso .paso__n {
+  font-family: var(--display); font-weight: 500;
+  font-size: 2.4rem; line-height: 1;
+  margin: 0 0 .5rem;
+  color: #fff;
+  -webkit-text-stroke: 1.5px rgba(242, 102, 75, .95);
+  font-variant-numeric: tabular-nums;
+}
+.paso h3 {
+  font-family: var(--display); font-weight: 500;
+  font-size: 1.15rem; line-height: 1.2;
+  margin: 0 0 .5rem;
+  color: var(--tinta);
+}
+.paso p { margin: 0; font-size: .95rem; color: var(--tinta-2); }
+.visita__nota { font-size: .93rem; color: var(--tinta-2); }
+
+/* ── DATO DE EJEMPLO ──
+   Todo lo que no esta verificado va marcado, y la marca es una pieza de
+   diseno y no una disculpa. El texto de la etiqueta viaja en el HTML
+   (data-ejemplo) para que diga QUE falta y DE QUIEN depende.
+   El fondo de la etiqueta tapa la linea punteada donde se cruza, como
+   una etiqueta de plano tecnico — y por eso CADA seccion con otro fondo
+   tiene que reescribirlo. Si te saltas una, sale con el color de otra
+   seccion. */
+.ej { position: relative; border: 1px dashed rgba(242, 102, 75, .55); border-radius: 4px; }
+.ej::after {
+  content: attr(data-ejemplo);
+  position: absolute; top: -.62rem; right: .6rem;
+  font-family: var(--dato); font-size: .62rem;
+  letter-spacing: .08em; text-transform: uppercase;
+  color: var(--coral-txt); background: var(--blanco);
+  padding: 0 .35rem;
+  white-space: nowrap; max-width: 90%;
+  overflow: hidden; text-overflow: ellipsis;
+}
+p.ej { padding: .7rem .9rem .55rem; }
+/* los dos fondos donde vive un .ej en esta pagina */
+.visita .ej::after { background: var(--blanco-2); }
+.cierre .ej::after { color: var(--coral-cl); background: var(--grafito); }
+.cierre .ej { border-color: rgba(255, 169, 148, .5); }
+/* tres filas .ej seguidas: sin este aire la etiqueta de una se monta
+   sobre el filete de la de arriba y las cajas punteadas se leen como una
+   sola. El filete solido de la fila sobra donde ya hay uno punteado. */
+.datos > div.ej { margin: .55rem 0; border-bottom-color: transparent; }
+
+/* ── WHATSAPP FLOTANTE ──────────────────────────────────────────────
+   Boton fijo abajo a la derecha. 56 px de alto: por encima de los 44
+   del minimo tactil. Verde de WhatsApp a proposito — se reconoce sin
+   leerlo, y eso es lo que hace que se toque.
+
+   La direccion del truco importa: el boton se ve SIEMPRE por defecto y
+   el JS solo lo esconde mientras el visitante esta en la portada, para
+   no tapar el titular. Si el script no arranca, o si rescate.js quita
+   la clase .js, el boton queda visible, que es el estado que vende. Al
+   reves (oculto por defecto, revelado por JS) un fallo del script se
+   lleva el CTA principal. */
+.wapp {
+  position: fixed;
+  right: max(1rem, env(safe-area-inset-right, 0px));
+  bottom: max(1rem, env(safe-area-inset-bottom, 0px));
+  z-index: 60;
+  display: inline-flex;
+  align-items: center;
+  gap: .55rem;
+  height: 56px;
+  padding: 0 1.15rem 0 1rem;
+  border-radius: 999px;
+  background: #25D366;
+  color: #07310F;
+  text-decoration: none;
+  font-family: var(--cuerpo);
+  font-size: .95rem;
+  font-weight: 700;
+  line-height: 1;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, .3), 0 2px 6px rgba(0, 0, 0, .2);
+  transition: opacity .28s ease, transform .28s ease, box-shadow .18s ease;
+}
+.wapp__i { width: 26px; height: 26px; fill: currentColor; flex: none; }
+.wapp:hover,
+.wapp:focus-visible { transform: translateY(-2px); box-shadow: 0 10px 26px rgba(0, 0, 0, .34); }
+/* mientras se esta arriba del todo, el boton se aparta */
+.js .wapp--arriba { opacity: 0; transform: translateY(14px) scale(.94); pointer-events: none; }
+
+@media (max-width: 520px) {
+  .wapp { width: 56px; padding: 0; justify-content: center; }
+  /* el rotulo se va, el icono queda: en un telefono el circulo verde ya
+     dice que es */
+  .wapp__t { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
+}
+
+/* ── APAGADOS DE REDUCED-MOTION DE ESTE BLOQUE ──
+   Se apaga lo intrusivo (el bucle de las motas, los desplazamientos) y
+   se conserva lo que da vida: los fundidos de opacidad y los hovers de
+   color siguen puestos. */
+@media (prefers-reduced-motion: reduce) {
+  .motas { display: none; }
+  .js .cascada.rev > * { transform: none; }
+  .boton:hover { transform: none; }
+  .flecha:hover span { transform: none; }
+  .wapp { transition: opacity .28s ease; }
+  .wapp:hover, .wapp:focus-visible { transform: none; }
+  .js .wapp--arriba { transform: none; }
+  .mos__p:hover img, .tira__pieza:hover img { transform: none; }
+}
+
+/* ── MAPA DE UBICACION ──────────────────────────────────────────────
+   Imagen propia con mosaicos de OpenStreetMap pegados: la CSP prohibe
+   pedir nada a un tercero, asi que un iframe de Google Maps quedaria en
+   blanco SIN dar un solo error. El "Como llegar" si es un enlace, y un
+   enlace no lo bloquea nada.
+   Los colores salen de currentColor a proposito: asi el bloque se adapta
+   a la paleta de cada demo sin conocerla y sin chocar con ella.
+   La atribucion a OpenStreetMap la exige su licencia (ODbL). */
+.mapa-sec { padding: clamp(2.5rem, 6vw, 4.5rem) 0; }
+.mapa { margin: 1.4rem 0 0; border: 1px solid; border-color: color-mix(in srgb, currentColor 22%, transparent); border-radius: 10px; overflow: hidden; }
+@supports not (color: color-mix(in srgb, red 50%, blue)) { .mapa { border-color: rgba(128, 128, 128, .35); } }
+.mapa img { display: block; width: 100%; height: auto; aspect-ratio: 16 / 10; object-fit: cover; }
+.mapa__pie {
+  display: flex; flex-wrap: wrap; align-items: center; gap: .4rem 1rem;
+  padding: .75rem .9rem;
+  font-size: .86em; line-height: 1.45;
+  border-top: 1px solid; border-top-color: color-mix(in srgb, currentColor 22%, transparent);
+}
+@supports not (color: color-mix(in srgb, red 50%, blue)) { .mapa__pie { border-top-color: rgba(128, 128, 128, .35); } }
+.mapa__pie b { font-weight: 700; }
+.mapa__ir { color: inherit; font-weight: 700; text-decoration: underline; min-height: 44px; display: inline-flex; align-items: center; }
+.mapa__cred { width: 100%; font-size: .84em; opacity: .8; }
+.mapa__cred a { color: inherit; }

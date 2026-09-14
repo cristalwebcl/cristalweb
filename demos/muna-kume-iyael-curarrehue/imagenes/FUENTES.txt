@@ -1,5 +1,8 @@
 PROCEDENCIA DE LAS IMÁGENES — Muna Kume Iyael, restaurante, Curarrehue
 ════════════════════════════════════════════════════════════════
+Actualizado el 10-09-2026, al sumar el mapa de ubicación. Antes, el
+09-09-2026, se habían sumado las del mosaico, el tajo y el telón de la
+sección «El que sube desde Pucón».
 
 NINGUNA IMAGEN ES DEL NEGOCIO. Se buscó a fondo y de este restaurante
 sólo existe un afiche de comida rápida con la lista de precios: ni una
@@ -18,37 +21,126 @@ Buscando su nombre aparecen fotos de talleres, festivales y encuentros
 de cocina mapuche, con gente identificable. Ninguna se usó: no son de
 este local y además tienen personas que no dieron permiso.
 
-────────────────────────────────────────────────────────────────
-GENÉRICAS — siete, de banco libre. Todas son INGREDIENTES o el bosque
-donde salen: araucaria con sus piñones, hongos, musgo. Es literalmente
-de lo que habla el glosario de la página.
-
-port-01.jpg  2560x1920  ramas de araucaria con los piñones
-  pxhere · dominio público (CC0), consulta
-  «araucaria monkey puzzle tree forest chile»
-
-aura-01.jpg   900x675   hongos amarillos sobre un tronco con musgo
-                        (va a 64 px de desenfoque: sólo aporta el verde)
-media-01.jpg 1600x901   racimo de hongos en el suelo del bosque
-cita-01.jpg  2560x1707  hongos creciendo en un tocón
-tira-01.jpg  1000x667   un hongo abierto sobre musgo
-  los cuatro de pxhere y Pexels (uso libre), consulta
-  «wild mushrooms forest floor moss»
-
-tirb-01.jpg  1000x750   roca con musgo y liquen
-tirc-01.jpg  1000x501   bosque de coníferas desde arriba
-  pxhere · dominio público (CC0)
-
 **Ningún plato está fotografiado en esta página, y es a propósito.** La
 página entera trata de explicar qué es cada cosa antes de pedirla; una
-foto de banco de un plato que no es el suyo rompería justo eso.
+foto de banco de un plato que no es el suyo rompería justo eso. Por lo
+mismo tampoco se puso el piñón, el merkén ni el trigo en primer plano
+aunque el banco los tenga: una foto genérica de despensa desmentiría la
+media página que dice que esta despensa es de acá.
+
+Lo que sí se muestra es el ÁRBOL y el BOSQUE de donde sale la despensa:
+araucaria, hongos, musgo y el paisaje de la cordillera de la Araucanía.
+Es literalmente de lo que habla el glosario.
+
+Todas las fotos de paisaje son de la Araucanía andina —el mismo bosque
+de araucarias que rodea Curarrehue— pero **ninguna es de Curarrehue ni
+del entorno exacto del local**: son ambiente, no inventario.
+
+────────────────────────────────────────────────────────────────
+PORTADA Y TELÓN DEL GLOSARIO
+
+port-01.jpg   2560x1920   ramas de araucaria con sus piñones (conos)
+  pxhere · dominio público (CC0)
+  consulta: «araucaria monkey puzzle tree forest chile»
+
+telon-01.jpg  1200x900    el MISMO archivo que port-01, reducido a
+  1200 px y a calidad de telón. Comprobado al cerrar: las dos son la
+  misma foto. Se repite a propósito y sin costo de licencia — a 0,15
+  de opacidad y detrás del texto, el ojo lee textura, no repetición.
+
+────────────────────────────────────────────────────────────────
+LOS HONGOS Y EL MUSGO — aura, media pantalla, cita y tira
+
+aura-01.jpg   900x675    hongos amarillos sobre un tronco con musgo
+                         (va a 64 px de desenfoque: sólo aporta el verde)
+media-01.jpg  1600x901   racimo de hongos en el suelo del bosque
+cita-01.jpg   2560x1707  hongos creciendo en un tocón
+tira-01.jpg   1000x667   un hongo abierto sobre musgo
+  los cuatro de pxhere y Pexels (uso libre)
+  consulta: «wild mushrooms forest floor moss»
+
+tirb-01.jpg   1000x750   roca con musgo y liquen
+tirc-01.jpg   1000x501   bosque de coníferas desde arriba
+  pxhere · dominio público (CC0)
+
+────────────────────────────────────────────────────────────────
+EL TAJO Y EL TELÓN DE «EL QUE SUBE DESDE PUCÓN»
+Bajadas con FotoRadar el 09-09-2026 y procesadas con /api/aplicar.
+
+tajo-01.jpg   2200x1238  bosque de araucarias en la ladera andina
+  pexels · Pexels License · Alexis Leandro Jeria Bocca
+  https://www.pexels.com/es-es/foto/mil-araucarias-14866539/
+  https://images.pexels.com/photos/14866539/pexels-photo-14866539.jpeg
+  original 5184x2916 · recorte 16:9 · consulta
+  «araucaria forest volcano andes chile landscape pixabay»
+
+telb-01.jpg   1400x788   siluetas de araucaria contra el cielo del
+                         crepúsculo
+  pexels · Pexels License · Francesco Ungaro
+  https://www.pexels.com/es-es/foto/silueta-planta-perenne-conifera-24739951/
+  https://images.pexels.com/photos/24739951/pexels-photo-24739951.jpeg
+  original 6240x4160 · recorte 16:9 · consulta
+  «araucaria monkey puzzle tree branches pixabay»
+
+────────────────────────────────────────────────────────────────
+EL MOSAICO — seis piezas, todas de Pexels con Pexels License
+Bajadas con FotoRadar el 09-09-2026.
+
+mos1-01.jpg   1400x787   volcán nevado detrás de un bosque bajo
+  Maximiliano I. Pinilla A.
+  https://www.pexels.com/es-es/foto/montana-rodeada-de-arboles-867943/
+  https://images.pexels.com/photos/867943/pexels-photo-867943.jpeg
+
+mos2-01.jpg   1200x800   rama de araucaria de cerca, hojas escamosas
+  Boys in Bristol Photography
+  https://www.pexels.com/es-es/foto/naturaleza-campo-verano-bosque-5643871/
+  https://images.pexels.com/photos/5643871/pexels-photo-5643871.jpeg
+
+mos3-01.jpg   1200x800   una araucaria sola frente a un volcán nevado
+  Santi Echaire
+  https://www.pexels.com/es-es/foto/volcan-nevado-y-araucarias-en-chile-33606709/
+  https://images.pexels.com/photos/33606709/pexels-photo-33606709.jpeg
+
+mos4-01.jpg   1200x800   follaje de araucaria en sombra, casi negro
+  Francesco Ungaro
+  https://www.pexels.com/es-es/foto/naturaleza-ramas-arbol-verde-12324071/
+  https://images.pexels.com/photos/12324071/pexels-photo-12324071.jpeg
+
+mos5-01.jpg   1200x800   ramas de araucaria contra el cielo, con un
+                         cono cerrado al centro
+  Victor Moragriega
+  https://www.pexels.com/es-es/foto/primer-plano-de-una-rama-de-araucaria-contra-el-cielo-azul-29499151/
+  https://images.pexels.com/photos/29499151/pexels-photo-29499151.jpeg
+
+mos6-01.jpg   1400x788   bosque de araucarias al pie de un cerro
+  claudia elizabeth salas
+  https://www.pexels.com/es-es/foto/paisaje-panoramico-con-araucarias-y-montana-36972253/
+  https://images.pexels.com/photos/36972253/pexels-photo-36972253.jpeg
+
+────────────────────────────────────────────────────────────────
+COMPROBADO ANTES DE PUBLICAR
+
+· Ninguna viene de plus.unsplash.com (que es de pago).
+· En ninguna hay marca de tercero legible, precio, persona
+  identificable ni menor.
+· Las diecisiete (dieciséis fotos y el mapa) están referenciadas en
+  index.html: cero huérfanas. Comprobado el 10-09-2026.
+· Sin video. Es decisión de Yordy: el clip de fondo se reserva para
+  los negocios mejor valorados y éste no está en ese grupo.
 
 ────────────────────────────────────────────────────────────────
 LO QUE FALTA — y es casi todo
 
-1. **Los cuatro platos del glosario**, fotografiados. Piñón, changle,
-   catuto, digüeñe: la página los explica con palabras y una foto de
-   cada uno cerraría el argumento entero.
+1. **Los cinco ingredientes del glosario**, fotografiados. Piñón,
+   merkén, catuto, changle, digüeñe: la página los explica con
+   palabras y una foto de cada uno cerraría el argumento entero.
 2. La fachada y el salón.
 3. **Qué hay esta semana.** Es el dato que ningún competidor publica y
    el que hace volver a la gente.
+
+MAPA DE UBICACION — mapa-01.jpg
+  768 x 768 · zoom 16 · centro -39.3583581, -71.585662
+  Mosaicos de OpenStreetMap pegados en una sola imagen, con el marcador
+  dibujado encima. Datos (c) OpenStreetMap contributors, licencia ODbL:
+  la atribucion tiene que ir VISIBLE junto al mapa, en el pie de la figura.
+  https://www.openstreetmap.org/copyright

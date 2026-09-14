@@ -1,0 +1,22 @@
+FUENTES DE LAS IMAGENES - Centro Médico Veterinario Maquehue Rehecha el 13-09-2026 (presentacion antes que texto). Fotos de REFERENCIA de bancos libres: ninguna es del local; las verdaderas las tiene que mandar el negocio. 
+port-01.jpg  <-  pozo-p-maq-transporte\012.jpg  |  pexels (Pexels License)  |  autor: Leah Newhouse  |  https://www.pexels.com/es-es/foto/gato-siames-con-cono-colar-776374/  |  consulta: "cat carrier"
+hund1-01.jpg  <-  pozo-p-maq-ojos\006.jpg  |  pexels (Pexels License)  |  autor: Adrian Arellano  |  https://www.pexels.com/es-es/foto/perro-mascota-mirando-canino-18352455/  |  consulta: "dog eyes"
+hund2-01.jpg  <-  pozo-p-maq-ojos\008.jpg  |  pexels (Pexels License)  |  autor: PubPro  |  https://www.pexels.com/es-es/foto/adorable-perro-marron-tumbado-en-el-cesped-en-costa-rica-35289637/  |  consulta: "dog eyes"
+hund3-01.jpg  <-  pozo-p-maq-venda\010.jpg  |  pexels (Pexels License)  |  autor: Santiago Sauceda González  |  https://www.pexels.com/es-es/foto/lindo-cachorro-sentado-en-la-cama-en-una-habitacion-acogedora-29736616/  |  consulta: "dog bandage"
+hund4-01.jpg  <-  pozo-p-maq-farmacia\008.jpg  |  pexels (Pexels License)  |  autor: MART  PRODUCTION  |  https://www.pexels.com/es-es/foto/farmacos-medicinas-medicamentos-drogas-7277984/  |  consulta: "medicine pills"
+hund5-01.jpg  <-  pozo-p-maq-alimento\007.jpg  |  pexels (Pexels License)  |  autor: Mathew Coulton  |  https://www.pexels.com/es-es/foto/perro-bol-tazon-cuenco-4432260/  |  consulta: "dog food kibble"
+hund6-01.jpg  <-  pozo-p-maq-venda\011.jpg  |  pexels (Pexels License)  |  autor: Bianca Beltrán  |  https://www.pexels.com/es-es/foto/verano-perro-mascota-sentado-16134441/  |  consulta: "dog bandage"
+banda-01.jpg  <-  pozo-p-maq-alimento\005.jpg  |  pexels (Pexels License)  |  autor: Rafael Rodrigues  |  https://www.pexels.com/es-es/foto/comida-marron-snack-aperitivo-18764141/  |  consulta: "dog food kibble"
+cita-01.jpg  <-  pozo-p-maq-transporte\007.jpg  |  pexels (Pexels License)  |  autor: Eduardo López  |  https://www.pexels.com/es-es/foto/mascotas-cabeza-gatos-juntos-16618547/  |  consulta: "cat carrier"
+mos1-01.jpg  <-  pozo-p-maq-transporte\005.jpg  |  pexels (Pexels License)  |  autor: Thirdman  |  https://www.pexels.com/es-es/foto/mono-gato-adorable-peludo-8942614/  |  consulta: "cat carrier"
+mos2-01.jpg  <-  pozo-p-maq-ojos\003.jpg  |  pexels (Pexels License)  |  autor: German Suarez  |  https://www.pexels.com/es-es/foto/perro-marron-jugueton-relajandose-en-la-hierba-35275684/  |  consulta: "dog eyes"
+mos3-01.jpg  <-  pozo-p-maq-transporte\004.jpg  |  pexels (Pexels License)  |  autor: Jatin  Singh  |  https://www.pexels.com/es-es/foto/animal-mascota-mirando-gato-4065581/  |  consulta: "cat carrier"
+mos4-01.jpg  <-  pozo-p-maq-venda\007.jpg  |  pexels (Pexels License)  |  autor: Kevin Villavicencio Hernandez  |  https://www.pexels.com/es-es/foto/un-perro-tumbado-en-el-suelo-de-un-jardin-18146047/  |  consulta: "dog bandage"
+mos5-01.jpg  <-  pozo-p-maq-ojos\001.jpg  |  pexels (Pexels License)  |  autor: Christopher Welsch Leveroni  |  https://www.pexels.com/es-es/foto/adorable-cocker-spaniel-mirando-hacia-arriba-31115532/  |  consulta: "dog eyes"
+mos6-01.jpg  <-  pozo-p-maq-transporte\003.jpg  |  pexels (Pexels License)  |  autor: Amar  Preciado  |  https://www.pexels.com/es-es/foto/gato-curioso-mirando-a-traves-de-una-cerca-al-aire-libre-29539659/  |  consulta: "cat carrier"
+
+BRUMA (bruma-pag-0N.png y bruma-osc-0N.png, 30x20): las MISMAS fotos, recortadas a 3:2, reducidas y
+recoloreadas con C:\devs\demos\hacer-bruma.ps1 (clara >= 0,68 de luminancia / oscura <= 0,05). No suman fuentes.
+    pagina: port-01.jpg, banda-01.jpg, cita-01.jpg, hund1-01.jpg, hund3-01.jpg, hund5-01.jpg, mos1-01.jpg, mos6-01.jpg   |   oscuras: port-01.jpg, cita-01.jpg, banda-01.jpg
+
+MAPA: iframe de Google Maps (embed publico, sin clave). No hay imagen de mapa.

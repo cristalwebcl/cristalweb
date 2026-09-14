@@ -26,3 +26,10 @@ URL de origen:
 004.jpg | 6240x4160 | Free stock photo of at work, auto mechanic, auto repair, auto ... | https://images.pexels.com/photos/7564874/pexels-photo-7564874.jpeg?cs=srgb&dl=pexels-cottonbro-7564874.jpg&fm=jpg
 005.jpg | 6240x4160 | Car Maintenance Photos, Download The BEST Free Car Maintenance Stock ... | https://images.pexels.com/photos/7564871/pexels-photo-7564871.jpeg?cs=srgb&dl=pexels-cottonbro-7564871.jpg&fm=jpg
 006.jpg | 6144x3456 | Car Mechanic Photos, Download The BEST Free Car Mechanic Stock Photos ... | https://images.pexels.com/photos/8985452/pexels-photo-8985452.jpeg?cs=srgb&dl=pexels-artempodrez-8985452.jpg&fm=jpg
+
+MAPA DE UBICACION — mapa-01.jpg
+  768 x 768 · zoom 14 · centro -38.7358908, -72.590538
+  Mosaicos de OpenStreetMap pegados en una sola imagen, con el marcador
+  dibujado encima. Datos (c) OpenStreetMap contributors, licencia ODbL:
+  la atribucion tiene que ir VISIBLE junto al mapa, en el pie de la figura.
+  https://www.openstreetmap.org/copyright

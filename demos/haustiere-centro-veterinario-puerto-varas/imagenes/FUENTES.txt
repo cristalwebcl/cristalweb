@@ -1,0 +1,155 @@
+FUENTES DEL MATERIAL — Haustiere, centro veterinario, Puerto Varas
+Demo CristalWeb. Ninguna de estas imágenes es de Haustiere: son ambiente
+de rubro, de bancos libres, y se reemplazan en cuanto llegue material
+propio (ver QUE-FOTOS-FALTAN.md).
+
+Una línea por archivo. Formato:
+  archivo · tratamiento · banco · licencia · autor · página · URL original
+
+
+═══ VIDEO ═══════════════════════════════════════════════════════════
+
+video/port.mp4 · fondo de portada · Mixkit · Mixkit Stock Video Free
+  License (uso comercial permitido, sin atribución obligatoria) ·
+  Mixkit ·
+  https://mixkit.co/free-stock-video/a-dog-resting-on-the-grass-next-to-a-dog-toy-1479/
+  · https://assets.mixkit.co/videos/1479/1479-720.mp4
+  Recorte: desde el segundo 1, 10 s, 1280 px de ancho, H.264 a
+  1.000.000 bps, sin pista de audio. Pesa 1,66 MB.
+  Preparado con FotoRadar /api/video/preparar el 08-09-2026.
+  Sin gente, sin marcas legibles.
+
+video/cita.mp4 · fondo de la banda de cita · Mixkit · Mixkit Stock
+  Video Free License (uso comercial permitido, sin atribución
+  obligatoria) · Mixkit ·
+  https://mixkit.co/free-stock-video/little-cats-lying-on-an-armchair-32471/
+  · https://assets.mixkit.co/videos/32471/32471-720.mp4
+  Recorte: desde el segundo 1, 9 s, 1280 px de ancho, H.264 a
+  900.000 bps, sin pista de audio. Pesa 1,11 MB.
+  Preparado con FotoRadar /api/video/preparar el 08-09-2026.
+  Sin gente, sin marcas legibles.
+
+Los dos clips no llevan atributo poster: debajo de cada uno hay un
+<img> hermano que se queda en el DOM para siempre, así que si el clip
+se traba o el navegador bloquea el autoplay nunca aparece un
+rectángulo negro. Ése es el póster, y además es lo que ve quien pidió
+menos movimiento, quien ahorra datos y quien no tiene JavaScript.
+
+
+═══ IMÁGENES NUEVAS (08-09-2026) ════════════════════════════════════
+
+mit-01.jpg · mitades (1600×2050, calidad 84) · Pexels · Pexels License
+  (uso comercial permitido, sin atribución obligatoria) ·
+  Tima Miroshnichenko ·
+  https://www.pexels.com/es-es/foto/blanco-y-negro-hombre-perro-mascota-6235119/
+  · https://images.pexels.com/photos/6235119/pexels-photo-6235119.jpeg
+  Original 3966×5949. Consulta «dog veterinary clinic table».
+  Blanco y negro, sin marca legible y sin precios.
+  RECORTADA el 09-09-2026, y el porqué importa: la versión de 1600×2400
+  que estuvo en la página hasta ese día SÍ mostraba el rostro del
+  veterinario —perfil completo, de la frente al mentón— y este archivo
+  afirmaba lo contrario («cortada a la altura del mentón»). Era falso:
+  se veía la cara entera en la mitad izquierda de la sección. Se
+  quitaron los 350 px de arriba (recorte 0,350,1600,2050), con lo que
+  la cabeza sale de cuadro y quedan el torso, el fonendoscopio y la
+  mano enguantada. El sujeto pasa a ser el perro, que es de lo que
+  habla la sección.
+
+tajo-01.jpg · franja a sangre (2200×1467, calidad 82) · Pexels · Pexels
+  License (uso comercial permitido, sin atribución obligatoria) ·
+  Tima Miroshnichenko ·
+  https://www.pexels.com/es-es/foto/blanco-y-negro-manos-animal-perro-6235655/
+  · https://images.pexels.com/photos/6235655/pexels-photo-6235655.jpeg
+  Original 5275×3517. REEMPLAZA a la foto anterior, que llevaba la
+  palabra VOLUNTEER en letras grandes sobre una polera: se leía entera
+  bajo el titular y prometía un refugio, no un centro veterinario.
+  Ésta no tiene ningún rostro a la vista.
+
+mos5-01.jpg · mosaico 5 (1200×1600, calidad 80) · Pexels · Pexels
+  License (uso comercial permitido, sin atribución obligatoria) ·
+  Nicolas Bertapelle ·
+  https://www.pexels.com/es-es/foto/animal-perro-mascota-mono-13085581/
+  · https://images.pexels.com/photos/13085581/pexels-photo-13085581.jpeg
+  REEMPLAZA a la foto anterior, que era un fotomontaje de ocho animales
+  recortados sobre un fondo amarillo con mariposas: se notaba a un
+  metro y hundía el mosaico entero.
+
+telon-01.jpg · telón al 15 % (1200×800, calidad 62, recorte 3:2) ·
+  Pexels · Pexels License (uso comercial permitido, sin atribución
+  obligatoria) · Tommes Frites ·
+  https://www.pexels.com/es-es/foto/conexion-sincera-interaccion-entre-humanos-y-perros-31331212/
+  · https://images.pexels.com/photos/31331212/pexels-photo-31331212.jpeg
+  Original 4980×7470, blanco y negro. Consulta «dog paw in human hand
+  close up pexels», bajada y aplicada con FotoRadar el 08-09-2026.
+  REEMPLAZA a la foto anterior, que tenía una cara identificable —el
+  archivo de esta carpeta la señalaba como «la primera que se cambia»—.
+  Ésta no tiene ningún rostro, la única marca a la vista es una pulsera
+  de cuentas sin logo, y el sujeto claro sobre fondo oscuro es lo que
+  el telón necesita: masa oscura contra la sección clara.
+  OJO CON LO QUE PASÓ, para que no se repita: el 08-09-2026 esta foto
+  se bajó y se anotó acá, pero FotoRadar la escribió en
+  imagenes/imagenes/telon-01.jpg —una carpeta anidada que creó él— y
+  no en imagenes/telon-01.jpg. La página siguió sirviendo la foto
+  VIEJA, la de la veterinaria de delantal verde con la cara entera a la
+  vista, durante todo ese día, mientras este archivo y
+  QUE-FOTOS-FALTAN.md decían que ya estaba cambiada. Puesta en su sitio
+  y borrada la carpeta anidada el 09-09-2026. Al aplicar una foto con
+  FotoRadar hay que mirar la carpeta, no el mensaje de éxito.
+  Con esta foto, mucho más oscura que la anterior, se volvió a medir el
+  peor caso del texto que va encima: píxel más oscuro de la foto (0)
+  mezclado al 15 % sobre el hueso da #CCCBC7, y el gris secundario
+  #55544D sobre ese fondo da 4,69:1 — sobre el mínimo de 4,5. Por eso
+  la opacidad se queda en .15 y no sube: a .20 el mismo cálculo cae a
+  4,34:1 y pierde AA.
+
+
+═══ IMÁGENES ANTERIORES, SIN PROCEDENCIA ANOTADA ════════════════════
+
+port-01.jpg  · portada, disolución lateral · 2560×1707
+cita-01.jpg  · banda de cita               · 2200×1467
+mos1-01.jpg  · mosaico 1                   · 1200×1800
+mos2-01.jpg  · mosaico 2                   · 1200×1800
+mos3-01.jpg  · mosaico 3                   · 1200×800
+mos4-01.jpg  · mosaico 4                   · 1200×675
+mos6-01.jpg  · mosaico 6                   · 1200×812
+
+FALTA LA PROCEDENCIA DE ESTAS SIETE. Se bajaron el 01-09-2026 al
+construir la primera versión de la demo y no se escribió este archivo
+entonces; la carpeta de búsqueda de FotoRadar tampoco quedó guardada
+(en C:\devs\material\busquedas no hay ninguna carpeta de este negocio,
+y ninguna imagen coincide por tamaño exacto con las que sí quedaron).
+Vinieron de las fuentes libres que usa FotoRadar —pexels, pixabay,
+pxhere y commons—, todas con licencia de uso comercial sin atribución
+obligatoria, pero NO se puede nombrar el banco, el autor ni la página
+de cada una sin volver a buscarlas.
+
+Qué hacer con esto, en orden:
+  1 · Si la demo se va a publicar o a mostrar a Haustiere, rebajar cada
+      una con FotoRadar y anotar la línea completa. Es media hora.
+  2 · Mientras tanto, la demo no se publica.
+  3 · Cuando lleguen las fotos propias del centro, el problema se
+      resuelve solo: estas siete se van.
+
+Un aviso sobre estas siete, anotado al mirarlas:
+  · port-01.jpg tiene un reloj de pulsera cuyo grabado se lee a tamaño
+    original. En la portada queda a 7 % del ancho y no se lee, pero si
+    alguien vuelve a encuadrar la foto hay que mirarlo. Además, la
+    mayoría de las visitas no la ven: encima corre el clip, y la foto
+    queda de base para quien pidió menos movimiento, ahorra datos o no
+    tiene JavaScript.
+  · El aviso de telon-01.jpg —«tiene una cara»— ya no corre: la foto se
+    reemplazó el 08-09-2026 y la nueva está anotada más arriba, con
+    banco, autor, licencia y página.
+
+Anotado el 08-09-2026 por la agente que agregó los videos, la sección
+de mitades, la banda de cifras y las dos fotos de reemplazo.
+Ampliado el mismo día por la agente que subió la demo al estándar
+premium: telón nuevo, sección de los cuatro momentos de la consulta y
+botón flotante de WhatsApp con el número del centro.
+
+MAPA DE UBICACION — mapa-01.jpg
+  768 x 768 · zoom 14 · centro -41.317802, -72.9829073
+  Mosaicos de OpenStreetMap pegados en una sola imagen, con el marcador
+  dibujado encima. Datos (c) OpenStreetMap contributors, licencia ODbL:
+  la atribucion tiene que ir VISIBLE junto al mapa, en el pie de la figura.
+  https://www.openstreetmap.org/copyright

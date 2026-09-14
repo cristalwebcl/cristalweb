@@ -1,0 +1,22 @@
+FUENTES DE LAS IMAGENES - Brand Odontología Rehecha el 13-09-2026 (presentacion antes que texto). Fotos de REFERENCIA de bancos libres: ninguna es del local; las verdaderas las tiene que mandar el negocio. 
+port-01.jpg  <-  pozo-p-brd-flores\011.png  |  pexels (Pexels License)  |  autor: Sami Raad  |  https://www.pexels.com/es-es/foto/elegante-ramo-en-jarron-decorativo-sobre-fondo-oscuro-34137056/  |  consulta: "white flowers vase"
+hund1-01.jpg  <-  pozo-p-brd-bambu\001.jpg  |  pexels (Pexels License)  |  autor: Cristina De Luis  |  https://www.pexels.com/es-es/foto/de-madera-bote-de-cristal-cepillos-de-dientes-productos-de-higiene-5588670/  |  consulta: "bamboo toothbrush"
+hund2-01.jpg  <-  pozo-p-brd-modelo\002.jpg  |  pexels (Pexels License)  |  autor: Gaspar Osorio  |  https://www.pexels.com/es-es/foto/oficina-clinica-doctor-dientes-15771801/  |  consulta: "teeth model"
+hund3-01.jpg  <-  pozo-p-brd-bandeja\001.jpg  |  pexels (Pexels License)  |  autor: https://kaboompics.com/  |  https://www.pexels.com/es-es/foto/chrome-cromo-medico-equipo-6627671/  |  consulta: "dental tools tray"
+hund4-01.jpg  <-  pozo-p-brd-bandeja\007.jpg  |  pexels (Pexels License)  |  autor: https://kaboompics.com/  |  https://www.pexels.com/es-es/foto/tecnologia-maquina-dental-equipo-medico-6627668/  |  consulta: "dental tools tray"
+hund5-01.jpg  <-  pozo-p-brd-ceramica\008.jpg  |  pexels (Pexels License)  |  autor: Shifa Parmar  |  https://www.pexels.com/es-es/foto/jardinera-alegre-con-forma-de-diente-y-vegetacion-29771562/  |  consulta: "mint ceramic"
+hund6-01.jpg  <-  pozo-p-brd-bambu\009.jpg  |  pexels (Pexels License)  |  autor: Pavel Danilyuk  |  https://www.pexels.com/es-es/foto/de-madera-respetuoso-del-medio-ambiente-cepillo-de-dientes-cuidado-dental-7055269/  |  consulta: "bamboo toothbrush"
+banda-01.jpg  <-  pozo-p-brd-espera\008.jpg  |  pexels (Pexels License)  |  autor: wutthichai charoenburi  |  https://www.pexels.com/es-es/foto/muchas-sillas-en-el-edificio-19921278/  |  consulta: "waiting room chairs"
+cita-01.jpg  <-  pozo-p-brd-bambu\006.jpg  |  pexels (Pexels License)  |  autor: Karen Laårk Boshoff  |  https://www.pexels.com/es-es/foto/planta-hojas-de-madera-cepillo-de-dientes-8842704/  |  consulta: "bamboo toothbrush"
+mos1-01.jpg  <-  pozo-p-brd-flores\006.jpg  |  pexels (Pexels License)  |  autor: https://kaboompics.com/  |  https://www.pexels.com/es-es/foto/flores-blanco-habitacion-decoracion-4464208/  |  consulta: "white flowers vase"
+mos2-01.jpg  <-  pozo-p-brd-espera\010.jpg  |  pexels (Pexels License)  |  autor: Jan van der Wolf  |  https://www.pexels.com/es-es/foto/diseno-sillas-interior-corredor-9259472/  |  consulta: "waiting room chairs"
+mos3-01.jpg  <-  pozo-p-brd-flores\009.jpg  |  pexels (Pexels License)  |  autor: Muhtelifane  |  https://www.pexels.com/es-es/foto/primer-plano-de-crisantemos-blancos-con-luz-suave-38928245/  |  consulta: "white flowers vase"
+mos4-01.jpg  <-  pozo-p-brd-bambu\003.jpg  |  pexels (Pexels License)  |  autor: Cristina De Luis  |  https://www.pexels.com/es-es/foto/de-madera-planta-en-maceta-bote-de-cristal-cepillos-de-dientes-5588667/  |  consulta: "bamboo toothbrush"
+mos5-01.jpg  <-  pozo-p-brd-bandeja\004.jpg  |  pexels (Pexels License)  |  autor: https://kaboompics.com/  |  https://www.pexels.com/es-es/foto/dental-espejo-bucal-instrumentos-medicos-bandeja-de-plata-6627669/  |  consulta: "dental tools tray"
+mos6-01.jpg  <-  pozo-p-brd-flores\012.jpg  |  pexels (Pexels License)  |  autor: Suki Lee  |  https://www.pexels.com/es-es/foto/flores-mesa-florero-planta-decorativa-12806779/  |  consulta: "white flowers vase"
+
+BRUMA (bruma-pag-0N.png y bruma-osc-0N.png, 30x20): las MISMAS fotos, recortadas a 3:2, reducidas y
+recoloreadas con C:\devs\demos\hacer-bruma.ps1 (clara >= 0,68 de luminancia / oscura <= 0,05). No suman fuentes.
+    pagina: port-01.jpg, banda-01.jpg, cita-01.jpg, hund1-01.jpg, hund5-01.jpg, mos1-01.jpg, mos3-01.jpg, mos6-01.jpg   |   oscuras: port-01.jpg, cita-01.jpg, banda-01.jpg
+
+MAPA: iframe de Google Maps (embed publico, sin clave). No hay imagen de mapa.

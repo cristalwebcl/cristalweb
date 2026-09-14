@@ -1,0 +1,22 @@
+FUENTES DE LAS IMAGENES - Taller R.B.M. Rehecha el 13-09-2026 (presentacion antes que texto). Fotos de REFERENCIA de bancos libres: ninguna es del local; las verdaderas las tiene que mandar el negocio. 
+port-01.jpg  <-  pozo-p-rbm-camioneta\005.jpg  |  pexels (Pexels License)  |  autor: Heber Vazquez  |  https://www.pexels.com/es-es/foto/camino-rural-en-santa-maria-atarasquillo-mexico-29978162/  |  consulta: "pickup truck dirt road"
+hund1-01.jpg  <-  pozo-p-rbm-camioneta\007.jpg  |  pexels (Pexels License)  |  autor: Miguel González  |  https://www.pexels.com/es-es/foto/camioneta-vintage-en-carretera-rural-al-atardecer-en-mexico-33703931/  |  consulta: "pickup truck dirt road"
+hund2-01.jpg  <-  pozo-p-rbm-odometro\008.jpg  |  pexels (Pexels License)  |  autor: Mike Bird  |  https://www.pexels.com/es-es/foto/coche-monitor-mostrar-exhibicion-7290409/  |  consulta: "odometer dashboard"
+hund3-01.jpg  <-  pozo-p-rbm-filtro\007.jpg  |  pexels (Pexels License)  |  autor: Benjamin Walsham  |  https://www.pexels.com/es-es/foto/automotor-filtro-de-aire-tiro-vertical-toma-de-aire-11074558/  |  consulta: "oil filter"
+hund4-01.jpg  <-  pozo-p-rbm-freno\009.jpg  |  pexels (Pexels License)  |  autor: agustin olmedo  |  https://www.pexels.com/es-es/foto/mantenimiento-de-frenos-de-automoviles-en-taller-30470930/  |  consulta: "car brake disc"
+hund5-01.jpg  <-  pozo-p-rbm-odometro\012.jpg  |  pexels (Pexels License)  |  autor: Markus Spiske  |  https://www.pexels.com/es-es/foto/tablero-tablero-de-mandos-salpicadero-velocimetro-226457/  |  consulta: "odometer dashboard"
+hund6-01.jpg  <-  pozo-p-rbm-taller\001.jpg  |  pexels (Pexels License)  |  autor: Miguel Á. Padriñán  |  https://www.pexels.com/es-es/foto/blanco-y-negro-pared-muro-estante-16679588/  |  consulta: "mechanic garage workshop"
+banda-01.jpg  <-  pozo-p-rbm-barro\011.jpg  |  pexels (Pexels License)  |  autor: Daniel Maldonado  |  https://www.pexels.com/es-es/foto/sucio-bosque-metal-roto-4573307/  |  consulta: "tire mud offroad"
+cita-01.jpg  <-  pozo-p-rbm-taller\010.jpg  |  pexels (Pexels License)  |  autor: Paco DP  |  https://www.pexels.com/es-es/foto/taller-de-coches-rusticos-con-herramientas-y-maquinaria-34337558/  |  consulta: "mechanic garage workshop"
+mos1-01.jpg  <-  pozo-p-rbm-barro\004.jpg  |  pexels (Pexels License)  |  autor: Wallace Silva  |  https://www.pexels.com/es-es/foto/sucio-coche-neumatico-cansar-14508845/  |  consulta: "tire mud offroad"
+mos2-01.jpg  <-  pozo-p-rbm-taller\008.jpg  |  pexels (Pexels License)  |  autor: Miguel Á. Padriñán  |  https://www.pexels.com/es-es/foto/metal-herramientas-taller-coleccion-16679649/  |  consulta: "mechanic garage workshop"
+mos3-01.jpg  <-  pozo-p-rbm-camioneta\010.jpg  |  pexels (Pexels License)  |  autor: rtb3_photography  |  https://www.pexels.com/es-es/foto/carretera-arboles-coche-vehiculo-21633632/  |  consulta: "pickup truck dirt road"
+mos4-01.jpg  <-  pozo-p-rbm-freno\005.jpg  |  pexels (Pexels License)  |  autor: Jae Park  |  https://www.pexels.com/es-es/foto/metal-roto-coche-vehiculo-4022545/  |  consulta: "car brake disc"
+mos5-01.jpg  <-  pozo-p-rbm-taller\007.jpg  |  pexels (Pexels License)  |  autor: Miguel Á. Padriñán  |  https://www.pexels.com/es-es/foto/blanco-y-negro-metal-cadena-herramientas-16679583/  |  consulta: "mechanic garage workshop"
+mos6-01.jpg  <-  pozo-p-rbm-barro\007.jpg  |  pexels (Pexels License)  |  autor: Roger Brown  |  https://www.pexels.com/es-es/foto/neumatico-cansar-barro-fuera-del-camino-7875982/  |  consulta: "tire mud offroad"
+
+BRUMA (bruma-pag-0N.png y bruma-osc-0N.png, 30x20): las MISMAS fotos, recortadas a 3:2, reducidas y
+recoloreadas con C:\devs\demos\hacer-bruma.ps1 (clara >= 0,68 de luminancia / oscura <= 0,05). No suman fuentes.
+    pagina: port-01.jpg, hund1-01.jpg, mos1-01.jpg, mos3-01.jpg, cita-01.jpg   |   oscuras: banda-01.jpg, hund4-01.jpg, cita-01.jpg
+
+MAPA: iframe de Google Maps (embed publico, sin clave). No hay imagen de mapa.

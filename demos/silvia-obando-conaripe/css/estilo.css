@@ -777,3 +777,61 @@ a { color: var(--hort-txt); }
 @media (prefers-reduced-motion: reduce) {
   .js .mos__p { opacity: 1; transform: none; }
 }
+
+/* ── MAPA DE UBICACION ──────────────────────────────────────────────
+   Imagen propia con mosaicos de OpenStreetMap pegados: la CSP prohibe
+   pedir nada a un tercero, asi que un iframe de Google Maps quedaria en
+   blanco SIN dar un solo error. El "Como llegar" si es un enlace, y un
+   enlace no lo bloquea nada.
+   Los colores salen de currentColor a proposito: asi el bloque se adapta
+   a la paleta de cada demo sin conocerla y sin chocar con ella.
+   La atribucion a OpenStreetMap la exige su licencia (ODbL). */
+.mapa-sec { padding: clamp(2.5rem, 6vw, 4.5rem) 0; }
+.mapa { margin: 1.4rem 0 0; border: 1px solid; border-color: color-mix(in srgb, currentColor 22%, transparent); border-radius: 10px; overflow: hidden; }
+@supports not (color: color-mix(in srgb, red 50%, blue)) { .mapa { border-color: rgba(128, 128, 128, .35); } }
+.mapa img { display: block; width: 100%; height: auto; aspect-ratio: 16 / 10; object-fit: cover; }
+.mapa__pie {
+  display: flex; flex-wrap: wrap; align-items: center; gap: .4rem 1rem;
+  padding: .75rem .9rem;
+  font-size: .86em; line-height: 1.45;
+  border-top: 1px solid; border-top-color: color-mix(in srgb, currentColor 22%, transparent);
+}
+@supports not (color: color-mix(in srgb, red 50%, blue)) { .mapa__pie { border-top-color: rgba(128, 128, 128, .35); } }
+.mapa__pie b { font-weight: 700; }
+.mapa__ir { color: inherit; font-weight: 700; text-decoration: underline; min-height: 44px; display: inline-flex; align-items: center; }
+.mapa__cred { width: 100%; font-size: .84em; opacity: .8; }
+.mapa__cred a { color: inherit; }
+/* ── BOTON FLOTANTE DE CONTACTO ─────────────────────────────────────
+   56 px de alto, por encima del minimo tactil de 44. Los colores de
+   marca van a proposito: se reconocen sin leerlos, y eso es lo que hace
+   que se toquen. Se ve SIEMPRE por defecto; el JS solo lo aparta sobre
+   la portada. Al reves, un fallo del script se llevaria el CTA principal. */
+.flota {
+  position: fixed;
+  right: max(1rem, env(safe-area-inset-right, 0px));
+  bottom: max(1rem, env(safe-area-inset-bottom, 0px));
+  z-index: 60;
+  display: inline-flex; align-items: center; gap: .55rem;
+  height: 56px; padding: 0 1.15rem 0 1rem;
+  border-radius: 999px;
+  text-decoration: none;
+  font-family: var(--cuerpo, system-ui, sans-serif);
+  font-size: .95rem; font-weight: 700; line-height: 1;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, .26), 0 2px 6px rgba(0, 0, 0, .16);
+  transition: opacity .28s ease, transform .28s ease, box-shadow .18s ease;
+}
+.flota--wa { background: #25D366; color: #07310F; }
+.flota--ig { background: linear-gradient(120deg, #F9CE34 4%, #EE2A7B 48%, #6228D7 96%); color: #FFFFFF; }
+.flota__i { width: 26px; height: 26px; fill: currentColor; flex: none; }
+.flota:hover, .flota:focus-visible { transform: translateY(-2px); box-shadow: 0 10px 26px rgba(0, 0, 0, .3); }
+.js .flota--arriba { opacity: 0; transform: translateY(14px) scale(.94); pointer-events: none; }
+
+@media (max-width: 520px) {
+  .flota { width: 56px; padding: 0; justify-content: center; }
+  .flota__t { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .flota { transition: opacity .28s ease; }
+  .flota:hover, .flota:focus-visible { transform: none; }
+  .js .flota--arriba { transform: none; }
+}

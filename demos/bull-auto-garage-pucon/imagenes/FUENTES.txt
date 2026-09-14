@@ -1,0 +1,22 @@
+FUENTES DE LAS IMAGENES - Bull Auto Garage Rehecha el 13-09-2026 (presentacion antes que texto). Fotos de REFERENCIA de bancos libres: ninguna es del local; las verdaderas las tiene que mandar el negocio. 
+port-01.jpg  <-  pozo-p-bull-elevador\009.jpg  |  pexels (Pexels License)  |  autor: Margarita K  |  https://www.pexels.com/es-es/foto/garaje-vintage-en-bangkok-con-camion-clasico-35981310/  |  consulta: "car lift garage"
+hund1-01.jpg  <-  pozo-p-bull-banda\002.jpg  |  pexels (Pexels License)  |  autor: cottonbro studio  |  https://www.pexels.com/es-es/foto/modelo-estampado-textura-detalles-7019611/  |  consulta: "tire tread"
+hund2-01.jpg  <-  pozo-p-bull-costado\010.jpg  |  pexels (Pexels License)  |  autor: Erik Mclean  |  https://www.pexels.com/es-es/foto/acercamiento-del-neumatico-bridgestone-en-vehiculo-34357283/  |  consulta: "tire sidewall"
+hund3-01.jpg  <-  pozo-p-bull-aceite\003.jpg  |  pexels (Pexels License)  |  autor: cottonbro studio  |  https://www.pexels.com/es-es/foto/motor-cubrir-cubierta-tiro-vertical-7541352/  |  consulta: "motor oil"
+hund4-01.jpg  <-  pozo-p-bull-bateria\002.jpg  |  pexels (Pexels License)  |  autor: Ayyeee Ayyeee  |  https://www.pexels.com/es-es/foto/primer-plano-de-la-bateria-de-un-coche-electrico-en-el-compartimento-del-motor-37177072/  |  consulta: "car battery"
+hund5-01.jpg  <-  pozo-p-bull-freno\007.jpg  |  pexels (Pexels License)  |  autor: agustin olmedo  |  https://www.pexels.com/es-es/foto/mantenimiento-de-frenos-de-automoviles-en-taller-30470930/  |  consulta: "brake disc"
+hund6-01.jpg  <-  pozo-p-bull-elevador\010.jpg  |  pexels (Pexels License)  |  autor: Artem Podrez  |  https://www.pexels.com/es-es/foto/hombre-coche-vehiculo-tienda-8985667/  |  consulta: "car lift garage"
+banda-01.jpg  <-  pozo-p-bull-pila\007.jpg  |  pexels (Pexels License)  |  autor: wal_ 172619  |  https://www.pexels.com/es-es/foto/neumaticos-de-vehiculos-apilados-en-blanco-y-negro-37002235/  |  consulta: "tire stack"
+cita-01.jpg  <-  pozo-p-bull-taller\003.jpg  |  pexels (Pexels License)  |  autor: Miguel Á. Padriñán  |  https://www.pexels.com/es-es/foto/blanco-y-negro-pared-muro-estante-16679588/  |  consulta: "mechanic tools garage"
+mos1-01.jpg  <-  pozo-p-bull-pila\008.jpg  |  pexels (Pexels License)  |  autor: wal_ 172619  |  https://www.pexels.com/es-es/foto/acumulacion-de-neumaticos-para-uso-industrial-36353556/  |  consulta: "tire stack"
+mos2-01.jpg  <-  pozo-p-bull-bateria\003.jpg  |  pexels (Pexels License)  |  autor: Ayyeee Ayyeee  |  https://www.pexels.com/es-es/foto/acercamiento-a-la-bateria-del-coche-en-el-compartimento-del-motor-37177070/  |  consulta: "car battery"
+mos3-01.jpg  <-  pozo-p-bull-freno\010.jpg  |  pexels (Pexels License)  |  autor: Peter Dyllong  |  https://www.pexels.com/es-es/foto/discos-de-freno-oxidados-en-primer-plano-abstracto-36223794/  |  consulta: "brake disc"
+mos4-01.jpg  <-  pozo-p-bull-taller\001.jpg  |  pexels (Pexels License)  |  autor: Miguel Á. Padriñán  |  https://www.pexels.com/es-es/foto/blanco-y-negro-oscuro-fila-hilera-16679582/  |  consulta: "mechanic tools garage"
+mos5-01.jpg  <-  pozo-p-bull-pila\004.jpg  |  pexels (Pexels License)  |  autor: Budget Bizar  |  https://www.pexels.com/es-es/foto/apilar-pila-monton-ruedas-15830756/  |  consulta: "tire stack"
+mos6-01.jpg  <-  pozo-p-bull-taller\012.jpg  |  pexels (Pexels License)  |  autor: Miguel Á. Padriñán  |  https://www.pexels.com/es-es/foto/blanco-y-negro-metal-vintage-tecnologia-16679541/  |  consulta: "mechanic tools garage"
+
+BRUMA (bruma-pag-0N.png y bruma-osc-0N.png, 30x20): las MISMAS fotos, recortadas a 3:2, reducidas y
+recoloreadas con C:\devs\demos\hacer-bruma.ps1 (clara >= 0,68 de luminancia / oscura <= 0,05). No suman fuentes.
+    pagina: port-01.jpg, banda-01.jpg, cita-01.jpg, hund1-01.jpg, hund4-01.jpg, mos4-01.jpg, mos6-01.jpg, hund6-01.jpg   |   oscuras: port-01.jpg, hund4-01.jpg, mos3-01.jpg
+
+MAPA: iframe de Google Maps (embed publico, sin clave). No hay imagen de mapa.

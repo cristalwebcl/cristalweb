@@ -20,3 +20,10 @@ URL de origen:
 003.jpg | 3918x5877 | Orthodontic Braces Adjustment Before And After Photos, Download The ... | https://images.pexels.com/photos/5524023/pexels-photo-5524023.jpeg?cs=srgb&dl=pexels-anna-avilova-1441580-5524023.jpg&fm=jpg
 004.jpg | 3840x5760 | Orthodontic Photos, Download The BEST Free Orthodontic Stock Photos ... | https://images.pexels.com/photos/6311668/pexels-photo-6311668.jpeg?cs=srgb&dl=pexels-monstera-production-6311668.jpg&fm=jpg
 005.jpg | 3264x4928 | Orthodontic Braces Model Photos, Download The BEST Free Orthodontic ... | https://images.pexels.com/photos/17011437/pexels-photo-17011437.jpeg?cs=srgb&dl=pexels-carla-schizzi-17011437.jpg&fm=jpg
+
+MAPA DE UBICACION — mapa-01.jpg
+  768 x 768 · zoom 14 · centro -39.2780911, -72.2274364
+  Mosaicos de OpenStreetMap pegados en una sola imagen, con el marcador
+  dibujado encima. Datos (c) OpenStreetMap contributors, licencia ODbL:
+  la atribucion tiene que ir VISIBLE junto al mapa, en el pie de la figura.
+  https://www.openstreetmap.org/copyright

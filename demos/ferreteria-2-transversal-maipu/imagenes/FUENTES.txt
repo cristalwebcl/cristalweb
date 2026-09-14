@@ -1,0 +1,22 @@
+FUENTES DE LAS IMAGENES - 2 Transversal Rehecha el 13-09-2026 (presentacion antes que texto). Fotos de REFERENCIA de bancos libres: ninguna es del local; las verdaderas las tiene que mandar el negocio. 
+port-01.jpg  <-  pozo-p-tra-malla\006.jpg  |  pexels (Pexels License)  |  autor: Алексей Веретенников  |  https://www.pexels.com/es-es/foto/ciudad-construccion-industria-abstracto-17548774/  |  consulta: "green safety net scaffolding"
+hund1-01.jpg  <-  pozo-p-tra-arido\010.jpg  |  pexels (Pexels License)  |  autor: Betül Koyuncu  |  https://www.pexels.com/es-es/foto/carretera-montanas-naturaleza-rocas-9943715/  |  consulta: "gravel sand pile"
+hund2-01.jpg  <-  pozo-p-tra-ladrillo\005.jpg  |  pexels (Pexels License)  |  autor: Shantum Singh  |  https://www.pexels.com/es-es/foto/pared-muro-apilar-pila-20204115/  |  consulta: "bricks stack"
+hund3-01.jpg  <-  pozo-p-tra-tablero\002.jpg  |  pexels (Pexels License)  |  autor: cottonbro studio  |  https://www.pexels.com/es-es/foto/tablon-de-madera-marron-en-fotografia-de-primer-plano-7479035/  |  consulta: "plywood boards"
+hund4-01.jpg  <-  pozo-p-tra-betonera\004.jpg  |  pexels (Pexels License)  |  autor: Rodolfo Gaion  |  https://www.pexels.com/es-es/foto/hormigonera-en-blanco-y-negro-en-una-obra-de-construccion-29735764/  |  consulta: "concrete mixer"
+hund5-01.jpg  <-  pozo-p-tra-cemento\012.jpg  |  pexels (Pexels License)  |  autor: Javid Hashimov  |  https://www.pexels.com/es-es/foto/sacos-de-arena-apilados-para-proteccion-contra-inundaciones-35972270/  |  consulta: "cement bags stack"
+hund6-01.jpg  <-  pozo-p-tra-huincha\009.jpg  |  pexels (Pexels License)  |  autor: Christina & Peter  |  https://www.pexels.com/es-es/foto/primer-plano-de-una-cinta-metrica-en-una-obra-de-construccion-30413398/  |  consulta: "measuring tape construction"
+banda-01.jpg  <-  pozo-p-tra-arido\012.jpg  |  pexels (Pexels License)  |  autor: Brett Sayles  |  https://www.pexels.com/es-es/foto/cielo-montana-al-aire-libre-suelo-9060032/  |  consulta: "gravel sand pile"
+cita-01.jpg  <-  pozo-p-tra-cemento\008.jpg  |  pexels (Pexels License)  |  autor: Konstantin Mishchenko  |  https://www.pexels.com/es-es/foto/apilar-pila-monton-monocromo-9348645/  |  consulta: "cement bags stack"
+mos1-01.jpg  <-  pozo-p-tra-malla\004.jpg  |  pexels (Pexels License)  |  autor: Lana Kravchenko  |  https://www.pexels.com/es-es/foto/azul-modelo-estampado-textura-12686811/  |  consulta: "green safety net scaffolding"
+mos2-01.jpg  <-  pozo-p-tra-ladrillo\012.jpg  |  pexels (Pexels License)  |  autor: Al Rashed  |  https://www.pexels.com/es-es/foto/ladrillos-rojos-apilados-en-bangladesh-33617858/  |  consulta: "bricks stack"
+mos3-01.jpg  <-  pozo-p-tra-arido\004.jpg  |  pexels (Pexels License)  |  autor: Murat Ak  |  https://www.pexels.com/es-es/foto/colina-de-grava-bajo-un-cielo-azul-claro-33216432/  |  consulta: "gravel sand pile"
+mos4-01.jpg  <-  pozo-p-tra-tablero\003.jpg  |  pexels (Pexels License)  |  autor: cottonbro studio  |  https://www.pexels.com/es-es/foto/madera-escritorio-de-madera-oficio-5089123/  |  consulta: "plywood boards"
+mos5-01.jpg  <-  pozo-p-tra-ladrillo\007.jpg  |  pexels (Pexels License)  |  autor: Peter Dyllong  |  https://www.pexels.com/es-es/foto/pila-de-bloques-de-hormigon-en-entorno-exterior-36519003/  |  consulta: "bricks stack"
+mos6-01.jpg  <-  pozo-p-tra-betonera\002.jpg  |  pexels (Pexels License)  |  autor: Lucas Pezeta  |  https://www.pexels.com/es-es/foto/mezclador-de-cemento-naranja-2333694/  |  consulta: "concrete mixer"
+
+BRUMA (bruma-pag-0N.png y bruma-osc-0N.png, 30x20): las MISMAS fotos, recortadas a 3:2, reducidas y
+recoloreadas con C:\devs\demos\hacer-bruma.ps1 (clara >= 0,68 de luminancia / oscura <= 0,05). No suman fuentes.
+    pagina: port-01.jpg, banda-01.jpg, mos1-01.jpg, hund2-01.jpg, mos6-01.jpg   |   oscuras: port-01.jpg, cita-01.jpg, mos1-01.jpg
+
+MAPA: iframe de Google Maps (embed publico, sin clave). No hay imagen de mapa.

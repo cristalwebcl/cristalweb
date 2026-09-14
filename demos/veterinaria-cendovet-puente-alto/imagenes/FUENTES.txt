@@ -1,0 +1,22 @@
+FUENTES DE LAS IMAGENES - Cendovet Rehecha el 13-09-2026 (presentacion antes que texto). Fotos de REFERENCIA de bancos libres: ninguna es del local; las verdaderas las tiene que mandar el negocio. 
+port-01.jpg  <-  pozo-p-cendo-tijera\004.jpg  |  pexels (Pexels License)  |  autor: Den Romi McRod  |  https://www.pexels.com/es-es/foto/perro-mascota-cabeza-fondo-de-pantalla-16069000/  |  consulta: "dog grooming scissors"
+hund1-01.jpg  <-  pozo-p-cendo-tijera\009.jpg  |  pexels (Pexels License)  |  autor: Christopher Welsch Leveroni  |  https://www.pexels.com/es-es/foto/lindo-perro-cocker-spaniel-de-pie-sobre-sus-patas-traseras-31115675/  |  consulta: "dog grooming scissors"
+hund2-01.jpg  <-  pozo-p-cendo-unas\011.jpg  |  pexels (Pexels License)  |  autor: Eduardo López  |  https://www.pexels.com/es-es/foto/cachorro-sentado-sobre-fondo-negro-16618517/  |  consulta: "dog paw nails"
+hund3-01.jpg  <-  pozo-p-cendo-pelolargo\004.jpg  |  pexels (Pexels License)  |  autor: Jhonny Estrada  |  https://www.pexels.com/es-es/foto/adorable-perro-peludo-en-la-calle-en-colombia-32789791/  |  consulta: "fluffy dog"
+hund4-01.jpg  <-  pozo-p-cendo-gato\003.jpg  |  pexels (Pexels License)  |  autor: cottonbro studio  |  https://www.pexels.com/es-es/foto/persona-manos-animal-mascota-6865159/  |  consulta: "cat grooming"
+hund5-01.jpg  <-  pozo-p-cendo-toalla\003.jpg  |  pexels (Pexels License)  |  autor: Mike Art 🎥 Visual Creator | Photography and Video 📸  |  https://www.pexels.com/es-es/foto/un-jack-russell-terrier-disfrutando-de-un-bano-en-la-playa-39031873/  |  consulta: "dog towel wet"
+hund6-01.jpg  <-  pozo-p-cendo-cepillo\004.jpg  |  pexels (Pexels License)  |  autor: Yaroslav Shuraev  |  https://www.pexels.com/es-es/foto/perro-mascota-sentado-adentro-8498543/  |  consulta: "dog brush fur"
+banda-01.jpg  <-  pozo-p-cendo-pelolargo\007.jpg  |  pexels (Pexels License)  |  autor: Camilo Laverde  |  https://www.pexels.com/es-es/foto/samoyedo-20710746/  |  consulta: "fluffy dog"
+cita-01.jpg  <-  pozo-p-cendo-gato\001.jpg  |  pexels (Pexels License)  |  autor: luian C  |  https://www.pexels.com/es-es/foto/elegante-retrato-de-un-gato-atigrado-esponjoso-39497325/  |  consulta: "cat grooming"
+mos1-01.jpg  <-  pozo-p-cendo-gato\010.jpg  |  pexels (Pexels License)  |  autor: Nadine Giza  |  https://www.pexels.com/es-es/foto/hermoso-retrato-de-gato-ragdoll-7057542/  |  consulta: "cat grooming"
+mos2-01.jpg  <-  pozo-p-cendo-pelocorto\008.jpg  |  pexels (Pexels License)  |  autor: Jorge Zaldívar Marroquín  |  https://www.pexels.com/es-es/foto/animal-perro-mascota-adorable-13071480/  |  consulta: "short hair dog"
+mos3-01.jpg  <-  pozo-p-cendo-pelolargo\006.jpg  |  pexels (Pexels License)  |  autor: tiago alves  |  https://www.pexels.com/es-es/foto/playa-arena-animal-perro-19367464/  |  consulta: "fluffy dog"
+mos4-01.jpg  <-  pozo-p-cendo-bano\002.jpg  |  pexels (Pexels License)  |  autor: Mike Art 🎥 Visual Creator | Photography and Video 📸  |  https://www.pexels.com/es-es/foto/border-collie-jugando-en-el-agua-en-un-dia-soleado-38420671/  |  consulta: "dog bath grooming"
+mos5-01.jpg  <-  pozo-p-cendo-gato\004.jpg  |  pexels (Pexels License)  |  autor: Viktorya  Sergeeva 🫂  |  https://www.pexels.com/es-es/foto/animal-adorable-domestico-nacional-14660913/  |  consulta: "cat grooming"
+mos6-01.jpg  <-  pozo-p-cendo-tijera\011.jpg  |  pexels (Pexels License)  |  autor: Sergio Arteaga  |  https://www.pexels.com/es-es/foto/mar-naturaleza-soleado-playa-17696773/  |  consulta: "dog grooming scissors"
+
+BRUMA (bruma-pag-0N.png y bruma-osc-0N.png, 30x20): las MISMAS fotos, recortadas a 3:2, reducidas y
+recoloreadas con C:\devs\demos\hacer-bruma.ps1 (clara >= 0,68 de luminancia / oscura <= 0,05). No suman fuentes.
+    pagina: cita-01.jpg, mos1-01.jpg, mos2-01.jpg, hund2-01.jpg, hund4-01.jpg   |   oscuras: cita-01.jpg, mos2-01.jpg, hund2-01.jpg
+
+MAPA: iframe de Google Maps (embed publico, sin clave). No hay imagen de mapa.

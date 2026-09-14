@@ -1,0 +1,22 @@
+FUENTES DE LAS IMAGENES - Pasteleria Clarita Rehecha el 13-09-2026 (presentacion antes que texto). Fotos de REFERENCIA de bancos libres: ninguna es del local; las verdaderas las tiene que mandar el negocio. 
+port-01.jpg  <-  pozo-p-cla-crema\004.jpg  |  pexels (Pexels License)  |  autor: Los Muertos Crew  |  https://www.pexels.com/es-es/foto/sujetando-horneando-pastel-glaseado-8478055/  |  consulta: "cream cake decorating"
+hund1-01.jpg  <-  pozo-p-cla-tresleches\010.jpg  |  pexels (Pexels License)  |  autor: Nano Erdozain  |  https://www.pexels.com/es-es/foto/deliciosa-rebanada-de-pastel-tres-leches-32590852/  |  consulta: "tres leches cake"
+hund2-01.jpg  <-  pozo-p-cla-empanadas\005.jpg  |  pexels (Pexels License)  |  autor: Daniel Torobekov  |  https://www.pexels.com/es-es/foto/comida-delicioso-sabroso-nam-13689919/  |  consulta: "empanadas"
+hund3-01.jpg  <-  pozo-p-cla-vitrina\012.jpg  |  pexels (Pexels License)  |  autor: Shameel mukkath  |  https://www.pexels.com/es-es/foto/dulces-golosinas-chucherias-chuches-5112588/  |  consulta: "pastry shop display"
+hund4-01.jpg  <-  pozo-p-cla-pan\007.jpg  |  pexels (Pexels License)  |  autor: José Antonio Otegui Auzmendi  |  https://www.pexels.com/es-es/foto/pan-artesanal-surtido-en-canasta-rustica-31923103/  |  consulta: "bakery bread basket"
+hund5-01.jpg  <-  pozo-p-cla-cumple\005.jpg  |  pexels (Pexels License)  |  autor: Ivan S  |  https://www.pexels.com/es-es/foto/comida-postre-pastel-dulces-9627799/  |  consulta: "birthday cake"
+hund6-01.jpg  <-  pozo-p-cla-cafe\010.jpg  |  pexels (Pexels License)  |  autor: AS Photography  |  https://www.pexels.com/es-es/foto/taza-de-ceramica-blanca-llena-de-liquido-negro-al-lado-de-pan-horneado-en-platillo-de-ceramica-95839/  |  consulta: "coffee and cake"
+banda-01.jpg  <-  pozo-p-cla-vitrina\006.jpg  |  pexels (Pexels License)  |  autor: Mâide Arslan  |  https://www.pexels.com/es-es/foto/comida-azucar-panaderia-dulce-19652500/  |  consulta: "pastry shop display"
+cita-01.jpg  <-  pozo-p-cla-cafe\011.jpg  |  pexels (Pexels License)  |  autor: Vinícius Vieira ft  |  https://www.pexels.com/es-es/foto/cafe-y-rebanada-de-pastel-sobre-la-mesa-22608544/  |  consulta: "coffee and cake"
+mos1-01.jpg  <-  pozo-p-cla-crema\001.jpg  |  pexels (Pexels License)  |  autor: Los Muertos Crew  |  https://www.pexels.com/es-es/foto/mano-postre-pastel-dulces-8478181/  |  consulta: "cream cake decorating"
+mos2-01.jpg  <-  pozo-p-cla-empanadas\009.jpg  |  pexels (Pexels License)  |  autor: Ani Coloca  |  https://www.pexels.com/es-es/foto/empanadas-caseras-en-pizarra-36898430/  |  consulta: "empanadas"
+mos3-01.jpg  <-  pozo-p-cla-pan\012.jpg  |  pexels (Pexels License)  |  autor: Christina & Peter  |  https://www.pexels.com/es-es/foto/panecillos-variados-en-una-cesta-30680004/  |  consulta: "bakery bread basket"
+mos4-01.jpg  <-  pozo-p-cla-corte\011.jpg  |  pexels (Pexels License)  |  autor: ROMAN ODINTSOV  |  https://www.pexels.com/es-es/foto/comida-ligero-restaurante-cafeteria-4553118/  |  consulta: "cake slice layers"
+mos5-01.jpg  <-  pozo-p-cla-vitrina\009.jpg  |  pexels (Pexels License)  |  autor: Ann H  |  https://www.pexels.com/es-es/foto/exhibicion-de-reposteria-francesa-en-la-panaderia-de-evian-les-bains-33034727/  |  consulta: "pastry shop display"
+mos6-01.jpg  <-  pozo-p-cla-cafe\012.jpg  |  pexels (Pexels License)  |  autor: Sofía  Falco  |  https://www.pexels.com/es-es/foto/deliciosa-variedad-de-postres-gourmet-32318142/  |  consulta: "coffee and cake"
+
+BRUMA (bruma-pag-0N.png y bruma-osc-0N.png, 30x20): las MISMAS fotos, recortadas a 3:2, reducidas y
+recoloreadas con C:\devs\demos\hacer-bruma.ps1 (clara >= 0,68 de luminancia / oscura <= 0,05). No suman fuentes.
+    pagina: port-01.jpg, cita-01.jpg, hund1-01.jpg, hund4-01.jpg, hund6-01.jpg, mos3-01.jpg, mos4-01.jpg, banda-01.jpg   |   oscuras: banda-01.jpg, cita-01.jpg, hund4-01.jpg
+
+MAPA: iframe de Google Maps (embed publico, sin clave). No hay imagen de mapa.

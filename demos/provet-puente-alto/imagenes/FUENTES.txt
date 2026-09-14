@@ -1,0 +1,22 @@
+FUENTES DE LAS IMAGENES - Provet Rehecha el 14-09-2026 (presentacion antes que texto). Fotos de REFERENCIA de bancos libres: ninguna es del local; las verdaderas las tiene que mandar el negocio. 
+port-01.jpg  <-  pozo-p-pv-reloj\010.jpg  |  pexels (Pexels License)  |  autor: doruq pasha  |  https://www.pexels.com/es-es/foto/reloj-de-pared-proyecta-sombras-dramaticas-con-luz-calida-38112113/  |  consulta: "wall clock night"
+hund1-01.jpg  <-  pozo-p-pv-reloj\003.jpg  |  pexels (Pexels License)  |  autor: Mahsima Sojoudi  |  https://www.pexels.com/es-es/foto/primer-plano-de-un-reloj-de-pared-en-blanco-y-negro-11066021/  |  consulta: "wall clock night"
+hund2-01.jpg  <-  pozo-p-pv-telefono\007.jpg  |  pexels (Pexels License)  |  autor: Luis La  |  https://www.pexels.com/es-es/foto/vintage-numeros-telefono-telefono-con-disco-de-marcar-8715170/  |  consulta: "old telephone dial"
+hund3-01.jpg  <-  pozo-p-pv-pata\012.jpg  |  pexels (Pexels License)  |  autor: Blue Bird  |  https://www.pexels.com/es-es/foto/naturaleza-mujer-animal-perro-7210698/  |  consulta: "dog paw human hand"
+hund4-01.jpg  <-  pozo-p-pv-correa\012.jpg  |  pexels (Pexels License)  |  autor: Ludovic Delot  |  https://www.pexels.com/es-es/foto/chihuahua-con-correa-en-un-campo-de-hierba-33489751/  |  consulta: "dog leash hanging hook"
+hund5-01.jpg  <-  pozo-p-pv-descanso\011.jpg  |  pexels (Pexels License)  |  autor: Barnabas Davoti  |  https://www.pexels.com/es-es/foto/perro-canino-golden-retriever-fotografia-de-animales-12503321/  |  consulta: "dog sleeping blanket"
+hund6-01.jpg  <-  pozo-p-pv-noche\004.jpg  |  pexels (Pexels License)  |  autor: Paul Espinoza  |  https://www.pexels.com/es-es/foto/farola-melancolica-en-el-paisaje-nocturno-de-buenos-aires-32878429/  |  consulta: "street lamp night"
+banda-01.jpg  <-  pozo-p-pv-noche\011.jpg  |  pexels (Pexels License)  |  autor: ClickerHappy  |  https://www.pexels.com/es-es/foto/farol-farolas-farolillo-linterna-2186/  |  consulta: "street lamp night"
+cita-01.jpg  <-  pozo-p-pv-pata\010.jpg  |  pexels (Pexels License)  |  autor: RDNE Stock project  |  https://www.pexels.com/es-es/foto/mano-pata-fondo-borroso-de-cerca-7516819/  |  consulta: "dog paw human hand"
+mos1-01.jpg  <-  pozo-p-pv-descanso\012.jpg  |  pexels (Pexels License)  |  autor: https://kaboompics.com/  |  https://www.pexels.com/es-es/foto/cama-animal-perro-mascota-5420821/  |  consulta: "dog sleeping blanket"
+mos2-01.jpg  <-  pozo-p-pv-telefono\003.jpg  |  pexels (Pexels License)  |  autor: merwak. raw  |  https://www.pexels.com/es-es/foto/primer-plano-de-un-telefono-de-disco-antiguo-33419837/  |  consulta: "old telephone dial"
+mos3-01.jpg  <-  pozo-p-pv-reloj\011.jpg  |  pexels (Pexels License)  |  autor: https://kaboompics.com/  |  https://www.pexels.com/es-es/foto/oscuro-hora-tiempo-reloj-de-pulsera-5624978/  |  consulta: "wall clock night"
+mos4-01.jpg  <-  pozo-p-pv-pata\011.jpg  |  pexels (Pexels License)  |  autor: Elina Volkova  |  https://www.pexels.com/es-es/foto/hombre-perro-sujetando-amistad-16676447/  |  consulta: "dog paw human hand"
+mos5-01.jpg  <-  pozo-p-pv-transportin\010.jpg  |  pexels (Pexels License)  |  autor: Mikhail Nilov  |  https://www.pexels.com/es-es/foto/animal-mascota-sujetando-gato-9783902/  |  consulta: "cat carrier"
+mos6-01.jpg  <-  pozo-p-pv-noche\008.jpg  |  pexels (Pexels License)  |  autor: ming 郝  |  https://www.pexels.com/es-es/foto/noche-calle-niebla-neblinoso-10919845/  |  consulta: "street lamp night"
+
+BRUMA (bruma-pag-0N.png y bruma-osc-0N.png, 30x20): las MISMAS fotos, recortadas a 3:2, reducidas y
+recoloreadas con C:\devs\demos\hacer-bruma.ps1 (clara >= 0,68 de luminancia / oscura <= 0,05). No suman fuentes.
+    pagina: cita-01.jpg, hund5-01.jpg, mos1-01.jpg, hund3-01.jpg, mos2-01.jpg   |   oscuras: port-01.jpg, cita-01.jpg, hund2-01.jpg
+
+MAPA: iframe de Google Maps (embed publico, sin clave). No hay imagen de mapa.

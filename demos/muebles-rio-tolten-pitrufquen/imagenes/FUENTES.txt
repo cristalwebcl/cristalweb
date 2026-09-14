@@ -52,3 +52,10 @@ DESCARTADAS
 · Un living de revista de arquitectura, con TV empotrado y mármol. Es
   precioso y no es el cliente de Pitrufquén: una foto así hace que la
   gente suponga precios que no son.
+
+MAPA DE UBICACION — mapa-01.jpg
+  768 x 768 · zoom 14 · centro -38.9862884, -72.63725
+  Mosaicos de OpenStreetMap pegados en una sola imagen, con el marcador
+  dibujado encima. Datos (c) OpenStreetMap contributors, licencia ODbL:
+  la atribucion tiene que ir VISIBLE junto al mapa, en el pie de la figura.
+  https://www.openstreetmap.org/copyright

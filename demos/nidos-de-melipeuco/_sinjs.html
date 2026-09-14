@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="es-CL" class="no-js">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Nidos de Melipeuco — domos frente a Conguillío</title>
+<meta name="description" content="Domos y cabañas en Melipeuco, puerta del parque Conguillío. Las cinco preguntas de dormir en un domo, contestadas, y la mochila del día en el parque.">
+
+<!-- ═══════════════════════════════════════════════════════════════
+     RESCATE DE LA CLASE .js — regla 2 de la casa.
+     El script inline (sin defer) marca .js para que el CSS pueda
+     esconder lo que va a animarse. El temporizador de 4 s la quita
+     si main.js nunca llega: sin él, un error de red dejaría media
+     página invisible para siempre.
+     ═══════════════════════════════════════════════════════════════ -->
+<!-- copia de prueba: sin el script de rescate ni main.js -->
+
+<!-- Fuentes propias: cero peticiones a terceros. El preload va SOLO
+     para la display, que es la del titular de la portada. -->
+<link rel="preload" href="assets/fuentes/zendots-400-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="assets/fuentes.css">
+<link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+
+<div class="propuesta">
+  <p class="propuesta__que">Propuesta de sitio web — preparada para <b>Nidos de Melipeuco</b> por Yordy Serna</p>
+  <p class="propuesta__gancho">El dominio existe y hoy devuelve un error de servidor: cada persona que busca «domos Conguillío» y hace clic, ve una página caída.</p>
+</div>
+
+<header class="cab" id="cab">
+  <a class="cab__marca" href="#portada">
+    <span class="pentagono" aria-hidden="true"></span>
+    <span class="cab__nombre">Nidos</span>
+  </a>
+  <nav class="cab__nav" aria-label="Secciones">
+    <a href="#domo">Dormir en un domo</a>
+    <a href="#base">Base Conguillío</a>
+  </nav>
+  <a class="cab__tel" href="tel:+56950363617">
+    <span class="cab__tel-rot">Reservas</span>
+    <span class="cab__tel-num">9 5036 3617</span>
+  </a>
+</header>
+
+<main>
+
+<!-- ═════════ PORTADA — EL DOMO (objeto protagonista, N) ═════════ -->
+<section class="portada" id="portada" aria-labelledby="t-portada">
+  <div class="portada__texto">
+    <p class="sitio">Melipeuco · puerta del parque Conguillío</p>
+    <h1 id="t-portada">Nidos</h1>
+    <p class="bajada">Domos y cabañas al pie de la ruta al parque. Acá está contestado todo
+      lo que se pregunta antes de reservar un domo por primera vez.</p>
+    <p class="marcaje">220 reseñas en Google</p>
+  </div>
+
+  <!-- El domo, dibujado en CSS: gajos geodésicos, volumen y la luz
+       cálida de adentro respirando. Sin imágenes ni librerías. -->
+  <div class="domo-caja" aria-hidden="true">
+    <div class="domo">
+      <span class="domo__luz"></span>
+      <span class="domo__puerta"></span>
+    </div>
+    <div class="domo__suelo"></div>
+  </div>
+</section>
+
+<!-- ═════════ LA PIEZA FIRMA — cinco preguntas (filas K) ═════════ -->
+<section class="preguntas" id="domo" aria-labelledby="t-preg">
+  <div class="preguntas__intro">
+    <p class="antetitulo">Lo que todo el mundo pregunta por teléfono</p>
+    <h2 id="t-preg">Dormir en un domo,<br>contestado</h2>
+    <p>Un domo no es una carpa cara ni una cabaña redonda. Estas son las cinco preguntas
+      que llegan siempre, contestadas de frente. Toque una y se abre.</p>
+    <p class="preguntas__marca" data-ejemplo="Respuestas de ejemplo — se ajustan al equipamiento real de los domos"></p>
+  </div>
+
+  <div class="filas">
+    <details class="fila">
+      <summary><span class="fila__q">¿Hace frío adentro?</span></summary>
+      <div class="fila__r"><p>Un domo bien hecho se calienta rápido y guarda bien el calor,
+        porque no tiene esquinas. La diferencia la hace la calefacción: hay que preguntar
+        qué tiene el domo —estufa, calefactor eléctrico— y si está incluida la leña.</p></div>
+    </details>
+    <details class="fila">
+      <summary><span class="fila__q">¿Tiene baño propio?</span></summary>
+      <div class="fila__r"><p>Es la pregunta que decide la reserva. Algunos domos lo tienen
+        adentro y otros comparten uno cercano: no es peor ni mejor, pero hay que saberlo
+        antes de llegar de noche con niños.</p></div>
+    </details>
+    <details class="fila">
+      <summary><span class="fila__q">¿Y si llueve fuerte?</span></summary>
+      <div class="fila__r"><p>La forma del domo es justamente lo que mejor aguanta la lluvia
+        y el viento: el agua resbala y no hay techo plano donde se acumule. Adentro se
+        escucha, y para mucha gente esa es la mitad de la gracia.</p></div>
+    </details>
+    <details class="fila">
+      <summary><span class="fila__q">¿Hay enchufes?</span></summary>
+      <div class="fila__r"><p>Sí, pero conviene saber cuántos y dónde. Si viene a trabajar
+        o a cargar equipos, pregúntelo: no es lo mismo un enchufe junto a la cama que uno
+        en la entrada.</p></div>
+    </details>
+    <details class="fila">
+      <summary><span class="fila__q">¿Se escucha todo?</span></summary>
+      <div class="fila__r"><p>Un domo aísla menos que una casa de material. Se escucha el
+        bosque, la lluvia y —si están cerca— a los vecinos. Por eso importa a qué distancia
+        está el domo de al lado.</p></div>
+    </details>
+  </div>
+</section>
+
+<!-- ═════════ BASE CONGUILLÍO ═════════ -->
+<section class="base" id="base" aria-labelledby="t-base">
+  <div class="base__cuerpo">
+    <p class="antetitulo antetitulo--claro">Para qué sirve dormir acá</p>
+    <h2 id="t-base">Base Conguillío</h2>
+    <p class="entrada">Melipeuco es la última parada antes del parque. Dormir acá no es sólo
+      dormir: es salir temprano, sin manejar tres horas desde Temuco, y volver a una cama
+      que ya está pagada.</p>
+
+    <div class="mochila">
+      <p class="mochila__tit">La mochila del día</p>
+      <ul class="mochila__lista">
+        <li>Agua: el parque tiene poco donde comprar</li>
+        <li>Bencina cargada en Melipeuco, no adentro</li>
+        <li>Efectivo: no en todas partes hay señal para pagar</li>
+        <li>Ropa en capas: acá amanece frío y al mediodía hace calor</li>
+        <li>Sombrero y bloqueador: en la arena volcánica el sol pega doble</li>
+      </ul>
+      <dl class="ruta">
+        <div><dt>Del alojamiento a la entrada del parque</dt><dd><span class="falta">falta</span></dd></div>
+        <div><dt>Estado del camino</dt><dd><span class="falta">falta</span></dd></div>
+        <div><dt>Meses en que el parque abre completo</dt><dd><span class="falta">falta</span></dd></div>
+      </dl>
+      <p class="mochila__nota">Las distancias y el estado del camino los confirma el
+        alojamiento: son datos que hacen manejar y no se ponen a ojo.</p>
+    </div>
+
+    <a class="fantasma" href="https://wa.me/56950363617" rel="noopener">Consultar fechas</a>
+  </div>
+</section>
+
+</main>
+
+<section class="dueno" aria-labelledby="t-dueno">
+  <h2 id="t-dueno">Para el dueño</h2>
+  <div class="dueno__cols">
+    <div>
+      <h3>Lo que está verificado</h3>
+      <p>Las 220 reseñas de su ficha de Google, el teléfono y que su dominio responde con
+        error. Eso último es lo urgente: no es que falte web, es que la que hay está caída.</p>
+    </div>
+    <div>
+      <h3>Lo que es de ejemplo</h3>
+      <p>Las cinco respuestas sobre los domos. Están escritas con lo general del rubro y se
+        ajustan al equipamiento real en una conversación.</p>
+    </div>
+    <div>
+      <h3>Lo que falta</h3>
+      <p>Cuántos domos hay y qué trae cada uno, los valores, y las distancias al parque.
+        Nada de eso lo invento.</p>
+    </div>
+  </div>
+  <p class="dueno__cierre">
+    <a class="flecha" href="https://wa.me/56968650001" rel="noopener">Escribirme por WhatsApp <span aria-hidden="true">→</span></a>
+    <a class="flecha" href="https://yordyserna.github.io" rel="noopener">Ver otros trabajos <span aria-hidden="true">→</span></a>
+  </p>
+</section>
+
+<footer class="pie">
+  <p>Sitio de demostración preparado por Yordy Serna. El negocio no lo ha encargado
+    ni ha revisado su contenido.</p>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,22 @@
+FUENTES DE LAS IMAGENES - Dra. Pets Rehecha el 13-09-2026 (presentacion antes que texto). Fotos de REFERENCIA de bancos libres: ninguna es del local; las verdaderas las tiene que mandar el negocio. 
+port-01.jpg  <-  pozo-p-dra-pasto\009.jpg  |  pexels (Pexels License)  |  autor: Hans-Jörg B.  |  https://www.pexels.com/es-es/foto/perro-de-agua-espanol-20066093/  |  consulta: "dog running grass field"
+hund1-01.jpg  <-  pozo-p-dra-rehab\001.jpg  |  pexels (Pexels License)  |  autor: Eduardo López  |  https://www.pexels.com/es-es/foto/perro-marron-con-vendaje-amarillo-16618525/  |  consulta: "dog rehabilitation"
+hund2-01.jpg  <-  pozo-p-cmv-rayos\001.jpg  |  pexels (Pexels License)  |  autor: Tima Miroshnichenko  |  https://www.pexels.com/es-es/foto/animal-mono-sentado-maquina-6234989/  |  consulta: "pet x-ray"
+hund3-01.jpg  <-  pozo-p-cmv-laboratorio\003.jpg  |  pexels (Pexels License)  |  autor: Tima Miroshnichenko  |  https://www.pexels.com/es-es/foto/hombre-tecnologia-blanco-enfocar-9574340/  |  consulta: "veterinary microscope"
+hund4-01.jpg  <-  pozo-p-dra-transportadora\012.jpg  |  pexels (Pexels License)  |  autor: Leah Newhouse  |  https://www.pexels.com/es-es/foto/gato-siames-con-cono-colar-776374/  |  consulta: "cat carrier"
+hund5-01.jpg  <-  pozo-p-dra-comida\010.jpg  |  pexels (Pexels License)  |  autor: Mathew Coulton  |  https://www.pexels.com/es-es/foto/perro-bol-tazon-cuenco-4432260/  |  consulta: "dog food bowl"
+hund6-01.jpg  <-  pozo-p-dra-venda\007.jpg  |  pexels (Pexels License)  |  autor: Fausto Gomez  |  https://www.pexels.com/es-es/foto/lisiada-de-chocolate-14169614/  |  consulta: "dog bandage leg"
+banda-01.jpg  <-  pozo-p-dra-campo\001.jpg  |  pexels (Pexels License)  |  autor: Alexander Tisko  |  https://www.pexels.com/es-es/foto/londres-el-lerro-con-espiritu-cazador-35404945/  |  consulta: "farm dog"
+cita-01.jpg  <-  pozo-p-dra-campo\006.jpg  |  pexels (Pexels License)  |  autor: Erick Diaz Veliz  |  https://www.pexels.com/es-es/foto/madera-sucio-animal-perro-18277484/  |  consulta: "farm dog"
+mos1-01.jpg  <-  pozo-p-dra-pasto\011.jpg  |  pexels (Pexels License)  |  autor: urtimud.89  |  https://www.pexels.com/es-es/foto/un-cachorro-corriendo-sobre-la-hierba-9863518/  |  consulta: "dog running grass field"
+mos2-01.jpg  <-  pozo-p-dra-rehab\005.jpg  |  pexels (Pexels License)  |  autor: Heber Vazquez  |  https://www.pexels.com/es-es/foto/mujer-mano-animal-perro-18781242/  |  consulta: "dog rehabilitation"
+mos3-01.jpg  <-  pozo-p-dra-campo\004.jpg  |  pexels (Pexels License)  |  autor: Heber Vazquez  |  https://www.pexels.com/es-es/foto/perro-mascota-pradera-rural-17414963/  |  consulta: "farm dog"
+mos4-01.jpg  <-  pozo-p-dra-transportadora\006.jpg  |  pexels (Pexels License)  |  autor: Huy Phan  |  https://www.pexels.com/es-es/foto/animal-mascota-mono-gato-domestico-10292639/  |  consulta: "cat carrier"
+mos5-01.jpg  <-  pozo-p-dra-venda\012.jpg  |  pexels (Pexels License)  |  autor: Ángel Pardo  |  https://www.pexels.com/es-es/foto/caminando-perro-mascota-rural-17809363/  |  consulta: "dog bandage leg"
+mos6-01.jpg  <-  pozo-p-dra-pasto\010.jpg  |  pexels (Pexels License)  |  autor: Lucas Pezeta  |  https://www.pexels.com/es-es/foto/foto-de-perro-en-campo-de-hierba-2398302/  |  consulta: "dog running grass field"
+
+BRUMA (bruma-pag-0N.png y bruma-osc-0N.png, 30x20): las MISMAS fotos, recortadas a 3:2, reducidas y
+recoloreadas con C:\devs\demos\hacer-bruma.ps1 (clara >= 0,68 de luminancia / oscura <= 0,05). No suman fuentes.
+    pagina: hund1-01.jpg, hund4-01.jpg, hund5-01.jpg, mos4-01.jpg, cita-01.jpg, banda-01.jpg, mos2-01.jpg   |   oscuras: cita-01.jpg, hund2-01.jpg, mos6-01.jpg
+
+MAPA: iframe de Google Maps (embed publico, sin clave). No hay imagen de mapa.

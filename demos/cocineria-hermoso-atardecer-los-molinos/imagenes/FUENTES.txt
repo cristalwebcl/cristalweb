@@ -1,0 +1,22 @@
+FUENTES DE LAS IMAGENES - Hermoso Atardecer Rehecha el 13-09-2026 (presentacion antes que texto). Fotos de REFERENCIA de bancos libres: ninguna es del local; las verdaderas las tiene que mandar el negocio. 
+port-01.jpg  <-  pozo-p-ate-atardecer\012.jpg  |  pexels (Pexels License)  |  autor: Karol Czinege  |  https://www.pexels.com/es-es/foto/mar-puesta-de-sol-agua-oceano-7512385/  |  consulta: "sunset sea rocks"
+hund1-01.jpg  <-  pozo-p-ate-pescado\012.jpg  |  pexels (Pexels License)  |  autor: William Jacobs  |  https://www.pexels.com/es-es/foto/pescado-crujiente-y-ensalada-de-col-con-rodaja-de-limon-38153619/  |  consulta: "fried fish plate"
+hund2-01.jpg  <-  pozo-p-ate-empanada\012.jpg  |  pexels (Pexels License)  |  autor: Pavel Mudarra  |  https://www.pexels.com/es-es/foto/empanadas-uruguayas-en-la-costa-de-montevideo-37168114/  |  consulta: "seafood empanada"
+hund3-01.jpg  <-  pozo-p-ate-cholgas\011.jpg  |  pexels (Pexels License)  |  autor: Deane Bayas  |  https://www.pexels.com/es-es/foto/plato-delicioso-de-mejillones-en-restaurante-gourmet-33474054/  |  consulta: "mussels steamed"
+hund4-01.jpg  <-  pozo-p-ate-caldillo\012.jpg  |  pexels (Pexels License)  |  autor: DΛVΞ GΛRCIΛ  |  https://www.pexels.com/es-es/foto/sopa-de-pescado-tradicional-ecuatoriana-en-tazon-decorado-con-flores-37387555/  |  consulta: "fish soup bowl"
+hund5-01.jpg  <-  pozo-p-ate-olla\010.jpg  |  pexels (Pexels License)  |  autor: Icnatius Hautias  |  https://www.pexels.com/es-es/foto/calle-cacerola-olla-maceta-6326647/  |  consulta: "cooking pot stove flame"
+hund6-01.jpg  <-  pozo-p-ate-caleta\003.jpg  |  pexels (Pexels License)  |  autor: Ana Belén González Hernández  |  https://www.pexels.com/es-es/foto/botes-de-pesca-coloridos-en-el-puerto-de-camara-de-lobos-36467811/  |  consulta: "fishing boats cove"
+banda-01.jpg  <-  pozo-p-ate-cielo\004.jpg  |  pexels (Pexels License)  |  autor: ATHENEA CODJAMBASSIS ROSSITTO  |  https://www.pexels.com/es-es/foto/mar-paisaje-naturaleza-cielo-25947784/  |  consulta: "pacific coast sunset clouds"
+cita-01.jpg  <-  pozo-p-ate-cielo\012.jpg  |  pexels (Pexels License)  |  autor: Rachel Roy  |  https://www.pexels.com/es-es/foto/impresionante-puesta-de-sol-sobre-el-oceano-con-nubes-espectaculares-37303660/  |  consulta: "pacific coast sunset clouds"
+mos1-01.jpg  <-  pozo-p-ate-cholgas\008.jpg  |  pexels (Pexels License)  |  autor: Electra Studio  |  https://www.pexels.com/es-es/foto/primer-plano-vibrante-de-mejillones-recien-cocinados-30648986/  |  consulta: "mussels steamed"
+mos2-01.jpg  <-  pozo-p-ate-atardecer\009.jpg  |  pexels (Pexels License)  |  autor: Edu Raw  |  https://www.pexels.com/es-es/foto/piedra-en-la-playa-32575258/  |  consulta: "sunset sea rocks"
+mos3-01.jpg  <-  pozo-p-ate-olla\012.jpg  |  pexels (Pexels License)  |  autor: Fernando Lacerda Branco  |  https://www.pexels.com/es-es/foto/madera-fuego-llama-pozo-de-fuego-12431477/  |  consulta: "cooking pot stove flame"
+mos4-01.jpg  <-  pozo-p-ate-caleta\006.jpg  |  pexels (Pexels License)  |  autor: Isidora Rodríguez  |  https://www.pexels.com/es-es/foto/trabajando-al-amanecer-32453500/  |  consulta: "fishing boats cove"
+mos5-01.jpg  <-  pozo-p-ate-empanada\002.jpg  |  pexels (Pexels License)  |  autor: Pavel Mudarra  |  https://www.pexels.com/es-es/foto/deliciosas-empanadas-uruguayas-junto-al-mar-37168116/  |  consulta: "seafood empanada"
+mos6-01.jpg  <-  pozo-p-ate-cielo\003.jpg  |  pexels (Pexels License)  |  autor: Regina Tommasi  |  https://www.pexels.com/es-es/foto/serena-puesta-de-sol-en-grado-sobre-el-mar-adriatico-30766041/  |  consulta: "pacific coast sunset clouds"
+
+BRUMA (bruma-pag-0N.png y bruma-osc-0N.png, 30x20): las MISMAS fotos, recortadas a 3:2, reducidas y
+recoloreadas con C:\devs\demos\hacer-bruma.ps1 (clara >= 0,68 de luminancia / oscura <= 0,05). No suman fuentes.
+    pagina: port-01.jpg, banda-01.jpg, cita-01.jpg, hund2-01.jpg, hund4-01.jpg, mos2-01.jpg, mos5-01.jpg, mos6-01.jpg   |   oscuras: cita-01.jpg, hund5-01.jpg, mos3-01.jpg
+
+MAPA: iframe de Google Maps (embed publico, sin clave). No hay imagen de mapa.

@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="es-CL" class="no-js">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self'; img-src 'self' data:; font-src 'self'; connect-src 'self'; media-src 'self'; form-action 'self'; base-uri 'none'; frame-src 'none'; object-src 'none'">
+<meta name="robots" content="noindex, nofollow">
+<title>Ferretería MCO — Dos locales en Temuco</title>
+<meta name="description" content="Ferretería en Temuco con dos locales: Manuel Antonio Matta 301 y MCO La Olleta, Recabarren 03350.">
+
+<!-- ═══════════════════════════════════════════════════════════════
+     RESCATE DE LA CLASE .js — ver AGENTS.md, regla 2.
+     ═══════════════════════════════════════════════════════════════ -->
+<script src="js/rescate.js"></script>
+
+<!-- Fuentes self-hosted: CERO peticiones externas. El preload va solo
+     para la display, que es la que se ve en el primer pantallazo. -->
+<link rel="preload" href="assets/fuentes/chivo-var-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="assets/fuentes.css">
+<link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+
+<a class="saltar" href="#contenido">Saltar al contenido</a>
+
+<!-- ══════════ HEADER FANTASMA ══════════
+     Sin banda superior: el aviso de propuesta va al final, dentro de
+     "Para el dueño". Se alterna por demo.
+     ═══════════════════════════════════════════════════════ -->
+<header class="cab" id="cab" data-cab>
+  <div class="cab-in">
+    <a class="marca" href="#portada">
+      <span class="marca-sigla" aria-hidden="true">MCO</span>
+      <span class="marca-txt">
+        <span class="marca-n1">Ferretería MCO</span>
+        <span class="marca-n2">Dos locales · Temuco</span>
+      </span>
+    </a>
+
+    <button class="hamb" type="button" aria-expanded="false" aria-controls="nav" data-hamb>
+      <span class="hamb-l" aria-hidden="true"></span>
+      <span class="hamb-txt">Menú</span>
+    </button>
+
+    <nav class="nav" id="nav" aria-label="Principal">
+      <ul class="nav-lista">
+        <li><a href="#decidir">¿Lo hago yo?</a></li>
+        <li><a href="#locales">Los dos locales</a></li>
+        <li><a href="#rubros">Qué vendemos</a></li>
+        <li><a href="#visitar">Horarios</a></li>
+      </ul>
+      <a class="btn btn-persiana nav-cta" href="tel:+56452294324">
+        <span class="btn-cuerpo">
+          <span class="btn-lbl">Llamar</span>
+          <span class="btn-dato">(45) 229 4324</span>
+        </span>
+        <span class="btn-cortina" aria-hidden="true"></span>
+      </a>
+    </nav>
+  </div>
+</header>
+
+<main id="contenido">
+
+<!-- ══════════════════ PORTADA · CIFRA PROTAGONISTA ══════════════════
+     Quinto plano de la serie. Acá el número manda: 616 reseñas entre
+     los dos locales es el argumento entero, así que va enorme y el
+     resto se ordena a su alrededor.
+     ═══════════════════════════════════════════════════════ -->
+<section class="portada" id="portada">
+
+  <!-- HUECO DE FOTO 1 · portada a sangre · mínimo 1920x1280
+       Uno de los locales por fuera, con el letrero, o el pasillo con
+       gente comprando. -->
+  <div class="portada-foto" data-foto="portada">
+    <p class="hueco-nota">
+      <span class="hueco-n">Foto 1</span>
+      Uno de los locales por fuera con su letrero, o el pasillo con gente ·
+      a sangre · mín. 1920 × 1280 px
+    </p>
+  </div>
+  <div class="portada-velo" aria-hidden="true"></div>
+
+  <div class="portada-in">
+    <p class="eyebrow eyebrow-claro">
+      <span class="eyebrow-pt" aria-hidden="true"></span>
+      Temuco · Dos locales
+    </p>
+
+    <p class="portada-cifra" aria-hidden="true">616</p>
+    <p class="portada-cifra-l">reseñas entre nuestros dos locales</p>
+
+    <h1 class="portada-h1">
+      Somos la ferretería del barrio,
+      <span class="l-suave">no una sucursal de nadie.</span>
+    </h1>
+
+    <div class="portada-btns">
+      <a class="btn btn-persiana btn-grande" href="tel:+56452294324">
+        <span class="btn-cuerpo">
+          <span class="btn-lbl">Preguntar si lo tenemos</span>
+          <span class="btn-dato">(45) 229 4324</span>
+        </span>
+        <span class="btn-cortina" aria-hidden="true"></span>
+      </a>
+      <a class="btn btn-metro" href="#decidir">
+        <span class="bm-txt">¿Lo hago yo o llamo a alguien?</span>
+        <span class="bm-cinta" aria-hidden="true"></span>
+      </a>
+    </div>
+  </div>
+</section>
+
+
+<!-- ══════════ PIEZA FIRMA · ¿LO HAGO YO? ══════════
+     La pregunta que nadie del rubro contesta por escrito. La gente no
+     llega preguntando qué comprar: llega dudando si es capaz.
+     ══════════════════════════════════════════════════════════ -->
+<section class="seccion decidir" id="decidir" aria-labelledby="dec-t">
+  <div class="ancho">
+    <header class="seccion-cab reveal">
+      <p class="eyebrow"><span class="eyebrow-pt" aria-hidden="true"></span> Antes de comprar nada</p>
+      <h2 class="h2" id="dec-t">¿Lo hago yo o llamo a alguien?</h2>
+      <p class="seccion-baja">
+        Es la duda de verdad, y ninguna ferretería la contesta porque
+        conviene venderle a todo el mundo. Nosotros preferimos decirlo:
+        hay cosas que se hacen solo y otras que salen más caras si se
+        hacen mal.
+      </p>
+    </header>
+
+    <ul class="casos">
+      <li class="caso reveal" data-nivel="facil">
+        <div class="caso-cab">
+          <h3 class="caso-h3">Cambiar una llave de lavamanos</h3>
+          <span class="caso-sello">Lo hace usted</span>
+        </div>
+        <p class="caso-p">
+          Se corta el agua, se suelta lo viejo y se pone lo nuevo. Lo
+          único que hay que tener claro es el largo de los flexibles.
+        </p>
+        <p class="caso-lista">
+          <span class="caso-lista-l">Necesita</span>
+          Llave nueva · flexibles · teflón · llave francesa
+        </p>
+      </li>
+
+      <li class="caso reveal" data-nivel="facil">
+        <div class="caso-cab">
+          <h3 class="caso-h3">Colgar un mueble en el muro</h3>
+          <span class="caso-sello">Lo hace usted</span>
+        </div>
+        <p class="caso-p">
+          El truco no es la fuerza: es usar el tarugo correcto. No es lo
+          mismo pegar en hormigón que en tabique de volcanita.
+        </p>
+        <p class="caso-lista">
+          <span class="caso-lista-l">Necesita</span>
+          Taladro · broca según el muro · tarugos correctos · nivel
+        </p>
+      </li>
+
+      <li class="caso reveal" data-nivel="medio">
+        <div class="caso-cab">
+          <h3 class="caso-h3">Cambiar un enchufe o interruptor</h3>
+          <span class="caso-sello caso-sello-medio">Se puede, con cuidado</span>
+        </div>
+        <p class="caso-p">
+          Se corta la luz en el tablero — no basta el interruptor de la
+          pared — y se saca una foto de cómo estaban los cables antes de
+          soltarlos. Si aparece algo raro adentro, ahí sí conviene parar.
+        </p>
+        <p class="caso-lista">
+          <span class="caso-lista-l">Necesita</span>
+          Destornillador aislado · buscapolo · enchufe nuevo
+        </p>
+      </li>
+
+      <li class="caso reveal" data-nivel="medio">
+        <div class="caso-cab">
+          <h3 class="caso-h3">Pintar una pieza</h3>
+          <span class="caso-sello caso-sello-medio">Se puede, con paciencia</span>
+        </div>
+        <p class="caso-p">
+          Difícil no es. Largo sí: el 80% del trabajo es tapar, lijar y
+          preparar. El que se salta esa parte es el que después dice que
+          la pintura era mala.
+        </p>
+        <p class="caso-lista">
+          <span class="caso-lista-l">Necesita</span>
+          Pintura · pasta muro · lija · cinta · rodillo y bandeja
+        </p>
+      </li>
+
+      <li class="caso reveal" data-nivel="llame">
+        <div class="caso-cab">
+          <h3 class="caso-h3">Mover un punto de gas</h3>
+          <span class="caso-sello caso-sello-llame">Llame a un profesional</span>
+        </div>
+        <p class="caso-p">
+          Esto lo tiene que hacer alguien autorizado, y no es un consejo
+          de vendedor: es la ley y es su seguridad. Le vendemos los
+          materiales al gasfíter, no el problema a usted.
+        </p>
+      </li>
+
+      <li class="caso reveal" data-nivel="llame">
+        <div class="caso-cab">
+          <h3 class="caso-h3">Tocar el tablero eléctrico</h3>
+          <span class="caso-sello caso-sello-llame">Llame a un profesional</span>
+        </div>
+        <p class="caso-p">
+          Cambiar un enchufe es una cosa; meter mano al tablero, los
+          automáticos o el diferencial es otra. Acá se llama al
+          eléctrico y se duerme tranquilo.
+        </p>
+      </li>
+    </ul>
+
+    <p class="decidir-pie">
+      <span class="decidir-pie-marca" aria-hidden="true"></span>
+      Esto lo escribí yo en términos generales y <b>hay que revisarlo con
+      ustedes</b>. Pero decir "esto no lo haga usted" es lo que más
+      confianza genera en una ferretería de barrio: el cliente vuelve
+      justamente porque una vez le dijeron que no comprara.
+    </p>
+  </div>
+</section>
+
+
+<!-- ══════════ LOS DOS LOCALES ══════════ -->
+<section class="seccion locales" id="locales" aria-labelledby="loc-t">
+  <div class="ancho">
+    <header class="seccion-cab reveal">
+      <p class="eyebrow"><span class="eyebrow-pt" aria-hidden="true"></span> Dónde estamos</p>
+      <h2 class="h2" id="loc-t">Dos locales en Temuco</h2>
+      <p class="seccion-baja">
+        Los dos son MCO y los dos atienden igual. Vaya al que le quede
+        más cerca.
+      </p>
+    </header>
+
+    <div class="locales-par">
+      <article class="local reveal">
+        <p class="local-tipo">Local 1</p>
+        <h3 class="local-h3">MCO Matta</h3>
+        <p class="local-dir">Manuel Antonio Matta 301</p>
+        <p class="local-resenas">
+          <span class="estrellas" role="img" aria-label="4,4 de 5 estrellas">
+            <span class="estrellas-fondo" aria-hidden="true">★★★★★</span>
+            <span class="estrellas-fill ei-1" aria-hidden="true">★★★★★</span>
+          </span>
+          <span><b>4,4</b> con <b>160</b> reseñas</span>
+        </p>
+        <p class="local-p">
+          El local del centro. Cerca de todo y con el mostrador de
+          siempre para lo que se lleva en la mano.
+        </p>
+        <p class="local-nota ej" data-ejemplo>Horario por confirmar</p>
+      </article>
+
+      <article class="local reveal local-destacado">
+        <p class="local-tipo">Local 2</p>
+        <h3 class="local-h3">MCO La Olleta</h3>
+        <p class="local-dir">Recabarren 03350</p>
+        <p class="local-resenas">
+          <span class="estrellas" role="img" aria-label="Calificación del local La Olleta">
+            <span class="estrellas-fondo" aria-hidden="true">★★★★★</span>
+            <span class="estrellas-fill ei-1" aria-hidden="true">★★★★★</span>
+          </span>
+          <span><b>456</b> reseñas</span>
+        </p>
+        <p class="local-p">
+          El grande. Es el local con más opiniones de los dos, con más
+          espacio para lo voluminoso y estacionamiento para cargar.
+        </p>
+        <p class="local-nota ej" data-ejemplo>Horario por confirmar</p>
+      </article>
+    </div>
+
+    <p class="locales-pie ej" data-ejemplo>
+      El detalle de qué se concentra en cada local es un ejemplo: se
+      ajusta a cómo está repartido de verdad.
+    </p>
+  </div>
+</section>
+
+
+<!-- ══════════ LÁMINA · EL BARRIO ══════════ -->
+<section class="lamina lamina-barrio" aria-labelledby="bar-t">
+
+  <!-- HUECO DE FOTO 2 · lámina a sangre · mínimo 1600x1100
+       Atendiendo en el mostrador, o el local lleno un sábado.
+       Se desplaza al hacer scroll. -->
+  <div class="lamina-foto" data-foto="barrio" data-parallax>
+    <p class="hueco-nota">
+      <span class="hueco-n">Foto 2</span>
+      Atendiendo en el mostrador, o el local lleno un sábado ·
+      se desplaza al scroll · mín. 1600 × 1100 px
+    </p>
+  </div>
+  <div class="lamina-velo" aria-hidden="true"></div>
+
+  <div class="lamina-txt reveal">
+    <p class="eyebrow eyebrow-claro">
+      <span class="eyebrow-pt" aria-hidden="true"></span>
+      Por qué volvemos a decirlo
+    </p>
+    <h2 class="lamina-h2" id="bar-t">Acá alguien<br>sabe su nombre.</h2>
+    <p class="lamina-p">
+      En una ferretería grande usted es un número de fila. Acá le
+      preguntan para qué es, le dicen si hay algo más barato que sirva
+      igual, y si no lo tenemos se lo decimos derecho.
+    </p>
+    <a class="btn btn-metro bm-claro" href="#rubros">
+      <span class="bm-txt">Ver qué manejamos</span>
+      <span class="bm-cinta" aria-hidden="true"></span>
+    </a>
+  </div>
+</section>
+
+
+<!-- ══════════ RUBROS ══════════ -->
+<section class="seccion rubros" id="rubros" aria-labelledby="rub-t">
+  <div class="ancho">
+    <header class="seccion-cab reveal">
+      <p class="eyebrow"><span class="eyebrow-pt" aria-hidden="true"></span> Qué vendemos</p>
+      <h2 class="h2" id="rub-t">Los rubros</h2>
+      <p class="seccion-baja">
+        Y lo que no está, se consigue. Pregunte antes de irse a otro
+        lado.
+      </p>
+    </header>
+
+    <ul class="rubros-grilla">
+      <li class="rubro reveal"><span class="rubro-n" aria-hidden="true">01</span>Herramienta manual y eléctrica</li>
+      <li class="rubro reveal"><span class="rubro-n" aria-hidden="true">02</span>Tornillería y fijaciones</li>
+      <li class="rubro reveal"><span class="rubro-n" aria-hidden="true">03</span>Pintura y accesorios</li>
+      <li class="rubro reveal"><span class="rubro-n" aria-hidden="true">04</span>Eléctrico e iluminación</li>
+      <li class="rubro reveal"><span class="rubro-n" aria-hidden="true">05</span>Gasfitería</li>
+      <li class="rubro reveal"><span class="rubro-n" aria-hidden="true">06</span>Cerrajería y seguridad</li>
+      <li class="rubro reveal"><span class="rubro-n" aria-hidden="true">07</span>Materiales de construcción</li>
+      <li class="rubro reveal"><span class="rubro-n" aria-hidden="true">08</span>Jardín y riego</li>
+      <li class="rubro reveal"><span class="rubro-n" aria-hidden="true">09</span>Aseo y mantención</li>
+    </ul>
+
+    <p class="rubros-pie ej" data-ejemplo>
+      El listado es un ejemplo de estructura: se ajusta a lo que MCO
+      realmente maneja.
+    </p>
+  </div>
+</section>
+
+
+<!-- ══════════ VISITAR ══════════ -->
+<section class="seccion visitar" id="visitar" aria-labelledby="vis-t">
+  <div class="ancho visitar-grid">
+    <div class="reveal">
+      <p class="eyebrow"><span class="eyebrow-pt" aria-hidden="true"></span> Horarios y contacto</p>
+      <h2 class="h2" id="vis-t">Cuándo estamos abiertos</h2>
+
+      <dl class="datos">
+        <div class="dato-fila">
+          <dt>MCO Matta</dt>
+          <dd>Manuel Antonio Matta 301, Temuco</dd>
+        </div>
+        <div class="dato-fila">
+          <dt>MCO La Olleta</dt>
+          <dd>Recabarren 03350, Temuco</dd>
+        </div>
+        <div class="dato-fila">
+          <dt>Teléfono</dt>
+          <dd><a href="tel:+56452294324">(45) 229 4324</a></dd>
+        </div>
+        <div class="dato-fila">
+          <dt>Horario</dt>
+          <dd class="ej" data-ejemplo>Lun a vie 9:00–19:30 · Sáb 9:30–15:00</dd>
+        </div>
+      </dl>
+
+      <div class="visitar-btns">
+        <a class="btn btn-persiana" href="tel:+56452294324">
+          <span class="btn-cuerpo">
+            <span class="btn-lbl">Llamar</span>
+            <span class="btn-dato">(45) 229 4324</span>
+          </span>
+          <span class="btn-cortina" aria-hidden="true"></span>
+        </a>
+        <a class="btn btn-metro" href="https://www.google.com/maps/search/?api=1&query=Ferreter%C3%ADa+MCO+Temuco" target="_blank" rel="noopener">
+          <span class="bm-txt">Abrir en Google Maps</span>
+          <span class="bm-cinta" aria-hidden="true"></span>
+        </a>
+      </div>
+    </div>
+
+    <!-- HUECO DE FOTO 3 · vertical · mínimo 900x1200
+         La fachada de uno de los dos locales, con el letrero visible. -->
+    <div class="visitar-foto reveal" data-foto="fachada">
+      <p class="hueco-nota">
+        <span class="hueco-n">Foto 3</span>
+        La fachada de uno de los locales, con el letrero visible ·
+        vertical · mín. 900 × 1200 px
+      </p>
+    </div>
+  </div>
+      <figure class="mapa">
+        <img src="imagenes/mapa-01.jpg" width="768" height="768" loading="lazy" decoding="async"
+             alt="Mapa de Temuco.">
+        <figcaption class="mapa__pie">
+          <span><b>Temuco</b>. La dirección exacta la confirma el negocio: cuando la tengamos, el mapa marca la puerta.</span>
+          <span class="mapa__cred">Mapa: &copy; <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener">OpenStreetMap</a></span>
+        </figcaption>
+      </figure>
+</section>
+
+
+<!-- ══════════ CTA FINAL ══════════ -->
+<section class="cierre" aria-labelledby="cierre-t">
+  <div class="ancho cierre-in reveal">
+    <h2 class="cierre-h2" id="cierre-t">¿No sabe qué comprar?</h2>
+    <p class="cierre-p">
+      Llame y cuente qué quiere hacer. Le decimos qué necesita, cuánto
+      sale, y si conviene que lo haga usted.
+    </p>
+    <a class="btn btn-persiana btn-grande btn-claro" href="tel:+56452294324">
+      <span class="btn-cuerpo">
+        <span class="btn-lbl">Llamar a MCO</span>
+        <span class="btn-dato">(45) 229 4324</span>
+      </span>
+      <span class="btn-cortina" aria-hidden="true"></span>
+    </a>
+  </div>
+</section>
+
+</main>
+
+<!-- ══════════ PIE ══════════ -->
+<footer class="pie">
+  <div class="ancho pie-in">
+    <p class="pie-marca">
+      <span class="marca-n1">Ferretería MCO</span>
+      <span class="pie-sub">Matta 301 &middot; La Olleta, Recabarren 03350</span>
+    </p>
+    <p class="pie-dir">
+      <a href="tel:+56452294324">(45) 229 4324</a>
+    </p>
+  </div>
+</footer>
+
+
+<!-- ══════════ PARA EL DUEÑO ══════════ -->
+<section class="dueno" aria-labelledby="due-t">
+  <div class="ancho">
+    <p class="due-cintillo">
+      <strong>Esto es una propuesta de sitio web</strong> — preparada para
+      Ferretería MCO por Yordy Serna. No está publicada, y esta sección no
+      va en el sitio final.
+    </p>
+    <h2 class="due-h2" id="due-t">Para el dueño de MCO</h2>
+
+    <div class="due-grid">
+      <div class="due-bloque">
+        <h3 class="due-h3">Lo que encontré</h3>
+        <p>
+          <b>616 reseñas entre los dos locales</b> (160 en Matta y 456 en
+          La Olleta). Y el botón "Sitio web" de su ficha <b>no lleva a una
+          página suya</b>: lleva a la ficha de la red MTS, donde aparecen
+          como un local más de una lista.
+          Verificado el 21 de agosto de 2026.
+        </p>
+      </div>
+
+      <div class="due-bloque">
+        <h3 class="due-h3">Por qué eso importa</h3>
+        <p>
+          Estar en la red sirve para comprar. Pero para <b>vender</b> los
+          deja sin cara propia: quien los busca termina en una página que
+          no habla de ustedes, no muestra sus locales ni sus 616
+          opiniones. La red no va a contar que en MCO le preguntan para
+          qué es lo que anda buscando.
+        </p>
+      </div>
+
+      <div class="due-bloque">
+        <h3 class="due-h3">Qué es esto y qué falta</h3>
+        <p>
+          Una demostración. Lo <b>verificado</b> es real: nombres,
+          direcciones, teléfono y reseñas de ambos locales. Horarios,
+          rubros y el reparto entre locales están
+          <span class="ej-inline">marcados como ejemplo</span>. Faltan sus
+          fotos (hay tres espacios) y revisar juntos la sección "¿Lo hago
+          yo?".
+        </p>
+      </div>
+    </div>
+
+    <div class="due-cta">
+      <a class="btn btn-persiana btn-grande" href="https://wa.me/56968650001?text=Hola%20Yordy%2C%20vi%20la%20propuesta%20de%20sitio%20web%20para%20Ferreter%C3%ADa%20MCO" target="_blank" rel="noopener">
+        <span class="btn-cuerpo">
+          <span class="btn-lbl">Escribirle a Yordy</span>
+          <span class="btn-dato">+56 9 6865 0001</span>
+        </span>
+        <span class="btn-cortina" aria-hidden="true"></span>
+      </a>
+      <p class="due-firma">
+        Yordy Serna · desarrollo web en Loncoche ·
+        <a href="https://yordyserna.github.io" target="_blank" rel="noopener">yordyserna.github.io</a>
+      </p>
+    </div>
+  </div>
+</section>
+
+<script src="js/main.js"></script>
+</body>
+</html>

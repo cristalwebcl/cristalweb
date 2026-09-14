@@ -1,0 +1,22 @@
+FUENTES DE LAS IMAGENES - Entre Nosotras Estetica Rehecha el 14-09-2026 (presentacion antes que texto). Fotos de REFERENCIA de bancos libres: ninguna es del local; las verdaderas las tiene que mandar el negocio. 
+port-01.jpg  <-  pozo-p-ent-sillon\004.jpg  |  pexels (Pexels License)  |  autor: Paul Lichtblau  |  https://www.pexels.com/es-es/foto/oscuro-ventana-silla-13652785/  |  consulta: "armchair window"
+hund1-01.jpg  <-  pozo-p-ent-cera\008.jpg  |  pexels (Pexels License)  |  autor: Olha Ruskykh  |  https://www.pexels.com/es-es/foto/fumar-humo-vela-ardiente-6954568/  |  consulta: "wax warmer"
+hund2-01.jpg  <-  pozo-p-ent-manicura\002.jpg  |  pexels (Pexels License)  |  autor: Salim Da  |  https://www.pexels.com/es-es/foto/mano-delicada-con-manicura-francesa-estilosa-35031987/  |  consulta: "manicure"
+hund3-01.jpg  <-  pozo-p-ent-facial\006.jpg  |  pexels (Pexels License)  |  autor: Cup of  Couple  |  https://www.pexels.com/es-es/foto/mesa-hojas-bol-de-madera-cuchara-de-madera-6962752/  |  consulta: "facial mask bowl"
+hund4-01.jpg  <-  pozo-p-ent-cejas\012.jpg  |  pexels (Pexels License)  |  autor: Nataliya Vaitkevich  |  https://www.pexels.com/es-es/foto/pincel-cepillo-cepillar-maquillaje-8558484/  |  consulta: "eyebrow tweezers"
+hund5-01.jpg  <-  pozo-p-ent-piedra\008.jpg  |  pexels (Pexels License)  |  autor: Anna Tarazevich  |  https://www.pexels.com/es-es/foto/piedras-especias-aromatico-equilibrio-6560301/  |  consulta: "spa stones"
+hund6-01.jpg  <-  pozo-p-ent-sillon\007.jpg  |  pexels (Pexels License)  |  autor: Santiago  Boada  |  https://www.pexels.com/es-es/foto/blanco-y-negro-escritorio-ventanas-ventana-23702366/  |  consulta: "armchair window"
+banda-01.jpg  <-  pozo-p-ent-cortina\003.jpg  |  pexels (Pexels License)  |  autor: Pexels User  |  https://www.pexels.com/es-es/foto/oro-dorado-cortina-foto-de-angulo-bajo-11111717/  |  consulta: "sheer curtain light"
+cita-01.jpg  <-  pozo-p-ent-vela\009.jpg  |  pexels (Pexels License)  |  autor: Boris Hamer  |  https://www.pexels.com/es-es/foto/oscuro-vela-iluminado-vela-encendida-14516794/  |  consulta: "candle dark"
+mos1-01.jpg  <-  pozo-p-ent-lino\002.jpg  |  pexels (Pexels License)  |  autor: Artem Podrez  |  https://www.pexels.com/es-es/foto/textura-tela-tejido-suave-7232397/  |  consulta: "linen fabric"
+mos2-01.jpg  <-  pozo-p-ent-lavanda\010.jpg  |  pexels (Pexels License)  |  autor: Kseniya Budko  |  https://www.pexels.com/es-es/foto/flora-floreciente-flores-de-lavanda-lavanda-inglesa-9398522/  |  consulta: "dried lavender"
+mos3-01.jpg  <-  pozo-p-ent-toalla\003.jpg  |  pexels (Pexels License)  |  autor: Alexander Mass  |  https://www.pexels.com/es-es/foto/relajante-arquitectura-lujo-blanco-28057660/  |  consulta: "spa towels"
+mos4-01.jpg  <-  pozo-p-ent-cera\006.jpg  |  pexels (Pexels License)  |  autor: Alpha En  |  https://www.pexels.com/es-es/foto/ambiente-acogedor-con-vela-encendida-y-lampara-moderna-31236093/  |  consulta: "wax warmer"
+mos5-01.jpg  <-  pozo-p-ent-cortina\007.jpg  |  pexels (Pexels License)  |  autor: Jahra Tasfia Reza  |  https://www.pexels.com/es-es/foto/luz-filtrando-a-traves-de-cortinas-traslucidas-en-interiores-36810651/  |  consulta: "sheer curtain light"
+mos6-01.jpg  <-  pozo-p-ent-lino\008.jpg  |  pexels (Pexels License)  |  autor: 3D Render  |  https://www.pexels.com/es-es/foto/fondo-de-tela-de-lino-marron-texturizado-34860704/  |  consulta: "linen fabric"
+
+BRUMA (bruma-pag-0N.png y bruma-osc-0N.png, 30x20): las MISMAS fotos, recortadas a 3:2, reducidas y
+recoloreadas con C:\devs\demos\hacer-bruma.ps1 (clara >= 0,68 de luminancia / oscura <= 0,05). No suman fuentes.
+    pagina: mos2-01.jpg, banda-01.jpg, mos1-01.jpg, hund3-01.jpg, mos2-01.jpg   |   oscuras: mos2-01.jpg, banda-01.jpg, mos4-01.jpg
+
+MAPA: iframe de Google Maps (embed publico, sin clave). No hay imagen de mapa.

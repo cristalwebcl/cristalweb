@@ -1,0 +1,22 @@
+FUENTES DE LAS IMAGENES - La Casa del Perno Rehecha el 13-09-2026 (presentacion antes que texto). Fotos de REFERENCIA de bancos libres: ninguna es del local; las verdaderas las tiene que mandar el negocio. 
+port-01.jpg  <-  pozo-p-per-pernos\001.jpg  |  pexels (Pexels License)  |  autor: Alex Tepetidis  |  https://www.pexels.com/es-es/foto/tuercas-frutos-secos-reciclaje-monton-5279361/  |  consulta: "bolts nuts"
+hund1-01.jpg  <-  pozo-p-per-pernos\003.jpg  |  pexels (Pexels License)  |  autor: Győző Mórocz  |  https://www.pexels.com/es-es/foto/oscuro-metal-acero-tornillos-17372998/  |  consulta: "bolts nuts"
+hund2-01.jpg  <-  pozo-p-per-cajones\012.jpg  |  pexels (Pexels License)  |  autor: Budget Bizar  |  https://www.pexels.com/es-es/foto/fotografia-en-escala-de-grises-de-gabinetes-de-madera-con-cajones-12485504/  |  consulta: "hardware drawers"
+hund3-01.jpg  <-  pozo-p-per-golillas\006.jpg  |  pexels (Pexels License)  |  autor: Nic Wood  |  https://www.pexels.com/es-es/foto/modelo-estampado-textura-abstracto-28119593/  |  consulta: "washers"
+hund4-01.jpg  <-  pozo-p-per-llaves\008.jpg  |  pexels (Pexels License)  |  autor: Dmitry Demidov  |  https://www.pexels.com/es-es/foto/herramientas-equipo-variedad-espacio-para-texto-6789020/  |  consulta: "wrench spanner set"
+hund5-01.jpg  <-  pozo-p-per-cajones\011.jpg  |  pexels (Pexels License)  |  autor: Đan Thy Nguyễn Mai  |  https://www.pexels.com/es-es/foto/arreglo-de-muebles-vintage-con-botellas-y-lampara-32559190/  |  consulta: "hardware drawers"
+hund6-01.jpg  <-  pozo-p-per-rosca\012.jpg  |  pexels (Pexels License)  |  autor: Steve A Johnson  |  https://www.pexels.com/es-es/foto/foto-de-enfoque-superficial-del-tornillo-936594/  |  consulta: "screw thread macro"
+banda-01.jpg  <-  pozo-p-per-pernos\004.jpg  |  pexels (Pexels License)  |  autor: Peppered Pixels Design Studio  |  https://www.pexels.com/es-es/foto/primer-plano-de-tuercas-metalicas-industriales-para-proyectos-de-ferreteria-29297946/  |  consulta: "bolts nuts"
+cita-01.jpg  <-  pozo-p-per-pernos\018.jpg  |  pexels (Pexels License)  |  autor: Győző Mórocz  |  https://www.pexels.com/es-es/foto/metal-conexion-fila-hilera-17372999/  |  consulta: "bolts nuts"
+mos1-01.jpg  <-  pozo-p-per-pernos\020.jpg  |  pexels (Pexels License)  |  autor: gervee  |  https://www.pexels.com/es-es/foto/oxidado-relampagos-tornillos-tornillo-5571776/  |  consulta: "bolts nuts"
+mos2-01.jpg  <-  pozo-p-per-cajones\007.jpg  |  pexels (Pexels License)  |  autor: Monstera Production  |  https://www.pexels.com/es-es/foto/sucio-modelo-estampado-textura-7794456/  |  consulta: "hardware drawers"
+mos3-01.jpg  <-  pozo-p-per-golillas\014.jpg  |  pexels (Pexels License)  |  autor: Alex Urezkov  |  https://www.pexels.com/es-es/foto/metal-produccion-naturaleza-muerta-acero-inoxidable-12951626/  |  consulta: "metal washers"
+mos4-01.jpg  <-  pozo-p-per-pernos\021.jpg  |  pexels (Pexels License)  |  autor: Jedidiah-Jordan O.  |  https://www.pexels.com/es-es/foto/blanco-y-negro-metal-tornillos-tornillos-de-rosca-20518598/  |  consulta: "bolts nuts"
+mos5-01.jpg  <-  pozo-p-per-rosca\003.jpg  |  pexels (Pexels License)  |  autor: Sonny Sixteen  |  https://www.pexels.com/es-es/foto/acercamiento-de-tornillo-de-metal-con-superficie-texturizada-31970894/  |  consulta: "screw thread macro"
+mos6-01.jpg  <-  pozo-p-per-pernos\019.jpg  |  pexels (Pexels License)  |  autor: Peter Dyllong  |  https://www.pexels.com/es-es/foto/cuatro-tornillos-de-metal-sobre-superficie-de-concreto-en-blanco-y-negro-36387055/  |  consulta: "bolts nuts"
+
+BRUMA (bruma-pag-0N.png y bruma-osc-0N.png, 30x20): las MISMAS fotos, recortadas a 3:2, reducidas y
+recoloreadas con C:\devs\demos\hacer-bruma.ps1 (clara >= 0,68 de luminancia / oscura <= 0,05). No suman fuentes.
+    pagina: banda-01.jpg, mos2-01.jpg, hund5-01.jpg, mos1-01.jpg   |   oscuras: cita-01.jpg, hund1-01.jpg, hund4-01.jpg
+
+MAPA: iframe de Google Maps (embed publico, sin clave). No hay imagen de mapa.

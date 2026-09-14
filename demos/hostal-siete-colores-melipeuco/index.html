@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="es-CL" class="no-js">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self'; img-src 'self' data:; font-src 'self'; connect-src 'self'; media-src 'self'; form-action 'self'; base-uri 'none'; frame-src 'none'; object-src 'none'">
+<meta name="robots" content="noindex, nofollow">
+<title>Hostal Siete Colores — Melipeuco</title>
+<meta name="description" content="Hostal en Melipeuco, puerta del parque Conguillío. Qué es un hostal explicado al que nunca durmió en uno, y cómo funciona la cocina común.">
+
+<!-- ═══════════════════════════════════════════════════════════════
+     RESCATE DE LA CLASE .js — regla 2 de la casa.
+     El script inline (sin defer) marca .js para que el CSS pueda
+     esconder lo que va a animarse. El temporizador de 4 s la quita
+     si main.js nunca llega: sin él, un error de red dejaría media
+     página invisible para siempre.
+     ═══════════════════════════════════════════════════════════════ -->
+<script src="js/rescate.js"></script>
+
+<!-- Fuentes propias: cero peticiones a terceros. El preload va SOLO
+     para la display, que es la del titular de la portada. -->
+<link rel="preload" href="assets/fuentes/rasa-var-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="assets/fuentes.css">
+<link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+
+<div class="propuesta">
+  <p class="propuesta__que">Propuesta de sitio web — preparada para <b>Hostal Siete Colores</b> por Yordy Serna</p>
+  <p class="propuesta__gancho">4,9 con 124 reseñas y un dominio pagado que hoy muestra un error de Cloudflare en vez del hostal.</p>
+</div>
+
+<header class="cab" id="cab">
+  <a class="cab__marca" href="#portada">
+    <span class="franjas" aria-hidden="true"></span>
+    <span class="cab__nombre">Siete Colores</span>
+  </a>
+  <nav class="cab__nav" aria-label="Secciones">
+    <a href="#hostal">Qué es un hostal</a>
+    <a href="#cocina">La cocina</a>
+    <a href="#reservar">Reservar</a>
+  </nav>
+  <a class="cab__tel" href="tel:+56963972658">
+    <span class="cab__tel-rot">Reservas</span>
+    <span class="cab__tel-num">9 6397 2658</span>
+  </a>
+</header>
+
+<main>
+
+<!-- ═════════ PORTADA — el amanecer ═════════ -->
+<section class="portada" id="portada" aria-labelledby="t-portada">
+  <div class="alba" aria-hidden="true"><span></span></div>
+  <div class="portada__texto">
+    <p class="sitio">Melipeuco · puerta del parque Conguillío</p>
+    <h1 id="t-portada">Hostal<br>Siete Colores</h1>
+    <p class="bajada">Piezas privadas, espacios de todos y la cocina a disposición.
+      Si nunca durmió en un hostal, esta página le explica exactamente qué es.</p>
+    <p class="marcaje">124 reseñas en Google · 4,9</p>
+  </div>
+</section>
+
+<!-- ═════════ LA PIEZA FIRMA — el hostal explicado (K) ═════════ -->
+<section class="hostal" id="hostal" aria-labelledby="t-hostal">
+  <div class="hostal__intro">
+    <p class="antetitulo">Para el que llega por primera vez</p>
+    <h2 id="t-hostal">El hostal, explicado</h2>
+    <p>No es un hotel más barato ni una cabaña compartida: es otra manera de viajar.
+      Las dudas de siempre, contestadas de a una. Toque y se abre.</p>
+    <p class="hostal__marca" data-ejemplo="Respuestas de ejemplo — el hostal las ajusta a su casa"></p>
+  </div>
+
+  <div class="filas">
+    <details class="fila">
+      <summary><span class="fila__q">¿La pieza es privada?</span></summary>
+      <div class="fila__r"><p>Sí. Lo que se comparte son los espacios comunes —living,
+        comedor, cocina—, no el dormitorio. La puerta tiene llave y la cama es suya.</p></div>
+    </details>
+    <details class="fila">
+      <summary><span class="fila__q">¿Y el baño?</span></summary>
+      <div class="fila__r"><p>Depende de la pieza: algunas lo tienen adentro y otras
+        comparten uno en el pasillo. Se pregunta al reservar y no hay sorpresa.</p></div>
+    </details>
+    <details class="fila">
+      <summary><span class="fila__q">¿Con quién me voy a cruzar?</span></summary>
+      <div class="fila__r"><p>Gente que viene al parque: familias, parejas, viajeros de
+        mochila. El living es donde se intercambian los datos de la ruta —a qué hora
+        conviene entrar, cómo estaba el camino— y esa conversación vale la noche.</p></div>
+    </details>
+    <details class="fila">
+      <summary><span class="fila__q">¿Por qué cuesta menos que un hotel?</span></summary>
+      <div class="fila__r"><p>Porque no paga recepción de mármol ni room service: paga la
+        cama, el calor y la cocina. Lo que sobra del presupuesto queda para el parque.</p></div>
+    </details>
+  </div>
+</section>
+
+<!-- ═════════ LA COCINA ES SUYA ═════════ -->
+<section class="cocina" id="cocina" aria-labelledby="t-cocina">
+  <div class="cocina__cuerpo">
+    <p class="antetitulo antetitulo--claro">La duda número uno</p>
+    <h2 id="t-cocina">La cocina<br>es suya</h2>
+    <p class="entrada">En un hostal se cocina. Es la mitad del ahorro y la mitad de la
+      gracia, y funciona con reglas simples que conviene saber antes.</p>
+
+    <dl class="reglas" data-ejemplo="Mecánica de ejemplo — el hostal confirma la suya">
+      <div class="regla"><dt>Qué hay</dt><dd>Ollas, sartenes, loza, hervidor y lo básico. Se llega con la comida, no con la cocina.</dd></div>
+      <div class="regla"><dt>Qué se trae</dt><dd>Lo que se va a comer. En Melipeuco hay dónde comprar; en el parque, no.</dd></div>
+      <div class="regla"><dt>El refrigerador</dt><dd>Compartido y con nombre: lo suyo se marca con lápiz y cinta, y lo de otros no se toca.</dd></div>
+      <div class="regla"><dt>Se deja como estaba</dt><dd>El que cocina lava. Es la única regla de oro y la que mantiene la cocina abierta.</dd></div>
+    </dl>
+  </div>
+</section>
+
+<!-- ═════════ RESERVAR (T5) ═════════ -->
+<section class="reservar" id="reservar" aria-labelledby="t-reservar">
+  <h2 id="t-reservar">Reservar</h2>
+  <p class="reservar__intro">Diga las fechas y cuántos son; el mensaje se arma solo.
+    O llame al <a href="tel:+56963972658">9 6397 2658</a>.</p>
+
+  <form class="form" id="form-reserva">
+    <div class="campo">
+      <label for="f-fecha">¿Qué fechas?</label>
+      <input type="text" id="f-fecha" name="fecha" placeholder="del 20 al 23 de febrero" autocomplete="off">
+    </div>
+    <div class="campo">
+      <label for="f-cuantos">¿Cuántos son?</label>
+      <input type="text" id="f-cuantos" name="cuantos" placeholder="2 adultos" autocomplete="off">
+    </div>
+    <div class="campo">
+      <label for="f-bano">¿Baño privado?</label>
+      <select id="f-bano" name="bano">
+        <option>Da lo mismo</option>
+        <option>Sí, privado</option>
+        <option>Compartido está bien</option>
+      </select>
+    </div>
+    <p class="resumen" id="resumen" aria-live="polite">El mensaje se arma acá abajo.</p>
+    <a class="fantasma" id="enviar" href="https://wa.me/56963972658" rel="noopener">Enviar por WhatsApp</a>
+  </form>
+</section>
+
+</main>
+
+<section class="dueno" aria-labelledby="t-dueno">
+  <h2 id="t-dueno">Para el dueño</h2>
+  <div class="dueno__cols">
+    <div>
+      <h3>Lo que está verificado</h3>
+      <p>Las 124 reseñas con 4,9 —de las notas más altas de Melipeuco—, el teléfono, y que
+        su dominio hoy responde con un error 521 de Cloudflare: el sitio existe en el
+        papel y no en la pantalla.</p>
+    </div>
+    <div>
+      <h3>Lo que es de ejemplo</h3>
+      <p>Las respuestas del hostal y las reglas de la cocina. Son lo general del rubro,
+        escritas para su casa: se ajustan en una conversación.</p>
+    </div>
+    <div>
+      <h3>Lo que falta</h3>
+      <p>Cuántas piezas hay y cuáles tienen baño, los valores y la dirección exacta.
+        Y recuperar o apuntar bien el dominio que ya pagaron.</p>
+    </div>
+  </div>
+  <p class="dueno__cierre">
+    <a class="flecha" href="https://wa.me/56968650001" rel="noopener">Escribirme por WhatsApp <span aria-hidden="true">→</span></a>
+    <a class="flecha" href="https://yordyserna.github.io" rel="noopener">Ver otros trabajos <span aria-hidden="true">→</span></a>
+  </p>
+</section>
+
+<footer class="pie">
+  <p>Sitio de demostración preparado por Yordy Serna. El negocio no lo ha encargado
+    ni ha revisado su contenido.</p>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>

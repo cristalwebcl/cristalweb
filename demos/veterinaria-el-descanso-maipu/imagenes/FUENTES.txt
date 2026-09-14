@@ -1,0 +1,22 @@
+FUENTES DE LAS IMAGENES - El Descanso Rehecha el 13-09-2026 (presentacion antes que texto). Fotos de REFERENCIA de bancos libres: ninguna es del local; las verdaderas las tiene que mandar el negocio. 
+port-01.jpg  <-  pozo-p-des-auto\010.jpg  |  pexels (Pexels License)  |  autor: Jesus Trevizo  |  https://www.pexels.com/es-es/foto/perro-dentro-del-vehiculo-2014915/  |  consulta: "dog car window travel"
+hund1-01.jpg  <-  pozo-p-des-canil\011.jpg  |  pexels (Pexels License)  |  autor: Ludovic Delot  |  https://www.pexels.com/es-es/foto/acogedor-retrato-interior-de-un-gato-pelirrojo-relajandose-31440969/  |  consulta: "cat travel carrier"
+hund2-01.jpg  <-  pozo-p-des-maleta\003.jpg  |  pexels (Pexels License)  |  autor: Regina Tommasi  |  https://www.pexels.com/es-es/foto/retrato-encantador-de-un-jack-russell-terrier-30222118/  |  consulta: "dog suitcase"
+hund3-01.jpg  <-  pozo-p-des-maleta\004.jpg  |  pexels (Pexels License)  |  autor: Gerardo Manzano  |  https://www.pexels.com/es-es/foto/perro-mascota-mono-perrito-16622078/  |  consulta: "dog suitcase"
+hund4-01.jpg  <-  pozo-p-des-maleta\010.jpg  |  pexels (Pexels License)  |  autor: PubPro  |  https://www.pexels.com/es-es/foto/primer-plano-de-un-perro-mirando-a-traves-de-una-valla-39302080/  |  consulta: "dog suitcase"
+hund5-01.jpg  <-  pozo-p-des-maleta\012.jpg  |  pexels (Pexels License)  |  autor: Moo  Lens  |  https://www.pexels.com/es-es/foto/perro-majestuoso-en-paisaje-montanoso-34081994/  |  consulta: "dog suitcase"
+hund6-01.jpg  <-  pozo-p-des-canil\009.jpg  |  pexels (Pexels License)  |  autor: Marc Wiegel  |  https://www.pexels.com/es-es/foto/adorable-gato-britanico-de-pelo-corto-relajandose-en-el-interior-35928781/  |  consulta: "cat travel carrier"
+banda-01.jpg  <-  pozo-p-des-oliva\009.jpg  |  pexels (Pexels License)  |  autor: Plavac Mali  |  https://www.pexels.com/es-es/foto/primer-plano-de-una-rama-de-olivo-con-hojas-37442090/  |  consulta: "olive leaves"
+cita-01.jpg  <-  pozo-p-des-dormido\001.jpg  |  pexels (Pexels License)  |  autor: Regina Tommasi  |  https://www.pexels.com/es-es/foto/perro-durmiendo-tranquilamente-sobre-una-manta-acogedora-30179132/  |  consulta: "dog sleeping car"
+mos1-01.jpg  <-  pozo-p-des-auto\007.jpg  |  pexels (Pexels License)  |  autor: cottonbro studio  |  https://www.pexels.com/es-es/foto/perro-de-raza-pura-mirando-por-el-cristal-del-vehiculo-5079274/  |  consulta: "dog car window travel"
+mos2-01.jpg  <-  pozo-p-des-viaje\006.jpg  |  pexels (Pexels License)  |  autor: Edu Raw  |  https://www.pexels.com/es-es/foto/mar-naturaleza-playa-olas-23023658/  |  consulta: "dog road trip"
+mos3-01.jpg  <-  pozo-p-des-agua\008.jpg  |  pexels (Pexels License)  |  autor: Doug Brown  |  https://www.pexels.com/es-es/foto/perro-mascota-hierba-cesped-790616/  |  consulta: "dog water bowl travel"
+mos4-01.jpg  <-  pozo-p-des-dormido\004.jpg  |  pexels (Pexels License)  |  autor: Tropojan Eagle  |  https://www.pexels.com/es-es/foto/animal-perro-mascota-coche-7704842/  |  consulta: "dog sleeping car"
+mos5-01.jpg  <-  pozo-p-des-oliva\003.jpg  |  pexels (Pexels License)  |  autor: Raymond Petrik  |  https://www.pexels.com/es-es/foto/primer-plano-de-aceitunas-verdes-y-negras-en-rama-de-zakynthos-34169529/  |  consulta: "olive leaves"
+mos6-01.jpg  <-  pozo-p-des-canil\003.jpg  |  pexels (Pexels License)  |  autor: Ludovic Delot  |  https://www.pexels.com/es-es/foto/adorable-gato-jengibre-descansando-en-interiores-31440971/  |  consulta: "cat travel carrier"
+
+BRUMA (bruma-pag-0N.png y bruma-osc-0N.png, 30x20): las MISMAS fotos, recortadas a 3:2, reducidas y
+recoloreadas con C:\devs\demos\hacer-bruma.ps1 (clara >= 0,68 de luminancia / oscura <= 0,05). No suman fuentes.
+    pagina: port-01.jpg, banda-01.jpg, mos5-01.jpg, hund5-01.jpg, cita-01.jpg   |   oscuras: port-01.jpg, banda-01.jpg, cita-01.jpg
+
+MAPA: iframe de Google Maps (embed publico, sin clave). No hay imagen de mapa.

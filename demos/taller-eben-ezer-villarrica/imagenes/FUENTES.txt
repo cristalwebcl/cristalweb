@@ -1,0 +1,22 @@
+FUENTES DE LAS IMAGENES - Taller Eben-Ezer Rehecha el 13-09-2026 (presentacion antes que texto). Fotos de REFERENCIA de bancos libres: ninguna es del local; las verdaderas las tiene que mandar el negocio. 
+port-01.jpg  <-  pozo-p-ebe-brillo\006.jpg  |  pexels (Pexels License)  |  autor: Khunkorn Laowisit  |  https://www.pexels.com/es-es/foto/una-persona-puliendo-el-coche-negro-5233259/  |  consulta: "car polish shine"
+hund1-01.jpg  <-  pozo-p-ebe-abolladura\007.jpg  |  pexels (Pexels License)  |  autor: Uiliam Nörnberg  |  https://www.pexels.com/es-es/foto/blanco-y-negro-acera-coche-vehiculo-24960483/  |  consulta: "car dent"
+hund2-01.jpg  <-  pozo-p-ebe-pistola\003.jpg  |  pexels (Pexels License)  |  autor: Dextar Studio ™  |  https://www.pexels.com/es-es/foto/hombre-pintura-pintando-cuadro-14615263/  |  consulta: "spray gun paint"
+hund3-01.jpg  <-  pozo-p-agu-chispas\010.jpg  |  pexels (Pexels License)  |  autor: cottonbro studio  |  https://www.pexels.com/es-es/foto/brillante-chispas-fondo-de-pantalla-texturas-9665367/  |  consulta: "angle grinder sparks"
+hund4-01.jpg  <-  pozo-p-ebe-abolladura\008.jpg  |  pexels (Pexels License)  |  autor: Prashant pacific  |  https://www.pexels.com/es-es/foto/rueda-de-un-coche-gris-18437082/  |  consulta: "car dent"
+hund5-01.jpg  <-  pozo-p-ebe-lija\006.jpg  |  pexels (Pexels License)  |  autor: Khunkorn Laowisit  |  https://www.pexels.com/es-es/foto/persona-manos-coche-pintar-5233262/  |  consulta: "sanding car body"
+hund6-01.jpg  <-  pozo-p-ebe-lija\011.jpg  |  pexels (Pexels License)  |  autor: Dextar Studio ™  |  https://www.pexels.com/es-es/foto/automotor-herramienta-de-poder-puliendo-detalles-de-pintura-14542677/  |  consulta: "sanding car body"
+banda-01.jpg  <-  pozo-p-ebe-pintura\012.jpg  |  pexels (Pexels License)  |  autor: Renee Razumov  |  https://www.pexels.com/es-es/foto/vista-interior-de-un-moderno-taller-de-reparacion-de-automoviles-33814732/  |  consulta: "car paint spray booth"
+cita-01.jpg  <-  pozo-p-ebe-capo\005.jpg  |  pexels (Pexels License)  |  autor: Mathias Reding  |  https://www.pexels.com/es-es/foto/vehiculo-reflejo-reflexion-capucha-12777409/  |  consulta: "glossy car hood reflection"
+mos1-01.jpg  <-  pozo-p-ebe-muestras\003.jpg  |  pexels (Pexels License)  |  autor: Viktorya  Sergeeva 🫂  |  https://www.pexels.com/es-es/foto/colores-naturaleza-muerta-paleta-vista-superior-10275089/  |  consulta: "color swatches"
+mos2-01.jpg  <-  pozo-p-ebe-capo\010.jpg  |  pexels (Pexels License)  |  autor: chickenbunny  |  https://www.pexels.com/es-es/foto/coche-moderno-mascara-brillante-10905352/  |  consulta: "glossy car hood reflection"
+mos3-01.jpg  <-  pozo-p-ebe-brillo\004.jpg  |  pexels (Pexels License)  |  autor: Dextar Studio ™  |  https://www.pexels.com/es-es/foto/mano-coche-vehiculo-superficie-14615260/  |  consulta: "car polish shine"
+mos4-01.jpg  <-  pozo-p-ebe-capo\012.jpg  |  pexels (Pexels License)  |  autor: Arthur  Swiffen  |  https://www.pexels.com/es-es/foto/blanco-y-negro-ciudad-edificio-reflejo-18362571/  |  consulta: "glossy car hood reflection"
+mos5-01.jpg  <-  pozo-p-ebe-muestras\011.jpg  |  pexels (Pexels License)  |  autor: Cherylanne Hsieh  |  https://www.pexels.com/es-es/foto/modelo-estampado-abstracto-resumen-5728272/  |  consulta: "color swatches"
+mos6-01.jpg  <-  pozo-p-ebe-pistola\012.jpg  |  pexels (Pexels License)  |  autor: Renee Razumov  |  https://www.pexels.com/es-es/foto/primer-plano-de-pistolas-de-pintura-en-soportes-de-pared-en-taller-33814682/  |  consulta: "spray gun paint"
+
+BRUMA (bruma-pag-0N.png y bruma-osc-0N.png, 30x20): las MISMAS fotos, recortadas a 3:2, reducidas y
+recoloreadas con C:\devs\demos\hacer-bruma.ps1 (clara >= 0,68 de luminancia / oscura <= 0,05). No suman fuentes.
+    pagina: port-01.jpg, banda-01.jpg, cita-01.jpg, hund1-01.jpg, hund5-01.jpg, mos2-01.jpg, mos4-01.jpg, mos6-01.jpg   |   oscuras: port-01.jpg, cita-01.jpg, hund1-01.jpg
+
+MAPA: iframe de Google Maps (embed publico, sin clave). No hay imagen de mapa.

@@ -1,0 +1,22 @@
+FUENTES DE LAS IMAGENES - New Life Fitness Club Rehecha el 13-09-2026 (presentacion antes que texto). Fotos de REFERENCIA de bancos libres: ninguna es del local; las verdaderas las tiene que mandar el negocio. 
+port-01.jpg  <-  pozo-p-nl-sala\011.jpg  |  pexels (Pexels License)  |  autor: Geancarlo Peruzzolo  |  https://www.pexels.com/es-es/foto/botellas-deporte-habitacion-atleta-6796964/  |  consulta: "empty gym"
+hund1-01.jpg  <-  pozo-p-nl-mancuernas\002.jpg  |  pexels (Pexels License)  |  autor: Anete Lusina  |  https://www.pexels.com/es-es/foto/monitor-mostrar-exhibicion-exposicion-16513598/  |  consulta: "dumbbells"
+hund2-01.jpg  <-  pozo-p-nl-cuerda\002.jpg  |  pexels (Pexels License)  |  autor: MART  PRODUCTION  |  https://www.pexels.com/es-es/foto/saltando-a-cuerda-de-cerca-8032841/  |  consulta: "jump rope"
+hund3-01.jpg  <-  pozo-p-nl-magnesio\010.jpg  |  pexels (Pexels License)  |  autor: cottonbro studio  |  https://www.pexels.com/es-es/foto/manos-reloj-de-pulsera-sujetando-dedos-7671477/  |  consulta: "chalk hands"
+hund4-01.jpg  <-  pozo-p-nl-kettlebell\011.jpg  |  pexels (Pexels License)  |  autor: Jonathan Borba  |  https://www.pexels.com/es-es/foto/metal-negro-suelo-poder-27810157/  |  consulta: "kettlebell"
+hund5-01.jpg  <-  pozo-p-nl-guantes\010.jpg  |  pexels (Pexels License)  |  autor: Pavel Danilyuk  |  https://www.pexels.com/es-es/foto/negro-habitacion-suelo-guantes-de-boxeo-6296036/  |  consulta: "boxing gloves"
+hund6-01.jpg  <-  pozo-p-nl-discos\005.jpg  |  pexels (Pexels License)  |  autor: Griffin Wooldridge  |  https://www.pexels.com/es-es/foto/goma-caucho-deporte-diseno-5580070/  |  consulta: "barbell plates"
+banda-01.jpg  <-  pozo-p-nl-mancuernas\010.jpg  |  pexels (Pexels License)  |  autor: Tima Miroshnichenko  |  https://www.pexels.com/es-es/foto/pesas-pesado-mancuernas-equipos-de-gimnasio-6389886/  |  consulta: "dumbbells"
+cita-01.jpg  <-  pozo-p-nl-magnesio\005.jpg  |  pexels (Pexels License)  |  autor: Sergey  Meshkov  |  https://www.pexels.com/es-es/foto/manos-palmeras-palmas-dedos-8481198/  |  consulta: "chalk hands"
+mos1-01.jpg  <-  pozo-p-nl-kettlebell\010.jpg  |  pexels (Pexels License)  |  autor: Jonathan Borba  |  https://www.pexels.com/es-es/foto/metal-oxido-rustico-negro-27810161/  |  consulta: "kettlebell"
+mos2-01.jpg  <-  pozo-p-nl-mancuernas\003.jpg  |  pexels (Pexels License)  |  autor: Vishwanth PindiBoina  |  https://www.pexels.com/es-es/foto/metal-fila-hilera-remar-8933589/  |  consulta: "dumbbells"
+mos3-01.jpg  <-  pozo-p-nl-magnesio\012.jpg  |  pexels (Pexels License)  |  autor: Katya Wolf  |  https://www.pexels.com/es-es/foto/persona-manos-fumar-humo-8729222/  |  consulta: "chalk hands"
+mos4-01.jpg  <-  pozo-p-nl-discos\007.jpg  |  pexels (Pexels License)  |  autor: Anete Lusina  |  https://www.pexels.com/es-es/foto/mancuernas-modernas-con-placas-de-metal-negro-brillante-4793233/  |  consulta: "barbell plates"
+mos5-01.jpg  <-  pozo-p-nl-cuerda\007.jpg  |  pexels (Pexels License)  |  autor: Pavel Danilyuk  |  https://www.pexels.com/es-es/foto/goma-caucho-suelo-equipos-de-ejercicio-6339692/  |  consulta: "jump rope"
+mos6-01.jpg  <-  pozo-p-nl-mancuernas\008.jpg  |  pexels (Pexels License)  |  autor: RDNE Stock project  |  https://www.pexels.com/es-es/foto/pesas-mancuernas-pesa-rusa-equipos-de-ejercicio-7187871/  |  consulta: "dumbbells"
+
+BRUMA (bruma-pag-0N.png y bruma-osc-0N.png, 30x20): las MISMAS fotos, recortadas a 3:2, reducidas y
+recoloreadas con C:\devs\demos\hacer-bruma.ps1 (clara >= 0,68 de luminancia / oscura <= 0,05). No suman fuentes.
+    pagina: port-01.jpg, banda-01.jpg, cita-01.jpg, hund1-01.jpg, hund5-01.jpg, mos1-01.jpg, mos2-01.jpg, mos6-01.jpg   |   oscuras: port-01.jpg, cita-01.jpg, banda-01.jpg
+
+MAPA: iframe de Google Maps (embed publico, sin clave). No hay imagen de mapa.

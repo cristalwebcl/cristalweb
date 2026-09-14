@@ -20,7 +20,9 @@
 
 <div class="propuesta">
   <p class="propuesta__que">Propuesta de sitio web — preparada para <b>Autovald Taller Automotriz</b> por CristalWeb</p>
-  <p class="propuesta__gancho">Veintitrés años arreglando los autos de Puerto Montt y en Google no hay ni una página que lo diga. El que busca «mecánico Puerto Montt» encuentra a cualquiera menos al que lleva más tiempo.</p>
+  <p class="propuesta__gancho">Veintitrés años arreglando los autos de Puerto Montt y, al 02-09-2026, en Google no
+    aparece ninguna página propia: sólo un Facebook. El que busca «mecánico Puerto Montt» encuentra a cualquiera
+    menos al que lleva más tiempo. Ésta es la página que debería estar ahí.</p>
 </div>
 
 <header class="cab" id="cab">
@@ -31,7 +33,7 @@
   <nav class="cab__nav" aria-label="Secciones">
     <a href="#dentro">El auto por dentro</a>
     <a href="#hace">Qué se hace acá</a>
-    <a href="#anios">23 años</a>
+    <a href="#pauta">Cada cuánto</a>
     <a href="#donde">Dónde estamos</a>
   </nav>
   <a class="cab__cta boton boton--chico" href="#donde">Pedir hora</a>
@@ -39,11 +41,17 @@
 
 <main>
 
-<!-- ═══════════ PORTADA ═══════════ -->
+<!-- ═══════════ PORTADA ═══════════
+     La foto es la BASE y el clip se funde encima cuando puede
+     reproducirse. El <img> no se va nunca: si el autoplay se bloquea,
+     si el visitante pidió menos movimiento o si ahorra datos, queda la
+     foto y no se nota nada. Por eso el <video> no lleva poster. -->
 <section class="portada" id="portada" aria-labelledby="t-portada">
   <div class="portada__foto" aria-hidden="true">
     <img src="imagenes/port-01.jpg" width="2560" height="1707"
          decoding="async" fetchpriority="high" alt="">
+    <video class="portada__video" data-src="video/port.mp4" muted playsinline loop
+           preload="none" aria-hidden="true"></video>
   </div>
 
   <!-- ═══════ ESCENA DE PORTADA · «el auto que entra» ═══════
@@ -92,12 +100,25 @@
       <a class="boton boton--linea" href="#hace">Qué se hace acá</a>
     </div>
   </div>
+</section>
 
-  <ul class="cifras" aria-label="Datos del taller">
-    <li><b>23</b><span>años en el rubro</span></li>
-    <li><b>1</b><span>taller, el mismo, en el Cardonal</span></li>
-    <li><b>0</b><span>páginas web hasta hoy</span></li>
-  </ul>
+
+<!-- ═══════════ CIFRAS · banda oscura ═══════════
+     Cuatro números y la herida en la misma fila. Sólo cuenta el 23:
+     es el dato que costó verificar. El 5 y el 1 son aritmética de la
+     propia página y el 0 es la herida — un contador que sube el cero
+     se lee como truco. El valor final va ESCRITO dentro del <b>: sin
+     JavaScript, o con menos movimiento, se lee igual. -->
+<section class="cifras" aria-labelledby="t-cifras">
+  <div class="ancho">
+    <h2 class="visualmente-oculto" id="t-cifras">El taller en cuatro números</h2>
+    <ul class="cifras__lista cascada">
+      <li><b data-cuenta="23">23</b><span>años en el rubro, siempre en el mismo sector</span></li>
+      <li><b>5</b><span>sistemas del auto explicados acá abajo</span></li>
+      <li><b>1</b><span>dirección: Pasaje San Andrés 60, Cardonal</span></li>
+      <li><b>0</b><span>páginas web propias hasta hoy</span></li>
+    </ul>
+  </div>
 </section>
 
 
@@ -250,7 +271,7 @@
       nuevo busca.
     </p>
 
-    <ul class="servicios ej" data-ejemplo="ejemplo por confirmar">
+    <ul class="servicios ej cascada" data-ejemplo="la confirma el taller">
       <li><h3>Mecánica general</h3><p>Diagnóstico, mantención por kilometraje y reparación de fallas.</p></li>
       <li><h3>Frenos</h3><p>Pastillas, discos, líquido y purga del circuito.</p></li>
       <li><h3>Suspensión</h3><p>Amortiguadores, bujes, rótulas y alineación de dirección.</p></li>
@@ -262,14 +283,75 @@
 </section>
 
 
-<!-- ═══════════ 23 AÑOS · con telón ═══════════ -->
+<!-- ═══════════ CADA CUÁNTO · tabla por kilometraje ═══════════
+     Lo que el rubro automotriz no contesta por escrito en ninguna
+     parte: cada cuánto toca qué. Es la pauta GENERAL del oficio, no la
+     de un auto en particular — va marcada como tal y sin un solo
+     precio ni plazo comprometido. La tabla entera está escrita en el
+     HTML; el JS no la toca. -->
+<section class="pauta" id="pauta" aria-labelledby="t-pauta">
+  <div class="ancho">
+    <p class="rotulo">Cada cuánto</p>
+    <h2 class="titulo" id="t-pauta">Qué se revisa y cuándo toca revisarlo.</h2>
+    <p class="entradilla">
+      La pregunta que llega por teléfono todas las semanas. Acá está por
+      escrito, en el orden en que el kilómetro la va pidiendo.
+    </p>
+
+    <div class="tabla-caja">
+      <table class="tabla ej" data-ejemplo="pauta general del oficio">
+        <caption class="visualmente-oculto">Pauta general de mantención por kilometraje</caption>
+        <thead>
+          <tr><th scope="col">Cada</th><th scope="col">Qué se mira</th><th scope="col">Por qué en ese momento</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">5.000 – 10.000 km</th>
+            <td>Aceite y filtro de aceite. Niveles de refrigerante y de frenos. Presión de neumáticos.</td>
+            <td>El aceite se ensucia por uso, no por tiempo parado. Es la mantención que más motores salva.</td>
+          </tr>
+          <tr>
+            <th scope="row">10.000 – 20.000 km</th>
+            <td>Filtro de aire, filtro de bencina y bujías. Rotación de neumáticos.</td>
+            <td>Un filtro de aire tapado se paga en consumo antes de que se note en fuerza.</td>
+          </tr>
+          <tr>
+            <th scope="row">20.000 – 40.000 km</th>
+            <td>Pastillas y discos de freno. Amortiguadores y bujes. Alineación y balanceo.</td>
+            <td>Es cuando el desgaste de la suspensión ya se nota frenando, que es cuando importa.</td>
+          </tr>
+          <tr>
+            <th scope="row">40.000 – 60.000 km</th>
+            <td>Cambio del líquido de frenos y del refrigerante. Batería, alternador y correa de accesorios.</td>
+            <td>El líquido de frenos absorbe humedad con los años: acá el clima de la zona pesa.</td>
+          </tr>
+          <tr>
+            <th scope="row">60.000 – 100.000 km</th>
+            <td>Correa o cadena de distribución, con bomba de agua si corresponde. Embrague y caja.</td>
+            <td>La distribución es la única de la lista que, si se corta, deja el motor en el taller.</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <p class="nota">
+      Es la pauta general del oficio, no la de su auto: la de su auto la fija
+      el fabricante en el manual y la confirma el taller con el vehículo
+      adelante. Acá no se diagnostica a distancia y no hay precios: los pone
+      el taller.
+    </p>
+  </div>
+</section>
+
+
+<!-- ═══════════ 23 AÑOS · banda oscura con telón ═══════════ -->
 <section class="anios con-telon" id="anios" aria-labelledby="t-anios">
   <div class="telon" aria-hidden="true">
     <img src="imagenes/telon-01.jpg" width="1200" height="900" loading="lazy" decoding="async" alt="">
   </div>
   <div class="ancho">
-    <p class="rotulo">Desde hace 23 años</p>
-    <h2 class="titulo" id="t-anios">Un taller que lleva más tiempo que la mayoría de los autos que atiende.</h2>
+    <p class="rotulo rotulo--claro">Desde hace 23 años</p>
+    <h2 class="titulo titulo--claro" id="t-anios">Un taller que lleva más tiempo que la mayoría de los autos que atiende.</h2>
     <div class="anios__cols">
       <p>
         Veintitrés años en el mismo rubro y en el mismo sector significa
@@ -287,9 +369,48 @@
 </section>
 
 
-<!-- ═══════════ CITA ═══════════ -->
+<!-- ═══════════ MITADES · el taller de pasaje ═══════════ -->
+<section class="mit" aria-labelledby="t-mit">
+  <div class="mit__foto">
+    <img src="imagenes/mit-01.jpg" width="2200" height="1466" loading="lazy" decoding="async"
+         alt="Auto levantado en un alza de dos columnas, el mecánico revisando los bajos y el banco de herramientas al fondo">
+  </div>
+  <div class="mit__txt">
+    <div>
+      <p class="rotulo">El local</p>
+      <h2 class="titulo" id="t-mit">Un taller de pasaje, no de vitrina.</h2>
+      <p>
+        Autovald está en el Pasaje San Andrés, en el Cardonal. No es una
+        dirección que se encuentre pasando en auto ni un letrero que se
+        vea desde la avenida: es de las que hay que ir a buscar sabiendo
+        que existen.
+      </p>
+      <p>
+        Por eso una página pesa el doble acá que en un local de calle
+        principal. Para el taller de avenida la web es publicidad; para
+        el de pasaje es <b>la señalética</b>: el mapa, el horario y el
+        teléfono en un sitio que no depende de que el cliente se acuerde
+        del nombre.
+      </p>
+      <p class="mit__pie">
+        La foto es del rubro, no del local: es un auto en un alza
+        cualquiera. Con una de la entrada del pasaje y otra del alza de
+        ustedes, esta franja pasa a ser Autovald.
+      </p>
+    </div>
+  </div>
+</section>
+
+
+<!-- ═══════════ CITA ═══════════
+     Misma regla que la portada: el <img> es la base y el clip se funde
+     encima. Texto centrado, así que el velo va PLANO (con un gradiente
+     lateral la mitad derecha de la frase caería sobre alfa baja y no
+     pasaría AA). -->
 <figure class="cita" aria-label="Sobre el oficio">
   <img src="imagenes/cita-01.jpg" width="2200" height="1238" loading="lazy" decoding="async" alt="">
+  <video class="cita__video" data-src="video/cita.mp4" muted playsinline loop
+         preload="none" aria-hidden="true"></video>
   <blockquote class="cita__txt">
     <p>«Un taller de veintitrés años no se elige por precio. Se elige
        porque ya sabe cómo anda su auto.»</p>
@@ -302,14 +423,18 @@
   <div class="ancho">
     <p class="rotulo">El taller</p>
     <h2 class="titulo" id="t-mos">Lo que se ve al entrar.</h2>
+    <p class="entradilla">
+      Seis fotos del rubro, no del local. Cuando lleguen las de Autovald
+      se cambian una por una y el resto de la página no se toca.
+    </p>
   </div>
-  <div class="mos__grilla">
-    <figure class="mos__p"><img src="imagenes/mos1-01.jpg" width="1200" height="800" loading="lazy" decoding="async" alt="Mecánico trabajando en un motor"></figure>
-    <figure class="mos__p"><img src="imagenes/mos2-01.jpg" width="1200" height="800" loading="lazy" decoding="async" alt="Auto sobre el alza del taller"></figure>
-    <figure class="mos__p"><img src="imagenes/mos3-01.jpg" width="1200" height="795" loading="lazy" decoding="async" alt="Herramientas del taller"></figure>
-    <figure class="mos__p"><img src="imagenes/mos4-01.jpg" width="1200" height="675" loading="lazy" decoding="async" alt="Detalle de un motor"></figure>
-    <figure class="mos__p"><img src="imagenes/mos5-01.jpg" width="1200" height="800" loading="lazy" decoding="async" alt="Banco de trabajo con llaves"></figure>
-    <figure class="mos__p"><img src="imagenes/mos6-01.jpg" width="1200" height="773" loading="lazy" decoding="async" alt="Herramienta en uso"></figure>
+  <div class="mos__grilla cascada">
+    <figure class="mos__p"><img src="imagenes/mos1-01.jpg" width="1200" height="800" loading="lazy" decoding="async" alt="Fila de llaves de boca colgadas en el tablero del taller"></figure>
+    <figure class="mos__p"><img src="imagenes/mos2-01.jpg" width="1200" height="800" loading="lazy" decoding="async" alt="Mecánico revisando los bajos de un auto levantado en el alza"></figure>
+    <figure class="mos__p"><img src="imagenes/mos3-01.jpg" width="1200" height="800" loading="lazy" decoding="async" alt="Alicates y tenazas colgados sobre el banco de trabajo"></figure>
+    <figure class="mos__p"><img src="imagenes/mos4-01.jpg" width="1200" height="800" loading="lazy" decoding="async" alt="Freno de tambor desarmado con el tambor apoyado en el suelo"></figure>
+    <figure class="mos__p"><img src="imagenes/mos5-01.jpg" width="1200" height="800" loading="lazy" decoding="async" alt="Auto con el capó abierto dentro del taller, al lado de los cajones de herramientas"></figure>
+    <figure class="mos__p"><img src="imagenes/mos6-01.jpg" width="1200" height="800" loading="lazy" decoding="async" alt="Juego de dados y extensiones ordenados por medida en su bandeja"></figure>
   </div>
 </section>
 
@@ -326,13 +451,16 @@
       </p>
       <dl class="datos">
         <div><dt>Dirección</dt><dd>Pasaje San Andrés N° 60, sector Cardonal, Puerto Montt</dd></div>
-        <div class="ej" data-ejemplo="ejemplo"><dt>Horario</dt><dd>Lunes a viernes 09:00–18:30 · sábado 09:00–13:00</dd></div>
-        <div class="ej" data-ejemplo="ejemplo"><dt>Teléfono</dt><dd>Falta: no lo publican en ninguna parte</dd></div>
+        <div class="ej" data-ejemplo="lo confirma el taller"><dt>Horario</dt><dd>Lunes a viernes 09:00–18:30 · sábado 09:00–13:00</dd></div>
+        <div class="ej" data-ejemplo="falta: no está publicado"><dt>Teléfono</dt><dd>Falta: no lo publican en ninguna parte</dd></div>
         <div><dt>Dónde están hoy</dt><dd>Facebook, y nada más</dd></div>
       </dl>
       <p class="nota">
         El teléfono es el dato que más se busca y es justo el que no
-        aparece. Es lo primero que esta página arregla.
+        aparece. Es lo primero que esta página arregla: el botón verde
+        que va abajo a la derecha, y que sigue al visitante por todo el
+        sitio, queda apuntando al WhatsApp del taller apenas nos lo
+        pasen. Hoy no lleva número porque no lo inventamos.
       </p>
     </div>
 
@@ -361,11 +489,21 @@
         </div>
       </form>
       <p class="form__sinjs">
-        Sin JavaScript los cuatro campos siguen ahí para saber qué
-        contar. Lo único que se pierde es que el texto se arme solo.
+        No se envía nada desde esta página: el texto se arma acá y usted
+        decide por dónde mandarlo. Sin JavaScript los cuatro campos
+        siguen ahí para saber qué contar; lo único que se pierde es que
+        el texto se arme solo.
       </p>
     </div>
   </div>
+      <figure class="mapa">
+        <img src="imagenes/mapa-01.jpg" width="768" height="768" loading="lazy" decoding="async"
+             alt="Mapa con la ubicación de Pasaje San Andrés 60, Puerto Montt.">
+        <figcaption class="mapa__pie">
+          <span><b>Pasaje San Andrés 60, Puerto Montt</b>.</span>
+          <span class="mapa__cred">Mapa: &copy; <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener">OpenStreetMap</a></span>
+        </figcaption>
+      </figure>
 </section>
 
 
@@ -384,10 +522,11 @@
       </div>
       <div>
         <h3>Qué es ejemplo</h3>
-        <p>La lista de servicios, el horario y —sobre todo— el teléfono,
-          que no está publicado en ninguna parte. Va marcado como falta,
-          no inventado. Los cinco sistemas del diagrama son de oficio
-          general, no diagnósticos de casos suyos.</p>
+        <p>La lista de servicios, el horario, la pauta por kilometraje
+          —que es del oficio, no de un auto suyo— y sobre todo el
+          teléfono, que no está publicado en ninguna parte. Va marcado
+          como falta, no inventado. Los cinco sistemas del diagrama son
+          de oficio general, no diagnósticos de casos suyos.</p>
       </div>
       <div>
         <h3>Qué cambiaría la página entera</h3>
@@ -408,10 +547,35 @@
 
 <footer class="pie">
   <p>Sitio de demostración preparado por CristalWeb. El negocio no lo ha
-     encargado ni ha revisado su contenido. Los servicios, el horario y
-     el teléfono van marcados como ejemplo o como falta. Nada de lo
-     escrito acá reemplaza un diagnóstico hecho con el auto presente.</p>
+     encargado ni ha revisado su contenido. Los servicios, el horario, la
+     pauta de mantención y el teléfono van marcados como ejemplo o como
+     falta. Las fotos y los dos clips de fondo son de bancos libres y
+     muestran el rubro, no este taller. Nada de lo escrito acá reemplaza
+     un diagnóstico hecho con el auto presente.</p>
 </footer>
+
+<!-- ══ WHATSAPP FLOTANTE ═══════════════════════════════════════════
+     Va escrito en el HTML y VISIBLE por defecto: si main.js no arranca,
+     o si rescate.js quita la clase .js, el botón igual está. El JS sólo
+     lo aparta mientras se mira la portada, para no tapar el titular.
+     Al revés —oculto por defecto y revelado por JS— un fallo del script
+     se llevaría el CTA principal. Icono de simple-icons (CC0) incrustado
+     en el SVG, porque la CSP no deja pedir nada a un tercero.
+
+     DESVÍO ANOTADO. El patrón manda que el href sea el WhatsApp DEL
+     NEGOCIO, el mismo de los tel:. Autovald no publica teléfono en
+     ninguna parte —es la herida de esta demo, está en la ficha de datos
+     y en la sección del dueño— así que un número inventado mandaría a
+     los clientes del taller a un desconocido. Hasta que lo entreguen,
+     el botón lleva la marca .ej de la casa, dice de quién depende el
+     dato y baja a la ficha de contacto. Cuando llegue el número se
+     cambia el href por https://wa.me/569XXXXXXXX?text=… y se saca la
+     clase ej: una línea, y el botón queda igual de puesto. -->
+<a class="wapp ej" href="#donde" data-ejemplo="el número lo pone el taller"
+   aria-label="WhatsApp: Autovald todavía no publica su número. Ver los datos de contacto.">
+  <svg class="wapp__i" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"/></svg>
+  <span class="wapp__t">WhatsApp</span>
+</a>
 
 <script src="js/main.js"></script>
 </body>

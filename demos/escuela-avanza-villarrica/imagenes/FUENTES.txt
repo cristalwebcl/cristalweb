@@ -1,0 +1,22 @@
+FUENTES DE LAS IMAGENES - Escuela de Conductores AVANZA Rehecha el 13-09-2026 (presentacion antes que texto). Fotos de REFERENCIA de bancos libres: ninguna es del local; las verdaderas las tiene que mandar el negocio. 
+port-01.jpg  <-  pozo-p-avz-volante\007.jpg  |  pexels (Pexels License)  |  autor: Abdulvahap Demir  |  https://www.pexels.com/es-es/foto/oscuro-coche-tecnologia-volante-15763805/  |  consulta: "steering wheel"
+hund1-01.jpg  <-  pozo-p-avz-tablero\007.jpg  |  pexels (Pexels License)  |  autor: Griffin Wooldridge  |  https://www.pexels.com/es-es/foto/coche-interior-tablero-tablero-de-mandos-4227723/  |  consulta: "car dashboard"
+hund2-01.jpg  <-  pozo-p-avz-conos\002.jpg  |  pexels (Pexels License)  |  autor: Connor Scott McManus  |  https://www.pexels.com/es-es/foto/calle-pavimento-pinas-conos-14823463/  |  consulta: "traffic cones"
+hund3-01.jpg  <-  pozo-p-avz-espejo\003.jpg  |  pexels (Pexels License)  |  autor: Mateusz Dach  |  https://www.pexels.com/es-es/foto/reflejo-de-la-carretera-en-el-espejo-retrovisor-del-coche-bajo-un-cielo-despejado-36377837/  |  consulta: "rear view mirror"
+hund4-01.jpg  <-  pozo-p-avz-senales\009.jpg  |  pexels (Pexels License)  |  autor: Marina Zvada  |  https://www.pexels.com/es-es/foto/senal-de-advertencia-para-ciclistas-en-una-carretera-rural-panoramica-28755052/  |  consulta: "road sign"
+hund5-01.jpg  <-  pozo-p-avz-camino\009.jpg  |  pexels (Pexels License)  |  autor: Sergej  *****  |  https://www.pexels.com/es-es/foto/camino-rural-escenico-con-arboles-al-lado-35383654/  |  consulta: "country road"
+hund6-01.jpg  <-  pozo-p-avz-llaves\010.jpg  |  pexels (Pexels License)  |  autor: Cemrecan Yurtman  |  https://www.pexels.com/es-es/foto/hombre-sosteniendo-una-brujula-dentro-del-volante-de-un-automovil-29739959/  |  consulta: "car keys"
+banda-01.jpg  <-  pozo-p-avz-camino\006.jpg  |  pexels (Pexels License)  |  autor: revac film's&photography  |  https://www.pexels.com/es-es/foto/cesped-de-hierba-verde-108444/  |  consulta: "country road"
+cita-01.jpg  <-  pozo-p-avz-conos\010.jpg  |  pexels (Pexels License)  |  autor: Efrem  Efre  |  https://www.pexels.com/es-es/foto/verano-aeropuerto-viaje-viajar-18258966/  |  consulta: "traffic cones"
+mos1-01.jpg  <-  pozo-p-avz-espejo\010.jpg  |  pexels (Pexels License)  |  autor: Damir K  |  https://www.pexels.com/es-es/foto/campo-coche-reflejo-reflexion-17204223/  |  consulta: "rear view mirror"
+mos2-01.jpg  <-  pozo-p-avz-espejo\009.jpg  |  pexels (Pexels License)  |  autor: Pixabay  |  https://www.pexels.com/es-es/foto/espejo-de-ala-de-coche-negro-461890/  |  consulta: "rear view mirror"
+mos3-01.jpg  <-  pozo-p-avz-conos\003.jpg  |  pexels (Pexels License)  |  autor: Mike van Schoonderwalt  |  https://www.pexels.com/es-es/foto/carretera-trafico-linea-fila-5505120/  |  consulta: "traffic cones"
+mos4-01.jpg  <-  pozo-p-avz-senales\007.jpg  |  pexels (Pexels License)  |  autor: Manoranjan Behera  |  https://www.pexels.com/es-es/foto/senal-de-limite-de-velocidad-en-un-exuberante-paisaje-indio-33356494/  |  consulta: "road sign"
+mos5-01.jpg  <-  pozo-p-avz-camino\008.jpg  |  pexels (Pexels License)  |  autor: Keith Cassill  |  https://www.pexels.com/es-es/foto/carretera-rural-escenica-en-otono-ohio-34356600/  |  consulta: "country road"
+mos6-01.jpg  <-  pozo-p-avz-camino\011.jpg  |  pexels (Pexels License)  |  autor: Sergej  *****  |  https://www.pexels.com/es-es/foto/carretera-rural-panoramica-con-exuberante-vegetacion-en-coesfeld-37876393/  |  consulta: "country road"
+
+BRUMA (bruma-pag-0N.png y bruma-osc-0N.png, 30x20): las MISMAS fotos, recortadas a 3:2, reducidas y
+recoloreadas con C:\devs\demos\hacer-bruma.ps1 (clara >= 0,68 de luminancia / oscura <= 0,05). No suman fuentes.
+    pagina: port-01.jpg, banda-01.jpg, cita-01.jpg, hund1-01.jpg, hund3-01.jpg, mos1-01.jpg, mos2-01.jpg, mos5-01.jpg   |   oscuras: port-01.jpg, cita-01.jpg, banda-01.jpg
+
+MAPA: iframe de Google Maps (embed publico, sin clave). No hay imagen de mapa.

@@ -1,50 +1,114 @@
-PROCEDENCIA DE LAS IMÁGENES — Los Troncos, parrilla, Villarrica
+PROCEDENCIA DE LAS IMÁGENES Y LOS CLIPS — Los Troncos, parrilla, Villarrica
+Revisado el 09-09-2026. Una línea por archivo servido, videos incluidos.
 ════════════════════════════════════════════════════════════════
 
-DEL NEGOCIO — dos fotos, y las dos hay que mirarlas con cuidado.
+DEL NEGOCIO — una sola, y hay que mirarla con cuidado.
 
 media-01.jpg  1500x845   el letrero tallado, con los postes de madera
-gal-01.jpg    1200x1600  la carta escrita en una tabla, con precios
+                         (mitades) · de la ficha del negocio
+mos-01.jpg     780x439   recorte del mismo letrero para el mosaico
 
 **«Los Troncos» es un nombre repetido.** Buscándolo aparecen: un
 RestoBar en Villa Pehuenia (Argentina), un almacén-parrilla, un local
-en un mall, una capilla y un restaurante de cortes finos con fotos de
-estudio. De todas ésas sólo se usaron las dos que muestran el letrero
-tallado y la carta en madera, que se confirman entre sí y coinciden con
-una parrilla de pueblo.
+en un mall, una capilla, un restaurante de cortes finos con fotos de
+estudio y una taquería mexicana. Del montón sólo se usa la del letrero
+tallado, que coincide con una parrilla de pueblo del sur.
 
-Si en la llamada el dueño dice que alguna no es suya, se saca y listo
-—están declaradas acá justamente para eso.
+Si en la llamada el dueño dice que no es suya, se saca y listo — está
+declarada acá justamente para eso.
+
+SACADA EL 09-09-2026 — gal-01.jpg / la carta de madera con precios.
+La foto venía del OTRO «Los Troncos»: los platos son quesadillas al
+pastor, alambres, arrachera y horchata, y los precios están en pesos
+mexicanos. La página la presentaba como «su carta», que es un dato
+inventado, y además metía catorce precios legibles donde la casa no
+pone ni uno. En su lugar quedó el recuadro punteado que pide la foto.
 
 ────────────────────────────────────────────────────────────────
-GENÉRICAS — seis, de banco libre, sólo de fondo.
+GENÉRICAS — de banco libre, sólo de fondo.
 
-Son BRASAS y un corte siendo cortado: el oficio, no el plato servido.
-Ningún plato terminado aparece en esta página, y es a propósito — una
-foto de banco de un corte que no es el suyo se descubre al primer
-servicio, y esta página entera trata justamente de que el punto llegue
-como se pidió.
+Son BRASAS, FUEGO y un cocinero trabajando: el oficio, no el plato
+servido. Ningún plato de carne terminado de banco aparece sosteniendo
+un argumento, y es a propósito — una foto de un corte que no es el
+suyo se descubre al primer servicio, y esta página entera trata
+justamente de que el punto llegue como se pidió.
 
-port-01.jpg  2560x1707  carbón al rojo en la parrilla
-aura-01.jpg   900x733   brasas con las chispas volando (va a 64 px de
-                        desenfoque: sólo aporta el rojo, que es el color
-                        de la escala de puntos de la página)
-
-  Nota: al armar la pagina estaban al reves. Las chispas son mas
-  bonitas pero mas oscuras, y sobre un fondo carbon no se veian; el
-  carbon al rojo tiene luz propia y aguanta la portada.
+port-01.jpg  2560x1707  carbón al rojo en la parrilla (portada)
+tajo-01.jpg  2200x659   recorte de la banda inferior de port-01, hecho
+                        el 09-09-2026 para el tajo. Antes ahí iba otra
+                        copia de la foto del letrero, pegada justo
+                        debajo de la sección que ya la mostraba.
+aura-01.jpg   900x733   brasas con las chispas volando — va a 64 px de
+                        desenfoque: sólo aporta el rojo, que es el
+                        color de la escala de puntos de la página
+telon-01.jpg 1200x978   la misma toma de las brasas, nítida y al 8 % de
+                        opacidad detrás de la sección de puntos (bajó del
+                        15 % el 10-09-2026: sobre el crema, cada punto de
+                        opacidad se lo comía al contraste del texto chico
+                        — ver el comentario del aura en css/estilo.css)
+telon-02.jpg 1280x720   brasas apagándose en oscuro, telón de la banda
+                        de cifras. SIN PROCEDENCIA REGISTRADA: apareció
+                        el 09-09-2026, el mismo día y con la misma
+                        medida (1280x720) que los dos clips, así que
+                        casi seguro es un fotograma de uno de ellos —
+                        pero eso no está escrito en ninguna parte. Ver
+                        el aviso de los clips, más abajo.
+mos-06.jpg    780x636   recorte de las brasas con chispas, para el mosaico
 tira-01.jpg  1000x564   leña en un horno de fierro
-tira-02.jpg  1000x616   fogata en un brasero
-  las cuatro de pxhere · dominio público (CC0), consulta
-  «wood fire grill glowing coals asado»
+mos-05.jpg    780x440   recorte de la leña en el horno
+tira-02.jpg  1000x616   fogata en un brasero de tres patas
+mos-04.jpg    780x480   recorte de la fogata en el brasero
+  las anteriores de pxhere · dominio público (CC0)
+  consulta «wood fire grill glowing coals asado»
 
-cita-01.jpg  1700x2550  un cocinero cortando la carne
-  Pexels · licencia Pexels (uso libre)
+cita-01.jpg  1700x2550  un cocinero cortando y sazonando la carne
+                        (fondo de la banda de cita)
+mos-02.jpg    780x1040  recorte vertical de la misma toma, hecho el
+                        09-09-2026 para el mosaico. Reemplaza la foto
+                        de la carta mexicana que estaba ahí.
+  Pexels · licencia Pexels (uso libre, sin atribución obligatoria)
 
 tirb-01.jpg  1000x564   mesas de troncos con los platos servidos
-  De la ficha del negocio, pero con reserva: el título de origen no
-  aclara cuál de los «Los Troncos» es. Va en la tira, chica, y no
-  sostiene ningún argumento de la página.
+mos-03.jpg    780x440   recorte de la misma mesa servida
+  De la ficha del negocio, pero CON RESERVA: el título de origen no
+  aclara cuál de los «Los Troncos» es. Van chicas, en la tira y en el
+  mosaico, y no sostienen ningún argumento de la página.
+
+────────────────────────────────────────────────────────────────
+LOS DOS CLIPS — ⚠ PROCEDENCIA SIN REGISTRAR. NO PUBLICAR ASÍ.
+
+video/port.mp4  1,20 MB  brasas encendiéndose bajo la parrilla
+video/cita.mp4  0,96 MB  la carne sobre la plancha, plano cerrado
+
+Lo que SÍ está comprobado (09-09-2026, sobre los archivos):
+  · 720p H.264, en bucle, y NINGUNO DE LOS DOS TIENE PISTA DE AUDIO
+    (no aparece el átomo `soun` ni `mp4a` en ninguno de los dos).
+  · Pesan 1,20 MB y 0,96 MB: dentro del presupuesto de la casa.
+
+Lo que NO se sabe: de qué banco salieron, con qué licencia y de quién.
+Se agregaron en la ampliación del 09-09-2026 y no quedaron anotados ni
+acá, ni en el prompt de la demo (demos/p4/138-los-troncos-villarrica.txt),
+ni en identidades.md. Los archivos tampoco traen metadatos de origen.
+Todas las demás demos del catálogo declaran sus clips con banco,
+licencia, autor y las dos URL (la de la página y la del archivo); ésta
+es la única que no.
+
+**Antes de publicar hay que volver a buscarlos en Pexels o en Mixkit,
+que son los dos bancos que usa la casa, y escribir acá las cuatro
+líneas.** Si no aparecen, se bajan otros dos y se reemplazan: son
+1,2 MB de fondo decorativo, no vale la pena arriesgar la licencia.
+
+────────────────────────────────────────────────────────────────
+COMPROBACIONES DE CONTENIDO (09-09-2026)
+
+· Ninguna marca de tercero legible.
+· Ningún precio dentro de ninguna foto — era el problema de gal-01.jpg
+  y por eso se sacó.
+· Ningún menor, ningún rostro identificable. En cita-01 y en su recorte
+  se ve un antebrazo y una mano, nunca la cara.
+· Ninguna de plus.unsplash.com.
+· Ningún paisaje genérico que prometa otro lugar: todo es fuego, brasa,
+  fierro y madera, que es lo que hay en cualquier parrilla del sur.
 
 ────────────────────────────────────────────────────────────────
 LO QUE FALTA
@@ -54,5 +118,13 @@ LO QUE FALTA
 2. **Los cuatro puntos, fotografiados de verdad.** La página los explica
    con una escala de color dibujada; cuatro fotos de un corte abierto en
    cada punto cerrarían el argumento y no las tiene nadie más.
-3. El salón, y la carta pasada a texto — hoy sólo existe en una tabla
-   colgada en la puerta.
+3. **La carta**, que hoy sólo existe tallada en una tabla colgada en la
+   puerta. Hay un hueco punteado esperándola en la página.
+4. El salón, y la fachada de noche.
+
+MAPA DE UBICACION — mapa-01.jpg
+  768 x 768 · zoom 14 · centro -39.2780911, -72.2274364
+  Mosaicos de OpenStreetMap pegados en una sola imagen, con el marcador
+  dibujado encima. Datos (c) OpenStreetMap contributors, licencia ODbL:
+  la atribucion tiene que ir VISIBLE junto al mapa, en el pie de la figura.
+  https://www.openstreetmap.org/copyright

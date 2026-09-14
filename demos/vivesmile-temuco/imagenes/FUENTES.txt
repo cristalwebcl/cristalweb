@@ -1,0 +1,22 @@
+FUENTES DE LAS IMAGENES - ViveSmile Rehecha el 13-09-2026 (presentacion antes que texto). Fotos de REFERENCIA de bancos libres: ninguna es del local; las verdaderas las tiene que mandar el negocio. 
+port-01.jpg  <-  pozo-p-viv-cepillo\011.jpg  |  pexels (Pexels License)  |  autor: Raj Gautam  |  https://www.pexels.com/es-es/foto/primer-plano-de-un-cepillo-de-dientes-de-bambu-en-un-entorno-oscuro-35333420/  |  consulta: "toothbrush"
+hund1-01.jpg  <-  pozo-p-viv-sillon\004.jpg  |  pexels (Pexels License)  |  autor: Cedric Fauntleroy  |  https://www.pexels.com/es-es/foto/clinica-adentro-naturaleza-muerta-silla-dental-4269265/  |  consulta: "dentist chair"
+hund2-01.jpg  <-  pozo-p-viv-cepillo\001.jpg  |  pexels (Pexels License)  |  autor: Cristina De Luis  |  https://www.pexels.com/es-es/foto/de-madera-bote-de-cristal-cepillos-de-dientes-productos-de-higiene-5588670/  |  consulta: "toothbrush"
+hund3-01.jpg  <-  pozo-p-viv-hilo\004.jpg  |  pexels (Pexels License)  |  autor: cottonbro studio  |  https://www.pexels.com/es-es/foto/dientes-dentadura-postiza-estomatologia-tiro-vertical-6502307/  |  consulta: "dental floss"
+hund4-01.jpg  <-  pozo-p-viv-hilo\001.jpg  |  pexels (Pexels License)  |  autor: Hikmet Toprak  |  https://www.pexels.com/es-es/foto/dientes-guantes-dentista-cuidado-de-la-salud-16955599/  |  consulta: "dental floss"
+hund5-01.jpg  <-  pozo-p-viv-hilo\012.jpg  |  pexels (Pexels License)  |  autor: Filip Rankovic Grobgaard  |  https://www.pexels.com/es-es/foto/conmovedor-colgar-guantes-dentista-14235193/  |  consulta: "dental floss"
+hund6-01.jpg  <-  pozo-p-viv-cepillo\012.jpg  |  pexels (Pexels License)  |  autor: Tara Winstead  |  https://www.pexels.com/es-es/foto/naturaleza-muerta-vista-superior-espacio-para-texto-copy-space-6690854/  |  consulta: "toothbrush"
+banda-01.jpg  <-  pozo-p-viv-menta\005.jpg  |  pexels (Pexels License)  |  autor: Anna Pyshniuk  |  https://www.pexels.com/es-es/foto/menta-hierba-hojas-verdes-enfoque-selectivo-7855278/  |  consulta: "mint leaves"
+cita-01.jpg  <-  pozo-p-viv-agua\004.jpg  |  pexels (Pexels License)  |  autor: Engin Akyurt  |  https://www.pexels.com/es-es/foto/agua-vaso-cristal-vidrio-10965842/  |  consulta: "glass of water"
+mos1-01.jpg  <-  pozo-p-viv-cepillo\008.jpg  |  pexels (Pexels License)  |  autor: Pietro Jeng  |  https://www.pexels.com/es-es/foto/dos-cepillos-de-dientes-blancos-dentro-de-una-taza-de-ceramica-blanca-65055/  |  consulta: "toothbrush"
+mos2-01.jpg  <-  pozo-p-viv-menta\010.jpg  |  pexels (Pexels License)  |  autor: #D67 HUNTER  |  https://www.pexels.com/es-es/foto/hojas-de-menta-fresca-en-primer-plano-a-la-luz-del-sol-37002689/  |  consulta: "mint leaves"
+mos3-01.jpg  <-  pozo-p-viv-sala\010.jpg  |  pexels (Pexels License)  |  autor: https://kaboompics.com/  |  https://www.pexels.com/es-es/foto/minimalista-planta-en-maceta-diseno-de-interiores-lampara-de-escritorio-7193652/  |  consulta: "minimal interior white"
+mos4-01.jpg  <-  pozo-p-viv-toallas\006.jpg  |  pexels (Pexels License)  |  autor: Dmitriy Steinke  |  https://www.pexels.com/es-es/foto/hotel-bano-centro-termal-balneario-17428224/  |  consulta: "white towels"
+mos5-01.jpg  <-  pozo-p-viv-agua\007.jpg  |  pexels (Pexels License)  |  autor: Patrik Felker  |  https://www.pexels.com/es-es/foto/agua-beber-bebida-vaso-6487297/  |  consulta: "glass of water"
+mos6-01.jpg  <-  pozo-p-viv-sillon\011.jpg  |  pexels (Pexels License)  |  autor: Pavel Danilyuk  |  https://www.pexels.com/es-es/foto/azul-asiento-tiro-vertical-motor-dental-6809652/  |  consulta: "dentist chair"
+
+BRUMA (bruma-pag-0N.png y bruma-osc-0N.png, 30x20): las MISMAS fotos, recortadas a 3:2, reducidas y
+recoloreadas con C:\devs\demos\hacer-bruma.ps1 (clara >= 0,68 de luminancia / oscura <= 0,05). No suman fuentes.
+    pagina: port-01.jpg, banda-01.jpg, cita-01.jpg, hund1-01.jpg, hund2-01.jpg, mos2-01.jpg, mos4-01.jpg, mos5-01.jpg   |   oscuras: port-01.jpg, cita-01.jpg, banda-01.jpg
+
+MAPA: iframe de Google Maps (embed publico, sin clave). No hay imagen de mapa.

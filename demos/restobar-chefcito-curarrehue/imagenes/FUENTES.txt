@@ -1,0 +1,19 @@
+FUENTES DE LAS IMAGENES - Restobar Chefcito Rehecha el 13-09-2026 (presentacion antes que texto). Fotos de REFERENCIA de bancos libres: ninguna es del local; las verdaderas las tiene que mandar el negocio. 
+port-01.jpg  <-  pozo-p-bar-sandwich\004.jpg  |  pexels (Pexels License)  |  autor: Akil Vignesh Jr  |  https://www.pexels.com/es-es/foto/pan-desayuno-delicioso-sandwiches-9240536/  |  consulta: "sandwich"
+banda-01.jpg  <-  pozo-p-bar-tabla\006.jpg  |  pexels (Pexels License)  |  autor: Deane Bayas  |  https://www.pexels.com/es-es/foto/comida-carne-fruta-fresco-16944394/  |  consulta: "charcuterie board"
+cita-01.jpg  <-  pozo-p-bar-noche\009.jpg  |  pexels (Pexels License)  |  autor: Yura Forrat  |  https://www.pexels.com/es-es/foto/coches-carretera-vehiculos-luces-8642098/  |  consulta: "car night road"
+hund1-01.jpg  <-  pozo-p-ruta-plato\008.jpg  |  pexels (Pexels License)  |  autor: ERIVELTO Martins  |  https://www.pexels.com/es-es/foto/sopa-rustica-de-verduras-con-pan-crujiente-en-sao-paulo-34314393/  |  consulta: "stew bowl"
+hund2-01.jpg  <-  pozo-p-bar-sandwich\011.jpg  |  pexels (Pexels License)  |  autor: Hannah Milar  |  https://www.pexels.com/es-es/foto/comida-snack-aperitivo-picoteo-6169449/  |  consulta: "sandwich"
+hund3-01.jpg  <-  pozo-p-bar-tabla\002.jpg  |  pexels (Pexels License)  |  autor: Christina Petsos  |  https://www.pexels.com/es-es/foto/comida-mesa-rustico-tabla-de-cortar-18545156/  |  consulta: "charcuterie board"
+mos1-01.jpg  <-  pozo-p-bar-cerveza\005.jpg  |  pexels (Pexels License)  |  autor: Ana Iherina  |  https://www.pexels.com/es-es/foto/alcohol-cerveza-bebida-bebida-alcoholica-13229769/  |  consulta: "beer glass"
+mos2-01.jpg  <-  pozo-p-bar-papas\010.jpg  |  pexels (Pexels License)  |  autor: Jesus Carlon  |  https://www.pexels.com/es-es/foto/papas-fritas-crujientes-con-ketchup-en-el-plato-32421782/  |  consulta: "french fries"
+mos3-01.jpg  <-  pozo-p-bar-tabla\008.jpg  |  pexels (Pexels License)  |  autor: Yuen Tou  Zan  |  https://www.pexels.com/es-es/foto/tabla-de-embutidos-gourmet-con-quesos-y-carnes-39351507/  |  consulta: "charcuterie board"
+mos4-01.jpg  <-  pozo-p-bar-local\010.jpg  |  pexels (Pexels License)  |  autor: cottonbro studio  |  https://www.pexels.com/es-es/foto/vasos-para-beber-sobre-mostrador-de-acero-inoxidable-6503562/  |  consulta: "bar interior"
+mos5-01.jpg  <-  pozo-p-bar-sandwich\002.jpg  |  pexels (Pexels License)  |  autor: Göksun Barış Gökalp  |  https://www.pexels.com/es-es/foto/primer-plano-de-un-sandwich-de-queso-a-la-parrilla-gourmet-35233424/  |  consulta: "sandwich"
+mos6-01.jpg  <-  pozo-p-bar-cerveza\008.jpg  |  pexels (Pexels License)  |  autor: Atlantic Ambience  |  https://www.pexels.com/es-es/foto/vaso-1009068/  |  consulta: "beer glass"
+
+BRUMA (bruma-pag-0N.png y bruma-osc-0N.png, 30x20): las MISMAS fotos, recortadas a 3:2, reducidas y
+recoloreadas con C:\devs\demos\hacer-bruma.ps1 (clara >= 0,68 de luminancia / oscura <= 0,05). No suman fuentes.
+    pagina: port-01.jpg, banda-01.jpg, cita-01.jpg, hund1-01.jpg, hund2-01.jpg, hund3-01.jpg, mos1-01.jpg, mos2-01.jpg   |   oscuras: banda-01.jpg, cita-01.jpg, hund3-01.jpg
+
+MAPA: iframe de Google Maps (embed publico, sin clave). No hay imagen de mapa.

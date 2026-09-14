@@ -1,0 +1,22 @@
+FUENTES DE LAS IMAGENES - Veterinaria Altamira Rehecha el 13-09-2026 (presentacion antes que texto). Fotos de REFERENCIA de bancos libres: ninguna es del local; las verdaderas las tiene que mandar el negocio. 
+port-01.jpg  <-  pozo-p-alt-cachorro\004.jpg  |  pexels (Pexels License)  |  autor: Abner Velázquez  |  https://www.pexels.com/es-es/foto/adorable-cachorro-bostezando-con-amigos-juguetones-34221894/  |  consulta: "puppy"
+hund1-01.jpg  <-  pozo-p-alt-esteto\006.jpg  |  pexels (Pexels License)  |  autor: Ivan S  |  https://www.pexels.com/es-es/foto/hombre-manos-profesional-doctor-4989130/  |  consulta: "stethoscope"
+hund2-01.jpg  <-  pozo-p-alt-cachorro\005.jpg  |  pexels (Pexels License)  |  autor: Bianca Beltrán  |  https://www.pexels.com/es-es/foto/cachorro-border-collie-15794920/  |  consulta: "puppy"
+hund3-01.jpg  <-  pozo-p-alt-perro\002.jpg  |  pexels (Pexels License)  |  autor: Vale Bocchi  |  https://www.pexels.com/es-es/foto/relajacion-cama-habitacion-animal-28055258/  |  consulta: "dog resting"
+hund4-01.jpg  <-  pozo-p-alt-gato\008.jpg  |  pexels (Pexels License)  |  autor: Amélie Vialla  |  https://www.pexels.com/es-es/foto/retrato-en-primer-plano-de-un-gato-esponjoso-en-la-sombra-38989520/  |  consulta: "cat portrait"
+hund5-01.jpg  <-  pozo-p-alt-perro\006.jpg  |  pexels (Pexels License)  |  autor: Regina Tommasi  |  https://www.pexels.com/es-es/foto/perro-durmiendo-tranquilamente-sobre-una-manta-acogedora-30179132/  |  consulta: "dog resting"
+hund6-01.jpg  <-  pozo-p-alt-cachorro\006.jpg  |  pexels (Pexels License)  |  autor: David Vives  |  https://www.pexels.com/es-es/foto/adorable-cachorro-de-maltipoo-sentado-en-el-interior-28990269/  |  consulta: "puppy"
+banda-01.jpg  <-  pozo-p-alt-paseo\007.jpg  |  pexels (Pexels License)  |  autor: Ludovic Delot  |  https://www.pexels.com/es-es/foto/chihuahua-con-correa-explorando-al-aire-libre-33471236/  |  consulta: "dog walk"
+cita-01.jpg  <-  pozo-p-alt-esteto\011.jpg  |  pexels (Pexels License)  |  autor: Felipe Queiroz  |  https://www.pexels.com/es-es/foto/hombre-manos-sujetando-doctor-20100299/  |  consulta: "stethoscope"
+mos1-01.jpg  <-  pozo-p-alt-gato\011.jpg  |  pexels (Pexels License)  |  autor: Pet foto  |  https://www.pexels.com/es-es/foto/mascota-mono-gato-acostado-17685164/  |  consulta: "cat portrait"
+mos2-01.jpg  <-  pozo-p-alt-cachorro\007.jpg  |  pexels (Pexels License)  |  autor: Regina Tommasi  |  https://www.pexels.com/es-es/foto/adorable-cachorro-de-corgi-al-aire-libre-en-italia-35131003/  |  consulta: "puppy"
+mos3-01.jpg  <-  pozo-p-alt-gatito\003.jpg  |  pexels (Pexels License)  |  autor: Ludovic Delot  |  https://www.pexels.com/es-es/foto/rojo-mascota-gato-acostado-18243733/  |  consulta: "kitten"
+mos4-01.jpg  <-  pozo-p-alt-paseo\005.jpg  |  pexels (Pexels License)  |  autor: Mike Art 🎥 Visual Creator | Photography and Video 📸  |  https://www.pexels.com/es-es/foto/un-jugueton-jack-russell-terrier-en-la-playa-asturiana-39031868/  |  consulta: "dog walk"
+mos5-01.jpg  <-  pozo-p-alt-gato\001.jpg  |  pexels (Pexels License)  |  autor: Cesar López  |  https://www.pexels.com/es-es/foto/cabeza-de-gato-22712151/  |  consulta: "cat portrait"
+mos6-01.jpg  <-  pozo-p-alt-cachorro\008.jpg  |  pexels (Pexels License)  |  autor: Anyela Málaga  |  https://www.pexels.com/es-es/foto/perro-mascota-chaqueta-ropa-18062006/  |  consulta: "puppy"
+
+BRUMA (bruma-pag-0N.png y bruma-osc-0N.png, 30x20): las MISMAS fotos, recortadas a 3:2, reducidas y
+recoloreadas con C:\devs\demos\hacer-bruma.ps1 (clara >= 0,68 de luminancia / oscura <= 0,05). No suman fuentes.
+    pagina: port-01.jpg, banda-01.jpg, cita-01.jpg, hund2-01.jpg, hund5-01.jpg, mos1-01.jpg, mos3-01.jpg, mos5-01.jpg   |   oscuras: port-01.jpg, cita-01.jpg, banda-01.jpg
+
+MAPA: iframe de Google Maps (embed publico, sin clave). No hay imagen de mapa.

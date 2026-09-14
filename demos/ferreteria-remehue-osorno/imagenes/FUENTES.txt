@@ -1,0 +1,22 @@
+FUENTES DE LAS IMAGENES - Ferretería Remehue Rehecha el 13-09-2026 (presentacion antes que texto). Fotos de REFERENCIA de bancos libres: ninguna es del local; las verdaderas las tiene que mandar el negocio. 
+port-01.jpg  <-  pozo-p-rem-destornillador\002.jpg  |  pexels (Pexels License)  |  autor: Brett Jordan  |  https://www.pexels.com/es-es/foto/metal-herramientas-hierro-plancha-4556501/  |  consulta: "screwdriver set"
+hund1-01.jpg  <-  pozo-p-rem-taladro\004.jpg  |  pexels (Pexels License)  |  autor: Christina & Peter  |  https://www.pexels.com/es-es/foto/destornillador-de-boca-30413424/  |  consulta: "power drill"
+hund2-01.jpg  <-  pozo-p-rem-rodillo\012.jpg  |  pexels (Pexels License)  |  autor: Ivan S  |  https://www.pexels.com/es-es/foto/pintar-pintura-superficie-de-madera-rodillo-5799375/  |  consulta: "paint roller"
+hund3-01.jpg  <-  pozo-p-rem-cocina\010.jpg  |  pexels (Pexels License)  |  autor: Piotr Wojnowski  |  https://www.pexels.com/es-es/foto/madera-mesa-marron-rustico-11001668/  |  consulta: "kitchen utensils"
+hund4-01.jpg  <-  pozo-p-rem-repisa\007.jpg  |  pexels (Pexels License)  |  autor: Yaroslav Shuraev  |  https://www.pexels.com/es-es/foto/traje-luces-oscuro-otono-5604949/  |  consulta: "wooden shelf"
+hund5-01.jpg  <-  pozo-p-rem-puerta\007.jpg  |  pexels (Pexels License)  |  autor: Regina Tommasi  |  https://www.pexels.com/es-es/foto/puerta-de-madera-antigua-en-grado-italia-37204439/  |  consulta: "front door"
+hund6-01.jpg  <-  pozo-p-rem-destornillador\004.jpg  |  pexels (Pexels License)  |  autor: Anete Lusina  |  https://www.pexels.com/es-es/foto/maestro-sin-rostro-eligiendo-un-destornillador-de-la-caja-de-herramientas-4792511/  |  consulta: "screwdriver set"
+banda-01.jpg  <-  pozo-p-rem-lluvia\004.jpg  |  pexels (Pexels License)  |  autor: photoGraph  |  https://www.pexels.com/es-es/foto/gotas-de-lluvia-mojado-humedo-ventana-de-cristal-12916167/  |  consulta: "rain window"
+cita-01.jpg  <-  pozo-p-rem-rodillo\009.jpg  |  pexels (Pexels License)  |  autor: Polina Tankilevitch  |  https://www.pexels.com/es-es/foto/superficie-de-madera-materiales-de-pintura-rodillos-de-pintura-de-cerca-5583052/  |  consulta: "paint roller"
+mos1-01.jpg  <-  pozo-p-rem-rodillo\008.jpg  |  pexels (Pexels License)  |  autor: Ksenia Chernaya  |  https://www.pexels.com/es-es/foto/rodillo-de-pintura-sobre-tapa-de-plastico-roja-5691635/  |  consulta: "paint roller"
+mos2-01.jpg  <-  pozo-p-rem-cocina\006.jpg  |  pexels (Pexels License)  |  autor: Greta Hoffman  |  https://www.pexels.com/es-es/foto/envase-contenedor-recipiente-utensilios-9475254/  |  consulta: "kitchen utensils"
+mos3-01.jpg  <-  pozo-p-rem-repisa\003.jpg  |  pexels (Pexels License)  |  autor: Little forest 작은 숲  |  https://www.pexels.com/es-es/foto/estanteria-minimalista-de-madera-con-objetos-decorativos-39207007/  |  consulta: "wooden shelf"
+mos4-01.jpg  <-  pozo-p-rem-destornillador\005.jpg  |  pexels (Pexels License)  |  autor: Polina Tankilevitch  |  https://www.pexels.com/es-es/foto/madera-mesa-acostado-herramientas-5583106/  |  consulta: "screwdriver set"
+mos5-01.jpg  <-  pozo-p-rem-repisa\012.jpg  |  pexels (Pexels License)  |  autor: Cluno  |  https://www.pexels.com/es-es/foto/escena-interior-acogedora-con-estante-decorativa-36634339/  |  consulta: "wooden shelf"
+mos6-01.jpg  <-  pozo-p-rem-cocina\004.jpg  |  pexels (Pexels License)  |  autor: Pavel Danilyuk  |  https://www.pexels.com/es-es/foto/cocinando-bateria-de-cocina-rallador-utensilios-6996092/  |  consulta: "kitchen utensils"
+
+BRUMA (bruma-pag-0N.png y bruma-osc-0N.png, 30x20): las MISMAS fotos, recortadas a 3:2, reducidas y
+recoloreadas con C:\devs\demos\hacer-bruma.ps1 (clara >= 0,68 de luminancia / oscura <= 0,05). No suman fuentes.
+    pagina: port-01.jpg, banda-01.jpg, cita-01.jpg, hund1-01.jpg, hund2-01.jpg, hund3-01.jpg, mos1-01.jpg, mos5-01.jpg   |   oscuras: port-01.jpg, cita-01.jpg, banda-01.jpg
+
+MAPA: iframe de Google Maps (embed publico, sin clave). No hay imagen de mapa.

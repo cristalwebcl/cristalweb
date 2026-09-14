@@ -734,3 +734,32 @@ a { color: var(--manta-osc); }
 @media (prefers-reduced-motion: reduce) {
   .js .mos__p { opacity: 1; transform: none; }
 }
+
+/* ── SIN BOTON DE WHATSAPP, A PROPOSITO ─────────────────────────────
+   Happy Pet solo publica un fijo: (63) 229 8388. WhatsApp no funciona
+   en numeros fijos, asi que un boton flotante abriria la aplicacion y
+   no encontraria la cuenta. Peor que no tenerlo. Cuando la clinica
+   confirme un movil, se pone con demos\poner-wapp.ps1 y listo. */
+/* ── MAPA DE UBICACIÓN ──────────────────────────────────────────────
+   En esta demo el mapa es la pieza más útil de todas: alguien que llama
+   a las once de la noche por un animal internado necesita saber dónde
+   queda, no leer un adjetivo. Por eso va pegado al teléfono.
+   Imagen propia con mosaicos de OpenStreetMap: la CSP prohíbe pedir
+   nada a un tercero y un iframe de Google Maps quedaría en blanco sin
+   dar un solo error. La atribución a OSM la exige su licencia. */
+.mapa {
+  max-width: 640px; margin: 1.8rem auto 0;
+  border: 1px solid var(--linea-osc); border-radius: 18px; overflow: hidden;
+}
+.mapa img { display: block; width: 100%; height: auto; aspect-ratio: 16 / 10; object-fit: cover; }
+.mapa__pie {
+  display: flex; flex-direction: column; gap: .35rem;
+  padding: .8rem 1rem;
+  font-size: var(--p--1); line-height: 1.5; text-align: left;
+  color: var(--manta); background: var(--penumbra);
+  border-top: 1px solid var(--linea-osc);
+}
+.mapa__pie b { color: var(--blanco); }
+.mapa__ir { color: var(--blanco); font-weight: 700; text-decoration: underline; min-height: 44px; display: inline-flex; align-items: center; }
+.mapa__cred { font-size: .82em; opacity: .85; }
+.mapa__cred a { color: var(--manta); }

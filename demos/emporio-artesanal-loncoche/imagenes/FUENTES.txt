@@ -74,3 +74,10 @@ queda con su dibujo, que era lo que la sostenía desde el principio.
 foto con masa oscura, y una con fondo oscuro necesita una foto con luz
 propia. Cuando la demo ya tiene un dibujo CSS fuerte en la portada, la
 foto va mejor en otra parte.
+
+MAPA DE UBICACION — mapa-01.jpg
+  768 x 768 · zoom 14 · centro -39.370616, -72.6300704
+  Mosaicos de OpenStreetMap pegados en una sola imagen, con el marcador
+  dibujado encima. Datos (c) OpenStreetMap contributors, licencia ODbL:
+  la atribucion tiene que ir VISIBLE junto al mapa, en el pie de la figura.
+  https://www.openstreetmap.org/copyright

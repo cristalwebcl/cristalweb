@@ -365,3 +365,29 @@ span.ej[data-ejemplo] {
     }
   }
 }
+
+/* ── SIN BOTON DE WHATSAPP, A PROPOSITO ──────────────────────────
+   El Penon solo publica un fijo: (2) 2874 3926. WhatsApp no funciona
+   en numeros fijos: el boton abriria la aplicacion y no encontraria la
+   cuenta. Peor que no tenerlo. Cuando la ferreteria confirme un movil,
+   se pone con demos\poner-wapp.ps1. */
+
+/* ── MAPA DE UBICACIÓN ──────────────────────────────────────────────
+   Imagen propia con mosaicos de OpenStreetMap pegados: la CSP prohíbe
+   pedir nada a un tercero, así que un iframe de Google Maps quedaría en
+   blanco sin dar un solo error. La atribución a OSM es obligatoria por
+   licencia (ODbL) y por eso va visible, no en un comentario.
+   Acá el mapa es de COMUNA, no de puerta: la dirección exacta no está
+   confirmada y el pie lo dice en vez de fingir un punto. */
+.mapa { margin: 1.6rem 0 0; border: 1px solid var(--zinc); border-radius: 10px; overflow: hidden; background: var(--papel-2); }
+.mapa img { display: block; width: 100%; height: auto; aspect-ratio: 16 / 10; object-fit: cover; }
+.mapa__pie {
+  display: flex; flex-direction: column; gap: .35rem;
+  padding: .7rem .9rem;
+  font-size: var(--p--1); line-height: 1.45;
+  color: var(--medio); background: var(--papel);
+  border-top: 1px solid var(--zinc);
+}
+.mapa__pie b { color: var(--fierro); }
+.mapa__cred { font-family: var(--mono, ui-monospace, monospace); opacity: .85; }
+.mapa__pie a { color: var(--verde); }

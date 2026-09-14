@@ -1,0 +1,50 @@
+[
+    {
+        "archivo":  "port.mp4",
+        "fecha":  "2026-09-08 12:56",
+        "bitrate":  1100,
+        "duracion":  10,
+        "url":  "https://videos.pexels.com/video-files/34422441/14582393_1280_720_30fps.mp4",
+        "tipo":  "video",
+        "autor":  "",
+        "ancho":  1280,
+        "licencia":  "",
+        "atribucion":  false,
+        "fuente":  "",
+        "inicio":  2,
+        "titulo":  "",
+        "pagina":  ""
+    },
+    {
+        "archivo":  "cita.mp4",
+        "fecha":  "2026-09-08 12:57",
+        "bitrate":  1300,
+        "duracion":  10,
+        "url":  "https://videos.pexels.com/video-files/1327504/1327504-hd_1280_720_30fps.mp4",
+        "tipo":  "video",
+        "autor":  "",
+        "ancho":  1280,
+        "licencia":  "",
+        "atribucion":  false,
+        "fuente":  "",
+        "inicio":  1,
+        "titulo":  "",
+        "pagina":  ""
+    },
+    {
+        "archivo":  "port.mp4",
+        "fecha":  "2026-09-08 13:23",
+        "bitrate":  2400,
+        "duracion":  10,
+        "url":  "https://videos.pexels.com/video-files/34422441/14582393_1280_720_30fps.mp4",
+        "tipo":  "video",
+        "autor":  "",
+        "ancho":  1280,
+        "licencia":  "",
+        "atribucion":  false,
+        "fuente":  "",
+        "inicio":  4,
+        "titulo":  "",
+        "pagina":  ""
+    }
+]

@@ -1,0 +1,22 @@
+FUENTES DE LAS IMAGENES - Ferretería La Nueva Rehecha el 13-09-2026 (presentacion antes que texto). Fotos de REFERENCIA de bancos libres: ninguna es del local; las verdaderas las tiene que mandar el negocio. 
+port-01.jpg  <-  pozo-p-nueva-ampolletas\009.jpg  |  pexels (Pexels License)  |  autor: Matthis Volquardsen  |  https://www.pexels.com/es-es/foto/bombillas-2156926/  |  consulta: "light bulbs"
+hund1-01.jpg  <-  pozo-p-nueva-brochas\003.jpg  |  pexels (Pexels License)  |  autor: Nuray  Yakın  |  https://www.pexels.com/es-es/foto/arte-pintar-pintura-caja-17650670/  |  consulta: "paint brushes"
+hund2-01.jpg  <-  pozo-p-nueva-gasfiteria\007.png  |  pexels (Pexels License)  |  autor: Jasmijn Van der Maaten  |  https://www.pexels.com/es-es/foto/industria-valvulas-oxidado-enfoque-selectivo-10990766/  |  consulta: "plumbing pipes"
+hund3-01.jpg  <-  pozo-p-nueva-ampolletas\008.jpg  |  pexels (Pexels License)  |  autor: ROMAN ODINTSOV  |  https://www.pexels.com/es-es/foto/colgando-bombillas-incandescente-tiro-vertical-5337502/  |  consulta: "light bulbs"
+hund4-01.jpg  <-  pozo-p-nueva-jardin\011.jpg  |  pexels (Pexels License)  |  autor: Gary  Barnes  |  https://www.pexels.com/es-es/foto/soleado-textura-jardin-granja-6231826/  |  consulta: "garden tools"
+hund5-01.jpg  <-  pozo-p-nueva-cuerda\007.jpg  |  pexels (Pexels License)  |  autor: Laura Stanley  |  https://www.pexels.com/es-es/foto/cuerda-cordaje-grueso-de-cerca-11150809/  |  consulta: "rope coil"
+hund6-01.jpg  <-  pozo-p-nueva-candado\010.jpg  |  pexels (Pexels License)  |  autor: Hernán Nikolajezyk  |  https://www.pexels.com/es-es/foto/bloqueado-cerrado-con-llave-candado-oxidado-14459988/  |  consulta: "padlock"
+banda-01.jpg  <-  pozo-p-nueva-cuerda\008.jpg  |  pexels (Pexels License)  |  autor: FishhuntFlorida Outdoors  |  https://www.pexels.com/es-es/foto/pared-muro-lineas-carrete-15860807/  |  consulta: "rope coil"
+cita-01.jpg  <-  pozo-p-nueva-brochas\012.jpg  |  pexels (Pexels License)  |  autor: Santos Malekar  |  https://www.pexels.com/es-es/foto/pinceles-variados-sobre-fondo-de-lienzo-36342393/  |  consulta: "paint brushes"
+mos1-01.jpg  <-  pozo-p-nueva-ampolletas\001.jpg  |  pexels (Pexels License)  |  autor: Rulo Mora  |  https://www.pexels.com/es-es/foto/ligero-lamparas-ventanas-colgando-14161062/  |  consulta: "light bulbs"
+mos2-01.jpg  <-  pozo-p-nueva-jardin\006.jpg  |  pexels (Pexels License)  |  autor: cottonbro studio  |  https://www.pexels.com/es-es/foto/naturaleza-jardin-plantas-fresco-4503269/  |  consulta: "garden tools"
+mos3-01.jpg  <-  pozo-p-nueva-cuerda\001.jpg  |  pexels (Pexels License)  |  autor: Arın  Turkay  |  https://www.pexels.com/es-es/foto/cuerda-blanca-439223/  |  consulta: "rope coil"
+mos4-01.jpg  <-  pozo-p-nueva-candado\004.jpg  |  pexels (Pexels License)  |  autor: Nicholas  Githiri  |  https://www.pexels.com/es-es/foto/fotografia-en-primer-plano-del-candado-humedo-1068349/  |  consulta: "padlock"
+mos5-01.jpg  <-  pozo-p-nueva-gasfiteria\011.jpg  |  pexels (Pexels License)  |  autor: nabil atiche  |  https://www.pexels.com/es-es/foto/lampara-industrial-steampunk-en-pared-de-ladrillo-37808456/  |  consulta: "plumbing pipes"
+mos6-01.jpg  <-  pozo-p-nueva-brochas\005.jpg  |  pexels (Pexels License)  |  autor: Townsend Walton  |  https://www.pexels.com/es-es/foto/una-colorida-coleccion-de-pinceles-en-un-frasco-de-vidrio-31546975/  |  consulta: "paint brushes"
+
+BRUMA (bruma-pag-0N.png y bruma-osc-0N.png, 30x20): las MISMAS fotos, recortadas a 3:2, reducidas y
+recoloreadas con C:\devs\demos\hacer-bruma.ps1 (clara >= 0,68 de luminancia / oscura <= 0,05). No suman fuentes.
+    pagina: port-01.jpg, banda-01.jpg, cita-01.jpg, hund1-01.jpg, hund3-01.jpg, hund4-01.jpg, mos1-01.jpg, mos4-01.jpg   |   oscuras: port-01.jpg, cita-01.jpg, banda-01.jpg
+
+MAPA: iframe de Google Maps (embed publico, sin clave). No hay imagen de mapa.

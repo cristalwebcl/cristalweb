@@ -1,27 +1,176 @@
-FONDOS GENERICOS DE RUBRO — Veterinaria Vetval
-==============================================
+FONDOS GENERICOS DE RUBRO — Veterinaria Vetval (Valdivia)
+=========================================================
 
-TODAS las imagenes de esta pagina son genericas: de esta veterinaria
-no hay fotos propias verificables.
+TODAS las imagenes de esta pagina son genericas: de esta veterinaria no
+hay fotos propias verificables. Ninguna lleva marca de tercero legible,
+ningun precio, ningun menor identificable. Todas son de Pexels, bajo la
+licencia Pexels (uso libre, comercial incluido, sin credito obligatorio).
+El credito se anota igual por respeto al autor y para poder rehacer el
+recorte si hiciera falta.
 
-Se eligieron escenas de CONSULTA y no de quirofano, y ninguna con el
-animal sufriendo: la pagina trata de precios y de confianza, y una
-demo llena de imagenes duras espanta justo a quien esta dudando si
-venir. La de la balanza va en la cita porque muestra un numero, que
-es de lo que trata la pagina.
+Criterio: escenas de CONSULTA y de vinculo con el animal, ninguna de
+quirofano y ninguna con el animal sufriendo. La pagina trata de precios y
+de confianza; una demo llena de imagenes duras espanta justo a quien esta
+dudando si venir.
 
-Todas de Pexels (uso libre, sin credito obligatorio):
+NO HAY VIDEO en esta demo — decision de Yordy: el clip se reserva para
+los negocios mejor valorados. Por eso el peso va en fotos grandes.
 
-  port-01.jpg   portada   2560px cal.88   <- revision con otoscopio
-  media-01.jpg  mitades   2200px cal.86   <- perro sostenido en la atencion
-  cita-01.jpg   cita      2200px cal.86   <- gato en la balanza, con el peso
-  tira-01/02/03 tira      1100px cal.84
-  aura-01.jpg   aura       900px cal.70
+Procesado en esta maquina con WIC + JpegBitmapEncoder (no hay ffmpeg ni
+ImageMagick; el encoder WebP no existe, todo sale JPEG).
 
-URL de origen:
-001.jpg | 6000x4000 | Royal Veterinary College: Programs, Admissions, Careers | https://images.pexels.com/photos/33394308/pexels-photo-33394308.jpeg
-002.jpg | 6000x4000 | Download | https://images.pexels.com/photos/33394316/pexels-photo-33394316.jpeg?cs=srgb&dl=pexels-tahir-x-lf-2153788153-33394316.jpg&fm=jpg
-003.jpg | 5747x3831 | Understanding Mobile Veterinary Pet Euthanasia - Howharddoyousparkle.com | https://images.pexels.com/photos/6235240/pexels-photo-6235240.jpeg
-004.jpg | 5184x3456 | Vet Vaccinating Adult Tan Pit Bull Terrier · Free Stock Photo | https://images.pexels.com/photos/1350591/pexels-photo-1350591.jpeg?cs=srgb&dl=pexels-pranidchakan-boonrom-1350591.jpg&fm=jpg
-005.jpg | 3965x5947 | A Vet Checking a Sick Rough Collie · Free Stock Photo | https://images.pexels.com/photos/6235228/pexels-photo-6235228.jpeg?cs=srgb&dl=pexels-tima-miroshnichenko-6235228.jpg&fm=jpg
-006.jpg | 3936x2624 | Veterinary Clinic Photos, Download The BEST Free Veterinary Clinic ... | https://images.pexels.com/photos/7474853/pexels-photo-7474853.jpeg?cs=srgb&dl=pexels-mikhail-nilov-7474853.jpg&fm=jpg
+
+PASADA PREMIUM — 09-09-2026
+---------------------------
+
+  tajo-01.jpg   2200x1237  cal.84  recorte 16:9
+                franja a sangre despues de la pieza firma — la duena y el
+                veterinario conversando en el meson
+                Pexels | Pexels License | Tima Miroshnichenko
+                https://www.pexels.com/es-es/foto/hombre-mujer-animal-perro-6235124/
+                https://images.pexels.com/photos/6235124/pexels-photo-6235124.jpeg
+
+  tajo-02.jpg   2200x1238  cal.84  recorte 16:9
+                segunda franja a sangre, antes del contacto — revision
+                sobre la mesa de consulta
+                Pexels | Pexels License | Tima Miroshnichenko
+                https://www.pexels.com/es-es/foto/hombre-persona-animal-perro-6235114/
+                https://images.pexels.com/photos/6235114/pexels-photo-6235114.jpeg
+
+  telon-02.jpg  1200x800   cal.62  recorte 3:2
+                telon de la seccion «Antes de venir», al 12 % de opacidad
+                Pexels | Pexels License | Tima Miroshnichenko
+                https://www.pexels.com/es-es/foto/animal-perro-mascota-clinica-6234611/
+                https://images.pexels.com/photos/6234611/pexels-photo-6234611.jpeg
+
+  mos-01.jpg    1200x800   cal.78  recorte 3:2   mosaico, celda ancha
+                Pexels | Pexels License | HONG SON
+                https://www.pexels.com/es-es/foto/animal-mascota-gato-mamifero-6176454/
+                https://images.pexels.com/photos/6176454/pexels-photo-6176454.jpeg
+
+  mos-02.jpg    820x1093   cal.80  recorte 3:4
+                Pexels | Pexels License | Arturas Kokorevas
+                https://www.pexels.com/es-es/foto/animal-mascota-gato-mamifero-12771409/
+                https://images.pexels.com/photos/12771409/pexels-photo-12771409.jpeg
+
+  mos-03.jpg    820x1093   cal.78  recorte 3:4
+                Pexels | Pexels License | Mike Art
+                https://www.pexels.com/es-es/foto/perfil-de-un-perro-al-aire-libre-en-asturias-39384029/
+                https://images.pexels.com/photos/39384029/pexels-photo-39384029.jpeg
+
+  mos-04.jpg    1200x800   cal.78  recorte 3:2   mosaico, celda ancha
+                Pexels | Pexels License | Sam Lion
+                https://www.pexels.com/es-es/foto/amor-mujer-animal-mascota-6001214/
+                https://images.pexels.com/photos/6001214/pexels-photo-6001214.jpeg
+
+  mos-05.jpg    820x1093   cal.80  recorte 3:4
+                Pexels | Pexels License | Mikhail Nilov
+                https://www.pexels.com/es-es/foto/hombre-persona-animal-perro-7470631/
+                https://images.pexels.com/photos/7470631/pexels-photo-7470631.jpeg
+
+  mos-06.jpg    820x1093   cal.78  recorte 3:4
+                Pexels | Pexels License | Tima Miroshnichenko
+                https://www.pexels.com/es-es/foto/mano-cuidado-de-la-salud-sanidad-revision-6234624/
+                https://images.pexels.com/photos/6234624/pexels-photo-6234624.jpeg
+
+  mos-07.jpg    820x1093   cal.78  recorte 3:4
+                Pexels | Pexels License | Tima Miroshnichenko
+                https://www.pexels.com/es-es/foto/mujer-animal-perro-mascota-6234613/
+                https://images.pexels.com/photos/6234613/pexels-photo-6234613.jpeg
+
+  mos-08.jpg    820x1093   cal.80  recorte 3:4
+                Pexels | Pexels License | Arina Krasnikova
+                https://www.pexels.com/es-es/foto/manos-sosteniendo-un-gato-blanco-y-negro-7726309/
+                https://images.pexels.com/photos/7726309/pexels-photo-7726309.jpeg
+
+  mos-09.jpg    820x1093   cal.80  recorte 3:4
+                Pexels | Pexels License | Mikhail Nilov
+                https://www.pexels.com/es-es/foto/hombre-botellas-profesional-doctor-7407055/
+                https://images.pexels.com/photos/7407055/pexels-photo-7407055.jpeg
+
+  mos-10.jpg    820x1093   cal.78  recorte 3:4
+                Pexels | Pexels License | FOX
+                https://www.pexels.com/es-es/foto/gato-blanco-sentado-en-una-mesa-en-un-cafe-acogedor-38325490/
+                https://images.pexels.com/photos/38325490/pexels-photo-38325490.jpeg
+
+  media-01.jpg  1400x1050  cal.86  RECORTADA de nuevo el 09-09-2026
+                Es la misma foto de antes, pero recortada por la izquierda
+                para sacar de cuadro una polera azul que decia VOLUNTEER:
+                a media pantalla se leia entera y prometia un refugio, no
+                una clinica. Queda el perro y las manos del veterinario.
+                Pexels | Pexels License | Mikhail Nilov
+                https://images.pexels.com/photos/7474853/pexels-photo-7474853.jpeg
+
+  Se sacaron de la carpeta: banda-01.jpg (el tajo viejo, de solo 1100 px,
+  reemplazado por tajo-01) y las seis mos-01..06 anteriores, que eran
+  recortes de las mismas fotos que ya salian mas arriba en la pagina.
+
+
+LO QUE YA ESTABA (01-09-2026)
+-----------------------------
+
+  port-01.jpg   2560px cal.88   revision con otoscopio (portada)
+  cita-01.jpg   2200px cal.86   gato en la balanza, con el peso a la vista
+                                — va en la cita porque muestra un numero,
+                                que es de lo que trata la pagina
+  telon-01.jpg  1200px cal.62   telon de la pieza firma
+  aura-01.jpg    900px cal.70   aura de color (reventada a blur 64px)
+  tira-01.jpg   1100px cal.84   tira, pieza 1
+  tira-02.jpg   1100px cal.84   tira, pieza 2
+  tira-03.jpg   1100px cal.84   tira, pieza 3
+
+  URL de origen de ese lote (todas Pexels, Pexels License):
+  https://images.pexels.com/photos/33394308/pexels-photo-33394308.jpeg
+  https://images.pexels.com/photos/33394316/pexels-photo-33394316.jpeg
+  https://images.pexels.com/photos/6235240/pexels-photo-6235240.jpeg
+  https://images.pexels.com/photos/1350591/pexels-photo-1350591.jpeg
+  https://images.pexels.com/photos/6235228/pexels-photo-6235228.jpeg
+  https://images.pexels.com/photos/7474853/pexels-photo-7474853.jpeg
+
+
+DESCARTADAS A PROPOSITO
+-----------------------
+
+  · Un hombre paseando a su perro en un carrito por la calle
+    (pexels-photo-38959960). Buena foto, pero la parka roja lleva una
+    marca legible en la espalda a tamano real. Regla de la casa:
+    ninguna marca de tercero.
+  · Todas las de quirofano y las de monitores con marca del equipo
+    (se leia «Eickemeyer / LifeVet M»).
+  · Las tres de voluntariado con la palabra VOLUNTEER en la polera:
+    prometen un refugio y esto es una clinica.
+  · plus.unsplash.com: es de pago y el filtro lo cuela como libre.
+
+PASADA PREMIUM — 10-09-2026
+---------------------------
+
+  port-01.jpg   2560x1707  cal.90  ESPEJADA el 10-09-2026
+                Es la MISMA foto de antes (revision con otoscopio), dada
+                vuelta en horizontal. Motivo: el sujeto —el veterinario
+                de azul, la mano con guante y la cabeza del perro— vivia
+                en el tercio IZQUIERDO, que es justo el que la mascara
+                de la portada borra para dejar sitio al titular. Al lado
+                opaco le quedaba una pared blanca vacia y la portada se
+                leia muerta. Espejada, el sujeto cae en el lado nitido y
+                la pared se disuelve bajo el texto.
+                No hay ni un texto en cuadro, asi que espejar no deja
+                nada al reves; y el aparato no tiene marca legible (se
+                revisto a tamano real antes de tocarla).
+                Pexels | Pexels License | permite modificar
+
+  mapa-01.jpg   768x768  zoom 16  centro -39.7949114, -73.2130567
+                Av. Pedro Aguirre Cerda, Valdivia, Region de Los Rios.
+                Mosaicos de OpenStreetMap pegados en una sola imagen,
+                con el marcador dibujado encima por mapa-negocio.ps1.
+                Nominatim ubico la AVENIDA, no el numero 1102: para un
+                mapa de barrio alcanza y el pie de la figura lo dice.
+                Datos (c) OpenStreetMap contributors, licencia ODbL: la
+                atribucion va VISIBLE en el pie del mapa y no se saca.
+                https://www.openstreetmap.org/copyright
+                Comprobacion del punto:
+                https://www.openstreetmap.org/?mlat=-39.7949114&mlon=-73.2130567#map=17/-39.7949114/-73.2130567
+
+  Se descarto un primer mapa: con la direccion escrita «Avenida Pedro
+  Aguirre Cerda 1102, Valdivia, Chile» Nominatim la resolvio en San
+  Pedro de la Paz, Region del Biobio. Hay que nombrar la region («Los
+  Rios») o devuelve otra comuna con calle homonima.

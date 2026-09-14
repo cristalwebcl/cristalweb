@@ -1,0 +1,22 @@
+FUENTES DE LAS IMAGENES - Salon Tamara Beiza Rehecha el 14-09-2026 (presentacion antes que texto). Fotos de REFERENCIA de bancos libres: ninguna es del local; las verdaderas las tiene que mandar el negocio. 
+port-01.jpg  <-  pozo-p-tb-reloj\011.jpg  |  pexels (Pexels License)  |  autor: Dominiquemel16 Ramos  |  https://www.pexels.com/es-es/foto/elegante-reloj-de-arena-de-cristal-al-atardecer-con-efecto-bokeh-37113103/  |  consulta: "hourglass"
+hund1-01.jpg  <-  pozo-p-tb-peine\009.jpg  |  pexels (Pexels License)  |  autor: Nataliya Vaitkevich  |  https://www.pexels.com/es-es/foto/herramientas-salon-de-belleza-naturaleza-muerta-accesorios-8468165/  |  consulta: "comb brush flat lay"
+hund2-01.jpg  <-  pozo-p-tb-peine\004.jpg  |  pexels (Pexels License)  |  autor: Nataliya Vaitkevich  |  https://www.pexels.com/es-es/foto/herramientas-salon-de-belleza-naturaleza-muerta-accesorios-8468151/  |  consulta: "comb brush flat lay"
+hund3-01.jpg  <-  pozo-p-tb-sillon\011.jpg  |  pexels (Pexels License)  |  autor: cottonbro studio  |  https://www.pexels.com/es-es/foto/habitacion-sillas-interior-mueble-3993293/  |  consulta: "empty salon chair"
+hund4-01.jpg  <-  pozo-p-tb-unas\008.jpg  |  pexels (Pexels License)  |  autor: cottonbro studio  |  https://www.pexels.com/es-es/foto/manos-mujer-mano-colorido-3997377/  |  consulta: "manicure table"
+hund5-01.jpg  <-  pozo-p-tb-flor\002.jpg  |  pexels (Pexels License)  |  autor: Engin Akyurt  |  https://www.pexels.com/es-es/foto/flores-floracion-flora-gloria-de-la-manana-14933701/  |  consulta: "purple flowers dark"
+hund6-01.jpg  <-  pozo-p-tb-peine\007.jpg  |  pexels (Pexels License)  |  autor: Nati  |  https://www.pexels.com/es-es/foto/elegante-disposicion-plana-de-accesorios-de-belleza-y-cabello-30988733/  |  consulta: "comb brush flat lay"
+banda-01.jpg  <-  pozo-p-tb-pared\012.jpg  |  pexels (Pexels License)  |  autor: KATRIN  BOLOVTSOVA  |  https://www.pexels.com/es-es/foto/redondo-reloj-moderno-analogico-6077674/  |  consulta: "wall clock minimal"
+cita-01.jpg  <-  pozo-p-tb-flor\006.jpg  |  pexels (Pexels License)  |  autor: CAMERA TREASURE  |  https://www.pexels.com/es-es/foto/floreciente-precioso-bonito-flores-moradas-7774067/  |  consulta: "purple flowers dark"
+mos1-01.jpg  <-  pozo-p-tb-reloj\006.jpg  |  pexels (Pexels License)  |  autor: Creative Cen  |  https://www.pexels.com/es-es/foto/hora-tiempo-temporizador-cuenta-atras-6672308/  |  consulta: "hourglass"
+mos2-01.jpg  <-  pozo-p-tb-flor\012.jpg  |  pexels (Pexels License)  |  autor: Cátia Matos  |  https://www.pexels.com/es-es/foto/naturaleza-flores-purpura-morado-7546298/  |  consulta: "purple flowers dark"
+mos3-01.jpg  <-  pozo-p-tb-toalla\009.jpg  |  pexels (Pexels License)  |  autor: Dom J  |  https://www.pexels.com/es-es/foto/alfombras-blancas-y-granate-45980/  |  consulta: "salon towels stack"
+mos4-01.jpg  <-  pozo-p-tb-pared\009.jpg  |  pexels (Pexels License)  |  autor: Nguyễn Vũ  |  https://www.pexels.com/es-es/foto/hora-tiempo-reloj-colgando-14988374/  |  consulta: "wall clock minimal"
+mos5-01.jpg  <-  pozo-p-tb-flor\004.jpg  |  pexels (Pexels License)  |  autor: Wyxina Tresse  |  https://www.pexels.com/es-es/foto/flores-floracion-flor-flora-14680405/  |  consulta: "purple flowers dark"
+mos6-01.jpg  <-  pozo-p-tb-peine\010.jpg  |  pexels (Pexels License)  |  autor: alleksana  |  https://www.pexels.com/es-es/foto/de-madera-naturaleza-muerta-cepillos-pinceles-4406794/  |  consulta: "comb brush flat lay"
+
+BRUMA (bruma-pag-0N.png y bruma-osc-0N.png, 30x20): las MISMAS fotos, recortadas a 3:2, reducidas y
+recoloreadas con C:\devs\demos\hacer-bruma.ps1 (clara >= 0,68 de luminancia / oscura <= 0,05). No suman fuentes.
+    pagina: mos1-01.jpg, cita-01.jpg, hund5-01.jpg, mos2-01.jpg, hund4-01.jpg   |   oscuras: cita-01.jpg, mos1-01.jpg, hund5-01.jpg
+
+MAPA: iframe de Google Maps (embed publico, sin clave). No hay imagen de mapa.

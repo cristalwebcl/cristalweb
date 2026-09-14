@@ -1,0 +1,504 @@
+/* ══════════════════════════════════════════════════════════════════════
+   Taller Mecánico El Zapato — Puente Alto
+   Demo de CristalWeb. CSS plano, sin build, sin librerías.
+
+   IDENTIDAD — «PISO DE TALLER Y TESTIGO VERDE»
+   Un gris de piso de taller, blanco, y el verde de un testigo de
+   tablero encendido como único acento de interfaz.
+
+   LA REGLA DE ESTA HOJA: UN SOLO VERDE ENCENDIDO A LA VEZ.
+   En un tablero, ver muchas luces prendidas es mala señal. Acá pasa lo
+   mismo: por cada pantalla hay UN elemento en verde y nada más —el
+   testigo que quedó encendido en la portada, el botón principal, el
+   rótulo de la sección, la marca de la cabecera—. El resto es blanco y
+   gris. El verde no decora: avisa.
+
+   LOS OTROS COLORES DEL TABLERO SON OBJETO, no paleta: el rojo
+   `#E8474C` y el ámbar `#F0A72A` existen SÓLO dentro de los seis
+   testigos de la pieza firma y del borde superior de su tarjeta,
+   porque un testigo de aceite que no fuera rojo sería una mentira.
+   Misma mecánica que la 20 con los esmaltes y la 25 con el semáforo.
+
+   DESLINDE OBLIGATORIO con la 25 (Escuela Los 80, construida el mismo
+   día), que también es una página oscura con el tablero de un auto:
+     · aquélla es NEGRO de plástico (`#121110`, 30° s4 l7) y ésta es un
+       GRIS de piso (`#2C322E`, 140° s6 l18): once puntos más clara y
+       con una pizca de verde, que es el color del piso pintado de un
+       taller, no el del salpicadero.
+     · aquélla tiene un ámbar de aguja en 28° y ésta un verde de
+       testigo en 127°: noventa y nueve grados de distancia.
+     · allá el tablero es la PIEL de la página —una escuela de
+       conductores vestida de auto—; acá el tablero es el CONTENIDO:
+       son las luces las que se explican.
+     · y la mecánica es distinta: allá la regla era «ni una sombra ni un
+       degradado»; acá es «un solo verde encendido a la vez».
+
+   EL HEX DEL VERDE. `#3ADE4D` es 127° con 71 % de saturación y 55 %
+   de luminosidad. En el registro, la franja 110°-132° estaba VACÍA por
+   debajo de 133°: el vecino más cercano es `#3FB558` (133° s48 l48),
+   que es el verde del semáforo de la 25 y es veintitrés puntos menos
+   saturado; después vienen `#34A853` (136°, el verde de aprobado de la
+   15) y `#35D07A` (147°). Nada del registro es un verde de LUZ: todos
+   son verdes de pintura. Y no es el verde máquina de la 07 ni el verde
+   malla de la 46.
+
+   DESLINDE de rubro, el tercer taller de la tanda y el tercero de
+   Puente Alto: la 09 es goma y baliza, la 31 hielo y grafito, la 40 va
+   a otra cosa. Ésta es la única que explica el tablero.
+
+   TRÍO TIPOGRÁFICO
+   · Display: Hubot Sans — 0 usos, y no hay ninguna otra Hubot en el
+     registro. Grotesca técnica de cantos rectos, hecha para interfaz:
+     es la letra de un instrumento, no la de un cartel.
+   · Cuerpo: Familjen Grotesk ×3 — neutra y de buena altura de x, para
+     leer instrucciones cortas sin cansarse.
+   · Dato: Chivo Mono ×8 — cifras tabulares parejas para el teléfono y
+     los rótulos de los testigos.
+
+   CONTRASTES MEDIDOS sobre esta página:
+     blanco  #F2F5F3 sobre piso   #2C322E .... 13,9:1
+     medio   #B2BDB6 sobre piso   #2C322E .....  6,7:1
+     medio   #B2BDB6 sobre panel  #363D39 .....  5,9:1  → en panel se
+                                                  usa el blanco
+     testigo #3ADE4D sobre piso   #2C322E .....  7,2:1
+     piso    #2C322E sobre testigo #3ADE4D .....  7,2:1  (botón lleno)
+   ══════════════════════════════════════════════════════════════════════ */
+
+:root {
+  --piso: #2C322E;
+  --piso-2: #363D39;
+  --piso-3: #46504B;
+  --blanco: #F2F5F3;
+  --medio: #B2BDB6;
+  --testigo: #3ADE4D;
+
+  /* Objeto, no paleta: sólo dentro de los seis testigos. */
+  --tst-rojo: #E8474C;
+  --tst-ambar: #F0A72A;
+
+  --ancho: 1160px;
+  --display: 'Hubot Sans', system-ui, sans-serif;
+  --cuerpo: 'Familjen Grotesk', system-ui, -apple-system, 'Segoe UI', sans-serif;
+  --mono: 'Chivo Mono', ui-monospace, 'Consolas', monospace;
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+
+html { scroll-behavior: smooth; }
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+
+body {
+  margin: 0;
+  background: var(--piso);
+  color: var(--blanco);
+  font-family: var(--cuerpo);
+  font-size: clamp(1rem, .96rem + .22vw, 1.09rem);
+  line-height: 1.64;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* height: auto o el atributo height del <img> gana y aspect-ratio se
+   ignora en silencio: las fotos salen larguísimas. */
+img { max-width: 100%; height: auto; display: block; }
+[hidden] { display: none; }
+
+a { color: var(--testigo); }
+a:focus-visible { outline: 3px solid var(--testigo); outline-offset: 3px; }
+
+.ancho { width: min(100% - 2.5rem, var(--ancho)); margin-inline: auto; }
+
+.rotulo {
+  margin: 0 0 .7rem;
+  font-family: var(--mono);
+  font-size: .73rem; letter-spacing: .16em; text-transform: uppercase;
+  color: var(--testigo);
+}
+
+.titulo {
+  font-family: var(--display); font-weight: 700;
+  font-size: clamp(2rem, 1.3rem + 3vw, 3.3rem);
+  line-height: 1.06; letter-spacing: -.015em;
+  margin: 0 0 1.1rem;
+}
+.titulo--chico { font-size: clamp(1.5rem, 1.15rem + 1.7vw, 2.2rem); }
+
+.entrada { max-width: 66ch; color: var(--medio); margin: 0 0 2.2rem; }
+.entrada b { color: var(--blanco); }
+.mini { font-size: .87rem; color: var(--medio); }
+.dato { font-family: var(--mono); font-variant-numeric: tabular-nums; }
+
+.ej { border-bottom: 1px dotted var(--medio); cursor: help; }
+.ej::after {
+  content: ' (ej.)';
+  font-family: var(--mono); font-size: .7em;
+  color: var(--medio); letter-spacing: .02em;
+}
+
+/* ── Botones ──────────────────────────────────────────────────────── */
+.bt {
+  display: inline-flex; align-items: center; justify-content: center;
+  padding: .86rem 1.55rem;
+  border: 2px solid transparent; border-radius: 4px;
+  text-decoration: none;
+  font-family: var(--display); font-weight: 700;
+  font-size: 1.02rem;
+  transition: background-color .2s ease, border-color .2s ease, color .2s ease;
+}
+.bt--lleno { background: var(--testigo); color: var(--piso); }
+.bt--lleno:hover, .bt--lleno:focus-visible { background: var(--blanco); }
+.bt--linea { border-color: var(--piso-3); color: var(--blanco); }
+.bt--linea:hover, .bt--linea:focus-visible { border-color: var(--blanco); }
+
+/* ── Banda de propuesta ──────────────────────────────────────────── */
+.propuesta { background: #232825; border-bottom: 1px solid var(--piso-3); padding: .95rem 0; }
+.propuesta__in { display: grid; gap: .35rem; }
+.propuesta__q {
+  margin: 0;
+  font-family: var(--mono); font-size: .71rem;
+  letter-spacing: .1em; text-transform: uppercase; color: var(--testigo);
+}
+.propuesta__d { margin: 0; font-size: .93rem; color: var(--medio); max-width: 92ch; }
+.propuesta__d b { color: var(--blanco); }
+
+/* ── Cabecera ─────────────────────────────────────────────────────
+   Va ARRIBA de la portada en el flujo, no encima. ── */
+.cab {
+  position: sticky; top: 0; z-index: 50;
+  background: rgba(44, 50, 46, .95);
+  border-bottom: 1px solid var(--piso-3);
+  transition: transform .3s ease;
+}
+@supports (backdrop-filter: blur(8px)) {
+  .cab { backdrop-filter: blur(8px); background: rgba(44, 50, 46, .85); }
+}
+.js .cab--oculta { transform: translateY(-105%); }
+.cab__in { display: flex; align-items: center; justify-content: space-between; gap: 1.4rem; min-height: 62px; padding: .5rem 0; }
+.cab__marca { display: inline-flex; align-items: center; gap: .7rem; text-decoration: none; color: var(--blanco); }
+/* La marca es EL testigo encendido: el único verde de la cabecera. */
+.marca__l { width: 13px; height: 13px; border-radius: 50%; flex: none; background: var(--testigo); }
+.cab__txt { display: flex; flex-direction: column; font-family: var(--display); font-weight: 700; font-size: 1.04rem; line-height: 1.12; }
+.cab__sub {
+  font-family: var(--mono); font-weight: 400;
+  font-size: .62rem; letter-spacing: .12em; text-transform: uppercase;
+  color: var(--medio); margin-top: .2rem;
+}
+.cab__nav { display: flex; align-items: center; gap: 1.5rem; }
+.cab__nav a { color: var(--medio); text-decoration: none; font-size: .92rem; white-space: nowrap; }
+.cab__nav a:hover { color: var(--blanco); }
+.cab__tel {
+  font-family: var(--mono); font-variant-numeric: tabular-nums;
+  color: var(--blanco) !important;
+  border: 1px solid var(--piso-3); border-radius: 4px;
+  padding: .4rem .9rem;
+}
+.cab__tel:hover { border-color: var(--blanco); }
+@media (max-width: 940px) { .cab__nav a:not(.cab__tel) { display: none; } }
+
+/* ── Portada ──────────────────────────────────────────────────────── */
+.portada { padding: clamp(3rem, 7vw, 5.5rem) 0 clamp(2.5rem, 5vw, 4rem); border-bottom: 1px solid var(--piso-3); }
+.portada__h1 {
+  font-family: var(--display); font-weight: 700;
+  font-size: clamp(2.4rem, 1.5rem + 4vw, 4.4rem);
+  line-height: 1.02; letter-spacing: -.025em;
+  margin: 0 0 1.2rem; max-width: 18ch;
+}
+.portada__p { max-width: 58ch; color: var(--medio); margin: 0 0 1.9rem; }
+.portada__p b { color: var(--blanco); }
+.portada__bts { display: flex; flex-wrap: wrap; gap: .8rem; margin-bottom: clamp(2rem, 4vw, 3rem); }
+.portada__cif { list-style: none; margin: clamp(2rem, 4vw, 3rem) 0 0; padding: 0; display: flex; flex-wrap: wrap; gap: 2.4rem; }
+.portada__cif li { border-left: 2px solid var(--piso-3); padding-left: .9rem; }
+.cif__n { display: block; font-family: var(--display); font-weight: 700; font-size: 2rem; line-height: 1; }
+.cif__u {
+  display: block; margin-top: .3rem;
+  font-family: var(--mono); font-size: .65rem;
+  letter-spacing: .13em; text-transform: uppercase; color: var(--medio);
+}
+
+/* ── ESCENA: el tablero al dar contacto ────────────────────────────
+   Los seis testigos se encienden TODOS a la vez —como al girar la
+   llave— y después se apagan uno a uno hasta que queda el verde.
+   Sin reposo. ── */
+.escena {
+  padding: clamp(1.2rem, 2.5vw, 1.8rem) clamp(1rem, 2vw, 1.6rem);
+  background: #232825;
+  border: 1px solid var(--piso-3);
+  border-radius: 6px;
+}
+.tb { width: 100%; height: auto; display: block; }
+.tb__t { fill: var(--medio); }
+.tb__t .tb__n { fill: #232825; }
+.tb__t .tb__o { fill: none; stroke: var(--medio); stroke-width: 3.4; stroke-linecap: round; }
+.tb__t--ok { fill: var(--testigo); }
+.tb__t--ok .tb__o { stroke: var(--testigo); }
+.tb__abs { fill: #232825; font-family: var(--display); font-weight: 700; font-size: 11px; text-anchor: middle; }
+
+/* Sin JavaScript: sólo el verde encendido, los demás apagados. */
+.tb__t { opacity: .13; }
+.tb__t--ok { opacity: 1; }
+.js .escena--va .tb__t { animation: tb-pasa 1.5s linear forwards; }
+.js .escena--va .tb__t--1 { animation-delay: 0s; }
+.js .escena--va .tb__t--2 { animation-delay: .16s; }
+.js .escena--va .tb__t--3 { animation-delay: .32s; }
+.js .escena--va .tb__t--4 { animation-delay: .48s; }
+.js .escena--va .tb__t--5 { animation-delay: .64s; }
+.js .escena--va .tb__t--ok { animation: tb-queda .25s linear forwards; animation-delay: 0s; }
+@keyframes tb-pasa  { 0% { opacity: .13 } 12% { opacity: 1 } 55% { opacity: 1 } 100% { opacity: .13 } }
+@keyframes tb-queda { 0% { opacity: .13 } to { opacity: 1 } }
+
+.escena__pie {
+  margin: .9rem 0 0; text-align: center;
+  font-family: var(--mono); font-size: .66rem;
+  letter-spacing: .15em; text-transform: uppercase; color: var(--medio);
+}
+
+/* ── PIEZA FIRMA: las luces del tablero ───────────────────────────── */
+.luces { padding: clamp(3.2rem, 7vw, 5.5rem) 0; }
+.tl { display: grid; grid-template-columns: repeat(3, 1fr); gap: clamp(1rem, 2.2vw, 1.5rem); }
+.tl__c {
+  padding: clamp(1.2rem, 2.4vw, 1.6rem);
+  background: var(--piso-2);
+  border-top: 4px solid var(--piso-3);
+  border-radius: 0 0 4px 4px;
+}
+.tl__c--rojo { border-top-color: var(--tst-rojo); }
+.tl__c--ambar { border-top-color: var(--tst-ambar); }
+.tl__ic { width: 48px; height: 48px; margin-bottom: .9rem; }
+.tl__ic svg { width: 100%; height: 100%; display: block; }
+.tl__c--rojo .tl__ic svg { fill: var(--tst-rojo); }
+.tl__c--ambar .tl__ic svg { fill: var(--tst-ambar); }
+.tl__ic svg .n { fill: var(--piso-2); }
+.tl__ic svg .o { fill: none; stroke-width: 3.6; stroke-linecap: round; }
+.tl__c--rojo .tl__ic svg .o { stroke: var(--tst-rojo); }
+.tl__c--ambar .tl__ic svg .o { stroke: var(--tst-ambar); }
+.tl__ic svg .abs { fill: var(--piso-2); font-family: var(--display); font-weight: 700; font-size: 13px; text-anchor: middle; }
+.tl__t { margin: 0 0 .7rem; font-family: var(--display); font-weight: 700; font-size: 1.3rem; line-height: 1.1; }
+.tl__q { margin: 0 0 .8rem; font-size: .93rem; color: var(--medio); }
+.tl__q b { color: var(--blanco); }
+.tl__a {
+  margin: 0; padding-top: .8rem;
+  border-top: 1px solid var(--piso-3);
+  font-size: .93rem; color: var(--medio);
+}
+.tl__a b { color: var(--blanco); }
+.tl__e { font-family: var(--display); font-weight: 700; color: var(--blanco); }
+@media (max-width: 960px) { .tl { grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 620px) { .tl { grid-template-columns: 1fr; } }
+
+.aviso {
+  margin: clamp(1.8rem, 3.5vw, 2.6rem) 0 0;
+  padding: 1.2rem 1.4rem;
+  border-left: 4px solid var(--testigo);
+  background: var(--piso-2);
+  font-size: .94rem; color: var(--medio); max-width: 86ch;
+}
+.aviso b { color: var(--blanco); }
+
+.cta {
+  margin-top: clamp(1.8rem, 3.5vw, 2.6rem);
+  display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between;
+  gap: 1.2rem;
+  padding: clamp(1.2rem, 2.5vw, 1.8rem);
+  border: 1px solid var(--piso-3); border-radius: 6px;
+}
+.cta__t { margin: 0; font-family: var(--display); font-weight: 700; font-size: clamp(1.1rem, .95rem + 1vw, 1.6rem); line-height: 1.2; max-width: 40ch; }
+
+/* ── Tajo ─────────────────────────────────────────────────────────── */
+.tajo { margin: 0; position: relative; }
+.tajo img { width: 100%; aspect-ratio: 2560 / 1180; object-fit: cover; }
+.tajo__c {
+  position: absolute; left: 0; right: 0; bottom: 0;
+  padding: 3rem 1.25rem 1.4rem;
+  text-align: center;
+  font-family: var(--display); font-weight: 700;
+  font-size: clamp(1.05rem, .82rem + 1.1vw, 1.55rem);
+  background: linear-gradient(to top, rgba(35, 40, 37, .92) 0%, rgba(35, 40, 37, 0) 100%);
+}
+@media (max-width: 640px) { .tajo img { aspect-ratio: 4 / 3; } }
+
+/* ── Qué hacen ────────────────────────────────────────────────────── */
+.hacen { padding: clamp(3rem, 6vw, 5rem) 0 clamp(1.5rem, 3vw, 2.5rem); }
+.fichas { list-style: none; margin: 0 0 1.2rem; padding: 0; display: flex; flex-wrap: wrap; gap: .6rem; }
+.fichas li { padding: .55rem 1rem; background: var(--piso-2); border-radius: 4px; font-size: .94rem; }
+
+/* ── Mitades ──────────────────────────────────────────────────────── */
+.mitades {
+  display: grid; grid-template-columns: 1fr 1fr;
+  align-items: center; gap: clamp(2rem, 5vw, 4.5rem);
+  width: min(100% - 2.5rem, var(--ancho));
+  margin: clamp(3rem, 6vw, 5rem) auto;
+}
+.mitades__foto { margin: 0; }
+.mitades__foto img { width: 100%; aspect-ratio: 4 / 3; object-fit: cover; border-radius: 4px; }
+.mitades__texto > p { color: var(--medio); }
+.huecos { display: grid; gap: .7rem; margin: 1.6rem 0 1rem; }
+.hueco { display: flex; align-items: center; gap: .9rem; }
+.hueco__m { width: 44px; height: 44px; border-radius: 50%; flex: none; border: 1px dashed var(--piso-3); background: var(--piso-2); }
+.hueco p { margin: 0; font-size: .92rem; }
+@media (max-width: 880px) { .mitades { grid-template-columns: 1fr; } }
+
+/* ── Cita ─────────────────────────────────────────────────────────── */
+.cita { margin: 0; position: relative; }
+.cita img { width: 100%; aspect-ratio: 2200 / 1240; object-fit: cover; }
+.cita__q {
+  position: absolute; inset: 0;
+  display: flex; align-items: center; justify-content: center;
+  margin: 0; padding: 1.5rem;
+  background: rgba(35, 40, 37, .8);
+}
+.cita__q p {
+  margin: 0; max-width: 32ch;
+  font-family: var(--display); font-weight: 700;
+  font-size: clamp(1.15rem, .9rem + 1.8vw, 2.2rem);
+  line-height: 1.2; text-align: center;
+}
+@media (max-width: 640px) { .cita img { aspect-ratio: 3 / 4; } }
+
+/* ── Dónde está (con telón) ───────────────────────────────────────── */
+.con-telon { position: relative; overflow: hidden; padding: clamp(3rem, 6vw, 5rem) 0; }
+.telon { position: absolute; inset: 0; z-index: 0; }
+.telon img { width: 100%; height: 100%; object-fit: cover; opacity: .5; }
+/* Velo del color DE la página, no negro genérico. */
+.telon::after {
+  content: ''; position: absolute; inset: 0;
+  background: linear-gradient(to right, rgba(44, 50, 46, .96) 0%, rgba(44, 50, 46, .86) 58%, rgba(44, 50, 46, .62) 100%);
+}
+.con-telon > .ancho { position: relative; z-index: 1; }
+.datos { list-style: none; margin: 0; padding: 0; max-width: 46rem; }
+.datos li { display: grid; grid-template-columns: 13rem 1fr; gap: 1rem; padding: .85rem 0; border-top: 1px solid var(--piso-3); }
+.datos li:last-child { border-bottom: 1px solid var(--piso-3); }
+.datos__r {
+  font-family: var(--mono); font-size: .67rem;
+  letter-spacing: .12em; text-transform: uppercase; color: var(--medio); padding-top: .25rem;
+}
+.datos__v a { text-decoration: none; }
+@media (max-width: 620px) { .datos li { grid-template-columns: 1fr; gap: .25rem; } }
+
+/* ── Mosaico ──────────────────────────────────────────────────────── */
+.mos { padding: clamp(2.5rem, 5vw, 4rem) 0 clamp(2rem, 4vw, 3rem); }
+.mos__grilla {
+  display: grid; grid-template-columns: repeat(3, 1fr); gap: .55rem;
+  width: min(100% - 2.5rem, 1300px); margin-inline: auto;
+}
+.mos__p { margin: 0; overflow: hidden; border-radius: 4px; }
+.mos__p img {
+  width: 100%; aspect-ratio: 4 / 3; object-fit: cover;
+  filter: saturate(.85) brightness(.9);
+  transition: filter .3s ease, transform .5s ease;
+}
+.mos__p:hover img { filter: saturate(1) brightness(1); transform: scale(1.03); }
+.mos__pie { margin: 1.4rem auto 0; font-size: .86rem; color: var(--medio); max-width: 76ch; }
+.mos__pie b { color: var(--blanco); }
+@media (max-width: 900px) { .mos__grilla { grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 520px) { .mos__grilla { grid-template-columns: 1fr; } }
+
+/* ── Contacto ─────────────────────────────────────────────────────── */
+.contacto { padding: clamp(3rem, 6vw, 5rem) 0; border-top: 1px solid var(--piso-3); }
+.contacto__grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1.6rem; }
+.contacto__b { border-top: 3px solid var(--piso-3); padding-top: 1rem; }
+.contacto__b:first-child { border-top-color: var(--testigo); }
+.contacto__r {
+  margin: 0 0 .4rem;
+  font-family: var(--mono); font-size: .66rem;
+  letter-spacing: .13em; text-transform: uppercase; color: var(--medio);
+}
+.contacto__v { margin: 0 0 .5rem; font-size: 1.04rem; }
+.contacto__v a { text-decoration: none; }
+@media (max-width: 900px) { .contacto__grid { grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 480px) { .contacto__grid { grid-template-columns: 1fr; } }
+
+/* ── Para el dueño ────────────────────────────────────────────────── */
+.dueno { padding: clamp(3rem, 6vw, 5rem) 0; background: #232825; border-top: 1px solid var(--piso-3); }
+.dueno__cols { display: grid; grid-template-columns: 1fr 1fr; gap: clamp(1.6rem, 4vw, 3rem); }
+.dueno__cols h3 { margin: 0 0 .7rem; font-family: var(--display); font-weight: 700; font-size: 1.32rem; color: var(--testigo); }
+.dueno__cols p { margin: 0 0 1rem; color: var(--medio); font-size: .97rem; }
+.dueno__cols b { color: var(--blanco); }
+.dueno__pie { margin: 1.8rem 0 0; font-size: .85rem; color: var(--medio); }
+.dueno__pie b { color: var(--blanco); }
+@media (max-width: 820px) { .dueno__cols { grid-template-columns: 1fr; } }
+
+/* ── Pie ──────────────────────────────────────────────────────────── */
+.pie { padding: 2rem 0 6rem; border-top: 1px solid var(--piso-3); }
+.pie__in p { margin: 0 0 .35rem; font-size: .85rem; color: var(--medio); }
+.pie__cw { font-family: var(--mono); font-size: .73rem !important; letter-spacing: .03em; }
+
+/* ── BOTON FLOTANTE DE CONTACTO ───────────────────────────────────
+   56 px de alto, por encima del mínimo táctil de 44. Teléfono de red
+   FIJA y sin redes verificadas: el botón llama. Se ve SIEMPRE por
+   defecto; el JS sólo lo aparta sobre la portada. ── */
+.flota {
+  position: fixed;
+  right: max(1rem, env(safe-area-inset-right, 0px));
+  bottom: max(1rem, env(safe-area-inset-bottom, 0px));
+  z-index: 60;
+  display: inline-flex; align-items: center; gap: .55rem;
+  height: 56px; padding: 0 1.2rem 0 1rem;
+  border-radius: 999px;
+  text-decoration: none;
+  font-family: var(--display); font-weight: 700;
+  font-size: 1rem; line-height: 1;
+  background: var(--testigo); color: var(--piso);
+  border: 3px solid #232825;
+  transition: opacity .28s ease, transform .28s ease, background-color .18s ease;
+}
+.flota__i { width: 25px; height: 25px; fill: currentColor; flex: none; }
+.flota:hover, .flota:focus-visible { transform: translateY(-2px); background: var(--blanco); }
+.js .flota--arriba { opacity: 0; transform: translateY(14px) scale(.94); pointer-events: none; }
+
+@media (max-width: 520px) {
+  .flota { width: 56px; padding: 0; justify-content: center; }
+  .flota__t { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
+}
+
+/* ── Apariciones ──────────────────────────────────────────────────── */
+.js .rev > * { opacity: 0; transform: translateY(12px); }
+.js .rev.rev--on > * { opacity: 1; transform: none; transition: opacity .5s ease, transform .5s ease; }
+.js .rev.rev--on > *:nth-child(2) { transition-delay: .06s; }
+.js .rev.rev--on > *:nth-child(3) { transition-delay: .12s; }
+.js .rev.rev--on > *:nth-child(4) { transition-delay: .18s; }
+.js .rev.rev--on > *:nth-child(5) { transition-delay: .24s; }
+.js .rev.rev--on > *:nth-child(6) { transition-delay: .3s; }
+
+/* ── Menos movimiento ─────────────────────────────────────────────
+   Con reduced-motion queda sólo el verde encendido, que es el estado
+   final de la escena: nada parpadea. ── */
+@media (prefers-reduced-motion: reduce) {
+  .js .escena--va .tb__t { animation: none; opacity: .13; }
+  .js .escena--va .tb__t--ok { animation: none; opacity: 1; }
+  .mos__p:hover img { transform: none; }
+  .flota:hover, .flota:focus-visible { transform: none; }
+  .js .flota--arriba { transform: none; }
+  .js .rev > * { opacity: 1; transform: none; }
+}
+
+/* ── MAPA DE UBICACION ──────────────────────────────────────────────
+   Imagen propia con mosaicos de OpenStreetMap pegados: la CSP prohibe
+   pedir nada a un tercero, asi que un iframe de Google Maps quedaria en
+   blanco SIN dar un solo error. El "Como llegar" si es un enlace, y un
+   enlace no lo bloquea nada.
+   Los colores salen de currentColor a proposito: asi el bloque se adapta
+   a la paleta de cada demo sin conocerla y sin chocar con ella.
+   La atribucion a OpenStreetMap la exige su licencia (ODbL). */
+.mapa-sec { padding: clamp(2.5rem, 6vw, 4.5rem) 0; }
+.mapa {
+  /* Casi siempre el mapa queda como hijo DIRECTO de la seccion, fuera del
+     contenedor .ancho: sin este ancho maximo se va de borde a borde y el
+     pie del mapa arranca pegado al filo de la pantalla. Se usa la variable
+     de la demo si existe, y 1100 px si no. */
+  width: min(100% - 2.5rem, var(--ancho, 1100px));
+  margin: 1.4rem auto 0;
+  border: 1px solid; border-color: color-mix(in srgb, currentColor 22%, transparent);
+  border-radius: 10px; overflow: hidden;
+}
+@supports not (color: color-mix(in srgb, red 50%, blue)) { .mapa { border-color: rgba(128, 128, 128, .35); } }
+.mapa img { display: block; width: 100%; height: auto; aspect-ratio: 16 / 10; object-fit: cover; }
+.mapa__pie {
+  display: flex; flex-wrap: wrap; align-items: center; gap: .4rem 1rem;
+  padding: .75rem .9rem;
+  font-size: .86em; line-height: 1.45;
+  border-top: 1px solid; border-top-color: color-mix(in srgb, currentColor 22%, transparent);
+}
+@supports not (color: color-mix(in srgb, red 50%, blue)) { .mapa__pie { border-top-color: rgba(128, 128, 128, .35); } }
+.mapa__pie b { font-weight: 700; }
+.mapa__ir { color: inherit; font-weight: 700; text-decoration: underline; min-height: 44px; display: inline-flex; align-items: center; }
+.mapa__cred { width: 100%; font-size: .84em; opacity: .8; }
+.mapa__cred a { color: inherit; }

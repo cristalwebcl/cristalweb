@@ -1,0 +1,95 @@
+FUENTES DE LAS IMAGENES Y DE LOS CLIPS — asevet-veterinaria-puerto-varas
+Bancos libres. Procesadas con preparar-lote.ps1 (JPEG, ancho y calidad
+por tratamiento). Ninguna es una foto de Asevet: son fotos de rubro.
+Ultima revision: 09-09-2026.
+
+FORMATO
+  archivo  <=  banco | licencia | autor | pagina | archivo de origen | notas
+
+
+VIDEO DE FONDO -------------------------------------------------------
+
+video/port.mp4  <=  pexels | Pexels License | Tima Miroshnichenko |
+    https://www.pexels.com/video/doctor-checking-the-dog-6235192/ |
+    https://videos.pexels.com/video-files/6235192/6235192-uhd_3840_2160_25fps.mp4 |
+    recorte de 9 s desde el segundo 1, reescalado a 1280x720 H.264 sin
+    pista de audio, 1,78 MB. Preparado el 08-09-2026 con /api/video/preparar.
+
+video/cita.mp4  <=  pexels | Pexels License | Gustavo Fring |
+    https://www.pexels.com/video/cat-in-the-veterinarian-6816882/ |
+    https://videos.pexels.com/video-files/6816882/6816882-hd_1280_720_30fps.mp4 |
+    recorte de 9 s desde el segundo 1, 1280x720 H.264 sin audio, 1,06 MB.
+
+Los clips NO llevan atributo poster: el poster es el <img> hermano
+(imagenes/port-01.jpg y imagenes/cita-01.jpg), que se queda en el DOM
+para siempre. El 09-09-2026 se borraron video/port-poster.jpg y
+video/cita-poster.jpg —123 KB que no referenciaba nadie— porque eran
+justo eso, un poster suelto que el patron de la casa no usa. Si hicieran
+falta, se vuelven a sacar de los propios clips.
+
+
+FOTOS CON PROCEDENCIA COMPLETA ---------------------------------------
+
+port-01.jpg  <=  fotograma de video/port.mp4 (Pexels License, Tima
+    Miroshnichenko, clip 6235192). Va a 1280 px porque es el fotograma
+    del clip: asi el fundido del video no cambia de escena. Ver
+    QUE-FOTOS-FALTAN.md.
+
+cita-01.jpg  <=  fotograma de video/cita.mp4 (Pexels License, Gustavo
+    Fring, clip 6816882). 1280 px por el mismo motivo.
+
+mos3-01.jpg  <=  pexels | Pexels License | Tima Miroshnichenko |
+    https://www.pexels.com/es-es/foto/hombre-persona-animal-perro-6235114/ |
+    https://images.pexels.com/photos/6235114/pexels-photo-6235114.jpeg |
+    recorte 3:2. Puesta el 09-09-2026 en reemplazo de un perro echado en
+    un pastizal con montanas al fondo: prometia otro lugar y no tenia
+    nada que ver con una clinica.
+
+mos4-01.jpg  <=  pexels | Pexels License | Tima Miroshnichenko |
+    https://www.pexels.com/es-es/foto/manos-animal-perro-sujetando-6235021/ |
+    https://images.pexels.com/photos/6235021/pexels-photo-6235021.jpeg |
+    recorte 3:2
+
+mos7-01.jpg  <=  pexels | Pexels License | Tima Miroshnichenko |
+    https://www.pexels.com/es-es/foto/hombre-mujer-animal-perro-6235124/ |
+    https://images.pexels.com/photos/6235124/pexels-photo-6235124.jpeg |
+    recorte 3:2. Nueva el 09-09-2026: la septima pieza del mosaico existe
+    para que las tres filas cierren enteras (2+1 / 1+1+1 / 1+2).
+
+
+FOTOS CON LA PROCEDENCIA POR REPONER ---------------------------------
+
+Las siete de abajo se procesaron el 02-09-2026 y su linea de origen se
+perdio cuando este archivo se volvio a crear el 08-09-2026 (FotoRadar
+solo conserva las lineas que ya estaban, y ese dia el archivo no
+existia). Se buscaron copias en las otras demos del catalogo y no hay
+ninguna, asi que el dato no se puede recuperar del disco.
+
+NO se inventa el credito. Antes de publicar hay que volver a buscarlas
+en FotoRadar y dejar la linea completa, o cambiarlas por otras con
+procedencia. Todas salieron de los bancos libres del catalogo (pexels,
+pixabay, pxhere, commons), que es lo unico que FotoRadar descarga.
+
+  mit-01.jpg    2200x1469  perro beagle echado, esperando
+  mos1-01.jpg   1200x1800  perro pequeno echado junto a un estetoscopio
+  mos2-01.jpg   1200x800   gato en la mesa mientras le cortan las unas
+  mos5-01.jpg   1200x798   gato joven mirando de frente
+  mos6-01.jpg   1200x800   gato en reposo, primer plano
+  tajo-01.jpg   2200x1238  manos revisando a un animal con estetoscopio
+  telon-01.jpg  1200x800   veterinaria con un corgi en la consulta
+
+
+FILTROS QUE SI SE APLICARON ------------------------------------------
+
+  · Ninguna marca de tercero legible al tamano al que se muestra.
+  · Ningun precio dentro de la foto.
+  · Ningun menor identificable.
+  · Ningun fondo que prometa otro lugar (por eso se cambio mos3-01).
+  · plus.unsplash.com descartado: es de pago.
+
+MAPA DE UBICACION — mapa-01.jpg
+  768 x 768 · zoom 16 · centro -41.3256444, -72.9786175
+  Mosaicos de OpenStreetMap pegados en una sola imagen, con el marcador
+  dibujado encima. Datos (c) OpenStreetMap contributors, licencia ODbL:
+  la atribucion tiene que ir VISIBLE junto al mapa, en el pie de la figura.
+  https://www.openstreetmap.org/copyright

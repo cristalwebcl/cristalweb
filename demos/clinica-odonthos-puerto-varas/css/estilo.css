@@ -24,17 +24,54 @@
        registro.
      Cuerpo  · Manrope — cuarta aparición. Silenciosa y muy legible.
      Dato    · Anonymous Pro — cuarta aparición. Lleva los minutos.
+
+   ESCENA: una aguja que da UNA vuelta y se queda en las doce. Sin
+   reposo a propósito — es la única demo de la tanda sin bucle.
+
+   SUBIDA A PREMIUM (08-09-2026): dos clips de fondo (portada y banda de
+   cita) sobre su fotograma como base, banda de cifras con la herida
+   adentro, mitades «qué traer», el equipo invertido a banda oscura y el
+   botón flotante de WhatsApp al número de la clínica. La identidad no se
+   tocó: mismas fuentes, mismos cuatro colores, mismo tono.
+
+   REVISIÓN (09-09-2026). Lo que estaba puesto pero no funcionaba:
+   los dos clips y el botón flotante estaban escritos en el HTML y con
+   su CSS, pero a main.js le faltaban los dos bloques que los encienden,
+   así que la página nunca pedía un solo byte de video. El contador de
+   cifras estaba enganchado a la sección equivocada y no contaba nunca.
+   Y dos listas —.cifras__lista y .reloj-l— pisaban con `margin: 0` el
+   `margin-inline: auto` de .ancho y salían pegadas al borde izquierdo,
+   desalineadas con el resto de la página.
+   Lo que se cambió mirando: el mosaico pasó de tres a cuatro columnas
+   (con tres, la última fila dejaba un hueco blanco), el telón bajó de
+   .22 a .13, el velo del tajo se corrigió por contraste medido y cinco
+   fotos se reemplazaron porque tres escenas ocupaban cinco huecos.
+   La identidad siguió sin tocarse.
+
+   SEGUNDA REVISIÓN (09-09-2026, adversarial). Tres cosas:
+   · mit-01 se cambió ENTERA. La anterior conservaba la marca del equipo
+     (SIGER) legible en la base, a mitad del cuadro: el recorte de 170 px
+     por arriba se había llevado una de las DOS apariciones del logotipo.
+     La nueva —bata gris, guantes azules, babero verde pálido— no tiene
+     ninguna marca y entra en la paleta fría sin traer un color nuevo.
+   · La lista de especialidades pasó de cuatro columnas a tres: con
+     cuatro, las seis fichas quedaban 4+2 y dejaban dos huecos blancos.
+   · El encuadre de .mit__foto pasó de 12 % a 70 %: la foto nueva tiene
+     la escena abajo y la pared blanca arriba.
+   Los colores, las fuentes y el tono siguen sin tocarse.
    ══════════════════════════════════════════════════════════════════ */
 
 :root {
   --nieve:   #FBFBFA;
   --nieve-2: #F0F0EE;
   --tinta:   #16181A;
-  --medio:   #4E5356;   /* 7,3:1 sobre nieve */
+  --medio:   #4E5356;   /* 7,3:1 sobre nieve · 6,8:1 sobre nieve-2 */
+  --claro-o: #B4B8BA;   /* secundario SOBRE tinta — 9,2:1 */
   --hora:    #10516B;   /* único acento — 7,8:1 sobre nieve */
   --hora-o:  #0B3E52;   /* hover */
-  --hora-l:  #7FC0DC;   /* sobre tinta */
+  --hora-l:  #7FC0DC;   /* sobre tinta — 9,2:1 */
   --linea:   rgba(22,24,26,.14);
+  --linea-o: rgba(251,251,250,.16);   /* filetes sobre banda oscura */
 
   --display: 'Manuale', Georgia, serif;
   --cuerpo:  'Manrope', 'Segoe UI', system-ui, sans-serif;
@@ -59,7 +96,9 @@ html { -webkit-text-size-adjust: 100%; scroll-behavior: smooth; }
 @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
 
 body { margin: 0; background: var(--nieve); color: var(--tinta); font-family: var(--cuerpo); font-size: var(--p-0); line-height: 1.68; }
-img { max-width: 100%; height: auto; }
+img, svg, video { max-width: 100%; }
+img { height: auto; }
+p { text-wrap: pretty; }
 a { color: var(--hora); }
 :focus-visible { outline: 3px solid var(--hora); outline-offset: 2px; }
 .ancho { width: var(--ancho); margin-inline: auto; }
@@ -75,12 +114,16 @@ h1, h2, h3 { font-family: var(--display); font-weight: 700; line-height: 1.2; ma
 .nota { margin-top: 1.6rem; font-size: var(--p--1); color: var(--medio); max-width: 66ch; }
 .sobre { font-family: var(--mono); font-size: var(--p--1); letter-spacing: .12em; text-transform: uppercase; color: var(--hora); margin: 0 0 1rem; }
 
-/* ── Dato de ejemplo ───────────────────────────────────────────── */
+/* ── Dato de ejemplo ─────────────────────────────────────────────────
+   La etiqueta dice QUÉ falta y DE QUIÉN depende. Cada sección con otro
+   fondo reescribe su background: si se salta uno, la etiqueta sale con
+   el color equivocado (ver .espec, .ficha, .datos y .equipo). */
 .ej { position: relative; border: 1px dashed rgba(16,81,107,.45); border-radius: 3px; }
 .ej::after {
   content: attr(data-ejemplo); position: absolute; top: -.62rem; right: .6rem;
   font-family: var(--mono); font-size: .62rem; letter-spacing: .08em; text-transform: uppercase;
   color: var(--hora); background: var(--nieve); padding: 0 .35rem;
+  white-space: nowrap; max-width: 90%; overflow: hidden; text-overflow: ellipsis;
 }
 
 /* ── Botones ───────────────────────────────────────────────────── */
@@ -91,22 +134,22 @@ h1, h2, h3 { font-family: var(--display); font-weight: 700; line-height: 1.2; ma
   background: var(--hora); color: #FFFFFF;
   font-family: var(--cuerpo); font-size: var(--p-0); font-weight: 600;
   text-decoration: none; cursor: pointer;
-  transition: transform .16s ease-out, background-color .16s;
+  transition: transform .16s ease-out, background-color .16s, box-shadow .16s;
 }
-.boton:hover { background: var(--hora-o); transform: translateY(-2px); }
+.boton:hover { background: var(--hora-o); transform: translateY(-2px); box-shadow: 0 10px 26px -14px rgba(16,81,107,.9); }
 .boton:active { transform: translateY(0); }
 .boton--linea { background: transparent; color: var(--hora); }
-.boton--linea:hover { background: rgba(16,81,107,.08); }
+.boton--linea:hover { background: rgba(16,81,107,.08); box-shadow: none; }
 .boton--chico { min-height: 40px; padding: .5rem 1.1rem; font-size: var(--p--1); }
 
 /* ── Propuesta ─────────────────────────────────────────────────── */
 .propuesta { background: var(--tinta); color: var(--nieve); padding: .85rem clamp(1.2rem, 5vw, 3rem); border-bottom: 3px solid var(--hora); }
 .propuesta__que { margin: 0 0 .3rem; font-size: var(--p--1); font-family: var(--mono); }
 .propuesta__que b { color: var(--hora-l); }
-.propuesta__gancho { margin: 0; font-size: var(--p--1); color: #B4B8BA; max-width: 96ch; line-height: 1.5; }
+.propuesta__gancho { margin: 0; font-size: var(--p--1); color: var(--claro-o); max-width: 96ch; line-height: 1.5; }
 
 /* ── Cabecera ──────────────────────────────────────────────────── */
-.cab { position: sticky; top: 0; z-index: 40; display: flex; align-items: center; gap: 1rem; padding: .75rem clamp(1rem, 4vw, 2.4rem); background: rgba(251,251,250,.94); border-bottom: 1px solid var(--linea); transition: box-shadow .2s, background-color .2s; }
+.cab { position: sticky; top: 0; z-index: 40; display: flex; align-items: center; gap: 1rem; padding: .75rem clamp(1rem, 4vw, 2.4rem); background: rgba(251,251,250,.94); backdrop-filter: blur(8px); -webkit-backdrop-filter: blur(8px); border-bottom: 1px solid var(--linea); transition: box-shadow .2s, background-color .2s; }
 .cab--flota { box-shadow: 0 6px 22px -16px rgba(22,24,26,.7); background: rgba(251,251,250,.99); }
 .cab__marca { display: flex; align-items: center; gap: .7rem; text-decoration: none; color: var(--tinta); }
 /* El reloj: un círculo y una aguja. Cero bytes de imagen. */
@@ -116,32 +159,47 @@ h1, h2, h3 { font-family: var(--display); font-weight: 700; line-height: 1.2; ma
 .cab__nombre { font-family: var(--display); font-size: var(--p-1); line-height: 1; }
 .cab__sub { display: block; font-family: var(--mono); font-size: .58rem; letter-spacing: .1em; text-transform: uppercase; color: var(--hora); margin-top: .3rem; }
 .cab__nav { display: flex; gap: 1.2rem; margin-left: auto; overflow-x: auto; }
-.cab__nav a { color: var(--medio); text-decoration: none; font-size: var(--p--1); white-space: nowrap; padding: .4rem 0; border-bottom: 2px solid transparent; }
+/* 44 px de alto también acá: en escritorio no se toca, pero un portátil
+   con pantalla táctil sí, y medido daba 38. El alto lo pone el
+   inline-flex, no un padding que movería el filete del hover. */
+.cab__nav a { color: var(--medio); text-decoration: none; font-size: var(--p--1); white-space: nowrap; display: inline-flex; align-items: center; min-height: 44px; border-bottom: 2px solid transparent; }
 .cab__nav a:hover { color: var(--hora); border-bottom-color: var(--hora); }
 .cab__cta { margin-left: .4rem; }
 @media (max-width: 1000px) { .cab__nav { display: none; } .cab__cta { margin-left: auto; } }
 
-/* ── Portada ───────────────────────────────────────────────────── */
+/* ── Portada ───────────────────────────────────────────────────────
+   Dos capas y cada una hace algo distinto: la MÁSCARA borra la foto
+   (alfa real) en la franja del texto, y el VELO pinta encima el color
+   de la portada para cerrar lo que la máscara dejó a medias.
+   El velo va entero en rgba() literal —con var() perdería el alfa y
+   taparía la foto de punta a punta— y TERMINA EN 0, para que el borde
+   derecho quede a foco completo con el clip corriendo.
+   Peor caso medido: donde alcanza el titular el velo ya vale .86, así
+   que aunque debajo pase un fotograma NEGRO el fondo efectivo es
+   #D8D8D7 y la tinta da 12,5:1. En la bajada (texto chico, gris medio)
+   el velo vale .88 o más: 5,7:1. Los dos pasan AA pase lo que pase con
+   el video. */
 .portada { position: relative; isolation: isolate; min-height: min(84vh, 720px); display: flex; flex-direction: column; justify-content: center; padding: var(--aire) 0; overflow: hidden; }
 .portada__foto { position: absolute; inset: 0; z-index: -1; }
-.portada__foto img {
+/* el clip comparte el selector de la foto: misma máscara, mismo
+   object-fit y mismo object-position, escritos UNA vez */
+.portada__foto img, .portada__video {
   display: block; width: 100%; height: 100%;
-  object-fit: cover; object-position: 72% 42%;
-  -webkit-mask-image: linear-gradient(90deg, transparent 0%, transparent 26%, rgba(0,0,0,.2) 42%, rgba(0,0,0,.7) 60%, #000 76%, #000 100%);
-          mask-image: linear-gradient(90deg, transparent 0%, transparent 26%, rgba(0,0,0,.2) 42%, rgba(0,0,0,.7) 60%, #000 76%, #000 100%);
+  object-fit: cover; object-position: 66% 46%;
+  -webkit-mask-image: linear-gradient(90deg, transparent 0%, transparent 28%, rgba(0,0,0,.2) 44%, rgba(0,0,0,.7) 62%, #000 78%, #000 100%);
+          mask-image: linear-gradient(90deg, transparent 0%, transparent 28%, rgba(0,0,0,.2) 44%, rgba(0,0,0,.7) 62%, #000 78%, #000 100%);
 }
-/* Velo entero en rgba y terminando en alfa 0. */
 .portada__foto::after {
   content: ""; position: absolute; inset: 0;
   background: linear-gradient(90deg,
-      rgba(251,251,250,1) 0%, rgba(251,251,250,1) 30%,
-      rgba(251,251,250,.76) 46%, rgba(251,251,250,.34) 64%,
-      rgba(251,251,250,.08) 82%, rgba(251,251,250,0) 96%);
+      rgba(251,251,250,1) 0%,   rgba(251,251,250,1) 34%,
+      rgba(251,251,250,.86) 48%, rgba(251,251,250,.42) 66%,
+      rgba(251,251,250,.1) 84%,  rgba(251,251,250,0) 97%);
 }
 .portada__texto { width: var(--ancho); margin-inline: auto; }
 .portada__titulo { font-size: var(--p-4); max-width: 18ch; font-weight: 700; }
 .portada__titulo span { display: block; }
-.portada__bajada { max-width: 46ch; color: var(--medio); font-size: var(--p-1); margin: 1.4rem 0 2rem; }
+.portada__bajada { max-width: 42ch; color: var(--medio); font-size: var(--p-1); margin: 1.4rem 0 2rem; }
 .acciones { display: flex; flex-wrap: wrap; gap: .8rem; }
 
 /* ── Escena de portada · la aguja que da la vuelta ─────────────────
@@ -153,7 +211,15 @@ h1, h2, h3 { font-family: var(--display); font-weight: 700; line-height: 1.2; ma
 .escena { position: absolute; z-index: -1; pointer-events: none; }
 .escena--reloj { top: 22%; right: 9%; width: min(30%, 320px); }
 .escena__svg { display: block; width: 100%; height: auto; }
-
+/* Respaldo radial: el reloj cae sobre la zona NÍTIDA del clip, donde
+   pasa el sillón. Doce palabras de CSS que sólo se descubren mirando el
+   video corriendo. Peor caso (fotograma negro debajo): el fondo bajo el
+   centro queda en #B5B5B4 y el petróleo del trazo da 4,0:1 — de sobra
+   para un objeto gráfico, que pide 3:1. */
+.escena::before {
+  content: ""; position: absolute; inset: -18% -24%; z-index: -1;
+  background: radial-gradient(closest-side, rgba(251,251,250,.78), rgba(251,251,250,0));
+}
 .escena__esfera { fill: none; stroke: var(--hora); stroke-width: 1.5; }
 .escena__marcas line { stroke: var(--hora); stroke-width: 1.5; opacity: .55; }
 .escena__aguja { stroke: var(--hora); stroke-width: 2.5; stroke-linecap: round; }
@@ -172,14 +238,53 @@ h1, h2, h3 { font-family: var(--display); font-weight: 700; line-height: 1.2; ma
 @keyframes aguja-vuelta { from { transform: rotate(0deg); } to { transform: rotate(360deg); } }
 .js .escena__aguja { animation: aguja-vuelta 1.6s var(--sale-2) .3s both; }
 
-/* A 375 px el reloj baja debajo del titular y queda al 40 %. */
+/* A 760 px el texto deja de estar AL LADO de la foto y pasa a estar
+   ENCIMA: la máscara y el velo rotan a vertical, la foto se ve entera
+   sólo en el tercio de abajo y el reloj baja a esa franja. */
 @media (max-width: 760px) {
-  .escena--reloj { top: auto; bottom: 4%; right: 4%; width: 40%; }
+  .portada { min-height: min(92vh, 700px); padding-top: 1.5rem; }
+  .portada__foto img, .portada__video {
+    object-position: 50% 46%;
+    -webkit-mask-image: linear-gradient(180deg, transparent 0%, transparent 38%, rgba(0,0,0,.4) 56%, #000 76%, #000 100%);
+            mask-image: linear-gradient(180deg, transparent 0%, transparent 38%, rgba(0,0,0,.4) 56%, #000 76%, #000 100%);
+  }
+  .portada__foto::after {
+    background: linear-gradient(180deg,
+        rgba(251,251,250,1) 0%,  rgba(251,251,250,1) 52%,
+        rgba(251,251,250,.82) 68%, rgba(251,251,250,.3) 88%,
+        rgba(251,251,250,0) 100%);
+  }
+  .portada__texto { margin-bottom: auto; }
+  .escena--reloj { top: auto; bottom: 3%; right: 4%; width: 38%; }
 }
+
+/* ── Cifras ────────────────────────────────────────────────────────
+   Cuatro números en la misma fila y con el mismo formato: la prueba
+   social, la hora, los tramos y la herida. La cuarta lleva el filete
+   petróleo a un solo lado — el destaque es una línea, no un color
+   nuevo. Sólo cuenta la primera, que es la que costó verificar. */
+.cifras { background: var(--tinta); color: var(--nieve); padding: clamp(2.4rem, 1.4rem + 2.6vw, 3.6rem) 0; }
+/* `margin: 0` a secas pisaba el `margin-inline: auto` de .ancho —viene
+   más abajo en el archivo y tienen la misma especificidad— y la banda
+   quedaba pegada al borde izquierdo, desalineada con todo el resto de la
+   página. El `auto` va escrito acá para que no vuelva a pasar. */
+.cifras__lista { list-style: none; margin: 0 auto; padding: 0; display: grid; gap: 1.6rem; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); }
+.cifras__lista b {
+  display: block; font-family: var(--display); font-size: var(--p-3);
+  line-height: 1; color: var(--nieve); font-variant-numeric: tabular-nums;
+  /* El pellizco del conteo lo anima main.js con la Web Animations API;
+     acá sólo se fija desde dónde crece, para que no se corra de sitio. */
+  transform-origin: 0% 60%;
+}
+.cifras__lista span { display: block; font-size: var(--p--1); color: var(--claro-o); margin-top: .4rem; max-width: 28ch; }
+.cifras__lista li:last-child { border-left: 3px solid var(--hora-l); padding-left: 1rem; }
+.cifras__lista li:last-child b { color: var(--hora-l); }
 
 /* ── PIEZA FIRMA · los sesenta minutos ─────────────────────────── */
 .cita-s { padding: var(--aire) 0; }
-.reloj-l { list-style: none; margin: 2.5rem 0 0; padding: 0; display: grid; gap: 0; }
+/* Mismo caso que .cifras__lista: el margen lateral va en `auto` o la
+   regla de minutos se despega del resto de la columna. */
+.reloj-l { list-style: none; margin: 2.5rem auto 0; padding: 0; display: grid; gap: 0; }
 .tramo {
   display: grid; grid-template-columns: 8.5rem 1fr; gap: 1.4rem;
   padding: 1.5rem 0;
@@ -191,6 +296,7 @@ h1, h2, h3 { font-family: var(--display); font-weight: 700; line-height: 1.2; ma
 .tramo__t {
   margin: 0; font-family: var(--mono); font-size: var(--p--1);
   color: var(--medio); white-space: nowrap; padding-top: .3rem;
+  font-variant-numeric: tabular-nums;
 }
 .tramo__t span { font-size: var(--p-2); color: var(--hora); }
 .tramo h3 { font-size: var(--p-1); margin-bottom: .4rem; }
@@ -204,83 +310,153 @@ h1, h2, h3 { font-family: var(--display); font-weight: 700; line-height: 1.2; ma
   .tramo--clave { padding-left: 1rem; }
 }
 
-/* ── Tajo ──────────────────────────────────────────────────────── */
+/* ── Tajo ──────────────────────────────────────────────────────────
+   Velo que SUBE desde abajo y arranca en alfa 0: los dos tercios de
+   arriba de la foto quedan a foco completo y sin teñir.
+   PEOR CASO MEDIDO (el auditor da falso negativo acá porque lee el fondo
+   de la sección y no el ::after): en el borde superior del titular el
+   velo vale .78, así que aunque debajo hubiera un cuadro BLANCO puro el
+   fondo efectivo queda en #444547 y la nieve da 9,3:1. El párrafo gris
+   #C4C7C9 cae más abajo, con el velo entre .92 y .95: 7,5:1. Medido
+   además sobre los píxeles de la captura, que es lo que vale. */
 .tajo { position: relative; margin: 0; isolation: isolate; min-height: min(50vh, 400px); display: flex; align-items: flex-end; overflow: hidden; }
-.tajo img { position: absolute; inset: 0; z-index: -1; width: 100%; height: 100%; object-fit: cover; object-position: 50% 42%; }
-.tajo::after { content: ""; position: absolute; inset: 0; z-index: -1; background: linear-gradient(0deg, rgba(22,24,26,.94) 0%, rgba(22,24,26,.78) 34%, rgba(22,24,26,.32) 62%, rgba(22,24,26,0) 92%); }
+.tajo img { position: absolute; inset: 0; z-index: -1; width: 100%; height: 100%; object-fit: cover; object-position: 50% 46%; }
+/* Los porcentajes no son de gusto: el titular ocupa del 37 % al 55 % de
+   la banda contando desde abajo, así que ahí el velo tiene que valer
+   .78 o más. Con los valores anteriores (.78 al 34 % y .32 al 62 %) el
+   borde de arriba del titular caía sobre .43 y medido daba 3,06:1 en el
+   píxel más claro: pasaba raspando. Ahora .78 llega hasta el 58 %.
+   Escrito en rgba() literal, nunca con var(): sin alfa el degradado
+   taparía la foto de punta a punta. */
+.tajo::after { content: ""; position: absolute; inset: 0; z-index: -1; background: linear-gradient(0deg, rgba(22,24,26,.95) 0%, rgba(22,24,26,.92) 40%, rgba(22,24,26,.78) 58%, rgba(22,24,26,.3) 78%, rgba(22,24,26,0) 96%); }
 .tajo__txt { width: var(--ancho); margin-inline: auto; padding: 2.5rem 0; }
 .tajo__txt h2 { font-size: var(--p-3); max-width: 20ch; color: var(--nieve); }
 .tajo__txt p { max-width: 48ch; color: #C4C7C9; margin: .9rem 0 0; }
 
 /* ── Especialidades ────────────────────────────────────────────── */
 .espec { padding: var(--aire) 0; background: var(--nieve-2); }
-.esp { list-style: none; margin: 0; padding: 1.6rem; display: grid; gap: 1.4rem; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); }
+/* minmax de 300 y no de 230: con 230 entraban CUATRO columnas y las seis
+   especialidades quedaban 4+2, con dos huecos blancos abiertos en la fila
+   de abajo. Con 300 son tres columnas y cierra exacto en 3+3, igual que el
+   mosaico. Bajo 760 px pasa a dos, que también cierra. */
+.esp { list-style: none; margin: 0; padding: 1.6rem; display: grid; gap: 1.4rem; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); }
 .esp::after { background: var(--nieve-2); }
 .esp h3 { font-size: var(--p-1); margin-bottom: .3rem; color: var(--hora); }
 .esp p { margin: 0; font-size: var(--p--1); color: var(--medio); }
 
-/* ── El equipo, con telón ──────────────────────────────────────── */
-.equipo { padding: var(--aire) 0; }
+/* ── Mitades · qué traer ───────────────────────────────────────────
+   Media pantalla de foto y media de texto. Es el contrapeso humano de
+   una página que por lo demás es instrumental y sala vacía: alguien
+   EXPLICANDO y alguien ESCUCHANDO, que es de lo que habla la sección.
+   Fría por dentro —bata gris, guantes azules, babero verde pálido—, así
+   que entra en la paleta sin traer un color nuevo. */
+.mit { display: grid; grid-template-columns: 1fr 1fr; align-items: stretch; }
+.mit__foto { position: relative; overflow: hidden; min-height: 320px; }
+/* La foto es vertical y casi de la misma relación que la columna, así que
+   en escritorio se ve entera y el object-position casi no interviene. En
+   teléfono, en cambio, la franja mide 240 px de alto y sólo cabe un tercio
+   del archivo: el 70 % baja el encuadre a donde está la escena —la tableta,
+   las manos y la paciente— en vez de dejar la pared blanca de arriba. */
+.mit__foto img { display: block; width: 100%; height: 100%; object-fit: cover; object-position: 50% 70%; }
+.mit__txt { padding: var(--aire) clamp(1.25rem, 4vw, 3.5rem); align-self: center; max-width: 640px; }
+.mit__txt .entradilla { margin-bottom: 1.8rem; }
+/* El bullet dibujado: un rombo de 7 px en vez del punto por defecto. */
+.traer { list-style: none; margin: 0; padding: 0; display: grid; gap: 1.1rem; }
+.traer li { position: relative; padding-left: 1.6rem; font-size: var(--p--1); color: var(--medio); }
+.traer li::before { content: ""; position: absolute; left: 1px; top: .55em; width: 7px; height: 7px; background: var(--hora); transform: rotate(45deg); }
+.traer b { color: var(--tinta); font-weight: 700; }
+@media (max-width: 860px) {
+  .mit { grid-template-columns: 1fr; }
+  .mit__foto { min-height: 0; }
+  .mit__foto img { height: clamp(220px, 48vw, 340px); }
+  .mit__txt { padding: var(--aire) 1.25rem; max-width: none; }
+}
+
+/* ── El equipo · banda OSCURA con telón ────────────────────────────
+   Es la única sección de luminancia invertida de la página, y por eso
+   lleva TODOS sus overrides escritos uno por uno: rótulo, título,
+   párrafos, fichas, el borde del .ej, el fondo de su etiqueta y el
+   hueco de foto. Los grises de la paleta clara no valen acá: sobre
+   tinta, var(--medio) daría 1,1:1. */
+.equipo { padding: var(--aire) 0; background: var(--tinta); color: var(--nieve); }
 .con-telon { position: relative; isolation: isolate; overflow: hidden; }
 .telon { position: absolute; inset: 0; z-index: -1; pointer-events: none; }
-/* Foto NÍTIDA al 15%: telón, no aura. Cero desenfoque. */
+/* Foto NÍTIDA al 13 %: telón, no aura. Cero desenfoque. El número se
+   calibra MIRANDO, no se copia: la foto de ahora es un plano cenital muy
+   contrastado (sillón oscuro sobre piso claro) y al .22 competía con las
+   tres fichas del equipo. Con foto plana o en gris habría que subirlo. */
 .telon img {
   display: block; width: 100%; height: 100%;
-  object-fit: cover; object-position: 50% 44%; opacity: .15;
+  object-fit: cover; object-position: 50% 44%; opacity: .13;
   -webkit-mask-image: linear-gradient(180deg, transparent 0%, #000 20%, #000 74%, transparent 100%);
           mask-image: linear-gradient(180deg, transparent 0%, #000 20%, #000 74%, transparent 100%);
 }
 .equipo__cols { display: grid; gap: 1.6rem; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); max-width: 74ch; margin-bottom: 2.5rem; }
-.equipo__cols p { margin: 0; color: var(--medio); }
-.equipo__cols b { color: var(--tinta); }
+.equipo__cols p { margin: 0; color: var(--claro-o); }
+.equipo__cols b { color: var(--nieve); }
 .fichas { list-style: none; margin: 0; padding: 0; display: grid; gap: 1.2rem; grid-template-columns: repeat(auto-fit, minmax(210px, 1fr)); }
-.ficha { padding: 1.2rem; background: var(--nieve-2); }
-.ficha::after { background: var(--nieve-2); }
-.ficha h3 { font-size: var(--p-1); margin: 0 0 .4rem; }
-.ficha p { margin: 0; font-size: var(--p--1); color: var(--medio); }
+.ficha { padding: 1.2rem; background: rgba(251,251,250,.05); border-radius: 6px; }
+.ficha h3 { font-size: var(--p-1); margin: 0 0 .4rem; color: var(--nieve); }
+.ficha p { margin: 0; font-size: var(--p--1); color: var(--claro-o); }
+.equipo .ej { border-color: rgba(127,192,220,.45); }
+.equipo .ej::after { color: var(--hora-l); background: var(--tinta); }
 .ficha__hueco {
   aspect-ratio: 3 / 4; margin-bottom: .9rem;
   display: grid; place-items: center;
-  border: 1px dashed rgba(22,24,26,.24);
-  color: var(--medio); font-family: var(--mono); font-size: var(--p--1);
+  border: 1px dashed var(--linea-o); border-radius: 6px;
+  color: var(--claro-o); font-family: var(--mono); font-size: var(--p--1);
   letter-spacing: .14em; text-transform: uppercase;
-  background: repeating-linear-gradient(135deg, rgba(22,24,26,.03) 0 8px, transparent 8px 16px);
+  background: repeating-linear-gradient(135deg, rgba(251,251,250,.04) 0 8px, transparent 8px 16px);
 }
 
 /* ── Por qué una página propia ─────────────────────────────────── */
 .propia { padding: var(--aire) 0; }
 .specs { list-style: none; margin: 0; padding: 0; display: grid; gap: 1.5rem; grid-template-columns: repeat(auto-fit, minmax(190px, 1fr)); border-top: 1px solid var(--linea); padding-top: 1.6rem; }
-.specs b { display: block; font-family: var(--display); font-size: var(--p-3); line-height: 1; color: var(--hora); }
+.specs b { display: block; font-family: var(--display); font-size: var(--p-3); line-height: 1; color: var(--hora); font-variant-numeric: tabular-nums; }
 .specs span { display: block; font-size: var(--p--1); color: var(--medio); margin-top: .35rem; max-width: 26ch; }
 
-/* ── Cita ──────────────────────────────────────────────────────── */
+/* ── Cita ──────────────────────────────────────────────────────────
+   Texto CENTRADO, así que el velo va PLANO y no lateral: con un
+   degradado de lado, media frase quedaría sobre .9 y la otra media
+   sobre .3. El plano al .78 garantiza el peor caso (fotograma blanco
+   debajo): nieve sobre #4C4E4F da 7,3:1. */
 .cita { position: relative; margin: 0; isolation: isolate; min-height: min(48vh, 380px); display: grid; place-items: center; overflow: hidden; }
-.cita img { position: absolute; inset: 0; z-index: -1; width: 100%; height: 100%; object-fit: cover; object-position: 50% 44%; }
+.cita img, .cita__video { position: absolute; inset: 0; z-index: -1; width: 100%; height: 100%; object-fit: cover; object-position: 50% 46%; }
 .cita::after { content: ""; position: absolute; inset: 0; z-index: -1; background: rgba(22,24,26,.78); }
 .cita__txt { margin: 0; width: var(--ancho); padding: 3rem 0; }
 .cita__txt p { font-family: var(--display); font-size: var(--p-3); color: var(--nieve); max-width: 24ch; margin: 0 auto; text-align: center; line-height: 1.28; }
 
 /* ── Mosaico ───────────────────────────────────────────────────── */
 .mos { padding: var(--aire) 0; }
-.mos__grilla { display: grid; gap: 4px; grid-template-columns: repeat(3, 1fr); width: var(--ancho); margin: 2rem auto 0; border-radius: 6px; overflow: hidden; }
+/* CUATRO columnas, no tres. Las celdas 1 y 6 valen por dos, así que en
+   una retícula de tres quedaban 8 huecos en 9: la última fila salía con
+   un vacío blanco al costado y las filas con alturas distintas. Con
+   cuatro cierra exacto —fila 1: 2+1+1 · fila 2: 1+1+2— y las dos filas
+   miden lo mismo, que es lo que hace que se lea como una pieza y no como
+   una grilla a la que le falta una foto. */
+.mos__grilla { display: grid; gap: 4px; grid-template-columns: repeat(4, 1fr); width: var(--ancho); margin: 2rem auto 0; border-radius: 6px; overflow: hidden; }
 .mos__p { margin: 0; overflow: hidden; }
 .mos__p:nth-child(1), .mos__p:nth-child(6) { grid-column: span 2; }
-.mos__p img { display: block; width: 100%; height: 100%; aspect-ratio: 3 / 2; object-fit: cover; transition: transform .5s var(--salida); }
-.mos__p:hover img { transform: scale(1.05); }
-@media (max-width: 640px) { .mos__grilla { grid-template-columns: repeat(2, 1fr); } }
+.mos__p img { display: block; width: 100%; height: 100%; aspect-ratio: 3 / 2; object-fit: cover; filter: saturate(.92); transition: transform .5s var(--salida), filter .5s ease; }
+.mos__p:hover img { transform: scale(1.05); filter: saturate(1); }
+/* Bajo 980 px las celdas de cuatro columnas quedan del tamaño de un
+   sello: se pasa a dos, donde 1 y 6 ocupan fila entera y tampoco sobra
+   ningún hueco. */
+@media (max-width: 980px) { .mos__grilla { grid-template-columns: repeat(2, 1fr); } }
 
 /* ── Agendar ───────────────────────────────────────────────────── */
 .agenda { padding: var(--aire) 0; background: var(--nieve-2); }
 .agenda__cols { display: grid; gap: clamp(2rem, 5vw, 4rem); grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); align-items: start; }
 .datos { margin: 0; display: grid; }
-.datos > div { display: grid; grid-template-columns: 10rem 1fr; gap: .6rem; padding: .75rem .6rem; border-bottom: 1px solid var(--linea); }
+.datos > div { display: grid; grid-template-columns: 9rem 1fr; gap: .6rem; padding: .75rem .6rem; border-bottom: 1px solid var(--linea); }
 .datos dt { font-family: var(--mono); font-size: var(--p--1); letter-spacing: .06em; text-transform: uppercase; color: var(--medio); }
 .datos dd { margin: 0; }
 .datos .ej::after { background: var(--nieve-2); }
 @media (max-width: 480px) { .datos > div { grid-template-columns: 1fr; } }
 
 .pedir { background: var(--nieve); border: 1px solid var(--linea); border-radius: 8px; padding: clamp(1.2rem, 3vw, 2rem); }
-.pedir__t { font-size: var(--p-2); margin-bottom: 1rem; }
+.pedir__t { font-size: var(--p-2); margin-bottom: .6rem; }
+.pedir__ayuda { margin: 0 0 1.2rem; font-size: var(--p--1); color: var(--medio); }
 .form { display: grid; gap: .9rem; }
 .form label { display: grid; gap: .3rem; font-family: var(--mono); font-size: var(--p--1); letter-spacing: .04em; text-transform: uppercase; color: var(--medio); }
 .form input, .form select {
@@ -290,7 +466,7 @@ h1, h2, h3 { font-family: var(--display); font-weight: 700; line-height: 1.2; ma
   background: #FFFFFF; color: var(--tinta); text-transform: none;
 }
 .form input:focus-visible, .form select:focus-visible { border-color: var(--hora); }
-.form__salida { font-family: var(--mono); font-size: var(--p--1); background: var(--nieve-2); border-left: 3px solid var(--hora); border-radius: 0 5px 5px 0; padding: .7rem .8rem; margin: .2rem 0 0; white-space: pre-wrap; color: var(--medio); }
+.form__salida { font-family: var(--mono); font-size: var(--p--1); background: var(--nieve-2); border-left: 3px solid var(--hora); border-radius: 0 5px 5px 0; padding: .7rem .8rem; margin: .2rem 0 0; white-space: pre-wrap; word-break: break-word; color: var(--medio); }
 .form__salida:empty { display: none; }
 .form__acciones { display: flex; flex-wrap: wrap; gap: .7rem; }
 .form__sinjs { margin: 1rem 0 0; font-size: var(--p--1); color: var(--medio); }
@@ -299,15 +475,73 @@ h1, h2, h3 { font-family: var(--display); font-weight: 700; line-height: 1.2; ma
 .dueno { padding: var(--aire) 0; background: var(--tinta); color: var(--nieve); }
 .dueno__cols { display: grid; gap: 2rem; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); margin-top: 1rem; }
 .dueno__cols h3 { font-size: var(--p-1); color: var(--hora-l); margin-bottom: .5rem; }
-.dueno__cols p { margin: 0; color: #B4B8BA; font-size: var(--p--1); }
+.dueno__cols p { margin: 0; color: var(--claro-o); font-size: var(--p--1); }
 .dueno__cols b { color: var(--nieve); }
 .dueno__cierre { display: flex; flex-wrap: wrap; gap: 1.6rem; margin: 2.5rem 0 0; }
 .flecha { color: var(--hora-l); text-decoration: none; font-weight: 600; border-bottom: 1px solid rgba(127,192,220,.4); padding-bottom: .15rem; }
 .flecha:hover { border-bottom-color: var(--hora-l); }
+.flecha span { display: inline-block; transition: transform .2s var(--salida); }
+.flecha:hover span { transform: translateX(4px); }
 
-/* ── Pie ───────────────────────────────────────────────────────── */
-.pie { background: #111315; color: #85898C; padding: 2rem clamp(1.2rem, 5vw, 3rem); }
+/* ── Pie ───────────────────────────────────────────────────────────
+   El padding de abajo deja pasar el botón flotante de WhatsApp sin que
+   tape la última línea. */
+.pie { background: #111315; color: #85898C; padding: 2rem clamp(1.2rem, 5vw, 3rem) 5.5rem; }
 .pie p { margin: 0; font-size: var(--p--1); max-width: 92ch; }
+
+/* ══════════════════════════════════════════════════════════════════
+   VIDEO DE FONDO
+   La foto sigue siendo la base y el clip se funde encima cuando puede
+   reproducirse. Si el visitante pidió menos movimiento o ahorra datos,
+   main.js no lo pide y no se descarga ni un byte.
+   Presupuesto: portada 1,4 MB · banda 1,0 MB · 720p, sin audio.
+   ══════════════════════════════════════════════════════════════════ */
+.portada__video, .cita__video {
+  position: absolute; inset: 0; opacity: 0;
+  transition: opacity 1.4s ease; pointer-events: none;
+}
+.portada__video.video--ver, .cita__video.video--ver { opacity: 1; }
+
+/* ── WHATSAPP FLOTANTE ──────────────────────────────────────────────
+   Botón fijo abajo a la derecha. 56 px de alto: por encima de los 44
+   del mínimo táctil. Verde de WhatsApp a propósito — se reconoce sin
+   leerlo, y eso es lo que hace que se toque. El número es el de la
+   CLÍNICA, el mismo del tel: de la ficha.
+
+   La dirección del truco importa: el botón se ve SIEMPRE por defecto y
+   el JS sólo lo esconde mientras el visitante está en la portada, para
+   no tapar el titular. Si el script no arranca, o si rescate.js quita
+   la clase .js, el botón queda visible, que es el estado que vende. */
+.wapp {
+  position: fixed;
+  right: max(1rem, env(safe-area-inset-right, 0px));
+  bottom: max(1rem, env(safe-area-inset-bottom, 0px));
+  z-index: 60;
+  display: inline-flex;
+  align-items: center;
+  gap: .55rem;
+  height: 56px;
+  padding: 0 1.15rem 0 1rem;
+  border-radius: 999px;
+  background: #25D366;
+  color: #07310F;
+  text-decoration: none;
+  font-family: var(--cuerpo);
+  font-size: .95rem;
+  font-weight: 700;
+  line-height: 1;
+  box-shadow: 0 6px 18px rgba(0,0,0,.3), 0 2px 6px rgba(0,0,0,.2);
+  transition: opacity .28s ease, transform .28s ease, box-shadow .18s ease;
+}
+.wapp__i { width: 26px; height: 26px; fill: currentColor; flex: none; }
+.wapp:hover, .wapp:focus-visible { transform: translateY(-2px); box-shadow: 0 10px 26px rgba(0,0,0,.34); }
+/* mientras se está arriba del todo, el botón se aparta */
+.js .wapp--arriba { opacity: 0; transform: translateY(14px) scale(.94); pointer-events: none; }
+@media (max-width: 520px) {
+  .wapp { width: 56px; padding: 0; justify-content: center; }
+  /* el rótulo se va, el icono queda: en un teléfono el círculo verde ya dice qué es */
+  .wapp__t { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
+}
 
 /* ══ Animación ═════════════════════════════════════════════════
    Números de movimiento-web (reglas atómicas): la OPACIDAD salta corta
@@ -324,26 +558,33 @@ h1, h2, h3 { font-family: var(--display); font-weight: 700; line-height: 1.2; ma
 .js .acciones        { animation-delay: .36s; }
 @keyframes entra { from { opacity: 0; transform: translateY(24px); } to { opacity: 1; transform: none; } }
 
-/* ── Los seis tramos (regla 4) ─────────────────────────────────────
-   Cascada de 60 ms por CONTENEDOR: seis tramos son 300 ms, dentro del
-   compás de medio segundo. Los tramos van apilados en vertical, así que
-   la cascada corre de arriba a abajo — que en esta lista es el orden
-   del reloj. */
-.js .reloj-l.rev,
-.js .mos__grilla.rev { opacity: 1; transform: none; transition: none; }
-
-.js .reloj-l.rev > *,
-.js .mos__grilla.rev > * { opacity: 0; transform: translateY(28px); }
-
-.js .reloj-l.rev.ok > *,
-.js .mos__grilla.rev.ok > * {
+/* ── Cascada de hijos ──────────────────────────────────────────────
+   El CONTENEDOR se neutraliza y animan los hijos: si no se neutraliza,
+   contenedor e hijos bajan a la vez y el grupo entero se desplaza.
+   60 ms por hijo — seis hijos son 300 ms, dentro del compás de medio
+   segundo. */
+.js .cascada.rev { opacity: 1; transform: none; transition: none; }
+.js .cascada.rev > * { opacity: 0; transform: translateY(28px); }
+.js .cascada.rev.ok > * {
   opacity: 1; transform: none;
   transition: opacity .3s ease-out, transform .6s var(--salida);
+  transition-delay: calc(var(--i, 0) * 60ms);
 }
-/* El tramo entra 100 ms DESPUÉS de su línea: primero se traza la regla,
+/* El retardo por índice va acá y no en un style="" del HTML: la CSP lo
+   bloquea sin decir una palabra. */
+.cascada > :nth-child(1) { --i: 0; }
+.cascada > :nth-child(2) { --i: 1; }
+.cascada > :nth-child(3) { --i: 2; }
+.cascada > :nth-child(4) { --i: 3; }
+.cascada > :nth-child(5) { --i: 4; }
+.cascada > :nth-child(6) { --i: 5; }
+.cascada > :nth-child(7) { --i: 6; }
+.cascada > :nth-child(8) { --i: 7; }
+
+/* ── Los seis tramos ───────────────────────────────────────────────
+   El tramo entra 100 ms DESPUÉS de su línea: primero se traza la regla,
    después llega el texto. */
 .js .reloj-l.rev.ok > * { transition-delay: calc(var(--i, 0) * 60ms + 100ms); }
-.js .mos__grilla.rev.ok > * { transition-delay: calc(var(--i, 0) * 60ms); }
 
 /* La línea que une los tramos se dibuja. No se toca el border-top que
    ya existe: encima corre un filete petróleo que crece desde la
@@ -373,36 +614,59 @@ h1, h2, h3 { font-family: var(--display); font-weight: 700; line-height: 1.2; ma
   transition-delay: calc(var(--i, 0) * 60ms + 220ms);
 }
 
-/* El retardo por índice va acá y no en un style="" del HTML: la CSP lo
-   bloquea sin decir una palabra. */
-.reloj-l > :nth-child(1), .mos__grilla > :nth-child(1) { --i: 0; }
-.reloj-l > :nth-child(2), .mos__grilla > :nth-child(2) { --i: 1; }
-.reloj-l > :nth-child(3), .mos__grilla > :nth-child(3) { --i: 2; }
-.reloj-l > :nth-child(4), .mos__grilla > :nth-child(4) { --i: 3; }
-.reloj-l > :nth-child(5), .mos__grilla > :nth-child(5) { --i: 4; }
-.reloj-l > :nth-child(6), .mos__grilla > :nth-child(6) { --i: 5; }
+/* ── El difuminado al scroll ───────────────────────────────────────
+   La única excepción temporal al no-blur, y corre en el compositor: la
+   portada se disuelve hacia el blanco que hay debajo mientras se sube,
+   y la banda de cita entra enfocándose. El filter va en el CONTENEDOR
+   (.portada__foto), nunca en el <video>, y el scale(1.06) acompaña al
+   blur para que el desenfoque no muestre el filo de la caja.
+   Doble puerta: @supports y (prefers-reduced-motion: no-preference).
+   En teléfono no corre. */
+@supports (animation-timeline: scroll()) {
+  @media (prefers-reduced-motion: no-preference) and (min-width: 761px) {
+    .portada__foto {
+      animation: portada-se-va linear both;
+      animation-timeline: scroll(root block);
+      animation-range: 0 90vh;
+    }
+    .cita {
+      animation: cita-enfoca linear both;
+      animation-timeline: view(block);
+      animation-range: entry 0% entry 95%;
+    }
+  }
+}
+@keyframes portada-se-va { to { filter: blur(7px); transform: scale(1.06); opacity: .5; } }
+@keyframes cita-enfoca   { from { filter: blur(9px); } to { filter: blur(0); } }
 
-/* La cifra que cuenta (regla 7): main.js escribe el transform por la
-   CSSOM y necesita un origen fijo, o el número se corre de su columna. */
-.specs b { transform-origin: 0% 60%; }
-
+/* ── Menos movimiento ──────────────────────────────────────────────
+   Se apaga lo intrusivo —bucles, giros, conteos, desplazamientos— y se
+   conserva lo que da vida: los fundidos y los hovers de color. Apagar
+   también los fundidos deja la página muerta en la mitad de los
+   Windows, donde esta preferencia viene puesta de fábrica. */
 @media (prefers-reduced-motion: reduce) {
   .js .portada__texto > * { animation: none; }
-  .mos__p:hover img { transform: none; }
-  .js .rev { opacity: 1; transform: none; }
-  .js .reloj-l.rev > *,
-  .js .mos__grilla.rev > * { opacity: 1; transform: none; }
+  /* los reveals NO se desplazan, pero SÍ siguen fundiendo */
+  .js .rev, .js .cascada.rev > * { transform: none; }
   .js .reloj-l.rev > .tramo::before { display: none; }
   .js .reloj-l.rev > .tramo .tramo__t span { opacity: 1; }
+  /* del hover se apaga el desplazamiento, no el hover */
+  .boton:hover { transform: none; }
+  .mos__p:hover img { transform: none; }
+  .flecha:hover span { transform: none; }
+  .wapp { transition: opacity .28s ease; }
+  .wapp:hover, .wapp:focus-visible { transform: none; }
+  .js .wapp--arriba { transform: none; }
   /* Reloj puesto y aguja en las doce. */
   .js .escena__esfera, .js .escena__marcas,
-  .js .escena__eje, .js .escena__aguja { animation: none; }
+  .js .escena__eje, .js .escena__aguja { animation: none; opacity: 1; transform: none; }
 }
+
 /* ── Blancos de toque ──────────────────────────────────────────────
    Regla de la casa: nada que se toque puede medir menos de 44 px de
-   alto. Los enlaces sueltos —el teléfono dentro de la ficha de datos
-   y las flechas del cierre— quedaban en 23 y 30 px medidos sobre la
-   página a 375 px. Se les da caja propia sin cambiar cómo se ven. */
+   alto. Los enlaces sueltos —el teléfono y el correo de la ficha de
+   datos y las flechas del cierre— quedaban en 23 y 30 px medidos sobre
+   la página a 375 px. Se les da caja propia sin cambiar cómo se ven. */
 .datos dd a,
 .flecha {
   display: inline-flex;
@@ -411,6 +675,65 @@ h1, h2, h3 { font-family: var(--display); font-weight: 700; line-height: 1.2; ma
 }
 /* La marca de la cabecera también es un enlace: 44 px mínimos. */
 .cab__marca { min-height: 44px; }
-/* El botón chico de la cabecera es el CTA principal en teléfono:
-   en móvil sube a 44 px como todo lo demás que se toca. */
-@media (max-width: 1060px) { .boton--chico { min-height: 44px; } }
+/* El botón chico de la cabecera es el CTA principal en teléfono, y el
+   único CTA visible cuando el nav desaparece: 44 px SIEMPRE, no sólo
+   bajo 1060. Medido daba 42 en escritorio. */
+.boton--chico { min-height: 44px; }
+
+/* ── MAPA DE UBICACION ──────────────────────────────────────────────
+   Imagen propia con mosaicos de OpenStreetMap pegados: la CSP prohibe
+   pedir nada a un tercero, asi que un iframe de Google Maps quedaria en
+   blanco SIN dar un solo error. El "Como llegar" si es un enlace, y un
+   enlace no lo bloquea nada.
+   Los colores salen de currentColor a proposito: asi el bloque se adapta
+   a la paleta de cada demo sin conocerla y sin chocar con ella.
+   La atribucion a OpenStreetMap la exige su licencia (ODbL). */
+.mapa-sec { padding: clamp(2.5rem, 6vw, 4.5rem) 0; }
+.mapa { margin: 1.4rem 0 0; border: 1px solid; border-color: color-mix(in srgb, currentColor 22%, transparent); border-radius: 10px; overflow: hidden; }
+@supports not (color: color-mix(in srgb, red 50%, blue)) { .mapa { border-color: rgba(128, 128, 128, .35); } }
+.mapa img { display: block; width: 100%; height: auto; aspect-ratio: 16 / 10; object-fit: cover; }
+.mapa__pie {
+  display: flex; flex-wrap: wrap; align-items: center; gap: .4rem 1rem;
+  padding: .75rem .9rem;
+  font-size: .86em; line-height: 1.45;
+  border-top: 1px solid; border-top-color: color-mix(in srgb, currentColor 22%, transparent);
+}
+@supports not (color: color-mix(in srgb, red 50%, blue)) { .mapa__pie { border-top-color: rgba(128, 128, 128, .35); } }
+.mapa__pie b { font-weight: 700; }
+.mapa__ir { color: inherit; font-weight: 700; text-decoration: underline; min-height: 44px; display: inline-flex; align-items: center; }
+.mapa__cred { width: 100%; font-size: .84em; opacity: .8; }
+.mapa__cred a { color: inherit; }
+/* ── BOTON FLOTANTE DE CONTACTO ─────────────────────────────────────
+   56 px de alto, por encima del minimo tactil de 44. Los colores de
+   marca van a proposito: se reconocen sin leerlos, y eso es lo que hace
+   que se toquen. Se ve SIEMPRE por defecto; el JS solo lo aparta sobre
+   la portada. Al reves, un fallo del script se llevaria el CTA principal. */
+.flota {
+  position: fixed;
+  right: max(1rem, env(safe-area-inset-right, 0px));
+  bottom: max(1rem, env(safe-area-inset-bottom, 0px));
+  z-index: 60;
+  display: inline-flex; align-items: center; gap: .55rem;
+  height: 56px; padding: 0 1.15rem 0 1rem;
+  border-radius: 999px;
+  text-decoration: none;
+  font-family: var(--cuerpo, system-ui, sans-serif);
+  font-size: .95rem; font-weight: 700; line-height: 1;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, .26), 0 2px 6px rgba(0, 0, 0, .16);
+  transition: opacity .28s ease, transform .28s ease, box-shadow .18s ease;
+}
+.flota--wa { background: #25D366; color: #07310F; }
+.flota--ig { background: linear-gradient(120deg, #F9CE34 4%, #EE2A7B 48%, #6228D7 96%); color: #FFFFFF; }
+.flota__i { width: 26px; height: 26px; fill: currentColor; flex: none; }
+.flota:hover, .flota:focus-visible { transform: translateY(-2px); box-shadow: 0 10px 26px rgba(0, 0, 0, .3); }
+.js .flota--arriba { opacity: 0; transform: translateY(14px) scale(.94); pointer-events: none; }
+
+@media (max-width: 520px) {
+  .flota { width: 56px; padding: 0; justify-content: center; }
+  .flota__t { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .flota { transition: opacity .28s ease; }
+  .flota:hover, .flota:focus-visible { transform: none; }
+  .js .flota--arriba { transform: none; }
+}

@@ -1,0 +1,22 @@
+FUENTES DE LAS IMAGENES - Brasas del Lago Rehecha el 13-09-2026 (presentacion antes que texto). Fotos de REFERENCIA de bancos libres: ninguna es del local; las verdaderas las tiene que mandar el negocio. 
+port-01.jpg  <-  pozo-p-bdl-parrilla\002.jpg  |  pexels (Pexels License)  |  autor: Sergio Arteaga  |  https://www.pexels.com/es-es/foto/vegetales-verduras-verano-fuego-18299596/  |  consulta: "barbecue grill meat"
+hund1-01.jpg  <-  pozo-p-bdl-corte\008.jpg  |  pexels (Pexels License)  |  autor: Emre Vonal  |  https://www.pexels.com/es-es/foto/filete-bistec-barbacoa-a-la-barbacoa-7741852/  |  consulta: "steak cutting board"
+hund2-01.jpg  <-  pozo-p-bdl-salsa\011.jpg  |  pexels (Pexels License)  |  autor: Vincent Rivaud  |  https://www.pexels.com/es-es/foto/filete-a-la-parrilla-gourmet-con-salsa-de-hierbas-y-verduras-28962426/  |  consulta: "chimichurri"
+hund3-01.jpg  <-  pozo-p-bdl-parrilla\010.jpg  |  pexels (Pexels License)  |  autor: Sergio Arteaga  |  https://www.pexels.com/es-es/foto/comida-cena-fuego-picante-18299591/  |  consulta: "barbecue grill meat"
+hund4-01.jpg  <-  pozo-p-bdl-parrilla\008.jpg  |  pexels (Pexels License)  |  autor: Sergio Arteaga  |  https://www.pexels.com/es-es/foto/comida-verano-cena-chef-18299585/  |  consulta: "barbecue grill meat"
+hund5-01.jpg  <-  pozo-p-bdl-verduras\012.jpg  |  pexels (Pexels License)  |  autor: Kimy Moto  |  https://www.pexels.com/es-es/foto/verduras-a-la-parrilla-coloridas-sobre-tabla-rustica-37490817/  |  consulta: "grilled vegetables"
+hund6-01.jpg  <-  pozo-p-bdl-vino\011.jpg  |  pexels (Pexels License)  |  autor: Alexandru Molnar  |  https://www.pexels.com/es-es/foto/vino-tinto-espacio-para-texto-copy-space-licor-7597560/  |  consulta: "red wine glass"
+banda-01.jpg  <-  pozo-p-bdl-brasa\009.jpg  |  pexels (Pexels License)  |  autor: Shayne Spencer  |  https://www.pexels.com/es-es/foto/fuego-ardiente-calor-oscuridad-14887408/  |  consulta: "grill embers"
+cita-01.jpg  <-  pozo-p-bdl-brasa\002.jpg  |  pexels (Pexels License)  |  autor: Sergio Arteaga  |  https://www.pexels.com/es-es/foto/rojo-oscuro-textura-tarde-18299586/  |  consulta: "grill embers"
+mos1-01.jpg  <-  pozo-p-bdl-parrilla\005.jpg  |  pexels (Pexels License)  |  autor: Sergio Arteaga  |  https://www.pexels.com/es-es/foto/comida-vegetales-verduras-picnic-18299584/  |  consulta: "barbecue grill meat"
+mos2-01.jpg  <-  pozo-p-bdl-carbon\003.jpg  |  pexels (Pexels License)  |  autor: Sergio Arteaga  |  https://www.pexels.com/es-es/foto/comida-verano-lena-picante-18299593/  |  consulta: "charcoal fire"
+mos3-01.jpg  <-  pozo-p-bdl-salsa\007.jpg  |  pexels (Pexels License)  |  autor: Daniel Torobekov  |  https://www.pexels.com/es-es/foto/comida-delicioso-sabroso-nam-13689919/  |  consulta: "chimichurri"
+mos4-01.jpg  <-  pozo-p-bdl-corte\012.jpg  |  pexels (Pexels License)  |  autor: RDNE Stock project  |  https://www.pexels.com/es-es/foto/filete-bistec-sujetando-rebanado-8523513/  |  consulta: "steak cutting board"
+mos5-01.jpg  <-  pozo-p-bdl-lago\002.jpg  |  pexels (Pexels License)  |  autor: Exequiel Fuentes  |  https://www.pexels.com/es-es/foto/paisaje-naturaleza-bosque-lago-20903493/  |  consulta: "lake villarrica"
+mos6-01.jpg  <-  pozo-p-bdl-parrilla\011.jpg  |  pexels (Pexels License)  |  autor: Sergio Arteaga  |  https://www.pexels.com/es-es/foto/comida-cena-fuego-picante-18299594/  |  consulta: "barbecue grill meat"
+
+BRUMA (bruma-pag-0N.png y bruma-osc-0N.png, 30x20): las MISMAS fotos, recortadas a 3:2, reducidas y
+recoloreadas con C:\devs\demos\hacer-bruma.ps1 (clara >= 0,68 de luminancia / oscura <= 0,05). No suman fuentes.
+    pagina: port-01.jpg, banda-01.jpg, cita-01.jpg, hund1-01.jpg, hund4-01.jpg, mos2-01.jpg, mos5-01.jpg, mos6-01.jpg   |   oscuras: port-01.jpg, banda-01.jpg, cita-01.jpg
+
+MAPA: iframe de Google Maps (embed publico, sin clave). No hay imagen de mapa.

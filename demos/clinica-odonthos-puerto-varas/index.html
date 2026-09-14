@@ -12,7 +12,7 @@
 
 <script src="js/rescate.js"></script>
 
-<link rel="preload" href="assets/fuentes/manuale-700-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="assets/fuentes/manuale-var-latin.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="assets/fuentes.css">
 <link rel="stylesheet" href="css/estilo.css">
 </head>
@@ -20,7 +20,7 @@
 
 <div class="propuesta">
   <p class="propuesta__que">Propuesta de sitio web — preparada para <b>Clínica Odonthos</b> por CristalWeb</p>
-  <p class="propuesta__gancho">Ocho mil seguidores llegan a una plantilla. La audiencia ya está ganada — lo que falta es una página a la altura de ella: que cargue rápido, salga bien en Google y sea suya de verdad.</p>
+  <p class="propuesta__gancho">Ocho mil doscientos cuarenta y nueve seguidores llegan a una plantilla, y esa plantilla no dice en ninguna parte qué pasa en la primera hora (verificado el 08-09-2026). La audiencia ya está ganada — lo que falta es la página que la reciba.</p>
 </div>
 
 <header class="cab" id="cab">
@@ -30,8 +30,8 @@
   </a>
   <nav class="cab__nav" aria-label="Secciones">
     <a href="#cita">La primera cita</a>
+    <a href="#traer">Qué traer</a>
     <a href="#especialidades">Especialidades</a>
-    <a href="#equipo">El equipo</a>
     <a href="#agenda">Agendar</a>
   </nav>
   <a class="cab__cta boton boton--chico" href="#agenda">Agendar</a>
@@ -39,11 +39,17 @@
 
 <main>
 
-<!-- ═══════════ PORTADA ═══════════ -->
+<!-- ═══════════ PORTADA ═══════════
+     La foto es la base y el clip se funde encima cuando puede reproducirse.
+     El <img> NO se va nunca: si el autoplay se bloquea, si el visitante pidió
+     menos movimiento o si ahorra datos, lo que queda es la foto — nunca un
+     rectángulo negro. Por eso el video no lleva poster= (ese desaparece al
+     primer fotograma) y lleva data-src, para no bajar 1,4 MB sin permiso. -->
 <section class="portada" id="portada" aria-labelledby="t-portada">
   <div class="portada__foto" aria-hidden="true">
-    <img src="imagenes/port-01.jpg" width="2560" height="1707"
+    <img src="imagenes/port-01.jpg" width="1920" height="1080"
          decoding="async" fetchpriority="high" alt="">
+    <video class="portada__video" data-src="video/port.mp4" muted playsinline loop preload="none" aria-hidden="true"></video>
   </div>
 
   <!-- ═══════ ESCENA DE PORTADA · «la aguja que da la vuelta» ═══════
@@ -88,9 +94,24 @@
     </p>
     <div class="acciones">
       <a class="boton" href="#cita">Ver la primera cita</a>
-      <a class="boton boton--linea" href="#especialidades">Especialidades</a>
+      <a class="boton boton--linea" href="#agenda">Pedir hora</a>
     </div>
   </div>
+</section>
+
+
+<!-- ═══════════ CIFRAS ═══════════
+     Cuatro números en la misma fila: la audiencia que ya tienen, la hora
+     que esta página cuenta, los tramos en que se divide y —el cuarto— lo
+     que su web de hoy dice sobre esa hora. Sólo cuenta la cifra que costó
+     verificar; las otras tres son aritmética de esta misma página. -->
+<section class="cifras" aria-label="Cuatro cifras de la clínica">
+  <ul class="cifras__lista cascada ancho">
+    <li><b data-cuenta="8249">8.249</b><span>seguidores en Instagram · verificado el 01-09-2026</span></li>
+    <li><b>60</b><span>minutos dura la primera cita, contados acá abajo</span></li>
+    <li><b>6</b><span>tramos en los que está dividida esa hora</span></li>
+    <li><b>0</b><span>lo que dice de esa hora su web de hoy · verificado el 08-09-2026</span></li>
+  </ul>
 </section>
 
 
@@ -108,7 +129,7 @@
     </p>
   </div>
 
-  <ol class="reloj-l ancho">
+  <ol class="reloj-l cascada ancho">
     <li class="tramo">
       <p class="tramo__t"><span>00</span>—<span>05</span></p>
       <div>
@@ -164,17 +185,19 @@
     </li>
   </ol>
 
-  <p class="ancho nota">
-    Cada boca es distinta y esto es el orden de una evaluación, no una
-    promesa de tratamiento. Lo que se hace, se decide con usted sentado
-    en el sillón.
-  </p>
+  <div class="ancho">
+    <p class="nota">
+      Cada boca es distinta y esto es el orden de una evaluación, no una
+      promesa de tratamiento. Lo que se hace, se decide con usted sentado
+      en el sillón.
+    </p>
+  </div>
 </section>
 
 
 <!-- ═══════════ TAJO ═══════════ -->
 <figure class="tajo" aria-labelledby="t-tajo">
-  <img src="imagenes/tajo-01.jpg" width="2200" height="1467" loading="lazy" decoding="async" alt="">
+  <img src="imagenes/tajo-01.jpg" width="2200" height="1764" loading="lazy" decoding="async" alt="">
   <figcaption class="tajo__txt">
     <h2 id="t-tajo">Lo caro no es tratarse. Es esperar.</h2>
     <p>Una caries chica se arregla en una sesión. La misma caries en un
@@ -189,29 +212,63 @@
     <p class="rotulo">Especialidades</p>
     <h2 class="titulo" id="t-esp">Qué se resuelve acá.</h2>
     <p class="entradilla">
-      Esta lista es <b>ejemplo</b> hasta que la clínica la confirme
-      contra lo que realmente ofrece.
+      De estas seis, <b>odontopediatría es la única que la clínica
+      publica hoy</b> en clinicaodonthos.cl (comprobado el 09-09-2026).
+      Las otras cinco son <b>ejemplo</b> hasta que ustedes las confirmen
+      contra lo que realmente ofrecen.
     </p>
-    <ul class="esp ej" data-ejemplo="por confirmar">
+    <ul class="esp cascada ej" data-ejemplo="cinco de seis, por confirmar">
+      <li><h3>Odontopediatría</h3><p>Atención dental de niños y niñas. Es la que la clínica destaca en su sitio actual.</p></li>
       <li><h3>Odontología general</h3><p>Evaluación, obturaciones y control periódico.</p></li>
       <li><h3>Limpieza y encías</h3><p>Destartraje y tratamiento periodontal.</p></li>
       <li><h3>Endodoncia</h3><p>Tratamiento de conducto cuando el nervio está comprometido.</p></li>
       <li><h3>Estética</h3><p>Blanqueamiento, carillas y restauraciones visibles.</p></li>
       <li><h3>Rehabilitación</h3><p>Coronas, puentes y prótesis.</p></li>
-      <li><h3>Ortodoncia</h3><p>Evaluación y derivación o tratamiento según el caso.</p></li>
     </ul>
   </div>
 </section>
 
 
-<!-- ═══════════ EL EQUIPO · con telón ═══════════ -->
+<!-- ═══════════ MITADES · QUÉ TRAER ═══════════
+     La otra mitad de la pieza firma: la misma hora, contada desde el lado
+     del paciente. Es oficio, no una exigencia de la clínica, y así lo dice
+     la nota. Ninguno de los cuatro puntos afirma nada sobre Odonthos que
+     Odonthos no haya publicado. -->
+<section class="mit" id="traer" aria-labelledby="t-mit">
+  <div class="mit__foto">
+    <img src="imagenes/mit-01.jpg" width="2200" height="3143" loading="lazy" decoding="async"
+         alt="Odontólogo sentado junto al sillón mostrándole una imagen en la tableta a una paciente que escucha">
+  </div>
+  <div class="mit__txt">
+    <p class="rotulo">Antes de venir</p>
+    <h2 class="titulo" id="t-mit">Qué conviene traer a esa hora.</h2>
+    <p class="entradilla">
+      Nada de esto es obligatorio. Cada una de las cuatro cosas le
+      devuelve minutos al examen — y el examen es lo que decide si el
+      plan sale completo el mismo día.
+    </p>
+    <ul class="traer cascada">
+      <li><b>Su previsión</b> — Fonasa o isapre. Sirve para saber qué queda cubierto antes de que se hable de valores.</li>
+      <li><b>Lo que toma</b> — remedios, dosis y desde cuándo. Es el dato que más cambia lo que se puede hacer ese mismo día.</li>
+      <li><b>Radiografías anteriores</b>, si las tiene: aunque sean de otra clínica y de hace años, ahorran repetirlas.</li>
+      <li><b>La pregunta que lo trajo</b>, escrita. En el sillón se olvida, y es la que hay que contestar antes de salir.</li>
+    </ul>
+    <p class="nota">
+      Es una lista de oficio, no un requisito de la clínica: si llega sin
+      nada, igual se le atiende.
+    </p>
+  </div>
+</section>
+
+
+<!-- ═══════════ EL EQUIPO · banda oscura con telón ═══════════ -->
 <section class="equipo con-telon" id="equipo" aria-labelledby="t-eq">
   <div class="telon" aria-hidden="true">
     <img src="imagenes/telon-01.jpg" width="1200" height="800" loading="lazy" decoding="async" alt="">
   </div>
   <div class="ancho">
-    <p class="rotulo">El equipo</p>
-    <h2 class="titulo" id="t-eq">Ocho mil personas ya los siguen.</h2>
+    <p class="rotulo rotulo--claro">El equipo</p>
+    <h2 class="titulo titulo--claro" id="t-eq">Ocho mil personas ya los siguen.</h2>
     <div class="equipo__cols">
       <p>
         Odonthos tiene <b>8.249 seguidores en Instagram</b>. Esa
@@ -225,7 +282,7 @@
         alguien busca «dentista Puerto Varas» sin conocerlos.
       </p>
     </div>
-    <ul class="fichas">
+    <ul class="fichas cascada">
       <li class="ficha ej" data-ejemplo="falta foto y nombre">
         <div class="ficha__hueco" aria-hidden="true"><span>Foto</span></div>
         <h3>Profesional 1</h3>
@@ -258,11 +315,11 @@
       comprobar al abrirla. Estos son los números de lo que está
       leyendo ahora.
     </p>
-    <ul class="specs">
+    <ul class="specs cascada">
       <li><b>0</b><span>peticiones a servidores de terceros</span></li>
       <li><b>0</b><span>rastreadores y cookies</span></li>
-      <li><b>1</b><span>archivo de estilos, escrito a mano</span></li>
-      <li><b data-cuenta="100">100%</b><span>del contenido legible sin JavaScript</span></li>
+      <li><b>2</b><span>hojas de estilo, escritas a mano y servidas de acá</span></li>
+      <li><b>100%</b><span>del contenido legible sin JavaScript</span></li>
     </ul>
     <p class="nota">
       Una plantilla carga decenas de archivos de terceros antes de
@@ -275,7 +332,8 @@
 
 <!-- ═══════════ CITA ═══════════ -->
 <figure class="cita" aria-label="Sobre la primera consulta">
-  <img src="imagenes/cita-01.jpg" width="2200" height="1467" loading="lazy" decoding="async" alt="">
+  <img src="imagenes/cita-01.jpg" width="1920" height="1080" loading="lazy" decoding="async" alt="">
+  <video class="cita__video" data-src="video/cita.mp4" muted playsinline loop preload="none" aria-hidden="true"></video>
   <blockquote class="cita__txt">
     <p>«Del presupuesto se habla al minuto cuarenta y cinco. Nunca
        antes de mirar.»</p>
@@ -289,13 +347,13 @@
     <p class="rotulo">La clínica</p>
     <h2 class="titulo" id="t-mos">Cómo se trabaja.</h2>
   </div>
-  <div class="mos__grilla">
-    <figure class="mos__p"><img src="imagenes/mos1-01.jpg" width="1200" height="800" loading="lazy" decoding="async" alt="Atención odontológica en el sillón"></figure>
-    <figure class="mos__p"><img src="imagenes/mos2-01.jpg" width="1200" height="800" loading="lazy" decoding="async" alt="Examen dental"></figure>
-    <figure class="mos__p"><img src="imagenes/mos3-01.jpg" width="1200" height="800" loading="lazy" decoding="async" alt="Instrumental en la consulta"></figure>
-    <figure class="mos__p"><img src="imagenes/mos4-01.jpg" width="1200" height="800" loading="lazy" decoding="async" alt="Trabajo del equipo dental"></figure>
-    <figure class="mos__p"><img src="imagenes/mos5-01.jpg" width="1200" height="800" loading="lazy" decoding="async" alt="Odontóloga trabajando"></figure>
-    <figure class="mos__p"><img src="imagenes/mos6-01.jpg" width="1200" height="800" loading="lazy" decoding="async" alt="Equipamiento de la clínica"></figure>
+  <div class="mos__grilla cascada">
+    <figure class="mos__p"><img src="imagenes/mos1-01.jpg" width="1200" height="800" loading="lazy" decoding="async" alt="Odontóloga examinando la boca de un paciente adulto bajo la lámpara del sillón"></figure>
+    <figure class="mos__p"><img src="imagenes/mos2-01.jpg" width="1200" height="1800" loading="lazy" decoding="async" alt="Dos profesionales revisando la radiografía panorámica en la pantalla del box"></figure>
+    <figure class="mos__p"><img src="imagenes/mos3-01.jpg" width="1200" height="1800" loading="lazy" decoding="async" alt="Odontóloga con gorro y mascarilla trabajando sobre un paciente recostado"></figure>
+    <figure class="mos__p"><img src="imagenes/mos4-01.jpg" width="1200" height="1800" loading="lazy" decoding="async" alt="Radiografía panorámica en la pantalla, repasada con un lápiz"></figure>
+    <figure class="mos__p"><img src="imagenes/mos5-01.jpg" width="1200" height="800" loading="lazy" decoding="async" alt="Bandeja de acero con el instrumental de examen"></figure>
+    <figure class="mos__p"><img src="imagenes/mos6-01.jpg" width="1200" height="800" loading="lazy" decoding="async" alt="Lámpara del sillón encendida y las piezas de mano en su soporte"></figure>
   </div>
 </section>
 
@@ -311,15 +369,26 @@
         corresponde: no es lo mismo una evaluación que una urgencia.
       </p>
       <dl class="datos">
-        <div><dt>Dónde están</dt><dd>Puerto Varas</dd></div>
-        <div><dt>Dónde están hoy</dt><dd>Instagram <span class="mono">@clinicaodonthospv</span> · 8.249 seguidores</dd></div>
+        <div><dt>Dónde</dt><dd>San Francisco 1176, local 15 · Centro Comercial Punto Sur, Puerto Varas</dd></div>
+        <div><dt>Teléfono</dt><dd><a href="tel:+56964690404">+56 9 6469 0404</a></dd></div>
+        <div><dt>Correo</dt><dd><a href="mailto:clinicaodonthospv@gmail.com">clinicaodonthospv@gmail.com</a></dd></div>
+        <div><dt>Instagram</dt><dd><a href="https://www.instagram.com/clinicaodonthospv/" target="_blank" rel="noopener">@clinicaodonthospv</a> · 8.249 seguidores</dd></div>
+        <div class="ej" data-ejemplo="lo confirma la clínica"><dt>Horario</dt><dd>De lunes a viernes, según su ficha. El sábado, por confirmar.</dd></div>
         <div><dt>Web actual</dt><dd>clinicaodonthos.cl — hecha con plantilla</dd></div>
-        <div class="ej" data-ejemplo="por confirmar"><dt>Teléfono y horario</dt><dd>Los que publiquen sus redes</dd></div>
       </dl>
+      <p class="nota">
+        La dirección, el teléfono y el correo son los que la propia
+        clínica publica en clinicaodonthos.cl, comprobados el
+        09-09-2026. Si algo cambió, se corrige en un minuto.
+      </p>
     </div>
 
     <div class="pedir">
       <h3 class="pedir__t">Armar el mensaje</h3>
+      <p class="pedir__ayuda">
+        No se envía nada desde esta página: se abre WhatsApp con el
+        mensaje ya escrito, para que usted lo revise antes de mandarlo.
+      </p>
       <form class="form" id="form-ag" autocomplete="on">
         <label>Su nombre
           <input type="text" id="f-nombre" required>
@@ -345,13 +414,14 @@
         </label>
         <p class="form__salida" id="salida" aria-live="polite"></p>
         <div class="form__acciones">
-          <button class="boton" type="button" id="btn-copiar">Copiar el mensaje</button>
-          <a class="boton boton--linea" href="https://www.instagram.com/clinicaodonthospv/" target="_blank" rel="noopener">Abrir el Instagram</a>
+          <a class="boton" id="ir-wsp" href="https://wa.me/56964690404?text=Hola%2C%20quiero%20agendar%20una%20hora%20en%20Odonthos." target="_blank" rel="noopener">Abrir WhatsApp con esto</a>
+          <button class="boton boton--linea" type="button" id="btn-copiar">Copiar el mensaje</button>
         </div>
       </form>
       <p class="form__sinjs">
-        Sin JavaScript el enlace al Instagram sigue funcionando. Lo
-        único que se pierde es que el texto se arme solo.
+        Sin JavaScript el botón abre WhatsApp igual, con un mensaje base,
+        y usted escribe el resto. Lo único que se pierde es que el texto
+        se arme solo.
       </p>
     </div>
   </div>
@@ -359,6 +429,18 @@
 
 
 <!-- ═══════════ PARA EL DUEÑO ═══════════ -->
+<section class="mapa-sec" aria-label="Dónde queda">
+    <div class="ancho">
+      <figure class="mapa">
+        <img src="imagenes/mapa-01.jpg" width="768" height="768" loading="lazy" decoding="async"
+             alt="Mapa de Puerto Varas.">
+        <figcaption class="mapa__pie">
+          <span><b>Puerto Varas</b>. La dirección exacta la confirma el negocio: cuando la tengamos, el mapa marca la puerta.</span>
+          <span class="mapa__cred">Mapa: &copy; <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener">OpenStreetMap</a></span>
+        </figcaption>
+      </figure>    </div>
+</section>
+
 <section class="dueno" aria-labelledby="t-dueno">
   <div class="ancho">
     <p class="rotulo rotulo--claro">Para el dueño</p>
@@ -368,15 +450,16 @@
         <h3>Qué es</h3>
         <p>Una propuesta de sitio web hecha por nuestra cuenta. Odonthos
           no la encargó ni la ha revisado. Dimos por cierto sólo lo que
-          ustedes publican: el Instagram con 8.249 seguidores y que hoy
-          tienen sitio en clinicaodonthos.cl.</p>
+          ustedes publican: el Instagram con 8.249 seguidores, y la
+          dirección, el teléfono, el correo y la odontopediatría que
+          están en clinicaodonthos.cl (comprobados el 09-09-2026).</p>
       </div>
       <div>
         <h3>Qué es ejemplo</h3>
-        <p>La lista de especialidades, el teléfono y el horario. Los
-          minutos de la primera cita son un promedio de oficio y así
-          está dicho. Las tres fichas del equipo están vacías: no
-          inventamos nombres de profesionales.</p>
+        <p>Cinco de las seis especialidades y el horario. Los minutos de
+          la primera cita y la lista de qué traer son oficio, no una
+          regla de la clínica, y así está dicho. Las tres fichas del
+          equipo están vacías: no inventamos nombres de profesionales.</p>
       </div>
       <div>
         <h3>Sobre el sitio que ya tienen</h3>
@@ -398,12 +481,38 @@
 
 <footer class="pie">
   <p>Sitio de demostración preparado por CristalWeb. El negocio no lo ha
-     encargado ni ha revisado su contenido. Las especialidades, el
-     teléfono y el horario son ejemplos marcados como tales, y los
-     minutos de la primera cita son un promedio de oficio. Esta página
-     no promete resultados clínicos.</p>
+     encargado ni ha revisado su contenido. Cinco de las seis
+     especialidades y el horario son ejemplos marcados como tales; los
+     minutos de la primera cita y la lista de qué traer son un promedio
+     de oficio. No hay
+     precios en esta página: los pone la clínica. Esta página no promete
+     resultados clínicos.</p>
 </footer>
 
+<!-- ══ WHATSAPP FLOTANTE ═══════════════════════════════════════════
+     Va escrito en el HTML, no lo crea el JS: si el script no arranca,
+     el botón igual está. El JS sólo lo aparta mientras se mira la
+     portada, para no tapar el titular. El número es el de la CLÍNICA,
+     el mismo del tel: de más arriba. Icono de simple-icons (CC0),
+     incrustado: la CSP no deja pedir nada a un tercero. -->
+<a class="wapp"
+   href="https://wa.me/56964690404?text=Hola%2C%20vi%20la%20p%C3%A1gina%20y%20quiero%20agendar%20una%20hora."
+   target="_blank" rel="noopener"
+   aria-label="Escribir a Clínica Odonthos por WhatsApp">
+  <svg class="wapp__i" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"/></svg>
+  <span class="wapp__t">WhatsApp</span>
+</a>
+
+
+<!-- ══ BOTON FLOTANTE DE CONTACTO ══════════════════════════════════
+     Escrito en el HTML y VISIBLE por defecto: si el script no arranca,
+     el boton igual esta. El JS solo lo aparta mientras se mira la
+     portada, para no tapar el titular. Icono de simple-icons (CC0),
+     incrustado: la CSP no deja pedir nada a un tercero. -->
+<a class="flota flota--wa" href="https://wa.me/56964690404?text=Hola%2C%20vi%20la%20pagina%20y%20quiero%20consultar." target="_blank" rel="noopener" aria-label="Escribir por WhatsApp a Clínica Odonthos">
+  <svg class="flota__i" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"/></svg>
+  <span class="flota__t">WhatsApp</span>
+</a>
 <script src="js/main.js"></script>
 </body>
 </html>

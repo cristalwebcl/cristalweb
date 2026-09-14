@@ -1,0 +1,22 @@
+FUENTES DE LAS IMAGENES - Cabanas Alto Conaripe Rehecha el 13-09-2026 (presentacion antes que texto). Fotos de REFERENCIA de bancos libres: ninguna es del local; las verdaderas las tiene que mandar el negocio. 
+port-01.jpg  <-  pozo-p-alt-cabana\006.jpg  |  pexels (Pexels License)  |  autor: Salih Sezgen  |  https://www.pexels.com/es-es/foto/cabana-rustica-en-un-entorno-de-bosque-brumoso-35150562/  |  consulta: "wooden cabin forest night"
+hund1-01.jpg  <-  pozo-p-alt-cabana\001.jpg  |  pexels (Pexels License)  |  autor: Roger Ce  |  https://www.pexels.com/es-es/foto/madera-naturaleza-casas-verano-17967869/  |  consulta: "wooden cabin forest night"
+hund2-01.jpg  <-  pozo-p-alt-roca\002.jpg  |  pexels (Pexels License)  |  autor: Thorarinn Torfason  |  https://www.pexels.com/es-es/foto/flores-silvestres-amarillas-entre-rocas-volcanicas-36576219/  |  consulta: "volcanic rock moss"
+hund3-01.jpg  <-  pozo-p-alt-bosque\006.jpg  |  pexels (Pexels License)  |  autor: Ivan Stecko  |  https://www.pexels.com/es-es/foto/verano-bosque-arboles-ramas-15954877/  |  consulta: "fern forest Chile"
+hund4-01.jpg  <-  pozo-p-alt-termas\005.jpg  |  pexels (Pexels License)  |  autor: Patrick Carafa  |  https://www.pexels.com/es-es/foto/pasarela-de-madera-con-barandillas-sobre-masa-de-agua-11671236/  |  consulta: "hot spring steam wooden walkway"
+hund5-01.jpg  <-  pozo-p-ens-kayak\006.jpg  |  pexels (Pexels License)  |  autor: Ema Reynares  |  https://www.pexels.com/es-es/foto/paisaje-naturaleza-rojo-nubes-17256313/  |  consulta: "kayak lake"
+hund6-01.jpg  <-  pozo-p-alt-balcon\001.jpg  |  pexels (Pexels License)  |  autor: Saya Omar  |  https://www.pexels.com/es-es/foto/cafe-taza-copa-te-19155532/  |  consulta: "balcony forest morning coffee"
+banda-01.jpg  <-  pozo-p-alt-bosque\011.jpg  |  pexels (Pexels License)  |  autor: Misho chachanidze  |  https://www.pexels.com/es-es/foto/modelo-estampado-planta-hojas-8551299/  |  consulta: "fern forest Chile"
+cita-01.jpg  <-  pozo-p-alt-cabana\007.jpg  |  pexels (Pexels License)  |  autor: Amel Uzunovic  |  https://www.pexels.com/es-es/foto/paisaje-montanas-silueta-viaje-15506795/  |  consulta: "wooden cabin forest night"
+mos1-01.jpg  <-  pozo-p-alt-balcon\007.jpg  |  pexels (Pexels License)  |  autor: wendel moretti  |  https://www.pexels.com/es-es/foto/acogedora-terraza-de-madera-con-vistas-al-bosque-en-invierno-35863015/  |  consulta: "balcony forest morning coffee"
+mos2-01.jpg  <-  pozo-p-alt-roca\006.jpg  |  pexels (Pexels License)  |  autor: ArtHouse Studio  |  https://www.pexels.com/es-es/foto/clima-resfriado-frio-islandia-4338104/  |  consulta: "volcanic rock moss"
+mos3-01.jpg  <-  pozo-p-alt-balcon\006.jpg  |  pexels (Pexels License)  |  autor: Rodrigo Ortega  |  https://www.pexels.com/es-es/foto/elegante-taza-de-cafe-de-ceramica-sobre-mesa-de-madera-29173447/  |  consulta: "balcony forest morning coffee"
+mos4-01.jpg  <-  pozo-p-alt-bosque\001.jpg  |  pexels (Pexels License)  |  autor: David Correa Franco  |  https://www.pexels.com/es-es/foto/hojas-vibrantes-de-helecho-en-el-bosque-colombiano-31591011/  |  consulta: "fern forest Chile"
+mos5-01.jpg  <-  pozo-p-alt-cabana\012.jpg  |  pexels (Pexels License)  |  autor: Luke Miller  |  https://www.pexels.com/es-es/foto/naturaleza-cielo-noche-arboles-5570592/  |  consulta: "wooden cabin forest night"
+mos6-01.jpg  <-  pozo-p-alt-termas\003.jpg  |  pexels (Pexels License)  |  autor: Lukas Kloeppel  |  https://www.pexels.com/es-es/foto/camino-de-hormigon-gris-sobre-la-hierba-verde-2416598/  |  consulta: "hot spring steam wooden walkway"
+
+BRUMA (bruma-pag-0N.png y bruma-osc-0N.png, 30x20): las MISMAS fotos, recortadas a 3:2, reducidas y
+recoloreadas con C:\devs\demos\hacer-bruma.ps1 (clara >= 0,68 de luminancia / oscura <= 0,05). No suman fuentes.
+    pagina: port-01.jpg, hund1-01.jpg, hund3-01.jpg, hund5-01.jpg, mos1-01.jpg, mos4-01.jpg, mos6-01.jpg, hund4-01.jpg   |   oscuras: cita-01.jpg, banda-01.jpg, mos5-01.jpg
+
+MAPA: iframe de Google Maps (embed publico, sin clave). No hay imagen de mapa.

@@ -1,0 +1,22 @@
+FUENTES DE LAS IMAGENES - AutotrÃ³nico Rehecha el 13-09-2026 (presentacion antes que texto). Fotos de REFERENCIA de bancos libres: ninguna es del local; las verdaderas las tiene que mandar el negocio. 
+port-01.jpg  <-  pozo-p-at-osciloscopio\004.jpg  |  pexels (Pexels License)  |  autor: cottonbro studio  |  https://www.pexels.com/es-es/foto/mano-vintage-sujetando-sesion-de-estudio-7858289/  |  consulta: "oscilloscope"
+hund1-01.jpg  <-  pozo-p-at-scanner\005.jpg  |  pexels (Pexels License)  |  autor: Jose Ricardo Barraza Morachis  |  https://www.pexels.com/es-es/foto/hombre-trabajando-coche-vehiculo-4116193/  |  consulta: "car diagnostic scanner"
+hund2-01.jpg  <-  pozo-p-at-cables\004.jpg  |  pexels (Pexels License)  |  autor: Brigitte  Miller  |  https://www.pexels.com/es-es/foto/manos-sujetando-cables-enfoque-selectivo-11569036/  |  consulta: "car wiring"
+hund3-01.jpg  <-  pozo-p-at-fusibles\003.jpg  |  pexels (Pexels License)  |  autor: JS Leng  |  https://www.pexels.com/es-es/foto/motor-bateria-desde-arriba-4374843/  |  consulta: "car fuse box"
+hund4-01.jpg  <-  pozo-p-at-foco\005.jpg  |  pexels (Pexels License)  |  autor: 竟傲 汤  |  https://www.pexels.com/es-es/foto/blanco-y-negro-coche-vehiculo-faros-delanteros-7127593/  |  consulta: "car headlight"
+hund5-01.jpg  <-  pozo-p-at-tablero\004.jpg  |  pexels (Pexels License)  |  autor: Srattha Nualsate  |  https://www.pexels.com/es-es/foto/iluminado-instrumento-velocimetro-medir-13060851/  |  consulta: "car dashboard lights"
+hund6-01.jpg  <-  pozo-p-at-multimetro\003.jpg  |  pexels (Pexels License)  |  autor: Sphinxx69  |  https://www.pexels.com/es-es/foto/primer-plano-del-multimetro-y-las-herramientas-sobre-la-mesa-38292956/  |  consulta: "multimeter"
+banda-01.jpg  <-  pozo-p-at-tablero\006.jpg  |  pexels (Pexels License)  |  autor: Erik Mclean  |  https://www.pexels.com/es-es/foto/ligero-rojo-noche-crepusculo-5438618/  |  consulta: "car dashboard lights"
+cita-01.jpg  <-  pozo-p-at-tablero\010.jpg  |  pexels (Pexels License)  |  autor: Abdulvahap Demir  |  https://www.pexels.com/es-es/foto/coche-vehiculo-tecnologia-metro-12456842/  |  consulta: "car dashboard lights"
+mos1-01.jpg  <-  pozo-p-at-cables\009.jpg  |  pexels (Pexels License)  |  autor: cottonbro studio  |  https://www.pexels.com/es-es/foto/abstracto-resumen-color-arreglar-4480541/  |  consulta: "car wiring"
+mos2-01.jpg  <-  pozo-p-at-osciloscopio\008.jpg  |  pexels (Pexels License)  |  autor: cottonbro studio  |  https://www.pexels.com/es-es/foto/mano-estudio-equipo-pulso-7858300/  |  consulta: "oscilloscope"
+mos3-01.jpg  <-  pozo-p-at-fusibles\008.jpg  |  pexels (Pexels License)  |  autor: Maxi Gagliano  |  https://www.pexels.com/es-es/foto/industria-abstracto-resumen-conexion-4617591/  |  consulta: "car fuse box"
+mos4-01.jpg  <-  pozo-p-at-tablero\011.jpg  |  pexels (Pexels License)  |  autor: Erik Mclean  |  https://www.pexels.com/es-es/foto/pictogramas-en-el-tablero-de-instrumentos-del-automovil-16341407/  |  consulta: "car dashboard lights"
+mos5-01.jpg  <-  pozo-p-at-cables\007.jpg  |  pexels (Pexels License)  |  autor: Jenda Kubeš  |  https://www.pexels.com/es-es/foto/vehiculo-coche-deportivo-motor-de-cerca-10108616/  |  consulta: "car wiring"
+mos6-01.jpg  <-  pozo-p-at-scanner\001.jpg  |  pexels (Pexels License)  |  autor: Jose Ricardo Barraza Morachis  |  https://www.pexels.com/es-es/foto/trabajando-coche-vehiculo-viaje-4116172/  |  consulta: "car diagnostic scanner"
+
+BRUMA (bruma-pag-0N.png y bruma-osc-0N.png, 30x20): las MISMAS fotos, recortadas a 3:2, reducidas y
+recoloreadas con C:\devs\demos\hacer-bruma.ps1 (clara >= 0,68 de luminancia / oscura <= 0,05). No suman fuentes.
+    pagina: port-01.jpg, banda-01.jpg, cita-01.jpg, hund5-01.jpg, mos4-01.jpg   |   oscuras: port-01.jpg, banda-01.jpg, cita-01.jpg
+
+MAPA: iframe de Google Maps (embed publico, sin clave). No hay imagen de mapa.

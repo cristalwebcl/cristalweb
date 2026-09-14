@@ -1,0 +1,22 @@
+FUENTES DE LAS IMAGENES - Veterinaria Peru Rehecha el 14-09-2026 (presentacion antes que texto). Fotos de REFERENCIA de bancos libres: ninguna es del local; las verdaderas las tiene que mandar el negocio. 
+port-01.jpg  <-  pozo-p-pe-cono\001.jpg  |  pexels (Pexels License)  |  autor: Camilo Laverde  |  https://www.pexels.com/es-es/foto/perro-mascota-medico-dispositivo-18604343/  |  consulta: "dog cone collar"
+hund1-01.jpg  <-  pozo-p-pe-cama\008.jpg  |  pexels (Pexels License)  |  autor: Caro S  |  https://www.pexels.com/es-es/foto/animal-mascota-mono-hierba-13465884/  |  consulta: "dog bed cushion"
+hund2-01.jpg  <-  pozo-p-pe-plato\012.jpg  |  pexels (Pexels License)  |  autor: Boys in Bristol Photography  |  https://www.pexels.com/es-es/foto/agua-piedras-mojado-humedo-13722344/  |  consulta: "pet water bowl"
+hund3-01.jpg  <-  pozo-p-pe-calendario\011.jpg  |  pexels (Pexels License)  |  autor: Natalia S  |  https://www.pexels.com/es-es/foto/acercamiento-a-un-calendario-28353118/  |  consulta: "calendar pencil notebook"
+hund4-01.jpg  <-  pozo-p-pe-patitas\011.jpg  |  pexels (Pexels License)  |  autor: Su La Pyae  |  https://www.pexels.com/es-es/foto/patas-25078644/  |  consulta: "puppy paws close up"
+hund5-01.jpg  <-  pozo-p-pe-gatito\003.png  |  pexels (Pexels License)  |  autor: Ramses  Ramirez  |  https://www.pexels.com/es-es/foto/adorable-gatito-atigrado-durmiendo-en-el-sofa-37881724/  |  consulta: "kitten sleeping"
+hund6-01.jpg  <-  pozo-p-pe-patitas\006.jpg  |  pexels (Pexels License)  |  autor: Julia Filirovska  |  https://www.pexels.com/es-es/foto/cama-habitacion-perro-mascota-7140624/  |  consulta: "puppy paws close up"
+banda-01.jpg  <-  pozo-p-pe-ventana\012.jpg  |  pexels (Pexels License)  |  autor: M Tetri  |  https://www.pexels.com/es-es/foto/encantador-perro-mestizo-bajo-una-iluminacion-espectacular-31063141/  |  consulta: "dog blanket window light"
+cita-01.jpg  <-  pozo-p-pe-patitas\012.jpg  |  pexels (Pexels License)  |  autor: Magda Ehlers  |  https://www.pexels.com/es-es/foto/perro-mascota-pelo-piel-12131231/  |  consulta: "puppy paws close up"
+mos1-01.jpg  <-  pozo-p-pe-plato\011.jpg  |  pexels (Pexels License)  |  autor: Magda Ehlers  |  https://www.pexels.com/es-es/foto/perro-mascota-mono-hierba-13772676/  |  consulta: "pet water bowl"
+mos2-01.jpg  <-  pozo-p-pe-calendario\006.jpg  |  pexels (Pexels License)  |  autor: Leeloo The First  |  https://www.pexels.com/es-es/foto/taza-de-ceramica-blanca-al-lado-de-un-boligrafo-negro-sobre-un-cuaderno-blanco-5386750/  |  consulta: "calendar pencil notebook"
+mos3-01.jpg  <-  pozo-p-pe-ventana\008.jpg  |  pexels (Pexels License)  |  autor: Kvs Sidhu  |  https://www.pexels.com/es-es/foto/perro-mascota-mono-acostado-17029964/  |  consulta: "dog blanket window light"
+mos4-01.jpg  <-  pozo-p-pe-patitas\004.jpg  |  pexels (Pexels License)  |  autor: https://kaboompics.com/  |  https://www.pexels.com/es-es/foto/perro-pata-enfoque-selectivo-de-cerca-5993639/  |  consulta: "puppy paws close up"
+mos5-01.jpg  <-  pozo-p-pe-gatito\008.jpg  |  pexels (Pexels License)  |  autor: Aliko Sunawang  |  https://www.pexels.com/es-es/foto/animal-mascota-mono-efecto-desenfocado-5464808/  |  consulta: "kitten sleeping"
+mos6-01.jpg  <-  pozo-p-pe-patitas\010.jpg  |  pexels (Pexels License)  |  autor: Raquel Hawks  |  https://www.pexels.com/es-es/foto/animal-mono-patas-cabellos-7276395/  |  consulta: "puppy paws close up"
+
+BRUMA (bruma-pag-0N.png y bruma-osc-0N.png, 30x20): las MISMAS fotos, recortadas a 3:2, reducidas y
+recoloreadas con C:\devs\demos\hacer-bruma.ps1 (clara >= 0,68 de luminancia / oscura <= 0,05). No suman fuentes.
+    pagina: banda-01.jpg, cita-01.jpg, hund3-01.jpg, mos3-01.jpg, hund6-01.jpg   |   oscuras: banda-01.jpg, cita-01.jpg, mos3-01.jpg
+
+MAPA: iframe de Google Maps (embed publico, sin clave). No hay imagen de mapa.

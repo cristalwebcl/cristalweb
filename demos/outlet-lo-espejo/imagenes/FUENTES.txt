@@ -1,0 +1,20 @@
+﻿FUENTES DE LAS IMAGENES - outlet-lo-espejo Bancos libres; procesadas con preparar-lote.ps1 (JPEG, ancho y calidad por tratamiento). 
+port-01.jpg  <=  C:\devs\demos\santiago\outlet-lo-espejo\imagenes\_crudo\_port-prueba.jpg | recorte 16:9
+cita-01.jpg  <=  pexels | Pexels License | Boys in Bristol Photography | https://www.pexels.com/es-es/foto/apilar-pila-monton-papel-20187073/ | https://images.pexels.com/photos/20187073/pexels-photo-20187073.jpeg | recorte 16:9
+tajo-01.jpg  <=  pexels | Pexels License | Freek Wolsink | https://www.pexels.com/es-es/foto/nave-industrial-con-cajas-de-carton-apiladas-34221998/ | https://images.pexels.com/photos/34221998/pexels-photo-34221998.jpeg | recorte 2:1
+telon-01.jpg  <=  pexels | Pexels License | Joshua Santos | https://www.pexels.com/es-es/foto/coches-vehiculos-edificios-arboles-11502892/ | https://images.pexels.com/photos/11502892/pexels-photo-11502892.jpeg | recorte 16:9
+aura-01.jpg  <=  pexels | Pexels License | Brett Jordan | https://www.pexels.com/es-es/foto/etiqueta-marron-998501/ | https://images.pexels.com/photos/998501/pexels-photo-998501.jpeg | recorte 4:3
+mos4-01.jpg  <=  pexels | Pexels License | gu evary | https://www.pexels.com/es-es/foto/botellas-almacenar-fragancia-envase-19663386/ | https://images.pexels.com/photos/19663386/pexels-photo-19663386.jpeg | recorte 1:1
+mos5-01.jpg  <=  pexels | Pexels License | Vero Lova | https://www.pexels.com/es-es/foto/ropa-elegante-de-lunares-en-una-tienda-minorista-moderna-38269427/ | https://images.pexels.com/photos/38269427/pexels-photo-38269427.jpeg | recorte 1:1
+mos6-01.jpg  <=  pexels | Pexels License | Tim Mossholder | https://www.pexels.com/es-es/foto/pila-de-ollas-de-acero-inoxidable-en-la-cocina-28726706/ | https://images.pexels.com/photos/28726706/pexels-photo-28726706.jpeg | recorte 1:1
+mos1-01.jpg  <=  pexels | Pexels License | Kate Andreeshcheva | https://www.pexels.com/es-es/foto/almacenar-fotografia-de-moda-tienda-mercancias-15869756/ | https://images.pexels.com/photos/15869756/pexels-photo-15869756.jpeg | recorte 1:1
+mos2-01.jpg  <=  C:/devs/demos/santiago/outlet-lo-espejo/imagenes/_crudo/_jug-bajo.jpg | recorte 1:1
+mos3-01.jpg  <=  pexels | Pexels License | Gizemtoş 🕊️ | https://www.pexels.com/es-es/foto/elegante-exhibicion-de-relojes-de-lujo-en-cajas-31513715/ | https://images.pexels.com/photos/31513715/pexels-photo-31513715.jpeg | recorte 1:1
+mit-01.jpg  <=  C:/devs/demos/_tmp32/_mit.jpg
+
+MAPA DE UBICACION — mapa-01.jpg
+  768 x 768 · zoom 16 · centro -33.5224463, -70.7303693
+  Mosaicos de OpenStreetMap pegados en una sola imagen, con el marcador
+  dibujado encima. Datos (c) OpenStreetMap contributors, licencia ODbL:
+  la atribucion tiene que ir VISIBLE junto al mapa, en el pie de la figura.
+  https://www.openstreetmap.org/copyright

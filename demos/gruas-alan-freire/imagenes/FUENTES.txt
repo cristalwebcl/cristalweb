@@ -43,3 +43,10 @@ DESCARTADAS Y POR QUÉ — la lección de esta demo
 FILTROS APLICADOS: sin marcas legibles, sin menores, sin precios, sin
 plus.unsplash, y ningún paisaje que prometa otro lugar (se descartó un
 cerro árido con animal que no se parece en nada al sur lluvioso).
+
+MAPA DE UBICACION — mapa-01.jpg
+  768 x 768 · zoom 14 · centro -38.9514242, -72.6254333
+  Mosaicos de OpenStreetMap pegados en una sola imagen, con el marcador
+  dibujado encima. Datos (c) OpenStreetMap contributors, licencia ODbL:
+  la atribucion tiene que ir VISIBLE junto al mapa, en el pie de la figura.
+  https://www.openstreetmap.org/copyright

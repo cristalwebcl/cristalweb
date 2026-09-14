@@ -1,0 +1,18 @@
+﻿FUENTES DE LAS IMAGENES - comercial-schmidt-nunoa Bancos libres; procesadas con preparar-lote.ps1 (JPEG, ancho y calidad por tratamiento). 
+tajo-01.jpg  <=  pexels | Pexels License | Yusuf Çelik | https://www.pexels.com/es-es/foto/calle-monitor-mostrar-exhibicion-14939967/ | https://images.pexels.com/photos/14939967/pexels-photo-14939967.jpeg | recorte 21:9
+mit-01.jpg  <=  pexels | Pexels License | Iban Lopez Luna | https://www.pexels.com/es-es/foto/juego-de-utensilios-de-cocina-vintage-en-azul-esmaltado-en-cocina-rustica-37252632/ | https://images.pexels.com/photos/37252632/pexels-photo-37252632.jpeg | recorte 4:5
+cita-01.jpg  <=  pexels | Pexels License | Margo Evardson | https://www.pexels.com/es-es/foto/exhibicion-rustica-de-utensilios-de-cocina-colgantes-en-helsinki-37331220/ | https://images.pexels.com/photos/37331220/pexels-photo-37331220.jpeg | recorte 16:9
+telon-01.jpg  <=  pexels | Pexels License | Iban Lopez Luna | https://www.pexels.com/es-es/foto/escobas-y-cestas-tradicionales-japonesas-en-tokio-37252633/ | https://images.pexels.com/photos/37252633/pexels-photo-37252633.jpeg
+mos1-01.jpg  <=  pexels | Pexels License | Iban Lopez Luna | https://www.pexels.com/es-es/foto/escobas-y-cestas-tradicionales-japonesas-en-tokio-37252633/ | https://images.pexels.com/photos/37252633/pexels-photo-37252633.jpeg | recorte 3:4
+mos3-01.jpg  <=  pexels | Pexels License | Nam Nguyen | https://www.pexels.com/es-es/foto/cocina-rustica-con-utensilios-colgantes-e-iluminacion-calida-36509501/ | https://images.pexels.com/photos/36509501/pexels-photo-36509501.jpeg | recorte 3:4
+mos4-01.jpg  <=  pexels | Pexels License | mehmetakifarts | https://www.pexels.com/es-es/foto/tienda-de-cesteria-tradicional-en-unye-turkiye-36411463/ | https://images.pexels.com/photos/36411463/pexels-photo-36411463.jpeg | recorte 3:4
+mos6-01.jpg  <=  pexels | Pexels License | Pew Nguyen | https://www.pexels.com/es-es/foto/pared-vintage-con-tazas-y-utensilios-de-cocina-colgantes-31479792/ | https://images.pexels.com/photos/31479792/pexels-photo-31479792.jpeg | recorte 3:4
+mos2-01.jpg  <=  pexels | Pexels License | Magda Ehlers | https://www.pexels.com/es-es/foto/exhibicion-de-utensilios-de-cocina-vintage-en-una-tienda-rustica-35285900/ | https://images.pexels.com/photos/35285900/pexels-photo-35285900.jpeg | recorte 3:4
+mos5-01.jpg  <=  pexels | Pexels License | Onur | https://www.pexels.com/es-es/foto/exhibicion-de-escobas-en-esquina-urbana-38529878/ | https://images.pexels.com/photos/38529878/pexels-photo-38529878.jpeg | recorte 3:4
+
+MAPA DE UBICACION — mapa-01.jpg
+  768 x 768 · zoom 16 · centro -33.4550619, -70.6003194
+  Mosaicos de OpenStreetMap pegados en una sola imagen, con el marcador
+  dibujado encima. Datos (c) OpenStreetMap contributors, licencia ODbL:
+  la atribucion tiene que ir VISIBLE junto al mapa, en el pie de la figura.
+  https://www.openstreetmap.org/copyright

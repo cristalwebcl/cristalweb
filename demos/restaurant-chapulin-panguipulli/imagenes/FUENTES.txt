@@ -1,0 +1,21 @@
+FUENTES DE LAS IMAGENES - Restaurant Chapul&iacute;n Rehecha el 13-09-2026 (presentacion antes que texto). Fotos de REFERENCIA de bancos libres: ninguna es del local; las verdaderas las tiene que mandar el negocio. 
+port-01.jpg  <-  pozo-p-resto-salmon\007.jpg  |  pexels (Pexels License)  |  autor: pedro furtado  |  https://www.pexels.com/es-es/foto/delicioso-ceviche-de-salmon-con-guarniciones-frescas-33674283/  |  consulta: "salmon dish"
+banda-01.jpg  <-  pozo-p-resto-parrilla\007.jpg  |  pexels (Pexels License)  |  autor: Sergio Arteaga  |  https://www.pexels.com/es-es/foto/comida-verano-cena-chef-18299585/  |  consulta: "grilled meat"
+cita-01.jpg  <-  pozo-p-resto-copas\012.jpg  |  pexels (Pexels License)  |  autor: Maurício Mascaro  |  https://www.pexels.com/es-es/foto/naturaleza-muerta-copas-de-vino-enfoque-selectivo-de-cerca-4953698/  |  consulta: "wine glasses"
+hund1-01.jpg  <-  pozo-p-resto-cocina\003.jpg  |  pexels (Pexels License)  |  autor: Maria Orlova  |  https://www.pexels.com/es-es/foto/restaurante-de-cocina-4947388/  |  consulta: "restaurant kitchen"
+hund2-01.jpg  <-  pozo-p-resto-copas\007.jpg  |  pexels (Pexels License)  |  autor: Alexander Mass  |  https://www.pexels.com/es-es/foto/entorno-rustico-al-aire-libre-con-vino-tinto-y-uvas-29499852/  |  consulta: "wine glasses"
+hund3-01.jpg  <-  pozo-p-resto-parrilla\010.jpg  |  pexels (Pexels License)  |  autor: Sergio Arteaga  |  https://www.pexels.com/es-es/foto/comida-plato-vegetales-verduras-18299599/  |  consulta: "grilled meat"
+hund4-01.jpg  <-  pozo-p-resto-cocina\011.jpg  |  pexels (Pexels License)  |  autor: Viktoriia Panchenko  |  https://www.pexels.com/es-es/foto/iluminacion-interior-acogedora-para-cocinas-de-estilo-industrial-39411636/  |  consulta: "restaurant kitchen"
+hund5-01.jpg  <-  pozo-p-resto-sopa\010.jpg  |  pexels (Pexels License)  |  autor: Oriana Fotos  |  https://www.pexels.com/es-es/foto/sano-comida-maiz-bol-5268849/  |  consulta: "soup bowl"
+mos1-01.jpg  <-  pozo-p-resto-salmon\004.jpg  |  pexels (Pexels License)  |  autor: Shameel mukkath  |  https://www.pexels.com/es-es/foto/primer-plano-de-harina-de-pescado-en-un-plato-5638532/  |  consulta: "salmon dish"
+mos2-01.jpg  <-  pozo-p-resto-salmon\005.jpg  |  pexels (Pexels License)  |  autor: This And No Internet 25  |  https://www.pexels.com/es-es/foto/salmon-gourmet-con-verduras-y-salsa-34759945/  |  consulta: "salmon dish"
+mos3-01.jpg  <-  pozo-p-resto-sopa\003.jpg  |  pexels (Pexels License)  |  autor: Maggi Paraguay  |  https://www.pexels.com/es-es/foto/comida-plato-mano-cena-27397346/  |  consulta: "soup bowl"
+mos4-01.jpg  <-  pozo-p-resto-salmon\009.jpg  |  pexels (Pexels License)  |  autor: Sebastian Coman Photography  |  https://www.pexels.com/es-es/foto/foto-en-primer-plano-de-la-comida-3655916/  |  consulta: "salmon dish"
+mos5-01.jpg  <-  pozo-p-resto-parrilla\006.jpg  |  pexels (Pexels License)  |  autor: Sergio Arteaga  |  https://www.pexels.com/es-es/foto/vegetales-verduras-verano-fuego-18299596/  |  consulta: "grilled meat"
+mos6-01.jpg  <-  pozo-p-resto-salmon\012.jpg  |  pexels (Pexels License)  |  autor: Shameel mukkath  |  https://www.pexels.com/es-es/foto/plato-vegetales-verduras-tomates-5639482/  |  consulta: "salmon dish"
+
+BRUMA (bruma-pag-0N.png y bruma-osc-0N.png, 30x20): las MISMAS fotos, recortadas a 3:2, reducidas y
+recoloreadas con C:\devs\demos\hacer-bruma.ps1 (clara >= 0,68 de luminancia / oscura <= 0,05). No suman fuentes.
+    pagina: port-01.jpg, banda-01.jpg, hund1-01.jpg, hund2-01.jpg, hund3-01.jpg, hund4-01.jpg, hund5-01.jpg, mos4-01.jpg   |   oscuras: port-01.jpg, banda-01.jpg, hund5-01.jpg
+
+MAPA: iframe de Google Maps (embed publico, sin clave). No hay imagen de mapa.

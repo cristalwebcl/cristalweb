@@ -1,0 +1,22 @@
+FUENTES DE LAS IMAGENES - Restaurant La Abuela Rehecha el 13-09-2026 (presentacion antes que texto). Fotos de REFERENCIA de bancos libres: ninguna es del local; las verdaderas las tiene que mandar el negocio. 
+port-01.jpg  <-  pozo-p-abu-botes\005.jpg  |  pexels (Pexels License)  |  autor: Santiago Peña Bossano  |  https://www.pexels.com/es-es/foto/botes-de-pesca-coloridos-atracados-en-una-playa-tranquila-38149936/  |  consulta: "fishing boats harbor"
+hund1-01.jpg  <-  pozo-p-abu-pescado\012.jpg  |  pexels (Pexels License)  |  autor: William Jacobs  |  https://www.pexels.com/es-es/foto/pescado-crujiente-y-ensalada-de-col-con-rodaja-de-limon-38153619/  |  consulta: "fried fish plate"
+hund2-01.jpg  <-  pozo-p-abu-mariscos\007.jpg  |  pexels (Pexels License)  |  autor: Li Chunyu  |  https://www.pexels.com/es-es/foto/delicioso-plato-de-mariscos-con-guarnicion-de-limon-y-hierbas-37731518/  |  consulta: "mussels clams"
+hund3-01.jpg  <-  pozo-p-abu-caldillo\008.jpg  |  pexels (Pexels License)  |  autor: Kai-Chieh Chan  |  https://www.pexels.com/es-es/foto/comida-bol-tazon-cuenco-5305426/  |  consulta: "fish soup bowl"
+hund4-01.jpg  <-  pozo-p-mes-empanada\007.jpg  |  pexels (Pexels License)  |  autor: Daniel Torobekov  |  https://www.pexels.com/es-es/foto/comida-delicioso-sabroso-nam-13689920/  |  consulta: "baked empanadas"
+hund5-01.jpg  <-  pozo-p-abu-jugo\003.jpg  |  pexels (Pexels License)  |  autor: Daria Andrievskaya  |  https://www.pexels.com/es-es/foto/resfriado-frio-sano-beber-11066840/  |  consulta: "berry juice glass"
+hund6-01.jpg  <-  pozo-p-abu-comedor\007.jpg  |  pexels (Pexels License)  |  autor: Maria Orlova  |  https://www.pexels.com/es-es/foto/mesa-redonda-con-copas-de-vino-colocadas-cerca-de-la-ventana-en-la-sala-de-estar-de-estilo-clasico-4917175/  |  consulta: "rustic restaurant table window"
+banda-01.jpg  <-  pozo-p-abu-muelle\002.jpg  |  pexels (Pexels License)  |  autor: Roy Moreno  |  https://www.pexels.com/es-es/foto/madera-naturaleza-pasarela-pasadera-20761115/  |  consulta: "wooden pier water"
+cita-01.jpg  <-  pozo-p-abu-muelle\004.jpg  |  pexels (Pexels License)  |  autor: Valeriia Miller  |  https://www.pexels.com/es-es/foto/foto-de-muelle-vacio-en-la-noche-2734709/  |  consulta: "wooden pier water"
+mos1-01.jpg  <-  pozo-p-abu-mariscos\012.jpg  |  pexels (Pexels License)  |  autor: Charles Chen  |  https://www.pexels.com/es-es/foto/almejas-frescas-en-cesta-de-bambu-a-la-venta-34556497/  |  consulta: "mussels clams"
+mos2-01.jpg  <-  pozo-p-abu-muelle\009.jpg  |  pexels (Pexels License)  |  autor: Rafael Ferran i Peralta  |  https://www.pexels.com/es-es/foto/madera-embarcadero-muelle-agua-15699038/  |  consulta: "wooden pier water"
+mos3-01.jpg  <-  pozo-p-abu-jugo\009.jpg  |  pexels (Pexels License)  |  autor: Daria Andrievskaya  |  https://www.pexels.com/es-es/foto/resfriado-frio-sano-beber-11066839/  |  consulta: "berry juice glass"
+mos4-01.jpg  <-  pozo-p-abu-botes\009.jpg  |  pexels (Pexels License)  |  autor: Ana Belén González Hernández  |  https://www.pexels.com/es-es/foto/botes-de-pesca-coloridos-en-el-puerto-de-camara-de-lobos-36467811/  |  consulta: "fishing boats harbor"
+mos5-01.jpg  <-  pozo-p-abu-comedor\003.jpg  |  pexels (Pexels License)  |  autor: Diogo Digital Art  |  https://www.pexels.com/es-es/foto/comedor-acogedor-con-ventana-soleada-en-belgica-34996687/  |  consulta: "rustic restaurant table window"
+mos6-01.jpg  <-  pozo-p-abu-caldillo\012.jpg  |  pexels (Pexels License)  |  autor: DΛVΞ GΛRCIΛ  |  https://www.pexels.com/es-es/foto/sopa-de-pescado-tradicional-ecuatoriana-en-tazon-decorado-con-flores-37387555/  |  consulta: "fish soup bowl"
+
+BRUMA (bruma-pag-0N.png y bruma-osc-0N.png, 30x20): las MISMAS fotos, recortadas a 3:2, reducidas y
+recoloreadas con C:\devs\demos\hacer-bruma.ps1 (clara >= 0,68 de luminancia / oscura <= 0,05). No suman fuentes.
+    pagina: port-01.jpg, banda-01.jpg, cita-01.jpg, hund1-01.jpg, hund3-01.jpg, hund6-01.jpg, mos2-01.jpg, mos4-01.jpg   |   oscuras: port-01.jpg, cita-01.jpg, mos2-01.jpg
+
+MAPA: iframe de Google Maps (embed publico, sin clave). No hay imagen de mapa.

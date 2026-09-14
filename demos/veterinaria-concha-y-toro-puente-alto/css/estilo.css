@@ -1,0 +1,567 @@
+/* ══════════════════════════════════════════════════════════════════════
+   Veterinaria Concha y Toro — Puente Alto
+   Demo de CristalWeb. CSS plano, sin build, sin librerías.
+
+   IDENTIDAD — «FICHA CLÍNICA DE DÍA»
+   Papel de ficha, tinta oscura, pauta finita y UN acento. Todo claro:
+   su pareja en la tanda (la 22, Hospital Veterinario Alto la Florida)
+   es la noche de urgencia y va oscura; ésta es el día y la agenda.
+
+   EL ACENTO — BERRY #8A2470, tono 315°.
+   Las veterinarias son el rubro más quemado de la casa (más de veinte
+   en el registro) y ya gastaron el teal, el verde bosque, el coral, el
+   azul noche, el mostaza, el lila y hasta el duotono sin color. Se
+   contaron los tonos de las 252 filas por franjas de 20°: entre 280° y
+   319° hay TRES colores en todo el registro, y sólo uno entre 300 y
+   319. Ahí cae éste. No es el lila de las veterinarias (los morados del
+   registro viven entre 249° y 270°) ni el morado cebolla de Marbesán
+   (`#6B2E7A`, 288°): 315° ya es frambuesa, no violeta.
+   Y no es decorativo: en una ficha clínica el color marca lo que hay
+   que mirar —el motivo, la hora, el signo de alerta—, y por eso acá
+   sólo toca botones, rótulos y los números.
+
+   TRÍO TIPOGRÁFICO — dos de las tres con CERO usos
+   · Display: Wittgenstein — 0 usos. Serif contemporánea de formulario:
+     tiene la seriedad de un documento impreso sin la frialdad de una
+     grotesca. Una ficha clínica se lee así.
+   · Cuerpo: Fustat — 0 usos. Humanista de trazo parejo, muy legible en
+     párrafo corto; no compite con la serif.
+   · Dato: Atkinson Hyperlegible Mono ×3 — la mono menos usada del
+     registro, y está DISEÑADA para legibilidad: acá lleva el horario,
+     el teléfono y los bloques de hora, que son lo que alguien copia mal.
+
+   CONTRASTES MEDIDOS sobre esta página:
+     tinta  #191720 sobre ficha #FBFAF7 ....... 17,1:1
+     medio  #585463 sobre ficha ...............  7,0:1
+     berry  #8A2470 sobre ficha ...............  7,8:1   (texto y enlaces)
+     ficha  sobre noche #1E1420 ............... 17,1:1
+     berry-cl #EE9ACF sobre noche .............  8,6:1
+   ══════════════════════════════════════════════════════════════════════ */
+
+:root {
+  --ficha: #FBFAF7;
+  --ficha-2: #F1EFEA;
+  --pauta: #E2DFD7;
+  --tinta: #191720;
+  --medio: #585463;
+  --berry: #8A2470;
+  --berry-cl: #EE9ACF;     /* sólo sobre fondo oscuro */
+  --berry-suave: #FBE7F3;
+  --noche: #1E1420;
+
+  --ancho: 1160px;
+  --curva: cubic-bezier(.22, .61, .36, 1);
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+[hidden] { display: none !important; }
+
+html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+
+body {
+  margin: 0;
+  background: var(--ficha);
+  color: var(--tinta);
+  font-family: 'Fustat', system-ui, -apple-system, 'Segoe UI', sans-serif;
+  font-size: 1.05rem;
+  line-height: 1.64;
+  -webkit-font-smoothing: antialiased;
+}
+
+img { max-width: 100%; height: auto; display: block; }
+.ancho { width: min(100% - 2.5rem, var(--ancho)); margin-inline: auto; }
+
+a { color: var(--berry); }
+a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible {
+  outline: 3px solid var(--berry);
+  outline-offset: 3px;
+}
+
+/* ── Piezas de texto compartidas ─────────────────────────────────── */
+.rotulo {
+  font-family: 'Atkinson Hyperlegible Mono', ui-monospace, monospace;
+  font-size: .72rem;
+  letter-spacing: .15em;
+  text-transform: uppercase;
+  color: var(--berry);
+  margin: 0 0 .85rem;
+}
+.rotulo--claro { color: var(--berry-cl); }
+
+.titulo {
+  font-family: 'Wittgenstein', Georgia, 'Times New Roman', serif;
+  font-weight: 600;
+  font-size: clamp(1.85rem, 4.3vw, 2.95rem);
+  line-height: 1.12;
+  letter-spacing: -.014em;
+  margin: 0 0 1.1rem;
+}
+.titulo--chico { font-size: clamp(1.55rem, 3.3vw, 2.25rem); }
+.titulo--claro { color: var(--ficha); }
+
+.sub {
+  font-family: 'Wittgenstein', Georgia, serif;
+  font-weight: 600;
+  font-size: clamp(1.25rem, 2.5vw, 1.65rem);
+  margin: 0 0 .9rem;
+}
+
+.entradilla { font-size: 1.1rem; color: var(--medio); max-width: 64ch; margin: 0 0 1.8rem; }
+.entradilla--clara { color: #C3BCC9; }
+.mini { font-size: .9rem; color: var(--medio); max-width: 72ch; margin: 1.4rem 0 0; }
+.mini--claro { color: #BDB3C2; }
+.mini b, .mini--claro b { color: inherit; font-weight: 700; }
+
+/* Lo que todavía no es verdad va subrayado con puntitos y dice quién lo
+   confirma. Acá hay MUY poco marcado, y es a propósito: casi todo el
+   contenido salió del perfil público de la clínica. */
+.ej { border-bottom: 1px dotted var(--berry); cursor: help; }
+.ej::after {
+  content: ' (ej.)';
+  font-family: 'Atkinson Hyperlegible Mono', ui-monospace, monospace;
+  font-size: .7em; color: var(--berry); letter-spacing: .03em;
+}
+
+.dato { font-family: 'Atkinson Hyperlegible Mono', ui-monospace, monospace; font-variant-numeric: tabular-nums; }
+
+.boton {
+  display: inline-block;
+  padding: .84rem 1.5rem;
+  background: var(--berry);
+  color: #FFFFFF;
+  text-decoration: none;
+  font-family: inherit;
+  font-weight: 700;
+  font-size: .97rem;
+  border: 0; border-radius: 4px;
+  cursor: pointer;
+  transition: background .2s var(--curva), transform .2s var(--curva);
+}
+.boton:hover { background: #6E1959; transform: translateY(-2px); }
+.boton--linea {
+  background: transparent; color: var(--berry);
+  box-shadow: inset 0 0 0 1.5px var(--berry);
+}
+.boton--linea:hover { background: var(--berry-suave); }
+
+/* ── Banda de propuesta ──────────────────────────────────────────── */
+.propuesta { background: var(--noche); color: #C3BCC9; padding: 1.05rem 0; }
+.propuesta__q {
+  font-family: 'Atkinson Hyperlegible Mono', ui-monospace, monospace;
+  font-size: .72rem; letter-spacing: .1em; text-transform: uppercase;
+  color: var(--berry-cl); margin: 0 0 .4rem;
+}
+.propuesta__q b { color: var(--ficha); font-weight: 600; }
+.propuesta__d { margin: 0; font-size: .95rem; max-width: 84ch; }
+.propuesta__d .dato { color: var(--berry-cl); }
+.propuesta__d b { color: var(--ficha); }
+
+/* ── Cabecera ────────────────────────────────────────────────────── */
+/* Sólida siempre: es sticky en flujo normal, queda ARRIBA de la portada
+   y no encima, así que transparentarla no gana nada. */
+.cab {
+  position: sticky; top: 0; z-index: 40;
+  background: var(--ficha);
+  border-bottom: 1px solid var(--pauta);
+  transition: transform .3s var(--curva);
+}
+.cab--oculta { transform: translateY(-100%); }
+.cab__in { display: flex; align-items: center; justify-content: space-between; gap: 1rem; min-height: 64px; }
+.cab__marca { display: flex; align-items: center; gap: .7rem; text-decoration: none; color: var(--tinta); }
+.cab__txt {
+  font-family: 'Wittgenstein', Georgia, serif;
+  font-weight: 600; font-size: 1.02rem; line-height: 1.1;
+  display: flex; flex-direction: column;
+}
+.cab__sub {
+  font-family: 'Atkinson Hyperlegible Mono', ui-monospace, monospace;
+  font-size: .6rem; letter-spacing: .12em; text-transform: uppercase;
+  color: var(--medio); margin-top: .22rem;
+}
+/* el mismo latido de la portada, en chico */
+.marca__pulso { width: 34px; flex: none; display: block; }
+.marca__pulso svg { width: 100%; height: auto; display: block; }
+.marca__pulso path { fill: none; stroke: var(--berry); stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
+
+.cab__nav { display: flex; align-items: center; gap: 1.3rem; }
+.cab__nav a { color: var(--medio); text-decoration: none; font-size: .93rem; }
+.cab__nav a:hover { color: var(--berry); }
+.cab__tel {
+  font-family: 'Atkinson Hyperlegible Mono', ui-monospace, monospace;
+  font-variant-numeric: tabular-nums;
+  color: var(--berry) !important;
+  box-shadow: inset 0 0 0 1.5px var(--pauta);
+  padding: .42rem .8rem; border-radius: 4px;
+}
+.cab__tel:hover { box-shadow: inset 0 0 0 1.5px var(--berry); }
+@media (max-width: 940px) { .cab__nav a:not(.cab__tel) { display: none; } }
+
+/* ── Portada ─────────────────────────────────────────────────────── */
+/* La pauta de la ficha: dos líneas finas de fondo, dibujadas con un
+   gradiente repetido. Cero imágenes y cero peso. */
+.portada {
+  position: relative;
+  padding: clamp(3rem, 7vw, 5.4rem) 0 0;
+  background:
+    repeating-linear-gradient(180deg, transparent 0 39px, var(--pauta) 39px 40px),
+    var(--ficha);
+  overflow: hidden;
+}
+.portada__in { position: relative; z-index: 2; }
+.portada__h1 {
+  font-family: 'Wittgenstein', Georgia, serif;
+  font-weight: 600;
+  font-size: clamp(2.1rem, 5.7vw, 3.8rem);
+  line-height: 1.06;
+  letter-spacing: -.022em;
+  margin: 0 0 1.2rem;
+  max-width: 20ch;
+}
+.portada__h1-b { color: var(--berry); }
+.portada__bajada { font-size: clamp(1.02rem, 1.6vw, 1.16rem); color: var(--medio); max-width: 52ch; margin: 0 0 1.8rem; }
+.portada__acc { display: flex; flex-wrap: wrap; gap: .8rem; margin: 0 0 1.6rem; }
+
+.specs { display: flex; flex-wrap: wrap; gap: 2.2rem; margin: 0; padding-bottom: clamp(2.4rem, 5vw, 3.6rem); }
+.specs dt {
+  font-family: 'Atkinson Hyperlegible Mono', ui-monospace, monospace;
+  font-size: .66rem; letter-spacing: .11em; text-transform: uppercase;
+  color: var(--medio); margin-bottom: .2rem;
+}
+.specs dd {
+  margin: 0;
+  font-family: 'Atkinson Hyperlegible Mono', ui-monospace, monospace;
+  font-variant-numeric: tabular-nums;
+  font-size: 1.4rem; font-weight: 600;
+}
+
+/* ── Escena: el latido ───────────────────────────────────────────── */
+/* Va a lo ancho, bajo el titular. La línea se dibuja una vez con
+   stroke-dashoffset y después reposa: cada 5 s un segmento claro la
+   recorre. La base gris queda siempre, para que con el JS apagado el
+   trazo exista igual. */
+.escena { margin: 0 0 2.2rem; width: min(100%, 100%); }
+.escena__svg { width: 100%; height: clamp(60px, 9vw, 110px); display: block; }
+.ec-base { fill: none; stroke: var(--pauta); stroke-width: 3; stroke-linecap: round; stroke-linejoin: round; }
+.ec-linea { fill: none; stroke: var(--berry); stroke-width: 3.5; stroke-linecap: round; stroke-linejoin: round; }
+.ec-punto { fill: var(--berry); }
+
+@keyframes latidoDibuja {
+  from { stroke-dashoffset: 2600; }
+  to   { stroke-dashoffset: 0; }
+}
+@keyframes latidoPunto {
+  0%, 70% { opacity: 0; transform: scale(.4); }
+  100%    { opacity: 1; transform: none; }
+}
+@keyframes latidoReposa {
+  0%   { stroke-dashoffset: 2600; }
+  22%  { stroke-dashoffset: 0; }
+  100% { stroke-dashoffset: 0; }
+}
+.js .escena .ec-linea { stroke-dasharray: 2600; stroke-dashoffset: 2600; }
+.js .escena--va .ec-linea {
+  animation: latidoDibuja 1.3s var(--curva) forwards;
+}
+/* El reposo: la clase la pone el JS a los 1,6 s, cuando el trazo de
+   entrada ya terminó. La línea se vuelve a dibujar entera cada 5 s, y
+   eso se lee como un pulso que la recorre. Es el único bucle del sitio. */
+.js .escena--reposa .ec-linea { animation: latidoReposa 5s linear infinite; }
+.js .escena .ec-punto { opacity: 0; transform-box: fill-box; transform-origin: center; }
+.js .escena--va .ec-punto { animation: latidoPunto 1.3s var(--curva) forwards; }
+
+@media (prefers-reduced-motion: reduce) {
+  .js .escena .ec-linea { stroke-dashoffset: 0; }
+  .js .escena--va .ec-linea, .js .escena--va .ec-punto,
+  .js .escena--reposa .ec-linea { animation: none; }
+  .js .escena .ec-punto { opacity: 1; }
+}
+
+/* ── Franja de foto ──────────────────────────────────────────────── */
+.tajo { margin: 0; }
+.tajo img { width: 100%; aspect-ratio: 21 / 9; object-fit: cover; }
+
+/* ── Cifras ──────────────────────────────────────────────────────── */
+.cifras { padding: clamp(2.8rem, 5vw, 4.2rem) 0; background: var(--ficha-2); }
+.cifras__grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1.6rem; }
+.cifra { border-top: 3px solid var(--pauta); padding-top: 1rem; }
+.cifra--cero { border-top-color: var(--berry); }
+.cifra__n {
+  font-family: 'Atkinson Hyperlegible Mono', ui-monospace, monospace;
+  font-variant-numeric: tabular-nums;
+  font-size: clamp(1.8rem, 3.8vw, 2.6rem); font-weight: 600;
+  margin: 0 0 .35rem; line-height: 1;
+}
+.cifra--cero .cifra__n { color: var(--berry); }
+.cifra__t { margin: 0; font-size: .89rem; color: var(--medio); }
+@media (max-width: 860px) { .cifras__grid { grid-template-columns: repeat(2, 1fr); } }
+
+/* ── Pieza firma: hora sin llamar ────────────────────────────────── */
+.hora { padding: clamp(3.4rem, 7vw, 5.6rem) 0; }
+.hora__cols { display: grid; grid-template-columns: 1fr 1fr; gap: clamp(1.8rem, 4.5vw, 3.4rem); align-items: start; margin-top: 2.2rem; }
+@media (max-width: 900px) { .hora__cols { grid-template-columns: 1fr; } }
+
+.pedir {
+  background: var(--ficha-2);
+  border: 1px solid var(--pauta);
+  border-radius: 5px;
+  padding: clamp(1.3rem, 3vw, 1.9rem);
+}
+.pedir__t {
+  font-family: 'Atkinson Hyperlegible Mono', ui-monospace, monospace;
+  font-size: .72rem; letter-spacing: .13em; text-transform: uppercase;
+  color: var(--medio); margin: 0 0 1.2rem;
+}
+.campo { display: block; margin-bottom: 1.1rem; }
+.campo__l {
+  display: block;
+  font-size: .88rem; font-weight: 600;
+  margin-bottom: .35rem;
+}
+.campo__i {
+  width: 100%;
+  font: inherit; font-size: 1rem;
+  color: var(--tinta);
+  background: #FFFFFF;
+  border: 1.5px solid var(--pauta);
+  border-radius: 4px;
+  padding: .7rem .85rem;
+}
+.campo__i:hover { border-color: var(--berry); }
+.campo__n { display: block; font-size: .82rem; color: var(--medio); margin-top: .4rem; }
+
+/* El botón sólo existe si el JavaScript arrancó: sin él este formulario
+   no puede armar nada, y un botón que no hace nada es peor que ninguno.
+   Los dos enlaces de la columna de al lado funcionan siempre. */
+.pedir__b { display: none; width: 100%; margin-top: .4rem; }
+.js .pedir__b { display: block; }
+.pedir__n { font-size: .84rem; color: var(--medio); margin: .9rem 0 0; }
+
+.llevar__l { list-style: none; margin: 0 0 1.6rem; padding: 0; display: grid; gap: .9rem; }
+.llevar__l li { position: relative; padding-left: 1.7rem; font-size: .98rem; color: var(--medio); }
+.llevar__l li::before {
+  content: ''; position: absolute; left: 0; top: .52em;
+  width: 9px; height: 9px; border-radius: 2px;
+  background: var(--berry);
+}
+.llevar__l b { color: var(--tinta); }
+.llevar__otro { display: flex; flex-direction: column; gap: .7rem; margin: 0; }
+.llevar__otro .flecha { color: var(--berry); }
+
+/* ── Servicios ───────────────────────────────────────────────────── */
+.servicios { padding: clamp(3rem, 6vw, 5rem) 0; background: var(--ficha-2); }
+.serv__grid { list-style: none; margin: 2rem 0 0; padding: 0; display: grid; grid-template-columns: repeat(2, 1fr); gap: .15rem 2.4rem; }
+.serv {
+  display: flex; flex-direction: column; gap: .1rem;
+  padding: .95rem 0;
+  border-bottom: 1px solid var(--pauta);
+}
+.serv b { font-family: 'Wittgenstein', Georgia, serif; font-weight: 600; font-size: 1.1rem; }
+.serv span { font-size: .92rem; color: var(--medio); }
+@media (max-width: 760px) { .serv__grid { grid-template-columns: 1fr; } }
+
+/* ── Mitades ─────────────────────────────────────────────────────── */
+.mitades {
+  display: grid; grid-template-columns: 1fr 1fr;
+  align-items: center; gap: clamp(2rem, 5vw, 4.5rem);
+  width: min(100% - 2.5rem, var(--ancho));
+  margin: clamp(3.4rem, 7vw, 6rem) auto;
+}
+.mitades__foto { margin: 0; }
+.mitades__foto img { width: 100%; aspect-ratio: 4 / 5; object-fit: cover; border-radius: 4px; }
+.mitades__texto p { color: var(--medio); }
+@media (max-width: 880px) { .mitades { grid-template-columns: 1fr; } }
+
+.equipo__huecos { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; margin: 1.8rem 0 0; }
+.hueco { display: flex; flex-direction: column; gap: .5rem; }
+/* Los huecos son huecos de verdad: un marco punteado que dice que ahí
+   falta una foto. Inventar un retrato genérico sería peor. */
+.hueco__m {
+  display: block; aspect-ratio: 1;
+  border: 2px dashed var(--pauta);
+  border-radius: 4px;
+  background: var(--ficha-2);
+}
+.hueco p { margin: 0; font-size: .85rem; }
+@media (max-width: 620px) { .equipo__huecos { grid-template-columns: 1fr; } }
+
+.datos { margin: 1.6rem 0 0; display: grid; gap: .1rem; }
+.datos > div { display: flex; justify-content: space-between; gap: 1rem; padding: .6rem 0; border-bottom: 1px solid var(--pauta); }
+.datos dt {
+  font-family: 'Atkinson Hyperlegible Mono', ui-monospace, monospace;
+  font-size: .67rem; letter-spacing: .1em; text-transform: uppercase;
+  color: var(--medio); padding-top: .2rem;
+}
+.datos dd { margin: 0; text-align: right; }
+
+/* ── Cita ────────────────────────────────────────────────────────── */
+.cita { position: relative; margin: 0; }
+.cita img { width: 100%; aspect-ratio: 16 / 9; object-fit: cover; }
+.cita__q {
+  position: absolute; inset: 0;
+  display: flex; align-items: center;
+  margin: 0; padding: 2rem clamp(1.5rem, 6vw, 5rem);
+  background: linear-gradient(90deg, rgba(30,20,32,.93) 0%, rgba(30,20,32,.82) 50%, rgba(30,20,32,.35) 100%);
+}
+.cita__q p {
+  font-family: 'Wittgenstein', Georgia, serif;
+  font-weight: 600;
+  font-size: clamp(1.1rem, 2.6vw, 1.9rem);
+  line-height: 1.28;
+  color: var(--ficha);
+  margin: 0; max-width: 29ch;
+}
+
+/* ── Qué es urgencia (con telón) ─────────────────────────────────── */
+.con-telon { position: relative; overflow: hidden; background: var(--noche); color: #C3BCC9; }
+.telon { position: absolute; inset: 0; }
+.telon img { width: 100%; height: 100%; object-fit: cover; opacity: .26; filter: grayscale(.5) brightness(.35); }
+/* Velo encima de la foto: sin él, una foto de clínica (blanca y muy
+   clara) levanta el fondo y el titular claro pierde contraste. */
+.telon::after {
+  content: ""; position: absolute; inset: 0;
+  background: linear-gradient(90deg, rgba(30,20,32,.94) 0%, rgba(30,20,32,.8) 55%, rgba(30,20,32,.62) 100%);
+}
+.con-telon > .ancho { position: relative; z-index: 2; }
+.urgencia { padding: clamp(3.2rem, 6.5vw, 5.2rem) 0; }
+
+.urg__l { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(2, 1fr); gap: 1.2rem 2.4rem; }
+.urg__l li { position: relative; padding-left: 1.8rem; font-size: .98rem; }
+.urg__l li::before {
+  content: ''; position: absolute; left: 0; top: .45em;
+  width: 11px; height: 11px; border-radius: 50%;
+  background: var(--berry-cl);
+}
+.urg__l b { color: var(--ficha); }
+@media (max-width: 760px) { .urg__l { grid-template-columns: 1fr; } }
+
+/* ── Mosaico ─────────────────────────────────────────────────────── */
+.mos { padding: clamp(3rem, 6vw, 5rem) 0; }
+.mos__grilla { display: grid; grid-template-columns: repeat(3, 1fr); gap: .5rem; width: min(100% - 2.5rem, 1400px); margin-inline: auto; }
+.mos__p { margin: 0; overflow: hidden; }
+.mos__p img { width: 100%; aspect-ratio: 3 / 4; object-fit: cover; transition: transform .5s var(--curva); }
+.mos__p:hover img { transform: scale(1.035); }
+.mos__pie { font-size: .9rem; color: var(--medio); max-width: 74ch; margin: 1.6rem auto 0; text-align: center; }
+@media (max-width: 820px) { .mos__grilla { grid-template-columns: repeat(2, 1fr); } }
+
+/* ── Contacto ────────────────────────────────────────────────────── */
+.contacto { padding: clamp(3rem, 6vw, 5rem) 0; background: var(--ficha-2); }
+.contacto__cols { display: grid; grid-template-columns: 1.2fr 1fr; gap: clamp(2rem, 5vw, 4rem); align-items: start; }
+.contacto__num {
+  font-family: 'Atkinson Hyperlegible Mono', ui-monospace, monospace;
+  font-variant-numeric: tabular-nums;
+  font-size: clamp(1.3rem, 3.2vw, 1.95rem);
+  margin: 0;
+}
+.contacto__num a { text-decoration: none; }
+.contacto__num a:hover { text-decoration: underline; }
+@media (max-width: 800px) { .contacto__cols { grid-template-columns: 1fr; } }
+
+/* ── Para el dueño ───────────────────────────────────────────────── */
+.dueno { padding: clamp(3rem, 6vw, 5rem) 0; background: var(--noche); color: #C3BCC9; }
+.dueno__cols { display: grid; grid-template-columns: repeat(3, 1fr); gap: 2rem; margin-top: 2rem; }
+.dueno__cols h3 {
+  font-family: 'Atkinson Hyperlegible Mono', ui-monospace, monospace;
+  font-size: .72rem; letter-spacing: .12em; text-transform: uppercase;
+  color: var(--berry-cl); margin: 0 0 .6rem;
+}
+.dueno__cols p { margin: 0; font-size: .94rem; }
+.dueno__cols b { color: var(--ficha); }
+.dueno__cierre { display: flex; flex-wrap: wrap; gap: 1.6rem; margin: 2.6rem 0 0; }
+.flecha { color: var(--berry-cl); text-decoration: none; font-size: .97rem; }
+.flecha:hover { text-decoration: underline; }
+.flecha--fuerte { font-weight: 700; }
+@media (max-width: 820px) { .dueno__cols { grid-template-columns: 1fr; } }
+
+/* ── Pie ─────────────────────────────────────────────────────────── */
+.pie { background: #150E17; color: #918899; padding: 2.4rem 0; font-size: .88rem; }
+.pie b { color: var(--ficha); }
+.pie__leg { color: #6F6674; font-size: .82rem; margin: .8rem 0 0; }
+
+/* ── Apariciones ─────────────────────────────────────────────────── */
+/* El stagger se resuelve con nth-child en el CSS y NUNCA con un
+   style="--i:3" en el HTML: la CSP de esta página bloquea el atributo
+   style y el escalonado se perdería sin un solo error en consola. */
+.js .rev > * { opacity: 0; transform: translateY(14px); }
+.js .rev.rev--on > * { opacity: 1; transform: none; transition: opacity .55s ease, transform .55s var(--curva); }
+.js .rev.rev--on > *:nth-child(2) { transition-delay: .06s; }
+.js .rev.rev--on > *:nth-child(3) { transition-delay: .12s; }
+.js .rev.rev--on > *:nth-child(4) { transition-delay: .18s; }
+.js .rev.rev--on > *:nth-child(5) { transition-delay: .24s; }
+.js .rev.rev--on > *:nth-child(6) { transition-delay: .30s; }
+.js .rev.rev--on > *:nth-child(7) { transition-delay: .36s; }
+.js .rev.rev--on > *:nth-child(8) { transition-delay: .42s; }
+
+.js .rev:is(.rotulo, .titulo) { opacity: 0; transform: translateY(14px); }
+.js .rev--on:is(.rotulo, .titulo) { opacity: 1; transform: none; transition: opacity .55s ease, transform .55s var(--curva); }
+
+@media (prefers-reduced-motion: reduce) {
+  .js .rev > *, .js .rev:is(.rotulo, .titulo) { opacity: 1; transform: none; }
+}
+
+/* ── MAPA DE UBICACION ──────────────────────────────────────────────
+   Imagen propia con mosaicos de OpenStreetMap pegados: la CSP prohibe
+   pedir nada a un tercero, asi que un iframe de Google Maps quedaria en
+   blanco SIN dar un solo error. El "Como llegar" si es un enlace, y un
+   enlace no lo bloquea nada.
+   Los colores salen de currentColor a proposito: asi el bloque se adapta
+   a la paleta de cada demo sin conocerla y sin chocar con ella.
+   La atribucion a OpenStreetMap la exige su licencia (ODbL). */
+.mapa-sec { padding: clamp(2.5rem, 6vw, 4.5rem) 0; }
+.mapa {
+  /* Casi siempre el mapa queda como hijo DIRECTO de la seccion, fuera del
+     contenedor .ancho: sin este ancho maximo se va de borde a borde y el
+     pie del mapa arranca pegado al filo de la pantalla. Se usa la variable
+     de la demo si existe, y 1100 px si no. */
+  width: min(100% - 2.5rem, var(--ancho, 1100px));
+  margin: 1.4rem auto 0;
+  border: 1px solid; border-color: color-mix(in srgb, currentColor 22%, transparent);
+  border-radius: 10px; overflow: hidden;
+}
+@supports not (color: color-mix(in srgb, red 50%, blue)) { .mapa { border-color: rgba(128, 128, 128, .35); } }
+.mapa img { display: block; width: 100%; height: auto; aspect-ratio: 16 / 10; object-fit: cover; }
+.mapa__pie {
+  display: flex; flex-wrap: wrap; align-items: center; gap: .4rem 1rem;
+  padding: .75rem .9rem;
+  font-size: .86em; line-height: 1.45;
+  border-top: 1px solid; border-top-color: color-mix(in srgb, currentColor 22%, transparent);
+}
+@supports not (color: color-mix(in srgb, red 50%, blue)) { .mapa__pie { border-top-color: rgba(128, 128, 128, .35); } }
+.mapa__pie b { font-weight: 700; }
+.mapa__ir { color: inherit; font-weight: 700; text-decoration: underline; min-height: 44px; display: inline-flex; align-items: center; }
+.mapa__cred { width: 100%; font-size: .84em; opacity: .8; }
+.mapa__cred a { color: inherit; }
+/* ── BOTON FLOTANTE DE CONTACTO ─────────────────────────────────────
+   56 px de alto, por encima del minimo tactil de 44. Los colores de
+   marca van a proposito: se reconocen sin leerlos, y eso es lo que hace
+   que se toquen. Se ve SIEMPRE por defecto; el JS solo lo aparta sobre
+   la portada. Al reves, un fallo del script se llevaria el CTA principal. */
+.flota {
+  position: fixed;
+  right: max(1rem, env(safe-area-inset-right, 0px));
+  bottom: max(1rem, env(safe-area-inset-bottom, 0px));
+  z-index: 60;
+  display: inline-flex; align-items: center; gap: .55rem;
+  height: 56px; padding: 0 1.15rem 0 1rem;
+  border-radius: 999px;
+  text-decoration: none;
+  font-family: var(--cuerpo, system-ui, sans-serif);
+  font-size: .95rem; font-weight: 700; line-height: 1;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, .26), 0 2px 6px rgba(0, 0, 0, .16);
+  transition: opacity .28s ease, transform .28s ease, box-shadow .18s ease;
+}
+.flota--wa { background: #25D366; color: #07310F; }
+.flota--ig { background: linear-gradient(120deg, #F9CE34 4%, #EE2A7B 48%, #6228D7 96%); color: #FFFFFF; }
+.flota__i { width: 26px; height: 26px; fill: currentColor; flex: none; }
+.flota:hover, .flota:focus-visible { transform: translateY(-2px); box-shadow: 0 10px 26px rgba(0, 0, 0, .3); }
+.js .flota--arriba { opacity: 0; transform: translateY(14px) scale(.94); pointer-events: none; }
+
+@media (max-width: 520px) {
+  .flota { width: 56px; padding: 0; justify-content: center; }
+  .flota__t { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .flota { transition: opacity .28s ease; }
+  .flota:hover, .flota:focus-visible { transform: none; }
+  .js .flota--arriba { transform: none; }
+}

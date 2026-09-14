@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="es-CL" class="no-js">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self'; img-src 'self' data:; font-src 'self'; connect-src 'self'; media-src 'self'; form-action 'self'; base-uri 'none'; frame-src 'none'; object-src 'none'">
+<meta name="robots" content="noindex, nofollow">
+<title>Cecinas Quitratué — Gorbea</title>
+<meta name="description" content="Fábrica de cecinas en Gorbea, José Miguel Carrera 860. Qué es cada cecina, cómo se cocina y cuánto comprar por persona.">
+
+<!-- ═══════════════════════════════════════════════════════════════
+     RESCATE DE LA CLASE .js — ver AGENTS.md, regla 2.
+     El script inline (sin defer) marca .js para que el CSS pueda
+     esconder lo que va a animarse. El temporizador de 4 s la quita
+     si main.js nunca llega: sin él, un error de red dejaría media
+     página invisible para siempre.
+     ═══════════════════════════════════════════════════════════════ -->
+<script src="js/rescate.js"></script>
+
+<!-- Fuentes self-hosted: CERO peticiones externas. El preload va solo
+     para la display, que es la del primer pantallazo. -->
+<link rel="preload" href="assets/fuentes/yesevaone-400-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="assets/fuentes.css">
+<link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+
+<a class="saltar" href="#contenido">Saltar al contenido</a>
+
+<!-- ═══════════════════════════════════════════════════════════════
+     CABECERA CON CINTA DE PRODUCTOS.
+     Arriba la marca y el teléfono; abajo una cinta que corre despacio
+     con los nombres de las cecinas, como el letrero de una carnicería
+     antigua.
+
+     La cinta va `aria-hidden` porque es decoración: los mismos
+     nombres están escritos, uno por uno, en la tabla de productos más
+     abajo. Un lector de pantalla no tiene por qué leer un letrero que
+     se repite en bucle.
+     ═══════════════════════════════════════════════════════════════ -->
+<header class="cab">
+  <div class="cab-fila">
+    <p class="cab-m"><b>Cecinas Quitratué</b><span>Fábrica · Gorbea</span></p>
+    <a class="cab-tel" href="tel:+56990500979">9 9050 0979</a>
+  </div>
+  <div class="cinta" aria-hidden="true">
+    <div class="cinta-pista">
+      <span>Longaniza</span><i>◆</i><span>Chorizo</span><i>◆</i><span>Arrollado huaso</span><i>◆</i><span>Prietas</span><i>◆</i><span>Queso de cabeza</span><i>◆</i><span>Costillar ahumado</span><i>◆</i><span>Longaniza</span><i>◆</i><span>Chorizo</span><i>◆</i><span>Arrollado huaso</span><i>◆</i><span>Prietas</span><i>◆</i><span>Queso de cabeza</span><i>◆</i><span>Costillar ahumado</span><i>◆</i>
+    </div>
+  </div>
+</header>
+
+<main id="contenido">
+
+<!-- ══════════════════ PORTADA ══════════════════ -->
+<header class="portada" id="portada">
+  <div class="rollo" aria-hidden="true"></div>
+
+  <div class="portada-cuerpo">
+    <p class="portada-sobre">Gorbea · José Miguel Carrera 860</p>
+
+    <h1 class="portada-h1">
+      <span class="l l1">Nadie sabe</span>
+      <span class="l l2">cuánto comprar</span>
+      <span class="l l3"><em>hasta que sobra</em></span>
+      <span class="l l4">o falta.</span>
+    </h1>
+
+    <p class="portada-bajada l l5">
+      Qué es cada cecina, cómo se cocina y cuánto lleva por persona.
+      Escrito de una vez, para que la próxima compra se haga sin
+      calcular en la cabeza arriba del mesón.
+    </p>
+
+    <div class="portada-acciones l l6">
+      <a class="btn btn-fuerte" href="#asado">Calcular el asado</a>
+      <a class="btn btn-suave" href="#tabla">Ver los productos</a>
+    </div>
+
+    <p class="portada-pie l l7">
+      <b>115 reseñas</b> con nota <b>4,6</b> en Google · fábrica de
+      cecinas en Gorbea
+    </p>
+  </div>
+</header>
+
+<!-- ══════════════════ PIEZA FIRMA · 1 ══════════════════
+     «Qué es cada una y cómo se cocina».
+     La pregunta del mesón que nadie contesta por escrito. El que
+     compra cecinas dos veces al año no sabe la diferencia entre
+     longaniza y chorizo, y menos si la prieta va hervida o a la
+     parrilla — pero le da vergüenza preguntar. Escrito, se lleva la
+     duda resuelta y compra más.
+     ══════════════════════════════════════════════ -->
+<section class="tabla" id="tabla">
+  <div class="ancho">
+    <p class="rotulo reveal">Del mesón</p>
+    <h2 class="t2 reveal">Qué es cada una y cómo se cocina</h2>
+    <p class="entrada reveal">
+      La duda que todo el mundo tiene y nadie pregunta. Acá está
+      contestada de una vez.
+    </p>
+
+    <ul class="productos">
+
+      <li class="prod reveal">
+        <h3>Longaniza</h3>
+        <p class="prod-q">Cerdo molido con ajo, comino y ají de color, en tripa delgada.</p>
+        <dl class="prod-d">
+          <div><dt>Cómo se cocina</dt><dd>Hervida 15 minutos y después a la parrilla a fuego medio. Hervirla primero es lo que evita que quede cruda por dentro y quemada por fuera.</dd></div>
+          <div><dt>Por persona</dt><dd>2 unidades</dd></div>
+        </dl>
+      </li>
+
+      <li class="prod reveal">
+        <h3>Chorizo</h3>
+        <p class="prod-q">Más grueso que la longaniza y de molienda más gruesa.</p>
+        <dl class="prod-d">
+          <div><dt>Cómo se cocina</dt><dd>Parrilla a fuego medio, dado vuelta seguido. No pincharlo: por ahí se va la grasa que lo mantiene jugoso.</dd></div>
+          <div><dt>Por persona</dt><dd>1 a 2 unidades</dd></div>
+        </dl>
+      </li>
+
+      <li class="prod reveal">
+        <h3>Arrollado huaso</h3>
+        <p class="prod-q">Carne de cerdo enrollada en su cuero, cocida y pintada con ají de color.</p>
+        <dl class="prod-d">
+          <div><dt>Cómo se cocina</dt><dd>Ya viene cocido. Se come frío en rodajas, o se dora en el horno o en la parrilla para que el cuero quede crujiente.</dd></div>
+          <div><dt>Por persona</dt><dd>150 gramos</dd></div>
+        </dl>
+      </li>
+
+      <li class="prod reveal">
+        <h3>Prietas</h3>
+        <p class="prod-q">Sangre de cerdo con cebolla y aliños, en tripa. Vienen cocidas.</p>
+        <dl class="prod-d">
+          <div><dt>Cómo se cocina</dt><dd>Sólo hay que calentarlas: parrilla suave o horno. Pincharlas con un tenedor antes, o revientan.</dd></div>
+          <div><dt>Por persona</dt><dd>1 unidad</dd></div>
+        </dl>
+      </li>
+
+      <li class="prod reveal">
+        <h3>Queso de cabeza</h3>
+        <p class="prod-q">Trozos de carne de cerdo prensados en su propia gelatina, con aliños.</p>
+        <dl class="prod-d">
+          <div><dt>Cómo se cocina</dt><dd>No se cocina. Se corta en rodajas finas, frío, y se come con pan y ensalada chilena.</dd></div>
+          <div><dt>Por persona</dt><dd>100 gramos</dd></div>
+        </dl>
+      </li>
+
+      <li class="prod reveal">
+        <h3>Costillar ahumado</h3>
+        <p class="prod-q">Costillar de cerdo curado y pasado por humo.</p>
+        <dl class="prod-d">
+          <div><dt>Cómo se cocina</dt><dd>Al horno tapado con papel aluminio, y los últimos minutos destapado para que tome color. También va a la cazuela.</dd></div>
+          <div><dt>Por persona</dt><dd>250 gramos</dd></div>
+        </dl>
+      </li>
+
+    </ul>
+
+    <p class="tabla-nota" data-ejemplo="Productos y cantidades de ejemplo">
+      <b>Los seis productos y sus cantidades están escritos como
+      ejemplo</b>, con lo que es habitual en una fábrica de cecinas del
+      sur. Hay que reemplazarlos por lo que Quitratué hace de verdad —
+      ellos saben qué lleva cada receta y cuánto rinde la suya— y sacar
+      los que no vendan.
+    </p>
+  </div>
+</section>
+
+<!-- ══════════════════ PIEZA FIRMA · 2 ══════════════════
+     «¿Para cuántos es el asado?».
+     La calculadora convierte la tabla de arriba en una cifra
+     accionable y termina en un pedido listo para mandar. Es la pieza
+     que hace que la página se use, no que se lea.
+
+     Todo el contenido que necesita ya está escrito arriba: si el JS
+     no corre, la sección sigue diciendo cuánto va por persona y el
+     teléfono sigue estando ahí.
+     ══════════════════════════════════════════════ -->
+<section class="asado" id="asado">
+  <div class="ancho">
+    <p class="rotulo claro reveal">La cuenta</p>
+    <h2 class="t2 claro reveal">¿Para cuántos es el asado?</h2>
+    <p class="entrada claro reveal">
+      Ponga cuántos son y le decimos qué llevar. Es la misma cuenta que
+      hacemos en el mesón, hecha antes de salir de la casa.
+    </p>
+
+    <div class="cuenta reveal">
+      <div class="cuenta-arriba">
+        <label class="campo">
+          <span>¿Cuántas personas?</span>
+          <input type="number" id="personas" min="1" max="60" step="1" value="8" inputmode="numeric">
+        </label>
+        <p class="cuenta-tip">
+          Cuente dos niños como una persona. Si hay carne además de las
+          cecinas, baje un tercio.
+        </p>
+      </div>
+
+      <!-- La lista base va ESCRITA. El script sólo cambia las cifras
+           de la izquierda; sin él, se lee la cantidad por persona. -->
+      <ul class="lista" id="lista">
+        <li data-item="Longaniza" data-por="2" data-unidad="u">
+          <span class="lista-n" data-base="2 por persona">2 por persona</span>
+          <span class="lista-p">Longaniza</span>
+        </li>
+        <li data-item="Chorizo" data-por="1.5" data-unidad="u">
+          <span class="lista-n" data-base="1 a 2 por persona">1 a 2 por persona</span>
+          <span class="lista-p">Chorizo</span>
+        </li>
+        <li data-item="Arrollado huaso" data-por="150" data-unidad="g">
+          <span class="lista-n" data-base="150 g por persona">150 g por persona</span>
+          <span class="lista-p">Arrollado huaso</span>
+        </li>
+        <li data-item="Prietas" data-por="1" data-unidad="u">
+          <span class="lista-n" data-base="1 por persona">1 por persona</span>
+          <span class="lista-p">Prietas</span>
+        </li>
+        <li data-item="Costillar ahumado" data-por="250" data-unidad="g">
+          <span class="lista-n" data-base="250 g por persona">250 g por persona</span>
+          <span class="lista-p">Costillar ahumado</span>
+        </li>
+      </ul>
+
+      <div class="cuenta-abajo">
+        <p class="cuenta-salida" id="salida" hidden></p>
+        <div class="cuenta-acciones">
+          <a class="btn btn-fuerte" id="wa" href="https://wa.me/56990500979" target="_blank" rel="noopener">Mandar el pedido por WhatsApp</a>
+          <button class="btn btn-suave" type="button" id="copiar">Copiar el pedido</button>
+          <a class="btn btn-suave" href="tel:+56990500979">Llamar · 9 9050 0979</a>
+        </div>
+        <p class="copiado" id="copiado" hidden>Pedido copiado. Péguelo donde quiera.</p>
+      </div>
+    </div>
+
+    <p class="asado-nota claro" data-ejemplo="Cantidades de orientación">
+      Las cantidades son de orientación, no una regla. Dependen del
+      hambre, de si hay carne además y de cuánto se pica antes de
+      comer. <b>Hay que revisarlas con la fábrica antes de publicar.</b>
+    </p>
+  </div>
+</section>
+
+<!-- ══════════════════ LÁMINA ══════════════════ -->
+<section class="lamina" aria-labelledby="lamina-t">
+  <div class="lamina-texto">
+    <p class="numeraco">115</p>
+    <h2 class="t2" id="lamina-t">reseñas, y una nota de 4,6</h2>
+    <p class="entrada">
+      Ciento quince personas se dieron el trabajo de escribir sobre una
+      fábrica de cecinas de Gorbea. En un rubro donde la gente compra
+      donde compró siempre, eso es una marca — y hoy no se ve en
+      ninguna parte.
+    </p>
+  </div>
+  <div class="lamina-foto">
+    <div class="lamina-capa" data-parallax data-foto>
+      <p class="hueco-nota">
+        Falta <code>imagenes/meson.jpg</code> — el mesón con el
+        producto a la vista, o la sala de la fábrica. 1920 × 1280.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════ DÓNDE COMPRAR ══════════════════ -->
+<section class="llegar" id="llegar">
+  <div class="ancho llegar-grilla">
+
+    <div class="llegar-texto">
+      <p class="rotulo reveal">Dónde comprar</p>
+      <h2 class="t2 reveal">José Miguel Carrera 860, Gorbea</h2>
+      <p class="entrada reveal">
+        En pleno Gorbea, sobre la calle principal. Para un pedido
+        grande —un asado de más de veinte, un matrimonio, una fiesta de
+        curso— conviene avisar con un día de anticipación.
+      </p>
+
+      <dl class="datos reveal">
+        <div>
+          <dt>Dirección</dt>
+          <dd>José Miguel Carrera 860, Gorbea</dd>
+        </div>
+        <div>
+          <dt>Teléfono</dt>
+          <dd><a href="tel:+56990500979">9 9050 0979</a></dd>
+        </div>
+        <div>
+          <dt>Reseñas</dt>
+          <dd>115 en Google, nota 4,6</dd>
+        </div>
+        <div>
+          <dt>Pedidos grandes</dt>
+          <dd>Avisar con un día</dd>
+        </div>
+      </dl>
+
+      <p class="aviso reveal">
+        <b>Para llevar a la playa o al campo:</b> las cecinas frescas
+        aguantan bien en una cooler con hielo, pero el arrollado y el
+        queso de cabeza son productos cocidos y se van a picar primero.
+        Ésos van arriba y se comen el mismo día.
+      </p>
+    </div>
+
+    <div class="llegar-foto" data-foto>
+      <p class="hueco-nota">
+        Falta <code>imagenes/frente.jpg</code> — el frente del local
+        con el letrero. 900 × 1200.
+      </p>
+    </div>
+
+  </div>
+      <figure class="mapa">
+        <img src="imagenes/mapa-01.jpg" width="768" height="768" loading="lazy" decoding="async"
+             alt="Mapa con la ubicación de José Miguel Carrera 860, Gorbea.">
+        <figcaption class="mapa__pie">
+          <span><b>José Miguel Carrera 860, Gorbea</b>.</span>
+          <span class="mapa__cred">Mapa: &copy; <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener">OpenStreetMap</a></span>
+        </figcaption>
+      </figure>
+</section>
+
+<!-- ══════════════════ CIERRE ══════════════════ -->
+<section class="cierre">
+  <div class="ancho">
+    <h2 class="t2 reveal">Se hace acá, en Gorbea</h2>
+    <p class="entrada reveal">
+      No es una cadena ni un intermediario: es una fábrica con
+      dirección, con teléfono y con ciento quince personas que ya
+      escribieron lo que piensan.
+    </p>
+    <p class="reveal">
+      <a class="btn btn-fuerte grande" href="tel:+56990500979">Llamar al 9 9050 0979</a>
+    </p>
+  </div>
+</section>
+
+</main>
+
+<footer class="pie">
+  <div class="ancho pie-grilla">
+    <p class="pie-m"><b>Cecinas Quitratué</b><br><span>Fábrica de cecinas · Gorbea</span></p>
+    <p class="pie-d">
+      José Miguel Carrera 860<br>
+      <a href="tel:+56990500979">9 9050 0979</a>
+    </p>
+    <p class="pie-n">
+      Página de demostración. El nombre, la dirección, el teléfono y las
+      115 reseñas son reales; los productos, las recetas y las
+      cantidades por persona están escritos como ejemplo y deben ser
+      revisados por la fábrica antes de publicarse.
+    </p>
+  </div>
+</footer>
+
+
+<!-- ══ BOTON FLOTANTE DE CONTACTO ══════════════════════════════════
+     Escrito en el HTML y VISIBLE por defecto: si el script no arranca,
+     el boton igual esta. El JS solo lo aparta mientras se mira la
+     portada, para no tapar el titular. Icono de simple-icons (CC0),
+     incrustado: la CSP no deja pedir nada a un tercero. -->
+<a class="flota flota--wa" href="https://wa.me/56990500979?text=Hola%2C%20vi%20la%20pagina%20y%20quiero%20consultar." target="_blank" rel="noopener" aria-label="Escribir por WhatsApp a Cecinas Quitratué">
+  <svg class="flota__i" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"/></svg>
+  <span class="flota__t">WhatsApp</span>
+</a>
+<script src="js/main.js"></script>
+</body>
+</html>

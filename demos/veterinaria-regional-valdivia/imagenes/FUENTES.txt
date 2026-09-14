@@ -1,0 +1,21 @@
+FUENTES DE LAS IMAGENES - Cl&iacute;nica Veterinaria Regional Rehecha el 13-09-2026 (presentacion antes que texto). Fotos de REFERENCIA de bancos libres: ninguna es del local; las verdaderas las tiene que mandar el negocio. 
+port-01.jpg  <-  pozo-p-vet-venda\012.jpg  |  pexels (Pexels License)  |  autor: PubPro  |  https://www.pexels.com/es-es/foto/retrato-de-perro-34493380/  |  consulta: "dog bandage"
+banda-01.jpg  <-  pozo-p-vet-calor\008.jpg  |  pexels (Pexels License)  |  autor: Florencia  Pérez  |  https://www.pexels.com/es-es/foto/border-collie-sonriente-tumbado-en-el-cesped-verde-al-aire-libre-33710380/  |  consulta: "dog panting"
+cita-01.jpg  <-  pozo-p-vet-durmiendo\001.jpg  |  pexels (Pexels License)  |  autor: Regina Tommasi  |  https://www.pexels.com/es-es/foto/perro-durmiendo-tranquilamente-sobre-una-manta-acogedora-30179132/  |  consulta: "dog sleeping"
+hund1-01.jpg  <-  pozo-p-vet-durmiendo\012.jpg  |  pexels (Pexels License)  |  autor: Lemuel Paz Balcazar  |  https://www.pexels.com/es-es/foto/animal-perro-mascota-vista-superior-13977189/  |  consulta: "dog sleeping"
+hund2-01.jpg  <-  pozo-p-vet-chocolate\012.jpg  |  pexels (Pexels License)  |  autor: Eva Bronzini  |  https://www.pexels.com/es-es/foto/barra-de-chocolate-negro-sobre-arena-marron-6261691/  |  consulta: "dark chocolate"
+hund3-01.jpg  <-  pozo-p-vet-calor\006.jpg  |  pexels (Pexels License)  |  autor: Erickzen Ludewig  |  https://www.pexels.com/es-es/foto/perro-bostezando-bajo-techo-de-pabellon-abierto-36295291/  |  consulta: "dog panting"
+hund4-01.jpg  <-  pozo-p-vet-venda\001.jpg  |  pexels (Pexels License)  |  autor: Eduardo López  |  https://www.pexels.com/es-es/foto/perro-marron-con-vendaje-amarillo-16618525/  |  consulta: "dog bandage"
+hund5-01.jpg  <-  pozo-p-vet-durmiendo\010.jpg  |  pexels (Pexels License)  |  autor: Shilpa Deekshith  |  https://www.pexels.com/es-es/foto/calle-perro-mascota-mono-16876931/  |  consulta: "dog sleeping"
+mos1-01.jpg  <-  pozo-p-vet-venda\009.jpg  |  pexels (Pexels License)  |  autor: Regina Tommasi  |  https://www.pexels.com/es-es/foto/retrato-en-primer-plano-de-un-jack-russell-terrier-30204789/  |  consulta: "dog bandage"
+mos2-01.jpg  <-  pozo-p-vet-calor\010.jpg  |  pexels (Pexels License)  |  autor: Blanco Studio  |  https://www.pexels.com/es-es/foto/feliz-american-pit-bull-terrier-sentado-al-aire-libre-29985318/  |  consulta: "dog panting"
+mos3-01.jpg  <-  pozo-p-vet-venda\011.jpg  |  pexels (Pexels License)  |  autor: Bianca Beltrán  |  https://www.pexels.com/es-es/foto/verano-perro-mascota-sentado-16134441/  |  consulta: "dog bandage"
+mos4-01.jpg  <-  pozo-p-vet-calor\012.jpg  |  pexels (Pexels License)  |  autor: Alfo Medeiros  |  https://www.pexels.com/es-es/foto/animal-hierba-cesped-mascotas-11583510/  |  consulta: "dog panting"
+mos5-01.jpg  <-  pozo-p-vet-calor\007.jpg  |  pexels (Pexels License)  |  autor: ignacia navarrete  |  https://www.pexels.com/es-es/foto/animal-perro-mascota-mamifero-12359470/  |  consulta: "dog panting"
+mos6-01.jpg  <-  pozo-p-vet-durmiendo\003.jpg  |  pexels (Pexels License)  |  autor: EC  |  https://www.pexels.com/es-es/foto/perro-durmiendo-en-el-suelo-14084474/  |  consulta: "dog sleeping"
+
+BRUMA (bruma-pag-0N.png y bruma-osc-0N.png, 30x20): las MISMAS fotos, recortadas a 3:2, reducidas y
+recoloreadas con C:\devs\demos\hacer-bruma.ps1 (clara >= 0,68 de luminancia / oscura <= 0,05). No suman fuentes.
+    pagina: port-01.jpg, banda-01.jpg, cita-01.jpg, hund2-01.jpg, hund3-01.jpg, hund4-01.jpg, mos4-01.jpg, mos5-01.jpg   |   oscuras: port-01.jpg, banda-01.jpg, hund3-01.jpg
+
+MAPA: iframe de Google Maps (embed publico, sin clave). No hay imagen de mapa.

@@ -1,0 +1,22 @@
+FUENTES DE LAS IMAGENES - Automotriz Angola Rehecha el 13-09-2026 (presentacion antes que texto). Fotos de REFERENCIA de bancos libres: ninguna es del local; las verdaderas las tiene que mandar el negocio. 
+port-01.jpg  <-  pozo-p-ang-alineacion\002.jpg  |  pexels (Pexels License)  |  autor: Gansham Ramchandani  |  https://www.pexels.com/es-es/foto/coche-compacto-rojo-en-proceso-de-alineacion-de-ruedas-en-el-taller-38324578/  |  consulta: "wheel alignment machine"
+hund1-01.jpg  <-  pozo-p-ang-neumaticos\005.jpg  |  pexels (Pexels License)  |  autor: Tony Rogers  |  https://www.pexels.com/es-es/foto/blanco-y-negro-industria-goma-caucho-16023877/  |  consulta: "tire shop"
+hund2-01.jpg  <-  pozo-p-ang-balanceo\009.jpg  |  pexels (Pexels License)  |  autor: Gansham Ramchandani  |  https://www.pexels.com/es-es/foto/coche-compacto-rojo-en-proceso-de-alineacion-de-ruedas-en-el-taller-38324578/  |  consulta: "tire balancing machine"
+hund3-01.jpg  <-  pozo-p-ang-gases\008.jpg  |  pexels (Pexels License)  |  autor: Khunkorn Laowisit  |  https://www.pexels.com/es-es/foto/polvo-coche-negro-tuberia-5233283/  |  consulta: "car exhaust pipe"
+hund4-01.jpg  <-  pozo-p-ang-scanner\009.jpg  |  pexels (Pexels License)  |  autor: Jose Ricardo Barraza Morachis  |  https://www.pexels.com/es-es/foto/sucio-industria-coche-vehiculo-4116191/  |  consulta: "OBD scanner car"
+hund5-01.jpg  <-  pozo-p-ang-aceite\006.jpg  |  pexels (Pexels License)  |  autor: Gustavo Fring  |  https://www.pexels.com/es-es/foto/persona-mano-irreconocible-compartimiento-del-motor-4895412/  |  consulta: "oil change car"
+hund6-01.jpg  <-  pozo-p-ang-motor\009.jpg  |  pexels (Pexels License)  |  autor: Călin Răzvan  |  https://www.pexels.com/es-es/foto/motor-automotor-pieza-del-vehiculo-de-cerca-12658309/  |  consulta: "car engine bay"
+banda-01.jpg  <-  pozo-p-ang-luces\004.jpg  |  pexels (Pexels License)  |  autor: Skylar Kang  |  https://www.pexels.com/es-es/foto/coche-plateado-con-gotas-de-agua-6044796/  |  consulta: "car headlight"
+cita-01.jpg  <-  pozo-p-ang-aceite\009.jpg  |  pexels (Pexels License)  |  autor: Fatih Erden  |  https://www.pexels.com/es-es/foto/coche-vehiculo-automotor-mantenimiento-10490642/  |  consulta: "oil change car"
+mos1-01.jpg  <-  pozo-p-ang-luces\008.jpg  |  pexels (Pexels License)  |  autor: Khanh Nguyen  |  https://www.pexels.com/es-es/foto/primer-plano-del-faro-de-un-coche-en-un-vehiculo-plateado-38030206/  |  consulta: "car headlight"
+mos2-01.jpg  <-  pozo-p-ang-gases\006.jpg  |  pexels (Pexels License)  |  autor: Rahul Soni  |  https://www.pexels.com/es-es/foto/vehiculo-silenciador-escape-doble-de-cerca-10827691/  |  consulta: "car exhaust pipe"
+mos3-01.jpg  <-  pozo-p-ang-motor\003.jpg  |  pexels (Pexels License)  |  autor: Erik Mclean  |  https://www.pexels.com/es-es/foto/industria-coche-vehiculo-chrome-5158168/  |  consulta: "car engine bay"
+mos4-01.jpg  <-  pozo-p-ang-balanceo\007.jpg  |  pexels (Pexels License)  |  autor: Kazys Photography  |  https://www.pexels.com/es-es/foto/maquina-vieja-y-neumaticos-en-terreno-arenoso-31650851/  |  consulta: "tire balancing machine"
+mos5-01.jpg  <-  pozo-p-ang-scanner\008.jpg  |  pexels (Pexels License)  |  autor: Jose Ricardo Barraza Morachis  |  https://www.pexels.com/es-es/foto/hombre-manos-coche-vehiculo-4116198/  |  consulta: "OBD scanner car"
+mos6-01.jpg  <-  pozo-p-ang-aceite\012.jpg  |  pexels (Pexels License)  |  autor: Tim  Samuel  |  https://www.pexels.com/es-es/foto/mecanico-de-cultivos-etnicos-revisando-el-capo-de-transporte-de-taxi-moderno-5835426/  |  consulta: "oil change car"
+
+BRUMA (bruma-pag-0N.png y bruma-osc-0N.png, 30x20): las MISMAS fotos, recortadas a 3:2, reducidas y
+recoloreadas con C:\devs\demos\hacer-bruma.ps1 (clara >= 0,68 de luminancia / oscura <= 0,05). No suman fuentes.
+    pagina: port-01.jpg, banda-01.jpg, cita-01.jpg, hund1-01.jpg, hund4-01.jpg, mos1-01.jpg, mos3-01.jpg, hund6-01.jpg   |   oscuras: banda-01.jpg, hund6-01.jpg, mos3-01.jpg
+
+MAPA: iframe de Google Maps (embed publico, sin clave). No hay imagen de mapa.

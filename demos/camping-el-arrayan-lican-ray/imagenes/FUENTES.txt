@@ -1,0 +1,22 @@
+FUENTES DE LAS IMAGENES - Camping y Cabanas El Arrayan Rehecha el 13-09-2026 (presentacion antes que texto). Fotos de REFERENCIA de bancos libres: ninguna es del local; las verdaderas las tiene que mandar el negocio. 
+port-01.jpg  <-  pozo-p-ely-carpa\010.jpg  |  pexels (Pexels License)  |  autor: Novemtino .  |  https://www.pexels.com/es-es/foto/bosque-lago-cielo-azul-aventura-10220838/  |  consulta: "tent lake view"
+hund1-01.jpg  <-  pozo-p-ely-lago\006.jpg  |  pexels (Pexels License)  |  autor: ATHENEA CODJAMBASSIS ROSSITTO  |  https://www.pexels.com/es-es/foto/volcan-25525989/  |  consulta: "lake Villarrica"
+hund2-01.jpg  <-  pozo-p-ely-carpa\005.jpg  |  pexels (Pexels License)  |  autor: RIAN ANDRIANI  |  https://www.pexels.com/es-es/foto/acampada-panoramica-junto-al-lago-vista-desde-una-tienda-de-campana-39038479/  |  consulta: "tent lake view"
+hund3-01.jpg  <-  pozo-p-ely-cabana\012.jpg  |  pexels (Pexels License)  |  autor: Niklas Jeromin  |  https://www.pexels.com/es-es/foto/arboles-casa-lago-reflejo-12658089/  |  consulta: "wooden cabin lake"
+hund4-01.jpg  <-  pozo-p-ely-juegos\005.jpg  |  pexels (Pexels License)  |  autor: Lena Netkach  |  https://www.pexels.com/es-es/foto/columpio-vacio-en-un-parque-verde-38149975/  |  consulta: "playground swings wood"
+hund5-01.jpg  <-  pozo-p-ely-mesa\008.jpg  |  pexels (Pexels License)  |  autor: ClickerHappy  |  https://www.pexels.com/es-es/foto/al-aire-libre-amanecer-arboles-banco-630758/  |  consulta: "picnic table forest"
+hund6-01.jpg  <-  pozo-p-ely-carpa\003.jpg  |  pexels (Pexels License)  |  autor: Yigit Surenoglu  |  https://www.pexels.com/es-es/foto/vista-escenica-de-un-lago-de-montana-con-tiendas-32886631/  |  consulta: "tent lake view"
+banda-01.jpg  <-  pozo-p-ely-lago\002.jpg  |  pexels (Pexels License)  |  autor: Exequiel Fuentes  |  https://www.pexels.com/es-es/foto/paisaje-naturaleza-bosque-lago-20903493/  |  consulta: "lake Villarrica"
+cita-01.jpg  <-  pozo-p-ely-asado\008.jpg  |  pexels (Pexels License)  |  autor: Sergio Arteaga  |  https://www.pexels.com/es-es/foto/comida-verano-lena-picante-18299593/  |  consulta: "sausages grill charcoal"
+mos1-01.jpg  <-  pozo-p-ely-corteza\011.jpg  |  pexels (Pexels License)  |  autor: Robert Schrader  |  https://www.pexels.com/es-es/foto/madera-sucio-textura-vintage-1903342/  |  consulta: "cinnamon bark tree trunk"
+mos2-01.jpg  <-  pozo-p-ely-flor\002.jpg  |  pexels (Pexels License)  |  autor: Sharath G.  |  https://www.pexels.com/es-es/foto/floreciente-flores-blancas-fotografia-de-flores-de-cerca-13061687/  |  consulta: "white myrtle flowers"
+mos3-01.jpg  <-  pozo-p-ely-asado\002.jpg  |  pexels (Pexels License)  |  autor: Sergio Arteaga  |  https://www.pexels.com/es-es/foto/comida-verano-cena-chef-18299585/  |  consulta: "sausages grill charcoal"
+mos4-01.jpg  <-  pozo-p-ely-juegos\009.jpg  |  pexels (Pexels License)  |  autor: Rene Terp  |  https://www.pexels.com/es-es/foto/arboles-parque-ruedas-neumaticos-7710356/  |  consulta: "playground swings wood"
+mos5-01.jpg  <-  pozo-p-ely-lago\001.jpg  |  pexels (Pexels License)  |  autor: David Vives  |  https://www.pexels.com/es-es/foto/arboles-verdes-cerca-de-la-montana-bajo-un-cielo-azul-5402839/  |  consulta: "lake Villarrica"
+mos6-01.jpg  <-  pozo-p-ely-carpa\011.jpg  |  pexels (Pexels License)  |  autor: Frank J  |  https://www.pexels.com/es-es/foto/montanas-naturaleza-lago-caer-11819369/  |  consulta: "tent lake view"
+
+BRUMA (bruma-pag-0N.png y bruma-osc-0N.png, 30x20): las MISMAS fotos, recortadas a 3:2, reducidas y
+recoloreadas con C:\devs\demos\hacer-bruma.ps1 (clara >= 0,68 de luminancia / oscura <= 0,05). No suman fuentes.
+    pagina: port-01.jpg, banda-01.jpg, hund1-01.jpg, hund4-01.jpg, mos2-01.jpg, mos4-01.jpg, mos5-01.jpg, mos6-01.jpg   |   oscuras: cita-01.jpg, hund3-01.jpg, mos3-01.jpg
+
+MAPA: iframe de Google Maps (embed publico, sin clave). No hay imagen de mapa.

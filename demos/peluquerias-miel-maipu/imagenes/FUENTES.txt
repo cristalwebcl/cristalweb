@@ -1,0 +1,22 @@
+FUENTES DE LAS IMAGENES - Miel Hair & Nails Rehecha el 13-09-2026 (presentacion antes que texto). Fotos de REFERENCIA de bancos libres: ninguna es del local; las verdaderas las tiene que mandar el negocio. 
+port-01.jpg  <-  pozo-p-miel-miel\012.jpg  |  pexels (Pexels License)  |  autor: BlvckArt Studio  |  https://www.pexels.com/es-es/foto/primer-plano-de-miel-goteando-de-cucharas-29051733/  |  consulta: "honey drip"
+hund1-01.jpg  <-  pozo-p-miel-color\007.jpg  |  pexels (Pexels License)  |  autor: Adrianna CA  |  https://www.pexels.com/es-es/foto/mujer-flores-joven-morena-23384617/  |  consulta: "hair color balayage"
+hund2-01.jpg  <-  pozo-p-miel-pelo\011.jpg  |  pexels (Pexels License)  |  autor: Berna  |  https://www.pexels.com/es-es/foto/rojo-mujer-campo-pelo-largo-18052210/  |  consulta: "long hair back view"
+hund3-01.jpg  <-  pozo-p-miel-pelo\010.jpg  |  pexels (Pexels License)  |  autor: Kateryna Babaieva  |  https://www.pexels.com/es-es/foto/mujer-con-sombrero-negro-y-sueter-3721240/  |  consulta: "long hair back view"
+hund4-01.jpg  <-  pozo-p-miel-unas\008.jpg  |  pexels (Pexels License)  |  autor: Kerim Eveyik  |  https://www.pexels.com/es-es/foto/proceso-de-manicura-cuidado-de-manos-de-precision-en-estambul-37033378/  |  consulta: "manicure nails"
+hund5-01.jpg  <-  pozo-p-miel-tijera\005.jpg  |  pexels (Pexels License)  |  autor: Nataliya Vaitkevich  |  https://www.pexels.com/es-es/foto/moda-pincel-cepillo-cepillar-8468129/  |  consulta: "hair scissors comb"
+hund6-01.jpg  <-  pozo-p-miel-miel\010.jpg  |  pexels (Pexels License)  |  autor: Pixabay  |  https://www.pexels.com/es-es/foto/gota-de-miel-315420/  |  consulta: "honey drip"
+banda-01.jpg  <-  pozo-p-miel-pelo\007.jpg  |  pexels (Pexels License)  |  autor: LJs Journey  |  https://www.pexels.com/es-es/foto/mujer-en-pie-de-pie-pradera-17872049/  |  consulta: "long hair back view"
+cita-01.jpg  <-  pozo-p-miel-tijera\011.jpg  |  pexels (Pexels License)  |  autor: Nataliya Vaitkevich  |  https://www.pexels.com/es-es/foto/pincel-cepillo-cepillar-cabellos-8468161/  |  consulta: "hair scissors comb"
+mos1-01.jpg  <-  pozo-p-miel-esmalte\012.jpg  |  pexels (Pexels License)  |  autor: Suzy Hazelwood  |  https://www.pexels.com/es-es/foto/botella-de-esmalte-de-unas-en-la-superficie-1373748/  |  consulta: "nail polish bottles"
+mos2-01.jpg  <-  pozo-p-miel-unas\009.jpg  |  pexels (Pexels License)  |  autor: Leeloo The First  |  https://www.pexels.com/es-es/foto/persona-sosteniendo-esmalte-de-unas-negro-4677852/  |  consulta: "manicure nails"
+mos3-01.jpg  <-  pozo-p-miel-pelo\009.jpg  |  pexels (Pexels License)  |  autor: RDNE Stock project  |  https://www.pexels.com/es-es/foto/mujer-en-camisa-de-manga-larga-negra-de-pie-cerca-del-cuerpo-de-agua-5542886/  |  consulta: "long hair back view"
+mos4-01.jpg  <-  pozo-p-miel-miel\006.jpg  |  pexels (Pexels License)  |  autor: Pixabay  |  https://www.pexels.com/es-es/foto/cuchara-de-madera-marron-con-miel-302163/  |  consulta: "honey drip"
+mos5-01.jpg  <-  pozo-p-miel-esmalte\007.jpg  |  pexels (Pexels License)  |  autor: Iryna Velychko  |  https://www.pexels.com/es-es/foto/monitor-mostrar-exhibicion-exposicion-15850986/  |  consulta: "nail polish bottles"
+mos6-01.jpg  <-  pozo-p-miel-salon\003.jpg  |  pexels (Pexels License)  |  autor: Delbeautybox  |  https://www.pexels.com/es-es/foto/sillas-de-salon-negras-853427/  |  consulta: "hair salon interior"
+
+BRUMA (bruma-pag-0N.png y bruma-osc-0N.png, 30x20): las MISMAS fotos, recortadas a 3:2, reducidas y
+recoloreadas con C:\devs\demos\hacer-bruma.ps1 (clara >= 0,68 de luminancia / oscura <= 0,05). No suman fuentes.
+    pagina: port-01.jpg, banda-01.jpg, cita-01.jpg, mos1-01.jpg, mos4-01.jpg   |   oscuras: port-01.jpg, banda-01.jpg, cita-01.jpg
+
+MAPA: iframe de Google Maps (embed publico, sin clave). No hay imagen de mapa.

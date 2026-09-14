@@ -1,0 +1,168 @@
+FOTOGRAFÍAS Y VIDEO — Clínica Odonthos (Puerto Varas)
+Bajadas con FotoRadar. Todas de bancos de uso libre.
+NINGUNA es de la clínica real de Odonthos: son del rubro, y así lo dice
+el pie de la página y la sección «Para el dueño».
+
+Formato de cada línea:
+  archivo   medidas   banco | licencia | autor | página del banco | URL del original
+
+
+IMÁGENES
+────────────────────────────────────────────────────────────────────────
+
+port-01.jpg   1920x1080   PORTADA, disolución lateral.
+  Es un FOTOGRAMA de video/port.mp4, no una foto aparte: por eso la
+  portada no salta cuando el clip se funde encima — debajo está el mismo
+  cuadro. La licencia del clip lo cubre.
+  pexels | Pexels License | Pavel Danilyuk |
+  https://www.pexels.com/video/close-up-shot-of-dental-equipments-6755020/ |
+  https://videos.pexels.com/video-files/6755020/6755020-hd_1280_720_25fps.mp4
+
+tajo-01.jpg   2200x1764   TAJO, velo que sube desde abajo.
+  Box vacío, muy luminoso: masa clara contra la banda oscura del velo
+  (luminancia opuesta). Blanco y negro casi puro, sin marcas legibles.
+  pexels | Pexels License | Daniel Frank |
+  https://www.pexels.com/es-es/foto/silla-y-equipo-de-dentista-en-blanco-y-negro-287237/ |
+  https://images.pexels.com/photos/287237/pexels-photo-287237.jpeg
+
+cita-01.jpg   1920x1080   BANDA DE CITA, velo plano al .78.
+  FOTOGRAMA de video/cita.mp4, misma lógica que la portada.
+  pexels | Pexels License | Pavel Danilyuk |
+  https://www.pexels.com/video/dentistry-equipment-6192868/ |
+  https://videos.pexels.com/video-files/6192868/6192868-hd_1280_720_30fps.mp4
+
+mit-01.jpg    2200x3143   MITADES, «qué conviene traer».
+  Un odontólogo sentado junto al sillón le muestra una imagen en la
+  tableta a una paciente que escucha con las manos juntas. Es la escena
+  de la sección: alguien explicando antes de tocar nada. Bata gris,
+  guantes azules y babero verde pálido — entra en la paleta fría sin
+  traer un color nuevo.
+  RECORTADA del original: x 566-5497, y 1200-8245 (relación 0,70), para
+  dejar el encuadre vertical de la columna sin deformar nada.
+  pexels | Pexels License | Cedric Fauntleroy |
+  https://www.pexels.com/es-es/foto/hombre-sentado-ipad-tableta-digital-4270091/ |
+  https://images.pexels.com/photos/4270091/pexels-photo-4270091.jpeg
+
+telon-01.jpg  1200x800    TELÓN al 13 % detrás de «El equipo».
+  Plano cenital de un sillón sobre piso de madera. Se eligió justamente
+  porque no tiene sujeto: al 13 % se lee como textura y no le compite a
+  las tres fichas vacías que van encima.
+  pixabay | Pixabay Content License | StockSnap |
+  https://pixabay.com/photos/dentist-dental-chair-clinic-medical-2589771/ |
+  https://pixabay.com/get/g8637ad530caa57447e9ae1a1262af73b5049639356c0f1a91e5c7c95c94d78719babfe780c9f7cd6b0025dd60c00cf786d2eb708b88db5cb58780213d9c45fb8_1280.jpg
+
+mos1-01.jpg   1200x800    MOSAICO 1 (celda ancha). Odontóloga examinando
+  a un paciente adulto bajo la lámpara. La única del mosaico con la cara
+  del profesional a la vista y luz alta.
+  pexels | Pexels License | SHVETS production |
+  https://www.pexels.com/es-es/foto/mujer-doctor-dentista-odontologia-8413334/ |
+  https://images.pexels.com/photos/8413334/pexels-photo-8413334.jpeg
+
+mos2-01.jpg   1200x1800   MOSAICO 2. Box completo con dos profesionales
+  frente a la panorámica en pantalla. Es el plano general del mosaico.
+  pexels | Pexels License | Nadezhda Moryak |
+  https://www.pexels.com/es-es/foto/hombre-gente-mujer-varano-7800666/ |
+  https://images.pexels.com/photos/7800666/pexels-photo-7800666.jpeg
+
+mos3-01.jpg   1200x1800   MOSAICO 3. Odontóloga con gorro y mascarilla
+  trabajando. Es la única oscura de las seis: rompe la fila de blancos.
+  pexels | Pexels License | Jonathan Borba |
+  https://www.pexels.com/es-es/foto/gente-mujer-doctor-laboratorio-15688027/ |
+  https://images.pexels.com/photos/15688027/pexels-photo-15688027.jpeg
+
+mos4-01.jpg   1200x1800   MOSAICO 4. Radiografía panorámica en el monitor,
+  repasada con un puntero. Es la prueba gráfica del tramo 20—30.
+  pexels | Pexels License | cottonbro studio |
+  https://www.pexels.com/es-es/foto/manos-tecnologia-ordenador-clinica-6502019/ |
+  https://images.pexels.com/photos/6502019/pexels-photo-6502019.jpeg
+
+mos5-01.jpg   1200x800    MOSAICO 5. Bandeja de acero con el instrumental
+  de examen.
+  pexels | Pexels License | kaboompics.com |
+  https://www.pexels.com/es-es/foto/chrome-cromo-medico-equipo-6627671/ |
+  https://images.pexels.com/photos/6627671/pexels-photo-6627671.jpeg
+
+mos6-01.jpg   1200x800    MOSAICO 6 (celda ancha). Lámpara encendida y las
+  piezas de mano en su soporte. Cierra el mosaico con luz propia.
+  pexels | Pexels License | Daniel Frank |
+  https://www.pexels.com/es-es/foto/equipo-dental-blanco-cerca-de-la-pared-305567/ |
+  https://images.pexels.com/photos/305567/pexels-photo-305567.jpeg
+
+
+VIDEO DE FONDO
+────────────────────────────────────────────────────────────────────────
+
+video/port.mp4   1280x720 · 10 s · 1,46 MB · SIN pista de audio
+  Recorrido corto sobre el equipo de un box. Va detrás del titular, con
+  la misma máscara y el mismo velo que port-01.jpg, así que el contraste
+  medido no cambia cuando el clip arranca.
+  pexels | Pexels License | Pavel Danilyuk |
+  https://www.pexels.com/video/close-up-shot-of-dental-equipments-6755020/ |
+  https://videos.pexels.com/video-files/6755020/6755020-hd_1280_720_25fps.mp4
+
+video/cita.mp4   1280x720 · 9 s (recorte desde el segundo 1) · 1,05 MB · SIN audio
+  Primer plano de las piezas de mano en su soporte. Va detrás de la
+  frase de la banda de cita, bajo un velo plano al .78.
+  pexels | Pexels License | Pavel Danilyuk |
+  https://www.pexels.com/video/dentistry-equipment-6192868/ |
+  https://videos.pexels.com/video-files/6192868/6192868-hd_1280_720_30fps.mp4
+
+  Los dos clips se piden 240 px antes de que la sección entre en
+  pantalla, se pausan al salir de vista y NO se descargan si el visitante
+  pidió menos movimiento o si el navegador dice que ahorra datos.
+
+
+REEMPLAZO DE mit-01 EN LA REVISIÓN ADVERSARIAL (09-09-2026, más tarde)
+────────────────────────────────────────────────────────────────────────
+· La mit-01 de Nadezhda Moryak (Pexels 7803051) SE CAYÓ. Se había
+  recortado 170 px por arriba para sacar del cuadro la marca del equipo
+  (SIGER), pero esa marca aparecía DOS VECES en la foto: la de arriba
+  salió con el recorte y la de la base del equipo —en mitad del cuadro,
+  a un tercio de la altura— quedó dentro y se leía. En la página, a 1440
+  px, ese logotipo medía 25x7 px, o sea el doble en cualquier pantalla
+  de densidad 2. Había además un segundo bordado en el bolsillo de la
+  bata. Recortar más no servía: los dos logos están en el centro del
+  cuadro y cualquier recorte que los dejara fuera se llevaba la
+  radiografía o agrandaba el bordado. Se reemplazó la foto entera.
+· La nueva no tiene ninguna marca, ningún dato de paciente en la tableta
+  y ningún menor. Comprobado ampliando la franja del sujeto al 100 %.
+
+REEMPLAZOS DEL 09-09-2026 Y POR QUÉ
+────────────────────────────────────────────────────────────────────────
+· mit-01, mos1-01, mos2-01, mos3-01 y telon-01 se cambiaron enteras.
+  Las anteriores venían de una sola sesión de fotos y se repetían: la
+  del telón y la del mosaico 3 eran LA MISMA FOTO en dos tratamientos, y
+  el mosaico 2 era un recorte de la de mitades. Tres escenas distintas
+  ocupaban cinco huecos, y eso es exactamente lo que hacía que la página
+  se leyera plana aunque tuviera once fotos.
+· Además, de esas cinco no había registro de procedencia: la carpeta de
+  búsqueda de la que salieron ya no existe y este archivo no se podía
+  escribir con honestidad. Se rebajaron y se volvieron a bajar con
+  FotoRadar, y por eso ahora cada una tiene autor, licencia y URL.
+
+
+FILTROS APLICADOS
+────────────────────────────────────────────────────────────────────────
+· Sin marcas de terceros legibles. La que aparecía —SIGER, en el equipo
+  de la mit-01 anterior— no se pudo sacar recortando sin perder la
+  escena, así que se cambió la foto entera. Nunca se desenfoca ni se
+  tapa: acá no se ensucia ninguna foto.
+· Sin menores identificables. Se descartaron dos candidatas buenas de
+  Pixabay (una niña en el sillón, dos encuadres) por eso mismo.
+· Sin precios dentro de la foto y sin ningún envase con etiqueta legible
+  (se descartó una bandeja con un frasco cuya etiqueta se leía entera).
+· Nada de plus.unsplash.com: es Unsplash+ de pago aunque el filtro lo
+  cuele por la subcadena «unsplash».
+· Ningún interior que prometa otro lugar: se descartaron salas de espera
+  y salas de reuniones genéricas que no eran de una clínica dental, y
+  una consulta con ventanal a torres de departamentos, que no es lo que
+  se ve por una ventana en Puerto Varas.
+· Ninguna imagen del recinto real de Odonthos. La clínica no encargó
+  esta página y no se usó material suyo.
+
+MAPA DE UBICACION — mapa-01.jpg
+  768 x 768 · zoom 14 · centro -41.317802, -72.9829073
+  Mosaicos de OpenStreetMap pegados en una sola imagen, con el marcador
+  dibujado encima. Datos (c) OpenStreetMap contributors, licencia ODbL:
+  la atribucion tiene que ir VISIBLE junto al mapa, en el pie de la figura.
+  https://www.openstreetmap.org/copyright

@@ -23,3 +23,10 @@ URL de origen:
 003.jpg | 5184x3456 | 500+ Beautiful Hiking Photos · Pexels · Free Stock Photos | https://images.pexels.com/photos/1365425/pexels-photo-1365425.jpeg?cs=srgb&dl=landscape-mountains-nature-1365425.jpg&fm=jpg
 004.jpg | 3127x3456 | Dogs Hiking Photos, Download The BEST Free Dogs Hiking Stock Photos ... | https://images.pexels.com/photos/17131198/pexels-photo-17131198.jpeg?cs=srgb&dl=pexels-nikolaeva-nastia-17131198.jpg&fm=jpg
 005.jpg | 3064x4596 | Dogs On Trail Photos, Download The BEST Free Dogs On Trail Stock Photos ... | https://images.pexels.com/photos/13954188/pexels-photo-13954188.jpeg?cs=srgb&dl=pexels-andrei-luican-13954188.jpg&fm=jpg
+
+MAPA DE UBICACION — mapa-01.jpg
+  768 x 768 · zoom 14 · centro -39.2731173, -71.9777605
+  Mosaicos de OpenStreetMap pegados en una sola imagen, con el marcador
+  dibujado encima. Datos (c) OpenStreetMap contributors, licencia ODbL:
+  la atribucion tiene que ir VISIBLE junto al mapa, en el pie de la figura.
+  https://www.openstreetmap.org/copyright

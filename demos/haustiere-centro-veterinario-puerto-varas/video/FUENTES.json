@@ -1,0 +1,50 @@
+[
+    {
+        "archivo":  "port.mp4",
+        "fecha":  "2026-09-08 13:17",
+        "bitrate":  1250000,
+        "duracion":  10,
+        "url":  "https://assets.mixkit.co/videos/1479/1479-720.mp4",
+        "tipo":  "video",
+        "autor":  "",
+        "ancho":  1280,
+        "licencia":  "",
+        "atribucion":  false,
+        "fuente":  "",
+        "inicio":  1,
+        "titulo":  "",
+        "pagina":  ""
+    },
+    {
+        "archivo":  "cita.mp4",
+        "fecha":  "2026-09-08 13:20",
+        "bitrate":  900000,
+        "duracion":  9,
+        "url":  "https://assets.mixkit.co/videos/32471/32471-720.mp4",
+        "tipo":  "video",
+        "autor":  "",
+        "ancho":  1280,
+        "licencia":  "",
+        "atribucion":  false,
+        "fuente":  "",
+        "inicio":  1,
+        "titulo":  "",
+        "pagina":  ""
+    },
+    {
+        "archivo":  "port.mp4",
+        "fecha":  "2026-09-08 13:21",
+        "bitrate":  1000000,
+        "duracion":  10,
+        "url":  "https://assets.mixkit.co/videos/1479/1479-720.mp4",
+        "tipo":  "video",
+        "autor":  "",
+        "ancho":  1280,
+        "licencia":  "",
+        "atribucion":  false,
+        "fuente":  "",
+        "inicio":  1,
+        "titulo":  "",
+        "pagina":  ""
+    }
+]

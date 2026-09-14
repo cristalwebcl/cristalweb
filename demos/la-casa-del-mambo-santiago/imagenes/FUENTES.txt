@@ -1,0 +1,22 @@
+FUENTES DE LAS IMAGENES - La Casa del Mambo Rehecha el 14-09-2026 (presentacion antes que texto). Fotos de REFERENCIA de bancos libres: ninguna es del local; las verdaderas las tiene que mandar el negocio. 
+port-01.jpg  <-  pozo-p-mam-pies\004.jpg  |  pexels (Pexels License)  |  autor: Los Muertos Crew  |  https://www.pexels.com/es-es/foto/pies-zapatos-de-tacon-tacones-bailando-8281148/  |  consulta: "couple dancing feet"
+hund1-01.jpg  <-  pozo-p-mam-pies\006.jpg  |  pexels (Pexels License)  |  autor: Danzon Cultural Heritage  |  https://www.pexels.com/es-es/foto/pareja-de-baile-elegante-en-monterrey-mexico-35612015/  |  consulta: "couple dancing feet"
+hund2-01.jpg  <-  pozo-p-mam-bongo\012.jpg  |  pexels (Pexels License)  |  autor: Ivan S  |  https://www.pexels.com/es-es/foto/manos-mujer-jugando-musica-9630164/  |  consulta: "bongo drums"
+hund3-01.jpg  <-  pozo-p-mam-zapatos\004.jpg  |  pexels (Pexels License)  |  autor: Yusuf Çelik  |  https://www.pexels.com/es-es/foto/piernas-patas-zapatos-suelo-13517051/  |  consulta: "salsa dancing shoes"
+hund4-01.jpg  <-  pozo-p-mam-pies\003.jpg  |  pexels (Pexels License)  |  autor: Leonardo Majluf  |  https://www.pexels.com/es-es/foto/fotografia-en-blanco-y-negro-del-pie-de-una-mujer-con-tacones-sobre-un-suelo-de-madera-36424202/  |  consulta: "couple dancing feet"
+hund5-01.jpg  <-  pozo-p-mam-palma\003.jpg  |  pexels (Pexels License)  |  autor: Milandrial Devine  |  https://www.pexels.com/es-es/foto/elegante-silueta-de-hoja-de-palma-sobre-un-fondo-sutil-33156378/  |  consulta: "palm leaves shadow"
+hund6-01.jpg  <-  pozo-p-mam-bongo\008.jpg  |  pexels (Pexels License)  |  autor: Gonzalo 8a  |  https://www.pexels.com/es-es/foto/musico-tocando-congas-en-un-evento-en-interiores-34006560/  |  consulta: "bongo drums"
+banda-01.jpg  <-  pozo-p-mam-sala\002.jpg  |  pexels (Pexels License)  |  autor: Pavel Danilyuk  |  https://www.pexels.com/es-es/foto/gente-piernas-patas-en-pie-6926602/  |  consulta: "dance studio wooden floor"
+cita-01.jpg  <-  pozo-p-mam-pies\009.jpg  |  pexels (Pexels License)  |  autor: Nguyễn Huỳnh Phong Trường  |  https://www.pexels.com/es-es/foto/blanco-y-negro-moda-hombre-pareja-27441042/  |  consulta: "couple dancing feet"
+mos1-01.jpg  <-  pozo-p-mam-pies\012.jpg  |  pexels (Pexels License)  |  autor: Marina Zvada  |  https://www.pexels.com/es-es/foto/hombre-mujer-piernas-patas-21715725/  |  consulta: "couple dancing feet"
+mos2-01.jpg  <-  pozo-p-mam-bongo\010.jpg  |  pexels (Pexels License)  |  autor: Victor  Abobade  |  https://www.pexels.com/es-es/foto/bongos-coloridos-con-fondo-artistico-36696496/  |  consulta: "bongo drums"
+mos3-01.jpg  <-  pozo-p-mam-palma\009.jpg  |  pexels (Pexels License)  |  autor: David Correa Franco  |  https://www.pexels.com/es-es/foto/exuberantes-hojas-de-monstera-en-la-selva-colombiana-31591012/  |  consulta: "palm leaves shadow"
+mos4-01.jpg  <-  pozo-p-mam-claves\011.jpg  |  pexels (Pexels License)  |  autor: cnrdmroglu  |  https://www.pexels.com/es-es/foto/hombre-tocando-la-flauta-ney-tradicional-turca-32930806/  |  consulta: "claves percussion"
+mos5-01.jpg  <-  pozo-p-mam-sala\003.jpg  |  pexels (Pexels License)  |  autor: David Correa Franco  |  https://www.pexels.com/es-es/foto/textura-de-madera-rustica-con-lineas-verticales-31513983/  |  consulta: "dance studio wooden floor"
+mos6-01.jpg  <-  pozo-p-mam-palma\002.jpg  |  pexels (Pexels License)  |  autor: Atypeek Dgn  |  https://www.pexels.com/es-es/foto/silueta-minimalista-de-hojas-de-palmera-sobre-fondo-neutro-39316244/  |  consulta: "palm leaves shadow"
+
+BRUMA (bruma-pag-0N.png y bruma-osc-0N.png, 30x20): las MISMAS fotos, recortadas a 3:2, reducidas y
+recoloreadas con C:\devs\demos\hacer-bruma.ps1 (clara >= 0,68 de luminancia / oscura <= 0,05). No suman fuentes.
+    pagina: port-01.jpg, banda-01.jpg, cita-01.jpg, mos5-01.jpg, hund3-01.jpg   |   oscuras: banda-01.jpg, cita-01.jpg, mos4-01.jpg
+
+MAPA: iframe de Google Maps (embed publico, sin clave). No hay imagen de mapa.

@@ -27,7 +27,7 @@
 
 <div class="propuesta">
   <p class="propuesta__que">Propuesta de sitio web — preparada para <b>Mis Raíces</b> por CristalWeb</p>
-  <p class="propuesta__gancho">219 reseñas en la costa valdiviana, a pasos del mar, y desde el teléfono no se puede saber si hoy hay mariscal.</p>
+  <p class="propuesta__gancho">219 reseñas en la costa valdiviana, a pasos del mar, y desde el teléfono no se puede saber si hoy hay mariscal (verificado el 21-08-2026). Ésta es la página que debería estar ahí.</p>
 </div>
 
 <header class="cab" id="cab">
@@ -37,6 +37,8 @@
   </a>
   <nav class="cab__nav" aria-label="Secciones">
     <a href="#mar">Qué hay del mar</a>
+    <a href="#oficio">Lo que manda</a>
+    <a href="#linea">La línea del día</a>
     <a href="#vista">La mesa con vista</a>
   </nav>
   <a class="cab__res" href="#reservar">
@@ -69,17 +71,44 @@
     <p class="bajada">Lo que hay depende de la época, de la veda y de si salió el
       bote. Nadie lo dice por escrito, así que la gente llama para preguntar —o no
       viene. Acá está el calendario.</p>
-    <dl class="specs">
-      <div class="spec"><dt>reseñas en Google</dt><dd>219</dd></div>
-      <div class="spec"><dt>página propia</dt><dd><span class="falta">por confirmar</span></dd></div>
-    </dl>
+    <p class="portada__botones">
+      <a class="boton boton--luz" href="#mar">Ver qué hay del mar</a>
+      <a class="boton boton--filo" href="#reservar">Reservar una mesa</a>
+    </p>
   </div>
+</section>
+
+<!-- ========= LAS CUATRO CIFRAS — con la herida adentro ========= -->
+<section class="cifras" aria-label="Mis Raíces en cuatro números">
+  <ul class="cifras__lista cascada">
+    <li>
+      <b class="cifras__n" data-cuenta="219">219</b>
+      <span class="cifras__q">reseñas en Google</span>
+      <span class="cifras__pq">Verificado el 21-08-2026. Público tienen: el problema no es que no los conozcan.</span>
+    </li>
+    <li>
+      <b class="cifras__n">6</b>
+      <span class="cifras__q">productos con calendario acá</span>
+      <span class="cifras__pq">Chorito, algas, loco, macha, erizo y el pescado del día, cada uno con sus doce meses a la vista.</span>
+    </li>
+    <li>
+      <b class="cifras__n">3</b>
+      <span class="cifras__q">fotos suyas en todo internet</span>
+      <span class="cifras__pq">Las tres de su ficha. Ninguna muestra la vista, y en las dos de la fachada el quitasol tapa la mitad del letrero.</span>
+    </li>
+    <li class="cifras__herida">
+      <b class="cifras__n cifras__n--hueca">0</b>
+      <span class="cifras__q">teléfonos publicados</span>
+      <span class="cifras__pq">Quien quiere reservar hoy no tiene dónde escribir. Ésta es la herida y se arregla en una tarde.</span>
+    </li>
+  </ul>
+  <p class="cifras__pie">La nota promedio existe y no se publica acá a propósito: en una página de venta se habla del volumen, no del puntaje.</p>
 </section>
 
 <!-- ========= LA PIEZA FIRMA — ESTRUCTURA K ========= -->
 <section class="mar con-telon" id="mar" aria-labelledby="t-mar">
   <div class="telon" aria-hidden="true">
-    <img src="imagenes/telon-01.jpg" width="1200" height="800" decoding="async" alt="">
+    <img src="imagenes/telon-01.jpg" width="1200" height="800" loading="lazy" decoding="async" alt="">
   </div>
 
   <!-- AURA DE COLOR: la foto de rubro reventada a desenfoque. No se lee
@@ -244,12 +273,98 @@
   </div>
 </section>
 
-<!-- ========= LA MESA CON VISTA ========= -->
+<!-- ========= TAJO — FRANJA A SANGRE ========= -->
+<div class="tajo" aria-hidden="true">
+  <img src="imagenes/tajo-01.jpg" width="2200" height="997"
+       loading="lazy" decoding="async" alt="">
+</div>
+
+<!-- ========= LO QUE MANDA — el inventario del oficio ========= -->
+<section class="oficio con-telon" id="oficio" aria-labelledby="t-oficio">
+  <div class="telon telon--oficio" aria-hidden="true">
+    <img src="imagenes/telon-02.jpg" width="1200" height="810" loading="lazy" decoding="async" alt="">
+  </div>
+  <div class="oficio__cuerpo">
+    <p class="antetitulo antetitulo--claro">Lo que decide qué hay</p>
+    <h2 id="t-oficio">Mandan cinco cosas,<br>y ninguna es la cocina</h2>
+    <p class="entrada">El calendario de arriba no es una decisión del local: es lo que
+      pasa afuera. Estas cinco explican por qué la respuesta cambia de un día para
+      otro —y por qué preguntar «¿qué tienen?» nunca sirve de nada.</p>
+
+    <ol class="fichas cascada">
+      <li class="ficha">
+        <span class="ficha__n" aria-hidden="true">01</span>
+        <h3>La temporada</h3>
+        <p>Un marisco no está igual todo el año. Después del desove queda flaco y
+          rinde menos en el plato. Eso no lo decide nadie: es el bicho.</p>
+      </li>
+      <li class="ficha">
+        <span class="ficha__n" aria-hidden="true">02</span>
+        <h3>La veda</h3>
+        <p>La fija la autoridad pesquera y cambia de zona en zona y de año en año.
+          Mientras dura, no hay. No es una excusa del local: es lo que hace que el
+          año siguiente todavía queden.</p>
+      </li>
+      <li class="ficha">
+        <span class="ficha__n" aria-hidden="true">03</span>
+        <h3>El cultivo</h3>
+        <p>El chorito viene de línea, colgado en el agua y cosechado cuando toca.
+          Por eso es el único de la lista que no depende de la suerte del día.</p>
+      </li>
+      <li class="ficha">
+        <span class="ficha__n" aria-hidden="true">04</span>
+        <h3>El bote</h3>
+        <p>El pescado del día es literalmente eso. Si el mar no dejó salir en la
+          mañana no hay, y no hay nada que la cocina pueda hacer al respecto.</p>
+      </li>
+      <li class="ficha">
+        <span class="ficha__n" aria-hidden="true">05</span>
+        <h3>La bajamar</h3>
+        <p>El cochayuyo y el luche se sacan a mano cuando la marea deja la roca al
+          descubierto. Su temporada no es un gusto: es cuándo se puede llegar a la
+          piedra.</p>
+      </li>
+    </ol>
+
+    <p class="oficio__salida">Por eso la pregunta que llega por teléfono nunca es
+      «qué tienen». Es <em>qué hay hoy</em> — y hoy esa pregunta sólo se puede
+      contestar llamando.</p>
+  </div>
+</section>
+
+<!-- ========= LA LÍNEA DEL DÍA — la pizarra ========= -->
+<section class="linea" id="linea" aria-labelledby="t-linea">
+  <div class="linea__cuerpo">
+    <p class="antetitulo">Lo que cuesta un minuto al día</p>
+    <h2 id="t-linea">Una línea escrita<br>en la mañana</h2>
+    <p class="entrada">El calendario de arriba casi no cambia: se escribe una vez y
+      queda puesto. Lo que cambia todos los días es una sola frase, y hoy esa frase
+      no está escrita en ninguna parte.</p>
+
+    <div class="pizarra">
+      <p class="pizarra__rot">Hoy en Mis Raíces</p>
+      <p class="pizarra__linea"><span class="falta">falta: la escribe el local, cada mañana</span></p>
+      <p class="pizarra__pie">Es el único renglón de esta página pensado para cambiar
+        todos los días. Quién lo escribe y cómo se actualiza es la primera
+        conversación que hay que tener, y no la decide una página web.</p>
+    </div>
+
+    <ol class="reglas">
+      <li><b>Una frase, no tres.</b> Si hay que sentarse a redactar, no se escribe
+        ningún día.</li>
+      <li><b>Desde el teléfono</b>, mientras se descarga la caja. No hace falta
+        computador ni que la suba otra persona.</li>
+      <li><b>Los días malos también.</b> «Hoy no salió el bote» es información, y es
+        justamente la que hace que el cliente vuelva a mirar mañana.</li>
+    </ol>
+  </div>
+</section>
+
 <!-- ========= MEDIA PANTALLA ========= -->
 <section class="mitades" aria-labelledby="t-mitades">
   <div class="mitades__foto">
     <img src="imagenes/media-01.jpg" width="959" height="1600"
-         loading="lazy" decoding="async" alt="">
+         loading="lazy" decoding="async" alt="La terraza del local con su quitasol, junto a la baranda blanca que da a la calle.">
   </div>
   <div class="mitades__texto">
     <p class="mitades__ante">La foto que ya tienen y explica el lugar</p>
@@ -258,13 +373,19 @@
   </div>
 </section>
 
+<!-- ========= LA CITA A SANGRE ========= -->
+<section class="cita" aria-labelledby="t-cita">
+  <div class="cita__foto" aria-hidden="true">
+    <img src="imagenes/cita-01.jpg" width="2560" height="1707"
+         loading="lazy" decoding="async" alt="">
+  </div>
+  <blockquote class="cita__texto">
+    <p id="t-cita">Lo que hay hoy salió hoy<br>
+      <span class="cita__eco">Y si no salió el bote, se dice y punto</span></p>
+  </blockquote>
+</section>
 
-
-<!-- ========= TAJO — FRANJA A SANGRE ========= -->
-<div class="tajo" aria-hidden="true">
-  <img src="imagenes/banda-01.jpg" width="1500" height="1000"
-       loading="lazy" decoding="async" alt="">
-</div>
+<!-- ========= LA MESA CON VISTA ========= -->
 <section class="vista" id="vista" aria-labelledby="t-vista">
   <div class="vista__cuerpo">
     <p class="antetitulo antetitulo--claro">Lo segundo que preguntan</p>
@@ -296,6 +417,35 @@
     </dl>
 
     <h3 class="sub">Cómo llegar</h3>
+
+    <!-- ══ MAPA DE UBICACIÓN ══════════════════════════════════════
+         Imagen propia: nueve mosaicos de OpenStreetMap bajados una vez
+         con demos/mapa-negocio.ps1 y pegados en un JPEG que se sirve
+         desde acá. La CSP (img-src 'self') no deja incrustar un mapa de
+         terceros, y de paso el visitante no queda registrado en el
+         servidor de nadie. El botón «Cómo llegar» es un ENLACE, que sí
+         está permitido: lo prohibido es CARGAR algo de afuera.
+         La atribución a OpenStreetMap es obligatoria (licencia ODbL) y
+         va visible junto al mapa, no escondida en el pie de página.
+
+         HONESTIDAD DEL PUNTO: el marcador está en LOS MOLINOS, el
+         sector, porque la ficha del negocio no publica calle ni número.
+         Eso se dice en el pie con todas sus letras en vez de clavar el
+         alfiler en una puerta inventada. -->
+    <figure class="mapa">
+      <img src="imagenes/mapa-01.jpg" width="768" height="768" loading="lazy" decoding="async"
+           alt="Mapa de la costa de Valdivia: Los Molinos marcado sobre el camino T-350, al norte de Niebla, con la bahía y Corral al frente.">
+      <figcaption class="mapa__pie">
+        <p class="mapa__aviso">El punto es <b>el sector</b>, no la puerta: se llega por el
+          camino de la costa pasando Niebla. <span class="falta">falta: la dirección exacta</span>,
+          y la pone el local.</p>
+        <p class="mapa__linea">
+          <span class="mapa__cred">Mapa: &copy; <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener">OpenStreetMap</a> contributors</span>
+          <a class="mapa__ir" href="https://www.google.com/maps/search/?api=1&amp;query=-39.8459187,-73.3922232" target="_blank" rel="noopener">Cómo llegar <span aria-hidden="true">&rarr;</span></a>
+        </p>
+      </figcaption>
+    </figure>
+
     <dl class="huecos">
       <div class="hueco">
         <dt>Dirección exacta</dt>
@@ -338,7 +488,9 @@
         <p class="resumen" id="resumen" aria-live="polite">El mensaje se arma acá abajo a medida que escribe.</p>
         <a class="boton" id="enviar" href="#reservar">Enviar por WhatsApp</a>
         <p class="reservar__nota"><span class="falta">falta: el número</span> — la ficha
-          de Google no publica ninguno, así que el botón todavía no lleva a ninguna parte.</p>
+          de Google no publica ninguno, así que el botón todavía no lleva a ninguna parte.
+          Cuando el local dé su número se cambia una sola línea del sitio y este botón
+          —y el verde de abajo a la derecha— quedan funcionando.</p>
       </form>
     </div>
   </div>
@@ -346,97 +498,111 @@
 
 </main>
 
-
-
-<!-- ========= MOSAICO ========= -->
-
-<!-- ========= LA CITA A SANGRE ========= -->
-<section class="cita" aria-labelledby="t-cita">
-  <div class="cita__foto" aria-hidden="true">
-    <img src="imagenes/cita-01.jpg" width="2560" height="1707"
-         loading="lazy" decoding="async" alt="">
-  </div>
-  <blockquote class="cita__texto">
-    <p id="t-cita">Lo que hay hoy salió hoy<br>
-      <span class="cita__eco">Y si no salió el bote, se dice y punto</span></p>
-  </blockquote>
-</section>
-
 <!-- ========= LA TIRA ========= -->
-<section class="tira" aria-label="Tres imágenes del oficio">
+<section class="tira" aria-label="Tres imágenes de la orilla y del local">
   <figure class="tira__pieza">
-    <img src="imagenes/tira-01.jpg" width="1000" height="1014" loading="lazy" decoding="async" alt="La fachada del restaurante con el letrero Mis Raíces.">
+    <img src="imagenes/tira-01.jpg" width="1100" height="825" loading="lazy" decoding="async" alt="La espuma barriendo la roca de la orilla.">
   </figure>
   <figure class="tira__pieza">
-    <img src="imagenes/tira-02.jpg" width="1000" height="750" loading="lazy" decoding="async" alt="El local por fuera, con la terraza y los quitasoles.">
+    <img src="imagenes/tira-02.jpg" width="1000" height="645" loading="lazy" decoding="async" alt="El local por fuera, con la terraza y los quitasoles.">
   </figure>
   <figure class="tira__pieza">
     <img src="imagenes/tirb-01.jpg" width="1000" height="667" loading="lazy" decoding="async" alt="Jaibas frescas amontonadas.">
   </figure>
 </section>
 
+<!-- ========= MOSAICO ========= -->
 <section class="mos" aria-labelledby="t-mos">
-  <h2 id="t-mos" class="mos__titulo">La misma serie, más de cerca</h2>
-  <p class="mos__nota">Estas seis ya aparecen más arriba en la página. Vuelven acá en otro tamaño porque una sola pasada de imágenes deja el scroll vacío, y porque de cerca se ven cosas que en grande se pierden. La procedencia de cada una está en imagenes/FUENTES.txt.</p>
-  <div class="mos__grilla">
+  <h2 id="t-mos" class="mos__titulo">La orilla, de la que sale todo</h2>
+  <p class="mos__nota">Seis piezas: tres son recortes de las fotos que ya vio más
+    arriba y tres son de banco libre —ambiente de orilla, no de esta orilla; ninguna
+    dice ser Los Molinos. Ninguna es un plato servido, a propósito: un plato de banco
+    de imágenes se descubre al primer servicio, y una roca con espuma es el mar del
+    que sale la comida. La procedencia de cada una está en imagenes/FUENTES.txt.</p>
+  <div class="mos__grilla cascada">
     <figure class="mos__p">
-      <img src="imagenes/mos-01.jpg" width="780" height="585"
-           loading="lazy" decoding="async" alt="">
+      <img src="imagenes/mos-01.jpg" width="1200" height="595"
+           loading="lazy" decoding="async" alt="La orilla vista desde arriba: la espuma entrando entre las rocas.">
     </figure>
     <figure class="mos__p">
-      <img src="imagenes/mos-02.jpg" width="780" height="520"
-           loading="lazy" decoding="async" alt="">
+      <img src="imagenes/mos-02.jpg" width="1200" height="801"
+           loading="lazy" decoding="async" alt="Choritos apretados unos contra otros en la roca.">
     </figure>
     <figure class="mos__p">
-      <img src="imagenes/mos-03.jpg" width="780" height="791"
-           loading="lazy" decoding="async" alt="">
+      <img src="imagenes/mos-03.jpg" width="1100" height="1115"
+           loading="lazy" decoding="async" alt="Un ostión abierto, con la carne y el coral a la vista.">
     </figure>
     <figure class="mos__p">
-      <img src="imagenes/mos-04.jpg" width="780" height="1301"
-           loading="lazy" decoding="async" alt="">
+      <img src="imagenes/mos-04.jpg" width="900" height="600"
+           loading="lazy" decoding="async" alt="Las mismas jaibas, de más cerca.">
     </figure>
     <figure class="mos__p">
-      <img src="imagenes/mos-05.jpg" width="780" height="520"
-           loading="lazy" decoding="async" alt="">
+      <img src="imagenes/mos-05.jpg" width="1200" height="800"
+           loading="lazy" decoding="async" alt="Piedras redondas de la orilla en marea baja, entre dos paredes de roca.">
     </figure>
     <figure class="mos__p">
-      <img src="imagenes/mos-06.jpg" width="780" height="520"
-           loading="lazy" decoding="async" alt="">
+      <img src="imagenes/mos-06.jpg" width="1200" height="481"
+           loading="lazy" decoding="async" alt="Botes de pesca amarrados en un puerto con niebla.">
     </figure>
   </div>
 </section>
+
+<!-- ========= PARA EL DUEÑO ========= -->
 <section class="dueno" aria-labelledby="t-dueno">
   <h2 id="t-dueno">Para el dueño</h2>
-  <div class="dueno__cols">
+  <div class="dueno__cols cascada">
     <div>
       <h3>Lo que está verificado</h3>
-      <p>Las 219 reseñas de su ficha de Google y que no tienen teléfono publicado.
-        La página propia figura como «por confirmar».</p>
+      <p>Las 219 reseñas de su ficha de Google, revisadas el 21-08-2026, y que no
+        tienen teléfono publicado. La página propia figura como «por confirmar».</p>
     </div>
     <div>
       <h3>Lo que no inventé</h3>
-      <p>Ninguna fecha de veda, ningún tiempo de viaje y ninguna vista. Los tres son
-        datos que cambian o que sólo ustedes pueden confirmar, y equivocarlos en
-        internet cuesta clientes.</p>
+      <p>Ninguna fecha de veda, ningún tiempo de viaje, ninguna vista y ningún
+        precio. Son datos que cambian o que sólo ustedes pueden confirmar, y
+        equivocarlos en internet cuesta clientes.</p>
     </div>
     <div>
       <h3>Lo que falta</h3>
-      <p>El número, la dirección y el calendario de mariscos completo. Con eso la
-        sección principal deja de tener huecos y pasa a ser lo que ningún
-        restaurante de la costa tiene escrito.</p>
+      <p>El número, la dirección, una foto de la fachada con el letrero entero a la
+        vista, y el calendario de mariscos completo. Con eso la sección principal
+        deja de tener huecos y pasa a ser lo que ningún restaurante de la costa
+        tiene escrito.</p>
     </div>
   </div>
   <p class="dueno__cierre">
     <a class="flecha" href="https://wa.me/56968650001" rel="noopener">Escribirme por WhatsApp <span aria-hidden="true">→</span></a>
+    <a class="flecha" href="mailto:cristalwebcl@gmail.com?subject=Mis%20Ra%C3%ADces%20%E2%80%94%20la%20p%C3%A1gina%20de%20Los%20Molinos">Escribir a cristalwebcl@gmail.com <span aria-hidden="true">→</span></a>
     <a class="flecha" href="../../" rel="noopener">Ver otros trabajos <span aria-hidden="true">→</span></a>
   </p>
 </section>
 
 <footer class="pie">
   <p>Sitio de demostración preparado por CristalWeb. El negocio no lo ha encargado
-    ni ha revisado su contenido. Los calendarios son referencia general del litoral;
-    las vedas vigentes las fija la autoridad pesquera.</p>
+    ni ha revisado su contenido. No hay precios en esta página a propósito: los pone
+    el local. Los calendarios son referencia general del litoral; las vedas vigentes
+    las fija la autoridad pesquera.</p>
 </footer>
+
+<!-- ══ WHATSAPP FLOTANTE ═══════════════════════════════════════════
+     Va escrito en el HTML, no lo crea el JS: si el script no arranca,
+     el botón igual está. El JS sólo lo aparta mientras se mira la
+     portada, para no tapar el titular. Icono de simple-icons (CC0),
+     incrustado: la CSP no deja pedir nada a un tercero.
+
+     OJO CON EL DESTINO: este negocio NO tiene número publicado (su
+     ficha de Google no trae ninguno, verificado el 21-08-2026). El
+     botón NO puede llevar al WhatsApp de CristalWeb —eso mandaría los
+     clientes del cliente al teléfono equivocado— y tampoco se inventa
+     un número. Por eso lleva al formulario de reserva, que arma el
+     mensaje y dice de frente que falta el número. Cuando el local lo
+     dé, se cambia este href y la constante NUMERO de js/main.js. -->
+<a class="wapp"
+   href="#reservar"
+   aria-label="Reservar por WhatsApp: el número del local todavía no está publicado, esto lleva al formulario que arma el mensaje">
+  <svg class="wapp__i" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"/></svg>
+  <span class="wapp__t">WhatsApp</span>
+</a>
 
 <script src="js/main.js"></script>
 </body>

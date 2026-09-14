@@ -1,0 +1,22 @@
+FUENTES DE LAS IMAGENES - CerrajerÃ­a OlguÃ­n Hermanos Rehecha el 13-09-2026 (presentacion antes que texto). Fotos de REFERENCIA de bancos libres: ninguna es del local; las verdaderas las tiene que mandar el negocio. 
+port-01.jpg  <-  pozo-p-olg-madera\012.jpg  |  pexels (Pexels License)  |  autor: Emma Jane Seymour  |  https://www.pexels.com/es-es/foto/entrada-deteriorarse-deterioro-decadencia-14032090/  |  consulta: "wooden door detail"
+hund1-01.jpg  <-  pozo-p-olg-cerradura\012.jpg  |  pexels (Pexels License)  |  autor: George Becker  |  https://www.pexels.com/es-es/foto/teclas-negras-y-grises-792034/  |  consulta: "door lock key"
+hund2-01.jpg  <-  pozo-p-olg-cerradura\007.jpg  |  pexels (Pexels License)  |  autor: Alena Darmel  |  https://www.pexels.com/es-es/foto/puerta-llaves-candado-cerrado-con-llave-7641991/  |  consulta: "door lock key"
+hund3-01.jpg  <-  pozo-p-olg-casanueva\001.jpg  |  pexels (Pexels License)  |  autor: hugoteconecta  |  https://www.pexels.com/es-es/foto/hombre-manos-mujer-llaves-20345064/  |  consulta: "moving new home keys"
+hund4-01.jpg  <-  pozo-p-olg-colgador\009.jpg  |  pexels (Pexels License)  |  autor: Chris F  |  https://www.pexels.com/es-es/foto/pared-muro-de-madera-llaves-18691046/  |  consulta: "keys hanging hook"
+hund5-01.jpg  <-  pozo-p-olg-puerta\004.jpg  |  pexels (Pexels License)  |  autor: Brett Sayles  |  https://www.pexels.com/es-es/foto/casas-pasos-casa-ventanas-8364961/  |  consulta: "front door house"
+hund6-01.jpg  <-  pozo-p-olg-madera\008.jpg  |  pexels (Pexels License)  |  autor: Alexander Popadin  |  https://www.pexels.com/es-es/foto/primer-plano-de-puerta-de-madera-rustica-con-herrajes-de-hierro-35269749/  |  consulta: "wooden door detail"
+banda-01.jpg  <-  pozo-p-olg-puerta\007.jpg  |  pexels (Pexels License)  |  autor: Field Cottage  |  https://www.pexels.com/es-es/foto/casas-casa-ventanas-ventana-19609299/  |  consulta: "front door house"
+cita-01.jpg  <-  pozo-p-olg-llaves\005.jpg  |  pexels (Pexels License)  |  autor: Joao Fernandes  |  https://www.pexels.com/es-es/foto/llaves-monocromo-escala-de-grises-de-cerca-13920307/  |  consulta: "old keys"
+mos1-01.jpg  <-  pozo-p-olg-llaves\006.jpg  |  pexels (Pexels License)  |  autor: Sueda Gln  |  https://www.pexels.com/es-es/foto/antiguo-retro-coleccion-naturaleza-muerta-15446635/  |  consulta: "old keys"
+mos2-01.jpg  <-  pozo-p-olg-puerta\008.jpg  |  pexels (Pexels License)  |  autor: Arian Fernandez  |  https://www.pexels.com/es-es/foto/casas-pasos-casa-puerta-18326826/  |  consulta: "front door house"
+mos3-01.jpg  <-  pozo-p-olg-manilla\002.jpg  |  pexels (Pexels License)  |  autor: Regina Tommasi  |  https://www.pexels.com/es-es/foto/puerta-roja-y-buzon-en-grado-italia-37196314/  |  consulta: "door handle brass"
+mos4-01.jpg  <-  pozo-p-olg-llaves\002.jpg  |  pexels (Pexels License)  |  autor: yasemin .  |  https://www.pexels.com/es-es/foto/vintage-llaves-antiguo-naturaleza-muerta-9388771/  |  consulta: "old keys"
+mos5-01.jpg  <-  pozo-p-olg-colgador\010.jpg  |  pexels (Pexels License)  |  autor: Ron Lach  |  https://www.pexels.com/es-es/foto/pared-muro-metal-llaves-10473517/  |  consulta: "keys hanging hook"
+mos6-01.jpg  <-  pozo-p-olg-madera\010.jpg  |  pexels (Pexels License)  |  autor: Frank Lv  |  https://www.pexels.com/es-es/foto/panel-de-puerta-de-madera-tallado-intricado-en-luz-dramatica-36817208/  |  consulta: "wooden door detail"
+
+BRUMA (bruma-pag-0N.png y bruma-osc-0N.png, 30x20): las MISMAS fotos, recortadas a 3:2, reducidas y
+recoloreadas con C:\devs\demos\hacer-bruma.ps1 (clara >= 0,68 de luminancia / oscura <= 0,05). No suman fuentes.
+    pagina: port-01.jpg, cita-01.jpg, hund2-01.jpg, mos1-01.jpg, hund4-01.jpg   |   oscuras: port-01.jpg, banda-01.jpg, cita-01.jpg
+
+MAPA: iframe de Google Maps (embed publico, sin clave). No hay imagen de mapa.

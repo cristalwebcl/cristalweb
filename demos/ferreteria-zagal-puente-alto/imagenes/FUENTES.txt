@@ -1,0 +1,22 @@
+FUENTES DE LAS IMAGENES - FerreterÃ­a Zagal Rehecha el 13-09-2026 (presentacion antes que texto). Fotos de REFERENCIA de bancos libres: ninguna es del local; las verdaderas las tiene que mandar el negocio. 
+port-01.jpg  <-  pozo-p-zg-cortina\001.jpg  |  pexels (Pexels License)  |  autor: Mauricio Peña  |  https://www.pexels.com/es-es/foto/santa-mot-20351980/  |  consulta: "shop shutter"
+hund1-01.jpg  <-  pozo-p-zg-estante\005.jpg  |  pexels (Pexels License)  |  autor: neil kelly  |  https://www.pexels.com/es-es/foto/utensilios-de-cocina-de-acero-gris-735338/  |  consulta: "hardware store shelves"
+hund2-01.jpg  <-  pozo-p-zg-tubos\012.png  |  pexels (Pexels License)  |  autor: Jasmijn Van der Maaten  |  https://www.pexels.com/es-es/foto/industria-valvulas-oxidado-enfoque-selectivo-10990766/  |  consulta: "pvc pipes"
+hund3-01.jpg  <-  pozo-p-zg-pernos\001.jpg  |  pexels (Pexels License)  |  autor: Jomon Kollannoor  |  https://www.pexels.com/es-es/foto/herramientas-bricolaje-diy-vista-superior-26856081/  |  consulta: "screws bolts"
+hund4-01.jpg  <-  pozo-p-zg-candado\004.jpg  |  pexels (Pexels License)  |  autor: Nikita Belokhonov  |  https://www.pexels.com/es-es/foto/metal-llaves-oxidado-variado-7630510/  |  consulta: "padlock keys"
+hund5-01.jpg  <-  pozo-p-zg-herramientas\012.jpg  |  pexels (Pexels License)  |  autor: Chris Leib  |  https://www.pexels.com/es-es/foto/variedad-de-herramientas-manuales-en-un-taller-37792975/  |  consulta: "hand tools wall"
+hund6-01.jpg  <-  pozo-p-zg-pintura\004.jpg  |  pexels (Pexels License)  |  autor: Lena Ti  |  https://www.pexels.com/es-es/foto/latas-de-pintura-abiertas-de-colores-vibrantes-sobre-una-lamina-de-plastico-39414266/  |  consulta: "paint cans"
+banda-01.jpg  <-  pozo-p-zg-cortina\007.jpg  |  pexels (Pexels License)  |  autor: DiePhotoPotato  |  https://www.pexels.com/es-es/foto/ligero-noche-reflejo-reflexion-10499011/  |  consulta: "shop shutter"
+cita-01.jpg  <-  pozo-p-zg-herramientas\004.jpg  |  pexels (Pexels License)  |  autor: Miguel Á. Padriñán  |  https://www.pexels.com/es-es/foto/blanco-y-negro-pared-muro-metal-16679591/  |  consulta: "hand tools wall"
+mos1-01.jpg  <-  pozo-p-zg-estante\008.jpg  |  pexels (Pexels License)  |  autor: Jimmy Liao  |  https://www.pexels.com/es-es/foto/metal-monitor-mostrar-exhibicion-19825178/  |  consulta: "hardware store shelves"
+mos2-01.jpg  <-  pozo-p-zg-candado\006.jpg  |  pexels (Pexels License)  |  autor: George Becker  |  https://www.pexels.com/es-es/foto/llaves-surtidas-114741/  |  consulta: "padlock keys"
+mos3-01.jpg  <-  pozo-p-zg-reloj\009.jpg  |  pexels (Pexels License)  |  autor: Arseni Shuliak  |  https://www.pexels.com/es-es/foto/hora-tiempo-naturaleza-muerta-espacio-para-texto-11931455/  |  consulta: "wall clock"
+mos4-01.jpg  <-  pozo-p-zg-pernos\011.jpg  |  pexels (Pexels License)  |  autor: Alex Tepetidis  |  https://www.pexels.com/es-es/foto/tuercas-frutos-secos-reciclaje-monton-5279361/  |  consulta: "screws bolts"
+mos5-01.jpg  <-  pozo-p-zg-herramientas\003.jpg  |  pexels (Pexels License)  |  autor: Miguel Á. Padriñán  |  https://www.pexels.com/es-es/foto/blanco-y-negro-pared-muro-estante-16679588/  |  consulta: "hand tools wall"
+mos6-01.jpg  <-  pozo-p-zg-pintura\012.jpg  |  pexels (Pexels License)  |  autor: Sami  Aksu  |  https://www.pexels.com/es-es/foto/metal-apilar-pila-monton-9611495/  |  consulta: "paint cans"
+
+BRUMA (bruma-pag-0N.png y bruma-osc-0N.png, 30x20): las MISMAS fotos, recortadas a 3:2, reducidas y
+recoloreadas con C:\devs\demos\hacer-bruma.ps1 (clara >= 0,68 de luminancia / oscura <= 0,05). No suman fuentes.
+    pagina: port-01.jpg, banda-01.jpg, cita-01.jpg, mos4-01.jpg, mos5-01.jpg   |   oscuras: port-01.jpg, banda-01.jpg, cita-01.jpg
+
+MAPA: iframe de Google Maps (embed publico, sin clave). No hay imagen de mapa.

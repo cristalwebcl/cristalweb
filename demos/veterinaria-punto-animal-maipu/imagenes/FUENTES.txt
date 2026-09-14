@@ -1,0 +1,22 @@
+FUENTES DE LAS IMAGENES - Punto Animal Rehecha el 13-09-2026 (presentacion antes que texto). Fotos de REFERENCIA de bancos libres: ninguna es del local; las verdaderas las tiene que mandar el negocio. 
+port-01.jpg  <-  pozo-p-pan-pesa\005.jpg  |  pexels (Pexels License)  |  autor: Luis  Merlos Vega  |  https://www.pexels.com/es-es/foto/perro-mascota-blanco-perrito-17689470/  |  consulta: "pet scale weight"
+hund1-01.jpg  <-  pozo-p-pan-examen\001.jpg  |  pexels (Pexels License)  |  autor: Eduardo López  |  https://www.pexels.com/es-es/foto/perro-en-la-mesa-16618532/  |  consulta: "dog vet exam"
+hund2-01.jpg  <-  pozo-p-pan-gatito\006.jpg  |  pexels (Pexels License)  |  autor: Tom Johnny fotografias  |  https://www.pexels.com/es-es/foto/lindo-gatito-mirando-a-la-camara-19709403/  |  consulta: "kitten portrait"
+hund3-01.jpg  <-  pozo-p-pan-canasto\012.jpg  |  pexels (Pexels License)  |  autor: Leah Newhouse  |  https://www.pexels.com/es-es/foto/gato-siames-con-cono-colar-776374/  |  consulta: "cat carrier"
+hund4-01.jpg  <-  pozo-p-pan-cachorro\008.jpg  |  pexels (Pexels License)  |  autor: David Vives  |  https://www.pexels.com/es-es/foto/adorable-cachorro-de-maltipoo-sentado-en-el-interior-28990269/  |  consulta: "puppy portrait"
+hund5-01.jpg  <-  pozo-p-pan-pelota\010.jpg  |  pexels (Pexels License)  |  autor: Chris Shafer  |  https://www.pexels.com/es-es/foto/primer-plano-de-un-perro-marron-4538450/  |  consulta: "dog red ball"
+hund6-01.jpg  <-  pozo-p-pan-espera\008.jpg  |  pexels (Pexels License)  |  autor: Emre Ozyemisci  |  https://www.pexels.com/es-es/foto/perro-mestizo-terrier-adorable-sentado-en-un-banco-interior-32400988/  |  consulta: "dog waiting room"
+banda-01.jpg  <-  pozo-p-pan-pelota\009.jpg  |  pexels (Pexels License)  |  autor: Florencia  Pérez  |  https://www.pexels.com/es-es/foto/adorable-perro-jugando-con-burbujas-al-aire-libre-33710347/  |  consulta: "dog red ball"
+cita-01.jpg  <-  pozo-p-pan-cachorro\010.jpg  |  pexels (Pexels License)  |  autor: PubPro  |  https://www.pexels.com/es-es/foto/adorable-perro-marron-tumbado-en-el-cesped-en-costa-rica-35289637/  |  consulta: "puppy portrait"
+mos1-01.jpg  <-  pozo-p-pan-canasto\007.jpg  |  pexels (Pexels License)  |  autor: Eduardo López  |  https://www.pexels.com/es-es/foto/mascotas-cabeza-gatos-juntos-16618547/  |  consulta: "cat carrier"
+mos2-01.jpg  <-  pozo-p-pan-pelota\012.jpg  |  pexels (Pexels License)  |  autor: Elina Volkova  |  https://www.pexels.com/es-es/foto/perro-mascota-jugando-hierba-23383652/  |  consulta: "dog red ball"
+mos3-01.jpg  <-  pozo-p-pan-gatito\009.jpg  |  pexels (Pexels License)  |  autor: Gizem Gökce  |  https://www.pexels.com/es-es/foto/adorable-gatito-blanco-con-ojos-azules-mirando-arriba-37963517/  |  consulta: "kitten portrait"
+mos4-01.jpg  <-  pozo-p-pan-espera\012.jpg  |  pexels (Pexels License)  |  autor: Cup of  Couple  |  https://www.pexels.com/es-es/foto/animal-perro-mascota-mono-8473437/  |  consulta: "dog waiting room"
+mos5-01.jpg  <-  pozo-p-pan-pata\001.jpg  |  pexels (Pexels License)  |  autor: Heber Vazquez  |  https://www.pexels.com/es-es/foto/mujer-mano-animal-perro-18781242/  |  consulta: "dog paw hand"
+mos6-01.jpg  <-  pozo-p-pan-cachorro\001.jpg  |  pexels (Pexels License)  |  autor: Bianca Beltrán  |  https://www.pexels.com/es-es/foto/cachorro-border-collie-15794920/  |  consulta: "puppy portrait"
+
+BRUMA (bruma-pag-0N.png y bruma-osc-0N.png, 30x20): las MISMAS fotos, recortadas a 3:2, reducidas y
+recoloreadas con C:\devs\demos\hacer-bruma.ps1 (clara >= 0,68 de luminancia / oscura <= 0,05). No suman fuentes.
+    pagina: port-01.jpg, banda-01.jpg, hund1-01.jpg, cita-01.jpg, mos3-01.jpg, hund4-01.jpg   |   oscuras: port-01.jpg, hund2-01.jpg, cita-01.jpg
+
+MAPA: iframe de Google Maps (embed publico, sin clave). No hay imagen de mapa.

@@ -715,3 +715,66 @@ a { color: inherit; }
 @media (prefers-reduced-motion: reduce) {
   .js .mos__p { opacity: 1; transform: none; }
 }
+
+/* ── WHATSAPP FLOTANTE ──────────────────────────────────────────────
+   56 px de alto, por encima del minimo tactil de 44. Verde de WhatsApp
+   a proposito: se reconoce sin leerlo, y eso es lo que hace que se toque.
+   Se ve SIEMPRE por defecto; el JS solo lo aparta sobre la portada. Al
+   reves, un fallo del script se llevaria el CTA principal. */
+.wapp {
+  position: fixed;
+  right: max(1rem, env(safe-area-inset-right, 0px));
+  bottom: max(1rem, env(safe-area-inset-bottom, 0px));
+  z-index: 60;
+  display: inline-flex; align-items: center; gap: .55rem;
+  height: 56px; padding: 0 1.15rem 0 1rem;
+  border-radius: 999px;
+  background: #25D366; color: #07310F;
+  text-decoration: none;
+  font-family: var(--cuerpo, system-ui, sans-serif);
+  font-size: .95rem; font-weight: 700; line-height: 1;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, .26), 0 2px 6px rgba(0, 0, 0, .16);
+  transition: opacity .28s ease, transform .28s ease, box-shadow .18s ease;
+}
+.wapp__i { width: 26px; height: 26px; fill: currentColor; flex: none; }
+.wapp:hover, .wapp:focus-visible { transform: translateY(-2px); box-shadow: 0 10px 26px rgba(0, 0, 0, .3); }
+.js .wapp--arriba { opacity: 0; transform: translateY(14px) scale(.94); pointer-events: none; }
+
+@media (max-width: 520px) {
+  .wapp { width: 56px; padding: 0; justify-content: center; }
+  .wapp__t { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .wapp { transition: opacity .28s ease; }
+  .wapp:hover, .wapp:focus-visible { transform: none; }
+  .js .wapp--arriba { transform: none; }
+}
+/* ── DÓNDE QUEDA + MAPA ─────────────────────────────────────────────
+   El salón tiene 109 reseñas con 5,0 y no publica dirección: quien quiere
+   ir tiene que escribir para preguntar por dónde queda. Esta sección lo
+   dice y el mapa muestra la comuna, no una puerta que no sabemos.
+   Imagen propia con mosaicos de OpenStreetMap: la CSP prohíbe pedir nada
+   a un tercero y un iframe de Google Maps quedaría en blanco sin dar un
+   solo error. La atribución a OSM la exige su licencia (ODbL). */
+.donde { background: var(--lino-b); padding: clamp(3rem, 7vw, 5.5rem) 0; }
+.donde__cols { display: grid; gap: 2rem; grid-template-columns: minmax(0, 1fr); align-items: start; }
+@media (min-width: 860px) { .donde__cols { grid-template-columns: 1.05fr .95fr; gap: 3rem; } }
+.donde h2 { color: var(--sepia); margin: 0 0 1rem; }
+.donde__p { color: var(--sepia-s); max-width: 54ch; margin: 0 0 1rem; }
+.donde__p--fuerte { color: var(--sepia); }
+.donde__faltan { list-style: none; margin: 1.4rem 0 0; padding: 0; display: flex; flex-wrap: wrap; gap: .6rem; }
+.donde__faltan li {
+  border: 1px dashed var(--terracota); border-radius: 999px;
+  padding: .45rem 1rem; color: var(--terracota); font-size: var(--p--1);
+}
+
+.mapa { margin: 0; border: 1px solid var(--lino-h); border-radius: 12px; overflow: hidden; background: var(--lino); }
+.mapa img { display: block; width: 100%; height: auto; aspect-ratio: 4 / 3; object-fit: cover; }
+.mapa__pie {
+  display: flex; flex-direction: column; gap: .3rem;
+  padding: .75rem .9rem; font-size: var(--p--1); line-height: 1.45;
+  color: var(--sepia-s); border-top: 1px solid var(--lino-h);
+}
+.mapa__pie b { color: var(--sepia); }
+.mapa__cred { font-size: .84em; opacity: .85; }
+.mapa__cred a { color: var(--terracota); }

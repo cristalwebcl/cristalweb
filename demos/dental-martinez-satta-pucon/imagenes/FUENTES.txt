@@ -1,0 +1,20 @@
+FUENTES DE LAS IMAGENES - Cl&iacute;nica Dental Mart&iacute;nez Satta Rehecha el 13-09-2026 (presentacion antes que texto). Fotos de REFERENCIA de bancos libres: ninguna es del local; las verdaderas las tiene que mandar el negocio. 
+port-01.jpg  <-  pozo-p-den-orquidea\009.jpg  |  pexels (Pexels License)  |  autor: Dehbia kouadria  |  https://www.pexels.com/es-es/foto/amarillo-petalos-blanco-flor-7580029/  |  consulta: "white orchid"
+banda-01.jpg  <-  pozo-p-den-volcan\008.jpg  |  pexels (Pexels License)  |  autor: Mau Torres V  |  https://www.pexels.com/es-es/foto/paisaje-bosque-montana-estados-unidos-17251380/  |  consulta: "villarrica volcano"
+cita-01.jpg  <-  pozo-p-den-cepillo\011.jpg  |  pexels (Pexels License)  |  autor: Raj Gautam  |  https://www.pexels.com/es-es/foto/primer-plano-de-un-cepillo-de-dientes-de-bambu-en-un-entorno-oscuro-35333420/  |  consulta: "toothbrush"
+hund1-01.jpg  <-  pozo-p-den-cepillo\012.jpg  |  pexels (Pexels License)  |  autor: Tara Winstead  |  https://www.pexels.com/es-es/foto/naturaleza-muerta-vista-superior-espacio-para-texto-copy-space-6690854/  |  consulta: "toothbrush"
+hund2-01.jpg  <-  pozo-p-den-hilo\004.jpg  |  pexels (Pexels License)  |  autor: cottonbro studio  |  https://www.pexels.com/es-es/foto/dientes-dentadura-postiza-estomatologia-tiro-vertical-6502307/  |  consulta: "dental floss"
+hund3-01.jpg  <-  pozo-p-den-sillon\002.jpg  |  pexels (Pexels License)  |  autor: Pavel Danilyuk  |  https://www.pexels.com/es-es/foto/oficina-medicina-dentista-cuidado-de-la-salud-6812479/  |  consulta: "dental chair"
+hund4-01.jpg  <-  pozo-p-den-agua\007.jpg  |  pexels (Pexels License)  |  autor: Patrik Felker  |  https://www.pexels.com/es-es/foto/agua-beber-bebida-vaso-6487297/  |  consulta: "glass of water"
+mos1-01.jpg  <-  pozo-p-den-volcan\012.jpg  |  pexels (Pexels License)  |  autor: Matías Macaya  |  https://www.pexels.com/es-es/foto/paisaje-naturaleza-lago-viaje-18161221/  |  consulta: "villarrica volcano"
+mos2-01.jpg  <-  pozo-p-den-cepillo\001.jpg  |  pexels (Pexels License)  |  autor: Cristina De Luis  |  https://www.pexels.com/es-es/foto/de-madera-bote-de-cristal-cepillos-de-dientes-productos-de-higiene-5588670/  |  consulta: "toothbrush"
+mos3-01.jpg  <-  pozo-p-den-orquidea\012.jpg  |  pexels (Pexels License)  |  autor: Petr Ganaj  |  https://www.pexels.com/es-es/foto/planta-fresco-crecimiento-floreciente-4136888/  |  consulta: "white orchid"
+mos4-01.jpg  <-  pozo-p-den-sillon\008.jpg  |  pexels (Pexels License)  |  autor: Cedric Fauntleroy  |  https://www.pexels.com/es-es/foto/clinica-adentro-naturaleza-muerta-de-espaldas-4269268/  |  consulta: "dental chair"
+mos5-01.jpg  <-  pozo-p-den-agua\008.jpg  |  pexels (Pexels License)  |  autor: ROMAN ODINTSOV  |  https://www.pexels.com/es-es/foto/agua-beber-bebida-vaso-5337012/  |  consulta: "glass of water"
+mos6-01.jpg  <-  pozo-p-den-hilo\007.jpg  |  pexels (Pexels License)  |  autor: Polina Zimmerman  |  https://www.pexels.com/es-es/foto/herramientas-gafas-protectoras-cuidado-de-la-salud-sanidad-4687248/  |  consulta: "dental floss"
+
+BRUMA (bruma-pag-0N.png y bruma-osc-0N.png, 30x20): las MISMAS fotos, recortadas a 3:2, reducidas y
+recoloreadas con C:\devs\demos\hacer-bruma.ps1 (clara >= 0,68 de luminancia / oscura <= 0,05). No suman fuentes.
+    pagina: port-01.jpg, banda-01.jpg, hund1-01.jpg, hund2-01.jpg, hund4-01.jpg, mos1-01.jpg, mos3-01.jpg, mos6-01.jpg   |   oscuras: port-01.jpg, banda-01.jpg, cita-01.jpg
+
+MAPA: iframe de Google Maps (embed publico, sin clave). No hay imagen de mapa.

@@ -1,0 +1,22 @@
+FUENTES DE LAS IMAGENES - PeluquerÃ­a Carolina Flores Rehecha el 13-09-2026 (presentacion antes que texto). Fotos de REFERENCIA de bancos libres: ninguna es del local; las verdaderas las tiene que mandar el negocio. 
+port-01.jpg  <-  pozo-p-cf-espera\001.jpg  |  pexels (Pexels License)  |  autor: Matheus Bertelli  |  https://www.pexels.com/es-es/foto/luces-mesa-sofa-salon-16985123/  |  consulta: "salon waiting area"
+hund1-01.jpg  <-  pozo-p-cf-tijeras\002.jpg  |  pexels (Pexels License)  |  autor: Nataliya Vaitkevich  |  https://www.pexels.com/es-es/foto/pincel-cepillo-cepillar-salon-de-belleza-8468180/  |  consulta: "hairdresser scissors comb"
+hund2-01.jpg  <-  pozo-p-cf-tijeras\005.jpg  |  pexels (Pexels License)  |  autor: Nataliya Vaitkevich  |  https://www.pexels.com/es-es/foto/profesional-herramientas-conjunto-tijeras-8468178/  |  consulta: "hairdresser scissors comb"
+hund3-01.jpg  <-  pozo-p-cf-secador\006.jpg  |  pexels (Pexels License)  |  autor: cottonbro studio  |  https://www.pexels.com/es-es/foto/manos-gente-mujer-tecnologia-3993471/  |  consulta: "hair dryer salon"
+hund4-01.jpg  <-  pozo-p-cf-repisa\002.jpg  |  pexels (Pexels License)  |  autor: RDNE Stock project  |  https://www.pexels.com/es-es/foto/belleza-plastico-enfoque-selectivo-plastica-7755143/  |  consulta: "hair brush products shelf"
+hund5-01.jpg  <-  pozo-p-cf-repisa\005.jpg  |  pexels (Pexels License)  |  autor: Kampus Production  |  https://www.pexels.com/es-es/foto/cepillos-para-el-cabello-de-cerca-6948111/  |  consulta: "hair brush products shelf"
+hund6-01.jpg  <-  pozo-p-cf-espera\012.jpg  |  pexels (Pexels License)  |  autor: Valeria Boltneva  |  https://www.pexels.com/es-es/foto/mesa-lampara-ventana-apartamento-27969778/  |  consulta: "salon waiting area"
+banda-01.jpg  <-  pozo-p-cf-cerezo\009.jpg  |  pexels (Pexels License)  |  autor: Dinara Guseinova  |  https://www.pexels.com/es-es/foto/delicadas-flores-de-cerezo-rosadas-en-primavera-31731991/  |  consulta: "pink flowers cherry blossom"
+cita-01.jpg  <-  pozo-p-cf-cafe\004.jpg  |  pexels (Pexels License)  |  autor: Vinicius Quaresma  |  https://www.pexels.com/es-es/foto/taza-copa-mesa-de-madera-19891677/  |  consulta: "coffee cup saucer"
+mos1-01.jpg  <-  pozo-p-cf-espera\002.jpg  |  pexels (Pexels License)  |  autor: Anna Astakhova  |  https://www.pexels.com/es-es/foto/interior-moderno-con-sillas-de-cuero-y-plantas-de-interior-36828041/  |  consulta: "salon waiting area"
+mos2-01.jpg  <-  pozo-p-cf-cafe\001.jpg  |  pexels (Pexels License)  |  autor: Rodrigo Ortega  |  https://www.pexels.com/es-es/foto/cafe-con-leche-artistico-con-diseno-de-corazon-29464687/  |  consulta: "coffee cup saucer"
+mos3-01.jpg  <-  pozo-p-cf-cerezo\003.jpg  |  pexels (Pexels License)  |  autor: Giovanni Warren  |  https://www.pexels.com/es-es/foto/flores-de-cereza-rosas-en-primavera-seattle-31402891/  |  consulta: "pink flowers cherry blossom"
+mos4-01.jpg  <-  pozo-p-cf-cafe\008.jpg  |  pexels (Pexels License)  |  autor: Isabella Mendes  |  https://www.pexels.com/es-es/foto/plato-cafe-taza-copa-21855778/  |  consulta: "coffee cup saucer"
+mos5-01.jpg  <-  pozo-p-cf-espera\008.jpg  |  pexels (Pexels License)  |  autor: Mars Petro  |  https://www.pexels.com/es-es/foto/planta-diseno-salon-sofa-9786879/  |  consulta: "salon waiting area"
+mos6-01.jpg  <-  pozo-p-cf-cerezo\012.jpg  |  pexels (Pexels License)  |  autor: Kento Ikeda  |  https://www.pexels.com/es-es/foto/ramas-primavera-flores-floraciones-19822224/  |  consulta: "pink flowers cherry blossom"
+
+BRUMA (bruma-pag-0N.png y bruma-osc-0N.png, 30x20): las MISMAS fotos, recortadas a 3:2, reducidas y
+recoloreadas con C:\devs\demos\hacer-bruma.ps1 (clara >= 0,68 de luminancia / oscura <= 0,05). No suman fuentes.
+    pagina: port-01.jpg, banda-01.jpg, cita-01.jpg, mos6-01.jpg, hund2-01.jpg   |   oscuras: port-01.jpg, banda-01.jpg, cita-01.jpg
+
+MAPA: iframe de Google Maps (embed publico, sin clave). No hay imagen de mapa.

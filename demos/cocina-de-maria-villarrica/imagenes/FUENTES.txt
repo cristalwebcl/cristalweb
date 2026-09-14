@@ -1,9 +1,10 @@
-PROCEDENCIA DE LAS IMÁGENES — Cocina de María, Villarrica
+PROCEDENCIA DE LAS IMÁGENES Y DE LOS VIDEOS — Cocina de María, Villarrica
+Revisado el 09-09-2026. Una línea por archivo servido, sin excepciones.
 ════════════════════════════════════════════════════════════════
 
 DEL NEGOCIO — siete fotos, de su ficha de Google. Seis son comida.
 
-media-01.jpg  1500x845   la terraza larga, con las mesas de madera
+mit-01.jpg    1500x845   la terraza larga, con las mesas de madera
 gal-01.jpg    1300x1300  el salón, con los manteles rojos
 gal-02.jpg    1300x1300  dos almuerzos completos
 gal-03.jpg    1201x1600  pescado con arroz, la mesa puesta
@@ -22,12 +23,30 @@ con ésta y sus fotos son mucho más vistosas: conviene saberlo antes de
 que aparezcan en una búsqueda del propio dueño.
 
 ────────────────────────────────────────────────────────────────
-GENÉRICAS — tres, de banco libre, sólo de fondo. **Ninguna es un plato.**
+DERIVADAS — recortes de las siete de arriba. No son fotos nuevas: son
+el mismo material a otro tamaño, y por eso no hay nada que declarar
+aparte de lo ya declarado. Van en el mosaico, que es el único sitio de
+la página donde una imagen puede repetirse con otro recorte.
+
+mos-01.jpg     780x439   recorte de mit-01  (la terraza)
+mos-02.jpg     780x780   recorte de gal-01  (el salón)
+mos-03.jpg     780x780   recorte de gal-02  (los dos almuerzos)
+mos-04.jpg     780x1039  recorte de tira-03 (guiso con puré)
+mos-05.jpg     780x585   recorte de tira-02 (carne con puré)
+mos-06.jpg     780x585   recorte de gal-03  (pescado con arroz)
+
+────────────────────────────────────────────────────────────────
+GENÉRICAS — de banco libre, sólo de fondo. **Ninguna es un plato.**
 
 port-01.jpg  2560x1920  una olla grande revolviéndose, con zapallo
   pxhere · dominio público (CC0), consulta
   «vegetables soup pot ingredients wooden table»
   Es cocina, no comida servida: muestra el oficio sin prometer un plato.
+
+telon-01.jpg 1200x900   la misma olla de port-01, reducida
+  Es una copia a 1200 px de port-01.jpg para el telón de «La casera»,
+  donde va nítida al 15 % de opacidad. Misma procedencia y misma
+  licencia que port-01: pxhere, dominio público (CC0).
 
 aura-01.jpg   900x602   frutas y verduras sobre una mesa rústica
   pxhere · dominio público (CC0) — va a 64 px de desenfoque
@@ -37,6 +56,31 @@ cita-01.jpg  2200x1423  una pizarra de menú, en blanco
   «chalkboard menu blackboard chalk texture»
   Va justo con el argumento: la página entera es una pizarra que se
   cambia todas las mañanas.
+
+tajo-01.jpg  2200x733   verduras crudas sobre la tabla: cebolla morada
+  partida, perejil, repollo y puerro
+  Banco libre de dominio público. **falta: la URL exacta y la consulta
+  no quedaron anotadas el día que se descargó** (venía como banda-01.jpg
+  y se renombró a tajo-01 al pasar la demo al estándar premium).
+  ANTES DE PUBLICAR hay que reponer esa línea o cambiar la foto por otra
+  con procedencia escrita: es la única de la página sin su origen.
+
+────────────────────────────────────────────────────────────────
+LOS DOS VIDEOS DE FONDO — 720p H.264, sin pista de audio (comprobado:
+no hay átomo mp4a ni soun en ninguno de los dos archivos).
+
+video/port.mp4  1280x720  9 s   1,62 MB  · fondo de la portada
+  Pexels · licencia Pexels (uso libre, sin atribución obligatoria)
+  https://videos.pexels.com/video-files/35510474/15044060_3840_2160_24fps.mp4
+  Recorte: desde el segundo 1, reencodado a 720p y ~1,45 Mbps.
+
+video/cita.mp4  1280x720  7 s   0,97 MB  · fondo de la banda de cita
+  Pexels · licencia Pexels (uso libre, sin atribución obligatoria)
+  https://videos.pexels.com/video-files/7983636/7983636-uhd_3840_2160_30fps.mp4
+  Recorte: desde el segundo 0, reencodado a 720p y ~1,15 Mbps.
+
+Los dos son ambiente de cocina, no inventario del local: no se ve la
+fachada, ni el salón, ni un plato servido de esta casa.
 
 ────────────────────────────────────────────────────────────────
 LO QUE FALTA — una sola cosa, y es la que la página no puede inventar
@@ -49,3 +93,10 @@ Hasta que alguien lo llene, la sección está puesta con un ejemplo.
 Después, en orden: la fachada desde la calle, y María — si quiere salir.
 Una cocinería con nombre de persona vende mejor con la persona a la
 vista, pero eso lo decide ella.
+
+MAPA DE UBICACION — mapa-01.jpg
+  768 x 768 · zoom 14 · centro -39.2780911, -72.2274364
+  Mosaicos de OpenStreetMap pegados en una sola imagen, con el marcador
+  dibujado encima. Datos (c) OpenStreetMap contributors, licencia ODbL:
+  la atribucion tiene que ir VISIBLE junto al mapa, en el pie de la figura.
+  https://www.openstreetmap.org/copyright

@@ -1,0 +1,22 @@
+FUENTES DE LAS IMAGENES - Constructora Hector Villa Rehecha el 13-09-2026 (presentacion antes que texto). Fotos de REFERENCIA de bancos libres: ninguna es del local; las verdaderas las tiene que mandar el negocio. 
+port-01.jpg  <-  pozo-p-hv-casa\010.jpg  |  pexels (Pexels License)  |  autor: Qing Luo  |  https://www.pexels.com/es-es/foto/casa-de-madera-moderna-junto-a-un-lago-sereno-28388991/  |  consulta: "modern wooden house"
+hund1-01.jpg  <-  pozo-p-hv-casa\012.jpg  |  pexels (Pexels License)  |  autor: new perspectives  |  https://www.pexels.com/es-es/foto/cabana-rustica-de-madera-con-cesped-verde-37347436/  |  consulta: "modern wooden house"
+hund2-01.jpg  <-  pozo-p-hv-casa\009.jpg  |  pexels (Pexels License)  |  autor: Ivanna Lebediuk  |  https://www.pexels.com/es-es/foto/elegante-casa-de-madera-moderna-en-un-entorno-forestal-31900412/  |  consulta: "modern wooden house"
+hund3-01.jpg  <-  pozo-p-hv-obra\002.jpg  |  pexels (Pexels License)  |  autor: Ron Lach  |  https://www.pexels.com/es-es/foto/construccion-herramientas-carpinteria-equipo-8821543/  |  consulta: "wooden house construction"
+hund4-01.jpg  <-  pozo-p-hv-interior\003.jpg  |  pexels (Pexels License)  |  autor: David Correa Franco  |  https://www.pexels.com/es-es/foto/puerta-de-paneles-de-madera-vintage-con-textura-rica-31513934/  |  consulta: "wood paneling interior"
+hund5-01.jpg  <-  pozo-p-hv-ceramica\004.jpg  |  pexels (Pexels License)  |  autor: Vladimir Srajber  |  https://www.pexels.com/es-es/foto/construccion-azulejos-baldosas-guantes-11806490/  |  consulta: "ceramic tile installation"
+hund6-01.jpg  <-  pozo-p-hv-pintura\004.jpg  |  pexels (Pexels License)  |  autor: Stephanie  Ho  |  https://www.pexels.com/es-es/foto/persona-sosteniendo-el-rodillo-de-pintura-mientras-pinta-la-pared-994164/  |  consulta: "paint roller wall"
+banda-01.jpg  <-  pozo-p-hv-interior\010.jpg  |  pexels (Pexels License)  |  autor: Shane Aldendorff  |  https://www.pexels.com/es-es/foto/tablero-de-madera-marron-671930/  |  consulta: "wood paneling interior"
+cita-01.jpg  <-  pozo-p-hv-casa\011.jpg  |  pexels (Pexels License)  |  autor: Erik Mclean  |  https://www.pexels.com/es-es/foto/edificio-casa-arquitectura-de-madera-9459178/  |  consulta: "modern wooden house"
+mos1-01.jpg  <-  pozo-p-hv-estructura\011.jpg  |  pexels (Pexels License)  |  autor: Ron Lach  |  https://www.pexels.com/es-es/foto/casas-construccion-modelo-estampado-8817839/  |  consulta: "timber frame house"
+mos2-01.jpg  <-  pozo-p-hv-pintura\001.jpg  |  pexels (Pexels License)  |  autor: 𝗛&𝗖𝗢 　  |  https://www.pexels.com/es-es/foto/pared-gris-2648230/  |  consulta: "paint roller wall"
+mos3-01.jpg  <-  pozo-p-hv-escuadra\012.jpg  |  pexels (Pexels License)  |  autor: https://kaboompics.com/  |  https://www.pexels.com/es-es/foto/madera-lapiz-de-madera-linea-7285925/  |  consulta: "carpenter square pencil"
+mos4-01.jpg  <-  pozo-p-hv-interior\012.jpg  |  pexels (Pexels License)  |  autor: Maria Orlova  |  https://www.pexels.com/es-es/foto/soleado-sol-pared-muro-4946700/  |  consulta: "wood paneling interior"
+mos5-01.jpg  <-  pozo-p-hv-ceramica\012.jpg  |  pexels (Pexels License)  |  autor: cottonbro studio  |  https://www.pexels.com/es-es/foto/bano-banera-ceramico-baldosas-4154991/  |  consulta: "ceramic tile installation"
+mos6-01.jpg  <-  pozo-p-hv-estructura\007.jpg  |  pexels (Pexels License)  |  autor: Ron Lach  |  https://www.pexels.com/es-es/foto/madera-edificio-construccion-casa-8817834/  |  consulta: "timber frame house"
+
+BRUMA (bruma-pag-0N.png y bruma-osc-0N.png, 30x20): las MISMAS fotos, recortadas a 3:2, reducidas y
+recoloreadas con C:\devs\demos\hacer-bruma.ps1 (clara >= 0,68 de luminancia / oscura <= 0,05). No suman fuentes.
+    pagina: port-01.jpg, banda-01.jpg, cita-01.jpg, hund4-01.jpg, mos1-01.jpg, mos2-01.jpg, hund3-01.jpg, mos6-01.jpg   |   oscuras: cita-01.jpg, banda-01.jpg, hund4-01.jpg
+
+MAPA: iframe de Google Maps (embed publico, sin clave). No hay imagen de mapa.

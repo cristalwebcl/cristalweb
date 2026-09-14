@@ -1,0 +1,393 @@
+/* ══════════════════════════════════════════════════════════════════
+   FERRETERÍA HARCHA — Lago Ranco y Futrono
+   Demo 120 · tanda P3
+
+   IDENTIDAD — «AZUL PIZARRA Y SEÑALÉTICA»
+   Una ferretería no vende bonito: vende que uno sepa dónde está la
+   cosa. El lenguaje es el de la señalética vial —azul pizarra de
+   fondo, naranjo de señal de obra— porque la página resuelve un
+   problema de RUTA: a cuál de los dos locales ir.
+
+   DESLINDE DE PALETA (contra identidades.md):
+   · Los naranjos del registro son todos QUEMADOS y sobre fondo claro:
+     cable #A6480C (79), teja (55), minio (56), rescoldo (39), brasa
+     (92), hora dorada #9E4413 (97). Éste es un naranjo SATURADO de
+     señal vial (#F26A2C) y su hábitat natural es la pizarra oscura.
+     Sobre papel se usa su variante honda #A33608, nunca el saturado.
+   · El azul pizarra se deslinda del azul lago de la 117: allá el azul
+     era el ACENTO que distinguía una sucursal de otra; acá es la BASE
+     de la página entera y el acento es el naranjo.
+
+   TRÍO TIPOGRÁFICO
+   · Display: Days One — nueva en el registro. Grotesca ancha, casi de
+     placa de ruta; sus cifras son bloques. La voz de una señal.
+   · Cuerpo: Instrument Sans — neutra, 3 usos previos (el cuerpo se
+     puede repetir sin que se note; la display no).
+   · Dato: Kode Mono — la menos usada del catálogo de monos. Con
+     cifras tabulares para que las dos columnas de locales alineen.
+
+   CABECERA 86ª DEL OFICIO: el mapa del lago — silueta cerrada con dos
+   puntos naranjos sobre la orilla. Deslinde con la 117: allá dos pines
+   unidos por un arco, sin geografía; acá el lago está DIBUJADO.
+
+   FONDO NUEVO: la superficie del lago — franja baja del viewport con
+   un shimmer horizontal amplio y lentísimo. Deslinde: la corriente de
+   la 117 AVANZA (es río); ésta ONDULA en el sitio (es lago). El
+   espejo de la 90 eran destellos puntuales; ésta es franja continua.
+
+   ESTRUCTURA: M (comparador paralelo). Deslinde con la 92 y la 110,
+   que también son M: allá se comparan dos OPCIONES y una gana; acá
+   son DOS CASAS DEL MISMO DUEÑO y el tono es «las dos son suyas» —
+   por eso las columnas son simétricas y ninguna se destaca.
+   ══════════════════════════════════════════════════════════════════ */
+
+:root {
+  --pizarra:       #10222E;  /* base de página                       */
+  --pizarra-honda: #081520;  /* portada y secciones hondas           */
+  --papel:         #F2EFE9;
+  --papel-suave:   #A9BAC4;  /* 8,1:1 sobre pizarra                  */
+  --tinta:         #10222E;  /* 14,2:1 sobre papel                   */
+  --tinta-suave:   #4A5A63;  /* 6,2:1 sobre papel                    */
+  --senal:         #F26A2C;  /* 5,3:1 sobre pizarra — SOLO en oscuro */
+  --senal-honda:   #A33608;  /* 5,9:1 sobre papel  — SOLO en claro   */
+  --linea:         #24404F;
+
+  --display: 'Days One', system-ui, sans-serif;
+  --cuerpo:  'Instrument Sans', system-ui, sans-serif;
+  --mono:    'Kode Mono', ui-monospace, monospace;
+
+  --ancho: 1180px;
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+[hidden] { display: none !important; }
+
+html { scroll-behavior: smooth; }
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+
+body {
+  margin: 0;
+  background: var(--pizarra);
+  color: var(--papel);
+  font-family: var(--cuerpo);
+  font-size: clamp(1rem, .95rem + .3vw, 1.12rem);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3 { font-family: var(--display); font-weight: 400; line-height: .98; margin: 0; }
+p { margin: 0 0 1.1em; }
+a { color: inherit; }
+
+/* ── La banda de propuesta ─────────────────────────────────────── */
+.propuesta {
+  background: var(--senal);
+  color: #1A0A02;
+  padding: 1.1rem clamp(1.1rem, 5vw, 3rem);
+}
+.propuesta__que { font-size: .84rem; margin: 0 0 .25rem; letter-spacing: .02em; }
+.propuesta .propuesta__gancho { font-size: .84rem; margin: 0; max-width: 62ch; color: #3A1A08; }
+
+/* ── Cabecera fantasma ─────────────────────────────────────────── */
+.cab {
+  position: sticky; top: 0; z-index: 40;
+  display: flex; align-items: center; gap: clamp(1rem, 4vw, 2.5rem);
+  padding: .8rem clamp(1.1rem, 5vw, 3rem);
+  background: var(--pizarra-honda);
+  border-bottom: 1px solid var(--linea);
+  transition: background .35s ease, border-color .35s ease, transform .35s ease;
+}
+/* El JS la vuelve transparente arriba del todo: por defecto es sólida,
+   así que si el script no corre la cabecera sigue siendo legible. */
+.cab.cab--ghost { background: transparent; border-color: transparent; }
+.cab.cab--oculta  { transform: translateY(-110%); }
+
+.cab__marca { display: flex; align-items: center; gap: .6rem; text-decoration: none; }
+.cab__nombre { font-family: var(--display); font-size: 1.05rem; letter-spacing: .01em; }
+
+/* EL MAPA DEL LAGO — cabecera 86ª. La silueta se dibuja con un
+   border-radius muy asimétrico (un lago no es un círculo) y los dos
+   puntos van clavados sobre la orilla, no adentro. */
+.mapa {
+  position: relative;
+  width: 30px; height: 22px;
+  border: 2px solid var(--senal);
+  border-radius: 60% 40% 45% 55% / 55% 60% 40% 45%;
+  flex: none;
+}
+.mapa::before, .mapa::after {
+  content: ''; position: absolute;
+  width: 6px; height: 6px; border-radius: 50%;
+  background: var(--senal);
+}
+.mapa::before { top: -3px;    left: 4px;  }   /* Futrono, orilla norte */
+.mapa::after  { bottom: -3px; right: 6px; }   /* Lago Ranco, orilla sur */
+
+.cab__nav { display: none; gap: 1.6rem; margin-left: auto; font-size: .9rem; }
+.cab__nav a { text-decoration: none; color: var(--papel-suave); }
+.cab__nav a:hover, .cab__nav a:focus-visible { color: var(--senal); }
+@media (min-width: 860px) { .cab__nav { display: flex; } }
+
+.cab__wsp {
+  margin-left: auto; text-align: right; text-decoration: none;
+  line-height: 1.15;
+}
+@media (min-width: 860px) { .cab__wsp { margin-left: 0; } }
+.cab__wsp-rot {
+  display: block; font-family: var(--mono);
+  font-size: .66rem; letter-spacing: .16em; text-transform: uppercase;
+  color: var(--senal);
+}
+.cab__wsp-num { display: block; font-family: var(--display); font-size: .98rem; }
+
+/* ══════════════ PORTADA ══════════════ */
+.portada {
+  position: relative; overflow: hidden;
+  min-height: 88svh;
+  display: flex; align-items: flex-end;
+  padding: clamp(3rem, 9vw, 6rem) clamp(1.1rem, 5vw, 3rem) clamp(3rem, 8vw, 5rem);
+  background: var(--pizarra-honda);
+}
+
+/* FONDO — LA SUPERFICIE DEL LAGO.
+   Una franja baja con bandas horizontales que se estiran y encogen en
+   el sitio: no viaja de un lado a otro (eso sería río), ondula. */
+.agua { position: absolute; inset: auto 0 0 0; height: 46%; pointer-events: none; }
+.agua span {
+  position: absolute; inset: 0;
+  background:
+    repeating-linear-gradient(
+      to bottom,
+      rgba(169,186,196,.00) 0px,
+      rgba(169,186,196,.09) 2px,
+      rgba(169,186,196,.00) 5px,
+      rgba(169,186,196,.00) 13px
+    );
+  -webkit-mask-image: linear-gradient(to top, #000 0%, rgba(0,0,0,.35) 55%, transparent 100%);
+          mask-image: linear-gradient(to top, #000 0%, rgba(0,0,0,.35) 55%, transparent 100%);
+  animation: ondula 19s ease-in-out infinite;
+}
+@keyframes ondula {
+  0%, 100% { transform: scaleX(1)    translateY(0); }
+  50%      { transform: scaleX(1.06) translateY(3px); }
+}
+@media (prefers-reduced-motion: reduce) { .agua span { animation: none; } }
+
+.portada__texto { position: relative; max-width: 22ch; }
+.sitio {
+  font-family: var(--mono); font-size: .74rem;
+  letter-spacing: .2em; text-transform: uppercase;
+  color: var(--senal); margin-bottom: 1.2rem;
+}
+.portada h1 {
+  font-size: clamp(2.9rem, 9.5vw, 6.6rem);
+  letter-spacing: -.015em;
+  margin-bottom: 1.4rem;
+}
+.portada .bajada { max-width: 42ch; color: var(--papel-suave); font-size: 1.05rem; }
+
+.specs { display: flex; flex-wrap: wrap; gap: 2.4rem; margin: 2.2rem 0 0; }
+.spec dt {
+  font-family: var(--mono); font-size: .66rem;
+  letter-spacing: .14em; text-transform: uppercase;
+  color: var(--papel-suave); margin-bottom: .2rem;
+}
+.spec dd {
+  margin: 0; font-family: var(--display);
+  font-size: clamp(2.2rem, 6vw, 3.4rem); line-height: 1;
+  color: var(--senal); font-variant-numeric: tabular-nums;
+}
+
+/* ══════════════ LOS DOS LOCALES — comparador M ══════════════ */
+.locales {
+  background: var(--papel); color: var(--tinta);
+  padding: clamp(3.5rem, 10vw, 7rem) clamp(1.1rem, 5vw, 3rem);
+}
+.locales__intro { max-width: var(--ancho); margin: 0 auto 3rem; }
+.locales .antetitulo, .vuelta .antetitulo {
+  font-family: var(--mono); font-size: .7rem;
+  letter-spacing: .2em; text-transform: uppercase;
+  color: var(--senal-honda); margin-bottom: .9rem;
+}
+.vuelta .antetitulo--claro { color: var(--senal); }
+.locales h2 {
+  font-size: clamp(2.3rem, 7vw, 4.6rem);
+  letter-spacing: -.015em; margin-bottom: 1.2rem;
+}
+.locales__intro p { max-width: 54ch; color: var(--tinta-suave); }
+
+/* La marca de «esto es de ejemplo» se escribe desde el atributo, para
+   que no se pueda confundir con contenido real al leer el HTML. */
+.locales__marca::before {
+  content: attr(data-ejemplo);
+  display: inline-block;
+  font-family: var(--mono); font-size: .68rem;
+  letter-spacing: .1em; text-transform: uppercase;
+  color: var(--senal-honda);
+  border-left: 2px solid var(--senal-honda);
+  padding-left: .6rem;
+}
+
+.cols {
+  max-width: var(--ancho); margin: 0 auto;
+  display: grid; gap: 1.5rem;
+}
+@media (min-width: 820px) { .cols { grid-template-columns: 1fr 1fr; gap: 2rem; } }
+
+/* Simétricas a propósito: son las dos del mismo dueño, ninguna gana. */
+.col {
+  border: 1px solid rgba(16,34,46,.18);
+  border-top: 4px solid var(--senal-honda);
+  padding: clamp(1.4rem, 3.5vw, 2.2rem);
+  background: #FFFDF9;
+}
+.col__tit { font-size: clamp(1.7rem, 4vw, 2.5rem); margin-bottom: 1.2rem; }
+.col ul { list-style: none; margin: 0 0 1.6rem; padding: 0; }
+.col ul li {
+  padding: .55rem 0; border-bottom: 1px solid rgba(16,34,46,.1);
+  font-size: .98rem;
+}
+.col__datos { margin: 0; display: grid; gap: .5rem; }
+.col__datos > div { display: flex; justify-content: space-between; gap: 1rem; align-items: baseline; }
+.col__datos dt {
+  font-family: var(--mono); font-size: .66rem;
+  letter-spacing: .14em; text-transform: uppercase;
+  color: var(--tinta-suave);
+}
+.col__datos dd { margin: 0; text-align: right; }
+
+.falta {
+  font-family: var(--mono); font-size: .72rem;
+  letter-spacing: .06em;
+  color: var(--senal-honda);
+  border-bottom: 1px dashed var(--senal-honda);
+}
+
+.despacho {
+  max-width: var(--ancho); margin: clamp(2.5rem, 6vw, 4rem) auto 0;
+  border-top: 2px solid var(--tinta);
+  padding-top: 2rem;
+}
+.despacho h3 { font-size: clamp(1.5rem, 4vw, 2.2rem); margin-bottom: 1rem; }
+.despacho p { max-width: 60ch; color: var(--tinta-suave); }
+.sectores { list-style: none; margin: 1.6rem 0 0; padding: 0; display: grid; gap: 0; }
+.sectores li {
+  display: flex; justify-content: space-between; align-items: baseline; gap: 1rem;
+  padding: .75rem 0; border-bottom: 1px solid rgba(16,34,46,.14);
+}
+.sectores li > span:first-child { font-family: var(--display); font-size: 1.05rem; }
+
+/* ══════════════ LA VUELTA AL LAGO ══════════════ */
+.vuelta {
+  background: var(--pizarra);
+  padding: clamp(3.5rem, 10vw, 7rem) clamp(1.1rem, 5vw, 3rem);
+}
+.vuelta__cuerpo { max-width: var(--ancho); margin: 0 auto; }
+.vuelta h2 { font-size: clamp(2.3rem, 7vw, 4.6rem); letter-spacing: -.015em; margin-bottom: 1.2rem; }
+.vuelta .entrada { max-width: 54ch; color: var(--papel-suave); }
+
+.mapa-fig { margin: clamp(2rem, 5vw, 3.5rem) 0 1.5rem; }
+.mapa-svg { width: 100%; height: auto; display: block; }
+.m-lago  { fill: rgba(169,186,196,.09); stroke: #A9BAC4; stroke-width: 2; }
+.m-ruta  { fill: none; stroke: #F26A2C; stroke-width: 2; stroke-dasharray: 7 6; }
+.m-punto { fill: #F26A2C; }
+.m-rot   { fill: #F2EFE9; font-family: 'Days One', sans-serif; font-size: 19px; }
+.m-sub   { fill: #A9BAC4; font-family: 'Kode Mono', monospace; font-size: 13px; }
+.m-km    { fill: #F26A2C; font-family: 'Kode Mono', monospace; font-size: 14px; }
+
+.vuelta .apunte { max-width: 52ch; color: var(--papel-suave); font-size: .95rem; }
+
+/* ══════════════ PEDIDO (T5) ══════════════ */
+.pedido {
+  background: var(--pizarra-honda);
+  padding: clamp(3.5rem, 10vw, 6rem) clamp(1.1rem, 5vw, 3rem);
+  border-top: 1px solid var(--linea);
+}
+.pedido h2 { font-size: clamp(2rem, 6vw, 3.4rem); margin-bottom: 1rem; }
+.pedido .pedido__intro { max-width: 48ch; color: var(--papel-suave); }
+.form { max-width: 640px; margin-top: 2rem; }
+.campo { margin-bottom: 1.2rem; }
+.campo label {
+  display: block; font-family: var(--mono); font-size: .68rem;
+  letter-spacing: .14em; text-transform: uppercase;
+  color: var(--papel-suave); margin-bottom: .45rem;
+}
+.campo select, .campo textarea {
+  width: 100%; padding: .8rem .9rem;
+  background: var(--papel); color: var(--tinta);
+  border: 1px solid var(--linea); border-radius: 0;
+  font-family: var(--cuerpo); font-size: 1rem;
+}
+/* Un <option> sin fondo propio hereda el del contenedor oscuro en
+   algunos navegadores y el texto queda ilegible. Se declara. */
+.campo select option { background: var(--papel); color: var(--tinta); }
+.campo textarea { resize: vertical; }
+
+.resumen {
+  font-family: var(--mono); font-size: .82rem; line-height: 1.55;
+  color: var(--papel-suave);
+  border-left: 2px solid var(--senal);
+  padding: .6rem 0 .6rem .9rem;
+  margin: 1.4rem 0;
+  white-space: pre-wrap;
+}
+.fantasma {
+  display: inline-block; text-decoration: none;
+  font-family: var(--display); font-size: 1rem;
+  padding: .85rem 1.8rem;
+  border: 1px solid var(--senal); color: var(--senal);
+  transition: background .25s ease, color .25s ease;
+}
+.fantasma:hover, .fantasma:focus-visible { background: var(--senal); color: #1A0A02; }
+.pedido .pedido__nota { font-size: .86rem; color: var(--papel-suave); margin-top: 1.2rem; max-width: 52ch; }
+
+/* ══════════════ PARA EL DUEÑO ══════════════ */
+.dueno {
+  background: var(--papel); color: var(--tinta);
+  padding: clamp(3rem, 8vw, 5rem) clamp(1.1rem, 5vw, 3rem);
+}
+.dueno h2 { font-size: clamp(1.7rem, 4.5vw, 2.4rem); margin-bottom: 2rem; max-width: var(--ancho); margin-inline: auto; }
+.dueno__cols { max-width: var(--ancho); margin: 0 auto; display: grid; gap: 1.8rem; }
+@media (min-width: 820px) { .dueno__cols { grid-template-columns: repeat(3, 1fr); gap: 2.4rem; } }
+.dueno__cols h3 {
+  font-family: var(--mono); font-size: .7rem;
+  letter-spacing: .16em; text-transform: uppercase;
+  color: var(--senal-honda); margin-bottom: .7rem;
+}
+.dueno__cols p { font-size: .95rem; color: var(--tinta-suave); margin: 0; }
+.dueno__cierre {
+  max-width: var(--ancho); margin: 2.6rem auto 0;
+  display: flex; flex-wrap: wrap; gap: 1.6rem;
+}
+.flecha {
+  font-family: var(--display); font-size: .98rem;
+  color: var(--senal-honda); text-decoration: none;
+  border-bottom: 1px solid currentColor; padding-bottom: .15rem;
+}
+.flecha:hover, .flecha:focus-visible { color: var(--tinta); }
+
+.pie {
+  background: var(--pizarra-honda);
+  padding: 2rem clamp(1.1rem, 5vw, 3rem);
+  border-top: 1px solid var(--linea);
+}
+.pie p { max-width: 60ch; margin: 0 auto; font-size: .82rem; color: var(--papel-suave); }
+
+/* ══════════════ REVEALS ══════════════
+   Sólo bajo .js, y main.js cancela el rescate. Si el script no corre,
+   la clase se cae a los 4 s y todo queda visible. */
+.js .rev { opacity: 0; transform: translateY(18px); }
+.js .rev.on { opacity: 1; transform: none; transition: opacity .7s ease, transform .7s ease; }
+@media (prefers-reduced-motion: reduce) {
+  .js .rev { opacity: 1; transform: none; }
+}
+
+.propuesta b { font-weight: 600; }
+
+/* El acento tiene dos caras y el FONDO decide cuál: la honda (#A33608)
+   es para papel y sobre pizarra da 2,7:1. Dentro de las secciones
+   oscuras, la marca «falta» usa la saturada. */
+.pedido .falta, .vuelta .falta {
+  color: var(--senal);
+  border-bottom-color: var(--senal);
+}

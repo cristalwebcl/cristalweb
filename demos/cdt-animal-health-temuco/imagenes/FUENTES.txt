@@ -1,0 +1,22 @@
+FUENTES DE LAS IMAGENES - CDT Animal Health Rehecha el 13-09-2026 (presentacion antes que texto). Fotos de REFERENCIA de bancos libres: ninguna es del local; las verdaderas las tiene que mandar el negocio. 
+port-01.jpg  <-  pozo-p-cdt-pata\002.jpg  |  pexels (Pexels License)  |  autor: Eduardo López  |  https://www.pexels.com/es-es/foto/perro-marron-con-vendaje-amarillo-16618525/  |  consulta: "dog paw bandage"
+hund1-01.jpg  <-  pozo-p-cdt-rayos\012.jpg  |  pexels (Pexels License)  |  autor: Nadezhda Moryak  |  https://www.pexels.com/es-es/foto/varano-varanus-vigilante-monitor-7800665/  |  consulta: "x-ray film light box"
+hund2-01.jpg  <-  pozo-p-cdt-micro\012.jpg  |  pexels (Pexels License)  |  autor: indra projects  |  https://www.pexels.com/es-es/foto/primer-plano-del-microscopio-en-el-laboratorio-28570736/  |  consulta: "microscope laboratory"
+hund3-01.jpg  <-  pozo-p-cdt-cirugia\006.jpg  |  pexels (Pexels License)  |  autor: Cedric Fauntleroy  |  https://www.pexels.com/es-es/foto/naturaleza-muerta-tijeras-vista-superior-acero-inoxidable-4270967/  |  consulta: "surgical instruments tray"
+hund4-01.jpg  <-  pozo-p-cdt-vacuna\003.jpg  |  pexels (Pexels License)  |  autor: Thirdman  |  https://www.pexels.com/es-es/foto/vacuna-para-el-covid-19-5922100/  |  consulta: "vaccine syringe vial"
+hund5-01.jpg  <-  pozo-p-cdt-pata\012.jpg  |  pexels (Pexels License)  |  autor: Gerardo Manzano  |  https://www.pexels.com/es-es/foto/perro-mascota-mono-perrito-16622078/  |  consulta: "dog paw bandage"
+hund6-01.jpg  <-  pozo-p-cdt-gato\006.jpg  |  pexels (Pexels License)  |  autor: Ludovic Delot  |  https://www.pexels.com/es-es/foto/gato-jengibre-relajandose-en-una-manta-blanca-31440949/  |  consulta: "cat resting blanket"
+banda-01.jpg  <-  pozo-p-cdt-pata\010.jpg  |  pexels (Pexels License)  |  autor: Mau Torres V  |  https://www.pexels.com/es-es/foto/primer-plano-de-las-patas-del-perro-7441295/  |  consulta: "dog paw bandage"
+cita-01.jpg  <-  pozo-p-cdt-sobre\005.jpg  |  pexels (Pexels License)  |  autor: PNW Production  |  https://www.pexels.com/es-es/foto/por-encima-de-la-cabeza-gastos-generales-sobre-kraft-8250871/  |  consulta: "brown envelope paper"
+mos1-01.jpg  <-  pozo-p-cdt-rayos\009.jpg  |  pexels (Pexels License)  |  autor: cottonbro studio  |  https://www.pexels.com/es-es/foto/tecnologia-ordenador-clinica-dispositivo-6501862/  |  consulta: "x-ray film light box"
+mos2-01.jpg  <-  pozo-p-cdt-micro\011.jpg  |  pexels (Pexels License)  |  autor: Jorge Chan  |  https://www.pexels.com/es-es/foto/microscopio-24293768/  |  consulta: "microscope laboratory"
+mos3-01.jpg  <-  pozo-p-cdt-cirugia\008.jpg  |  pexels (Pexels License)  |  autor: https://kaboompics.com/  |  https://www.pexels.com/es-es/foto/chrome-cromo-medico-equipo-6627671/  |  consulta: "surgical instruments tray"
+mos4-01.jpg  <-  pozo-p-cdt-gato\002.jpg  |  pexels (Pexels License)  |  autor: Ludovic Delot  |  https://www.pexels.com/es-es/foto/adorable-gato-pelirrojo-descansando-en-el-interior-31440952/  |  consulta: "cat resting blanket"
+mos5-01.jpg  <-  pozo-p-cdt-sobre\011.jpg  |  pexels (Pexels License)  |  autor: cottonbro studio  |  https://www.pexels.com/es-es/foto/un-boligrafo-en-un-sobre-6830895/  |  consulta: "brown envelope paper"
+mos6-01.jpg  <-  pozo-p-cdt-pata\009.jpg  |  pexels (Pexels License)  |  autor: Eduardo López  |  https://www.pexels.com/es-es/foto/un-perro-con-corbata-sobre-fondo-azul-16620455/  |  consulta: "dog paw bandage"
+
+BRUMA (bruma-pag-0N.png y bruma-osc-0N.png, 30x20): las MISMAS fotos, recortadas a 3:2, reducidas y
+recoloreadas con C:\devs\demos\hacer-bruma.ps1 (clara >= 0,68 de luminancia / oscura <= 0,05). No suman fuentes.
+    pagina: port-01.jpg, hund4-01.jpg, hund5-01.jpg, hund6-01.jpg, mos4-01.jpg, mos5-01.jpg, cita-01.jpg, mos6-01.jpg   |   oscuras: banda-01.jpg, mos1-01.jpg, port-01.jpg
+
+MAPA: iframe de Google Maps (embed publico, sin clave). No hay imagen de mapa.

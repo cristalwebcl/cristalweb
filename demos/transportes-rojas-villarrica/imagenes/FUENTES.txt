@@ -24,3 +24,10 @@ URL de origen:
 003.jpg | 3888x2592 | Cargo Truck Photos, Download The BEST Free Cargo Truck Stock Photos ... | https://images.pexels.com/photos/93398/pexels-photo-93398.jpeg?cs=srgb&dl=pexels-500photos-com-15338-93398.jpg&fm=jpg
 001.jpg | 7680x5120 | 17,873+ Best Free Moving boxes Stock Photos & Images · 100% Royalty ... | https://images.pexels.com/photos/3791617/pexels-photo-3791617.jpeg?cs=srgb&dl=pexels-andrea-piacquadio-3791617.jpg&fm=jpg
 005.jpg | 5989x3993 | 12,414+ Best Free Boxes Stock Photos & Images · 100% Royalty-Free HD ... | https://images.pexels.com/photos/6169055/pexels-photo-6169055.jpeg?cs=srgb&dl=pexels-tima-miroshnichenko-6169055.jpg&fm=jpg
+
+MAPA DE UBICACION — mapa-01.jpg
+  768 x 768 · zoom 14 · centro -39.2780911, -72.2274364
+  Mosaicos de OpenStreetMap pegados en una sola imagen, con el marcador
+  dibujado encima. Datos (c) OpenStreetMap contributors, licencia ODbL:
+  la atribucion tiene que ir VISIBLE junto al mapa, en el pie de la figura.
+  https://www.openstreetmap.org/copyright

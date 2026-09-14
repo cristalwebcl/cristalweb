@@ -24,3 +24,10 @@ URL de origen:
 004.jpg | 6000x4000 | Doberman Pinscher Lab Mix Puppies: A Comprehensive Guide | https://images.pexels.com/photos/19680222/pexels-photo-19680222.jpeg
 005.jpg | 5472x3648 | 250+ Interesting Puppy Photos · Pexels · Free Stock Photos | https://images.pexels.com/photos/594687/pexels-photo-594687.jpeg?cs=srgb&dl=animal-dog-pet-594687.jpg&fm=jpg
 006.jpg | 5472x3648 | Cute Puppy Sitting on Ground in Bushes · Free Stock Photo | https://images.pexels.com/photos/16366986/pexels-photo-16366986.jpeg?cs=srgb&dl=pexels-miami302-16366986.jpg&fm=jpg
+
+MAPA DE UBICACION — mapa-01.jpg
+  768 x 768 · zoom 14 · centro -39.2780911, -72.2274364
+  Mosaicos de OpenStreetMap pegados en una sola imagen, con el marcador
+  dibujado encima. Datos (c) OpenStreetMap contributors, licencia ODbL:
+  la atribucion tiene que ir VISIBLE junto al mapa, en el pie de la figura.
+  https://www.openstreetmap.org/copyright

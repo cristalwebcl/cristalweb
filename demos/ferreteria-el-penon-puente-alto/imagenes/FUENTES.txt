@@ -12,3 +12,10 @@ mos5-01.jpg  <=  pexels | Pexels License | Miguel Á. Padriñán | https://www.p
 mos6-01.jpg  <=  pexels | Pexels License | Miguel Á. Padriñán | https://www.pexels.com/es-es/foto/blanco-y-negro-herramientas-escama-balanza-16679589/ | https://images.pexels.com/photos/16679589/pexels-photo-16679589.jpeg | recorte 3:2
 video/port.mp4  <=  mixkit | Mixkit Stock Video Free License | mixkit 34741 | https://mixkit.co/free-stock-video/ | https://assets.mixkit.co/videos/34741/34741-720.mp4 | 1,0-10,0 s, 720p sin audio
 video/cita.mp4  <=  mixkit | Mixkit Stock Video Free License | mixkit 32822 | https://mixkit.co/free-stock-video/ | https://assets.mixkit.co/videos/32822/32822-720.mp4 | 0,5-8,5 s, 576p sin audio
+
+MAPA DE UBICACION — mapa-01.jpg
+  768 x 768 · zoom 13 · centro -33.6095279, -70.5754736
+  Mosaicos de OpenStreetMap pegados en una sola imagen, con el marcador
+  dibujado encima. Datos (c) OpenStreetMap contributors, licencia ODbL:
+  la atribucion tiene que ir VISIBLE junto al mapa, en el pie de la figura.
+  https://www.openstreetmap.org/copyright

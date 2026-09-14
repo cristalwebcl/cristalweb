@@ -1,0 +1,22 @@
+FUENTES DE LAS IMAGENES - Mapu Iyagl Rehecha el 13-09-2026 (presentacion antes que texto). Fotos de REFERENCIA de bancos libres: ninguna es del local; las verdaderas las tiene que mandar el negocio. 
+port-01.jpg  <-  pozo-p-map-fogon\012.jpg  |  pexels (Pexels License)  |  autor: Marta Nogueira  |  https://www.pexels.com/es-es/foto/comida-madera-cena-vintage-19772743/  |  consulta: "wood fire kitchen rustic"
+hund1-01.jpg  <-  pozo-p-map-huerta\011.jpg  |  pexels (Pexels License)  |  autor: Rachel S  |  https://www.pexels.com/es-es/foto/sano-vegetales-verduras-granos-8990392/  |  consulta: "vegetable garden harvest basket"
+hund2-01.jpg  <-  pozo-p-map-sopaipilla\003.jpg  |  pexels (Pexels License)  |  autor: Vladimir Srajber  |  https://www.pexels.com/es-es/foto/mano-huevo-cocinando-friendo-13245140/  |  consulta: "sopaipilla"
+hund3-01.jpg  <-  pozo-p-map-pinon\003.jpg  |  pexels (Pexels License)  |  autor: Murilo Fonseca  |  https://www.pexels.com/es-es/foto/manos-cosecha-especias-sujetando-8039778/  |  consulta: "araucaria seeds pinones"
+hund4-01.jpg  <-  pozo-p-map-mate\009.jpg  |  pexels (Pexels License)  |  autor: Walter Spiess  |  https://www.pexels.com/es-es/foto/mano-beber-bebida-te-25436071/  |  consulta: "mate gourd"
+hund5-01.jpg  <-  pozo-p-map-fogon\005.jpg  |  pexels (Pexels License)  |  autor: Víctor C.  |  https://www.pexels.com/es-es/foto/fuego-hoguera-ardiente-calor-19620699/  |  consulta: "wood fire kitchen rustic"
+hund6-01.jpg  <-  pozo-p-map-semillas\010.jpg  |  pexels (Pexels License)  |  autor: Dptc India  |  https://www.pexels.com/es-es/foto/maiz-32851818/  |  consulta: "corn kernels seeds hands"
+banda-01.jpg  <-  pozo-p-map-huerta\006.jpg  |  pexels (Pexels License)  |  autor: Kampus Production  |  https://www.pexels.com/es-es/foto/persona-mujer-cosecha-sujetando-7658822/  |  consulta: "vegetable garden harvest basket"
+cita-01.jpg  <-  pozo-p-map-fogon\010.jpg  |  pexels (Pexels License)  |  autor: Mauricio Bertoni  |  https://www.pexels.com/es-es/foto/fogao-a-lenha-11254187/  |  consulta: "wood fire kitchen rustic"
+mos1-01.jpg  <-  pozo-p-map-pinon\005.jpg  |  pexels (Pexels License)  |  autor: Victoria Roca  |  https://www.pexels.com/es-es/foto/amarillo-tuercas-frutos-secos-naturaleza-muerta-11806634/  |  consulta: "araucaria seeds pinones"
+mos2-01.jpg  <-  pozo-p-map-semillas\011.jpg  |  pexels (Pexels License)  |  autor: Abhilash  Raji Parayakavil  |  https://www.pexels.com/es-es/foto/comida-persona-manos-palmeras-13184133/  |  consulta: "corn kernels seeds hands"
+mos3-01.jpg  <-  pozo-p-map-merken\003.jpg  |  pexels (Pexels License)  |  autor: Eva Bronzini  |  https://www.pexels.com/es-es/foto/hojas-secas-marrones-y-blancas-5988099/  |  consulta: "dried chili peppers"
+mos4-01.jpg  <-  pozo-p-map-huerta\007.jpg  |  pexels (Pexels License)  |  autor: Kampus Production  |  https://www.pexels.com/es-es/foto/comida-sano-vegetales-verduras-7658807/  |  consulta: "vegetable garden harvest basket"
+mos5-01.jpg  <-  pozo-p-map-sopaipilla\005.jpg  |  pexels (Pexels License)  |  autor: richard letrich  |  https://www.pexels.com/es-es/foto/comida-tradicional-delicioso-sabroso-9552567/  |  consulta: "sopaipilla"
+mos6-01.jpg  <-  pozo-p-map-greda\005.jpg  |  pexels (Pexels License)  |  autor: Amjed  wani  |  https://www.pexels.com/es-es/foto/lena-fuego-cocinando-fumar-26244137/  |  consulta: "clay pot cooking fire"
+
+BRUMA (bruma-pag-0N.png y bruma-osc-0N.png, 30x20): las MISMAS fotos, recortadas a 3:2, reducidas y
+recoloreadas con C:\devs\demos\hacer-bruma.ps1 (clara >= 0,68 de luminancia / oscura <= 0,05). No suman fuentes.
+    pagina: port-01.jpg, banda-01.jpg, hund1-01.jpg, hund2-01.jpg, mos1-01.jpg, mos3-01.jpg, mos4-01.jpg, mos5-01.jpg   |   oscuras: cita-01.jpg, hund5-01.jpg, mos6-01.jpg
+
+MAPA: iframe de Google Maps (embed publico, sin clave). No hay imagen de mapa.

@@ -21,3 +21,10 @@ URL de origen:
 004.jpg | 6720x3776 | Dog Grooming Photos, Download The BEST Free Dog Grooming Stock Photos ... | https://images.pexels.com/photos/19145880/pexels-photo-19145880.jpeg?cs=srgb&dl=pexels-goochie-poochie-19145880.jpg&fm=jpg
 005.jpg | 6720x3776 | The Complete Guide to Dog Grooming Small Breeds | https://images.pexels.com/photos/19145872/pexels-photo-19145872.jpeg
 002.jpg | 5659x3773 | Vet Photos, Download The BEST Free Vet Stock Photos & HD Images | https://images.pexels.com/photos/6235242/pexels-photo-6235242.jpeg?cs=srgb&dl=pexels-tima-miroshnichenko-6235242.jpg&fm=jpg
+
+MAPA DE UBICACION — mapa-01.jpg
+  768 x 768 · zoom 14 · centro -38.9862884, -72.63725
+  Mosaicos de OpenStreetMap pegados en una sola imagen, con el marcador
+  dibujado encima. Datos (c) OpenStreetMap contributors, licencia ODbL:
+  la atribucion tiene que ir VISIBLE junto al mapa, en el pie de la figura.
+  https://www.openstreetmap.org/copyright

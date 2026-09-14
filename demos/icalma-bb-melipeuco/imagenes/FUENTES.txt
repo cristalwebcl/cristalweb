@@ -1,0 +1,22 @@
+FUENTES DE LAS IMAGENES - Hospedaje Icalma Rehecha el 13-09-2026 (presentacion antes que texto). Fotos de REFERENCIA de bancos libres: ninguna es del local; las verdaderas las tiene que mandar el negocio. 
+port-01.jpg  <-  pozo-p-ica-llaima\005.jpg  |  pexels (Pexels License)  |  autor: Maximiliano I. Pinilla A.  |  https://www.pexels.com/es-es/foto/montana-rodeada-de-arboles-867943/  |  consulta: "Llaima volcano"
+hund1-01.jpg  <-  pozo-p-ica-pieza\003.jpg  |  pexels (Pexels License)  |  autor: Polina ⠀  |  https://www.pexels.com/es-es/foto/ropa-de-cama-blanca-en-la-cama-5644286/  |  consulta: "guest room bed wood"
+hund2-01.jpg  <-  pozo-p-ica-desayuno\003.jpg  |  pexels (Pexels License)  |  autor: Agustin Muñiz  |  https://www.pexels.com/es-es/foto/guru-cafe-san-fernando-foto-por-gam-ar-20204672/  |  consulta: "breakfast table coffee"
+hund3-01.jpg  <-  pozo-p-ica-casa\002.jpg  |  pexels (Pexels License)  |  autor: Matheus Bertelli  |  https://www.pexels.com/es-es/foto/casa-de-madera-marron-cerca-de-plantas-y-arboles-1144694/  |  consulta: "wooden house garden"
+hund4-01.jpg  <-  pozo-p-ica-lena\003.jpg  |  pexels (Pexels License)  |  autor: Camilo Laverde  |  https://www.pexels.com/es-es/foto/fuego-ardiente-hogar-chimenea-18691362/  |  consulta: "wood stove fire"
+hund5-01.jpg  <-  pozo-p-ica-casa\011.jpg  |  pexels (Pexels License)  |  autor: Ollie Tabooge  |  https://www.pexels.com/es-es/foto/edificio-pared-muro-jardin-11184181/  |  consulta: "wooden house garden"
+hund6-01.jpg  <-  pozo-p-ica-casa\012.jpg  |  pexels (Pexels License)  |  autor: Farhaan Mushtaq  Parimoo  |  https://www.pexels.com/es-es/foto/casas-casa-primavera-arbol-16183112/  |  consulta: "wooden house garden"
+banda-01.jpg  <-  pozo-p-ica-llaima\002.jpg  |  pexels (Pexels License)  |  autor: Santi  Echaire  |  https://www.pexels.com/es-es/foto/volcan-nevado-y-araucarias-en-chile-33606709/  |  consulta: "Llaima volcano"
+cita-01.jpg  <-  pozo-p-ica-araucana\005.jpg  |  pexels (Pexels License)  |  autor: Exequiel Arce  |  https://www.pexels.com/es-es/foto/resfriado-frio-nieve-nevar-13437560/  |  consulta: "Araucaria araucana"
+mos1-01.jpg  <-  pozo-p-ica-conguillio\001.jpg  |  pexels (Pexels License)  |  autor: Alexis Leandro Jeria Bocca  |  https://www.pexels.com/es-es/foto/paisaje-montanas-viaje-viajar-14997511/  |  consulta: "Conguillio"
+mos2-01.jpg  <-  pozo-p-ica-conguillio\003.jpg  |  pexels (Pexels License)  |  autor: Belén Montero  |  https://www.pexels.com/es-es/foto/vista-al-lago-y-a-la-montana-en-la-patagonia-33714468/  |  consulta: "Conguillio"
+mos3-01.jpg  <-  pozo-p-ica-pieza\009.jpg  |  pexels (Pexels License)  |  autor: Naufal Shidqi  |  https://www.pexels.com/es-es/foto/cama-habitacion-naturaleza-muerta-habitacion-de-hotel-12822491/  |  consulta: "guest room bed wood"
+mos4-01.jpg  <-  pozo-p-ica-casa\004.jpg  |  pexels (Pexels License)  |  autor: Jonathan Borba  |  https://www.pexels.com/es-es/foto/pueblo-verano-construccion-jardin-6632605/  |  consulta: "wooden house garden"
+mos5-01.jpg  <-  pozo-p-ica-araucana\003.jpg  |  pexels (Pexels License)  |  autor: Exequiel Arce  |  https://www.pexels.com/es-es/foto/agua-rocas-arboles-corriente-16700113/  |  consulta: "Araucaria araucana"
+mos6-01.jpg  <-  pozo-p-ica-conguillio\005.jpg  |  pexels (Pexels License)  |  autor: Ema Reynares  |  https://www.pexels.com/es-es/foto/montana-volcanica-cubierta-de-nieve-17676679/  |  consulta: "Conguillio"
+
+BRUMA (bruma-pag-0N.png y bruma-osc-0N.png, 30x20): las MISMAS fotos, recortadas a 3:2, reducidas y
+recoloreadas con C:\devs\demos\hacer-bruma.ps1 (clara >= 0,68 de luminancia / oscura <= 0,05). No suman fuentes.
+    pagina: port-01.jpg, banda-01.jpg, cita-01.jpg, hund1-01.jpg, mos4-01.jpg, hund4-01.jpg, mos2-01.jpg, mos3-01.jpg   |   oscuras: port-01.jpg, hund4-01.jpg, cita-01.jpg
+
+MAPA: iframe de Google Maps (embed publico, sin clave). No hay imagen de mapa.

@@ -1,0 +1,22 @@
+FUENTES DE LAS IMAGENES - Cl&iacute;nica Veterinaria El Arca de No&eacute; Rehecha el 13-09-2026 (presentacion antes que texto). Fotos de REFERENCIA de bancos libres: ninguna es del local; las verdaderas las tiene que mandar el negocio. 
+port-01.jpg  <-  pozo-p-arca-manta\004.jpg  |  pexels (Pexels License)  |  autor: Ismael Jiménez Barcenas  |  https://www.pexels.com/es-es/foto/animal-perro-mascota-linterna-12790370/  |  consulta: "dog blanket"
+banda-01.jpg  <-  pozo-p-arca-manta\011.jpg  |  pexels (Pexels License)  |  autor: PubPro  |  https://www.pexels.com/es-es/foto/retrato-de-perro-34493380/  |  consulta: "dog blanket"
+cita-01.jpg  <-  pozo-p-arca-manta\008.png  |  pexels (Pexels License)  |  autor: Ahinoam González  |  https://www.pexels.com/es-es/foto/calor-de-invierno-29570470/  |  consulta: "dog blanket"
+hund1-01.jpg  <-  pozo-p-arca-pata\002.jpg  |  pexels (Pexels License)  |  autor: Heber Vazquez  |  https://www.pexels.com/es-es/foto/mujer-mano-animal-perro-18781242/  |  consulta: "dog paw"
+hund2-01.jpg  <-  pozo-p-arca-collar\005.jpg  |  pexels (Pexels License)  |  autor: Eduardo López  |  https://www.pexels.com/es-es/foto/cachorro-sentado-16618524/  |  consulta: "dog cone"
+hund3-01.jpg  <-  pozo-p-arca-manta\010.jpg  |  pexels (Pexels License)  |  autor: María Celeste Vallejos  |  https://www.pexels.com/es-es/foto/adorable-chihuahua-con-un-elegante-sueter-relajandose-en-el-interior-33792069/  |  consulta: "dog blanket"
+hund4-01.jpg  <-  pozo-p-arca-collar\006.jpg  |  pexels (Pexels License)  |  autor: Eduardo López  |  https://www.pexels.com/es-es/foto/perro-mirando-hacia-arriba-16618543/  |  consulta: "dog cone"
+hund5-01.jpg  <-  pozo-p-arca-gato\008.jpg  |  pexels (Pexels License)  |  autor: Nurullah Karaman  |  https://www.pexels.com/es-es/foto/relajacion-animal-mono-pelo-27564205/  |  consulta: "cat blanket"
+hund6-01.jpg  <-  pozo-p-arca-manta\005.jpg  |  pexels (Pexels License)  |  autor: Mimo´s Photography (Helyin Bermúdez)  |  https://www.pexels.com/es-es/foto/mascotas-retrato-amantes-de-los-perros-animales-y-mascotas-28277654/  |  consulta: "dog blanket"
+mos1-01.jpg  <-  pozo-p-arca-gato\012.jpg  |  pexels (Pexels License)  |  autor: Julia Kova  |  https://www.pexels.com/es-es/foto/mono-gato-adorable-manta-10433402/  |  consulta: "cat blanket"
+mos2-01.jpg  <-  pozo-p-arca-manta\009.jpg  |  pexels (Pexels License)  |  autor: Vale Bocchi  |  https://www.pexels.com/es-es/foto/relajacion-cama-habitacion-animal-28055258/  |  consulta: "dog blanket"
+mos3-01.jpg  <-  pozo-p-arca-gato\011.jpg  |  pexels (Pexels License)  |  autor: Lisa Fotios  |  https://www.pexels.com/es-es/foto/gato-de-esmoquin-relajado-descansando-sobre-una-manta-33784712/  |  consulta: "cat blanket"
+mos4-01.jpg  <-  pozo-p-arca-pata\008.jpg  |  pexels (Pexels License)  |  autor: Jacson David Vinueza Itas  |  https://www.pexels.com/es-es/foto/golden-retriever-mojado-sentado-en-el-pavimento-29178697/  |  consulta: "dog paw"
+mos5-01.jpg  <-  pozo-p-arca-manta\012.jpg  |  pexels (Pexels License)  |  autor: Santiago Sauceda González  |  https://www.pexels.com/es-es/foto/lindo-cachorro-sentado-en-la-cama-en-una-habitacion-acogedora-29736616/  |  consulta: "dog blanket"
+mos6-01.jpg  <-  pozo-p-arca-gato\007.jpg  |  pexels (Pexels License)  |  autor: 大 董  |  https://www.pexels.com/es-es/foto/gato-relajado-con-juguete-sobre-manta-azul-34418112/  |  consulta: "cat blanket"
+
+BRUMA (bruma-pag-0N.png y bruma-osc-0N.png, 30x20): las MISMAS fotos, recortadas a 3:2, reducidas y
+recoloreadas con C:\devs\demos\hacer-bruma.ps1 (clara >= 0,68 de luminancia / oscura <= 0,05). No suman fuentes.
+    pagina: port-01.jpg, banda-01.jpg, cita-01.jpg, hund2-01.jpg, hund3-01.jpg, hund5-01.jpg, mos1-01.jpg, mos6-01.jpg   |   oscuras: port-01.jpg, cita-01.jpg, hund5-01.jpg
+
+MAPA: iframe de Google Maps (embed publico, sin clave). No hay imagen de mapa.

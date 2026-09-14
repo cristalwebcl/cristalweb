@@ -12,3 +12,10 @@ mit-01.jpg  <=  pexels | Pexels License | ROMAN ODINTSOV | https://www.pexels.co
 tajo-01.jpg  <=  pexels | Pexels License | cottonbro studio | https://www.pexels.com/es-es/foto/casa-apartamento-hogar-limpiar-4107220/ | https://images.pexels.com/photos/4107220/pexels-photo-4107220.jpeg
 video/port.mp4  <=  mixkit | Mixkit Stock Video Free License | mixkit 22179 | https://mixkit.co/free-stock-video/ | https://assets.mixkit.co/videos/22179/22179-720.mp4 | 1,0-10,0 s, 720p sin audio
 video/cita.mp4  <=  mixkit | Mixkit Stock Video Free License | mixkit 14967 | https://mixkit.co/free-stock-video/ | https://assets.mixkit.co/videos/14967/14967-720.mp4 | 1,0-9,0 s, 576p sin audio
+
+MAPA DE UBICACION — mapa-01.jpg
+  768 x 768 · zoom 13 · centro -33.4543164, -70.5936358
+  Mosaicos de OpenStreetMap pegados en una sola imagen, con el marcador
+  dibujado encima. Datos (c) OpenStreetMap contributors, licencia ODbL:
+  la atribucion tiene que ir VISIBLE junto al mapa, en el pie de la figura.
+  https://www.openstreetmap.org/copyright

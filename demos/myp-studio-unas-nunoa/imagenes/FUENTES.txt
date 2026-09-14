@@ -1,0 +1,22 @@
+FUENTES DE LAS IMAGENES - MYP Studio Rehecha el 13-09-2026 (presentacion antes que texto). Fotos de REFERENCIA de bancos libres: ninguna es del local; las verdaderas las tiene que mandar el negocio. 
+port-01.jpg  <-  pozo-p-my-lampara\005.jpg  |  pexels (Pexels License)  |  autor: Diana ✨  |  https://www.pexels.com/es-es/foto/mano-tecnologia-dispositivo-equipo-9099607/  |  consulta: "nail lamp"
+hund1-01.jpg  <-  pozo-p-my-arte\004.jpg  |  pexels (Pexels License)  |  autor: Salim Da  |  https://www.pexels.com/es-es/foto/manicura-roja-creativa-sobre-fondo-texturizado-34871614/  |  consulta: "nail art"
+hund2-01.jpg  <-  pozo-p-my-herramientas\008.jpg  |  pexels (Pexels License)  |  autor: RDNE Stock project  |  https://www.pexels.com/es-es/foto/manos-trabajando-clavos-unas-7755214/  |  consulta: "manicure tools"
+hund3-01.jpg  <-  pozo-p-my-acrilico\002.jpg  |  pexels (Pexels License)  |  autor: abolfazl zarghami  |  https://www.pexels.com/es-es/foto/manos-mujer-profesional-esmalte-de-unas-17471377/  |  consulta: "acrylic nails"
+hund4-01.jpg  <-  pozo-p-my-arte\011.jpg  |  pexels (Pexels License)  |  autor: Salim Da  |  https://www.pexels.com/es-es/foto/manicura-elegante-en-rojo-y-blanco-34871560/  |  consulta: "nail art"
+hund5-01.jpg  <-  pozo-p-my-frances\001.jpg  |  pexels (Pexels License)  |  autor: Salim Da  |  https://www.pexels.com/es-es/foto/mano-elegante-con-manicura-francesa-y-joyeria-34997574/  |  consulta: "french manicure"
+hund6-01.jpg  <-  pozo-p-my-herramientas\007.jpg  |  pexels (Pexels License)  |  autor: Leeloo The First  |  https://www.pexels.com/es-es/foto/persona-con-herramienta-de-mano-azul-y-plateada-4677847/  |  consulta: "manicure tools"
+banda-01.jpg  <-  pozo-p-my-verde\003.jpg  |  pexels (Pexels License)  |  autor: Ari Roberts  |  https://www.pexels.com/es-es/foto/moda-mujer-mano-lujo-9649301/  |  consulta: "green nail polish"
+cita-01.jpg  <-  pozo-p-my-acrilico\011.jpg  |  pexels (Pexels License)  |  autor: Андрей Филоненко  |  https://www.pexels.com/es-es/foto/mujer-mano-color-belleza-19988191/  |  consulta: "acrylic nails"
+mos1-01.jpg  <-  pozo-p-my-verde\007.jpg  |  pexels (Pexels License)  |  autor: Jess Bailey Designs  |  https://www.pexels.com/es-es/foto/fotografia-de-enfoque-superficial-de-laca-de-unas-verde-azulado-755993/  |  consulta: "green nail polish"
+mos2-01.jpg  <-  pozo-p-my-frances\009.jpg  |  pexels (Pexels License)  |  autor: Anastasia Kisil  |  https://www.pexels.com/es-es/foto/manicura-elegante-con-estetica-de-hojas-secas-29837129/  |  consulta: "french manicure"
+mos3-01.jpg  <-  pozo-p-my-herramientas\001.png  |  pexels (Pexels License)  |  autor: Mariia Belinska  |  https://www.pexels.com/es-es/foto/mano-enguantada-de-color-negro-que-sostiene-unas-tijeras-pequenas-30294767/  |  consulta: "manicure tools"
+mos4-01.jpg  <-  pozo-p-my-arte\008.jpg  |  pexels (Pexels License)  |  autor: Salim Da  |  https://www.pexels.com/es-es/foto/mano-manicurada-con-arte-de-unas-rosa-y-brillo-34835286/  |  consulta: "nail art"
+mos5-01.jpg  <-  pozo-p-my-frances\004.jpg  |  pexels (Pexels License)  |  autor: Salim Da  |  https://www.pexels.com/es-es/foto/mano-elegante-con-manicura-francesa-y-joyas-34997561/  |  consulta: "french manicure"
+mos6-01.jpg  <-  pozo-p-my-lampara\012.jpg  |  pexels (Pexels License)  |  autor: cottonbro studio  |  https://www.pexels.com/es-es/foto/manos-mano-mesa-colorido-3997382/  |  consulta: "nail lamp"
+
+BRUMA (bruma-pag-0N.png y bruma-osc-0N.png, 30x20): las MISMAS fotos, recortadas a 3:2, reducidas y
+recoloreadas con C:\devs\demos\hacer-bruma.ps1 (clara >= 0,68 de luminancia / oscura <= 0,05). No suman fuentes.
+    pagina: port-01.jpg, banda-01.jpg, mos1-01.jpg, hund1-01.jpg, mos4-01.jpg   |   oscuras: port-01.jpg, cita-01.jpg, banda-01.jpg
+
+MAPA: iframe de Google Maps (embed publico, sin clave). No hay imagen de mapa.

@@ -79,4 +79,27 @@
     setTimeout(function () { piezas.forEach(destapar); }, 6000);
   }
 
+  /* ── Boton flotante de contacto ───────────────────────────────────
+     El boton ya se ve por CSS. Aca solo se lo aparta mientras el
+     visitante mira la portada, para no tapar el titular. Se observa la
+     PORTADA, no el boton: un elemento fixed nunca entra ni sale de la
+     ventana, asi que observarlo no dispararia jamas. ── */
+  var flota = document.querySelector('.flota');
+  var portadaF = document.querySelector('.portada');
+  if (flota && portadaF) {
+    var mirarFlota = function () {
+      var r = portadaF.getBoundingClientRect();
+      var visible = Math.min(r.bottom, window.innerHeight) - Math.max(r.top, 0);
+      flota.classList.toggle('flota--arriba', visible > r.height * 0.55);
+    };
+    mirarFlota();
+    if ('IntersectionObserver' in window) {
+      new IntersectionObserver(function (es) {
+        es.forEach(function (e) { flota.classList.toggle('flota--arriba', e.intersectionRatio > 0.55); });
+      }, { threshold: [0, 0.55, 1] }).observe(portadaF);
+    } else {
+      window.addEventListener('scroll', mirarFlota, { passive: true });
+    }
+  }
+
 })();

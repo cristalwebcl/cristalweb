@@ -66,3 +66,10 @@ LAS FOTOS QUE HAY QUE PEDIR, EN ORDEN
    más confianza da: dice que no hay que salir a buscarla.
 
 Con esas tres, esta página deja de tener una sola imagen prestada.
+
+MAPA DE UBICACION — mapa-01.jpg
+  768 x 768 · zoom 14 · centro -39.4897238, -72.1553851
+  Mosaicos de OpenStreetMap pegados en una sola imagen, con el marcador
+  dibujado encima. Datos (c) OpenStreetMap contributors, licencia ODbL:
+  la atribucion tiene que ir VISIBLE junto al mapa, en el pie de la figura.
+  https://www.openstreetmap.org/copyright

@@ -1,62 +1,142 @@
 PROCEDENCIA DE LAS IMÁGENES — BarraKuda, restobar, Villarrica
+Actualizado el 09-09-2026, al subir la demo a estándar premium.
 ════════════════════════════════════════════════════════════════
-
-DEL NEGOCIO — cinco fotos, de su ficha de Google.
-
-media-01.jpg  1500x1200  el salón, con las mesas de madera
-gal-01.jpg    1300x748   la fachada con el letrero y el antejardín
-tira-01.jpg   1000x732   mariscos, pebre y pan para picotear
-tira-02.jpg   1000x1114  una parrillada en brasero de fierro
-tira-03.jpg    907x1600  un rincón con mesa redonda y sillones
-
-TRES DESCARTES, Y UNO VALE LA CONVERSACIÓN:
-
-1. **El salón lleno de noche**, con quince personas identificables.
-2. **Un afiche de promoción con precio** ($18.990). Un precio dentro de
-   una imagen envejece solo y no se puede corregir sin rehacerla.
-3. **Dos fotos de comida que NO son suyas**: una copa de ceviche y un
-   costillar, ambas de banco de imágenes profesional, subidas a su
-   propia ficha. Se ven bien y por eso el problema: el cliente llega
-   esperando eso. Vale la pena decírselo — tiene tres platos propios
-   mejores y ya están en esta página.
-
-También hay un homónimo curioso: media búsqueda devuelve artículos
-alemanes sobre el pez barracuda.
+Catorce archivos JPEG, 2,0 MB en total. Esta demo NO lleva video:
+es decisión de Yordy — el video se reserva para los negocios mejor
+valorados. Lo que ocupa su lugar es el ambiente de portada dibujado
+en CSS (el letrero que falla al encender y el polvo en la luz) y los
+ocho tratamientos de imagen.
 
 ────────────────────────────────────────────────────────────────
-GENÉRICAS — tres, de banco libre, sólo de fondo. Son barra y neón:
-ambiente, no comida. Todo lo que se come en esta página es de ellos.
+DEL NEGOCIO — cinco recortes, de tres fotos de su propia ficha de
+Google. Bajadas el 01-09-2026. Son las únicas fotos de comida y de
+local que aparecen en la página: todo lo que se come acá es de ellos.
 
-port-01.jpg  1900x2850  botellas retroiluminadas en el estante
-cita-01.jpg  2560x3840  una barra oscura con ampolletas colgantes
-  las dos de Pexels · licencia Pexels (uso libre), consulta
-  «bar counter bottles backlit dark»
+tira-01.jpg   1000x732   mariscos, pebre y pan para picotear
+                         → ficha de la sección clara, «Picoteo de mar»
+mos1-01.jpg    880x650   la misma foto, encuadre cerrado
+                         → mosaico, celda 2
+tira-02.jpg    907x760   el rincón de la mesa redonda con sillones
+                         → ficha «El rincón de sillones». RECORTADA: la
+                           mitad de arriba del original traía un letrero
+                           de marca y dos afiches, y se fue entera.
+mit-01.jpg    1070x1200  el salón con las mesas de madera
+                         → sección de media pantalla. RECORTADA por la
+                           izquierda: ahí había una persona sentada y una
+                           pantalla de TV encendida.
+mos2-01.jpg    940x900   el mismo salón, otro encuadre
+                         → mosaico, celda 4
 
-aura-01.jpg   900x600   un letrero de neón que dice BAR
-  pxhere · dominio público (CC0), consulta
-  «neon sign bar night blue glow»
-  Va a 64 px de desenfoque: no se lee la palabra, sólo queda el cian,
-  que es el color con el que está escrito el nombre de la página.
+TRES DESCARTES DE SU PROPIA FICHA, y uno vale la conversación:
+1. El salón lleno de noche, con quince personas identificables.
+2. Un afiche de promoción con precio ($18.990). Un precio dentro de
+   una imagen envejece solo y no se corrige sin rehacerla.
+3. Dos fotos de comida que NO son suyas —una copa de ceviche y un
+   costillar, las dos de banco profesional— subidas a su propia
+   ficha. Se ven bien y por eso son el problema: el cliente llega
+   esperando eso. Vale la pena decírselo: tienen tres platos propios
+   mejores y ya están en esta página.
+   (Hay también una foto de parrillada con el logo de otro
+   restaurante estampado: está dicho en la página, en la ficha «La
+   parrilla».)
 
-Se descartaron dos neones más porque decían «Radio City» y eran de
-Times Square: marca y lugar ajenos.
+────────────────────────────────────────────────────────────────
+DE BANCO LIBRE — nueve archivos. Son AMBIENTE: barra, lámparas,
+neón, salón. Nunca comida y nunca inventario del local.
+
+port-01.jpg   1700x2550  la barra curva retroiluminada con las
+                         ampolletas colgando  → portada
+   Pexels · licencia Pexels (uso libre, sin atribución obligatoria)
+   Bajada el 01-09-2026 con la consulta «bar counter bottles backlit
+   dark». AVISO HONESTO: el lote de ese día no dejó anotada la página
+   de origen, así que esta línea va sin URL. Banco y licencia sí están
+   verificados. Si alguna vez hace falta la atribución exacta, hay que
+   volver a buscarla o cambiar la foto.
+
+tajo-01.jpg   2200x917   siluetas contra el estante de botellas de
+                         colores  → tajo a sangre
+   Pexels · licencia Pexels · autor: K
+   https://www.pexels.com/es-es/foto/escena-de-bar-en-silueta-con-botellas-coloridas-en-exposicion-37844319/
+   Recorte de una franja central del original (6000x4000 → 2200x917).
+   Las dos personas son siluetas a contraluz: no hay rostro legible.
+
+cita-01.jpg   2200x1237  la mesa de noche con el vaso encendido
+                         → banda de cita a sangre
+   Pexels · licencia Pexels · autor: Kha Ruxury
+   https://www.pexels.com/es-es/foto/ligero-mesa-vasos-gafas-17527769/
+
+telon-01.jpg  1200x675   la araña de lámparas de un bar oscuro y
+                         vacío  → telón de la pieza firma, al 13 %
+   Pexels · licencia Pexels · autor: hayriyenur
+   https://www.pexels.com/es-es/foto/lamparas-doradas-sobre-mesas-en-un-bar-oscuro-y-vacio-19343364/
+   RECORTADA a la mitad izquierda del original: a la derecha hay gente
+   sentada. REEMPLAZA (09-09-2026) a un estante de botellas que traía
+   ocho marcas legibles —una se leía entera aun al 16 % de opacidad—.
+
+mos3-01.jpg   1200x800   lámparas encendidas sobre el mesón, con la
+                         ventana iluminada  → mosaico, celda 1
+   Pexels · licencia Pexels · autora: Lisa Fotios
+   https://www.pexels.com/es-es/foto/interior-del-restaurante-776538/
+   RECORTADA arriba y a la izquierda: abajo a la derecha hay una
+   persona. REEMPLAZA (09-09-2026) a un segundo recorte de la mesa
+   redonda del negocio, que en el mosaico se leía como la misma foto
+   de la ficha repetida.
+
+mos5-01.jpg   1200x800   un salón vacío con las lámparas encendidas
+                         de noche  → mosaico, celda 6
+   Pexels · licencia Pexels · autor: Igor Vieira
+   https://www.pexels.com/es-es/foto/interior-de-restaurante-vacio-y-acogedor-por-la-noche-32010784/
+
+mos6-01.jpg   1200x800   un estante de barra iluminado por dentro
+                         → mosaico, celda 5
+   Pexels · licencia Pexels · autor: Hồng Thắng Lê
+   https://www.pexels.com/es-es/foto/estante-de-bar-iluminado-con-botellas-de-licor-surtidas-35831956/
+   A tamaño de mosaico (una celda de 210 px de alto) las etiquetas no
+   se leen; comprobado sobre la página renderizada.
+
+aura-01.jpg    900x600   un letrero de neón que dice BAR
+mos4-01.jpg    900x600   la MISMA foto, sin desenfocar
+   pxhere · dominio público (CC0)
+   Bajada el 01-09-2026 con la consulta «neon sign bar night blue
+   glow». Mismo aviso que la portada: el lote de ese día no anotó la
+   página de origen. La licencia CC0 de pxhere no exige atribución.
+   El aura va a 64 px de desenfoque: no se lee la palabra, sólo queda
+   el cian —que es el color con el que está escrito el nombre de la
+   página—. Por eso los dos archivos pueden ser la misma foto sin que
+   nadie lea una repetición: en la portada de la sección firma es una
+   mancha de color y en el mosaico es una foto.
+   Se descartaron dos neones más porque decían «Radio City» y eran de
+   Times Square: marca y lugar ajenos.
+
+────────────────────────────────────────────────────────────────
+FILTROS APLICADOS A TODAS
+
+· Ninguna marca de tercero legible a tamaño real (por eso se cambió
+  el telón y por eso el rincón de sillones va recortado).
+· Ningún precio dentro de una foto.
+· Ningún menor y ningún rostro identificable.
+· Nada de plus.unsplash.com, que es de pago.
+· Ningún fondo que prometa otro lugar: la única foto que muestra una
+  calle o una fachada sería una promesa de dirección, y no hay
+  ninguna en la página.
 
 ────────────────────────────────────────────────────────────────
 NOTA TÉCNICA
 
 La portada es un panel fijo, alto y angosto, con el nombre en neón
-dibujado en CSS. El gradiente va en VERTICAL —uno horizontal en 300 px
-no alcanza a disolver nada— y la foto entra desde abajo, muriendo antes
-del nombre.
+dibujado en CSS. El gradiente va en VERTICAL —uno horizontal en 600 px
+no alcanza a disolver nada—. En escritorio la foto entra detrás del
+nombre y se apaga antes de la lista de horarios; en el teléfono se
+apaga antes todavía, para que el texto quede sobre noche plana. Los
+dos números están medidos y escritos en css/estilo.css.
 
-────────────────────────────────────────────────────────────────
-LO QUE FALTA
+Procesado sin ImageMagick: PowerShell + WIC (BitmapDecoder,
+CroppedBitmap, TransformedBitmap, JpegBitmapEncoder). No hay encoder
+WebP en esta máquina: todo va a JPEG.
 
-1. **El salón de noche con la barra funcionando**, sin gente o de
-   espaldas. Es lo que la página promete y hoy lo pone una foto ajena.
-2. Las horas reales: hasta qué hora cocina y hasta qué hora la barra.
-   Están puestas y vacías en la página, a la espera.
-
-Nota: el primer armado tenía la barra oscura en la portada y no se
-veía — negro sobre un panel que ya es casi negro. Se cambiaron de
-lugar: arriba van las botellas retroiluminadas, que tienen luz propia.
+MAPA DE UBICACION — mapa-01.jpg
+  768 x 768 · zoom 14 · centro -39.2780911, -72.2274364
+  Mosaicos de OpenStreetMap pegados en una sola imagen, con el marcador
+  dibujado encima. Datos (c) OpenStreetMap contributors, licencia ODbL:
+  la atribucion tiene que ir VISIBLE junto al mapa, en el pie de la figura.
+  https://www.openstreetmap.org/copyright

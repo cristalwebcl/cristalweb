@@ -1,0 +1,70 @@
+﻿FUENTES DE LAS IMAGENES Y LOS CLIPS — reposteria-hagemann-puerto-varas
+Bancos libres, descargados y procesados con FotoRadar (JPEG, ancho y calidad
+por tratamiento; los clips recortados a 1280 px y sin pista de audio).
+Ninguna imagen ni clip es del local: son ambiente de rubro. Lo que falta del
+negocio está listado en QUE-FOTOS-FALTAN.md.
+Actualizado el 08-09-2026.
+
+── IMÁGENES ──────────────────────────────────────────────────────────────
+
+port-01.jpg   <=  pexels | Pexels License | ROMAN ODINTSOV | https://www.pexels.com/es-es/foto/comida-cuchara-postre-dulce-6148265/ | https://images.pexels.com/photos/6148265/pexels-photo-6148265.jpeg
+tajo-01.jpg   <=  pexels | Pexels License | Life Of Pix | https://www.pexels.com/es-es/foto/persona-mezclando-masa-9095/ | https://images.pexels.com/photos/9095/pexels-photo.jpg
+telon-01.jpg  <=  pexels | Pexels License | olga Volkovitskaia | https://www.pexels.com/es-es/foto/escena-de-reposteria-rustica-con-rodillo-y-limon-28929608/ | https://images.pexels.com/photos/28929608/pexels-photo-28929608.jpeg
+telon-02.jpg  <=  pexels | Pexels License | Sofía Falco | https://www.pexels.com/es-es/foto/postres-gourmet-variados-en-platos-en-primer-plano-32318140/ | https://images.pexels.com/photos/32318140/pexels-photo-32318140.jpeg
+cita-01.jpg   <=  pexels | Pexels License | Asya Vlasova | https://www.pexels.com/es-es/foto/pastel-de-frambuesa-3065576/ | https://images.pexels.com/photos/3065576/pexels-photo-3065576.jpeg
+mit-01.jpg    <=  pexels | Pexels License | Nacho Posse | https://www.pexels.com/es-es/foto/vaso-cristal-vidrio-azucar-11196388/ | https://images.pexels.com/photos/11196388/pexels-photo-11196388.jpeg
+mos1-01.jpg   <=  pexels | Pexels License | Edgar Arroyo | https://www.pexels.com/es-es/foto/plato-arandanos-azules-dulce-fresas-15497539/ | https://images.pexels.com/photos/15497539/pexels-photo-15497539.jpeg
+mos2-01.jpg   <=  pexels | Pexels License | Veronika Latysheva | https://www.pexels.com/es-es/foto/deliciosa-tarta-de-queso-con-frambuesas-en-la-mesa-37676271/ | https://images.pexels.com/photos/37676271/pexels-photo-37676271.jpeg
+mos3-01.jpg   <=  pexels | Pexels License | Asya Vlasova | https://www.pexels.com/es-es/foto/comida-plato-apple-manzana-3065592/ | https://images.pexels.com/photos/3065592/pexels-photo-3065592.jpeg
+mos4-01.jpg   <=  pexels | Pexels License | Pablo Rodríguez | https://www.pexels.com/es-es/foto/deliciosa-tarta-de-queso-vasca-con-mermelada-32517227/ | https://images.pexels.com/photos/32517227/pexels-photo-32517227.jpeg
+mos5-01.jpg   <=  pexels | Pexels License | Srijit Mudi | https://www.pexels.com/es-es/foto/primer-plano-de-tarta-de-queso-con-cerezas-en-un-plato-rosa-37181267/ | https://images.pexels.com/photos/37181267/pexels-photo-37181267.jpeg
+mos6-01.jpg   <=  pexels | Pexels License | Luis Felipe Pérez | https://www.pexels.com/es-es/foto/panaderia-chocolate-bombon-postre-19328374/ | https://images.pexels.com/photos/19328374/pexels-photo-19328374.jpeg
+
+Nota del 08-09-2026 · port-01 y tajo-01 se repusieron.
+Las dos venían de la construcción del 02-09-2026 y su línea de procedencia
+no había quedado guardada, así que la demo no se podía publicar. Se volvieron
+a bajar con FotoRadar y ahora las doce imágenes tienen banco, licencia, autor,
+página y URL original.
+
+La portada mantiene el mismo ánimo que tenía: una galette de manzana tibia,
+con la masa a foco completo en el costado derecho y la cuchara de palo como
+único objeto. El tajo cambió a propósito: la primera candidata era una masa
+clara sobre tabla dorada y el titular blanco quedaba en 2,4:1 sobre ella. La
+que quedó es de madera oscura con las manos deshaciendo el streusel —el mismo
+gesto que describe la sección del oficio—, y sobre ese fondo el titular pasa
+AA sin subir el velo, que es la regla: se busca luminancia opuesta antes que
+tapar la foto.
+
+Nota del 09-09-2026 · mos3-01 se cambió.
+La que estaba —un postre sobre plato de talavera, con una calavera de Día de
+Muertos y azulejo mexicano en el fondo— prometía otro lugar: es una escena
+mexicana en una repostería alemana de Puerto Varas, y peleaba con la dirección
+de la página, que es LOZA ALEMANA. Ambiente sí, inventario no. La que quedó es
+un kuchen de manzana entero visto desde arriba sobre hormigón gris (4048x3036
+original, recortado a 3:2 y bajado a 1200x800, calidad 74), y además ilustra
+una de las cuatro variedades que la vitrina nombra por su nombre.
+
+── CLIPS DE FONDO (carpeta video/) ───────────────────────────────────────
+
+video/port.mp4  <=  pexels | Pexels License | Frank Litschel | https://www.pexels.com/video/delicious-apple-pie-on-stand-in-dining-room-34422441/ | https://videos.pexels.com/video-files/34422441/14582393_1280_720_30fps.mp4 | recorte 00:04–00:14, 1280x720, sin audio, 220 KB
+video/cita.mp4  <=  pexels | Pexels License | Zuzanna Musial | https://www.pexels.com/video/raspberries-hanging-on-tree-1327504/ | https://videos.pexels.com/video-files/1327504/1327504-hd_1280_720_30fps.mp4 | recorte 00:01–00:11, 1280x720, sin audio, 420 KB
+
+El póster de cada clip no es un atributo poster= sino el <img> hermano que se
+queda en el DOM para siempre: port-01.jpg bajo el clip de la portada y
+cita-01.jpg bajo el de la banda de cita. Por eso, si el autoplay se bloquea o
+el visitante pidió menos movimiento, nunca aparece un rectángulo negro. En la
+carpeta video/ no queda ningún fotograma suelto.
+
+── ICONO INCRUSTADO ──────────────────────────────────────────────────────
+
+El icono del botón flotante es el de Instagram de simple-icons (CC0 1.0,
+https://github.com/simple-icons/simple-icons), escrito como <svg> dentro del
+HTML porque la CSP no permite pedirle nada a un tercero. Ni una sola petición
+externa en toda la página.
+
+MAPA DE UBICACION — mapa-01.jpg
+  768 x 768 · zoom 14 · centro -41.317802, -72.9829073
+  Mosaicos de OpenStreetMap pegados en una sola imagen, con el marcador
+  dibujado encima. Datos (c) OpenStreetMap contributors, licencia ODbL:
+  la atribucion tiene que ir VISIBLE junto al mapa, en el pie de la figura.
+  https://www.openstreetmap.org/copyright

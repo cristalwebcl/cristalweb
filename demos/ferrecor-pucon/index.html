@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="es-CL" class="no-js">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self'; img-src 'self' data:; font-src 'self'; connect-src 'self'; media-src 'self'; form-action 'self'; base-uri 'none'; frame-src 'none'; object-src 'none'">
+<meta name="robots" content="noindex, nofollow">
+<title>Ferrecor — materiales, Pucón</title>
+<meta name="description" content="Ferretería y materiales en Pucón. Cómo funciona el flete a la obra: sectores, mínimos y a qué hora pedir.">
+
+<!-- ═══════════════════════════════════════════════════════════════
+     RESCATE DE LA CLASE .js — regla 2 de la casa.
+     El script inline (sin defer) marca .js para que el CSS pueda
+     esconder lo que va a animarse. El temporizador de 4 s la quita
+     si main.js nunca llega: sin él, un error de red dejaría media
+     página invisible para siempre.
+     ═══════════════════════════════════════════════════════════════ -->
+<script src="js/rescate.js"></script>
+
+<!-- Fuentes propias: cero peticiones a terceros. El preload va SOLO
+     para la display, que es la del titular de la portada. -->
+<link rel="preload" href="assets/fuentes/changa-700-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="assets/fuentes.css">
+<link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+
+<div class="propuesta">
+  <p class="propuesta__que">Propuesta de sitio web — preparada para <b>Ferrecor</b> por Yordy Serna</p>
+  <p class="propuesta__gancho">En el Pucón del boom constructor, Ferrecor existe en internet sólo como una fila dentro del portal de su red. Esta es su cara propia.</p>
+</div>
+
+<header class="cab" id="cab">
+  <a class="cab__marca" href="#portada">
+    <span class="pallet" aria-hidden="true"></span>
+    <span class="cab__nombre">Ferrecor</span>
+  </a>
+  <nav class="cab__nav" aria-label="Secciones">
+    <a href="#flete">El flete a la obra</a>
+    <a href="#lista">Mande la lista</a>
+  </nav>
+  <a class="cab__wsp" href="#lista">
+    <span class="cab__wsp-rot">Pucón</span>
+    <span class="cab__wsp-num">Pedir despacho</span>
+  </a>
+</header>
+
+<main>
+
+<!-- ═════════ PORTADA ═════════ -->
+<section class="portada" id="portada" aria-labelledby="t-portada">
+  <div class="pila" aria-hidden="true">
+    <span class="s1"></span><span class="s2"></span><span class="s3"></span>
+    <span class="s4"></span><span class="s5"></span>
+  </div>
+  <div class="portada__texto">
+    <p class="sitio">Ferretería y materiales · Pucón</p>
+    <h1 id="t-portada">El flete<br>a la obra</h1>
+    <p class="bajada">En una zona donde las obras están repartidas entre el centro, el
+      camino al volcán y los lagos, quién despacha y hasta dónde es lo que decide dónde
+      se compra.</p>
+    <dl class="specs">
+      <div class="spec"><dt>reseñas en Google</dt><dd>100</dd></div>
+      <div class="spec"><dt>tramos del recorrido</dt><dd>3</dd></div>
+    </dl>
+  </div>
+</section>
+
+<!-- ═════════ LA PIEZA FIRMA — LÍNEA DE RECORRIDO (I) ═════════ -->
+<section class="ruta" id="flete" aria-labelledby="t-ruta">
+  <div class="ruta__cabecera">
+    <p class="antetitulo">De la bodega al sitio</p>
+    <h2 id="t-ruta">Cómo llega<br>el material</h2>
+    <p>Tres tramos, y en cada uno hay una decisión que le toca a usted. Lo que está
+      confirmado va escrito; lo demás queda marcado para que nadie lo dé por hecho.</p>
+    <p class="marca-ejemplo" data-ejemplo="Flujo de ejemplo — sectores, horarios y mínimos los confirma Ferrecor"></p>
+  </div>
+
+  <div class="linea" id="linea">
+    <!-- La barra que se llena con el scroll. Va escrita en el HTML y
+         parte llena: si la animación no corre, se ve el recorrido
+         completo, que es lo que hay que entender. -->
+    <div class="linea__riel" aria-hidden="true"><span class="linea__avance"></span></div>
+
+    <ol class="tramos">
+      <li class="tramo">
+        <p class="tramo__n" aria-hidden="true">01</p>
+        <div class="tramo__caja">
+          <h3>En la bodega</h3>
+          <p>Se arma el pedido con lo que hay en stock hoy y se avisa lo que no. Ese
+            aviso es lo que evita que la obra se pare a media mañana esperando algo
+            que nunca salió.</p>
+          <dl class="tramo__datos">
+            <div><dt>Hora tope para el día</dt><dd><span class="falta">falta</span></dd></div>
+            <div><dt>Monto mínimo</dt><dd><span class="falta">falta</span></dd></div>
+          </dl>
+        </div>
+      </li>
+      <li class="tramo">
+        <p class="tramo__n" aria-hidden="true">02</p>
+        <div class="tramo__caja">
+          <h3>En el camión</h3>
+          <p>Se carga por orden de entrega y por peso: lo pesado abajo y lo que se
+            descarga primero, arriba. Un camión bien cargado descarga en la mitad del
+            tiempo, y el flete se cobra por viaje, no por rato.</p>
+          <dl class="tramo__datos">
+            <div><dt>Días de reparto</dt><dd><span class="falta">falta</span></dd></div>
+            <div><dt>Descarga incluida</dt><dd><span class="falta">falta</span></dd></div>
+          </dl>
+        </div>
+      </li>
+      <li class="tramo">
+        <p class="tramo__n" aria-hidden="true">03</p>
+        <div class="tramo__caja">
+          <h3>En la obra</h3>
+          <p>Alguien tiene que recibir y firmar. Conviene decir de antemano por dónde
+            entra el camión: en sitio con pendiente o camino de ripio blando, un
+            camión cargado no da la vuelta.</p>
+          <dl class="tramo__datos">
+            <div><dt>Sectores a los que llega</dt><dd><span class="falta">falta</span></dd></div>
+            <div><dt>Recargo por distancia</dt><dd><span class="falta">falta</span></dd></div>
+          </dl>
+        </div>
+      </li>
+    </ol>
+  </div>
+
+  <p class="firma">Descripción general del despacho. Los sectores, plazos y costos los
+    define Ferrecor.</p>
+</section>
+
+<!-- ═════════ LA OBRA NO ESPERA ═════════ -->
+<section class="lista" id="lista" aria-labelledby="t-lista">
+  <div class="lista__cuerpo">
+    <p class="antetitulo antetitulo--claro">El canal que ya existe</p>
+    <h2 id="t-lista">La obra no espera</h2>
+    <p class="entrada">La lista llega como llega: una foto del cuaderno, un audio, tres
+      renglones escritos con una mano sucia de cemento. Lo que importa es que salga
+      hoy, no que esté bonita.</p>
+
+    <ol class="pasos">
+      <li>
+        <p class="pasos__n" aria-hidden="true">1</p>
+        <div>
+          <h3>Manda la lista y el sector</h3>
+          <p>Con la dirección de la obra o la referencia del camino. Sin eso no se
+            puede cotizar el flete.</p>
+        </div>
+      </li>
+      <li>
+        <p class="pasos__n" aria-hidden="true">2</p>
+        <div>
+          <h3>Vuelve confirmada</h3>
+          <p>Qué hay, qué no, y a qué hora saldría. <span class="falta">falta: en qué plazo se responde</span></p>
+        </div>
+      </li>
+      <li>
+        <p class="pasos__n" aria-hidden="true">3</p>
+        <div>
+          <h3>Sale el camión</h3>
+          <p>Y alguien recibe en la obra. Si no hay quien reciba, se acuerda otro día:
+            el material no se deja tirado.</p>
+        </div>
+      </li>
+    </ol>
+
+    <form class="form" id="form-lista">
+      <div class="campo">
+        <label for="f-lista">Su lista</label>
+        <textarea id="f-lista" name="lista" rows="4" placeholder="20 sacos de cemento, 6 planchas de OSB, 2 tarros de sellante"></textarea>
+      </div>
+      <div class="campo">
+        <label for="f-sector">Dónde es la obra</label>
+        <input id="f-sector" name="sector" type="text" placeholder="Camino al volcán, km 6">
+      </div>
+      <p class="resumen" id="resumen" aria-live="polite">El mensaje se arma acá abajo.</p>
+      <a class="fantasma" id="enviar" href="#lista">Enviar por WhatsApp</a>
+      <p class="lista__nota"><span class="falta">falta: el número</span> — su ficha de
+        Google no lo publica. Mientras no esté confirmado, el botón no apunta a ningún
+        número: uno equivocado sale más caro que ninguno.</p>
+    </form>
+  </div>
+</section>
+
+</main>
+
+<section class="dueno" aria-labelledby="t-dueno">
+  <h2 id="t-dueno">Para el dueño</h2>
+  <div class="dueno__cols">
+    <div>
+      <h3>Lo que está verificado</h3>
+      <p>Las 100 reseñas de su ficha y que su única presencia en internet es la
+        página de la red a la que pertenecen, no una propia.</p>
+    </div>
+    <div>
+      <h3>Lo que es de ejemplo</h3>
+      <p>Los tres tramos del flete y el flujo del pedido: la forma en que ya
+        trabajan, escrita. Ni un sector ni un plazo aparece inventado.</p>
+    </div>
+    <div>
+      <h3>Lo que falta</h3>
+      <p>El número, la hora tope para despachar el mismo día, los sectores y el monto
+        mínimo. Cuatro datos: eso es toda la diferencia con la ficha del portal.</p>
+    </div>
+  </div>
+  <p class="dueno__cierre">
+    <a class="flecha" href="https://wa.me/56968650001" rel="noopener">Escribirme por WhatsApp <span aria-hidden="true">→</span></a>
+    <a class="flecha" href="https://yordyserna.github.io" rel="noopener">Ver otros trabajos <span aria-hidden="true">→</span></a>
+  </p>
+</section>
+
+<footer class="pie">
+  <p>Sitio de demostración preparado por Yordy Serna. El negocio no lo ha encargado ni
+    ha revisado su contenido. No representa a ninguna cadena ni red comercial.</p>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>

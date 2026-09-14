@@ -1,0 +1,42 @@
+FUENTES DE LAS IMAGENES Y DE LOS CLIPS - autovald-taller-puerto-montt
+Bancos libres. Fotos procesadas con preparar-lote.ps1 (JPEG, ancho y calidad
+por tratamiento); clips recortados y recomprimidos con FotoRadar.
+Formato de cada linea:  archivo  <=  banco | licencia | autor | pagina | URL original | recorte
+
+FOTOS
+port-01.jpg   <=  pexels | Pexels License | Anna Shvets | https://www.pexels.com/es-es/foto/servicio-automovil-reparacion-de-coches-comprobacion-4315572/ | https://images.pexels.com/photos/4315572/pexels-photo-4315572.jpeg | recorte 3:2, 2560 px
+tajo-01.jpg   <=  pexels | Pexels License | Artem Podrez | https://www.pexels.com/es-es/foto/sucio-roto-coche-vehiculo-8986137/ | https://images.pexels.com/photos/8986137/pexels-photo-8986137.jpeg | recorte 16:9, 2200 px
+cita-01.jpg   <=  pexels | Pexels License | Erik Mclean | https://www.pexels.com/es-es/foto/primer-plano-de-la-pinza-y-el-disco-de-freno-del-automovil-34277926/ | https://images.pexels.com/photos/34277926/pexels-photo-34277926.jpeg | recorte 16:9, 2200 px
+mit-01.jpg    <=  pexels | Pexels License | Artem Podrez | https://www.pexels.com/es-es/foto/vehiculo-mecanico-trabajo-mantenimiento-8986119/ | https://images.pexels.com/photos/8986119/pexels-photo-8986119.jpeg | recorte 3:2, 2200 px (cambiada el 09-09-2026)
+telon-01.jpg  <=  pexels | Pexels License | cottonbro studio | https://www.pexels.com/es-es/foto/manos-vehiculo-arreglar-reparar-4489765/ | https://images.pexels.com/photos/4489765/pexels-photo-4489765.jpeg | recorte 4:3, 1200 px
+mos1-01.jpg   <=  pexels | Pexels License | Miguel A. Padrinan | https://www.pexels.com/es-es/foto/blanco-y-negro-pared-muro-metal-16679591/ | https://images.pexels.com/photos/16679591/pexels-photo-16679591.jpeg | recorte 3:2, 1200 px
+mos2-01.jpg   <=  pexels | Pexels License | Artem Podrez | https://www.pexels.com/es-es/foto/trabajando-vehiculo-mecanico-reparando-8986105/ | https://images.pexels.com/photos/8986105/pexels-photo-8986105.jpeg | recorte 3:2, 1200 px
+mos3-01.jpg   <=  pexels | Pexels License | Miguel A. Padrinan | https://www.pexels.com/es-es/foto/blanco-y-negro-pared-muro-herramientas-16679581/ | https://images.pexels.com/photos/16679581/pexels-photo-16679581.jpeg | recorte 3:2, 1200 px
+mos4-01.jpg   <=  pexels | Pexels License | Phe Di Monaco | https://www.pexels.com/es-es/foto/reparacion-de-automoviles-sistema-de-frenos-de-automovil-desmantelado-31040178/ | https://images.pexels.com/photos/31040178/pexels-photo-31040178.jpeg | recorte 3:2, 1200 px
+mos5-01.jpg   <=  pexels | Pexels License | Artem Podrez | https://www.pexels.com/es-es/foto/vehiculo-arreglar-reparar-garaje-8986039/ | https://images.pexels.com/photos/8986039/pexels-photo-8986039.jpeg | recorte 3:2, 1200 px
+mos6-01.jpg   <=  pexels | Pexels License | cottonbro studio | https://www.pexels.com/es-es/foto/herramientas-arreglar-reparar-llave-inglesa-4480533/ | https://images.pexels.com/photos/4480533/pexels-photo-4480533.jpeg | recorte 3:2, 1200 px
+
+CLIPS DE FONDO (1280x720 H.264, SIN pista de audio)
+video/port.mp4  <=  pexels | Pexels License | Artem Podrez | https://www.pexels.com/video/an-engine-of-a-car-8986488/ | https://videos.pexels.com/video-files/8986488/8986488-hd_1280_720_30fps.mp4 | 10 s desde el segundo 1, 1,3 Mbps
+video/cita.mp4  <=  pexels | Pexels License | Gustavo Fring | https://www.pexels.com/video/close-up-of-a-mechanic-measuring-a-brake-rotor-6870335/ | https://videos.pexels.com/video-files/6870335/6870335-hd_1280_720_30fps.mp4 | 10 s desde el segundo 1, 0,9 Mbps
+
+NOTAS
+- Ninguna imagen viene de plus.unsplash.com (es de pago).
+- 09-09-2026: mit-01 se cambio. La anterior (Paco DP, foto 34337558) tenia
+  marcas de terceros legibles a tamano real -un cartel de Ford Granada 1980,
+  un letrero de Motorcraft, bidones de Mobil y el rotulo del alza-, y eso
+  obliga a descartar la foto entera por bonita que sea. La de ahora no tiene
+  ninguna marca legible: el unico papel del fondo es un esquema tecnico
+  desenfocado que a tamano de pantalla mide 90 px y no se lee.
+- Todas muestran el rubro, no este taller. Lo que falta y en que orden
+  conviene reemplazarlo esta en QUE-FOTOS-FALTAN.md.
+- Los nombres de autor van sin tildes a proposito: este archivo lo leen
+  y lo reescriben scripts de PowerShell 5.1, que se comen los acentos si
+  alguien lo abre sin declarar la codificacion.
+
+MAPA DE UBICACION — mapa-01.jpg
+  768 x 768 · zoom 16 · centro -41.4713294, -72.9693386
+  Mosaicos de OpenStreetMap pegados en una sola imagen, con el marcador
+  dibujado encima. Datos (c) OpenStreetMap contributors, licencia ODbL:
+  la atribucion tiene que ir VISIBLE junto al mapa, en el pie de la figura.
+  https://www.openstreetmap.org/copyright

@@ -1,0 +1,491 @@
+/* ═══════════════════════════════════════════════════════════════════
+   Cortinas Rolzzo — fábrica de cortinas · Santiago Centro
+   Tanda Santiago, prompt 03. Construida el 11-09-2026.
+
+   DIRECCIÓN — «LA TELA Y LA COTA»
+   Una fábrica de cortinas no vende living bonito: vende una medida que
+   calza. La página es la hoja de pedido del taller — fondo claro de luz
+   de ventana, gris humo para los paneles, y un azul acero que aparece
+   SÓLO en las líneas de cota y en lo que se puede tocar. La tela pone
+   el color; el CSS pone la medida.
+
+   DESLINDES escritos contra el registro:
+   · 19 constructora ekla «El plano» es blueprint OSCURO con líneas
+     claras encima. Acá es al revés: papel claro y la cota es un detalle
+     fino, no el fondo. Y el azul es acero de riel, no cian de plano.
+   · 206 Muebles Río Toltén usa «el vano con su cota» como objeto de
+     CABECERA. Acá la cabecera es un riel con su paño y la cota vive
+     dentro de la pieza firma, que es donde se usa de verdad.
+   · 04 Cortinas Deco Hogar (su pareja, misma comuna, mismo rubro) es
+     LINO Y TERRACOTA, cálida y doméstica: el muestrario en la casa.
+     Ésta es fría y de taller: la fábrica y la medida.
+
+   TRÍO — verificado contra identidades.md el 11-09-2026:
+   · Display ARCHIVO EXPANDED (0 usos en las 518 filas del registro).
+     Grotesca ancha de señalética industrial: ocupa el ancho como una
+     cota ocupa el suyo. Va en el h1, los h2 y los números de las cifras.
+   · Cuerpo RED HAT TEXT (2 usos). Neutra, buena en párrafo largo, sin
+     personalidad que compita con la display ancha.
+   · Mono NOTA SANS MONO (7 usos, la menos usada del registro: las monos
+     se acabaron el 26-08-2026). Acá lleva las cotas, los rótulos y las
+     cifras que caen en columna, con tabular-nums.
+
+   ESCENA DE PORTADA: la cortina roller baja y se detiene al 70 %.
+   PIEZA FIRMA: «a medida, sin misterio» — los tres datos que hay que
+   mandar por WhatsApp, dibujados.
+   ═══════════════════════════════════════════════════════════════════ */
+
+:root {
+  --papel:    #F7F7F6;   /* fondo                                      */
+  --humo:     #E9EAE9;   /* paneles y bandas alternas                  */
+  --humo-2:   #DDDEDD;   /* líneas y bordes                            */
+  --tinta:    #16181A;   /* texto     16,0:1 sobre papel               */
+  --medio:    #575B5E;   /* secundario 6,3:1 sobre papel, 5,6 sobre humo */
+  --acero:    #2B5F8C;   /* único acento — 6,4:1 sobre papel           */
+  --acero-o:  #1E4767;   /* hover                                      */
+  --acero-cl: #9FC4E0;   /* el acento sobre fondo oscuro: 7,3:1        */
+  --noche:    #191C1F;   /* bandas oscuras                             */
+
+  --display: 'Archivo', 'Arial Black', system-ui, sans-serif;
+  --cuerpo:  'Red Hat Text', 'Segoe UI', system-ui, sans-serif;
+  --mono:    'Noto Sans Mono', ui-monospace, 'Consolas', monospace;
+
+  --sale:   cubic-bezier(.16, 1, .3, 1);
+  --sale-2: cubic-bezier(.2, 0, 0, 1);
+
+  --ancho: min(92vw, 1160px);
+  --aire:  clamp(3.5rem, 8vw, 6.5rem);
+
+  --p--1: clamp(.79rem, .76rem + .14vw, .88rem);
+  --p-0:  clamp(1rem, .96rem + .2vw, 1.1rem);
+  --p-1:  clamp(1.14rem, 1.06rem + .34vw, 1.34rem);
+  --p-2:  clamp(1.5rem, 1.28rem + .95vw, 2.2rem);
+  --p-3:  clamp(2rem, 1.5rem + 2.2vw, 3.5rem);
+  --p-4:  clamp(2.6rem, 1.6rem + 4.6vw, 5.6rem);
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+[hidden] { display: none !important; }
+
+html { scroll-behavior: smooth; }
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+
+body {
+  margin: 0;
+  background: var(--papel);
+  color: var(--tinta);
+  font-family: var(--cuerpo);
+  font-size: var(--p-0);
+  line-height: 1.62;
+  -webkit-font-smoothing: antialiased;
+}
+
+img { max-width: 100%; }
+a { color: inherit; }
+
+.ancho { width: var(--ancho); margin-inline: auto; }
+
+h1, h2 {
+  font-family: var(--display);
+  font-weight: 700;
+  font-stretch: 125%;
+  line-height: 1.04;
+  letter-spacing: -.01em;
+  margin: 0;
+}
+h3 { font-family: var(--cuerpo); font-weight: 700; margin: 0 0 .5rem; font-size: var(--p-1); line-height: 1.2; }
+
+.titulo { font-size: var(--p-3); margin: 0 0 1.4rem; }
+.titulo--chico { font-size: var(--p-2); }
+.titulo--claro { color: var(--papel); }
+
+.rotulo {
+  font-family: var(--mono);
+  font-size: var(--p--1);
+  letter-spacing: .14em;
+  text-transform: uppercase;
+  color: var(--acero);
+  margin: 0 0 1.1rem;
+}
+.rotulo--claro { color: var(--acero-cl); }
+
+.entradilla { font-size: var(--p-1); color: var(--medio); max-width: 58ch; margin: 0 0 2rem; }
+.mini { font-size: var(--p--1); color: var(--medio); max-width: 60ch; }
+
+/* Datos de ejemplo — honestidad visible. Lo que no nos dieron se ve. */
+.ej {
+  color: var(--medio);
+  font-style: italic;
+  border-bottom: 1px dashed var(--acero);
+}
+.ej::after {
+  content: " (ej.)";
+  font-family: var(--mono);
+  font-size: .76em;
+  font-style: normal;
+  opacity: .8;
+}
+
+.boton {
+  display: inline-flex; align-items: center; justify-content: center;
+  min-height: 48px; padding: 0 1.5rem;
+  background: var(--acero); color: var(--papel);
+  border-radius: 3px; text-decoration: none;
+  font-weight: 700; font-size: var(--p-0);
+  transition: background-color .2s ease, transform .2s ease;
+}
+.boton:hover, .boton:focus-visible { background: var(--acero-o); transform: translateY(-1px); }
+.boton--linea { background: transparent; color: var(--acero); box-shadow: inset 0 0 0 2px var(--acero); }
+.boton--linea:hover, .boton--linea:focus-visible { background: var(--acero); color: var(--papel); }
+
+:focus-visible { outline: 3px solid var(--acero); outline-offset: 3px; }
+
+/* ── BANDA DE PROPUESTA ─────────────────────────────────────────── */
+.propuesta { background: var(--noche); color: var(--papel); }
+.propuesta__in { padding: .95rem 0; }
+.propuesta__q {
+  font-family: var(--mono); font-size: var(--p--1);
+  letter-spacing: .03em; margin: 0 0 .3rem; color: var(--acero-cl);
+}
+.propuesta__d { margin: 0; font-size: var(--p--1); line-height: 1.5; max-width: 88ch; }
+.propuesta .dato { font-family: var(--mono); font-weight: 600; color: var(--acero-cl); }
+
+/* ── CABECERA ───────────────────────────────────────────────────── */
+/* Sólida por defecto (sin JS). El JS agrega la transparencia sobre la
+   portada: al revés, sin JS quedaría ilegible sobre la foto. */
+.cab {
+  position: sticky; top: 0; z-index: 50;
+  background: var(--papel);
+  border-bottom: 1px solid var(--humo-2);
+  transition: transform .3s var(--sale-2), background-color .3s ease, border-color .3s ease;
+}
+.cab__in { display: flex; align-items: center; justify-content: space-between; gap: 1.2rem; padding: .5rem 0; }
+.cab__marca { display: inline-flex; align-items: center; gap: .7rem; text-decoration: none; min-height: 44px; }
+.cab__txt {
+  font-family: var(--display); font-weight: 700; font-stretch: 125%;
+  font-size: var(--p-1); line-height: 1;
+  display: flex; flex-direction: column; gap: .18rem;
+}
+.cab__sub {
+  font-family: var(--mono); font-weight: 400;
+  font-size: .54em; letter-spacing: .1em; color: var(--medio); text-transform: uppercase;
+}
+.cab__nav { display: flex; align-items: center; gap: 1.4rem; }
+.cab__nav a {
+  font-size: var(--p--1); text-decoration: none; color: var(--medio);
+  min-height: 44px; display: inline-flex; align-items: center;
+  transition: color .2s ease;
+}
+.cab__nav a:hover, .cab__nav a:focus-visible { color: var(--tinta); }
+.cab__tel { color: var(--acero) !important; font-family: var(--mono); letter-spacing: .03em; }
+
+/* El objeto de cabecera: un riel con su paño a medio bajar. */
+.riel { position: relative; width: 26px; height: 28px; flex: 0 0 auto; }
+.riel__tubo { position: absolute; left: 0; right: 0; top: 2px; height: 4px; border-radius: 2px; background: var(--acero); }
+.riel__pano {
+  position: absolute; left: 3px; right: 3px; top: 6px; height: 14px;
+  background: var(--humo-2); border: 1px solid var(--acero);
+  border-top: none;
+}
+
+/* La cabecera NO se pone transparente sobre la portada, y es a proposito:
+   al ser sticky en flujo normal queda ARRIBA de la foto, no encima, asi
+   que transparentarla mostraba el papel claro y el texto blanco
+   desaparecia. Solida siempre: legible con y sin JS, y una cosa menos
+   que se puede romper. */
+.js .cab--oculta { transform: translateY(-100%); }
+@media (prefers-reduced-motion: reduce) { .cab { transition-duration: 1ms; } }
+
+/* ── PORTADA ────────────────────────────────────────────────────── */
+.portada {
+  position: relative; isolation: isolate; overflow: hidden;
+  min-height: 86svh; display: flex; align-items: center;
+  padding: var(--aire) 0;
+}
+.portada__foto { position: absolute; inset: 0; z-index: -2; }
+.portada__foto img {
+  display: block; width: 100%; height: 100%; object-fit: cover; object-position: 68% 50%;
+}
+/* El velo entero en rgba y terminando en alfa 0: un var() dentro del
+   gradiente no lleva alfa y pintaría la foto de punta a punta. */
+.portada__foto::after {
+  content: ""; position: absolute; inset: 0;
+  background: linear-gradient(95deg,
+    rgba(22, 24, 26, .92) 0%, rgba(22, 24, 26, .88) 30%,
+    rgba(22, 24, 26, .62) 52%, rgba(22, 24, 26, .18) 78%, rgba(22, 24, 26, 0) 100%);
+}
+.portada__in { position: relative; z-index: 1; color: var(--papel); }
+.portada .rotulo { color: var(--acero-cl); }
+
+.portada__h1 { font-size: var(--p-4); max-width: 16ch; margin: 0 0 1.4rem; }
+.portada__h1-b { color: var(--acero-cl); }
+.portada__bajada { font-size: var(--p-1); max-width: 46ch; color: #DDE2E5; margin: 0 0 2rem; }
+.portada__acc { display: flex; flex-wrap: wrap; gap: .8rem; margin: 0 0 2.6rem; }
+.portada .boton--linea { color: var(--papel); box-shadow: inset 0 0 0 2px rgba(247,247,246,.55); }
+.portada .boton--linea:hover, .portada .boton--linea:focus-visible { background: var(--papel); color: var(--tinta); box-shadow: inset 0 0 0 2px var(--papel); }
+
+.specs { display: flex; flex-wrap: wrap; gap: 1.6rem 2.6rem; margin: 0; }
+.specs div { display: flex; flex-direction: column; gap: .15rem; }
+.specs dt { font-family: var(--mono); font-size: var(--p--1); letter-spacing: .08em; text-transform: uppercase; color: #B9C0C4; }
+.specs dd {
+  margin: 0; font-family: var(--display); font-weight: 700; font-stretch: 125%;
+  font-size: var(--p-2); line-height: 1; color: var(--papel);
+  font-variant-numeric: tabular-nums;
+}
+
+/* ESCENA — la cortina roller baja */
+.escena { position: absolute; right: 4vw; top: 50%; transform: translateY(-50%); width: min(30vw, 300px); z-index: -1; opacity: .9; }
+.escena__svg { display: block; width: 100%; height: auto; }
+.escena__vano { fill: none; stroke: rgba(159, 196, 224, .45); stroke-width: 1.5; }
+.escena__tubo { fill: var(--acero-cl); }
+.escena__pano { fill: rgba(159, 196, 224, .22); stroke: rgba(159, 196, 224, .5); stroke-width: 1; }
+.escena__barra { fill: var(--acero-cl); }
+.escena__tira { stroke: var(--acero-cl); stroke-width: 1.2; }
+.escena__tirador { fill: var(--acero-cl); }
+.escena__cota line { stroke: rgba(159, 196, 224, .7); stroke-width: 1; }
+.escena__cota text { fill: rgba(159, 196, 224, .8); font-family: var(--mono); font-size: 9px; letter-spacing: .1em; }
+
+.js .escena__baja { transform-origin: top; transform: scaleY(.06); }
+.js .escena--va .escena__baja { animation: baja 1.1s var(--sale) forwards; }
+@keyframes baja { from { transform: scaleY(.06); } to { transform: scaleY(1); } }
+@media (prefers-reduced-motion: reduce) {
+  .js .escena__baja { transform: none; }
+  .js .escena--va .escena__baja { animation: none; }
+}
+@media (max-width: 900px) {
+  /* En el teléfono la escena va DEBAJO del titular, no encima: en el
+     DOM viene antes (para que el lector de pantalla la salte como
+     decoración), así que acá se reordena con flex en vez de moverla. */
+  .portada { display: flex; flex-direction: column; justify-content: center; }
+  .portada__in { order: 1; }
+  .escena { order: 2; position: static; transform: none; width: min(58vw, 200px); margin: 2.2rem auto 0 0; opacity: .75; }
+  /* El alto se acota: con 86svh en una ventana muy alta la portada se
+     estira y deja un vacío enorme debajo del contenido. */
+  .portada { min-height: min(86svh, 700px); }
+}
+
+/* ── CIFRAS ─────────────────────────────────────────────────────── */
+.cifras { background: var(--noche); color: var(--papel); padding: clamp(2.4rem, 5vw, 3.4rem) 0; }
+.cifras__grid { display: grid; gap: 2rem; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); }
+.cifra__n {
+  font-family: var(--display); font-weight: 700; font-stretch: 125%;
+  font-size: var(--p-3); line-height: 1; margin: 0 0 .5rem;
+  color: var(--acero-cl); font-variant-numeric: tabular-nums;
+}
+.cifra--cero .cifra__n { color: #E8B4A0; }   /* el único que no es acero: es la herida */
+.cifra__t { margin: 0; font-size: var(--p--1); color: #B9C0C4; line-height: 1.5; max-width: 30ch; }
+
+/* ── PIEZA FIRMA: A MEDIDA, SIN MISTERIO ────────────────────────── */
+.medir { padding: var(--aire) 0; }
+.pasos { list-style: none; margin: 0; padding: 0; }
+.paso {
+  display: grid;
+  grid-template-columns: 4rem minmax(0, 1fr) 13rem;
+  grid-template-rows: auto;
+  gap: 1rem 2rem;
+  align-items: start;
+  padding: 2rem 0;
+  border-top: 1px solid var(--humo-2);
+}
+.paso__n {
+  font-family: var(--mono); font-size: var(--p--1); color: var(--acero);
+  margin: .25rem 0 0; letter-spacing: .08em;
+}
+.paso__cuerpo p { margin: 0; color: var(--medio); max-width: 52ch; }
+.paso__dib { margin: 0; }
+.paso__dib svg { display: block; width: 100%; height: auto; }
+.dib__vano { fill: var(--humo); stroke: var(--humo-2); stroke-width: 1.5; }
+.dib__cota line { stroke: var(--acero); stroke-width: 1.2; }
+.dib__t { fill: var(--acero); font-family: var(--mono); font-size: 9px; letter-spacing: .08em; }
+.dib__pano { fill: rgba(43, 95, 140, .18); stroke: var(--acero); stroke-width: 1.2; }
+
+.medir__cierre { margin: 2.2rem 0 1.4rem; font-size: var(--p-1); max-width: 58ch; }
+.medir__acc { margin: 0; }
+
+/* ── TAJO ───────────────────────────────────────────────────────── */
+.tajo { position: relative; margin: 0; }
+.tajo img { display: block; width: 100%; height: clamp(280px, 46vh, 460px); object-fit: cover; object-position: 50% 42%; }
+.tajo figcaption {
+  position: absolute; inset: auto 0 0 0;
+  padding: 2.6rem 4vw 1.5rem;
+  background: linear-gradient(180deg, rgba(22,24,26,0) 0%, rgba(22,24,26,.82) 58%, rgba(22,24,26,.92) 100%);
+  color: var(--papel); font-size: var(--p--1); max-width: 100%;
+}
+
+/* ── LOS TIPOS ──────────────────────────────────────────────────── */
+.tipos { background: var(--humo); padding: var(--aire) 0; }
+.tipos__grid { display: grid; gap: 1.2rem; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); }
+.tipo { background: var(--papel); border: 1px solid var(--humo-2); border-radius: 4px; padding: 1.5rem; }
+.tipo p { margin: 0 0 .9rem; color: var(--medio); }
+.tipo__para { margin: 0; font-size: var(--p--1); }
+.tipo__para span { font-family: var(--mono); letter-spacing: .08em; text-transform: uppercase; color: var(--acero); margin-right: .4rem; }
+
+/* ── MITADES: LA FÁBRICA ────────────────────────────────────────── */
+.mitades { display: grid; grid-template-columns: minmax(0, 1fr); align-items: center; }
+@media (min-width: 900px) { .mitades { grid-template-columns: 1fr 1fr; } }
+.mitades__foto { margin: 0; }
+.mitades__foto img { display: block; width: 100%; height: 100%; min-height: 320px; object-fit: cover; object-position: 50% 40%; }
+.mitades__texto { padding: var(--aire) 6vw; }
+.mitades__texto p { color: var(--medio); max-width: 52ch; }
+
+.datos { margin: 1.8rem 0 1.4rem; }
+.datos div { display: flex; flex-wrap: wrap; gap: .3rem 1rem; padding: .6rem 0; border-top: 1px solid var(--humo-2); }
+.datos dt { font-family: var(--mono); font-size: var(--p--1); letter-spacing: .06em; text-transform: uppercase; color: var(--medio); min-width: 11rem; }
+.datos dd { margin: 0; }
+
+/* ── CITA ───────────────────────────────────────────────────────── */
+.cita { position: relative; margin: 0; display: grid; place-items: center; min-height: clamp(300px, 52vh, 500px); }
+.cita img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: 50% 45%; z-index: -2; }
+.cita::before {
+  content: ""; position: absolute; inset: 0; z-index: -1;
+  background: linear-gradient(180deg, rgba(22,24,26,.55) 0%, rgba(22,24,26,.78) 100%);
+}
+.cita__q { margin: 0; padding: 2rem 6vw; max-width: 46ch; text-align: center; }
+.cita__q p {
+  margin: 0; color: var(--papel);
+  font-family: var(--display); font-weight: 700; font-stretch: 125%;
+  font-size: var(--p-2); line-height: 1.22;
+}
+
+/* ── CÓMO SE PIDE (con telón) ───────────────────────────────────── */
+.con-telon { position: relative; isolation: isolate; overflow: hidden; background: var(--noche); color: var(--papel); }
+.telon { position: absolute; inset: 0; z-index: -1; }
+/* El telón es la foto NÍTIDA a baja opacidad, nunca desenfocada: el
+   desenfoque se lee como error de carga. */
+.telon img { width: 100%; height: 100%; object-fit: cover; opacity: .14; }
+.pedir { padding: var(--aire) 0; }
+.pedir__pasos { margin: 0; padding: 0 0 0 1.4rem; max-width: 62ch; }
+.pedir__pasos li { margin: 0 0 1rem; color: #C9CFD3; }
+.pedir__pasos b { color: var(--papel); }
+.pedir .ej { color: #C9CFD3; border-bottom-color: var(--acero-cl); }
+
+/* ── MOSAICO ────────────────────────────────────────────────────── */
+.mos { padding: var(--aire) 0; }
+.mos__grilla { display: grid; gap: 6px; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); }
+.mos__p { margin: 0; overflow: hidden; }
+.mos__p img { display: block; width: 100%; height: 220px; object-fit: cover; transition: transform .5s var(--sale); }
+.mos__p:hover img { transform: scale(1.04); }
+.mos__pie { margin: 1.4rem auto 0; font-size: var(--p--1); color: var(--medio); max-width: 70ch; }
+
+/* ── CONTACTO ───────────────────────────────────────────────────── */
+.contacto { background: var(--humo); padding: var(--aire) 0; }
+.contacto__cols { display: grid; gap: 2.5rem; grid-template-columns: minmax(0, 1fr); }
+@media (min-width: 860px) { .contacto__cols { grid-template-columns: 1.1fr .9fr; gap: 4rem; } }
+.contacto__num { margin: 1.4rem 0 0; }
+.contacto__num a {
+  font-family: var(--display); font-weight: 700; font-stretch: 125%;
+  font-size: var(--p-2); color: var(--acero); text-decoration: none;
+  font-variant-numeric: tabular-nums;
+  display: inline-flex; align-items: center; min-height: 48px;
+}
+.contacto__num a:hover, .contacto__num a:focus-visible { color: var(--acero-o); text-decoration: underline; }
+.contacto .datos div { border-top-color: #CFD1CF; }
+
+/* ── PARA EL DUEÑO ──────────────────────────────────────────────── */
+.dueno { background: var(--noche); color: var(--papel); padding: var(--aire) 0; }
+.dueno__cols { display: grid; gap: 2rem; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); margin: 0 0 2.2rem; }
+.dueno__cols h3 { color: var(--acero-cl); }
+.dueno__cols p { margin: 0; color: #C9CFD3; }
+.dueno__cierre { display: flex; flex-wrap: wrap; gap: 1.6rem; margin: 0; }
+.flecha { color: #C9CFD3; text-decoration: none; font-size: var(--p--1); min-height: 44px; display: inline-flex; align-items: center; }
+.flecha:hover, .flecha:focus-visible { color: var(--papel); text-decoration: underline; }
+.flecha--fuerte { color: var(--acero-cl); font-weight: 700; }
+
+/* ── PIE ────────────────────────────────────────────────────────── */
+.pie { background: var(--papel); border-top: 1px solid var(--humo-2); }
+.pie__in { padding: 2rem 0 4.8rem; }
+.pie p { margin: 0 0 .6rem; font-size: var(--p--1); color: var(--medio); }
+.pie__leg { font-size: .78rem; }
+
+/* ── APARICIONES AL SCROLLEAR ───────────────────────────────────── */
+/* El observador va sobre el CONTENEDOR, nunca sobre los hijos: un hijo
+   con clip-path a área cero jamás dispara IntersectionObserver. */
+.js .rev > * { opacity: 0; transform: translateY(14px); transition: opacity .6s var(--sale), transform .6s var(--sale); }
+.js .rev.rev--on > * { opacity: 1; transform: none; }
+.js .rev.rev--on > *:nth-child(2) { transition-delay: .07s; }
+.js .rev.rev--on > *:nth-child(3) { transition-delay: .14s; }
+.js .rev.rev--on > *:nth-child(4) { transition-delay: .21s; }
+.js .rev.rev--on > *:nth-child(5) { transition-delay: .28s; }
+@media (prefers-reduced-motion: reduce) {
+  .js .rev > * { opacity: 1; transform: none; transition: none; }
+  .mos__p img { transition: none; }
+}
+
+/* ── MÓVIL ──────────────────────────────────────────────────────── */
+@media (max-width: 980px) {
+  .cab__nav { gap: .9rem; }
+  .cab__nav a:not(.cab__tel) { display: none; }
+  /* En dos columnas el dibujo NO puede heredar la fila del escritorio:
+     va a su propia fila, debajo del texto. */
+  .paso { grid-template-columns: 3rem minmax(0, 1fr); grid-template-rows: auto auto; }
+  .paso__dib { grid-column: 2; max-width: 260px; margin-top: .8rem; }
+  .portada__foto img { object-position: 62% 50%; }
+  .portada__foto::after {
+    background: linear-gradient(180deg,
+      rgba(22,24,26,.90) 0%, rgba(22,24,26,.82) 45%, rgba(22,24,26,.88) 100%);
+  }
+  .mitades__texto { padding: var(--aire) 4vw; }
+}
+
+/* ── MAPA DE UBICACION ──────────────────────────────────────────────
+   Imagen propia con mosaicos de OpenStreetMap pegados: la CSP prohibe
+   pedir nada a un tercero, asi que un iframe de Google Maps quedaria en
+   blanco SIN dar un solo error. El "Como llegar" si es un enlace, y un
+   enlace no lo bloquea nada.
+   Los colores salen de currentColor a proposito: asi el bloque se adapta
+   a la paleta de cada demo sin conocerla y sin chocar con ella.
+   La atribucion a OpenStreetMap la exige su licencia (ODbL). */
+.mapa-sec { padding: clamp(2.5rem, 6vw, 4.5rem) 0; }
+.mapa { margin: 1.4rem 0 0; border: 1px solid; border-color: color-mix(in srgb, currentColor 22%, transparent); border-radius: 10px; overflow: hidden; }
+@supports not (color: color-mix(in srgb, red 50%, blue)) { .mapa { border-color: rgba(128, 128, 128, .35); } }
+.mapa img { display: block; width: 100%; height: auto; aspect-ratio: 16 / 10; object-fit: cover; }
+.mapa__pie {
+  display: flex; flex-wrap: wrap; align-items: center; gap: .4rem 1rem;
+  padding: .75rem .9rem;
+  font-size: .86em; line-height: 1.45;
+  border-top: 1px solid; border-top-color: color-mix(in srgb, currentColor 22%, transparent);
+}
+@supports not (color: color-mix(in srgb, red 50%, blue)) { .mapa__pie { border-top-color: rgba(128, 128, 128, .35); } }
+.mapa__pie b { font-weight: 700; }
+.mapa__ir { color: inherit; font-weight: 700; text-decoration: underline; min-height: 44px; display: inline-flex; align-items: center; }
+.mapa__cred { width: 100%; font-size: .84em; opacity: .8; }
+.mapa__cred a { color: inherit; }
+/* ── BOTON FLOTANTE DE CONTACTO ─────────────────────────────────────
+   56 px de alto, por encima del minimo tactil de 44. Los colores de
+   marca van a proposito: se reconocen sin leerlos, y eso es lo que hace
+   que se toquen. Se ve SIEMPRE por defecto; el JS solo lo aparta sobre
+   la portada. Al reves, un fallo del script se llevaria el CTA principal. */
+.flota {
+  position: fixed;
+  right: max(1rem, env(safe-area-inset-right, 0px));
+  bottom: max(1rem, env(safe-area-inset-bottom, 0px));
+  z-index: 60;
+  display: inline-flex; align-items: center; gap: .55rem;
+  height: 56px; padding: 0 1.15rem 0 1rem;
+  border-radius: 999px;
+  text-decoration: none;
+  font-family: var(--cuerpo, system-ui, sans-serif);
+  font-size: .95rem; font-weight: 700; line-height: 1;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, .26), 0 2px 6px rgba(0, 0, 0, .16);
+  transition: opacity .28s ease, transform .28s ease, box-shadow .18s ease;
+}
+.flota--wa { background: #25D366; color: #07310F; }
+.flota--ig { background: linear-gradient(120deg, #F9CE34 4%, #EE2A7B 48%, #6228D7 96%); color: #FFFFFF; }
+.flota__i { width: 26px; height: 26px; fill: currentColor; flex: none; }
+.flota:hover, .flota:focus-visible { transform: translateY(-2px); box-shadow: 0 10px 26px rgba(0, 0, 0, .3); }
+.js .flota--arriba { opacity: 0; transform: translateY(14px) scale(.94); pointer-events: none; }
+
+@media (max-width: 520px) {
+  .flota { width: 56px; padding: 0; justify-content: center; }
+  .flota__t { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .flota { transition: opacity .28s ease; }
+  .flota:hover, .flota:focus-visible { transform: none; }
+  .js .flota--arriba { transform: none; }
+}
+/* Ancho del mapa: casi siempre queda como hijo DIRECTO de la seccion, fuera
+   del contenedor .ancho, y sin esto se va de borde a borde y el pie arranca
+   pegado al filo de la pantalla. (Parche del 11-09-2026; ya va en
+   demos\poner-mapa.ps1 para las proximas.) */
+.mapa { width: min(100% - 2.5rem, var(--ancho, 1100px)); margin: 1.4rem auto 0; }

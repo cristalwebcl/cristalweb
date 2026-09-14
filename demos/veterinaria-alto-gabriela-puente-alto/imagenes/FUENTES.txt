@@ -1,0 +1,22 @@
+FUENTES DE LAS IMAGENES - ClÃ­nica Veterinaria Alto Gabriela Rehecha el 13-09-2026 (presentacion antes que texto). Fotos de REFERENCIA de bancos libres: ninguna es del local; las verdaderas las tiene que mandar el negocio. 
+port-01.jpg  <-  pozo-p-ag-sofa\009.jpg  |  pexels (Pexels License)  |  autor: Regina Tommasi  |  https://www.pexels.com/es-es/foto/perro-durmiendo-tranquilamente-sobre-una-manta-acogedora-30179132/  |  consulta: "dog sofa"
+hund1-01.jpg  <-  pozo-p-ag-consulta\008.jpg  |  pexels (Pexels License)  |  autor: Eduardo López  |  https://www.pexels.com/es-es/foto/perro-que-da-palmaditas-con-la-mano-16618522/  |  consulta: "veterinarian dog"
+hund2-01.jpg  <-  pozo-p-ag-peluqueria\006.jpg  |  pexels (Pexels License)  |  autor: Eduardo López  |  https://www.pexels.com/es-es/foto/perro-y-mano-16620449/  |  consulta: "dog grooming"
+hund3-01.jpg  <-  pozo-p-ag-peluqueria\002.jpg  |  pexels (Pexels License)  |  autor: Eduardo López  |  https://www.pexels.com/es-es/foto/perro-marron-parado-sobre-fondo-negro-16618528/  |  consulta: "dog grooming"
+hund4-01.jpg  <-  pozo-p-ag-ventana\009.jpg  |  pexels (Pexels License)  |  autor: Matthew Heneghan  |  https://www.pexels.com/es-es/foto/animal-mascota-pelo-piel-7186895/  |  consulta: "cat window"
+hund5-01.jpg  <-  pozo-p-ag-consulta\005.jpg  |  pexels (Pexels License)  |  autor: Carolina Gonzalez  |  https://www.pexels.com/es-es/foto/blanco-y-negro-perro-mascota-retrato-20496584/  |  consulta: "veterinarian dog"
+hund6-01.jpg  <-  pozo-p-ag-placa\005.jpg  |  pexels (Pexels License)  |  autor: Carlos Reyes  |  https://www.pexels.com/es-es/foto/perro-mascota-cabeza-retrato-18106142/  |  consulta: "dog collar tag"
+banda-01.jpg  <-  pozo-p-ag-cama\012.jpg  |  pexels (Pexels License)  |  autor: PubPro  |  https://www.pexels.com/es-es/foto/retrato-de-perro-34492887/  |  consulta: "dog bed"
+cita-01.jpg  <-  pozo-p-ag-sofa\006.jpg  |  pexels (Pexels License)  |  autor: PubPro  |  https://www.pexels.com/es-es/foto/retrato-de-perro-en-el-sofa-33521583/  |  consulta: "dog sofa"
+mos1-01.jpg  <-  pozo-p-ag-caja\003.jpg  |  pexels (Pexels License)  |  autor: Huy Phan  |  https://www.pexels.com/es-es/foto/animal-mascota-mono-gato-domestico-10292639/  |  consulta: "cat box"
+mos2-01.jpg  <-  pozo-p-ag-ventana\010.jpg  |  pexels (Pexels License)  |  autor: Berkcan  |  https://www.pexels.com/es-es/foto/oscuro-mascota-mono-pelo-20519441/  |  consulta: "cat window"
+mos3-01.jpg  <-  pozo-p-ag-cama\008.png  |  pexels (Pexels License)  |  autor: Ahinoam González  |  https://www.pexels.com/es-es/foto/calor-de-invierno-29570470/  |  consulta: "dog bed"
+mos4-01.jpg  <-  pozo-p-ag-cama\010.jpg  |  pexels (Pexels License)  |  autor: María Celeste Vallejos  |  https://www.pexels.com/es-es/foto/adorable-chihuahua-con-un-elegante-sueter-relajandose-en-el-interior-33792069/  |  consulta: "dog bed"
+mos5-01.jpg  <-  pozo-p-ag-caja\002.png  |  pexels (Pexels License)  |  autor: Ander Reed  |  https://www.pexels.com/es-es/foto/adorable-gato-durmiendo-en-una-caja-de-madera-33696891/  |  consulta: "cat box"
+mos6-01.jpg  <-  pozo-p-ag-paseo\010.jpg  |  pexels (Pexels License)  |  autor: Ludovic Delot  |  https://www.pexels.com/es-es/foto/chihuahua-con-correa-en-un-campo-abierto-con-hierba-al-aire-libre-33471267/  |  consulta: "dog leash walk"
+
+BRUMA (bruma-pag-0N.png y bruma-osc-0N.png, 30x20): las MISMAS fotos, recortadas a 3:2, reducidas y
+recoloreadas con C:\devs\demos\hacer-bruma.ps1 (clara >= 0,68 de luminancia / oscura <= 0,05). No suman fuentes.
+    pagina: hund4-01.jpg, mos2-01.jpg, hund3-01.jpg, mos4-01.jpg, port-01.jpg   |   oscuras: port-01.jpg, mos2-01.jpg, hund4-01.jpg
+
+MAPA: iframe de Google Maps (embed publico, sin clave). No hay imagen de mapa.

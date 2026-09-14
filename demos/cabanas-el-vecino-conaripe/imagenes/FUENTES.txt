@@ -1,18 +1,30 @@
 PROCEDENCIA DE LAS IMÁGENES — Cabañas El Vecino, Coñaripe
 ════════════════════════════════════════════════════════════════
+25 archivos JPEG, uno por línea, más el mapa. Revisado el 10-09-2026.
 
-DEL NEGOCIO — siete fotos Y EL LOGO, de su Facebook.
+Esta demo NO lleva video de fondo: el clip se reserva para los negocios
+mejor valorados. Todo el ambiente de portada lo pone el CSS (las tres
+ventanas que se encienden y las doce motas de luz), así que en esta
+carpeta no hay ni un .mp4 y el mosaico sube de seis piezas a ocho para
+compensar el peso visual que el clip habría puesto.
 
+
+1 · DEL NEGOCIO — siete fotos y el logo, de su Facebook público
+────────────────────────────────────────────────────────────────
 gal-03.jpg    1300x1300  EL LOGO — casa, montaña y agua a una línea
 media-01.jpg  1500x1125  el atardecer sobre el Calafquén desde su pasto
 gal-02.jpg    1300x1300  la cabaña roja con su puerta
 gal-01.jpg    1300x731   Coñaripe visto desde arriba
-tira-01.jpg   1000x1000  dormitorio con camarote
-tira-02.jpg   1000x1000  el living
+tira-01.jpg   1000x1000  dormitorio con camarote y cama de plaza y media
+tira-02.jpg   1000x1000  el living, con la estufa al fondo
 tira-03.jpg   1000x1000  el segundo piso abuhardillado
 
 Bajadas desde la copia cacheada del buscador, techo 1600 px. Por eso
 ninguna ocupa pantalla completa.
+
+Las tres de la tira son además la evidencia de la sección «La cabaña
+por dentro»: cada una de sus cuatro fichas nombra algo que se ve en
+estas fotos, y nada que no se vea en ellas está escrito ahí.
 
 DOS COSAS QUE VALEN LA LLAMADA:
 
@@ -26,28 +38,107 @@ Sietelagos, y uno de precios de temporada). El primero promociona un
 paseo de terceros; el segundo tiene un precio que envejece solo y una
 página no debería llevarlo escrito en una imagen.
 
-────────────────────────────────────────────────────────────────
-GENÉRICAS — dos archivos, tres usos. De banco libre, sólo de fondo.
 
-port-01.jpg  2560x1707  el horizonte al anochecer, azul y naranja
+2 · RECORTES DE LAS SUYAS — el mosaico
+────────────────────────────────────────────────────────────────
+Cinco de las ocho piezas del mosaico son otro recorte de una foto que
+ya está más arriba en la página. A ese tamaño no se leen como
+repetición sino como serie, y es la única parte de la página donde una
+imagen puede volver a aparecer.
+
+mos-01.jpg  780x585  <=  recorte de media-01.jpg (del negocio)
+mos-02.jpg  780x439  <=  recorte de gal-01.jpg   (del negocio)
+mos-04.jpg  780x780  <=  recorte de gal-02.jpg   (del negocio)
+mos-05.jpg  780x780  <=  recorte de tira-03.jpg  (del negocio)
+mos-06.jpg  780x780  <=  recorte de tira-02.jpg  (del negocio)
+
+
+3 · DE BANCO LIBRE — fondos, ambiente, nunca inventario
+────────────────────────────────────────────────────────────────
+Ninguna promete una instalación del negocio. Son cielo, agua, bosque,
+fuego y madera: ambiente. Lo que tienen de verdad va con sus propias
+fotos y con pie.
+
+port-01.jpg  2560x1440  el horizonte al anochecer, azul y naranja
   pxhere · dominio público (CC0)
   https://get.pxhere.com/photo/sea-ocean-horizon-light-sky-sunrise-sunset-night-star-dawn-atmosphere-dusk-evening-serene-blue-night-sky-moon-moonlight-astronomy-stars-afterglow-night-sky-stars-astronomical-object-stars-night-atmosphere-of-earth-657540.jpg
-  original 6000x4000 — es literalmente la paleta de la página:
-  --anochecer arriba y --luz en la franja baja
+  original 6000x4000, recortada a 16:9 — es literalmente la paleta de
+  la página: --anochecer arriba y --luz en la franja baja. Las tres
+  ventanas encendidas del CSS caen sobre la ladera de esta foto.
 
-aura-01.jpg  900x1350   ventana iluminada al anochecer
-cita-01.jpg  2000x3000  la misma, a tamaño de cita
+aura-01.jpg  900x1350   ventana iluminada al anochecer, reventada a
+                        blur(64px): no se lee como foto, es color
   Pexels · licencia Pexels (uso libre)
-  https://images.pexels.com/photos/7390889/pexels-photo-7390889.jpeg?cs=srgb&dl=pexels-laup-7390889.jpg&fm=jpg
+  https://images.pexels.com/photos/7390889/pexels-photo-7390889.jpeg
   original 4000x6000
 
-Ninguna promete una instalación del negocio: son cielo y una ventana
-encendida. Lo que tienen de verdad va con sus propias fotos y con pie.
+telon-03.jpg  1200x800  interior de cabaña de troncos con la ventana
+                        encendida — telón de «La cabaña por dentro»
+  pexels · Pexels License · Erik Johnson · recorte 3:2
+  https://www.pexels.com/es-es/foto/cama-habitacion-rustico-mueble-18213785/
+  https://images.pexels.com/photos/18213785/pexels-photo-18213785.jpeg
 
+telon-04.jpg  1200x800  interior rústico con lámpara y la vista al agua
+                        — telón de la lámina «La llave»
+  pexels · Pexels License · UMUT DAĞLI · recorte 3:2
+  https://www.pexels.com/es-es/foto/pared-muro-vintage-lampara-18266258/
+  https://images.pexels.com/photos/18266258/pexels-photo-18266258.jpeg
+
+mos-07.jpg  1200x800  la noche estrellada sobre el agua
+  pxhere · dominio público (CC0) · recorte 3:2
+  https://pxhere.com/en/photo/107136
+  https://get.pxhere.com/photo/horizon-mountain-sky-night-star-lake-dawn-atmosphere-dusk-reflection-darkness-galaxy-aurora-moonlight-astronomy-starry-sky-astronomical-object-atmospheric-phenomenon-107136.jpg
+
+mos-08.jpg  1200x800  el lago liso al amanecer
+  pxhere · dominio público (CC0) · recorte 3:2
+  https://pxhere.com/en/photo/262
+  https://get.pxhere.com/photo/sea-coast-water-ocean-horizon-cloud-sky-sunrise-sunset-sunlight-morning-shore-lake-dawn-dusk-evening-reflection-bay-reservoir-body-of-water-loch-atmospheric-phenomenon-262.jpg
+
+
+4 · DE BANCO LIBRE, SIN URL ANOTADA — pendiente de rehacer
 ────────────────────────────────────────────────────────────────
-LO QUE FALTA
+Estos cinco entraron el 09-09-2026 y la carpeta de descarga con su
+FUENTES.json ya no está, así que el enlace exacto no se puede citar.
+Vinieron por FotoRadar, que sólo baja material marcado libre (CC0,
+pxhere, Pexels y Wikimedia Commons), y ninguno lleva marca, precio ni
+persona reconocible — pero eso NO reemplaza la línea de procedencia.
 
+  ANTES DE PUBLICAR ESTA PÁGINA HAY QUE VOLVER A BAJARLOS con
+  FotoRadar apuntando a una carpeta con FUENTES.json, o cambiarlos por
+  otros equivalentes, y completar acá banco, licencia, autor y URL.
+
+cita-01.jpg   2200x1433  la cabaña de noche con las ventanas prendidas
+                         — es la banda de la cita, y la única foto
+                         genérica que hace de «lo que la página promete»
+tajo-01.jpg   2200x1238  agua dorada al atardecer con el bosque al fondo
+banda-01.jpg  2200x1146  franja de bosque de noche sobre el agua
+telon-01.jpg  1200x800   árboles a contraluz — telón de «Llegar»
+telon-02.jpg  1200x2026  brasas — telón de «La leña»
+mos-03.jpg    1200x797   bosque otoñal reflejado en el agua
+
+
+5 · MAPA DE UBICACIÓN — mapa-01.jpg
+────────────────────────────────────────────────────────────────
+mapa-01.jpg  768x768 · zoom 15 · centro -39.567853, -72.007417
+  Mosaicos de OpenStreetMap bajados una vez con demos\mapa-negocio.ps1
+  y pegados en una sola imagen, con el marcador dibujado encima. La
+  página lo sirve como cualquier foto: la CSP no deja incrustar un mapa
+  de terceros y un iframe de Google no cargaría.
+  Datos (c) OpenStreetMap contributors, licencia ODbL: la atribución
+  tiene que ir VISIBLE junto al mapa, y va en el pie de la figura.
+  https://www.openstreetmap.org/copyright
+
+  EL PUNTO ES EL CENTRO DEL PUEBLO, NO LA CABAÑA. La dirección exacta
+  no está publicada en ninguna parte y no se inventa: el pie del mapa
+  lo dice con esas palabras y el botón lleva a buscarlos por nombre en
+  Google Maps, que es la ficha real que sí existe.
+
+
+6 · LO QUE FALTA
+────────────────────────────────────────────────────────────────
 La cabaña por fuera DE NOCHE, con la luz prendida. Es la foto que esta
 página promete en su titular —«llegar donde alguien te está esperando»—
-y hoy la tiene que poner una imagen prestada. Se saca en dos minutos
-cualquier tarde de invierno.
+y hoy la tiene que poner una imagen prestada (cita-01.jpg). Se saca en
+dos minutos cualquier tarde de invierno.
+
+El detalle está en QUE-FOTOS-FALTAN.md, numerado por prioridad.

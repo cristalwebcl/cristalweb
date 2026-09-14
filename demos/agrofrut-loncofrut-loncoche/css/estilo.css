@@ -1,0 +1,821 @@
+/* ═══════════════════════════════════════════════════════════════════
+   AGROFRUT · Cooperativa Loncofrut · Loncoche
+   Demo. HTML + CSS + JS clásico. Sin build, sin librerías.
+
+   ── LA DIRECCIÓN, EN UNA FRASE ────────────────────────────────────
+   «KRAFT Y TINTA»: el papel del saco de alimento, con la tinta negra
+   del estampado y el rojo del sello.
+
+   El kraft como FONDO no estaba en el registro. Hay cremas, papeles,
+   linos, cales y una avena (55, veterinaria rural) — pero ninguno tan
+   bajo ni tan cálido. Y es el material que este negocio tiene apilado
+   contra la pared: la página se ve como el local.
+
+   El rojo de estampado pertenece a una familia poblada —minio, coral,
+   rescoldo, bermellón, teja, granate—, y eso está bien: **sobre kraft
+   ninguno de ésos se parece a éste, porque lo que cambia el color es
+   el fondo.** Es la misma lección de la 66, escrita de nuevo porque
+   sigue siendo la más útil del registro.
+
+   ── POR QUÉ ESTE TRÍO ─────────────────────────────────────────────
+   · PATUA ONE (display) — slab de un solo peso, ancha y maciza, con
+     forma de letra estampada. Peso único 400: el CSS nunca le pide
+     negrita. La display siempre nueva.
+   · YANTRAMANAV (cuerpo) — grotesca neutra y de altura de x generosa,
+     que sobre un fondo bajo como el kraft se lee mejor que una fina.
+   · COUSINE (dato) — repetida. Estaba en la 61, dental en Pitrufquén:
+     otro rubro y otra ciudad. Métrica de máquina de escribir, que es
+     lo que se estampa en un saco.
+
+   ── CONTRASTE ─────────────────────────────────────────────────────
+   El kraft es un fondo BAJO —más oscuro que cualquier papel del
+   registro—, así que los grises de siempre no sirven acá y todos los
+   tonos van remedidos contra él, con el ratio escrito al lado.
+   ═══════════════════════════════════════════════════════════════════ */
+
+:root {
+  --kraft:      #E4D9C3;
+  --kraft-alto: #EFE7D6;
+  --tinta:      #17150F;
+  --tinta-alta: #23201A;
+
+  --tinta-suave: #4A4436;   /* párrafos sobre kraft —  7.22:1       */
+  --kraft-suave: #B6AC98;   /* párrafos sobre tinta —  8.24:1       */
+
+  /* EL ROJO DE ESTAMPADO, en sus dos versiones. */
+  --sello:       #A02F16;   /* SÓLO sobre kraft —  5.32:1           */
+  --sello-claro: #F0A08A;   /* SÓLO sobre tinta —  8.87:1           */
+
+  --display: 'Patua One', Georgia, serif;
+  --cuerpo:  'Yantramanav', system-ui, -apple-system, sans-serif;
+  --dato:    'Cousine', ui-monospace, Consolas, monospace;
+
+  --ancho: 1080px;
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+
+/* El atributo hidden pierde contra cualquier regla con display.
+   Declararlo es obligatorio en esta casa. */
+[hidden] { display: none !important; }
+
+html { scroll-behavior: smooth; }
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+
+body {
+  margin: 0;
+  background: var(--kraft);
+  color: var(--tinta-suave);
+  font-family: var(--cuerpo);
+  font-size: clamp(16.5px, 1.1vw + 13.5px, 19px);
+  line-height: 1.62;
+  -webkit-font-smoothing: antialiased;
+}
+
+img { max-width: 100%; display: block; }
+
+.ancho { width: min(100% - 2.4rem, var(--ancho)); margin-inline: auto; }
+
+.saltar {
+  position: absolute; left: -9999px; top: 0; z-index: 99;
+  background: var(--tinta); color: var(--kraft);
+  padding: .7rem 1.1rem; font-family: var(--dato); font-size: .9rem;
+}
+.saltar:focus { left: .5rem; top: .5rem; }
+
+:focus-visible { outline: 3px solid var(--sello); outline-offset: 3px; }
+.socio :focus-visible, .cierre :focus-visible { outline-color: var(--sello-claro); }
+
+
+/* ═══════════════════════════════════════════════════════════════════
+   MARCA DE DATO INVENTADO
+   ═══════════════════════════════════════════════════════════════════ */
+[data-ejemplo]::before {
+  content: attr(data-ejemplo);
+  display: block; margin-bottom: .45rem;
+  font-family: var(--dato); font-size: .78rem; font-weight: 700;
+  letter-spacing: .02em; text-transform: uppercase;
+  color: var(--sello);
+}
+/* La nota de la sección oscura necesita la OTRA versión del rojo. En
+   una página que alterna claro y oscuro es el error más fácil de
+   cometer, y ya se documentó en la 70 y la 71. */
+.socio-nota::before { color: var(--sello-claro); }
+
+.ano-nota, .socio-nota {
+  margin: 2.4rem 0 0; max-width: 62ch; font-size: .9rem;
+  padding-left: 1rem; border-left: 3px solid var(--sello);
+  color: var(--tinta-suave);
+}
+.socio-nota { border-left-color: var(--sello-claro); color: var(--kraft-suave); }
+.ano-nota b { color: var(--tinta); font-weight: 700; }
+.socio-nota b { color: var(--kraft-alto); font-weight: 700; }
+
+
+/* ═══════════════════════════════════════════════════════════════════
+   CABECERA CON COSTURA DE SACO
+   Trigésimo octava cabecera del registro: el canto inferior es la
+   costura de un saco — dos hilos rectos y el pespunte entre medio.
+   Un degradado repetido y dos líneas.
+   ═══════════════════════════════════════════════════════════════════ */
+.cab {
+  position: sticky; top: 0; z-index: 40;
+  display: flex; align-items: center; gap: 1.4rem;
+  padding: .8rem 1.4rem 1.15rem;
+  background: var(--kraft-alto);
+}
+.cab::after {
+  content: ''; position: absolute; left: 0; right: 0; bottom: 0; height: 9px;
+  border-top: 1px solid rgba(23, 21, 15, .3);
+  border-bottom: 1px solid rgba(23, 21, 15, .3);
+  background: repeating-linear-gradient(90deg,
+    var(--sello) 0 9px, transparent 9px 17px);
+  background-position: 0 4px; background-size: auto 2px;
+  background-repeat: repeat-x;
+}
+.cab-m {
+  margin: 0; font-family: var(--display); line-height: 1.15; color: var(--tinta);
+  display: flex; align-items: baseline; gap: .6rem; flex-wrap: wrap;
+}
+.cab-m b { font-weight: 400; font-size: 1.24rem; letter-spacing: .01em; }
+.cab-s {
+  font-family: var(--dato); font-size: .68rem; font-weight: 700;
+  letter-spacing: .08em; text-transform: uppercase;
+  color: var(--sello);
+}
+.cab-n { margin-left: auto; display: flex; gap: 1.4rem; }
+.cab-n a {
+  font-size: .88rem; color: var(--tinta-suave); text-decoration: none;
+  padding-bottom: 2px; border-bottom: 2px solid transparent;
+}
+.cab-n a:hover, .cab-n a:focus-visible { color: var(--tinta); border-bottom-color: var(--sello); }
+.cab-tel {
+  font-family: var(--dato); font-size: .9rem; font-weight: 700;
+  background: var(--sello); color: var(--kraft-alto);
+  padding: .45rem .9rem; border-radius: 2px;
+  text-decoration: none; white-space: nowrap;
+}
+/* El relleno NO se aclara al pasar el mouse: en la 39 ese gesto bajó
+   un botón a 3,8:1 y el auditor de contraste no mira los :hover. */
+.cab-tel:hover, .cab-tel:focus-visible { box-shadow: 0 0 0 3px rgba(160, 47, 22, .3); }
+
+
+/* ═══════════════════════════════════════════════════════════════════
+   PORTADA
+   La foto va a sangre y el texto encima (ver LAS FOTOS, más abajo).
+   Los surcos animados que había acá salieron el 13-09-2026: con la foto
+   de borde a borde quedaban tapados, y su trama terminaba en un borde
+   recto justo donde la portada se funde con la bruma.
+
+   El padding de abajo es más alto que el tramo del fundido: el texto
+   claro termina antes de que la foto empiece a desaparecer.
+   ═══════════════════════════════════════════════════════════════════ */
+.portada {
+  position: relative; overflow: hidden;
+  min-height: min(94vh, 900px);
+  display: flex; align-items: center;
+  padding: 5.5rem 0 16rem;
+}
+
+.portada-cuerpo {
+  position: relative;
+  width: min(100% - 2.4rem, var(--ancho));
+  margin-inline: auto;
+}
+
+.portada-sobre {
+  margin: 0 0 1.5rem;
+  font-family: var(--dato); font-size: .84rem; font-weight: 700;
+  letter-spacing: .1em; text-transform: uppercase;
+  color: var(--sello);
+}
+
+.portada-h1 {
+  margin: 0 0 1.4rem;
+  font-family: var(--display); font-weight: 400;
+  font-size: clamp(2.2rem, 5.5vw, 4.1rem);
+  line-height: 1.12;
+  letter-spacing: -.01em;  /* fijo. Animar letter-spacing dejó el
+                              documento clavado en 443 px en una demo
+                              de la numeración vieja. */
+  color: var(--tinta);
+  max-width: 16ch;
+}
+.portada-h1 .l { display: block; }
+
+.portada-bajada { margin: 0 0 2.2rem; max-width: 52ch; color: var(--tinta-suave); }
+.portada-bajada b { color: var(--tinta); font-weight: 700; }
+.portada-acciones { display: flex; flex-wrap: wrap; gap: .8rem; margin-bottom: 2.4rem; }
+.portada-pie {
+  margin: 0; font-family: var(--dato); font-size: .84rem;
+  color: var(--tinta-suave); line-height: 1.8; max-width: 46ch;
+}
+.portada-pie b { color: var(--tinta); font-weight: 700; }
+
+/* Entrada escalonada. Los estados ocultos cuelgan de .js y el
+   temporizador del <head> los libera si main.js no llega. */
+.js .portada .l { opacity: 0; transform: translate3d(0, 18px, 0);
+                  animation: entrar .9s cubic-bezier(.2,.7,.3,1) forwards; }
+.js .portada .l1 { animation-delay: .10s; }
+.js .portada .l2 { animation-delay: .22s; }
+.js .portada .l4 { animation-delay: .40s; }
+.js .portada .l5 { animation-delay: .52s; }
+.js .portada .l6 { animation-delay: .62s; }
+@keyframes entrar { to { opacity: 1; transform: none; } }
+
+
+/* ═══════════════════════════════════════════════════════════════════
+   BOTONES
+   ═══════════════════════════════════════════════════════════════════ */
+.btn {
+  display: inline-block; text-decoration: none;
+  font-family: var(--dato); font-size: .94rem; font-weight: 700;
+  padding: .85rem 1.5rem; border-radius: 2px;
+  transition: box-shadow .18s ease, transform .18s ease;
+}
+.btn-fuerte { background: var(--sello); color: var(--kraft-alto); }
+.btn-fuerte:hover, .btn-fuerte:focus-visible {
+  box-shadow: 0 0 0 3px rgba(160, 47, 22, .28); transform: translateY(-1px);
+}
+.btn-suave { color: var(--tinta); border: 1px solid rgba(23, 21, 15, .35); }
+.btn-suave:hover, .btn-suave:focus-visible { border-color: var(--sello); color: var(--sello); }
+.grande { padding: 1.05rem 2rem; font-size: 1rem; }
+
+.socio .btn-fuerte, .cierre .btn-fuerte { background: var(--sello-claro); color: var(--tinta); }
+
+
+/* ═══════════════════════════════════════════════════════════════════
+   PIEZAS DE TEXTO COMPARTIDAS
+   ═══════════════════════════════════════════════════════════════════ */
+.rotulo {
+  margin: 0 0 .7rem;
+  font-family: var(--dato); font-size: .84rem; font-weight: 700;
+  letter-spacing: .1em; text-transform: uppercase;
+  color: var(--sello);
+}
+.socio .rotulo { color: var(--sello-claro); }
+
+.t2 {
+  margin: 0 0 1.1rem;
+  font-family: var(--display); font-weight: 400;
+  font-size: clamp(1.85rem, 3.9vw, 2.65rem);
+  line-height: 1.2; letter-spacing: -.01em;
+  color: var(--tinta); max-width: 22ch;
+}
+.socio .t2, .t2.claro { color: var(--kraft-alto); }
+
+.entrada { margin: 0 0 2.4rem; max-width: 56ch; color: var(--tinta-suave); }
+.socio .entrada, .entrada.claro { color: var(--kraft-suave); }
+.entrada b { color: var(--tinta); font-weight: 700; }
+.socio .entrada b, .entrada.claro b { color: var(--kraft-alto); }
+
+
+/* ═══════════════════════════════════════════════════════════════════
+   PIEZA FIRMA 1 — LAS CUATRO TEMPORADAS
+   Agrupado por estación y no en doce filas: nadie planifica por mes
+   suelto, y en cuatro bloques cabe en una pantalla de teléfono.
+   ═══════════════════════════════════════════════════════════════════ */
+.ano { padding: 5.5rem 0; }   /* sin fondo propio: pasa la bruma de la página */
+
+.temporadas {
+  display: grid; grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+  gap: 1.3rem;
+}
+.temp {
+  background: var(--kraft-alto);
+  border: 1px solid rgba(23, 21, 15, .22);
+  padding: 1.6rem 1.7rem;
+}
+.temp-m {
+  margin: 0 0 .5rem;
+  font-family: var(--dato); font-size: .8rem; font-weight: 700;
+  letter-spacing: .1em; text-transform: uppercase;
+  color: var(--sello);
+}
+.temp h3 {
+  margin: 0 0 .9rem; font-family: var(--display); font-weight: 400;
+  font-size: 1.5rem; color: var(--tinta); line-height: 1.2;
+}
+.temp ul { margin: 0; padding-left: 1.15rem; }
+.temp li { margin-bottom: .65rem; font-size: .95rem; color: var(--tinta-suave); }
+.temp li:last-child { margin-bottom: 0; }
+.temp li::marker { color: var(--sello); }
+.temp b { color: var(--tinta); font-weight: 700; }
+/* El invierno es el que sorprende: la temporada que la gente cree
+   vacía y es donde se compra la mitad del año. */
+.temp.destacada { box-shadow: inset 5px 0 0 var(--sello); }
+
+.clave {
+  margin-top: 2.4rem; padding: 1.8rem;
+  background: var(--kraft-alto);
+  border-left: 6px solid var(--sello);
+  max-width: 68ch;
+}
+.clave-t {
+  margin: 0 0 .8rem; font-family: var(--dato); font-size: .82rem; font-weight: 700;
+  letter-spacing: .1em; text-transform: uppercase;
+  color: var(--sello);
+}
+.clave p { margin: 0 0 .9rem; }
+.clave p:last-child { margin-bottom: 0; }
+.clave p:first-of-type b {
+  font-family: var(--display); font-size: 1.45rem; font-weight: 400;
+  color: var(--tinta); line-height: 1.3; display: block;
+}
+.clave b { color: var(--tinta); font-weight: 700; }
+
+
+/* ═══════════════════════════════════════════════════════════════════
+   PIEZA FIRMA 2 — LAS CINCO PREGUNTAS
+   Estructura nueva en el registro: un <dl> de preguntas y respuestas
+   de verdad. Ninguna demo lo había usado porque las preguntas
+   frecuentes suelen ser relleno; acá son el contenido, porque una
+   cooperativa que no explica qué es no consigue socios.
+
+   Y tres respuestas van EN BLANCO a propósito, marcadas. Es la
+   única sección del registro donde el ejemplo no se inventa: son
+   datos de estatuto, y una cifra verosímil acá sería peor que el
+   hueco, porque es justo lo que la gente viene a verificar.
+   ═══════════════════════════════════════════════════════════════════ */
+.socio { background: var(--tinta); padding: 5.5rem 0; }
+
+.faq { margin: 0; border-top: 2px solid rgba(228, 217, 195, .45); }
+.qa {
+  display: grid; grid-template-columns: minmax(0, 15rem) minmax(0, 1fr);
+  gap: 1.4rem; padding: 1.4rem 0;
+  border-bottom: 1px solid rgba(228, 217, 195, .22);
+}
+.qa dt {
+  font-family: var(--display); font-weight: 400; font-size: 1.12rem;
+  color: var(--kraft-alto); line-height: 1.3;
+}
+.qa dd { margin: 0; font-size: .96rem; color: var(--kraft-suave); max-width: 58ch; }
+.qa dd b { color: var(--kraft-alto); font-weight: 700; }
+/* El hueco se ve COMO hueco: nadie lo puede confundir con una
+   respuesta. Es la misma decisión de la 68 y la 70, llevada al
+   extremo — acá los huecos son tres de cinco. */
+.qa dd.hueco {
+  font-family: var(--dato); font-size: .88rem; color: var(--sello-claro);
+  border: 1px dashed rgba(240, 160, 138, .5); border-radius: 2px;
+  padding: .6rem .8rem;
+}
+
+
+/* ═══════════════════════════════════════════════════════════════════
+   LÁMINA CON FOTO
+   ═══════════════════════════════════════════════════════════════════ */
+.lamina {
+  display: grid; grid-template-columns: .95fr 1.05fr;
+  align-items: stretch;   /* sin fondo propio: pasa la bruma de la página */
+}
+.lamina-texto { padding: 4.5rem clamp(1.4rem, 4vw, 3.5rem); align-self: center; }
+.lamina-foto { position: relative; overflow: hidden; min-height: 30rem; }
+/* La capa es un 24% más alta que su marco: le sobra recorrido para
+   desplazarse al scroll sin que nunca se vea el borde. */
+.lamina-capa {
+  position: absolute; inset: -12% 0;
+  background-color: var(--tinta);
+  background-image: linear-gradient(150deg, #3E3626, #14120D);
+  display: grid; place-items: center;
+  will-change: transform;
+}
+
+.numeraco {
+  margin: 0; font-family: var(--display); font-weight: 400;
+  font-size: clamp(3.8rem, 10vw, 6.8rem); line-height: .98;
+  letter-spacing: -.02em; color: var(--sello);
+}
+
+.hueco-nota {
+  margin: 0; max-width: 26ch; text-align: center;
+  font-family: var(--dato); font-size: .84rem; line-height: 1.7;
+  color: var(--kraft-suave);
+  border: 1px dashed rgba(228, 217, 195, .3);
+  padding: 1.1rem 1.2rem; border-radius: 2px;
+}
+.hueco-nota code { color: var(--sello-claro); }
+.tiene-foto .hueco-nota { display: none; }
+
+
+/* ═══════════════════════════════════════════════════════════════════
+   DÓNDE ESTAMOS
+   ═══════════════════════════════════════════════════════════════════ */
+.donde { padding: 5.5rem 0; }   /* sin fondo propio: pasa la bruma de la página */
+.donde-grilla {
+  display: grid; grid-template-columns: 1.15fr .85fr;
+  gap: clamp(2rem, 5vw, 4rem); align-items: start;
+}
+.datos {
+  margin: 0 0 2rem; display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(13rem, 1fr));
+  gap: 1.3rem 2rem;
+  border-top: 1px solid rgba(23, 21, 15, .25); padding-top: 1.6rem;
+}
+.datos dt {
+  font-family: var(--dato); font-size: .8rem; font-weight: 700;
+  letter-spacing: .08em; text-transform: uppercase;
+  color: var(--sello); margin-bottom: .25rem;
+}
+.datos dd { margin: 0; color: var(--tinta); font-size: .98rem; }
+.datos dd a { color: var(--tinta); text-decoration-color: var(--sello); }
+/* Lo que no se sabe se dice, no se rellena. La regla es de la 68:
+   inventar un dato verificable es la manera más rápida de que la demo
+   se caiga en la reunión. */
+.datos dd.pendiente {
+  color: var(--sello); font-family: var(--dato); font-size: .86rem; font-weight: 700;
+}
+
+.aviso {
+  margin: 0; padding: 1.2rem 1.3rem;
+  background: var(--kraft-alto);
+  border-left: 4px solid var(--sello);
+  font-size: .95rem; max-width: 58ch;
+}
+.aviso b { color: var(--tinta); font-weight: 700; }
+
+.donde-foto {
+  position: relative; height: 26rem;
+  background-color: var(--tinta);
+  background-image: linear-gradient(160deg, #4C4230, #14120D);
+  display: grid; place-items: center; border-radius: 2px; overflow: hidden;
+}
+
+
+/* ═══════════════════════════════════════════════════════════════════
+   CIERRE Y PIE
+   ═══════════════════════════════════════════════════════════════════ */
+.cierre { background: var(--tinta); padding: 5rem 0; text-align: center; }
+.cierre .t2, .cierre .entrada { margin-inline: auto; }
+.cierre .entrada { margin-bottom: 2.2rem; }
+
+.pie { background: var(--tinta-alta); padding: 3.2rem 0 3.6rem;
+       border-top: 1px solid rgba(228, 217, 195, .2); }
+.pie-grilla {
+  display: grid; grid-template-columns: auto auto 1fr;
+  gap: 1.6rem 3rem; align-items: start;
+}
+.pie-m {
+  margin: 0; font-family: var(--display); font-weight: 400;
+  font-size: 1.2rem; color: var(--kraft-alto); line-height: 1.4;
+}
+.pie-m span {
+  font-family: var(--dato); font-weight: 700; font-size: .74rem;
+  letter-spacing: .1em; text-transform: uppercase; color: var(--sello-claro);
+}
+.pie-d { margin: 0; font-family: var(--dato); font-size: .86rem;
+         color: var(--kraft-suave); line-height: 1.9; }
+.pie-d a { color: var(--sello-claro); }
+.pie-n { margin: 0; font-size: .8rem; color: var(--kraft-suave); max-width: 56ch; }
+
+
+/* ═══════════════════════════════════════════════════════════════════
+   REVEALS
+   Ocultos sólo bajo .js. main.js tiene dos resguardos: lo visible al
+   cargar se muestra de inmediato, y un barrido a los 6 s revela lo
+   que haya quedado pendiente.
+   ═══════════════════════════════════════════════════════════════════ */
+.js .reveal { opacity: 0; transform: translate3d(0, 20px, 0); }
+.js .reveal.visible {
+  opacity: 1; transform: none;
+  transition: opacity .7s ease, transform .7s cubic-bezier(.2,.7,.3,1);
+}
+
+
+/* ═══════════════════════════════════════════════════════════════════
+   PANTALLAS CHICAS
+   ═══════════════════════════════════════════════════════════════════ */
+@media (max-width: 980px) {
+  .lamina { grid-template-columns: 1fr; }
+  .lamina-texto { order: 1; }
+  .lamina-foto { order: 2; min-height: 22rem; }
+  .donde-grilla { grid-template-columns: 1fr; }
+  /* aspect-ratio junto a min-height deja que el navegador calcule el
+     ancho desde el alto y se sale de la pantalla: alto fijo. */
+  .donde-foto { height: 17rem; }
+  .pie-grilla { grid-template-columns: 1fr; }
+}
+
+@media (max-width: 720px) {
+  .cab-n { display: none; }
+  .cab { gap: .8rem; }
+  .cab-s { display: none; }
+  .cab-tel { margin-left: auto; }
+  .portada { min-height: auto; padding: 2.8rem 0 3.2rem; }
+  .ano, .socio, .donde, .cierre { padding: 3.8rem 0; }
+  .lamina-texto { padding: 3rem 1.2rem; }
+  .temp { padding: 1.3rem 1.2rem; }
+  .clave { padding: 1.4rem 1.2rem; }
+  /* La pregunta sobre la respuesta: en 375 px una columna de 15 rem
+     dejaba las preguntas en cuatro renglones de dos palabras. */
+  .qa { grid-template-columns: 1fr; gap: .6rem; }
+}
+
+
+/* ═══════════════════════════════════════════════════════════════════
+   MOVIMIENTO REDUCIDO
+   En Windows esta preferencia viene activada de fábrica muchas veces.
+   Sólo se esconde lo que congelado parece un error. Los fundidos se
+   dejan: apagándolo todo la página se ve muerta. El parallax de la
+   lámina y de la bruma ya se apaga en main.js.
+   ═══════════════════════════════════════════════════════════════════ */
+@media (prefers-reduced-motion: reduce) {
+  .js .portada .l { animation-duration: .01s; animation-delay: 0s; }
+}
+
+
+/* ═══════════════════════════════════════════════════════════════════
+   FOTOS — DESCOMENTAR CUANDO LLEGUEN
+   Dejar los JPEG en imagenes/ con estos nombres y quitar el comentario.
+   La nota del hueco desaparece sola.
+   ═══════════════════════════════════════════════════════════════════ */
+/* ── LAS FOTOS, YA PUESTAS ─────────────────────────────────────── */
+/* La foto de portada iba acá como fondo, DEBAJO de un velo de kraft al 97 %:
+   no se veía y la portada parecía lavada. Ahora es un <img> en .portada-foto,
+   nítido a la derecha (ver el bloque LAS FOTOS al final). */
+  .lamina-capa { background-image: url('../imagenes/tienda.jpg'); background-size: cover; background-position: center; }
+
+/* FALTA ESTA FOTO, LA TIENE QUE DAR EL CLIENTE: frente.jpg - el frente con el letrero de la cooperativa (AgroFrut y Loncofrut juntos)
+   No se reemplaza por una generica: es el activo del negocio
+   y el argumento de venta. Al llegar, dejar el JPEG en imagenes/
+   y descomentar la regla de abajo.
+  .donde-foto { background-image: url('../imagenes/frente.jpg'); background-size: cover; background-position: center; }
+*/
+
+
+/* ── MAPA DE UBICACION ──────────────────────────────────────────────
+   Imagen propia con mosaicos de OpenStreetMap pegados: la CSP prohibe
+   pedir nada a un tercero, asi que un iframe de Google Maps quedaria en
+   blanco SIN dar un solo error. El "Como llegar" si es un enlace, y un
+   enlace no lo bloquea nada.
+   Los colores salen de currentColor a proposito: asi el bloque se adapta
+   a la paleta de cada demo sin conocerla y sin chocar con ella.
+   La atribucion a OpenStreetMap la exige su licencia (ODbL). */
+.mapa-sec { padding: clamp(2.5rem, 6vw, 4.5rem) 0; }
+.mapa {
+  /* Casi siempre el mapa queda como hijo DIRECTO de la seccion, fuera del
+     contenedor .ancho: sin este ancho maximo se va de borde a borde y el
+     pie del mapa arranca pegado al filo de la pantalla. Se usa la variable
+     de la demo si existe, y 1100 px si no. */
+  width: min(100% - 2.5rem, var(--ancho, 1100px));
+  margin: 1.4rem auto 0;
+  border: 1px solid; border-color: color-mix(in srgb, currentColor 22%, transparent);
+  border-radius: 10px; overflow: hidden;
+}
+@supports not (color: color-mix(in srgb, red 50%, blue)) { .mapa { border-color: rgba(128, 128, 128, .35); } }
+.mapa img { display: block; width: 100%; height: auto; aspect-ratio: 16 / 10; object-fit: cover; }
+.mapa__pie {
+  display: flex; flex-wrap: wrap; align-items: center; gap: .4rem 1rem;
+  padding: .75rem .9rem;
+  font-size: .86em; line-height: 1.45;
+  border-top: 1px solid; border-top-color: color-mix(in srgb, currentColor 22%, transparent);
+}
+@supports not (color: color-mix(in srgb, red 50%, blue)) { .mapa__pie { border-top-color: rgba(128, 128, 128, .35); } }
+.mapa__pie b { font-weight: 700; }
+.mapa__ir { color: inherit; font-weight: 700; text-decoration: underline; min-height: 44px; display: inline-flex; align-items: center; }
+.mapa__cred { width: 100%; font-size: .84em; opacity: .8; }
+.mapa__cred a { color: inherit; }
+/* ── BOTON FLOTANTE DE CONTACTO ─────────────────────────────────────
+   56 px de alto, por encima del minimo tactil de 44. Los colores de
+   marca van a proposito: se reconocen sin leerlos, y eso es lo que hace
+   que se toquen. Se ve SIEMPRE por defecto; el JS solo lo aparta sobre
+   la portada. Al reves, un fallo del script se llevaria el CTA principal. */
+.flota {
+  position: fixed;
+  right: max(1rem, env(safe-area-inset-right, 0px));
+  bottom: max(1rem, env(safe-area-inset-bottom, 0px));
+  z-index: 60;
+  display: inline-flex; align-items: center; gap: .55rem;
+  height: 56px; padding: 0 1.15rem 0 1rem;
+  border-radius: 999px;
+  text-decoration: none;
+  font-family: var(--cuerpo, system-ui, sans-serif);
+  font-size: .95rem; font-weight: 700; line-height: 1;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, .26), 0 2px 6px rgba(0, 0, 0, .16);
+  transition: opacity .28s ease, transform .28s ease, box-shadow .18s ease;
+}
+.flota--wa { background: #25D366; color: #07310F; }
+.flota--ig { background: linear-gradient(120deg, #F9CE34 4%, #EE2A7B 48%, #6228D7 96%); color: #FFFFFF; }
+.flota__i { width: 26px; height: 26px; fill: currentColor; flex: none; }
+.flota:hover, .flota:focus-visible { transform: translateY(-2px); box-shadow: 0 10px 26px rgba(0, 0, 0, .3); }
+.js .flota--arriba { opacity: 0; transform: translateY(14px) scale(.94); pointer-events: none; }
+
+@media (max-width: 520px) {
+  .flota { width: 56px; padding: 0; justify-content: center; }
+  .flota__t { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .flota { transition: opacity .28s ease; }
+  .flota:hover, .flota:focus-visible { transform: none; }
+  .js .flota--arriba { transform: none; }
+}
+
+/* ═══════════════════════════════════════════════════════════════════
+   LAS FOTOS — portada, tajo, telón, cita y mosaico
+   La página tenía dos fotos y una no se veía. Esto es lo que la llena,
+   con la regla de la casa: la foto no se ensucia. La legibilidad la da
+   un gradiente por zona escrito en rgba() LITERAL (un var() dentro del
+   gradiente no tiene alfa y pinta la foto entera), nunca el blur.
+     kraft-alto 239,231,214 · kraft 228,217,195 · tinta 23,21,15
+   ═══════════════════════════════════════════════════════════════════ */
+
+/* PORTADA — la foto A SANGRE, de borde a borde, con el texto encima.
+   Segunda vuelta (13-09-2026). La primera la tenía a la derecha, disuelta
+   hacia el titular, y en pantallas anchas se veía el corte del panel.
+   Yordy: "que una imagen use el plano completo y se difumine hacia abajo".
+   · La foto y su velo se funden JUNTOS hacia abajo: la máscara va en el
+     contenedor. Debajo no hay color plano, está la bruma de la página.
+   · El texto pasa a claro. Velo de tinta medido sobre port-01 (percentil
+     99,5 de luminancia bajo la caja del texto, a 1440, 2000 y 500 px de
+     ancho): con 0,55 el kraft-alto queda ≥ 5,3:1 en los tres. El rótulo
+     va en kraft-alto y no en sello-claro: ése pedía velo 0,70 y la foto
+     se apagaba.
+   · El fondo tinta del contenedor es el respaldo: si la foto no llega, el
+     texto claro sigue sobre oscuro. */
+.portada { isolation: isolate; }
+.portada-foto {
+  position: absolute; inset: 0; z-index: 0; pointer-events: none;
+  background: var(--tinta);
+  -webkit-mask-image: linear-gradient(180deg, #000 0%, #000 calc(100% - 15rem), rgba(0,0,0,.76) calc(100% - 10rem), rgba(0,0,0,.32) calc(100% - 4.5rem), transparent 100%);
+          mask-image: linear-gradient(180deg, #000 0%, #000 calc(100% - 15rem), rgba(0,0,0,.76) calc(100% - 10rem), rgba(0,0,0,.32) calc(100% - 4.5rem), transparent 100%);
+}
+.portada-foto img { display: block; width: 100%; height: 100%; object-fit: cover; object-position: 60% 45%; }
+.portada-foto::after {
+  content: ""; position: absolute; inset: 0;
+  background: linear-gradient(90deg, rgba(23,21,15,.62) 0%, rgba(23,21,15,.58) 52%, rgba(23,21,15,.36) 80%, rgba(23,21,15,.26) 100%);
+}
+.portada-cuerpo { z-index: 2; }
+.portada-sobre, .portada-h1, .portada-bajada, .portada-bajada b, .portada-pie, .portada-pie b { color: var(--kraft-alto); }
+.portada .btn-suave { color: var(--kraft-alto); border-color: rgba(239,231,214,.6); }
+.portada .btn-suave:hover, .portada .btn-suave:focus-visible { color: var(--sello-claro); border-color: var(--sello-claro); }
+.portada :focus-visible { outline-color: var(--sello-claro); }
+
+/* TAJO — franja a sangre entre el año y ser socio. Sin texto encima.
+   Antes iba pegada a la portada; ahora la portada se funde hacia abajo y
+   una foto justo debajo cortaría ese fundido en recto. */
+.tajo { position: relative; margin: 0; height: clamp(14rem, 34vw, 25rem); overflow: hidden; background: var(--tinta); }
+.tajo img { display: block; width: 100%; height: 100%; object-fit: cover; object-position: 50% 55%; }
+
+/* El año lleva bruma detrás (ver BRUMA Y VIDRIO): el telón que había acá
+   salió porque hacía el mismo papel. */
+.ano { position: relative; isolation: isolate; overflow: hidden; }
+
+/* CITA — banda oscura con una frase que YA está en la página. Velo plano
+   de tinta al 80 %: con la foto más clara debajo, el texto kraft-alto
+   queda sobre ~5,9:1, y el eco (chico) va en el mismo color y no en el
+   rojo, que sobre ese fondo no llega a 4,5. */
+.cita { position: relative; isolation: isolate; overflow: hidden; margin: 0;
+        min-height: min(58vh, 440px); display: grid; place-items: center;
+        padding: 4.5rem 1.4rem; background: var(--tinta); text-align: center; }
+.cita-foto { position: absolute; inset: 0; z-index: -1; }
+.cita-foto img { display: block; width: 100%; height: 100%; object-fit: cover; object-position: 50% 60%; }
+.cita-foto::after { content: ""; position: absolute; inset: 0; background: rgba(23,21,15,.8); }
+.cita-frase { margin: 0 auto; max-width: 22ch; font-family: var(--display); font-weight: 400;
+              font-size: clamp(1.8rem, 4.4vw, 3.1rem); line-height: 1.2; color: var(--kraft-alto); }
+.cita-eco { margin: 1.3rem 0 0; font-family: var(--dato); font-size: .82rem; font-weight: 700;
+            letter-spacing: .1em; text-transform: uppercase; color: var(--kraft-alto); }
+.cita-eco::before { content: ""; display: block; width: 3rem; height: 3px; margin: 0 auto .9rem; background: var(--sello-claro); }
+
+/* MOSAICO — seis piezas sobre su propio fondo. Son fotos de REFERENCIA y
+   la nota lo dice: el inventario real lo muestra la cooperativa. */
+/* sin fondo propio: detrás pasa la bruma de la página */
+.mos { padding: 5rem 0; }
+.mos-grilla { display: grid; gap: 4px; grid-template-columns: repeat(3, 1fr); margin-top: 2rem; }
+.mos-p { margin: 0; overflow: hidden; background: var(--tinta); }
+.mos-p:nth-child(1), .mos-p:nth-child(4), .mos-p:nth-child(5) { grid-column: span 2; }
+.mos-p img { display: block; width: 100%; height: 100%; aspect-ratio: 3 / 2; object-fit: cover;
+             transition: transform .5s cubic-bezier(.2,.7,.3,1); }
+.mos-p:hover img { transform: scale(1.05); }
+.mos-nota { margin: 1.4rem 0 0; font-family: var(--dato); font-size: .8rem; color: var(--tinta-suave); max-width: 62ch; }
+
+@media (max-width: 720px) {
+  /* En el teléfono la foto sigue a sangre detrás de todo el texto. El
+     texto ocupa el ancho entero, así que el velo va parejo (0,62: medido,
+     el kraft-alto queda sobre 6:1) y el fundido de abajo es más corto. */
+  .portada { padding: 4.5rem 0 12rem; }
+  .portada-foto {
+    -webkit-mask-image: linear-gradient(180deg, #000 0%, #000 calc(100% - 11rem), rgba(0,0,0,.72) calc(100% - 7rem), rgba(0,0,0,.3) calc(100% - 3rem), transparent 100%);
+            mask-image: linear-gradient(180deg, #000 0%, #000 calc(100% - 11rem), rgba(0,0,0,.72) calc(100% - 7rem), rgba(0,0,0,.3) calc(100% - 3rem), transparent 100%);
+  }
+  .portada-foto img { object-position: 62% 45%; }
+  .portada-foto::after { background: rgba(23,21,15,.62); }
+  .mos { padding: 3.6rem 0; }
+  .mos-grilla { grid-template-columns: repeat(2, 1fr); }
+  .mos-p:nth-child(4), .mos-p:nth-child(5) { grid-column: auto; }
+  .mos-p:nth-child(1), .mos-p:nth-child(6) { grid-column: span 2; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .mos-p:hover img { transform: none; }
+}
+
+/* MAPA — el de Google, incrustado igual que en Calor de Hogar (el sitio que
+   ya se vendió): interactivo, nítido y con calles al día. La CSP abre UNA
+   sola puerta para esto —frame-src https://www.google.com
+   https://maps.google.com— y todo lo demás sigue cerrado. Es el embed
+   público (?output=embed): no lleva clave de API ni cuenta. */
+.mapa-g { width: min(100% - 2.4rem, var(--ancho)); margin: 2.6rem auto 0;
+          border: 1px solid rgba(23,21,15,.28); border-radius: 2px; overflow: hidden;
+          background: var(--kraft-alto); }
+.mapa-g iframe { display: block; width: 100%; height: clamp(300px, 40vw, 440px); border: 0;
+                 filter: grayscale(.2) contrast(1.04); }
+.mapa-g__pie { margin: 0; padding: .7rem 1rem; display: flex; flex-wrap: wrap; align-items: center;
+               gap: .2rem 1.2rem; font-family: var(--dato); font-size: .84rem; color: var(--tinta-suave);
+               border-top: 1px solid rgba(23,21,15,.2); }
+.mapa-g__pie b { color: var(--tinta); font-weight: 700; }
+.mapa-g__pie a { color: var(--sello); font-weight: 700; min-height: 44px; display: inline-flex; align-items: center; }
+
+
+/* ═══════════════════════════════════════════════════════════════════
+   BRUMA Y VIDRIO
+   Pedido de Yordy (13-09-2026): las mismas fotos de la página, muy
+   difuminadas, con efecto de vidrio y un tono distinto en cada tramo del
+   scroll. Segunda vuelta, el mismo día: "que sea en toda la página y no
+   tan apagado, no se nota casi nada".
+
+   Es el aura de la casa —la única excepción al no-blur, porque reventada
+   se lee como color y no como foto sucia— llevada a toda la página:
+     · BRUMA DE PÁGINA: una sola capa detrás de todo <main>, con catorce
+       manchas repartidas a lo largo del scroll. Las secciones claras (año,
+       lámina, dónde, mosaico y el fundido de la portada) no tienen fondo
+       propio, así que el color pasa de una a otra sin cortes rectos.
+     · Las oscuras (socio, cierre y pie) la tapan con su tinta y llevan su
+       propia bruma adentro: su borde ya es un corte de color, ahí el
+       overflow no se ve.
+     · El tono viene calibrado de hacer-bruma.ps1 (30×20 px en PNG, ~1 KB):
+       las claras saturadas y con luminancia relativa ≥ 0,68, las oscuras
+       ≤ 0,05. Por eso van casi opacas sin romper el contraste: el rótulo
+       en sello —el texto más exigente sobre claro— pide un fondo ≥ 0,61
+       para 4,5:1, y el kraft-suave sobre tinta uno ≤ 0,054.
+     · VIDRIO: las tarjetas semitransparentes con backdrop-filter dejan ver
+       la bruma. Solo dentro de @supports: sin soporte quedan sólidas.
+   ═══════════════════════════════════════════════════════════════════ */
+main { position: relative; isolation: isolate; }
+.bruma-pagina { position: absolute; inset: 0; z-index: -1; overflow: hidden; pointer-events: none; }
+.bruma-pagina img, .bruma img {
+  position: absolute; height: auto; max-width: none; aspect-ratio: 3 / 2; object-fit: cover;
+  -webkit-mask-image: radial-gradient(closest-side, #000 0%, rgba(0,0,0,.86) 38%, rgba(0,0,0,.42) 70%, transparent 100%);
+          mask-image: radial-gradient(closest-side, #000 0%, rgba(0,0,0,.86) 38%, rgba(0,0,0,.42) 70%, transparent 100%);
+}
+.bruma-pagina img { width: 74vw; filter: blur(60px); opacity: .95; }
+.bruma-pagina img:nth-child(odd)  { right: -22vw; }
+.bruma-pagina img:nth-child(even) { left: -22vw; }
+.bruma-pagina img:nth-child(3n)   { left: 22vw; right: auto; width: 62vw; }
+.bruma-pagina img:nth-child(1)  { top: 0; }
+.bruma-pagina img:nth-child(2)  { top: 7%; }
+.bruma-pagina img:nth-child(3)  { top: 14%; }
+.bruma-pagina img:nth-child(4)  { top: 21%; }
+.bruma-pagina img:nth-child(5)  { top: 28%; }
+.bruma-pagina img:nth-child(6)  { top: 35%; }
+.bruma-pagina img:nth-child(7)  { top: 42%; }
+.bruma-pagina img:nth-child(8)  { top: 49%; }
+.bruma-pagina img:nth-child(9)  { top: 56%; }
+.bruma-pagina img:nth-child(10) { top: 63%; }
+.bruma-pagina img:nth-child(11) { top: 70%; }
+.bruma-pagina img:nth-child(12) { top: 77%; }
+.bruma-pagina img:nth-child(13) { top: 84%; }
+.bruma-pagina img:nth-child(14) { top: 91%; }
+
+.socio, .cierre, .pie { position: relative; isolation: isolate; overflow: hidden; }
+.bruma { position: absolute; inset: -12% 0; z-index: -1; pointer-events: none; }
+.bruma img { width: 78%; filter: blur(56px); opacity: .95; }
+.bruma .bruma-a { top: -16%; right: -24%; }
+.bruma .bruma-b { bottom: -20%; left: -28%; }
+/* el cierre y el pie son bajos: manchas más chicas que asoman arriba y abajo */
+.cierre .bruma img, .pie .bruma img { width: 66%; }
+.cierre .bruma .bruma-a, .pie .bruma .bruma-a { top: -50%; right: -8%; }
+.cierre .bruma .bruma-b, .pie .bruma .bruma-b { bottom: -50%; left: -10%; }
+
+@supports ((-webkit-backdrop-filter: blur(1px)) or (backdrop-filter: blur(1px))) {
+  .temp, .clave, .aviso, .mapa-g {
+    background: rgba(239,231,214,.56);
+    -webkit-backdrop-filter: blur(18px) saturate(1.2);
+            backdrop-filter: blur(18px) saturate(1.2);
+    border: 1px solid rgba(255,255,255,.55);
+    box-shadow: inset 0 1px 0 rgba(255,255,255,.6), 0 14px 34px rgba(23,21,15,.08);
+  }
+  .temp.destacada { box-shadow: inset 5px 0 0 var(--sello), inset 0 1px 0 rgba(255,255,255,.6), 0 14px 34px rgba(23,21,15,.08); }
+  .clave { border-left: 6px solid var(--sello); }
+  .aviso { border-left: 4px solid var(--sello); }
+  .mapa-g__pie { background: rgba(239,231,214,.5); }
+
+  /* en la sección oscura el vidrio es de tinta: las preguntas van en un panel */
+  .faq {
+    background: rgba(35,32,26,.46);
+    -webkit-backdrop-filter: blur(16px) saturate(1.15);
+            backdrop-filter: blur(16px) saturate(1.15);
+    border: 1px solid rgba(228,217,195,.14);
+    border-top: 2px solid rgba(228,217,195,.45);
+    padding: 0 1.4rem;
+  }
+}
+
+@media (max-width: 720px) {
+  .bruma-pagina img { width: 150vw; filter: blur(44px); }
+  .bruma-pagina img:nth-child(odd)  { right: -64vw; }
+  .bruma-pagina img:nth-child(even) { left: -64vw; }
+  .bruma-pagina img:nth-child(3n)   { left: -25vw; width: 150vw; }
+  .bruma img { width: 170%; filter: blur(44px); }
+  .bruma .bruma-a { right: -90%; }
+  .bruma .bruma-b { left: -95%; }
+  .cierre .bruma img, .pie .bruma img { width: 150%; }
+  .faq { padding: 0 1rem; }
+}

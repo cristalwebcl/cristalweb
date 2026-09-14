@@ -25,3 +25,10 @@ URL de origen:
 004.jpg | 6720x4480 | Rehabilitation Photos, Download The BEST Free Rehabilitation Stock ... | https://images.pexels.com/photos/4506160/pexels-photo-4506160.jpeg?cs=srgb&dl=pexels-karolina-grabowska-4506160.jpg&fm=jpg
 005.jpg | 6720x4480 | Physiotherapy Photos, Download The BEST Free Physiotherapy Stock Photos ... | https://images.pexels.com/photos/4506218/pexels-photo-4506218.jpeg?cs=srgb&dl=pexels-karolina-grabowska-4506218.jpg&fm=jpg
 006.jpg | 6720x4480 | Rehabilitation Photos, Download The BEST Free Rehabilitation Stock ... | https://images.pexels.com/photos/4506105/pexels-photo-4506105.jpeg?cs=srgb&dl=pexels-karolina-grabowska-4506105.jpg&fm=jpg
+
+MAPA DE UBICACION — mapa-01.jpg
+  768 x 768 · zoom 14 · centro -39.2780911, -72.2274364
+  Mosaicos de OpenStreetMap pegados en una sola imagen, con el marcador
+  dibujado encima. Datos (c) OpenStreetMap contributors, licencia ODbL:
+  la atribucion tiene que ir VISIBLE junto al mapa, en el pie de la figura.
+  https://www.openstreetmap.org/copyright

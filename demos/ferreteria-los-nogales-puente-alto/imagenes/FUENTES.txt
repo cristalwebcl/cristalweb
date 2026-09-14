@@ -1,0 +1,22 @@
+FUENTES DE LAS IMAGENES - Ferreteria Los Nogales Rehecha el 14-09-2026 (presentacion antes que texto). Fotos de REFERENCIA de bancos libres: ninguna es del local; las verdaderas las tiene que mandar el negocio. 
+port-01.jpg  <-  pozo-p-nog-huincha\011.jpg  |  pexels (Pexels License)  |  autor: Jahra Tasfia Reza  |  https://www.pexels.com/es-es/foto/mesa-de-madera-vintage-con-cinta-metrica-39081597/  |  consulta: "tape measure"
+hund1-01.jpg  <-  pozo-p-nog-clavo\004.jpg  |  pexels (Pexels License)  |  autor: Willians Huerta  |  https://www.pexels.com/es-es/foto/primer-plano-de-clavos-metalicos-en-una-pila-36398239/  |  consulta: "nails pile"
+hund2-01.jpg  <-  pozo-p-nog-cuerda\009.jpg  |  pexels (Pexels License)  |  autor: Tim Mossholder  |  https://www.pexels.com/es-es/foto/primer-plano-detallado-de-cuerdas-de-canamo-retorcidas-38031570/  |  consulta: "rope coil"
+hund3-01.jpg  <-  pozo-p-nog-cadena\007.jpg  |  pexels (Pexels License)  |  autor: Anete Lusina  |  https://www.pexels.com/es-es/foto/amor-oscuro-metal-conexion-17615320/  |  consulta: "metal chain links"
+hund4-01.jpg  <-  pozo-p-nog-manguera\001.jpg  |  pexels (Pexels License)  |  autor: David Brown  |  https://www.pexels.com/es-es/foto/manguera-de-jardin-tirada-en-el-suelo-17335758/  |  consulta: "garden hose coil"
+hund5-01.jpg  <-  pozo-p-nog-balanza\007.jpg  |  pexels (Pexels License)  |  autor: Mathias Reding  |  https://www.pexels.com/es-es/foto/comida-vintage-cocina-cocinando-11666809/  |  consulta: "kitchen scale weighing"
+hund6-01.jpg  <-  pozo-p-nog-clavo\011.jpg  |  pexels (Pexels License)  |  autor: Ivan Babydov  |  https://www.pexels.com/es-es/foto/bol-tazon-cuenco-clavos-7790669/  |  consulta: "nails pile"
+banda-01.jpg  <-  pozo-p-nog-cadena\004.jpg  |  pexels (Pexels License)  |  autor: Can Camgöz  |  https://www.pexels.com/es-es/foto/blanco-y-negro-textura-hierro-plancha-20116569/  |  consulta: "metal chain links"
+cita-01.jpg  <-  pozo-p-nog-hoja\007.jpg  |  pexels (Pexels License)  |  autor: Elif  Gökçe  |  https://www.pexels.com/es-es/foto/naturaleza-hojas-verde-fresco-16862482/  |  consulta: "walnut tree leaves"
+mos1-01.jpg  <-  pozo-p-nog-clavo\010.jpg  |  pexels (Pexels License)  |  autor: Anne Kruse  |  https://www.pexels.com/es-es/foto/3-clavos-de-cabeza-plana-fotografia-de-primer-plano-190101/  |  consulta: "nails pile"
+mos2-01.jpg  <-  pozo-p-nog-cadena\001.jpg  |  pexels (Pexels License)  |  autor: wal_ 172619  |  https://www.pexels.com/es-es/foto/cadenas-industriales-de-acero-en-blanco-y-negro-35930741/  |  consulta: "metal chain links"
+mos3-01.jpg  <-  pozo-p-nog-cuerda\012.jpg  |  pexels (Pexels License)  |  autor: Rachel Claire  |  https://www.pexels.com/es-es/foto/cuerda-de-barco-bata-tunica-toga-6750236/  |  consulta: "rope coil"
+mos4-01.jpg  <-  pozo-p-nog-huincha\007.jpg  |  pexels (Pexels License)  |  autor: Ahsan 393  |  https://www.pexels.com/es-es/foto/blanco-y-negro-numeros-tamano-precision-20026508/  |  consulta: "tape measure"
+mos5-01.jpg  <-  pozo-p-nog-nogal\011.jpg  |  pexels (Pexels License)  |  autor: FWStudio  |  https://www.pexels.com/es-es/foto/superficie-de-madera-marron-129733/  |  consulta: "walnut wood grain"
+mos6-01.jpg  <-  pozo-p-nog-hoja\012.jpg  |  pexels (Pexels License)  |  autor: Mikhail Peace  |  https://www.pexels.com/es-es/foto/sony-dsc-33416247/  |  consulta: "walnut tree leaves"
+
+BRUMA (bruma-pag-0N.png y bruma-osc-0N.png, 30x20): las MISMAS fotos, recortadas a 3:2, reducidas y
+recoloreadas con C:\devs\demos\hacer-bruma.ps1 (clara >= 0,68 de luminancia / oscura <= 0,05). No suman fuentes.
+    pagina: port-01.jpg, banda-01.jpg, mos5-01.jpg, hund1-01.jpg, mos3-01.jpg   |   oscuras: port-01.jpg, mos5-01.jpg, banda-01.jpg
+
+MAPA: iframe de Google Maps (embed publico, sin clave). No hay imagen de mapa.

@@ -48,3 +48,17 @@ LO QUE FALTA, Y CAMBIA LA PÁGINA ENTERA
    es la mentira más fácil de descubrir — llega el cliente y le sirven
    otra cosa.
 3. El salón por dentro, sin gente o con permiso de quien salga.
+
+MAPA DE UBICACION — mapa-01.jpg
+  768 x 768 · zoom 15 · centro -39.35898, -71.5873592
+  Mosaicos de OpenStreetMap pegados en una sola imagen, con el marcador
+  dibujado encima. Datos (c) OpenStreetMap contributors, licencia ODbL:
+  la atribucion tiene que ir VISIBLE junto al mapa, en el pie de la figura.
+  https://www.openstreetmap.org/copyright
+
+MAPA DE UBICACION — mapa-01.jpg
+  768 x 768 · zoom 14 · centro -39.35898, -71.5873592
+  Mosaicos de OpenStreetMap pegados en una sola imagen, con el marcador
+  dibujado encima. Datos (c) OpenStreetMap contributors, licencia ODbL:
+  la atribucion tiene que ir VISIBLE junto al mapa, en el pie de la figura.
+  https://www.openstreetmap.org/copyright

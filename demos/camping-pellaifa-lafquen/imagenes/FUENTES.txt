@@ -1,0 +1,22 @@
+FUENTES DE LAS IMAGENES - Camping Pellaifa Lafquen Rehecha el 13-09-2026 (presentacion antes que texto). Fotos de REFERENCIA de bancos libres: ninguna es del local; las verdaderas las tiene que mandar el negocio. 
+port-01.jpg  <-  pozo-p-pel-orilla\012.jpg  |  pexels (Pexels License)  |  autor: Uriel Mont  |  https://www.pexels.com/es-es/foto/carpa-de-cupula-amarilla-sobre-la-hierba-verde-cerca-del-lago-6271619/  |  consulta: "lakeside tent"
+hund1-01.jpg  <-  pozo-p-pel-orilla\009.jpg  |  pexels (Pexels License)  |  autor: Analize Viljoen  |  https://www.pexels.com/es-es/foto/camping-tranquilo-junto-al-rio-breede-32383954/  |  consulta: "lakeside tent"
+hund2-01.jpg  <-  pozo-p-pel-quincho\008.jpg  |  pexels (Pexels License)  |  autor: Sergio Arteaga  |  https://www.pexels.com/es-es/foto/comida-verano-cena-chef-18299585/  |  consulta: "barbecue grill meat"
+hund3-01.jpg  <-  pozo-p-pel-orilla\011.jpg  |  pexels (Pexels License)  |  autor: Yusuke Furuya  |  https://www.pexels.com/es-es/foto/al-aire-libre-tienda-a-orillas-del-lago-fondo-de-pantalla-4k-9477623/  |  consulta: "lakeside tent"
+hund4-01.jpg  <-  pozo-p-pel-bici\009.jpg  |  pexels (Pexels License)  |  autor: cottonbro studio  |  https://www.pexels.com/es-es/foto/bosque-arboles-aventura-al-aire-libre-5994742/  |  consulta: "bicycle camping"
+hund5-01.jpg  <-  pozo-p-pel-mesa\009.jpg  |  pexels (Pexels License)  |  autor: Jared Brotman  |  https://www.pexels.com/es-es/foto/parque-estatal-sesqui-mesa-de-picnic-y-paisaje-de-reflexion-31730644/  |  consulta: "picnic table lake"
+hund6-01.jpg  <-  pozo-p-pel-rodante\005.jpg  |  pexels (Pexels License)  |  autor: Oliver Schröder  |  https://www.pexels.com/es-es/foto/pausa-con-la-caravana-28237692/  |  consulta: "campervan lake"
+banda-01.jpg  <-  pozo-p-pel-lago\009.jpg  |  pexels (Pexels License)  |  autor: Allan González  |  https://www.pexels.com/es-es/foto/reflejo-sereno-del-lago-en-los-azufres-mexico-30330292/  |  consulta: "lake dusk forest"
+cita-01.jpg  <-  pozo-p-pel-quincho\010.jpg  |  pexels (Pexels License)  |  autor: Sergio Arteaga  |  https://www.pexels.com/es-es/foto/comida-cena-fuego-picante-18299591/  |  consulta: "barbecue grill meat"
+mos1-01.jpg  <-  pozo-p-pel-chilco\008.jpg  |  pexels (Pexels License)  |  autor: Fionakate Storey  |  https://www.pexels.com/es-es/foto/fucsia-23891311/  |  consulta: "fuchsia magellanica"
+mos2-01.jpg  <-  pozo-p-pel-bici\004.jpg  |  pexels (Pexels License)  |  autor: Aliaksei Semirski  |  https://www.pexels.com/es-es/foto/campo-bosque-arboles-hierba-17361405/  |  consulta: "bicycle camping"
+mos3-01.jpg  <-  pozo-p-pel-lago\012.jpg  |  pexels (Pexels License)  |  autor: Dalek  |  https://www.pexels.com/es-es/foto/puesta-de-sol-agua-bosque-lago-6046808/  |  consulta: "lake dusk forest"
+mos4-01.jpg  <-  pozo-p-pel-chilco\003.jpg  |  pexels (Pexels License)  |  autor: Benhur Emmanuel  |  https://www.pexels.com/es-es/foto/primer-plano-de-flores-fucsia-de-color-rosa-vibrante-35538826/  |  consulta: "fuchsia magellanica"
+mos5-01.jpg  <-  pozo-p-pel-mesa\008.jpg  |  pexels (Pexels License)  |  autor: Jared Brotman  |  https://www.pexels.com/es-es/foto/un-tranquilo-lugar-para-picnic-junto-al-lago-en-columbia-35643293/  |  consulta: "picnic table lake"
+mos6-01.jpg  <-  pozo-p-pel-rodante\009.jpg  |  pexels (Pexels License)  |  autor: Gantas Vaičiulėnas  |  https://www.pexels.com/es-es/foto/autocaravana-cerca-de-un-lago-4499511/  |  consulta: "campervan lake"
+
+BRUMA (bruma-pag-0N.png y bruma-osc-0N.png, 30x20): las MISMAS fotos, recortadas a 3:2, reducidas y
+recoloreadas con C:\devs\demos\hacer-bruma.ps1 (clara >= 0,68 de luminancia / oscura <= 0,05). No suman fuentes.
+    pagina: port-01.jpg, banda-01.jpg, hund1-01.jpg, hund4-01.jpg, mos1-01.jpg, mos3-01.jpg, mos5-01.jpg, mos6-01.jpg   |   oscuras: cita-01.jpg, hund2-01.jpg, mos4-01.jpg
+
+MAPA: iframe de Google Maps (embed publico, sin clave). No hay imagen de mapa.

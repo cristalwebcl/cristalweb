@@ -3,6 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self'; img-src 'self' data:; font-src 'self'; connect-src 'self'; media-src 'self'; form-action 'self'; base-uri 'none'; frame-src 'none'; object-src 'none'">
 <meta name="robots" content="noindex, nofollow">
 <title>Lubricentro SR — Pitrufquén</title>
 <meta name="description" content="Lubricentro en Pitrufquén. Qué se revisa en cada cambio de aceite y qué significa el sticker del parabrisas.">
@@ -14,14 +15,7 @@
      si main.js nunca llega: sin él, un error de red dejaría media
      página invisible para siempre.
      ═══════════════════════════════════════════════════════════════ -->
-<script>
-  (function () {
-    var d = document.documentElement;
-    d.classList.remove('no-js');
-    d.classList.add('js');
-    window.__rescate = setTimeout(function () { d.classList.remove('js'); }, 4000);
-  })();
-</script>
+<script src="js/rescate.js"></script>
 
 <!-- Fuentes propias: cero peticiones a terceros. El preload va SOLO
      para la display, que es la del titular de la portada. -->
@@ -311,6 +305,43 @@
     <figure class="mos__p">
       <img src="imagenes/mos-06.jpg" width="780" height="1170"
            loading="lazy" decoding="async" alt="">
+    </figure>
+  </div>
+</section>
+
+<!-- ═══════════ DÓNDE QUEDA ═══════════
+     Esta sección es, a propósito, la más incómoda de la página: el
+     lubricentro no publica dirección ni teléfono en ninguna parte, y
+     eso es exactamente lo que la web viene a arreglar. El mapa muestra
+     la comuna, no una puerta, porque marcar un punto que no sabemos
+     sería inventarlo. -->
+<section class="donde" id="donde" aria-labelledby="t-donde">
+  <div class="ancho donde__cols">
+    <div>
+      <p class="sobre">Dónde queda</p>
+      <h2 id="t-donde">Pitrufquén. Y hasta ahí llega la información.</h2>
+      <p class="donde__p">
+        Su ficha de Google tiene 81 reseñas y un 5,0 redondo, pero no tiene
+        dirección publicada, ni teléfono, ni horario. Quien quiere ir a
+        cambiar el aceite tiene que preguntarle a alguien que ya haya ido.
+      </p>
+      <p class="donde__p donde__p--fuerte">
+        Los tres datos caben en dos líneas. Puestos acá, el mapa marca la
+        puerta y el botón llama solo.
+      </p>
+      <ul class="donde__faltan">
+        <li class="ej" data-ejemplo="lo confirma el lubricentro">Dirección</li>
+        <li class="ej" data-ejemplo="lo confirma el lubricentro">Teléfono</li>
+        <li class="ej" data-ejemplo="lo confirma el lubricentro">Horario</li>
+      </ul>
+    </div>
+    <figure class="mapa">
+      <img src="imagenes/mapa-01.jpg" width="768" height="768" loading="lazy" decoding="async"
+           alt="Mapa de Pitrufquén, en la Región de La Araucanía.">
+      <figcaption class="mapa__pie">
+        <span><b>Pitrufquén</b>, Región de La Araucanía.</span>
+        <span class="mapa__cred">Mapa: &copy; <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener">OpenStreetMap</a></span>
+      </figcaption>
     </figure>
   </div>
 </section>

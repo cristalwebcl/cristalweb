@@ -1,0 +1,34 @@
+FUENTES DE LAS IMAGENES - AgroFrut (Cooperativa Loncofrut), Loncoche
+Todas son fotos de REFERENCIA de bancos libres. Ninguna es del local: la fachada
+con el letrero y las del surtido real las tiene que mandar la cooperativa.
+
+port-01.jpg  <-  pozo-sacos\006.jpg  |  pexels.com (Pexels License)  |  autor: Lucia Barreiros  Silva  |  https://www.pexels.com/es-es/foto/campo-casa-vintage-agricultura-12293641/  |  consulta: "sacks grain store"
+    Portada: sacos apilados en un galpon de madera. Masa oscura sobre la portada clara.
+tajo-01.jpg  <-  pozo-agro-fardos\009.jpg  |  pexels.com (Pexels License)  |  autor: Wolfgang Weiser  |  https://www.pexels.com/es-es/foto/campo-de-trigo-dorado-con-fardos-de-heno-en-un-paisaje-de-verano-38851403/  |  consulta: "hay bales field"
+    Tajo: fardos redondos en un potrero cosechado. Ambiente, no lugar identificable.
+cita-01.jpg  <-  pozo-agro-alambre\008.jpg  |  pexels.com (Pexels License)  |  autor: Circe Denyer  |  https://www.pexels.com/es-es/foto/cerca-rustica-de-alambre-de-puas-en-salinas-field-33667818/  |  consulta: "barbed wire fence"
+    Cita: poste oxidado con alambre de puas, bajo velo de tinta al 80 %.
+tienda.jpg  <-  pozo-sacos\002.jpg  |  pexels.com (Pexels License)  |  autor: A.  |  https://www.pexels.com/es-es/foto/bolsas-apiladas-en-un-callejon-estrecho-fez-marruecos-38786715/  |  consulta: "sacks grain store"
+    Lamina de las resenas: rumas de sacos en bodega.
+mos1-01.jpg  <-  pozo-agro-tierra\012.jpg  |  pexels.com (Pexels License)  |  autor: Gundula Vogel  |  https://www.pexels.com/es-es/foto/acker-que-vuela-fresco-28676458/  |  consulta: "plowed field soil"
+    Mosaico: surcos arados (eco de la portada).
+mos2-01.jpg  <-  pozo-agro-almacigos\007.jpg  |  pexels.com (Pexels License)  |  autor: Alfo Medeiros  |  https://www.pexels.com/es-es/foto/hojas-plantas-verde-crecimiento-11573787/  |  consulta: "seedling trays greenhouse"
+    Mosaico: almacigos, la siembra de primavera.
+mos3-01.jpg  <-  pozo-agro-riego\004.jpg  |  pexels.com (Pexels License)  |  autor: Gratisography  |  https://www.pexels.com/es-es/foto/chapotear-crecimiento-esprai-hombre-2259/  |  consulta: "garden hose watering"
+    Mosaico: riego, el verano.
+mos4-01.jpg  <-  pozo-agro-fardos\006.jpg  |  pexels.com (Pexels License)  |  autor: Lorna Pauli  |  https://www.pexels.com/es-es/foto/pacas-de-heno-doradas-en-un-paisaje-de-campo-sereno-38291201/  |  consulta: "hay bales field"
+    Mosaico: forraje, lo de invernar.
+mos5-01.jpg  <-  pozo-agro-semilla\005.jpg  |  pexels.com (Pexels License)  |  autor: cottonbro studio  |  https://www.pexels.com/es-es/foto/manos-granos-seco-secado-5538162/  |  consulta: "wheat seeds hands"
+    Mosaico: la semilla que se compra en invierno.
+mos6-01.jpg  <-  pozo-agro-poda\006.jpg  |  pexels.com (Pexels License)  |  autor: Maria Turkmani  |  https://www.pexels.com/es-es/foto/mano-arbusto-matorral-ramas-13779225/  |  consulta: "pruning shears branch"
+    Mosaico: la poda de invierno.
+
+BRUMA (bruma-cla-01..08.png y bruma-osc-01..05.png, 30x20, 1-2 KB): son las MISMAS
+fotos de arriba, recortadas a 3:2, reducidas y recoloreadas con
+C:\devs\demos\hacer-bruma.ps1 (-Tono clara: luminancia >= 0,68 / -Tono oscura: <= 0,05).
+No suman fuentes nuevas.
+    cla-01 <- tajo-01   cla-02 <- mos2-01   cla-03 <- port-01   cla-04 <- mos3-01
+    cla-05 <- mos4-01   cla-06 <- cita-01   cla-07 <- mos1-01   cla-08 <- mos6-01
+    osc-01 <- port-01   osc-02 <- cita-01   osc-03 <- mos2-01   osc-04 <- mos6-01   osc-05 <- tajo-01
+
+MAPA: iframe de Google Maps (embed publico, sin clave). No hay imagen de mapa.

@@ -1,0 +1,22 @@
+FUENTES DE LAS IMAGENES - Devota Peluqueria Rehecha el 14-09-2026 (presentacion antes que texto). Fotos de REFERENCIA de bancos libres: ninguna es del local; las verdaderas las tiene que mandar el negocio. 
+port-01.jpg  <-  pozo-p-dev-brillo\005.jpg  |  pexels (Pexels License)  |  autor: Hairlust Official  |  https://www.pexels.com/es-es/foto/elegante-mujer-asiatica-con-cabello-largo-y-sedoso-35267456/  |  consulta: "shiny long hair back"
+hund1-01.jpg  <-  pozo-p-dev-secado\005.jpg  |  pexels (Pexels License)  |  autor: cottonbro studio  |  https://www.pexels.com/es-es/foto/manos-mujer-nina-modelo-3993467/  |  consulta: "hair salon blow dry"
+hund2-01.jpg  <-  pozo-p-dev-brillo\007.jpg  |  pexels (Pexels License)  |  autor: Ulrick Trappschuh  |  https://www.pexels.com/es-es/foto/mujer-joven-al-aire-libre-pelo-largo-16207701/  |  consulta: "shiny long hair back"
+hund3-01.jpg  <-  pozo-p-dev-peine\004.jpg  |  pexels (Pexels License)  |  autor: Елена  |  https://www.pexels.com/es-es/foto/cuchara-de-madera-peine-de-cerca-11751913/  |  consulta: "wooden comb brush"
+hund4-01.jpg  <-  pozo-p-dev-brillo\006.jpg  |  pexels (Pexels License)  |  autor: Armin  Rimoldi  |  https://www.pexels.com/es-es/foto/persona-sin-rostro-tranquilo-cuerpo-5301566/  |  consulta: "shiny long hair back"
+hund5-01.jpg  <-  pozo-p-dev-espejo\012.jpg  |  pexels (Pexels License)  |  autor: Rachel Claire  |  https://www.pexels.com/es-es/foto/lujo-lampara-clasico-retro-5531539/  |  consulta: "salon mirror chair empty"
+hund6-01.jpg  <-  pozo-p-dev-toalla\011.jpg  |  pexels (Pexels License)  |  autor: Théo Cold  |  https://www.pexels.com/es-es/foto/pila-de-toallas-azules-en-estante-de-madera-34006035/  |  consulta: "folded towels shelf"
+banda-01.jpg  <-  pozo-p-dev-gota\008.jpg  |  pexels (Pexels License)  |  autor: Rafael Minguet Delgado  |  https://www.pexels.com/es-es/foto/primer-plano-de-una-gota-de-agua-impactando-contra-una-superficie-39353265/  |  consulta: "water drops glass dark"
+cita-01.jpg  <-  pozo-p-dev-toalla\009.jpg  |  pexels (Pexels License)  |  autor: Pixabay  |  https://www.pexels.com/es-es/foto/pila-de-toallas-en-el-estante-271711/  |  consulta: "folded towels shelf"
+mos1-01.jpg  <-  pozo-p-dev-brillo\001.jpg  |  pexels (Pexels License)  |  autor: Edwin  Mijares  |  https://www.pexels.com/es-es/foto/mujer-con-cabello-largo-paseando-por-el-bosque-otonal-35747903/  |  consulta: "shiny long hair back"
+mos2-01.jpg  <-  pozo-p-dev-peine\012.jpg  |  pexels (Pexels License)  |  autor: Anete Lusina  |  https://www.pexels.com/es-es/foto/cepillo-de-bano-ecologico-y-peine-en-la-mesa-4792677/  |  consulta: "wooden comb brush"
+mos3-01.jpg  <-  pozo-p-dev-gota\011.jpg  |  pexels (Pexels License)  |  autor: Paul Pulimoottil  |  https://www.pexels.com/es-es/foto/gotas-de-lluvia-en-el-cristal-con-fondo-borroso-28941878/  |  consulta: "water drops glass dark"
+mos4-01.jpg  <-  pozo-p-dev-peine\001.jpg  |  pexels (Pexels License)  |  autor: Jue -  |  https://www.pexels.com/es-es/foto/ligero-flor-sombra-naturaleza-muerta-9096593/  |  consulta: "wooden comb brush"
+mos5-01.jpg  <-  pozo-p-dev-toalla\010.jpg  |  pexels (Pexels License)  |  autor: Phil Desforges  |  https://www.pexels.com/es-es/foto/naturaleza-muerta-armario-mueble-consejo-de-ministros-7947260/  |  consulta: "folded towels shelf"
+mos6-01.jpg  <-  pozo-p-dev-peine\011.jpg  |  pexels (Pexels License)  |  autor: Tima Miroshnichenko  |  https://www.pexels.com/es-es/foto/mano-de-madera-escultura-eco-7879836/  |  consulta: "wooden comb brush"
+
+BRUMA (bruma-pag-0N.png y bruma-osc-0N.png, 30x20): las MISMAS fotos, recortadas a 3:2, reducidas y
+recoloreadas con C:\devs\demos\hacer-bruma.ps1 (clara >= 0,68 de luminancia / oscura <= 0,05). No suman fuentes.
+    pagina: port-01.jpg, hund2-01.jpg, cita-01.jpg, mos5-01.jpg, hund5-01.jpg   |   oscuras: port-01.jpg, cita-01.jpg, mos1-01.jpg
+
+MAPA: iframe de Google Maps (embed publico, sin clave). No hay imagen de mapa.

@@ -26,3 +26,10 @@ URL de origen:
 002.jpg | 5616x3744 | Doctors Performing a Surgery in the Operating Room · Free Stock Photo | https://images.pexels.com/photos/11198234/pexels-photo-11198234.jpeg?cs=srgb&dl=pexels-carloscruz-artegrafia-172084181-11198234.jpg&fm=jpg
 003.jpg | 5184x3456 | Veterinary Photos, Download The BEST Free Veterinary Stock Photos & HD ... | https://images.pexels.com/photos/1350591/pexels-photo-1350591.jpeg?cs=srgb&dl=pexels-pranidchakan-boonrom-101111-1350591.jpg&fm=jpg
 004.jpg | 3024x4032 | Surgical Team Performing Procedure in Operating Room · Free Stock Photo | https://images.pexels.com/photos/36614084/pexels-photo-36614084.jpeg?cs=srgb&dl=pexels-arthur-uzoagba-3061628-36614084.jpg&fm=jpg
+
+MAPA DE UBICACION — mapa-01.jpg
+  768 x 768 · zoom 14 · centro -39.8141262, -73.2459859
+  Mosaicos de OpenStreetMap pegados en una sola imagen, con el marcador
+  dibujado encima. Datos (c) OpenStreetMap contributors, licencia ODbL:
+  la atribucion tiene que ir VISIBLE junto al mapa, en el pie de la figura.
+  https://www.openstreetmap.org/copyright

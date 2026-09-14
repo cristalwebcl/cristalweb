@@ -1,0 +1,20 @@
+FUENTES DE LAS IMAGENES - Cl&iacute;nica Veterinaria Ed&eacute;n Rehecha el 13-09-2026 (presentacion antes que texto). Fotos de REFERENCIA de bancos libres: ninguna es del local; las verdaderas las tiene que mandar el negocio. 
+port-01.jpg  <-  pozo-p-vet-perro-mayor\009.jpg  |  pexels (Pexels License)  |  autor: Eduardo López  |  https://www.pexels.com/es-es/foto/cabeza-de-perro-con-correa-verde-sobre-fondo-negro-16618520/  |  consulta: "senior dog"
+banda-01.jpg  <-  pozo-p-vet-cachorro\004.jpg  |  pexels (Pexels License)  |  autor: Abner Velázquez  |  https://www.pexels.com/es-es/foto/adorable-cachorro-bostezando-con-amigos-juguetones-34221894/  |  consulta: "puppy"
+cita-01.jpg  <-  pozo-p-vet-perro-mayor\007.jpg  |  pexels (Pexels License)  |  autor: Bianca Beltrán  |  https://www.pexels.com/es-es/foto/retrato-de-un-chihuahua-negro-15794955/  |  consulta: "senior dog"
+hund1-01.jpg  <-  pozo-p-vet-cachorro\007.jpg  |  pexels (Pexels License)  |  autor: Regina Tommasi  |  https://www.pexels.com/es-es/foto/adorable-cachorro-de-corgi-al-aire-libre-en-italia-35131003/  |  consulta: "puppy"
+hund2-01.jpg  <-  pozo-p-vet-perro\004.jpg  |  pexels (Pexels License)  |  autor: German Suarez  |  https://www.pexels.com/es-es/foto/retrato-de-un-perro-marron-con-un-abrigo-azul-al-aire-libre-38743329/  |  consulta: "dog portrait"
+hund3-01.jpg  <-  pozo-p-vet-perro\006.jpg  |  pexels (Pexels License)  |  autor: German Suarez  |  https://www.pexels.com/es-es/foto/perfil-de-un-pastor-aleman-relajado-al-aire-libre-35073379/  |  consulta: "dog portrait"
+hund4-01.jpg  <-  pozo-p-vet-perro-mayor\006.jpg  |  pexels (Pexels License)  |  autor: Moo  Lens  |  https://www.pexels.com/es-es/foto/retrato-de-un-perro-descansando-en-la-naturaleza-al-aire-libre-34081983/  |  consulta: "senior dog"
+mos1-01.jpg  <-  pozo-p-vet-perro-mayor\002.jpg  |  pexels (Pexels License)  |  autor: Florencia  Pérez  |  https://www.pexels.com/es-es/foto/perro-feliz-relajandose-en-el-parque-natural-uruguay-33710357/  |  consulta: "senior dog"
+mos2-01.jpg  <-  pozo-p-vet-cachorro\001.jpg  |  pexels (Pexels License)  |  autor: Abner Velázquez  |  https://www.pexels.com/es-es/foto/adorable-cachorro-golden-retriever-en-superficie-de-concreto-34221896/  |  consulta: "puppy"
+mos3-01.jpg  <-  pozo-p-vet-gato\007.png  |  pexels (Pexels License)  |  autor: Rafael Minguet Delgado  |  https://www.pexels.com/es-es/foto/un-gato-sentado-21418465/  |  consulta: "cat portrait"
+mos4-01.jpg  <-  pozo-p-vet-gato\003.jpg  |  pexels (Pexels License)  |  autor: Juan Poblete  |  https://www.pexels.com/es-es/foto/retrato-en-blanco-y-negro-de-un-gato-domestico-34372237/  |  consulta: "cat portrait"
+mos5-01.jpg  <-  pozo-p-vet-gato\005.jpg  |  pexels (Pexels License)  |  autor: Juan Poblete  |  https://www.pexels.com/es-es/foto/retrato-serene-de-felino-en-medio-del-bokeh-natural-34537352/  |  consulta: "cat portrait"
+mos6-01.jpg  <-  pozo-p-vet-cachorro\005.jpg  |  pexels (Pexels License)  |  autor: Bianca Beltrán  |  https://www.pexels.com/es-es/foto/cachorro-border-collie-15794920/  |  consulta: "puppy"
+
+BRUMA (bruma-pag-0N.png y bruma-osc-0N.png, 30x20): las MISMAS fotos, recortadas a 3:2, reducidas y
+recoloreadas con C:\devs\demos\hacer-bruma.ps1 (clara >= 0,68 de luminancia / oscura <= 0,05). No suman fuentes.
+    pagina: port-01.jpg, banda-01.jpg, cita-01.jpg, hund1-01.jpg, hund2-01.jpg, hund3-01.jpg, hund4-01.jpg, mos6-01.jpg   |   oscuras: port-01.jpg, cita-01.jpg, hund4-01.jpg
+
+MAPA: iframe de Google Maps (embed publico, sin clave). No hay imagen de mapa.

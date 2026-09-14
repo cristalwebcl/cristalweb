@@ -14,6 +14,16 @@ asustar a quien ya está preocupado.
 4. **La fachada con el letrero visible**, de día y de noche si hay
    atención de urgencia.
 
+## Estado al 09-09-2026
+
+Las diecinueve fotos de la carpeta son de banco y ninguna muestra el
+local. Los archivos con jeringas y con un perro sedado (`tira-01`,
+`tirab-01`, `mos-03`, `mos-04`) se cambiaron por animales tranquilos en
+su casa; uno de ellos además tenía una marca de tercero legible. Queda
+uno solo de esa línea: **`mos-06`** (y su original `cita-01`), un gatito
+sostenido con guantes con jeringas en el borde del cuadro. **Es el
+primer archivo que se reemplaza en cuanto llegue material del local.**
+
 ## Lo que NO sirve
 
 - Instrumental, jeringas o pabellón en primer plano: la página está

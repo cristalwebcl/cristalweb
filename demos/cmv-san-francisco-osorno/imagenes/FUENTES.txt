@@ -1,0 +1,22 @@
+FUENTES DE LAS IMAGENES - Centro Médico Veterinario San Francisco Rehecha el 13-09-2026 (presentacion antes que texto). Fotos de REFERENCIA de bancos libres: ninguna es del local; las verdaderas las tiene que mandar el negocio. 
+port-01.jpg  <-  pozo-p-cmv-gato\008.jpg  |  pexels (Pexels License)  |  autor: Thirdman  |  https://www.pexels.com/es-es/foto/mono-gato-adorable-peludo-8942612/  |  consulta: "cat eyes"
+hund1-01.jpg  <-  pozo-p-cmv-rayos\003.jpg  |  pexels (Pexels License)  |  autor: PURPLE24  |  https://www.pexels.com/es-es/foto/hospital-adentro-vacio-cuidado-de-la-salud-7617601/  |  consulta: "pet x-ray"
+hund2-01.jpg  <-  pozo-p-cmv-laboratorio\003.jpg  |  pexels (Pexels License)  |  autor: Tima Miroshnichenko  |  https://www.pexels.com/es-es/foto/hombre-tecnologia-blanco-enfocar-9574340/  |  consulta: "veterinary microscope"
+hund3-01.jpg  <-  pozo-p-cmv-descanso\001.jpg  |  pexels (Pexels License)  |  autor: Regina Tommasi  |  https://www.pexels.com/es-es/foto/perro-durmiendo-tranquilamente-sobre-una-manta-acogedora-30179132/  |  consulta: "dog sleeping"
+hund4-01.jpg  <-  pozo-p-cmv-vacuna\003.jpg  |  pexels (Pexels License)  |  autor: Pavel Danilyuk  |  https://www.pexels.com/es-es/foto/medicina-monocromo-escala-de-grises-farmaco-5998519/  |  consulta: "syringe vaccine"
+hund5-01.jpg  <-  pozo-p-cmv-peluqueria\008.png  |  pexels (Pexels License)  |  autor: Gerardo Manzano  |  https://www.pexels.com/es-es/foto/perro-mascota-retrato-fotografia-de-animales-16622024/  |  consulta: "dog grooming"
+hund6-01.jpg  <-  pozo-p-cmv-nariz\002.jpg  |  pexels (Pexels License)  |  autor: Heber Vazquez  |  https://www.pexels.com/es-es/foto/perro-mascota-domestico-nacional-16290640/  |  consulta: "dog nose"
+banda-01.jpg  <-  pozo-p-cmv-nariz\011.jpg  |  pexels (Pexels License)  |  autor: Elise Mason  |  https://www.pexels.com/es-es/foto/primer-plano-de-la-nariz-y-los-bigotes-de-un-perro-terrier-29258927/  |  consulta: "dog nose"
+cita-01.jpg  <-  pozo-p-cmv-gato\010.jpg  |  pexels (Pexels License)  |  autor: Joe Chen  |  https://www.pexels.com/es-es/foto/primer-plano-de-un-gato-atigrado-con-mirada-intensa-28431626/  |  consulta: "cat eyes"
+mos1-01.jpg  <-  pozo-p-cmv-gato\005.jpg  |  pexels (Pexels License)  |  autor: Fernanda Gomez de la torre  |  https://www.pexels.com/es-es/foto/retrato-en-primer-plano-de-un-gato-domestico-en-interiores-35449056/  |  consulta: "cat eyes"
+mos2-01.jpg  <-  pozo-p-cmv-peluqueria\003.jpg  |  pexels (Pexels License)  |  autor: Eduardo López  |  https://www.pexels.com/es-es/foto/retrato-de-perro-16620450/  |  consulta: "dog grooming"
+mos3-01.jpg  <-  pozo-p-cmv-descanso\003.jpg  |  pexels (Pexels License)  |  autor: EC  |  https://www.pexels.com/es-es/foto/perro-durmiendo-en-el-suelo-14084474/  |  consulta: "dog sleeping"
+mos4-01.jpg  <-  pozo-p-cmv-gato\007.jpg  |  pexels (Pexels License)  |  autor: Miguel Giménez  |  https://www.pexels.com/es-es/foto/mascota-ojos-gato-bigotes-18868601/  |  consulta: "cat eyes"
+mos5-01.jpg  <-  pozo-p-cmv-nariz\010.jpg  |  pexels (Pexels License)  |  autor: Denisha Sandoval  |  https://www.pexels.com/es-es/foto/nariz-de-perro-1188575/  |  consulta: "dog nose"
+mos6-01.jpg  <-  pozo-p-cmv-peluqueria\009.jpg  |  pexels (Pexels License)  |  autor: Gerardo Manzano  |  https://www.pexels.com/es-es/foto/perro-mascota-negro-fotografia-de-animales-16622115/  |  consulta: "dog grooming"
+
+BRUMA (bruma-pag-0N.png y bruma-osc-0N.png, 30x20): las MISMAS fotos, recortadas a 3:2, reducidas y
+recoloreadas con C:\devs\demos\hacer-bruma.ps1 (clara >= 0,68 de luminancia / oscura <= 0,05). No suman fuentes.
+    pagina: port-01.jpg, banda-01.jpg, cita-01.jpg, hund1-01.jpg, hund3-01.jpg, mos1-01.jpg, mos4-01.jpg, mos5-01.jpg   |   oscuras: port-01.jpg, cita-01.jpg, banda-01.jpg
+
+MAPA: iframe de Google Maps (embed publico, sin clave). No hay imagen de mapa.

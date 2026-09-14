@@ -1,0 +1,581 @@
+/* ══════════════════════════════════════════════════════════════════════
+   Comercial Schmidt — Ñuñoa
+   Demo de CristalWeb. CSS plano, sin build, sin librerías.
+
+   IDENTIDAD — «ALMACÉN CON APELLIDO»
+   El letrero pintado de un negocio de toda la vida: verde botella para
+   el fondo del rótulo, crema de papel viejo para la página y un dorado
+   apagado reservado al NOMBRE. La página es CLARA, no oscura: la tienda
+   está viva y abierta, no es un anticuario.
+
+   MECÁNICA DEL ACENTO (la sexta del registro): hay dos acentos y cada
+   uno tiene un trabajo distinto. El VERDE BOTELLA #0F4438 es la
+   interfaz —enlaces, botones, focos, paneles oscuros—. El DORADO
+   #7A5C15 no toca nunca un botón: marca sólo el apellido y los rótulos
+   de sección, que es exactamente donde el dorado aparece en un letrero
+   pintado. Así el dorado no compite con el ocre quemado #8A4F12 de la
+   demo 04 (Cortinas Deco Hogar), que sí es interfaz: mismo tipo de
+   color, oficios opuestos. El de acá además es 44° —oro viejo— contra
+   los 31° de aquél.
+
+   EL VERDE: #0F4438, tono 166°, luminosidad 16%. Es el verde más oscuro
+   del registro en esa franja. Los vecinos son #1F4A40 (mismo tono pero
+   40% de saturación y 20% de luz, un verde apagado de interfaz) y
+   #0B6E58 (mismo tono, 81% y 23%, un verde brillante de marca). Éste es
+   deliberadamente el de en medio y el más oscuro: es la pintura de un
+   letrero, no un color de pantalla.
+
+   DESLINDE CON SUS PAREJAS:
+   la 06 (Mall Chino Centro Hogar, MISMA COMUNA y MISMO RUBRO, ya
+   construida) es blanco frío, gris metálico y verde-agua de señalética
+   a 181°: la bodega grande donde uno se orienta solo. Ésta es lo
+   contrario: crema, madera y mostrador, donde uno pregunta. La 12
+   (Menajes San Luis) va grafito y cobre y todavía no se construye.
+
+   TRÍO TIPOGRÁFICO
+   · Display: Kaisei Tokumin — 0 usos en el registro. Serif de remates
+     gruesos que a tamaño grande se lee como letra pintada a mano en un
+     vidrio. Se eligió sobre las otras serif con cero usos (Esteban,
+     Brawler, Judson) porque es la única que tiene peso 800 y aguanta un
+     titular de rótulo sin verse de libro.
+   · Cuerpo: Gabarito (×5) — grotesca con esquinas blandas; al lado de
+     una serif pesada no compite y suena de barrio, no corporativa.
+   · Dato: IBM Plex Mono (×5) — la mono más cálida de las disponibles.
+     Acá lleva el teléfono fijo y las cifras de reseñas y seguidores.
+
+   CONTRASTES MEDIDOS sobre esta página:
+     tinta   #1C1A14 sobre crema #F5EFE1 ....... 15,9:1
+     medio   #5A5443 sobre crema ...............  6,6:1
+     botella #0F4438 sobre crema ...............  9,6:1   (texto y enlaces)
+     dorado  #7A5C15 sobre crema ...............  5,4:1   (sólo rótulos)
+     crema   sobre botella .......................  9,6:1
+     dorado-cl #D7B05A sobre botella ...........  5,4:1
+   ══════════════════════════════════════════════════════════════════════ */
+
+:root {
+  --crema: #F5EFE1;
+  --crema-2: #EBE3D1;
+  --crema-3: #DCD2BC;
+  --tinta: #1C1A14;
+  --medio: #5A5443;
+  --botella: #0F4438;
+  --botella-cl: #79C3A8;   /* sólo sobre fondo oscuro */
+  --botella-suave: #DCEAE2;
+  --dorado: #7A5C15;       /* sólo el nombre y los rótulos */
+  --dorado-cl: #D7B05A;    /* sólo sobre fondo oscuro */
+
+  --ancho: 1160px;
+  --curva: cubic-bezier(.22, .61, .36, 1);
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+[hidden] { display: none !important; }
+
+html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+
+body {
+  margin: 0;
+  background: var(--crema);
+  color: var(--tinta);
+  font-family: 'Gabarito', system-ui, -apple-system, 'Segoe UI', sans-serif;
+  font-size: 1.05rem;
+  line-height: 1.62;
+  -webkit-font-smoothing: antialiased;
+}
+
+img { max-width: 100%; height: auto; display: block; }
+.ancho { width: min(100% - 2.5rem, var(--ancho)); margin-inline: auto; }
+
+a { color: var(--botella); }
+a:focus-visible, button:focus-visible {
+  outline: 3px solid var(--botella);
+  outline-offset: 3px;
+}
+
+/* ── Piezas de texto compartidas ─────────────────────────────────── */
+.rotulo {
+  font-family: 'IBM Plex Mono', ui-monospace, monospace;
+  font-size: .71rem;
+  letter-spacing: .16em;
+  text-transform: uppercase;
+  color: var(--dorado);
+  margin: 0 0 .85rem;
+}
+.rotulo--claro { color: var(--dorado-cl); }
+
+.titulo {
+  font-family: 'Kaisei Tokumin', Georgia, 'Times New Roman', serif;
+  font-weight: 800;
+  font-size: clamp(1.85rem, 4.3vw, 2.95rem);
+  line-height: 1.14;
+  letter-spacing: -.012em;
+  margin: 0 0 1.1rem;
+}
+.titulo--chico { font-size: clamp(1.55rem, 3.3vw, 2.25rem); }
+.titulo--claro { color: var(--crema); }
+
+.sub {
+  font-family: 'Kaisei Tokumin', Georgia, serif;
+  font-weight: 800;
+  font-size: clamp(1.3rem, 2.6vw, 1.75rem);
+  margin: 0 0 .9rem;
+}
+
+.entradilla { font-size: 1.1rem; color: var(--medio); max-width: 62ch; margin: 0 0 1.8rem; }
+.mini { font-size: .9rem; color: var(--medio); max-width: 70ch; margin: 1.4rem 0 0; }
+.mini--claro { color: #BDB39C; }
+
+/* Lo que todavía no es verdad va subrayado con puntitos y dice quién lo
+   confirma. Acá hay mucho: casi todo el surtido sale de directorios de
+   terceros, no de la tienda. */
+.ej { border-bottom: 1px dotted var(--dorado); cursor: help; }
+.ej::after {
+  content: ' (ej.)';
+  font-family: 'IBM Plex Mono', ui-monospace, monospace;
+  font-size: .7em; color: var(--dorado); letter-spacing: .03em;
+}
+
+.dato { font-family: 'IBM Plex Mono', ui-monospace, monospace; font-variant-numeric: tabular-nums; }
+
+.boton {
+  display: inline-block;
+  padding: .82rem 1.5rem;
+  background: var(--botella);
+  color: var(--crema);
+  text-decoration: none;
+  font-weight: 700;
+  font-size: .97rem;
+  border-radius: 3px;
+  transition: background .2s var(--curva), transform .2s var(--curva);
+}
+.boton:hover { background: #0A3129; transform: translateY(-2px); }
+.boton--linea {
+  background: transparent; color: var(--botella);
+  box-shadow: inset 0 0 0 1.5px var(--botella);
+}
+.boton--linea:hover { background: var(--botella-suave); }
+
+/* ── Banda de propuesta ──────────────────────────────────────────── */
+.propuesta { background: var(--botella); color: #C9DDD3; padding: 1.05rem 0; }
+.propuesta__q {
+  font-family: 'IBM Plex Mono', ui-monospace, monospace;
+  font-size: .71rem; letter-spacing: .1em; text-transform: uppercase;
+  color: var(--dorado-cl); margin: 0 0 .4rem;
+}
+.propuesta__q b { color: var(--crema); font-weight: 500; }
+.propuesta__d { margin: 0; font-size: .95rem; max-width: 82ch; }
+.propuesta__d .dato { color: var(--dorado-cl); }
+.propuesta__d b { color: var(--crema); }
+
+/* ── Cabecera ────────────────────────────────────────────────────── */
+/* Sólida siempre: es sticky en flujo normal, o sea queda ARRIBA de la
+   portada y no encima; transparentarla no gana nada. */
+.cab {
+  position: sticky; top: 0; z-index: 40;
+  background: var(--crema);
+  border-bottom: 1px solid var(--crema-3);
+  transition: transform .3s var(--curva);
+}
+.cab--oculta { transform: translateY(-100%); }
+.cab__in { display: flex; align-items: center; justify-content: space-between; gap: 1rem; min-height: 64px; }
+.cab__marca { display: flex; align-items: center; gap: .75rem; text-decoration: none; color: var(--tinta); }
+.cab__txt {
+  font-family: 'Kaisei Tokumin', Georgia, serif;
+  font-weight: 800; font-size: 1.05rem; line-height: 1.1;
+  display: flex; flex-direction: column;
+}
+.cab__sub {
+  font-family: 'IBM Plex Mono', ui-monospace, monospace;
+  font-weight: 400;
+  font-size: .6rem; letter-spacing: .11em; text-transform: uppercase;
+  color: var(--medio); margin-top: .22rem;
+}
+/* el letrerito: el rótulo verde con la inicial en dorado */
+.marca__letrero {
+  width: 32px; height: 32px; flex: none;
+  display: grid; place-items: center;
+  background: var(--botella);
+  border: 1.5px solid var(--dorado-cl);
+  border-radius: 3px;
+}
+.marca__s {
+  font-family: 'Kaisei Tokumin', Georgia, serif;
+  font-weight: 800; font-size: 1rem; line-height: 1;
+  color: var(--dorado-cl);
+}
+
+.cab__nav { display: flex; align-items: center; gap: 1.3rem; }
+.cab__nav a { color: var(--medio); text-decoration: none; font-size: .93rem; }
+.cab__nav a:hover { color: var(--botella); }
+.cab__tel {
+  font-family: 'IBM Plex Mono', ui-monospace, monospace;
+  font-variant-numeric: tabular-nums;
+  color: var(--botella) !important;
+  box-shadow: inset 0 0 0 1.5px var(--crema-3);
+  padding: .42rem .8rem; border-radius: 3px;
+}
+.cab__tel:hover { box-shadow: inset 0 0 0 1.5px var(--botella); }
+@media (max-width: 900px) { .cab__nav a:not(.cab__tel) { display: none; } }
+
+/* ── Portada ─────────────────────────────────────────────────────── */
+.portada {
+  position: relative;
+  padding: clamp(3rem, 7vw, 5.6rem) 0;
+  background: var(--crema);
+  overflow: hidden;
+}
+.portada__in { position: relative; z-index: 2; max-width: 38rem; }
+.portada__h1 {
+  font-family: 'Kaisei Tokumin', Georgia, serif;
+  font-weight: 800;
+  font-size: clamp(2.1rem, 5.6vw, 3.7rem);
+  line-height: 1.08;
+  letter-spacing: -.02em;
+  margin: 0 0 1.2rem;
+}
+.portada__h1-b { color: var(--botella); }
+.portada__bajada { font-size: clamp(1.02rem, 1.6vw, 1.16rem); color: var(--medio); max-width: 45ch; margin: 0 0 1.8rem; }
+.portada__acc { display: flex; flex-wrap: wrap; gap: .8rem; margin: 0 0 2.4rem; }
+
+.specs { display: flex; flex-wrap: wrap; gap: 2.2rem; margin: 0; }
+.specs dt {
+  font-family: 'IBM Plex Mono', ui-monospace, monospace;
+  font-size: .65rem; letter-spacing: .11em; text-transform: uppercase;
+  color: var(--medio); margin-bottom: .2rem;
+}
+.specs dd {
+  margin: 0;
+  font-family: 'IBM Plex Mono', ui-monospace, monospace;
+  font-variant-numeric: tabular-nums;
+  font-size: 1.45rem; font-weight: 500;
+}
+
+/* ── Escena: la campanilla de la puerta ──────────────────────────── */
+/* Es un DETALLE: va chica, arriba a la derecha, y nunca compite con el
+   titular. Único bucle del sitio, de un grado y cada siete segundos. */
+.escena {
+  position: absolute;
+  right: clamp(1.5rem, 8vw, 9rem);
+  top: 0;
+  width: clamp(90px, 11vw, 135px);
+  z-index: 1;
+  pointer-events: none;
+}
+.escena__svg { width: 100%; height: auto; display: block; }
+.cp-viga { fill: var(--crema-3); }
+.cp-resorte { fill: none; stroke: var(--medio); stroke-width: 3; stroke-linecap: round; }
+.cp-campana { fill: var(--dorado); }
+.cp-corona { fill: var(--dorado); }
+.cp-badajo { fill: var(--botella); }
+.cp-hilo { stroke: var(--medio); stroke-width: 2; }
+
+/* El giro es desde el GANCHO, arriba: una campana no rota por su
+   centro. transform-box: fill-box mide el origen sobre la caja del
+   grupo; sin esa línea el origen cae en el 0,0 del viewBox. */
+.cp-cuelga {
+  transform-box: fill-box;
+  transform-origin: 50% 0%;
+}
+@keyframes campanaEntra {
+  0%   { transform: rotate(14deg); }
+  32%  { transform: rotate(-9deg); }
+  62%  { transform: rotate(4deg); }
+  84%  { transform: rotate(-1.5deg); }
+  100% { transform: rotate(0deg); }
+}
+@keyframes campanaReposa {
+  0%, 100% { transform: rotate(-1deg); }
+  50%      { transform: rotate(1deg); }
+}
+.js .escena--va .cp-cuelga {
+  animation: campanaEntra 1.4s var(--curva) both,
+             campanaReposa 7s ease-in-out 1.4s infinite;
+}
+@media (prefers-reduced-motion: reduce) {
+  .js .escena--va .cp-cuelga { animation: none; }
+}
+@media (max-width: 900px) {
+  /* a 375 px se conserva al 60 %: sigue siendo un detalle, no desaparece */
+  .escena { right: 1rem; width: 78px; opacity: .9; }
+}
+
+/* ── Franja de foto ──────────────────────────────────────────────── */
+.tajo { margin: 0; }
+.tajo img { width: 100%; aspect-ratio: 21 / 9; object-fit: cover; }
+
+/* ── Cifras ──────────────────────────────────────────────────────── */
+.cifras { padding: clamp(2.8rem, 5vw, 4.2rem) 0; background: var(--crema-2); }
+.cifras__grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1.6rem; }
+.cifra { border-top: 3px solid var(--crema-3); padding-top: 1rem; }
+.cifra--cero { border-top-color: var(--botella); }
+.cifra__n {
+  font-family: 'IBM Plex Mono', ui-monospace, monospace;
+  font-variant-numeric: tabular-nums;
+  font-size: clamp(1.8rem, 3.8vw, 2.6rem); font-weight: 500;
+  margin: 0 0 .35rem; line-height: 1;
+}
+.cifra--cero .cifra__n { color: var(--botella); }
+.cifra__t { margin: 0; font-size: .89rem; color: var(--medio); }
+@media (max-width: 800px) { .cifras__grid { grid-template-columns: repeat(2, 1fr); } }
+
+/* ── Pieza firma: lo de siempre y lo nuevo ───────────────────────── */
+.siempre { padding: clamp(3.4rem, 7vw, 5.6rem) 0; }
+
+.estantes { display: grid; grid-template-columns: 1fr 1fr; gap: clamp(1.6rem, 4vw, 3rem); margin-top: 2.4rem; }
+@media (max-width: 840px) { .estantes { grid-template-columns: 1fr; } }
+
+.estante__marco { border-radius: 4px; padding: .8rem; margin-bottom: 1.1rem; }
+.estante--viejo .estante__marco { background: #E3D9C2; }
+.estante--nuevo .estante__marco { background: var(--botella-suave); }
+.estante__svg { width: 100%; height: auto; display: block; }
+
+/* el viejo es de madera y sus cosas son de loza; el nuevo es metálico */
+.estante--viejo .et-lado, .estante--viejo .et-tabla { fill: #8A6A3E; }
+.estante--viejo .et-cosa rect { fill: #F3ECDD; stroke: #C7B695; stroke-width: 1.5; }
+.estante--nuevo .et-lado, .estante--nuevo .et-tabla { fill: #7E9A90; }
+.estante--nuevo .et-cosa rect { fill: #FFFFFF; stroke: #9FBDB1; stroke-width: 1.5; }
+
+.estante h3 {
+  font-family: 'Kaisei Tokumin', Georgia, serif;
+  font-weight: 800; font-size: 1.4rem; margin: 0 0 .7rem;
+}
+.lista { list-style: none; margin: 0; padding: 0; display: grid; gap: .55rem; }
+.lista li { position: relative; padding-left: 1.3rem; font-size: .97rem; color: var(--medio); }
+.lista li::before {
+  content: ''; position: absolute; left: 0; top: .62em;
+  width: 7px; height: 7px; border-radius: 50%;
+  background: var(--botella);
+}
+
+.mostrador {
+  margin-top: clamp(2.6rem, 6vw, 4rem);
+  background: var(--crema-2);
+  border-left: 4px solid var(--dorado);
+  border-radius: 0 4px 4px 0;
+  padding: clamp(1.4rem, 3.5vw, 2.2rem);
+}
+.mostrador > p { color: var(--medio); margin: 0; max-width: 68ch; }
+/* A tres columnas en pantalla ancha: con una sola, el panel del
+   mostrador quedaba con la mitad derecha vacia. */
+.pregunte { list-style: none; margin: 1.6rem 0 0; padding: 0; display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.4rem; }
+@media (max-width: 820px) { .pregunte { grid-template-columns: 1fr; gap: .8rem; } }
+.pregunte li { position: relative; padding-left: 1.6rem; font-size: .98rem; color: var(--medio); }
+.pregunte li::before {
+  content: '?';
+  position: absolute; left: 0; top: 0;
+  font-family: 'Kaisei Tokumin', Georgia, serif;
+  font-weight: 800; color: var(--dorado);
+}
+.pregunte b { color: var(--tinta); }
+
+/* ── Secciones ───────────────────────────────────────────────────── */
+.secciones { padding: clamp(3rem, 6vw, 5rem) 0; background: var(--crema-2); }
+.sec__grid { list-style: none; margin: 2.2rem 0 0; padding: 0; display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.2rem; }
+.sec {
+  display: flex; flex-direction: column; gap: .3rem;
+  background: var(--crema); border-top: 3px solid var(--botella);
+  padding: 1.1rem 1.2rem 1.3rem; border-radius: 0 0 3px 3px;
+}
+.sec b { font-family: 'Kaisei Tokumin', Georgia, serif; font-weight: 800; font-size: 1.15rem; }
+.sec .ej { font-size: .92rem; color: var(--medio); }
+@media (max-width: 880px) { .sec__grid { grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 520px) { .sec__grid { grid-template-columns: 1fr; } }
+
+/* ── Mitades ─────────────────────────────────────────────────────── */
+.mitades {
+  display: grid; grid-template-columns: 1fr 1fr;
+  align-items: center; gap: clamp(2rem, 5vw, 4.5rem);
+  width: min(100% - 2.5rem, var(--ancho));
+  margin: clamp(3.4rem, 7vw, 6rem) auto;
+}
+.mitades__foto { margin: 0; }
+.mitades__foto img { width: 100%; aspect-ratio: 4 / 5; object-fit: cover; border-radius: 3px; }
+.mitades__texto p { color: var(--medio); }
+@media (max-width: 880px) { .mitades { grid-template-columns: 1fr; } }
+
+.datos { margin: 1.6rem 0 0; display: grid; gap: .1rem; }
+.datos > div { display: flex; justify-content: space-between; gap: 1rem; padding: .6rem 0; border-bottom: 1px solid var(--crema-3); }
+.datos dt {
+  font-family: 'IBM Plex Mono', ui-monospace, monospace;
+  font-size: .67rem; letter-spacing: .1em; text-transform: uppercase;
+  color: var(--medio); padding-top: .2rem;
+}
+.datos dd { margin: 0; text-align: right; }
+
+/* ── Cita ────────────────────────────────────────────────────────── */
+.cita { position: relative; margin: 0; }
+.cita img { width: 100%; aspect-ratio: 16 / 9; object-fit: cover; }
+.cita__q {
+  position: absolute; inset: 0;
+  display: flex; align-items: center;
+  margin: 0; padding: 2rem clamp(1.5rem, 6vw, 5rem);
+  background: linear-gradient(90deg, rgba(15,68,56,.93) 0%, rgba(15,68,56,.82) 50%, rgba(15,68,56,.35) 100%);
+}
+.cita__q p {
+  font-family: 'Kaisei Tokumin', Georgia, serif;
+  font-weight: 800;
+  font-size: clamp(1.1rem, 2.6vw, 1.9rem);
+  line-height: 1.28;
+  color: var(--crema);
+  margin: 0; max-width: 28ch;
+}
+
+/* ── Cómo los encuentran hoy (con telón) ─────────────────────────── */
+.con-telon { position: relative; overflow: hidden; background: var(--botella); color: #C9DDD3; }
+.telon { position: absolute; inset: 0; }
+.telon img { width: 100%; height: 100%; object-fit: cover; opacity: .28; filter: grayscale(.45) brightness(.38); }
+/* Velo encima de la foto: sin él, una foto clara levanta tanto el fondo
+   que el titular claro se queda sin contraste justo en el medio. */
+.telon::after {
+  content: ""; position: absolute; inset: 0;
+  background: linear-gradient(90deg, rgba(15,68,56,.94) 0%, rgba(15,68,56,.78) 55%, rgba(15,68,56,.6) 100%);
+}
+.con-telon > .ancho { position: relative; z-index: 2; }
+.hoy { padding: clamp(3.2rem, 6.5vw, 5.2rem) 0; }
+
+.pasos { counter-reset: p; list-style: none; margin: 2.2rem 0 0; padding: 0; display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.6rem; }
+.pasos li { counter-increment: p; position: relative; padding-top: 2.6rem; font-size: .96rem; }
+.pasos li::before {
+  content: counter(p, decimal-leading-zero);
+  position: absolute; top: 0; left: 0;
+  font-family: 'IBM Plex Mono', ui-monospace, monospace;
+  font-size: 1.25rem; font-weight: 500;
+  color: var(--dorado-cl);
+}
+.pasos li::after {
+  content: ''; position: absolute; top: 1.9rem; left: 0; width: 2.4rem; height: 2px;
+  background: var(--dorado-cl); opacity: .55;
+}
+.pasos li b { color: var(--crema); }
+@media (max-width: 820px) { .pasos { grid-template-columns: 1fr; } }
+
+/* ── Mosaico ─────────────────────────────────────────────────────── */
+.mos { padding: clamp(3rem, 6vw, 5rem) 0; }
+.mos__grilla { display: grid; grid-template-columns: repeat(3, 1fr); gap: .5rem; width: min(100% - 2.5rem, 1400px); margin-inline: auto; }
+.mos__p { margin: 0; overflow: hidden; }
+.mos__p img { width: 100%; aspect-ratio: 3 / 4; object-fit: cover; transition: transform .5s var(--curva); }
+.mos__p:hover img { transform: scale(1.035); }
+.mos__pie { font-size: .9rem; color: var(--medio); max-width: 72ch; margin: 1.6rem auto 0; text-align: center; }
+@media (max-width: 820px) { .mos__grilla { grid-template-columns: repeat(2, 1fr); } }
+
+/* ── Contacto ────────────────────────────────────────────────────── */
+.contacto { padding: clamp(3rem, 6vw, 5rem) 0; background: var(--crema-2); }
+.contacto__cols { display: grid; grid-template-columns: 1.2fr 1fr; gap: clamp(2rem, 5vw, 4rem); align-items: start; }
+.contacto__num {
+  font-family: 'IBM Plex Mono', ui-monospace, monospace;
+  font-variant-numeric: tabular-nums;
+  font-size: clamp(1.35rem, 3.3vw, 2rem);
+  margin: 0 0 .6rem;
+}
+.contacto__num a { text-decoration: none; }
+.contacto__num a:hover { text-decoration: underline; }
+.contacto__ig { margin: 0; font-size: .95rem; color: var(--medio); }
+@media (max-width: 800px) { .contacto__cols { grid-template-columns: 1fr; } }
+
+/* ── Para el dueño ───────────────────────────────────────────────── */
+.dueno { padding: clamp(3rem, 6vw, 5rem) 0; background: #0A3129; color: #C9DDD3; }
+.dueno__cols { display: grid; grid-template-columns: repeat(3, 1fr); gap: 2rem; margin-top: 2rem; }
+.dueno__cols h3 {
+  font-family: 'IBM Plex Mono', ui-monospace, monospace;
+  font-size: .71rem; letter-spacing: .12em; text-transform: uppercase;
+  color: var(--dorado-cl); margin: 0 0 .6rem;
+}
+.dueno__cols p { margin: 0; font-size: .94rem; }
+.dueno__cols b { color: var(--crema); }
+.dueno__cierre { display: flex; flex-wrap: wrap; gap: 1.6rem; margin: 2.6rem 0 0; }
+.flecha { color: var(--dorado-cl); text-decoration: none; font-size: .97rem; }
+.flecha:hover { text-decoration: underline; }
+.flecha--fuerte { font-weight: 700; }
+@media (max-width: 820px) { .dueno__cols { grid-template-columns: 1fr; } }
+
+/* ── Pie ─────────────────────────────────────────────────────────── */
+.pie { background: #07231D; color: #93A89E; padding: 2.4rem 0; font-size: .88rem; }
+.pie b { color: var(--crema); }
+.pie__leg { color: #6E8279; font-size: .82rem; margin: .8rem 0 0; }
+
+/* ── Apariciones ─────────────────────────────────────────────────── */
+/* El stagger se resuelve con nth-child en el CSS y NUNCA con un
+   style="--i:3" en el HTML: la CSP de esta página bloquea el atributo
+   style y el escalonado se perdería sin un solo error en consola. */
+.js .rev > * { opacity: 0; transform: translateY(14px); }
+.js .rev.rev--on > * { opacity: 1; transform: none; transition: opacity .55s ease, transform .55s var(--curva); }
+.js .rev.rev--on > *:nth-child(2) { transition-delay: .07s; }
+.js .rev.rev--on > *:nth-child(3) { transition-delay: .14s; }
+.js .rev.rev--on > *:nth-child(4) { transition-delay: .21s; }
+.js .rev.rev--on > *:nth-child(5) { transition-delay: .28s; }
+.js .rev.rev--on > *:nth-child(6) { transition-delay: .35s; }
+
+.js .rev:is(.rotulo, .titulo) { opacity: 0; transform: translateY(14px); }
+.js .rev--on:is(.rotulo, .titulo) { opacity: 1; transform: none; transition: opacity .55s ease, transform .55s var(--curva); }
+
+@media (prefers-reduced-motion: reduce) {
+  .js .rev > *, .js .rev:is(.rotulo, .titulo) { opacity: 1; transform: none; }
+}
+
+/* ── MAPA DE UBICACION ──────────────────────────────────────────────
+   Imagen propia con mosaicos de OpenStreetMap pegados: la CSP prohibe
+   pedir nada a un tercero, asi que un iframe de Google Maps quedaria en
+   blanco SIN dar un solo error. El "Como llegar" si es un enlace, y un
+   enlace no lo bloquea nada.
+   Los colores salen de currentColor a proposito: asi el bloque se adapta
+   a la paleta de cada demo sin conocerla y sin chocar con ella.
+   La atribucion a OpenStreetMap la exige su licencia (ODbL). */
+.mapa-sec { padding: clamp(2.5rem, 6vw, 4.5rem) 0; }
+.mapa {
+  /* Casi siempre el mapa queda como hijo DIRECTO de la seccion, fuera del
+     contenedor .ancho: sin este ancho maximo se va de borde a borde y el
+     pie del mapa arranca pegado al filo de la pantalla. Se usa la variable
+     de la demo si existe, y 1100 px si no. */
+  width: min(100% - 2.5rem, var(--ancho, 1100px));
+  margin: 1.4rem auto 0;
+  border: 1px solid; border-color: color-mix(in srgb, currentColor 22%, transparent);
+  border-radius: 10px; overflow: hidden;
+}
+@supports not (color: color-mix(in srgb, red 50%, blue)) { .mapa { border-color: rgba(128, 128, 128, .35); } }
+.mapa img { display: block; width: 100%; height: auto; aspect-ratio: 16 / 10; object-fit: cover; }
+.mapa__pie {
+  display: flex; flex-wrap: wrap; align-items: center; gap: .4rem 1rem;
+  padding: .75rem .9rem;
+  font-size: .86em; line-height: 1.45;
+  border-top: 1px solid; border-top-color: color-mix(in srgb, currentColor 22%, transparent);
+}
+@supports not (color: color-mix(in srgb, red 50%, blue)) { .mapa__pie { border-top-color: rgba(128, 128, 128, .35); } }
+.mapa__pie b { font-weight: 700; }
+.mapa__ir { color: inherit; font-weight: 700; text-decoration: underline; min-height: 44px; display: inline-flex; align-items: center; }
+.mapa__cred { width: 100%; font-size: .84em; opacity: .8; }
+.mapa__cred a { color: inherit; }
+/* ── BOTON FLOTANTE DE CONTACTO ─────────────────────────────────────
+   56 px de alto, por encima del minimo tactil de 44. Los colores de
+   marca van a proposito: se reconocen sin leerlos, y eso es lo que hace
+   que se toquen. Se ve SIEMPRE por defecto; el JS solo lo aparta sobre
+   la portada. Al reves, un fallo del script se llevaria el CTA principal. */
+.flota {
+  position: fixed;
+  right: max(1rem, env(safe-area-inset-right, 0px));
+  bottom: max(1rem, env(safe-area-inset-bottom, 0px));
+  z-index: 60;
+  display: inline-flex; align-items: center; gap: .55rem;
+  height: 56px; padding: 0 1.15rem 0 1rem;
+  border-radius: 999px;
+  text-decoration: none;
+  font-family: var(--cuerpo, system-ui, sans-serif);
+  font-size: .95rem; font-weight: 700; line-height: 1;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, .26), 0 2px 6px rgba(0, 0, 0, .16);
+  transition: opacity .28s ease, transform .28s ease, box-shadow .18s ease;
+}
+.flota--wa { background: #25D366; color: #07310F; }
+.flota--ig { background: linear-gradient(120deg, #F9CE34 4%, #EE2A7B 48%, #6228D7 96%); color: #FFFFFF; }
+.flota__i { width: 26px; height: 26px; fill: currentColor; flex: none; }
+.flota:hover, .flota:focus-visible { transform: translateY(-2px); box-shadow: 0 10px 26px rgba(0, 0, 0, .3); }
+.js .flota--arriba { opacity: 0; transform: translateY(14px) scale(.94); pointer-events: none; }
+
+@media (max-width: 520px) {
+  .flota { width: 56px; padding: 0; justify-content: center; }
+  .flota__t { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .flota { transition: opacity .28s ease; }
+  .flota:hover, .flota:focus-visible { transform: none; }
+  .js .flota--arriba { transform: none; }
+}

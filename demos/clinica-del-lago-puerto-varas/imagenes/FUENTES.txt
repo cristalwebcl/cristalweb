@@ -1,0 +1,70 @@
+FUENTES DE LAS IMAGENES Y LOS VIDEOS - clinica-del-lago-puerto-varas
+Bancos libres. Formato de cada linea:
+  archivo  <=  banco | licencia | autor | pagina del banco | URL del original | notas
+Actualizado el 08-09-2026 (segunda pasada).
+
+Las trece piezas tienen procedencia completa. La deuda que quedaba de la
+primera version -seis archivos sin banco ni autor anotado- esta cerrada:
+port-01 se identifico (era el recorte superior de un collage de Pexels) y
+los otros cinco se reemplazaron por archivos con atribucion completa.
+
+
+--- PORTADA Y BANDAS A SANGRE ---
+
+port-01.jpg  <=  pexels | Pexels License | Daniel Frank | https://www.pexels.com/es-es/foto/silla-y-equipo-de-dentista-en-blanco-y-negro-287237/ | https://images.pexels.com/photos/287237/pexels-photo-287237.jpeg | el original es un collage: arriba la foto grande del box y abajo una tira de cinco miniaturas. Se recorto la parte de arriba y quedo en 2560x1700. Identificado el 08-09-2026 volviendo a buscar en el banco.
+
+tajo-01.jpg  <=  pexels | Pexels License | kaboompics.com | https://www.pexels.com/es-es/foto/profesional-debatiendo-discutiendo-mirando-a-6627325/ | https://images.pexels.com/photos/6627325/pexels-photo-6627325.jpeg | odontologo explicando con un modelo de yeso a un paciente de espaldas. Antes de procesar se recorto al 86 % superior del cuadro para dejar fuera la marca bordada del bolsillo del uniforme, que se leia a tamano real. Despues, 3:2 a 2200 px, calidad 80.
+
+cita-01.jpg  <=  pexels | Pexels License | kaboompics.com | https://www.pexels.com/video/dental-casts-on-table-6630133/ | https://videos.pexels.com/video-files/6630133/6630133-uhd_4096_2160_25fps.mp4 | FOTOGRAMA del mismo clip que video/cita.mp4, sacado a los 3,0 s del original y reescalado a 2200 px. La licencia del clip lo cubre.
+
+mit-01.jpg  <=  pexels | Pexels License | Cedric Fauntleroy | https://www.pexels.com/es-es/foto/manos-dientes-dentista-cuidado-dental-4270079/ | https://images.pexels.com/photos/4270079/pexels-photo-4270079.jpeg | recorte 3:2, 2200 px, calidad 84
+
+
+--- TELONES (van nitidos y a baja opacidad, no se leen como foto) ---
+
+telon-01.jpg  <=  pexels | Pexels License | Pavel Danilyuk | https://www.pexels.com/es-es/foto/clinica-moderno-pantalla-odontologia-6809639/ | https://images.pexels.com/photos/6809639/pexels-photo-6809639.jpeg | telon de la seccion de especialidades, al 15 % de opacidad. Recorte 3:2, 1200 px, calidad 62.
+
+telon-02.jpg  <=  pexels | Pexels License | kaboompics.com | https://www.pexels.com/es-es/foto/dental-espejo-bucal-instrumentos-medicos-bandeja-de-plata-6627669/ | https://images.pexels.com/photos/6627669/pexels-photo-6627669.jpeg | telon de la banda de cifras, al 10 % de opacidad. Recorte 3:2, 1200 px, calidad 62.
+
+
+--- MOSAICO (seis piezas, 1200 px, calidad 80, recorte 3:2) ---
+
+mos1-01.jpg  <=  pexels | Pexels License | Andrea Piacquadio | https://www.pexels.com/es-es/foto/mujer-habitacion-mirando-retrato-3881216/ | https://images.pexels.com/photos/3881216/pexels-photo-3881216.jpeg | odontologa revisando a una paciente en el sillon. Es la pieza grande de la primera fila.
+
+mos2-01.jpg  <=  pexels | Pexels License | Amir Esrafili | https://www.pexels.com/es-es/foto/hombre-sin-rostro-efecto-desenfocado-joven-6121110/ | https://images.pexels.com/photos/6121110/pexels-photo-6121110.jpeg | blanco y negro del banco, sin virar. No se ven los ojos: no hay rostro identificable.
+
+mos3-01.jpg  <=  pexels | Pexels License | Polina Zimmerman | https://www.pexels.com/es-es/foto/manos-sujetando-dientes-guantes-4687407/ | https://images.pexels.com/photos/4687407/pexels-photo-4687407.jpeg | recorte 3:2, 1200 px, calidad 80
+
+mos4-01.jpg  <=  pexels | Pexels License | kaboompics.com | https://www.pexels.com/es-es/foto/tecnologia-maquina-dental-equipo-medico-6627668/ | https://images.pexels.com/photos/6627668/pexels-photo-6627668.jpeg | recorte 3:2, 1200 px, calidad 80
+
+mos5-01.jpg  <=  pexels | Pexels License | Pavel Danilyuk | https://www.pexels.com/es-es/foto/oficina-silla-equipo-dentista-6812507/ | https://images.pexels.com/photos/6812507/pexels-photo-6812507.jpeg | el original es vertical y el recorte centrado dejaba pared vacia: se tomo la banda que va del 42 % al 87 % del alto, que es donde estan el taburete y la jeringa triple, y de ahi el 3:2.
+
+mos6-01.jpg  <=  pexels | Pexels License | Daniel Frank | https://www.pexels.com/es-es/foto/sillas-dispuestas-sobre-mesa-305564/ | https://images.pexels.com/photos/305564/pexels-photo-305564.jpeg | sillon visto desde arriba, con el piso de madera. Es la pieza grande de la segunda fila y la que trae el calor de la paleta al mosaico.
+
+
+--- VIDEOS DE FONDO (720p, sin pista de audio) ---
+
+video/port.mp4  <=  pexels | Pexels License | Pavel Danilyuk | https://www.pexels.com/video/video-of-a-dental-clinic-6763242/ | https://videos.pexels.com/video-files/6763242/6763242-hd_1280_720_25fps.mp4 | recorte 1,0-10,0 s, 1280 px, 1,5 Mbps, sin pista de audio
+
+video/cita.mp4  <=  pexels | Pexels License | kaboompics.com | https://www.pexels.com/video/dental-casts-on-table-6630133/ | https://videos.pexels.com/video-files/6630133/6630133-hd_1366_720_25fps.mp4 | recorte 0,4-6,8 s, 1280 px, 1,25 Mbps, sin pista de audio
+
+
+--- ARCHIVOS RETIRADOS ---
+
+08-09-2026, primera pasada: el mos4-01.jpg anterior era byte a byte el mismo
+archivo que mos2-01.jpg, y el cita-01.jpg anterior era de la misma sesion de
+fotos que mos1, mos2 y telon-01. Los dos se reemplazaron.
+
+08-09-2026, segunda pasada: se reemplazaron tajo-01, telon-01, mos1-01,
+mos5-01 y mos6-01. Los tres primeros no tenian procedencia anotada. Ademas,
+el mos6-01 anterior traia la marca del fabricante grabada en la base del
+sillon y dos diplomas enmarcados con texto en la pared -las dos cosas se
+leen a tamano real-, y el mos5-01 anterior era el mismo box desde otro
+angulo, asi que dos de las seis piezas del mosaico contaban lo mismo.
+
+MAPA DE UBICACION — mapa-01.jpg
+  768 x 768 · zoom 16 · centro -41.3233707, -72.9491212
+  Mosaicos de OpenStreetMap pegados en una sola imagen, con el marcador
+  dibujado encima. Datos (c) OpenStreetMap contributors, licencia ODbL:
+  la atribucion tiene que ir VISIBLE junto al mapa, en el pie de la figura.
+  https://www.openstreetmap.org/copyright

@@ -1,0 +1,545 @@
+/* ══════════════════════════════════════════════════════════════════════
+   Clínica Veterinaria Clavero Vet — Puente Alto
+   Demo de CristalWeb. CSS plano, sin build, sin librerías.
+
+   IDENTIDAD — «MANTA DE LANA»
+   Lana cruda de fondo, tinta café para el texto y una caoba apagada
+   como único acento. Cero verde y cero teal, que es lo que lleva media
+   veterinaria del mundo: ésta es la de la calma y la edad.
+
+   LA TEXTURA ES LA IDENTIDAD. El fondo no es un beige plano: lleva un
+   TEJIDO dibujado en el `body` con dos `repeating-linear-gradient`
+   cruzados a ±48°, líneas de 1 px cada 7 px, en caoba al 3,5 % y al
+   2,8 %. Cuesta 0 KB y hace que el papel se vea de lana y no de
+   oficina. Deslinde con «El manual que nadie lee», la otra del registro
+   con textura dibujada en el body: allá es una RETÍCULA TÉCNICA
+   ortogonal cada 32 px sobre papel gris, de manual de instrucciones;
+   acá es un tejido DIAGONAL y tupido en el color del acento. Distinto
+   ángulo, distinta escala y distinto rubro.
+
+   LOS HEX, y contra qué se deslindan. La familia beige es, con la
+   ámbar, la más poblada del registro —más de ciento treinta hex entre
+   el 88 % y el 98 % de luminosidad—, así que el deslinde de esta
+   página NO es el fondo: es la PAREJA. El acento `#6D2318` es 8° con
+   64 % de saturación y 26 % de luminosidad, una caoba profunda, y en
+   todo el tramo 2°-20° del registro no hay NADA por debajo del 30 % de
+   luminosidad salvo un café grisáceo (`#4A3227`, 19° s31 l22): los
+   vecinos de matiz —`#7E2E1C` (11° l30), `#8C2A16` (10° l32),
+   `#8A2E12` (14° l31)— son todos más claros y más naranjas. Y contra
+   el pariente más cercano de USO, el `#9A3D2A` de «La cuenta clara»
+   (10° s57 l38), que también va sobre papel: aquél es terracota de
+   boleta y éste es caoba de mueble viejo, doce puntos más oscuro.
+
+   DESLINDE de rubro, que en veterinarias es lo que más cuesta. La 10
+   (Concha y Toro) es clara y de agenda; la 22 (Hospital Alto la
+   Florida) es pasillo de noche con ámbar de urgencia; la 29 va azul
+   lavado y la 30 mañana de sol. Ésta es la ÚNICA café del rubro, la
+   única con textura de tela y la única que habla de pacientes mayores.
+
+   TRÍO TIPOGRÁFICO
+   · Display: Gentium Book Plus — 0 usos. Serif de libro de la SIL,
+     hecha para leer largo: humanista, cálida, con un punto
+     caligráfico. Para una página que habla de envejecer bien, una
+     didona o una grotesca habrían sonado a folleto.
+   · Cuerpo: Commissioner ×5 — humanista de bajo contraste, pensada
+     para texto corrido; al lado de una serif de libro no compite.
+   · Dato: Red Hat Mono ×7 — para las edades, los intervalos, el
+     horario y el teléfono, con cifras tabulares.
+
+   CONTRASTES MEDIDOS sobre esta página:
+     tinta  #251D18 sobre lana   #F6EFE7 .... 14,5:1
+     medio  #5E4F47 sobre lana   #F6EFE7 .....  6,9:1
+     medio  #5E4F47 sobre lana-2 #EFE5D9 .....  6,3:1
+     caoba  #6D2318 sobre lana   #F6EFE7 .....  9,7:1
+     caoba  #6D2318 sobre lana-2 #EFE5D9 .....  8,9:1
+     lana   #F6EFE7 sobre caoba  #6D2318 .....  9,7:1  (botón lleno)
+   ══════════════════════════════════════════════════════════════════════ */
+
+:root {
+  --lana: #F6EFE7;     /* la manta */
+  --lana-2: #EFE5D9;   /* el panel */
+  --lana-3: #E6D9CB;   /* el borde */
+  --tinta: #251D18;
+  --medio: #5E4F47;
+  --caoba: #6D2318;    /* único acento */
+
+  --ancho: 1120px;
+  --display: 'Gentium Book Plus', Georgia, 'Times New Roman', serif;
+  --cuerpo: 'Commissioner', system-ui, -apple-system, 'Segoe UI', sans-serif;
+  --mono: 'Red Hat Mono', ui-monospace, 'Consolas', monospace;
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+
+html { scroll-behavior: smooth; }
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+
+body {
+  margin: 0;
+  color: var(--tinta);
+  font-family: var(--cuerpo);
+  font-size: clamp(1rem, .96rem + .22vw, 1.1rem);
+  line-height: 1.68;
+  -webkit-font-smoothing: antialiased;
+
+  /* El tejido. Dos tramas cruzadas a ±48°: a un metro es un beige, de
+     cerca es lana. Es la identidad y cuesta cero bytes. */
+  background-color: var(--lana);
+  background-image:
+    repeating-linear-gradient(48deg,  rgba(109, 35, 24, .035) 0 1px, rgba(109, 35, 24, 0) 1px 7px),
+    repeating-linear-gradient(-48deg, rgba(109, 35, 24, .028) 0 1px, rgba(109, 35, 24, 0) 1px 7px);
+}
+
+/* height: auto o el atributo height del <img> gana y aspect-ratio se
+   ignora en silencio: las fotos salen larguísimas. */
+img { max-width: 100%; height: auto; display: block; }
+[hidden] { display: none; }
+
+a { color: var(--caoba); }
+a:focus-visible { outline: 3px solid var(--caoba); outline-offset: 3px; }
+
+.ancho { width: min(100% - 2.5rem, var(--ancho)); margin-inline: auto; }
+
+.rotulo {
+  margin: 0 0 .7rem;
+  font-family: var(--mono);
+  font-size: .74rem; letter-spacing: .15em; text-transform: uppercase;
+  color: var(--caoba);
+}
+
+.titulo {
+  font-family: var(--display); font-weight: 700;
+  font-size: clamp(1.9rem, 1.25rem + 2.8vw, 3.1rem);
+  line-height: 1.12; letter-spacing: -.005em;
+  margin: 0 0 1.1rem;
+}
+.titulo--chico { font-size: clamp(1.5rem, 1.15rem + 1.6vw, 2.2rem); }
+
+.entrada { max-width: 64ch; color: var(--medio); margin: 0 0 2.2rem; }
+.entrada b { color: var(--tinta); }
+.mini { font-size: .87rem; color: var(--medio); }
+.dato { font-family: var(--mono); font-variant-numeric: tabular-nums; }
+
+.ej { border-bottom: 1px dotted var(--medio); cursor: help; }
+.ej::after {
+  content: ' (ej.)';
+  font-family: var(--mono); font-size: .7em;
+  color: var(--medio); letter-spacing: .02em;
+}
+
+/* ── Botones ──────────────────────────────────────────────────────── */
+.bt {
+  display: inline-flex; align-items: center; justify-content: center;
+  padding: .88rem 1.6rem;
+  border: 1px solid transparent; border-radius: 3px;
+  text-decoration: none;
+  font-family: var(--cuerpo); font-weight: 600;
+  font-size: 1rem;
+  transition: background-color .2s ease, color .2s ease, border-color .2s ease;
+}
+.bt--lleno { background: var(--caoba); color: var(--lana); }
+.bt--lleno:hover, .bt--lleno:focus-visible { background: var(--tinta); }
+.bt--linea { border-color: var(--lana-3); color: var(--tinta); background: var(--lana); }
+.bt--linea:hover, .bt--linea:focus-visible { border-color: var(--caoba); color: var(--caoba); }
+
+/* ── Banda de propuesta ──────────────────────────────────────────── */
+.propuesta { background: var(--tinta); color: var(--lana); padding: .95rem 0; }
+.propuesta__in { display: grid; gap: .35rem; }
+.propuesta__q {
+  margin: 0;
+  font-family: var(--mono); font-size: .71rem;
+  letter-spacing: .1em; text-transform: uppercase;
+  color: #E0A98E;   /* la caoba aclarada, para que llegue a 7:1 sobre la tinta */
+}
+.propuesta__d { margin: 0; font-size: .93rem; color: #CDC3BB; max-width: 90ch; }
+.propuesta__d b { color: var(--lana); }
+.propuesta .dato { color: var(--lana); font-size: .9em; }
+
+/* ── Cabecera ─────────────────────────────────────────────────────
+   Va ARRIBA de la portada en el flujo, no encima. ── */
+.cab {
+  position: sticky; top: 0; z-index: 50;
+  background: rgba(246, 239, 231, .95);
+  border-bottom: 1px solid var(--lana-3);
+  transition: transform .3s ease;
+}
+@supports (backdrop-filter: blur(8px)) {
+  .cab { backdrop-filter: blur(8px); background: rgba(246, 239, 231, .84); }
+}
+.js .cab--oculta { transform: translateY(-105%); }
+.cab__in { display: flex; align-items: center; justify-content: space-between; gap: 1.4rem; min-height: 64px; padding: .5rem 0; }
+.cab__marca { display: inline-flex; align-items: center; gap: .7rem; text-decoration: none; color: var(--tinta); }
+/* La marca es una huella: la almohadilla y cuatro dedos, en caoba.
+   Los dedos van con radial-gradient y necesitan sitio: en la primera
+   version la caja media 18x6 px y los cuatro circulos se juntaban en
+   una barra. Con 26x10 y radio 2,8 quedan separados de verdad. */
+.marca__h { width: 26px; height: 22px; flex: none; position: relative; }
+.marca__h::before {
+  content: ''; position: absolute; left: 5px; bottom: 0;
+  width: 16px; height: 11px; border-radius: 50% 50% 44% 44%;
+  background: var(--caoba);
+}
+.marca__h::after {
+  content: ''; position: absolute; left: 0; top: 0;
+  width: 26px; height: 10px;
+  background:
+    radial-gradient(circle 2.8px at 3px 6.4px,    var(--caoba) 98%, transparent 100%),
+    radial-gradient(circle 2.8px at 9.8px 3.4px,  var(--caoba) 98%, transparent 100%),
+    radial-gradient(circle 2.8px at 16.6px 3.4px, var(--caoba) 98%, transparent 100%),
+    radial-gradient(circle 2.8px at 23.4px 6.4px, var(--caoba) 98%, transparent 100%);
+  background-repeat: no-repeat;
+}
+.cab__txt { display: flex; flex-direction: column; font-family: var(--display); font-weight: 700; font-size: 1.1rem; line-height: 1.12; }
+.cab__sub {
+  font-family: var(--mono); font-weight: 400;
+  font-size: .62rem; letter-spacing: .12em; text-transform: uppercase;
+  color: var(--medio); margin-top: .22rem;
+}
+.cab__nav { display: flex; align-items: center; gap: 1.5rem; }
+.cab__nav a { color: var(--medio); text-decoration: none; font-size: .92rem; white-space: nowrap; }
+.cab__nav a:hover { color: var(--tinta); }
+.cab__tel {
+  font-family: var(--mono); font-variant-numeric: tabular-nums;
+  color: var(--caoba) !important;
+  border: 1px solid var(--lana-3); border-radius: 999px;
+  padding: .42rem .95rem;
+}
+.cab__tel:hover { border-color: var(--caoba); }
+@media (max-width: 960px) { .cab__nav a:not(.cab__tel) { display: none; } }
+
+/* ── Portada ──────────────────────────────────────────────────────── */
+.portada { padding: clamp(3rem, 7vw, 6rem) 0 clamp(3rem, 6vw, 5rem); }
+.portada__in { display: grid; grid-template-columns: 1.05fr .95fr; gap: clamp(2rem, 5vw, 4rem); align-items: center; }
+.portada__h1 {
+  font-family: var(--display); font-weight: 700;
+  font-size: clamp(2.3rem, 1.4rem + 4vw, 4.1rem);
+  line-height: 1.08; letter-spacing: -.012em;
+  margin: 0 0 1.3rem;
+}
+.portada__p { max-width: 46ch; color: var(--medio); margin: 0 0 1.9rem; }
+.portada__p b { color: var(--tinta); }
+.portada__bts { display: flex; flex-wrap: wrap; gap: .8rem; margin-bottom: 1.6rem; }
+.portada__pie { margin: 0; font-size: .9rem; color: var(--medio); }
+.portada__pie .dato { color: var(--caoba); font-size: 1.05em; }
+
+/* ── ESCENA: la silueta respira ───────────────────────────────────
+   Es el ÚNICO bucle de toda la página y es lento a propósito: 4,5 s
+   por ciclo y 2,5 % de amplitud. `transform-box: fill-box` es
+   obligatorio dentro de un SVG: sin eso el origen del escalado es el
+   0,0 del viewBox y el perro se va de la caja. ── */
+.escena { display: flex; flex-direction: column; align-items: center; gap: 1rem; }
+.perro { width: min(100%, 420px); height: auto; display: block; }
+.perro__s {
+  fill: var(--tinta);
+  fill-rule: evenodd;
+  transform-box: fill-box;
+  transform-origin: center;
+}
+.perro__p { stroke: var(--caoba); stroke-width: 2; opacity: .55; }
+
+.js .escena .perro__s { opacity: 0; }
+.js .escena--va .perro__s { animation: aparece .8s ease forwards, respira 4.5s ease-in-out .8s infinite; }
+@keyframes aparece { to { opacity: 1; } }
+@keyframes respira {
+  0%, 100% { transform: scale(1); }
+  50%      { transform: scale(1.025); }
+}
+
+.escena__pie {
+  margin: 0; text-align: center;
+  font-family: var(--mono); font-size: .68rem;
+  letter-spacing: .12em; text-transform: uppercase; color: var(--medio);
+}
+@media (max-width: 880px) {
+  .portada__in { grid-template-columns: 1fr; }
+  .escena { order: -1; margin-bottom: 1.4rem; }
+  .perro { width: min(78%, 320px); }
+}
+
+/* ── PIEZA FIRMA: el control que se olvida ────────────────────────── */
+.ctrl { padding: clamp(3rem, 6vw, 5rem) 0; }
+.etapas { display: grid; grid-template-columns: repeat(3, 1fr); gap: clamp(1rem, 2.4vw, 1.6rem); }
+.etapa {
+  display: flex; flex-direction: column;
+  padding: clamp(1.3rem, 2.6vw, 1.8rem);
+  background: var(--lana-2);
+  border: 1px solid var(--lana-3);
+  border-radius: 4px;
+}
+.etapa--foco { border-color: var(--caoba); }
+.etapa__r {
+  margin: 0 0 .35rem;
+  font-family: var(--mono); font-size: .64rem;
+  letter-spacing: .16em; text-transform: uppercase; color: var(--medio);
+}
+.etapa__t { margin: 0 0 .3rem; font-family: var(--display); font-weight: 700; font-size: 1.6rem; line-height: 1.1; }
+.etapa__e { margin: 0 0 1rem; font-size: .88rem; color: var(--medio); }
+.etapa__l { margin: 0 0 1.2rem; padding-left: 1.05rem; flex: 1; }
+.etapa__l li { margin-bottom: .5rem; font-size: .94rem; color: var(--medio); }
+.etapa__l li::marker { color: var(--lana-3); }
+.etapa--foco .etapa__l li::marker { color: var(--caoba); }
+.etapa__c {
+  margin: 0; padding-top: .9rem;
+  border-top: 1px solid var(--lana-3);
+  font-size: .92rem; color: var(--tinta);
+}
+.etapa__c .dato { color: var(--caoba); font-weight: 600; }
+@media (max-width: 900px) { .etapas { grid-template-columns: 1fr; } }
+
+.aviso {
+  margin: clamp(1.6rem, 3vw, 2.4rem) 0 0;
+  padding: 1.2rem 1.4rem;
+  border-left: 3px solid var(--caoba);
+  background: var(--lana-2);
+  font-size: .94rem; color: var(--medio); max-width: 84ch;
+}
+.aviso b { color: var(--tinta); }
+
+.cta {
+  margin-top: clamp(2rem, 4vw, 3rem);
+  padding: clamp(1.6rem, 3.5vw, 2.4rem);
+  border: 1px solid var(--lana-3); border-radius: 4px;
+  text-align: center;
+}
+.cta__t { margin: 0 0 1.2rem; font-family: var(--display); font-weight: 700; font-size: clamp(1.2rem, .95rem + 1.2vw, 1.7rem); line-height: 1.24; }
+
+/* ── Tajo ─────────────────────────────────────────────────────────── */
+.tajo { margin: 0; position: relative; }
+.tajo img { width: 100%; aspect-ratio: 2560 / 1180; object-fit: cover; }
+.tajo__c {
+  position: absolute; left: 0; right: 0; bottom: 0;
+  padding: 3rem 1.25rem 1.5rem;
+  text-align: center;
+  color: #FFFFFF;
+  font-family: var(--display); font-weight: 700;
+  font-size: clamp(1.05rem, .8rem + 1.1vw, 1.6rem);
+  background: linear-gradient(to top, rgba(37, 29, 24, .86) 0%, rgba(37, 29, 24, 0) 100%);
+}
+@media (max-width: 640px) { .tajo img { aspect-ratio: 4 / 3; } }
+
+/* ── Servicios ────────────────────────────────────────────────────── */
+.serv { padding: clamp(3rem, 6vw, 5rem) 0 clamp(1.5rem, 3vw, 2.5rem); }
+.serv__grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1rem; }
+.serv__c { padding: 1.2rem; background: var(--lana-2); border-radius: 4px; }
+.serv__c h3 { margin: 0 0 .45rem; font-family: var(--display); font-weight: 700; font-size: 1.25rem; }
+.serv__c p { margin: 0; font-size: .9rem; color: var(--medio); }
+/* La cremación lleva su propio trato: ocupa dos columnas y va en caoba
+   suave. No se esconde ni se grita. */
+.serv__c--suave { grid-column: span 2; background: transparent; border: 1px dashed var(--lana-3); }
+.serv__c--suave h3 { color: var(--caoba); }
+@media (max-width: 980px) { .serv__grid { grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 560px) { .serv__grid { grid-template-columns: 1fr; } .serv__c--suave { grid-column: span 1; } }
+
+/* ── Antes de que sea urgencia ────────────────────────────────────── */
+.urg { padding: clamp(2rem, 5vw, 3.6rem) 0; }
+.urg__l { list-style: none; margin: 0 0 1.6rem; padding: 0; display: grid; grid-template-columns: repeat(2, 1fr); gap: .2rem 2rem; max-width: 62rem; }
+.urg__l li {
+  padding: .8rem 0 .8rem 1.6rem;
+  border-bottom: 1px solid var(--lana-3);
+  color: var(--medio); font-size: .96rem;
+  position: relative;
+}
+.urg__l li::before {
+  content: ''; position: absolute; left: 0; top: 1.35rem;
+  width: 7px; height: 7px; border-radius: 50%;
+  background: var(--caoba);
+}
+.urg__o { margin: 0; font-size: .93rem; color: var(--medio); max-width: 80ch; }
+.urg__o b { color: var(--tinta); }
+@media (max-width: 760px) { .urg__l { grid-template-columns: 1fr; } }
+
+/* ── Mitades ──────────────────────────────────────────────────────── */
+.mitades {
+  display: grid; grid-template-columns: 1fr 1fr;
+  align-items: center; gap: clamp(2rem, 5vw, 4.5rem);
+  width: min(100% - 2.5rem, var(--ancho));
+  margin: clamp(3rem, 6vw, 5rem) auto;
+}
+.mitades__foto { margin: 0; }
+.mitades__foto img { width: 100%; aspect-ratio: 4 / 3; object-fit: cover; border-radius: 4px; }
+.mitades__texto p { color: var(--medio); }
+.huecos { display: grid; gap: .7rem; margin: 1.6rem 0 1rem; }
+.hueco { display: flex; align-items: center; gap: .9rem; }
+.hueco__m { width: 46px; height: 46px; border-radius: 50%; flex: none; border: 1px dashed var(--lana-3); background: var(--lana-2); }
+.hueco p { margin: 0; font-size: .92rem; }
+@media (max-width: 880px) { .mitades { grid-template-columns: 1fr; } }
+
+/* ── Cita ─────────────────────────────────────────────────────────── */
+.cita { margin: 0; position: relative; }
+.cita img { width: 100%; aspect-ratio: 2200 / 1240; object-fit: cover; }
+.cita__q {
+  position: absolute; inset: 0;
+  display: flex; align-items: center; justify-content: center;
+  margin: 0; padding: 1.5rem;
+  background: rgba(37, 29, 24, .72);
+}
+.cita__q p {
+  margin: 0; max-width: 42ch;
+  color: #FFFFFF;
+  font-family: var(--display); font-weight: 700;
+  font-size: clamp(1.1rem, .85rem + 1.7vw, 2.1rem);
+  line-height: 1.3; text-align: center;
+}
+@media (max-width: 640px) { .cita img { aspect-ratio: 3 / 4; } }
+
+/* ── Dónde está (con telón) ───────────────────────────────────────── */
+.con-telon { position: relative; overflow: hidden; padding: clamp(3rem, 6vw, 5rem) 0; }
+.telon { position: absolute; inset: 0; z-index: 0; }
+.telon img { width: 100%; height: 100%; object-fit: cover; }
+/* El velo se pinta con el color DE la página, no con blanco genérico. */
+.telon::after {
+  content: ''; position: absolute; inset: 0;
+  background: linear-gradient(to right, rgba(246, 239, 231, .97) 0%, rgba(246, 239, 231, .9) 58%, rgba(246, 239, 231, .72) 100%);
+}
+.con-telon > .ancho { position: relative; z-index: 1; }
+.datos { list-style: none; margin: 0; padding: 0; max-width: 44rem; }
+.datos li { display: grid; grid-template-columns: 11rem 1fr; gap: 1rem; padding: .85rem 0; border-top: 1px solid var(--lana-3); }
+.datos li:last-child { border-bottom: 1px solid var(--lana-3); }
+.datos__r {
+  font-family: var(--mono); font-size: .68rem;
+  letter-spacing: .12em; text-transform: uppercase; color: var(--medio); padding-top: .25rem;
+}
+.datos__v { color: var(--tinta); }
+.datos__v a { text-decoration: none; }
+@media (max-width: 620px) { .datos li { grid-template-columns: 1fr; gap: .25rem; } }
+
+/* ── Mosaico ──────────────────────────────────────────────────────── */
+.mos { padding: clamp(2.5rem, 5vw, 4rem) 0 clamp(2rem, 4vw, 3rem); }
+.mos__grilla {
+  display: grid; grid-template-columns: repeat(3, 1fr); gap: .55rem;
+  width: min(100% - 2.5rem, 1280px); margin-inline: auto;
+}
+.mos__p { margin: 0; overflow: hidden; border-radius: 4px; }
+.mos__p img {
+  width: 100%; aspect-ratio: 4 / 3; object-fit: cover;
+  filter: saturate(.9);
+  transition: filter .3s ease, transform .5s ease;
+}
+.mos__p:hover img { filter: saturate(1.05); transform: scale(1.03); }
+.mos__pie { margin: 1.4rem auto 0; font-size: .86rem; color: var(--medio); max-width: 76ch; }
+.mos__pie b { color: var(--tinta); }
+@media (max-width: 900px) { .mos__grilla { grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 520px) { .mos__grilla { grid-template-columns: 1fr; } }
+
+/* ── Contacto ─────────────────────────────────────────────────────── */
+.contacto { padding: clamp(3rem, 6vw, 5rem) 0; border-top: 1px solid var(--lana-3); }
+.contacto__grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1.6rem; }
+.contacto__b { border-top: 2px solid var(--lana-3); padding-top: 1rem; }
+.contacto__b:first-child { border-top-color: var(--caoba); }
+.contacto__r {
+  margin: 0 0 .4rem;
+  font-family: var(--mono); font-size: .66rem;
+  letter-spacing: .13em; text-transform: uppercase; color: var(--medio);
+}
+.contacto__v { margin: 0 0 .5rem; font-size: 1.04rem; }
+.contacto__v a { text-decoration: none; }
+@media (max-width: 900px) { .contacto__grid { grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 480px) { .contacto__grid { grid-template-columns: 1fr; } }
+
+/* ── Para el dueño ────────────────────────────────────────────────── */
+.dueno { padding: clamp(3rem, 6vw, 5rem) 0; background: var(--lana-2); border-top: 1px solid var(--lana-3); }
+.dueno__cols { display: grid; grid-template-columns: 1fr 1fr; gap: clamp(1.6rem, 4vw, 3rem); }
+.dueno__cols h3 { margin: 0 0 .7rem; font-family: var(--display); font-weight: 700; font-size: 1.35rem; color: var(--caoba); }
+.dueno__cols p { margin: 0 0 1rem; color: var(--medio); font-size: .97rem; }
+.dueno__cols b { color: var(--tinta); }
+.dueno .dato { color: var(--tinta); font-size: .92em; }
+.dueno__pie { margin: 1.8rem 0 0; font-size: .85rem; color: var(--medio); }
+.dueno__pie b { color: var(--tinta); }
+@media (max-width: 820px) { .dueno__cols { grid-template-columns: 1fr; } }
+
+/* ── Pie ──────────────────────────────────────────────────────────── */
+.pie { padding: 2rem 0 6rem; border-top: 1px solid var(--lana-3); }
+.pie__in p { margin: 0 0 .35rem; font-size: .85rem; color: var(--medio); }
+.pie__cw { font-family: var(--mono); font-size: .73rem !important; letter-spacing: .03em; }
+
+/* ── Apariciones ──────────────────────────────────────────────────── */
+.js .rev > * { opacity: 0; transform: translateY(12px); }
+.js .rev.rev--on > * { opacity: 1; transform: none; transition: opacity .5s ease, transform .5s ease; }
+.js .rev.rev--on > *:nth-child(2) { transition-delay: .07s; }
+.js .rev.rev--on > *:nth-child(3) { transition-delay: .14s; }
+.js .rev.rev--on > *:nth-child(4) { transition-delay: .21s; }
+.js .rev.rev--on > *:nth-child(5) { transition-delay: .28s; }
+.js .rev.rev--on > *:nth-child(6) { transition-delay: .35s; }
+.js .rev.rev--on > *:nth-child(7) { transition-delay: .42s; }
+
+/* ── Menos movimiento ─────────────────────────────────────────────
+   El bucle de la respiración se apaga entero: es el único de la
+   página y es justo lo que molesta. Los fundidos se quedan. ── */
+@media (prefers-reduced-motion: reduce) {
+  .js .escena .perro__s { opacity: 1; animation: none; transform: none; }
+  .mos__p:hover img { transform: none; }
+  .js .rev > * { opacity: 1; transform: none; }
+}
+
+/* La foto de la pieza firma: una franja tranquila entre el aviso y el
+   llamado a agendar. */
+.ctrl__foto { margin: clamp(2rem, 4vw, 3rem) 0 0; }
+.ctrl__foto img { width: 100%; aspect-ratio: 3 / 1; object-fit: cover; object-position: center 40%; border-radius: 4px; }
+@media (max-width: 640px) { .ctrl__foto img { aspect-ratio: 16 / 9; } }
+
+/* ── MAPA DE UBICACION ──────────────────────────────────────────────
+   Imagen propia con mosaicos de OpenStreetMap pegados: la CSP prohibe
+   pedir nada a un tercero, asi que un iframe de Google Maps quedaria en
+   blanco SIN dar un solo error. El "Como llegar" si es un enlace, y un
+   enlace no lo bloquea nada.
+   Los colores salen de currentColor a proposito: asi el bloque se adapta
+   a la paleta de cada demo sin conocerla y sin chocar con ella.
+   La atribucion a OpenStreetMap la exige su licencia (ODbL). */
+.mapa-sec { padding: clamp(2.5rem, 6vw, 4.5rem) 0; }
+.mapa {
+  /* Casi siempre el mapa queda como hijo DIRECTO de la seccion, fuera del
+     contenedor .ancho: sin este ancho maximo se va de borde a borde y el
+     pie del mapa arranca pegado al filo de la pantalla. Se usa la variable
+     de la demo si existe, y 1100 px si no. */
+  width: min(100% - 2.5rem, var(--ancho, 1100px));
+  margin: 1.4rem auto 0;
+  border: 1px solid; border-color: color-mix(in srgb, currentColor 22%, transparent);
+  border-radius: 10px; overflow: hidden;
+}
+@supports not (color: color-mix(in srgb, red 50%, blue)) { .mapa { border-color: rgba(128, 128, 128, .35); } }
+.mapa img { display: block; width: 100%; height: auto; aspect-ratio: 16 / 10; object-fit: cover; }
+.mapa__pie {
+  display: flex; flex-wrap: wrap; align-items: center; gap: .4rem 1rem;
+  padding: .75rem .9rem;
+  font-size: .86em; line-height: 1.45;
+  border-top: 1px solid; border-top-color: color-mix(in srgb, currentColor 22%, transparent);
+}
+@supports not (color: color-mix(in srgb, red 50%, blue)) { .mapa__pie { border-top-color: rgba(128, 128, 128, .35); } }
+.mapa__pie b { font-weight: 700; }
+.mapa__ir { color: inherit; font-weight: 700; text-decoration: underline; min-height: 44px; display: inline-flex; align-items: center; }
+.mapa__cred { width: 100%; font-size: .84em; opacity: .8; }
+.mapa__cred a { color: inherit; }
+/* ── BOTON FLOTANTE DE CONTACTO ─────────────────────────────────────
+   56 px de alto, por encima del minimo tactil de 44. Los colores de
+   marca van a proposito: se reconocen sin leerlos, y eso es lo que hace
+   que se toquen. Se ve SIEMPRE por defecto; el JS solo lo aparta sobre
+   la portada. Al reves, un fallo del script se llevaria el CTA principal. */
+.flota {
+  position: fixed;
+  right: max(1rem, env(safe-area-inset-right, 0px));
+  bottom: max(1rem, env(safe-area-inset-bottom, 0px));
+  z-index: 60;
+  display: inline-flex; align-items: center; gap: .55rem;
+  height: 56px; padding: 0 1.15rem 0 1rem;
+  border-radius: 999px;
+  text-decoration: none;
+  font-family: var(--cuerpo, system-ui, sans-serif);
+  font-size: .95rem; font-weight: 700; line-height: 1;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, .26), 0 2px 6px rgba(0, 0, 0, .16);
+  transition: opacity .28s ease, transform .28s ease, box-shadow .18s ease;
+}
+.flota--wa { background: #25D366; color: #07310F; }
+.flota--ig { background: linear-gradient(120deg, #F9CE34 4%, #EE2A7B 48%, #6228D7 96%); color: #FFFFFF; }
+.flota__i { width: 26px; height: 26px; fill: currentColor; flex: none; }
+.flota:hover, .flota:focus-visible { transform: translateY(-2px); box-shadow: 0 10px 26px rgba(0, 0, 0, .3); }
+.js .flota--arriba { opacity: 0; transform: translateY(14px) scale(.94); pointer-events: none; }
+
+@media (max-width: 520px) {
+  .flota { width: 56px; padding: 0; justify-content: center; }
+  .flota__t { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .flota { transition: opacity .28s ease; }
+  .flota:hover, .flota:focus-visible { transform: none; }
+  .js .flota--arriba { transform: none; }
+}

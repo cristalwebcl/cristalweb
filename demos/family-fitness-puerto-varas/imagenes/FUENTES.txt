@@ -1,0 +1,204 @@
+FOTOGRAFÍAS Y VIDEOS — Family Fitness (Puerto Varas)
+Demo CristalWeb. Ninguna imagen ni clip es del local real: todos son del
+rubro, bajados de bancos de uso libre, y así lo dice el pie de la página
+y la sección «Para el dueño».
+
+Revisado y corregido el 09-09-2026. Lo que cambió respecto de la versión
+anterior de este archivo está al final, en el apartado 5.
+
+═══════════════════════════════════════════════════════════════════════
+1 · VIDEOS DE FONDO — bajados con FotoRadar el 08-09-2026
+═══════════════════════════════════════════════════════════════════════
+
+video/port.mp4        1280x720 · 10 s · 1,43 MB · H.264 · SIN pista de audio
+  Banco      Pexels
+  Licencia   Pexels License — uso comercial libre, sin atribución obligatoria
+  Autor      Tima Miroshnichenko
+  Título     «Close up view of weight discs in a gym»
+  Página     https://www.pexels.com/video/close-up-view-of-weight-discs-in-a-gym-6389055/
+  Archivo    https://videos.pexels.com/video-files/6389055/6389055-hd_1280_720_25fps.mp4
+  Recorte    del segundo 2 al 12 del original de 15 s (FotoRadar /api/video/preparar)
+  Uso        PORTADA. La columna de discos vive en el tercio izquierdo del
+             cuadro, que es justo donde la máscara borra la foto para dejar
+             respirar al titular; por eso el CSS lo voltea (scaleX(-1)) y los
+             discos aterrizan en la mitad nítida. Sin gente. Lo único escrito
+             que se ve es un «15» estarcido en el riel, que viajando al revés
+             queda además bajo la parte densa del velo.
+
+video/cita.mp4        1280x720 · 8 s · 1,22 MB · H.264 · SIN pista de audio
+  Banco      Pexels
+  Licencia   Pexels License — uso comercial libre, sin atribución obligatoria
+  Autor      Tima Miroshnichenko
+  Título     «Person inserting weight plate on a lifting bar»
+  Página     https://www.pexels.com/video/person-inserting-weight-plate-on-a-lifting-bar-5319998/
+  Archivo    https://videos.pexels.com/video-files/5319998/5319998-hd_1280_720_25fps.mp4
+  Recorte    clip completo, sin cortar
+  Uso        BANDA DE CITA. Se ven manos y un antebrazo cargando un disco:
+             ningún rostro, nadie identificable. El grabado del disco no se
+             lee y no hay ninguna marca legible en el encuadre.
+
+═══════════════════════════════════════════════════════════════════════
+2 · FOTOS NUEVAS — bajadas con FotoRadar el 08-09-2026
+═══════════════════════════════════════════════════════════════════════
+
+imagenes/mit-01.jpg   1400x2100 · 191 KB
+  Banco      Pexels · images.pexels.com
+  Licencia   Pexels License — uso comercial libre, sin atribución obligatoria
+  Autor      cottonbro studio
+  Título     «Un hombre entrenando con un marcador y un portapapeles»
+  Página     https://www.pexels.com/es-es/foto/un-hombre-entrenando-con-un-marcador-y-un-portapapeles-6767013/
+  Original   https://images.pexels.com/photos/6767013/pexels-photo-6767013.jpeg
+  Consulta   «coach writing training log notebook gym»
+  Uso        MITADES · «el registro». Es la única foto que sostiene por qué
+             la tabla de las doce semanas se puede escribir: porque hay una
+             hoja detrás. Vertical, aguanta media pantalla. Se ve la mano y
+             el portapapeles, no la cara.
+
+imagenes/telon-02.jpg 1200x797 · 66 KB · calidad 62
+  Banco      Pexels · images.pexels.com
+  Licencia   Pexels License — uso comercial libre, sin atribución obligatoria
+  Autor      Leon Mart
+  Título     «Barra en el suelo» (gimnasio vacío, luz baja)
+  Página     https://www.pexels.com/es-es/foto/barra-en-el-suelo-1552252/
+  Original   https://images.pexels.com/photos/1552252/pexels-photo-1552252.jpeg
+  Consulta   «empty gym weight room interior dark pxhere»
+  Uso        TELÓN de la banda de cifras, nítido al 22 %. Foto contrastada
+             sobre fondo #17171A: aguanta un punto más de opacidad que el
+             telón de horarios sin robarle la fila a los números.
+
+═══════════════════════════════════════════════════════════════════════
+3 · FOTOS REPUESTAS EN LA REVISIÓN DEL 09-09-2026
+═══════════════════════════════════════════════════════════════════════
+Las tres que siguen reemplazan a fotos heredadas que NO pasaban los
+filtros de contenido de la casa (ver apartado 5). Salen de la carpeta de
+búsqueda original del rubro, C:\devs\material\busquedas\208-gimnasio, que
+sí existe y sí guarda su FUENTES.txt: por eso acá hay banco, licencia y
+URL exactas.
+
+imagenes/mos2-01.jpg  1200x800 · 82 KB · calidad 80
+  Banco      pxhere
+  Licencia   CC0 — dominio público, uso comercial libre, sin atribución
+  Título     «exercise, club, gym, treadmill, active, activity…»
+  Original   https://get.pxhere.com/photo/exercise-club-gym-treadmill-active-activity-adult-athlete-athletic-attractive-body-bodybuilding-chinese-effort-endurance-equipment-fit-fitness-group-health-healthy-horizontal-indoor-jogging-legs-lifestyle-male-man-motion-muscle-muscular-physical-power-run-run-machine-speed-sport-sportsman-sportswear-sporty-strength-thai-trainer-training-walk-weight-well-being-wellness-workout-yellow-leg-human-leg-shoe-1575615.jpg
+  Consulta   «treadmill cardio machines row pxhere»
+  Uso        MOSAICO 2 · zona de cardio. Sólo piernas y calzado: ningún
+             rostro. Ninguna marca legible en el encuadre.
+
+imagenes/mos3-01.jpg  1200x800 · 70 KB · calidad 80
+  Banco      pxhere
+  Licencia   CC0 — dominio público, uso comercial libre, sin atribución
+  Título     «person, woman, sport, training, exercise… rope, jumping»
+  Original   https://get.pxhere.com/photo/person-woman-sport-training-exercise-black-toy-fitness-indoors-glasses-footwear-photograph-image-ropes-strong-crossfit-rope-jumping-919377.jpg
+  Consulta   «kettlebell rope mat training pxhere»
+  Uso        MOSAICO 3 · entrenamiento funcional con cuerda de batalla. Una
+             sola persona adulta contra un muro de bloques; ninguna marca
+             legible, ningún cartel, ningún menor. El alt de la página
+             describe exactamente lo que se ve.
+
+imagenes/telon-01.jpg 1200x800 · 47 KB · calidad 62
+  Banco      pxhere
+  Licencia   CC0 — dominio público, uso comercial libre, sin atribución
+  Título     «person, wheel, training, exercise, weight… deadlift»
+  Original   https://get.pxhere.com/photo/person-wheel-training-exercise-weight-arm-fitness-tire-gym-muscle-chest-rim-strength-strength-training-weight-lifting-barbell-weight-training-automotive-tire-human-action-physical-fitness-deadlift-763212.jpg
+  Consulta   «barbell plates floor gym pxhere»
+  Recorte    del original se toma la franja de la barra (x 2–62 %,
+             y 20–60 %): el disco entero centrado dejaba un círculo gris
+             enorme justo detrás del texto, y la ventana de arriba a la
+             izquierda metía un halo claro. Esta franja es un campo parejo
+             con la barra cruzando: se lee como foto y no compite.
+  Uso        TELÓN de horarios, nítido al 15 %. Masa oscura sobre papel
+             claro (luminancia opuesta). El grabado del disco queda
+             ilegible al 15 % de opacidad. La persona del fondo está
+             desenfocada y de espaldas, sin rostro.
+
+═══════════════════════════════════════════════════════════════════════
+4 · FOTOS HEREDADAS DEL BUILD DEL 01-09-2026
+═══════════════════════════════════════════════════════════════════════
+Cuatro de las diez heredadas SÍ se pudieron rastrear: son las que están en
+la carpeta de búsqueda del rubro (208-gimnasio), y se identificaron
+comparando la foto final con cada candidata original. Van con su URL.
+De las cinco restantes no se puede afirmar autor ni página sin inventar:
+son de bancos libres (Pexels, Pixabay, pxhere, Wikimedia Commons), uso
+comercial permitido y sin atribución obligatoria, y ninguna viene de
+plus.unsplash.com. Queda anotado en QUE-FOTOS-FALTAN.md.
+
+CON PROCEDENCIA RECUPERADA
+mos4-01.jpg   1200x795   79 KB  MOSAICO 4 · kettlebell de 20 kg, blanco y
+                                negro. pxhere, CC0. Consulta «kettlebell
+                                rope mat training pxhere». Es la variante en
+                                B/N de la serie 947179; el grabado «20 KG»
+                                es el peso de la pesa, no una marca.
+mos5-01.jpg   1200x800   63 KB  MOSAICO 5 · sala de pesas, mancuerna sobre
+                                un banco. pxhere, CC0.
+                                https://get.pxhere.com/photo/structure-chair-hall-training-furniture-room-weight-lighting-gym-sports-biceps-body-building-dumbbell-strong-athlete-brawn-burdening-1191808.jpg
+mos6-01.jpg   1200x803   87 KB  MOSAICO 6 · fila de mancuernas a contraluz.
+                                pxhere, CC0.
+                                https://get.pxhere.com/photo/structure-wheel-chair-equipment-black-furniture-room-weight-fitness-gym-workout-dumbbell-lifting-sport-venue-770171.jpg
+(la kettlebell turquesa de 8 kg que estaba de telón salía de
+ https://get.pxhere.com/photo/training-fitness-sports-equipment-weights-ball-kettlebell-exercise-equipment-947179.jpg
+ — se retiró en la revisión: repetía la composición de mos4-01 y era una
+ masa clara sobre fondo claro)
+
+SIN PROCEDENCIA EXACTA — se reponen antes de publicar si el centro no
+manda material propio
+port-01.jpg   2560x1707  600 KB  PORTADA (foto base bajo el clip). Mujer
+                                 entrenando con apoyo del entrenador; su
+                                 masa oscura cae en la mitad derecha, que
+                                 es la que la máscara deja nítida.
+tajo-01.jpg   2200x1235  383 KB  TAJO. Barra cargada, plano bajo, piernas y
+                                 zapatillas. OJO: la zapatilla del primer
+                                 plano lleva el logotipo de New Balance
+                                 (una «N» blanca), reconocible aunque no
+                                 haya texto. Es lo primero que se cambia
+                                 cuando llegue una foto del local.
+cita-01.jpg   2200x1467  280 KB  CITA (foto base bajo el clip). Sala con
+                                 gente entrenando, a contraluz; bajo el
+                                 velo plano al 72 % nadie es identificable.
+mos1-01.jpg   1200x800   103 KB  MOSAICO 1 · entrenador corrigiendo a una
+                                 clienta sobre una máquina, muro de ladrillo.
+                                 Dos rostros reconocibles: es foto de banco,
+                                 con su cesión, pero se repone en cuanto
+                                 haya gente del centro.
+
+═══════════════════════════════════════════════════════════════════════
+5 · QUÉ SE CORRIGIÓ EL 09-09-2026 Y POR QUÉ
+═══════════════════════════════════════════════════════════════════════
+La versión anterior de este archivo afirmaba en su apartado de filtros
+que en todo el lote no había «ninguna marca de tercero legible», «ningún
+menor identificable» y «ningún fondo que prometa otro lugar». Eso era
+cierto del material nuevo y falso de tres de las heredadas, que nadie
+había mirado a tamaño real:
+
+· mos2-01 (antes): rejilla de mancuernas con la marca INTEK grabada y
+  legible SEIS veces, en letras blancas sobre goma negra. Es exactamente
+  la trampa que la especificación manda revisar («los grabados en el
+  metal, que se leen a tamaño real»). Reemplazada.
+· mos3-01 (antes): un partido de básquetbol en un gimnasio techado de
+  Culiacán, México, con vallas publicitarias legibles («CULIACÁN ACTIVO»,
+  «SACSA», logos de auspiciadores), una decena de espectadores
+  reconocibles y al menos un menor. Además prometía otro lugar: la
+  sección se titula «Dónde se entrena» y mostraba una cancha de básquet,
+  y su alt decía «Entrenamiento funcional». Reemplazada.
+· telon-01 (antes): kettlebell turquesa de 8 kg sobre piso de madera —
+  masa CLARA sobre papel claro, contra la regla de luminancia opuesta, y
+  repetía la composición de mos4-01 (una pesa nítida delante y su gemela
+  desenfocada detrás) en la misma página. Reemplazada.
+
+FILTROS, VERIFICADOS FOTO POR FOTO A TAMAÑO REAL
+· Marcas de tercero: ninguna legible, con la excepción anotada arriba en
+  tajo-01 (logotipo de New Balance en una zapatilla).
+· Precios dentro de la foto: ninguno.
+· Menores identificables: ninguno.
+· Rostros: sólo en port-01, cita-01, mos1-01 y mos3-01, todas de banco
+  libre y con la cesión que el banco exige a su fotógrafo.
+· Fondos que prometan otro lugar: ninguno; todo es interior de gimnasio.
+· Luminancia opuesta: sobre banda oscura van las fotos con luz propia
+  (cromo, discos, barra); sobre papel claro van las masas oscuras.
+· Nada de plus.unsplash.com.
+
+MAPA DE UBICACION — mapa-01.jpg
+  768 x 768 · zoom 14 · centro -41.317802, -72.9829073
+  Mosaicos de OpenStreetMap pegados en una sola imagen, con el marcador
+  dibujado encima. Datos (c) OpenStreetMap contributors, licencia ODbL:
+  la atribucion tiene que ir VISIBLE junto al mapa, en el pie de la figura.
+  https://www.openstreetmap.org/copyright

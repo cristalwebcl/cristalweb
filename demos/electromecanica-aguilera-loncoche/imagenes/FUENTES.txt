@@ -1,0 +1,22 @@
+FUENTES DE LAS IMAGENES - ElectromecÃ¡nica Aguilera Rehecha el 13-09-2026 (presentacion antes que texto). Fotos de REFERENCIA de bancos libres: ninguna es del local; las verdaderas las tiene que mandar el negocio. 
+port-01.jpg  <-  pozo-p-agu-cobre\008.jpg  |  pexels (Pexels License)  |  autor: Vadim Timayev  |  https://www.pexels.com/es-es/foto/modelo-estampado-redondo-espiral-12515072/  |  consulta: "copper wire coil"
+hund1-01.jpg  <-  pozo-p-agu-cobre\003.jpg  |  pexels (Pexels License)  |  autor: Patrycja Grobelny  |  https://www.pexels.com/es-es/foto/rojo-construccion-industria-textura-11133641/  |  consulta: "copper wire coil"
+hund2-01.jpg  <-  pozo-p-agu-bomba\012.jpg  |  pexels (Pexels License)  |  autor: Krepesh Chandra Sarker  |  https://www.pexels.com/es-es/foto/bomba-de-agua-manual-vintage-en-el-campo-38360727/  |  consulta: "water pump"
+hund3-01.jpg  <-  pozo-p-agu-motor\003.jpg  |  pexels (Pexels License)  |  autor: Bulat843 🌙  |  https://www.pexels.com/es-es/foto/tecnico-reparando-herramienta-electrica-rota-32208762/  |  consulta: "electric motor"
+hund4-01.jpg  <-  pozo-p-agu-motor\009.jpg  |  pexels (Pexels License)  |  autor: Lisa Fotios  |  https://www.pexels.com/es-es/foto/taladro-de-prensa-verde-y-blanco-sobre-mesa-115558/  |  consulta: "electric motor"
+hund5-01.jpg  <-  pozo-p-agu-rodamiento\002.jpg  |  pexels (Pexels License)  |  autor: Marcelo Avila  |  https://www.pexels.com/es-es/foto/plata-plateado-accesorio-bolas-19911427/  |  consulta: "ball bearing"
+hund6-01.jpg  <-  pozo-p-agu-tester\004.jpg  |  pexels (Pexels License)  |  autor: Alexey Demidov  |  https://www.pexels.com/es-es/foto/mesa-de-madera-electricidad-equipo-11872896/  |  consulta: "multimeter"
+banda-01.jpg  <-  pozo-p-agu-chispas\001.jpg  |  pexels (Pexels License)  |  autor: cottonbro studio  |  https://www.pexels.com/es-es/foto/brillante-chispas-fondo-de-pantalla-texturas-9665341/  |  consulta: "angle grinder sparks"
+cita-01.jpg  <-  pozo-p-agu-banco\009.jpg  |  pexels (Pexels License)  |  autor: Ivan S  |  https://www.pexels.com/es-es/foto/madera-empresario-hombre-de-negocios-hombre-4491874/  |  consulta: "workbench tools dark"
+mos1-01.jpg  <-  pozo-p-agu-cobre\011.jpg  |  pexels (Pexels License)  |  autor: Alex Tepetidis  |  https://www.pexels.com/es-es/foto/industria-metal-acero-bronce-5279317/  |  consulta: "copper wire coil"
+mos2-01.jpg  <-  pozo-p-agu-motor\004.jpg  |  pexels (Pexels License)  |  autor: cottonbro studio  |  https://www.pexels.com/es-es/foto/herramientas-acero-arreglar-reparar-5532985/  |  consulta: "electric motor"
+mos3-01.jpg  <-  pozo-p-agu-banco\002.jpg  |  pexels (Pexels License)  |  autor: Miguel Á. Padriñán  |  https://www.pexels.com/es-es/foto/metal-herramientas-taller-coleccion-16679649/  |  consulta: "workbench tools dark"
+mos4-01.jpg  <-  pozo-p-agu-chispas\003.jpg  |  pexels (Pexels License)  |  autor: cottonbro studio  |  https://www.pexels.com/es-es/foto/chispas-parpadeantes-provenientes-de-la-amoladora-angular-9665381/  |  consulta: "angle grinder sparks"
+mos5-01.jpg  <-  pozo-p-agu-cobre\009.jpg  |  pexels (Pexels License)  |  autor: Tara Winstead  |  https://www.pexels.com/es-es/foto/espacio-tunel-dentro-agujero-7123076/  |  consulta: "copper wire coil"
+mos6-01.jpg  <-  pozo-p-agu-banco\001.jpg  |  pexels (Pexels License)  |  autor: Miguel Á. Padriñán  |  https://www.pexels.com/es-es/foto/blanco-y-negro-oscuro-fila-hilera-16679582/  |  consulta: "workbench tools dark"
+
+BRUMA (bruma-pag-0N.png y bruma-osc-0N.png, 30x20): las MISMAS fotos, recortadas a 3:2, reducidas y
+recoloreadas con C:\devs\demos\hacer-bruma.ps1 (clara >= 0,68 de luminancia / oscura <= 0,05). No suman fuentes.
+    pagina: port-01.jpg, banda-01.jpg, cita-01.jpg, hund1-01.jpg, mos1-01.jpg, mos3-01.jpg, mos4-01.jpg, mos5-01.jpg   |   oscuras: port-01.jpg, cita-01.jpg, banda-01.jpg
+
+MAPA: iframe de Google Maps (embed publico, sin clave). No hay imagen de mapa.

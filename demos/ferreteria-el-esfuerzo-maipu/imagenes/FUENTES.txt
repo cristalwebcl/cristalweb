@@ -1,0 +1,22 @@
+FUENTES DE LAS IMAGENES - FerreterÃ­a El Esfuerzo Rehecha el 13-09-2026 (presentacion antes que texto). Fotos de REFERENCIA de bancos libres: ninguna es del local; las verdaderas las tiene que mandar el negocio. 
+port-01.jpg  <-  pozo-p-esf-maletero\008.jpg  |  pexels (Pexels License)  |  autor: Luke Miller  |  https://www.pexels.com/es-es/foto/coche-vehiculo-vacio-automovil-14667486/  |  consulta: "car trunk open"
+hund1-01.jpg  <-  pozo-p-esf-camioneta\004.jpg  |  pexels (Pexels License)  |  autor: Matt Barnard  |  https://www.pexels.com/es-es/foto/camioneta-cargada-con-lena-al-aire-libre-28408041/  |  consulta: "pickup truck load"
+hund2-01.jpg  <-  pozo-p-esf-balde\001.jpg  |  pexels (Pexels License)  |  autor: Bor Jinson  |  https://www.pexels.com/es-es/foto/grua-clamshell-industrial-descargando-carga-a-granel-37958434/  |  consulta: "construction bucket"
+hund3-01.jpg  <-  pozo-p-esf-arido\004.jpg  |  pexels (Pexels License)  |  autor: Jan van der Wolf  |  https://www.pexels.com/es-es/foto/ciudad-textura-pared-muro-16091843/  |  consulta: "sand gravel pile"
+hund4-01.jpg  <-  pozo-p-esf-planchas\002.jpg  |  pexels (Pexels License)  |  autor: cottonbro studio  |  https://www.pexels.com/es-es/foto/pila-de-libros-marrones-sobre-una-mesa-blanca-5089122/  |  consulta: "plywood sheets"
+hund5-01.jpg  <-  pozo-p-esf-tablas\009.jpg  |  pexels (Pexels License)  |  autor: Mark Stebnicki  |  https://www.pexels.com/es-es/foto/madera-carpinteria-tablones-de-madera-talar-12278590/  |  consulta: "lumber stack"
+hund6-01.jpg  <-  pozo-p-esf-fierro\006.jpg  |  pexels (Pexels License)  |  autor: Grigoriy Konsevich  |  https://www.pexels.com/es-es/foto/hierro-plancha-acero-oxidado-10059199/  |  consulta: "rebar steel"
+banda-01.jpg  <-  pozo-p-esf-tablas\007.jpg  |  pexels (Pexels License)  |  autor: Mark Stebnicki  |  https://www.pexels.com/es-es/foto/madera-carpinteria-talar-madera-dura-12278587/  |  consulta: "lumber stack"
+cita-01.jpg  <-  pozo-p-esf-planchas\009.jpg  |  pexels (Pexels License)  |  autor: Tanha Tamanna  Syed  |  https://www.pexels.com/es-es/foto/espacio-de-trabajo-artistico-banado-por-el-sol-con-vistas-a-la-naturaleza-37020744/  |  consulta: "plywood sheets"
+mos1-01.jpg  <-  pozo-p-esf-arido\010.jpg  |  pexels (Pexels License)  |  autor: Markus Winkler  |  https://www.pexels.com/es-es/foto/edificio-de-oficinas-moderno-con-montones-de-tierra-en-dusseldorf-31111028/  |  consulta: "sand gravel pile"
+mos2-01.jpg  <-  pozo-p-esf-balde\011.jpg  |  pexels (Pexels License)  |  autor: Carlos Sedano  |  https://www.pexels.com/es-es/foto/obra-monocromatica-con-equipo-industrial-30539627/  |  consulta: "construction bucket"
+mos3-01.jpg  <-  pozo-p-esf-planchas\007.jpg  |  pexels (Pexels License)  |  autor: cottonbro studio  |  https://www.pexels.com/es-es/foto/madera-persona-manos-trabajando-7492586/  |  consulta: "plywood sheets"
+mos4-01.jpg  <-  pozo-p-esf-tablas\011.jpg  |  pexels (Pexels License)  |  autor: Mark Stebnicki  |  https://www.pexels.com/es-es/foto/apilados-amontonados-almacen-numeros-12278588/  |  consulta: "lumber stack"
+mos5-01.jpg  <-  pozo-p-esf-arido\005.jpg  |  pexels (Pexels License)  |  autor: Valentin Ilas  |  https://www.pexels.com/es-es/foto/cantera-industrial-con-cinta-transportadora-y-pilas-de-arena-38862399/  |  consulta: "sand gravel pile"
+mos6-01.jpg  <-  pozo-p-esf-planchas\012.jpg  |  pexels (Pexels License)  |  autor: cottonbro studio  |  https://www.pexels.com/es-es/foto/pared-de-ladrillos-marrones-con-marco-de-madera-blanco-5089133/  |  consulta: "plywood sheets"
+
+BRUMA (bruma-pag-0N.png y bruma-osc-0N.png, 30x20): las MISMAS fotos, recortadas a 3:2, reducidas y
+recoloreadas con C:\devs\demos\hacer-bruma.ps1 (clara >= 0,68 de luminancia / oscura <= 0,05). No suman fuentes.
+    pagina: port-01.jpg, banda-01.jpg, cita-01.jpg, hund5-01.jpg, mos4-01.jpg   |   oscuras: port-01.jpg, banda-01.jpg, cita-01.jpg
+
+MAPA: iframe de Google Maps (embed publico, sin clave). No hay imagen de mapa.

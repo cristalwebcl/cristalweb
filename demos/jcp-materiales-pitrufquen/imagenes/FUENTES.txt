@@ -1,0 +1,22 @@
+FUENTES DE LAS IMAGENES - JCP FerreterÃ­a y Materiales de ConstrucciÃ³n Rehecha el 13-09-2026 (presentacion antes que texto). Fotos de REFERENCIA de bancos libres: ninguna es del local; las verdaderas las tiene que mandar el negocio. 
+port-01.jpg  <-  pozo-p-jcp-ladrillo\009.jpg  |  pexels (Pexels License)  |  autor: Shantum Singh  |  https://www.pexels.com/es-es/foto/pared-muro-apilar-pila-20204115/  |  consulta: "bricks pile"
+hund1-01.jpg  <-  pozo-p-jcp-ladrillo\008.jpg  |  pexels (Pexels License)  |  autor: Magda Ehlers  |  https://www.pexels.com/es-es/foto/ladrillos-piedras-arcilla-pila-14562037/  |  consulta: "bricks pile"
+hund2-01.jpg  <-  pozo-p-jcp-madera\005.jpg  |  pexels (Pexels License)  |  autor: Mark Stebnicki  |  https://www.pexels.com/es-es/foto/bosque-pila-pilas-montones-12278568/  |  consulta: "dimensional lumber"
+hund3-01.jpg  <-  pozo-p-jcp-piso\004.jpg  |  pexels (Pexels License)  |  autor: Digital Buggu  |  https://www.pexels.com/es-es/foto/suelo-de-parquet-de-madera-marron-314072/  |  consulta: "laminate flooring"
+hund4-01.jpg  <-  pozo-p-nueva-brochas\010.jpg  |  pexels (Pexels License)  |  autor: Anthony Dalesandro  |  https://www.pexels.com/es-es/foto/coleccion-vibrante-de-pinceles-de-artista-usados-35116639/  |  consulta: "paint brushes"
+hund5-01.jpg  <-  pozo-p-lar-carretilla\005.jpg  |  pexels (Pexels License)  |  autor: Christina & Peter  |  https://www.pexels.com/es-es/foto/carretilla-rustica-en-un-exuberante-entorno-ajardinado-37397097/  |  consulta: "wheelbarrow"
+hund6-01.jpg  <-  pozo-p-jcp-fierro\011.jpg  |  pexels (Pexels License)  |  autor: Ümit Tektaş  |  https://www.pexels.com/es-es/foto/primer-plano-de-un-obrero-de-la-construccion-manipulando-varillas-de-refuerzo-con-una-herramienta-36847985/  |  consulta: "rebar steel"
+banda-01.jpg  <-  pozo-p-jcp-madera\010.jpg  |  pexels (Pexels License)  |  autor: Mark Stebnicki  |  https://www.pexels.com/es-es/foto/madera-carpinteria-talar-madera-dura-12278572/  |  consulta: "dimensional lumber"
+cita-01.jpg  <-  pozo-p-jcp-ladrillo\004.jpg  |  pexels (Pexels License)  |  autor: Littlehampton Bricks  |  https://www.pexels.com/es-es/foto/rojo-edificio-construccion-industria-4509112/  |  consulta: "bricks pile"
+mos1-01.jpg  <-  pozo-p-jcp-fierro\003.jpg  |  pexels (Pexels License)  |  autor: Marco Damm  |  https://www.pexels.com/es-es/foto/modelo-estampado-textura-metal-11891953/  |  consulta: "rebar steel"
+mos2-01.jpg  <-  pozo-p-jcp-ceramica\008.jpg  |  pexels (Pexels License)  |  autor: Olga Lioncat  |  https://www.pexels.com/es-es/foto/creativo-azul-blanco-diseno-7245524/  |  consulta: "ceramic tiles"
+mos3-01.jpg  <-  pozo-p-jcp-techo\007.jpg  |  pexels (Pexels License)  |  autor: David Underland  |  https://www.pexels.com/es-es/foto/pared-naranja-3609962/  |  consulta: "roofing sheets"
+mos4-01.jpg  <-  pozo-p-jcp-madera\006.jpg  |  pexels (Pexels License)  |  autor: Mark Stebnicki  |  https://www.pexels.com/es-es/foto/apilados-amontonados-almacen-negocio-12278570/  |  consulta: "dimensional lumber"
+mos5-01.jpg  <-  pozo-p-jcp-fierro\010.jpg  |  pexels (Pexels License)  |  autor: Maren Ferraro  |  https://www.pexels.com/es-es/foto/estructura-de-acero-de-varilla-contra-cielo-azul-claro-29299824/  |  consulta: "rebar steel"
+mos6-01.jpg  <-  pozo-p-jcp-ladrillo\012.jpg  |  pexels (Pexels License)  |  autor: Priyanka  |  https://www.pexels.com/es-es/foto/ladrillos-modelo-estampado-textura-14048256/  |  consulta: "bricks pile"
+
+BRUMA (bruma-pag-0N.png y bruma-osc-0N.png, 30x20): las MISMAS fotos, recortadas a 3:2, reducidas y
+recoloreadas con C:\devs\demos\hacer-bruma.ps1 (clara >= 0,68 de luminancia / oscura <= 0,05). No suman fuentes.
+    pagina: port-01.jpg, banda-01.jpg, hund1-01.jpg, hund2-01.jpg, hund6-01.jpg, mos1-01.jpg, mos4-01.jpg, mos6-01.jpg   |   oscuras: port-01.jpg, banda-01.jpg, mos4-01.jpg
+
+MAPA: iframe de Google Maps (embed publico, sin clave). No hay imagen de mapa.

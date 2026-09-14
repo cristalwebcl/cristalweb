@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="es-CL" class="no-js">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self'; img-src 'self' data:; font-src 'self'; connect-src 'self'; media-src 'self'; form-action 'self'; base-uri 'none'; frame-src 'none'; object-src 'none'">
+<meta name="robots" content="noindex, nofollow">
+<title>Hotel Elizabeth — Coñaripe</title>
+<meta name="description" content="Hotel y restaurante en Coñaripe, corredor termal del Calafquén. Cama, mesa o las dos: cada caso explicado.">
+
+<!-- ═══════════════════════════════════════════════════════════════
+     RESCATE DE LA CLASE .js — regla 2 de la casa.
+     El script inline (sin defer) marca .js para que el CSS pueda
+     esconder lo que va a animarse. El temporizador de 4 s la quita
+     si main.js nunca llega: sin él, un error de red dejaría media
+     página invisible para siempre.
+     ═══════════════════════════════════════════════════════════════ -->
+<script src="js/rescate.js"></script>
+
+<!-- Fuentes propias: cero peticiones a terceros. El preload va SOLO
+     para la display, que es la del titular de la portada. -->
+<link rel="preload" href="assets/fuentes/lusitana-700-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="assets/fuentes.css">
+<link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+
+<div class="propuesta">
+  <p class="propuesta__que">Propuesta de sitio web — preparada para <b>Hotel Elizabeth</b> por Yordy Serna</p>
+  <p class="propuesta__gancho">Hotel y restaurante con 4,8 — y nadie contesta por escrito si se puede comer sin alojar.</p>
+</div>
+
+<header class="cab" id="cab">
+  <a class="cab__marca" href="#portada">
+    <span class="llave" aria-hidden="true"></span>
+    <span class="cab__nombre">Hotel Elizabeth</span>
+  </a>
+  <a class="cab__tel" href="tel:+56965620841">
+    <span class="cab__tel-rot">Recepción</span>
+    <span class="cab__tel-num">9 6562 0841</span>
+  </a>
+</header>
+
+<!-- ═════════ SPLIT STICKY (G) ═════════ -->
+<div class="split" id="portada">
+
+  <!-- mitad fija: la cifra y el pasillo -->
+  <aside class="lateral" aria-hidden="false">
+    <div class="pasillo" aria-hidden="true">
+      <span></span><span></span><span></span>
+    </div>
+    <div class="lateral__cuerpo">
+      <p class="lateral__cifra">98</p>
+      <p class="lateral__rot">familias lo escribieron<br>en Google · 4,8</p>
+    </div>
+  </aside>
+
+  <!-- mitad que fluye -->
+  <main class="flujo">
+
+    <section class="bloque bloque--hero" aria-labelledby="t-portada">
+      <p class="sitio">Coñaripe · corredor termal del Calafquén</p>
+      <h1 id="t-portada">Hotel<br>Elizabeth</h1>
+      <p class="bajada">Hotel y restaurante de pueblo. Se puede venir a dormir, venir a
+        comer, o a las dos cosas — y acá está explicado cada caso.</p>
+    </section>
+
+    <section class="bloque" id="casos" aria-labelledby="t-casos">
+      <p class="antetitulo">La pregunta que nadie contesta por escrito</p>
+      <h2 id="t-casos">Cama, mesa,<br>o las dos</h2>
+
+      <dl class="casos" data-ejemplo="Mecánica de ejemplo — el hotel confirma la suya">
+        <div class="caso">
+          <dt>Sólo a comer</dt>
+          <dd>El restaurante atiende al público general, no sólo a los pasajeros
+            <span class="falta">falta: confirmar</span>. Se entra, se almuerza y se sigue
+            viaje, con o sin pieza arriba.</dd>
+        </div>
+        <div class="caso">
+          <dt>Sólo a dormir</dt>
+          <dd>La pieza incluye desayuno <span class="falta">falta: confirmar</span>.
+            El resto de las comidas se toman abajo o donde quiera.</dd>
+        </div>
+        <div class="caso">
+          <dt>Pensión completa</dt>
+          <dd>Cama más las comidas del día, para el que viene varios días a las termas y
+            no quiere pensar en cocina <span class="falta">falta: confirmar si se ofrece</span>.</dd>
+        </div>
+      </dl>
+    </section>
+
+    <section class="bloque" id="termas" aria-labelledby="t-termas">
+      <p class="antetitulo">Por qué un hotel y no una carpa</p>
+      <h2 id="t-termas">El hotel<br>de las termas</h2>
+      <p>El día de termas termina mojado, tarde y con hambre. La gracia de volver a un
+        hotel es exactamente esa: toalla seca colgada, cama hecha y la mesa puesta abajo.</p>
+      <p>Ninguna distancia va escrita acá de memoria: los minutos hasta cada terma los
+        confirma el hotel <span class="falta">falta</span>.</p>
+    </section>
+
+    <!-- T1: el teléfono como titular -->
+    <section class="bloque bloque--tel" aria-labelledby="t-tel">
+      <p class="telefono__rot">En un hotel se llama</p>
+      <h2 id="t-tel" class="telefono__num"><a href="tel:+56965620841">9 6562 0841</a></h2>
+      <p class="telefono__pie">Hotel Elizabeth · Coñaripe ·
+        <span class="falta">falta: dirección exacta</span></p>
+    </section>
+
+    <section class="bloque bloque--dueno" aria-labelledby="t-dueno">
+      <h2 id="t-dueno">Para el dueño</h2>
+      <div class="dueno__cols">
+        <div>
+          <h3>Lo que está verificado</h3>
+          <p>Las 98 reseñas con 4,8 de su ficha de Google y el teléfono. Que son hotel y
+            restaurante lo dice la propia ficha.</p>
+        </div>
+        <div>
+          <h3>Lo que es de ejemplo</h3>
+          <p>La mecánica de los tres casos. Es la información que decide reservas y está
+            marcada para que usted la confirme, no inventada.</p>
+        </div>
+        <div>
+          <h3>Lo que falta</h3>
+          <p>Si el restaurante abre al público, si la pieza incluye desayuno, si hay
+            pensión, los valores y la dirección.</p>
+        </div>
+      </div>
+      <p class="dueno__cierre">
+        <a class="flecha" href="https://wa.me/56968650001" rel="noopener">Escribirme por WhatsApp <span aria-hidden="true">→</span></a>
+        <a class="flecha" href="https://yordyserna.github.io" rel="noopener">Ver otros trabajos <span aria-hidden="true">→</span></a>
+      </p>
+    </section>
+
+    <footer class="pie">
+      <p>Sitio de demostración preparado por Yordy Serna. El negocio no lo ha encargado
+        ni ha revisado su contenido.</p>
+    </footer>
+
+  </main>
+</div>
+
+<script src="js/main.js"></script>
+</body>
+</html>

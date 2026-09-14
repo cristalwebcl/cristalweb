@@ -52,3 +52,10 @@ LO QUE FALTA
    ninguna imagen prestada, y no necesita permiso de nadie.
 2. El local por dentro.
 3. La lista de precios por servicio — está armada y vacía.
+
+MAPA DE UBICACION — mapa-01.jpg
+  768 x 768 · zoom 14 · centro -39.2731173, -71.9777605
+  Mosaicos de OpenStreetMap pegados en una sola imagen, con el marcador
+  dibujado encima. Datos (c) OpenStreetMap contributors, licencia ODbL:
+  la atribucion tiene que ir VISIBLE junto al mapa, en el pie de la figura.
+  https://www.openstreetmap.org/copyright

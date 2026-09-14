@@ -1,0 +1,80 @@
+FUENTES DE LAS IMÁGENES Y DE LOS CLIPS — ferreteria-california-puerto-varas
+Bancos libres, procesadas con preparar-lote.ps1 / FotoRadar (JPEG, ancho y
+calidad por tratamiento; los clips a 1280 px, H.264, sin pista de audio —
+comprobado: ninguno de los dos tiene trak de sonido).
+Ninguna foto es del local: son ambiente del rubro, y así lo dice el pie de
+la página. Última revisión: 08-09-2026.
+
+── CLIPS DE FONDO ─────────────────────────────────────────────────────────
+video/port.mp4   <= pexels | Pexels License | Dan Cristian Padureț |
+                    «Bolts and screws drawn by a magnet» |
+                    https://www.pexels.com/video/bolts-and-screws-drawn-by-a-magnet-3024343/ |
+                    https://videos.pexels.com/video-files/3024343/3024343-hd_1280_720_50fps.mp4 |
+                    recorte 0–10 s · 1280 px · ~1,15 Mbps · 1,41 MB · sin audio
+video/cita.mp4   <= pexels | Pexels License | Samson Katt |
+                    «Close up of a bicycle wheel» |
+                    https://www.pexels.com/video/close-up-of-a-bicycle-wheel-5228664/ |
+                    https://videos.pexels.com/video-files/5228664/5228664-hd_1280_720_24fps.mp4 |
+                    recorte desde el segundo 1, 9 s · 1280 px · ~0,95 Mbps · 1,13 MB · sin audio
+
+── FOTOS CON PROCEDENCIA REGISTRADA ───────────────────────────────────────
+mit-01.jpg   <= pexels | Pexels License | Nguyễn Hữu Nhã |
+                https://www.pexels.com/es-es/foto/oscuro-techo-gotas-de-lluvia-mojado-9586507/ |
+                https://images.pexels.com/photos/9586507/pexels-photo-9586507.jpeg |
+                recorte 3:2 · 2200 px · calidad 84
+mos1-01.jpg  <= pexels | Pexels License | Craig Adderley |
+                https://www.pexels.com/es-es/foto/fotografia-de-enfoque-selectivo-de-rueda-de-bicicleta-1835897/ |
+                https://images.pexels.com/photos/1835897/pexels-photo-1835897.jpeg |
+                recorte 3:2 · 1200 px · calidad 80 · puesta el 08-09-2026
+mos4-01.jpg  <= pexels | Pexels License | cottonbro studio |
+                https://www.pexels.com/es-es/foto/rueda-de-bicicleta-roja-con-cadena-5911696/ |
+                https://images.pexels.com/photos/5911696/pexels-photo-5911696.jpeg |
+                recorte 3:2 · 1200 px · calidad 80 · puesta el 08-09-2026
+
+── FOTOS HEREDADAS, SIN PROCEDENCIA REGISTRADA ────────────────────────────
+Las ocho de abajo se bajaron con FotoRadar el 01-09-2026 —sólo de bancos
+libres: pexels, pixabay, pxhere y commons, que son las únicas fuentes que
+el buscador tiene habilitadas— pero esa sesión no dejó escrito el archivo
+de fuentes, y del JPEG ya recortado no se puede reconstruir la URL. Se
+revisaron una por una el 08-09-2026: ninguna tiene marca de tercero
+legible, precio, menor identificable ni rostro reconocible. Antes de
+publicar hay que reponerlas o volver a bajarlas dejando la línea escrita;
+está anotado como pendiente 1 en QUE-FOTOS-FALTAN.md.
+
+port-01.jpg  <= banco libre vía FotoRadar (01-09-2026) | URL no registrada |
+                panel de herramientas colgadas · 2560 px
+tajo-01.jpg  <= banco libre vía FotoRadar (01-09-2026) | URL no registrada |
+                caña y carrete junto al agua · 2200 px
+cita-01.jpg  <= banco libre vía FotoRadar (01-09-2026) | URL no registrada |
+                taller de bicicletas con herramientas al fondo · 2200 px
+telon-01.jpg <= banco libre vía FotoRadar (01-09-2026) | URL no registrada |
+                plancha y perfiles metálicos · 1200 px
+mos2-01.jpg  <= banco libre vía FotoRadar (01-09-2026) | URL no registrada |
+                caña de mosca y carrete sobre un muelle · 1200 px
+mos3-01.jpg  <= banco libre vía FotoRadar (01-09-2026) | URL no registrada |
+                caña armada al atardecer · 1200 px
+mos5-01.jpg  <= banco libre vía FotoRadar (01-09-2026) | URL no registrada |
+                cajones de ferretería con pernos · 1200 px
+mos6-01.jpg  <= banco libre vía FotoRadar (01-09-2026) | URL no registrada |
+                montón de golillas · 1200 px
+
+── LO QUE SALIÓ EL 08-09-2026 ─────────────────────────────────────────────
+· El mos1 anterior (carrete de pesca sostenido en la mano) se sacó porque
+  la marca del carrete se lee a tamaño real.
+· El primer reemplazo que se probó —unas manos ajustando el piñón— se
+  descartó por lo mismo: SHIMANO grabado en la corona, perfectamente
+  legible en el mosaico a 1200 px. Se revisa mirando la foto puesta en la
+  página, no la miniatura del banco.
+· El mos4 anterior (tornillos sueltos sobre fondo rosado) era la única
+  foto floja del mosaico.
+Con las dos nuevas, el mosaico queda repartido como el local: dos de
+pesca, dos de bicicletas y dos de ferretería — que es lo que promete el
+título «Los tres mundos» y lo que no cumplía antes, con cuatro de pesca y
+ninguna de bicicletas.
+
+MAPA DE UBICACION — mapa-01.jpg
+  768 x 768 · zoom 16 · centro -41.3245137, -72.9804403
+  Mosaicos de OpenStreetMap pegados en una sola imagen, con el marcador
+  dibujado encima. Datos (c) OpenStreetMap contributors, licencia ODbL:
+  la atribucion tiene que ir VISIBLE junto al mapa, en el pie de la figura.
+  https://www.openstreetmap.org/copyright

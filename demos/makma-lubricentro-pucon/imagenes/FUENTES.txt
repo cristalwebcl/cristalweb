@@ -1,0 +1,22 @@
+FUENTES DE LAS IMAGENES - Makma Rehecha el 13-09-2026 (presentacion antes que texto). Fotos de REFERENCIA de bancos libres: ninguna es del local; las verdaderas las tiene que mandar el negocio. 
+port-01.jpg  <-  pozo-p-mak-motor\003.jpg  |  pexels (Pexels License)  |  autor: LeenSelina Cook Jordan  |  https://www.pexels.com/es-es/foto/naturaleza-muerta-metalico-hd-motor-de-coche-11455717/  |  consulta: "car engine"
+hund1-01.jpg  <-  pozo-p-mak-aceite\003.jpg  |  pexels (Pexels License)  |  autor: cottonbro studio  |  https://www.pexels.com/es-es/foto/motor-cubrir-cubierta-tiro-vertical-7541352/  |  consulta: "motor oil"
+hund2-01.jpg  <-  pozo-p-mak-filtro\007.jpg  |  pexels (Pexels License)  |  autor: Benjamin Walsham  |  https://www.pexels.com/es-es/foto/automotor-filtro-de-aire-tiro-vertical-toma-de-aire-11074558/  |  consulta: "oil filter"
+hund3-01.jpg  <-  pozo-p-mak-freno\008.jpg  |  pexels (Pexels License)  |  autor: Jae Park  |  https://www.pexels.com/es-es/foto/freno-de-disco-de-vehiculo-con-ruedas-4022543/  |  consulta: "brake disc"
+hund4-01.jpg  <-  pozo-p-mak-herramientas\002.jpg  |  pexels (Pexels License)  |  autor: Miguel Á. Padriñán  |  https://www.pexels.com/es-es/foto/blanco-y-negro-pared-muro-estante-16679588/  |  consulta: "car mechanic tools"
+hund5-01.jpg  <-  pozo-p-mak-neumatico\011.jpg  |  pexels (Pexels License)  |  autor: Engin Akyurt  |  https://www.pexels.com/es-es/foto/coche-vehiculo-pavimento-neumatico-18383583/  |  consulta: "car tire"
+hund6-01.jpg  <-  pozo-p-mak-testigo\009.jpg  |  pexels (Pexels License)  |  autor: Erik Mclean  |  https://www.pexels.com/es-es/foto/pictogramas-en-el-tablero-de-instrumentos-del-automovil-16341407/  |  consulta: "car dashboard warning light"
+banda-01.jpg  <-  pozo-p-mak-herramientas\004.jpg  |  pexels (Pexels License)  |  autor: Miguel Á. Padriñán  |  https://www.pexels.com/es-es/foto/blanco-y-negro-pared-muro-metal-16679591/  |  consulta: "car mechanic tools"
+cita-01.jpg  <-  pozo-p-mak-herramientas\012.jpg  |  pexels (Pexels License)  |  autor: Miguel Á. Padriñán  |  https://www.pexels.com/es-es/foto/blanco-y-negro-metal-vintage-tecnologia-16679541/  |  consulta: "car mechanic tools"
+mos1-01.jpg  <-  pozo-p-mak-freno\010.jpg  |  pexels (Pexels License)  |  autor: Peter Dyllong  |  https://www.pexels.com/es-es/foto/discos-de-freno-oxidados-en-primer-plano-abstracto-36223794/  |  consulta: "brake disc"
+mos2-01.jpg  <-  pozo-p-mak-motor\008.jpg  |  pexels (Pexels License)  |  autor: Tim Mossholder  |  https://www.pexels.com/es-es/foto/un-motor-automotriz-limpio-3076820/  |  consulta: "car engine"
+mos3-01.jpg  <-  pozo-p-mak-testigo\007.jpg  |  pexels (Pexels License)  |  autor: Srattha Nualsate  |  https://www.pexels.com/es-es/foto/fotografia-de-cerca-de-un-indicador-de-combustible-12996955/  |  consulta: "car dashboard warning light"
+mos4-01.jpg  <-  pozo-p-mak-herramientas\003.jpg  |  pexels (Pexels License)  |  autor: Miguel Á. Padriñán  |  https://www.pexels.com/es-es/foto/blanco-y-negro-pared-muro-herramientas-16679581/  |  consulta: "car mechanic tools"
+mos5-01.jpg  <-  pozo-p-mak-neumatico\009.jpg  |  pexels (Pexels License)  |  autor: Vitali Adutskevich  |  https://www.pexels.com/es-es/foto/carretera-calle-coche-negro-17000829/  |  consulta: "car tire"
+mos6-01.jpg  <-  pozo-p-mak-motor\005.jpg  |  pexels (Pexels License)  |  autor: Erik Mclean  |  https://www.pexels.com/es-es/foto/industria-metal-coche-vehiculo-5158155/  |  consulta: "car engine"
+
+BRUMA (bruma-pag-0N.png y bruma-osc-0N.png, 30x20): las MISMAS fotos, recortadas a 3:2, reducidas y
+recoloreadas con C:\devs\demos\hacer-bruma.ps1 (clara >= 0,68 de luminancia / oscura <= 0,05). No suman fuentes.
+    pagina: port-01.jpg, banda-01.jpg, cita-01.jpg, hund1-01.jpg, hund2-01.jpg, hund4-01.jpg, mos1-01.jpg, mos3-01.jpg   |   oscuras: port-01.jpg, cita-01.jpg, banda-01.jpg
+
+MAPA: iframe de Google Maps (embed publico, sin clave). No hay imagen de mapa.

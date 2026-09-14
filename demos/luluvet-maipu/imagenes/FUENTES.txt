@@ -1,0 +1,22 @@
+FUENTES DE LAS IMAGENES - Lulu'Vet Rehecha el 13-09-2026 (presentacion antes que texto). Fotos de REFERENCIA de bancos libres: ninguna es del local; las verdaderas las tiene que mandar el negocio. 
+port-01.jpg  <-  pozo-p-lulu-noche\010.jpg  |  pexels (Pexels License)  |  autor: Erik Mclean  |  https://www.pexels.com/es-es/foto/noche-oscuro-edificio-entrada-9538576/  |  consulta: "veterinary clinic night"
+hund1-01.jpg  <-  pozo-p-lulu-pasillo\005.jpg  |  pexels (Pexels License)  |  autor: Евгений Шухман  |  https://www.pexels.com/es-es/foto/oscuro-techo-estrecho-hospital-10450996/  |  consulta: "hospital corridor light"
+hund2-01.jpg  <-  pozo-p-lulu-noche\002.jpg  |  pexels (Pexels License)  |  autor: Pavel Danilyuk  |  https://www.pexels.com/es-es/foto/acero-inoxidable-cuidado-de-la-salud-sanidad-higiene-6812483/  |  consulta: "veterinary clinic night"
+hund3-01.jpg  <-  pozo-p-lulu-noche\004.jpg  |  pexels (Pexels License)  |  autor: Pavel Danilyuk  |  https://www.pexels.com/es-es/foto/prismaticos-silla-clinica-medicina-7108404/  |  consulta: "veterinary clinic night"
+hund4-01.jpg  <-  pozo-p-lulu-pasillo\008.jpg  |  pexels (Pexels License)  |  autor: ratnawati setiabudi  |  https://www.pexels.com/es-es/foto/puerta-interior-hospital-corredor-21073473/  |  consulta: "hospital corridor light"
+hund5-01.jpg  <-  pozo-p-lulu-cama\008.jpg  |  pexels (Pexels License)  |  autor: Lisa Fotios  |  https://www.pexels.com/es-es/foto/perro-adulto-en-cama-blanca-2102839/  |  consulta: "dog bed sleeping"
+hund6-01.jpg  <-  pozo-p-lulu-gato\011.jpg  |  pexels (Pexels License)  |  autor: Bruno Henrique  |  https://www.pexels.com/es-es/foto/acogedor-gato-gris-acurrucado-entre-suaves-mantas-29510202/  |  consulta: "cat sleeping blanket"
+banda-01.jpg  <-  pozo-p-lulu-gato\010.jpg  |  pexels (Pexels License)  |  autor: Morten H. Hansen  |  https://www.pexels.com/es-es/foto/mascota-gato-dormido-durmiendo-18840762/  |  consulta: "cat sleeping blanket"
+cita-01.jpg  <-  pozo-p-lulu-pasillo\012.jpg  |  pexels (Pexels License)  |  autor: Jimmy Chan  |  https://www.pexels.com/es-es/foto/pasillo-con-poca-luz-y-sombras-de-las-ventanas-1532873/  |  consulta: "hospital corridor light"
+mos1-01.jpg  <-  pozo-p-lulu-gato\012.jpg  |  pexels (Pexels License)  |  autor: Juju  |  https://www.pexels.com/es-es/foto/gato-atigrado-acogedor-durmiendo-tranquilamente-en-una-manta-31961534/  |  consulta: "cat sleeping blanket"
+mos2-01.jpg  <-  pozo-p-lulu-cama\007.jpg  |  pexels (Pexels License)  |  autor: Albina White  |  https://www.pexels.com/es-es/foto/perro-dormido-durmiendo-beagle-11060015/  |  consulta: "dog bed sleeping"
+mos3-01.jpg  <-  pozo-p-lulu-cama\009.jpg  |  pexels (Pexels License)  |  autor: Andrew Neel  |  https://www.pexels.com/es-es/foto/perro-en-la-cama-del-animal-domestico-2248516/  |  consulta: "dog bed sleeping"
+mos4-01.jpg  <-  pozo-p-lulu-cama\011.jpg  |  pexels (Pexels License)  |  autor: Albina White  |  https://www.pexels.com/es-es/foto/perro-mascota-mono-acostado-11060022/  |  consulta: "dog bed sleeping"
+mos5-01.jpg  <-  pozo-p-lulu-gato\001.jpg  |  pexels (Pexels License)  |  autor: Nestor Ovilla  |  https://www.pexels.com/es-es/foto/gato-blanco-y-negro-durmiendo-en-la-cama-30437321/  |  consulta: "cat sleeping blanket"
+mos6-01.jpg  <-  pozo-p-lulu-cama\010.jpg  |  pexels (Pexels License)  |  autor: Ryszard Zaleski  |  https://www.pexels.com/es-es/foto/cama-perro-mascota-mono-8191846/  |  consulta: "dog bed sleeping"
+
+BRUMA (bruma-pag-0N.png y bruma-osc-0N.png, 30x20): las MISMAS fotos, recortadas a 3:2, reducidas y
+recoloreadas con C:\devs\demos\hacer-bruma.ps1 (clara >= 0,68 de luminancia / oscura <= 0,05). No suman fuentes.
+    pagina: port-01.jpg, banda-01.jpg, cita-01.jpg, hund6-01.jpg, mos1-01.jpg   |   oscuras: port-01.jpg, banda-01.jpg, cita-01.jpg
+
+MAPA: iframe de Google Maps (embed publico, sin clave). No hay imagen de mapa.

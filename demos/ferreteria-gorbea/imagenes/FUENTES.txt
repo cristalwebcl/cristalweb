@@ -1,0 +1,22 @@
+FUENTES DE LAS IMAGENES - Ferretería Gorbea Rehecha el 13-09-2026 (presentacion antes que texto). Fotos de REFERENCIA de bancos libres: ninguna es del local; las verdaderas las tiene que mandar el negocio. 
+port-01.jpg  <-  pozo-p-gor-brocas\002.jpg  |  pexels (Pexels License)  |  autor: Miguel Á. Padriñán  |  https://www.pexels.com/es-es/foto/metal-herramientas-taller-coleccion-16679649/  |  consulta: "drill bits"
+hund1-01.jpg  <-  pozo-p-gor-frasco\011.jpg  |  pexels (Pexels License)  |  autor: Peppered Pixels Design Studio  |  https://www.pexels.com/es-es/foto/hardware-industrial-monton-de-tornillos-metalicos-29751916/  |  consulta: "screws jar"
+hund2-01.jpg  <-  pozo-p-gor-frasco\003.jpg  |  pexels (Pexels License)  |  autor: Ksenia Chernaya  |  https://www.pexels.com/es-es/foto/construccion-industria-metal-efecto-desenfocado-5691699/  |  consulta: "screws jar"
+hund3-01.jpg  <-  pozo-p-gor-brocas\011.jpg  |  pexels (Pexels License)  |  autor: 凱閔 楊  |  https://www.pexels.com/es-es/foto/perforar-taladro-tiro-vertical-de-cerca-11820641/  |  consulta: "drill bits"
+hund4-01.jpg  <-  pozo-p-gor-bisagra\003.jpg  |  pexels (Pexels License)  |  autor: Marco Damm  |  https://www.pexels.com/es-es/foto/puerta-oxidado-bisagra-tiro-vertical-11891393/  |  consulta: "door hinge"
+hund5-01.jpg  <-  pozo-p-gor-tarros\006.jpg  |  pexels (Pexels License)  |  autor: cottonbro studio  |  https://www.pexels.com/es-es/foto/colorido-de-colores-pintar-pintura-7896642/  |  consulta: "paint cans"
+hund6-01.jpg  <-  pozo-p-gor-brocas\003.jpg  |  pexels (Pexels License)  |  autor: cottonbro studio  |  https://www.pexels.com/es-es/foto/madera-metal-herramientas-carpinteria-7479039/  |  consulta: "drill bits"
+banda-01.jpg  <-  pozo-p-gor-cajones\001.jpg  |  pexels (Pexels License)  |  autor: Monstera Production  |  https://www.pexels.com/es-es/foto/armario-de-madera-marron-con-cajon-7794448/  |  consulta: "small drawers hardware"
+cita-01.jpg  <-  pozo-p-gor-tarugos\012.jpg  |  pexels (Pexels License)  |  autor: Polina Tankilevitch  |  https://www.pexels.com/es-es/foto/herramientas-por-encima-de-la-cabeza-gastos-generales-tornillo-5583054/  |  consulta: "wall anchors"
+mos1-01.jpg  <-  pozo-p-gor-tarugos\011.jpg  |  pexels (Pexels License)  |  autor: Polina Tankilevitch  |  https://www.pexels.com/es-es/foto/herramientas-por-encima-de-la-cabeza-gastos-generales-tornillo-5583051/  |  consulta: "wall anchors"
+mos2-01.jpg  <-  pozo-p-gor-cajones\003.jpg  |  pexels (Pexels License)  |  autor: Sabine Fischer  |  https://www.pexels.com/es-es/foto/vintage-mueble-mobiliario-laton-19052812/  |  consulta: "small drawers hardware"
+mos3-01.jpg  <-  pozo-p-gor-muro\007.jpg  |  pexels (Pexels License)  |  autor: Sóc Năng Động  |  https://www.pexels.com/es-es/foto/pared-de-ladrillo-antiguo-con-textura-desgastada-36462150/  |  consulta: "brick wall drilling"
+mos4-01.jpg  <-  pozo-p-gor-brocas\004.jpg  |  pexels (Pexels License)  |  autor: Miguel Á. Padriñán  |  https://www.pexels.com/es-es/foto/negro-herramienta-industrial-maquinaria-16679645/  |  consulta: "drill bits"
+mos5-01.jpg  <-  pozo-p-gor-cajones\004.jpg  |  pexels (Pexels License)  |  autor: Pixabay  |  https://www.pexels.com/es-es/foto/fotografia-de-primer-plano-de-la-comoda-negra-de-2-cajones-159495/  |  consulta: "small drawers hardware"
+mos6-01.jpg  <-  pozo-p-gor-brocas\001.jpg  |  pexels (Pexels License)  |  autor: Krysten Merriman  |  https://www.pexels.com/es-es/foto/brocas-de-acero-inoxidable-20791/  |  consulta: "drill bits"
+
+BRUMA (bruma-pag-0N.png y bruma-osc-0N.png, 30x20): las MISMAS fotos, recortadas a 3:2, reducidas y
+recoloreadas con C:\devs\demos\hacer-bruma.ps1 (clara >= 0,68 de luminancia / oscura <= 0,05). No suman fuentes.
+    pagina: port-01.jpg, banda-01.jpg, cita-01.jpg, hund1-01.jpg, hund4-01.jpg, mos1-01.jpg, mos2-01.jpg, mos3-01.jpg   |   oscuras: port-01.jpg, cita-01.jpg, banda-01.jpg
+
+MAPA: iframe de Google Maps (embed publico, sin clave). No hay imagen de mapa.

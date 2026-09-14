@@ -1,0 +1,18 @@
+﻿FUENTES DE LAS IMAGENES - caracol-nunoa-centro Bancos libres; procesadas con preparar-lote.ps1 (JPEG, ancho y calidad por tratamiento). 
+tajo-01.jpg  <=  pexels | Pexels License | Serinus | https://www.pexels.com/es-es/foto/blanco-y-negro-arquitectura-hormigon-simetrico-5838975/ | https://images.pexels.com/photos/5838975/pexels-photo-5838975.jpeg | recorte 21:9
+mit-01.jpg  <=  pexels | Pexels License | Isidora Rodríguez | https://www.pexels.com/es-es/foto/abismo-34903280/ | https://images.pexels.com/photos/34903280/pexels-photo-34903280.jpeg | recorte 4:5
+cita-01.jpg  <=  pexels | Pexels License | wal_ 172619 | https://www.pexels.com/es-es/foto/escalera-moderna-de-hormigon-con-diseno-minimalista-37475385/ | https://images.pexels.com/photos/37475385/pexels-photo-37475385.jpeg | recorte 16:9
+telon-01.jpg  <=  pexels | Pexels License | Kirsten Salazar | https://www.pexels.com/es-es/foto/escalera-contemporanea-jc-31171508/ | https://images.pexels.com/photos/31171508/pexels-photo-31171508.jpeg | recorte 3:4
+mos1-01.jpg  <=  pexels | Pexels License | lumenicee | https://www.pexels.com/es-es/foto/instalacion-de-souvenirs-locales-en-zona-turistica-35717265/ | https://images.pexels.com/photos/35717265/pexels-photo-35717265.jpeg | recorte 3:4
+mos2-01.jpg  <=  pexels | Pexels License | cottonbro studio | https://www.pexels.com/es-es/foto/botellas-colorido-de-colores-botella-3997347/ | https://images.pexels.com/photos/3997347/pexels-photo-3997347.jpeg | recorte 3:4
+mos3-01.jpg  <=  pexels | Pexels License | Renan Rezende | https://www.pexels.com/es-es/foto/luces-silla-asiento-espejo-5584463/ | https://images.pexels.com/photos/5584463/pexels-photo-5584463.jpeg | recorte 3:4
+mos4-01.jpg  <=  pexels | Pexels License | halilibrahimxq | https://www.pexels.com/es-es/foto/pared-muro-llaves-tienda-18101862/ | https://images.pexels.com/photos/18101862/pexels-photo-18101862.jpeg | recorte 3:4
+mos5-01.jpg  <=  pexels | Pexels License | Gustavo Fring | https://www.pexels.com/es-es/foto/colorido-de-colores-creatividad-oficio-3984869/ | https://images.pexels.com/photos/3984869/pexels-photo-3984869.jpeg | recorte 3:4
+mos6-01.jpg  <=  pexels | Pexels License | Ana Belén González Hernández | https://www.pexels.com/es-es/foto/surtido-de-croissants-y-pasteles-frescos-37020184/ | https://images.pexels.com/photos/37020184/pexels-photo-37020184.jpeg | recorte 3:4
+
+MAPA DE UBICACION — mapa-01.jpg
+  768 x 768 · zoom 16 · centro -33.4546123, -70.6045961
+  Mosaicos de OpenStreetMap pegados en una sola imagen, con el marcador
+  dibujado encima. Datos (c) OpenStreetMap contributors, licencia ODbL:
+  la atribucion tiene que ir VISIBLE junto al mapa, en el pie de la figura.
+  https://www.openstreetmap.org/copyright

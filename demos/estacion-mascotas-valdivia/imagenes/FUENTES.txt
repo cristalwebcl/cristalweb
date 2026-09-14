@@ -32,3 +32,10 @@ URL de origen:
 002.jpg | 5659x3773 | Vet Photos, Download The BEST Free Vet Stock Photos & HD Images | https://images.pexels.com/photos/6235242/pexels-photo-6235242.jpeg?cs=srgb&dl=pexels-tima-miroshnichenko-6235242.jpg&fm=jpg
 003.jpg | 5296x3531 | Veterinary Clinic Photos, Download The BEST Free Veterinary Clinic ... | https://images.pexels.com/photos/6234618/pexels-photo-6234618.jpeg?cs=srgb&dl=pexels-tima-miroshnichenko-6234618.jpg&fm=jpg
 004.jpg | 5184x3456 | Vet Vaccinating Adult Tan Pit Bull Terrier · Free Stock Photo | https://images.pexels.com/photos/1350591/pexels-photo-1350591.jpeg?cs=srgb&dl=pexels-pranidchakan-boonrom-1350591.jpg&fm=jpg
+
+MAPA DE UBICACION — mapa-01.jpg
+  768 x 768 · zoom 14 · centro -39.8141262, -73.2459859
+  Mosaicos de OpenStreetMap pegados en una sola imagen, con el marcador
+  dibujado encima. Datos (c) OpenStreetMap contributors, licencia ODbL:
+  la atribucion tiene que ir VISIBLE junto al mapa, en el pie de la figura.
+  https://www.openstreetmap.org/copyright

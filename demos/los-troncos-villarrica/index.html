@@ -27,7 +27,7 @@
 
 <div class="propuesta">
   <p class="propuesta__que">Propuesta de sitio web — preparada para <b>Los Troncos</b> por CristalWeb</p>
-  <p class="propuesta__gancho">289 reseñas con 4,8 y su única dirección en internet es una cuenta de redes que Google apenas muestra.</p>
+  <p class="propuesta__gancho">289 reseñas con 4,8 y ninguna página propia: verificado el 21-08-2026, su única dirección en internet es una cuenta de redes que Google apenas muestra. Ésta es la página que debería estar ahí.</p>
 </div>
 
 <header class="cab" id="cab">
@@ -37,6 +37,7 @@
   </a>
   <nav class="cab__nav" aria-label="Secciones">
     <a href="#puntos">El punto de la carne</a>
+    <a href="#cortes">Los cortes</a>
     <a href="#cuantos">Para cuántos</a>
   </nav>
   <a class="cab__wsp" href="#reservar">
@@ -50,10 +51,17 @@
 <!-- ═════════ PORTADA ═════════ -->
 <section class="portada portada--foto" id="portada" aria-labelledby="t-portada">
   <!-- FONDO DE PORTADA: 2560 px, nitido. Se disuelve hacia el titular
-       con un gradiente lateral, no con desenfoque. -->
+       con un gradiente lateral, no con desenfoque.
+       El <video> es hermano de la foto y comparte su encuadre y su
+       mascara. No lleva poster: el poster es esta misma <img>, que se
+       queda en el DOM para siempre — si el clip no carga, si el autoplay
+       se bloquea o si el visitante pidio menos movimiento, lo que se ve
+       es la foto y no un rectangulo negro. -->
   <div class="portada__foto" aria-hidden="true">
     <img src="imagenes/port-01.jpg" width="2560" height="1707"
          decoding="async" fetchpriority="high" alt="">
+    <video class="portada__video" data-src="video/port.mp4"
+           muted playsinline loop preload="none" aria-hidden="true"></video>
   </div>
 
   <div class="humo" aria-hidden="true"><span class="h1"></span><span class="h2"></span><span class="h3"></span></div>
@@ -62,15 +70,38 @@
     <h1 id="t-portada">Pedí a punto<br>y llegó cocida</h1>
     <p class="bajada">Pasa siempre, y casi nunca es culpa de la parrilla: es que cada
       uno entiende «a punto» distinto. Acá están los cuatro puntos, escritos.</p>
-    <dl class="specs">
-      <div class="spec"><dt>nota en Google</dt><dd>4,8</dd></div>
-      <div class="spec"><dt>reseñas</dt><dd>289</dd></div>
-    </dl>
+    <p class="portada__botones">
+      <a class="boton" href="#puntos">Ver los cuatro puntos</a>
+      <a class="fantasma fantasma--port" href="#reservar">Reservar mesa</a>
+    </p>
   </div>
+</section>
+
+<!-- ═════════ LAS CIFRAS ═════════
+     Los cuatro números en una sola fila: los tres que el negocio ya
+     tiene ganados y, al final, el que le falta. La herida se lee en el
+     segundo diez, sin que nadie tenga que explicarla. Sólo cuenta el
+     289, que es el único que costó verificar; subir el «4» de una
+     lista que está diez centímetros más abajo se lee como truco. -->
+<section class="cifras" id="cifras" aria-label="Los números de Los Troncos, verificados en agosto de 2026">
+  <div class="telon telon--cifras" aria-hidden="true">
+    <img src="imagenes/telon-02.jpg" width="1280" height="720"
+         loading="lazy" decoding="async" alt="">
+  </div>
+  <ul class="cifras__lista cascada">
+    <li><b data-cuenta="289">289</b><span>reseñas en Google</span></li>
+    <li><b>4,8</b><span>de nota con esas reseñas</span></li>
+    <li><b>4</b><span>puntos de cocción, escritos acá abajo</span></li>
+    <li class="cifras__herida"><b>0</b><span>páginas propias en internet<br>verificado el 21-08-2026</span></li>
+  </ul>
 </section>
 
 <!-- ═════════ LA PIEZA FIRMA — LA TABLA DE PUNTOS (C) ═════════ -->
 <section class="puntos con-telon" id="puntos" aria-labelledby="t-puntos">
+  <!-- El telón va SIN loading=lazy, igual que el aura de abajo y por el
+       mismo motivo: el elemento está en absoluto con z-index negativo y
+       el navegador nunca lo da por visible, así que con lazy no se
+       pediría nunca y la sección quedaría de fondo plano. -->
   <div class="telon" aria-hidden="true">
     <img src="imagenes/telon-01.jpg" width="1200" height="978" decoding="async" alt="">
   </div>
@@ -93,7 +124,7 @@
     <p class="marca-ejemplo" data-ejemplo="Referencia general del oficio — el punto exacto lo maneja la parrilla"></p>
   </div>
 
-  <ol class="escala">
+  <ol class="escala cascada">
     <li class="punto">
       <p class="punto__n">Inglesa</p>
       <div class="punto__muestra punto__muestra--1" aria-hidden="true"></div>
@@ -143,8 +174,12 @@
 <!-- ========= MEDIA PANTALLA ========= -->
 <section class="mitades" aria-labelledby="t-mitades">
   <div class="mitades__foto">
+    <!-- ésta NO es decorativa: es la única foto comprobada del negocio
+         y el argumento entero de la sección, así que lleva alt que
+         describe lo que se ve, no «foto del restaurante». -->
     <img src="imagenes/media-01.jpg" width="1500" height="845"
-         loading="lazy" decoding="async" alt="">
+         loading="lazy" decoding="async"
+         alt="Entrada de Los Troncos: un tablón de madera con el nombre tallado, colgado entre dos postes sobre la reja del local.">
   </div>
   <div class="mitades__texto">
     <p class="mitades__ante">La única foto suya que se puede verificar</p>
@@ -155,11 +190,87 @@
 
 
 
-<!-- ========= TAJO — FRANJA A SANGRE ========= -->
-<div class="tajo" aria-hidden="true">
-  <img src="imagenes/banda-01.jpg" width="1500" height="845"
+<!-- ========= TAJO — FRANJA A SANGRE =========
+     Antes iba acá otra copia de la foto del letrero, la misma de la
+     sección de arriba y la misma que abre el mosaico: pegadas una
+     debajo de la otra se leían como un error de maquetación. Ahora va
+     el carbón al rojo —otro recorte del clip de portada, cuatro
+     pantallas más arriba— y lleva la frase que le faltaba: un tajo sin
+     texto es relleno, con texto es el respiro que sostiene el
+     argumento entre la foto del local y la lista de cortes.
+     El velo sube desde abajo y arranca en alfa 0, así los dos tercios
+     de arriba de la brasa quedan a foco completo. -->
+<figure class="tajo">
+  <img src="imagenes/tajo-01.jpg" width="2200" height="659"
        loading="lazy" decoding="async" alt="">
-</div>
+  <figcaption class="tajo__txt">
+    <p>La brasa manda: el punto no lo decide el reloj, lo decide el fuego que hay abajo.</p>
+  </figcaption>
+</figure>
+
+<!-- ═════════ LOS CORTES ═════════
+     La segunda mitad de «pedir sin adivinar»: el punto es cómo se
+     cocina, el corte es qué se pide. Son los nombres del oficio, los
+     mismos en cualquier parrilla del sur — no una carta. Va marcado
+     arriba con la etiqueta de ejemplo y cerrado abajo con la carta
+     tallada que sí es de ellos: lo que la casa tenga que corregir,
+     lo corrige sobre una lista que ya está escrita. -->
+<section class="cortes" id="cortes" aria-labelledby="t-cortes">
+  <div class="cortes__cabecera">
+    <p class="antetitulo">La otra mitad de pedir sin adivinar</p>
+    <h2 id="t-cortes">Los cortes,<br>cuál es cuál</h2>
+    <p>El punto es cómo se cocina. El corte es qué se pide, y ahí se decide casi
+      todo lo demás: si es graso o magro, si sale rápido o hay que esperarlo, si
+      se come con la mano o con cuchillo.</p>
+    <p class="marca-ejemplo" data-ejemplo="Vocabulario del oficio — cuáles hay en la casa lo confirma la parrilla"></p>
+  </div>
+
+  <div class="cortes__grilla cascada">
+    <article class="corte">
+      <h3>Entraña</h3>
+      <p>Tira delgada, de hebra suelta y sabor fuerte. Se hace rápido y por eso
+        suele ser la primera en llegar a la mesa.</p>
+      <p class="corte__dato">delgada · vuelta y vuelta</p>
+    </article>
+    <article class="corte">
+      <h3>Lomo vetado</h3>
+      <p>La grasa va repartida adentro en vetas y al fuego se derrite sola. Es el
+        corte que más perdona si se pasa un minuto de más.</p>
+      <p class="corte__dato">graso · aguanta el fuego</p>
+    </article>
+    <article class="corte">
+      <h3>Punta de picana</h3>
+      <p>Triangular, con una capa de grasa arriba que no se saca: es lo que lo
+        mantiene jugoso mientras se cocina.</p>
+      <p class="corte__dato">la grasa se deja arriba</p>
+    </article>
+    <article class="corte">
+      <h3>Asado de tira</h3>
+      <p>Costillar cortado al través, con el hueso a la vista. Pide paciencia y se
+        come con la mano sin que nadie diga nada.</p>
+      <p class="corte__dato">con hueso · lento</p>
+    </article>
+    <article class="corte">
+      <h3>Plateada</h3>
+      <p>Va cubierta por una capa de grasa que la protege. Con fuego bajo y tiempo
+        queda deshaciéndose sola.</p>
+      <p class="corte__dato">de hebra · fuego bajo</p>
+    </article>
+    <article class="corte">
+      <h3>Longaniza y chorizo</h3>
+      <p>Los embutidos abren la parrilla mientras la carne todavía está tomando
+        color. Es lo que se pica esperando.</p>
+      <p class="corte__dato">primero en la parrilla</p>
+    </article>
+  </div>
+
+  <p class="cortes__pie">Ésta es la lista del oficio, no la carta de la casa. La de
+    Los Troncos existe tallada en una tabla colgada en la puerta, y hoy no existe en
+    ninguna otra parte: <span class="falta">falta: fotografiarla y pasarla a texto</span>
+    —qué cortes hay de verdad, cómo los llaman ellos y cuánto valen. El hueco está
+    esperándola más abajo.</p>
+</section>
+
 <section class="cuantos" id="cuantos" aria-labelledby="t-cuantos">
   <div class="cuantos__cuerpo">
     <p class="antetitulo antetitulo--claro">La cuenta antes de entrar</p>
@@ -168,7 +279,7 @@
       cuatro, ¿alcanza para cinco? Escrito, se decide antes de sentarse.</p>
     <p class="marca-ejemplo marca-ejemplo--claro" data-ejemplo="Armado de ejemplo — lo confirma la parrilla"></p>
 
-    <div class="tablas">
+    <div class="tablas cascada">
       <article class="tabla-item">
         <p class="tabla-item__n">Para 2</p>
         <ul>
@@ -215,22 +326,28 @@
           <input id="f-cuando" name="cuando" type="text" placeholder="Sábado a las 21:00">
         </div>
         <p class="resumen" id="resumen" aria-live="polite">El mensaje se arma acá abajo.</p>
-        <a class="fantasma" id="enviar" href="#reservar">Enviar por WhatsApp</a>
+        <a class="fantasma" id="enviar" href="#reservar">Copiar el mensaje</a>
         <p class="reservar__nota"><span class="falta">falta: el número</span> — su ficha
-          de Google no publica ninguno.</p>
+          de Google no publica ninguno, así que acá el botón copia el texto en vez de
+          abrir WhatsApp. Con el número confirmado, este mismo botón lo abre con el
+          mensaje ya escrito. Sin JavaScript el mensaje igual se lee acá arriba.</p>
       </form>
     </div>
   </div>
 </section>
 
-</main>
-
 
 <!-- ========= LA CITA A SANGRE ========= -->
 <section class="cita" aria-labelledby="t-cita">
+  <!-- Segundo clip: el fuego del asador. Mismo patrón que la portada —
+       la foto es la base y el video se funde encima cuando puede
+       reproducirse; los dos van dentro de .cita__foto y comparten el
+       mismo encuadre y el mismo velo. -->
   <div class="cita__foto" aria-hidden="true">
     <img src="imagenes/cita-01.jpg" width="1700" height="2550"
          loading="lazy" decoding="async" alt="">
+    <video class="cita__video" data-src="video/cita.mp4"
+           muted playsinline loop preload="none" aria-hidden="true"></video>
   </div>
   <blockquote class="cita__texto">
     <p id="t-cita">El punto se pide antes, no se reclama después<br>
@@ -252,18 +369,32 @@
 </section>
 
 
-<!-- ========= LAS FOTOS ========= -->
+<!-- ========= LA CARTA QUE FALTA =========
+     Acá iba una foto de una carta de madera que se encontró buscando
+     «Los Troncos», y no es de acá: los platos son quesadillas al
+     pastor, alambres y arrachera, y los precios están en pesos
+     mexicanos. Es OTRO «Los Troncos» —el propio FUENTES.txt avisa que
+     el nombre se repite—, así que sostener sobre ella la frase «esta
+     carta es suya» era un dato inventado, y además metía catorce
+     precios legibles en una página que no lleva ni uno.
+
+     Se sacó, y el hueco queda a la vista a propósito: el sistema de la
+     casa dice que lo que falta se marca y se marca bonito. Al dueño le
+     sirve más ver el recuadro punteado con su nombre encima que una
+     foto que no es de él. -->
 <section class="galeria" aria-labelledby="t-galeria">
-  <h2 id="t-galeria" class="galeria__titulo">La carta, que ya está escrita</h2>
-  <p class="galeria__nota">Dos fotos de esta página son suyas: el letrero y esta carta. Los fondos de brasas y el corte son de banco libre y están declarados en imagenes/FUENTES.txt.</p>
+  <h2 id="t-galeria" class="galeria__titulo">La carta, que hoy sólo existe en madera</h2>
+  <p class="galeria__nota">De esta página hay una sola foto suya comprobada: el letrero tallado, más arriba. Todo lo demás es de banco libre y está declarado en <span class="mono-in">imagenes/FUENTES.txt</span>. La carta es el dato que más se busca de un restaurante y el que Los Troncos no tiene publicado en ninguna parte.</p>
   <div class="galeria__grilla">
-    <figure class="gal gal--abajo">
-      <img src="imagenes/gal-01.jpg" width="1200" height="1600" loading="lazy" decoding="async"
-           alt="Carta del restaurante escrita sobre una tabla de madera, con los cortes y sus precios.">
-      <figcaption>La carta está tallada en una tabla y colgada en la puerta. Eso que ya existe en madera es lo que hay que pasar a la página: es el dato que más se busca y el que nadie publica.</figcaption>
-    </figure>
+    <div class="hueco" data-ejemplo="la aporta la parrilla">
+      <p class="hueco__t">Foto de la carta</p>
+      <p class="hueco__d">Una foto de frente de la tabla colgada en la puerta, con luz de día
+        y sin reflejo, y la misma lista pasada a texto. Con eso la página contesta
+        «qué hay y cuánto vale» sin que nadie tenga que llamar.</p>
+      <p class="hueco__m">horizontal · ≥1600 px · sin flash</p>
+    </div>
   </div>
-  <p class="galeria__falta">falta: la parrilla trabajando, el salón, y dos cortes fotografiados de verdad</p>
+  <p class="galeria__falta">falta también: la parrilla trabajando, el salón, y un corte abierto por la mitad</p>
 </section>
 
 
@@ -271,34 +402,52 @@
 <!-- ========= MOSAICO ========= -->
 <section class="mos" aria-labelledby="t-mos">
   <h2 id="t-mos" class="mos__titulo">La misma serie, más de cerca</h2>
-  <p class="mos__nota">Estas seis ya aparecen más arriba en la página. Vuelven acá en otro tamaño porque una sola pasada de imágenes deja el scroll vacío, y porque de cerca se ven cosas que en grande se pierden. La procedencia de cada una está en imagenes/FUENTES.txt.</p>
+  <p class="mos__nota">Estas seis ya aparecen más arriba en la página. Vuelven acá en otro tamaño porque una sola pasada de imágenes deja el scroll vacío, y porque de cerca se ven cosas que en grande se pierden. La procedencia de cada una está en <span class="mono-in">imagenes/FUENTES.txt</span>.</p>
   <div class="mos__grilla">
     <figure class="mos__p">
       <img src="imagenes/mos-01.jpg" width="780" height="439"
-           loading="lazy" decoding="async" alt="">
+           loading="lazy" decoding="async"
+           alt="El letrero tallado de Los Troncos sobre los postes de madera de la entrada.">
     </figure>
     <figure class="mos__p">
       <img src="imagenes/mos-02.jpg" width="780" height="1040"
-           loading="lazy" decoding="async" alt="">
+           loading="lazy" decoding="async"
+           alt="Cortes de carne sazonándose sobre una tabla de madera junto a la plancha.">
     </figure>
     <figure class="mos__p">
       <img src="imagenes/mos-03.jpg" width="780" height="440"
-           loading="lazy" decoding="async" alt="">
+           loading="lazy" decoding="async"
+           alt="Mesa de troncos con varios platos servidos y las copas puestas.">
     </figure>
     <figure class="mos__p">
       <img src="imagenes/mos-04.jpg" width="780" height="480"
-           loading="lazy" decoding="async" alt="">
+           loading="lazy" decoding="async"
+           alt="Fogata encendida en un brasero de tres patas, al aire libre.">
     </figure>
     <figure class="mos__p">
       <img src="imagenes/mos-05.jpg" width="780" height="440"
-           loading="lazy" decoding="async" alt="">
+           loading="lazy" decoding="async"
+           alt="Leña partida ardiendo dentro de un horno de fierro.">
     </figure>
     <figure class="mos__p">
       <img src="imagenes/mos-06.jpg" width="780" height="636"
-           loading="lazy" decoding="async" alt="">
+           loading="lazy" decoding="async"
+           alt="Brasas al rojo bajo la parrilla, con las chispas saltando.">
     </figure>
   </div>
 </section>
+<section class="mapa-sec" aria-label="Dónde queda">
+    <div class="ancho">
+      <figure class="mapa">
+        <img src="imagenes/mapa-01.jpg" width="768" height="768" loading="lazy" decoding="async"
+             alt="Mapa de Villarrica.">
+        <figcaption class="mapa__pie">
+          <span><b>Villarrica</b>. La dirección exacta la confirma el negocio: cuando la tengamos, el mapa marca la puerta.</span>
+          <span class="mapa__cred">Mapa: &copy; <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener">OpenStreetMap</a></span>
+        </figcaption>
+      </figure>    </div>
+</section>
+
 <section class="dueno" aria-labelledby="t-dueno">
   <h2 id="t-dueno">Para el dueño</h2>
   <div class="dueno__cols">
@@ -320,14 +469,40 @@
   </div>
   <p class="dueno__cierre">
     <a class="flecha" href="https://wa.me/56968650001" rel="noopener">Escribirme por WhatsApp <span aria-hidden="true">→</span></a>
+    <a class="flecha" href="mailto:cristalwebcl@gmail.com?subject=Sitio%20web%20para%20Los%20Troncos%2C%20Villarrica">Escribirme por correo <span aria-hidden="true">→</span></a>
     <a class="flecha" href="../../" rel="noopener">Ver otros trabajos <span aria-hidden="true">→</span></a>
   </p>
 </section>
+
+</main>
 
 <footer class="pie">
   <p>Sitio de demostración preparado por CristalWeb. El negocio no lo ha encargado
     ni ha revisado su contenido. Los tiempos de cocción son referencia general.</p>
 </footer>
+
+<!-- ══ BOTÓN FLOTANTE ═══════════════════════════════════════════════
+     Va escrito en el HTML y visible por defecto: si main.js no arranca,
+     el botón igual está. El JS sólo lo aparta mientras se mira la
+     portada, para no tapar el titular.
+
+     POR QUÉ NO ES UN wa.me: Los Troncos no publica teléfono ni WhatsApp
+     en ninguna parte —su ficha de Google no trae ninguno— y el número de
+     CristalWeb en este botón mandaría los clientes del negocio al
+     teléfono equivocado. Mientras no haya número confirmado, el botón
+     lleva al formulario que arma el mensaje. El día que el dueño dé su
+     número, esto se cambia por href="https://wa.me/569XXXXXXXX?text=…"
+     y el icono por el de WhatsApp; nada más.
+
+     El icono va incrustado: la CSP no deja pedir nada a un tercero. -->
+<a class="wapp" href="#reservar"
+   aria-label="Ir a armar el mensaje de reserva — Los Troncos todavía no publica teléfono ni WhatsApp">
+  <svg class="wapp__i" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+    <path d="M20.5 4.5H3.5v12h4v4l4.6-4h8.4z"/>
+    <path class="wapp__l" d="M7.4 8.6h9.2M7.4 12.2h6.2"/>
+  </svg>
+  <span class="wapp__t">Reservar mesa</span>
+</a>
 
 <script src="js/main.js"></script>
 </body>

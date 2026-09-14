@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="es-CL" class="no-js">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self'; img-src 'self' data:; font-src 'self'; connect-src 'self'; media-src 'self'; form-action 'self'; base-uri 'none'; frame-src 'none'; object-src 'none'">
+<meta name="robots" content="noindex, nofollow">
+<title>Caracol Ñuñoa Centro — qué hay en cada piso, Ñuñoa</title>
+<meta name="description" content="Centro comercial de locales chicos en Ñuñoa, frente al Metro. Qué rubros hay en cada nivel, a qué hora abre y por dónde se entra.">
+<!-- Fuentes self-hosteadas: cero peticiones a Google. El
+     preload va SÓLO para la display en 800, que es la del <h1> y la única
+     que se ve en el primer pantallazo; precargar las cuatro competiría
+     por ancho de banda y retrasaría justamente esa. -->
+<link rel="preload" href="assets/fuentes/encodesansexpanded-800-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="assets/fuentes.css">
+<link rel="stylesheet" href="css/estilo.css">
+<script src="js/rescate.js"></script>
+</head>
+<body>
+
+<!-- ═══════════ BANDA DE PROPUESTA ═══════════ -->
+<aside class="propuesta" aria-label="Aviso de propuesta">
+  <div class="ancho propuesta__in">
+    <p class="propuesta__q">Propuesta de sitio web — preparada para <b>Caracol Ñuñoa Centro</b> por CristalWeb</p>
+    <p class="propuesta__d">
+      <span class="dato">3.900 reseñas</span> y ni una web: un caracol entero de locales sin una página
+      que diga qué hay adentro ni a qué hora abre.
+    </p>
+  </div>
+</aside>
+
+<!-- ═══════════ CABECERA ═══════════ -->
+<!-- Sólida siempre. Es sticky en flujo normal: queda ARRIBA de la portada y no
+     encima, así que transparentarla no gana nada y sí puede dejar el texto sin
+     fondo al scrollear. -->
+<header class="cab" id="cab">
+  <div class="ancho cab__in">
+    <a class="cab__marca" href="#portada">
+      <span class="marca__niveles" aria-hidden="true">
+        <span class="marca__n"></span>
+        <span class="marca__n"></span>
+        <span class="marca__n"></span>
+        <span class="marca__n"></span>
+      </span>
+      <span class="cab__txt">Caracol Ñuñoa Centro<span class="cab__sub">Ñuñoa · Pedro de Valdivia</span></span>
+    </a>
+    <nav class="cab__nav" aria-label="Secciones">
+      <a href="#pisos">Qué hay en cada piso</a>
+      <a href="#horario">Horario y cómo llegar</a>
+      <a href="#locatarios">Para los locatarios</a>
+      <a class="cab__tel" href="https://wa.me/56940657055" target="_blank" rel="noopener noreferrer">9 4065 7055</a>
+    </nav>
+  </div>
+</header>
+
+<!-- ═══════════ PORTADA ═══════════ -->
+<section class="portada" id="portada" aria-labelledby="t-portada">
+
+  <!-- ESCENA: la rampa sube y se encienden los cuatro pisos.
+       Una hélice de tres vueltas (320 × 380, generada punto a punto: es la
+       proyección axonométrica de x = cx + rx·cos t, y = base − k·t + ry·sin t)
+       se dibuja de abajo hacia arriba con stroke-dashoffset en 1,6 s, y cada
+       vez que pasa por un nivel se enciende el letrero de neón de ese piso
+       (opacidad 0→1 en 0,25 s). Cuatro pisos, cuatro letreros. No hay reposo:
+       pasa una vez y queda encendido. Con menos movimiento arranca dibujada y
+       con los cuatro letreros prendidos. -->
+  <div class="escena" aria-hidden="true">
+    <svg viewBox="0 0 320 380" class="escena__svg" role="presentation" focusable="false">
+      <!-- las cuatro losas: elipses en la misma proyección que la hélice -->
+      <g class="es-losa">
+        <ellipse cx="158" cy="336" rx="112" ry="26"/>
+        <ellipse cx="158" cy="246" rx="112" ry="26"/>
+        <ellipse cx="158" cy="156" rx="112" ry="26"/>
+        <ellipse cx="158" cy="66"  rx="112" ry="26"/>
+      </g>
+      <!-- la rampa -->
+      <path class="es-rampa" d="M 270 336 L 268.6 337.8 L 264.5 339.5 L 257.8 341.1 L 248.6 342.3 L 237.2 343.1 L 223.8 343.5 L 208.8 343.4 L 192.6 342.7 L 175.5 341.4 L 158 339.5 L 140.5 336.9 L 123.4 333.7 L 107.2 329.9 L 92.2 325.5 L 78.8 320.6 L 67.4 315.3 L 58.2 309.6 L 51.5 303.5 L 47.4 297.3 L 46 291 L 47.4 284.7 L 51.5 278.5 L 58.2 272.4 L 67.4 266.7 L 78.8 261.4 L 92.2 256.5 L 107.2 252.1 L 123.4 248.3 L 140.5 245.1 L 158 242.5 L 175.5 240.6 L 192.6 239.3 L 208.8 238.6 L 223.8 238.5 L 237.2 238.9 L 248.6 239.7 L 257.8 240.9 L 264.5 242.5 L 268.6 244.2 L 270 246 L 268.6 247.8 L 264.5 249.5 L 257.8 251.1 L 248.6 252.3 L 237.2 253.1 L 223.8 253.5 L 208.8 253.4 L 192.6 252.7 L 175.5 251.4 L 158 249.5 L 140.5 246.9 L 123.4 243.7 L 107.2 239.9 L 92.2 235.5 L 78.8 230.6 L 67.4 225.3 L 58.2 219.6 L 51.5 213.5 L 47.4 207.3 L 46 201 L 47.4 194.7 L 51.5 188.5 L 58.2 182.4 L 67.4 176.7 L 78.8 171.4 L 92.2 166.5 L 107.2 162.1 L 123.4 158.3 L 140.5 155.1 L 158 152.5 L 175.5 150.6 L 192.6 149.3 L 208.8 148.6 L 223.8 148.5 L 237.2 148.9 L 248.6 149.7 L 257.8 150.9 L 264.5 152.5 L 268.6 154.2 L 270 156 L 268.6 157.8 L 264.5 159.5 L 257.8 161.1 L 248.6 162.3 L 237.2 163.1 L 223.8 163.5 L 208.8 163.4 L 192.6 162.7 L 175.5 161.4 L 158 159.5 L 140.5 156.9 L 123.4 153.7 L 107.2 149.9 L 92.2 145.5 L 78.8 140.6 L 67.4 135.3 L 58.2 129.6 L 51.5 123.5 L 47.4 117.3 L 46 111 L 47.4 104.7 L 51.5 98.5 L 58.2 92.4 L 67.4 86.7 L 78.8 81.4 L 92.2 76.5 L 107.2 72.1 L 123.4 68.3 L 140.5 65.1 L 158 62.5 L 175.5 60.6 L 192.6 59.3 L 208.8 58.6 L 223.8 58.5 L 237.2 58.9 L 248.6 59.7 L 257.8 60.9 L 264.5 62.5 L 268.6 64.2 L 270 66"/>
+      <!-- los cuatro letreros de neón, uno por nivel -->
+      <g class="es-neones">
+        <rect class="es-neon" x="128" y="353" width="60" height="8" rx="4"/>
+        <rect class="es-neon" x="128" y="263" width="60" height="8" rx="4"/>
+        <rect class="es-neon" x="128" y="173" width="60" height="8" rx="4"/>
+        <rect class="es-neon" x="128" y="83"  width="60" height="8" rx="4"/>
+      </g>
+    </svg>
+  </div>
+
+  <div class="ancho portada__in">
+    <p class="rotulo">Ñuñoa · 3.900 reseñas</p>
+    <h1 class="portada__h1" id="t-portada">
+      Todo el mundo sabe dónde está.<br>
+      <span class="portada__h1-b">Nadie sabe qué hay adentro.</span>
+    </h1>
+    <p class="portada__bajada">
+      Un caracol se camina entero o no se camina. Falta la página que diga los rubros por nivel,
+      el horario y por dónde se entra: tres cosas que hoy no están escritas en ninguna parte.
+    </p>
+    <p class="portada__acc">
+      <a class="boton" href="#pisos">Ver qué hay en cada piso</a>
+      <a class="boton boton--linea" href="https://wa.me/56940657055" target="_blank" rel="noopener noreferrer">Escribir por WhatsApp</a>
+    </p>
+    <dl class="specs">
+      <div><dt>Reseñas en Google</dt><dd>3.900</dd></div>
+      <div><dt>Locales</dt><dd class="ej" data-ejemplo="lo publican directorios de terceros; lo confirma la administración">141</dd></div>
+      <div><dt>Páginas propias</dt><dd>0</dd></div>
+    </dl>
+  </div>
+</section>
+
+<!-- ═══════════ FRANJA ═══════════ -->
+<figure class="tajo" aria-label="Rampas de hormigón">
+  <img src="imagenes/tajo-01.jpg" width="2200" height="943" fetchpriority="high" decoding="async"
+       alt="Rampas de hormigón que suben en curva, una encima de otra, vistas desde abajo.">
+</figure>
+
+<!-- ═══════════ CIFRAS ═══════════ -->
+<section class="cifras" aria-label="Las cifras">
+  <div class="ancho cifras__grid">
+    <div class="cifra">
+      <p class="cifra__n">3.900</p>
+      <p class="cifra__t">reseñas en Google, contadas el 27-08-2026. La nota no se muestra: acá la cifra que manda es el volumen, y es la más grande de toda esta tanda</p>
+    </div>
+    <div class="cifra">
+      <p class="cifra__n">141</p>
+      <p class="cifra__t"><span class="ej" data-ejemplo="lo publican directorios de terceros; lo confirma la administración">locales</span> repartidos en el edificio. El número lo publican directorios de terceros, no el caracol</p>
+    </div>
+    <div class="cifra">
+      <p class="cifra__n">2</p>
+      <p class="cifra__t">cuentas de Instagram vivas con su nombre, verificadas el 11-09-2026. Ninguna de las dos lleva a una página del caracol</p>
+    </div>
+    <div class="cifra cifra--cero">
+      <p class="cifra__n">0</p>
+      <p class="cifra__t">dominios registrados con su nombre. Probamos cuatro en NIC Chile el 11-09-2026 y ninguno existe</p>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════ PIEZA FIRMA: QUÉ HAY EN CADA PISO ═══════════ -->
+<section class="pisos" id="pisos" aria-labelledby="t-pisos">
+  <div class="ancho">
+    <p class="rotulo">La pregunta de la vereda</p>
+    <h2 class="titulo" id="t-pisos">¿Qué hay adentro y en qué piso?</h2>
+    <p class="entradilla">
+      Éste es el corte del caracol: cuatro niveles y la rampa que los une. Al lado, lo que se
+      encuentra en cada uno. Los rubros van marcados como ejemplo a propósito — son los de un
+      caracol de barrio, no la lista de éste. Esa la tiene la administración y se escribe en diez
+      minutos. <b>No hay nombres de locales</b>: poner uno que no nos dieron sería inventarlo.
+    </p>
+
+    <div class="corte-caja">
+      <!-- El corte se dibuja acá mismo: sin librería, sin imagen y sin peso.
+           Las bandas del SVG y los ítems de la lista comparten el mismo
+           data-piso, que es lo que el JS usa para encender el nivel cuando el
+           cursor —o el teclado— pasa por la lista. Sin JS no se pierde nada:
+           el corte se ve completo y la lista está escrita entera. -->
+      <svg viewBox="0 0 440 480" class="corte" role="img" aria-labelledby="t-corte">
+        <title id="t-corte">Corte del caracol con cuatro niveles: en el primero ropa, calzado y bazar; en el segundo uñas, peluquería y estética; en el tercero arreglos de ropa, zapatería y llaves; en el cuarto comida, impresión y oficinas.</title>
+
+        <rect class="cx-muro" x="14" y="14" width="412" height="452" rx="4"/>
+
+        <g class="cx-nivel" data-piso="1">
+          <rect class="cx-losa" x="30" y="368" width="332" height="84" rx="3"/>
+          <rect class="cx-neon" x="30" y="368" width="6" height="84"/>
+          <text class="cx-num" x="52" y="400">N1</text>
+          <text class="cx-rot" x="52" y="424">calle</text>
+          <g class="cx-locales">
+            <rect x="140" y="384" width="38" height="52" rx="2"/>
+            <rect x="182" y="384" width="38" height="52" rx="2"/>
+            <rect x="224" y="384" width="38" height="52" rx="2"/>
+            <rect x="266" y="384" width="38" height="52" rx="2"/>
+            <rect x="308" y="384" width="38" height="52" rx="2"/>
+          </g>
+        </g>
+
+        <g class="cx-nivel" data-piso="2">
+          <rect class="cx-losa" x="30" y="272" width="332" height="84" rx="3"/>
+          <rect class="cx-neon" x="30" y="272" width="6" height="84"/>
+          <text class="cx-num" x="52" y="304">N2</text>
+          <text class="cx-rot" x="52" y="328">belleza</text>
+          <g class="cx-locales">
+            <rect x="140" y="288" width="38" height="52" rx="2"/>
+            <rect x="182" y="288" width="38" height="52" rx="2"/>
+            <rect x="224" y="288" width="38" height="52" rx="2"/>
+            <rect x="266" y="288" width="38" height="52" rx="2"/>
+            <rect x="308" y="288" width="38" height="52" rx="2"/>
+          </g>
+        </g>
+
+        <g class="cx-nivel" data-piso="3">
+          <rect class="cx-losa" x="30" y="176" width="332" height="84" rx="3"/>
+          <rect class="cx-neon" x="30" y="176" width="6" height="84"/>
+          <text class="cx-num" x="52" y="208">N3</text>
+          <text class="cx-rot" x="52" y="232">oficios</text>
+          <g class="cx-locales">
+            <rect x="140" y="192" width="38" height="52" rx="2"/>
+            <rect x="182" y="192" width="38" height="52" rx="2"/>
+            <rect x="224" y="192" width="38" height="52" rx="2"/>
+            <rect x="266" y="192" width="38" height="52" rx="2"/>
+            <rect x="308" y="192" width="38" height="52" rx="2"/>
+          </g>
+        </g>
+
+        <g class="cx-nivel" data-piso="4">
+          <rect class="cx-losa" x="30" y="80" width="332" height="84" rx="3"/>
+          <rect class="cx-neon" x="30" y="80" width="6" height="84"/>
+          <text class="cx-num" x="52" y="112">N4</text>
+          <text class="cx-rot" x="52" y="136">servicios</text>
+          <g class="cx-locales">
+            <rect x="140" y="96" width="38" height="52" rx="2"/>
+            <rect x="182" y="96" width="38" height="52" rx="2"/>
+            <rect x="224" y="96" width="38" height="52" rx="2"/>
+            <rect x="266" y="96" width="38" height="52" rx="2"/>
+            <rect x="308" y="96" width="38" height="52" rx="2"/>
+          </g>
+        </g>
+
+        <!-- La rampa va en su propia columna a la derecha y DESPUÉS de los
+             niveles, o sea encima: dibujada antes, las losas blancas la tapaban
+             y el recorrido no se leía. Es la ida y vuelta de un caracol de
+             verdad, que no sube derecho sino en zigzag. -->
+        <g class="cx-rampa-g">
+          <path class="cx-rampa" d="M 372 452 L 410 452 L 410 410 L 372 410 L 372 368 L 410 368 L 410 314 L 372 314 L 372 272 L 410 272 L 410 218 L 372 218 L 372 176 L 410 176 L 410 122 L 372 122 L 372 80"/>
+        </g>
+
+        <!-- Los dos rótulos van cortos a propósito: en la versión larga el de
+             la izquierda medía 63 caracteres del mono y se pegaba con el de la
+             derecha dentro del viewBox. El aviso completo está en el texto de
+             arriba, que es donde se lee de verdad. -->
+        <text class="cx-pie" x="30" y="52">Corte de ejemplo · lo confirma la administración</text>
+        <text class="cx-pie cx-pie--r" x="410" y="52">rampa</text>
+      </svg>
+
+      <ol class="niveles" reversed>
+        <li class="nivel" data-piso="4">
+          <p class="nivel__t"><span class="nivel__n">N4</span> Comida y servicios</p>
+          <p class="ej" data-ejemplo="lo confirma la administración">Comida al paso y café, fotocopias e impresión, y oficinas chicas de atención.</p>
+        </li>
+        <li class="nivel" data-piso="3">
+          <p class="nivel__t"><span class="nivel__n">N3</span> Oficios y arreglos</p>
+          <p class="ej" data-ejemplo="lo confirma la administración">Arreglos de ropa y costura, zapatería y compostura de calzado, llaves y cerrajería.</p>
+        </li>
+        <li class="nivel" data-piso="2">
+          <p class="nivel__t"><span class="nivel__n">N2</span> Belleza</p>
+          <p class="ej" data-ejemplo="lo confirma la administración">Uñas y manicure, peluquería y barbería, estética y cosmética.</p>
+        </li>
+        <li class="nivel" data-piso="1">
+          <p class="nivel__t"><span class="nivel__n">N1</span> Calle</p>
+          <p class="ej" data-ejemplo="lo confirma la administración">Ropa y calzado, celulares y accesorios, bazar y regalos: lo que se ve desde la vereda.</p>
+        </li>
+      </ol>
+    </div>
+
+    <div class="locatarios-mini">
+      <h3>Y debajo de cada rubro, el local</h3>
+      <p class="mini">
+        La página de verdad lleva, por cada local: nombre, nivel, número de local, qué hace y su
+        WhatsApp. Eso es lo que convierte un directorio en algo que la gente guarda en el teléfono.
+        Hoy ese dato existe —lo tiene la administración en una planilla— y no está publicado en
+        ninguna parte.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════ HORARIO Y CÓMO LLEGAR ═══════════ -->
+<section class="horario" id="horario" aria-labelledby="t-horario">
+  <div class="ancho">
+    <p class="rotulo">Lo que más se busca y menos se encuentra</p>
+    <h2 class="titulo titulo--chico" id="t-horario">A qué hora abre y por dónde se entra.</h2>
+    <div class="horario__grid">
+      <div class="horario__caja">
+        <p class="horario__et">Lunes a viernes</p>
+        <p class="horario__h"><span class="ej" data-ejemplo="lo publican directorios de terceros; lo confirma la administración">09:00 — 20:00</span></p>
+      </div>
+      <div class="horario__caja">
+        <p class="horario__et">Sábado</p>
+        <p class="horario__h"><span class="ej" data-ejemplo="lo publican directorios de terceros; lo confirma la administración">10:00 — 15:00</span></p>
+      </div>
+      <div class="horario__caja horario__caja--dom">
+        <p class="horario__et">Domingo</p>
+        <p class="horario__h horario__h--chico"><span class="ej" data-ejemplo="no lo pudimos verificar; lo confirma la administración">por confirmar</span></p>
+      </div>
+    </div>
+    <dl class="datos datos--anchos">
+      <div><dt>Dirección</dt><dd class="ej" data-ejemplo="la publican directorios de terceros; la confirma la administración">Av. Pedro de Valdivia 3462, Ñuñoa</dd></div>
+      <div><dt>Metro</dt><dd class="ej" data-ejemplo="lo publican directorios de terceros; lo confirma la administración">Ñuñoa (Línea 3), al frente</dd></div>
+      <div><dt>Niveles</dt><dd class="ej" data-ejemplo="lo confirma la administración">cuatro</dd></div>
+      <div><dt>Teléfono</dt><dd><a href="tel:+56940657055">9 4065 7055</a></dd></div>
+    </dl>
+    <p class="mini">
+      Los tres primeros datos salen de directorios de terceros (fichas de mapas y guías
+      comerciales), <b>no del caracol</b>, y por eso van marcados. Es exactamente el problema que
+      esta página resuelve: hoy el horario de un edificio con 3.900 reseñas depende de lo que
+      alguien más anotó alguna vez.
+    </p>
+  </div>
+</section>
+
+<!-- ═══════════ MITADES: EL EDIFICIO ═══════════ -->
+<section class="mitades" id="edificio" aria-labelledby="t-edificio">
+  <figure class="mitades__foto">
+    <img src="imagenes/mit-01.jpg" width="1600" height="2000" loading="lazy" decoding="async"
+         alt="Escalera caracol de hormigón vista desde arriba, enrollada sobre sí misma.">
+  </figure>
+  <div class="mitades__texto">
+    <p class="rotulo">Un edificio, muchos negocios</p>
+    <h2 class="titulo titulo--chico" id="t-edificio">Ciento cuarenta y una puertas, una sola dirección.</h2>
+    <p>
+      Un caracol no es una tienda grande: son decenas de negocios independientes que comparten un
+      pasillo. Cada uno vende lo suyo y ninguno puede pagarse una página solo. La página del
+      edificio sirve a los <span class="ej" data-ejemplo="lo publican directorios de terceros; lo confirma la administración">141</span> al mismo tiempo,
+      y es la única que puede contestar la pregunta con la que llega la gente: <b>¿acá lo tienen?</b>
+    </p>
+    <dl class="datos">
+      <div><dt>Comuna</dt><dd>Ñuñoa</dd></div>
+      <div><dt>Reseñas en Google</dt><dd>3.900</dd></div>
+      <div><dt>Instagram</dt><dd>dos cuentas vivas</dd></div>
+      <div><dt>Sitio propio</dt><dd>no tiene</dd></div>
+    </dl>
+    <p class="mini">
+      La foto es de banco y no es de este caracol: está por la forma, que es la del nombre.
+    </p>
+  </div>
+</section>
+
+<!-- ═══════════ CITA ═══════════ -->
+<figure class="cita" aria-label="Sobre las reseñas">
+  <img src="imagenes/cita-01.jpg" width="2200" height="1237" loading="lazy" decoding="async" alt="">
+  <blockquote class="cita__q">
+    <p>«Tres mil novecientas personas escribieron cómo les fue acá adentro.<br>
+      Ninguna de esas opiniones lleva a una página del caracol.»</p>
+  </blockquote>
+</figure>
+
+<!-- ═══════════ PARA LOS LOCATARIOS ═══════════ -->
+<section class="locatarios con-telon" id="locatarios" aria-labelledby="t-locatarios">
+  <div class="telon" aria-hidden="true">
+    <img src="imagenes/telon-01.jpg" width="1200" height="1600" loading="lazy" decoding="async" alt="">
+  </div>
+  <div class="ancho">
+    <p class="rotulo rotulo--claro">Para los locatarios</p>
+    <h2 class="titulo titulo--claro" id="t-locatarios">Cómo aparece un local acá.</h2>
+    <p class="entradilla entradilla--clara">
+      Ésta es la parte que le interesa a la administración: la página no es un folleto del
+      edificio, es un lugar donde cada local tiene su línea. Y la línea se llena en una vuelta al
+      pasillo con el teléfono en la mano.
+    </p>
+    <ol class="pasos">
+      <li><b>Una vuelta con la libreta.</b> Nivel, número de local, nombre, rubro y WhatsApp. Cinco datos por local; con eso la página queda completa el mismo día.</li>
+      <li><b>Una foto por local.</b> La de la vitrina, tomada con el teléfono. No hace falta fotógrafo: la gente quiere reconocer la cortina que ya vio al pasar.</li>
+      <li><b>Quien se cambia, se edita.</b> En un caracol los locales rotan. La página se corrige en minutos, y esa es la diferencia con un letrero impreso en la entrada.</li>
+    </ol>
+    <p class="mini mini--claro">
+      No hay precios ni promesas de plazo en esta página: no nos los dieron, y publicarlos sería
+      inventarlos. Lo que sí está escrito es lo que se necesita para llenarla.
+    </p>
+  </div>
+</section>
+
+<!-- ═══════════ MOSAICO ═══════════ -->
+<section class="mos" aria-label="Los rubros de un caracol">
+  <div class="mos__grilla">
+    <figure class="mos__p"><img src="imagenes/mos1-01.jpg" width="1200" height="1600" loading="lazy" decoding="async" alt="Percheros con ropa colgada en un local chico de paredes de ladrillo."></figure>
+    <figure class="mos__p"><img src="imagenes/mos2-01.jpg" width="1200" height="1600" loading="lazy" decoding="async" alt="Decenas de frascos de esmalte de uñas ordenados en filas."></figure>
+    <figure class="mos__p"><img src="imagenes/mos3-01.jpg" width="1200" height="1600" loading="lazy" decoding="async" alt="Sillón de peluquería frente a un espejo con luces, sin nadie sentado."></figure>
+    <figure class="mos__p"><img src="imagenes/mos4-01.jpg" width="1200" height="1600" loading="lazy" decoding="async" alt="Un tablero lleno de llaves colgadas en ganchos."></figure>
+    <figure class="mos__p"><img src="imagenes/mos5-01.jpg" width="1200" height="1600" loading="lazy" decoding="async" alt="Carretes de hilo de colores y una tijera de sastre sobre una mesa de madera."></figure>
+    <figure class="mos__p"><img src="imagenes/mos6-01.jpg" width="1200" height="1600" loading="lazy" decoding="async" alt="Bandeja con berlines, croissants y masas dulces recién horneadas."></figure>
+  </div>
+  <p class="mos__pie ancho">
+    Estas seis fotos son de bancos de uso libre y <b>no son del Caracol Ñuñoa Centro</b>. Están para
+    mostrar de qué rubros habla la página —ropa, uñas, peluquería, llaves, arreglos y comida—, que
+    son los típicos de un caracol de barrio. Las de verdad las tienen los locatarios y son mejores.
+  </p>
+</section>
+
+<!-- ═══════════ CONTACTO ═══════════ -->
+<section class="contacto" id="contacto" aria-labelledby="t-contacto">
+  <div class="ancho contacto__cols">
+    <div>
+      <p class="rotulo">Escribir</p>
+      <h2 class="titulo" id="t-contacto">¿Acá lo tienen?</h2>
+      <p class="entradilla">
+        Ésa es la pregunta con la que llega la gente. El número que aparece en la ficha de Google es
+        celular, así que recibe WhatsApp; puede ser el de la administración y no el de un local en
+        particular, y así lo decimos.
+      </p>
+      <p class="contacto__num"><a href="https://wa.me/56940657055" target="_blank" rel="noopener noreferrer">+56 9 4065 7055</a></p>
+      <p class="contacto__redes">
+        En Instagram hay dos cuentas vivas a su nombre:
+        <a href="https://www.instagram.com/caracol_nunoa/" target="_blank" rel="noopener noreferrer">@caracol_nunoa</a> y
+        <a href="https://www.instagram.com/caracolnunoacentro/" target="_blank" rel="noopener noreferrer">@caracolnunoacentro</a>.
+        Ninguna de las dos lleva a una página del caracol, y entre las dos reparten el público en vez de sumarlo.
+      </p>
+    </div>
+    <dl class="datos">
+      <div><dt>Teléfono</dt><dd><a href="tel:+56940657055">9 4065 7055</a></dd></div>
+      <div><dt>Comuna</dt><dd>Ñuñoa</dd></div>
+      <div><dt>Dirección</dt><dd class="ej" data-ejemplo="la publican directorios de terceros; la confirma la administración">Av. Pedro de Valdivia 3462</dd></div>
+      <div><dt>Horario</dt><dd class="ej" data-ejemplo="lo publican directorios de terceros; lo confirma la administración">lu a vi 09:00–20:00</dd></div>
+      <div><dt>En Google</dt><dd>3.900 reseñas (27-08-2026)</dd></div>
+      <div><dt>Sitio propio</dt><dd>ninguno (NIC Chile, 11-09-2026)</dd></div>
+    </dl>
+  </div>
+      <figure class="mapa">
+        <img src="imagenes/mapa-01.jpg" width="768" height="768" loading="lazy" decoding="async"
+             alt="Mapa con la ubicación de Avenida Pedro de Valdivia 3462, Ñuñoa.">
+        <figcaption class="mapa__pie">
+          <span><b>Av. Pedro de Valdivia 3462, Ñuñoa</b>. La dirección la publican directorios de terceros; la confirma la administración.</span>
+          <span class="mapa__cred">Mapa: &copy; <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener">OpenStreetMap</a></span>
+        </figcaption>
+      </figure>
+</section>
+
+<!-- ═══════════ PARA EL DUEÑO ═══════════ -->
+<section class="dueno" aria-labelledby="t-dueno">
+  <div class="ancho">
+    <p class="rotulo rotulo--claro">Para la administración</p>
+    <h2 class="titulo titulo--claro" id="t-dueno">Qué es esto y qué no.</h2>
+    <div class="dueno__cols">
+      <div>
+        <h3>Qué es</h3>
+        <p>Una propuesta de sitio web hecha por nuestra cuenta. El Caracol Ñuñoa Centro no la
+          encargó ni la ha revisado. Dimos por cierto sólo lo que ya es público: las 3.900 reseñas
+          de su ficha de Google, el celular y las dos cuentas de Instagram.</p>
+      </div>
+      <div>
+        <h3>Lo del dominio</h3>
+        <p>El 11-09-2026 consultamos NIC Chile por cuatro dominios con su nombre y <b>ninguno de los
+          cuatro existe</b>. El único caracol de la comuna que sí aparece con sitio propio es otro
+          —el de Irarrázaval—, que no tiene relación con éste: revisamos su página entera y no
+          nombra Pedro de Valdivia ni este teléfono.</p>
+      </div>
+      <div>
+        <h3>Qué es ejemplo</h3>
+        <p>Los rubros de cada nivel, el número de locales, el horario y la dirección. Todo va con
+          línea punteada. El horario, la dirección y los 141 locales salen de directorios de
+          terceros, no del caracol. <b>No hay precios ni nombres de locales a propósito</b>.</p>
+      </div>
+    </div>
+    <p class="dueno__cierre">
+      <a class="flecha flecha--fuerte" href="https://wa.me/56968650001" rel="noopener">Escribirme por WhatsApp <span aria-hidden="true">→</span></a>
+      <a class="flecha" href="mailto:cristalwebcl@gmail.com">cristalwebcl@gmail.com</a>
+      <a class="flecha" href="https://cristalwebcl.github.io/cristalweb/" rel="noopener">Ver otros trabajos <span aria-hidden="true">→</span></a>
+    </p>
+  </div>
+</section>
+
+<footer class="pie">
+  <div class="ancho pie__in">
+    <p>Demostración sin encargo, preparada por <b>CristalWeb</b> — desarrollo web desde Loncoche.<br>
+      Las fotografías son de bancos de uso libre y no corresponden al Caracol Ñuñoa Centro.</p>
+    <p class="pie__leg">Esta página tiene fines comerciales. Los rubros por nivel, el número de locales, el horario y la dirección son referencia y provienen de terceros, no de información confirmada por la administración del caracol.</p>
+  </div>
+</footer>
+
+
+<!-- ══ BOTON FLOTANTE DE CONTACTO ══════════════════════════════════
+     Escrito en el HTML y VISIBLE por defecto: si el script no arranca,
+     el boton igual esta. El JS solo lo aparta mientras se mira la
+     portada, para no tapar el titular. Icono de simple-icons (CC0),
+     incrustado: la CSP no deja pedir nada a un tercero. -->
+<a class="flota flota--wa" href="https://wa.me/56940657055?text=Hola%2C%20vi%20la%20pagina%20y%20quiero%20consultar." target="_blank" rel="noopener" aria-label="Escribir por WhatsApp al Caracol Ñuñoa Centro">
+  <svg class="flota__i" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"/></svg>
+  <span class="flota__t">WhatsApp</span>
+</a>
+<script src="js/main.js"></script>
+</body>
+</html>

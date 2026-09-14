@@ -1,0 +1,22 @@
+FUENTES DE LAS IMAGENES - Cabello y Colores Rehecha el 13-09-2026 (presentacion antes que texto). Fotos de REFERENCIA de bancos libres: ninguna es del local; las verdaderas las tiene que mandar el negocio. 
+port-01.jpg  <-  pozo-p-cyc-salon\011.jpg  |  pexels (Pexels License)  |  autor: adriana ramos  |  https://www.pexels.com/es-es/foto/sillon-de-salon-tapizado-vintage-en-un-entorno-acogedor-30865581/  |  consulta: "hair salon chair mirror"
+hund1-01.jpg  <-  pozo-p-cyc-balayage\003.jpg  |  pexels (Pexels License)  |  autor: Adrianna CA  |  https://www.pexels.com/es-es/foto/mujer-flores-jardin-parque-23384615/  |  consulta: "balayage hair"
+hund2-01.jpg  <-  pozo-p-cyc-tijera\003.jpg  |  pexels (Pexels License)  |  autor: Cleber wendder  Nascimento  |  https://www.pexels.com/es-es/foto/toalla-tijeras-peine-tiro-vertical-7465903/  |  consulta: "hairdresser scissors comb"
+hund3-01.jpg  <-  pozo-p-cyc-plancha\012.jpg  |  pexels (Pexels License)  |  autor: Beyzanur K.  |  https://www.pexels.com/es-es/foto/como-peinar-el-cabello-largo-y-pelirrojo-con-plancha-en-interiores-28994568/  |  consulta: "hair straightener"
+hund4-01.jpg  <-  pozo-p-cyc-tinte\005.jpg  |  pexels (Pexels License)  |  autor: Nataliya Vaitkevich  |  https://www.pexels.com/es-es/foto/herramientas-naturaleza-muerta-plastico-color-de-pelo-8468156/  |  consulta: "hair dye brush bowl"
+hund5-01.jpg  <-  pozo-p-cyc-salon\007.jpg  |  pexels (Pexels License)  |  autor: cottonbro studio  |  https://www.pexels.com/es-es/foto/reflejo-reflexion-peinado-preparacion-3992850/  |  consulta: "hair salon chair mirror"
+hund6-01.jpg  <-  pozo-p-cyc-salon\006.jpg  |  pexels (Pexels License)  |  autor: Ron Lach  |  https://www.pexels.com/es-es/foto/interior-espejo-reflejar-sillon-10317450/  |  consulta: "hair salon chair mirror"
+banda-01.jpg  <-  pozo-p-cyc-salon\005.jpg  |  pexels (Pexels License)  |  autor: Ron Lach  |  https://www.pexels.com/es-es/foto/negocio-belleza-espacio-para-texto-copy-space-10317447/  |  consulta: "hair salon chair mirror"
+cita-01.jpg  <-  pozo-p-cyc-tinte\009.jpg  |  pexels (Pexels License)  |  autor: John Diez  |  https://www.pexels.com/es-es/foto/mujer-pincel-cepillo-cepillar-7388919/  |  consulta: "hair dye brush bowl"
+mos1-01.jpg  <-  pozo-p-cyc-balayage\007.jpg  |  pexels (Pexels License)  |  autor: Lyn [Lynbot] Michelle  |  https://www.pexels.com/es-es/foto/mujer-cabellos-melena-pelo-6391646/  |  consulta: "balayage hair"
+mos2-01.jpg  <-  pozo-p-cyc-tinte\002.jpg  |  pexels (Pexels License)  |  autor: Nataliya Vaitkevich  |  https://www.pexels.com/es-es/foto/pincel-cepillo-cepillar-bol-8468131/  |  consulta: "hair dye brush bowl"
+mos3-01.jpg  <-  pozo-p-cyc-muestras\010.jpg  |  pexels (Pexels License)  |  autor: Nataliya Vaitkevich  |  https://www.pexels.com/es-es/foto/herramientas-cabellos-melena-pelo-8468142/  |  consulta: "hair color swatches"
+mos4-01.jpg  <-  pozo-p-cyc-plancha\010.jpg  |  pexels (Pexels License)  |  autor: Nataliya Vaitkevich  |  https://www.pexels.com/es-es/foto/cabellos-melena-pelo-cabello-8467976/  |  consulta: "hair straightener"
+mos5-01.jpg  <-  pozo-p-cyc-lavado\006.jpg  |  pexels (Pexels License)  |  autor: Polina Tankilevitch  |  https://www.pexels.com/es-es/foto/fregadero-de-ceramica-en-peluqueria-3736523/  |  consulta: "hair wash basin salon"
+mos6-01.jpg  <-  pozo-p-cyc-tijera\012.jpg  |  pexels (Pexels License)  |  autor: Alina Skazka  |  https://www.pexels.com/es-es/foto/moda-creativo-pincel-cepillo-18614265/  |  consulta: "hairdresser scissors comb"
+
+BRUMA (bruma-pag-0N.png y bruma-osc-0N.png, 30x20): las MISMAS fotos, recortadas a 3:2, reducidas y
+recoloreadas con C:\devs\demos\hacer-bruma.ps1 (clara >= 0,68 de luminancia / oscura <= 0,05). No suman fuentes.
+    pagina: port-01.jpg, hund1-01.jpg, hund4-01.jpg, hund6-01.jpg, banda-01.jpg, cita-01.jpg, mos1-01.jpg, mos5-01.jpg   |   oscuras: port-01.jpg, banda-01.jpg, hund6-01.jpg
+
+MAPA: iframe de Google Maps (embed publico, sin clave). No hay imagen de mapa.

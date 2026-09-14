@@ -10,8 +10,15 @@ que las otras tres juntas.**
    tres cuartos, cocida), la sección firma queda imbatible.
    Horizontal, >=1600 px.
 2. **La parrilla cargada trabajando**, con el humo real.
-3. **Una parrillada servida en la mesa**, la de cuatro personas.
-4. **La fachada de noche**, para reconocer el local.
+3. **La carta de madera, de frente.** Hay un hueco punteado esperándola
+   en la sección «La carta, que hoy sólo existe en madera». El
+   09-09-2026 se sacó de ahí una foto de una carta que **no es de este
+   negocio**: era la de otro «Los Troncos», mexicano, con quesadillas al
+   pastor y precios en pesos. Horizontal, ≥1600 px, con luz de día y sin
+   flash para que no se refleje el barniz. Y la misma lista pasada a
+   texto, que es lo que de verdad se busca.
+4. **Una parrillada servida en la mesa**, la de cuatro personas.
+5. **La fachada de noche**, para reconocer el local.
 
 ## Lo que NO sirve
 

@@ -1,0 +1,22 @@
+FUENTES DE LAS IMAGENES - Ahorro LED Rehecha el 13-09-2026 (presentacion antes que texto). Fotos de REFERENCIA de bancos libres: ninguna es del local; las verdaderas las tiene que mandar el negocio. 
+port-01.jpg  <-  pozo-p-led-bombillas\009.jpg  |  pexels (Pexels License)  |  autor: Alexas Fotos  |  https://www.pexels.com/es-es/foto/luces-vaso-cristal-vidrio-7311907/  |  consulta: "light bulbs hanging dark"
+hund1-01.jpg  <-  pozo-p-led-ampolleta\002.jpg  |  pexels (Pexels License)  |  autor: MEHEDI HASAN  |  https://www.pexels.com/es-es/foto/ligero-idea-bombilla-sujetando-11605252/  |  consulta: "led bulb"
+hund2-01.jpg  <-  pozo-p-led-panel\008.jpg  |  pexels (Pexels License)  |  autor: Viaceslav Kat  |  https://www.pexels.com/es-es/foto/mesa-habitacion-sillas-adentro-10758464/  |  consulta: "recessed ceiling light"
+hund3-01.jpg  <-  pozo-p-led-tira\005.jpg  |  pexels (Pexels License)  |  autor: Muhtelifane  |  https://www.pexels.com/es-es/foto/estanteria-contemporanea-con-decoracion-elegante-y-iluminacion-37148747/  |  consulta: "led strip light"
+hund4-01.jpg  <-  pozo-p-led-exterior\006.jpg  |  pexels (Pexels License)  |  autor: Rahela Ulici  |  https://www.pexels.com/es-es/foto/lampara-de-pared-nocturna-con-ambiente-tenue-y-sombras-39332593/  |  consulta: "outdoor wall lamp night"
+hund5-01.jpg  <-  pozo-p-led-cable\001.jpg  |  pexels (Pexels License)  |  autor: Nic Wood  |  https://www.pexels.com/es-es/foto/alambre-de-cobre-28286039/  |  consulta: "electrical wires cables"
+hund6-01.jpg  <-  pozo-p-led-colgante\001.jpg  |  pexels (Pexels License)  |  autor: Rulo Mora  |  https://www.pexels.com/es-es/foto/ligero-lamparas-ventanas-colgando-14161062/  |  consulta: "pendant lamp"
+banda-01.jpg  <-  pozo-p-led-tienda\005.jpg  |  pexels (Pexels License)  |  autor: ROMAN ODINTSOV  |  https://www.pexels.com/es-es/foto/luces-lamparas-adentro-colgando-5859146/  |  consulta: "lighting store lamps"
+cita-01.jpg  <-  pozo-p-led-bombillas\011.jpg  |  pexels (Pexels License)  |  autor: Val Kilmer Donadillo  |  https://www.pexels.com/es-es/foto/oscuro-colgando-brillante-bombillas-11236658/  |  consulta: "light bulbs hanging dark"
+mos1-01.jpg  <-  pozo-p-led-tira\007.jpg  |  pexels (Pexels License)  |  autor: Max Vakhtbovych  |  https://www.pexels.com/es-es/foto/habitacion-lujo-moderno-mueble-8134808/  |  consulta: "led strip light"
+mos2-01.jpg  <-  pozo-p-led-ampolleta\004.jpg  |  pexels (Pexels License)  |  autor: Antoni Shkraba  |  https://www.pexels.com/es-es/foto/electrico-naturaleza-muerta-bombillas-fragil-5853954/  |  consulta: "led bulb"
+mos3-01.jpg  <-  pozo-p-led-colgante\010.jpg  |  pexels (Pexels License)  |  autor: Eyimofe  Odunusi  |  https://www.pexels.com/es-es/foto/lampara-colgante-moderna-en-ambiente-exterior-33786349/  |  consulta: "pendant lamp"
+mos4-01.jpg  <-  pozo-p-led-exterior\005.jpg  |  pexels (Pexels License)  |  autor: Tassana Thaveeteeratham  |  https://www.pexels.com/es-es/foto/foto-de-un-aplique-iluminado-montado-en-una-pared-marron-2637757/  |  consulta: "outdoor wall lamp night"
+mos5-01.jpg  <-  pozo-p-led-tienda\012.jpg  |  pexels (Pexels License)  |  autor: Ivett M  |  https://www.pexels.com/es-es/foto/iluminacion-interior-calida-con-pantallas-de-lampara-tejidas-34941063/  |  consulta: "lighting store lamps"
+mos6-01.jpg  <-  pozo-p-led-bombillas\005.jpg  |  pexels (Pexels License)  |  autor: Kris Møklebust  |  https://www.pexels.com/es-es/foto/pared-muro-habitacion-colgando-21628696/  |  consulta: "light bulbs hanging dark"
+
+BRUMA (bruma-pag-0N.png y bruma-osc-0N.png, 30x20): las MISMAS fotos, recortadas a 3:2, reducidas y
+recoloreadas con C:\devs\demos\hacer-bruma.ps1 (clara >= 0,68 de luminancia / oscura <= 0,05). No suman fuentes.
+    pagina: port-01.jpg, banda-01.jpg, cita-01.jpg, hund1-01.jpg, hund6-01.jpg, mos4-01.jpg, mos6-01.jpg, hund4-01.jpg   |   oscuras: cita-01.jpg, port-01.jpg, hund6-01.jpg
+
+MAPA: iframe de Google Maps (embed publico, sin clave). No hay imagen de mapa.

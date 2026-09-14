@@ -25,3 +25,10 @@ URL de origen:
 004.jpg | 5760x3840 | Photo Of Woman In Front Of Gym Equipment · Free Stock Photo | https://images.pexels.com/photos/3757644/pexels-photo-3757644.jpeg?cs=srgb&dl=pexels-andrea-piacquadio-3757644.jpg&fm=jpg
 005.jpg | 5760x3840 | Foto profissional gratuita de #interior, 10 libras, academia de força ... | https://images.pexels.com/photos/7811528/pexels-photo-7811528.jpeg?cs=srgb&dl=pexels-eduardo-cano-photo-co-3550159-7811528.jpg&fm=jpg
 006.jpg | 5472x3648 | A Man using Barbell · Free Stock Photo | https://images.pexels.com/photos/34043577/pexels-photo-34043577.jpeg?cs=srgb&dl=pexels-zeal-creative-studios-58866141-34043577.jpg&fm=jpg
+
+MAPA DE UBICACION — mapa-01.jpg
+  768 x 768 · zoom 14 · centro -39.370616, -72.6300704
+  Mosaicos de OpenStreetMap pegados en una sola imagen, con el marcador
+  dibujado encima. Datos (c) OpenStreetMap contributors, licencia ODbL:
+  la atribucion tiene que ir VISIBLE junto al mapa, en el pie de la figura.
+  https://www.openstreetmap.org/copyright

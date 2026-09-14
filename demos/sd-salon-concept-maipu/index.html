@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="es-CL" class="no-js">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self'; img-src 'self' data:; font-src 'self'; connect-src 'self'; media-src 'self'; form-action 'self'; base-uri 'none'; frame-src 'none'; object-src 'none'">
+<meta name="robots" content="noindex, nofollow">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<title>SD Salón Concept — coloristas en Maipú</title>
+<meta name="description" content="Salón de color en Maipú: qué se hace en cada zona del pelo, qué mira el diagnóstico capilar antes de tocar nada y cómo llegar a Av. Pajaritos.">
+<link rel="preload" href="assets/fuentes/forum-400-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="assets/fuentes.css">
+<link rel="stylesheet" href="css/estilo.css">
+<script src="js/rescate.js"></script>
+</head>
+<body>
+
+<!-- ═══════════ BANDA DE PROPUESTA ═══════════ -->
+<aside class="propuesta" aria-label="Aviso de propuesta">
+  <div class="ancho propuesta__in">
+    <p class="propuesta__q">Propuesta de sitio web — preparada para <b>SD Salón Concept</b> por CristalWeb</p>
+    <p class="propuesta__d">
+      445 reseñas con 4,6, <b>38 mil seguidores</b> en Instagram y el único enlace de ese perfil es
+      un WhatsApp. No hay página propia: <span class="dato">sdsalonconcept.cl</span> ni siquiera
+      está registrado —comprobado el 11-09-2026—. Toda la reputación de un salón de ese tamaño vive
+      dentro de una cuenta que no es suya.
+    </p>
+  </div>
+</aside>
+
+<!-- ═══════════ CABECERA ═══════════
+     Va ARRIBA de la portada en el flujo, no encima: transparentarla
+     sobre la portada deja ver el fondo y se pierde el texto. -->
+<header class="cab" id="cab">
+  <div class="ancho cab__in">
+    <a class="cab__marca" href="#portada">
+      <span class="marca__mechon" aria-hidden="true">
+        <span></span><span></span><span></span>
+      </span>
+      <span class="cab__txt">SD Salón Concept<span class="cab__sub">Coloristas · Maipú</span></span>
+    </a>
+    <nav class="cab__nav" aria-label="Secciones">
+      <a href="#guia">Qué me corresponde</a>
+      <a href="#hace">Lo que se hace</a>
+      <a href="#donde">Dónde está</a>
+      <a class="cab__tel" href="https://wa.me/56232313291" target="_blank" rel="noopener">(2) 3231 3291</a>
+    </nav>
+  </div>
+</header>
+
+<!-- ═══════════ PORTADA ═══════════ -->
+<section class="portada" id="portada" aria-labelledby="t-portada">
+  <div class="ancho portada__in">
+    <div class="portada__txt">
+      <p class="rotulo">Maipú · Av. Pajaritos, frente a Metro Monte Tabor</p>
+      <h1 class="portada__h1" id="t-portada">
+        Coloristas en Maipú.<br>
+        <span class="portada__h1-b">Primero se mira el pelo.</span>
+      </h1>
+      <p class="portada__bajada">
+        Balayage, blonding y color. Antes de decidir nada se hace un diagnóstico capilar: se mira la
+        raíz, los medios, los largos y las puntas, porque cada zona aguanta cosas distintas y no
+        todas admiten lo mismo el mismo día.
+      </p>
+      <p class="portada__acc">
+        <a class="boton" href="#guia">Qué me corresponde a mí</a>
+        <a class="boton boton--linea" href="#donde">Cómo llegar</a>
+      </p>
+      <dl class="specs">
+        <div><dt>Promedio en Google</dt><dd>4,6</dd></div>
+        <div><dt>Reseñas</dt><dd>445</dd></div>
+        <div><dt>Seguidores en Instagram</dt><dd>38.000</dd></div>
+        <div><dt>Sitios propios</dt><dd>0</dd></div>
+      </dl>
+    </div>
+
+    <!-- ESCENA — «EL MECHÓN SE DIBUJA».
+         Cinco hebras trazadas a mano se dibujan de la raíz a las puntas
+         (stroke-dashoffset con pathLength="1", 1,1 s, curva --sale, 80 ms
+         entre hebra y hebra) y recién después brotan las cuatro marcas de
+         zona: raíz, medios, largos y puntas (scale 0→1, .25 s, 120 ms de
+         stagger). Pasa una vez y queda quieta: no hay reposo.
+         Sin JS se ve en su estado final; con reduced-motion, también.
+         El observador va sobre .escena —el contenedor—: una marca en
+         scale(0) mide cero y NUNCA dispara el IntersectionObserver. -->
+    <div class="escena" aria-hidden="true">
+      <svg class="escena__svg" viewBox="0 0 340 430" role="presentation" focusable="false">
+        <!-- las hebras -->
+        <g class="hebras">
+          <path class="hebra hebra--1" pathLength="1" d="M196 30 C182 104 216 166 194 232 C176 290 208 330 186 402"/>
+          <path class="hebra hebra--2" pathLength="1" d="M204 30 C202 106 238 164 216 234 C200 294 232 334 212 406"/>
+          <path class="hebra hebra--3" pathLength="1" d="M192 30 C168 102 198 168 174 236 C154 294 188 332 162 400"/>
+          <path class="hebra hebra--4" pathLength="1" d="M208 32 C218 108 254 160 236 232 C222 292 250 330 234 400"/>
+          <path class="hebra hebra--5" pathLength="1" d="M188 32 C154 100 178 170 154 238 C134 294 168 330 144 396"/>
+        </g>
+        <!-- las cuatro zonas -->
+        <g class="zonas">
+          <g class="zona zona--1">
+            <text class="zona__t" x="26" y="78">RAÍZ</text>
+            <line class="zona__l" x1="34" y1="92" x2="150" y2="92"/>
+            <circle class="zona__p" cx="156" cy="92" r="5"/>
+          </g>
+          <g class="zona zona--2">
+            <text class="zona__t" x="26" y="178">MEDIOS</text>
+            <line class="zona__l" x1="34" y1="192" x2="144" y2="192"/>
+            <circle class="zona__p" cx="150" cy="192" r="5"/>
+          </g>
+          <g class="zona zona--3">
+            <text class="zona__t" x="26" y="278">LARGOS</text>
+            <line class="zona__l" x1="34" y1="292" x2="138" y2="292"/>
+            <circle class="zona__p" cx="144" cy="292" r="5"/>
+          </g>
+          <g class="zona zona--4">
+            <text class="zona__t" x="26" y="378">PUNTAS</text>
+            <line class="zona__l" x1="34" y1="392" x2="126" y2="392"/>
+            <circle class="zona__p" cx="132" cy="392" r="5"/>
+          </g>
+        </g>
+      </svg>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════ TAJO ═══════════ -->
+<figure class="tajo">
+  <img src="imagenes/tajo-01.jpg" alt="Pincel de color cargado sobre un mechón envuelto en papel platino, en el mesón de un salón." width="2200" height="943" loading="lazy" decoding="async">
+</figure>
+
+<!-- ═══════════ PIEZA FIRMA: DÓNDE ACTÚA CADA COSA ═══════════ -->
+<section class="guia" id="guia" aria-labelledby="t-guia">
+  <div class="ancho">
+    <p class="rotulo">La pregunta que nadie contesta por escrito</p>
+    <h2 class="titulo" id="t-guia">¿Qué me corresponde a mí?</h2>
+    <p class="entradilla">
+      Casi nadie llega pidiendo una técnica: llega diciendo lo que quiere. Esta tabla va de lo uno a
+      lo otro, y muestra en qué zona del pelo actúa cada cosa —la misma raíz, medios, largos y
+      puntas del dibujo de arriba—. <b>No hay precios ni tiempos acá a propósito</b>: eso depende de
+      lo que se vea en el diagnóstico.
+    </p>
+  </div>
+
+  <div class="ancho guia__tabla">
+    <div class="guia__enc" aria-hidden="true">
+      <span>Zonas</span><span>Lo que quiero</span><span>Lo que se hace</span><span>Qué se mira primero</span>
+    </div>
+
+    <article class="fila">
+      <div class="fila__zonas">
+        <svg class="mech" viewBox="0 0 64 120" role="img" aria-label="Actúa en medios, largos y puntas.">
+          <path class="mech__h" d="M22 8 C14 34 30 60 20 84 C12 102 26 108 18 116"/>
+          <path class="mech__h" d="M34 8 C28 36 44 58 34 86 C26 104 40 110 32 116"/>
+          <path class="mech__h" d="M46 10 C42 36 56 60 46 86 C38 104 52 110 44 116"/>
+          <rect class="mech__z" x="4" y="34" width="56" height="82" rx="6"/>
+        </svg>
+        <p class="fila__lista">medios · largos · puntas</p>
+      </div>
+      <h3 class="fila__q">Aclarar sin quedar naranjo</h3>
+      <p class="fila__h"><b>Blonding.</b> Es de las tres cosas que el salón nombra en su propio perfil.</p>
+      <p class="fila__m">Cuántos tonos hay que subir, qué tinte hay abajo de lo que se ve y si la fibra
+        aguanta hacerlo de una sola vez o hay que repartirlo en dos visitas.</p>
+    </article>
+
+    <article class="fila">
+      <div class="fila__zonas">
+        <svg class="mech" viewBox="0 0 64 120" role="img" aria-label="Actúa en medios, largos y puntas.">
+          <path class="mech__h" d="M22 8 C14 34 30 60 20 84 C12 102 26 108 18 116"/>
+          <path class="mech__h" d="M34 8 C28 36 44 58 34 86 C26 104 40 110 32 116"/>
+          <path class="mech__h" d="M46 10 C42 36 56 60 46 86 C38 104 52 110 44 116"/>
+          <rect class="mech__z" x="4" y="34" width="56" height="82" rx="6"/>
+        </svg>
+        <p class="fila__lista">medios · largos · puntas</p>
+      </div>
+      <h3 class="fila__q">Iluminar sin que se note la raíz</h3>
+      <p class="fila__h"><b>Balayage.</b> También sale del perfil del salón, no de nosotros.</p>
+      <p class="fila__m">Dónde cae la luz en tu cara, cómo se ve el crecimiento a los tres meses y
+        cada cuánto vas a poder volver de verdad.</p>
+    </article>
+
+    <article class="fila">
+      <div class="fila__zonas">
+        <svg class="mech" viewBox="0 0 64 120" role="img" aria-label="Actúa en raíz, medios y largos.">
+          <path class="mech__h" d="M22 8 C14 34 30 60 20 84 C12 102 26 108 18 116"/>
+          <path class="mech__h" d="M34 8 C28 36 44 58 34 86 C26 104 40 110 32 116"/>
+          <path class="mech__h" d="M46 10 C42 36 56 60 46 86 C38 104 52 110 44 116"/>
+          <rect class="mech__z" x="4" y="4" width="56" height="82" rx="6"/>
+        </svg>
+        <p class="fila__lista">raíz · medios · largos</p>
+      </div>
+      <h3 class="fila__q">Cubrir canas</h3>
+      <p class="fila__h"><b>Color.</b> La tercera que el salón nombra. El tono exacto se elige en el
+        mesón, con la carta en la mano y contra tu pelo, no por foto.</p>
+      <p class="fila__m">Cuánta cana hay y en qué parte, y de qué color quedó el tinte anterior:
+        eso manda más que el tono que uno eligió.</p>
+    </article>
+
+    <article class="fila">
+      <div class="fila__zonas">
+        <svg class="mech" viewBox="0 0 64 120" role="img" aria-label="Actúa en todo el largo.">
+          <path class="mech__h" d="M22 8 C14 34 30 60 20 84 C12 102 26 108 18 116"/>
+          <path class="mech__h" d="M34 8 C28 36 44 58 34 86 C26 104 40 110 32 116"/>
+          <path class="mech__h" d="M46 10 C42 36 56 60 46 86 C38 104 52 110 44 116"/>
+          <rect class="mech__z" x="4" y="4" width="56" height="112" rx="6"/>
+        </svg>
+        <p class="fila__lista">de raíz a puntas</p>
+      </div>
+      <h3 class="fila__q">Arreglar un color que no quedó</h3>
+      <p class="fila__h"><span class="ej" data-ejemplo="lo confirma el salón">Corrección de color</span>.
+        Va marcado porque el salón no lo publica por escrito; se pregunta antes de ir.</p>
+      <p class="fila__m">Qué se usó, hace cuánto y cuántas veces. Una corrección se planifica: casi
+        nunca se resuelve el mismo día en que uno llega apurado.</p>
+    </article>
+
+    <article class="fila">
+      <div class="fila__zonas">
+        <svg class="mech" viewBox="0 0 64 120" role="img" aria-label="Actúa en largos y puntas.">
+          <path class="mech__h" d="M22 8 C14 34 30 60 20 84 C12 102 26 108 18 116"/>
+          <path class="mech__h" d="M34 8 C28 36 44 58 34 86 C26 104 40 110 32 116"/>
+          <path class="mech__h" d="M46 10 C42 36 56 60 46 86 C38 104 52 110 44 116"/>
+          <rect class="mech__z" x="4" y="70" width="56" height="46" rx="6"/>
+        </svg>
+        <p class="fila__lista">largos · puntas</p>
+      </div>
+      <h3 class="fila__q">Se me quiebra en las puntas</h3>
+      <p class="fila__h"><span class="ej" data-ejemplo="lo confirma el salón">Tratamiento de fibra</span>.
+        Tampoco está publicado; va marcado.</p>
+      <p class="fila__m">Si el quiebre es por el color, por el calor o por el largo. No es lo mismo y
+        no se arregla con lo mismo.</p>
+    </article>
+  </div>
+
+  <!-- el remate: la evaluación -->
+  <div class="ancho">
+    <div class="evaluacion">
+      <div class="evaluacion__txt">
+        <p class="rotulo">El paso cero</p>
+        <h3 class="titulo titulo--chico">La primera visita es para mirar.</h3>
+        <p>
+          El <b>diagnóstico capilar</b> está escrito en el perfil del salón, y es lo que hace que
+          esta tabla no sea una lista de precios: se toca el pelo, se pregunta qué se le hizo antes
+          y recién ahí se dice qué se puede hacer hoy, qué conviene dejar para otro día y qué no
+          corresponde. Acá no vas a encontrar una promesa de resultado, porque nadie puede darla
+          sin haber visto tu pelo.
+        </p>
+        <p class="mini">
+          Lo que esta página no dice: precios, duraciones y plazos. No están verificados y no se
+          inventan.
+        </p>
+      </div>
+      <figure class="evaluacion__fig">
+        <img src="imagenes/aura-01.jpg" alt="Una mano recorre la carta de tonos apoyada sobre el mesón." width="1200" height="1200" loading="lazy" decoding="async">
+      </figure>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════ LO QUE SE HACE ═══════════ -->
+<section class="hace" id="hace" aria-labelledby="t-hace">
+  <div class="ancho">
+    <p class="rotulo">Lo que se hace</p>
+    <h2 class="titulo" id="t-hace">Tres nombres suyos y los que faltan.</h2>
+    <p class="entradilla">
+      Los tres primeros están escritos por el salón en su propio perfil de Instagram. El resto va
+      marcado: son cosas normales de un salón de color, pero nadie las ha confirmado todavía.
+    </p>
+    <ul class="hace__grid">
+      <li class="serv serv--fijo">
+        <p class="serv__n">01</p>
+        <h3>Balayage</h3>
+        <p>Iluminación pintada a mano, sin línea de corte en la raíz. Lo nombran ellos.</p>
+      </li>
+      <li class="serv serv--fijo">
+        <p class="serv__n">02</p>
+        <h3>Blonding</h3>
+        <p>El trabajo de rubio: subir tonos y neutralizar. Lo nombran ellos.</p>
+      </li>
+      <li class="serv serv--fijo">
+        <p class="serv__n">03</p>
+        <h3>Color</h3>
+        <p>Tono completo y cobertura. Lo nombran ellos.</p>
+      </li>
+      <li class="serv serv--fijo">
+        <p class="serv__n">04</p>
+        <h3>Diagnóstico capilar</h3>
+        <p>Mirar antes de hacer. Está en su perfil y es el paso que ordena todo lo demás.</p>
+      </li>
+      <li class="serv">
+        <p class="serv__n">05</p>
+        <h3><span class="ej" data-ejemplo="lo confirma el salón">Corte y forma</span></h3>
+        <p>Sin confirmar por escrito.</p>
+      </li>
+      <li class="serv">
+        <p class="serv__n">06</p>
+        <h3><span class="ej" data-ejemplo="lo confirma el salón">Tratamiento de fibra</span></h3>
+        <p>Sin confirmar por escrito.</p>
+      </li>
+      <li class="serv">
+        <p class="serv__n">07</p>
+        <h3><span class="ej" data-ejemplo="lo confirma el salón">Corrección de color</span></h3>
+        <p>Sin confirmar por escrito.</p>
+      </li>
+      <li class="serv">
+        <p class="serv__n">08</p>
+        <h3><span class="ej" data-ejemplo="lo confirma el salón">Peinado y ondas</span></h3>
+        <p>Sin confirmar por escrito.</p>
+      </li>
+    </ul>
+  </div>
+</section>
+
+<!-- ═══════════ MITADES ═══════════ -->
+<section class="mitades" aria-labelledby="t-mit">
+  <div class="ancho mitades__in">
+    <figure class="mitades__fig">
+      <img src="imagenes/mit-01.jpg" alt="Nuca con el pelo aclarado de medios a puntas, junto a un ventanal." width="1700" height="2125" loading="lazy" decoding="async">
+    </figure>
+    <div class="mitades__texto">
+      <p class="rotulo">Por qué importa la zona</p>
+      <h2 class="titulo titulo--chico" id="t-mit">El pelo no es una sola cosa.</h2>
+      <p>
+        La raíz tiene el calor del cuero cabelludo y sube de tono más rápido. Los medios cargan el
+        color viejo. Los largos y las puntas son los que llevan más años puestos y los que menos
+        aguantan. Por eso una misma cabeza puede necesitar tres cosas distintas el mismo día.
+      </p>
+      <p>
+        Eso es lo que el diagnóstico ordena: qué zona se toca hoy, cuál se deja para la próxima y
+        cuál conviene no tocar todavía.
+      </p>
+      <p class="mini">
+        <b>Esta foto no es del salón.</b> Es de un banco de uso libre y está para mostrar de qué se
+        está hablando. Las de SD Salón Concept están en su Instagram, y ahí hay mil setenta y nueve.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════ CITA ═══════════ -->
+<section class="cita" aria-label="Frase">
+  <img class="cita__img" src="imagenes/cita-01.jpg" alt="" width="2200" height="1100" loading="lazy" decoding="async">
+  <div class="ancho cita__in">
+    <blockquote class="cita__q">
+      <p>«Un color bien hecho se nota en cómo crece, no en cómo queda el primer día.»</p>
+    </blockquote>
+    <p class="cita__f">Dicho del oficio, no una frase del salón.</p>
+  </div>
+</section>
+
+<!-- ═══════════ TIRA ═══════════ -->
+<section class="tira" aria-labelledby="t-tira">
+  <div class="ancho">
+    <p class="rotulo">El mesón</p>
+    <h2 class="titulo titulo--chico" id="t-tira">Lo que hay cuando te sientas.</h2>
+  </div>
+  <ul class="tira__lista">
+    <li><img src="imagenes/tira1-01.jpg" alt="Tres envases blancos sin marca sobre una repisa de madera." width="1000" height="1000" loading="lazy" decoding="async"><span>Producto sin marca a la vista</span></li>
+    <li><img src="imagenes/tira2-01.jpg" alt="Botellas blancas ordenadas en una repisa contra pared de azulejo." width="1000" height="1000" loading="lazy" decoding="async"><span>El lavado</span></li>
+    <li><img src="imagenes/tira3-01.jpg" alt="Una mano sostiene una trenza contra un fondo claro." width="1000" height="1000" loading="lazy" decoding="async"><span>La fibra, en la mano</span></li>
+    <li><img src="imagenes/tira4-01.jpg" alt="Tijeras y cepillo redondo sobre un mesón de madera." width="1000" height="1000" loading="lazy" decoding="async"><span>Las herramientas</span></li>
+  </ul>
+  <div class="ancho"><p class="mini">Fotografías de bancos de uso libre. <b>No son del salón</b> ni de sus productos: sirven para mostrar el oficio.</p></div>
+</section>
+
+<!-- ═══════════ EL SALÓN ═══════════ -->
+<section class="salon" aria-labelledby="t-salon">
+  <img class="salon__telon" src="imagenes/telon-01.jpg" alt="" width="1400" height="788" loading="lazy" decoding="async">
+  <div class="ancho salon__in">
+    <p class="rotulo rotulo--claro">El salón</p>
+    <h2 class="titulo titulo--claro" id="t-salon">Acá van las fotos de verdad.</h2>
+    <p class="entradilla entradilla--clara">
+      Este bloque está armado con fotos de banco para que se vea la forma. Cuando el salón entregue
+      las suyas, entran en los mismos seis huecos y la página no cambia en nada más.
+    </p>
+  </div>
+
+  <ul class="mos__grilla ancho">
+    <li><img src="imagenes/mos1-01.jpg" alt="Aplicación de color en el pelo, de espaldas." width="1200" height="1200" loading="lazy" decoding="async"></li>
+    <li><img src="imagenes/mos2-01.jpg" alt="Manos trabajando el color sobre la cabeza, a contraluz." width="1200" height="1200" loading="lazy" decoding="async"></li>
+    <li><img src="imagenes/mos3-01.jpg" alt="Mechones envueltos en papel platino durante una sesión de color." width="1200" height="1200" loading="lazy" decoding="async"></li>
+    <li><img src="imagenes/mos4-01.jpg" alt="Detalle del pelo con varios tonos mezclados." width="1200" height="1200" loading="lazy" decoding="async"></li>
+    <li><img src="imagenes/mos5-01.jpg" alt="Una mano separa un mechón contra una pared clara." width="1200" height="1200" loading="lazy" decoding="async"></li>
+    <li><img src="imagenes/mos6-01.jpg" alt="Puesto de peinado con espejo de aro iluminado." width="1200" height="1200" loading="lazy" decoding="async"></li>
+  </ul>
+  <p class="mos__pie ancho">
+    Las seis fotos son de bancos de uso libre y <b>no corresponden a SD Salón Concept</b> ni a su
+    local de Av. Pajaritos. Están puestas para mostrar los tratamientos de imagen del sitio.
+  </p>
+
+  <div class="ancho">
+    <h3 class="titulo titulo--chico equipo__t">Quién atiende</h3>
+    <p class="entradilla">
+      Acá va el equipo, con nombre y con lo que hace cada uno. Los huecos están <b>vacíos a
+      propósito</b>: poner una cara de banco sería mentir sobre quién te va a atender.
+    </p>
+    <ul class="equipo__huecos">
+      <li><span class="hueco" aria-hidden="true"></span><p>Nombre y oficio <span class="ej" data-ejemplo="lo entrega el salón">por confirmar</span></p></li>
+      <li><span class="hueco" aria-hidden="true"></span><p>Nombre y oficio <span class="ej" data-ejemplo="lo entrega el salón">por confirmar</span></p></li>
+      <li><span class="hueco" aria-hidden="true"></span><p>Nombre y oficio <span class="ej" data-ejemplo="lo entrega el salón">por confirmar</span></p></li>
+      <li><span class="hueco" aria-hidden="true"></span><p>Nombre y oficio <span class="ej" data-ejemplo="lo entrega el salón">por confirmar</span></p></li>
+    </ul>
+  </div>
+</section>
+
+<!-- ═══════════ DÓNDE ESTÁ Y CONTACTO ═══════════ -->
+<section class="donde" id="donde" aria-labelledby="t-donde">
+  <div class="ancho">
+    <p class="rotulo">Dónde está y cómo se habla</p>
+    <h2 class="titulo" id="t-donde">Av. Pajaritos 4525, Maipú.</h2>
+    <p class="entradilla">
+      La dirección sale del propio perfil del salón: <b>frente al Metro Monte Tabor</b>. Lo demás va
+      marcado hasta que ellos lo confirmen.
+    </p>
+
+    <div class="donde__cols">
+      <dl class="datos">
+        <div><dt>Dirección</dt><dd>Av. Pajaritos 4525, Maipú</dd></div>
+        <div><dt>Referencia</dt><dd>Frente a Metro Monte Tabor (Línea 5)</dd></div>
+        <div><dt>Teléfono</dt><dd><a href="https://wa.me/56232313291" target="_blank" rel="noopener">(2) 3231 3291</a></dd></div>
+        <div><dt>Instagram</dt><dd><a href="https://www.instagram.com/sdsalonconcept/" target="_blank" rel="noopener noreferrer">@sdsalonconcept</a></dd></div>
+        <div><dt>Horario</dt><dd class="ej" data-ejemplo="lo confirma el salón">Lunes a sábado</dd></div>
+        <div><dt>Estacionamiento</dt><dd class="ej" data-ejemplo="lo confirma el salón">Por confirmar</dd></div>
+      </dl>
+
+      <div class="nombres">
+        <h3>Un salón con tres nombres</h3>
+        <p>
+          Comprobado el <b>11-09-2026</b>, el mismo negocio aparece escrito de tres formas distintas
+          según dónde lo busques:
+        </p>
+        <ol class="nombres__l">
+          <li><span class="dato">SD Salón Concept</span> — en Google, donde están las 445 reseñas.</li>
+          <li><span class="dato">SD Salon Concept / Coloristas Maipu</span> — en Instagram, donde están los 38 mil seguidores.</li>
+          <li><span class="dato">SD Hair Studio</span> — es el nombre que muestra la cuenta de WhatsApp Business a la que lleva el único enlace del perfil.</li>
+        </ol>
+        <p class="mini">
+          Los tres son suyos y ninguno está mal. El problema es que no hay un cuarto lugar —una
+          página propia— donde los tres se junten y donde el salón mande sobre cómo se llama, qué
+          hace y qué muestra.
+        </p>
+      </div>
+    </div>
+  </div>
+      <figure class="mapa">
+        <img src="imagenes/mapa-01.jpg" width="768" height="768" loading="lazy" decoding="async"
+             alt="Mapa de Av. Los Pajaritos en Maipú con el punto puesto sobre el Metro Monte Tabor.">
+        <figcaption class="mapa__pie">
+          <span><b>Av. Los Pajaritos a la altura del Metro Monte Tabor, Maipú.</b>
+            El punto marca la estación, que es la referencia que publica el propio salón: el
+            número 4525 no está cargado en el callejero de OpenStreetMap, así que la puerta
+            exacta <span class="ej" data-ejemplo="lo confirma el salón">queda por confirmar</span>.</span>
+          <span class="mapa__cred">Mapa: &copy; <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener">OpenStreetMap</a></span>
+        </figcaption>
+      </figure>
+</section>
+
+<!-- ═══════════ PARA EL DUEÑO ═══════════ -->
+<section class="dueno" aria-labelledby="t-dueno">
+  <div class="ancho">
+    <p class="rotulo rotulo--claro">Para el dueño</p>
+    <h2 class="titulo titulo--claro" id="t-dueno">Qué es esto y qué no.</h2>
+    <div class="dueno__cols">
+      <div>
+        <h3>Qué es</h3>
+        <p>Una propuesta hecha por nuestra cuenta. SD Salón Concept no la encargó ni la ha revisado.
+          Los servicios que aparecen sin marcar, la dirección y la referencia del metro los leímos el
+          11-09-2026 en su propio perfil de Instagram.</p>
+      </div>
+      <div>
+        <h3>El Instagram está bien</h3>
+        <p>No venimos a decir que lo cambien: 38 mil seguidores y 1.079 publicaciones son un activo
+          enorme y conviene seguir ahí. Lo que falta es la casa propia adonde ese Instagram pueda
+          mandar a la gente, con la dirección, lo que se hace y cómo se pide hora.</p>
+      </div>
+      <div>
+        <h3>Lo del dominio</h3>
+        <p>Probamos <b>sdsalonconcept.cl</b> y <b>sdsalonconcept.com</b> el 11-09-2026: ninguno de
+          los dos existe. El nombre que ya usan todos los días está libre.</p>
+      </div>
+      <div>
+        <h3>Qué es ejemplo</h3>
+        <p>El horario, el estacionamiento, los cuatro servicios marcados y los huecos del equipo.
+          Van con línea punteada y dicen quién los confirma. <b>No hay precios a propósito</b>: en
+          color no se pueden dar antes de ver el pelo, y decir uno sería mentir.</p>
+      </div>
+    </div>
+    <p class="dueno__cierre">
+      <a class="flecha flecha--fuerte" href="https://wa.me/56968650001" rel="noopener">Escribirme por WhatsApp <span aria-hidden="true">→</span></a>
+      <a class="flecha" href="mailto:cristalwebcl@gmail.com">cristalwebcl@gmail.com <span aria-hidden="true">→</span></a>
+      <a class="flecha" href="https://cristalwebcl.github.io/cristalweb/" rel="noopener">Ver otros trabajos <span aria-hidden="true">→</span></a>
+    </p>
+  </div>
+</section>
+
+<footer class="pie">
+  <div class="ancho pie__in">
+    <p>Demostración sin encargo, preparada por <b>CristalWeb</b> — desarrollo web desde Loncoche.<br>
+      Las fotografías son de bancos de uso libre y no corresponden a SD Salón Concept.</p>
+    <p class="pie__leg">Esta página tiene fines comerciales. Los tratamientos nombrados son referencia
+      del oficio y no una lista de servicios confirmada por el salón, ni una cotización, ni una
+      promesa de resultado.</p>
+  </div>
+</footer>
+
+<!-- == BOTON FLOTANTE DE CONTACTO ==================================
+     Va a INSTAGRAM y no a WhatsApp porque el telefono del salon es un
+     FIJO — (2) 3231 3291 — y la regla de la casa (poner-contacto.ps1 y
+     revisar-demo.ps1) prohibe colgar un boton de WhatsApp de un numero
+     que no sea un movil 569XXXXXXXX. Se comprobo con curl el 11-09-2026
+     que wa.me/56232313291 SI resuelve a una cuenta de WhatsApp Business
+     viva llamada «SD Hair Studio», asi que ese enlace esta igual en la
+     cabecera y en la ficha de contacto; lo que no lleva es el boton
+     flotante. Instagram, ademas, es donde estan sus 38 mil seguidores.
+     Visible por defecto: si el script no arranca, el boton igual esta.
+     Icono de simple-icons (CC0), incrustado: la CSP no deja pedir nada
+     a un tercero. -->
+<a class="flota flota--ig" href="https://www.instagram.com/sdsalonconcept/" target="_blank" rel="noopener noreferrer" aria-label="Ver el Instagram de SD Salón Concept y escribir por mensaje directo">
+  <svg class="flota__i" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 0C8.74 0 8.333.015 7.053.072 5.775.132 4.905.333 4.14.63c-.789.306-1.459.717-2.126 1.384S.935 3.35.63 4.14C.333 4.905.131 5.775.072 7.053.012 8.333 0 8.74 0 12s.015 3.667.072 4.947c.06 1.277.261 2.148.558 2.913.306.788.717 1.459 1.384 2.126.667.666 1.336 1.079 2.126 1.384.766.296 1.636.499 2.913.558C8.333 23.988 8.74 24 12 24s3.667-.015 4.947-.072c1.277-.06 2.148-.262 2.913-.558.788-.306 1.459-.718 2.126-1.384.666-.667 1.079-1.335 1.384-2.126.296-.765.499-1.636.558-2.913.06-1.28.072-1.687.072-4.947s-.015-3.667-.072-4.947c-.06-1.277-.262-2.149-.558-2.913-.306-.789-.718-1.459-1.384-2.126C21.319 1.347 20.651.935 19.86.63c-.765-.297-1.636-.499-2.913-.558C15.667.012 15.26 0 12 0zm0 2.16c3.203 0 3.585.016 4.85.071 1.17.055 1.805.249 2.227.415.562.217.96.477 1.382.896.419.42.679.819.896 1.381.164.422.36 1.057.413 2.227.057 1.266.07 1.646.07 4.85s-.015 3.585-.074 4.85c-.061 1.17-.256 1.805-.421 2.227-.224.562-.479.96-.899 1.382-.419.419-.824.679-1.38.896-.42.164-1.065.36-2.235.413-1.274.057-1.649.07-4.859.07-3.211 0-3.586-.015-4.859-.074-1.171-.061-1.816-.256-2.236-.421-.569-.224-.96-.479-1.379-.899-.421-.419-.69-.824-.9-1.38-.165-.42-.359-1.065-.42-2.235-.045-1.26-.061-1.649-.061-4.844 0-3.196.016-3.586.061-4.861.061-1.17.255-1.814.42-2.234.21-.57.479-.96.9-1.381.419-.419.81-.689 1.379-.898.42-.166 1.051-.361 2.221-.421 1.275-.045 1.65-.06 4.859-.06l.045.03zm0 3.678c-3.405 0-6.162 2.76-6.162 6.162 0 3.405 2.76 6.162 6.162 6.162 3.405 0 6.162-2.76 6.162-6.162 0-3.405-2.76-6.162-6.162-6.162zM12 16c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4zm7.846-10.405c0 .795-.646 1.44-1.44 1.44-.795 0-1.44-.646-1.44-1.44 0-.794.646-1.439 1.44-1.439.793-.001 1.44.645 1.44 1.439z"/></svg>
+  <span class="flota__t">Instagram</span>
+</a>
+<script src="js/main.js"></script>
+</body>
+</html>

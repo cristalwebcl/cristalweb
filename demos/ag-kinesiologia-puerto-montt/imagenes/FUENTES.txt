@@ -1,0 +1,133 @@
+FUENTES DE LAS IMÁGENES Y LOS VIDEOS
+A&G Kinesiología Integral · Puerto Montt — demo CristalWeb
+Actualizado el 08-09-2026.
+
+Formato: archivo <= banco | licencia | autor | página del banco | URL del
+original | tratamiento aplicado.
+
+Todo lo de acá viene de bancos libres. Ninguna foto es del negocio: son
+imágenes de rubro, no inventario. Ninguna lleva marca de tercero legible,
+precio dentro del cuadro ni menores identificables.
+
+
+── VIDEOS DE FONDO ────────────────────────────────────────────────────
+
+video/port.mp4   <=  pexels | Pexels License | Kampus Production |
+    https://www.pexels.com/video/a-woman-assisting-a-disabled-man-in-stretching-his-legs-6111034/ |
+    https://videos.pexels.com/video-files/6111034/6111034-hd_1280_720_25fps.mp4 |
+    recorte 0 s → 10 s, 1280 px, 720p H.264 sin pista de audio, 1,55 MB.
+    Elegido porque es la MISMA sesión de sala que port-01.jpg —igual
+    camilla azul, igual sala, iguales protagonistas—, así que el fundido
+    de la foto al clip no corta la escena. El rostro del paciente cae en
+    el tercio izquierdo del cuadro, que es justo la franja que la
+    máscara de la portada borra por completo.
+
+video/cita.mp4   <=  pexels | Pexels License | Maksim Goncharenok |
+    https://www.pexels.com/video/therapist-applying-kinesiology-tape-on-patient-6095386/ |
+    https://videos.pexels.com/video-files/6095386/6095386-hd_1280_720_30fps.mp4 |
+    recorte 0 s → 8 s, 1280 px, 720p H.264 sin pista de audio, 0,87 MB.
+    Sin ningún rostro en cuadro. Es vendaje neuromuscular, el mismo tema
+    que cita-01.jpg.
+
+Ninguno de los dos <video> lleva atributo poster= y es a propósito: en
+este patrón el póster es el <img> hermano, que se queda en el DOM para
+siempre y por eso nunca aparece un rectángulo negro si el autoplay se
+bloquea. Los dos fotogramas de referencia que dejó la herramienta
+(video/port-poster.jpg y video/cita-poster.jpg) se borraron el
+09-09-2026: eran 128 KB que se habrían publicado sin que nada los
+llame.
+
+
+
+── ICONO INCRUSTADO ───────────────────────────────────────────────────
+
+El glifo de WhatsApp del botón flotante NO es un archivo: va escrito
+como <svg> dentro del index.html, porque la CSP (img-src 'self' data:)
+no deja pedir nada a un tercero y un <img src="https://…"> no cargaría.
+
+icono WhatsApp  <=  simple-icons | CC0 1.0 (dominio público) |
+    https://simpleicons.org/?q=whatsapp |
+    https://github.com/simple-icons/simple-icons/blob/develop/icons/whatsapp.svg |
+    un solo <path> en viewBox 0 0 24 24, pintado con currentColor. El
+    verde #25D366 es el color de marca del canal, no de A&G: se usa
+    porque se reconoce sin leerlo, que es lo que hace que se toque.
+
+── FOTOS INCORPORADAS EL 08-09-2026 ───────────────────────────────────
+
+mit-01.jpg    <=  pexels | Pexels License | MART PRODUCTION |
+    https://www.pexels.com/es-es/foto/mujer-casa-hogar-fitnes-8846116/ |
+    https://images.pexels.com/photos/8846116/pexels-photo-8846116.jpeg |
+    mitades, recorte 3:4 a 1500 px, calidad 80.
+
+telon-02.jpg  <=  pexels | Pexels License | Ivan Babydov |
+    https://www.pexels.com/es-es/foto/cama-equipo-naturaleza-muerta-esteril-7789609/ |
+    https://images.pexels.com/photos/7789609/pexels-photo-7789609.jpeg |
+    telón, recorte 3:2 a 1200 px, calidad 62. Va en la banda de cifras.
+
+telon-03.jpg  <=  pexels | Pexels License | Ivan Babydov |
+    https://www.pexels.com/es-es/foto/escritorio-cama-sillas-equipo-7789616/ |
+    https://images.pexels.com/photos/7789616/pexels-photo-7789616.jpeg |
+    telón, recorte 3:2 a 1200 px, calidad 62. Va en «La primera vez»: es
+    el box vacío, antes de que entre nadie.
+
+
+telon-01.jpg  <=  pexels | Pexels License | KoolShooters |
+    https://www.pexels.com/es-es/foto/relajacion-relajarse-relax-descanso-6628473/ |
+    https://images.pexels.com/photos/6628473/pexels-photo-6628473.jpeg |
+    telón, recorte 3:2 a 1200 px, calidad 62. REEMPLAZA a la foto que
+    había en este slot, que mostraba una máquina de gimnasio con la
+    marca del fabricante legible en el costado.
+
+mos2-01.jpg   <=  pexels | Pexels License | Antoni Shkraba |
+    https://www.pexels.com/es-es/foto/una-masajista-masajeando-una-mano-4599427/ |
+    https://images.pexels.com/photos/4599427/pexels-photo-4599427.jpeg |
+    mosaico, recorte 2:3 a 1200 px, calidad 80. REEMPLAZA a una foto que
+    tenía un menor identificable mirando a cámara y una marca deportiva
+    legible en la ropa.
+
+mos4-01.jpg   <=  pexels | Pexels License | KoolShooters |
+    https://www.pexels.com/es-es/foto/cama-ventanas-ventana-relajarse-6628520/ |
+    https://images.pexels.com/photos/6628520/pexels-photo-6628520.jpeg |
+    mosaico, recorte 3:2 a 1200 px, calidad 80. REEMPLAZA a una sala de
+    gimnasio comercial con marcas de máquinas legibles.
+
+mos5-01.jpg   <=  pexels | Pexels License | Yan Krukau |
+    https://www.pexels.com/es-es/foto/mujer-sujetando-mirando-abajo-nalgas-5794028/ |
+    https://images.pexels.com/photos/5794028/pexels-photo-5794028.jpeg |
+    mosaico, recorte 2:3 a 1200 px, calidad 80. REEMPLAZA a un recorte de
+    stock sobre fondo blanco que no se leía como sala.
+
+mos6-01.jpg   <=  pexels | Pexels License | Ketut Subiyanto |
+    https://www.pexels.com/es-es/foto/manos-gente-calcetines-cogidos-de-la-mano-4827428/ |
+    https://images.pexels.com/photos/4827428/pexels-photo-4827428.jpeg |
+    mosaico, recorte 3:2 a 1200 px, calidad 80. REEMPLAZA a una foto de
+    entrenamiento al aire libre, que es fitness y no kinesiología.
+
+
+── FOTOS DE LA PRIMERA CONSTRUCCIÓN (02-09-2026) ──────────────────────
+
+De las diez originales quedan CUATRO en la página: las otras seis se
+reemplazaron el 08-09-2026 y están arriba con su procedencia completa.
+Estas cuatro se procesaron con FotoRadar el 02-09-2026 y el registro de
+origen NO quedó guardado en la carpeta. Son de banco libre y cumplen los
+filtros de contenido, pero la línea con autor y URL hay que reponerla
+antes de que la página salga a internet. Es la tarea 1 de
+QUE-FOTOS-FALTAN.md.
+
+port-01.jpg   <=  banco libre | procedencia por reponer | portada, 2560 px.
+    Pista fuerte: es la misma sesión de estudio que el clip de portada
+    (Kampus Production en Pexels); el original debería estar en la ficha
+    de fotos de ese mismo set.
+tajo-01.jpg   <=  banco libre | procedencia por reponer | tajo, 2200 px.
+cita-01.jpg   <=  banco libre | procedencia por reponer | cita, 2200 px.
+    Pista fuerte: misma sesión que la serie de vendaje neuromuscular de
+    Pexels (páginas 5793444 y 5793445).
+mos1-01.jpg   <=  banco libre | procedencia por reponer | mosaico, 1200 px.
+mos3-01.jpg   <=  banco libre | procedencia por reponer | mosaico, 1200 px.
+
+MAPA DE UBICACION — mapa-01.jpg
+  768 x 768 · zoom 14 · centro -41.471798, -72.9395915
+  Mosaicos de OpenStreetMap pegados en una sola imagen, con el marcador
+  dibujado encima. Datos (c) OpenStreetMap contributors, licencia ODbL:
+  la atribucion tiene que ir VISIBLE junto al mapa, en el pie de la figura.
+  https://www.openstreetmap.org/copyright

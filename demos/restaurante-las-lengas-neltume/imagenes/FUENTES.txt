@@ -1,0 +1,22 @@
+FUENTES DE LAS IMAGENES - Restaurante Las Lengas Rehecha el 13-09-2026 (presentacion antes que texto). Fotos de REFERENCIA de bancos libres: ninguna es del local; las verdaderas las tiene que mandar el negocio. 
+port-01.jpg  <-  pozo-p-len-lenga\012.jpg  |  pexels (Pexels License)  |  autor: Franco Garcia  |  https://www.pexels.com/es-es/foto/otono-tiro-vertical-wallpaper-17158709/  |  consulta: "Nothofagus pumilio"
+hund1-01.jpg  <-  pozo-p-len-cazuela\009.jpg  |  pexels (Pexels License)  |  autor: Anhelina Vasylyk  |  https://www.pexels.com/es-es/foto/sopa-tibia-de-pollo-con-fideos-en-tazon-blanco-34326231/  |  consulta: "chicken soup bowl"
+hund2-01.jpg  <-  pozo-p-len-vegetal\008.jpg  |  pexels (Pexels License)  |  autor: Fernando Capetillo  |  https://www.pexels.com/es-es/foto/verduras-mezcladas-frescas-cocinando-en-olla-30700510/  |  consulta: "vegetable stew"
+hund3-01.jpg  <-  pozo-p-len-pan\007.jpg  |  pexels (Pexels License)  |  autor: Magda Ehlers  |  https://www.pexels.com/es-es/foto/pan-comida-hecho-en-casa-delicioso-4267966/  |  consulta: "homemade bread"
+hund4-01.jpg  <-  pozo-p-len-trucha\008.jpg  |  pexels (Pexels License)  |  autor: Sascha Weber  |  https://www.pexels.com/es-es/foto/comida-de-madera-pez-pescado-25474365/  |  consulta: "grilled trout"
+hund5-01.jpg  <-  pozo-p-len-postre\008.jpg  |  pexels (Pexels License)  |  autor: Ella Olsson  |  https://www.pexels.com/es-es/foto/foto-en-primer-plano-de-cupcake-de-frambuesas-3026807/  |  consulta: "berry tart"
+hund6-01.jpg  <-  pozo-p-len-cafe\009.jpg  |  pexels (Pexels License)  |  autor: Jubair Bin Iqbal  |  https://www.pexels.com/es-es/foto/foto-de-primer-plano-de-la-taza-de-te-blanca-1566308/  |  consulta: "coffee cup wood table"
+banda-01.jpg  <-  pozo-p-len-huilo\001.jpg  |  pexels (Pexels License)  |  autor: Max Parada  |  https://www.pexels.com/es-es/foto/vista-aerea-de-una-cascada-turquesa-en-panguipulli-35984892/  |  consulta: "Huilo Huilo"
+cita-01.jpg  <-  pozo-p-len-comedor\011.jpg  |  pexels (Pexels License)  |  autor: Faruk Tokluoğlu  |  https://www.pexels.com/es-es/foto/restaurante-mesas-rustico-sillas-20336655/  |  consulta: "rustic restaurant wood interior"
+mos1-01.jpg  <-  pozo-p-len-lenga\011.jpg  |  pexels (Pexels License)  |  autor: Nati  |  https://www.pexels.com/es-es/foto/hojas-de-otono-vibrantes-en-un-entorno-forestal-34792960/  |  consulta: "Nothofagus pumilio"
+mos2-01.jpg  <-  pozo-p-len-comedor\008.jpg  |  pexels (Pexels License)  |  autor: Timur Saglambilek  |  https://www.pexels.com/es-es/foto/fotografia-de-alto-angulo-de-utensilios-con-servilletas-915065/  |  consulta: "rustic restaurant wood interior"
+mos3-01.jpg  <-  pozo-p-len-cafe\004.jpg  |  pexels (Pexels License)  |  autor: Deivis Sandoval  |  https://www.pexels.com/es-es/foto/madera-beber-bebida-mesa-23158191/  |  consulta: "coffee cup wood table"
+mos4-01.jpg  <-  pozo-p-len-huilo\009.jpg  |  pexels (Pexels License)  |  autor: Ema Reynares  |  https://www.pexels.com/es-es/foto/paisaje-acantilado-rio-rock-17676697/  |  consulta: "Huilo Huilo"
+mos5-01.jpg  <-  pozo-p-len-postre\006.jpg  |  pexels (Pexels License)  |  autor: Maksim Goncharenok  |  https://www.pexels.com/es-es/foto/hecho-en-casa-delicioso-fotografia-de-comida-comida-sana-6163264/  |  consulta: "berry tart"
+mos6-01.jpg  <-  pozo-p-len-lenga\008.jpg  |  pexels (Pexels License)  |  autor: Hazel Sarmiento  |  https://www.pexels.com/es-es/foto/naturaleza-planta-hojas-otono-18546907/  |  consulta: "Nothofagus pumilio"
+
+BRUMA (bruma-pag-0N.png y bruma-osc-0N.png, 30x20): las MISMAS fotos, recortadas a 3:2, reducidas y
+recoloreadas con C:\devs\demos\hacer-bruma.ps1 (clara >= 0,68 de luminancia / oscura <= 0,05). No suman fuentes.
+    pagina: port-01.jpg, cita-01.jpg, hund1-01.jpg, hund3-01.jpg, hund6-01.jpg, mos1-01.jpg, mos3-01.jpg, hund4-01.jpg   |   oscuras: port-01.jpg, cita-01.jpg, mos1-01.jpg
+
+MAPA: iframe de Google Maps (embed publico, sin clave). No hay imagen de mapa.

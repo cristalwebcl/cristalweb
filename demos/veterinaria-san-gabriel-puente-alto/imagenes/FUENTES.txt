@@ -1,0 +1,22 @@
+FUENTES DE LAS IMAGENES - Veterinaria San Gabriel Rehecha el 14-09-2026 (presentacion antes que texto). Fotos de REFERENCIA de bancos libres: ninguna es del local; las verdaderas las tiene que mandar el negocio. 
+port-01.jpg  <-  pozo-p-sg-calle\001.jpg  |  pexels (Pexels License)  |  autor: Tomás Asurmendi  |  https://www.pexels.com/es-es/foto/perrito-en-barrio-tranquilo-de-cordoba-iii-31689259/  |  consulta: "dog sidewalk"
+hund1-01.jpg  <-  pozo-p-sg-placa\003.jpg  |  pexels (Pexels License)  |  autor: Arian Fernandez  |  https://www.pexels.com/es-es/foto/perro-mascota-habitacion-acostado-26840139/  |  consulta: "dog collar tag"
+hund2-01.jpg  <-  pozo-p-sg-placa\001.jpg  |  pexels (Pexels License)  |  autor: Gerardo Pantoja  |  https://www.pexels.com/es-es/foto/perro-blanco-junto-a-un-lago-en-guanajuato-mexico-29870326/  |  consulta: "dog collar tag"
+hund3-01.jpg  <-  pozo-p-sg-placa\010.jpg  |  pexels (Pexels License)  |  autor: Gerardo Pantoja  |  https://www.pexels.com/es-es/foto/perro-jugueton-en-un-entorno-natural-pintoresco-al-aire-libre-29870331/  |  consulta: "dog collar tag"
+hund4-01.jpg  <-  pozo-p-sg-manta\009.jpg  |  pexels (Pexels License)  |  autor: Ryszard Zaleski  |  https://www.pexels.com/es-es/foto/cama-animal-perro-mascota-8191847/  |  consulta: "dog sleeping blanket"
+hund5-01.jpg  <-  pozo-p-sg-correa\006.jpg  |  pexels (Pexels License)  |  autor: German Suarez  |  https://www.pexels.com/es-es/foto/perro-feliz-disfrutando-del-tiempo-al-aire-libre-con-su-dueno-33715592/  |  consulta: "dog leash"
+hund6-01.jpg  <-  pozo-p-sg-plaza\008.jpg  |  pexels (Pexels License)  |  autor: E. Alfro  |  https://www.pexels.com/es-es/foto/paseo-al-atardecer-en-el-parque-panoramico-de-roma-36840163/  |  consulta: "dog park grass"
+banda-01.jpg  <-  pozo-p-sg-reja\010.jpg  |  pexels (Pexels License)  |  autor: Davide Negro  |  https://www.pexels.com/es-es/foto/perro-blanco-curioso-detras-de-una-valla-roja-al-aire-libre-34606624/  |  consulta: "dog gate fence"
+cita-01.jpg  <-  pozo-p-sg-reja\011.jpg  |  pexels (Pexels License)  |  autor: Barnabas  |  https://www.pexels.com/es-es/foto/animal-perro-mascota-mono-11994267/  |  consulta: "dog gate fence"
+mos1-01.jpg  <-  pozo-p-sg-reja\006.jpg  |  pexels (Pexels License)  |  autor: Eleonora Vokueva  |  https://www.pexels.com/es-es/foto/perros-marrones-y-blancos-detras-de-una-verja-al-aire-libre-37530316/  |  consulta: "dog gate fence"
+mos2-01.jpg  <-  pozo-p-sg-calle\004.jpg  |  pexels (Pexels License)  |  autor: Sergio Arteaga  |  https://www.pexels.com/es-es/foto/perro-mascota-pavimento-bulldog-18213035/  |  consulta: "dog sidewalk"
+mos3-01.jpg  <-  pozo-p-sg-placa\011.jpg  |  pexels (Pexels License)  |  autor: Bianca Beltrán  |  https://www.pexels.com/es-es/foto/chihuahua-negro-viejo-15794795/  |  consulta: "dog collar tag"
+mos4-01.jpg  <-  pozo-p-sg-plato\012.jpg  |  pexels (Pexels License)  |  autor: Kampus Production  |  https://www.pexels.com/es-es/foto/comiendo-animal-perro-mascota-8057552/  |  consulta: "dog water bowl"
+mos5-01.jpg  <-  pozo-p-sg-reja\009.jpg  |  pexels (Pexels License)  |  autor: Alex  Midence  |  https://www.pexels.com/es-es/foto/flores-jardin-animal-mascota-12496933/  |  consulta: "dog gate fence"
+mos6-01.jpg  <-  pozo-p-sg-plaza\010.jpg  |  pexels (Pexels License)  |  autor: Sami  Abdullah  |  https://www.pexels.com/es-es/foto/cachorro-jugueton-en-el-paisaje-de-un-parque-urbano-33219226/  |  consulta: "dog park grass"
+
+BRUMA (bruma-pag-0N.png y bruma-osc-0N.png, 30x20): las MISMAS fotos, recortadas a 3:2, reducidas y
+recoloreadas con C:\devs\demos\hacer-bruma.ps1 (clara >= 0,68 de luminancia / oscura <= 0,05). No suman fuentes.
+    pagina: mos2-01.jpg, mos4-01.jpg, hund4-01.jpg, hund1-01.jpg, mos2-01.jpg   |   oscuras: mos4-01.jpg, hund1-01.jpg, mos2-01.jpg
+
+MAPA: iframe de Google Maps (embed publico, sin clave). No hay imagen de mapa.

@@ -1,0 +1,162 @@
+FUENTES DE LAS IMÁGENES Y DE LOS VÍDEOS
+Cirus Bar · Puerto Montt — demo CristalWeb
+Actualizado el 08-09-2026
+
+Ninguna de estas fotos es del local. Son imágenes de oficio, de bancos
+libres, elegidas por lo que MUESTRAN (parrilla, olla, salón, disco) y no
+por dónde fueron tomadas. En la página se dice así, en la sección del
+dueño y en el pie de la foto del salón.
+
+Filtros aplicados a todas: sin marca de tercero legible, sin precios
+dentro de la foto, sin menores identificables, sin rostro reconocible,
+nada de plus.unsplash (es de pago aunque el buscador lo cuele).
+
+
+── AÑADIDA EL 09-09-2026 (revisión) ────────────────────────────────────
+
+telon-01.jpg  ·  1200 × 800  ·  84 KB  ·  telón de la banda del barrio
+   Banco     pexels.com
+   Licencia  Pexels License (uso libre, sin atribución obligatoria)
+   Autor     Hernán Santarelli
+   Título    «Tables in an empty restaurant» (interior de restaurante
+             cálidamente iluminado, mesas puestas y vacías, de noche)
+   Página    https://www.pexels.com/photo/tables-in-an-empty-restaurant-11794317/
+   Original  https://images.pexels.com/photos/11794317/pexels-photo-11794317.jpeg  (3110 × 2073)
+   Recorte   ninguno (el original ya es 3:2 exacto); escalado a 1200 px
+             de ancho, calidad 62
+   Nota      REEMPLAZA al telón anterior, que era una MESA DE BANQUETE AL
+             AIRE LIBRE —mantel blanco, ramos de paniculata, sillas de
+             jardín— detrás del título «Un local de barrio, no un local
+             de centro». Era el mismo error de «fondo genérico que
+             promete otro lugar» por el que el 08-09-2026 se cambió
+             mos6-01, y quedó sin cambiar en la foto más grande de esa
+             banda: prometía un salón de eventos justo donde el texto
+             dice que esto NO es la costanera ni el mall.
+             El reemplazo es un comedor modesto de noche, con la calle
+             detrás del ventanal: luz propia (lámparas cálidas) contra
+             el fondo #1B1815, que es la regla de luminancia opuesta.
+             Sin marcas legibles, sin precios; las dos figuras que se
+             ven a través del vidrio están desenfocadas, a contraluz y
+             no permiten identificar a nadie — y al 20 % de opacidad
+             del telón quedan como una mancha.
+
+
+── AÑADIDAS EL 08-09-2026 ──────────────────────────────────────────────
+
+mos5-01.jpg  ·  1200 × 800  ·  103 KB  ·  mosaico, quinta celda
+   Banco     pexels.com
+   Licencia  Pexels License (uso libre, sin atribución obligatoria)
+   Autor     Anna Bondarenko
+   Título    «Pan, comida, rústico, baguete»
+   Página    https://www.pexels.com/es-es/foto/pan-comida-rustico-baguete-7635061/
+   Original  https://images.pexels.com/photos/7635061/pexels-photo-7635061.jpeg
+   Recorte   3:2, escalado a 1200 px de ancho, calidad 80
+   Nota      Reemplazó a un tocadiscos de DJ con mezclador azul que
+             venía de la construcción anterior: no era una vitrola de
+             1962 y, sobre todo, no salía de la cocina, que es lo que
+             promete el título de esa sección.
+
+mos6-01.jpg  ·  1200 × 800  ·  103 KB  ·  mosaico, sexta celda
+   Banco     pexels.com
+   Licencia  Pexels License (uso libre, sin atribución obligatoria)
+   Autor     jessica olivella
+   Título    «Empanadas tradicionales en tabla de madera»
+   Página    https://www.pexels.com/es-es/foto/empanadas-argentinas-tradicionales-en-tabla-de-madera-36905236/
+   Original  https://images.pexels.com/photos/36905236/pexels-photo-36905236.jpeg
+   Recorte   3:2, escalado a 1200 px de ancho, calidad 80
+   Nota      Reemplazó a una mesa de banquete con candelabros de plata y
+             arreglos florales: prometía un salón de eventos, que es
+             justo el error de «fondo genérico que promete otro lugar».
+
+mit-01.jpg  ·  1500 × 2000  ·  249 KB  ·  mitades, el salón
+   Banco     pexels.com
+   Licencia  Pexels License (uso libre, sin atribución obligatoria)
+   Autor     Esra Nurdoğan
+   Título    «Acogedor interior de restaurante tradicional en Şirince»
+   Página    https://www.pexels.com/es-es/foto/acogedor-interior-de-restaurante-tradicional-en-turkiye-34260417/
+   Original  https://images.pexels.com/photos/34260417/pexels-photo-34260417.jpeg  (4160 × 6240)
+   Recorte   3:4 centrado, escalado a 1500 px de ancho, calidad ~84
+   Nota      Es un comedor de OFICIO, no el de Miraflores 1177. Va con
+             pie de foto marcado como ejemplo dentro de la página, que
+             es la regla: ambiente sí, inventario no.
+
+cita-01.jpg  ·  2200 × 1160  ·  95 KB  ·  banda de cita
+   Es un FOTOGRAMA del clip video/cita.mp4 (segundo 5), sacado del
+   original en 4K antes de comprimir. Misma licencia y mismo autor que
+   el clip; ver abajo. Se hizo así a propósito: la foto y el vídeo de
+   una misma banda tienen que ser la misma escena, o al fundirse se ve
+   el corte. Reemplazó a la foto anterior de la banda (una botella de
+   vino sobre fondo blanco), que bajo el velo al .72 no se leía y que
+   además prometía otro tipo de local.
+
+
+── VÍDEOS DE FONDO ─────────────────────────────────────────────────────
+
+video/port.mp4  ·  1280 × 720  ·  10,0 s  ·  1,46 MB  ·  sin audio
+   Banco     pexels.com
+   Licencia  Pexels License (uso libre, sin atribución obligatoria)
+   Autor     Thomas Chauke.
+   Título    «Sizzling meat on barbecue grill with flames»
+   Página    https://www.pexels.com/video/sizzling-meat-on-barbecue-grill-with-flames-32546598/
+   Original  https://videos.pexels.com/video-files/32546598/13879991_1920_1080_24fps.mp4
+   Recorte   del segundo 2 al 12, escalado a 1280 × 720, 24 fps,
+             H.264 a 1250 kbps, pista de audio eliminada (-an)
+   Contenido carnes sobre la parrilla y una pinza. Sin rostros, sin
+             marcas legibles, sin precios.
+
+video/cita.mp4  ·  1280 × 720  ·  10,0 s  ·  1,05 MB  ·  sin audio
+   Banco     pexels.com
+   Licencia  Pexels License (uso libre, sin atribución obligatoria)
+   Autor     K
+   Título    «A boiling soup on a cooking pot»
+   Página    https://www.pexels.com/video/a-boiling-soup-on-a-cooking-pot-3967265/
+   Original  https://videos.pexels.com/video-files/3967265/3967265-uhd_4096_2160_24fps.mp4
+   Recorte   del segundo 1 al 11, escalado a 1280 × 720, 24 fps,
+             H.264 a 880 kbps, pista de audio eliminada (-an)
+   Contenido una olla grande de aluminio con un guiso hirviendo. Sin
+             gente, sin marcas, sin etiquetas.
+
+
+── DE LA CONSTRUCCIÓN DEL 02-09-2026 ───────────────────────────────────
+
+Estas seis se bajaron con FotoRadar de bancos libres (pexels, pixabay,
+pxhere o commons — los cuatro entregan licencias de uso libre sin
+atribución obligatoria), pero AQUELLA construcción no dejó anotada la
+URL de origen de cada archivo y la carpeta de búsqueda ya no está en
+C:\devs\material\busquedas. Se anota lo que consta y queda como tarea
+número 1 de QUE-FOTOS-FALTAN.md: hay que recuperar las URL antes de
+publicar esto en ninguna parte.
+
+port-01.jpg    2560 × 1707  454 KB  portada: parrilla encendida, brasas y leña
+tajo-01.jpg    2200 × 1469  211 KB  tajo: mástil de guitarra y una mano tocando
+mos1-01.jpg    1200 ×  788  115 KB  mosaico: carne sobre el carbón
+mos2-01.jpg    1200 ×  800   67 KB  mosaico: olla hirviendo
+mos3-01.jpg    1200 ×  675  121 KB  mosaico: plato de guiso servido
+mos4-01.jpg    1200 ×  801  169 KB  mosaico: costillar y carne dentro del asador
+
+(mos5-01 y mos6-01 eran de esta misma tanda y el 08-09-2026 se
+reemplazaron por descargas nuevas; telon-01 también era de esta tanda y
+se reemplazó el 09-09-2026. Los tres, con su procedencia anotada arriba.)
+
+Revisadas una por una el 08-09-2026 contra los filtros de contenido, y
+otra vez el 09-09-2026 mirando cada archivo entero y no sólo la página:
+ninguna tiene marca legible, precio, menor ni rostro reconocible. La
+mano de tajo-01 no permite identificar a nadie.
+
+
+── CONTROL ─────────────────────────────────────────────────────────────
+
+11 archivos JPEG · 1,79 MB
+ 6 tratamientos distintos: port, tajo, cita, telon, mos1-6, mit
+ 2 clips · 2,51 MB · los dos a 720p y sin pista de audio
+Ninguna huérfana: las once están referenciadas en index.html.
+Las once cargan y sus width/height coinciden con el archivo real,
+comprobado el 09-09-2026 sobre la página servida (11 de 11, entre 56 y
+79 ms cada una).
+
+MAPA DE UBICACION — mapa-01.jpg
+  768 x 768 · zoom 14 · centro -41.471798, -72.9395915
+  Mosaicos de OpenStreetMap pegados en una sola imagen, con el marcador
+  dibujado encima. Datos (c) OpenStreetMap contributors, licencia ODbL:
+  la atribucion tiene que ir VISIBLE junto al mapa, en el pie de la figura.
+  https://www.openstreetmap.org/copyright

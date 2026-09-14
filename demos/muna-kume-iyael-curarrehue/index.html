@@ -27,7 +27,7 @@
 
 <div class="propuesta">
   <p class="propuesta__que">Propuesta de sitio web — preparada para <b>Muna Kume Iyael</b> por CristalWeb</p>
-  <p class="propuesta__gancho">4,9 con 189 reseñas en la Aldea Intercultural de Curarrehue, y quien busca dónde comer en el pueblo no los encuentra en Google.</p>
+  <p class="propuesta__gancho">4,9 con 189 reseñas en la Aldea Intercultural de Curarrehue y ni un teléfono publicado en la ficha (verificado el 21-08-2026): el que quiere reservar desde Pucón no tiene a dónde escribir. Ésta es la página que debería estar ahí.</p>
 </div>
 
 <header class="cab" id="cab">
@@ -37,6 +37,7 @@
   </a>
   <nav class="cab__nav" aria-label="Secciones">
     <a href="#glosario">Los ingredientes</a>
+    <a href="#despensa">El año</a>
     <a href="#temporada">La temporada</a>
   </nav>
   <a class="cab__res" href="#reservar">
@@ -63,12 +64,21 @@
     <span class="rama rama--2"></span>
   </div>
 
-  <div class="portada__texto">
+  <!-- `cascada` para que las cinco piezas del titular entren escalonadas
+       a 70 ms y no todas de golpe: el escalonado ya existe en el CSS y no
+       cuesta una linea nueva. El indice va por nth-child, nunca en un
+       atributo de estilo en linea con --i, que la CSP bloquearia sin
+       avisar. -->
+  <div class="portada__texto cascada">
     <p class="sitio">Restaurante · Curarrehue</p>
     <h1 id="t-portada">Antes de<br>probarlo,<br>saber qué es</h1>
     <p class="bajada">Piñón, changle, catuto, digüeñe. Media carta está escrita con
       palabras que el que viene de afuera no conoce, y preguntar cada plato al
       mesero corta la comida. Acá está explicado antes de sentarse.</p>
+    <p class="portada__ir">
+      <a class="boton boton--claro" href="#glosario">Ver los cinco ingredientes</a>
+      <a class="boton boton--linea" href="#reservar">Reservar una mesa</a>
+    </p>
     <dl class="specs">
       <div class="spec"><dt>nota en Google</dt><dd>4,9</dd></div>
       <div class="spec"><dt>reseñas</dt><dd>189</dd></div>
@@ -76,20 +86,39 @@
   </div>
 </section>
 
+<!-- ========= LAS CIFRAS =========
+     Cuatro números, y el último es la herida. Sólo cuenta el que costó
+     verificar (las reseñas); los otros tres son aritmética de la propia
+     página y un contador ahí se lee como truco. El valor final va
+     escrito dentro del <b>: sin JS se lee igual. -->
+<section class="cifras" aria-label="Muna Kume Iyael en números">
+  <ul class="cifras__lista cascada">
+    <li><b>4,9</b><span>de nota en Google, al 21-08-2026</span></li>
+    <li><b data-cuenta="189">189</b><span>reseñas que ya la respaldan</span></li>
+    <li><b>5</b><span>ingredientes explicados en esta página</span></li>
+    <li><b>0</b><span>teléfonos publicados en su ficha</span></li>
+  </ul>
+</section>
+
 <!-- ========= LA PIEZA FIRMA — ESTRUCTURA J ========= -->
 <section class="glosario con-telon" id="glosario" aria-labelledby="t-glosario">
   <div class="telon" aria-hidden="true">
-    <img src="imagenes/telon-01.jpg" width="1200" height="900" decoding="async" alt="">
+    <img src="imagenes/telon-01.jpg" width="1200" height="900" loading="lazy" decoding="async" alt="">
   </div>
 
   <!-- AURA DE COLOR: la foto de rubro reventada a desenfoque. No se lee
        como imagen: aporta color y luz detras de una seccion que si no
        seria fondo plano. Aca el desenfoque SI es el efecto, no un parche,
        y por eso el archivo va chico: a 64 px de blur, mas resolucion no
-       cambia nada. Sin loading=lazy porque el elemento va en absoluto con
-       z-index negativo y el navegador nunca lo considera visible. -->
+       cambia nada.
+       Va con loading=lazy como todas las demas menos la portada. Se
+       dudaba de si un elemento en absoluto y con z-index negativo
+       llegaria a pedirse alguna vez; comprobado en la pagina viva el
+       10-09-2026: si. La carga diferida mira la GEOMETRIA, no el orden
+       de pintado, y esta caja cae dentro de la primera pantalla y
+       media. -->
   <div class="aura" aria-hidden="true">
-    <img src="imagenes/aura-01.jpg" width="900" height="675" decoding="async" alt="">
+    <img src="imagenes/aura-01.jpg" width="900" height="675" loading="lazy" decoding="async" alt="">
   </div>
 
   <div class="glosario__cabecera">
@@ -101,7 +130,7 @@
     <p class="marca-ejemplo" data-ejemplo="Referencia general de la cocina de la zona — la carta la define el local"></p>
   </div>
 
-  <div class="fichas">
+  <div class="fichas cascada">
 
     <!-- ── PIÑÓN ── -->
     <article class="ficha">
@@ -197,7 +226,18 @@
     ser información de la casa.</p>
 </section>
 
-<!-- ========= LA TEMPORADA MANDA ========= -->
+<!-- ========= TAJO — FRANJA A SANGRE =========
+     Los dos tercios de arriba van nítidos; el velo sube desde abajo y
+     sólo hasta donde hay texto. La foto no se ensucia. -->
+<figure class="tajo">
+  <img src="imagenes/tajo-01.jpg" width="2200" height="1238"
+       loading="lazy" decoding="async" alt="">
+  <figcaption class="tajo__txt">
+    <p>Media carta viene de acá afuera</p>
+    <span class="tajo__pie">bosque de araucarias · la despensa está a la vuelta</span>
+  </figcaption>
+</figure>
+
 <!-- ========= MEDIA PANTALLA ========= -->
 <section class="mitades" aria-labelledby="t-mitades">
   <div class="mitades__foto">
@@ -211,13 +251,164 @@
   </div>
 </section>
 
+<!-- ========= EL QUE SUBE DESDE PUCÓN — sección con telón =========
+     Segundo público. El telón va NÍTIDO y bajo de opacidad: se lee como
+     foto, no como mancha. -->
+<section class="subida con-telon" aria-labelledby="t-subida">
+  <div class="telon telon--b" aria-hidden="true">
+    <img src="imagenes/telb-01.jpg" width="1400" height="788"
+         loading="lazy" decoding="async" alt="">
+  </div>
+  <div class="subida__cuerpo">
+    <p class="antetitulo antetitulo--claro">El otro público</p>
+    <h2 id="t-subida">El que sube<br>desde Pucón</h2>
+    <p class="entrada">Curarrehue está camino al paso, subiendo por la ruta
+      internacional. Casi nadie llega de casualidad: se llega decidido. Y esa
+      decisión se toma abajo, con el teléfono en la mano, antes de que se acabe
+      la señal.</p>
+    <ul class="pasos">
+      <li>Busca dónde comer <b>antes de salir</b>, no cuando ya está en el pueblo.</li>
+      <li>No pregunta cuánto cuesta: pregunta <b>qué va a comer</b>, porque el viaje ya lo pagó.</li>
+      <li>Si no encuentra nada escrito, <b>entra donde vea gente</b> — y eso es una moneda al aire.</li>
+    </ul>
+    <p class="subida__cierre">Las 189 reseñas ya dicen que acá se come bien. Lo que
+      falta es que alguien las pueda leer con el auto todavía estacionado en Pucón.</p>
+  </div>
+</section>
 
+<!-- ========= EL AÑO EN UNA TABLA ========= -->
+<section class="despensa" id="despensa" aria-labelledby="t-despensa">
+  <div class="despensa__cuerpo">
+    <p class="antetitulo">La despensa, mes a mes</p>
+    <h2 id="t-despensa">El año entero<br>en una tabla</h2>
+    <p class="entrada">Lo mismo que dicen las cinco fichas, junto y de un vistazo:
+      cuándo está fresco cada ingrediente. Es la tabla que decide el fin de semana
+      en que alguien sube.</p>
 
-<!-- ========= TAJO — FRANJA A SANGRE ========= -->
-<div class="tajo" aria-hidden="true">
-  <img src="imagenes/banda-01.jpg" width="1000" height="501"
-       loading="lazy" decoding="async" alt="">
-</div>
+    <div class="tabla__caja">
+      <table class="tabla">
+        <caption class="tabla__cap">Temporadas generales de la zona. <span class="falta">falta: que el local confirme las suyas</span></caption>
+        <thead>
+          <tr>
+            <th scope="col">Ingrediente</th>
+            <th scope="col"><abbr title="enero">E</abbr></th>
+            <th scope="col"><abbr title="febrero">F</abbr></th>
+            <th scope="col"><abbr title="marzo">M</abbr></th>
+            <th scope="col"><abbr title="abril">A</abbr></th>
+            <th scope="col"><abbr title="mayo">M</abbr></th>
+            <th scope="col"><abbr title="junio">J</abbr></th>
+            <th scope="col"><abbr title="julio">J</abbr></th>
+            <th scope="col"><abbr title="agosto">A</abbr></th>
+            <th scope="col"><abbr title="septiembre">S</abbr></th>
+            <th scope="col"><abbr title="octubre">O</abbr></th>
+            <th scope="col"><abbr title="noviembre">N</abbr></th>
+            <th scope="col"><abbr title="diciembre">D</abbr></th>
+            <th scope="col" class="tabla__nota">Cómo llega</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">Piñón</th>
+            <td data-m="E" class="c"><span class="oculto">fuera de temporada</span></td>
+            <td data-m="F" class="c"><span class="oculto">fuera de temporada</span></td>
+            <td data-m="M" class="c c--si"><span class="oculto">su época</span></td>
+            <td data-m="A" class="c c--si"><span class="oculto">su época</span></td>
+            <td data-m="M" class="c c--si"><span class="oculto">su época</span></td>
+            <td data-m="J" class="c"><span class="oculto">fuera de temporada</span></td>
+            <td data-m="J" class="c"><span class="oculto">fuera de temporada</span></td>
+            <td data-m="A" class="c"><span class="oculto">fuera de temporada</span></td>
+            <td data-m="S" class="c"><span class="oculto">fuera de temporada</span></td>
+            <td data-m="O" class="c"><span class="oculto">fuera de temporada</span></td>
+            <td data-m="N" class="c"><span class="oculto">fuera de temporada</span></td>
+            <td data-m="D" class="c"><span class="oculto">fuera de temporada</span></td>
+            <td class="tabla__nota">Fresco en otoño. Seco o congelado aguanta el año.</td>
+          </tr>
+          <tr>
+            <th scope="row">Merkén</th>
+            <td data-m="E" class="c c--hay"><span class="oculto">hay</span></td>
+            <td data-m="F" class="c c--hay"><span class="oculto">hay</span></td>
+            <td data-m="M" class="c c--hay"><span class="oculto">hay</span></td>
+            <td data-m="A" class="c c--hay"><span class="oculto">hay</span></td>
+            <td data-m="M" class="c c--hay"><span class="oculto">hay</span></td>
+            <td data-m="J" class="c c--hay"><span class="oculto">hay</span></td>
+            <td data-m="J" class="c c--hay"><span class="oculto">hay</span></td>
+            <td data-m="A" class="c c--hay"><span class="oculto">hay</span></td>
+            <td data-m="S" class="c c--hay"><span class="oculto">hay</span></td>
+            <td data-m="O" class="c c--hay"><span class="oculto">hay</span></td>
+            <td data-m="N" class="c c--hay"><span class="oculto">hay</span></td>
+            <td data-m="D" class="c c--hay"><span class="oculto">hay</span></td>
+            <td class="tabla__nota">Seco. Se muele una vez y dura.</td>
+          </tr>
+          <tr>
+            <th scope="row">Catuto</th>
+            <td data-m="E" class="c c--hay"><span class="oculto">hay</span></td>
+            <td data-m="F" class="c c--hay"><span class="oculto">hay</span></td>
+            <td data-m="M" class="c c--hay"><span class="oculto">hay</span></td>
+            <td data-m="A" class="c c--hay"><span class="oculto">hay</span></td>
+            <td data-m="M" class="c c--hay"><span class="oculto">hay</span></td>
+            <td data-m="J" class="c c--hay"><span class="oculto">hay</span></td>
+            <td data-m="J" class="c c--hay"><span class="oculto">hay</span></td>
+            <td data-m="A" class="c c--hay"><span class="oculto">hay</span></td>
+            <td data-m="S" class="c c--hay"><span class="oculto">hay</span></td>
+            <td data-m="O" class="c c--hay"><span class="oculto">hay</span></td>
+            <td data-m="N" class="c c--hay"><span class="oculto">hay</span></td>
+            <td data-m="D" class="c c--hay"><span class="oculto">hay</span></td>
+            <td class="tabla__nota">Es trigo amasado: se hace el día que se sirve.</td>
+          </tr>
+          <tr>
+            <th scope="row">Changle</th>
+            <td data-m="E" class="c"><span class="oculto">fuera de temporada</span></td>
+            <td data-m="F" class="c"><span class="oculto">fuera de temporada</span></td>
+            <td data-m="M" class="c"><span class="oculto">fuera de temporada</span></td>
+            <td data-m="A" class="c c--si"><span class="oculto">su época</span></td>
+            <td data-m="M" class="c c--si"><span class="oculto">su época</span></td>
+            <td data-m="J" class="c c--si"><span class="oculto">su época</span></td>
+            <td data-m="J" class="c c--si"><span class="oculto">su época</span></td>
+            <td data-m="A" class="c"><span class="oculto">fuera de temporada</span></td>
+            <td data-m="S" class="c"><span class="oculto">fuera de temporada</span></td>
+            <td data-m="O" class="c"><span class="oculto">fuera de temporada</span></td>
+            <td data-m="N" class="c"><span class="oculto">fuera de temporada</span></td>
+            <td data-m="D" class="c"><span class="oculto">fuera de temporada</span></td>
+            <td class="tabla__nota">Llega con las lluvias. Sale del bosque, no de bodega.</td>
+          </tr>
+          <tr>
+            <th scope="row">Digüeñe</th>
+            <td data-m="E" class="c"><span class="oculto">fuera de temporada</span></td>
+            <td data-m="F" class="c"><span class="oculto">fuera de temporada</span></td>
+            <td data-m="M" class="c"><span class="oculto">fuera de temporada</span></td>
+            <td data-m="A" class="c"><span class="oculto">fuera de temporada</span></td>
+            <td data-m="M" class="c"><span class="oculto">fuera de temporada</span></td>
+            <td data-m="J" class="c"><span class="oculto">fuera de temporada</span></td>
+            <td data-m="J" class="c"><span class="oculto">fuera de temporada</span></td>
+            <td data-m="A" class="c"><span class="oculto">fuera de temporada</span></td>
+            <td data-m="S" class="c c--si"><span class="oculto">su época</span></td>
+            <td data-m="O" class="c c--si"><span class="oculto">su época</span></td>
+            <td data-m="N" class="c c--si"><span class="oculto">su época</span></td>
+            <td data-m="D" class="c"><span class="oculto">fuera de temporada</span></td>
+            <td class="tabla__nota">Pocas semanas, cuando brota el hualle. Es el más corto.</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <p class="despensa__nota">Lo que esta tabla <b>no</b> hace: prometer fechas. Marca
+      meses, no días, porque la temporada la decide el año y no el calendario.</p>
+  </div>
+</section>
+
+<!-- ========= LA CITA A SANGRE ========= -->
+<section class="cita" aria-labelledby="t-cita">
+  <div class="cita__foto" aria-hidden="true">
+    <img src="imagenes/cita-01.jpg" width="2560" height="1707"
+         loading="lazy" decoding="async" alt="">
+  </div>
+  <blockquote class="cita__texto">
+    <p id="t-cita">Los nombres no se traducen, se explican<br>
+      <span class="cita__eco">Y explicados, se piden</span></p>
+  </blockquote>
+</section>
+
+<!-- ========= LA TEMPORADA MANDA ========= -->
 <section class="temporada" id="temporada" aria-labelledby="t-temporada">
   <div class="temporada__cuerpo">
     <p class="antetitulo antetitulo--claro">Por qué la carta no es siempre la misma</p>
@@ -226,7 +417,7 @@
       puede serlo: la mitad de lo que se sirve crece afuera y aparece cuando le toca.
       Eso, que suena a problema, es exactamente el argumento de venta.</p>
 
-    <div class="razones">
+    <div class="razones cascada">
       <article class="razon">
         <p class="razon__n">01</p>
         <h3>Lo que hay hoy no estaba hace dos meses</h3>
@@ -255,8 +446,65 @@
       inicio y término. La temporada la decide el año, no el calendario, y una fecha
       dura escrita en internet se convierte en un reclamo el día que el bosque se
       atrasa dos semanas.</p>
+  </div>
+</section>
 
-    <h3 class="sub">Lo que falta para completarla</h3>
+<!-- ========= LA TIRA ========= -->
+<section class="tira" aria-label="Tres imágenes del bosque de donde sale la despensa">
+  <figure class="tira__pieza">
+    <img src="imagenes/tira-01.jpg" width="1000" height="667" loading="lazy" decoding="async" alt="Un hongo abierto sobre un tronco cubierto de musgo.">
+  </figure>
+  <figure class="tira__pieza">
+    <img src="imagenes/tirb-01.jpg" width="1000" height="750" loading="lazy" decoding="async" alt="Roca cubierta de musgo y liquen, vista de cerca.">
+  </figure>
+  <figure class="tira__pieza">
+    <img src="imagenes/tirc-01.jpg" width="1000" height="501" loading="lazy" decoding="async" alt="Bosque de coníferas visto desde arriba.">
+  </figure>
+</section>
+
+<!-- ========= MOSAICO ========= -->
+<section class="mos" aria-labelledby="t-mos">
+  <h2 id="t-mos" class="mos__titulo">El árbol y el camino</h2>
+  <p class="mos__nota">Seis miradas al mismo bosque: la araucaria de donde sale el
+    piñón, y el paisaje que hay que subir para llegar hasta acá. Ninguna es del local
+    —la procedencia de cada una está en imagenes/FUENTES.txt— y el día que lleguen
+    las fotos suyas, estas seis se cambian y la página no se mueve de sitio.</p>
+  <div class="mos__grilla">
+    <figure class="mos__p">
+      <img src="imagenes/mos1-01.jpg" width="1400" height="787"
+           loading="lazy" decoding="async" alt="Un volcán nevado detrás de un bosque bajo, en la cordillera de la Araucanía.">
+    </figure>
+    <figure class="mos__p">
+      <img src="imagenes/mos2-01.jpg" width="1200" height="800"
+           loading="lazy" decoding="async" alt="Rama de araucaria de cerca: las hojas escamosas y triangulares.">
+    </figure>
+    <figure class="mos__p">
+      <img src="imagenes/mos3-01.jpg" width="1200" height="800"
+           loading="lazy" decoding="async" alt="Una araucaria sola en la ladera, frente a un volcán nevado.">
+    </figure>
+    <figure class="mos__p">
+      <img src="imagenes/mos4-01.jpg" width="1200" height="800"
+           loading="lazy" decoding="async" alt="Follaje de araucaria en sombra, casi negro.">
+    </figure>
+    <figure class="mos__p">
+      <img src="imagenes/mos5-01.jpg" width="1200" height="800"
+           loading="lazy" decoding="async" alt="Ramas de araucaria contra el cielo, con un cono cerrado en el centro.">
+    </figure>
+    <figure class="mos__p">
+      <img src="imagenes/mos6-01.jpg" width="1400" height="788"
+           loading="lazy" decoding="async" alt="Bosque de araucarias al pie de un cerro, al final de un camino.">
+    </figure>
+  </div>
+</section>
+
+<!-- ========= RESERVAR Y LLEGAR ========= -->
+<section class="reserva" id="reservar" aria-labelledby="t-reserva">
+  <div class="reserva__cuerpo">
+    <p class="antetitulo antetitulo--claro">Cómo se cierra la visita</p>
+    <h2 id="t-reserva">Reservar<br>y llegar</h2>
+    <p class="entrada">Acá va la ficha del local. Está incompleta a propósito: lo que
+      no está verificado se marca, no se inventa. Son cuatro datos y los tienen ustedes.</p>
+
     <dl class="huecos">
       <div class="hueco">
         <dt>Dirección exacta</dt>
@@ -271,10 +519,10 @@
             invierno.</span></dd>
       </div>
       <div class="hueco">
-        <dt>Si conviene reservar</dt>
+        <dt>Teléfono o WhatsApp</dt>
         <dd><span class="falta">falta</span>
-          <span class="hueco__pq">Con 189 reseñas y 4,9, es probable que en
-            temporada se llene. Decirlo es un favor al cliente.</span></dd>
+          <span class="hueco__pq">La ficha de Google no publica ninguno. Es el dato
+            que más caro sale: con 189 reseñas, alguien está intentando llamar.</span></dd>
       </div>
       <div class="hueco">
         <dt>Si hay opción sin carne</dt>
@@ -284,101 +532,88 @@
       </div>
     </dl>
 
-    <div class="reservar" id="reservar">
-      <h3 class="sub">Reservar</h3>
-      <p class="reservar__intro">Diga cuándo y cuántos son: el mensaje se arma solo.</p>
-
-      <form class="form" id="form-mesa">
-        <div class="campo">
-          <label for="f-cuando">Qué día y a qué hora</label>
-          <input id="f-cuando" name="cuando" type="text" placeholder="Sábado al mediodía" autocomplete="off">
-        </div>
-        <div class="campo">
-          <label for="f-personas">Cuántos son</label>
-          <input id="f-personas" name="personas" type="text" inputmode="numeric" placeholder="4" autocomplete="off">
-        </div>
-        <div class="campo campo--ancho">
-          <label for="f-nota">Algo que quiera preguntar <span class="opcional">(opcional)</span></label>
-          <input id="f-nota" name="nota" type="text" placeholder="¿Hay digüeñe esta semana?" autocomplete="off">
-        </div>
-
-        <p class="resumen" id="resumen" aria-live="polite">El mensaje se arma acá abajo a medida que escribe.</p>
-        <a class="boton" id="enviar" href="#reservar">Enviar por WhatsApp</a>
-        <p class="reservar__nota"><span class="falta">falta: el número</span> — la ficha
-          de Google no publica ninguno, así que el botón todavía no lleva a ninguna parte.</p>
-      </form>
+    <!-- ══ MAPA DE UBICACION ══════════════════════════════════════
+         Imagen propia: los mosaicos de OpenStreetMap se bajaron UNA
+         vez con demos/mapa-negocio.ps1, se pegaron en un solo JPEG y
+         el archivo vive en imagenes/. La CSP de esta página prohíbe
+         pedir nada a un tercero, así que un iframe de Google Maps o
+         un Leaflet desde CDN no cargarían y no darían ni un error
+         visible. El botón «Cómo llegar» sí puede ser un enlace: lo
+         prohibido es cargar recursos de afuera, no enlazar.
+         La atribución a OpenStreetMap va visible: es ODbL y la exige. -->
+    <h3 class="sub">Dónde queda</h3>
+    <div class="llegar">
+      <figure class="mapa">
+        <img src="imagenes/mapa-01.jpg" width="768" height="768"
+             loading="lazy" decoding="async"
+             alt="Mapa del centro de Curarrehue con un punto marcado sobre la Aldea Intercultural Trawupeyüm, entre la calle principal y el río Trancura.">
+        <figcaption class="mapa__pie">
+          <span class="mapa__cred">Mapa: &copy; <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener">OpenStreetMap</a> contributors</span>
+          <a class="mapa__ir" href="https://www.google.com/maps/search/?api=1&amp;query=-39.3583581,-71.585662" target="_blank" rel="noopener">Cómo llegar <span aria-hidden="true">→</span></a>
+        </figcaption>
+      </figure>
+      <div class="llegar__datos">
+        <p>El punto marcado es la <b>Aldea Intercultural Trawupeyüm</b>, que
+          es donde la ficha de Google sitúa el restaurante.</p>
+        <dl class="ruta">
+          <div>
+            <dt>Desde Pucón</dt>
+            <dd>Unos 40 km hacia el oriente por la Ruta CH-199, la misma que
+              sigue hasta el paso Mamuil Malal.</dd>
+          </div>
+          <div>
+            <dt>En el pueblo</dt>
+            <dd>La Aldea queda en el centro de Curarrehue, entre la calle
+              principal y el río Trancura.</dd>
+          </div>
+          <div>
+            <dt>El punto exacto</dt>
+            <dd>El marcador está sobre la Aldea, no sobre la puerta del local.
+              <span class="falta">falta: la dirección de la casa</span></dd>
+          </div>
+        </dl>
+        <p class="llegar__nota">El mapa es una imagen guardada en este mismo
+          sitio. Mientras usted lo mira, la página no le pide nada a Google ni
+          a ningún otro servicio: no hay nada que rastree quién lo abrió.</p>
+      </div>
     </div>
+
+    <h3 class="sub">Arme el mensaje acá</h3>
+    <p class="reserva__intro">Diga cuándo y cuántos son: el mensaje se arma solo, para
+      leerlo por teléfono o pegarlo donde corresponda. Esta página no envía nada.</p>
+
+    <form class="form" id="form-mesa" autocomplete="off">
+      <div class="campo">
+        <label for="f-cuando">Qué día y a qué hora</label>
+        <input id="f-cuando" name="cuando" type="text" placeholder="Sábado al mediodía" autocomplete="off">
+      </div>
+      <div class="campo">
+        <label for="f-personas">Cuántos son</label>
+        <input id="f-personas" name="personas" type="text" inputmode="numeric" placeholder="4" autocomplete="off">
+      </div>
+      <div class="campo campo--ancho">
+        <label for="f-nota">Algo que quiera preguntar <span class="opcional">(opcional)</span></label>
+        <input id="f-nota" name="nota" type="text" placeholder="¿Hay digüeñe esta semana?" autocomplete="off">
+      </div>
+
+      <p class="resumen" id="resumen" aria-live="polite">El mensaje se arma acá abajo a medida que escribe.</p>
+      <a class="boton" id="enviar" href="#reservar">Enviar por WhatsApp</a>
+      <p class="reservar__nota"><span class="falta">falta: el número</span> — la ficha
+        de Google no publica ninguno, así que el botón todavía no lleva a ninguna parte.
+        Cuando el local lo entregue se cambia una línea del JavaScript y queda andando.</p>
+    </form>
   </div>
 </section>
 
-</main>
-
-
-
-<!-- ========= MOSAICO ========= -->
-
-<!-- ========= LA CITA A SANGRE ========= -->
-<section class="cita" aria-labelledby="t-cita">
-  <div class="cita__foto" aria-hidden="true">
-    <img src="imagenes/cita-01.jpg" width="2560" height="1707"
-         loading="lazy" decoding="async" alt="">
-  </div>
-  <blockquote class="cita__texto">
-    <p id="t-cita">Los nombres no se traducen, se explican<br>
-      <span class="cita__eco">Y explicados, se piden</span></p>
-  </blockquote>
-</section>
-
-<!-- ========= LA TIRA ========= -->
-<section class="tira" aria-label="Tres imágenes del oficio">
-  <figure class="tira__pieza">
-    <img src="imagenes/tira-01.jpg" width="1000" height="667" loading="lazy" decoding="async" alt="Un hongo abierto sobre un tronco cubierto de musgo.">
-  </figure>
-  <figure class="tira__pieza">
-    <img src="imagenes/tirb-01.jpg" width="1000" height="750" loading="lazy" decoding="async" alt="Roca cubierta de musgo y liquen, vista de cerca.">
-  </figure>
-  <figure class="tira__pieza">
-    <img src="imagenes/tirc-01.jpg" width="1000" height="501" loading="lazy" decoding="async" alt="Bosque de coníferas visto desde arriba.">
-  </figure>
-</section>
-
-<section class="mos" aria-labelledby="t-mos">
-  <h2 id="t-mos" class="mos__titulo">La misma serie, más de cerca</h2>
-  <p class="mos__nota">Estas seis ya aparecen más arriba en la página. Vuelven acá en otro tamaño porque una sola pasada de imágenes deja el scroll vacío, y porque de cerca se ven cosas que en grande se pierden. La procedencia de cada una está en imagenes/FUENTES.txt.</p>
-  <div class="mos__grilla">
-    <figure class="mos__p">
-      <img src="imagenes/mos-01.jpg" width="780" height="439"
-           loading="lazy" decoding="async" alt="">
-    </figure>
-    <figure class="mos__p">
-      <img src="imagenes/mos-02.jpg" width="780" height="391"
-           loading="lazy" decoding="async" alt="">
-    </figure>
-    <figure class="mos__p">
-      <img src="imagenes/mos-03.jpg" width="780" height="585"
-           loading="lazy" decoding="async" alt="">
-    </figure>
-    <figure class="mos__p">
-      <img src="imagenes/mos-04.jpg" width="780" height="520"
-           loading="lazy" decoding="async" alt="">
-    </figure>
-    <figure class="mos__p">
-      <img src="imagenes/mos-05.jpg" width="780" height="585"
-           loading="lazy" decoding="async" alt="">
-    </figure>
-    <figure class="mos__p">
-      <img src="imagenes/mos-06.jpg" width="780" height="520"
-           loading="lazy" decoding="async" alt="">
-    </figure>
-  </div>
-</section>
+<!-- ========= PARA EL DUEÑO ========= -->
 <section class="dueno" aria-labelledby="t-dueno">
   <h2 id="t-dueno">Para el dueño</h2>
-  <div class="dueno__cols">
+  <div class="dueno__cols cascada">
     <div>
       <h3>Lo que está verificado</h3>
       <p>El 4,9 con 189 reseñas de su ficha de Google y que no tienen teléfono
-        publicado. La página propia figura como «por confirmar».</p>
+        publicado. Mirado el 21-08-2026. La página propia figura como
+        «por confirmar».</p>
     </div>
     <div>
       <h3>Lo que decidí no poner</h3>
@@ -391,20 +626,43 @@
       <h3>Lo que falta</h3>
       <p>El número, la dirección, el horario y la confirmación de las cinco fichas.
         Las temporadas que puse son las generales de la zona: las suyas las saben
-        ustedes y son las que valen.</p>
+        ustedes y son las que valen. Y las fotos: acá no hay ni una del local.</p>
     </div>
   </div>
   <p class="dueno__cierre">
-    <a class="flecha" href="https://wa.me/56968650001" rel="noopener">Escribirme por WhatsApp <span aria-hidden="true">→</span></a>
-    <a class="flecha" href="../../" rel="noopener">Ver otros trabajos <span aria-hidden="true">→</span></a>
+    <a class="flecha" href="mailto:cristalwebcl@gmail.com?subject=Sitio%20web%20para%20Muna%20Kume%20Iyael">Escribirnos por correo <span aria-hidden="true">→</span></a>
+    <a class="flecha" href="https://cristalwebcl.github.io/cristalweb/" rel="noopener">Ver otros trabajos <span aria-hidden="true">→</span></a>
   </p>
 </section>
+
+</main>
 
 <footer class="pie">
   <p>Sitio de demostración preparado por CristalWeb. El negocio no lo ha encargado
     ni ha revisado su contenido. Las descripciones de los ingredientes y sus
     temporadas son referencia general de la zona.</p>
 </footer>
+
+<!-- ══ WHATSAPP FLOTANTE ═══════════════════════════════════════════
+     Va escrito en el HTML, no lo crea el JS: si el script no arranca,
+     el botón igual está. El JS sólo lo aparta mientras se mira la
+     portada, para no tapar el titular. Icono de simple-icons (CC0),
+     incrustado: la CSP no deja pedir nada a un tercero.
+
+     OJO CON EL DESTINO: este restaurante NO publica teléfono ni
+     WhatsApp (verificado el 21-08-2026), y la regla de la casa es que
+     el botón lleva al número DEL NEGOCIO o no lleva a ninguna parte —
+     nunca al de CristalWeb, que mandaría los clientes del cliente al
+     teléfono equivocado. Mientras no haya número, el botón baja a la
+     sección donde el visitante arma el mensaje. Cuando el local lo
+     entregue se cambia esta línea por:
+       href="https://wa.me/569XXXXXXXX?text=Hola%2C%20vi%20la%20p%C3%A1gina%20y%20quiero%20reservar%20una%20mesa."
+     y se le suman target="_blank" rel="noopener". -->
+<a class="wapp" href="#reservar"
+   aria-label="Ir a armar el mensaje para reservar — el restaurante todavía no publica WhatsApp">
+  <svg class="wapp__i" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"/></svg>
+  <span class="wapp__t">Reservar</span>
+</a>
 
 <script src="js/main.js"></script>
 </body>

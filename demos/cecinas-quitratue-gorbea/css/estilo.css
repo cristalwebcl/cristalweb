@@ -1,0 +1,636 @@
+/* ═══════════════════════════════════════════════════════════════════
+   CECINAS QUITRATUÉ · Gorbea
+   Demo. HTML + CSS + JS clásico. Sin build, sin librerías.
+
+   ── LA DIRECCIÓN, EN UNA FRASE ────────────────────────────────────
+   «COCINA DE CAMPO ENLOZADA»: el papel kraft de envolver, la tinta
+   negra del timbre y el azul del jarro enlozado. Transmite fábrica
+   antigua que sigue haciendo lo mismo bien, que es exactamente lo que
+   compra el cliente de cecinas — nadie cambia de carnicería porque la
+   otra tenga mejor logo.
+
+   El azul no es decorativo. Todo el rubro de la carne se dibuja en
+   rojo y burdeos; una fábrica de cecinas en azul enlozado no se
+   confunde con ninguna otra ficha, y además el rojo sobre kraft es
+   justo la combinación que peor contraste da.
+
+   ── POR QUÉ ESTE TRÍO ─────────────────────────────────────────────
+   Trío completamente nuevo: ninguna de las tres estaba en el registro
+   ni reservada.
+
+   · YESEVA ONE (display) — serif de alto contraste con remates
+     dibujados a mano, de etiqueta antigua. Da la edad que el negocio
+     ya tiene.
+   · RED HAT TEXT (cuerpo) — grotesca de lectura, neutra y cómoda; la
+     tabla de productos son seis bloques con descripción y ficha, y
+     necesita una letra que no se canse.
+   · SYNE MONO (dato) — el mono de las cantidades y de la calculadora.
+     Tiene una irregularidad leve que lo hace parecer timbrado sobre
+     el papel en vez de impreso.
+
+   ── CONTRASTE ─────────────────────────────────────────────────────
+   El enlozado va declarado desde el principio en sus DOS versiones,
+   con el fondo de cada una escrito al lado.
+   ═══════════════════════════════════════════════════════════════════ */
+
+:root {
+  --kraft:      #EFE7D9;   /* el papel de envolver                   */
+  --kraft-alto: #F7F2E9;   /* un escalón más claro, para tarjetas    */
+
+  --tinta:       #221D19;  /* títulos sobre kraft   — 16.7:1         */
+  --tinta-suave: #554C43;  /* párrafos sobre kraft  —  6.8:1         */
+
+  --hueso:       #F1EBE0;  /* títulos sobre tinta   — 13.8:1         */
+  --hueso-suave: #BDB3A5;  /* párrafos sobre tinta  —  8.1:1         */
+
+  /* EL ENLOZADO, en sus dos versiones. Cada una dice su fondo. */
+  --enlozado:       #1E5470;  /* SÓLO sobre kraft   —  6.69:1        */
+  --enlozado-claro: #7FC0DE;  /* SÓLO sobre tinta   —  8.34:1        */
+
+  --display: 'Yeseva One', Georgia, serif;
+  --cuerpo:  'Red Hat Text', system-ui, -apple-system, sans-serif;
+  --dato:    'Syne Mono', ui-monospace, Consolas, monospace;
+
+  --ancho: 1080px;
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+
+/* El atributo hidden pierde contra cualquier regla con display.
+   Declararlo es obligatorio en esta casa. */
+[hidden] { display: none !important; }
+
+html { scroll-behavior: smooth; }
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+
+body {
+  margin: 0;
+  background: var(--kraft);
+  color: var(--tinta-suave);
+  font-family: var(--cuerpo);
+  font-size: clamp(16px, 1.05vw + 13px, 18px);
+  line-height: 1.65;
+  -webkit-font-smoothing: antialiased;
+}
+
+img { max-width: 100%; display: block; }
+
+.ancho { width: min(100% - 2.4rem, var(--ancho)); margin-inline: auto; }
+
+.saltar {
+  position: absolute; left: -9999px; top: 0; z-index: 99;
+  background: var(--tinta); color: var(--kraft);
+  padding: .7rem 1.1rem; font-family: var(--dato); font-size: .85rem;
+}
+.saltar:focus { left: .5rem; top: .5rem; }
+
+:focus-visible { outline: 3px solid var(--enlozado); outline-offset: 3px; }
+
+
+/* ═══════════════════════════════════════════════════════════════════
+   MARCA DE DATO INVENTADO
+   ═══════════════════════════════════════════════════════════════════ */
+[data-ejemplo]::before {
+  content: attr(data-ejemplo);
+  display: block; margin-bottom: .45rem;
+  font-family: var(--dato); font-size: .7rem;
+  letter-spacing: .06em; text-transform: uppercase;
+  color: var(--enlozado);
+}
+.asado-nota::before { color: var(--enlozado-claro); }
+
+.tabla-nota, .asado-nota {
+  margin: 2rem 0 0; max-width: 62ch; font-size: .88rem;
+  padding-left: 1rem; border-left: 3px solid var(--enlozado);
+  color: var(--tinta-suave);
+}
+.asado-nota { border-left-color: var(--enlozado-claro); color: var(--hueso-suave); }
+.tabla-nota b { color: var(--tinta); font-weight: 600; }
+.asado-nota b { color: var(--hueso); font-weight: 600; }
+
+
+/* ═══════════════════════════════════════════════════════════════════
+   CABECERA CON CINTA DE PRODUCTOS
+   Decimoquinta demo, decimoquinta cabecera. Ésta lleva abajo un
+   letrero que corre despacio con los nombres de las cecinas, como los
+   que se pintaban a mano en las carnicerías.
+
+   El bucle no tiene salto porque la lista está escrita DOS VECES
+   idéntica y el desplazamiento es exactamente del 50%: cuando la
+   segunda copia llega a donde arrancó la primera, la animación
+   vuelve a cero y no se nota.
+
+   Va `aria-hidden` porque es decoración — los mismos nombres están
+   uno por uno en la tabla de productos.
+   ═══════════════════════════════════════════════════════════════════ */
+.cab { position: sticky; top: 0; z-index: 40; }
+
+.cab-fila {
+  display: flex; align-items: center; gap: 1.2rem;
+  padding: .7rem 1.4rem;
+  background: var(--kraft);
+  border-bottom: 1px solid rgba(34, 29, 25, .16);
+}
+.cab-m { margin: 0; font-family: var(--display); line-height: 1.1; color: var(--tinta); }
+.cab-m b { font-weight: 400; font-size: 1.25rem; }
+.cab-m span {
+  display: block; font-family: var(--dato); font-size: .66rem;
+  letter-spacing: .1em; text-transform: uppercase;
+  color: var(--enlozado); margin-top: .15rem;
+}
+.cab-tel {
+  margin-left: auto;
+  font-family: var(--dato); font-size: .88rem;
+  background: var(--enlozado); color: var(--kraft);
+  padding: .5rem .9rem; text-decoration: none; white-space: nowrap;
+}
+/* El relleno NO se aclara al pasar el mouse: en la 39 ese gesto bajó
+   un botón a 3,8:1 y el auditor de contraste no mira los :hover. */
+.cab-tel:hover, .cab-tel:focus-visible { box-shadow: 0 0 0 3px rgba(30, 84, 112, .3); }
+
+.cinta { background: var(--tinta); overflow: hidden; }
+.cinta-pista {
+  display: flex; align-items: center; gap: 1.4rem;
+  width: max-content;
+  padding: .4rem 0;
+  animation: correr 46s linear infinite;
+}
+.cinta-pista span {
+  font-family: var(--dato); font-size: .72rem;
+  letter-spacing: .1em; text-transform: uppercase;
+  color: var(--hueso); white-space: nowrap;
+}
+.cinta-pista i { color: var(--enlozado-claro); font-style: normal; font-size: .6rem; }
+@keyframes correr { to { transform: translate3d(-50%, 0, 0); } }
+
+
+/* ═══════════════════════════════════════════════════════════════════
+   PORTADA — EL ROLLO DE PAPEL
+   El fondo son las vetas del papel de envolver, desplazándose muy
+   despacio hacia la derecha: el rollo desenrollándose sobre el mesón.
+
+   Es el primer fondo horizontal del registro — los anteriores suben
+   (humo), bajan (ceniza, barrido, rodadura) o van en diagonal
+   (tejido). Y va en contra de la cinta de la cabecera, que corre
+   hacia la izquierda: las dos capas se leen como planos distintos.
+
+   @keyframes puros, nunca requestAnimationFrame: Chrome congela rAF
+   en pestañas de fondo y la portada volvía a primer plano detenida a
+   mitad de camino.
+
+   Bucle sin salto: las vetas van a 96°, así que su período horizontal
+   es 34 / sen(96°) ≈ 34,19 px. Desplazar exactamente eso las deja
+   calzadas consigo mismas.
+   ═══════════════════════════════════════════════════════════════════ */
+.portada {
+  position: relative; overflow: hidden;
+  min-height: min(86vh, 760px);
+  display: flex; align-items: center;
+  padding: 5rem 0 4.5rem;
+  background:
+    radial-gradient(110% 90% at 15% 15%, #F7F1E6 0%, var(--kraft) 60%);
+}
+
+.rollo {
+  position: absolute; inset: -8%;
+  pointer-events: none;
+  background-image: repeating-linear-gradient(96deg,
+    rgba(34, 29, 25, .05) 0 2px, transparent 2px 34px);
+  animation: desenrollar 19s linear infinite;
+}
+.rollo::after {
+  content: ''; position: absolute; inset: 0;
+  background-image: repeating-linear-gradient(96deg,
+    rgba(30, 84, 112, .055) 0 1px, transparent 1px 11px);
+  animation: desenrollar-fino 11s linear infinite;
+}
+@keyframes desenrollar      { to { transform: translate3d(34.19px, 0, 0); } }
+@keyframes desenrollar-fino { to { transform: translate3d(11.06px, 0, 0); } }
+
+.portada-cuerpo {
+  position: relative;
+  width: min(100% - 2.4rem, var(--ancho));
+  margin-inline: auto;
+}
+
+.portada-sobre {
+  margin: 0 0 1.5rem;
+  font-family: var(--dato); font-size: .76rem;
+  letter-spacing: .12em; text-transform: uppercase;
+  color: var(--enlozado);
+}
+
+.portada-h1 {
+  margin: 0 0 1.4rem;
+  font-family: var(--display); font-weight: 400;
+  font-size: clamp(2.4rem, 6.4vw, 4.6rem);
+  line-height: 1.04;
+  letter-spacing: -.015em;  /* fijo. Animar letter-spacing dejó el
+                               documento clavado en 443 px en la 53. */
+  color: var(--tinta);
+  max-width: 15ch;
+}
+.portada-h1 .l { display: block; }
+.portada-h1 em { font-style: normal; color: var(--enlozado); }
+
+.portada-bajada { margin: 0 0 2.2rem; max-width: 46ch; color: var(--tinta-suave); }
+.portada-acciones { display: flex; flex-wrap: wrap; gap: .8rem; margin-bottom: 2.4rem; }
+.portada-pie {
+  margin: 0; font-family: var(--dato); font-size: .78rem;
+  color: var(--tinta-suave); line-height: 1.8;
+}
+.portada-pie b { color: var(--tinta); font-weight: 600; }
+
+/* Entrada escalonada. Los estados ocultos cuelgan de .js y el
+   temporizador del <head> los libera si main.js no llega. */
+.js .portada .l { opacity: 0; transform: translate3d(0, 18px, 0);
+                  animation: entrar .85s cubic-bezier(.2,.7,.3,1) forwards; }
+.js .portada .l1 { animation-delay: .08s; }
+.js .portada .l2 { animation-delay: .17s; }
+.js .portada .l3 { animation-delay: .26s; }
+.js .portada .l4 { animation-delay: .35s; }
+.js .portada .l5 { animation-delay: .50s; }
+.js .portada .l6 { animation-delay: .60s; }
+.js .portada .l7 { animation-delay: .70s; }
+@keyframes entrar { to { opacity: 1; transform: none; } }
+
+
+/* ═══════════════════════════════════════════════════════════════════
+   BOTONES
+   ═══════════════════════════════════════════════════════════════════ */
+.btn {
+  display: inline-block; text-decoration: none;
+  font-family: var(--dato); font-size: .85rem;
+  padding: .9rem 1.5rem; border: 0; cursor: pointer;
+  transition: box-shadow .18s ease, transform .18s ease;
+}
+.btn-fuerte { background: var(--enlozado); color: var(--kraft); }
+.btn-fuerte:hover, .btn-fuerte:focus-visible {
+  box-shadow: 0 0 0 3px rgba(30, 84, 112, .28); transform: translateY(-1px);
+}
+.btn-suave {
+  color: var(--tinta); background: transparent;
+  border: 1px solid rgba(34, 29, 25, .3);
+}
+.btn-suave:hover, .btn-suave:focus-visible { border-color: var(--enlozado); color: var(--enlozado); }
+.grande { padding: 1.05rem 2rem; font-size: .94rem; }
+
+/* Sobre la sección oscura los dos botones cambian de versión. */
+.asado .btn-fuerte { background: var(--enlozado-claro); color: var(--tinta); }
+.asado .btn-fuerte:hover { box-shadow: 0 0 0 3px rgba(127, 192, 222, .3); }
+.asado .btn-suave { color: var(--hueso); border-color: rgba(241, 235, 224, .35); }
+.asado .btn-suave:hover, .asado .btn-suave:focus-visible {
+  border-color: var(--enlozado-claro); color: var(--enlozado-claro);
+}
+
+
+/* ═══════════════════════════════════════════════════════════════════
+   PIEZAS DE TEXTO COMPARTIDAS
+   ═══════════════════════════════════════════════════════════════════ */
+.rotulo {
+  margin: 0 0 .7rem;
+  font-family: var(--dato); font-size: .72rem;
+  letter-spacing: .12em; text-transform: uppercase;
+  color: var(--enlozado);
+}
+.rotulo.claro { color: var(--enlozado-claro); }
+
+.t2 {
+  margin: 0 0 1.1rem;
+  font-family: var(--display); font-weight: 400;
+  font-size: clamp(1.8rem, 3.8vw, 2.7rem);
+  line-height: 1.12; letter-spacing: -.01em;
+  color: var(--tinta); max-width: 20ch;
+}
+.t2.claro { color: var(--hueso); }
+
+.entrada { margin: 0 0 2.4rem; max-width: 56ch; color: var(--tinta-suave); }
+.entrada.claro { color: var(--hueso-suave); }
+.entrada b { color: var(--tinta); font-weight: 600; }
+.entrada.claro b { color: var(--hueso); }
+
+
+/* ═══════════════════════════════════════════════════════════════════
+   PIEZA FIRMA 1 — LA TABLA DE PRODUCTOS
+   ═══════════════════════════════════════════════════════════════════ */
+.tabla { background: var(--kraft-alto); padding: 5.5rem 0; }
+
+.productos {
+  list-style: none; margin: 0; padding: 0;
+  display: grid; grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
+  gap: 1px; background: rgba(34, 29, 25, .18);
+  border: 1px solid rgba(34, 29, 25, .18);
+}
+.prod { background: var(--kraft); padding: 1.7rem 1.5rem; }
+.prod h3 {
+  margin: 0 0 .4rem; font-family: var(--display); font-weight: 400;
+  font-size: 1.35rem; color: var(--tinta); line-height: 1.15;
+}
+.prod-q { margin: 0 0 1rem; font-size: .93rem; }
+.prod-d { margin: 0; padding-top: .9rem; border-top: 1px solid rgba(34, 29, 25, .18); }
+.prod-d > div + div { margin-top: .8rem; }
+.prod-d dt {
+  font-family: var(--dato); font-size: .66rem;
+  letter-spacing: .09em; text-transform: uppercase;
+  color: var(--enlozado); margin-bottom: .2rem;
+}
+.prod-d dd { margin: 0; font-size: .9rem; color: var(--tinta-suave); }
+
+
+/* ═══════════════════════════════════════════════════════════════════
+   PIEZA FIRMA 2 — LA CALCULADORA DEL ASADO
+   La única sección oscura de la página. Se aparta a propósito: es la
+   parte que se usa, no la que se lee.
+
+   Todo lo que dice está escrito en el HTML. Si el JS no corre, la
+   lista sigue diciendo cuánto va por persona y los botones de llamar
+   y de WhatsApp siguen funcionando: son enlaces, no scripts.
+   ═══════════════════════════════════════════════════════════════════ */
+.asado { background: var(--tinta); padding: 5.5rem 0; }
+
+.cuenta {
+  background: rgba(241, 235, 224, .05);
+  border: 1px solid rgba(241, 235, 224, .16);
+  padding: clamp(1.4rem, 3vw, 2.2rem);
+}
+
+.cuenta-arriba {
+  display: flex; flex-wrap: wrap; align-items: flex-end;
+  gap: 1.4rem 2rem; margin-bottom: 1.8rem;
+}
+.campo { display: block; }
+.campo span {
+  display: block; margin-bottom: .4rem;
+  font-family: var(--dato); font-size: .72rem;
+  letter-spacing: .09em; text-transform: uppercase;
+  color: var(--enlozado-claro);
+}
+.campo input {
+  font-family: var(--dato); font-size: 1.6rem;
+  width: 6.5rem; padding: .45rem .7rem;
+  background: var(--kraft); color: var(--tinta);
+  border: 2px solid var(--enlozado-claro); border-radius: 0;
+}
+.cuenta-tip {
+  margin: 0; max-width: 32ch; font-size: .85rem; color: var(--hueso-suave);
+}
+
+.lista { list-style: none; margin: 0; padding: 0; border-top: 1px solid rgba(241, 235, 224, .16); }
+.lista li {
+  display: grid; grid-template-columns: 11rem minmax(0, 1fr);
+  gap: 1.2rem; align-items: baseline;
+  padding: .85rem 0; border-bottom: 1px solid rgba(241, 235, 224, .16);
+}
+.lista-n {
+  font-family: var(--dato); font-size: 1.05rem;
+  color: var(--enlozado-claro);
+}
+.lista-p { color: var(--hueso); font-weight: 500; }
+
+.cuenta-abajo { margin-top: 1.8rem; }
+.cuenta-salida {
+  margin: 0 0 1.2rem; font-family: var(--dato); font-size: .88rem;
+  color: var(--hueso);
+}
+.cuenta-acciones { display: flex; flex-wrap: wrap; gap: .7rem; }
+.copiado {
+  margin: 1rem 0 0; font-family: var(--dato); font-size: .8rem;
+  color: var(--enlozado-claro);
+}
+
+
+/* ═══════════════════════════════════════════════════════════════════
+   LÁMINA CON FOTO
+   ═══════════════════════════════════════════════════════════════════ */
+.lamina {
+  display: grid; grid-template-columns: .95fr 1.05fr;
+  align-items: stretch; background: var(--kraft-alto);
+}
+.lamina-texto { padding: 4.5rem clamp(1.4rem, 4vw, 3.5rem); align-self: center; }
+.lamina-foto { position: relative; overflow: hidden; min-height: 30rem; }
+/* La capa es un 24% más alta que su marco: le sobra recorrido para
+   desplazarse al scroll sin que nunca se vea el borde. */
+.lamina-capa {
+  position: absolute; inset: -12% 0;
+  background-color: var(--tinta);
+  background-image: linear-gradient(150deg, #3A322A, #1D1915);
+  display: grid; place-items: center;
+  will-change: transform;
+}
+
+.numeraco {
+  margin: 0; font-family: var(--display); font-weight: 400;
+  font-size: clamp(4rem, 11vw, 7.5rem); line-height: .9;
+  color: var(--enlozado);
+}
+
+.hueco-nota {
+  margin: 0; max-width: 26ch; text-align: center;
+  font-family: var(--dato); font-size: .74rem; line-height: 1.8;
+  color: var(--hueso-suave);
+  border: 1px dashed rgba(241, 235, 224, .25);
+  padding: 1.1rem 1.2rem;
+}
+.hueco-nota code { color: var(--enlozado-claro); }
+.tiene-foto .hueco-nota { display: none; }
+
+
+/* ═══════════════════════════════════════════════════════════════════
+   DÓNDE COMPRAR
+   ═══════════════════════════════════════════════════════════════════ */
+.llegar { background: var(--kraft); padding: 5.5rem 0; }
+.llegar-grilla {
+  display: grid; grid-template-columns: 1.15fr .85fr;
+  gap: clamp(2rem, 5vw, 4rem); align-items: start;
+}
+.datos {
+  margin: 0 0 2rem; display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(13rem, 1fr));
+  gap: 1.3rem 2rem;
+  border-top: 1px solid rgba(34, 29, 25, .22); padding-top: 1.6rem;
+}
+.datos dt {
+  font-family: var(--dato); font-size: .7rem;
+  letter-spacing: .1em; text-transform: uppercase;
+  color: var(--enlozado); margin-bottom: .25rem;
+}
+.datos dd { margin: 0; color: var(--tinta); font-size: .98rem; }
+.datos dd a { color: var(--tinta); text-decoration-color: var(--enlozado); }
+
+.aviso {
+  margin: 0; padding: 1.2rem 1.3rem;
+  background: var(--kraft-alto);
+  border-left: 4px solid var(--enlozado);
+  font-size: .95rem; max-width: 54ch;
+}
+.aviso b { color: var(--tinta); font-weight: 600; }
+
+.llegar-foto {
+  position: relative; height: 26rem;
+  background-color: var(--tinta);
+  background-image: linear-gradient(160deg, #423A31, #1D1915);
+  display: grid; place-items: center; overflow: hidden;
+}
+
+
+/* ═══════════════════════════════════════════════════════════════════
+   CIERRE Y PIE
+   ═══════════════════════════════════════════════════════════════════ */
+.cierre { background: var(--kraft-alto); padding: 5rem 0; text-align: center; }
+.cierre .t2, .cierre .entrada { margin-inline: auto; }
+.cierre .entrada { margin-bottom: 2.2rem; }
+
+.pie { background: var(--tinta); padding: 3.2rem 0 3.6rem; }
+.pie-grilla {
+  display: grid; grid-template-columns: auto auto 1fr;
+  gap: 1.6rem 3rem; align-items: start;
+}
+.pie-m {
+  margin: 0; font-family: var(--display); font-weight: 400;
+  font-size: 1.1rem; color: var(--hueso); line-height: 1.45;
+}
+.pie-m span {
+  font-family: var(--dato); font-size: .68rem;
+  letter-spacing: .1em; text-transform: uppercase;
+  color: var(--enlozado-claro);
+}
+.pie-d { margin: 0; font-family: var(--dato); font-size: .8rem;
+         color: var(--hueso-suave); line-height: 1.9; }
+.pie-d a { color: var(--enlozado-claro); }
+.pie-n { margin: 0; font-size: .78rem; color: var(--hueso-suave); max-width: 52ch; }
+
+
+/* ═══════════════════════════════════════════════════════════════════
+   REVEALS
+   Ocultos sólo bajo .js. main.js tiene dos resguardos: lo visible al
+   cargar se muestra de inmediato, y un barrido a los 6 s revela lo
+   que haya quedado pendiente.
+   ═══════════════════════════════════════════════════════════════════ */
+.js .reveal { opacity: 0; transform: translate3d(0, 20px, 0); }
+.js .reveal.visible {
+  opacity: 1; transform: none;
+  transition: opacity .7s ease, transform .7s cubic-bezier(.2,.7,.3,1);
+}
+
+
+/* ═══════════════════════════════════════════════════════════════════
+   PANTALLAS CHICAS
+   ═══════════════════════════════════════════════════════════════════ */
+@media (max-width: 980px) {
+  .lamina { grid-template-columns: 1fr; }
+  .lamina-texto { order: 1; }
+  .lamina-foto { order: 2; min-height: 22rem; }
+  .llegar-grilla { grid-template-columns: 1fr; }
+  /* aspect-ratio junto a min-height deja que el navegador calcule el
+     ancho desde el alto y se sale de la pantalla: alto fijo. */
+  .llegar-foto { height: 17rem; }
+  .pie-grilla { grid-template-columns: 1fr; }
+}
+
+@media (max-width: 720px) {
+  .portada { min-height: auto; padding: 3.2rem 0; }
+  .tabla, .asado, .llegar, .cierre { padding: 3.8rem 0; }
+  .lamina-texto { padding: 3rem 1.2rem; }
+  .lista li { grid-template-columns: 8.5rem minmax(0, 1fr); gap: .8rem; }
+  .lista-n { font-size: .92rem; }
+  .cab-fila { padding: .6rem 1.2rem; }
+  .cuenta-acciones .btn { width: 100%; text-align: center; }
+}
+
+
+/* ═══════════════════════════════════════════════════════════════════
+   MOVIMIENTO REDUCIDO
+   En Windows esta preferencia viene activada de fábrica muchas veces.
+   Se detienen el rollo, la cinta de la cabecera y el desplazamiento
+   de la foto. La cinta queda quieta mostrando los primeros nombres, y
+   los fundidos se dejan: apagándolo todo la página se ve muerta.
+   ═══════════════════════════════════════════════════════════════════ */
+@media (prefers-reduced-motion: reduce) {
+  .rollo, .rollo::after, .cinta-pista { animation: none; }
+  .js .portada .l { animation-duration: .01s; animation-delay: 0s; }
+}
+
+
+/* ═══════════════════════════════════════════════════════════════════
+   FOTOS — DESCOMENTAR CUANDO LLEGUEN
+   Dejar los JPEG en imagenes/ con estos nombres y quitar el comentario.
+   La nota del hueco desaparece sola.
+   ═══════════════════════════════════════════════════════════════════ */
+/* ── LAS FOTOS, YA PUESTAS ─────────────────────────────────────── */
+  .portada { background: linear-gradient(to right, rgba(239,231,217,.97) 0%, rgba(239,231,217,.86) 55%, rgba(239,231,217,.6) 100%), url('../imagenes/portada.jpg') center / cover no-repeat; }
+  .lamina-capa { background-image: url('../imagenes/meson.jpg'); background-size: cover; background-position: center; }
+
+/* FALTA ESTA FOTO, LA TIENE QUE DAR EL CLIENTE: frente.jpg - el frente del local con el letrero
+   No se reemplaza por una generica: es el activo del negocio
+   y el argumento de venta. Al llegar, dejar el JPEG en imagenes/
+   y descomentar la regla de abajo.
+  .llegar-foto { background-image: url('../imagenes/frente.jpg'); background-size: cover; background-position: center; }
+*/
+
+
+/* ── MAPA DE UBICACION ──────────────────────────────────────────────
+   Imagen propia con mosaicos de OpenStreetMap pegados: la CSP prohibe
+   pedir nada a un tercero, asi que un iframe de Google Maps quedaria en
+   blanco SIN dar un solo error. El "Como llegar" si es un enlace, y un
+   enlace no lo bloquea nada.
+   Los colores salen de currentColor a proposito: asi el bloque se adapta
+   a la paleta de cada demo sin conocerla y sin chocar con ella.
+   La atribucion a OpenStreetMap la exige su licencia (ODbL). */
+.mapa-sec { padding: clamp(2.5rem, 6vw, 4.5rem) 0; }
+.mapa {
+  /* Casi siempre el mapa queda como hijo DIRECTO de la seccion, fuera del
+     contenedor .ancho: sin este ancho maximo se va de borde a borde y el
+     pie del mapa arranca pegado al filo de la pantalla. Se usa la variable
+     de la demo si existe, y 1100 px si no. */
+  width: min(100% - 2.5rem, var(--ancho, 1100px));
+  margin: 1.4rem auto 0;
+  border: 1px solid; border-color: color-mix(in srgb, currentColor 22%, transparent);
+  border-radius: 10px; overflow: hidden;
+}
+@supports not (color: color-mix(in srgb, red 50%, blue)) { .mapa { border-color: rgba(128, 128, 128, .35); } }
+.mapa img { display: block; width: 100%; height: auto; aspect-ratio: 16 / 10; object-fit: cover; }
+.mapa__pie {
+  display: flex; flex-wrap: wrap; align-items: center; gap: .4rem 1rem;
+  padding: .75rem .9rem;
+  font-size: .86em; line-height: 1.45;
+  border-top: 1px solid; border-top-color: color-mix(in srgb, currentColor 22%, transparent);
+}
+@supports not (color: color-mix(in srgb, red 50%, blue)) { .mapa__pie { border-top-color: rgba(128, 128, 128, .35); } }
+.mapa__pie b { font-weight: 700; }
+.mapa__ir { color: inherit; font-weight: 700; text-decoration: underline; min-height: 44px; display: inline-flex; align-items: center; }
+.mapa__cred { width: 100%; font-size: .84em; opacity: .8; }
+.mapa__cred a { color: inherit; }
+/* ── BOTON FLOTANTE DE CONTACTO ─────────────────────────────────────
+   56 px de alto, por encima del minimo tactil de 44. Los colores de
+   marca van a proposito: se reconocen sin leerlos, y eso es lo que hace
+   que se toquen. Se ve SIEMPRE por defecto; el JS solo lo aparta sobre
+   la portada. Al reves, un fallo del script se llevaria el CTA principal. */
+.flota {
+  position: fixed;
+  right: max(1rem, env(safe-area-inset-right, 0px));
+  bottom: max(1rem, env(safe-area-inset-bottom, 0px));
+  z-index: 60;
+  display: inline-flex; align-items: center; gap: .55rem;
+  height: 56px; padding: 0 1.15rem 0 1rem;
+  border-radius: 999px;
+  text-decoration: none;
+  font-family: var(--cuerpo, system-ui, sans-serif);
+  font-size: .95rem; font-weight: 700; line-height: 1;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, .26), 0 2px 6px rgba(0, 0, 0, .16);
+  transition: opacity .28s ease, transform .28s ease, box-shadow .18s ease;
+}
+.flota--wa { background: #25D366; color: #07310F; }
+.flota--ig { background: linear-gradient(120deg, #F9CE34 4%, #EE2A7B 48%, #6228D7 96%); color: #FFFFFF; }
+.flota__i { width: 26px; height: 26px; fill: currentColor; flex: none; }
+.flota:hover, .flota:focus-visible { transform: translateY(-2px); box-shadow: 0 10px 26px rgba(0, 0, 0, .3); }
+.js .flota--arriba { opacity: 0; transform: translateY(14px) scale(.94); pointer-events: none; }
+
+@media (max-width: 520px) {
+  .flota { width: 56px; padding: 0; justify-content: center; }
+  .flota__t { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .flota { transition: opacity .28s ease; }
+  .flota:hover, .flota:focus-visible { transform: none; }
+  .js .flota--arriba { transform: none; }
+}

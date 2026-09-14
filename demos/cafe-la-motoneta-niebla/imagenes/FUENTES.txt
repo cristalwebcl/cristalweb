@@ -1,0 +1,22 @@
+FUENTES DE LAS IMAGENES - Cafe La Motoneta Rehecha el 13-09-2026 (presentacion antes que texto). Fotos de REFERENCIA de bancos libres: ninguna es del local; las verdaderas las tiene que mandar el negocio. 
+port-01.jpg  <-  pozo-p-mot-vespa\006.jpg  |  pexels (Pexels License)  |  autor: UMUT   🆁🅰🆆  |  https://www.pexels.com/es-es/foto/metal-vehiculo-transporte-rueda-19785422/  |  consulta: "vintage scooter"
+hund1-01.jpg  <-  pozo-p-mot-peru\003.jpg  |  pexels (Pexels License)  |  autor: Nano Erdozain  |  https://www.pexels.com/es-es/foto/plato-gourmet-con-verduras-y-adorno-28448380/  |  consulta: "peruvian food"
+hund2-01.jpg  <-  pozo-p-mot-pescado\004.jpg  |  pexels (Pexels License)  |  autor: Vladimir  Gladkov  |  https://www.pexels.com/es-es/foto/pez-pescado-peces-pescados-6213713/  |  consulta: "grilled fish lemon"
+hund3-01.jpg  <-  pozo-p-mot-salsas\011.jpg  |  pexels (Pexels License)  |  autor: cottonbro studio  |  https://www.pexels.com/es-es/foto/mojar-salsa-yogur-luz-del-sol-5899677/  |  consulta: "sauce bowls"
+hund4-01.jpg  <-  pozo-p-mot-cafe\008.jpg  |  pexels (Pexels License)  |  autor: MikeGz  |  https://www.pexels.com/es-es/foto/primer-plano-de-arte-latte-en-una-taza-de-cafe-sobre-la-mesa-34994685/  |  consulta: "coffee cup vintage table"
+hund5-01.jpg  <-  pozo-p-mot-terraza\009.jpg  |  pexels (Pexels License)  |  autor: Efrem  Efre  |  https://www.pexels.com/es-es/foto/restaurante-mueble-mobiliario-mesa-de-madera-12748689/  |  consulta: "wooden deck terrace cafe"
+hund6-01.jpg  <-  pozo-p-mot-antiguedades\010.jpg  |  pexels (Pexels License)  |  autor: Lokman Sevim  |  https://www.pexels.com/es-es/foto/habitacion-interior-estante-antiguedades-9704119/  |  consulta: "antique shop interior"
+banda-01.jpg  <-  pozo-p-mot-terraza\010.jpg  |  pexels (Pexels License)  |  autor: Valeria Drozdova  |  https://www.pexels.com/es-es/foto/cafeteria-costera-al-aire-libre-con-vistas-al-mar-37530505/  |  consulta: "wooden deck terrace cafe"
+cita-01.jpg  <-  pozo-p-mot-antiguedades\002.jpg  |  pexels (Pexels License)  |  autor: Yunus Tuğ  |  https://www.pexels.com/es-es/foto/acogedora-tienda-de-antiguedades-con-objetos-de-coleccion-vintage-33630610/  |  consulta: "antique shop interior"
+mos1-01.jpg  <-  pozo-p-mot-vespa\007.jpg  |  pexels (Pexels License)  |  autor: Viktoriia Kondratiuk  |  https://www.pexels.com/es-es/foto/carretera-rojo-calle-vehiculo-18109554/  |  consulta: "vintage scooter"
+mos2-01.jpg  <-  pozo-p-mot-ceviche\012.jpg  |  pexels (Pexels License)  |  autor: Eduardo Krajan  |  https://www.pexels.com/es-es/foto/plato-cuberteria-gurme-sibarita-15352336/  |  consulta: "ceviche"
+mos3-01.jpg  <-  pozo-p-mot-cafe\011.jpg  |  pexels (Pexels License)  |  autor: Büşra İnce  |  https://www.pexels.com/es-es/foto/naturaleza-muerta-taza-y-plato-ceramico-tiro-vertical-11295515/  |  consulta: "coffee cup vintage table"
+mos4-01.jpg  <-  pozo-p-mot-antiguedades\012.jpg  |  pexels (Pexels License)  |  autor: Lokman Sevim  |  https://www.pexels.com/es-es/foto/vintage-mesa-acostado-antiguo-9704116/  |  consulta: "antique shop interior"
+mos5-01.jpg  <-  pozo-p-mot-peru\006.jpg  |  pexels (Pexels License)  |  autor: Joao Sócola  |  https://www.pexels.com/es-es/foto/comida-ensalada-plato-delicioso-6763278/  |  consulta: "peruvian food"
+mos6-01.jpg  <-  pozo-p-mot-cafe\001.jpg  |  pexels (Pexels License)  |  autor: Rodrigo Ortega  |  https://www.pexels.com/es-es/foto/arte-en-latte-estetica-sobre-mesa-de-madera-rustica-30218688/  |  consulta: "coffee cup vintage table"
+
+BRUMA (bruma-pag-0N.png y bruma-osc-0N.png, 30x20): las MISMAS fotos, recortadas a 3:2, reducidas y
+recoloreadas con C:\devs\demos\hacer-bruma.ps1 (clara >= 0,68 de luminancia / oscura <= 0,05). No suman fuentes.
+    pagina: port-01.jpg, banda-01.jpg, cita-01.jpg, hund2-01.jpg, hund4-01.jpg, hund6-01.jpg, mos3-01.jpg, mos6-01.jpg   |   oscuras: cita-01.jpg, hund6-01.jpg, mos6-01.jpg
+
+MAPA: iframe de Google Maps (embed publico, sin clave). No hay imagen de mapa.

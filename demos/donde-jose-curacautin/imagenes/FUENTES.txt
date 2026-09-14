@@ -1,0 +1,19 @@
+FUENTES DE LAS IMAGENES - Donde Jos&eacute; Rehecha el 13-09-2026 (presentacion antes que texto). Fotos de REFERENCIA de bancos libres: ninguna es del local; las verdaderas las tiene que mandar el negocio. 
+port-01.jpg  <-  pozo-p-ruta-camino\005.jpg  |  pexels (Pexels License)  |  autor: Ramaz Bluashvili  |  https://www.pexels.com/es-es/foto/carretera-panoramica-de-montana-en-el-monte-wilson-california-31697263/  |  consulta: "mountain road"
+banda-01.jpg  <-  pozo-p-ruta-araucaria\007.jpg  |  pexels (Pexels License)  |  autor: Arthur Brognoli  |  https://www.pexels.com/es-es/foto/arboles-verdes-2260937/  |  consulta: "araucaria"
+cita-01.jpg  <-  pozo-p-ruta-estufa\003.jpg  |  pexels (Pexels License)  |  autor: Víctor C.  |  https://www.pexels.com/es-es/foto/fuego-hoguera-ardiente-calor-19620699/  |  consulta: "wood stove"
+hund1-01.jpg  <-  pozo-p-ruta-plato\002.jpg  |  pexels (Pexels License)  |  autor: Roy Sloan  |  https://www.pexels.com/es-es/foto/comida-bol-tazon-cuenco-6166796/  |  consulta: "stew bowl"
+hund2-01.jpg  <-  pozo-p-ruta-cabana\004.jpg  |  pexels (Pexels License)  |  autor: Vladimir Srajber  |  https://www.pexels.com/es-es/foto/casas-vacaciones-bosque-de-madera-23999340/  |  consulta: "wooden cabin"
+hund3-01.jpg  <-  pozo-p-ruta-estufa\009.jpg  |  pexels (Pexels License)  |  autor: Jonathan Cooper  |  https://www.pexels.com/es-es/foto/refugio-cabana-bungalow-calefaccion-8951846/  |  consulta: "wood stove"
+mos1-01.jpg  <-  pozo-p-ruta-nieve\002.jpg  |  pexels (Pexels License)  |  autor: Rafael Minguet Delgado  |  https://www.pexels.com/es-es/foto/vacaciones-en-la-nieve-33811879/  |  consulta: "snowy road"
+mos2-01.jpg  <-  pozo-p-ruta-araucaria\002.jpg  |  pexels (Pexels License)  |  autor: Francesco Ungaro  |  https://www.pexels.com/es-es/foto/naturaleza-ramas-arbol-verde-12324071/  |  consulta: "araucaria"
+mos3-01.jpg  <-  pozo-p-ruta-plato\010.jpg  |  pexels (Pexels License)  |  autor: SAMY PHOTOGRAPHY  |  https://www.pexels.com/es-es/foto/estofado-de-res-tradicional-mexicano-en-un-tazon-34822475/  |  consulta: "stew bowl"
+mos4-01.jpg  <-  pozo-p-ruta-cabana\012.jpg  |  pexels (Pexels License)  |  autor: Volker Kaes  |  https://www.pexels.com/es-es/foto/cabana-rustica-en-paisaje-de-otono-escenico-34164516/  |  consulta: "wooden cabin"
+mos5-01.jpg  <-  pozo-p-ruta-estufa\011.jpg  |  pexels (Pexels License)  |  autor: Ş.A  |  https://www.pexels.com/es-es/foto/metal-lena-calor-llamas-20015958/  |  consulta: "wood stove"
+mos6-01.jpg  <-  pozo-p-ruta-araucaria\004.jpg  |  pexels (Pexels License)  |  autor: Carlos Ribeiro  |  https://www.pexels.com/es-es/foto/majestuosa-araucaria-en-la-campina-brasilena-33068694/  |  consulta: "araucaria"
+
+BRUMA (bruma-pag-0N.png y bruma-osc-0N.png, 30x20): las MISMAS fotos, recortadas a 3:2, reducidas y
+recoloreadas con C:\devs\demos\hacer-bruma.ps1 (clara >= 0,68 de luminancia / oscura <= 0,05). No suman fuentes.
+    pagina: port-01.jpg, banda-01.jpg, cita-01.jpg, hund1-01.jpg, hund2-01.jpg, hund3-01.jpg, mos1-01.jpg, mos4-01.jpg   |   oscuras: port-01.jpg, cita-01.jpg, banda-01.jpg
+
+MAPA: iframe de Google Maps (embed publico, sin clave). No hay imagen de mapa.

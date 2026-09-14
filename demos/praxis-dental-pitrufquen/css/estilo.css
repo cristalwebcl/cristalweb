@@ -1,0 +1,611 @@
+/* ═══════════════════════════════════════════════════════════════════
+   PRAXIS DENTAL · Pitrufquén
+   Demo. HTML + CSS + JS clásico. Sin build, sin librerías.
+
+   ── LA DIRECCIÓN, EN UNA FRASE ────────────────────────────────────
+   «CONSULTA DE CONFIANZA»: blanco cálido, pizarra y un ciruela suave.
+   Es la séptima clínica dental del registro y la primera dirigida a
+   PADRES, no a pacientes: por eso no es clínica ni de urgencia, es
+   doméstica — el color de una sala de casa, no de un box.
+
+   ── POR QUÉ ESTE TRÍO ─────────────────────────────────────────────
+   · BITTER (display) — slab de lectura, redonda y sin filo. Tiene el
+     tono de un libro de crianza, que es exactamente el registro.
+   · NUNITO SANS (cuerpo) — grotesca de terminales redondeadas, la más
+     amable del catálogo sin caer en infantil.
+   · COUSINE (dato) — mono sobrio para las edades y los rótulos.
+
+   ── CONTRASTE ─────────────────────────────────────────────────────
+   El ciruela va declarado en sus dos versiones con el fondo de cada
+   una escrito al lado. Sobre pizarra da 1,59:1 y por eso ahí no se usa
+   jamás.
+   ═══════════════════════════════════════════════════════════════════ */
+
+:root {
+  --blanco:      #FBF9F7;
+  --blanco-alto: #FFFFFF;
+  --pizarra:      #33313E;
+  --pizarra-alto: #3E3B4A;
+
+  --pizarra-suave: #5F5C6B;  /* párrafos sobre blanco  —  6.2:1      */
+  --blanco-suave:  #B3B0BC;  /* párrafos sobre pizarra —  6.0:1      */
+
+  /* EL CIRUELA, en sus dos versiones. Cada una dice su fondo. */
+  --ciruela:       #7C3A5F;  /* SÓLO sobre blanco      —  7.61:1     */
+  --ciruela-clara: #DFA0BE;  /* SÓLO sobre pizarra     —  6.01:1     */
+
+  --display: 'Bitter', Georgia, serif;
+  --cuerpo:  'Nunito Sans', system-ui, -apple-system, sans-serif;
+  --dato:    'Cousine', ui-monospace, Consolas, monospace;
+
+  --ancho: 1080px;
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+
+/* El atributo hidden pierde contra cualquier regla con display.
+   Declararlo es obligatorio en esta casa. */
+[hidden] { display: none !important; }
+
+html { scroll-behavior: smooth; }
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+
+body {
+  margin: 0;
+  background: var(--blanco);
+  color: var(--pizarra-suave);
+  font-family: var(--cuerpo);
+  font-size: clamp(16px, 1.05vw + 13px, 18px);
+  line-height: 1.68;
+  -webkit-font-smoothing: antialiased;
+}
+
+img { max-width: 100%; display: block; }
+
+.ancho { width: min(100% - 2.4rem, var(--ancho)); margin-inline: auto; }
+
+.saltar {
+  position: absolute; left: -9999px; top: 0; z-index: 99;
+  background: var(--ciruela); color: var(--blanco);
+  padding: .7rem 1.1rem; font-family: var(--dato); font-size: .85rem;
+}
+.saltar:focus { left: .5rem; top: .5rem; }
+
+:focus-visible { outline: 3px solid var(--ciruela); outline-offset: 3px; }
+
+
+/* ═══════════════════════════════════════════════════════════════════
+   MARCA DE DATO INVENTADO
+   ═══════════════════════════════════════════════════════════════════ */
+[data-ejemplo]::before {
+  content: attr(data-ejemplo);
+  display: block; margin-bottom: .45rem;
+  font-family: var(--dato); font-size: .7rem; font-weight: 700;
+  letter-spacing: .06em; text-transform: uppercase;
+  color: var(--ciruela);
+}
+.edades-nota::before { color: var(--ciruela-clara); }
+
+.ninos-nota, .edades-nota {
+  margin: 2rem 0 0; max-width: 62ch; font-size: .88rem;
+  padding-left: 1rem; border-left: 3px solid var(--ciruela);
+  color: var(--pizarra-suave);
+}
+.edades-nota { border-left-color: var(--ciruela-clara); color: var(--blanco-suave); }
+.ninos-nota b { color: var(--pizarra); font-weight: 700; }
+.edades-nota b { color: var(--blanco); font-weight: 700; }
+
+
+/* ═══════════════════════════════════════════════════════════════════
+   CABECERA FLOTANTE
+   Vigésimo séptima cabecera del registro y la PRIMERA que no toca los
+   bordes: una tarjeta redondeada con margen por los cuatro lados,
+   apoyada encima del contenido.
+
+   Las veintiséis anteriores son barras a sangre. Despegarla del marco
+   cambia el tono completo — deja de leerse como la barra de un sistema
+   y pasa a leerse como algo puesto ahí, más cerca y menos
+   institucional. Que es lo que necesita una página dirigida a padres.
+
+   El truco para que siga siendo `sticky` con margen: el contenedor
+   pegajoso no lleva fondo y el color va en la caja de adentro.
+   ═══════════════════════════════════════════════════════════════════ */
+.cab {
+  position: sticky; top: 0; z-index: 40;
+  padding: .7rem;
+  background: linear-gradient(to bottom, var(--blanco) 60%, transparent);
+}
+.cab-caja {
+  display: flex; align-items: center; gap: 1.4rem;
+  width: min(100% - .6rem, var(--ancho));
+  margin-inline: auto;
+  padding: .7rem 1.2rem;
+  background: var(--pizarra);
+  border-radius: 14px;
+  box-shadow: 0 6px 18px rgba(51, 49, 62, .18);
+}
+.cab-m { margin: 0; font-family: var(--display); line-height: 1.1; color: var(--blanco); }
+.cab-m b { font-weight: 700; font-size: 1.15rem; }
+.cab-m span {
+  display: block; font-family: var(--dato); font-size: .64rem;
+  letter-spacing: .12em; text-transform: uppercase;
+  color: var(--ciruela-clara); margin-top: .1rem;
+}
+.cab-n { margin-left: auto; display: flex; gap: 1.3rem; }
+.cab-n a {
+  font-size: .84rem; color: var(--blanco-suave); text-decoration: none;
+  padding-bottom: 2px; border-bottom: 2px solid transparent;
+}
+.cab-n a:hover, .cab-n a:focus-visible { color: var(--blanco); border-bottom-color: var(--ciruela-clara); }
+.cab-tel {
+  font-family: var(--dato); font-size: .84rem; font-weight: 700;
+  background: var(--ciruela-clara); color: var(--pizarra);
+  padding: .5rem .9rem; border-radius: 8px;
+  text-decoration: none; white-space: nowrap;
+}
+/* El relleno NO se aclara al pasar el mouse: en la 39 ese gesto bajó
+   un botón a 3,8:1 y el auditor de contraste no mira los :hover. */
+.cab-tel:hover, .cab-tel:focus-visible { box-shadow: 0 0 0 3px rgba(223, 160, 190, .4); }
+
+
+/* ═══════════════════════════════════════════════════════════════════
+   PORTADA — EL ECO
+   Cuatro círculos concéntricos que se expanden muy despacio desde un
+   punto y se desvanecen, como una onda en el agua.
+
+   El catálogo de movimientos está completo desde la 58, así que acá se
+   reusa la escala — pero dibujando algo que ninguna demo había
+   dibujado: una onda que se propaga. Es lo más tranquilo que se puede
+   poner detrás de un titular, y esta página necesita calma más que
+   nada.
+
+   @keyframes puros, nunca requestAnimationFrame: Chrome congela rAF
+   en pestañas de fondo y la portada volvía a primer plano detenida a
+   mitad de camino.
+   ═══════════════════════════════════════════════════════════════════ */
+.portada {
+  position: relative; overflow: hidden;
+  min-height: min(84vh, 760px);
+  display: flex; align-items: center;
+  padding: 4rem 0 4.5rem;
+  background: radial-gradient(120% 100% at 80% 15%, #FBF2F6 0%, var(--blanco) 58%);
+}
+
+.eco { position: absolute; inset: 0; pointer-events: none; }
+.eco span {
+  position: absolute; left: 78%; top: 34%;
+  width: 34vw; max-width: 460px; aspect-ratio: 1;
+  margin: -17vw 0 0 -17vw;
+  border: 1px solid rgba(124, 58, 95, .28);
+  border-radius: 50%;
+  animation: expandir 13s ease-out infinite;
+}
+.eco span:nth-child(2) { animation-delay: -3.25s; }
+.eco span:nth-child(3) { animation-delay: -6.5s; }
+.eco span:nth-child(4) { animation-delay: -9.75s; }
+@keyframes expandir {
+  0%   { transform: scale(.15); opacity: 0; }
+  15%  { opacity: .9; }
+  100% { transform: scale(1.6); opacity: 0; }
+}
+
+.portada-cuerpo {
+  position: relative;
+  width: min(100% - 2.4rem, var(--ancho));
+  margin-inline: auto;
+}
+
+.portada-sobre {
+  margin: 0 0 1.5rem;
+  font-family: var(--dato); font-size: .76rem; font-weight: 700;
+  letter-spacing: .12em; text-transform: uppercase;
+  color: var(--ciruela);
+}
+
+.portada-h1 {
+  margin: 0 0 1.4rem;
+  font-family: var(--display); font-weight: 700;
+  font-size: clamp(2.1rem, 5.2vw, 3.9rem);
+  line-height: 1.1;
+  letter-spacing: -.025em;  /* fijo. Animar letter-spacing dejó el
+                               documento clavado en 443 px en una demo
+                               de la numeración vieja. */
+  color: var(--pizarra);
+  max-width: 20ch;
+}
+.portada-h1 .l { display: block; }
+.portada-h1 em { font-style: normal; color: var(--ciruela); }
+
+.portada-bajada { margin: 0 0 2.2rem; max-width: 50ch; color: var(--pizarra-suave); }
+.portada-acciones { display: flex; flex-wrap: wrap; gap: .8rem; margin-bottom: 2.4rem; }
+.portada-pie {
+  margin: 0; font-family: var(--dato); font-size: .78rem;
+  color: var(--pizarra-suave); line-height: 1.8;
+}
+.portada-pie b { color: var(--pizarra); font-weight: 700; }
+
+/* Entrada escalonada. Los estados ocultos cuelgan de .js y el
+   temporizador del <head> los libera si main.js no llega. */
+.js .portada .l { opacity: 0; transform: translate3d(0, 18px, 0);
+                  animation: entrar .9s cubic-bezier(.2,.7,.3,1) forwards; }
+.js .portada .l1 { animation-delay: .10s; }
+.js .portada .l2 { animation-delay: .22s; }
+.js .portada .l3 { animation-delay: .34s; }
+.js .portada .l4 { animation-delay: .50s; }
+.js .portada .l5 { animation-delay: .62s; }
+.js .portada .l6 { animation-delay: .72s; }
+@keyframes entrar { to { opacity: 1; transform: none; } }
+
+
+/* ═══════════════════════════════════════════════════════════════════
+   BOTONES
+   ═══════════════════════════════════════════════════════════════════ */
+.btn {
+  display: inline-block; text-decoration: none;
+  font-family: var(--dato); font-size: .86rem; font-weight: 700;
+  padding: .9rem 1.5rem; border-radius: 10px;
+  transition: box-shadow .18s ease, transform .18s ease;
+}
+.btn-fuerte { background: var(--ciruela); color: var(--blanco); }
+.btn-fuerte:hover, .btn-fuerte:focus-visible {
+  box-shadow: 0 0 0 3px rgba(124, 58, 95, .28); transform: translateY(-1px);
+}
+.btn-suave { color: var(--pizarra); border: 1px solid rgba(51, 49, 62, .28); }
+.btn-suave:hover, .btn-suave:focus-visible { border-color: var(--ciruela); color: var(--ciruela); }
+.grande { padding: 1.05rem 2rem; font-size: .94rem; }
+
+/* Sobre fondo oscuro cambia de versión. */
+.edades .btn-fuerte { background: var(--ciruela-clara); color: var(--pizarra); }
+
+
+/* ═══════════════════════════════════════════════════════════════════
+   PIEZAS DE TEXTO COMPARTIDAS
+   ═══════════════════════════════════════════════════════════════════ */
+.rotulo {
+  margin: 0 0 .7rem;
+  font-family: var(--dato); font-size: .74rem; font-weight: 700;
+  letter-spacing: .12em; text-transform: uppercase;
+  color: var(--ciruela);
+}
+.rotulo.claro { color: var(--ciruela-clara); }
+
+.t2 {
+  margin: 0 0 1.1rem;
+  font-family: var(--display); font-weight: 700;
+  font-size: clamp(1.8rem, 3.8vw, 2.6rem);
+  line-height: 1.16; letter-spacing: -.02em;
+  color: var(--pizarra); max-width: 22ch;
+}
+.t2.claro { color: var(--blanco); }
+
+.entrada { margin: 0 0 2.4rem; max-width: 56ch; color: var(--pizarra-suave); }
+.entrada.claro { color: var(--blanco-suave); }
+.entrada b { color: var(--pizarra); font-weight: 700; }
+.entrada.claro b { color: var(--blanco); }
+
+
+/* ═══════════════════════════════════════════════════════════════════
+   PIEZA FIRMA 1 — LA PRIMERA VEZ
+   Dos columnas enfrentadas, sí y no. El «no» pesa más que el «sí» en
+   este tema, así que las dos van con el mismo peso visual y ninguna
+   queda de nota al pie.
+   ═══════════════════════════════════════════════════════════════════ */
+.ninos { background: var(--blanco); padding: 5.5rem 0; }
+
+.dos {
+  display: grid; grid-template-columns: repeat(auto-fit, minmax(19rem, 1fr));
+  gap: 1.4rem;
+}
+.col {
+  padding: 1.8rem 1.6rem; border-radius: 14px;
+  background: var(--blanco-alto);
+  border: 1px solid rgba(51, 49, 62, .16);
+}
+.col-t {
+  margin: 0 0 1rem; font-family: var(--display); font-weight: 700;
+  font-size: 1.35rem; letter-spacing: -.01em;
+  display: flex; align-items: center; gap: .55rem;
+}
+.col.si .col-t { color: var(--ciruela); }
+.col.no .col-t { color: var(--pizarra); }
+.col.si .col-t::before { content: '✓'; font-family: var(--dato); font-size: .9em; }
+.col.no .col-t::before { content: '✕'; font-family: var(--dato); font-size: .9em; }
+.col ul { margin: 0; padding-left: 1.1rem; }
+.col li { margin-bottom: .9rem; font-size: .94rem; }
+.col li:last-child { margin-bottom: 0; }
+.col li::marker { color: var(--ciruela); }
+.col b { color: var(--pizarra); font-weight: 700; }
+
+.clave {
+  margin-top: 2.4rem; padding: 1.8rem; border-radius: 14px;
+  background: var(--blanco-alto);
+  border-left: 6px solid var(--ciruela);
+  max-width: 68ch;
+}
+.clave-t {
+  margin: 0 0 .8rem; font-family: var(--dato); font-size: .74rem;
+  font-weight: 700; letter-spacing: .1em; text-transform: uppercase;
+  color: var(--ciruela);
+}
+.clave p { margin: 0 0 .9rem; }
+.clave p:last-child { margin-bottom: 0; }
+.clave p:first-of-type b {
+  font-family: var(--display); font-size: 1.3rem; font-weight: 700;
+  color: var(--pizarra); line-height: 1.3; display: block;
+}
+
+
+/* ═══════════════════════════════════════════════════════════════════
+   PIEZA FIRMA 2 — QUÉ TOCA A CADA EDAD
+   La única sección oscura de la página. El hito de los 6 años va
+   destacado a propósito: es el dato por el que se guarda la página.
+   ═══════════════════════════════════════════════════════════════════ */
+.edades { background: var(--pizarra); padding: 5.5rem 0; }
+
+.hitos { list-style: none; margin: 0; padding: 0;
+         border-top: 1px solid rgba(251, 249, 247, .22); }
+.hito {
+  display: grid; grid-template-columns: 9rem minmax(0, 1fr);
+  gap: 1.6rem; padding: 1.6rem 0;
+  border-bottom: 1px solid rgba(251, 249, 247, .22);
+}
+.hito-e {
+  margin: 0; font-family: var(--dato); font-size: 1.15rem; font-weight: 700;
+  color: var(--ciruela-clara); line-height: 1.2;
+}
+.hito-e span {
+  display: block; font-size: .68rem; font-weight: 400;
+  letter-spacing: .06em; text-transform: uppercase;
+  color: var(--blanco-suave); margin-top: .25rem;
+}
+.hito-c h3 {
+  margin: 0 0 .4rem; font-family: var(--display); font-weight: 700;
+  font-size: 1.2rem; color: var(--blanco); letter-spacing: -.02em;
+}
+.hito-c p { margin: 0; font-size: .94rem; color: var(--blanco-suave); max-width: 62ch; }
+.hito-c b { color: var(--blanco); font-weight: 700; }
+
+.hito.destacado {
+  background: rgba(223, 160, 190, .10);
+  border-left: 4px solid var(--ciruela-clara);
+  padding-left: 1.2rem; padding-right: 1.2rem;
+}
+
+
+/* ═══════════════════════════════════════════════════════════════════
+   LÁMINA CON FOTO
+   ═══════════════════════════════════════════════════════════════════ */
+.lamina {
+  display: grid; grid-template-columns: .95fr 1.05fr;
+  align-items: stretch; background: var(--blanco-alto);
+}
+.lamina-texto { padding: 4.5rem clamp(1.4rem, 4vw, 3.5rem); align-self: center; }
+.lamina-foto { position: relative; overflow: hidden; min-height: 30rem; }
+/* La capa es un 24% más alta que su marco: le sobra recorrido para
+   desplazarse al scroll sin que nunca se vea el borde. */
+.lamina-capa {
+  position: absolute; inset: -12% 0;
+  background-color: var(--pizarra);
+  background-image: linear-gradient(150deg, #4C4859, #2F2D38);
+  display: grid; place-items: center;
+  will-change: transform;
+}
+
+.numeraco {
+  margin: 0; font-family: var(--display); font-weight: 700;
+  font-size: clamp(4rem, 11vw, 7.5rem); line-height: .9;
+  letter-spacing: -.05em; color: var(--ciruela);
+}
+
+.hueco-nota {
+  margin: 0; max-width: 26ch; text-align: center;
+  font-family: var(--dato); font-size: .76rem; line-height: 1.75;
+  color: var(--blanco-suave);
+  border: 1px dashed rgba(251, 249, 247, .28);
+  padding: 1.1rem 1.2rem; border-radius: 10px;
+}
+.hueco-nota code { color: var(--ciruela-clara); }
+.tiene-foto .hueco-nota { display: none; }
+
+
+/* ═══════════════════════════════════════════════════════════════════
+   DÓNDE ESTAMOS
+   ═══════════════════════════════════════════════════════════════════ */
+.llegar { background: var(--blanco); padding: 5.5rem 0; }
+.llegar-grilla {
+  display: grid; grid-template-columns: 1.15fr .85fr;
+  gap: clamp(2rem, 5vw, 4rem); align-items: start;
+}
+.datos {
+  margin: 0 0 2rem; display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(13rem, 1fr));
+  gap: 1.3rem 2rem;
+  border-top: 1px solid rgba(51, 49, 62, .2); padding-top: 1.6rem;
+}
+.datos dt {
+  font-family: var(--dato); font-size: .72rem; font-weight: 700;
+  letter-spacing: .1em; text-transform: uppercase;
+  color: var(--ciruela); margin-bottom: .25rem;
+}
+.datos dd { margin: 0; color: var(--pizarra); font-size: .98rem; }
+.datos dd a { color: var(--pizarra); text-decoration-color: var(--ciruela); }
+
+.aviso {
+  margin: 0; padding: 1.2rem 1.3rem; border-radius: 12px;
+  background: var(--blanco-alto);
+  border-left: 4px solid var(--ciruela);
+  font-size: .95rem; max-width: 58ch;
+}
+.aviso b { color: var(--pizarra); font-weight: 700; }
+
+.llegar-foto {
+  position: relative; height: 26rem;
+  background-color: var(--pizarra);
+  background-image: linear-gradient(160deg, #545067, #2F2D38);
+  display: grid; place-items: center; border-radius: 14px; overflow: hidden;
+}
+
+
+/* ═══════════════════════════════════════════════════════════════════
+   CIERRE Y PIE
+   ═══════════════════════════════════════════════════════════════════ */
+.cierre { background: var(--blanco-alto); padding: 5rem 0; text-align: center; }
+.cierre .t2, .cierre .entrada { margin-inline: auto; }
+.cierre .entrada { margin-bottom: 2.2rem; }
+
+.pie { background: var(--pizarra); padding: 3.2rem 0 3.6rem; }
+.pie-grilla {
+  display: grid; grid-template-columns: auto auto 1fr;
+  gap: 1.6rem 3rem; align-items: start;
+}
+.pie-m {
+  margin: 0; font-family: var(--display); font-weight: 700;
+  font-size: 1.1rem; color: var(--blanco); line-height: 1.45; letter-spacing: -.02em;
+}
+.pie-m span {
+  font-family: var(--dato); font-weight: 400; font-size: .68rem;
+  letter-spacing: .1em; text-transform: uppercase; color: var(--ciruela-clara);
+}
+.pie-d { margin: 0; font-family: var(--dato); font-size: .82rem;
+         color: var(--blanco-suave); line-height: 1.9; }
+.pie-d a { color: var(--ciruela-clara); }
+.pie-n { margin: 0; font-size: .78rem; color: var(--blanco-suave); max-width: 54ch; }
+
+
+/* ═══════════════════════════════════════════════════════════════════
+   REVEALS
+   Ocultos sólo bajo .js. main.js tiene dos resguardos: lo visible al
+   cargar se muestra de inmediato, y un barrido a los 6 s revela lo
+   que haya quedado pendiente.
+   ═══════════════════════════════════════════════════════════════════ */
+.js .reveal { opacity: 0; transform: translate3d(0, 20px, 0); }
+.js .reveal.visible {
+  opacity: 1; transform: none;
+  transition: opacity .7s ease, transform .7s cubic-bezier(.2,.7,.3,1);
+}
+
+
+/* ═══════════════════════════════════════════════════════════════════
+   PANTALLAS CHICAS
+   ═══════════════════════════════════════════════════════════════════ */
+@media (max-width: 980px) {
+  .lamina { grid-template-columns: 1fr; }
+  .lamina-texto { order: 1; }
+  .lamina-foto { order: 2; min-height: 22rem; }
+  .llegar-grilla { grid-template-columns: 1fr; }
+  /* aspect-ratio junto a min-height deja que el navegador calcule el
+     ancho desde el alto y se sale de la pantalla: alto fijo. */
+  .llegar-foto { height: 17rem; }
+  .pie-grilla { grid-template-columns: 1fr; }
+}
+
+@media (max-width: 720px) {
+  .cab-n { display: none; }
+  .cab { padding: .5rem; }
+  .cab-caja { gap: .8rem; border-radius: 12px; }
+  .cab-tel { margin-left: auto; }
+  .portada { min-height: auto; padding: 2.6rem 0 3.2rem; }
+  .ninos, .edades, .llegar, .cierre { padding: 3.8rem 0; }
+  .lamina-texto { padding: 3rem 1.2rem; }
+  .hito { grid-template-columns: 1fr; gap: .5rem; }
+  .hito-e { display: flex; align-items: baseline; gap: .5rem; }
+  .hito-e span { margin-top: 0; }
+  .clave { padding: 1.4rem 1.2rem; }
+}
+
+
+/* ═══════════════════════════════════════════════════════════════════
+   MOVIMIENTO REDUCIDO
+   En Windows esta preferencia viene activada de fábrica muchas veces.
+   El eco se detiene con los cuatro anillos repartidos y visibles —una
+   onda quieta sigue siendo un dibujo, a diferencia de la lluvia de la
+   60, que congelada se lee como error— y se apaga el desplazamiento de
+   la foto. Los fundidos se dejan: apagándolo todo la página se ve
+   muerta.
+   ═══════════════════════════════════════════════════════════════════ */
+@media (prefers-reduced-motion: reduce) {
+  .eco span { animation: none; opacity: .5; }
+  .eco span:nth-child(1) { transform: scale(.4); }
+  .eco span:nth-child(2) { transform: scale(.75); }
+  .eco span:nth-child(3) { transform: scale(1.1); }
+  .eco span:nth-child(4) { transform: scale(1.45); }
+  .js .portada .l { animation-duration: .01s; animation-delay: 0s; }
+}
+
+
+/* ═══════════════════════════════════════════════════════════════════
+   FOTOS — DESCOMENTAR CUANDO LLEGUEN
+   Dejar los JPEG en imagenes/ con estos nombres y quitar el comentario.
+   La nota del hueco desaparece sola.
+   ═══════════════════════════════════════════════════════════════════ */
+/* ── LAS FOTOS, YA PUESTAS ─────────────────────────────────────── */
+  .lamina-capa { background-image: url('../imagenes/box.jpg'); background-size: cover; background-position: center; }
+  .llegar-foto { background-image: url('../imagenes/entrada.jpg'); background-size: cover; background-position: center; }
+
+
+/* ── MAPA DE UBICACION ──────────────────────────────────────────────
+   Imagen propia con mosaicos de OpenStreetMap pegados: la CSP prohibe
+   pedir nada a un tercero, asi que un iframe de Google Maps quedaria en
+   blanco SIN dar un solo error. El "Como llegar" si es un enlace, y un
+   enlace no lo bloquea nada.
+   Los colores salen de currentColor a proposito: asi el bloque se adapta
+   a la paleta de cada demo sin conocerla y sin chocar con ella.
+   La atribucion a OpenStreetMap la exige su licencia (ODbL). */
+.mapa-sec { padding: clamp(2.5rem, 6vw, 4.5rem) 0; }
+.mapa {
+  /* Casi siempre el mapa queda como hijo DIRECTO de la seccion, fuera del
+     contenedor .ancho: sin este ancho maximo se va de borde a borde y el
+     pie del mapa arranca pegado al filo de la pantalla. Se usa la variable
+     de la demo si existe, y 1100 px si no. */
+  width: min(100% - 2.5rem, var(--ancho, 1100px));
+  margin: 1.4rem auto 0;
+  border: 1px solid; border-color: color-mix(in srgb, currentColor 22%, transparent);
+  border-radius: 10px; overflow: hidden;
+}
+@supports not (color: color-mix(in srgb, red 50%, blue)) { .mapa { border-color: rgba(128, 128, 128, .35); } }
+.mapa img { display: block; width: 100%; height: auto; aspect-ratio: 16 / 10; object-fit: cover; }
+.mapa__pie {
+  display: flex; flex-wrap: wrap; align-items: center; gap: .4rem 1rem;
+  padding: .75rem .9rem;
+  font-size: .86em; line-height: 1.45;
+  border-top: 1px solid; border-top-color: color-mix(in srgb, currentColor 22%, transparent);
+}
+@supports not (color: color-mix(in srgb, red 50%, blue)) { .mapa__pie { border-top-color: rgba(128, 128, 128, .35); } }
+.mapa__pie b { font-weight: 700; }
+.mapa__ir { color: inherit; font-weight: 700; text-decoration: underline; min-height: 44px; display: inline-flex; align-items: center; }
+.mapa__cred { width: 100%; font-size: .84em; opacity: .8; }
+.mapa__cred a { color: inherit; }
+/* ── BOTON FLOTANTE DE CONTACTO ─────────────────────────────────────
+   56 px de alto, por encima del minimo tactil de 44. Los colores de
+   marca van a proposito: se reconocen sin leerlos, y eso es lo que hace
+   que se toquen. Se ve SIEMPRE por defecto; el JS solo lo aparta sobre
+   la portada. Al reves, un fallo del script se llevaria el CTA principal. */
+.flota {
+  position: fixed;
+  right: max(1rem, env(safe-area-inset-right, 0px));
+  bottom: max(1rem, env(safe-area-inset-bottom, 0px));
+  z-index: 60;
+  display: inline-flex; align-items: center; gap: .55rem;
+  height: 56px; padding: 0 1.15rem 0 1rem;
+  border-radius: 999px;
+  text-decoration: none;
+  font-family: var(--cuerpo, system-ui, sans-serif);
+  font-size: .95rem; font-weight: 700; line-height: 1;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, .26), 0 2px 6px rgba(0, 0, 0, .16);
+  transition: opacity .28s ease, transform .28s ease, box-shadow .18s ease;
+}
+.flota--wa { background: #25D366; color: #07310F; }
+.flota--ig { background: linear-gradient(120deg, #F9CE34 4%, #EE2A7B 48%, #6228D7 96%); color: #FFFFFF; }
+.flota__i { width: 26px; height: 26px; fill: currentColor; flex: none; }
+.flota:hover, .flota:focus-visible { transform: translateY(-2px); box-shadow: 0 10px 26px rgba(0, 0, 0, .3); }
+.js .flota--arriba { opacity: 0; transform: translateY(14px) scale(.94); pointer-events: none; }
+
+@media (max-width: 520px) {
+  .flota { width: 56px; padding: 0; justify-content: center; }
+  .flota__t { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .flota { transition: opacity .28s ease; }
+  .flota:hover, .flota:focus-visible { transform: none; }
+  .js .flota--arriba { transform: none; }
+}

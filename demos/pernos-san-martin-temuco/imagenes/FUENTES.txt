@@ -1,0 +1,20 @@
+FUENTES DE LAS IMAGENES - Pernos San Mart&iacute;n Rehecha el 13-09-2026 (presentacion antes que texto). Fotos de REFERENCIA de bancos libres: ninguna es del local; las verdaderas las tiene que mandar el negocio. 
+port-01.jpg  <-  pozo-p-per-pernos\003.jpg  |  pexels (Pexels License)  |  autor: Győző Mórocz  |  https://www.pexels.com/es-es/foto/oscuro-metal-acero-tornillos-17372998/  |  consulta: "bolts nuts"
+banda-01.jpg  <-  pozo-p-per-pernos\001.jpg  |  pexels (Pexels License)  |  autor: Alex Tepetidis  |  https://www.pexels.com/es-es/foto/tuercas-frutos-secos-reciclaje-monton-5279361/  |  consulta: "bolts nuts"
+cita-01.jpg  <-  pozo-p-per-cajones\004.jpg  |  pexels (Pexels License)  |  autor: James Frid  |  https://www.pexels.com/es-es/foto/estante-organizador-negro-al-lado-de-la-caja-1097015/  |  consulta: "hardware drawers"
+hund1-01.jpg  <-  pozo-p-per-acero\007.jpg  |  pexels (Pexels License)  |  autor: Pixabay  |  https://www.pexels.com/es-es/foto/primer-plano-de-tornillo-257759/  |  consulta: "steel bolt"
+hund2-01.jpg  <-  pozo-p-per-acero\005.jpg  |  pexels (Pexels License)  |  autor: John Triwinata  |  https://www.pexels.com/es-es/foto/primer-plano-de-pernos-hexagonales-de-acero-a-granel-30496227/  |  consulta: "steel bolt"
+hund3-01.jpg  <-  pozo-p-per-pernos\010.jpg  |  pexels (Pexels License)  |  autor: Győző Mórocz  |  https://www.pexels.com/es-es/foto/industria-metal-conexion-acero-17373000/  |  consulta: "bolts nuts"
+hund4-01.jpg  <-  pozo-p-per-acero\012.jpg  |  pexels (Pexels License)  |  autor: Győző Mórocz  |  https://www.pexels.com/es-es/foto/oscuro-metal-acero-tornillos-17372998/  |  consulta: "steel bolt"
+mos1-01.jpg  <-  pozo-p-per-cajones\001.jpg  |  pexels (Pexels License)  |  autor: Gundars Platonovs  |  https://www.pexels.com/es-es/foto/gabinete-de-almacenamiento-con-cajones-industriales-vintage-35066503/  |  consulta: "hardware drawers"
+mos2-01.jpg  <-  pozo-p-per-pernos\006.jpg  |  pexels (Pexels License)  |  autor: Gawtham Vijayan  |  https://www.pexels.com/es-es/foto/abundancia-de-tornillos-21050460/  |  consulta: "bolts nuts"
+mos3-01.jpg  <-  pozo-p-per-llave\008.jpg  |  pexels (Pexels License)  |  autor: Dmitry Demidov  |  https://www.pexels.com/es-es/foto/herramientas-equipo-variedad-espacio-para-texto-6789020/  |  consulta: "wrench"
+mos4-01.jpg  <-  pozo-p-per-cajones\008.jpg  |  pexels (Pexels License)  |  autor: Ksenia Chernaya  |  https://www.pexels.com/es-es/foto/varios-clavos-en-cajas-de-plastico-sobre-la-mesa-5691654/  |  consulta: "hardware drawers"
+mos5-01.jpg  <-  pozo-p-per-acero\009.jpg  |  pexels (Pexels License)  |  autor: Peter Dyllong  |  https://www.pexels.com/es-es/foto/primer-plano-de-tornillos-oxidados-en-estructura-metalica-36310769/  |  consulta: "steel bolt"
+mos6-01.jpg  <-  pozo-p-per-tornillos\012.jpg  |  pexels (Pexels License)  |  autor: Pixabay  |  https://www.pexels.com/es-es/foto/pernos-roscados-plateados-259968/  |  consulta: "screws"
+
+BRUMA (bruma-pag-0N.png y bruma-osc-0N.png, 30x20): las MISMAS fotos, recortadas a 3:2, reducidas y
+recoloreadas con C:\devs\demos\hacer-bruma.ps1 (clara >= 0,68 de luminancia / oscura <= 0,05). No suman fuentes.
+    pagina: port-01.jpg, banda-01.jpg, hund1-01.jpg, hund3-01.jpg, mos1-01.jpg, mos2-01.jpg, mos4-01.jpg, mos5-01.jpg   |   oscuras: port-01.jpg, cita-01.jpg, mos5-01.jpg
+
+MAPA: iframe de Google Maps (embed publico, sin clave). No hay imagen de mapa.

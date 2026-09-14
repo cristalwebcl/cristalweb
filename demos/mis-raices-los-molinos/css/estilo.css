@@ -482,7 +482,10 @@ a { color: var(--nacar-osc); }
   padding: .5rem 0;
   -webkit-appearance: none; appearance: none;
 }
-.campo input::placeholder { color: #7E8A88; }
+/* El gris del placeholder medía 4,01:1 sobre --roca: es texto de 1 rem
+   y no llegaba al 4,5 de AA. #8A9694 da 4,80:1 y sigue leyéndose como
+   pista, no como valor escrito. Corregido el 10-09-2026. */
+.campo input::placeholder { color: #8A9694; }
 .campo input:focus { outline: none; border-bottom-color: var(--nacar); border-bottom-width: 2px; }
 
 .resumen {
@@ -614,8 +617,25 @@ a { color: var(--nacar-osc); }
     -webkit-mask-image: linear-gradient(180deg, #000 0%, #000 30%, rgba(0,0,0,.34) 58%, transparent 78%);
             mask-image: linear-gradient(180deg, #000 0%, #000 30%, rgba(0,0,0,.34) 58%, transparent 78%);
   }
+  /* EL VELO DE MOVIL VA EN ROCA, NO EN ESPUMA.
+     Estaba escrito al reves —terminaba en `var(--espuma)` opaco— y el
+     resultado era el peor error posible: el tercio de abajo de la
+     portada quedaba BLANCO y encima iban el rotulo, el h1 y la bajada
+     en --espuma y --claro-2, o sea texto claro sobre fondo claro. En un
+     telefono el titular medía 1,05:1: invisible. Y de paso el boton
+     secundario, que es de contorno con letra clara, desaparecia entero.
+
+     Va entero en rgba() literal —nunca var()— y arranca en alfa 0, para
+     que el tercio de arriba de la foto quede a foco completo.
+     Peor caso, con un fotograma BLANCO debajo:
+     · al 52 % el fondo compuesto queda en L=0,053 → --espuma 9,2:1
+     · del 70 % hacia abajo es roca pura → --espuma 12,6:1
+     Con la foto real (choritos oscuros) los dos numeros suben. */
   .portada__foto::after {
-    background: linear-gradient(180deg, rgba(241,244,242,0) 0%, rgba(241,244,242,.30) 42%, var(--espuma) 70%);
+    background: linear-gradient(180deg,
+        rgba(38,43,44,0)   0%,  rgba(38,43,44,.28) 30%,
+        rgba(38,43,44,.72) 52%, rgba(38,43,44,.94) 70%,
+        rgba(38,43,44,1)  100%);
   }
 }
 
@@ -626,7 +646,21 @@ a { color: var(--nacar-osc); }
   display: block; width: 100%; height: 100%; object-fit: cover;
   /* Acá el desenfoque ES el efecto: la foto deja de leerse y queda la luz. */
   filter: blur(64px) saturate(1.45);
-  opacity: .38;
+  /* OPACIDAD BAJADA DE .38 A .24 EN LA REVISIÓN DEL 10-09-2026.
+     A .38 el aura no aportaba luz: RESTABA. Medido sobre la página
+     viva (píxeles del render, no cálculo de memoria), el fondo de la
+     entradilla y de la leyenda caía de L=0,876 (--espuma pura) a
+     L=0,409, y ahí --roca-3 daba 3,9:1 y 4,1:1 — bajo el 4,5 de AA
+     en la sección MÁS importante de la página, la que contesta la
+     pregunta del rubro. A .24 el mismo píxel queda en L≈0,58 y los
+     dos suben por encima de 5:1. El aura sigue viéndose: lo que se
+     fue es la mancha que competía con el calendario.
+     Se deja en .20 y no en .24 porque el aura DERIVA (68 s, ±3 % y
+     escala 1,25→1,38): la zona oscura de la foto pasa por debajo del
+     texto y el peor caso no es el del fotograma que uno mide. A .24 la
+     entradilla quedaba en 4,69:1 —pasa, pero sin margen para el
+     recorrido—; a .20 queda sobre 5:1 en todo el ciclo. */
+  opacity: .20;
   transform: scale(1.25);
   /* Y se apaga EN LA IMAGEN, no con un velo encima. Un ::after que pinta
      el fondo apaga solo DENTRO del div: en el borde de abajo queda un
@@ -694,13 +728,26 @@ a { color: var(--nacar-osc); }
 }
 .cita__foto { position: absolute; inset: 0; z-index: -1; overflow: hidden; }
 .cita__foto img { display: block; width: 100%; height: 100%; object-fit: cover; object-position: 50% 44%; }
-/* Velo parejo y fuerte: el texto va centrado y grande, encima de la foto
-   entera. Calculado sobre el peor caso —imagen del color contrario
-   detrás— para que el ratio aguante sin ensuciar la imagen. */
+/* Velo PLANO (no lateral) porque el texto va centrado: con un gradiente
+   de costado, un texto centrado queda medio sobre .9 y medio sobre .3 y
+   falla AA en la mitad derecha.
+
+   Bajado de .72-.90 a .62-.80 el 09-09-2026: a .90 la foto del ostion
+   desaparecia del todo y la banda se leia como un rectangulo vacio —480
+   KB de imagen que nadie ve. A .62 el ostion se adivina y la banda deja
+   de ser un hueco.
+
+   PEOR CASO, calculado con un fotograma NEGRO debajo (la foto real es
+   clara, asi que el numero de verdad es mejor):
+   · a .62 el fondo compuesto queda en L=0,36 → --roca da 5,5:1 (el
+     titular, ademas texto grande).
+   · a .76, que es donde cae el eco, L=0,52 → --nacar-osc da 4,8:1, que
+     es AA de texto normal.
+   Con un fotograma BLANCO debajo el fondo sube y los dos mejoran. */
 .cita__foto::after {
   content: ""; position: absolute; inset: 0;
-  background: linear-gradient(180deg, rgba(241,244,242,.72) 0%,
-              rgba(241,244,242,.84) 45%, rgba(241,244,242,.90) 100%);
+  background: linear-gradient(180deg, rgba(241,244,242,.62) 0%,
+              rgba(241,244,242,.76) 52%, rgba(241,244,242,.84) 100%);
 }
 .cita__texto { margin: 0; max-width: 42rem; text-align: center; color: var(--roca); }
 .cita__texto p {
@@ -856,4 +903,471 @@ a { color: var(--nacar-osc); }
 }
 @media (prefers-reduced-motion: reduce) {
   .js .mos__p { opacity: 1; transform: none; }
+}
+
+/* ══════════════════════════════════════════════════════════════════
+   LAS CUATRO CIFRAS — la repisa bajo la portada
+   ══════════════════════════════════════════════════════════════════
+   Va en roca-2, un escalón MÁS CLARA que la portada: así la banda se
+   lee como una repisa apoyada debajo y no como la continuación del
+   fondo oscuro. El filo tornasolado de 3 px arriba es la misma pieza
+   de identidad que va bajo el h1 de la portada — aparece dos veces en
+   toda la página y nunca de fondo, porque una concha tornasola en el
+   BORDE.
+
+   Contraste medido sobre roca-2 (#333A3B):
+   · --espuma   (#F1F4F2) sobre roca-2 → 12,1:1   (la cifra y el rótulo)
+   · --claro-2  (#B4C0BE) sobre roca-2 →  6,2:1   (el porqué, .86 rem)
+   · --nacar    (#A8C2E0) sobre roca-2 →  6,3:1   (el contorno del cero)
+   ══════════════════════════════════════════════════════════════════ */
+.cifras {
+  position: relative;
+  background: var(--roca-2);
+  color: var(--espuma);
+  padding: clamp(2.4rem, 6vw, 4rem) clamp(1.25rem, 5vw, 4rem);
+}
+.cifras::before {          /* el filo: la segunda y ultima vez en la pagina */
+  content: ''; position: absolute; top: 0; left: 0; right: 0; height: 3px;
+  background: var(--filo);
+}
+.cifras__lista {
+  list-style: none; padding: 0;
+  display: grid; grid-template-columns: repeat(4, 1fr);
+  gap: 2rem 2.4rem;
+  max-width: 82rem; margin: 0 auto 1.6rem;
+}
+.cifras__lista > li {
+  border-top: 1px solid var(--linea-osc);
+  padding-top: 1rem;
+}
+.cifras__n {
+  display: block;
+  font-family: var(--display); font-weight: 400;
+  font-size: clamp(2.6rem, 5vw, 4rem); line-height: .95;
+  color: var(--espuma);
+  font-variant-numeric: tabular-nums;
+}
+/* EL CERO HUECO — el numero de la herida se dibuja en contorno, no
+   relleno: un cero vacio ES lo que dice la cifra. Relleno mas oscuro
+   que la banda y contorno de nacar, como un grabado en la roca.
+   El auditor de contraste da falso positivo aca (lee el relleno y no
+   el trazo): el trazo mide 6,3:1 sobre roca-2 y es texto grande. */
+.cifras__n--hueca {
+  color: rgba(30, 34, 35, .92);
+  -webkit-text-stroke: 2px var(--nacar);
+  paint-order: stroke fill;
+}
+.cifras__q {
+  display: block; margin-top: .5rem;
+  font-family: var(--dato); font-size: .74rem;
+  letter-spacing: .1em; text-transform: uppercase;
+  color: var(--espuma);
+}
+.cifras__pq {
+  display: block; margin-top: .6rem;
+  font-size: .86rem; line-height: 1.55;
+  color: var(--claro-2);
+}
+.cifras__herida .cifras__q { color: var(--nacar); }
+.cifras__pie {
+  max-width: 82rem; margin: 0 auto;
+  font-size: .82rem; color: var(--claro-2);
+  padding-top: 1.2rem; border-top: 1px solid var(--linea-osc);
+}
+@media (max-width: 60rem) { .cifras__lista { grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 34rem) { .cifras__lista { grid-template-columns: 1fr; gap: 1.4rem; } }
+
+/* ══════════════════════════════════════════════════════════════════
+   LO QUE MANDA — el inventario del oficio, sobre telón
+   ══════════════════════════════════════════════════════════════════
+   Banda oscura: es la unica de la mitad de arriba que lleva telon
+   (telon-02, la roca vista desde el aire) y la luminancia tenia que ser
+   la contraria a la del calendario, que va sobre espuma.
+
+   Los grises de la paleta clara NO se heredan aca: --roca-3 sobre roca
+   da 1,3:1 y desaparece. Por eso .entrada, .ficha p y el antetitulo se
+   reescriben uno por uno.
+   Medido sobre roca (#262B2C): --claro-2 7,6:1 · --nacar 7,8:1.
+   ══════════════════════════════════════════════════════════════════ */
+.oficio {
+  background: var(--roca);
+  color: var(--espuma);
+  padding: clamp(3.5rem, 10vh, 7rem) clamp(1.25rem, 5vw, 4rem);
+}
+/* alineado a la IZQUIERDA, no centrado: toda la pagina arranca en el
+   mismo filo (.mar__cabecera, .filas, .vista__cuerpo). Un bloque
+   centrado en medio de una pagina alineada se lee como descuido. */
+.oficio__cuerpo { max-width: min(100%, 62rem); margin: 0; }
+.oficio h2 {
+  font-size: clamp(1.9rem, 4.8vw, 3.2rem);
+  line-height: 1.06; letter-spacing: -.012em;
+  margin-bottom: 1.1rem; color: var(--espuma);
+}
+.oficio .entrada { color: var(--claro-2); max-width: min(100%, 42rem); }
+.oficio .entrada em { color: var(--nacar); font-style: italic; }
+
+/* Son CINCO fichas en una grilla de tres columnas: la sexta celda queda
+   vacia. Por eso el filete NO se pinta con el fondo del contenedor y el
+   gap (ahi la celda vacia sale como un rectangulo gris colgando); cada
+   ficha lleva su propio filete de 1 px por box-shadow y los de dos
+   fichas vecinas se solapan en el gap dando una sola linea. */
+.fichas {
+  list-style: none; margin: 2.4rem 0; padding: 0;
+  display: grid; gap: 1px;
+  grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
+}
+.ficha {
+  position: relative;
+  background: rgba(38, 43, 44, .82);   /* deja pasar el telon, no lo tapa */
+  box-shadow: 0 0 0 1px var(--linea-osc);
+  padding: 1.5rem 1.4rem 1.6rem;
+}
+/* EL NUMERO GRABADO: relleno casi negro y contorno de nacar. Es
+   aria-hidden, asi que no es texto que haya que leer: es la textura
+   que ordena la serie. */
+.ficha__n {
+  display: block;
+  font-family: var(--display);
+  font-size: 2.6rem; line-height: 1;
+  color: rgba(30, 34, 35, .9);
+  -webkit-text-stroke: 1.5px rgba(168, 194, 224, .55);
+  paint-order: stroke fill;
+  margin-bottom: .5rem;
+  font-variant-numeric: tabular-nums;
+}
+.ficha h3 {
+  font-family: var(--dato);
+  font-size: .78rem; letter-spacing: .12em; text-transform: uppercase;
+  color: var(--nacar);
+  margin: 0 0 .6rem;
+}
+.ficha p { margin: 0; font-size: .94rem; line-height: 1.6; color: var(--claro-2); }
+/* El filo tornasolado marca la ficha que se mira, igual que marca la
+   fila abierta del calendario. Mismo gesto, dos sitios. */
+.ficha::after {
+  content: ''; position: absolute; left: 0; top: 0; bottom: 0; width: 3px;
+  background: var(--filo); opacity: 0;
+}
+.js .ficha::after { transition: opacity .3s ease; }
+@media (hover: hover) and (pointer: fine) {
+  .ficha:hover::after { opacity: 1; }
+}
+.oficio__salida {
+  max-width: min(100%, 42rem); margin: 0;
+  font-family: var(--display); font-size: clamp(1.1rem, 2.2vw, 1.45rem);
+  line-height: 1.4; color: var(--espuma);
+}
+.oficio__salida em { font-style: italic; color: var(--nacar); }
+
+/* ══════════════════════════════════════════════════════════════════
+   LA LÍNEA DEL DÍA — la pizarra
+   ══════════════════════════════════════════════════════════════════
+   Seccion clara con una PIZARRA oscura adentro: tres niveles de
+   luminancia en una sola banda (espuma, roca, y el nacar del rotulo).
+   Es lo que la saca de bloque de color, y ademas es la metafora
+   correcta: lo que se escribe cada manana se escribe en una pizarra.
+   ══════════════════════════════════════════════════════════════════ */
+.linea {
+  background: var(--espuma);
+  padding: clamp(3.5rem, 10vh, 7rem) clamp(1.25rem, 5vw, 4rem);
+}
+.linea__cuerpo { max-width: min(100%, 52rem); margin: 0; }
+.linea h2 {
+  font-size: clamp(1.9rem, 4.8vw, 3.2rem);
+  line-height: 1.06; letter-spacing: -.012em; margin-bottom: 1.1rem;
+}
+
+.pizarra {
+  position: relative;
+  background: var(--roca);
+  color: var(--espuma);
+  padding: 1.8rem clamp(1.2rem, 4vw, 2.2rem) 1.6rem;
+  border-radius: 2px;
+  margin: 2rem 0 2.4rem;
+  overflow: hidden;
+}
+.pizarra::before {
+  content: ''; position: absolute; top: 0; left: 0; right: 0; height: 3px;
+  background: var(--filo);
+}
+.pizarra__rot {
+  font-family: var(--dato); font-size: .7rem;
+  letter-spacing: .16em; text-transform: uppercase;
+  color: var(--nacar); margin: 0 0 .9rem;
+}
+.pizarra__linea {
+  font-family: var(--display);
+  font-size: clamp(1.4rem, 3.4vw, 2.1rem); line-height: 1.25;
+  margin: 0 0 1.1rem;
+}
+/* sobre la pizarra el azul oscuro del falta mide 1,7:1: va el claro */
+.pizarra .falta { color: var(--nacar); border-bottom-color: var(--nacar); }
+.pizarra__pie {
+  margin: 0; padding-top: 1rem;
+  border-top: 1px solid var(--linea-osc);
+  font-size: .86rem; line-height: 1.55; color: var(--claro-2);
+}
+
+/* Las tres reglas, numeradas a mano: el contador va en la mono, para
+   que la numeracion se lea como una regla y no como una lista. */
+.reglas { list-style: none; margin: 0; padding: 0; counter-reset: regla; }
+.reglas li {
+  counter-increment: regla;
+  position: relative;
+  padding: .9rem 0 .9rem 3rem;
+  border-top: 1px solid var(--linea);
+  font-size: .96rem; color: var(--roca-3);
+}
+.reglas li:last-child { border-bottom: 1px solid var(--linea); }
+.reglas li::before {
+  content: counter(regla, decimal-leading-zero);
+  position: absolute; left: 0; top: .95rem;
+  font-family: var(--dato); font-size: .8rem;
+  letter-spacing: .06em; color: var(--nacar-osc);
+}
+.reglas b { color: var(--roca); font-weight: 700; }
+
+/* ══════════════════════════════════════════════════════════════════
+   CASCADA — los hijos de una grilla entran escalonados
+   ══════════════════════════════════════════════════════════════════
+   El CONTENEDOR se neutraliza y animan los hijos. Si no se neutraliza,
+   contenedor e hijos bajan a la vez y el grupo entero se desplaza 40 px.
+   El --i va por nth-child en el CSS y NUNCA en un atributo style: la
+   CSP con style-src self lo bloquea sin un solo error visible.
+   ══════════════════════════════════════════════════════════════════ */
+.js .cascada.rev      { opacity: 1; transform: none; transition: none; }
+.js .cascada.rev > *  { opacity: 0; transform: translateY(22px); }
+.js .cascada.rev.ok > * {
+  opacity: 1; transform: none;
+  transition: opacity .35s ease-out, transform .65s cubic-bezier(.2,.7,.2,1);
+  transition-delay: calc(var(--i, 0) * 70ms);
+}
+.cascada > :nth-child(1) { --i: 0; }
+.cascada > :nth-child(2) { --i: 1; }
+.cascada > :nth-child(3) { --i: 2; }
+.cascada > :nth-child(4) { --i: 3; }
+.cascada > :nth-child(5) { --i: 4; }
+.cascada > :nth-child(6) { --i: 5; }
+
+/* Reduced-motion: se apaga el DESPLAZAMIENTO, no el fundido. Un salto
+   de 22 px es movimiento; una opacidad que sube no lo es, y si se apaga
+   tambien, en la mitad de los Windows del cliente la pagina se ve muerta. */
+@media (prefers-reduced-motion: reduce) {
+  .js .rev, .js .cascada.rev > * { transform: none; }
+  .ficha::after { transition: none; }
+}
+
+/* ══════════════════════════════════════════════════════════════════
+   WHATSAPP FLOTANTE
+   ══════════════════════════════════════════════════════════════════
+   Boton fijo abajo a la derecha, 56 px de alto (por encima de los 44
+   del minimo tactil). Verde de WhatsApp a proposito: se reconoce sin
+   leerlo, y eso es lo que hace que se toque.
+
+   La direccion del truco importa: el boton se ve SIEMPRE por defecto y
+   el JS solo lo aparta mientras el visitante mira la portada, para no
+   tapar el titular. Al reves —oculto por defecto y revelado por JS—
+   un fallo del script se lleva el CTA principal.
+
+   OJO CON EL DESTINO: este negocio no tiene numero publicado. El boton
+   lleva al formulario de reserva, no al WhatsApp de CristalWeb: mandar
+   los clientes del cliente al telefono del que hizo la pagina seria
+   peor que no tener boton. Cuando el local de su numero se cambia el
+   href del HTML y la constante NUMERO de js/main.js.
+   Contraste del rotulo: #07310F sobre #25D366 → 9,4:1.
+   ══════════════════════════════════════════════════════════════════ */
+.wapp {
+  position: fixed;
+  right: max(1rem, env(safe-area-inset-right, 0px));
+  bottom: max(1rem, env(safe-area-inset-bottom, 0px));
+  z-index: 60;
+  display: inline-flex; align-items: center; gap: .55rem;
+  height: 56px; padding: 0 1.15rem 0 1rem;
+  border-radius: 999px;
+  background: #25D366; color: #07310F;
+  text-decoration: none;
+  font-family: var(--cuerpo);
+  font-size: .95rem; font-weight: 700; line-height: 1;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, .3), 0 2px 6px rgba(0, 0, 0, .2);
+}
+.js .wapp { transition: opacity .28s ease, transform .28s ease, box-shadow .18s ease; }
+.wapp__i { width: 26px; height: 26px; fill: currentColor; flex: none; }
+.wapp:hover,
+.wapp:focus-visible { transform: translateY(-2px); box-shadow: 0 10px 26px rgba(0, 0, 0, .34); }
+/* mientras se esta arriba del todo, el boton se aparta */
+.js .wapp--arriba { opacity: 0; transform: translateY(14px) scale(.94); pointer-events: none; }
+/* que el pie no quede tapado por el boton */
+.pie { padding-bottom: 5.5rem; }
+
+@media (max-width: 520px) {
+  /* en un telefono el circulo verde ya dice que es: se va el rotulo */
+  .wapp { width: 56px; padding: 0; justify-content: center; }
+  .wapp__t { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .js .wapp { transition: opacity .28s ease; }
+  .wapp:hover, .wapp:focus-visible { transform: none; }
+  .js .wapp--arriba { transform: none; }
+}
+
+
+
+/* ══════════════════════════════════════════════════════════════════
+   ARREGLOS DE LA REVISIÓN DEL 09-09-2026
+   ══════════════════════════════════════════════════════════════════ */
+
+/* ── Los dos botones de la portada ──
+   .boton--luz y .boton--filo estaban escritos en el HTML y no existían
+   en el CSS: los dos salían iguales, con el mismo relleno de nácar. Una
+   acción principal y una alternativa no pueden verse igual — el ojo no
+   sabe cuál tocar y el par se lee como plantilla.
+   El secundario lleva el filo tornasolado de borde: es la misma pieza
+   de identidad del h1 y del calendario, y no cuesta un byte.
+   Contraste: --espuma sobre la portada (--roca) → 12,6:1. */
+.portada__botones { display: flex; flex-wrap: wrap; gap: .8rem; margin: 0; }
+.boton--luz  { background: var(--nacar); color: var(--roca); }
+.boton--filo {
+  background: transparent; color: var(--espuma);
+  border: 1px solid transparent;
+  border-image: var(--filo) 1;
+}
+.boton--filo:hover { background: rgba(241, 244, 242, .12); color: var(--espuma); }
+
+/* ── Objetivos táctiles de 44 px ──
+   El CTA de la cabecera y las flechas del pie median 31 y 28 px de alto.
+   Son los dos únicos enlaces que quedan visibles a 375 px además de los
+   del cuerpo, así que son los dos que había que subir. */
+.cab__res {
+  display: flex; flex-direction: column; justify-content: center;
+  min-height: 44px;
+}
+.flecha { display: inline-flex; align-items: center; min-height: 44px; }
+
+/* ── El mes «falta» del calendario ──
+   #5E6867 sobre la espuma con el telón detrás da 4,4:1 y a .68 rem eso
+   no pasa AA: las doce letras del erizo quedaban casi invisibles.
+   --roca-3 sobre el mismo fondo da 6,8:1. */
+.m--falta { color: var(--roca-3); }
+
+
+/* ══════════════════════════════════════════════════════════════════
+   ARREGLOS DE LA REVISIÓN DEL 10-09-2026
+   Todo medido sobre la página servida en localhost:8801, no de memoria.
+   ══════════════════════════════════════════════════════════════════ */
+
+/* ── 1 · EL HUECO DEL MOSAICO ──
+   Seis piezas en tres columnas con la 1 y la 6 a `span 2` suman ocho
+   celdas: la última fila quedaba con la foto de los botes ocupando dos
+   columnas y la tercera VACÍA, un rectángulo de --espuma-2 colgando al
+   final de la página. Se leía como grilla rota, no como composición.
+   La 6 pasa a ancho completo: es la más apaisada del lote (1200×481),
+   así que a sangre de las tres columnas se lee como cierre de serie y
+   la retícula queda cerrada. Es además la misma regla que ya corría
+   bajo 760 px, así que móvil y escritorio se comportan igual. */
+.mos__p:nth-child(6) { grid-column: 1 / -1; }
+
+/* ── 2 · LA MEDIA PANTALLA MEDÍA 1.212 px ──
+   `.mitades__foto img` llevaba `height: 100%`, pero el porcentaje no
+   resuelve contra un padre de altura automática: la imagen caía a su
+   alto intrínseco (959×1600 a 720 px de ancho = 1.201 px) y arrastraba
+   la fila entera de la grilla. Resultado en un portátil de 900 px: una
+   foto de 1,35 pantallas con el texto flotando en medio de un vacío de
+   --espuma-2. El `min-height: 62svh` no servía de nada porque la
+   imagen siempre lo superaba.
+   Se saca la imagen del flujo (absoluta, como ya lo hacen .portada__foto
+   y .cita__foto) y entonces el contenedor sí manda: 62svh, con techo
+   para que nunca pase de una pantalla. El encuadre sube a 34 % porque
+   el letrero del local vive en el tercio alto y un recorte centrado se
+   lo comía. */
+.mitades__foto { min-height: 62svh; max-height: 78svh; }
+.mitades__foto img {
+  position: absolute; inset: 0;
+  width: 100%; height: 100%;
+  object-fit: cover; object-position: 50% 34%;
+}
+@media (max-width: 780px) {
+  .mitades__foto { min-height: 44svh; max-height: 56svh; }
+}
+
+/* ── 3 · EL VACÍO DE «LA MESA CON VISTA» ──
+   Es la sección más larga de la página (dos listas de huecos más el
+   formulario) y la que llevaba el cuerpo más angosto: 48 rem dentro de
+   una banda oscura de 1.440 px dejaba ~600 px de negro muerto a la
+   derecha durante ~1.700 px de scroll. Se alinea con .oficio__cuerpo
+   (62 rem) y la columna del rótulo crece a 17 rem, que es lo que pide
+   «Cuánto se demora desde Valdivia» para no partirse en dos líneas.
+   El `max-width` del dd es lo que impide que la línea de texto se
+   estire a 90 caracteres al ensanchar. */
+.vista__cuerpo { max-width: min(100%, 62rem); }
+.hueco { grid-template-columns: minmax(0, 17rem) minmax(0, 1fr); }
+.huecos dd { max-width: 46rem; }
+@media (max-width: 40rem) { .hueco { grid-template-columns: 1fr; } }
+
+/* ── 4 · EL MAPA DE UBICACIÓN ──
+   «Cómo llegar» eran tres filas que decían «falta» y nada más: la
+   sección que contesta la segunda pregunta de un cliente que maneja
+   una hora era la más vacía de la página. El mapa es la parte que SÍ
+   se puede contestar sin inventar nada, porque Los Molinos es un
+   hecho aunque la calle no esté publicada.
+   Va como JPEG propio (mosaicos de OSM pegados por mapa-negocio.ps1):
+   con img-src 'self' un mapa de terceros no cargaría, y así tampoco
+   se le filtra la visita del cliente a ningún servidor ajeno.
+   Contraste sobre --roca-2 (#333A3B): --claro-2 6,2:1 · --nacar 6,3:1.
+   El mapa es claro y la banda es oscura: la inversión de luminancia la
+   pone la propia imagen, sin gastar un byte de más. */
+.mapa {
+  margin: 1.6rem 0 2.2rem;
+  max-width: min(100%, 34rem);
+  background: var(--roca-2);
+  border-radius: 2px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px -14px rgba(0, 0, 0, .7);
+}
+.mapa img {
+  display: block; width: 100%; height: auto;
+  aspect-ratio: 1 / 1; object-fit: cover;
+}
+.mapa__pie { padding: .9rem 1.1rem 1rem; }
+.mapa__aviso {
+  margin: 0 0 .7rem;
+  font-size: .9rem; line-height: 1.55; color: var(--claro-2);
+}
+.mapa__aviso b { color: var(--espuma); font-weight: 700; }
+.mapa__linea {
+  display: flex; flex-wrap: wrap; align-items: center;
+  justify-content: space-between; gap: .4rem 1.2rem;
+  margin: 0; padding-top: .7rem;
+  border-top: 1px solid var(--linea-osc);
+}
+.mapa__cred {
+  font-family: var(--dato); font-size: .68rem;
+  letter-spacing: .04em; color: var(--claro-2);
+}
+.mapa__cred a { color: var(--nacar); }
+.mapa__ir {
+  display: inline-flex; align-items: center; gap: .4rem;
+  min-height: 44px;
+  font-weight: 700; font-size: .9rem;
+  color: var(--nacar); text-decoration: none;
+  border-bottom: 1px solid var(--nacar);
+}
+.mapa__ir span { transition: transform .25s ease; }
+.mapa__ir:hover span { transform: translateX(4px); }
+@media (prefers-reduced-motion: reduce) {
+  .mapa__ir span { transition: none; }
+  .mapa__ir:hover span { transform: none; }
+}
+/* En escritorio el mapa se abre a dos columnas —lámina y ficha— en vez
+   de quedar como un cuadrado solo a la izquierda de una banda de 1.440
+   px. El recorte pasa a 4:3 y el marcador, que vive en la mitad de la
+   imagen, no se pierde. */
+@media (min-width: 48rem) {
+  .mapa {
+    max-width: min(100%, 52rem);
+    display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 16rem);
+    align-items: stretch;
+  }
+  .mapa img { aspect-ratio: 4 / 3; height: 100%; }
+  .mapa__pie { display: flex; flex-direction: column; justify-content: center; }
+  .mapa__linea { flex-direction: column; align-items: flex-start; gap: .7rem; }
 }

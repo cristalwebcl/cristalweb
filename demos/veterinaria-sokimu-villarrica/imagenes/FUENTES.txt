@@ -1,45 +1,71 @@
-FONDOS GENERICOS DE RUBRO — Veterinaria Sokimu
-==============================================
+PROCEDENCIA DE LAS IMAGENES — Veterinaria Sokimu (Villarrica)
+=============================================================
 
-TODAS las imagenes de esta pagina son genericas: de esta veterinaria
-no hay fotos propias verificables.
+TODAS las imagenes de esta pagina son genericas, de bancos de uso
+libre. De esta veterinaria no hay fotos propias verificables, y el pie
+de la pagina lo dice con todas sus letras.
 
-Son de FARMACIA y no de clinica porque el argumento de la pagina es
-que tienen farmacia veterinaria y nadie lo sabe. Ninguna caja de las
-fotos tiene marca legible en primer plano: son blisters y frascos
-genericos, que es lo que corresponde a un mostrador que vende de
-todo y no representa a nadie.
+Ninguna lleva marca de tercero legible, ni precio, ni menor, ni animal
+enfermo. La portada anterior —una mano sacando una caja de un estante
+con el texto en bengali perfectamente legible— se descarto el 01-09 por
+eso mismo, y el set de farmacia HUMANA que la siguio se descarto el
+09-09: batas blancas y boticario antiguo no son una veterinaria de
+pueblo, y el que mira lo nota en el primer segundo.
 
-Todas de Pexels (uso libre, sin credito obligatorio):
 
-  port-01.jpg   portada   2560px cal.86   <- estanteria de farmacia, sin texto legible
-  media-01.jpg  mitades   2200px cal.86   <- consulta antes de vender
-  cita-01.jpg   cita      2200px cal.86   <- frascos, gotas y comprimidos
-  tira-01/02, tirab-01  tira  1100px cal.84
-  aura-01.jpg   aura       900px cal.70   <- blisters naranjos (da el coral de la paleta)
+CON PROCEDENCIA COMPLETA
+------------------------
 
-URL de origen:
-001.jpg | 4000x6000 | Medicine Shelves Photos, Download The BEST Free Medicine Shelves Stock ... | https://images.pexels.com/photos/14172614/pexels-photo-14172614.jpeg?cs=srgb&dl=pexels-shai-yyc-14172614.jpg&fm=jpg
-001.jpg | 6129x4086 | 470+ Best Free Pharmacist Stock Photos & Images · 100% Royalty-Free HD ... | https://images.pexels.com/photos/8667546/pexels-photo-8667546.jpeg?cs=srgb&dl=pexels-cottonbro-8667546.jpg&fm=jpg
-002.jpg | 6000x4000 | Pharmacist in front of Shelves with Medicines · Free Stock Photo | https://images.pexels.com/photos/13119976/pexels-photo-13119976.jpeg?cs=srgb&dl=pexels-abdul-batin-235375905-13119976.jpg&fm=jpg
-003.jpg | 5538x3692 | Pharmacists in a Pharmacy · Free Stock Photo | https://images.pexels.com/photos/8657290/pexels-photo-8657290.jpeg?cs=srgb&dl=pexels-cottonbro-studio-8657290.jpg&fm=jpg
-004.jpg | 4284x6426 | Pharmacist Photos, Download The BEST Free Pharmacist Stock Photos & HD ... | https://images.pexels.com/photos/8657291/pexels-photo-8657291.jpeg?cs=srgb&dl=pexels-cottonbro-8657291.jpg&fm=jpg
-005.jpg | 3024x4032 | Busy Pharmacy Counter Photos, Download The BEST Free Busy Pharmacy ... | https://images.pexels.com/photos/15114245/pexels-photo-15114245.jpeg?cs=srgb&dl=pexels-cherubs-15114245.jpg&fm=jpg
-001.jpg | 7008x4672 | Cold and Flu Remedies with Pills and Thermometer · Free Stock Photo | https://images.pexels.com/photos/30367916/pexels-photo-30367916.jpeg?cs=srgb&dl=pexels-guvo-30367916.jpg&fm=jpg
-002.jpg | 6720x4480 | Prescription Drugs Photos, Download The BEST Free Prescription Drugs ... | https://images.pexels.com/photos/4210607/pexels-photo-4210607.jpeg?cs=srgb&dl=pexels-karolina-grabowska-4210607.jpg&fm=jpg
-003.jpg | 6720x4480 | 1,000+ Best Pills Photos · 100% Free Download · Pexels Stock Photos | https://images.pexels.com/photos/4210612/pexels-photo-4210612.jpeg?cs=srgb&dl=pexels-karolina-grabowska-4210612.jpg&fm=jpg
-004.jpg | 6720x4480 | Photo Of Capsules · Free Stock Photo | https://images.pexels.com/photos/4040573/pexels-photo-4040573.jpeg?cs=srgb&dl=pexels-karolina-grabowska-4040573.jpg&fm=jpg
+mos1-01.jpg  <=  pexels | Pexels License | Tima Miroshnichenko | https://www.pexels.com/es-es/foto/hombre-mujer-clinica-hablando-6235011/ | https://images.pexels.com/photos/6235011/pexels-photo-6235011.jpeg | recorte 2:1
+mos2-01.jpg  <=  pexels | Pexels License | Gustavo Fring | https://www.pexels.com/es-es/foto/manos-mascota-gato-cuidado-6816859/ | https://images.pexels.com/photos/6816859/pexels-photo-6816859.jpeg | recorte 3:2
+mos3-01.jpg  <=  pexels | Pexels License | Ludovic Delot | https://www.pexels.com/es-es/foto/pequeno-chihuahua-caminando-con-correa-al-aire-libre-33471257/ | https://images.pexels.com/photos/33471257/pexels-photo-33471257.jpeg | recorte 3:2
+mos4-01.jpg  <=  pexels | Pexels License | Tima Miroshnichenko | https://www.pexels.com/es-es/foto/hombre-perro-mascota-tecnologia-6235241/ | https://images.pexels.com/photos/6235241/pexels-photo-6235241.jpeg | recorte 3:2
+mos5-01.jpg  <=  pexels | Pexels License | Ludovic Delot | https://www.pexels.com/es-es/foto/adorable-gato-jengibre-descansando-en-interiores-31440971/ | https://images.pexels.com/photos/31440971/pexels-photo-31440971.jpeg | recorte 3:2
+mos6-01.jpg  <=  pexels | Pexels License | Tima Miroshnichenko | https://www.pexels.com/es-es/foto/mano-cuidado-de-la-salud-sanidad-revision-6234624/ | https://images.pexels.com/photos/6234624/pexels-photo-6234624.jpeg | recorte 2:1
 
-────────────────────────────────────────────────────────────────
-CAMBIO DE PORTADA — 01-09-2026
+Las tres tomas de comprimidos, que son las que sostienen la palabra
+«farmacia» y no llevan una sola letra encima. Todas de Pexels, licencia
+Pexels (uso libre, sin credito obligatorio):
 
-La portada anterior era una mano sacando una caja de un estante, y las
-cajas tenian el texto en bengali, bien legible. Para una farmacia
-veterinaria de Villarrica eso desmiente la foto en el primer segundo:
-el que mira ve que no es aca. Se reemplazo por una estanteria de
-farmacia sin ningun texto legible.
+cita-01.jpg  <=  pexels | Pexels License | Karolina Grabowska | https://www.pexels.com/es-es/foto/4210607/ | https://images.pexels.com/photos/4210607/pexels-photo-4210607.jpeg | 2200 px cal.86
+tira-01.jpg  <=  pexels | Pexels License | Karolina Grabowska | https://www.pexels.com/es-es/foto/4210612/ | https://images.pexels.com/photos/4210612/pexels-photo-4210612.jpeg | 1100 px cal.84
+tira-02.jpg  <=  pexels | Pexels License | Karolina Grabowska | https://www.pexels.com/es-es/foto/4040573/ | https://images.pexels.com/photos/4040573/pexels-photo-4040573.jpeg | 1100 px cal.84
+aura-01.jpg  <=  pexels | Pexels License | Guvo | https://www.pexels.com/es-es/foto/30367916/ | https://images.pexels.com/photos/30367916/pexels-photo-30367916.jpeg | 900 px cal.70
 
-port-01.jpg  2560x1707  estanteria de farmacia con cajas y cajones
-  pxhere · dominio publico (CC0)
-  https://get.pxhere.com/photo/shelf-furniture-room-medicine-pharmacy-retail-medical-605176.jpg
-  original 5616x3744
+
+SIN PROCEDENCIA REGISTRADA — HAY QUE REPONERLA
+----------------------------------------------
+
+Estos seis archivos se reemplazaron el 09-09-2026 en la subida a
+premium y quien los cambio NO dejo escrita su procedencia. Son las
+fotos veterinarias del set nuevo. Se comprueba a ojo que cumplen los
+filtros de contenido —no hay marca legible, ni precio, ni menor, ni
+animal enfermo— pero el banco, la licencia, el autor y la URL de
+origen no constan y por eso no se inventan aca:
+
+  port-01.jpg   2560x1440  portada   veterinario con un perro chico en brazos
+                           (la linea vieja de este archivo decia
+                           «estanteria de farmacia, pxhere CC0» y ya
+                           NO corresponde: esa foto se reemplazo)
+  tajo-01.jpg   2200x1467  franja    gato echado, plano cercano
+  mit-01.jpg    2200x2934  mitades   perro de pie sobre la mesa de examen
+  telon-01.jpg  1200x800   telon     sala de consulta (banda del cierre)
+  telon-02.jpg  1200x800   telon     sala de espera (banda de cifras)
+  tirab-01.jpg  1100x1467  tira      perro con collar, tranquilo
+
+ANTES DE PUBLICAR esta demo hay que volver a bajar esas seis con
+FotoRadar anotando el banco, la licencia, el autor y la pagina de
+origen de cada una, o reemplazarlas por otras que si queden anotadas.
+Sin esa linea no se puede responder por la licencia si alguien
+pregunta, y una demo que se le manda a un negocio real tiene que poder
+responder.
+
+Archivo que ya NO existe y que figuraba aca: media-01.jpg. La seccion
+de mitades usa mit-01.jpg.
+
+MAPA DE UBICACION — mapa-01.jpg
+  768 x 768 · zoom 14 · centro -39.2780911, -72.2274364
+  Mosaicos de OpenStreetMap pegados en una sola imagen, con el marcador
+  dibujado encima. Datos (c) OpenStreetMap contributors, licencia ODbL:
+  la atribucion tiene que ir VISIBLE junto al mapa, en el pie de la figura.
+  https://www.openstreetmap.org/copyright

@@ -3,6 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self'; img-src 'self' data:; font-src 'self'; connect-src 'self'; media-src 'self'; form-action 'self'; base-uri 'none'; frame-src 'none'; object-src 'none'">
 <meta name="robots" content="noindex, nofollow">
 <title>XpertKine — kinesiología, Temuco</title>
 <meta name="description" content="Kinesiología en Temuco. Cuántas sesiones toma cada lesión frecuente y por qué importan los ejercicios en casa.">
@@ -14,14 +15,7 @@
      si main.js nunca llega: sin él, un error de red dejaría media
      página invisible para siempre.
      ═══════════════════════════════════════════════════════════════ -->
-<script>
-  (function () {
-    var d = document.documentElement;
-    d.classList.remove('no-js');
-    d.classList.add('js');
-    window.__rescate = setTimeout(function () { d.classList.remove('js'); }, 4000);
-  })();
-</script>
+<script src="js/rescate.js"></script>
 
 <!-- Fuentes propias: cero peticiones a terceros. El preload va SOLO
      para la display, que es la del titular de la portada. -->
@@ -282,6 +276,18 @@
     </figure>
   </div>
 </section>
+<section class="mapa-sec" aria-label="Dónde queda">
+    <div class="ancho">
+      <figure class="mapa">
+        <img src="imagenes/mapa-01.jpg" width="768" height="768" loading="lazy" decoding="async"
+             alt="Mapa de Temuco.">
+        <figcaption class="mapa__pie">
+          <span><b>Temuco</b>. La dirección exacta la confirma el negocio: cuando la tengamos, el mapa marca la puerta.</span>
+          <span class="mapa__cred">Mapa: &copy; <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener">OpenStreetMap</a></span>
+        </figcaption>
+      </figure>    </div>
+</section>
+
 <section class="dueno" aria-labelledby="t-dueno">
   <h2 id="t-dueno">Para el dueño</h2>
   <div class="dueno__cols">

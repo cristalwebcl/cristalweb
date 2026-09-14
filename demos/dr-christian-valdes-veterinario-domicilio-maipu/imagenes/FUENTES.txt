@@ -1,0 +1,22 @@
+FUENTES DE LAS IMAGENES - Dr. Christian ValdÃ©s Rehecha el 13-09-2026 (presentacion antes que texto). Fotos de REFERENCIA de bancos libres: ninguna es del local; las verdaderas las tiene que mandar el negocio. 
+port-01.jpg  <-  pozo-p-cv-ventana\012.jpg  |  pexels (Pexels License)  |  autor: James Collington  |  https://www.pexels.com/es-es/foto/acogedora-luz-calida-de-una-ventana-abierta-por-la-noche-31823278/  |  consulta: "house window warm light"
+hund1-01.jpg  <-  pozo-p-cv-escondido\011.jpg  |  pexels (Pexels License)  |  autor: Helena Jankovičová Kováčová  |  https://www.pexels.com/es-es/foto/gato-domestico-acogedor-relajandose-bajo-una-mesa-de-madera-30001422/  |  consulta: "cat hiding under bed"
+hund2-01.jpg  <-  pozo-p-cv-puerta\012.jpg  |  pexels (Pexels License)  |  autor: Regina Tommasi  |  https://www.pexels.com/es-es/foto/elegante-portal-verde-en-grado-italia-37205918/  |  consulta: "front door welcome mat"
+hund3-01.jpg  <-  pozo-p-cv-estetoscopio\012.jpg  |  pexels (Pexels License)  |  autor: Adrian Arellano  |  https://www.pexels.com/es-es/foto/perro-mascota-mirando-canino-18352455/  |  consulta: "stethoscope dog home"
+hund4-01.jpg  <-  pozo-p-cv-sofa\007.jpg  |  pexels (Pexels License)  |  autor: Diego Martinez  |  https://www.pexels.com/es-es/foto/mirada-profunda-29773484/  |  consulta: "dog sofa home"
+hund5-01.jpg  <-  pozo-p-cv-cama\009.jpg  |  pexels (Pexels License)  |  autor: Nadin Sh  |  https://www.pexels.com/es-es/foto/cama-animal-mascota-retrato-16435050/  |  consulta: "cat bed home"
+hund6-01.jpg  <-  pozo-p-cv-estetoscopio\006.jpg  |  pexels (Pexels License)  |  autor: Iván Ayrton Sacks  |  https://www.pexels.com/es-es/foto/animal-perro-mascota-mono-26795670/  |  consulta: "stethoscope dog home"
+banda-01.jpg  <-  pozo-p-cv-sofa\004.jpg  |  pexels (Pexels License)  |  autor: PubPro  |  https://www.pexels.com/es-es/foto/retrato-de-perro-en-el-sofa-33521583/  |  consulta: "dog sofa home"
+cita-01.jpg  <-  pozo-p-cv-mayor\008.jpg  |  pexels (Pexels License)  |  autor: Lübna  Abdullah  |  https://www.pexels.com/es-es/foto/animal-perro-mascota-retrato-16377487/  |  consulta: "old dog sleeping"
+mos1-01.jpg  <-  pozo-p-cv-sofa\010.jpg  |  pexels (Pexels License)  |  autor: cottonbro studio  |  https://www.pexels.com/es-es/foto/perro-de-pelo-corto-marron-y-blanco-sentado-en-un-sofa-marron-5998708/  |  consulta: "dog sofa home"
+mos2-01.jpg  <-  pozo-p-cv-cama\007.jpg  |  pexels (Pexels License)  |  autor: Eduardo López  |  https://www.pexels.com/es-es/foto/mascotas-cabeza-gatos-juntos-16618547/  |  consulta: "cat bed home"
+mos3-01.jpg  <-  pozo-p-cv-ventana\008.jpg  |  pexels (Pexels License)  |  autor: Evija Ciematniece  |  https://www.pexels.com/es-es/foto/ventana-iluminada-por-el-sol-en-una-pared-de-madera-al-anochecer-35487742/  |  consulta: "house window warm light"
+mos4-01.jpg  <-  pozo-p-cv-mayor\006.jpg  |  pexels (Pexels License)  |  autor: Engin Akyurt  |  https://www.pexels.com/es-es/foto/perro-mascota-mono-dormido-14920515/  |  consulta: "old dog sleeping"
+mos5-01.jpg  <-  pozo-p-cv-cocina\009.jpg  |  pexels (Pexels License)  |  autor: Jorge Zaldívar Marroquín  |  https://www.pexels.com/es-es/foto/animal-perro-acostado-mamifero-13085125/  |  consulta: "dog kitchen floor"
+mos6-01.jpg  <-  pozo-p-cv-escondido\009.jpg  |  pexels (Pexels License)  |  autor: AG ZN  |  https://www.pexels.com/es-es/foto/lindo-gato-mirando-la-cama-15856857/  |  consulta: "cat hiding under bed"
+
+BRUMA (bruma-pag-0N.png y bruma-osc-0N.png, 30x20): las MISMAS fotos, recortadas a 3:2, reducidas y
+recoloreadas con C:\devs\demos\hacer-bruma.ps1 (clara >= 0,68 de luminancia / oscura <= 0,05). No suman fuentes.
+    pagina: port-01.jpg, banda-01.jpg, mos1-01.jpg, hund5-01.jpg, mos3-01.jpg   |   oscuras: port-01.jpg, cita-01.jpg, banda-01.jpg
+
+MAPA: iframe de Google Maps (embed publico, sin clave). No hay imagen de mapa.

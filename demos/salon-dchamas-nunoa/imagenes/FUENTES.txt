@@ -1,0 +1,18 @@
+﻿FUENTES DE LAS IMAGENES - salon-dchamas-nunoa Bancos libres; procesadas con preparar-lote.ps1 (JPEG, ancho y calidad por tratamiento). 
+tajo-01.jpg  <=  pexels | Pexels License | Suzy Hazelwood | https://www.pexels.com/es-es/foto/esmalte-de-unas-sobre-fondo-blanco-3609620/ | https://images.pexels.com/photos/3609620/pexels-photo-3609620.jpeg | recorte 21:9
+mit-01.jpg  <=  pexels | Pexels License | cottonbro studio | https://www.pexels.com/es-es/foto/manos-mano-mesa-colorido-3997386/ | https://images.pexels.com/photos/3997386/pexels-photo-3997386.jpeg | recorte 4:5
+cita-01.jpg  <=  pexels | Pexels License | Suzy Hazelwood | https://www.pexels.com/es-es/foto/lujo-colorido-de-colores-polaco-3631691/ | https://images.pexels.com/photos/3631691/pexels-photo-3631691.jpeg | recorte 16:9
+telon-01.jpg  <=  pexels | Pexels License | Gabrielly Lemos | https://www.pexels.com/es-es/foto/exhibicion-colorida-de-frascos-de-esmalte-de-unas-39253581/ | https://images.pexels.com/photos/39253581/pexels-photo-39253581.jpeg
+mos1-01.jpg  <=  pexels | Pexels License | Leeloo The First | https://www.pexels.com/es-es/foto/persona-con-herramienta-de-mano-negra-y-azul-4677854/ | https://images.pexels.com/photos/4677854/pexels-photo-4677854.jpeg | recorte 3:4
+mos2-01.jpg  <=  pexels | Pexels License | Leeloo The First | https://www.pexels.com/es-es/foto/persona-con-boligrafo-rosa-y-plateado-4677846/ | https://images.pexels.com/photos/4677846/pexels-photo-4677846.jpeg | recorte 3:4
+mos3-01.jpg  <=  pexels | Pexels License | Anastasiia Lopushynska | https://www.pexels.com/es-es/foto/clavos-unas-esmalte-de-unas-manicura-10401643/ | https://images.pexels.com/photos/10401643/pexels-photo-10401643.jpeg | recorte 3:4
+mos5-01.jpg  <=  pexels | Pexels License | Max Vakhtbovych | https://www.pexels.com/es-es/foto/escritorio-oficina-vaso-cristal-13068362/ | https://images.pexels.com/photos/13068362/pexels-photo-13068362.jpeg | recorte 3:4
+mos6-01.jpg  <=  pexels | Pexels License | Diana ✨ | https://www.pexels.com/es-es/foto/mano-tecnologia-dispositivo-equipo-9099607/ | https://images.pexels.com/photos/9099607/pexels-photo-9099607.jpeg | recorte 3:4
+mos4-01.jpg  <=  pexels | Pexels License | Kosygin Leishangthem | https://www.pexels.com/es-es/foto/monitor-mostrar-exhibicion-exposicion-20826840/ | https://images.pexels.com/photos/20826840/pexels-photo-20826840.jpeg | recorte 3:4
+
+MAPA DE UBICACION — mapa-01.jpg
+  768 x 768 · zoom 16 · centro -33.4546123, -70.6045961
+  Mosaicos de OpenStreetMap pegados en una sola imagen, con el marcador
+  dibujado encima. Datos (c) OpenStreetMap contributors, licencia ODbL:
+  la atribucion tiene que ir VISIBLE junto al mapa, en el pie de la figura.
+  https://www.openstreetmap.org/copyright

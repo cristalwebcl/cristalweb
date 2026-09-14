@@ -27,7 +27,9 @@
 
 <div class="propuesta">
   <p class="propuesta__que">Propuesta de sitio web — preparada para <b>Cabañas El Vecino</b> por CristalWeb</p>
-  <p class="propuesta__gancho">Se llaman El Vecino y con 124 reseñas y 4,8 se nota que es literal. Pero en internet son tan desconocidos como cualquiera.</p>
+  <p class="propuesta__gancho">Se llaman El Vecino y con 4,8 y 124 reseñas se nota que es literal. Pero al
+    09-09-2026 no tienen ni una página donde leerlo: en internet son tan desconocidos como cualquiera. Ésta
+    es la página que debería estar ahí.</p>
 </div>
 
 <header class="cab" id="cab">
@@ -37,7 +39,10 @@
   </a>
   <nav class="cab__nav" aria-label="Secciones">
     <a href="#llegada">La llegada</a>
+    <a href="#lena">La leña</a>
     <a href="#dato">El dato del lugar</a>
+    <a href="#dentro">Por dentro</a>
+    <a href="#llamar">Llamar</a>
   </nav>
   <a class="cab__tel" href="tel:+56994032480">
     <span class="cab__tel-rot">Coñaripe</span>
@@ -54,14 +59,30 @@
   <!-- FONDO DE PORTADA: 2560 px, nitido. Se disuelve hacia el titular
        con un gradiente lateral, no con desenfoque. -->
   <div class="portada__foto" aria-hidden="true">
-    <img src="imagenes/port-01.jpg" width="2560" height="1707"
+    <img src="imagenes/port-01.jpg" width="2560" height="1440"
          decoding="async" fetchpriority="high" alt="">
   </div>
 
+  <!-- AMBIENTE DE PORTADA
+       Esta demo no lleva video de fondo —el clip se reserva para los
+       negocios mejor valorados— así que el ambiente lo pone entero el
+       CSS. Son dos cosas y ninguna es un adorno del rubro:
+       · las tres ventanas que se encienden DE A UNA sobre la orilla de
+         enfrente y quedan encendidas, cada una con su reflejo en el
+         agua, que es la identidad de la página; y
+       · una docena de motas de luz cálida que suben muy lento sobre el
+         lago, para que la mitad de la foto no quede quieta.
+       Con prefers-reduced-motion las ventanas aparecen ya encendidas y
+       las motas no se dibujan: la luz se queda, el movimiento no. -->
   <div class="pueblo" aria-hidden="true">
     <span class="luz luz--1"></span>
     <span class="luz luz--2"></span>
     <span class="luz luz--3"></span>
+  </div>
+  <div class="motas" aria-hidden="true">
+    <span></span><span></span><span></span><span></span>
+    <span></span><span></span><span></span><span></span>
+    <span></span><span></span><span></span><span></span>
   </div>
 
   <div class="lam__texto">
@@ -78,10 +99,27 @@
   </div>
 </section>
 
+<!-- ══════ LA BANDA DE CIFRAS ══════
+     Cuatro números en la misma fila: dos que prueban que el negocio es
+     bueno, uno que cuenta lo que esta página agrega, y el cuarto —el
+     cero— que es la herida. Sólo cuenta el 124, que es el único que
+     costó verificar; los otros tres son aritmética o son la falla, y un
+     contador que sube un 0 se lee como truco. -->
+<section class="cifras" aria-label="Cabañas El Vecino en cuatro números">
+  <ul class="cifras__lista cascada">
+    <li><b>4,8</b><span>de nota en su ficha de Google</span></li>
+    <li><b data-cuenta="124">124</b><span>personas escribieron cómo les fue</span></li>
+    <li><b>6</b><span>preguntas del pueblo que sólo contesta alguien de acá</span></li>
+    <li class="cifras__herida"><b>0</b><span>páginas donde leer nada de esto hoy</span></li>
+  </ul>
+  <p class="cifras__pie">Los dos primeros salen de su ficha de Google, mirada el 09-09-2026. El cero es
+    literal: no tienen sitio propio, y el teléfono es la única puerta.</p>
+</section>
+
 <!-- ── LÁMINA 1 · llegar ── -->
 <section class="lam lam--01 con-telon" id="llegada" aria-labelledby="t-llegar">
   <div class="telon" aria-hidden="true">
-    <img src="imagenes/telon-01.jpg" width="1200" height="800" decoding="async" alt="">
+    <img src="imagenes/telon-01.jpg" width="1200" height="800" loading="lazy" decoding="async" alt="">
   </div>
 
   <!-- AURA DE COLOR: la foto de rubro reventada a desenfoque. No se lee
@@ -125,8 +163,27 @@
   </div>
 </section>
 
+<!-- ── TAJO CON FRASE — franja a sangre ──
+     Corta el bloque de texto de las láminas y da el respiro. El velo
+     sube desde abajo y sólo llega hasta donde hay letra: los dos
+     tercios de arriba quedan a foco completo. -->
+<figure class="tajo tajo--frase">
+  <img src="imagenes/tajo-01.jpg" width="2200" height="1238" loading="lazy" decoding="async" alt="">
+  <figcaption class="tajo__txt">
+    <p>En enero la tarde no se acaba a las siete. Es la hora en que uno sale al pasto y deja de acordarse del viaje.</p>
+  </figcaption>
+</figure>
+
 <!-- ── LÁMINA 2 · la llave ── -->
-<section class="lam lam--02" aria-labelledby="t-llave">
+<section class="lam lam--02 con-telon" aria-labelledby="t-llave">
+  <!-- TELÓN: el interior de una cabaña con la vista al lago desde
+       adentro. Es lo que se ve al entrar, que es de lo que habla la
+       lámina. Va corrido a la derecha, en la mitad que el texto deja
+       libre, y a opacidad baja: es profundidad, no una foto más. -->
+  <div class="telon telon--dentro" aria-hidden="true">
+    <img src="imagenes/telon-04.jpg" width="1200" height="800" loading="lazy" decoding="async" alt="">
+  </div>
+
   <div class="lam__texto">
     <p class="paso">Paso 02</p>
     <h2 id="t-llave">La llave</h2>
@@ -159,7 +216,14 @@
 </section>
 
 <!-- ── LÁMINA 3 · la leña ── -->
-<section class="lam lam--03" aria-labelledby="t-lena">
+<section class="lam lam--03 con-telon" id="lena" aria-labelledby="t-lena">
+  <!-- TELÓN: las brasas nítidas al 18 %. Es un rectángulo de luz caliente
+       en el fondo oscuro: la misma figura de la ventana encendida, que es
+       la identidad de la página. -->
+  <div class="telon telon--brasas" aria-hidden="true">
+    <img src="imagenes/telon-02.jpg" width="1200" height="2026" loading="lazy" decoding="async" alt="">
+  </div>
+
   <div class="lam__texto">
     <p class="paso">Paso 03</p>
     <h2 id="t-lena">La leña</h2>
@@ -192,12 +256,54 @@
   </div>
 </section>
 
+<!-- ══════ EL PORTAL Y EL VECINO ══════
+     La sección clara del medio. No trae ni un dato del negocio: es el
+     argumento puesto en dos columnas, que es lo que el dueño necesita
+     ver escrito para entender por qué una página propia no es lo mismo
+     que estar en un portal. -->
+<section class="contra" aria-labelledby="t-contra">
+  <div class="contra__in">
+    <p class="paso">Lo que está en juego</p>
+    <h2 id="t-contra">El portal y el vecino</h2>
+    <p class="entrada">Las dos columnas cuestan lo mismo para el que reserva. La de
+      la derecha es la única que no se puede copiar.</p>
+
+    <div class="contra__cols cascada">
+      <div class="contra__col contra__col--frio">
+        <h3>Lo que le pasa a un huésped en un portal</h3>
+        <ul>
+          <li>Un código y una llave en un buzón.</li>
+          <li>Un chat que contesta alguien que nunca estuvo acá.</li>
+          <li>Fotos parecidas a las de otras cien cabañas del sur.</li>
+          <li>Ninguna forma de saber qué día hay feria.</li>
+          <li>Si algo falla a las once de la noche, un formulario.</li>
+        </ul>
+      </div>
+      <div class="contra__col contra__col--tibio">
+        <h3>Lo que puede decir esta página</h3>
+        <ul>
+          <li>Quién abre la puerta y a qué hora.</li>
+          <li>Un teléfono que suena a dos cuadras.</li>
+          <li>Sus propias fotos, del pasto exacto donde uno se sienta.</li>
+          <li>Seis datos del pueblo que no están en ninguna guía.</li>
+          <li>Si algo falla a las once, un número que contesta.</li>
+        </ul>
+      </div>
+    </div>
+
+    <p class="contra__pie">La columna de la izquierda es lo que hoy le pasa a quien busca cabaña en
+      Coñaripe. La de la derecha es lo que esta página promete: cuáles de esas cosas ya hacen y
+      cuáles no, lo confirma el dueño en una llamada de cinco minutos. Por eso las tres láminas de
+      arriba están llenas de «falta» — ninguna la voy a inventar yo.</p>
+  </div>
+</section>
+
 <!-- ── LÁMINA 4 · LA PIEZA FIRMA ── -->
 <!-- ========= MEDIA PANTALLA ========= -->
 <section class="mitades" aria-labelledby="t-mitades">
   <div class="mitades__foto">
     <img src="imagenes/media-01.jpg" width="1500" height="1125"
-         loading="lazy" decoding="async" alt="">
+         loading="lazy" decoding="async" alt="El lago Calafquén al atardecer, visto desde el pasto que está a pasos de la cabaña.">
   </div>
   <div class="mitades__texto">
     <p class="mitades__ante">La foto que ya tienen y no usan</p>
@@ -215,7 +321,7 @@
       llega, y que hoy se pierden si el cliente no pregunta.</p>
     <p class="marca-ejemplo" data-ejemplo="Las preguntas son las reales — las respuestas las pone el dueño, que es el único que las sabe"></p>
 
-    <ol class="datos">
+    <ol class="datos cascada">
       <li class="dato">
         <p class="dato__q">Dónde se compra pan temprano</p>
         <p class="dato__a"><span class="falta">falta: confirmar con el dueño</span></p>
@@ -262,11 +368,78 @@
   </div>
 </section>
 
+<!-- ══════ LA CABAÑA POR DENTRO ══════
+     El inventario, y está contado mirando SUS PROPIAS FOTOS: cada
+     ficha nombra algo que se ve en la tira de abajo. Lo que no se ve en
+     ninguna foto no se escribe — va pedido con su marca.
+     Esta sección faltaba y es la que más se echaba de menos: la página
+     hablaba de la llegada, de la leña y del pueblo, y nunca decía qué
+     hay adentro, que es la primera pregunta de cualquiera que arrienda.
+     El telón de madera va detrás para que el bloque no sea texto sobre
+     azul plano. -->
+<section class="dentro con-telon" id="dentro" aria-labelledby="t-dentro">
+  <div class="telon telon--madera" aria-hidden="true">
+    <img src="imagenes/telon-03.jpg" width="1200" height="800" loading="lazy" decoding="async" alt="">
+  </div>
+
+  <div class="dentro__in">
+    <p class="paso">Contado desde sus propias fotos</p>
+    <h2 id="t-dentro">La cabaña<br>por dentro</h2>
+    <p class="entrada">Nada de esto lo inventé: está sacado de mirar una por una las fotos
+      que ellos mismos publicaron. Es todo madera, tiene estufa a leña y las camas están
+      repartidas en dos pisos.</p>
+
+    <ul class="dentro__lista cascada">
+      <li class="dentro__f">
+        <h3>Dos pisos con camas</h3>
+        <p>Abajo, un dormitorio con camarote y una cama de plaza y media, con ventana
+          a la calle. Arriba, el abuhardillado: más camas bajo el techo inclinado.</p>
+        <p class="dentro__falta"><span class="falta">falta: cuántas camas en total y cuánta gente entra</span></p>
+      </li>
+      <li class="dentro__f">
+        <h3>Living con estufa a leña</h3>
+        <p>Sofás, mesa de centro y la estufa en la esquina, sobre piso de madera. Es el
+          mismo ambiente donde se come, con la mesa y su mantel a cuadros.</p>
+        <p class="dentro__falta"><span class="falta">falta: si la estufa queda prendida al llegar</span></p>
+      </li>
+      <li class="dentro__f">
+        <h3>Cocina en el mismo ambiente</h3>
+        <p>En la foto del segundo piso se ven refrigerador, microondas y muebles a la
+          vista. Quien cocina no se pierde la conversación.</p>
+        <p class="dentro__falta"><span class="falta">falta: si hay horno, loza y ollas</span></p>
+      </li>
+      <li class="dentro__f">
+        <h3>Madera de piso a cielo</h3>
+        <p>Paredes, vigas y piso de madera clara en todas las fotos. Eso es lo que hace
+          que la estufa se sienta y que no parezca un departamento amoblado.</p>
+        <p class="dentro__falta"><span class="falta">falta: si hay agua caliente todo el día</span></p>
+      </li>
+    </ul>
+
+    <p class="dentro__pie">Las tres fotos de abajo son suyas, de su Facebook, y son de donde
+      salió cada una de esas cuatro fichas. Lo que no aparece en ninguna foto no está escrito
+      acá: va pedido con su marca y lo contesta el dueño en una llamada.</p>
+  </div>
+</section>
+
+<!-- ========= LA TIRA — la prueba de lo de arriba ========= -->
+<section class="tira" aria-label="Tres fotos del interior de la cabaña">
+  <figure class="tira__pieza">
+    <img src="imagenes/tira-01.jpg" width="1000" height="1000" loading="lazy" decoding="async" alt="Dormitorio con camarote y cama de plaza y media, paredes de madera y ventana con cortina.">
+  </figure>
+  <figure class="tira__pieza">
+    <img src="imagenes/tira-02.jpg" width="1000" height="1000" loading="lazy" decoding="async" alt="El living con sus sofás, la mesa de centro y la estufa a leña al fondo.">
+  </figure>
+  <figure class="tira__pieza">
+    <img src="imagenes/tira-03.jpg" width="1000" height="1000" loading="lazy" decoding="async" alt="El segundo piso abuhardillado, con el refrigerador, el microondas y las camas bajo el techo inclinado.">
+  </figure>
+</section>
+
 <!-- ── EL CIERRE — T1 ── -->
 <!-- ========= LA CITA A SANGRE ========= -->
 <section class="cita" aria-labelledby="t-cita">
   <div class="cita__foto" aria-hidden="true">
-    <img src="imagenes/cita-01.jpg" width="2000" height="3000"
+    <img src="imagenes/cita-01.jpg" width="2200" height="1433"
          loading="lazy" decoding="async" alt="">
   </div>
   <blockquote class="cita__texto">
@@ -279,7 +452,7 @@
 
 <!-- ========= TAJO — FRANJA A SANGRE ========= -->
 <div class="tajo" aria-hidden="true">
-  <img src="imagenes/banda-01.jpg" width="1300" height="731"
+  <img src="imagenes/banda-01.jpg" width="2200" height="1146"
        loading="lazy" decoding="async" alt="">
 </div>
 <section class="cierre" id="llamar" aria-labelledby="t-cierre">
@@ -290,12 +463,49 @@
   <p class="cierre__pie">Es el número publicado en su ficha de Google. Que conteste
     una persona y no un formulario es la parte buena; que sea la única forma de
     saber algo es la que esta página viene a arreglar.</p>
+
+  <!-- Dos columnas: la ficha de datos a la izquierda y el mapa del
+       pueblo a la derecha. Antes la ficha iba sola y centrada y bajo
+       ella quedaba media pantalla de azul vacío. -->
+  <div class="cierre__cols">
+
+    <!-- FICHA DE DATOS. Lo verificado va escrito; lo que falta lleva su
+         etiqueta y dice de quién depende. Ni una dirección inventada. -->
+    <dl class="ficha">
+      <div><dt>Teléfono</dt><dd><a href="tel:+56994032480">+56 9 9403 2480</a></dd></div>
+      <div><dt>Dónde</dt><dd class="ficha__ej" data-ejemplo="la dirección exacta la confirma el dueño">Coñaripe — dirección exacta: <span class="falta">falta</span></dd></div>
+      <div><dt>Cuántas cabañas</dt><dd class="ficha__ej" data-ejemplo="lo confirma el dueño"><span class="falta">falta</span></dd></div>
+      <div><dt>Desde qué hora se entra</dt><dd class="ficha__ej" data-ejemplo="lo confirma el dueño"><span class="falta">falta</span></dd></div>
+      <div><dt>Reseñas</dt><dd>4,8 con 124 reseñas en Google</dd></div>
+      <div><dt>Precios</dt><dd class="ficha__ej" data-ejemplo="no van en una demo: los pone el dueño y cambian por temporada"><span class="falta">no se publican acá</span></dd></div>
+    </dl>
+
+    <!-- ══ MAPA DE UBICACIÓN ══════════════════════════════════════
+         Imagen propia: los mosaicos de OpenStreetMap bajados una vez y
+         pegados en un JPEG. La CSP de esta página no deja incrustar un
+         mapa de terceros, y un iframe de Google Maps no cargaría sin
+         dejar un solo error a la vista. El botón «Cómo llegar» es un
+         ENLACE, y un enlace sí pasa.
+         El punto está en el centro del pueblo, NO en la cabaña: la
+         dirección exacta no la tengo y no la voy a inventar. El pie lo
+         dice con esas palabras. -->
+    <figure class="mapa">
+      <img src="imagenes/mapa-01.jpg" width="768" height="768" loading="lazy" decoding="async"
+           alt="Mapa de Coñaripe: el pueblo entre la playa del lago Calafquén y la ruta, con el centro marcado.">
+      <figcaption class="mapa__pie">
+        <span class="mapa__ej" data-ejemplo="la dirección exacta la confirma el dueño">El punto es el centro de Coñaripe, no la cabaña.</span>
+        <span class="mapa__cred">Mapa: &copy; <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener">OpenStreetMap</a> contributors</span>
+        <a class="mapa__ir" href="https://www.google.com/maps/search/?api=1&amp;query=Caba%C3%B1as%20El%20Vecino%20Co%C3%B1aripe" target="_blank" rel="noopener">Buscarlos en el mapa <span aria-hidden="true">&rarr;</span></a>
+      </figcaption>
+    </figure>
+
+  </div>
 </section>
 
 <!-- ========= LAS FOTOS ========= -->
 <section class="galeria" aria-labelledby="t-galeria">
   <h2 id="t-galeria" class="galeria__titulo">Lo suyo, empezando por el logo</h2>
-  <p class="galeria__nota">Las tres con pie son suyas, de su Facebook. Sólo el fondo de la portada, el aura y la cita son de banco libre, y están declarados en imagenes/FUENTES.txt.</p>
+  <p class="galeria__nota">Las tres con pie son suyas, de su Facebook, igual que las tres del interior. Los fondos —la portada, el aura, la cita, las dos franjas y los cuatro telones— son de banco libre y están declarados uno por uno en imagenes/FUENTES.txt.</p>
   <div class="galeria__grilla">
     <figure class="gal gal--izq">
       <img src="imagenes/gal-03.jpg" width="1300" height="1300" loading="lazy" decoding="async"
@@ -316,19 +526,6 @@
   <p class="galeria__falta">falta: la cabaña por fuera de noche, con la luz encendida — es la foto que la página promete</p>
 </section>
 
-<!-- ========= LA TIRA ========= -->
-<section class="tira" aria-label="Tres imágenes del oficio">
-  <figure class="tira__pieza">
-    <img src="imagenes/tira-01.jpg" width="1000" height="1000" loading="lazy" decoding="async" alt="Dormitorio con camarote y paredes de madera.">
-  </figure>
-  <figure class="tira__pieza">
-    <img src="imagenes/tira-02.jpg" width="1000" height="1000" loading="lazy" decoding="async" alt="El living, con sus sofás y la mesa de centro.">
-  </figure>
-  <figure class="tira__pieza">
-    <img src="imagenes/tira-03.jpg" width="1000" height="1000" loading="lazy" decoding="async" alt="El segundo piso abuhardillado, con las camas bajo el techo inclinado.">
-  </figure>
-</section>
-
 </main>
 
 
@@ -336,7 +533,7 @@
 <!-- ========= MOSAICO ========= -->
 <section class="mos" aria-labelledby="t-mos">
   <h2 id="t-mos" class="mos__titulo">La misma serie, más de cerca</h2>
-  <p class="mos__nota">Estas seis ya aparecen más arriba en la página. Vuelven acá en otro tamaño porque una sola pasada de imágenes deja el scroll vacío, y porque de cerca se ven cosas que en grande se pierden. La procedencia de cada una está en imagenes/FUENTES.txt.</p>
+  <p class="mos__nota">Cinco de estas ocho ya aparecen más arriba en la página y vuelven acá en otro tamaño, porque una sola pasada de imágenes deja el scroll vacío y porque de cerca se ven cosas que en grande se pierden. Las otras tres —el bosque, la noche sobre el agua y el lago liso— son de banco libre y son ambiente, no inventario: no dicen que la cabaña esté ahí. La procedencia de cada una está en imagenes/FUENTES.txt.</p>
   <div class="mos__grilla">
     <figure class="mos__p">
       <img src="imagenes/mos-01.jpg" width="780" height="585"
@@ -347,7 +544,7 @@
            loading="lazy" decoding="async" alt="">
     </figure>
     <figure class="mos__p">
-      <img src="imagenes/mos-03.jpg" width="780" height="780"
+      <img src="imagenes/mos-03.jpg" width="1200" height="797"
            loading="lazy" decoding="async" alt="">
     </figure>
     <figure class="mos__p">
@@ -360,6 +557,14 @@
     </figure>
     <figure class="mos__p">
       <img src="imagenes/mos-06.jpg" width="780" height="780"
+           loading="lazy" decoding="async" alt="">
+    </figure>
+    <figure class="mos__p">
+      <img src="imagenes/mos-07.jpg" width="1200" height="800"
+           loading="lazy" decoding="async" alt="">
+    </figure>
+    <figure class="mos__p">
+      <img src="imagenes/mos-08.jpg" width="1200" height="800"
            loading="lazy" decoding="async" alt="">
     </figure>
   </div>
@@ -376,7 +581,8 @@
       <h3>Lo que no inventé</h3>
       <p>Ni un solo dato del pueblo. No sé dónde venden pan temprano ni qué día hay
         feria, y ponerlo mal sería mandar a un huésped a una puerta cerrada. Las
-        seis preguntas están armadas; las respuestas son suyas.</p>
+        seis preguntas están armadas; las respuestas son suyas. Tampoco hay ni un
+        precio en toda la página.</p>
     </div>
     <div>
       <h3>Lo que falta</h3>
@@ -386,14 +592,30 @@
   </div>
   <p class="dueno__cierre">
     <a class="flecha" href="https://wa.me/56968650001" rel="noopener">Escribirme por WhatsApp <span aria-hidden="true">→</span></a>
+    <a class="flecha" href="mailto:cristalwebcl@gmail.com?subject=Caba%C3%B1as%20El%20Vecino%20%E2%80%94%20la%20p%C3%A1gina%20de%20Co%C3%B1aripe">Escribir un correo <span aria-hidden="true">→</span></a>
     <a class="flecha" href="../../" rel="noopener">Ver otros trabajos <span aria-hidden="true">→</span></a>
   </p>
 </section>
 
 <footer class="pie">
   <p>Sitio de demostración preparado por CristalWeb. El negocio no lo ha encargado
-    ni ha revisado su contenido.</p>
+    ni ha revisado su contenido. No hay precios ni disponibilidad: los pone el dueño.</p>
 </footer>
+
+<!-- ══ WHATSAPP FLOTANTE ═══════════════════════════════════════════
+     Va escrito en el HTML, no lo crea el JS: si el script no arranca,
+     el botón igual está. El JS sólo lo aparta mientras se mira la
+     portada, para no tapar el titular. El número es el DEL NEGOCIO, el
+     mismo de los tel: — el de CristalWeb vive sólo en la sección del
+     dueño. Icono de simple-icons (CC0), incrustado: la CSP no deja
+     pedir nada a un tercero. -->
+<a class="wapp"
+   href="https://wa.me/56994032480?text=Hola%2C%20vi%20la%20p%C3%A1gina%20y%20quiero%20consultar%20por%20una%20caba%C3%B1a%20en%20Co%C3%B1aripe."
+   target="_blank" rel="noopener"
+   aria-label="Escribir a Cabañas El Vecino por WhatsApp">
+  <svg class="wapp__i" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"/></svg>
+  <span class="wapp__t">WhatsApp</span>
+</a>
 
 <script src="js/main.js"></script>
 </body>

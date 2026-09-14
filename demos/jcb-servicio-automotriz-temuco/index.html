@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html lang="es-CL" class="no-js">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self'; img-src 'self' data:; font-src 'self'; connect-src 'self'; media-src 'self'; form-action 'self'; base-uri 'none'; frame-src 'none'; object-src 'none'">
+<meta name="robots" content="noindex, nofollow">
+<title>JCB Servicio Automotriz — Taller mecánico en Temuco</title>
+<meta name="description" content="Taller de servicio automotriz en Temuco, Lagos 91. Mantención, frenos, suspensión y diagnóstico. Orden de trabajo escrita en cada atención.">
+
+<!-- ═══════════════════════════════════════════════════════════════
+     RESCATE DE LA CLASE .js — ver AGENTS.md, regla 2.
+     ═══════════════════════════════════════════════════════════════ -->
+<script src="js/rescate.js"></script>
+
+<!-- Fuentes self-hosted: CERO peticiones externas. El preload va sólo
+     para la display, que es la que se ve en el primer pantallazo.
+     Kanit y Barlow no tienen versión variable en Google Fonts, así que
+     se pidieron sólo los DOS pesos que el CSS usa de cada una; Roboto
+     Mono sí es variable y en rango pesa la mitad. Con pesos sueltos en
+     las tres eran 186 KB; así son 114 KB. -->
+<link rel="preload" href="assets/fuentes/kanit-600-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="assets/fuentes.css">
+<link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+
+<a class="saltar" href="#contenido">Saltar al contenido</a>
+
+<!-- ══════════ HEADER FANTASMA ══════════
+     En esta demo la portada es CLARA (papel de orden de trabajo), así
+     que el header transparente lleva texto oscuro. No hay variante en
+     blanco: no la necesita y tenerla sería una trampa esperando. -->
+<header class="cab" id="cab" data-cab>
+  <div class="cab-in">
+    <a class="marca" href="#portada">
+      <span class="marca-caja" aria-hidden="true">JCB</span>
+      <span class="marca-txt">
+        <span class="marca-n1">Servicio Automotriz</span>
+        <span class="marca-n2">Temuco · Lagos 91</span>
+      </span>
+    </a>
+
+    <button class="hamb" type="button" aria-expanded="false" aria-controls="nav" data-hamb>
+      <span class="hamb-l" aria-hidden="true"></span>
+      <span class="hamb-txt">Menú</span>
+    </button>
+
+    <nav class="nav" id="nav" aria-label="Principal">
+      <ul class="nav-lista">
+        <li><a href="#reclamo">Si algo sale mal</a></li>
+        <li><a href="#numeros">Los números</a></li>
+        <li><a href="#servicios">Qué hacemos</a></li>
+        <li><a href="#visitar">Dónde estamos</a></li>
+      </ul>
+      <a class="btn btn-sello nav-cta" href="tel:+56452403999">
+        <span class="btn-sello-in">
+          <span class="btn-lbl">Llamar</span>
+          <span class="btn-dato">(45) 240 3999</span>
+        </span>
+      </a>
+    </nav>
+  </div>
+</header>
+
+<main id="contenido">
+
+<!-- ══════════ PORTADA · pantalla partida en dos columnas ══════════
+     La franja de papel de arriba llega hasta debajo del header a
+     propósito: así el header transparente nunca cae sobre la foto
+     oscura y no hace falta una segunda paleta para él. -->
+<section class="portada" id="portada" aria-labelledby="portada-t">
+  <div class="portada-rejilla">
+
+    <div class="portada-col">
+      <p class="eyebrow">
+        <span class="eyebrow-pt" aria-hidden="true"></span>
+        Temuco · Lagos 91
+      </p>
+
+      <h1 class="portada-h1" id="portada-t">
+        <span class="l l1">Todo queda</span>
+        <span class="l l2">por escrito.</span>
+      </h1>
+
+      <p class="portada-baja">
+        Taller de servicio automotriz en Temuco. Cada auto entra con una
+        orden de trabajo: qué se revisó, qué se cambió y qué falta.
+      </p>
+
+      <div class="portada-btns">
+        <a class="btn btn-sello btn-grande" href="tel:+56452403999">
+          <span class="btn-sello-in">
+            <span class="btn-lbl">Llamar al taller</span>
+            <span class="btn-dato">(45) 240 3999</span>
+          </span>
+        </a>
+        <a class="btn btn-casilla" href="#reclamo">
+          <span class="btn-casilla-cuadro" aria-hidden="true"></span>
+          <span class="btn-casilla-txt">¿Y si algo sale mal?</span>
+        </a>
+      </div>
+
+      <p class="portada-estrellas">
+        <span class="estrellas" role="img" aria-label="3,9 de 5 estrellas">
+          <span class="estrellas-fondo" aria-hidden="true">★★★★★</span>
+          <span class="estrellas-fill ei-1" aria-hidden="true">★★★★★</span>
+        </span>
+        <span class="portada-estrellas-txt">
+          <b>3,9</b> con <b>215</b> reseñas en Google — y contestamos todas
+        </span>
+      </p>
+    </div>
+
+    <!-- HUECO DE FOTO 1 · portada, a sangre por la derecha y por abajo
+         mínimo 1400x1500 (vertical o cuadrada)
+         El taller trabajando: un auto en el elevador, la bahía con luz. -->
+    <div class="portada-foto" data-foto="portada">
+      <p class="hueco-nota">
+        <span class="hueco-n">Foto 1</span>
+        El taller trabajando: un auto en el elevador, la bahía con luz ·
+        a sangre por la derecha y por abajo · mín. 1400 × 1500 px
+      </p>
+    </div>
+  </div>
+
+  <!-- ══════════ BANDA DE PROPUESTA · al pie de la portada ══════════
+       En esta demo la advertencia va acá abajo y no arriba: una barra
+       en el techo le come el primer pantallazo a la portada. -->
+  <aside class="banda" role="note">
+    <div class="banda-in">
+      <p class="banda-txt">
+        <strong>Propuesta de sitio web</strong> — preparada para JCB
+        Servicio Automotriz por Yordy Serna.
+        <span class="banda-gancho">215 reseñas, las contestan todas, y no
+        tienen ninguna página donde contar cómo trabajan.</span>
+      </p>
+    </div>
+  </aside>
+</section>
+
+
+<!-- ══════════════════════════════════════════════════════════════════
+     PIEZA FIRMA · QUÉ PASA SI ALGO SALE MAL
+     Un taller con 215 reseñas y 3,9 no gana escondiendo el número:
+     gana mostrando qué hace cuando un trabajo no queda bien. Eso es
+     exactamente lo que ninguna competencia publica.
+     ══════════════════════════════════════════════════════════════════ -->
+<section class="seccion reclamo" id="reclamo" aria-labelledby="rec-t">
+  <div class="ancho">
+    <div class="seccion-cab reveal">
+      <p class="eyebrow"><span class="eyebrow-pt" aria-hidden="true"></span> Lo que nadie publica</p>
+      <h2 class="h2" id="rec-t">Si algo sale mal, esto es lo que pasa</h2>
+      <p class="seccion-baja">
+        En un taller a veces el trabajo no queda bien a la primera. Lo
+        que importa es qué se hace después. Acá está escrito, paso a
+        paso, para que no dependa de con quién le toque hablar.
+      </p>
+    </div>
+
+    <p class="reclamo-aviso ej" data-ejemplo>
+      Los plazos de esta tabla son de ejemplo. Hay que reemplazarlos por
+      los que JCB realmente maneja.
+    </p>
+
+    <div class="tabla-envoltorio reveal">
+      <table class="tabla">
+        <caption class="oculto-visual">Procedimiento cuando un trabajo no queda conforme</caption>
+        <thead>
+          <tr>
+            <th scope="col">Paso</th>
+            <th scope="col">Qué hace usted</th>
+            <th scope="col">Qué hacemos nosotros</th>
+            <th scope="col">Plazo</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">1</th>
+            <td>Nos avisa con la <b>orden de trabajo</b> en la mano — el número basta.</td>
+            <td>Buscamos la orden y vemos quién hizo el trabajo y con qué repuesto.</td>
+            <td class="med ej">El mismo día</td>
+          </tr>
+          <tr>
+            <th scope="row">2</th>
+            <td>Trae el auto para que lo veamos. No hay que dejarlo.</td>
+            <td>Lo revisa el jefe de taller, no el mismo mecánico. Segunda opinión de la casa.</td>
+            <td class="med ej">Dentro de 48 h</td>
+          </tr>
+          <tr>
+            <th scope="row">3</th>
+            <td>Escucha el diagnóstico y decide.</td>
+            <td>Le decimos con claridad si fue error nuestro, si es otra falla o si es desgaste.</td>
+            <td class="med">En la misma revisión</td>
+          </tr>
+          <tr>
+            <th scope="row">4</th>
+            <td>Nada: nos deja el auto.</td>
+            <td><b>Si fue error nuestro, se rehace sin costo</b>, mano de obra incluida.</td>
+            <td class="med ej">Según repuesto</td>
+          </tr>
+          <tr>
+            <th scope="row">5</th>
+            <td>Si igual no queda conforme, escribe la reseña.</td>
+            <td>La contestamos con nombre y con lo que pasó, como hacemos con las 215 que ya hay.</td>
+            <td class="med ej">Dentro de la semana</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <p class="reclamo-pie">
+      <span class="reclamo-pie-marca" aria-hidden="true"></span>
+      El <b>número de la orden de trabajo</b> es lo que hace posible todo
+      esto: sin ese papel, un reclamo es la palabra de uno contra la del
+      otro. Guárdelo hasta que el auto ande bien.
+    </p>
+  </div>
+</section>
+
+
+<!-- ══════════════════════════════════════════════════════════════════
+     LOS NÚMEROS SIN MAQUILLAR
+     Un 3,9 puesto por delante y explicado convence más que un 5,0 sin
+     reseñas. Acá se muestra tal cual y se dice qué significa.
+     ══════════════════════════════════════════════════════════════════ -->
+<section class="seccion numeros" id="numeros" aria-labelledby="num-t">
+  <div class="ancho">
+    <div class="seccion-cab reveal">
+      <p class="eyebrow eyebrow-claro"><span class="eyebrow-pt" aria-hidden="true"></span> Sin maquillar</p>
+      <h2 class="h2 h2-claro" id="num-t">Los números, tal como están</h2>
+    </div>
+
+    <ul class="num-grilla">
+      <li class="num reveal">
+        <span class="num-cifra">3,9</span>
+        <h3 class="num-h3">La calificación</h3>
+        <p class="num-p">
+          No es un cinco y no lo vamos a disfrazar. Es el promedio de
+          <b>doce años</b> de autos, de trabajos buenos y de algunos que
+          hubo que rehacer.
+        </p>
+        <p class="num-nota ej" data-ejemplo>Los doce años son de ejemplo</p>
+      </li>
+      <li class="num reveal">
+        <span class="num-cifra">215</span>
+        <h3 class="num-h3">Las reseñas</h3>
+        <p class="num-p">
+          Un taller chico junta veinte. Doscientas quince significa que
+          por acá pasa <b>mucho auto</b>, y que la gente vuelve a contar
+          cómo le fue.
+        </p>
+      </li>
+      <li class="num reveal">
+        <span class="num-cifra num-cifra-sim" aria-hidden="true">✓</span>
+        <h3 class="num-h3">Las contestamos todas</h3>
+        <p class="num-p">
+          Las buenas y las malas. <b>Con nombre y con lo que pasó.</b>
+          Eso es verificable ahora mismo: entre a la ficha de Google y
+          mire las respuestas.
+        </p>
+      </li>
+    </ul>
+  </div>
+</section>
+
+
+<!-- ══════════ LÁMINA · EL TALLER ══════════ -->
+<section class="lamina lamina-taller" aria-labelledby="tal-t">
+
+  <!-- HUECO DE FOTO 2 · lámina a sangre · mínimo 1600x1100
+       La bahía completa con varios autos. Se desplaza al hacer scroll. -->
+  <div class="lamina-foto" data-foto="taller" data-parallax>
+    <p class="hueco-nota">
+      <span class="hueco-n">Foto 2</span>
+      La bahía completa con varios autos ·
+      se desplaza al scroll · mín. 1600 × 1100 px
+    </p>
+  </div>
+  <div class="lamina-velo" aria-hidden="true"></div>
+
+  <div class="lamina-txt reveal">
+    <p class="eyebrow eyebrow-claro">
+      <span class="eyebrow-pt" aria-hidden="true"></span>
+      Cómo trabajamos
+    </p>
+    <h2 class="lamina-h2" id="tal-t">Nada se toca<br>sin avisar antes.</h2>
+    <p class="lamina-p">
+      Si al desarmar aparece algo que no estaba en el presupuesto, se
+      llama y se pregunta. El auto no avanza hasta que usted diga que sí.
+    </p>
+    <a class="btn btn-casilla btn-casilla-claro" href="#servicios">
+      <span class="btn-casilla-cuadro" aria-hidden="true"></span>
+      <span class="btn-casilla-txt">Ver qué hacemos</span>
+    </a>
+  </div>
+</section>
+
+
+<!-- ══════════ SERVICIOS ══════════ -->
+<section class="seccion servicios" id="servicios" aria-labelledby="ser-t">
+  <div class="ancho">
+    <div class="seccion-cab reveal">
+      <p class="eyebrow"><span class="eyebrow-pt" aria-hidden="true"></span> Qué hacemos</p>
+      <h2 class="h2" id="ser-t">Servicio de taller</h2>
+      <p class="seccion-baja">
+        Mantención y reparación de vehículos livianos. Todo con orden de
+        trabajo y presupuesto antes de empezar.
+      </p>
+    </div>
+
+    <ul class="ser-grilla">
+      <li class="ser reveal">
+        <span class="ser-num" aria-hidden="true">01</span>
+        <h3 class="ser-h3">Mantención periódica</h3>
+        <p class="ser-p">
+          Aceite, filtros, bujías y las revisiones que corresponden al
+          kilometraje.
+        </p>
+        <p class="ser-nota ej" data-ejemplo>Según la pauta de la marca</p>
+      </li>
+      <li class="ser reveal">
+        <span class="ser-num" aria-hidden="true">02</span>
+        <h3 class="ser-h3">Frenos</h3>
+        <p class="ser-p">
+          Pastillas, discos, tambores y el líquido. Se mide el espesor y
+          se le muestra la medida.
+        </p>
+        <p class="ser-nota ej" data-ejemplo>Consultar marcas disponibles</p>
+      </li>
+      <li class="ser reveal">
+        <span class="ser-num" aria-hidden="true">03</span>
+        <h3 class="ser-h3">Suspensión y dirección</h3>
+        <p class="ser-p">
+          Amortiguadores, bujes, rótulas, terminales. Lo que hace que el
+          auto suene y se vaya de lado.
+        </p>
+      </li>
+      <li class="ser reveal">
+        <span class="ser-num" aria-hidden="true">04</span>
+        <h3 class="ser-h3">Diagnóstico con scanner</h3>
+        <p class="ser-p">
+          Para la luz del motor encendida. Se lee el código, se
+          interpreta y se le explica qué significa.
+        </p>
+        <p class="ser-nota ej" data-ejemplo>Consultar valor del diagnóstico</p>
+      </li>
+      <li class="ser reveal">
+        <span class="ser-num" aria-hidden="true">05</span>
+        <h3 class="ser-h3">Embrague y caja</h3>
+        <p class="ser-p">
+          Cambio de kit de embrague y revisión de caja manual.
+        </p>
+        <p class="ser-nota ej" data-ejemplo>Consultar plazo</p>
+      </li>
+      <li class="ser reveal">
+        <span class="ser-num" aria-hidden="true">06</span>
+        <h3 class="ser-h3">Revisión antes de comprar</h3>
+        <p class="ser-p">
+          ¿Va a comprar un auto usado? Tráigalo antes. Se revisa y se le
+          entrega el informe por escrito.
+        </p>
+        <p class="ser-nota ej" data-ejemplo>Consultar valor</p>
+      </li>
+    </ul>
+
+    <p class="ser-pie ej" data-ejemplo>
+      El listado es un ejemplo de estructura: se ajusta a lo que JCB
+      realmente hace.
+    </p>
+  </div>
+</section>
+
+
+<!-- ══════════ LA ORDEN DE TRABAJO ══════════ -->
+<section class="seccion orden" aria-labelledby="ord-t">
+  <div class="ancho">
+    <div class="seccion-cab reveal">
+      <p class="eyebrow"><span class="eyebrow-pt" aria-hidden="true"></span> El papel</p>
+      <h2 class="h2" id="ord-t">Cómo funciona la orden de trabajo</h2>
+      <p class="seccion-baja">
+        Es el documento que hace que después nadie discuta. Se llena
+        adelante suyo y se le entrega una copia.
+      </p>
+    </div>
+
+    <ul class="pasos">
+      <li class="paso reveal">
+        <span class="paso-n" aria-hidden="true">1</span>
+        <div>
+          <h3 class="paso-h3">Entra el auto</h3>
+          <p class="paso-p">Se anota el kilometraje, lo que usted viene a resolver y lo que se ve a simple vista.</p>
+        </div>
+      </li>
+      <li class="paso reveal">
+        <span class="paso-n" aria-hidden="true">2</span>
+        <div>
+          <h3 class="paso-h3">Se revisa y se presupuesta</h3>
+          <p class="paso-p ej" data-ejemplo>El presupuesto se avisa antes de tocar nada, y si al desarmar aparece otra cosa, se vuelve a llamar.</p>
+        </div>
+      </li>
+      <li class="paso reveal">
+        <span class="paso-n" aria-hidden="true">3</span>
+        <div>
+          <h3 class="paso-h3">Se entrega con la copia</h3>
+          <p class="paso-p">Qué se hizo, qué repuesto se puso y qué quedó pendiente. Ese número es el que sirve para reclamar.</p>
+        </div>
+      </li>
+    </ul>
+  </div>
+</section>
+
+
+<!-- ══════════ LÁMINA 2 · LA COPIA (segundo parallax) ══════════ -->
+<section class="lamina lamina-copia lamina-corta" aria-labelledby="cop-t">
+
+  <!-- HUECO DE FOTO 3 · lámina a sangre · mínimo 1600x900
+       Detalle de manos: entregando las llaves con el papel, o el
+       mecánico mostrando la pieza cambiada. Se desplaza al scroll. -->
+  <div class="lamina-foto" data-foto="copia" data-parallax>
+    <p class="hueco-nota">
+      <span class="hueco-n">Foto 3</span>
+      Manos entregando las llaves con el papel, o mostrando la pieza
+      cambiada · se desplaza al scroll · mín. 1600 × 900 px
+    </p>
+  </div>
+  <div class="lamina-velo" aria-hidden="true"></div>
+
+  <div class="lamina-txt lamina-txt-centro reveal">
+    <h2 class="lamina-h2" id="cop-t">Guarde la copia.</h2>
+    <p class="lamina-p">
+      No es burocracia: es lo único que convierte un reclamo en un
+      trámite de dos minutos en vez de una discusión.
+    </p>
+  </div>
+</section>
+
+
+<!-- ══════════ VISITAR ══════════ -->
+<section class="seccion visitar" id="visitar" aria-labelledby="vis-t">
+  <div class="ancho visitar-grid">
+    <div class="reveal">
+      <p class="eyebrow"><span class="eyebrow-pt" aria-hidden="true"></span> Dónde estamos</p>
+      <h2 class="h2" id="vis-t">Lagos 91, Temuco</h2>
+      <p class="seccion-baja">Con estacionamiento para dejar el auto.</p>
+
+      <dl class="datos">
+        <div class="dato-fila">
+          <dt>Dirección</dt>
+          <dd>Lagos 91, Temuco</dd>
+        </div>
+        <div class="dato-fila">
+          <dt>Teléfono</dt>
+          <dd><a href="tel:+56452403999">(45) 240 3999</a></dd>
+        </div>
+        <div class="dato-fila">
+          <dt>Horario</dt>
+          <dd class="ej" data-ejemplo>Lun a vie 8:30–18:30 · Sáb 9:00–13:00</dd>
+        </div>
+        <div class="dato-fila">
+          <dt>Google</dt>
+          <dd>3,9 con 215 reseñas</dd>
+        </div>
+      </dl>
+
+      <div class="visitar-btns">
+        <a class="btn btn-sello" href="tel:+56452403999">
+          <span class="btn-sello-in">
+            <span class="btn-lbl">Llamar</span>
+            <span class="btn-dato">(45) 240 3999</span>
+          </span>
+        </a>
+        <a class="btn btn-casilla" href="https://www.google.com/maps/search/?api=1&amp;query=JCB+Servicio+Automotriz+Lagos+91+Temuco" target="_blank" rel="noopener">
+          <span class="btn-casilla-cuadro" aria-hidden="true"></span>
+          <span class="btn-casilla-txt">Abrir en Google Maps</span>
+        </a>
+      </div>
+    </div>
+
+    <!-- HUECO DE FOTO 4 · vertical · mínimo 900x1200
+         La entrada del taller desde la calle, con el letrero. -->
+    <div class="visitar-foto reveal" data-foto="entrada">
+      <p class="hueco-nota">
+        <span class="hueco-n">Foto 4</span>
+        La entrada del taller desde la calle, con el letrero ·
+        vertical · mín. 900 × 1200 px
+      </p>
+    </div>
+  </div>
+      <figure class="mapa">
+        <img src="imagenes/mapa-01.jpg" width="768" height="768" loading="lazy" decoding="async"
+             alt="Mapa con la ubicación de Lagos 91, Temuco.">
+        <figcaption class="mapa__pie">
+          <span><b>Lagos 91, Temuco</b>.</span>
+          <span class="mapa__cred">Mapa: &copy; <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener">OpenStreetMap</a></span>
+        </figcaption>
+      </figure>
+</section>
+
+
+<!-- ══════════ CIERRE ══════════ -->
+<section class="cierre" aria-labelledby="cierre-t">
+  <div class="ancho cierre-in reveal">
+    <h2 class="cierre-h2 h2-claro" id="cierre-t">¿Le está sonando algo?</h2>
+    <p class="cierre-p">
+      Tráigalo y lo revisamos. Sale con la orden de trabajo en la mano y
+      sabiendo qué tiene, aunque decida no arreglarlo acá.
+    </p>
+    <a class="btn btn-sello btn-grande btn-sello-claro" href="tel:+56452403999">
+      <span class="btn-sello-in">
+        <span class="btn-lbl">Llamar a JCB</span>
+        <span class="btn-dato">(45) 240 3999</span>
+      </span>
+    </a>
+  </div>
+</section>
+
+</main>
+
+<!-- ══════════ PIE ══════════ -->
+<footer class="pie">
+  <div class="ancho pie-in">
+    <p class="pie-marca">
+      <span class="marca-caja" aria-hidden="true">JCB</span>
+      <span class="pie-sub">Servicio Automotriz · Temuco</span>
+    </p>
+    <p class="pie-dir">
+      Lagos 91, Temuco &middot;
+      <a href="tel:+56452403999">(45) 240 3999</a>
+    </p>
+  </div>
+</footer>
+
+
+<!-- ══════════ PARA EL DUEÑO ══════════ -->
+<section class="dueno" aria-labelledby="due-t">
+  <div class="ancho">
+    <p class="due-eyebrow">Esta parte no va en el sitio publicado</p>
+    <h2 class="due-h2" id="due-t">Para el dueño de JCB Servicio Automotriz</h2>
+
+    <div class="due-grid">
+      <div class="due-bloque">
+        <h3 class="due-h3">Lo que encontré</h3>
+        <p>
+          <b>3,9 con 215 reseñas</b>, y ustedes <b>contestan cada una</b>.
+          No tienen ninguna página. Quien busca «taller Temuco» ve el 3,9
+          suelto, sin nada que lo explique.
+          Verificado el 21 de agosto de 2026.
+        </p>
+      </div>
+
+      <div class="due-bloque">
+        <h3 class="due-h3">Qué es esto</h3>
+        <p>
+          Una demostración, no un sitio publicado. Lo <b>verificado</b> es
+          real: nombre, dirección, teléfono, calificación y número de
+          reseñas. Plazos, servicios, horarios y años están
+          <span class="ej-inline">marcados como ejemplo</span> porque
+          todavía no los hemos conversado.
+        </p>
+      </div>
+
+      <div class="due-bloque due-bloque-destaca">
+        <h3 class="due-h3">Por qué el 3,9 va adelante</h3>
+        <p>
+          Porque esconderlo no se puede: está en Google, en el primer
+          resultado. Lo que sí se puede es <b>ponerlo usted primero y
+          explicarlo</b>. 215 reseñas con 3,9 en un taller que mueve
+          harto auto es normal; lo raro y lo valioso es que las
+          contesten todas. Por eso la sección estrella no es el listado
+          de servicios: es <b>qué pasa cuando un trabajo no queda
+          bien</b>. Ninguna competencia lo publica, y es justo lo que
+          está pensando el que leyó el 3,9.
+        </p>
+      </div>
+    </div>
+
+    <div class="due-cta">
+      <a class="btn btn-sello btn-grande" href="https://wa.me/56968650001?text=Hola%20Yordy%2C%20vi%20la%20propuesta%20de%20sitio%20web%20para%20JCB%20Servicio%20Automotriz" target="_blank" rel="noopener">
+        <span class="btn-sello-in">
+          <span class="btn-lbl">Escribirle a Yordy</span>
+          <span class="btn-dato">+56 9 6865 0001</span>
+        </span>
+      </a>
+      <p class="due-firma">
+        Yordy Serna · desarrollo web en Loncoche ·
+        <a href="https://yordyserna.github.io" target="_blank" rel="noopener">yordyserna.github.io</a>
+      </p>
+    </div>
+  </div>
+</section>
+
+<script src="js/main.js"></script>
+</body>
+</html>

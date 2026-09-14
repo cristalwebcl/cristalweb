@@ -1,0 +1,25 @@
+﻿FUENTES DE LAS IMAGENES - mall-chino-centro-hogar-nunoa Bancos libres; procesadas con preparar-lote.ps1 (JPEG, ancho y calidad por tratamiento). 
+tajo-01.jpg  <=  pexels | Pexels License | Brunxs | https://www.pexels.com/es-es/foto/tazas-y-platos-de-ceramica-de-colores-expuestos-en-estantes-38243203/ | https://images.pexels.com/photos/38243203/pexels-photo-38243203.jpeg | recorte 21:9
+mit-01.jpg  <=  pexels | Pexels License | Vision Lens | https://www.pexels.com/es-es/foto/exhibicion-organizada-de-ropa-de-cama-en-tienda-de-sao-paulo-33990033/ | https://images.pexels.com/photos/33990033/pexels-photo-33990033.jpeg | recorte 4:5
+cita-01.jpg  <=  pexels | Pexels License | Marc Espejo | https://www.pexels.com/es-es/foto/pasillo-simetrico-con-cristaleria-en-una-tienda-39270303/ | https://images.pexels.com/photos/39270303/pexels-photo-39270303.jpeg | recorte 16:9
+telon-01.jpg  <=  pexels | Pexels License | RDNE Stock project | https://www.pexels.com/es-es/foto/ropa-articulos-sofa-organizacion-8580747/ | https://images.pexels.com/photos/8580747/pexels-photo-8580747.jpeg
+mos1-01.jpg  <=  pexels | Pexels License | Tuğçe Açıkyürek | https://www.pexels.com/es-es/foto/cocina-vasos-gafas-equipo-15872826/ | https://images.pexels.com/photos/15872826/pexels-photo-15872826.jpeg | recorte 3:4
+mos2-01.jpg  <=  pexels | Pexels License | Ayoub Lensman | https://www.pexels.com/es-es/foto/mercado-tienda-almacenar-ceramica-6252266/ | https://images.pexels.com/photos/6252266/pexels-photo-6252266.jpeg | recorte 3:4
+mos3-01.jpg  <=  pexels | Pexels License | Candelaria G | https://www.pexels.com/es-es/foto/libros-plantas-habitacion-decoracion-18857982/ | https://images.pexels.com/photos/18857982/pexels-photo-18857982.jpeg | recorte 3:4
+mos4-01.jpg  <=  pexels | Pexels License | P G | https://www.pexels.com/es-es/foto/exhibicion-colorida-de-ceramica-y-cristaleria-en-estanterias-38595505/ | https://images.pexels.com/photos/38595505/pexels-photo-38595505.jpeg | recorte 3:4
+mos5-01.jpg  <=  pexels | Pexels License | Rachel Claire | https://www.pexels.com/es-es/foto/creativo-taza-copa-madera-5490775/ | https://images.pexels.com/photos/5490775/pexels-photo-5490775.jpeg | recorte 3:4
+mos6-01.jpg  <=  pexels | Pexels License | Ron Lach | https://www.pexels.com/es-es/foto/pared-muro-salon-florero-10557056/ | https://images.pexels.com/photos/10557056/pexels-photo-10557056.jpeg | recorte 3:4
+
+MAPA DE UBICACION — mapa-01.jpg
+  768 x 768 · zoom 14 · centro -33.4543164, -70.5936358
+  Mosaicos de OpenStreetMap pegados en una sola imagen, con el marcador
+  dibujado encima. Datos (c) OpenStreetMap contributors, licencia ODbL:
+  la atribucion tiene que ir VISIBLE junto al mapa, en el pie de la figura.
+  https://www.openstreetmap.org/copyright
+
+MAPA DE UBICACION — mapa-01.jpg
+  768 x 768 · zoom 14 · centro -33.4543164, -70.5936358
+  Mosaicos de OpenStreetMap pegados en una sola imagen, con el marcador
+  dibujado encima. Datos (c) OpenStreetMap contributors, licencia ODbL:
+  la atribucion tiene que ir VISIBLE junto al mapa, en el pie de la figura.
+  https://www.openstreetmap.org/copyright

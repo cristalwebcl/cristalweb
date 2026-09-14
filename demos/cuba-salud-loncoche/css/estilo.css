@@ -1,0 +1,599 @@
+/* ═══════════════════════════════════════════════════════════════════
+   CUBA SALUD · Loncoche
+   Demo. HTML + CSS + JS clásico. Sin build, sin librerías.
+
+   ── LA DIRECCIÓN, EN UNA FRASE ────────────────────────────────────
+   «LAVANDA CLÍNICA»: blanco levemente azulado, violeta profundo y un
+   lavanda que hace de acento. La salud privada en Chile se dibuja
+   entera en celeste y verde menta; un centro médico en lavanda se
+   reconoce a la primera y no parece hospital, que es justo el punto —
+   acá se viene con una hora tomada, no de urgencia.
+
+   ── POR QUÉ ESTE TRÍO ─────────────────────────────────────────────
+   · EPILOGUE (display) — grotesca de personalidad contenida, moderna
+     sin ser fría.
+   · GEOLOGICA (cuerpo) — de lectura, con formas abiertas; la pieza
+     firma son seis fichas con listas y necesita una letra que aguante
+     texto corto repetido sin cansar.
+   · ANONYMOUS PRO (dato) — el mono de los rótulos y los números. Tiene
+     un aire de máquina de escribir de consulta que le calza.
+
+   ── CONTRASTE ─────────────────────────────────────────────────────
+   El lavanda va declarado en TRES versiones y cada una dice para qué
+   sirve. El del medio —`--lavanda`— llega a 4,81:1 sobre papel: pasa
+   la norma, pero sin margen, así que queda reservado para texto grande
+   y filetes. Todo el texto chico y todos los rellenos de botón usan
+   `--lavanda-texto`, que da 7,08.
+
+   Es la lección de la 39, la 42, la 65 y la 69 aplicada antes de
+   medir — y una vuelta más: que un color PASE no basta si pasa
+   raspando. Un relleno de botón en 4,81 con letra de 13 px es la
+   clase de decisión que se ve mal en un teléfono al sol.
+   ═══════════════════════════════════════════════════════════════════ */
+
+:root {
+  --papel:      #F7F6FB;
+  --papel-alto: #FDFCFF;
+  --violeta:      #2B2440;
+  --violeta-alto: #362E4D;
+
+  --tinta:       #2B2440;   /* títulos sobre papel    — 13.7:1       */
+  --tinta-suave: #56506B;   /* párrafos sobre papel   —  7.1:1       */
+
+  --nube:        #EFEDF7;   /* títulos sobre violeta  — 12.9:1       */
+  --nube-suave:  #B2ACC6;   /* párrafos sobre violeta —  6.7:1       */
+
+  /* EL LAVANDA, en tres versiones. Cada una dice dónde va. */
+  --lavanda:        #6D5BD0;  /* SÓLO texto GRANDE y filetes sobre
+                                 papel — 4,81:1, que pasa pero sin
+                                 margen: por eso no lleva texto chico
+                                 ni rellenos de botón encima          */
+  --lavanda-texto:  #5344A8;  /* texto chico Y rellenos de botón
+                                 sobre papel — 7,08:1                 */
+  --lavanda-clara:  #B7A9F5;  /* SÓLO sobre violeta      — 7,00:1    */
+
+  --display: 'Epilogue', system-ui, sans-serif;
+  --cuerpo:  'Geologica', system-ui, -apple-system, sans-serif;
+  --dato:    'Anonymous Pro', ui-monospace, Consolas, monospace;
+
+  --ancho: 1080px;
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+
+/* El atributo hidden pierde contra cualquier regla con display.
+   Declararlo es obligatorio en esta casa. */
+[hidden] { display: none !important; }
+
+html { scroll-behavior: smooth; }
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+
+body {
+  margin: 0;
+  background: var(--papel);
+  color: var(--tinta-suave);
+  font-family: var(--cuerpo);
+  font-size: clamp(16px, 1.05vw + 13px, 18px);
+  line-height: 1.62;
+  -webkit-font-smoothing: antialiased;
+}
+
+img { max-width: 100%; display: block; }
+
+.ancho { width: min(100% - 2.4rem, var(--ancho)); margin-inline: auto; }
+
+.saltar {
+  position: absolute; left: -9999px; top: 0; z-index: 99;
+  background: var(--violeta); color: var(--papel);
+  padding: .7rem 1.1rem; font-family: var(--dato); font-size: .85rem;
+}
+.saltar:focus { left: .5rem; top: .5rem; }
+
+:focus-visible { outline: 3px solid var(--lavanda-texto); outline-offset: 3px; }
+
+
+/* ═══════════════════════════════════════════════════════════════════
+   MARCA DE DATO INVENTADO
+   ═══════════════════════════════════════════════════════════════════ */
+[data-ejemplo]::before {
+  content: attr(data-ejemplo);
+  display: block; margin-bottom: .45rem;
+  font-family: var(--dato); font-size: .7rem; font-weight: 700;
+  letter-spacing: .06em; text-transform: uppercase;
+  color: var(--lavanda-texto);
+}
+.llevar-nota {
+  margin: 2rem 0 0; max-width: 62ch; font-size: .88rem;
+  padding-left: 1rem; border-left: 3px solid var(--lavanda-texto);
+  color: var(--tinta-suave);
+}
+.llevar-nota b { color: var(--tinta); font-weight: 600; }
+
+
+/* ═══════════════════════════════════════════════════════════════════
+   CABECERA QUE SABE DÓNDE VA
+   Decimoctava cabecera del registro: la sección que se está mirando
+   queda subrayada en el menú.
+
+   POLARIDAD, otra vez. La 47 dejó la regla: el estado por defecto
+   tiene que ser el que se ve bien. Acá el defecto es «ninguna
+   marcada», que es perfectamente legible; el subrayado sólo agrega.
+   Si el JS no llega o el observer no dispara, no se pierde nada.
+   ═══════════════════════════════════════════════════════════════════ */
+.cab {
+  position: sticky; top: 0; z-index: 40;
+  display: flex; align-items: center; gap: 1.4rem;
+  padding: .8rem 1.4rem;
+  background: var(--papel);
+  border-bottom: 1px solid rgba(43, 36, 64, .14);
+}
+.cab-m { margin: 0; font-family: var(--display); line-height: 1.1; color: var(--tinta); }
+.cab-m b { font-weight: 800; font-size: 1.22rem; letter-spacing: -.025em; }
+.cab-m span {
+  display: block; font-family: var(--dato); font-size: .66rem;
+  letter-spacing: .12em; text-transform: uppercase;
+  color: var(--lavanda-texto); margin-top: .1rem;
+}
+.cab-n { margin-left: auto; display: flex; gap: 1.4rem; }
+.cab-n a {
+  font-size: .84rem; color: var(--tinta-suave); text-decoration: none;
+  padding-bottom: 3px; border-bottom: 2px solid transparent;
+  transition: color .2s ease, border-color .2s ease;
+}
+.cab-n a:hover, .cab-n a:focus-visible { color: var(--tinta); }
+.cab-n a.aqui { color: var(--tinta); border-bottom-color: var(--lavanda); }
+.cab-tel {
+  font-family: var(--dato); font-size: .85rem; font-weight: 700;
+  background: var(--lavanda-texto); color: var(--papel);
+  padding: .5rem .9rem; border-radius: 3px;
+  text-decoration: none; white-space: nowrap;
+}
+/* El relleno NO se aclara al pasar el mouse: en la 39 ese gesto bajó
+   un botón a 3,8:1 y el auditor de contraste no mira los :hover. */
+.cab-tel:hover, .cab-tel:focus-visible { box-shadow: 0 0 0 3px rgba(109, 91, 208, .3); }
+
+
+/* ═══════════════════════════════════════════════════════════════════
+   PORTADA — EL PULSO
+   Dos tramas de puntos superpuestas que se van pasando la opacidad,
+   muy despacio. Ninguna se mueve: sólo aparece una mientras se va la
+   otra, y el ojo lo lee como una respiración.
+
+   Es el PRIMER fondo del registro que NO cambia de posición ni de
+   tamaño. Los anteriores trasladan (39, 41, 45, 47, 48, 49), escalan
+   (50) o rotan (51); éste es un cruce de opacidades y nada más. Y es
+   lo más barato que puede hacer un navegador.
+
+   @keyframes puros, nunca requestAnimationFrame: Chrome congela rAF
+   en pestañas de fondo y la portada volvía a primer plano detenida a
+   mitad de camino.
+   ═══════════════════════════════════════════════════════════════════ */
+.portada {
+  position: relative; overflow: hidden;
+  min-height: min(84vh, 740px);
+  display: flex; align-items: center;
+  padding: 5rem 0 4.5rem;
+  background: radial-gradient(115% 95% at 78% 8%, #EFEBFB 0%, var(--papel) 58%);
+}
+
+.pulso { position: absolute; inset: 0; pointer-events: none; }
+.pulso span { position: absolute; inset: 0; }
+.pulso span:first-child {
+  background-image: radial-gradient(circle, rgba(109, 91, 208, .16) 1.5px, transparent 1.6px);
+  background-size: 30px 30px;
+  animation: latir-a 13s ease-in-out infinite;
+}
+.pulso span:last-child {
+  background-image: radial-gradient(circle, rgba(43, 36, 64, .11) 1.1px, transparent 1.2px);
+  background-size: 21px 21px; background-position: 10px 10px;
+  animation: latir-b 13s ease-in-out infinite;
+}
+@keyframes latir-a { 0%, 100% { opacity: 1; }  50% { opacity: .18; } }
+@keyframes latir-b { 0%, 100% { opacity: .18; } 50% { opacity: 1; } }
+
+.portada-cuerpo {
+  position: relative;
+  width: min(100% - 2.4rem, var(--ancho));
+  margin-inline: auto;
+}
+
+.portada-sobre {
+  margin: 0 0 1.5rem;
+  font-family: var(--dato); font-size: .76rem; font-weight: 700;
+  letter-spacing: .1em; text-transform: uppercase;
+  color: var(--lavanda-texto);
+}
+
+.portada-h1 {
+  margin: 0 0 1.4rem;
+  font-family: var(--display); font-weight: 800;
+  font-size: clamp(2.2rem, 5.6vw, 4.2rem);
+  line-height: 1.04;
+  letter-spacing: -.035em;  /* fijo. Animar letter-spacing dejó el
+                               documento clavado en 443 px en la 53. */
+  color: var(--tinta);
+  max-width: 18ch;
+}
+.portada-h1 .l { display: block; }
+.portada-h1 em { font-style: normal; color: var(--lavanda); }
+
+.portada-bajada { margin: 0 0 2.2rem; max-width: 48ch; color: var(--tinta-suave); }
+.portada-acciones { display: flex; flex-wrap: wrap; gap: .8rem; margin-bottom: 2.4rem; }
+.portada-pie {
+  margin: 0; font-family: var(--dato); font-size: .78rem;
+  color: var(--tinta-suave); line-height: 1.8;
+}
+.portada-pie b { color: var(--tinta); font-weight: 700; }
+
+/* Entrada escalonada. Los estados ocultos cuelgan de .js y el
+   temporizador del <head> los libera si main.js no llega. */
+.js .portada .l { opacity: 0; transform: translate3d(0, 18px, 0);
+                  animation: entrar .85s cubic-bezier(.2,.7,.3,1) forwards; }
+.js .portada .l1 { animation-delay: .08s; }
+.js .portada .l2 { animation-delay: .18s; }
+.js .portada .l3 { animation-delay: .28s; }
+.js .portada .l4 { animation-delay: .44s; }
+.js .portada .l5 { animation-delay: .56s; }
+.js .portada .l6 { animation-delay: .66s; }
+@keyframes entrar { to { opacity: 1; transform: none; } }
+
+
+/* ═══════════════════════════════════════════════════════════════════
+   BOTONES
+   ═══════════════════════════════════════════════════════════════════ */
+.btn {
+  display: inline-block; text-decoration: none;
+  font-family: var(--dato); font-size: .86rem; font-weight: 700;
+  padding: .9rem 1.5rem; border-radius: 3px;
+  transition: box-shadow .18s ease, transform .18s ease;
+}
+.btn-fuerte { background: var(--lavanda-texto); color: var(--papel); }
+.btn-fuerte:hover, .btn-fuerte:focus-visible {
+  box-shadow: 0 0 0 3px rgba(109, 91, 208, .28); transform: translateY(-1px);
+}
+.btn-suave { color: var(--tinta); border: 1px solid rgba(43, 36, 64, .28); }
+.btn-suave:hover, .btn-suave:focus-visible { border-color: var(--lavanda); color: var(--lavanda-texto); }
+.grande { padding: 1.05rem 2rem; font-size: .94rem; }
+
+
+/* ═══════════════════════════════════════════════════════════════════
+   PIEZAS DE TEXTO COMPARTIDAS
+   ═══════════════════════════════════════════════════════════════════ */
+.rotulo {
+  margin: 0 0 .7rem;
+  font-family: var(--dato); font-size: .72rem; font-weight: 700;
+  letter-spacing: .12em; text-transform: uppercase;
+  color: var(--lavanda-texto);
+}
+.rotulo.claro { color: var(--lavanda-clara); }
+
+.t2 {
+  margin: 0 0 1.1rem;
+  font-family: var(--display); font-weight: 800;
+  font-size: clamp(1.8rem, 3.8vw, 2.7rem);
+  line-height: 1.08; letter-spacing: -.035em;
+  color: var(--tinta); max-width: 22ch;
+}
+.t2.claro { color: var(--nube); }
+
+.entrada { margin: 0 0 2.4rem; max-width: 56ch; color: var(--tinta-suave); }
+.entrada.claro { color: var(--nube-suave); }
+.entrada b { color: var(--tinta); font-weight: 600; }
+.entrada.claro b { color: var(--nube); }
+
+
+/* ═══════════════════════════════════════════════════════════════════
+   PIEZA FIRMA 1 — QUÉ LLEVAR
+   Seis fichas. Cada una es una lista de verificación de verdad, con
+   viñetas cortas: está pensada para mirarla de pie, con el bolso en
+   la mano, antes de salir de la casa.
+   ═══════════════════════════════════════════════════════════════════ */
+.llevar { background: var(--papel); padding: 5.5rem 0; }
+
+.fichas {
+  list-style: none; margin: 0; padding: 0;
+  display: grid; grid-template-columns: repeat(auto-fit, minmax(19rem, 1fr));
+  gap: 1px; background: rgba(43, 36, 64, .16);
+  border: 1px solid rgba(43, 36, 64, .16);
+}
+.ficha { background: var(--papel-alto); padding: 1.7rem 1.5rem; }
+.ficha h3 {
+  margin: 0 0 .9rem; font-family: var(--display); font-weight: 800;
+  font-size: 1.12rem; color: var(--tinta); letter-spacing: -.025em;
+}
+.lleva { margin: 0 0 1rem; padding-left: 1.1rem; }
+.lleva li { margin-bottom: .35rem; font-size: .93rem; }
+.lleva li::marker { color: var(--lavanda); }
+.lleva b { color: var(--tinta); font-weight: 600; }
+.ficha-x {
+  margin: 0; padding: .75rem .9rem;
+  background: var(--papel);
+  border-left: 3px solid var(--lavanda);
+  font-size: .88rem;
+}
+.ficha-x b { color: var(--tinta); font-weight: 600; }
+
+
+/* ═══════════════════════════════════════════════════════════════════
+   PIEZA FIRMA 2 — LAS TRES QUE HACEN PERDER LA HORA
+   La única sección oscura de la página.
+   ═══════════════════════════════════════════════════════════════════ */
+.perder { background: var(--violeta); padding: 5.5rem 0; }
+
+.tres { list-style: none; margin: 0; padding: 0;
+        border-top: 1px solid rgba(239, 237, 247, .2); }
+.uno {
+  display: grid; grid-template-columns: 4.5rem minmax(0, 1fr);
+  gap: 1.4rem; padding: 1.6rem 0;
+  border-bottom: 1px solid rgba(239, 237, 247, .2);
+}
+.uno-n {
+  margin: 0; font-family: var(--dato); font-size: 1.3rem; font-weight: 700;
+  color: var(--lavanda-clara); line-height: 1.3;
+}
+.uno h3 {
+  margin: 0 0 .45rem; font-family: var(--display); font-weight: 800;
+  font-size: 1.18rem; color: var(--nube); letter-spacing: -.025em;
+}
+.uno p { margin: 0; font-size: .94rem; color: var(--nube-suave); max-width: 62ch; }
+.uno b { color: var(--nube); font-weight: 600; }
+
+
+/* ═══════════════════════════════════════════════════════════════════
+   LÁMINA CON FOTO
+   ═══════════════════════════════════════════════════════════════════ */
+.lamina {
+  display: grid; grid-template-columns: .95fr 1.05fr;
+  align-items: stretch; background: var(--papel-alto);
+}
+.lamina-texto { padding: 4.5rem clamp(1.4rem, 4vw, 3.5rem); align-self: center; }
+.lamina-foto { position: relative; overflow: hidden; min-height: 30rem; }
+/* La capa es un 24% más alta que su marco: le sobra recorrido para
+   desplazarse al scroll sin que nunca se vea el borde. */
+.lamina-capa {
+  position: absolute; inset: -12% 0;
+  background-color: var(--violeta);
+  background-image: linear-gradient(150deg, #443A5F, #241E36);
+  display: grid; place-items: center;
+  will-change: transform;
+}
+
+.numeraco {
+  margin: 0; font-family: var(--display); font-weight: 800;
+  font-size: clamp(4rem, 11vw, 7.5rem); line-height: .88;
+  letter-spacing: -.06em; color: var(--lavanda);
+}
+
+.hueco-nota {
+  margin: 0; max-width: 26ch; text-align: center;
+  font-family: var(--dato); font-size: .74rem; line-height: 1.8;
+  color: var(--nube-suave);
+  border: 1px dashed rgba(239, 237, 247, .25);
+  padding: 1.1rem 1.2rem; border-radius: 3px;
+}
+.hueco-nota code { color: var(--lavanda-clara); }
+.tiene-foto .hueco-nota { display: none; }
+
+
+/* ═══════════════════════════════════════════════════════════════════
+   DÓNDE ESTAMOS
+   ═══════════════════════════════════════════════════════════════════ */
+.llegar { background: var(--papel); padding: 5.5rem 0; }
+.llegar-grilla {
+  display: grid; grid-template-columns: 1.15fr .85fr;
+  gap: clamp(2rem, 5vw, 4rem); align-items: start;
+}
+.datos {
+  margin: 0 0 2rem; display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(13rem, 1fr));
+  gap: 1.3rem 2rem;
+  border-top: 1px solid rgba(43, 36, 64, .2); padding-top: 1.6rem;
+}
+.datos dt {
+  font-family: var(--dato); font-size: .7rem; font-weight: 700;
+  letter-spacing: .1em; text-transform: uppercase;
+  color: var(--lavanda-texto); margin-bottom: .25rem;
+}
+.datos dd { margin: 0; color: var(--tinta); font-size: .98rem; }
+.datos dd a { color: var(--tinta); text-decoration-color: var(--lavanda); }
+
+.aviso {
+  margin: 0; padding: 1.2rem 1.3rem;
+  background: var(--papel-alto);
+  border-left: 4px solid var(--lavanda);
+  font-size: .95rem; max-width: 56ch;
+}
+.aviso b { color: var(--tinta); font-weight: 600; }
+
+.llegar-foto {
+  position: relative; height: 26rem;
+  background-color: var(--violeta);
+  background-image: linear-gradient(160deg, #4B4069, #241E36);
+  display: grid; place-items: center; border-radius: 3px; overflow: hidden;
+}
+
+
+/* ═══════════════════════════════════════════════════════════════════
+   CIERRE Y PIE
+   ═══════════════════════════════════════════════════════════════════ */
+.cierre { background: var(--papel-alto); padding: 5rem 0; text-align: center; }
+.cierre .t2, .cierre .entrada { margin-inline: auto; }
+.cierre .entrada { margin-bottom: 2.2rem; }
+
+.pie { background: var(--violeta); padding: 3.2rem 0 3.6rem; }
+.pie-grilla {
+  display: grid; grid-template-columns: auto auto 1fr;
+  gap: 1.6rem 3rem; align-items: start;
+}
+.pie-m {
+  margin: 0; font-family: var(--display); font-weight: 800;
+  font-size: 1.05rem; color: var(--nube); line-height: 1.45; letter-spacing: -.025em;
+}
+.pie-m span {
+  font-family: var(--dato); font-weight: 400; font-size: .68rem;
+  letter-spacing: .1em; text-transform: uppercase; color: var(--lavanda-clara);
+}
+.pie-d { margin: 0; font-family: var(--dato); font-size: .8rem;
+         color: var(--nube-suave); line-height: 1.9; }
+.pie-d a { color: var(--lavanda-clara); }
+.pie-n { margin: 0; font-size: .78rem; color: var(--nube-suave); max-width: 54ch; }
+
+
+/* ═══════════════════════════════════════════════════════════════════
+   REVEALS
+   Ocultos sólo bajo .js. main.js tiene dos resguardos: lo visible al
+   cargar se muestra de inmediato, y un barrido a los 6 s revela lo
+   que haya quedado pendiente.
+   ═══════════════════════════════════════════════════════════════════ */
+.js .reveal { opacity: 0; transform: translate3d(0, 20px, 0); }
+.js .reveal.visible {
+  opacity: 1; transform: none;
+  transition: opacity .7s ease, transform .7s cubic-bezier(.2,.7,.3,1);
+}
+
+
+/* ═══════════════════════════════════════════════════════════════════
+   PANTALLAS CHICAS
+   ═══════════════════════════════════════════════════════════════════ */
+@media (max-width: 980px) {
+  .lamina { grid-template-columns: 1fr; }
+  .lamina-texto { order: 1; }
+  .lamina-foto { order: 2; min-height: 22rem; }
+  .llegar-grilla { grid-template-columns: 1fr; }
+  /* aspect-ratio junto a min-height deja que el navegador calcule el
+     ancho desde el alto y se sale de la pantalla: alto fijo. */
+  .llegar-foto { height: 17rem; }
+  .pie-grilla { grid-template-columns: 1fr; }
+}
+
+@media (max-width: 720px) {
+  .cab-n { display: none; }
+  .cab { gap: .8rem; }
+  .cab-tel { margin-left: auto; }
+  .portada { min-height: auto; padding: 3.2rem 0; }
+  .llevar, .perder, .llegar, .cierre { padding: 3.8rem 0; }
+  .lamina-texto { padding: 3rem 1.2rem; }
+  .uno { grid-template-columns: 1fr; gap: .4rem; }
+}
+
+
+/* ═══════════════════════════════════════════════════════════════════
+   MOVIMIENTO REDUCIDO
+   En Windows esta preferencia viene activada de fábrica muchas veces.
+   El pulso se detiene con las dos tramas a la vista —queda una textura
+   quieta, que se ve bien— y se apaga el desplazamiento de la foto. Los
+   fundidos se dejan: apagándolo todo la página se ve muerta.
+   ═══════════════════════════════════════════════════════════════════ */
+@media (prefers-reduced-motion: reduce) {
+  .pulso span { animation: none; opacity: .6; }
+  .js .portada .l { animation-duration: .01s; animation-delay: 0s; }
+}
+
+
+/* ═══════════════════════════════════════════════════════════════════
+   IMPRESIÓN
+   «Qué llevar a cada hora» es una lista de verificación: impresa y
+   pegada en la puerta del refrigerador sirve más que en la pantalla.
+   Sale limpia, en blanco y negro, con el teléfono del centro.
+   ═══════════════════════════════════════════════════════════════════ */
+@media print {
+  .cab, .portada, .perder, .lamina, .llegar, .cierre, .saltar, .btn {
+    display: none !important;
+  }
+  body { background: #fff; color: #000; font-size: 10.5pt; }
+  .llevar { padding: 0; }
+  .rotulo, .t2, .entrada, .ficha h3, .lleva li, .ficha-x, .llevar-nota { color: #000; }
+  .t2 { font-size: 16pt; }
+  .fichas { display: block; border: 0; background: none; }
+  .ficha { break-inside: avoid; padding: .5rem 0; border-bottom: 1px solid #000; }
+  .ficha-x { background: none; border-left: 2px solid #000; }
+  .llevar-nota { border-left: 2px solid #000; font-size: 8.5pt; }
+  .pie { background: #fff; padding: .8rem 0 0; border-top: 1px solid #000; }
+  .pie-m, .pie-m span, .pie-d, .pie-d a { color: #000; }
+  .pie-n { display: none; }
+  .pie-grilla { grid-template-columns: auto auto; }
+}
+
+
+/* ═══════════════════════════════════════════════════════════════════
+   FOTOS — DESCOMENTAR CUANDO LLEGUEN
+   Dejar los JPEG en imagenes/ con estos nombres y quitar el comentario.
+   La nota del hueco desaparece sola.
+   ═══════════════════════════════════════════════════════════════════ */
+/* ── LAS FOTOS, YA PUESTAS ─────────────────────────────────────── */
+  .lamina-capa { background-image: url('../imagenes/box.jpg'); background-size: cover; background-position: center; }
+
+/* FALTA ESTA FOTO, LA TIENE QUE DAR EL CLIENTE: frente.jpg - el frente desde Balmaceda, con el letrero
+   No se reemplaza por una generica: es el activo del negocio
+   y el argumento de venta. Al llegar, dejar el JPEG en imagenes/
+   y descomentar la regla de abajo.
+  .llegar-foto { background-image: url('../imagenes/frente.jpg'); background-size: cover; background-position: center; }
+*/
+
+
+/* ── MAPA DE UBICACION ──────────────────────────────────────────────
+   Imagen propia con mosaicos de OpenStreetMap pegados: la CSP prohibe
+   pedir nada a un tercero, asi que un iframe de Google Maps quedaria en
+   blanco SIN dar un solo error. El "Como llegar" si es un enlace, y un
+   enlace no lo bloquea nada.
+   Los colores salen de currentColor a proposito: asi el bloque se adapta
+   a la paleta de cada demo sin conocerla y sin chocar con ella.
+   La atribucion a OpenStreetMap la exige su licencia (ODbL). */
+.mapa-sec { padding: clamp(2.5rem, 6vw, 4.5rem) 0; }
+.mapa {
+  /* Casi siempre el mapa queda como hijo DIRECTO de la seccion, fuera del
+     contenedor .ancho: sin este ancho maximo se va de borde a borde y el
+     pie del mapa arranca pegado al filo de la pantalla. Se usa la variable
+     de la demo si existe, y 1100 px si no. */
+  width: min(100% - 2.5rem, var(--ancho, 1100px));
+  margin: 1.4rem auto 0;
+  border: 1px solid; border-color: color-mix(in srgb, currentColor 22%, transparent);
+  border-radius: 10px; overflow: hidden;
+}
+@supports not (color: color-mix(in srgb, red 50%, blue)) { .mapa { border-color: rgba(128, 128, 128, .35); } }
+.mapa img { display: block; width: 100%; height: auto; aspect-ratio: 16 / 10; object-fit: cover; }
+.mapa__pie {
+  display: flex; flex-wrap: wrap; align-items: center; gap: .4rem 1rem;
+  padding: .75rem .9rem;
+  font-size: .86em; line-height: 1.45;
+  border-top: 1px solid; border-top-color: color-mix(in srgb, currentColor 22%, transparent);
+}
+@supports not (color: color-mix(in srgb, red 50%, blue)) { .mapa__pie { border-top-color: rgba(128, 128, 128, .35); } }
+.mapa__pie b { font-weight: 700; }
+.mapa__ir { color: inherit; font-weight: 700; text-decoration: underline; min-height: 44px; display: inline-flex; align-items: center; }
+.mapa__cred { width: 100%; font-size: .84em; opacity: .8; }
+.mapa__cred a { color: inherit; }
+/* ── BOTON FLOTANTE DE CONTACTO ─────────────────────────────────────
+   56 px de alto, por encima del minimo tactil de 44. Los colores de
+   marca van a proposito: se reconocen sin leerlos, y eso es lo que hace
+   que se toquen. Se ve SIEMPRE por defecto; el JS solo lo aparta sobre
+   la portada. Al reves, un fallo del script se llevaria el CTA principal. */
+.flota {
+  position: fixed;
+  right: max(1rem, env(safe-area-inset-right, 0px));
+  bottom: max(1rem, env(safe-area-inset-bottom, 0px));
+  z-index: 60;
+  display: inline-flex; align-items: center; gap: .55rem;
+  height: 56px; padding: 0 1.15rem 0 1rem;
+  border-radius: 999px;
+  text-decoration: none;
+  font-family: var(--cuerpo, system-ui, sans-serif);
+  font-size: .95rem; font-weight: 700; line-height: 1;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, .26), 0 2px 6px rgba(0, 0, 0, .16);
+  transition: opacity .28s ease, transform .28s ease, box-shadow .18s ease;
+}
+.flota--wa { background: #25D366; color: #07310F; }
+.flota--ig { background: linear-gradient(120deg, #F9CE34 4%, #EE2A7B 48%, #6228D7 96%); color: #FFFFFF; }
+.flota__i { width: 26px; height: 26px; fill: currentColor; flex: none; }
+.flota:hover, .flota:focus-visible { transform: translateY(-2px); box-shadow: 0 10px 26px rgba(0, 0, 0, .3); }
+.js .flota--arriba { opacity: 0; transform: translateY(14px) scale(.94); pointer-events: none; }
+
+@media (max-width: 520px) {
+  .flota { width: 56px; padding: 0; justify-content: center; }
+  .flota__t { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .flota { transition: opacity .28s ease; }
+  .flota:hover, .flota:focus-visible { transform: none; }
+  .js .flota--arriba { transform: none; }
+}

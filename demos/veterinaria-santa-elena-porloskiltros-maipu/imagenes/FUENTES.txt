@@ -1,0 +1,22 @@
+FUENTES DE LAS IMAGENES - Porloskiltros Rehecha el 13-09-2026 (presentacion antes que texto). Fotos de REFERENCIA de bancos libres: ninguna es del local; las verdaderas las tiene que mandar el negocio. 
+port-01.jpg  <-  pozo-p-ke-kiltro\009.jpg  |  pexels (Pexels License)  |  autor: Sean Brannon  |  https://www.pexels.com/es-es/foto/perro-mascota-sentado-fotografia-de-animales-19774563/  |  consulta: "mixed breed dog"
+hund1-01.jpg  <-  pozo-p-ke-consulta\009.jpg  |  pexels (Pexels License)  |  autor: Eduardo López  |  https://www.pexels.com/es-es/foto/perro-con-collar-16620451/  |  consulta: "veterinarian dog examination"
+hund2-01.jpg  <-  pozo-p-ke-consulta\007.jpg  |  pexels (Pexels License)  |  autor: Amar  Preciado  |  https://www.pexels.com/es-es/foto/perro-mascota-sentado-mesa-19086863/  |  consulta: "veterinarian dog examination"
+hund3-01.jpg  <-  pozo-p-ke-vacuna\004.jpg  |  pexels (Pexels License)  |  autor: Regina Tommasi  |  https://www.pexels.com/es-es/foto/retrato-en-primer-plano-de-un-jack-russell-terrier-30204789/  |  consulta: "dog vaccine"
+hund4-01.jpg  <-  pozo-p-ke-chip\009.jpg  |  pexels (Pexels License)  |  autor: Andrew Cardenas  |  https://www.pexels.com/es-es/foto/mano-animal-perro-mascota-13821673/  |  consulta: "dog microchip"
+hund5-01.jpg  <-  pozo-p-ke-chip\003.jpg  |  pexels (Pexels License)  |  autor: Adrian Arellano  |  https://www.pexels.com/es-es/foto/perro-mascota-mirando-canino-18352455/  |  consulta: "dog microchip"
+hund6-01.jpg  <-  pozo-p-ke-negro\010.jpg  |  pexels (Pexels License)  |  autor: Eduardo López  |  https://www.pexels.com/es-es/foto/retrato-de-perro-16620450/  |  consulta: "black dog portrait"
+banda-01.jpg  <-  pozo-p-ke-calle\011.jpg  |  pexels (Pexels License)  |  autor: Lexa Shep  |  https://www.pexels.com/es-es/foto/perro-callejero-parado-en-una-calle-soleada-en-georgia-29386601/  |  consulta: "stray dog street"
+cita-01.jpg  <-  pozo-p-ke-kiltro\011.jpg  |  pexels (Pexels License)  |  autor: Elina Volkova  |  https://www.pexels.com/es-es/foto/naturaleza-campo-verano-animal-28171140/  |  consulta: "mixed breed dog"
+mos1-01.jpg  <-  pozo-p-ke-kiltro\004.jpg  |  pexels (Pexels License)  |  autor: Gerardo Manzano  |  https://www.pexels.com/es-es/foto/perro-mascota-fotografia-de-animales-collar-16621924/  |  consulta: "mixed breed dog"
+mos2-01.jpg  <-  pozo-p-ke-collar\001.jpg  |  pexels (Pexels License)  |  autor: Gaston Acosta  |  https://www.pexels.com/es-es/foto/blanco-y-negro-animal-perro-mascota-27585420/  |  consulta: "dog red collar"
+mos3-01.jpg  <-  pozo-p-ke-calle\004.jpg  |  pexels (Pexels License)  |  autor: Can Camgöz  |  https://www.pexels.com/es-es/foto/calle-perro-mascota-urbano-20116559/  |  consulta: "stray dog street"
+mos4-01.jpg  <-  pozo-p-ke-calle\010.jpg  |  pexels (Pexels License)  |  autor: Christopher Welsch Leveroni  |  https://www.pexels.com/es-es/foto/perro-callejero-blanco-y-negro-en-una-calle-urbana-34786591/  |  consulta: "stray dog street"
+mos5-01.jpg  <-  pozo-p-ke-kiltro\012.jpg  |  pexels (Pexels License)  |  autor: Michał Robak  |  https://www.pexels.com/es-es/foto/madera-bosque-arboles-animal-19651882/  |  consulta: "mixed breed dog"
+mos6-01.jpg  <-  pozo-p-ke-kiltro\010.jpg  |  pexels (Pexels License)  |  autor: Leonardo Merlo  |  https://www.pexels.com/es-es/foto/mar-playa-arena-agua-20686039/  |  consulta: "mixed breed dog"
+
+BRUMA (bruma-pag-0N.png y bruma-osc-0N.png, 30x20): las MISMAS fotos, recortadas a 3:2, reducidas y
+recoloreadas con C:\devs\demos\hacer-bruma.ps1 (clara >= 0,68 de luminancia / oscura <= 0,05). No suman fuentes.
+    pagina: port-01.jpg, banda-01.jpg, hund1-01.jpg, mos3-01.jpg, hund5-01.jpg   |   oscuras: port-01.jpg, banda-01.jpg, hund6-01.jpg
+
+MAPA: iframe de Google Maps (embed publico, sin clave). No hay imagen de mapa.

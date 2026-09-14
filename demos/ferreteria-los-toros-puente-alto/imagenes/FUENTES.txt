@@ -1,0 +1,22 @@
+FUENTES DE LAS IMAGENES - FerreterÃ­a Los Toros Rehecha el 13-09-2026 (presentacion antes que texto). Fotos de REFERENCIA de bancos libres: ninguna es del local; las verdaderas las tiene que mandar el negocio. 
+port-01.jpg  <-  pozo-p-lt-oxido\006.jpg  |  pexels (Pexels License)  |  autor: Alfo Medeiros  |  https://www.pexels.com/es-es/foto/herramientas-caja-oxidado-caja-de-instrumento-21470305/  |  consulta: "rusty tools"
+hund1-01.jpg  <-  pozo-p-lt-ladrillos\005.jpg  |  pexels (Pexels License)  |  autor: Shantum Singh  |  https://www.pexels.com/es-es/foto/pared-muro-apilar-pila-20204115/  |  consulta: "bricks stack"
+hund2-01.jpg  <-  pozo-p-lt-ladrillos\007.jpg  |  pexels (Pexels License)  |  autor: Peter Dyllong  |  https://www.pexels.com/es-es/foto/pila-de-bloques-de-hormigon-en-entorno-exterior-36519003/  |  consulta: "bricks stack"
+hund3-01.jpg  <-  pozo-p-lt-pintor\009.jpg  |  pexels (Pexels License)  |  autor: Tima Miroshnichenko  |  https://www.pexels.com/es-es/foto/blanco-y-negro-hombre-persona-pared-6474462/  |  consulta: "house painter"
+hund4-01.jpg  <-  pozo-p-lt-llaves\002.jpg  |  pexels (Pexels License)  |  autor: halilibrahimxq  |  https://www.pexels.com/es-es/foto/pared-muro-llaves-tienda-18101862/  |  consulta: "key duplication"
+hund5-01.jpg  <-  pozo-p-lt-oxido\002.jpg  |  pexels (Pexels License)  |  autor: Miguel Á. Padriñán  |  https://www.pexels.com/es-es/foto/blanco-y-negro-pared-muro-herramientas-16679581/  |  consulta: "rusty tools"
+hund6-01.jpg  <-  pozo-p-lt-carpintero\005.jpg  |  pexels (Pexels License)  |  autor: Ron Lach  |  https://www.pexels.com/es-es/foto/hombre-trabajando-sujetando-carpintero-8817851/  |  consulta: "carpenter"
+banda-01.jpg  <-  pozo-p-lt-soldador\010.jpg  |  pexels (Pexels License)  |  autor: Yassir Abbas  |  https://www.pexels.com/es-es/foto/volador-amarillo-calor-espumoso-17245900/  |  consulta: "welder sparks"
+cita-01.jpg  <-  pozo-p-lt-oxido\012.jpg  |  pexels (Pexels License)  |  autor: Pixabay  |  https://www.pexels.com/es-es/foto/herramientas-de-metal-negro-colgadas-en-un-estante-junto-a-la-mesa-162631/  |  consulta: "rusty tools"
+mos1-01.jpg  <-  pozo-p-lt-oxido\005.jpg  |  pexels (Pexels License)  |  autor: Miguel Á. Padriñán  |  https://www.pexels.com/es-es/foto/blanco-y-negro-pared-muro-estante-16679588/  |  consulta: "rusty tools"
+mos2-01.jpg  <-  pozo-p-lt-ladrillos\010.jpg  |  pexels (Pexels License)  |  autor: Rizky Adhi  |  https://www.pexels.com/es-es/foto/pila-de-ladrillos-rojos-en-una-obra-de-construccion-33973793/  |  consulta: "bricks stack"
+mos3-01.jpg  <-  pozo-p-lt-jardinero\003.jpg  |  pexels (Pexels License)  |  autor: cottonbro studio  |  https://www.pexels.com/es-es/foto/naturaleza-jardin-plantas-fresco-4503269/  |  consulta: "gardener tools"
+mos4-01.jpg  <-  pozo-p-lt-oxido\011.jpg  |  pexels (Pexels License)  |  autor: Miguel Á. Padriñán  |  https://www.pexels.com/es-es/foto/negro-herramienta-industrial-maquinaria-16679645/  |  consulta: "rusty tools"
+mos5-01.jpg  <-  pozo-p-lt-soldador\012.jpg  |  pexels (Pexels License)  |  autor: cottonbro studio  |  https://www.pexels.com/es-es/foto/brillante-chispas-fondo-de-pantalla-texturas-9665355/  |  consulta: "welder sparks"
+mos6-01.jpg  <-  pozo-p-lt-ladrillos\012.jpg  |  pexels (Pexels License)  |  autor: Steve A Johnson  |  https://www.pexels.com/es-es/foto/pared-muro-cemento-paredes-17940311/  |  consulta: "bricks stack"
+
+BRUMA (bruma-pag-0N.png y bruma-osc-0N.png, 30x20): las MISMAS fotos, recortadas a 3:2, reducidas y
+recoloreadas con C:\devs\demos\hacer-bruma.ps1 (clara >= 0,68 de luminancia / oscura <= 0,05). No suman fuentes.
+    pagina: port-01.jpg, hund1-01.jpg, mos2-01.jpg, cita-01.jpg, mos3-01.jpg   |   oscuras: port-01.jpg, banda-01.jpg, cita-01.jpg
+
+MAPA: iframe de Google Maps (embed publico, sin clave). No hay imagen de mapa.

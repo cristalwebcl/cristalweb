@@ -1,0 +1,22 @@
+FUENTES DE LAS IMAGENES - La Mesa del Sur Rehecha el 13-09-2026 (presentacion antes que texto). Fotos de REFERENCIA de bancos libres: ninguna es del local; las verdaderas las tiene que mandar el negocio. 
+port-01.jpg  <-  pozo-p-mes-mesa\008.jpg  |  pexels (Pexels License)  |  autor: Дмитрий Зайцев  |  https://www.pexels.com/es-es/foto/pan-comida-restaurante-mesa-12281239/  |  consulta: "restaurant table setting wood"
+hund1-01.jpg  <-  pozo-p-mes-cazuela\004.jpg  |  pexels (Pexels License)  |  autor: Oriana Fotos  |  https://www.pexels.com/es-es/foto/sano-comida-maiz-bol-5268849/  |  consulta: "beef soup corn pumpkin"
+hund2-01.jpg  <-  pozo-p-mes-aji\008.jpg  |  pexels (Pexels License)  |  autor: Change C.C  |  https://www.pexels.com/es-es/foto/delicioso-curry-japones-y-arroz-en-una-bandeja-30700760/  |  consulta: "chicken curry cream rice"
+hund3-01.jpg  <-  pozo-p-mes-empanada\003.jpg  |  pexels (Pexels License)  |  autor: Daniel Torobekov  |  https://www.pexels.com/es-es/foto/comida-delicioso-sabroso-nam-13689919/  |  consulta: "baked empanadas"
+hund4-01.jpg  <-  pozo-p-mes-stroganoff\008.jpg  |  pexels (Pexels License)  |  autor: Zhang Thomas  |  https://www.pexels.com/es-es/foto/deliciosa-tagliatelle-de-carne-con-hierbas-frescas-33944954/  |  consulta: "beef stroganoff"
+hund5-01.jpg  <-  pozo-p-mes-asado\004.jpg  |  pexels (Pexels License)  |  autor: Sergej  *****  |  https://www.pexels.com/es-es/foto/patatas-asadas-y-carne-con-eneldo-fresco-35459472/  |  consulta: "roast pork potatoes"
+hund6-01.jpg  <-  pozo-p-mes-aji\011.jpg  |  pexels (Pexels License)  |  autor: Piotr Arnoldes  |  https://www.pexels.com/es-es/foto/comida-arroz-vista-superior-cocinado-7111537/  |  consulta: "chicken curry cream rice"
+banda-01.jpg  <-  pozo-p-mes-olla\012.png  |  pexels (Pexels License)  |  autor: TapeWorm  |  https://www.pexels.com/es-es/foto/desayuno-cocina-interior-hecho-en-casa-27569266/  |  consulta: "soup pot kitchen"
+cita-01.jpg  <-  pozo-p-mes-mesa\010.jpg  |  pexels (Pexels License)  |  autor: Дмитрий Зайцев  |  https://www.pexels.com/es-es/foto/comida-tabla-de-cortar-vasos-gafas-12281236/  |  consulta: "restaurant table setting wood"
+mos1-01.jpg  <-  pozo-p-mes-choclo\006.jpg  |  pexels (Pexels License)  |  autor: Mari M  |  https://www.pexels.com/es-es/foto/maiz-fresco-cereales-fotografia-de-comida-17605799/  |  consulta: "corn cob"
+mos2-01.jpg  <-  pozo-p-mes-mesa\009.jpg  |  pexels (Pexels License)  |  autor: Yg pixel  |  https://www.pexels.com/es-es/foto/mesa-elegante-en-cafe-de-dar-es-salaam-36342435/  |  consulta: "restaurant table setting wood"
+mos3-01.jpg  <-  pozo-p-mes-cazuela\012.jpg  |  pexels (Pexels License)  |  autor: Change C.C  |  https://www.pexels.com/es-es/foto/comida-amarillo-verdura-vegetal-24246188/  |  consulta: "beef soup corn pumpkin"
+mos4-01.jpg  <-  pozo-p-mes-empanada\009.jpg  |  pexels (Pexels License)  |  autor: Christopher Welsch Leveroni  |  https://www.pexels.com/es-es/foto/deliciosas-empanadas-peruanas-con-aceitunas-y-pasas-37306572/  |  consulta: "baked empanadas"
+mos5-01.jpg  <-  pozo-p-mes-choclo\007.jpg  |  pexels (Pexels License)  |  autor: mackling  |  https://www.pexels.com/es-es/foto/mazorcas-de-maiz-amarillo-fresco-sobre-fondo-blanco-38519270/  |  consulta: "corn cob"
+mos6-01.jpg  <-  pozo-p-mes-mesa\006.jpg  |  pexels (Pexels License)  |  autor: Valeria Boltneva  |  https://www.pexels.com/es-es/foto/casas-casa-mesas-habitacion-20182285/  |  consulta: "restaurant table setting wood"
+
+BRUMA (bruma-pag-0N.png y bruma-osc-0N.png, 30x20): las MISMAS fotos, recortadas a 3:2, reducidas y
+recoloreadas con C:\devs\demos\hacer-bruma.ps1 (clara >= 0,68 de luminancia / oscura <= 0,05). No suman fuentes.
+    pagina: port-01.jpg, banda-01.jpg, cita-01.jpg, hund1-01.jpg, hund3-01.jpg, hund5-01.jpg, mos1-01.jpg, mos4-01.jpg   |   oscuras: port-01.jpg, cita-01.jpg, banda-01.jpg
+
+MAPA: iframe de Google Maps (embed publico, sin clave). No hay imagen de mapa.

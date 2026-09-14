@@ -712,3 +712,24 @@ h1 em {
 @media (prefers-reduced-motion: reduce) {
   .js .mos__p { opacity: 1; transform: none; }
 }
+
+/* ── MAPA DE UBICACIÓN ──────────────────────────────────────────────
+   La figura estaba en el HTML desde una pasada anterior pero sin una
+   sola regla de CSS: la imagen salía a tamaño natural y el pie sin
+   forma. Esto lo encuadra.
+   Imagen propia con mosaicos de OpenStreetMap: la CSP prohíbe pedir
+   nada a un tercero y un iframe de Google Maps quedaría en blanco sin
+   dar un solo error. La atribución a OSM la exige su licencia (ODbL). */
+.mapa { margin: 0; border: 1px solid var(--lino); border-radius: 10px; overflow: hidden; background: var(--papel); }
+.mapa img { display: block; width: 100%; height: auto; aspect-ratio: 16 / 10; object-fit: cover; }
+.mapa__pie {
+  display: flex; flex-wrap: wrap; align-items: center; gap: .4rem 1rem;
+  padding: .7rem .9rem;
+  font-size: var(--p--1, .86rem); line-height: 1.45;
+  color: var(--gris); border-top: 1px solid var(--lino);
+}
+.mapa__ir { color: var(--azul); font-weight: 700; text-decoration: none; min-height: 44px; display: inline-flex; align-items: center; }
+.mapa__ir:hover, .mapa__ir:focus-visible { text-decoration: underline; }
+.mapa__cred { font-size: .86em; opacity: .85; }
+.mapa__cred a { color: var(--gris); }
+.mapa__nota { margin: .7rem 0 0; font-size: var(--p--1, .86rem); color: var(--gris); }

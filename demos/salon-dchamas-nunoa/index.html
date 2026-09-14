@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="es-CL" class="no-js">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self'; img-src 'self' data:; font-src 'self'; connect-src 'self'; media-src 'self'; form-action 'self'; base-uri 'none'; frame-src 'none'; object-src 'none'">
+<meta name="robots" content="noindex, nofollow">
+<title>Salón Dchamas — manos, pies y cejas en Ñuñoa</title>
+<meta name="description" content="Salón de manos y pies en Ñuñoa: tres locales, qué se hace en cada uno y cómo reservar sin adivinar en cuál de las tres agendas está la hora.">
+<link rel="preload" href="assets/fuentes/gluten-var-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="assets/fuentes.css">
+<link rel="stylesheet" href="css/estilo.css">
+<script src="js/rescate.js"></script>
+</head>
+<body>
+
+<!-- ═══════════ BANDA DE PROPUESTA ═══════════ -->
+<aside class="propuesta" aria-label="Aviso de propuesta">
+  <div class="ancho propuesta__in">
+    <p class="propuesta__q">Propuesta de sitio web — preparada para <b>Salón Dchamas</b> por CristalWeb</p>
+    <p class="propuesta__d">
+      Tres locales y <b>tres sistemas de reserva distintos</b> —Fresha, AgendaPro y Setmore—,
+      ninguno con su nombre. Su usuario de Instagram se llama <span class="dato">dchamas.cl</span>,
+      pero ese dominio ni siquiera está registrado: comprobado el 11-09-2026. Once mil seguidores
+      repartidos entre tres agendas ajenas.
+    </p>
+  </div>
+</aside>
+
+<!-- ═══════════ CABECERA ═══════════ -->
+<header class="cab" id="cab">
+  <div class="ancho cab__in">
+    <a class="cab__marca" href="#portada">
+      <span class="marca__gotas" aria-hidden="true">
+        <span></span><span></span><span></span><span></span><span></span>
+      </span>
+      <span class="cab__txt">Dchamas<span class="cab__sub">Manos, pies y cejas · Ñuñoa</span></span>
+    </a>
+    <nav class="cab__nav" aria-label="Secciones">
+      <a href="#elegir">Elige en tres pasos</a>
+      <a href="#locales">Los tres locales</a>
+      <a href="#reservar">Reservar</a>
+      <a class="cab__tel" href="https://wa.me/56983399595" target="_blank" rel="noopener noreferrer">9 8339 9595</a>
+    </nav>
+  </div>
+</header>
+
+<!-- ═══════════ PORTADA ═══════════ -->
+<section class="portada" id="portada" aria-labelledby="t-portada">
+  <div class="ancho portada__in">
+    <div class="portada__txt">
+      <p class="rotulo">Ñuñoa · tres locales</p>
+      <h1 class="portada__h1" id="t-portada">
+        Elige el color<br>
+        <span class="portada__h1-b">antes de sentarte.</span>
+      </h1>
+      <p class="portada__bajada">
+        Forma, largo y color se deciden en dos minutos y se llega con la idea lista. Acá están las
+        tres cosas que hay que elegir, y en cuál de los tres locales queda la hora.
+      </p>
+      <p class="portada__acc">
+        <a class="boton" href="#elegir">Elegir ahora</a>
+        <a class="boton boton--linea" href="#reservar">Ver dónde reservar</a>
+      </p>
+      <dl class="specs">
+        <div><dt>Locales</dt><dd>3</dd></div>
+        <div><dt>Seguidores en Instagram</dt><dd>11.000</dd></div>
+        <div><dt>Dominio propio</dt><dd>0</dd></div>
+      </dl>
+    </div>
+
+    <!-- ESCENA: los frascos que se llenan. Cinco frascos en fila; cada uno
+         se llena de su color desde abajo (un rect interior con scaleY de
+         0 a 1 y el origen ABAJO) y al llenarse le baja la tapa. 120 ms
+         entre uno y otro. Pasa una vez y quedan llenos. Sin reposo.
+         Con reduced-motion, los cinco llenos de entrada. -->
+    <div class="escena" aria-hidden="true">
+      <svg viewBox="0 0 280 180" class="escena__svg" role="presentation" focusable="false">
+        <g class="fr fr--1">
+          <rect class="fr-tapa" x="14" y="18" width="24" height="26" rx="3"/>
+          <rect class="fr-vidrio" x="8" y="52" width="36" height="98" rx="5"/>
+          <rect class="fr-liq fr-liq--1" x="12" y="56" width="28" height="90" rx="3"/>
+        </g>
+        <g class="fr fr--2">
+          <rect class="fr-tapa" x="70" y="18" width="24" height="26" rx="3"/>
+          <rect class="fr-vidrio" x="64" y="52" width="36" height="98" rx="5"/>
+          <rect class="fr-liq fr-liq--2" x="68" y="56" width="28" height="90" rx="3"/>
+        </g>
+        <g class="fr fr--3">
+          <rect class="fr-tapa" x="126" y="18" width="24" height="26" rx="3"/>
+          <rect class="fr-vidrio" x="120" y="52" width="36" height="98" rx="5"/>
+          <rect class="fr-liq fr-liq--3" x="124" y="56" width="28" height="90" rx="3"/>
+        </g>
+        <g class="fr fr--4">
+          <rect class="fr-tapa" x="182" y="18" width="24" height="26" rx="3"/>
+          <rect class="fr-vidrio" x="176" y="52" width="36" height="98" rx="5"/>
+          <rect class="fr-liq fr-liq--4" x="180" y="56" width="28" height="90" rx="3"/>
+        </g>
+        <g class="fr fr--5">
+          <rect class="fr-tapa" x="238" y="18" width="24" height="26" rx="3"/>
+          <rect class="fr-vidrio" x="232" y="52" width="36" height="98" rx="5"/>
+          <rect class="fr-liq fr-liq--5" x="236" y="56" width="28" height="90" rx="3"/>
+        </g>
+        <rect class="fr-mesa" x="0" y="150" width="280" height="4" rx="2"/>
+      </svg>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════ FRANJA ═══════════ -->
+<figure class="tajo" aria-label="Esmaltes">
+  <img src="imagenes/tajo-01.jpg" width="2200" height="943" fetchpriority="high" decoding="async"
+       alt="Un frasco de esmalte rojo abierto sobre una superficie blanca.">
+</figure>
+
+<!-- ═══════════ CIFRAS ═══════════ -->
+<section class="cifras" aria-label="Las cifras">
+  <div class="ancho cifras__grid">
+    <div class="cifra">
+      <p class="cifra__n">11.000</p>
+      <p class="cifra__t">seguidores en Instagram el 11-09-2026, con casi dos mil publicaciones. Ese público ya existe</p>
+    </div>
+    <div class="cifra">
+      <p class="cifra__n">3</p>
+      <p class="cifra__t">sistemas de reserva distintos funcionando a la vez: Fresha, AgendaPro y Setmore</p>
+    </div>
+    <div class="cifra">
+      <p class="cifra__n">3</p>
+      <p class="cifra__t">locales, dos en el Caracol y uno en Irarrázaval, y ninguna página los muestra juntos</p>
+    </div>
+    <div class="cifra cifra--cero">
+      <p class="cifra__n">0</p>
+      <p class="cifra__t">dominios propios. Su Instagram se llama «dchamas.cl» y ese dominio está libre</p>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════ PIEZA FIRMA: ELIGE EN TRES PASOS ═══════════ -->
+<!-- Los tres pasos son RADIO BUTTONS, no JavaScript: con :checked el CSS
+     cambia la mano dibujada. Así funciona con el JS apagado, se recorre
+     con el teclado y el lector de pantalla lo anuncia como lo que es. -->
+<section class="elegir" id="elegir" aria-labelledby="t-elegir">
+  <div class="ancho">
+    <p class="rotulo">La pregunta de la silla</p>
+    <h2 class="titulo" id="t-elegir">¿Qué me hago?</h2>
+    <p class="entradilla">
+      Tres decisiones y ya está: la forma, el largo y el color. Elíjalas acá, mire cómo queda, y
+      llegue con la idea hecha en vez de decidirla con la mano ya en remojo.
+    </p>
+
+    <div class="tres">
+      <input type="radio" name="forma" id="f-cuad" class="op" checked>
+      <input type="radio" name="forma" id="f-alme" class="op">
+      <input type="radio" name="forma" id="f-oval" class="op">
+      <input type="radio" name="largo" id="l-corto" class="op" checked>
+      <input type="radio" name="largo" id="l-medio" class="op">
+      <input type="radio" name="largo" id="l-largo" class="op">
+      <input type="radio" name="color" id="c-1" class="op" checked>
+      <input type="radio" name="color" id="c-2" class="op">
+      <input type="radio" name="color" id="c-3" class="op">
+      <input type="radio" name="color" id="c-4" class="op">
+      <input type="radio" name="color" id="c-5" class="op">
+
+      <div class="tres__ctrl">
+        <div class="paso">
+          <p class="paso__t"><span class="paso__n">01</span> La forma</p>
+          <div class="paso__ops">
+            <label for="f-cuad">Cuadrada</label>
+            <label for="f-alme">Almendra</label>
+            <label for="f-oval">Ovalada</label>
+          </div>
+        </div>
+
+        <div class="paso">
+          <p class="paso__t"><span class="paso__n">02</span> El largo</p>
+          <div class="paso__ops">
+            <label for="l-corto">Corto</label>
+            <label for="l-medio">Medio</label>
+            <label for="l-largo">Largo</label>
+          </div>
+        </div>
+
+        <div class="paso">
+          <p class="paso__t"><span class="paso__n">03</span> El color</p>
+          <div class="paso__ops paso__ops--color">
+            <label class="sw sw--1" for="c-1"><span>Rojo</span></label>
+            <label class="sw sw--2" for="c-2"><span>Nude</span></label>
+            <label class="sw sw--3" for="c-3"><span>Vino</span></label>
+            <label class="sw sw--4" for="c-4"><span>Fucsia</span></label>
+            <label class="sw sw--5" for="c-5"><span>Tinta</span></label>
+          </div>
+          <p class="paso__n2 ej" data-ejemplo="la carta real la tiene el salón">Cinco de ejemplo; la carta completa está en el local</p>
+        </div>
+      </div>
+
+      <!-- La mano: dibujo propio, sin librería y sin imagen. Las uñas
+           cambian de forma con border-radius, de largo con la altura y
+           de color con el relleno; todo desde las clases que enciende
+           el :checked de los radios. -->
+      <div class="mano">
+        <svg viewBox="0 0 300 300" class="mano__svg" role="img" aria-labelledby="t-mano">
+          <title id="t-mano">Una mano dibujada que muestra la forma, el largo y el color de uña elegidos.</title>
+          <path class="mn-palma" d="M84 300 C74 244 70 214 74 186 C78 156 96 140 118 140 L196 140 C222 140 238 158 238 186 C238 222 232 262 224 300 Z"/>
+          <g class="mn-dedos">
+            <rect class="mn-dedo" x="96" y="96" width="30" height="70" rx="15"/>
+            <rect class="mn-dedo" x="134" y="80" width="30" height="86" rx="15"/>
+            <rect class="mn-dedo" x="172" y="92" width="30" height="74" rx="15"/>
+            <rect class="mn-dedo" x="210" y="114" width="28" height="56" rx="14"/>
+          </g>
+          <g class="mn-unas">
+            <rect class="mn-una mn-una--1" x="101" y="94" width="20" height="18"/>
+            <rect class="mn-una mn-una--2" x="139" y="78" width="20" height="18"/>
+            <rect class="mn-una mn-una--3" x="177" y="90" width="20" height="18"/>
+            <rect class="mn-una mn-una--4" x="215" y="112" width="18" height="18"/>
+          </g>
+          <rect class="mn-pulgar" x="46" y="168" width="30" height="66" rx="15"/>
+          <rect class="mn-una mn-una--5" x="51" y="166" width="20" height="18"/>
+        </svg>
+        <p class="mano__pie">Dibujo nuestro para elegir. No es una foto de un trabajo del salón.</p>
+      </div>
+    </div>
+
+    <p class="mini">
+      Elegir acá no reserva nada: es para llegar con la idea clara. La hora se pide en la agenda
+      del local que le quede más cerca, y las tres están más abajo. <b>No hay precios</b>: los
+      publica cada agenda y cambian.
+    </p>
+  </div>
+</section>
+
+<!-- ═══════════ LOS TRES LOCALES ═══════════ -->
+<section class="locales" id="locales" aria-labelledby="t-locales">
+  <div class="ancho">
+    <p class="rotulo">Dónde queda cada uno</p>
+    <h2 class="titulo titulo--chico" id="t-locales">Tres locales, tres agendas.</h2>
+    <p class="entradilla">
+      Los tres son suyos y los tres reservan por sistemas distintos. Esta es la única lista donde
+      están juntos: los datos salen de sus propias fichas públicas, leídas el 11-09-2026.
+    </p>
+    <div class="loc__grid">
+      <article class="loc">
+        <p class="loc__n">Caracol Ñuñoa · local 10B</p>
+        <p class="loc__d">Av. Pedro de Valdivia 3462, Ñuñoa</p>
+        <p class="loc__a">Reserva por <b>Setmore</b></p>
+        <a class="boton boton--chico" href="https://dchamasl10b.setmore.com/" target="_blank" rel="noopener noreferrer">Ver su agenda</a>
+      </article>
+      <article class="loc">
+        <p class="loc__n">Caracol Ñuñoa · local 45A</p>
+        <p class="loc__d">Av. Pedro de Valdivia 3462, Ñuñoa</p>
+        <p class="loc__a">Reserva por <b>Setmore</b></p>
+        <a class="boton boton--chico" href="https://dchamasl45a.setmore.com/" target="_blank" rel="noopener noreferrer">Ver su agenda</a>
+      </article>
+      <article class="loc">
+        <p class="loc__n">Irarrázaval · local 5</p>
+        <p class="loc__d">Av. Irarrázaval 1970, Ñuñoa</p>
+        <p class="loc__a">Reserva por <b>Fresha</b> y <b>AgendaPro</b></p>
+        <a class="boton boton--chico" href="https://www.fresha.com/providers/dchamas-q8hwawrh?allOffer=true&amp;menu=true" target="_blank" rel="noopener noreferrer">Ver su agenda</a>
+      </article>
+    </div>
+    <dl class="datos datos--ancho">
+      <div><dt>Lunes a viernes</dt><dd>10:00 — 19:00</dd></div>
+      <div><dt>Sábado</dt><dd>10:00 — 16:00</dd></div>
+      <div><dt>Domingo</dt><dd>cerrado</dd></div>
+    </dl>
+    <p class="mini">
+      El horario sale de sus fichas de Fresha, escritas por ellos mismos. <b>Lo que no pudimos
+      confirmar es qué teléfono corresponde a qué local</b>: Fresha publica un número distinto del
+      que aparece en su ficha de Google, y no vamos a adivinar cuál va en cuál.
+    </p>
+  </div>
+</section>
+
+<!-- ═══════════ DEPILACIÓN ═══════════ -->
+<section class="depil" id="depilacion" aria-labelledby="t-depil">
+  <div class="ancho">
+    <p class="rotulo">Lo otro que hacen</p>
+    <h2 class="titulo titulo--chico" id="t-depil">Cejas, pestañas y depilación.</h2>
+    <p class="entradilla">
+      No es sólo manos y pies. Esto es lo que toma cada cosa, para calzar la hora con el resto del
+      día.
+    </p>
+    <ul class="zonas">
+      <li class="zona"><b>Diseño de cejas</b><span class="ej" data-ejemplo="lo confirma el salón">20 minutos</span></li>
+      <li class="zona"><b>Pestañas</b><span class="ej" data-ejemplo="lo confirma el salón">90 minutos</span></li>
+      <li class="zona"><b>Manicure</b><span class="ej" data-ejemplo="lo confirma el salón">45 minutos</span></li>
+      <li class="zona"><b>Pedicure</b><span class="ej" data-ejemplo="lo confirma el salón">60 minutos</span></li>
+      <li class="zona"><b>Axilas</b><span class="ej" data-ejemplo="lo confirma el salón">15 minutos</span></li>
+      <li class="zona"><b>Media pierna</b><span class="ej" data-ejemplo="lo confirma el salón">30 minutos</span></li>
+      <li class="zona"><b>Pierna completa</b><span class="ej" data-ejemplo="lo confirma el salón">45 minutos</span></li>
+      <li class="zona"><b>Rostro</b><span class="ej" data-ejemplo="lo confirma el salón">20 minutos</span></li>
+    </ul>
+    <p class="mini">
+      Los servicios son los que ellos publican en sus agendas; <b>las duraciones las pusimos
+      nosotros</b> como referencia del oficio y van marcadas con línea punteada. Sin precios.
+    </p>
+  </div>
+</section>
+
+<!-- ═══════════ EL SALÓN (mitades) ═══════════ -->
+<section class="mitades" id="salon" aria-labelledby="t-salon">
+  <figure class="mitades__foto">
+    <img src="imagenes/mit-01.jpg" width="1600" height="2000" loading="lazy" decoding="async"
+         alt="Manos con las uñas recién pintadas de rojo, apoyadas sobre una toalla blanca.">
+  </figure>
+  <div class="mitades__texto">
+    <p class="rotulo">Once mil siguiendo</p>
+    <h2 class="titulo titulo--chico" id="t-salon">El público ya está. Falta dónde aterrizar.</h2>
+    <p>
+      Once mil personas siguen su Instagram y casi dos mil publicaciones muestran el trabajo. Lo
+      que no hay es un lugar propio adonde mandarlas: hoy el enlace de la biografía tiene que
+      elegir entre tres agendas, y la que no corresponde manda a la clienta al local equivocado.
+    </p>
+    <div class="equipo__huecos">
+      <div class="hueco"><span class="hueco__m" aria-hidden="true"></span><p class="ej" data-ejemplo="lo completa el salón">Quién atiende · en qué local</p></div>
+      <div class="hueco"><span class="hueco__m" aria-hidden="true"></span><p class="ej" data-ejemplo="lo completa el salón">Quién atiende · en qué local</p></div>
+      <div class="hueco"><span class="hueco__m" aria-hidden="true"></span><p class="ej" data-ejemplo="lo completa el salón">Quién atiende · en qué local</p></div>
+    </div>
+    <p class="mini">
+      No inventamos nombres ni ponemos retratos de banco: los huecos quedan marcados para que se
+      vea qué falta.
+    </p>
+  </div>
+</section>
+
+<!-- ═══════════ CITA ═══════════ -->
+<figure class="cita" aria-label="Sobre las agendas">
+  <img src="imagenes/cita-01.jpg" width="2200" height="1238" loading="lazy" decoding="async" alt="">
+  <blockquote class="cita__q">
+    <p>«Su Instagram se llama dchamas.cl.<br>
+      Ese dominio está libre y cuesta lo que una manicure.»</p>
+  </blockquote>
+</figure>
+
+<!-- ═══════════ RESERVAR ═══════════ -->
+<section class="reservar con-telon" id="reservar" aria-labelledby="t-reservar">
+  <div class="telon" aria-hidden="true">
+    <img src="imagenes/telon-01.jpg" width="1200" height="800" loading="lazy" decoding="async" alt="">
+  </div>
+  <div class="ancho">
+    <p class="rotulo rotulo--claro">Lo que pasa hoy</p>
+    <h2 class="titulo titulo--claro" id="t-reservar">Tres agendas y ninguna dice Dchamas.</h2>
+    <ol class="pasos">
+      <li><b>Fresha</b> para uno de los locales, con la ficha escrita por ellos y sus reseñas adentro.</li>
+      <li><b>Setmore</b> para los dos del Caracol, con una dirección distinta cada uno.</li>
+      <li><b>AgendaPro</b> con una ficha más, en el mismo buscador donde están los otros salones de la comuna.</li>
+    </ol>
+    <p class="mini mini--claro">
+      Los tres funcionan y conviene dejarlos: ahí están las horas de verdad. Lo que falta es lo de
+      arriba —una página con su nombre que reciba a los once mil y los mande a la agenda del local
+      correcto—. <b>Esta página no reemplaza ninguna de las tres</b>: las ordena.
+    </p>
+  </div>
+</section>
+
+<!-- ═══════════ MOSAICO ═══════════ -->
+<section class="mos" aria-label="El trabajo">
+  <div class="mos__grilla">
+    <figure class="mos__p"><img src="imagenes/mos1-01.jpg" width="1200" height="1600" loading="lazy" decoding="async" alt="Manos trabajando sobre una mesa de manicure con los frascos abiertos."></figure>
+    <figure class="mos__p"><img src="imagenes/mos2-01.jpg" width="1200" height="1600" loading="lazy" decoding="async" alt="Pincel aplicando esmalte sobre una uña, en primer plano."></figure>
+    <figure class="mos__p"><img src="imagenes/mos3-01.jpg" width="1200" height="1600" loading="lazy" decoding="async" alt="Trabajo de decoración sobre las uñas, con guantes."></figure>
+    <figure class="mos__p"><img src="imagenes/mos4-01.jpg" width="1200" height="1600" loading="lazy" decoding="async" alt="Muchos frascos de esmalte juntos, ordenados por color."></figure>
+    <figure class="mos__p"><img src="imagenes/mos5-01.jpg" width="1200" height="1600" loading="lazy" decoding="async" alt="Puesto de manicure con la lámpara y las herramientas ordenadas."></figure>
+    <figure class="mos__p"><img src="imagenes/mos6-01.jpg" width="1200" height="1600" loading="lazy" decoding="async" alt="Una mano bajo la lámpara de curado."></figure>
+  </div>
+  <p class="mos__pie ancho">
+    Estas fotos son de bancos de uso libre y <b>no son de Dchamas</b>. Están para que se vea de qué
+    habla la página. Las de verdad las tienen ellos: casi dos mil publicaciones de trabajos
+    terminados están en su Instagram.
+  </p>
+</section>
+
+<!-- ═══════════ CONTACTO ═══════════ -->
+<section class="contacto" id="contacto" aria-labelledby="t-contacto">
+  <div class="ancho contacto__cols">
+    <div>
+      <p class="rotulo">Escribir</p>
+      <h2 class="titulo" id="t-contacto">Qué se quiere hacer.</h2>
+      <p class="entradilla">
+        Con la forma, el largo y el color elegidos alcanza. El número es el de su ficha de Google y
+        es celular, así que recibe WhatsApp.
+      </p>
+      <p class="contacto__num"><a href="https://wa.me/56983399595" target="_blank" rel="noopener noreferrer">+56 9 8339 9595</a></p>
+      <p class="contacto__ig">
+        <a href="https://www.instagram.com/dchamas.cl/" target="_blank" rel="noopener noreferrer">@dchamas.cl</a> — 11.000 seguidores
+      </p>
+    </div>
+    <dl class="datos">
+      <div><dt>Teléfono</dt><dd><a href="tel:+56983399595">9 8339 9595</a></dd></div>
+      <div><dt>Comuna</dt><dd>Ñuñoa</dd></div>
+      <div><dt>Locales</dt><dd>Caracol 10B y 45A · Irarrázaval 1970</dd></div>
+      <div><dt>Lunes a viernes</dt><dd>10:00 — 19:00</dd></div>
+      <div><dt>Sábado</dt><dd>10:00 — 16:00</dd></div>
+      <div><dt>Sitio propio</dt><dd>no tiene: tres agendas de terceros</dd></div>
+    </dl>
+  </div>
+      <figure class="mapa">
+        <img src="imagenes/mapa-01.jpg" width="768" height="768" loading="lazy" decoding="async"
+             alt="Mapa de Avenida Pedro de Valdivia 3462, Ñuñoa.">
+        <figcaption class="mapa__pie">
+          <span><b>Avenida Pedro de Valdivia 3462, Ñuñoa</b> — el Caracol, donde están dos de los tres locales. El tercero queda en Irarrázaval 1970.</span>
+          <span class="mapa__cred">Mapa: &copy; <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener">OpenStreetMap</a></span>
+        </figcaption>
+      </figure>
+</section>
+
+<!-- ═══════════ PARA EL DUEÑO ═══════════ -->
+<section class="dueno" aria-labelledby="t-dueno">
+  <div class="ancho">
+    <p class="rotulo rotulo--claro">Para el dueño</p>
+    <h2 class="titulo titulo--claro" id="t-dueno">Qué es esto y qué no.</h2>
+    <div class="dueno__cols">
+      <div>
+        <h3>Qué es</h3>
+        <p>Una propuesta de sitio web hecha por nuestra cuenta. Dchamas no la encargó ni la ha
+          revisado. Las tres direcciones, el horario y los servicios los leímos el 11-09-2026 en
+          sus propias fichas públicas de Fresha, Setmore y AgendaPro.</p>
+      </div>
+      <div>
+        <h3>Lo del dominio</h3>
+        <p>Su cuenta de Instagram se llama <b>dchamas.cl</b>. Probamos ese dominio y
+          <b>no está registrado</b>: NIC Chile responde que no existe. O sea, el nombre que ya usan
+          todos los días está libre y cuesta menos que una hora de trabajo.</p>
+      </div>
+      <div>
+        <h3>Qué es ejemplo</h3>
+        <p>Los cinco colores de la carta y las duraciones de cada servicio. Van con línea punteada.
+          <b>No hay precios a propósito</b>, y no pusimos qué teléfono va en qué local porque los
+          dos que encontramos no coinciden y preferimos preguntarlo antes que inventarlo.</p>
+      </div>
+    </div>
+    <p class="dueno__cierre">
+      <a class="flecha flecha--fuerte" href="https://wa.me/56968650001" rel="noopener">Escribirme por WhatsApp <span aria-hidden="true">→</span></a>
+      <a class="flecha" href="https://cristalwebcl.github.io/cristalweb/" rel="noopener">Ver otros trabajos <span aria-hidden="true">→</span></a>
+    </p>
+  </div>
+</section>
+
+<footer class="pie">
+  <div class="ancho pie__in">
+    <p>Demostración sin encargo, preparada por <b>CristalWeb</b> — desarrollo web desde Loncoche.<br>
+      Las fotografías son de bancos de uso libre y no corresponden a Salón Dchamas.</p>
+    <p class="pie__leg">Esta página tiene fines comerciales. Los colores de la carta y las duraciones son referencia del oficio, no una lista confirmada por el salón ni una cotización.</p>
+  </div>
+</footer>
+
+
+<!-- ══ BOTON FLOTANTE DE CONTACTO ══════════════════════════════════
+     Escrito en el HTML y VISIBLE por defecto: si el script no arranca,
+     el boton igual esta. El JS solo lo aparta mientras se mira la
+     portada, para no tapar el titular. Icono de simple-icons (CC0),
+     incrustado: la CSP no deja pedir nada a un tercero. -->
+<a class="flota flota--wa" href="https://wa.me/56983399595?text=Hola%2C%20vi%20la%20pagina%20y%20quiero%20consultar." target="_blank" rel="noopener" aria-label="Escribir por WhatsApp a Salón Dchamas">
+  <svg class="flota__i" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"/></svg>
+  <span class="flota__t">WhatsApp</span>
+</a>
+<script src="js/main.js"></script>
+</body>
+</html>

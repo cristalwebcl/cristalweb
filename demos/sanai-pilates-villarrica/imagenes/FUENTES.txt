@@ -1,0 +1,22 @@
+FUENTES DE LAS IMAGENES - Sanaí Pilates Reformer Rehecha el 13-09-2026 (presentacion antes que texto). Fotos de REFERENCIA de bancos libres: ninguna es del local; las verdaderas las tiene que mandar el negocio. 
+port-01.jpg  <-  pozo-p-san-ventana\008.jpg  |  pexels (Pexels License)  |  autor: Letícia Alvares  |  https://www.pexels.com/es-es/foto/horta-de-apartamentos-32335235/  |  consulta: "window light plants"
+hund1-01.jpg  <-  pozo-p-san-reformer\003.jpg  |  pexels (Pexels License)  |  autor: Ahmet Kurt  |  https://www.pexels.com/es-es/foto/equipo-haciendo-ejercicio-pilates-habitacion-blanca-25599832/  |  consulta: "pilates reformer"
+hund2-01.jpg  <-  pozo-p-san-sala\011.jpg  |  pexels (Pexels License)  |  autor: cottonbro studio  |  https://www.pexels.com/es-es/foto/sano-pies-piernas-patas-4323308/  |  consulta: "wooden floor studio"
+hund3-01.jpg  <-  pozo-p-san-mat\008.jpg  |  pexels (Pexels License)  |  autor: ROMAN ODINTSOV  |  https://www.pexels.com/es-es/foto/manos-suelo-correa-tira-6193710/  |  consulta: "yoga mat rolled"
+hund4-01.jpg  <-  pozo-p-san-mat\009.jpg  |  pexels (Pexels License)  |  autor: Viktorya  Sergeeva 🫂  |  https://www.pexels.com/es-es/foto/manos-mujer-yoga-brazos-11564394/  |  consulta: "yoga mat rolled"
+hund5-01.jpg  <-  pozo-p-san-mat\003.jpg  |  pexels (Pexels License)  |  autor: cottonbro studio  |  https://www.pexels.com/es-es/foto/fitnes-fitness-gimnasio-adentro-4325462/  |  consulta: "yoga mat rolled"
+hund6-01.jpg  <-  pozo-p-san-toalla\002.jpg  |  pexels (Pexels License)  |  autor: cottonbro studio  |  https://www.pexels.com/es-es/foto/beber-bebida-textil-objeto-5274796/  |  consulta: "towel water bottle"
+banda-01.jpg  <-  pozo-p-san-bosque\007.jpg  |  pexels (Pexels License)  |  autor: Kendall Hoopes  |  https://www.pexels.com/es-es/foto/foto-de-arboles-altos-cubiertos-de-niebla-2431375/  |  consulta: "forest morning mist"
+cita-01.jpg  <-  pozo-p-san-ventana\009.jpg  |  pexels (Pexels License)  |  autor: speak  |  https://www.pexels.com/es-es/foto/cacerola-olla-maceta-ventana-9679297/  |  consulta: "window light plants"
+mos1-01.jpg  <-  pozo-p-san-ventana\010.jpg  |  pexels (Pexels License)  |  autor: Letícia Alvares  |  https://www.pexels.com/es-es/foto/planta-de-interior-soleada-con-fondo-urbano-32335227/  |  consulta: "window light plants"
+mos2-01.jpg  <-  pozo-p-san-sala\005.jpg  |  pexels (Pexels License)  |  autor: David Correa Franco  |  https://www.pexels.com/es-es/foto/textura-de-madera-en-alto-contraste-y-buena-resolucion-31513997/  |  consulta: "wooden floor studio"
+mos3-01.jpg  <-  pozo-p-san-mat\012.jpg  |  pexels (Pexels License)  |  autor: Klaus Nielsen  |  https://www.pexels.com/es-es/foto/persona-en-zapatillas-azules-y-blancas-sentado-en-la-tabla-de-surf-blanca-6303422/  |  consulta: "yoga mat rolled"
+mos4-01.jpg  <-  pozo-p-san-bosque\009.jpg  |  pexels (Pexels License)  |  autor: Bryan Smith  |  https://www.pexels.com/es-es/foto/paisaje-naturaleza-puesta-de-sol-arboles-11902792/  |  consulta: "forest morning mist"
+mos5-01.jpg  <-  pozo-p-san-ventana\002.jpg  |  pexels (Pexels License)  |  autor: Agus Juncos  |  https://www.pexels.com/es-es/foto/planta-en-un-fondo-brillante-24301393/  |  consulta: "window light plants"
+mos6-01.jpg  <-  pozo-p-san-sala\002.jpg  |  pexels (Pexels License)  |  autor: Designecologist  |  https://www.pexels.com/es-es/foto/madera-pared-muro-blanco-15226296/  |  consulta: "wooden floor studio"
+
+BRUMA (bruma-pag-0N.png y bruma-osc-0N.png, 30x20): las MISMAS fotos, recortadas a 3:2, reducidas y
+recoloreadas con C:\devs\demos\hacer-bruma.ps1 (clara >= 0,68 de luminancia / oscura <= 0,05). No suman fuentes.
+    pagina: port-01.jpg, banda-01.jpg, cita-01.jpg, hund1-01.jpg, hund3-01.jpg, mos1-01.jpg, mos4-01.jpg, mos6-01.jpg   |   oscuras: port-01.jpg, cita-01.jpg, banda-01.jpg
+
+MAPA: iframe de Google Maps (embed publico, sin clave). No hay imagen de mapa.

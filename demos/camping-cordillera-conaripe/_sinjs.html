@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="es-CL" class="no-js">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Camping Cordillera — Coñaripe</title>
+<meta name="description" content="Camping en Coñaripe, puerta del corredor termal. Qué parcela le conviene a cada grupo y cómo ordenar el día entre las termas y el camping.">
+
+<!-- ═══════════════════════════════════════════════════════════════
+     RESCATE DE LA CLASE .js — regla 2 de la casa.
+     El script inline (sin defer) marca .js para que el CSS pueda
+     esconder lo que va a animarse. El temporizador de 4 s la quita
+     si main.js nunca llega: sin él, un error de red dejaría media
+     página invisible para siempre.
+     ═══════════════════════════════════════════════════════════════ -->
+<!-- copia de prueba: sin el script de rescate ni main.js -->
+
+<!-- Fuentes propias: cero peticiones a terceros. El preload va SOLO
+     para la display, que es la del titular de la portada. -->
+<link rel="preload" href="assets/fuentes/hammersmithone-400-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="assets/fuentes.css">
+<link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+
+<div class="propuesta">
+  <p class="propuesta__que">Propuesta de sitio web — preparada para <b>Camping Cordillera</b> por Yordy Serna</p>
+  <p class="propuesta__gancho">260 reseñas en el pueblo-puerta de las termas, y el que viene elige dónde dormir desde el celular.</p>
+</div>
+
+<header class="cab" id="cab">
+  <a class="cab__marca" href="#portada">
+    <span class="mosqueton" aria-hidden="true"></span>
+    <span class="cab__nombre">Cordillera</span>
+  </a>
+  <nav class="cab__nav" aria-label="Secciones">
+    <a href="#parcelas">Las parcelas</a>
+    <a href="#termas">Las termas</a>
+    <a href="#reservar">Reservar</a>
+  </nav>
+  <a class="cab__tel" href="tel:+56998219388">
+    <span class="cab__tel-rot">Reservas</span>
+    <span class="cab__tel-num">9 9821 9388</span>
+  </a>
+</header>
+
+<main class="apiladas">
+
+<!-- ═════════ 1 · PORTADA ═════════ -->
+<section class="lam lam--portada" id="portada" aria-labelledby="t-portada">
+  <div class="sierra" aria-hidden="true">
+    <span class="sierra__capa sierra__capa--3"></span>
+    <span class="sierra__capa sierra__capa--2"></span>
+    <span class="sierra__capa sierra__capa--1"></span>
+  </div>
+  <div class="lam__cuerpo">
+    <p class="sitio">Coñaripe · puerta del corredor termal</p>
+    <h1 id="t-portada">Camping<br>Cordillera</h1>
+    <p class="bajada">Dormir acá y bañarse allá arriba. Esta página dice qué parcela pedir
+      según con quién viene, y cómo ordenar el día para no terminar manejando de noche.</p>
+    <p class="marcaje">260 reseñas en Google</p>
+  </div>
+</section>
+
+<!-- ═════════ 2 · LAS PARCELAS ═════════ -->
+<section class="lam lam--parcelas" id="parcelas" aria-labelledby="t-parcelas">
+  <div class="lam__cuerpo">
+    <p class="antetitulo">La pregunta de todos los días</p>
+    <h2 id="t-parcelas">La parcela<br>para cada grupo</h2>
+    <p class="entrada" data-ejemplo="Sectores de ejemplo — los reales los define el camping">
+      No es lo mismo llegar con dos niños chicos que con doce amigos. Estos son los tres
+      casos de siempre y qué conviene pedir en cada uno.</p>
+
+    <div class="grupos">
+      <article class="grupo">
+        <h3>Familia con niños chicos</h3>
+        <p class="grupo__pide">Pida: parcela cerca del baño y con sombra</p>
+        <p>Con niños, la distancia al baño manda sobre todo lo demás, y la sombra de la
+          tarde decide si duermen siesta o no. Vale más que la vista.</p>
+      </article>
+      <article class="grupo">
+        <h3>Grupo grande con quincho</h3>
+        <p class="grupo__pide">Pida: sector de quincho, lejos de las parcelas familiares</p>
+        <p>Un grupo que se queda conversando hasta tarde necesita estar donde no moleste.
+          Se pide junto y se avisa cuántos son: así nadie termina incómodo.</p>
+      </article>
+      <article class="grupo">
+        <h3>Pareja que quiere silencio</h3>
+        <p class="grupo__pide">Pida: parcela del fondo, lejos del acceso</p>
+        <p>El ruido de un camping viene del portón y del sector de quincho. La parcela
+          del fondo cuesta lo mismo y es otro fin de semana.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ═════════ 3 · LAS TERMAS ═════════ -->
+<section class="lam lam--termas" id="termas" aria-labelledby="t-termas">
+  <div class="lam__cuerpo">
+    <p class="antetitulo">Por qué la gente viene a Coñaripe</p>
+    <h2 id="t-termas">Termas cerca</h2>
+    <p class="entrada">El corredor termal está a la vuelta. Los tiempos de viaje no van
+      escritos hasta que el camping los confirme: son datos que hacen manejar por caminos
+      de montaña, y ésos no se calculan de memoria.</p>
+
+    <ul class="termas">
+      <li><span class="termas__nombre">Termas Geométricas</span> <span class="falta">a — min · falta</span></li>
+      <li><span class="termas__nombre">Termas Vergara</span> <span class="falta">a — min · falta</span></li>
+      <li><span class="termas__nombre">Termas Coñaripe</span> <span class="falta">a — min · falta</span></li>
+      <li><span class="termas__nombre">Termas Rayen-Co</span> <span class="falta">a — min · falta</span></li>
+    </ul>
+
+    <p class="consejo"><b>El orden que funciona:</b> termas temprano, almuerzo tarde y
+      vuelta al camping antes de que oscurezca. El camino de montaña de noche no es el
+      mismo camino.</p>
+  </div>
+</section>
+
+<!-- ═════════ 4 · RESERVAR ═════════ -->
+<section class="lam lam--reservar" id="reservar" aria-labelledby="t-reservar">
+  <div class="lam__cuerpo">
+    <h2 id="t-reservar">Reservar</h2>
+    <p class="entrada">Diga cuántos son y cuándo vienen: el mensaje se arma solo.
+      O llame al <a href="tel:+56998219388">9 9821 9388</a>.</p>
+
+    <form class="form" id="form-reserva">
+      <div class="campo">
+        <label for="f-grupo">¿Con quién viene?</label>
+        <select id="f-grupo" name="grupo">
+          <option>Familia con niños</option>
+          <option>Grupo grande</option>
+          <option>Pareja</option>
+          <option>Solo o sola</option>
+        </select>
+      </div>
+      <div class="campo">
+        <label for="f-fecha">¿Qué fechas?</label>
+        <input type="text" id="f-fecha" name="fecha" placeholder="del 3 al 6 de febrero" autocomplete="off">
+      </div>
+      <div class="campo">
+        <label for="f-cuantos">¿Cuántos?</label>
+        <input type="text" id="f-cuantos" name="cuantos" placeholder="4 personas, 1 carpa" autocomplete="off">
+      </div>
+      <p class="resumen" id="resumen" aria-live="polite">El mensaje se arma acá abajo.</p>
+      <a class="fantasma" id="enviar" href="https://wa.me/56998219388" rel="noopener">Enviar por WhatsApp</a>
+    </form>
+  </div>
+</section>
+
+</main>
+
+<section class="dueno" aria-labelledby="t-dueno">
+  <h2 id="t-dueno">Para el dueño</h2>
+  <div class="dueno__cols">
+    <div>
+      <h3>Lo que está verificado</h3>
+      <p>Las 260 reseñas de su ficha de Google y el teléfono. Que Coñaripe es la puerta del
+        corredor termal no hace falta verificarlo: es el motivo por el que llega la gente.</p>
+    </div>
+    <div>
+      <h3>Lo que es de ejemplo</h3>
+      <p>Los tres sectores y lo que conviene pedir en cada uno. La forma es la correcta;
+        los nombres de sus sectores reales los pone usted.</p>
+    </div>
+    <div>
+      <h3>Lo que falta</h3>
+      <p>Los minutos hasta cada terma, la dirección, la temporada y los valores. Los tiempos
+        de viaje no los invento ni marcados: la gente maneja con eso.</p>
+    </div>
+  </div>
+  <p class="dueno__cierre">
+    <a class="flecha" href="https://wa.me/56968650001" rel="noopener">Escribirme por WhatsApp <span aria-hidden="true">→</span></a>
+    <a class="flecha" href="https://yordyserna.github.io" rel="noopener">Ver otros trabajos <span aria-hidden="true">→</span></a>
+  </p>
+</section>
+
+<footer class="pie">
+  <p>Sitio de demostración preparado por Yordy Serna. El negocio no lo ha encargado
+    ni ha revisado su contenido.</p>
+</footer>
+
+</body>
+</html>

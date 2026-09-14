@@ -1,0 +1,580 @@
+/* ═══════════════════════════════════════════════════════════════════
+   AUTOTRÓNICO · eléctrico automotriz · Maipú — tema «presentación»
+   (13-09-2026, tanda Santiago, prompt 70). Debajo va base.css.
+
+   ── LA DIRECCIÓN ──────────────────────────────────────────────────
+   «LA PANTALLA DEL OSCILOSCOPIO»: el prompt pedía gris claro con verde de
+   osciloscopio en líneas; se lleva a página OSCURA (la 69 fue clara) para
+   que el verde sea lo que es en el taller: una traza encendida sobre una
+   pantalla negra. Fondo negro petróleo #0D1614, titulares #EAF3EF,
+   párrafos #B7C6C0 y un único color: VERDE FÓSFORO #52F5A0, muy saturado,
+   en la retícula de las cifras, los filetes de los rótulos y la traza del
+   icono; rellena sólo los botones y la tarjeta destacada, con tinta
+   #03140C encima.
+   Deslinde, hex contra hex: los verdes claros del registro son mentas
+   apagadas (saturación ~.55): la 115 Veterinaria San Francisco usa verde de
+   farmacia #7ED6A0 sobre pizarra; la 44 Arca de Noé, menta #5FD3A8 sobre
+   casco oscuro; la stgo-15 Escuela Ruta Chile (Maipú) lleva #8FE3A8. Éste
+   es fósforo (S .89) y va con retícula. En Maipú, la stgo-46 es malla
+   turquesa #1FE0BE (170°, más cian) y la stgo-48 cian láser #00D2F0 en
+   líneas sobre gris claro. La stgo-39 El Zapato es verde testigo #3ADE4D
+   (125°, más amarillo) junto a rojo y ámbar. Los eléctricos: 204 Vipacar
+   noche con arco celeste, 76 Sandoval hueso con rojo de borne.
+
+   ── TRÍO ──────────────────────────────────────────────────────────
+   · JURA (display, 600; 0 usos): técnica, de instrumento.
+   · SCHIBSTED GROTESK (cuerpo, 400; 7 usos).
+   · CASCADIA CODE (400; 2 usos): letra de terminal.
+
+   ── CONTRASTE (página oscura) ─────────────────────────────────────
+   · Fósforo #52F5A0 sobre #0D1614: 13,4:1. Tinta #03140C sobre el
+     fósforo: 13,9:1. Párrafos #B7C6C0: 10,6:1. Titulares #EAF3EF: 16,6:1.
+   · Velo de portada medido: la mano en el osciloscopio con la pantalla
+     verde (at-osciloscopio 004) .50 a 1440 y .50 en teléfono; banda del
+     tablero con testigos (at-tablero 006) .56 / .50; cita del tacómetro
+     (at-tablero 010; la 007 traía texto en turco) .59. Se escribe +.03. Página oscura con foto
+     con luz propia: el fundido se queda.
+   ═══════════════════════════════════════════════════════════════════ */
+:root {
+  --pag: #0D1614;  --pag-rgb: 13 22 20;
+  --tit: #EAF3EF;  --par: #B7C6C0;  --rot: #52F5A0;
+  --acento: #52F5A0;  --acento-rgb: 82 245 160;  --sobre-acento: #03140C;
+  --linea-rgb: 82 245 160;
+  --tarjeta-rgb: 22 34 31;  --tarjeta-a: .62;  --tarjeta-solida: #16221F;
+  --borde-rgb: 82 245 160;  --borde-a: .14;  --brillo-a: .05;
+  --tinta-rgb: 3 8 7;
+  --claro: #EAF3EF;  --claro-rot: #52F5A0;
+  --noche: #07100E;  --noche-tit: #EAF3EF;  --noche-par: #B7C6C0;  --noche-rot: #52F5A0;
+  --noche-btn: #52F5A0;  --noche-btn-txt: #03140C;
+  --pie: #040A09;  --pie-par: #8A9B95;
+  --display: 'Jura', 'Arial Narrow', system-ui, sans-serif;
+  --cuerpo:  'Schibsted Grotesk', system-ui, -apple-system, sans-serif;
+  --dato:    'Cascadia Code', ui-monospace, Consolas, monospace;
+  --display-peso: 600;
+  --h1-ancho: 16ch;
+  --luz-rgb: 82 245 160;  --luz-pos: 72% 28%;  --luz-a: .08;
+  --velo-medio: .53;  --velo-bajo: .55;  --velo-mov: .53;  --velo-mov-bajo: .55;  --velo-banda: .59;
+  --foto-pos: 50% 45%;
+  --radio: 6px;
+  --btn-radio: 4px;
+  --ficha-min: 300px;
+  --tarjeta-min: 200px;
+  --bruma-a: .9;
+}
+
+/* la pantalla con su traza: un marco y una onda de fósforo */
+.traza { width: 20px; height: 14px; flex: none; border-radius: 2px;
+  box-shadow: inset 0 0 0 1.5px var(--par);
+  background:
+    linear-gradient(135deg, transparent 44%, var(--acento) 45% 55%, transparent 56%) 3px 3px / 7px 8px no-repeat,
+    linear-gradient(45deg, transparent 44%, var(--acento) 45% 55%, transparent 56%) 10px 3px / 7px 8px no-repeat; }
+.tarjeta--destacada .tarjeta__n { color: var(--sobre-acento); }
+
+/* la retícula del osciloscopio detrás de las cifras */
+.cifras { background-image:
+  linear-gradient(rgb(82 245 160 / .06) 1px, transparent 1px),
+  linear-gradient(90deg, rgb(82 245 160 / .06) 1px, transparent 1px);
+  background-size: 32px 32px; }
+
+.btn, .cab__tel, .rotulo, .tarjeta__n, .cita__eco, .datos dt, .mapa-g__pie, .hund__dato { font-synthesis: none; }
+
+/* Jura es ancha: a 375 px «El técnico decide.» partía el titular en tres líneas */
+@media (max-width: 430px) { .portada .portada__h1 { font-size: 2.1rem; } }
+
+
+/* ═══════════════════════════════════════════════════════════════════
+   BASE «PRESENTACIÓN» — CristalWeb, 13-09-2026
+   Lo común a todas las demos rehechas con el prompt maestro
+   (demos\PROMPT-SIGUIENTES-DEMOS.txt). Sale de la 73, Panadería Los
+   Romero, que Yordy calificó 10/10. Lo propio de cada demo —colores,
+   fuentes, velos medidos, piezas únicas— va ARRIBA, en su tema, y
+   armar-presentacion.ps1 los junta en un solo estilo.css.
+
+   Las variables que el tema tiene que declarar están listadas en
+   demos\presentacion\LEEME.md. Los colores con alfa se escriben
+   rgb(var(--x-rgb) / a): así el alfa existe (un var() con hex dentro
+   de un gradiente no lo tiene y tapaba la foto entera).
+   ═══════════════════════════════════════════════════════════════════ */
+
+*, *::before, *::after { box-sizing: border-box; }
+[hidden] { display: none !important; }
+
+html { scroll-behavior: smooth; }
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+
+body {
+  margin: 0;
+  background: var(--pag);
+  color: var(--par);
+  font-family: var(--cuerpo);
+  font-size: var(--p-0);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+img, svg, video, iframe { max-width: 100%; }
+p { text-wrap: pretty; }
+
+h1, h2, h3 {
+  font-family: var(--display); font-weight: var(--display-peso, 700); color: var(--tit);
+  line-height: 1.08; letter-spacing: -.015em; margin: 0 0 .6rem;
+}
+.ancho { width: var(--ancho); margin-inline: auto; }
+a { color: var(--rot); }
+
+:focus-visible { outline: 3px solid var(--acento); outline-offset: 3px; border-radius: 3px; }
+.propuesta :focus-visible, .portada :focus-visible, .banda :focus-visible,
+.cita :focus-visible, .dueno :focus-visible, .pie :focus-visible { outline-color: var(--claro-rot); }
+
+.saltar {
+  position: absolute; left: -9999px; top: 0; z-index: 99;
+  background: var(--pie); color: var(--claro);
+  padding: .7rem 1.1rem; font-family: var(--dato); font-size: .9rem;
+}
+.saltar:focus { left: .5rem; top: .5rem; }
+
+[data-ejemplo]::before {
+  content: attr(data-ejemplo);
+  display: block; margin-bottom: .35rem;
+  font-family: var(--dato); font-size: .7rem; font-weight: 700;
+  letter-spacing: .06em; text-transform: uppercase;
+  color: var(--rot);
+}
+.dueno [data-ejemplo]::before { color: var(--noche-rot); }
+
+:root {
+  --p--1: clamp(.78rem, .74rem + .2vw, .86rem);
+  --p-0:  clamp(1rem, .96rem + .2vw, 1.08rem);
+  --p-1:  clamp(1.14rem, 1.06rem + .4vw, 1.34rem);
+  --p-2:  clamp(1.45rem, 1.25rem + 1vw, 2rem);
+  --p-3:  clamp(1.9rem, 1.5rem + 2vw, 3rem);
+  --p-4:  clamp(2.7rem, 1.9rem + 4vw, 5.2rem);
+  --ancho: min(1180px, 92vw);
+  --aire:  clamp(3.5rem, 2rem + 6vw, 7rem);
+  --muelle: linear(0, .32 14%, .68 26%, .92 38%, 1.04 50%, 1.01 64%, .99 78%, 1);
+  --sale:   cubic-bezier(.22, .61, .36, 1);
+}
+
+
+/* ═══════════════════════════════════════════════════════════════════
+   BANDA DE PROPUESTA Y CABECERA
+   ═══════════════════════════════════════════════════════════════════ */
+.propuesta { background: var(--pie); color: var(--pie-par); text-align: center; padding: .45rem 1rem; font-size: var(--p--1); }
+.propuesta p { margin: 0; }
+.propuesta b { color: var(--claro); }
+
+/* vidrio al .86: pasa por encima de la foto al bajar y el rótulo de
+   acento (el texto más exigente) tiene que seguir legible */
+.cab {
+  position: sticky; top: 0; z-index: 40;
+  display: flex; align-items: center; gap: 1.2rem;
+  padding: .3rem clamp(1rem, 3vw, 2rem);
+  background: var(--pag);
+  border-bottom: 1px solid rgb(var(--linea-rgb) / .14);
+}
+@supports ((-webkit-backdrop-filter: blur(1px)) or (backdrop-filter: blur(1px))) {
+  .cab { background: rgb(var(--pag-rgb) / .86); -webkit-backdrop-filter: blur(16px) saturate(1.4); backdrop-filter: blur(16px) saturate(1.4); }
+}
+.cab__m { display: flex; align-items: center; gap: .6rem; min-height: 44px; color: var(--tit); text-decoration: none; font-family: var(--display); }
+.cab__m b { font-size: 1.1rem; letter-spacing: -.01em; font-weight: var(--display-peso, 700); }
+.cab__s { font-family: var(--dato); font-size: .68rem; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; color: var(--rot); }
+.cab__n { margin-left: auto; display: flex; gap: .2rem; }
+.cab__n a { display: inline-flex; align-items: center; min-height: 44px; padding: 0 .7rem; font-size: .9rem; color: var(--par); text-decoration: none; }
+.cab__n a:hover, .cab__n a:focus-visible { color: var(--tit); box-shadow: inset 0 -2px 0 var(--acento); }
+.cab__tel {
+  display: inline-flex; align-items: center; min-height: 44px; padding: 0 1rem;
+  border-radius: 999px; background: var(--acento); color: var(--sobre-acento);
+  font-family: var(--dato); font-size: .86rem; font-weight: 700; text-decoration: none; white-space: nowrap;
+}
+.cab__tel:hover, .cab__tel:focus-visible { box-shadow: 0 0 0 3px rgb(var(--acento-rgb) / .3); }
+@media (max-width: 760px) {
+  .cab__n, .cab__s { display: none; }
+  .cab__tel { margin-left: auto; }
+}
+
+
+/* ═══════════════════════════════════════════════════════════════════
+   PORTADA A SANGRE, FUNDIDA HACIA ABAJO
+   · Máscara en el CONTENEDOR: foto, luz y velo se funden juntos.
+   · padding-bottom (15 rem) > tramo del fundido (14 rem): el texto claro
+     termina antes de que la foto desaparezca.
+   · El velo vertical sale de medir-velo.ps1 y se escribe en el tema
+     (--velo-*), con el número medido en el comentario.
+   ═══════════════════════════════════════════════════════════════════ */
+.portada {
+  position: relative; isolation: isolate; overflow: hidden;
+  min-height: 100vh; min-height: min(100svh, 960px);
+  display: flex; align-items: flex-end;
+  padding: 7rem 0 15rem;
+}
+.portada__foto {
+  position: absolute; inset: 0; z-index: -1; pointer-events: none;
+  background: rgb(var(--tinta-rgb));
+  -webkit-mask-image: linear-gradient(180deg, #000 0%, #000 calc(100% - 14rem), rgba(0,0,0,.72) calc(100% - 9rem), rgba(0,0,0,.28) calc(100% - 4rem), transparent 100%);
+          mask-image: linear-gradient(180deg, #000 0%, #000 calc(100% - 14rem), rgba(0,0,0,.72) calc(100% - 9rem), rgba(0,0,0,.28) calc(100% - 4rem), transparent 100%);
+}
+.portada__foto img, .portada__video { display: block; width: 100%; height: 100%; object-fit: cover; object-position: var(--foto-pos, 55% 40%); }
+.portada__video { position: absolute; inset: 0; opacity: 0; transition: opacity 1.4s ease; pointer-events: none; }
+.portada__video.video--ver { opacity: 1; }
+/* luz que respira: el ambiente cuando no hay video (clase .portada--luz) */
+.portada--luz .portada__foto::before {
+  content: ""; position: absolute; inset: 0; z-index: 1;
+  background: radial-gradient(ellipse 30% 36% at var(--luz-pos, 70% 46%), rgb(var(--luz-rgb, 255 146 64) / var(--luz-a, .16)), rgb(var(--luz-rgb, 255 146 64) / 0) 72%);
+  animation: respira 7s ease-in-out infinite alternate;
+}
+.portada__foto.con-video::before { display: none; }
+@keyframes respira { from { opacity: .3; } to { opacity: 1; } }
+.portada__foto::after {
+  content: ""; position: absolute; inset: 0; z-index: 2;
+  background: linear-gradient(180deg, rgb(var(--tinta-rgb) / var(--velo-alto, .14)) 0%, rgb(var(--tinta-rgb) / var(--velo-medio, .48)) 28%, rgb(var(--tinta-rgb) / var(--velo-bajo, .54)) 100%);
+}
+.portada__texto { position: relative; width: var(--ancho); margin-inline: auto; color: var(--claro); }
+.portada__sobre { margin: 0 0 1rem; font-family: var(--dato); font-size: .8rem; font-weight: 700; letter-spacing: .14em; text-transform: uppercase; color: var(--claro); }
+.portada__h1 { margin: 0 0 1.2rem; max-width: var(--h1-ancho, 13ch); font-size: var(--p-4); line-height: 1; letter-spacing: -.025em; color: var(--claro); }
+.portada__h1 .linea { display: block; }
+.portada__h1 em { font-style: var(--em-estilo, normal); }
+.portada__bajada { margin: 0 0 1.9rem; max-width: 38ch; font-size: var(--p-1); line-height: 1.5; color: var(--claro); }
+.portada__acciones { display: flex; flex-wrap: wrap; gap: .8rem; }
+@media (max-width: 760px) {
+  .portada { padding: 5rem 0 10rem; }
+  .portada__foto {
+    -webkit-mask-image: linear-gradient(180deg, #000 0%, #000 calc(100% - 9rem), rgba(0,0,0,.7) calc(100% - 5.5rem), rgba(0,0,0,.25) calc(100% - 2.5rem), transparent 100%);
+            mask-image: linear-gradient(180deg, #000 0%, #000 calc(100% - 9rem), rgba(0,0,0,.7) calc(100% - 5.5rem), rgba(0,0,0,.25) calc(100% - 2.5rem), transparent 100%);
+  }
+  .portada__foto img, .portada__video { object-position: var(--foto-pos-mov, var(--foto-pos, 55% 40%)); }
+  .portada__foto::after { background: linear-gradient(180deg, rgb(var(--tinta-rgb) / var(--velo-mov-alto, .18)) 0%, rgb(var(--tinta-rgb) / var(--velo-mov, .56)) 20%, rgb(var(--tinta-rgb) / var(--velo-mov-bajo, .6)) 100%); }
+}
+/* CORTE SECO (13-09-2026, pedido de Yordy): cuando la foto es medio oscura
+   o contrasta mucho con el tono de la página, NO se funde: se corta donde
+   termina. Un fundido de foto oscura a página clara deja una franja gris
+   sucia; la página conserva un solo tono. Se activa con .portada--corte en
+   el HTML. Especificidad 0,2,0: gana también dentro del @media de arriba. */
+.portada--corte .portada__foto { -webkit-mask-image: none; mask-image: none; }
+
+
+/* ═══════════════════════════════════════════════════════════════════
+   BOTONES
+   ═══════════════════════════════════════════════════════════════════ */
+.btn {
+  display: inline-flex; align-items: center; justify-content: center;
+  min-height: 50px; padding: 0 1.5rem; border-radius: var(--btn-radio, 999px);
+  font-family: var(--dato); font-size: .92rem; font-weight: 700; text-decoration: none;
+  transition: transform .2s var(--sale), box-shadow .2s ease, background-color .2s ease;
+}
+.btn--fuerte { background: var(--acento); color: var(--sobre-acento); }
+.btn--fuerte:hover, .btn--fuerte:focus-visible { transform: translateY(-2px); box-shadow: 0 10px 24px rgb(var(--acento-rgb) / .35); }
+/* vidrio OSCURO sobre la foto: uno claro subía el fondo del texto */
+.btn--vidrio { color: var(--claro); border: 1px solid rgb(255 255 255 / .5); background: rgb(var(--tinta-rgb) / .45); }
+@supports ((-webkit-backdrop-filter: blur(1px)) or (backdrop-filter: blur(1px))) {
+  .btn--vidrio { background: rgb(var(--tinta-rgb) / .3); -webkit-backdrop-filter: blur(12px) saturate(1.6); backdrop-filter: blur(12px) saturate(1.6); }
+}
+.btn--vidrio:hover, .btn--vidrio:focus-visible { background: rgb(var(--tinta-rgb) / .55); }
+.btn--claro { background: var(--noche-btn); color: var(--noche-btn-txt); }
+.btn--claro:hover, .btn--claro:focus-visible { transform: translateY(-2px); box-shadow: 0 10px 24px rgba(0, 0, 0, .3); }
+
+
+/* ═══════════════════════════════════════════════════════════════════
+   PIEZAS DE TEXTO COMPARTIDAS
+   ═══════════════════════════════════════════════════════════════════ */
+.rotulo { margin: 0 0 .8rem; font-family: var(--dato); font-size: .8rem; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; color: var(--rot); }
+.rotulo.claro { color: var(--noche-rot); }
+.t2 { font-size: var(--p-3); max-width: 20ch; margin: 0 0 1rem; }
+.t2.claro { color: var(--noche-tit); }
+.entrada { margin: 0 0 2.4rem; max-width: 50ch; font-size: var(--p-1); line-height: 1.55; }
+.entrada b { color: var(--tit); }
+.nota { margin: 2rem 0 0; max-width: 60ch; font-size: .88rem; }
+.nota.ej { padding-left: 1rem; border-left: 3px solid var(--acento); }
+.sec { padding: var(--aire) 0; }
+.sec--corta { padding-top: calc(var(--aire) * .4); }
+
+
+/* ═══════════════════════════════════════════════════════════════════
+   CIFRAS — sobre la bruma, sin foto. Cuenta sólo la verificada.
+   ═══════════════════════════════════════════════════════════════════ */
+.cifras { padding: 3.5rem 0 1rem; }
+.cifras__lista { list-style: none; margin: 0 auto; padding: 0; display: grid; grid-template-columns: repeat(4, 1fr); gap: 1.5rem; }
+.cifras__lista li { position: relative; padding-top: 1rem; border-top: 1px solid rgb(var(--linea-rgb) / .22); }
+.cifras__lista li[data-ejemplo]::before { position: absolute; top: 1.05rem; right: 0; margin: 0; }
+.cifras__lista b { display: block; font-family: var(--display); font-size: var(--p-3); line-height: 1; color: var(--tit); font-variant-numeric: tabular-nums; font-weight: var(--display-peso, 700); }
+.cifras__lista span { display: block; margin-top: .45rem; font-family: var(--dato); font-size: .8rem; line-height: 1.4; }
+.cifras__herida b { color: var(--rot); }
+@media (max-width: 760px) { .cifras__lista { grid-template-columns: repeat(2, 1fr); } }
+
+
+/* ═══════════════════════════════════════════════════════════════════
+   FICHAS CON FOTO HUNDIDA
+   La foto se funde por abajo en el vidrio (máscara en la imagen, no un
+   velo encima). El dato grande monta 1,4 rem sobre el tramo ya
+   transparente. Grilla automática: 3, 4 o 5 fichas se acomodan solas.
+   ═══════════════════════════════════════════════════════════════════ */
+.fichas { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(var(--ficha-min, 210px), 1fr)); gap: 1rem; }
+.hund, .tarjeta, .aviso {
+  background: rgb(var(--tarjeta-rgb) / .8);
+  border: 1px solid rgb(var(--borde-rgb, 255 255 255) / var(--borde-a, .7));
+  box-shadow: inset 0 1px 0 rgb(255 255 255 / var(--brillo-a, .6)), 0 16px 34px rgb(0 0 0 / .08);
+}
+.hund { position: relative; overflow: hidden; border-radius: var(--radio, 14px); }
+.hund img {
+  display: block; width: 100%; height: auto; aspect-ratio: 4 / 3; object-fit: cover;
+  -webkit-mask-image: linear-gradient(180deg, #000 0%, #000 38%, rgba(0,0,0,.45) 68%, transparent 90%);
+          mask-image: linear-gradient(180deg, #000 0%, #000 38%, rgba(0,0,0,.45) 68%, transparent 90%);
+}
+.hund__txt { position: relative; margin-top: -1.4rem; padding: 0 1rem 1.15rem; }
+.hund__dato { margin: 0 0 .35rem; font-family: var(--display); font-size: var(--p-2); line-height: 1; color: var(--tit); font-variant-numeric: tabular-nums; font-weight: var(--display-peso, 700); }
+.hund__txt h3 { font-size: var(--p-1); margin: 0 0 .35rem; }
+.hund__txt p:not(.hund__dato) { margin: 0; font-size: .92rem; line-height: 1.45; }
+.hund__txt b { color: var(--tit); }
+.hund--destacada { border: 2px solid var(--acento); }
+.hund--destacada .hund__dato { color: var(--rot); }
+/* corte seco en las fichas (.fichas--corte): la foto termina en un borde
+   limpio y el texto baja a la tarjeta, sin montarse sobre la foto. */
+.fichas--corte .hund img { -webkit-mask-image: none; mask-image: none; }
+.fichas--corte .hund__txt { margin-top: 0; padding-top: .95rem; }
+@media (max-width: 640px) {
+  .fichas { grid-template-columns: repeat(2, 1fr); gap: .75rem; }
+  .fichas > :first-child:nth-last-child(2n+1) { grid-column: span 2; }
+}
+@media (max-width: 400px) {
+  .fichas { grid-template-columns: 1fr; }
+  .fichas > :first-child:nth-last-child(2n+1) { grid-column: auto; }
+}
+
+
+/* ═══════════════════════════════════════════════════════════════════
+   BANDA A SANGRE CON PARALLAX — la foto sobra 20 % arriba y abajo y
+   recorre ±10 %. Sin soporte es una foto quieta. Velo lateral medido.
+   ═══════════════════════════════════════════════════════════════════ */
+.banda { position: relative; isolation: isolate; overflow: hidden; margin: 0; min-height: min(82vh, 720px); display: flex; align-items: center; background: rgb(var(--tinta-rgb)); }
+.banda__foto { position: absolute; left: 0; right: 0; top: -20%; height: 140%; z-index: -1; }
+.banda__foto img { display: block; width: 100%; height: 100%; object-fit: cover; object-position: var(--banda-pos, 50% 50%); }
+.banda::after { content: ""; position: absolute; inset: 0; z-index: -1; background: linear-gradient(90deg, rgb(var(--tinta-rgb) / calc(var(--velo-banda, .54) + .02)) 0%, rgb(var(--tinta-rgb) / var(--velo-banda, .54)) 62%, rgb(var(--tinta-rgb) / .24) 100%); }
+.banda--sin-texto::after { background: rgb(var(--tinta-rgb) / .08); }
+.banda__txt { width: var(--ancho); margin: 0 auto; }
+.banda__txt p { margin: 0; max-width: 17ch; font-family: var(--display); font-weight: var(--display-peso, 700); font-size: var(--p-3); line-height: 1.12; color: var(--claro); }
+.banda__txt em { font-style: normal; text-decoration: underline; text-decoration-color: var(--claro-rot); text-decoration-thickness: .08em; text-underline-offset: .14em; }
+@media (max-width: 760px) { .banda::after { background: rgb(var(--tinta-rgb) / calc(var(--velo-banda, .54) + .04)); } .banda--sin-texto::after { background: rgb(var(--tinta-rgb) / .08); } }
+
+
+/* ═══════════════════════════════════════════════════════════════════
+   TARJETAS DE VIDRIO (reglas, pasos, servicios sin foto)
+   ═══════════════════════════════════════════════════════════════════ */
+.tarjetas { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(var(--tarjeta-min, 230px), 1fr)); gap: 1rem; }
+.tarjeta { padding: 1.4rem 1.3rem 1.5rem; border-radius: var(--radio, 14px); }
+.tarjeta__n { display: block; margin-bottom: 1.6rem; font-family: var(--dato); font-size: .8rem; font-weight: 700; color: var(--rot); }
+.tarjeta h3 { font-size: var(--p-1); margin: 0 0 .5rem; }
+.tarjeta p { margin: 0; font-size: .95rem; }
+.tarjeta--destacada { background: var(--acento); border-color: var(--acento); }
+.tarjeta--destacada .tarjeta__n, .tarjeta--destacada h3, .tarjeta--destacada p, .tarjeta--destacada b { color: var(--sobre-acento); }
+
+
+/* ═══════════════════════════════════════════════════════════════════
+   CITA — velo plano .74: en el peor caso (foto blanca) el texto claro
+   queda sobre ~6,5:1, así que no depende de la foto.
+   ═══════════════════════════════════════════════════════════════════ */
+.cita { position: relative; isolation: isolate; overflow: hidden; margin: 0; min-height: min(64vh, 540px); display: grid; place-items: center; padding: 4rem 1.2rem; background: rgb(var(--tinta-rgb)); text-align: center; }
+.cita__foto { position: absolute; inset: 0; z-index: -1; }
+.cita__foto img { display: block; width: 100%; height: 100%; object-fit: cover; object-position: var(--cita-pos, 50% 50%); }
+.cita__foto::after { content: ""; position: absolute; inset: 0; background: rgb(var(--tinta-rgb) / var(--velo-cita, .74)); }
+.cita__txt { margin: 0; }
+.cita__txt p { margin: 0 auto; max-width: 20ch; font-family: var(--display); font-weight: var(--display-peso, 700); font-size: var(--p-3); line-height: 1.15; color: var(--claro); }
+.cita__txt .cita__eco { margin-top: 1.4rem; max-width: none; font-family: var(--dato); font-size: .8rem; font-weight: 700; line-height: 1.4; letter-spacing: .14em; text-transform: uppercase; }
+.cita__eco::before { content: ""; display: block; width: 3rem; height: 3px; margin: 0 auto .9rem; background: var(--claro-rot); }
+
+
+/* ═══════════════════════════════════════════════════════════════════
+   MOSAICO — seis piezas, alto de fila fijo (2+1 / 1+2 / 2+1 = 9 celdas)
+   ═══════════════════════════════════════════════════════════════════ */
+.mos__grilla { display: grid; gap: 6px; grid-template-columns: repeat(3, 1fr); grid-auto-rows: clamp(180px, 21vw, 300px); margin-top: 1rem; }
+.mos__p { margin: 0; overflow: hidden; border-radius: calc(var(--radio, 14px) * .7); background: rgb(var(--tinta-rgb)); }
+.mos__p:nth-child(1), .mos__p:nth-child(4), .mos__p:nth-child(5) { grid-column: span 2; }
+.mos__p img { display: block; width: 100%; height: 100%; object-fit: cover; transition: transform .6s var(--sale); }
+.mos__p:hover img { transform: scale(1.05); }
+@media (max-width: 760px) {
+  .mos__grilla { grid-template-columns: repeat(2, 1fr); grid-auto-rows: clamp(130px, 40vw, 220px); }
+  .mos__p:nth-child(4), .mos__p:nth-child(5) { grid-column: auto; }
+  .mos__p:nth-child(1), .mos__p:nth-child(6) { grid-column: span 2; }
+}
+
+
+/* ═══════════════════════════════════════════════════════════════════
+   DÓNDE ESTAMOS — mapa de Google incrustado (frame-src sólo a google)
+   ═══════════════════════════════════════════════════════════════════ */
+.donde__grilla { display: grid; grid-template-columns: .9fr 1.1fr; gap: clamp(2rem, 4vw, 4rem); align-items: start; }
+.datos { margin: 0 0 1.6rem; display: grid; grid-template-columns: 1fr 1fr; gap: 1.1rem 1.6rem; }
+.datos dt { font-family: var(--dato); font-size: .72rem; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; color: var(--rot); }
+.datos dd { margin: .15rem 0 0; color: var(--tit); }
+.datos dd a { display: inline-flex; align-items: center; min-height: 44px; color: var(--tit); font-weight: 700; }
+.datos .falta { font-family: var(--dato); font-size: .88rem; color: var(--par); }
+.aviso { margin: 0; padding: 1rem 1.2rem; border-left: 4px solid var(--acento); border-radius: 0 12px 12px 0; }
+.aviso b { color: var(--tit); }
+.mapa-g { border-radius: var(--radio, 14px); overflow: hidden; background: var(--tarjeta-solida); border: 1px solid rgb(var(--borde-rgb, 255 255 255) / var(--borde-a, .7)); box-shadow: 0 16px 34px rgb(0 0 0 / .08); }
+.mapa-g iframe { display: block; width: 100%; height: clamp(300px, 34vw, 430px); border: 0; }
+.mapa-g__pie { margin: 0; padding: .35rem 1rem; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: .2rem 1rem; font-family: var(--dato); font-size: .82rem; color: var(--par); }
+.mapa-g__pie b { color: var(--tit); }
+.mapa-g__pie a { display: inline-flex; align-items: center; min-height: 44px; font-weight: 700; color: var(--rot); }
+@media (max-width: 860px) { .donde__grilla { grid-template-columns: 1fr; } }
+
+
+/* ═══════════════════════════════════════════════════════════════════
+   PARA EL DUEÑO Y PIE — la sección oscura lleva el tono propio de cada
+   demo (--noche) y su bruma adentro.
+   ═══════════════════════════════════════════════════════════════════ */
+.dueno { padding: var(--aire) 0; background: var(--noche); color: var(--noche-par); }
+.dueno__cols { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.4rem; margin: 2rem 0; }
+.dueno__cols > div { padding-top: 1.1rem; border-top: 1px solid rgb(255 255 255 / .18); }
+.dueno h3 { font-size: var(--p-1); color: var(--noche-tit); }
+.dueno p { margin: 0; }
+@media (max-width: 760px) { .dueno__cols { grid-template-columns: 1fr; } }
+
+.pie { background: var(--pie); color: var(--pie-par); padding: 2.4rem 0 6rem; }
+.pie__in { display: flex; flex-wrap: wrap; justify-content: space-between; gap: .6rem 2rem; }
+.pie__m { margin: 0; font-family: var(--display); color: var(--claro); }
+.pie__n { margin: 0; max-width: 52ch; font-family: var(--dato); font-size: .8rem; }
+
+
+/* ═══════════════════════════════════════════════════════════════════
+   BRUMA Y VIDRIO — patrón de AgroFrut (72)
+   ═══════════════════════════════════════════════════════════════════ */
+main { position: relative; isolation: isolate; }
+.bruma-pagina { position: absolute; inset: 0; z-index: -1; overflow: hidden; pointer-events: none; }
+.bruma-pagina img, .bruma img {
+  position: absolute; height: auto; max-width: none; aspect-ratio: 3 / 2; object-fit: cover;
+  -webkit-mask-image: radial-gradient(closest-side, #000 0%, rgba(0,0,0,.86) 38%, rgba(0,0,0,.42) 70%, transparent 100%);
+          mask-image: radial-gradient(closest-side, #000 0%, rgba(0,0,0,.86) 38%, rgba(0,0,0,.42) 70%, transparent 100%);
+}
+.bruma-pagina img { width: 74vw; filter: blur(60px); opacity: var(--bruma-a, .95); }
+.bruma-pagina img:nth-child(odd)  { right: -22vw; }
+.bruma-pagina img:nth-child(even) { left: -22vw; }
+.bruma-pagina img:nth-child(3n)   { left: 22vw; right: auto; width: 62vw; }
+.bruma-pagina img:nth-child(1)  { top: 0; }
+.bruma-pagina img:nth-child(2)  { top: 7%; }
+.bruma-pagina img:nth-child(3)  { top: 14%; }
+.bruma-pagina img:nth-child(4)  { top: 21%; }
+.bruma-pagina img:nth-child(5)  { top: 28%; }
+.bruma-pagina img:nth-child(6)  { top: 35%; }
+.bruma-pagina img:nth-child(7)  { top: 42%; }
+.bruma-pagina img:nth-child(8)  { top: 49%; }
+.bruma-pagina img:nth-child(9)  { top: 56%; }
+.bruma-pagina img:nth-child(10) { top: 63%; }
+.bruma-pagina img:nth-child(11) { top: 70%; }
+.bruma-pagina img:nth-child(12) { top: 77%; }
+.bruma-pagina img:nth-child(13) { top: 84%; }
+.bruma-pagina img:nth-child(14) { top: 91%; }
+
+.dueno, .pie { position: relative; isolation: isolate; overflow: hidden; }
+.bruma { position: absolute; inset: -12% 0; z-index: -1; pointer-events: none; }
+.bruma img { width: 72%; filter: blur(56px); opacity: .95; }
+.bruma .bruma-a { top: -30%; right: -18%; }
+.bruma .bruma-b { bottom: -30%; left: -20%; }
+.pie .bruma img { width: 60%; }
+.pie .bruma .bruma-a { top: -60%; right: -6%; }
+.pie .bruma .bruma-b { bottom: -60%; left: -8%; }
+
+@supports ((-webkit-backdrop-filter: blur(1px)) or (backdrop-filter: blur(1px))) {
+  .hund, .tarjeta, .aviso {
+    background: rgb(var(--tarjeta-rgb) / var(--tarjeta-a, .46));
+    -webkit-backdrop-filter: blur(18px) saturate(1.3);
+            backdrop-filter: blur(18px) saturate(1.3);
+  }
+  .tarjeta--destacada { background: rgb(var(--acento-rgb) / .94); }
+}
+
+@media (max-width: 720px) {
+  .bruma-pagina img { width: 150vw; filter: blur(44px); }
+  .bruma-pagina img:nth-child(odd)  { right: -64vw; }
+  .bruma-pagina img:nth-child(even) { left: -64vw; }
+  .bruma-pagina img:nth-child(3n)   { left: -25vw; width: 150vw; }
+  .bruma img { width: 170%; filter: blur(44px); }
+  .bruma .bruma-a { right: -90%; }
+  .bruma .bruma-b { left: -95%; }
+  .pie .bruma img { width: 150%; }
+}
+
+
+/* ═══════════════════════════════════════════════════════════════════
+   TEXTOS QUE APARECEN (pedido de Yordy, 13-09-2026)
+   · Titulares palabra por palabra (main.js las envuelve; --i por CSSOM).
+   · Piezas sueltas suben 22 px y se funden; grillas en cascada de 80 ms.
+   Todo cuelga de .js (rescate a 4 s) y de .rev, que pone el JS.
+   ═══════════════════════════════════════════════════════════════════ */
+.js .rev { opacity: 0; transform: translate3d(0, 22px, 0); }
+.rev.ok { opacity: 1; transform: none; transition: opacity .6s ease-out, transform .9s var(--sale); }
+.js .cascada.rev { opacity: 1; transform: none; transition: none; }
+.js .cascada.rev > * { opacity: 0; transform: translate3d(0, 30px, 0); }
+.js .cascada.rev.ok > * { opacity: 1; transform: none; transition: opacity .55s ease-out, transform .9s var(--sale); transition-delay: calc(var(--i, 0) * 80ms); }
+.cascada > :nth-child(1) { --i: 0; }
+.cascada > :nth-child(2) { --i: 1; }
+.cascada > :nth-child(3) { --i: 2; }
+.cascada > :nth-child(4) { --i: 3; }
+.cascada > :nth-child(5) { --i: 4; }
+.cascada > :nth-child(6) { --i: 5; }
+.cascada > :nth-child(7) { --i: 6; }
+.cascada > :nth-child(8) { --i: 7; }
+
+.pal { display: inline-block; overflow: hidden; vertical-align: bottom; padding: .1em 0 .16em; margin: -.1em 0 -.16em; }
+.pal__in { display: inline-block; }
+.js .titulo.rev { opacity: 1; transform: none; transition: none; }
+.js .titulo.rev .pal__in { transform: translate3d(0, 118%, 0); }
+.titulo.rev.ok .pal__in { transform: none; transition: transform 1s var(--sale); transition-delay: calc(var(--i, 0) * 60ms); }
+
+.js .portada__texto > * { opacity: 0; transform: translate3d(0, 16px, 0); }
+.js .portada__texto > .portada__h1 { opacity: 1; transform: none; }
+.js .portada__h1 .pal__in { transform: translate3d(0, 118%, 0); }
+.portada__texto.ok > * { animation: entra .8s var(--muelle) forwards; }
+.portada__texto.ok > .portada__h1 { animation: none; }
+.portada__texto.ok > :nth-child(3) { animation-delay: .3s; }
+.portada__texto.ok > :nth-child(4) { animation-delay: .38s; }
+.portada__texto.ok .pal__in { transform: none; transition: transform 1.05s var(--sale); transition-delay: calc(.06s + var(--i, 0) * 70ms); }
+@keyframes entra { to { opacity: 1; transform: none; } }
+
+
+/* ═══════════════════════════════════════════════════════════════════
+   PROFUNDIDAD AL SCROLL — una cosa por pantalla, dentro de @supports
+   ═══════════════════════════════════════════════════════════════════ */
+@supports (animation-timeline: view()) {
+  @media (prefers-reduced-motion: no-preference) {
+    .banda__foto { animation: banda-lenta linear both; animation-timeline: view(); animation-range: cover 0% cover 100%; }
+  }
+  @media (prefers-reduced-motion: no-preference) and (min-width: 761px) {
+    .portada__foto { animation: portada-se-va linear both; animation-timeline: scroll(root block); animation-range: 0 90vh; }
+    .cita__foto { animation: cita-enfoca linear both; animation-timeline: view(block); animation-range: entry 0% entry 95%; }
+  }
+}
+@keyframes banda-lenta   { from { transform: translateY(-10%); } to { transform: translateY(10%); } }
+@keyframes portada-se-va { to { filter: blur(6px); transform: scale(1.06); opacity: .6; } }
+@keyframes cita-enfoca   { from { filter: blur(9px); transform: scale(1.06); } to { filter: blur(0); transform: scale(1.06); } }
+
+
+/* ═══════════════════════════════════════════════════════════════════
+   BOTÓN FLOTANTE DE WHATSAPP — visible por defecto
+   ═══════════════════════════════════════════════════════════════════ */
+.flota {
+  position: fixed; right: max(1rem, env(safe-area-inset-right, 0px)); bottom: max(1rem, env(safe-area-inset-bottom, 0px)); z-index: 60;
+  display: inline-flex; align-items: center; gap: .55rem; height: 56px; padding: 0 1.15rem 0 1rem; border-radius: 999px;
+  font-family: var(--dato); font-size: .9rem; font-weight: 700; line-height: 1; text-decoration: none;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, .3), 0 2px 6px rgba(0, 0, 0, .2);
+  transition: opacity .28s ease, transform .28s ease, box-shadow .18s ease;
+}
+.flota--wa { background: #25D366; color: #07310F; }
+.flota--ig { background: linear-gradient(120deg, #F9CE34 4%, #EE2A7B 48%, #6228D7 96%); color: #FFFFFF; }
+.flota__i { width: 26px; height: 26px; fill: currentColor; flex: none; }
+.flota:hover, .flota:focus-visible { transform: translateY(-2px); box-shadow: 0 10px 26px rgba(0, 0, 0, .3); }
+.js .flota--arriba { opacity: 0; transform: translateY(14px) scale(.94); pointer-events: none; }
+@media (max-width: 520px) {
+  .flota { width: 56px; padding: 0; justify-content: center; }
+  .flota__t { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
+}
+
+
+/* ═══════════════════════════════════════════════════════════════════
+   MOVIMIENTO REDUCIDO — el ambiente se esconde; las apariciones quedan
+   como fundidos sin desplazamiento.
+   ═══════════════════════════════════════════════════════════════════ */
+@media (prefers-reduced-motion: reduce) {
+  .portada--luz .portada__foto::before { display: none; }
+  .js .rev, .js .cascada.rev > *, .js .portada__texto > * { transform: none; }
+  .js .titulo.rev .pal__in, .js .portada__h1 .pal__in { transform: none; }
+  .portada__texto.ok > * { animation-duration: .01s; animation-delay: 0s; }
+  .mos__p:hover img, .btn--fuerte:hover, .btn--claro:hover { transform: none; }
+  .flota { transition: opacity .28s ease; }
+  .flota:hover, .flota:focus-visible, .js .flota--arriba { transform: none; }
+}

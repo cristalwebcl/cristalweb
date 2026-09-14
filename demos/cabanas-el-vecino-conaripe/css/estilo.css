@@ -42,6 +42,17 @@
    entera trata de que hay alguien esperando.
    Reduced-motion: las tres ya encendidas de entrada.
 
+   AMBIENTE DE PORTADA (10-09-2026) — esta demo NO lleva video de
+   fondo: el clip se reserva para los negocios mejor valorados. Todo el
+   ambiente lo pone el CSS y son dos cosas:
+   · las tres ventanas, que bajaron del aire abierto a la LADERA de
+     enfrente (bottom 12% -> 20%) y ganaron halo doble y reflejo en el
+     agua. Antes flotaban en medio del lago y se leian como tres
+     papeles pegados sobre la foto.
+   · doce motas de luz calida que suben muy lento SOLO sobre la mitad
+     derecha, que es donde esta la foto. Sobre el titular no entra
+     ninguna. Con reduced-motion no se dibujan.
+
    LA ESTRUCTURA — E (laminas apiladas)
    DESLINDE con 94/98/103/122/164/186: la 122 es secuencia de CARGA
    (trabajo, camion, esfuerzo). Esta es secuencia de LLEGADA
@@ -239,22 +250,50 @@ a { color: var(--luz); }
    pueblo simplemente ya esta con las luces puestas. */
 .pueblo {
   position: absolute;
-  right: clamp(1.5rem, 8vw, 8rem);
-  bottom: 12%;
-  display: flex; align-items: flex-end; gap: clamp(1rem, 3vw, 2.4rem);
+  right: clamp(1.5rem, 5vw, 5rem);
+  /* Sobre la ladera de enfrente, no sobre el agua abierta. A 12% las
+     tres quedaban flotando en medio del lago y se leían como tres
+     papeles pegados encima de la foto; acá caen dentro de la masa
+     oscura del cerro y el reflejo baja hacia el agua.
+     El grupo se corrió a la derecha porque es donde la ladera es alta:
+     más a la izquierda el cerro baja y las ventanas quedaban colgando
+     del cielo. */
+  bottom: 20%;
+  display: flex; align-items: flex-end; gap: clamp(.9rem, 2.4vw, 1.9rem);
   z-index: 1; pointer-events: none;
 }
+/* La ladera baja hacia la izquierda: cada ventana se descuelga un poco
+   más que su vecina de la derecha para seguir esa pendiente. Son tres
+   casas en un cerro, no tres luces en una repisa. */
+.pueblo .luz--1 { margin-bottom: -14px; }
+.pueblo .luz--2 { margin-bottom: -6px; }
 .luz {
+  position: relative;
   display: block;
-  width: clamp(16px, 2.4vw, 26px);
+  width: clamp(11px, 1.5vw, 17px);
   background: var(--incandescente);
   border-radius: 1px;
-  box-shadow: 0 0 26px rgba(245, 200, 106, .30);
+  /* Dos halos, no uno: el cerrado da la ampolleta y el abierto da el
+     aire cargado de humedad que hay sobre un lago a esa hora. */
+  box-shadow: 0 0 16px 3px rgba(245, 200, 106, .34),
+              0 0 46px 14px rgba(245, 200, 106, .14);
+}
+/* EL REFLEJO. Es lo que convierte tres cuadrados en tres ventanas al
+   otro lado del agua: la misma luz estirada hacia abajo y disuelta,
+   terminando en alfa 0 para que no deje borde. Hereda la opacidad de
+   la ventana, así que se enciende con ella. */
+.luz::after {
+  content: ""; position: absolute; left: -10%; right: -10%; top: 100%;
+  height: 190%;
+  background: linear-gradient(180deg,
+      rgba(245, 200, 106, .34) 0%, rgba(245, 200, 106, .13) 38%,
+      rgba(245, 200, 106, .04) 70%, rgba(245, 200, 106, 0) 100%);
+  filter: blur(1.5px);
 }
 /* Alturas distintas: son tres ventanas de tres casas, no tres copias */
-.luz--1 { height: clamp(20px, 3vw, 32px); }
-.luz--2 { height: clamp(26px, 4vw, 42px); }
-.luz--3 { height: clamp(17px, 2.6vw, 27px); }
+.luz--1 { height: clamp(14px, 2vw, 21px); }
+.luz--2 { height: clamp(18px, 2.7vw, 29px); }
+.luz--3 { height: clamp(12px, 1.7vw, 18px); }
 
 .js .luz { opacity: 0; transition: opacity 1.1s ease; }
 .js .pueblo.ok .luz { opacity: 1; }
@@ -262,6 +301,65 @@ a { color: var(--luz); }
 .js .pueblo.ok .luz--1 { transition-delay: .5s;  }
 .js .pueblo.ok .luz--2 { transition-delay: 1.3s; }
 .js .pueblo.ok .luz--3 { transition-delay: 2.1s; }
+
+/* ── LAS MOTAS DE LUZ ──────────────────────────────────────────────
+   Doce puntos cálidos que suben muy lento sobre el lago. Es el ambiente
+   que en otras demos pone el video de fondo: acá no hay clip, y sin
+   nada la mitad derecha de la portada queda quieta.
+   Van SÓLO sobre la foto (del 42 % hacia la derecha), nunca sobre el
+   titular: una mota cruzando una letra es basura, no ambiente.
+   Doce y no cuarenta, entre 15 y 27 s cada una y con opacidad máxima
+   .9: si se cuentan, sobran. Se dibujan con radial-gradient, así que
+   no cuesta ni un byte de imagen.
+   Los índices van por nth-child en el CSS y NUNCA en un style="--i:3":
+   la CSP de esta página bloquea el atributo style sin dejar un error a
+   la vista. */
+.motas {
+  position: absolute; inset: 0 0 0 42%;
+  z-index: 1; pointer-events: none; overflow: hidden;
+}
+.motas span {
+  position: absolute; bottom: 8%;
+  width: 4px; height: 4px; border-radius: 50%;
+  opacity: 0;
+  background: radial-gradient(circle,
+      rgba(255, 227, 166, .95) 0%, rgba(245, 200, 106, .55) 42%,
+      rgba(245, 200, 106, 0) 72%);
+  animation: mota 19s linear infinite;
+}
+.motas span:nth-child(even) { animation-name: mota-b; }
+.motas span:nth-child(1)  { left:  4%; bottom: 10%; animation-duration: 21s; animation-delay:  0s; }
+.motas span:nth-child(2)  { left: 13%; bottom: 16%; animation-duration: 17s; animation-delay: -3s; width: 3px; height: 3px; }
+.motas span:nth-child(3)  { left: 21%; bottom:  6%; animation-duration: 25s; animation-delay: -8s; }
+.motas span:nth-child(4)  { left: 29%; bottom: 20%; animation-duration: 19s; animation-delay: -1s; width: 5px; height: 5px; }
+.motas span:nth-child(5)  { left: 37%; bottom: 12%; animation-duration: 23s; animation-delay: -12s; }
+.motas span:nth-child(6)  { left: 45%; bottom:  8%; animation-duration: 16s; animation-delay: -5s; width: 3px; height: 3px; }
+.motas span:nth-child(7)  { left: 53%; bottom: 18%; animation-duration: 27s; animation-delay: -15s; }
+.motas span:nth-child(8)  { left: 61%; bottom: 11%; animation-duration: 20s; animation-delay: -7s; }
+.motas span:nth-child(9)  { left: 69%; bottom:  7%; animation-duration: 24s; animation-delay: -2s; width: 5px; height: 5px; }
+.motas span:nth-child(10) { left: 77%; bottom: 15%; animation-duration: 18s; animation-delay: -10s; width: 3px; height: 3px; }
+.motas span:nth-child(11) { left: 85%; bottom:  9%; animation-duration: 22s; animation-delay: -6s; }
+.motas span:nth-child(12) { left: 93%; bottom: 17%; animation-duration: 26s; animation-delay: -18s; }
+/* Los delays negativos son a propósito: al cargar la página las doce ya
+   están repartidas por el recorrido, en vez de arrancar las doce juntas
+   desde abajo como una bandada. */
+@keyframes mota {
+  0%   { opacity: 0; transform: translate3d(0, 0, 0) scale(.7); }
+  12%  { opacity: .9; }
+  64%  { opacity: .5; }
+  100% { opacity: 0; transform: translate3d(20px, -185px, 0) scale(1.15); }
+}
+@keyframes mota-b {
+  0%   { opacity: 0; transform: translate3d(0, 0, 0) scale(.75); }
+  14%  { opacity: .8; }
+  62%  { opacity: .45; }
+  100% { opacity: 0; transform: translate3d(-16px, -160px, 0) scale(1.1); }
+}
+@media (max-width: 860px) {
+  /* En vertical las motas caerían sobre el titular, que en móvil baja
+     al medio de la foto. Se quedan sólo en el tercio de arriba. */
+  .motas { inset: 0 0 58% 0; }
+}
 
 /* ── contenido de las láminas ── */
 .paso {
@@ -328,6 +426,19 @@ a { color: var(--luz); }
 
 /* ── LA PIEZA FIRMA — los seis datos del lugar ── */
 .datos { list-style: none; margin: 0 0 1.8rem; padding: 0; counter-reset: d; }
+
+/* A DOS COLUMNAS desde 64 rem. Las seis preguntas en una sola columna
+   dejaban media lámina de papel en blanco a la derecha y el bloque —que
+   es la mejor sección de la página— se leía como un borrador. La grilla
+   llena por filas, así que la columna izquierda queda 01·03·05 y la
+   derecha 02·04·06; los números en mono guían la lectura.
+   El filete de abajo pasa de :last-child a las DOS últimas: con
+   :last-child la columna izquierda quedaba abierta por abajo. */
+.lam--firma .lam__texto--ancho { max-width: min(100%, 68rem); }
+@media (min-width: 64rem) {
+  .datos { display: grid; grid-template-columns: 1fr 1fr; column-gap: clamp(2rem, 4vw, 3.5rem); }
+  .dato:nth-last-child(-n + 2) { border-bottom: 1px solid var(--linea); }
+}
 .dato {
   counter-increment: d;
   position: relative;
@@ -437,6 +548,18 @@ a { color: var(--luz); }
   /* Las tres ventanas ya encendidas, sin secuencia. La luz sigue
      estando, que es lo unico que la pagina promete. */
   .js .luz { opacity: 1; transition: none; }
+
+  /* Las motas SÍ se apagan del todo: son doce objetos en bucle
+     cruzando la pantalla, que es exactamente lo intrusivo. No basta
+     con parar la animación —quedarían doce puntos quietos sobre el
+     lago, que se leen como suciedad en la foto— así que se sacan. */
+  .motas { display: none; }
+
+  /* De las apariciones se apaga el DESPLAZAMIENTO, no la aparicion: un
+     fundido de opacidad no es movimiento, un salto de 16 px si. Si se
+     apagan las dos, la pagina se ve muerta — y en Windows esta
+     preferencia viene puesta de fabrica en la mitad de las maquinas. */
+  .js .rev { transform: none; }
 }
 
 /* ══════════════════════════════════════════════════════════════════
@@ -481,8 +604,17 @@ a { color: var(--luz); }
   from { transform: scale(1.04) translate3d(0, 0, 0); }
   to   { transform: scale(1.11) translate3d(-1.8%, -1.2%, 0); }
 }
-.js .portada--foto .portada__foto { opacity: 0; }
-.js .portada--foto.ok .portada__foto { opacity: 1; transition: opacity 1.1s ease; }
+/* LA FOTO DE PORTADA NO SE ESCONDE NUNCA.
+   Estaba colgada de una clase .ok que main.js no le ponía a nadie —el
+   observador de apariciones marcaba .lam__texto, que es el hijo, no la
+   sección— y el resultado era una portada azul lisa: la foto existía,
+   pesaba y no se veía. Arreglarlo poniendo la sección en la lista de
+   piezas habría sido peor, porque esa lista además agrega .rev, y .rev
+   esconde el elemento entero: escondería el titular.
+   Así que la regla es la de la casa llevada al extremo donde más
+   importa: el hero no depende del JavaScript. Su entrada la da el
+   ken-burns lento de `respira`, que es CSS puro y arranca solo. */
+.js .portada--foto .portada__foto { opacity: 1; }
 .js .portada.rev,
 .js .portada.rev.ok { opacity: 1; transform: none; transition: none; }
 @media (max-width: 860px) {
@@ -571,14 +703,25 @@ a { color: var(--luz); }
   background: var(--anochecer); overflow: hidden;
 }
 .cita__foto { position: absolute; inset: 0; z-index: -1; overflow: hidden; }
-.cita__foto img { display: block; width: 100%; height: 100%; object-fit: cover; object-position: 50% 44%; }
+/* El encuadre pone las ventanas encendidas a la altura del texto: son lo
+   que la frase nombra, y si quedan fuera de cuadro la banda es una casa
+   oscura cualquiera. */
+.cita__foto img { display: block; width: 100%; height: 100%; object-fit: cover; object-position: 50% 40%; }
 /* Velo parejo y fuerte: el texto va centrado y grande, encima de la foto
-   entera. Calculado sobre el peor caso —imagen del color contrario
-   detrás— para que el ratio aguante sin ensuciar la imagen. */
+   entera, asi que el gradiente lateral no sirve (medio texto quedaria
+   sobre .9 y medio sobre .3). Va plano-vertical.
+   PEOR CASO MEDIDO, y es el que manda: el reventon de luz de la ventana
+   es casi blanco (#FFD9A0) y cae justo a la altura del texto, donde el
+   velo vale .81. Ahi compone rgb(70,73,82); contra ese fondo el titular
+   en #F2EEE4 da 7,8:1 y el eco chico en #F5C86A da 5,7:1 — los dos
+   pasan AA aunque el eco sea de .82 rem.
+   El .60 de arriba no lleva texto encima: existe para que la techumbre
+   y el cielo se lean. Con .70 la banda se veia como un rectangulo negro
+   y la frase hablaba de una luz que no se distinguia. */
 .cita__foto::after {
   content: ""; position: absolute; inset: 0;
-  background: linear-gradient(180deg, rgba(27,39,64,.62) 0%,
-              rgba(27,39,64,.80) 45%, rgba(27,39,64,.88) 100%);
+  background: linear-gradient(180deg, rgba(27,39,64,.60) 0%,
+              rgba(27,39,64,.80) 45%, rgba(27,39,64,.90) 100%);
 }
 .cita__texto { margin: 0; max-width: 42rem; text-align: center; color: var(--crudo); }
 .cita__texto p {
@@ -603,6 +746,55 @@ a { color: var(--luz); }
   from { transform: scale(1.06) translate3d(0, 0, 0); }
   to   { transform: scale(1.13) translate3d(1.4%, -1%, 0); }
 }
+
+/* ══════════════════════════════════════════════════════════════════
+   LA CABAÑA POR DENTRO — el inventario
+   Cuatro fichas contadas mirando las fotos del negocio, y la tira de
+   abajo es la prueba de cada una. Las fichas son un escalón MÁS OSCURO
+   que su sección (--anochecer sobre --anochecer-2), al revés que en la
+   sección clara del medio, donde la tarjeta sube a blanco: sobre fondo
+   oscuro lo que separa una tarjeta del fondo es hundirla, no aclararla,
+   porque aclararla la volvería un panel gris.
+   Contraste medido sobre la ficha compuesta (#1D2943):
+   --claro-2 8,5:1 · --luz 9,2:1 · --crudo 13,9:1.
+   ══════════════════════════════════════════════════════════════════ */
+.dentro {
+  background: var(--anochecer-2);
+  padding: clamp(3rem, 8vh, 5.5rem) clamp(1.25rem, 5vw, 4rem);
+}
+.dentro__in { position: relative; z-index: 1; max-width: 72rem; margin: 0 auto; }
+.dentro h2 {
+  font-size: clamp(1.9rem, 5vw, 3.1rem); line-height: 1.06;
+  margin-bottom: 1.1rem; color: var(--crudo);
+}
+.dentro .entrada { max-width: min(100%, 44rem); }
+.dentro__lista {
+  list-style: none; margin: 0 0 1.8rem; padding: 0;
+  display: grid; gap: clamp(1rem, 2.2vw, 1.6rem);
+  grid-template-columns: repeat(auto-fit, minmax(15.5rem, 1fr));
+}
+.dentro__f {
+  background: rgba(27, 39, 64, .78);
+  border-left: 3px solid var(--luz);
+  border-radius: 0 10px 10px 0;
+  padding: 1.15rem 1.3rem 1.25rem;
+}
+.dentro__f h3 {
+  font-family: var(--display); font-weight: 500;
+  font-size: clamp(1.05rem, 2.2vw, 1.28rem); line-height: 1.16;
+  margin: 0 0 .55rem; color: var(--crudo);
+}
+.dentro__f p { font-size: .94rem; line-height: 1.6; color: var(--claro-2); margin: 0; }
+.dentro__falta { margin-top: .7rem !important; font-size: .88rem !important; }
+.dentro__pie {
+  font-size: .93rem; line-height: 1.6; color: var(--claro-2);
+  border-top: 1px solid var(--linea-osc); padding-top: 1.1rem;
+  margin: 0; max-width: 56rem;
+}
+/* El telón de madera va un punto más bajo que el de los árboles: la
+   foto es clara y pareja de arriba abajo, así que al .15 competía con
+   las fichas en vez de quedar atrás. Calibrado mirando. */
+.telon--madera img { opacity: .11; object-position: 50% 52%; }
 
 /* ── 5 · LA TIRA ── */
 .tira { display: grid; grid-template-columns: repeat(3, 1fr); gap: 2px; background: var(--linea-osc); }
@@ -651,10 +843,20 @@ a { color: var(--luz); }
   color: var(--claro-2); font-size: .96rem; line-height: 1.6;
 }
 .galeria__grilla { display: grid; gap: clamp(.9rem, 2vw, 1.6rem); grid-template-columns: 1fr 1fr; }
-.gal { margin: 0; background: var(--anochecer-2); border: 1px solid var(--linea-osc); padding: .6rem; }
+/* La figura es una columna flex y la foto NO lleva height:100%. Con
+   height:100% la imagen se comia el alto entero de la celda —que en una
+   grilla lo fija el pie mas largo— y el figcaption se salia por abajo:
+   la figura de la fila siguiente, que tiene fondo propio, lo tapaba y el
+   pie aparecia cortado a la mitad. Con aspect-ratio manda la proporcion
+   y el pie siempre cabe. */
+.gal {
+  margin: 0; background: var(--anochecer-2);
+  border: 1px solid var(--linea-osc); padding: .6rem;
+  display: flex; flex-direction: column;
+}
 .gal--abajo { grid-column: 1 / -1; }
 .gal img {
-  display: block; width: 100%; height: 100%;
+  display: block; width: 100%; height: auto; flex: 0 0 auto;
   aspect-ratio: 3 / 2; object-fit: cover;
   border-bottom: 3px solid var(--luz);
 }
@@ -702,13 +904,35 @@ a { color: var(--luz); }
 /* La clase es .tajo y no .banda ni .franja: hay demos que ya usan esos
    dos nombres para secciones propias, y chocaban. */
 .tajo {
-  position: relative; overflow: hidden;
+  position: relative; overflow: hidden; margin: 0;
   height: clamp(180px, 30svh, 340px);
   background: var(--anochecer-2);
 }
 .tajo img {
   display: block; width: 100%; height: 100%;
   object-fit: cover; object-position: 50% 50%;
+}
+
+/* ── TAJO CON FRASE ──
+   La variante que sí lleva letra: más alta, y con un velo que SUBE desde
+   abajo y arranca en alfa 0. Los dos tercios de arriba de la foto quedan
+   a foco completo; el velo sólo existe donde hay texto.
+   PEOR CASO MEDIDO: bajo el borde inferior la foto es agua dorada
+   (#F5C86A). Con el velo a .93 compone rgb(43,50,66), y contra el blanco
+   de la frase da 12,5:1. Vale con cualquier foto que se ponga después. */
+.tajo--frase { height: clamp(300px, 46svh, 460px); }
+.tajo--frase img { object-position: 50% 62%; }
+.tajo__txt {
+  position: absolute; inset: auto 0 0 0; margin: 0;
+  padding: clamp(3rem, 9vh, 6rem) clamp(1.25rem, 5vw, 4rem) 1.6rem;
+  background: linear-gradient(180deg, rgba(27,39,64,0) 0%,
+              rgba(27,39,64,.60) 44%, rgba(27,39,64,.86) 76%, rgba(27,39,64,.93) 100%);
+}
+.tajo__txt p {
+  margin: 0; max-width: 30ch;
+  font-family: var(--display); font-weight: 500;
+  font-size: clamp(1.15rem, 2.7vw, 1.9rem); line-height: 1.18;
+  color: #FFFFFF;
 }
 @media (prefers-reduced-motion: no-preference) {
   .tajo img { animation: deriva-tajo 54s ease-in-out infinite alternate; }
@@ -745,6 +969,27 @@ a { color: var(--luz); }
   to   { transform: scale(1.10) translate3d(-1.6%, -1%, 0); }
 }
 
+/* El telon de las brasas va un punto mas alto de opacidad y corrido a la
+   derecha: es una foto casi negra con un solo rectangulo de fuego, asi
+   que al .15 desaparecia entera. Calibrado mirando, no copiado: la regla
+   es 0,12–0,30 segun cuanto contraste traiga la foto. Y se corre para
+   que el fuego no caiga bajo el texto, sino al costado libre. */
+.telon--brasas img { opacity: .24; object-position: 68% 46%; }
+@media (max-width: 52rem) {
+  .telon--brasas img { opacity: .16; object-position: 50% 60%; }
+}
+
+/* El telón de la lámina de la llave: un interior de madera con la vista
+   al lago. Va corrido a la derecha, que es la mitad que el texto deja
+   libre, y a .17 — más que el de los árboles porque la foto es oscura y
+   al .15 se perdía entera, menos que el de las brasas porque acá hay
+   detalle en toda la superficie y no un solo rectángulo de luz.
+   Calibrado mirando, que es la regla: el número no se copia. */
+.telon--dentro img { opacity: .17; object-position: 72% 48%; }
+@media (max-width: 52rem) {
+  .telon--dentro img { opacity: .12; object-position: 50% 48%; }
+}
+
 /* ── MOSAICO ──
    Seis piezas en grilla. Es la unica parte de la pagina donde una
    imagen puede repetirse con otro recorte: a este tamano no se lee
@@ -777,7 +1022,23 @@ a { color: var(--luz); }
   display: block; width: 100%; height: 100%; object-fit: cover;
   transition: transform 1.1s cubic-bezier(.2,.7,.2,1), filter .6s ease;
 }
-.mos__p:nth-child(1), .mos__p:nth-child(6) { grid-column: span 2; }
+/* La primera va a dos columnas y la ultima a las tres: rompe la reticula
+   de seis iguales, que es lo que separa un mosaico de una tabla de
+   contactos, y ademas cierra la fila. Con la sexta a dos columnas
+   quedaba una celda vacia abajo a la derecha y el bloque se veia sin
+   terminar. */
+/* OCHO piezas y no seis: esta demo no lleva video de fondo, y la regla
+   de la casa dice que cuando no hay clip el mosaico sube a ocho para
+   compensar el peso visual que el video habría puesto.
+   El reparto en tres columnas suma 12 unidades exactas —2+1 · 1+1+1 ·
+   1+2 · 3— así que no queda ni una celda coja:
+     fila 1  [ 1 · 1 ]  2
+     fila 2    3   4    5
+     fila 3    6   [ 7 · 7 ]
+     fila 4  [ · · 8 · · ] */
+.mos__p:nth-child(1) { grid-column: span 2; }
+.mos__p:nth-child(7) { grid-column: span 2; }
+.mos__p:nth-child(8) { grid-column: 1 / -1; }
 @media (hover: hover) and (pointer: fine) {
   .mos__p:hover img { transform: scale(1.06); }
 }
@@ -791,10 +1052,312 @@ a { color: var(--luz); }
 .js .mos__p.ok:nth-child(4) { transition-delay: .18s; }
 .js .mos__p.ok:nth-child(5) { transition-delay: .24s; }
 .js .mos__p.ok:nth-child(6) { transition-delay: .30s; }
+.js .mos__p.ok:nth-child(7) { transition-delay: .36s; }
+.js .mos__p.ok:nth-child(8) { transition-delay: .42s; }
 @media (max-width: 760px) {
+  /* En dos columnas el reparto vuelve a cerrar: 2 · 1+1 · 1+1 · 1+1 · 2
+     son diez unidades justas en cinco filas. */
   .mos__grilla { grid-template-columns: 1fr 1fr; }
-  .mos__p:nth-child(1), .mos__p:nth-child(6) { grid-column: 1 / -1; }
+  .mos__p:nth-child(1), .mos__p:nth-child(8) { grid-column: 1 / -1; }
+  .mos__p:nth-child(7) { grid-column: auto; }
 }
 @media (prefers-reduced-motion: reduce) {
   .js .mos__p { opacity: 1; transform: none; }
 }
+
+/* ══════════════════════════════════════════════════════════════════
+   LA BANDA DE CIFRAS
+   La única banda clara pegada a la portada. Cuatro números en la misma
+   fila y con el mismo formato: dos que prueban que el negocio es bueno,
+   uno que dice lo que la página agrega, y el cero, que es la herida.
+   Que la herida use la MISMA tipografía que el 4,8 es el efecto: se lee
+   como un dato más y por eso duele.
+   Contraste sobre --crudo: --tinta 16:1 · --tinta-2 5,8:1 · --luz-osc 5,9:1.
+   ══════════════════════════════════════════════════════════════════ */
+.cifras {
+  background: var(--crudo);
+  color: var(--tinta);
+  padding: clamp(2.4rem, 6vw, 4rem) clamp(1.25rem, 5vw, 4rem);
+  border-bottom: 1px solid var(--linea);
+}
+.cifras__lista {
+  list-style: none; margin: 0 auto; padding: 0;
+  max-width: 78rem;
+  display: grid; gap: 1.6rem clamp(1.5rem, 4vw, 3.5rem);
+  grid-template-columns: repeat(auto-fit, minmax(11rem, 1fr));
+}
+.cifras__lista li {
+  padding-left: 1rem;
+  border-left: 3px solid var(--linea);
+}
+.cifras__lista b {
+  display: block;
+  font-family: var(--display); font-weight: 500;
+  font-size: clamp(2.3rem, 5.4vw, 3.6rem); line-height: 1;
+  letter-spacing: -.02em;
+  font-variant-numeric: tabular-nums;
+  margin-bottom: .35rem;
+}
+.cifras__lista span {
+  display: block;
+  font-size: .9rem; line-height: 1.45;
+  color: var(--tinta-2);
+  max-width: 22ch;
+}
+/* La herida: mismo cuerpo, otro color, y el filete en el amarillo de la
+   página. No lleva contador — un cero que sube desde cero es un truco. */
+.cifras__herida { border-left-color: var(--luz-osc); }
+.cifras__herida b { color: var(--luz-osc); }
+.cifras__pie {
+  max-width: 78rem; margin: 1.8rem auto 0;
+  font-family: var(--dato); font-size: .72rem; line-height: 1.6;
+  color: var(--tinta-2);
+}
+
+/* ══════════════════════════════════════════════════════════════════
+   EL PORTAL Y EL VECINO — la sección clara del medio
+   Dos columnas y ni un dato del negocio: es el argumento escrito, que
+   es lo que el dueño necesita ver para entender por qué una página
+   propia no es lo mismo que aparecer en un portal.
+   La de la izquierda va en gris y con la viñeta apagada; la de la
+   derecha lleva el filete amarillo y la ventana como viñeta.
+   ══════════════════════════════════════════════════════════════════ */
+.contra {
+  background: var(--crudo);
+  color: var(--tinta);
+  padding: clamp(3rem, 8vh, 5.5rem) clamp(1.25rem, 5vw, 4rem);
+}
+.contra__in { max-width: 72rem; margin: 0 auto; }
+.contra .paso { color: var(--luz-osc); }
+.contra h2 {
+  font-size: clamp(1.9rem, 5vw, 3.1rem); line-height: 1.06;
+  margin-bottom: 1rem;
+}
+.contra .entrada { color: var(--tinta-2); }
+.contra__cols {
+  display: grid; gap: clamp(1.2rem, 3vw, 2.2rem);
+  grid-template-columns: repeat(auto-fit, minmax(17rem, 1fr));
+  margin-bottom: 1.8rem;
+}
+.contra__col { padding: 1.4rem 1.5rem 1.5rem; border-radius: 10px; }
+.contra__col h3 {
+  font-family: var(--dato); font-weight: 400;
+  font-size: .72rem; letter-spacing: .1em; text-transform: uppercase;
+  line-height: 1.5; margin-bottom: 1rem;
+}
+.contra__col ul { list-style: none; margin: 0; padding: 0; }
+.contra__col li {
+  position: relative; padding-left: 1.5rem;
+  margin-bottom: .75rem; font-size: .98rem; line-height: 1.55;
+}
+.contra__col li:last-child { margin-bottom: 0; }
+/* La viñeta es la ventana de la cabecera, en chico: cuadrado con cruz.
+   En la columna fría va apagada y en la tibia va encendida. */
+.contra__col li::before {
+  content: ''; position: absolute; left: 0; top: .48em;
+  width: 9px; height: 10px; border-radius: 1px;
+}
+/* Tercer nivel de claridad dentro de la sección clara: la tarjeta fría
+   se hunde un escalón (--crudo-2) y la tibia sube a blanco puro. Sin
+   eso las dos se leerían como un solo bloque de color. */
+.contra__col--frio {
+  background: var(--crudo-2);
+  color: var(--tinta-2);
+}
+.contra__col--frio h3 { color: var(--tinta-2); }
+.contra__col--frio li::before { background: #B4AC98; }
+.contra__col--tibio {
+  background: #FFFFFF;
+  border-left: 4px solid var(--luz-osc);
+  color: var(--tinta);
+}
+.contra__col--tibio h3 { color: var(--luz-osc); }
+.contra__col--tibio li::before { background: var(--incandescente); box-shadow: 0 0 8px rgba(223,168,62,.55); }
+.contra__pie {
+  font-size: .93rem; line-height: 1.6; color: var(--tinta-2);
+  border-top: 1px solid var(--linea); padding-top: 1.1rem;
+  margin: 0; max-width: 52rem;
+}
+
+/* ══════════════════════════════════════════════════════════════════
+   LA FICHA DEL CIERRE
+   Columna fija de 11 rem y filete por fila: se lee como ficha técnica y
+   no como tabla de contacto. Lo que falta va marcado con su etiqueta, y
+   la etiqueta dice de quién depende — no un genérico «ejemplo».
+   ══════════════════════════════════════════════════════════════════ */
+.ficha {
+  max-width: 44rem; margin: 2.6rem auto 0; text-align: left;
+  border-top: 1px solid var(--linea-osc);
+}
+.ficha > div {
+  display: grid; grid-template-columns: 11rem minmax(0, 1fr);
+  gap: .2rem 1.4rem;
+  padding: .75rem 0;
+  border-bottom: 1px solid var(--linea-osc);
+}
+.ficha dt {
+  font-family: var(--dato); font-size: .7rem; letter-spacing: .08em;
+  text-transform: uppercase; color: var(--claro-2); padding-top: .22rem;
+}
+.ficha dd { margin: 0; font-size: .96rem; }
+.ficha dd a { text-decoration: none; font-family: var(--dato); }
+.ficha dd a:hover { text-decoration: underline; }
+.ficha__ej { position: relative; display: inline-block; }
+.ficha__ej::after {
+  content: attr(data-ejemplo);
+  display: block; margin-top: .15rem;
+  font-family: var(--dato); font-size: .62rem; letter-spacing: .06em;
+  text-transform: uppercase; color: var(--claro-2);
+}
+@media (max-width: 40rem) {
+  .ficha > div { grid-template-columns: 1fr; }
+}
+
+/* ══════════════════════════════════════════════════════════════════
+   EL CIERRE EN DOS COLUMNAS — ficha y mapa
+   La ficha iba sola, centrada y con media pantalla de azul vacío
+   debajo. Al lado va el mapa del pueblo, que es lo que contesta la
+   pregunta que la ficha deja abierta: dónde queda esto.
+   ══════════════════════════════════════════════════════════════════ */
+.cierre__cols {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  gap: clamp(1.6rem, 4vw, 3rem);
+  align-items: start;
+  max-width: 72rem;
+  margin: 2.8rem auto 0;
+  text-align: left;
+}
+.cierre__cols .ficha { margin: 0; max-width: none; }
+
+/* ── MAPA DE UBICACIÓN ──────────────────────────────────────────────
+   Imagen propia, servida desde este mismo dominio: la CSP no deja
+   cargar mosaicos de OpenStreetMap ni un iframe de Google en vivo.
+   La atribución de OSM va VISIBLE en el pie: la licencia ODbL la
+   exige y sin ella el mapa no se puede publicar.
+   El recorte a 4/3 saca la franja de bosque de abajo y deja el pueblo
+   y la playa, que es lo que hay que mirar. */
+.mapa {
+  margin: 0;
+  border: 1px solid var(--linea-osc);
+  border-radius: 12px;
+  overflow: hidden;
+  background: var(--anochecer-2);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, .28);
+}
+.mapa img {
+  display: block; width: 100%; height: auto;
+  aspect-ratio: 4 / 3; object-fit: cover; object-position: 50% 42%;
+}
+.mapa__pie {
+  display: flex; flex-wrap: wrap; align-items: baseline;
+  gap: .3rem 1.2rem;
+  padding: .8rem 1rem 1rem;
+  font-family: var(--dato); font-size: .68rem; line-height: 1.5;
+  color: var(--claro-2);
+  border-top: 1px solid var(--linea-osc);
+}
+.mapa__ej { display: block; width: 100%; color: var(--crudo); }
+.mapa__ej::after {
+  content: attr(data-ejemplo);
+  display: block; margin-top: .12rem;
+  font-size: .62rem; letter-spacing: .06em; text-transform: uppercase;
+  color: var(--claro-2);
+}
+.mapa__cred a { color: var(--claro-2); }
+.mapa__ir {
+  margin-left: auto;
+  min-height: 44px; display: inline-flex; align-items: center;
+  color: var(--luz); text-decoration: none;
+  font-size: .74rem; letter-spacing: .04em;
+}
+.mapa__ir span { display: inline-block; margin-left: .35rem; transition: transform .25s ease; }
+.mapa__ir:hover { text-decoration: underline; }
+.mapa__ir:hover span { transform: translateX(4px); }
+@media (max-width: 58rem) {
+  .cierre__cols { grid-template-columns: 1fr; }
+  .mapa__ir { margin-left: 0; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .mapa__ir:hover span { transform: none; }
+}
+
+/* ══════════════════════════════════════════════════════════════════
+   CASCADA — el escalonado de los hijos de una grilla
+   El contenedor entra como UNA pieza y se neutraliza; los que animan
+   son los hijos, con el retardo por --i. Si no se neutraliza el
+   contenedor, contenedor e hijos bajan a la vez y el grupo entero se
+   desplaza el doble.
+   El --i va por nth-child en el CSS y NUNCA en un style="--i:3": la CSP
+   de esta página no permite el atributo style y lo bloquearía sin dejar
+   un solo error a la vista.
+   ══════════════════════════════════════════════════════════════════ */
+.js .cascada.rev      { opacity: 1; transform: none; transition: none; }
+.js .cascada.rev > *  { opacity: 0; transform: translateY(22px); }
+.js .cascada.rev.ok > * {
+  opacity: 1; transform: none;
+  transition: opacity .32s ease-out, transform .6s cubic-bezier(.2,.7,.2,1);
+  transition-delay: calc(var(--i, 0) * 70ms);
+}
+.cascada > :nth-child(1) { --i: 0; }
+.cascada > :nth-child(2) { --i: 1; }
+.cascada > :nth-child(3) { --i: 2; }
+.cascada > :nth-child(4) { --i: 3; }
+.cascada > :nth-child(5) { --i: 4; }
+.cascada > :nth-child(6) { --i: 5; }
+@media (prefers-reduced-motion: reduce) {
+  /* El fundido se queda —no es movimiento—; el desplazamiento se va. */
+  .js .cascada.rev > * { transform: none; }
+}
+
+/* ══════════════════════════════════════════════════════════════════
+   WHATSAPP FLOTANTE
+   Botón fijo abajo a la derecha, 56 px de alto: por encima de los 44 del
+   mínimo táctil. Verde de WhatsApp a propósito — se reconoce sin leerlo,
+   y eso es lo que hace que se toque. Letra #07310F sobre #25D366: 7,3:1.
+
+   La dirección del truco importa: el botón se ve SIEMPRE por defecto y
+   el JS sólo lo esconde mientras el visitante está en la portada, para
+   no tapar el titular. Si el script no arranca, o si rescate.js quita la
+   clase .js, el botón queda visible, que es el estado que vende. Al
+   revés —oculto por defecto, revelado por JS— un fallo del script se
+   lleva el CTA principal.
+
+   El número es el DEL NEGOCIO, el mismo de los tel:. El de CristalWeb
+   vive sólo en la sección del dueño: confundirlos manda los clientes del
+   cliente al teléfono equivocado.
+   ══════════════════════════════════════════════════════════════════ */
+.wapp {
+  position: fixed;
+  right: max(1rem, env(safe-area-inset-right, 0px));
+  bottom: max(1rem, env(safe-area-inset-bottom, 0px));
+  z-index: 60;
+  display: inline-flex; align-items: center; gap: .55rem;
+  height: 56px; padding: 0 1.15rem 0 1rem;
+  border-radius: 999px;
+  background: #25D366;
+  color: #07310F;
+  text-decoration: none;
+  font-family: var(--display); font-weight: 600;
+  font-size: .95rem; line-height: 1;
+  box-shadow: 0 6px 18px rgba(0,0,0,.34), 0 2px 6px rgba(0,0,0,.22);
+  transition: opacity .28s ease, transform .28s ease, box-shadow .18s ease;
+}
+.wapp__i { width: 22px; height: 22px; flex: 0 0 auto; fill: currentColor; }
+.wapp:hover { box-shadow: 0 10px 26px rgba(0,0,0,.4), 0 2px 6px rgba(0,0,0,.24); transform: translateY(-2px); }
+.wapp:focus-visible { outline: 3px solid var(--luz); outline-offset: 3px; }
+/* Apartado mientras la portada ocupa más de la mitad de la ventana. */
+.wapp--arriba { opacity: 0; transform: translateY(1.2rem) scale(.94); pointer-events: none; }
+@media (max-width: 520px) {
+  /* Bajo 520 px queda el círculo: el rótulo se recorta sin salir del DOM,
+     así el lector de pantalla sigue teniendo el aria-label del enlace. */
+  .wapp { padding: 0; width: 56px; justify-content: center; }
+  .wapp__t { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); }
+}
+@media (prefers-reduced-motion: reduce) {
+  .wapp { transition: opacity .28s ease; }
+  .wapp:hover { transform: none; }
+}
+
+/* El pie deja aire abajo para que el botón flotante no se le encime. */
+.pie { padding-bottom: 6.5rem; }

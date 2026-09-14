@@ -1,0 +1,22 @@
+FUENTES DE LAS IMAGENES - Escuela FU Rehecha el 13-09-2026 (presentacion antes que texto). Fotos de REFERENCIA de bancos libres: ninguna es del local; las verdaderas las tiene que mandar el negocio. 
+port-01.jpg  <-  pozo-p-fu-carpeta\005.jpg  |  pexels (Pexels License)  |  autor: George Diamanto  |  https://www.pexels.com/es-es/foto/vintage-filas-hileras-rema-11176866/  |  consulta: "document folder"
+hund1-01.jpg  <-  pozo-p-fu-lista\002.jpg  |  pexels (Pexels License)  |  autor: Towfiqu barbhuiya  |  https://www.pexels.com/es-es/foto/boligrafo-circulos-comprobado-rotulador-11412596/  |  consulta: "checklist pen"
+hund2-01.jpg  <-  pozo-p-fu-camino\006.jpg  |  pexels (Pexels License)  |  autor: Atahan Demir  |  https://www.pexels.com/es-es/foto/carretera-amanecer-curva-curvar-17601807/  |  consulta: "car driving road"
+hund3-01.jpg  <-  pozo-p-fu-camino\005.jpg  |  pexels (Pexels License)  |  autor: Rockwell branding agency  |  https://www.pexels.com/es-es/foto/carretera-coche-vehiculo-curvas-9137794/  |  consulta: "car driving road"
+hund4-01.jpg  <-  pozo-p-fu-camino\012.jpg  |  pexels (Pexels License)  |  autor: LJs Journey  |  https://www.pexels.com/es-es/foto/carretera-recto-viaje-viajar-18214342/  |  consulta: "car driving road"
+hund5-01.jpg  <-  pozo-p-fu-espera\012.jpg  |  pexels (Pexels License)  |  autor: RDNE Stock project  |  https://www.pexels.com/es-es/foto/oficina-sofas-muebles-mobiliario-7845311/  |  consulta: "office waiting room"
+hund6-01.jpg  <-  pozo-p-fu-corchetera\009.jpg  |  pexels (Pexels License)  |  autor: https://kaboompics.com/  |  https://www.pexels.com/es-es/foto/naturaleza-muerta-suministros-de-oficina-perforadora-perforadora-de-papel-5882691/  |  consulta: "stapler paper"
+banda-01.jpg  <-  pozo-p-fu-conos\009.jpg  |  pexels (Pexels License)  |  autor: Jan van der Wolf  |  https://www.pexels.com/es-es/foto/carretera-precaucion-hormigon-asfalto-14534214/  |  consulta: "traffic cones parking"
+cita-01.jpg  <-  pozo-p-fu-camino\010.jpg  |  pexels (Pexels License)  |  autor: Florian Süß  |  https://www.pexels.com/es-es/foto/carretera-sol-coche-prado-14381379/  |  consulta: "car driving road"
+mos1-01.jpg  <-  pozo-p-fu-corchetera\002.jpg  |  pexels (Pexels License)  |  autor: DS stories  |  https://www.pexels.com/es-es/foto/grapadora-papel-de-cerca-6991328/  |  consulta: "stapler paper"
+mos2-01.jpg  <-  pozo-p-fu-papeles\004.jpg  |  pexels (Pexels License)  |  autor: RDNE Stock project  |  https://www.pexels.com/es-es/foto/boligrafo-composicion-papeleo-datos-7821566/  |  consulta: "paperwork desk pen"
+mos3-01.jpg  <-  pozo-p-fu-conos\008.jpg  |  pexels (Pexels License)  |  autor: Ann H  |  https://www.pexels.com/es-es/foto/conos-de-trafico-3095695/  |  consulta: "traffic cones parking"
+mos4-01.jpg  <-  pozo-p-fu-papeles\006.jpg  |  pexels (Pexels License)  |  autor: Mikhail Nilov  |  https://www.pexels.com/es-es/foto/documento-mesa-de-madera-naturaleza-muerta-portapapeles-7682243/  |  consulta: "paperwork desk pen"
+mos5-01.jpg  <-  pozo-p-fu-carpeta\011.jpg  |  pexels (Pexels License)  |  autor: RDNE Stock project  |  https://www.pexels.com/es-es/foto/escritorio-boligrafo-colorido-de-colores-7414277/  |  consulta: "document folder"
+mos6-01.jpg  <-  pozo-p-fu-corchetera\010.jpg  |  pexels (Pexels License)  |  autor: https://kaboompics.com/  |  https://www.pexels.com/es-es/foto/oficina-clips-vista-superior-fondo-blanco-5412236/  |  consulta: "stapler paper"
+
+BRUMA (bruma-pag-0N.png y bruma-osc-0N.png, 30x20): las MISMAS fotos, recortadas a 3:2, reducidas y
+recoloreadas con C:\devs\demos\hacer-bruma.ps1 (clara >= 0,68 de luminancia / oscura <= 0,05). No suman fuentes.
+    pagina: port-01.jpg, cita-01.jpg, mos5-01.jpg, hund5-01.jpg, banda-01.jpg   |   oscuras: port-01.jpg, banda-01.jpg, cita-01.jpg
+
+MAPA: iframe de Google Maps (embed publico, sin clave). No hay imagen de mapa.

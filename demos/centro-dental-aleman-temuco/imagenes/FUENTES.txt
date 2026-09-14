@@ -1,0 +1,22 @@
+FUENTES DE LAS IMAGENES - Centro Dental Aleman Rehecha el 13-09-2026 (presentacion antes que texto). Fotos de REFERENCIA de bancos libres: ninguna es del local; las verdaderas las tiene que mandar el negocio. 
+port-01.jpg  <-  pozo-p-cda-clinica\003.jpg  |  pexels (Pexels License)  |  autor: Tima Miroshnichenko  |  https://www.pexels.com/es-es/foto/por-encima-de-la-cabeza-gastos-generales-cuidado-dental-esteril-5355863/  |  consulta: "dental clinic interior"
+hund1-01.jpg  <-  pozo-p-cda-cepillo\001.jpg  |  pexels (Pexels License)  |  autor: Cristina De Luis  |  https://www.pexels.com/es-es/foto/de-madera-bote-de-cristal-cepillos-de-dientes-productos-de-higiene-5588670/  |  consulta: "toothbrush"
+hund2-01.jpg  <-  pozo-p-cda-ortodoncia\006.jpg  |  pexels (Pexels License)  |  autor: Goran Grudić  |  https://www.pexels.com/es-es/foto/modelo-maqueta-medicina-dientes-19328507/  |  consulta: "orthodontic braces"
+hund3-01.jpg  <-  pozo-p-cda-implante\003.jpg  |  pexels (Pexels License)  |  autor: cottonbro studio  |  https://www.pexels.com/es-es/foto/toma-de-primer-plano-del-modelo-de-implante-dental-6502305/  |  consulta: "dental implant model"
+hund4-01.jpg  <-  pozo-p-cda-corona\007.jpg  |  pexels (Pexels License)  |  autor: Arvind Philomin  |  https://www.pexels.com/es-es/foto/vaso-cristal-vidrio-reflejo-12712256/  |  consulta: "dental crown"
+hund5-01.jpg  <-  pozo-p-cda-protesis\003.jpg  |  pexels (Pexels License)  |  autor: Dr.Herumb  Sharma  |  https://www.pexels.com/es-es/foto/modelo-maqueta-dientes-mandibula-20216277/  |  consulta: "denture"
+hund6-01.jpg  <-  pozo-p-cda-bandeja\011.jpg  |  pexels (Pexels License)  |  autor: https://kaboompics.com/  |  https://www.pexels.com/es-es/foto/dental-espejo-bucal-instrumentos-medicos-bandeja-de-plata-6627669/  |  consulta: "dentist tools tray"
+banda-01.jpg  <-  pozo-p-cda-cepillo\011.jpg  |  pexels (Pexels License)  |  autor: Raj Gautam  |  https://www.pexels.com/es-es/foto/primer-plano-de-un-cepillo-de-dientes-de-bambu-en-un-entorno-oscuro-35333420/  |  consulta: "toothbrush"
+cita-01.jpg  <-  pozo-p-cda-implante\006.jpg  |  pexels (Pexels License)  |  autor: Jonathan Borba  |  https://www.pexels.com/es-es/foto/creativo-metal-modelo-maqueta-4687905/  |  consulta: "dental implant model"
+mos1-01.jpg  <-  pozo-p-cda-clinica\006.jpg  |  pexels (Pexels License)  |  autor: . MM Dental .  |  https://www.pexels.com/es-es/foto/fotografia-en-escala-de-grises-de-un-sillon-dental-en-una-clinica-dental-9062527/  |  consulta: "dental clinic interior"
+mos2-01.jpg  <-  pozo-p-cda-bandeja\007.jpg  |  pexels (Pexels License)  |  autor: Nadezhda Moryak  |  https://www.pexels.com/es-es/foto/naturaleza-muerta-odontologia-plano-cenital-flatlay-7800526/  |  consulta: "dentist tools tray"
+mos3-01.jpg  <-  pozo-p-cda-protesis\005.jpg  |  pexels (Pexels License)  |  autor: Nadezhda Moryak  |  https://www.pexels.com/es-es/foto/manos-sujetando-medicina-guantes-7800523/  |  consulta: "denture"
+mos4-01.jpg  <-  pozo-p-cda-clinica\004.jpg  |  pexels (Pexels License)  |  autor: Cedric Fauntleroy  |  https://www.pexels.com/es-es/foto/clinica-adentro-naturaleza-muerta-silla-dental-4269264/  |  consulta: "dental clinic interior"
+mos5-01.jpg  <-  pozo-p-cda-implante\011.jpg  |  pexels (Pexels License)  |  autor: Jonathan Borba  |  https://www.pexels.com/es-es/foto/creativo-vaso-cristal-vidrio-4687908/  |  consulta: "dental implant model"
+mos6-01.jpg  <-  pozo-p-cda-ortodoncia\008.jpg  |  pexels (Pexels License)  |  autor: cottonbro studio  |  https://www.pexels.com/es-es/foto/dientes-dentadura-postiza-estomatologia-tiro-vertical-6502294/  |  consulta: "orthodontic braces"
+
+BRUMA (bruma-pag-0N.png y bruma-osc-0N.png, 30x20): las MISMAS fotos, recortadas a 3:2, reducidas y
+recoloreadas con C:\devs\demos\hacer-bruma.ps1 (clara >= 0,68 de luminancia / oscura <= 0,05). No suman fuentes.
+    pagina: port-01.jpg, banda-01.jpg, hund3-01.jpg, hund6-01.jpg, mos1-01.jpg, mos4-01.jpg, hund5-01.jpg, cita-01.jpg   |   oscuras: hund5-01.jpg, mos4-01.jpg, banda-01.jpg
+
+MAPA: iframe de Google Maps (embed publico, sin clave). No hay imagen de mapa.

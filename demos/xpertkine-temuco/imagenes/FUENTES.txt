@@ -50,3 +50,10 @@ LO QUE FALTA — y acá es casi todo
    la página, a la espera.
 3. El box, si atiende también en consulta, y una foto de un ejercicio
    real hecho en la casa de un paciente — con su permiso.
+
+MAPA DE UBICACION — mapa-01.jpg
+  768 x 768 · zoom 14 · centro -38.7358908, -72.590538
+  Mosaicos de OpenStreetMap pegados en una sola imagen, con el marcador
+  dibujado encima. Datos (c) OpenStreetMap contributors, licencia ODbL:
+  la atribucion tiene que ir VISIBLE junto al mapa, en el pie de la figura.
+  https://www.openstreetmap.org/copyright

@@ -20,7 +20,7 @@
 
 <div class="propuesta">
   <p class="propuesta__que">Propuesta de sitio web — preparada para <b>Haustiere Centro Veterinario</b> por CristalWeb</p>
-  <p class="propuesta__gancho">En la ciudad más alemana de Chile, la veterinaria que se llama «mascotas» en alemán no aparece cuando alguien busca veterinaria en Google. El nombre ya cuenta una historia; falta la página que la cuente completa.</p>
+  <p class="propuesta__gancho">5.362 personas los siguen en Instagram y su agenda en línea ya toma horas; el dominio <b>haustiere.cl</b> no existe y lo único propio que hay en la web es esa ficha de reservas (comprobado el 08-09-2026). En la ciudad más alemana de Chile, la veterinaria que se llama «mascotas» en alemán no tiene dónde explicar lo que hace. Ésta es la página que debería estar ahí.</p>
 </div>
 
 <header class="cab" id="cab">
@@ -41,9 +41,13 @@
 
 <!-- ═══════════ PORTADA ═══════════ -->
 <section class="portada" id="portada" aria-labelledby="t-portada">
+  <!-- La foto es la base y el clip se funde encima cuando puede
+       reproducirse: sin poster= porque un poster desaparece al primer
+       fotograma y acá el <img> se queda para siempre debajo. -->
   <div class="portada__foto" aria-hidden="true">
     <img src="imagenes/port-01.jpg" width="2560" height="1707"
          decoding="async" fetchpriority="high" alt="">
+    <video class="portada__video" data-src="video/port.mp4" muted playsinline loop preload="none" aria-hidden="true"></video>
   </div>
 
   <!-- ═══════ ESCENA DE PORTADA · «la cola que se mueve» ═══════
@@ -62,7 +66,6 @@
         C17 72 14 72 14 70 Z"/>
       <path class="escena__cola" d="M154 148 C172 144 188 154 190 170
         C191 180 186 187 181 186 C179 178 172 169 162 165 C157 163 154 157 154 148 Z"/>
-        C187 181 182 188 177 187 C175 179 169 171 159 167 C154 165 151 158 150 148 Z"/>
     </svg>
   </div>
 
@@ -81,6 +84,40 @@
       <a class="boton" href="#diccionario">Ver el diccionario</a>
       <a class="boton boton--linea" href="#cuando">Cuándo traerlo</a>
     </div>
+  </div>
+</section>
+
+
+<!-- ═══════════ CIFRAS ═══════════
+     Los cuatro números salen de datos comprobados el 08-09-2026: los
+     dos primeros del propio perfil público de Instagram, el tercero es
+     aritmética de esta página y el cuarto es la herida —el dominio
+     haustiere.cl no resuelve—. El único que cuenta es el que costó
+     verificar; el 0 se queda quieto, porque un cero que sube es un
+     chiste. El destaque de la herida se hace INVIRTIENDO el bloque,
+     que es la regla de identidad de esta demo: no hay color de acento
+     que se pueda usar para destacar. -->
+<section class="cifras" aria-label="Haustiere en números, verificado el 8 de septiembre de 2026">
+  <ul class="cifras__lista ancho">
+    <li>
+      <b data-cuenta="5362">5.362</b>
+      <span>personas los siguen en Instagram</span>
+    </li>
+    <li>
+      <b>213</b>
+      <span>publicaciones ya hechas allá</span>
+    </li>
+    <li>
+      <b>8</b>
+      <span>palabras del oficio traducidas acá</span>
+    </li>
+    <li class="cifra--herida">
+      <b>0</b>
+      <span>páginas propias · haustiere.cl no existe</span>
+    </li>
+  </ul>
+  <div class="ancho">
+    <p class="cifras__pie">Instagram <span class="mono">@somos_haustiere</span> y su agenda pública <span class="mono">somoshaustiere.skedu.com</span>, consultados el 08-09-2026. El dominio se comprobó el mismo día: no resuelve.</p>
   </div>
 </section>
 
@@ -177,24 +214,71 @@
 </figure>
 
 
-<!-- ═══════════ SERVICIOS ═══════════ -->
+<!-- ═══════════ SERVICIOS ═══════════
+     Los ocho títulos NO son inventados: son las categorías que el propio
+     centro tiene publicadas en su agenda en línea (somoshaustiere.skedu.com,
+     consultada el 08-09-2026). Lo que sí es nuestro es la frase de abajo de
+     cada uno, y la nota lo dice con todas sus letras. Por eso esta lista ya
+     no lleva la caja punteada de «ejemplo»: los títulos están verificados. -->
 <section class="servicios" id="servicios" aria-labelledby="t-serv">
   <div class="ancho">
     <p class="rotulo">Servicios</p>
     <h2 class="titulo" id="t-serv">Qué se hace acá.</h2>
     <p class="entradilla">
-      Esta lista es <b>ejemplo</b> hasta que el centro la confirme. Se
-      arma en una conversación y es lo primero que busca un cliente
-      nuevo.
+      Las ocho categorías son <b>las que ustedes mismos publican</b> en su
+      agenda en línea. Acá están juntas, en una sola pantalla, que es como
+      las busca alguien que todavía no es cliente.
     </p>
-    <ul class="serv ej" data-ejemplo="por confirmar">
-      <li><h3>Consulta clínica</h3><p>Evaluación completa y plan de qué sigue, por escrito.</p></li>
-      <li><h3>Vacunas</h3><p>Calendario según edad, salidas y convivencia.</p></li>
-      <li><h3>Cirugía</h3><p>Programada, con ayuno indicado y control posterior.</p></li>
-      <li><h3>Exámenes</h3><p>Los que se toman acá y los que se derivan, dicho antes.</p></li>
-      <li><h3>Odontología</h3><p>Limpieza y evaluación de la boca bajo anestesia.</p></li>
-      <li><h3>Control de peso</h3><p>Seguimiento con números, no con impresiones.</p></li>
+    <ul class="serv">
+      <li><h3>Consultas veterinarias</h3><p>La atención general: revisión completa y el plan de qué sigue.</p></li>
+      <li><h3>Consultas de especialidad</h3><p>Cuando el caso pide a alguien con otra formación, sin salir del mismo centro.</p></li>
+      <li><h3>Perros · vacunas y servicios</h3><p>El calendario y lo que va con él, según la edad y la vida que lleva.</p></li>
+      <li><h3>Gatos · vacunas y servicios</h3><p>Lo mismo para el gato, que se maneja distinto desde que entra por la puerta.</p></li>
+      <li><h3>Exámenes clínicos</h3><p>Los que se toman acá y los que se derivan, dicho antes de tomarlos.</p></li>
+      <li><h3>Citas de control</h3><p>El después: la hora que confirma si lo indicado está funcionando.</p></li>
+      <li><h3>Certificado sanitario para viajes</h3><p>El papel que piden para viajar con el animal, dentro y fuera del país.</p></li>
+      <li><h3>Microchip de identificación</h3><p>El número que devuelve al animal a su casa si se pierde.</p></li>
     </ul>
+    <p class="nota">
+      Los ocho títulos salen de su propia agenda en línea, consultada el
+      08-09-2026. La frase que acompaña a cada uno la escribimos nosotros
+      para que se entienda de qué se trata: si alguna no corresponde, se
+      cambia en un minuto.
+    </p>
+  </div>
+</section>
+
+
+<!-- ═══════════ MITADES · QUÉ TRAER ═══════════
+     Banda invertida: la foto ocupa media pantalla y el texto va sobre
+     tinta. Rompe la seguidilla de tres bandas claras (servicios ·
+     esto · cuándo traerlo) y es lo único de la página que se lee como
+     una lista de tareas para el dueño del animal. -->
+<section class="mit" id="traer" aria-labelledby="t-mit">
+  <div class="mit__foto">
+    <img src="imagenes/mit-01.jpg" width="1600" height="2050" loading="lazy" decoding="async"
+         alt="Un perro viejo echado sobre la camilla, con la mano enguantada del veterinario apoyada en su lomo">
+  </div>
+  <div class="mit__txt">
+    <p class="rotulo rotulo--claro">La primera vez</p>
+    <h2 class="titulo titulo--claro" id="t-mit">Qué conviene traer.</h2>
+    <p class="entradilla entradilla--clara">
+      Cinco cosas que no cuestan nada y que cambian la consulta entera.
+      Ninguna es un examen: son <b>datos</b>, y son los que el animal no
+      puede dar.
+    </p>
+    <ol class="traer">
+      <li><b>El carné de vacunas</b>, aunque esté incompleto o venga de otra parte. Incompleto sirve; de memoria, no.</li>
+      <li><b>Desde cuándo pasa</b> lo que pasa, con fecha si se acuerda. «Hace tiempo» y «desde el lunes» no son lo mismo.</li>
+      <li><b>Qué come y cuánto al día.</b> La cantidad, no sólo el nombre de la comida.</li>
+      <li><b>Qué se le ha dado</b> y quién lo indicó. Incluye lo que se le dio en la casa sin receta.</li>
+      <li><b>Un video corto</b> de lo que hace en la casa. La tos, la cojera y el temblor casi nunca se repiten en la consulta.</li>
+    </ol>
+    <p class="nota nota--clara">
+      Es una lista de preparación, no un diagnóstico ni una indicación:
+      qué tiene el animal y qué se hace lo decide el veterinario con él
+      adelante.
+    </p>
   </div>
 </section>
 
@@ -202,7 +286,7 @@
 <!-- ═══════════ CUÁNDO TRAERLO · con telón ═══════════ -->
 <section class="cuando con-telon" id="cuando" aria-labelledby="t-cua">
   <div class="telon" aria-hidden="true">
-    <img src="imagenes/telon-01.jpg" width="1200" height="798" loading="lazy" decoding="async" alt="">
+    <img src="imagenes/telon-01.jpg" width="1200" height="800" loading="lazy" decoding="async" alt="">
   </div>
   <div class="ancho">
     <p class="rotulo">Cuándo traerlo</p>
@@ -232,6 +316,7 @@
 <!-- ═══════════ CITA ═══════════ -->
 <figure class="cita" aria-label="Sobre el nombre">
   <img src="imagenes/cita-01.jpg" width="2200" height="1467" loading="lazy" decoding="async" alt="">
+  <video class="cita__video" data-src="video/cita.mp4" muted playsinline loop preload="none" aria-hidden="true"></video>
   <blockquote class="cita__txt">
     <p>«Haustiere: los animales de la casa. El nombre ya dice de qué se
        trata — falta que Google lo sepa.»</p>
@@ -246,12 +331,67 @@
     <h2 class="titulo" id="t-mos">Die Haustiere.</h2>
   </div>
   <div class="mos__grilla">
-    <figure class="mos__p"><img src="imagenes/mos1-01.jpg" width="1200" height="1800" loading="lazy" decoding="async" alt="Perro en consulta veterinaria"></figure>
-    <figure class="mos__p"><img src="imagenes/mos2-01.jpg" width="1200" height="1800" loading="lazy" decoding="async" alt="Atención en la camilla"></figure>
-    <figure class="mos__p"><img src="imagenes/mos3-01.jpg" width="1200" height="800" loading="lazy" decoding="async" alt="Gato en interior"></figure>
-    <figure class="mos__p"><img src="imagenes/mos4-01.jpg" width="1200" height="675" loading="lazy" decoding="async" alt="Instrumental de la consulta"></figure>
-    <figure class="mos__p"><img src="imagenes/mos5-01.jpg" width="1200" height="400" loading="lazy" decoding="async" alt="Cachorros jugando"></figure>
-    <figure class="mos__p"><img src="imagenes/mos6-01.jpg" width="1200" height="812" loading="lazy" decoding="async" alt="Perro joven"></figure>
+    <figure class="mos__p"><img src="imagenes/mos1-01.jpg" width="1200" height="1800" loading="lazy" decoding="async" alt="Manos con guante revisando el cuello de un perro negro de pelo largo"></figure>
+    <figure class="mos__p"><img src="imagenes/mos2-01.jpg" width="1200" height="1800" loading="lazy" decoding="async" alt="Un pastor alemán echado, con la mano de alguien sujetándole el hocico"></figure>
+    <figure class="mos__p"><img src="imagenes/mos3-01.jpg" width="1200" height="800" loading="lazy" decoding="async" alt="Un gato blanco echado en su rascador, mirando de frente"></figure>
+    <figure class="mos__p"><img src="imagenes/mos4-01.jpg" width="1200" height="675" loading="lazy" decoding="async" alt="Un estetoscopio sobre el mesón blanco de la consulta"></figure>
+    <figure class="mos__p"><img src="imagenes/mos5-01.jpg" width="1200" height="1600" loading="lazy" decoding="async" alt="Un pomerania sentado sobre la mesa de la consulta"></figure>
+    <figure class="mos__p"><img src="imagenes/mos6-01.jpg" width="1200" height="812" loading="lazy" decoding="async" alt="Un gatito naranja de pie entre las patas delanteras de un perro grande"></figure>
+  </div>
+</section>
+
+
+<!-- ═══════════ LA CONSULTA, PASO A PASO ═══════════
+     Banda oscura entre dos claras (mosaico y esquina): sin ella la página
+     terminaba con tres tonos claros seguidos.
+     Los cuatro momentos son cómo trabaja el oficio, no un protocolo de
+     Haustiere —la nota lo dice—, y es la pregunta que §1.5 pide contestar
+     en salud: «qué pasa en la primera consulta». El diccionario sigue
+     siendo la pieza firma; esto es su continuación práctica.
+     Los números van HUECOS —relleno del fondo y contorno de 1,5 px— y el
+     tercero rompe el patrón con relleno sólido: en un duotono sin acento,
+     ése es el único destaque disponible. -->
+<section class="pasos" aria-labelledby="t-pasos">
+  <div class="ancho">
+    <p class="rotulo rotulo--claro">Cómo es una consulta</p>
+    <h2 class="titulo titulo--claro" id="t-pasos">Cuatro momentos, en este orden.</h2>
+    <p class="entradilla entradilla--clara">
+      Media hora que casi siempre se cuenta igual. Saberla de antemano
+      cambia lo que uno alcanza a preguntar — y <b>preguntar es gratis
+      sólo si uno llegó sabiendo qué preguntar</b>.
+    </p>
+    <ol class="pasos__lista">
+      <li class="paso">
+        <b class="paso__n" aria-hidden="true">01</b>
+        <h3>Lo que se pregunta</h3>
+        <p>Qué pasa, desde cuándo, qué come y qué se le ha dado. Esas
+          cuatro respuestas ordenan todo lo que viene después.</p>
+      </li>
+      <li class="paso">
+        <b class="paso__n" aria-hidden="true">02</b>
+        <h3>La revisión</h3>
+        <p>Peso, temperatura, mucosas, corazón y pulmón, piel y boca.
+          Completa siempre, aunque se venga por una sola cosa.</p>
+      </li>
+      <li class="paso paso--marca">
+        <b class="paso__n" aria-hidden="true">03</b>
+        <h3>Qué se decide</h3>
+        <p>Qué se resuelve hoy, qué necesita un examen y qué se controla
+          en unos días. Las tres salidas se dicen en voz alta.</p>
+      </li>
+      <li class="paso">
+        <b class="paso__n" aria-hidden="true">04</b>
+        <h3>Al salir</h3>
+        <p>Lo indicado, escrito. Y la fecha del control, que es la parte
+          que más se pierde entre la puerta y la casa.</p>
+      </li>
+    </ol>
+    <p class="nota nota--clara">
+      Así ocurre una consulta en cualquier centro que trabaje ordenado:
+      es el orden del oficio, no un protocolo de Haustiere ni una
+      indicación clínica. Qué se hace con cada animal lo decide el
+      médico veterinario con él adelante.
+    </p>
   </div>
 </section>
 
@@ -268,10 +408,15 @@
       </p>
       <dl class="datos">
         <div><dt>Dirección</dt><dd>Baquedano 11, esquina Decher, Puerto Varas</dd></div>
-        <div><dt>Dónde están hoy</dt><dd>Instagram <span class="mono">@somos_haustiere</span></dd></div>
-        <div class="ej" data-ejemplo="falta"><dt>Teléfono</dt><dd>No aparece publicado</dd></div>
-        <div class="ej" data-ejemplo="ejemplo"><dt>Horario</dt><dd>Lunes a sábado, con hora reservada</dd></div>
+        <div><dt>Teléfono</dt><dd><a href="tel:+56986327447">+56 9 8632 7447</a></dd></div>
+        <div><dt>Dónde están hoy</dt><dd>Instagram <span class="mono">@somos_haustiere</span> y su agenda <span class="mono">somoshaustiere.skedu.com</span></dd></div>
+        <div class="ej" data-ejemplo="de su agenda; confírmenlo"><dt>Horario</dt><dd>Todos los días, de 09:00 a 20:00</dd></div>
       </dl>
+      <p class="nota">
+        El teléfono y el horario están tomados de su propia agenda en
+        línea el 08-09-2026. El horario queda marcado porque una agenda
+        de reservas y la puerta abierta no siempre son lo mismo.
+      </p>
       <div class="hueco-foto ej" data-ejemplo="falta la foto del local">
         <p>Acá va la foto de la esquina de Baquedano con Decher. Es la
           que hace que alguien reconozca el lugar al pasar — y ninguna
@@ -296,12 +441,17 @@
         </label>
         <p class="form__salida" id="salida" aria-live="polite"></p>
         <div class="form__acciones">
-          <button class="boton" type="button" id="btn-copiar">Copiar el mensaje</button>
+          <!-- El href ya viene escrito y funcionando: sin JavaScript abre
+               WhatsApp con un mensaje base y el resto se escribe a mano.
+               El número es el del CENTRO, el mismo del tel: de al lado. -->
+          <a class="boton" id="btn-wsp" href="https://wa.me/56986327447?text=Hola%2C%20vi%20la%20p%C3%A1gina%20y%20necesito%20una%20hora%20para%20mi%20mascota." target="_blank" rel="noopener noreferrer">Abrir WhatsApp con esto</a>
+          <button class="boton boton--linea" type="button" id="btn-copiar">Copiar el mensaje</button>
         </div>
       </form>
       <p class="form__sinjs">
-        Sin JavaScript los campos siguen sirviendo de guía de qué
-        contar. Lo único que se pierde es que el texto se arme solo.
+        No se envía nada desde esta página: se abre WhatsApp con el
+        mensaje escrito para que usted lo revise antes de mandarlo. Sin
+        JavaScript el botón abre igual, con un mensaje base.
       </p>
     </div>
   </div>
@@ -309,6 +459,18 @@
 
 
 <!-- ═══════════ PARA EL DUEÑO ═══════════ -->
+<section class="mapa-sec" aria-label="Dónde queda">
+    <div class="ancho">
+      <figure class="mapa">
+        <img src="imagenes/mapa-01.jpg" width="768" height="768" loading="lazy" decoding="async"
+             alt="Mapa de Puerto Varas.">
+        <figcaption class="mapa__pie">
+          <span><b>Puerto Varas</b>. La dirección exacta la confirma el negocio: cuando la tengamos, el mapa marca la puerta.</span>
+          <span class="mapa__cred">Mapa: &copy; <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener">OpenStreetMap</a></span>
+        </figcaption>
+      </figure>    </div>
+</section>
+
 <section class="dueno" aria-labelledby="t-dueno">
   <div class="ancho">
     <p class="rotulo rotulo--claro">Para el dueño</p>
@@ -318,22 +480,28 @@
         <h3>Qué es</h3>
         <p>Una propuesta de sitio web hecha por nuestra cuenta. Haustiere
           no la encargó ni la ha revisado. Dimos por cierto sólo lo que
-          ustedes publican: la dirección de Baquedano 11 esquina Decher
-          y el Instagram.</p>
+          ustedes publican: la dirección de Baquedano 11 esquina Decher,
+          el Instagram, y el teléfono, el horario y las ocho categorías
+          de servicio que están en su agenda <b>somoshaustiere.skedu.com</b>,
+          consultada el 08-09-2026.</p>
       </div>
       <div>
         <h3>Qué es ejemplo</h3>
-        <p>La lista de servicios, el horario y el teléfono, que no está
-          publicado. El diccionario es vocabulario y criterio general del
-          oficio —sin dosis ni medicamentos— y la página lo dice dos
-          veces.</p>
+        <p>El horario, marcado porque una agenda de reservas y la puerta
+          abierta no son lo mismo, y la frase que acompaña a cada
+          servicio, que la escribimos nosotros. El diccionario y los
+          cuatro momentos son vocabulario y orden del oficio —sin dosis
+          ni medicamentos— y la página lo dice tres veces.</p>
       </div>
       <div>
-        <h3>Qué cambiaría la página entera</h3>
-        <p>El teléfono, los horarios y una foto de la esquina. Y el
-          diccionario ampliado con los términos que <b>ustedes</b> usan
-          a diario: esa lista es intransferible y ninguna otra
-          veterinaria puede copiarla.</p>
+        <h3>El dominio, y qué falta</h3>
+        <p><b>haustiere.cl</b> estaba libre el 08-09-2026: lo
+          comprobamos y no resuelve. Su agenda funciona para tomar hora,
+          pero no explica nada ni aparece cuando alguien busca. Faltan
+          las fotos del local, empezando por la esquina. Y el diccionario
+          ampliado con los términos que <b>ustedes</b> usan a diario: esa
+          lista es intransferible y ninguna otra veterinaria puede
+          copiarla.</p>
       </div>
     </div>
     <p class="dueno__cierre">
@@ -347,13 +515,40 @@
 
 <footer class="pie">
   <p>Sitio de demostración preparado por CristalWeb. El negocio no lo ha
-     encargado ni ha revisado su contenido. Los servicios, el horario y
-     el teléfono son ejemplos o faltas marcadas como tales. El
-     diccionario y las señales son orientación general del oficio: no
-     contienen dosis ni medicamentos y no reemplazan la evaluación de un
-     médico veterinario.</p>
+     encargado ni ha revisado su contenido. La dirección, el teléfono y
+     las ocho categorías de servicio están tomados de lo que el propio
+     centro publica; el horario va marcado como dato por confirmar y las
+     fotos son de bancos libres, no del local. El diccionario, los cuatro
+     momentos de la consulta y las señales son orientación general del
+     oficio: no contienen dosis ni medicamentos y no reemplazan la
+     evaluación de un médico veterinario.</p>
 </footer>
 
+<!-- ══ WHATSAPP FLOTANTE ═══════════════════════════════════════════
+     Va escrito en el HTML, no lo crea el JS: si el script no arranca, el
+     botón igual está. El JS sólo lo aparta mientras se mira la portada,
+     para no tapar el titular. El número es el DEL CENTRO —el mismo del
+     tel: de la ficha de datos—, no el de CristalWeb. Icono de
+     simple-icons (CC0), incrustado: la CSP no deja pedir nada a un
+     tercero. -->
+<a class="wapp"
+   href="https://wa.me/56986327447?text=Hola%2C%20vi%20la%20p%C3%A1gina%20y%20quiero%20consultar%20por%20una%20hora%20para%20mi%20mascota."
+   target="_blank" rel="noopener noreferrer"
+   aria-label="Escribir a Haustiere por WhatsApp">
+  <svg class="wapp__i" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"/></svg>
+  <span class="wapp__t">WhatsApp</span>
+</a>
+
+
+<!-- ══ BOTON FLOTANTE DE CONTACTO ══════════════════════════════════
+     Escrito en el HTML y VISIBLE por defecto: si el script no arranca,
+     el boton igual esta. El JS solo lo aparta mientras se mira la
+     portada, para no tapar el titular. Icono de simple-icons (CC0),
+     incrustado: la CSP no deja pedir nada a un tercero. -->
+<a class="flota flota--wa" href="https://wa.me/56986327447?text=Hola%2C%20vi%20la%20pagina%20y%20quiero%20consultar." target="_blank" rel="noopener" aria-label="Escribir por WhatsApp a Haustiere">
+  <svg class="flota__i" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"/></svg>
+  <span class="flota__t">WhatsApp</span>
+</a>
 <script src="js/main.js"></script>
 </body>
 </html>

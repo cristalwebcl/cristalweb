@@ -1,0 +1,22 @@
+FUENTES DE LAS IMAGENES - Veterinaria Pajaritos Rehecha el 13-09-2026 (presentacion antes que texto). Fotos de REFERENCIA de bancos libres: ninguna es del local; las verdaderas las tiene que mandar el negocio. 
+port-01.jpg  <-  pozo-p-pj-casa\009.jpg  |  pexels (Pexels License)  |  autor: Malcolm Gillanders  |  https://www.pexels.com/es-es/foto/atardecer-brumoso-en-el-barrio-de-vancouver-29642595/  |  consulta: "house night"
+hund1-01.jpg  <-  pozo-p-pj-consulta\001.jpg  |  pexels (Pexels License)  |  autor: Eduardo López  |  https://www.pexels.com/es-es/foto/un-perro-con-corbata-sobre-fondo-azul-16620455/  |  consulta: "veterinarian dog"
+hund2-01.jpg  <-  pozo-p-pj-consulta\009.jpg  |  pexels (Pexels License)  |  autor: Gerardo Manzano  |  https://www.pexels.com/es-es/foto/perro-mascota-mono-perrito-16622078/  |  consulta: "veterinarian dog"
+hund3-01.jpg  <-  pozo-p-pj-consulta\011.jpg  |  pexels (Pexels License)  |  autor: PubPro  |  https://www.pexels.com/es-es/foto/perro-marron-adorable-sentado-en-cesped-verde-35480874/  |  consulta: "veterinarian dog"
+hund4-01.jpg  <-  pozo-p-pj-ventana\002.jpg  |  pexels (Pexels License)  |  autor: CRIS G  |  https://www.pexels.com/es-es/foto/primer-plano-de-un-gato-esmoquin-mirando-hacia-afuera-39483253/  |  consulta: "cat window"
+hund5-01.jpg  <-  pozo-p-pj-placa\012.jpg  |  pexels (Pexels License)  |  autor: Bianca Beltrán  |  https://www.pexels.com/es-es/foto/taburete-perro-mascota-mono-15794889/  |  consulta: "dog id tag"
+hund6-01.jpg  <-  pozo-p-pj-placa\010.jpg  |  pexels (Pexels License)  |  autor: manu gvzman  |  https://www.pexels.com/es-es/foto/perro-pequeno-en-un-callejon-rustico-al-aire-libre-36041972/  |  consulta: "dog id tag"
+banda-01.jpg  <-  pozo-p-pj-calle\009.jpg  |  pexels (Pexels License)  |  autor: Da Na  |  https://www.pexels.com/es-es/foto/tranquilo-sendero-urbano-arbolado-en-verano-34439096/  |  consulta: "street trees"
+cita-01.jpg  <-  pozo-p-pj-ventana\004.jpg  |  pexels (Pexels License)  |  autor: 大 董  |  https://www.pexels.com/es-es/foto/gato-maine-coon-de-color-jengibre-sentado-junto-a-una-ventana-iluminada-por-el-sol-38793414/  |  consulta: "cat window"
+mos1-01.jpg  <-  pozo-p-pj-huella\007.jpg  |  pexels (Pexels License)  |  autor: Ellie Burgin  |  https://www.pexels.com/es-es/foto/playa-arena-animal-suelo-26965753/  |  consulta: "paw print"
+mos2-01.jpg  <-  pozo-p-pj-calle\003.jpg  |  pexels (Pexels License)  |  autor: Sathyaprabha Rakkimuthu  |  https://www.pexels.com/es-es/foto/calle-residencial-tranquila-bordeada-de-arboles-verdes-37480471/  |  consulta: "street trees"
+mos3-01.jpg  <-  pozo-p-pj-placa\004.jpg  |  pexels (Pexels License)  |  autor: Florencia  Pérez  |  https://www.pexels.com/es-es/foto/perro-feliz-relajandose-en-el-parque-de-montevideo-33710354/  |  consulta: "dog id tag"
+mos4-01.jpg  <-  pozo-p-pj-ventana\011.jpg  |  pexels (Pexels License)  |  autor: Büşranur Aydın  |  https://www.pexels.com/es-es/foto/blanco-gatos-gato-bigotes-15379284/  |  consulta: "cat window"
+mos5-01.jpg  <-  pozo-p-pj-casa\010.jpg  |  pexels (Pexels License)  |  autor: Sami  Aksu  |  https://www.pexels.com/es-es/foto/ligero-cielo-casas-noche-14356690/  |  consulta: "house night"
+mos6-01.jpg  <-  pozo-p-pj-huella\004.jpg  |  pexels (Pexels License)  |  autor: Michaela St  |  https://www.pexels.com/es-es/foto/naturaleza-playa-arena-huella-20435873/  |  consulta: "paw print"
+
+BRUMA (bruma-pag-0N.png y bruma-osc-0N.png, 30x20): las MISMAS fotos, recortadas a 3:2, reducidas y
+recoloreadas con C:\devs\demos\hacer-bruma.ps1 (clara >= 0,68 de luminancia / oscura <= 0,05). No suman fuentes.
+    pagina: port-01.jpg, mos5-01.jpg, hund4-01.jpg, cita-01.jpg, mos1-01.jpg   |   oscuras: port-01.jpg, mos5-01.jpg, hund4-01.jpg
+
+MAPA: iframe de Google Maps (embed publico, sin clave). No hay imagen de mapa.

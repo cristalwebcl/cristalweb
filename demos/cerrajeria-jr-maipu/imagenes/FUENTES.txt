@@ -1,0 +1,22 @@
+FUENTES DE LAS IMAGENES - Cerrajeria JR Rehecha el 14-09-2026 (presentacion antes que texto). Fotos de REFERENCIA de bancos libres: ninguna es del local; las verdaderas las tiene que mandar el negocio. 
+port-01.jpg  <-  pozo-p-jr-llave\005.jpg  |  pexels (Pexels License)  |  autor: George Becker  |  https://www.pexels.com/es-es/foto/cerca-de-llaves-333837/  |  consulta: "keys"
+hund1-01.jpg  <-  pozo-p-jr-digital\009.jpg  |  pexels (Pexels License)  |  autor: MART  PRODUCTION  |  https://www.pexels.com/es-es/foto/hombre-persona-mano-urbano-7706484/  |  consulta: "smart lock door"
+hund2-01.jpg  <-  pozo-p-jr-llave\008.jpg  |  pexels (Pexels License)  |  autor: Bastian Riccardi  |  https://www.pexels.com/es-es/foto/llaves-metalicas-flotantes-en-un-entorno-minimalista-oscuro-29222871/  |  consulta: "keys"
+hund3-01.jpg  <-  pozo-p-jr-cerradura\009.jpg  |  pexels (Pexels License)  |  autor: khairul nizam  |  https://www.pexels.com/es-es/foto/fotografia-en-primer-plano-de-la-palanca-y-la-cerradura-de-la-puerta-de-acero-inoxidable-gris-16515/  |  consulta: "door lock"
+hund4-01.jpg  <-  pozo-p-jr-manilla\008.jpg  |  pexels (Pexels License)  |  autor: Chris F  |  https://www.pexels.com/es-es/foto/blanco-y-negro-puerta-chrome-cromo-21430428/  |  consulta: "door handle"
+hund5-01.jpg  <-  pozo-p-jr-mudanza\005.jpg  |  pexels (Pexels License)  |  autor: Ketut Subiyanto  |  https://www.pexels.com/es-es/foto/casa-efecto-desenfocado-dentro-ventana-4246091/  |  consulta: "moving boxes"
+hund6-01.jpg  <-  pozo-p-jr-candado\012.jpg  |  pexels (Pexels License)  |  autor: Nathan J Hilton  |  https://www.pexels.com/es-es/foto/oxido-puerta-candado-cerrado-con-llave-5827969/  |  consulta: "brass padlock"
+banda-01.jpg  <-  pozo-p-jr-persiana\011.jpg  |  pexels (Pexels License)  |  autor: Miguel Delima  |  https://www.pexels.com/es-es/foto/modelo-estampado-fondo-fondo-de-pantalla-12534135/  |  consulta: "metal shutter"
+cita-01.jpg  <-  pozo-p-jr-pasillo\011.jpg  |  pexels (Pexels License)  |  autor: William Bradshaw  |  https://www.pexels.com/es-es/foto/pasillo-de-estilo-vintage-con-puerta-cerrada-y-cortinas-39108306/  |  consulta: "hallway door"
+mos1-01.jpg  <-  pozo-p-jr-puerta\004.jpg  |  pexels (Pexels License)  |  autor: Jose Cruz  |  https://www.pexels.com/es-es/foto/santa-cruz-29299314/  |  consulta: "front door"
+mos2-01.jpg  <-  pozo-p-jr-manilla\011.jpg  |  pexels (Pexels License)  |  autor: Christina & Peter  |  https://www.pexels.com/es-es/foto/manija-de-puerta-de-hierro-vintage-sobre-panel-de-madera-28701453/  |  consulta: "door handle"
+mos3-01.jpg  <-  pozo-p-jr-teclado\010.jpg  |  pexels (Pexels License)  |  autor: Chris Luengas  |  https://www.pexels.com/es-es/foto/ciudad-casas-calle-acera-21812155/  |  consulta: "keypad door"
+mos4-01.jpg  <-  pozo-p-jr-persiana\009.jpg  |  pexels (Pexels License)  |  autor: Jan van der Wolf  |  https://www.pexels.com/es-es/foto/pared-muro-blanco-puerta-19574404/  |  consulta: "metal shutter"
+mos5-01.jpg  <-  pozo-p-jr-cerradura\010.jpg  |  pexels (Pexels License)  |  autor: Alex Dos Santos  |  https://www.pexels.com/es-es/foto/llave-antigua-en-cerradura-de-puerta-rustica-30958693/  |  consulta: "door lock"
+mos6-01.jpg  <-  pozo-p-jr-puerta\006.jpg  |  pexels (Pexels License)  |  autor: Valeri  Leroy  |  https://www.pexels.com/es-es/foto/puerta-de-entrada-clasica-elegante-en-color-azul-oscuro-28408465/  |  consulta: "front door"
+
+BRUMA (bruma-pag-0N.png y bruma-osc-0N.png, 30x20): las MISMAS fotos, recortadas a 3:2, reducidas y
+recoloreadas con C:\devs\demos\hacer-bruma.ps1 (clara >= 0,68 de luminancia / oscura <= 0,05). No suman fuentes.
+    pagina: mos3-01.jpg, hund5-01.jpg, cita-01.jpg, mos3-01.jpg, hund5-01.jpg   |   oscuras: mos3-01.jpg, hund5-01.jpg, cita-01.jpg
+
+MAPA: iframe de Google Maps (embed publico, sin clave). No hay imagen de mapa.

@@ -1,0 +1,22 @@
+FUENTES DE LAS IMAGENES - Los Fundadores Rehecha el 13-09-2026 (presentacion antes que texto). Fotos de REFERENCIA de bancos libres: ninguna es del local; las verdaderas las tiene que mandar el negocio. 
+port-01.jpg  <-  pozo-p-fun-lluvia\004.jpg  |  pexels (Pexels License)  |  autor: Jose Sousa  |  https://www.pexels.com/es-es/foto/animal-mascota-mono-lluvia-17642995/  |  consulta: "cat on windowsill rain"
+hund1-01.jpg  <-  pozo-p-fun-endoscopio\009.jpg  |  pexels (Pexels License)  |  autor: DΛVΞ GΛRCIΛ  |  https://www.pexels.com/es-es/foto/profesional-de-la-salud-usando-dispositivo-medico-en-clinica-35569036/  |  consulta: "endoscope medical"
+hund2-01.jpg  <-  pozo-p-fun-cuy\006.jpg  |  pexels (Pexels License)  |  autor: Faris Subriun  |  https://www.pexels.com/es-es/foto/adorable-hamster-sobre-fondo-negro-4383761/  |  consulta: "guinea pig"
+hund3-01.jpg  <-  pozo-p-cdt-micro\011.jpg  |  pexels (Pexels License)  |  autor: Jorge Chan  |  https://www.pexels.com/es-es/foto/microscopio-24293768/  |  consulta: "microscope laboratory"
+hund4-01.jpg  <-  pozo-p-cdt-cirugia\003.jpg  |  pexels (Pexels License)  |  autor: cottonbro studio  |  https://www.pexels.com/es-es/foto/mesa-herramientas-salon-de-belleza-equipo-3997355/  |  consulta: "surgical instruments tray"
+hund5-01.jpg  <-  pozo-p-fun-dental\008.jpg  |  pexels (Pexels License)  |  autor: Ivan Garfias  |  https://www.pexels.com/es-es/foto/primer-plano-extremo-de-un-husky-siberiano-24194034/  |  consulta: "dog teeth"
+hund6-01.jpg  <-  pozo-p-fun-lluvia\009.jpg  |  pexels (Pexels License)  |  autor: Camilo Ospina  |  https://www.pexels.com/es-es/foto/gato-naranja-y-blanco-acurrucado-junto-a-la-ventana-35569240/  |  consulta: "cat on windowsill rain"
+banda-01.jpg  <-  pozo-p-fun-ladrillo\011.jpg  |  pexels (Pexels License)  |  autor: Arnie Chou  |  https://www.pexels.com/es-es/foto/fotografia-de-ladrillos-cubiertos-de-musgo-1089280/  |  consulta: "brick wall moss"
+cita-01.jpg  <-  pozo-p-fun-viejo\007.jpg  |  pexels (Pexels License)  |  autor: Alexander Tisko  |  https://www.pexels.com/es-es/foto/perro-triste-35182559/  |  consulta: "old dog resting"
+mos1-01.jpg  <-  pozo-p-fun-tortuga\008.jpg  |  pexels (Pexels License)  |  autor: Prasanjeet Shyam  |  https://www.pexels.com/es-es/foto/reptil-tortuga-fotografia-de-animales-arrastrandose-12068528/  |  consulta: "turtle pet"
+mos2-01.jpg  <-  pozo-p-fun-hamster\010.jpg  |  pexels (Pexels License)  |  autor: Nestorsh  |  https://www.pexels.com/es-es/foto/animal-mascota-mono-ojos-10884423/  |  consulta: "hamster"
+mos3-01.jpg  <-  pozo-p-fun-viejo\003.jpg  |  pexels (Pexels License)  |  autor: Moo  Lens  |  https://www.pexels.com/es-es/foto/retrato-de-un-perro-descansando-en-la-naturaleza-al-aire-libre-34081983/  |  consulta: "old dog resting"
+mos4-01.jpg  <-  pozo-p-fun-lluvia\011.jpg  |  pexels (Pexels License)  |  autor: Ayberk Mirza  |  https://www.pexels.com/es-es/foto/gato-negro-encantador-mirando-por-la-ventana-bajo-la-lluvia-35722487/  |  consulta: "cat on windowsill rain"
+mos5-01.jpg  <-  pozo-p-fun-cuy\002.jpg  |  pexels (Pexels License)  |  autor: Dương Nguyễn  |  https://www.pexels.com/es-es/foto/lindo-conejillo-de-indias-en-un-suelo-de-madera-en-vietnam-36255317/  |  consulta: "guinea pig"
+mos6-01.jpg  <-  pozo-p-fun-ladrillo\008.jpg  |  pexels (Pexels License)  |  autor: Magda Ehlers  |  https://www.pexels.com/es-es/foto/rocas-acera-camino-musgo-14025809/  |  consulta: "brick wall moss"
+
+BRUMA (bruma-pag-0N.png y bruma-osc-0N.png, 30x20): las MISMAS fotos, recortadas a 3:2, reducidas y
+recoloreadas con C:\devs\demos\hacer-bruma.ps1 (clara >= 0,68 de luminancia / oscura <= 0,05). No suman fuentes.
+    pagina: port-01.jpg, hund2-01.jpg, hund5-01.jpg, hund6-01.jpg, mos2-01.jpg, mos3-01.jpg, mos5-01.jpg, cita-01.jpg   |   oscuras: cita-01.jpg, mos4-01.jpg, port-01.jpg
+
+MAPA: iframe de Google Maps (embed publico, sin clave). No hay imagen de mapa.

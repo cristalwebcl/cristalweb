@@ -419,3 +419,53 @@ p.ej { padding: .35rem .6rem .35rem; margin-top: .7rem; }
 p { text-wrap: pretty; }
 :root { --muelle: linear(0, .32 14%, .68 26%, .92 38%, 1.04 50%, 1.01 64%, .99 78%, 1); }
 .js .portada__texto > * { animation-timing-function: var(--muelle); }
+
+/* ── MAPA DE UBICACIÓN ──────────────────────────────────────────────
+   Imagen propia con mosaicos de OpenStreetMap pegados: la CSP prohíbe
+   pedir nada a un tercero, así que un iframe de Google Maps quedaría en
+   blanco sin dar un solo error. El «Cómo llegar» de abajo sí es un
+   enlace, y un enlace no lo bloquea nada.
+   La atribución a OSM es obligatoria por licencia (ODbL) y va visible. */
+.mapa { margin: 1.2rem 0 0; border: 1px solid var(--linea); border-radius: 10px; overflow: hidden; background: var(--lino-2); }
+.mapa img { display: block; width: 100%; height: auto; aspect-ratio: 4 / 3; object-fit: cover; }
+.mapa__pie {
+  padding: .55rem .9rem;
+  font-family: var(--mono); font-size: var(--p--1);
+  color: var(--medio); background: #FFFFFF;
+  border-top: 1px solid var(--linea);
+}
+.mapa__pie a { color: var(--oliva); }
+
+/* ── WHATSAPP FLOTANTE ──────────────────────────────────────────────
+   56 px de alto, por encima del mínimo táctil de 44. Verde de WhatsApp
+   a propósito: se reconoce sin leerlo, y eso es lo que hace que se toque.
+   Se ve SIEMPRE por defecto; el JS sólo lo aparta sobre la portada. Al
+   revés, un fallo del script se llevaría el CTA principal. */
+.wapp {
+  position: fixed;
+  right: max(1rem, env(safe-area-inset-right, 0px));
+  bottom: max(1rem, env(safe-area-inset-bottom, 0px));
+  z-index: 60;
+  display: inline-flex; align-items: center; gap: .55rem;
+  height: 56px; padding: 0 1.15rem 0 1rem;
+  border-radius: 999px;
+  background: #25D366; color: #07310F;
+  text-decoration: none;
+  font-family: var(--cuerpo); font-size: .95rem; font-weight: 700; line-height: 1;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, .26), 0 2px 6px rgba(0, 0, 0, .16);
+  transition: opacity .28s ease, transform .28s ease, box-shadow .18s ease;
+}
+.wapp__i { width: 26px; height: 26px; fill: currentColor; flex: none; }
+.wapp:hover, .wapp:focus-visible { transform: translateY(-2px); box-shadow: 0 10px 26px rgba(0, 0, 0, .3); }
+.js .wapp--arriba { opacity: 0; transform: translateY(14px) scale(.94); pointer-events: none; }
+.pie__in, .dueno { padding-bottom: 4.5rem; }
+
+@media (max-width: 520px) {
+  .wapp { width: 56px; padding: 0; justify-content: center; }
+  .wapp__t { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .wapp { transition: opacity .28s ease; }
+  .wapp:hover, .wapp:focus-visible { transform: none; }
+  .js .wapp--arriba { transform: none; }
+}

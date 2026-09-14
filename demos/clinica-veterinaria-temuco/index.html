@@ -27,7 +27,7 @@
 
 <div class="propuesta">
   <p class="propuesta__que">Propuesta de sitio web — preparada para <b>Clínica Veterinaria Temuco</b> por CristalWeb</p>
-  <p class="propuesta__gancho">Se llaman igual que la ciudad. El que busca «veterinaria Temuco» debería encontrarlos primero, y no aparecen en ninguna parte.</p>
+  <p class="propuesta__gancho">4,6 en Google con 177 reseñas y ninguna página propia (verificado el 01-09-2026): el que escribe «veterinaria Temuco» está buscando literalmente su nombre y encuentra a las otras. Ésta es la página que debería estar ahí.</p>
 </div>
 
 <header class="cab" id="cab">
@@ -37,7 +37,9 @@
   </a>
   <nav class="cab__nav" aria-label="Secciones">
     <a href="#triage">¿Es urgencia?</a>
+    <a href="#antes">Antes de llamar</a>
     <a href="#nombre">El nombre obliga</a>
+    <a href="#contacto">Contacto</a>
   </nav>
   <a class="cab__tel" href="tel:+56452240505">
     <span class="cab__tel-rot">Temuco</span>
@@ -58,25 +60,47 @@
 
   <div class="cialitica" aria-hidden="true"></div>
 
+  <!-- AMBIENTE: el polvo que se ve flotando dentro del haz de la lampara
+       de pabellon. CSS puro, 12 hijos, sin JavaScript. -->
+  <div class="amb amb--polvo" aria-hidden="true">
+    <span class="amb__p"></span><span class="amb__p"></span><span class="amb__p"></span>
+    <span class="amb__p"></span><span class="amb__p"></span><span class="amb__p"></span>
+    <span class="amb__p"></span><span class="amb__p"></span><span class="amb__p"></span>
+    <span class="amb__p"></span><span class="amb__p"></span><span class="amb__p"></span>
+  </div>
+
   <div class="portada__texto">
     <p class="sitio">Clínica veterinaria · Temuco</p>
     <h1 id="t-portada">¿Es urgencia<br>o puede esperar?</h1>
     <p class="bajada">Es la pregunta que se hace todo dueño mirando a su animal a las
       nueve de la noche, y la que decide entre una consulta tranquila mañana y una
       urgencia cara esta noche. Nadie la contesta por escrito.</p>
-    <dl class="specs">
-      <div class="spec"><dt>nota en Google</dt><dd>4,6</dd></div>
-      <div class="spec"><dt>reseñas</dt><dd>177</dd></div>
-      <div class="spec"><dt>teléfono</dt><dd class="dd--tel"><a href="tel:+56452240505">(45) 224 0505</a></dd></div>
-    </dl>
+    <p class="portada__ir">
+      <a class="boton" href="#triage">Ver la tabla</a>
+      <a class="boton boton--linea" href="tel:+56452240505">Llamar ahora</a>
+    </p>
   </div>
+</section>
+
+<!-- ========= CIFRAS =========
+     Cuatro números en la misma fila: los tres primeros son lo que la
+     clínica ya tiene, el último es lo que le falta. Sólo cuenta el 177,
+     que es el que costó verificar. -->
+<section class="cifras con-telon" aria-label="La clínica en números">
+  <div class="telon" aria-hidden="true">
+    <img src="imagenes/telon-01.jpg" width="1200" height="800" loading="lazy" decoding="async" alt="">
+  </div>
+  <ul class="cifras__lista cascada">
+    <li><b>4,6</b><span>de nota en Google</span></li>
+    <li><b data-cuenta="177">177</b><span>reseñas que ya escribieron</span></li>
+    <li><b>15</b><span>señales ordenadas en la tabla de acá abajo</span></li>
+    <li><b>0</b><span>páginas propias donde leerlas hoy</span></li>
+  </ul>
+  <p class="cifras__pie">Nota y reseñas tomadas de su ficha de Google el 01-09-2026.</p>
 </section>
 
 <!-- ========= LA PIEZA FIRMA — LA TABLA DE TRIAGE ========= -->
 <section class="triage con-telon" id="triage" aria-labelledby="t-triage">
-  <div class="telon" aria-hidden="true">
-    <img src="imagenes/telon-01.jpg" width="1200" height="800" decoding="async" alt="">
-  </div>
 
   <!-- AURA DE COLOR: la foto de rubro reventada a desenfoque. No se lee
        como imagen: aporta color y luz detras de una seccion que si no
@@ -215,12 +239,109 @@
     animal adelante.</p>
 </section>
 
-<!-- ========= EL NOMBRE OBLIGA ========= -->
+<!-- ========= TAJO — FRANJA A SANGRE ========= -->
+<div class="tajo" aria-hidden="true">
+  <img src="imagenes/tajo-01.jpg" width="2200" height="880"
+       loading="lazy" decoding="async" alt="">
+</div>
+
+<!-- ========= ANTES DE LLAMAR — EL INVENTARIO =========
+     Seis cosas que conviene tener a mano ANTES de marcar. Ninguna es
+     clínica: son los datos que la clínica va a pedir igual. -->
+<section class="antes" id="antes" aria-labelledby="t-antes">
+  <div class="antes__cabecera">
+    <p class="antetitulo">Seis cosas, treinta segundos</p>
+    <h2 id="t-antes">Lo que le van a preguntar<br>apenas conteste</h2>
+    <p class="entrada">Una llamada se resuelve mucho mejor con esto ya pensado. No
+      es información clínica: son los datos que cualquiera necesita para saber si
+      lo hace venir ahora o le da hora para mañana.</p>
+  </div>
+
+  <ul class="fichas cascada">
+    <li class="ficha">
+      <p class="ficha__n">01</p>
+      <h3>Qué animal es y cuánto pesa</h3>
+      <p>Perro o gato, la edad más o menos, y el peso aproximado. El peso cambia
+        casi todo lo que viene después.</p>
+    </li>
+    <li class="ficha">
+      <p class="ficha__n">02</p>
+      <h3>Desde cuándo pasa</h3>
+      <p>La hora en que empezó, no «hace un rato». Es el dato que más se olvida y
+        el que más ordena la conversación.</p>
+    </li>
+    <li class="ficha">
+      <p class="ficha__n">03</p>
+      <h3>Cuántas veces</h3>
+      <p>Cuántos vómitos, cuántas deposiciones, cuántos episodios. Una vez y ocho
+        veces son dos llamadas distintas.</p>
+    </li>
+    <li class="ficha">
+      <p class="ficha__n">04</p>
+      <h3>Qué comió y a qué hora</h3>
+      <p>Lo de siempre, algo distinto, o algo que no debía. Si fue algo que no
+        debía, tener el envase al lado.</p>
+    </li>
+    <li class="ficha">
+      <p class="ficha__n">05</p>
+      <h3>Si toma algo</h3>
+      <p>Cualquier cosa que esté tomando o que le hayan puesto. Sin buscar el
+        nombre en internet: se lee de la caja tal como está escrito.</p>
+    </li>
+    <li class="ficha">
+      <p class="ficha__n">06</p>
+      <h3>Si ya le pasó antes</h3>
+      <p>Y si está operado, si tiene alguna condición conocida, y el carnet de
+        vacunas si aparece. Vale aunque esté atrasado.</p>
+    </li>
+  </ul>
+
+  <p class="antes__nota"><b>Y si hay que salir:</b> transportadora o correa, el
+    carnet, la caja de lo que toma y el envase de lo que comió.
+    <span class="falta">falta: que la clínica revise esta lista</span></p>
+</section>
+
+<!-- ========= LA CITA A SANGRE ========= -->
+<section class="cita" aria-labelledby="t-cita">
+  <div class="cita__foto" aria-hidden="true">
+    <img src="imagenes/cita-01.jpg" width="2200" height="1467"
+         loading="lazy" decoding="async" alt="">
+  </div>
+  <blockquote class="cita__texto">
+    <p id="t-cita">Se llaman igual que la ciudad<br>
+      <span class="cita__eco">Y el que busca «veterinaria Temuco» no los encuentra</span></p>
+  </blockquote>
+</section>
+
+<!-- ========= LA NOCHE — SECCION CON TELON ========= -->
+<section class="noche con-telon" aria-labelledby="t-noche">
+  <div class="telon" aria-hidden="true">
+    <img src="imagenes/telon-02.jpg" width="1200" height="800" loading="lazy" decoding="async" alt="">
+  </div>
+  <div class="noche__cuerpo">
+    <p class="antetitulo antetitulo--claro">El momento para el que está escrita</p>
+    <h2 id="t-noche">A las nueve de la noche,<br>con el teléfono en la mano</h2>
+    <p class="entrada">La página no está pensada para el que compara veterinarias con
+      calma un martes a mediodía. Está pensada para el que ya está preocupado, tiene
+      el animal encima y necesita decidir en dos minutos.</p>
+    <p class="noche__p">A esa hora nadie lee una carta de servicios. Se lee una fila,
+      se decide, y se marca. Por eso lo primero de la página es la tabla y no la
+      presentación de la clínica: la presentación importa después, cuando ya se
+      confió en lo que se leyó.</p>
+    <p class="noche__p">Y por eso pesa lo que pesa. Sin banners de cookies, sin
+      ventanas de chat, sin videos que arrancan solos, sin una sola petición a otro
+      servidor. Abre igual con una barra de señal que con cinco, que es exactamente
+      la situación en la que alguien la va a abrir.</p>
+    <p class="noche__sello">Cero peticiones a terceros · cero rastreadores · cero cookies</p>
+  </div>
+</section>
+
 <!-- ========= MEDIA PANTALLA ========= -->
 <section class="mitades" aria-labelledby="t-mitades">
   <div class="mitades__foto">
-    <img src="imagenes/media-01.jpg" width="2200" height="1467"
-         loading="lazy" decoding="async" alt="">
+    <img src="imagenes/mit-01.jpg" width="2200" height="1467"
+         loading="lazy" decoding="async"
+         alt="Una mujer en el suelo de su casa, entre su perro y su gato.">
   </div>
   <div class="mitades__texto">
     <p class="mitades__ante">Lo que pasa antes de subir al auto</p>
@@ -229,7 +350,16 @@
   </div>
 </section>
 
-<section class="nombre" id="nombre" aria-labelledby="t-nombre">
+<!-- ========= EL NOMBRE OBLIGA ========= -->
+<section class="nombre con-telon" id="nombre" aria-labelledby="t-nombre">
+  <!-- TELÓN: la sección es oscura y el texto ocupa una sola columna; sin
+       foto detrás, la mitad derecha quedaba en negro vacío. Va nítido al
+       15 % (no es el aura: el aura se revienta a 64 px de desenfoque y
+       ésta se lee como foto) y se apaga contra los bordes con mask-image,
+       porque un ::after dejaría un corte recto a media sección. -->
+  <div class="telon" aria-hidden="true">
+    <img src="imagenes/telon-03.jpg" width="1200" height="800" loading="lazy" decoding="async" alt="">
+  </div>
   <div class="nombre__cuerpo">
     <p class="antetitulo antetitulo--claro">Escrito para la clínica</p>
     <h2 id="t-nombre">El nombre<br>obliga</h2>
@@ -282,89 +412,124 @@
   </div>
 </section>
 
-<!-- ========= EL CIERRE — T1 ========= -->
-<!-- ========= LA CITA A SANGRE ========= -->
-<section class="cita" aria-labelledby="t-cita">
-  <div class="cita__foto" aria-hidden="true">
-    <img src="imagenes/cita-01.jpg" width="2200" height="1467"
-         loading="lazy" decoding="async" alt="">
-  </div>
-  <blockquote class="cita__texto">
-    <p id="t-cita">Se llaman igual que la ciudad<br>
-      <span class="cita__eco">Y el que busca «veterinaria Temuco» no los encuentra</span></p>
-  </blockquote>
-</section>
-
-
-
-<!-- ========= TAJO — FRANJA A SANGRE ========= -->
-<div class="tajo" aria-hidden="true">
-  <img src="imagenes/banda-01.jpg" width="1100" height="733"
-       loading="lazy" decoding="async" alt="">
-</div>
-<section class="cierre" id="llamar" aria-labelledby="t-cierre">
-  <p class="cierre__rot">Ante la duda, preguntar es gratis</p>
-  <h2 id="t-cierre" class="cierre__tel">
-    <a href="tel:+56452240505">(45) 224 0505</a>
-  </h2>
-  <p class="cierre__pie">Es el número publicado en su ficha de Google.</p>
-</section>
-
-<!-- ========= LA TIRA ========= -->
-<section class="tira" aria-label="Tres imágenes del oficio">
+<!-- ========= LA TIRA =========
+     Las tres son de animales tranquilos y en su casa, a propósito: la
+     página la abre alguien preocupado a las nueve de la noche, y una
+     jeringa en primer plano a ese lector le sube la angustia en vez de
+     bajársela. Lo dice el propio imagenes/QUE-FOTOS-FALTAN.md. -->
+<section class="tira" aria-label="Tres imágenes de animales en su casa">
   <figure class="tira__pieza">
-    <img src="imagenes/tira-01.jpg" width="1100" height="733" loading="lazy" decoding="async" alt="Vía puesta en la pata de un perro durante la atención.">
+    <img src="imagenes/tira-01.jpg" width="1100" height="733" loading="lazy" decoding="async" alt="Una mano acariciando la cabeza de un perro echado en un sillón.">
   </figure>
   <figure class="tira__pieza">
-    <img src="imagenes/tirab-01.jpg" width="1100" height="733" loading="lazy" decoding="async" alt="Gatito siendo atendido sobre la camilla de consulta.">
+    <img src="imagenes/tirab-01.jpg" width="1100" height="733" loading="lazy" decoding="async" alt="Un gato tranquilo, panza arriba, en los brazos de su dueño.">
   </figure>
   <figure class="tira__pieza">
-    <img src="imagenes/tirac-01.jpg" width="1100" height="734" loading="lazy" decoding="async" alt="Dos perros jugando en el pasto.">
+    <img src="imagenes/tirac-01.jpg" width="1100" height="734" loading="lazy" decoding="async" alt="Dos perros jugando con un peluche en el pasto.">
   </figure>
 </section>
-
-</main>
-
-
 
 <!-- ========= MOSAICO ========= -->
 <section class="mos" aria-labelledby="t-mos">
   <h2 id="t-mos" class="mos__titulo">La misma serie, más de cerca</h2>
-  <p class="mos__nota">Estas seis ya aparecen más arriba en la página. Vuelven acá en otro tamaño porque una sola pasada de imágenes deja el scroll vacío, y porque de cerca se ven cosas que en grande se pierden. La procedencia de cada una está en imagenes/FUENTES.txt.</p>
+  <p class="mos__nota">Ocho piezas en otro tamaño: seis ya aparecen más arriba y dos son nuevas. Vuelven acá porque una sola pasada de imágenes deja el scroll vacío, y porque de cerca se ven cosas que en grande se pierden. La procedencia de cada una está en imagenes/FUENTES.txt.</p>
   <div class="mos__grilla">
     <figure class="mos__p">
       <img src="imagenes/mos-01.jpg" width="780" height="520"
-           loading="lazy" decoding="async" alt="">
+           loading="lazy" decoding="async" alt="Una mujer en el suelo de su casa, entre su perro y su gato.">
     </figure>
     <figure class="mos__p">
       <img src="imagenes/mos-02.jpg" width="780" height="520"
-           loading="lazy" decoding="async" alt="">
+           loading="lazy" decoding="async" alt="Dos perros compartiendo un peluche en el pasto.">
     </figure>
     <figure class="mos__p">
       <img src="imagenes/mos-03.jpg" width="780" height="520"
-           loading="lazy" decoding="async" alt="">
+           loading="lazy" decoding="async" alt="Un gato tranquilo, panza arriba, en los brazos de su dueño.">
     </figure>
     <figure class="mos__p">
       <img src="imagenes/mos-04.jpg" width="780" height="520"
-           loading="lazy" decoding="async" alt="">
+           loading="lazy" decoding="async" alt="Una mano acariciando la cabeza de un perro echado en un sillón.">
     </figure>
     <figure class="mos__p">
       <img src="imagenes/mos-05.jpg" width="780" height="520"
-           loading="lazy" decoding="async" alt="">
+           loading="lazy" decoding="async" alt="Dos veterinarios auscultando a un perro chico sobre la mesa de consulta.">
     </figure>
     <figure class="mos__p">
       <img src="imagenes/mos-06.jpg" width="780" height="520"
-           loading="lazy" decoding="async" alt="">
+           loading="lazy" decoding="async" alt="Un gatito sostenido con guantes durante una revisión.">
+    </figure>
+    <figure class="mos__p">
+      <img src="imagenes/mos-07.jpg" width="1200" height="800"
+           loading="lazy" decoding="async" alt="Un gato naranja sentado de perfil, mirando hacia un costado.">
+    </figure>
+    <figure class="mos__p">
+      <img src="imagenes/mos-08.jpg" width="1200" height="800"
+           loading="lazy" decoding="async" alt="Un perro chico echado en un sillón de la casa, junto a una lámpara.">
     </figure>
   </div>
 </section>
+
+<!-- ========= CONTACTO ========= -->
+<section class="contacto" id="contacto" aria-labelledby="t-contacto">
+  <div class="contacto__cols">
+    <div class="contacto__uno">
+      <p class="antetitulo">Ante la duda, preguntar es gratis</p>
+      <h2 id="t-contacto" class="contacto__tel">
+        <a href="tel:+56452240505">(45) 224 0505</a>
+      </h2>
+      <p class="contacto__pie">Es el número publicado en su ficha de Google. Contesta
+        la clínica, no esta página.</p>
+
+      <!-- El recado: no manda nada a ninguna parte. Arma la frase para
+           leerla por teléfono. La frase base está escrita en el HTML, así
+           que sin JavaScript se lee igual. -->
+      <form class="recado" id="recado" autocomplete="off">
+        <h3 class="recado__t">Arme el recado antes de marcar</h3>
+        <p class="recado__ayuda">No se envía nada desde acá: la frase se arma en
+          pantalla para que usted la lea cuando contesten.</p>
+        <p class="campo"><label for="r-animal">Qué animal es</label>
+          <input type="text" id="r-animal" name="animal" maxlength="46" placeholder="una perra de doce kilos"></p>
+        <p class="campo"><label for="r-desde">Desde cuándo</label>
+          <input type="text" id="r-desde" name="desde" maxlength="46" placeholder="desde anoche"></p>
+        <p class="campo"><label for="r-que">Qué le ve</label>
+          <input type="text" id="r-que" name="que" maxlength="90" placeholder="no come y está apagada"></p>
+        <p class="recado__salida"><span class="recado__rot">Para leer por teléfono</span>
+          <span id="r-salida">Hola. Llamo por una perra de doce kilos. Desde anoche no come y está apagada. Quiero saber si la llevo ahora o si puede esperar.</span></p>
+        <p class="recado__nota">Sin JavaScript se lee la frase de ejemplo y el
+          teléfono funciona igual.</p>
+      </form>
+    </div>
+
+    <dl class="datos">
+      <div><dt>Teléfono</dt><dd><a href="tel:+56452240505">(45) 224 0505</a></dd></div>
+      <div><dt>Ciudad</dt><dd>Temuco, La Araucanía</dd></div>
+      <div><dt>En Google</dt><dd>4,6 con 177 reseñas (01-09-2026)</dd></div>
+      <div><dt>Dirección</dt><dd class="ej" data-ejemplo="la confirma la clínica">Falta</dd></div>
+      <div><dt>Horario</dt><dd class="ej" data-ejemplo="lo confirma la clínica">Falta</dd></div>
+      <div><dt>Urgencias de noche</dt><dd class="ej" data-ejemplo="lo confirma la clínica">Falta</dd></div>
+      <div><dt>WhatsApp</dt><dd class="ej" data-ejemplo="hoy sólo publican el fijo">Falta</dd></div>
+    </dl>
+  </div>
+      <figure class="mapa">
+        <img src="imagenes/mapa-01.jpg" width="768" height="768" loading="lazy" decoding="async"
+             alt="Mapa de Temuco.">
+        <figcaption class="mapa__pie">
+          <span><b>Temuco</b>. La dirección exacta la confirma el negocio: cuando la tengamos, el mapa marca la puerta.</span>
+          <span class="mapa__cred">Mapa: &copy; <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener">OpenStreetMap</a></span>
+        </figcaption>
+      </figure>
+</section>
+
+<!-- ========= PARA LA CLÍNICA ========= -->
 <section class="dueno" aria-labelledby="t-dueno">
-  <h2 id="t-dueno">Para la clínica</h2>
-  <div class="dueno__cols">
+  <p class="antetitulo antetitulo--claro">Para la clínica</p>
+  <h2 id="t-dueno">Qué es esto y qué no</h2>
+  <div class="dueno__cols cascada">
     <div>
       <h3>Lo que está verificado</h3>
-      <p>El 4,6 con 177 reseñas de su ficha de Google y el teléfono (45) 224 0505.
-        No hay página propia.</p>
+      <p>El 4,6 con 177 reseñas de su ficha de Google y el teléfono (45) 224 0505,
+        mirados el 01-09-2026. No hay página propia. Todo lo demás está marcado con
+        línea punteada, y no hay ni un precio en toda la página: los pone usted.</p>
     </div>
     <div>
       <h3>Cómo está hecha la tabla</h3>
@@ -374,25 +539,52 @@
     </div>
     <div>
       <h3>Lo que falta</h3>
-      <p>Revisar y firmar la tabla, el horario, la dirección y si hay atención de
-        urgencia. Y unificar las fichas, si son dos.</p>
+      <p>Revisar y firmar la tabla y la lista de la llamada, el horario, la
+        dirección, si hay atención de urgencia y un WhatsApp si lo tienen. Y
+        unificar las fichas de Google, si de verdad son dos.</p>
     </div>
   </div>
   <p class="dueno__cierre">
-    <a class="flecha" href="https://wa.me/56968650001" rel="noopener">Escribirme por WhatsApp <span aria-hidden="true">→</span></a>
-    <a class="flecha" href="../../" rel="noopener">Ver otros trabajos <span aria-hidden="true">→</span></a>
+    <a class="flecha" href="mailto:cristalwebcl@gmail.com?subject=Sitio%20web%20para%20Cl%C3%ADnica%20Veterinaria%20Temuco">Escribirnos por correo <span aria-hidden="true">→</span></a>
+    <a class="flecha" href="https://cristalwebcl.github.io/cristalweb/" rel="noopener">Ver otros trabajos <span aria-hidden="true">→</span></a>
   </p>
 </section>
 
+</main>
+
 <footer class="pie">
-  <p><b>Esta página no entrega orientación veterinaria ni sirve para diagnosticar.</b>
-    La tabla es una referencia general de cuándo consultar, no de qué tiene el
-    animal, no cubre todos los casos y no reemplaza la evaluación de un profesional.
-    No se nombran enfermedades, medicamentos ni cantidades.
-    <b>Ante cualquier duda, llame.</b></p>
-  <p class="pie__demo">Sitio de demostración preparado por CristalWeb. El negocio no
-    lo ha encargado ni ha revisado su contenido.</p>
+  <div class="pie__in">
+    <p><b>Esta página no entrega orientación veterinaria ni sirve para diagnosticar.</b>
+      La tabla es una referencia general de cuándo consultar, no de qué tiene el
+      animal, no cubre todos los casos y no reemplaza la evaluación de un profesional.
+      No se nombran enfermedades, medicamentos ni cantidades.
+      <b>Ante cualquier duda, llame.</b></p>
+    <p class="pie__demo">Sitio de demostración preparado por CristalWeb. El negocio no
+      lo ha encargado ni ha revisado su contenido. Las fotos son de bancos libres y no
+      muestran el local: la procedencia de cada una está en imagenes/FUENTES.txt.</p>
+  </div>
 </footer>
+
+<!-- ══ BOTÓN FLOTANTE ═══════════════════════════════════════════════
+     Va escrito en el HTML, no lo crea el JS: si el script no arranca, el
+     botón igual está. El JS sólo lo aparta mientras se mira la portada,
+     para no tapar el titular. El icono es un tubo de teléfono dibujado
+     acá mismo: la CSP no deja pedir nada a un tercero.
+
+     POR QUÉ NO ES EL DE WHATSAPP. La clínica no publica WhatsApp: el
+     único canal verificado es el fijo (45) 224 0505. Un botón verde con
+     el logotipo de WhatsApp que no abre WhatsApp le miente al visitante
+     —y a un fijo, wa.me no llega—, así que el flotante lleva al número
+     del negocio con tel:, que es la regla para los rubros que sólo
+     tienen fijo. Cuando la clínica entregue su número se cambian dos
+     líneas: el href por
+       https://wa.me/569XXXXXXXX?text=Hola%2C%20vi%20la%20p%C3%A1gina...
+     con target="_blank" rel="noopener", y el fondo de .wapp por el
+     verde #25D366 con texto #07310F. -->
+<a class="wapp" href="tel:+56452240505" aria-label="Llamar a la clínica al (45) 224 0505">
+  <svg class="wapp__i" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M6.6 10.8c1.5 2.9 3.7 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.2.4 2.4.6 3.7.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.7 21 3 13.3 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.7.1.3 0 .7-.2 1L6.6 10.8Z"/></svg>
+  <span class="wapp__t">Llamar (45) 224 0505</span>
+</a>
 
 <script src="js/main.js"></script>
 </body>

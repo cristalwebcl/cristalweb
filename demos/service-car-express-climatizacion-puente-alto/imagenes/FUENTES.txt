@@ -1,0 +1,22 @@
+FUENTES DE LAS IMAGENES - Service Car Express Rehecha el 13-09-2026 (presentacion antes que texto). Fotos de REFERENCIA de bancos libres: ninguna es del local; las verdaderas las tiene que mandar el negocio. 
+port-01.jpg  <-  pozo-p-sce-rejilla\006.jpg  |  pexels (Pexels License)  |  autor: Erik Mclean  |  https://www.pexels.com/es-es/foto/salida-de-aire-tiro-vertical-de-cerca-aire-acondicionado-del-coche-13850014/  |  consulta: "car air vent"
+hund1-01.jpg  <-  pozo-p-sce-rejilla\007.jpg  |  pexels (Pexels License)  |  autor: Mohamed B.  |  https://www.pexels.com/es-es/foto/primer-plano-de-la-ventilacion-de-un-vehiculo-moderno-33825776/  |  consulta: "car air vent"
+hund2-01.jpg  <-  pozo-p-sce-manometro\004.jpg  |  pexels (Pexels License)  |  autor: Amir  Ghoorchiani  |  https://www.pexels.com/es-es/foto/calibre-blanco-462394/  |  consulta: "pressure gauge"
+hund3-01.jpg  <-  pozo-p-sce-manometro\006.jpg  |  pexels (Pexels License)  |  autor: Monocromática Artes B.cruz  |  https://www.pexels.com/es-es/foto/primer-plano-de-un-manometro-industrial-en-monocromo-30208337/  |  consulta: "pressure gauge"
+hund4-01.jpg  <-  pozo-p-sce-motor\008.jpg  |  pexels (Pexels License)  |  autor: Călin Răzvan  |  https://www.pexels.com/es-es/foto/motor-automotor-pieza-del-vehiculo-de-cerca-12658309/  |  consulta: "car engine bay"
+hund5-01.jpg  <-  pozo-p-sce-rejilla\010.jpg  |  pexels (Pexels License)  |  autor: Laura Paredis  |  https://www.pexels.com/es-es/foto/oscuro-vidriado-acristalado-tiro-vertical-12959478/  |  consulta: "car air vent"
+hund6-01.jpg  <-  pozo-p-sce-tablero\008.jpg  |  pexels (Pexels License)  |  autor: Erik Mclean  |  https://www.pexels.com/es-es/foto/ciudad-carretera-noche-calle-5962471/  |  consulta: "car dashboard night"
+banda-01.jpg  <-  pozo-p-sce-calor\006.jpg  |  pexels (Pexels License)  |  autor: Sefa Demirtaş  |  https://www.pexels.com/es-es/foto/atardecer-sobre-una-carretera-abierta-en-el-campo-38832074/  |  consulta: "hot summer road"
+cita-01.jpg  <-  pozo-p-sce-escarcha\009.jpg  |  pexels (Pexels License)  |  autor: Phil Evenden  |  https://www.pexels.com/es-es/foto/primer-plano-de-los-patrones-de-escarcha-invernal-sobre-el-vidrio-29893712/  |  consulta: "frost ice texture"
+mos1-01.jpg  <-  pozo-p-sce-tablero\009.jpg  |  pexels (Pexels License)  |  autor: Nicolás Langellotti  |  https://www.pexels.com/es-es/foto/ligero-noche-calle-azul-16218481/  |  consulta: "car dashboard night"
+mos2-01.jpg  <-  pozo-p-sce-escarcha\008.jpg  |  pexels (Pexels License)  |  autor: Simeon Maryska  |  https://www.pexels.com/es-es/foto/primer-plano-de-patrones-intrincados-de-escarcha-en-ventana-34863741/  |  consulta: "frost ice texture"
+mos3-01.jpg  <-  pozo-p-sce-herramientas\001.jpg  |  pexels (Pexels License)  |  autor: Miguel Á. Padriñán  |  https://www.pexels.com/es-es/foto/blanco-y-negro-oscuro-fila-hilera-16679582/  |  consulta: "car mechanic tools"
+mos4-01.jpg  <-  pozo-p-sce-calor\003.jpg  |  pexels (Pexels License)  |  autor: Marco Antonio  Casique Reyes  |  https://www.pexels.com/es-es/foto/carretera-panoramica-en-san-jose-chiapa-mexico-28835801/  |  consulta: "hot summer road"
+mos5-01.jpg  <-  pozo-p-sce-manometro\012.jpg  |  pexels (Pexels License)  |  autor: Viktorya  Sergeeva 🫂  |  https://www.pexels.com/es-es/foto/medir-calibrar-calibre-instrumento-de-medicion-10378026/  |  consulta: "pressure gauge"
+mos6-01.jpg  <-  pozo-p-sce-escarcha\010.jpg  |  pexels (Pexels License)  |  autor: https://kaboompics.com/  |  https://www.pexels.com/es-es/foto/vaso-cristal-vidrio-congelado-6757695/  |  consulta: "frost ice texture"
+
+BRUMA (bruma-pag-0N.png y bruma-osc-0N.png, 30x20): las MISMAS fotos, recortadas a 3:2, reducidas y
+recoloreadas con C:\devs\demos\hacer-bruma.ps1 (clara >= 0,68 de luminancia / oscura <= 0,05). No suman fuentes.
+    pagina: cita-01.jpg, mos2-01.jpg, banda-01.jpg, hund2-01.jpg, mos4-01.jpg   |   oscuras: port-01.jpg, hund6-01.jpg, mos1-01.jpg
+
+MAPA: iframe de Google Maps (embed publico, sin clave). No hay imagen de mapa.

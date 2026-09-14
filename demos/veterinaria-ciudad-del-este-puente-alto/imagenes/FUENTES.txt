@@ -1,0 +1,22 @@
+FUENTES DE LAS IMAGENES - Ciudad del Este Rehecha el 13-09-2026 (presentacion antes que texto). Fotos de REFERENCIA de bancos libres: ninguna es del local; las verdaderas las tiene que mandar el negocio. 
+port-01.jpg  <-  pozo-p-cde-premio\008.jpg  |  pexels (Pexels License)  |  autor: Mykhailo Petrenko  |  https://www.pexels.com/es-es/foto/momento-de-vinculo-con-perro-blanco-y-negro-32635784/  |  consulta: "dog treat hand"
+hund1-01.jpg  <-  pozo-p-cde-descanso\009.jpg  |  pexels (Pexels License)  |  autor: tiago alves  |  https://www.pexels.com/es-es/foto/perro-mascota-cabeza-fotografia-de-animales-19329545/  |  consulta: "dog resting sofa"
+hund2-01.jpg  <-  pozo-p-cde-gatito\012.jpg  |  pexels (Pexels License)  |  autor: Sandeep Subs  |  https://www.pexels.com/es-es/foto/gato-durmiendo-1466854/  |  consulta: "kitten sleeping"
+hund3-01.jpg  <-  pozo-p-cde-descanso\008.jpg  |  pexels (Pexels License)  |  autor: Arian Fernandez  |  https://www.pexels.com/es-es/foto/archie-24289017/  |  consulta: "dog resting sofa"
+hund4-01.jpg  <-  pozo-p-cde-premio\005.jpg  |  pexels (Pexels License)  |  autor: cottonbro studio  |  https://www.pexels.com/es-es/foto/animal-perro-mascota-lealtad-6568478/  |  consulta: "dog treat hand"
+hund5-01.jpg  <-  pozo-p-cde-descanso\001.jpg  |  pexels (Pexels License)  |  autor: Willo M.  |  https://www.pexels.com/es-es/foto/pitbull-terrier-americano-cervatillo-adulto-935918/  |  consulta: "dog resting sofa"
+hund6-01.jpg  <-  pozo-p-cde-gatito\005.jpg  |  pexels (Pexels License)  |  autor: Gundula Vogel  |  https://www.pexels.com/es-es/foto/mascota-gatito-gato-dormido-21008444/  |  consulta: "kitten sleeping"
+banda-01.jpg  <-  pozo-p-cde-plaza\006.jpg  |  pexels (Pexels License)  |  autor: muhammad nadeem  |  https://www.pexels.com/es-es/foto/manana-serena-en-un-paisaje-de-parque-iluminado-por-el-sol-30353399/  |  consulta: "dog park morning"
+cita-01.jpg  <-  pozo-p-cde-plaza\012.jpg  |  pexels (Pexels License)  |  autor: Natalie Buchanan  |  https://www.pexels.com/es-es/foto/perros-juguetones-en-un-parque-iluminado-por-el-sol-en-una-manana-38230615/  |  consulta: "dog park morning"
+mos1-01.jpg  <-  pozo-p-cde-gatito\007.jpg  |  pexels (Pexels License)  |  autor: Gammel Knecht  |  https://www.pexels.com/es-es/foto/relajacion-animal-mascota-gris-16385534/  |  consulta: "kitten sleeping"
+mos2-01.jpg  <-  pozo-p-cde-premio\010.jpg  |  pexels (Pexels License)  |  autor: Bethany Ferr  |  https://www.pexels.com/es-es/foto/mano-perro-mascota-tratar-5482816/  |  consulta: "dog treat hand"
+mos3-01.jpg  <-  pozo-p-cde-plaza\002.jpg  |  pexels (Pexels License)  |  autor: Julio Lopez  |  https://www.pexels.com/es-es/foto/acera-animal-perro-mascota-16125192/  |  consulta: "dog park morning"
+mos4-01.jpg  <-  pozo-p-cde-gatito\006.jpg  |  pexels (Pexels License)  |  autor: Feyza Yıldırım  |  https://www.pexels.com/es-es/foto/mono-pelo-piel-blanco-18182976/  |  consulta: "kitten sleeping"
+mos5-01.jpg  <-  pozo-p-cde-plaza\004.jpg  |  pexels (Pexels License)  |  autor: Natalie Buchanan  |  https://www.pexels.com/es-es/foto/perros-salchicha-corriendo-alegremente-en-un-parque-brumoso-38403746/  |  consulta: "dog park morning"
+mos6-01.jpg  <-  pozo-p-cde-gatito\011.jpg  |  pexels (Pexels License)  |  autor: Duygu  |  https://www.pexels.com/es-es/foto/flores-suelo-gatito-gato-22491238/  |  consulta: "kitten sleeping"
+
+BRUMA (bruma-pag-0N.png y bruma-osc-0N.png, 30x20): las MISMAS fotos, recortadas a 3:2, reducidas y
+recoloreadas con C:\devs\demos\hacer-bruma.ps1 (clara >= 0,68 de luminancia / oscura <= 0,05). No suman fuentes.
+    pagina: port-01.jpg, hund2-01.jpg, hund5-01.jpg, mos4-01.jpg, mos1-01.jpg   |   oscuras: port-01.jpg, banda-01.jpg, cita-01.jpg
+
+MAPA: iframe de Google Maps (embed publico, sin clave). No hay imagen de mapa.

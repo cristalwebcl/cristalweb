@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="robots" content="noindex, nofollow">
 <title>Asevet — clínica veterinaria, Puerto Varas</title>
-<meta name="description" content="Clínica veterinaria en Av. Colón, Puerto Varas, con atención de lunes a domingo. Qué se atiende cada día y qué hacer si la urgencia es hoy.">
+<meta name="description" content="Clínica veterinaria en Av. Colón, Puerto Varas, con atención de lunes a domingo. Qué se atiende cada día, qué es urgencia y qué pasa en la primera consulta.">
 
 <meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self'; img-src 'self' data:; font-src 'self'; connect-src 'self'; media-src 'self'; form-action 'self'; base-uri 'none'; frame-src 'none'; object-src 'none'">
 <meta name="referrer" content="strict-origin-when-cross-origin">
@@ -20,7 +20,7 @@
 
 <div class="propuesta">
   <p class="propuesta__que">Propuesta de sitio web — preparada para <b>Asevet Clínica Veterinaria</b> por CristalWeb</p>
-  <p class="propuesta__gancho">Atienden los siete días — la información más valiosa que tiene una veterinaria — y no hay dónde leerla un domingo a las nueve de la noche buscando «veterinaria abierta Puerto Varas».</p>
+  <p class="propuesta__gancho">Atienden los siete días —la información más valiosa que tiene una veterinaria— y su dominio <b>asevet.cl</b> devuelve «404 Not Found» (verificado el 08-09-2026): quien los busca un domingo a las nueve de la noche no encuentra dónde leerlo. Ésta es la página que debería estar ahí.</p>
 </div>
 
 <header class="cab" id="cab">
@@ -31,7 +31,7 @@
   <nav class="cab__nav" aria-label="Secciones">
     <a href="#semana">La semana</a>
     <a href="#urgencia">Urgencias</a>
-    <a href="#consulta">La consulta</a>
+    <a href="#primera">La consulta</a>
     <a href="#donde">Dónde estamos</a>
   </nav>
   <a class="cab__cta boton boton--chico" href="#donde">Cómo llegar</a>
@@ -39,11 +39,17 @@
 
 <main>
 
-<!-- ═══════════ PORTADA ═══════════ -->
+<!-- ═══════════ PORTADA ═══════════
+     La foto es la base y el clip se funde encima cuando puede
+     reproducirse: si el autoplay se bloquea, si el visitante pidió menos
+     movimiento o si ahorra datos, queda la foto y no se nota nada.
+     port-01.jpg es un fotograma del mismo clip, así que el fundido no
+     cambia de escena y no aparece nunca un rectángulo negro. -->
 <section class="portada" id="portada" aria-labelledby="t-portada">
   <div class="portada__foto" aria-hidden="true">
-    <img src="imagenes/port-01.jpg" width="2560" height="1707"
+    <img src="imagenes/port-01.jpg" width="1280" height="720"
          decoding="async" fetchpriority="high" alt="">
+    <video class="portada__video" data-src="video/port.mp4" muted playsinline loop preload="none" aria-hidden="true"></video>
   </div>
 
   <!-- ═══════ ESCENA DE PORTADA · «las siete barras» ═══════
@@ -52,7 +58,11 @@
        grande, el mismo motivo que el tablero de siete columnas de más
        abajo. Las seis primeras suben en cascada y el DOMINGO entra
        último y se enciende — que es el argumento de venta entero de
-       esta clínica. El halo detrás es el único reposo. -->
+       esta clínica.
+       Desde que la portada lleva clip de fondo, el reposo lo da el
+       video: el halo ya no respira en bucle (regla del bucle único por
+       página) y se le sumó un respaldo del color de la portada para que
+       las barras no peleen con el perro del clip. -->
   <div class="escena escena--siete" aria-hidden="true">
     <span class="escena__halo"></span>
     <span class="escena__barras">
@@ -77,11 +87,22 @@
       <a class="boton boton--linea" href="#urgencia">Es una urgencia</a>
     </div>
   </div>
+</section>
 
-  <ul class="cifras" aria-label="Datos de la clínica">
+
+<!-- ═══════════ CIFRAS ═══════════
+     Cuatro números en la misma fila: el dato que publica la clínica, el
+     que sale de ahí, y las dos fallas concretas. Cuenta uno solo —el 52,
+     que es el argumento— porque un contador que sube el «0» o el «404»
+     se lee como truco, y esos dos son justamente los que hay que leer
+     quietos. El valor final va escrito dentro del <b>: sin JavaScript, o
+     con menos movimiento pedido, se lee igual. -->
+<section class="cifras" aria-label="Los números de esta página">
+  <ul class="cifras__lista ancho cascada">
     <li><b>7</b><span>días de atención a la semana</span></li>
-    <li><b>0</b><span>días en que hay que buscar en otra parte</span></li>
-    <li><b>1</b><span>dirección: Av. Colón 0461</span></li>
+    <li><b data-cuenta="52">52</b><span>domingos al año con la puerta abierta</span></li>
+    <li><b>0</b><span>teléfonos publicados que hayamos podido encontrar</span></li>
+    <li class="cifras__herida"><b>404</b><span>lo que responde asevet.cl hoy · verificado el 08-09-2026</span></li>
   </ul>
 </section>
 
@@ -91,7 +112,7 @@
      página y a la vez el argumento de venta. El domingo va destacado
      porque es el día que los demás no contestan. -->
 <section class="semana" id="semana" aria-labelledby="t-sem">
-  <div class="ancho">
+  <div class="ancho semana__txt">
     <p class="rotulo">La pieza que ninguna veterinaria de la zona publica</p>
     <h2 class="titulo" id="t-sem">La semana completa, en un tablero.</h2>
     <p class="entradilla">
@@ -103,7 +124,7 @@
   </div>
 
   <div class="ancho">
-    <ol class="tablero ej" data-ejemplo="horarios de ejemplo">
+    <ol class="tablero cascada ej" data-ejemplo="horarios de ejemplo">
       <li class="dia">
         <p class="dia__n">Lun</p>
         <p class="dia__h">09:00<span>—</span>19:00</p>
@@ -164,7 +185,7 @@
 
 <!-- ═══════════ URGENCIAS ═══════════ -->
 <section class="urgencia" id="urgencia" aria-labelledby="t-urg">
-  <div class="ancho">
+  <div class="ancho urgencia__txt">
     <p class="rotulo">Urgencias</p>
     <h2 class="titulo" id="t-urg">Qué es urgencia de verdad, sin alarmismo.</h2>
     <p class="entradilla">
@@ -173,8 +194,10 @@
       decidir si sale ahora o si puede esperar a mañana —
       <b>no reemplaza al veterinario</b>.
     </p>
+  </div>
 
-    <div class="urg">
+  <div class="ancho">
+    <div class="urg cascada">
       <article class="urg__c urg__c--ya">
         <p class="urg__r">Salga ahora</p>
         <ul>
@@ -219,15 +242,92 @@
 </section>
 
 
+<!-- ═══════════ LA PRIMERA CONSULTA · única sección clara ═══════════
+     Regla de la casa para páginas oscuras: una sola sección de
+     luminancia invertida a media página, con un tercer nivel de
+     claridad adentro (las fichas en blanco puro sobre el hueso). Sin
+     ella la página se lee como un túnel. Los grises, el acento y el
+     fondo de la etiqueta del .ej están reescritos uno por uno en el
+     CSS, bajo el título de la sección. -->
+<section class="primera invertida" id="primera" aria-labelledby="t-pri">
+  <div class="ancho primera__txt">
+    <p class="rotulo">La primera consulta</p>
+    <h2 class="titulo" id="t-pri">Qué pasa cuando entra por la puerta.</h2>
+    <p class="entradilla">
+      Es lo que más pregunta quien nunca ha ido y lo que ninguna
+      veterinaria escribe: cuánto dura, qué le van a hacer al animal y
+      con qué se sale. Va contado antes de que llegue.
+    </p>
+  </div>
+
+  <ol class="momentos ancho cascada">
+    <li class="mom">
+      <p class="mom__n">01</p>
+      <h3>Los datos y el motivo</h3>
+      <p class="mom__t">Unos 5 minutos</p>
+      <p>Nombre, edad, si está vacunado y desde cuándo pasa lo que pasa.
+        Mientras tanto el animal se va acostumbrando a la sala, que es
+        media consulta ganada.</p>
+    </li>
+    <li class="mom mom--destaca">
+      <p class="mom__n">02</p>
+      <h3>La revisión general</h3>
+      <p class="mom__t">10 a 15 minutos</p>
+      <p>Peso, temperatura, mucosas, corazón y pulmones, abdomen y piel.
+        Se hace completa aunque usted venga por una sola cosa: buena
+        parte de los hallazgos aparece fuera del motivo de la visita.</p>
+    </li>
+    <li class="mom">
+      <p class="mom__n">03</p>
+      <h3>Qué se encontró</h3>
+      <p class="mom__t">La conversación</p>
+      <p>Qué se vio, qué falta por saber y qué se puede hacer hoy. Si
+        hacen falta exámenes, se dice cuáles y para qué sirve cada uno
+        antes de tomarlos.</p>
+    </li>
+    <li class="mom">
+      <p class="mom__n">04</p>
+      <h3>Con qué se va</h3>
+      <p class="mom__t">Antes de salir</p>
+      <p>Las indicaciones por escrito y la fecha del control. Si hay
+        tratamiento, quién lo hace, cada cuánto, y qué señal obliga a
+        volver antes.</p>
+    </li>
+  </ol>
+
+  <p class="ancho nota nota--deslinde">
+    Esto es cómo funciona una consulta veterinaria en general, no un
+    protocolo de Asevet ni consejo clínico. Los tiempos son referencia:
+    cada animal es distinto y quien decide es el veterinario con el
+    animal delante.
+  </p>
+</section>
+
+
+<!-- ═══════════ CITA ═══════════
+     Velo plano porque el texto va centrado: con un degradado lateral,
+     media frase quedaría sobre .9 y la otra media sobre .3. -->
+<figure class="cita" aria-label="Sobre la atención">
+  <img src="imagenes/cita-01.jpg" width="1280" height="720" loading="lazy" decoding="async" alt="">
+  <video class="cita__video" data-src="video/cita.mp4" muted playsinline loop preload="none" aria-hidden="true"></video>
+  <blockquote class="cita__txt">
+    <p>«El domingo es cuando más se necesita una veterinaria, y es
+       justo el día en que casi ninguna contesta.»</p>
+  </blockquote>
+</figure>
+
+
 <!-- ═══════════ LA CONSULTA · con telón ═══════════ -->
 <section class="consulta con-telon" id="consulta" aria-labelledby="t-con">
   <div class="telon" aria-hidden="true">
     <img src="imagenes/telon-01.jpg" width="1200" height="800" loading="lazy" decoding="async" alt="">
   </div>
-  <div class="ancho">
+  <div class="ancho consulta__txt">
     <p class="rotulo">La consulta</p>
     <h2 class="titulo" id="t-con">Qué se hace acá.</h2>
-    <ul class="servicios ej" data-ejemplo="por confirmar con la clínica">
+  </div>
+  <div class="ancho">
+    <ul class="servicios cascada ej" data-ejemplo="por confirmar con la clínica">
       <li><h3>Consulta general</h3><p>Evaluación clínica completa y plan de qué sigue.</p></li>
       <li><h3>Vacunas y desparasitación</h3><p>Con calendario según edad y salidas del animal.</p></li>
       <li><h3>Exámenes</h3><p>Los que se puedan tomar acá y los que se derivan.</p></li>
@@ -239,14 +339,33 @@
 </section>
 
 
-<!-- ═══════════ CITA ═══════════ -->
-<figure class="cita" aria-label="Sobre la atención">
-  <img src="imagenes/cita-01.jpg" width="2200" height="1469" loading="lazy" decoding="async" alt="">
-  <blockquote class="cita__txt">
-    <p>«El domingo es cuando más se necesita una veterinaria, y es
-       justo el día en que casi ninguna contesta.»</p>
-  </blockquote>
-</figure>
+<!-- ═══════════ MITADES · qué traer ═══════════ -->
+<section class="mit" aria-labelledby="t-mit">
+  <div class="mit__foto">
+    <img src="imagenes/mit-01.jpg" width="2200" height="1469" loading="lazy" decoding="async"
+         alt="Perro beagle echado y tranquilo, esperando">
+  </div>
+  <div class="mit__txt">
+    <p class="rotulo">Antes de venir</p>
+    <h2 class="titulo" id="t-mit">Qué conviene traer.</h2>
+    <ul class="traer">
+      <li>El <b>carnet de vacunas</b>, si lo tiene. Si no, la fecha
+        aproximada de la última.</li>
+      <li>Los <b>remedios que esté tomando</b>: mejor la caja que el
+        nombre de memoria.</li>
+      <li><b>Correa corta</b> para perros. Para gatos, transportín y una
+        manta que huela a casa.</li>
+      <li>Anotado: <b>desde cuándo</b> pasa, cuántas veces al día, y si
+        come y bebe normal.</li>
+      <li>Si hubo vómito o diarrea, <b>una foto</b> sirve más que
+        cualquier descripción.</li>
+    </ul>
+    <p class="nota">
+      Lista general del oficio, no un requisito de la clínica. Sin nada
+      de esto igual se atiende: se avanza más rápido, nada más.
+    </p>
+  </div>
+</section>
 
 
 <!-- ═══════════ MOSAICO ═══════════ -->
@@ -255,13 +374,14 @@
     <p class="rotulo">La clínica</p>
     <h2 class="titulo" id="t-mos">Quiénes pasan por acá.</h2>
   </div>
-  <div class="mos__grilla">
-    <figure class="mos__p"><img src="imagenes/mos1-01.jpg" width="1200" height="1800" loading="lazy" decoding="async" alt="Atención veterinaria a un perro"></figure>
-    <figure class="mos__p"><img src="imagenes/mos2-01.jpg" width="1200" height="800" loading="lazy" decoding="async" alt="Veterinario con un gato en consulta"></figure>
-    <figure class="mos__p"><img src="imagenes/mos3-01.jpg" width="1200" height="800" loading="lazy" decoding="async" alt="Perro descansando tranquilo"></figure>
-    <figure class="mos__p"><img src="imagenes/mos4-01.jpg" width="1200" height="798" loading="lazy" decoding="async" alt="Gato siendo atendido"></figure>
-    <figure class="mos__p"><img src="imagenes/mos5-01.jpg" width="1200" height="798" loading="lazy" decoding="async" alt="Retrato de gato"></figure>
-    <figure class="mos__p"><img src="imagenes/mos6-01.jpg" width="1200" height="800" loading="lazy" decoding="async" alt="Gato en reposo"></figure>
+  <div class="mos__grilla cascada">
+    <figure class="mos__p"><img src="imagenes/mos1-01.jpg" width="1200" height="1800" loading="lazy" decoding="async" alt="Perro pequeño echado junto a un estetoscopio"></figure>
+    <figure class="mos__p"><img src="imagenes/mos2-01.jpg" width="1200" height="800" loading="lazy" decoding="async" alt="Gato sobre la mesa mientras le cortan las uñas"></figure>
+    <figure class="mos__p"><img src="imagenes/mos3-01.jpg" width="1200" height="800" loading="lazy" decoding="async" alt="Pastor alemán echado en la camilla mientras el veterinario le sostiene una pata"></figure>
+    <figure class="mos__p"><img src="imagenes/mos4-01.jpg" width="1200" height="800" loading="lazy" decoding="async" alt="Manos con guante revisando la pata de un perro echado en la camilla"></figure>
+    <figure class="mos__p"><img src="imagenes/mos5-01.jpg" width="1200" height="798" loading="lazy" decoding="async" alt="Gato joven mirando de frente"></figure>
+    <figure class="mos__p"><img src="imagenes/mos6-01.jpg" width="1200" height="800" loading="lazy" decoding="async" alt="Gato en reposo, primer plano"></figure>
+    <figure class="mos__p"><img src="imagenes/mos7-01.jpg" width="1200" height="800" loading="lazy" decoding="async" alt="Dueña y veterinario conversando en el box mientras él sostiene a un perro pequeño"></figure>
   </div>
 </section>
 
@@ -298,16 +418,16 @@
       </p>
       <form class="form" id="form-caso" autocomplete="on">
         <label>Nombre del animal
-          <input type="text" id="f-animal" placeholder="Lola" required>
+          <input type="text" id="f-animal" placeholder="Lola" maxlength="40" required>
         </label>
         <label>Especie y edad
-          <input type="text" id="f-especie" placeholder="gata, 4 años">
+          <input type="text" id="f-especie" placeholder="gata, 4 años" maxlength="40">
         </label>
         <label>Qué le pasa
-          <input type="text" id="f-que" placeholder="no come desde ayer" required>
+          <input type="text" id="f-que" placeholder="no come desde ayer" maxlength="80" required>
         </label>
         <label>Desde cuándo
-          <input type="text" id="f-desde" placeholder="ayer en la tarde">
+          <input type="text" id="f-desde" placeholder="ayer en la tarde" maxlength="40">
         </label>
         <p class="form__salida" id="salida" aria-live="polite"></p>
         <div class="form__acciones">
@@ -320,6 +440,14 @@
       </p>
     </div>
   </div>
+      <figure class="mapa">
+        <img src="imagenes/mapa-01.jpg" width="768" height="768" loading="lazy" decoding="async"
+             alt="Mapa con la ubicación de Av. Colón 0461, Puerto Varas.">
+        <figcaption class="mapa__pie">
+          <span><b>Av. Colón 0461, Puerto Varas</b>.</span>
+          <span class="mapa__cred">Mapa: &copy; <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener">OpenStreetMap</a></span>
+        </figcaption>
+      </figure>
 </section>
 
 
@@ -328,7 +456,7 @@
   <div class="ancho">
     <p class="rotulo rotulo--claro">Para el dueño</p>
     <h2 class="titulo titulo--claro" id="t-dueno">Qué es esto y qué falta.</h2>
-    <div class="dueno__cols">
+    <div class="dueno__cols cascada">
       <div>
         <h3>Qué es</h3>
         <p>Una propuesta de sitio web hecha por nuestra cuenta. Asevet
@@ -339,15 +467,17 @@
       <div>
         <h3>Qué es ejemplo</h3>
         <p>Todos los horarios del tablero y la lista de servicios. La
-          guía de urgencias es criterio general del oficio, sin dosis
-          ni medicamentos, y la página lo dice: decide cuándo salir de
-          la casa, no qué hacer con el animal.</p>
+          guía de urgencias y la primera consulta son criterio general
+          del oficio, sin dosis ni medicamentos, y la página lo dice:
+          deciden cuándo salir de la casa, no qué hacer con el animal.</p>
       </div>
       <div>
         <h3>Qué cambiaría la página entera</h3>
-        <p>El teléfono y los horarios reales de cada día. Y aclarar lo
-          de <b>asevet.cl</b>: hoy ese dominio devuelve 404. Si es de
-          ustedes, recuperarlo es lo primero que haríamos.</p>
+        <p>El teléfono y los horarios reales de cada día. Con el número
+          a la vista, el botón verde de la esquina abre WhatsApp con el
+          caso ya escrito. Y hay que aclarar lo de <b>asevet.cl</b>: hoy
+          ese dominio devuelve 404. Si es de ustedes, recuperarlo es lo
+          primero que haríamos.</p>
       </div>
     </div>
     <p class="dueno__cierre">
@@ -360,12 +490,35 @@
 </main>
 
 <footer class="pie">
-  <p>Sitio de demostración preparado por CristalWeb. El negocio no lo ha
-     encargado ni ha revisado su contenido. Los horarios y servicios son
-     ejemplos marcados como tales. La guía de urgencias es orientación
-     general y no reemplaza la evaluación de un médico veterinario: no
-     contiene dosis, medicamentos ni tratamientos.</p>
+  <div class="pie__in">
+    <p>Sitio de demostración preparado por CristalWeb. El negocio no lo ha
+       encargado ni ha revisado su contenido. Los horarios y servicios son
+       ejemplos marcados como tales. La guía de urgencias y la primera
+       consulta son orientación general y no reemplazan la evaluación de un
+       médico veterinario: no contienen dosis, medicamentos ni tratamientos.
+       No hay precios en esta página: los pone la clínica.</p>
+  </div>
 </footer>
+
+<!-- ══ BOTÓN FLOTANTE ═══════════════════════════════════════════════
+     Va escrito en el HTML, no lo crea el JS: si el script no arranca,
+     el botón igual está. El JS sólo lo aparta mientras se mira la
+     portada, para no tapar el titular. Icono de simple-icons (CC0),
+     incrustado: la CSP no deja pedir nada a un tercero.
+
+     OJO CON EL DESTINO — la regla de la casa es que este botón vaya al
+     WhatsApp DEL NEGOCIO, nunca al de CristalWeb. Asevet no publica
+     ningún número: ni en asevet.cl (404 el 08-09-2026) ni en su ficha
+     de reservas. Inventar uno mandaría a los clientes de la clínica a
+     un teléfono equivocado, así que hoy el botón lleva al bloque que
+     arma el mensaje para copiarlo, y el rótulo dice lo que hace. Cuando
+     la clínica entregue su número se cambia UNA línea:
+       href="https://wa.me/569XXXXXXXX?text=Hola%2C%20vi%20la%20p%C3%A1gina%20y%20necesito%20atenci%C3%B3n%20veterinaria."
+     y se le suman target="_blank" rel="noopener". -->
+<a class="wapp" href="#donde" aria-label="Ir a armar el mensaje para Asevet — la clínica todavía no publica WhatsApp">
+  <svg class="wapp__i" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"/></svg>
+  <span class="wapp__t">Contar el caso</span>
+</a>
 
 <script src="js/main.js"></script>
 </body>

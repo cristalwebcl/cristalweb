@@ -1,0 +1,22 @@
+FUENTES DE LAS IMAGENES - Tierra Animal Rehecha el 13-09-2026 (presentacion antes que texto). Fotos de REFERENCIA de bancos libres: ninguna es del local; las verdaderas las tiene que mandar el negocio. 
+port-01.jpg  <-  pozo-p-tan-huella\001.jpg  |  pexels (Pexels License)  |  autor: Víctor C.  |  https://www.pexels.com/es-es/foto/textura-suelo-molido-superficie-26584993/  |  consulta: "dog paw print mud"
+hund1-01.jpg  <-  pozo-p-tan-dientes\009.jpg  |  pexels (Pexels License)  |  autor: Erickzen Ludewig  |  https://www.pexels.com/es-es/foto/perro-bostezando-bajo-techo-de-pabellon-abierto-36295291/  |  consulta: "dog teeth"
+hund2-01.jpg  <-  pozo-p-tan-ojo\002.jpg  |  pexels (Pexels License)  |  autor: Fernanda Gomez de la torre  |  https://www.pexels.com/es-es/foto/retrato-en-primer-plano-de-un-gato-domestico-en-interiores-35449056/  |  consulta: "cat eye closeup"
+hund3-01.jpg  <-  pozo-p-tan-rayos\005.png  |  pexels (Pexels License)  |  autor: Gerardo Manzano  |  https://www.pexels.com/es-es/foto/perro-mascota-fotografia-de-animales-fondo-negro-16621946/  |  consulta: "dog xray"
+hund4-01.jpg  <-  pozo-p-tan-dientes\007.jpg  |  pexels (Pexels License)  |  autor: Rodrigo Ortega  |  https://www.pexels.com/es-es/foto/border-collie-feliz-mirando-hacia-arriba-al-aire-libre-29296533/  |  consulta: "dog teeth"
+hund5-01.jpg  <-  pozo-p-tan-rayos\002.jpg  |  pexels (Pexels License)  |  autor: Eduardo López  |  https://www.pexels.com/es-es/foto/cachorro-sentado-16618524/  |  consulta: "dog xray"
+hund6-01.jpg  <-  pozo-p-tan-viejo\010.jpg  |  pexels (Pexels License)  |  autor: Florencia  Pérez  |  https://www.pexels.com/es-es/foto/perro-feliz-relajandose-en-el-parque-natural-uruguay-33710357/  |  consulta: "old dog resting"
+banda-01.jpg  <-  pozo-p-tan-corre\002.jpg  |  pexels (Pexels License)  |  autor: Alexander Tisko  |  https://www.pexels.com/es-es/foto/londres-el-lerro-con-espiritu-cazador-35404945/  |  consulta: "dog running field"
+cita-01.jpg  <-  pozo-p-tan-viejo\007.jpg  |  pexels (Pexels License)  |  autor: Alexander Tisko  |  https://www.pexels.com/es-es/foto/perro-triste-35182559/  |  consulta: "old dog resting"
+mos1-01.jpg  <-  pozo-p-tan-ojo\011.jpg  |  pexels (Pexels License)  |  autor: Mahmoud Yahyaoui  |  https://www.pexels.com/es-es/foto/primer-plano-de-ojo-de-gato-21286894/  |  consulta: "cat eye closeup"
+mos2-01.jpg  <-  pozo-p-tan-huella\009.jpg  |  pexels (Pexels License)  |  autor: Mushfiqur Rahman  |  https://www.pexels.com/es-es/foto/huella-de-pata-de-animal-en-terreno-fangoso-35488986/  |  consulta: "dog paw print mud"
+mos3-01.jpg  <-  pozo-p-tan-corre\010.jpg  |  pexels (Pexels License)  |  autor: Gerardo Pantoja  |  https://www.pexels.com/es-es/foto/perro-blanco-en-un-campo-soleado-con-cielo-azul-29870330/  |  consulta: "dog running field"
+mos4-01.jpg  <-  pozo-p-tan-hoja\001.jpg  |  pexels (Pexels License)  |  autor: Waskyria Miranda  |  https://www.pexels.com/es-es/foto/hojas-de-monstera-vibrantes-en-un-jardin-venezolano-29641240/  |  consulta: "leaves plant shadow"
+mos5-01.jpg  <-  pozo-p-tan-viejo\008.jpg  |  pexels (Pexels License)  |  autor: German Suarez  |  https://www.pexels.com/es-es/foto/perfil-de-un-pastor-aleman-relajado-al-aire-libre-35073379/  |  consulta: "old dog resting"
+mos6-01.jpg  <-  pozo-p-tan-dientes\012.jpg  |  pexels (Pexels License)  |  autor: Abner Velázquez  |  https://www.pexels.com/es-es/foto/adorable-cachorro-bostezando-con-amigos-juguetones-34221894/  |  consulta: "dog teeth"
+
+BRUMA (bruma-pag-0N.png y bruma-osc-0N.png, 30x20): las MISMAS fotos, recortadas a 3:2, reducidas y
+recoloreadas con C:\devs\demos\hacer-bruma.ps1 (clara >= 0,68 de luminancia / oscura <= 0,05). No suman fuentes.
+    pagina: port-01.jpg, banda-01.jpg, mos2-01.jpg, hund1-01.jpg, mos1-01.jpg   |   oscuras: port-01.jpg, cita-01.jpg, mos4-01.jpg
+
+MAPA: iframe de Google Maps (embed publico, sin clave). No hay imagen de mapa.

@@ -432,3 +432,55 @@ p.ej { padding: .45rem .7rem .35rem; margin-top: .7rem; }
 p { text-wrap: pretty; }
 :root { --muelle: linear(0, .32 14%, .68 26%, .92 38%, 1.04 50%, 1.01 64%, .99 78%, 1); }
 .js .portada__texto > * { animation-timing-function: var(--muelle); }
+
+/* ── WHATSAPP FLOTANTE ──────────────────────────────────────────────
+   56 px de alto, por encima del minimo tactil de 44. Verde de WhatsApp
+   a proposito: se reconoce sin leerlo, y eso es lo que hace que se toque.
+   Se ve SIEMPRE por defecto; el JS solo lo aparta sobre la portada. Al
+   reves, un fallo del script se llevaria el CTA principal. */
+.wapp {
+  position: fixed;
+  right: max(1rem, env(safe-area-inset-right, 0px));
+  bottom: max(1rem, env(safe-area-inset-bottom, 0px));
+  z-index: 60;
+  display: inline-flex; align-items: center; gap: .55rem;
+  height: 56px; padding: 0 1.15rem 0 1rem;
+  border-radius: 999px;
+  background: #25D366; color: #07310F;
+  text-decoration: none;
+  font-family: var(--cuerpo, system-ui, sans-serif);
+  font-size: .95rem; font-weight: 700; line-height: 1;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, .26), 0 2px 6px rgba(0, 0, 0, .16);
+  transition: opacity .28s ease, transform .28s ease, box-shadow .18s ease;
+}
+.wapp__i { width: 26px; height: 26px; fill: currentColor; flex: none; }
+.wapp:hover, .wapp:focus-visible { transform: translateY(-2px); box-shadow: 0 10px 26px rgba(0, 0, 0, .3); }
+.js .wapp--arriba { opacity: 0; transform: translateY(14px) scale(.94); pointer-events: none; }
+
+@media (max-width: 520px) {
+  .wapp { width: 56px; padding: 0; justify-content: center; }
+  .wapp__t { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .wapp { transition: opacity .28s ease; }
+  .wapp:hover, .wapp:focus-visible { transform: none; }
+  .js .wapp--arriba { transform: none; }
+}
+/* ── MAPA DE COBERTURA ──────────────────────────────────────────────
+   Acá el mapa NO marca una puerta: este negocio va a domicilio, así que
+   lo que importa es la zona. Marcar un punto sería mentir sobre dónde
+   está el taller, que ni siquiera atiende público.
+   Imagen propia con mosaicos de OpenStreetMap: la CSP prohíbe pedir nada
+   a un tercero y un iframe de Google Maps quedaría en blanco sin dar un
+   solo error. La atribución a OSM la exige su licencia. */
+.mapa { margin: 1.4rem 0 0; border: 1px solid var(--linea); border-radius: 10px; overflow: hidden; background: var(--papel); }
+.mapa img { display: block; width: 100%; height: auto; aspect-ratio: 16 / 10; object-fit: cover; }
+.mapa__pie {
+  display: flex; flex-direction: column; gap: .35rem;
+  padding: .7rem .9rem;
+  font-size: var(--p--1); line-height: 1.45;
+  color: var(--medio); border-top: 1px solid var(--linea);
+}
+.mapa__pie b { color: var(--tinta); }
+.mapa__cred { font-size: .82em; opacity: .85; }
+.mapa__cred a { color: var(--cama); }

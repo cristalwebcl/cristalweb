@@ -48,3 +48,10 @@ DESCARTADAS
   de la marca es legible en el centro de la rueda.
 · Un deportivo de marca reconocible: además de la marca, es el auto
   equivocado para el cliente de esta comuna.
+
+MAPA DE UBICACION — mapa-01.jpg
+  768 x 768 · zoom 14 · centro -39.2731173, -71.9777605
+  Mosaicos de OpenStreetMap pegados en una sola imagen, con el marcador
+  dibujado encima. Datos (c) OpenStreetMap contributors, licencia ODbL:
+  la atribucion tiene que ir VISIBLE junto al mapa, en el pie de la figura.
+  https://www.openstreetmap.org/copyright

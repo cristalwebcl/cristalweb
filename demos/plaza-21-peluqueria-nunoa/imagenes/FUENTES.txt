@@ -1,0 +1,22 @@
+FUENTES DE LAS IMAGENES - Plaza.21 Rehecha el 13-09-2026 (presentacion antes que texto). Fotos de REFERENCIA de bancos libres: ninguna es del local; las verdaderas las tiene que mandar el negocio. 
+port-01.jpg  <-  pozo-p-plaza-secador\004.jpg  |  pexels (Pexels License)  |  autor: Dmitry Alexandrovich  |  https://www.pexels.com/es-es/foto/salon-de-belleza-retro-con-secadores-de-pelo-vintage-39229002/  |  consulta: "hair dryer salon"
+hund1-01.jpg  <-  pozo-p-plaza-tijeras\009.jpg  |  pexels (Pexels License)  |  autor: by Natallia  |  https://www.pexels.com/es-es/foto/mano-cabellos-melena-pelo-13714796/  |  consulta: "haircut scissors hands"
+hund2-01.jpg  <-  pozo-p-plaza-color\007.jpg  |  pexels (Pexels License)  |  autor: John Diez  |  https://www.pexels.com/es-es/foto/mujer-creativo-industria-pincel-7388907/  |  consulta: "hair color bowl brush"
+hund3-01.jpg  <-  pozo-p-plaza-rizos\008.jpg  |  pexels (Pexels License)  |  autor: Esra Afşar  |  https://www.pexels.com/es-es/foto/mujer-con-cabello-rizado-en-invierno-en-calle-de-estambul-30690214/  |  consulta: "curly hair back"
+hund4-01.jpg  <-  pozo-p-plaza-secador\008.jpg  |  pexels (Pexels License)  |  autor: by Natallia  |  https://www.pexels.com/es-es/foto/mujer-modelo-maqueta-joven-13714794/  |  consulta: "hair dryer salon"
+hund5-01.jpg  <-  pozo-p-plaza-color\009.jpg  |  pexels (Pexels License)  |  autor: Nataliya Vaitkevich  |  https://www.pexels.com/es-es/foto/pincel-cepillo-cepillar-bol-8468139/  |  consulta: "hair color bowl brush"
+hund6-01.jpg  <-  pozo-p-plaza-rizos\003.jpg  |  pexels (Pexels License)  |  autor: Ramon Karolan  |  https://www.pexels.com/es-es/foto/un-anciano-pasea-por-la-calle-granada-38176680/  |  consulta: "curly hair back"
+banda-01.jpg  <-  pozo-p-plaza-plaza\007.jpg  |  pexels (Pexels License)  |  autor: Photo Eddie O.  |  https://www.pexels.com/es-es/foto/tranquilo-parque-urbano-en-houston-texas-39276777/  |  consulta: "city plaza trees"
+cita-01.jpg  <-  pozo-p-plaza-sillon\010.jpg  |  pexels (Pexels License)  |  autor: MaGicA Production  |  https://www.pexels.com/es-es/foto/silla-de-barbero-vintage-en-un-salon-moderno-30547689/  |  consulta: "barber chair salon"
+mos1-01.jpg  <-  pozo-p-plaza-sillon\005.jpg  |  pexels (Pexels License)  |  autor: Misho chachanidze  |  https://www.pexels.com/es-es/foto/adentro-barberia-peluqueria-tiro-vertical-6956293/  |  consulta: "barber chair salon"
+mos2-01.jpg  <-  pozo-p-plaza-espejo\010.jpg  |  pexels (Pexels License)  |  autor: Marina Chocobar  |  https://www.pexels.com/es-es/foto/reflejo-reflexion-adentro-vacio-7823407/  |  consulta: "hair salon mirror"
+mos3-01.jpg  <-  pozo-p-plaza-nino\011.jpg  |  pexels (Pexels License)  |  autor: Jari Lobo  |  https://www.pexels.com/es-es/foto/corte-cortando-tijeras-pelo-oscuro-15659486/  |  consulta: "child haircut"
+mos4-01.jpg  <-  pozo-p-plaza-secador\011.jpg  |  pexels (Pexels License)  |  autor: Alex Ozerov-Meyer  |  https://www.pexels.com/es-es/foto/blanco-y-negro-peinado-peluquero-corte-de-pelo-17784003/  |  consulta: "hair dryer salon"
+mos5-01.jpg  <-  pozo-p-plaza-plantas\003.jpg  |  pexels (Pexels License)  |  autor: Alex Quezada  |  https://www.pexels.com/es-es/foto/arbusto-matorral-planta-hojas-15792274/  |  consulta: "green plants salon"
+mos6-01.jpg  <-  pozo-p-plaza-plantas\012.jpg  |  pexels (Pexels License)  |  autor: Nazlı Gaylan Azili  |  https://www.pexels.com/es-es/foto/espacio-interior-acogedor-con-plantas-y-espejo-36271627/  |  consulta: "green plants salon"
+
+BRUMA (bruma-pag-0N.png y bruma-osc-0N.png, 30x20): las MISMAS fotos, recortadas a 3:2, reducidas y
+recoloreadas con C:\devs\demos\hacer-bruma.ps1 (clara >= 0,68 de luminancia / oscura <= 0,05). No suman fuentes.
+    pagina: port-01.jpg, banda-01.jpg, cita-01.jpg, mos5-01.jpg, hund3-01.jpg   |   oscuras: port-01.jpg, banda-01.jpg, cita-01.jpg
+
+MAPA: iframe de Google Maps (embed publico, sin clave). No hay imagen de mapa.

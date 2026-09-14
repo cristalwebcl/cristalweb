@@ -150,4 +150,27 @@
     armar();
   }
 
+  /* ── WhatsApp flotante ────────────────────────────────────────────
+     El boton ya se ve por CSS. Aca solo se lo aparta mientras el
+     visitante mira la portada, para no tapar el titular. Se observa la
+     PORTADA, no el boton: un elemento fixed nunca entra ni sale de la
+     ventana, asi que observarlo no dispararia jamas. ── */
+  var wapp = document.querySelector('.wapp');
+  var portadaW = document.querySelector('.portada');
+  if (wapp && portadaW) {
+    var mirarWapp = function () {
+      var r = portadaW.getBoundingClientRect();
+      var visible = Math.min(r.bottom, window.innerHeight) - Math.max(r.top, 0);
+      wapp.classList.toggle('wapp--arriba', visible > r.height * 0.55);
+    };
+    mirarWapp();
+    if ('IntersectionObserver' in window) {
+      new IntersectionObserver(function (es) {
+        es.forEach(function (e) { wapp.classList.toggle('wapp--arriba', e.intersectionRatio > 0.55); });
+      }, { threshold: [0, 0.55, 1] }).observe(portadaW);
+    } else {
+      window.addEventListener('scroll', mirarWapp, { passive: true });
+    }
+  }
+
 })();

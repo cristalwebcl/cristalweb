@@ -34,7 +34,7 @@
 
 <div class="propuesta">
   <p class="propuesta__que">Propuesta de sitio web — preparada para <b>Veterinaria Lacustre</b> por CristalWeb</p>
-  <p class="propuesta__gancho">155 reseñas y atención de urgencia. El dato que se busca a las tres de la mañana, con el perro convulsionando, no aparece en internet.</p>
+  <p class="propuesta__gancho">155 reseñas y atención de urgencia, y ninguna página web (verificado el 21-08-2026). El dato que se busca a las tres de la mañana, con el perro convulsionando, no aparece en internet. Ésta es la página que debería estar ahí.</p>
 </div>
 
 <header class="cab" id="cab">
@@ -43,8 +43,10 @@
     <span class="cab__nombre">Lacustre</span>
   </a>
   <nav class="cab__nav" aria-label="Secciones">
-    <a href="#cinco">Los primeros cinco minutos</a>
+    <a href="#cinco">Cinco minutos</a>
     <a href="#urgencia">Qué es urgencia</a>
+    <a href="#llevar">Qué llevar</a>
+    <a href="#datos">Dirección y turno</a>
   </nav>
   <a class="cab__tel" href="tel:+56945326217">
     <span class="cab__tel-rot">Urgencia</span>
@@ -64,6 +66,18 @@
   </div>
 
   <div class="resplandor" aria-hidden="true"></div>
+
+  <!-- EL POLVO EN EL RESPLANDOR — el ambiente de portada.
+       Esta demo no lleva video (decisión de la casa: el clip se reserva
+       para los mejor valorados), así que el ambiente lo pone el CSS.
+       Catorce motas que suben lentísimo dentro del halo del letrero.
+       Sin JS: las posiciones y los retardos van por nth-child, porque
+       la CSP prohíbe el atributo style. -->
+  <div class="polvo" aria-hidden="true">
+    <span></span><span></span><span></span><span></span><span></span>
+    <span></span><span></span><span></span><span></span><span></span>
+    <span></span><span></span><span></span><span></span>
+  </div>
 
   <div class="portada__texto">
     <p class="sitio">Veterinaria · Villarrica</p>
@@ -89,6 +103,33 @@
       encuentra cuando lo necesita — porque a esa hora nadie busca en Google Maps:
       busca una página que diga «llame acá».</p>
   </div>
+</section>
+
+<!-- ════════ LAS CUATRO CIFRAS ════════
+     Prueba social · inventario de la página · argumento · y la herida.
+     Sólo cuenta la que costó verificar (las reseñas). Las otras tres son
+     aritmética de esta misma página o el cero que hay hoy: un contador
+     subiendo un 12 o un 0 se lee como truco. -->
+<section class="cifras" aria-labelledby="t-cifras">
+  <h2 id="t-cifras" class="cifras__titulo">Cuatro números, y el último es el problema</h2>
+  <ul class="cifras__lista cascada">
+    <li>
+      <b data-cuenta="155">155</b>
+      <span>reseñas en Google · verificado el 21-08-2026</span>
+    </li>
+    <li>
+      <b>12</b>
+      <span>cosas que hacer y que no hacer mientras viaja, escritas más abajo</span>
+    </li>
+    <li>
+      <b>3</b>
+      <span>líneas para saber si se va ahora, se llama o se espera a mañana</span>
+    </li>
+    <li class="cifra--hueca">
+      <b>0</b>
+      <span>páginas web donde hoy aparezca ese número de urgencia</span>
+    </li>
+  </ul>
 </section>
 
 <!-- ════════ LA PIEZA FIRMA — LOS PRIMEROS CINCO MINUTOS ════════ -->
@@ -186,7 +227,7 @@
       a mañana». Decirlo por escrito ahorra un viaje a medianoche, una cuenta de
       urgencia y un mal rato — y hace que cuando sí hay que ir, se vaya sin dudar.</p>
 
-    <ol class="tres">
+    <ol class="tres cascada">
       <li class="tr">
         <p class="tr__n">01</p>
         <div>
@@ -223,6 +264,60 @@
   </div>
 </section>
 
+<!-- ════════ QUÉ LLEVAR CUANDO SALGA ════════
+     El «qué traer» del rubro salud, en seis fichas. No dice qué hacer con
+     el animal: dice qué meter en el auto antes de cerrar la puerta. -->
+<section class="llevar" id="llevar" aria-labelledby="t-llevar">
+  <p class="antetitulo">Antes de cerrar la puerta</p>
+  <h2 id="t-llevar">Qué llevar<br>cuando salga</h2>
+  <p class="entrada">Nada de esto vale un minuto de demora: si algo no está a mano,
+    se va igual. Es una lista para juntar mientras el otro saca el auto.</p>
+
+  <div class="fichas cascada">
+    <div class="ficha">
+      <p class="ficha__n">01</p>
+      <h3>El envase</h3>
+      <p>De lo que comió o tomó, aunque esté vacío, roto o mordido. La etiqueta
+        dice en dos segundos lo que si no hay que adivinar.</p>
+    </div>
+    <div class="ficha">
+      <p class="ficha__n">02</p>
+      <h3>La hora anotada</h3>
+      <p>Cuándo empezó y qué estaba haciendo. Escrita en el teléfono: a las tres
+        de la mañana nadie se acuerda bien media hora después.</p>
+    </div>
+    <div class="ficha">
+      <p class="ficha__n">03</p>
+      <h3>Una manta o toalla</h3>
+      <p>Para abrigarlo en el auto y para levantarlo entre dos sin tomarlo en
+        brazos. Sirve la que esté más cerca.</p>
+    </div>
+    <div class="ficha">
+      <p class="ficha__n">04</p>
+      <h3>Algo plano y firme</h3>
+      <p>Si hubo golpe o caída. Una tabla, una bandeja de horno, la puerta de un
+        mueble: cualquier cosa rígida en la que quepa echado.</p>
+    </div>
+    <div class="ficha">
+      <p class="ficha__n">05</p>
+      <h3>Alguien que maneje</h3>
+      <p>Uno maneja y el otro va atrás con el animal. Es la diferencia entre
+        llegar y llegar bien.</p>
+    </div>
+    <div class="ficha">
+      <p class="ficha__n">06</p>
+      <h3>El carné, si está a mano</h3>
+      <p>El de vacunas y cualquier remedio que esté tomando. Si hay que buscarlo,
+        no se busca: se avisa por teléfono y listo.</p>
+    </div>
+  </div>
+
+  <p class="firma"><b>Es una lista general de qué llevar, no de qué hacer.</b> No
+    reemplaza la llamada ni sirve para decidir si hay que ir.
+    <span class="falta">falta: que la veterinaria la revise</span> — y que diga si
+    prefiere que la gente llegue con algo más.</p>
+</section>
+
 <!-- ════════ EL CIERRE — T1 ════════ -->
 <!-- ========= LA CITA A SANGRE ========= -->
 <section class="cita" aria-labelledby="t-cita">
@@ -236,13 +331,71 @@
   </blockquote>
 </section>
 
-
-
-<!-- ========= TAJO — FRANJA A SANGRE ========= -->
-<div class="tajo" aria-hidden="true">
-  <img src="imagenes/banda-01.jpg" width="1100" height="733"
+<!-- ========= TAJO — FRANJA A SANGRE =========
+     El velo sube desde abajo y arranca en alfa 0: los dos tercios de
+     arriba de la foto quedan nítidos y sólo se tiñe la franja del texto. -->
+<figure class="tajo">
+  <img src="imagenes/tajo-01.jpg" width="2200" height="1467"
        loading="lazy" decoding="async" alt="">
-</div>
+  <figcaption class="tajo__txt">
+    <p>El viaje termina acá</p>
+  </figcaption>
+</figure>
+
+<!-- ════════ DÓNDE Y CUÁNDO — la ficha técnica ════════ -->
+<section class="datos" id="datos" aria-labelledby="t-datos">
+ <div class="datos__cols">
+  <div class="datos__caja">
+    <p class="antetitulo">Lo que hay que saber antes de subir al auto</p>
+    <h2 id="t-datos">Dónde queda<br>y qué decir al llamar</h2>
+
+    <dl class="datos__lista cascada">
+      <div>
+        <dt>Dirección</dt>
+        <dd>Los Notros 1350, Villarrica <span class="datos__nota">— de su ficha pública, al 21-08-2026</span></dd>
+      </div>
+      <div>
+        <dt>Urgencia</dt>
+        <dd><a href="tel:+56945326217">9 4532 6217</a></dd>
+      </div>
+      <div>
+        <dt>Turno</dt>
+        <dd class="ej" data-ejemplo="lo confirma la veterinaria">24 horas, según su ficha al 21-08-2026</dd>
+      </div>
+      <div>
+        <dt>WhatsApp</dt>
+        <dd class="ej" data-ejemplo="falta: ¿recibe mensajes?">El mismo número</dd>
+      </div>
+      <div>
+        <dt>Qué decir</dt>
+        <dd>Qué animal es, qué pasó, a qué hora empezó y desde dónde vienen.</dd>
+      </div>
+    </dl>
+
+    <p class="datos__pie">Lo marcado con línea de puntos es lo único que esta página
+      no puede verificar sola. Sale de la ficha pública de Google y lo confirma la
+      veterinaria en un minuto.</p>
+  </div>
+
+  <!-- ══ MAPA DE UBICACIÓN ═══════════════════════════════════════════
+       Es una IMAGEN propia: los mosaicos de OpenStreetMap bajados una
+       vez y pegados por demos\mapa-negocio.ps1. La CSP no deja pedirle
+       nada a un tercero, así que un iframe de Google Maps o un Leaflet
+       por CDN no cargarían y no avisarían. El botón «Cómo llegar» sí
+       puede ser un enlace: lo prohibido es cargar recursos de afuera,
+       no navegar hacia ellos. La atribución a OpenStreetMap va visible
+       en el pie porque la licencia ODbL lo exige. -->
+  <figure class="mapa">
+    <img src="imagenes/mapa-01.jpg" width="768" height="768" loading="lazy" decoding="async"
+         alt="Mapa de Villarrica con un marcador en Los Notros 1350, en el sector Altos de Villarrica.">
+    <figcaption class="mapa__pie">
+      <span class="mapa__cred">Mapa: &copy; <a class="mapa__osm" href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener">OpenStreetMap</a> contributors</span>
+      <a class="mapa__ir" href="https://www.google.com/maps/search/?api=1&amp;query=-39.297888,-72.2342607" target="_blank" rel="noopener">Cómo llegar <span aria-hidden="true">→</span></a>
+    </figcaption>
+  </figure>
+ </div>
+</section>
+
 <section class="cierre" id="llamar" aria-labelledby="t-cierre">
   <p class="cierre__rot">Urgencia</p>
   <h2 id="t-cierre" class="cierre__tel">
@@ -254,7 +407,7 @@
 </section>
 
 <!-- ========= LA TIRA ========= -->
-<section class="tira" aria-label="Tres imágenes del oficio">
+<section class="tira" aria-label="Tres imágenes de la noche">
   <figure class="tira__pieza">
     <img src="imagenes/tira-01.jpg" width="1100" height="733" loading="lazy" decoding="async" alt="Estelas de luz en una carretera de noche.">
   </figure>
@@ -266,66 +419,75 @@
   </figure>
 </section>
 
-</main>
-
-
-
 <!-- ========= MOSAICO ========= -->
-<section class="mos" aria-labelledby="t-mos">
-  <h2 id="t-mos" class="mos__titulo">La misma serie, más de cerca</h2>
-  <p class="mos__nota">Estas seis ya aparecen más arriba en la página. Vuelven acá en otro tamaño porque una sola pasada de imágenes deja el scroll vacío, y porque de cerca se ven cosas que en grande se pierden. La procedencia de cada una está en imagenes/FUENTES.txt.</p>
+<section class="mos" id="mosaico" aria-labelledby="t-mos">
+  <h2 id="t-mos" class="mos__titulo">Ocho imágenes del oficio</h2>
+  <p class="mos__nota">Ninguna de estas fotos es de Veterinaria Lacustre: son imágenes de bancos libres, puestas para que la página no sea texto sobre fondo plano. Cuando lleguen las suyas — la fachada de noche con la luz encendida es la que más sirve — entran acá y éstas salen. La procedencia de cada una está en imagenes/FUENTES.txt.</p>
   <div class="mos__grilla">
     <figure class="mos__p">
-      <img src="imagenes/mos-01.jpg" width="780" height="624"
-           loading="lazy" decoding="async" alt="">
+      <img src="imagenes/mos1-01.jpg" width="1200" height="800"
+           loading="lazy" decoding="async" alt="Perro echado sobre una manta, descansando con los ojos abiertos.">
     </figure>
     <figure class="mos__p">
-      <img src="imagenes/mos-02.jpg" width="780" height="520"
-           loading="lazy" decoding="async" alt="">
+      <img src="imagenes/mos7-01.jpg" width="1200" height="900"
+           loading="lazy" decoding="async" alt="Veterinario inclinado sobre un perro grande echado en la camilla.">
     </figure>
     <figure class="mos__p">
-      <img src="imagenes/mos-03.jpg" width="780" height="520"
-           loading="lazy" decoding="async" alt="">
+      <img src="imagenes/mos2-01.jpg" width="1200" height="900"
+           loading="lazy" decoding="async" alt="Manos sosteniendo a un gato blanco y negro.">
     </figure>
     <figure class="mos__p">
-      <img src="imagenes/mos-04.jpg" width="780" height="520"
-           loading="lazy" decoding="async" alt="">
+      <img src="imagenes/mos4-01.jpg" width="1200" height="800"
+           loading="lazy" decoding="async" alt="Perro blanco durmiendo bajo una luz baja.">
     </figure>
     <figure class="mos__p">
-      <img src="imagenes/mos-05.jpg" width="780" height="520"
-           loading="lazy" decoding="async" alt="">
+      <img src="imagenes/mos5-01.jpg" width="1200" height="900"
+           loading="lazy" decoding="async" alt="Gato atigrado mirando de frente en penumbra.">
     </figure>
     <figure class="mos__p">
-      <img src="imagenes/mos-06.jpg" width="780" height="520"
-           loading="lazy" decoding="async" alt="">
+      <img src="imagenes/mos6-01.jpg" width="1200" height="800"
+           loading="lazy" decoding="async" alt="Perro dormido sobre una manta gruesa, con luz azulada.">
+    </figure>
+    <figure class="mos__p">
+      <img src="imagenes/mos3-01.jpg" width="1200" height="900"
+           loading="lazy" decoding="async" alt="Veterinario auscultando con fonendoscopio a un perro negro.">
+    </figure>
+    <figure class="mos__p">
+      <img src="imagenes/mos8-01.jpg" width="1200" height="900"
+           loading="lazy" decoding="async" alt="Veterinario acomodando a un perro sobre la mesa de atención.">
     </figure>
   </div>
 </section>
+
+</main>
+
 <section class="dueno" aria-labelledby="t-dueno">
   <h2 id="t-dueno">Para la veterinaria</h2>
-  <div class="dueno__cols">
+  <div class="dueno__cols cascada">
     <div>
       <h3>Lo que está verificado</h3>
-      <p>Las 155 reseñas de su ficha de Google y el teléfono 9 4532 6217. La
-        atención de 24 horas figuraba en su ficha al 21-08-2026 y está marcada como
-        pendiente de confirmar a propósito.</p>
+      <p>Las 155 reseñas de su ficha de Google, el teléfono 9 4532 6217 y la
+        dirección Los Notros 1350. La atención de 24 horas figuraba en su ficha al
+        21-08-2026 y está marcada como pendiente de confirmar a propósito.</p>
     </div>
     <div>
-      <h3>Por qué está marcada</h3>
-      <p>Porque no hay nada peor que prometer 24 horas que no son. Si el turno
-        cambió, o es sólo algunos días, la página lo dice tal cual y sigue
-        sirviendo. Una promesa rota a las tres de la mañana no se perdona.</p>
+      <h3>Qué es ejemplo</h3>
+      <p>Todo lo que lleva línea de puntos: el turno, el WhatsApp y las tres listas
+        —los cinco minutos, las tres líneas de urgencia y el qué llevar—, que son
+        generales y están escritas para que las revise y las firme un profesional.
+        Las ocho fotos del mosaico son de bancos libres, ninguna es del local.</p>
     </div>
     <div>
-      <h3>Lo que falta</h3>
-      <p>Confirmar el horario de urgencia, la dirección, y revisar la lista de los
-        cinco minutos. Esa lista con su firma al pie es lo que la gente va a guardar
-        en el teléfono.</p>
+      <h3>La herida</h3>
+      <p>Al 21-08-2026 no había ninguna página web donde apareciera ese número. Una
+        promesa rota a las tres de la mañana no se perdona; una ficha de Google que
+        nadie encuentra a esa hora, tampoco. Lo que falta es confirmar el turno y
+        mandar una foto de la fachada de noche.</p>
     </div>
   </div>
   <p class="dueno__cierre">
-    <a class="flecha" href="https://wa.me/56968650001" rel="noopener">Escribirme por WhatsApp <span aria-hidden="true">→</span></a>
-    <a class="flecha" href="../../" rel="noopener">Ver otros trabajos <span aria-hidden="true">→</span></a>
+    <a class="flecha" href="mailto:cristalwebcl@gmail.com?subject=Sitio%20web%20para%20Veterinaria%20Lacustre">Escribirnos por correo <span aria-hidden="true">→</span></a>
+    <a class="flecha" href="https://cristalwebcl.github.io/cristalweb/" rel="noopener">Ver otros trabajos <span aria-hidden="true">→</span></a>
   </p>
 </section>
 
@@ -335,9 +497,24 @@
     evaluación de un profesional y no cubren ningún caso en particular. No se nombran
     medicamentos, productos ni cantidades. <b>Ante cualquier urgencia, llame.</b></p>
   <p class="pie__demo">Sitio de demostración preparado por CristalWeb. El negocio no
-    lo ha encargado ni ha revisado su contenido. El horario de 24 horas proviene de
-    su ficha pública y está pendiente de confirmación.</p>
+    lo ha encargado ni ha revisado su contenido. No hay precios en esta página. El
+    horario de 24 horas proviene de su ficha pública y está pendiente de
+    confirmación.</p>
 </footer>
+
+<!-- ══ WHATSAPP FLOTANTE ═══════════════════════════════════════════
+     Va escrito en el HTML, no lo crea el JS: si el script no arranca,
+     el botón igual está. El JS sólo lo aparta mientras se mira la
+     portada, para no tapar el titular. El número es el DEL NEGOCIO, el
+     mismo de los tel:. Icono de simple-icons (CC0), incrustado: la CSP
+     no deja pedir nada a un tercero. -->
+<a class="wapp"
+   href="https://wa.me/56945326217?text=Hola%2C%20vi%20la%20p%C3%A1gina%20y%20quiero%20hacer%20una%20consulta%20por%20mi%20mascota."
+   target="_blank" rel="noopener"
+   aria-label="Escribir a Veterinaria Lacustre por WhatsApp">
+  <svg class="wapp__i" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"/></svg>
+  <span class="wapp__t">WhatsApp</span>
+</a>
 
 <script src="js/main.js"></script>
 </body>

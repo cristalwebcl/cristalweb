@@ -1,0 +1,22 @@
+FUENTES DE LAS IMAGENES - El Hallullazo Rehecha el 13-09-2026 (presentacion antes que texto). Fotos de REFERENCIA de bancos libres: ninguna es del local; las verdaderas las tiene que mandar el negocio. 
+port-01.jpg  <-  pozo-p-hall-harina\009.jpg  |  pexels (Pexels License)  |  autor: Liz Earl  |  https://www.pexels.com/es-es/foto/mano-textura-cocina-rustico-28183472/  |  consulta: "flour dough"
+hund1-01.jpg  <-  pozo-p-hall-panes\002.jpg  |  pexels (Pexels License)  |  autor: Laura Gutierrez  |  https://www.pexels.com/es-es/foto/pan-comida-sano-rollos-14968027/  |  consulta: "bread loaves"
+hund2-01.jpg  <-  pozo-p-hall-panes\012.jpg  |  pexels (Pexels License)  |  autor: Gamroth Joerg  |  https://www.pexels.com/es-es/foto/comida-productos-horneados-panes-de-cerca-11570705/  |  consulta: "bread loaves"
+hund3-01.jpg  <-  pozo-p-hall-harina\012.jpg  |  pexels (Pexels License)  |  autor: Skyler Ewing  |  https://www.pexels.com/es-es/foto/manos-harina-horneando-hecho-a-mano-10009354/  |  consulta: "flour dough"
+hund4-01.jpg  <-  pozo-p-hall-empanada\001.jpg  |  pexels (Pexels License)  |  autor: jessica olivella  |  https://www.pexels.com/es-es/foto/empanadas-argentinas-tradicionales-en-tabla-de-madera-36905236/  |  consulta: "empanadas"
+hund5-01.jpg  <-  pozo-p-hall-masas\002.jpg  |  pexels (Pexels License)  |  autor: Arda Kaykısız  |  https://www.pexels.com/es-es/foto/fresco-hecho-en-casa-cruasanes-fotografia-de-comida-20002837/  |  consulta: "croissant"
+hund6-01.jpg  <-  pozo-p-hall-torta\005.jpg  |  pexels (Pexels License)  |  autor: Ivan S  |  https://www.pexels.com/es-es/foto/comida-postre-pastel-dulces-9627799/  |  consulta: "birthday cake"
+banda-01.jpg  <-  pozo-p-hall-masas\012.jpg  |  pexels (Pexels License)  |  autor: Manish Jain  |  https://www.pexels.com/es-es/foto/croissants-30853716/  |  consulta: "croissant"
+cita-01.jpg  <-  pozo-p-hall-harina\001.jpg  |  pexels (Pexels License)  |  autor: Jahra Tasfia Reza  |  https://www.pexels.com/es-es/foto/masa-fresca-en-tabla-de-madera-en-cocina-rustica-31049869/  |  consulta: "flour dough"
+mos1-01.jpg  <-  pozo-p-hall-harina\010.jpg  |  pexels (Pexels License)  |  autor: Skyler Ewing  |  https://www.pexels.com/es-es/foto/harina-preparacion-horneando-masa-10009356/  |  consulta: "flour dough"
+mos2-01.jpg  <-  pozo-p-hall-empanada\009.jpg  |  pexels (Pexels License)  |  autor: Ani Coloca  |  https://www.pexels.com/es-es/foto/empanadas-caseras-en-pizarra-36898430/  |  consulta: "empanadas"
+mos3-01.jpg  <-  pozo-p-hall-masas\009.jpg  |  pexels (Pexels License)  |  autor: Mindaugas Skrupskelis  |  https://www.pexels.com/es-es/foto/restaurante-cheng-qiang-li-11551934/  |  consulta: "croissant"
+mos4-01.jpg  <-  pozo-p-hall-panes\007.jpg  |  pexels (Pexels License)  |  autor: Rodrigo Ortega  |  https://www.pexels.com/es-es/foto/cesta-de-pan-rustica-sobre-mesa-de-madera-30273276/  |  consulta: "bread loaves"
+mos5-01.jpg  <-  pozo-p-hall-vitrina\008.jpg  |  pexels (Pexels License)  |  autor: Kunal Lakhotia  |  https://www.pexels.com/es-es/foto/pasteles-variados-en-una-vitrina-de-pasteleria-30427451/  |  consulta: "pastry display"
+mos6-01.jpg  <-  pozo-p-hall-panes\001.jpg  |  pexels (Pexels License)  |  autor: Martha  Vera  |  https://www.pexels.com/es-es/foto/pan-comida-delicioso-bandeja-de-madera-14193051/  |  consulta: "bread loaves"
+
+BRUMA (bruma-pag-0N.png y bruma-osc-0N.png, 30x20): las MISMAS fotos, recortadas a 3:2, reducidas y
+recoloreadas con C:\devs\demos\hacer-bruma.ps1 (clara >= 0,68 de luminancia / oscura <= 0,05). No suman fuentes.
+    pagina: port-01.jpg, banda-01.jpg, cita-01.jpg, hund1-01.jpg, hund4-01.jpg, hund6-01.jpg, mos2-01.jpg, mos4-01.jpg   |   oscuras: port-01.jpg, cita-01.jpg, banda-01.jpg
+
+MAPA: iframe de Google Maps (embed publico, sin clave). No hay imagen de mapa.

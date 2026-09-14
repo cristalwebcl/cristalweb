@@ -1,0 +1,22 @@
+FUENTES DE LAS IMAGENES - Quillelhue Rehecha el 13-09-2026 (presentacion antes que texto). Fotos de REFERENCIA de bancos libres: ninguna es del local; las verdaderas las tiene que mandar el negocio. 
+port-01.jpg  <-  pozo-p-qui-once\005.jpg  |  pexels (Pexels License)  |  autor: Ahmet Yüksek ✪  |  https://www.pexels.com/es-es/foto/regalo-de-la-tarde-28402788/  |  consulta: "cake slice coffee cup"
+hund1-01.jpg  <-  pozo-p-qui-vitrina\007.jpg  |  pexels (Pexels License)  |  autor: Seferikalbiye  |  https://www.pexels.com/es-es/foto/comida-dulces-golosinas-chucherias-12743269/  |  consulta: "bakery display case cakes"
+hund2-01.jpg  <-  pozo-p-qui-almuerzo\002.jpg  |  pexels (Pexels License)  |  autor: BP  |  https://www.pexels.com/es-es/foto/alimentos-cocidos-en-plato-de-ceramica-blanca-2739250/  |  consulta: "home cooked lunch plate"
+hund3-01.jpg  <-  pozo-p-qui-kuchen\002.png  |  pexels (Pexels License)  |  autor: Anh Nguyen  |  https://www.pexels.com/es-es/foto/primer-plano-de-streuselkuchen-de-bayas-en-un-plato-35286348/  |  consulta: "kuchen berry cake"
+hund4-01.jpg  <-  pozo-p-qui-once\004.jpg  |  pexels (Pexels License)  |  autor: AS Photography  |  https://www.pexels.com/es-es/foto/taza-de-ceramica-blanca-llena-de-liquido-negro-al-lado-de-pan-horneado-en-platillo-de-ceramica-95839/  |  consulta: "cake slice coffee cup"
+hund5-01.jpg  <-  pozo-p-qui-torta\011.jpg  |  pexels (Pexels License)  |  autor: Ivan S  |  https://www.pexels.com/es-es/foto/comida-postre-pastel-dulces-9627799/  |  consulta: "birthday cake cream"
+hund6-01.jpg  <-  pozo-p-qui-laguna\001.jpg  |  pexels (Pexels License)  |  autor: Jerónimo Spasoff  |  https://www.pexels.com/es-es/foto/naturaleza-colina-montana-corriente-14060286/  |  consulta: "Lanin volcano lake"
+banda-01.jpg  <-  pozo-p-qui-kuchen\001.png  |  pexels (Pexels License)  |  autor: Anh Nguyen  |  https://www.pexels.com/es-es/foto/deliciosos-streuselkuchen-y-pasteles-en-platos-34427806/  |  consulta: "kuchen berry cake"
+cita-01.jpg  <-  pozo-p-qui-mermelada\010.jpg  |  pexels (Pexels License)  |  autor: Katya  |  https://www.pexels.com/es-es/foto/foto-de-enfoque-selectivo-del-tarro-lleno-de-especias-3275707/  |  consulta: "jam jar berries"
+mos1-01.jpg  <-  pozo-p-qui-mermelada\012.jpg  |  pexels (Pexels License)  |  autor: Any Lane  |  https://www.pexels.com/es-es/foto/caramelo-rosado-y-blanco-en-un-tazon-de-vidrio-transparente-5946054/  |  consulta: "jam jar berries"
+mos2-01.jpg  <-  pozo-p-qui-galletas\007.jpg  |  pexels (Pexels License)  |  autor: Feyza Daştan  |  https://www.pexels.com/es-es/foto/comida-taza-copa-picante-12737706/  |  consulta: "cookies biscuits plate"
+mos3-01.jpg  <-  pozo-p-qui-once\007.jpg  |  pexels (Pexels License)  |  autor: Nazmul Haque  |  https://www.pexels.com/es-es/foto/cafe-y-pastel-por-la-manana-en-una-mesa-iluminada-por-el-sol-35759376/  |  consulta: "cake slice coffee cup"
+mos4-01.jpg  <-  pozo-p-qui-galletas\005.jpg  |  pexels (Pexels License)  |  autor: erick  |  https://www.pexels.com/es-es/foto/cafe-taza-postre-dulce-15590644/  |  consulta: "cookies biscuits plate"
+mos5-01.jpg  <-  pozo-p-qui-mermelada\004.jpg  |  pexels (Pexels License)  |  autor: SILIMAT Sungurova  |  https://www.pexels.com/es-es/foto/jardin-bol-tazon-cuenco-8755750/  |  consulta: "jam jar berries"
+mos6-01.jpg  <-  pozo-p-qui-torta\007.jpg  |  pexels (Pexels License)  |  autor: Wil Carranza  |  https://www.pexels.com/es-es/foto/pastel-18604369/  |  consulta: "birthday cake cream"
+
+BRUMA (bruma-pag-0N.png y bruma-osc-0N.png, 30x20): las MISMAS fotos, recortadas a 3:2, reducidas y
+recoloreadas con C:\devs\demos\hacer-bruma.ps1 (clara >= 0,68 de luminancia / oscura <= 0,05). No suman fuentes.
+    pagina: port-01.jpg, hund3-01.jpg, hund5-01.jpg, cita-01.jpg, mos1-01.jpg, mos3-01.jpg, mos5-01.jpg, mos6-01.jpg   |   oscuras: banda-01.jpg, hund1-01.jpg, mos2-01.jpg
+
+MAPA: iframe de Google Maps (embed publico, sin clave). No hay imagen de mapa.

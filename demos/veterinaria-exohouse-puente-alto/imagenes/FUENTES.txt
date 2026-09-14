@@ -1,0 +1,22 @@
+FUENTES DE LAS IMAGENES - ClÃ­nica Veterinaria Exohouse Rehecha el 13-09-2026 (presentacion antes que texto). Fotos de REFERENCIA de bancos libres: ninguna es del local; las verdaderas las tiene que mandar el negocio. 
+port-01.jpg  <-  pozo-p-ex-dragon\010.jpg  |  pexels (Pexels License)  |  autor: Lily  |  https://www.pexels.com/es-es/foto/animal-mascota-lagartija-reptil-9384357/  |  consulta: "bearded dragon"
+hund1-01.jpg  <-  pozo-p-ex-consulta\011.jpg  |  pexels (Pexels License)  |  autor: Ron Lach  |  https://www.pexels.com/es-es/foto/animal-mascota-mono-libertad-9769857/  |  consulta: "veterinarian examining rabbit"
+hund2-01.jpg  <-  pozo-p-ex-cobayo\002.jpg  |  pexels (Pexels License)  |  autor: Dương Nguyễn  |  https://www.pexels.com/es-es/foto/lindo-conejillo-de-indias-en-un-suelo-de-madera-en-vietnam-36255317/  |  consulta: "guinea pig"
+hund3-01.jpg  <-  pozo-p-ex-huron\005.jpg  |  pexels (Pexels License)  |  autor: Verina  |  https://www.pexels.com/es-es/foto/fauna-vida-salvaje-naturaleza-mamifero-7179718/  |  consulta: "ferret"
+hund4-01.jpg  <-  pozo-p-ex-terrario\005.jpg  |  pexels (Pexels License)  |  autor: Katarzyna Modrzejewska  |  https://www.pexels.com/es-es/foto/planta-verde-en-tarro-de-cristal-transparente-5911691/  |  consulta: "terrarium"
+hund5-01.jpg  <-  pozo-p-ex-loro\004.jpg  |  pexels (Pexels License)  |  autor: Nelli Neufeld  |  https://www.pexels.com/es-es/foto/primer-plano-de-un-vibrante-loro-amazonico-33108248/  |  consulta: "parrot"
+hund6-01.jpg  <-  pozo-p-ex-erizo\008.jpg  |  pexels (Pexels License)  |  autor: Alexas Fotos  |  https://www.pexels.com/es-es/foto/animal-mono-espinoso-afilado-7140959/  |  consulta: "hedgehog"
+banda-01.jpg  <-  pozo-p-ex-consulta\004.jpg  |  pexels (Pexels License)  |  autor: Gustavo Fring  |  https://www.pexels.com/es-es/foto/manos-gente-animal-mascota-6816864/  |  consulta: "veterinarian examining rabbit"
+cita-01.jpg  <-  pozo-p-ex-huron\011.jpg  |  pexels (Pexels License)  |  autor: Brenden L  |  https://www.pexels.com/es-es/foto/mi-dulce-nino-29423902/  |  consulta: "ferret"
+mos1-01.jpg  <-  pozo-p-ex-cobayo\006.jpg  |  pexels (Pexels License)  |  autor: Faris Subriun  |  https://www.pexels.com/es-es/foto/adorable-hamster-sobre-fondo-negro-4383761/  |  consulta: "guinea pig"
+mos2-01.jpg  <-  pozo-p-ex-loro\010.jpg  |  pexels (Pexels License)  |  autor: Rodrigo Araya  |  https://www.pexels.com/es-es/foto/retrato-de-guacamayo-escarlata-en-su-habitat-natural-32306337/  |  consulta: "parrot"
+mos3-01.jpg  <-  pozo-p-ex-conejo\007.jpg  |  pexels (Pexels License)  |  autor: Polat Eyyüp Albayrak  |  https://www.pexels.com/es-es/foto/animal-mono-conejo-fauna-13798676/  |  consulta: "rabbit"
+mos4-01.jpg  <-  pozo-p-ex-dragon\007.jpg  |  pexels (Pexels License)  |  autor: Hobi Photography  |  https://www.pexels.com/es-es/foto/naturaleza-animal-zoo-lagartija-20546357/  |  consulta: "bearded dragon"
+mos5-01.jpg  <-  pozo-p-ex-erizo\012.jpg  |  pexels (Pexels License)  |  autor: Alexas Fotos  |  https://www.pexels.com/es-es/foto/espinoso-fotografia-de-animales-erizo-espinas-9888930/  |  consulta: "hedgehog"
+mos6-01.jpg  <-  pozo-p-ex-huron\010.jpg  |  pexels (Pexels License)  |  autor: Owen Sellwood  |  https://www.pexels.com/es-es/foto/un-adorable-huron-asomandose-desde-una-maceta-de-terracota-37387661/  |  consulta: "ferret"
+
+BRUMA (bruma-pag-0N.png y bruma-osc-0N.png, 30x20): las MISMAS fotos, recortadas a 3:2, reducidas y
+recoloreadas con C:\devs\demos\hacer-bruma.ps1 (clara >= 0,68 de luminancia / oscura <= 0,05). No suman fuentes.
+    pagina: hund2-01.jpg, mos1-01.jpg, hund3-01.jpg, mos4-01.jpg, cita-01.jpg   |   oscuras: port-01.jpg, cita-01.jpg, banda-01.jpg
+
+MAPA: iframe de Google Maps (embed publico, sin clave). No hay imagen de mapa.

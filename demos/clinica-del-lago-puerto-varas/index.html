@@ -20,7 +20,7 @@
 
 <div class="propuesta">
   <p class="propuesta__que">Propuesta de sitio web — preparada para <b>Clínica del Lago, Odontología</b> por CristalWeb</p>
-  <p class="propuesta__gancho">Una clínica que trabaja con alineadores compite con clínicas de Puerto Montt y de Santiago que sí tienen página. El paciente de ortodoncia compara antes de llamar — y acá no hay nada que comparar.</p>
+  <p class="propuesta__gancho">Hacen ortodoncia con alineadores y armonización facial, y al <b>02-09-2026</b> lo único suyo que aparece al buscar son dos perfiles de redes sociales: ninguna página propia. El paciente de ortodoncia compara antes de llamar, y acá no hay nada que comparar. Ésta es la página que debería estar ahí.</p>
 </div>
 
 <header class="cab" id="cab">
@@ -41,9 +41,15 @@
 
 <!-- ═══════════ PORTADA ═══════════ -->
 <section class="portada" id="portada" aria-labelledby="t-portada">
+  <!-- La foto es la base y el clip se funde encima cuando puede
+       reproducirse: sin JS, con menos movimiento o con ahorro de datos
+       queda la foto y no se descarga ni un byte de video. Sin poster:
+       el <img> hermano hace ese trabajo y NO se va. -->
   <div class="portada__foto" aria-hidden="true">
-    <img src="imagenes/port-01.jpg" width="2560" height="2053"
+    <img src="imagenes/port-01.jpg" width="2560" height="1700"
          decoding="async" fetchpriority="high" alt="">
+    <video class="portada__video" data-src="video/port.mp4"
+           muted playsinline loop preload="none" aria-hidden="true"></video>
   </div>
 
   <!-- ═══════ ESCENA DE PORTADA · «la placa que se posa» ═══════
@@ -106,6 +112,40 @@
 </section>
 
 
+<!-- ═══════════ CIFRAS ═══════════
+     Cuatro números y ninguno inventado: el 22 es dato de oficio, el 6 y
+     el 2 son aritmética de esta misma página y de sus redes, y el 0 es
+     la herida. Sólo cuenta el 22, que es el que sostiene el argumento;
+     los otros tres quedan quietos porque un contador que sube un «6» de
+     una grilla se lee como truco. -->
+<section class="cifras con-telon" aria-label="Cuatro números del tratamiento">
+  <div class="telon telon--cifras" aria-hidden="true">
+    <img src="imagenes/telon-02.jpg" width="1200" height="800" loading="lazy" decoding="async" alt="">
+  </div>
+  <ul class="cifras__lista cascada ancho">
+    <li>
+      <b data-cuenta="22">22</b>
+      <span>horas al día con la placa puesta. Es el número que decide
+        el resultado, y no lo pone la marca de la placa.</span>
+    </li>
+    <li>
+      <b>6</b>
+      <span>etapas del tratamiento contadas acá abajo, del escaneo a la
+        contención, sin saltarse la última.</span>
+    </li>
+    <li>
+      <b>2</b>
+      <span>lugares donde se les encuentra hoy: Facebook e Instagram.
+        Los dos con el mismo nombre.</span>
+    </li>
+    <li class="cifras__herida">
+      <b>0</b>
+      <span>páginas propias. Buscado el 02-09-2026: no hay ninguna.</span>
+    </li>
+  </ul>
+</section>
+
+
 <!-- ═══════════ PIEZA FIRMA · EL MAPA DEL TRATAMIENTO ═══════════
      La secuencia de placas dibujada en SVG propio. La 172 del registro
      ya contó la ortodoncia con brackets de punta a punta: acá el ángulo
@@ -145,7 +185,7 @@
     <p class="placas__pie"><span class="pt-leyenda" aria-hidden="true"></span> Los puntos son los controles en clínica.</p>
   </div>
 
-  <ol class="etapas ancho">
+  <ol class="etapas cascada ancho">
     <li class="etapa">
       <p class="etapa__n">01</p>
       <h3>Escaneo y plan</h3>
@@ -219,7 +259,7 @@
       Es el servicio del que más se habla y el que menos se explica.
       Acá va en las dos direcciones, sin promesas.
     </p>
-    <div class="arm">
+    <div class="arm cascada">
       <article class="arm__c">
         <p class="arm__r">Qué es</p>
         <ul>
@@ -256,7 +296,7 @@
   <div class="ancho">
     <p class="rotulo">Especialidades</p>
     <h2 class="titulo" id="t-esp">Todas las especialidades, en un solo lugar.</h2>
-    <ul class="esp ej" data-ejemplo="por confirmar con la clínica">
+    <ul class="esp cascada ej" data-ejemplo="por confirmar con la clínica">
       <li><h3>Ortodoncia</h3><p>Con alineadores y con aparatos fijos, según el caso.</p></li>
       <li><h3>Estética dental</h3><p>Carillas, coronas y blanqueamiento.</p></li>
       <li><h3>Rehabilitación</h3><p>Devolver función a una boca que perdió piezas.</p></li>
@@ -271,6 +311,8 @@
 <!-- ═══════════ CITA ═══════════ -->
 <figure class="cita" aria-label="Sobre el tratamiento">
   <img src="imagenes/cita-01.jpg" width="2200" height="1467" loading="lazy" decoding="async" alt="">
+  <video class="cita__video" data-src="video/cita.mp4"
+         muted playsinline loop preload="none" aria-hidden="true"></video>
   <blockquote class="cita__txt">
     <p>«El tratamiento no lo hace la placa. Lo hacen las veintidós horas
        que estuvo puesta.»</p>
@@ -284,13 +326,44 @@
     <p class="rotulo">La clínica</p>
     <h2 class="titulo" id="t-mos">Cómo se trabaja.</h2>
   </div>
-  <div class="mos__grilla">
-    <figure class="mos__p"><img src="imagenes/mos1-01.jpg" width="1200" height="800" loading="lazy" decoding="async" alt="Atención odontológica"></figure>
-    <figure class="mos__p"><img src="imagenes/mos2-01.jpg" width="1200" height="800" loading="lazy" decoding="async" alt="Conversación con la paciente"></figure>
-    <figure class="mos__p"><img src="imagenes/mos3-01.jpg" width="1200" height="871" loading="lazy" decoding="async" alt="Sonrisa después del tratamiento"></figure>
-    <figure class="mos__p"><img src="imagenes/mos4-01.jpg" width="1200" height="800" loading="lazy" decoding="async" alt="Detalle de la consulta"></figure>
-    <figure class="mos__p"><img src="imagenes/mos5-01.jpg" width="1200" height="1800" loading="lazy" decoding="async" alt="Sala de espera de la clínica"></figure>
-    <figure class="mos__p"><img src="imagenes/mos6-01.jpg" width="1200" height="803" loading="lazy" decoding="async" alt="Interior de la clínica"></figure>
+  <div class="mos__grilla cascada">
+    <figure class="mos__p"><img src="imagenes/mos1-01.jpg" width="1200" height="800" loading="lazy" decoding="async" alt="Odontóloga revisando la boca de una paciente sentada en el sillón"></figure>
+    <figure class="mos__p"><img src="imagenes/mos2-01.jpg" width="1200" height="800" loading="lazy" decoding="async" alt="Primer plano en blanco y negro de una sonrisa"></figure>
+    <figure class="mos__p"><img src="imagenes/mos3-01.jpg" width="1200" height="800" loading="lazy" decoding="async" alt="Mano con guante sosteniendo un molde de yeso de la arcada"></figure>
+    <figure class="mos__p"><img src="imagenes/mos4-01.jpg" width="1200" height="800" loading="lazy" decoding="async" alt="Instrumental de la unidad dental, ordenado antes de la atención"></figure>
+    <figure class="mos__p"><img src="imagenes/mos5-01.jpg" width="1200" height="800" loading="lazy" decoding="async" alt="Taburete del profesional y la jeringa triple, junto al mesón del box"></figure>
+    <figure class="mos__p"><img src="imagenes/mos6-01.jpg" width="1200" height="800" loading="lazy" decoding="async" alt="Sillón dental visto desde arriba, con la bandeja de instrumental sobre el piso de madera"></figure>
+  </div>
+</section>
+
+
+<!-- ═══════════ MITADES · qué llevar ═══════════
+     Media pantalla de foto y media de texto. Es la única sección que
+     aguanta la foto vertical del alineador en la mano, y va pegada a la
+     de contacto porque es lo último que uno quiere saber antes de pedir
+     la hora. Nada de acá es dato del negocio: son las cuatro cosas que
+     cualquier clínica pide en una primera evaluación. -->
+<section class="mit" aria-labelledby="t-mit">
+  <figure class="mit__foto">
+    <img src="imagenes/mit-01.jpg" width="2200" height="1467" loading="lazy" decoding="async"
+         alt="Manos con guantes sosteniendo un alineador transparente">
+  </figure>
+  <div class="mit__txt">
+    <div class="mit__caja">
+      <p class="rotulo rotulo--claro">Antes de venir</p>
+      <h2 class="titulo titulo--claro" id="t-mit">Qué llevar a la primera evaluación.</h2>
+      <ul class="mit__lista cascada">
+        <li><b>Su cédula de identidad.</b> Nada más para inscribirse.</li>
+        <li><b>Radiografías o moldes anteriores, si los tiene.</b> Sirven
+          para comparar, aunque sean de hace años.</li>
+        <li><b>La lista de los remedios que toma.</b> Escrita, aunque sea
+          en el teléfono: es más fácil que acordarse en el sillón.</li>
+        <li><b>Las preguntas anotadas.</b> Las que uno tiene claras en la
+          casa y se le olvidan apenas entra.</li>
+      </ul>
+      <p class="mit__cierre">Y si no tiene nada de esto, venga igual. La
+        evaluación parte mirando.</p>
+    </div>
   </div>
 </section>
 
@@ -307,7 +380,10 @@
         buscando.
       </p>
       <dl class="datos">
-        <div><dt>Dirección</dt><dd>Av. Paseo, centro comercial Doña Ema, local 16, Puerto Varas</dd></div>
+        <!-- Sin nombre de calle: lo único que ellos publican es «Doña Ema,
+             local 16». Poner una avenida que no está en esa fuente sería un
+             dato inventado sin marcar. -->
+        <div><dt>Dirección</dt><dd>Centro comercial Doña Ema, local 16, Puerto Varas</dd></div>
         <div><dt>Teléfono</dt><dd><a href="tel:+56966020873">+56 9 6602 0873</a></dd></div>
         <div><dt>Dónde están hoy</dt><dd>Facebook e Instagram <span class="mono">@clinicadellagoodontologia</span></dd></div>
         <div class="ej" data-ejemplo="ejemplo"><dt>Horario</dt><dd>Lunes a viernes, con hora reservada</dd></div>
@@ -359,11 +435,23 @@
 
 
 <!-- ═══════════ PARA EL DUEÑO ═══════════ -->
+<section class="mapa-sec" aria-label="Dónde queda">
+    <div class="ancho">
+      <figure class="mapa">
+        <img src="imagenes/mapa-01.jpg" width="768" height="768" loading="lazy" decoding="async"
+             alt="Mapa con la ubicación de Centro comercial Doña Ema, Puerto Varas.">
+        <figcaption class="mapa__pie">
+          <span><b>Centro comercial Doña Ema, Puerto Varas</b>.</span>
+          <span class="mapa__cred">Mapa: &copy; <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener">OpenStreetMap</a></span>
+        </figcaption>
+      </figure>    </div>
+</section>
+
 <section class="dueno" aria-labelledby="t-dueno">
   <div class="ancho">
     <p class="rotulo rotulo--claro">Para el dueño</p>
     <h2 class="titulo titulo--claro" id="t-dueno">Qué es esto y qué falta.</h2>
-    <div class="dueno__cols">
+    <div class="dueno__cols cascada">
       <div>
         <h3>Qué es</h3>
         <p>Una propuesta de sitio web hecha por nuestra cuenta. Clínica
@@ -401,6 +489,31 @@
      resultados clínicos ni reemplaza una evaluación odontológica.</p>
 </footer>
 
+<!-- ══ WHATSAPP FLOTANTE ═══════════════════════════════════════════
+     Va escrito en el HTML, no lo crea el JS: si el script no arranca,
+     el botón igual está. El JS sólo lo aparta mientras se mira la
+     portada, para no tapar el titular. El número es el DE LA CLÍNICA
+     —el mismo del tel: de más arriba—, nunca el de CristalWeb. Icono
+     de simple-icons (CC0), incrustado: la CSP no deja pedir nada a un
+     tercero. -->
+<a class="wapp"
+   href="https://wa.me/56966020873?text=Hola%2C%20vi%20la%20p%C3%A1gina%20y%20quiero%20pedir%20una%20primera%20evaluaci%C3%B3n."
+   target="_blank" rel="noopener"
+   aria-label="Escribir a Clínica del Lago por WhatsApp">
+  <svg class="wapp__i" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"/></svg>
+  <span class="wapp__t">WhatsApp</span>
+</a>
+
+
+<!-- ══ BOTON FLOTANTE DE CONTACTO ══════════════════════════════════
+     Escrito en el HTML y VISIBLE por defecto: si el script no arranca,
+     el boton igual esta. El JS solo lo aparta mientras se mira la
+     portada, para no tapar el titular. Icono de simple-icons (CC0),
+     incrustado: la CSP no deja pedir nada a un tercero. -->
+<a class="flota flota--wa" href="https://wa.me/56966020873?text=Hola%2C%20vi%20la%20pagina%20y%20quiero%20consultar." target="_blank" rel="noopener" aria-label="Escribir por WhatsApp a Clínica del Lago">
+  <svg class="flota__i" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"/></svg>
+  <span class="flota__t">WhatsApp</span>
+</a>
 <script src="js/main.js"></script>
 </body>
 </html>

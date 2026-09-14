@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="robots" content="noindex, nofollow">
 <title>Fortín Mapuche — restaurante, Pucura</title>
-<meta name="description" content="Restaurante en Pucura, camino Coñaripe–Licán Ray. Comer en grupo grande y cómo encontrarlos en la vuelta al lago.">
+<meta name="description" content="Restaurante en Pucura, camino Coñaripe–Licán Ray. Comer en grupo grande, cuánto pica y cómo encontrarlos en la vuelta al lago.">
 
 <!-- Política de seguridad de contenido: el navegador sólo puede cargar
      archivos de este mismo sitio. Sin CDN, sin librerías, sin rastreadores.
@@ -27,7 +27,9 @@
 
 <div class="propuesta">
   <p class="propuesta__que">Propuesta de sitio web — preparada para <b>Fortín Mapuche</b> por CristalWeb</p>
-  <p class="propuesta__gancho">Todos los que van a Coñaripe pasan por el frente, y en internet no tienen ni el horario publicado.</p>
+  <p class="propuesta__gancho">4,7 con 131 reseñas en Google, y ni el horario ni el
+    teléfono publicados (verificado el 01-09-2026): el auto que pasa por el frente un
+    domingo no tiene cómo saber si está abierto. Ésta es la página que debería estar ahí.</p>
 </div>
 
 <header class="cab" id="cab">
@@ -37,6 +39,8 @@
   </a>
   <nav class="cab__nav" aria-label="Secciones">
     <a href="#mesa">La mesa larga</a>
+    <a href="#ruta">Dónde queda</a>
+    <a href="#escala">Cuánto pica</a>
     <a href="#fuego">La cocina</a>
   </nav>
   <a class="cab__res" href="#reservar">
@@ -48,109 +52,72 @@
 <main>
 
 <!-- ══════ ESTRUCTURA O — cadena de láminas a sangre ══════
-     Cuatro láminas de 88svh mínimo. El fondo de cada una es dibujo
-     CSS: no hay una sola imagen en todo el sitio. -->
+     Láminas de 88svh (con techo, para que en una pantalla muy alta no
+     queden metros de vacío). El fondo de cada una es dibujo CSS y las
+     fotos se cuelan por detrás: por las rendijas en la portada, como
+     telón en la ruta, como aura de color, y a sangre en el tajo y la
+     cita. -->
 
 <!-- ── LÁMINA 0 · la portada: la empalizada y el fuego detrás ── -->
-<section class="lamina lamina--portada portada--foto" id="portada" aria-labelledby="t-portada">
-  <!-- FONDO DE PORTADA: 2560 px, nitido. Se disuelve hacia el titular
-       con un gradiente lateral, no con desenfoque. -->
+<section class="lamina lamina--portada portada portada--foto" id="portada" aria-labelledby="t-portada">
+  <!-- FONDO DE PORTADA: 2560 px, nitido. Va DETRAS del muro de tablas:
+       no se ve como foto, se ve como brasas al otro lado de la pared. -->
   <div class="portada__foto" aria-hidden="true">
-    <img src="imagenes/port-01.jpg" width="2560" height="1707"
+    <img src="imagenes/port-01.jpg" width="2560" height="1706"
          decoding="async" fetchpriority="high" alt="">
   </div>
 
   <div class="fondo fondo--rendijas" aria-hidden="true">
     <span class="brasa"></span>
     <span class="tablas"></span>
+    <span class="canto"></span>
   </div>
-  <div class="lamina__texto">
+
+  <!-- AMBIENTE: ceniza que sube en el aire caliente que sale por las
+       rendijas. No es fuego dibujado (la regla de la página lo prohíbe):
+       es lo que el fuego levanta. Se apaga con reduced-motion. -->
+  <div class="cenizas" aria-hidden="true">
+    <i></i><i></i><i></i><i></i><i></i><i></i>
+    <i></i><i></i><i></i><i></i><i></i><i></i>
+  </div>
+
+  <div class="lamina__texto portada__texto">
     <p class="sitio">Restaurante · Pucura, camino a Coñaripe</p>
     <h1 id="t-portada">La parada<br>de la vuelta<br>al lago</h1>
     <p class="bajada">El auto lleno, el domingo, la vuelta al Calafquén. Alguien
       pregunta dónde parar a comer y nadie tiene el dato. Esta página es ese dato.</p>
-    <dl class="specs">
-      <div class="spec"><dt>nota en Google</dt><dd>4,7</dd></div>
-      <div class="spec"><dt>reseñas</dt><dd>131</dd></div>
-      <div class="spec"><dt>horario publicado</dt><dd><span class="falta">ninguno</span></dd></div>
-    </dl>
+    <p class="portada__botones">
+      <a class="boton boton--fuerte" href="#reservar">Avisar que vamos</a>
+      <a class="boton boton--linea" href="#ruta">Dónde queda</a>
+    </p>
   </div>
 </section>
 
-<!-- ── LÁMINA 1 · en la vuelta al lago — texto a la izquierda ── -->
-<section class="lamina lamina--izq con-telon" id="ruta" aria-labelledby="t-ruta">
-  <div class="telon" aria-hidden="true">
-    <img src="imagenes/telon-01.jpg" width="1200" height="800" decoding="async" alt="">
-  </div>
-
-  <!-- AURA DE COLOR: la foto de rubro reventada a desenfoque. No se lee
-       como imagen: aporta color y luz detras de una seccion que si no
-       seria fondo plano. Aca el desenfoque SI es el efecto, no un parche,
-       y por eso el archivo va chico: a 64 px de blur, mas resolucion no
-       cambia nada. Sin loading=lazy porque el elemento va en absoluto con
-       z-index negativo y el navegador nunca lo considera visible. -->
-  <div class="aura" aria-hidden="true">
-    <img src="imagenes/aura-01.jpg" width="900" height="599" decoding="async" alt="">
-  </div>
-
-  <div class="fondo fondo--camino" aria-hidden="true">
-    <span class="calzada"></span>
-    <span class="eje"></span>
-  </div>
-  <div class="lamina__texto">
-    <p class="antetitulo">Dónde queda, de verdad</p>
-    <h2 id="t-ruta">En la vuelta<br>al lago</h2>
-    <p class="entrada">Pucura está en el camino entre Coñaripe y Licán Ray. Casi
-      nadie llega buscándolos: los ven al pasar, o no los ven. Cuatro datos escritos
-      convierten «pasamos por el frente» en «paramos».</p>
-
-    <dl class="huecos">
-      <div class="hueco">
-        <dt>De qué lado del camino</dt>
-        <dd><span class="falta">falta</span>
-          <span class="hueco__pq">Yendo hacia Coñaripe, ¿a la derecha o a la
-            izquierda? Es la diferencia entre frenar y seguir de largo.</span></dd>
-      </div>
-      <div class="hueco">
-        <dt>Qué se ve desde el camino</dt>
-        <dd><span class="falta">falta</span>
-          <span class="hueco__pq">Un letrero, un techo, un color. La referencia
-            visible es lo que hace que el copiloto diga «ahí es».</span></dd>
-      </div>
-      <div class="hueco">
-        <dt>Dónde se estaciona</dt>
-        <dd><span class="falta">falta</span>
-          <span class="hueco__pq">Con un auto lleno, si no se ve dónde parar, no
-            se para.</span></dd>
-      </div>
-      <div class="hueco">
-        <dt>Días y horario</dt>
-        <dd><span class="falta">falta</span>
-          <span class="hueco__pq">El dato que más se busca y el que no está.
-            Sobre todo fuera de temporada.</span></dd>
-      </div>
-    </dl>
-
-    <p class="nota-honesta">Lo que esta página <b>no</b> dice: cuántos kilómetros ni
-      cuántos minutos hay desde Coñaripe o desde Licán Ray. No los tengo medidos, y
-      un número inventado manda a alguien a buscar un local donde no está.</p>
-  </div>
+<!-- ── LA BANDA DE CIFRAS ──
+     Cuatro números en la misma fila: dos que el negocio ya se ganó, uno
+     que es aritmética de esta página y el cuarto, que es la herida. -->
+<section class="cifras" aria-label="El negocio en cuatro números">
+  <ul class="cifras__lista cascada">
+    <li>
+      <b>4,7</b>
+      <span>nota en Google</span>
+    </li>
+    <li>
+      <b data-cuenta="131">131</b>
+      <span>reseñas de gente que ya comió acá</span>
+    </li>
+    <li>
+      <b>4</b>
+      <span>preguntas que esta página deja contestadas por escrito</span>
+    </li>
+    <li class="cifras__herida">
+      <b>0</b>
+      <span>datos publicados hoy: ni teléfono, ni horario, ni de qué lado del camino</span>
+    </li>
+  </ul>
 </section>
 
-<!-- ── LÁMINA 2 · LA PIEZA FIRMA — texto a la derecha ── -->
-<!-- ========= MEDIA PANTALLA ========= -->
-<section class="mitades" aria-labelledby="t-mitades">
-  <div class="mitades__foto">
-    <img src="imagenes/media-01.jpg" width="1600" height="1067"
-         loading="lazy" decoding="async" alt="">
-  </div>
-  <div class="mitades__texto">
-    <p class="mitades__ante">Lo que hay que decir por escrito</p>
-    <h2 id="t-mitades">Cuánto pica, en una palabra</h2>
-    <p>El merkén es lo que distingue una cocina del sur de una cocina cualquiera, y es también lo que hace que alguien no vuelva: nadie avisa cuánto pica. Escribir «suave», «medio» o «picante» al lado de cada plato cuesta una línea y evita el único reclamo que un restaurante de esta zona recibe de verdad. Lo mismo con el ahumado: hay quien lo busca y quien lo evita.</p>
-  </div>
-</section>
-
+<!-- ── LÁMINA 1 · LA PIEZA FIRMA — la mesa larga, texto a la derecha ── -->
 <section class="lamina lamina--der" id="mesa" aria-labelledby="t-mesa">
   <div class="fondo fondo--tablones" aria-hidden="true"></div>
   <div class="lamina__texto">
@@ -161,7 +128,7 @@
       cocina, que tiene que decir que no. Se arregla escribiendo cuatro cosas.</p>
     <p class="marca-ejemplo" data-ejemplo="Las preguntas son reales — las respuestas las pone el local"></p>
 
-    <ol class="grupo">
+    <ol class="grupo cascada">
       <li class="gr">
         <p class="gr__q">¿Reciben a doce sin aviso?</p>
         <p class="gr__a"><span class="falta">falta: sí / no / depende del día</span></p>
@@ -195,7 +162,145 @@
   </div>
 </section>
 
-<!-- ── LÁMINA 3 · la cocina y el aviso — texto a la izquierda ── -->
+<!-- ========= TAJO — FRANJA A SANGRE ========= -->
+<figure class="tajo">
+  <img src="imagenes/tajo-01.jpg" width="2200" height="1375"
+       loading="lazy" decoding="async" alt="">
+  <figcaption class="tajo__txt">
+    <p>Madera, fuego y merkén. Con esas tres cosas está hecha la cocina, y con
+      esas tres está hecha esta página.</p>
+  </figcaption>
+</figure>
+
+<!-- ── LÁMINA 2 · en la vuelta al lago — texto a la izquierda ── -->
+<section class="lamina lamina--izq con-telon" id="ruta" aria-labelledby="t-ruta">
+  <div class="telon" aria-hidden="true">
+    <img src="imagenes/telon-01.jpg" width="1200" height="800" loading="lazy" decoding="async" alt="">
+  </div>
+
+  <!-- AURA DE COLOR: la foto de rubro reventada a desenfoque. No se lee
+       como imagen: aporta color y luz detras de una seccion que si no
+       seria fondo plano. Aca el desenfoque SI es el efecto, no un parche,
+       y por eso el archivo va chico: a 64 px de blur, mas resolucion no
+       cambia nada. Sin loading=lazy porque el elemento va en absoluto con
+       z-index negativo y el navegador nunca lo considera visible. -->
+  <div class="aura" aria-hidden="true">
+    <img src="imagenes/aura-01.jpg" width="900" height="599" decoding="async" alt="">
+  </div>
+
+  <div class="fondo fondo--camino" aria-hidden="true">
+    <span class="calzada"></span>
+    <span class="eje"></span>
+  </div>
+  <div class="lamina__texto">
+    <p class="antetitulo">Dónde queda, de verdad</p>
+    <h2 id="t-ruta">En la vuelta<br>al lago</h2>
+    <p class="entrada">Pucura está en el camino entre Coñaripe y Licán Ray. Casi
+      nadie llega buscándolos: los ven al pasar, o no los ven. Cuatro datos escritos
+      convierten «pasamos por el frente» en «paramos».</p>
+
+    <dl class="huecos cascada">
+      <div class="hueco">
+        <dt>De qué lado del camino</dt>
+        <dd><span class="falta">falta</span>
+          <span class="hueco__pq">Yendo hacia Coñaripe, ¿a la derecha o a la
+            izquierda? Es la diferencia entre frenar y seguir de largo.</span></dd>
+      </div>
+      <div class="hueco">
+        <dt>Qué se ve desde el camino</dt>
+        <dd><span class="falta">falta</span>
+          <span class="hueco__pq">Un letrero, un techo, un color. La referencia
+            visible es lo que hace que el copiloto diga «ahí es».</span></dd>
+      </div>
+      <div class="hueco">
+        <dt>Dónde se estaciona</dt>
+        <dd><span class="falta">falta</span>
+          <span class="hueco__pq">Con un auto lleno, si no se ve dónde parar, no
+            se para.</span></dd>
+      </div>
+      <div class="hueco">
+        <dt>Días y horario</dt>
+        <dd><span class="falta">falta</span>
+          <span class="hueco__pq">El dato que más se busca y el que no está.
+            Sobre todo fuera de temporada.</span></dd>
+      </div>
+    </dl>
+
+    <p class="nota-honesta">Lo que esta página <b>no</b> dice: cuántos kilómetros ni
+      cuántos minutos hay desde Coñaripe o desde Licán Ray. No los tengo medidos, y
+      un número inventado manda a alguien a buscar un local donde no está.</p>
+  </div>
+</section>
+
+<!-- ========= MEDIA PANTALLA ========= -->
+<section class="mitades" aria-labelledby="t-mitades">
+  <div class="mitades__foto">
+    <img src="imagenes/mit-01.jpg" width="2200" height="1467"
+         loading="lazy" decoding="async" alt="Una cuchara con ají seco molido y hierbas, sobre una tabla.">
+  </div>
+  <div class="mitades__texto">
+    <p class="mitades__ante">Lo que hay que decir por escrito</p>
+    <h2 id="t-mitades">Cuánto pica, en una palabra</h2>
+    <p>El merkén es lo que distingue una cocina del sur de una cocina cualquiera, y es
+      también lo que hace que alguien no vuelva: nadie avisa cuánto pica. Escribir
+      «suave», «medio» o «picante» al lado de cada plato cuesta una línea y evita el
+      único reclamo que un restaurante de esta zona recibe de verdad. Lo mismo con el
+      ahumado: hay quien lo busca y quien lo evita.</p>
+  </div>
+</section>
+
+<!-- ══════ LA SECCIÓN CLARA ══════
+     La página entera es madera quemada. A media página se abre una
+     sección de madera cruda: es el respiro que evita que el scroll se
+     lea como un túnel, y es donde va la propuesta de redacción. -->
+<section class="escala" id="escala" aria-labelledby="t-escala">
+  <div class="escala__cols">
+    <div class="escala__texto">
+      <p class="escala__ante">Propuesta de redacción</p>
+      <h2 id="t-escala">Tres palabras<br>y se acabó el reclamo</h2>
+      <p class="escala__entrada">Ésta es la escala completa: tres palabras, con lo que
+        cada una promete. Va una al lado de cada plato de la carta. Qué plato entra en
+        cada casilla lo decide la cocina — acá sólo están escritas las palabras.</p>
+      <figure class="escala__foto">
+        <img src="imagenes/gal-01.jpg" width="1600" height="1067"
+             loading="lazy" decoding="async" alt="Merkén molido, ají rojo ahumado hecho polvo.">
+        <figcaption>El merkén es ají ahumado y molido: pica y además sabe a humo.
+          Las dos cosas se avisan por separado.</figcaption>
+      </figure>
+    </div>
+
+    <ol class="escala__fichas cascada">
+      <li class="fic">
+        <p class="fic__n">01</p>
+        <h3 class="fic__t">Suave</h3>
+        <p class="fic__d">Se siente al final y no tapa el resto. Un niño lo come, y
+          el que no aguanta el picante lo pide igual.</p>
+      </li>
+      <li class="fic fic--medio">
+        <p class="fic__n">02</p>
+        <h3 class="fic__t">Medio</h3>
+        <p class="fic__d">Pica de verdad y se pasa solo. Es la casilla donde cae casi
+          toda la comida hecha con merkén, y por eso es la que hay que nombrar.</p>
+      </li>
+      <li class="fic">
+        <p class="fic__n">03</p>
+        <h3 class="fic__t">Picante</h3>
+        <p class="fic__d">Se pide sabiendo. Si un plato es éste y no lo dice, el
+          comensal no reclama: no vuelve, que es peor.</p>
+      </li>
+      <li class="fic fic--humo">
+        <p class="fic__n">+</p>
+        <h3 class="fic__t">Ahumado</h3>
+        <p class="fic__d">No es picor, es otro sabor, y se avisa aparte. Hay quien
+          entra buscándolo y quien lo evita.</p>
+      </li>
+    </ol>
+  </div>
+  <p class="escala__nota ej" data-ejemplo="la palabra de cada plato la pone la cocina">Ninguna
+    de estas palabras está puesta hoy en ningún plato: la escala es la propuesta,
+    no la carta.</p>
+</section>
+
 <!-- ========= LA CITA A SANGRE ========= -->
 <section class="cita" aria-labelledby="t-cita">
   <div class="cita__foto" aria-hidden="true">
@@ -208,14 +313,8 @@
   </blockquote>
 </section>
 
-
-
-<!-- ========= TAJO — FRANJA A SANGRE ========= -->
-<div class="tajo" aria-hidden="true">
-  <img src="imagenes/banda-01.jpg" width="1000" height="662"
-       loading="lazy" decoding="async" alt="">
-</div>
-<section class="lamina lamina--izq" id="fuego" aria-labelledby="t-fuego">
+<!-- ── LÁMINA 3 · la cocina — texto a la derecha ── -->
+<section class="lamina lamina--der" id="fuego" aria-labelledby="t-fuego">
   <div class="fondo fondo--rendijas fondo--rendijas-2" aria-hidden="true">
     <span class="brasa"></span>
     <span class="tablas"></span>
@@ -226,7 +325,7 @@
     <p class="entrada">Un 4,7 con 131 reseñas se gana en la cocina, no en internet.
       Lo que falta es que el que todavía no entró sepa qué va a comer.</p>
 
-    <dl class="huecos">
+    <dl class="huecos cascada">
       <div class="hueco">
         <dt>Qué se cocina acá</dt>
         <dd><span class="falta">falta: dos o tres platos de la casa</span>
@@ -237,7 +336,8 @@
         <dt>Rango de precios</dt>
         <dd><span class="falta">falta</span>
           <span class="hueco__pq">«Un fondo va entre tanto y tanto». Un grupo de
-            doce necesita ese número antes de bajarse del auto.</span></dd>
+            doce necesita ese número antes de bajarse del auto. Esta página no
+            pone ni uno: los precios los escribe el local.</span></dd>
       </div>
       <div class="hueco">
         <dt>Si hay algo sin carne</dt>
@@ -247,11 +347,22 @@
       </div>
     </dl>
 
-    <div class="reservar" id="reservar">
-      <h3 class="sub">Avisar que vamos</h3>
-      <p class="reservar__intro">Diga cuándo y cuántos son: el mensaje se arma solo.</p>
+    <p class="firma">Tres líneas de texto. Es todo lo que separa a un local con 4,7
+      de estrellas de un local con 4,7 de estrellas al que además se llega.</p>
+  </div>
+</section>
 
-      <form class="form" id="form-mesa">
+<!-- ══════ AVISAR QUE VAMOS ══════ -->
+<section class="avisar" id="reservar" aria-labelledby="t-avisar">
+  <div class="avisar__cols">
+    <div class="reservar">
+      <p class="antetitulo">Antes de subirse al auto</p>
+      <h2 id="t-avisar">Avisar que vamos</h2>
+      <p class="reservar__intro">Diga cuándo y cuántos son: el mensaje se arma solo
+        acá abajo. Esta página no manda nada a ninguna parte — el texto queda
+        escrito para que usted lo copie o lo lea por teléfono.</p>
+
+      <form class="form" id="form-mesa" autocomplete="off">
         <div class="campo">
           <label for="f-cuando">Qué día y a qué hora</label>
           <input id="f-cuando" name="cuando" type="text" placeholder="Domingo cerca de las 14:00" autocomplete="off">
@@ -268,92 +379,139 @@
         <p class="resumen" id="resumen" aria-live="polite">El mensaje se arma acá abajo a medida que escribe.</p>
         <a class="boton" id="enviar" href="#reservar">Enviar por WhatsApp</a>
         <p class="reservar__nota"><span class="falta">falta: el número</span> — la ficha
-          de Google no publica ninguno, así que el botón todavía no lleva a ninguna parte.</p>
+          de Google no publica ninguno, así que el botón todavía no lleva a ninguna
+          parte. Cuando el local dé el número, se cambia una línea del JavaScript y
+          este botón y el verde de la esquina quedan funcionando.</p>
       </form>
     </div>
+
+    <dl class="datos">
+      <div><dt>Dirección</dt><dd class="ej" data-ejemplo="la confirma el local">Falta</dd></div>
+      <div><dt>Teléfono</dt><dd class="ej" data-ejemplo="no está en la ficha de Google">Falta</dd></div>
+      <div><dt>Días</dt><dd class="ej" data-ejemplo="la confirma el local">Falta</dd></div>
+      <div><dt>Horario</dt><dd class="ej" data-ejemplo="el dato más buscado y el que no está">Falta</dd></div>
+      <div><dt>Comuna</dt><dd>Pucura, camino Coñaripe–Licán Ray</dd></div>
+      <div><dt>En Google</dt><dd>4,7 con 131 reseñas</dd></div>
+    </dl>
   </div>
 </section>
 
 </main>
 
-
-
-<!-- ========= MOSAICO ========= -->
-
 <!-- ========= LA TIRA ========= -->
-<section class="tira" aria-label="Tres imágenes del oficio">
+<section class="tira cascada" aria-label="Tres imágenes del oficio">
   <figure class="tira__pieza">
-    <img src="imagenes/tira-01.jpg" width="1000" height="667" loading="lazy" decoding="async" alt="Llamas sobre la leña encendida.">
+    <img src="imagenes/tira-01.jpg" width="1100" height="733" loading="lazy" decoding="async" alt="Llamas altas sobre la leña encendida.">
   </figure>
   <figure class="tira__pieza">
-    <img src="imagenes/tirb-01.jpg" width="1000" height="662" loading="lazy" decoding="async" alt="Tablones de madera gastada, vistos de cerca.">
+    <img src="imagenes/tira-02.jpg" width="1100" height="733" loading="lazy" decoding="async" alt="Troncos cortados y apilados bajo el alero.">
   </figure>
   <figure class="tira__pieza">
-    <img src="imagenes/tirc-01.jpg" width="1000" height="662" loading="lazy" decoding="async" alt="Cuencos de barro con especias molidas y granos.">
+    <img src="imagenes/tira-03.jpg" width="1100" height="733" loading="lazy" decoding="async" alt="Mortero de piedra con especias molidas dentro.">
   </figure>
 </section>
 
+<!-- ========= MOSAICO ========= -->
 <section class="mos" aria-labelledby="t-mos">
-  <h2 id="t-mos" class="mos__titulo">La misma serie, más de cerca</h2>
-  <p class="mos__nota">Estas seis ya aparecen más arriba en la página. Vuelven acá en otro tamaño porque una sola pasada de imágenes deja el scroll vacío, y porque de cerca se ven cosas que en grande se pierden. La procedencia de cada una está en imagenes/FUENTES.txt.</p>
-  <div class="mos__grilla">
+  <h2 id="t-mos" class="mos__titulo">Madera, fuego y merkén</h2>
+  <p class="mos__nota">Seis imágenes de banco libre de los tres materiales de los que
+    habla la página. <b>Ninguna es del local</b>, y ninguna muestra un plato: un plato
+    de banco de imágenes en la web de un restaurante es la mentira más fácil de
+    descubrir. Cuando lleguen las fotos de la cocina, éstas se reemplazan una por una.
+    La procedencia de cada archivo está en imagenes/FUENTES.txt.</p>
+  <div class="mos__grilla cascada">
     <figure class="mos__p">
-      <img src="imagenes/mos-01.jpg" width="780" height="520"
-           loading="lazy" decoding="async" alt="">
+      <img src="imagenes/mos1-01.jpg" width="1200" height="800"
+           loading="lazy" decoding="async" alt="Brasas y ceniza cuando el fuego ya bajó.">
     </figure>
     <figure class="mos__p">
-      <img src="imagenes/mos-02.jpg" width="780" height="516"
-           loading="lazy" decoding="async" alt="">
+      <img src="imagenes/mos2-01.jpg" width="1200" height="800"
+           loading="lazy" decoding="async" alt="Leña apilada contra un muro de madera.">
     </figure>
     <figure class="mos__p">
-      <img src="imagenes/mos-03.jpg" width="780" height="516"
-           loading="lazy" decoding="async" alt="">
+      <img src="imagenes/mos3-01.jpg" width="1200" height="800"
+           loading="lazy" decoding="async" alt="Olla de fierro colgada sobre el fuego.">
     </figure>
     <figure class="mos__p">
-      <img src="imagenes/mos-04.jpg" width="780" height="520"
-           loading="lazy" decoding="async" alt="">
+      <img src="imagenes/mos4-01.jpg" width="1200" height="800"
+           loading="lazy" decoding="async" alt="Una cuchara de ají molido sobre una tabla de cocina.">
     </figure>
     <figure class="mos__p">
-      <img src="imagenes/mos-05.jpg" width="780" height="520"
-           loading="lazy" decoding="async" alt="">
+      <img src="imagenes/mos5-01.jpg" width="1200" height="800"
+           loading="lazy" decoding="async" alt="Un tronco ardiendo, la corteza abierta por el calor.">
     </figure>
     <figure class="mos__p">
-      <img src="imagenes/mos-06.jpg" width="780" height="519"
-           loading="lazy" decoding="async" alt="">
+      <img src="imagenes/mos6-01.jpg" width="1200" height="800"
+           loading="lazy" decoding="async" alt="Cortes de leña apilados, la veta a la vista.">
     </figure>
   </div>
 </section>
+
+<section class="mapa-sec" aria-label="Dónde queda">
+    <div class="ancho">
+      <figure class="mapa">
+        <img src="imagenes/mapa-01.jpg" width="768" height="768" loading="lazy" decoding="async"
+             alt="Mapa de Pucura (Coñaripe).">
+        <figcaption class="mapa__pie">
+          <span><b>Pucura (Coñaripe)</b>. La dirección exacta la confirma el negocio: cuando la tengamos, el mapa marca la puerta.</span>
+          <span class="mapa__cred">Mapa: &copy; <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener">OpenStreetMap</a></span>
+        </figcaption>
+      </figure>    </div>
+</section>
+
 <section class="dueno" aria-labelledby="t-dueno">
   <h2 id="t-dueno">Para el dueño</h2>
   <div class="dueno__cols">
     <div>
       <h3>Lo que está verificado</h3>
-      <p>El 4,7 con 131 reseñas de su ficha de Google y que no tienen página ni
-        teléfono publicado.</p>
+      <p>El 4,7 con 131 reseñas de su ficha de Google, y que no tienen página, ni
+        teléfono, ni horario publicado. Verificado el 01-09-2026.</p>
+    </div>
+    <div>
+      <h3>Lo que es de ejemplo</h3>
+      <p>Todo lo que aparece marcado con línea de puntos: las respuestas de la mesa
+        larga, los cuatro datos del camino, los tres de la cocina y la escala de
+        picor. Las preguntas son reales; las respuestas las pone usted. No hay ni un
+        precio en toda la página.</p>
     </div>
     <div>
       <h3>Lo que decidí no poner</h3>
-      <p>Ningún dibujo ni forma tomada de la cultura mapuche. La página está hecha
-        con madera, fuego y el color del merkén: materiales y comida. Lo que es de
-        la comunidad no lo pongo yo en una página web.</p>
-    </div>
-    <div>
-      <h3>Lo que falta</h3>
-      <p>El número, el horario, de qué lado del camino quedan y las cuatro
-        respuestas de la mesa larga. Esas cuatro son las que hacen que un auto
-        lleno frene en vez de seguir.</p>
+      <p>Ningún dibujo ni forma tomada de la cultura mapuche, y ninguna foto del
+        sitio patrimonial que se llama igual. La página está hecha con madera, fuego
+        y el color del merkén: materiales y comida. Lo que es de la comunidad no lo
+        pongo yo en una página web.</p>
     </div>
   </div>
   <p class="dueno__cierre">
-    <a class="flecha" href="https://wa.me/56968650001" rel="noopener">Escribirme por WhatsApp <span aria-hidden="true">→</span></a>
+    <a class="flecha" href="mailto:cristalwebcl@gmail.com?subject=Fort%C3%ADn%20Mapuche%20%E2%80%94%20la%20p%C3%A1gina">Escribirme por correo <span aria-hidden="true">→</span></a>
     <a class="flecha" href="../../" rel="noopener">Ver otros trabajos <span aria-hidden="true">→</span></a>
   </p>
 </section>
 
 <footer class="pie">
-  <p>Sitio de demostración preparado por CristalWeb. El negocio no lo ha encargado
-    ni ha revisado su contenido.</p>
+  <p>Sitio de demostración preparado por <b>CristalWeb</b>. El negocio no lo ha
+    encargado ni ha revisado su contenido. Los datos marcados con línea de puntos
+    son huecos a completar, no información del local. Ninguna imagen es del
+    restaurante; la procedencia de todas está en imagenes/FUENTES.txt.</p>
 </footer>
+
+<!-- ══ WHATSAPP FLOTANTE ═══════════════════════════════════════════
+     Va escrito en el HTML, no lo crea el JS: si el script no arranca,
+     el botón igual está. El JS sólo lo aparta mientras se mira la
+     portada, para no tapar el titular. Icono de simple-icons (CC0),
+     incrustado: la CSP no deja pedir nada a un tercero.
+
+     EL NÚMERO: este local NO tiene teléfono publicado —su ficha de
+     Google no trae ninguno— y un WhatsApp inventado manda a los
+     clientes del cliente a un teléfono ajeno. Así que el botón lleva a
+     #reservar, que es donde se arma el mensaje, y queda marcado como
+     hueco. Cuando el local dé el número se cambia el href por
+     https://wa.me/569XXXXXXXX?text=… y esta nota se borra. -->
+<a class="wapp" href="#reservar" aria-label="Ir a armar el mensaje para avisar que vamos">
+  <svg class="wapp__i" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"/></svg>
+  <span class="wapp__t">WhatsApp</span>
+  <span class="wapp__falta">falta el número</span>
+</a>
 
 <script src="js/main.js"></script>
 </body>

@@ -1,13 +1,15 @@
 # Qué fotos faltan — Mis Raíces
 
 La página es CSS: la concha de la cabecera, el filo tornasolado bajo los
-titulares y la espuma que entra y se retira en la portada. Se sostiene
-sola, pero acá una foto vale doble: el argumento del local es que el
-producto viene de esta orilla.
+titulares y la espuma que entra y se retira en la portada. Va SIN VIDEO
+a propósito. Se sostiene sola, pero acá una foto vale doble: el
+argumento del local es que el producto viene de esta orilla, y las que
+hay hoy son de banco libre.
 
 1. **La orilla desde el local, con la espuma sobre la roca.** Es LA
-   foto: reemplaza la animación de la portada y prueba de un golpe que
-   están donde dicen estar. Horizontal, >=1600 px.
+   foto: reemplaza a `port-01.jpg` —que hoy son unos choritos de banco
+   libre, de cualquier costa— y prueba de un golpe que están donde
+   dicen estar. Horizontal, >=1600 px.
 2. **Un plato de marisco recién servido**, de cerca, con luz de día.
    El chorito abierto y el cochayuyo son los dos que mejor se leen.
 3. **La mesa con vista**, tomada desde la silla, para que se entienda

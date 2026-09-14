@@ -21,3 +21,10 @@ URL de origen:
 004.jpg | 6000x4000 | Cows Grazing on Field Against Sky · Free Stock Photo | https://images.pexels.com/photos/214063/pexels-photo-214063.jpeg?cs=srgb&dl=pexels-photo-collections-214063.jpg&fm=jpg
 005.jpg | 6000x4000 | 100+ Interesting Cows Photos · Pexels · Free Stock Photos | https://images.pexels.com/photos/1276237/pexels-photo-1276237.jpeg?cs=srgb&dl=landscape-clouds-field-1276237.jpg&fm=jpg
 006.jpg | 6000x4000 | White and Brown Cattle · Free Stock Photo | https://images.pexels.com/photos/17388643/pexels-photo-17388643.jpeg?cs=srgb&dl=pexels-61078180-17388643.jpg&fm=jpg
+
+MAPA DE UBICACION — mapa-01.jpg
+  768 x 768 · zoom 14 · centro -39.370616, -72.6300704
+  Mosaicos de OpenStreetMap pegados en una sola imagen, con el marcador
+  dibujado encima. Datos (c) OpenStreetMap contributors, licencia ODbL:
+  la atribucion tiene que ir VISIBLE junto al mapa, en el pie de la figura.
+  https://www.openstreetmap.org/copyright

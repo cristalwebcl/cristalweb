@@ -39,6 +39,7 @@
     <a href="#cap-01">La decisión</a>
     <a href="#cap-02">Los mitos</a>
     <a href="#cap-03">El día</a>
+    <a href="#donde">Dónde queda</a>
   </nav>
   <a class="cab__tel" href="tel:+56452392113">
     <span class="cab__tel-rot">Pitrufquén</span>
@@ -83,6 +84,34 @@
       <div class="spec"><dt>teléfono</dt><dd class="dd--tel"><a href="tel:+56452392113">(45) 239 2113</a></dd></div>
     </dl>
   </div>
+</section>
+
+<!-- ========= LAS CIFRAS ========= -->
+<!-- Cuatro números y ninguno inventado: los dos primeros salen de su
+     ficha de Google (verificada el 21-08-2026), el tercero es la herida
+     y el cuarto es aritmética de esta misma página — las siete
+     respuestas marcadas con «falta». Sólo cuenta el que costó
+     verificar; el 0 se queda quieto porque un cero que sube se lee
+     como truco. -->
+<section class="cifras" aria-label="Lo que hay verificado">
+  <dl class="cifras__lista cascada">
+    <div class="cifra">
+      <dt>reseñas en su ficha de Google</dt>
+      <dd><b data-cuenta="100">100</b></dd>
+    </div>
+    <div class="cifra">
+      <dt>la nota que le ponen</dt>
+      <dd><b>4,5</b></dd>
+    </div>
+    <div class="cifra cifra--herida">
+      <dt>páginas propias en internet</dt>
+      <dd><b>0</b></dd>
+    </div>
+    <div class="cifra">
+      <dt>respuestas suyas para firmar ésta</dt>
+      <dd><b>7</b></dd>
+    </div>
+  </dl>
 </section>
 
 <!-- ========= LOS CUATRO CAPÍTULOS ========= -->
@@ -136,7 +165,13 @@
   </div>
 </article>
 
-<article class="cap cap--oscuro" id="cap-02" aria-labelledby="t-02">
+<article class="cap cap--oscuro con-telon" id="cap-02" aria-labelledby="t-02">
+  <!-- Segundo telón. Éste va sobre fondo tinta, así que la foto elegida
+       tiene luz propia: sobre oscuro sólo se ve lo que brilla. -->
+  <div class="telon telon--oscuro" aria-hidden="true">
+    <img src="imagenes/telon-02.jpg" width="1200" height="800" loading="lazy" decoding="async" alt="">
+  </div>
+
   <p class="cap__num">02</p>
   <div class="cap__cuerpo">
     <h2 id="t-02">Los mitos</h2>
@@ -238,6 +273,77 @@
   </div>
 </article>
 
+<!-- ========= TAJO — FRANJA A SANGRE ========= -->
+<!-- Corta el bloque largo de texto entre el capítulo 03 y el 04. La foto
+     va nítida y el velo sube SÓLO desde abajo, hasta donde hay letra:
+     los dos tercios de arriba quedan a foco completo. El velo se escribe
+     en rgba() literal y termina en alfa 0 — con var() el degradado tapa
+     la foto de punta a punta. -->
+<figure class="tajo" aria-hidden="true">
+  <img src="imagenes/tajo-01.jpg" width="2200" height="1467"
+       loading="lazy" decoding="async" alt="">
+  <figcaption class="tajo__txt">
+    <p>Se deja en ayunas y se retira caminando. Entre las dos cosas hay una
+      mañana, y esa mañana se puede contar por escrito.</p>
+  </figcaption>
+</figure>
+
+<!-- ========= QUÉ LLEVAR ESE DÍA ========= -->
+<!-- La otra mitad de la pieza firma: los cuatro momentos ya están en el
+     capítulo 03, y esto es el «qué traer». Va escrito en el HTML, sin
+     precios y sin una sola indicación clínica: son cosas que se meten en
+     un bolso, no instrucciones. -->
+<section class="llevar" id="llevar-cosas" aria-labelledby="t-llevar">
+  <div class="llevar__in">
+    <p class="llevar__rot">La otra mitad de la pregunta</p>
+    <h2 id="t-llevar">Qué llevar en el bolso esa mañana</h2>
+    <p class="entrada">Nada de esto es médico: son las seis cosas que, cuando faltan,
+      hacen que alguien tenga que volver a la casa a buscarlas con el animal ya en
+      ayunas. Escritas acá, se preparan la noche anterior.</p>
+    <p class="marca-ejemplo" data-ejemplo="Lista general — lo que ustedes exigen lo confirman ustedes"></p>
+
+    <ul class="llevar__lista cascada">
+      <li class="llevar__f">
+        <p class="llevar__n">01</p>
+        <h3>El carnet de vacunas</h3>
+        <p>La libreta sanitaria, aunque esté incompleta. Es lo primero que se pide y lo
+          que más queda en la casa.</p>
+      </li>
+      <li class="llevar__f">
+        <p class="llevar__n">02</p>
+        <h3>La transportadora o la correa</h3>
+        <p>El gato, en transportadora cerrada. El perro, con correa corta: la sala de
+          espera de una veterinaria tiene otros animales y ninguno está tranquilo.</p>
+      </li>
+      <li class="llevar__f">
+        <p class="llevar__n">03</p>
+        <h3>Una mantita de la casa</h3>
+        <p>Algo que huela a lo suyo para el rato de internación y para el viaje de
+          vuelta. Cuesta nada y cambia el día del animal.</p>
+      </li>
+      <li class="llevar__f">
+        <p class="llevar__n">04</p>
+        <h3>El collar o la ropa quirúrgica</h3>
+        <p>Es lo que evita que se lama los puntos, y hay que tenerlo el mismo día del
+          retiro, no al otro.
+          <span class="falta">falta: si lo entregan ustedes o hay que comprarlo antes</span></p>
+      </li>
+      <li class="llevar__f">
+        <p class="llevar__n">05</p>
+        <h3>Alguien que maneje de vuelta</h3>
+        <p>Sale despierto pero lento, y va a ir en brazos o en la transportadora. Manejar
+          y sostener a la vez no se puede.</p>
+      </li>
+      <li class="llevar__f">
+        <p class="llevar__n">06</p>
+        <h3>El teléfono con batería</h3>
+        <p>La llamada del mediodía llega cuando llega. Es el único momento del día en que
+          conviene tener el teléfono a mano y con señal.</p>
+      </li>
+    </ul>
+  </div>
+</section>
+
 <article class="cap" id="cap-04" aria-labelledby="t-04">
   <p class="cap__num">04</p>
   <div class="cap__cuerpo">
@@ -298,11 +404,7 @@
 
 
 
-<!-- ========= TAJO — FRANJA A SANGRE ========= -->
-<div class="tajo" aria-hidden="true">
-  <img src="imagenes/banda-01.jpg" width="649" height="365"
-       loading="lazy" decoding="async" alt="">
-</div>
+<!-- ========= CIERRE Y CÓMO LLEGAR — T1 ========= -->
 <section class="cierre" id="llamar" aria-labelledby="t-cierre">
   <p class="cierre__rot">Para agendar o preguntar</p>
   <h2 id="t-cierre" class="cierre__tel">
@@ -310,19 +412,75 @@
   </h2>
   <p class="cierre__pie">Es el número publicado en su ficha de Google.</p>
 
-  <!-- LA FACHADA. Sale de la ficha de Google de la propia veterinaria
-       (no es una foto de archivo): se eligió porque el letrero se lee y
-       porque quien viene a dejar un animal en ayunas necesita reconocer
-       la puerta desde el auto. Va al final y no en la portada: primero
-       se decide, después se ubica. -->
-  <figure class="fachada">
-    <img src="imagenes/fachada-01.jpg" width="649" height="365"
-         loading="lazy" decoding="async"
-         alt="Fachada de la veterinaria en Pitrufquén: letrero «Veterinaria» sobre la puerta, entre una ferretería y otro local.">
-    <figcaption>Así se ve desde la calle.
-      <span class="falta">falta: la dirección exacta y una foto propia — ésta
-      es la de su ficha de Google</span></figcaption>
-  </figure>
+  <div class="contacto" id="donde">
+    <!-- Columna de datos. Lo que no está verificado NO se inventa: se
+         escribe «Falta» con su marca, y de paso queda la lista de lo
+         que la clínica tiene que mandar. -->
+    <div class="contacto__col">
+      <h3 class="contacto__sub">Los datos</h3>
+      <dl class="datos">
+        <div class="dato">
+          <dt>Teléfono</dt>
+          <dd><a href="tel:+56452392113">(45) 239 2113</a></dd>
+        </div>
+        <div class="dato">
+          <dt>WhatsApp</dt>
+          <dd>Falta <span class="falta">falta: si ese mismo número recibe WhatsApp, o cuál es el celular</span></dd>
+        </div>
+        <div class="dato">
+          <dt>Dirección</dt>
+          <dd>Falta <span class="falta">falta: la calle y el número — su ficha de Google no los publica</span></dd>
+        </div>
+        <div class="dato">
+          <dt>Horario</dt>
+          <dd>Falta <span class="falta">falta: de qué hora a qué hora, y si atienden sábado</span></dd>
+        </div>
+        <div class="dato">
+          <dt>Comuna</dt>
+          <dd>Pitrufquén, Región de La Araucanía</dd>
+        </div>
+      </dl>
+
+      <!-- LA FACHADA. Sale de la ficha de Google de la propia veterinaria
+           (no es una foto de archivo): se eligió porque el letrero se lee y
+           porque quien viene a dejar un animal en ayunas necesita reconocer
+           la puerta desde el auto. Va al final y no en la portada: primero
+           se decide, después se ubica. -->
+      <figure class="fachada">
+        <img src="imagenes/fachada-01.jpg" width="649" height="365"
+             loading="lazy" decoding="async"
+             alt="Fachada de la veterinaria en Pitrufquén: letrero «Veterinaria» sobre la puerta, entre una ferretería y otro local.">
+        <figcaption>Así se ve desde la calle.
+          <span class="falta">falta: una foto propia — ésta es la de su ficha de
+          Google y llega a 649 px de ancho</span></figcaption>
+      </figure>
+    </div>
+
+    <!-- ══ MAPA DE UBICACIÓN ══════════════════════════════════════════
+         Imagen propia (mosaicos de OpenStreetMap pegados y guardados en
+         imagenes/mapa-01.jpg): la CSP prohíbe pedir nada a un tercero, así
+         que un iframe de Google Maps o un Leaflet desde CDN no cargarían y
+         no darían ni un error visible. El botón «Cómo llegar» sí es un
+         enlace normal — un enlace pasa la CSP; lo prohibido es cargar
+         recursos de afuera. La atribución de OpenStreetMap va VISIBLE en el
+         pie: los datos son ODbL y la exigen.
+         El marcador está en el centro de Pitrufquén, NO en la puerta: la
+         clínica no publica su dirección y aquí no se inventa ninguna. -->
+    <div class="contacto__col">
+      <h3 class="contacto__sub">Dónde queda</h3>
+      <figure class="mapa">
+        <img src="imagenes/mapa-01.jpg" width="768" height="768" loading="lazy" decoding="async"
+             alt="Mapa de Pitrufquén con el centro de la comuna marcado con un punto rojo, entre la Ruta 5 Sur y el río Toltén.">
+        <figcaption class="mapa__pie">
+          <span class="mapa__cred">Mapa: &copy; <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener">OpenStreetMap</a> contributors</span>
+          <a class="mapa__ir" href="https://www.google.com/maps/search/?api=1&amp;query=-38.9862884,-72.63725" target="_blank" rel="noopener">Cómo llegar <span aria-hidden="true">&rarr;</span></a>
+        </figcaption>
+      </figure>
+      <p class="mapa__nota">El punto marca el centro de Pitrufquén, no la puerta:
+        <span class="falta">falta: la dirección, para mover el marcador a la cuadra exacta</span>
+      </p>
+    </div>
+  </div>
 </section>
 
 <!-- ========= LA TIRA ========= -->

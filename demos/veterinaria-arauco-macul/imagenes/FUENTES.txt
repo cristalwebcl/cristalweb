@@ -1,0 +1,22 @@
+FUENTES DE LAS IMAGENES - Veterinaria Arauco Rehecha el 13-09-2026 (presentacion antes que texto). Fotos de REFERENCIA de bancos libres: ninguna es del local; las verdaderas las tiene que mandar el negocio. 
+port-01.jpg  <-  pozo-p-ara-carpetas\009.jpg  |  pexels (Pexels License)  |  autor: Cup of  Couple  |  https://www.pexels.com/es-es/foto/persona-4k-cartulina-carton-8473782/  |  consulta: "folders documents box"
+hund1-01.jpg  <-  pozo-p-ara-estetoscopio\002.jpg  |  pexels (Pexels License)  |  autor: Fernando Lacerda Branco  |  https://www.pexels.com/es-es/foto/estetoscopio-12344248/  |  consulta: "stethoscope table"
+hund2-01.jpg  <-  pozo-p-ara-casanueva\003.jpg  |  pexels (Pexels License)  |  autor: Shiebi AL  |  https://www.pexels.com/es-es/foto/adorables-cachorros-recien-nacidos-durmiendo-pacificamente-31016683/  |  consulta: "dog new home"
+hund3-01.jpg  <-  pozo-p-ara-consulta\009.jpg  |  pexels (Pexels License)  |  autor: Tima Miroshnichenko  |  https://www.pexels.com/es-es/foto/perro-mono-mesa-adorable-6234608/  |  consulta: "dog on vet table"
+hund4-01.jpg  <-  pozo-p-ara-traslado\004.jpg  |  pexels (Pexels License)  |  autor: CRIS G  |  https://www.pexels.com/es-es/foto/hermoso-gato-carey-de-ojos-verdes-disfrutando-de-la-luz-del-sol-en-casa-33596880/  |  consulta: "cat carrier home"
+hund5-01.jpg  <-  pozo-p-ara-mayor\009.jpg  |  pexels (Pexels License)  |  autor: Anderson  |  https://www.pexels.com/es-es/foto/primer-plano-de-un-labrador-retriever-mayor-32997232/  |  consulta: "old dog portrait"
+hund6-01.jpg  <-  pozo-p-ara-gatogris\012.jpg  |  pexels (Pexels License)  |  autor: Emre Gencer  |  https://www.pexels.com/es-es/foto/animal-mascota-mono-ojos-11913070/  |  consulta: "grey cat window light"
+banda-01.jpg  <-  pozo-p-ara-eucalipto\003.jpg  |  pexels (Pexels License)  |  autor: Vie Studio  |  https://www.pexels.com/es-es/foto/naturaleza-modelo-estampado-textura-6168147/  |  consulta: "eucalyptus leaves"
+cita-01.jpg  <-  pozo-p-ara-gatogris\011.png  |  pexels (Pexels License)  |  autor: Rafael Minguet Delgado  |  https://www.pexels.com/es-es/foto/mascota-gato-sombra-luz-del-sol-21418472/  |  consulta: "grey cat window light"
+mos1-01.jpg  <-  pozo-p-ara-carpetas\004.jpg  |  pexels (Pexels License)  |  autor: Anete Lusina  |  https://www.pexels.com/es-es/foto/maletin-con-documentos-colocados-sobre-la-mesa-4792282/  |  consulta: "folders documents box"
+mos2-01.jpg  <-  pozo-p-ara-eucalipto\008.jpg  |  pexels (Pexels License)  |  autor: Vie Studio  |  https://www.pexels.com/es-es/foto/hojas-fondo-blanco-eucalipto-fotografia-de-plantas-6168330/  |  consulta: "eucalyptus leaves"
+mos3-01.jpg  <-  pozo-p-ara-carpetas\002.jpg  |  pexels (Pexels License)  |  autor: cottonbro studio  |  https://www.pexels.com/es-es/foto/manos-ordenado-cosecha-siega-6636332/  |  consulta: "folders documents box"
+mos4-01.jpg  <-  pozo-p-ara-mayor\011.jpg  |  pexels (Pexels License)  |  autor: Hakan Mercan  |  https://www.pexels.com/es-es/foto/masum-32471004/  |  consulta: "old dog portrait"
+mos5-01.jpg  <-  pozo-p-ara-eucalipto\010.jpg  |  pexels (Pexels License)  |  autor: Vie Studio  |  https://www.pexels.com/es-es/foto/hojas-fondo-blanco-eucalipto-fotografia-de-plantas-6168329/  |  consulta: "eucalyptus leaves"
+mos6-01.jpg  <-  pozo-p-ara-gatogris\006.png  |  pexels (Pexels License)  |  autor: Rafael Minguet Delgado  |  https://www.pexels.com/es-es/foto/mascota-gato-sombra-oscuridad-21418456/  |  consulta: "grey cat window light"
+
+BRUMA (bruma-pag-0N.png y bruma-osc-0N.png, 30x20): las MISMAS fotos, recortadas a 3:2, reducidas y
+recoloreadas con C:\devs\demos\hacer-bruma.ps1 (clara >= 0,68 de luminancia / oscura <= 0,05). No suman fuentes.
+    pagina: port-01.jpg, cita-01.jpg, hund2-01.jpg, mos1-01.jpg, mos4-01.jpg   |   oscuras: port-01.jpg, banda-01.jpg, cita-01.jpg
+
+MAPA: iframe de Google Maps (embed publico, sin clave). No hay imagen de mapa.

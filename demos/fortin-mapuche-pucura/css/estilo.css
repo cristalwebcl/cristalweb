@@ -52,8 +52,26 @@
    LA ESTRUCTURA — O (full-bleed)
    PRIMERA O de las tandas P3-P4. Cadena de laminas de 88svh minimo, a
    sangre, con el texto en una columna lateral que ALTERNA de lado. El
-   fondo de cada lamina es dibujo CSS: no hay una sola imagen en todo
-   el sitio.
+   fondo de cada lamina es dibujo CSS y las fotos se cuelan por detras.
+
+   ─────────────────────────────────────────────────────────────────
+   SUBIDA A PREMIUM · 09-09-2026
+   Identidad intacta: mismos colores, mismo trio, misma regla cultural,
+   misma empalizada, mismo fuego por las rendijas.
+   Lo que se sumo:
+   · la banda de CIFRAS (cuatro numeros, uno cuenta, el ultimo es la herida)
+   · la seccion CLARA de media pagina («tres palabras») — sin ella la
+     cadena de laminas oscuras se lee como un tunel
+   · el TAJO con frase, la seccion AVISAR con su ficha de datos, la tira
+     y el mosaico con seis fotos DISTINTAS
+   · el boton flotante de WhatsApp
+   · CENIZA en el aire caliente de la portada: el ambiente que en otras
+     demos pone el video. Esta demo NO lleva video por decision de
+     Yordy (se reserva para los negocios mejor valorados), asi que el
+     movimiento de portada lo pone el CSS.
+   Y se arreglaron TRES fotos que nunca se veian: .portada__foto, .tajo
+   y .mos__p quedaban en opacity:0 bajo la clase .js porque main.js
+   nunca les ponia .ok. La pagina se veia negra de la mitad para abajo.
    ══════════════════════════════════════════════════════════════════ */
 
 :root {
@@ -184,7 +202,11 @@ a { color: var(--merken); }
 /* ═══════════ LAS LÁMINAS (estructura O) ═══════════ */
 .lamina {
   position: relative;
-  min-height: 88svh;
+  /* 88svh con TECHO. Sin el techo, en una pantalla alta (o en una
+     captura de 2600 px) cada lamina mide dos metros y la pagina se
+     lee como un tunel vacio. A 880 px se ve igual en un portatil y
+     deja de estirarse donde ya no aporta. */
+  min-height: min(88svh, 880px);
   display: flex; align-items: center;
   padding: clamp(3rem, 9vh, 6.5rem) clamp(1.25rem, 5vw, 4rem);
   overflow: hidden;
@@ -216,14 +238,11 @@ a { color: var(--merken); }
   max-width: min(100%, 33rem);
   margin-bottom: 2.2rem;
 }
-.specs { display: flex; flex-wrap: wrap; gap: 1.6rem 2.4rem; margin: 0; }
-.spec dt {
-  font-family: var(--dato);
-  font-size: .62rem; letter-spacing: .14em;
-  text-transform: uppercase; color: var(--claro-2);
-  margin-bottom: .25rem;
-}
-.spec dd { margin: 0; font-family: var(--display); font-size: 1.5rem; line-height: 1; }
+/* ── los dos botones de la portada ──
+   El primero manda a armar el mensaje; el segundo, al dato que la gente
+   busca de verdad («¿dónde queda?»). 48 px de alto: por encima del
+   mínimo táctil de 44. */
+.portada__botones { display: flex; flex-wrap: wrap; gap: .8rem 1rem; margin: 0; }
 
 .antetitulo {
   font-family: var(--dato);
@@ -264,6 +283,39 @@ a { color: var(--merken); }
   background: repeating-linear-gradient(90deg,
     var(--quemada) 0 34px,
     rgba(28, 22, 20, .18) 34px 37px);
+}
+/* ── el muro de la portada, tabla por tabla ──
+   Un cerco cortado a mano no tiene tablas del mismo ancho ni rendijas
+   del mismo grueso. El ciclo son cuatro tablas de 31, 43, 25 y 46 px
+   con rendijas de 5, 4, 6 y 4: el ojo deja de leerlo como una trama
+   generada y lo lee como una pared. Y las rendijas van TRANSPARENTES
+   del todo (antes eran un velo al 18 %), asi que por ahi se ve la
+   foto de las brasas y no un dibujo. */
+.lamina--portada .tablas {
+  background: repeating-linear-gradient(90deg,
+    var(--quemada)  0     31px, transparent 31px  36px,
+    var(--quemada)  36px  79px, transparent 79px  83px,
+    var(--quemada)  83px 108px, transparent 108px 114px,
+    var(--quemada) 114px 160px, transparent 160px 164px,
+    var(--quemada) 164px 170px);
+}
+/* El canto de cada tabla: la luz de atras no sale limpia por la
+   rendija, se derrama sobre el filo de la madera. Son doce palabras de
+   CSS y son las que hacen que la pared se lea iluminada por detras en
+   vez de recortada. La mascara lo apaga sobre la columna del titular,
+   donde el texto tiene que leerse sobre fondo casi puro. */
+.canto {
+  position: absolute; inset: 0;
+  background: repeating-linear-gradient(90deg,
+    rgba(240,168,84,0)     0px, rgba(240,168,84,0)    26px,
+    rgba(240,168,84,.22)  33px, rgba(240,168,84,0)    41px,
+    rgba(240,168,84,0)    74px, rgba(240,168,84,.16)  81px,
+    rgba(240,168,84,0)    88px, rgba(240,168,84,0)   104px,
+    rgba(240,168,84,.22) 111px, rgba(240,168,84,0)   118px,
+    rgba(240,168,84,0)   155px, rgba(240,168,84,.16) 162px,
+    rgba(240,168,84,0)   169px, rgba(240,168,84,0)   170px);
+  -webkit-mask-image: linear-gradient(90deg, transparent 0%, transparent 20%, rgba(0,0,0,.45) 42%, #000 72%, #000 100%);
+          mask-image: linear-gradient(90deg, transparent 0%, transparent 20%, rgba(0,0,0,.45) 42%, #000 72%, #000 100%);
 }
 /* La lámina del fuego lleva la luz más abajo y más contenida: es la
    misma pared vista desde otro punto, no un fondo repetido. */
@@ -437,7 +489,7 @@ a { color: var(--merken); }
   padding: .5rem 0;
   -webkit-appearance: none; appearance: none;
 }
-.campo input::placeholder { color: #8C8078; }
+.campo input::placeholder { color: #A2968C; }   /* 5,4:1 sobre --quemada-2 */
 .campo input:focus { outline: none; border-bottom-color: var(--merken); border-bottom-width: 2px; }
 
 .resumen {
@@ -451,20 +503,32 @@ a { color: var(--merken); }
   padding: .9rem 1rem;
   margin: .6rem 0 0;
 }
+/* ── el botón ──
+   Relleno merkén con letra quemada: 5,8:1 medido (#E0755A contra
+   #1C1614). El de línea va con letra --crudo sobre el fondo de la
+   lámina: 14,6:1. 48 px de alto, por encima del mínimo táctil. */
 .boton {
-  grid-column: 1 / -1;
-  justify-self: start;
-  display: inline-block;
+  display: inline-flex; align-items: center; justify-content: center;
+  min-height: 48px;
   font-family: var(--cuerpo);
   font-weight: 700;
   font-size: .95rem;
   color: var(--quemada);
   background: var(--merken);
   text-decoration: none;
-  padding: .8rem 1.6rem;
+  padding: .7rem 1.6rem;
   border-radius: 2px;
+  border: 1px solid var(--merken);
+  transition: background .25s ease, color .25s ease, transform .25s ease;
 }
-.boton:hover { background: var(--crudo); }
+.boton:hover { background: var(--crudo); border-color: var(--crudo); transform: translateY(-2px); }
+.boton--linea {
+  background: transparent;
+  color: var(--crudo);
+  border-color: var(--claro-2);
+}
+.boton--linea:hover { background: transparent; color: var(--merken); border-color: var(--merken); }
+.form .boton { grid-column: 1 / -1; justify-self: start; }
 .reservar__nota { grid-column: 1 / -1; font-size: .86rem; color: var(--claro-2); margin: 0; }
 
 /* ═══════════ PARA EL DUEÑO ═══════════ */
@@ -505,15 +569,51 @@ a { color: var(--merken); }
 }
 .pie p { margin: 0; max-width: 66ch; }
 
-/* ═══════════ APARICIONES ═══════════ */
-.js .rev { opacity: 0; transform: translateY(16px); }
-.js .rev.ok { opacity: 1; transform: none; transition: opacity .7s ease, transform .7s ease; }
+/* ═══════════ APARICIONES ═══════════
+   Dos mecanismos, y hacen falta los dos:
+   · .rev sobre el CONTENEDOR, para las piezas sueltas. La clase la pone
+     main.js: si el JS no llega, no hay ninguna clase que esconda nada.
+   · .cascada para las grillas, donde los hijos entran escalonados. El
+     contenedor se NEUTRALIZA (si no, contenedor e hijos bajan a la vez
+     y el grupo entero se desplaza 42 px) y el retardo va por nth-child
+     en el CSS: un style="--i:3" en el HTML lo bloquea la CSP sin avisar.
+   Regla atómica: la opacidad salta corto y el desplazamiento dura largo.
+   ═══════════════════════════════════════════════════════════════════ */
+.js .rev    { opacity: 0; transform: translateY(16px); }
+.js .rev.ok { opacity: 1; transform: none; transition: opacity .35s ease-out, transform .7s cubic-bezier(.2,.7,.2,1); }
+
+.js .cascada.rev       { opacity: 1; transform: none; transition: none; }
+.js .cascada.rev > *   { opacity: 0; transform: translateY(24px); }
+.js .cascada.rev.ok > * {
+  opacity: 1; transform: none;
+  transition: opacity .35s ease-out, transform .7s cubic-bezier(.2,.7,.2,1);
+  transition-delay: calc(var(--i, 0) * 70ms);
+}
+.cascada > :nth-child(1) { --i: 0; }
+.cascada > :nth-child(2) { --i: 1; }
+.cascada > :nth-child(3) { --i: 2; }
+.cascada > :nth-child(4) { --i: 3; }
+.cascada > :nth-child(5) { --i: 4; }
+.cascada > :nth-child(6) { --i: 5; }
+
+/* La entrada de la portada no espera al scroll: ya está en pantalla. */
+.js .portada__texto > *  { opacity: 0; transform: translateY(14px); }
+.portada__texto.ok > *   { animation: entra .7s cubic-bezier(.2,.7,.2,1) forwards; }
+.portada__texto.ok > *:nth-child(2) { animation-delay: .08s; }
+.portada__texto.ok > *:nth-child(3) { animation-delay: .16s; }
+.portada__texto.ok > *:nth-child(4) { animation-delay: .24s; }
+@keyframes entra { to { opacity: 1; transform: none; } }
 
 @media (prefers-reduced-motion: reduce) {
   /* El brillo queda FIJO y tenue: la luz sigue estando entre las
      tablas, solo deja de latir. Esconderla apagaria el fuego, que es
      lo unico que esta pagina promete. */
   .js .brasa { animation: none; opacity: .78; }
+  /* Los reveals NO se desplazan, pero SI siguen fundiendo: un fundido
+     no es movimiento, un salto de 16 px si. */
+  .js .rev, .js .cascada.rev > * { transform: none; }
+  .js .portada__texto > * { animation: none; opacity: 1; transform: none; }
+  .boton:hover { transform: none; }
 }
 
 /* ══════════════════════════════════════════════════════════════════
@@ -561,12 +661,14 @@ a { color: var(--merken); }
   from { transform: scale(1.04) translate3d(0, 0, 0); }
   to   { transform: scale(1.11) translate3d(-1.8%, -1.2%, 0); }
 }
-.js .portada--foto .portada__foto { opacity: 0; }
-.js .portada--foto.ok .portada__foto { opacity: 1; transition: opacity 1.1s ease; }
-.js .portada.rev,
-.js .portada.rev.ok { opacity: 1; transform: none; transition: none; }
+/* La foto entra sola, con una animacion CSS y no con una clase que
+   ponga el JS. ESTE ERA EL BUG: antes decia «.js .portada__foto {
+   opacity: 0 }» y esperaba un .ok que main.js nunca ponia, asi que la
+   portada se veia negra en todos los navegadores con JavaScript. */
+.js .portada--foto .portada__foto { animation: aparece-foto 1.2s ease .12s both; }
+@keyframes aparece-foto { from { opacity: 0; } to { opacity: 1; } }
 @media (max-width: 860px) {
-  .portada--foto { padding-top: 36svh; }
+  .portada--foto { padding-top: min(36svh, 330px); }
   .portada__foto img {
     object-position: 50% 44%;
     -webkit-mask-image: linear-gradient(180deg, #000 0%, #000 30%, rgba(0,0,0,.34) 58%, transparent 78%);
@@ -579,7 +681,7 @@ a { color: var(--merken); }
 
 /* ── 2 · AURA DE COLOR ── */
 #ruta { position: relative; isolation: isolate; overflow: hidden; }
-.aura { position: absolute; z-index: -1; inset: -12% -8% auto -8%; height: 78%; pointer-events: none; }
+.aura { position: absolute; z-index: -1; inset: -14% -10% auto 24%; height: 86%; pointer-events: none; }
 .aura img {
   display: block; width: 100%; height: 100%; object-fit: cover;
   /* Acá el desenfoque ES el efecto: la foto deja de leerse y queda la luz. */
@@ -612,7 +714,7 @@ a { color: var(--merken); }
      aparece scroll horizontal por un segundo. */
   overflow: hidden;
 }
-.mitades__foto { position: relative; min-height: 62svh; overflow: hidden; }
+.mitades__foto { position: relative; min-height: min(62svh, 620px); overflow: hidden; }
 .mitades__foto img { display: block; width: 100%; height: 100%; object-fit: cover; object-position: 52% 50%; }
 .mitades__texto {
   padding: clamp(2.5rem, 6vw, 5rem) clamp(1.4rem, 4vw, 3.5rem);
@@ -640,12 +742,12 @@ a { color: var(--merken); }
 }
 @media (max-width: 780px) {
   .mitades { grid-template-columns: 1fr; }
-  .mitades__foto { min-height: 44svh; }
+  .mitades__foto { min-height: min(44svh, 380px); }
 }
 
 /* ── 4 · LA CITA A SANGRE ── */
 .cita {
-  position: relative; isolation: isolate; min-height: 70svh;
+  position: relative; isolation: isolate; min-height: min(70svh, 620px);
   display: flex; align-items: center; justify-content: center;
   padding: clamp(3rem, 9vw, 7rem) clamp(1.2rem, 5vw, 4rem);
   background: var(--quemada); overflow: hidden;
@@ -686,7 +788,7 @@ a { color: var(--merken); }
 
 /* ── 5 · LA TIRA ── */
 .tira { display: grid; grid-template-columns: repeat(3, 1fr); gap: 2px; background: var(--linea-osc); }
-.tira__pieza { margin: 0; overflow: hidden; height: 34svh; min-height: 220px; }
+.tira__pieza { margin: 0; overflow: hidden; height: min(34svh, 340px); min-height: 220px; }
 .tira__pieza img {
   display: block; width: 100%; height: 100%; object-fit: cover;
   transition: transform 1.1s cubic-bezier(.2,.7,.2,1);
@@ -694,22 +796,16 @@ a { color: var(--merken); }
 @media (hover: hover) and (pointer: fine) {
   .tira__pieza:hover img { transform: scale(1.05); }
 }
-.js .tira__pieza.rev { opacity: 0; transform: translateY(1.4rem); }
-.js .tira__pieza.rev.ok {
-  opacity: 1; transform: none;
-  transition: opacity .8s ease, transform .9s cubic-bezier(.2,.7,.2,1);
-}
-.js .tira__pieza.rev.ok:nth-child(2) { transition-delay: .1s; }
-.js .tira__pieza.rev.ok:nth-child(3) { transition-delay: .2s; }
+/* La tira entra escalonada con el sistema .cascada: la clase va en el
+   <section> y el retardo por nth-child, arriba. */
 @media (max-width: 700px) {
   .tira { grid-template-columns: 1fr 1fr; }
-  .tira__pieza:last-child { grid-column: 1 / -1; height: 28svh; }
+  .tira__pieza:last-child { grid-column: 1 / -1; height: min(28svh, 260px); }
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .js .portada--foto .portada__foto,
-  .js .mitades__texto.rev, .js .mitades__foto.rev,
-  .js .cita__texto.rev, .js .tira__pieza.rev { opacity: 1; transform: none; }
+  .js .portada--foto .portada__foto { animation: none; opacity: 1; }
+  .js .mitades__texto.rev, .js .mitades__foto.rev { transform: none; }
 }
 
 /* ── TAJO: LA FRANJA A SANGRE ──
@@ -719,13 +815,32 @@ a { color: var(--merken); }
 /* La clase es .tajo y no .banda ni .franja: hay demos que ya usan esos
    dos nombres para secciones propias, y chocaban. */
 .tajo {
-  position: relative; overflow: hidden;
-  height: clamp(180px, 30svh, 340px);
+  position: relative; overflow: hidden; isolation: isolate;
+  margin: 0;
+  height: clamp(240px, 34svh, 420px);
   background: var(--quemada-2);
 }
 .tajo img {
   display: block; width: 100%; height: 100%;
-  object-fit: cover; object-position: 50% 50%;
+  object-fit: cover; object-position: 50% 56%;
+}
+/* El velo ARRANCA EN ALFA 0 arriba: los dos tercios de arriba de la
+   foto quedan a foco completo y el color sube solo hasta donde hay
+   texto. Escrito en rgba literal —con var() dentro del degradado se
+   pierde el alfa y el velo tapa la foto de punta a punta. */
+.tajo__txt {
+  position: absolute; inset: auto 0 0 0; margin: 0;
+  padding: clamp(2.5rem, 8vw, 5rem) clamp(1.25rem, 5vw, 4rem) 1.6rem;
+  background: linear-gradient(180deg,
+      rgba(28,22,20,0) 0%, rgba(28,22,20,.72) 54%, rgba(28,22,20,.94) 100%);
+}
+/* #EFE7DA sobre rgba(28,22,20,.94) encima del peor caso (foto blanca):
+   el fondo compuesto queda en #201A18 y el ratio es 14,0:1. */
+.tajo__txt p {
+  margin: 0; max-width: 34rem;
+  color: var(--crudo);
+  font-family: var(--display); font-weight: 400;
+  font-size: clamp(1.05rem, 2.2vw, 1.5rem); line-height: 1.24;
 }
 @media (prefers-reduced-motion: no-preference) {
   .tajo img { animation: deriva-tajo 54s ease-in-out infinite alternate; }
@@ -734,11 +849,9 @@ a { color: var(--merken); }
   from { transform: scale(1.06) translate3d(-1.2%, 0, 0); }
   to   { transform: scale(1.12) translate3d(1.2%, -1.4%, 0); }
 }
-.js .tajo { opacity: 0; }
-.js .tajo.ok { opacity: 1; transition: opacity 1s ease; }
-@media (prefers-reduced-motion: reduce) {
-  .js .tajo { opacity: 1; }
-}
+/* El tajo aparece con el sistema .rev general (main.js le pone la
+   clase). Antes tenia su propio «.js .tajo { opacity: 0 }» sin nadie
+   que le pusiera el .ok: la franja no se veia nunca. */
 
 /* ── TELON: la foto detras de una seccion entera ──
    No es el aura. El aura va reventada a 64 px y se lee como mancha de
@@ -798,20 +911,321 @@ a { color: var(--merken); }
 @media (hover: hover) and (pointer: fine) {
   .mos__p:hover img { transform: scale(1.06); }
 }
-.js .mos__p { opacity: 0; transform: translateY(1.2rem); }
-.js .mos__p.ok {
-  opacity: 1; transform: none;
-  transition: opacity .8s ease, transform .9s cubic-bezier(.2,.7,.2,1);
-}
-.js .mos__p.ok:nth-child(2) { transition-delay: .06s; }
-.js .mos__p.ok:nth-child(3) { transition-delay: .12s; }
-.js .mos__p.ok:nth-child(4) { transition-delay: .18s; }
-.js .mos__p.ok:nth-child(5) { transition-delay: .24s; }
-.js .mos__p.ok:nth-child(6) { transition-delay: .30s; }
+/* El mosaico entra con .cascada (la clase va en .mos__grilla). Antes
+   tenia «.js .mos__p { opacity: 0 }» y ningun .ok: las seis fotos
+   estaban en la pagina y no se veian. */
 @media (max-width: 760px) {
   .mos__grilla { grid-template-columns: 1fr 1fr; }
   .mos__p:nth-child(1), .mos__p:nth-child(6) { grid-column: 1 / -1; }
 }
-@media (prefers-reduced-motion: reduce) {
-  .js .mos__p { opacity: 1; transform: none; }
+
+/* ══════════════════════════════════════════════════════════════════
+   CENIZA EN EL AIRE CALIENTE — el ambiente de la portada
+   ══════════════════════════════════════════════════════════════════
+   Esta demo NO lleva video de fondo (decision de Yordy: el video se
+   reserva para los negocios mejor valorados). El movimiento de portada
+   lo pone entonces el CSS, y tiene que respetar la regla de la pagina:
+   el fuego NO SE VE. Asi que no hay llamas dibujadas ni chispas
+   saltando: hay CENIZA subiendo en el aire caliente que sale por las
+   rendijas. Es lo que el fuego levanta, no el fuego.
+
+   Doce motas, cada una con su carril, su tamaño, su duracion y su
+   retardo puestos por nth-child. Nada de style="--x:14px": la CSP
+   bloquea el atributo style sin decir una palabra.
+   Con prefers-reduced-motion la ceniza no se dibuja (se apaga entera,
+   no se congela: doce puntos naranjas quietos serian suciedad).
+   ══════════════════════════════════════════════════════════════════ */
+.cenizas { position: absolute; inset: 0; z-index: 1; overflow: hidden; pointer-events: none; }
+.cenizas i {
+  position: absolute; bottom: -4%;
+  width: 3px; height: 3px; border-radius: 50%;
+  background: rgba(240, 168, 84, .9);
+  box-shadow: 0 0 7px 1px rgba(226, 122, 62, .5);
+  opacity: 0;
 }
+.js .cenizas i { animation: ceniza-sube var(--dur, 17s) linear var(--esp, 0s) infinite; }
+@keyframes ceniza-sube {
+  0%   { opacity: 0;   transform: translate3d(0, 0, 0) scale(.6); }
+  10%  { opacity: .85; }
+  65%  { opacity: .5;  }
+  100% { opacity: 0;   transform: translate3d(var(--x, 20px), -86svh, 0) scale(1.15); }
+}
+.cenizas i:nth-child(1)  { left: 34%; --dur: 19s; --esp: 0s;    --x:  22px; }
+.cenizas i:nth-child(2)  { left: 41%; --dur: 15s; --esp: 2.4s;  --x: -18px; width: 2px; height: 2px; }
+.cenizas i:nth-child(3)  { left: 48%; --dur: 22s; --esp: 5.1s;  --x:  34px; }
+.cenizas i:nth-child(4)  { left: 53%; --dur: 17s; --esp: 1.2s;  --x: -26px; width: 4px; height: 4px; }
+.cenizas i:nth-child(5)  { left: 59%; --dur: 20s; --esp: 7.6s;  --x:  16px; width: 2px; height: 2px; }
+.cenizas i:nth-child(6)  { left: 64%; --dur: 14s; --esp: 3.3s;  --x: -30px; }
+.cenizas i:nth-child(7)  { left: 69%; --dur: 24s; --esp: 9.2s;  --x:  28px; }
+.cenizas i:nth-child(8)  { left: 74%; --dur: 16s; --esp: 6.4s;  --x: -14px; width: 2px; height: 2px; }
+.cenizas i:nth-child(9)  { left: 79%; --dur: 21s; --esp: 11.5s; --x:  36px; width: 4px; height: 4px; }
+.cenizas i:nth-child(10) { left: 84%; --dur: 18s; --esp: 4.7s;  --x: -22px; }
+.cenizas i:nth-child(11) { left: 89%; --dur: 23s; --esp: 8.8s;  --x:  18px; width: 2px; height: 2px; }
+.cenizas i:nth-child(12) { left: 94%; --dur: 15s; --esp: 13.1s; --x: -24px; }
+@media (prefers-reduced-motion: reduce) { .cenizas { display: none; } }
+/* En pantalla angosta el texto ocupa el ancho entero: la ceniza que
+   caia sobre el titular se retira. */
+@media (max-width: 860px) { .cenizas i:nth-child(-n+4) { display: none; } }
+
+/* ══════════════════════════════════════════════════════════════════
+   LA BANDA DE CIFRAS
+   ══════════════════════════════════════════════════════════════════
+   Cuatro numeros en una fila. Dos son del negocio (los que se gano en
+   la cocina), el tercero es aritmetica de esta pagina y el cuarto es
+   LA HERIDA, con el color del merken para que sea el que se mire.
+   Solo cuenta el que costo verificar —las reseñas—; un contador que
+   sube el «4» de una lista se lee como truco.
+   Medido: --crudo sobre --quemada-2 = 12,8:1 · --merken sobre
+   --quemada-2 = 5,1:1 · --claro-2 sobre --quemada-2 = 7,7:1.
+   ══════════════════════════════════════════════════════════════════ */
+.cifras {
+  background: var(--quemada-2);
+  border-top: 1px solid var(--linea-osc);
+  border-bottom: 1px solid var(--linea-osc);
+  padding: clamp(2.2rem, 5vw, 3.4rem) clamp(1.25rem, 5vw, 4rem);
+}
+.cifras__lista {
+  list-style: none; margin: 0 auto; padding: 0;
+  max-width: 82rem;
+  display: grid; grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.8rem 2.4rem;
+}
+@media (min-width: 900px) { .cifras__lista { grid-template-columns: repeat(4, minmax(0, 1fr)); } }
+.cifras__lista li { border-top: 2px solid var(--linea-osc); padding-top: .9rem; }
+.cifras__lista b {
+  display: block;
+  font-family: var(--display); font-weight: 400;
+  font-size: clamp(2.1rem, 5vw, 3.2rem); line-height: 1;
+  color: var(--crudo);
+  font-variant-numeric: tabular-nums;
+  margin-bottom: .55rem;
+}
+.cifras__lista span {
+  display: block;
+  font-family: var(--dato);
+  font-size: .72rem; line-height: 1.55; letter-spacing: .02em;
+  color: var(--claro-2);
+}
+.cifras__herida { border-top-color: var(--merken); }
+.cifras__herida b { color: var(--merken); }
+.cifras__herida span { color: var(--crudo); }
+
+/* ══════════════════════════════════════════════════════════════════
+   LA SECCION CLARA — «tres palabras»
+   ══════════════════════════════════════════════════════════════════
+   La pagina es oscura de punta a punta, y una cadena de laminas
+   oscuras se lee como un tunel: el scroll se hace largo y el argumento
+   se pierde. Por eso a media pagina se abre UNA sola seccion de madera
+   cruda, y dentro lleva un tercer nivel de claridad —las fichas en
+   blanco puro sobre el hueso— para que no se lea como un bloque de
+   color.
+
+   Al invertir la luminancia hay que reescribir TODOS los grises: el
+   --claro-2 que sobre quemada da 9,6:1 aca daria 1,9:1. Van uno por
+   uno, incluido el fondo de la etiqueta del .ej.
+   Medido: --tinta sobre blanco 17,2:1 · --tinta-2 sobre blanco 8,4:1 y
+   sobre --crudo 6,9:1 · --merken-osc sobre --crudo 5,7:1.
+   ══════════════════════════════════════════════════════════════════ */
+.escala {
+  background: var(--crudo);
+  color: var(--tinta);
+  padding: clamp(3rem, 8vh, 5.5rem) clamp(1.25rem, 5vw, 4rem);
+}
+.escala__cols {
+  max-width: 82rem; margin: 0 auto;
+  display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.05fr);
+  gap: clamp(2rem, 4vw, 4rem); align-items: start;
+}
+.escala__ante {
+  font-family: var(--dato); font-size: .72rem; letter-spacing: .16em;
+  text-transform: uppercase; color: var(--merken-osc); margin: 0 0 .8rem;
+}
+.escala h2 {
+  font-size: clamp(1.8rem, 4.2vw, 2.9rem); line-height: 1.06;
+  color: var(--tinta); margin: 0 0 1.1rem;
+}
+.escala__entrada { color: var(--tinta-2); max-width: 44ch; margin: 0; }
+.escala__foto { margin: 1.8rem 0 0; }
+.escala__foto img {
+  width: 100%; height: clamp(150px, 20vw, 240px);
+  object-fit: cover; object-position: 50% 60%; border-radius: 4px;
+}
+.escala__foto figcaption {
+  font-family: var(--dato); font-size: .7rem; line-height: 1.7;
+  color: var(--tinta-2); margin-top: .7rem; max-width: 46ch;
+}
+.escala__fichas {
+  list-style: none; margin: 0; padding: 0;
+  display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1rem;
+}
+.fic {
+  background: #FFFFFF;
+  border-left: 4px solid var(--merken-osc);
+  border-radius: 6px;
+  padding: 1.1rem 1.2rem 1.2rem;
+}
+.fic--medio { border-left-color: var(--tinta); }
+.fic--humo  { border-left-style: dotted; }
+.fic__n {
+  font-family: var(--dato); font-size: .68rem; letter-spacing: .14em;
+  color: var(--merken-osc); margin: 0 0 .4rem;
+}
+.fic__t {
+  font-family: var(--display); font-weight: 400;
+  font-size: 1.35rem; line-height: 1.1; color: var(--tinta); margin: 0 0 .5rem;
+}
+.fic__d { font-size: .93rem; line-height: 1.6; color: var(--tinta-2); margin: 0; }
+.escala__nota {
+  max-width: 82rem; margin: clamp(1.8rem, 4vw, 2.6rem) auto 0;
+  color: var(--tinta-2); font-size: .93rem;
+}
+@media (max-width: 860px) {
+  .escala__cols { grid-template-columns: 1fr; }
+}
+@media (max-width: 520px) {
+  .escala__fichas { grid-template-columns: 1fr; }
+}
+
+/* ══════════════════════════════════════════════════════════════════
+   AVISAR QUE VAMOS — el formulario y la ficha de datos
+   ══════════════════════════════════════════════════════════════════
+   El formulario no manda nada a ninguna parte: arma el texto en
+   pantalla para copiarlo o leerlo por telefono. Sin backend, sin
+   fetch, sin connect-src que abrir. Y la ficha de datos de al lado
+   dice «Falta» donde falta, con la etiqueta que explica de quien
+   depende cada dato: es una lista de tareas disfrazada de ficha.
+   ══════════════════════════════════════════════════════════════════ */
+.avisar {
+  background: var(--quemada-2);
+  padding: clamp(3rem, 8vh, 5.5rem) clamp(1.25rem, 5vw, 4rem);
+  border-top: 1px solid var(--linea-osc);
+}
+.avisar__cols {
+  max-width: 82rem; margin: 0 auto;
+  display: grid; grid-template-columns: minmax(0, 1.05fr) minmax(0, .95fr);
+  gap: clamp(2rem, 4vw, 4rem); align-items: start;
+}
+.avisar h2 { font-size: clamp(1.8rem, 4.2vw, 2.9rem); line-height: 1.06; margin: 0 0 1.1rem; }
+.avisar .reservar { max-width: none; }
+
+/* La ficha: columna fija de 9 rem y filete por fila. Se lee como ficha
+   tecnica, no como tabla de contacto. */
+.datos { margin: 0; }
+.datos > div {
+  display: grid; grid-template-columns: 9rem minmax(0, 1fr);
+  gap: .35rem 1.2rem;
+  padding: .95rem 0;
+  border-bottom: 1px solid var(--linea-osc);
+}
+.datos > div:first-child { border-top: 1px solid var(--linea-osc); }
+.datos dt {
+  font-family: var(--dato); font-size: .7rem; letter-spacing: .1em;
+  text-transform: uppercase; color: var(--claro-2); align-self: center;
+}
+.datos dd { margin: 0; color: var(--crudo); font-size: .96rem; }
+@media (max-width: 860px) {
+  .avisar__cols { grid-template-columns: 1fr; }
+}
+@media (max-width: 460px) {
+  .datos > div { grid-template-columns: 1fr; }
+}
+
+/* ══════════════════════════════════════════════════════════════════
+   EL DATO DE EJEMPLO
+   ══════════════════════════════════════════════════════════════════
+   Todo lo que no esta verificado va marcado, y la marca es una pieza
+   de diseño, no una disculpa: caja punteada con una etiqueta que dice
+   QUE falta y DE QUIEN depende. El fondo de la etiqueta tapa la linea
+   punteada donde se cruza, como una etiqueta de plano tecnico — y por
+   eso cada seccion con otro fondo tiene que reescribirlo.
+   ══════════════════════════════════════════════════════════════════ */
+.ej {
+  position: relative;
+  border: 1px dashed rgba(224, 117, 90, .5);
+  border-radius: 4px;
+  padding: .55rem .7rem .45rem;
+}
+.ej::after {
+  content: attr(data-ejemplo);
+  position: absolute; top: -.62rem; right: .6rem;
+  font-family: var(--dato); font-size: .6rem; letter-spacing: .08em;
+  text-transform: uppercase;
+  color: var(--merken); background: var(--quemada-2);
+  padding: 0 .35rem;
+  white-space: nowrap; max-width: 92%; overflow: hidden; text-overflow: ellipsis;
+}
+/* La seccion clara tiene su propio juego: el acento oscuro y el fondo
+   de la etiqueta del color de ESA seccion. */
+.escala .ej { border-color: rgba(154, 58, 34, .45); }
+.escala .ej::after { color: var(--merken-osc); background: var(--crudo); }
+
+/* ══════════════════════════════════════════════════════════════════
+   WHATSAPP FLOTANTE
+   ══════════════════════════════════════════════════════════════════
+   Boton fijo abajo a la derecha, 56 px de alto (por encima de los 44
+   del minimo tactil). El verde de WhatsApp a proposito: se reconoce
+   sin leerlo. #07310F sobre #25D366 = 7,3:1 medido.
+
+   La direccion del truco importa: el boton se ve SIEMPRE por defecto y
+   el JS solo lo aparta mientras el visitante esta en la portada, para
+   no tapar el titular. Al reves —oculto por defecto, revelado por JS—
+   un fallo del script se lleva el CTA principal.
+
+   EL NUMERO: este local no tiene telefono publicado. Un WhatsApp
+   inventado manda a los clientes del cliente a un telefono ajeno, asi
+   que el boton lleva a #reservar, donde se arma el mensaje, y viene
+   rotulado como hueco. Cuando el local de el numero se cambia el href.
+   ══════════════════════════════════════════════════════════════════ */
+.wapp {
+  position: fixed;
+  right: max(1rem, env(safe-area-inset-right, 0px));
+  bottom: max(1rem, env(safe-area-inset-bottom, 0px));
+  z-index: 60;
+  display: inline-flex; align-items: center; gap: .55rem;
+  height: 56px; padding: 0 1.15rem 0 1rem;
+  border-radius: 999px;
+  background: #25D366; color: #07310F;
+  text-decoration: none;
+  font-family: var(--cuerpo); font-size: .95rem; font-weight: 700; line-height: 1;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, .38), 0 2px 6px rgba(0, 0, 0, .26);
+  transition: opacity .28s ease, transform .28s ease, box-shadow .18s ease;
+}
+.wapp__i { width: 22px; height: 22px; fill: currentColor; flex: 0 0 auto; }
+.wapp__falta {
+  font-family: var(--dato); font-size: .58rem; letter-spacing: .06em;
+  text-transform: uppercase;
+  border-left: 1px solid rgba(7, 49, 15, .4); padding-left: .55rem;
+}
+.wapp:hover { transform: translateY(-2px); box-shadow: 0 10px 26px rgba(0, 0, 0, .45); }
+.wapp--arriba { opacity: 0; transform: translateY(16px); pointer-events: none; }
+@media (max-width: 520px) {
+  .wapp { width: 56px; padding: 0; gap: 0; justify-content: center; }
+  .wapp__t, .wapp__falta { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); }
+}
+@media (prefers-reduced-motion: reduce) { .wapp:hover { transform: none; } }
+/* El pie deja sitio para que el boton no se le encime al deslinde. */
+.pie { padding-bottom: 6rem; }
+
+/* ── MAPA DE UBICACION ──────────────────────────────────────────────
+   Imagen propia con mosaicos de OpenStreetMap pegados: la CSP prohibe
+   pedir nada a un tercero, asi que un iframe de Google Maps quedaria en
+   blanco SIN dar un solo error. El "Como llegar" si es un enlace, y un
+   enlace no lo bloquea nada.
+   Los colores salen de currentColor a proposito: asi el bloque se adapta
+   a la paleta de cada demo sin conocerla y sin chocar con ella.
+   La atribucion a OpenStreetMap la exige su licencia (ODbL). */
+.mapa-sec { padding: clamp(2.5rem, 6vw, 4.5rem) 0; }
+.mapa { margin: 1.4rem 0 0; border: 1px solid; border-color: color-mix(in srgb, currentColor 22%, transparent); border-radius: 10px; overflow: hidden; }
+@supports not (color: color-mix(in srgb, red 50%, blue)) { .mapa { border-color: rgba(128, 128, 128, .35); } }
+.mapa img { display: block; width: 100%; height: auto; aspect-ratio: 16 / 10; object-fit: cover; }
+.mapa__pie {
+  display: flex; flex-wrap: wrap; align-items: center; gap: .4rem 1rem;
+  padding: .75rem .9rem;
+  font-size: .86em; line-height: 1.45;
+  border-top: 1px solid; border-top-color: color-mix(in srgb, currentColor 22%, transparent);
+}
+@supports not (color: color-mix(in srgb, red 50%, blue)) { .mapa__pie { border-top-color: rgba(128, 128, 128, .35); } }
+.mapa__pie b { font-weight: 700; }
+.mapa__ir { color: inherit; font-weight: 700; text-decoration: underline; min-height: 44px; display: inline-flex; align-items: center; }
+.mapa__cred { width: 100%; font-size: .84em; opacity: .8; }
+.mapa__cred a { color: inherit; }

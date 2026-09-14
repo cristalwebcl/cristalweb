@@ -1,0 +1,552 @@
+/* ══════════════════════════════════════════════════════════════════════
+   Veterinaria San Francisco de Asís II — Maipú
+   Demo de CristalWeb. CSS plano, sin build, sin librerías.
+
+   IDENTIDAD — «MAÑANA DE SOL»
+   Blanco cálido, un amarillo pálido de sol de mañana —plano, nunca a
+   rayas— y gris cálido para lo secundario.
+
+   LA REGLA DE ESTA HOJA: LA PIEZA FIRMA SE IMPRIME.
+   El carnet no es una tabla decorativa: tiene su propia hoja de
+   impresión (`@media print`) que apaga la página entera y deja sólo la
+   ficha, en negro sobre blanco, con las líneas para escribir a mano y
+   el teléfono en el encabezado. Es lo que reemplaza al «mándamelo por
+   WhatsApp» del prompt, porque el celular de esta clínica no se pudo
+   confirmar: una hoja que se imprime o se fotografía no necesita
+   backend, no necesita número y funciona igual con el JavaScript
+   apagado. Novedad en el registro: ninguna demo tenía hasta hoy una
+   hoja de impresión propia.
+
+   EL AMARILLO. `#F2E3B0` es 46° con 72 % de saturación y 82 % de
+   luminosidad: un sol pálido de mañana, no un amarillo de aviso. Se
+   usa como SUPERFICIE —bandas y la hoja del carnet— y sobre él se lee
+   en tinta, nunca en gris: el gris `#5C5749` da 5,5:1 sobre el sol y
+   no llega. El acento legible sobre el blanco es el dorado
+   `#6E5506` (45° s89 l25). Deslinde con los amarillos del registro,
+   que son todos de MEDIA luminosidad y hacen de acento chico
+   (`#F2C230` l57, `#E9B21C` l51, `#F5C518` l53, `#D9C21F` l49): éste
+   vive treinta puntos más arriba y ocupa superficie. Y no va a rayas,
+   que es lo que hacen la 209 y la 23.
+
+   DESLINDE de rubro, la quinta veterinaria de la tanda: la 10 es clara
+   y de agenda, la 22 es pasillo de noche con ámbar de urgencia, la 28
+   es manta de lana (beige y caoba) y la 29 va azul lavado. Ésta es la
+   única con amarillo y la única que se lleva impresa. Ojo con las
+   homónimas del registro —las «vet san francisco» de Angol y
+   Pitrufquén—: aquéllas son del sur y de otra paleta; ésta no comparte
+   con ninguna ni fondo ni acento.
+
+   TRÍO TIPOGRÁFICO
+   · Display: Sorts Mill Goudy — 0 usos, y no hay ninguna otra Goudy en
+     el registro. Revival del Goudy Old Style: humanista, cálida y con
+     CIFRAS ANTIGUAS (las que suben y bajan de la línea base), que es
+     justo lo que le da a la portada aire de documento viejo y no de
+     panel. Deslinde con la 28, la otra veterinaria con serif de libro:
+     aquélla usa Gentium Book Plus, de contraste parejo y cifras
+     alineadas; ésta es calígrafa y sus números bailan.
+   · Cuerpo: Instrument Sans ×7 — grotesca limpia y de buena altura de
+     x; al lado de una Goudy no compite.
+   · Dato: Spline Sans Mono ×8 — cifras tabulares para las fechas del
+     carnet, el teléfono y el horario. En una hoja que se llena a mano,
+     las columnas tienen que quedar derechas.
+
+   CONTRASTES MEDIDOS sobre esta página:
+     tinta  #2B2822 sobre luz  #FDFBF5 ..... 14,2:1
+     medio  #5C5749 sobre luz  #FDFBF5 ......  6,9:1
+     dorado #6E5506 sobre luz  #FDFBF5 ......  6,8:1
+     tinta  #2B2822 sobre sol  #F2E3B0 ..... 11,5:1
+     luz    #FDFBF5 sobre tinta #2B2822 .... 14,2:1
+   ══════════════════════════════════════════════════════════════════════ */
+
+:root {
+  --luz: #FDFBF5;
+  --luz-2: #F7F2E6;
+  --sol: #F2E3B0;      /* superficie, no texto */
+  --sol-2: #E8D48C;    /* filos y reglas */
+  --dorado: #6E5506;   /* el acento legible sobre blanco */
+  --tinta: #2B2822;
+  --medio: #5C5749;
+
+  --ancho: 1120px;
+  --display: 'Sorts Mill Goudy', Georgia, 'Times New Roman', serif;
+  --cuerpo: 'Instrument Sans', system-ui, -apple-system, 'Segoe UI', sans-serif;
+  --mono: 'Spline Sans Mono', ui-monospace, 'Consolas', monospace;
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+
+html { scroll-behavior: smooth; }
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+
+body {
+  margin: 0;
+  background: var(--luz);
+  color: var(--tinta);
+  font-family: var(--cuerpo);
+  font-size: clamp(1rem, .96rem + .22vw, 1.09rem);
+  line-height: 1.66;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* height: auto o el atributo height del <img> gana y aspect-ratio se
+   ignora en silencio: las fotos salen larguísimas. */
+img { max-width: 100%; height: auto; display: block; }
+[hidden] { display: none; }
+
+a { color: var(--dorado); }
+a:focus-visible { outline: 3px solid var(--dorado); outline-offset: 3px; }
+
+.ancho { width: min(100% - 2.5rem, var(--ancho)); margin-inline: auto; }
+
+.rotulo {
+  margin: 0 0 .7rem;
+  font-family: var(--mono);
+  font-size: .73rem; letter-spacing: .15em; text-transform: uppercase;
+  color: var(--dorado);
+}
+
+.titulo {
+  font-family: var(--display); font-weight: 400;
+  font-size: clamp(2.1rem, 1.35rem + 3.2vw, 3.5rem);
+  line-height: 1.1; margin: 0 0 1.1rem;
+}
+.titulo--chico { font-size: clamp(1.6rem, 1.2rem + 1.8vw, 2.4rem); }
+
+.entrada { max-width: 64ch; color: var(--medio); margin: 0 0 2.2rem; }
+.entrada b { color: var(--tinta); }
+.mini { font-size: .87rem; color: var(--medio); }
+.dato { font-family: var(--mono); font-variant-numeric: tabular-nums; }
+
+.ej { border-bottom: 1px dotted var(--medio); cursor: help; }
+.ej::after {
+  content: ' (ej.)';
+  font-family: var(--mono); font-size: .7em;
+  color: var(--medio); letter-spacing: .02em;
+}
+
+/* ── Botones ──────────────────────────────────────────────────────── */
+.bt {
+  display: inline-flex; align-items: center; justify-content: center;
+  padding: .88rem 1.6rem;
+  border: 2px solid transparent; border-radius: 4px;
+  text-decoration: none;
+  font-family: var(--cuerpo); font-weight: 600;
+  font-size: 1rem;
+  transition: background-color .2s ease, border-color .2s ease, color .2s ease;
+}
+.bt--lleno { background: var(--tinta); color: var(--luz); }
+.bt--lleno:hover, .bt--lleno:focus-visible { background: var(--dorado); }
+.bt--linea { border-color: var(--sol-2); color: var(--tinta); }
+.bt--linea:hover, .bt--linea:focus-visible { border-color: var(--dorado); color: var(--dorado); }
+
+/* ── Banda de propuesta ──────────────────────────────────────────── */
+.propuesta { background: var(--tinta); color: var(--luz); padding: .95rem 0; }
+.propuesta__in { display: grid; gap: .35rem; }
+.propuesta__q {
+  margin: 0;
+  font-family: var(--mono); font-size: .71rem;
+  letter-spacing: .1em; text-transform: uppercase; color: var(--sol);
+}
+.propuesta__d { margin: 0; font-size: .93rem; color: #CFC8B8; max-width: 92ch; }
+.propuesta__d b { color: var(--luz); }
+.propuesta .dato { color: var(--luz); font-size: .9em; }
+
+/* ── Cabecera ─────────────────────────────────────────────────────
+   Va ARRIBA de la portada en el flujo, no encima. ── */
+.cab {
+  position: sticky; top: 0; z-index: 50;
+  background: rgba(253, 251, 245, .95);
+  border-bottom: 2px solid var(--sol);
+  transition: transform .3s ease;
+}
+@supports (backdrop-filter: blur(8px)) {
+  .cab { backdrop-filter: blur(8px); background: rgba(253, 251, 245, .85); }
+}
+.js .cab--oculta { transform: translateY(-105%); }
+.cab__in { display: flex; align-items: center; justify-content: space-between; gap: 1.4rem; min-height: 64px; padding: .5rem 0; }
+.cab__marca { display: inline-flex; align-items: center; gap: .75rem; text-decoration: none; color: var(--tinta); }
+/* La marca es el sol de la mañana: un disco plano, sin rayos. */
+.marca__s { width: 20px; height: 20px; border-radius: 50%; flex: none; background: var(--sol); border: 2px solid var(--dorado); }
+.cab__txt { display: flex; flex-direction: column; font-family: var(--display); font-weight: 400; font-size: 1.14rem; line-height: 1.1; }
+.cab__sub {
+  font-family: var(--mono); font-size: .62rem;
+  letter-spacing: .12em; text-transform: uppercase;
+  color: var(--medio); margin-top: .22rem;
+}
+.cab__nav { display: flex; align-items: center; gap: 1.5rem; }
+.cab__nav a { color: var(--medio); text-decoration: none; font-size: .92rem; white-space: nowrap; }
+.cab__nav a:hover { color: var(--tinta); }
+.cab__tel {
+  font-family: var(--mono); font-variant-numeric: tabular-nums;
+  color: var(--tinta) !important;
+  background: var(--sol);
+  border-radius: 999px; padding: .42rem .95rem;
+}
+.cab__tel:hover { background: var(--sol-2); }
+@media (max-width: 940px) { .cab__nav a:not(.cab__tel) { display: none; } }
+
+/* ── Portada ──────────────────────────────────────────────────────── */
+.portada { padding: clamp(3rem, 7vw, 6rem) 0 clamp(3rem, 6vw, 5rem); }
+.portada__in { display: grid; grid-template-columns: 1.05fr .95fr; gap: clamp(2rem, 5vw, 4rem); align-items: center; }
+.portada__h1 {
+  font-family: var(--display); font-weight: 400;
+  font-size: clamp(2.6rem, 1.6rem + 4.4vw, 4.6rem);
+  line-height: 1.04; margin: 0 0 1.3rem;
+}
+.portada__p { max-width: 46ch; color: var(--medio); margin: 0 0 1.9rem; }
+.portada__p b { color: var(--tinta); }
+.portada__bts { display: flex; flex-wrap: wrap; gap: .8rem; margin-bottom: 1.8rem; }
+.portada__cif { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: 2.4rem; }
+.portada__cif li { border-left: 3px solid var(--sol); padding-left: .9rem; }
+.cif__n { display: block; font-family: var(--display); font-size: 2.2rem; line-height: 1; }
+.cif__u {
+  display: block; margin-top: .3rem;
+  font-family: var(--mono); font-size: .65rem;
+  letter-spacing: .13em; text-transform: uppercase; color: var(--medio);
+}
+
+/* ── ESCENA: la balanza recibe el peso y se equilibra ──────────────
+   Va en HTML y no en SVG: son cinco rectángulos y una rotación, y así
+   no hace falta pelear con transform-box. Sin reposo: el peso cae una
+   vez, la viga oscila dos veces cada vez menos y queda derecha. ── */
+.escena { display: flex; flex-direction: column; align-items: center; gap: 1rem; }
+.bal { position: relative; width: min(100%, 330px); height: 210px; }
+.bal__base {
+  position: absolute; left: 50%; bottom: 8px;
+  width: 140px; height: 11px; border-radius: 6px;
+  transform: translateX(-50%); background: var(--tinta);
+}
+.bal__col {
+  position: absolute; left: 50%; bottom: 16px;
+  width: 9px; height: 118px; border-radius: 5px;
+  transform: translateX(-50%); background: var(--tinta);
+}
+.bal__viga {
+  position: absolute; left: 50%; top: 68px;
+  width: 250px; height: 9px; border-radius: 5px;
+  background: var(--tinta);
+  transform: translateX(-50%) rotate(0deg);
+  transform-origin: center;
+}
+.bal__plato {
+  position: absolute; top: 9px;
+  width: 74px; height: 26px;
+  border: 3px solid var(--tinta); border-top: 0;
+  border-radius: 0 0 38px 38px;
+  background: var(--sol);
+}
+.bal__plato--i { left: -34px; }
+.bal__plato--d { right: -34px; }
+.bal__peso {
+  position: absolute; left: calc(50% - 122px); top: 40px;
+  width: 34px; height: 34px; border-radius: 50%;
+  background: var(--dorado);
+}
+
+/* Sin JavaScript: el peso ya está puesto y la balanza, derecha. */
+.js .escena .bal__peso { opacity: 0; transform: translateY(-54px); }
+.js .escena--va .bal__peso { animation: bal-cae .5s cubic-bezier(.5, 0, .8, 1) forwards; }
+.js .escena--va .bal__viga { animation: bal-osc 1.2s ease-out .5s forwards; }
+@keyframes bal-cae { to { opacity: 1; transform: translateY(0); } }
+@keyframes bal-osc {
+  0%   { transform: translateX(-50%) rotate(0deg); }
+  22%  { transform: translateX(-50%) rotate(-4deg); }
+  52%  { transform: translateX(-50%) rotate(2.4deg); }
+  78%  { transform: translateX(-50%) rotate(-1deg); }
+  100% { transform: translateX(-50%) rotate(0deg); }
+}
+
+.escena__pie {
+  margin: 0; text-align: center;
+  font-family: var(--mono); font-size: .67rem;
+  letter-spacing: .14em; text-transform: uppercase; color: var(--medio);
+}
+@media (max-width: 880px) {
+  .portada__in { grid-template-columns: 1fr; }
+  .escena { order: -1; margin-bottom: 1rem; }
+  .bal { width: min(80%, 270px); height: 180px; }
+}
+
+/* ── PIEZA FIRMA: el carnet al día ────────────────────────────────── */
+.carnet { background: var(--luz-2); padding: clamp(3rem, 6vw, 5rem) 0; border-top: 2px solid var(--sol); border-bottom: 2px solid var(--sol); }
+
+.hoja {
+  background: var(--luz);
+  border: 2px solid var(--tinta);
+  border-radius: 4px;
+  padding: clamp(1.4rem, 3vw, 2.2rem);
+  max-width: 52rem;
+}
+.hoja__cab { border-bottom: 3px solid var(--sol); padding-bottom: .9rem; margin-bottom: 1.4rem; }
+.hoja__t { margin: 0; font-family: var(--display); font-size: clamp(1.6rem, 1.2rem + 1.6vw, 2.2rem); line-height: 1; }
+.hoja__d { margin: .35rem 0 0; font-family: var(--mono); font-size: .74rem; color: var(--medio); }
+
+.hoja__datos { display: grid; grid-template-columns: repeat(2, 1fr); gap: .2rem 1.6rem; margin-bottom: 1.6rem; }
+.hoja__datos p { display: flex; align-items: baseline; gap: .6rem; margin: 0; padding: .5rem 0; }
+.hoja__datos span:first-child {
+  font-family: var(--mono); font-size: .7rem;
+  letter-spacing: .1em; text-transform: uppercase; color: var(--medio);
+  white-space: nowrap;
+}
+.lin { flex: 1; border-bottom: 1px dashed var(--sol-2); min-height: 1.1rem; display: block; }
+
+.hoja__tab { width: 100%; border-collapse: collapse; }
+.hoja__tab th, .hoja__tab td { text-align: left; padding: .7rem .5rem; vertical-align: bottom; }
+.hoja__tab thead th {
+  font-family: var(--mono); font-weight: 400; font-size: .68rem;
+  letter-spacing: .11em; text-transform: uppercase; color: var(--medio);
+  border-bottom: 2px solid var(--tinta);
+}
+.hoja__tab tbody th { font-weight: 600; font-size: .96rem; width: 42%; }
+.hoja__tab tbody tr { border-bottom: 1px solid var(--sol-2); }
+.hoja__tab .sub { display: block; font-weight: 400; font-size: .78rem; color: var(--medio); }
+.hoja__tab td { width: 29%; }
+.hoja__pie { margin: 1.4rem 0 0; padding-top: 1rem; border-top: 1px solid var(--sol-2); font-size: .86rem; color: var(--medio); }
+@media (max-width: 620px) {
+  .hoja__datos { grid-template-columns: 1fr; }
+  .hoja__tab tbody th { width: 46%; font-size: .9rem; }
+  .hoja__tab th, .hoja__tab td { padding: .6rem .3rem; }
+}
+
+.cta {
+  margin-top: clamp(1.8rem, 3.5vw, 2.6rem);
+  display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between;
+  gap: 1.2rem;
+  padding: clamp(1.2rem, 2.5vw, 1.7rem);
+  background: var(--sol); border-radius: 4px;
+  max-width: 52rem;
+}
+.cta__t { margin: 0; font-family: var(--display); font-size: clamp(1.15rem, .95rem + 1vw, 1.6rem); line-height: 1.2; color: var(--tinta); }
+
+/* ── Tajo ─────────────────────────────────────────────────────────── */
+.tajo { margin: 0; position: relative; }
+.tajo img { width: 100%; aspect-ratio: 2560 / 1180; object-fit: cover; }
+.tajo__c {
+  position: absolute; left: 0; right: 0; bottom: 0;
+  padding: 3rem 1.25rem 1.4rem;
+  text-align: center; color: #FFFFFF;
+  font-family: var(--display);
+  font-size: clamp(1.05rem, .82rem + 1.1vw, 1.6rem);
+  background: linear-gradient(to top, rgba(43, 40, 34, .88) 0%, rgba(43, 40, 34, 0) 100%);
+}
+@media (max-width: 640px) { .tajo img { aspect-ratio: 4 / 3; } }
+
+/* ── Servicios ────────────────────────────────────────────────────── */
+.serv { padding: clamp(3rem, 6vw, 5rem) 0 clamp(1.5rem, 3vw, 2.5rem); }
+.fichas { list-style: none; margin: 0 0 1.2rem; padding: 0; display: flex; flex-wrap: wrap; gap: .6rem; }
+.fichas li { padding: .55rem 1rem; background: var(--sol); border-radius: 999px; font-size: .94rem; }
+
+/* ── Mitades ──────────────────────────────────────────────────────── */
+.mitades {
+  display: grid; grid-template-columns: 1fr 1fr;
+  align-items: center; gap: clamp(2rem, 5vw, 4.5rem);
+  width: min(100% - 2.5rem, var(--ancho));
+  margin: clamp(3rem, 6vw, 5rem) auto;
+}
+.mitades__foto { margin: 0; }
+.mitades__foto img { width: 100%; aspect-ratio: 4 / 3; object-fit: cover; border-radius: 4px; }
+.mitades__texto > p { color: var(--medio); }
+.huecos { display: grid; gap: .7rem; margin: 1.6rem 0 1rem; }
+.hueco { display: flex; align-items: center; gap: .9rem; }
+.hueco__m { width: 46px; height: 46px; border-radius: 50%; flex: none; border: 1px dashed var(--sol-2); background: var(--luz-2); }
+.hueco p { margin: 0; font-size: .92rem; }
+@media (max-width: 880px) { .mitades { grid-template-columns: 1fr; } }
+
+/* ── Cita ─────────────────────────────────────────────────────────── */
+.cita { margin: 0; position: relative; }
+.cita img { width: 100%; aspect-ratio: 2200 / 1240; object-fit: cover; }
+.cita__q {
+  position: absolute; inset: 0;
+  display: flex; align-items: center; justify-content: center;
+  margin: 0; padding: 1.5rem;
+  background: rgba(43, 40, 34, .74);
+}
+.cita__q p {
+  margin: 0; max-width: 34ch; color: #FFFFFF;
+  font-family: var(--display);
+  font-size: clamp(1.15rem, .9rem + 1.8vw, 2.2rem);
+  line-height: 1.24; text-align: center;
+}
+@media (max-width: 640px) { .cita img { aspect-ratio: 3 / 4; } }
+
+/* ── Dónde está (con telón) ───────────────────────────────────────── */
+.con-telon { position: relative; overflow: hidden; padding: clamp(3rem, 6vw, 5rem) 0; }
+.telon { position: absolute; inset: 0; z-index: 0; }
+.telon img { width: 100%; height: 100%; object-fit: cover; }
+/* Velo del color DE la página. */
+.telon::after {
+  content: ''; position: absolute; inset: 0;
+  background: linear-gradient(to right, rgba(253, 251, 245, .97) 0%, rgba(253, 251, 245, .92) 56%, rgba(253, 251, 245, .74) 100%);
+}
+.con-telon > .ancho { position: relative; z-index: 1; }
+.datos { list-style: none; margin: 0; padding: 0; max-width: 46rem; }
+.datos li { display: grid; grid-template-columns: 12rem 1fr; gap: 1rem; padding: .85rem 0; border-top: 1px solid var(--sol-2); }
+.datos li:last-child { border-bottom: 1px solid var(--sol-2); }
+.datos__r {
+  font-family: var(--mono); font-size: .68rem;
+  letter-spacing: .12em; text-transform: uppercase; color: var(--medio); padding-top: .25rem;
+}
+.datos__v a { text-decoration: none; }
+@media (max-width: 620px) { .datos li { grid-template-columns: 1fr; gap: .25rem; } }
+
+/* ── Mosaico ──────────────────────────────────────────────────────── */
+.mos { padding: clamp(2.5rem, 5vw, 4rem) 0 clamp(2rem, 4vw, 3rem); }
+.mos__grilla {
+  display: grid; grid-template-columns: repeat(3, 1fr); gap: .55rem;
+  width: min(100% - 2.5rem, 1280px); margin-inline: auto;
+}
+.mos__p { margin: 0; overflow: hidden; border-radius: 4px; }
+.mos__p img {
+  width: 100%; aspect-ratio: 4 / 3; object-fit: cover;
+  transition: transform .5s ease;
+}
+.mos__p:hover img { transform: scale(1.03); }
+.mos__pie { margin: 1.4rem auto 0; font-size: .86rem; color: var(--medio); max-width: 76ch; }
+.mos__pie b { color: var(--tinta); }
+@media (max-width: 900px) { .mos__grilla { grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 520px) { .mos__grilla { grid-template-columns: 1fr; } }
+
+/* ── Contacto ─────────────────────────────────────────────────────── */
+.contacto { padding: clamp(3rem, 6vw, 5rem) 0; border-top: 2px solid var(--sol); }
+.contacto__grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1.6rem; }
+.contacto__b { border-top: 3px solid var(--sol-2); padding-top: 1rem; }
+.contacto__b:first-child { border-top-color: var(--dorado); }
+.contacto__r {
+  margin: 0 0 .4rem;
+  font-family: var(--mono); font-size: .66rem;
+  letter-spacing: .13em; text-transform: uppercase; color: var(--medio);
+}
+.contacto__v { margin: 0 0 .5rem; font-size: 1.04rem; }
+.contacto__v a { text-decoration: none; }
+@media (max-width: 900px) { .contacto__grid { grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 480px) { .contacto__grid { grid-template-columns: 1fr; } }
+
+/* ── Para el dueño ────────────────────────────────────────────────── */
+.dueno { padding: clamp(3rem, 6vw, 5rem) 0; background: var(--luz-2); border-top: 2px solid var(--sol); }
+.dueno__cols { display: grid; grid-template-columns: 1fr 1fr; gap: clamp(1.6rem, 4vw, 3rem); }
+.dueno__cols h3 { margin: 0 0 .7rem; font-family: var(--display); font-weight: 400; font-size: 1.5rem; color: var(--dorado); }
+.dueno__cols p { margin: 0 0 1rem; color: var(--medio); font-size: .97rem; }
+.dueno__cols b { color: var(--tinta); }
+.dueno .dato { color: var(--tinta); font-size: .92em; }
+.dueno__pie { margin: 1.8rem 0 0; font-size: .85rem; color: var(--medio); }
+.dueno__pie b { color: var(--tinta); }
+@media (max-width: 820px) { .dueno__cols { grid-template-columns: 1fr; } }
+
+/* ── Pie ──────────────────────────────────────────────────────────── */
+.pie { padding: 2rem 0 6rem; border-top: 2px solid var(--sol); }
+.pie__in p { margin: 0 0 .35rem; font-size: .85rem; color: var(--medio); }
+.pie__cw { font-family: var(--mono); font-size: .73rem !important; letter-spacing: .03em; }
+
+/* ── BOTON FLOTANTE DE CONTACTO ───────────────────────────────────
+   56 px de alto, por encima del mínimo táctil de 44. El teléfono
+   publicado es de red FIJA: el botón llama. Se ve SIEMPRE por defecto;
+   el JS sólo lo aparta sobre la portada. ── */
+.flota {
+  position: fixed;
+  right: max(1rem, env(safe-area-inset-right, 0px));
+  bottom: max(1rem, env(safe-area-inset-bottom, 0px));
+  z-index: 60;
+  display: inline-flex; align-items: center; gap: .55rem;
+  height: 56px; padding: 0 1.2rem 0 1rem;
+  border-radius: 999px;
+  text-decoration: none;
+  font-family: var(--cuerpo); font-weight: 700;
+  font-size: .98rem; line-height: 1;
+  background: var(--tinta); color: var(--luz);
+  border: 3px solid var(--sol);
+  transition: opacity .28s ease, transform .28s ease, background-color .18s ease;
+}
+.flota__i { width: 25px; height: 25px; fill: currentColor; flex: none; }
+.flota:hover, .flota:focus-visible { transform: translateY(-2px); background: var(--dorado); }
+.js .flota--arriba { opacity: 0; transform: translateY(14px) scale(.94); pointer-events: none; }
+
+@media (max-width: 520px) {
+  .flota { width: 56px; padding: 0; justify-content: center; }
+  .flota__t { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
+}
+
+/* ── Apariciones ──────────────────────────────────────────────────── */
+.js .rev > * { opacity: 0; transform: translateY(12px); }
+.js .rev.rev--on > * { opacity: 1; transform: none; transition: opacity .5s ease, transform .5s ease; }
+.js .rev.rev--on > *:nth-child(2) { transition-delay: .07s; }
+.js .rev.rev--on > *:nth-child(3) { transition-delay: .14s; }
+.js .rev.rev--on > *:nth-child(4) { transition-delay: .21s; }
+.js .rev.rev--on > *:nth-child(5) { transition-delay: .28s; }
+.js .rev.rev--on > *:nth-child(6) { transition-delay: .35s; }
+
+/* ── Menos movimiento ─────────────────────────────────────────────── */
+@media (prefers-reduced-motion: reduce) {
+  .js .escena .bal__peso { opacity: 1; transform: none; animation: none; }
+  .js .escena--va .bal__viga { animation: none; }
+  .mos__p:hover img { transform: none; }
+  .flota:hover, .flota:focus-visible { transform: none; }
+  .js .flota--arriba { transform: none; }
+  .js .rev > * { opacity: 1; transform: none; }
+}
+
+/* ══════════════════════════════════════════════════════════════════
+   LA HOJA DE IMPRESIÓN — la pieza firma sale de la pantalla
+   Se apaga la página entera y queda sólo el carnet, en negro sobre
+   blanco, con las líneas para escribir. Esto es lo que reemplaza al
+   «mándalo por WhatsApp»: no necesita backend, no necesita número y
+   funciona con el JavaScript apagado.
+   ══════════════════════════════════════════════════════════════════ */
+@media print {
+  .propuesta, .cab, .portada, .tajo, .serv, .mitades, .cita,
+  .donde, .mos, .contacto, .dueno, .pie, .flota, .cta,
+  .carnet .rotulo, .carnet .titulo, .carnet .entrada { display: none !important; }
+
+  html, body { background: #FFFFFF !important; color: #000000 !important; }
+  .carnet { background: #FFFFFF !important; border: 0 !important; padding: 0 !important; }
+  .carnet .ancho { width: 100% !important; }
+
+  .hoja {
+    background: #FFFFFF !important;
+    border: 1.5pt solid #000000 !important;
+    border-radius: 0 !important;
+    max-width: none !important;
+    padding: 10pt 12pt !important;
+  }
+  .hoja__t { font-size: 22pt; }
+  .hoja__d, .hoja__datos span:first-child, .hoja__tab thead th { color: #000000 !important; }
+  .hoja__cab { border-bottom: 2pt solid #000000 !important; }
+  .hoja__tab tbody tr { border-bottom: .6pt solid #666666 !important; }
+  .lin { border-bottom: .6pt dashed #666666 !important; }
+  .hoja__tab .sub, .hoja__pie { color: #333333 !important; }
+  .hoja__pie { border-top: .6pt solid #666666 !important; }
+  a[href]::after { content: '' !important; }
+  @page { margin: 14mm; }
+}
+
+/* ── MAPA DE UBICACION ──────────────────────────────────────────────
+   Imagen propia con mosaicos de OpenStreetMap pegados: la CSP prohibe
+   pedir nada a un tercero, asi que un iframe de Google Maps quedaria en
+   blanco SIN dar un solo error. El "Como llegar" si es un enlace, y un
+   enlace no lo bloquea nada.
+   Los colores salen de currentColor a proposito: asi el bloque se adapta
+   a la paleta de cada demo sin conocerla y sin chocar con ella.
+   La atribucion a OpenStreetMap la exige su licencia (ODbL). */
+.mapa-sec { padding: clamp(2.5rem, 6vw, 4.5rem) 0; }
+.mapa {
+  /* Casi siempre el mapa queda como hijo DIRECTO de la seccion, fuera del
+     contenedor .ancho: sin este ancho maximo se va de borde a borde y el
+     pie del mapa arranca pegado al filo de la pantalla. Se usa la variable
+     de la demo si existe, y 1100 px si no. */
+  width: min(100% - 2.5rem, var(--ancho, 1100px));
+  margin: 1.4rem auto 0;
+  border: 1px solid; border-color: color-mix(in srgb, currentColor 22%, transparent);
+  border-radius: 10px; overflow: hidden;
+}
+@supports not (color: color-mix(in srgb, red 50%, blue)) { .mapa { border-color: rgba(128, 128, 128, .35); } }
+.mapa img { display: block; width: 100%; height: auto; aspect-ratio: 16 / 10; object-fit: cover; }
+.mapa__pie {
+  display: flex; flex-wrap: wrap; align-items: center; gap: .4rem 1rem;
+  padding: .75rem .9rem;
+  font-size: .86em; line-height: 1.45;
+  border-top: 1px solid; border-top-color: color-mix(in srgb, currentColor 22%, transparent);
+}
+@supports not (color: color-mix(in srgb, red 50%, blue)) { .mapa__pie { border-top-color: rgba(128, 128, 128, .35); } }
+.mapa__pie b { font-weight: 700; }
+.mapa__ir { color: inherit; font-weight: 700; text-decoration: underline; min-height: 44px; display: inline-flex; align-items: center; }
+.mapa__cred { width: 100%; font-size: .84em; opacity: .8; }
+.mapa__cred a { color: inherit; }

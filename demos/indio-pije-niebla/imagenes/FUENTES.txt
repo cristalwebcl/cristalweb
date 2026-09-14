@@ -65,3 +65,10 @@ Se calibró midiendo el píxel más claro de la imagen bajo el titular
 —la espuma de la ola, 225 de 255— y componiendo el velo sobre él: con
 .60 de --mar el titular queda en 4,34:1, holgado sobre el mínimo de 3:1
 que pide el texto grande. Medido sobre la página viva, no estimado.
+
+MAPA DE UBICACION — mapa-01.jpg
+  768 x 768 · zoom 14 · centro -39.8704858, -73.400475
+  Mosaicos de OpenStreetMap pegados en una sola imagen, con el marcador
+  dibujado encima. Datos (c) OpenStreetMap contributors, licencia ODbL:
+  la atribucion tiene que ir VISIBLE junto al mapa, en el pie de la figura.
+  https://www.openstreetmap.org/copyright

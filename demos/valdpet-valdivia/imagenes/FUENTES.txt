@@ -1,0 +1,22 @@
+FUENTES DE LAS IMAGENES - Valdpet Rehecha el 13-09-2026 (presentacion antes que texto). Fotos de REFERENCIA de bancos libres: ninguna es del local; las verdaderas las tiene que mandar el negocio. 
+port-01.jpg  <-  pozo-p-val-gotas\009.jpg  |  pexels (Pexels License)  |  autor: Сергей  Рокантен  |  https://www.pexels.com/es-es/foto/ventana-lluviosa-con-gotas-de-agua-en-el-cristal-36203419/  |  consulta: "rain window drops"
+hund1-01.jpg  <-  pozo-p-dra-rehab\008.jpg  |  pexels (Pexels License)  |  autor: Eduardo López  |  https://www.pexels.com/es-es/foto/retrato-de-cachorro-16618527/  |  consulta: "dog rehabilitation"
+hund2-01.jpg  <-  pozo-p-val-collar\008.jpg  |  pexels (Pexels License)  |  autor: Eduardo López  |  https://www.pexels.com/es-es/foto/perro-con-collar-16620454/  |  consulta: "dog collar"
+hund3-01.jpg  <-  pozo-p-sfr-jeringa\009.jpg  |  pexels (Pexels License)  |  autor: cottonbro studio  |  https://www.pexels.com/es-es/foto/enfoque-selectivo-de-la-jeringa-7582551/  |  consulta: "syringe vaccine"
+hund4-01.jpg  <-  pozo-p-val-rasca\010.jpg  |  pexels (Pexels License)  |  autor: PubPro  |  https://www.pexels.com/es-es/foto/perro-marron-adorable-sentado-en-cesped-verde-35480874/  |  consulta: "dog scratching"
+hund5-01.jpg  <-  pozo-p-val-gato\007.jpg  |  pexels (Pexels License)  |  autor: RDNE Stock project  |  https://www.pexels.com/es-es/foto/mano-animal-mono-gato-7516106/  |  consulta: "cat grooming"
+hund6-01.jpg  <-  pozo-p-val-mojado\001.jpg  |  pexels (Pexels License)  |  autor: Jacson David Vinueza Itas  |  https://www.pexels.com/es-es/foto/golden-retriever-mojado-sentado-en-el-pavimento-29178697/  |  consulta: "wet dog"
+banda-01.jpg  <-  pozo-p-val-lluvia\012.jpg  |  pexels (Pexels License)  |  autor: Bor Jinson  |  https://www.pexels.com/es-es/foto/acercamiento-de-hojas-verdes-cubiertas-de-rocio-en-la-naturaleza-37226252/  |  consulta: "dog rain"
+cita-01.jpg  <-  pozo-p-val-toalla\012.jpg  |  pexels (Pexels License)  |  autor: Regina Tommasi  |  https://www.pexels.com/es-es/foto/perro-durmiendo-tranquilamente-sobre-una-manta-acogedora-30179132/  |  consulta: "dog bath towel"
+mos1-01.jpg  <-  pozo-p-val-mojado\010.jpg  |  pexels (Pexels License)  |  autor: Mike Art 🎥 Visual Creator | Photography and Video 📸  |  https://www.pexels.com/es-es/foto/border-collie-jugando-con-un-palo-en-el-agua-38420658/  |  consulta: "wet dog"
+mos2-01.jpg  <-  pozo-p-val-gotas\011.jpg  |  pexels (Pexels License)  |  autor: Jan van der Wolf  |  https://www.pexels.com/es-es/foto/gotas-de-lluvia-en-la-ventana-con-vista-de-edificio-borroso-29508053/  |  consulta: "rain window drops"
+mos3-01.jpg  <-  pozo-p-val-impermeable\004.png  |  pexels (Pexels License)  |  autor: German Suarez  |  https://www.pexels.com/es-es/foto/perro-canino-fotografia-de-animales-enfoque-selectivo-27118136/  |  consulta: "dog raincoat"
+mos4-01.jpg  <-  pozo-p-val-gato\011.jpg  |  pexels (Pexels License)  |  autor: 大 董  |  https://www.pexels.com/es-es/foto/gato-maine-coon-de-color-jengibre-sentado-junto-a-una-ventana-iluminada-por-el-sol-38793414/  |  consulta: "cat grooming"
+mos5-01.jpg  <-  pozo-p-val-collar\012.jpg  |  pexels (Pexels License)  |  autor: Mike Art 🎥 Visual Creator | Photography and Video 📸  |  https://www.pexels.com/es-es/foto/perro-adorable-en-la-costa-de-asturias-39031882/  |  consulta: "dog collar"
+mos6-01.jpg  <-  pozo-p-val-impermeable\003.jpg  |  pexels (Pexels License)  |  autor: Kevin Villavicencio Hernandez  |  https://www.pexels.com/es-es/foto/un-perro-tumbado-en-el-suelo-de-un-jardin-18146047/  |  consulta: "dog raincoat"
+
+BRUMA (bruma-pag-0N.png y bruma-osc-0N.png, 30x20): las MISMAS fotos, recortadas a 3:2, reducidas y
+recoloreadas con C:\devs\demos\hacer-bruma.ps1 (clara >= 0,68 de luminancia / oscura <= 0,05). No suman fuentes.
+    pagina: hund1-01.jpg, hund2-01.jpg, hund5-01.jpg, mos2-01.jpg, hund6-01.jpg   |   oscuras: cita-01.jpg, port-01.jpg, hund6-01.jpg
+
+MAPA: iframe de Google Maps (embed publico, sin clave). No hay imagen de mapa.

@@ -1,0 +1,22 @@
+FUENTES DE LAS IMAGENES - Loren Rehecha el 13-09-2026 (presentacion antes que texto). Fotos de REFERENCIA de bancos libres: ninguna es del local; las verdaderas las tiene que mandar el negocio. 
+port-01.jpg  <-  pozo-p-lor-cielo\007.jpg  |  pexels (Pexels License)  |  autor: Ricardo Olvera  |  https://www.pexels.com/es-es/foto/naturaleza-cielo-blanco-nube-17149026/  |  consulta: "blue sky clouds"
+hund1-01.jpg  <-  pozo-p-lor-invierno\002.jpg  |  pexels (Pexels License)  |  autor: Alberto Calleja  |  https://www.pexels.com/es-es/foto/resfriado-frio-nieve-nevar-20696400/  |  consulta: "dog snow winter"
+hund2-01.jpg  <-  pozo-p-lor-sol\006.jpg  |  pexels (Pexels License)  |  autor: 大 董  |  https://www.pexels.com/es-es/foto/gato-maine-coon-de-color-jengibre-sentado-junto-a-una-ventana-iluminada-por-el-sol-38793414/  |  consulta: "cat window sunlight"
+hund3-01.jpg  <-  pozo-p-lor-primavera\012.jpg  |  pexels (Pexels License)  |  autor: Виктория Билан  |  https://www.pexels.com/es-es/foto/perro-feliz-relajandose-al-aire-libre-con-flores-32192792/  |  consulta: "dog spring flowers"
+hund4-01.jpg  <-  pozo-p-lor-primavera\006.jpg  |  pexels (Pexels License)  |  autor: Simona Kidrič  |  https://www.pexels.com/es-es/foto/foto-de-primer-plano-de-perro-marron-de-pelo-corto-mirando-hacia-otro-lado-2607546/  |  consulta: "dog spring flowers"
+hund5-01.jpg  <-  pozo-p-lor-sombra\011.jpg  |  pexels (Pexels License)  |  autor: Jordan Heinz  |  https://www.pexels.com/es-es/foto/un-terrier-cairn-se-relaja-en-un-parque-de-minnesota-38227248/  |  consulta: "dog shade tree"
+hund6-01.jpg  <-  pozo-p-lor-abrigo\011.jpg  |  pexels (Pexels License)  |  autor: María Celeste Vallejos  |  https://www.pexels.com/es-es/foto/adorable-chihuahua-con-un-elegante-sueter-relajandose-en-el-interior-33792069/  |  consulta: "dog sweater"
+banda-01.jpg  <-  pozo-p-lor-otono\002.jpg  |  pexels (Pexels License)  |  autor: Aleix Plana  |  https://www.pexels.com/es-es/foto/bosque-animal-perro-otono-14600626/  |  consulta: "dog autumn leaves"
+cita-01.jpg  <-  pozo-p-lor-sol\002.jpg  |  pexels (Pexels License)  |  autor: Elizardo Rodriguez  |  https://www.pexels.com/es-es/foto/mascota-mono-suelo-gato-22820793/  |  consulta: "cat window sunlight"
+mos1-01.jpg  <-  pozo-p-lor-verano\001.jpg  |  pexels (Pexels License)  |  autor: José Manuel Ramírez Brenis  |  https://www.pexels.com/es-es/foto/jugando-30160746/  |  consulta: "dog summer beach"
+mos2-01.jpg  <-  pozo-p-lor-otono\012.jpg  |  pexels (Pexels License)  |  autor: Jennifer Gaete  |  https://www.pexels.com/es-es/foto/hoja-de-otono-vibrante-sobre-una-superficie-de-madera-rustica-32710235/  |  consulta: "dog autumn leaves"
+mos3-01.jpg  <-  pozo-p-lor-invierno\004.jpg  |  pexels (Pexels License)  |  autor: Alberto Calleja  |  https://www.pexels.com/es-es/foto/perro-en-la-nieve-20696399/  |  consulta: "dog snow winter"
+mos4-01.jpg  <-  pozo-p-lor-primavera\009.jpg  |  pexels (Pexels License)  |  autor: Pixabay  |  https://www.pexels.com/es-es/foto/perro-sentado-en-el-campo-261077/  |  consulta: "dog spring flowers"
+mos5-01.jpg  <-  pozo-p-lor-abrigo\007.png  |  pexels (Pexels License)  |  autor: German Suarez  |  https://www.pexels.com/es-es/foto/perro-canino-fotografia-de-animales-enfoque-selectivo-27118136/  |  consulta: "dog sweater"
+mos6-01.jpg  <-  pozo-p-lor-sombra\002.jpg  |  pexels (Pexels License)  |  autor: Ceci DGondeles  |  https://www.pexels.com/es-es/foto/animal-perro-mascota-arbol-12050840/  |  consulta: "dog shade tree"
+
+BRUMA (bruma-pag-0N.png y bruma-osc-0N.png, 30x20): las MISMAS fotos, recortadas a 3:2, reducidas y
+recoloreadas con C:\devs\demos\hacer-bruma.ps1 (clara >= 0,68 de luminancia / oscura <= 0,05). No suman fuentes.
+    pagina: port-01.jpg, banda-01.jpg, mos1-01.jpg, hund2-01.jpg, cita-01.jpg   |   oscuras: port-01.jpg, cita-01.jpg, banda-01.jpg
+
+MAPA: iframe de Google Maps (embed publico, sin clave). No hay imagen de mapa.

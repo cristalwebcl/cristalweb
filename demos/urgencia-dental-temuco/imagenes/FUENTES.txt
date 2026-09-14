@@ -1,0 +1,22 @@
+FUENTES DE LAS IMAGENES - Urgencia Dental Temuco Rehecha el 13-09-2026 (presentacion antes que texto). Fotos de REFERENCIA de bancos libres: ninguna es del local; las verdaderas las tiene que mandar el negocio. 
+port-01.jpg  <-  pozo-p-urg-sillon\011.jpg  |  pexels (Pexels License)  |  autor: Pavel Danilyuk  |  https://www.pexels.com/es-es/foto/azul-asiento-tiro-vertical-motor-dental-6809652/  |  consulta: "dentist chair"
+hund1-01.jpg  <-  pozo-p-urg-instrumental\009.jpg  |  pexels (Pexels License)  |  autor: Elizabeth  Tamara  |  https://www.pexels.com/es-es/foto/mesa-tecnologia-salud-tratamiento-17300988/  |  consulta: "dental instruments"
+hund2-01.jpg  <-  pozo-p-urg-rx\010.jpg  |  pexels (Pexels License)  |  autor: Cedric Fauntleroy  |  https://www.pexels.com/es-es/foto/manos-ipad-dientes-tableta-digital-4270367/  |  consulta: "dental x-ray"
+hund3-01.jpg  <-  pozo-p-urg-instrumental\004.jpg  |  pexels (Pexels License)  |  autor: Cedric Fauntleroy  |  https://www.pexels.com/es-es/foto/cuidado-dental-odontologia-herramientas-dentales-de-cerca-4269365/  |  consulta: "dental instruments"
+hund4-01.jpg  <-  pozo-p-urg-rx\004.jpg  |  pexels (Pexels License)  |  autor: cottonbro studio  |  https://www.pexels.com/es-es/foto/tecnologia-ordenador-clinica-dispositivo-6501862/  |  consulta: "dental x-ray"
+hund5-01.jpg  <-  pozo-p-urg-diente\001.jpg  |  pexels (Pexels License)  |  autor: Gaspar Osorio  |  https://www.pexels.com/es-es/foto/oficina-clinica-doctor-dientes-15771802/  |  consulta: "tooth model"
+hund6-01.jpg  <-  pozo-p-urg-lampara\006.jpg  |  pexels (Pexels License)  |  autor: Polina Zimmerman  |  https://www.pexels.com/es-es/foto/naturaleza-muerta-tiro-vertical-equipo-dental-de-cerca-4687149/  |  consulta: "dental lamp"
+banda-01.jpg  <-  pozo-p-urg-edificio\012.jpg  |  pexels (Pexels License)  |  autor: Damir K  |  https://www.pexels.com/es-es/foto/edificio-de-oficinas-moderno-con-ventanas-reflectantes-37896342/  |  consulta: "office building windows"
+cita-01.jpg  <-  pozo-p-urg-espera\009.jpg  |  pexels (Pexels License)  |  autor: FROET  |  https://www.pexels.com/es-es/foto/oficina-sala-de-espera-negocio-asiento-5869284/  |  consulta: "waiting room chairs"
+mos1-01.jpg  <-  pozo-p-urg-lampara\002.jpg  |  pexels (Pexels License)  |  autor: Daniel Frank  |  https://www.pexels.com/es-es/foto/equipo-dental-blanco-cerca-de-la-pared-305567/  |  consulta: "dental lamp"
+mos2-01.jpg  <-  pozo-p-urg-instrumental\002.jpg  |  pexels (Pexels License)  |  autor: cottonbro studio  |  https://www.pexels.com/es-es/foto/reflejo-reflexion-medicina-herramientas-6528784/  |  consulta: "dental instruments"
+mos3-01.jpg  <-  pozo-p-urg-espera\012.jpg  |  pexels (Pexels License)  |  autor: Aukje Leermakers  |  https://www.pexels.com/es-es/foto/wachtruimte-34688847/  |  consulta: "waiting room chairs"
+mos4-01.jpg  <-  pozo-p-urg-rx\011.jpg  |  pexels (Pexels License)  |  autor: cottonbro studio  |  https://www.pexels.com/es-es/foto/clinica-equipo-dental-rayos-x-6501868/  |  consulta: "dental x-ray"
+mos5-01.jpg  <-  pozo-p-urg-lampara\008.jpg  |  pexels (Pexels License)  |  autor: Pavel Danilyuk  |  https://www.pexels.com/es-es/foto/oficina-equipo-dentista-cuidado-de-la-salud-6812463/  |  consulta: "dental lamp"
+mos6-01.jpg  <-  pozo-p-urg-instrumental\008.jpg  |  pexels (Pexels License)  |  autor: https://kaboompics.com/  |  https://www.pexels.com/es-es/foto/tecnologia-maquina-dental-equipo-medico-6627668/  |  consulta: "dental instruments"
+
+BRUMA (bruma-pag-0N.png y bruma-osc-0N.png, 30x20): las MISMAS fotos, recortadas a 3:2, reducidas y
+recoloreadas con C:\devs\demos\hacer-bruma.ps1 (clara >= 0,68 de luminancia / oscura <= 0,05). No suman fuentes.
+    pagina: port-01.jpg, banda-01.jpg, cita-01.jpg, hund2-01.jpg, hund4-01.jpg, mos3-01.jpg, mos5-01.jpg, hund6-01.jpg   |   oscuras: banda-01.jpg, cita-01.jpg, port-01.jpg
+
+MAPA: iframe de Google Maps (embed publico, sin clave). No hay imagen de mapa.

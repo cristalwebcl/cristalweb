@@ -53,6 +53,20 @@
    un ingrediente, es de un SERVICIO — y tiene una tercera columna que
    ningun otro J tiene: la de honestidad (incluido / se cotiza
    aparte). Esa columna es toda la pieza.
+
+   ─────────────────────────────────────────────────────────────────
+   PASADA PREMIUM · 09-09-2026
+   Identidad intacta: mismo trio, misma paleta, misma pinza, mismo
+   satinado. Lo que se sumo es volumen y argumento, que era lo que
+   faltaba: banda de cifras con la herida adentro, la segunda pieza
+   del rubro salud (que traer antes de venir, con telon propio), dos
+   franjas a sangre con frase, ficha de datos con lo que falta
+   marcado, mosaico de seis a diez piezas y el boton flotante de
+   WhatsApp.
+   ESTA DEMO NO LLEVA VIDEO — decision de Yordy: el clip se reserva
+   para los negocios mejor valorados. El ambiente lo sostienen el
+   satinado, las derivas lentisimas de las fotos y las apariciones.
+   ─────────────────────────────────────────────────────────────────
    ══════════════════════════════════════════════════════════════════ */
 
 :root {
@@ -62,7 +76,12 @@
   --quirofano:   #3E6E63;   /* 5,6:1 sobre blanco */
   --quirofano-2: #2F544C;   /* fondo de la seccion oscura */
   --quirofano-3: #24413B;
-  --quiro-cl:    #9FCBC0;   /* sobre el fondo oscuro */
+  --quiro-cl:    #9FCBC0;   /* 6,2:1 sobre --quirofano-3; 4,7:1 sobre --quirofano-2 */
+  --quiro-cl2:   #E8F1EE;   /* secundario de la seccion CON telon encima:
+                               con la foto al .12 el fondo se aclara hasta
+                               (70,102,95) en el peor caso y ahi --quiro-cl
+                               caeria a 3,2:1. Este da 4,9:1 en ese mismo
+                               peor caso y 7,3:1 sobre el fondo limpio. */
   --tinta:       #1F2422;
   --tinta-2:     #545C58;   /* 6,4:1 sobre blanco */
   --linea:       #DCE2DE;
@@ -71,6 +90,11 @@
   --display: 'Saira Semi Condensed', system-ui, sans-serif;
   --cuerpo:  'Encode Sans', system-ui, -apple-system, 'Segoe UI', sans-serif;
   --dato:    'Nanum Gothic Coding', ui-monospace, 'Consolas', monospace;
+
+  /* Curva con rebote corto: entra, pasa un pelo y vuelve. Sobreimpulso
+     del 4 % a mitad del recorrido — se degrada solo donde linear() no
+     exista. Se usa nada mas en la entrada de la portada. */
+  --muelle: linear(0, .32 14%, .68 26%, .92 38%, 1.04 50%, 1.01 64%, .99 78%, 1);
 }
 
 *, *::before, *::after { box-sizing: border-box; }
@@ -205,24 +229,58 @@ a { color: var(--quirofano); }
 }
 .portada__texto { position: relative; z-index: 2; max-width: min(92vw, 44rem); }
 
-/* ── EL SATINADO QUE RECORRE ── */
+/* ── LA ENTRADA DE LA PORTADA ──
+   No espera al scroll: la portada ya esta en pantalla. Las cinco piezas
+   entran escalonadas cada 70 ms, asi que la ultima arranca a los 0,28 s
+   — por debajo del techo de 0,4 s de la casa.
+   `forwards` y NUNCA `both`: con `both` la animacion pisa el estado
+   anterior y el rotulo parpadea antes de empezar. */
+.js .portada__texto > * { opacity: 0; transform: translateY(14px); }
+.portada__texto.ok > * { animation: entra .6s var(--muelle) forwards; }
+.portada__texto.ok > *:nth-child(2) { animation-delay: .07s; }
+.portada__texto.ok > *:nth-child(3) { animation-delay: .14s; }
+.portada__texto.ok > *:nth-child(4) { animation-delay: .21s; }
+.portada__texto.ok > *:nth-child(5) { animation-delay: .28s; }
+@keyframes entra { to { opacity: 1; transform: none; } }
+
+/* ── EL SATINADO QUE RECORRE, CON EL POLVO ADENTRO ──
+   La banda de luz cruza el fondo entero de lado a lado, lentisima. Lo
+   que se sumo en la pasada del 10-09-2026 es el POLVO: dos capas de
+   motas finisimas que viajan DENTRO de la banda, como el polvo que solo
+   se ve cuando le da la luz.
+
+   Va todo en el mismo elemento a proposito. La casa manda un solo bucle
+   infinito por pantalla, y aca el polvo no es un segundo movimiento: es
+   la misma banda, con textura. Si el polvo fuera su propia capa
+   animada, en la portada habria tres cosas moviendose (banda, motas y
+   la respiracion de la foto) y eso ya se lee como salvapantallas.
+
+   La mascara apaga las motas contra los dos bordes de la banda: sin
+   ella se veria un rectangulo de puntos entrando por la izquierda.
+   Reduced-motion: sin banda y sin polvo. */
 .satinado {
   position: absolute;
   top: 0; bottom: 0;
-  left: -30%;
-  width: 28%;
+  left: -34%;
+  width: 34%;
   z-index: 1; pointer-events: none;
-  background: linear-gradient(100deg,
-    rgba(62, 110, 99, 0),
-    rgba(62, 110, 99, .07) 46%,
-    rgba(62, 110, 99, 0));
+  background-image:
+    radial-gradient(circle at 32% 24%, rgba(62, 110, 99, .30) 0 1.5px, rgba(62, 110, 99, 0) 2.1px),
+    radial-gradient(circle at 74% 66%, rgba(62, 110, 99, .20) 0 1.1px, rgba(62, 110, 99, 0) 1.7px),
+    linear-gradient(100deg,
+      rgba(62, 110, 99, 0),
+      rgba(62, 110, 99, .10) 46%,
+      rgba(62, 110, 99, 0));
+  background-size: 119px 157px, 71px 93px, 100% 100%;
+  -webkit-mask-image: linear-gradient(100deg, transparent 0%, rgba(0,0,0,.9) 40%, rgba(0,0,0,.9) 60%, transparent 100%);
+          mask-image: linear-gradient(100deg, transparent 0%, rgba(0,0,0,.9) 40%, rgba(0,0,0,.9) 60%, transparent 100%);
   transform: skewX(-8deg);
 }
 .js .satinado { animation: cruza 58s linear infinite; }
 /* Una pasada por minuto. A esa velocidad no se ve moverse: se nota
    que la pagina no esta muerta y nada mas. */
 @keyframes cruza {
-  0%   { left: -30%; }
+  0%   { left: -34%; }
   100% { left: 118%; }
 }
 
@@ -241,7 +299,37 @@ a { color: var(--quirofano); }
   font-size: clamp(1rem, 1.9vw, 1.16rem);
   color: var(--tinta-2);
   max-width: min(92vw, 36rem);
-  margin-bottom: 2.2rem;
+  margin-bottom: 1.8rem;
+}
+
+/* ── LOS DOS BOTONES DE LA PORTADA ──
+   48 px de alto (por encima de los 44 del minimo tactil) y la sombra
+   del color del acento con extension negativa: no se lee como un
+   rectangulo gris debajo, se lee como el boton levantandose. */
+.portada__botones {
+  display: flex; flex-wrap: wrap; gap: .8rem 1rem;
+  margin: 0 0 2.2rem;
+}
+.boton {
+  display: inline-flex; align-items: center; justify-content: center;
+  min-height: 48px; padding: .6rem 1.5rem;
+  border-radius: 999px;
+  background: var(--quirofano);   /* blanco encima: 5,8:1 */
+  color: #FFFFFF;
+  font-family: var(--dato); font-size: .92rem; line-height: 1.2;
+  text-decoration: none;
+  border: 1px solid var(--quirofano);
+  box-shadow: 0 10px 30px -14px rgba(62, 110, 99, .85);
+}
+.boton:hover { background: var(--quirofano-2); border-color: var(--quirofano-2); }
+.boton--linea {
+  background: transparent; color: var(--tinta);
+  border-color: var(--linea); box-shadow: none;
+}
+.boton--linea:hover { background: transparent; color: var(--quirofano); border-color: var(--quirofano); }
+.js .boton { transition: background .25s ease, border-color .25s ease, transform .25s ease, box-shadow .25s ease; }
+@media (hover: hover) and (pointer: fine) {
+  .boton:hover { transform: translateY(-2px); }
 }
 .specs { display: flex; flex-wrap: wrap; gap: 1.4rem 2.4rem; margin: 0; }
 .spec dt {
@@ -254,6 +342,37 @@ a { color: var(--quirofano); }
 .dd--tel { font-family: var(--dato) !important; font-size: 1.05rem !important; }
 .dd--tel a { text-decoration: none; }
 .dd--tel a:hover { text-decoration: underline; }
+
+/* ═══════════ LAS CIFRAS ═══════════
+   Banda oscura pegada bajo la portada: corta el blanco antes de que la
+   pagina se lea como un documento. Las cuatro cifras van con el MISMO
+   formato a proposito — la ultima, el 0, es la herida, y sola en otro
+   tamano se leeria como reproche.
+   Contraste medido sobre #24413B: los numeros en blanco, 11,1:1; los
+   rotulos en --quiro-cl, 6,2:1. */
+.cifras {
+  background: var(--quirofano-3);
+  color: #fff;
+  padding: clamp(2rem, 5vh, 3.2rem) clamp(1.25rem, 5vw, 4rem);
+}
+.cifras__lista {
+  list-style: none; margin: 0; padding: 0;
+  display: grid; gap: 1.6rem 2.5rem;
+  grid-template-columns: repeat(auto-fit, minmax(11rem, 1fr));
+  max-width: 82rem; margin-inline: auto;
+}
+.cifras__lista li { display: flex; flex-direction: column; gap: .3rem; }
+.cifras__lista b {
+  font-family: var(--display); font-weight: 600;
+  font-size: clamp(2.4rem, 6vw, 3.6rem); line-height: 1;
+  font-variant-numeric: tabular-nums;
+  color: #fff;
+}
+.cifras__lista span {
+  font-family: var(--dato);
+  font-size: .74rem; letter-spacing: .1em; text-transform: uppercase;
+  color: var(--quiro-cl); line-height: 1.5;
+}
 
 /* ═══════════ CUÁNTO CUESTA ═══════════ */
 .cuanto {
@@ -340,7 +459,19 @@ a { color: var(--quirofano); }
   max-width: min(100%, 46rem);
 }
 .firma em { font-style: italic; color: var(--tinta); }
-.firma--claro { color: var(--quiro-cl); }
+.firma--claro { color: var(--quiro-cl2); }
+
+/* Nota de deslinde del rubro salud: obligatoria y pegada bajo la pieza
+   firma. Filete de color en un solo lado, nunca caja completa. */
+.nota-salud {
+  margin: 1.6rem 0 0;
+  padding: .1rem 0 .1rem .9rem;
+  border-left: 3px solid var(--quirofano);
+  font-family: var(--dato);
+  font-size: .8rem; line-height: 1.6;
+  color: var(--tinta-2);
+  max-width: 46rem;
+}
 
 /* ═══════════ QUÉ INCLUYE LA CONSULTA (J) ═══════════ */
 .consulta {
@@ -392,6 +523,51 @@ a { color: var(--quirofano); }
 .sp__d { margin: 0; font-size: .93rem; color: var(--quiro-cl); }
 @media (max-width: 54rem) { .sp { grid-template-columns: 1fr; } }
 
+/* ═══════════ ANTES DE VENIR — SECCIÓN OSCURA CON TELÓN ═══════════
+   Segunda banda oscura de la pagina y la unica con foto detras. Todos
+   los grises de la paleta clara estan reescritos a mano: --tinta-2
+   sobre este fondo daria 1,3:1.
+   El telon va al .12 (no al .15 del de arriba) porque encima hay texto
+   corrido: con la foto mas presente el fondo se aclara y el secundario
+   se cae de AA. Por eso el cuerpo usa --quiro-cl2 y no --quiro-cl. */
+.antes {
+  background: var(--quirofano-2);
+  color: #fff;
+  padding: clamp(3.5rem, 10vh, 7rem) clamp(1.25rem, 5vw, 4rem);
+}
+.antes__cuerpo { max-width: min(100%, 48rem); }
+.antes h2 { font-size: clamp(2rem, 5.4vw, 3.4rem); line-height: 1.02; margin-bottom: 1.1rem; }
+.antes .entrada { color: var(--quiro-cl2); margin-bottom: 1.4rem; }
+.antes .marca-ejemplo { margin-bottom: 1.8rem; }
+/* Overrides de la seccion con telon, uno por uno: el rotulo, la marca de
+   ejemplo y su filete. Saltarse uno deja un gris que no pasa AA. */
+.antes .antetitulo--claro { color: var(--quiro-cl2); }
+.antes .marca-ejemplo::before { color: var(--quiro-cl2); border-left-color: var(--quiro-cl2); }
+
+.momentos { list-style: none; margin: 0 0 1.8rem; padding: 0; }
+.mm {
+  display: grid;
+  grid-template-columns: 3rem minmax(0, 1fr);
+  gap: .4rem 1.2rem;
+  padding: 1.5rem 0;
+  border-top: 1px solid var(--linea-osc);
+}
+.mm:last-child { border-bottom: 1px solid var(--linea-osc); }
+/* El numero hueco: relleno del fondo y contorno claro. Se lee como
+   grabado. El auditor de contraste da falso positivo acá porque mide el
+   relleno; lo que se ve es el trazo, a 4,7:1 sobre #2F544C. */
+.mm__n {
+  margin: 0; padding-top: .15rem;
+  font-family: var(--display); font-weight: 600;
+  font-size: 1.9rem; line-height: 1;
+  color: var(--quirofano-2);
+  -webkit-text-stroke: 1.4px var(--quiro-cl);
+  font-variant-numeric: tabular-nums;
+}
+.mm h3 { font-size: clamp(1.2rem, 2.8vw, 1.55rem); margin: 0 0 .5rem; color: #fff; }
+.mm p { margin: 0; font-size: .96rem; color: var(--quiro-cl2); }
+@media (max-width: 34rem) { .mm { grid-template-columns: 1fr; } }
+
 /* ═══════════ EL CIERRE — T1 ═══════════ */
 .cierre {
   background: var(--blanco-2);
@@ -418,7 +594,92 @@ a { color: var(--quirofano); }
   font-size: .96rem;
   color: var(--tinta-2);
   max-width: 46rem;
-  margin: 0 auto;
+  margin: 0 auto 2.6rem;
+}
+
+/* ── LA FICHA DE DATOS ──
+   Columna fija de 9 rem y filete abajo por fila: se lee como ficha
+   tecnica y no como tabla de contacto. Lo que no existe dice «Falta»
+   con su etiqueta; inventar una direccion seria peor que dejarla vacia. */
+.datos {
+  margin: 0 auto; max-width: 46rem; text-align: left;
+  border-top: 1px solid var(--linea);
+}
+.datos > div {
+  display: grid;
+  grid-template-columns: 9rem minmax(0, 1fr);
+  gap: .2rem 1.4rem;
+  padding: .8rem 0;
+  border-bottom: 1px solid var(--linea);
+}
+.datos dt {
+  font-family: var(--dato);
+  font-size: .7rem; letter-spacing: .1em; text-transform: uppercase;
+  color: var(--tinta-2); padding-top: .2rem;
+}
+.datos dd { margin: 0; font-size: .94rem; color: var(--tinta); }
+/* El telefono va en su propia linea y no dentro de la frase: asi el
+   objetivo tactil llega a los 44 px sin descolocar el texto. */
+.dato-tel {
+  display: inline-flex; align-items: center; min-height: 44px;
+  font-family: var(--dato); text-decoration: none;
+  border-bottom: 1px solid var(--quirofano);
+}
+.dato-tel:hover { color: var(--tinta); border-bottom-color: var(--tinta); }
+.dato-nota { display: block; font-size: .82rem; color: var(--tinta-2); margin-top: -.2rem; }
+@media (max-width: 34rem) {
+  .datos > div { grid-template-columns: 1fr; }
+}
+
+/* ── CÓMO LLEGAR: EL MAPA ──
+   Imagen propia, no un mapa incrustado: la CSP de esta página prohíbe
+   pedir cualquier cosa a un tercero, así que un iframe de Google Maps o
+   un Leaflet desde CDN no cargarían y no darían ni un error visible.
+   Los mosaicos de OpenStreetMap se bajaron una vez, se pegaron en un
+   JPEG y se sirven como cualquier foto. El botón «Cómo llegar» sí es un
+   enlace a Google Maps: la CSP prohíbe CARGAR de afuera, no enlazar.
+   La atribución de OpenStreetMap (ODbL) va visible en el pie del mapa y
+   no se saca nunca.
+   El recorte 16:10 come arriba y abajo de un JPEG cuadrado; el marcador
+   va al centro, así que sobrevive al recorte en cualquier ancho. */
+.llegar { max-width: 46rem; margin: 2.6rem auto 0; text-align: left; }
+.llegar__rot {
+  font-family: var(--dato);
+  font-size: .7rem; letter-spacing: .1em; text-transform: uppercase;
+  color: var(--tinta-2); font-weight: 400;
+  margin: 0 0 .9rem;
+}
+.mapa {
+  margin: 0;
+  border: 1px solid var(--linea);
+  border-radius: 12px;
+  overflow: hidden;
+  background: #FFFFFF;
+  box-shadow: 0 14px 34px -20px rgba(31, 36, 34, .55);
+}
+.mapa img {
+  display: block; width: 100%; height: auto;
+  aspect-ratio: 16 / 10; object-fit: cover; object-position: 50% 50%;
+}
+.mapa__pie {
+  display: flex; flex-wrap: wrap; align-items: center;
+  justify-content: space-between; gap: .4rem 1.2rem;
+  padding: .6rem .9rem;
+  background: #FFFFFF;
+  border-top: 1px solid var(--linea);
+  font-family: var(--dato);
+  font-size: .72rem; line-height: 1.5;
+  color: var(--tinta-2);   /* 6,7:1 sobre blanco puro */
+}
+.mapa__pie a { color: var(--quirofano); }
+.mapa__ir {
+  min-height: 44px; display: inline-flex; align-items: center;
+  font-size: .8rem; text-decoration: none; white-space: nowrap;
+  border-bottom: 1px solid var(--quirofano);
+}
+.mapa__ir:hover { color: var(--tinta); border-bottom-color: var(--tinta); }
+@media (max-width: 34rem) {
+  .mapa__pie { flex-direction: column; align-items: flex-start; gap: .1rem; }
 }
 
 /* ═══════════ PARA LA CLÍNICA ═══════════ */
@@ -491,18 +752,37 @@ a { color: var(--quirofano); }
 .portada--foto { padding-top: clamp(1.5rem, 3.5vh, 3.5rem); }
 .portada--foto .portada__texto { max-width: 40rem; }
 .portada__foto { position: absolute; z-index: 0; inset: 0; overflow: hidden; pointer-events: none; }
+/* DOS CAPAS Y HACEN COSAS DISTINTAS.
+   A · la mascara BORRA la foto (alfa de verdad) en la franja del
+       titular: no la ensucia, la hace desaparecer y se ve el fondo de
+       la seccion. La foto va espejada (ver FUENTES.txt) para que el
+       veterinario y el perro caigan en el lado OPACO y la pared vacia
+       caiga donde la mascara la borra.
+   B · el velo ::after pinta el color DE LA PORTADA encima y cierra lo
+       que la mascara dejo a medias.
+
+   Escrito entero en rgba() literal, nunca con var(): sin alfa el
+   degradado taparia la foto de punta a punta (bug de tres demos), y
+   termina en alfa 0 al 97 % para que el borde derecho quede a foco
+   completo.
+   PEOR CASO, calculado con una foto NEGRA debajo: donde termina el
+   titular el fondo queda en 0,954 de blanco — 14,4:1 con --tinta. Donde
+   termina la bajada queda en 0,865 de blanco — 5,7:1 con --tinta-2.
+   Pase lo que pase con la foto que se ponga. */
 .portada__foto img {
   display: block; width: 100%; height: 100%;
-  object-fit: cover; object-position: 58% 48%;
-  -webkit-mask-image: linear-gradient(90deg, transparent 0%, transparent 28%,
-              rgba(0,0,0,.18) 42%, rgba(0,0,0,.66) 58%, #000 72%, #000 100%);
-          mask-image: linear-gradient(90deg, transparent 0%, transparent 28%,
-              rgba(0,0,0,.18) 42%, rgba(0,0,0,.66) 58%, #000 72%, #000 100%);
+  object-fit: cover; object-position: 42% 48%;
+  -webkit-mask-image: linear-gradient(90deg, transparent 0%, transparent 24%,
+              rgba(0,0,0,.20) 38%, rgba(0,0,0,.70) 55%, #000 68%, #000 100%);
+          mask-image: linear-gradient(90deg, transparent 0%, transparent 24%,
+              rgba(0,0,0,.20) 38%, rgba(0,0,0,.70) 55%, #000 68%, #000 100%);
 }
 .portada__foto::after {
   content: ""; position: absolute; inset: 0;
-  background: linear-gradient(90deg, var(--blanco) 0%, var(--blanco) 30%,
-              rgba(250,251,250,.66) 46%, rgba(250,251,250,.22) 68%, rgba(250,251,250,.06) 86%);
+  background: linear-gradient(90deg,
+              rgba(250,251,250,1)   0%,  rgba(250,251,250,1)   27%,
+              rgba(250,251,250,.62) 45%, rgba(250,251,250,.20) 67%,
+              rgba(250,251,250,.05) 86%, rgba(250,251,250,0)   97%);
 }
 @media (prefers-reduced-motion: no-preference) {
   .portada__foto img { animation: respira 46s ease-in-out infinite alternate; }
@@ -517,13 +797,18 @@ a { color: var(--quirofano); }
 .js .portada.rev.ok { opacity: 1; transform: none; transition: none; }
 @media (max-width: 860px) {
   .portada--foto { padding-top: 36svh; }
+  /* En el telefono el texto pasa de estar AL LADO a estar DEBAJO, asi
+     que las dos capas rotan a vertical: la foto manda arriba (a foco
+     completo, el velo arranca en alfa 0) y se apaga contra el texto. */
   .portada__foto img {
-    object-position: 50% 44%;
+    object-position: 46% 42%;
     -webkit-mask-image: linear-gradient(180deg, #000 0%, #000 30%, rgba(0,0,0,.34) 58%, transparent 78%);
             mask-image: linear-gradient(180deg, #000 0%, #000 30%, rgba(0,0,0,.34) 58%, transparent 78%);
   }
   .portada__foto::after {
-    background: linear-gradient(180deg, rgba(250,251,250,0) 0%, rgba(250,251,250,.30) 42%, var(--blanco) 70%);
+    background: linear-gradient(180deg,
+                rgba(250,251,250,0)   0%, rgba(250,251,250,.30) 42%,
+                rgba(250,251,250,1)  70%, rgba(250,251,250,1)  100%);
   }
 }
 
@@ -563,7 +848,7 @@ a { color: var(--quirofano); }
   overflow: hidden;
 }
 .mitades__foto { position: relative; min-height: 62svh; overflow: hidden; }
-.mitades__foto img { display: block; width: 100%; height: 100%; object-fit: cover; object-position: 52% 50%; }
+.mitades__foto img { display: block; width: 100%; height: 100%; object-fit: cover; object-position: 44% 46%; }
 .mitades__texto {
   padding: clamp(2.5rem, 6vw, 5rem) clamp(1.4rem, 4vw, 3.5rem);
   display: flex; flex-direction: column; justify-content: center;
@@ -619,7 +904,10 @@ a { color: var(--quirofano); }
 .cita__eco {
   display: block; margin-top: 1.1rem;
   font-family: var(--dato); font-size: .82rem; letter-spacing: .1em;
-  text-transform: uppercase; color: var(--quirofano);
+  text-transform: uppercase; color: var(--quirofano-2);
+  /* El verde oscuro y no el de acento: este rótulo va encima de la foto,
+     y sobre el velo al .84 con una foto NEGRA debajo el acento daría
+     3,8:1. Con --quirofano-2 el peor caso queda en 5,6:1. */
 }
 .js .cita__texto.rev { opacity: 0; transform: translateY(16px); }
 .js .cita__texto.rev.ok {
@@ -663,19 +951,48 @@ a { color: var(--quirofano); }
 }
 
 /* ── TAJO: LA FRANJA A SANGRE ──
-   Una franja de foto entre dos secciones. No lleva texto encima, asi
-   que no lleva velo: se ve la foto y punto. Es la aparicion que mas
-   llena la pagina por el peso que cuesta. */
-/* La clase es .tajo y no .banda ni .franja: hay demos que ya usan esos
-   dos nombres para secciones propias, y chocaban. */
+   Una franja de foto entre dos secciones, con una frase abajo. La clase
+   es .tajo y no .banda ni .franja: hay demos que ya usan esos dos
+   nombres para secciones propias, y chocaban.
+
+   EL VELO SUBE DESDE ABAJO Y ARRANCA EN ALFA 0: los dos tercios de
+   arriba de la foto se ven nitidos, que es todo el efecto. Escrito en
+   rgba() literal, nunca con var(): sin alfa el degradado taparia la
+   foto de punta a punta.
+   Peor caso medido con una foto BLANCA debajo: donde empieza el texto
+   el velo va al .78 y el fondo resultante queda en (84,107,102) —
+   5,7:1 con el blanco de la letra. Al pie del bloque el velo llega al
+   .96 y da 9,3:1. Pase lo que pase con la foto que se ponga. */
 .tajo {
-  position: relative; overflow: hidden;
-  height: clamp(180px, 30svh, 340px);
-  background: var(--blanco-2);
+  position: relative; overflow: hidden; margin: 0;
+  height: clamp(230px, 38svh, 420px);
+  background: var(--quirofano-3);
 }
 .tajo img {
   display: block; width: 100%; height: 100%;
-  object-fit: cover; object-position: 50% 50%;
+  object-fit: cover; object-position: 50% 42%;
+}
+.tajo--dos img { object-position: 50% 46%; }
+.tajo__txt {
+  position: absolute; inset: auto 0 0 0;
+  padding: clamp(3rem, 9vh, 5.5rem) clamp(1.25rem, 5vw, 4rem) 1.5rem;
+  background: linear-gradient(180deg,
+      rgba(36, 65, 59, 0)   0%,
+      rgba(36, 65, 59, .48) 42%,
+      rgba(36, 65, 59, .78) 66%,
+      rgba(36, 65, 59, .96) 100%);
+}
+.tajo__txt p {
+  margin: 0; max-width: 30ch;
+  color: #FFFFFF;
+  font-family: var(--display); font-weight: 500;
+  font-size: clamp(1.15rem, 2.9vw, 1.85rem); line-height: 1.18;
+  text-wrap: pretty;
+}
+.js .tajo__txt.rev { opacity: 0; transform: translateY(14px); }
+.js .tajo__txt.rev.ok {
+  opacity: 1; transform: none;
+  transition: opacity .8s ease, transform .9s cubic-bezier(.2,.7,.2,1);
 }
 @media (prefers-reduced-motion: no-preference) {
   .tajo img { animation: deriva-tajo 54s ease-in-out infinite alternate; }
@@ -684,11 +1001,10 @@ a { color: var(--quirofano); }
   from { transform: scale(1.06) translate3d(-1.2%, 0, 0); }
   to   { transform: scale(1.12) translate3d(1.2%, -1.4%, 0); }
 }
-.js .tajo { opacity: 0; }
-.js .tajo.ok { opacity: 1; transition: opacity 1s ease; }
-@media (prefers-reduced-motion: reduce) {
-  .js .tajo { opacity: 1; }
-}
+/* El tajo entra con el sistema general de .rev: la figura funde y su
+   frase sube después. No lleva reglas propias — dos juegos de opacidad
+   sobre el mismo elemento se pisaban y el transform quedaba sin
+   transición. */
 
 /* ── TELON: la foto detras de una seccion entera ──
    No es el aura. El aura va reventada a 64 px y se lee como mancha de
@@ -711,6 +1027,9 @@ a { color: var(--quirofano); }
   from { transform: scale(1.04) translate3d(0, 0, 0); }
   to   { transform: scale(1.10) translate3d(-1.6%, -1%, 0); }
 }
+/* El de la seccion oscura va mas bajo: ahi encima hay texto corrido y
+   cada punto de opacidad aclara el fondo y se come el contraste. */
+.telon--antes img { opacity: .12; object-position: 50% 38%; }
 
 /* ── MOSAICO ──
    Seis piezas en grilla. Es la unica parte de la pagina donde una
@@ -739,29 +1058,166 @@ a { color: var(--quirofano); }
   grid-template-columns: repeat(3, 1fr);
   max-width: 82rem; margin: 0 auto;
 }
-.mos__p { margin: 0; overflow: hidden; height: clamp(140px, 20svh, 220px); background: var(--blanco-2); }
+.mos__p { margin: 0; overflow: hidden; height: clamp(165px, 24svh, 265px); background: var(--blanco-2); }
 .mos__p img {
-  display: block; width: 100%; height: 100%; object-fit: cover;
+  display: block; width: 100%; height: 100%; object-fit: cover; object-position: 50% 34%;
+  filter: saturate(.92);
   transition: transform 1.1s cubic-bezier(.2,.7,.2,1), filter .6s ease;
 }
-.mos__p:nth-child(1), .mos__p:nth-child(6) { grid-column: span 2; }
+/* Las celdas 1 y 4 van a dos columnas: rompe la reticula de diez iguales
+   y sale gratis. Con diez piezas y dos anchas son doce unidades = cuatro
+   filas exactas de tres; si mueves una, revisa que la cuenta siga dando. */
+.mos__p:nth-child(1), .mos__p:nth-child(4) { grid-column: span 2; }
+/* Dos verticales traen la cabeza muy arriba: con el 34 % de todas las
+   demás la celda mostraba un torso sin cara. Se corrigen por celda. */
+.mos__p:nth-child(7) img,
+.mos__p:nth-child(9) img { object-position: 50% 15%; }
+.mos__p:nth-child(2) img { object-position: 50% 26%; }
 @media (hover: hover) and (pointer: fine) {
-  .mos__p:hover img { transform: scale(1.06); }
+  .mos__p:hover img { transform: scale(1.06); filter: saturate(1); }
 }
 .js .mos__p { opacity: 0; transform: translateY(1.2rem); }
 .js .mos__p.ok {
   opacity: 1; transform: none;
   transition: opacity .8s ease, transform .9s cubic-bezier(.2,.7,.2,1);
 }
-.js .mos__p.ok:nth-child(2) { transition-delay: .06s; }
-.js .mos__p.ok:nth-child(3) { transition-delay: .12s; }
-.js .mos__p.ok:nth-child(4) { transition-delay: .18s; }
-.js .mos__p.ok:nth-child(5) { transition-delay: .24s; }
-.js .mos__p.ok:nth-child(6) { transition-delay: .30s; }
+.js .mos__p.ok:nth-child(2)  { transition-delay: .06s; }
+.js .mos__p.ok:nth-child(3)  { transition-delay: .12s; }
+.js .mos__p.ok:nth-child(4)  { transition-delay: .18s; }
+.js .mos__p.ok:nth-child(5)  { transition-delay: .24s; }
+.js .mos__p.ok:nth-child(6)  { transition-delay: .30s; }
+.js .mos__p.ok:nth-child(7)  { transition-delay: .06s; }
+.js .mos__p.ok:nth-child(8)  { transition-delay: .12s; }
+.js .mos__p.ok:nth-child(9)  { transition-delay: .18s; }
+.js .mos__p.ok:nth-child(10) { transition-delay: .24s; }
 @media (max-width: 760px) {
   .mos__grilla { grid-template-columns: 1fr 1fr; }
-  .mos__p:nth-child(1), .mos__p:nth-child(6) { grid-column: 1 / -1; }
+  .mos__p:nth-child(1), .mos__p:nth-child(4) { grid-column: 1 / -1; }
 }
 @media (prefers-reduced-motion: reduce) {
   .js .mos__p { opacity: 1; transform: none; }
+}
+
+/* ══════════════════════════════════════════════════════════════════
+   CASCADA DE HIJOS
+   Dos mecanismos de aparición y hacen falta los dos: el observer sobre
+   el CONTENEDOR para las piezas sueltas (arriba, .rev) y esta cascada
+   para las grillas, que es lo único que produce un escalonado real
+   dentro de un contenedor que entró como una sola pieza.
+
+   El contenedor con .rev HAY que neutralizarlo: si no, contenedor e
+   hijos bajan a la vez y el grupo entero se desplaza 26 px.
+   El --i va por nth-child en el CSS y JAMÁS en style="--i:3": la CSP
+   con style-src 'self' lo bloquea sin un solo error visible.
+   ══════════════════════════════════════════════════════════════════ */
+.js .cascada.rev       { opacity: 1; transform: none; transition: none; }
+.js .cascada.rev > *   { opacity: 0; transform: translateY(22px); }
+.js .cascada.rev.ok > * {
+  opacity: 1; transform: none;
+  transition: opacity .35s ease-out, transform .6s cubic-bezier(.2,.7,.2,1);
+  transition-delay: calc(var(--i, 0) * var(--paso, 70ms));
+}
+/* Regla de ritmo: el paso es min(70 ms, 500 ms / N), para que el grupo
+   entero aterrice dentro de medio segundo. La ficha de la consulta
+   tiene nueve filas, así que baja a 45 ms. */
+.ficha { --paso: 45ms; }
+.cascada > :nth-child(1) { --i: 0; }
+.cascada > :nth-child(2) { --i: 1; }
+.cascada > :nth-child(3) { --i: 2; }
+.cascada > :nth-child(4) { --i: 3; }
+.cascada > :nth-child(5) { --i: 4; }
+.cascada > :nth-child(6) { --i: 5; }
+.cascada > :nth-child(7) { --i: 6; }
+.cascada > :nth-child(8) { --i: 7; }
+.cascada > :nth-child(9) { --i: 8; }
+
+/* ══════════════════════════════════════════════════════════════════
+   OBJETIVOS TÁCTILES
+   Todo enlace que funciona como botón se declara inline-flex con 44 px
+   de alto. Los de dentro de un párrafo quedan fuera: ahí el objetivo
+   táctil es la línea de texto.
+   ══════════════════════════════════════════════════════════════════ */
+.cab__marca,
+.cab__tel { min-height: 44px; display: flex; align-items: center; }
+.cab__tel { flex-direction: column; align-items: flex-end; justify-content: center; }
+.cab__nav a { min-height: 44px; display: inline-flex; align-items: center; }
+.dd--tel a,
+.flecha { min-height: 44px; display: inline-flex; align-items: center; gap: .4rem; }
+.cierre__tel a { min-height: 48px; display: inline-flex; align-items: center; justify-content: center; }
+
+/* La flecha se corre 4 px al pasar: la transición va en el <span>, no
+   en el enlace, para que el subrayado no se mueva con ella. */
+.flecha span { display: inline-block; }
+.js .flecha span { transition: transform .25s cubic-bezier(.2,.7,.2,1); }
+@media (hover: hover) and (pointer: fine) {
+  .flecha:hover span { transform: translateX(4px); }
+}
+
+/* ══════════════════════════════════════════════════════════════════
+   EL PIE
+   El botón flotante mide 56 px y vive abajo a la derecha: el pie lleva
+   sitio reservado para que nunca le tape la última línea.
+   ══════════════════════════════════════════════════════════════════ */
+.pie__in { max-width: 82rem; margin-inline: auto; padding-bottom: 4.5rem; }
+
+/* ── SIN BOTON FLOTANTE, A PROPOSITO ────────────────────────────────
+   Vetval solo publica el fijo (63) 222 6700 y no tiene Instagram.
+   WhatsApp no funciona en numeros fijos: el boton abriria la aplicacion
+   y no encontraria la cuenta. Peor que no tenerlo. Cuando el negocio
+   confirme un movil o una cuenta de Instagram, se pone con
+   demos\poner-contacto.ps1 y queda igual que en el resto. */
+/* Sólo mientras se mira la portada. pointer-events: none para que no
+   se pueda tocar un botón que no se ve. */
+.js .wapp--arriba { opacity: 0; transform: translateY(14px); pointer-events: none; }
+@media (max-width: 520px) {
+  /* Bajo 520 px queda el círculo: el rótulo se recorta sin salir del
+     DOM, así el lector de pantalla lo sigue leyendo. */
+  .wapp { padding: 0; width: 56px; justify-content: center; gap: 0; }
+  .wapp__t { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); }
+}
+
+/* ══════════════════════════════════════════════════════════════════
+   EL DIFUMINADO AL SCROLL
+   Lo que una demo corriente consigue con GSAP + ScrollTrigger, 70 KB de
+   librería y una petición a un CDN que la CSP bloquearía. Acá son diez
+   líneas que corren en el compositor y no existen donde el navegador no
+   las soporta.
+
+   Tres cosas que no se tocan: el filter va en el CONTENEDOR (.portada__foto)
+   y nunca en la imagen; el scale(1.06) acompaña al blur para que el
+   desenfoque no muestre el filo transparente de la caja; y va dentro de
+   @supports Y de la doble puerta de reduced-motion + 761 px — en el
+   teléfono no corre.
+   La página es clara, así que la foto se disuelve HACIA EL BLANCO: blur
+   corto y opacidad. Sobre fondo oscuro sería al revés (brightness).
+   ══════════════════════════════════════════════════════════════════ */
+@supports (animation-timeline: scroll()) {
+  @media (prefers-reduced-motion: no-preference) and (min-width: 761px) {
+    .portada--foto.ok .portada__foto {
+      animation: portada-se-va linear both;
+      animation-timeline: scroll(root block);
+      animation-range: 0 88vh;
+    }
+  }
+}
+@keyframes portada-se-va {
+  to { filter: blur(7px); transform: scale(1.06); opacity: .5; }
+}
+
+/* ══════════════════════════════════════════════════════════════════
+   MENOS MOVIMIENTO
+   Se apaga lo intrusivo (bucles, desplazamientos, conteos) y se
+   conserva lo que da vida: los fundidos de opacidad y los hovers de
+   color. En Windows esta preferencia viene puesta de fábrica muy
+   seguido; apagarlo todo deja la página muerta en media clientela.
+   ══════════════════════════════════════════════════════════════════ */
+@media (prefers-reduced-motion: reduce) {
+  /* Los reveals NO se desplazan, pero SÍ siguen fundiendo: un fundido
+     no es movimiento, un salto de 16 px sí. */
+  .js .rev, .js .cascada.rev > *, .js .tajo__txt.rev { transform: none; }
+  /* La entrada de la portada no se escalona: se muestra puesta. Apagar
+     sólo `animation` la dejaría invisible para siempre, porque el estado
+     oculto vive bajo .js. */
+  .js .portada__texto > * { animation: none; opacity: 1; transform: none; }
+  .boton:hover, .wapp:hover, .flecha:hover span, .mos__p:hover img { transform: none; }
 }

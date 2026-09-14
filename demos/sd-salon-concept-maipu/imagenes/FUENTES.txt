@@ -1,0 +1,34 @@
+FUENTES DE LAS IMAGENES - sd-salon-concept-maipu
+Todas de Pexels (Pexels License: uso libre, comercial, sin atribucion obligatoria).
+Procesadas con preparar-lote.ps1 (JPEG, ancho y calidad por tratamiento).
+NINGUNA es del salon. Bajadas el 11-09-2026 con FotoRadar.
+
+mit-01.jpg  <=  pexels | Pexels License | Viktorya  Sergeeva 🫂 | https://www.pexels.com/es-es/foto/persona-mujer-chaqueta-rubio-14267482/ | https://images.pexels.com/photos/14267482/pexels-photo-14267482.jpeg | recorte 4:5
+telon-01.jpg  <=  pexels | Pexels License | The Ghazi | https://www.pexels.com/es-es/foto/salon-de-belleza-minimalista-moderno-33412989/ | https://images.pexels.com/photos/33412989/pexels-photo-33412989.png | recorte 16:9
+aura-01.jpg  <=  pexels | Pexels License | Jonathan Borba | https://www.pexels.com/es-es/foto/persona-eligiendo-color-de-cabello-de-una-paleta-de-muestra-28868043/ | https://images.pexels.com/photos/28868043/pexels-photo-28868043.jpeg | recorte 1:1
+tira1-01.jpg  <=  pexels | Pexels License | Cup of  Couple | https://www.pexels.com/es-es/foto/botellas-maqueta-modelo-replica-8049850/ | https://images.pexels.com/photos/8049850/pexels-photo-8049850.jpeg | recorte 1:1
+tira2-01.jpg  <=  pexels | Pexels License | Ron Lach | https://www.pexels.com/es-es/foto/habitacion-bano-jabon-limpiar-8159664/ | https://images.pexels.com/photos/8159664/pexels-photo-8159664.jpeg | recorte 1:1
+mos1-01.jpg  <=  pexels | Pexels License | Maria Geller | https://www.pexels.com/es-es/foto/persona-con-pincel-negro-2799605/ | https://images.pexels.com/photos/2799605/pexels-photo-2799605.jpeg | recorte 1:1
+mos2-01.jpg  <=  pexels | Pexels License | Doğan Alpaslan  Demir | https://www.pexels.com/es-es/foto/coloracion-profesional-del-cabello-en-un-salon-de-belleza-en-esmirna-29555468/ | https://images.pexels.com/photos/29555468/pexels-photo-29555468.jpeg | recorte 1:1
+mos3-01.jpg  <=  pexels | Pexels License | Doğan Alpaslan  Demir | https://www.pexels.com/es-es/foto/sesion-de-coloracion-profesional-del-cabello-en-salon-29555682/ | https://images.pexels.com/photos/29555682/pexels-photo-29555682.jpeg | recorte 1:1
+mos5-01.jpg  <=  pexels | Pexels License | Nataliya Vaitkevich | https://www.pexels.com/es-es/foto/mano-sujetando-cabellos-melena-8467958/ | https://images.pexels.com/photos/8467958/pexels-photo-8467958.jpeg | recorte 1:1
+tajo-01.jpg  <=  pexels | Pexels License | Ionela Mat | https://www.pexels.com/es-es/foto/manos-mujer-servicio-cuidado-20894394/ | https://images.pexels.com/photos/20894394/pexels-photo-20894394.jpeg | recorte 21:9
+cita-01.jpg  <=  pexels | Pexels License | Doğan Alpaslan  Demir | https://www.pexels.com/es-es/foto/primer-plano-del-proceso-de-coloracion-del-cabello-en-el-salon-29546551/ | https://images.pexels.com/photos/29546551/pexels-photo-29546551.jpeg | recorte 2:1
+tira4-01.jpg  <=  pexels | Pexels License | cottonbro studio | https://www.pexels.com/es-es/foto/textura-de-madera-peinado-preparacion-3992874/ | https://images.pexels.com/photos/3992874/pexels-photo-3992874.jpeg | recorte 1:1
+mos6-01.jpg  <=  pexels | Pexels License | Max Vakhtbovych | https://www.pexels.com/es-es/foto/salon-de-belleza-adentro-espejo-reflejar-7750144/ | https://images.pexels.com/photos/7750144/pexels-photo-7750144.jpeg | recorte 1:1
+mos4-01.jpg  <=  pexels | Pexels License | Henrikas Mackevicius | https://www.pexels.com/es-es/foto/modelo-estampado-abstracto-resumen-4076442/ | https://images.pexels.com/photos/4076442/pexels-photo-4076442.jpeg | recorte 1:1
+tira3-01.jpg  <=  pexels | Pexels License | Darina Belonogova | https://www.pexels.com/es-es/foto/mujer-sosteniendo-una-trenza-8789149/ | https://images.pexels.com/photos/8789149/pexels-photo-8789149.jpeg | recorte 1:1
+
+MAPA DE UBICACION — mapa-01.jpg
+  768 x 768 · zoom 16 · centro -33.4735129, -70.7390279
+  Mosaicos de OpenStreetMap pegados en una sola imagen, con el marcador
+  dibujado encima. Datos (c) OpenStreetMap contributors, licencia ODbL:
+  la atribucion tiene que ir VISIBLE junto al mapa, en el pie de la figura.
+  https://www.openstreetmap.org/copyright
+
+MAPA DE UBICACION — mapa-01.jpg
+  768 x 768 · zoom 16 · centro -33.4822861, -70.7454383
+  Mosaicos de OpenStreetMap pegados en una sola imagen, con el marcador
+  dibujado encima. Datos (c) OpenStreetMap contributors, licencia ODbL:
+  la atribucion tiene que ir VISIBLE junto al mapa, en el pie de la figura.
+  https://www.openstreetmap.org/copyright

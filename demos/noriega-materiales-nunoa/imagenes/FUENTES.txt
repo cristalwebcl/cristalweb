@@ -1,0 +1,22 @@
+FUENTES DE LAS IMAGENES - Noriega Materiales Rehecha el 14-09-2026 (presentacion antes que texto). Fotos de REFERENCIA de bancos libres: ninguna es del local; las verdaderas las tiene que mandar el negocio. 
+port-01.jpg  <-  pozo-p-nor-ladrillo\001.jpg  |  pexels (Pexels License)  |  autor: Bipu Das Kajol  |  https://www.pexels.com/es-es/foto/ladrillos-rojos-33160448/  |  consulta: "red bricks stack"
+hund1-01.jpg  <-  pozo-p-nor-huincha\001.jpg  |  pexels (Pexels License)  |  autor: Abhishek Saini  |  https://www.pexels.com/es-es/foto/blanco-y-negro-oscuro-sucio-monocromo-4096087/  |  consulta: "measuring tape concrete"
+hund2-01.jpg  <-  pozo-p-nor-ladrillo\011.jpg  |  pexels (Pexels License)  |  autor: Bipu Das Kajol  |  https://www.pexels.com/es-es/foto/colocacion-de-muchos-ladrillos-en-un-horno-de-ladrillos-33160441/  |  consulta: "red bricks stack"
+hund3-01.jpg  <-  pozo-p-nor-estuco\006.jpg  |  pexels (Pexels License)  |  autor: David Antonio Cruz Naira  |  https://www.pexels.com/es-es/foto/trabajo-de-yeso-con-paleta-y-cemento-38561968/  |  consulta: "plastering trowel wall"
+hund4-01.jpg  <-  pozo-p-nor-fierro\006.jpg  |  pexels (Pexels License)  |  autor: Dhananjay Sharma  |  https://www.pexels.com/es-es/foto/modelo-estampado-textura-abstracto-8117035/  |  consulta: "rebar steel bundle"
+hund5-01.jpg  <-  pozo-p-nor-plancha\003.jpg  |  pexels (Pexels License)  |  autor: Jan van der Wolf  |  https://www.pexels.com/es-es/foto/edificio-metal-almacen-geometrico-18289258/  |  consulta: "corrugated metal roof sheets"
+hund6-01.jpg  <-  pozo-p-nor-tornillo\009.jpg  |  pexels (Pexels License)  |  autor: Dan Cristian Pădureț  |  https://www.pexels.com/es-es/foto/metal-chrome-cromo-hierro-9966684/  |  consulta: "screws bolts nuts pile"
+banda-01.jpg  <-  pozo-p-nor-ladrillo\008.jpg  |  pexels (Pexels License)  |  autor: Saifee Art  |  https://www.pexels.com/es-es/foto/primer-plano-de-una-pared-de-ladrillos-de-arcilla-roja-apilados-35931036/  |  consulta: "red bricks stack"
+cita-01.jpg  <-  pozo-p-nor-plomada\004.jpg  |  pexels (Pexels License)  |  autor: Meruyert Gonullu  |  https://www.pexels.com/es-es/foto/punzon-en-el-banco-de-trabajo-en-el-taller-6033953/  |  consulta: "plumb bob string"
+mos1-01.jpg  <-  pozo-p-nor-plomada\003.jpg  |  pexels (Pexels License)  |  autor: Amie Bell  |  https://www.pexels.com/es-es/foto/madera-textura-cuerda-pelota-6082925/  |  consulta: "plumb bob string"
+mos2-01.jpg  <-  pozo-p-nor-fierro\010.jpg  |  pexels (Pexels License)  |  autor: Willians Huerta  |  https://www.pexels.com/es-es/foto/pilotos-de-bobinas-de-alambre-de-acero-industrial-al-aire-libre-36397792/  |  consulta: "rebar steel bundle"
+mos3-01.jpg  <-  pozo-p-nor-plancha\009.jpg  |  pexels (Pexels License)  |  autor: David Underland  |  https://www.pexels.com/es-es/foto/acero-corrugado-blanco-y-negro-3523623/  |  consulta: "corrugated metal roof sheets"
+mos4-01.jpg  <-  pozo-p-nor-ladrillo\007.jpg  |  pexels (Pexels License)  |  autor: Eudes cs  |  https://www.pexels.com/es-es/foto/primer-plano-de-una-pared-de-ladrillos-a-la-vista-en-la-arquitectura-moderna-28670477/  |  consulta: "red bricks stack"
+mos5-01.jpg  <-  pozo-p-nor-estuco\003.jpg  |  pexels (Pexels License)  |  autor: Tomás Asurmendi  |  https://www.pexels.com/es-es/foto/interior-arquitectonico-minimalista-monocromatico-34492974/  |  consulta: "plastering trowel wall"
+mos6-01.jpg  <-  pozo-p-nor-ladrillo\004.jpg  |  pexels (Pexels License)  |  autor: Mustafa ezz  |  https://www.pexels.com/es-es/foto/ladrillos-de-hormigon-marron-678289/  |  consulta: "red bricks stack"
+
+BRUMA (bruma-pag-0N.png y bruma-osc-0N.png, 30x20): las MISMAS fotos, recortadas a 3:2, reducidas y
+recoloreadas con C:\devs\demos\hacer-bruma.ps1 (clara >= 0,68 de luminancia / oscura <= 0,05). No suman fuentes.
+    pagina: cita-01.jpg, hund4-01.jpg, hund1-01.jpg, mos5-01.jpg, mos2-01.jpg   |   oscuras: cita-01.jpg, hund4-01.jpg, mos2-01.jpg
+
+MAPA: iframe de Google Maps (embed publico, sin clave). No hay imagen de mapa.

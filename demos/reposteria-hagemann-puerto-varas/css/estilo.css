@@ -24,17 +24,70 @@
      Dato    · Cutive Mono — sexta aparición, a propósito: es la única
        con carácter de máquina de escribir, y las horas de horno son
        justamente una lista tecleada.
+
+   ESCENA: la boca de un horno que se enciende de tinta a ámbar y tres
+   jirones de vapor que suben. Reposo lento de 5 s en la boca; es el
+   único bucle infinito de la página. Con el clip de portada corriendo
+   detrás, el ambiente lo lleva el video y la escena se queda con su
+   respaldo radial para seguir leyéndose.
+
+   SUBIDA DE NIVEL · 08-09-2026 (Opus 5) — primera pasada
+     Se agregaron dos clips de fondo (portada y cita), la banda de
+     cifras como sección propia, el calendario de temporada, la
+     sección de mitades y el difuminado al scroll. La identidad —trío,
+     paleta y tono— no se tocó: sólo se le sumaron los dos grises que
+     faltaban para las bandas oscuras.
+
+   SEGUNDA PASADA · 08-09-2026 (Opus 5)
+     · Botón flotante de contacto (§8 del estándar). Va al Instagram y
+       no a un WhatsApp, porque la repostería no publica teléfono y un
+       número inventado mandaría a sus clientes a un desconocido. Es el
+       único color de fuera de la paleta en toda la página, y está
+       adentro de su propio bloque al final del archivo.
+     · port-01 y tajo-01 repuestas: las dos venían sin procedencia
+       anotada y así la demo no se podía publicar. El tajo además pasó
+       a una foto oscura, que es lo que deja el titular blanco en AA
+       sin subir el velo (luminancia opuesta antes que tapar la foto).
+     · Mosaico a cuatro columnas: con seis fotos y la 1 y la 6 a span 2
+       son ocho celdas, y en tres columnas quedaba un hueco vacío.
+     · En teléfono el horno se corrió a su propia franja al pie de la
+       portada: con `bottom: 3%` caía encima de los dos botones.
+     · Anclas del nav y CTA de la cabecera a 44 px de alto.
+     La identidad no se tocó: trío, paleta, tono y escena siguen iguales.
+
+   TERCERA PASADA · 09-09-2026 (revisión adversarial)
+     · mos3-01 CAMBIADA. La que había era una rebanada sobre un plato de
+       talavera con una calavera de Día de Muertos al fondo: una escena
+       mexicana en una repostería alemana de Puerto Varas. Es la regla de
+       la casa «nada de fondos que prometan otro lugar», y encima peleaba
+       con la dirección de la página, que es LOZA ALEMANA. En su lugar va
+       un kuchen de manzana entero visto desde arriba, que además es una
+       de las cuatro variedades que la vitrina nombra.
+     · Los contrastes de la banda de cita y del tajo estaban escritos de
+       más (11,2 y 8,1/8,2). Se volvieron a medir píxel a píxel contra el
+       fondo real de cada letra: 7,0 · 7,2 · 7,3. Todos siguen en AA.
+     · La bajada de portada bajó de 46ch a 42ch: su última línea llegaba
+       a la zona donde el velo ya deja ver la foto y medía 4,58:1.
+     · El vapor nacía dentro de la boca del horno. Ahora sale de ella.
+     · El botón flotante ya no queda alcanzable con el tabulador estando
+       invisible, y se sacó un peso muerto: Livvic 300 estaba
+       self-hosteada y no la pedía ninguna regla del CSS (21 KB).
+     Identidad intacta otra vez: Cardo/Livvic/Cutive Mono, crema-tinta-loza
+     y la escena del horno.
    ══════════════════════════════════════════════════════════════════ */
 
 :root {
   --crema:   #F7F2E8;
   --crema-2: #EDE5D5;
   --tinta:   #221D16;
+  --tinta-2: #2E2820;   /* tarjeta dentro de banda oscura */
   --medio:   #5D5445;   /* 6,6:1 sobre crema */
+  --crema-l: #CBC3B6;   /* secundario SOBRE tinta: 9,2:1 (sobre crema no sirve) */
   --loza:    #2B4C8C;   /* 6,8:1 sobre crema; blanco encima 7,0:1 */
   --loza-o:  #1F3A6E;   /* hover */
-  --loza-l:  #A8C0E8;   /* sobre tinta */
+  --loza-l:  #A8C0E8;   /* 8,6:1 sobre tinta; NUNCA sobre crema */
   --linea:   rgba(34,29,22,.16);
+  --linea-c: rgba(247,242,232,.18);   /* filete dentro de banda oscura */
 
   --display: 'Cardo', Georgia, serif;
   --cuerpo:  'Livvic', 'Segoe UI', system-ui, sans-serif;
@@ -64,6 +117,8 @@ html { -webkit-text-size-adjust: 100%; scroll-behavior: smooth; }
 
 body { margin: 0; background: var(--crema); color: var(--tinta); font-family: var(--cuerpo); font-size: var(--p-0); line-height: 1.68; }
 img { max-width: 100%; height: auto; }
+video { max-width: 100%; }
+p { text-wrap: pretty; }
 a { color: var(--loza); }
 :focus-visible { outline: 3px solid var(--loza); outline-offset: 2px; }
 .ancho { width: var(--ancho); margin-inline: auto; }
@@ -76,6 +131,8 @@ h1, h2, h3 { font-family: var(--display); font-weight: 700; line-height: 1.16; m
 .titulo--claro { color: var(--crema); }
 .entradilla { max-width: 58ch; color: var(--medio); font-size: var(--p-1); margin: 0 0 2rem; }
 .entradilla b { color: var(--tinta); font-weight: 600; }
+.entradilla--clara { color: var(--crema-l); }
+.entradilla--clara b { color: var(--crema); }
 .nota { margin-top: 1.6rem; font-size: var(--p--1); color: var(--medio); max-width: 66ch; }
 .sobre { font-family: var(--mono); font-size: var(--p--1); letter-spacing: .12em; text-transform: uppercase; color: var(--loza); margin: 0 0 1rem; }
 
@@ -85,6 +142,7 @@ h1, h2, h3 { font-family: var(--display); font-weight: 700; line-height: 1.16; m
   content: attr(data-ejemplo); position: absolute; top: -.62rem; right: .6rem;
   font-family: var(--mono); font-size: .62rem; letter-spacing: .08em; text-transform: uppercase;
   color: var(--loza); background: var(--crema); padding: 0 .35rem;
+  white-space: nowrap; max-width: 88%; overflow: hidden; text-overflow: ellipsis;
 }
 
 /* ── Botones ───────────────────────────────────────────────────── */
@@ -95,23 +153,24 @@ h1, h2, h3 { font-family: var(--display); font-weight: 700; line-height: 1.16; m
   background: var(--loza); color: #FFFFFF;
   font-family: var(--cuerpo); font-size: var(--p-0); font-weight: 600;
   text-decoration: none; cursor: pointer;
-  transition: transform .16s ease-out, background-color .16s;
+  box-shadow: 0 10px 26px -16px rgba(43,76,140,.9);
+  transition: transform .16s ease-out, background-color .16s, box-shadow .16s;
 }
-.boton:hover { background: var(--loza-o); transform: translateY(-2px); }
+.boton:hover { background: var(--loza-o); transform: translateY(-2px); box-shadow: 0 14px 30px -16px rgba(43,76,140,.95); }
 .boton:active { transform: translateY(0); }
-.boton--linea { background: transparent; color: var(--loza); }
-.boton--linea:hover { background: rgba(43,76,140,.09); }
+.boton--linea { background: transparent; color: var(--loza); box-shadow: none; }
+.boton--linea:hover { background: rgba(43,76,140,.09); box-shadow: none; }
 .boton--chico { min-height: 40px; padding: .5rem 1.1rem; font-size: var(--p--1); }
 
 /* ── Propuesta ─────────────────────────────────────────────────── */
 .propuesta { background: var(--tinta); color: var(--crema); padding: .85rem clamp(1.2rem, 5vw, 3rem); border-bottom: 3px solid var(--loza); }
 .propuesta__que { margin: 0 0 .3rem; font-size: var(--p--1); font-family: var(--mono); }
 .propuesta__que b { color: var(--loza-l); }
-.propuesta__gancho { margin: 0; font-size: var(--p--1); color: #BEB6A8; max-width: 96ch; line-height: 1.5; }
+.propuesta__gancho { margin: 0; font-size: var(--p--1); color: var(--crema-l); max-width: 96ch; line-height: 1.5; }
 
 /* ── Cabecera ──────────────────────────────────────────────────── */
-.cab { position: sticky; top: 0; z-index: 40; display: flex; align-items: center; gap: 1rem; padding: .75rem clamp(1rem, 4vw, 2.4rem); background: rgba(247,242,232,.94); border-bottom: 1px solid var(--linea); transition: box-shadow .2s, background-color .2s; }
-.cab--flota { box-shadow: 0 6px 22px -16px rgba(34,29,22,.8); background: rgba(247,242,232,.99); }
+.cab { position: sticky; top: 0; z-index: 40; display: flex; align-items: center; gap: 1rem; padding: .75rem clamp(1rem, 4vw, 2.4rem); background: rgba(247,242,232,.9); -webkit-backdrop-filter: blur(8px); backdrop-filter: blur(8px); border-bottom: 1px solid transparent; transition: box-shadow .3s, border-color .3s, background-color .2s; }
+.cab--flota { border-bottom-color: var(--linea); box-shadow: 0 6px 22px -16px rgba(34,29,22,.8); background: rgba(247,242,232,.97); }
 .cab__marca { display: flex; align-items: center; gap: .7rem; text-decoration: none; color: var(--tinta); }
 /* El plato de loza: dos anillos concéntricos, como el filete azul de
    la vajilla. Cero bytes de imagen. */
@@ -132,15 +191,20 @@ h1, h2, h3 { font-family: var(--display); font-weight: 700; line-height: 1.16; m
 @media (max-width: 1000px) { .cab__nav { display: none; } .cab__cta { margin-left: auto; } }
 
 /* ── Portada ───────────────────────────────────────────────────── */
-.portada { position: relative; isolation: isolate; min-height: min(86vh, 760px); display: flex; flex-direction: column; justify-content: center; padding: var(--aire) 0 2.5rem; overflow: hidden; }
+.portada { position: relative; isolation: isolate; min-height: min(86vh, 760px); display: flex; flex-direction: column; justify-content: center; padding: var(--aire) 0; overflow: hidden; }
 .portada__foto { position: absolute; inset: 0; z-index: -1; }
-.portada__foto img {
+/* La foto y el clip comparten selector: misma máscara, mismo recorte y
+   mismo punto de interés. Escrito una sola vez para que no se puedan
+   descuadrar al ajustar uno de los dos. */
+.portada__foto img, .portada__video {
   display: block; width: 100%; height: 100%;
   object-fit: cover; object-position: 72% 46%;
   -webkit-mask-image: linear-gradient(90deg, transparent 0%, transparent 26%, rgba(0,0,0,.2) 42%, rgba(0,0,0,.7) 60%, #000 76%, #000 100%);
           mask-image: linear-gradient(90deg, transparent 0%, transparent 26%, rgba(0,0,0,.2) 42%, rgba(0,0,0,.7) 60%, #000 76%, #000 100%);
 }
-/* Velo entero en rgba y terminando en alfa 0. */
+/* Velo entero en rgba y terminando en alfa 0: bajo el titular el fondo
+   es la crema casi pura, así que la tinta da 14,1:1 PASE LO QUE PASE
+   con la foto o el fotograma que quede debajo. */
 .portada__foto::after {
   content: ""; position: absolute; inset: 0;
   background: linear-gradient(90deg,
@@ -151,18 +215,27 @@ h1, h2, h3 { font-family: var(--display); font-weight: 700; line-height: 1.16; m
 .portada__texto { width: var(--ancho); margin-inline: auto; }
 .portada__titulo { font-size: var(--p-4); max-width: 13ch; }
 .portada__titulo span { display: block; }
-.portada__bajada { max-width: 46ch; color: var(--medio); font-size: var(--p-1); margin: 1.4rem 0 2rem; }
+/* 42ch y no 46ch: con 46 la última línea llegaba al 51 % del ancho, donde el
+   velo ya bajó a alfa .6 y se ve la masa de la foto. Medido sobre el PNG
+   renderizado, píxel a píxel, el peor punto daba 4,58:1 — pasa AA por un
+   pelo y se cae solo con que el cliente mande otra portada. Con 42ch el
+   texto se queda dentro de la zona de velo casi opaco. */
+.portada__bajada { max-width: 42ch; color: var(--medio); font-size: var(--p-1); margin: 1.4rem 0 2rem; }
 .acciones { display: flex; flex-wrap: wrap; gap: .8rem; }
 
 /* ── Escena de portada · el horno que abre ─────────────────────────
-   movimiento-web, ficha «Repostería», escalón 1. La boca se enciende de
-   tinta a ámbar y de ella sube vapor denso. El resplandor y el vapor
-   son la MISMA fuente de luz, así que cuentan como un solo reposo.
    z-index -1 y después de la foto en el HTML: pinta sobre la foto y su
    velo, y siempre por debajo del texto. */
 .escena { position: absolute; z-index: -1; pointer-events: none; }
 .escena--horno { top: 24%; right: 8%; width: min(34%, 360px); }
 .escena__svg { display: block; width: 100%; height: auto; }
+/* Respaldo radial: el clip de portada trae azúcar clara justo en esta
+   columna y el trazo del horno se perdía encima. Doce palabras de CSS
+   que sólo se descubren mirando el video corriendo. */
+.escena::before {
+  content: ""; position: absolute; inset: -16% -24%; z-index: -1;
+  background: radial-gradient(closest-side, rgba(247,242,232,.72), rgba(247,242,232,0));
+}
 
 .horno__marco   { fill: none; stroke: var(--tinta); stroke-width: 3; }
 .horno__tirador { fill: var(--tinta); }
@@ -183,9 +256,14 @@ h1, h2, h3 { font-family: var(--display); font-weight: 700; line-height: 1.16; m
 /* El vapor: tres jirones densos. Acá el desenfoque SÍ va — el vapor de
    un horno es borroso — y el color es la crema de la página, nunca
    blanco puro. Retardo negativo por índice: sin Math.random, la escena
-   se ve igual en cada captura. */
+   se ve igual en cada captura.
+   El origen es 78 % y no 62 %: con 62 % los tres jirones nacían DENTRO
+   de la boca del horno y se apagaban justo al salir, así que se leían
+   como manchas sobre el ámbar y nunca como vapor. Comprobado el
+   09-09-2026 congelando la animación en su primer fotograma. A 78 % el
+   jirón cabalga el borde de arriba del horno —sale de él— y sube. */
 .vapor {
-  position: absolute; left: 50%; bottom: 62%;
+  position: absolute; left: 50%; bottom: 78%;
   width: 46px; height: 60px; border-radius: 50%;
   background: rgba(247,242,232,.85);
   filter: blur(12px);
@@ -204,14 +282,28 @@ h1, h2, h3 { font-family: var(--display); font-weight: 700; line-height: 1.16; m
   animation-delay: calc(1.2s + var(--i, 0) * -1.7s);
 }
 
-/* A 375 px el horno baja al pie de la portada, al 50 % de ancho. */
+/* En teléfono el horno baja al pie de la portada. Con `bottom: 3%` caía
+   justo encima de los dos botones —medido a 500 px el 08-09-2026: el
+   ámbar tapaba «Encargar una torta» entero—, así que la portada móvil
+   reserva alto abajo (ver la consulta de 760 px al final del archivo) y
+   el horno vive en esa franja, con sitio para que el vapor suba sin
+   invadir el CTA. Es la regla del estándar: la escena va en su propia
+   zona y no pelea con el texto. */
 @media (max-width: 760px) {
-  .escena--horno { top: auto; bottom: 3%; right: 4%; width: 50%; }
+  .escena--horno { top: auto; bottom: 2.5rem; right: 6%; width: min(54%, 230px); }
 }
 
-.cifras { list-style: none; margin: var(--aire) auto 0; padding: 1.6rem 0 0; width: var(--ancho); display: grid; gap: 1.5rem; grid-template-columns: repeat(auto-fit, minmax(190px, 1fr)); border-top: 1px solid var(--linea); }
-.cifras b { display: block; font-family: var(--display); font-size: var(--p-3); line-height: 1; color: var(--loza); }
-.cifras span { display: block; font-size: var(--p--1); color: var(--medio); margin-top: .35rem; max-width: 26ch; }
+/* ── Cifras · banda oscura con telón ───────────────────────────────
+   Cuatro números en la misma fila: la prueba social, el inventario, la
+   temporada y la herida. El «+20» cuenta y se restaura con su signo al
+   terminar; los otros tres son aritmética de la propia página y un
+   contador que sube un «0» se lee como truco. */
+.cifras { padding: calc(var(--aire) * .8) 0; background: var(--tinta); color: var(--crema); }
+.cifras__lista { list-style: none; margin: 0 auto; padding: 0; width: var(--ancho); display: grid; gap: 1.6rem; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); }
+.cifras__lista li { border-left: 3px solid rgba(168,192,232,.4); padding-left: 1rem; }
+.cifras__lista b { display: block; font-family: var(--display); font-size: var(--p-3); line-height: 1; color: var(--loza-l); font-variant-numeric: tabular-nums; }
+.cifras__lista span { display: block; font-size: var(--p--1); color: var(--crema-l); margin-top: .45rem; max-width: 26ch; }
+.telon--cifras img { opacity: .2; }
 
 /* ── PIEZA FIRMA · la vitrina ──────────────────────────────────── */
 .vitrina { padding: var(--aire) 0; }
@@ -227,58 +319,141 @@ h1, h2, h3 { font-family: var(--display); font-weight: 700; line-height: 1.16; m
 .ku__h { margin: 0; display: grid; gap: .35rem; border-top: 1px solid var(--linea); padding-top: .8rem; }
 .ku__h > div { display: flex; justify-content: space-between; gap: 1rem; }
 .ku__h dt { font-family: var(--mono); font-size: .7rem; letter-spacing: .06em; text-transform: uppercase; color: var(--medio); }
-.ku__h dd { margin: 0; font-family: var(--mono); font-size: var(--p--1); color: var(--tinta); }
+.ku__h dd { margin: 0; font-family: var(--mono); font-size: var(--p--1); color: var(--tinta); font-variant-numeric: tabular-nums; }
 
 /* ── Tajo ──────────────────────────────────────────────────────── */
 .tajo { position: relative; margin: 0; isolation: isolate; min-height: min(52vh, 420px); display: flex; align-items: flex-end; overflow: hidden; }
 .tajo img { position: absolute; inset: 0; z-index: -1; width: 100%; height: 100%; object-fit: cover; object-position: 50% 46%; }
-.tajo::after { content: ""; position: absolute; inset: 0; z-index: -1; background: linear-gradient(0deg, rgba(34,29,22,.94) 0%, rgba(34,29,22,.78) 34%, rgba(34,29,22,.32) 62%, rgba(34,29,22,0) 92%); }
+/* Velo que sube desde abajo, escrito entero en rgba y terminando en
+   alfa 0 arriba: el tercio superior de la foto queda a foco completo.
+   La caja de texto de este tajo lleva titular Y bajada, así que ocupa
+   más alto que la de una sola frase y hubo que subir el alfa del tramo
+   del medio: con el .32 de antes el titular blanco medía 2,4:1 sobre la
+   masa clara de la foto que se probó primero. Medido el 09-09-2026 sobre
+   el PNG renderizado, comparando cada píxel de letra contra el fondo que
+   hay DEBAJO de esa misma letra (segunda captura con el texto en
+   transparente): el peor punto del titular da 7,2:1 y el de la bajada
+   7,3:1. La medición anterior —8,1 y 8,2— salía de mirar «el píxel más
+   claro de la franja», que no es el fondo real de la letra. Si algún día
+   se cambia la foto del tajo, esos dos números se vuelven a medir. */
+.tajo::after { content: ""; position: absolute; inset: 0; z-index: -1; background: linear-gradient(0deg, rgba(34,29,22,.95) 0%, rgba(34,29,22,.9) 34%, rgba(34,29,22,.66) 58%, rgba(34,29,22,.24) 80%, rgba(34,29,22,0) 100%); }
 .tajo__txt { width: var(--ancho); margin-inline: auto; padding: 2.5rem 0; }
 .tajo__txt h2 { font-size: var(--p-3); max-width: 22ch; color: var(--crema); }
-.tajo__txt p { max-width: 48ch; color: #CBC3B6; margin: .9rem 0 0; }
+.tajo__txt p { max-width: 48ch; color: var(--crema-l); margin: .9rem 0 0; }
+
+/* ── El calendario de la temporada ─────────────────────────────────
+   Doce columnas que empiezan en SEPTIEMBRE, porque la fruta del sur
+   empieza en primavera: así cada temporada es un tramo continuo y la
+   frambuesa no queda partida entre diciembre y enero.
+   Cada barra lleva su texto escrito dentro: si el CSS no llega, la
+   lista se sigue leyendo como lista. */
+.temporada { padding: var(--aire) 0; background: var(--crema-2); }
+.cal { padding: 1.6rem 1.2rem 1.2rem; background: var(--crema); }
+.cal.ej::after { background: var(--crema); }
+.cal__meses,
+.cal__f {
+  display: grid;
+  grid-template-columns: 7.5rem repeat(12, 1fr);
+  gap: 0 2px;
+  align-items: center;
+}
+.cal__meses { margin: 0 0 .6rem; grid-column: 1 / -1; }
+.cal__meses span {
+  grid-column: auto; font-family: var(--mono); font-size: .58rem;
+  letter-spacing: .04em; color: var(--medio); text-align: center;
+}
+.cal__meses span:first-child { grid-column: 2; }
+.cal__filas { list-style: none; margin: 0; padding: 0; display: grid; gap: .4rem; }
+.cal__n { font-family: var(--display); font-size: var(--p-1); padding-right: .8rem; }
+.cal__b {
+  min-height: 34px; display: flex; align-items: center; justify-content: center;
+  background: var(--loza); color: #FFFFFF;   /* 7,0:1 */
+  font-family: var(--mono); font-size: .62rem; letter-spacing: .04em;
+  border-radius: 4px; padding: .2rem .5rem; text-align: center;
+}
+/* El destacado rompe el patrón: la frambuesa va en tinta, no en loza.
+   14,4:1 con la crema encima. Es la temporada que se acaba primero y
+   es la que tiene que saltar a la vista. */
+.b--todo    { grid-column: 2 / 14; }
+.b--dic-mar { grid-column: 5 / 9; background: var(--tinta); color: var(--crema); }
+.b--mar-may { grid-column: 8 / 11; }
+.b--mar-ago { grid-column: 8 / 14; }
+
+@media (max-width: 720px) {
+  .cal__meses { display: none; }
+  .cal__f { grid-template-columns: 1fr; gap: .2rem; }
+  .cal__b, .b--todo, .b--dic-mar, .b--mar-may, .b--mar-ago { grid-column: 1; justify-content: flex-start; }
+  .cal__n { padding-right: 0; }
+}
 
 /* ── La familia ────────────────────────────────────────────────── */
-.familia { padding: var(--aire) 0; background: var(--crema-2); }
+.familia { padding: var(--aire) 0; }
 .hueco {
-  padding: 1.8rem; background: var(--crema);
+  padding: 1.8rem; background: var(--crema-2);
   background-image: repeating-linear-gradient(135deg, rgba(34,29,22,.04) 0 10px, transparent 10px 20px);
   max-width: 70ch;
 }
 .hueco::after { background: var(--crema); }
 .hueco p { margin: 0; font-size: var(--p--1); color: var(--medio); }
 
-/* ── El kuchen bien hecho, con telón ───────────────────────────── */
-.masa { padding: var(--aire) 0; }
+/* ── El kuchen bien hecho · banda oscura con telón ─────────────────
+   Invertida a propósito: es la única sección de puro argumento y el
+   telón de harina se lee mejor sobre tinta. Todos los grises de la
+   paleta clara están reescritos acá abajo uno por uno. */
+.masa { padding: var(--aire) 0; background: var(--tinta); color: var(--crema); }
 .con-telon { position: relative; isolation: isolate; overflow: hidden; }
 .telon { position: absolute; inset: 0; z-index: -1; pointer-events: none; }
-/* Foto NÍTIDA al 15%: telón, no aura. Cero desenfoque. */
+/* Foto NÍTIDA a baja opacidad: telón, no aura. Cero desenfoque. La
+   máscara la apaga contra los dos bordes, que es lo que un ::after no
+   puede hacer sin dejar corte recto. */
 .telon img {
   display: block; width: 100%; height: 100%;
-  object-fit: cover; object-position: 50% 46%; opacity: .15;
+  object-fit: cover; object-position: 50% 46%; opacity: .17;
   -webkit-mask-image: linear-gradient(180deg, transparent 0%, #000 20%, #000 74%, transparent 100%);
           mask-image: linear-gradient(180deg, transparent 0%, #000 20%, #000 74%, transparent 100%);
 }
 .senales { list-style: none; margin: 0; padding: 0; counter-reset: s; display: grid; gap: 1rem; max-width: 76ch; }
-.senales li { counter-increment: s; display: grid; grid-template-columns: 2.6rem 1fr; gap: .3rem 1rem; padding: 1.1rem 1.2rem; background: var(--crema-2); border-radius: 6px; }
-.senales li::before { content: counter(s, decimal-leading-zero); grid-row: 1 / span 2; font-family: var(--mono); font-size: var(--p-1); color: var(--loza); }
-.senales b { font-family: var(--display); font-size: var(--p-1); }
-.senales span { font-size: var(--p--1); color: var(--medio); }
+.senales li { counter-increment: s; display: grid; grid-template-columns: 2.6rem 1fr; gap: .3rem 1rem; padding: 1.1rem 1.2rem; background: var(--tinta-2); border-radius: 6px; border-left: 3px solid rgba(168,192,232,.35); }
+.senales li::before { content: counter(s, decimal-leading-zero); grid-row: 1 / span 2; font-family: var(--mono); font-size: var(--p-1); color: var(--loza-l); }
+.senales b { font-family: var(--display); font-size: var(--p-1); color: var(--crema); }
+.senales span { font-size: var(--p--1); color: var(--crema-l); }
+
+/* ── Mitades · la once ─────────────────────────────────────────── */
+.mit { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); background: var(--crema-2); align-items: stretch; }
+.mit__foto { margin: 0; min-height: 100%; }
+.mit__foto img { display: block; width: 100%; height: 100%; min-height: clamp(280px, 40vw, 520px); max-height: 640px; object-fit: cover; object-position: 50% 58%; }
+.mit__txt { padding: var(--aire) clamp(1.25rem, 5vw, 3.5rem); align-self: center; }
+.mit__txt p { max-width: 52ch; color: var(--medio); }
+.mit__txt .nota { max-width: 52ch; }
 
 /* ── Cita ──────────────────────────────────────────────────────── */
 .cita { position: relative; margin: 0; isolation: isolate; min-height: min(48vh, 380px); display: grid; place-items: center; overflow: hidden; }
-.cita img { position: absolute; inset: 0; z-index: -1; width: 100%; height: 100%; object-fit: cover; object-position: 50% 48%; }
+/* Foto y clip con el mismo selector, igual que en la portada. */
+.cita img, .cita__video { position: absolute; inset: 0; z-index: -1; width: 100%; height: 100%; object-fit: cover; object-position: 50% 48%; }
+/* Texto CENTRADO, por lo tanto velo PLANO. Con un gradiente lateral la
+   mitad derecha de la frase quedaría sobre alfa .3 y no pasaría AA.
+   Con .76 el peor caso posible —un fotograma blanco puro debajo— deja el
+   fondo en rgb(87,83,79) y la crema encima en 6,8:1. Medido el 09-09-2026
+   sobre el PNG renderizado con la foto real: 7,0:1. (El comentario decía
+   11,2:1; era un cálculo optimista, nunca medido.) */
 .cita::after { content: ""; position: absolute; inset: 0; z-index: -1; background: rgba(34,29,22,.76); }
 .cita__txt { margin: 0; width: var(--ancho); padding: 3rem 0; }
 .cita__txt p { font-family: var(--display); font-size: var(--p-3); color: var(--crema); max-width: 24ch; margin: 0 auto; text-align: center; line-height: 1.26; }
 
 /* ── Mosaico ───────────────────────────────────────────────────── */
 .mos { padding: var(--aire) 0; }
-.mos__grilla { display: grid; gap: 4px; grid-template-columns: repeat(3, 1fr); width: var(--ancho); margin: 2rem auto 0; border-radius: 6px; overflow: hidden; }
+/* CUATRO columnas, no tres. Con seis fotos y la primera y la sexta a
+   span 2 salen ocho celdas: en tres columnas eso deja un hueco vacío en
+   la esquina de abajo, y en cuatro cierra en dos filas exactas. El span
+   es lo que rompe la retícula de seis iguales y sale gratis. */
+.mos__grilla { display: grid; gap: 4px; grid-template-columns: repeat(4, 1fr); width: var(--ancho); margin: 2rem auto 0; border-radius: 6px; overflow: hidden; }
 .mos__p { margin: 0; overflow: hidden; }
 .mos__p:nth-child(1), .mos__p:nth-child(6) { grid-column: span 2; }
-.mos__p img { display: block; width: 100%; height: 100%; aspect-ratio: 3 / 2; object-fit: cover; transition: transform .5s var(--salida); }
-.mos__p:hover img { transform: scale(1.05); }
-@media (max-width: 640px) { .mos__grilla { grid-template-columns: repeat(2, 1fr); } }
+.mos__p img { display: block; width: 100%; height: 100%; aspect-ratio: 3 / 2; object-fit: cover; filter: saturate(.92); transition: transform .5s var(--salida), filter .5s ease; }
+.mos__p:hover img { transform: scale(1.05); filter: saturate(1); }
+/* Bajo 900 px, dos columnas: los mismos ocho huecos caben en cuatro
+   filas exactas y la primera y la sexta pasan a ocupar el ancho entero. */
+@media (max-width: 900px) { .mos__grilla { grid-template-columns: repeat(2, 1fr); } }
 
 /* ── Encargos ──────────────────────────────────────────────────── */
 .encargos { padding: var(--aire) 0; background: var(--crema-2); }
@@ -301,7 +476,7 @@ h1, h2, h3 { font-family: var(--display); font-weight: 700; line-height: 1.16; m
   background: #FCFAF4; color: var(--tinta); text-transform: none;
 }
 .form input:focus-visible, .form select:focus-visible { border-color: var(--loza); }
-.form__salida { font-family: var(--mono); font-size: var(--p--1); background: var(--crema-2); border-left: 3px solid var(--loza); border-radius: 0 6px 6px 0; padding: .7rem .8rem; margin: .2rem 0 0; white-space: pre-wrap; color: var(--medio); }
+.form__salida { font-family: var(--mono); font-size: var(--p--1); background: var(--crema-2); border-left: 3px solid var(--loza); border-radius: 0 6px 6px 0; padding: .7rem .8rem; margin: .2rem 0 0; white-space: pre-wrap; word-break: break-word; color: var(--medio); }
 .form__salida:empty { display: none; }
 .form__acciones { display: flex; flex-wrap: wrap; gap: .7rem; }
 .form__sinjs { margin: 1rem 0 0; font-size: var(--p--1); color: var(--medio); }
@@ -309,15 +484,17 @@ h1, h2, h3 { font-family: var(--display); font-weight: 700; line-height: 1.16; m
 /* ── Para la familia ───────────────────────────────────────────── */
 .dueno { padding: var(--aire) 0; background: var(--tinta); color: var(--crema); }
 .dueno__cols { display: grid; gap: 2rem; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); margin-top: 1rem; }
-.dueno__cols h3 { font-size: var(--p-1); color: var(--loza-l); margin-bottom: .5rem; }
-.dueno__cols p { margin: 0; color: #BEB6A8; font-size: var(--p--1); }
+.dueno__cols h3 { font-family: var(--mono); font-size: var(--p--1); letter-spacing: .1em; text-transform: uppercase; color: var(--loza-l); margin-bottom: .6rem; }
+.dueno__cols p { margin: 0; color: var(--crema-l); font-size: var(--p--1); }
 .dueno__cols b { color: var(--crema); }
 .dueno__cierre { display: flex; flex-wrap: wrap; gap: 1.6rem; margin: 2.5rem 0 0; }
 .flecha { color: var(--loza-l); text-decoration: none; font-weight: 600; border-bottom: 1px solid rgba(168,192,232,.4); padding-bottom: .15rem; }
 .flecha:hover { border-bottom-color: var(--loza-l); }
+.flecha span { display: inline-block; transition: transform .2s var(--salida); }
+.flecha:hover span { transform: translateX(4px); }
 
 /* ── Pie ───────────────────────────────────────────────────────── */
-.pie { background: #1B1710; color: #8E8778; padding: 2rem clamp(1.2rem, 5vw, 3rem); }
+.pie { background: #1B1710; color: #9C9585; padding: 2rem clamp(1.2rem, 5vw, 3rem); }
 .pie p { margin: 0; font-size: var(--p--1); max-width: 92ch; }
 
 /* ══ Animación ═════════════════════════════════════════════════
@@ -335,13 +512,23 @@ h1, h2, h3 { font-family: var(--display); font-weight: 700; line-height: 1.16; m
 .js .acciones        { animation-delay: .36s; }
 @keyframes entra { from { opacity: 0; transform: translateY(24px); } to { opacity: 1; transform: none; } }
 
+/* ── Cascada de hijos ──────────────────────────────────────────────
+   El CONTENEDOR se neutraliza y animan los hijos. Si no se neutraliza,
+   contenedor e hijos bajan a la vez y el grupo entero se desplaza. */
+.js .cascada.rev { opacity: 1; transform: none; transition: none; }
+.js .cascada.rev > * { opacity: 0; transform: translateY(26px); }
+.js .cascada.rev.ok > * {
+  opacity: 1; transform: none;
+  transition: opacity .3s ease-out, transform .6s var(--salida);
+  transition-delay: calc(var(--i, 0) * 60ms);
+}
+
 /* ── La vitrina: pop (regla 3) ─────────────────────────────────────
    Escala 0 → 1 con el origen al centro y sin estados intermedios: un
    scale(1.1) a mitad de camino pelea con la curva. Stagger 60 ms, seis
-   kuchen aterrizan en 0,3 s. Observer sobre el CONTENEDOR. */
-.js .kuchen.rev,
-.js .mos__grilla.rev { opacity: 1; transform: none; transition: none; }
-
+   kuchen aterrizan en 0,3 s. Observer sobre el CONTENEDOR, que se
+   neutraliza igual que una cascada. */
+.js .kuchen.rev { opacity: 1; transform: none; transition: none; }
 .js .kuchen.rev > * {
   opacity: 0; transform: scale(0); transform-origin: 50% 50%;
 }
@@ -359,32 +546,55 @@ h1, h2, h3 { font-family: var(--display); font-weight: 700; line-height: 1.16; m
   transition-delay: calc(var(--i, 0) * 60ms + 150ms);
 }
 
-/* El mosaico pasa de reveal individual a cascada por contenedor. */
-.js .mos__grilla.rev > * { opacity: 0; transform: translateY(28px); }
-.js .mos__grilla.rev.ok > * {
-  opacity: 1; transform: none;
-  transition: opacity .3s ease-out, transform .6s var(--salida);
-  transition-delay: calc(var(--i, 0) * 60ms);
-}
 /* El retardo por índice va acá y no en un style="" del HTML: la CSP lo
    bloquea sin decir una palabra. */
-.kuchen > :nth-child(1), .mos__grilla > :nth-child(1) { --i: 0; }
-.kuchen > :nth-child(2), .mos__grilla > :nth-child(2) { --i: 1; }
-.kuchen > :nth-child(3), .mos__grilla > :nth-child(3) { --i: 2; }
-.kuchen > :nth-child(4), .mos__grilla > :nth-child(4) { --i: 3; }
-.kuchen > :nth-child(5), .mos__grilla > :nth-child(5) { --i: 4; }
-.kuchen > :nth-child(6), .mos__grilla > :nth-child(6) { --i: 5; }
+.kuchen > :nth-child(1), .cascada > :nth-child(1) { --i: 0; }
+.kuchen > :nth-child(2), .cascada > :nth-child(2) { --i: 1; }
+.kuchen > :nth-child(3), .cascada > :nth-child(3) { --i: 2; }
+.kuchen > :nth-child(4), .cascada > :nth-child(4) { --i: 3; }
+.kuchen > :nth-child(5), .cascada > :nth-child(5) { --i: 4; }
+.kuchen > :nth-child(6), .cascada > :nth-child(6) { --i: 5; }
+.cascada > :nth-child(7) { --i: 6; }
+.cascada > :nth-child(8) { --i: 7; }
+
+/* ── El difuminado al scroll ───────────────────────────────────────
+   Lo que una demo corriente consigue con GSAP y 70 KB de librería, acá
+   son doce líneas que corren en el compositor y no existen donde el
+   navegador no las soporta. Página CLARA: la portada se disuelve hacia
+   el blanco, así que va blur bajo con opacidad; el scale(1.06) evita
+   que el desenfoque muestre el filo de la caja. El filter va en el
+   CONTENEDOR, nunca en el <video>. */
+@supports (animation-timeline: scroll()) {
+  @media (prefers-reduced-motion: no-preference) and (min-width: 761px) {
+    .portada__foto {
+      animation: portada-se-va linear both;
+      animation-timeline: scroll(root block);
+      animation-range: 0 90vh;
+    }
+    .cita {
+      animation: cita-enfoca linear both;
+      animation-timeline: view(block);
+      animation-range: entry 0% entry 95%;
+    }
+  }
+}
+@keyframes portada-se-va { to { filter: blur(7px) opacity(.55); transform: scale(1.06); } }
+@keyframes cita-enfoca   { from { filter: blur(9px); } to { filter: blur(0); } }
 
 @media (prefers-reduced-motion: reduce) {
-  .js .portada__texto > * { animation: none; }
+  .js .portada__texto > * { animation: none; opacity: 1; transform: none; }
   .mos__p:hover img { transform: none; }
-  .js .rev { opacity: 1; transform: none; }
-  .js .kuchen.rev > *, .js .mos__grilla.rev > * { opacity: 1; transform: none; }
-  .js .kuchen.rev > * .ku__h { opacity: 1; }
+  .flecha:hover span { transform: none; }
+  .boton:hover { transform: none; }
+  /* Los reveals NO se desplazan, pero SÍ siguen fundiendo: un fundido
+     no es movimiento; un salto de 22 px sí. */
+  .js .rev, .js .cascada.rev > * { transform: none; }
+  .js .kuchen.rev > * { transform: none; }
   /* Horno encendido y sin vapor. */
   .js .horno__boca { animation: none; fill: var(--ambar); }
   .js .vapor { animation: none; }
 }
+
 /* ── Blancos de toque ──────────────────────────────────────────────
    Regla de la casa: nada que se toque puede medir menos de 44 px de
    alto. Los enlaces sueltos —el teléfono dentro de la ficha de datos
@@ -401,3 +611,131 @@ h1, h2, h3 { font-family: var(--display); font-weight: 700; line-height: 1.16; m
 /* El botón chico de la cabecera es el CTA principal en teléfono:
    en móvil sube a 44 px como todo lo demás que se toca. */
 @media (max-width: 1060px) { .boton--chico { min-height: 44px; } }
+
+/* ══════════════════════════════════════════════════════════════════
+   VIDEO DE FONDO
+   La foto sigue siendo la base y el video se funde encima cuando puede
+   reproducirse. Si el visitante pidió menos movimiento o ahorra datos,
+   main.js no lo pide y no se descarga ni un byte. No hay atributo
+   poster: el <img> hermano hace ese trabajo y NO se va, así que nunca
+   aparece un rectángulo negro.
+   Presupuesto: portada ≤ 1,8 MB, banda ≤ 1,2 MB, 720p sin audio.
+   ══════════════════════════════════════════════════════════════════ */
+.portada__video, .cita__video {
+  position: absolute; inset: 0; opacity: 0;
+  transition: opacity 1.4s ease; pointer-events: none;
+}
+.portada__video.video--ver, .cita__video.video--ver { opacity: 1; }
+
+/* En móvil las dos capas rotan a vertical, porque el texto pasó de
+   estar al lado a estar debajo. */
+@media (max-width: 760px) {
+  /* El padding de abajo es la franja del horno: 17 rem dejan los 161 px
+     del SVG más el aire que necesita el vapor para subir sin llegar a
+     los botones. */
+  .portada { min-height: 0; padding-top: 2rem; padding-bottom: 17rem; }
+  .portada__foto img, .portada__video {
+    object-position: 50% 50%;
+    -webkit-mask-image: linear-gradient(180deg, transparent 0%, rgba(0,0,0,.5) 34%, #000 64%);
+            mask-image: linear-gradient(180deg, transparent 0%, rgba(0,0,0,.5) 34%, #000 64%);
+  }
+  .portada__foto::after {
+    background: linear-gradient(180deg, rgba(247,242,232,1) 0%, rgba(247,242,232,.9) 38%, rgba(247,242,232,.5) 72%, rgba(247,242,232,.2) 100%);
+  }
+}
+
+/* ══════════════════════════════════════════════════════════════════
+   BOTÓN FLOTANTE DE CONTACTO
+   El patrón de la casa es el botón de WhatsApp con el número del
+   negocio. Repostería Hagemann no publica teléfono, así que apunta a
+   su Instagram —el único canal suyo que existe hoy— y no a un número
+   inventado. Color de marca de Instagram a propósito: se reconoce sin
+   leerlo, y eso es lo que hace que se toque.
+
+   56 px de alto, por encima de los 44 del mínimo táctil. Blanco sobre
+   #C13584 mide 5,07:1, AA de sobra para un texto de .95rem en negrita.
+
+   La dirección del truco importa: el botón se ve SIEMPRE por defecto y
+   el JS sólo lo aparta mientras el visitante está en la portada, para
+   no tapar el titular. Si el script no arranca —o si rescate.js quita
+   la clase .js— el botón queda visible, que es el estado que vende.
+   ══════════════════════════════════════════════════════════════════ */
+.wapp {
+  position: fixed;
+  right: max(1rem, env(safe-area-inset-right, 0px));
+  bottom: max(1rem, env(safe-area-inset-bottom, 0px));
+  z-index: 60;
+  display: inline-flex;
+  align-items: center;
+  gap: .55rem;
+  height: 56px;
+  padding: 0 1.15rem 0 1rem;
+  border-radius: 999px;
+  background: #C13584;
+  color: #FFFFFF;
+  text-decoration: none;
+  font-family: var(--cuerpo);
+  font-size: .95rem;
+  font-weight: 600;
+  line-height: 1;
+  box-shadow: 0 6px 18px rgba(34,29,22,.3), 0 2px 6px rgba(34,29,22,.2);
+  transition: opacity .28s ease, transform .28s ease, box-shadow .18s ease;
+}
+.wapp:hover { background: #A32B6F; box-shadow: 0 10px 24px rgba(34,29,22,.36), 0 2px 6px rgba(34,29,22,.22); }
+.wapp__i { width: 26px; height: 26px; flex: none; fill: currentColor; }
+/* Apartado mientras se mira la portada. Con sólo opacity y pointer-events
+   el enlace seguía siendo alcanzable con el tabulador estando invisible:
+   el primer Tab de la página caía en un botón que no se ve. Por eso
+   además lleva visibility, y la transición de visibility va con 0s de
+   duración y .28s de RETARDO, de modo que el fundido de salida se ve
+   entero y recién al final el botón sale del orden de tabulación.
+   Al volver gana la transición de .wapp, que no lista visibility: vuelve
+   a ser visible en el acto y aparece con su fundido de entrada. */
+.wapp--arriba {
+  opacity: 0; transform: translateY(16px) scale(.94);
+  pointer-events: none; visibility: hidden;
+  transition: opacity .28s ease, transform .28s ease, visibility 0s linear .28s;
+}
+/* Bajo 520 px queda el círculo: el rótulo se esconde sin salir del DOM,
+   para que el lector de pantalla siga leyendo el aria-label. */
+@media (max-width: 520px) {
+  .wapp { width: 56px; padding: 0; justify-content: center; }
+  .wapp__t { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); }
+}
+/* El pie deja sitio para que el botón no se coma la última línea. */
+.pie { padding-bottom: 5.5rem; }
+
+/* Toques de 44 px: las anclas del nav medían 38 px y el CTA de la
+   cabecera 42 px, medidos sobre la página viva a 1440 px. */
+.cab__nav a { display: inline-flex; align-items: center; min-height: 44px; padding: 0; border-bottom-width: 2px; }
+.boton--chico { min-height: 44px; }
+
+@media (prefers-reduced-motion: reduce) {
+  /* Se apaga el desplazamiento del botón, no su fundido. */
+  .wapp { transition: opacity .28s ease; }
+  .wapp--arriba { transform: none; }
+}
+
+/* ── MAPA DE UBICACION ──────────────────────────────────────────────
+   Imagen propia con mosaicos de OpenStreetMap pegados: la CSP prohibe
+   pedir nada a un tercero, asi que un iframe de Google Maps quedaria en
+   blanco SIN dar un solo error. El "Como llegar" si es un enlace, y un
+   enlace no lo bloquea nada.
+   Los colores salen de currentColor a proposito: asi el bloque se adapta
+   a la paleta de cada demo sin conocerla y sin chocar con ella.
+   La atribucion a OpenStreetMap la exige su licencia (ODbL). */
+.mapa-sec { padding: clamp(2.5rem, 6vw, 4.5rem) 0; }
+.mapa { margin: 1.4rem 0 0; border: 1px solid; border-color: color-mix(in srgb, currentColor 22%, transparent); border-radius: 10px; overflow: hidden; }
+@supports not (color: color-mix(in srgb, red 50%, blue)) { .mapa { border-color: rgba(128, 128, 128, .35); } }
+.mapa img { display: block; width: 100%; height: auto; aspect-ratio: 16 / 10; object-fit: cover; }
+.mapa__pie {
+  display: flex; flex-wrap: wrap; align-items: center; gap: .4rem 1rem;
+  padding: .75rem .9rem;
+  font-size: .86em; line-height: 1.45;
+  border-top: 1px solid; border-top-color: color-mix(in srgb, currentColor 22%, transparent);
+}
+@supports not (color: color-mix(in srgb, red 50%, blue)) { .mapa__pie { border-top-color: rgba(128, 128, 128, .35); } }
+.mapa__pie b { font-weight: 700; }
+.mapa__ir { color: inherit; font-weight: 700; text-decoration: underline; min-height: 44px; display: inline-flex; align-items: center; }
+.mapa__cred { width: 100%; font-size: .84em; opacity: .8; }
+.mapa__cred a { color: inherit; }

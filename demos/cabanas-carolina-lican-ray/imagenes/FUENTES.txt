@@ -56,3 +56,10 @@ La primera portada era un prado precioso — y era un parque inglés:
 setos ornamentales, coníferas podadas y cerros verdes de Irlanda.
 Licán Ray no se ve así. Se cambió por una pradera con bosque nativo y
 un cerro detrás, que es lo que hay de verdad camino a Licán Ray.
+
+MAPA DE UBICACION — mapa-01.jpg
+  768 x 768 · zoom 14 · centro -39.4897238, -72.1553851
+  Mosaicos de OpenStreetMap pegados en una sola imagen, con el marcador
+  dibujado encima. Datos (c) OpenStreetMap contributors, licencia ODbL:
+  la atribucion tiene que ir VISIBLE junto al mapa, en el pie de la figura.
+  https://www.openstreetmap.org/copyright

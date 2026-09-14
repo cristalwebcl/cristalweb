@@ -27,7 +27,9 @@
 
 <div class="propuesta">
   <p class="propuesta__que">Propuesta de sitio web — preparada para <b>Veterinaria Vetval</b> por CristalWeb</p>
-  <p class="propuesta__gancho">4,8 con 157 reseñas. Y la pregunta que más aleja a la gente de una veterinaria —cuánto va a costar— sin nadie que la enfrente por escrito.</p>
+  <p class="propuesta__gancho">4,8 con 157 reseñas y ninguna página propia (verificado el 09-09-2026): la
+    pregunta que más aleja a la gente de una veterinaria —cuánto va a costar— no tiene hoy dónde leerse.
+    Ésta es la página que debería estar ahí.</p>
 </div>
 
 <header class="cab" id="cab">
@@ -38,6 +40,8 @@
   <nav class="cab__nav" aria-label="Secciones">
     <a href="#cuanto">Cuánto cuesta</a>
     <a href="#consulta">Qué incluye</a>
+    <a href="#antes">Antes de venir</a>
+    <a href="#llamar">Contacto</a>
   </nav>
   <a class="cab__tel" href="tel:+56632226700">
     <span class="cab__tel-rot">Valdivia</span>
@@ -64,6 +68,10 @@
     <p class="bajada">Es la pregunta que nadie hace en voz alta y que todos se hacen
       antes de pedir hora. La mayoría no la pregunta por vergüenza — y en vez de
       preguntar, posterga. Así llegan animales más tarde y más caros de tratar.</p>
+    <p class="portada__botones">
+      <a class="boton" href="tel:+56632226700">Llamar (63) 222 6700</a>
+      <a class="boton boton--linea" href="#cuanto">Cuánto cuesta, dicho antes</a>
+    </p>
     <dl class="specs">
       <div class="spec"><dt>nota en Google</dt><dd>4,8</dd></div>
       <div class="spec"><dt>reseñas</dt><dd>157</dd></div>
@@ -72,10 +80,25 @@
   </div>
 </section>
 
+<!-- ========= LAS CIFRAS ========= -->
+<!-- Cuatro números en la misma fila y con el mismo formato: dos que la
+     clínica se ganó, uno que es aritmética de esta página, y el último es
+     la herida. Sólo cuenta el 157, que es el que costó verificar; subir un
+     "9" de una grilla se lee como truco. El valor final va escrito dentro
+     del <b>, así que sin JS o con menos movimiento se lee igual. -->
+<section class="cifras" aria-label="Las cifras verificadas">
+  <ul class="cifras__lista cascada">
+    <li><b>4,8</b><span>nota en Google, hoy</span></li>
+    <li><b data-cuenta="157">157</b><span>reseñas de clientes</span></li>
+    <li><b>9</b><span>puntos del examen, desglosados acá abajo</span></li>
+    <li><b>0</b><span>páginas propias donde leer todo esto</span></li>
+  </ul>
+</section>
+
 <!-- ========= LA PIEZA FIRMA — CUÁNTO CUESTA ========= -->
 <section class="cuanto con-telon" id="cuanto" aria-labelledby="t-cuanto">
   <div class="telon" aria-hidden="true">
-    <img src="imagenes/telon-01.jpg" width="1200" height="800" decoding="async" alt="">
+    <img src="imagenes/telon-01.jpg" width="1200" height="800" loading="lazy" decoding="async" alt="">
   </div>
 
   <!-- AURA DE COLOR: la foto de rubro reventada a desenfoque. No se lee
@@ -95,7 +118,7 @@
       que de verdad no se pueden saber antes de examinar. Pero eso hay que
       <em>explicarlo</em>, porque el que no lo sabe asume lo peor.</p>
 
-    <ol class="puntos">
+    <ol class="puntos cascada">
       <li class="pt">
         <p class="pt__n">01</p>
         <div>
@@ -161,14 +184,26 @@
     <p class="firma">Ninguna de estas cuatro cosas requiere bajar los precios. Las
       cuatro juntas son la diferencia entre una veterinaria que la gente considera
       cara y una que la gente considera <em>clara</em>, que no es lo mismo.</p>
+    <p class="nota-salud">Esta página no entrega orientación clínica ni reemplaza una
+      consulta. Habla de cómo se cobra y de qué esperar, nunca de qué hacer con un
+      animal enfermo.</p>
   </div>
 </section>
 
-<!-- ========= QUÉ INCLUYE LA CONSULTA — ESTRUCTURA J ========= -->
+<!-- ========= TAJO 1 — FRANJA A SANGRE ========= -->
+<figure class="tajo">
+  <img src="imagenes/tajo-01.jpg" width="2200" height="1237"
+       loading="lazy" decoding="async" alt="">
+  <figcaption class="tajo__txt">
+    <p>La conversación del precio se tiene una vez. La desconfianza, todas las veces
+      que no se tuvo.</p>
+  </figcaption>
+</figure>
+
 <!-- ========= MEDIA PANTALLA ========= -->
 <section class="mitades" aria-labelledby="t-mitades">
   <div class="mitades__foto">
-    <img src="imagenes/media-01.jpg" width="2200" height="1467"
+    <img src="imagenes/media-01.jpg" width="1400" height="1050"
          loading="lazy" decoding="async" alt="">
   </div>
   <div class="mitades__texto">
@@ -178,6 +213,7 @@
   </div>
 </section>
 
+<!-- ========= QUÉ INCLUYE LA CONSULTA — ESTRUCTURA J ========= -->
 <section class="consulta" id="consulta" aria-labelledby="t-consulta">
   <div class="consulta__cabecera">
     <p class="antetitulo antetitulo--claro">Lo que pasa en veinte minutos</p>
@@ -189,7 +225,7 @@
   </div>
 
   <div class="specs-envoltura">
-    <dl class="ficha">
+    <dl class="ficha cascada">
       <div class="sp">
         <dt>Peso y temperatura</dt>
         <dd class="sp__v">Incluido</dd>
@@ -243,7 +279,6 @@
     un rato».</p>
 </section>
 
-<!-- ========= EL CIERRE — T1 ========= -->
 <!-- ========= LA CITA A SANGRE ========= -->
 <section class="cita" aria-labelledby="t-cita">
   <div class="cita__foto" aria-hidden="true">
@@ -256,13 +291,79 @@
   </blockquote>
 </section>
 
+<!-- ========= ANTES DE VENIR — SECCIÓN CON TELÓN ========= -->
+<!-- Segunda pieza de la casa: la del rubro salud es «qué pasa en la primera
+     consulta y qué traer». Todo lo de acá es oficio general, no protocolo de
+     esta clínica: por eso lleva su marca de ejemplo y ni un dato inventado. -->
+<section class="antes con-telon" id="antes" aria-labelledby="t-antes">
+  <div class="telon telon--antes" aria-hidden="true">
+    <img src="imagenes/telon-02.jpg" width="1200" height="800" loading="lazy" decoding="async" alt="">
+  </div>
 
+  <div class="antes__cuerpo">
+    <p class="antetitulo antetitulo--claro">Para que la consulta rinda</p>
+    <h2 id="t-antes">Qué conviene traer<br>y qué anotar antes</h2>
+    <p class="entrada">Nada de esto es obligatorio y ninguna consulta se rechaza por no
+      traerlo. Pero cada dato que llega escrito es tiempo que no se gasta
+      reconstruyéndolo — y el tiempo de consulta es, literalmente, parte de lo que
+      se paga.</p>
+    <p class="marca-ejemplo" data-ejemplo="Referencia general del oficio — lo que pida esta clínica lo define la clínica"></p>
 
-<!-- ========= TAJO — FRANJA A SANGRE ========= -->
-<div class="tajo" aria-hidden="true">
-  <img src="imagenes/banda-01.jpg" width="1100" height="733"
+    <ol class="momentos cascada">
+      <li class="mm">
+        <p class="mm__n">01</p>
+        <div>
+          <h3>El carnet de vacunas, o una foto de él</h3>
+          <p>Si no aparece, sirve cualquier papel de la última atención. Sin nada
+            escrito, un refuerzo se decide a ciegas o se repite uno que ya estaba
+            puesto — y eso se paga dos veces.</p>
+        </div>
+      </li>
+      <li class="mm">
+        <p class="mm__n">02</p>
+        <div>
+          <h3>Lo que le está dando hoy</h3>
+          <p>Nombre y cada cuánto. Vale la caja, una foto de la caja o el nombre
+            anotado en el teléfono. El antipulgas y los suplementos también cuentan:
+            son la mitad de las sorpresas de una consulta.</p>
+        </div>
+      </li>
+      <li class="mm">
+        <p class="mm__n">03</p>
+        <div>
+          <h3>Desde cuándo pasa lo que pasa</h3>
+          <p>Una fecha aproximada vale más que «hace tiempo». Si come menos, cuánto
+            menos; si cojea, de qué pata y desde qué día. Es el dato que más acorta
+            el camino hasta saber qué mirar.</p>
+        </div>
+      </li>
+      <li class="mm">
+        <p class="mm__n">04</p>
+        <div>
+          <h3>Cómo va a viajar hasta acá</h3>
+          <p>Transportín para gatos y animales chicos, correa corta para los perros.
+            Una sala de espera con un gato suelto es un problema para todos, y el
+            susto del animal empieza antes de entrar por la puerta.</p>
+        </div>
+      </li>
+    </ol>
+
+    <p class="firma firma--claro">Cuatro cosas, ninguna cuesta plata. Juntas son la
+      diferencia entre una consulta que alcanza para todo y una que se va en
+      reconstruir lo que ya se sabía en la casa.</p>
+  </div>
+</section>
+
+<!-- ========= TAJO 2 — FRANJA A SANGRE ========= -->
+<figure class="tajo tajo--dos">
+  <img src="imagenes/tajo-02.jpg" width="2200" height="1238"
        loading="lazy" decoding="async" alt="">
-</div>
+  <figcaption class="tajo__txt">
+    <p>Lo que se explica antes no se discute después.</p>
+  </figcaption>
+</figure>
+
+<!-- ========= EL CIERRE — T1 ========= -->
 <section class="cierre" id="llamar" aria-labelledby="t-cierre">
   <p class="cierre__rot">Preguntar el precio no cuesta nada</p>
   <h2 id="t-cierre" class="cierre__tel">
@@ -271,6 +372,35 @@
   <p class="cierre__pie">Es el número publicado en su ficha de Google. La mitad de
     las llamadas a una veterinaria son por precio, y contestarlas bien es la mitad
     del trabajo comercial.</p>
+
+  <!-- Ficha de datos: lo verificado va derecho, y lo que no existe dice
+       «Falta» con su etiqueta. Preferible a inventar una dirección. -->
+  <dl class="datos cascada">
+    <div><dt>Teléfono</dt><dd><a class="dato-tel" href="tel:+56632226700">(63) 222 6700</a><span class="dato-nota">verificado en su ficha de Google</span></dd></div>
+    <div><dt>Dirección</dt><dd>Av. Pedro Aguirre Cerda 1102, Valdivia<span class="dato-nota">de su ficha de Google, igual que el teléfono — el número exacto lo confirma la clínica</span></dd></div>
+    <div><dt>Horario</dt><dd><span class="falta">Falta: qué días y hasta qué hora</span></dd></div>
+    <div><dt>Urgencias</dt><dd><span class="falta">Falta: si atienden fuera de horario y cómo se avisa</span></dd></div>
+    <div><dt>WhatsApp</dt><dd><span class="falta">Falta: confirmar el número</span> — el botón verde de esta demo apunta al teléfono publicado</dd></div>
+  </dl>
+
+  <!-- ══ MAPA DE UBICACIÓN ══════════════════════════════════════════
+       Imagen propia: los mosaicos de OpenStreetMap se bajaron una vez y
+       se pegaron en un JPEG. La CSP de esta página no deja incrustar un
+       mapa de terceros — ni Google Maps ni Leaflet cargarían, y no
+       darían ni un error visible. El botón sí es un enlace, y enlazar
+       no lo prohíbe nadie.
+       La atribución de OpenStreetMap va visible y no se saca. -->
+  <div class="llegar">
+    <h3 class="llegar__rot">Cómo llegar</h3>
+    <figure class="mapa">
+      <img src="imagenes/mapa-01.jpg" width="768" height="768" loading="lazy" decoding="async"
+           alt="Mapa de Valdivia: la avenida Pedro Aguirre Cerda corre junto al río Calle Calle y el punto rojo marca la altura de la clínica.">
+      <figcaption class="mapa__pie">
+        <span>Mapa: &copy; <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener">OpenStreetMap</a> contributors. El punto marca la avenida a la altura publicada, no la puerta.</span>
+        <a class="mapa__ir" href="https://www.google.com/maps/search/?api=1&amp;query=-39.7949114,-73.2130567" target="_blank" rel="noopener">Cómo llegar &rarr;</a>
+      </figcaption>
+    </figure>
+  </div>
 </section>
 
 <!-- ========= LA TIRA ========= -->
@@ -286,76 +416,89 @@
   </figure>
 </section>
 
-</main>
-
-
-
 <!-- ========= MOSAICO ========= -->
 <section class="mos" aria-labelledby="t-mos">
-  <h2 id="t-mos" class="mos__titulo">La misma serie, más de cerca</h2>
-  <p class="mos__nota">Estas seis ya aparecen más arriba en la página. Vuelven acá en otro tamaño porque una sola pasada de imágenes deja el scroll vacío, y porque de cerca se ven cosas que en grande se pierden. La procedencia de cada una está en imagenes/FUENTES.txt.</p>
+  <h2 id="t-mos" class="mos__titulo">Los que entran por esa puerta</h2>
+  <p class="mos__nota">Diez imágenes de rubro, ninguna de esta clínica: hoy no hay
+    fotos propias verificables. Cuando lleguen las suyas —el mesón, el box, la
+    fachada— entran acá sin tocar una línea de código. La procedencia de cada una
+    está en imagenes/FUENTES.txt.</p>
   <div class="mos__grilla">
     <figure class="mos__p">
-      <img src="imagenes/mos-01.jpg" width="780" height="520"
-           loading="lazy" decoding="async" alt="">
+      <img src="imagenes/mos-01.jpg" width="1200" height="800" loading="lazy" decoding="async" alt="Gato de pelo corto echado sobre el piso de madera.">
     </figure>
     <figure class="mos__p">
-      <img src="imagenes/mos-02.jpg" width="780" height="1170"
-           loading="lazy" decoding="async" alt="">
+      <img src="imagenes/mos-02.jpg" width="820" height="1093" loading="lazy" decoding="async" alt="Gato atigrado sostenido en brazos junto a una ventana.">
     </figure>
     <figure class="mos__p">
-      <img src="imagenes/mos-03.jpg" width="780" height="520"
-           loading="lazy" decoding="async" alt="">
+      <img src="imagenes/mos-03.jpg" width="820" height="1093" loading="lazy" decoding="async" alt="Perro de pelo duro con arnés, de paseo.">
     </figure>
     <figure class="mos__p">
-      <img src="imagenes/mos-04.jpg" width="780" height="520"
-           loading="lazy" decoding="async" alt="">
+      <img src="imagenes/mos-04.jpg" width="1200" height="800" loading="lazy" decoding="async" alt="Persona sosteniendo a su gato en brazos, boca arriba.">
     </figure>
     <figure class="mos__p">
-      <img src="imagenes/mos-05.jpg" width="780" height="520"
-           loading="lazy" decoding="async" alt="">
+      <img src="imagenes/mos-05.jpg" width="820" height="1093" loading="lazy" decoding="async" alt="Veterinario revisando la boca de un perro sobre la mesa.">
     </figure>
     <figure class="mos__p">
-      <img src="imagenes/mos-06.jpg" width="780" height="520"
-           loading="lazy" decoding="async" alt="">
+      <img src="imagenes/mos-06.jpg" width="820" height="1093" loading="lazy" decoding="async" alt="Manos con guantes revisando la oreja de un perro echado.">
+    </figure>
+    <figure class="mos__p">
+      <img src="imagenes/mos-07.jpg" width="820" height="1093" loading="lazy" decoding="async" alt="Dos profesionales atendiendo juntos a un perro pequeño.">
+    </figure>
+    <figure class="mos__p">
+      <img src="imagenes/mos-08.jpg" width="820" height="1093" loading="lazy" decoding="async" alt="Gato blanco y negro en brazos de su dueña.">
+    </figure>
+    <figure class="mos__p">
+      <img src="imagenes/mos-09.jpg" width="820" height="1093" loading="lazy" decoding="async" alt="Veterinario poniéndose los guantes antes de atender.">
+    </figure>
+    <figure class="mos__p">
+      <img src="imagenes/mos-10.jpg" width="820" height="1093" loading="lazy" decoding="async" alt="Gato blanco sentado sobre una mesa de madera.">
     </figure>
   </div>
 </section>
+
+</main>
+
 <section class="dueno" aria-labelledby="t-dueno">
   <h2 id="t-dueno">Para la clínica</h2>
-  <div class="dueno__cols">
+  <div class="dueno__cols cascada">
     <div>
       <h3>Lo que está verificado</h3>
-      <p>El 4,8 con 157 reseñas de su ficha de Google y el teléfono (63) 222 6700.
-        No hay página propia.</p>
+      <p>El 4,8 con 157 reseñas de su ficha de Google, el teléfono (63) 222 6700 y la
+        dirección de Av. Pedro Aguirre Cerda 1102, los tres copiados de esa misma
+        ficha. No hay página propia: eso lo comprobé el 09-09-2026.</p>
     </div>
     <div>
       <h3>Lo que no escribí</h3>
-      <p>Ni un solo precio. Ni siquiera un rango. Publicar una cifra equivocada de un
-        servicio de salud es la peor forma de empezar con un cliente, y además los
-        precios los mueven ustedes, no yo.</p>
+      <p>Ni un solo precio. Ni siquiera un rango. Ni un horario, ni un testimonio, ni
+        una foto de la clínica. Publicar una cifra equivocada de un servicio de salud
+        es la peor forma de empezar con un cliente, y además los precios los mueven
+        ustedes, no yo.</p>
     </div>
     <div>
       <h3>Lo que falta</h3>
-      <p>Los cuatro precios fijos, confirmar la política de presupuesto escrito y
-        revisar el desglose de la consulta. Con eso, son la única veterinaria de
-        Valdivia que le contesta a la pregunta que todos se hacen.</p>
+      <p>Los cuatro precios fijos, el horario, confirmar que la dirección de la ficha
+        sigue siendo la buena, confirmar la política de presupuesto escrito y revisar
+        el desglose de la consulta. Con eso, son la única veterinaria de Valdivia que
+        le contesta a la pregunta que todos se hacen.</p>
     </div>
   </div>
   <p class="dueno__cierre">
-    <a class="flecha" href="https://wa.me/56968650001" rel="noopener">Escribirme por WhatsApp <span aria-hidden="true">→</span></a>
+    <a class="flecha" href="mailto:cristalwebcl@gmail.com?subject=Veterinaria%20Vetval%20%E2%80%94%20la%20p%C3%A1gina%20que%20me%20mostraron">Escribirme por correo <span aria-hidden="true">→</span></a>
     <a class="flecha" href="../../" rel="noopener">Ver otros trabajos <span aria-hidden="true">→</span></a>
   </p>
 </section>
 
 <footer class="pie">
-  <p><b>Esta página no entrega orientación veterinaria ni publica precios.</b> El
-    desglose de la consulta es una referencia general del examen clínico, no
-    reemplaza la evaluación de un profesional y no describe necesariamente el
-    protocolo de esta clínica. Ningún valor está publicado y ninguna política de
-    presupuesto está confirmada.</p>
-  <p class="pie__demo">Sitio de demostración preparado por CristalWeb. El negocio no
-    lo ha encargado ni ha revisado su contenido.</p>
+  <div class="pie__in">
+    <p><b>Esta página no entrega orientación veterinaria ni publica precios.</b> El
+      desglose de la consulta y la lista de qué traer son referencias generales del
+      oficio, no reemplazan la evaluación de un profesional y no describen
+      necesariamente el protocolo de esta clínica. Ningún valor está publicado y
+      ninguna política de presupuesto está confirmada.</p>
+    <p class="pie__demo">Sitio de demostración preparado por CristalWeb. El negocio no
+      lo ha encargado ni ha revisado su contenido.</p>
+  </div>
 </footer>
 
 <script src="js/main.js"></script>

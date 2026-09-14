@@ -1,0 +1,182 @@
+FUENTES DE LAS IMÁGENES Y LOS VIDEOS
+Caballeros · Barbería, Av. Angelmó 2138, Puerto Montt — demo CristalWeb
+Actualizado el 08-09-2026.
+
+Formato: archivo <= banco | licencia | autor | página del banco | URL del
+original | tratamiento aplicado.
+
+Todo lo de acá viene de bancos libres. Ninguna foto es del negocio: son
+imágenes de rubro, no inventario. Ninguna lleva marca de tercero legible,
+precio dentro del cuadro, rostro identificable ni menores.
+
+
+── VIDEOS DE FONDO ────────────────────────────────────────────────────
+
+video/port.mp4   <=  mixkit | Mixkit Stock Video Free License (uso
+    comercial, sin atribución: https://mixkit.co/license/#videoFree) |
+    Mixkit |
+    https://mixkit.co/free-stock-video/male-barber-chairs-43236/ |
+    https://assets.mixkit.co/videos/43236/43236-720.mp4 |
+    recorte 0,5 s → 10,5 s, 1280 px, 720p H.264 a 1,4 Mbps, SIN pista de
+    audio, 1,79 MB.
+    Tres sillones de barbero VACÍOS en penumbra, con el cromo y el cuero
+    tomando la luz de las lámparas del fondo. Elegido por tres razones:
+    no aparece una sola persona —así no hay ningún rostro que pedir
+    permiso—, el cromo da la luminancia opuesta que pide un fondo marino,
+    y el sillón vacío es literalmente el argumento de la página («la
+    silla es una sola, la hora también»). El primer plano del cuadro cae
+    en el tercio izquierdo, que es justo la franja que la máscara de la
+    portada borra por completo.
+
+video/cita.mp4   <=  mixkit | Mixkit Stock Video Free License |
+    Mixkit |
+    https://mixkit.co/free-stock-video/barber-equipment-271/ |
+    https://assets.mixkit.co/videos/271/271-720.mp4 |
+    recorte 0 s → 8 s, 1280 px, 720p H.264 a 1,0 Mbps, SIN pista de
+    audio, 1,10 MB.
+    Tijeras, navaja y peines sobre el tapete de goma, con la cámara
+    haciendo un desplazamiento corto. Casi negro con destellos de acero:
+    el velo plano de .70 de la banda de cita lo deja como textura y la
+    frase se lee encima sin competencia. (Decía .78 hasta el 09-09-2026:
+    era el valor de una prueba anterior; el que está en el CSS y el que
+    se midió —5,3:1 en el peor caso, fotograma blanco— es .70.)
+
+Los dos clips se sirven desde el propio dominio (media-src 'self' en la
+CSP), se piden 240 px antes de que la sección entre en pantalla y no se
+descargan en absoluto si el visitante pidió menos movimiento o su
+navegador declara ahorro de datos.
+
+
+── FOTOS NUEVAS (08-09-2026) ──────────────────────────────────────────
+
+port-01.jpg   <=  fotograma del clip de portada (video/port.mp4) a 0,4 s,
+    1280×720, calidad 88. La licencia del clip lo cubre.
+    Va como base de la portada: es el MISMO cuadro con el que arranca el
+    video, así que cuando el clip termina de cargar y funde encima no se
+    nota el cambio. Es el único caso de la página en que la foto no llega
+    a 2560 px, y es a propósito: una foto de otra barbería debajo de este
+    clip habría hecho saltar la escena en el fundido. Ver
+    QUE-FOTOS-FALTAN.md, punto 1.
+
+cita-01.jpg   <=  fotograma del clip de la banda de cita (video/cita.mp4)
+    a 0,4 s, 1280×720, calidad 86. Misma razón que la de portada.
+    Reemplaza a la foto anterior de esa banda —navaja y brocha sobre
+    fondo blanco—, que sobre una página marino se leía como una mancha
+    gris: fondo oscuro pide foto con luz propia, y el acero la tiene.
+
+tajo-01.jpg   <=  pexels | Pexels License | RDNE Stock project |
+    https://www.pexels.com/es-es/foto/negro-silla-silla-de-barbero-tiro-vertical-7697709/ |
+    https://images.pexels.com/photos/7697709/pexels-photo-7697709.jpeg |
+    original vertical de 4206×6309; recorte 16:9 desde y=1850 (4206×2366)
+    y reescalado a 2200×1238, calidad 86.
+    Un sillón de barbero vacío, solo, con el cromo tomando la luz de la
+    ventana. Entra reemplazando a la foto anterior de este hueco —el
+    salón de madera con tres sillones—, que al mirarla a tamaño real
+    tenía DOS PERSONAS con la cara reconocible reflejadas en el espejo
+    del fondo y una tercera al costado. Regla de la casa: ningún rostro
+    sin permiso. De paso arregla dos cosas más: la foto vieja era un
+    salón cálido de otro país que sobre el marino se leía amarilla, y
+    mostraba tres sillones justo encima de la frase «acá no hay dos
+    sillones esperando». Un sillón solo es la frase.
+    El recorte se eligió a mano y no por el centro para dejar fuera los
+    frascos del mesón, que en el borde superior del original quedan con
+    la etiqueta a la vista.
+
+mos2-01.jpg   <=  pexels | Pexels License | cottonbro studio |
+    https://www.pexels.com/es-es/foto/textura-de-madera-peinado-preparacion-3992878/ |
+    https://images.pexels.com/photos/3992878/pexels-photo-3992878.jpeg |
+    original vertical de 4000×6000; recorte 3:2 desde (0,1500) de
+    3400×2267 y reescalado a 1200×800, calidad 80.
+    Tres peines —acero, azul y rojo— alineados sobre el mesón de madera,
+    con las navajas al lado. El azul y el rojo son casi el marino y la
+    boya de la paleta, así que la foto entra en la identidad sin
+    tocarla. Entra reemplazando a la foto anterior de este hueco, que
+    tenía la marca del fabricante del sillón GRABADA EN EL METAL del
+    apoyacabezas y legible a tamaño real; el recorte de ésta, además,
+    deja fuera el frasco del borde superior derecho del original, que
+    lleva la etiqueta de otra marca.
+
+mos3-01.jpg   <=  pexels | Pexels License | Los Muertos Crew |
+    https://www.pexels.com/es-es/foto/silla-multiusos-de-cuero-negra-y-plateada-en-una-barberia-8867166/ |
+    https://images.pexels.com/photos/8867166/pexels-photo-8867166.jpeg |
+    reescalada a 1200 px de ancho, calidad 80.
+    Sillón de barbero vacío. Entra reemplazando a la foto que estaba en
+    este hueco, que mostraba a un barbero y a su cliente de perfil, los
+    dos identificables, y una marca legible en la capa. Regla de la casa:
+    ningún rostro sin permiso.
+
+mos5-01.jpg   <=  pexels | Pexels License | cottonbro studio |
+    https://www.pexels.com/es-es/foto/textura-de-madera-peinado-preparacion-3992874/ |
+    https://images.pexels.com/photos/3992874/pexels-photo-3992874.jpeg |
+    reescalada a 1200 px de ancho, calidad 80.
+    Dos tijeras apoyadas en el canto del mesón. Entra reemplazando a la
+    foto anterior de este hueco, que tenía dos envases con la marca
+    legible a tamaño real («ELEGANCE», «BARBA»).
+
+mit-01.jpg   <=  ES la foto que hasta hoy ocupaba el hueco de la banda de
+    cita (navaja de afeitar, brocha y tazón de jabón sobre fondo hueso),
+    2200×1467, movida de tratamiento y no vuelta a descargar.
+    Sobre el fondo esmalte de la banda clara funciona al revés que sobre
+    el marino: masa negra sobre fondo claro, que es exactamente la regla
+    de luminancia opuesta. Comprobado a 4 aumentos que el sello grabado
+    en el mango de la brocha NO es legible. Procedencia: ver la nota de
+    abajo.
+
+
+── FOTOS HEREDADAS DE LA PRIMERA VERSIÓN (01-09-2026) ─────────────────
+
+telon-01.jpg · mos1-01.jpg · mos4-01.jpg · mos6-01.jpg · mit-01.jpg
+
+    Se bajaron con FotoRadar de bancos libres (pexels, pixabay, pxhere y
+    commons son las únicas fuentes que el buscador tiene habilitadas para
+    fondos de rubro) cuando se construyó la primera versión de la demo,
+    pero esa tanda NO dejó FUENTES.txt ni quedó la carpeta de búsqueda en
+    material\busquedas, así que la línea por archivo —autor y página del
+    banco— no se puede reconstruir sin inventarla, y acá no se inventa.
+
+    QUÉ SÍ SE COMPROBÓ, mirando las cinco a tamaño real:
+      · ninguna tiene rostro identificable (mos1 es una nuca; en las demás
+        no aparece gente),
+      · ninguna tiene marca de tercero legible ni precio en el cuadro,
+      · ninguna viene de plus.unsplash.com (esa fuente no está habilitada
+        en el buscador).
+
+    CORRECCIÓN DE LA SEGUNDA PASADA DEL 08-09-2026. La primera pasada de
+    hoy dio por buenas las siete heredadas. Al volver a abrirlas una por
+    una a resolución completa, DOS no pasaban:
+      · el tajo-01 anterior tenía dos personas con la cara reconocible
+        reflejadas en el espejo del fondo y una tercera al costado;
+      · el mos2-01 anterior tenía la marca del fabricante del sillón
+        grabada en el metal del apoyacabezas, legible a tamaño real.
+    Las dos se reemplazaron y quedaron anotadas más arriba. Con las del
+    mos3 y el mos5 de la primera pasada, son cuatro fotos cambiadas hoy
+    por la misma regla. La lección para el resto del catálogo: la
+    revisión hay que hacerla sobre el JPEG abierto, no sobre la página
+    renderizada —a tamaño de mosaico ninguna de las dos se notaba—.
+
+    PENDIENTE, y está en QUE-FOTOS-FALTAN.md: antes de que esta demo se
+    le muestre al dueño conviene volver a bajar esas cinco con el flujo
+    normal para que quede la línea completa de cada una. Es media hora de
+    trabajo y cierra el único hueco de papeles de la carpeta.
+
+
+── DIBUJO INCRUSTADO EN EL HTML ───────────────────────────────────────
+
+Icono del botón flotante  <=  simple-icons | CC0 1.0 (dominio público:
+    https://github.com/simple-icons/simple-icons/blob/master/LICENSE.md) |
+    glifo «instagram» |
+    https://simpleicons.org/?q=instagram |
+    va como <path> dentro de un <svg> escrito en el index.html, no como
+    archivo: la CSP de esta página tiene default-src 'none' y no deja
+    pedirle nada a un tercero, así que un <img src="https://..."> no
+    cargaría y el botón saldría vacío.
+    Es el único dibujo de la página que no es CSS. El mástil con la
+    bandera de la cabecera y el de la portada son dos rectángulos y un
+    clip-path: cero bytes de imagen.
+
+MAPA DE UBICACION — mapa-01.jpg
+  768 x 768 · zoom 16 · centro -41.4832907, -72.9608644
+  Mosaicos de OpenStreetMap pegados en una sola imagen, con el marcador
+  dibujado encima. Datos (c) OpenStreetMap contributors, licencia ODbL:
+  la atribucion tiene que ir VISIBLE junto al mapa, en el pie de la figura.
+  https://www.openstreetmap.org/copyright

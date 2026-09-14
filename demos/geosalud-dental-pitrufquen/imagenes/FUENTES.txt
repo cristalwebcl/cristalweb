@@ -25,3 +25,10 @@ URL de origen:
 004.jpg | 7680x5120 | Crop unrecognizable dentist preparing medical equipment in clinic ... | https://images.pexels.com/photos/3881237/pexels-photo-3881237.jpeg?cs=srgb&dl=pexels-andrea-piacquadio-3881237.jpg&fm=jpg
 005.jpg | 7680x5120 | Surprised young ethnic female patient in dental chair in modern clinic ... | https://images.pexels.com/photos/3881155/pexels-photo-3881155.jpeg?cs=srgb&dl=pexels-andrea-piacquadio-3881155.jpg&fm=jpg
 006.jpg | 7680x5120 | Unrecognizable dentists using medical equipment during teeth treatment ... | https://images.pexels.com/photos/3881315/pexels-photo-3881315.jpeg?cs=srgb&dl=pexels-andrea-piacquadio-3881315.jpg&fm=jpg
+
+MAPA DE UBICACION — mapa-01.jpg
+  768 x 768 · zoom 14 · centro -38.9862884, -72.63725
+  Mosaicos de OpenStreetMap pegados en una sola imagen, con el marcador
+  dibujado encima. Datos (c) OpenStreetMap contributors, licencia ODbL:
+  la atribucion tiene que ir VISIBLE junto al mapa, en el pie de la figura.
+  https://www.openstreetmap.org/copyright

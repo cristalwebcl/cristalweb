@@ -20,10 +20,17 @@ $hechas = 0; $saltadas = 0
 foreach ($demo in (Get-ChildItem (Join-Path $dir "demos") -Directory)) {
     $slug = $demo.Name
     $img = Join-Path $demo.FullName "imagenes\port-01.jpg"
+    if (-not (Test-Path $img)) { $img = Join-Path $demo.FullName "imagenes\portada.jpg" }
     if (-not (Test-Path $img)) {
         # 186 no tiene portada con foto: su portada es dibujo CSS y la
         # primera foto de la pagina es el fondo.
+        #
+        # Se descarta mapa-*.jpg: es el mosaico de OpenStreetMap que pone
+        # poner-mapa.ps1. Ordenando por nombre gana en cualquier demo cuyas
+        # fotos vayan despues de la "m" (portada.jpg, taller.jpg), y la
+        # tarjeta del catalogo quedaria siendo un plano de calles.
         $img = Get-ChildItem (Join-Path $demo.FullName "imagenes\*.jpg") |
+               Where-Object { $_.Name -notlike 'mapa-*' } |
                Sort-Object Name | Select-Object -First 1 -ExpandProperty FullName
     }
     if (-not $img -or -not (Test-Path $img)) { $saltadas++; continue }

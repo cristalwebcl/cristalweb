@@ -1,0 +1,22 @@
+FUENTES DE LAS IMAGENES - Barraca Bustos y Munoz Rehecha el 14-09-2026 (presentacion antes que texto). Fotos de REFERENCIA de bancos libres: ninguna es del local; las verdaderas las tiene que mandar el negocio. 
+port-01.jpg  <-  pozo-p-bym-perfil\005.jpg  |  pexels (Pexels License)  |  autor: Willians Huerta  |  https://www.pexels.com/es-es/foto/nave-industrial-con-poca-luz-y-vigas-metalicas-36397982/  |  consulta: "steel beams warehouse"
+hund1-01.jpg  <-  pozo-p-bym-fierro\012.jpg  |  pexels (Pexels License)  |  autor: Peter Dyllong  |  https://www.pexels.com/es-es/foto/primer-plano-en-blanco-y-negro-de-lineas-de-hormigon-texturizado-35735193/  |  consulta: "rebar steel bars"
+hund2-01.jpg  <-  pozo-p-bym-perfil\007.jpg  |  pexels (Pexels License)  |  autor: Michael Orshan  |  https://www.pexels.com/es-es/foto/pila-de-vigas-de-acero-en-un-almacen-36003978/  |  consulta: "steel beams warehouse"
+hund3-01.jpg  <-  pozo-p-bym-tubo\011.jpg  |  pexels (Pexels License)  |  autor: Alex Urezkov  |  https://www.pexels.com/es-es/foto/industria-metal-mesa-apilar-12951636/  |  consulta: "steel pipe ends stack"
+hund4-01.jpg  <-  pozo-p-bym-malla\004.jpg  |  pexels (Pexels License)  |  autor: wal_ 172619  |  https://www.pexels.com/es-es/foto/primer-plano-de-rejilla-de-varilla-oxidada-para-construccion-37475275/  |  consulta: "rebar grid concrete"
+hund5-01.jpg  <-  pozo-p-bym-plancha\003.jpg  |  pexels (Pexels License)  |  autor: Jeffry Surianto  |  https://www.pexels.com/es-es/foto/reflexiones-abstractas-sobre-superficies-metalicas-36922169/  |  consulta: "steel sheet metal"
+hund6-01.jpg  <-  pozo-p-bym-obra\007.jpg  |  pexels (Pexels License)  |  autor: Muharrem Alper  |  https://www.pexels.com/es-es/foto/paisaje-construccion-campo-rural-21912673/  |  consulta: "construction site concrete columns"
+banda-01.jpg  <-  pozo-p-bym-tubo\009.jpg  |  pexels (Pexels License)  |  autor: SHOCKPhoto by Szoka Sebastian  |  https://www.pexels.com/es-es/foto/cerrar-foto-de-tubos-de-metal-gris-1381938/  |  consulta: "steel pipe ends stack"
+cita-01.jpg  <-  pozo-p-bym-malla\006.jpg  |  pexels (Pexels License)  |  autor: Peter Dyllong  |  https://www.pexels.com/es-es/foto/patron-abstracto-de-rejilla-de-metal-entretejida-37124450/  |  consulta: "rebar grid concrete"
+mos1-01.jpg  <-  pozo-p-bym-tubo\010.jpg  |  pexels (Pexels License)  |  autor: Shuaizhi Tian  |  https://www.pexels.com/es-es/foto/tuberias-de-acero-industriales-con-grua-en-patio-exterior-33996167/  |  consulta: "steel pipe ends stack"
+mos2-01.jpg  <-  pozo-p-bym-malla\005.jpg  |  pexels (Pexels License)  |  autor: Jan van der Wolf  |  https://www.pexels.com/es-es/foto/modelo-estampado-textura-red-14294072/  |  consulta: "rebar grid concrete"
+mos3-01.jpg  <-  pozo-p-bym-obra\001.jpg  |  pexels (Pexels License)  |  autor: MD. Raktim Raze  |  https://www.pexels.com/es-es/foto/pilares-de-hormigon-en-una-obra-de-construccion-en-faridpur-32777399/  |  consulta: "construction site concrete columns"
+mos4-01.jpg  <-  pozo-p-bym-plancha\006.jpg  |  pexels (Pexels License)  |  autor: Alex Urezkov  |  https://www.pexels.com/es-es/foto/metal-fabrica-tuberias-produccion-12951634/  |  consulta: "steel sheet metal"
+mos5-01.jpg  <-  pozo-p-bym-medida\008.jpg  |  pexels (Pexels License)  |  autor: FFD Restorations  |  https://www.pexels.com/es-es/foto/metal-plata-plateado-herramientas-16630111/  |  consulta: "measuring caliper metal"
+mos6-01.jpg  <-  pozo-p-bym-tubo\008.jpg  |  pexels (Pexels License)  |  autor: Peter Dyllong  |  https://www.pexels.com/es-es/foto/tuberias-metalicas-industriales-apiladas-en-blanco-y-negro-36296531/  |  consulta: "steel pipe ends stack"
+
+BRUMA (bruma-pag-0N.png y bruma-osc-0N.png, 30x20): las MISMAS fotos, recortadas a 3:2, reducidas y
+recoloreadas con C:\devs\demos\hacer-bruma.ps1 (clara >= 0,68 de luminancia / oscura <= 0,05). No suman fuentes.
+    pagina: mos2-01.jpg, hund2-01.jpg, mos2-01.jpg, hund2-01.jpg, mos2-01.jpg   |   oscuras: hund2-01.jpg, cita-01.jpg, mos2-01.jpg
+
+MAPA: iframe de Google Maps (embed publico, sin clave). No hay imagen de mapa.

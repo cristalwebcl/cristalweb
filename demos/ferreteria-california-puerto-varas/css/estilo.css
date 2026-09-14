@@ -25,18 +25,78 @@
        registro. Es la única que suena a almacén viejo sin ser broma.
      Cuerpo  · Cabin — segunda aparición (43-ferreteria-sur). Práctica.
      Dato    · Kode Mono — tercera aparición. Lleva medidas y meses.
+
+   ESCENA: tres planchas de zinc acanalado —una por mostrador— entran
+     girando desde su canto, 0,55 s cada una y 80 ms entre ellas, y
+     quedan quietas. Sin reposo: una plancha colgada no se mueve. La
+     lienza cae después y queda tensa con su plomo. Un solo bucle
+     infinito en toda la página: ninguno.
+
+   AMBIENTE (08-09-2026) — dos clips de fondo, ninguno con audio:
+     · portada · tornillos arrastrados por un imán sobre fondo crudo.
+       Masa oscura sobre página clara, que es la regla de luminancia,
+       y es literalmente «el perno» del titular. 10 s · 1,4 MB.
+     · cita · rayos de una rueda de bicicleta a contraluz, bajo el velo
+       plano. 9 s · 1,1 MB.
+     La foto hermana NO se va nunca: es el póster, y es lo que se ve
+     con menos movimiento, con ahorro de datos o sin JavaScript.
+
+   REPASO DEL 08-09-2026 (tarde)
+     · Botón flotante de consulta, abajo a la derecha, en el óxido de
+       la casa y no en el verde de WhatsApp: este negocio no publica
+       teléfono en ninguna parte —tampoco en su Facebook, que es su
+       única presencia— y un wa.me inventado mandaría a los clientes
+       del cliente al número equivocado. Lleva al bloque que arma la
+       consulta. El día que confirmen el número pasa a ser wa.me y no
+       cambia nada más.
+     · Los tiempos de la escena de portada y del plano se acortaron.
+       Antes la tercera plancha arrancaba a los 0,54 s y el plano
+       terminaba de dibujarse a los 1,85 s: fuera de la regla de la
+       casa (la última pieza arranca antes de 0,4 s) y, peor, la
+       miniatura del catálogo salía con la portada sin escena y la
+       pieza firma vacía. Y la entrada del titular pasó a ser DOS
+       animaciones —opacidad 0,3 s, desplazamiento 0,8 s— en vez de
+       una sola de 0,8 s que dejaba la letra lavada medio segundo.
+     · Mosaico: dos fotos nuevas de bicicletas. Antes eran cuatro de
+       pesca y ninguna de bicicletas, con un título que promete «los
+       tres mundos»; y la del carrete tenía la marca legible.
+
+   REVISIÓN DEL 09-09-2026 — cinco cosas medidas sobre la página viva
+     · La sección de hojalatería REPROBABA AA. El telón compone la foto
+       sobre el zinc y el fondo baja a luminancia 0,530: contra eso el
+       gris secundario daba 4,20:1 y el óxido de los rótulos 3,44:1.
+       Los dos colores se reescriben sólo para esa sección (5,83:1 y
+       5,55:1 contra el peor píxel). Está explicado donde se declaran.
+     · El plano del local —la pieza firma— era ilegible en teléfono:
+       a 375 px sus rótulos quedaban en 6,3 px y sus bajadas en 4,8.
+       Ahora hay un segundo plano VERTICAL para menos de 860 px, con
+       las tres zonas apiladas; a 375 px sus rótulos miden 17,6 px.
+     · Los cuatro enlaces del nav medían 37 px de alto y el CTA de la
+       cabecera 40, bajo el mínimo táctil de 44. Es la declaración que
+       mas-lavanderias y el-penon ya traían y que acá faltaba.
+     · main.js escribía el --largo de los trazos del plano con
+       setProperty y dejaba cuatro atributos style en la página viva.
+       Los rectángulos son de medida fija: el perímetro está escrito
+       en el CSS y ahora la página tiene cero estilos en línea.
+     · Los ratios escritos junto a los tokens estaban puestos de
+       memoria y se apartaban hasta seis décimas. Vueltos a medir.
    ══════════════════════════════════════════════════════════════════ */
 
 :root {
   --zinc:   #E7E9E8;
   --zinc-2: #DADDDC;
-  --tinta:  #17191A;
-  --medio:  #4F5556;   /* 7,0:1 sobre zinc */
+  --tinta:  #17191A;   /* 14,46:1 sobre zinc · 12,90:1 sobre zinc-2 */
+  /* Los ratios de acá están MEDIDOS sobre la página viva con la clase
+     .js quitada, no calculados de memoria: los cuatro que estaban
+     escritos antes (7,0 · 6,1 · 4,9 · 5,7) se apartaban hasta seis
+     décimas del valor real. El gris se calibra contra --zinc-2, que es
+     el fondo de las tarjetas, no contra el fondo del body. */
+  --medio:  #4F5556;   /* 6,22:1 sobre zinc · 5,55:1 sobre zinc-2 */
 
   /* Un color por mostrador. Ninguno se usa fuera de su zona. */
-  --pesca:  #1A5A78;   /* 6,1:1 sobre zinc */
-  --bici:   #2C6B3E;   /* 4,9:1 sobre zinc */
-  --ferr:   #9A4A1E;   /* 5,7:1 sobre zinc */
+  --pesca:  #1A5A78;   /* 6,25:1 sobre zinc · 5,53:1 sobre zinc-2 */
+  --bici:   #2C6B3E;   /* 5,25:1 sobre zinc */
+  --ferr:   #9A4A1E;   /* 5,11:1 sobre zinc · blanco encima 6,23:1 */
   --pesca-l:#8FC6DE;
   --linea:  rgba(23,25,26,.18);
 
@@ -92,6 +152,10 @@ h1, h2, h3 { font-family: var(--display); font-weight: 400; line-height: 1.16; m
   content: attr(data-ejemplo); position: absolute; top: -.62rem; right: .6rem;
   font-family: var(--mono); font-size: .6rem; letter-spacing: .08em; text-transform: uppercase;
   color: var(--medio); background: var(--zinc); padding: 0 .35rem;
+  /* En una tarjeta angosta la etiqueta se partía en dos líneas y la
+     segunda se metía encima del primer ítem de la lista. Una línea
+     siempre, y si no cabe se corta con puntos suspensivos. */
+  white-space: nowrap; max-width: 88%; overflow: hidden; text-overflow: ellipsis;
 }
 
 /* ── Botones ───────────────────────────────────────────────────── */
@@ -108,7 +172,9 @@ h1, h2, h3 { font-family: var(--display); font-weight: 400; line-height: 1.16; m
 .boton:active { transform: translateY(0); }
 .boton--linea { background: transparent; color: var(--ferr); }
 .boton--linea:hover { background: var(--ferr); color: #FFFFFF; }
-.boton--chico { min-height: 40px; padding: .45rem 1rem; font-size: var(--p--1); border-width: 1px; }
+/* 44 y no 40: es el CTA de la cabecera y se toca en todos los anchos.
+   La cabecera no crece por esto — .cab__marca ya mide 44. */
+.boton--chico { min-height: 44px; padding: .45rem 1rem; font-size: var(--p--1); border-width: 1px; }
 
 /* ── Propuesta ─────────────────────────────────────────────────── */
 .propuesta { background: var(--tinta); color: var(--zinc); padding: .85rem clamp(1.2rem, 5vw, 3rem); border-bottom: 3px solid var(--ferr); }
@@ -131,7 +197,10 @@ h1, h2, h3 { font-family: var(--display); font-weight: 400; line-height: 1.16; m
 .cab__nombre { font-family: var(--display); font-size: var(--p-1); line-height: 1; }
 .cab__sub { display: block; font-family: var(--mono); font-size: .56rem; letter-spacing: .1em; text-transform: uppercase; color: var(--medio); margin-top: .35rem; }
 .cab__nav { display: flex; gap: 1.2rem; margin-left: auto; overflow-x: auto; }
-.cab__nav a { color: var(--medio); text-decoration: none; font-size: var(--p--1); white-space: nowrap; padding: .4rem 0; border-bottom: 2px solid transparent; }
+/* min-height 44 + inline-flex: medido, los cuatro enlaces del nav daban
+   37 px de alto entre 1060 y 1440 px de ancho, bajo el mínimo táctil de
+   la casa. Es la misma declaración que llevan mas-lavanderias y el-penon. */
+.cab__nav a { color: var(--medio); text-decoration: none; font-size: var(--p--1); white-space: nowrap; min-height: 44px; display: inline-flex; align-items: center; border-bottom: 2px solid transparent; }
 .cab__nav a:hover { color: var(--ferr); border-bottom-color: var(--ferr); }
 .cab__cta { margin-left: .4rem; }
 @media (max-width: 1060px) { .cab__nav { display: none; } .cab__cta { margin-left: auto; } }
@@ -139,7 +208,10 @@ h1, h2, h3 { font-family: var(--display); font-weight: 400; line-height: 1.16; m
 /* ── Portada ───────────────────────────────────────────────────── */
 .portada { position: relative; isolation: isolate; min-height: min(84vh, 720px); display: flex; flex-direction: column; justify-content: center; padding: var(--aire) 0; overflow: hidden; }
 .portada__foto { position: absolute; inset: 0; z-index: -1; }
-.portada__foto img {
+/* La foto y el clip comparten selector: misma máscara, mismo encuadre,
+   escritos UNA vez. Si se separan, en cuanto se toque uno el otro se
+   descuadra y el fundido delata el corte. */
+.portada__foto img, .portada__video {
   display: block; width: 100%; height: 100%;
   object-fit: cover; object-position: 72% 46%;
   -webkit-mask-image: linear-gradient(90deg, transparent 0%, transparent 26%, rgba(0,0,0,.2) 42%, rgba(0,0,0,.7) 60%, #000 76%, #000 100%);
@@ -166,17 +238,48 @@ h1, h2, h3 { font-family: var(--display); font-weight: 400; line-height: 1.16; m
    Cada franja de acento vive dentro de SU plancha: la regla de esta
    identidad es que ningún color sale de su zona, y la escena tampoco. */
 .escena { position: absolute; z-index: -1; pointer-events: none; }
+/* 38% y no 46%, y más abajo: a 46% las tres planchas tapaban el estante
+   de herramientas que es justo lo que vende la foto de portada —y lo que
+   se mueve en el clip—. La escena tiene que estar EN SU ZONA, no encima
+   del sujeto. */
 .escena--planchas {
-  top: 22%; right: 6%; width: min(46%, 560px); height: 42%;
-  display: flex; gap: 10px; align-items: stretch;
+  top: 26%; right: 7%; width: min(38%, 430px); height: 34%;
+  display: flex; gap: 12px; align-items: stretch;
   perspective: 800px;
 }
+/* Respaldo radial del color de la portada. Sin él, con el clip
+   corriendo debajo —tornillos plateados que se mueven— las tres
+   planchas quedan flotando sobre un fondo que se agita y se leen como
+   rectángulos pegados encima. Doce palabras de CSS que sólo se
+   descubren mirando el video de verdad, no suponiéndolo. */
+.escena--planchas::before {
+  content: ""; position: absolute; inset: -22% -16%; z-index: -1;
+  background: radial-gradient(closest-side,
+      rgba(231,233,232,.78), rgba(231,233,232,0));
+}
+/* El zinc tiene que LEERSE como zinc. Con --zinc plano y una raya de
+   1 px cada 9 las tres planchas salían casi blancas encima de la madera
+   clara de la foto y se leían como TRES HOJAS DE PAPEL pegadas sobre las
+   herramientas. Ahora la onda tiene sus cuatro tramos —filo, valle,
+   cresta y sombra— y encima va un barrido diagonal de luz, que es lo que
+   hace metal a una superficie: el material acanalado del que trata media
+   página, no un rectángulo claro. */
 .plancha {
   position: relative; flex: 1;
-  background-color: var(--zinc);
-  background-image: repeating-linear-gradient(90deg,
-      rgba(23,25,26,.10) 0 1px, rgba(23,25,26,0) 1px 9px);
-  border: 1px solid rgba(23,25,26,.28);
+  background-color: #C7CDCC;
+  background-image:
+    linear-gradient(158deg,
+      rgba(255,255,255,.75) 0%, rgba(255,255,255,.10) 34%,
+      rgba(23,25,26,.14) 72%, rgba(23,25,26,.02) 100%),
+    repeating-linear-gradient(90deg,
+      rgba(23,25,26,.36) 0 1px,
+      rgba(23,25,26,.10) 1px 3px,
+      rgba(255,255,255,.76) 3px 8px,
+      rgba(23,25,26,.06) 8px 12px);
+  border: 1px solid rgba(23,25,26,.42);
+  /* Sombra en capas con spread negativo: no es un rectángulo gris
+     debajo, es la plancha separándose del muro. */
+  box-shadow: 0 16px 34px -20px rgba(23,25,26,.95);
   transform-origin: left center;
 }
 /* La franja del acento, arriba de cada plancha. */
@@ -187,15 +290,38 @@ h1, h2, h3 { font-family: var(--display); font-weight: 400; line-height: 1.16; m
 .plancha--bici::before  { background: var(--bici); }
 .plancha--ferr::before  { background: var(--ferr); }
 
+/* Los retardos son cortos por la regla de la casa —la última pieza de
+   la portada tiene que ARRANCAR antes de 0,4 s— y porque la escena es
+   lo que se ve en la miniatura del catálogo: con .3/.42/.54 s la
+   tercera plancha todavía no había empezado cuando se toma la captura
+   y la portada salía sin escena. Ahora las tres están puestas a los
+   0,77 s y a los 0,25 s ya hay dos. */
 @keyframes plancha-abre {
-  from { transform: rotateY(-90deg); opacity: 0; }
-  30%  { opacity: 1; }
+  from { transform: rotateY(-70deg); opacity: 0; }
+  26%  { opacity: 1; }
   to   { transform: rotateY(0deg); opacity: 1; }
 }
-.js .plancha { animation: plancha-abre .7s var(--salida) both; }
-.js .plancha--pesca { animation-delay: .3s; }
-.js .plancha--bici  { animation-delay: .42s; }
-.js .plancha--ferr  { animation-delay: .54s; }
+/* Arranca en -70° y no en -90°: a 90° la plancha está de canto, mide
+   cero y no se ve nada hasta bien entrada la animación. Con -70° las
+   tres están puestas a los 0,64 s y a los 0,2 s ya se ven las tres, en
+   tres ángulos distintos —que es lo que se quiere en una foto fija—. */
+.js .plancha { animation: plancha-abre .5s var(--salida) both; }
+.js .plancha--pesca { animation-delay: 0s; }
+.js .plancha--bici  { animation-delay: .07s; }
+.js .plancha--ferr  { animation-delay: .14s; }
+
+/* El pie que rotula la escena, con placa: cae sobre la zona NÍTIDA de
+   la foto y sobre el clip de los tornillos, que se mueve. Peor caso
+   calculado a mano —el auditor lee fondo transparente y aprueba solo—:
+   la placa es rgba(231,233,232,.88); con un fotograma BLANCO debajo el
+   fondo queda en #EAECEB y la tinta #17191A da 15,4:1, y con uno NEGRO
+   queda en #CBCDCC y da 11,6:1. Pasa AA pase lo que pase con el clip. */
+.escena__pie {
+  position: absolute; left: 0; top: calc(100% + .8rem); margin: 0;
+  font-family: var(--mono); font-size: .6rem; letter-spacing: .13em;
+  text-transform: uppercase; color: var(--tinta);
+  background: rgba(231,233,232,.88); padding: .3rem .6rem; border-radius: 3px;
+}
 
 /* La lienza cae. Un path no puede pasar de recto a curvo sin animar la
    «d», así que se dibuja con stroke-dashoffset de arriba a abajo —el
@@ -216,8 +342,8 @@ h1, h2, h3 { font-family: var(--display); font-weight: 400; line-height: 1.16; m
 .lienza__plomo { fill: var(--pesca); }
 @keyframes lienza-cae { from { stroke-dashoffset: 152; } to { stroke-dashoffset: 0; } }
 @keyframes plomo-llega { from { opacity: 0; } to { opacity: 1; } }
-.js .lienza__hilo  { animation: lienza-cae .9s var(--salida) 1.1s both; }
-.js .lienza__plomo { animation: plomo-llega .3s ease-out 1.9s both; }
+.js .lienza__hilo  { animation: lienza-cae .8s var(--salida) .42s both; }
+.js .lienza__plomo { animation: plomo-llega .3s ease-out 1.1s both; }
 
 /* A 375 px las tres planchas se van al pie de la portada, en una banda
    baja: medido, los botones llegan a y 859 y la portada termina en 937,
@@ -227,12 +353,115 @@ h1, h2, h3 { font-family: var(--display); font-weight: 400; line-height: 1.16; m
 */
 @media (max-width: 760px) {
   .escena--planchas { top: auto; bottom: 0; right: 4%; width: 92%; height: 11%; }
+  .escena--planchas::before { inset: -60% -10%; }
   .escena__lienza { left: 10%; width: 34px; top: -80%; height: 150%; }
+  /* En teléfono la banda de planchas ya está pegada al borde de abajo:
+     el pie caería fuera de la portada, que tiene overflow oculto. */
+  .escena__pie { display: none; }
+
+  /* En teléfono el texto pasó de estar AL LADO de la foto a estar
+     ENCIMA: la máscara y el velo giran a vertical o el titular queda
+     sobre la zona nítida. El sujeto del clip está centrado, así que
+     basta rotar; no hay que recomponer la portada entera. */
+  .portada { min-height: 0; }
+  .portada__foto img, .portada__video {
+    object-position: 50% 50%;
+    -webkit-mask-image: linear-gradient(180deg, transparent 0%, rgba(0,0,0,.5) 34%, #000 64%);
+            mask-image: linear-gradient(180deg, transparent 0%, rgba(0,0,0,.5) 34%, #000 64%);
+  }
+  .portada__foto::after {
+    background: linear-gradient(180deg,
+        rgba(231,233,232,1) 0%, rgba(231,233,232,.94) 34%,
+        rgba(231,233,232,.6) 68%, rgba(231,233,232,.2) 100%);
+  }
 }
+
+/* ── Cifras ────────────────────────────────────────────────────────
+   Banda oscura sin foto: el material lo pone el acanalado del zinc,
+   dibujado con un degradado y cero imágenes, que es de lo que trata
+   media página. Los números van HUECOS —relleno del propio fondo,
+   contorno de zinc— menos la herida, que rompe el patrón con relleno
+   sólido en el óxido claro. Ese contraste es el que lleva la vista al
+   0 sin necesidad de ponerle una flecha.
+
+   AVISO PARA LA PRÓXIMA AUDITORÍA: el auditor de contraste va a leer
+   el color de RELLENO del número hueco (#17191A sobre #17191A) y va a
+   reprobarlo. Lo que se lee es el CONTORNO: rgba(231,233,232,.55)
+   compuesto sobre #17191A da #898B8B, 5,1:1 — pasa AA hasta como
+   texto normal, y estos números miden más de 2,6 rem. No se arregla
+   rellenándolos: se pierde el efecto. Donde no exista
+   -webkit-text-stroke el número sale sólido en zinc, 13,6:1. ── */
+.cifras {
+  background: var(--tinta); color: #B2B7B8;
+  padding: clamp(2.4rem, 1.6rem + 3vw, 4rem) 0;
+  background-image: repeating-linear-gradient(90deg,
+      rgba(231,233,232,.05) 0 1px, rgba(231,233,232,0) 1px 11px);
+}
+.cifras__lista {
+  /* margin: 0 AUTO, no margin: 0 — esta regla va después de .ancho en
+     el archivo y con la misma especificidad, así que un margin: 0 le
+     pisa el margin-inline: auto y la banda se va contra el borde. */
+  list-style: none; margin: 0 auto; padding: 0;
+  display: grid; gap: 1.5rem 1.4rem;
+  grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+}
+.cifras__lista li { border-top: 1px solid rgba(231,233,232,.2); padding-top: .9rem; }
+.cifras__lista b {
+  display: block; font-family: var(--display); font-weight: 400;
+  font-size: clamp(2.6rem, 1.8rem + 3.2vw, 4rem); line-height: 1;
+  color: var(--zinc); font-variant-numeric: tabular-nums;
+}
+@supports (-webkit-text-stroke: 1px #000) {
+  .cifras__lista b { color: var(--tinta); -webkit-text-stroke: 1.5px rgba(231,233,232,.55); }
+  .cifras__herida b { color: #E8A87C; -webkit-text-stroke: 0; }
+}
+.cifras__lista span { display: block; margin-top: .7rem; font-size: var(--p--1); line-height: 1.5; }
+.cifras__lista i {
+  display: block; margin-top: .4rem; font-style: normal;
+  font-family: var(--mono); font-size: .62rem; letter-spacing: .07em;
+  text-transform: uppercase; color: #8B9092;
+}
+.cifras__herida { border-top-color: rgba(232,168,124,.6); }
+.cifras__herida b { color: #E8A87C; }
 
 /* ── PIEZA FIRMA · los tres mostradores ────────────────────────── */
 .most { padding: var(--aire) 0; }
 .plano { display: block; width: 100%; height: auto; margin: 1rem 0 2.5rem; }
+
+/* DOS planos, no uno reescalado. El de 900 × 260 en un teléfono de 375 px
+   se reduce a escala 0,37: los rótulos quedaban en 6,3 px y las bajadas
+   en 4,8 px —medido sobre la página viva—, o sea la pieza firma de la
+   página resultaba ilegible justo donde más se mira. Un SVG no
+   reflota el texto, así que abajo de 860 px entra un plano VERTICAL con
+   las tres zonas apiladas: mismo dibujo, mismos colores, mismas clases
+   y el mismo contenido escrito en el HTML. A 375 px sus rótulos quedan
+   en 17,6 px y sus bajadas en 13,2 px.
+   El corte va en 860 px, que es donde el apaisado deja las bajadas
+   bajo los 12 px, y el vertical se topa en 460 px de ancho para que en
+   una tablet no se convierta en una columna de 800 px de alto. */
+.plano--alto { display: none; }
+@media (max-width: 860px) {
+  .plano--ancho { display: none; }
+  .plano--alto  { display: block; max-width: 460px; margin-inline: auto; }
+}
+.plano--alto .plano__t { font-size: 20px; }
+.plano--alto .plano__t--2 { font-size: 18px; }
+.plano--alto .plano__s { font-size: 15px; }
+.plano--alto .plano__s--puerta { font-size: 13px; }
+
+/* El largo de cada trazo va ESCRITO acá y no lo mide main.js con
+   getTotalLength(): escribirlo desde JS dejaba cuatro atributos
+   style="" en la página viva y el checklist pide cero. Son rectángulos
+   de medida fija y conocida, así que el perímetro se calcula una vez:
+   2(w−2r) + 2(h−2r) + 2πr. Comprobado contra getTotalLength() del
+   navegador — muro 2152,49 y zonas 846,37— y se deja un pelo por
+   encima, que es el lado seguro: si sobra, el trazo arranca oculto
+   igual; si faltara, se vería un pedazo dibujado desde el principio. */
+.plano--ancho .plano__muro   { --largo: 2153; }
+.plano--ancho .plano__z rect { --largo: 847; }
+.plano--alto  .plano__muro   { --largo: 1573; }
+.plano--alto  .plano__z rect { --largo: 907; }
+
 .plano__muro { fill: var(--zinc-2); stroke: var(--tinta); stroke-width: 2.5; }
 .plano__div { stroke: var(--tinta); stroke-width: 2; stroke-dasharray: 6 5; }
 .plano__puerta { stroke: var(--zinc-2); stroke-width: 6; }
@@ -273,6 +502,57 @@ h1, h2, h3 { font-family: var(--display); font-weight: 400; line-height: 1.16; m
 .tajo__txt { width: var(--ancho); margin-inline: auto; padding: 2.5rem 0; }
 .tajo__txt h2 { font-size: var(--p-3); max-width: 20ch; color: var(--zinc); }
 .tajo__txt p { max-width: 48ch; color: #BEC3C4; margin: .9rem 0 0; }
+/* Peor caso medido a mano el 08-09-2026, porque acá el auditor lee el
+   fondo del ancestro y da un falso 1,46:1: el texto va sobre el velo,
+   no sobre el zinc. Con la foto BLANCA debajo y el velo en su punto
+   más flojo de la zona del texto (alfa .78 de #17191A) el fondo queda
+   en #4A4C4C: el titular en --zinc da 7,1:1 y el párrafo en #BEC3C4
+   da 4,9:1. Los dos pasan AA pase lo que pase con la foto. */
+
+/* ── Qué hay que llevar · seis pegas ───────────────────────────────
+   Tres niveles de claridad para que no se lea como un bloque de
+   color: la sección va en --zinc-2, las tarjetas un escalón más
+   claras en --zinc, y la lista de compra dentro con su caja punteada.
+   Cada tarjeta lleva el color de SU mostrador y no lo saca de ahí. */
+.pegas { padding: var(--aire) 0; background: var(--zinc-2); }
+/* 300 px y no 268: con 268 la grilla cabía en cuatro columnas y las
+   seis pegas quedaban 4 + 2, con un hueco al lado. A 300 son tres
+   columnas justas en escritorio y salen 3 + 3. */
+.pegas__grilla { display: grid; gap: 1.1rem; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); margin-bottom: 2.2rem; }
+.pega { background: var(--zinc); padding: 1.3rem 1.3rem 1.5rem; border-left: 4px solid var(--linea); }
+.pega__r { margin: 0 0 .4rem; font-family: var(--mono); font-size: .64rem; letter-spacing: .12em; text-transform: uppercase; color: var(--medio); }
+.pega h3 { font-size: var(--p-1); margin-bottom: .9rem; }
+.pega__l { list-style: none; margin: 0; padding: .95rem 1rem .95rem 1.1rem; }
+.pega__l::after { background: var(--zinc); }
+.pega__l li { position: relative; padding-left: 1.15rem; font-size: var(--p--1); color: var(--medio); margin-bottom: .5rem; }
+.pega__l li:last-child { margin-bottom: 0; }
+/* Tornillo visto de punta: un cuadrado de 7 px. Nunca el bullet por
+   defecto — en una ferretería el punto redondo no dice nada. */
+.pega__l li::before { content: ""; position: absolute; left: 0; top: .48em; width: 7px; height: 7px; background: var(--linea); }
+.pega--pesca { border-left-color: var(--pesca); }
+.pega--pesca .pega__r { color: var(--pesca); }
+.pega--pesca .pega__l li::before { background: var(--pesca); }
+.pega--bici { border-left-color: var(--bici); }
+.pega--bici .pega__r { color: var(--bici); }
+.pega--bici .pega__l li::before { background: var(--bici); }
+.pega--ferr { border-left-color: var(--ferr); }
+.pega--ferr .pega__r { color: var(--ferr); }
+.pega--ferr .pega__l li::before { background: var(--ferr); }
+
+/* ── El año · mitades ──────────────────────────────────────────────
+   La banda oscura de media página. La foto va a sangre en su mitad,
+   con luz propia —el agua contra el negro del techo— que es lo que
+   pide un fondo oscuro. */
+.mit { background: var(--tinta); color: #B2B7B8; display: grid; grid-template-columns: 1fr 1fr; }
+.mit__foto { position: relative; overflow: hidden; min-height: clamp(260px, 32vw, 460px); }
+.mit__foto img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: 50% 44%; }
+.mit__txt { align-self: center; padding: var(--aire) clamp(1.5rem, 4vw, 3.4rem); max-width: 62ch; }
+.mit__txt p { margin: 0 0 1rem; }
+.mit__txt p:last-child { margin: 0; }
+@media (max-width: 860px) {
+  .mit { grid-template-columns: 1fr; }
+  .mit__foto { min-height: 230px; }
+}
 
 /* ── Hojalatería, con telón ────────────────────────────────────── */
 .hoja { padding: var(--aire) 0; }
@@ -286,7 +566,28 @@ h1, h2, h3 { font-family: var(--display); font-weight: 400; line-height: 1.16; m
           mask-image: linear-gradient(180deg, transparent 0%, #000 20%, #000 74%, transparent 100%);
 }
 .hoja__cols { display: grid; gap: 1.6rem; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); max-width: 76ch; }
-.hoja__cols p { margin: 0; color: var(--medio); }
+.hoja__cols p { margin: 0; }
+
+/* ── Los grises de esta sección se reescriben a mano ──────────────────
+   Es la regla de la sección de luminancia distinta, y acá hacía falta.
+   El telón compone la foto sobre el zinc y el fondo de la sección no es
+   plano: MEDIDO píxel a píxel sobre la página renderizada a 1440 px
+   (08-09-2026, sobre 74.800 muestras del ancho sin texto), la luminancia
+   del fondo baja hasta 0,530 y su percentil 5 está en 0,562. Contra ese
+   fondo, los colores de la paleta clara reprueban AA:
+     · gris secundario #4F5556 → 4,20:1 (peor) y 4,42:1 (p05)
+     · óxido de los rótulos #9A4A1E → 3,44:1
+   Y no se arregla bajando la opacidad del telón: aun con la foto NEGRA
+   del todo, el 0,15 sobre el zinc rayado toca el suelo en 4,37:1 para el
+   gris — o sea el problema es estructural, no de esta foto.
+   Los dos colores de acá son los mismos tonos un escalón más oscuros, y
+   viven SÓLO en esta sección. Vueltos a medir sobre la captura, contra
+   el PEOR píxel del telón (y entre paréntesis el percentil 5):
+     · texto  #3A4041 → 5,83:1 (6,15:1)
+     · rótulo #6B3213 → 5,55:1 (5,85:1)
+     · título #17191A → 9,75:1 (ya pasaba; se deja como está) */
+.hoja .hoja__cols p { color: #3A4041; }
+.hoja .rotulo { color: #6B3213; }
 
 /* ── Temporada ─────────────────────────────────────────────────── */
 .temp { padding: var(--aire) 0; background: var(--zinc-2); }
@@ -302,7 +603,14 @@ h1, h2, h3 { font-family: var(--display); font-weight: 400; line-height: 1.16; m
 
 /* ── Cita ──────────────────────────────────────────────────────── */
 .cita { position: relative; margin: 0; isolation: isolate; min-height: min(48vh, 380px); display: grid; place-items: center; overflow: hidden; }
-.cita img { position: absolute; inset: 0; z-index: -1; width: 100%; height: 100%; object-fit: cover; object-position: 50% 48%; }
+.cita img, .cita__video { position: absolute; inset: 0; z-index: -1; width: 100%; height: 100%; object-fit: cover; object-position: 50% 48%; }
+/* Velo PLANO y no lateral porque la frase va CENTRADA: con un
+   gradiente de costado, la mitad derecha quedaría sobre alfa .3 y no
+   pasaría AA. El .78 está por encima del mínimo de .72 de la casa.
+   Peor caso medido a mano —el auditor da un falso 1,00:1 acá, porque
+   el texto va sobre el velo y no sobre el fondo de la sección—: con
+   un fotograma BLANCO debajo, el fondo queda en #4A4C4C y la frase en
+   --zinc da 7,1:1; con uno negro, 15,2:1. */
 .cita::after { content: ""; position: absolute; inset: 0; z-index: -1; background: rgba(23,25,26,.78); }
 .cita__txt { margin: 0; width: var(--ancho); padding: 3rem 0; }
 .cita__txt p { font-family: var(--display); font-size: var(--p-3); color: var(--zinc); max-width: 24ch; margin: 0 auto; text-align: center; line-height: 1.24; }
@@ -314,6 +622,20 @@ h1, h2, h3 { font-family: var(--display); font-weight: 400; line-height: 1.16; m
 .mos__p:nth-child(1), .mos__p:nth-child(6) { grid-column: span 2; }
 .mos__p img { display: block; width: 100%; height: 100%; aspect-ratio: 3 / 2; object-fit: cover; transition: transform .5s var(--salida); }
 .mos__p:hover img { transform: scale(1.05); }
+/* Seis fotos con las celdas 1 y 6 a `span 2` suman OCHO unidades en una
+   retícula de tres columnas: la novena celda quedaba VACÍA y en una
+   página clara ese hueco de 384 × 513 px se lee como una foto que no
+   cargó. La quinta pasa a ocupar dos filas y la retícula cierra en 3×3
+   sin tocar la regla de que 1 y 6 rompen la línea de seis iguales.
+   Las filas pasan a medida fija —como en mas-lavanderias y el-penon—
+   porque con altura por contenido la fila del medio salía a la mitad de
+   sus vecinas. */
+@media (min-width: 641px) {
+  .mos__grilla { grid-auto-rows: clamp(170px, 18.5vw, 260px); }
+  .mos__p:nth-child(5) { grid-row: span 2; }
+}
+/* A dos columnas las seis entran justas (2+1+1+1+1+2 = 8 = 4 filas) y
+   no hace falta ni la fila doble ni la altura fija. */
 @media (max-width: 640px) { .mos__grilla { grid-template-columns: repeat(2, 1fr); } }
 
 /* ── Dónde ─────────────────────────────────────────────────────── */
@@ -365,53 +687,74 @@ h1, h2, h3 { font-family: var(--display); font-weight: 400; line-height: 1.16; m
   opacity: 1; transform: none;
   transition: opacity .3s ease-out, transform .6s var(--salida);
 }
-.js .portada__texto > * { animation: entra .8s var(--salida) both; }
+/* Regla atómica de movimiento-web aplicada de verdad: la OPACIDAD
+   salta corto —0,3 s— y es el TRANSFORM el que dura 0,8 s. Iban las
+   dos juntas en una sola animación de 0,8 s y el titular se leía
+   lavado durante medio segundo (y salía gris en las capturas del
+   catálogo, que es como se vende la demo). Son dos animaciones sobre
+   el mismo elemento, con el mismo retardo. */
+.js .portada__texto > * { animation: aparece .3s ease-out both, sube .8s var(--salida) both; }
 .js .sobre           { animation-delay: .05s; }
-.js .portada__titulo { animation-delay: .14s; }
-.js .portada__bajada { animation-delay: .26s; }
-.js .acciones        { animation-delay: .36s; }
-@keyframes entra { from { opacity: 0; transform: translateY(24px); } to { opacity: 1; transform: none; } }
+.js .portada__titulo { animation-delay: .12s; }
+.js .portada__bajada { animation-delay: .22s; }
+.js .acciones        { animation-delay: .32s; }
+@keyframes aparece { from { opacity: 0; } to { opacity: 1; } }
+@keyframes sube    { from { transform: translateY(24px); } to { transform: none; } }
 
 /* ── El plano se dibuja (regla 6) ──────────────────────────────────
-   Las tres zonas del plano se trazan con stroke-dashoffset, 1,1 s y
-   150 ms entre una y otra. --largo lo mide main.js con getTotalLength()
-   y lo escribe con setProperty: CSSOM desde JS, que la CSP permite; un
-   atributo style="" en el HTML lo bloquearía. Sin JavaScript no existe
-   --largo, la declaración se cae sola y el plano se ve entero. */
+   Las tres zonas se trazan con stroke-dashoffset. El --largo de cada
+   trazo está escrito arriba, en el CSS: ya no lo mide main.js, porque
+   escribirlo desde JS dejaba style="" en cuatro elementos de la página
+   viva. Sin JavaScript no existe la clase .js, estas reglas no aplican
+   y el plano se ve entero desde el primer pintado. */
 .js .most .ancho.rev .plano__z rect,
 .js .most .ancho.rev .plano__muro {
   stroke-dasharray: var(--largo);
   stroke-dashoffset: var(--largo);
 }
+/* Los tiempos son CORTOS a propósito. La primera versión tardaba 1,85 s
+   en tener el plano completo (muro 1,1 s + zonas con 150 ms entre una y
+   otra + rótulos a 1,2 s) y eso rompía dos cosas a la vez: la regla de
+   movimiento-web de que el grupo entero aterrice dentro de medio
+   segundo, y las capturas del catálogo —Edge sin cabeza congela el
+   reloj de animación a los ~0,25 s, así que la pieza firma salía
+   VACÍA en la miniatura con la que se vende la demo—. Ahora todo el
+   plano está puesto a los 0,82 s y a los 0,25 s ya se lee. */
 @keyframes plano-dibuja { to { stroke-dashoffset: 0; } }
-.js .most .ancho.rev.ok .plano__muro { animation: plano-dibuja 1.1s var(--salida) both; }
+.js .most .ancho.rev.ok .plano__muro { animation: plano-dibuja .6s var(--salida) both; }
 .js .most .ancho.rev.ok .plano__z rect {
-  animation: plano-dibuja 1.1s var(--salida) both;
-  animation-delay: calc(.25s + var(--i, 0) * 150ms);
+  animation: plano-dibuja .6s var(--salida) both;
+  animation-delay: calc(.06s + var(--i, 0) * 80ms);
 }
 .plano__z--pesca { --i: 0; }
 .plano__z--bici  { --i: 1; }
 .plano__z--ferr  { --i: 2; }
-/* Los rótulos del plano llegan detrás de su zona, sólo con opacidad. */
+/* Los rótulos del plano llegan con su zona, sólo con opacidad y casi
+   sin retardo: son el CONTENIDO del plano —qué mostrador es cuál— y
+   nunca deben ser lo último en llegar. */
 .js .most .ancho.rev .plano__z text,
 .js .most .ancho.rev .plano__div,
 .js .most .ancho.rev .plano__puerta,
 .js .most .ancho.rev .plano__s--puerta { opacity: 0; }
 @keyframes plano-rotulo { to { opacity: 1; } }
 .js .most .ancho.rev.ok .plano__z text {
-  animation: plano-rotulo .4s ease-out both;
-  animation-delay: calc(.75s + var(--i, 0) * 150ms);
+  animation: plano-rotulo .25s ease-out both;
+  animation-delay: calc(.05s + var(--i, 0) * 50ms);
 }
 .js .most .ancho.rev.ok .plano__div,
 .js .most .ancho.rev.ok .plano__puerta,
 .js .most .ancho.rev.ok .plano__s--puerta {
-  animation: plano-rotulo .4s ease-out 1.2s both;
+  animation: plano-rotulo .25s ease-out .1s both;
 }
 
 /* ── Cascadas (regla 4) ────────────────────────────────────────────
    Los tres mostradores, los siete meses y las seis fotos: cascada de
-   60 ms por CONTENEDOR. A 375 px la grilla de meses ya colapsa y la
-   cascada se lee en vertical, que es lo mismo. */
+   45 ms por CONTENEDOR —dentro del rango 40–80 de movimiento-web—.
+   Estaba en 60 y con siete meses el último salía a los 420 ms: el
+   grupo no aterrizaba dentro del medio segundo que manda la regla, y
+   en la captura del catálogo el mosaico salía con dos fotos puestas y
+   cuatro huecos. A 375 px la grilla de meses ya colapsa y la cascada
+   se lee en vertical, que es lo mismo. */
 .js .mostradores.rev,
 .js .meses.rev,
 .js .mos__grilla.rev { opacity: 1; transform: none; transition: none; }
@@ -425,7 +768,7 @@ h1, h2, h3 { font-family: var(--display); font-weight: 400; line-height: 1.16; m
 .js .mos__grilla.rev.ok > * {
   opacity: 1; transform: none;
   transition: opacity .3s ease-out, transform .6s var(--salida);
-  transition-delay: calc(var(--i, 0) * 60ms);
+  transition-delay: calc(var(--i, 0) * 45ms);
 }
 /* El retardo por índice va acá y no en un style="" del HTML: la CSP lo
    bloquea sin decir una palabra. */
@@ -437,12 +780,39 @@ h1, h2, h3 { font-family: var(--display); font-weight: 400; line-height: 1.16; m
 .meses > :nth-child(6), .mos__grilla > :nth-child(6) { --i: 5; }
 .meses > :nth-child(7) { --i: 6; }
 
+/* La misma cascada, pero genérica: cualquier contenedor con la clase
+   .cascada en el HTML escalona a sus hijos. Acá la usa SÓLO la grilla
+   de las seis pegas —la banda de cifras entra como una pieza entera, a
+   propósito, y está explicado en el comentario del HTML—. El
+   contenedor HAY que neutralizarlo: si no,
+   baja él y bajan los hijos, y el grupo entero se desplaza el doble. */
+.js .cascada.rev { opacity: 1; transform: none; transition: none; }
+.js .cascada.rev > * { opacity: 0; transform: translateY(26px); }
+.js .cascada.rev.ok > * {
+  opacity: 1; transform: none;
+  transition: opacity .3s ease-out, transform .6s var(--salida);
+  transition-delay: calc(var(--i, 0) * 70ms);
+}
+.cascada > :nth-child(1) { --i: 0; }
+.cascada > :nth-child(2) { --i: 1; }
+.cascada > :nth-child(3) { --i: 2; }
+.cascada > :nth-child(4) { --i: 3; }
+.cascada > :nth-child(5) { --i: 4; }
+.cascada > :nth-child(6) { --i: 5; }
+.cascada > :nth-child(7) { --i: 6; }
+.cascada > :nth-child(8) { --i: 7; }
+
 @media (prefers-reduced-motion: reduce) {
-  .js .portada__texto > * { animation: none; }
+  .js .portada__texto > * { animation: none; opacity: 1; transform: none; }
+  /* Del hover se apaga el DESPLAZAMIENTO, no el hover: el cambio de
+     color se queda. En Windows esta preferencia viene puesta de fábrica
+     en media máquina y apagarlo todo deja la página muerta. */
   .mos__p:hover img { transform: none; }
-  .js .rev { opacity: 1; transform: none; }
-  .js .mostradores.rev > *, .js .meses.rev > *,
-  .js .mos__grilla.rev > * { opacity: 1; transform: none; }
+  .boton:hover { transform: none; }
+  /* Los reveals no se desplazan, pero SIGUEN fundiendo: un fundido no
+     es movimiento; un salto de 22 px sí. */
+  .js .rev, .js .mostradores.rev > *, .js .meses.rev > *,
+  .js .mos__grilla.rev > *, .js .cascada.rev > * { transform: none; }
   /* El plano entero, sin trazarse. */
   .js .most .ancho.rev .plano__z rect,
   .js .most .ancho.rev .plano__muro {
@@ -469,6 +839,123 @@ h1, h2, h3 { font-family: var(--display); font-weight: 400; line-height: 1.16; m
 }
 /* La marca de la cabecera también es un enlace: 44 px mínimos. */
 .cab__marca { min-height: 44px; }
-/* El botón chico de la cabecera es el CTA principal en teléfono:
-   en móvil sube a 44 px como todo lo demás que se toca. */
-@media (max-width: 1060px) { .boton--chico { min-height: 44px; } }
+
+/* ══════════════════════════════════════════════════════════════════
+   VIDEO DE FONDO
+   La foto sigue siendo la base y el clip se funde encima cuando puede
+   reproducirse. Si el visitante pidió menos movimiento o ahorra datos,
+   main.js no lo pide y no se descarga ni un byte.
+   El fundido dura 1,4 s a propósito: con 0,3 s se ve el salto, con
+   2,5 s se ve lento. La clase --ver la pone el JS DESPUÉS de que el
+   play() resuelva, para que no se vea un rectángulo negro fundiéndose
+   sobre la foto mientras el clip todavía no pinta.
+   Presupuesto: portada 1,4 MB · cita 1,1 MB, 720p y sin audio.
+   El encuadre y la máscara NO se declaran acá: van compartidos con la
+   foto, más arriba.
+   ══════════════════════════════════════════════════════════════════ */
+.portada__video, .cita__video {
+  position: absolute; inset: 0; opacity: 0;
+  transition: opacity 1.4s ease; pointer-events: none;
+}
+.portada__video.video--ver, .cita__video.video--ver { opacity: 1; }
+
+/* ── Scroll-driven: doce líneas que hacen el trabajo de una librería
+   de 70 KB, y que sencillamente no existen donde el navegador no las
+   soporta. La portada se disuelve hacia el zinc que hay debajo —fondo
+   claro: blur y opacidad, no brillo— y el scale(1.06) va siempre, o
+   el desenfoque deja ver el filo transparente de la caja.
+   El filter va en el CONTENEDOR, nunca en el <video>.
+   Las dos bandas a sangre se acercan un 12 % mientras entran: es
+   transform puro, corre en el compositor y no toca el texto. ── */
+@supports (animation-timeline: scroll()) {
+  @media (prefers-reduced-motion: no-preference) and (min-width: 761px) {
+    .portada__foto {
+      animation: portada-se-va linear both;
+      animation-timeline: scroll(root block);
+      animation-range: 0 90vh;
+    }
+    .tajo img, .cita img, .cita__video {
+      animation: banda-acerca linear both;
+      animation-timeline: view(block);
+      animation-range: cover 0% cover 100%;
+    }
+  }
+}
+@keyframes portada-se-va { to { filter: blur(7px); transform: scale(1.06); opacity: .5; } }
+@keyframes banda-acerca  { from { transform: scale(1.12); } to { transform: scale(1); } }
+
+/* ══════════════════════════════════════════════════════════════════
+   BOTÓN FLOTANTE DE CONSULTA
+   Fijo abajo a la derecha, 56 px de alto: por encima de los 44 del
+   mínimo táctil. Va en el óxido de la ferretería —el acento con el
+   que ya están escritos los rótulos y los enlaces de toda la página—
+   y no en el verde de WhatsApp, porque no lleva a WhatsApp: este
+   negocio no publica teléfono y el botón lleva al bloque que arma la
+   consulta. Blanco zinc sobre óxido: 5,1:1, AA de sobra.
+
+   La dirección del truco importa: el botón se ve SIEMPRE por defecto
+   y el JS sólo lo aparta mientras el visitante está en la portada,
+   para no tapar el titular. Si el script no arranca —o si rescate.js
+   quita la clase .js— el botón queda visible, que es el estado que
+   vende. Al revés, un fallo del script se llevaría el CTA.
+   ══════════════════════════════════════════════════════════════════ */
+.wapp {
+  position: fixed;
+  right: max(1rem, env(safe-area-inset-right, 0px));
+  bottom: max(1rem, env(safe-area-inset-bottom, 0px));
+  z-index: 60;
+  display: inline-flex; align-items: center; gap: .5rem;
+  height: 56px; padding: 0 1.15rem 0 .95rem;
+  border-radius: 999px;
+  background: var(--ferr); color: var(--zinc);
+  text-decoration: none;
+  font-family: var(--cuerpo); font-size: .95rem; font-weight: 700; line-height: 1;
+  /* Sombra en capas y del color del acento, no negra: se lee como el
+     botón levantándose, no como un rectángulo gris debajo. */
+  box-shadow: 0 10px 26px -12px rgba(154, 74, 30, .9), 0 2px 6px rgba(23, 25, 26, .25);
+  transition: opacity .28s ease, transform .28s var(--salida), box-shadow .18s ease;
+}
+.wapp:hover { transform: translateY(-2px); box-shadow: 0 14px 30px -12px rgba(154, 74, 30, .95), 0 2px 6px rgba(23, 25, 26, .3); }
+.wapp__i { width: 24px; height: 24px; flex: 0 0 auto; fill: currentColor; }
+.wapp__l { stroke: var(--ferr); stroke-width: 1.6; stroke-linecap: round; fill: none; }
+/* Apartado mientras se mira la portada. Lo pone y lo quita main.js. */
+.wapp--arriba { opacity: 0; transform: translateY(96px); pointer-events: none; }
+/* En teléfono queda el círculo solo: el rótulo se esconde sin salir
+   del DOM, para que el lector de pantalla lo siga leyendo. */
+@media (max-width: 520px) {
+  .wapp { width: 56px; padding: 0; justify-content: center; gap: 0; }
+  .wapp__t { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); }
+}
+/* Que el botón no se coma la última línea del deslinde. */
+.pie { padding-bottom: 5.5rem; }
+
+@media (prefers-reduced-motion: reduce) {
+  /* Se apaga el desplazamiento del hover, no el hover. */
+  .wapp:hover { transform: none; }
+  .wapp { transition: opacity .28s ease; }
+  .wapp--arriba { transform: none; }
+}
+
+/* ── MAPA DE UBICACION ──────────────────────────────────────────────
+   Imagen propia con mosaicos de OpenStreetMap pegados: la CSP prohibe
+   pedir nada a un tercero, asi que un iframe de Google Maps quedaria en
+   blanco SIN dar un solo error. El "Como llegar" si es un enlace, y un
+   enlace no lo bloquea nada.
+   Los colores salen de currentColor a proposito: asi el bloque se adapta
+   a la paleta de cada demo sin conocerla y sin chocar con ella.
+   La atribucion a OpenStreetMap la exige su licencia (ODbL). */
+.mapa-sec { padding: clamp(2.5rem, 6vw, 4.5rem) 0; }
+.mapa { margin: 1.4rem 0 0; border: 1px solid; border-color: color-mix(in srgb, currentColor 22%, transparent); border-radius: 10px; overflow: hidden; }
+@supports not (color: color-mix(in srgb, red 50%, blue)) { .mapa { border-color: rgba(128, 128, 128, .35); } }
+.mapa img { display: block; width: 100%; height: auto; aspect-ratio: 16 / 10; object-fit: cover; }
+.mapa__pie {
+  display: flex; flex-wrap: wrap; align-items: center; gap: .4rem 1rem;
+  padding: .75rem .9rem;
+  font-size: .86em; line-height: 1.45;
+  border-top: 1px solid; border-top-color: color-mix(in srgb, currentColor 22%, transparent);
+}
+@supports not (color: color-mix(in srgb, red 50%, blue)) { .mapa__pie { border-top-color: rgba(128, 128, 128, .35); } }
+.mapa__pie b { font-weight: 700; }
+.mapa__ir { color: inherit; font-weight: 700; text-decoration: underline; min-height: 44px; display: inline-flex; align-items: center; }
+.mapa__cred { width: 100%; font-size: .84em; opacity: .8; }
+.mapa__cred a { color: inherit; }

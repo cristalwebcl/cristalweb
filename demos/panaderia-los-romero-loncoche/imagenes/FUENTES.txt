@@ -1,0 +1,48 @@
+FUENTES DE LAS IMAGENES Y DEL VIDEO - Panaderia Los Romero, Loncoche
+Rehecha el 13-09-2026 (presentacion antes que texto). Todas son fotos de
+REFERENCIA de bancos libres. Ninguna es del local: el horno, el mostrador y el
+pan de verdad los tiene que mandar la panaderia.
+
+port-01.jpg  <-  pozo-romero-horno\012.jpg  |  pexels.com (Pexels License)  |  autor: Yesimcf  |  https://www.pexels.com/es-es/foto/horno-de-pan-tradicional-de-lena-con-pitas-38544069/  |  consulta: "bread oven"
+    Portada a sangre: horno a leña con el pan en la pala. Elegida entre 11 candidatas
+    con medir-velo.ps1: pide .43 bajo el texto a 1440 y 2000, .52 a 500 (la mas baja
+    de las que tenian vida; la de .00 era un horno negro).
+banda-01.jpg  <-  pozo-romero-baguette\008.jpg  |  pexels.com (Pexels License)  |  autor: Ilo Frey  |  https://www.pexels.com/es-es/foto/baguettes-francesas-crujientes-recien-horneadas-en-primer-plano-38597841/  |  consulta: "baguettes"
+    Banda parallax: textura de corteza a sangre. Velo medido bajo la frase: .48.
+cita-01.jpg  <-  pozo-romero-masa\009.jpg  |  pexels.com (Pexels License)  |  autor: demis massari  |  https://www.pexels.com/es-es/foto/manos-harina-horneando-masa-12703733/  |  consulta: "dough hands"
+    Cita «Si va a llevar harto, avise en la mañana»: manos amasando, velo plano .74.
+hund1-01.jpg  <-  pozo-romero-bollos\010.jpg  |  pexels.com (Pexels License)  |  autor: Anh Nguyen  |  https://www.pexels.com/es-es/foto/bollos-artesanales-en-tabla-de-madera-30767681/  |  consulta: "bread rolls"
+    Ficha hundida 6:30.
+hund2-01.jpg  <-  pozo-romero-masa\006.jpg  |  pexels.com (Pexels License)  |  autor: ROMAN ODINTSOV  |  https://www.pexels.com/es-es/foto/manos-harina-hecho-en-casa-ingredientes-5947601/  |  consulta: "dough hands"
+    Ficha hundida 9:00 (el amasado).
+hund3-01.jpg  <-  pozo-romero-canasta\008.jpg  |  pexels.com (Pexels License)  |  autor: Rosa Stone  |  https://www.pexels.com/es-es/foto/pan-desayuno-cesta-cesto-21298336/  |  consulta: "bread basket"
+    Ficha hundida 12:30.
+hund4-01.jpg  <-  pozo-pan-horno\023.jpg  |  pexels.com (Pexels License)  |  autor: Silvio Pelegrin  |  https://www.pexels.com/es-es/foto/pan-artesano-recien-horneado-en-panaderia-30888612/  |  consulta: "bakery bread oven baker hands"
+    Ficha hundida 19:00. Sin cara: el panadero sale del cuello para abajo.
+hund5-01.jpg  <-  pozo-romero-horno\007.jpg  |  pexels.com (Pexels License)  |  autor: Esra Erdem  |  https://www.pexels.com/es-es/foto/comida-rollos-horneando-bollos-22775668/  |  consulta: "bread oven"
+    Ficha hundida 20:30.
+mos1-01.jpg  <-  pozo-romero-rustico\010.jpg  |  pexels.com (Pexels License)  |  autor: Natalia Olivera  |  https://www.pexels.com/es-es/foto/pan-artesanal-con-diseno-rustico-y-hierbas-30666732/  |  consulta: "rustic bread"
+mos2-01.jpg  <-  pozo-romero-baguette\005.jpg  |  pexels.com (Pexels License)  |  autor: Jonny Phan  |  https://www.pexels.com/es-es/foto/baguettes-artesanales-en-exhibicion-de-panaderia-34936588/  |  consulta: "baguettes"
+mos3-01.jpg  <-  pozo-romero-bollos\006.jpg  |  pexels.com (Pexels License)  |  autor: Martha Vera  |  https://www.pexels.com/es-es/foto/apilar-pila-monton-fotografia-de-comida-14193926/  |  consulta: "bread rolls"
+mos4-01.jpg  <-  pozo-romero-masa\010.jpg  |  pexels.com (Pexels License)  |  autor: ROMAN ODINTSOV  |  https://www.pexels.com/es-es/foto/manos-harina-horneando-hecho-en-casa-5947593/  |  consulta: "dough hands"
+mos5-01.jpg  <-  pozo-pan-horno\021.jpg  |  pexels.com (Pexels License)  |  autor: Martha Vera  |  https://www.pexels.com/es-es/foto/pan-comida-delicioso-bandeja-de-madera-14193051/  |  consulta: "bakery bread oven baker hands"
+mos6-01.jpg  <-  pozo-romero-rustico\008.jpg  |  pexels.com (Pexels License)  |  autor: Chrystian Guedez  |  https://www.pexels.com/es-es/foto/pan-comida-brindis-tostada-16149823/  |  consulta: "rustic bread"
+    Mosaico: seis panes de referencia, con la nota que lo dice en la pagina.
+
+BRUMA (bruma-cla-01..08.png y bruma-osc-01..03.png, 30x20, 1-2 KB): son las MISMAS
+fotos de arriba, recortadas a 3:2, reducidas y recoloreadas con
+C:\devs\demos\hacer-bruma.ps1 (-Tono clara -Sat 2.8: luminancia >= 0,68 /
+-Tono oscura -Sat 2.2: <= 0,05). No suman fuentes nuevas.
+    cla-01 <- port-01   cla-02 <- banda-01  cla-03 <- hund3-01  cla-04 <- mos2-01
+    cla-05 <- hund2-01  cla-06 <- cita-01   cla-07 <- mos3-01   cla-08 <- mos1-01
+    osc-01 <- port-01   osc-02 <- cita-01   osc-03 <- hund5-01
+
+VIDEO
+video/port.mp4  <-  pexels.com (Pexels License, sin atribucion obligatoria)  |  autor: K  |  https://www.pexels.com/video/close-up-footage-of-a-breads-inside-an-oven-7405932/
+    Pan dorandose dentro del horno. 9 s desde el segundo 3, 1280x720, H.264 sin audio,
+    1,4 MB (FotoRadar /api/video/preparar). Sin personas ni marcas. Su cuadro pide velo
+    .37 / .40 bajo el texto. El original y el poster quedaron fuera de la demo, en
+    C:\devs\material\video-origen\panaderia-los-romero-loncoche.
+
+MAPA: iframe de Google Maps (embed publico, sin clave). No hay imagen de mapa: el
+mosaico de OpenStreetMap de la primera vuelta (mapa-01.jpg) se borro.

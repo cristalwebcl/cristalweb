@@ -16,3 +16,10 @@ mos6-01.jpg  <=  mos6/cm-149210498.jpg | 1920x1080 | CC0 | Andrew Pertsev | http
 VIDEO DE FONDO (Mixkit; Free = uso comercial sin atribucion, Restricted = igual pero sin redistribuir como stock; transcodificado a MP4 H.264 720p sin audio con Windows.Media.Transcoding)
 video/port.mp4  <=  mixkit | Mixkit Stock Video Free License | mixkit 47836 | https://mixkit.co/free-stock-video/ | https://assets.mixkit.co/videos/47836/47836-720.mp4 | 10 s
 video/cita.mp4  <=  mixkit | Mixkit Stock Video Free License | mixkit 41936 | https://mixkit.co/free-stock-video/ | https://assets.mixkit.co/videos/41936/41936-720.mp4 | 8 s
+
+MAPA DE UBICACION — mapa-01.jpg
+  768 x 768 · zoom 16 · centro -33.6046168, -70.5687567
+  Mosaicos de OpenStreetMap pegados en una sola imagen, con el marcador
+  dibujado encima. Datos (c) OpenStreetMap contributors, licencia ODbL:
+  la atribucion tiene que ir VISIBLE junto al mapa, en el pie de la figura.
+  https://www.openstreetmap.org/copyright

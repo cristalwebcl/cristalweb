@@ -1,0 +1,22 @@
+FUENTES DE LAS IMAGENES - Veterinaria Vasca Rehecha el 13-09-2026 (presentacion antes que texto). Fotos de REFERENCIA de bancos libres: ninguna es del local; las verdaderas las tiene que mandar el negocio. 
+port-01.jpg  <-  pozo-p-vasca-juntos\009.jpg  |  pexels (Pexels License)  |  autor: Wander Kash  |  https://www.pexels.com/es-es/foto/perro-sentado-mascotas-gato-20816519/  |  consulta: "dog and cat together"
+hund1-01.jpg  <-  pozo-p-vasca-dosperros\009.jpg  |  pexels (Pexels License)  |  autor: Marcelo Mora  |  https://www.pexels.com/es-es/foto/dos-perros-juguetones-disfrutando-un-momento-divertido-juntos-30951353/  |  consulta: "two dogs"
+hund2-01.jpg  <-  pozo-p-vasca-refugio\010.jpg  |  pexels (Pexels License)  |  autor: Miguel González  |  https://www.pexels.com/es-es/foto/mascota-suelo-molido-fondo-de-pantalla-16622790/  |  consulta: "cat hiding box"
+hund3-01.jpg  <-  pozo-p-vasca-dosgatos\012.jpg  |  pexels (Pexels License)  |  autor: Dasun Piyumal  |  https://www.pexels.com/es-es/foto/gatos-acogedores-relajandose-en-una-mesa-de-madera-30289334/  |  consulta: "two cats"
+hund4-01.jpg  <-  pozo-p-vasca-reja\007.jpg  |  pexels (Pexels License)  |  autor: Tomás Asurmendi  |  https://www.pexels.com/es-es/foto/perro-sesteando-en-el-pueblo-32210312/  |  consulta: "pet gate door"
+hund5-01.jpg  <-  pozo-p-vasca-dosperros\001.jpg  |  pexels (Pexels License)  |  autor: Sebastian Coman Travel  |  https://www.pexels.com/es-es/foto/pets-lying-on-grass-3631659/  |  consulta: "two dogs"
+hund6-01.jpg  <-  pozo-p-vasca-platos\006.jpg  |  pexels (Pexels License)  |  autor: MART  PRODUCTION  |  https://www.pexels.com/es-es/foto/bol-tazon-cuenco-comida-de-perro-8434633/  |  consulta: "pet bowls food"
+banda-01.jpg  <-  pozo-p-vasca-duermen\007.jpg  |  pexels (Pexels License)  |  autor: Dilara Albamya  |  https://www.pexels.com/es-es/foto/perro-suelo-molido-puerta-11179979/  |  consulta: "cat sleeping dog"
+cita-01.jpg  <-  pozo-p-vasca-juntos\008.jpg  |  pexels (Pexels License)  |  autor: Serge Lessard  |  https://www.pexels.com/es-es/foto/cama-animal-perro-mascota-27895153/  |  consulta: "dog and cat together"
+mos1-01.jpg  <-  pozo-p-vasca-juntos\004.jpg  |  pexels (Pexels License)  |  autor: MEHMET KAYNAR  |  https://www.pexels.com/es-es/foto/perro-y-gato-sentados-juntos-al-sol-35711491/  |  consulta: "dog and cat together"
+mos2-01.jpg  <-  pozo-p-vasca-juntos\005.jpg  |  pexels (Pexels License)  |  autor: Helena Jankovičová Kováčová  |  https://www.pexels.com/es-es/foto/perro-sentado-animales-mascotas-16395150/  |  consulta: "dog and cat together"
+mos3-01.jpg  <-  pozo-p-vasca-juntos\010.jpg  |  pexels (Pexels License)  |  autor: Alex Jaison  |  https://www.pexels.com/es-es/foto/perro-y-gato-gracioso-29357039/  |  consulta: "dog and cat together"
+mos4-01.jpg  <-  pozo-p-vasca-refugio\005.jpg  |  pexels (Pexels License)  |  autor: Veronica Ottoboni  |  https://www.pexels.com/es-es/foto/adorable-gato-maine-coon-relajandose-en-una-caja-33008526/  |  consulta: "cat hiding box"
+mos5-01.jpg  <-  pozo-p-vasca-olfato\003.jpg  |  pexels (Pexels License)  |  autor: Florencia  Pérez  |  https://www.pexels.com/es-es/foto/dos-perros-se-encuentran-en-el-parque-de-montevideo-33710349/  |  consulta: "dog sniffing"
+mos6-01.jpg  <-  pozo-p-vasca-juntos\011.jpg  |  pexels (Pexels License)  |  autor: JacLou- DL  |  https://www.pexels.com/es-es/foto/adorable-perro-y-gato-relajandose-al-aire-libre-en-primavera-37891867/  |  consulta: "dog and cat together"
+
+BRUMA (bruma-pag-0N.png y bruma-osc-0N.png, 30x20): las MISMAS fotos, recortadas a 3:2, reducidas y
+recoloreadas con C:\devs\demos\hacer-bruma.ps1 (clara >= 0,68 de luminancia / oscura <= 0,05). No suman fuentes.
+    pagina: port-01.jpg, banda-01.jpg, cita-01.jpg, mos1-01.jpg, hund3-01.jpg   |   oscuras: port-01.jpg, banda-01.jpg, cita-01.jpg
+
+MAPA: iframe de Google Maps (embed publico, sin clave). No hay imagen de mapa.

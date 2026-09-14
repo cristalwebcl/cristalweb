@@ -1,0 +1,22 @@
+FUENTES DE LAS IMAGENES - Repuestos y Servicio Automotriz Beroiza Rehecha el 13-09-2026 (presentacion antes que texto). Fotos de REFERENCIA de bancos libres: ninguna es del local; las verdaderas las tiene que mandar el negocio. 
+port-01.jpg  <-  pozo-p-ber-repuestos\004.jpg  |  pexels (Pexels License)  |  autor: Tahamie Farooqui  |  https://www.pexels.com/es-es/foto/oscuro-industria-metal-tecnologia-19499409/  |  consulta: "auto parts shelf"
+hund1-01.jpg  <-  pozo-p-ber-suspension\002.jpg  |  pexels (Pexels License)  |  autor: Artem Podrez  |  https://www.pexels.com/es-es/foto/sucio-roto-coche-vehiculo-8986137/  |  consulta: "car suspension"
+hund2-01.jpg  <-  pozo-p-ber-scanner\012.jpg  |  pexels (Pexels License)  |  autor: Jose Ricardo Barraza Morachis  |  https://www.pexels.com/es-es/foto/hombre-manos-coche-vehiculo-4116198/  |  consulta: "diagnostic scanner car"
+hund3-01.jpg  <-  pozo-p-ber-inyector\004.jpg  |  pexels (Pexels License)  |  autor: Vladimir Srajber  |  https://www.pexels.com/es-es/foto/coche-tecnologia-chrome-cromo-22880459/  |  consulta: "fuel injector"
+hund4-01.jpg  <-  pozo-p-ber-pastillas\009.jpg  |  pexels (Pexels License)  |  autor: Erik Mclean  |  https://www.pexels.com/es-es/foto/primer-plano-de-la-pinza-y-el-disco-de-freno-del-automovil-34277926/  |  consulta: "brake pads"
+hund5-01.jpg  <-  pozo-p-ber-suspension\003.jpg  |  pexels (Pexels License)  |  autor: Orhun Rüzgar  ÖZ  |  https://www.pexels.com/es-es/foto/primavera-mecanico-automotor-partes-10912797/  |  consulta: "car suspension"
+hund6-01.jpg  <-  pozo-p-ber-inyector\008.jpg  |  pexels (Pexels License)  |  autor: Gustavo Fring  |  https://www.pexels.com/es-es/foto/persona-mano-coche-reparar-6870297/  |  consulta: "fuel injector"
+banda-01.jpg  <-  pozo-p-ber-llaves\011.jpg  |  pexels (Pexels License)  |  autor: cottonbro studio  |  https://www.pexels.com/es-es/foto/herramientas-martillo-conjunto-objetos-7019599/  |  consulta: "wrench set dark"
+cita-01.jpg  <-  pozo-p-ber-suspension\011.jpg  |  pexels (Pexels License)  |  autor: Kássia Melo  |  https://www.pexels.com/es-es/foto/blanco-y-negro-primavera-escala-de-grises-suspension-13393008/  |  consulta: "car suspension"
+mos1-01.jpg  <-  pozo-p-ber-pastillas\005.jpg  |  pexels (Pexels License)  |  autor: agustin olmedo  |  https://www.pexels.com/es-es/foto/mantenimiento-de-frenos-de-automoviles-en-taller-30470930/  |  consulta: "brake pads"
+mos2-01.jpg  <-  pozo-p-ber-repuestos\002.jpg  |  pexels (Pexels License)  |  autor: odaksan  streç makineleri  |  https://www.pexels.com/es-es/foto/tienda-articulos-corredor-almacenar-4224967/  |  consulta: "auto parts shelf"
+mos3-01.jpg  <-  pozo-p-ber-llaves\007.jpg  |  pexels (Pexels License)  |  autor: Dmitry Demidov  |  https://www.pexels.com/es-es/foto/herramientas-equipo-variedad-espacio-para-texto-6789020/  |  consulta: "wrench set dark"
+mos4-01.jpg  <-  pozo-p-ber-suspension\007.jpg  |  pexels (Pexels License)  |  autor: Jan Kopřiva  |  https://www.pexels.com/es-es/foto/naturaleza-muerta-canal-de-television-britanico-suspension-enfoque-selectivo-5542145/  |  consulta: "car suspension"
+mos5-01.jpg  <-  pozo-p-ber-inyector\012.jpg  |  pexels (Pexels License)  |  autor: Pixabay  |  https://www.pexels.com/es-es/foto/filtro-de-aire-de-coche-redondo-blanco-y-negro-159293/  |  consulta: "fuel injector"
+mos6-01.jpg  <-  pozo-p-ber-llaves\005.jpg  |  pexels (Pexels License)  |  autor: Felix Mittermeier  |  https://www.pexels.com/es-es/foto/juego-de-llaves-sobre-fondo-negro-957912/  |  consulta: "wrench set dark"
+
+BRUMA (bruma-pag-0N.png y bruma-osc-0N.png, 30x20): las MISMAS fotos, recortadas a 3:2, reducidas y
+recoloreadas con C:\devs\demos\hacer-bruma.ps1 (clara >= 0,68 de luminancia / oscura <= 0,05). No suman fuentes.
+    pagina: port-01.jpg, banda-01.jpg, cita-01.jpg, hund1-01.jpg, hund3-01.jpg, mos1-01.jpg, mos3-01.jpg, mos6-01.jpg   |   oscuras: port-01.jpg, cita-01.jpg, banda-01.jpg
+
+MAPA: iframe de Google Maps (embed publico, sin clave). No hay imagen de mapa.

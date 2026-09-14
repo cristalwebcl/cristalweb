@@ -1,0 +1,892 @@
+/* ═══════════════════════════════════════════════════════════════════
+   DUOVET CLÍNICA VETERINARIA — Av. San Martín 01194, Temuco
+   4,4★ con 274 reseñas · sin web
+
+   ── EL CASO ─────────────────────────────────────────────────────────
+   Sin web en una avenida donde su vecino SÍ la tiene. Cuando alguien
+   busca "veterinaria Temuco" y compara dos fichas, la que tiene sitio
+   se ve más grande aunque no lo sea. La comparación no la hace el
+   dueño: la hacen los clientes, todos los días.
+
+   ── DIRECCIÓN: "SIN RUIDO" ──────────────────────────────────────────
+   DÉCIMA veterinaria del registro. Las nueve anteriores ya tomaron la
+   hospitalización hora por hora (44), la rural (55), los precios
+   dichos antes (59), el triage de urgencias (65), la guardia nocturna
+   (30), el lago (36), la bata de campaña (37), la orquídea (38) y el
+   rosa terroso (32).
+
+   Lo que quedaba libre era un PACIENTE: el gato. Casi todo en una
+   veterinaria está pensado para perros —la sala, los ruidos, la
+   mesa— y el gato paga la diferencia. Ninguna de las nueve escribe una
+   línea sobre eso. La paleta acompaña: nada saturado, nada que grite.
+
+   ── PALETA (medida sobre el DOM, no calculada de memoria) ───────────
+   --papel   #FAF8F5  blanco cálido, casi sin color
+   --tinta   #232024
+   --malva   #7E5A72  apagado y grisáceo. Se separa de la frambuesa de
+                      la 32 (#B04A6A, rosada y viva) y de la ciruela de
+                      la 27 (#7C3A5F, mucho más saturada): éste tiene
+                      gris dentro, que es lo que lo vuelve silencioso.
+   --malva-claro #D9BDD1  única variante válida SOBRE fondo oscuro
+   --junco   #5E7268  verde grisáceo, segundo tono. Para lo que ayuda
+                      frente a lo que empeora. Medido: 5,1:1 sobre
+                      --papel.
+
+   ── TRÍO TIPOGRÁFICO ────────────────────────────────────────────────
+   Display · Source Serif 4 — humanista, variable, cálida sin ser
+     decorativa. Nueva en el registro.
+   Cuerpo  · Karla ×5 — variable y liviana.
+   Dato    · Azeret Mono ×3 (forestal-robur, 55) — para los rótulos de
+     tiempo («tres días antes», «el día», «en la sala»).
+
+   Stack de la casa: HTML + CSS + JS clásico. Sin build, sin librerías.
+   ═══════════════════════════════════════════════════════════════════ */
+
+
+/* ══════════ 1 · VARIABLES ══════════ */
+:root {
+  --papel:       #FAF8F5;
+  --papel-hondo: #F0ECE7;
+  --papel-borde: #DCD5CE;
+  --tinta:       #232024;
+  --tinta-suave: #56505A;   /* medido: 7,6:1 sobre --papel */
+  --malva:       #7E5A72;
+  --malva-claro: #D9BDD1;
+  --junco:       #5E7268;
+  --oscuro:      #201D22;
+
+  --display: "Source Serif 4", Georgia, "Times New Roman", serif;
+  --cuerpo:  "Karla", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --mono:    "Azeret Mono", ui-monospace, "Consolas", monospace;
+
+  --firma: 58px;
+  --marco: clamp(1.15rem, 4vw, 3.4rem);
+  --curva: 4px;
+}
+
+
+/* ══════════ 2 · BASE ══════════ */
+*, *::before, *::after { box-sizing: border-box; }
+
+html {
+  scroll-behavior: smooth;
+  -webkit-text-size-adjust: 100%;
+}
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+}
+
+body {
+  margin: 0;
+  padding-bottom: calc(var(--firma) + 16px);
+  background: var(--papel);
+  color: var(--tinta);
+  font-family: var(--cuerpo);
+  font-size: clamp(1rem, 0.96rem + 0.2vw, 1.07rem);
+  line-height: 1.7;
+  overflow-x: hidden;
+}
+
+h1, h2, h3 {
+  font-family: var(--display);
+  font-weight: 600;
+  line-height: 1.15;
+  margin: 0;
+  text-wrap: balance;
+}
+
+p { margin: 0 0 1em; }
+img { max-width: 100%; display: block; }
+[hidden] { display: none !important; }   /* regla 9 de AGENTS.md */
+
+a { color: var(--malva); }
+
+:focus-visible {
+  outline: 3px solid var(--malva);
+  outline-offset: 3px;
+}
+
+.saltar {
+  position: absolute;
+  left: -9999px;
+  top: 0;
+  z-index: 999;
+  background: var(--tinta);
+  color: var(--papel);
+  padding: .7rem 1.1rem;
+  font-weight: 600;
+}
+.saltar:focus { left: .5rem; top: .5rem; }
+
+
+/* ══════════════════════════════════════════════════════════════
+   3 · LA FIRMA FLOTANTE
+   Undécima variación de la tanda: no hay cabecera ni menú fijo.
+   Sólo el nombre y el teléfono, abajo a la izquierda, siempre a
+   mano y sin ocupar el borde superior — que es donde el lector
+   está leyendo.
+
+   Es un enlace normal: si el JS no corre, sigue llamando igual.
+   ══════════════════════════════════════════════════════════════ */
+.firma {
+  position: fixed;
+  left: var(--marco);
+  bottom: 16px;
+  z-index: 50;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: var(--firma);
+  padding: .55rem 1.1rem;
+  background: var(--tinta);
+  color: var(--papel);
+  text-decoration: none;
+  border-radius: 999px;
+  box-shadow: 0 6px 22px rgba(35,32,36,.22);
+  transition: transform .24s ease, background-color .24s ease;
+}
+.firma:hover,
+.firma:focus-visible {
+  transform: translateY(-3px);
+  background: #2E2A30;
+}
+.firma-n {
+  font-family: var(--display);
+  font-weight: 600;
+  font-size: 1.02rem;
+  line-height: 1.1;
+}
+.firma-t {
+  font-family: var(--mono);
+  font-size: .76rem;
+  color: var(--malva-claro);   /* medido sobre --tinta */
+}
+@media (prefers-reduced-motion: reduce) {
+  .firma { transition: background-color .24s ease; }
+  .firma:hover, .firma:focus-visible { transform: none; }
+}
+
+
+/* ══════════════════════════════════════════════════════════════
+   4 · PORTADA
+   Entrada con @keyframes puros — ni rAF ni observers acá, que
+   Chrome los congela en pestañas de fondo.
+   ══════════════════════════════════════════════════════════════ */
+.portada { position: relative; }
+
+.portada-cuerpo {
+  padding: clamp(2.6rem, 7vw, 5rem) var(--marco) clamp(2.2rem, 5vw, 3.2rem);
+  max-width: 1120px;
+}
+
+.marca {
+  font-family: var(--display);
+  font-weight: 600;
+  font-size: 1.1rem;
+  margin: 0 0 1.5rem;
+}
+.marca span {
+  font-family: var(--mono);
+  font-weight: 400;
+  font-size: .7rem;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+  color: var(--tinta-suave);
+  display: block;
+  margin-top: .15rem;
+}
+
+.portada-h1 {
+  font-size: clamp(2.3rem, 6.4vw, 4.4rem);
+  line-height: 1.1;
+  margin: 0 0 1.3rem;
+  max-width: 16ch;
+}
+.portada-h1 .l { display: block; }
+.portada-h1 .l3 em {
+  font-style: italic;
+  color: var(--malva);
+}
+
+/* sólo opacity y transform: nunca letter-spacing animado — en la
+   demo 53 eso dejó el documento clavado en 443 px de ancho. */
+.js .portada-h1 .l {
+  opacity: 0;
+  transform: translateY(14px);
+  animation: entraLinea .85s cubic-bezier(.22,.68,.36,1) forwards;
+}
+.js .portada-h1 .l1 { animation-delay: .10s; }
+.js .portada-h1 .l2 { animation-delay: .24s; }
+.js .portada-h1 .l3 { animation-delay: .38s; }
+
+.js .marca,
+.js .portada-baja,
+.js .portada-acciones,
+.js .indice,
+.js .portada-nota {
+  opacity: 0;
+  animation: entraSuave .75s ease forwards;
+}
+.js .marca            { animation-delay: .04s; }
+.js .portada-baja     { animation-delay: .52s; }
+.js .portada-acciones { animation-delay: .62s; }
+.js .indice           { animation-delay: .72s; }
+.js .portada-nota     { animation-delay: .82s; }
+
+@keyframes entraLinea { to { opacity: 1; transform: translateY(0); } }
+@keyframes entraSuave { to { opacity: 1; } }
+
+@media (prefers-reduced-motion: reduce) {
+  .js .portada-h1 .l,
+  .js .marca,
+  .js .portada-baja,
+  .js .portada-acciones,
+  .js .indice,
+  .js .portada-nota { opacity: 1; transform: none; animation: none; }
+}
+
+.portada-baja {
+  max-width: 52ch;
+  color: var(--tinta-suave);
+  margin: 0 0 1.8rem;
+  font-size: clamp(1.02rem, 1.5vw, 1.12rem);
+}
+
+.portada-acciones {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 1.1rem;
+  margin: 0 0 2rem;
+}
+
+/* el índice */
+.indice {
+  display: grid;
+  gap: 1px;
+  background: var(--papel-borde);
+  border: 1px solid var(--papel-borde);
+  border-radius: var(--curva);
+  overflow: hidden;
+  margin-bottom: 1.6rem;
+}
+@media (min-width: 760px)  { .indice { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (min-width: 1060px) { .indice { grid-template-columns: repeat(4, minmax(0, 1fr)); } }
+
+.indice a {
+  display: flex;
+  flex-direction: column;
+  gap: .2rem;
+  background: var(--papel);
+  padding: .9rem 1rem 1rem;
+  min-height: 44px;
+  text-decoration: none;
+  color: var(--tinta);
+  min-width: 0;
+  transition: background-color .22s ease;
+}
+.indice a:hover,
+.indice a:focus-visible { background: var(--papel-hondo); }
+.ix-n {
+  font-family: var(--mono);
+  font-size: .66rem;
+  letter-spacing: .12em;
+  color: var(--malva);
+}
+.ix-t {
+  font-family: var(--display);
+  font-weight: 600;
+  font-size: 1rem;
+  line-height: 1.2;
+}
+
+.portada-nota {
+  display: flex;
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: .5rem;
+  margin: 0;
+  font-size: .92rem;
+  color: var(--tinta-suave);
+}
+.portada-nota b {
+  font-family: var(--display);
+  font-size: 1.5rem;
+  color: var(--tinta);
+  line-height: 1;
+}
+.estrellas {
+  color: var(--malva);
+  letter-spacing: .06em;
+}
+.portada-nota-t { font-family: var(--mono); font-size: .74rem; }
+
+.portada-foto {
+  min-height: clamp(220px, 34vw, 400px);
+  background: var(--papel-hondo);
+  background-size: cover;
+  background-position: center;
+  border-top: 1px solid var(--papel-borde);
+  border-bottom: 1px solid var(--papel-borde);
+}
+
+
+/* ══════════════════════════════════════════════════════════════
+   5 · BOTONES NO CONVENCIONALES
+   ══════════════════════════════════════════════════════════════ */
+
+/* .btn-canasta — el canil. Una reja de barrotes finos cruza el
+   botón; al pasar el cursor los barrotes SE ABREN (se separan) y el
+   fondo aclara detrás, como una puerta que se destapa. */
+.btn-canasta {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 52px;
+  padding: .9rem 1.7rem;
+  background-color: var(--tinta);
+  background-image: repeating-linear-gradient(
+      90deg,
+      rgba(217,189,209,.30) 0px,
+      rgba(217,189,209,.30) 2px,
+      transparent 2px,
+      transparent 9px);
+  background-size: 11px 100%;
+  color: #FFFFFF;
+  text-decoration: none;
+  border-radius: var(--curva);
+  font-family: var(--display);
+  font-weight: 600;
+  font-size: 1.06rem;
+  transition: background-size .34s ease, background-color .25s ease;
+}
+.btn-canasta:hover,
+.btn-canasta:focus-visible {
+  background-size: 22px 100%;
+  background-color: #2E2A30;
+}
+
+/* .btn-silencio — sin caja y sin ruido: una línea que aparece
+   desde el centro hacia los dos lados. */
+.btn-silencio {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  min-height: 52px;
+  padding: .9rem .3rem;
+  color: inherit;
+  text-decoration: none;
+  font-family: var(--mono);
+  font-size: .92rem;
+  letter-spacing: .03em;
+}
+.btn-silencio::after {
+  content: "";
+  position: absolute;
+  left: 0; right: 0;
+  bottom: .75rem;
+  height: 2px;
+  background: var(--malva);
+  transform: scaleX(0);
+  transition: transform .3s cubic-bezier(.22,.68,.36,1);
+}
+.btn-silencio:hover::after,
+.btn-silencio:focus-visible::after { transform: scaleX(1); }
+
+@media (prefers-reduced-motion: reduce) {
+  .btn-canasta { transition: background-color .25s ease; }
+  .btn-canasta:hover, .btn-canasta:focus-visible { background-size: 11px 100%; }
+  .btn-silencio::after { transition: none; }
+}
+
+
+/* ══════════ 6 · SECCIONES ══════════ */
+.sec {
+  padding: clamp(3rem, 8vw, 6rem) var(--marco);
+  max-width: 1120px;
+}
+
+.sec-n {
+  font-family: var(--mono);
+  font-size: .72rem;
+  letter-spacing: .2em;
+  color: var(--malva);
+  margin: 0 0 .5rem;
+}
+
+.sec-t {
+  font-size: clamp(1.85rem, 4.4vw, 3rem);
+  max-width: 20ch;
+  margin: 0 0 1rem;
+}
+
+.sec-baja {
+  max-width: 60ch;
+  color: var(--tinta-suave);
+  margin: 0 0 clamp(1.9rem, 4vw, 2.8rem);
+}
+
+
+/* ══════════ 7 · PIEZA FIRMA — los cinco momentos ══════════ */
+.antes {
+  list-style: none;
+  margin: 0 0 clamp(2rem, 5vw, 3rem);
+  padding: 0;
+}
+.an {
+  padding: 1.4rem 0;
+  border-bottom: 1px solid var(--papel-borde);
+}
+.an:first-child { border-top: 1px solid var(--papel-borde); }
+.an-k {
+  font-family: var(--mono);
+  font-size: .66rem;
+  font-weight: 500;
+  letter-spacing: .18em;
+  text-transform: uppercase;
+  color: var(--malva);
+  margin: 0 0 .3rem;
+}
+.an-t {
+  font-size: 1.36rem;
+  margin: 0 0 .55rem;
+  max-width: 30ch;
+}
+.an-p {
+  margin: 0;
+  color: var(--tinta-suave);
+  max-width: 62ch;
+}
+
+/* los dos pares: lo que ayuda / lo que empeora */
+.pares {
+  display: grid;
+  gap: 1.1rem;
+  margin-bottom: 1.8rem;
+}
+@media (min-width: 800px) {
+  .pares { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+.par {
+  background: #FFFFFF;
+  border: 1px solid var(--papel-borde);
+  border-radius: var(--curva);
+  padding: 1.25rem 1.25rem 1.4rem;
+  min-width: 0;
+}
+.par-t {
+  font-size: 1.2rem;
+  margin: 0 0 .8rem;
+  padding-bottom: .6rem;
+  border-bottom: 1px solid var(--papel-hondo);
+}
+.par-l {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  font-size: .94rem;
+  color: var(--tinta-suave);
+}
+.par-l li {
+  position: relative;
+  padding: .34rem 0 .34rem 1.5rem;
+}
+/* el signo va escrito, no sólo en color: la página tiene que
+   funcionar en blanco y negro */
+.par-si li::before {
+  content: "+";
+  position: absolute;
+  left: 0;
+  top: .34rem;
+  font-family: var(--mono);
+  font-weight: 500;
+  color: var(--junco);
+}
+.par-no li::before {
+  content: "−";
+  position: absolute;
+  left: 0;
+  top: .34rem;
+  font-family: var(--mono);
+  font-weight: 500;
+  color: var(--malva);
+}
+.par-si { border-left: 0; }
+
+.gato-pie {
+  max-width: 62ch;
+  margin: 0;
+  padding: 1.25rem 1.35rem;
+  background: var(--tinta);
+  color: #DAD4D8;
+  border-radius: var(--curva);
+  font-size: .98rem;
+}
+.gato-pie b { color: var(--malva-claro); }
+
+
+/* ══════════ 8 · SERVICIOS ══════════ */
+.servicios {
+  list-style: none;
+  margin: 0 0 1.5rem;
+  padding: 0;
+  display: grid;
+  gap: 1rem;
+}
+@media (min-width: 700px)  { .servicios { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (min-width: 1020px) { .servicios { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
+
+.sv {
+  background: #FFFFFF;
+  border: 1px solid var(--papel-borde);
+  border-top: 4px solid var(--junco);
+  border-radius: var(--curva);
+  padding: 1.2rem 1.2rem 1.35rem;
+  min-width: 0;
+}
+.sv-t {
+  font-size: 1.16rem;
+  margin: 0 0 .45rem;
+}
+.sv-p {
+  margin: 0;
+  font-size: .93rem;
+  color: var(--tinta-suave);
+}
+
+.atiende-x {
+  max-width: 62ch;
+  font-size: .93rem;
+  color: var(--tinta-suave);
+  margin: 0;
+}
+
+
+/* ══════════════════════════════════════════════════════════════
+   9 · LÁMINA con foto que se desplaza al scroll
+   El contenedor de la foto es 24% más alto que la lámina para que
+   al parallax le sobre recorrido y nunca se vea el borde.
+   ══════════════════════════════════════════════════════════════ */
+.lamina {
+  position: relative;
+  isolation: isolate;
+  background: var(--oscuro);
+  color: var(--papel);
+  padding: clamp(3.4rem, 9vw, 6.5rem) var(--marco);
+  overflow: hidden;
+}
+.lamina-foto {
+  position: absolute;
+  inset: -12% 0;
+  z-index: -2;
+  background: #2B2730;
+  background-size: cover;
+  background-position: center;
+  will-change: transform;
+}
+.lamina::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background: linear-gradient(98deg, rgba(32,29,34,.95) 0%, rgba(32,29,34,.82) 58%, rgba(32,29,34,.60) 100%);
+}
+.lamina-caja { max-width: 48ch; }
+.lamina-t {
+  font-size: clamp(1.8rem, 4.2vw, 2.9rem);
+  margin: 0 0 1rem;
+  color: #FFFFFF;
+}
+.lamina-p {
+  color: #DAD4D8;             /* medido sobre #201D22 */
+  margin: 0 0 .9rem;
+}
+.lamina-p b { color: var(--malva-claro); }
+
+
+/* ══════════ 10 · LA CLÍNICA ══════════ */
+.clinica-cuerpo {
+  display: grid;
+  gap: clamp(1.6rem, 3.5vw, 3rem);
+}
+@media (min-width: 940px) {
+  .clinica-cuerpo { grid-template-columns: minmax(0, 1.4fr) minmax(0, 1fr); }
+}
+.clinica-p {
+  max-width: 56ch;
+  margin: 0 0 1.1rem;
+}
+.clinica-datos {
+  list-style: none;
+  margin: 1.4rem 0 0;
+  padding: 0;
+  display: grid;
+  gap: .7rem;
+}
+.clinica-datos li {
+  padding: .85rem 1rem;
+  background: var(--papel-hondo);
+  border-left: 3px solid var(--malva);
+  border-radius: 0 var(--curva) var(--curva) 0;
+  min-width: 0;
+}
+.clinica-datos b {
+  display: block;
+  font-family: var(--display);
+  font-weight: 600;
+  font-size: 1.08rem;
+  margin-bottom: .08rem;
+}
+.clinica-datos span {
+  font-size: .9rem;
+  color: var(--tinta-suave);
+}
+
+.nota {
+  align-self: start;
+  background: var(--tinta);
+  color: #DAD4D8;
+  border-radius: var(--curva);
+  padding: 1.6rem 1.4rem 1.3rem;
+  min-width: 0;
+  text-align: center;
+}
+.nota-k {
+  font-family: var(--mono);
+  font-size: .66rem;
+  letter-spacing: .2em;
+  text-transform: uppercase;
+  color: var(--malva-claro);
+  margin: 0 0 .6rem;
+}
+.nota-n {
+  margin: 0;
+  font-family: var(--display);
+  font-weight: 600;
+  font-size: 4rem;
+  line-height: 1;
+  color: #FFFFFF;
+}
+.nota-e {
+  margin: .3rem 0 .5rem;
+  color: var(--malva-claro);
+  letter-spacing: .12em;
+  font-size: 1.05rem;
+}
+.nota-c {
+  font-family: var(--mono);
+  font-size: .72rem;
+  letter-spacing: .08em;
+  margin: 0 0 1rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #3A353E;
+}
+.nota-x {
+  margin: 0;
+  font-size: .9rem;
+  text-align: left;
+}
+
+
+/* ══════════ 11 · VISITAR ══════════ */
+.visitar-cuerpo {
+  display: grid;
+  gap: clamp(1.4rem, 3vw, 2.6rem);
+}
+@media (min-width: 900px) {
+  .visitar-cuerpo {
+    grid-template-columns: minmax(0, .85fr) minmax(0, 1.15fr);
+    align-items: start;
+  }
+}
+.visitar-foto {
+  border: 1px solid var(--papel-borde);
+  border-radius: var(--curva);
+  background: var(--papel-hondo);
+  background-size: cover;
+  background-position: center;
+  aspect-ratio: 3 / 4;
+  min-height: 260px;
+}
+
+.vd {
+  margin: 0 0 1.6rem;
+  display: grid;
+  gap: 1px;
+  background: var(--papel-borde);
+  border: 1px solid var(--papel-borde);
+  border-radius: var(--curva);
+  overflow: hidden;
+}
+.vd > div {
+  background: #FFFFFF;
+  display: grid;
+  grid-template-columns: 7rem minmax(0, 1fr);
+  gap: .8rem;
+  padding: .95rem 1rem;
+  min-width: 0;
+}
+.vd dt {
+  font-family: var(--mono);
+  font-size: .66rem;
+  letter-spacing: .13em;
+  text-transform: uppercase;
+  color: var(--tinta-suave);
+}
+.vd dd {
+  margin: 0;
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
+.vd dd a { font-family: var(--mono); }
+
+.visitar-acciones {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 1.1rem;
+}
+
+
+/* ══════════ 12 · HUECOS DE FOTO ══════════ */
+[data-foto] {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.2rem;
+}
+[data-foto].tiene-foto .hueco-nota { display: none; }
+.hueco-nota {
+  margin: 0;
+  max-width: 28ch;
+  text-align: center;
+  font-family: var(--mono);
+  font-size: .7rem;
+  letter-spacing: .05em;
+  line-height: 1.6;
+  color: var(--tinta-suave);
+  border: 1px dashed var(--papel-borde);
+  padding: .7rem .85rem;
+  border-radius: var(--curva);
+}
+.lamina-foto .hueco-nota {
+  color: #B0AAB4;
+  border-color: #453F49;
+}
+
+
+/* ══════════ 13 · MARCA DE CONTENIDO DE EJEMPLO ══════════ */
+.ej {
+  position: relative;
+  border: 1px dashed rgba(126,90,114,.45);
+  border-radius: var(--curva);
+}
+.an-p.ej, .clinica-p.ej, .atiende-x.ej { padding: .6rem .75rem; }
+.par.ej { padding: 1.25rem 1.25rem 1.4rem; }
+.sv.ej { padding: 1.2rem 1.2rem 1.35rem; }
+.ej::after {
+  content: "ejemplo";
+  position: absolute;
+  top: -.62rem;
+  right: .55rem;
+  font-family: var(--mono);
+  font-size: .58rem;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  background: var(--malva);
+  padding: .1rem .38rem;
+  border-radius: 2px;
+}
+.clinica-datos li.ej { padding: .85rem 1rem; }
+.ej-inline {
+  font-family: var(--mono);
+  font-size: .78em;
+  letter-spacing: .09em;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  background: var(--malva);
+  padding: .06rem .34rem;
+  border-radius: 2px;
+}
+
+
+/* ══════════ 14 · REVEALS ══════════ */
+.js .reveal {
+  opacity: 0;
+  transform: translateY(15px);
+  transition: opacity .6s ease, transform .6s cubic-bezier(.22,.68,.36,1);
+}
+.js .reveal.visible { opacity: 1; transform: none; }
+@media (prefers-reduced-motion: reduce) {
+  .js .reveal { opacity: 1; transform: none; transition: none; }
+}
+
+
+/* ══════════ 15 · PIE ══════════ */
+.pie {
+  background: var(--tinta);
+  color: #C2BCC6;
+  padding: clamp(2.2rem, 5vw, 3.4rem) var(--marco) clamp(3.6rem, 6vw, 4.4rem);
+}
+.pie-marca {
+  font-family: var(--display);
+  font-weight: 600;
+  font-size: 1.06rem;
+  color: var(--papel);
+  margin: 0 0 .9rem;
+}
+.pie-marca a { color: var(--malva-claro); font-family: var(--mono); font-size: .9rem; }
+.pie-aviso {
+  max-width: 64ch;
+  font-size: .87rem;
+  margin: 0 0 .9rem;
+}
+.pie-aviso b { color: var(--malva-claro); }
+.pie-firma { margin: 0; font-size: .85rem; }
+.pie-firma a { color: var(--malva-claro); }
+
+
+/* ═══════════════════════════════════════════════════════════════════
+   16 · FOTOS DEL NEGOCIO
+   Descomentar cuando lleguen los JPEG a la carpeta imagenes/.
+   Los nombres y tamaños están en imagenes/QUE-FOTOS-FALTAN.md.
+   ═══════════════════════════════════════════════════════════════════ */
+/* ── LAS FOTOS, YA PUESTAS ─────────────────────────────────────── */
+  .portada-foto             { background-image: url("../imagenes/portada.jpg"); }
+  .lamina-sala .lamina-foto { background-image: url("../imagenes/box.jpg"); }
+  .visitar-foto             { background-image: url("../imagenes/fachada.jpg"); }
+
+/* ── MAPA DE UBICACION ──────────────────────────────────────────────
+   Imagen propia con mosaicos de OpenStreetMap pegados: la CSP prohibe
+   pedir nada a un tercero, asi que un iframe de Google Maps quedaria en
+   blanco SIN dar un solo error. El "Como llegar" si es un enlace, y un
+   enlace no lo bloquea nada.
+   Los colores salen de currentColor a proposito: asi el bloque se adapta
+   a la paleta de cada demo sin conocerla y sin chocar con ella.
+   La atribucion a OpenStreetMap la exige su licencia (ODbL). */
+.mapa-sec { padding: clamp(2.5rem, 6vw, 4.5rem) 0; }
+.mapa {
+  /* Casi siempre el mapa queda como hijo DIRECTO de la seccion, fuera del
+     contenedor .ancho: sin este ancho maximo se va de borde a borde y el
+     pie del mapa arranca pegado al filo de la pantalla. Se usa la variable
+     de la demo si existe, y 1100 px si no. */
+  width: min(100% - 2.5rem, var(--ancho, 1100px));
+  margin: 1.4rem auto 0;
+  border: 1px solid; border-color: color-mix(in srgb, currentColor 22%, transparent);
+  border-radius: 10px; overflow: hidden;
+}
+@supports not (color: color-mix(in srgb, red 50%, blue)) { .mapa { border-color: rgba(128, 128, 128, .35); } }
+.mapa img { display: block; width: 100%; height: auto; aspect-ratio: 16 / 10; object-fit: cover; }
+.mapa__pie {
+  display: flex; flex-wrap: wrap; align-items: center; gap: .4rem 1rem;
+  padding: .75rem .9rem;
+  font-size: .86em; line-height: 1.45;
+  border-top: 1px solid; border-top-color: color-mix(in srgb, currentColor 22%, transparent);
+}
+@supports not (color: color-mix(in srgb, red 50%, blue)) { .mapa__pie { border-top-color: rgba(128, 128, 128, .35); } }
+.mapa__pie b { font-weight: 700; }
+.mapa__ir { color: inherit; font-weight: 700; text-decoration: underline; min-height: 44px; display: inline-flex; align-items: center; }
+.mapa__cred { width: 100%; font-size: .84em; opacity: .8; }
+.mapa__cred a { color: inherit; }

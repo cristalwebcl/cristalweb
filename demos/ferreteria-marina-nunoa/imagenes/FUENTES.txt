@@ -1,0 +1,22 @@
+FUENTES DE LAS IMAGENES - Ferreteria Marina Rehecha el 13-09-2026 (presentacion antes que texto). Fotos de REFERENCIA de bancos libres: ninguna es del local; las verdaderas las tiene que mandar el negocio. 
+port-01.jpg  <-  pozo-p-marina-caja\004.jpg  |  pexels (Pexels License)  |  autor: https://kaboompics.com/  |  https://www.pexels.com/es-es/foto/hombre-casa-sin-rostro-apartamento-4506249/  |  consulta: "cardboard box tape"
+hund1-01.jpg  <-  pozo-p-marina-caja\011.jpg  |  pexels (Pexels License)  |  autor: Ketut Subiyanto  |  https://www.pexels.com/es-es/foto/hombre-casa-sin-rostro-efecto-desenfocado-4246109/  |  consulta: "cardboard box tape"
+hund2-01.jpg  <-  pozo-p-marina-pintura\009.jpg  |  pexels (Pexels License)  |  autor: Nataliya Vaitkevich  |  https://www.pexels.com/es-es/foto/primer-plano-de-materiales-de-pintura-5641669/  |  consulta: "paint cans"
+hund3-01.jpg  <-  pozo-p-marina-brocas\012.jpg  |  pexels (Pexels License)  |  autor: Pixabay  |  https://www.pexels.com/es-es/foto/cerrar-foto-de-broca-de-metal-negro-46973/  |  consulta: "drill bits"
+hund4-01.jpg  <-  pozo-p-marina-electrico\011.jpg  |  pexels (Pexels License)  |  autor: Steve A Johnson  |  https://www.pexels.com/es-es/foto/cargando-conexion-sombra-electricidad-18358118/  |  consulta: "extension cord plug"
+hund5-01.jpg  <-  pozo-p-marina-serrucho\001.jpg  |  pexels (Pexels License)  |  autor: Valentin Ivantsov  |  https://www.pexels.com/es-es/foto/sierra-de-mano-antigua-sobre-superficie-de-madera-rustica-36960447/  |  consulta: "hand saw wood"
+hund6-01.jpg  <-  pozo-p-marina-martillo\012.jpg  |  pexels (Pexels License)  |  autor: Sergey  Meshkov  |  https://www.pexels.com/es-es/foto/sombra-acero-clavos-unas-8481343/  |  consulta: "hammer nails"
+banda-01.jpg  <-  pozo-p-marina-serrucho\004.jpg  |  pexels (Pexels License)  |  autor: Infinity lifespaces  |  https://www.pexels.com/es-es/foto/primer-plano-de-un-carpintero-que-utiliza-una-sierra-de-mano-para-cortar-madera-30592259/  |  consulta: "hand saw wood"
+cita-01.jpg  <-  pozo-p-marina-martillo\002.jpg  |  pexels (Pexels License)  |  autor: Onur Yumlu  |  https://www.pexels.com/es-es/foto/primer-plano-de-un-artesano-trabajando-con-martillo-y-clavos-35978940/  |  consulta: "hammer nails"
+mos1-01.jpg  <-  pozo-p-marina-reloj\012.jpg  |  pexels (Pexels License)  |  autor: Julia Filirovska  |  https://www.pexels.com/es-es/foto/pared-muro-hora-tiempo-19801745/  |  consulta: "wall clock"
+mos2-01.jpg  <-  pozo-p-marina-martillo\006.jpg  |  pexels (Pexels License)  |  autor: Anete Lusina  |  https://www.pexels.com/es-es/foto/hombre-sin-rostro-poniendo-decoracion-en-la-pared-mientras-usa-un-martillo-4792530/  |  consulta: "hammer nails"
+mos3-01.jpg  <-  pozo-p-marina-caja\001.jpg  |  pexels (Pexels License)  |  autor: https://kaboompics.com/  |  https://www.pexels.com/es-es/foto/hombre-mano-casa-sin-rostro-4498142/  |  consulta: "cardboard box tape"
+mos4-01.jpg  <-  pozo-p-marina-electrico\005.jpg  |  pexels (Pexels License)  |  autor: Nikita Nikitin  |  https://www.pexels.com/es-es/foto/conexion-linea-poder-energia-8101107/  |  consulta: "extension cord plug"
+mos5-01.jpg  <-  pozo-p-marina-serrucho\011.jpg  |  pexels (Pexels License)  |  autor: Ono  Kosuki  |  https://www.pexels.com/es-es/foto/madera-hombre-sin-rostro-efecto-desenfocado-5974287/  |  consulta: "hand saw wood"
+mos6-01.jpg  <-  pozo-p-marina-martillo\007.jpg  |  pexels (Pexels License)  |  autor: DRIFTCLICK  |  https://www.pexels.com/es-es/foto/primer-plano-de-la-artesania-artesanal-en-blanco-y-negro-31072226/  |  consulta: "hammer nails"
+
+BRUMA (bruma-pag-0N.png y bruma-osc-0N.png, 30x20): las MISMAS fotos, recortadas a 3:2, reducidas y
+recoloreadas con C:\devs\demos\hacer-bruma.ps1 (clara >= 0,68 de luminancia / oscura <= 0,05). No suman fuentes.
+    pagina: cita-01.jpg, mos1-01.jpg, mos3-01.jpg, hund5-01.jpg, banda-01.jpg   |   oscuras: cita-01.jpg, hund5-01.jpg, banda-01.jpg
+
+MAPA: iframe de Google Maps (embed publico, sin clave). No hay imagen de mapa.

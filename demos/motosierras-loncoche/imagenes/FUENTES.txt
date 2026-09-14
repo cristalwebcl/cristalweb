@@ -26,3 +26,10 @@ URL de origen:
 004.jpg | 5472x3648 | Modern gas chainsaw on ground near log · Free Stock Photo | https://images.pexels.com/photos/4205984/pexels-photo-4205984.jpeg?cs=srgb&dl=pexels-karolina-grabowska-4205984.jpg&fm=jpg
 005.jpg | 5472x3648 | Person Cutting Wood on Table Saw during Daytime · Free Stock Photo | https://images.pexels.com/photos/8820182/pexels-photo-8820182.jpeg?cs=srgb&dl=pexels-ron-lach-8820182.jpg&fm=jpg
 006.jpg | 5472x3648 | Man Cutting Tress Using Chainsaw · Free Stock Photo | https://images.pexels.com/photos/8820190/pexels-photo-8820190.jpeg?cs=srgb&dl=pexels-ron-lach-8820190.jpg&fm=jpg
+
+MAPA DE UBICACION — mapa-01.jpg
+  768 x 768 · zoom 14 · centro -39.370616, -72.6300704
+  Mosaicos de OpenStreetMap pegados en una sola imagen, con el marcador
+  dibujado encima. Datos (c) OpenStreetMap contributors, licencia ODbL:
+  la atribucion tiene que ir VISIBLE junto al mapa, en el pie de la figura.
+  https://www.openstreetmap.org/copyright

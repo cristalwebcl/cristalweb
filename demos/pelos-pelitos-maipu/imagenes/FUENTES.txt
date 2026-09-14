@@ -1,0 +1,22 @@
+FUENTES DE LAS IMAGENES - Pelos Pelitos Rehecha el 14-09-2026 (presentacion antes que texto). Fotos de REFERENCIA de bancos libres: ninguna es del local; las verdaderas las tiene que mandar el negocio. 
+port-01.jpg  <-  pozo-p-pp-sillon\006.jpg  |  pexels (Pexels License)  |  autor: Raymond Petrik  |  https://www.pexels.com/es-es/foto/sillon-vintage-iluminado-por-el-sol-en-interior-acogedor-32801996/  |  consulta: "vintage salon chair"
+hund1-01.jpg  <-  pozo-p-pp-mechon\009.jpg  |  pexels (Pexels License)  |  autor: Tima Miroshnichenko  |  https://www.pexels.com/es-es/foto/animal-mascota-pelo-piel-6131082/  |  consulta: "hair clippings floor"
+hund2-01.jpg  <-  pozo-p-pp-sillon\001.jpg  |  pexels (Pexels License)  |  autor: Mateus Carvalho  |  https://www.pexels.com/es-es/foto/mueble-mobiliario-mesa-auxiliar-silla-de-barbero-7483527/  |  consulta: "vintage salon chair"
+hund3-01.jpg  <-  pozo-p-pp-rociador\010.jpg  |  pexels (Pexels License)  |  autor: Beyzanur K.  |  https://www.pexels.com/es-es/foto/como-aplicar-spray-para-el-cabello-sobre-cabello-largo-y-rojo-en-interiores-28994645/  |  consulta: "spray bottle water hair"
+hund4-01.jpg  <-  pozo-p-pp-trenza\001.jpg  |  pexels (Pexels License)  |  autor: Nataliya Vaitkevich  |  https://www.pexels.com/es-es/foto/peinado-cabellos-melena-pelo-8467968/  |  consulta: "hair ribbon braid back"
+hund5-01.jpg  <-  pozo-p-pp-paleta\004.jpg  |  pexels (Pexels License)  |  autor: hartono subagio  |  https://www.pexels.com/es-es/foto/chupachups-coloridos-sobre-fondo-verde-34191896/  |  consulta: "lollipop candy"
+hund6-01.jpg  <-  pozo-p-pp-guirnalda\003.jpg  |  pexels (Pexels License)  |  autor: Alina Skazka  |  https://www.pexels.com/es-es/foto/arte-oficio-artesania-manualidad-21086125/  |  consulta: "paper garland party"
+banda-01.jpg  <-  pozo-p-pp-guirnalda\004.jpg  |  pexels (Pexels License)  |  autor: Ron Lach  |  https://www.pexels.com/es-es/foto/decoracion-estilo-de-vida-al-aire-libre-celebracion-10045480/  |  consulta: "paper garland party"
+cita-01.jpg  <-  pozo-p-pp-paleta\005.jpg  |  pexels (Pexels License)  |  autor: Sebaswhitev Valeriano  |  https://www.pexels.com/es-es/foto/comida-postre-dulce-delicioso-12558766/  |  consulta: "lollipop candy"
+mos1-01.jpg  <-  pozo-p-pp-marco\003.jpg  |  pexels (Pexels License)  |  autor: Arkhi Tektōn  |  https://www.pexels.com/es-es/foto/pared-muro-roto-hormigon-15412344/  |  consulta: "old photo frames wall"
+mos2-01.jpg  <-  pozo-p-pp-sillon\012.jpg  |  pexels (Pexels License)  |  autor: Elizabeth K.  |  https://www.pexels.com/es-es/foto/sillas-deterioradas-contra-pared-amarilla-en-singapur-30063485/  |  consulta: "vintage salon chair"
+mos3-01.jpg  <-  pozo-p-pp-paleta\011.jpg  |  pexels (Pexels License)  |  autor: https://kaboompics.com/  |  https://www.pexels.com/es-es/foto/creativo-textura-mesa-colorido-4202949/  |  consulta: "lollipop candy"
+mos4-01.jpg  <-  pozo-p-pp-trenza\007.jpg  |  pexels (Pexels License)  |  autor: Nataliya Vaitkevich  |  https://www.pexels.com/es-es/foto/manos-mujer-anillos-plata-5128656/  |  consulta: "hair ribbon braid back"
+mos5-01.jpg  <-  pozo-p-pp-trenza\003.jpg  |  pexels (Pexels License)  |  autor: Alina Vilchenko  |  https://www.pexels.com/es-es/foto/mujer-de-pie-sobre-el-campo-de-hierba-marron-3953268/  |  consulta: "hair ribbon braid back"
+mos6-01.jpg  <-  pozo-p-pp-guirnalda\011.jpg  |  pexels (Pexels License)  |  autor: B M  Rauf  |  https://www.pexels.com/es-es/foto/rojo-amor-arte-corazon-17720449/  |  consulta: "paper garland party"
+
+BRUMA (bruma-pag-0N.png y bruma-osc-0N.png, 30x20): las MISMAS fotos, recortadas a 3:2, reducidas y
+recoloreadas con C:\devs\demos\hacer-bruma.ps1 (clara >= 0,68 de luminancia / oscura <= 0,05). No suman fuentes.
+    pagina: port-01.jpg, banda-01.jpg, mos1-01.jpg, hund4-01.jpg, hund6-01.jpg   |   oscuras: port-01.jpg, cita-01.jpg, mos1-01.jpg
+
+MAPA: iframe de Google Maps (embed publico, sin clave). No hay imagen de mapa.

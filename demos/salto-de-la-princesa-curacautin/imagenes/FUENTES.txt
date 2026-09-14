@@ -1,0 +1,22 @@
+FUENTES DE LAS IMAGENES - Salto de la Princesa Rehecha el 13-09-2026 (presentacion antes que texto). Fotos de REFERENCIA de bancos libres: ninguna es del local; las verdaderas las tiene que mandar el negocio. 
+port-01.jpg  <-  pozo-p-sdp-niebla\002.jpg  |  pexels (Pexels License)  |  autor: Ignacio Aguilar  |  https://www.pexels.com/es-es/foto/foto-de-cascadas-en-cascada-13181002/  |  consulta: "waterfall mist"
+hund1-01.jpg  <-  pozo-p-sdp-salto\012.jpg  |  pexels (Pexels License)  |  autor: Lucas Leonel Suárez  |  https://www.pexels.com/es-es/foto/naturaleza-rocas-viaje-viajar-16848567/  |  consulta: "basalt waterfall"
+hund2-01.jpg  <-  pozo-p-sdp-commons\007.jpg  |  pexels (Pexels License)  |  autor: Adem Albayrak  |  https://www.pexels.com/es-es/foto/verano-bosque-arboles-arroyo-19028276/  |  consulta: "Salto de la Princesa"
+hund3-01.jpg  <-  pozo-p-sdp-sendero\004.jpg  |  pexels (Pexels License)  |  autor: Інна Бутко  |  https://www.pexels.com/es-es/foto/escaleras-naturaleza-bosque-pasos-16667727/  |  consulta: "forest trail stairs"
+hund4-01.jpg  <-  pozo-p-sdp-cabana\001.jpg  |  pexels (Pexels License)  |  autor: Roger Ce  |  https://www.pexels.com/es-es/foto/madera-naturaleza-casas-verano-17967869/  |  consulta: "wooden cabin forest"
+hund5-01.jpg  <-  pozo-p-sdp-camping\004.jpg  |  pexels (Pexels License)  |  autor: Roger Ce  |  https://www.pexels.com/es-es/foto/paisaje-naturaleza-vacaciones-azul-15925116/  |  consulta: "camping tent forest"
+hund6-01.jpg  <-  pozo-p-sdp-rio\007.jpg  |  pexels (Pexels License)  |  autor: Lars Mai  |  https://www.pexels.com/es-es/foto/madera-paisaje-naturaleza-cielo-5094863/  |  consulta: "river rocks forest"
+banda-01.jpg  <-  pozo-p-sdp-rio\006.jpg  |  pexels (Pexels License)  |  autor: Juan  Luna  |  https://www.pexels.com/es-es/foto/rio-sereno-en-la-jungla-con-vegetacion-exuberante-30828388/  |  consulta: "river rocks forest"
+cita-01.jpg  <-  pozo-p-sdp-salto\009.jpg  |  pexels (Pexels License)  |  autor: Uriel Pacheco  |  https://www.pexels.com/es-es/foto/majestuosas-columnas-de-basalto-con-cascada-36384662/  |  consulta: "basalt waterfall"
+mos1-01.jpg  <-  pozo-p-sdp-niebla\004.jpg  |  pexels (Pexels License)  |  autor: HEY ERRY  |  https://www.pexels.com/es-es/foto/foto-de-cascadas-14857826/  |  consulta: "waterfall mist"
+mos2-01.jpg  <-  pozo-p-sdp-rio\003.jpg  |  pexels (Pexels License)  |  autor: Tomás Asurmendi  |  https://www.pexels.com/es-es/foto/rio-sereno-que-fluye-a-traves-de-un-paisaje-rocoso-en-ascochinga-35624628/  |  consulta: "river rocks forest"
+mos3-01.jpg  <-  pozo-p-sdp-cabana\008.jpg  |  pexels (Pexels License)  |  autor: Miguel González  |  https://www.pexels.com/es-es/foto/cabana-rustica-en-un-exuberante-bosque-mexicano-33247091/  |  consulta: "wooden cabin forest"
+mos4-01.jpg  <-  pozo-p-sdp-camping\009.jpg  |  pexels (Pexels License)  |  autor: cottonbro studio  |  https://www.pexels.com/es-es/foto/bosque-arboles-aventura-al-aire-libre-5994742/  |  consulta: "camping tent forest"
+mos5-01.jpg  <-  pozo-p-sdp-sendero\011.jpg  |  pexels (Pexels License)  |  autor: Joshua Woroniecki  |  https://www.pexels.com/es-es/foto/sendero-panoramico-boscoso-en-el-desierto-de-seattle-34235797/  |  consulta: "forest trail stairs"
+mos6-01.jpg  <-  pozo-p-sdp-rio\012.jpg  |  pexels (Pexels License)  |  autor: Philip Dominic Carpentero  |  https://www.pexels.com/es-es/foto/agua-corriendo-33618543/  |  consulta: "river rocks forest"
+
+BRUMA (bruma-pag-0N.png y bruma-osc-0N.png, 30x20): las MISMAS fotos, recortadas a 3:2, reducidas y
+recoloreadas con C:\devs\demos\hacer-bruma.ps1 (clara >= 0,68 de luminancia / oscura <= 0,05). No suman fuentes.
+    pagina: port-01.jpg, cita-01.jpg, hund1-01.jpg, mos6-01.jpg, hund4-01.jpg, hund5-01.jpg, mos4-01.jpg, cita-01.jpg   |   oscuras: port-01.jpg, cita-01.jpg, hund4-01.jpg
+
+MAPA: iframe de Google Maps (embed publico, sin clave). No hay imagen de mapa.

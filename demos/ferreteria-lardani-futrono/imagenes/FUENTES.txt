@@ -1,0 +1,22 @@
+FUENTES DE LAS IMAGENES - Ferretería Lardani Rehecha el 13-09-2026 (presentacion antes que texto). Fotos de REFERENCIA de bancos libres: ninguna es del local; las verdaderas las tiene que mandar el negocio. 
+port-01.jpg  <-  pozo-p-lar-cemento\011.jpg  |  pexels (Pexels License)  |  autor: Javid Hashimov  |  https://www.pexels.com/es-es/foto/sacos-de-arena-apilados-para-proteccion-contra-inundaciones-35972270/  |  consulta: "cement bags"
+hund1-01.jpg  <-  pozo-p-lar-cemento\010.jpg  |  pexels (Pexels License)  |  autor: Eyüpcan Timur  |  https://www.pexels.com/es-es/foto/pila-de-sacos-de-arpillera-en-un-almacen-34221784/  |  consulta: "cement bags"
+hund2-01.jpg  <-  pozo-p-lar-estantes\001.jpg  |  pexels (Pexels License)  |  autor: cnrdmroglu  |  https://www.pexels.com/es-es/foto/industria-pared-muro-herramientas-15603042/  |  consulta: "hardware shelves"
+hund3-01.jpg  <-  pozo-p-lar-estantes\006.jpg  |  pexels (Pexels License)  |  autor: Joaquin Reyes Ramos  |  https://www.pexels.com/es-es/foto/variedad-de-sujetadores-en-cajas-de-almacenamiento-38575500/  |  consulta: "hardware shelves"
+hund4-01.jpg  <-  pozo-p-gor-tarros\008.jpg  |  pexels (Pexels License)  |  autor: Miguel Marmolejos Fernández  |  https://www.pexels.com/es-es/foto/rojo-arte-creativo-azul-4616238/  |  consulta: "paint cans"
+hund5-01.jpg  <-  pozo-p-lar-botas\003.jpg  |  pexels (Pexels License)  |  autor: Arturo EG  |  https://www.pexels.com/es-es/foto/en-pie-de-pie-suelo-molido-23437235/  |  consulta: "rain boots"
+hund6-01.jpg  <-  pozo-p-nueva-ampolletas\002.jpg  |  pexels (Pexels License)  |  autor: Rulo Mora  |  https://www.pexels.com/es-es/foto/luces-oscuro-lamparas-adentro-14161060/  |  consulta: "light bulbs"
+banda-01.jpg  <-  pozo-p-lar-madera\008.jpg  |  pexels (Pexels License)  |  autor: Mark Stebnicki  |  https://www.pexels.com/es-es/foto/madera-industria-posturas-de-la-tabla-tablones-12278566/  |  consulta: "lumber yard"
+cita-01.jpg  <-  pozo-p-lar-zinc\006.jpg  |  pexels (Pexels License)  |  autor: Dmitry Alexandrovich  |  https://www.pexels.com/es-es/foto/tejado-de-metal-corrugado-contra-el-cielo-azul-34597567/  |  consulta: "corrugated metal roof"
+mos1-01.jpg  <-  pozo-p-lar-carretilla\009.jpg  |  pexels (Pexels License)  |  autor: Nadin Sh  |  https://www.pexels.com/es-es/foto/carretilla-de-jardin-lleno-de-suministros-de-jardineria-32254874/  |  consulta: "wheelbarrow"
+mos2-01.jpg  <-  pozo-p-lar-madera\012.jpg  |  pexels (Pexels License)  |  autor: Mark Stebnicki  |  https://www.pexels.com/es-es/foto/almacen-al-aire-libre-carpinteria-almacenamiento-12278592/  |  consulta: "lumber yard"
+mos3-01.jpg  <-  pozo-p-lar-estantes\007.jpg  |  pexels (Pexels License)  |  autor: Intrepid Libertine  |  https://www.pexels.com/es-es/foto/botellas-vaso-cristal-vidrio-11439332/  |  consulta: "hardware shelves"
+mos4-01.jpg  <-  pozo-p-lar-cemento\006.jpg  |  pexels (Pexels License)  |  autor: Konstantin Mishchenko  |  https://www.pexels.com/es-es/foto/apilar-pila-monton-monocromo-9348645/  |  consulta: "cement bags"
+mos5-01.jpg  <-  pozo-p-lar-zinc\009.jpg  |  pexels (Pexels License)  |  autor: Dmitry Alexandrovich  |  https://www.pexels.com/es-es/foto/edificio-casa-techo-reja-de-metal-9951822/  |  consulta: "corrugated metal roof"
+mos6-01.jpg  <-  pozo-p-lar-lago\010.jpg  |  pexels (Pexels License)  |  autor: Rudi Chandra  |  https://www.pexels.com/es-es/foto/vista-panoramica-del-lago-toba-en-el-norte-de-sumatra-37871249/  |  consulta: "lake ranco"
+
+BRUMA (bruma-pag-0N.png y bruma-osc-0N.png, 30x20): las MISMAS fotos, recortadas a 3:2, reducidas y
+recoloreadas con C:\devs\demos\hacer-bruma.ps1 (clara >= 0,68 de luminancia / oscura <= 0,05). No suman fuentes.
+    pagina: port-01.jpg, cita-01.jpg, hund1-01.jpg, hund2-01.jpg, hund3-01.jpg, mos3-01.jpg, mos4-01.jpg, mos5-01.jpg   |   oscuras: port-01.jpg, cita-01.jpg, banda-01.jpg
+
+MAPA: iframe de Google Maps (embed publico, sin clave). No hay imagen de mapa.

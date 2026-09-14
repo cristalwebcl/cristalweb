@@ -1,0 +1,690 @@
+/* ═══════════════════════════════════════════════════════════════════
+   PANADERÍA LOS ROMERO · Loncoche
+   Demo. HTML + CSS + JS clásico. Sin build, sin librerías.
+
+   ── SEGUNDA VUELTA, 13-09-2026: PRESENTACIÓN ANTES QUE TEXTO ───────
+   Rehecha con el prompt maestro de esa fecha (demos\PROMPT-SIGUIENTES-
+   DEMOS.txt): portada a sangre fundida hacia abajo, bruma de página con
+   las mismas fotos, una banda con parallax, fichas con foto hundida y
+   ≤ 550 palabras (quedó en ~370). El patrón de bruma y vidrio es el de
+   AgroFrut (72), recalibrado a esta paleta.
+
+   ── LA DIRECCIÓN, EN UNA FRASE ────────────────────────────────────
+   «PARED DE AZULEJO»: la panadería de pueblo por dentro — harina en el
+   aire, la loza blanca y el azul del azulejo como único color. En la
+   primera vuelta la identidad era la cuadrícula dibujada en la portada;
+   con la foto a sangre ya no cabe un dibujo encima, así que el azulejo
+   se queda en el acento y baja de noche a la sección del dueño: un azul
+   de loza oscuro (#13212B) que es el tono nuevo de esta página. Las
+   manchas de la bruma ponen el oro de la corteza y el trigo.
+
+   Deslinde del azul (cuarta familia azul del registro): el turquesa de
+   la 67 es de agua, el cobalto de la 71 es de señal eléctrica y el
+   marino de la 65 es de mameluco. Éste es de loza, y convive con el oro
+   del pan, que ninguno de los tres tiene.
+
+   ── POR QUÉ ESTE TRÍO (se conserva de la primera vuelta) ───────────
+   · SOLWAY (display) — slab de remates redondeados: letrero pintado a
+     mano en la pared del local. Sólo el peso 700.
+   · SARALA (cuerpo) — humanista de altura de x amplia, legible en
+     bloques cortos.
+   · SPACE MONO (dato) — repetida de la 55 (constructora, Villarrica):
+     otro rubro y otra ciudad. Es la letra de las horas.
+
+   ── CONTRASTE, MEDIDO ─────────────────────────────────────────────
+   · Portada: velo de tinta medido con medir-velo.ps1 sobre port-01
+     (p99,5 bajo la caja del texto): .43 a 1440 y 2000, .52 a 500 y 390.
+     Se escribe .48 / .56 para dejar margen al brillo del horno.
+   · Banda: .48 medido bajo la frase; se escribe .54.
+   · Bruma clara: luminancia ≥ .68. El texto más exigente sobre claro es
+     el azulejo #1D5C86 (L .096): pide fondo ≥ .61 para 4,5:1.
+   · Bruma oscura: ≤ .05. El más exigente sobre oscuro es el harina-
+     suave #B3AEA3 (L .425): pide fondo ≤ .055.
+   ═══════════════════════════════════════════════════════════════════ */
+
+:root {
+  --harina:     #F7F5F0;   /* fondo de la página                      */
+  --loza:       #FFFFFF;
+  --junta:      #E4E0D7;
+  --tinta:      #1E1B17;
+  --noche:      #13212B;   /* azul de loza de noche — sección del dueño */
+
+  --tinta-suave:  #524C42; /* párrafos sobre claro — 7,75:1; 5,9 sobre la bruma */
+  --harina-suave: #B3AEA3; /* párrafos sobre tinta o noche — 8,3 / 7,4:1       */
+
+  --azulejo:       #1D5C86; /* SÓLO sobre claro — 6,4:1; 5,0 sobre la bruma   */
+  --azulejo-claro: #8FC4E4; /* SÓLO sobre tinta o noche — 9,0 / 8,7:1         */
+
+  --display: 'Solway', Georgia, serif;
+  --cuerpo:  'Sarala', system-ui, -apple-system, sans-serif;
+  --dato:    'Space Mono', ui-monospace, Consolas, monospace;
+
+  --p--1: clamp(.78rem, .74rem + .2vw, .86rem);
+  --p-0:  clamp(1rem, .96rem + .2vw, 1.08rem);
+  --p-1:  clamp(1.14rem, 1.06rem + .4vw, 1.34rem);
+  --p-2:  clamp(1.45rem, 1.25rem + 1vw, 2rem);
+  --p-3:  clamp(1.9rem, 1.5rem + 2vw, 3rem);
+  --p-4:  clamp(2.7rem, 1.9rem + 4vw, 5.2rem);   /* sólo el titular de portada */
+
+  --ancho: min(1180px, 92vw);
+  --aire:  clamp(3.5rem, 2rem + 6vw, 7rem);
+
+  /* rebote corto para lo que entra (linear() de 2026); se degrada solo */
+  --muelle: linear(0, .32 14%, .68 26%, .92 38%, 1.04 50%, 1.01 64%, .99 78%, 1);
+  --sale:   cubic-bezier(.22, .61, .36, 1);
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+
+/* El atributo hidden pierde contra cualquier regla con display. */
+[hidden] { display: none !important; }
+
+html { scroll-behavior: smooth; }
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+
+body {
+  margin: 0;
+  background: var(--harina);
+  color: var(--tinta-suave);
+  font-family: var(--cuerpo);
+  font-size: var(--p-0);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+img, svg, video, iframe { max-width: 100%; }
+p { text-wrap: pretty; }
+
+h1, h2, h3 {
+  font-family: var(--display); font-weight: 700; color: var(--tinta);
+  line-height: 1.08; letter-spacing: -.015em; margin: 0 0 .6rem;
+}
+.ancho { width: var(--ancho); margin-inline: auto; }
+a { color: var(--azulejo); }
+
+:focus-visible { outline: 3px solid var(--azulejo); outline-offset: 3px; border-radius: 3px; }
+.propuesta :focus-visible, .portada :focus-visible, .banda :focus-visible,
+.cita :focus-visible, .dueno :focus-visible, .pie :focus-visible { outline-color: var(--azulejo-claro); }
+
+.saltar {
+  position: absolute; left: -9999px; top: 0; z-index: 99;
+  background: var(--tinta); color: var(--harina);
+  padding: .7rem 1.1rem; font-family: var(--dato); font-size: .9rem;
+}
+.saltar:focus { left: .5rem; top: .5rem; }
+
+/* Marca de dato inventado: la etiqueta la pone el CSS desde data-ejemplo. */
+[data-ejemplo]::before {
+  content: attr(data-ejemplo);
+  display: block; margin-bottom: .35rem;
+  font-family: var(--dato); font-size: .7rem; font-weight: 700;
+  letter-spacing: .06em; text-transform: uppercase;
+  color: var(--azulejo);
+}
+
+
+/* ═══════════════════════════════════════════════════════════════════
+   BANDA DE PROPUESTA Y CABECERA
+   ═══════════════════════════════════════════════════════════════════ */
+.propuesta {
+  background: var(--tinta); color: var(--harina-suave);
+  text-align: center; padding: .45rem 1rem; font-size: var(--p--1);
+}
+.propuesta p { margin: 0; }
+.propuesta b { color: var(--harina); }
+
+/* La cabecera pasa por encima de la foto al bajar: el vidrio va al .86
+   para que el rótulo azulejo (el más exigente) siga en 5:1 sobre la
+   parte más oscura del horno. */
+.cab {
+  position: sticky; top: 0; z-index: 40;
+  display: flex; align-items: center; gap: 1.2rem;
+  padding: .3rem clamp(1rem, 3vw, 2rem);
+  background: var(--harina);
+  border-bottom: 1px solid var(--junta);
+}
+@supports ((-webkit-backdrop-filter: blur(1px)) or (backdrop-filter: blur(1px))) {
+  .cab {
+    background: rgba(247, 245, 240, .86);
+    -webkit-backdrop-filter: blur(16px) saturate(1.4);
+            backdrop-filter: blur(16px) saturate(1.4);
+  }
+}
+.cab__m {
+  display: flex; align-items: center; gap: .6rem; min-height: 44px;
+  color: var(--tinta); text-decoration: none; font-family: var(--display);
+}
+/* la bolsa de papel del mostrador, con su borde dentado arriba */
+.bolsa {
+  width: 18px; height: 24px; flex: none;
+  background: #E8D9BB;
+  border-right: 1px solid rgba(30, 27, 23, .28);
+  clip-path: polygon(0 8%, 12.5% 0, 25% 8%, 37.5% 0, 50% 8%, 62.5% 0, 75% 8%, 87.5% 0, 100% 8%, 100% 100%, 0 100%);
+}
+.cab__m b { font-size: 1.1rem; letter-spacing: -.01em; }
+.cab__s {
+  font-family: var(--dato); font-size: .68rem; font-weight: 700;
+  letter-spacing: .1em; text-transform: uppercase; color: var(--azulejo);
+}
+.cab__n { margin-left: auto; display: flex; gap: .2rem; }
+.cab__n a {
+  display: inline-flex; align-items: center; min-height: 44px; padding: 0 .7rem;
+  font-size: .9rem; color: var(--tinta-suave); text-decoration: none;
+}
+.cab__n a:hover, .cab__n a:focus-visible { color: var(--tinta); box-shadow: inset 0 -2px 0 var(--azulejo); }
+.cab__tel {
+  display: inline-flex; align-items: center; min-height: 44px; padding: 0 1rem;
+  border-radius: 999px; background: var(--azulejo); color: #FFFFFF;
+  font-family: var(--dato); font-size: .86rem; font-weight: 700;
+  text-decoration: none; white-space: nowrap;
+}
+.cab__tel:hover, .cab__tel:focus-visible { box-shadow: 0 0 0 3px rgba(29, 92, 134, .3); }
+@media (max-width: 760px) {
+  .cab__n, .cab__s { display: none; }
+  .cab__tel { margin-left: auto; }
+}
+
+
+/* ═══════════════════════════════════════════════════════════════════
+   PORTADA A SANGRE, FUNDIDA HACIA ABAJO
+   El horno a leña con el pan en la pala, de borde a borde. Texto claro
+   abajo a la izquierda, sobre la piedra oscura del horno.
+   · La máscara va en el CONTENEDOR: foto, luz y velo se funden juntos, y
+     debajo lo que asoma es la bruma de la página.
+   · El padding de abajo (15 rem) es mayor que el tramo del fundido
+     (14 rem): el texto claro termina antes de que la foto desaparezca.
+   · Velo medido: .43 (1440 y 2000) y .52 (500 y 390); ver cabecera.
+   · Ambiente: la luz del horno respira (un radial que sube y baja). Es
+     la única cosa en movimiento de esta pantalla.
+   ═══════════════════════════════════════════════════════════════════ */
+.portada {
+  position: relative; isolation: isolate; overflow: hidden;
+  min-height: 100vh; min-height: min(100svh, 960px);
+  display: flex; align-items: flex-end;
+  padding: 7rem 0 15rem;
+}
+.portada__foto {
+  position: absolute; inset: 0; z-index: -1; pointer-events: none;
+  background: var(--tinta);   /* respaldo: sin foto, texto claro sobre tinta */
+  -webkit-mask-image: linear-gradient(180deg, #000 0%, #000 calc(100% - 14rem), rgba(0,0,0,.72) calc(100% - 9rem), rgba(0,0,0,.28) calc(100% - 4rem), transparent 100%);
+          mask-image: linear-gradient(180deg, #000 0%, #000 calc(100% - 14rem), rgba(0,0,0,.72) calc(100% - 9rem), rgba(0,0,0,.28) calc(100% - 4rem), transparent 100%);
+}
+.portada__foto img, .portada__video {
+  display: block; width: 100%; height: 100%;
+  object-fit: cover; object-position: 55% 40%;
+}
+.portada__foto::before {
+  content: ""; position: absolute; inset: 0; z-index: 1;
+  background: radial-gradient(ellipse 30% 36% at 70% 46%, rgba(255, 146, 64, .16), rgba(255, 146, 64, 0) 72%);
+  animation: respira 7s ease-in-out infinite alternate;
+}
+@keyframes respira { from { opacity: .3; } to { opacity: 1; } }
+/* VIDEO DE FONDO — pan dorándose en el horno (Pexels 7405932, 9 s, 1,4 MB).
+   La foto sigue de base: con reduced-motion, ahorro de datos, sin JS o con
+   el autoplay bloqueado se queda ella. El clip se funde en 1,4 s y, cuando
+   corre, la luz que respira se apaga: una sola cosa en movimiento. Su
+   cuadro pide velo .37 / .40, bajo el .48 / .56 que ya tiene la portada. */
+.portada__video { position: absolute; inset: 0; opacity: 0; transition: opacity 1.4s ease; pointer-events: none; }
+.portada__video.video--ver { opacity: 1; }
+.portada__foto.con-video::before { display: none; }
+.portada__foto::after {
+  content: ""; position: absolute; inset: 0; z-index: 2;
+  background: linear-gradient(180deg, rgba(30,27,23,.14) 0%, rgba(30,27,23,.48) 28%, rgba(30,27,23,.54) 100%);
+}
+.portada__texto { position: relative; width: var(--ancho); margin-inline: auto; color: var(--harina); }
+.portada__sobre {
+  margin: 0 0 1rem;
+  font-family: var(--dato); font-size: .8rem; font-weight: 700;
+  letter-spacing: .14em; text-transform: uppercase; color: var(--harina);
+}
+.portada__h1 {
+  margin: 0 0 1.2rem; max-width: 12ch;
+  font-size: var(--p-4); line-height: 1; letter-spacing: -.025em;
+  color: var(--harina);
+}
+.portada__h1 .linea { display: block; }
+.portada__bajada {
+  margin: 0 0 1.9rem; max-width: 38ch;
+  font-size: var(--p-1); line-height: 1.5; color: var(--harina);
+}
+.portada__acciones { display: flex; flex-wrap: wrap; gap: .8rem; }
+
+@media (max-width: 760px) {
+  .portada { padding: 5rem 0 10rem; }
+  .portada__foto {
+    -webkit-mask-image: linear-gradient(180deg, #000 0%, #000 calc(100% - 9rem), rgba(0,0,0,.7) calc(100% - 5.5rem), rgba(0,0,0,.25) calc(100% - 2.5rem), transparent 100%);
+            mask-image: linear-gradient(180deg, #000 0%, #000 calc(100% - 9rem), rgba(0,0,0,.7) calc(100% - 5.5rem), rgba(0,0,0,.25) calc(100% - 2.5rem), transparent 100%);
+  }
+  .portada__foto::after { background: linear-gradient(180deg, rgba(30,27,23,.18) 0%, rgba(30,27,23,.56) 20%, rgba(30,27,23,.6) 100%); }
+}
+
+
+/* ═══════════════════════════════════════════════════════════════════
+   BOTONES
+   ═══════════════════════════════════════════════════════════════════ */
+.btn {
+  display: inline-flex; align-items: center; justify-content: center;
+  min-height: 50px; padding: 0 1.5rem; border-radius: 999px;
+  font-family: var(--dato); font-size: .92rem; font-weight: 700;
+  text-decoration: none;
+  transition: transform .2s var(--sale), box-shadow .2s ease, background-color .2s ease;
+}
+.btn--fuerte { background: var(--azulejo); color: #FFFFFF; }             /* 7,2:1 */
+.btn--fuerte:hover, .btn--fuerte:focus-visible { transform: translateY(-2px); box-shadow: 0 10px 24px rgba(29, 92, 134, .35); }
+/* vidrio OSCURO sobre la foto: uno claro subía el fondo del texto */
+.btn--vidrio { color: var(--harina); border: 1px solid rgba(247, 245, 240, .55); background: rgba(30, 27, 23, .45); }
+@supports ((-webkit-backdrop-filter: blur(1px)) or (backdrop-filter: blur(1px))) {
+  .btn--vidrio { background: rgba(30, 27, 23, .3); -webkit-backdrop-filter: blur(12px) saturate(1.6); backdrop-filter: blur(12px) saturate(1.6); }
+}
+.btn--vidrio:hover, .btn--vidrio:focus-visible { background: rgba(30, 27, 23, .55); }
+.btn--claro { background: var(--azulejo-claro); color: var(--tinta); }   /* 9,2:1 */
+.btn--claro:hover, .btn--claro:focus-visible { transform: translateY(-2px); box-shadow: 0 10px 24px rgba(0, 0, 0, .3); }
+
+
+/* ═══════════════════════════════════════════════════════════════════
+   PIEZAS DE TEXTO COMPARTIDAS
+   ═══════════════════════════════════════════════════════════════════ */
+.rotulo {
+  margin: 0 0 .8rem;
+  font-family: var(--dato); font-size: .8rem; font-weight: 700;
+  letter-spacing: .12em; text-transform: uppercase; color: var(--azulejo);
+}
+.rotulo.claro { color: var(--azulejo-claro); }
+.t2 { font-size: var(--p-3); max-width: 20ch; margin: 0 0 1rem; }
+.t2.claro { color: var(--harina); }
+.entrada { margin: 0 0 2.4rem; max-width: 50ch; font-size: var(--p-1); line-height: 1.55; }
+.entrada b { color: var(--tinta); }
+.nota { margin: 2rem 0 0; max-width: 60ch; font-size: .88rem; }
+.nota.ej { padding-left: 1rem; border-left: 3px solid var(--azulejo); }
+
+
+/* ═══════════════════════════════════════════════════════════════════
+   CIFRAS — sobre la bruma, sin foto (debajo de la portada fundida no va
+   otra foto a sangre). Cuenta sólo la verificada: las reseñas.
+   ═══════════════════════════════════════════════════════════════════ */
+.cifras { padding: 3.5rem 0 1rem; }
+.cifras__lista {
+  list-style: none; margin: 0 auto; padding: 0;
+  display: grid; grid-template-columns: repeat(4, 1fr); gap: 1.5rem;
+}
+.cifras__lista li { position: relative; padding-top: 1rem; border-top: 1px solid rgba(30, 27, 23, .22); }
+.cifras__lista li[data-ejemplo]::before { position: absolute; top: 1.05rem; right: 0; margin: 0; }
+.cifras__lista b {
+  display: block; font-family: var(--display); font-size: var(--p-3); line-height: 1;
+  color: var(--tinta); font-variant-numeric: tabular-nums;
+}
+.cifras__lista span { display: block; margin-top: .45rem; font-family: var(--dato); font-size: .8rem; line-height: 1.4; }
+.cifras__herida b { color: var(--azulejo); }
+@media (max-width: 760px) { .cifras__lista { grid-template-columns: repeat(2, 1fr); } }
+
+
+/* ═══════════════════════════════════════════════════════════════════
+   PIEZA FIRMA — LAS HORNADAS, EN FICHAS CON FOTO HUNDIDA
+   La foto se funde por abajo en el vidrio de la tarjeta (máscara en la
+   imagen, no un velo encima: el vidrio tiene que verse a través). La
+   hora monta 1,4 rem sobre el tramo que ya es transparente.
+   ═══════════════════════════════════════════════════════════════════ */
+.hornadas, .guardar, .mos, .donde { padding: var(--aire) 0; }
+/* el mosaico y el contacto son dos claras seguidas: sin esto quedaban
+   14 rem de aire vacío entre la nota del mosaico y el rótulo */
+.mos + .donde { padding-top: calc(var(--aire) * .4); }
+.fichas {
+  list-style: none; margin: 0; padding: 0;
+  display: grid; grid-template-columns: repeat(5, 1fr); gap: 1rem;
+}
+.hund, .regla, .aviso {
+  background: rgba(255, 255, 255, .74);
+  border: 1px solid rgba(255, 255, 255, .7);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, .6), 0 16px 34px rgba(30, 27, 23, .08);
+}
+.hund { position: relative; overflow: hidden; border-radius: 14px; }
+.hund img {
+  display: block; width: 100%; height: auto; aspect-ratio: 4 / 3; object-fit: cover;
+  -webkit-mask-image: linear-gradient(180deg, #000 0%, #000 38%, rgba(0,0,0,.45) 68%, transparent 90%);
+          mask-image: linear-gradient(180deg, #000 0%, #000 38%, rgba(0,0,0,.45) 68%, transparent 90%);
+}
+.hund__txt { position: relative; margin-top: -1.4rem; padding: 0 1rem 1.15rem; }
+.hora {
+  margin: 0 0 .35rem; font-family: var(--display); font-size: var(--p-2); line-height: 1;
+  color: var(--tinta); font-variant-numeric: tabular-nums;
+}
+.hund__txt p:not(.hora) { margin: 0; font-size: .92rem; line-height: 1.45; }
+.hund__txt b { color: var(--tinta); }
+.hund--destacada { border: 2px solid var(--azulejo); }
+.hund--destacada .hora { color: var(--azulejo); }
+
+@media (max-width: 1060px) {
+  .fichas { grid-template-columns: repeat(6, 1fr); }
+  .hund { grid-column: span 2; }
+  .hund:nth-child(4), .hund:nth-child(5) { grid-column: span 3; }
+}
+@media (max-width: 640px) {
+  .fichas { grid-template-columns: repeat(2, 1fr); gap: .75rem; }
+  .hund, .hund:nth-child(4), .hund:nth-child(5) { grid-column: auto; }
+  .hund:nth-child(1) { grid-column: span 2; }
+}
+
+
+/* ═══════════════════════════════════════════════════════════════════
+   BANDA A SANGRE CON PARALLAX
+   La foto sobra 20 % arriba y abajo y recorre ±10 %: nunca asoma el
+   borde. Sin soporte de animation-timeline es una foto quieta, que ya se
+   ve bien. Velo lateral de tinta sólo donde va la frase (.48 medido).
+   La palabra destacada va subrayada y no en azulejo claro: sobre ese
+   fondo el celeste no llega a 3:1 en el peor caso.
+   ═══════════════════════════════════════════════════════════════════ */
+.banda {
+  position: relative; isolation: isolate; overflow: hidden; margin: 0;
+  min-height: min(82vh, 720px); display: flex; align-items: center;
+  background: var(--tinta);
+}
+.banda__foto { position: absolute; left: 0; right: 0; top: -20%; height: 140%; z-index: -1; }
+.banda__foto img { display: block; width: 100%; height: 100%; object-fit: cover; object-position: 50% 50%; }
+.banda::after {
+  content: ""; position: absolute; inset: 0; z-index: -1;
+  background: linear-gradient(90deg, rgba(30,27,23,.56) 0%, rgba(30,27,23,.54) 62%, rgba(30,27,23,.24) 100%);
+}
+.banda__txt { width: var(--ancho); margin: 0 auto; }
+.banda__txt p {
+  margin: 0; max-width: 17ch;
+  font-family: var(--display); font-weight: 700; font-size: var(--p-3); line-height: 1.12;
+  color: var(--harina);
+}
+.banda__txt em {
+  font-style: normal;
+  text-decoration: underline; text-decoration-color: var(--azulejo-claro);
+  text-decoration-thickness: .08em; text-underline-offset: .14em;
+}
+@media (max-width: 760px) { .banda::after { background: rgba(30, 27, 23, .58); } }
+
+
+/* ═══════════════════════════════════════════════════════════════════
+   CÓMO GUARDAR EL PAN — tarjetas de vidrio sobre la bruma
+   ═══════════════════════════════════════════════════════════════════ */
+.reglas {
+  list-style: none; margin: 0; padding: 0;
+  display: grid; grid-template-columns: repeat(4, 1fr); gap: 1rem;
+}
+.regla { padding: 1.4rem 1.3rem 1.5rem; border-radius: 14px; }
+.regla__n { display: block; margin-bottom: 1.8rem; font-family: var(--dato); font-size: .8rem; font-weight: 700; color: var(--azulejo); }
+.regla h3 { font-size: var(--p-1); margin: 0 0 .5rem; }
+.regla p { margin: 0; font-size: .95rem; }
+/* la regla que da vuelta lo que todo el mundo hace, en azulejo lleno */
+.regla--destacada { background: var(--azulejo); border-color: var(--azulejo); }
+.regla--destacada .regla__n, .regla--destacada h3, .regla--destacada p { color: #FFFFFF; }
+@media (max-width: 1000px) { .reglas { grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 560px)  { .reglas { grid-template-columns: 1fr; } }
+
+
+/* ═══════════════════════════════════════════════════════════════════
+   CITA — velo plano de tinta al .74. En el peor caso (foto blanca bajo
+   el velo) el harina queda en 6,5:1, así que no depende de la foto.
+   ═══════════════════════════════════════════════════════════════════ */
+.cita {
+  position: relative; isolation: isolate; overflow: hidden; margin: 0;
+  min-height: min(64vh, 540px); display: grid; place-items: center;
+  padding: 4rem 1.2rem; background: var(--tinta); text-align: center;
+}
+.cita__foto { position: absolute; inset: 0; z-index: -1; }
+.cita__foto img { display: block; width: 100%; height: 100%; object-fit: cover; object-position: 50% 50%; }
+.cita__foto::after { content: ""; position: absolute; inset: 0; background: rgba(30, 27, 23, .74); }
+.cita__txt { margin: 0; }
+.cita__txt p {
+  margin: 0 auto; max-width: 20ch;
+  font-family: var(--display); font-weight: 700; font-size: var(--p-3); line-height: 1.15;
+  color: var(--harina);
+}
+.cita__txt .cita__eco {
+  margin-top: 1.4rem; max-width: none;
+  font-family: var(--dato); font-size: .8rem; font-weight: 700; line-height: 1.4;
+  letter-spacing: .14em; text-transform: uppercase;
+}
+.cita__eco::before { content: ""; display: block; width: 3rem; height: 3px; margin: 0 auto .9rem; background: var(--azulejo-claro); }
+
+
+/* ═══════════════════════════════════════════════════════════════════
+   MOSAICO — seis piezas en 3 columnas: las spans suman 9 celdas
+   (2+1 / 1+2 / 2+1). En el teléfono, 2 columnas con la 1 y la 6 dobles.
+   ═══════════════════════════════════════════════════════════════════ */
+/* Alto de fila fijo: con aspect-ratio en cada foto, las dobles (3:2 a dos
+   columnas) estiraban la fila entera y el mosaico medía 1 960 px a 1440. */
+.mos__grilla {
+  display: grid; gap: 6px; grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: clamp(180px, 21vw, 300px); margin-top: 1rem;
+}
+.mos__p { margin: 0; overflow: hidden; border-radius: 10px; background: var(--tinta); }
+.mos__p:nth-child(1), .mos__p:nth-child(4), .mos__p:nth-child(5) { grid-column: span 2; }
+.mos__p img {
+  display: block; width: 100%; height: 100%; object-fit: cover;
+  transition: transform .6s var(--sale);
+}
+.mos__p:hover img { transform: scale(1.05); }
+@media (max-width: 760px) {
+  .mos__grilla { grid-template-columns: repeat(2, 1fr); grid-auto-rows: clamp(130px, 40vw, 220px); }
+  .mos__p:nth-child(4), .mos__p:nth-child(5) { grid-column: auto; }
+  .mos__p:nth-child(1), .mos__p:nth-child(6) { grid-column: span 2; }
+}
+
+
+/* ═══════════════════════════════════════════════════════════════════
+   DÓNDE ESTAMOS — el mapa de Google incrustado, como en Calor de Hogar.
+   La CSP abre UNA puerta: frame-src https://www.google.com
+   https://maps.google.com. Embed público, sin clave.
+   ═══════════════════════════════════════════════════════════════════ */
+.donde__grilla {
+  display: grid; grid-template-columns: .9fr 1.1fr;
+  gap: clamp(2rem, 4vw, 4rem); align-items: start;
+}
+.datos { margin: 0 0 1.6rem; display: grid; grid-template-columns: 1fr 1fr; gap: 1.1rem 1.6rem; }
+.datos dt {
+  font-family: var(--dato); font-size: .72rem; font-weight: 700;
+  letter-spacing: .1em; text-transform: uppercase; color: var(--azulejo);
+}
+.datos dd { margin: .15rem 0 0; color: var(--tinta); }
+.datos dd a { display: inline-flex; align-items: center; min-height: 44px; color: var(--tinta); font-weight: 700; }
+.datos .falta { font-family: var(--dato); font-size: .88rem; color: var(--tinta-suave); }
+.aviso { margin: 0; padding: 1rem 1.2rem; border-left: 4px solid var(--azulejo); border-radius: 0 12px 12px 0; }
+.aviso b { color: var(--tinta); }
+.mapa-g {
+  border-radius: 14px; overflow: hidden; background: var(--loza);
+  border: 1px solid rgba(255, 255, 255, .7);
+  box-shadow: 0 16px 34px rgba(30, 27, 23, .08);
+}
+.mapa-g iframe { display: block; width: 100%; height: clamp(300px, 34vw, 430px); border: 0; }
+.mapa-g__pie {
+  margin: 0; padding: .35rem 1rem;
+  display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: .2rem 1rem;
+  font-family: var(--dato); font-size: .82rem; color: var(--tinta-suave);
+}
+.mapa-g__pie b { color: var(--tinta); }
+.mapa-g__pie a { display: inline-flex; align-items: center; min-height: 44px; font-weight: 700; color: var(--azulejo); }
+@media (max-width: 860px) { .donde__grilla { grid-template-columns: 1fr; } }
+
+
+/* ═══════════════════════════════════════════════════════════════════
+   PARA EL DUEÑO Y PIE
+   ═══════════════════════════════════════════════════════════════════ */
+.dueno { padding: var(--aire) 0; background: var(--noche); color: var(--harina-suave); }
+.dueno__cols { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.4rem; margin: 2rem 0; }
+.dueno__cols > div { padding-top: 1.1rem; border-top: 1px solid rgba(143, 196, 228, .35); }
+.dueno h3 { font-size: var(--p-1); color: var(--harina); }
+.dueno p { margin: 0; }
+@media (max-width: 760px) { .dueno__cols { grid-template-columns: 1fr; } }
+
+.pie { background: var(--tinta); color: var(--harina-suave); padding: 2.4rem 0 6rem; }
+.pie__in { display: flex; flex-wrap: wrap; justify-content: space-between; gap: .6rem 2rem; }
+.pie__m { margin: 0; font-family: var(--display); color: var(--harina); }
+.pie__n { margin: 0; max-width: 52ch; font-family: var(--dato); font-size: .8rem; }
+
+
+/* ═══════════════════════════════════════════════════════════════════
+   BRUMA Y VIDRIO — el patrón de AgroFrut (72), recalibrado
+   · Una capa detrás de todo <main> con catorce manchas de las mismas
+     fotos (hacer-bruma.ps1 -Tono clara, PNG 30×20). Las secciones claras
+     no tienen fondo propio: el color pasa de una a otra sin cortes.
+   · Las oscuras (dueño y pie) la tapan y llevan la suya adentro.
+   · Tarjetas de vidrio dentro de @supports; sin soporte quedan sólidas.
+   ═══════════════════════════════════════════════════════════════════ */
+main { position: relative; isolation: isolate; }
+.bruma-pagina { position: absolute; inset: 0; z-index: -1; overflow: hidden; pointer-events: none; }
+.bruma-pagina img, .bruma img {
+  position: absolute; height: auto; max-width: none; aspect-ratio: 3 / 2; object-fit: cover;
+  -webkit-mask-image: radial-gradient(closest-side, #000 0%, rgba(0,0,0,.86) 38%, rgba(0,0,0,.42) 70%, transparent 100%);
+          mask-image: radial-gradient(closest-side, #000 0%, rgba(0,0,0,.86) 38%, rgba(0,0,0,.42) 70%, transparent 100%);
+}
+.bruma-pagina img { width: 74vw; filter: blur(60px); opacity: .95; }
+.bruma-pagina img:nth-child(odd)  { right: -22vw; }
+.bruma-pagina img:nth-child(even) { left: -22vw; }
+.bruma-pagina img:nth-child(3n)   { left: 22vw; right: auto; width: 62vw; }
+.bruma-pagina img:nth-child(1)  { top: 0; }
+.bruma-pagina img:nth-child(2)  { top: 7%; }
+.bruma-pagina img:nth-child(3)  { top: 14%; }
+.bruma-pagina img:nth-child(4)  { top: 21%; }
+.bruma-pagina img:nth-child(5)  { top: 28%; }
+.bruma-pagina img:nth-child(6)  { top: 35%; }
+.bruma-pagina img:nth-child(7)  { top: 42%; }
+.bruma-pagina img:nth-child(8)  { top: 49%; }
+.bruma-pagina img:nth-child(9)  { top: 56%; }
+.bruma-pagina img:nth-child(10) { top: 63%; }
+.bruma-pagina img:nth-child(11) { top: 70%; }
+.bruma-pagina img:nth-child(12) { top: 77%; }
+.bruma-pagina img:nth-child(13) { top: 84%; }
+.bruma-pagina img:nth-child(14) { top: 91%; }
+
+.dueno, .pie { position: relative; isolation: isolate; overflow: hidden; }
+.bruma { position: absolute; inset: -12% 0; z-index: -1; pointer-events: none; }
+.bruma img { width: 72%; filter: blur(56px); opacity: .95; }
+.bruma .bruma-a { top: -30%; right: -18%; }
+.bruma .bruma-b { bottom: -30%; left: -20%; }
+.pie .bruma img { width: 60%; }
+.pie .bruma .bruma-a { top: -60%; right: -6%; }
+.pie .bruma .bruma-b { bottom: -60%; left: -8%; }
+
+@supports ((-webkit-backdrop-filter: blur(1px)) or (backdrop-filter: blur(1px))) {
+  .hund, .regla, .aviso {
+    background: rgba(255, 255, 255, .46);
+    -webkit-backdrop-filter: blur(18px) saturate(1.3);
+            backdrop-filter: blur(18px) saturate(1.3);
+  }
+  .regla--destacada { background: rgba(29, 92, 134, .94); }
+}
+
+@media (max-width: 720px) {
+  .bruma-pagina img { width: 150vw; filter: blur(44px); }
+  .bruma-pagina img:nth-child(odd)  { right: -64vw; }
+  .bruma-pagina img:nth-child(even) { left: -64vw; }
+  .bruma-pagina img:nth-child(3n)   { left: -25vw; width: 150vw; }
+  .bruma img { width: 170%; filter: blur(44px); }
+  .bruma .bruma-a { right: -90%; }
+  .bruma .bruma-b { left: -95%; }
+  .pie .bruma img { width: 150%; }
+}
+
+
+/* ═══════════════════════════════════════════════════════════════════
+   TEXTOS QUE APARECEN
+   Pedido de Yordy (13-09-2026): «animaciones en los textos que van
+   apareciendo». Tres cosas, y ninguna esconde nada sin JS:
+   · Titulares palabra por palabra: main.js envuelve cada palabra en una
+     ventana (.pal, overflow hidden) y la palabra sube desde abajo. El
+     --i lo pone el JS por CSSOM (setProperty): la CSP prohíbe style="".
+   · Párrafos y piezas sueltas: suben 22 px y se funden.
+   · Grillas (.cascada): los hijos entran escalonados cada 80 ms; el
+     contenedor se neutraliza para que el grupo no baje entero.
+   Todo cuelga de .js (con el rescate de 4 s) y de .rev, que pone el JS.
+   ═══════════════════════════════════════════════════════════════════ */
+.js .rev { opacity: 0; transform: translate3d(0, 22px, 0); }
+.rev.ok { opacity: 1; transform: none; transition: opacity .6s ease-out, transform .9s var(--sale); }
+
+.js .cascada.rev { opacity: 1; transform: none; transition: none; }
+.js .cascada.rev > * { opacity: 0; transform: translate3d(0, 30px, 0); }
+.js .cascada.rev.ok > * {
+  opacity: 1; transform: none;
+  transition: opacity .55s ease-out, transform .9s var(--sale);
+  transition-delay: calc(var(--i, 0) * 80ms);
+}
+.cascada > :nth-child(1) { --i: 0; }
+.cascada > :nth-child(2) { --i: 1; }
+.cascada > :nth-child(3) { --i: 2; }
+.cascada > :nth-child(4) { --i: 3; }
+.cascada > :nth-child(5) { --i: 4; }
+.cascada > :nth-child(6) { --i: 5; }
+
+.pal { display: inline-block; overflow: hidden; vertical-align: bottom; padding: .1em 0 .16em; margin: -.1em 0 -.16em; }
+.pal__in { display: inline-block; }
+.js .titulo.rev { opacity: 1; transform: none; transition: none; }
+.js .titulo.rev .pal__in { transform: translate3d(0, 118%, 0); }
+.titulo.rev.ok .pal__in { transform: none; transition: transform 1s var(--sale); transition-delay: calc(var(--i, 0) * 60ms); }
+
+/* la portada no espera al scroll: entra sola a los 120 ms */
+.js .portada__texto > * { opacity: 0; transform: translate3d(0, 16px, 0); }
+.js .portada__texto > .portada__h1 { opacity: 1; transform: none; }
+.js .portada__h1 .pal__in { transform: translate3d(0, 118%, 0); }
+.portada__texto.ok > * { animation: entra .8s var(--muelle) forwards; }
+.portada__texto.ok > .portada__h1 { animation: none; }
+.portada__texto.ok > :nth-child(3) { animation-delay: .3s; }
+.portada__texto.ok > :nth-child(4) { animation-delay: .38s; }
+.portada__texto.ok .pal__in { transform: none; transition: transform 1.05s var(--sale); transition-delay: calc(.06s + var(--i, 0) * 70ms); }
+@keyframes entra { to { opacity: 1; transform: none; } }
+
+
+/* ═══════════════════════════════════════════════════════════════════
+   PROFUNDIDAD AL SCROLL — una cosa por pantalla
+   · Portada: se desenfoca y se aleja al dejarla atrás (sólo escritorio).
+   · Banda: parallax.  · Cita: entra desenfocada y se enfoca.
+   Todo dentro de @supports: sin soporte, fotos quietas.
+   ═══════════════════════════════════════════════════════════════════ */
+@supports (animation-timeline: view()) {
+  @media (prefers-reduced-motion: no-preference) {
+    .banda__foto { animation: banda-lenta linear both; animation-timeline: view(); animation-range: cover 0% cover 100%; }
+  }
+  @media (prefers-reduced-motion: no-preference) and (min-width: 761px) {
+    .portada__foto { animation: portada-se-va linear both; animation-timeline: scroll(root block); animation-range: 0 90vh; }
+    .cita__foto { animation: cita-enfoca linear both; animation-timeline: view(block); animation-range: entry 0% entry 95%; }
+  }
+}
+@keyframes banda-lenta   { from { transform: translateY(-10%); } to { transform: translateY(10%); } }
+@keyframes portada-se-va { to { filter: blur(6px); transform: scale(1.06); opacity: .6; } }
+@keyframes cita-enfoca   { from { filter: blur(9px); transform: scale(1.06); } to { filter: blur(0); transform: scale(1.06); } }
+
+
+/* ═══════════════════════════════════════════════════════════════════
+   BOTÓN FLOTANTE DE WHATSAPP — visible por defecto; el JS sólo lo
+   aparta mientras la portada ocupa más del 55 % de la ventana.
+   ═══════════════════════════════════════════════════════════════════ */
+.flota {
+  position: fixed;
+  right: max(1rem, env(safe-area-inset-right, 0px));
+  bottom: max(1rem, env(safe-area-inset-bottom, 0px));
+  z-index: 60;
+  display: inline-flex; align-items: center; gap: .55rem;
+  height: 56px; padding: 0 1.15rem 0 1rem; border-radius: 999px;
+  font-family: var(--dato); font-size: .9rem; font-weight: 700; line-height: 1;
+  text-decoration: none;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, .3), 0 2px 6px rgba(0, 0, 0, .2);
+  transition: opacity .28s ease, transform .28s ease, box-shadow .18s ease;
+}
+.flota--wa { background: #25D366; color: #07310F; }
+.flota__i { width: 26px; height: 26px; fill: currentColor; flex: none; }
+.flota:hover, .flota:focus-visible { transform: translateY(-2px); box-shadow: 0 10px 26px rgba(0, 0, 0, .3); }
+.js .flota--arriba { opacity: 0; transform: translateY(14px) scale(.94); pointer-events: none; }
+@media (max-width: 520px) {
+  .flota { width: 56px; padding: 0; justify-content: center; }
+  .flota__t { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
+}
+
+
+/* ═══════════════════════════════════════════════════════════════════
+   MOVIMIENTO REDUCIDO
+   El ambiente (la luz del horno) se esconde entero. Las apariciones se
+   quedan como fundidos, sin desplazamiento: apagarlo todo deja la página
+   muerta, y en Windows esta preferencia viene activada de fábrica.
+   ═══════════════════════════════════════════════════════════════════ */
+@media (prefers-reduced-motion: reduce) {
+  .portada__foto::before { display: none; }
+  .js .rev, .js .cascada.rev > *, .js .portada__texto > * { transform: none; }
+  .js .titulo.rev .pal__in, .js .portada__h1 .pal__in { transform: none; }
+  .portada__texto.ok > * { animation-duration: .01s; animation-delay: 0s; }
+  .mos__p:hover img, .btn--fuerte:hover, .btn--claro:hover { transform: none; }
+  .flota { transition: opacity .28s ease; }
+  .flota:hover, .flota:focus-visible, .js .flota--arriba { transform: none; }
+}

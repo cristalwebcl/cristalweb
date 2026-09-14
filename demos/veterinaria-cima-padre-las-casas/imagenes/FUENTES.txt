@@ -1,0 +1,22 @@
+FUENTES DE LAS IMAGENES - CIMA Rehecha el 13-09-2026 (presentacion antes que texto). Fotos de REFERENCIA de bancos libres: ninguna es del local; las verdaderas las tiene que mandar el negocio. 
+port-01.jpg  <-  pozo-p-cim-silueta\009.jpg  |  pexels (Pexels License)  |  autor: David Kanigan  |  https://www.pexels.com/es-es/foto/amanecer-43-f-24-de-octubre-de-2025-cove-island-park-stamford-ct-34429568/  |  consulta: "dog silhouette sunset"
+hund1-01.jpg  <-  pozo-p-cim-eco\006.jpg  |  pexels (Pexels License)  |  autor: Eduardo López  |  https://www.pexels.com/es-es/foto/cabeza-de-perro-con-correa-verde-sobre-fondo-negro-16618520/  |  consulta: "dog ultrasound"
+hund2-01.jpg  <-  pozo-p-cim-eco\003.jpg  |  pexels (Pexels License)  |  autor: Carolina Gonzalez  |  https://www.pexels.com/es-es/foto/blanco-y-negro-perro-mascota-retrato-20496584/  |  consulta: "dog ultrasound"
+hund3-01.jpg  <-  pozo-p-cim-comida\011.jpg  |  pexels (Pexels License)  |  autor: Cup of  Couple  |  https://www.pexels.com/es-es/foto/mano-poniendo-dueno-de-una-mascota-vaso-de-plastico-8473523/  |  consulta: "cat food bowl"
+hund4-01.jpg  <-  pozo-p-cim-gato\011.jpg  |  pexels (Pexels License)  |  autor: Bingqian Li  |  https://www.pexels.com/es-es/foto/acercamiento-de-un-gato-domestico-durmiendo-en-una-manta-31727710/  |  consulta: "cat basket sleeping"
+hund5-01.jpg  <-  pozo-p-cim-comida\012.jpg  |  pexels (Pexels License)  |  autor: Alexas Fotos  |  https://www.pexels.com/es-es/foto/gato-atigrado-cerca-del-cuenco-de-comida-azul-con-patron-de-espina-de-pescado-al-aire-libre-31400728/  |  consulta: "cat food bowl"
+hund6-01.jpg  <-  pozo-p-cim-retrato\007.jpg  |  pexels (Pexels License)  |  autor: Ivan Garfias  |  https://www.pexels.com/es-es/foto/fotografia-oscura-de-un-husky-sobre-un-fondo-negro-20688809/  |  consulta: "dog portrait dark"
+banda-01.jpg  <-  pozo-p-cim-eco\004.jpg  |  pexels (Pexels License)  |  autor: PubPro  |  https://www.pexels.com/es-es/foto/retrato-de-perro-34493380/  |  consulta: "dog ultrasound"
+cita-01.jpg  <-  pozo-p-cim-hotel\011.jpg  |  pexels (Pexels License)  |  autor: Santiago Sauceda González  |  https://www.pexels.com/es-es/foto/lindo-cachorro-sentado-en-la-cama-en-una-habitacion-acogedora-29736616/  |  consulta: "dog kennel hotel"
+mos1-01.jpg  <-  pozo-p-cim-hotel\012.jpg  |  pexels (Pexels License)  |  autor: Perro Cacahuate  |  https://www.pexels.com/es-es/foto/lindo-perro-pug-relajandose-en-un-cojin-gris-en-interior-30634019/  |  consulta: "dog kennel hotel"
+mos2-01.jpg  <-  pozo-p-cim-gato\001.jpg  |  pexels (Pexels License)  |  autor: Duygu  |  https://www.pexels.com/es-es/foto/mascota-mono-gatito-gato-24038434/  |  consulta: "cat basket sleeping"
+mos3-01.jpg  <-  pozo-p-cim-peluqueria\010.jpg  |  pexels (Pexels License)  |  autor: Santiago Sauceda González  |  https://www.pexels.com/es-es/foto/goffy-32655091/  |  consulta: "dog grooming salon"
+mos4-01.jpg  <-  pozo-p-cim-retrato\004.jpg  |  pexels (Pexels License)  |  autor: German Suarez  |  https://www.pexels.com/es-es/foto/retrato-de-un-perro-marron-con-un-abrigo-azul-al-aire-libre-38743329/  |  consulta: "dog portrait dark"
+mos5-01.jpg  <-  pozo-p-cim-eco\005.jpg  |  pexels (Pexels License)  |  autor: Rodrigo Ortega  |  https://www.pexels.com/es-es/foto/adorable-cachorro-beagle-mirando-hacia-arriba-al-aire-libre-29656900/  |  consulta: "dog ultrasound"
+mos6-01.jpg  <-  pozo-p-cim-eco\009.jpg  |  pexels (Pexels License)  |  autor: Josué Rodríguez  |  https://www.pexels.com/es-es/foto/perro-mascota-cabeza-fondo-de-pantalla-16666292/  |  consulta: "dog ultrasound"
+
+BRUMA (bruma-pag-0N.png y bruma-osc-0N.png, 30x20): las MISMAS fotos, recortadas a 3:2, reducidas y
+recoloreadas con C:\devs\demos\hacer-bruma.ps1 (clara >= 0,68 de luminancia / oscura <= 0,05). No suman fuentes.
+    pagina: port-01.jpg, banda-01.jpg, hund4-01.jpg, mos1-01.jpg, mos3-01.jpg   |   oscuras: cita-01.jpg, hund6-01.jpg, hund1-01.jpg
+
+MAPA: iframe de Google Maps (embed publico, sin clave). No hay imagen de mapa.

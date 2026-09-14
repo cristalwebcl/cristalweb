@@ -1,0 +1,22 @@
+FUENTES DE LAS IMAGENES - Ferreteria El Hugo Rehecha el 14-09-2026 (presentacion antes que texto). Fotos de REFERENCIA de bancos libres: ninguna es del local; las verdaderas las tiene que mandar el negocio. 
+port-01.jpg  <-  pozo-p-hug-olla\008.jpg  |  pexels (Pexels License)  |  autor: Janko Ferlic  |  https://www.pexels.com/es-es/foto/efecto-desenfocado-cocina-colgando-bateria-de-cocina-4509047/  |  consulta: "cooking pots kitchen"
+hund1-01.jpg  <-  pozo-p-hug-ampolleta\004.jpg  |  pexels (Pexels License)  |  autor: Javier Gonzalez  |  https://www.pexels.com/es-es/foto/lampara-bombilla-diseno-poder-15821195/  |  consulta: "light bulbs"
+hund2-01.jpg  <-  pozo-p-hug-olla\004.jpg  |  pexels (Pexels License)  |  autor: Merve  |  https://www.pexels.com/es-es/foto/cocina-cocinando-llama-naturaleza-muerta-18280608/  |  consulta: "cooking pots kitchen"
+hund3-01.jpg  <-  pozo-p-hug-aseo\012.jpg  |  pexels (Pexels License)  |  autor: MART  PRODUCTION  |  https://www.pexels.com/es-es/foto/cubo-agua-bendita-hisopo-de-cerca-7219797/  |  consulta: "broom mop bucket"
+hund4-01.jpg  <-  pozo-p-hug-bano\010.jpg  |  pexels (Pexels License)  |  autor: ato de  |  https://www.pexels.com/es-es/foto/encimera-de-tocador-en-blanco-y-negro-con-grifo-de-acero-inoxidable-145512/  |  consulta: "bathroom faucet sink"
+hund5-01.jpg  <-  pozo-p-hug-repisa\003.jpg  |  pexels (Pexels License)  |  autor: Arina Krasnikova  |  https://www.pexels.com/es-es/foto/botellas-hojas-tazas-copas-6654122/  |  consulta: "kitchen shelf jars"
+hund6-01.jpg  <-  pozo-p-hug-caja\004.jpg  |  pexels (Pexels License)  |  autor: Anete Lusina  |  https://www.pexels.com/es-es/foto/tornillos-y-herramientas-de-reparacion-en-caja-cerca-de-martillo-4792495/  |  consulta: "toolbox hammer screwdriver"
+banda-01.jpg  <-  pozo-p-hug-pano\005.jpg  |  pexels (Pexels License)  |  autor: cottonbro studio  |  https://www.pexels.com/es-es/foto/persona-con-camisa-a-cuadros-blanca-y-negra-abotonada-sosteniendo-un-telefono-inteligente-negro-4108685/  |  consulta: "checkered kitchen towel"
+cita-01.jpg  <-  pozo-p-hug-aseo\011.jpg  |  pexels (Pexels License)  |  autor: Iban Lopez Luna  |  https://www.pexels.com/es-es/foto/taller-rustico-japones-con-herramientas-tradicionales-37252634/  |  consulta: "broom mop bucket"
+mos1-01.jpg  <-  pozo-p-hug-pano\009.jpg  |  pexels (Pexels License)  |  autor: Ron Lach  |  https://www.pexels.com/es-es/foto/cocina-silla-secando-secado-10388449/  |  consulta: "checkered kitchen towel"
+mos2-01.jpg  <-  pozo-p-hug-ampolleta\005.jpg  |  pexels (Pexels License)  |  autor: Alisa Skripina  |  https://www.pexels.com/es-es/foto/elegante-arco-veneciano-con-iluminacion-tenue-39182619/  |  consulta: "light bulbs"
+mos3-01.jpg  <-  pozo-p-hug-enchufe\002.jpg  |  pexels (Pexels License)  |  autor: Jan van der Wolf  |  https://www.pexels.com/es-es/foto/toma-de-corriente-con-enchufe-en-pared-gris-36272732/  |  consulta: "wall socket plug"
+mos4-01.jpg  <-  pozo-p-hug-repisa\004.jpg  |  pexels (Pexels License)  |  autor: Gülşah Tüfekçi  |  https://www.pexels.com/es-es/foto/mutfak-32621190/  |  consulta: "kitchen shelf jars"
+mos5-01.jpg  <-  pozo-p-hug-patio\012.jpg  |  pexels (Pexels License)  |  autor: Marina Klässner  |  https://www.pexels.com/es-es/foto/jardin-hojas-plantas-flora-11299875/  |  consulta: "garden hose watering can"
+mos6-01.jpg  <-  pozo-p-hug-bano\006.jpg  |  pexels (Pexels License)  |  autor: Mathias Reding  |  https://www.pexels.com/es-es/foto/agua-sol-metal-blanco-7664072/  |  consulta: "bathroom faucet sink"
+
+BRUMA (bruma-pag-0N.png y bruma-osc-0N.png, 30x20): las MISMAS fotos, recortadas a 3:2, reducidas y
+recoloreadas con C:\devs\demos\hacer-bruma.ps1 (clara >= 0,68 de luminancia / oscura <= 0,05). No suman fuentes.
+    pagina: port-01.jpg, banda-01.jpg, cita-01.jpg, hund4-01.jpg, mos5-01.jpg   |   oscuras: port-01.jpg, cita-01.jpg, banda-01.jpg
+
+MAPA: iframe de Google Maps (embed publico, sin clave). No hay imagen de mapa.

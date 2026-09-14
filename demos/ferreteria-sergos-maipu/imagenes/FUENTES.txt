@@ -1,0 +1,18 @@
+﻿FUENTES DE LAS IMAGENES - ferreteria-sergos-maipu Bancos libres; procesadas con preparar-lote.ps1 (JPEG, ancho y calidad por tratamiento). 
+tajo-01.jpg  <=  pexels | Pexels License | Robert Jeffrey Bonto | https://www.pexels.com/es-es/foto/industria-almacen-negocio-adentro-4090524/ | https://images.pexels.com/photos/4090524/pexels-photo-4090524.jpeg | recorte 21:9
+mit-01.jpg  <=  pexels | Pexels License | Jorge Urosa | https://www.pexels.com/es-es/foto/tornillos-tornillos-de-rosca-vueltas-vista-superior-9131071/ | https://images.pexels.com/photos/9131071/pexels-photo-9131071.jpeg | recorte 4:5
+cita-01.jpg  <=  pexels | Pexels License | Tiger Lily | https://www.pexels.com/es-es/foto/industria-fabrica-almacen-negocio-4483610/ | https://images.pexels.com/photos/4483610/pexels-photo-4483610.jpeg | recorte 16:9
+telon-01.jpg  <=  pexels | Pexels License | Eduardo Soares | https://www.pexels.com/es-es/foto/gente-industria-almacen-viaje-5498224/ | https://images.pexels.com/photos/5498224/pexels-photo-5498224.jpeg
+mos1-01.jpg  <=  pexels | Pexels License | Los Muertos Crew | https://www.pexels.com/es-es/foto/hierro-plancha-tornillos-tornillos-de-rosca-8447852/ | https://images.pexels.com/photos/8447852/pexels-photo-8447852.jpeg | recorte 3:4
+mos2-01.jpg  <=  pexels | Pexels License | Mochammad  Algi | https://www.pexels.com/es-es/foto/monitor-mostrar-exhibicion-exposicion-12340557/ | https://images.pexels.com/photos/12340557/pexels-photo-12340557.jpeg | recorte 3:4
+mos3-01.jpg  <=  pexels | Pexels License | Jedidiah-Jordan O. | https://www.pexels.com/es-es/foto/blanco-y-negro-metal-tornillos-tornillos-de-rosca-20518598/ | https://images.pexels.com/photos/20518598/pexels-photo-20518598.jpeg | recorte 3:4
+mos4-01.jpg  <=  pexels | Pexels License | Belén Montero | https://www.pexels.com/es-es/foto/pincel-azul-sobre-pintura-blanca-sobre-una-superficie-clara-35747399/ | https://images.pexels.com/photos/35747399/pexels-photo-35747399.jpeg | recorte 3:4
+mos5-01.jpg  <=  pexels | Pexels License | Pranit Kundu (diabolicspirit32) | https://www.pexels.com/es-es/foto/oxido-tuberias-almacen-acero-20258371/ | https://images.pexels.com/photos/20258371/pexels-photo-20258371.jpeg | recorte 3:4
+mos6-01.jpg  <=  pexels | Pexels License | Daniel Rosehill | https://www.pexels.com/es-es/foto/primer-plano-de-un-contenedor-de-almacenamiento-de-herramientas-con-tornillos-38663945/ | https://images.pexels.com/photos/38663945/pexels-photo-38663945.jpeg | recorte 3:4
+
+MAPA DE UBICACION — mapa-01.jpg
+  768 x 768 · zoom 16 · centro -33.5315833, -70.795657
+  Mosaicos de OpenStreetMap pegados en una sola imagen, con el marcador
+  dibujado encima. Datos (c) OpenStreetMap contributors, licencia ODbL:
+  la atribucion tiene que ir VISIBLE junto al mapa, en el pie de la figura.
+  https://www.openstreetmap.org/copyright

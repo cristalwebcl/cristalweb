@@ -24,3 +24,10 @@ URL de origen:
 004.jpg | 6069x4046 | Black Hairdresser Photos, Download The BEST Free Black Hairdresser ... | https://images.pexels.com/photos/7697385/pexels-photo-7697385.jpeg?cs=srgb&dl=pexels-rdne-stock-project-7697385.jpg&fm=jpg
 005.jpg | 6016x4016 | Hair Stylist Photos, Download The BEST Free Hair Stylist Stock Photos ... | https://images.pexels.com/photos/973402/pexels-photo-973402.jpeg?cs=srgb&dl=pexels-element5-973402.jpg&fm=jpg
 006.jpg | 6000x4000 | Hairdresser Photos, Download The BEST Free Hairdresser Stock Photos ... | https://images.pexels.com/photos/897251/pexels-photo-897251.jpeg?cs=srgb&dl=pexels-lumierestudiomx-897251.jpg&fm=jpg
+
+MAPA DE UBICACION — mapa-01.jpg
+  768 x 768 · zoom 14 · centro -38.7358908, -72.590538
+  Mosaicos de OpenStreetMap pegados en una sola imagen, con el marcador
+  dibujado encima. Datos (c) OpenStreetMap contributors, licencia ODbL:
+  la atribucion tiene que ir VISIBLE junto al mapa, en el pie de la figura.
+  https://www.openstreetmap.org/copyright

@@ -1,0 +1,22 @@
+FUENTES DE LAS IMAGENES - Ferreteria San Jorge Rehecha el 13-09-2026 (presentacion antes que texto). Fotos de REFERENCIA de bancos libres: ninguna es del local; las verdaderas las tiene que mandar el negocio. 
+port-01.jpg  <-  pozo-p-sj-entrega\010.jpg  |  pexels (Pexels License)  |  autor: | helloiamtugce |  |  https://www.pexels.com/es-es/foto/escaleras-casas-casa-puerta-17205522/  |  consulta: "cardboard box doorstep"
+hund1-01.jpg  <-  pozo-p-sj-entrega\009.jpg  |  pexels (Pexels License)  |  autor: Artem Podrez  |  https://www.pexels.com/es-es/foto/suelo-molido-marron-correo-5025657/  |  consulta: "cardboard box doorstep"
+hund2-01.jpg  <-  pozo-p-sj-clavos\003.jpg  |  pexels (Pexels License)  |  autor: Peppered Pixels Design Studio  |  https://www.pexels.com/es-es/foto/primer-plano-de-tornillos-metalicos-industriales-variados-29226820/  |  consulta: "screws nails"
+hund3-01.jpg  <-  pozo-p-sj-pintura\010.jpg  |  pexels (Pexels License)  |  autor: Ksenia Chernaya  |  https://www.pexels.com/es-es/foto/rodillo-de-pintura-limpio-sobre-recipiente-de-plastico-5691634/  |  consulta: "paint roller brush"
+hund4-01.jpg  <-  pozo-p-sj-fittings\011.jpg  |  pexels (Pexels License)  |  autor: Bayram Er  |  https://www.pexels.com/es-es/foto/fotografia-de-tuberias-cerca-de-azulejos-blancos-9658236/  |  consulta: "pipe fittings"
+hund5-01.jpg  <-  pozo-p-sj-ampolleta\010.jpg  |  pexels (Pexels License)  |  autor: Lukas Blazek  |  https://www.pexels.com/es-es/foto/bombilla-de-luz-amarilla-296324/  |  consulta: "light bulb"
+hund6-01.jpg  <-  pozo-p-sj-guantes\007.jpg  |  pexels (Pexels License)  |  autor: cottonbro studio  |  https://www.pexels.com/es-es/foto/cuero-piel-equipo-guantes-7541997/  |  consulta: "work gloves"
+banda-01.jpg  <-  pozo-p-sj-celular\002.jpg  |  pexels (Pexels License)  |  autor: Kindel Media  |  https://www.pexels.com/es-es/foto/manos-telefono-inteligente-tecnologia-enviando-mensajes-de-texto-7054507/  |  consulta: "smartphone hand typing"
+cita-01.jpg  <-  pozo-p-sj-pintura\009.jpg  |  pexels (Pexels License)  |  autor: Polina Tankilevitch  |  https://www.pexels.com/es-es/foto/pinceles-superficie-de-madera-materiales-de-pintura-rodillos-de-pintura-5583059/  |  consulta: "paint roller brush"
+mos1-01.jpg  <-  pozo-p-sj-huincha\009.jpg  |  pexels (Pexels License)  |  autor: Jahra Tasfia Reza  |  https://www.pexels.com/es-es/foto/primer-plano-de-una-cinta-metrica-enrollada-sobre-una-superficie-de-madera-38321409/  |  consulta: "tape measure"
+mos2-01.jpg  <-  pozo-p-sj-fittings\004.jpg  |  pexels (Pexels License)  |  autor: Nic Wood  |  https://www.pexels.com/es-es/foto/construccion-industria-modelo-estampado-28169591/  |  consulta: "pipe fittings"
+mos3-01.jpg  <-  pozo-p-sj-celular\007.jpg  |  pexels (Pexels License)  |  autor: Andrea Piacquadio  |  https://www.pexels.com/es-es/foto/persona-con-smartphone-blanco-sobre-mesa-blanca-3766218/  |  consulta: "smartphone hand typing"
+mos4-01.jpg  <-  pozo-p-sj-ampolleta\006.jpg  |  pexels (Pexels License)  |  autor: Atlantic Ambience  |  https://www.pexels.com/es-es/foto/iluminado-bombillas-luz-calida-insubstancial-10528767/  |  consulta: "light bulb"
+mos5-01.jpg  <-  pozo-p-sj-guantes\006.jpg  |  pexels (Pexels License)  |  autor: Onur Yumlu  |  https://www.pexels.com/es-es/foto/guantes-de-trabajo-usados-sobre-una-superficie-de-madera-rustica-37892679/  |  consulta: "work gloves"
+mos6-01.jpg  <-  pozo-p-sj-pintura\002.jpg  |  pexels (Pexels License)  |  autor: Antoni Shkraba  |  https://www.pexels.com/es-es/foto/amarillo-pintura-pintando-cuadro-5853925/  |  consulta: "paint roller brush"
+
+BRUMA (bruma-pag-0N.png y bruma-osc-0N.png, 30x20): las MISMAS fotos, recortadas a 3:2, reducidas y
+recoloreadas con C:\devs\demos\hacer-bruma.ps1 (clara >= 0,68 de luminancia / oscura <= 0,05). No suman fuentes.
+    pagina: port-01.jpg, banda-01.jpg, cita-01.jpg, mos1-01.jpg, mos4-01.jpg   |   oscuras: port-01.jpg, banda-01.jpg, cita-01.jpg
+
+MAPA: iframe de Google Maps (embed publico, sin clave). No hay imagen de mapa.

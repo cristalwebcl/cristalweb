@@ -1,0 +1,22 @@
+FUENTES DE LAS IMAGENES - El Buen Pastor Rehecha el 13-09-2026 (presentacion antes que texto). Fotos de REFERENCIA de bancos libres: ninguna es del local; las verdaderas las tiene que mandar el negocio. 
+port-01.jpg  <-  pozo-p-bpas-arriba\006.jpg  |  pexels (Pexels License)  |  autor: Regina Tommasi  |  https://www.pexels.com/es-es/foto/lindo-perro-blanco-relajandose-al-aire-libre-en-el-cesped-31035370/  |  consulta: "dog top view"
+hund1-01.jpg  <-  pozo-p-bpas-balanza\005.jpg  |  pexels (Pexels License)  |  autor: Eduardo López  |  https://www.pexels.com/es-es/foto/perro-marron-sentado-16618530/  |  consulta: "veterinary scale dog"
+hund2-01.jpg  <-  pozo-p-roy-carpeta\001.jpg  |  pexels (Pexels License)  |  autor: Joachim Schnürle  |  https://www.pexels.com/es-es/foto/primer-plano-de-una-carpeta-con-documentos-en-tono-sepia-32201000/  |  consulta: "file folder documents"
+hund3-01.jpg  <-  pozo-p-bpas-arriba\002.jpg  |  pexels (Pexels License)  |  autor: tiago alves  |  https://www.pexels.com/es-es/foto/mascotas-retrato-feliz-mullido-19653955/  |  consulta: "dog top view"
+hund4-01.jpg  <-  pozo-p-bpas-cinta\011.jpg  |  pexels (Pexels License)  |  autor: نهاية  |  https://www.pexels.com/es-es/foto/cinta-metrica-blanca-enrollada-en-fondo-oscuro-37588632/  |  consulta: "measuring tape"
+hund5-01.jpg  <-  pozo-p-bpas-gato\008.jpg  |  pexels (Pexels License)  |  autor: Marjorie Matias  |  https://www.pexels.com/es-es/foto/amor-animal-perro-mascota-16973784/  |  consulta: "cat walking"
+hund6-01.jpg  <-  pozo-p-bpas-arriba\012.jpg  |  pexels (Pexels License)  |  autor: Luis Rosero  |  https://www.pexels.com/es-es/foto/perro-mascota-feliz-sonriente-18775344/  |  consulta: "dog top view"
+banda-01.jpg  <-  pozo-p-bpas-corre\007.jpg  |  pexels (Pexels License)  |  autor: Elina Volkova  |  https://www.pexels.com/es-es/foto/naturaleza-campo-verano-jardin-28171115/  |  consulta: "dog running grass"
+cita-01.jpg  <-  pozo-p-bpas-paseo\011.jpg  |  pexels (Pexels License)  |  autor: Ludovic Delot  |  https://www.pexels.com/es-es/foto/adorable-chihuahua-con-correa-al-aire-libre-33489754/  |  consulta: "dog walking leash"
+mos1-01.jpg  <-  pozo-p-bpas-croqueta\009.jpg  |  pexels (Pexels License)  |  autor: Barking Royalty  |  https://www.pexels.com/es-es/foto/bol-tazon-cuenco-borde-12928244/  |  consulta: "dog kibble"
+mos2-01.jpg  <-  pozo-p-bpas-paseo\001.jpg  |  pexels (Pexels License)  |  autor: Ludovic Delot  |  https://www.pexels.com/es-es/foto/chihuahua-de-pie-con-correa-en-el-cesped-33471297/  |  consulta: "dog walking leash"
+mos3-01.jpg  <-  pozo-p-bpas-gato\003.jpg  |  pexels (Pexels License)  |  autor: Lara Celine  |  https://www.pexels.com/es-es/foto/animal-mascota-hierba-cesped-7391180/  |  consulta: "cat walking"
+mos4-01.jpg  <-  pozo-p-bpas-corre\012.jpg  |  pexels (Pexels License)  |  autor: 逸蜂 吴  |  https://www.pexels.com/es-es/foto/caniche-negro-jugueton-corriendo-sobre-el-cesped-38070275/  |  consulta: "dog running grass"
+mos5-01.jpg  <-  pozo-p-bpas-cuenco\008.jpg  |  pexels (Pexels License)  |  autor: Cup of  Couple  |  https://www.pexels.com/es-es/foto/naturaleza-muerta-vista-superior-espacio-para-texto-copy-space-8473516/  |  consulta: "dog food bowl"
+mos6-01.jpg  <-  pozo-p-bpas-gato\009.jpg  |  pexels (Pexels License)  |  autor: Jody Parks  |  https://www.pexels.com/es-es/foto/mascota-mono-hierba-cesped-7177620/  |  consulta: "cat walking"
+
+BRUMA (bruma-pag-0N.png y bruma-osc-0N.png, 30x20): las MISMAS fotos, recortadas a 3:2, reducidas y
+recoloreadas con C:\devs\demos\hacer-bruma.ps1 (clara >= 0,68 de luminancia / oscura <= 0,05). No suman fuentes.
+    pagina: cita-01.jpg, hund2-01.jpg, hund4-01.jpg, mos1-01.jpg, mos5-01.jpg   |   oscuras: port-01.jpg, banda-01.jpg, cita-01.jpg
+
+MAPA: iframe de Google Maps (embed publico, sin clave). No hay imagen de mapa.

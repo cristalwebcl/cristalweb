@@ -1,0 +1,547 @@
+/* ══════════════════════════════════════════════════════════════════════
+   Escuela de Conductores Los 80 — Maipú
+   Demo de CristalWeb. CSS plano, sin build, sin librerías.
+
+   IDENTIDAD — «TABLERO DE NOCHE»
+   Negro de tablero, blanco de rótulo y el ámbar de la aguja. Un
+   instrumento de auto visto de noche: todo es línea grabada y cifra.
+
+   LA REGLA DE ESTA HOJA: NI UNA SOMBRA NI UN DEGRADADO.
+   En todo el archivo no hay un solo `box-shadow`, `text-shadow`,
+   `drop-shadow` ni `gradient` (comprobado con grep). Los velos sobre
+   las fotos son rgba plano, los bordes son de 1 px y los acentos son
+   trazos o cifras. Un tablero de instrumentos no tiene resplandores:
+   tiene serigrafía sobre plástico negro y una aguja.
+
+   Es el INVERSO EXACTO, a propósito, de la 22 (Hospital Alto la
+   Florida, construida el mismo día): allá el ámbar NO rellena nada y
+   es todo halo y degradado —una lámpara—; acá el ámbar NO se derrama
+   nunca y es todo canto duro —una aguja—. Dos páginas oscuras con
+   acento cálido que se leen distinto a un metro de distancia porque la
+   mecánica es opuesta, no porque el hex lo sea.
+
+   EL HEX. `#FD7D0D` es 28° con 98 % de saturación y 52 % de
+   luminosidad: naranja de ampolleta de sodio. Deslinde con la 22
+   (`#E8921B`, 35° s82 l51): siete grados más rojo y dieciséis puntos
+   más saturado, o sea claramente NARANJA donde aquél es DORADO. Y con
+   los vecinos del registro en 25°-28°, que son todos más pálidos:
+   `#F0873E` (25° s86 l59), `#F0A05C` (28° s83 l65), `#F0A268`
+   (26° s82 l67). Ninguno llega a 98 % de saturación: es el más
+   encendido de la familia, que es lo que tiene que ser una aguja.
+   El negro es `#121110` —30° al 4 % de saturación, o sea neutro con un
+   punto de tibio— y no el gris-azul `#141C24` de la 22.
+
+   DESLINDE con la 15 (Escuela Ruta Chile, Maipú, mismo rubro y misma
+   comuna): aquélla es PAPEL `#F7F8F7` con verde de aprobado `#237A2A`,
+   clara, de señalética, y su pieza firma es la ruta que se dibuja.
+   Ésta es negra, de tablero, y contesta la pregunta contraria: no cómo
+   se llega, sino qué pasa si no se llega.
+
+   LOS TRES COLORES DEL SEMÁFORO son OBJETO, no paleta: el rojo
+   `#E23B22` y el verde `#3FB558` sólo existen dentro del dibujo del
+   semáforo de la portada y no tocan ni un botón, ni un borde, ni un
+   texto. Mismo criterio que la 20 con los esmaltes. Por eso no chocan
+   con el verde de aprobado de la 15.
+
+   TRÍO TIPOGRÁFICO
+   · Display: Pathway Extreme — 0 usos, y sin ninguna otra Pathway en
+     el registro. Grotesca ancha de cantos cuadrados, con cifras
+     geométricas: es la letra de un tablero digital moderno, no la de
+     un cartel. El nombre, para una escuela de conductores, tampoco
+     estorba.
+   · Cuerpo: Schibsted Grotesk ×6 — editorial y tranquila; al lado de
+     una display cuadrada no compite.
+   · Dato: Geist Mono ×7 — cifras tabulares parejas para las horas, las
+     fechas del dominio y el teléfono.
+
+   CONTRASTES MEDIDOS sobre esta página:
+     blanco #F5F6F7 sobre tablero #121110 ..... 17,3:1
+     medio  #9B9C9E sobre tablero #121110 ......  6,9:1
+     medio  #9B9C9E sobre panel   #1B1A18 ......  6,4:1
+     aguja  #FD7D0D sobre tablero #121110 ......  7,3:1
+     tablero #121110 sobre aguja #FD7D0D .......  7,3:1  (botón lleno)
+   ══════════════════════════════════════════════════════════════════════ */
+
+:root {
+  --tablero: #121110;    /* el plástico negro */
+  --tablero-2: #1B1A18;  /* el panel */
+  --linea: #2D2B28;      /* la serigrafía */
+  --blanco: #F5F6F7;
+  --medio: #9B9C9E;
+  --aguja: #FD7D0D;
+
+  /* Objeto, no paleta: sólo dentro del semáforo. */
+  --rojo: #E23B22;
+  --verde: #3FB558;
+
+  --ancho: 1160px;
+  --display: 'Pathway Extreme', system-ui, sans-serif;
+  --cuerpo: 'Schibsted Grotesk', system-ui, -apple-system, 'Segoe UI', sans-serif;
+  --mono: 'Geist Mono', ui-monospace, 'Consolas', monospace;
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+
+html { scroll-behavior: smooth; }
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+
+body {
+  margin: 0;
+  background: var(--tablero);
+  color: var(--blanco);
+  font-family: var(--cuerpo);
+  font-size: clamp(1rem, .96rem + .2vw, 1.08rem);
+  line-height: 1.62;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* height: auto o el atributo height del <img> gana y aspect-ratio se
+   ignora en silencio: las fotos salen larguísimas. */
+img { max-width: 100%; height: auto; display: block; }
+[hidden] { display: none; }
+
+a { color: var(--aguja); }
+a:focus-visible { outline: 3px solid var(--aguja); outline-offset: 3px; }
+
+.ancho { width: min(100% - 2.5rem, var(--ancho)); margin-inline: auto; }
+
+.rotulo {
+  margin: 0 0 .7rem;
+  font-family: var(--mono);
+  font-size: .74rem; letter-spacing: .18em; text-transform: uppercase;
+  color: var(--aguja);
+}
+
+.titulo {
+  font-family: var(--display); font-weight: 700;
+  font-size: clamp(2rem, 1.3rem + 3vw, 3.3rem);
+  line-height: 1.05; letter-spacing: -.01em;
+  margin: 0 0 1.1rem;
+}
+.titulo--chico { font-size: clamp(1.5rem, 1.1rem + 1.8vw, 2.2rem); }
+
+.sub {
+  font-family: var(--display); font-weight: 700;
+  font-size: clamp(1.4rem, 1.1rem + 1.2vw, 1.9rem);
+  margin: clamp(2.4rem, 5vw, 3.4rem) 0 1.2rem;
+}
+
+.entrada { max-width: 64ch; color: var(--medio); margin: 0 0 2rem; }
+.mini { font-size: .87rem; color: var(--medio); }
+.dato { font-family: var(--mono); font-variant-numeric: tabular-nums; }
+
+.ej { border-bottom: 1px dotted var(--medio); cursor: help; }
+.ej::after {
+  content: ' (ej.)';
+  font-family: var(--mono); font-size: .7em;
+  color: var(--medio); letter-spacing: .02em;
+}
+
+/* ── Botones: rectángulos duros, sin sombra ni degradado ─────────── */
+.bt {
+  display: inline-flex; align-items: center; justify-content: center;
+  padding: .85rem 1.5rem;
+  border: 1px solid transparent;
+  text-decoration: none;
+  font-family: var(--display); font-weight: 700;
+  font-size: 1.02rem; letter-spacing: .005em;
+  transition: background-color .18s linear, color .18s linear, border-color .18s linear;
+}
+.bt--lleno { background: var(--aguja); color: var(--tablero); }
+.bt--lleno:hover, .bt--lleno:focus-visible { background: var(--blanco); }
+.bt--linea { border-color: var(--linea); color: var(--blanco); }
+.bt--linea:hover, .bt--linea:focus-visible { border-color: var(--aguja); color: var(--aguja); }
+
+/* ── Banda de propuesta ──────────────────────────────────────────── */
+.propuesta { background: var(--tablero-2); border-bottom: 1px solid var(--linea); padding: .95rem 0; }
+.propuesta__in { display: grid; gap: .35rem; }
+.propuesta__q {
+  margin: 0;
+  font-family: var(--mono); font-size: .71rem;
+  letter-spacing: .1em; text-transform: uppercase; color: var(--aguja);
+}
+.propuesta__d { margin: 0; font-size: .93rem; color: var(--medio); max-width: 90ch; }
+.propuesta__d b { color: var(--blanco); }
+.propuesta .dato { color: var(--blanco); font-size: .9em; }
+
+/* ── Cabecera ─────────────────────────────────────────────────────
+   Va ARRIBA de la portada en el flujo, no encima. ── */
+.cab {
+  position: sticky; top: 0; z-index: 50;
+  background: rgba(18, 17, 16, .95);
+  border-bottom: 1px solid var(--linea);
+  transition: transform .3s ease;
+}
+@supports (backdrop-filter: blur(8px)) {
+  .cab { backdrop-filter: blur(8px); background: rgba(18, 17, 16, .84); }
+}
+.js .cab--oculta { transform: translateY(-105%); }
+.cab__in { display: flex; align-items: center; justify-content: space-between; gap: 1.4rem; min-height: 62px; padding: .5rem 0; }
+.cab__marca { display: inline-flex; align-items: center; gap: .7rem; text-decoration: none; color: var(--blanco); }
+/* La marca es una aguja: dos trazos, cero relleno. */
+.marca__c {
+  width: 16px; height: 16px; flex: none;
+  border: 2px solid var(--aguja);
+  border-radius: 50%;
+  position: relative;
+}
+.marca__c::after {
+  content: ''; position: absolute;
+  left: 50%; top: 1px; width: 2px; height: 6px;
+  background: var(--aguja);
+  transform: translateX(-50%) rotate(38deg);
+  transform-origin: bottom center;
+}
+.cab__txt { display: flex; flex-direction: column; font-family: var(--display); font-weight: 700; font-size: 1rem; line-height: 1.12; }
+.cab__sub {
+  font-family: var(--mono); font-weight: 400;
+  font-size: .63rem; letter-spacing: .13em; text-transform: uppercase;
+  color: var(--medio); margin-top: .18rem;
+}
+.cab__nav { display: flex; align-items: center; gap: 1.5rem; }
+.cab__nav a { color: var(--medio); text-decoration: none; font-size: .92rem; white-space: nowrap; }
+.cab__nav a:hover { color: var(--blanco); }
+.cab__tel {
+  font-family: var(--mono); font-variant-numeric: tabular-nums;
+  color: var(--aguja) !important;
+  border: 1px solid var(--aguja);
+  padding: .4rem .9rem;
+}
+.cab__tel:hover { background: var(--aguja); color: var(--tablero) !important; }
+@media (max-width: 920px) { .cab__nav a:not(.cab__tel) { display: none; } }
+@media (max-width: 420px) { .cab__txt { font-size: .88rem; max-width: 52vw; } }
+
+/* ── Portada ──────────────────────────────────────────────────────── */
+.portada { padding: clamp(3rem, 7vw, 6rem) 0 clamp(3rem, 6vw, 5rem); border-bottom: 1px solid var(--linea); }
+.portada__in { display: grid; grid-template-columns: 1.25fr .75fr; gap: clamp(2rem, 5vw, 4rem); align-items: center; }
+.portada__h1 {
+  font-family: var(--display); font-weight: 700;
+  font-size: clamp(2.5rem, 1.4rem + 5vw, 4.8rem);
+  line-height: .98; letter-spacing: -.02em;
+  margin: 0 0 1.2rem;
+}
+.portada__p { max-width: 48ch; color: var(--medio); margin: 0 0 1.8rem; }
+.portada__p b { color: var(--blanco); }
+.portada__bts { display: flex; flex-wrap: wrap; gap: .8rem; margin-bottom: 2rem; }
+.portada__cif { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: 2.2rem; }
+.portada__cif li { border-left: 1px solid var(--linea); padding-left: .9rem; }
+.cif__n {
+  display: block;
+  font-family: var(--mono); font-weight: 700; font-variant-numeric: tabular-nums;
+  font-size: 1.9rem; line-height: 1; color: var(--aguja);
+}
+.cif__u {
+  display: block; margin-top: .3rem;
+  font-family: var(--mono); font-size: .66rem;
+  letter-spacing: .14em; text-transform: uppercase; color: var(--medio);
+}
+
+/* ── ESCENA: el semáforo se enciende en secuencia y queda en verde ──
+   Cada lente son DOS círculos: el apagado, siempre, y el encendido
+   encima, que aparece y se apaga. Sin halo: un lente encendido es un
+   disco de color duro, igual que en la calle. ── */
+.escena { display: flex; flex-direction: column; align-items: center; gap: 1rem; }
+.sem { width: min(100%, 190px); height: auto; display: block; }
+.sem__poste { stroke: var(--linea); stroke-width: 6; }
+.sem__caja { fill: none; stroke: var(--linea); stroke-width: 3; }
+.sem__lente { fill: #1B1A18; stroke: var(--linea); stroke-width: 2; }
+.sem__on--r { fill: var(--rojo); }
+.sem__on--a { fill: var(--aguja); }
+.sem__on--v { fill: var(--verde); }
+
+/* Sin JavaScript queda el verde encendido y los otros dos apagados. */
+.sem__on--r, .sem__on--a { opacity: 0; }
+.sem__on--v { opacity: 1; }
+.js .escena .sem__on--v { opacity: 0; }
+
+.js .escena--va .sem__on--r { animation: sem-pasa .55s linear 0s 1 forwards; }
+.js .escena--va .sem__on--a { animation: sem-pasa .55s linear .5s 1 forwards; }
+.js .escena--va .sem__on--v { animation: sem-queda .4s linear 1s 1 forwards; }
+
+@keyframes sem-pasa  { 0% { opacity: 0 } 18% { opacity: 1 } 72% { opacity: 1 } 100% { opacity: 0 } }
+@keyframes sem-queda { to { opacity: 1 } }
+
+.escena__pie {
+  margin: 0; text-align: center;
+  font-family: var(--mono); font-size: .68rem;
+  letter-spacing: .16em; text-transform: uppercase; color: var(--medio);
+}
+
+@media (max-width: 860px) {
+  .portada__in { grid-template-columns: 1fr; }
+  /* A 375 px el semáforo SE ACUESTA y va ARRIBA del titular.
+     El giro no reordena la caja: un elemento rotado sigue ocupando el
+     alto que tenía, así que el SVG se saca del flujo y el contenedor
+     reserva a mano el alto de la versión acostada. Sin esto el semáforo
+     se sale por la izquierda y deja un hueco de 300 px debajo. */
+  .escena { order: -1; display: block; position: relative; height: 124px; margin-bottom: 2.6rem; }
+  .sem {
+    position: absolute; left: 50%; top: 50%;
+    width: 108px;
+    transform: translate(-50%, -50%) rotate(-90deg);
+  }
+  .escena__pie { position: absolute; left: 0; right: 0; bottom: -1.8rem; text-align: center; }
+}
+
+/* ── PIEZA FIRMA: ¿y si repruebo? ─────────────────────────────────── */
+.rep { padding: clamp(3.4rem, 7vw, 6rem) 0; }
+.rep__foto { margin: 0 0 clamp(2rem, 4vw, 3rem); }
+.rep__foto img { width: 100%; aspect-ratio: 3 / 2; object-fit: cover; }
+
+.caminos { display: grid; grid-template-columns: repeat(3, 1fr); gap: clamp(1rem, 2.4vw, 1.6rem); }
+.cam { padding: clamp(1.2rem, 2.4vw, 1.6rem); background: var(--tablero-2); border-top: 3px solid var(--linea); }
+.cam--v { border-top-color: var(--verde); }
+.cam--a { border-top-color: var(--aguja); }
+.cam--r { border-top-color: var(--rojo); }
+.cam__r {
+  margin: 0 0 .4rem;
+  font-family: var(--mono); font-size: .66rem;
+  letter-spacing: .16em; text-transform: uppercase; color: var(--medio);
+}
+.cam__t { margin: 0 0 .9rem; font-family: var(--display); font-weight: 700; font-size: 1.35rem; line-height: 1.1; }
+.cam__l { margin: 0; padding-left: 1.05rem; }
+.cam__l li { margin-bottom: .6rem; font-size: .93rem; color: var(--medio); }
+.cam__l li::marker { color: var(--linea); }
+@media (max-width: 900px) { .caminos { grid-template-columns: 1fr; } }
+
+.aviso {
+  margin: clamp(1.6rem, 3vw, 2.4rem) 0 0;
+  padding: 1.2rem 1.4rem;
+  border-left: 3px solid var(--aguja);
+  background: var(--tablero-2);
+  font-size: .94rem; color: var(--medio); max-width: 84ch;
+}
+.aviso b { color: var(--blanco); }
+
+.pasos { list-style: none; margin: 0; padding: 0; display: grid; gap: 0; }
+.pasos li {
+  display: grid; grid-template-columns: 4.5rem 1fr; gap: 1.2rem;
+  padding: 1.2rem 0; border-top: 1px solid var(--linea);
+}
+.pasos li:last-child { border-bottom: 1px solid var(--linea); }
+.pasos__n {
+  font-family: var(--mono); font-weight: 700; font-variant-numeric: tabular-nums;
+  font-size: 1.6rem; line-height: 1; color: var(--aguja);
+}
+.pasos div { color: var(--medio); }
+.pasos b { color: var(--blanco); }
+@media (max-width: 520px) { .pasos li { grid-template-columns: 1fr; gap: .4rem; } }
+
+/* ── Tajo ─────────────────────────────────────────────────────────── */
+.tajo { margin: 0; position: relative; }
+.tajo img { width: 100%; aspect-ratio: 2 / 1; object-fit: cover; }
+.tajo__c {
+  position: absolute; left: 0; right: 0; bottom: 0;
+  padding: 1.1rem 1.25rem;
+  text-align: center;
+  background: rgba(18, 17, 16, .88);
+  border-top: 1px solid var(--linea);
+  font-family: var(--display); font-weight: 700;
+  font-size: clamp(1rem, .8rem + 1vw, 1.5rem);
+}
+@media (max-width: 640px) { .tajo img { aspect-ratio: 4 / 3; } }
+
+/* ── Las clases: una tabla de instrumento ─────────────────────────── */
+.clases { padding: clamp(3.4rem, 7vw, 6rem) 0 clamp(2rem, 4vw, 3rem); }
+.tabla { border-top: 1px solid var(--linea); }
+.fila {
+  display: grid; grid-template-columns: 7rem 1.3fr 1.3fr 5rem;
+  gap: 1.2rem; padding: 1.1rem 0;
+  border-bottom: 1px solid var(--linea);
+  align-items: start;
+}
+.fila > span:not(.fila__t) { color: var(--medio); font-size: .94rem; }
+.fila--cab > span {
+  font-family: var(--mono); font-size: .66rem;
+  letter-spacing: .14em; text-transform: uppercase; color: var(--medio) !important;
+}
+.fila__t { font-family: var(--display); font-weight: 700; font-size: 1.12rem; color: var(--blanco); }
+.fila .dato { color: var(--aguja); }
+@media (max-width: 860px) {
+  .fila { grid-template-columns: 1fr; gap: .35rem; padding: 1.2rem 0; }
+  .fila--cab { display: none; }
+  .fila .dato { justify-self: start; }
+}
+
+/* ── Mitades ──────────────────────────────────────────────────────── */
+.mitades {
+  display: grid; grid-template-columns: 1fr 1fr;
+  align-items: center; gap: clamp(2rem, 5vw, 4.5rem);
+  width: min(100% - 2.5rem, var(--ancho));
+  margin: clamp(3rem, 6vw, 5rem) auto;
+}
+.mitades__foto { margin: 0; }
+.mitades__foto img { width: 100%; aspect-ratio: 4 / 3; object-fit: cover; }
+.mitades__texto p { color: var(--medio); }
+.huecos { display: grid; gap: .7rem; margin: 1.6rem 0 1rem; }
+.hueco { display: flex; align-items: center; gap: .9rem; }
+.hueco__m { width: 44px; height: 44px; flex: none; border: 1px dashed var(--linea); background: var(--tablero-2); }
+.hueco p { margin: 0; font-size: .92rem; }
+@media (max-width: 880px) { .mitades { grid-template-columns: 1fr; } }
+
+/* ── Cita ─────────────────────────────────────────────────────────── */
+.cita { margin: 0; position: relative; }
+.cita img { width: 100%; aspect-ratio: 2200 / 1240; object-fit: cover; }
+.cita__q {
+  position: absolute; inset: 0;
+  display: flex; align-items: center; justify-content: center;
+  margin: 0; padding: 1.5rem;
+  background: rgba(18, 17, 16, .78);
+}
+.cita__q p {
+  margin: 0; max-width: 28ch;
+  font-family: var(--display); font-weight: 700;
+  font-size: clamp(1.2rem, .9rem + 1.9vw, 2.3rem);
+  line-height: 1.14; text-align: center;
+}
+@media (max-width: 640px) { .cita img { aspect-ratio: 3 / 4; } }
+
+/* ── Dónde está (con telón) ───────────────────────────────────────── */
+.con-telon { position: relative; overflow: hidden; padding: clamp(3.4rem, 7vw, 6rem) 0; }
+.telon { position: absolute; inset: 0; z-index: 0; }
+.telon img { width: 100%; height: 100%; object-fit: cover; opacity: .5; }
+/* Velo plano, del color DE la página: sin degradado, como todo acá. */
+.telon::after { content: ''; position: absolute; inset: 0; background: rgba(18, 17, 16, .88); }
+.con-telon > .ancho { position: relative; z-index: 1; }
+.datos { list-style: none; margin: 0; padding: 0; max-width: 46rem; }
+.datos li { display: grid; grid-template-columns: 12rem 1fr; gap: 1rem; padding: .85rem 0; border-top: 1px solid var(--linea); }
+.datos li:last-child { border-bottom: 1px solid var(--linea); }
+.datos__r {
+  font-family: var(--mono); font-size: .68rem;
+  letter-spacing: .13em; text-transform: uppercase; color: var(--medio); padding-top: .2rem;
+}
+.datos__v { color: var(--blanco); }
+.datos__v a { text-decoration: none; }
+@media (max-width: 620px) { .datos li { grid-template-columns: 1fr; gap: .25rem; } }
+
+/* ── Mosaico ──────────────────────────────────────────────────────── */
+.mos { padding: clamp(3rem, 6vw, 5rem) 0 clamp(2rem, 4vw, 3rem); }
+.mos__grilla {
+  display: grid; grid-template-columns: repeat(3, 1fr); gap: .5rem;
+  width: min(100% - 2.5rem, 1320px); margin-inline: auto;
+}
+.mos__p { margin: 0; overflow: hidden; }
+.mos__p img {
+  width: 100%; aspect-ratio: 4 / 3; object-fit: cover;
+  filter: saturate(.75) brightness(.8);
+  transition: filter .3s linear;
+}
+.mos__p:hover img { filter: saturate(1) brightness(1); }
+.mos__pie { margin: 1.4rem auto 0; font-size: .86rem; color: var(--medio); max-width: 76ch; }
+.mos__pie b { color: var(--blanco); }
+@media (max-width: 900px) { .mos__grilla { grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 520px) { .mos__grilla { grid-template-columns: 1fr; } }
+
+/* ── Contacto ─────────────────────────────────────────────────────── */
+.contacto { padding: clamp(3rem, 6vw, 5rem) 0; border-top: 1px solid var(--linea); }
+.contacto__grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1.6rem; }
+.contacto__b { border-top: 2px solid var(--linea); padding-top: 1rem; }
+.contacto__b:first-child { border-top-color: var(--aguja); }
+.contacto__r {
+  margin: 0 0 .4rem;
+  font-family: var(--mono); font-size: .66rem;
+  letter-spacing: .14em; text-transform: uppercase; color: var(--medio);
+}
+.contacto__v { margin: 0 0 .5rem; font-size: 1.02rem; color: var(--blanco); }
+.contacto__v a { text-decoration: none; }
+@media (max-width: 900px) { .contacto__grid { grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 480px) { .contacto__grid { grid-template-columns: 1fr; } }
+
+/* ── Para el dueño ────────────────────────────────────────────────── */
+.dueno { padding: clamp(3rem, 6vw, 5rem) 0; background: var(--tablero-2); border-top: 1px solid var(--linea); }
+.dueno__cols { display: grid; grid-template-columns: 1fr 1fr; gap: clamp(1.6rem, 4vw, 3rem); }
+.dueno__cols h3 { margin: 0 0 .7rem; font-family: var(--display); font-weight: 700; font-size: 1.3rem; color: var(--aguja); }
+.dueno__cols p { margin: 0 0 1rem; color: var(--medio); font-size: .97rem; }
+.dueno__cols b { color: var(--blanco); }
+.dueno .dato { color: var(--blanco); font-size: .92em; }
+.dueno__pie { margin: 1.8rem 0 0; font-size: .85rem; color: var(--medio); }
+.dueno__pie b { color: var(--blanco); }
+@media (max-width: 820px) { .dueno__cols { grid-template-columns: 1fr; } }
+
+/* ── Pie ──────────────────────────────────────────────────────────── */
+.pie { padding: 2rem 0 6rem; border-top: 1px solid var(--linea); }
+.pie__in p { margin: 0 0 .35rem; font-size: .85rem; color: var(--medio); }
+.pie__cw { font-family: var(--mono); font-size: .73rem !important; letter-spacing: .03em; }
+
+/* ── Apariciones ──────────────────────────────────────────────────── */
+.js .rev > * { opacity: 0; transform: translateY(12px); }
+.js .rev.rev--on > * { opacity: 1; transform: none; transition: opacity .45s linear, transform .45s ease; }
+.js .rev.rev--on > *:nth-child(2) { transition-delay: .06s; }
+.js .rev.rev--on > *:nth-child(3) { transition-delay: .12s; }
+.js .rev.rev--on > *:nth-child(4) { transition-delay: .18s; }
+.js .rev.rev--on > *:nth-child(5) { transition-delay: .24s; }
+.js .rev.rev--on > *:nth-child(6) { transition-delay: .3s; }
+
+/* ── Menos movimiento ─────────────────────────────────────────────── */
+@media (prefers-reduced-motion: reduce) {
+  .js .escena .sem__on--r, .js .escena .sem__on--a { opacity: 0; animation: none; }
+  .js .escena .sem__on--v { opacity: 1; animation: none; }
+  .mos__p:hover img { filter: saturate(.75) brightness(.8); }
+  .js .rev > * { opacity: 1; transform: none; }
+}
+
+/* ── MAPA DE UBICACION ──────────────────────────────────────────────
+   Imagen propia con mosaicos de OpenStreetMap pegados: la CSP prohibe
+   pedir nada a un tercero, asi que un iframe de Google Maps quedaria en
+   blanco SIN dar un solo error. El "Como llegar" si es un enlace, y un
+   enlace no lo bloquea nada.
+   Los colores salen de currentColor a proposito: asi el bloque se adapta
+   a la paleta de cada demo sin conocerla y sin chocar con ella.
+   La atribucion a OpenStreetMap la exige su licencia (ODbL). */
+.mapa-sec { padding: clamp(2.5rem, 6vw, 4.5rem) 0; }
+.mapa {
+  /* Casi siempre el mapa queda como hijo DIRECTO de la seccion, fuera del
+     contenedor .ancho: sin este ancho maximo se va de borde a borde y el
+     pie del mapa arranca pegado al filo de la pantalla. Se usa la variable
+     de la demo si existe, y 1100 px si no. */
+  width: min(100% - 2.5rem, var(--ancho, 1100px));
+  margin: 1.4rem auto 0;
+  border: 1px solid; border-color: color-mix(in srgb, currentColor 22%, transparent);
+  border-radius: 10px; overflow: hidden;
+}
+@supports not (color: color-mix(in srgb, red 50%, blue)) { .mapa { border-color: rgba(128, 128, 128, .35); } }
+.mapa img { display: block; width: 100%; height: auto; aspect-ratio: 16 / 10; object-fit: cover; }
+.mapa__pie {
+  display: flex; flex-wrap: wrap; align-items: center; gap: .4rem 1rem;
+  padding: .75rem .9rem;
+  font-size: .86em; line-height: 1.45;
+  border-top: 1px solid; border-top-color: color-mix(in srgb, currentColor 22%, transparent);
+}
+@supports not (color: color-mix(in srgb, red 50%, blue)) { .mapa__pie { border-top-color: rgba(128, 128, 128, .35); } }
+.mapa__pie b { font-weight: 700; }
+.mapa__ir { color: inherit; font-weight: 700; text-decoration: underline; min-height: 44px; display: inline-flex; align-items: center; }
+.mapa__cred { width: 100%; font-size: .84em; opacity: .8; }
+.mapa__cred a { color: inherit; }
+/* ── BOTON FLOTANTE DE CONTACTO ─────────────────────────────────────
+   56 px de alto, por encima del minimo tactil de 44. Los colores de
+   marca van a proposito: se reconocen sin leerlos, y eso es lo que hace
+   que se toquen. Se ve SIEMPRE por defecto; el JS solo lo aparta sobre
+   la portada. Al reves, un fallo del script se llevaria el CTA principal. */
+.flota {
+  position: fixed;
+  right: max(1rem, env(safe-area-inset-right, 0px));
+  bottom: max(1rem, env(safe-area-inset-bottom, 0px));
+  z-index: 60;
+  display: inline-flex; align-items: center; gap: .55rem;
+  height: 56px; padding: 0 1.15rem 0 1rem;
+  border-radius: 999px;
+  text-decoration: none;
+  font-family: var(--cuerpo, system-ui, sans-serif);
+  font-size: .95rem; font-weight: 700; line-height: 1;
+  border: 3px solid var(--tablero);
+  transition: opacity .28s ease, transform .28s ease, border-color .18s linear;
+}
+.flota--wa { background: #25D366; color: #07310F; }
+.flota__i { width: 26px; height: 26px; fill: currentColor; flex: none; }
+.flota:hover, .flota:focus-visible { transform: translateY(-2px); border-color: var(--aguja); }
+.js .flota--arriba { opacity: 0; transform: translateY(14px) scale(.94); pointer-events: none; }
+
+@media (max-width: 520px) {
+  .flota { width: 56px; padding: 0; justify-content: center; }
+  .flota__t { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .flota { transition: opacity .28s ease; }
+  .flota:hover, .flota:focus-visible { transform: none; }
+  .js .flota--arriba { transform: none; }
+}

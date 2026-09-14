@@ -1,0 +1,22 @@
+FUENTES DE LAS IMAGENES - Hospital Veterinario Integravet Rehecha el 13-09-2026 (presentacion antes que texto). Fotos de REFERENCIA de bancos libres: ninguna es del local; las verdaderas las tiene que mandar el negocio. 
+port-01.jpg  <-  pozo-p-iv-rx\012.jpg  |  pexels (Pexels License)  |  autor: PURPLE24  |  https://www.pexels.com/es-es/foto/hospital-medicina-equipo-cuidado-de-la-salud-7617612/  |  consulta: "veterinary x-ray"
+hund1-01.jpg  <-  pozo-p-iv-esteto\009.jpg  |  pexels (Pexels License)  |  autor: PubPro  |  https://www.pexels.com/es-es/foto/adorable-perro-marron-tumbado-en-el-cesped-en-costa-rica-35289637/  |  consulta: "stethoscope dog"
+hund2-01.jpg  <-  pozo-p-iv-rx\010.jpg  |  pexels (Pexels License)  |  autor: Ivan S  |  https://www.pexels.com/es-es/foto/manos-lesion-resultado-diagnostico-4989192/  |  consulta: "veterinary x-ray"
+hund3-01.jpg  <-  pozo-p-iv-lab\011.jpg  |  pexels (Pexels License)  |  autor: Jorge Chan  |  https://www.pexels.com/es-es/foto/microscopio-24293768/  |  consulta: "microscope laboratory"
+hund4-01.jpg  <-  pozo-p-iv-pabellon\010.jpg  |  pexels (Pexels License)  |  autor: Кайрат Сатдиков  |  https://www.pexels.com/es-es/foto/lampara-techo-clinica-hospital-10954719/  |  consulta: "surgery room lamp"
+hund5-01.jpg  <-  pozo-p-iv-esteto\001.jpg  |  pexels (Pexels License)  |  autor: Eduardo López  |  https://www.pexels.com/es-es/foto/cachorro-sentado-16618524/  |  consulta: "stethoscope dog"
+hund6-01.jpg  <-  pozo-p-iv-vacuna\003.jpg  |  pexels (Pexels License)  |  autor: Thirdman  |  https://www.pexels.com/es-es/foto/vacuna-para-el-covid-19-5922100/  |  consulta: "vaccine syringe vial"
+banda-01.jpg  <-  pozo-p-iv-pucon\004.jpg  |  pexels (Pexels License)  |  autor: ATHENEA CODJAMBASSIS ROSSITTO  |  https://www.pexels.com/es-es/foto/volcan-25525989/  |  consulta: "Pucon volcano"
+cita-01.jpg  <-  pozo-p-iv-perro\007.jpg  |  pexels (Pexels License)  |  autor: Florencia  Pérez  |  https://www.pexels.com/es-es/foto/border-collie-sonriente-tumbado-en-el-cesped-verde-al-aire-libre-33710380/  |  consulta: "dog lying grass"
+mos1-01.jpg  <-  pozo-p-iv-gato\008.jpg  |  pexels (Pexels License)  |  autor: Nhà văn  |  https://www.pexels.com/es-es/foto/observando-gatos-domesticos-jugando-alegremente-bajo-la-calida-luz-del-sol-de-la-manana-33300588/  |  consulta: "cat sleeping blanket"
+mos2-01.jpg  <-  pozo-p-iv-pabellon\011.jpg  |  pexels (Pexels License)  |  autor: Arthur  Uzoagba  |  https://www.pexels.com/es-es/foto/lampara-profesional-salud-hospital-26108454/  |  consulta: "surgery room lamp"
+mos3-01.jpg  <-  pozo-p-iv-venda\007.jpg  |  pexels (Pexels License)  |  autor: Heber Vazquez  |  https://www.pexels.com/es-es/foto/mujer-mano-animal-perro-18781242/  |  consulta: "dog paw bandage"
+mos4-01.jpg  <-  pozo-p-iv-perro\009.jpg  |  pexels (Pexels License)  |  autor: Bianca Beltrán  |  https://www.pexels.com/es-es/foto/campo-animal-perro-mono-15794988/  |  consulta: "dog lying grass"
+mos5-01.jpg  <-  pozo-p-iv-gato\009.jpg  |  pexels (Pexels License)  |  autor: Magalie Parise  |  https://www.pexels.com/es-es/foto/charla-alegre-30667925/  |  consulta: "cat sleeping blanket"
+mos6-01.jpg  <-  pozo-p-iv-pucon\012.jpg  |  pexels (Pexels License)  |  autor: ATHENEA CODJAMBASSIS ROSSITTO  |  https://www.pexels.com/es-es/foto/volcan-25526008/  |  consulta: "Pucon volcano"
+
+BRUMA (bruma-pag-0N.png y bruma-osc-0N.png, 30x20): las MISMAS fotos, recortadas a 3:2, reducidas y
+recoloreadas con C:\devs\demos\hacer-bruma.ps1 (clara >= 0,68 de luminancia / oscura <= 0,05). No suman fuentes.
+    pagina: port-01.jpg, mos2-01.jpg, banda-01.jpg, hund3-01.jpg, hund6-01.jpg, mos1-01.jpg, mos5-01.jpg, hund4-01.jpg   |   oscuras: port-01.jpg, banda-01.jpg, mos2-01.jpg
+
+MAPA: iframe de Google Maps (embed publico, sin clave). No hay imagen de mapa.

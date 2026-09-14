@@ -174,6 +174,7 @@ a { color: var(--rojo-txt); }
 }
 .cab__marca {
   display: flex; align-items: center; gap: .7rem;
+  min-height: 44px;                 /* objetivo tactil */
   text-decoration: none; color: inherit; margin-right: auto;
 }
 .cab__nombre {
@@ -211,6 +212,7 @@ a { color: var(--rojo-txt); }
 
 .cab__nav { display: flex; gap: 1.4rem; flex: 0 0 auto; }
 .cab__nav a {
+  position: relative;
   font-family: var(--dato);
   font-size: .7rem;
   text-transform: uppercase;
@@ -221,11 +223,23 @@ a { color: var(--rojo-txt); }
   border-bottom: 1px solid transparent;
   white-space: nowrap;
 }
+/* El ancla mide 21 px de alto y el minimo de la casa son 44. No se sube
+   con min-height porque el filete del hover se despegaria del texto: se
+   agranda el AREA de toque con un ::before invisible centrado. */
+.cab__nav a::before {
+  content: ""; position: absolute;
+  left: 0; right: 0; top: 50%;
+  height: 44px; transform: translateY(-50%);
+}
 .cab__nav a:hover { color: var(--rojo-txt); border-bottom-color: var(--rojo-txt); }
 @media (max-width: 58rem) { .cab__nav { display: none; } }
 
 /* T1 — en la cabecera */
 .cab__tel {
+  /* En una pagina de urgencia este es el enlace que mas importa: va con
+     los 44 px de alto minimos, no con los 29 que daba el texto solo. */
+  display: flex; flex-direction: column; justify-content: center; align-items: flex-end;
+  min-height: 44px;
   text-align: right; text-decoration: none; line-height: 1.15;
   padding-left: 1.1rem; border-left: 1px solid var(--linea-osc);
   flex: 0 0 auto;
@@ -258,11 +272,18 @@ a { color: var(--rojo-txt); }
 /* ── EL RESPLANDOR QUE LATE ── */
 .resplandor {
   position: absolute;
-  left: -20%; right: -20%; top: -34%;
-  height: 62%;
+  left: -20%; right: -20%; top: -30%;
+  height: 78%;
   z-index: 1; pointer-events: none;
-  background: radial-gradient(60% 100% at 50% 100%,
-    rgba(224, 58, 47, .30), rgba(224, 58, 47, 0) 72%);
+  /* El halo TIENE que llegar a alfa 0 antes del borde de su caja. Anclado
+     en el borde de abajo (at 50% 100%) llegaba vivo hasta ahi y el corte
+     dejaba una RAYA HORIZONTAL RECTA cruzando la portada entera, medida a
+     los 400 px: es el mismo bug del aura recortada con ::after. Por eso el
+     centro va arriba (30%) y el ultimo tramo muere en el 76% del radio,
+     bien dentro de la caja. El borde de arriba lo tapa la cabecera. */
+  background: radial-gradient(62% 74% at 50% 30%,
+    rgba(224, 58, 47, .34) 0%, rgba(224, 58, 47, .16) 44%,
+    rgba(224, 58, 47, 0) 76%);
 }
 .js .resplandor { animation: late 11s ease-in-out infinite; }
 /* Lentisimo y casi subliminal: se nota que esta, no se mira. */
@@ -311,7 +332,10 @@ a { color: var(--rojo-txt); }
 /* La tercera cifra MARCA: el telefono no esta al lado de las stats,
    es una de ellas. */
 .stat--tel dd { font-family: var(--dato); font-size: clamp(1.4rem, 4.6vw, 2.4rem); }
-.stat--tel a { color: var(--rojo-txt); text-decoration: none; }
+.stat--tel a {
+  display: inline-flex; align-items: center; min-height: 44px;  /* toque */
+  color: var(--rojo-txt); text-decoration: none;
+}
 .stat--tel a:hover { text-decoration: underline; }
 
 .bajada {
@@ -319,6 +343,102 @@ a { color: var(--rojo-txt); }
   color: var(--claro-2);
   max-width: min(92vw, 38rem);
   margin: 0;
+}
+
+/* ── EL POLVO EN EL RESPLANDOR — ambiente de portada ──
+   Esta demo no lleva video: el clip se reserva para los negocios mejor
+   valorados. El ambiente lo pone el CSS, no un mp4 de 1,8 MB.
+   Catorce motas subiendo lentisimo dentro del halo rojo del letrero:
+   es el polvo que se ve en un rayo de luz a las tres de la manana.
+   Vive SOLO en el tercio izquierdo, que es la zona donde la mascara ya
+   borro la foto: sobre la foto no se veria y encima la ensuciaria.
+   Va sin depender de .js — es CSS puro y funciona sin JavaScript.
+   Con prefers-reduced-motion se apaga entero (es lo intrusivo). */
+.polvo {
+  position: absolute; inset: 0;
+  z-index: 1; pointer-events: none; overflow: hidden;
+}
+.polvo span {
+  position: absolute; bottom: -4%;
+  width: 3px; height: 3px; border-radius: 50%;
+  background: rgba(255, 208, 200, .6);
+  opacity: 0;
+  animation: mota 26s linear infinite;
+}
+@keyframes mota {
+  0%   { opacity: 0;   transform: translate3d(0, 0, 0) scale(.6); }
+  10%  { opacity: .55; }
+  65%  { opacity: .3; }
+  100% { opacity: 0;   transform: translate3d(2.4rem, -86vh, 0) scale(1.2); }
+}
+/* posiciones, tamanos y retardos por nth-child: la CSP prohibe style="" */
+.polvo span:nth-child(1)  { left:  4%; animation-duration: 28s; animation-delay:   0s; }
+.polvo span:nth-child(2)  { left:  9%; animation-duration: 34s; animation-delay:  -4s; width: 2px; height: 2px; }
+.polvo span:nth-child(3)  { left: 14%; animation-duration: 24s; animation-delay:  -9s; }
+.polvo span:nth-child(4)  { left: 19%; animation-duration: 31s; animation-delay: -14s; width: 4px; height: 4px; }
+.polvo span:nth-child(5)  { left: 24%; animation-duration: 27s; animation-delay:  -2s; width: 2px; height: 2px; }
+.polvo span:nth-child(6)  { left: 29%; animation-duration: 36s; animation-delay: -19s; }
+.polvo span:nth-child(7)  { left: 34%; animation-duration: 25s; animation-delay:  -7s; width: 2px; height: 2px; }
+.polvo span:nth-child(8)  { left: 39%; animation-duration: 33s; animation-delay: -24s; }
+.polvo span:nth-child(9)  { left: 44%; animation-duration: 29s; animation-delay: -11s; width: 4px; height: 4px; }
+.polvo span:nth-child(10) { left: 49%; animation-duration: 38s; animation-delay: -30s; width: 2px; height: 2px; }
+.polvo span:nth-child(11) { left: 54%; animation-duration: 26s; animation-delay: -16s; }
+.polvo span:nth-child(12) { left: 58%; animation-duration: 32s; animation-delay:  -5s; width: 2px; height: 2px; }
+.polvo span:nth-child(13) { left: 62%; animation-duration: 30s; animation-delay: -21s; }
+.polvo span:nth-child(14) { left: 12%; animation-duration: 40s; animation-delay: -27s; width: 2px; height: 2px; }
+@media (prefers-reduced-motion: reduce) { .polvo { display: none; } }
+
+/* ═══════════ LAS CUATRO CIFRAS ═══════════
+   Prueba social · inventario de la propia pagina · argumento · herida.
+   Solo cuenta la primera, que es la que costo verificar. */
+.cifras {
+  background: var(--madrugada-3);
+  color: var(--blanco);
+  padding: clamp(2.6rem, 7vh, 4.4rem) clamp(1.25rem, 5vw, 4rem);
+  border-top: 1px solid var(--linea-osc);
+}
+.cifras__titulo {
+  font-family: var(--display);
+  font-size: clamp(1.15rem, 2.6vw, 1.6rem);
+  line-height: 1.15;
+  margin: 0 0 2rem;
+  max-width: 30ch;
+  color: var(--blanco);
+}
+.cifras__lista {
+  list-style: none; margin: 0; padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(12.5rem, 1fr));
+  gap: 2rem clamp(1.6rem, 4vw, 3rem);
+}
+.cifras__lista b {
+  display: block;
+  font-family: var(--display);
+  font-size: clamp(2.6rem, 6.5vw, 4rem);
+  line-height: .95;
+  color: var(--blanco);
+  font-variant-numeric: tabular-nums;
+}
+.cifras__lista span {
+  display: block; margin-top: .7rem;
+  font-family: var(--dato);
+  font-size: .68rem; letter-spacing: .1em;
+  text-transform: uppercase;
+  color: var(--claro-2);      /* 6,2:1 sobre el #223252 de esta banda */
+  line-height: 1.7;
+  max-width: 15rem;
+}
+/* EL CERO HUECO — la herida dibujada como lo que es: un vacio.
+   El trazo va en #EFF3F7 puro sobre #223252: 11,4:1. El auditor de
+   contraste va a leer color:transparent y dar un falso 1,00:1; el
+   numero de verdad es ese. Y si el navegador no tiene text-stroke,
+   la regla de arriba deja el cero blanco solido y se lee igual. */
+.cifra--hueca b { color: var(--blanco); }
+@supports (-webkit-text-stroke: 2px #000) {
+  .cifra--hueca b {
+    color: transparent;
+    -webkit-text-stroke: 2px #EFF3F7;
+  }
 }
 
 /* ═══════════ LOS PRIMEROS CINCO MINUTOS ═══════════ */
@@ -336,8 +456,16 @@ a { color: var(--rojo-txt); }
   margin-bottom: .8rem;
 }
 .antetitulo--claro { color: var(--rojo-txt); }
+/* EN «LOS CINCO MINUTOS» EL FONDO NO ES EL BLANCO DECLARADO.
+   Esa seccion lleva telon (.15) Y aura encima del mismo blanco: los dos
+   juntos bajan el fondo del cuarto de arriba —justo donde va el rotulo—
+   hasta rgb(132,155,172), medido pixel a pixel sobre la pagina servida.
+   Ahi el gris secundario daba 2,58:1, no los 6,69:1 que canta cualquier
+   auditor que lea el background DECLARADO. Con la tinta son 7,5:1 en el
+   peor punto de la seccion. */
+.cinco .antetitulo { color: var(--tinta); }
 
-.cinco h2, .urgencia h2 {
+.cinco h2, .urgencia h2, .llevar h2, .datos h2 {
   font-size: clamp(2rem, 5.4vw, 3.4rem);
   line-height: 1.06;
   margin-bottom: 1.4rem;
@@ -396,12 +524,49 @@ a { color: var(--rojo-txt); }
 /* El fondo decide el tono. */
 .portada .falta, .urgencia .falta { color: var(--rojo-txt); border-bottom-color: var(--rojo-txt); }
 
+/* ═══════════ QUÉ LLEVAR CUANDO SALGA ═══════════
+   El «que traer» del rubro salud. Va CLARA a proposito: parte una
+   tirada de tres bandas oscuras seguidas (mitades, urgencia, cita) que
+   dejaba la mitad de la pagina en un tunel. Y trae el tercer nivel de
+   luz de la casa: fichas blanco puro sobre el #EFF3F7 de la seccion. */
+.llevar {
+  background: var(--blanco);
+  color: var(--tinta);
+  padding: clamp(3.5rem, 10vh, 6.5rem) clamp(1.25rem, 5vw, 4rem);
+}
+.llevar > * { max-width: min(100%, 62rem); }
+.fichas {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+  gap: 1.1rem;
+  margin: 0 0 1.8rem;
+  max-width: min(100%, 62rem);
+}
+.ficha {
+  background: #FFFFFF;
+  border-left: 3px solid var(--linea);
+  padding: 1.1rem 1.2rem 1.2rem;
+}
+.ficha__n {
+  font-family: var(--dato);
+  font-size: .7rem; letter-spacing: .18em;
+  color: var(--rojo-osc);          /* 5,9:1 sobre el blanco de la ficha */
+  margin: 0 0 .5rem;
+}
+.ficha h3 { font-size: 1.25rem; margin: 0 0 .45rem; }
+.ficha p { margin: 0; font-size: .94rem; color: var(--tinta-2); }
+
 /* ═══════════ QUÉ ES URGENCIA ═══════════ */
 .urgencia {
   background: var(--madrugada-2);
   padding: clamp(3.5rem, 10vh, 7rem) clamp(1.25rem, 5vw, 4rem);
 }
-.urgencia__cuerpo { max-width: min(100%, 46rem); }
+/* El mismo carril que .cinco, .llevar y .datos (62 rem). Con 46 rem la
+   banda terminaba en el 56 % del ancho y a 1440 px quedaban 640 px de
+   azul vacío a la derecha, que es lo que hace que una página se lea
+   como plantilla estirada. Lo que se ensancha es el filete de cada
+   línea; el texto sigue midiendo lo mismo, capado más abajo. */
+.urgencia__cuerpo { max-width: min(100%, 62rem); }
 .urgencia .entrada { color: var(--claro-2); }
 
 .tres { list-style: none; margin: 0 0 1.8rem; padding: 0; }
@@ -413,6 +578,8 @@ a { color: var(--rojo-txt); }
   border-top: 1px solid var(--linea-osc);
 }
 .tr:last-child { border-bottom: 1px solid var(--linea-osc); }
+/* El texto no se estira con el filete: se queda en la medida de lectura. */
+.tr > div { max-width: min(100%, 46rem); }
 .tr__n {
   font-family: var(--dato);
   font-size: .86rem;
@@ -428,8 +595,162 @@ a { color: var(--rojo-txt); }
   border-left: 3px solid var(--rojo-txt);
   padding: .2rem 0 .2rem 1.1rem;
   margin: 0;
+  max-width: min(100%, 46rem);
 }
 .nota-honesta b { color: var(--blanco); }
+
+/* ═══════════ DÓNDE Y CUÁNDO — la ficha técnica ═══════════
+   Un <dl> con columna fija de 11 rem y filete por fila: se lee como
+   ficha tecnica, no como tabla de contacto. Va clara y justo antes del
+   cierre oscuro, para que el numero gigante llegue con el ojo
+   descansado. */
+.datos {
+  background: var(--blanco);
+  color: var(--tinta);
+  padding: clamp(3rem, 8vh, 5.5rem) clamp(1.25rem, 5vw, 4rem);
+}
+/* La ficha a la izquierda y el mapa a la derecha. A 1440 px la ficha
+   sola medía 54 rem y la mitad derecha de la banda quedaba en fondo
+   vacío: el mapa es justo lo que faltaba ahí, y además es el dato que
+   busca alguien que va manejando. */
+.datos__cols {
+  display: grid;
+  grid-template-columns: minmax(0, 1.1fr) minmax(0, .9fr);
+  gap: clamp(1.8rem, 4vw, 3.5rem);
+  align-items: start;
+  max-width: min(100%, 76rem);
+}
+@media (max-width: 900px) { .datos__cols { grid-template-columns: 1fr; } }
+
+.datos__caja { max-width: min(100%, 54rem); }
+.datos__lista { margin: 0 0 1.4rem; }
+.datos__lista > div {
+  display: grid;
+  grid-template-columns: 11rem minmax(0, 1fr);
+  gap: .3rem 1.2rem;
+  padding: .95rem 0;
+  border-bottom: 1px solid var(--linea);
+}
+.datos__lista > div:first-child { border-top: 1px solid var(--linea); }
+.datos__lista dt {
+  font-family: var(--dato);
+  font-size: .7rem; letter-spacing: .14em;
+  text-transform: uppercase;
+  color: var(--tinta-2);
+  padding-top: .25rem;
+}
+.datos__lista dd {
+  margin: 0;
+  color: var(--tinta);
+  font-variant-numeric: tabular-nums;
+  /* con el mapa al lado la columna se angostó y «2026» quedaba solo en
+     la última línea: pretty reparte y mata la viuda sin tocar nada más */
+  text-wrap: pretty;
+}
+.datos__lista dd a {
+  font-family: var(--dato);
+  font-size: 1.15rem; font-weight: 700;
+  color: var(--rojo-osc);
+  text-decoration: none;
+  border-bottom: 1px solid rgba(179, 36, 25, .4);
+  display: inline-flex; align-items: center; min-height: 44px;
+}
+.datos__lista dd a:hover { color: var(--tinta); border-bottom-color: var(--tinta); }
+/* La aclaración baja entera a la línea de abajo antes que partirse por
+   el guión de la fecha y dejar un «08-2026» suelto. Mide 263 px con esta
+   letra: cabe hasta en la columna de un teléfono de 320 px. */
+.datos__nota { color: var(--tinta-2); font-size: .9rem; white-space: nowrap; }
+.datos__pie {
+  margin: 0;
+  font-size: .92rem;
+  color: var(--tinta-2);
+  max-width: 52rem;
+}
+
+/* ── DATO DE EJEMPLO ──
+   La etiqueta viaja en el HTML (data-ejemplo) y dice QUE falta y DE
+   QUIEN depende. El fondo de la etiqueta tapa la linea punteada donde
+   la cruza, como una acotacion de plano tecnico. Esta version solo
+   aparece sobre --blanco: si algun dia se usa sobre fondo oscuro hay
+   que reescribir el background del ::after o sale con el color de otra
+   seccion. La version en linea de este mismo sistema es .falta. */
+.ej {
+  position: relative;
+  display: inline-block;
+  border: 1px dashed rgba(179, 36, 25, .5);
+  border-radius: 4px;
+  padding: .45rem .7rem .4rem;
+}
+.ej::after {
+  content: attr(data-ejemplo);
+  position: absolute; top: -.6rem; left: .6rem;
+  font-family: var(--dato);
+  font-size: .6rem; letter-spacing: .06em;
+  text-transform: uppercase;
+  color: var(--rojo-osc);          /* 5,9:1 sobre --blanco */
+  background: var(--blanco);
+  padding: 0 .35rem;
+  white-space: nowrap;
+  max-width: 92%;
+  overflow: hidden; text-overflow: ellipsis;
+}
+
+@media (max-width: 620px) {
+  .datos__lista > div { grid-template-columns: 1fr; }
+  .datos__lista dt { padding-top: 0; }
+}
+
+/* ── EL MAPA ──
+   Imagen propia, servida como cualquier foto: 768x768 de mosaicos de
+   OpenStreetMap pegados por demos\mapa-negocio.ps1, con el marcador
+   dibujado encima. Ni una petición a tile.openstreetmap.org ni a
+   google.com al cargar — eso es lo que la CSP prohíbe. El «Cómo llegar»
+   es un enlace normal, y navegar sí está permitido.
+   La tarjeta va en blanco puro sobre el #EFF3F7 de la sección: es el
+   tercer nivel de claridad de la casa, el mismo de las fichas de
+   «qué llevar». */
+.mapa {
+  margin: 0;
+  background: #FFFFFF;
+  border: 1px solid var(--linea);
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 12px 30px rgba(16, 26, 46, .13);
+}
+.mapa img {
+  display: block; width: 100%; height: auto;
+  aspect-ratio: 1 / 1; object-fit: cover;
+}
+.mapa__pie {
+  display: flex; flex-wrap: wrap;
+  justify-content: space-between; align-items: center;
+  gap: .3rem 1rem;
+  padding: .5rem .9rem .55rem;
+  border-top: 1px solid var(--linea);
+  font-family: var(--dato);
+  font-size: .72rem; letter-spacing: .03em;
+  line-height: 1.5;
+  color: var(--tinta-2);            /* 7,5:1 sobre el blanco de la tarjeta */
+}
+/* Atribución ODbL: OpenStreetMap la exige VISIBLE junto al mapa. */
+.mapa__pie a { color: var(--tinta-2); }
+/* Mismo recurso que el nav y las flechas: el filete es la gracia del
+   enlace, así que el área de toque se agranda por detrás con un
+   ::before invisible en vez de subir la altura de la línea. */
+.mapa__osm { position: relative; }
+.mapa__osm::before {
+  content: ""; position: absolute;
+  left: 0; right: 0; top: 50%;
+  height: 44px; transform: translateY(-50%);
+}
+.mapa__ir {
+  display: inline-flex; align-items: center; gap: .35rem;
+  min-height: 44px;
+  color: var(--rojo-osc);           /* 6,6:1 sobre el blanco de la tarjeta */
+  font-weight: 700; text-decoration: none;
+  white-space: nowrap;
+}
+.mapa__ir:hover { color: var(--tinta); }
 
 /* ═══════════ EL CIERRE — T1 ═══════════ */
 .cierre {
@@ -485,18 +806,28 @@ a { color: var(--rojo-txt); }
 .dueno p { color: var(--tinta-2); font-size: .96rem; margin: 0; }
 .dueno__cierre { display: flex; flex-wrap: wrap; gap: 1.5rem 2.5rem; margin: 0; }
 .flecha {
+  position: relative;
   font-weight: 700;
   color: var(--rojo-osc);
   text-decoration: none;
   border-bottom: 1px solid var(--rojo-osc);
   padding-bottom: 2px;
 }
+/* Mismo caso que el nav: el filete es la gracia del enlace, asi que el
+   area de toque se agranda por detras y el subrayado no se mueve. */
+.flecha::before {
+  content: ""; position: absolute;
+  left: 0; right: 0; top: 50%;
+  height: 44px; transform: translateY(-50%);
+}
 .flecha:hover { color: var(--tinta); border-bottom-color: var(--tinta); }
 
 .pie {
   background: var(--madrugada);
   color: var(--claro-2);
-  padding: 2rem clamp(1.25rem, 5vw, 4rem) 2.5rem;
+  /* el padding de abajo deja sitio al boton flotante de WhatsApp:
+     56 px de alto mas su margen, para que no tape el deslinde legal */
+  padding: 2rem clamp(1.25rem, 5vw, 4rem) 6rem;
   font-size: .85rem;
 }
 .pie p { margin: 0 0 .8rem; max-width: 72ch; }
@@ -507,10 +838,35 @@ a { color: var(--rojo-txt); }
 .js .rev { opacity: 0; transform: translateY(16px); }
 .js .rev.ok { opacity: 1; transform: none; transition: opacity .7s ease, transform .7s ease; }
 
+/* CASCADA DE HIJOS — para las grillas y las listas.
+   El CONTENEDOR se neutraliza y animan los hijos: si no se neutraliza,
+   contenedor e hijos bajan a la vez y el grupo entero se desplaza el
+   doble. El indice va por nth-child en el CSS y NUNCA en style="--i:3",
+   que la CSP bloquea sin decir nada. Seis hijos x 70 ms = 0,42 s: el
+   grupo entero aterriza dentro de medio segundo. */
+.js .cascada.rev      { opacity: 1; transform: none; transition: none; }
+.js .cascada.rev > *  { opacity: 0; transform: translateY(22px); }
+.js .cascada.rev.ok > * {
+  opacity: 1; transform: none;
+  transition: opacity .35s ease-out, transform .6s cubic-bezier(.2, .7, .2, 1);
+  transition-delay: calc(var(--i, 0) * 70ms);
+}
+.cascada > :nth-child(1) { --i: 0; }
+.cascada > :nth-child(2) { --i: 1; }
+.cascada > :nth-child(3) { --i: 2; }
+.cascada > :nth-child(4) { --i: 3; }
+.cascada > :nth-child(5) { --i: 4; }
+.cascada > :nth-child(6) { --i: 5; }
+.cascada > :nth-child(7) { --i: 6; }
+.cascada > :nth-child(8) { --i: 7; }
+
 @media (prefers-reduced-motion: reduce) {
   /* El resplandor queda FIJO y tenue: la señal de que hay turno sigue
      encendida, solo deja de respirar. */
   .js .resplandor { animation: none; opacity: .8; }
+  /* Los reveals NO se desplazan, pero SI siguen fundiendo: un fundido
+     no es movimiento, un salto de 22 px si. */
+  .js .rev, .js .cascada.rev > * { transform: none; }
 }
 
 /* ══════════════════════════════════════════════════════════════════
@@ -556,15 +912,30 @@ a { color: var(--rojo-txt); }
 .js .portada--foto.ok .portada__foto { opacity: 1; transition: opacity 1.1s ease; }
 .js .portada.rev,
 .js .portada.rev.ok { opacity: 1; transform: none; transition: none; }
+/* EN MOVIL LA PORTADA SE RECOMPONE ENTERA, no se rota la mascara y ya.
+   En escritorio la foto entra completa de ancho y la mascara lateral deja
+   al veterinario al 12 % de opacidad. En movil la caja era vertical y
+   `cover` recortaba dos tercios del ancho: el recorte caia justo sobre la
+   cara y salia un primer plano de un senor sonriendo a pantalla completa
+   encima del titular «A las tres de la manana» — medido a 500 px el
+   09-09-2026. Y correrlo de lado no arregla nada, porque la mascara solo
+   deja ver el TERCIO DE ARRIBA de la foto y ahi solo hay pared: el perro
+   vive abajo.
+   Solucion: la foto deja de ser fondo y pasa a ser una FRANJA arriba, con
+   la proporcion del original (3/2) mientras quepa, y con techo de 42svh
+   para que en un telefono apaisado no se coma la pantalla. El relleno de
+   arriba del texto se calcula con la MISMA formula, asi que el titular
+   arranca siempre justo debajo de la franja, a cualquier ancho. */
 @media (max-width: 860px) {
-  .portada--foto { padding-top: 36svh; }
+  .portada--foto { padding-top: calc(min(66.67vw, 42svh) + 1.4rem); }
+  .portada__foto { inset: 0 0 auto 0; height: min(66.67vw, 42svh); }
   .portada__foto img {
-    object-position: 50% 44%;
-    -webkit-mask-image: linear-gradient(180deg, #000 0%, #000 30%, rgba(0,0,0,.34) 58%, transparent 78%);
-            mask-image: linear-gradient(180deg, #000 0%, #000 30%, rgba(0,0,0,.34) 58%, transparent 78%);
+    object-position: 50% 46%;
+    -webkit-mask-image: linear-gradient(180deg, #000 0%, #000 46%, rgba(0,0,0,.42) 72%, transparent 96%);
+            mask-image: linear-gradient(180deg, #000 0%, #000 46%, rgba(0,0,0,.42) 72%, transparent 96%);
   }
   .portada__foto::after {
-    background: linear-gradient(180deg, rgba(16,26,46,0) 0%, rgba(16,26,46,.30) 42%, var(--madrugada) 70%);
+    background: linear-gradient(180deg, rgba(16,26,46,0) 0%, rgba(16,26,46,.22) 54%, var(--madrugada) 98%);
   }
 }
 
@@ -575,7 +946,10 @@ a { color: var(--rojo-txt); }
   display: block; width: 100%; height: 100%; object-fit: cover;
   /* Acá el desenfoque ES el efecto: la foto deja de leerse y queda la luz. */
   filter: blur(64px) saturate(1.45);
-  opacity: .38;
+  /* Bajada de .38 a .28: encima ya hay un telon al .15 sobre el mismo
+     blanco y los dos juntos dejaban el cuarto de arriba de la seccion en
+     un gris azulado sucio, no en un halo de color. */
+  opacity: .28;
   transform: scale(1.25);
   /* Y se apaga EN LA IMAGEN, no con un velo encima. Un ::after que pinta
      el fondo apaga solo DENTRO del div: en el borde de abajo queda un
@@ -657,8 +1031,19 @@ a { color: var(--rojo-txt); }
   font-size: clamp(1.8rem, 4.6vw, 3.2rem); line-height: 1.16;
   margin: 0; color: var(--blanco);
 }
+/* PLACA DEL ECO — medido sobre la pagina viva, no calculado.
+   El eco cae sobre la zona NITIDA de la foto (el pelaje claro del perro
+   bajo el velo) y ahi el #FF6B5E daba 3,50:1 contra rgb(60,68,84): no
+   llega al 4,5 que pide un texto de 13 px. El velo NO se sube —ensuciaria
+   la foto entera y es justo lo que el estandar prohibe—: se pone placa.
+   Con este .82 el peor caso, vuelto a medir pixel a pixel sobre la pagina
+   servida, sube a 5,24:1. */
 .cita__eco {
-  display: block; margin-top: 1.1rem;
+  display: inline-block; margin-top: 1.1rem;
+  padding: .32rem .75rem;
+  border-radius: 4px;
+  background: rgba(16, 26, 46, .82);
+  line-height: 1.5;
   font-family: var(--dato); font-size: .82rem; letter-spacing: .1em;
   text-transform: uppercase; color: var(--rojo-txt);
 }
@@ -704,19 +1089,36 @@ a { color: var(--rojo-txt); }
 }
 
 /* ── TAJO: LA FRANJA A SANGRE ──
-   Una franja de foto entre dos secciones. No lleva texto encima, asi
-   que no lleva velo: se ve la foto y punto. Es la aparicion que mas
-   llena la pagina por el peso que cuesta. */
+   Una franja de foto entre dos secciones, con una sola frase abajo.
+   El velo SUBE desde el borde inferior y arranca en alfa 0: los dos
+   tercios de arriba de la foto quedan a foco completo y solo se tine
+   la franja donde va el texto. Peor caso medido: blanco puro sobre el
+   .72 del velo con una foto blanca debajo = 6,8:1; abajo del todo,
+   sobre el .92, son 13,9:1. Pase lo que pase con la foto. */
 /* La clase es .tajo y no .banda ni .franja: hay demos que ya usan esos
    dos nombres para secciones propias, y chocaban. */
 .tajo {
-  position: relative; overflow: hidden;
-  height: clamp(180px, 30svh, 340px);
+  position: relative; overflow: hidden; margin: 0;
+  height: clamp(220px, 38svh, 420px);
   background: var(--madrugada-2);
 }
 .tajo img {
   display: block; width: 100%; height: 100%;
-  object-fit: cover; object-position: 50% 50%;
+  object-fit: cover; object-position: 50% 46%;
+}
+.tajo__txt {
+  position: absolute; inset: auto 0 0 0;
+  padding: 4rem clamp(1.25rem, 5vw, 4rem) 1.5rem;
+  background: linear-gradient(180deg,
+              rgba(16,26,46,0) 0%, rgba(16,26,46,.72) 55%,
+              rgba(16,26,46,.92) 100%);
+}
+.tajo__txt p {
+  margin: 0; max-width: 22ch;
+  color: #FFFFFF;
+  font-family: var(--display); font-weight: 500;
+  font-size: clamp(1.4rem, 3.4vw, 2.4rem);
+  line-height: 1.1;
 }
 @media (prefers-reduced-motion: no-preference) {
   .tajo img { animation: deriva-tajo 54s ease-in-out infinite alternate; }
@@ -785,7 +1187,11 @@ a { color: var(--rojo-txt); }
   display: block; width: 100%; height: 100%; object-fit: cover;
   transition: transform 1.1s cubic-bezier(.2,.7,.2,1), filter .6s ease;
 }
-.mos__p:nth-child(1), .mos__p:nth-child(6) { grid-column: span 2; }
+/* Con OCHO piezas la que rompe la reticula es SOLO la primera: ocho
+   celdas mas una doble son nueve unidades, tres filas exactas de tres.
+   Si ademas se dobla la sexta quedan diez y la ultima fila se pinta a
+   un tercio con dos huecos al lado. */
+.mos__p:nth-child(1) { grid-column: span 2; }
 @media (hover: hover) and (pointer: fine) {
   .mos__p:hover img { transform: scale(1.06); }
 }
@@ -799,10 +1205,73 @@ a { color: var(--rojo-txt); }
 .js .mos__p.ok:nth-child(4) { transition-delay: .18s; }
 .js .mos__p.ok:nth-child(5) { transition-delay: .24s; }
 .js .mos__p.ok:nth-child(6) { transition-delay: .30s; }
+.js .mos__p.ok:nth-child(7) { transition-delay: .36s; }
+.js .mos__p.ok:nth-child(8) { transition-delay: .42s; }
 @media (max-width: 760px) {
   .mos__grilla { grid-template-columns: 1fr 1fr; }
-  .mos__p:nth-child(1), .mos__p:nth-child(6) { grid-column: 1 / -1; }
+  /* a dos columnas: la primera y la ultima a ancho completo dejan
+     2 + 6 + 2 = diez unidades, cinco filas justas y ningun hueco. */
+  .mos__p:nth-child(1), .mos__p:nth-child(8) { grid-column: 1 / -1; }
 }
 @media (prefers-reduced-motion: reduce) {
   .js .mos__p { opacity: 1; transform: none; }
+}
+
+/* ══════════════════════════════════════════════════════════════════
+   WHATSAPP FLOTANTE
+   ══════════════════════════════════════════════════════════════════
+   Boton fijo abajo a la derecha. 56 px de alto: por encima de los 44
+   del minimo tactil. Verde de WhatsApp a proposito — se reconoce sin
+   leerlo, y eso es lo que hace que se toque. Texto #07310F sobre el
+   #25D366: 7,3:1.
+
+   El numero es el DEL NEGOCIO, el mismo de los tel:. El de CristalWeb
+   vive solo en la seccion del dueno; confundirlos manda los clientes
+   del cliente al telefono equivocado.
+
+   La direccion del truco importa: el boton se ve SIEMPRE por defecto y
+   el JS solo lo esconde mientras el visitante esta en la portada, para
+   no tapar el titular. Si el script no arranca, o si rescate.js quita
+   la clase .js, el boton queda visible, que es el estado que vende.
+
+   En movil sube 4,4 rem: abajo del todo vive la barra fija de
+   URGENCIA, que en una pagina de urgencia manda sobre el WhatsApp.
+   ══════════════════════════════════════════════════════════════════ */
+.wapp {
+  position: fixed;
+  right: max(1rem, env(safe-area-inset-right, 0px));
+  bottom: max(1rem, env(safe-area-inset-bottom, 0px));
+  z-index: 70;
+  display: inline-flex;
+  align-items: center;
+  gap: .55rem;
+  height: 56px;
+  padding: 0 1.15rem 0 1rem;
+  border-radius: 999px;
+  background: #25D366;
+  color: #07310F;
+  text-decoration: none;
+  font-family: var(--cuerpo);
+  font-size: .95rem;
+  font-weight: 700;
+  line-height: 1;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, .3), 0 2px 6px rgba(0, 0, 0, .2);
+  transition: opacity .28s ease, transform .28s ease, box-shadow .18s ease;
+}
+.wapp__i { width: 22px; height: 22px; flex: 0 0 auto; fill: currentColor; }
+.wapp:hover { box-shadow: 0 10px 26px rgba(0, 0, 0, .38), 0 2px 6px rgba(0, 0, 0, .22); }
+.wapp--arriba { opacity: 0; transform: translateY(1.2rem) scale(.94); pointer-events: none; }
+
+@media (max-width: 46rem) {
+  .wapp { bottom: calc(max(1rem, env(safe-area-inset-bottom, 0px)) + 4.4rem); }
+}
+@media (max-width: 520px) {
+  /* bajo 520 px queda el circulo: el rotulo se esconde sin sacarlo del
+     DOM, para que el lector de pantalla lo siga leyendo */
+  .wapp { padding: 0; width: 56px; justify-content: center; }
+  .wapp__t { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); }
+}
+@media (prefers-reduced-motion: reduce) {
+  .wapp { transition: opacity .28s ease; }
+  .wapp--arriba { transform: none; }
 }

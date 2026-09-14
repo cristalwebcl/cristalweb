@@ -70,3 +70,10 @@ La portada de esta demo no lleva velo sobre la foto. El fondo es lona
 con trama y el velo del mismo color la tapaba entera. La máscara de la
 imagen basta: la foto no existe donde va el titular y entra completa
 desde el 42% hacia la derecha.
+
+MAPA DE UBICACION — mapa-01.jpg
+  768 x 768 · zoom 14 · centro -39.567853, -72.007417
+  Mosaicos de OpenStreetMap pegados en una sola imagen, con el marcador
+  dibujado encima. Datos (c) OpenStreetMap contributors, licencia ODbL:
+  la atribucion tiene que ir VISIBLE junto al mapa, en el pie de la figura.
+  https://www.openstreetmap.org/copyright

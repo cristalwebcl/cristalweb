@@ -1,0 +1,22 @@
+FUENTES DE LAS IMAGENES - Ferreteria El Nico Rehecha el 14-09-2026 (presentacion antes que texto). Fotos de REFERENCIA de bancos libres: ninguna es del local; las verdaderas las tiene que mandar el negocio. 
+port-01.jpg  <-  pozo-p-nic-arena\006.jpg  |  pexels (Pexels License)  |  autor: cottonbro studio  |  https://www.pexels.com/es-es/foto/muro-de-hormigon-marron-y-gris-4888564/  |  consulta: "sand heap"
+hund1-01.jpg  <-  pozo-p-nic-radier\006.jpg  |  pexels (Pexels License)  |  autor: David Correa Franco  |  https://www.pexels.com/es-es/foto/fondo-de-pared-de-ladrillo-gris-texturizado-31672233/  |  consulta: "concrete patio floor"
+hund2-01.jpg  <-  pozo-p-nic-ripio\011.jpg  |  pexels (Pexels License)  |  autor: Gawtham Vijayan  |  https://www.pexels.com/es-es/foto/naturaleza-suelo-molido-piedras-21854544/  |  consulta: "gravel pile"
+hund3-01.jpg  <-  pozo-p-nic-herramienta\008.jpg  |  pexels (Pexels License)  |  autor: Stefan Donchev  |  https://www.pexels.com/es-es/foto/herramientas-talla-de-madera-cinceles-de-cerca-6075992/  |  consulta: "hand tools wall"
+hund4-01.jpg  <-  pozo-p-nic-brocha\004.jpg  |  pexels (Pexels License)  |  autor: Pavel Danilyuk  |  https://www.pexels.com/es-es/foto/pintar-pintura-cubo-pincel-6764236/  |  consulta: "paint brush bucket"
+hund5-01.jpg  <-  pozo-p-nic-herramienta\009.jpg  |  pexels (Pexels License)  |  autor: Nikita Belokhonov  |  https://www.pexels.com/es-es/foto/edificio-construccion-pared-muro-6964453/  |  consulta: "hand tools wall"
+hund6-01.jpg  <-  pozo-p-nic-carretilla\006.jpg  |  pexels (Pexels License)  |  autor: Alisa Tsvetova  |  https://www.pexels.com/es-es/foto/blanco-y-negro-escala-de-grises-carretilla-6913487/  |  consulta: "wheelbarrow construction"
+banda-01.jpg  <-  pozo-p-nic-ripio\005.jpg  |  pexels (Pexels License)  |  autor: Jan van der Wolf  |  https://www.pexels.com/es-es/foto/metal-cerca-valla-verja-23414804/  |  consulta: "gravel pile"
+cita-01.jpg  <-  pozo-p-nic-arena\007.jpg  |  pexels (Pexels License)  |  autor: Brett Sayles  |  https://www.pexels.com/es-es/foto/paisaje-arena-desierto-seco-9030895/  |  consulta: "sand heap"
+mos1-01.jpg  <-  pozo-p-nic-pala\004.jpg  |  pexels (Pexels License)  |  autor: Friar Archangel  |  https://www.pexels.com/es-es/foto/paisaje-arena-tierra-construccion-27523355/  |  consulta: "shovel sand"
+mos2-01.jpg  <-  pozo-p-nic-ladrillo\009.jpg  |  pexels (Pexels License)  |  autor: Alexander Kovalev  |  https://www.pexels.com/es-es/foto/textura-de-pared-de-ladrillo-rosa-con-superficie-rugosa-1585710/  |  consulta: "brick wall texture pink"
+mos3-01.jpg  <-  pozo-p-nic-ripio\007.jpg  |  pexels (Pexels License)  |  autor: Lory.captures / Lorenzo Messina  |  https://www.pexels.com/es-es/foto/nieve-nevar-paisaje-playa-28253366/  |  consulta: "gravel pile"
+mos4-01.jpg  <-  pozo-p-nic-herramienta\011.jpg  |  pexels (Pexels License)  |  autor: cottonbro studio  |  https://www.pexels.com/es-es/foto/equipo-naturaleza-muerta-carpinteria-destornilladores-7484802/  |  consulta: "hand tools wall"
+mos5-01.jpg  <-  pozo-p-nic-pala\009.jpg  |  pexels (Pexels License)  |  autor: Maria Turkmani  |  https://www.pexels.com/es-es/foto/hombre-arena-trabajando-tejanos-14825506/  |  consulta: "shovel sand"
+mos6-01.jpg  <-  pozo-p-nic-ladrillo\012.jpg  |  pexels (Pexels License)  |  autor: Ann H  |  https://www.pexels.com/es-es/foto/primer-plano-de-un-grafiti-rosa-vibrante-en-una-pared-urbana-34074297/  |  consulta: "brick wall texture pink"
+
+BRUMA (bruma-pag-0N.png y bruma-osc-0N.png, 30x20): las MISMAS fotos, recortadas a 3:2, reducidas y
+recoloreadas con C:\devs\demos\hacer-bruma.ps1 (clara >= 0,68 de luminancia / oscura <= 0,05). No suman fuentes.
+    pagina: port-01.jpg, cita-01.jpg, mos5-01.jpg, hund3-01.jpg, hund2-01.jpg   |   oscuras: port-01.jpg, cita-01.jpg, mos5-01.jpg
+
+MAPA: iframe de Google Maps (embed publico, sin clave). No hay imagen de mapa.

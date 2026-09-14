@@ -33,3 +33,10 @@ DESCARTADAS Y POR QUÉ
 
 FILTROS APLICADOS: sin marcas legibles, sin menores, sin precios, sin
 plus.unsplash, sin patentes legibles.
+
+MAPA DE UBICACION — mapa-01.jpg
+  768 x 768 · zoom 16 · centro -38.9815011, -72.6443533
+  Mosaicos de OpenStreetMap pegados en una sola imagen, con el marcador
+  dibujado encima. Datos (c) OpenStreetMap contributors, licencia ODbL:
+  la atribucion tiene que ir VISIBLE junto al mapa, en el pie de la figura.
+  https://www.openstreetmap.org/copyright

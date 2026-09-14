@@ -25,3 +25,10 @@ URL de origen:
 004.jpg | 6000x4000 | Barber Photos, Download The BEST Free Barber Stock Photos & HD Images | https://images.pexels.com/photos/897271/pexels-photo-897271.jpeg?cs=srgb&dl=pexels-lumierestudiomx-897271.jpg&fm=jpg
 005.jpg | 6000x4000 | Person Holding Hair Trimmer · Free Stock Photo | https://images.pexels.com/photos/897270/pexels-photo-897270.jpeg?cs=srgb&dl=people-men-hairstyle-897270.jpg&fm=jpg
 006.jpg | 6000x4000 | Professional Barber Giving a Classic Haircut · Free Stock Photo | https://images.pexels.com/photos/34702982/pexels-photo-34702982.jpeg?cs=srgb&dl=pexels-daniel-cosma-450433095-34702982.jpg&fm=jpg
+
+MAPA DE UBICACION — mapa-01.jpg
+  768 x 768 · zoom 14 · centro -38.7358908, -72.590538
+  Mosaicos de OpenStreetMap pegados en una sola imagen, con el marcador
+  dibujado encima. Datos (c) OpenStreetMap contributors, licencia ODbL:
+  la atribucion tiene que ir VISIBLE junto al mapa, en el pie de la figura.
+  https://www.openstreetmap.org/copyright

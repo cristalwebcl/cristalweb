@@ -1,0 +1,22 @@
+FUENTES DE LAS IMAGENES - Vida Dental Santiago Rehecha el 13-09-2026 (presentacion antes que texto). Fotos de REFERENCIA de bancos libres: ninguna es del local; las verdaderas las tiene que mandar el negocio. 
+port-01.jpg  <-  pozo-p-vd-alineador\011.jpg  |  pexels (Pexels License)  |  autor: Laura  Beauty Designer | Brasil  |  https://www.pexels.com/es-es/foto/invisalign-28407749/  |  consulta: "clear aligner"
+hund1-01.jpg  <-  pozo-p-vd-alineador\005.jpg  |  pexels (Pexels License)  |  autor: Victor Castardo  |  https://www.pexels.com/es-es/foto/persona-mano-efecto-desenfocado-sujetando-10896129/  |  consulta: "clear aligner"
+hund2-01.jpg  <-  pozo-p-vd-hilo\001.jpg  |  pexels (Pexels License)  |  autor: Hikmet Toprak  |  https://www.pexels.com/es-es/foto/dientes-guantes-dentista-cuidado-de-la-salud-16955599/  |  consulta: "dental floss"
+hund3-01.jpg  <-  pozo-p-vd-hilo\004.jpg  |  pexels (Pexels License)  |  autor: cottonbro studio  |  https://www.pexels.com/es-es/foto/dientes-dentadura-postiza-estomatologia-tiro-vertical-6502307/  |  consulta: "dental floss"
+hund4-01.jpg  <-  pozo-p-vd-espejo\009.jpg  |  pexels (Pexels License)  |  autor: Busenur Demirkan  |  https://www.pexels.com/es-es/foto/herramientas-dentales-y-modelos-de-dientes-en-una-clinica-31786502/  |  consulta: "dental mirror tools"
+hund5-01.jpg  <-  pozo-p-vd-radiografia\011.jpg  |  pexels (Pexels License)  |  autor: cottonbro studio  |  https://www.pexels.com/es-es/foto/clinica-equipo-dental-rayos-x-6501868/  |  consulta: "dental x-ray"
+hund6-01.jpg  <-  pozo-p-vd-calendario\006.jpg  |  pexels (Pexels License)  |  autor: RDNE Stock project  |  https://www.pexels.com/es-es/foto/persona-con-lapiz-azul-clic-6170653/  |  consulta: "calendar planner"
+banda-01.jpg  <-  pozo-p-vd-agua\008.jpg  |  pexels (Pexels License)  |  autor: Anna Klymenko  |  https://www.pexels.com/es-es/foto/tranquila-superficie-del-mar-turquesa-en-turkiye-38987721/  |  consulta: "turquoise water"
+cita-01.jpg  <-  pozo-p-vd-radiografia\010.jpg  |  pexels (Pexels License)  |  autor: Cedric Fauntleroy  |  https://www.pexels.com/es-es/foto/manos-ipad-dientes-tableta-digital-4270367/  |  consulta: "dental x-ray"
+mos1-01.jpg  <-  pozo-p-vd-sillon\008.jpg  |  pexels (Pexels License)  |  autor: Cedric Fauntleroy  |  https://www.pexels.com/es-es/foto/clinica-adentro-naturaleza-muerta-de-espaldas-4269268/  |  consulta: "dental chair clinic"
+mos2-01.jpg  <-  pozo-p-vd-espejo\008.jpg  |  pexels (Pexels License)  |  autor: Polina Zimmerman  |  https://www.pexels.com/es-es/foto/mesa-limpiar-limpio-herramientas-4687286/  |  consulta: "dental mirror tools"
+mos3-01.jpg  <-  pozo-p-vd-cepillo\001.jpg  |  pexels (Pexels License)  |  autor: Cristina De Luis  |  https://www.pexels.com/es-es/foto/de-madera-bote-de-cristal-cepillos-de-dientes-productos-de-higiene-5588670/  |  consulta: "toothbrush macro"
+mos4-01.jpg  <-  pozo-p-vd-espejo\011.jpg  |  pexels (Pexels License)  |  autor: Ivan Babydov  |  https://www.pexels.com/es-es/foto/mano-goma-caucho-limpiar-7787975/  |  consulta: "dental mirror tools"
+mos5-01.jpg  <-  pozo-p-vd-cepillo\004.jpg  |  pexels (Pexels License)  |  autor: Egor Kamelev  |  https://www.pexels.com/es-es/foto/micro-tiro-de-punta-de-cepillo-de-dientes-753417/  |  consulta: "toothbrush macro"
+mos6-01.jpg  <-  pozo-p-vd-sillon\012.jpg  |  pexels (Pexels License)  |  autor: Daniel Frank  |  https://www.pexels.com/es-es/foto/sillas-dispuestas-sobre-mesa-305564/  |  consulta: "dental chair clinic"
+
+BRUMA (bruma-pag-0N.png y bruma-osc-0N.png, 30x20): las MISMAS fotos, recortadas a 3:2, reducidas y
+recoloreadas con C:\devs\demos\hacer-bruma.ps1 (clara >= 0,68 de luminancia / oscura <= 0,05). No suman fuentes.
+    pagina: mos2-01.jpg, mos5-01.jpg, hund3-01.jpg, mos1-01.jpg, cita-01.jpg   |   oscuras: banda-01.jpg, port-01.jpg, cita-01.jpg
+
+MAPA: iframe de Google Maps (embed publico, sin clave). No hay imagen de mapa.

@@ -1,0 +1,22 @@
+FUENTES DE LAS IMAGENES - Los Carreras Rehecha el 13-09-2026 (presentacion antes que texto). Fotos de REFERENCIA de bancos libres: ninguna es del local; las verdaderas las tiene que mandar el negocio. 
+port-01.jpg  <-  pozo-p-car-camino\009.jpg  |  pexels (Pexels License)  |  autor: revac film's&photography  |  https://www.pexels.com/es-es/foto/cesped-de-hierba-verde-108444/  |  consulta: "rural road dusk fence"
+hund1-01.jpg  <-  pozo-p-car-polin\011.jpg  |  pexels (Pexels License)  |  autor: Evandro Paula Alves  |  https://www.pexels.com/es-es/foto/valla-rustica-de-alambre-de-puas-en-el-campo-39246213/  |  consulta: "wooden fence posts"
+hund2-01.jpg  <-  pozo-p-car-camino\007.jpg  |  pexels (Pexels License)  |  autor: Leonard Ferhati  |  https://www.pexels.com/es-es/foto/tranquilo-camino-rural-al-atardecer-35319675/  |  consulta: "rural road dusk fence"
+hund3-01.jpg  <-  pozo-p-car-camino\004.jpg  |  pexels (Pexels License)  |  autor: Salim Da  |  https://www.pexels.com/es-es/foto/camino-rural-sereno-en-un-paisaje-arido-34447027/  |  consulta: "rural road dusk fence"
+hund4-01.jpg  <-  pozo-p-car-carretilla\007.jpg  |  pexels (Pexels License)  |  autor: Mathias Reding  |  https://www.pexels.com/es-es/foto/sucio-carretilla-9258987/  |  consulta: "wheelbarrow shovel"
+hund5-01.jpg  <-  pozo-p-car-herramientas\009.jpg  |  pexels (Pexels License)  |  autor: UMUT   🆁🅰🆆  |  https://www.pexels.com/es-es/foto/casas-edificio-arboles-hierba-17132329/  |  consulta: "garden tools shed"
+hund6-01.jpg  <-  pozo-p-car-cuerda\006.jpg  |  pexels (Pexels License)  |  autor: Kévin et Laurianne Langlais  |  https://www.pexels.com/es-es/foto/cuerda-suelo-molido-linea-17364084/  |  consulta: "rope coil"
+banda-01.jpg  <-  pozo-p-car-polin\002.jpg  |  pexels (Pexels License)  |  autor: Tomás Asurmendi  |  https://www.pexels.com/es-es/foto/cerca-de-alambre-de-puas-en-campo-lluvioso-cordoba-argentina-35049287/  |  consulta: "wooden fence posts"
+cita-01.jpg  <-  pozo-p-car-madera\009.jpg  |  pexels (Pexels License)  |  autor: David Correa Franco  |  https://www.pexels.com/es-es/foto/paneles-de-valla-de-madera-oscura-con-texturas-sutiles-31714552/  |  consulta: "lumber wood planks"
+mos1-01.jpg  <-  pozo-p-car-polin\008.jpg  |  pexels (Pexels License)  |  autor: MAMADO UAE  |  https://www.pexels.com/es-es/foto/tranquilo-paisaje-en-blanco-y-negro-en-khor-kalba-28650316/  |  consulta: "wooden fence posts"
+mos2-01.jpg  <-  pozo-p-car-alambre\003.jpg  |  pexels (Pexels License)  |  autor: Tomás Asurmendi  |  https://www.pexels.com/es-es/foto/maizal-dorado-en-oliva-cordoba-argentina-32163282/  |  consulta: "barbed wire fence"
+mos3-01.jpg  <-  pozo-p-car-madera\004.jpg  |  pexels (Pexels License)  |  autor: tiago alves  |  https://www.pexels.com/es-es/foto/madera-lena-tronco-pila-19329687/  |  consulta: "lumber wood planks"
+mos4-01.jpg  <-  pozo-p-car-carretilla\008.jpg  |  pexels (Pexels License)  |  autor: hans middendorp  |  https://www.pexels.com/es-es/foto/arena-sucio-suelo-molido-9465375/  |  consulta: "wheelbarrow shovel"
+mos5-01.jpg  <-  pozo-p-car-martillo\009.jpg  |  pexels (Pexels License)  |  autor: Los Muertos Crew  |  https://www.pexels.com/es-es/foto/madera-manos-martillo-una-8447781/  |  consulta: "hammer nails"
+mos6-01.jpg  <-  pozo-p-car-cuerda\007.jpg  |  pexels (Pexels License)  |  autor: Laura Stanley  |  https://www.pexels.com/es-es/foto/cuerda-cordaje-grueso-de-cerca-11150809/  |  consulta: "rope coil"
+
+BRUMA (bruma-pag-0N.png y bruma-osc-0N.png, 30x20): las MISMAS fotos, recortadas a 3:2, reducidas y
+recoloreadas con C:\devs\demos\hacer-bruma.ps1 (clara >= 0,68 de luminancia / oscura <= 0,05). No suman fuentes.
+    pagina: banda-01.jpg, mos4-01.jpg, hund4-01.jpg, hund3-01.jpg, mos3-01.jpg   |   oscuras: cita-01.jpg, hund6-01.jpg, mos1-01.jpg
+
+MAPA: iframe de Google Maps (embed publico, sin clave). No hay imagen de mapa.

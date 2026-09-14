@@ -1,0 +1,22 @@
+FUENTES DE LAS IMAGENES - Camping Los Copihues Rehecha el 13-09-2026 (presentacion antes que texto). Fotos de REFERENCIA de bancos libres: ninguna es del local; las verdaderas las tiene que mandar el negocio. 
+port-01.jpg  <-  pozo-p-cop-carpa\004.jpg  |  pexels (Pexels License)  |  autor: Yusuke Furuya  |  https://www.pexels.com/es-es/foto/al-aire-libre-tienda-a-orillas-del-lago-fondo-de-pantalla-4k-9477623/  |  consulta: "tent lake shore"
+hund1-01.jpg  <-  pozo-p-cop-carpa\001.jpg  |  pexels (Pexels License)  |  autor: Sedat Taşkan  |  https://www.pexels.com/es-es/foto/puesta-de-sol-bosque-arboles-lago-21939709/  |  consulta: "tent lake shore"
+hund2-01.jpg  <-  pozo-p-cop-arena\008.jpg  |  pexels (Pexels License)  |  autor: Josh Withers  |  https://www.pexels.com/es-es/foto/mar-playa-oscuro-rocas-16579092/  |  consulta: "black sand beach"
+hund3-01.jpg  <-  pozo-p-cop-kayak\005.jpg  |  pexels (Pexels License)  |  autor: Den Romi McRod  |  https://www.pexels.com/es-es/foto/amanecer-en-kayak-30405502/  |  consulta: "kayak lake"
+hund4-01.jpg  <-  pozo-p-cop-selva\006.jpg  |  pexels (Pexels License)  |  autor: ArtHouse Studio  |  https://www.pexels.com/es-es/foto/musgo-hojas-follaje-crecimiento-6017706/  |  consulta: "forest fern moss"
+hund5-01.jpg  <-  pozo-p-cop-quincho\007.jpg  |  pexels (Pexels License)  |  autor: apertur 2.8  |  https://www.pexels.com/es-es/foto/acampada-al-aire-libre-con-tienda-de-campana-en-el-bosque-32973157/  |  consulta: "camping grill picnic table"
+hund6-01.jpg  <-  pozo-p-cop-fogata\012.jpg  |  pexels (Pexels License)  |  autor: Lukas Rodriguez  |  https://www.pexels.com/es-es/foto/paisaje-naturaleza-noche-relajacion-14284346/  |  consulta: "campfire night"
+banda-01.jpg  <-  pozo-p-cop-arena\007.jpg  |  pexels (Pexels License)  |  autor: Javier Balseiro  |  https://www.pexels.com/es-es/foto/playa-orilla-litoral-costa-6594582/  |  consulta: "black sand beach"
+cita-01.jpg  <-  pozo-p-cop-fogata\008.jpg  |  pexels (Pexels License)  |  autor: Alex Moliski  |  https://www.pexels.com/es-es/foto/reunion-alrededor-de-una-fogata-en-el-bosque-de-pinos-de-utah-31887367/  |  consulta: "campfire night"
+mos1-01.jpg  <-  pozo-p-cop-carpa\005.jpg  |  pexels (Pexels License)  |  autor: Quang Nguyen Vinh  |  https://www.pexels.com/es-es/foto/tienda-de-campana-tipo-domo-cerca-de-un-cuerpo-de-agua-2582818/  |  consulta: "tent lake shore"
+mos2-01.jpg  <-  pozo-p-cop-kayak\009.jpg  |  pexels (Pexels License)  |  autor: Roger Ce  |  https://www.pexels.com/es-es/foto/gente-agua-barca-arboles-18257208/  |  consulta: "kayak lake"
+mos3-01.jpg  <-  pozo-p-cop-quincho\009.jpg  |  pexels (Pexels License)  |  autor: Yen Nguyen  |  https://www.pexels.com/es-es/foto/naturaleza-bosque-arboles-coche-12174611/  |  consulta: "camping grill picnic table"
+mos4-01.jpg  <-  pozo-p-cop-fogata\006.jpg  |  pexels (Pexels License)  |  autor: Laetitia Boumeraou  |  https://www.pexels.com/es-es/foto/noche-hoguera-campamento-acampada-12302868/  |  consulta: "campfire night"
+mos5-01.jpg  <-  pozo-p-cop-selva\010.jpg  |  pexels (Pexels License)  |  autor: Minsu B  |  https://www.pexels.com/es-es/foto/plantas-verdes-hojas-verdes-fotografia-de-plantas-roca-marron-11932079/  |  consulta: "forest fern moss"
+mos6-01.jpg  <-  pozo-p-cop-quincho\005.jpg  |  pexels (Pexels License)  |  autor: Sara mazin  |  https://www.pexels.com/es-es/foto/arboles-rio-mesas-de-madera-19896577/  |  consulta: "camping grill picnic table"
+
+BRUMA (bruma-pag-0N.png y bruma-osc-0N.png, 30x20): las MISMAS fotos, recortadas a 3:2, reducidas y
+recoloreadas con C:\devs\demos\hacer-bruma.ps1 (clara >= 0,68 de luminancia / oscura <= 0,05). No suman fuentes.
+    pagina: port-01.jpg, banda-01.jpg, cita-01.jpg, hund2-01.jpg, hund3-01.jpg, hund6-01.jpg, mos4-01.jpg, mos1-01.jpg   |   oscuras: cita-01.jpg, hund6-01.jpg, banda-01.jpg
+
+MAPA: iframe de Google Maps (embed publico, sin clave). No hay imagen de mapa.

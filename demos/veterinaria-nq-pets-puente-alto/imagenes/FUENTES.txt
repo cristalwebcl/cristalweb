@@ -1,0 +1,22 @@
+FUENTES DE LAS IMAGENES - N&Q Pets Rehecha el 13-09-2026 (presentacion antes que texto). Fotos de REFERENCIA de bancos libres: ninguna es del local; las verdaderas las tiene que mandar el negocio. 
+port-01.jpg  <-  pozo-p-nq-lampara\007.jpg  |  pexels (Pexels License)  |  autor: Pavel Danilyuk  |  https://www.pexels.com/es-es/foto/bombillas-reflector-cirugia-diodos-7108120/  |  consulta: "surgical lamp"
+hund1-01.jpg  <-  pozo-p-nq-instrumental\006.jpg  |  pexels (Pexels License)  |  autor: Cedric Fauntleroy  |  https://www.pexels.com/es-es/foto/naturaleza-muerta-tijeras-vista-superior-acero-inoxidable-4270967/  |  consulta: "surgical instruments tray"
+hund2-01.jpg  <-  pozo-p-nq-estetoscopio\004.jpg  |  pexels (Pexels License)  |  autor: Carolina Gonzalez  |  https://www.pexels.com/es-es/foto/blanco-y-negro-perro-mascota-retrato-20496584/  |  consulta: "veterinary stethoscope dog"
+hund3-01.jpg  <-  pozo-p-nq-cono\009.jpg  |  pexels (Pexels License)  |  autor: Huy Phan  |  https://www.pexels.com/es-es/foto/animal-mascota-mono-gato-domestico-10292639/  |  consulta: "cat recovery cone"
+hund4-01.jpg  <-  pozo-p-nq-instrumental\008.jpg  |  pexels (Pexels License)  |  autor: https://kaboompics.com/  |  https://www.pexels.com/es-es/foto/chrome-cromo-medico-equipo-6627671/  |  consulta: "surgical instruments tray"
+hund5-01.jpg  <-  pozo-p-nq-estetoscopio\002.jpg  |  pexels (Pexels License)  |  autor: Eduardo López  |  https://www.pexels.com/es-es/foto/un-perro-con-corbata-sobre-fondo-azul-16620455/  |  consulta: "veterinary stethoscope dog"
+hund6-01.jpg  <-  pozo-p-nq-canil\005.jpg  |  pexels (Pexels License)  |  autor: Cup of  Couple  |  https://www.pexels.com/es-es/foto/perro-mascota-mono-bolso-8473673/  |  consulta: "pet carrier"
+banda-01.jpg  <-  pozo-p-nq-manta\001.jpg  |  pexels (Pexels License)  |  autor: Regina Tommasi  |  https://www.pexels.com/es-es/foto/perro-durmiendo-tranquilamente-sobre-una-manta-acogedora-30179132/  |  consulta: "dog blanket sleeping"
+cita-01.jpg  <-  pozo-p-nq-manta\006.jpg  |  pexels (Pexels License)  |  autor: Em  Everyday Living  |  https://www.pexels.com/es-es/foto/foto-de-enfoque-selectivo-de-un-perro-1359019/  |  consulta: "dog blanket sleeping"
+mos1-01.jpg  <-  pozo-p-nq-cono\001.jpg  |  pexels (Pexels License)  |  autor: Leah Newhouse  |  https://www.pexels.com/es-es/foto/gato-siames-con-cono-colar-776374/  |  consulta: "cat recovery cone"
+mos2-01.jpg  <-  pozo-p-nq-manta\012.jpg  |  pexels (Pexels License)  |  autor: Thomas Holmes  |  https://www.pexels.com/es-es/foto/chihuahua-acogedor-descansando-en-una-manta-calida-33284863/  |  consulta: "dog blanket sleeping"
+mos3-01.jpg  <-  pozo-p-nq-lampara\010.jpg  |  pexels (Pexels License)  |  autor: MESSALA CIULLA  |  https://www.pexels.com/es-es/foto/lamparas-tecnologia-hospital-medicina-19563295/  |  consulta: "surgical lamp"
+mos4-01.jpg  <-  pozo-p-nq-perro-cono\008.jpg  |  pexels (Pexels License)  |  autor: Eduardo López  |  https://www.pexels.com/es-es/foto/perro-sentado-con-vendaje-amarillo-16618523/  |  consulta: "dog cone"
+mos5-01.jpg  <-  pozo-p-nq-manta\011.jpg  |  pexels (Pexels License)  |  autor: https://kaboompics.com/  |  https://www.pexels.com/es-es/foto/animal-perro-mascota-dormido-5420828/  |  consulta: "dog blanket sleeping"
+mos6-01.jpg  <-  pozo-p-nq-paseo\010.jpg  |  pexels (Pexels License)  |  autor: Ludovic Delot  |  https://www.pexels.com/es-es/foto/chihuahua-con-correa-en-una-zona-de-cesped-33489756/  |  consulta: "dog leash walk morning"
+
+BRUMA (bruma-pag-0N.png y bruma-osc-0N.png, 30x20): las MISMAS fotos, recortadas a 3:2, reducidas y
+recoloreadas con C:\devs\demos\hacer-bruma.ps1 (clara >= 0,68 de luminancia / oscura <= 0,05). No suman fuentes.
+    pagina: port-01.jpg, banda-01.jpg, hund2-01.jpg, mos3-01.jpg, mos5-01.jpg, cita-01.jpg   |   oscuras: cita-01.jpg, port-01.jpg, banda-01.jpg
+
+MAPA: iframe de Google Maps (embed publico, sin clave). No hay imagen de mapa.

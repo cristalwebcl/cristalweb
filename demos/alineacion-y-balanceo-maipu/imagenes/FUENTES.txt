@@ -1,0 +1,22 @@
+FUENTES DE LAS IMAGENES - AlineaciÃ³n y Balanceo Rehecha el 13-09-2026 (presentacion antes que texto). Fotos de REFERENCIA de bancos libres: ninguna es del local; las verdaderas las tiene que mandar el negocio. 
+port-01.jpg  <-  pozo-p-ali-banda\004.jpg  |  pexels (Pexels License)  |  autor: Gerd Altmann  |  https://www.pexels.com/es-es/foto/neumatico-de-coche-21694/  |  consulta: "tire tread"
+hund1-01.jpg  <-  pozo-p-ali-elevador\010.jpg  |  pexels (Pexels License)  |  autor: Artem Podrez  |  https://www.pexels.com/es-es/foto/hombre-coche-vehiculo-tienda-8985667/  |  consulta: "car lift garage"
+hund2-01.jpg  <-  pozo-p-ali-rueda\012.jpg  |  pexels (Pexels License)  |  autor: Erik Mclean  |  https://www.pexels.com/es-es/foto/coches-metal-coche-vehiculo-27258938/  |  consulta: "car wheel closeup"
+hund3-01.jpg  <-  pozo-p-ali-elevador\008.jpg  |  pexels (Pexels License)  |  autor: Renee Razumov  |  https://www.pexels.com/es-es/foto/interior-de-un-moderno-taller-de-reparacion-de-automoviles-con-vehiculo-33814736/  |  consulta: "car lift garage"
+hund4-01.jpg  <-  pozo-p-ali-rueda\010.jpg  |  pexels (Pexels License)  |  autor: 04iraq  |  https://www.pexels.com/es-es/foto/primer-plano-dinamico-de-una-rueda-de-coche-que-gira-29615588/  |  consulta: "car wheel closeup"
+hund5-01.jpg  <-  pozo-p-ali-laser\008.jpg  |  pexels (Pexels License)  |  autor: Tima Miroshnichenko  |  https://www.pexels.com/es-es/foto/construccion-modelo-estampado-textura-6474124/  |  consulta: "laser line"
+hund6-01.jpg  <-  pozo-p-ali-banda\002.jpg  |  pexels (Pexels License)  |  autor: cottonbro studio  |  https://www.pexels.com/es-es/foto/modelo-estampado-textura-detalles-7019611/  |  consulta: "tire tread"
+banda-01.jpg  <-  pozo-p-ali-laser\002.jpg  |  pexels (Pexels License)  |  autor: Tima Miroshnichenko  |  https://www.pexels.com/es-es/foto/verde-neon-pared-gris-cable-electrico-tiro-vertical-6473971/  |  consulta: "laser line"
+cita-01.jpg  <-  pozo-p-ali-volante\012.jpg  |  pexels (Pexels License)  |  autor: Alessandro Avilés  |  https://www.pexels.com/es-es/foto/conducir-12470869/  |  consulta: "steering wheel driving"
+mos1-01.jpg  <-  pozo-p-ali-banda\003.jpg  |  pexels (Pexels License)  |  autor: Mike Bird  |  https://www.pexels.com/es-es/foto/neumatico-del-vehiculo-441103/  |  consulta: "tire tread"
+mos2-01.jpg  <-  pozo-p-ali-llanta\004.jpg  |  pexels (Pexels License)  |  autor: Fco Javier Carriola  |  https://www.pexels.com/es-es/foto/blanco-y-negro-roto-apilar-pila-19793975/  |  consulta: "wheel rim"
+mos3-01.jpg  <-  pozo-p-ali-laser\007.jpg  |  pexels (Pexels License)  |  autor: Tima Miroshnichenko  |  https://www.pexels.com/es-es/foto/persona-edificio-construccion-trabajando-6473976/  |  consulta: "laser line"
+mos4-01.jpg  <-  pozo-p-ali-laser\001.jpg  |  pexels (Pexels License)  |  autor: Tima Miroshnichenko  |  https://www.pexels.com/es-es/foto/construccion-pared-muro-guia-6474311/  |  consulta: "laser line"
+mos5-01.jpg  <-  pozo-p-ali-laser\009.jpg  |  pexels (Pexels License)  |  autor: Ksenia Chernaya  |  https://www.pexels.com/es-es/foto/enchufes-en-la-pared-blanca-de-casa-5691599/  |  consulta: "laser line"
+mos6-01.jpg  <-  pozo-p-ali-elevador\005.jpg  |  pexels (Pexels License)  |  autor: Tomás Asurmendi  |  https://www.pexels.com/es-es/foto/gasolinera-abandonada-en-embalse-argentina-31420894/  |  consulta: "car lift garage"
+
+BRUMA (bruma-pag-0N.png y bruma-osc-0N.png, 30x20): las MISMAS fotos, recortadas a 3:2, reducidas y
+recoloreadas con C:\devs\demos\hacer-bruma.ps1 (clara >= 0,68 de luminancia / oscura <= 0,05). No suman fuentes.
+    pagina: hund1-01.jpg, hund3-01.jpg, cita-01.jpg, banda-01.jpg   |   oscuras: port-01.jpg, cita-01.jpg, hund4-01.jpg
+
+MAPA: iframe de Google Maps (embed publico, sin clave). No hay imagen de mapa.

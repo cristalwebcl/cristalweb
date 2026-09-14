@@ -1,0 +1,22 @@
+FUENTES DE LAS IMAGENES - Mundo Animal Rehecha el 13-09-2026 (presentacion antes que texto). Fotos de REFERENCIA de bancos libres: ninguna es del local; las verdaderas las tiene que mandar el negocio. 
+port-01.jpg  <-  pozo-p-mun-gato\008.jpg  |  pexels (Pexels License)  |  autor: Nhà văn  |  https://www.pexels.com/es-es/foto/observando-gatos-domesticos-jugando-alegremente-bajo-la-calida-luz-del-sol-de-la-manana-33300588/  |  consulta: "cat sleeping blanket"
+hund1-01.jpg  <-  pozo-p-mun-loro\001.jpg  |  pexels (Pexels License)  |  autor: Pablo Fernandez  |  https://www.pexels.com/es-es/foto/guacamayo-azul-y-amarillo-vibrante-de-perfil-39376407/  |  consulta: "parrot pet"
+hund2-01.jpg  <-  pozo-p-mun-laboratorio\003.jpg  |  pexels (Pexels License)  |  autor: Polina Tankilevitch  |  https://www.pexels.com/es-es/foto/muestras-en-tubos-de-ensayo-3735699/  |  consulta: "laboratory test tubes"
+hund3-01.jpg  <-  pozo-p-mun-sala\002.jpg  |  pexels (Pexels License)  |  autor: Los Muertos Crew  |  https://www.pexels.com/es-es/foto/hospital-cuidado-de-la-salud-sanidad-cuidado-del-cuerpo-8460234/  |  consulta: "veterinary clinic empty room"
+hund4-01.jpg  <-  pozo-p-mun-sala\001.jpg  |  pexels (Pexels License)  |  autor: Andre  |  https://www.pexels.com/es-es/foto/sala-de-rayos-x-moderna-en-el-hospital-de-wismar-33216715/  |  consulta: "veterinary clinic empty room"
+hund5-01.jpg  <-  pozo-p-mun-bano\009.jpg  |  pexels (Pexels License)  |  autor: Jacson David Vinueza Itas  |  https://www.pexels.com/es-es/foto/golden-retriever-mojado-sentado-en-el-pavimento-29178697/  |  consulta: "dog bath towel"
+hund6-01.jpg  <-  pozo-p-mun-petshop\011.jpg  |  pexels (Pexels License)  |  autor: David Vives  |  https://www.pexels.com/es-es/foto/perro-maltipoo-28990268/  |  consulta: "pet shop dog toys"
+banda-01.jpg  <-  pozo-p-mun-petshop\007.jpg  |  pexels (Pexels License)  |  autor: Shiebi AL  |  https://www.pexels.com/es-es/foto/adorables-cachorros-recien-nacidos-durmiendo-pacificamente-31016681/  |  consulta: "pet shop dog toys"
+cita-01.jpg  <-  pozo-p-mun-estetoscopio\006.jpg  |  pexels (Pexels License)  |  autor: Sandra Mosconi  |  https://www.pexels.com/es-es/foto/blanco-y-negro-animal-perro-mascota-14668376/  |  consulta: "stethoscope dog"
+mos1-01.jpg  <-  pozo-p-mun-conejo\002.jpg  |  pexels (Pexels License)  |  autor: Josiah  Knor  |  https://www.pexels.com/es-es/foto/animal-fotografia-de-animales-conejito-lindo-tiro-vertical-14689439/  |  consulta: "rabbit pet"
+mos2-01.jpg  <-  pozo-p-mun-loro\010.jpg  |  pexels (Pexels License)  |  autor: Rodrigo Araya  |  https://www.pexels.com/es-es/foto/retrato-de-guacamayo-escarlata-en-su-habitat-natural-32306337/  |  consulta: "parrot pet"
+mos3-01.jpg  <-  pozo-p-mun-gato\009.jpg  |  pexels (Pexels License)  |  autor: Magalie Parise  |  https://www.pexels.com/es-es/foto/charla-alegre-30667925/  |  consulta: "cat sleeping blanket"
+mos4-01.jpg  <-  pozo-p-mun-estetoscopio\003.jpg  |  pexels (Pexels License)  |  autor: Gerardo Manzano  |  https://www.pexels.com/es-es/foto/perro-mascota-fotografia-de-animales-collar-16621924/  |  consulta: "stethoscope dog"
+mos5-01.jpg  <-  pozo-p-mun-laboratorio\007.jpg  |  pexels (Pexels License)  |  autor: Mikhail Nilov  |  https://www.pexels.com/es-es/foto/vaso-cristal-vidrio-laboratorio-8851076/  |  consulta: "laboratory test tubes"
+mos6-01.jpg  <-  pozo-p-mun-conejo\012.jpg  |  pexels (Pexels License)  |  autor: Tima Miroshnichenko  |  https://www.pexels.com/es-es/foto/manos-amor-animal-mascota-6845807/  |  consulta: "rabbit pet"
+
+BRUMA (bruma-pag-0N.png y bruma-osc-0N.png, 30x20): las MISMAS fotos, recortadas a 3:2, reducidas y
+recoloreadas con C:\devs\demos\hacer-bruma.ps1 (clara >= 0,68 de luminancia / oscura <= 0,05). No suman fuentes.
+    pagina: port-01.jpg, hund1-01.jpg, hund2-01.jpg, hund6-01.jpg, mos3-01.jpg, mos4-01.jpg, mos6-01.jpg, hund3-01.jpg   |   oscuras: cita-01.jpg, banda-01.jpg, mos5-01.jpg
+
+MAPA: iframe de Google Maps (embed publico, sin clave). No hay imagen de mapa.

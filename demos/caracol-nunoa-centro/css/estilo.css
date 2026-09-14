@@ -1,0 +1,625 @@
+/* ══════════════════════════════════════════════════════════════════════
+   Caracol Ñuñoa Centro — Ñuñoa
+   Demo de CristalWeb. CSS plano, sin build, sin librerías.
+
+   IDENTIDAD — «HORMIGÓN Y NEÓN»
+   Un caracol de Santiago es dos cosas y nada más: una caja de hormigón
+   sin gracia y, pegados encima, los letreros de los locales. Así se
+   pinta la página. El fondo es hormigón FRÍO y liso; el único color es
+   un magenta de tubo de neón.
+
+   EL MAGENTA: #A80092, tono 308°, saturación 100.
+   Se eligió CONTANDO, no a ojo. Los 1.184 hex únicos de identidades.md
+   dan 793 colores con saturación real; el histograma por franjas de 20°
+   deja la franja 300-319 con DOS colores y la 280-299 con TRES, contra
+   167 en la franja 20-39. Mirado al detalle, el tramo **291°-314° está
+   literalmente vacío**: veinticuatro grados sin un solo color en todo el
+   registro. Ahí cae éste, en el medio.
+   Deslinde con los hex vecinos, que es lo que vale:
+     · `#6B2E7A` (288°) — la cebolla morada de Marbesán: morado de
+       verdura, apagado (S 45), y va sobre fondo oscuro.
+     · `#8A2470` (315°) — el berry de la 10 (Veterinaria Concha y Toro),
+       construida hace dos días: siete grados más arriba, S 59, y su
+       oficio es interfaz clínica sobre crema.
+     · `#C4006E` (326°) — el magenta de cuatricromía de la 21 (Bazar
+       July): dieciocho grados más arriba y, sobre todo, **es uno de
+       cuatro puntos CMYK y nunca va solo**. Acá el magenta es el único
+       color de la página y no tiene con quién turnarse.
+   Ninguno de los tres es neón: los tres son pigmento.
+
+   MECÁNICA DEL ACENTO — el magenta es SIEMPRE un tubo.
+   Barra de extremos redondeados o regla de 3 px: el rótulo lleva un
+   tubo corto delante, el título lleva uno encima, el botón principal ES
+   un tubo (pastilla), el nivel encendido del corte se marca con el tubo
+   del canto y en la portada los cuatro letreros que se prenden son
+   cuatro tubos. NUNCA rellena una caja rectangular ni pinta el fondo de
+   una sección. Eso separa esta demo de cualquier otra que use magenta.
+
+   EL HORMIGÓN: el registro ya tiene dos y los dos son CÁLIDOS —
+   `#EDEEEA` (58, Transportes JM) y `#E8E7E3` (182, Constructora Pozas,
+   que además lo usa con la veta del encofrado dibujada en el body—.
+   Éste es FRÍO (`#E7E8EA`, 220°) y liso a propósito: un caracol no es
+   hormigón a la vista de arquitecto, es muro pintado y piso flotante.
+
+   TRÍO TIPOGRÁFICO
+   · Display: Encode Sans Expanded — 0 usos en el registro. Es una
+     grotesca ANCHA de verdad (eje expandido, no una normal con
+     tracking), que es lo que pide un letrero de galería. Ojo: el
+     registro tiene Encode Sans Condensed ×2 — la otra punta del mismo
+     eje de ancho, y no se parece en nada a esto.
+   · Cuerpo: Kantumruy Pro — 0 usos. Neo-grotesca de caja abierta,
+     aguanta listas largas sin apretarse.
+   · Dato: Ubuntu Sans Mono — las monos se acabaron en agosto y repetir
+     es lo normal. Ésta va tres veces en el registro y todas lejos:
+     Puerto Fuy y un par del sur. Primera vez en Santiago. Lleva el
+     horario, el número de nivel y el teléfono.
+
+   CONTRASTES MEDIDOS sobre esta página (fórmula WCAG, script propio):
+     tinta   #16171B sobre muro #E7E8EA ....... 14,61:1
+     medio   #55575E sobre muro ...............  5,88:1
+     medio   #55575E sobre muro-2 #DADCDF .....  5,25:1
+     neón    #A80092 sobre muro ...............  5,56:1   (texto y enlaces)
+     neón    #A80092 sobre muro-2 .............  4,96:1
+     blanco  #FFFFFF sobre neón (botón) .......  6,82:1
+     muro    #E7E8EA sobre noche #121217 ...... 15,23:1
+     neón-cl #FF5FEA sobre noche ..............  7,18:1
+     claro   #C6CBD4 sobre noche .............. 11,47:1
+     legal   #82858D sobre el pie #0C0C10 .....  5,20:1
+   Medidos dos veces: con el script propio sobre los hex, y despues
+   sobre la pagina viva con getComputedStyle y la clase .js quitada
+   (con .js puesta el color devuelto es el de la transicion y miente).
+   ══════════════════════════════════════════════════════════════════════ */
+
+:root {
+  --muro: #E7E8EA;
+  --muro-2: #DADCDF;
+  --junta: #C4C7CC;
+  --junta-2: #9EA2AA;   /* sólo gráfico, nunca texto */
+  --blanco: #FFFFFF;
+  --tinta: #16171B;
+  --medio: #55575E;
+  --claro: #C6CBD4;     /* texto secundario sobre fondo oscuro */
+  --neon: #A80092;
+  --neon-cl: #FF5FEA;   /* sólo sobre fondo oscuro */
+  --neon-suave: #F6DEF3;/* relleno, nunca texto */
+  --noche: #121217;
+
+  --display: 'Encode Sans Expanded', system-ui, -apple-system, 'Segoe UI', sans-serif;
+  --cuerpo: 'Kantumruy Pro', system-ui, -apple-system, 'Segoe UI', sans-serif;
+  --mono: 'Ubuntu Sans Mono', ui-monospace, 'Cascadia Mono', Consolas, monospace;
+
+  --ancho: 1180px;
+  --sale: cubic-bezier(.22, .61, .36, 1);
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+/* El atributo hidden pierde contra cualquier regla con display: hay que
+   declararlo a mano o deja de esconder. */
+[hidden] { display: none !important; }
+
+html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+
+body {
+  margin: 0;
+  background: var(--muro);
+  color: var(--tinta);
+  font-family: var(--cuerpo);
+  font-size: 1.045rem;
+  line-height: 1.62;
+  -webkit-font-smoothing: antialiased;
+}
+
+img { max-width: 100%; height: auto; display: block; }
+.ancho { width: min(100% - 2.5rem, var(--ancho)); margin-inline: auto; }
+
+a { color: var(--neon); }
+a:focus-visible, button:focus-visible, input:focus-visible {
+  outline: 3px solid var(--neon);
+  outline-offset: 3px;
+}
+
+/* ── Piezas de texto compartidas ─────────────────────────────────── */
+/* El rótulo lleva el tubo corto delante: primera aparición de la
+   mecánica del acento, y la más repetida de la página. */
+.rotulo {
+  display: flex; align-items: center; gap: .6rem;
+  font-family: var(--mono);
+  font-size: .715rem;
+  letter-spacing: .17em;
+  text-transform: uppercase;
+  color: var(--neon);
+  margin: 0 0 .9rem;
+}
+.rotulo::before {
+  content: ""; flex: none;
+  width: 26px; height: 4px; border-radius: 2px;
+  background: currentColor;
+}
+.rotulo--claro { color: var(--neon-cl); }
+
+.titulo {
+  font-family: var(--display);
+  font-weight: 800;
+  font-size: clamp(1.75rem, 4vw, 2.7rem);
+  line-height: 1.1;
+  letter-spacing: -.022em;
+  margin: 0 0 1.1rem;
+}
+.titulo--chico { font-size: clamp(1.5rem, 3.1vw, 2.1rem); }
+.titulo--claro { color: var(--muro); }
+
+.entradilla { font-size: 1.08rem; color: var(--medio); max-width: 66ch; margin: 0 0 1.9rem; }
+.entradilla b { color: var(--tinta); }
+.entradilla--clara { color: var(--claro); }
+.entradilla--clara b { color: var(--muro); }
+.mini { font-size: .9rem; color: var(--medio); max-width: 72ch; margin: 1.4rem 0 0; }
+.mini b { color: var(--tinta); }
+.mini--claro { color: var(--claro); }
+.mini--claro b { color: var(--muro); }
+
+/* Lo que todavía no está confirmado va subrayado con puntitos y dice
+   quién lo confirma. Es la diferencia entre una demo honesta y una que
+   inventa. En esta demo hay mucho: el caracol no publica casi nada. */
+.ej { border-bottom: 1px dotted var(--neon); cursor: help; }
+.ej::after {
+  content: ' (ej.)';
+  font-family: var(--mono);
+  font-size: .7em; color: var(--neon); letter-spacing: .03em;
+}
+
+.dato { font-family: var(--mono); font-variant-numeric: tabular-nums; }
+
+/* El botón principal ES un tubo de neón: pastilla, no rectángulo. */
+.boton {
+  display: inline-block;
+  padding: .82rem 1.6rem;
+  background: var(--neon);
+  color: var(--blanco);
+  text-decoration: none;
+  font-weight: 700;
+  font-size: .95rem;
+  border-radius: 999px;
+  transition: background .2s var(--sale), transform .2s var(--sale);
+}
+.boton:hover { background: #8C0079; transform: translateY(-2px); }
+.boton--linea {
+  background: transparent; color: var(--neon);
+  box-shadow: inset 0 0 0 1.5px var(--neon);
+}
+.boton--linea:hover { background: var(--neon-suave); color: #8C0079; }
+
+/* ── Banda de propuesta ──────────────────────────────────────────── */
+.propuesta { background: var(--noche); color: var(--claro); padding: 1.05rem 0; }
+.propuesta__q {
+  font-family: var(--mono);
+  font-size: .715rem; letter-spacing: .1em; text-transform: uppercase;
+  color: var(--neon-cl); margin: 0 0 .4rem;
+}
+.propuesta__q b { color: var(--muro); font-weight: 700; }
+.propuesta__d { margin: 0; font-size: .94rem; max-width: 84ch; }
+.propuesta__d .dato { color: var(--neon-cl); }
+
+/* ── Cabecera ────────────────────────────────────────────────────── */
+.cab {
+  position: sticky; top: 0; z-index: 40;
+  background: var(--muro);
+  border-bottom: 1px solid var(--junta);
+  transition: transform .3s var(--sale);
+}
+.cab--oculta { transform: translateY(-100%); }
+.cab__in { display: flex; align-items: center; justify-content: space-between; gap: 1rem; min-height: 62px; }
+.cab__marca { display: flex; align-items: center; gap: .75rem; text-decoration: none; color: var(--tinta); }
+.cab__txt {
+  font-family: var(--display);
+  font-weight: 800; font-size: .98rem; line-height: 1.1;
+  display: flex; flex-direction: column;
+}
+.cab__sub {
+  font-family: var(--mono);
+  font-weight: 400;
+  font-size: .62rem; letter-spacing: .11em; text-transform: uppercase;
+  color: var(--medio); margin-top: .22rem;
+}
+/* Cuatro niveles apilados y el de más abajo encendido: el mismo gesto
+   del corte, en tamaño de favicon. */
+.marca__niveles { display: grid; gap: 3px; width: 22px; flex: none; }
+.marca__n { height: 4px; border-radius: 2px; background: var(--junta-2); }
+.marca__n:nth-child(4) { background: var(--neon); }
+
+.cab__nav { display: flex; align-items: center; gap: 1.3rem; }
+.cab__nav a { color: var(--medio); text-decoration: none; font-size: .9rem; }
+.cab__nav a:hover { color: var(--neon); }
+.cab__tel {
+  font-family: var(--mono);
+  font-variant-numeric: tabular-nums;
+  color: var(--neon) !important;
+  box-shadow: inset 0 0 0 1.5px var(--junta);
+  padding: .42rem .85rem; border-radius: 999px;
+}
+.cab__tel:hover { box-shadow: inset 0 0 0 1.5px var(--neon); }
+@media (max-width: 960px) { .cab__nav a:not(.cab__tel) { display: none; } }
+
+/* ── Portada ─────────────────────────────────────────────────────── */
+.portada {
+  position: relative;
+  padding: clamp(3rem, 7vw, 5.4rem) 0;
+  background: linear-gradient(180deg, var(--muro) 0%, var(--muro-2) 100%);
+  overflow: hidden;
+}
+.portada__in { position: relative; z-index: 2; max-width: 40rem; }
+.portada__h1 {
+  font-family: var(--display);
+  font-weight: 800;
+  font-size: clamp(1.95rem, 5vw, 3.3rem);
+  line-height: 1.06;
+  letter-spacing: -.03em;
+  margin: 0 0 1.2rem;
+}
+.portada__h1-b { color: var(--neon); }
+.portada__bajada { font-size: clamp(1rem, 1.6vw, 1.14rem); color: var(--medio); max-width: 46ch; margin: 0 0 1.9rem; }
+.portada__acc { display: flex; flex-wrap: wrap; gap: .8rem; margin: 0 0 2.4rem; }
+
+.specs { display: flex; flex-wrap: wrap; gap: 2.2rem; margin: 0; }
+.specs dt {
+  font-family: var(--mono);
+  font-size: .66rem; letter-spacing: .11em; text-transform: uppercase;
+  color: var(--medio); margin-bottom: .2rem;
+}
+.specs dd {
+  margin: 0;
+  font-family: var(--mono);
+  font-variant-numeric: tabular-nums;
+  font-size: 1.45rem; font-weight: 600;
+}
+
+/* ── Escena: la rampa sube y se encienden los pisos ──────────────── */
+.escena {
+  position: absolute;
+  right: clamp(1rem, 4vw, 5rem);
+  top: 50%;
+  transform: translateY(-50%);
+  width: 300px;
+  z-index: 1;
+  pointer-events: none;
+}
+.escena__svg { width: 100%; height: auto; display: block; }
+/* Las losas no pueden ir en el gris de las juntas: probadas en #C4C7CC
+   sobre el degradado de la portada quedaban en 1,3:1 y el dibujo se
+   perdía. Van en el gris fuerte, que es gráfico y no texto. */
+.es-losa ellipse { fill: none; stroke: var(--junta-2); stroke-width: 1.8; }
+.es-rampa { fill: none; stroke: var(--tinta); stroke-width: 3.4; stroke-linecap: round; stroke-linejoin: round; }
+.es-neon { fill: var(--neon); }
+
+/* La rampa se dibuja con stroke-dashoffset. El largo (1.450 unidades del
+   viewBox) se midió sumando los 120 segmentos al generar el trazo, no a
+   ojo: si el dasharray queda corto, el trazo aparece cortado al final. */
+.js .escena .es-rampa { stroke-dasharray: 1450; transition: stroke-dashoffset 1.6s var(--sale); }
+.js .escena:not(.escena--va) .es-rampa { stroke-dashoffset: 1450; }
+.js .escena .es-neon { transition: opacity .25s var(--sale); }
+.js .escena:not(.escena--va) .es-neon { opacity: 0; }
+/* Los retardos siguen el recorrido real de la rampa: el nivel 1 está en
+   el punto de partida, el 4 al final del 1,6 s. */
+.js .escena .es-neon:nth-child(1) { transition-delay: .10s; }
+.js .escena .es-neon:nth-child(2) { transition-delay: .62s; }
+.js .escena .es-neon:nth-child(3) { transition-delay: 1.13s; }
+.js .escena .es-neon:nth-child(4) { transition-delay: 1.60s; }
+
+@media (prefers-reduced-motion: reduce) {
+  .js .escena .es-rampa, .js .escena .es-neon { transition: none; }
+  .js .escena:not(.escena--va) .es-rampa { stroke-dashoffset: 0; }
+  .js .escena:not(.escena--va) .es-neon { opacity: 1; }
+}
+
+@media (max-width: 1080px) {
+  /* Bajo este ancho la escena deja de flotar y pasa a ser una figura
+     debajo del titular: encima del texto lo tapaba. */
+  .portada { display: flex; flex-direction: column; }
+  .portada__in { order: 1; }
+  .escena { order: 2; position: static; transform: none; width: min(56%, 300px); margin: 2.4rem auto 0; }
+}
+@media (max-width: 420px) { .escena { width: 50%; } }
+
+/* ── Franja de foto ──────────────────────────────────────────────── */
+.tajo { margin: 0; }
+.tajo img { width: 100%; aspect-ratio: 21 / 9; object-fit: cover; }
+
+/* ── Cifras ──────────────────────────────────────────────────────── */
+.cifras { padding: clamp(2.8rem, 5vw, 4.2rem) 0; background: var(--muro-2); }
+.cifras__grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1.6rem; }
+/* La regla de arriba es el tubo otra vez: gris en tres, magenta en la
+   que importa. */
+.cifra { border-top: 3px solid var(--junta); padding-top: 1rem; }
+.cifra--cero { border-top-color: var(--neon); }
+.cifra__n {
+  font-family: var(--mono);
+  font-variant-numeric: tabular-nums;
+  font-size: clamp(1.8rem, 3.6vw, 2.6rem); font-weight: 600;
+  margin: 0 0 .35rem; line-height: 1;
+  letter-spacing: -.02em;
+}
+.cifra--cero .cifra__n { color: var(--neon); }
+.cifra__t { margin: 0; font-size: .88rem; color: var(--medio); }
+@media (max-width: 860px) { .cifras__grid { grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 460px) { .cifras__grid { grid-template-columns: 1fr; } }
+
+/* ── Pieza firma: qué hay en cada piso ───────────────────────────── */
+.pisos { padding: clamp(3.4rem, 7vw, 5.6rem) 0; }
+.corte-caja { display: grid; grid-template-columns: 1fr 1.05fr; gap: clamp(1.6rem, 4vw, 3rem); align-items: start; }
+@media (max-width: 940px) { .corte-caja { grid-template-columns: 1fr; } }
+
+.corte { width: 100%; height: auto; display: block; }
+.cx-muro { fill: var(--muro-2); }
+.cx-rampa { fill: none; stroke: var(--junta-2); stroke-width: 2.5; stroke-linejoin: round; stroke-linecap: round; }
+.cx-pie--r { text-anchor: end; }
+.cx-losa { fill: var(--blanco); stroke: var(--junta); stroke-width: 1.5; transition: stroke .25s var(--sale), stroke-width .25s var(--sale); }
+.cx-neon { fill: var(--neon); }
+.cx-locales rect { fill: #E2E4E7; }
+.cx-num { font-family: var(--mono); font-weight: 600; font-size: 19px; fill: var(--tinta); }
+.cx-rot { font-family: var(--mono); font-size: 10.5px; fill: var(--medio); letter-spacing: .08em; text-transform: uppercase; }
+.cx-pie { font-family: var(--mono); font-size: 10px; fill: var(--medio); }
+/* Nivel encendido desde la lista: se engrosa el filo y se apaga el resto.
+   El tubo del canto ya es magenta siempre — el acento no se «enciende»,
+   se subraya. */
+.cx-nivel--on .cx-losa { stroke: var(--neon); stroke-width: 3; }
+.cx-nivel--off { opacity: .42; }
+.cx-nivel { transition: opacity .25s var(--sale); }
+
+.niveles { list-style: none; margin: 0; padding: 0; display: grid; gap: .45rem; }
+.nivel {
+  padding: .9rem 1rem;
+  background: var(--muro-2);
+  border-left: 4px solid var(--junta);
+  transition: border-color .25s var(--sale), background .25s var(--sale);
+}
+.nivel--on { border-left-color: var(--neon); background: var(--neon-suave); }
+.nivel__t {
+  display: flex; align-items: baseline; gap: .6rem;
+  font-family: var(--display); font-weight: 700; font-size: 1.02rem;
+  margin: 0 0 .2rem;
+}
+.nivel__n {
+  font-family: var(--mono); font-weight: 600; font-size: .8rem;
+  color: var(--neon); letter-spacing: .04em;
+}
+.nivel .ej { font-size: .9rem; color: var(--medio); display: block; }
+/* Sobre el relleno magenta claro del nivel encendido el gris se oscurece
+   un punto: #4C4E55 sobre #F6DEF3 da 6,59:1, por encima del 5,25:1 que
+   tiene el estado normal. El acento nunca empeora la lectura. */
+.nivel--on .ej { color: #4C4E55; }
+
+.locatarios-mini { margin-top: clamp(2.2rem, 4vw, 3rem); border-top: 3px solid var(--junta); padding-top: 1.3rem; }
+.locatarios-mini h3 {
+  font-family: var(--display); font-weight: 700; font-size: 1.1rem; margin: 0 0 .4rem;
+}
+.locatarios-mini .mini { margin-top: 0; }
+
+/* ── Horario y cómo llegar ───────────────────────────────────────── */
+.horario { padding: clamp(3rem, 6vw, 4.8rem) 0; background: var(--muro-2); }
+.horario__grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.2rem; margin: 0 0 2rem; }
+.horario__caja { background: var(--muro); border-top: 3px solid var(--neon); padding: 1.1rem 1.2rem 1.3rem; }
+.horario__caja--dom { border-top-color: var(--junta); }
+.horario__et {
+  font-family: var(--mono); font-size: .68rem; letter-spacing: .12em;
+  text-transform: uppercase; color: var(--medio); margin: 0 0 .5rem;
+}
+.horario__h {
+  font-family: var(--mono);
+  font-variant-numeric: tabular-nums;
+  font-size: clamp(1.5rem, 3.6vw, 2.2rem);
+  font-weight: 600; line-height: 1; letter-spacing: -.02em;
+  margin: 0;
+}
+.horario__h--chico { font-size: clamp(1.05rem, 2.2vw, 1.4rem); }
+/* El «(ej.)» del mono a tamaño de titular quedaba enorme: se achica y se
+   sube a la línea de mayúsculas. */
+.horario__h .ej::after { font-size: .34em; vertical-align: .85em; }
+@media (max-width: 760px) { .horario__grid { grid-template-columns: 1fr; } }
+
+/* ── Mitades ─────────────────────────────────────────────────────── */
+.mitades {
+  display: grid; grid-template-columns: 1fr 1fr;
+  align-items: center; gap: clamp(2rem, 5vw, 4.5rem);
+  width: min(100% - 2.5rem, var(--ancho));
+  margin: clamp(3.4rem, 7vw, 6rem) auto;
+}
+.mitades__foto { margin: 0; }
+.mitades__foto img { width: 100%; aspect-ratio: 4 / 5; object-fit: cover; }
+.mitades__texto p { color: var(--medio); }
+.mitades__texto p b { color: var(--tinta); }
+@media (max-width: 900px) { .mitades { grid-template-columns: 1fr; } }
+
+.datos { margin: 1.6rem 0 0; display: grid; gap: .1rem; }
+.datos > div { display: flex; justify-content: space-between; gap: 1rem; padding: .6rem 0; border-bottom: 1px solid var(--junta); }
+.datos dt {
+  font-family: var(--mono);
+  font-size: .67rem; letter-spacing: .1em; text-transform: uppercase;
+  color: var(--medio); padding-top: .2rem;
+}
+.datos dd { margin: 0; text-align: right; color: var(--tinta); }
+.datos--anchos { max-width: 44rem; }
+
+/* ── Cita ────────────────────────────────────────────────────────── */
+.cita { position: relative; margin: 0; }
+.cita img { width: 100%; aspect-ratio: 16 / 9; object-fit: cover; }
+/* Velo en gradiente: la foto es oscura, pero tiene una ventana clara
+   justo donde termina el texto. Sin el velo el renglón de abajo caía a
+   3,1:1 contra esa franja. */
+.cita__q {
+  position: absolute; inset: 0;
+  display: flex; align-items: center;
+  margin: 0; padding: 2rem clamp(1.5rem, 6vw, 5rem);
+  background: linear-gradient(90deg, rgba(18,18,23,.93) 0%, rgba(18,18,23,.82) 52%, rgba(18,18,23,.34) 100%);
+}
+.cita__q p {
+  font-family: var(--display);
+  font-weight: 800;
+  font-size: clamp(1rem, 2.4vw, 1.7rem);
+  line-height: 1.24;
+  color: var(--muro);
+  margin: 0; max-width: 30ch;
+}
+
+/* ── Para los locatarios (con telón) ─────────────────────────────── */
+.con-telon { position: relative; overflow: hidden; background: var(--noche); color: var(--claro); }
+.telon { position: absolute; inset: 0; }
+.telon img { width: 100%; height: 100%; object-fit: cover; opacity: .34; filter: grayscale(.35) brightness(.4); }
+/* Velo encima de la foto. Sin él, la zona clara de la escalera levanta
+   tanto el fondo que el titular claro se queda en 2,6:1 justo en el
+   medio. Nunca se arregla con blur ni bajando la calidad del JPEG. */
+.telon::after {
+  content: ""; position: absolute; inset: 0;
+  background: linear-gradient(90deg, rgba(18,18,23,.93) 0%, rgba(18,18,23,.78) 55%, rgba(18,18,23,.58) 100%);
+}
+.con-telon > .ancho { position: relative; z-index: 2; }
+.locatarios { padding: clamp(3.2rem, 6.5vw, 5.2rem) 0; }
+
+.pasos { counter-reset: p; list-style: none; margin: 2.2rem 0 0; padding: 0; display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.8rem; }
+.pasos li { counter-increment: p; position: relative; padding-top: 2.7rem; font-size: .95rem; }
+.pasos li::before {
+  content: counter(p, decimal-leading-zero);
+  position: absolute; top: 0; left: 0;
+  font-family: var(--mono);
+  font-size: 1.2rem; font-weight: 600;
+  color: var(--neon-cl);
+}
+/* El tubo otra vez, ahora como numeral subrayado. */
+.pasos li::after {
+  content: ''; position: absolute; top: 1.95rem; left: 0; width: 2.4rem; height: 3px;
+  border-radius: 2px; background: var(--neon-cl);
+}
+.pasos li b { color: var(--muro); }
+@media (max-width: 860px) { .pasos { grid-template-columns: 1fr; } }
+
+/* ── Mosaico ─────────────────────────────────────────────────────── */
+.mos { padding: clamp(3rem, 6vw, 5rem) 0; }
+.mos__grilla { display: grid; grid-template-columns: repeat(3, 1fr); gap: .5rem; width: min(100% - 2.5rem, 1400px); margin-inline: auto; }
+.mos__p { margin: 0; overflow: hidden; }
+.mos__p img { width: 100%; aspect-ratio: 3 / 4; object-fit: cover; transition: transform .5s var(--sale); }
+.mos__p:hover img { transform: scale(1.035); }
+.mos__pie { font-size: .9rem; color: var(--medio); max-width: 76ch; margin: 1.6rem auto 0; text-align: center; }
+.mos__pie b { color: var(--tinta); }
+@media (max-width: 860px) { .mos__grilla { grid-template-columns: repeat(2, 1fr); } }
+
+/* ── Contacto ────────────────────────────────────────────────────── */
+.contacto { padding: clamp(3rem, 6vw, 5rem) 0; background: var(--muro-2); }
+.contacto__cols { display: grid; grid-template-columns: 1.2fr 1fr; gap: clamp(2rem, 5vw, 4rem); align-items: start; }
+.contacto__num {
+  font-family: var(--mono);
+  font-variant-numeric: tabular-nums;
+  font-size: clamp(1.35rem, 3.2vw, 2rem);
+  margin: 0 0 1.2rem;
+  letter-spacing: -.02em;
+}
+.contacto__num a { text-decoration: none; }
+.contacto__num a:hover { text-decoration: underline; }
+.contacto__redes { font-size: .93rem; color: var(--medio); margin: 0; max-width: 58ch; }
+@media (max-width: 840px) { .contacto__cols { grid-template-columns: 1fr; } }
+
+/* ── Para la administración ──────────────────────────────────────── */
+.dueno { padding: clamp(3rem, 6vw, 5rem) 0; background: var(--noche); color: var(--claro); }
+.dueno__cols { display: grid; grid-template-columns: repeat(3, 1fr); gap: 2rem; margin-top: 2rem; }
+.dueno__cols h3 {
+  font-family: var(--mono);
+  font-size: .72rem; letter-spacing: .12em; text-transform: uppercase;
+  color: var(--neon-cl); margin: 0 0 .6rem;
+}
+.dueno__cols p { margin: 0; font-size: .93rem; }
+.dueno__cols b { color: var(--muro); }
+.dueno__cierre { display: flex; flex-wrap: wrap; gap: 1.6rem; margin: 2.6rem 0 0; }
+.flecha { color: var(--neon-cl); text-decoration: none; font-size: .96rem; }
+.flecha:hover { text-decoration: underline; }
+.flecha--fuerte { font-weight: 700; }
+@media (max-width: 860px) { .dueno__cols { grid-template-columns: 1fr; } }
+
+/* ── Pie ─────────────────────────────────────────────────────────── */
+.pie { background: #0C0C10; color: #979BA4; padding: 2.4rem 0; font-size: .87rem; }
+.pie b { color: var(--muro); }
+/* #74777F, que era lo primero que se probó, medía 4,36:1 sobre el negro
+   del pie: bajo el mínimo. Este otro da 5,20:1 medido en la página viva. */
+.pie__leg { color: #82858D; font-size: .8rem; margin: .8rem 0 0; }
+
+/* ── Apariciones ─────────────────────────────────────────────────── */
+/* El escalonado se resuelve con nth-child en el CSS y NUNCA con un
+   style="--i:3" en el HTML: la CSP de esta página bloquea el atributo
+   style y el stagger se perdería sin un solo error en consola. */
+.js .rev > * { opacity: 0; transform: translateY(14px); }
+.js .rev.rev--on > * { opacity: 1; transform: none; transition: opacity .55s ease, transform .55s var(--sale); }
+.js .rev.rev--on > *:nth-child(2) { transition-delay: .06s; }
+.js .rev.rev--on > *:nth-child(3) { transition-delay: .12s; }
+.js .rev.rev--on > *:nth-child(4) { transition-delay: .18s; }
+.js .rev.rev--on > *:nth-child(5) { transition-delay: .24s; }
+.js .rev.rev--on > *:nth-child(6) { transition-delay: .30s; }
+.js .rev.rev--on > *:nth-child(7) { transition-delay: .36s; }
+
+.js .rev:is(.rotulo, .titulo) { opacity: 0; transform: translateY(14px); }
+.js .rev--on:is(.rotulo, .titulo) { opacity: 1; transform: none; transition: opacity .55s ease, transform .55s var(--sale); }
+
+@media (prefers-reduced-motion: reduce) {
+  .js .rev > *, .js .rev:is(.rotulo, .titulo) { opacity: 1; transform: none; }
+  .mos__p:hover img { transform: none; }
+  .boton:hover { transform: none; }
+}
+
+/* ── MAPA DE UBICACION ──────────────────────────────────────────────
+   Imagen propia con mosaicos de OpenStreetMap pegados: la CSP prohibe
+   pedir nada a un tercero, asi que un iframe de Google Maps quedaria en
+   blanco SIN dar un solo error. El "Como llegar" si es un enlace, y un
+   enlace no lo bloquea nada.
+   Los colores salen de currentColor a proposito: asi el bloque se adapta
+   a la paleta de cada demo sin conocerla y sin chocar con ella.
+   La atribucion a OpenStreetMap la exige su licencia (ODbL). */
+.mapa-sec { padding: clamp(2.5rem, 6vw, 4.5rem) 0; }
+.mapa { margin: 1.4rem 0 0; border: 1px solid; border-color: color-mix(in srgb, currentColor 22%, transparent); border-radius: 10px; overflow: hidden; }
+@supports not (color: color-mix(in srgb, red 50%, blue)) { .mapa { border-color: rgba(128, 128, 128, .35); } }
+.mapa img { display: block; width: 100%; height: auto; aspect-ratio: 16 / 10; object-fit: cover; }
+.mapa__pie {
+  display: flex; flex-wrap: wrap; align-items: center; gap: .4rem 1rem;
+  padding: .75rem .9rem;
+  font-size: .86em; line-height: 1.45;
+  border-top: 1px solid; border-top-color: color-mix(in srgb, currentColor 22%, transparent);
+}
+@supports not (color: color-mix(in srgb, red 50%, blue)) { .mapa__pie { border-top-color: rgba(128, 128, 128, .35); } }
+.mapa__pie b { font-weight: 700; }
+.mapa__ir { color: inherit; font-weight: 700; text-decoration: underline; min-height: 44px; display: inline-flex; align-items: center; }
+.mapa__cred { width: 100%; font-size: .84em; opacity: .8; }
+.mapa__cred a { color: inherit; }
+/* Ancho del mapa: casi siempre queda como hijo DIRECTO de la seccion, fuera
+   del contenedor .ancho, y sin esto se va de borde a borde y el pie arranca
+   pegado al filo de la pantalla. */
+.mapa { width: min(100% - 2.5rem, var(--ancho)); margin: 1.4rem auto 0; }
+
+/* ── BOTON FLOTANTE DE CONTACTO ─────────────────────────────────────
+   56 px de alto, por encima del minimo tactil de 44. Los colores de
+   marca van a proposito: se reconocen sin leerlos, y eso es lo que hace
+   que se toquen. Se ve SIEMPRE por defecto; el JS solo lo aparta sobre
+   la portada. Al reves, un fallo del script se llevaria el CTA principal. */
+.flota {
+  position: fixed;
+  right: max(1rem, env(safe-area-inset-right, 0px));
+  bottom: max(1rem, env(safe-area-inset-bottom, 0px));
+  z-index: 60;
+  display: inline-flex; align-items: center; gap: .55rem;
+  height: 56px; padding: 0 1.15rem 0 1rem;
+  border-radius: 999px;
+  text-decoration: none;
+  font-family: var(--cuerpo);
+  font-size: .95rem; font-weight: 700; line-height: 1;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, .26), 0 2px 6px rgba(0, 0, 0, .16);
+  transition: opacity .28s ease, transform .28s ease, box-shadow .18s ease;
+}
+.flota--wa { background: #25D366; color: #07310F; }
+.flota--ig { background: linear-gradient(120deg, #F9CE34 4%, #EE2A7B 48%, #6228D7 96%); color: #FFFFFF; }
+.flota__i { width: 26px; height: 26px; fill: currentColor; flex: none; }
+.flota:hover, .flota:focus-visible { transform: translateY(-2px); box-shadow: 0 10px 26px rgba(0, 0, 0, .3); }
+.js .flota--arriba { opacity: 0; transform: translateY(14px) scale(.94); pointer-events: none; }
+
+@media (max-width: 520px) {
+  .flota { width: 56px; padding: 0; justify-content: center; }
+  .flota__t { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .flota { transition: opacity .28s ease; }
+  .flota:hover, .flota:focus-visible { transform: none; }
+  .js .flota--arriba { transform: none; }
+}

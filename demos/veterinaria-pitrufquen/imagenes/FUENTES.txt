@@ -25,3 +25,13 @@ URL de origen:
 004.jpg | 5582x3721 | Recognizing Canine Cancer Symptoms and Prevention Strategies | https://images.pexels.com/photos/6235108/pexels-photo-6235108.jpeg
 005.jpg | 5184x3456 | Veterinary Photos, Download The BEST Free Veterinary Stock Photos & HD ... | https://images.pexels.com/photos/1350591/pexels-photo-1350591.jpeg?cs=srgb&dl=pexels-pranidchakan-boonrom-101111-1350591.jpg&fm=jpg
 006.jpg | 5184x3456 | Vet Photos, Download The BEST Free Vet Stock Photos & HD Images | https://images.pexels.com/photos/1350593/pexels-photo-1350593.jpeg?cs=srgb&dl=pexels-pranidchakan-boonrom-1350593.jpg&fm=jpg
+
+MAPA DE UBICACION — mapa-01.jpg
+  768 x 768 · zoom 15 · centro -38.9862884, -72.63725
+  Mosaicos de OpenStreetMap pegados en una sola imagen, con el marcador
+  dibujado encima. Datos (c) OpenStreetMap contributors, licencia ODbL:
+  la atribucion tiene que ir VISIBLE junto al mapa, en el pie de la figura.
+  https://www.openstreetmap.org/copyright
+
+tajo-01.jpg — copia de media-01.jpg (14-09-2026): el tajo apuntaba a un archivo que nunca se generó.
+telon-02.jpg — cita-01.jpg reducida a 1200×800, calidad 62 (14-09-2026), por la misma razón.

@@ -1,0 +1,22 @@
+FUENTES DE LAS IMAGENES - AKTIV Kinesiologia Rehecha el 13-09-2026 (presentacion antes que texto). Fotos de REFERENCIA de bancos libres: ninguna es del local; las verdaderas las tiene que mandar el negocio. 
+port-01.jpg  <-  pozo-p-akt-camilla\004.jpg  |  pexels (Pexels License)  |  autor: KoolShooters  |  https://www.pexels.com/es-es/foto/relajacion-relajarse-relax-descanso-6628473/  |  consulta: "massage table room"
+hund1-01.jpg  <-  pozo-p-akt-balon\002.jpg  |  pexels (Pexels License)  |  autor: Marta Wave  |  https://www.pexels.com/es-es/foto/mujer-en-verde-azulado-camisa-tenencia-azul-ejercicio-pelota-6454055/  |  consulta: "pilates ball"
+hund2-01.jpg  <-  pozo-p-akt-mat\008.jpg  |  pexels (Pexels License)  |  autor: Klaus Nielsen  |  https://www.pexels.com/es-es/foto/persona-en-pantalones-cortos-negros-sentada-en-estera-de-yoga-azul-6303447/  |  consulta: "yoga mat"
+hund3-01.jpg  <-  pozo-p-akt-cinta\004.jpg  |  pexels (Pexels License)  |  autor: Maksim Goncharenok  |  https://www.pexels.com/es-es/foto/brazo-mujer-medico-tratamiento-6094058/  |  consulta: "kinesiology tape"
+hund4-01.jpg  <-  pozo-p-akt-rodillo\011.jpg  |  pexels (Pexels License)  |  autor: Nadin Sh  |  https://www.pexels.com/es-es/foto/mujer-pie-fitnes-fitness-20890281/  |  consulta: "foam roller"
+hund5-01.jpg  <-  pozo-p-akt-aceite\002.jpg  |  pexels (Pexels License)  |  autor: Anna Tarazevich  |  https://www.pexels.com/es-es/foto/una-pila-de-piedras-de-basalto-cerca-de-la-botella-y-anis-estrellado-sobre-una-superficie-blanca-6560292/  |  consulta: "massage oil stones"
+hund6-01.jpg  <-  pozo-p-akt-camilla\010.jpg  |  pexels (Pexels License)  |  autor: Marine Fougère  |  https://www.pexels.com/es-es/foto/acogedora-mesa-de-masaje-de-spa-con-vela-y-decoracion-35884499/  |  consulta: "massage table room"
+banda-01.jpg  <-  pozo-p-akt-kayak\010.jpg  |  pexels (Pexels License)  |  autor: Jacob Colvin  |  https://www.pexels.com/es-es/foto/persona-en-embarcacion-cerca-de-la-cascada-1761282/  |  consulta: "kayak river rapids"
+cita-01.jpg  <-  pozo-p-akt-camilla\008.jpg  |  pexels (Pexels License)  |  autor: Anna Tarazevich  |  https://www.pexels.com/es-es/foto/interior-adentro-vacio-toalla-de-bano-6560308/  |  consulta: "massage table room"
+mos1-01.jpg  <-  pozo-p-akt-cinta\010.jpg  |  pexels (Pexels License)  |  autor: Yan Krukau  |  https://www.pexels.com/es-es/foto/manos-papel-taller-corte-5794042/  |  consulta: "kinesiology tape"
+mos2-01.jpg  <-  pozo-p-akt-mat\004.jpg  |  pexels (Pexels License)  |  autor: Vitalii Abakumov  |  https://www.pexels.com/es-es/foto/relajacion-azul-deporte-relajarse-16143600/  |  consulta: "yoga mat"
+mos3-01.jpg  <-  pozo-p-akt-rodillo\005.jpg  |  pexels (Pexels License)  |  autor: IRINA  |  https://www.pexels.com/es-es/foto/rodillo-de-espuma-rosa-con-pelota-de-tenis-sobre-superficie-rosa-39059979/  |  consulta: "foam roller"
+mos4-01.jpg  <-  pozo-p-akt-trail\006.jpg  |  pexels (Pexels License)  |  autor: Alin Serban  |  https://www.pexels.com/es-es/foto/hombre-corriendo-en-un-sendero-del-bosque-durante-el-verano-33284136/  |  consulta: "trail running mountain"
+mos5-01.jpg  <-  pozo-p-akt-aceite\011.png  |  pexels (Pexels License)  |  autor: Rafael Minguet Delgado  |  https://www.pexels.com/es-es/foto/pila-de-rocas-equilibrada-con-textura-de-arena-33550763/  |  consulta: "massage oil stones"
+mos6-01.jpg  <-  pozo-p-akt-camilla\007.jpg  |  pexels (Pexels License)  |  autor: aiseleer  |  https://www.pexels.com/es-es/foto/sala-de-spa-tranquila-con-toallas-y-plantas-36837602/  |  consulta: "massage table room"
+
+BRUMA (bruma-pag-0N.png y bruma-osc-0N.png, 30x20): las MISMAS fotos, recortadas a 3:2, reducidas y
+recoloreadas con C:\devs\demos\hacer-bruma.ps1 (clara >= 0,68 de luminancia / oscura <= 0,05). No suman fuentes.
+    pagina: port-01.jpg, cita-01.jpg, hund5-01.jpg, hund6-01.jpg, mos5-01.jpg, mos2-01.jpg, banda-01.jpg, hund3-01.jpg   |   oscuras: banda-01.jpg, cita-01.jpg, mos5-01.jpg
+
+MAPA: iframe de Google Maps (embed publico, sin clave). No hay imagen de mapa.

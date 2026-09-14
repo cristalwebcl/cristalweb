@@ -1,0 +1,22 @@
+FUENTES DE LAS IMAGENES - Ferreteria Medina Rehecha el 13-09-2026 (presentacion antes que texto). Fotos de REFERENCIA de bancos libres: ninguna es del local; las verdaderas las tiene que mandar el negocio. 
+port-01.jpg  <-  pozo-p-medina-obra\009.jpg  |  pexels (Pexels License)  |  autor: D Goug  |  https://www.pexels.com/es-es/foto/enmarcado-33043393/  |  consulta: "house construction framing"
+hund1-01.jpg  <-  pozo-p-medina-cemento\001.jpg  |  pexels (Pexels License)  |  autor: Aliaksei Smalenski  |  https://www.pexels.com/es-es/foto/los-sacos-de-cemento-se-colocan-en-pales-y-se-almacenan-en-almacenes-los-sacos-de-cemento-se-descargan-del-almacen-a-la-rampa-y-se-preparan-para-el-29817952/  |  consulta: "cement bags"
+hund2-01.jpg  <-  pozo-p-medina-radier\004.jpg  |  pexels (Pexels License)  |  autor: Piotr Jachowicz  |  https://www.pexels.com/es-es/foto/hombre-edificio-construccion-industria-26107204/  |  consulta: "concrete foundation"
+hund3-01.jpg  <-  pozo-p-medina-aridos\005.jpg  |  pexels (Pexels License)  |  autor: Tom Fisk  |  https://www.pexels.com/es-es/foto/montanas-naturaleza-arena-desierto-11160727/  |  consulta: "gravel sand pile"
+hund4-01.jpg  <-  pozo-p-medina-fierro\005.jpg  |  pexels (Pexels License)  |  autor: Pixabay  |  https://www.pexels.com/es-es/foto/varillas-de-acero-de-hierro-gris-46167/  |  consulta: "rebar steel"
+hund5-01.jpg  <-  pozo-p-medina-madera\012.jpg  |  pexels (Pexels License)  |  autor: Mark Stebnicki  |  https://www.pexels.com/es-es/foto/bosque-pila-pilas-montones-12278569/  |  consulta: "lumber stack"
+hund6-01.jpg  <-  pozo-p-medina-tejas\004.jpg  |  pexels (Pexels License)  |  autor: Skylar Kang  |  https://www.pexels.com/es-es/foto/azulejos-de-techo-marron-y-blanco-6432077/  |  consulta: "roof tiles"
+banda-01.jpg  <-  pozo-p-medina-radier\006.jpg  |  pexels (Pexels License)  |  autor: Mehmet Turgut  Kirkgoz  |  https://www.pexels.com/es-es/foto/obrero-de-la-construccion-en-una-cimentacion-de-hormigon-armado-37733181/  |  consulta: "concrete foundation"
+cita-01.jpg  <-  pozo-p-medina-tejas\010.jpg  |  pexels (Pexels License)  |  autor: Priyanshi  Garg  |  https://www.pexels.com/es-es/foto/primer-plano-de-un-tejado-de-terracota-en-galle-sri-lanka-37165058/  |  consulta: "roof tiles"
+mos1-01.jpg  <-  pozo-p-medina-muro\010.jpg  |  pexels (Pexels License)  |  autor: Defrino Maasy  |  https://www.pexels.com/es-es/foto/la-mano-de-un-albanil-construyendo-un-muro-con-precision-39325791/  |  consulta: "brick wall construction"
+mos2-01.jpg  <-  pozo-p-medina-obra\007.jpg  |  pexels (Pexels License)  |  autor: Ron Lach  |  https://www.pexels.com/es-es/foto/madera-casas-edificio-casa-8830259/  |  consulta: "house construction framing"
+mos3-01.jpg  <-  pozo-p-medina-radier\007.jpg  |  pexels (Pexels License)  |  autor: Peter Dyllong  |  https://www.pexels.com/es-es/foto/obra-en-construccion-con-hormigon-y-barras-de-refuerzo-36532625/  |  consulta: "concrete foundation"
+mos4-01.jpg  <-  pozo-p-medina-madera\006.jpg  |  pexels (Pexels License)  |  autor: Los Muertos Crew  |  https://www.pexels.com/es-es/foto/textura-apilar-pila-monton-8447804/  |  consulta: "lumber stack"
+mos5-01.jpg  <-  pozo-p-medina-aridos\008.jpg  |  pexels (Pexels License)  |  autor: Peter Dyllong  |  https://www.pexels.com/es-es/foto/monticulo-de-arena-monocromatico-dramatico-bajo-luz-solar-intensa-36403663/  |  consulta: "gravel sand pile"
+mos6-01.jpg  <-  pozo-p-medina-obra\012.jpg  |  pexels (Pexels License)  |  autor: Saeed Khokhar  |  https://www.pexels.com/es-es/foto/madera-azotea-tejado-edificio-8491089/  |  consulta: "house construction framing"
+
+BRUMA (bruma-pag-0N.png y bruma-osc-0N.png, 30x20): las MISMAS fotos, recortadas a 3:2, reducidas y
+recoloreadas con C:\devs\demos\hacer-bruma.ps1 (clara >= 0,68 de luminancia / oscura <= 0,05). No suman fuentes.
+    pagina: port-01.jpg, banda-01.jpg, cita-01.jpg, mos1-01.jpg, mos4-01.jpg   |   oscuras: port-01.jpg, banda-01.jpg, cita-01.jpg
+
+MAPA: iframe de Google Maps (embed publico, sin clave). No hay imagen de mapa.

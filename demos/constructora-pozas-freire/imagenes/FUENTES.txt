@@ -26,3 +26,10 @@ URL de origen:
 002.jpg | 6015x3739 | FBAR and FATCA Compliance: What Expats Need to Know | https://images.pexels.com/photos/10202865/pexels-photo-10202865.jpeg
 003.jpg | 6000x4000 | 1000+ Amazing Building Photos · Pexels · Free Stock Photos | https://images.pexels.com/photos/323705/pexels-photo-323705.jpeg?cs=srgb&dl=apartment-apartment-building-architecture-323705.jpg&fm=jpg
 004.jpg | 5658x3772 | 20,000+ Best Construction Photos · 100% Free Download · Pexels Stock Photos | https://images.pexels.com/photos/4513940/pexels-photo-4513940.jpeg?cs=srgb&dl=pexels-jiyoung-kim-4513940.jpg&fm=jpg
+
+MAPA DE UBICACION — mapa-01.jpg
+  768 x 768 · zoom 14 · centro -38.9514242, -72.6254333
+  Mosaicos de OpenStreetMap pegados en una sola imagen, con el marcador
+  dibujado encima. Datos (c) OpenStreetMap contributors, licencia ODbL:
+  la atribucion tiene que ir VISIBLE junto al mapa, en el pie de la figura.
+  https://www.openstreetmap.org/copyright

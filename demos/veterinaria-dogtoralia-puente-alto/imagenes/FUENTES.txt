@@ -1,0 +1,22 @@
+FUENTES DE LAS IMAGENES - Dogtoralia Rehecha el 13-09-2026 (presentacion antes que texto). Fotos de REFERENCIA de bancos libres: ninguna es del local; las verdaderas las tiene que mandar el negocio. 
+port-01.jpg  <-  pozo-p-dog-estetoscopio\010.jpg  |  pexels (Pexels License)  |  autor: Eduardo López  |  https://www.pexels.com/es-es/foto/perro-con-correa-azul-y-pelotas-de-juguete-16618516/  |  consulta: "stethoscope pet"
+hund1-01.jpg  <-  pozo-p-dog-cachorro\012.jpg  |  pexels (Pexels License)  |  autor: Sueda   Güzeldere  |  https://www.pexels.com/es-es/foto/adorable-cachorro-de-bulldog-frances-en-clinica-veterinaria-28644464/  |  consulta: "puppy vet exam"
+hund2-01.jpg  <-  pozo-p-dog-clinica\010.jpg  |  pexels (Pexels License)  |  autor: Tima Miroshnichenko  |  https://www.pexels.com/es-es/foto/blanco-y-negro-animal-perro-mascota-6234623/  |  consulta: "veterinary clinic dog"
+hund3-01.jpg  <-  pozo-p-dog-gato\012.jpg  |  pexels (Pexels License)  |  autor: Nastaran Atri  |  https://www.pexels.com/es-es/foto/encantador-gato-britanico-de-pelo-corto-relajandose-en-el-interior-38319755/  |  consulta: "cat veterinarian"
+hund4-01.jpg  <-  pozo-p-dog-espera\009.jpg  |  pexels (Pexels License)  |  autor: Eduardo López  |  https://www.pexels.com/es-es/foto/perro-con-collar-16620452/  |  consulta: "dog waiting room"
+hund5-01.jpg  <-  pozo-p-dog-cachorro\005.jpg  |  pexels (Pexels License)  |  autor: Regina Tommasi  |  https://www.pexels.com/es-es/foto/adorable-cachorro-de-corgi-jugando-al-aire-libre-35131633/  |  consulta: "puppy vet exam"
+hund6-01.jpg  <-  pozo-p-dog-estetoscopio\008.jpg  |  pexels (Pexels License)  |  autor: Ludovic Delot  |  https://www.pexels.com/es-es/foto/retrato-en-primer-plano-de-un-gato-atigrado-rojizo-31440961/  |  consulta: "stethoscope pet"
+banda-01.jpg  <-  pozo-p-dog-puerta\011.jpg  |  pexels (Pexels License)  |  autor: Plato Terentev  |  https://www.pexels.com/es-es/foto/sucio-textura-puerta-de-madera-9808734/  |  consulta: "new door open"
+cita-01.jpg  <-  pozo-p-dog-espera\010.jpg  |  pexels (Pexels License)  |  autor: David Mejia  |  https://www.pexels.com/es-es/foto/pared-muro-perro-mascota-14705067/  |  consulta: "dog waiting room"
+mos1-01.jpg  <-  pozo-p-dog-espera\011.jpg  |  pexels (Pexels License)  |  autor: Bianca Beltrán  |  https://www.pexels.com/es-es/foto/hermoso-border-collie-15794775/  |  consulta: "dog waiting room"
+mos2-01.jpg  <-  pozo-p-dog-gato\011.jpg  |  pexels (Pexels License)  |  autor: Daniil Kondrashin  |  https://www.pexels.com/es-es/foto/gato-gris-jugando-con-juguete-de-pluma-en-interiores-38151510/  |  consulta: "cat veterinarian"
+mos3-01.jpg  <-  pozo-p-dog-espera\004.jpg  |  pexels (Pexels License)  |  autor: Wong Peter  |  https://www.pexels.com/es-es/foto/adorable-cachorro-dalmata-con-collar-rojo-en-interiores-34589931/  |  consulta: "dog waiting room"
+mos4-01.jpg  <-  pozo-p-dog-estetoscopio\001.jpg  |  pexels (Pexels License)  |  autor: Yehosh García  |  https://www.pexels.com/es-es/foto/campo-animal-mascota-gato-14868218/  |  consulta: "stethoscope pet"
+mos5-01.jpg  <-  pozo-p-dog-espera\006.jpg  |  pexels (Pexels License)  |  autor: Impact Dog Crates  |  https://www.pexels.com/es-es/foto/ambiente-acogedor-de-oficina-en-casa-jaula-para-perros-impact-y-perro-con-una-pareja-atractiva-28381253/  |  consulta: "dog waiting room"
+mos6-01.jpg  <-  pozo-p-dog-puerta\005.jpg  |  pexels (Pexels License)  |  autor: Nelia Lupa  |  https://www.pexels.com/es-es/foto/entrada-abierta-a-un-exuberante-jardin-en-dublin-39085365/  |  consulta: "new door open"
+
+BRUMA (bruma-pag-0N.png y bruma-osc-0N.png, 30x20): las MISMAS fotos, recortadas a 3:2, reducidas y
+recoloreadas con C:\devs\demos\hacer-bruma.ps1 (clara >= 0,68 de luminancia / oscura <= 0,05). No suman fuentes.
+    pagina: port-01.jpg, banda-01.jpg, cita-01.jpg, mos1-01.jpg, hund4-01.jpg   |   oscuras: port-01.jpg, banda-01.jpg, cita-01.jpg
+
+MAPA: iframe de Google Maps (embed publico, sin clave). No hay imagen de mapa.

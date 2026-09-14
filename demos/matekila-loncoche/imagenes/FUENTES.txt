@@ -28,3 +28,10 @@ URL de origen:
 003.jpg | 5834x7779 | Boxes on Shelves inside a Warehouse · Free Stock Photo | https://images.pexels.com/photos/29454378/pexels-photo-29454378.jpeg?cs=srgb&dl=pexels-vadym-buzey-103391775-29454378.jpg&fm=jpg
 004.jpg | 5773x4330 | Various Products on Half Empty Store Shelves · Free Stock Photo | https://images.pexels.com/photos/4437145/pexels-photo-4437145.jpeg?cs=srgb&dl=pexels-roy-broo-1304613-4437145.jpg&fm=jpg
 005.jpg | 5400x3498 | 500+ Amazing Grocery Store Photos · Pexels · Free Stock Photos | https://images.pexels.com/photos/375897/pexels-photo-375897.jpeg?cs=srgb&dl=assorted-assortment-booth-375897.jpg&fm=jpg
+
+MAPA DE UBICACION — mapa-01.jpg
+  768 x 768 · zoom 14 · centro -39.370616, -72.6300704
+  Mosaicos de OpenStreetMap pegados en una sola imagen, con el marcador
+  dibujado encima. Datos (c) OpenStreetMap contributors, licencia ODbL:
+  la atribucion tiene que ir VISIBLE junto al mapa, en el pie de la figura.
+  https://www.openstreetmap.org/copyright

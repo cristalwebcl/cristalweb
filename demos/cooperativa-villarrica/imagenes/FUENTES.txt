@@ -1,0 +1,22 @@
+FUENTES DE LAS IMAGENES - Cooperativa Villarrica Rehecha el 13-09-2026 (presentacion antes que texto). Fotos de REFERENCIA de bancos libres: ninguna es del local; las verdaderas las tiene que mandar el negocio. 
+port-01.jpg  <-  pozo-p-coop-madera\005.jpg  |  pexels (Pexels License)  |  autor: Gizem toprak  |  https://www.pexels.com/es-es/foto/primer-plano-de-un-trabajo-de-carpinteria-con-una-herramienta-de-cepillado-manual-37358115/  |  consulta: "woodworking"
+hund1-01.jpg  <-  pozo-p-coop-madera\006.jpg  |  pexels (Pexels License)  |  autor: Daniel Reche  |  https://www.pexels.com/es-es/foto/manos-aficion-hobby-ocio-7109995/  |  consulta: "woodworking"
+hund2-01.jpg  <-  pozo-p-coop-soldadura\005.jpg  |  pexels (Pexels License)  |  autor: K  |  https://www.pexels.com/es-es/foto/persona-vestida-con-casco-de-soldadura-negro-2950117/  |  consulta: "welding"
+hund3-01.jpg  <-  pozo-p-coop-ferreteria\009.jpg  |  pexels (Pexels License)  |  autor: Joaquin Reyes Ramos  |  https://www.pexels.com/es-es/foto/variedad-de-sujetadores-en-cajas-de-almacenamiento-38575500/  |  consulta: "hardware store"
+hund4-01.jpg  <-  pozo-p-coop-herramientas\004.jpg  |  pexels (Pexels License)  |  autor: Miguel Á. Padriñán  |  https://www.pexels.com/es-es/foto/blanco-y-negro-pared-muro-metal-16679591/  |  consulta: "hand tools"
+hund5-01.jpg  <-  pozo-p-coop-herramientas\008.jpg  |  pexels (Pexels License)  |  autor: Miguel Á. Padriñán  |  https://www.pexels.com/es-es/foto/negro-herramienta-industrial-maquinaria-16679645/  |  consulta: "hand tools"
+hund6-01.jpg  <-  pozo-p-coop-herramientas\009.jpg  |  pexels (Pexels License)  |  autor: Miguel Á. Padriñán  |  https://www.pexels.com/es-es/foto/metal-herramientas-taller-coleccion-16679649/  |  consulta: "hand tools"
+banda-01.jpg  <-  pozo-p-coop-soldadura\009.jpg  |  pexels (Pexels License)  |  autor: Gabriel Rissi  |  https://www.pexels.com/es-es/foto/trabajando-mascara-chispas-taller-22863134/  |  consulta: "welding"
+cita-01.jpg  <-  pozo-p-coop-taller\002.jpg  |  pexels (Pexels License)  |  autor: Andrea Piacquadio  |  https://www.pexels.com/es-es/foto/madera-creativo-sucio-escritorio-3853233/  |  consulta: "carpenter workshop"
+mos1-01.jpg  <-  pozo-p-coop-madera\011.jpg  |  pexels (Pexels License)  |  autor: cottonbro studio  |  https://www.pexels.com/es-es/foto/persona-en-camisa-de-manga-larga-gris-con-papel-blanco-5089127/  |  consulta: "woodworking"
+mos2-01.jpg  <-  pozo-p-coop-herramientas\005.jpg  |  pexels (Pexels License)  |  autor: Miguel Á. Padriñán  |  https://www.pexels.com/es-es/foto/blanco-y-negro-oscuro-fila-hilera-16679582/  |  consulta: "hand tools"
+mos3-01.jpg  <-  pozo-p-coop-taller\012.jpg  |  pexels (Pexels License)  |  autor: Alanur Ö.  |  https://www.pexels.com/es-es/foto/madera-industria-mesa-apilar-18420600/  |  consulta: "carpenter workshop"
+mos4-01.jpg  <-  pozo-p-coop-soldadura\003.jpg  |  pexels (Pexels License)  |  autor: Gabriel Rissi  |  https://www.pexels.com/es-es/foto/una-persona-que-usa-ropa-protectora-mientras-suelda-en-un-taller-22863131/  |  consulta: "welding"
+mos5-01.jpg  <-  pozo-p-coop-madera\001.jpg  |  pexels (Pexels License)  |  autor: Tima Miroshnichenko  |  https://www.pexels.com/es-es/foto/madera-persona-trabajando-industria-6790088/  |  consulta: "woodworking"
+mos6-01.jpg  <-  pozo-p-coop-taller\009.jpg  |  pexels (Pexels License)  |  autor: cottonbro studio  |  https://www.pexels.com/es-es/foto/hombre-trabajando-en-pie-de-pie-7484165/  |  consulta: "carpenter workshop"
+
+BRUMA (bruma-pag-0N.png y bruma-osc-0N.png, 30x20): las MISMAS fotos, recortadas a 3:2, reducidas y
+recoloreadas con C:\devs\demos\hacer-bruma.ps1 (clara >= 0,68 de luminancia / oscura <= 0,05). No suman fuentes.
+    pagina: port-01.jpg, banda-01.jpg, cita-01.jpg, hund1-01.jpg, hund2-01.jpg, hund5-01.jpg, mos1-01.jpg, mos3-01.jpg   |   oscuras: port-01.jpg, cita-01.jpg, banda-01.jpg
+
+MAPA: iframe de Google Maps (embed publico, sin clave). No hay imagen de mapa.

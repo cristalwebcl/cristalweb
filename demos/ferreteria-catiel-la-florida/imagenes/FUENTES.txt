@@ -1,0 +1,22 @@
+FUENTES DE LAS IMAGENES - FerreterÃ­a Catiel Rehecha el 13-09-2026 (presentacion antes que texto). Fotos de REFERENCIA de bancos libres: ninguna es del local; las verdaderas las tiene que mandar el negocio. 
+port-01.jpg  <-  pozo-p-cat-muestras\005.jpg  |  pexels (Pexels License)  |  autor: Viktorya  Sergeeva 🫂  |  https://www.pexels.com/es-es/foto/monitor-mostrar-exhibicion-exposicion-10275088/  |  consulta: "color swatches"
+hund1-01.jpg  <-  pozo-p-cat-tarros\006.jpg  |  pexels (Pexels License)  |  autor: Miguel Marmolejos Fernández  |  https://www.pexels.com/es-es/foto/rojo-arte-creativo-azul-4616238/  |  consulta: "paint cans colors"
+hund2-01.jpg  <-  pozo-p-cat-brocha\001.jpg  |  pexels (Pexels License)  |  autor: Belén Montero  |  https://www.pexels.com/es-es/foto/pincel-azul-sobre-pintura-blanca-sobre-una-superficie-clara-35747399/  |  consulta: "paint brush stroke"
+hund3-01.jpg  <-  pozo-p-cat-cinta\001.jpg  |  pexels (Pexels License)  |  autor: Nataliya Vaitkevich  |  https://www.pexels.com/es-es/foto/pincel-cepillo-cepillar-suelo-5641418/  |  consulta: "masking tape painting"
+hund4-01.jpg  <-  pozo-p-cat-estante\003.jpg  |  pexels (Pexels License)  |  autor: Joaquin Reyes Ramos  |  https://www.pexels.com/es-es/foto/variedad-de-sujetadores-en-cajas-de-almacenamiento-38575500/  |  consulta: "hardware store shelves"
+hund5-01.jpg  <-  pozo-p-cat-rodillo\005.jpg  |  pexels (Pexels License)  |  autor: Natalia S  |  https://www.pexels.com/es-es/foto/rodillo-de-pintura-blanco-en-superficie-de-pared-lisa-34046211/  |  consulta: "paint roller wall"
+hund6-01.jpg  <-  pozo-p-cat-cinta\004.jpg  |  pexels (Pexels License)  |  autor: Jan van der Wolf  |  https://www.pexels.com/es-es/foto/rincon-minimalista-con-enchufe-electrico-36344914/  |  consulta: "masking tape painting"
+banda-01.jpg  <-  pozo-p-cat-rodillo\004.jpg  |  pexels (Pexels License)  |  autor: Stephanie  Ho  |  https://www.pexels.com/es-es/foto/persona-sosteniendo-el-rodillo-de-pintura-mientras-pinta-la-pared-994164/  |  consulta: "paint roller wall"
+cita-01.jpg  <-  pozo-p-cat-muestras\011.jpg  |  pexels (Pexels License)  |  autor: Cherylanne Hsieh  |  https://www.pexels.com/es-es/foto/modelo-estampado-abstracto-resumen-5728272/  |  consulta: "color swatches"
+mos1-01.jpg  <-  pozo-p-cat-tarros\008.jpg  |  pexels (Pexels License)  |  autor: Jean-Paul Wettstein  |  https://www.pexels.com/es-es/foto/arte-colorido-de-colores-pintar-17974467/  |  consulta: "paint cans colors"
+mos2-01.jpg  <-  pozo-p-cat-brocha\004.jpg  |  pexels (Pexels License)  |  autor: https://kaboompics.com/  |  https://www.pexels.com/es-es/foto/arte-pincel-fondo-blanco-acrilico-6757554/  |  consulta: "paint brush stroke"
+mos3-01.jpg  <-  pozo-p-cat-rodillo\012.jpg  |  pexels (Pexels License)  |  autor: Polina Tankilevitch  |  https://www.pexels.com/es-es/foto/hombre-mano-pared-muro-5583126/  |  consulta: "paint roller wall"
+mos4-01.jpg  <-  pozo-p-cat-muestras\008.jpg  |  pexels (Pexels License)  |  autor: Sugar Daddy Stock  |  https://www.pexels.com/es-es/foto/modelo-estampado-colorido-de-colores-10063743/  |  consulta: "color swatches"
+mos5-01.jpg  <-  pozo-p-cat-cinta\009.jpg  |  pexels (Pexels License)  |  autor: Heesu Won  |  https://www.pexels.com/es-es/foto/azul-abstracto-resumen-linea-5707977/  |  consulta: "masking tape painting"
+mos6-01.jpg  <-  pozo-p-cat-gotas\002.jpg  |  pexels (Pexels License)  |  autor: Aleksandar Pasaric  |  https://www.pexels.com/es-es/foto/arte-textura-amarillo-abstracto-4862581/  |  consulta: "paint drips"
+
+BRUMA (bruma-pag-0N.png y bruma-osc-0N.png, 30x20): las MISMAS fotos, recortadas a 3:2, reducidas y
+recoloreadas con C:\devs\demos\hacer-bruma.ps1 (clara >= 0,68 de luminancia / oscura <= 0,05). No suman fuentes.
+    pagina: port-01.jpg, mos1-01.jpg, hund1-01.jpg, cita-01.jpg, mos3-01.jpg   |   oscuras: port-01.jpg, cita-01.jpg, mos1-01.jpg
+
+MAPA: iframe de Google Maps (embed publico, sin clave). No hay imagen de mapa.

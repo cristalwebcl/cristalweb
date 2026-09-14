@@ -20,7 +20,7 @@
 
 <div class="propuesta">
   <p class="propuesta__que">Propuesta de sitio web — preparada para <b>A&amp;G Kinesiología Integral</b> por CristalWeb</p>
-  <p class="propuesta__gancho">Atienden Fonasa, particular y reembolso — la información que decide si un paciente llama — y eso hoy vive en una biografía de Instagram de tres líneas. Escrito y ordenado, eso solo ya justifica la página.</p>
+  <p class="propuesta__gancho">Atienden Fonasa, particular y reembolso — la información que decide si un paciente llama — y al <b>08-09-2026</b> eso vive entero en una biografía de Instagram de tres líneas: cero páginas donde leer cuánto cuesta y qué papel hay que llevar. Ésta es la página que debería estar ahí.</p>
 </div>
 
 <header class="cab" id="cab">
@@ -31,8 +31,8 @@
   <nav class="cab__nav" aria-label="Secciones">
     <a href="#cuanto">Cuánto cuesta</a>
     <a href="#trata">Qué se trata</a>
-    <a href="#sesion">Cómo es la sesión</a>
-    <a href="#hora">Pedir hora</a>
+    <a href="#primera">La primera vez</a>
+    <a href="#sesion">Dónde ubicarlos</a>
   </nav>
   <a class="cab__cta boton boton--chico" href="#hora">Pedir hora</a>
 </header>
@@ -41,9 +41,16 @@
 
 <!-- ═══════════ PORTADA ═══════════ -->
 <section class="portada" id="portada" aria-labelledby="t-portada">
+  <!-- La foto es la base y el clip es su hermano: mismo contenedor, mismo
+       selector, misma máscara. El clip sale de la MISMA sesión de sala que
+       port-01.jpg —igual camilla, igual profesional—, así que al fundirse
+       no hay corte de escena. Sin poster= a propósito: el <img> se queda
+       debajo para siempre y nunca aparece un rectángulo negro. -->
   <div class="portada__foto" aria-hidden="true">
     <img src="imagenes/port-01.jpg" width="2560" height="1693"
          decoding="async" fetchpriority="high" alt="">
+    <video class="portada__video" data-src="video/port.mp4" muted playsinline loop
+           preload="none" aria-hidden="true"></video>
   </div>
 
   <!-- ═══════ ESCENA DE PORTADA · «la línea de movilidad» ═══════
@@ -62,6 +69,16 @@
       <path class="escena__arco" d="M290 185 A125 125 0 0 0 56.7 122.5"/>
       <circle class="escena__pivote" cx="165" cy="185" r="4"/>
       <circle class="escena__punto" cx="56.7" cy="122.5" r="5"/>
+      <!-- PLACA POR RÓTULO. El halo radial de .escena::before no llega
+           hasta acá: es closest-side y el «0°» cae a 220 px del centro
+           con el radio en 217, o sea alfa 0. Medido sobre la página
+           viva, el rótulo daba 2,6:1 de media contra la camiseta gris
+           de la foto — y peor contra el clip, que cambia de fotograma
+           treinta veces por segundo. La regla de la casa para texto
+           sobre zona nítida es PLACA, no subir el velo. -->
+      <rect class="escena__placa" x="268" y="191" width="22" height="16" rx="3"/>
+      <rect class="escena__placa" x="150" y="40"  width="30" height="16" rx="3"/>
+      <rect class="escena__placa" x="16"  y="98"  width="37" height="16" rx="3"/>
       <text class="escena__gr" x="288" y="203" text-anchor="end">0°</text>
       <text class="escena__gr" x="165" y="52"  text-anchor="middle">90°</text>
       <text class="escena__gr" x="34"  y="110" text-anchor="middle">150°</text>
@@ -88,6 +105,38 @@
 </section>
 
 
+<!-- ═══════════ CIFRAS ═══════════
+     Cuatro números y la herida en la misma fila. Sólo cuenta el 12 —el
+     único que es trabajo hecho y no aritmética de un párrafo—; el 0 se
+     queda quieto a propósito: un contador que sube hasta la herida se
+     lee como truco. El valor final va escrito dentro del <b>, así que
+     sin JavaScript y con menos movimiento se lee igual. -->
+<section class="cifras con-telon" aria-label="La página en cuatro números">
+  <div class="telon" aria-hidden="true">
+    <img src="imagenes/telon-02.jpg" width="1200" height="800" loading="lazy" decoding="async" alt="">
+  </div>
+  <ul class="cifras__lista ancho cascada">
+    <li>
+      <b class="cifras__n">3</b>
+      <span>previsiones atendidas: Fonasa, particular y reembolso de isapre</span>
+    </li>
+    <li>
+      <b class="cifras__n" data-cuenta="12">12</b>
+      <span>pasos escritos acá, uno por uno, de los tres caminos de pago</span>
+    </li>
+    <li>
+      <b class="cifras__n">6</b>
+      <span>motivos de consulta con lo que se evalúa en cada uno</span>
+    </li>
+    <li class="cifras__herida">
+      <b class="cifras__n">0</b>
+      <span>páginas donde hoy se puede leer cuánto cuesta<br>
+        <i>verificado el 08-09-2026</i></span>
+    </li>
+  </ul>
+</section>
+
+
 <!-- ═══════════ PIEZA FIRMA · ¿CUÁNTO ME CUESTA DE VERDAD? ═══════════
      El diagrama de decisión está ESCRITO como tres bloques con sus
      pasos. Sin JavaScript se leen los tres completos; el JS sólo
@@ -98,9 +147,10 @@
     <h2 class="titulo" id="t-cuanto">¿Cuánto me cuesta de verdad?</h2>
     <p class="entradilla">
       Tres previsiones, tres caminos distintos. Elija el suyo y vea qué
-      documento necesita, cuánto paga el día de la sesión y cuánto le
-      vuelve después. <b>Los montos van como ejemplo</b>; el flujo, los
-      documentos y el orden son reales y son lo que nadie escribe.
+      documento necesita, qué paga el día de la sesión y qué le vuelve
+      después. <b>El valor exacto no está acá porque no lo inventamos</b>:
+      lo pone A&amp;G y va en el hueco marcado. El flujo, los documentos y
+      el orden son reales y son lo que nadie escribe.
     </p>
 
     <div class="elige" id="elige" role="group" aria-label="Elegir previsión">
@@ -110,7 +160,7 @@
     </div>
   </div>
 
-  <div class="vias ancho" id="vias">
+  <div class="vias ancho cascada" id="vias">
     <article class="via" data-prev="fonasa">
       <h3 class="via__t">Con Fonasa</h3>
       <ol class="via__pasos">
@@ -133,7 +183,7 @@
           <p class="via__n">Paso 3</p>
           <p class="via__q"><b>Qué paga ese día:</b> sólo el copago del
             bono, según su tramo.</p>
-          <p class="via__m ej" data-ejemplo="ejemplo">Tramo B: <b>$3.500</b> por sesión</p>
+          <p class="via__m ej" data-ejemplo="el valor lo pone A&amp;G">Paga el <b>copago</b> de su tramo</p>
         </li>
         <li>
           <p class="via__n">Después</p>
@@ -163,7 +213,7 @@
           <p class="via__n">Paso 3</p>
           <p class="via__q"><b>Qué paga ese día:</b> el valor completo
             de la sesión.</p>
-          <p class="via__m ej" data-ejemplo="ejemplo">Sesión: <b>$25.000</b></p>
+          <p class="via__m ej" data-ejemplo="el valor lo pone A&amp;G">Paga la <b>sesión completa</b></p>
         </li>
         <li>
           <p class="via__n">Después</p>
@@ -194,24 +244,31 @@
           <p class="via__n">Paso 3</p>
           <p class="via__q"><b>Qué paga ese día:</b> el valor completo,
             igual que particular. Se le entrega boleta.</p>
-          <p class="via__m ej" data-ejemplo="ejemplo">Sesión: <b>$25.000</b></p>
+          <p class="via__m ej" data-ejemplo="el valor lo pone A&amp;G">Paga la <b>sesión completa</b></p>
         </li>
         <li>
           <p class="via__n">Después</p>
           <p class="via__q"><b>Cuánto vuelve:</b> lo que su plan cubra.
             Se sube la boleta y la orden por la app de la isapre.</p>
-          <p class="via__m ej" data-ejemplo="ejemplo">Suele volver entre <b>40% y 70%</b> según el plan</p>
+          <p class="via__m ej" data-ejemplo="lo fija su isapre">Vuelve <b>lo que cubra su plan</b></p>
         </li>
       </ol>
     </article>
   </div>
 
-  <p class="ancho nota">
-    El porcentaje de reembolso y el copago dependen de su plan y su
-    tramo: los números de arriba son referencia, no una promesa. Lo que
-    sí es exacto es el orden de los pasos y qué papel se necesita en
-    cada uno.
-  </p>
+  <!-- La nota va DENTRO de un .ancho y no lleva ella misma la clase: con
+       las dos juntas, el max-width de 66ch le ganaba al width del
+       contenedor y el margin-inline:auto la centraba en la página, en
+       vez de alinearla con el resto de la sección. -->
+  <div class="ancho">
+    <p class="nota">
+      En esta página no hay ni un precio, y es a propósito: el copago
+      depende de su tramo, el porcentaje de reembolso depende de su plan
+      y el valor de la sesión lo fija A&amp;G. Inventar cualquiera de los
+      tres sería mentirle. Lo que sí es exacto es el orden de los pasos y
+      qué papel se necesita en cada uno.
+    </p>
+  </div>
 </section>
 
 
@@ -237,7 +294,7 @@
       concreto sale de esa evaluación, con el paciente adelante.
     </p>
 
-    <ul class="casos">
+    <ul class="casos cascada">
       <li class="caso">
         <h3>Dolor lumbar</h3>
         <p>Qué se evalúa: en qué movimiento aparece, si baja por la
@@ -276,24 +333,111 @@
 </section>
 
 
+<!-- ═══════════ LA PRIMERA VEZ · sección invertida ═══════════
+     Única sección oscura de contenido largo de la página; lleva su telón
+     —el box vacío, antes de que entre nadie— y TODOS sus grises
+     reescritos a mano (los de la paleta clara dan 1,1:1 acá).
+     Cuatro momentos, escritos: no promete resultado, describe orden. -->
+<section class="primera con-telon" id="primera" aria-labelledby="t-primera">
+  <div class="telon" aria-hidden="true">
+    <img src="imagenes/telon-03.jpg" width="1200" height="800" loading="lazy" decoding="async" alt="">
+  </div>
+  <div class="ancho">
+    <p class="rotulo rotulo--claro">La primera vez</p>
+    <h2 class="titulo titulo--claro" id="t-primera">Qué pasa en la primera consulta.</h2>
+    <p class="entradilla entradilla--claro">
+      Nadie le cuenta esto antes de entrar, y es la mitad del miedo a
+      pedir hora. Son cuatro momentos y duran lo que dura la sesión.
+    </p>
+
+    <ol class="momentos cascada">
+      <li class="momento">
+        <p class="momento__n">01</p>
+        <h3>Se conversa</h3>
+        <p>Desde cuándo, con qué empezó, qué ha probado y qué necesita
+          poder hacer. Esa parte no la reemplaza ningún examen.</p>
+      </li>
+      <li class="momento momento--destaca">
+        <p class="momento__n">02</p>
+        <h3>Se mide</h3>
+        <p>Hasta dónde llega el movimiento, en qué rango aparece la
+          molestia y qué aguanta. <b>Éste es el momento que decide el
+          plan</b>, y por eso la primera sesión es evaluación.</p>
+      </li>
+      <li class="momento">
+        <p class="momento__n">03</p>
+        <h3>Se explica</h3>
+        <p>Qué mostró la evaluación y qué se va a trabajar, dicho en
+          palabras que se entienden, con usted adelante.</p>
+      </li>
+      <li class="momento">
+        <p class="momento__n">04</p>
+        <h3>Se anota la tarea</h3>
+        <p>Qué hacer en la casa hasta la próxima sesión, cuántas veces
+          y con qué señal detenerse. Por escrito.</p>
+      </li>
+    </ol>
+
+    <div class="traer">
+      <h3 class="traer__t">Qué conviene traer</h3>
+      <ul class="traer__l">
+        <li>La orden médica, si la tiene — con Fonasa es obligatoria y
+          con isapre la piden para reembolsar.</li>
+        <li>Exámenes o informes previos: radiografías, resonancias, el
+          protocolo del traumatólogo si viene operado.</li>
+        <li>Ropa cómoda que deje ver y mover la zona que duele.</li>
+      </ul>
+    </div>
+
+    <p class="nota nota--claro">
+      Esto describe cómo se ordena una primera sesión de kinesiología.
+      No es un diagnóstico, no es una indicación de tratamiento y no
+      promete un resultado: eso se hace con el paciente presente.
+    </p>
+  </div>
+</section>
+
+
+<!-- ═══════════ MITADES · la tarea de la casa ═══════════ -->
+<section class="mit" aria-labelledby="t-mit">
+  <div class="mit__foto">
+    <img src="imagenes/mit-01.jpg" width="1500" height="2000" loading="lazy" decoding="async"
+         alt="Ejercicio con banda elástica hecho en casa, sobre una alfombra del living">
+  </div>
+  <div class="mit__txt">
+    <p class="rotulo">Entre sesión y sesión</p>
+    <h2 class="titulo" id="t-mit">La mitad del tratamiento pasa en su casa.</h2>
+    <p>
+      Una sesión de kinesiología no es sólo lo que ocurre en la camilla.
+      La parte que decide el resultado es la que sigue después, en el
+      living, sin nadie mirando y sin equipamiento.
+    </p>
+    <p>
+      Por eso acá la tarea se anota: qué ejercicio, cuántas veces al
+      día y con qué señal hay que parar. Escrito, no dicho al pasar en
+      la puerta — que es como se pierde.
+    </p>
+  </div>
+</section>
+
+
 <!-- ═══════════ LA SESIÓN · con telón ═══════════ -->
 <section class="sesion con-telon" id="sesion" aria-labelledby="t-ses">
   <div class="telon" aria-hidden="true">
     <img src="imagenes/telon-01.jpg" width="1200" height="800" loading="lazy" decoding="async" alt="">
   </div>
   <div class="ancho">
-    <p class="rotulo">Cómo es la sesión</p>
-    <h2 class="titulo" id="t-ses">Evaluar, trabajar, y dejarle tarea.</h2>
+    <p class="rotulo">Dónde y con qué datos</p>
+    <h2 class="titulo" id="t-ses">Los datos, en una ficha.</h2>
     <div class="sesion__cols">
       <p>
-        Una sesión de kinesiología no es sólo lo que pasa en la camilla.
-        La parte que decide el resultado es la que sigue en la casa: los
-        ejercicios que quedan de tarea y que nadie supervisa.
+        Esto es lo que A&amp;G publica hoy, ordenado para que se pueda
+        leer de una pasada en el teléfono en vez de buscarlo en una
+        biografía de Instagram.
       </p>
       <p>
-        Por eso acá se anota qué hacer entre sesiones, cuántas veces y
-        con qué señal detenerse. Escrito, no dicho al pasar en la
-        puerta.
+        Lo que aparece marcado como ejemplo es lo único que hace falta
+        confirmar antes de que esta página salga a internet.
       </p>
     </div>
     <dl class="datos">
@@ -301,7 +445,7 @@
       <div><dt>Previsiones</dt><dd>Fonasa, particular y reembolso de isapre</dd></div>
       <div><dt>Correo</dt><dd><a href="mailto:agkinesiologia.integral@gmail.com">agkinesiologia.integral@gmail.com</a></dd></div>
       <div><dt>Teléfono</dt><dd><a href="tel:+56973725439">+56 9 7372 5439</a></dd></div>
-      <div class="ej" data-ejemplo="ejemplo"><dt>Horario</dt><dd>Lunes a viernes, con hora reservada</dd></div>
+      <div class="ej" data-ejemplo="lo confirma A&amp;G"><dt>Horario</dt><dd>Lunes a viernes, con hora reservada</dd></div>
     </dl>
   </div>
 </section>
@@ -310,6 +454,8 @@
 <!-- ═══════════ CITA ═══════════ -->
 <figure class="cita" aria-label="Sobre el tratamiento">
   <img src="imagenes/cita-01.jpg" width="2200" height="1467" loading="lazy" decoding="async" alt="">
+  <video class="cita__video" data-src="video/cita.mp4" muted playsinline loop
+         preload="none" aria-hidden="true"></video>
   <blockquote class="cita__txt">
     <p>«La sesión dura cuarenta minutos. El tratamiento dura toda la
        semana.»</p>
@@ -323,13 +469,13 @@
     <p class="rotulo">El trabajo</p>
     <h2 class="titulo" id="t-mos">Camilla, colchoneta y elástico.</h2>
   </div>
-  <div class="mos__grilla">
+  <div class="mos__grilla cascada">
     <figure class="mos__p"><img src="imagenes/mos1-01.jpg" width="1200" height="1800" loading="lazy" decoding="async" alt="Sesión de kinesiología sobre camilla"></figure>
-    <figure class="mos__p"><img src="imagenes/mos2-01.jpg" width="1200" height="800" loading="lazy" decoding="async" alt="Trabajo de movilidad asistida"></figure>
+    <figure class="mos__p"><img src="imagenes/mos2-01.jpg" width="1200" height="1800" loading="lazy" decoding="async" alt="Manos del kinesiólogo trabajando la muñeca de un paciente"></figure>
     <figure class="mos__p"><img src="imagenes/mos3-01.jpg" width="1200" height="800" loading="lazy" decoding="async" alt="Manos del kinesiólogo trabajando la espalda"></figure>
-    <figure class="mos__p"><img src="imagenes/mos4-01.jpg" width="1200" height="675" loading="lazy" decoding="async" alt="Sala de rehabilitación con equipamiento"></figure>
-    <figure class="mos__p"><img src="imagenes/mos5-01.jpg" width="1200" height="800" loading="lazy" decoding="async" alt="Elongación de hombro"></figure>
-    <figure class="mos__p"><img src="imagenes/mos6-01.jpg" width="1200" height="800" loading="lazy" decoding="async" alt="Ejercicio de rehabilitación"></figure>
+    <figure class="mos__p"><img src="imagenes/mos4-01.jpg" width="1200" height="800" loading="lazy" decoding="async" alt="Camilla lista junto al ventanal de la sala"></figure>
+    <figure class="mos__p"><img src="imagenes/mos5-01.jpg" width="1200" height="1800" loading="lazy" decoding="async" alt="Movilización de la pierna de una paciente sobre la camilla"></figure>
+    <figure class="mos__p"><img src="imagenes/mos6-01.jpg" width="1200" height="800" loading="lazy" decoding="async" alt="Manos trabajando el tobillo de un paciente"></figure>
   </div>
 </section>
 
@@ -375,15 +521,25 @@
           </select>
         </label>
         <p class="form__salida" id="salida" aria-live="polite"></p>
+        <!-- El botón principal es un <a> con el href ya escrito y ya
+             funcionando: sin JavaScript abre WhatsApp con un mensaje
+             base y el resto se escribe a mano. El JS sólo le reescribe
+             el ?text= con lo que se vaya tecleando. Un <button> acá
+             habría sido un botón muerto para quien no tiene JS.
+             El de copiar sí necesita JS, así que nace escondido y lo
+             enciende .js — el mismo truco que los tres de elegir
+             previsión. -->
         <div class="form__acciones">
-          <button class="boton" type="button" id="btn-wsp">Mandar por WhatsApp</button>
-          <button class="boton boton--linea" type="button" id="btn-copiar">Copiar el mensaje</button>
+          <a class="boton" id="btn-wsp"
+             href="https://wa.me/56973725439?text=Hola%2C%20quiero%20pedir%20hora%20de%20kinesiolog%C3%ADa."
+             target="_blank" rel="noopener noreferrer">Mandar por WhatsApp</a>
+          <button class="boton boton--linea boton--solojs" type="button" id="btn-copiar">Copiar el mensaje</button>
         </div>
       </form>
       <p class="form__sinjs">
-        Sin JavaScript el teléfono y el correo de arriba siguen siendo
-        enlaces normales. Lo único que se pierde es que el texto se arme
-        solo.
+        Sin JavaScript el botón de WhatsApp abre igual, con un mensaje
+        base, y el teléfono y el correo de arriba siguen siendo enlaces
+        normales. Lo único que se pierde es que el texto se arme solo.
       </p>
     </div>
   </div>
@@ -391,6 +547,18 @@
 
 
 <!-- ═══════════ PARA EL DUEÑO ═══════════ -->
+<section class="mapa-sec" aria-label="Dónde queda">
+    <div class="ancho">
+      <figure class="mapa">
+        <img src="imagenes/mapa-01.jpg" width="768" height="768" loading="lazy" decoding="async"
+             alt="Mapa de Puerto Montt.">
+        <figcaption class="mapa__pie">
+          <span><b>Puerto Montt</b>. La dirección exacta la confirma el negocio: cuando la tengamos, el mapa marca la puerta.</span>
+          <span class="mapa__cred">Mapa: &copy; <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener">OpenStreetMap</a></span>
+        </figcaption>
+      </figure>    </div>
+</section>
+
 <section class="dueno" aria-labelledby="t-dueno">
   <div class="ancho">
     <p class="rotulo rotulo--claro">Para el dueño</p>
@@ -405,10 +573,14 @@
       </div>
       <div>
         <h3>Qué es ejemplo</h3>
-        <p>Todos los montos y porcentajes, y el horario. El
-          <b>orden de los pasos y los documentos</b> de cada previsión
-          es real, y es la parte que vale. Los seis casos describen qué
-          se evalúa: no prometen resultados ni dan indicaciones.</p>
+        <p>El horario. <b>Precios no hay ninguno</b>: donde va el valor
+          de cada previsión quedó el hueco marcado, porque no inventamos
+          plata ajena. También son de banco <b>las fotos y los dos clips
+          de fondo</b>: de rubro, ninguna es de su box. El <b>orden de
+          los pasos y los documentos</b> de cada previsión es real, y es
+          la parte que vale. Los seis casos y los cuatro momentos
+          describen qué se evalúa: no prometen resultados ni dan
+          indicaciones.</p>
       </div>
       <div>
         <h3>Qué cambiaría la página entera</h3>
@@ -428,12 +600,39 @@
 
 <footer class="pie">
   <p>Sitio de demostración preparado por CristalWeb. El negocio no lo ha
-     encargado ni ha revisado su contenido. Los montos, porcentajes de
-     reembolso y horarios son ejemplos marcados como tales. Nada de lo
+     encargado ni ha revisado su contenido. No hay ningún precio en esta
+     página: los valores los pone A&amp;G y hasta entonces van marcados
+     como hueco. El horario es un ejemplo, también marcado. Nada de lo
      escrito acá es un diagnóstico ni una indicación de tratamiento:
      eso se hace con el paciente presente.</p>
 </footer>
 
+<!-- ══ WHATSAPP FLOTANTE ═══════════════════════════════════════════
+     Va escrito en el HTML, no lo crea el JS: si el script no arranca,
+     el botón igual está. El JS sólo lo aparta mientras se mira la
+     portada, para no tapar el titular. El número es el DEL NEGOCIO
+     —el mismo de los tel: de la ficha de datos—, no el de CristalWeb:
+     el de la sociedad vive sólo en la sección del dueño.
+     Icono de simple-icons (CC0), incrustado: la CSP no deja pedir
+     nada a un tercero, así que una petición a un dominio ajeno no llegaría a cargar. -->
+<a class="wapp"
+   href="https://wa.me/56973725439?text=Hola%2C%20vi%20la%20p%C3%A1gina%20y%20quiero%20pedir%20hora%20de%20kinesiolog%C3%ADa."
+   target="_blank" rel="noopener"
+   aria-label="Escribir a A&amp;G Kinesiología por WhatsApp">
+  <svg class="wapp__i" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"/></svg>
+  <span class="wapp__t">WhatsApp</span>
+</a>
+
+
+<!-- ══ BOTON FLOTANTE DE CONTACTO ══════════════════════════════════
+     Escrito en el HTML y VISIBLE por defecto: si el script no arranca,
+     el boton igual esta. El JS solo lo aparta mientras se mira la
+     portada, para no tapar el titular. Icono de simple-icons (CC0),
+     incrustado: la CSP no deja pedir nada a un tercero. -->
+<a class="flota flota--wa" href="https://wa.me/56973725439?text=Hola%2C%20vi%20la%20pagina%20y%20quiero%20consultar." target="_blank" rel="noopener" aria-label="Escribir por WhatsApp a A&amp;G Kinesiología Integral">
+  <svg class="flota__i" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"/></svg>
+  <span class="flota__t">WhatsApp</span>
+</a>
 <script src="js/main.js"></script>
 </body>
 </html>

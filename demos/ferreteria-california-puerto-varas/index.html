@@ -20,7 +20,7 @@
 
 <div class="propuesta">
   <p class="propuesta__que">Propuesta de sitio web — preparada para <b>Ferretería California</b> por CristalWeb</p>
-  <p class="propuesta__gancho">¿Dónde más el mismo local le arregla la bicicleta, le vende la lienza y le hace la canaleta? Esa respuesta hoy no existe en Google: el que busca «pesca Puerto Varas» o «hojalatería Puerto Varas» no los encuentra, y son de los pocos que hacen las tres cosas.</p>
+  <p class="propuesta__gancho">¿Dónde más el mismo local le arregla la bicicleta, le vende la lienza y le hace la canaleta? Esa respuesta hoy no existe en Google: al <b>08-09-2026</b> quien busca «pesca Puerto Varas» o «hojalatería Puerto Varas» no los encuentra, y lo único que aparece es su página de Facebook. Ésta es la página que debería estar ahí.</p>
 </div>
 
 <header class="cab" id="cab">
@@ -30,8 +30,8 @@
   </a>
   <nav class="cab__nav" aria-label="Secciones">
     <a href="#mostradores">Los tres mostradores</a>
+    <a href="#pegas">Qué hay que llevar</a>
     <a href="#hojalateria">Hojalatería</a>
-    <a href="#temporada">Temporada de pesca</a>
     <a href="#donde">Dónde estamos</a>
   </nav>
   <a class="cab__cta boton boton--chico" href="#donde">Cómo llegar</a>
@@ -39,11 +39,16 @@
 
 <main>
 
-<!-- ═══════════ PORTADA ═══════════ -->
+<!-- ═══════════ PORTADA ═══════════
+     La foto es la base y el clip se funde encima cuando puede
+     reproducirse (js/main.js). El <img> NO se va nunca: es el póster
+     que ve quien pidió menos movimiento, quien ahorra datos y quien
+     navega sin JavaScript — por eso el <video> no lleva poster=. -->
 <section class="portada" id="portada" aria-labelledby="t-portada">
   <div class="portada__foto" aria-hidden="true">
     <img src="imagenes/port-01.jpg" width="2560" height="1706"
          decoding="async" fetchpriority="high" alt="">
+    <video class="portada__video" data-src="video/port.mp4" muted playsinline loop preload="none" aria-hidden="true"></video>
   </div>
 
   <!-- ═══════ ESCENA DE PORTADA · «las tres planchas que se abren» ═══════
@@ -61,6 +66,7 @@
       <path class="lienza__hilo" d="M30 0 C30 60 26 100 30 150"/>
       <circle class="lienza__plomo" cx="30" cy="156" r="6"/>
     </svg>
+    <p class="escena__pie">una plancha por mostrador · sin reposo</p>
   </div>
 
   <div class="portada__texto">
@@ -83,6 +89,41 @@
 </section>
 
 
+<!-- ═══════════ CIFRAS ═══════════
+     Cuatro números y la herida en la misma fila. Sólo cuenta el 860:
+     es el único que hubo que ir a buscar. Los otros tres son
+     aritmética de esta misma página (tres mostradores, cuatro oficios,
+     una dirección) y un contador que sube el «3» de una grilla se lee
+     como truco. El valor final va escrito dentro del <b>: sin JS, o
+     con menos movimiento, se lee igual.
+
+     La banda entra como UNA pieza y no en cascada de cuatro: con la
+     cascada, el 860 y el 0 —la herida, que es el número que vende—
+     todavía estaban a media opacidad cuando se toma la captura del
+     catálogo, y la miniatura salía con dos números de cuatro. Es lo
+     mismo que hacen mas-lavanderias y el-penon. -->
+<section class="cifras" aria-label="Ferretería California en cuatro números">
+  <ul class="cifras__lista ancho">
+    <li>
+      <b>3</b>
+      <span>mostradores bajo el mismo techo, en un local de barrio</span>
+    </li>
+    <li>
+      <b>4</b>
+      <span>oficios: ferretería, pesca, bicicletas y hojalatería a medida</span>
+    </li>
+    <li>
+      <b data-cuenta="860">860</b>
+      <span>km² de lago Llanquihue, a diez cuadras del mostrador</span>
+    </li>
+    <li class="cifras__herida">
+      <b>0</b>
+      <span>páginas propias donde encontrarlos hoy<i>fuera de Facebook · verificado el 08-09-2026</i></span>
+    </li>
+  </ul>
+</section>
+
+
 <!-- ═══════════ PIEZA FIRMA · LOS TRES MOSTRADORES ═══════════
      La página se organiza como el local. Cada mostrador tiene su
      propio color y ese color no aparece en ninguna otra parte: es la
@@ -98,8 +139,14 @@
     </p>
   </div>
 
+  <!-- Dos planos del mismo local: el apaisado para escritorio y el
+       vertical para teléfono. Un SVG no reflota su texto, y el de
+       900 × 260 metido en 335 px deja los rótulos en 6 px. Cada uno se
+       muestra en su ancho (css/estilo.css) y los dos llevan su contenido
+       escrito acá: el que está oculto no lo lee ni el lector de pantalla
+       ni el buscador, así que no hay contenido duplicado a la vista. -->
   <div class="ancho">
-    <svg class="plano" viewBox="0 0 900 260" role="img" aria-labelledby="t-plano">
+    <svg class="plano plano--ancho" viewBox="0 0 900 260" role="img" aria-labelledby="t-plano">
       <title id="t-plano">Plano del local con sus tres mostradores: pesca, bicicletas y ferretería con hojalatería</title>
       <rect class="plano__muro" x="20" y="20" width="860" height="220" rx="4" />
       <line class="plano__div" x1="306" y1="20" x2="306" y2="240" />
@@ -126,6 +173,33 @@
       <line class="plano__puerta" x1="410" y1="240" x2="490" y2="240" />
       <text class="plano__s plano__s--puerta" x="450" y="256">entrada · Av. Colón</text>
     </svg>
+
+    <svg class="plano plano--alto" viewBox="0 0 380 470" role="img" aria-labelledby="t-plano-alto">
+      <title id="t-plano-alto">Plano del local con sus tres mostradores: pesca, bicicletas y ferretería con hojalatería</title>
+      <rect class="plano__muro" x="10" y="10" width="360" height="430" rx="4" />
+      <line class="plano__div" x1="10" y1="159" x2="370" y2="159" />
+      <line class="plano__div" x1="10" y1="297" x2="370" y2="297" />
+
+      <g class="plano__z plano__z--pesca">
+        <rect x="26" y="26" width="328" height="128" rx="3" />
+        <text class="plano__t" x="190" y="84">PESCA</text>
+        <text class="plano__s" x="190" y="112">lienza · anzuelos · señuelos</text>
+      </g>
+      <g class="plano__z plano__z--bici">
+        <rect x="26" y="164" width="328" height="128" rx="3" />
+        <text class="plano__t" x="190" y="222">BICICLETAS</text>
+        <text class="plano__s" x="190" y="250">cámaras · frenos · ajustes</text>
+      </g>
+      <g class="plano__z plano__z--ferr">
+        <rect x="26" y="302" width="328" height="126" rx="3" />
+        <text class="plano__t" x="190" y="346">FERRETERÍA</text>
+        <text class="plano__t plano__t--2" x="190" y="368">Y HOJALATERÍA</text>
+        <text class="plano__s" x="190" y="396">pernos · fierro · canaletas</text>
+      </g>
+
+      <line class="plano__puerta" x1="150" y1="440" x2="230" y2="440" />
+      <text class="plano__s plano__s--puerta" x="190" y="458">entrada · Av. Colón</text>
+    </svg>
   </div>
 
   <div class="ancho mostradores">
@@ -133,7 +207,7 @@
       <p class="mo__r">Mostrador 1</p>
       <h3>Pesca</h3>
       <p class="mo__q">Qué se lleva según la época en el Llanquihue.</p>
-      <ul class="mo__l ej" data-ejemplo="ejemplo por confirmar">
+      <ul class="mo__l ej" data-ejemplo="la corrige el dueño">
         <li><b>Primavera</b> — el agua sube de temperatura: señuelo más liviano y lienza fina.</li>
         <li><b>Verano</b> — se pesca temprano y al atardecer; el resto del día está muerto.</li>
         <li><b>Otoño</b> — la mejor época del lago. Señuelo pesado, más profundidad.</li>
@@ -146,7 +220,7 @@
       <p class="mo__r">Mostrador 2</p>
       <h3>Bicicletas</h3>
       <p class="mo__q">Qué se arregla en el día y qué queda para mañana.</p>
-      <ul class="mo__l ej" data-ejemplo="ejemplo por confirmar">
+      <ul class="mo__l ej" data-ejemplo="la corrige el dueño">
         <li><b>En el día</b> — cámara pinchada, ajuste de frenos y cambios, centrado de rueda.</li>
         <li><b>En el día</b> — cadena, piñón y pedales.</li>
         <li><b>Para mañana</b> — cambio de rodamientos y maza.</li>
@@ -159,7 +233,7 @@
       <p class="mo__r">Mostrador 3</p>
       <h3>Ferretería y hojalatería</h3>
       <p class="mo__q">Cómo se cotiza una canaleta.</p>
-      <ul class="mo__l ej" data-ejemplo="ejemplo por confirmar">
+      <ul class="mo__l ej" data-ejemplo="la corrige el dueño">
         <li><b>Se mide</b> — metros lineales de canaleta y cantidad de bajadas.</li>
         <li><b>Se elige</b> — el desarrollo de la plancha según el ancho que se necesita.</li>
         <li><b>Se suma</b> — codos, tapas y abrazaderas, que es lo que siempre falta.</li>
@@ -180,6 +254,128 @@
       entre octubre y abril.</p>
   </figcaption>
 </figure>
+
+
+<!-- ═══════════ QUÉ HAY QUE LLEVAR · seis pegas ═══════════
+     El inventario del local contado como lo pide el rubro: no una
+     lista de productos, sino la lista de compra de una pega concreta.
+     Cada tarjeta lleva el color de SU mostrador, igual que el plano. -->
+<section class="pegas" id="pegas" aria-labelledby="t-pegas">
+  <div class="ancho">
+    <p class="rotulo">Lo que la gente entra a preguntar</p>
+    <h2 class="titulo" id="t-pegas">Qué hay que llevar.</h2>
+    <p class="entradilla">
+      Seis pegas de casa con la lista de compra escrita, repartidas
+      entre los tres mostradores. <b>Son listas de ejemplo</b>: el local
+      las corrige en una tarde y pasan a ser suyas.
+    </p>
+  </div>
+
+  <div class="ancho pegas__grilla cascada">
+    <article class="pega pega--bici">
+      <p class="pega__r">Mostrador de bicicletas</p>
+      <h3>Cambiar una cámara pinchada</h3>
+      <ul class="pega__l ej" data-ejemplo="la corrige el local">
+        <li>Cámara de la medida de la rueda</li>
+        <li>Dos desmontadores</li>
+        <li>Parches y pegamento de repuesto</li>
+        <li>Bombín o inflador de pie</li>
+      </ul>
+    </article>
+
+    <article class="pega pega--bici">
+      <p class="pega__r">Mostrador de bicicletas</p>
+      <h3>Dejarla lista para el verano</h3>
+      <ul class="pega__l ej" data-ejemplo="la corrige el local">
+        <li>Desengrasante y lubricante de cadena</li>
+        <li>Zapatas o pastillas de freno</li>
+        <li>Luz delantera y trasera con pilas</li>
+        <li>Cinta nueva para el manubrio</li>
+      </ul>
+    </article>
+
+    <article class="pega pega--pesca">
+      <p class="pega__r">Mostrador de pesca</p>
+      <h3>Salir a pescar de orilla</h3>
+      <ul class="pega__l ej" data-ejemplo="la corrige el local">
+        <li>Lienza del grosor que use su carrete</li>
+        <li>Anzuelos y plomos surtidos</li>
+        <li>Dos o tres señuelos de la época</li>
+        <li>Tijera o corta-lienza y una caja seca</li>
+      </ul>
+    </article>
+
+    <article class="pega pega--pesca">
+      <p class="pega__r">Mostrador de pesca</p>
+      <h3>Guardar el equipo en la veda</h3>
+      <ul class="pega__l ej" data-ejemplo="la corrige el local">
+        <li>Aceite fino para el carrete</li>
+        <li>Lienza nueva para el próximo verano</li>
+        <li>Caja con separadores</li>
+        <li>Paño y desoxidante para los anzuelos</li>
+      </ul>
+    </article>
+
+    <article class="pega pega--ferr">
+      <p class="pega__r">Mostrador de ferretería</p>
+      <h3>Reponer un tramo de canaleta</h3>
+      <ul class="pega__l ej" data-ejemplo="la corrige el local">
+        <li>Los metros de canaleta del desarrollo que corresponda</li>
+        <li>Una bajada, con sus codos</li>
+        <li>Abrazaderas y tornillos con golilla de goma</li>
+        <li>Sellante para las uniones</li>
+      </ul>
+    </article>
+
+    <article class="pega pega--ferr">
+      <p class="pega__r">Mostrador de ferretería</p>
+      <h3>Dejar el techo antes de mayo</h3>
+      <ul class="pega__l ej" data-ejemplo="la corrige el local">
+        <li>Tornillos de zinc con golilla</li>
+        <li>Sellante y silicona</li>
+        <li>Antióxido y brocha</li>
+        <li>Las piezas de hojalatería que haya que rehacer a medida</li>
+      </ul>
+    </article>
+  </div>
+
+  <div class="ancho">
+    <p class="nota">
+      <b>Son listas de compra, no instrucciones.</b> Dicen qué llevar,
+      no cómo hacer el trabajo. Para lo que sea techo, altura o
+      instalación, lo que corresponde es preguntar en el mostrador y,
+      si hace falta, que lo haga un maestro.
+    </p>
+  </div>
+</section>
+
+
+<!-- ═══════════ EL AÑO · mitades ═══════════
+     La banda oscura de media página, y la única que lleva la foto de
+     la lluvia. Es el argumento que ninguno de los tres mostradores
+     dice por separado: que se turnan. -->
+<section class="mit" aria-labelledby="t-mit">
+  <div class="mit__foto">
+    <img src="imagenes/mit-01.jpg" width="2200" height="1467" loading="lazy" decoding="async"
+         alt="Agua de lluvia cayendo desde el borde de un techo sin canaleta">
+  </div>
+  <div class="mit__txt">
+    <p class="rotulo rotulo--claro">El año, mostrador por mostrador</p>
+    <h2 class="titulo titulo--claro" id="t-mit">Acá no hay temporada baja.</h2>
+    <p>
+      De octubre a abril tiran la pesca y las bicicletas: el lago está a
+      diez cuadras y la gente sale. De mayo a septiembre llueve, y lo
+      que se pide en el mostrador es canaleta, bajada, forro y tornillo
+      de zinc.
+    </p>
+    <p>
+      Un negocio de un solo rubro tiene cuatro meses malos al año. Éste
+      tiene cuatro oficios que se turnan — y ésa es la frase que
+      debería estar en la primera línea de su ficha en Google, no
+      escondida en una página de Facebook.
+    </p>
+  </div>
+</section>
 
 
 <!-- ═══════════ HOJALATERÍA · con telón ═══════════ -->
@@ -219,7 +415,7 @@
       ejemplo</b> y es de los que más tráfico traen: nadie de la zona
       lo tiene escrito.
     </p>
-    <ol class="meses ej" data-ejemplo="fechas por confirmar cada año">
+    <ol class="meses ej" data-ejemplo="las fija la autoridad pesquera">
       <li><span>Nov</span><b>Abre</b></li>
       <li><span>Dic</span><b>Alta</b></li>
       <li><span>Ene</span><b>Alta</b></li>
@@ -237,9 +433,13 @@
 </section>
 
 
-<!-- ═══════════ CITA ═══════════ -->
+<!-- ═══════════ CITA ═══════════
+     Velo PLANO, no lateral: el texto va centrado. Con un gradiente de
+     costado la mitad derecha de la frase quedaría sobre alfa .3 y no
+     pasaría AA. -->
 <figure class="cita" aria-label="Sobre el local">
   <img src="imagenes/cita-01.jpg" width="2200" height="1468" loading="lazy" decoding="async" alt="">
+  <video class="cita__video" data-src="video/cita.mp4" muted playsinline loop preload="none" aria-hidden="true"></video>
   <blockquote class="cita__txt">
     <p>«Un local que arregla la bicicleta y hace la canaleta no es una
        ferretería. Es el almacén del barrio.»</p>
@@ -254,12 +454,12 @@
     <h2 class="titulo" id="t-mos">Los tres mundos.</h2>
   </div>
   <div class="mos__grilla">
-    <figure class="mos__p"><img src="imagenes/mos1-01.jpg" width="1200" height="803" loading="lazy" decoding="async" alt="Caña de pescar junto al lago"></figure>
-    <figure class="mos__p"><img src="imagenes/mos2-01.jpg" width="1200" height="800" loading="lazy" decoding="async" alt="Carrete y equipo de pesca"></figure>
-    <figure class="mos__p"><img src="imagenes/mos3-01.jpg" width="1200" height="900" loading="lazy" decoding="async" alt="Orilla del lago"></figure>
-    <figure class="mos__p"><img src="imagenes/mos4-01.jpg" width="1200" height="900" loading="lazy" decoding="async" alt="Pernos y tuercas"></figure>
-    <figure class="mos__p"><img src="imagenes/mos5-01.jpg" width="1200" height="800" loading="lazy" decoding="async" alt="Estantería de herramientas"></figure>
-    <figure class="mos__p"><img src="imagenes/mos6-01.jpg" width="1200" height="649" loading="lazy" decoding="async" alt="Cadena y piezas metálicas"></figure>
+    <figure class="mos__p"><img src="imagenes/mos1-01.jpg" width="1200" height="800" loading="lazy" decoding="async" alt="Buje y radios de la rueda de una bicicleta, en primer plano"></figure>
+    <figure class="mos__p"><img src="imagenes/mos2-01.jpg" width="1200" height="800" loading="lazy" decoding="async" alt="Caña de mosca y carrete apoyados sobre un muelle de madera"></figure>
+    <figure class="mos__p"><img src="imagenes/mos3-01.jpg" width="1200" height="900" loading="lazy" decoding="async" alt="Caña armada contra el agua al atardecer"></figure>
+    <figure class="mos__p"><img src="imagenes/mos4-01.jpg" width="1200" height="800" loading="lazy" decoding="async" alt="Rueda trasera de una bicicleta con la cadena puesta sobre el piñón"></figure>
+    <figure class="mos__p"><img src="imagenes/mos5-01.jpg" width="1200" height="800" loading="lazy" decoding="async" alt="Cajones de ferretería con pernos y tornillos surtidos"></figure>
+    <figure class="mos__p"><img src="imagenes/mos6-01.jpg" width="1200" height="649" loading="lazy" decoding="async" alt="Montón de golillas metálicas"></figure>
   </div>
 </section>
 
@@ -278,8 +478,8 @@
         <div><dt>Dirección</dt><dd>Avenida Colón, Puerto Varas</dd></div>
         <div><dt>Rubros</dt><dd>Ferretería · pesca · bicicletas · hojalatería</dd></div>
         <div><dt>Dónde están hoy</dt><dd>Facebook, y nada más</dd></div>
-        <div class="ej" data-ejemplo="falta"><dt>Número y teléfono</dt><dd>No aparecen publicados</dd></div>
-        <div class="ej" data-ejemplo="ejemplo"><dt>Horario</dt><dd>Lunes a sábado</dd></div>
+        <div class="ej" data-ejemplo="lo publica el local"><dt>Número y teléfono</dt><dd>No aparecen publicados</dd></div>
+        <div class="ej" data-ejemplo="lo confirma el local"><dt>Horario</dt><dd>Lunes a sábado</dd></div>
       </dl>
     </div>
 
@@ -312,8 +512,22 @@
         Sin JavaScript los campos siguen sirviendo de guía de qué
         preguntar. Lo único que se pierde es que el texto se arme solo.
       </p>
+      <p class="form__sinjs">
+        <b>El botón naranjo que va abajo a la derecha en toda la página
+        trae hasta acá.</b> El día que ustedes nos pasen el número, ese
+        mismo botón abre WhatsApp con este mensaje ya escrito. No lo
+        inventamos: hoy no hay ningún teléfono publicado.
+      </p>
     </div>
   </div>
+      <figure class="mapa">
+        <img src="imagenes/mapa-01.jpg" width="768" height="768" loading="lazy" decoding="async"
+             alt="Mapa con la ubicación de Avenida Colón, Puerto Varas.">
+        <figcaption class="mapa__pie">
+          <span><b>Avenida Colón, Puerto Varas</b>.</span>
+          <span class="mapa__cred">Mapa: &copy; <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener">OpenStreetMap</a></span>
+        </figcaption>
+      </figure>
 </section>
 
 
@@ -333,16 +547,17 @@
       </div>
       <div>
         <h3>Qué es ejemplo</h3>
-        <p>Las tres tablas de los mostradores, la temporada de pesca, el
-          horario y la numeración exacta. La temporada además depende de
-          la autoridad pesquera y hay que confirmarla cada año antes de
-          publicarla.</p>
+        <p>Las tres tablas de los mostradores, las seis listas de
+          compra, la temporada de pesca, el horario y la numeración
+          exacta. La temporada además depende de la autoridad pesquera y
+          hay que confirmarla cada año antes de publicarla.</p>
       </div>
       <div>
         <h3>Qué cambiaría la página entera</h3>
-        <p>Que ustedes corrijan las tres tablas. Son quince minutos de
-          conversación y quedan en una página que <b>ningún competidor
-          puede copiar</b>, porque ninguno hace las tres cosas.</p>
+        <p>Que ustedes corrijan las tres tablas y las seis listas. Son
+          quince minutos de conversación y quedan en una página que
+          <b>ningún competidor puede copiar</b>, porque ninguno hace las
+          cuatro cosas.</p>
       </div>
     </div>
     <p class="dueno__cierre">
@@ -357,10 +572,37 @@
 <footer class="pie">
   <p>Sitio de demostración preparado por CristalWeb. El negocio no lo ha
      encargado ni ha revisado su contenido. Las tablas de los tres
-     mostradores, el horario y la temporada son ejemplos marcados como
-     tales. Las fechas de veda y las medidas de captura las fija la
-     autoridad pesquera, no esta página.</p>
+     mostradores, las listas de compra, el horario y la temporada son
+     ejemplos marcados como tales. No hay ni un precio en esta página.
+     Las fechas de veda y las medidas de captura las fija la autoridad
+     pesquera, no esta página. Las fotos y los dos clips de fondo son de
+     bancos libres y son ambiente del rubro, no el local: la
+     procedencia de cada uno está en imagenes/FUENTES.txt.</p>
 </footer>
+
+<!-- ══ BOTÓN FLOTANTE DE CONSULTA ═══════════════════════════════════
+     Va escrito en el HTML, no lo crea el JS: si el script no arranca,
+     el botón igual está y sigue llevando al bloque de consulta. El JS
+     sólo lo aparta mientras se mira la portada, para no tapar el
+     titular. El icono va dibujado acá mismo, porque la CSP no deja
+     pedir nada a un tercero.
+
+     POR QUÉ NO ES UN BOTÓN DE WHATSAPP: el patrón de la casa manda
+     que el flotante abra wa.me con el número DEL NEGOCIO. Ferretería
+     California no publica ningún teléfono —ni en su página de
+     Facebook, que es su única presencia, comprobado el 08-09-2026— y
+     un wa.me inventado mandaría a los clientes del cliente al número
+     equivocado. Así que el botón lleva al bloque «Preguntar antes de
+     ir», que arma el mensaje para copiarlo. En cuanto el local
+     confirme su número, esto pasa a ser un enlace wa.me y no cambia
+     nada más. -->
+<a class="wapp" href="#donde" aria-label="Ir a preparar la consulta para Ferretería California">
+  <svg class="wapp__i" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+    <path d="M20.5 4.5H3.5v12h4v4l4.6-4h8.4z"/>
+    <path class="wapp__l" d="M7.4 8.6h9.2M7.4 12.2h6.2"/>
+  </svg>
+  <span class="wapp__t">Preguntar</span>
+</a>
 
 <script src="js/main.js"></script>
 </body>

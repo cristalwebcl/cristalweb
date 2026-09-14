@@ -1,0 +1,22 @@
+FUENTES DE LAS IMAGENES - La Taberna Rehecha el 13-09-2026 (presentacion antes que texto). Fotos de REFERENCIA de bancos libres: ninguna es del local; las verdaderas las tiene que mandar el negocio. 
+port-01.jpg  <-  pozo-p-tab-empanada\005.jpg  |  pexels (Pexels License)  |  autor: jessica olivella  |  https://www.pexels.com/es-es/foto/empanadas-argentinas-tradicionales-en-tabla-de-madera-36905236/  |  consulta: "empanada"
+hund1-01.jpg  <-  pozo-p-tab-paila\004.jpg  |  pexels (Pexels License)  |  autor: DΛVΞ GΛRCIΛ  |  https://www.pexels.com/es-es/foto/deliciosa-sopa-de-camarones-ecuatoriana-en-una-mesa-de-madera-38920605/  |  consulta: "seafood soup bowl"
+hund2-01.jpg  <-  pozo-p-tab-cafe\006.jpg  |  pexels (Pexels License)  |  autor: Iulian Sandu  |  https://www.pexels.com/es-es/foto/desayuno-con-capuchino-pan-y-aguacate-33074051/  |  consulta: "cappuccino cup"
+hund3-01.jpg  <-  pozo-p-tab-paila\003.jpg  |  pexels (Pexels License)  |  autor: Sylwester Ficek  |  https://www.pexels.com/es-es/foto/guiso-gourmet-de-mariscos-en-una-presentacion-elegante-36842305/  |  consulta: "seafood soup bowl"
+hund4-01.jpg  <-  pozo-p-tab-chorrillana\006.jpg  |  pexels (Pexels License)  |  autor: Kioto Estudio  |  https://www.pexels.com/es-es/foto/restaurante-coctel-beber-bebida-16971084/  |  consulta: "fries egg onion beef"
+hund5-01.jpg  <-  pozo-p-tab-completo\004.jpg  |  pexels (Pexels License)  |  autor: Alejandro Aznar  |  https://www.pexels.com/es-es/foto/perrito-caliente-y-papas-fritas-en-un-plato-a-cuadros-en-un-ambiente-luminoso-29476585/  |  consulta: "hot dog avocado tomato"
+hund6-01.jpg  <-  pozo-p-tab-empanada\010.jpg  |  pexels (Pexels License)  |  autor: Ani Coloca  |  https://www.pexels.com/es-es/foto/empanadas-caseras-en-pizarra-36898430/  |  consulta: "empanada"
+banda-01.jpg  <-  pozo-p-tab-empanada\012.jpg  |  pexels (Pexels License)  |  autor: jose luis Umana  |  https://www.pexels.com/es-es/foto/primer-plano-de-deliciosas-empanadas-fritas-en-bandeja-32912393/  |  consulta: "empanada"
+cita-01.jpg  <-  pozo-p-tab-chorrillana\010.jpg  |  pexels (Pexels License)  |  autor: pedro furtado  |  https://www.pexels.com/es-es/foto/acercamiento-de-carne-asada-con-cebollas-y-patatas-fritas-28902895/  |  consulta: "fries egg onion beef"
+mos1-01.jpg  <-  pozo-p-tab-churrasco\011.jpg  |  pexels (Pexels License)  |  autor: Cristian Arteaga  |  https://www.pexels.com/es-es/foto/delicioso-sandwich-de-cheesesteak-con-papas-fritas-sazonadas-37228413/  |  consulta: "steak sandwich"
+mos2-01.jpg  <-  pozo-p-tab-empanada\004.jpg  |  pexels (Pexels License)  |  autor: Christopher Welsch Leveroni  |  https://www.pexels.com/es-es/foto/deliciosas-empanadas-peruanas-con-lima-y-aceitunas-37327430/  |  consulta: "empanada"
+mos3-01.jpg  <-  pozo-p-tab-cafe\012.jpg  |  pexels (Pexels License)  |  autor: Junjira Konsang  |  https://www.pexels.com/es-es/foto/cafeina-cafe-delicioso-sabroso-9334485/  |  consulta: "cappuccino cup"
+mos4-01.jpg  <-  pozo-p-tab-chorrillana\004.jpg  |  pexels (Pexels License)  |  autor: DΛVΞ GΛRCIΛ  |  https://www.pexels.com/es-es/foto/papas-fritas-gourmet-con-huevo-y-hierbas-frescas-38626235/  |  consulta: "fries egg onion beef"
+mos5-01.jpg  <-  pozo-p-tab-completo\012.jpg  |  pexels (Pexels License)  |  autor: Kamila Bairam  |  https://www.pexels.com/es-es/foto/sujetando-fotografia-de-comida-tiro-vertical-sandwich-de-perrito-caliente-12123655/  |  consulta: "hot dog avocado tomato"
+mos6-01.jpg  <-  pozo-p-tab-pizarra\004.jpg  |  pexels (Pexels License)  |  autor: Pixabay  |  https://www.pexels.com/es-es/foto/tablero-de-escritura-marron-y-negro-con-boligrafo-236110/  |  consulta: "chalkboard"
+
+BRUMA (bruma-pag-0N.png y bruma-osc-0N.png, 30x20): las MISMAS fotos, recortadas a 3:2, reducidas y
+recoloreadas con C:\devs\demos\hacer-bruma.ps1 (clara >= 0,68 de luminancia / oscura <= 0,05). No suman fuentes.
+    pagina: port-01.jpg, banda-01.jpg, hund1-01.jpg, hund4-01.jpg, mos1-01.jpg, mos2-01.jpg, mos3-01.jpg, mos4-01.jpg   |   oscuras: cita-01.jpg, mos5-01.jpg, mos6-01.jpg
+
+MAPA: iframe de Google Maps (embed publico, sin clave). No hay imagen de mapa.

@@ -48,3 +48,10 @@ DESCARTADAS
   identificables que no dieron permiso.
 · Fotos de zanjas abiertas con maquinaria en primer plano. En una
   página que vende NO ABRIR ZANJA, esa imagen contradice el titular.
+
+MAPA DE UBICACION — mapa-01.jpg
+  768 x 768 · zoom 14 · centro -38.9862884, -72.63725
+  Mosaicos de OpenStreetMap pegados en una sola imagen, con el marcador
+  dibujado encima. Datos (c) OpenStreetMap contributors, licencia ODbL:
+  la atribucion tiene que ir VISIBLE junto al mapa, en el pie de la figura.
+  https://www.openstreetmap.org/copyright

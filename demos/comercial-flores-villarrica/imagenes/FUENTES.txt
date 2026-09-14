@@ -1,0 +1,22 @@
+FUENTES DE LAS IMAGENES - Comercial Flores Rehecha el 13-09-2026 (presentacion antes que texto). Fotos de REFERENCIA de bancos libres: ninguna es del local; las verdaderas las tiene que mandar el negocio. 
+port-01.jpg  <-  pozo-p-flo-bodega\009.jpg  |  pexels (Pexels License)  |  autor: Willians Huerta  |  https://www.pexels.com/es-es/foto/espectacular-almacen-industrial-de-acero-iluminado-por-el-sol-36397980/  |  consulta: "steel warehouse"
+hund1-01.jpg  <-  pozo-p-flo-fierro\003.jpg  |  pexels (Pexels License)  |  autor: Marco Damm  |  https://www.pexels.com/es-es/foto/modelo-estampado-textura-metal-11891953/  |  consulta: "rebar steel"
+hund2-01.jpg  <-  pozo-p-flo-bodega\004.jpg  |  pexels (Pexels License)  |  autor: Michael Orshan  |  https://www.pexels.com/es-es/foto/almacen-industrial-con-vigas-de-metal-apiladas-36003983/  |  consulta: "steel warehouse"
+hund3-01.jpg  <-  pozo-p-flo-clavos\010.jpg  |  pexels (Pexels License)  |  autor: Peppered Pixels Design Studio  |  https://www.pexels.com/es-es/foto/hardware-industrial-monton-de-tornillos-metalicos-29751916/  |  consulta: "nails bolts hardware"
+hund4-01.jpg  <-  pozo-p-flo-zinc\005.jpg  |  pexels (Pexels License)  |  autor: Archie Binamira  |  https://www.pexels.com/es-es/foto/marco-de-metal-gris-2463351/  |  consulta: "corrugated metal sheet"
+hund5-01.jpg  <-  pozo-p-flo-tubos\003.png  |  pexels (Pexels License)  |  autor: Jasmijn Van der Maaten  |  https://www.pexels.com/es-es/foto/industria-valvulas-oxidado-enfoque-selectivo-10990766/  |  consulta: "metal pipes stack"
+hund6-01.jpg  <-  pozo-p-flo-fierro\008.jpg  |  pexels (Pexels License)  |  autor: Grigoriy Konsevich  |  https://www.pexels.com/es-es/foto/textura-oxido-acero-barras-de-acero-10059198/  |  consulta: "rebar steel"
+banda-01.jpg  <-  pozo-p-flo-soldadura\005.jpg  |  pexels (Pexels License)  |  autor: cottonbro studio  |  https://www.pexels.com/es-es/foto/brillante-chispas-fondo-de-pantalla-texturas-9665343/  |  consulta: "welding sparks"
+cita-01.jpg  <-  pozo-p-flo-zinc\012.jpg  |  pexels (Pexels License)  |  autor: Alex Dos Santos  |  https://www.pexels.com/es-es/foto/acercamiento-monocromo-de-superficie-de-metal-corrugado-33365836/  |  consulta: "corrugated metal sheet"
+mos1-01.jpg  <-  pozo-p-flo-fierro\011.jpg  |  pexels (Pexels License)  |  autor: wal_ 172619  |  https://www.pexels.com/es-es/foto/primer-plano-de-una-pila-de-barras-de-hierro-oxidadas-al-aire-libre-37226291/  |  consulta: "rebar steel"
+mos2-01.jpg  <-  pozo-p-flo-esmeril\010.jpg  |  pexels (Pexels License)  |  autor: Daniel Nuñez Barrientos  |  https://www.pexels.com/es-es/foto/trabajando-metal-acero-seguridad-12431505/  |  consulta: "angle grinder metal"
+mos3-01.jpg  <-  pozo-p-flo-clavos\009.jpg  |  pexels (Pexels License)  |  autor: Polina Tankilevitch  |  https://www.pexels.com/es-es/foto/herramientas-por-encima-de-la-cabeza-gastos-generales-tornillo-5583050/  |  consulta: "nails bolts hardware"
+mos4-01.jpg  <-  pozo-p-flo-zinc\010.jpg  |  pexels (Pexels License)  |  autor: James Frid  |  https://www.pexels.com/es-es/foto/modelo-estampado-textura-pared-5416145/  |  consulta: "corrugated metal sheet"
+mos5-01.jpg  <-  pozo-p-flo-fierro\010.jpg  |  pexels (Pexels License)  |  autor: Ümit Tektaş  |  https://www.pexels.com/es-es/foto/primer-plano-de-un-obrero-de-la-construccion-manipulando-varillas-de-refuerzo-con-una-herramienta-36847985/  |  consulta: "rebar steel"
+mos6-01.jpg  <-  pozo-p-flo-soldadura\007.jpg  |  pexels (Pexels License)  |  autor: Guduru Ajay bhargav  |  https://www.pexels.com/es-es/foto/chispas-de-soldadura-977515/  |  consulta: "welding sparks"
+
+BRUMA (bruma-pag-0N.png y bruma-osc-0N.png, 30x20): las MISMAS fotos, recortadas a 3:2, reducidas y
+recoloreadas con C:\devs\demos\hacer-bruma.ps1 (clara >= 0,68 de luminancia / oscura <= 0,05). No suman fuentes.
+    pagina: hund1-01.jpg, mos1-01.jpg, banda-01.jpg, hund5-01.jpg   |   oscuras: cita-01.jpg, port-01.jpg, hund6-01.jpg
+
+MAPA: iframe de Google Maps (embed publico, sin clave). No hay imagen de mapa.

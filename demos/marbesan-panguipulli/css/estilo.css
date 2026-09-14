@@ -834,3 +834,15 @@ a.tel { display: inline-flex; align-items: center; min-height: 44px; }
   font-size: 11px; letter-spacing: .04em; line-height: 1;
   padding: 5px 8px; border-radius: 6px; white-space: nowrap;
 }
+
+/* ── MAPA DE UBICACIÓN ─────────────────────────────────────────────
+   Imagen local sobre --claro-2, pie en loza. El botón «Cómo llegar» va
+   en tinta como todo lo interactivo de esta página: acá el color no
+   marca acción, marca lo pendiente. */
+.mapa { margin: 1.6rem 0 0; border-radius: 12px; overflow: hidden; background: var(--loza); box-shadow: 0 10px 28px rgba(23, 22, 26, .16); }
+.mapa img { display: block; width: 100%; height: auto; aspect-ratio: 1 / 1; object-fit: cover; }
+.mapa__pie { display: flex; justify-content: space-between; align-items: center; gap: 1rem; padding: .55rem .9rem .55rem 1rem; font-size: .8rem; color: var(--medio); }
+.mapa__pie a { color: var(--tinta); }
+.mapa__ir { font-weight: 700; text-decoration: none; min-height: 44px; display: inline-flex; align-items: center; gap: .3rem; }
+.mapa__ir:hover, .mapa__ir:focus-visible { text-decoration: underline; }
+@media (max-width: 520px) { .mapa__pie { flex-direction: column; align-items: flex-start; gap: .2rem; } }

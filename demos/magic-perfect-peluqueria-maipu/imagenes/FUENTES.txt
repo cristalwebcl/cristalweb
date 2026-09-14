@@ -1,0 +1,22 @@
+FUENTES DE LAS IMAGENES - SalÃ³n Magic Perfect Rehecha el 13-09-2026 (presentacion antes que texto). Fotos de REFERENCIA de bancos libres: ninguna es del local; las verdaderas las tiene que mandar el negocio. 
+port-01.jpg  <-  pozo-p-mp-papel\009.jpg  |  pexels (Pexels License)  |  autor: Doğan Alpaslan  Demir  |  https://www.pexels.com/es-es/foto/sesion-de-coloracion-profesional-del-cabello-en-salon-29555677/  |  consulta: "hair coloring foils"
+hund1-01.jpg  <-  pozo-p-mp-bowl\012.jpg  |  pexels (Pexels License)  |  autor: Nataliya Vaitkevich  |  https://www.pexels.com/es-es/foto/herramientas-naturaleza-muerta-plastico-color-de-pelo-8468156/  |  consulta: "hair bowl dye mixing"
+hund2-01.jpg  <-  pozo-p-mp-papel\011.jpg  |  pexels (Pexels License)  |  autor: Ionela Mat  |  https://www.pexels.com/es-es/foto/manos-mujer-servicio-cuidado-20894394/  |  consulta: "hair coloring foils"
+hund3-01.jpg  <-  pozo-p-mp-balayage\007.jpg  |  pexels (Pexels License)  |  autor: Lyn [Lynbot] Michelle  |  https://www.pexels.com/es-es/foto/mujer-cabellos-melena-pelo-6391646/  |  consulta: "balayage hair"
+hund4-01.jpg  <-  pozo-p-mp-brocha\006.jpg  |  pexels (Pexels License)  |  autor: Nataliya Vaitkevich  |  https://www.pexels.com/es-es/foto/herramientas-cabellos-melena-pelo-8468142/  |  consulta: "hair dye brush"
+hund5-01.jpg  <-  pozo-p-mp-espalda\007.jpg  |  pexels (Pexels License)  |  autor: Baixi Liu  |  https://www.pexels.com/es-es/foto/mujer-en-pie-de-pie-joven-17987776/  |  consulta: "red hair back"
+hund6-01.jpg  <-  pozo-p-mp-bowl\007.jpg  |  pexels (Pexels License)  |  autor: cottonbro studio  |  https://www.pexels.com/es-es/foto/derritiendo-derritendose-mano-mesa-3993289/  |  consulta: "hair bowl dye mixing"
+banda-01.jpg  <-  pozo-p-mp-espalda\012.jpg  |  pexels (Pexels License)  |  autor: Hairlust Official  |  https://www.pexels.com/es-es/foto/vista-posterior-de-una-mujer-con-cabello-largo-y-rojo-35267455/  |  consulta: "red hair back"
+cita-01.jpg  <-  pozo-p-mp-cobrizo\011.jpg  |  pexels (Pexels License)  |  autor: Yusuf Çelik  |  https://www.pexels.com/es-es/foto/moda-mujer-cabeza-abrigo-15664261/  |  consulta: "copper hair"
+mos1-01.jpg  <-  pozo-p-mp-brocha\003.jpg  |  pexels (Pexels License)  |  autor: Nataliya Vaitkevich  |  https://www.pexels.com/es-es/foto/negro-acostado-naturaleza-muerta-plastico-8467959/  |  consulta: "hair dye brush"
+mos2-01.jpg  <-  pozo-p-mp-bowl\009.jpg  |  pexels (Pexels License)  |  autor: John Diez  |  https://www.pexels.com/es-es/foto/mujer-creativo-industria-sin-rostro-7388908/  |  consulta: "hair bowl dye mixing"
+mos3-01.jpg  <-  pozo-p-mp-espalda\006.jpg  |  pexels (Pexels License)  |  autor: Ioana Motoc  |  https://www.pexels.com/es-es/foto/en-pie-de-pie-peinado-pelo-largo-12292691/  |  consulta: "red hair back"
+mos4-01.jpg  <-  pozo-p-mp-muestrario\011.jpg  |  pexels (Pexels License)  |  autor: cottonbro studio  |  https://www.pexels.com/es-es/foto/colorido-de-colores-peinado-color-3993144/  |  consulta: "hair color swatches"
+mos5-01.jpg  <-  pozo-p-mp-lavado\011.jpg  |  pexels (Pexels License)  |  autor: Polina Tankilevitch  |  https://www.pexels.com/es-es/foto/fregadero-de-ceramica-en-peluqueria-3736523/  |  consulta: "hair salon wash"
+mos6-01.jpg  <-  pozo-p-mp-espalda\010.jpg  |  pexels (Pexels License)  |  autor: Nikita Nikitin  |  https://www.pexels.com/es-es/foto/mujer-con-gorro-de-punto-blanco-10027941/  |  consulta: "red hair back"
+
+BRUMA (bruma-pag-0N.png y bruma-osc-0N.png, 30x20): las MISMAS fotos, recortadas a 3:2, reducidas y
+recoloreadas con C:\devs\demos\hacer-bruma.ps1 (clara >= 0,68 de luminancia / oscura <= 0,05). No suman fuentes.
+    pagina: banda-01.jpg, cita-01.jpg, hund3-01.jpg, port-01.jpg, hund2-01.jpg   |   oscuras: port-01.jpg, cita-01.jpg, banda-01.jpg
+
+MAPA: iframe de Google Maps (embed publico, sin clave). No hay imagen de mapa.

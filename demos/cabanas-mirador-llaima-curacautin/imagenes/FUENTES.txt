@@ -1,0 +1,22 @@
+FUENTES DE LAS IMAGENES - Cabanas Mirador Llaima Rehecha el 13-09-2026 (presentacion antes que texto). Fotos de REFERENCIA de bancos libres: ninguna es del local; las verdaderas las tiene que mandar el negocio. 
+port-01.jpg  <-  pozo-p-lla-volcan\005.jpg  |  pexels (Pexels License)  |  autor: Maximiliano I. Pinilla A.  |  https://www.pexels.com/es-es/foto/montana-rodeada-de-arboles-867943/  |  consulta: "Llaima volcano"
+hund1-01.jpg  <-  pozo-p-lla-volcan\004.jpg  |  pexels (Pexels License)  |  autor: Alexis Leandro Jeria Bocca  |  https://www.pexels.com/es-es/foto/paisaje-arboles-montana-chile-14866541/  |  consulta: "Llaima volcano"
+hund2-01.jpg  <-  pozo-p-lla-cabana\010.jpg  |  pexels (Pexels License)  |  autor: Kadir Avşar  |  https://www.pexels.com/es-es/foto/casa-en-la-nieve-14749570/  |  consulta: "A-frame cabin mountain"
+hund3-01.jpg  <-  pozo-p-lla-cabana\008.jpg  |  pexels (Pexels License)  |  autor: Jonathan Borba  |  https://www.pexels.com/es-es/foto/montanas-relajacion-mesa-arquitectura-19737814/  |  consulta: "A-frame cabin mountain"
+hund4-01.jpg  <-  pozo-p-lla-rio\011.jpg  |  pexels (Pexels License)  |  autor: Mirko Dalla Palma  |  https://www.pexels.com/es-es/foto/arroyo-de-aguas-cristalinas-sobre-rocas-lisas-de-rio-37788320/  |  consulta: "mountain river rocks clear water"
+hund5-01.jpg  <-  pozo-p-lla-araucaria\003.jpg  |  pexels (Pexels License)  |  autor: Exequiel Arce  |  https://www.pexels.com/es-es/foto/agua-rocas-arboles-corriente-16700113/  |  consulta: "araucaria araucana"
+hund6-01.jpg  <-  pozo-p-lla-lupino\002.jpg  |  pexels (Pexels License)  |  autor: Julito Elizalde  |  https://www.pexels.com/es-es/foto/flores-de-lupulo-vibrantes-en-el-lago-tekapo-35545442/  |  consulta: "lupine flowers purple field"
+banda-01.jpg  <-  pozo-p-lla-ventana\010.jpg  |  pexels (Pexels License)  |  autor: Ali Kazal  |  https://www.pexels.com/es-es/foto/paisaje-montanas-naturaleza-arboles-12785600/  |  consulta: "cabin window mountain view"
+cita-01.jpg  <-  pozo-p-lla-laguna\012.jpg  |  pexels (Pexels License)  |  autor: Gaspar Zaldo  |  https://www.pexels.com/es-es/foto/naturaleza-bosque-arboles-rio-11163085/  |  consulta: "dark lagoon forest mountain"
+mos1-01.jpg  <-  pozo-p-lla-araucaria\004.jpg  |  pexels (Pexels License)  |  autor: Santi  Echaire  |  https://www.pexels.com/es-es/foto/volcan-nevado-y-araucarias-en-chile-33606709/  |  consulta: "araucaria araucana"
+mos2-01.jpg  <-  pozo-p-lla-lupino\007.jpg  |  pexels (Pexels License)  |  autor: Irina Iriser  |  https://www.pexels.com/es-es/foto/foto-de-flores-de-lupino-3137585/  |  consulta: "lupine flowers purple field"
+mos3-01.jpg  <-  pozo-p-lla-lava\009.jpg  |  pexels (Pexels License)  |  autor: Monica Oprea  |  https://www.pexels.com/es-es/foto/textura-suelo-molido-rock-13830194/  |  consulta: "volcanic lava field snow"
+mos4-01.jpg  <-  pozo-p-lla-cabana\006.jpg  |  pexels (Pexels License)  |  autor: Kadir Avşar  |  https://www.pexels.com/es-es/foto/resfriado-frio-nieve-nevar-14749567/  |  consulta: "A-frame cabin mountain"
+mos5-01.jpg  <-  pozo-p-lla-rio\008.jpg  |  pexels (Pexels License)  |  autor: Lyn Si  |  https://www.pexels.com/es-es/foto/rocas-arroyo-piedras-rocoso-12956764/  |  consulta: "mountain river rocks clear water"
+mos6-01.jpg  <-  pozo-p-lla-araucaria\010.jpg  |  pexels (Pexels License)  |  autor: Boys in Bristol Photography  |  https://www.pexels.com/es-es/foto/naturaleza-campo-verano-bosque-5643871/  |  consulta: "araucaria araucana"
+
+BRUMA (bruma-pag-0N.png y bruma-osc-0N.png, 30x20): las MISMAS fotos, recortadas a 3:2, reducidas y
+recoloreadas con C:\devs\demos\hacer-bruma.ps1 (clara >= 0,68 de luminancia / oscura <= 0,05). No suman fuentes.
+    pagina: port-01.jpg, hund1-01.jpg, hund2-01.jpg, hund3-01.jpg, hund4-01.jpg, mos4-01.jpg, mos5-01.jpg, banda-01.jpg   |   oscuras: cita-01.jpg, banda-01.jpg, mos3-01.jpg
+
+MAPA: iframe de Google Maps (embed publico, sin clave). No hay imagen de mapa.

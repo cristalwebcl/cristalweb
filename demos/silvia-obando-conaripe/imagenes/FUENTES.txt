@@ -47,3 +47,10 @@ prohibido. Se cambió por atardeceres de lago —material apaisado, de
 gradientes suaves— y la misma página quedó en 2,2 MB sin tocar la
 calidad. Coñaripe está en el lago Calafquén: el cambio además acierta
 mejor el lugar.
+
+MAPA DE UBICACION — mapa-01.jpg
+  768 x 768 · zoom 14 · centro -39.567853, -72.007417
+  Mosaicos de OpenStreetMap pegados en una sola imagen, con el marcador
+  dibujado encima. Datos (c) OpenStreetMap contributors, licencia ODbL:
+  la atribucion tiene que ir VISIBLE junto al mapa, en el pie de la figura.
+  https://www.openstreetmap.org/copyright

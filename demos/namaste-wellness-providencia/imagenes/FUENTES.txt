@@ -1,0 +1,22 @@
+FUENTES DE LAS IMAGENES - Namaste Wellness Rehecha el 13-09-2026 (presentacion antes que texto). Fotos de REFERENCIA de bancos libres: ninguna es del local; las verdaderas las tiene que mandar el negocio. 
+port-01.jpg  <-  pozo-p-nama-sala\012.jpg  |  pexels (Pexels License)  |  autor: Abdullah Öğük  |  https://www.pexels.com/es-es/foto/vista-panoramica-del-bosque-a-traves-de-grandes-ventanas-34794617/  |  consulta: "yoga studio empty"
+hund1-01.jpg  <-  pozo-p-nama-aceite\006.jpg  |  pexels (Pexels License)  |  autor: Alesia  Kozik  |  https://www.pexels.com/es-es/foto/toallas-espejo-reflejar-naturaleza-muerta-7795792/  |  consulta: "massage oil bottle"
+hund2-01.jpg  <-  pozo-p-nama-aceite\004.jpg  |  pexels (Pexels License)  |  autor: olga Volkovitskaia  |  https://www.pexels.com/es-es/foto/tela-tejido-fragancia-liquido-13534885/  |  consulta: "massage oil bottle"
+hund3-01.jpg  <-  pozo-p-nama-piedras\012.jpg  |  pexels (Pexels License)  |  autor: Anete Lusina  |  https://www.pexels.com/es-es/foto/persona-de-cultivo-con-piedras-calientes-en-la-espalda-durante-el-procedimiento-de-masaje-5240636/  |  consulta: "massage stones"
+hund4-01.jpg  <-  pozo-p-nama-toallas\004.jpg  |  pexels (Pexels License)  |  autor: Lum3n  |  https://www.pexels.com/es-es/foto/lote-de-textiles-blancos-282892/  |  consulta: "towels spa"
+hund5-01.jpg  <-  pozo-p-nama-esterilla\010.jpg  |  pexels (Pexels License)  |  autor: cottonbro studio  |  https://www.pexels.com/es-es/foto/fitnes-fitness-gimnasio-adentro-4325439/  |  consulta: "yoga mat rolled"
+hund6-01.jpg  <-  pozo-p-nama-aceite\010.jpg  |  pexels (Pexels License)  |  autor: Elina Fairytale  |  https://www.pexels.com/es-es/foto/flores-centro-termal-balneario-termas-3865607/  |  consulta: "massage oil bottle"
+banda-01.jpg  <-  pozo-p-nama-niebla\010.jpg  |  pexels (Pexels License)  |  autor: Valeria Palesska  |  https://www.pexels.com/es-es/foto/puesta-de-sol-bosque-arboles-niebla-10253794/  |  consulta: "morning fog window"
+cita-01.jpg  <-  pozo-p-nama-niebla\011.jpg  |  pexels (Pexels License)  |  autor: Atahan Demir  |  https://www.pexels.com/es-es/foto/casas-campo-arboles-casa-14973796/  |  consulta: "morning fog window"
+mos1-01.jpg  <-  pozo-p-nama-sala\009.jpg  |  pexels (Pexels License)  |  autor: Ron Lach  |  https://www.pexels.com/es-es/foto/edificio-vaso-cristal-vidrio-10222729/  |  consulta: "yoga studio empty"
+mos2-01.jpg  <-  pozo-p-nama-piedras\005.jpg  |  pexels (Pexels License)  |  autor: Tima Miroshnichenko  |  https://www.pexels.com/es-es/foto/rocas-piedras-guijarros-chinas-6187648/  |  consulta: "massage stones"
+mos3-01.jpg  <-  pozo-p-nama-sala\010.jpg  |  pexels (Pexels License)  |  autor: Molnár Tamás Photography™  |  https://www.pexels.com/es-es/foto/planta-ventanas-habitacion-interior-19837082/  |  consulta: "yoga studio empty"
+mos4-01.jpg  <-  pozo-p-nama-toallas\008.jpg  |  pexels (Pexels License)  |  autor: Dmitriy Steinke  |  https://www.pexels.com/es-es/foto/bano-naturaleza-muerta-vista-superior-fondo-de-madera-21661433/  |  consulta: "towels spa"
+mos5-01.jpg  <-  pozo-p-nama-esterilla\004.jpg  |  pexels (Pexels License)  |  autor: Flexity Yoga & Pilates  |  https://www.pexels.com/es-es/foto/marco-redondo-azul-sobre-mesa-de-madera-marron-4028197/  |  consulta: "yoga mat rolled"
+mos6-01.jpg  <-  pozo-p-nama-sala\005.jpg  |  pexels (Pexels License)  |  autor: Gizem Erim  |  https://www.pexels.com/es-es/foto/estudio-de-yoga-interior-tranquilo-con-esterillas-y-plantas-39236379/  |  consulta: "yoga studio empty"
+
+BRUMA (bruma-pag-0N.png y bruma-osc-0N.png, 30x20): las MISMAS fotos, recortadas a 3:2, reducidas y
+recoloreadas con C:\devs\demos\hacer-bruma.ps1 (clara >= 0,68 de luminancia / oscura <= 0,05). No suman fuentes.
+    pagina: mos6-01.jpg, cita-01.jpg, hund1-01.jpg, mos3-01.jpg, mos4-01.jpg   |   oscuras: port-01.jpg, banda-01.jpg, cita-01.jpg
+
+MAPA: iframe de Google Maps (embed publico, sin clave). No hay imagen de mapa.

@@ -1,14 +1,26 @@
 PROCEDENCIA DE LAS IMÁGENES — Mis Raíces, restaurante, Los Molinos
 ════════════════════════════════════════════════════════════════
+17 archivos, una línea por archivo. Revisado el 10-09-2026.
+La demo va SIN VIDEO a propósito: el ambiente de la portada lo hace la
+espuma dibujada en CSS, no un clip. No hay carpeta video/ y no debe
+haberla.
 
-DEL NEGOCIO — tres fotos, de su ficha de Google.
+────────────────────────────────────────────────────────────────
+DEL NEGOCIO — dos fotos, de su ficha de Google.
 
-media-01.jpg   959x1600  la terraza con el quitasol y el letrero
-tira-01.jpg   1000x1014  la fachada con el letrero
-tira-02.jpg   1000x750   el local por fuera, con los quitasoles
+media-01.jpg   959x1600  la terraza con el quitasol y el letrero. MITADES.
+tira-02.jpg   1000x645   el local por fuera, con los quitasoles y la
+                         reja blanca. TIRA, pieza 2. Recortada el
+                         09-09-2026 de la misma foto de la ficha (antes
+                         iba a 1000x750).
 
-Es todo lo que existe. Con 219 reseñas, eso es exactamente lo que hay
-que decirle en la llamada.
+La ficha tiene tres fotos y ésas son todas las que existen. Con 219
+reseñas, eso es exactamente lo que hay que decirle en la llamada.
+
+El letrero que se lee en las dos es «MIS RAÍCES RESTAURANTE», que es el
+letrero DEL NEGOCIO: no es marca de un tercero y por eso se deja. Los
+quitasoles son blancos lisos, sin marca. En ninguna de las dos hay
+personas, matrículas ni precios.
 
 **Cinco homónimos descartados**, y no son poca cosa: hay un «Mis
 Raíces» de cocina mexicana, otro de cocina caribeña y salvadoreña en
@@ -16,28 +28,101 @@ Texas, un «Mis Raíces Propiedades», un centro de equinoterapia y un
 show en Santo Domingo. El buscador los mezcla todos.
 
 ────────────────────────────────────────────────────────────────
-GENÉRICAS — cuatro, de banco libre, sólo de fondo.
+MAPA — generado acá, no descargado de un banco de fotos.
 
-Son MARISCOS VIVOS, no platos: choritos pegados a la roca, un ostión
-abierto, jaibas de caleta, almejas. La diferencia importa — un plato
-servido de banco de imágenes en la web de un restaurante se descubre al
-primer servicio; un chorito en la roca es el mar de Los Molinos y no
-promete ninguna preparación.
+mapa-01.jpg   768x768   OpenStreetMap · licencia ODbL
+                        Nueve mosaicos de tile.openstreetmap.org
+                        (zoom 13) bajados UNA vez el 10-09-2026 con
+                        demos/mapa-negocio.ps1, pegados en un solo
+                        JPEG y con el marcador dibujado encima. Se
+                        sirve desde imagenes/: la página no le pide
+                        nada a openstreetmap.org al cargar, que es lo
+                        que exige la CSP (img-src 'self') y lo que
+                        evita que la visita del cliente quede
+                        registrada en un servidor ajeno.
+                        Coordenadas: -39.8459187, -73.3922232
+                        (Nominatim, «Los Molinos, Niebla, Valdivia,
+                        Región de Los Ríos, Chile»).
+                        OJO: el marcador es EL SECTOR, no la puerta —
+                        la ficha del negocio no publica calle ni
+                        número. El pie de la figura lo dice por
+                        escrito en la página.
+                        La ODbL exige atribución VISIBLE: va en el pie
+                        de la figura, con enlace a
+                        openstreetmap.org/copyright. No se puede
+                        quitar.
 
-port-01.jpg  2560x1707  choritos pegados a la roca
-aura-01.jpg   900x600   almejas amontonadas (va a 64 px de desenfoque:
-                        sólo aporta el gris nácar de la paleta)
-cita-01.jpg  2560x1707  un ostión abierto entre las conchas
-tirb-01.jpg  1000x667   jaibas frescas
-  las cuatro de pxhere · dominio público (CC0), consulta
-  «fresh mussels clams shellfish market»
+────────────────────────────────────────────────────────────────
+GENÉRICAS DE BANCO LIBRE — con origen registrado.
+
+port-01.jpg  2560x1707  get.pxhere.com · dominio público (CC0)
+                        choritos pegados a la roca. PORTADA.
+                        Consulta: «fresh mussels clams shellfish market»
+aura-01.jpg   900x600   get.pxhere.com · dominio público (CC0)
+                        almejas amontonadas. AURA (va a 64 px de
+                        desenfoque: sólo aporta el gris nácar).
+cita-01.jpg  2560x1707  get.pxhere.com · dominio público (CC0)
+                        un ostión abierto entre las conchas. CITA.
+tirb-01.jpg  1000x667   get.pxhere.com · dominio público (CC0)
+                        jaibas frescas. TIRA, pieza 3.
+telon-01.jpg 1200x800   get.pxhere.com · dominio público (CC0)
+                        recorte del mismo material de orilla. TELÓN de
+                        la pieza firma, al 15 % de opacidad.
 
 Se buscaron aparte de las de la demo vecina de Niebla (142), que es de
 la misma costa y el mismo rubro: si las muestra juntas, no pueden
 compartir imágenes.
 
 ────────────────────────────────────────────────────────────────
-LO QUE FALTA
+RECORTES DE LAS ANTERIORES — no son descargas nuevas.
+Hereda cada una la licencia de su original (pxhere, CC0). El mosaico es
+el único lugar de la página donde se permite repetir una foto con otro
+recorte: a ese tamaño no se lee como repetición sino como serie.
+
+mos-02.jpg   1200x801   recorte de port-01.jpg  (los choritos, de cerca)
+mos-03.jpg   1100x1115  recorte de cita-01.jpg  (el ostión, cuadrado)
+mos-04.jpg    900x600   recorte de tirb-01.jpg  (las jaibas, de cerca)
+
+────────────────────────────────────────────────────────────────
+SEIS ARCHIVOS SIN REGISTRO DE ORIGEN — HAY QUE REHACERLO ANTES DE
+PUBLICAR. No se inventa una URL.
+
+Entraron en la pasada de refuerzo de imágenes del 09-09-2026 y esa
+pasada no dejó anotado ni el banco ni la consulta. Los archivos están
+en disco, se ven bien y pasan los filtros de contenido (revisados uno
+por uno el 09-09-2026: sin marcas de tercero legibles, sin precios, sin
+rostros, sin menores, ninguno de plus.unsplash), pero **sin banco ni
+licencia escrita no se publican**. Se vuelven a bajar por FotoRadar con
+la consulta que se indica, o se reemplazan.
+
+tajo-01.jpg  2200x997   ola rompiendo contra la roca. TAJO.
+                        rehacer con: «wave breaking rocks coast»
+telon-02.jpg 1200x810   la roca y la espuma vistas desde el aire.
+                        TELÓN de «Lo que manda», al 15 %.
+                        rehacer con: «rocky shore aerial surf»
+tira-01.jpg  1100x825   la espuma barriendo la roca de la orilla.
+                        TIRA, pieza 1. Sustituyó a la fachada que iba
+                        antes en este hueco.
+                        rehacer con: «sea foam rocks shore»
+mos-01.jpg   1200x595   la orilla desde arriba, la espuma entrando
+                        entre las rocas. MOSAICO 1 (a doble ancho).
+                        rehacer con: «aerial ocean waves turquoise»
+mos-05.jpg   1200x800   piedras redondas de la orilla en marea baja.
+                        MOSAICO 5.
+                        rehacer con: «pebble beach long exposure»
+mos-06.jpg   1200x481   botes de pesca amarrados en un puerto con
+                        niebla, en blanco y negro. MOSAICO 6 (a doble
+                        ancho). OJO: es un puerto del norte, NO es Los
+                        Molinos; entra sólo como ambiente y la nota del
+                        mosaico ya lo dice por escrito. Los cascos
+                        llevan nombre de bote y matrícula (Joan H,
+                        Crystal Claire, 094539): son nombres de
+                        embarcación, no marcas comerciales, y a tamaño
+                        de mosaico no se leen.
+                        rehacer con: «fishing boats harbour fog»
+
+────────────────────────────────────────────────────────────────
+LO QUE FALTA DEL NEGOCIO
 
 1. **La vista DESDE la terraza.** Es el activo del lugar y ninguna
    imagen prestada lo puede reemplazar.
@@ -53,3 +138,10 @@ El velo de la portada va escrito entero en rgba y termina en alfa 0.
 Escrito con `var(--roca)` en los primeros stops tapaba la foto de punta
 a punta y la portada salía plana. Está corregido también en
 fotoradar/seis-tratamientos.sh, así que no vuelve a pasar.
+
+MAPA DE UBICACION — mapa-01.jpg
+  768 x 768 · zoom 13 · centro -39.8459187, -73.3922232
+  Mosaicos de OpenStreetMap pegados en una sola imagen, con el marcador
+  dibujado encima. Datos (c) OpenStreetMap contributors, licencia ODbL:
+  la atribucion tiene que ir VISIBLE junto al mapa, en el pie de la figura.
+  https://www.openstreetmap.org/copyright

@@ -1,0 +1,654 @@
+/* ══════════════════════════════════════════════════════════════════════
+   Salón Dchamas — Ñuñoa
+   Demo de CristalWeb. CSS plano, sin build, sin librerías.
+
+   IDENTIDAD — «CARTA DE ESMALTES»
+   Blanco puro y CINCO colores de esmalte que conviven como muestras.
+
+   SÉPTIMA MECÁNICA DE ACENTO DEL REGISTRO, y la más radical: esta
+   página NO TIENE COLOR DE MARCA. La interfaz entera —botones,
+   enlaces, focos, rótulos— es TINTA `#16141A`. Los cinco esmaltes
+   aparecen únicamente donde son producto: las muestras del paso 03,
+   las uñas del dibujo y los cinco frascos de la portada. Ni uno solo
+   toca un botón. El color acá no representa a la marca: es lo que se
+   vende, y por eso se muestra como mercadería y no como identidad.
+
+   DESLINDE con la 16 (Camaleón Armado de Muebles), la única otra del
+   registro con paleta múltiple: allá los colores SE TURNAN por sección
+   —uno manda en cada bloque— y acá conviven los cinco a la vez, en la
+   misma fila, como una carta. Y con sus vecinas de rubro: la 02 es
+   negro cálido y ámbar, la 11 blanco frío y azul tinta, la 13 salvia y
+   arena. Ésta es la única blanca de verdad y la única sin acento.
+
+   LOS CINCO: rojo `#B5153A`, nude `#D3A394`, vino `#6B1E38`, fucsia
+   `#C0347E` y tinta `#2F3E70`. Son colores de PRODUCTO, no de paleta:
+   que el fucsia se parezca al berry `#8A2470` de la 10 o el tinta al
+   azul `#1B2A5E` de la 11 no importa, porque acá aparecen en un
+   cuadrito de un centímetro y nunca como fondo ni como texto.
+
+   TRÍO TIPOGRÁFICO
+   · Display: Gluten — 0 usos. Redonda, de terminaciones blandas: el
+     encargo pedía «redonda» y es lo contrario de la didona fina de la
+     11 y de la Smooch Sans angosta de la 13.
+   · Cuerpo: Urbanist ×5 — geométrica y limpia; al lado de una display
+     redonda no hace ruido.
+   · Dato: Fragment Mono ×9 — para los largos, los minutos y el
+     teléfono.
+
+   CONTRASTES MEDIDOS sobre esta página:
+     tinta #16141A sobre blanco #FFFFFF ....... 18,4:1  (texto, enlaces
+                                                          y botones)
+     medio #5B565F sobre blanco ..............  7,3:1
+     blanco sobre tinta ...................... 18,4:1
+   ══════════════════════════════════════════════════════════════════════ */
+
+:root {
+  --blanco: #FFFFFF;
+  --blanco-2: #F7F6F7;
+  --gris: #E8E5E8;
+  --tinta: #16141A;
+  --medio: #5B565F;
+
+  /* Los cinco esmaltes. Son MERCADERÍA, no identidad: sólo aparecen en
+     las muestras, en las uñas del dibujo y en los frascos. */
+  --e1: #B5153A;   /* rojo   */
+  --e2: #D3A394;   /* nude   */
+  --e3: #6B1E38;   /* vino   */
+  --e4: #C0347E;   /* fucsia */
+  --e5: #2F3E70;   /* tinta  */
+
+  --ancho: 1160px;
+  --curva: cubic-bezier(.22, .61, .36, 1);
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+[hidden] { display: none !important; }
+
+html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+
+body {
+  margin: 0;
+  background: var(--blanco);
+  color: var(--tinta);
+  font-family: 'Urbanist', system-ui, -apple-system, 'Segoe UI', sans-serif;
+  font-size: 1.05rem;
+  line-height: 1.64;
+  -webkit-font-smoothing: antialiased;
+}
+
+img { max-width: 100%; height: auto; display: block; }
+.ancho { width: min(100% - 2.5rem, var(--ancho)); margin-inline: auto; }
+
+a { color: var(--tinta); }
+a:focus-visible, button:focus-visible, input:focus-visible, label:focus-visible {
+  outline: 3px solid var(--tinta); outline-offset: 3px;
+}
+
+/* ── Piezas de texto compartidas ─────────────────────────────────── */
+.rotulo {
+  font-family: 'Fragment Mono', ui-monospace, monospace;
+  font-size: .72rem;
+  letter-spacing: .14em;
+  text-transform: uppercase;
+  color: var(--medio);
+  margin: 0 0 .9rem;
+}
+.rotulo--claro { color: #A9A4AE; }
+
+.titulo {
+  font-family: 'Gluten', system-ui, sans-serif;
+  font-weight: 500;
+  font-size: clamp(2rem, 4.8vw, 3.2rem);
+  line-height: 1.06;
+  letter-spacing: -.012em;
+  margin: 0 0 1.1rem;
+}
+.titulo--chico { font-size: clamp(1.65rem, 3.5vw, 2.4rem); }
+.titulo--claro { color: var(--blanco); }
+
+.entradilla { font-size: 1.1rem; color: var(--medio); max-width: 64ch; margin: 0 0 1.9rem; }
+.mini { font-size: .9rem; color: var(--medio); max-width: 72ch; margin: 1.5rem 0 0; }
+.mini--claro { color: #A9A4AE; }
+.mini b { color: inherit; font-weight: 700; }
+
+/* Lo que todavía no es verdad va subrayado con puntitos y dice quién lo
+   confirma. Acá va en TINTA y no en color: el color es producto. */
+.ej { border-bottom: 1px dotted var(--medio); cursor: help; }
+.ej::after {
+  content: ' (ej.)';
+  font-family: 'Fragment Mono', ui-monospace, monospace;
+  font-size: .7em; color: var(--medio); letter-spacing: .02em;
+}
+
+.dato { font-family: 'Fragment Mono', ui-monospace, monospace; font-variant-numeric: tabular-nums; }
+
+.boton {
+  display: inline-block;
+  padding: .84rem 1.6rem;
+  background: var(--tinta);
+  color: var(--blanco);
+  text-decoration: none;
+  font-weight: 700;
+  font-size: .96rem;
+  border: 0; border-radius: 999px;
+  transition: background .2s var(--curva), transform .2s var(--curva);
+}
+.boton:hover { background: #322D3A; transform: translateY(-2px); }
+.boton--linea {
+  background: transparent; color: var(--tinta);
+  box-shadow: inset 0 0 0 1.5px var(--tinta);
+}
+.boton--linea:hover { background: var(--blanco-2); }
+.boton--chico { padding: .55rem 1.1rem; font-size: .85rem; }
+
+/* ── Banda de propuesta ──────────────────────────────────────────── */
+.propuesta { background: var(--tinta); color: #A9A4AE; padding: 1.05rem 0; }
+.propuesta__q {
+  font-family: 'Fragment Mono', ui-monospace, monospace;
+  font-size: .72rem; letter-spacing: .1em; text-transform: uppercase;
+  color: var(--blanco); margin: 0 0 .4rem;
+}
+.propuesta__q b { color: var(--blanco); font-weight: 700; }
+.propuesta__d { margin: 0; font-size: .95rem; max-width: 84ch; }
+.propuesta__d .dato, .propuesta__d b { color: var(--blanco); }
+
+/* ── Cabecera ────────────────────────────────────────────────────── */
+/* Sólida siempre: es sticky en flujo normal, queda ARRIBA de la portada
+   y no encima, así que transparentarla no gana nada. */
+.cab {
+  position: sticky; top: 0; z-index: 40;
+  background: var(--blanco);
+  border-bottom: 1px solid var(--gris);
+  transition: transform .3s var(--curva);
+}
+.cab--oculta { transform: translateY(-100%); }
+.cab__in { display: flex; align-items: center; justify-content: space-between; gap: 1rem; min-height: 64px; }
+.cab__marca { display: flex; align-items: center; gap: .75rem; text-decoration: none; color: var(--tinta); }
+.cab__txt {
+  font-family: 'Gluten', system-ui, sans-serif;
+  font-weight: 600; font-size: 1.28rem; line-height: 1;
+  display: flex; flex-direction: column;
+}
+.cab__sub {
+  font-family: 'Fragment Mono', ui-monospace, monospace;
+  font-weight: 400;
+  font-size: .58rem; letter-spacing: .1em; text-transform: uppercase;
+  color: var(--medio); margin-top: .3rem;
+}
+/* cinco gotas: la carta entera en cinco milímetros */
+.marca__gotas { display: flex; gap: 3px; flex: none; }
+.marca__gotas span { width: 7px; height: 14px; border-radius: 4px 4px 6px 6px; }
+.marca__gotas span:nth-child(1) { background: var(--e1); }
+.marca__gotas span:nth-child(2) { background: var(--e2); }
+.marca__gotas span:nth-child(3) { background: var(--e3); }
+.marca__gotas span:nth-child(4) { background: var(--e4); }
+.marca__gotas span:nth-child(5) { background: var(--e5); }
+
+.cab__nav { display: flex; align-items: center; gap: 1.3rem; }
+.cab__nav a { color: var(--medio); text-decoration: none; font-size: .92rem; }
+.cab__nav a:hover { color: var(--tinta); }
+.cab__tel {
+  font-family: 'Fragment Mono', ui-monospace, monospace;
+  font-variant-numeric: tabular-nums;
+  color: var(--tinta) !important;
+  box-shadow: inset 0 0 0 1.5px var(--gris);
+  padding: .42rem .8rem; border-radius: 999px;
+}
+.cab__tel:hover { box-shadow: inset 0 0 0 1.5px var(--tinta); }
+@media (max-width: 1000px) { .cab__nav a:not(.cab__tel) { display: none; } }
+
+/* ── Portada ─────────────────────────────────────────────────────── */
+.portada { padding: clamp(3rem, 7vw, 5.6rem) 0; background: var(--blanco); }
+.portada__in { display: grid; grid-template-columns: 1fr auto; gap: clamp(1.5rem, 5vw, 4rem); align-items: center; }
+.portada__txt { max-width: 35rem; }
+.portada__h1 {
+  font-family: 'Gluten', system-ui, sans-serif;
+  font-weight: 500;
+  font-size: clamp(2.4rem, 6.2vw, 4.2rem);
+  line-height: 1.02;
+  letter-spacing: -.018em;
+  margin: 0 0 1.3rem;
+}
+/* El titular NO lleva color de esmalte: llevaría el ojo al lugar
+   equivocado. El color entra por los frascos, que son el producto. */
+.portada__h1-b { color: var(--medio); }
+.portada__bajada { font-size: clamp(1.02rem, 1.6vw, 1.16rem); color: var(--medio); max-width: 45ch; margin: 0 0 2rem; }
+.portada__acc { display: flex; flex-wrap: wrap; gap: .8rem; margin: 0 0 2.4rem; }
+
+.specs { display: flex; flex-wrap: wrap; gap: 2.2rem; margin: 0; }
+.specs dt {
+  font-family: 'Fragment Mono', ui-monospace, monospace;
+  font-size: .64rem; letter-spacing: .1em; text-transform: uppercase;
+  color: var(--medio); margin-bottom: .2rem;
+}
+.specs dd {
+  margin: 0;
+  font-family: 'Fragment Mono', ui-monospace, monospace;
+  font-variant-numeric: tabular-nums;
+  font-size: 1.4rem;
+}
+
+/* ── Escena: los frascos que se llenan ───────────────────────────── */
+.escena { width: clamp(180px, 26vw, 340px); flex: none; }
+.escena__svg { width: 100%; height: auto; display: block; }
+.fr-vidrio { fill: none; stroke: var(--gris); stroke-width: 2.5; }
+.fr-tapa { fill: var(--tinta); }
+.fr-mesa { fill: var(--gris); }
+.fr-liq--1 { fill: var(--e1); }
+.fr-liq--2 { fill: var(--e2); }
+.fr-liq--3 { fill: var(--e3); }
+.fr-liq--4 { fill: var(--e4); }
+.fr-liq--5 { fill: var(--e5); }
+
+/* El líquido sube desde ABAJO: transform-origin bottom sobre la caja
+   del propio rect. transform-box: fill-box es obligatorio — sin él, el
+   origen es el 0,0 del viewBox y el líquido crece desde la esquina. */
+.fr-liq { transform-box: fill-box; transform-origin: bottom center; }
+.fr-tapa { transform-box: fill-box; transform-origin: center; }
+
+@keyframes frascoLlena { from { transform: scaleY(0); } to { transform: scaleY(1); } }
+@keyframes tapaBaja { from { transform: translateY(-8px); } to { transform: translateY(0); } }
+
+.js .escena:not(.escena--va) .fr-liq { transform: scaleY(0); }
+.js .escena--va .fr-liq { animation: frascoLlena .6s var(--curva) both; }
+.js .escena--va .fr-tapa { animation: tapaBaja .25s var(--curva) both; }
+
+.js .escena--va .fr--1 .fr-liq { animation-delay: 0s; }
+.js .escena--va .fr--2 .fr-liq { animation-delay: .12s; }
+.js .escena--va .fr--3 .fr-liq { animation-delay: .24s; }
+.js .escena--va .fr--4 .fr-liq { animation-delay: .36s; }
+.js .escena--va .fr--5 .fr-liq { animation-delay: .48s; }
+.js .escena--va .fr--1 .fr-tapa { animation-delay: .60s; }
+.js .escena--va .fr--2 .fr-tapa { animation-delay: .72s; }
+.js .escena--va .fr--3 .fr-tapa { animation-delay: .84s; }
+.js .escena--va .fr--4 .fr-tapa { animation-delay: .96s; }
+.js .escena--va .fr--5 .fr-tapa { animation-delay: 1.08s; }
+
+@media (prefers-reduced-motion: reduce) {
+  .js .escena:not(.escena--va) .fr-liq { transform: none; }
+  .js .escena--va .fr-liq, .js .escena--va .fr-tapa { animation: none; }
+}
+
+@media (max-width: 940px) {
+  /* a 375 px la fila de frascos va ARRIBA del titular, chica: es la
+     carta entera en una línea y explica la página sin leerla. */
+  .portada__in { grid-template-columns: 1fr; }
+  .escena { order: -1; width: min(100%, 260px); margin-bottom: 1.6rem; }
+}
+
+/* ── Franja de foto ──────────────────────────────────────────────── */
+.tajo { margin: 0; }
+.tajo img { width: 100%; aspect-ratio: 21 / 9; object-fit: cover; }
+
+/* ── Cifras ──────────────────────────────────────────────────────── */
+.cifras { padding: clamp(2.8rem, 5vw, 4.2rem) 0; background: var(--blanco-2); }
+.cifras__grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1.6rem; }
+.cifra { border-top: 2px solid var(--gris); padding-top: 1rem; }
+.cifra--cero { border-top-color: var(--tinta); }
+.cifra__n {
+  font-family: 'Fragment Mono', ui-monospace, monospace;
+  font-variant-numeric: tabular-nums;
+  font-size: clamp(1.7rem, 3.6vw, 2.5rem);
+  margin: 0 0 .35rem; line-height: 1;
+}
+.cifra__t { margin: 0; font-size: .88rem; color: var(--medio); }
+@media (max-width: 860px) { .cifras__grid { grid-template-columns: repeat(2, 1fr); } }
+
+/* ── Pieza firma: elige en tres pasos ────────────────────────────── */
+.elegir { padding: clamp(3.4rem, 7vw, 5.6rem) 0; }
+.tres { position: relative; display: grid; grid-template-columns: 1fr 1fr; gap: clamp(1.8rem, 4.5vw, 3.4rem); align-items: start; margin-top: 2.2rem; }
+@media (max-width: 900px) { .tres { grid-template-columns: 1fr; } }
+
+/* Los radios no se ven pero SIGUEN EXISTIENDO para el teclado: nada de
+   display:none, que los saca del orden de tabulación. */
+.op {
+  position: absolute;
+  width: 1px; height: 1px;
+  clip-path: inset(50%);
+  overflow: hidden; white-space: nowrap;
+}
+
+.paso { margin-bottom: 1.8rem; }
+.paso__t {
+  font-family: 'Fragment Mono', ui-monospace, monospace;
+  font-size: .8rem; letter-spacing: .06em; text-transform: uppercase;
+  color: var(--medio); margin: 0 0 .7rem;
+  display: flex; align-items: baseline; gap: .6rem;
+}
+.paso__n { color: var(--tinta); font-size: 1rem; }
+.paso__ops { display: flex; flex-wrap: wrap; gap: .5rem; }
+.paso__ops label {
+  padding: .55rem 1.1rem;
+  border: 1.5px solid var(--gris);
+  border-radius: 999px;
+  font-size: .93rem;
+  cursor: pointer;
+  transition: border-color .2s var(--curva), background .2s var(--curva);
+}
+.paso__ops label:hover { border-color: var(--tinta); }
+.paso__n2 { margin: .7rem 0 0; font-size: .84rem; color: var(--medio); }
+
+/* Las muestras de color: cuadrado de color con el nombre debajo. */
+.paso__ops--color { gap: .7rem; }
+.sw {
+  display: flex; flex-direction: column; align-items: center; gap: .35rem;
+  padding: 0 !important; border: 0 !important; border-radius: 0 !important;
+  font-size: .78rem; color: var(--medio);
+}
+.sw::before {
+  content: ''; display: block;
+  width: 46px; height: 46px; border-radius: 10px;
+  box-shadow: inset 0 0 0 1px rgba(22,20,26,.14);
+  transition: box-shadow .2s var(--curva), transform .2s var(--curva);
+}
+.sw--1::before { background: var(--e1); }
+.sw--2::before { background: var(--e2); }
+.sw--3::before { background: var(--e3); }
+.sw--4::before { background: var(--e4); }
+.sw--5::before { background: var(--e5); }
+.sw:hover::before { transform: translateY(-2px); }
+
+/* La opción elegida. Los selectores van uno por uno porque cada radio
+   tiene su propio id: no hay forma de agruparlos sin JavaScript, y el
+   JavaScript acá no hace falta. */
+#f-cuad:checked ~ .tres__ctrl label[for="f-cuad"],
+#f-alme:checked ~ .tres__ctrl label[for="f-alme"],
+#f-oval:checked ~ .tres__ctrl label[for="f-oval"],
+#l-corto:checked ~ .tres__ctrl label[for="l-corto"],
+#l-medio:checked ~ .tres__ctrl label[for="l-medio"],
+#l-largo:checked ~ .tres__ctrl label[for="l-largo"] {
+  border-color: var(--tinta); background: var(--tinta); color: var(--blanco);
+}
+#c-1:checked ~ .tres__ctrl .sw--1::before,
+#c-2:checked ~ .tres__ctrl .sw--2::before,
+#c-3:checked ~ .tres__ctrl .sw--3::before,
+#c-4:checked ~ .tres__ctrl .sw--4::before,
+#c-5:checked ~ .tres__ctrl .sw--5::before {
+  box-shadow: inset 0 0 0 1px rgba(22,20,26,.14), 0 0 0 3px var(--blanco), 0 0 0 5px var(--tinta);
+}
+#c-1:checked ~ .tres__ctrl .sw--1,
+#c-2:checked ~ .tres__ctrl .sw--2,
+#c-3:checked ~ .tres__ctrl .sw--3,
+#c-4:checked ~ .tres__ctrl .sw--4,
+#c-5:checked ~ .tres__ctrl .sw--5 { color: var(--tinta); font-weight: 700; }
+
+/* La mano dibujada */
+.mano { background: var(--blanco-2); border: 1px solid var(--gris); border-radius: 8px; padding: 1rem 1rem .4rem; }
+.mano__svg { width: 100%; height: auto; display: block; }
+.mn-palma, .mn-dedo, .mn-pulgar { fill: #EBD9CE; }
+.mn-una { fill: var(--e1); transition: fill .3s var(--curva), height .3s var(--curva), y .3s var(--curva), rx .3s var(--curva); }
+.mano__pie {
+  font-family: 'Fragment Mono', ui-monospace, monospace;
+  font-size: .66rem; color: var(--medio);
+  margin: .7rem 0 .5rem; text-align: center;
+}
+
+/* La FORMA cambia el redondeo. Cuadrada casi recta, ovalada con la
+   punta redonda y almendra con el redondeo más marcado todavía. */
+#f-cuad:checked ~ .mano .mn-una { rx: 3; }
+#f-oval:checked ~ .mano .mn-una { rx: 8; }
+#f-alme:checked ~ .mano .mn-una { rx: 10; }
+/* El LARGO cambia el alto, y la uña crece hacia ARRIBA. El BORDE DE
+   ABAJO de cada uña se queda fijo sobre la punta del dedo —112, 96,
+   108, 130 y 184 según el dedo— y por eso hay que mover la y junto con
+   la altura: si sólo creciera el alto, la uña se metería dentro de la
+   mano en vez de salir de la punta. */
+#l-corto:checked ~ .mano .mn-una--1 { y: 94;  height: 18; }
+#l-medio:checked ~ .mano .mn-una--1 { y: 86;  height: 26; }
+#l-largo:checked ~ .mano .mn-una--1 { y: 76;  height: 36; }
+#l-corto:checked ~ .mano .mn-una--2 { y: 78;  height: 18; }
+#l-medio:checked ~ .mano .mn-una--2 { y: 70;  height: 26; }
+#l-largo:checked ~ .mano .mn-una--2 { y: 60;  height: 36; }
+#l-corto:checked ~ .mano .mn-una--3 { y: 90;  height: 18; }
+#l-medio:checked ~ .mano .mn-una--3 { y: 82;  height: 26; }
+#l-largo:checked ~ .mano .mn-una--3 { y: 72;  height: 36; }
+#l-corto:checked ~ .mano .mn-una--4 { y: 112; height: 18; }
+#l-medio:checked ~ .mano .mn-una--4 { y: 104; height: 26; }
+#l-largo:checked ~ .mano .mn-una--4 { y: 94;  height: 36; }
+#l-corto:checked ~ .mano .mn-una--5 { y: 166; height: 18; }
+#l-medio:checked ~ .mano .mn-una--5 { y: 158; height: 26; }
+#l-largo:checked ~ .mano .mn-una--5 { y: 148; height: 36; }
+/* El COLOR */
+#c-1:checked ~ .mano .mn-una { fill: var(--e1); }
+#c-2:checked ~ .mano .mn-una { fill: var(--e2); }
+#c-3:checked ~ .mano .mn-una { fill: var(--e3); }
+#c-4:checked ~ .mano .mn-una { fill: var(--e4); }
+#c-5:checked ~ .mano .mn-una { fill: var(--e5); }
+
+@media (prefers-reduced-motion: reduce) { .mn-una { transition: none; } }
+
+/* ── Los tres locales ────────────────────────────────────────────── */
+.locales { padding: clamp(3rem, 6vw, 5rem) 0; background: var(--blanco-2); }
+.loc__grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.4rem; margin-top: 2rem; }
+.loc { background: var(--blanco); border: 1px solid var(--gris); border-radius: 8px; padding: 1.3rem 1.4rem 1.5rem; }
+.loc__n { font-family: 'Gluten', system-ui, sans-serif; font-weight: 600; font-size: 1.2rem; margin: 0 0 .5rem; }
+.loc__d { margin: 0 0 .3rem; font-size: .94rem; color: var(--medio); }
+.loc__a { margin: 0 0 1.1rem; font-size: .9rem; color: var(--medio); }
+.loc__a b { color: var(--tinta); }
+@media (max-width: 880px) { .loc__grid { grid-template-columns: 1fr; } }
+
+.datos--ancho { margin-top: 2rem; max-width: 30rem; }
+
+/* ── Depilación ──────────────────────────────────────────────────── */
+.depil { padding: clamp(3rem, 6vw, 5rem) 0; }
+.zonas { list-style: none; margin: 2rem 0 0; padding: 0; display: grid; grid-template-columns: repeat(4, 1fr); gap: .1rem 2rem; }
+.zona { display: flex; justify-content: space-between; gap: 1rem; padding: .75rem 0; border-bottom: 1px solid var(--gris); }
+.zona b { font-weight: 600; font-size: .98rem; }
+.zona .ej { font-family: 'Fragment Mono', ui-monospace, monospace; font-size: .8rem; color: var(--medio); white-space: nowrap; }
+@media (max-width: 900px) { .zonas { grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 520px) { .zonas { grid-template-columns: 1fr; } }
+
+/* ── Mitades ─────────────────────────────────────────────────────── */
+.mitades {
+  display: grid; grid-template-columns: 1fr 1fr;
+  align-items: center; gap: clamp(2rem, 5vw, 4.5rem);
+  width: min(100% - 2.5rem, var(--ancho));
+  margin: clamp(3.4rem, 7vw, 6rem) auto;
+}
+.mitades__foto { margin: 0; }
+.mitades__foto img { width: 100%; aspect-ratio: 4 / 5; object-fit: cover; border-radius: 8px; }
+.mitades__texto p { color: var(--medio); }
+@media (max-width: 880px) { .mitades { grid-template-columns: 1fr; } }
+
+.equipo__huecos { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; margin: 1.8rem 0 0; }
+.hueco { display: flex; flex-direction: column; gap: .5rem; }
+/* Huecos de verdad: poner un retrato de banco al lado de un nombre que
+   no es suyo sería mentir sobre quién atiende. */
+.hueco__m {
+  display: block; aspect-ratio: 1;
+  border: 2px dashed var(--gris);
+  border-radius: 8px;
+  background: var(--blanco-2);
+}
+.hueco p { margin: 0; font-size: .84rem; }
+@media (max-width: 620px) { .equipo__huecos { grid-template-columns: 1fr; } }
+
+.datos { margin: 1.6rem 0 0; display: grid; gap: .1rem; }
+.datos > div { display: flex; justify-content: space-between; gap: 1rem; padding: .6rem 0; border-bottom: 1px solid var(--gris); }
+.datos dt {
+  font-family: 'Fragment Mono', ui-monospace, monospace;
+  font-size: .66rem; letter-spacing: .08em; text-transform: uppercase;
+  color: var(--medio); padding-top: .2rem;
+}
+.datos dd { margin: 0; text-align: right; }
+
+/* ── Cita ────────────────────────────────────────────────────────── */
+.cita { position: relative; margin: 0; }
+.cita img { width: 100%; aspect-ratio: 16 / 9; object-fit: cover; }
+.cita__q {
+  position: absolute; inset: 0;
+  display: flex; align-items: center;
+  margin: 0; padding: 2rem clamp(1.5rem, 6vw, 5rem);
+  background: linear-gradient(90deg, rgba(22,20,26,.9) 0%, rgba(22,20,26,.72) 50%, rgba(22,20,26,.25) 100%);
+}
+.cita__q p {
+  font-family: 'Gluten', system-ui, sans-serif;
+  font-weight: 500;
+  font-size: clamp(1.15rem, 2.8vw, 2rem);
+  line-height: 1.18;
+  color: var(--blanco);
+  margin: 0; max-width: 27ch;
+}
+
+/* ── Reservar (con telón) ────────────────────────────────────────── */
+.con-telon { position: relative; overflow: hidden; background: var(--tinta); color: #A9A4AE; }
+.telon { position: absolute; inset: 0; }
+.telon img { width: 100%; height: 100%; object-fit: cover; opacity: .24; filter: grayscale(.35) brightness(.4); }
+/* Velo encima de la foto: sin él, una pared de frascos claros levanta el
+   fondo y el titular blanco se queda sin contraste justo en el medio.
+   Y además deja ilegible cualquier etiqueta de marca que haya en la foto. */
+.telon::after {
+  content: ""; position: absolute; inset: 0;
+  background: linear-gradient(90deg, rgba(22,20,26,.94) 0%, rgba(22,20,26,.82) 55%, rgba(22,20,26,.66) 100%);
+}
+.con-telon > .ancho { position: relative; z-index: 2; }
+.reservar { padding: clamp(3.2rem, 6.5vw, 5.2rem) 0; }
+
+.pasos { counter-reset: p; list-style: none; margin: 2.2rem 0 0; padding: 0; display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.8rem; }
+.pasos li { counter-increment: p; position: relative; padding-top: 2.6rem; font-size: .96rem; }
+.pasos li::before {
+  content: counter(p, decimal-leading-zero);
+  position: absolute; top: 0; left: 0;
+  font-family: 'Fragment Mono', ui-monospace, monospace;
+  font-size: 1.15rem;
+  color: var(--blanco);
+}
+.pasos li::after {
+  content: ''; position: absolute; top: 1.9rem; left: 0; width: 2.4rem; height: 1px;
+  background: var(--blanco); opacity: .5;
+}
+.pasos li b { color: var(--blanco); }
+@media (max-width: 820px) { .pasos { grid-template-columns: 1fr; } }
+
+/* ── Mosaico ─────────────────────────────────────────────────────── */
+.mos { padding: clamp(3rem, 6vw, 5rem) 0; }
+.mos__grilla { display: grid; grid-template-columns: repeat(3, 1fr); gap: .5rem; width: min(100% - 2.5rem, 1400px); margin-inline: auto; }
+.mos__p { margin: 0; overflow: hidden; border-radius: 6px; }
+.mos__p img { width: 100%; aspect-ratio: 3 / 4; object-fit: cover; transition: transform .5s var(--curva); }
+.mos__p:hover img { transform: scale(1.035); }
+.mos__pie { font-size: .9rem; color: var(--medio); max-width: 74ch; margin: 1.6rem auto 0; text-align: center; }
+@media (max-width: 820px) { .mos__grilla { grid-template-columns: repeat(2, 1fr); } }
+
+/* ── Contacto ────────────────────────────────────────────────────── */
+.contacto { padding: clamp(3rem, 6vw, 5rem) 0; background: var(--blanco-2); }
+.contacto__cols { display: grid; grid-template-columns: 1.2fr 1fr; gap: clamp(2rem, 5vw, 4rem); align-items: start; }
+.contacto__num {
+  font-family: 'Fragment Mono', ui-monospace, monospace;
+  font-variant-numeric: tabular-nums;
+  font-size: clamp(1.3rem, 3.2vw, 1.95rem);
+  margin: 0 0 .5rem;
+}
+.contacto__num a { text-decoration: none; }
+.contacto__num a:hover { text-decoration: underline; }
+.contacto__ig { margin: 0; font-size: .95rem; color: var(--medio); }
+@media (max-width: 800px) { .contacto__cols { grid-template-columns: 1fr; } }
+
+/* ── Para el dueño ───────────────────────────────────────────────── */
+.dueno { padding: clamp(3rem, 6vw, 5rem) 0; background: var(--tinta); color: #A9A4AE; }
+.dueno__cols { display: grid; grid-template-columns: repeat(3, 1fr); gap: 2rem; margin-top: 2rem; }
+.dueno__cols h3 {
+  font-family: 'Fragment Mono', ui-monospace, monospace;
+  font-size: .72rem; letter-spacing: .1em; text-transform: uppercase;
+  color: var(--blanco); margin: 0 0 .6rem;
+}
+.dueno__cols p { margin: 0; font-size: .93rem; }
+.dueno__cols b { color: var(--blanco); }
+.dueno__cierre { display: flex; flex-wrap: wrap; gap: 1.6rem; margin: 2.6rem 0 0; }
+.flecha { color: var(--blanco); text-decoration: none; font-size: .96rem; }
+.flecha:hover { text-decoration: underline; }
+.flecha--fuerte { font-weight: 700; }
+@media (max-width: 820px) { .dueno__cols { grid-template-columns: 1fr; } }
+
+/* ── Pie ─────────────────────────────────────────────────────────── */
+.pie { background: #0D0C10; color: #8C8792; padding: 2.4rem 0; font-size: .87rem; }
+.pie b { color: var(--blanco); }
+.pie__leg { color: #6B6771; font-size: .81rem; margin: .8rem 0 0; }
+
+/* ── Apariciones ─────────────────────────────────────────────────── */
+/* El stagger se resuelve con nth-child en el CSS y NUNCA con un
+   style="--i:3" en el HTML: la CSP de esta página bloquea el atributo
+   style y el escalonado se perdería sin un solo error en consola. */
+.js .rev > * { opacity: 0; transform: translateY(14px); }
+.js .rev.rev--on > * { opacity: 1; transform: none; transition: opacity .55s ease, transform .55s var(--curva); }
+.js .rev.rev--on > *:nth-child(2) { transition-delay: .06s; }
+.js .rev.rev--on > *:nth-child(3) { transition-delay: .12s; }
+.js .rev.rev--on > *:nth-child(4) { transition-delay: .18s; }
+.js .rev.rev--on > *:nth-child(5) { transition-delay: .24s; }
+.js .rev.rev--on > *:nth-child(6) { transition-delay: .30s; }
+.js .rev.rev--on > *:nth-child(7) { transition-delay: .36s; }
+.js .rev.rev--on > *:nth-child(8) { transition-delay: .42s; }
+
+.js .rev:is(.rotulo, .titulo) { opacity: 0; transform: translateY(14px); }
+.js .rev--on:is(.rotulo, .titulo) { opacity: 1; transform: none; transition: opacity .55s ease, transform .55s var(--curva); }
+
+@media (prefers-reduced-motion: reduce) {
+  .js .rev > *, .js .rev:is(.rotulo, .titulo) { opacity: 1; transform: none; }
+}
+
+/* ── MAPA DE UBICACION ──────────────────────────────────────────────
+   Imagen propia con mosaicos de OpenStreetMap pegados: la CSP prohibe
+   pedir nada a un tercero, asi que un iframe de Google Maps quedaria en
+   blanco SIN dar un solo error. El "Como llegar" si es un enlace, y un
+   enlace no lo bloquea nada.
+   Los colores salen de currentColor a proposito: asi el bloque se adapta
+   a la paleta de cada demo sin conocerla y sin chocar con ella.
+   La atribucion a OpenStreetMap la exige su licencia (ODbL). */
+.mapa-sec { padding: clamp(2.5rem, 6vw, 4.5rem) 0; }
+.mapa {
+  /* Casi siempre el mapa queda como hijo DIRECTO de la seccion, fuera del
+     contenedor .ancho: sin este ancho maximo se va de borde a borde y el
+     pie del mapa arranca pegado al filo de la pantalla. Se usa la variable
+     de la demo si existe, y 1100 px si no. */
+  width: min(100% - 2.5rem, var(--ancho, 1100px));
+  margin: 1.4rem auto 0;
+  border: 1px solid; border-color: color-mix(in srgb, currentColor 22%, transparent);
+  border-radius: 10px; overflow: hidden;
+}
+@supports not (color: color-mix(in srgb, red 50%, blue)) { .mapa { border-color: rgba(128, 128, 128, .35); } }
+.mapa img { display: block; width: 100%; height: auto; aspect-ratio: 16 / 10; object-fit: cover; }
+.mapa__pie {
+  display: flex; flex-wrap: wrap; align-items: center; gap: .4rem 1rem;
+  padding: .75rem .9rem;
+  font-size: .86em; line-height: 1.45;
+  border-top: 1px solid; border-top-color: color-mix(in srgb, currentColor 22%, transparent);
+}
+@supports not (color: color-mix(in srgb, red 50%, blue)) { .mapa__pie { border-top-color: rgba(128, 128, 128, .35); } }
+.mapa__pie b { font-weight: 700; }
+.mapa__ir { color: inherit; font-weight: 700; text-decoration: underline; min-height: 44px; display: inline-flex; align-items: center; }
+.mapa__cred { width: 100%; font-size: .84em; opacity: .8; }
+.mapa__cred a { color: inherit; }
+/* ── BOTON FLOTANTE DE CONTACTO ─────────────────────────────────────
+   56 px de alto, por encima del minimo tactil de 44. Los colores de
+   marca van a proposito: se reconocen sin leerlos, y eso es lo que hace
+   que se toquen. Se ve SIEMPRE por defecto; el JS solo lo aparta sobre
+   la portada. Al reves, un fallo del script se llevaria el CTA principal. */
+.flota {
+  position: fixed;
+  right: max(1rem, env(safe-area-inset-right, 0px));
+  bottom: max(1rem, env(safe-area-inset-bottom, 0px));
+  z-index: 60;
+  display: inline-flex; align-items: center; gap: .55rem;
+  height: 56px; padding: 0 1.15rem 0 1rem;
+  border-radius: 999px;
+  text-decoration: none;
+  font-family: var(--cuerpo, system-ui, sans-serif);
+  font-size: .95rem; font-weight: 700; line-height: 1;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, .26), 0 2px 6px rgba(0, 0, 0, .16);
+  transition: opacity .28s ease, transform .28s ease, box-shadow .18s ease;
+}
+.flota--wa { background: #25D366; color: #07310F; }
+.flota--ig { background: linear-gradient(120deg, #F9CE34 4%, #EE2A7B 48%, #6228D7 96%); color: #FFFFFF; }
+.flota__i { width: 26px; height: 26px; fill: currentColor; flex: none; }
+.flota:hover, .flota:focus-visible { transform: translateY(-2px); box-shadow: 0 10px 26px rgba(0, 0, 0, .3); }
+.js .flota--arriba { opacity: 0; transform: translateY(14px) scale(.94); pointer-events: none; }
+
+@media (max-width: 520px) {
+  .flota { width: 56px; padding: 0; justify-content: center; }
+  .flota__t { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .flota { transition: opacity .28s ease; }
+  .flota:hover, .flota:focus-visible { transform: none; }
+  .js .flota--arriba { transform: none; }
+}

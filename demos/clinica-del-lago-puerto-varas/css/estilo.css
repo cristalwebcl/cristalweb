@@ -1,5 +1,32 @@
 /* ══════════════════════════════════════════════════════════════════
    CLÍNICA DEL LAGO · Odontología, Puerto Varas — demo CristalWeb
+   Demo sin encargo. Construida el 02-09-2026, subida de nivel el
+   08-09-2026: se le agregaron la banda de cifras, la sección de
+   mitades, dos clips de fondo y cinco fotos. La identidad —el trío,
+   la paleta y el tono— no se tocó: son decisiones ya tomadas.
+
+   Segunda pasada del 08-09-2026:
+   · Botón flotante de WhatsApp al número DE LA CLÍNICA, escrito en el
+     HTML y visible por defecto (el JS sólo lo aparta sobre la portada).
+   · El mosaico pasó de tres columnas a CUATRO. Con seis piezas y las
+     celdas 1 y 6 a `span 2` son ocho celdas: en tres columnas quedaba
+     un hueco blanco al final —se veía en la página— y en cuatro cierra
+     exacto en dos filas.
+   · Cinco fotos cambiadas (tajo, telón de especialidades y tres del
+     mosaico): las tres primeras no tenían procedencia anotada, y en las
+     dos del mosaico había una marca de fabricante grabada en el sillón
+     y dos diplomas con texto legible. Ninguna decisión de identidad se
+     tocó en esta pasada.
+
+   Revisión del 09-09-2026 (tercera pasada, medida sobre la página viva):
+   · Las seis fichas del tratamiento NO estaban centradas: la lista lleva
+     la clase .ancho, pero `.etapas { margin: 0 }` viene después en el
+     archivo y pisaba el `margin-inline: auto`. Medido en la captura de
+     1440: la grilla iba de x 0 a x 1140 y el título de arriba de 150 a
+     1290. Corregido con `margin-block: 0`.
+   · Los enlaces del nav pasan a 44 px de alto (estaban en 36).
+   · `p { text-wrap: pretty }` y `svg, video { max-width: 100% }`, que
+     faltaban de la base canónica.
    ------------------------------------------------------------------
    DIRECCIÓN: «NUDE Y PORCELANA». Arena cálida y un bronce apagado: la
    paleta de la piel, no la del diente. Es deliberado — la clínica hace
@@ -24,6 +51,23 @@
        y silenciosa, aguanta bien el aire.
      Dato    · Fragment Mono — cuarta aparición. Lleva las cifras del
        tratamiento y los rótulos del esquema.
+
+   ESCENA: la herradura del alineador baja inclinada y se posa en 0,9 s;
+     después una línea de brillo bronce la recorre en 1,2 s y vuelve
+     cada 8 s. Es el ÚNICO bucle infinito de la página. El objeto es la
+     pregunta —una placa que se pone y se saca— y va en su propia zona,
+     a la derecha, sin pelear con el clip.
+
+   CLIPS: dos, ambos 720p sin audio y sin pista de sonido.
+     · video/port.mp4  · 9,0 s · 1,7 MB — un box de atención vacío, la
+       cámara se desplaza. El sujeto es el mismo que la foto de
+       portada, así que el fundido de 1,4 s no cambia de tema.
+     · video/cita.mp4  · 6,4 s · 0,95 MB — modelos de yeso sobre la
+       mesa. Es el objeto del que habla la frase, y su color es el de
+       la paleta: arena y bronce, no el celeste clínico de rigor.
+     Los dos van con la foto de base debajo y sin atributo poster: el
+     <img> hermano NO se va, así que si el autoplay se bloquea nunca
+     queda un rectángulo negro.
    ══════════════════════════════════════════════════════════════════ */
 
 :root {
@@ -59,7 +103,9 @@ html { -webkit-text-size-adjust: 100%; scroll-behavior: smooth; }
 @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
 
 body { margin: 0; background: var(--porcelana); color: var(--tinta); font-family: var(--cuerpo); font-size: var(--p-0); line-height: 1.68; }
-img { max-width: 100%; height: auto; }
+img, svg, video { max-width: 100%; }
+img { height: auto; }
+p { text-wrap: pretty; }   /* mata las viudas de una línea, gratis */
 a { color: var(--bronce); }
 :focus-visible { outline: 3px solid var(--bronce); outline-offset: 2px; }
 .ancho { width: var(--ancho); margin-inline: auto; }
@@ -115,7 +161,9 @@ h1, h2, h3 { font-family: var(--display); font-weight: 700; line-height: 1.2; ma
 .cab__nombre { font-family: var(--display); font-size: var(--p-1); line-height: 1; }
 .cab__sub { display: block; font-family: var(--mono); font-size: .58rem; letter-spacing: .1em; text-transform: uppercase; color: var(--bronce); margin-top: .3rem; font-weight: 400; }
 .cab__nav { display: flex; gap: 1.2rem; margin-left: auto; overflow-x: auto; }
-.cab__nav a { color: var(--medio); text-decoration: none; font-size: var(--p--1); white-space: nowrap; padding: .4rem 0; border-bottom: 2px solid transparent; }
+/* 44 px también acá: sobre 1040 px el nav se ve, y hay tablets táctiles de
+   ese ancho. Con `padding: .4rem 0` el blanco de toque quedaba en 36 px. */
+.cab__nav a { display: inline-flex; align-items: center; min-height: 44px; color: var(--medio); text-decoration: none; font-size: var(--p--1); white-space: nowrap; padding: .4rem 0; border-bottom: 2px solid transparent; }
 .cab__nav a:hover { color: var(--bronce); border-bottom-color: var(--bronce); }
 .cab__cta { margin-left: .4rem; }
 @media (max-width: 1040px) { .cab__nav { display: none; } .cab__cta { margin-left: auto; } }
@@ -123,9 +171,17 @@ h1, h2, h3 { font-family: var(--display); font-weight: 700; line-height: 1.2; ma
 /* ── Portada ───────────────────────────────────────────────────── */
 .portada { position: relative; isolation: isolate; min-height: min(84vh, 720px); display: flex; flex-direction: column; justify-content: center; padding: var(--aire) 0; overflow: hidden; }
 .portada__foto { position: absolute; inset: 0; z-index: -1; }
-.portada__foto img {
+/* La foto y el clip comparten selector: misma máscara, mismo recorte y
+   mismo encuadre escritos UNA vez. Con reglas separadas se descuadran
+   apenas se toca una. */
+.portada__foto img, .portada__video {
   display: block; width: 100%; height: 100%;
   object-fit: cover; object-position: 74% 46%;
+  /* Espejo. La foto y el clip traen su masa oscura —el sillón— en el
+     tercio IZQUIERDO, que es justo el que la máscara borra: sin esto
+     la portada queda blanca sobre blanca y se ve plana. Va en el
+     selector compartido para que foto y clip volteen juntos. */
+  transform: scaleX(-1);
   -webkit-mask-image: linear-gradient(90deg, transparent 0%, transparent 26%, rgba(0,0,0,.2) 42%, rgba(0,0,0,.7) 60%, #000 76%, #000 100%);
           mask-image: linear-gradient(90deg, transparent 0%, transparent 26%, rgba(0,0,0,.2) 42%, rgba(0,0,0,.7) 60%, #000 76%, #000 100%);
 }
@@ -186,8 +242,64 @@ h1, h2, h3 { font-family: var(--display); font-weight: 700; line-height: 1.2; ma
    sucio. Con 42 % el dibujo arranca en x 223 y queda libre.
    El titular termina en y 554; la escena empieza en 791. */
 @media (max-width: 760px) {
-  .escena--placa { top: auto; bottom: 3%; right: 3%; width: 42%; }
+  /* CORREGIDO EL 09-09-2026. El cálculo de arriba sólo vale a 375 px, que
+     es donde los dos botones NO caben en una línea y el segundo baja. Entre
+     ~420 y 760 px los dos caben juntos, llegan a x 403 (medido a 485) y la
+     herradura arrancaba en x 266: el arco bronce cruzaba por dentro de
+     «Pedir evaluación», justo lo que este comentario decía que había que
+     evitar. Ahora la escena tiene FRANJA PROPIA bajo los botones: la
+     portada reserva abajo 34vw + 2,5rem y el dibujo ocupa 36vw × 0,85 más
+     su margen, así que a cualquier ancho de la franja queda aire entre el
+     botón y el arco. */
+  .portada { padding-bottom: calc(34vw + 2.5rem); }
+  .escena--placa { top: auto; bottom: 1.25rem; right: 4%; width: 36%; }
+  /* El texto pasó de estar AL LADO de la foto a estar ENCIMA: la
+     máscara y el velo rotan a vertical o el titular queda sobre la
+     zona nítida. El sujeto del clip (el sillón) vive en el centro
+     del cuadro, así que basta rotar; no hace falta recomponer. */
+  .portada { min-height: 0; padding-top: 1.5rem; }
+  .portada__foto img, .portada__video {
+    object-position: 50% 46%;
+    -webkit-mask-image: linear-gradient(180deg, transparent 0%, rgba(0,0,0,.45) 36%, #000 66%);
+            mask-image: linear-gradient(180deg, transparent 0%, rgba(0,0,0,.45) 36%, #000 66%);
+  }
+  .portada__foto::after {
+    background: linear-gradient(180deg,
+        rgba(247,244,240,1) 0%, rgba(247,244,240,.94) 34%,
+        rgba(247,244,240,.6) 66%, rgba(247,244,240,.18) 100%);
+  }
 }
+
+/* ── CIFRAS ────────────────────────────────────────────────────────
+   Banda oscura entre la portada y la pieza firma. Lleva telón propio
+   —el segundo de la página, otra foto— para que la banda oscura tenga
+   imagen, como todas las demás oscuras de esta página.
+   Contraste medido con .js quitado: la porcelana #F7F4F0 sobre el
+   tinta #221E1B da 15,4:1, y el gris claro #C9C2BA sobre el mismo
+   fondo da 9,7:1. El telón al 10 % no mueve el fondo lo suficiente
+   para bajar de AAA. */
+.cifras { padding: calc(var(--aire) * .72) 0; background: var(--tinta); color: var(--porcelana); }
+.telon--cifras img { opacity: .10; object-position: 50% 55%; }
+.cifras__lista {
+  list-style: none; margin-block: 0; padding: 0;
+  display: grid; gap: 1.6rem 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+}
+.cifras__lista li { border-top: 1px solid rgba(217,169,111,.32); padding-top: .9rem; }
+/* El número hueco: relleno del propio fondo y contorno bronce. Se lee
+   como grabado y no como texto — por eso el dato de verdad va en el
+   <span> de al lado, que sí es texto normal y sí pasa AA. */
+.cifras__lista b {
+  display: block; font-family: var(--display); font-size: clamp(3rem, 2rem + 4vw, 5rem);
+  line-height: 1; color: var(--tinta); font-weight: 700;
+  -webkit-text-stroke: 1.5px rgba(217,169,111,.85);
+  font-variant-numeric: tabular-nums; margin-bottom: .5rem;
+}
+/* La herida rompe el patrón: relleno sólido, sin contorno. Ese
+   contraste es lo que dirige la vista al 0. */
+.cifras__herida b { color: var(--bronce-l); -webkit-text-stroke: 0; }
+.cifras__lista span { display: block; font-size: var(--p--1); color: #C9C2BA; line-height: 1.5; }
+.cifras__herida span { color: var(--porcelana); }
 
 /* ── PIEZA FIRMA · el mapa del tratamiento ─────────────────────── */
 .mapa { padding: var(--aire) 0; }
@@ -203,7 +315,13 @@ h1, h2, h3 { font-family: var(--display); font-weight: 700; line-height: 1.2; ma
 .placas__pie { margin: 0 0 2.5rem; font-family: var(--mono); font-size: var(--p--1); color: var(--medio); display: flex; align-items: center; gap: .5rem; }
 .pt-leyenda { width: 10px; height: 10px; border-radius: 50%; background: var(--bronce); display: inline-block; flex: none; }
 
-.etapas { list-style: none; margin: 0; padding: 0; display: grid; gap: 1.2rem; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); }
+/* margin-BLOCK, no `margin: 0`: esta lista lleva además la clase .ancho, y
+   un `margin: 0` escrito después pisa el `margin-inline: auto` que la
+   centra. Con `margin: 0` las seis fichas arrancaban pegadas al borde
+   izquierdo de la ventana mientras el título de arriba seguía en la
+   retícula —medido: la grilla iba de x 0 a x 1140 en vez de 150 a 1290—.
+   Es el mismo motivo por el que .cifras__lista usa margin-block. */
+.etapas { list-style: none; margin-block: 0; padding: 0; display: grid; gap: 1.2rem; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); }
 .etapa { background: var(--arena); border-radius: 8px; padding: 1.4rem; }
 .etapa__n { margin: 0 0 .5rem; font-family: var(--mono); font-size: var(--p-2); color: var(--bronce); }
 .etapa h3 { font-size: var(--p-1); margin-bottom: .5rem; }
@@ -247,25 +365,72 @@ h1, h2, h3 { font-family: var(--display); font-weight: 700; line-height: 1.2; ma
   -webkit-mask-image: linear-gradient(180deg, transparent 0%, #000 20%, #000 74%, transparent 100%);
           mask-image: linear-gradient(180deg, transparent 0%, #000 20%, #000 74%, transparent 100%);
 }
-.esp { list-style: none; margin: 0; padding: 1.6rem; display: grid; gap: 1.4rem; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); }
+/* minmax de 280 y no de 230: con 230 caben cuatro columnas y las seis
+   especialidades quedan 4 + 2, con dos huecos a la derecha de la
+   segunda fila. Con 280 caben tres y quedan 3 + 3, que es lo que se
+   lee como una lista completa. */
+.esp { list-style: none; margin: 0; padding: 1.6rem; display: grid; gap: 1.4rem; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); }
 .esp h3 { font-size: var(--p-1); margin-bottom: .3rem; color: var(--bronce); }
 .esp p { margin: 0; font-size: var(--p--1); color: var(--medio); }
 
 /* ── Cita ──────────────────────────────────────────────────────── */
 .cita { position: relative; margin: 0; isolation: isolate; min-height: min(48vh, 380px); display: grid; place-items: center; overflow: hidden; }
-.cita img { position: absolute; inset: 0; z-index: -1; width: 100%; height: 100%; object-fit: cover; object-position: 50% 44%; }
+.cita img, .cita__video { position: absolute; inset: 0; z-index: -1; width: 100%; height: 100%; object-fit: cover; object-position: 50% 50%; }
 .cita::after { content: ""; position: absolute; inset: 0; z-index: -1; background: rgba(34,30,27,.76); }
 .cita__txt { margin: 0; width: var(--ancho); padding: 3rem 0; }
 .cita__txt p { font-family: var(--display); font-size: var(--p-3); color: var(--porcelana); max-width: 24ch; margin: 0 auto; text-align: center; line-height: 1.3; }
 
-/* ── Mosaico ───────────────────────────────────────────────────── */
+/* ── Mosaico ───────────────────────────────────────────────────────
+   CUATRO columnas, no tres. Con seis piezas y las celdas 1 y 6 a
+   `span 2` son ocho celdas: en tres columnas eso deja un hueco blanco
+   al final de la tercera fila —se veía— y en cuatro cierra exacto en
+   dos filas de cuatro. El ritmo queda [1 1][2][3] / [4][5][6 6]. */
 .mos { padding: var(--aire) 0; }
-.mos__grilla { display: grid; gap: 4px; grid-template-columns: repeat(3, 1fr); width: var(--ancho); margin: 2rem auto 0; border-radius: 8px; overflow: hidden; }
+.mos__grilla { display: grid; gap: 4px; grid-template-columns: repeat(4, 1fr); width: var(--ancho); margin: 2rem auto 0; border-radius: 8px; overflow: hidden; }
 .mos__p { margin: 0; overflow: hidden; }
 .mos__p:nth-child(1), .mos__p:nth-child(6) { grid-column: span 2; }
-.mos__p img { display: block; width: 100%; height: 100%; aspect-ratio: 3 / 2; object-fit: cover; transition: transform .5s var(--salida); }
-.mos__p:hover img { transform: scale(1.05); }
-@media (max-width: 640px) { .mos__grilla { grid-template-columns: repeat(2, 1fr); } }
+.mos__p img { display: block; width: 100%; height: 100%; aspect-ratio: 3 / 2; object-fit: cover; filter: saturate(.94); transition: transform .5s var(--salida), filter .5s var(--salida); }
+.mos__p:hover img { transform: scale(1.05); filter: saturate(1); }
+/* A dos columnas la retícula sigue cerrando: [1 1] / [2][3] / [4][5] / [6 6] */
+@media (max-width: 900px) { .mos__grilla { grid-template-columns: repeat(2, 1fr); } }
+
+/* ── Mitades · qué llevar ──────────────────────────────────────────
+   Media foto y medio texto. La foto NO termina en filo recto: se apaga
+   contra el fondo con mask-image, que es lo que un ::after no puede
+   hacer sin dejar el corte. Cero desenfoque: la foto va a foco
+   completo del lado libre.
+   Contraste medido: porcelana #F7F4F0 sobre tinta #221E1B, 15,4:1;
+   la lista en #C9C2BA sobre el mismo fondo, 9,7:1. */
+.mit { background: var(--tinta); color: var(--porcelana); display: grid; grid-template-columns: 1fr 1fr; align-items: stretch; overflow: hidden; }
+.mit__foto { margin: 0; position: relative; min-height: clamp(300px, 34vw, 540px); }
+.mit__foto img {
+  position: absolute; inset: 0; width: 100%; height: 100%;
+  object-fit: cover; object-position: 52% 50%;
+  -webkit-mask-image: linear-gradient(90deg, #000 0%, #000 58%, rgba(0,0,0,.55) 84%, transparent 100%);
+          mask-image: linear-gradient(90deg, #000 0%, #000 58%, rgba(0,0,0,.55) 84%, transparent 100%);
+}
+.mit__txt { display: flex; align-items: center; padding: var(--aire) 0; }
+.mit__caja { width: min(100% - 2.5rem, 36rem); margin-inline: auto; }
+.mit__lista { list-style: none; margin: 1.4rem 0 0; padding: 0; }
+.mit__lista li { position: relative; padding: 0 0 .9rem 1.6rem; font-size: var(--p--1); color: #C9C2BA; line-height: 1.6; }
+/* El bullet dibujado: un cuadrado de 7 px girado — la placa vista de
+   canto. Nunca el list-style por defecto. */
+.mit__lista li::before {
+  content: ""; position: absolute; left: 0; top: .5rem;
+  width: 7px; height: 7px; background: var(--bronce-l); transform: rotate(45deg);
+}
+.mit__lista b { color: var(--porcelana); font-weight: 700; }
+.mit__cierre { margin: 1.4rem 0 0; font-size: var(--p--1); color: var(--bronce-l); border-left: 3px solid rgba(217,169,111,.4); padding-left: .9rem; }
+@media (max-width: 860px) {
+  .mit { grid-template-columns: 1fr; }
+  .mit__foto { min-height: clamp(240px, 52vw, 340px); }
+  .mit__foto img {
+    object-position: 50% 46%;
+    -webkit-mask-image: linear-gradient(180deg, #000 0%, #000 58%, rgba(0,0,0,.55) 86%, transparent 100%);
+            mask-image: linear-gradient(180deg, #000 0%, #000 58%, rgba(0,0,0,.55) 86%, transparent 100%);
+  }
+  .mit__txt { padding-top: 1.5rem; }
+}
 
 /* ── Evaluación ────────────────────────────────────────────────── */
 .evalua { padding: var(--aire) 0; background: var(--arena); }
@@ -304,8 +469,51 @@ h1, h2, h3 { font-family: var(--display); font-weight: 700; line-height: 1.2; ma
 .flecha:hover { border-bottom-color: var(--bronce-l); }
 
 /* ── Pie ───────────────────────────────────────────────────────── */
-.pie { background: #1B1815; color: #8E877F; padding: 2rem clamp(1.2rem, 5vw, 3rem); }
+/* El padding de abajo deja sitio al botón flotante de WhatsApp: 56 px
+   de botón más el margen, para que nunca tape la última línea legal. */
+.pie { background: #1B1815; color: #8E877F; padding: 2rem clamp(1.2rem, 5vw, 3rem) 6rem; }
 .pie p { margin: 0; font-size: var(--p--1); max-width: 92ch; }
+
+/* ── WHATSAPP FLOTANTE ─────────────────────────────────────────────
+   Botón fijo abajo a la derecha. 56 px de alto: por encima de los 44
+   del mínimo táctil. El verde de WhatsApp va a propósito —se reconoce
+   sin leerlo, y eso es lo que hace que se toque— y es el único color
+   de la página que no sale de la paleta: es una marca, no un adorno.
+
+   La dirección del truco importa: el botón se ve SIEMPRE por defecto y
+   el JS sólo lo aparta mientras el visitante está en la portada, para
+   no tapar el titular. Si el script no arranca, o si rescate.js quita
+   la clase .js, el botón queda visible, que es el estado que vende.
+
+   Contraste medido: #07310F sobre #25D366 da 7,3:1 — AA de sobra para
+   un rótulo de 700 en .95rem. El icono va incrustado en el HTML porque
+   la CSP de esta página no deja pedir nada a un tercero. */
+.wapp {
+  position: fixed;
+  right: max(1rem, env(safe-area-inset-right, 0px));
+  bottom: max(1rem, env(safe-area-inset-bottom, 0px));
+  z-index: 60;
+  display: inline-flex; align-items: center; gap: .55rem;
+  height: 56px; padding: 0 1.15rem 0 1rem;
+  border-radius: 999px;
+  background: #25D366; color: #07310F;
+  text-decoration: none;
+  font-family: var(--cuerpo); font-size: .95rem; font-weight: 700; line-height: 1;
+  box-shadow: 0 6px 18px rgba(0,0,0,.3), 0 2px 6px rgba(0,0,0,.2);
+  transition: opacity .28s ease, transform .28s ease, box-shadow .18s ease;
+}
+.wapp__i { width: 26px; height: 26px; flex: none; fill: currentColor; }
+.wapp:hover { transform: translateY(-2px); box-shadow: 0 10px 24px rgba(0,0,0,.34), 0 2px 6px rgba(0,0,0,.2); }
+.wapp:focus-visible { outline: 3px solid var(--tinta); outline-offset: 3px; }
+/* Apartado mientras se mira la portada. No se usa `hidden` ni
+   display:none: sigue en el flujo y vuelve con un fundido. */
+.wapp--arriba { opacity: 0; transform: translateY(14px) scale(.94); pointer-events: none; }
+/* Bajo 520 px queda el círculo y el rótulo se esconde sin salir del
+   DOM: el lector de pantalla sigue leyendo el aria-label del enlace. */
+@media (max-width: 520px) {
+  .wapp { width: 56px; padding: 0; justify-content: center; gap: 0; }
+  .wapp__t { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); }
+}
 
 /* ══ Animación ═════════════════════════════════════════════════
    Números de movimiento-web (reglas atómicas): la OPACIDAD salta corta
@@ -343,26 +551,36 @@ h1, h2, h3 { font-family: var(--display); font-weight: 700; line-height: 1.2; ma
 .js .mapa .ancho.rev.ok .placas .pt,
 .js .mapa .ancho.rev.ok .placas__pie { animation: ctrl-aparece .4s ease-out 1s both; }
 
-/* ── Cascada del mosaico (regla 4) ─────────────────────────────────*/
-.js .mos__grilla.rev { opacity: 1; transform: none; transition: none; }
-.js .mos__grilla.rev > * { opacity: 0; transform: translateY(28px); }
-.js .mos__grilla.rev.ok > * {
+/* ── Cascada de hijos (regla 4) ────────────────────────────────────
+   El CONTENEDOR se neutraliza y animan los hijos. Si no se neutraliza,
+   contenedor e hijos bajan a la vez y el grupo entero se desplaza el
+   doble. El índice va por nth-child en el CSS y NUNCA en un
+   style="--i:3": la CSP de esta página no admite estilo en línea y lo
+   bloquearía sin un solo error visible. */
+.js .cascada.rev { opacity: 1; transform: none; transition: none; }
+.js .cascada.rev > * { opacity: 0; transform: translateY(26px); }
+.js .cascada.rev.ok > * {
   opacity: 1; transform: none;
   transition: opacity .3s ease-out, transform .6s var(--salida);
   transition-delay: calc(var(--i, 0) * 60ms);
 }
-.mos__grilla > :nth-child(1) { --i: 0; }
-.mos__grilla > :nth-child(2) { --i: 1; }
-.mos__grilla > :nth-child(3) { --i: 2; }
-.mos__grilla > :nth-child(4) { --i: 3; }
-.mos__grilla > :nth-child(5) { --i: 4; }
-.mos__grilla > :nth-child(6) { --i: 5; }
+.cascada > :nth-child(1) { --i: 0; }
+.cascada > :nth-child(2) { --i: 1; }
+.cascada > :nth-child(3) { --i: 2; }
+.cascada > :nth-child(4) { --i: 3; }
+.cascada > :nth-child(5) { --i: 4; }
+.cascada > :nth-child(6) { --i: 5; }
+.cascada > :nth-child(7) { --i: 6; }
+.cascada > :nth-child(8) { --i: 7; }
 
 @media (prefers-reduced-motion: reduce) {
-  .js .portada__texto > * { animation: none; }
+  .js .portada__texto > * { animation: none; opacity: 1; transform: none; }
   .mos__p:hover img { transform: none; }
-  .js .rev { opacity: 1; transform: none; }
-  .js .mos__grilla.rev > * { opacity: 1; transform: none; }
+  .boton:hover { transform: none; }
+  /* Los reveals NO se desplazan, pero SÍ siguen fundiendo: un fundido
+     no es movimiento, un salto de 22 px sí. Apagar los dos deja la
+     página muerta, que es justo lo que la regla de la casa prohíbe. */
+  .js .rev, .js .cascada.rev > * { transform: none; }
   /* La secuencia entera, sin barrido, y los controles puestos. */
   .js .mapa .ancho.rev .placas { clip-path: none; }
   .js .mapa .ancho.rev.ok .placas { animation: none; }
@@ -373,6 +591,10 @@ h1, h2, h3 { font-family: var(--display); font-weight: 700; line-height: 1.2; ma
   /* Arco puesto, sin brillo. */
   .js .escena__svg { animation: none; }
   .js .escena__brillo { animation: none; }
+  /* Del botón flotante se apaga el desplazamiento, no el fundido: la
+     opacidad es lo que dice si está o no está. */
+  .wapp:hover { transform: none; }
+  .wapp--arriba { transform: none; }
 }
 /* ── Blancos de toque ──────────────────────────────────────────────
    Regla de la casa: nada que se toque puede medir menos de 44 px de
@@ -390,3 +612,103 @@ h1, h2, h3 { font-family: var(--display); font-weight: 700; line-height: 1.2; ma
 /* El botón chico de la cabecera es el CTA principal en teléfono:
    en móvil sube a 44 px como todo lo demás que se toca. */
 @media (max-width: 1060px) { .boton--chico { min-height: 44px; } }
+
+/* ══════════════════════════════════════════════════════════════════
+   VIDEO DE FONDO
+   La foto sigue siendo la base y el clip se funde encima cuando puede
+   reproducirse. Si el visitante pidió menos movimiento o ahorra datos,
+   main.js no lo pide y no se descarga ni un byte. El arranque en
+   opacidad 0 con 1,4 s de fundido es lo que hace que el clip «cobre
+   vida»: con 0,3 s se ve el salto y con 2,5 s se ve lento.
+   Presupuesto: portada 1,7 MB · banda 0,95 MB, 720p sin audio.
+   ══════════════════════════════════════════════════════════════════ */
+.portada__video, .cita__video {
+  position: absolute; inset: 0; opacity: 0;
+  transition: opacity 1.4s ease; pointer-events: none;
+}
+.portada__video.video--ver, .cita__video.video--ver { opacity: 1; }
+
+/* ══ El difuminado al scroll ═══════════════════════════════════════
+   Lo que una demo corriente resuelve con GSAP + ScrollTrigger, 70 KB
+   de librería y una petición a un CDN que esta CSP bloquearía. Acá son
+   doce líneas que corren en el compositor y sencillamente no existen
+   donde el navegador no las soporta.
+   El filter va en el CONTENEDOR (.portada__foto), nunca en el <video>,
+   y el scale(1.06) acompaña al blur para que el desenfoque no deje ver
+   el filo transparente de la caja.
+   Fondo claro → blur corto y opacidad: la foto se disuelve hacia la
+   porcelana, que es lo que hay debajo. En el teléfono no corre. */
+@supports (animation-timeline: scroll()) {
+  @media (prefers-reduced-motion: no-preference) and (min-width: 761px) {
+    .portada__foto {
+      animation: portada-se-va linear both;
+      animation-timeline: scroll(root block);
+      animation-range: 0 88vh;
+    }
+    .cita {
+      animation: cita-enfoca linear both;
+      animation-timeline: view(block);
+      animation-range: entry 0% entry 95%;
+    }
+  }
+}
+@keyframes portada-se-va { to { filter: blur(7px); transform: scale(1.06); opacity: .5; } }
+@keyframes cita-enfoca   { from { filter: blur(9px); } to { filter: blur(0); } }
+
+/* ── MAPA DE UBICACION ──────────────────────────────────────────────
+   Imagen propia con mosaicos de OpenStreetMap pegados: la CSP prohibe
+   pedir nada a un tercero, asi que un iframe de Google Maps quedaria en
+   blanco SIN dar un solo error. El "Como llegar" si es un enlace, y un
+   enlace no lo bloquea nada.
+   Los colores salen de currentColor a proposito: asi el bloque se adapta
+   a la paleta de cada demo sin conocerla y sin chocar con ella.
+   La atribucion a OpenStreetMap la exige su licencia (ODbL). */
+.mapa-sec { padding: clamp(2.5rem, 6vw, 4.5rem) 0; }
+.mapa { margin: 1.4rem 0 0; border: 1px solid; border-color: color-mix(in srgb, currentColor 22%, transparent); border-radius: 10px; overflow: hidden; }
+@supports not (color: color-mix(in srgb, red 50%, blue)) { .mapa { border-color: rgba(128, 128, 128, .35); } }
+.mapa img { display: block; width: 100%; height: auto; aspect-ratio: 16 / 10; object-fit: cover; }
+.mapa__pie {
+  display: flex; flex-wrap: wrap; align-items: center; gap: .4rem 1rem;
+  padding: .75rem .9rem;
+  font-size: .86em; line-height: 1.45;
+  border-top: 1px solid; border-top-color: color-mix(in srgb, currentColor 22%, transparent);
+}
+@supports not (color: color-mix(in srgb, red 50%, blue)) { .mapa__pie { border-top-color: rgba(128, 128, 128, .35); } }
+.mapa__pie b { font-weight: 700; }
+.mapa__ir { color: inherit; font-weight: 700; text-decoration: underline; min-height: 44px; display: inline-flex; align-items: center; }
+.mapa__cred { width: 100%; font-size: .84em; opacity: .8; }
+.mapa__cred a { color: inherit; }
+/* ── BOTON FLOTANTE DE CONTACTO ─────────────────────────────────────
+   56 px de alto, por encima del minimo tactil de 44. Los colores de
+   marca van a proposito: se reconocen sin leerlos, y eso es lo que hace
+   que se toquen. Se ve SIEMPRE por defecto; el JS solo lo aparta sobre
+   la portada. Al reves, un fallo del script se llevaria el CTA principal. */
+.flota {
+  position: fixed;
+  right: max(1rem, env(safe-area-inset-right, 0px));
+  bottom: max(1rem, env(safe-area-inset-bottom, 0px));
+  z-index: 60;
+  display: inline-flex; align-items: center; gap: .55rem;
+  height: 56px; padding: 0 1.15rem 0 1rem;
+  border-radius: 999px;
+  text-decoration: none;
+  font-family: var(--cuerpo, system-ui, sans-serif);
+  font-size: .95rem; font-weight: 700; line-height: 1;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, .26), 0 2px 6px rgba(0, 0, 0, .16);
+  transition: opacity .28s ease, transform .28s ease, box-shadow .18s ease;
+}
+.flota--wa { background: #25D366; color: #07310F; }
+.flota--ig { background: linear-gradient(120deg, #F9CE34 4%, #EE2A7B 48%, #6228D7 96%); color: #FFFFFF; }
+.flota__i { width: 26px; height: 26px; fill: currentColor; flex: none; }
+.flota:hover, .flota:focus-visible { transform: translateY(-2px); box-shadow: 0 10px 26px rgba(0, 0, 0, .3); }
+.js .flota--arriba { opacity: 0; transform: translateY(14px) scale(.94); pointer-events: none; }
+
+@media (max-width: 520px) {
+  .flota { width: 56px; padding: 0; justify-content: center; }
+  .flota__t { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .flota { transition: opacity .28s ease; }
+  .flota:hover, .flota:focus-visible { transform: none; }
+  .js .flota--arriba { transform: none; }
+}

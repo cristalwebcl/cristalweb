@@ -1,0 +1,22 @@
+FUENTES DE LAS IMAGENES - Camping Alpino Rehecha el 13-09-2026 (presentacion antes que texto). Fotos de REFERENCIA de bancos libres: ninguna es del local; las verdaderas las tiene que mandar el negocio. 
+port-01.jpg  <-  pozo-p-alp-muelle\009.jpg  |  pexels (Pexels License)  |  autor: Tommes Frites  |  https://www.pexels.com/es-es/foto/muelle-sereno-con-vista-al-tranquilo-paisaje-acuatico-del-lago-30990773/  |  consulta: "lake wooden pier"
+hund1-01.jpg  <-  pozo-p-alp-muelle\005.jpg  |  pexels (Pexels License)  |  autor: Pixabay  |  https://www.pexels.com/es-es/foto/muelle-de-pesca-276224/  |  consulta: "lake wooden pier"
+hund2-01.jpg  <-  pozo-p-alp-carpa\007.jpg  |  pexels (Pexels License)  |  autor: Adem Percem  |  https://www.pexels.com/es-es/foto/acampamento-pacifico-junto-al-lago-en-el-bosque-de-verano-35520198/  |  consulta: "tent lake camping"
+hund3-01.jpg  <-  pozo-p-alp-cabana\003.jpg  |  pexels (Pexels License)  |  autor: Diana Reyes  |  https://www.pexels.com/es-es/foto/cabana-en-el-bosque-33248093/  |  consulta: "wooden cabin forest"
+hund4-01.jpg  <-  pozo-p-alp-cocina\010.jpg  |  pexels (Pexels License)  |  autor: Zakhar Vozhdaienko  |  https://www.pexels.com/es-es/foto/arena-cacerola-olla-maceta-9167440/  |  consulta: "camping kitchen pot"
+hund5-01.jpg  <-  pozo-p-alp-mesa\001.jpg  |  pexels (Pexels License)  |  autor: Mario Amé  |  https://www.pexels.com/es-es/foto/gente-verano-arboles-sentado-18742684/  |  consulta: "picnic table grass"
+hund6-01.jpg  <-  pozo-p-alp-carpa\006.jpg  |  pexels (Pexels License)  |  autor: Jenny Uhling  |  https://www.pexels.com/es-es/foto/vacaciones-coche-viaje-viajar-17767575/  |  consulta: "tent lake camping"
+banda-01.jpg  <-  pozo-p-alp-atardecer\010.jpg  |  pexels (Pexels License)  |  autor: Yusuf  Eser  |  https://www.pexels.com/es-es/foto/montanas-puesta-de-sol-playa-costa-14451823/  |  consulta: "sunset lake shore"
+cita-01.jpg  <-  pozo-p-alp-atardecer\011.jpg  |  pexels (Pexels License)  |  autor: Rino Adamo  |  https://www.pexels.com/es-es/foto/orilla-de-lago-sereno-al-amanecer-vibrante-34713457/  |  consulta: "sunset lake shore"
+mos1-01.jpg  <-  pozo-p-alp-muelle\010.jpg  |  pexels (Pexels License)  |  autor: Bastian Struck  |  https://www.pexels.com/es-es/foto/sereno-embarcadero-de-madera-con-vista-al-lago-tranquilo-36482564/  |  consulta: "lake wooden pier"
+mos2-01.jpg  <-  pozo-p-alp-fogata\006.jpg  |  pexels (Pexels License)  |  autor: Laetitia Boumeraou  |  https://www.pexels.com/es-es/foto/noche-hoguera-campamento-acampada-12302868/  |  consulta: "campfire night"
+mos3-01.jpg  <-  pozo-p-alp-mesa\005.jpg  |  pexels (Pexels License)  |  autor: Jennifer Gaete  |  https://www.pexels.com/es-es/foto/picnic-bajo-los-tres-32710236/  |  consulta: "picnic table grass"
+mos4-01.jpg  <-  pozo-p-alp-carpa\004.jpg  |  pexels (Pexels License)  |  autor: Gin  |  https://www.pexels.com/es-es/foto/naturaleza-bosque-arboles-aventura-14394483/  |  consulta: "tent lake camping"
+mos5-01.jpg  <-  pozo-p-alp-atardecer\009.jpg  |  pexels (Pexels License)  |  autor: Felipe Souza Melo  |  https://www.pexels.com/es-es/foto/puesta-de-sol-sobre-el-lago-en-berlin-alemania-38894690/  |  consulta: "sunset lake shore"
+mos6-01.jpg  <-  pozo-p-alp-atardecer\006.jpg  |  pexels (Pexels License)  |  autor: Tom Fisk  |  https://www.pexels.com/es-es/foto/mar-amanecer-naturaleza-cielo-9565558/  |  consulta: "sunset lake shore"
+
+BRUMA (bruma-pag-0N.png y bruma-osc-0N.png, 30x20): las MISMAS fotos, recortadas a 3:2, reducidas y
+recoloreadas con C:\devs\demos\hacer-bruma.ps1 (clara >= 0,68 de luminancia / oscura <= 0,05). No suman fuentes.
+    pagina: port-01.jpg, banda-01.jpg, cita-01.jpg, hund1-01.jpg, hund3-01.jpg, mos1-01.jpg, mos4-01.jpg, mos6-01.jpg   |   oscuras: banda-01.jpg, mos2-01.jpg, cita-01.jpg
+
+MAPA: iframe de Google Maps (embed publico, sin clave). No hay imagen de mapa.

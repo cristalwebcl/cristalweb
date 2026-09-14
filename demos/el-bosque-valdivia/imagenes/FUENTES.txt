@@ -28,3 +28,10 @@ URL de origen:
 004.jpg | 4480x6720 | Cat Pad Photos, Download Free Cat Pad Stock Photos & HD Images | https://images.pexels.com/photos/12125509/pexels-photo-12125509.jpeg?cs=srgb&dl=pexels-anna-venezia-12125509.jpg&fm=jpg
 005.jpg | 4160x6240 | 200,000+张最精彩的"Cats Dark Backgrounds"图片 · 100%免费下载 · Pexels素材图片 | https://images.pexels.com/photos/16988238/pexels-photo-16988238.jpeg?cs=srgb&dl=pexels-gu-evary-16988238.jpg&fm=jpg
 006.jpg | 4000x6000 | Cute Cat Lying on Pillow · Free Stock Photo | https://images.pexels.com/photos/7096086/pexels-photo-7096086.jpeg?cs=srgb&dl=pexels-tranmautritam-7096086.jpg&fm=jpg
+
+MAPA DE UBICACION — mapa-01.jpg
+  768 x 768 · zoom 14 · centro -39.8141262, -73.2459859
+  Mosaicos de OpenStreetMap pegados en una sola imagen, con el marcador
+  dibujado encima. Datos (c) OpenStreetMap contributors, licencia ODbL:
+  la atribucion tiene que ir VISIBLE junto al mapa, en el pie de la figura.
+  https://www.openstreetmap.org/copyright

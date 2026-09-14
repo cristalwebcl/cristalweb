@@ -1,0 +1,22 @@
+FUENTES DE LAS IMAGENES - Concepto Reynamaria Rehecha el 14-09-2026 (presentacion antes que texto). Fotos de REFERENCIA de bancos libres: ninguna es del local; las verdaderas las tiene que mandar el negocio. 
+port-01.jpg  <-  pozo-p-rey-secador\002.jpg  |  pexels (Pexels License)  |  autor: Nadin Sh  |  https://www.pexels.com/es-es/foto/secador-de-pelo-enrollado-sobre-toalla-de-hotel-32641723/  |  consulta: "hair dryer"
+hund1-01.jpg  <-  pozo-p-rey-aceite\005.jpg  |  pexels (Pexels License)  |  autor: Alesia  Kozik  |  https://www.pexels.com/es-es/foto/maqueta-modelo-replica-mockup-7796317/  |  consulta: "hair oil bottle"
+hund2-01.jpg  <-  pozo-p-rey-tinte\005.jpg  |  pexels (Pexels License)  |  autor: Nataliya Vaitkevich  |  https://www.pexels.com/es-es/foto/pincel-cepillo-cepillar-bol-8468135/  |  consulta: "hair color bowl"
+hund3-01.jpg  <-  pozo-p-rey-cepillo\008.jpg  |  pexels (Pexels License)  |  autor: Daniil Kondrashin  |  https://www.pexels.com/es-es/foto/mujer-pincel-cepillo-cepillar-14615064/  |  consulta: "round brush"
+hund4-01.jpg  <-  pozo-p-rey-toalla\005.jpg  |  pexels (Pexels License)  |  autor: Pavel Danilyuk  |  https://www.pexels.com/es-es/foto/escalera-decoracion-decorativo-cestas-7220437/  |  consulta: "sage green towel"
+hund5-01.jpg  <-  pozo-p-rey-aceite\012.jpg  |  pexels (Pexels License)  |  autor: Alesia  Kozik  |  https://www.pexels.com/es-es/foto/botella-minimalista-fotografia-de-producto-plano-cenital-7796497/  |  consulta: "hair oil bottle"
+hund6-01.jpg  <-  pozo-p-rey-secador\005.jpg  |  pexels (Pexels License)  |  autor: Nadin Sh  |  https://www.pexels.com/es-es/foto/secador-de-pelo-en-blanco-y-negro-en-plano-plano-32641724/  |  consulta: "hair dryer"
+banda-01.jpg  <-  pozo-p-rey-eucalipto\007.jpg  |  pexels (Pexels License)  |  autor: Cátia Matos  |  https://www.pexels.com/es-es/foto/fotografia-de-primer-plano-de-planta-de-hoja-verde-1026237/  |  consulta: "eucalyptus"
+cita-01.jpg  <-  pozo-p-rey-eucalipto\006.jpg  |  pexels (Pexels License)  |  autor: Sonny Sixteen  |  https://www.pexels.com/es-es/foto/hojas-verdes-eucalipto-fotografia-de-plantas-de-cerca-14770596/  |  consulta: "eucalyptus"
+mos1-01.jpg  <-  pozo-p-rey-toalla\009.jpg  |  pexels (Pexels License)  |  autor: Darina Belonogova  |  https://www.pexels.com/es-es/foto/vela-de-pilar-blanca-junto-a-hojas-de-eucalipto-8789673/  |  consulta: "sage green towel"
+mos2-01.jpg  <-  pozo-p-rey-eucalipto\009.jpg  |  pexels (Pexels License)  |  autor: Joachim Schnürle  |  https://www.pexels.com/es-es/foto/primer-plano-de-una-rama-de-eucalipto-6113192/  |  consulta: "eucalyptus"
+mos3-01.jpg  <-  pozo-p-rey-toalla\003.jpg  |  pexels (Pexels License)  |  autor: Dmitriy Steinke  |  https://www.pexels.com/es-es/foto/taza-copa-mesa-casa-16805280/  |  consulta: "sage green towel"
+mos4-01.jpg  <-  pozo-p-rey-espejo\009.jpg  |  pexels (Pexels License)  |  autor: Maria Orlova  |  https://www.pexels.com/es-es/foto/frascos-de-vidrio-transparente-en-la-mesa-4969895/  |  consulta: "salon mirror"
+mos5-01.jpg  <-  pozo-p-rey-sillon\007.jpg  |  pexels (Pexels License)  |  autor: Ryan Klaus  |  https://www.pexels.com/es-es/foto/silla-cuero-piel-herramientas-de-barbero-12304516/  |  consulta: "salon chair"
+mos6-01.jpg  <-  pozo-p-rey-eucalipto\010.jpg  |  pexels (Pexels License)  |  autor: Mitchell Luo  |  https://www.pexels.com/es-es/foto/clima-naturaleza-oscuro-bosque-5720106/  |  consulta: "eucalyptus"
+
+BRUMA (bruma-pag-0N.png y bruma-osc-0N.png, 30x20): las MISMAS fotos, recortadas a 3:2, reducidas y
+recoloreadas con C:\devs\demos\hacer-bruma.ps1 (clara >= 0,68 de luminancia / oscura <= 0,05). No suman fuentes.
+    pagina: mos1-01.jpg, cita-01.jpg, hund1-01.jpg, mos3-01.jpg, hund5-01.jpg   |   oscuras: mos1-01.jpg, cita-01.jpg, hund1-01.jpg
+
+MAPA: iframe de Google Maps (embed publico, sin clave). No hay imagen de mapa.

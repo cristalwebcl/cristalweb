@@ -1,0 +1,22 @@
+FUENTES DE LAS IMAGENES - Miss MartÃ­nez Spa Rehecha el 13-09-2026 (presentacion antes que texto). Fotos de REFERENCIA de bancos libres: ninguna es del local; las verdaderas las tiene que mandar el negocio. 
+port-01.jpg  <-  pozo-p-mm-toalla\008.jpg  |  pexels (Pexels License)  |  autor: Tima Miroshnichenko  |  https://www.pexels.com/es-es/foto/blanco-algodon-toallas-de-bano-enfoque-selectivo-6188050/  |  consulta: "spa towels candle"
+hund1-01.jpg  <-  pozo-p-mm-manicure\004.jpg  |  pexels (Pexels License)  |  autor: Artem Podrez  |  https://www.pexels.com/es-es/foto/manos-trabajando-negocio-belleza-4783331/  |  consulta: "manicure hands"
+hund2-01.jpg  <-  pozo-p-mm-manicure\010.jpg  |  pexels (Pexels License)  |  autor: Gabriel Puyén  |  https://www.pexels.com/es-es/foto/aseo-guarnicion-esmalte-de-unas-manicura-6135684/  |  consulta: "manicure hands"
+hund3-01.jpg  <-  pozo-p-mm-esmalte\001.jpg  |  pexels (Pexels License)  |  autor: cottonbro studio  |  https://www.pexels.com/es-es/foto/manos-mano-mesa-colorido-3997386/  |  consulta: "nail polish"
+hund4-01.jpg  <-  pozo-p-mm-toalla\012.jpg  |  pexels (Pexels License)  |  autor: Burst  |  https://www.pexels.com/es-es/foto/bathbomb-de-madera-fuego-llamarada-374071/  |  consulta: "spa towels candle"
+hund5-01.jpg  <-  pozo-p-mm-brushing\005.jpg  |  pexels (Pexels License)  |  autor: Daniil Kondrashin  |  https://www.pexels.com/es-es/foto/mujer-peinado-cabellos-melena-14615061/  |  consulta: "hairdryer brush"
+hund6-01.jpg  <-  pozo-p-mm-brushing\001.jpg  |  pexels (Pexels License)  |  autor: Element5 Digital  |  https://www.pexels.com/es-es/foto/soplador-de-cabello-gris-cerca-de-peinetas-y-gomas-para-el-cabello-rosa-973402/  |  consulta: "hairdryer brush"
+banda-01.jpg  <-  pozo-p-mm-manicure\002.jpg  |  pexels (Pexels License)  |  autor: Anastasiia Lopushynska  |  https://www.pexels.com/es-es/foto/clavos-unas-esmalte-de-unas-manicura-10401643/  |  consulta: "manicure hands"
+cita-01.jpg  <-  pozo-p-mm-toalla\007.jpg  |  pexels (Pexels License)  |  autor: Aan Amrin  |  https://www.pexels.com/es-es/foto/flor-luz-de-vela-velas-naturaleza-muerta-1926811/  |  consulta: "spa towels candle"
+mos1-01.jpg  <-  pozo-p-mm-flores\010.jpg  |  pexels (Pexels License)  |  autor: Ömer Aydın  |  https://www.pexels.com/es-es/foto/flores-floraciones-floracion-flora-11106903/  |  consulta: "dried flowers vase"
+mos2-01.jpg  <-  pozo-p-mm-esmalte\010.jpg  |  pexels (Pexels License)  |  autor: DS stories  |  https://www.pexels.com/es-es/foto/minimalista-minimo-espacio-para-texto-copy-space-7256103/  |  consulta: "nail polish"
+mos3-01.jpg  <-  pozo-p-mm-te\008.jpg  |  pexels (Pexels License)  |  autor: cottonbro studio  |  https://www.pexels.com/es-es/foto/taza-copa-lujo-naturaleza-muerta-6262938/  |  consulta: "tea cup"
+mos4-01.jpg  <-  pozo-p-mm-toalla\005.jpg  |  pexels (Pexels License)  |  autor: Tima Miroshnichenko  |  https://www.pexels.com/es-es/foto/blanco-velas-toallas-jarrones-6186740/  |  consulta: "spa towels candle"
+mos5-01.jpg  <-  pozo-p-mm-flores\006.jpg  |  pexels (Pexels License)  |  autor: Jonathan Borba  |  https://www.pexels.com/es-es/foto/botellas-vaso-cristal-vidrio-15575100/  |  consulta: "dried flowers vase"
+mos6-01.jpg  <-  pozo-p-mm-manicure\003.jpg  |  pexels (Pexels License)  |  autor: Viktorya  Sergeeva 🫂  |  https://www.pexels.com/es-es/foto/manos-pedicura-manicura-manicuro-14267565/  |  consulta: "manicure hands"
+
+BRUMA (bruma-pag-0N.png y bruma-osc-0N.png, 30x20): las MISMAS fotos, recortadas a 3:2, reducidas y
+recoloreadas con C:\devs\demos\hacer-bruma.ps1 (clara >= 0,68 de luminancia / oscura <= 0,05). No suman fuentes.
+    pagina: mos1-01.jpg, mos2-01.jpg, hund4-01.jpg, mos5-01.jpg, hund2-01.jpg   |   oscuras: port-01.jpg, cita-01.jpg, banda-01.jpg
+
+MAPA: iframe de Google Maps (embed publico, sin clave). No hay imagen de mapa.

@@ -1,0 +1,22 @@
+FUENTES DE LAS IMAGENES - Panadería Rostock Rehecha el 13-09-2026 (presentacion antes que texto). Fotos de REFERENCIA de bancos libres: ninguna es del local; las verdaderas las tiene que mandar el negocio. 
+port-01.jpg  <-  pozo-p-ros-horno\010.jpg  |  pexels (Pexels License)  |  autor: Silvio Pelegrin  |  https://www.pexels.com/es-es/foto/pan-artesanal-fresco-horneado-en-horno-30888610/  |  consulta: "bakery oven"
+hund1-01.jpg  <-  pozo-p-ros-kuchen\002.png  |  pexels (Pexels License)  |  autor: Anh Nguyen  |  https://www.pexels.com/es-es/foto/primer-plano-de-streuselkuchen-de-bayas-en-un-plato-35286348/  |  consulta: "kuchen"
+hund2-01.jpg  <-  pozo-p-ros-torta\001.jpg  |  pexels (Pexels License)  |  autor: Rodrigo Ortega  |  https://www.pexels.com/es-es/foto/delicioso-trozo-de-pastel-red-velvet-en-un-plato-30131920/  |  consulta: "cake slice"
+hund3-01.jpg  <-  pozo-p-ros-tarta\008.jpg  |  pexels (Pexels License)  |  autor: Ella Olsson  |  https://www.pexels.com/es-es/foto/foto-en-primer-plano-de-cupcake-de-frambuesas-3026807/  |  consulta: "berry tart"
+hund4-01.jpg  <-  pozo-p-ros-horno\009.jpg  |  pexels (Pexels License)  |  autor: Travel with  Lenses  |  https://www.pexels.com/es-es/foto/horneando-pan-en-padok-30918875/  |  consulta: "bakery oven"
+hund5-01.jpg  <-  pozo-p-ros-crema\002.jpg  |  pexels (Pexels License)  |  autor: Pablo Rodríguez  |  https://www.pexels.com/es-es/foto/deliciosa-tarta-de-queso-vasca-con-mermelada-32517227/  |  consulta: "cream cake"
+hund6-01.jpg  <-  pozo-p-ros-kuchen\006.jpg  |  pexels (Pexels License)  |  autor: ubeyonroad  |  https://www.pexels.com/es-es/foto/capuchino-y-tarta-de-queso-en-platos-blancos-34352085/  |  consulta: "kuchen"
+banda-01.jpg  <-  pozo-p-ros-horno\007.jpg  |  pexels (Pexels License)  |  autor: Chris F  |  https://www.pexels.com/es-es/foto/picante-caliente-atractivo-sexy-10481790/  |  consulta: "bakery oven"
+cita-01.jpg  <-  pozo-p-ros-kuchen\012.jpg  |  pexels (Pexels License)  |  autor: Mehmet Akif Acar  |  https://www.pexels.com/es-es/foto/mesa-postre-dulce-pasteles-26617640/  |  consulta: "kuchen"
+mos1-01.jpg  <-  pozo-p-ros-kuchen\009.jpg  |  pexels (Pexels License)  |  autor: Esra Afşar  |  https://www.pexels.com/es-es/foto/delicioso-pastel-de-bayas-cortado-en-rodajas-con-luz-dorada-29230134/  |  consulta: "kuchen"
+mos2-01.jpg  <-  pozo-p-ros-tarta\007.jpg  |  pexels (Pexels License)  |  autor: Regina Ferraz  |  https://www.pexels.com/es-es/foto/comida-frutas-hecho-en-casa-tarta-4748367/  |  consulta: "berry tart"
+mos3-01.jpg  <-  pozo-p-ros-torta\005.jpg  |  pexels (Pexels License)  |  autor: Sofía  Falco  |  https://www.pexels.com/es-es/foto/elegante-pastel-de-terciopelo-rojo-con-arandanos-decorativos-32318143/  |  consulta: "cake slice"
+mos4-01.jpg  <-  pozo-p-ros-crema\010.jpg  |  pexels (Pexels License)  |  autor: Trishik Bose  |  https://www.pexels.com/es-es/foto/delicioso-pastel-de-terciopelo-rojo-con-remolinos-de-crema-33339344/  |  consulta: "cream cake"
+mos5-01.jpg  <-  pozo-p-ros-kuchen\003.png  |  pexels (Pexels License)  |  autor: Anh Nguyen  |  https://www.pexels.com/es-es/foto/delicioso-pastel-de-streusel-en-plato-negro-35286350/  |  consulta: "kuchen"
+mos6-01.jpg  <-  pozo-p-ros-horno\012.jpg  |  pexels (Pexels License)  |  autor: Jonathan Borba  |  https://www.pexels.com/es-es/foto/fotografia-en-primer-plano-de-alimentos-horneados-3082785/  |  consulta: "bakery oven"
+
+BRUMA (bruma-pag-0N.png y bruma-osc-0N.png, 30x20): las MISMAS fotos, recortadas a 3:2, reducidas y
+recoloreadas con C:\devs\demos\hacer-bruma.ps1 (clara >= 0,68 de luminancia / oscura <= 0,05). No suman fuentes.
+    pagina: port-01.jpg, banda-01.jpg, cita-01.jpg, hund1-01.jpg, hund2-01.jpg, hund3-01.jpg, mos2-01.jpg, mos4-01.jpg   |   oscuras: port-01.jpg, cita-01.jpg, banda-01.jpg
+
+MAPA: iframe de Google Maps (embed publico, sin clave). No hay imagen de mapa.
