@@ -1,0 +1,22 @@
+FUENTES DE LAS IMAGENES - Cta Robleviejo Rehecha el 17-09-2026 (presentacion antes que texto). Fotos de REFERENCIA de bancos libres: ninguna es del local; las verdaderas las tiene que mandar el negocio. 
+port-01.jpg  <-  pozo-p-212-galpon\006.jpg  |  pexels (Pexels License)  |  autor: Mathias Reding  |  https://www.pexels.com/es-es/foto/noche-calle-oscuro-industria-11213219/  |  consulta: "garage door workshop night"
+banda-01.jpg  <-  pozo-p-212-alza\012.jpg  |  pexels (Pexels License)  |  autor: Mathias Reding  |  https://www.pexels.com/es-es/foto/coche-antiguo-en-un-elevador-en-un-taller-de-reparacion-de-automoviles-29198156/  |  consulta: "car on lift garage"
+cita-01.jpg  <-  pozo-p-212-neumatico\011.jpg  |  pexels (Pexels License)  |  autor: Markus Winkler  |  https://www.pexels.com/es-es/foto/primer-plano-de-la-banda-de-rodadura-de-un-neumatico-de-tractor-desgastado-30369511/  |  consulta: "tire tread close up"
+hund1-01.jpg  <-  pozo-p-212-alineacion\002.jpg  |  pexels (Pexels License)  |  autor: Gansham Ramchandani  |  https://www.pexels.com/es-es/foto/coche-compacto-rojo-en-proceso-de-alineacion-de-ruedas-en-el-taller-38324578/  |  consulta: "wheel alignment machine"
+hund2-01.jpg  <-  pozo-p-212-freno\007.jpg  |  pexels (Pexels License)  |  autor: Jae Park  |  https://www.pexels.com/es-es/foto/freno-de-disco-de-vehiculo-con-ruedas-4022543/  |  consulta: "brake disc close up"
+hund3-01.jpg  <-  pozo-p-212-freno\009.jpg  |  pexels (Pexels License)  |  autor: Mario Amé  |  https://www.pexels.com/es-es/foto/metal-vehiculo-motor-freno-de-disco-13245044/  |  consulta: "brake disc close up"
+hund4-01.jpg  <-  pozo-p-212-taller\003.jpg  |  pexels (Pexels License)  |  autor: Renee Razumov  |  https://www.pexels.com/es-es/foto/interior-de-un-moderno-taller-de-reparacion-de-automoviles-con-vehiculo-33814736/  |  consulta: "car workshop interior"
+hund5-01.jpg  <-  pozo-p-212-foco\007.jpg  |  pexels (Pexels License)  |  autor: Bonaventure  Fernandez  |  https://www.pexels.com/es-es/foto/blanco-y-negro-coche-capucha-capo-6558038/  |  consulta: "car headlight close up"
+hund6-01.jpg  <-  pozo-p-212-herramienta\011.jpg  |  pexels (Pexels License)  |  autor: Miguel Á. Padriñán  |  https://www.pexels.com/es-es/foto/blanco-y-negro-metal-vintage-fabrica-16679542/  |  consulta: "mechanic tools garage"
+mos1-01.jpg  <-  pozo-p-212-foco\003.jpg  |  pexels (Pexels License)  |  autor: Skylar Kang  |  https://www.pexels.com/es-es/foto/coche-plateado-con-gotas-de-agua-6044796/  |  consulta: "car headlight close up"
+mos2-01.jpg  <-  pozo-p-212-neumatico\008.jpg  |  pexels (Pexels License)  |  autor: Gerd Altmann  |  https://www.pexels.com/es-es/foto/neumatico-de-coche-21694/  |  consulta: "tire tread close up"
+mos3-01.jpg  <-  pozo-p-212-parabrisas\006.jpg  |  pexels (Pexels License)  |  autor: cottonbro studio  |  https://www.pexels.com/es-es/foto/coche-vehiculo-vintage-parabrisas-4480539/  |  consulta: "windshield wiper rain"
+mos4-01.jpg  <-  pozo-p-212-cinturon\007.jpg  |  pexels (Pexels License)  |  autor: Laura Paredis  |  https://www.pexels.com/es-es/foto/blanco-y-negro-coche-vehiculo-asiento-12959476/  |  consulta: "seatbelt buckle car"
+mos5-01.jpg  <-  pozo-p-212-escape\006.jpg  |  pexels (Pexels License)  |  autor: Rahul Soni  |  https://www.pexels.com/es-es/foto/vehiculo-silenciador-escape-doble-de-cerca-10827691/  |  consulta: "exhaust pipe car"
+mos6-01.jpg  <-  pozo-p-212-freno\010.jpg  |  pexels (Pexels License)  |  autor: Borta  |  https://www.pexels.com/es-es/foto/acercamiento-de-un-disco-de-freno-de-motocicleta-38300769/  |  consulta: "brake disc close up"
+
+BRUMA (bruma-pag-0N.png y bruma-osc-0N.png, 30x20): las MISMAS fotos, recortadas a 3:2, reducidas y
+recoloreadas con C:\devs\demos\hacer-bruma.ps1 (clara >= 0,68 de luminancia / oscura <= 0,05). No suman fuentes.
+    pagina: hund1-01.jpg, port-01.jpg, hund4-01.jpg, mos1-01.jpg, hund5-01.jpg (tono oscura, -Sat 0.6)   |   bloque claro «para el dueño»: hund1-01.jpg y mos1-01.jpg en TONO CLARA (la pagina es oscura y ese bloque es claro)   |   pie: cita-01.jpg (oscura)
+
+MAPA: iframe de Google Maps (embed publico, sin clave). No hay imagen de mapa.

@@ -1,0 +1,22 @@
+FUENTES DE LAS IMAGENES - Carolina Azúa Studio Rehecha el 18-09-2026 (presentacion antes que texto). Fotos de REFERENCIA de bancos libres: ninguna es del local; las verdaderas las tiene que mandar el negocio. 
+port-01.jpg  <-  pozo-p-208-espalda\008.jpg  |  pexels (Pexels License)  |  autor: Alessia Campoli  |  https://www.pexels.com/es-es/foto/vista-posterior-foto-de-mujer-vistiendo-sueter-amarillo-2877725/  |  consulta: "long hair back view salon light pexels"
+banda-01.jpg  <-  pozo-p-208-mechon\007.jpg  |  pexels (Pexels License)  |  autor: Kseniia Lopyreva  |  https://www.pexels.com/es-es/foto/sano-mujer-creativo-romantico-4959820/  |  consulta: "hair strands close up texture pexels"
+cita-01.jpg  <-  pozo-p-208-carmin\008.jpg  |  pexels (Pexels License)  |  autor: cottonbro studio  |  https://www.pexels.com/es-es/foto/rojo-oscuro-textura-lujo-4722577/  |  consulta: "red curtain fabric texture pexels"
+hund1-01.jpg  <-  pozo-p-208-colorista\003.jpg  |  pexels (Pexels License)  |  autor: Doğan Alpaslan  Demir  |  https://www.pexels.com/es-es/foto/coloracion-profesional-del-cabello-en-un-salon-de-belleza-29555469/  |  consulta: "hair colorist applying color back view pexels"
+hund2-01.jpg  <-  pozo-p-208-cepillo\006.jpg  |  pexels (Pexels License)  |  autor: Anete Lusina  |  https://www.pexels.com/es-es/foto/candelita-ardiente-en-la-mesa-cerca-de-productos-higienicos-ecologicos-4792681/  |  consulta: "hair brush round wooden pexels"
+hund3-01.jpg  <-  pozo-p-208-plancha\004.jpg  |  pexels (Pexels License)  |  autor: Polina Tankilevitch  |  https://www.pexels.com/es-es/foto/persona-planchando-el-cabello-de-una-mujer-3738359/  |  consulta: "hair straightener flat iron salon pexels"
+hund4-01.jpg  <-  pozo-p-208-mascarilla\008.jpg  |  pexels (Pexels License)  |  autor: Alesia  Kozik  |  https://www.pexels.com/es-es/foto/hojas-monitor-mostrar-exhibicion-7797115/  |  consulta: "hair mask treatment bowl pexels"
+hund5-01.jpg  <-  pozo-p-208-espalda\006.jpg  |  pexels (Pexels License)  |  autor: Alexander Mass  |  https://www.pexels.com/es-es/foto/cabello-rubio-elegante-en-un-ambiente-interior-moderno-31052908/  |  consulta: "long hair back view salon light pexels"
+hund6-01.jpg  <-  pozo-p-208-cepillo\002.jpg  |  pexels (Pexels License)  |  autor: KATRIN  BOLOVTSOVA  |  https://www.pexels.com/es-es/foto/botellas-pincel-cepillo-cepillar-6766577/  |  consulta: "hair brush round wooden pexels"
+mos1-01.jpg  <-  pozo-p-208-papeles\011.jpg  |  pexels (Pexels License)  |  autor: cottonbro studio  |  https://www.pexels.com/es-es/foto/valla-de-madera-marron-y-blanca-6144434/  |  consulta: "hair foil highlights close up pexels"
+mos2-01.jpg  <-  pozo-p-208-estudio\001.jpg  |  pexels (Pexels License)  |  autor: Fran S  |  https://www.pexels.com/es-es/foto/pared-muro-dorado-paredes-19457945/  |  consulta: "salon chair white wall plant pexels"
+mos3-01.jpg  <-  pozo-p-208-cuaderno\009.jpg  |  pexels (Pexels License)  |  autor: Taiye Salawu  |  https://www.pexels.com/es-es/foto/cuaderno-abierto-con-boligrafo-en-escritorio-soleado-38041128/  |  consulta: "open notebook pen desk minimal pexels"
+mos4-01.jpg  <-  pozo-p-208-cepillo\009.jpg  |  pexels (Pexels License)  |  autor: Polina Tankilevitch  |  https://www.pexels.com/es-es/foto/flores-maquillaje-mesa-de-madera-vista-superior-7382911/  |  consulta: "hair brush round wooden pexels"
+mos5-01.jpg  <-  pozo-p-208-mechon\004.jpg  |  pexels (Pexels License)  |  autor: JÉSHOOTS  |  https://www.pexels.com/es-es/foto/pelo-castano-7437/  |  consulta: "hair strands close up texture pexels"
+mos6-01.jpg  <-  pozo-p-208-ondas\009.jpg  |  pexels (Pexels License)  |  autor: Masood Aslami  |  https://www.pexels.com/es-es/foto/persona-mujer-pelo-largo-de-espaldas-14614904/  |  consulta: "wavy hair back view natural pexels"
+
+BRUMA (bruma-pag-0N.png y bruma-osc-0N.png, 30x20): las MISMAS fotos, recortadas a 3:2, reducidas y
+recoloreadas con C:\devs\demos\hacer-bruma.ps1 (clara >= 0,68 de luminancia / oscura <= 0,05). No suman fuentes.
+    pagina: port-01.jpg, hund2-01.jpg, mos5-01.jpg, hund4-01.jpg, mos4-01.jpg (todas a -Sat 0.6)   |   oscuras: banda-01.jpg, cita-01.jpg, hund1-01.jpg
+
+MAPA: iframe de Google Maps (embed publico, sin clave). No hay imagen de mapa.

@@ -1,0 +1,22 @@
+FUENTES DE LAS IMAGENES - Araucaria Servicios Funerarios Rehecha el 16-09-2026 (presentacion antes que texto). Fotos de REFERENCIA de bancos libres: ninguna es del local; las verdaderas las tiene que mandar el negocio. 
+port-01.jpg  <-  pozo-p-181-araucaria\001.jpg  |  pexels (Pexels License)  |  autor: Francesco Ungaro  |  https://www.pexels.com/es-es/foto/silueta-planta-perenne-conifera-24739951/  |  consulta: "araucaria tree silhouette overcast sky pexels"
+banda-01.jpg  <-  pozo-p-181-araucaria\005.jpg  |  pexels (Pexels License)  |  autor: Regina Tommasi  |  https://www.pexels.com/es-es/foto/rama-de-arbol-en-silueta-contra-cielo-gris-30381849/  |  consulta: "araucaria tree silhouette overcast sky pexels"
+cita-01.jpg  <-  pozo-p-181-vela\007.jpg  |  pexels (Pexels License)  |  autor: Rafael Minguet Delgado  |  https://www.pexels.com/es-es/foto/vela-roja-con-llama-sobre-fondo-oscuro-38920093/  |  consulta: "candle flame soft dark pexels"
+hund1-01.jpg  <-  pozo-p-181-lluvia\004.jpg  |  pexels (Pexels License)  |  autor: Taryn Elliott  |  https://www.pexels.com/es-es/foto/gotas-de-agua-en-la-ventana-de-cristal-8549408/  |  consulta: "rain window drops grey pexels"
+hund2-01.jpg  <-  pozo-p-181-sala\008.jpg  |  pexels (Pexels License)  |  autor: Ân Văn Trịnh Thiên  |  https://www.pexels.com/es-es/foto/sala-de-espera-ventanas-ventana-sillas-21404971/  |  consulta: "empty quiet room chairs natural light pexels"
+hund3-01.jpg  <-  pozo-p-181-sala\005.jpg  |  pexels (Pexels License)  |  autor: Vincent Nguyen  |  https://www.pexels.com/es-es/foto/cafeteria-ventanas-sillas-sombra-19661051/  |  consulta: "empty quiet room chairs natural light pexels"
+hund4-01.jpg  <-  pozo-p-181-lirios\004.jpg  |  pexels (Pexels License)  |  autor: Eugene Golovesov  |  https://www.pexels.com/es-es/foto/polen-flores-blancas-fotografia-de-flores-tiro-vertical-11229376/  |  consulta: "white lilies soft light close up pexels"
+hund5-01.jpg  <-  pozo-p-181-araucaria\012.jpg  |  pexels (Pexels License)  |  autor: Jonathan Borba  |  https://www.pexels.com/es-es/foto/madera-naturaleza-cielo-soleado-6590725/  |  consulta: "araucaria tree silhouette overcast sky pexels"
+hund6-01.jpg  <-  pozo-p-181-flores\002.jpg  |  pexels (Pexels License)  |  autor: Adrianna CA  |  https://www.pexels.com/es-es/foto/flores-plantas-delgado-fondo-blanco-20304134/  |  consulta: "white flowers arrangement simple pexels"
+mos1-01.jpg  <-  pozo-p-181-lirios\007.jpg  |  pexels (Pexels License)  |  autor: Ngân Dương  |  https://www.pexels.com/es-es/foto/flores-naturaleza-muerta-delicado-fondo-blanco-18413788/  |  consulta: "white lilies soft light close up pexels"
+mos2-01.jpg  <-  pozo-p-181-niebla\002.jpg  |  pexels (Pexels License)  |  autor: Gabriel  Benois  |  https://www.pexels.com/es-es/foto/paisaje-nublado-campo-bosque-17069392/  |  consulta: "pine forest fog morning pexels"
+mos3-01.jpg  <-  pozo-p-181-manos\003.jpg  |  pexels (Pexels License)  |  autor: cottonbro studio  |  https://www.pexels.com/es-es/foto/manos-madre-padre-dedos-5493793/  |  consulta: "hands holding comfort close up pexels"
+mos4-01.jpg  <-  pozo-p-181-araucaria\008.jpg  |  pexels (Pexels License)  |  autor: Alexander Mass  |  https://www.pexels.com/es-es/foto/atardecer-sereno-sobre-arboles-de-araucaria-en-brasil-37445269/  |  consulta: "araucaria tree silhouette overcast sky pexels"
+mos5-01.jpg  <-  pozo-p-181-flores\006.jpg  |  pexels (Pexels License)  |  autor: Nadezhda Moryak  |  https://www.pexels.com/es-es/foto/petalos-flores-floraciones-flora-6206366/  |  consulta: "white flowers arrangement simple pexels"
+mos6-01.jpg  <-  pozo-p-181-vela\003.jpg  |  pexels (Pexels License)  |  autor: Rafael Minguet Delgado  |  https://www.pexels.com/es-es/foto/vela-roja-con-llama-sobre-fondo-oscuro-38905561/  |  consulta: "candle flame soft dark pexels"
+
+BRUMA (bruma-pag-0N.png y bruma-osc-0N.png, 30x20): las MISMAS fotos, recortadas a 3:2, reducidas y
+recoloreadas con C:\devs\demos\hacer-bruma.ps1 (clara >= 0,68 de luminancia / oscura <= 0,05). No suman fuentes.
+    pagina: port-01.jpg, banda-01.jpg, mos2-01.jpg, hund4-01.jpg, hund6-01.jpg   |   oscuras: port-01.jpg, cita-01.jpg, mos2-01.jpg
+
+MAPA: iframe de Google Maps (embed publico, sin clave). No hay imagen de mapa.

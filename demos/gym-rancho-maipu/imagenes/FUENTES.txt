@@ -1,0 +1,22 @@
+FUENTES DE LAS IMAGENES - Gym Rancho Rehecha el 18-09-2026 (presentacion antes que texto). Fotos de REFERENCIA de bancos libres: ninguna es del local; las verdaderas las tiene que mandar el negocio. 
+port-01.jpg  <-  pozo-p-211-discos\012.jpg  |  pexels (Pexels License)  |  autor: Jonathan Borba  |  https://www.pexels.com/es-es/foto/plato-metal-fuerza-fitnes-27810162/  |  consulta: "weight plates stacked"  |  recorte manual x .10-.86 (reponer-211.ps1): fuera balones rotulados y placa dorada
+banda-01.jpg  <-  pozo-p-211-discos\011.jpg  |  pexels (Pexels License)  |  autor: Anete Lusina  |  https://www.pexels.com/es-es/foto/discos-de-peso-pesado-en-rack-en-gimnasio-4793231/  |  consulta: "weight plates stacked"
+cita-01.jpg  <-  pozo-p-211-cemento\001.jpg  |  pexels (Pexels License)  |  autor: 𝗛&𝗖𝗢 　  |  https://www.pexels.com/es-es/foto/pared-gris-2648230/  |  consulta: "concrete wall gym texture"
+hund1-01.jpg  <-  pozo-p-211-discos\004.jpg  |  pexels (Pexels License)  |  autor: DΛVΞ GΛRCIΛ  |  https://www.pexels.com/es-es/foto/pila-de-pesas-para-gimnasio-en-blanco-y-negro-35567441/  |  consulta: "weight plates stacked"
+hund2-01.jpg  <-  pozo-p-211-mancuernas\011.jpg  |  pexels (Pexels License)  |  autor: Andres  Ayrton  |  https://www.pexels.com/es-es/foto/metal-deporte-dentro-habitacion-6550849/  |  consulta: "dumbbells rack"
+hund3-01.jpg  <-  pozo-p-211-trotadoras\001.jpg  |  pexels (Pexels License)  |  autor: Pietro Saura  |  https://www.pexels.com/es-es/foto/vaso-cristal-vidrio-ventana-5411023/  |  consulta: "treadmill row gym empty"
+hund4-01.jpg  <-  pozo-p-211-cuerda\003.jpg  |  pexels (Pexels License)  |  autor: Pavel Danilyuk  |  https://www.pexels.com/es-es/foto/goma-caucho-suelo-equipos-de-ejercicio-6339692/  |  consulta: "jump rope gym floor"
+hund5-01.jpg  <-  pozo-p-211-camarines\005.jpg  |  pexels (Pexels License)  |  autor: Ron Lach  |  https://www.pexels.com/es-es/foto/arquitectura-habitacion-zapatillas-centro-termal-9145350/  |  consulta: "gym locker room"
+hund6-01.jpg  <-  pozo-p-211-cuerda\004.jpg  |  pexels (Pexels License)  |  autor: Pavel Danilyuk  |  https://www.pexels.com/es-es/foto/persona-saltando-fitnes-fitness-6339603/  |  consulta: "jump rope gym floor"
+mos1-01.jpg  <-  pozo-p-211-trotadoras\006.jpg  |  pexels (Pexels License)  |  autor: Kseniia Lopyreva  |  https://www.pexels.com/es-es/foto/sano-deporte-monitor-mostrar-4959807/  |  consulta: "treadmill row gym empty"
+mos2-01.jpg  <-  pozo-p-211-mancuernas\010.jpg  |  pexels (Pexels License)  |  autor: Ivan S  |  https://www.pexels.com/es-es/foto/chrome-cromo-gimnasio-pesas-4164763/  |  consulta: "dumbbells rack"
+mos3-01.jpg  <-  pozo-p-211-botella\011.jpg  |  pexels (Pexels License)  |  autor: MART  PRODUCTION  |  https://www.pexels.com/es-es/foto/textura-gris-deporte-joven-8033006/  |  consulta: "water bottle towel gym"
+mos4-01.jpg  <-  pozo-p-211-camarines\009.jpg  |  pexels (Pexels License)  |  autor: Matheus Viana  |  https://www.pexels.com/es-es/foto/taquilla-abierta-en-vestuario-de-madera-31220117/  |  consulta: "gym locker room"
+mos5-01.jpg  <-  pozo-p-211-cemento\011.jpg  |  pexels (Pexels License)  |  autor: cottonbro studio  |  https://www.pexels.com/es-es/foto/textura-interior-sombra-hormigon-4324019/  |  consulta: "concrete wall gym texture"
+mos6-01.jpg  <-  pozo-p-211-botella\002.jpg  |  pexels (Pexels License)  |  autor: cottonbro studio  |  https://www.pexels.com/es-es/foto/beber-bebida-textil-objeto-5274796/  |  consulta: "water bottle towel gym"
+
+BRUMA (bruma-pag-0N.png y bruma-osc-0N.png, 30x20): las MISMAS fotos, recortadas a 3:2, reducidas y
+recoloreadas con C:\devs\demos\hacer-bruma.ps1 (clara >= 0,68 de luminancia / oscura <= 0,05). No suman fuentes.
+    pagina: banda-01.jpg, hund4-01.jpg, mos4-01.jpg, hund1-01.jpg, mos3-01.jpg (todas a -Sat 0.6)   |   oscuras: port-01.jpg, banda-01.jpg, hund1-01.jpg
+
+MAPA: iframe de Google Maps (embed publico, sin clave). No hay imagen de mapa.

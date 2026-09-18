@@ -1,0 +1,22 @@
+FUENTES DE LAS IMAGENES - Bali Spa Rehecha el 17-09-2026 (presentacion antes que texto). Fotos de REFERENCIA de bancos libres: ninguna es del local; las verdaderas las tiene que mandar el negocio. 
+port-01.jpg  <-  pozo-p-190-sala\011.jpg  |  pexels (Pexels License)  |  autor: Marios Gkortsilas  |  https://www.pexels.com/es-es/foto/luces-hotel-habitacion-moderno-13983524/  |  consulta: "massage room dim light"
+banda-01.jpg  <-  pozo-p-190-sala\004.jpg  |  pexels (Pexels License)  |  autor: Ivan Babydov  |  https://www.pexels.com/es-es/foto/cama-arquitectura-diseno-interior-7789646/  |  consulta: "massage room dim light"
+cita-01.jpg  <-  pozo-p-190-piedras\006.jpg  |  pexels (Pexels License)  |  autor: Mikhail Nilov  |  https://www.pexels.com/es-es/foto/ligero-arte-planta-piedras-7814723/  |  consulta: "spa stones bamboo"
+hund1-01.jpg  <-  pozo-p-190-cera\002.jpg  |  pexels (Pexels License)  |  autor: Grove Brands  |  https://www.pexels.com/es-es/foto/manos-modelo-maqueta-cara-15764070/  |  consulta: "wax warmer spa"
+hund2-01.jpg  <-  pozo-p-190-manos\012.jpg  |  pexels (Pexels License)  |  autor: Andrea Mosti  |  https://www.pexels.com/es-es/foto/manos-mujer-pincel-cepillo-16041437/  |  consulta: "manicure hands nails neutral"
+hund3-01.jpg  <-  pozo-p-190-pies\009.jpg  |  pexels (Pexels License)  |  autor: https://kaboompics.com/  |  https://www.pexels.com/es-es/foto/mujer-pie-textil-dedos-de-los-pies-4963840/  |  consulta: "pedicure spa feet towel"
+hund4-01.jpg  <-  pozo-p-190-agua\007.jpg  |  pexels (Pexels License)  |  autor: Monstera Production  |  https://www.pexels.com/es-es/foto/petalos-flor-decoracion-bol-20431423/  |  consulta: "water bowl petals"
+hund5-01.jpg  <-  pozo-p-190-sala\002.jpg  |  pexels (Pexels License)  |  autor: Burak Eroglu 🇹🇷  |  https://www.pexels.com/es-es/foto/lujosa-sala-de-spa-con-iluminacion-calida-35495081/  |  consulta: "massage room dim light"
+hund6-01.jpg  <-  pozo-p-190-cera\011.jpg  |  pexels (Pexels License)  |  autor: Ekaterina Mitkina  |  https://www.pexels.com/es-es/foto/trigo-por-encima-de-la-cabeza-gastos-generales-cuchara-de-madera-9898738/  |  consulta: "wax warmer spa"
+mos1-01.jpg  <-  pozo-p-190-agua\002.jpg  |  pexels (Pexels License)  |  autor: Didi Lecatompessy  |  https://www.pexels.com/es-es/foto/flor-30766935/  |  consulta: "water bowl petals"
+mos2-01.jpg  <-  pozo-p-190-teca\012.jpg  |  pexels (Pexels License)  |  autor: FWStudio  |  https://www.pexels.com/es-es/foto/superficie-de-madera-marron-129733/  |  consulta: "teak wood texture dark"
+mos3-01.jpg  <-  pozo-p-190-vela\012.jpg  |  pexels (Pexels License)  |  autor: Artem Podrez  |  https://www.pexels.com/es-es/foto/ligero-fuego-picante-caliente-7233370/  |  consulta: "candle warm light close"
+mos4-01.jpg  <-  pozo-p-190-orquidea\012.jpg  |  pexels (Pexels License)  |  autor: Mehmet Turgut  Kirkgoz  |  https://www.pexels.com/es-es/foto/elegante-arreglo-de-orquideas-en-maceta-rustica-29781597/  |  consulta: "orchid flower spa"
+mos5-01.jpg  <-  pozo-p-190-recepcion\009.jpg  |  pexels (Pexels License)  |  autor: Jonas  F  |  https://www.pexels.com/es-es/foto/hotel-lujo-sala-de-espera-plantas-26837034/  |  consulta: "spa reception plants"
+mos6-01.jpg  <-  pozo-p-190-manos\006.jpg  |  pexels (Pexels License)  |  autor: Vera Emilie  |  https://www.pexels.com/es-es/foto/manos-gente-arte-mano-20805375/  |  consulta: "manicure hands nails neutral"
+
+BRUMA (bruma-pag-0N.png y bruma-osc-0N.png, 30x20): las MISMAS fotos, recortadas a 3:2, reducidas y
+recoloreadas con C:\devs\demos\hacer-bruma.ps1 (clara >= 0,68 de luminancia / oscura <= 0,05). No suman fuentes.
+    pagina: mos4-01.jpg, hund6-01.jpg, hund2-01.jpg, mos2-01.jpg, hund5-01.jpg (tono oscura, -Sat 0.6)   |   bloque claro «para la dueña»: mos4-01.jpg y hund6-01.jpg en TONO CLARA   |   pie: cita-01.jpg (oscura)   [rehechas el 18-09-2026 al reponer fotos: la banda nueva es verde azulada y no alimenta brumas]
+
+MAPA: iframe de Google Maps (embed publico, sin clave). No hay imagen de mapa.

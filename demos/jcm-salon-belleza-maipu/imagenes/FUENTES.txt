@@ -1,0 +1,22 @@
+FUENTES DE LAS IMAGENES - JCM Salon de Belleza y Bienestar Rehecha el 16-09-2026 (presentacion antes que texto). Fotos de REFERENCIA de bancos libres: ninguna es del local; las verdaderas las tiene que mandar el negocio. 
+port-01.jpg  <-  pozo-p-jc-piedra\002.png  |  pexels (Pexels License)  |  autor: Rafael Minguet Delgado  |  https://www.pexels.com/es-es/foto/pila-de-rocas-zen-con-conchas-marinas-sobre-una-superficie-arenosa-33550762/  |  consulta: "hot stones massage"
+banda-01.jpg  <-  pozo-p-jc-masaje\006.jpg  |  pexels (Pexels License)  |  autor: KoolShooters  |  https://www.pexels.com/es-es/foto/manos-relajacion-relajante-adentro-6628701/  |  consulta: "massage back hands"
+cita-01.jpg  <-  pozo-p-jc-vapor\006.jpg  |  pexels (Pexels License)  |  autor: Egor Piskov  |  https://www.pexels.com/es-es/foto/blanco-y-negro-nube-fumar-humo-10154564/  |  consulta: "steam black background"
+hund1-01.jpg  <-  pozo-p-jc-peineta\003.jpg  |  pexels (Pexels License)  |  autor: RDNE Stock project  |  https://www.pexels.com/es-es/foto/mesa-equipo-tijeras-vista-superior-7697654/  |  consulta: "hair clip comb"
+hund2-01.jpg  <-  pozo-p-jc-unas\002.jpg  |  pexels (Pexels License)  |  autor: https://kaboompics.com/  |  https://www.pexels.com/es-es/foto/manos-botella-proteccion-de-la-piel-cuidado-de-la-piel-7321664/  |  consulta: "nail polish bottle"
+hund3-01.jpg  <-  pozo-p-jc-toalla\011.jpg  |  pexels (Pexels License)  |  autor: Polina Tankilevitch  |  https://www.pexels.com/es-es/foto/manos-mujer-relajacion-bano-5849428/  |  consulta: "spa towel dark"
+hund4-01.jpg  <-  pozo-p-jc-facial\008.jpg  |  pexels (Pexels License)  |  autor: Ivan S  |  https://www.pexels.com/es-es/foto/persona-manos-mujer-sujetando-4491172/  |  consulta: "face mask bowl"
+hund5-01.jpg  <-  pozo-p-jc-toalla\003.jpg  |  pexels (Pexels License)  |  autor: Vural Yavas  |  https://www.pexels.com/es-es/foto/tela-tejido-toalla-suave-19281069/  |  consulta: "spa towel dark"
+hund6-01.jpg  <-  pozo-p-jc-pestana\010.jpg  |  pexels (Pexels License)  |  autor: Надежда Скорупич  |  https://www.pexels.com/es-es/foto/por-encima-de-la-cabeza-gastos-generales-desechable-maquillar-herramientas-11966586/  |  consulta: "eyelash brush"
+mos1-01.jpg  <-  pozo-p-jc-calma\009.jpg  |  pexels (Pexels License)  |  autor: Darina Belonogova  |  https://www.pexels.com/es-es/foto/vela-de-pilar-blanca-sobre-una-roca-8789583/  |  consulta: "candle stone dark"
+mos2-01.jpg  <-  pozo-p-jc-toalla\010.jpg  |  pexels (Pexels License)  |  autor: Karen Laårk Boshoff  |  https://www.pexels.com/es-es/foto/toalla-de-playa-de-lino-a-rayas-grises-y-blancas-enrollada-tipo-pareo-30982316/  |  consulta: "spa towel dark"
+mos3-01.jpg  <-  pozo-p-jc-toalla\005.jpg  |  pexels (Pexels License)  |  autor: KoolShooters  |  https://www.pexels.com/es-es/foto/toallas-naturaleza-muerta-difusor-tiro-vertical-6628486/  |  consulta: "spa towel dark"
+mos4-01.jpg  <-  pozo-p-jc-vapor\009.jpg  |  pexels (Pexels License)  |  autor: Engin Akyurt  |  https://www.pexels.com/es-es/foto/ligero-blanco-y-negro-arte-creativo-14822830/  |  consulta: "steam black background"
+mos5-01.jpg  <-  pozo-p-jc-facial\011.jpg  |  pexels (Pexels License)  |  autor: Nataliya Vaitkevich  |  https://www.pexels.com/es-es/foto/un-pincel-sobre-un-cuenco-de-pellizco-5128314/  |  consulta: "face mask bowl"
+mos6-01.jpg  <-  pozo-p-jc-espejo\008.jpg  |  pexels (Pexels License)  |  autor: cottonbro studio  |  https://www.pexels.com/es-es/foto/vintage-reflejo-reflexion-peinado-3992853/  |  consulta: "salon mirror chair"
+
+BRUMA (bruma-pag-0N.png y bruma-osc-0N.png, 30x20): las MISMAS fotos, recortadas a 3:2, reducidas y
+recoloreadas con C:\devs\demos\hacer-bruma.ps1 (clara >= 0,68 de luminancia / oscura <= 0,05). No suman fuentes.
+    pagina: mos2-01.jpg, mos5-01.jpg, hund6-01.jpg, hund2-01.jpg, hund3-01.jpg   |   oscuras: hund1-01.jpg, mos1-01.jpg, cita-01.jpg
+
+MAPA: iframe de Google Maps (embed publico, sin clave). No hay imagen de mapa.

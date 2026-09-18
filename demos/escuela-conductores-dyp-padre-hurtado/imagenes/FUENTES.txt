@@ -1,0 +1,22 @@
+FUENTES DE LAS IMAGENES - Escuela de Conductores DyP Rehecha el 16-09-2026 (presentacion antes que texto). Fotos de REFERENCIA de bancos libres: ninguna es del local; las verdaderas las tiene que mandar el negocio. 
+port-01.jpg  <-  pozo-p-179-noche\002.jpg  |  pexels (Pexels License)  |  autor: Alexander Paramonov  |  https://www.pexels.com/es-es/foto/carretera-noche-calle-tarde-8605997/  |  consulta: "road at night headlights"
+banda-01.jpg  <-  pozo-p-179-linea\012.jpg  |  pexels (Pexels License)  |  autor: Max Andrey  |  https://www.pexels.com/es-es/foto/cerrar-foto-de-carretera-de-hormigon-gris-1197095/  |  consulta: "yellow road line"
+cita-01.jpg  <-  pozo-p-179-noche\012.jpg  |  pexels (Pexels License)  |  autor: Juan Pablo Serrano  |  https://www.pexels.com/es-es/foto/fotografia-de-lapso-de-tiempo-de-automoviles-en-la-carretera-792815/  |  consulta: "road at night headlights"
+hund1-01.jpg  <-  pozo-p-179-volante\003.jpg  |  pexels (Pexels License)  |  autor: Alessandro Avilés  |  https://www.pexels.com/es-es/foto/conducir-12470869/  |  consulta: "hands on steering wheel"
+hund2-01.jpg  <-  pozo-p-179-linea\001.jpg  |  pexels (Pexels License)  |  autor: Erik Mclean  |  https://www.pexels.com/es-es/foto/ruta-autopista-rural-conducir-9104773/  |  consulta: "yellow road line"
+hund3-01.jpg  <-  pozo-p-179-conos\002.jpg  |  pexels (Pexels License)  |  autor: Connor Scott McManus  |  https://www.pexels.com/es-es/foto/calle-pavimento-pinas-conos-14823463/  |  consulta: "traffic cones"
+hund4-01.jpg  <-  pozo-p-179-espejo\009.jpg  |  pexels (Pexels License)  |  autor: Pixabay  |  https://www.pexels.com/es-es/foto/espejo-de-ala-de-coche-negro-461890/  |  consulta: "rear view mirror"
+hund5-01.jpg  <-  pozo-p-179-volante\008.jpg  |  pexels (Pexels License)  |  autor: cottonbro studio  |  https://www.pexels.com/es-es/foto/manos-oscuro-concentracion-controlar-8388228/  |  consulta: "hands on steering wheel"
+hund6-01.jpg  <-  pozo-p-179-llave\007.jpg  |  pexels (Pexels License)  |  autor: Negative Space  |  https://www.pexels.com/es-es/foto/hombre-mano-macro-llave-97079/  |  consulta: "car keys"
+mos1-01.jpg  <-  pozo-p-179-linea\006.jpg  |  pexels (Pexels License)  |  autor: Marek Piwnicki  |  https://www.pexels.com/es-es/foto/primer-plano-de-asfalto-con-linea-de-carretera-naranja-29451007/  |  consulta: "yellow road line"
+mos2-01.jpg  <-  pozo-p-179-conos\010.jpg  |  pexels (Pexels License)  |  autor: Efrem  Efre  |  https://www.pexels.com/es-es/foto/verano-aeropuerto-viaje-viajar-18258966/  |  consulta: "traffic cones"
+mos3-01.jpg  <-  pozo-p-179-espejo\008.jpg  |  pexels (Pexels License)  |  autor: Pixabay  |  https://www.pexels.com/es-es/foto/fotografia-de-enfoque-selectivo-del-espejo-retrovisor-259384/  |  consulta: "rear view mirror"
+mos4-01.jpg  <-  pozo-p-179-noche\009.jpg  |  pexels (Pexels License)  |  autor: Toby Christopher  |  https://www.pexels.com/es-es/foto/una-calle-de-noche-fotografiada-con-exposicion-prolongada-18554689/  |  consulta: "road at night headlights"
+mos5-01.jpg  <-  pozo-p-179-estacionamiento\009.jpg  |  pexels (Pexels License)  |  autor: Darya Grey_Owl  |  https://www.pexels.com/es-es/foto/nieve-nevar-coches-carretera-12304651/  |  consulta: "parking lot night"
+mos6-01.jpg  <-  pozo-p-179-linea\009.jpg  |  pexels (Pexels License)  |  autor: Madzery Ma  |  https://www.pexels.com/es-es/foto/primer-plano-de-lineas-amarillas-en-la-carretera-sobre-asfalto-35423259/  |  consulta: "yellow road line"
+
+BRUMA (bruma-pag-0N.png y bruma-osc-0N.png, 30x20): las MISMAS fotos, recortadas a 3:2, reducidas y
+recoloreadas con C:\devs\demos\hacer-bruma.ps1 (clara >= 0,68 de luminancia / oscura <= 0,05). No suman fuentes.
+    pagina: port-01.jpg, hund1-01.jpg, mos1-01.jpg, banda-01.jpg, hund6-01.jpg (todas a -Sat 0.6)   |   oscuras: port-01.jpg, hund1-01.jpg, mos1-01.jpg
+
+MAPA: iframe de Google Maps (embed publico, sin clave). No hay imagen de mapa.

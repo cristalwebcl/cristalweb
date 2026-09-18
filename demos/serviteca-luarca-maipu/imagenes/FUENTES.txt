@@ -1,0 +1,22 @@
+FUENTES DE LAS IMAGENES - Serviteca Luarca Hermanos Rehecha el 16-09-2026 (presentacion antes que texto). Fotos de REFERENCIA de bancos libres: ninguna es del local; las verdaderas las tiene que mandar el negocio. 
+port-01.jpg  <-  pozo-p-sl-huella\012.jpg  |  pexels (Pexels License)  |  autor: Erik Mclean  |  https://www.pexels.com/es-es/foto/primer-plano-de-la-banda-de-rodadura-de-un-neumatico-de-coche-con-un-dibujo-detallado-34357290/  |  consulta: "tire tread close up"
+banda-01.jpg  <-  pozo-p-sl-neumatico\002.jpg  |  pexels (Pexels License)  |  autor: Tima Miroshnichenko  |  https://www.pexels.com/es-es/foto/blanco-y-negro-coches-vehiculos-industria-5640644/  |  consulta: "tires stacked garage"
+cita-01.jpg  <-  pozo-p-sl-neumatico\003.jpg  |  pexels (Pexels License)  |  autor: Erik Mclean  |  https://www.pexels.com/es-es/foto/ligero-edificio-casa-garaje-9459177/  |  consulta: "tires stacked garage"
+hund1-01.jpg  <-  pozo-p-sl-huella\011.jpg  |  pexels (Pexels License)  |  autor: Markus Winkler  |  https://www.pexels.com/es-es/foto/primer-plano-de-la-banda-de-rodadura-de-un-neumatico-de-tractor-desgastado-30369511/  |  consulta: "tire tread close up"
+hund2-01.jpg  <-  pozo-p-sl-alineacion\010.jpg  |  pexels (Pexels License)  |  autor: Gustavo Fring  |  https://www.pexels.com/es-es/foto/hombre-trabajando-espacio-de-trabajo-adentro-6720510/  |  consulta: "wheel alignment machine"
+hund3-01.jpg  <-  pozo-p-sl-freno\006.jpg  |  pexels (Pexels License)  |  autor: Gustavo Fring  |  https://www.pexels.com/es-es/foto/mano-metal-acero-mecanico-6870299/  |  consulta: "brake disc pad"
+hund4-01.jpg  <-  pozo-p-sl-aceite\006.jpg  |  pexels (Pexels License)  |  autor: Artem Podrez  |  https://www.pexels.com/es-es/foto/hombre-industria-coche-vehiculo-8985911/  |  consulta: "oil change funnel"
+hund5-01.jpg  <-  pozo-p-sl-elevador\007.jpg  |  pexels (Pexels License)  |  autor: Marcos  Primo  |  https://www.pexels.com/es-es/foto/vehiculo-vintage-retro-transporte-27256501/  |  consulta: "car lift garage"
+hund6-01.jpg  <-  pozo-p-sl-neumatico\012.jpg  |  pexels (Pexels License)  |  autor: Budget Bizar  |  https://www.pexels.com/es-es/foto/fotografia-de-pilas-de-neumaticos-negros-11790285/  |  consulta: "tires stacked garage"
+mos1-01.jpg  <-  pozo-p-sl-taller\009.jpg  |  pexels (Pexels License)  |  autor: Kindel Media  |  https://www.pexels.com/es-es/foto/cerrar-foto-de-herramientas-de-manitas-8488061/  |  consulta: "garage floor tools"
+mos2-01.jpg  <-  pozo-p-sl-llave\008.jpg  |  pexels (Pexels License)  |  autor: cottonbro studio  |  https://www.pexels.com/es-es/foto/bici-neumatico-cansar-bicicleta-5446296/  |  consulta: "wheel bolts wrench"
+mos3-01.jpg  <-  pozo-p-sl-freno\009.jpg  |  pexels (Pexels License)  |  autor: Gustavo Fring  |  https://www.pexels.com/es-es/foto/manos-mecanico-reparando-taller-6870300/  |  consulta: "brake disc pad"
+mos4-01.jpg  <-  pozo-p-sl-llave\010.jpg  |  pexels (Pexels License)  |  autor: Ron Lach  |  https://www.pexels.com/es-es/foto/hombre-coche-adolescente-al-aire-libre-9518257/  |  consulta: "wheel bolts wrench"
+mos5-01.jpg  <-  pozo-p-sl-elevador\012.jpg  |  pexels (Pexels License)  |  autor: Leif Bergerson  |  https://www.pexels.com/es-es/foto/coches-vehiculos-transporte-garaje-17552590/  |  consulta: "car lift garage"
+mos6-01.jpg  <-  pozo-p-sl-huella\012.jpg  |  pexels (Pexels License)  |  autor: Erik Mclean  |  https://www.pexels.com/es-es/foto/primer-plano-de-la-banda-de-rodadura-de-un-neumatico-de-coche-con-un-dibujo-detallado-34357290/  |  consulta: "tire tread close up"
+
+BRUMA (bruma-pag-0N.png y bruma-osc-0N.png, 30x20): las MISMAS fotos, recortadas a 3:2, reducidas y
+recoloreadas con C:\devs\demos\hacer-bruma.ps1 (clara >= 0,68 de luminancia / oscura <= 0,05). No suman fuentes.
+    pagina: hund4-01.jpg, mos1-01.jpg, hund2-01.jpg, mos4-01.jpg, hund3-01.jpg   |   oscuras: port-01.jpg, cita-01.jpg, banda-01.jpg
+
+MAPA: iframe de Google Maps (embed publico, sin clave). No hay imagen de mapa.

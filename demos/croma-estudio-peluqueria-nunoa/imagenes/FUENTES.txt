@@ -1,0 +1,22 @@
+FUENTES DE LAS IMAGENES - Croma Estudio de Peluquería Rehecha el 17-09-2026 (presentacion antes que texto). Fotos de REFERENCIA de bancos libres: ninguna es del local; las verdaderas las tiene que mandar el negocio. 
+port-01.jpg  <-  pozo-p-162-naranjo\008.jpg  |  pexels (Pexels License)  |  autor: Beyzanur K.  |  https://www.pexels.com/es-es/foto/mujer-arreglando-su-cabello-rojo-con-peine-y-espejo-28994564/  |  consulta: "orange hair back of head"
+banda-01.jpg  <-  pozo-p-162-mechas\011.jpg  |  pexels (Pexels License)  |  autor: Ionela Mat  |  https://www.pexels.com/es-es/foto/manos-mujer-servicio-cuidado-20894394/  |  consulta: "hair foils highlights"
+cita-01.jpg  <-  pozo-p-162-luz\009.jpg  |  pexels (Pexels License)  |  autor: Kari Alfonso  |  https://www.pexels.com/es-es/foto/silueta-de-mujer-de-pie-junto-a-una-ventana-antigua-37865387/  |  consulta: "window light natural portrait back"
+hund1-01.jpg  <-  pozo-p-162-naranjo\007.jpg  |  pexels (Pexels License)  |  autor: Beyzanur K.  |  https://www.pexels.com/es-es/foto/primer-plano-de-cabello-y-manos-rojas-bajo-una-iluminacion-suave-28994648/  |  consulta: "orange hair back of head"
+hund2-01.jpg  <-  pozo-p-162-mechon\003.jpg  |  pexels (Pexels License)  |  autor: Diana ✨  |  https://www.pexels.com/es-es/foto/rubia-cabellos-melena-pelo-7482357/  |  consulta: "hair strands close up"
+hund3-01.jpg  <-  pozo-p-162-mechas\003.jpg  |  pexels (Pexels License)  |  autor: Doğan Alpaslan  Demir  |  https://www.pexels.com/es-es/foto/sesion-de-coloracion-profesional-del-cabello-en-salon-29555682/  |  consulta: "hair foils highlights"
+hund4-01.jpg  <-  pozo-p-162-carta\010.jpg  |  pexels (Pexels License)  |  autor: Alina Skazka  |  https://www.pexels.com/es-es/foto/cabellos-melena-pelo-cabello-14730875/  |  consulta: "color swatches hair"
+hund5-01.jpg  <-  pozo-p-162-naranjo\004.jpg  |  pexels (Pexels License)  |  autor: Mariana  |  https://www.pexels.com/es-es/foto/mujer-vista-trasera-332984/  |  consulta: "orange hair back of head"
+hund6-01.jpg  <-  pozo-p-162-ondas\012.jpg  |  pexels (Pexels License)  |  autor: Kateryna Babaieva  |  https://www.pexels.com/es-es/foto/mujer-con-sombrero-negro-y-sueter-3721240/  |  consulta: "wavy hair from behind"
+mos1-01.jpg  <-  pozo-p-162-tintura\006.jpg  |  pexels (Pexels License)  |  autor: Nataliya Vaitkevich  |  https://www.pexels.com/es-es/foto/herramientas-naturaleza-muerta-plastico-color-de-pelo-8468156/  |  consulta: "hair dye bowl brush"
+mos2-01.jpg  <-  pozo-p-162-mechas\005.jpg  |  pexels (Pexels License)  |  autor: Doğan Alpaslan  Demir  |  https://www.pexels.com/es-es/foto/sesion-de-coloracion-profesional-del-cabello-en-salon-29555677/  |  consulta: "hair foils highlights"
+mos3-01.jpg  <-  pozo-p-162-naranjo\011.jpg  |  pexels (Pexels License)  |  autor: Leyla Helvaci  |  https://www.pexels.com/es-es/foto/paisaje-persona-montana-ver-14353647/  |  consulta: "orange hair back of head"
+mos4-01.jpg  <-  pozo-p-162-tintura\002.jpg  |  pexels (Pexels License)  |  autor: Nataliya Vaitkevich  |  https://www.pexels.com/es-es/foto/pincel-cepillo-cepillar-bol-8468131/  |  consulta: "hair dye bowl brush"
+mos5-01.jpg  <-  pozo-p-162-salon\010.jpg  |  pexels (Pexels License)  |  autor: Max Vakhtbovych  |  https://www.pexels.com/es-es/foto/creativo-escritorio-planta-lampara-7195810/  |  consulta: "hair salon dark interior"
+mos6-01.jpg  <-  pozo-p-162-mechon\012.jpg  |  pexels (Pexels License)  |  autor: Marek Piwnicki  |  https://www.pexels.com/es-es/foto/modelo-estampado-textura-pintura-12966746/  |  consulta: "hair strands close up"
+
+BRUMA (bruma-pag-0N.png y bruma-osc-0N.png, 30x20): las MISMAS fotos, recortadas a 3:2, reducidas y
+recoloreadas con C:\devs\demos\hacer-bruma.ps1 (clara >= 0,68 de luminancia / oscura <= 0,05). No suman fuentes.
+    pagina: port-01.jpg, hund1-01.jpg, mos3-01.jpg, hund5-01.jpg, mos6-01.jpg (tono oscura, -Sat 0.6)   |   bloque claro «para la dueña»: port-01.jpg y hund1-01.jpg en TONO CLARA   |   pie: cita-01.jpg (oscura)
+
+MAPA: iframe de Google Maps (embed publico, sin clave). No hay imagen de mapa.

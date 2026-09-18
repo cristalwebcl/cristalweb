@@ -1,0 +1,22 @@
+FUENTES DE LAS IMAGENES - Glanza Racing Rehecha el 16-09-2026 (presentacion antes que texto). Fotos de REFERENCIA de bancos libres: ninguna es del local; las verdaderas las tiene que mandar el negocio. 
+port-01.jpg  <-  pozo-p-184-bahia\008.jpg  |  pexels (Pexels License)  |  autor: cottonbro studio  |  https://www.pexels.com/es-es/foto/manos-vehiculo-arreglar-reparar-4489765/  |  consulta: "car workshop dark engine bay light mechanic pexels"
+banda-01.jpg  <-  pozo-p-184-caja\004.jpg  |  pexels (Pexels License)  |  autor: Miguel Á. Padriñán  |  https://www.pexels.com/es-es/foto/blanco-y-negro-herramientas-colgando-taller-16679590/  |  consulta: "toolbox drawer sockets workshop pexels"
+cita-01.jpg  <-  pozo-p-184-alzahombres\006.jpg  |  pexels (Pexels License)  |  autor: Shuaizhi Tian  |  https://www.pexels.com/es-es/foto/pared-muro-puerta-interior-20872015/  |  consulta: "workshop hydraulic lift car underneath pexels"
+hund1-01.jpg  <-  pozo-p-184-bahia\011.jpg  |  pexels (Pexels License)  |  autor: Fatih Erden  |  https://www.pexels.com/es-es/foto/hombre-coche-vehiculo-sujetando-10490610/  |  consulta: "car workshop dark engine bay light mechanic pexels"
+hund2-01.jpg  <-  pozo-p-184-escape\010.jpg  |  pexels (Pexels License)  |  autor: Safak Batura  |  https://www.pexels.com/es-es/foto/tecnologia-motor-personalizado-costumbre-17192720/  |  consulta: "exhaust pipe stainless close up pexels"
+hund3-01.jpg  <-  pozo-p-184-suspension\003.jpg  |  pexels (Pexels License)  |  autor: Photos By  Kriz  |  https://www.pexels.com/es-es/foto/coche-blanco-rueda-noria-17927860/  |  consulta: "car suspension coilover close up pexels"
+hund4-01.jpg  <-  pozo-p-184-escape\007.jpg  |  pexels (Pexels License)  |  autor: Rahul Soni  |  https://www.pexels.com/es-es/foto/vehiculo-silenciador-escape-doble-de-cerca-10827691/  |  consulta: "exhaust pipe stainless close up pexels"
+hund5-01.jpg  <-  pozo-p-184-caja\001.jpg  |  pexels (Pexels License)  |  autor: Miguel Á. Padriñán  |  https://www.pexels.com/es-es/foto/blanco-y-negro-oscuro-fila-hilera-16679582/  |  consulta: "toolbox drawer sockets workshop pexels"
+hund6-01.jpg  <-  pozo-p-184-reloj\003.jpg  |  pexels (Pexels License)  |  autor: Miguel Á. Padriñán  |  https://www.pexels.com/es-es/foto/blanco-y-negro-metal-vintage-fabrica-16679542/  |  consulta: "gauge dial dashboard close up pexels"
+mos1-01.jpg  <-  pozo-p-184-caja\005.jpg  |  pexels (Pexels License)  |  autor: Miguel Á. Padriñán  |  https://www.pexels.com/es-es/foto/metal-herramientas-taller-coleccion-16679649/  |  consulta: "toolbox drawer sockets workshop pexels"
+mos2-01.jpg  <-  pozo-p-184-verde\007.jpg  |  pexels (Pexels License)  |  autor: GODMODE INTRUST  |  https://www.pexels.com/es-es/foto/brillante-coche-de-lujo-vehiculo-de-motor-coche-verde-6597513/  |  consulta: "green car paint detail close up pexels"
+mos3-01.jpg  <-  pozo-p-184-suspension\008.jpg  |  pexels (Pexels License)  |  autor: Pablo Fernandez  |  https://www.pexels.com/es-es/foto/primer-plano-del-diseno-de-la-ventilacion-del-coche-deportivo-rojo-39408533/  |  consulta: "car suspension coilover close up pexels"
+mos4-01.jpg  <-  pozo-p-184-bahia\002.jpg  |  pexels (Pexels License)  |  autor: Miguel Á. Padriñán  |  https://www.pexels.com/es-es/foto/industria-metal-reflejo-reflexion-16679644/  |  consulta: "car workshop dark engine bay light mechanic pexels"
+mos5-01.jpg  <-  pozo-p-184-reloj\006.jpg  |  pexels (Pexels License)  |  autor: Abdulvahap Demir  |  https://www.pexels.com/es-es/foto/vaso-cristal-vidrio-coche-19754775/  |  consulta: "gauge dial dashboard close up pexels"
+mos6-01.jpg  <-  pozo-p-184-suspension\011.jpg  |  pexels (Pexels License)  |  autor: FBO Media  |  https://www.pexels.com/es-es/foto/primer-plano-del-sistema-de-suspension-de-un-vehiculo-personalizado-en-el-taller-33024451/  |  consulta: "car suspension coilover close up pexels"
+
+BRUMA (bruma-pag-0N.png y bruma-osc-0N.png, 30x20): las MISMAS fotos, recortadas a 3:2, reducidas y
+recoloreadas con C:\devs\demos\hacer-bruma.ps1 (clara >= 0,68 de luminancia / oscura <= 0,05). No suman fuentes.
+    pagina: port-01.jpg, banda-01.jpg, cita-01.jpg, mos2-01.jpg, hund2-01.jpg   |   oscuras: port-01.jpg, mos2-01.jpg, hund2-01.jpg
+
+MAPA: iframe de Google Maps (embed publico, sin clave). No hay imagen de mapa.

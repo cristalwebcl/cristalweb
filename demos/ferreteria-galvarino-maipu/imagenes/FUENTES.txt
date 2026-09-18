@@ -1,0 +1,22 @@
+FUENTES DE LAS IMAGENES - Ferretería Galvarino Rehecha el 18-09-2026 (presentacion antes que texto). Fotos de REFERENCIA de bancos libres: ninguna es del local; las verdaderas las tiene que mandar el negocio. 
+port-01.jpg  <-  pozo-p-173-llaves\008.jpg  |  pexels (Pexels License)  |  autor: Jakub Zerdzicki  |  https://www.pexels.com/es-es/foto/llave-de-puerta-entrada-casa-nueva-30332492/  |  consulta: "keys in hand door pexels"
+banda-01.jpg  <-  pozo-p-173-lija\007.jpg  |  pexels (Pexels License)  |  autor: Ksenia Chernaya  |  https://www.pexels.com/es-es/foto/hombre-construccion-pared-muro-5691613/  |  consulta: "sandpaper wall sanding hand pexels"
+cita-01.jpg  <-  pozo-p-173-pieza\004.jpg  |  pexels (Pexels License)  |  autor: Max Vakhtbovych  |  https://www.pexels.com/es-es/foto/ligero-espacio-pared-muro-7031616/  |  consulta: "empty apartment room white walls pexels"
+hund1-01.jpg  <-  pozo-p-173-espatula\008.jpg  |  pexels (Pexels License)  |  autor: Ksenia Chernaya  |  https://www.pexels.com/es-es/foto/arte-sucio-polvo-blanco-5691482/  |  consulta: "putty knife wall filler pexels"
+hund2-01.jpg  <-  pozo-p-173-lija\003.jpg  |  pexels (Pexels License)  |  autor: Ksenia Chernaya  |  https://www.pexels.com/es-es/foto/persona-de-la-cosecha-que-se-escabulle-de-la-pared-en-su-casa-5691595/  |  consulta: "sandpaper wall sanding hand pexels"
+hund3-01.jpg  <-  pozo-p-173-ampolleta\009.jpg  |  pexels (Pexels License)  |  autor: Nothing Ahead  |  https://www.pexels.com/es-es/foto/persona-creativo-mano-oscuro-7425343/  |  consulta: "light bulb hand ceiling pexels"
+hund4-01.jpg  <-  pozo-p-173-manilla\004.jpg  |  pexels (Pexels License)  |  autor: 𝗛&𝗖𝗢 　  |  https://www.pexels.com/es-es/foto/foto-de-primer-plano-de-la-manija-de-la-puerta-3276079/  |  consulta: "door handle close up pexels"
+hund5-01.jpg  <-  pozo-p-173-silicona\006.jpg  |  pexels (Pexels License)  |  autor: Jaycee300s  |  https://www.pexels.com/es-es/foto/mano-pared-muro-blanco-18071800/  |  consulta: "silicone sealant gun bathroom pexels"
+hund6-01.jpg  <-  pozo-p-173-cajas\007.jpg  |  pexels (Pexels License)  |  autor: cottonbro studio  |  https://www.pexels.com/es-es/foto/cajas-de-carton-marron-sobre-baldosas-de-ceramica-blanca-4568695/  |  consulta: "moving boxes empty room pexels"
+mos1-01.jpg  <-  pozo-p-173-llaves\004.jpg  |  pexels (Pexels License)  |  autor: Jakub Zerdzicki  |  https://www.pexels.com/es-es/foto/mano-negocio-apartamento-casa-27522902/  |  consulta: "keys in hand door pexels"
+mos2-01.jpg  <-  pozo-p-173-rodillo\012.jpg  |  pexels (Pexels License)  |  autor: Natalia S  |  https://www.pexels.com/es-es/foto/primer-plano-de-un-rodillo-de-pintura-en-una-superficie-de-pared-34046208/  |  consulta: "paint roller white wall pexels"
+mos3-01.jpg  <-  pozo-p-173-muestra\011.jpg  |  pexels (Pexels License)  |  autor: Ron Lach  |  https://www.pexels.com/es-es/foto/mano-cubos-cubitos-forma-8760884/  |  consulta: "paint color swatches hand pexels"
+mos4-01.jpg  <-  pozo-p-173-pieza\008.jpg  |  pexels (Pexels License)  |  autor: Max Vakhtbovych  |  https://www.pexels.com/es-es/foto/pared-muro-casa-ventana-7031621/  |  consulta: "empty apartment room white walls pexels"
+mos5-01.jpg  <-  pozo-p-173-manilla\010.jpg  |  pexels (Pexels License)  |  autor: Markus Winkler  |  https://www.pexels.com/es-es/foto/metal-acero-perilla-de-la-puerta-de-cerca-10284056/  |  consulta: "door handle close up pexels"
+mos6-01.jpg  <-  pozo-p-173-cajas\010.jpg  |  pexels (Pexels License)  |  autor: cottonbro studio  |  https://www.pexels.com/es-es/foto/puerta-de-madera-blanca-cerca-de-una-caja-de-carton-marron-4568707/  |  consulta: "moving boxes empty room pexels"
+
+BRUMA (bruma-pag-0N.png y bruma-osc-0N.png, 30x20): las MISMAS fotos, recortadas a 3:2, reducidas y
+recoloreadas con C:\devs\demos\hacer-bruma.ps1 (clara >= 0,68 de luminancia / oscura <= 0,05). No suman fuentes.
+    pagina: port-01.jpg, hund4-01.jpg, hund6-01.jpg, mos3-01.jpg, mos5-01.jpg (todas a -Sat 0.6)   |   oscuras: port-01.jpg, banda-01.jpg, mos5-01.jpg
+
+MAPA: iframe de Google Maps (embed publico, sin clave). No hay imagen de mapa.

@@ -1,0 +1,22 @@
+FUENTES DE LAS IMAGENES - Decored Rehecha el 16-09-2026 (presentacion antes que texto). Fotos de REFERENCIA de bancos libres: ninguna es del local; las verdaderas las tiene que mandar el negocio. 
+port-01.jpg  <-  pozo-p-dc-luz\011.jpg  |  pexels (Pexels License)  |  autor: Peyton Austin  |  https://www.pexels.com/es-es/foto/oscuro-vaso-cristal-vidrio-13251396/  |  consulta: "sunlight through blinds"
+banda-01.jpg  <-  pozo-p-dc-luz\002.jpg  |  pexels (Pexels License)  |  autor: Lilia Dansh  |  https://www.pexels.com/es-es/foto/atardecer-34324896/  |  consulta: "sunlight through blinds"
+cita-01.jpg  <-  pozo-p-dc-luz\005.jpg  |  pexels (Pexels License)  |  autor: Kiersten Williams  |  https://www.pexels.com/es-es/foto/ventanas-plantas-ventana-sombra-20634215/  |  consulta: "sunlight through blinds"
+hund1-01.jpg  <-  pozo-p-dc-roller\005.jpg  |  pexels (Pexels License)  |  autor: Golboo Maghooli  |  https://www.pexels.com/es-es/foto/acogedor-jardin-interior-con-ventanas-soleadas-33737106/  |  consulta: "roller blind window"
+hund2-01.jpg  <-  pozo-p-dc-vertical\003.jpg  |  pexels (Pexels License)  |  autor: Adrien Olichon  |  https://www.pexels.com/es-es/foto/naturaleza-azul-edificio-construccion-4534512/  |  consulta: "vertical blinds"
+hund3-01.jpg  <-  pozo-p-dc-roller\011.jpg  |  pexels (Pexels License)  |  autor: Ivan S  |  https://www.pexels.com/es-es/foto/tendedero-adentro-naturaleza-muerta-tiro-vertical-7671134/  |  consulta: "roller blind window"
+hund4-01.jpg  <-  pozo-p-dc-vertical\012.jpg  |  pexels (Pexels License)  |  autor: Cup of  Couple  |  https://www.pexels.com/es-es/foto/macbook-pro-en-mesa-de-madera-marron-6177614/  |  consulta: "vertical blinds"
+hund5-01.jpg  <-  pozo-p-dc-tela\012.jpg  |  pexels (Pexels License)  |  autor: Vero Lova  |  https://www.pexels.com/es-es/foto/muestras-de-tela-azul-en-varios-tonos-31778601/  |  consulta: "fabric samples texture"
+hund6-01.jpg  <-  pozo-p-dc-instalar\011.jpg  |  pexels (Pexels License)  |  autor: Ksenia Chernaya  |  https://www.pexels.com/es-es/foto/hombre-casa-sin-rostro-ventana-5768107/  |  consulta: "curtain rod install drill"
+mos1-01.jpg  <-  pozo-p-dc-luz\008.jpg  |  pexels (Pexels License)  |  autor: Joerg Hartmann  |  https://www.pexels.com/es-es/foto/patrones-de-luz-abstractos-en-superficie-de-madera-36040204/  |  consulta: "sunlight through blinds"
+mos2-01.jpg  <-  pozo-p-dc-vertical\011.jpg  |  pexels (Pexels License)  |  autor: Rostislav Uzunov  |  https://www.pexels.com/es-es/foto/textil-de-rayas-azules-y-blancas-4754883/  |  consulta: "vertical blinds"
+mos3-01.jpg  <-  pozo-p-dc-tela\006.jpg  |  pexels (Pexels License)  |  autor: Ksenia Chernaya  |  https://www.pexels.com/es-es/foto/modelo-estampado-oficio-artesania-5807038/  |  consulta: "fabric samples texture"
+mos4-01.jpg  <-  pozo-p-dc-luz\004.jpg  |  pexels (Pexels License)  |  autor: Daniel & Hannah Snipes  |  https://www.pexels.com/es-es/foto/patrones-de-luz-solar-a-traves-de-persianas-modernas-29973444/  |  consulta: "sunlight through blinds"
+mos5-01.jpg  <-  pozo-p-dc-roller\012.jpg  |  pexels (Pexels License)  |  autor: Srattha Nualsate  |  https://www.pexels.com/es-es/foto/pared-muro-blanco-ventana-13005096/  |  consulta: "roller blind window"
+mos6-01.jpg  <-  pozo-p-dc-vertical\007.jpg  |  pexels (Pexels License)  |  autor: saifullah  hafeel  |  https://www.pexels.com/es-es/foto/ligero-sol-modelo-estampado-4220436/  |  consulta: "vertical blinds"
+
+BRUMA (bruma-pag-0N.png y bruma-osc-0N.png, 30x20): las MISMAS fotos, recortadas a 3:2, reducidas y
+recoloreadas con C:\devs\demos\hacer-bruma.ps1 (clara >= 0,68 de luminancia / oscura <= 0,05). No suman fuentes.
+    pagina: hund4-01.jpg, mos2-01.jpg, hund5-01.jpg, mos3-01.jpg, hund6-01.jpg   |   oscuras: port-01.jpg, cita-01.jpg, hund3-01.jpg
+
+MAPA: iframe de Google Maps (embed publico, sin clave). No hay imagen de mapa.

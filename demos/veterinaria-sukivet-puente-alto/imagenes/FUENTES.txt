@@ -1,0 +1,22 @@
+FUENTES DE LAS IMAGENES - Veterinaria Sukivet Rehecha el 16-09-2026 (presentacion antes que texto). Fotos de REFERENCIA de bancos libres: ninguna es del local; las verdaderas las tiene que mandar el negocio. 
+port-01.jpg  <-  pozo-p-193-manta\012.jpg  |  pexels (Pexels License)  |  autor: Fausto Ferreira  |  https://www.pexels.com/es-es/foto/perro-negro-acogedor-envuerto-en-una-manta-suave-36027824/  |  consulta: "dog under blanket"
+banda-01.jpg  <-  pozo-p-193-gato\010.jpg  |  pexels (Pexels License)  |  autor: Matthew Adam  |  https://www.pexels.com/es-es/foto/animal-mascota-dormido-durmiendo-12407277/  |  consulta: "cat sleeping"
+cita-01.jpg  <-  pozo-p-193-cortina\001.jpg  |  pexels (Pexels License)  |  autor: Jessika Arraes  |  https://www.pexels.com/es-es/foto/ligero-arte-abstracto-resumen-11433102/  |  consulta: "closed curtains window"
+hund1-01.jpg  <-  pozo-p-193-sofa\012.jpg  |  pexels (Pexels License)  |  autor: Bianca Beltrán  |  https://www.pexels.com/es-es/foto/retrato-de-un-chihuahua-negro-15794955/  |  consulta: "dog sleeping sofa"
+hund2-01.jpg  <-  pozo-p-193-gato\012.jpg  |  pexels (Pexels License)  |  autor: Shota Photographer  |  https://www.pexels.com/es-es/foto/gato-durmiendo-en-paz-a-la-luz-del-sol-37157080/  |  consulta: "cat sleeping"
+hund3-01.jpg  <-  pozo-p-193-cama\011.jpg  |  pexels (Pexels License)  |  autor: Diego Martinez  |  https://www.pexels.com/es-es/foto/mirada-profunda-29773484/  |  consulta: "dog bed"
+hund4-01.jpg  <-  pozo-p-193-placa\002.jpg  |  pexels (Pexels License)  |  autor: Gaston Acosta  |  https://www.pexels.com/es-es/foto/blanco-y-negro-animal-perro-mascota-27585420/  |  consulta: "dog collar tag"
+hund5-01.jpg  <-  pozo-p-193-cachorro\002.jpg  |  pexels (Pexels License)  |  autor: Abner Velázquez  |  https://www.pexels.com/es-es/foto/adorable-cachorro-labrador-durmiendo-en-la-hierba-34221899/  |  consulta: "puppy"
+hund6-01.jpg  <-  pozo-p-193-orejas\005.jpg  |  pexels (Pexels License)  |  autor: Sudhir Sangwan  |  https://www.pexels.com/es-es/foto/perro-mascota-cabeza-orejas-17326731/  |  consulta: "dog ears"
+mos1-01.jpg  <-  pozo-p-193-gato\001.jpg  |  pexels (Pexels License)  |  autor: Nestor Ovilla  |  https://www.pexels.com/es-es/foto/gato-blanco-y-negro-durmiendo-en-la-cama-30437321/  |  consulta: "cat sleeping"
+mos2-01.jpg  <-  pozo-p-193-cortina\004.jpg  |  pexels (Pexels License)  |  autor: Ivett M  |  https://www.pexels.com/es-es/foto/elegantes-cortinas-transparentes-en-una-ventana-iluminada-por-el-sol-36586178/  |  consulta: "closed curtains window"
+mos3-01.jpg  <-  pozo-p-193-sofa\006.jpg  |  pexels (Pexels License)  |  autor: K  |  https://www.pexels.com/es-es/foto/perro-acogedor-durmiendo-en-un-sofa-iluminado-por-el-sol-en-el-interior-30219819/  |  consulta: "dog sleeping sofa"
+mos4-01.jpg  <-  pozo-p-193-sofa\011.jpg  |  pexels (Pexels License)  |  autor: Benson Tran  |  https://www.pexels.com/es-es/foto/perro-mascota-lealtad-dormido-5807812/  |  consulta: "dog sleeping sofa"
+mos5-01.jpg  <-  pozo-p-193-cama\005.jpg  |  pexels (Pexels License)  |  autor: Mimo´s Photography (Helyin Bermúdez)  |  https://www.pexels.com/es-es/foto/mascotas-retrato-amantes-de-los-perros-animales-y-mascotas-28277654/  |  consulta: "dog bed"
+mos6-01.jpg  <-  pozo-p-193-living\012.jpg  |  pexels (Pexels License)  |  autor: Yusuf P  |  https://www.pexels.com/es-es/foto/la-promo-yo-31730815/  |  consulta: "living room lamp evening"
+
+BRUMA (bruma-pag-0N.png y bruma-osc-0N.png, 30x20): las MISMAS fotos, recortadas a 3:2, reducidas y
+recoloreadas con C:\devs\demos\hacer-bruma.ps1 (clara >= 0,68 de luminancia / oscura <= 0,05). No suman fuentes.
+    pagina: mos6-01.jpg, hund5-01.jpg, mos3-01.jpg, hund3-01.jpg, mos5-01.jpg (todas a -Sat 0.6)   |   oscuras: mos6-01.jpg, mos2-01.jpg, hund3-01.jpg
+
+MAPA: iframe de Google Maps (embed publico, sin clave). No hay imagen de mapa.

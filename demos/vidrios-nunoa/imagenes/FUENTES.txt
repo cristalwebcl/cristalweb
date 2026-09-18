@@ -1,0 +1,22 @@
+FUENTES DE LAS IMAGENES - Vidrios Nunoa Rehecha el 16-09-2026 (presentacion antes que texto). Fotos de REFERENCIA de bancos libres: ninguna es del local; las verdaderas las tiene que mandar el negocio. 
+port-01.jpg  <-  pozo-p-vi-vidrio\009.jpg  |  pexels (Pexels License)  |  autor: cottonbro studio  |  https://www.pexels.com/es-es/foto/manos-industria-vaso-cristal-7219177/  |  consulta: "glass sheet cutting"
+banda-01.jpg  <-  pozo-p-vi-vidrio\007.jpg  |  pexels (Pexels License)  |  autor: cottonbro studio  |  https://www.pexels.com/es-es/foto/mano-trabajando-espacio-de-trabajo-corte-7219172/  |  consulta: "glass sheet cutting"
+cita-01.jpg  <-  pozo-p-vi-noche\012.jpg  |  pexels (Pexels License)  |  autor: Yana Oleksiuk  |  https://www.pexels.com/es-es/foto/ventana-iluminada-en-el-paisaje-nocturno-de-breslavia-37879010/  |  consulta: "window night light"
+hund1-01.jpg  <-  pozo-p-vi-taller\001.jpg  |  pexels (Pexels License)  |  autor: Los Muertos Crew  |  https://www.pexels.com/es-es/foto/obrero-electricista-medicion-guantes-protectores-8853523/  |  consulta: "worker gloves tools"
+hund2-01.jpg  <-  pozo-p-vi-vidrio\005.jpg  |  pexels (Pexels License)  |  autor: cottonbro studio  |  https://www.pexels.com/es-es/foto/una-persona-sosteniendo-un-cortador-de-vidrio-7219180/  |  consulta: "glass sheet cutting"
+hund3-01.jpg  <-  pozo-p-vi-noche\004.jpg  |  pexels (Pexels License)  |  autor: Lina Sali  |  https://www.pexels.com/es-es/foto/casa-lampara-ventana-hogar-9903362/  |  consulta: "window night light"
+hund4-01.jpg  <-  pozo-p-vi-taller\009.jpg  |  pexels (Pexels License)  |  autor: Bulat843 🌙  |  https://www.pexels.com/es-es/foto/primer-plano-de-trabajador-usando-taladro-electrico-34404305/  |  consulta: "worker gloves tools"
+hund5-01.jpg  <-  pozo-p-vi-canto\002.jpg  |  pexels (Pexels License)  |  autor: Anshu Kumar  |  https://www.pexels.com/es-es/foto/fachada-de-vidrio-moderna-de-edificio-de-oficinas-alto-34725823/  |  consulta: "glass edge light"
+hund6-01.jpg  <-  pozo-p-vi-vidrio\006.jpg  |  pexels (Pexels License)  |  autor: cottonbro studio  |  https://www.pexels.com/es-es/foto/una-persona-cortando-vidrio-7219192/  |  consulta: "glass sheet cutting"
+mos1-01.jpg  <-  pozo-p-vi-vidrio\002.jpg  |  pexels (Pexels License)  |  autor: cottonbro studio  |  https://www.pexels.com/es-es/foto/una-persona-cortando-vidrio-7219189/  |  consulta: "glass sheet cutting"
+mos2-01.jpg  <-  pozo-p-vi-ventana\003.jpg  |  pexels (Pexels License)  |  autor: n n  |  https://www.pexels.com/es-es/foto/ventana-cuadrada-en-pared-de-terracota-reflejando-arboles-31483307/  |  consulta: "window frame aluminium"
+mos3-01.jpg  <-  pozo-p-vi-canto\001.jpg  |  pexels (Pexels License)  |  autor: Alejandro  AR  |  https://www.pexels.com/es-es/foto/luces-interior-esquina-moderno-17142502/  |  consulta: "glass edge light"
+mos4-01.jpg  <-  pozo-p-vi-ventana\012.jpg  |  pexels (Pexels License)  |  autor: Athena Sandrini  |  https://www.pexels.com/es-es/foto/ventana-abierta-2077343/  |  consulta: "window frame aluminium"
+mos5-01.jpg  <-  pozo-p-vi-vidrio\004.jpg  |  pexels (Pexels License)  |  autor: cottonbro studio  |  https://www.pexels.com/es-es/foto/una-persona-sosteniendo-un-cortador-de-vidrio-7219174/  |  consulta: "glass sheet cutting"
+mos6-01.jpg  <-  pozo-p-vi-noche\007.jpg  |  pexels (Pexels License)  |  autor: Ayco World  |  https://www.pexels.com/es-es/foto/vistazo-acogedor-de-noche-a-traves-de-la-ventana-iluminada-34032603/  |  consulta: "window night light"
+
+BRUMA (bruma-pag-0N.png y bruma-osc-0N.png, 30x20): las MISMAS fotos, recortadas a 3:2, reducidas y
+recoloreadas con C:\devs\demos\hacer-bruma.ps1 (clara >= 0,68 de luminancia / oscura <= 0,05). No suman fuentes.
+    pagina: hund1-01.jpg, mos2-01.jpg, hund2-01.jpg, mos5-01.jpg, hund4-01.jpg   |   oscuras: port-01.jpg, cita-01.jpg, mos6-01.jpg
+
+MAPA: iframe de Google Maps (embed publico, sin clave). No hay imagen de mapa.

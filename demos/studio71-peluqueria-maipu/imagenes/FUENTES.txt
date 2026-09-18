@@ -1,0 +1,22 @@
+FUENTES DE LAS IMAGENES - Studio71 Rehecha el 18-09-2026 (presentacion antes que texto). Fotos de REFERENCIA de bancos libres: ninguna es del local; las verdaderas las tiene que mandar el negocio. 
+port-01.jpg  <-  pozo-p-175-tijera\010.jpg  |  pexels (Pexels License)  |  autor: Brian Silva  |  https://www.pexels.com/es-es/foto/barbero-realizando-un-corte-de-pelo-con-tijeras-y-peine-39559306/  |  consulta: "barber scissors comb"
+banda-01.jpg  <-  pozo-p-175-tijera\008.jpg  |  pexels (Pexels License)  |  autor: Th2city Santana  |  https://www.pexels.com/es-es/foto/herramientas-profesionales-de-peluqueria-en-la-mesa-36361320/  |  consulta: "barber scissors comb"
+cita-01.jpg  <-  pozo-p-175-corto\012.jpg  |  pexels (Pexels License)  |  autor: ROCKETMANN TEAM  |  https://www.pexels.com/es-es/foto/mujer-retrato-cuerpo-haciendo-estiramientos-9486637/  |  consulta: "short haircut woman back"
+hund1-01.jpg  <-  pozo-p-175-tijera\012.jpg  |  pexels (Pexels License)  |  autor: Gustavo Fring  |  https://www.pexels.com/es-es/foto/hombre-tijeras-corte-de-pelo-peine-7447150/  |  consulta: "barber scissors comb"
+hund2-01.jpg  <-  pozo-p-175-peineta\009.jpg  |  pexels (Pexels License)  |  autor: Skylar Kang  |  https://www.pexels.com/es-es/foto/peine-de-pelo-negro-sobre-superficie-blanca-6045181/  |  consulta: "hair comb"
+hund3-01.jpg  <-  pozo-p-175-nuca\001.jpg  |  pexels (Pexels License)  |  autor: Spring Toan  |  https://www.pexels.com/es-es/foto/vietnam-de-espaldas-color-de-pelo-fondo-de-la-planta-3704020/  |  consulta: "haircut back view"
+hund4-01.jpg  <-  pozo-p-175-nuca\011.jpg  |  pexels (Pexels License)  |  autor: https://kaboompics.com/  |  https://www.pexels.com/es-es/foto/mujer-blanco-cabeza-cabellos-7273415/  |  consulta: "haircut back view"
+hund5-01.jpg  <-  pozo-p-175-largo\004.jpg  |  pexels (Pexels License)  |  autor: Anastasiya Badun  |  https://www.pexels.com/es-es/foto/vista-trasera-de-mujer-con-cabello-largo-castano-29254098/  |  consulta: "long hair back woman"
+hund6-01.jpg  <-  pozo-p-175-sillon\012.jpg  |  pexels (Pexels License)  |  autor: Jennifer Latham  |  https://www.pexels.com/es-es/foto/rojo-vacio-sillon-peluquero-9703068/  |  consulta: "salon chair"
+mos1-01.jpg  <-  pozo-p-175-tijera\009.jpg  |  pexels (Pexels License)  |  autor: Matheus Wladeka  |  https://www.pexels.com/es-es/foto/hombre-manos-mujer-trabajando-6487888/  |  consulta: "barber scissors comb"
+mos2-01.jpg  <-  pozo-p-175-espejomano\012.jpg  |  pexels (Pexels License)  |  autor: Orhan Pergel  |  https://www.pexels.com/es-es/foto/persona-mano-sujetando-espejo-25913168/  |  consulta: "hand mirror"
+mos3-01.jpg  <-  pozo-p-175-espejo\005.jpg  |  pexels (Pexels License)  |  autor: Wolf  Art  |  https://www.pexels.com/es-es/foto/moda-arte-oscuro-textura-28122726/  |  consulta: "round mirror wall"
+mos4-01.jpg  <-  pozo-p-175-tijera\011.jpg  |  pexels (Pexels License)  |  autor: Renan Rezende  |  https://www.pexels.com/es-es/foto/hombre-manos-tijeras-peluquero-5584458/  |  consulta: "barber scissors comb"
+mos5-01.jpg  <-  pozo-p-175-corto\007.jpg  |  pexels (Pexels License)  |  autor: Michelle Leman  |  https://www.pexels.com/es-es/foto/ligero-mujer-pared-muro-6798727/  |  consulta: "short haircut woman back"
+mos6-01.jpg  <-  pozo-p-175-degradado\001.jpg  |  pexels (Pexels License)  |  autor: Ali Aliev  |  https://www.pexels.com/es-es/foto/hombre-persona-cabeza-barbero-12074386/  |  consulta: "man haircut fade back"
+
+BRUMA (bruma-pag-0N.png y bruma-osc-0N.png, 30x20): las MISMAS fotos, recortadas a 3:2, reducidas y
+recoloreadas con C:\devs\demos\hacer-bruma.ps1 (clara >= 0,68 de luminancia / oscura <= 0,05). No suman fuentes.
+    pagina: hund4-01.jpg, hund3-01.jpg, mos5-01.jpg, hund2-01.jpg, hund6-01.jpg (todas a -Sat 0.6)   |   oscuras: port-01.jpg, cita-01.jpg, banda-01.jpg
+
+MAPA: iframe de Google Maps (embed publico, sin clave). No hay imagen de mapa.

@@ -1,0 +1,22 @@
+FUENTES DE LAS IMAGENES - Ferreteria Benaval Rehecha el 16-09-2026 (presentacion antes que texto). Fotos de REFERENCIA de bancos libres: ninguna es del local; las verdaderas las tiene que mandar el negocio. 
+port-01.jpg  <-  pozo-p-218-linterna\004.jpg  |  pexels (Pexels License)  |  autor: Jan Reichelt  |  https://www.pexels.com/es-es/foto/silueta-con-linterna-en-una-escena-nocturna-con-niebla-30241532/  |  consulta: "flashlight dark"
+banda-01.jpg  <-  pozo-p-218-casa\008.jpg (recortada: sin el 27 % derecho, donde hay un balde con letras)  |  pexels (Pexels License)  |  autor: Gwimo C  |  https://www.pexels.com/es-es/foto/encantadora-casa-de-texas-iluminada-por-la-noche-35102787/  |  consulta: "house at night"
+cita-01.jpg  <-  pozo-p-218-casa\006.jpg  |  pexels (Pexels License)  |  autor: Erik Mclean  |  https://www.pexels.com/es-es/foto/ligero-noche-calle-oscuro-12689737/  |  consulta: "house at night"
+hund1-01.jpg  <-  pozo-p-218-llave\011.jpg  |  pexels (Pexels License)  |  autor: aboodi vesakaran  |  https://www.pexels.com/es-es/foto/agua-sucio-corriente-oxido-19664331/  |  consulta: "water valve"
+hund2-01.jpg  <-  pozo-p-218-manilla\008.jpg  |  pexels (Pexels License)  |  autor: Chris F  |  https://www.pexels.com/es-es/foto/blanco-y-negro-puerta-chrome-cromo-21430428/  |  consulta: "door handle"
+hund3-01.jpg  <-  pozo-p-218-gotera\012.jpg  |  pexels (Pexels License)  |  autor: Finalchoice  |  https://www.pexels.com/es-es/foto/cubo-de-plastico-negro-en-un-entorno-rustico-al-aire-libre-36176511/  |  consulta: "bucket water drip"
+hund4-01.jpg  <-  pozo-p-218-herramientas\004.jpg  |  pexels (Pexels License)  |  autor: Miguel Á. Padriñán  |  https://www.pexels.com/es-es/foto/blanco-y-negro-pared-muro-metal-16679591/  |  consulta: "hardware tools wall"
+hund5-01.jpg  <-  pozo-p-218-linterna\010.jpg  |  pexels (Pexels License)  |  autor: Steve A Johnson  |  https://www.pexels.com/es-es/foto/linterna-negra-encendida-985117/  |  consulta: "flashlight dark"
+hund6-01.jpg  <-  pozo-p-218-caja\008.jpg  |  pexels (Pexels License)  |  autor: Ivan S  |  https://www.pexels.com/es-es/foto/madera-empresario-hombre-de-negocios-hombre-4491842/  |  consulta: "toolbox"
+mos1-01.jpg  <-  pozo-p-218-vela\002.jpg  |  pexels (Pexels License)  |  autor: Rafael Minguet Delgado  |  https://www.pexels.com/es-es/foto/vela-roja-con-llama-sobre-fondo-oscuro-38905561/  |  consulta: "candle dark room"
+mos2-01.jpg  <-  pozo-p-218-farol\007.jpg  |  pexels (Pexels License)  |  autor: Justus Menke  |  https://www.pexels.com/es-es/foto/ligero-arbol-farola-noche-5213891/  |  consulta: "street lamp night"
+mos3-01.jpg  <-  pozo-p-218-herramientas\002.jpg  |  pexels (Pexels License)  |  autor: Miguel Á. Padriñán  |  https://www.pexels.com/es-es/foto/blanco-y-negro-pared-muro-herramientas-16679581/  |  consulta: "hardware tools wall"
+mos4-01.jpg  <-  pozo-p-218-llave\007.jpg  |  pexels (Pexels License)  |  autor: Alexas Fotos  |  https://www.pexels.com/es-es/foto/tuberia-plomeria-valvula-de-cierre-valvulas-de-cierre-7616004/  |  consulta: "water valve"
+mos5-01.jpg  <-  pozo-p-218-vela\012.jpg  |  pexels (Pexels License)  |  autor: 萍 罗  |  https://www.pexels.com/es-es/foto/noche-oscuro-lamparas-negro-12999485/  |  consulta: "candle dark room"
+mos6-01.jpg  <-  pozo-p-218-casa\009.jpg  |  pexels (Pexels License)  |  autor: Aneesh Prodduturu  |  https://www.pexels.com/es-es/foto/madera-ligero-casas-noche-18667511/  |  consulta: "house at night"
+
+BRUMA (bruma-pag-0N.png y bruma-osc-0N.png, 30x20): las MISMAS fotos, recortadas a 3:2, reducidas y
+recoloreadas con C:\devs\demos\hacer-bruma.ps1 (clara >= 0,68 de luminancia / oscura <= 0,05). No suman fuentes.
+    pagina: hund1-01.jpg, mos4-01.jpg, port-01.jpg, hund6-01.jpg, mos6-01.jpg (a -Sat 0.8, sólo fotos cálidas: la luz de linterna)   |   oscuras: hund1-01.jpg, mos4-01.jpg, hund6-01.jpg
+
+MAPA: iframe de Google Maps (embed publico, sin clave). No hay imagen de mapa.

@@ -1,0 +1,22 @@
+FUENTES DE LAS IMAGENES - MobiVetChile Rehecha el 18-09-2026 (presentacion antes que texto). Fotos de REFERENCIA de bancos libres: ninguna es del local; las verdaderas las tiene que mandar el negocio. 
+port-01.jpg  <-  pozo-p-163-gatosofa\007.jpg  |  pexels (Pexels License)  |  autor: Ivett M  |  https://www.pexels.com/es-es/foto/gato-negro-y-blanco-relajado-en-sofa-amarillo-38627786/  |  consulta: "cat sofa home pexels"
+banda-01.jpg  <-  pozo-p-163-gatoventana\011.jpg  |  pexels (Pexels License)  |  autor: Amar  Preciado  |  https://www.pexels.com/es-es/foto/gato-curioso-mirando-a-traves-de-una-cerca-al-aire-libre-29539659/  |  consulta: "cat window home pexels"
+cita-01.jpg  <-  pozo-p-163-lampara\009.jpg  |  pexels (Pexels License)  |  autor: K  |  https://www.pexels.com/es-es/foto/lampara-de-mesa-encendida-2796104/  |  consulta: "lamp living room night pexels"
+hund1-01.jpg  <-  pozo-p-163-timbre\011.jpg  |  pexels (Pexels License)  |  autor: Kindel Media  |  https://www.pexels.com/es-es/foto/persona-sosteniendo-la-perilla-de-la-puerta-de-acero-gris-8550100/  |  consulta: "doorbell close up pexels"
+hund2-01.jpg  <-  pozo-p-163-pata\008.jpg  |  pexels (Pexels License)  |  autor: Anastasia Lashkevich  |  https://www.pexels.com/es-es/foto/mano-amigos-animal-perro-18851068/  |  consulta: "dog paw hand home pexels"
+hund3-01.jpg  <-  pozo-p-163-varias\006.jpg  |  pexels (Pexels License)  |  autor: FOX ^.ᆽ.^= ∫  |  https://www.pexels.com/es-es/foto/dos-gatos-blancos-y-negros-acostado-sobre-una-superficie-de-madera-marron-1265618/  |  consulta: "two cats home pexels"
+hund4-01.jpg  <-  pozo-p-163-pata\004.jpg  |  pexels (Pexels License)  |  autor: juliane Monari  |  https://www.pexels.com/es-es/foto/persona-mano-perro-mascota-20195994/  |  consulta: "dog paw hand home pexels"
+hund5-01.jpg  <-  pozo-p-163-maletin\007.jpg  |  pexels (Pexels License)  |  autor: Thirdman  |  https://www.pexels.com/es-es/foto/persona-sosteniendo-cable-revestido-de-azul-5327647/  |  consulta: "stethoscope bag pexels"
+hund6-01.jpg  <-  pozo-p-163-puerta\002.jpg  |  pexels (Pexels License)  |  autor: Erik Mclean  |  https://www.pexels.com/es-es/foto/ligero-casas-luces-lamparas-9890741/  |  consulta: "front door house evening pexels"
+mos1-01.jpg  <-  pozo-p-163-perromayor\003.jpg  |  pexels (Pexels License)  |  autor: Santiago Sauceda González  |  https://www.pexels.com/es-es/foto/perro-mascota-suelo-dormido-19962112/  |  consulta: "old dog resting floor pexels"
+mos2-01.jpg  <-  pozo-p-163-gatoventana\012.jpg  |  pexels (Pexels License)  |  autor: Alper Kagan AVCI  |  https://www.pexels.com/es-es/foto/gato-atigrado-mirando-por-la-ventana-en-una-luz-tenue-38005079/  |  consulta: "cat window home pexels"
+mos3-01.jpg  <-  pozo-p-163-cama\004.jpg  |  pexels (Pexels License)  |  autor: Connor Scott McManus  |  https://www.pexels.com/es-es/foto/animal-perro-mascota-mono-11794570/  |  consulta: "dog bed home pexels"
+mos4-01.jpg  <-  pozo-p-163-varias\009.jpg  |  pexels (Pexels License)  |  autor: Lensloji  |  https://www.pexels.com/es-es/foto/mono-mascotas-cerca-valla-18469323/  |  consulta: "two cats home pexels"
+mos5-01.jpg  <-  pozo-p-163-lampara\005.jpg  |  pexels (Pexels License)  |  autor: saw sing  |  https://www.pexels.com/es-es/foto/ligero-lampara-habitacion-esquina-19473771/  |  consulta: "lamp living room night pexels"
+mos6-01.jpg  <-  pozo-p-163-perromayor\009.jpg  |  pexels (Pexels License)  |  autor: Bianca Beltrán  |  https://www.pexels.com/es-es/foto/retrato-de-un-chihuahua-negro-15794955/  |  consulta: "old dog resting floor pexels"
+
+BRUMA (bruma-pag-0N.png y bruma-osc-0N.png, 30x20): las MISMAS fotos, recortadas a 3:2, reducidas y
+recoloreadas con C:\devs\demos\hacer-bruma.ps1 (clara >= 0,68 de luminancia / oscura <= 0,05). No suman fuentes.
+    pagina: port-01.jpg, hund3-01.jpg, hund4-01.jpg, mos5-01.jpg, hund2-01.jpg (todas a -Sat 0.6)   |   oscuras: port-01.jpg, banda-01.jpg, hund6-01.jpg
+
+MAPA: iframe de Google Maps (embed publico, sin clave). No hay imagen de mapa.

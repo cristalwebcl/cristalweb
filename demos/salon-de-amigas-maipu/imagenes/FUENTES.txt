@@ -1,0 +1,22 @@
+FUENTES DE LAS IMAGENES - Salon de Amigas Rehecha el 16-09-2026 (presentacion antes que texto). Fotos de REFERENCIA de bancos libres: ninguna es del local; las verdaderas las tiene que mandar el negocio. 
+port-01.jpg  <-  pozo-p-sa-unas\005.jpg  |  pexels (Pexels License)  |  autor: cottonbro studio  |  https://www.pexels.com/es-es/foto/manos-mano-negocio-profesional-3997383/  |  consulta: "manicure red polish"
+banda-01.jpg  <-  pozo-p-sa-unas\010.jpg  |  pexels (Pexels License)  |  autor: Artem Podrez  |  https://www.pexels.com/es-es/foto/manos-trabajando-negocio-belleza-4783335/  |  consulta: "manicure red polish"
+cita-01.jpg  <-  pozo-p-sa-silla\012.jpg  |  pexels (Pexels License)  |  autor: cottonbro studio  |  https://www.pexels.com/es-es/foto/reflejo-reflexion-peinado-preparacion-3993137/  |  consulta: "salon chairs mirror"
+hund1-01.jpg  <-  pozo-p-sa-esmalte\004.jpg  |  pexels (Pexels License)  |  autor: Sofía  Falco  |  https://www.pexels.com/es-es/foto/exhibicion-de-esmaltes-de-unas-coloridos-en-el-estante-32318216/  |  consulta: "nail polish bottles row"
+hund2-01.jpg  <-  pozo-p-sa-color\009.jpg  |  pexels (Pexels License)  |  autor: John Diez  |  https://www.pexels.com/es-es/foto/mujer-creativo-industria-pincel-7388912/  |  consulta: "hair color brush bowl"
+hund3-01.jpg  <-  pozo-p-sa-pestana\011.jpg  |  pexels (Pexels License)  |  autor: Nataliya Vaitkevich  |  https://www.pexels.com/es-es/foto/moda-manos-gente-mujer-5128086/  |  consulta: "eyelash tweezers tray"
+hund4-01.jpg  <-  pozo-p-sa-esmalte\006.jpg  |  pexels (Pexels License)  |  autor: April Choitz  |  https://www.pexels.com/es-es/foto/botellas-de-esmalte-de-unas-coloridas-en-superficie-blanca-29100941/  |  consulta: "nail polish bottles row"
+hund5-01.jpg  <-  pozo-p-sa-silla\001.jpg  |  pexels (Pexels License)  |  autor: Pablo Fernandez  |  https://www.pexels.com/es-es/foto/interior-gotico-con-silla-roja-y-arreglo-floral-39375993/  |  consulta: "salon chairs mirror"
+hund6-01.jpg  <-  pozo-p-sa-silla\006.jpg  |  pexels (Pexels License)  |  autor: Andy Coffie  |  https://www.pexels.com/es-es/foto/dentro-cuero-piel-adentro-8832912/  |  consulta: "salon chairs mirror"
+mos1-01.jpg  <-  pozo-p-sa-unas\002.jpg  |  pexels (Pexels License)  |  autor: cottonbro studio  |  https://www.pexels.com/es-es/foto/manos-mano-mesa-colorido-3997388/  |  consulta: "manicure red polish"
+mos2-01.jpg  <-  pozo-p-sa-esmalte\001.jpg  |  pexels (Pexels License)  |  autor: DS stories  |  https://www.pexels.com/es-es/foto/modelo-estampado-colores-liquido-7256083/  |  consulta: "nail polish bottles row"
+mos3-01.jpg  <-  pozo-p-sa-pestana\002.jpg  |  pexels (Pexels License)  |  autor: Nataliya Vaitkevich  |  https://www.pexels.com/es-es/foto/plato-naturaleza-muerta-vista-superior-pinzas-5128321/  |  consulta: "eyelash tweezers tray"
+mos4-01.jpg  <-  pozo-p-sa-unas\006.jpg  |  pexels (Pexels License)  |  autor: cottonbro studio  |  https://www.pexels.com/es-es/foto/mujer-mano-telefono-inteligente-teclear-6963587/  |  consulta: "manicure red polish"
+mos5-01.jpg  <-  pozo-p-sa-esmalte\007.jpg  |  pexels (Pexels License)  |  autor: April Choitz  |  https://www.pexels.com/es-es/foto/botellas-de-esmalte-coloridas-sobre-fondo-minimalista-29100882/  |  consulta: "nail polish bottles row"
+mos6-01.jpg  <-  pozo-p-sa-pestana\007.jpg  |  pexels (Pexels License)  |  autor: Andrii Kushniruk  |  https://www.pexels.com/es-es/foto/blanco-y-negro-instrumentos-dentales-enfoque-selectivo-tiro-vertical-15613756/  |  consulta: "eyelash tweezers tray"
+
+BRUMA (bruma-pag-0N.png y bruma-osc-0N.png, 30x20): las MISMAS fotos, recortadas a 3:2, reducidas y
+recoloreadas con C:\devs\demos\hacer-bruma.ps1 (clara >= 0,68 de luminancia / oscura <= 0,05). No suman fuentes.
+    pagina: hund1-01.jpg, mos2-01.jpg, hund4-01.jpg, mos5-01.jpg, mos3-01.jpg   |   oscuras: port-01.jpg, cita-01.jpg, hund5-01.jpg
+
+MAPA: iframe de Google Maps (embed publico, sin clave). No hay imagen de mapa.

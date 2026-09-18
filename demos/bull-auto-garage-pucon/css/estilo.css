@@ -547,3 +547,14 @@ main { position: relative; isolation: isolate; }
   .flota { transition: opacity .28s ease; }
   .flota:hover, .flota:focus-visible, .js .flota--arriba { transform: none; }
 }
+
+/* ═══════════════════════════════════════════════════════════════════
+   SIN DIFUMINADO ABAJO (16-09-2026, pedido de Yordy: «no queda muy bien»)
+   Esta demo se armó con una base.css anterior; en vez de rearmarla, se
+   anulan acá los dos fundidos: la portada y las fotos de las fichas
+   terminan en un borde limpio. Especificidad mayor que la regla vieja,
+   también dentro de su @media.
+   ═══════════════════════════════════════════════════════════════════ */
+.portada .portada__foto { -webkit-mask-image: none; mask-image: none; }
+.hund img[src], .hund picture img { -webkit-mask-image: none; mask-image: none; }
+.hund .hund__txt { margin-top: 0; padding-top: .95rem; }

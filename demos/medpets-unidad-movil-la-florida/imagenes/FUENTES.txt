@@ -1,0 +1,22 @@
+FUENTES DE LAS IMAGENES - Unidad Móvil Veterinaria Medpets Rehecha el 17-09-2026 (presentacion antes que texto). Fotos de REFERENCIA de bancos libres: ninguna es del local; las verdaderas las tiene que mandar el negocio. 
+port-01.jpg  <-  pozo-p-160-sofa\008.jpg  |  pexels (Pexels License)  |  autor: PubPro  |  https://www.pexels.com/es-es/foto/retrato-de-perro-en-el-sofa-33521583/  |  consulta: "dog on sofa living room"
+banda-01.jpg  <-  pozo-p-160-van\009.jpg  |  pexels (Pexels License)  |  autor: Mathias Reding  |  https://www.pexels.com/es-es/foto/carretera-vehiculo-automovil-estacionado-10874956/  |  consulta: "white van parked street"
+cita-01.jpg  <-  pozo-p-160-estetoscopio\003.jpg  |  pexels (Pexels License)  |  autor: Etatics Inc.  |  https://www.pexels.com/es-es/foto/equipo-estetoscopio-instrumento-medico-de-cerca-12585207/  |  consulta: "stethoscope close up"
+hund1-01.jpg  <-  pozo-p-160-maletin\005.jpg  |  pexels (Pexels License)  |  autor: Mikhail Nilov  |  https://www.pexels.com/es-es/foto/naranja-bolso-cuidado-de-la-salud-sanidad-27914830/  |  consulta: "medical bag stethoscope"
+hund2-01.jpg  <-  pozo-p-160-vacuna\003.jpg  |  pexels (Pexels License)  |  autor: Thirdman  |  https://www.pexels.com/es-es/foto/vacuna-para-el-covid-19-5922100/  |  consulta: "vaccine syringe vial"
+hund3-01.jpg  <-  pozo-p-160-pata\001.jpg  |  pexels (Pexels License)  |  autor: Heber Vazquez  |  https://www.pexels.com/es-es/foto/mujer-mano-animal-perro-18781242/  |  consulta: "dog paw hand"
+hund4-01.jpg  <-  pozo-p-160-guantes\010.jpg  |  pexels (Pexels License)  |  autor: freestocks.org  |  https://www.pexels.com/es-es/foto/manos-animal-perro-mascota-4074727/  |  consulta: "veterinary gloves"
+hund5-01.jpg  <-  pozo-p-160-estetoscopio\006.jpg  |  pexels (Pexels License)  |  autor: Terrance Barksdale  |  https://www.pexels.com/es-es/foto/profundidad-de-campo-estetoscopio-enfoque-selectivo-equipo-medico-6398985/  |  consulta: "stethoscope close up"
+hund6-01.jpg  <-  pozo-p-160-transportin\004.jpg  |  pexels (Pexels License)  |  autor: Ludovic Delot  |  https://www.pexels.com/es-es/foto/gato-jengibre-acogedor-relajandose-en-una-canasta-31440972/  |  consulta: "cat carrier at home"
+mos1-01.jpg  <-  pozo-p-160-sofa\012.jpg  |  pexels (Pexels License)  |  autor: cottonbro studio  |  https://www.pexels.com/es-es/foto/perro-de-pelo-corto-marron-y-blanco-sentado-en-un-sofa-marron-5998708/  |  consulta: "dog on sofa living room"
+mos2-01.jpg  <-  pozo-p-160-gato\003.jpg  |  pexels (Pexels License)  |  autor: Mathias Reding  |  https://www.pexels.com/es-es/foto/mujer-mano-animal-mascota-18188793/  |  consulta: "vet examining cat"
+mos3-01.jpg  <-  pozo-p-160-puerta\008.jpg  |  pexels (Pexels License)  |  autor: Robert Floccari  |  https://www.pexels.com/es-es/foto/perro-mascota-esperando-puerta-5672282/  |  consulta: "dog waiting at door"
+mos4-01.jpg  <-  pozo-p-160-pata\006.jpg  |  pexels (Pexels License)  |  autor: Mau Torres V  |  https://www.pexels.com/es-es/foto/primer-plano-de-las-patas-del-perro-7441295/  |  consulta: "dog paw hand"
+mos5-01.jpg  <-  pozo-p-160-estetoscopio\001.jpg  |  pexels (Pexels License)  |  autor: Paloma Gil  |  https://www.pexels.com/es-es/foto/medicina-cuidado-de-la-salud-sanidad-estetoscopio-16204178/  |  consulta: "stethoscope close up"
+mos6-01.jpg  <-  pozo-p-160-van\007.jpg  |  pexels (Pexels License)  |  autor: Griffin Wooldridge  |  https://www.pexels.com/es-es/foto/furgoneta-antigua-en-un-barrio-suburbano-30346769/  |  consulta: "white van parked street"
+
+BRUMA (bruma-pag-0N.png y bruma-osc-0N.png, 30x20): las MISMAS fotos, recortadas a 3:2, reducidas y
+recoloreadas con C:\devs\demos\hacer-bruma.ps1 (clara >= 0,68 de luminancia / oscura <= 0,05). No suman fuentes.
+    pagina: port-01.jpg, cita-01.jpg, hund1-01.jpg, mos1-01.jpg, hund6-01.jpg (todas a -Sat 0.6)   |   oscuras: port-01.jpg, hund6-01.jpg, mos1-01.jpg
+
+MAPA: iframe de Google Maps (embed publico, sin clave). No hay imagen de mapa.

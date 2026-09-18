@@ -1,0 +1,22 @@
+FUENTES DE LAS IMAGENES - Mecanico de Motos a Domicilio Rehecha el 16-09-2026 (presentacion antes que texto). Fotos de REFERENCIA de bancos libres: ninguna es del local; las verdaderas las tiene que mandar el negocio. 
+port-01.jpg  <-  pozo-p-196-cadena\005.jpg  |  pexels (Pexels License)  |  autor: Kenneth  Christopher  |  https://www.pexels.com/es-es/foto/acercamiento-de-la-rueda-trasera-de-motocicleta-en-bengaluru-38202543/  |  consulta: "motorcycle chain sprocket close up pxhere"
+banda-01.jpg  <-  pozo-p-196-neumatico\009.jpg  |  pexels (Pexels License)  |  autor: Karan Mridha  |  https://www.pexels.com/es-es/foto/primer-plano-de-la-rueda-trasera-de-una-motocicleta-con-freno-de-disco-32683778/  |  consulta: "motorcycle tire tread close up pexels"
+cita-01.jpg  <-  pozo-p-196-taller\011.jpg  |  pexels (Pexels License)  |  autor: Andrea Piacquadio  |  https://www.pexels.com/es-es/foto/persona-en-camisa-de-manga-larga-negra-con-herramienta-de-metal-gris-3822802/  |  consulta: "mechanic tools motorcycle workshop pexels"
+hund1-01.jpg  <-  pozo-p-196-cadena\011.jpg  |  pexels (Pexels License)  |  autor: photogramary  |  https://www.pexels.com/es-es/foto/primer-plano-de-la-rueda-posterior-y-cadena-de-una-motocicleta-34240236/  |  consulta: "motorcycle chain sprocket close up pxhere"
+hund2-01.jpg  <-  pozo-p-196-freno\006.jpg  |  pexels (Pexels License)  |  autor: Borta  |  https://www.pexels.com/es-es/foto/acercamiento-de-un-disco-de-freno-de-motocicleta-38300769/  |  consulta: "motorcycle brake disc close up pexels"
+hund3-01.jpg  <-  pozo-p-196-luz\004.jpg  |  pexels (Pexels License)  |  autor: Gabriel Groza  |  https://www.pexels.com/es-es/foto/primer-plano-de-un-faro-de-motocicleta-con-adorno-de-calavera-30991437/  |  consulta: "motorcycle headlight close up pexels"
+hund4-01.jpg  <-  pozo-p-196-neumatico\003.jpg  |  pexels (Pexels License)  |  autor: Arbiansyah Sulud  |  https://www.pexels.com/es-es/foto/neumatico-cansar-moto-rueda-25753520/  |  consulta: "motorcycle tire tread close up pexels"
+hund5-01.jpg  <-  pozo-p-196-motor\003.jpg  |  pexels (Pexels License)  |  autor: Rachel Claire  |  https://www.pexels.com/es-es/foto/ciudad-carretera-calle-metal-4577448/  |  consulta: "motorcycle engine detail pexels"
+hund6-01.jpg  <-  pozo-p-196-llaves\009.jpg  |  pexels (Pexels License)  |  autor: Terrance Barksdale  |  https://www.pexels.com/es-es/foto/chrome-cromo-hierro-plancha-8335679/  |  consulta: "wrench socket tools pexels"
+mos1-01.jpg  <-  pozo-p-196-llaves\012.jpg  |  pexels (Pexels License)  |  autor: cottonbro studio  |  https://www.pexels.com/es-es/foto/herramientas-arreglar-reparar-llave-inglesa-4480533/  |  consulta: "wrench socket tools pexels"
+mos2-01.jpg  <-  pozo-p-196-cadena\008.jpg  |  pexels (Pexels License)  |  autor: Sight See-RR  |  https://www.pexels.com/es-es/foto/primer-plano-del-engranaje-de-la-cadena-de-una-maquina-industrial-31764099/  |  consulta: "motorcycle chain sprocket close up pxhere"
+mos3-01.jpg  <-  pozo-p-196-motor\011.jpg  |  pexels (Pexels License)  |  autor: Abdulvahap Demir  |  https://www.pexels.com/es-es/foto/vehiculo-poder-energia-moto-24201384/  |  consulta: "motorcycle engine detail pexels"
+mos4-01.jpg  <-  pozo-p-196-neumatico\012.jpg  |  pexels (Pexels License)  |  autor: photogramary  |  https://www.pexels.com/es-es/foto/primer-plano-de-la-rueda-posterior-y-cadena-de-una-motocicleta-34240236/  |  consulta: "motorcycle tire tread close up pexels"
+mos5-01.jpg  <-  pozo-p-196-llaves\010.jpg  |  pexels (Pexels License)  |  autor: Terrance Barksdale  |  https://www.pexels.com/es-es/foto/chrome-cromo-hierro-plancha-8335680/  |  consulta: "wrench socket tools pexels"
+mos6-01.jpg  <-  pozo-p-196-cadena\005.jpg  |  pexels (Pexels License)  |  autor: Kenneth  Christopher  |  https://www.pexels.com/es-es/foto/acercamiento-de-la-rueda-trasera-de-motocicleta-en-bengaluru-38202543/  |  consulta: "motorcycle chain sprocket close up pxhere"
+
+BRUMA (bruma-pag-0N.png y bruma-osc-0N.png, 30x20): las MISMAS fotos, recortadas a 3:2, reducidas y
+recoloreadas con C:\devs\demos\hacer-bruma.ps1 (clara >= 0,68 de luminancia / oscura <= 0,05). No suman fuentes.
+    pagina: port-01.jpg, banda-01.jpg, cita-01.jpg, hund1-01.jpg, mos3-01.jpg   |   oscuras: port-01.jpg, mos3-01.jpg, cita-01.jpg
+
+MAPA: iframe de Google Maps (embed publico, sin clave). No hay imagen de mapa.

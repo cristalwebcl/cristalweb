@@ -1,0 +1,22 @@
+FUENTES DE LAS IMAGENES - City Point Maipu Rehecha el 16-09-2026 (presentacion antes que texto). Fotos de REFERENCIA de bancos libres: ninguna es del local; las verdaderas las tiene que mandar el negocio. 
+port-01.jpg  <-  pozo-p-cp-local\004.jpg  |  pexels (Pexels License)  |  autor: Faruk Tokluoğlu  |  https://www.pexels.com/es-es/foto/oscuro-salida-edificio-construccion-7216016/  |  consulta: "empty retail space"
+banda-01.jpg  <-  pozo-p-cp-pasillo\004.jpg  |  pexels (Pexels License)  |  autor: Votso Sothu  |  https://www.pexels.com/es-es/foto/arquitectura-20777349/  |  consulta: "shopping mall corridor"
+cita-01.jpg  <-  pozo-p-cp-pasillo\001.jpg  |  pexels (Pexels License)  |  autor: Sóc Năng Động  |  https://www.pexels.com/es-es/foto/pasillo-de-centro-comercial-vacio-con-iluminacion-brillante-32094984/  |  consulta: "shopping mall corridor"
+hund1-01.jpg  <-  pozo-p-cp-pasillo\011.jpg  |  pexels (Pexels License)  |  autor: Tom Mathew  |  https://www.pexels.com/es-es/foto/corredor-soleado-en-la-arquitectura-moderna-de-dubai-37984363/  |  consulta: "shopping mall corridor"
+hund2-01.jpg  <-  pozo-p-cp-local\007.png  |  pexels (Pexels License)  |  autor: Andre Moura  |  https://www.pexels.com/es-es/foto/puertas-de-vidrio-con-marco-blanco-con-piso-de-baldosas-blancas-3726902/  |  consulta: "empty retail space"
+hund3-01.jpg  <-  pozo-p-cp-escalera\009.jpg  |  pexels (Pexels License)  |  autor: Eileen Li  |  https://www.pexels.com/es-es/foto/escalera-mecanica-vacia-con-techo-de-cristal-20296871/  |  consulta: "escalator interior"
+hund4-01.jpg  <-  pozo-p-cp-banca\010.jpg  |  pexels (Pexels License)  |  autor: Jan van der Wolf  |  https://www.pexels.com/es-es/foto/banco-largo-mueble-mobiliario-9997283/  |  consulta: "bench indoor public"
+hund5-01.jpg  <-  pozo-p-cp-senal\004.jpg  |  pexels (Pexels License)  |  autor: Samuel Figueroa  |  https://www.pexels.com/es-es/foto/flecha-negra-sobre-una-pared-pintada-de-amarillo-6833580/  |  consulta: "arrow sign direction"
+hund6-01.jpg  <-  pozo-p-cp-local\012.jpg  |  pexels (Pexels License)  |  autor: Vitor Aranda  |  https://www.pexels.com/es-es/foto/habitacion-vacia-1784543/  |  consulta: "empty retail space"
+mos1-01.jpg  <-  pozo-p-cp-plano\011.jpg  |  pexels (Pexels License)  |  autor: Ivan S  |  https://www.pexels.com/es-es/foto/diseno-creatividad-papel-papeleo-4458196/  |  consulta: "floor plan drawing"
+mos2-01.jpg  <-  pozo-p-cp-senal\012.jpg  |  pexels (Pexels License)  |  autor: Raychel Sanner  |  https://www.pexels.com/es-es/foto/senal-de-flecha-en-un-terreno-esteril-4806506/  |  consulta: "arrow sign direction"
+mos3-01.jpg  <-  pozo-p-cp-escalera\012.jpg  |  pexels (Pexels License)  |  autor: Lars H Knudsen  |  https://www.pexels.com/es-es/foto/luces-escaleras-mecanicas-perspectiva-pasamanos-7172013/  |  consulta: "escalator interior"
+mos4-01.jpg  <-  pozo-p-cp-banca\005.jpg  |  pexels (Pexels License)  |  autor: Paolo Coro'  |  https://www.pexels.com/es-es/foto/banco-blanco-y-negro-azulejos-baldosas-8835719/  |  consulta: "bench indoor public"
+mos5-01.jpg  <-  pozo-p-cp-pasillo\005.jpg  |  pexels (Pexels License)  |  autor: Adam Borkowski  |  https://www.pexels.com/es-es/foto/edificio-arquitectura-techo-sillas-5068333/  |  consulta: "shopping mall corridor"
+mos6-01.jpg  <-  pozo-p-cp-pasillo\012.jpg  |  pexels (Pexels License)  |  autor: ABNER LOBO  |  https://www.pexels.com/es-es/foto/luces-vaso-cristal-vidrio-15128137/  |  consulta: "shopping mall corridor"
+
+BRUMA (bruma-pag-0N.png y bruma-osc-0N.png, 30x20): las MISMAS fotos, recortadas a 3:2, reducidas y
+recoloreadas con C:\devs\demos\hacer-bruma.ps1 (clara >= 0,68 de luminancia / oscura <= 0,05). No suman fuentes.
+    pagina: hund3-01.jpg, hund4-01.jpg, mos1-01.jpg, hund5-01.jpg, mos4-01.jpg   |   oscuras: port-01.jpg, cita-01.jpg, hund6-01.jpg
+
+MAPA: iframe de Google Maps (embed publico, sin clave). No hay imagen de mapa.

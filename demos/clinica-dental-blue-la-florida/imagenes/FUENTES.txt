@@ -1,0 +1,22 @@
+FUENTES DE LAS IMAGENES - Clínica Dental Blue Rehecha el 17-09-2026 (presentacion antes que texto). Fotos de REFERENCIA de bancos libres: ninguna es del local; las verdaderas las tiene que mandar el negocio. 
+port-01.jpg  <-  pozo-p-164-mano\004.jpg  |  pexels (Pexels License)  |  autor: Tiger Lily  |  https://www.pexels.com/es-es/foto/cogidos-de-la-mano-de-la-mano-enfoque-selectivo-de-cerca-8260575/  |  consulta: "hand holding hand reassuring"
+banda-01.jpg  <-  pozo-p-164-sillon\007.jpg  |  pexels (Pexels License)  |  autor: Pavel Danilyuk  |  https://www.pexels.com/es-es/foto/azul-asiento-tiro-vertical-motor-dental-6809652/  |  consulta: "dental chair clinic blue"
+cita-01.jpg  <-  pozo-p-164-espera\010.jpg  |  pexels (Pexels License)  |  autor: Will Chen  |  https://www.pexels.com/es-es/foto/pasillo-moderno-con-luz-natural-y-asientos-35839111/  |  consulta: "clinic waiting room plants light"
+hund1-01.jpg  <-  pozo-p-164-mano\006.jpg  |  pexels (Pexels License)  |  autor: Tiger Lily  |  https://www.pexels.com/es-es/foto/manos-juntos-cogidos-de-la-mano-de-la-mano-8260576/  |  consulta: "hand holding hand reassuring"
+hund2-01.jpg  <-  pozo-p-164-cepillo\010.jpg  |  pexels (Pexels License)  |  autor: Tara Winstead  |  https://www.pexels.com/es-es/foto/naturaleza-muerta-profundidad-de-campo-espacio-para-texto-copy-space-6690942/  |  consulta: "toothbrush minimal white"
+hund3-01.jpg  <-  pozo-p-164-espejo\008.jpg  |  pexels (Pexels License)  |  autor: Anna Astakhova  |  https://www.pexels.com/es-es/foto/estoma-12374351/  |  consulta: "dental mirror close up"
+hund4-01.jpg  <-  pozo-p-164-sillon\010.jpg  |  pexels (Pexels License)  |  autor: . MM Dental .  |  https://www.pexels.com/es-es/foto/fotografia-en-escala-de-grises-de-un-sillon-dental-en-una-clinica-dental-9062527/  |  consulta: "dental chair clinic blue"
+hund5-01.jpg  <-  pozo-p-164-cepillo\011.jpg  |  pexels (Pexels License)  |  autor: Tara Winstead  |  https://www.pexels.com/es-es/foto/naturaleza-muerta-vista-superior-espacio-para-texto-copy-space-6690824/  |  consulta: "toothbrush minimal white"
+hund6-01.jpg  <-  pozo-p-164-recepcion\007.jpg  |  pexels (Pexels License)  |  autor: Los Muertos Crew  |  https://www.pexels.com/es-es/foto/sala-de-espera-sillas-clinica-hospital-8459996/  |  consulta: "blue clinic reception desk"
+mos1-01.jpg  <-  pozo-p-164-reloj\010.jpg  |  pexels (Pexels License)  |  autor: Cats Coming  |  https://www.pexels.com/es-es/foto/reloj-de-pared-a-las-5-50-707582/  |  consulta: "clock on wall minimal"
+mos2-01.jpg  <-  pozo-p-164-vaso\008.jpg  |  pexels (Pexels License)  |  autor: Engin Akyurt  |  https://www.pexels.com/es-es/foto/agua-vaso-cristal-vidrio-10965842/  |  consulta: "glass of water clinic"
+mos3-01.jpg  <-  pozo-p-164-espejo\003.jpg  |  pexels (Pexels License)  |  autor: Andrii Kushniruk  |  https://www.pexels.com/es-es/foto/metal-chrome-cromo-naturaleza-muerta-15613765/  |  consulta: "dental mirror close up"
+mos4-01.jpg  <-  pozo-p-164-pasillo\003.jpg  |  pexels (Pexels License)  |  autor: DOAN THANH BINH  |  https://www.pexels.com/es-es/foto/pasillo-curvo-moderno-con-suelo-de-marmol-36887533/  |  consulta: "clinic corridor natural light"
+mos5-01.jpg  <-  pozo-p-164-sillon\006.jpg  |  pexels (Pexels License)  |  autor: Daniel Frank  |  https://www.pexels.com/es-es/foto/equipo-dental-blanco-cerca-de-la-pared-305567/  |  consulta: "dental chair clinic blue"
+mos6-01.jpg  <-  pozo-p-164-espera\005.jpg  |  pexels (Pexels License)  |  autor: Ksenia Chernaya  |  https://www.pexels.com/es-es/foto/sillas-negras-bajo-la-lampara-6999652/  |  consulta: "clinic waiting room plants light"
+
+BRUMA (bruma-pag-0N.png y bruma-osc-0N.png, 30x20): las MISMAS fotos, recortadas a 3:2, reducidas y
+recoloreadas con C:\devs\demos\hacer-bruma.ps1 (clara >= 0,68 de luminancia / oscura <= 0,05). No suman fuentes.
+    pagina: banda-01.jpg, hund3-01.jpg, mos5-01.jpg, hund6-01.jpg, mos1-01.jpg (todas a -Sat 0.6)   |   oscuras: port-01.jpg, banda-01.jpg, hund1-01.jpg
+
+MAPA: iframe de Google Maps (embed publico, sin clave). No hay imagen de mapa.

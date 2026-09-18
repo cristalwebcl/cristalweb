@@ -1,0 +1,22 @@
+FUENTES DE LAS IMAGENES - Piero Peluqueria Rehecha el 16-09-2026 (presentacion antes que texto). Fotos de REFERENCIA de bancos libres: ninguna es del local; las verdaderas las tiene que mandar el negocio. 
+port-01.jpg  <-  pozo-p-pi-nuca\004.jpg  |  pexels (Pexels License)  |  autor: Jari Lobo  |  https://www.pexels.com/es-es/foto/corte-cortando-tijeras-pelo-oscuro-15659458/  |  consulta: "hair cutting back view"
+hund1-01.jpg  <-  pozo-p-pi-nuca\002.jpg  |  pexels (Pexels License)  |  autor: Antoni Shkraba  |  https://www.pexels.com/es-es/foto/hombre-persona-corte-de-pelo-de-espaldas-4625626/  |  consulta: "hair cutting back view"
+hund2-01.jpg  <-  pozo-p-pi-rociador\005.jpg  |  pexels (Pexels License)  |  autor: cottonbro studio  |  https://www.pexels.com/es-es/foto/fotografia-de-primer-plano-de-una-botella-rociadora-transparente-4107113/  |  consulta: "spray bottle water"
+hund3-01.jpg  <-  pozo-p-pi-maquina\010.jpg  |  pexels (Pexels License)  |  autor: Vitaly Gorbachev  |  https://www.pexels.com/es-es/foto/blanco-y-negro-corte-de-pelo-aseo-escala-de-grises-10775070/  |  consulta: "hair clipper"
+hund4-01.jpg  <-  pozo-p-pi-ficha\007.jpg  |  pexels (Pexels License)  |  autor: https://kaboompics.com/  |  https://www.pexels.com/es-es/foto/textura-apilados-amontonados-paginas-4038653/  |  consulta: "index cards"
+hund5-01.jpg  <-  pozo-p-pi-espejo\002.jpg  |  pexels (Pexels License)  |  autor: Luis Quintero  |  https://www.pexels.com/es-es/foto/hombre-mano-peinado-espejo-17553848/  |  consulta: "barber mirror"
+hund6-01.jpg  <-  pozo-p-pi-nuca\008.jpg  |  pexels (Pexels License)  |  autor: Alex Urezkov  |  https://www.pexels.com/es-es/foto/hombre-corte-cortando-profundidad-de-campo-9992821/  |  consulta: "hair cutting back view"
+banda-01.jpg  <-  pozo-p-pi-maquina\002.jpg  |  pexels (Pexels License)  |  autor: RDNE Stock project  |  https://www.pexels.com/es-es/foto/herramientas-tijeras-maquinilla-de-afeitar-cuchilla-de-afeitar-7697712/  |  consulta: "hair clipper"
+cita-01.jpg  <-  pozo-p-pi-libreta\005.jpg  |  pexels (Pexels License)  |  autor: Negative Space  |  https://www.pexels.com/es-es/foto/boligrafo-cuaderno-macro-169576/  |  consulta: "notebook pen desk"
+mos1-01.jpg  <-  pozo-p-pi-libreta\003.jpg  |  pexels (Pexels License)  |  autor: Negative Space  |  https://www.pexels.com/es-es/foto/boligrafo-cuaderno-97076/  |  consulta: "notebook pen desk"
+mos2-01.jpg  <-  pozo-p-pi-ficha\011.jpg  |  pexels (Pexels License)  |  autor: Antoni Shkraba  |  https://www.pexels.com/es-es/foto/naturaleza-muerta-vista-superior-pila-documentos-6620969/  |  consulta: "index cards"
+mos3-01.jpg  <-  pozo-p-pi-tinta\007.jpg  |  pexels (Pexels License)  |  autor: KyoRa Kee  |  https://www.pexels.com/es-es/foto/acercamiento-de-la-punta-de-un-boligrafo-en-enfoque-36644290/  |  consulta: "blue ink pen"
+mos4-01.jpg  <-  pozo-p-pi-espejo\006.jpg  |  pexels (Pexels License)  |  autor: Vlady B  |  https://www.pexels.com/es-es/foto/hombres-servicio-barbero-mayor-16997937/  |  consulta: "barber mirror"
+mos5-01.jpg  <-  pozo-p-pi-ficha\004.jpg  |  pexels (Pexels License)  |  autor: PNW Production  |  https://www.pexels.com/es-es/foto/notas-billetes-papel-blanco-8250913/  |  consulta: "index cards"
+mos6-01.jpg  <-  pozo-p-pi-espejo\010.jpg  |  pexels (Pexels License)  |  autor: Maor Attias  |  https://www.pexels.com/es-es/foto/vaso-cristal-vidrio-ventanas-5152514/  |  consulta: "barber mirror"
+
+BRUMA (bruma-pag-0N.png y bruma-osc-0N.png, 30x20): las MISMAS fotos, recortadas a 3:2, reducidas y
+recoloreadas con C:\devs\demos\hacer-bruma.ps1 (clara >= 0,68 de luminancia / oscura <= 0,05). No suman fuentes.
+    pagina: mos1-01.jpg, mos2-01.jpg, hund2-01.jpg, mos5-01.jpg, mos1-01.jpg   |   oscuras: mos1-01.jpg, mos2-01.jpg, hund2-01.jpg
+
+MAPA: iframe de Google Maps (embed publico, sin clave). No hay imagen de mapa.

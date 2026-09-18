@@ -1,0 +1,24 @@
+FUENTES DE LAS IMAGENES - DogtorVet Rehecha el 18-09-2026 (presentacion antes que texto). Fotos de REFERENCIA de bancos libres: ninguna es del local; las verdaderas las tiene que mandar el negocio. 
+port-01.jpg  <-  pozo-p-170-dientes\001.jpg  |  pexels (Pexels License)  |  autor: Camilo Laverde  |  https://www.pexels.com/es-es/foto/retrato-de-un-perro-pastor-australiano-en-un-cielo-azul-29453814/  |  consulta: "dog teeth"
+banda-01.jpg  <-  pozo-p-170-juguete\011.jpg  |  pexels (Pexels License)  |  autor: Sean Brannon  |  https://www.pexels.com/es-es/foto/cachorro-de-boston-terrier-28293499/  |  consulta: "dog chew toy"
+cita-01.jpg  <-  pozo-p-170-gato\009.jpg  |  pexels (Pexels License)  |  autor: Zorica  |  https://www.pexels.com/es-es/foto/retrato-de-gato-bostezando-15710420/  |  consulta: "cat teeth"
+hund1-01.jpg  <-  pozo-p-170-hocico\004.jpg  |  pexels (Pexels License)  |  autor: Regina Tommasi  |  https://www.pexels.com/es-es/foto/retrato-en-primer-plano-de-un-jack-russell-terrier-30455441/  |  consulta: "dog snout"
+hund2-01.jpg  <-  pozo-p-170-boca\012.jpg  |  pexels (Pexels License)  |  autor: Михаил Крамор  |  https://www.pexels.com/es-es/foto/animal-perro-mascota-mono-17628643/  |  consulta: "dog mouth open"
+hund3-01.jpg  <-  pozo-p-170-sonrisa\012.jpg  |  pexels (Pexels License)  |  autor: Adrianna CA  |  https://www.pexels.com/es-es/foto/naturaleza-animal-perro-mascota-27828631/  |  consulta: "dog smile"
+hund4-01.jpg  <-  pozo-p-170-dientes\004.jpg  |  pexels (Pexels License)  |  autor: Ivan Garfias  |  https://www.pexels.com/es-es/foto/retrato-de-un-husky-sentado-en-un-jardin-24194032/  |  consulta: "dog teeth"
+hund5-01.jpg  <-  pozo-p-170-bostezo\007.jpg  |  pexels (Pexels License)  |  autor: Pablo Rodríguez  |  https://www.pexels.com/es-es/foto/mascota-mono-retrato-mamifero-18854368/  |  consulta: "cat yawn"
+hund6-01.jpg  <-  pozo-p-170-cachorro\011.jpg  |  pexels (Pexels License)  |  autor: Helena Lopes  |  https://www.pexels.com/es-es/foto/cachorro-border-collie-blanco-y-negro-3895276/  |  consulta: "puppy chewing"
+mos1-01.jpg  <-  pozo-p-170-hueso\011.jpg  |  pexels (Pexels License)  |  autor: Sean Brannon  |  https://www.pexels.com/es-es/foto/cachorro-de-boston-terrier-28346005/  |  consulta: "dog bone"
+mos2-01.jpg  <-  pozo-p-170-bostezo\002.jpg  |  pexels (Pexels License)  |  autor: Jacobo Monsalve  |  https://www.pexels.com/es-es/foto/mascota-mascotas-cabeza-gato-22670543/  |  consulta: "cat yawn"
+mos3-01.jpg  <-  pozo-p-170-juguete\005.jpg  |  pexels (Pexels License)  |  autor: Lucero Estrella  |  https://www.pexels.com/es-es/foto/adorable-perro-jugando-con-una-pelota-naranja-al-aire-libre-37647462/  |  consulta: "dog chew toy"
+mos4-01.jpg  <-  pozo-p-170-juguete\002.jpg  |  pexels (Pexels License)  |  autor: Carolina Gonzalez  |  https://www.pexels.com/es-es/foto/perro-mascota-cabeza-palo-20496588/  |  consulta: "dog chew toy"
+mos5-01.jpg  <-  pozo-p-170-cachorro\008.jpg  |  pexels (Pexels License)  |  autor: Josh Sorenson  |  https://www.pexels.com/es-es/foto/cachorro-marron-de-pelo-corto-1750380/  |  consulta: "puppy chewing"
+mos6-01.jpg  <-  pozo-p-170-cachorro\012.jpg  |  pexels (Pexels License)  |  autor: Tafsin Naeem  |  https://www.pexels.com/es-es/foto/adorable-cachorro-jugando-con-papel-al-aire-libre-34637179/  |  consulta: "puppy chewing"
+
+BRUMA (bruma-pag-0N.png y bruma-osc-0N.png, 30x20): las MISMAS fotos, recortadas a 3:2, reducidas y
+recoloreadas con C:\devs\demos\hacer-bruma.ps1 (clara >= 0,68 de luminancia / oscura <= 0,05). No suman fuentes.
+    pagina: port-01.jpg, hund3-01.jpg, mos4-01.jpg, hund5-01.jpg, mos1-01.jpg (todas a -Sat 0.6)   |   oscuras: banda-01.jpg, cita-01.jpg, mos6-01.jpg
+
+MAPA: iframe de Google Maps (embed publico, sin clave). No hay imagen de mapa.
+
+port-01.jpg: recorte a mano (franja x 0-0,80 del original, recortar-manual.ps1) para correr la cabeza del perro a la derecha del titular.

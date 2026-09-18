@@ -183,10 +183,11 @@ a { color: var(--rot); }
 
 
 /* ═══════════════════════════════════════════════════════════════════
-   PORTADA A SANGRE, FUNDIDA HACIA ABAJO
-   · Máscara en el CONTENEDOR: foto, luz y velo se funden juntos.
-   · padding-bottom (15 rem) > tramo del fundido (14 rem): el texto claro
-     termina antes de que la foto desaparezca.
+   PORTADA A SANGRE, CORTE SECO
+   · 16-09-2026, pedido de Yordy: SIN difuminado en la parte baja. La foto
+     termina en un borde limpio donde termina la portada; el fundido hacia
+     la página «no queda muy bien». Antes era la excepción .portada--corte;
+     ahora es la regla, y .portada--corte queda como sinónimo inofensivo.
    · El velo vertical sale de medir-velo.ps1 y se escribe en el tema
      (--velo-*), con el número medido en el comentario.
    ═══════════════════════════════════════════════════════════════════ */
@@ -199,8 +200,6 @@ a { color: var(--rot); }
 .portada__foto {
   position: absolute; inset: 0; z-index: -1; pointer-events: none;
   background: rgb(var(--tinta-rgb));
-  -webkit-mask-image: linear-gradient(180deg, #000 0%, #000 calc(100% - 14rem), rgba(0,0,0,.72) calc(100% - 9rem), rgba(0,0,0,.28) calc(100% - 4rem), transparent 100%);
-          mask-image: linear-gradient(180deg, #000 0%, #000 calc(100% - 14rem), rgba(0,0,0,.72) calc(100% - 9rem), rgba(0,0,0,.28) calc(100% - 4rem), transparent 100%);
 }
 .portada__foto img, .portada__video { display: block; width: 100%; height: 100%; object-fit: cover; object-position: var(--foto-pos, 55% 40%); }
 .portada__video { position: absolute; inset: 0; opacity: 0; transition: opacity 1.4s ease; pointer-events: none; }
@@ -226,18 +225,11 @@ a { color: var(--rot); }
 .portada__acciones { display: flex; flex-wrap: wrap; gap: .8rem; }
 @media (max-width: 760px) {
   .portada { padding: 5rem 0 10rem; }
-  .portada__foto {
-    -webkit-mask-image: linear-gradient(180deg, #000 0%, #000 calc(100% - 9rem), rgba(0,0,0,.7) calc(100% - 5.5rem), rgba(0,0,0,.25) calc(100% - 2.5rem), transparent 100%);
-            mask-image: linear-gradient(180deg, #000 0%, #000 calc(100% - 9rem), rgba(0,0,0,.7) calc(100% - 5.5rem), rgba(0,0,0,.25) calc(100% - 2.5rem), transparent 100%);
-  }
   .portada__foto img, .portada__video { object-position: var(--foto-pos-mov, var(--foto-pos, 55% 40%)); }
   .portada__foto::after { background: linear-gradient(180deg, rgb(var(--tinta-rgb) / var(--velo-mov-alto, .18)) 0%, rgb(var(--tinta-rgb) / var(--velo-mov, .56)) 20%, rgb(var(--tinta-rgb) / var(--velo-mov-bajo, .6)) 100%); }
 }
-/* CORTE SECO (13-09-2026, pedido de Yordy): cuando la foto es medio oscura
-   o contrasta mucho con el tono de la página, NO se funde: se corta donde
-   termina. Un fundido de foto oscura a página clara deja una franja gris
-   sucia; la página conserva un solo tono. Se activa con .portada--corte en
-   el HTML. Especificidad 0,2,0: gana también dentro del @media de arriba. */
+/* .portada--corte: desde el 16-09-2026 el corte seco es la regla; la clase
+   se deja por las demos que la traen en el HTML y no hace nada más. */
 .portada--corte .portada__foto { -webkit-mask-image: none; mask-image: none; }
 
 
@@ -291,10 +283,10 @@ a { color: var(--rot); }
 
 
 /* ═══════════════════════════════════════════════════════════════════
-   FICHAS CON FOTO HUNDIDA
-   La foto se funde por abajo en el vidrio (máscara en la imagen, no un
-   velo encima). El dato grande monta 1,4 rem sobre el tramo ya
-   transparente. Grilla automática: 3, 4 o 5 fichas se acomodan solas.
+   FICHAS CON FOTO ARRIBA, CORTE SECO
+   16-09-2026, pedido de Yordy: la foto ya NO se funde por abajo en la
+   tarjeta. Termina en un borde limpio y el texto va debajo, sin montarse
+   sobre la foto. Grilla automática: 3, 4 o 5 fichas se acomodan solas.
    ═══════════════════════════════════════════════════════════════════ */
 .fichas { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(var(--ficha-min, 210px), 1fr)); gap: 1rem; }
 .hund, .tarjeta, .aviso {
@@ -303,20 +295,16 @@ a { color: var(--rot); }
   box-shadow: inset 0 1px 0 rgb(255 255 255 / var(--brillo-a, .6)), 0 16px 34px rgb(0 0 0 / .08);
 }
 .hund { position: relative; overflow: hidden; border-radius: var(--radio, 14px); }
-.hund img {
-  display: block; width: 100%; height: auto; aspect-ratio: 4 / 3; object-fit: cover;
-  -webkit-mask-image: linear-gradient(180deg, #000 0%, #000 38%, rgba(0,0,0,.45) 68%, transparent 90%);
-          mask-image: linear-gradient(180deg, #000 0%, #000 38%, rgba(0,0,0,.45) 68%, transparent 90%);
-}
-.hund__txt { position: relative; margin-top: -1.4rem; padding: 0 1rem 1.15rem; }
+.hund img { display: block; width: 100%; height: auto; aspect-ratio: 4 / 3; object-fit: cover; }
+.hund__txt { position: relative; margin-top: 0; padding: .95rem 1rem 1.15rem; }
 .hund__dato { margin: 0 0 .35rem; font-family: var(--display); font-size: var(--p-2); line-height: 1; color: var(--tit); font-variant-numeric: tabular-nums; font-weight: var(--display-peso, 700); }
 .hund__txt h3 { font-size: var(--p-1); margin: 0 0 .35rem; }
 .hund__txt p:not(.hund__dato) { margin: 0; font-size: .92rem; line-height: 1.45; }
 .hund__txt b { color: var(--tit); }
 .hund--destacada { border: 2px solid var(--acento); }
 .hund--destacada .hund__dato { color: var(--rot); }
-/* corte seco en las fichas (.fichas--corte): la foto termina en un borde
-   limpio y el texto baja a la tarjeta, sin montarse sobre la foto. */
+/* .fichas--corte: desde el 16-09-2026 es la regla; se deja por las demos
+   que la traen en el HTML. */
 .fichas--corte .hund img { -webkit-mask-image: none; mask-image: none; }
 .fichas--corte .hund__txt { margin-top: 0; padding-top: .95rem; }
 @media (max-width: 640px) {

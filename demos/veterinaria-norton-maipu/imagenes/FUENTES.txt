@@ -1,0 +1,22 @@
+FUENTES DE LAS IMAGENES - Veterinaria Norton Rehecha el 18-09-2026 (presentacion antes que texto). Fotos de REFERENCIA de bancos libres: ninguna es del local; las verdaderas las tiene que mandar el negocio. 
+port-01.jpg  <-  pozo-p-171-sofa\005.jpg  |  pexels (Pexels License)  |  autor: Travis Rupert  |  https://www.pexels.com/es-es/foto/foto-de-perro-en-la-cama-2608011/  |  consulta: "dog sleeping sofa night pexels"
+banda-01.jpg  <-  pozo-p-171-sofa\008.jpg  |  pexels (Pexels License)  |  autor: Enrique  |  https://www.pexels.com/es-es/foto/relajante-animal-perro-mascota-4458433/  |  consulta: "dog sleeping sofa night pexels"
+cita-01.jpg  <-  pozo-p-171-sofa\012.jpg  |  pexels (Pexels License)  |  autor: K  |  https://www.pexels.com/es-es/foto/ligero-taburete-animal-casa-6468890/  |  consulta: "dog sleeping sofa night pexels"
+hund1-01.jpg  <-  pozo-p-171-mesa\005.jpg  |  pexels (Pexels License)  |  autor: Tima Miroshnichenko  |  https://www.pexels.com/es-es/foto/blanco-y-negro-manos-animal-perro-6235655/  |  consulta: "veterinary exam table pexels"
+hund2-01.jpg  <-  pozo-p-171-fonendo\003.jpg  |  pexels (Pexels License)  |  autor: Tima Miroshnichenko  |  https://www.pexels.com/es-es/foto/manos-animal-mascota-pelo-6235654/  |  consulta: "stethoscope dog chest pexels"
+hund3-01.jpg  <-  pozo-p-171-collar\008.jpg  |  pexels (Pexels License)  |  autor: Carlos Reyes  |  https://www.pexels.com/es-es/foto/perro-mascota-cabeza-retrato-18106142/  |  consulta: "dog collar tag close up pexels"
+hund4-01.jpg  <-  pozo-p-171-collar\002.jpg  |  pexels (Pexels License)  |  autor: Arian Fernandez  |  https://www.pexels.com/es-es/foto/perro-mascota-habitacion-acostado-26840139/  |  consulta: "dog collar tag close up pexels"
+hund5-01.jpg  <-  pozo-p-171-dientes\007.jpg  |  pexels (Pexels License)  |  autor: Johanna Quevedo Portillo  |  https://www.pexels.com/es-es/foto/mujer-sosteniendo-orejas-de-perro-para-la-foto-17997434/  |  consulta: "dog teeth check hand pexels"
+hund6-01.jpg  <-  pozo-p-171-gatocaja\002.jpg  |  pexels (Pexels License)  |  autor: CRIS G  |  https://www.pexels.com/es-es/foto/hermoso-gato-carey-de-ojos-verdes-disfrutando-de-la-luz-del-sol-en-casa-33596880/  |  consulta: "cat exploring box home pexels"
+mos1-01.jpg  <-  pozo-p-171-sofa\006.jpg  |  pexels (Pexels License)  |  autor: Torsten Dettlaff  |  https://www.pexels.com/es-es/foto/enfoque-selectivo-de-tan-dog-tumbado-en-el-sofa-347687/  |  consulta: "dog sleeping sofa night pexels"
+mos2-01.jpg  <-  pozo-p-171-retrato\012.jpg  |  pexels (Pexels License)  |  autor: Ivan Garfias  |  https://www.pexels.com/es-es/foto/animal-silueta-perro-mascota-27208864/  |  consulta: "adult dog portrait dark pexels"
+mos3-01.jpg  <-  pozo-p-171-ventana\004.jpg  |  pexels (Pexels License)  |  autor: Josh Sorenson  |  https://www.pexels.com/es-es/foto/animal-perro-mascota-ventana-7899233/  |  consulta: "dog looking window evening pexels"
+mos4-01.jpg  <-  pozo-p-171-gatocaja\011.jpg  |  pexels (Pexels License)  |  autor: eberhard grossgasteiger  |  https://www.pexels.com/es-es/foto/fotografia-de-enfoque-superficial-de-gato-gris-en-caja-3389528/  |  consulta: "cat exploring box home pexels"
+mos5-01.jpg  <-  pozo-p-171-plato\011.jpg  |  pexels (Pexels License)  |  autor: George  |  https://www.pexels.com/es-es/foto/perro-jugueton-estirandose-en-interiores-bajo-un-rayo-de-sol-31559199/  |  consulta: "dog bowl kitchen floor pexels"
+mos6-01.jpg  <-  pozo-p-171-ventana\008.jpg  |  pexels (Pexels License)  |  autor: Anthony Domasig  |  https://www.pexels.com/es-es/foto/perro-contemplativo-junto-a-una-ventana-de-madera-28766582/  |  consulta: "dog looking window evening pexels"
+
+BRUMA (bruma-pag-0N.png y bruma-osc-0N.png, 30x20): las MISMAS fotos, recortadas a 3:2, reducidas y
+recoloreadas con C:\devs\demos\hacer-bruma.ps1 (clara >= 0,68 de luminancia / oscura <= 0,05). No suman fuentes.
+    pagina: port-01.jpg, mos5-01.jpg, hund6-01.jpg, banda-01.jpg, hund3-01.jpg (todas a -Sat 0.6)   |   oscuras: port-01.jpg, mos2-01.jpg, cita-01.jpg
+
+MAPA: iframe de Google Maps (embed publico, sin clave). No hay imagen de mapa.

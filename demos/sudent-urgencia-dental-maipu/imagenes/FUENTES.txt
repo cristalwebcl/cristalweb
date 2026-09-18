@@ -1,0 +1,22 @@
+FUENTES DE LAS IMAGENES - SUDENT Rehecha el 18-09-2026 (presentacion antes que texto). Fotos de REFERENCIA de bancos libres: ninguna es del local; las verdaderas las tiene que mandar el negocio. 
+port-01.jpg  <-  pozo-p-217-calle\012.jpg  |  pexels (Pexels License)  |  autor: Nathan Tran  |  https://www.pexels.com/es-es/foto/calle-de-ciudad-lluviosa-de-noche-con-reflexos-38548754/  |  consulta: "street night city lights rain pexels"
+banda-01.jpg  <-  pozo-p-217-reloj\010.jpg  |  pexels (Pexels License)  |  autor: Suhas Hanjar  |  https://www.pexels.com/es-es/foto/reloj-clasico-vintage-con-iluminacion-tenue-36683336/  |  consulta: "clock night bedside pexels"
+cita-01.jpg  <-  pozo-p-217-telefono\005.jpg  |  pexels (Pexels License)  |  autor: Mario Spencer  |  https://www.pexels.com/es-es/foto/lampara-de-noche-33181511/  |  consulta: "phone on table night lamp pexels"
+hund1-01.jpg  <-  pozo-p-217-puerta\010.jpg  |  pexels (Pexels License)  |  autor: terry narcissan tsui  |  https://www.pexels.com/es-es/foto/ligero-ciudad-noche-calle-27408561/  |  consulta: "door light on night entrance pexels"
+hund2-01.jpg  <-  pozo-p-217-cepillo\011.jpg  |  pexels (Pexels License)  |  autor: https://kaboompics.com/  |  https://www.pexels.com/es-es/foto/sano-madera-vaso-cristal-4202889/  |  consulta: "toothbrush glass bathroom pexels"
+hund3-01.jpg  <-  pozo-p-217-vaso\010.jpg  |  pexels (Pexels License)  |  autor: Ben Moses  |  https://www.pexels.com/es-es/foto/vaso-transparente-con-agua-10330854/  |  consulta: "glass of water bedside night pexels"
+hund4-01.jpg  <-  pozo-p-217-sillon\007.jpg  |  pexels (Pexels License)  |  autor: Pavel Danilyuk  |  https://www.pexels.com/es-es/foto/equipo-instrumentos-dentales-de-cerca-luces-de-quirofano-dentales-6812492/  |  consulta: "empty dental chair light pexels"
+hund5-01.jpg  <-  pozo-p-217-cepillo\012.jpg  |  pexels (Pexels License)  |  autor: Tima Miroshnichenko  |  https://www.pexels.com/es-es/foto/moda-hombre-persona-gente-7608326/  |  consulta: "toothbrush glass bathroom pexels"
+hund6-01.jpg  <-  pozo-p-217-espera\012.jpg  |  pexels (Pexels License)  |  autor: Jan van der Wolf  |  https://www.pexels.com/es-es/foto/pared-muro-blanco-sombra-18266262/  |  consulta: "waiting room chairs empty pexels"
+mos1-01.jpg  <-  pozo-p-217-reloj\007.jpg  |  pexels (Pexels License)  |  autor: Ruslan Sikunov  |  https://www.pexels.com/es-es/foto/oscuro-retro-analogico-despertador-18542702/  |  consulta: "clock night bedside pexels"
+mos2-01.jpg  <-  pozo-p-217-semaforo\008.jpg  |  pexels (Pexels License)  |  autor: Yusuf  Eser  |  https://www.pexels.com/es-es/foto/neblinoso-con-niebla-semaforo-luz-de-freno-10711773/  |  consulta: "traffic light red night pexels"
+mos3-01.jpg  <-  pozo-p-217-vaso\006.jpg  |  pexels (Pexels License)  |  autor: Laura Chouette  |  https://www.pexels.com/es-es/foto/agua-cama-beber-bebida-20849469/  |  consulta: "glass of water bedside night pexels"
+mos4-01.jpg  <-  pozo-p-217-telefono\010.jpg  |  pexels (Pexels License)  |  autor: Nothing Ahead  |  https://www.pexels.com/es-es/foto/escritorio-moderno-de-hotel-con-lampara-y-telefono-33072150/  |  consulta: "phone on table night lamp pexels"
+mos5-01.jpg  <-  pozo-p-217-espera\007.jpg  |  pexels (Pexels License)  |  autor: Surdu Horia  |  https://www.pexels.com/es-es/foto/blanco-y-negro-espacio-modelo-estampado-27331028/  |  consulta: "waiting room chairs empty pexels"
+mos6-01.jpg  <-  pozo-p-217-calle\004.jpg  |  pexels (Pexels License)  |  autor: Mathias Reding  |  https://www.pexels.com/es-es/foto/ciudad-luces-noche-calle-11213185/  |  consulta: "street night city lights rain pexels"
+
+BRUMA (bruma-pag-0N.png y bruma-osc-0N.png, 30x20): las MISMAS fotos, recortadas a 3:2, reducidas y
+recoloreadas con C:\devs\demos\hacer-bruma.ps1 (clara >= 0,68 de luminancia / oscura <= 0,05). No suman fuentes.
+    pagina: port-01.jpg, mos2-01.jpg, hund2-01.jpg, cita-01.jpg, mos6-01.jpg (todas a -Sat 0.6)   |   oscuras: port-01.jpg, banda-01.jpg, cita-01.jpg
+
+MAPA: iframe de Google Maps (embed publico, sin clave). No hay imagen de mapa.

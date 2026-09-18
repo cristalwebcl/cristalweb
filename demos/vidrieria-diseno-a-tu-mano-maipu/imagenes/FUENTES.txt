@@ -1,0 +1,22 @@
+FUENTES DE LAS IMAGENES - Vidriería Diseño A Tu Mano Rehecha el 17-09-2026 (presentacion antes que texto). Fotos de REFERENCIA de bancos libres: ninguna es del local; las verdaderas las tiene que mandar el negocio. 
+port-01.jpg  <-  pozo-p-165-bano\012.jpg  |  pexels (Pexels License)  |  autor: Max Vakhtbovych  |  https://www.pexels.com/es-es/foto/creativo-pared-muro-vaso-6587858/  |  consulta: "bathroom mirror"
+banda-01.jpg  <-  pozo-p-165-living\008.jpg  |  pexels (Pexels License)  |  autor: Max Vakhtbovych  |  https://www.pexels.com/es-es/foto/ligero-planta-mesa-imagen-7061069/  |  consulta: "mirror living room"
+cita-01.jpg  <-  pozo-p-165-redondo\007.jpg  |  pexels (Pexels License)  |  autor: Madjid Atmania  |  https://www.pexels.com/es-es/foto/espejo-en-una-pared-de-ladrillos-blancos-11931508/  |  consulta: "round mirror wall"
+hund1-01.jpg  <-  pozo-p-165-redondo\011.jpg  |  pexels (Pexels License)  |  autor: TwoSix ZeroFive  |  https://www.pexels.com/es-es/foto/decoracion-minimalista-con-espejo-redondo-y-jarron-37652240/  |  consulta: "round mirror wall"
+hund2-01.jpg  <-  pozo-p-165-redondo\006.jpg  |  pexels (Pexels License)  |  autor: Stuffedbox NG  |  https://www.pexels.com/es-es/foto/pared-muro-reflejo-reflexion-16237939/  |  consulta: "round mirror wall"
+hund3-01.jpg  <-  pozo-p-165-puerta\006.jpg  |  pexels (Pexels License)  |  autor: Burak The Weekender  |  https://www.pexels.com/es-es/foto/puerta-de-vidrio-con-marco-de-metal-negro-1098982/  |  consulta: "glass door office"
+hund4-01.jpg  <-  pozo-p-165-puerta\012.jpg  |  pexels (Pexels License)  |  autor: Max Vakhtbovych  |  https://www.pexels.com/es-es/foto/puerta-de-vidrio-con-marco-de-metal-negro-6436749/  |  consulta: "glass door office"
+hund5-01.jpg  <-  pozo-p-165-mampara\010.jpg  |  pexels (Pexels License)  |  autor: Max Vakhtbovych  |  https://www.pexels.com/es-es/foto/bano-interior-banera-ducha-8082221/  |  consulta: "glass shower door"
+hund6-01.jpg  <-  pozo-p-165-vitrina\009.jpg  |  pexels (Pexels License)  |  autor: furkanfdemir  |  https://www.pexels.com/es-es/foto/ligero-edificio-curva-curvar-6842160/  |  consulta: "shop display glass shelves"
+mos1-01.jpg  <-  pozo-p-165-medida\004.jpg  |  pexels (Pexels License)  |  autor: Ksenia Chernaya  |  https://www.pexels.com/es-es/foto/hombre-creativo-edificio-construccion-5691673/  |  consulta: "measuring tape wall"
+mos2-01.jpg  <-  pozo-p-165-reflejo\009.jpg  |  pexels (Pexels License)  |  autor: Natalya Sh  |  https://www.pexels.com/es-es/foto/reflejo-de-una-planta-de-vid-en-un-espejo-10515630/  |  consulta: "mirror reflection interior"
+mos3-01.jpg  <-  pozo-p-165-redondo\010.jpg  |  pexels (Pexels License)  |  autor: Nguyễn Viết Minh Lâm  |  https://www.pexels.com/es-es/foto/arquitectura-moderna-con-ventana-circular-en-vietnam-36564543/  |  consulta: "round mirror wall"
+mos4-01.jpg  <-  pozo-p-165-borde\008.jpg  |  pexels (Pexels License)  |  autor: Cup of  Couple  |  https://www.pexels.com/es-es/foto/flor-reflejo-reflexion-habitacion-6634318/  |  consulta: "mirror edge close up"
+mos5-01.jpg  <-  pozo-p-165-mampara\006.jpg  |  pexels (Pexels License)  |  autor: Curtis Adams  |  https://www.pexels.com/es-es/foto/diseno-bano-interior-banera-12119354/  |  consulta: "glass shower door"
+mos6-01.jpg  <-  pozo-p-165-marco\007.jpg  |  pexels (Pexels License)  |  autor: Ioana Motoc  |  https://www.pexels.com/es-es/foto/madera-mesa-reflejo-reflexion-12814969/  |  consulta: "mirror frame"
+
+BRUMA (bruma-pag-0N.png y bruma-osc-0N.png, 30x20): las MISMAS fotos, recortadas a 3:2, reducidas y
+recoloreadas con C:\devs\demos\hacer-bruma.ps1 (clara >= 0,68 de luminancia / oscura <= 0,05). No suman fuentes.
+    pagina: banda-01.jpg, port-01.jpg, hund1-01.jpg, mos6-01.jpg, mos4-01.jpg (todas a -Sat 0.6)   |   oscuras: banda-01.jpg, cita-01.jpg, hund1-01.jpg
+
+MAPA: iframe de Google Maps (embed publico, sin clave). No hay imagen de mapa.

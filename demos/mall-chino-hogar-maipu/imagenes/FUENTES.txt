@@ -1,0 +1,22 @@
+FUENTES DE LAS IMAGENES - Mall Chino Hogar Rehecha el 17-09-2026 (presentacion antes que texto). Fotos de REFERENCIA de bancos libres: ninguna es del local; las verdaderas las tiene que mandar el negocio. 
+port-01.jpg  <-  pozo-p-141-tienda\003.jpg  |  pexels (Pexels License)  |  autor: Rachel Claire  |  https://www.pexels.com/es-es/foto/creativo-taza-copa-madera-5490775/  |  consulta: "homeware store interior shelves"
+banda-01.jpg  <-  pozo-p-141-loza\012.jpg  |  pexels (Pexels License)  |  autor: ROMAN ODINTSOV  |  https://www.pexels.com/es-es/foto/sucio-vajilla-platos-boles-8063849/  |  consulta: "colorful tableware stack"
+cita-01.jpg  <-  pozo-p-141-canasto\004.jpg  |  pexels (Pexels License)  |  autor: Kampus Production  |  https://www.pexels.com/es-es/foto/compras-comprando-tienda-de-comestibles-colmado-8422681/  |  consulta: "shopping basket"
+hund1-01.jpg  <-  pozo-p-141-cocina\004.jpg  |  pexels (Pexels License)  |  autor: Pavel Danilyuk  |  https://www.pexels.com/es-es/foto/cocina-cocinando-platos-rallador-6996085/  |  consulta: "kitchen utensils shelf"
+hund2-01.jpg  <-  pozo-p-141-aseo\006.jpg  |  pexels (Pexels License)  |  autor: Ron Lach  |  https://www.pexels.com/es-es/foto/botellas-bolso-tumbado-naturaleza-muerta-10558183/  |  consulta: "cleaning supplies shelf"
+hund3-01.jpg  <-  pozo-p-141-deco\009.jpg  |  pexels (Pexels License)  |  autor: Masood Aslami  |  https://www.pexels.com/es-es/foto/oficio-artesania-manualidad-destreza-19969201/  |  consulta: "home decor shelf vases"
+hund4-01.jpg  <-  pozo-p-141-cajas\002.jpg  |  pexels (Pexels License)  |  autor: Magda Ehlers  |  https://www.pexels.com/es-es/foto/naturaleza-muerta-almacenamiento-apto-para-microondas-contenedores-de-plastico-4096909/  |  consulta: "plastic storage boxes"
+hund5-01.jpg  <-  pozo-p-141-navidad\001.jpg  |  pexels (Pexels License)  |  autor: Demian Spinetta  |  https://www.pexels.com/es-es/foto/arbol-de-navidad-decorado-con-adornos-14586199/  |  consulta: "christmas decorations store"
+hund6-01.jpg  <-  pozo-p-141-juguetes\010.jpg  |  pexels (Pexels License)  |  autor: 🇻🇳🇻🇳Nguyễn Tiến Thịnh 🇻🇳🇻🇳  |  https://www.pexels.com/es-es/foto/encantadora-exhibicion-de-juguetes-de-peluche-y-libros-en-una-estanteria-36873353/  |  consulta: "toy store shelves"
+mos1-01.jpg  <-  pozo-p-141-mimbre\005.jpg  |  pexels (Pexels License)  |  autor: Sayeed Chowdhury  |  https://www.pexels.com/es-es/foto/cestas-tejidas-a-mano-bajo-la-calida-luz-del-sol-34667143/  |  consulta: "wicker baskets stacked"
+mos2-01.jpg  <-  pozo-p-141-loza\001.jpg  |  pexels (Pexels License)  |  autor: RDNE Stock project  |  https://www.pexels.com/es-es/foto/naturaleza-muerta-vajilla-fondo-gris-multicolor-8903358/  |  consulta: "colorful tableware stack"
+mos3-01.jpg  <-  pozo-p-141-entrada\006.jpg  |  pexels (Pexels License)  |  autor: kadir alkn  |  https://www.pexels.com/es-es/foto/entrada-acogedora-de-cafeteria-con-asientos-exteriores-34164701/  |  consulta: "store entrance door"
+mos4-01.jpg  <-  pozo-p-141-baldes\003.jpg  |  pexels (Pexels License)  |  autor: Lucas Tran  |  https://www.pexels.com/es-es/foto/cubos-coloridos-de-plastico-y-metal-a-la-luz-del-sol-28902785/  |  consulta: "colorful plastic buckets stacked"
+mos5-01.jpg  <-  pozo-p-141-deco\007.jpg  |  pexels (Pexels License)  |  autor: Charlotte May  |  https://www.pexels.com/es-es/foto/planta-seca-en-un-jarron-sobre-la-mesa-en-casa-5825578/  |  consulta: "home decor shelf vases"
+mos6-01.jpg  <-  pozo-p-141-cocina\006.jpg  |  pexels (Pexels License)  |  autor: Esra Erdem  |  https://www.pexels.com/es-es/foto/vegetales-verduras-cuchara-barra-18777755/  |  consulta: "kitchen utensils shelf"
+
+BRUMA (bruma-pag-0N.png y bruma-osc-0N.png, 30x20): las MISMAS fotos, recortadas a 3:2, reducidas y
+recoloreadas con C:\devs\demos\hacer-bruma.ps1 (clara >= 0,68 de luminancia / oscura <= 0,05). No suman fuentes.
+    pagina: banda-01.jpg, hund5-01.jpg, mos3-01.jpg, hund3-01.jpg, mos6-01.jpg   |   oscuras: hund5-01.jpg, mos3-01.jpg, hund3-01.jpg
+
+MAPA: iframe de Google Maps (embed publico, sin clave). No hay imagen de mapa.

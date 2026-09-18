@@ -1,0 +1,22 @@
+FUENTES DE LAS IMAGENES - Patitas Veterinarios Rehecha el 16-09-2026 (presentacion antes que texto). Fotos de REFERENCIA de bancos libres: ninguna es del local; las verdaderas las tiene que mandar el negocio. 
+port-01.jpg  <-  pozo-p-pa-perro\002.jpg  |  pexels (Pexels License)  |  autor: Augusto Caserotto  |  https://www.pexels.com/es-es/foto/retrato-de-un-perro-weimaraner-mirando-hacia-arriba-32289949/  |  consulta: "dog portrait dark"
+banda-01.jpg  <-  pozo-p-pa-manta\010.jpg  |  pexels (Pexels License)  |  autor: David Kanigan  |  https://www.pexels.com/es-es/foto/animal-perro-mascota-mono-18566414/  |  consulta: "puppy sleeping blanket"
+cita-01.jpg  <-  pozo-p-pa-sala\006.jpg  |  pexels (Pexels License)  |  autor: Maria Ovchinnikova  |  https://www.pexels.com/es-es/foto/blanco-y-negro-sillas-vacio-zona-de-espera-7558447/  |  consulta: "waiting room chairs"
+hund1-01.jpg  <-  pozo-p-pa-mesa\009.jpg  |  pexels (Pexels License)  |  autor: Tima Miroshnichenko  |  https://www.pexels.com/es-es/foto/madera-escritorio-cuaderno-de-madera-5407246/  |  consulta: "stethoscope table"
+hund2-01.jpg  <-  pozo-p-pa-lista\009.jpg  |  pexels (Pexels License)  |  autor: jessica olivella  |  https://www.pexels.com/es-es/foto/toma-de-apuntes-en-un-aula-iluminada-por-el-sol-37778746/  |  consulta: "notebook pen hand writing"
+hund3-01.jpg  <-  pozo-p-pa-gato\004.jpg  |  pexels (Pexels License)  |  autor: Mario Spencer  |  https://www.pexels.com/es-es/foto/primer-plano-del-ojo-de-un-gato-tabby-38009170/  |  consulta: "cat close up"
+hund4-01.jpg  <-  pozo-p-pa-manta\003.jpg  |  pexels (Pexels License)  |  autor: Abner Velázquez  |  https://www.pexels.com/es-es/foto/adorable-cachorro-labrador-durmiendo-en-la-hierba-34221899/  |  consulta: "puppy sleeping blanket"
+hund5-01.jpg  <-  pozo-p-pa-perro\012.jpg  |  pexels (Pexels License)  |  autor: Ivan Garfias  |  https://www.pexels.com/es-es/foto/fotografia-oscura-de-un-husky-sobre-un-fondo-negro-20688794/  |  consulta: "dog portrait dark"
+hund6-01.jpg  <-  pozo-p-pa-lista\012.jpg  |  pexels (Pexels License)  |  autor: Taiye Salawu  |  https://www.pexels.com/es-es/foto/acercamiento-de-mano-escribiendo-en-cuaderno-con-boligrafo-36598104/  |  consulta: "notebook pen hand writing"
+mos1-01.jpg  <-  pozo-p-pa-gato\009.jpg  |  pexels (Pexels License)  |  autor: ATHENEA CODJAMBASSIS ROSSITTO  |  https://www.pexels.com/es-es/foto/blanco-y-negro-animal-mascota-mono-26263095/  |  consulta: "cat close up"
+mos2-01.jpg  <-  pozo-p-pa-sala\005.jpg  |  pexels (Pexels License)  |  autor: Alexsandro Rosa de Mello  |  https://www.pexels.com/es-es/foto/sillas-apiladas-vacias-295480/  |  consulta: "waiting room chairs"
+mos3-01.jpg  <-  pozo-p-pa-lista\007.jpg  |  pexels (Pexels License)  |  autor: Eduard Perez  |  https://www.pexels.com/es-es/foto/primer-plano-en-blanco-y-negro-de-escritura-a-mano-en-un-cuaderno-37831189/  |  consulta: "notebook pen hand writing"
+mos4-01.jpg  <-  pozo-p-pa-collar\003.jpg  |  pexels (Pexels License)  |  autor: Ludovic Delot  |  https://www.pexels.com/es-es/foto/chihuahua-beige-con-correa-al-aire-libre-33489759/  |  consulta: "dog collar leash"
+mos5-01.jpg  <-  pozo-p-pa-plato\004.jpg  |  pexels (Pexels License)  |  autor: Amar  Preciado  |  https://www.pexels.com/es-es/foto/perro-esperando-comida-sabrosa-en-la-cocina-30070537/  |  consulta: "pet food bowl"
+mos6-01.jpg  <-  pozo-p-pa-manta\006.jpg  |  pexels (Pexels License)  |  autor: Kai-Chieh Chan  |  https://www.pexels.com/es-es/foto/animal-perro-mascota-dormido-7198674/  |  consulta: "puppy sleeping blanket"
+
+BRUMA (bruma-pag-0N.png y bruma-osc-0N.png, 30x20): las MISMAS fotos, recortadas a 3:2, reducidas y
+recoloreadas con C:\devs\demos\hacer-bruma.ps1 (clara >= 0,68 de luminancia / oscura <= 0,05). No suman fuentes.
+    pagina: hund4-01.jpg, mos2-01.jpg, banda-01.jpg, mos5-01.jpg, hund2-01.jpg   |   oscuras: port-01.jpg, hund5-01.jpg, cita-01.jpg
+
+MAPA: iframe de Google Maps (embed publico, sin clave). No hay imagen de mapa.

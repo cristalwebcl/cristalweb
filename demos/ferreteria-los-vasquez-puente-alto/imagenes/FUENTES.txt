@@ -1,0 +1,22 @@
+FUENTES DE LAS IMAGENES - Ferreteria Los Vasquez Rehecha el 16-09-2026 (presentacion antes que texto). Fotos de REFERENCIA de bancos libres: ninguna es del local; las verdaderas las tiene que mandar el negocio. 
+port-01.jpg  <-  pozo-p-151-edificio\005.jpg  |  pexels (Pexels License)  |  autor: Michael Giugliano  |  https://www.pexels.com/es-es/foto/edificio-de-varios-pisos-con-ventanas-abiertas-durante-la-noche-2388360/  |  consulta: "apartment building windows night"
+banda-01.jpg  <-  pozo-p-151-cuadro\004.jpg  |  pexels (Pexels License)  |  autor: Blue Bird  |  https://www.pexels.com/es-es/foto/arte-edificio-pared-muro-7218690/  |  consulta: "hanging picture frame wall"
+cita-01.jpg  <-  pozo-p-151-herramienta\006.jpg  |  pexels (Pexels License)  |  autor: Ahimsa -  OM  |  https://www.pexels.com/es-es/foto/taller-organizado-con-herramientas-manuales-y-abrazaderas-34471533/  |  consulta: "hand tools workbench"
+hund1-01.jpg  <-  pozo-p-151-tarugo\002.jpg  |  pexels (Pexels License)  |  autor: ready made  |  https://www.pexels.com/es-es/foto/arte-creativo-canica-marmol-3926791/  |  consulta: "wall plugs screws"
+hund2-01.jpg  <-  pozo-p-151-sello\007.jpg  |  pexels (Pexels License)  |  autor: Ksenia Chernaya  |  https://www.pexels.com/es-es/foto/ligero-hombre-brazo-mano-5691562/  |  consulta: "caulking window sealant"
+hund3-01.jpg  <-  pozo-p-151-pintura\004.jpg  |  pexels (Pexels License)  |  autor: Stephanie  Ho  |  https://www.pexels.com/es-es/foto/persona-sosteniendo-el-rodillo-de-pintura-mientras-pinta-la-pared-994164/  |  consulta: "paint roller wall"
+hund4-01.jpg  <-  pozo-p-151-gasfiter\009.jpg  |  pexels (Pexels License)  |  autor: Ksenia Chernaya  |  https://www.pexels.com/es-es/foto/alicates-para-reparacion-de-suelos-de-piedra-5691629/  |  consulta: "plumber pipe wrench"
+hund5-01.jpg  <-  pozo-p-151-electrico\001.jpg  |  pexels (Pexels License)  |  autor: Nic Wood  |  https://www.pexels.com/es-es/foto/alambre-de-cobre-28286039/  |  consulta: "electrical wires cable"
+hund6-01.jpg  <-  pozo-p-151-gasfiter\010.jpg  |  pexels (Pexels License)  |  autor: Jef K  |  https://www.pexels.com/es-es/foto/mano-y-llave-inglesa-ajustable-en-blanco-y-negro-29459133/  |  consulta: "plumber pipe wrench"
+mos1-01.jpg  <-  pozo-p-151-huincha\003.jpg  |  pexels (Pexels License)  |  autor: Christina & Peter  |  https://www.pexels.com/es-es/foto/primer-plano-de-una-cinta-metrica-en-una-obra-de-construccion-30413398/  |  consulta: "tape measure"
+mos2-01.jpg  <-  pozo-p-151-tarugo\008.jpg  |  pexels (Pexels License)  |  autor: Ksenia Chernaya  |  https://www.pexels.com/es-es/foto/construccion-industria-efecto-desenfocado-diseno-5691641/  |  consulta: "wall plugs screws"
+mos3-01.jpg  <-  pozo-p-151-estante\011.jpg  |  pexels (Pexels License)  |  autor: cnrdmroglu  |  https://www.pexels.com/es-es/foto/industria-pared-muro-herramientas-15603042/  |  consulta: "hardware store shelves"
+mos4-01.jpg  <-  pozo-p-151-tarugo\007.jpg  |  pexels (Pexels License)  |  autor: Patrick  |  https://www.pexels.com/es-es/foto/metal-herramientas-tornillos-tornillos-de-rosca-18503424/  |  consulta: "wall plugs screws"
+mos5-01.jpg  <-  pozo-p-151-pintura\012.jpg  |  pexels (Pexels License)  |  autor: Polina Tankilevitch  |  https://www.pexels.com/es-es/foto/hombre-mano-pared-muro-5583126/  |  consulta: "paint roller wall"
+mos6-01.jpg  <-  pozo-p-151-edificio\007.jpg  |  pexels (Pexels License)  |  autor: Nothing Ahead  |  https://www.pexels.com/es-es/foto/fachada-del-hotel-con-ventana-iluminada-por-la-noche-33072181/  |  consulta: "apartment building windows night"
+
+BRUMA (bruma-pag-0N.png y bruma-osc-0N.png, 30x20): las MISMAS fotos, recortadas a 3:2, reducidas y
+recoloreadas con C:\devs\demos\hacer-bruma.ps1 (clara >= 0,68 de luminancia / oscura <= 0,05). No suman fuentes.
+    pagina: hund3-01.jpg, mos5-01.jpg, mos2-01.jpg, port-01.jpg, mos1-01.jpg (todas rehechas a -Sat 0.6)   |   oscuras: mos4-01.jpg, mos2-01.jpg, mos5-01.jpg
+
+MAPA: iframe de Google Maps (embed publico, sin clave). No hay imagen de mapa.

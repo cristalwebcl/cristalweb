@@ -1,0 +1,22 @@
+FUENTES DE LAS IMAGENES - Gimnasio Stylo Rehecha el 16-09-2026 (presentacion antes que texto). Fotos de REFERENCIA de bancos libres: ninguna es del local; las verdaderas las tiene que mandar el negocio. 
+port-01.jpg  <-  pozo-p-gs-sala\009.jpg  |  pexels (Pexels License)  |  autor: foad shariyati  |  https://www.pexels.com/es-es/foto/interior-de-gimnasio-moderno-con-iluminacion-geometrica-29224211/  |  consulta: "gym interior lights"
+banda-01.jpg  <-  pozo-p-gs-mancuerna\002.jpg  |  pexels (Pexels License)  |  autor: Tima Miroshnichenko  |  https://www.pexels.com/es-es/foto/pesas-mancuernas-estante-tiro-vertical-6389513/  |  consulta: "dumbbells rack dark"
+cita-01.jpg  <-  pozo-p-gs-mancuerna\004.jpg  |  pexels (Pexels License)  |  autor: Brett Jordan  |  https://www.pexels.com/es-es/foto/gimnasio-acogedor-en-casa-con-equipo-de-levantamiento-de-pesas-38965744/  |  consulta: "dumbbells rack dark"
+hund1-01.jpg  <-  pozo-p-gs-mancuerna\007.jpg  |  pexels (Pexels License)  |  autor: Nica's Photo  |  https://www.pexels.com/es-es/foto/mancuernas-tiro-vertical-equipo-de-gimnasio-de-cerca-14289784/  |  consulta: "dumbbells rack dark"
+hund2-01.jpg  <-  pozo-p-gs-disco\008.jpg  |  pexels (Pexels License)  |  autor: Brett Jordan  |  https://www.pexels.com/es-es/foto/gimnasio-maquina-equipo-hierro-fundido-4464780/  |  consulta: "weight plates stack"
+hund3-01.jpg  <-  pozo-p-gs-disco\002.jpg  |  pexels (Pexels License)  |  autor: DΛVΞ GΛRCIΛ  |  https://www.pexels.com/es-es/foto/primer-plano-de-un-equipo-de-pesas-de-gimnasio-35567442/  |  consulta: "weight plates stack"
+hund4-01.jpg  <-  pozo-p-gs-cuerda\006.jpg  |  pexels (Pexels License)  |  autor: Tima Miroshnichenko  |  https://www.pexels.com/es-es/foto/hombre-sujetando-gimnasio-haciendo-ejercicio-6389510/  |  consulta: "battle rope floor"
+hund5-01.jpg  <-  pozo-p-gs-casillero\010.jpg  |  pexels (Pexels License)  |  autor: Chase Yaws  |  https://www.pexels.com/es-es/foto/sombras-luz-del-sol-tiro-vertical-casilleros-de-la-escuela-11513526/  |  consulta: "locker metal row"
+hund6-01.jpg  <-  pozo-p-gs-sala\001.jpg  |  pexels (Pexels License)  |  autor: Eduard Perez  |  https://www.pexels.com/es-es/foto/equipo-de-boxeo-organizado-en-almacenamiento-de-gimnasio-38497431/  |  consulta: "gym interior lights"
+mos1-01.jpg  <-  pozo-p-gs-pesa\011.jpg  |  pexels (Pexels License)  |  autor: cottonbro studio  |  https://www.pexels.com/es-es/foto/tetera-de-ceramica-negra-sobre-mesa-de-madera-marron-4753897/  |  consulta: "kettlebell dark"
+mos2-01.jpg  <-  pozo-p-gs-disco\009.jpg  |  pexels (Pexels License)  |  autor: foad shariyati  |  https://www.pexels.com/es-es/foto/primer-plano-de-una-pila-de-pesas-de-un-equipo-de-gimnasio-29084386/  |  consulta: "weight plates stack"
+mos3-01.jpg  <-  pozo-p-gs-mancuerna\001.jpg  |  pexels (Pexels License)  |  autor: Anete Lusina  |  https://www.pexels.com/es-es/foto/equipo-almacenamiento-estanteria-estantes-16513599/  |  consulta: "dumbbells rack dark"
+mos4-01.jpg  <-  pozo-p-gs-pesa\009.jpg  |  pexels (Pexels License)  |  autor: Julia Larson  |  https://www.pexels.com/es-es/foto/juguete-de-plastico-morado-y-negro-6455928/  |  consulta: "kettlebell dark"
+mos5-01.jpg  <-  pozo-p-gs-casillero\007.jpg  |  pexels (Pexels License)  |  autor: Dimitri Saveniers  |  https://www.pexels.com/es-es/foto/pared-minimalista-con-puerta-de-armario-abierta-29127637/  |  consulta: "locker metal row"
+mos6-01.jpg  <-  pozo-p-gs-cuerda\007.jpg  |  pexels (Pexels License)  |  autor: Tima Miroshnichenko  |  https://www.pexels.com/es-es/foto/hombre-gimnasio-en-forma-adecuado-6390228/  |  consulta: "battle rope floor"
+
+BRUMA (bruma-pag-0N.png y bruma-osc-0N.png, 30x20): las MISMAS fotos, recortadas a 3:2, reducidas y
+recoloreadas con C:\devs\demos\hacer-bruma.ps1 (clara >= 0,68 de luminancia / oscura <= 0,05). No suman fuentes.
+    pagina: hund5-01.jpg, mos3-01.jpg, mos5-01.jpg, hund2-01.jpg, hund3-01.jpg   |   oscuras: port-01.jpg, cita-01.jpg, mos1-01.jpg
+
+MAPA: iframe de Google Maps (embed publico, sin clave). No hay imagen de mapa.

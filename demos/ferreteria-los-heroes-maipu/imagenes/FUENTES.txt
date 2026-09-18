@@ -1,0 +1,22 @@
+FUENTES DE LAS IMAGENES - Ferreteria Los Heroes Rehecha el 16-09-2026 (presentacion antes que texto). Fotos de REFERENCIA de bancos libres: ninguna es del local; las verdaderas las tiene que mandar el negocio. 
+port-01.jpg  <-  pozo-p-142-piedra\001.jpg  |  pexels (Pexels License)  |  autor: Raghav Modi  |  https://www.pexels.com/es-es/foto/manos-cuchillo-labor-afilado-3893792/  |  consulta: "sharpening stone knife blade close up pexels"
+banda-01.jpg  <-  pozo-p-142-piedra\012.jpg  |  pexels (Pexels License)  |  autor: Ono  Kosuki  |  https://www.pexels.com/es-es/foto/cincel-de-afilado-artesanal-de-cultivos-en-taller-5973839/  |  consulta: "sharpening stone knife blade close up pexels"
+cita-01.jpg  <-  pozo-p-142-piedra\010.jpg  |  pexels (Pexels License)  |  autor: Matej  |  https://www.pexels.com/es-es/foto/foto-de-mano-con-chispa-716665/  |  consulta: "sharpening stone knife blade close up pexels"
+hund1-01.jpg  <-  pozo-p-142-meson\001.jpg  |  pexels (Pexels License)  |  autor: https://kaboompics.com/  |  https://www.pexels.com/es-es/foto/madera-gobernante-dirigente-regla-7285973/  |  consulta: "hardware store counter wood shelves pexels"
+hund2-01.jpg  <-  pozo-p-142-destornillador\012.jpg  |  pexels (Pexels License)  |  autor: Ksenia Chernaya  |  https://www.pexels.com/es-es/foto/construccion-industria-metal-diseno-5691659/  |  consulta: "screwdriver set tools close up pexels"
+hund3-01.jpg  <-  pozo-p-142-meson\005.jpg  |  pexels (Pexels License)  |  autor: Polina Tankilevitch  |  https://www.pexels.com/es-es/foto/carpinteria-reparar-materiales-tornillos-5583084/  |  consulta: "hardware store counter wood shelves pexels"
+hund4-01.jpg  <-  pozo-p-142-brocha\007.jpg  |  pexels (Pexels License)  |  autor: Lorena Martínez  |  https://www.pexels.com/es-es/foto/pintura-azul-sobre-superficie-blanca-2351865/  |  consulta: "paint brush bristles close up pexels"
+hund5-01.jpg  <-  pozo-p-142-huincha\005.jpg  |  pexels (Pexels License)  |  autor: Jerms  |  https://www.pexels.com/es-es/foto/efecto-desenfocado-numeros-tamano-profundidad-de-campo-5383189/  |  consulta: "measuring tape ruler close up pexels"
+hund6-01.jpg  <-  pozo-p-142-tijeras\005.jpg  |  pexels (Pexels License)  |  autor: Pavel Danilyuk  |  https://www.pexels.com/es-es/foto/tijeras-por-encima-de-la-cabeza-gastos-generales-monocromo-6461489/  |  consulta: "scissors blades close up pexels"
+mos1-01.jpg  <-  pozo-p-142-formon\007.jpg  |  pexels (Pexels License)  |  autor: Collab Media  |  https://www.pexels.com/es-es/foto/metal-mesa-naturaleza-muerta-conjunto-15209791/  |  consulta: "chisel blade wood workbench pexels"
+mos2-01.jpg  <-  pozo-p-142-cepillo\004.jpg  |  pexels (Pexels License)  |  autor: Ksenia Chernaya  |  https://www.pexels.com/es-es/foto/creativo-metal-de-madera-diseno-5691523/  |  consulta: "hand plane carpentry tool pexels"
+mos3-01.jpg  <-  pozo-p-142-piedra\004.jpg  |  pexels (Pexels License)  |  autor: Alexey Demidov  |  https://www.pexels.com/es-es/foto/piedra-gris-sobre-mesa-de-madera-11538983/  |  consulta: "sharpening stone knife blade close up pexels"
+mos4-01.jpg  <-  pozo-p-142-piedra\007.jpg  |  pexels (Pexels License)  |  autor: Ono  Kosuki  |  https://www.pexels.com/es-es/foto/cultivo-artesanal-trabajando-con-bloque-de-madera-sobre-lavabo-envejecido-5973826/  |  consulta: "sharpening stone knife blade close up pexels"
+mos5-01.jpg  <-  pozo-p-142-meson\002.jpg  |  pexels (Pexels License)  |  autor: Anete Lusina  |  https://www.pexels.com/es-es/foto/reparar-herramientas-en-contenedor-con-martillo-y-destornillador-4792478/  |  consulta: "hardware store counter wood shelves pexels"
+mos6-01.jpg  <-  pozo-p-142-piedra\001.jpg  |  pexels (Pexels License)  |  autor: Raghav Modi  |  https://www.pexels.com/es-es/foto/manos-cuchillo-labor-afilado-3893792/  |  consulta: "sharpening stone knife blade close up pexels"
+
+BRUMA (bruma-pag-0N.png y bruma-osc-0N.png, 30x20): las MISMAS fotos, recortadas a 3:2, reducidas y
+recoloreadas con C:\devs\demos\hacer-bruma.ps1 (clara >= 0,68 de luminancia / oscura <= 0,05). No suman fuentes.
+    pagina: port-01.jpg, hund4-01.jpg, cita-01.jpg, banda-01.jpg, mos3-01.jpg   |   oscuras: port-01.jpg, hund4-01.jpg, cita-01.jpg
+
+MAPA: iframe de Google Maps (embed publico, sin clave). No hay imagen de mapa.

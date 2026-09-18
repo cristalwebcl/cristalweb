@@ -1,0 +1,24 @@
+FUENTES DE LAS IMAGENES - One Health Rehecha el 18-09-2026 (presentacion antes que texto). Fotos de REFERENCIA de bancos libres: ninguna es del local; las verdaderas las tiene que mandar el negocio. 
+port-01.jpg  <-  pozo-p-167-living\009.jpg  |  pexels (Pexels License)  |  autor: Павел Гавриков  |  https://www.pexels.com/es-es/foto/animal-casa-perro-mascota-10180214/  |  consulta: "dog living room"
+banda-01.jpg  <-  pozo-p-167-regazo\004.jpg  |  pexels (Pexels License)  |  autor: Şüheda  Türkoğlu  |  https://www.pexels.com/es-es/foto/momento-acogedor-con-una-gata-calico-en-el-regazo-34652812/  |  consulta: "cat lap"
+cita-01.jpg  <-  pozo-p-167-regazo\007.jpg  |  pexels (Pexels License)  |  autor: Nam Quân Nguyễn  |  https://www.pexels.com/es-es/foto/hombre-mascota-pelo-piel-23948964/  |  consulta: "cat lap"
+hund1-01.jpg  <-  pozo-p-167-caricia\004.jpg  |  pexels (Pexels License)  |  autor: Evan Velez Saxer  |  https://www.pexels.com/es-es/foto/persona-sosteniendo-gato-atigrado-plateado-8828706/  |  consulta: "hand petting cat"
+hund2-01.jpg  <-  pozo-p-167-living\004.jpg  |  pexels (Pexels License)  |  autor: candace c  |  https://www.pexels.com/es-es/foto/doberman-descansando-en-una-sala-moderna-30874205/  |  consulta: "dog living room"
+hund3-01.jpg  <-  pozo-p-167-bano\008.jpg  |  pexels (Pexels License)  |  autor: Mike Art 🎥 Visual Creator | Photography and Video 📸  |  https://www.pexels.com/es-es/foto/un-border-collie-disfrutando-de-un-refrescante-bano-38420660/  |  consulta: "dog bath towel"
+hund4-01.jpg  <-  pozo-p-167-siesta\010.jpg  |  pexels (Pexels License)  |  autor: Mikkel Bendix  |  https://www.pexels.com/es-es/foto/perro-mascota-hogar-chimenea-7219543/  |  consulta: "dog sleeping home"
+hund5-01.jpg  <-  pozo-p-167-sofa\001.jpg  |  pexels (Pexels License)  |  autor: Kevin Villavicencio Hernandez  |  https://www.pexels.com/es-es/foto/perro-mascota-cabeza-habitacion-18146031/  |  consulta: "dog sofa family"
+hund6-01.jpg  <-  pozo-p-167-ventana\008.jpg  |  pexels (Pexels License)  |  autor: Radis B  |  https://www.pexels.com/es-es/foto/gato-pelirrojo-relajandose-junto-a-una-ventana-soleada-35771116/  |  consulta: "cat window"
+mos1-01.jpg  <-  pozo-p-167-manos\008.jpg  |  pexels (Pexels License)  |  autor: Sora Shimazaki  |  https://www.pexels.com/es-es/foto/persona-lavando-fregadero-de-ceramica-blanca-5938593/  |  consulta: "washing hands"
+mos2-01.jpg  <-  pozo-p-167-juntos\004.jpg  |  pexels (Pexels License)  |  autor: Ioan-Dan Plesa  |  https://www.pexels.com/es-es/foto/primer-plano-de-un-perro-y-un-gato-sentados-juntos-14770947/  |  consulta: "cat dog together"
+mos3-01.jpg  <-  pozo-p-167-juntos\005.jpg  |  pexels (Pexels License)  |  autor: Eduardo López  |  https://www.pexels.com/es-es/foto/cabeza-de-gato-negro-sobre-un-cuenco-de-comida-16618549/  |  consulta: "cat dog together"
+mos4-01.jpg  <-  pozo-p-167-paseo\011.jpg  |  pexels (Pexels License)  |  autor: Ludovic Delot  |  https://www.pexels.com/es-es/foto/chihuahua-con-correa-en-parque-de-otono-33489747/  |  consulta: "dog walk leash"
+mos5-01.jpg  <-  pozo-p-167-juntos\010.jpg  |  pexels (Pexels License)  |  autor: Alex Jaison  |  https://www.pexels.com/es-es/foto/perro-y-gato-parados-juntos-en-la-naturaleza-28852102/  |  consulta: "cat dog together"
+mos6-01.jpg  <-  pozo-p-167-regazo\011.jpg  |  pexels (Pexels License)  |  autor: Dominik Gryzbon  |  https://www.pexels.com/es-es/foto/adorable-gatito-descansando-en-el-regazo-de-una-persona-30577794/  |  consulta: "cat lap"
+
+BRUMA (bruma-pag-0N.png y bruma-osc-0N.png, 30x20): las MISMAS fotos, recortadas a 3:2, reducidas y
+recoloreadas con C:\devs\demos\hacer-bruma.ps1 (clara >= 0,68 de luminancia / oscura <= 0,05). No suman fuentes.
+    pagina: port-01.jpg, hund6-01.jpg, mos5-01.jpg, hund1-01.jpg, mos2-01.jpg (todas a -Sat 0.6)   |   oscuras: banda-01.jpg, cita-01.jpg, hund4-01.jpg
+
+MAPA: iframe de Google Maps (embed publico, sin clave). No hay imagen de mapa.
+
+hund2-01.jpg: recorte a mano (franja x 0,28-1 del original, recortar-manual.ps1) para dejar fuera una repisa con la caja de un juego que se leia.

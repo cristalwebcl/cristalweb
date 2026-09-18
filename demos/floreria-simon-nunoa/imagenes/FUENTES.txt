@@ -1,0 +1,22 @@
+FUENTES DE LAS IMAGENES - Floreria Simon Rehecha el 16-09-2026 (presentacion antes que texto). Fotos de REFERENCIA de bancos libres: ninguna es del local; las verdaderas las tiene que mandar el negocio. 
+port-01.jpg  <-  pozo-p-fs-balde\009.jpg  |  pexels (Pexels License)  |  autor: Yelena from Pexels  |  https://www.pexels.com/es-es/foto/flores-petalos-floraciones-fresco-12237096/  |  consulta: "flower shop buckets"
+banda-01.jpg  <-  pozo-p-fs-tijera\003.jpg  |  pexels (Pexels License)  |  autor: cottonbro studio  |  https://www.pexels.com/es-es/foto/manos-flores-petalos-planta-4499858/  |  consulta: "cutting stems scissors"
+cita-01.jpg  <-  pozo-p-fs-balde\010.jpg  |  pexels (Pexels License)  |  autor: Carolin Wenske  |  https://www.pexels.com/es-es/foto/flores-seleccion-abundancia-ramos-de-flores-20079574/  |  consulta: "flower shop buckets"
+hund1-01.jpg  <-  pozo-p-fs-girasol\009.jpg  |  pexels (Pexels License)  |  autor: Betül  |  https://www.pexels.com/es-es/foto/ramo-brillante-de-girasoles-junto-a-la-ventana-37540174/  |  consulta: "sunflower bouquet"
+hund2-01.jpg  <-  pozo-p-fs-rosa\010.jpg  |  pexels (Pexels License)  |  autor: Tanya Budchenko  |  https://www.pexels.com/es-es/foto/flores-petalos-plantas-rosas-18829227/  |  consulta: "roses close up"
+hund3-01.jpg  <-  pozo-p-fs-orquidea\001.jpg  |  pexels (Pexels License)  |  autor: León Morgado  |  https://www.pexels.com/es-es/foto/flores-planta-blanco-maceta-20723167/  |  consulta: "orchid plant pot"
+hund4-01.jpg  <-  pozo-p-fs-tulipan\007.jpg  |  pexels (Pexels License)  |  autor: Unaizat Abdulgamidova  |  https://www.pexels.com/es-es/foto/flores-regalo-ramo-de-flores-arreglo-16029619/  |  consulta: "tulips bunch"
+hund5-01.jpg  <-  pozo-p-fs-papel\011.jpg  |  pexels (Pexels License)  |  autor: betül nur akyürek  |  https://www.pexels.com/es-es/foto/ramo-de-flores-rusticas-en-papel-vintage-34411976/  |  consulta: "wrapping paper flowers"
+hund6-01.jpg  <-  pozo-p-fs-tijera\010.jpg  |  pexels (Pexels License)  |  autor: Teona Swift  |  https://www.pexels.com/es-es/foto/persona-mano-planta-sin-rostro-6913140/  |  consulta: "cutting stems scissors"
+mos1-01.jpg  <-  pozo-p-fs-girasol\003.jpg  |  pexels (Pexels License)  |  autor: Yesmeurys mateo  |  https://www.pexels.com/es-es/foto/campo-amarillo-petalos-planta-18784378/  |  consulta: "sunflower bouquet"
+mos2-01.jpg  <-  pozo-p-fs-florero\007.jpg  |  pexels (Pexels License)  |  autor: Cilanaa  |  https://www.pexels.com/es-es/foto/agua-flores-petalos-bote-de-cristal-5369117/  |  consulta: "vase water flowers"
+mos3-01.jpg  <-  pozo-p-fs-orquidea\006.jpg  |  pexels (Pexels License)  |  autor: Chiaroscuro  |  https://www.pexels.com/es-es/foto/flores-jardin-petalos-color-19901484/  |  consulta: "orchid plant pot"
+mos4-01.jpg  <-  pozo-p-fs-tulipan\009.jpg  |  pexels (Pexels License)  |  autor: Unaizat Abdulgamidova  |  https://www.pexels.com/es-es/foto/flores-ramo-de-flores-celebracion-vista-de-alto-angulo-16029590/  |  consulta: "tulips bunch"
+mos5-01.jpg  <-  pozo-p-fs-papel\007.jpg  |  pexels (Pexels License)  |  autor: https://kaboompics.com/  |  https://www.pexels.com/es-es/foto/naturaleza-modelo-estampado-efecto-desenfocado-4467142/  |  consulta: "wrapping paper flowers"
+mos6-01.jpg  <-  pozo-p-fs-balde\005.jpg  |  pexels (Pexels License)  |  autor: Efrem  Efre  |  https://www.pexels.com/es-es/foto/vibrantes-ramos-de-flores-primaverales-en-el-mercado-de-gotemburgo-31105907/  |  consulta: "flower shop buckets"
+
+BRUMA (bruma-pag-0N.png y bruma-osc-0N.png, 30x20): las MISMAS fotos, recortadas a 3:2, reducidas y
+recoloreadas con C:\devs\demos\hacer-bruma.ps1 (clara >= 0,68 de luminancia / oscura <= 0,05). No suman fuentes.
+    pagina: mos2-01.jpg, hund5-01.jpg, mos5-01.jpg, hund4-01.jpg, mos4-01.jpg   |   oscuras: port-01.jpg, hund3-01.jpg, hund2-01.jpg
+
+MAPA: iframe de Google Maps (embed publico, sin clave). No hay imagen de mapa.

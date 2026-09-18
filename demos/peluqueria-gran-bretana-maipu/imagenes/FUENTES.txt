@@ -1,0 +1,22 @@
+FUENTES DE LAS IMAGENES - Peluqueria Gran Bretana Rehecha el 16-09-2026 (presentacion antes que texto). Fotos de REFERENCIA de bancos libres: ninguna es del local; las verdaderas las tiene que mandar el negocio. 
+port-01.jpg  <-  pozo-p-gb-espejo\003.jpg  |  pexels (Pexels License)  |  autor: Daniel Shi  |  https://www.pexels.com/es-es/foto/bombillas-encendidas-2271456/  |  consulta: "mirror light bulbs"
+banda-01.jpg  <-  pozo-p-gb-secador\006.jpg  |  pexels (Pexels License)  |  autor: Daniil Kondrashin  |  https://www.pexels.com/es-es/foto/mujer-pincel-cepillo-cepillar-14615063/  |  consulta: "hair dryer brush"
+cita-01.jpg  <-  pozo-p-gb-calle\011.jpg  |  pexels (Pexels License)  |  autor: Erik Mclean  |  https://www.pexels.com/es-es/foto/ciudad-noche-abstracto-resumen-9174347/  |  consulta: "street lights night blurred"
+hund1-01.jpg  <-  pozo-p-gb-secador\003.jpg  |  pexels (Pexels License)  |  autor: Ron Lach  |  https://www.pexels.com/es-es/foto/pincel-cepillo-cepillar-secador-de-pelo-10574050/  |  consulta: "hair dryer brush"
+hund2-01.jpg  <-  pozo-p-gb-toalla\010.jpg  |  pexels (Pexels License)  |  autor: Gustavo Fring  |  https://www.pexels.com/es-es/foto/manos-toalla-peluquero-barbero-7447143/  |  consulta: "hot towel rolled"
+hund3-01.jpg  <-  pozo-p-gb-unas\005.jpg  |  pexels (Pexels License)  |  autor: Leeloo The First  |  https://www.pexels.com/es-es/foto/persona-vestida-con-reloj-led-negro-y-gris-4677850/  |  consulta: "manicure lamp table"
+hund4-01.jpg  <-  pozo-p-gb-pestana\005.jpg  |  pexels (Pexels License)  |  autor: Nataliya Vaitkevich  |  https://www.pexels.com/es-es/foto/oro-dorado-naturaleza-muerta-bandeja-5128316/  |  consulta: "tweezers eyelash"
+hund5-01.jpg  <-  pozo-p-gb-toalla\004.jpg  |  pexels (Pexels License)  |  autor: DΛVΞ GΛRCIΛ  |  https://www.pexels.com/es-es/foto/elegante-mesa-con-plato-de-ceramica-y-palillos-33432652/  |  consulta: "hot towel rolled"
+hund6-01.jpg  <-  pozo-p-gb-toalla\003.jpg  |  pexels (Pexels License)  |  autor: Engin Akyurt  |  https://www.pexels.com/es-es/foto/toalla-gris-enrollada-en-foto-en-primer-plano-2672634/  |  consulta: "hot towel rolled"
+mos1-01.jpg  <-  pozo-p-gb-espejo\008.jpg  |  pexels (Pexels License)  |  autor: RDNE Stock project  |  https://www.pexels.com/es-es/foto/chrome-cromo-iluminado-bombillas-7697194/  |  consulta: "mirror light bulbs"
+mos2-01.jpg  <-  pozo-p-gb-espejo\012.jpg  |  pexels (Pexels License)  |  autor: Leticia Ribeiro  |  https://www.pexels.com/es-es/foto/cajon-de-madera-vintage-con-espejo-y-luces-2112646/  |  consulta: "mirror light bulbs"
+mos3-01.jpg  <-  pozo-p-gb-espejo\005.jpg  |  pexels (Pexels License)  |  autor: Alexander Mass  |  https://www.pexels.com/es-es/foto/vintage-rustico-iluminacion-reflejo-27623999/  |  consulta: "mirror light bulbs"
+mos4-01.jpg  <-  pozo-p-gb-unas\001.jpg  |  pexels (Pexels License)  |  autor: Gustavo Fring  |  https://www.pexels.com/es-es/foto/hombre-manos-gente-mujer-7446919/  |  consulta: "manicure lamp table"
+mos5-01.jpg  <-  pozo-p-gb-pestana\004.jpg  |  pexels (Pexels License)  |  autor: Nataliya Vaitkevich  |  https://www.pexels.com/es-es/foto/herramientas-afilado-puntiagudo-acero-inoxidable-5128318/  |  consulta: "tweezers eyelash"
+mos6-01.jpg  <-  pozo-p-gb-calle\012.jpg  |  pexels (Pexels License)  |  autor: Mathias Reding  |  https://www.pexels.com/es-es/foto/luces-bokeh-desenfocado-borroso-11297766/  |  consulta: "street lights night blurred"
+
+BRUMA (bruma-pag-0N.png y bruma-osc-0N.png, 30x20): las MISMAS fotos, recortadas a 3:2, reducidas y
+recoloreadas con C:\devs\demos\hacer-bruma.ps1 (clara >= 0,68 de luminancia / oscura <= 0,05). No suman fuentes.
+    pagina: mos1-01.jpg, mos2-01.jpg, hund2-01.jpg, mos3-01.jpg, hund4-01.jpg   |   oscuras: cita-01.jpg, port-01.jpg, mos6-01.jpg
+
+MAPA: iframe de Google Maps (embed publico, sin clave). No hay imagen de mapa.

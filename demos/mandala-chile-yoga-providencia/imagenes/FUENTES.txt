@@ -1,0 +1,22 @@
+FUENTES DE LAS IMAGENES - Mandala Chile Yoga Rehecha el 16-09-2026 (presentacion antes que texto). Fotos de REFERENCIA de bancos libres: ninguna es del local; las verdaderas las tiene que mandar el negocio. 
+port-01.jpg  <-  pozo-p-188-silueta\003.jpg  |  pexels (Pexels License)  |  autor: Vitaly Gariev  |  https://www.pexels.com/es-es/foto/ligero-cielo-mujer-arte-22691123/  |  consulta: "yoga pose silhouette window light pexels"
+banda-01.jpg  <-  pozo-p-188-silueta\010.jpg (espejada con WIC)  |  pexels (Pexels License, permite modificarla)  |  autor: Emrah Yazıcıoğlu  |  https://www.pexels.com/es-es/foto/persona-mujer-silueta-reflejo-15427430/  |  consulta: "yoga pose silhouette window light pexels"
+cita-01.jpg  <-  pozo-p-188-ventana\006.jpg  |  pexels (Pexels License)  |  autor: Elena Golovchenko  |  https://www.pexels.com/es-es/foto/hojas-ventanas-plantas-macetas-15232401/  |  consulta: "window plants soft light studio pexels"
+hund1-01.jpg  <-  pozo-p-188-silueta\007.jpg  |  pexels (Pexels License)  |  autor: furkanfdemir  |  https://www.pexels.com/es-es/foto/persona-irreconocible-parada-sobre-su-cabeza-en-una-habitacion-cerca-de-una-ventana-6842375/  |  consulta: "yoga pose silhouette window light pexels"
+hund2-01.jpg  <-  pozo-p-188-yin\008.jpg  |  pexels (Pexels License)  |  autor: Klaus Nielsen  |  https://www.pexels.com/es-es/foto/persona-en-pantalones-cortos-negros-sentada-en-estera-de-yoga-azul-6303447/  |  consulta: "restorative yoga bolster blanket pexels"
+hund3-01.jpg  <-  pozo-p-188-prenatal\008.jpg  |  pexels (Pexels License)  |  autor: Antoni Shkraba  |  https://www.pexels.com/es-es/foto/persona-mujer-ejercicio-yoga-7524705/  |  consulta: "pregnant woman yoga mat pexels"
+hund4-01.jpg  <-  pozo-p-188-cojin\008.jpg  |  pexels (Pexels License)  |  autor: Thirdman  |  https://www.pexels.com/es-es/foto/mano-yoga-bienestar-mudra-6958260/  |  consulta: "meditation cushion candle calm pexels"
+hund5-01.jpg  <-  pozo-p-188-sala\009.jpg  |  pexels (Pexels License)  |  autor: Gizem Erim  |  https://www.pexels.com/es-es/foto/estudio-de-yoga-interior-tranquilo-con-esterillas-y-plantas-39236379/  |  consulta: "yoga studio empty mats wooden floor pexels"
+hund6-01.jpg  <-  pozo-p-188-manos\003.jpg  |  pexels (Pexels License)  |  autor: Rainer Eck  |  https://www.pexels.com/es-es/foto/mano-meditando-atencion-plena-mudra-6867682/  |  consulta: "yoga hands mudra close up pexels"
+mos1-01.jpg  <-  pozo-p-188-sala\011.jpg  |  pexels (Pexels License)  |  autor: cottonbro studio  |  https://www.pexels.com/es-es/foto/fitnes-fitness-gimnasio-adentro-4325439/  |  consulta: "yoga studio empty mats wooden floor pexels"
+mos2-01.jpg  <-  pozo-p-188-sala\012.jpg  |  pexels (Pexels License)  |  autor: Yan Krukau  |  https://www.pexels.com/es-es/foto/mesa-naturaleza-muerta-enrollado-fotografia-de-bodegones-8437013/  |  consulta: "yoga studio empty mats wooden floor pexels"
+mos3-01.jpg  <-  pozo-p-188-luz\003.jpg  |  pexels (Pexels License)  |  autor: Connor Scott McManus  |  https://www.pexels.com/es-es/foto/oscuro-vintage-habitacion-interior-14866147/  |  consulta: "wooden floor sunlight shadow pexels"
+mos4-01.jpg  <-  pozo-p-188-manos\007.jpg  |  pexels (Pexels License)  |  autor: Michael Kessel  |  https://www.pexels.com/es-es/foto/persona-mano-yoga-dedos-11109494/  |  consulta: "yoga hands mudra close up pexels"
+mos5-01.jpg  <-  pozo-p-188-ventana\012.jpg  |  pexels (Pexels License)  |  autor: Alina Vilchenko  |  https://www.pexels.com/es-es/foto/plantas-cerca-de-la-ventana-2114771/  |  consulta: "window plants soft light studio pexels"
+mos6-01.jpg  <-  pozo-p-188-sala\002.jpg  |  pexels (Pexels License)  |  autor: Zulema Laborde  |  https://www.pexels.com/es-es/foto/interior-de-un-tranquilo-estudio-de-yoga-en-argentina-38470685/  |  consulta: "yoga studio empty mats wooden floor pexels"
+
+BRUMA (bruma-pag-0N.png y bruma-osc-0N.png, 30x20): las MISMAS fotos, recortadas a 3:2, reducidas y
+recoloreadas con C:\devs\demos\hacer-bruma.ps1 (clara >= 0,68 de luminancia / oscura <= 0,05). No suman fuentes.
+    pagina: mos6-01.jpg, hund6-01.jpg, hund1-01.jpg, mos2-01.jpg, hund4-01.jpg   |   oscuras: mos6-01.jpg, hund6-01.jpg, hund1-01.jpg
+
+MAPA: iframe de Google Maps (embed publico, sin clave). No hay imagen de mapa.

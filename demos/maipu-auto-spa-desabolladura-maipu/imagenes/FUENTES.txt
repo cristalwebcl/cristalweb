@@ -1,0 +1,22 @@
+FUENTES DE LAS IMAGENES - Maipu Auto Spa Rehecha el 16-09-2026 (presentacion antes que texto). Fotos de REFERENCIA de bancos libres: ninguna es del local; las verdaderas las tiene que mandar el negocio. 
+port-01.jpg  <-  pozo-p-159-cabina\003.jpg  |  pexels (Pexels License)  |  autor: Dextar Studio ™  |  https://www.pexels.com/es-es/foto/hombre-pintura-pintando-cuadro-14615263/  |  consulta: "car paint booth spray gun pexels"
+banda-01.jpg  <-  pozo-p-159-cabina\011.jpg  |  pexels (Pexels License)  |  autor: cottonbro studio  |  https://www.pexels.com/es-es/foto/coche-vehiculo-interior-herramientas-4480507/  |  consulta: "car paint booth spray gun pexels"
+cita-01.jpg  <-  pozo-p-159-cabina\012.jpg  |  pexels (Pexels License)  |  autor: cottonbro studio  |  https://www.pexels.com/es-es/foto/coche-vehiculo-vintage-antiguo-4489775/  |  consulta: "car paint booth spray gun pexels"
+hund1-01.jpg  <-  pozo-p-159-abolladura\005.jpg  |  pexels (Pexels License)  |  autor: Mathias Reding  |  https://www.pexels.com/es-es/foto/puerta-chrome-cromo-coche-clasico-7916793/  |  consulta: "car door panel dent close up pexels"
+hund2-01.jpg  <-  pozo-p-159-cinta\008.jpg  |  pexels (Pexels License)  |  autor: Michael Burrows  |  https://www.pexels.com/es-es/foto/manos-caja-guantes-cinta-7147756/  |  consulta: "masking tape car panel repair hands pexels"
+hund3-01.jpg  <-  pozo-p-159-cinta\009.jpg  |  pexels (Pexels License)  |  autor: Gustavo Fring  |  https://www.pexels.com/es-es/foto/mano-fumigando-rociando-pistola-de-pintura-6870314/  |  consulta: "masking tape car panel repair hands pexels"
+hund4-01.jpg  <-  pozo-p-159-capot\003.jpg  |  pexels (Pexels License)  |  autor: chickenbunny  |  https://www.pexels.com/es-es/foto/coche-vehiculo-reflejo-reflexion-10905354/  |  consulta: "polished car hood reflection pexels"
+hund5-01.jpg  <-  pozo-p-159-foco\004.jpg  |  pexels (Pexels License)  |  autor: Borta  |  https://www.pexels.com/es-es/foto/primer-plano-de-un-faro-de-coche-con-diseno-moderno-30825546/  |  consulta: "car headlight polish close up pexels"
+hund6-01.jpg  <-  pozo-p-159-negro\010.jpg  |  pexels (Pexels License)  |  autor: Ekam Juneja  |  https://www.pexels.com/es-es/foto/coche-puerta-puertas-espejo-retrovisor-17186121/  |  consulta: "black car body panel reflection close up pexels"
+mos1-01.jpg  <-  pozo-p-159-taller\004.jpg  |  pexels (Pexels License)  |  autor: Miguel Á. Padriñán  |  https://www.pexels.com/es-es/foto/blanco-y-negro-herramientas-colgando-taller-16679590/  |  consulta: "workshop tools compressor hose pexels"
+mos2-01.jpg  <-  pozo-p-159-negro\003.jpg  |  pexels (Pexels License)  |  autor: Pablo Fernandez  |  https://www.pexels.com/es-es/foto/interior-de-coche-de-lujo-con-detalles-de-la-bandera-britanica-39408509/  |  consulta: "black car body panel reflection close up pexels"
+mos3-01.jpg  <-  pozo-p-159-negro\004.jpg  |  pexels (Pexels License)  |  autor: Anil Chandran  |  https://www.pexels.com/es-es/foto/primer-plano-de-un-elegante-espejo-retrovisor-de-coche-negro-con-reflejos-32667390/  |  consulta: "black car body panel reflection close up pexels"
+mos4-01.jpg  <-  pozo-p-159-cabina\006.jpg  |  pexels (Pexels License)  |  autor: Tima Miroshnichenko  |  https://www.pexels.com/es-es/foto/blanco-y-negro-naturaleza-muerta-objeto-objetar-6474297/  |  consulta: "car paint booth spray gun pexels"
+mos5-01.jpg  <-  pozo-p-159-negro\008.jpg  |  pexels (Pexels License)  |  autor: Maria Geller  |  https://www.pexels.com/es-es/foto/fotografia-de-enfoque-superficial-del-guardabarros-de-coche-negro-2127020/  |  consulta: "black car body panel reflection close up pexels"
+mos6-01.jpg  <-  pozo-p-159-tapabarro\005.jpg  |  pexels (Pexels License)  |  autor: Pablo Fernandez  |  https://www.pexels.com/es-es/foto/primer-plano-del-diseno-de-la-ventilacion-del-coche-deportivo-rojo-39408533/  |  consulta: "car wheel arch detail close up pexels"
+
+BRUMA (bruma-pag-0N.png y bruma-osc-0N.png, 30x20): las MISMAS fotos, recortadas a 3:2, reducidas y
+recoloreadas con C:\devs\demos\hacer-bruma.ps1 (clara >= 0,68 de luminancia / oscura <= 0,05). No suman fuentes.
+    pagina: port-01.jpg, banda-01.jpg, cita-01.jpg, mos6-01.jpg, hund4-01.jpg   |   oscuras: port-01.jpg, cita-01.jpg, hund1-01.jpg
+
+MAPA: iframe de Google Maps (embed publico, sin clave). No hay imagen de mapa.

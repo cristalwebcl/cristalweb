@@ -1,0 +1,9 @@
+BEGIN:VCARD
+VERSION:3.0
+N:;SUDENT Urgencia Dental Maipú;;;
+FN:SUDENT Urgencia Dental Maipú
+ORG:SUDENT
+TEL;TYPE=CELL,VOICE:+56931811912
+ADR;TYPE=WORK:;;Av. Los Pajaritos 3195\, Of. 505;Maipú;Región Metropolitana;;Chile
+NOTE:Urgencia dental. Llamar antes de ir.
+END:VCARD

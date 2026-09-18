@@ -1,0 +1,22 @@
+FUENTES DE LAS IMAGENES - Veterinaria Animalitos Rehecha el 16-09-2026 (presentacion antes que texto). Fotos de REFERENCIA de bancos libres: ninguna es del local; las verdaderas las tiene que mandar el negocio. 
+port-01.jpg  <-  pozo-p-143-auto\011.jpg  |  pexels (Pexels License)  |  autor: Ludovic Delot  |  https://www.pexels.com/es-es/foto/acogedor-retrato-interior-de-un-gato-pelirrojo-relajandose-31440969/  |  consulta: "cat in car"
+banda-01.jpg  <-  pozo-p-143-manta\008.jpg  |  pexels (Pexels License)  |  autor: Nhà văn  |  https://www.pexels.com/es-es/foto/observando-gatos-domesticos-jugando-alegremente-bajo-la-calida-luz-del-sol-de-la-manana-33300588/  |  consulta: "cat sleeping blanket"
+cita-01.jpg  <-  pozo-p-143-vet\011.jpg  |  pexels (Pexels License)  |  autor: Thirdman  |  https://www.pexels.com/es-es/foto/mono-gato-adorable-peludo-8942612/  |  consulta: "veterinarian cat"
+hund1-01.jpg  <-  pozo-p-143-transportadora\006.jpg  |  pexels (Pexels License)  |  autor: Huy Phan  |  https://www.pexels.com/es-es/foto/animal-mascota-mono-gato-domestico-10292639/  |  consulta: "cat carrier"
+hund2-01.jpg  <-  pozo-p-143-perro\005.jpg  |  pexels (Pexels License)  |  autor: PubPro  |  https://www.pexels.com/es-es/foto/retrato-de-perro-34493380/  |  consulta: "dog veterinarian"
+hund3-01.jpg  <-  pozo-p-143-conejo\012.jpg  |  pexels (Pexels License)  |  autor: Tima Miroshnichenko  |  https://www.pexels.com/es-es/foto/manos-amor-animal-mascota-6845807/  |  consulta: "rabbit pet"
+hund4-01.jpg  <-  pozo-p-143-roedor\007.jpg  |  pexels (Pexels License)  |  autor: Sharon  Snider  |  https://www.pexels.com/es-es/foto/mono-roedor-mullido-fotografia-de-animales-4520483/  |  consulta: "hamster"
+hund5-01.jpg  <-  pozo-p-143-peluqueria\002.jpg  |  pexels (Pexels License)  |  autor: Eduardo López  |  https://www.pexels.com/es-es/foto/perro-marron-parado-sobre-fondo-negro-16618528/  |  consulta: "dog grooming"
+hund6-01.jpg  <-  pozo-p-143-consulta\006.jpg  |  pexels (Pexels License)  |  autor: Ivan S  |  https://www.pexels.com/es-es/foto/hombre-manos-profesional-doctor-4989130/  |  consulta: "stethoscope"
+mos1-01.jpg  <-  pozo-p-143-manta\009.jpg  |  pexels (Pexels License)  |  autor: Magalie Parise  |  https://www.pexels.com/es-es/foto/charla-alegre-30667925/  |  consulta: "cat sleeping blanket"
+mos2-01.jpg  <-  pozo-p-143-roedor\006.jpg  |  pexels (Pexels License)  |  autor: Ellie Burgin  |  https://www.pexels.com/es-es/foto/comiendo-mono-roedor-hamster-3432929/  |  consulta: "hamster"
+mos3-01.jpg  <-  pozo-p-143-vet\006.jpg  |  pexels (Pexels License)  |  autor: Tara Bellerose  |  https://www.pexels.com/es-es/foto/animal-mamifero-profundidad-de-campo-felino-12174037/  |  consulta: "veterinarian cat"
+mos4-01.jpg  <-  pozo-p-143-perro\002.jpg  |  pexels (Pexels License)  |  autor: Adrian Arellano  |  https://www.pexels.com/es-es/foto/perro-mascota-mirando-canino-18352455/  |  consulta: "dog veterinarian"
+mos5-01.jpg  <-  pozo-p-143-vet\010.jpg  |  pexels (Pexels License)  |  autor: Ludovic Delot  |  https://www.pexels.com/es-es/foto/adorable-gato-pelirrojo-descansando-en-el-interior-31440952/  |  consulta: "veterinarian cat"
+mos6-01.jpg  <-  pozo-p-143-gato\010.jpg  |  pexels (Pexels License)  |  autor: Ludovic Delot  |  https://www.pexels.com/es-es/foto/gato-atigrado-naranja-sentado-en-un-taburete-interior-31440976/  |  consulta: "cat eyes close up"
+
+BRUMA (bruma-pag-0N.png y bruma-osc-0N.png, 30x20): las MISMAS fotos, recortadas a 3:2, reducidas y
+recoloreadas con C:\devs\demos\hacer-bruma.ps1 (clara >= 0,68 de luminancia / oscura <= 0,05). No suman fuentes.
+    pagina: mos1-01.jpg, hund4-01.jpg, mos5-01.jpg, hund1-01.jpg, banda-01.jpg (todas a -Sat 0.6)   |   oscuras: mos1-01.jpg, mos5-01.jpg, hund4-01.jpg
+
+MAPA: iframe de Google Maps (embed publico, sin clave). No hay imagen de mapa.

@@ -1,0 +1,22 @@
+FUENTES DE LAS IMAGENES - Cerrajeria La Hatillana Rehecha el 17-09-2026 (presentacion antes que texto). Fotos de REFERENCIA de bancos libres: ninguna es del local; las verdaderas las tiene que mandar el negocio. 
+port-01.jpg  <-  pozo-p-197-calle\005.jpg  |  pexels (Pexels License)  |  autor: Mauricio Peña  |  https://www.pexels.com/es-es/foto/santa-mot-20351980/  |  consulta: "shop street evening"
+banda-01.jpg  <-  pozo-p-197-persiana\006.jpg  |  pexels (Pexels License)  |  autor: Jan van der Wolf  |  https://www.pexels.com/es-es/foto/diseno-minimalista-abstracto-con-patrones-geometricos-36738232/  |  consulta: "roller shutter"
+cita-01.jpg  <-  pozo-p-197-calle\009.jpg (recortada: sin el 30 % de abajo, donde hay letreros en turco)  |  pexels (Pexels License)  |  autor: Sami  Aksu  |  https://www.pexels.com/es-es/foto/noche-calle-edificios-viaje-10033415/  |  consulta: "shop street evening"
+hund1-01.jpg  <-  pozo-p-197-llaves\008.jpg  |  pexels (Pexels License)  |  autor: George Becker  |  https://www.pexels.com/es-es/foto/llaves-de-color-laton-333838/  |  consulta: "brass keys"
+hund2-01.jpg  <-  pozo-p-197-cerradura\009.jpg  |  pexels (Pexels License)  |  autor: khairul nizam  |  https://www.pexels.com/es-es/foto/fotografia-en-primer-plano-de-la-palanca-y-la-cerradura-de-la-puerta-de-acero-inoxidable-gris-16515/  |  consulta: "door lock"
+hund3-01.jpg  <-  pozo-p-197-candado\010.jpg  |  pexels (Pexels License)  |  autor: Heru Dharma  |  https://www.pexels.com/es-es/foto/candado-oxidado-en-puerta-de-metal-deteriorada-33550139/  |  consulta: "padlock closed"
+hund4-01.jpg  <-  pozo-p-197-llavero\007.jpg  |  pexels (Pexels License)  |  autor: Patrick  |  https://www.pexels.com/es-es/foto/primer-plano-de-las-teclas-sobre-una-superficie-de-tela-decorativa-31816627/  |  consulta: "keyring"
+hund5-01.jpg  <-  pozo-p-197-local\003.jpg  |  pexels (Pexels License)  |  autor: Franco Garcia  |  https://www.pexels.com/es-es/foto/ligero-noche-oscuro-modelo-26598990/  |  consulta: "storefront closed night"
+hund6-01.jpg  <-  pozo-p-197-manilla\005.jpg  |  pexels (Pexels License)  |  autor: Chris F  |  https://www.pexels.com/es-es/foto/blanco-y-negro-puerta-chrome-cromo-21430428/  |  consulta: "metal door handle"
+mos1-01.jpg  <-  pozo-p-197-llaves\002.jpg  |  pexels (Pexels License)  |  autor: Magda Ehlers  |  https://www.pexels.com/es-es/foto/coleccion-de-llaves-de-laton-vintage-en-exhibicion-33388008/  |  consulta: "brass keys"
+mos2-01.jpg  <-  pozo-p-197-candado\009.jpg  |  pexels (Pexels License)  |  autor: Maurijn Pach  |  https://www.pexels.com/es-es/foto/puerta-cerrado-bloqueado-cerrado-con-llave-546946/  |  consulta: "padlock closed"
+mos3-01.jpg  <-  pozo-p-197-cadena\004.jpg  |  pexels (Pexels License)  |  autor: Wolfgang Vrede  |  https://www.pexels.com/es-es/foto/puerta-rustica-de-madera-con-cadena-y-candado-31465771/  |  consulta: "chain lock gate"
+mos4-01.jpg  <-  pozo-p-197-manilla\009.jpg  |  pexels (Pexels License)  |  autor: Tomé  Louro  |  https://www.pexels.com/es-es/foto/perilla-de-puerta-gris-830899/  |  consulta: "metal door handle"
+mos5-01.jpg  <-  pozo-p-197-manilla\010.jpg  |  pexels (Pexels License)  |  autor: 𝗛&𝗖𝗢 　  |  https://www.pexels.com/es-es/foto/foto-en-escala-de-grises-de-la-palanca-de-la-puerta-gris-y-el-panel-de-la-puerta-blanco-2835653/  |  consulta: "metal door handle"
+mos6-01.jpg  <-  pozo-p-197-llaves\007.jpg  |  pexels (Pexels License)  |  autor: Sueda Gln  |  https://www.pexels.com/es-es/foto/antiguo-retro-coleccion-naturaleza-muerta-15446635/  |  consulta: "brass keys"
+
+BRUMA (bruma-pag-0N.png y bruma-osc-0N.png, 30x20): las MISMAS fotos, recortadas a 3:2, reducidas y
+recoloreadas con C:\devs\demos\hacer-bruma.ps1 (clara >= 0,68 de luminancia / oscura <= 0,05). No suman fuentes.
+    pagina: hund1-01.jpg, mos6-01.jpg, port-01.jpg, mos1-01.jpg, mos3-01.jpg (todas a -Sat 0.8; las puertas azules daban 84 % de píxeles fríos)   |   oscuras: hund1-01.jpg, mos6-01.jpg, port-01.jpg
+
+MAPA: iframe de Google Maps (embed publico, sin clave). No hay imagen de mapa.

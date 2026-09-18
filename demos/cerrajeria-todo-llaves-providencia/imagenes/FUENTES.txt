@@ -1,0 +1,22 @@
+FUENTES DE LAS IMAGENES - Cerrajeria Todo Llaves Rehecha el 16-09-2026 (presentacion antes que texto). Fotos de REFERENCIA de bancos libres: ninguna es del local; las verdaderas las tiene que mandar el negocio. 
+port-01.jpg  <-  pozo-p-tl-llave\006.jpg  |  pexels (Pexels License)  |  autor: Budget Bizar  |  https://www.pexels.com/es-es/foto/pared-muro-numeros-de-madera-15906452/  |  consulta: "keys hanging rack"
+banda-01.jpg  <-  pozo-p-tl-control\003.jpg  |  pexels (Pexels License)  |  autor: Daniel Andraski  |  https://www.pexels.com/es-es/foto/chave-do-carro-novo-11731972/  |  consulta: "car key fob"
+cita-01.jpg  <-  pozo-p-tl-puerta\006.jpg  |  pexels (Pexels License)  |  autor: terry narcissan tsui  |  https://www.pexels.com/es-es/foto/ligero-noche-oscuro-edificio-27408559/  |  consulta: "front door night"
+hund1-01.jpg  <-  pozo-p-tl-llave\001.jpg  |  pexels (Pexels License)  |  autor: Marcelo Chagas  |  https://www.pexels.com/es-es/foto/arte-creativo-construccion-textura-6682640/  |  consulta: "keys hanging rack"
+hund2-01.jpg  <-  pozo-p-tl-control\006.jpg  |  pexels (Pexels License)  |  autor: Abdulvahap Demir  |  https://www.pexels.com/es-es/foto/seguridad-plastico-botones-llave-del-coche-11017012/  |  consulta: "car key fob"
+hund3-01.jpg  <-  pozo-p-tl-cilindro\011.jpg  |  pexels (Pexels License)  |  autor: Kamil Čičila  |  https://www.pexels.com/es-es/foto/cerradura-antigua-en-puerta-de-madera-envejecida-39353211/  |  consulta: "door lock cylinder"
+hund4-01.jpg  <-  pozo-p-tl-candado\003.jpg  |  pexels (Pexels License)  |  autor: Damir K  |  https://www.pexels.com/es-es/foto/metal-puerta-cerrado-candado-15177504/  |  consulta: "padlock metal"
+hund5-01.jpg  <-  pozo-p-tl-cilindro\012.jpg  |  pexels (Pexels License)  |  autor: Stephen Llevares  |  https://www.pexels.com/es-es/foto/puerta-rustica-de-madera-desgastada-con-cerraduras-de-metal-30996086/  |  consulta: "door lock cylinder"
+hund6-01.jpg  <-  pozo-p-tl-puerta\005.jpg  |  pexels (Pexels License)  |  autor: Rosy Fields  |  https://www.pexels.com/es-es/foto/entrada-a-la-casa-iluminada-por-una-lampara-17908462/  |  consulta: "front door night"
+mos1-01.jpg  <-  pozo-p-tl-virgen\010.jpg  |  pexels (Pexels License)  |  autor: Magda Ehlers  |  https://www.pexels.com/es-es/foto/coleccion-de-llaves-de-laton-vintage-en-exhibicion-33388008/  |  consulta: "key blanks rows"
+mos2-01.jpg  <-  pozo-p-tl-candado\007.jpg  |  pexels (Pexels License)  |  autor: nicolas  guille  |  https://www.pexels.com/es-es/foto/naturaleza-textura-metal-conexion-14500399/  |  consulta: "padlock metal"
+mos3-01.jpg  <-  pozo-p-tl-puerta\009.jpg  |  pexels (Pexels License)  |  autor: Erik Mclean  |  https://www.pexels.com/es-es/foto/escaleras-oscuro-edificio-pasos-12973617/  |  consulta: "front door night"
+mos4-01.jpg  <-  pozo-p-tl-puerta\010.jpg  |  pexels (Pexels License)  |  autor: Patrick Bate  |  https://www.pexels.com/es-es/foto/encantadora-entrada-de-casa-nocturna-con-iluminacion-calida-36568998/  |  consulta: "front door night"
+mos5-01.jpg  <-  pozo-p-tl-manilla\009.jpg  |  pexels (Pexels License)  |  autor: Nikita Nikitin  |  https://www.pexels.com/es-es/foto/metal-puerta-picaporte-de-cerca-10719647/  |  consulta: "door handle lock"
+mos6-01.jpg  <-  pozo-p-tl-control\012.jpg  |  pexels (Pexels License)  |  autor: Lazaro  Rodriguez Jr  |  https://www.pexels.com/es-es/foto/mano-palma-plamera-sujetando-6565048/  |  consulta: "car key fob"
+
+BRUMA (bruma-pag-0N.png y bruma-osc-0N.png, 30x20): las MISMAS fotos, recortadas a 3:2, reducidas y
+recoloreadas con C:\devs\demos\hacer-bruma.ps1 (clara >= 0,68 de luminancia / oscura <= 0,05). No suman fuentes.
+    pagina: hund4-01.jpg, mos2-01.jpg, hund5-01.jpg, mos5-01.jpg, hund1-01.jpg   |   oscuras: port-01.jpg, cita-01.jpg, hund6-01.jpg
+
+MAPA: iframe de Google Maps (embed publico, sin clave). No hay imagen de mapa.

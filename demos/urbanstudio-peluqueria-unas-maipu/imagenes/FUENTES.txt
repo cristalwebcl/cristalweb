@@ -1,0 +1,22 @@
+FUENTES DE LAS IMAGENES - UrbanStudio Rehecha el 18-09-2026 (presentacion antes que texto). Fotos de REFERENCIA de bancos libres: ninguna es del local; las verdaderas las tiene que mandar el negocio. 
+port-01.jpg  <-  pozo-p-189-salon\002.jpg  |  pexels (Pexels License)  |  autor: cottonbro studio  |  https://www.pexels.com/es-es/foto/industria-negocio-habitacion-sillas-3993309/  |  consulta: "hair salon interior chairs mirrors pexels"  |  recorte manual x .10-1.0, y .435 (portada-189): fuera un frasco rotulado y un vaso con caricatura
+banda-01.jpg  <-  pozo-p-189-tinte\008.jpg  |  pexels (Pexels License)  |  autor: Nataliya Vaitkevich  |  https://www.pexels.com/es-es/foto/pincel-cepillo-cepillar-herramientas-8468158/  |  consulta: "hair color bowl brush pexels"
+cita-01.jpg  <-  pozo-p-189-espejo\010.jpg  |  pexels (Pexels License)  |  autor: Pew Nguyen  |  https://www.pexels.com/es-es/foto/bombilla-adentro-iluminado-luz-calida-11312208/  |  consulta: "salon mirror lights pexels"
+hund1-01.jpg  <-  pozo-p-189-tinte\005.jpg  |  pexels (Pexels License)  |  autor: Nataliya Vaitkevich  |  https://www.pexels.com/es-es/foto/pincel-cepillo-cepillar-bol-8468141/  |  consulta: "hair color bowl brush pexels"
+hund2-01.jpg  <-  pozo-p-189-salon\006.jpg  |  pexels (Pexels License)  |  autor: Nadezhda Moryak  |  https://www.pexels.com/es-es/foto/mujer-rubia-corte-de-pelo-de-espaldas-6502174/  |  consulta: "hair salon interior chairs mirrors pexels"
+hund3-01.jpg  <-  pozo-p-189-unas\006.jpg  |  pexels (Pexels License)  |  autor: cottonbro studio  |  https://www.pexels.com/es-es/foto/manos-mano-mesa-colorido-3997381/  |  consulta: "gel nails manicure hands close up pexels"
+hund4-01.jpg  <-  pozo-p-189-pinzas\004.jpg  |  pexels (Pexels License)  |  autor: Ekaterina Bogdanova  |  https://www.pexels.com/es-es/foto/herramientas-variadas-para-peinar-el-cabello-en-un-cajon-del-salon-35013087/  |  consulta: "hair clips sectioning pexels"
+hund5-01.jpg  <-  pozo-p-189-papel\011.jpg  |  pexels (Pexels License)  |  autor: cottonbro studio  |  https://www.pexels.com/es-es/foto/persona-mujer-mano-rubia-7440132/  |  consulta: "hair foils highlights back view pexels"
+hund6-01.jpg  <-  pozo-p-189-silla\012.jpg  |  pexels (Pexels License)  |  autor: Lisa Fotios  |  https://www.pexels.com/es-es/foto/silla-de-salon-junto-al-calentador-de-aceite-frente-al-espejo-dentro-de-la-habitacion-1895701/  |  consulta: "salon chair empty pexels"
+mos1-01.jpg  <-  pozo-p-189-tijeras\011.jpg  |  pexels (Pexels License)  |  autor: Los Muertos Crew  |  https://www.pexels.com/es-es/foto/madera-herramientas-retro-cepillos-8867162/  |  consulta: "hair scissors comb flat lay pexels"
+mos2-01.jpg  <-  pozo-p-189-reloj\004.jpg  |  pexels (Pexels License)  |  autor: Ann poan  |  https://www.pexels.com/es-es/foto/reloj-de-pared-analogico-blanco-redondo-a-las-10-10-5799379/  |  consulta: "wall clock minimal pexels"
+mos3-01.jpg  <-  pozo-p-189-esmaltes\012.jpg  |  pexels (Pexels License)  |  autor: Los Muertos Crew  |  https://www.pexels.com/es-es/foto/botellas-hojas-colorido-de-colores-7615877/  |  consulta: "nail polish bottles row pexels"
+mos4-01.jpg  <-  pozo-p-189-tijeras\007.jpg  |  pexels (Pexels License)  |  autor: Nataliya Vaitkevich  |  https://www.pexels.com/es-es/foto/negro-herramientas-plastico-conjunto-8468134/  |  consulta: "hair scissors comb flat lay pexels"
+mos5-01.jpg  <-  pozo-p-189-unas\011.jpg  |  pexels (Pexels License)  |  autor: Gabriel Puyén  |  https://www.pexels.com/es-es/foto/manos-belleza-salon-de-belleza-mimos-6135680/  |  consulta: "gel nails manicure hands close up pexels"
+mos6-01.jpg  <-  pozo-p-189-espejo\006.jpg  |  pexels (Pexels License)  |  autor: Lina Kivaka  |  https://www.pexels.com/es-es/foto/espejo-redondo-plateado-y-dorado-5731891/  |  consulta: "salon mirror lights pexels"
+
+BRUMA (bruma-pag-0N.png y bruma-osc-0N.png, 30x20): las MISMAS fotos, recortadas a 3:2, reducidas y
+recoloreadas con C:\devs\demos\hacer-bruma.ps1 (clara >= 0,68 de luminancia / oscura <= 0,05). No suman fuentes.
+    pagina: port-01.jpg, hund6-01.jpg, mos3-01.jpg, hund5-01.jpg, mos2-01.jpg (todas a -Sat 0.6)   |   oscuras: port-01.jpg, banda-01.jpg, cita-01.jpg
+
+MAPA: iframe de Google Maps (embed publico, sin clave). No hay imagen de mapa.

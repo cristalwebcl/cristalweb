@@ -1,0 +1,22 @@
+FUENTES DE LAS IMAGENES - Ferretería Siempre Stock Rehecha el 17-09-2026 (presentacion antes que texto). Fotos de REFERENCIA de bancos libres: ninguna es del local; las verdaderas las tiene que mandar el negocio. 
+port-01.jpg  <-  pozo-p-166-bodega\011.jpg  |  pexels (Pexels License)  |  autor: On  Shot  |  https://www.pexels.com/es-es/foto/apilados-amontonados-almacen-interior-10697106/  |  consulta: "warehouse shelves boxes"
+banda-01.jpg  <-  pozo-p-166-repisa\003.jpg  |  pexels (Pexels License)  |  autor: Joaquin Reyes Ramos  |  https://www.pexels.com/es-es/foto/variedad-de-sujetadores-en-cajas-de-almacenamiento-38575500/  |  consulta: "hardware store shelves"
+cita-01.jpg  <-  pozo-p-166-bodega\009.jpg  |  pexels (Pexels License)  |  autor: Engin Akyurt  |  https://www.pexels.com/es-es/foto/almacen-adentro-naturaleza-muerta-almacenamiento-4170172/  |  consulta: "warehouse shelves boxes"
+hund1-01.jpg  <-  pozo-p-166-tornillos\006.jpg  |  pexels (Pexels License)  |  autor: Jorge Urosa  |  https://www.pexels.com/es-es/foto/tornillos-tornillos-de-rosca-vueltas-vista-superior-9131071/  |  consulta: "screws in bins"
+hund2-01.jpg  <-  pozo-p-166-electrico\005.jpg  |  pexels (Pexels License)  |  autor: Nic Wood  |  https://www.pexels.com/es-es/foto/alambre-de-cobre-28286038/  |  consulta: "electrical supplies wire"
+hund3-01.jpg  <-  pozo-p-166-gasfiteria\004.jpg  |  pexels (Pexels License)  |  autor: PEPYTO.  |  https://www.pexels.com/es-es/foto/fabrica-tuberias-urbano-industrial-16416032/  |  consulta: "plumbing fittings pipes"
+hund4-01.jpg  <-  pozo-p-166-pintura\009.jpg  |  pexels (Pexels License)  |  autor: Babzillaz  |  https://www.pexels.com/es-es/foto/sucio-botellas-vintage-ventanas-4879964/  |  consulta: "paint cans shelf"
+hund5-01.jpg  <-  pozo-p-166-herramienta\008.jpg  |  pexels (Pexels License)  |  autor: cottonbro studio  |  https://www.pexels.com/es-es/foto/herramientas-carpinteria-martillo-colgando-7484795/  |  consulta: "hand tools hanging wall"
+hund6-01.jpg  <-  pozo-p-166-brocas\006.jpg  |  pexels (Pexels License)  |  autor: Мира Кабаева  |  https://www.pexels.com/es-es/foto/primer-plano-de-un-juego-de-destornilladores-de-precision-en-un-estuche-azul-37617369/  |  consulta: "drill bits set"
+mos1-01.jpg  <-  pozo-p-166-huincha\008.jpg  |  pexels (Pexels License)  |  autor: Lucent Designs Media  International  |  https://www.pexels.com/es-es/foto/cinta-metrica-amarilla-sobre-una-superficie-oscura-en-primer-plano-32942847/  |  consulta: "tape measure tools"
+mos2-01.jpg  <-  pozo-p-166-cajones\003.jpg  |  pexels (Pexels License)  |  autor: Ksenia Chernaya  |  https://www.pexels.com/es-es/foto/conjunto-de-herramientas-para-reparacion-en-taller-5691665/  |  consulta: "storage bins organizer"
+mos3-01.jpg  <-  pozo-p-166-herramienta\012.jpg  |  pexels (Pexels License)  |  autor: cottonbro studio  |  https://www.pexels.com/es-es/foto/persona-mano-sujetando-herramientas-7484798/  |  consulta: "hand tools hanging wall"
+mos4-01.jpg  <-  pozo-p-166-cajas\010.jpg  |  pexels (Pexels License)  |  autor: Ayrat  |  https://www.pexels.com/es-es/foto/apilar-pila-monton-cintas-12354555/  |  consulta: "cardboard boxes stacked"
+mos5-01.jpg  <-  pozo-p-166-cajones\007.jpg  |  pexels (Pexels License)  |  autor: Daniel Rosehill  |  https://www.pexels.com/es-es/foto/primer-plano-de-un-contenedor-de-almacenamiento-de-herramientas-con-tornillos-38663945/  |  consulta: "storage bins organizer"
+mos6-01.jpg  <-  pozo-p-166-brocas\003.jpg  |  pexels (Pexels License)  |  autor: cottonbro studio  |  https://www.pexels.com/es-es/foto/madera-metal-herramientas-carpinteria-7479039/  |  consulta: "drill bits set"
+
+BRUMA (bruma-pag-0N.png y bruma-osc-0N.png, 30x20): las MISMAS fotos, recortadas a 3:2, reducidas y
+recoloreadas con C:\devs\demos\hacer-bruma.ps1 (clara >= 0,68 de luminancia / oscura <= 0,05). No suman fuentes.
+    pagina: banda-01.jpg, hund4-01.jpg, mos5-01.jpg, hund1-01.jpg, mos2-01.jpg (todas a -Sat 0.6)   |   oscuras: cita-01.jpg, mos3-01.jpg, hund2-01.jpg
+
+MAPA: iframe de Google Maps (embed publico, sin clave). No hay imagen de mapa.

@@ -1,0 +1,22 @@
+FUENTES DE LAS IMAGENES - Lubricentro Punto de Partida Rehecha el 18-09-2026 (presentacion antes que texto). Fotos de REFERENCIA de bancos libres: ninguna es del local; las verdaderas las tiene que mandar el negocio. 
+port-01.jpg  <-  pozo-p-214-filtro\008.jpg  |  pexels (Pexels License)  |  autor: Fatih Erden  |  https://www.pexels.com/es-es/foto/mano-coche-vehiculo-motor-10490621/  |  consulta: "oil filter mechanic hands pexels"
+banda-01.jpg  <-  pozo-p-214-varilla\011.jpg  |  pexels (Pexels License)  |  autor: Fatih Erden  |  https://www.pexels.com/es-es/foto/manos-coche-vehiculo-adentro-10490622/  |  consulta: "oil dipstick check hand pexels"
+cita-01.jpg  <-  pozo-p-214-luces\004.jpg  |  pexels (Pexels License)  |  autor: Skylar Kang  |  https://www.pexels.com/es-es/foto/coche-negro-en-camino-de-hormigon-gris-6044794/  |  consulta: "car headlight close up pexels"
+hund1-01.jpg  <-  pozo-p-214-filtro\001.jpg  |  pexels (Pexels License)  |  autor: Chrystian Guedez  |  https://www.pexels.com/es-es/foto/vehiculos-hombre-persona-manos-16634684/  |  consulta: "oil filter mechanic hands pexels"
+hund2-01.jpg  <-  pozo-p-214-elevador\008.jpg  |  pexels (Pexels License)  |  autor: cottonbro studio  |  https://www.pexels.com/es-es/foto/coche-vehiculo-neon-garaje-4488634/  |  consulta: "car on lift workshop pexels"
+hund3-01.jpg  <-  pozo-p-214-filtro\004.jpg  |  pexels (Pexels License)  |  autor: Azli Nawawi  |  https://www.pexels.com/es-es/foto/mecanico-realizando-reparacion-de-coche-bajo-el-vehiculo-32152042/  |  consulta: "oil filter mechanic hands pexels"
+hund4-01.jpg  <-  pozo-p-214-presion\012.jpg  |  pexels (Pexels License)  |  autor: Artem Podrez  |  https://www.pexels.com/es-es/foto/persona-trabajando-neumatico-cansar-8986133/  |  consulta: "tire pressure gauge pexels"
+hund5-01.jpg  <-  pozo-p-214-luces\009.jpg  |  pexels (Pexels License)  |  autor: Leo Ma  |  https://www.pexels.com/es-es/foto/primer-plano-de-faros-de-coche-moderno-cerca-de-edificio-34092400/  |  consulta: "car headlight close up pexels"
+hund6-01.jpg  <-  pozo-p-214-manos\009.jpg  |  pexels (Pexels License)  |  autor: cottonbro studio  |  https://www.pexels.com/es-es/foto/manos-llave-inglesa-motor-mecanico-7564865/  |  consulta: "mechanic hands wrench engine pexels"
+mos1-01.jpg  <-  pozo-p-214-varilla\001.jpg  |  pexels (Pexels License)  |  autor: Anastasia  Shuraeva  |  https://www.pexels.com/es-es/foto/mano-petroleo-aceite-tiro-vertical-8470253/  |  consulta: "oil dipstick check hand pexels"
+mos2-01.jpg  <-  pozo-p-214-cafe\010.jpg  |  pexels (Pexels License)  |  autor: PNW Production  |  https://www.pexels.com/es-es/foto/cafe-taza-copa-beber-8251784/  |  consulta: "coffee cup workbench pexels"
+mos3-01.jpg  <-  pozo-p-214-verde\004.jpg  |  pexels (Pexels License)  |  autor: Sami  Abdullah  |  https://www.pexels.com/es-es/foto/niebla-iluminado-palo-mastil-10163240/  |  consulta: "green traffic light night pexels"
+mos4-01.jpg  <-  pozo-p-214-espera\009.jpg  |  pexels (Pexels License)  |  autor: Emre  Akyol  |  https://www.pexels.com/es-es/foto/ver-vistas-habitacion-sillas-17266852/  |  consulta: "waiting room chairs coffee pexels"
+mos5-01.jpg  <-  pozo-p-214-luces\012.jpg  |  pexels (Pexels License)  |  autor: Sami  Aksu  |  https://www.pexels.com/es-es/foto/coche-vintage-faro-delantero-luz-delantera-9982132/  |  consulta: "car headlight close up pexels"
+mos6-01.jpg  <-  pozo-p-214-espera\011.jpg  |  pexels (Pexels License)  |  autor: Volkan Buyukvardar  |  https://www.pexels.com/es-es/foto/sol-vaso-cristal-vidrio-17572002/  |  consulta: "waiting room chairs coffee pexels"
+
+BRUMA (bruma-pag-0N.png y bruma-osc-0N.png, 30x20): las MISMAS fotos, recortadas a 3:2, reducidas y
+recoloreadas con C:\devs\demos\hacer-bruma.ps1 (clara >= 0,68 de luminancia / oscura <= 0,05). No suman fuentes.
+    pagina: port-01.jpg, mos3-01.jpg, banda-01.jpg, mos5-01.jpg, hund2-01.jpg (todas a -Sat 0.6)   |   oscuras: port-01.jpg, banda-01.jpg, mos3-01.jpg
+
+MAPA: iframe de Google Maps (embed publico, sin clave). No hay imagen de mapa.

@@ -1,0 +1,22 @@
+FUENTES DE LAS IMAGENES - Ferrolusac Rehecha el 17-09-2026 (presentacion antes que texto). Fotos de REFERENCIA de bancos libres: ninguna es del local; las verdaderas las tiene que mandar el negocio. 
+port-01.jpg  <-  pozo-p-168-fachada\004.jpg  |  pexels (Pexels License)  |  autor: Tomás Asurmendi  |  https://www.pexels.com/es-es/foto/fachada-tipica-en-esquina-del-pueblo-32210325/  |  consulta: "old house facade santiago chile"
+banda-01.jpg  <-  pozo-p-168-tienda\010.jpg  |  pexels (Pexels License)  |  autor: Monstera Production  |  https://www.pexels.com/es-es/foto/sucio-modelo-estampado-textura-7794456/  |  consulta: "old hardware store shelves drawers"
+cita-01.jpg  <-  pozo-p-168-ampolleta\005.jpg  |  pexels (Pexels License)  |  autor: Miguel González  |  https://www.pexels.com/es-es/foto/vaso-cristal-vidrio-vintage-27456513/  |  consulta: "vintage light bulb socket"
+hund1-01.jpg  <-  pozo-p-168-manilla\012.jpg  |  pexels (Pexels License)  |  autor: Aleksandar Spasojevic  |  https://www.pexels.com/es-es/foto/vintage-puerta-de-madera-puertas-18820279/  |  consulta: "brass door handle old"
+hund2-01.jpg  <-  pozo-p-168-llave\004.jpg  |  pexels (Pexels License)  |  autor: Alex Khoury  |  https://www.pexels.com/es-es/foto/primer-plano-de-una-tuberia-de-agua-industrial-oxidada-35016079/  |  consulta: "old water valve pipe brass"
+hund3-01.jpg  <-  pozo-p-168-ampolleta\008.jpg  |  pexels (Pexels License)  |  autor: Wojtek Pacześ  |  https://www.pexels.com/es-es/foto/ligero-tecnologia-bombilla-poder-6620349/  |  consulta: "vintage light bulb socket"
+hund4-01.jpg  <-  pozo-p-168-estuco\007.jpg  |  pexels (Pexels License)  |  autor: Julia Filirovska  |  https://www.pexels.com/es-es/foto/arte-edificio-construccion-textura-4913792/  |  consulta: "pink plaster wall texture old"
+hund5-01.jpg  <-  pozo-p-168-cajones\008.jpg  |  pexels (Pexels License)  |  autor: ready made  |  https://www.pexels.com/es-es/foto/metal-canica-marmol-trabajo-3926801/  |  consulta: "wooden drawers screws hardware"
+hund6-01.jpg  <-  pozo-p-168-reja\010.jpg  |  pexels (Pexels License)  |  autor: Markus Winkler  |  https://www.pexels.com/es-es/foto/detalle-de-valla-de-metal-oxidado-adornado-con-diseno-floral-30557809/  |  consulta: "old iron gate detail"
+mos1-01.jpg  <-  pozo-p-168-bisagra\004.jpg  |  pexels (Pexels License)  |  autor: Brett Sayles  |  https://www.pexels.com/es-es/foto/de-madera-posturas-de-la-tabla-tablones-tornillos-17503605/  |  consulta: "old brass hinge close up"
+mos2-01.jpg  <-  pozo-p-168-guillotina\005.jpg  |  pexels (Pexels License)  |  autor: KoolShooters  |  https://www.pexels.com/es-es/foto/cuerda-enfoque-selectivo-tiro-vertical-de-cerca-9756717/  |  consulta: "vintage sash window rope"
+mos3-01.jpg  <-  pozo-p-168-llaves\003.jpg  |  pexels (Pexels License)  |  autor: Ylanite Koppens  |  https://www.pexels.com/es-es/foto/dos-llaves-maestras-negras-612800/  |  consulta: "old keys on wood"
+mos4-01.jpg  <-  pozo-p-168-masilla\006.jpg  |  pexels (Pexels License)  |  autor: Ksenia Chernaya  |  https://www.pexels.com/es-es/foto/hombre-de-la-cosecha-cerca-del-banco-de-trabajo-con-ventana-5691506/  |  consulta: "window glazing putty"
+mos5-01.jpg  <-  pozo-p-168-estuco\001.jpg  |  pexels (Pexels License)  |  autor: Chris Luengas  |  https://www.pexels.com/es-es/foto/edificio-ventanas-ventana-fachada-15050696/  |  consulta: "pink plaster wall texture old"
+mos6-01.jpg  <-  pozo-p-168-tienda\011.jpg  |  pexels (Pexels License)  |  autor: Monstera Production  |  https://www.pexels.com/es-es/foto/armario-de-madera-marron-con-cajon-7794448/  |  consulta: "old hardware store shelves drawers"
+
+BRUMA (bruma-pag-0N.png y bruma-osc-0N.png, 30x20): las MISMAS fotos, recortadas a 3:2, reducidas y
+recoloreadas con C:\devs\demos\hacer-bruma.ps1 (clara >= 0,68 de luminancia / oscura <= 0,05). No suman fuentes.
+    pagina: port-01.jpg, hund4-01.jpg, mos5-01.jpg, hund1-01.jpg, banda-01.jpg (todas a -Sat 0.6)   |   oscuras: hund1-01.jpg, cita-01.jpg, mos1-01.jpg
+
+MAPA: iframe de Google Maps (embed publico, sin clave). No hay imagen de mapa.

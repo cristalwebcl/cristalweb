@@ -1,0 +1,22 @@
+FUENTES DE LAS IMAGENES - Los Naranjos Rehecha el 18-09-2026 (presentacion antes que texto). Fotos de REFERENCIA de bancos libres: ninguna es del local; las verdaderas las tiene que mandar el negocio. 
+port-01.jpg  <-  pozo-p-172-gatojardin\002.jpg  |  pexels (Pexels License)  |  autor: Dova In Chains  |  https://www.pexels.com/es-es/foto/majestuoso-gato-esponjoso-de-pie-sobre-hierba-verde-34772855/  |  consulta: "cat garden"
+banda-01.jpg  <-  pozo-p-172-naranjo\008.jpg  |  pexels (Pexels License)  |  autor: Gerzon Piñata  |  https://www.pexels.com/es-es/foto/naranja-32060014/  |  consulta: "orange tree"
+cita-01.jpg  <-  pozo-p-172-gatojardin\007.jpg  |  pexels (Pexels License)  |  autor: Marcelo Gonzalez  |  https://www.pexels.com/es-es/foto/gato-jugueton-de-esmoquin-asomandose-entre-los-arbustos-36302073/  |  consulta: "cat garden"
+hund1-01.jpg  <-  pozo-p-172-patio\007.jpg  |  pexels (Pexels License)  |  autor: Josué Vargas  |  https://www.pexels.com/es-es/foto/labrador-retriever-marron-acostado-sobre-un-tronco-de-madera-marron-11840975/  |  consulta: "dog backyard"
+hund2-01.jpg  <-  pozo-p-172-pasto\004.jpg  |  pexels (Pexels License)  |  autor: Ivan Garfias  |  https://www.pexels.com/es-es/foto/un-perro-tirado-en-el-suelo-24194068/  |  consulta: "dog lying grass"
+hund3-01.jpg  <-  pozo-p-172-patio\002.jpg  |  pexels (Pexels License)  |  autor: Jonathan Valdes  |  https://www.pexels.com/es-es/foto/perro-mesa-en-pie-de-pie-18104206/  |  consulta: "dog backyard"
+hund4-01.jpg  <-  pozo-p-172-sombra\011.jpg  |  pexels (Pexels License)  |  autor: Claudia Santonja Beneyto  |  https://www.pexels.com/es-es/foto/naturaleza-perro-mascotas-fotografia-de-animales-16558869/  |  consulta: "dog shade summer"
+hund5-01.jpg  <-  pozo-p-172-sombra\008.jpg  |  pexels (Pexels License)  |  autor: Mike Art 🎥 Visual Creator | Photography and Video 📸  |  https://www.pexels.com/es-es/foto/adorable-perro-con-correa-en-un-pintoresco-entorno-al-aire-libre-39384022/  |  consulta: "dog shade summer"
+hund6-01.jpg  <-  pozo-p-172-gatojardin\012.jpg  |  pexels (Pexels License)  |  autor: MAKSIM ZAVIKTORIN  |  https://www.pexels.com/es-es/foto/jardin-mascota-sentado-fotografia-de-animales-20061221/  |  consulta: "cat garden"
+mos1-01.jpg  <-  pozo-p-172-lirio\012.jpg  |  pexels (Pexels License)  |  autor: Gabriel Groza  |  https://www.pexels.com/es-es/foto/floracion-flor-flora-flores-blancas-12765087/  |  consulta: "lily flower"
+mos2-01.jpg  <-  pozo-p-172-bodega\009.jpg  |  pexels (Pexels License)  |  autor: Hala  |  https://www.pexels.com/es-es/foto/caseta-de-jardin-rustica-con-herramientas-y-vegetacion-33363961/  |  consulta: "garden shed"
+mos3-01.jpg  <-  pozo-p-172-reja\004.jpg  |  pexels (Pexels License)  |  autor: Gene Samit  |  https://www.pexels.com/es-es/foto/puerta-de-jardin-con-diseno-floral-en-doylestown-38904682/  |  consulta: "garden gate"
+mos4-01.jpg  <-  pozo-p-172-regadera\003.jpg  |  pexels (Pexels License)  |  autor: Efrem  Efre  |  https://www.pexels.com/es-es/foto/hierba-cesped-regadera-de-cerca-13862516/  |  consulta: "watering can"
+mos5-01.jpg  <-  pozo-p-172-macetas\012.jpg  |  pexels (Pexels License)  |  autor: Nothing Ahead  |  https://www.pexels.com/es-es/foto/jardin-ollas-macetas-variedad-7424242/  |  consulta: "garden plants pots"
+mos6-01.jpg  <-  pozo-p-172-naranjo\004.jpg  |  pexels (Pexels License)  |  autor: Bor Jinson  |  https://www.pexels.com/es-es/foto/naranjas-maduras-en-el-arbol-en-el-huerto-de-valencia-37343441/  |  consulta: "orange tree"
+
+BRUMA (bruma-pag-0N.png y bruma-osc-0N.png, 30x20): las MISMAS fotos, recortadas a 3:2, reducidas y
+recoloreadas con C:\devs\demos\hacer-bruma.ps1 (clara >= 0,68 de luminancia / oscura <= 0,05). No suman fuentes.
+    pagina: mos6-01.jpg, hund3-01.jpg, mos1-01.jpg, hund4-01.jpg, banda-01.jpg (todas a -Sat 0.6)   |   oscuras: port-01.jpg, cita-01.jpg, mos5-01.jpg
+
+MAPA: iframe de Google Maps (embed publico, sin clave). No hay imagen de mapa.

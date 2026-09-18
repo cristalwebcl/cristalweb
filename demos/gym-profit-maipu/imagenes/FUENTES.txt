@@ -1,0 +1,22 @@
+FUENTES DE LAS IMAGENES - Gym Profit Rehecha el 16-09-2026 (presentacion antes que texto). Fotos de REFERENCIA de bancos libres: ninguna es del local; las verdaderas las tiene que mandar el negocio. 
+port-01.jpg  <-  pozo-p-161-pesa\010.jpg  |  pexels (Pexels License)  |  autor: Jonathan Borba  |  https://www.pexels.com/es-es/foto/metal-oxido-rustico-negro-27810161/  |  consulta: "kettlebell"
+banda-01.jpg  <-  pozo-p-161-tiza\012.jpg  |  pexels (Pexels License)  |  autor: Katya Wolf  |  https://www.pexels.com/es-es/foto/persona-manos-fumar-humo-8729222/  |  consulta: "chalk hands"
+cita-01.jpg  <-  pozo-p-161-tiza\005.jpg  |  pexels (Pexels License)  |  autor: Sergey  Meshkov  |  https://www.pexels.com/es-es/foto/manos-palmeras-palmas-dedos-8481198/  |  consulta: "chalk hands"
+hund1-01.jpg  <-  pozo-p-161-zapatillas\009.jpg  |  pexels (Pexels License)  |  autor: cottonbro studio  |  https://www.pexels.com/es-es/foto/gente-piernas-patas-actividad-7337615/  |  consulta: "sneakers gym floor"
+hund2-01.jpg  <-  pozo-p-161-medida\012.jpg  |  pexels (Pexels License)  |  autor: Marta Longas  |  https://www.pexels.com/es-es/foto/foto-de-primer-plano-de-la-cinta-metrica-amarilla-3143082/  |  consulta: "measuring tape body"
+hund3-01.jpg  <-  pozo-p-161-comida\003.jpg  |  pexels (Pexels License)  |  autor: Ella Olsson  |  https://www.pexels.com/es-es/foto/fotografia-plana-de-tres-bandejas-de-alimentos-1640775/  |  consulta: "meal prep"
+hund4-01.jpg  <-  pozo-p-161-libreta\005.jpg  |  pexels (Pexels License)  |  autor: PNW Production  |  https://www.pexels.com/es-es/foto/cuaderno-lapiz-papel-escribir-8250914/  |  consulta: "training notebook"
+hund5-01.jpg  <-  pozo-p-161-mancuernas\003.jpg  |  pexels (Pexels License)  |  autor: RDNE Stock project  |  https://www.pexels.com/es-es/foto/adentro-naturaleza-muerta-equipos-de-gimnasio-pesas-rusas-8612034/  |  consulta: "dumbbells rack gym"
+hund6-01.jpg  <-  pozo-p-161-agua\006.jpg  |  pexels (Pexels License)  |  autor: Arun kachhwaha  |  https://www.pexels.com/es-es/foto/mancuerna-y-botella-de-agua-en-banco-de-gimnasio-29495729/  |  consulta: "water bottle gym"
+mos1-01.jpg  <-  pozo-p-161-tiza\009.jpg  |  pexels (Pexels License)  |  autor: Ardit Mbrati  |  https://www.pexels.com/es-es/foto/hombre-deporte-en-pie-de-pie-16779445/  |  consulta: "chalk hands"
+mos2-01.jpg  <-  pozo-p-161-mancuernas\002.jpg  |  pexels (Pexels License)  |  autor: Anete Lusina  |  https://www.pexels.com/es-es/foto/equipo-almacenamiento-estanteria-estantes-16513599/  |  consulta: "dumbbells rack gym"
+mos3-01.jpg  <-  pozo-p-161-pesa\011.jpg  |  pexels (Pexels License)  |  autor: Jonathan Borba  |  https://www.pexels.com/es-es/foto/metal-negro-suelo-poder-27810157/  |  consulta: "kettlebell"
+mos4-01.jpg  <-  pozo-p-161-agua\001.jpg  |  pexels (Pexels License)  |  autor: Mery Stockera  |  https://www.pexels.com/es-es/foto/vaso-cristal-vidrio-mesa-15487424/  |  consulta: "water bottle gym"
+mos5-01.jpg  <-  pozo-p-161-comida\001.jpg  |  pexels (Pexels License)  |  autor: Ella Olsson  |  https://www.pexels.com/es-es/foto/variedad-de-platos-1640771/  |  consulta: "meal prep"
+mos6-01.jpg  <-  pozo-p-161-zapatillas\004.jpg  |  pexels (Pexels License)  |  autor: cottonbro studio  |  https://www.pexels.com/es-es/foto/una-persona-que-lleva-zapatillas-negras-de-pie-en-una-cancha-6767220/  |  consulta: "sneakers gym floor"
+
+BRUMA (bruma-pag-0N.png y bruma-osc-0N.png, 30x20): las MISMAS fotos, recortadas a 3:2, reducidas y
+recoloreadas con C:\devs\demos\hacer-bruma.ps1 (clara >= 0,68 de luminancia / oscura <= 0,05). No suman fuentes.
+    pagina: hund3-01.jpg, mos4-01.jpg, banda-01.jpg, hund1-01.jpg, mos5-01.jpg (todas a -Sat 0.6)   |   oscuras: mos4-01.jpg, hund1-01.jpg, mos6-01.jpg (el fierro gris-azul daba 23-32 % de pixeles frios)
+
+MAPA: iframe de Google Maps (embed publico, sin clave). No hay imagen de mapa.

@@ -1,0 +1,22 @@
+FUENTES DE LAS IMAGENES - Instituto de Ortodoncia Rehecha el 16-09-2026 (presentacion antes que texto). Fotos de REFERENCIA de bancos libres: ninguna es del local; las verdaderas las tiene que mandar el negocio. 
+port-01.jpg  <-  pozo-p-156-sillon\005.jpg  |  pexels (Pexels License)  |  autor: Pepe Carive  |  https://www.pexels.com/es-es/foto/un-sillon-dental-en-una-clinica-9957423/  |  consulta: "dental chair"
+banda-01.jpg  <-  pozo-p-156-brackets\007.jpg  |  pexels (Pexels License)  |  autor: Goran Grudić  |  https://www.pexels.com/es-es/foto/modelo-maqueta-medicina-dientes-19328507/  |  consulta: "dental braces close up"
+cita-01.jpg  <-  pozo-p-156-molde\011.jpg  |  pexels (Pexels License)  |  autor: TARIK BAYRAM  |  https://www.pexels.com/es-es/foto/modelos-dentales-impresos-en-3d-sobre-fondo-negro-33748060/  |  consulta: "dental cast model"
+hund1-01.jpg  <-  pozo-p-156-brackets\005.jpg  |  pexels (Pexels License)  |  autor: cottonbro studio  |  https://www.pexels.com/es-es/foto/primer-plano-de-dentaduras-postizas-con-brackets-6502309/  |  consulta: "dental braces close up"
+hund2-01.jpg  <-  pozo-p-156-brackets\010.jpg  |  pexels (Pexels License)  |  autor: cottonbro studio  |  https://www.pexels.com/es-es/foto/dientes-dentadura-postiza-estomatologia-tiro-vertical-6502294/  |  consulta: "dental braces close up"
+hund3-01.jpg  <-  pozo-p-156-retenedor\001.jpg  |  pexels (Pexels License)  |  autor: Nadezhda Moryak  |  https://www.pexels.com/es-es/foto/medicina-estudio-dientes-vista-superior-7800550/  |  consulta: "dental retainer"
+hund4-01.jpg  <-  pozo-p-156-cepillo\009.jpg  |  pexels (Pexels License)  |  autor: Andrew Patrick Photo  |  https://www.pexels.com/es-es/foto/cepillo-de-dientes-odontologia-fondo-rojo-de-cerca-13027890/  |  consulta: "toothbrush"
+hund5-01.jpg  <-  pozo-p-156-retenedor\004.jpg  |  pexels (Pexels License)  |  autor: Cedric Fauntleroy  |  https://www.pexels.com/es-es/foto/manos-dientes-dentista-cuidado-dental-4270079/  |  consulta: "dental retainer"
+hund6-01.jpg  <-  pozo-p-156-molde\006.jpg  |  pexels (Pexels License)  |  autor: https://kaboompics.com/  |  https://www.pexels.com/es-es/foto/sujetando-odontologia-yeso-dental-de-cerca-6627355/  |  consulta: "dental cast model"
+mos1-01.jpg  <-  pozo-p-156-espejo\004.jpg  |  pexels (Pexels License)  |  autor: Marta Branco  |  https://www.pexels.com/es-es/foto/acero-inoxidable-sonda-de-espejo-herramientas-dentales-superficie-azul-4946338/  |  consulta: "dental mirror tools"
+mos2-01.jpg  <-  pozo-p-156-molde\002.jpg  |  pexels (Pexels License)  |  autor: Polina Zimmerman  |  https://www.pexels.com/es-es/foto/mesa-dientes-fondo-blanco-artificial-4687416/  |  consulta: "dental cast model"
+mos3-01.jpg  <-  pozo-p-156-radiografia\006.jpg  |  pexels (Pexels License)  |  autor: Nadezhda Moryak  |  https://www.pexels.com/es-es/foto/varano-varanus-vigilante-monitor-7800665/  |  consulta: "dental x-ray"
+mos4-01.jpg  <-  pozo-p-156-hilo\005.jpg  |  pexels (Pexels License)  |  autor: Marta Branco  |  https://www.pexels.com/es-es/foto/herramientas-integrales-para-el-cuidado-dental-sobre-fondo-azul-33359445/  |  consulta: "dental floss"
+mos5-01.jpg  <-  pozo-p-156-espejo\006.jpg  |  pexels (Pexels License)  |  autor: https://kaboompics.com/  |  https://www.pexels.com/es-es/foto/chrome-cromo-medico-equipo-6627671/  |  consulta: "dental mirror tools"
+mos6-01.jpg  <-  pozo-p-156-cepillo\003.jpg  |  pexels (Pexels License)  |  autor: Jason Deines  |  https://www.pexels.com/es-es/foto/fondo-azul-cepillo-de-dientes-higiene-dental-cerdas-6189073/  |  consulta: "toothbrush"
+
+BRUMA (bruma-pag-0N.png y bruma-osc-0N.png, 30x20): las MISMAS fotos, recortadas a 3:2, reducidas y
+recoloreadas con C:\devs\demos\hacer-bruma.ps1 (clara >= 0,68 de luminancia / oscura <= 0,05). No suman fuentes.
+    pagina: port-01.jpg, mos2-01.jpg, hund4-01.jpg, banda-01.jpg, port-01.jpg (todas a -Sat 0.6; la bata verde y los modelos rosados daban 70 % y 22 % de pixeles frios)   |   oscuras: port-01.jpg, port-01.jpg, banda-01.jpg (hund4 dejaba una mancha roja)
+
+MAPA: iframe de Google Maps (embed publico, sin clave). No hay imagen de mapa.

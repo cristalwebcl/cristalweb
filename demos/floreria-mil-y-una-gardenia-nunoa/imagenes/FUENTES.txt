@@ -1,0 +1,22 @@
+FUENTES DE LAS IMAGENES - Florería Mil y Una Gardenia Rehecha el 17-09-2026 (presentacion antes que texto). Fotos de REFERENCIA de bancos libres: ninguna es del local; las verdaderas las tiene que mandar el negocio. 
+port-01.jpg  <-  pozo-p-177-gardenia\010.jpg  |  pexels (Pexels License)  |  autor: Duy Le Duc  |  https://www.pexels.com/es-es/foto/arbusto-matorral-planta-perenne-24200645/  |  consulta: "gardenia flower close up"
+banda-01.jpg  <-  pozo-p-177-manos\010.jpg  |  pexels (Pexels License)  |  autor: Anna Shvets  |  https://www.pexels.com/es-es/foto/manos-amor-mujer-flores-5894075/  |  consulta: "florist hands arranging bouquet"
+cita-01.jpg  <-  pozo-p-177-ranunculo\010.jpg  |  pexels (Pexels License)  |  autor: Albina White  |  https://www.pexels.com/es-es/foto/flores-petalos-cacerola-olla-7409746/  |  consulta: "ranunculus flowers"
+hund1-01.jpg  <-  pozo-p-177-ramo\003.jpg  |  pexels (Pexels License)  |  autor: Luis Alberto Barrera Diaz  |  https://www.pexels.com/es-es/foto/romantico-flores-petalos-regalo-20440304/  |  consulta: "bouquet pale pink kraft paper"
+hund2-01.jpg  <-  pozo-p-177-manos\009.jpg  |  pexels (Pexels License)  |  autor: Teona Swift  |  https://www.pexels.com/es-es/foto/ligero-persona-planta-mesa-6913081/  |  consulta: "florist hands arranging bouquet"
+hund3-01.jpg  <-  pozo-p-177-ramo\009.jpg  |  pexels (Pexels License)  |  autor: Pauline Raw  |  https://www.pexels.com/es-es/foto/flores-ramo-de-flores-naturaleza-muerta-ranunculo-11190649/  |  consulta: "bouquet pale pink kraft paper"
+hund4-01.jpg  <-  pozo-p-177-ranunculo\003.jpg  |  pexels (Pexels License)  |  autor: Şeydanur Yıldız  |  https://www.pexels.com/es-es/foto/primer-plano-de-flor-ranunculo-durazno-36534311/  |  consulta: "ranunculus flowers"
+hund5-01.jpg  <-  pozo-p-177-eucalipto\009.jpg  |  pexels (Pexels License)  |  autor: Maria Tyutina  |  https://www.pexels.com/es-es/foto/follaje-fondo-blanco-hojas-verdes-planta-verde-6915195/  |  consulta: "eucalyptus branches"
+hund6-01.jpg  <-  pozo-p-177-ramo\007.jpg  |  pexels (Pexels License)  |  autor: Alina Zahorulko  |  https://www.pexels.com/es-es/foto/flores-petalos-primavera-hojas-20155213/  |  consulta: "bouquet pale pink kraft paper"
+mos1-01.jpg  <-  pozo-p-177-peonia\011.jpg  |  pexels (Pexels License)  |  autor: Micheile Henderson  |  https://www.pexels.com/es-es/foto/flores-petalos-hojas-flora-12220265/  |  consulta: "peony flowers"
+mos2-01.jpg  <-  pozo-p-177-tulipan\011.jpg  |  pexels (Pexels License)  |  autor: Fatmanur. Sezer  |  https://www.pexels.com/es-es/foto/precioso-bonito-tulipanes-fotografia-de-flores-8116307/  |  consulta: "tulips bunch"
+mos3-01.jpg  <-  pozo-p-177-mercado\006.jpg  |  pexels (Pexels License)  |  autor: Anhelina Lavreniuk  |  https://www.pexels.com/es-es/foto/flores-monitor-mostrar-exhibicion-17191551/  |  consulta: "flower market buckets"
+mos4-01.jpg  <-  pozo-p-177-hortensia\010.jpg  |  pexels (Pexels License)  |  autor: Daka  |  https://www.pexels.com/es-es/foto/naturaleza-arbusto-matorral-planta-26604098/  |  consulta: "hydrangea flowers"
+mos5-01.jpg  <-  pozo-p-177-girasol\011.jpg  |  pexels (Pexels License)  |  autor: Patrick Nizan  |  https://www.pexels.com/es-es/foto/flores-amarillo-plantas-fresco-17564248/  |  consulta: "sunflowers bunch"
+mos6-01.jpg  <-  pozo-p-177-crisantemo\009.jpg  |  pexels (Pexels License)  |  autor: Omi Verma  |  https://www.pexels.com/es-es/foto/flores-esteticas-31763642/  |  consulta: "chrysanthemum flowers"
+
+BRUMA (bruma-pag-0N.png y bruma-osc-0N.png, 30x20): las MISMAS fotos, recortadas a 3:2, reducidas y
+recoloreadas con C:\devs\demos\hacer-bruma.ps1 (clara >= 0,68 de luminancia / oscura <= 0,05). No suman fuentes.
+    pagina: hund1-01.jpg, hund4-01.jpg, mos2-01.jpg, hund5-01.jpg, mos4-01.jpg (todas a -Sat 0.6)   |   oscuras: port-01.jpg, hund1-01.jpg, cita-01.jpg
+
+MAPA: iframe de Google Maps (embed publico, sin clave). No hay imagen de mapa.

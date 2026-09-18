@@ -1,0 +1,22 @@
+FUENTES DE LAS IMAGENES - Ponte Divina Rehecha el 18-09-2026 (presentacion antes que texto). Fotos de REFERENCIA de bancos libres: ninguna es del local; las verdaderas las tiene que mandar el negocio. 
+port-01.jpg  <-  pozo-p-176-manos\001.jpg  |  pexels (Pexels License)  |  autor: Soana  Beatriz  |  https://www.pexels.com/es-es/foto/una-clavo-higiene-manicura-13424007/  |  consulta: "manicure hands"
+banda-01.jpg  <-  pozo-p-176-pincel\009.jpg  |  pexels (Pexels License)  |  autor: DS stories  |  https://www.pexels.com/es-es/foto/espacio-para-texto-copy-space-fotografia-de-producto-productos-de-belleza-7256111/  |  consulta: "nail polish brush"
+cita-01.jpg  <-  pozo-p-176-tela\004.jpg  |  pexels (Pexels License)  |  autor: Júlio Riccó  |  https://www.pexels.com/es-es/foto/textura-tela-tejido-textil-18372338/  |  consulta: "gold fabric"
+hund1-01.jpg  <-  pozo-p-176-nude\002.jpg  |  pexels (Pexels License)  |  autor: elena_ sher  |  https://www.pexels.com/es-es/foto/primer-plano-elegante-de-mano-con-manicura-y-detalles-de-perlas-34941685/  |  consulta: "nude nails"
+hund2-01.jpg  <-  pozo-p-176-mascarilla\009.jpg  |  pexels (Pexels License)  |  autor: Cup of  Couple  |  https://www.pexels.com/es-es/foto/naturaleza-muerta-organico-minimalismo-sencillez-6963146/  |  consulta: "clay mask bowl"
+hund3-01.jpg  <-  pozo-p-176-rizador\002.jpg  |  pexels (Pexels License)  |  autor: Gül Işık  |  https://www.pexels.com/es-es/foto/rizador-de-pestanas-blanco-y-plateado-2237211/  |  consulta: "eyelash curler"
+hund4-01.jpg  <-  pozo-p-176-piedras\007.jpg  |  pexels (Pexels License)  |  autor: Anna Tarazevich  |  https://www.pexels.com/es-es/foto/una-pila-de-piedras-sobre-una-superficie-blanca-cerca-del-anis-estrellado-6560285/  |  consulta: "massage stones"
+hund5-01.jpg  <-  pozo-p-176-brochas\008.jpg  |  pexels (Pexels License)  |  autor: Alex Kinkate  |  https://www.pexels.com/es-es/foto/set-de-brochas-de-maquillaje-marron-y-plateado-205923/  |  consulta: "makeup brushes"
+hund6-01.jpg  <-  pozo-p-208-cepillo\003.jpg  |  pexels (Pexels License)  |  autor: KATRIN  BOLOVTSOVA  |  https://www.pexels.com/es-es/foto/relajacion-mesa-aromaterapia-varitas-de-incienso-6766543/  |  consulta: "hair brush round wooden pexels"
+mos1-01.jpg  <-  pozo-p-176-lima\007.jpg  |  pexels (Pexels License)  |  autor: Justyna Grochowska  |  https://www.pexels.com/es-es/foto/equipo-toalla-manicura-lima-de-unas-9706941/  |  consulta: "nail file"
+mos2-01.jpg  <-  pozo-p-176-perlas\001.jpg  |  pexels (Pexels License)  |  autor: Tetiana Androshchuk  |  https://www.pexels.com/es-es/foto/cuchara-cena-lujo-reflejo-27820104/  |  consulta: "pearls"
+mos3-01.jpg  <-  pozo-p-176-nude\007.jpg  |  pexels (Pexels License)  |  autor: Kristina Paukshtite  |  https://www.pexels.com/es-es/foto/foto-de-la-mano-de-la-persona-3557600/  |  consulta: "nude nails"
+mos4-01.jpg  <-  pozo-p-176-toallas\011.jpg  |  pexels (Pexels License)  |  autor: Engin Akyurt  |  https://www.pexels.com/es-es/foto/toallas-naturaleza-muerta-enrollado-canasta-tejida-4177714/  |  consulta: "spa towels"
+mos5-01.jpg  <-  pozo-p-176-rojas\006.jpg  |  pexels (Pexels License)  |  autor: Mikhail Nilov  |  https://www.pexels.com/es-es/foto/mano-textura-planta-conmovedor-7683032/  |  consulta: "red nails hand"
+mos6-01.jpg  <-  pozo-p-176-pedicura\002.jpg  |  pexels (Pexels License)  |  autor: Andrea Mosti  |  https://www.pexels.com/es-es/foto/mujer-pie-pedicura-unas-de-los-pies-17056222/  |  consulta: "pedicure"
+
+BRUMA (bruma-pag-0N.png y bruma-osc-0N.png, 30x20): las MISMAS fotos, recortadas a 3:2, reducidas y
+recoloreadas con C:\devs\demos\hacer-bruma.ps1 (clara >= 0,68 de luminancia / oscura <= 0,05). No suman fuentes.
+    pagina: mos1-01.jpg, hund1-01.jpg, mos4-01.jpg, hund5-01.jpg, banda-01.jpg (todas a -Sat 0.6)   |   oscuras: port-01.jpg, cita-01.jpg, mos5-01.jpg
+
+MAPA: iframe de Google Maps (embed publico, sin clave). No hay imagen de mapa.

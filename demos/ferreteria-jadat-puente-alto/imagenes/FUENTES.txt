@@ -1,0 +1,22 @@
+FUENTES DE LAS IMAGENES - Ferreteria Jadat Rehecha el 16-09-2026 (presentacion antes que texto). Fotos de REFERENCIA de bancos libres: ninguna es del local; las verdaderas las tiene que mandar el negocio. 
+port-01.jpg  <-  pozo-p-ja-caja\012.jpg  |  pexels (Pexels License)  |  autor: RDNE Stock project  |  https://www.pexels.com/es-es/foto/persona-poniendo-cinta-caja-de-carton-7464651/  |  consulta: "cardboard box tape"
+banda-01.jpg  <-  pozo-p-ja-etiqueta\002.jpg  |  pexels (Pexels License)  |  autor: Miguel Á. Padriñán  |  https://www.pexels.com/es-es/foto/etiqueta-blanca-con-cadena-y-fondo-negro-1111320/  |  consulta: "label tag string"
+cita-01.jpg  <-  pozo-p-ja-boleta\012.jpg  |  pexels (Pexels License)  |  autor: https://kaboompics.com/  |  https://www.pexels.com/es-es/foto/manos-mujer-compras-comprando-4959907/  |  consulta: "receipt paper counter"
+hund1-01.jpg  <-  pozo-p-ja-tornillo\001.jpg  |  pexels (Pexels License)  |  autor: Anderson Luiz  |  https://www.pexels.com/es-es/foto/blanco-y-negro-metal-tuercas-frutos-secos-8780720/  |  consulta: "screws nuts bolts"
+hund2-01.jpg  <-  pozo-p-ja-herramienta\011.jpg  |  pexels (Pexels License)  |  autor: Antoni Shkraba  |  https://www.pexels.com/es-es/foto/madera-metal-de-madera-herramientas-5853933/  |  consulta: "wrench hand tools"
+hund3-01.jpg  <-  pozo-p-ja-pintura\005.jpg  |  pexels (Pexels License)  |  autor: Antoni Shkraba  |  https://www.pexels.com/es-es/foto/madera-amarillo-de-madera-herramientas-5853940/  |  consulta: "paint roller brush"
+hund4-01.jpg  <-  pozo-p-ja-huincha\010.jpg  |  pexels (Pexels License)  |  autor: نهاية  |  https://www.pexels.com/es-es/foto/primer-plano-de-una-cinta-metrica-flexible-en-blanco-y-negro-37588577/  |  consulta: "measuring tape metal"
+hund5-01.jpg  <-  pozo-p-ja-llave\002.jpg  |  pexels (Pexels License)  |  autor: Lucas Seebacher  |  https://www.pexels.com/es-es/foto/blanco-y-negro-oscuro-metal-vintage-5599449/  |  consulta: "keys metal ring"
+hund6-01.jpg  <-  pozo-p-ja-caja\006.jpg  |  pexels (Pexels License)  |  autor: Ketut Subiyanto  |  https://www.pexels.com/es-es/foto/amarillo-profesional-caja-paquete-4246111/  |  consulta: "cardboard box tape"
+mos1-01.jpg  <-  pozo-p-ja-etiqueta\011.jpg  |  pexels (Pexels License)  |  autor: Miguel Á. Padriñán  |  https://www.pexels.com/es-es/foto/etiqueta-de-producto-blanca-1111319/  |  consulta: "label tag string"
+mos2-01.jpg  <-  pozo-p-ja-tornillo\003.jpg  |  pexels (Pexels License)  |  autor: Alex Tepetidis  |  https://www.pexels.com/es-es/foto/tuercas-frutos-secos-reciclaje-monton-5279361/  |  consulta: "screws nuts bolts"
+mos3-01.jpg  <-  pozo-p-ja-boleta\005.jpg  |  pexels (Pexels License)  |  autor: Tim  Samuel  |  https://www.pexels.com/es-es/foto/taza-de-cafe-de-papel-en-el-mostrador-5835057/  |  consulta: "receipt paper counter"
+mos4-01.jpg  <-  pozo-p-ja-estante\007.jpg  |  pexels (Pexels License)  |  autor: cottonbro studio  |  https://www.pexels.com/es-es/foto/dispositivo-con-cable-negro-y-gris-5090651/  |  consulta: "shelf boxes storage"
+mos5-01.jpg  <-  pozo-p-ja-llave\012.jpg  |  pexels (Pexels License)  |  autor: Meruyert Gonullu  |  https://www.pexels.com/es-es/foto/persona-sosteniendo-llaves-maestras-de-plata-6034029/  |  consulta: "keys metal ring"
+mos6-01.jpg  <-  pozo-p-ja-estante\009.jpg  |  pexels (Pexels License)  |  autor: cottonbro studio  |  https://www.pexels.com/es-es/foto/vintage-diseno-tienda-antiguo-5090640/  |  consulta: "shelf boxes storage"
+
+BRUMA (bruma-pag-0N.png y bruma-osc-0N.png, 30x20): las MISMAS fotos, recortadas a 3:2, reducidas y
+recoloreadas con C:\devs\demos\hacer-bruma.ps1 (clara >= 0,68 de luminancia / oscura <= 0,05). No suman fuentes.
+    pagina: mos1-01.jpg, mos2-01.jpg, hund4-01.jpg, mos4-01.jpg, hund3-01.jpg   |   oscuras: port-01.jpg, hund1-01.jpg, mos6-01.jpg
+
+MAPA: iframe de Google Maps (embed publico, sin clave). No hay imagen de mapa.

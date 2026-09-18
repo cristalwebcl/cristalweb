@@ -1,0 +1,22 @@
+FUENTES DE LAS IMAGENES - Lunita Rehecha el 18-09-2026 (presentacion antes que texto). Fotos de REFERENCIA de bancos libres: ninguna es del local; las verdaderas las tiene que mandar el negocio. 
+port-01.jpg  <-  pozo-p-204-comiendo\011.jpg  |  pexels (Pexels License)  |  autor: cottonbro studio  |  https://www.pexels.com/es-es/foto/comiendo-animal-perro-mascota-6568950/  |  consulta: "dog eating bowl close up pexels"
+banda-01.jpg  <-  pozo-p-204-pellet\009.jpg  |  pexels (Pexels License)  |  autor: Rafael Rodrigues  |  https://www.pexels.com/es-es/foto/comida-marron-snack-aperitivo-18764148/  |  consulta: "dry pet food kibble scoop pexels"
+cita-01.jpg  <-  pozo-p-204-senior\011.jpg  |  pexels (Pexels License)  |  autor: Kata Pal  |  https://www.pexels.com/es-es/foto/perro-acostado-en-el-sofa-1258862/  |  consulta: "senior dog resting sun pexels"
+hund1-01.jpg  <-  pozo-p-204-grande\003.jpg  |  pexels (Pexels License)  |  autor: German Suarez  |  https://www.pexels.com/es-es/foto/cachorro-de-perro-de-montana-bernes-masticando-un-palo-al-aire-libre-39525017/  |  consulta: "large dog portrait home pexels"
+hund2-01.jpg  <-  pozo-p-204-gato\005.jpg  |  pexels (Pexels License)  |  autor: Eduardo López  |  https://www.pexels.com/es-es/foto/gato-con-plato-de-comida-16618541/  |  consulta: "cat eating bowl floor pexels"
+hund3-01.jpg  <-  pozo-p-204-cachorro\009.jpg  |  pexels (Pexels License)  |  autor: Helena Lopes  |  https://www.pexels.com/es-es/foto/animal-casa-perro-mascota-5047574/  |  consulta: "puppy sitting floor home pexels"
+hund4-01.jpg  <-  pozo-p-204-senior\008.jpg  |  pexels (Pexels License)  |  autor: Rufina Rusakova  |  https://www.pexels.com/es-es/foto/perro-marron-tranquilo-relajandose-en-una-habitacion-soleada-35038689/  |  consulta: "senior dog resting sun pexels"
+hund5-01.jpg  <-  pozo-p-204-cama\012.jpg  |  pexels (Pexels License)  |  autor: Sarah  Chai  |  https://www.pexels.com/es-es/foto/pared-muro-cama-animal-7282664/  |  consulta: "dog bed cozy home pexels"
+hund6-01.jpg  <-  pozo-p-204-medida\006.jpg  |  pexels (Pexels License)  |  autor: Ron Lach  |  https://www.pexels.com/es-es/foto/comida-mujer-mano-pasta-10046953/  |  consulta: "measuring scoop grains wooden pexels"
+mos1-01.jpg  <-  pozo-p-204-pellet\005.jpg  |  pexels (Pexels License)  |  autor: Rafael Rodrigues  |  https://www.pexels.com/es-es/foto/primer-plano-de-la-textura-de-las-croquetas-de-alimento-seco-para-perros-34952078/  |  consulta: "dry pet food kibble scoop pexels"
+mos2-01.jpg  <-  pozo-p-204-gatito\009.jpg  |  pexels (Pexels License)  |  autor: Garuda  |  https://www.pexels.com/es-es/foto/adorable-gatito-pelirrojo-bebiendo-de-un-cuenco-38525398/  |  consulta: "kitten eating bowl pexels"
+mos3-01.jpg  <-  pozo-p-204-cachorro\008.jpg  |  pexels (Pexels License)  |  autor: Maria Clara Diab  |  https://www.pexels.com/es-es/foto/perro-mascota-sombra-mullido-19157676/  |  consulta: "puppy sitting floor home pexels"
+mos4-01.jpg  <-  pozo-p-204-pellet\001.jpg  |  pexels (Pexels License)  |  autor: German Suarez  |  https://www.pexels.com/es-es/foto/primer-plano-del-fondo-de-pellets-de-comida-para-perros-36186523/  |  consulta: "dry pet food kibble scoop pexels"
+mos5-01.jpg  <-  pozo-p-204-espera\007.jpg  |  pexels (Pexels License)  |  autor: Amar  Preciado  |  https://www.pexels.com/es-es/foto/un-perro-negro-sentado-junto-a-la-mesa-19086862/  |  consulta: "dog waiting food bowl kitchen pexels"
+mos6-01.jpg  <-  pozo-p-204-gato\007.jpg  |  pexels (Pexels License)  |  autor: Vasilissa Popil  |  https://www.pexels.com/es-es/foto/suelo-fotografia-de-animales-animal-domestico-felino-12198956/  |  consulta: "cat eating bowl floor pexels"
+
+BRUMA (bruma-pag-0N.png y bruma-osc-0N.png, 30x20): las MISMAS fotos, recortadas a 3:2, reducidas y
+recoloreadas con C:\devs\demos\hacer-bruma.ps1 (clara >= 0,68 de luminancia / oscura <= 0,05). No suman fuentes.
+    pagina: port-01.jpg, mos1-01.jpg, hund4-01.jpg, mos4-01.jpg, hund6-01.jpg (todas a -Sat 0.6)   |   oscuras: banda-01.jpg, mos1-01.jpg, cita-01.jpg
+
+MAPA: iframe de Google Maps (embed publico, sin clave). No hay imagen de mapa.

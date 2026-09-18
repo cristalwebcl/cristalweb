@@ -1,0 +1,24 @@
+FUENTES DE LAS IMAGENES - San Guillermo Rehecha el 18-09-2026 (presentacion antes que texto). Fotos de REFERENCIA de bancos libres: ninguna es del local; las verdaderas las tiene que mandar el negocio. 
+port-01.jpg  <-  pozo-p-174-ampolleta\008.jpg  |  pexels (Pexels License)  |  autor: freestocks.org  |  https://www.pexels.com/es-es/foto/fotografia-en-enfoque-selectivo-de-bombilla-543351/  |  consulta: "light bulb"
+banda-01.jpg  <-  pozo-p-174-colgante\012.jpg  |  pexels (Pexels License)  |  autor: Kerim Eveyik  |  https://www.pexels.com/es-es/foto/primer-plano-de-la-lampara-15857173/  |  consulta: "pendant lamp dark"
+cita-01.jpg  <-  pozo-p-174-interruptor\005.jpg  |  pexels (Pexels License)  |  autor: Phil Ledwith  |  https://www.pexels.com/es-es/foto/interruptor-de-luz-minimalista-en-shadow-play-33928585/  |  consulta: "light switch"
+hund1-01.jpg  <-  pozo-p-174-interruptor\003.jpg  |  pexels (Pexels License)  |  autor: Steve A Johnson  |  https://www.pexels.com/es-es/foto/pared-blanca-927546/  |  consulta: "light switch"
+hund2-01.jpg  <-  pozo-p-174-ampolleta\005.jpg  |  pexels (Pexels License)  |  autor: Junior Bastos  |  https://www.pexels.com/es-es/foto/bombilla-edison-vintage-colgando-de-una-cuerda-rustica-36992740/  |  consulta: "light bulb"
+hund3-01.jpg  <-  pozo-p-174-destornillador\009.jpg  |  pexels (Pexels License)  |  autor: Roseson  Studios®  |  https://www.pexels.com/es-es/foto/metal-acero-reparar-herramienta-20874131/  |  consulta: "screwdriver set"
+hund4-01.jpg  <-  pozo-p-174-alargador\009.jpg  |  pexels (Pexels License)  |  autor: Ron Lach  |  https://www.pexels.com/es-es/foto/sombras-electricidad-tablones-de-madera-enredado-8832030/  |  consulta: "extension cord"
+hund5-01.jpg  <-  pozo-p-174-lucespatio\009.jpg  |  pexels (Pexels License)  |  autor: TIVASEE .  |  https://www.pexels.com/es-es/foto/faroles-de-jardin-iluminando-plantas-en-macetas-por-la-noche-32258201/  |  consulta: "garden lights night"
+hund6-01.jpg  <-  pozo-p-174-estante\002.jpg  |  pexels (Pexels License)  |  autor: Markus Winkler  |  https://www.pexels.com/es-es/foto/naturaleza-muerta-estanteria-estantes-materiales-de-construccion-10284048/  |  consulta: "hardware store shelf"
+mos1-01.jpg  <-  pozo-p-174-cable\012.jpg  |  pexels (Pexels License)  |  autor: Markus Winkler  |  https://www.pexels.com/es-es/foto/cables-electrico-cables-electricos-de-cerca-11404176/  |  consulta: "cable spool"
+mos2-01.jpg  <-  pozo-p-174-timbre\006.jpg  |  pexels (Pexels License)  |  autor: Lynda Sanchez  |  https://www.pexels.com/es-es/foto/pared-de-ladrillos-antiguos-con-placa-de-interruptor-vintage-36201840/  |  consulta: "doorbell"
+mos3-01.jpg  <-  pozo-p-174-colgante\007.jpg  |  pexels (Pexels License)  |  autor: Damir K  |  https://www.pexels.com/es-es/foto/ligero-oscuro-colgando-iluminado-14927176/  |  consulta: "pendant lamp dark"
+mos4-01.jpg  <-  pozo-p-174-alargador\007.jpg  |  pexels (Pexels License)  |  autor: Ksenia Chernaya  |  https://www.pexels.com/es-es/foto/cables-desordenados-en-el-suelo-de-la-habitacion-5691487/  |  consulta: "extension cord"
+mos5-01.jpg  <-  pozo-p-174-interruptor\008.jpg  |  pexels (Pexels License)  |  autor: wal_ 172619  |  https://www.pexels.com/es-es/foto/interruptor-amarillo-brillante-en-pared-texturizada-36353546/  |  consulta: "light switch"
+mos6-01.jpg  <-  pozo-p-174-lampara\011.jpg  |  pexels (Pexels License)  |  autor: Jx ._.  |  https://www.pexels.com/es-es/foto/lampara-linea-pintar-pintura-19398570/  |  consulta: "ceiling lamp"
+
+BRUMA (bruma-pag-0N.png y bruma-osc-0N.png, 30x20): las MISMAS fotos, recortadas a 3:2, reducidas y
+recoloreadas con C:\devs\demos\hacer-bruma.ps1 (clara >= 0,68 de luminancia / oscura <= 0,05). No suman fuentes.
+    pagina: hund1-01.jpg, hund4-01.jpg, mos5-01.jpg, hund3-01.jpg, hund2-01.jpg (todas a -Sat 0.6)   |   oscuras: port-01.jpg, cita-01.jpg, banda-01.jpg
+
+MAPA: iframe de Google Maps (embed publico, sin clave). No hay imagen de mapa.
+
+port-01.jpg: recorte a mano (franja x 0-0,80 del original, recortar-manual.ps1) para correr la ampolleta a la derecha del titular.

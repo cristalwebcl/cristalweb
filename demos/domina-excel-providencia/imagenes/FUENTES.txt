@@ -1,0 +1,22 @@
+FUENTES DE LAS IMAGENES - Domina Excel Rehecha el 16-09-2026 (presentacion antes que texto). Fotos de REFERENCIA de bancos libres: ninguna es del local; las verdaderas las tiene que mandar el negocio. 
+port-01.jpg  <-  pozo-p-de-escritorio\011.jpg  |  pexels (Pexels License)  |  autor: Startup Stock Photos  |  https://www.pexels.com/es-es/foto/iphone-6-gris-espacial-cerca-de-macbook-plata-7100/  |  consulta: "laptop desk notebook"
+banda-01.jpg  <-  pozo-p-de-teclado\003.jpg  |  pexels (Pexels License)  |  autor: cottonbro studio  |  https://www.pexels.com/es-es/foto/persona-sosteniendo-el-teclado-de-manzana-blanca-6143836/  |  consulta: "keyboard hands typing"
+cita-01.jpg  <-  pozo-p-de-libreta\006.jpg  |  pexels (Pexels License)  |  autor: Negative Space  |  https://www.pexels.com/es-es/foto/blanco-y-negro-boligrafo-cafe-copa-136132/  |  consulta: "notebook pen coffee"
+hund1-01.jpg  <-  pozo-p-de-cuaderno\006.jpg  |  pexels (Pexels License)  |  autor: Pixabay  |  https://www.pexels.com/es-es/foto/pluma-estilografica-negra-261719/  |  consulta: "graph paper pen"
+hund2-01.jpg  <-  pozo-p-de-calculadora\003.jpg  |  pexels (Pexels License)  |  autor: Pixabay  |  https://www.pexels.com/es-es/foto/boligrafo-matematicas-mates-numeros-53621/  |  consulta: "calculator numbers paper"
+hund3-01.jpg  <-  pozo-p-de-calculadora\007.jpg  |  pexels (Pexels License)  |  autor: Pixabay  |  https://www.pexels.com/es-es/foto/calculadora-y-boligrafo-en-la-mesa-209224/  |  consulta: "calculator numbers paper"
+hund4-01.jpg  <-  pozo-p-de-cuaderno\010.jpg  |  pexels (Pexels License)  |  autor: Sergey  Meshkov  |  https://www.pexels.com/es-es/foto/lapiz-numeros-lineas-papel-8482035/  |  consulta: "graph paper pen"
+hund5-01.jpg  <-  pozo-p-de-escritorio\009.jpg  |  pexels (Pexels License)  |  autor: KATRIN  BOLOVTSOVA  |  https://www.pexels.com/es-es/foto/blanco-y-negro-ordenador-portatil-cuaderno-boligrafos-6193646/  |  consulta: "laptop desk notebook"
+hund6-01.jpg  <-  pozo-p-de-escritorio\010.jpg  |  pexels (Pexels License)  |  autor: Startup Stock Photos  |  https://www.pexels.com/es-es/foto/macbook-pro-junto-a-un-libro-blanco-7109/  |  consulta: "laptop desk notebook"
+mos1-01.jpg  <-  pozo-p-de-cuaderno\008.jpg  |  pexels (Pexels License)  |  autor: thiago japyassu  |  https://www.pexels.com/es-es/foto/compas-sobre-papel-cuadriculado-4737237/  |  consulta: "graph paper pen"
+mos2-01.jpg  <-  pozo-p-de-calculadora\008.jpg  |  pexels (Pexels License)  |  autor: Nataliya Vaitkevich  |  https://www.pexels.com/es-es/foto/calculadora-cartas-letras-lapices-6863282/  |  consulta: "calculator numbers paper"
+mos3-01.jpg  <-  pozo-p-de-ventana\004.jpg  |  pexels (Pexels License)  |  autor: Nicolás Rueda  |  https://www.pexels.com/es-es/foto/hotel-oficina-tecnologia-arquitectura-26966416/  |  consulta: "home office window plant"
+mos4-01.jpg  <-  pozo-p-de-ventana\008.jpg  |  pexels (Pexels License)  |  autor: Facundo Schmidt  |  https://www.pexels.com/es-es/foto/ventanas-ventana-diseno-planta-en-maceta-6920530/  |  consulta: "home office window plant"
+mos5-01.jpg  <-  pozo-p-de-cuaderno\012.jpg  |  pexels (Pexels License)  |  autor: TLK GentooExpressions  |  https://www.pexels.com/es-es/foto/material-escolar-sobre-un-fondo-azul-38891320/  |  consulta: "graph paper pen"
+mos6-01.jpg  <-  pozo-p-de-escritorio\007.jpg  |  pexels (Pexels License)  |  autor: Startup Stock Photos  |  https://www.pexels.com/es-es/foto/macbook-pro-y-boligrafo-negro-7104/  |  consulta: "laptop desk notebook"
+
+BRUMA (bruma-pag-0N.png y bruma-osc-0N.png, 30x20): las MISMAS fotos, recortadas a 3:2, reducidas y
+recoloreadas con C:\devs\demos\hacer-bruma.ps1 (clara >= 0,68 de luminancia / oscura <= 0,05). No suman fuentes.
+    pagina: hund1-01.jpg, mos1-01.jpg, hund2-01.jpg, mos5-01.jpg, hund3-01.jpg   |   oscuras: port-01.jpg, cita-01.jpg, mos2-01.jpg
+
+MAPA: iframe de Google Maps (embed publico, sin clave). No hay imagen de mapa.

@@ -1,0 +1,22 @@
+FUENTES DE LAS IMAGENES - Abracadabra Spa Rehecha el 16-09-2026 (presentacion antes que texto). Fotos de REFERENCIA de bancos libres: ninguna es del local; las verdaderas las tiene que mandar el negocio. 
+port-01.jpg  <-  pozo-p-ab-salon\009.png  |  pexels (Pexels License)  |  autor: Emirhan Sayar  |  https://www.pexels.com/es-es/foto/interior-de-una-peluqueria-moderna-de-noche-35844834/  |  consulta: "salon interior evening"
+banda-01.jpg  <-  pozo-p-ab-tratamiento\010.jpg  |  pexels (Pexels License)  |  autor: Oleskandra Biliak  |  https://www.pexels.com/es-es/foto/mano-mojado-humedo-sujetando-23349887/  |  consulta: "hair mask treatment"
+cita-01.jpg  <-  pozo-p-ab-cinta\011.jpg  |  pexels (Pexels License)  |  autor: Eugenia Remark  |  https://www.pexels.com/es-es/foto/textil-elegante-pano-trapo-15404885/  |  consulta: "silk ribbon"
+hund1-01.jpg  <-  pozo-p-ab-tratamiento\009.jpg  |  pexels (Pexels License)  |  autor: zegnaaa  |  https://www.pexels.com/es-es/foto/mujer-mojado-humedo-peinado-10416604/  |  consulta: "hair mask treatment"
+hund2-01.jpg  <-  pozo-p-ab-cepillo\012.jpg  |  pexels (Pexels License)  |  autor: KoolShooters  |  https://www.pexels.com/es-es/foto/persona-mano-nina-sin-rostro-7142799/  |  consulta: "hairbrush dark"
+hund3-01.jpg  <-  pozo-p-ab-plata\010.jpg  |  pexels (Pexels License)  |  autor: Artem Podrez  |  https://www.pexels.com/es-es/foto/brillante-plata-plateado-textil-7232651/  |  consulta: "silver foil texture"
+hund4-01.jpg  <-  pozo-p-ab-vale\001.jpg  |  pexels (Pexels License)  |  autor: Cristina De Luis  |  https://www.pexels.com/es-es/foto/caja-de-regalo-blanca-y-roja-5588627/  |  consulta: "gift box ribbon"
+hund5-01.jpg  <-  pozo-p-ab-salon\004.png  |  pexels (Pexels License)  |  autor: Emirhan Sayar  |  https://www.pexels.com/es-es/foto/interior-de-peluqueria-moderna-con-iluminacion-elegante-35844833/  |  consulta: "salon interior evening"
+hund6-01.jpg  <-  pozo-p-ab-sobre\006.jpg  |  pexels (Pexels License)  |  autor: Eva Bronzini  |  https://www.pexels.com/es-es/foto/maqueta-modelo-replica-mockup-7958169/  |  consulta: "paper envelope"
+mos1-01.jpg  <-  pozo-p-ab-cinta\012.jpg  |  pexels (Pexels License)  |  autor: Diana Light  |  https://www.pexels.com/es-es/foto/plato-arte-festivo-mesa-4721998/  |  consulta: "silk ribbon"
+mos2-01.jpg  <-  pozo-p-ab-toalla\005.jpg  |  pexels (Pexels License)  |  autor: Franco Garcia  |  https://www.pexels.com/es-es/foto/habitacion-de-hotel-acogedora-con-toallas-frescas-en-la-cama-34636330/  |  consulta: "folded towels dark"
+mos3-01.jpg  <-  pozo-p-ab-cepillo\004.jpg  |  pexels (Pexels License)  |  autor: Roselène de Koning  |  https://www.pexels.com/es-es/foto/cepillo-de-pelo-de-madera-en-una-acogedora-cesta-de-mimbre-para-interior-30696697/  |  consulta: "hairbrush dark"
+mos4-01.jpg  <-  pozo-p-ab-sobre\011.jpg  |  pexels (Pexels License)  |  autor: Monstera Production  |  https://www.pexels.com/es-es/foto/flores-decoracion-minimalista-vista-superior-20431431/  |  consulta: "paper envelope"
+mos5-01.jpg  <-  pozo-p-ab-vale\009.jpg  |  pexels (Pexels License)  |  autor: Skylar Kang  |  https://www.pexels.com/es-es/foto/caja-de-regalo-roja-sobre-superficie-blanca-6045710/  |  consulta: "gift box ribbon"
+mos6-01.jpg  <-  pozo-p-ab-toalla\009.jpg  |  pexels (Pexels License)  |  autor: cottonbro studio  |  https://www.pexels.com/es-es/foto/deporte-fitnes-fitness-gimnasio-4325447/  |  consulta: "folded towels dark"
+
+BRUMA (bruma-pag-0N.png y bruma-osc-0N.png, 30x20): las MISMAS fotos, recortadas a 3:2, reducidas y
+recoloreadas con C:\devs\demos\hacer-bruma.ps1 (clara >= 0,68 de luminancia / oscura <= 0,05). No suman fuentes.
+    pagina: mos2-01.jpg, hund6-01.jpg, mos1-01.jpg, hund1-01.jpg, mos3-01.jpg   |   oscuras: hund5-01.jpg, cita-01.jpg, banda-01.jpg
+
+MAPA: iframe de Google Maps (embed publico, sin clave). No hay imagen de mapa.
